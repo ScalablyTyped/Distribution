@@ -18,15 +18,11 @@ class User protected () extends js.Object {
   def ChangePassword(OldPassword: java.lang.String, NewPassword: java.lang.String): scala.Unit = js.native
   def GetPermissions(Name: java.lang.String, ObjectType: ObjectTypeEnum): RightsEnum = js.native
   /**
-           * @param Name Specifies the name of the object for which to set permissions. Pass `null` if you want to get the permissions for the object container.
-           * @param ObjectTypeId Specifies the GUID for a provider object type not defined by the OLE DB specification.
-           */
+    * @param Name Specifies the name of the object for which to set permissions. Pass `null` if you want to get the permissions for the object container.
+    * @param ObjectTypeId Specifies the GUID for a provider object type not defined by the OLE DB specification.
+    */
   def GetPermissions(Name: java.lang.String, ObjectType: ObjectTypeEnum, ObjectTypeId: js.Any): RightsEnum = js.native
   def GetPermissions(Name: scala.Null, ObjectType: ObjectTypeEnum): RightsEnum = js.native
-  /**
-           * @param Name Specifies the name of the object for which to set permissions. Pass `null` if you want to get the permissions for the object container.
-           * @param ObjectTypeId Specifies the GUID for a provider object type not defined by the OLE DB specification.
-           */
   def GetPermissions(Name: scala.Null, ObjectType: ObjectTypeEnum, ObjectTypeId: js.Any): RightsEnum = js.native
   def Groups(Item: java.lang.String): Group = js.native
   def Groups(Item: scala.Double): Group = js.native
@@ -41,10 +37,10 @@ class User protected () extends js.Object {
     Inherit: InheritTypeEnum
   ): scala.Unit = js.native
   /**
-           * @param Rights A bitmask of one or more of the **RightsEnum** constants, that indicates the rights to set.
-           * @param Inherit [Inherit=0]
-           * @param ObjectTypeId Specifies the GUID for a provider object type not defined by the OLE DB specification.
-           */
+    * @param Rights A bitmask of one or more of the **RightsEnum** constants, that indicates the rights to set.
+    * @param Inherit [Inherit=0]
+    * @param ObjectTypeId Specifies the GUID for a provider object type not defined by the OLE DB specification.
+    */
   def SetPermissions(
     Name: java.lang.String,
     ObjectType: ObjectTypeEnum,

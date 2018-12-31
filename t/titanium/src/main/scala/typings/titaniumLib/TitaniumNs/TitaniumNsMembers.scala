@@ -52,9 +52,6 @@ object TitaniumNsMembers extends js.Object {
   	 * Creates and returns an instance of <Titanium.Proxy>.
   	 */
   def createProxy(): Proxy = js.native
-  /**
-  	 * Creates and returns an instance of <Titanium.Proxy>.
-  	 */
   def createProxy(parameters: js.Any): Proxy = js.native
   /**
   	 * Fires a synthesized event to any registered listeners.

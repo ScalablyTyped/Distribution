@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DrawOptions extends js.Object {
   var clickTolerance: js.UndefOr[scala.Double] = js.undefined
   var condition: js.UndefOr[openlayersLib.openlayersMod.EventsConditionType] = js.undefined

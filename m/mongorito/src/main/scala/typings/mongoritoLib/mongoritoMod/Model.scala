@@ -33,40 +33,30 @@ class Model () extends Query {
 @js.native
 object Model extends js.Object {
   /**
-       * @see mongodb.Collection#createIndex()
-       */
+    * @see mongodb.Collection#createIndex()
+    */
   def createIndex(fieldOrSpec: js.Any): js.Promise[java.lang.String] = js.native
-  /**
-       * @see mongodb.Collection#createIndex()
-       */
   def createIndex(fieldOrSpec: js.Any, options: mongodbLib.mongodbMod.IndexOptions): js.Promise[java.lang.String] = js.native
   /**
-       * @see mongodb.Collection#dropIndex()
-       */
+    * @see mongodb.Collection#dropIndex()
+    */
   def dropIndex(indexName: java.lang.String): js.Promise[js.Object] = js.native
-  /**
-       * @see mongodb.Collection#dropIndex()
-       */
   def dropIndex(indexName: java.lang.String, options: mongodbLib.mongodbMod.CommonOptions): js.Promise[js.Object] = js.native
   def embeds(key: java.lang.String, model: mongoritoLib.mongoritoMod.ModelClass): scala.Unit = js.native
   /**
-       * @see Db#collection(string)
-       */
+    * @see Db#collection(string)
+    */
   def getCollection(): js.Promise[mongodbLib.mongodbMod.Collection[_]] = js.native
   /**
-       * @see Model#database
-       * @see Database#connection()
-       */
+    * @see Model#database
+    * @see Database#connection()
+    */
   def getConnection(): js.Promise[mongodbLib.mongodbMod.Db] = js.native
   /**
-       * @see mongodb.Collection#listIndexes()
-       * @see mongodb.CommandCursor#toArray()
-       */
+    * @see mongodb.Collection#listIndexes()
+    * @see mongodb.CommandCursor#toArray()
+    */
   def listIndexes(): js.Promise[js.Array[_]] = js.native
-  /**
-       * @see mongodb.Collection#listIndexes()
-       * @see mongodb.CommandCursor#toArray()
-       */
   def listIndexes(options: mongoritoLib.Anon_ReadPreference): js.Promise[js.Array[_]] = js.native
   def modifyReducer(reducerModifier: mongoritoLib.mongoritoMod.ReducerModifier): scala.Unit = js.native
   def query(method: java.lang.String, query: js.Array[js.Tuple2[java.lang.String, _]]): js.Promise[js.Array[js.Object]] = js.native

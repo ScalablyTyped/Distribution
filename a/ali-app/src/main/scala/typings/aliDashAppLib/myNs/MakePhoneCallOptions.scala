@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion
 //#region 拨打电话 https://docs.alipay.com/mini/api/macke-call
-
 trait MakePhoneCallOptions
   extends BaseOptions[js.Any, js.Any] {
   /**

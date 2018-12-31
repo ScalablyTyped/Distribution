@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DealTermsRubiconNonGuaranteedTerms extends js.Object {
   /** Optional price for Rubicon priority access in the auction. */
   var priorityPrice: js.UndefOr[Price] = js.undefined

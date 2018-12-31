@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StatsResourceCount extends js.Object {
   var mean: scala.Double
   var min: scala.Double

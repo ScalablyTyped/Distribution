@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectAppOptions extends js.Object {
   /** Whether or not to log debug messages. Defaults to false. */
   var debug: js.UndefOr[scala.Boolean] = js.undefined
@@ -14,10 +13,10 @@ trait ConnectAppOptions extends js.Object {
   /** Host to bind server to. Defaults to localhost. */
   var host: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Options to pass to http.createServer (or false to disable https).
-       * Defaults to false. When https is just set to true, then internally
-       * some defaults will be used.
-       */
+    * Options to pass to http.createServer (or false to disable https).
+    * Defaults to false. When https is just set to true, then internally
+    * some defaults will be used.
+    */
   var https: js.UndefOr[scala.Boolean | nodeLib.httpsMod.ServerOptions] = js.undefined
   /** Value to pass into the serve-static's index option. See serve-static documentation for details. Defaults to true. */
   var index: js.UndefOr[scala.Boolean | java.lang.String | js.Array[java.lang.String]] = js.undefined

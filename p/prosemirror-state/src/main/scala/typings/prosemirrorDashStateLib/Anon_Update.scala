@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Update[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */] extends js.Object {
   var destroy: js.UndefOr[js.Function0[scala.Unit] | scala.Null] = js.undefined
   var update: js.UndefOr[

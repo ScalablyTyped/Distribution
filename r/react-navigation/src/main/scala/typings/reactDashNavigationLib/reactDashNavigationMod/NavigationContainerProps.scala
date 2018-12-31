@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigationContainerProps[S, O] extends js.Object {
   var navigation: js.UndefOr[NavigationScreenProp[S, NavigationParams]] = js.undefined
   var navigationOptions: js.UndefOr[O] = js.undefined

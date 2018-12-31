@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Login **/
-
 trait LoginWithExternalServiceOptions extends js.Object {
   var forceApprovalPrompt: js.UndefOr[scala.Boolean] = js.undefined
   var loginHint: js.UndefOr[java.lang.String] = js.undefined

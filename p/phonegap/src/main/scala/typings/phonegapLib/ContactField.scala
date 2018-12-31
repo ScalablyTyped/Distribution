@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContactField extends js.Object {
   var pref: scala.Boolean
   var `type`: java.lang.String

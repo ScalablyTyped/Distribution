@@ -8,12 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("chartmogul-node", "Subscription")
 @js.native
 object SubscriptionNs extends js.Object {
-  
   trait CancelSubscriptionParams extends js.Object {
     var cancellation_dates: js.UndefOr[chartmogulDashNodeLib.commonMod.Strings] = js.undefined
     var cancelled_at: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait Subscription extends js.Object {
     var cancellation_dates: chartmogulDashNodeLib.commonMod.Strings
@@ -23,7 +21,6 @@ object SubscriptionNs extends js.Object {
     var plan_uuid: java.lang.String
     var uuid: java.lang.String
   }
-  
   
   trait Subscriptions
     extends chartmogulDashNodeLib.commonMod.Cursor {

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileOptions")
 @js.native
 object FileOptionsNs extends js.Object {
-  
   trait AsObject extends js.Object {
     var ccEnableArenas: js.UndefOr[scala.Boolean] = js.undefined
     var ccGenericServices: js.UndefOr[scala.Boolean] = js.undefined

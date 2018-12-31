@@ -23,16 +23,16 @@ object KnownContactField extends js.Object {
   /** Contains the name of the field used for phone numbers. */
   var phoneNumber: java.lang.String = js.native
   /**
-                   * Converts a string representing the name of a field to its corresponding type.
-                   * @param name The name of the field.
-                   * @return The type of field.
-                   */
+    * Converts a string representing the name of a field to its corresponding type.
+    * @param name The name of the field.
+    * @return The type of field.
+    */
   def convertNameToType(name: java.lang.String): winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactFieldType = js.native
   /**
-                   * Converts the type of a field to its corresponding string name.
-                   * @param type The type of field.
-                   * @return The name of the field.
-                   */
+    * Converts the type of a field to its corresponding string name.
+    * @param type The type of field.
+    * @return The name of the field.
+    */
   def convertTypeToName(`type`: winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactFieldType): java.lang.String = js.native
 }
 

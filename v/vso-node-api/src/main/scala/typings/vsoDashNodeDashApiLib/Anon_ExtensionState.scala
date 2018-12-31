@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ExtensionState extends js.Object {
   var AcquisitionAssignmentType: Anon_EnumValuesAnonMe
   var AcquisitionOperation: js.Any

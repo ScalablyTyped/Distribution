@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IndicesDeleteParams extends GenericParams {
   var ignoreUnavailable: js.UndefOr[scala.Boolean] = js.undefined
   var index: NameList

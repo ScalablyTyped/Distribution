@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMouseWheelParameters extends js.Object {
   var charTranslation: winrtLib.WindowsNs.FoundationNs.Point
   var deltaRotationAngle: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Times extends js.Object {
   var cycle: scala.Double
   var elapsed: scala.Double

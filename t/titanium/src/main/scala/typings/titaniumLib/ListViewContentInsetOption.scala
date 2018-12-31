@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Optional parameter for [setContentInsets](Titanium.UI.ListView.setContentInsets) method.
- */
-
+  * Optional parameter for [setContentInsets](Titanium.UI.ListView.setContentInsets) method.
+  */
 trait ListViewContentInsetOption extends js.Object {
   /**
   	 * Determines whether the list view's content inset change is animated.

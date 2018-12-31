@@ -31,13 +31,6 @@ object lodashDashEsMod extends js.Object {
     * All other strings are considered decimal.
     */
   def parseInt(s: java.lang.String): scala.Double = js.native
-  /**
-    * Converts A string to an integer.
-    * @param s A string to convert into a number.
-    * @param radix A value between 2 and 36 that specifies the base of the number in numString.
-    * If this argument is not supplied, strings with a prefix of '0x' are considered hexadecimal.
-    * All other strings are considered decimal.
-    */
   def parseInt(s: java.lang.String, radix: scala.Double): scala.Double = js.native
   /**
     * Computes a new string in which hexadecimal escape sequences are replaced with the character that it represents.

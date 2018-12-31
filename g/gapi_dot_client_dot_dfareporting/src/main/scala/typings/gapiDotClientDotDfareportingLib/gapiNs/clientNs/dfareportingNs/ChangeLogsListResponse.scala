@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChangeLogsListResponse extends js.Object {
   /** Change log collection. */
   var changeLogs: js.UndefOr[js.Array[ChangeLog]] = js.undefined

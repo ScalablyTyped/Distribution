@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestOptions extends js.Object {
   /** string to hash test to a specific test agent. tester will be picked by index among available testers */
   var affinity: js.UndefOr[java.lang.String] = js.undefined

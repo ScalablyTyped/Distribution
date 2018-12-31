@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TopPosition extends js.Object {
   var containerHeight: scala.Double
   var containerWidth: scala.Double

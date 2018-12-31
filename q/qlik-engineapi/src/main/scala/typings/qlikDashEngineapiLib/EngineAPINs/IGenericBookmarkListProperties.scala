@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * GenericBookmarkListProperties width extend GenericProperties
-     */
-
+  * GenericBookmarkListProperties width extend GenericProperties
+  */
 trait IGenericBookmarkListProperties extends IGenericProperties {
   var qBookmarkListDef: IBookmarkListDef
   @JSName("qInfo")

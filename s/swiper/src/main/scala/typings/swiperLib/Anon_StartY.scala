@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_StartY extends js.Object {
   var currentX: scala.Double
   var currentY: scala.Double

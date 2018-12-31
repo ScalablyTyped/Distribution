@@ -5,35 +5,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SecurityRole extends js.Object {
   /**
-       * Permissions the role is allowed.
-       */
+    * Permissions the role is allowed.
+    */
   var allowPermissions: scala.Double
   /**
-       * Permissions the role is denied.
-       */
+    * Permissions the role is denied.
+    */
   var denyPermissions: scala.Double
   /**
-       * Description of user access defined by the role
-       */
+    * Description of user access defined by the role
+    */
   var description: java.lang.String
   /**
-       * User friendly name of the role.
-       */
+    * User friendly name of the role.
+    */
   var displayName: java.lang.String
   /**
-       * Globally unique identifier for the role.
-       */
+    * Globally unique identifier for the role.
+    */
   var identifier: java.lang.String
   /**
-       * Unique name of the role in the scope.
-       */
+    * Unique name of the role in the scope.
+    */
   var name: java.lang.String
   /**
-       * Returns the id of the ParentScope.
-       */
+    * Returns the id of the ParentScope.
+    */
   var scope: java.lang.String
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Lang extends js.Object {
   var days: js.Array[java.lang.String]
   var months: js.Array[java.lang.String]

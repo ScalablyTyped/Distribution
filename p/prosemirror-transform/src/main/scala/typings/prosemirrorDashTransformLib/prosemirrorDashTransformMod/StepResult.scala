@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class StepResult[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */] () extends js.Object {
   /**
-     * The transformed document.
-     */
+    * The transformed document.
+    */
   var doc: js.UndefOr[prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S] | scala.Null] = js.native
   /**
-     * Text providing information about a failed step.
-     */
+    * Text providing information about a failed step.
+    */
   var failed: js.UndefOr[java.lang.String | scala.Null] = js.native
 }
 
@@ -22,14 +22,14 @@ class StepResult[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
 @js.native
 object StepResult extends js.Object {
   /**
-     * Create a failed step result.
-     */
+    * Create a failed step result.
+    */
   def fail(message: java.lang.String): prosemirrorDashTransformLib.prosemirrorDashTransformMod.StepResult[_] = js.native
   /**
-     * Call [`Node.replace`](#model.Node.replace) with the given
-     * arguments. Create a successful result if it succeeds, and a
-     * failed one if it throws a `ReplaceError`.
-     */
+    * Call [`Node.replace`](#model.Node.replace) with the given
+    * arguments. Create a successful result if it succeeds, and a
+    * failed one if it throws a `ReplaceError`.
+    */
   def fromReplace[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     doc: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S],
     from: scala.Double,
@@ -37,8 +37,8 @@ object StepResult extends js.Object {
     slice: prosemirrorDashModelLib.prosemirrorDashModelMod.Slice[S]
   ): prosemirrorDashTransformLib.prosemirrorDashTransformMod.StepResult[S] = js.native
   /**
-     * Create a successful step result.
-     */
+    * Create a successful step result.
+    */
   def ok[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](doc: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S]): prosemirrorDashTransformLib.prosemirrorDashTransformMod.StepResult[S] = js.native
 }
 

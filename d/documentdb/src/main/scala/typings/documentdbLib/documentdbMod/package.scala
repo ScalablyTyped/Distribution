@@ -25,5 +25,5 @@ package object documentdbMod {
   type TriggerType = documentdbLib.documentdbLibStrings.Pre | documentdbLib.documentdbLibStrings.Post | documentdbLib.documentdbLibStrings.pre | documentdbLib.documentdbLibStrings.post
   type UserDefinedFunctionMeta = AbstractMeta
   type UserDefinedFunctionType = documentdbLib.documentdbLibStrings.Javascript
-  type UserFunction = (js.Function1[/* repeated */js.Any, scala.Unit]) | java.lang.String
+  type UserFunction = (js.Function1[/* repeated */ js.Any, scala.Unit]) | java.lang.String
 }

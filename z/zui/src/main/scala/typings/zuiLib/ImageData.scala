@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageData extends js.Object {
   var bottom: scala.Double
   // width: number;

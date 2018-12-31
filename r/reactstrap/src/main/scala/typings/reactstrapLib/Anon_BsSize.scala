@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BsSize extends js.Object {
   var bsSize: js.UndefOr[reactstrapLib.reactstrapLibStrings.lg | reactstrapLib.reactstrapLibStrings.sm] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined

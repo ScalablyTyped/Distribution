@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TSInferType extends BaseNode {
   var typeParameter: TSTypeParameter
   @JSName("type")

@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation._
 sealed trait Orientation extends js.Object
 
 /**
-     * Specifies the orientation of a control.
-    **/
+  * Specifies the orientation of a control.
+  **/
 @JSGlobal("WinJS.UI.Orientation")
 @js.native
 object Orientation extends js.Object {
   /**
-           * A horizontal layout.
-          **/
+    * A horizontal layout.
+    **/
   @js.native
   sealed trait horizontal
     extends winjsLib.WinJSNs.UINs.Orientation
   
   /**
-           * A vertical layout.
-          **/
+    * A vertical layout.
+    **/
   @js.native
   sealed trait vertical
     extends winjsLib.WinJSNs.UINs.Orientation

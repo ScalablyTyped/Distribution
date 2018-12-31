@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MarketplacedealsResource extends js.Object {
   /** Delete the specified deals from the proposal */
   def delete(request: gapiDotClientDotAdexchangebuyerLib.Anon_PrettyPrintProposalId): gapiDotClientLib.gapiNs.clientNs.Request[DeleteOrderDealsResponse]

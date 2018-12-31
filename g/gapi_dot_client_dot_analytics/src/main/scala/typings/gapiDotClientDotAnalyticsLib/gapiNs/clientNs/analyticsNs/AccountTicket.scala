@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccountTicket extends js.Object {
   /** Account for this ticket. */
   var account: js.UndefOr[Account] = js.undefined

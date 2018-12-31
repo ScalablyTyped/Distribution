@@ -11,7 +11,6 @@ class Shape () extends DisplayObject {
   def this(graphics: Graphics) = this()
   // properties
   var graphics: Graphics = js.native
-  // methods
   def clone(recursive: scala.Boolean): Shape = js.native
 }
 

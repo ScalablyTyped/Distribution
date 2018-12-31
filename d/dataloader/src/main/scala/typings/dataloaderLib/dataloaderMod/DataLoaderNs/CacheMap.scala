@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CacheMap[K, V] extends js.Object {
   def clear(): js.Any
   def delete(key: K): js.Any

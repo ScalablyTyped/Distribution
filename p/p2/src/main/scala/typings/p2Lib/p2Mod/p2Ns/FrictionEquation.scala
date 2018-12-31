@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FrictionEquation extends Equation {
   var contactPointA: js.Array[scala.Double]
   var contactPointB: js.Array[scala.Double]

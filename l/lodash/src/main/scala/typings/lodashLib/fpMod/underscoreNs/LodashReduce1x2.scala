@@ -10,7 +10,7 @@ trait LodashReduce1x2[TResult] extends js.Object {
   def apply[T](callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCapped[T, TResult]): LodashReduce1x3[T, TResult] = js.native
   def apply[T /* <: js.Object */](
     callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCapped[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ],
     collection: T

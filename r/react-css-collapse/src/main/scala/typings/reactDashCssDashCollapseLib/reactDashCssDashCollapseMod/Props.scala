@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Props extends js.Object {
   var className: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var isOpen: scala.Boolean

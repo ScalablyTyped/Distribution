@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_I[T]
   extends /* i */ org.scalablytyped.runtime.NumberDictionary[T] {
   var buffer: nodeLib.Buffer

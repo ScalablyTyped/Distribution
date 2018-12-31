@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Format extends js.Object {
   var average: js.UndefOr[scala.Boolean] = js.undefined
   var characteristic: js.UndefOr[scala.Double] = js.undefined

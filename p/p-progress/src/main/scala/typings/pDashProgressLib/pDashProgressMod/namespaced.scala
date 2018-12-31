@@ -9,18 +9,18 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced[T] protected () extends PProgress[T] {
   /**
-       * Same as the Promise constructor, but with an appended `progress`
-       * parameter in `executor`.
-       *
-       * @param progress
-       *  Call this with progress updates. It expects a number between 0 and 1.
-       *
-       *  Multiple calls with the same number will result in only one
-       *  `onProgress()` event.
-       *
-       *  Progress percentage `1` is reported for you when the promise resolves.
-       *  If you set it yourself, it will simply be ignored.
-       */
+    * Same as the Promise constructor, but with an appended `progress`
+    * parameter in `executor`.
+    *
+    * @param progress
+    *  Call this with progress updates. It expects a number between 0 and 1.
+    *
+    *  Multiple calls with the same number will result in only one
+    *  `onProgress()` event.
+    *
+    *  Progress percentage `1` is reported for you when the promise resolves.
+    *  If you set it yourself, it will simply be ignored.
+    */
   def this(executor: js.Function3[
       /* resolve */ js.Function1[/* value */ js.UndefOr[T | js.Thenable[T]], scala.Unit], 
       /* reject */ js.Function1[/* reason */ js.UndefOr[js.Any], scala.Unit], 
@@ -190,15 +190,15 @@ object namespaced extends js.Object {
     options: pDashProgressLib.pDashProgressMod.pProgressNs.Options
   ): pDashProgressLib.pDashProgressMod.PProgress[js.Tuple9[T1, T2, T3, T4, T5, T6, T7, T8, T9]] = js.native
   /**
-       * Convenience method to run multiple promises and get a total progress of
-       * all of them. It counts normal promises with progress `0` when pending and
-       * progress `1` when resolved. For PProgress type promises, it listens to
-       * their onProgress() method for more fine grained progress reporting. You
-       * can mix and match normal promises and PProgress promises.
-       *
-       * @param promises Array of promises or promise-returning functions.
-       * @throws {TypeError}
-       */
+    * Convenience method to run multiple promises and get a total progress of
+    * all of them. It counts normal promises with progress `0` when pending and
+    * progress `1` when resolved. For PProgress type promises, it listens to
+    * their onProgress() method for more fine grained progress reporting. You
+    * can mix and match normal promises and PProgress promises.
+    *
+    * @param promises Array of promises or promise-returning functions.
+    * @throws {TypeError}
+    */
   def all[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
     promises: js.Tuple10[
       pDashProgressLib.PromiseFactory[T1], 
@@ -213,16 +213,6 @@ object namespaced extends js.Object {
       pDashProgressLib.PromiseFactory[T10]
     ]
   ): pDashProgressLib.pDashProgressMod.PProgress[js.Tuple10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]] = js.native
-  /**
-       * Convenience method to run multiple promises and get a total progress of
-       * all of them. It counts normal promises with progress `0` when pending and
-       * progress `1` when resolved. For PProgress type promises, it listens to
-       * their onProgress() method for more fine grained progress reporting. You
-       * can mix and match normal promises and PProgress promises.
-       *
-       * @param promises Array of promises or promise-returning functions.
-       * @throws {TypeError}
-       */
   def all[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
     promises: js.Tuple10[
       pDashProgressLib.PromiseFactory[T1], 

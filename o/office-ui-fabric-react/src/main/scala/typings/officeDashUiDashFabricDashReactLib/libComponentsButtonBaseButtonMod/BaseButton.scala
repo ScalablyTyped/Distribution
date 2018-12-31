@@ -47,10 +47,10 @@ class BaseButton protected ()
   /* private */ def _handleTouchAndPointerEvent(): js.Any = js.native
   /* private */ def _hasText(): js.Any = js.native
   /**
-       * Returns if the user hits a valid keyboard key to open the menu
-       * @param ev - the keyboard event
-       * @returns True if user clicks on custom trigger key if enabled or alt + down arrow if not. False otherwise.
-       */
+    * Returns if the user hits a valid keyboard key to open the menu
+    * @param ev - the keyboard event
+    * @returns True if user clicks on custom trigger key if enabled or alt + down arrow if not. False otherwise.
+    */
   /* private */ def _isValidMenuOpenKey(ev: js.Any): js.Any = js.native
   /* private */ def _onPointerDown(ev: js.Any): js.Any = js.native
   /* private */ def _onRenderContent(tag: js.Any, buttonProps: js.Any): js.Any = js.native

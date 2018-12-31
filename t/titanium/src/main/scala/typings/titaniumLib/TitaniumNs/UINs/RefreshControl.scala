@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 		 * [UIRefreshControl](https://developer.apple.com/documentation/uikit/uirefreshcontrol)
 		 * and Android [SwipeRefreshLayout](https://developer.android.com/reference/android/support/v4/widget/SwipeRefreshLayout.html).
 		 */
-
 trait RefreshControl
   extends titaniumLib.TitaniumNs.Proxy {
   /**

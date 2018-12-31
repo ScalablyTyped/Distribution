@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Position extends js.Object {
   var adjust: js.UndefOr[PositionAdjust] = js.undefined
   var at: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined

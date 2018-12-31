@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MultipleSelectionHandles extends Base {
   var dragged: js.Array[_]
   var eventManager: EventManager

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LineDataExtended extends LineData {
   /** Boolean that is true if a fold may be created here. */
   var foldable: scala.Boolean

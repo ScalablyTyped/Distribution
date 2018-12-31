@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FrameIdTabIdProcessId extends js.Object {
   /** The ID of the frame in the given tab. */
   var frameId: scala.Double

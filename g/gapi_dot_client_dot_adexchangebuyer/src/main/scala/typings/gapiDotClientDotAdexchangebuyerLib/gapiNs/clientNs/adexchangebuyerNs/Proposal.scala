@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Proposal extends js.Object {
   /** Reference to the buyer that will get billed for this proposal. (readonly) */
   var billedBuyer: js.UndefOr[Buyer] = js.undefined
@@ -18,23 +17,23 @@ trait Proposal extends js.Object {
   /** IDs of DBM advertisers permission to this proposal. */
   var dbmAdvertiserIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-               * When an proposal is in an accepted state, indicates whether the buyer has signed off. Once both sides have signed off on a deal, the proposal can be
-               * finalized by the seller. (seller-readonly)
-               */
+    * When an proposal is in an accepted state, indicates whether the buyer has signed off. Once both sides have signed off on a deal, the proposal can be
+    * finalized by the seller. (seller-readonly)
+    */
   var hasBuyerSignedOff: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               * When an proposal is in an accepted state, indicates whether the buyer has signed off Once both sides have signed off on a deal, the proposal can be
-               * finalized by the seller. (buyer-readonly)
-               */
+    * When an proposal is in an accepted state, indicates whether the buyer has signed off Once both sides have signed off on a deal, the proposal can be
+    * finalized by the seller. (buyer-readonly)
+    */
   var hasSellerSignedOff: js.UndefOr[scala.Boolean] = js.undefined
   /** What exchange will provide this inventory (readonly, except on create). */
   var inventorySource: js.UndefOr[java.lang.String] = js.undefined
   /** True if the proposal is being renegotiated (readonly). */
   var isRenegotiating: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               * True, if the buyside inventory setup is complete for this proposal. (readonly, except via OrderSetupCompleted action) Deprecated in favor of deal level
-               * setup complete flag.
-               */
+    * True, if the buyside inventory setup is complete for this proposal. (readonly, except via OrderSetupCompleted action) Deprecated in favor of deal level
+    * setup complete flag.
+    */
   var isSetupComplete: js.UndefOr[scala.Boolean] = js.undefined
   /** Identifies what kind of resource this is. Value: the fixed string "adexchangebuyer#proposal". */
   var kind: js.UndefOr[java.lang.String] = js.undefined

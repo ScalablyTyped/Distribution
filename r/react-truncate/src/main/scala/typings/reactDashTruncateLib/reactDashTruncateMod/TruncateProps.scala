@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TruncateProps
   extends reactLib.reactMod.ReactNs.HTMLProps[Truncate] {
   var ellipsis: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined

@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeleteCardOptions extends js.Object {
   /**
-       * request sandbox.
-       */
+    * request sandbox.
+    */
   var sandbox: js.UndefOr[Sandbox] = js.undefined
   /**
-       * request sender.
-       */
+    * request sender.
+    */
   var xhr: js.UndefOr[davLib.davMod.transportNs.Transport] = js.undefined
 }
 

@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class PedometerDataThreshold protected () extends js.Object {
   /**
-                   * Creates a PedometerDataThreshold object.
-                   * @param sensor The pedometer sensor.
-                   * @param stepGoal The number of steps before the threshold is exceeded and the background task is activated.
-                   */
+    * Creates a PedometerDataThreshold object.
+    * @param sensor The pedometer sensor.
+    * @param stepGoal The number of steps before the threshold is exceeded and the background task is activated.
+    */
   def this(sensor: Pedometer, stepGoal: scala.Double) = this()
 }
 

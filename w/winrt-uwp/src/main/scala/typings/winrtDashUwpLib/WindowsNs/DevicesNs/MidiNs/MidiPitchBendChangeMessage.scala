@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class MidiPitchBendChangeMessage protected () extends js.Object {
   /**
-                   * Creates a new MidiPitchBendChangeMessage object.
-                   * @param channel The channel from 0-15 that this message applies to.
-                   * @param bend The pitch bend value which is specified as a 14-bit value from 0-16383.
-                   */
+    * Creates a new MidiPitchBendChangeMessage object.
+    * @param channel The channel from 0-15 that this message applies to.
+    * @param bend The pitch bend value which is specified as a 14-bit value from 0-16383.
+    */
   def this(channel: scala.Double, bend: scala.Double) = this()
   /** Gets the pitch bend value which is specified as a 14-bit value from 0-16383. */
   var bend: scala.Double = js.native

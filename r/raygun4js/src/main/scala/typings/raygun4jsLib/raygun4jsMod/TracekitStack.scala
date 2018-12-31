@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TracekitStack extends js.Object {
   var column: scala.Double
   var context: js.Any

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Scope[InputData] extends js.Object {
   var authorizeUrl: java.lang.String | (js.Function2[
     /* z */ zapierDashPlatformDashCoreLib.zapierDashPlatformDashCoreMod.Z, 

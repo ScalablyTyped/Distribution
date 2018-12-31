@@ -16,9 +16,9 @@ abstract class AudioBuffer () extends js.Object {
   /** Disposes of the object and associated resources. */
   def close(): scala.Unit = js.native
   /**
-               * Returns an IMemoryBufferReference representation of the audio buffer.
-               * @return The IMemoryBufferReference representation of the audio buffer.
-               */
+    * Returns an IMemoryBufferReference representation of the audio buffer.
+    * @return The IMemoryBufferReference representation of the audio buffer.
+    */
   def createReference(): winrtDashUwpLib.WindowsNs.FoundationNs.IMemoryBufferReference = js.native
 }
 

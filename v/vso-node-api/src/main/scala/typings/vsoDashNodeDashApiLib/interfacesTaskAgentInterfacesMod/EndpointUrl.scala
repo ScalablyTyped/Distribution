@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EndpointUrl extends js.Object {
   var dependsOn: DependsOn
   var displayName: java.lang.String

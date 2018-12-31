@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProgressBarOptions extends js.Object {
   var animation: js.UndefOr[ProgressBarAnimation] = js.undefined
   var change: js.UndefOr[js.Function1[/* e */ ProgressBarChangeEvent, scala.Unit]] = js.undefined

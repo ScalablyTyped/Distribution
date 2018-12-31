@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait A11yStatusMessageOptions[Item] extends js.Object {
   var highlightedIndex: scala.Double | scala.Null
   var inputValue: java.lang.String

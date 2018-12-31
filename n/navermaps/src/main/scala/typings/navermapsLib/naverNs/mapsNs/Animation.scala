@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait Animation extends js.Object
 
 /**
-   * Members
-   */
+  * Members
+  */
 @JSGlobal("naver.maps.Animation")
 @js.native
 object Animation extends js.Object {

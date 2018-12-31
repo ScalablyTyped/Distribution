@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PointerDeviceUsage extends js.Object {
   var maxLogical: scala.Double
   var maxPhysical: scala.Double

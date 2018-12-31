@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object constantsNs extends js.Object {
   /**
-       * See: {@link https://docs.mendix.com/refguide7/constants relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/constants relevant section in reference guide}
+    */
   @js.native
   class Constant protected ()
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.constantsNs.Constant {
@@ -18,16 +18,16 @@ object constantsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/constants relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/constants relevant section in reference guide}
+    */
   @js.native
   object Constant extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenConstantsMod.StructureVersionInfo = js.native
     /**
-             * Creates a new Constant unit in the SDK and on the server.
-             * Expects one argument, the projects.IFolderBase in which this unit is contained.
-             */
+      * Creates a new Constant unit in the SDK and on the server.
+      * Expects one argument, the projects.IFolderBase in which this unit is contained.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenConstantsMod.constantsNs.Constant = js.native
   }
   

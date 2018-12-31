@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigationConstants extends js.Object {
   var backButtonId: java.lang.String
   var bottomTabsHeight: scala.Double

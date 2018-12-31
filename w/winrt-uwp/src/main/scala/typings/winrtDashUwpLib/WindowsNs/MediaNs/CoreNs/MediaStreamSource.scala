@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class MediaStreamSource protected () extends js.Object {
   /**
-                   * Creates an instance of MediaStreamSource from the specified IMediaStreamDescriptor .
-                   * @param descriptor The AudioStreamDescriptor or VideoStreamDescriptor to create the MediaStreamSource from.
-                   */
+    * Creates an instance of MediaStreamSource from the specified IMediaStreamDescriptor .
+    * @param descriptor The AudioStreamDescriptor or VideoStreamDescriptor to create the MediaStreamSource from.
+    */
   def this(descriptor: IMediaStreamDescriptor) = this()
   /**
-                   * Creates an instance of MediaStreamSource from two IMediaStreamDescriptor objects.
-                   * @param descriptor The first AudioStreamDescriptor or VideoStreamDescriptor to create the MediaStreamSource from.
-                   * @param descriptor2 The second AudioStreamDescriptor or VideoStreamDescriptor to create the MediaStreamSource from.
-                   */
+    * Creates an instance of MediaStreamSource from two IMediaStreamDescriptor objects.
+    * @param descriptor The first AudioStreamDescriptor or VideoStreamDescriptor to create the MediaStreamSource from.
+    * @param descriptor2 The second AudioStreamDescriptor or VideoStreamDescriptor to create the MediaStreamSource from.
+    */
   def this(descriptor: IMediaStreamDescriptor, descriptor2: IMediaStreamDescriptor) = this()
   /** Gets or sets the amount of data that is buffered by the MediaStreamSource . */
   var bufferTime: scala.Double = js.native
@@ -76,25 +76,25 @@ class MediaStreamSource protected () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[MediaStreamSource, MediaStreamSourceSwitchStreamsRequestedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Adds a Digital Rights Management (DRM) protection key which is used by the MediaProtectionManager to encrypt and decrypt the specified stream.
-                   * @param streamDescriptor The stream the key is used to encrypt and decrypt.
-                   * @param keyIdentifier The key used to encrypt and decrypt the stream.
-                   * @param licenseData The DRM licence for the media.
-                   */
+    * Adds a Digital Rights Management (DRM) protection key which is used by the MediaProtectionManager to encrypt and decrypt the specified stream.
+    * @param streamDescriptor The stream the key is used to encrypt and decrypt.
+    * @param keyIdentifier The key used to encrypt and decrypt the stream.
+    * @param licenseData The DRM licence for the media.
+    */
   def addProtectionKey(
     streamDescriptor: IMediaStreamDescriptor,
     keyIdentifier: js.Array[scala.Double],
     licenseData: js.Array[scala.Double]
   ): scala.Unit = js.native
   /**
-                   * Adds a new stream descriptor to the MediaStreamSource .
-                   * @param descriptor The descriptor to add.
-                   */
+    * Adds a new stream descriptor to the MediaStreamSource .
+    * @param descriptor The descriptor to add.
+    */
   def addStreamDescriptor(descriptor: IMediaStreamDescriptor): scala.Unit = js.native
   /**
-                   * Notifies the MediaStreamSource that an error has occurred which is preventing the application from continuing to deliver data to the MediaStreamSource.
-                   * @param errorStatus The cause of the error.
-                   */
+    * Notifies the MediaStreamSource that an error has occurred which is preventing the application from continuing to deliver data to the MediaStreamSource.
+    * @param errorStatus The cause of the error.
+    */
   def notifyError(errorStatus: MediaStreamSourceErrorStatus): scala.Unit = js.native
   /** Occurs when the MediaStreamSource is shutting down. */
   def onclosed(ev: MediaStreamSourceClosedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[MediaStreamSource]): scala.Unit = js.native
@@ -139,10 +139,10 @@ class MediaStreamSource protected () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[MediaStreamSource, MediaStreamSourceSwitchStreamsRequestedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Sets the range of data that the application is currently buffering.
-                   * @param startOffset The smallest time stamp of a MediaStreamSample buffered by the application.
-                   * @param endOffset The largest time stamp of a MediaStreamSample buffered by the application.
-                   */
+    * Sets the range of data that the application is currently buffering.
+    * @param startOffset The smallest time stamp of a MediaStreamSample buffered by the application.
+    * @param endOffset The largest time stamp of a MediaStreamSample buffered by the application.
+    */
   def setBufferedRange(startOffset: scala.Double, endOffset: scala.Double): scala.Unit = js.native
 }
 

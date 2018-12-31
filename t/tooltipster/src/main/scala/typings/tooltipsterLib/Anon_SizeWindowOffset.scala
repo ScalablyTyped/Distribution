@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SizeWindowOffset extends js.Object {
   /** the origin has a fixed lineage if itself or one of its ancestors has a fixed position */
   var fixedLineage: scala.Boolean

@@ -33,9 +33,9 @@ trait VueI18n extends js.Object {
     locale: vueDashI18nLib.vueDashI18nMod.VueI18nNs.Locale
   ): vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeFormatResult = js.native
   /**
-     * @param choice {number} a choice index given by the input to $tc: `$tc('path.to.rule', choiceIndex)`
-     * @param choicesLength {number} an overall amount of available choices
-     * @returns a final choice index
+    * @param choice {number} a choice index given by the input to $tc: `$tc('path.to.rule', choiceIndex)`
+    * @param choicesLength {number} an overall amount of available choices
+    * @returns a final choice index
     */
   def getChoiceIndex(choice: scala.Double, choicesLength: scala.Double): scala.Double = js.native
   def getDateTimeFormat(locale: vueDashI18nLib.vueDashI18nMod.VueI18nNs.Locale): vueDashI18nLib.vueDashI18nMod.VueI18nNs.DateTimeFormat = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DistanceConstraint extends Constraint {
   var distance: scala.Double
   var localAnchorA: js.Array[scala.Double]

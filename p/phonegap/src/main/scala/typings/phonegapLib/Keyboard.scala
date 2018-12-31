@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Keyboard extends js.Object {
   var automaticScrollToTopOnHiding: scala.Boolean
   var isVisible: scala.Boolean

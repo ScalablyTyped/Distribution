@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExportNamedDeclaration extends Node {
   var declaration: Declaration
   var source: StringLiteral | scala.Null

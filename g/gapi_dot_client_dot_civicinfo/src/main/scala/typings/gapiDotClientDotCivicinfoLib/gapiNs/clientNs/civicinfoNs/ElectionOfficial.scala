@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ElectionOfficial extends js.Object {
   /** The email address of the election official. */
   var emailAddress: js.UndefOr[java.lang.String] = js.undefined

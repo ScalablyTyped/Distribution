@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ECCCMSSharedInfo extends js.Object {
   var entityUInfo: js.UndefOr[asn1jsLib.asn1jsMod.OctetString] = js.undefined
   var keyInfo: stdLib.AlgorithmIdentifier

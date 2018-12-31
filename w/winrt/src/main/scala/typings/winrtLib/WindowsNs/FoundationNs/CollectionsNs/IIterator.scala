@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IIterator[T] extends js.Object {
   var current: T
   var hasCurrent: scala.Boolean

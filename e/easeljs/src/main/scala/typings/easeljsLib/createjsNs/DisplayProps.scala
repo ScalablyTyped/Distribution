@@ -21,7 +21,6 @@ class DisplayProps () extends js.Object {
   var visible: scala.Boolean = js.native
   // methods
   def append(visible: scala.Boolean, alpha: scala.Double, shadow: Shadow, compositeOperation: java.lang.String): DisplayProps = js.native
-  // methods
   def append(
     visible: scala.Boolean,
     alpha: scala.Double,

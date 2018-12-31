@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DOMMatrixReadOnly extends js.Object {
   /**
-           * These attributes are simple aliases for certain elements of the 4x4 matrix
-           */
+    * These attributes are simple aliases for certain elements of the 4x4 matrix
+    */
   var a: scala.Double = js.native
   var b: scala.Double = js.native
   var c: scala.Double = js.native

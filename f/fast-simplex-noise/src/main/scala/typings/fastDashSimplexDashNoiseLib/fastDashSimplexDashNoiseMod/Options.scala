@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var amplitude: js.UndefOr[scala.Double] = js.undefined
   var frequency: js.UndefOr[scala.Double] = js.undefined

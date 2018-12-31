@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Excludeglobs extends js.Object {
   var all_frames: js.UndefOr[scala.Boolean] = js.undefined
   var css: js.UndefOr[js.Array[java.lang.String]] = js.undefined

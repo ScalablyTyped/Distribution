@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AlphaMap extends js.Object {
   var alphaMap: threeLib.threeDashCoreMod.IUniform
   var diffuse: threeLib.threeDashCoreMod.IUniform

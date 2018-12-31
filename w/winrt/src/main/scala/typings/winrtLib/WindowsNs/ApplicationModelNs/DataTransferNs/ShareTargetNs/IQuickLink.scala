@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IQuickLink extends js.Object {
   var id: java.lang.String
   var supportedDataFormats: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[java.lang.String]

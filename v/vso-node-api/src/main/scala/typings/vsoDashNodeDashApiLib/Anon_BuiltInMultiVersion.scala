@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BuiltInMultiVersion extends js.Object {
   var autoUpgradeError: scala.Double
   var builtIn: scala.Double

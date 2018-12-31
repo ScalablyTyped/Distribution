@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OperationObject
   extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var consumes: js.UndefOr[MimeTypes] = js.undefined

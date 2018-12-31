@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FoundNetworkProperties extends js.Object {
   /** The network operator's long-format name. */
   var LongName: js.UndefOr[java.lang.String] = js.undefined

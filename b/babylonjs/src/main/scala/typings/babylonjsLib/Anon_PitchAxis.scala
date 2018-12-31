@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PitchAxis extends js.Object {
   var adjustPitch: js.UndefOr[scala.Double] = js.undefined
   var adjustRoll: js.UndefOr[scala.Double] = js.undefined

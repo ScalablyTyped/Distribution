@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransformOptions extends js.Object {
   /** Include the AST in the returned object. Default: `true`. */
   var ast: js.UndefOr[scala.Boolean] = js.undefined
@@ -20,16 +19,16 @@ trait TransformOptions extends js.Object {
   /** write comments to generated output. Default: `true`. */
   var comments: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Do not include superfluous whitespace characters and line terminators. When set to `"auto"`, `compact` is set to
-       * `true` on input sizes of >100KB.
-       */
+    * Do not include superfluous whitespace characters and line terminators. When set to `"auto"`, `compact` is set to
+    * `true` on input sizes of >100KB.
+    */
   var compact: js.UndefOr[scala.Boolean | babelDashCoreLib.babelDashCoreLibStrings.auto] = js.undefined
   /**
-       * This is an object of keys that represent different environments. For example, you may have:
-       * `{ env: { production: { / * specific options * / } } }`
-       * which will use those options when the enviroment variable `BABEL_ENV` is set to `"production"`.
-       * If `BABEL_ENV` isn't set then `NODE_ENV` will be used, if it's not set then it defaults to `"development"`.
-       */
+    * This is an object of keys that represent different environments. For example, you may have:
+    * `{ env: { production: { / * specific options * / } } }`
+    * which will use those options when the enviroment variable `BABEL_ENV` is set to `"production"`.
+    * If `BABEL_ENV` isn't set then `NODE_ENV` will be used, if it's not set then it defaults to `"development"`.
+    */
   var env: js.UndefOr[js.Object] = js.undefined
   /** A path to an .babelrc file to extend. */
   var `extends`: js.UndefOr[java.lang.String] = js.undefined
@@ -40,9 +39,9 @@ trait TransformOptions extends js.Object {
   /** An object containing the options to be passed down to the babel code generator, babel-generator. Default: `{}` */
   var generatorOpts: js.UndefOr[babelDashGeneratorLib.babelDashGeneratorMod.GeneratorOptions] = js.undefined
   /**
-       * Specify a custom callback to generate a module id with. Called as `getModuleId(moduleName)`.
-       * If falsy value is returned then the generated module id is used.
-       */
+    * Specify a custom callback to generate a module id with. Called as `getModuleId(moduleName)`.
+    * If falsy value is returned then the generated module id is used.
+    */
   var getModuleId: js.UndefOr[js.Function1[/* moduleName */ java.lang.String, java.lang.String]] = js.undefined
   /** Enable/disable ANSI syntax highlighting of code frames. Default: `true`. */
   var highlightCode: js.UndefOr[scala.Boolean] = js.undefined
@@ -55,16 +54,16 @@ trait TransformOptions extends js.Object {
   /** Specify a custom name for module ids. */
   var moduleId: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * If truthy, insert an explicit id for modules. By default, all modules are anonymous.
-       * (Not available for `common` modules).
-       */
+    * If truthy, insert an explicit id for modules. By default, all modules are anonymous.
+    * (Not available for `common` modules).
+    */
   var moduleIds: js.UndefOr[scala.Boolean] = js.undefined
   /** Optional prefix for the AMD module formatter that will be prepend to the filename on module definitions. */
   var moduleRoot: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * A glob, regex, or mixed array of both, matching paths to only compile. Can also be an array of arrays containing
-       * paths to explicitly match. When attempting to compile a non-matching file it's returned verbatim.
-       */
+    * A glob, regex, or mixed array of both, matching paths to only compile. Can also be an array of arrays containing
+    * paths to explicitly match. When attempting to compile a non-matching file it's returned verbatim.
+    */
   var only: js.UndefOr[java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp])] = js.undefined
   /** Babylon parser options. */
   var parserOpts: js.UndefOr[babylonLib.babylonMod.BabylonOptions] = js.undefined
@@ -79,19 +78,19 @@ trait TransformOptions extends js.Object {
   /** Retain line numbers - will result in really ugly code. Default: `false` */
   var retainLines: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * An optional callback that controls whether a comment should be output or not. Called as
-       * `shouldPrintComment(commentContents)`. **NOTE**: This overrides the `comments` option when used.
-       */
+    * An optional callback that controls whether a comment should be output or not. Called as
+    * `shouldPrintComment(commentContents)`. **NOTE**: This overrides the `comments` option when used.
+    */
   var shouldPrintComment: js.UndefOr[js.Function1[/* comment */ java.lang.String, scala.Boolean]] = js.undefined
   /** Set `sources[0]` on returned source map. */
   var sourceFileName: js.UndefOr[java.lang.String] = js.undefined
   /** Set `file` on returned source map. */
   var sourceMapTarget: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * If truthy, adds a `map` property to returned output. If set to `"inline"`, a comment with a `sourceMappingURL`
-       * directive is added to the bottom of the returned code. If set to `"both"` then a map property is returned as well
-       * as a source map comment appended.
-       */
+    * If truthy, adds a `map` property to returned output. If set to `"inline"`, a comment with a `sourceMappingURL`
+    * directive is added to the bottom of the returned code. If set to `"both"` then a map property is returned as well
+    * as a source map comment appended.
+    */
   var sourceMaps: js.UndefOr[
     scala.Boolean | babelDashCoreLib.babelDashCoreLibStrings.`inline` | babelDashCoreLib.babelDashCoreLibStrings.both
   ] = js.undefined
@@ -102,9 +101,9 @@ trait TransformOptions extends js.Object {
     babelDashCoreLib.babelDashCoreLibStrings.script | babelDashCoreLib.babelDashCoreLibStrings.module
   ] = js.undefined
   /**
-       * An optional callback that can be used to wrap visitor methods.
-       * NOTE: This is useful for things like introspection, and not really needed for implementing anything.
-       */
+    * An optional callback that can be used to wrap visitor methods.
+    * NOTE: This is useful for things like introspection, and not really needed for implementing anything.
+    */
   var wrapPluginVisitorMethod: js.UndefOr[
     js.Function3[
       /* pluginAlias */ java.lang.String, 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlipCardProps extends js.Object {
   var alignHeight: js.UndefOr[scala.Boolean] = js.undefined
   var alignWidth: js.UndefOr[scala.Boolean] = js.undefined

@@ -12,8 +12,8 @@ sealed trait RepositoryCleanOptions extends js.Object
 @js.native
 object RepositoryCleanOptions extends js.Object {
   /**
-       * Re-create $(agnet.buildDirectory) which contains $(build.sourcesDirectory), $(build.binariesDirectory) and any folders that left from previous build.
-       */
+    * Re-create $(agnet.buildDirectory) which contains $(build.sourcesDirectory), $(build.binariesDirectory) and any folders that left from previous build.
+    */
   @js.native
   sealed trait AllBuildDir
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.RepositoryCleanOptions
@@ -27,8 +27,8 @@ object RepositoryCleanOptions extends js.Object {
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.RepositoryCleanOptions
   
   /**
-       * Re-create $(build.sourcesDirectory)
-       */
+    * Re-create $(build.sourcesDirectory)
+    */
   @js.native
   sealed trait SourceDir
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.RepositoryCleanOptions

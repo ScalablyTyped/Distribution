@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GraphvizOptions extends js.Object {
   var convertEqualSidedPolygons: js.UndefOr[scala.Boolean] = js.undefined
   var engine: js.UndefOr[Engine] = js.undefined

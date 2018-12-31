@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Store[T] extends js.Object {
   def connect(cb: js.Function2[/* error */ js.Any, /* length */ scala.Double, scala.Unit]): scala.Unit
   def deleteTask(taskId: js.Any, cb: js.Function0[scala.Unit]): scala.Unit

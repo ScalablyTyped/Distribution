@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RowSelectionChangedEventUIParam extends js.Object {
   /**
   	 * Gets reference to GridSelection.

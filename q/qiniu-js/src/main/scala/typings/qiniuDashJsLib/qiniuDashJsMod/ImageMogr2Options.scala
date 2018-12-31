@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageMogr2Options extends js.Object {
   var `auto-orient`: scala.Boolean
   				// 新图的输出格式，取值范围：jpg，gif，png，webp等

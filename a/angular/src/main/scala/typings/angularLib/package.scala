@@ -10,8 +10,8 @@ package object angularLib {
     JQLite
   ]
   /**
-   * The interface used to specify the properties parameter in css()
-   */
+    * The interface used to specify the properties parameter in css()
+    */
   // tslint:disable-next-line:class-name
   type cssPropertySetter = js.Function2[
     /* index */ scala.Double, 

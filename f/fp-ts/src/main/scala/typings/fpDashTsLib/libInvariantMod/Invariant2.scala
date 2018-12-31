@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Invariant2[F /* <: fpDashTsLib.libHKTMod.URIS2 */] extends js.Object {
   val URI: F
   def imap[L, A, B](

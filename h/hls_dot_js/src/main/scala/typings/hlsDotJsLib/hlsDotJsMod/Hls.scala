@@ -8,132 +8,132 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Hls extends js.Object {
   /**
-       * get: returns audio track id
-       * set: sets audio track id (returned by)
-       */
+    * get: returns audio track id
+    * set: sets audio track id (returned by)
+    */
   var audioTrack: scala.Double = js.native
   /**
-       * array of audio tracks exposed in manifest
-       */
+    * array of audio tracks exposed in manifest
+    */
   var audioTracks: js.Array[stdLib.AudioTrack] = js.native
   /**
-       * capping/max level (index of level) that could be used by ABR Controller. Defaults to -1
-       * which means no limit
-       * set: max level value that could be used by the ABR Controller
-       */
+    * capping/max level (index of level) that could be used by ABR Controller. Defaults to -1
+    * which means no limit
+    * set: max level value that could be used by the ABR Controller
+    */
   var autoLevelCapping: scala.Double = js.native
   /**
-       * (default: true)
-       * if set to true, start level playlist and first fragments will be loaded automatically, after triggering of Hls.Events.MANIFEST_PARSED event
-       * if set to false, an explicit API call (hls.startLoad(startPosition=-1)) will be needed to start quality level/fragment loading.
-       */
+    * (default: true)
+    * if set to true, start level playlist and first fragments will be loaded automatically, after triggering of Hls.Events.MANIFEST_PARSED event
+    * if set to false, an explicit API call (hls.startLoad(startPosition=-1)) will be needed to start quality level/fragment loading.
+    */
   var autoStartLoad: scala.Boolean = js.native
   /**
-       *  hls.js config
-       */
+    *  hls.js config
+    */
   var config: hlsDotJsLib.hlsDotJsMod.HlsNs.Config = js.native
   /**
-       * get: return current playback quality level
-       * set:  trigger an immediate quality level switch to new quality level
-       * this will pause the video if it was playing, flush the whole buffer,
-       * and fetch fragment matching with current position and requested quality level
-       * then resume the video if needed once fetched fragment will have been buffered
-       *
-       * set to -1 for automatic level selection
-       */
+    * get: return current playback quality level
+    * set:  trigger an immediate quality level switch to new quality level
+    * this will pause the video if it was playing, flush the whole buffer,
+    * and fetch fragment matching with current position and requested quality level
+    * then resume the video if needed once fetched fragment will have been buffered
+    *
+    * set to -1 for automatic level selection
+    */
   var currentLevel: scala.Double = js.native
   /**
-       * first level index (index of first level appearing in Manifest. it is usually defined as start level hint for player)
-       */
+    * first level index (index of first level appearing in Manifest. it is usually defined as start level hint for player)
+    */
   var firstLevel: scala.Double = js.native
   /**
-       * return array of available quality levels
-       */
+    * return array of available quality levels
+    */
   var levels: js.Array[hlsDotJsLib.hlsDotJsMod.HlsNs.Level] = js.native
   /**
-       * position of live sync point (ie edge of live position minus safety delay defined by hls.config.liveSyncDuration)
-       */
+    * position of live sync point (ie edge of live position minus safety delay defined by hls.config.liveSyncDuration)
+    */
   var liveSyncPosition: scala.Double = js.native
   /**
-       * get: return last loaded fragment quality level
-       * set: quality level for next loaded fragment
-       * set to -1 for automatic level selection
-       */
+    * get: return last loaded fragment quality level
+    * set: quality level for next loaded fragment
+    * set to -1 for automatic level selection
+    */
   var loadLevel: scala.Double = js.native
   /**
-       * get: Return the bound videoElement from the hls instance
-       */
+    * get: Return the bound videoElement from the hls instance
+    */
   var media: stdLib.HTMLVideoElement = js.native
   /**
-       * get: return next playback quality level (playback quality level for next buffered fragment)
-       * return -1 if next fragment not buffered yet
-       * set: trigger a quality level switch for next fragment
-       * this could eventually flush already buffered next fragment
-       *
-       * set to -1 for automatic level selection
-       */
+    * get: return next playback quality level (playback quality level for next buffered fragment)
+    * return -1 if next fragment not buffered yet
+    * set: trigger a quality level switch for next fragment
+    * this could eventually flush already buffered next fragment
+    *
+    * set to -1 for automatic level selection
+    */
   var nextLevel: scala.Double = js.native
   /**
-       * get: return quality level that will be used to load next fragment
-       * set: force quality level for next loaded fragment
-       * quality level will be forced only for that fragment
-       * after a fragment at this quality level has been loaded, hls.loadLevel will prevail
-       */
+    * get: return quality level that will be used to load next fragment
+    * set: force quality level for next loaded fragment
+    * quality level will be forced only for that fragment
+    * after a fragment at this quality level has been loaded, hls.loadLevel will prevail
+    */
   var nextLoadLevel: scala.Double = js.native
   /**
-       * return start level index (level of first fragment that will be played back)
-       *      if not overrided by user: first level appearing in manifest will be used as start level
-       *      if -1: automatic start level selection, playback will start from level matching download bandwidth (determined from download of first segment)
-       *
-       *  default valus is hls.firstLevel
-       */
+    * return start level index (level of first fragment that will be played back)
+    *      if not overrided by user: first level appearing in manifest will be used as start level
+    *      if -1: automatic start level selection, playback will start from level matching download bandwidth (determined from download of first segment)
+    *
+    *  default valus is hls.firstLevel
+    */
   var startLevel: scala.Double = js.native
   /**
-       * (default: false)
-       * get/set : if set to true the active subtitle track mode will be set to showing and the browser will display the active subtitles.
-       * If set to false, the mode will be set to hidden.
-       */
+    * (default: false)
+    * get/set : if set to true the active subtitle track mode will be set to showing and the browser will display the active subtitles.
+    * If set to false, the mode will be set to hidden.
+    */
   var subtitleDisplay: scala.Boolean = js.native
   /**
-       * get/set : subtitle track id (returned by).
-       * Returns -1 if no track is visible.
-       * Set to -1 to hide all subtitle tracks.
-       */
+    * get/set : subtitle track id (returned by).
+    * Returns -1 if no track is visible.
+    * Set to -1 to hide all subtitle tracks.
+    */
   var subtitleTrack: scala.Double = js.native
   /**
-       * get : array of subtitle tracks exposed in manifest
-       */
+    * get : array of subtitle tracks exposed in manifest
+    */
   var subtitleTracks: js.Array[_] = js.native
   /**
-       * calling this method will:
-       *      bind videoElement and hls instances
-       *      create MediaSource and set it as video source
-       *      once MediaSource object is successfully created, MEDIA_ATTACHED event will be fired
-       */
+    * calling this method will:
+    *      bind videoElement and hls instances
+    *      create MediaSource and set it as video source
+    *      once MediaSource object is successfully created, MEDIA_ATTACHED event will be fired
+    */
   def attachMedia(videoElement: stdLib.HTMLVideoElement): scala.Unit = js.native
   /**
-       * tell whether auto level selection is enabled or not
-       */
+    * tell whether auto level selection is enabled or not
+    */
   def autoLevelEnabled(enabled: scala.Boolean): scala.Boolean = js.native
   /**
-       * should be called to free used resources and destroy hls context
-       */
+    * should be called to free used resources and destroy hls context
+    */
   def destroy(): scala.Unit = js.native
   /**
-       * calling this method will:
-       *      unbind VideoElement from hls instance
-       *      signal the end of the stream on MediaSource
-       *      reset video source ( video.src = '' )
-       */
+    * calling this method will:
+    *      unbind VideoElement from hls instance
+    *      signal the end of the stream on MediaSource
+    *      reset video source ( video.src = '' )
+    */
   def detachMedia(): scala.Unit = js.native
   /**
-       * loads provided url as media source
-       */
+    * loads provided url as media source
+    */
   def loadSource(source: java.lang.String): scala.Unit = js.native
   /**
-       * remove hls.js event listener
-       */
-  def off(event: java.lang.String, callback: js.Function1[/* repeated */js.Any, scala.Unit]): scala.Unit = js.native
+    * remove hls.js event listener
+    */
+  def off(event: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
   def on(
     event: hlsDotJsLib.K_AUDIO_TRACKS_UPDATED,
     callback: js.Function2[
@@ -459,8 +459,8 @@ trait Hls extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-       * hls.js event listener
-       */
+    * hls.js event listener
+    */
   def on(
     event: hlsDotJsLib.K_MEDIA_ATTACHING,
     callback: js.Function2[
@@ -850,8 +850,8 @@ trait Hls extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-       * hls.js single event listener
-       */
+    * hls.js single event listener
+    */
   def once(
     event: hlsDotJsLib.K_MEDIA_ATTACHING,
     callback: js.Function2[
@@ -917,39 +917,30 @@ trait Hls extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-       * should be invoked to recover media error.
-       */
+    * should be invoked to recover media error.
+    */
   def recoverMediaError(): scala.Unit = js.native
   /**
-       * by default, hls.js will automatically start loading quality level playlists, and fragments after Hls.Events.MANIFEST_PARSED event has been triggered (and video element has been attached)
-       * however if config.autoStartLoad is set to false, hls.startLoad() needs to be called to manually start playlist and fragments loading
-       *
-       * start/restart playlist/fragment loading. this is only effective if MANIFEST_PARSED event has been triggered and video element has been attached to hls object
-       * startPosition is the initial position in the playlist
-       * ff startPosition is not set to -1, it allows to override default startPosition to the one you want
-       * (it will bypass hls.config.liveSync* config params for Live for example, so that user can start playback from whatever position)
-       */
+    * by default, hls.js will automatically start loading quality level playlists, and fragments after Hls.Events.MANIFEST_PARSED event has been triggered (and video element has been attached)
+    * however if config.autoStartLoad is set to false, hls.startLoad() needs to be called to manually start playlist and fragments loading
+    *
+    * start/restart playlist/fragment loading. this is only effective if MANIFEST_PARSED event has been triggered and video element has been attached to hls object
+    * startPosition is the initial position in the playlist
+    * ff startPosition is not set to -1, it allows to override default startPosition to the one you want
+    * (it will bypass hls.config.liveSync* config params for Live for example, so that user can start playback from whatever position)
+    */
   def startLoad(): scala.Unit = js.native
-  /**
-       * by default, hls.js will automatically start loading quality level playlists, and fragments after Hls.Events.MANIFEST_PARSED event has been triggered (and video element has been attached)
-       * however if config.autoStartLoad is set to false, hls.startLoad() needs to be called to manually start playlist and fragments loading
-       *
-       * start/restart playlist/fragment loading. this is only effective if MANIFEST_PARSED event has been triggered and video element has been attached to hls object
-       * startPosition is the initial position in the playlist
-       * ff startPosition is not set to -1, it allows to override default startPosition to the one you want
-       * (it will bypass hls.config.liveSync* config params for Live for example, so that user can start playback from whatever position)
-       */
   def startLoad(startPosition: scala.Double): scala.Unit = js.native
   /**
-       * stop playlist/fragment loading. could be resumed later on by calling hls.startLoad()
-       */
+    * stop playlist/fragment loading. could be resumed later on by calling hls.startLoad()
+    */
   def stopLoad(): scala.Unit = js.native
   /**
-       * if media error are still raised after calling hls.recoverMediaError(), calling this method, could be useful to workaround audio codec mismatch.
-       * the workflow should be:
-       *  on First Media Error : call hls.recoverMediaError()
-       *  if another Media Error is raised 'quickly' after this first Media Error : first call hls.swapAudioCodec(), then call hls.recoverMediaError()
-       */
+    * if media error are still raised after calling hls.recoverMediaError(), calling this method, could be useful to workaround audio codec mismatch.
+    * the workflow should be:
+    *  on First Media Error : call hls.recoverMediaError()
+    *  if another Media Error is raised 'quickly' after this first Media Error : first call hls.swapAudioCodec(), then call hls.recoverMediaError()
+    */
   def swapAudioCodec(): scala.Unit = js.native
 }
 

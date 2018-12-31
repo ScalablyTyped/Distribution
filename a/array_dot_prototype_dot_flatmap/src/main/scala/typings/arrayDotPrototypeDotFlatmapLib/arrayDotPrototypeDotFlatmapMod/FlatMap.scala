@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait FlatMap extends js.Object {
-  var implementation: js.Any = js.native
+  @JSName("implementation")
+  var implementation_Original: arrayDotPrototypeDotFlatmapLib.Anon_Xs = js.native
   def apply[A, B, T /* <: js.UndefOr[js.Object] */](
     xs: js.Array[A],
     fn: js.ThisFunction3[
@@ -29,7 +30,28 @@ trait FlatMap extends js.Object {
     ],
     thisArg: T
   ): arrayDotPrototypeDotFlatmapLib.Array[B] = js.native
-  def getPolyfill(): js.Any = js.native
-  def shim(): js.Any = js.native
+  def getPolyfill(): arrayDotPrototypeDotFlatmapLib.Anon_Xs = js.native
+  def implementation[A, B, T /* <: js.UndefOr[js.Object] */](
+    xs: js.Array[A],
+    fn: js.ThisFunction3[
+      /* this */ T, 
+      /* x */ A, 
+      /* index */ scala.Double, 
+      /* array */ arrayDotPrototypeDotFlatmapLib.Array[A], 
+      arrayDotPrototypeDotFlatmapLib.Array[B]
+    ]
+  ): arrayDotPrototypeDotFlatmapLib.Array[B] = js.native
+  def implementation[A, B, T /* <: js.UndefOr[js.Object] */](
+    xs: js.Array[A],
+    fn: js.ThisFunction3[
+      /* this */ T, 
+      /* x */ A, 
+      /* index */ scala.Double, 
+      /* array */ arrayDotPrototypeDotFlatmapLib.Array[A], 
+      arrayDotPrototypeDotFlatmapLib.Array[B]
+    ],
+    thisArg: T
+  ): arrayDotPrototypeDotFlatmapLib.Array[B] = js.native
+  def shim(): arrayDotPrototypeDotFlatmapLib.Anon_Xs = js.native
 }
 

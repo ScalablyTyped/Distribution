@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SeriesDragSettings extends js.Object {
   /** drag/drop the series
-               * @Default {false}
-               */
+    * @Default {false}
+    */
   var enable: js.UndefOr[scala.Boolean] = js.undefined
   /** Specifies the type of drag settings.
-               * @Default {xy}
-               */
+    * @Default {xy}
+    */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 

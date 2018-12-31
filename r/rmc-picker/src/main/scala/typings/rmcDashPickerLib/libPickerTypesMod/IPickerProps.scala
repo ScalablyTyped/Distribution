@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPickerProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var defaultSelectedValue: js.UndefOr[js.Any] = js.undefined

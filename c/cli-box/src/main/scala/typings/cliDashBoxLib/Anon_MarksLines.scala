@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MarksLines extends js.Object {
   var height: scala.Double
   var lines: js.Array[Anon_Text]

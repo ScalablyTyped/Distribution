@@ -14,16 +14,16 @@ class CurvePath[T /* <: Vector */] () extends Curve[T] {
   def checkConnection(): scala.Boolean = js.native
   def closePath(): scala.Unit = js.native
   /**
-       * @deprecated Use {@link Geometry#setFromPoints new THREE.Geometry().setFromPoints( points )} instead.
-       */
+    * @deprecated Use {@link Geometry#setFromPoints new THREE.Geometry().setFromPoints( points )} instead.
+    */
   def createGeometry(points: js.Array[T]): Geometry = js.native
   /**
-       * @deprecated Use {@link Geometry#setFromPoints new THREE.Geometry().setFromPoints( points )} instead.
-       */
+    * @deprecated Use {@link Geometry#setFromPoints new THREE.Geometry().setFromPoints( points )} instead.
+    */
   def createPointsGeometry(divisions: scala.Double): Geometry = js.native
   /**
-       * @deprecated Use {@link Geometry#setFromPoints new THREE.Geometry().setFromPoints( points )} instead.
-       */
+    * @deprecated Use {@link Geometry#setFromPoints new THREE.Geometry().setFromPoints( points )} instead.
+    */
   def createSpacedPointsGeometry(divisions: scala.Double): Geometry = js.native
   def getCurveLengths(): js.Array[scala.Double] = js.native
 }

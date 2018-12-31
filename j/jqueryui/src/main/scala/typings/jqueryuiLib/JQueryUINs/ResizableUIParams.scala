@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResizableUIParams extends js.Object {
   var element: jqueryuiLib.JQuery
   var helper: jqueryuiLib.JQuery

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISpinner
   extends extjsLib.ExtNs.formNs.fieldNs.ITrigger {
   /** [Config Option] (Boolean) */

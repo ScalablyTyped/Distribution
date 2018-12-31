@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReactToggledProps extends js.Object {
   val defaultOn: js.UndefOr[scala.Boolean] = js.undefined
   val on: js.UndefOr[scala.Boolean] = js.undefined

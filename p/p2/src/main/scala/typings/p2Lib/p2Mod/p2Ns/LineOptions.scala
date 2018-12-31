@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LineOptions extends SharedShapeOptions {
   var length: js.UndefOr[scala.Double] = js.undefined
 }

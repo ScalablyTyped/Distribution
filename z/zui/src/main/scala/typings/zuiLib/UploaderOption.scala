@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * uploader
- */
-
-
+  * uploader
+  */
 trait UploaderOption extends js.Object {
   var autoUpload: js.UndefOr[scala.Boolean] = js.undefined
   var browseByClickList: js.UndefOr[scala.Boolean] = js.undefined

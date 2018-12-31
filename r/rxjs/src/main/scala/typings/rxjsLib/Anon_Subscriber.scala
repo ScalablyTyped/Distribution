@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Subscriber[T] extends js.Object {
   var index: scala.Double
   var keys: js.Array[java.lang.String]

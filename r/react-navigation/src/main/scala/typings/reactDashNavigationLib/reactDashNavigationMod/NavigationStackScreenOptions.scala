@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigationStackScreenOptions extends js.Object {
   var gestureDirection: js.UndefOr[
     reactDashNavigationLib.reactDashNavigationLibStrings.default | reactDashNavigationLib.reactDashNavigationLibStrings.inverted

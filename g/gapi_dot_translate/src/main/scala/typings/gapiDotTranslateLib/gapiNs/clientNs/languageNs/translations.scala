@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait translations extends js.Object {
   /**
   		 * Returns text translations from one language to another.

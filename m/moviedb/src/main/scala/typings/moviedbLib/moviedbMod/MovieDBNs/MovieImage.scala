@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MovieImage extends js.Object {
   var aspect_ratio: scala.Double
   var file_path: java.lang.String

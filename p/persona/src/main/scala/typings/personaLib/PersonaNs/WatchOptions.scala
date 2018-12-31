@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WatchOptions extends js.Object {
   var loggedInUser: java.lang.String
   var onready: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

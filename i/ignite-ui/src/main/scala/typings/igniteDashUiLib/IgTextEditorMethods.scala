@@ -51,12 +51,6 @@ trait IgTextEditorMethods extends js.Object {
   	 * @param matchType The rule that is applied for searching the text.
   	 */
   def findListItemIndex(text: java.lang.String): scala.Double = js.native
-  /**
-  	 * Finds index of list item by text that matches with the search parameters.
-  	 *
-  	 * @param text The text to search for in the drop down list.
-  	 * @param matchType The rule that is applied for searching the text.
-  	 */
   def findListItemIndex(text: java.lang.String, matchType: js.Object): scala.Double = js.native
   /**
   	 * Gets the selected list item.
@@ -92,11 +86,6 @@ trait IgTextEditorMethods extends js.Object {
   	 * @param newValue The new input name.
   	 */
   def inputName(): java.lang.String = js.native
-  /**
-  	 * Gets/Sets name attribute applied to the editor element.
-  	 *
-  	 * @param newValue The new input name.
-  	 */
   def inputName(newValue: java.lang.String): java.lang.String = js.native
   /**
   	 * Inserts the text at the location of the caret or over the current selection. If the editor is focused the method will insert the text over the current selection. If the editor is not focused the method will set the text as value of the editor.
@@ -122,11 +111,6 @@ trait IgTextEditorMethods extends js.Object {
   	 * @param index The index of the item that needs to be selected.
   	 */
   def selectedListIndex(): scala.Double = js.native
-  /**
-  	 * Gets the index of the selected list item. Sets selected item by index.
-  	 *
-  	 * @param index The index of the item that needs to be selected.
-  	 */
   def selectedListIndex(index: scala.Double): scala.Double = js.native
   /**
   	 * Sets focus to the editor after the specified delay.
@@ -134,11 +118,6 @@ trait IgTextEditorMethods extends js.Object {
   	 * @param delay The delay before focusing the editor.
   	 */
   def setFocus(): scala.Unit = js.native
-  /**
-  	 * Sets focus to the editor after the specified delay.
-  	 *
-  	 * @param delay The delay before focusing the editor.
-  	 */
   def setFocus(delay: scala.Double): scala.Unit = js.native
   /**
   	 * Shows the editor.

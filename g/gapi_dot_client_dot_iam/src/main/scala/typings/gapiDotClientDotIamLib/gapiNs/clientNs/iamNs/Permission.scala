@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Permission extends js.Object {
   /** The current custom role support level. */
   var customRolesSupportLevel: js.UndefOr[java.lang.String] = js.undefined

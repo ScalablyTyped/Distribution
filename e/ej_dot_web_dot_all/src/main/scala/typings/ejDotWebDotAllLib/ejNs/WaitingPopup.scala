@@ -16,16 +16,16 @@ class WaitingPopup protected () extends Widget {
   @JSName("model")
   var model_WaitingPopup: ejDotWebDotAllLib.ejNs.WaitingPopupNs.Model = js.native
   /** To hide the waiting popup
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def hide(): scala.Unit = js.native
   /** Refreshes the WaitingPopup control by resetting the pop-up panel position and content position
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def refresh(): scala.Unit = js.native
   /** To show the waiting popup
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def show(): scala.Unit = js.native
 }
 

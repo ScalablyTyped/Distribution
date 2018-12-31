@@ -20,92 +20,92 @@ class AnimationGroupPlayer protected ()
   var _onStartFns: js.Any = js.native
   var _started: js.Any = js.native
   /**
-       * The parent of this player, if any.
-       */
+    * The parent of this player, if any.
+    */
   /* CompleteClass */
   override var parentPlayer: atAngularAnimationsLib.srcPlayersAnimationUnderscorePlayerMod.AnimationPlayer | scala.Null = js.native
   val players: js.Array[atAngularAnimationsLib.srcPlayersAnimationUnderscorePlayerMod.AnimationPlayer] = js.native
   /**
-       * The total run time of the animation, in milliseconds.
-       */
+    * The total run time of the animation, in milliseconds.
+    */
   /* CompleteClass */
   override val totalTime: scala.Double = js.native
   @JSName("beforeDestroy")
   def beforeDestroy_MAnimationGroupPlayer(): scala.Unit = js.native
   /**
-       * Destroys the animation, after invoking the `beforeDestroy()` callback.
-       * Calls the `onDestroy()` callback when destruction is completed.
-       */
+    * Destroys the animation, after invoking the `beforeDestroy()` callback.
+    * Calls the `onDestroy()` callback when destruction is completed.
+    */
   /* CompleteClass */
   override def destroy(): scala.Unit = js.native
   /**
-       * Ends the animation, invoking the `onDone()` callback.
-       */
+    * Ends the animation, invoking the `onDone()` callback.
+    */
   /* CompleteClass */
   override def finish(): scala.Unit = js.native
   /**
-       * Reports the current position of the animation.
-       * @returns A 0-based offset into the duration, in milliseconds.
-       */
+    * Reports the current position of the animation.
+    * @returns A 0-based offset into the duration, in milliseconds.
+    */
   /* CompleteClass */
   override def getPosition(): scala.Double = js.native
   /**
-       * Reports whether the animation has started.
-       * @returns True if the animation has started, false otherwise.
-       */
+    * Reports whether the animation has started.
+    * @returns True if the animation has started, false otherwise.
+    */
   /* CompleteClass */
   override def hasStarted(): scala.Boolean = js.native
   /**
-       * Initializes the animation.
-       */
+    * Initializes the animation.
+    */
   /* CompleteClass */
   override def init(): scala.Unit = js.native
   /**
-       * Provides a callback to invoke after the animation is destroyed.
-       * @param fn The callback function.
-       * @see `destroy()`
-       * @see `beforeDestroy()`
-       */
+    * Provides a callback to invoke after the animation is destroyed.
+    * @param fn The callback function.
+    * @see `destroy()`
+    * @see `beforeDestroy()`
+    */
   /* CompleteClass */
   override def onDestroy(fn: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
-       * Provides a callback to invoke when the animation finishes.
-       * @param fn The callback function.
-       * @see `finish()`
-       */
+    * Provides a callback to invoke when the animation finishes.
+    * @param fn The callback function.
+    * @see `finish()`
+    */
   /* CompleteClass */
   override def onDone(fn: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
-       * Provides a callback to invoke when the animation starts.
-       * @param fn The callback function.
-       * @see `run()`
-       */
+    * Provides a callback to invoke when the animation starts.
+    * @param fn The callback function.
+    * @see `run()`
+    */
   /* CompleteClass */
   override def onStart(fn: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
-       * Pauses the animation.
-       */
+    * Pauses the animation.
+    */
   /* CompleteClass */
   override def pause(): scala.Unit = js.native
   /**
-       * Runs the animation, invoking the `onStart()` callback.
-       */
+    * Runs the animation, invoking the `onStart()` callback.
+    */
   /* CompleteClass */
   override def play(): scala.Unit = js.native
   /**
-       * Resets the animation to its initial state.
-       */
+    * Resets the animation to its initial state.
+    */
   /* CompleteClass */
   override def reset(): scala.Unit = js.native
   /**
-       * Restarts the paused animation.
-       */
+    * Restarts the paused animation.
+    */
   /* CompleteClass */
   override def restart(): scala.Unit = js.native
   /**
-       * Sets the position of the animation.
-       * @param position A 0-based offset into the duration, in milliseconds.
-       */
+    * Sets the position of the animation.
+    * @param position A 0-based offset into the duration, in milliseconds.
+    */
   /* CompleteClass */
   override def setPosition(position: js.Any): scala.Unit = js.native
   def setPosition(p: scala.Double): scala.Unit = js.native

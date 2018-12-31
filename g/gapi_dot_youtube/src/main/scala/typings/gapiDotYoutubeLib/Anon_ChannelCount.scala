@@ -5,23 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ChannelCount extends js.Object {
   /**
-               * The audio streams bitrate, in bits per second.
-               */
+    * The audio streams bitrate, in bits per second.
+    */
   var bitrateBps: scala.Double
   /**
-               * The number of audio channels that the stream contains.
-               */
+    * The number of audio channels that the stream contains.
+    */
   var channelCount: scala.Double
   /**
-               * The audio codec that the stream uses.
-               */
+    * The audio codec that the stream uses.
+    */
   var codec: java.lang.String
   /**
-               * A value that uniquely identifies a video vendor. Typically, the value is a four-letter vendor code.
-               */
+    * A value that uniquely identifies a video vendor. Typically, the value is a four-letter vendor code.
+    */
   var vendor: java.lang.String
 }
 

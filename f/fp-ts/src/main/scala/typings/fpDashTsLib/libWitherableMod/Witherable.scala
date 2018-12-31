@@ -12,18 +12,18 @@ trait Witherable[T]
   /* InferMemberOverrides */
   override val URI: T = js.native
   /**
-       * Partition a structure with effects
-       */
+    * Partition a structure with effects
+    */
   @JSName("wilt")
   var wilt_Original: Wilt[T] = js.native
   /**
-       * Filter a structure  with effects
-       */
+    * Filter a structure  with effects
+    */
   @JSName("wither")
   var wither_Original: Wither[T] = js.native
   /**
-       * Partition a structure with effects
-       */
+    * Partition a structure with effects
+    */
   def wilt[F](F: fpDashTsLib.libApplicativeMod.Applicative[F]): js.Function2[
     /* wa */ fpDashTsLib.libHKTMod.HKT[T, _], 
     /* f */ js.Function1[
@@ -36,8 +36,8 @@ trait Witherable[T]
     ]
   ] = js.native
   /**
-       * Partition a structure with effects
-       */
+    * Partition a structure with effects
+    */
   def wilt[F /* <: fpDashTsLib.libHKTMod.URIS */](F: fpDashTsLib.libApplicativeMod.Applicative1[F]): js.Function2[
     /* wa */ fpDashTsLib.libHKTMod.HKT[T, _], 
     /* f */ js.Function1[
@@ -50,8 +50,8 @@ trait Witherable[T]
     ]
   ] = js.native
   /**
-       * Partition a structure with effects
-       */
+    * Partition a structure with effects
+    */
   def wilt[F /* <: fpDashTsLib.libHKTMod.URIS2 */](F: fpDashTsLib.libApplicativeMod.Applicative2[F]): js.Function2[
     /* wa */ fpDashTsLib.libHKTMod.HKT[T, _], 
     /* f */ js.Function1[
@@ -65,8 +65,8 @@ trait Witherable[T]
     ]
   ] = js.native
   /**
-       * Partition a structure with effects
-       */
+    * Partition a structure with effects
+    */
   def wilt[F /* <: fpDashTsLib.libHKTMod.URIS3 */](F: fpDashTsLib.libApplicativeMod.Applicative3[F]): js.Function2[
     /* wa */ fpDashTsLib.libHKTMod.HKT[T, _], 
     /* f */ js.Function1[
@@ -81,8 +81,8 @@ trait Witherable[T]
     ]
   ] = js.native
   /**
-       * Partition a structure with effects
-       */
+    * Partition a structure with effects
+    */
   def wilt[F /* <: fpDashTsLib.libHKTMod.URIS2 */, FL](F: fpDashTsLib.libApplicativeMod.Applicative2C[F, FL]): js.Function2[
     /* wa */ fpDashTsLib.libHKTMod.HKT[T, _], 
     /* f */ js.Function1[
@@ -96,8 +96,8 @@ trait Witherable[T]
     ]
   ] = js.native
   /**
-       * Partition a structure with effects
-       */
+    * Partition a structure with effects
+    */
   def wilt[F /* <: fpDashTsLib.libHKTMod.URIS3 */, FU, FL](F: fpDashTsLib.libApplicativeMod.Applicative3C[F, FU, FL]): js.Function2[
     /* wa */ fpDashTsLib.libHKTMod.HKT[T, _], 
     /* f */ js.Function1[
@@ -112,24 +112,24 @@ trait Witherable[T]
     ]
   ] = js.native
   /**
-       * Filter a structure  with effects
-       */
+    * Filter a structure  with effects
+    */
   def wither[F](F: fpDashTsLib.libApplicativeMod.Applicative[F]): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.HKT[T, _], 
     /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libOptionMod.Option[_]]], 
     fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libHKTMod.HKT[T, _]]
   ] = js.native
   /**
-       * Filter a structure  with effects
-       */
+    * Filter a structure  with effects
+    */
   def wither[F /* <: fpDashTsLib.libHKTMod.URIS */](F: fpDashTsLib.libApplicativeMod.Applicative1[F]): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.HKT[T, _], 
     /* f */ js.Function1[/* a */ js.Any, fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libOptionMod.Option[_]]], 
     fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.HKT[T, _]]
   ] = js.native
   /**
-       * Filter a structure  with effects
-       */
+    * Filter a structure  with effects
+    */
   def wither[F /* <: fpDashTsLib.libHKTMod.URIS2 */](F: fpDashTsLib.libApplicativeMod.Applicative2[F]): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.HKT[T, _], 
     /* f */ js.Function1[
@@ -139,8 +139,8 @@ trait Witherable[T]
     fpDashTsLib.libHKTMod.Type2[F, _, fpDashTsLib.libHKTMod.HKT[T, _]]
   ] = js.native
   /**
-       * Filter a structure  with effects
-       */
+    * Filter a structure  with effects
+    */
   def wither[F /* <: fpDashTsLib.libHKTMod.URIS3 */](F: fpDashTsLib.libApplicativeMod.Applicative3[F]): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.HKT[T, _], 
     /* f */ js.Function1[
@@ -150,8 +150,8 @@ trait Witherable[T]
     fpDashTsLib.libHKTMod.Type3[F, _, _, fpDashTsLib.libHKTMod.HKT[T, _]]
   ] = js.native
   /**
-       * Filter a structure  with effects
-       */
+    * Filter a structure  with effects
+    */
   def wither[F /* <: fpDashTsLib.libHKTMod.URIS2 */, FL](F: fpDashTsLib.libApplicativeMod.Applicative2C[F, FL]): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.HKT[T, _], 
     /* f */ js.Function1[
@@ -161,8 +161,8 @@ trait Witherable[T]
     fpDashTsLib.libHKTMod.Type2[F, FL, fpDashTsLib.libHKTMod.HKT[T, _]]
   ] = js.native
   /**
-       * Filter a structure  with effects
-       */
+    * Filter a structure  with effects
+    */
   def wither[F /* <: fpDashTsLib.libHKTMod.URIS3 */, FU, FL](F: fpDashTsLib.libApplicativeMod.Applicative3C[F, FU, FL]): js.Function2[
     /* ta */ fpDashTsLib.libHKTMod.HKT[T, _], 
     /* f */ js.Function1[

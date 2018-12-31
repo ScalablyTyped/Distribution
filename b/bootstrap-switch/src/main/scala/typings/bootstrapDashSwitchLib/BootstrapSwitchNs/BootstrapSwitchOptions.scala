@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BootstrapSwitchOptions extends js.Object {
   var animate: js.UndefOr[scala.Boolean] = js.undefined
   var baseClass: js.UndefOr[java.lang.String] = js.undefined

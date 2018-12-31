@@ -282,8 +282,6 @@ class SourceCode protected () extends js.Object {
   // Inherited methods from TokenStore
   // ---------------------------------
   def getTokenByRangeStart(offset: scala.Double): eslintLib.eslintMod.ASTNs.Token | scala.Null = js.native
-  // Inherited methods from TokenStore
-  // ---------------------------------
   def getTokenByRangeStart(offset: scala.Double, options: eslintLib.Anon_IncludeComments): eslintLib.eslintMod.ASTNs.Token | scala.Null = js.native
   def getTokens(node: estreeLib.estreeMod.Node): js.Array[eslintLib.eslintMod.ASTNs.Token] = js.native
   def getTokens(node: estreeLib.estreeMod.Node, beforeCount: scala.Double): js.Array[eslintLib.eslintMod.ASTNs.Token] = js.native

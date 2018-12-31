@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ParentAccesstokenPageSize extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -27,18 +26,18 @@ trait Anon_ParentAccesstokenPageSize extends js.Object {
   /** Page size. The default page size is the maximum value of 1000 results. */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * Pagination token, which can be used to request a specific page
-                   * of `ListTransferRunsRequest` list results. For multiple-page
-                   * results, `ListTransferRunsResponse` outputs
-                   * a `next_page` token, which can be used as the
-                   * `page_token` value to request the next page of list results.
-                   */
+    * Pagination token, which can be used to request a specific page
+    * of `ListTransferRunsRequest` list results. For multiple-page
+    * results, `ListTransferRunsResponse` outputs
+    * a `next_page` token, which can be used as the
+    * `page_token` value to request the next page of list results.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Name of transfer configuration for which transfer runs should be retrieved.
-                   * Format of transfer configuration resource name is:
-                   * `projects/{project_id}/transferConfigs/{config_id}`.
-                   */
+    * Name of transfer configuration for which transfer runs should be retrieved.
+    * Format of transfer configuration resource name is:
+    * `projects/{project_id}/transferConfigs/{config_id}`.
+    */
   var parent: java.lang.String
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

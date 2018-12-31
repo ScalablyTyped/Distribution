@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait axis extends axisOptions {
   var options: axisOptions
   def c2p(canvasPoint: canvasPoint): point

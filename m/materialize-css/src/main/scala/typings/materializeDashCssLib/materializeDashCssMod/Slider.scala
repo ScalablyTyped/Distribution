@@ -14,27 +14,21 @@ class Slider ()
 @js.native
 object Slider extends js.Object {
   /**
-           * Get Instance
-           */
+    * Get Instance
+    */
   def getInstance(elem: stdLib.Element): materializeDashCssLib.MNs.Slider = js.native
   /**
-           * Init Sliders
-           */
+    * Init Sliders
+    */
   def init(els: materializeDashCssLib.MElements): js.Array[materializeDashCssLib.MNs.Slider] = js.native
-  /**
-           * Init Sliders
-           */
   def init(
     els: materializeDashCssLib.MElements,
     options: stdLib.Partial[materializeDashCssLib.MNs.SliderOptions]
   ): js.Array[materializeDashCssLib.MNs.Slider] = js.native
   /**
-           * Init Slider
-           */
+    * Init Slider
+    */
   def init(els: stdLib.Element): materializeDashCssLib.MNs.Slider = js.native
-  /**
-           * Init Slider
-           */
   def init(els: stdLib.Element, options: stdLib.Partial[materializeDashCssLib.MNs.SliderOptions]): materializeDashCssLib.MNs.Slider = js.native
 }
 

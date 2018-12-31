@@ -6,25 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * ErrorData...
-     */
-
+  * ErrorData...
+  */
 trait IErrorData extends js.Object {
   /**
-           * Type of the error messages.
-           */
+    * Type of the error messages.
+    */
   var qErrorDataCode: ErrorDataCodeType
   /**
-           * Detailed information about the error message.
-           */
+    * Detailed information about the error message.
+    */
   var qErrorString: java.lang.String
   /**
-           * Script statement where the error occurs.
-           */
+    * Script statement where the error occurs.
+    */
   var qLine: java.lang.String
   /**
-           * Line termination characters.
-           */
+    * Line termination characters.
+    */
   var qLineEnd: java.lang.String
 }
 

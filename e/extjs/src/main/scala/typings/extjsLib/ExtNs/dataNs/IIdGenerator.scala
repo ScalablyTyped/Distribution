@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IIdGenerator
   extends extjsLib.ExtNs.IBase {
   /** [Method] Generates and returns the next id

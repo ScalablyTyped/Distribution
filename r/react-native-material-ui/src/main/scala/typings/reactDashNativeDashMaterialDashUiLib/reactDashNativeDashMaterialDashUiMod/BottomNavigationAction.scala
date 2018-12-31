@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BottomNavigationAction extends js.Object {
   var active: scala.Boolean
   var disabled: js.UndefOr[scala.Boolean] = js.undefined

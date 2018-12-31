@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MiddlewareContext
   extends koaDashWebsocketLib.koaDashWebsocketMod.koaMod.Context {
   // Limitation: Declaration merging cannot overwrap existing properties.

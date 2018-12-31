@@ -16,20 +16,20 @@ class Uploadbox protected () extends Widget {
   @JSName("model")
   var model_Uploadbox: ejDotWebDotAllLib.ejNs.UploadboxNs.Model = js.native
   /** Disables the Uploadbox control
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def disable(): scala.Unit = js.native
   /** Enables the Uploadbox control
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def enable(): scala.Unit = js.native
   /** Refresh the Uploadbox control
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def refresh(): scala.Unit = js.native
   /** Upload the selected files.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def upload(): scala.Unit = js.native
 }
 

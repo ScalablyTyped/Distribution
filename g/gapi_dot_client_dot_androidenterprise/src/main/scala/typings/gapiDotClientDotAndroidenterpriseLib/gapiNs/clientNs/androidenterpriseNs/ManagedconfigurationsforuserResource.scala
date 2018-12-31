@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ManagedconfigurationsforuserResource extends js.Object {
   /** Removes a per-user managed configuration for an app for the specified user. */
   def delete(request: gapiDotClientDotAndroidenterpriseLib.Anon_ManagedConfigurationForUserId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

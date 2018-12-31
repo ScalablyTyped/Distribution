@@ -5,39 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default 'active'
-                   */
+    * @default 'active'
+    */
   var active: java.lang.String
   /**
-                   * @default 'dimmable'
-                   */
+    * @default 'dimmable'
+    */
   var dimmable: java.lang.String
   /**
-                   * @default 'dimmed'
-                   */
+    * @default 'dimmed'
+    */
   var dimmed: java.lang.String
   /**
-                   * @default 'disabled'
-                   */
+    * @default 'disabled'
+    */
   var disabled: java.lang.String
   /**
-                   * @default 'hide'
-                   */
+    * @default 'hide'
+    */
   var hide: java.lang.String
   /**
-                   * @default 'page'
-                   */
+    * @default 'page'
+    */
   var pageDimmer: java.lang.String
   /**
-                   * @default 'show'
-                   */
+    * @default 'show'
+    */
   var show: java.lang.String
   /**
-                   * @default 'transition'
-                   */
+    * @default 'transition'
+    */
   var transition: java.lang.String
 }
 

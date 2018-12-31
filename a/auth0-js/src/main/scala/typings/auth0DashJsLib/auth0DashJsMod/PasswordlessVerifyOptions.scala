@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PasswordlessVerifyOptions extends js.Object {
   var connection: java.lang.String
   var email: js.UndefOr[java.lang.String] = js.undefined

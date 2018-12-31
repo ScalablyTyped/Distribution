@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Uri extends js.Object {
   var anchor: java.lang.String
   var authority: java.lang.String

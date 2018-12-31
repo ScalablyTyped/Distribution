@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ApplicationsResource extends js.Object {
   /**
-               * Retrieves the metadata of the application with the given ID. If the requested application is not available for the specified platformType, the returned
-               * response will not include any instance data.
-               */
+    * Retrieves the metadata of the application with the given ID. If the requested application is not available for the specified platformType, the returned
+    * response will not include any instance data.
+    */
   def get(request: gapiDotClientDotGamesLib.Anon_PlatformType): gapiDotClientLib.gapiNs.clientNs.Request[Application]
   /** Indicate that the the currently authenticated user is playing your application. */
   def played(request: gapiDotClientDotGamesLib.Anon_ConsistencyTokenPrettyPrintQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

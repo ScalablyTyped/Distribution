@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridSettings[Entity] extends js.Object {
   //Configuration options
   var autoGenerateColumns: js.UndefOr[scala.Boolean] = js.undefined

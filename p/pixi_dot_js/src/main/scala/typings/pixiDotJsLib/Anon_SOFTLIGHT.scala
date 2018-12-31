@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SOFTLIGHT extends js.Object {
   var ADD: scala.Double
   var ADD_NPM: scala.Double

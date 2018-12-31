@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ChartSplitType extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.8]
-     */
+  * [Api set: ExcelApi 1.8]
+  */
 @JSGlobal("Excel.ChartSplitType")
 @js.native
 object ChartSplitType extends js.Object {

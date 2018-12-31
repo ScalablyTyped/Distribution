@@ -32,13 +32,6 @@ trait Adapter
   		 * added. It should take an optional parameter, error, if there was a problem
   		 */
   def add(id: java.lang.String, room: java.lang.String): scala.Unit = js.native
-  /**
-  		 * Adds a socket to a room. If the room doesn't exist, it's created
-  		 * @param id The ID of the socket to add
-  		 * @param room The name of the room to add the socket to
-  		 * @param callback An optional callback to call when the socket has been
-  		 * added. It should take an optional parameter, error, if there was a problem
-  		 */
   def add(
     id: java.lang.String,
     room: java.lang.String,
@@ -62,14 +55,6 @@ trait Adapter
   		 * removed. It should take on optional parameter, error, if there was a problem
   		 */
   def del(id: java.lang.String, room: java.lang.String): scala.Unit = js.native
-  /**
-  		 * Removes a socket from a room. If there are no more sockets in the room,
-  		 * the room is deleted
-  		 * @param id The ID of the socket that we're removing
-  		 * @param room The name of the room to remove the socket from
-  		 * @param callback An optional callback to call when the socket has been
-  		 * removed. It should take on optional parameter, error, if there was a problem
-  		 */
   def del(
     id: java.lang.String,
     room: java.lang.String,

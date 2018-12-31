@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SwipeableProps extends js.Object {
   /** @see defineSwipe */
   var config: js.UndefOr[SwipeableConfig] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageConfiguration extends js.Object {
   /** The image type for the image. */
   var imageType: js.UndefOr[java.lang.String] = js.undefined

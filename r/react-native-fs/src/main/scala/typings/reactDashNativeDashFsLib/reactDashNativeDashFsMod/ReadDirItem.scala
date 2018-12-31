@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReadDirItem extends js.Object {
   // The creation date of the file (iOS only)
   var ctime: js.UndefOr[stdLib.Date]

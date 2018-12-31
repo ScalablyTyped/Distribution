@@ -28,19 +28,19 @@ abstract class BitmapFrame () extends js.Object {
   /** The width of the frame in pixels. */
   var pixelWidth: scala.Double = js.native
   /**
-                   * Asynchronously requests the pixel data for the frame. The resulting pixel data array will use the bitmap pixel format and alpha mode specified in the BitmapPixelFormat and BitmapAlphaMode properties. It will also have color management and EXIF orientation applied (see the Remarks section for more information).
-                   * @return Object that manages the asynchronous retrieval of the pixel data.
-                   */
+    * Asynchronously requests the pixel data for the frame. The resulting pixel data array will use the bitmap pixel format and alpha mode specified in the BitmapPixelFormat and BitmapAlphaMode properties. It will also have color management and EXIF orientation applied (see the Remarks section for more information).
+    * @return Object that manages the asynchronous retrieval of the pixel data.
+    */
   def getPixelDataAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[PixelDataProvider] = js.native
   /**
-                   * Asynchronously requests the pixel data for the frame using the specified parameters.
-                   * @param pixelFormat The specified pixel format.
-                   * @param alphaMode The specified alpha mode.
-                   * @param transform The set of transformations to be applied to the frame.
-                   * @param exifOrientationMode Indicates whether the EXIF orientation flag should be ignored or respected.
-                   * @param colorManagementMode Indicates whether the pixel data should be color managed to the sRGB color space.
-                   * @return Object that manages the asynchronous retrieval of the pixel data.
-                   */
+    * Asynchronously requests the pixel data for the frame using the specified parameters.
+    * @param pixelFormat The specified pixel format.
+    * @param alphaMode The specified alpha mode.
+    * @param transform The set of transformations to be applied to the frame.
+    * @param exifOrientationMode Indicates whether the EXIF orientation flag should be ignored or respected.
+    * @param colorManagementMode Indicates whether the pixel data should be color managed to the sRGB color space.
+    * @return Object that manages the asynchronous retrieval of the pixel data.
+    */
   def getPixelDataAsync(
     pixelFormat: BitmapPixelFormat,
     alphaMode: BitmapAlphaMode,
@@ -49,26 +49,26 @@ abstract class BitmapFrame () extends js.Object {
     colorManagementMode: ColorManagementMode
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[PixelDataProvider] = js.native
   /**
-                   * Asynchronously gets a SoftwareBitmap representation of the bitmap frame.
-                   * @return An asynchronous operation that returns a SoftwareBitmap on successful completion.
-                   */
+    * Asynchronously gets a SoftwareBitmap representation of the bitmap frame.
+    * @return An asynchronous operation that returns a SoftwareBitmap on successful completion.
+    */
   def getSoftwareBitmapAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[SoftwareBitmap] = js.native
   /**
-                   * Asynchronously gets a SoftwareBitmap representation of the bitmap frame.
-                   * @param pixelFormat The pixel format of the software bitmap.
-                   * @param alphaMode The alpha mode of the software bitmap.
-                   * @return An asynchronous operation that returns a SoftwareBitmap on successful completion.
-                   */
+    * Asynchronously gets a SoftwareBitmap representation of the bitmap frame.
+    * @param pixelFormat The pixel format of the software bitmap.
+    * @param alphaMode The alpha mode of the software bitmap.
+    * @return An asynchronous operation that returns a SoftwareBitmap on successful completion.
+    */
   def getSoftwareBitmapAsync(pixelFormat: BitmapPixelFormat, alphaMode: BitmapAlphaMode): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[SoftwareBitmap] = js.native
   /**
-                   * Asynchronously gets a SoftwareBitmap representation of the bitmap frame.
-                   * @param pixelFormat The pixel format of the software bitmap.
-                   * @param alphaMode The alpha mode of the software bitmap.
-                   * @param transform The transform of the software bitmap.
-                   * @param exifOrientationMode The EXIF orientation mode of the software bitmap.
-                   * @param colorManagementMode The color management mode of the software bitmap.
-                   * @return An asynchronous operation that returns a SoftwareBitmap on successful completion.
-                   */
+    * Asynchronously gets a SoftwareBitmap representation of the bitmap frame.
+    * @param pixelFormat The pixel format of the software bitmap.
+    * @param alphaMode The alpha mode of the software bitmap.
+    * @param transform The transform of the software bitmap.
+    * @param exifOrientationMode The EXIF orientation mode of the software bitmap.
+    * @param colorManagementMode The color management mode of the software bitmap.
+    * @return An asynchronous operation that returns a SoftwareBitmap on successful completion.
+    */
   def getSoftwareBitmapAsync(
     pixelFormat: BitmapPixelFormat,
     alphaMode: BitmapAlphaMode,
@@ -77,9 +77,9 @@ abstract class BitmapFrame () extends js.Object {
     colorManagementMode: ColorManagementMode
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[SoftwareBitmap] = js.native
   /**
-                   * Asynchronously returns a stream containing the thumbnail image.
-                   * @return Object that manages the asynchronous retrieval of the thumbnail data.
-                   */
+    * Asynchronously returns a stream containing the thumbnail image.
+    * @return Object that manages the asynchronous retrieval of the thumbnail data.
+    */
   def getThumbnailAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[ImageStream] = js.native
 }
 

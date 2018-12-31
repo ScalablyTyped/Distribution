@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SharpCounters extends js.Object {
   /** The number of resize tasks currently being processed. */
   var process: scala.Double

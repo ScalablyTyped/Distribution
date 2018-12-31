@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @description Matches network events by various criteria.
-         */
+  * @description Matches network events by various criteria.
+  */
 @JSGlobal("chrome.webViewRequest.RequestMatcher")
 @js.native
 class RequestMatcher () extends js.Object {

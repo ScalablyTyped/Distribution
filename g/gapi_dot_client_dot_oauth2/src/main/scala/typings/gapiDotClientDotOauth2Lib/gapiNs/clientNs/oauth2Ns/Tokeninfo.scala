@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Tokeninfo extends js.Object {
   /** The access type granted with this token. It can be offline or online. */
   var access_type: js.UndefOr[java.lang.String] = js.undefined

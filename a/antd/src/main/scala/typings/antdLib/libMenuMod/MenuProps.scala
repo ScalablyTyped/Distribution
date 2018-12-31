@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MenuProps
   extends antdLib.libConfigDashProviderMod.ConfigProviderProps {
   var className: js.UndefOr[java.lang.String] = js.undefined

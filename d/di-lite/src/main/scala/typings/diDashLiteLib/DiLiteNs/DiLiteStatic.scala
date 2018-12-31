@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiLiteStatic extends js.Object {
   var factory: FactoryEnum
   var strategy: StrategyEnum

@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Fxaa post process
-     * @see https://doc.babylonjs.com/how_to/how_to_use_postprocesses#fxaa
-     */
+  * Fxaa post process
+  * @see https://doc.babylonjs.com/how_to/how_to_use_postprocesses#fxaa
+  */
 @JSImport("babylonjs", "FxaaPostProcess")
 @js.native
 class FxaaPostProcess protected ()

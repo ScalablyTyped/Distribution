@@ -50,9 +50,9 @@ abstract class KeyboardDeliveryInterceptor () extends js.Object {
 @js.native
 object KeyboardDeliveryInterceptor extends js.Object {
   /**
-                   * Retrieves a KeyboardDeliveryInterceptor object associated with the current app view.
-                   * @return The KeyboardDeliveryInterceptor object associated with the current app.
-                   */
+    * Retrieves a KeyboardDeliveryInterceptor object associated with the current app view.
+    * @return The KeyboardDeliveryInterceptor object associated with the current app.
+    */
   def getForCurrentView(): winrtDashUwpLib.WindowsNs.UINs.InputNs.KeyboardDeliveryInterceptor = js.native
 }
 

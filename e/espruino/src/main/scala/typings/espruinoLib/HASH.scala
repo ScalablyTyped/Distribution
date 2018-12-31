@@ -14,29 +14,29 @@ import scala.scalajs.js.annotation._
 @js.native
 trait HASH
   extends /**
-     * 
-     * @return  
-     */
+  * 
+  * @return  
+  */
 org.scalablytyped.runtime.Instantiable0[HASH] {
   /**
-       * 
-       * @param message 
-       * @return  
-       * @url http://www.espruino.com/Reference#l_HASH_digest
-       */
+    * 
+    * @param message 
+    * @return  
+    * @url http://www.espruino.com/Reference#l_HASH_digest
+    */
   def digest(message: js.Any): js.Any = js.native
   /**
-       * 
-       * @param message 
-       * @return  
-       * @url http://www.espruino.com/Reference#l_HASH_hexdigest
-       */
+    * 
+    * @param message 
+    * @return  
+    * @url http://www.espruino.com/Reference#l_HASH_hexdigest
+    */
   def hexdigest(message: js.Any): js.Any = js.native
   /**
-       * 
-       * @param message 
-       * @url http://www.espruino.com/Reference#l_HASH_update
-       */
+    * 
+    * @param message 
+    * @url http://www.espruino.com/Reference#l_HASH_update
+    */
   def update(message: js.Any): scala.Unit = js.native
 }
 

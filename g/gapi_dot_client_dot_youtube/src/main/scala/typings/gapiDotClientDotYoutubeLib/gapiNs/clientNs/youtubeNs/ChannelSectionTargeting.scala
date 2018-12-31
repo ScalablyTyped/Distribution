@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChannelSectionTargeting extends js.Object {
   /** The country the channel section is targeting. */
   var countries: js.UndefOr[js.Array[java.lang.String]] = js.undefined

@@ -99,15 +99,12 @@ class IHTMLStyle protected () extends js.Object {
   var zIndex: js.Any = js.native
   /** @param lFlags [lFlags=0] */
   def getAttribute(strAttributeName: java.lang.String): js.Any = js.native
-  /** @param lFlags [lFlags=0] */
   def getAttribute(strAttributeName: java.lang.String, lFlags: scala.Double): js.Any = js.native
   /** @param lFlags [lFlags=1] */
   def removeAttribute(strAttributeName: java.lang.String): scala.Boolean = js.native
-  /** @param lFlags [lFlags=1] */
   def removeAttribute(strAttributeName: java.lang.String, lFlags: scala.Double): scala.Boolean = js.native
   /** @param lFlags [lFlags=1] */
   def setAttribute(strAttributeName: java.lang.String, AttributeValue: js.Any): scala.Unit = js.native
-  /** @param lFlags [lFlags=1] */
   def setAttribute(strAttributeName: java.lang.String, AttributeValue: js.Any, lFlags: scala.Double): scala.Unit = js.native
 }
 

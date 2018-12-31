@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActionButtonProps extends js.Object {
   var actions: js.UndefOr[
     js.Array[java.lang.String] | js.Array[reactLib.reactMod.Global.JSXNs.Element] | js.Array[reactDashNativeDashMaterialDashUiLib.Anon_Name]

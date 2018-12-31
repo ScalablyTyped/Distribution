@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents x- and y-coordinate values that define a point in a two-dimensional plane. */
-
 trait Point extends js.Object {
   /** The horizontal position of the point. */
   var x: scala.Double

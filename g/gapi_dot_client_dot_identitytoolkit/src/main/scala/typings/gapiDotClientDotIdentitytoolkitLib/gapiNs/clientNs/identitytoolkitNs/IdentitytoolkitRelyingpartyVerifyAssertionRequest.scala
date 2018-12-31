@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IdentitytoolkitRelyingpartyVerifyAssertionRequest extends js.Object {
   /**
-               * When it's true, automatically creates a new account if the user doesn't exist. When it's false, allows existing user to sign in normally and throws
-               * exception if the user doesn't exist.
-               */
+    * When it's true, automatically creates a new account if the user doesn't exist. When it's false, allows existing user to sign in normally and throws
+    * exception if the user doesn't exist.
+    */
   var autoCreate: js.UndefOr[scala.Boolean] = js.undefined
   /** GCP project number of the requesting delegated app. Currently only intended for Firebase V1 migration. */
   var delegatedProjectNumber: js.UndefOr[java.lang.String] = js.undefined

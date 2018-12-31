@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait FlexWrap extends js.Object
 
 /**
-     * Available options for the wrapping behavior of a flex container.
-    */
+  * Available options for the wrapping behavior of a flex container.
+  */
 @JSGlobal("sap.m.FlexWrap")
 @js.native
 object FlexWrap extends js.Object {

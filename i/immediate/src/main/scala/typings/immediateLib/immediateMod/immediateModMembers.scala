@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object immediateModMembers extends js.Object {
   def apply[TArgs /* <: js.Array[_] */](
     task: js.Function1[/* args */ TArgs, scala.Unit],
-    /* import warning: Dropping repeated marker of param TsIdentSimple(args) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(TArgs))),List())) is not an array type */args: TArgs
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type TArgs is not an array type */ args: TArgs
   ): scala.Unit = js.native
 }
 

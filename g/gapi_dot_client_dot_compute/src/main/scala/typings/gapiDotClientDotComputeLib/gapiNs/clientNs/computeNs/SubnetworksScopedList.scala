@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SubnetworksScopedList extends js.Object {
   /** List of subnetworks contained in this scope. */
   var subnetworks: js.UndefOr[js.Array[Subnetwork]] = js.undefined

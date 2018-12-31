@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JSXOpeningElement extends Node {
   var attributes: js.Array[JSXAttribute]
   var name: JSXIdentifier | JSXMemberExpression

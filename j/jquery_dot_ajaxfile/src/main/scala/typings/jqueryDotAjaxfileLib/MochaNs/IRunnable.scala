@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Partial interface for Mocha's `Runnable` class. */
-
 trait IRunnable extends js.Object {
   var async: scala.Boolean
   var fn: js.Function

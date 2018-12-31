@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RecipientSettings extends js.Object {
   var allowPreview: js.UndefOr[scala.Boolean] = js.undefined
   var email: js.UndefOr[java.lang.String] = js.undefined

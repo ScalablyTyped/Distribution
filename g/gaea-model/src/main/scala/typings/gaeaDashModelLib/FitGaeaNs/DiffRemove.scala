@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiffRemove extends ViewportComponentFullInfo {
   // 删除的位置
   var index: scala.Double

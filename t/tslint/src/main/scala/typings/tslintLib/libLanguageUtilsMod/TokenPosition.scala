@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TokenPosition extends js.Object {
   /** The end of the token */
   var end: scala.Double

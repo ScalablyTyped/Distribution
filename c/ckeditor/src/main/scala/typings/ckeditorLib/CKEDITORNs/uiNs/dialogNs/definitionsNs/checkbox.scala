@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait checkbox extends js.Object {
   var checked: js.UndefOr[scala.Boolean] = js.undefined
   var label: js.UndefOr[java.lang.String] = js.undefined

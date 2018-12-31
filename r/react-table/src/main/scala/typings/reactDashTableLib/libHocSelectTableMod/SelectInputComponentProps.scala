@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectInputComponentProps extends js.Object {
   var checked: scala.Boolean
   var id: java.lang.String

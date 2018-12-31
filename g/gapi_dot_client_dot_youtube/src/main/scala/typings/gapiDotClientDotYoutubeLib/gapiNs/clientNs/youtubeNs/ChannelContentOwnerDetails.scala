@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChannelContentOwnerDetails extends js.Object {
   /** The ID of the content owner linked to the channel. */
   var contentOwner: js.UndefOr[java.lang.String] = js.undefined

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait SelectListKeyboardNavigationMode extends js.Object
 
 /**
-     * Defines the keyboard navigation mode.
-    */
+  * Defines the keyboard navigation mode.
+  */
 @JSGlobal("sap.m.SelectListKeyboardNavigationMode")
 @js.native
 object SelectListKeyboardNavigationMode extends js.Object {

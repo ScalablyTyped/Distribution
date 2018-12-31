@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ApplicationOptions extends js.Object {
   var browserHistory: js.UndefOr[scala.Boolean] = js.undefined
   var hideAddressBar: js.UndefOr[scala.Boolean] = js.undefined

@@ -61,7 +61,7 @@ object utilsModMembers extends js.Object {
       /* arg5 */ T5, 
       /* arg6 */ T6, 
       /* arg7 */ js.Any, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       reduxDashSagaLib.reduxDashSagaMod.SagaIterator
     ]
   ): js.Function7[
@@ -71,7 +71,7 @@ object utilsModMembers extends js.Object {
     /* arg4 */ T4, 
     /* arg5 */ T5, 
     /* arg6 */ T6, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     SagaIteratorClone
   ] = js.native
   def createMockTask(): MockTask = js.native

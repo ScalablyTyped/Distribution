@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Swig () extends js.Object {
   def this(options: SwigOptions) = this()
+  var loaders: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof swig.swig.loaders */ js.Any = js.native
   def compile(source: java.lang.String): js.Function1[/* locals */ js.UndefOr[js.Any], java.lang.String] = js.native
   def compile(source: java.lang.String, options: SwigOptions): js.Function1[/* locals */ js.UndefOr[js.Any], java.lang.String] = js.native
   def compileFile(pathname: java.lang.String): js.Function1[/* locals */ js.UndefOr[js.Any], java.lang.String] = js.native
@@ -42,7 +43,7 @@ class Swig () extends js.Object {
   def setExtension(name: java.lang.String, `object`: js.Any): scala.Unit = js.native
   def setFilter(
     name: java.lang.String,
-    method: js.Function2[/* input */ js.Any, /* repeated */js.Any, java.lang.String]
+    method: js.Function2[/* input */ js.Any, /* repeated */ js.Any, java.lang.String]
   ): scala.Unit = js.native
   def setTag(
     name: java.lang.String,

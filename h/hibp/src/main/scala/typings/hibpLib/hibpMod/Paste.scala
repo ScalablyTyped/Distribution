@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Paste extends js.Object {
   var Date: java.lang.String
   var EmailCount: scala.Double

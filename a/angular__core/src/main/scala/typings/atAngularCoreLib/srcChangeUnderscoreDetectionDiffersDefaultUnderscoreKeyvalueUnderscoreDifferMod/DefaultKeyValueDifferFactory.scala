@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 class DefaultKeyValueDifferFactory[K, V] ()
   extends atAngularCoreLib.srcChangeUnderscoreDetectionDiffersKeyvalueUnderscoreDiffersMod.KeyValueDifferFactory {
   /**
-       * Create a `KeyValueDiffer`.
-       */
+    * Create a `KeyValueDiffer`.
+    */
   /* CompleteClass */
   override def create[K, V](): atAngularCoreLib.srcChangeUnderscoreDetectionDiffersKeyvalueUnderscoreDiffersMod.KeyValueDiffer[K, V] = js.native
   /**
-       * Test to see if the differ knows how to diff this kind of object.
-       */
+    * Test to see if the differ knows how to diff this kind of object.
+    */
   /* CompleteClass */
   override def supports(objects: js.Any): scala.Boolean = js.native
 }

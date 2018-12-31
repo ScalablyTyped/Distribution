@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line: interface-name
-
 trait ILookupInfo extends js.Object {
   var localString: java.lang.String
   var value: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IColorPalette extends IComponent {
   /** [Config Option] (Boolean) */
   var allowReselect: js.UndefOr[scala.Boolean] = js.undefined

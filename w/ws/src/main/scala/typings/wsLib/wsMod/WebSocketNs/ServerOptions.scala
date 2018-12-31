@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerOptions extends js.Object {
   var backlog: js.UndefOr[scala.Double] = js.undefined
   var clientTracking: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AuthResult extends js.Object {
   var accessToken: java.lang.String
   var appState: js.UndefOr[js.Any] = js.undefined

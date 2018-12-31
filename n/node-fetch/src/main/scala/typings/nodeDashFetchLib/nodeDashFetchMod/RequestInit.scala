@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestInit extends js.Object {
   // node-fetch extensions
   var agent: js.UndefOr[nodeLib.httpMod.Agent] = js.undefined

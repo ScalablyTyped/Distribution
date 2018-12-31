@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransferStats extends js.Object {
   var fileSize: scala.Double
   var loaded: scala.Double

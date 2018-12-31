@@ -52,25 +52,16 @@ object iPadNsMembers extends js.Object {
   			 * Creates and returns an instance of <Titanium.UI.iPad.DocumentViewer>.
   			 */
   def createDocumentViewer(): DocumentViewer = js.native
-  /**
-  			 * Creates and returns an instance of <Titanium.UI.iPad.DocumentViewer>.
-  			 */
   def createDocumentViewer(parameters: js.Any): DocumentViewer = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iPad.Popover>.
   			 */
   def createPopover(): Popover = js.native
-  /**
-  			 * Creates and returns an instance of <Titanium.UI.iPad.Popover>.
-  			 */
   def createPopover(parameters: js.Any): Popover = js.native
   /**
   			 * Creates and returns an instance of <Titanium.UI.iPad.SplitWindow>.
   			 */
   def createSplitWindow(): SplitWindow = js.native
-  /**
-  			 * Creates and returns an instance of <Titanium.UI.iPad.SplitWindow>.
-  			 */
   def createSplitWindow(parameters: js.Any): SplitWindow = js.native
   /**
   			 * Fires a synthesized event to any registered listeners.

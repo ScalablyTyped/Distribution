@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SymbolType extends js.Object {
   /**
-       * Renders this symbol type to the specified context with the specified size in square pixels. The context implements the CanvasPath interface.
-       * (Note that this is a subset of the CanvasRenderingContext2D interface!)
-       *
-       * @param context A rendering context implementing CanvasPath.
-       * @param size Size of the symbol to draw.
-       */
+    * Renders this symbol type to the specified context with the specified size in square pixels. The context implements the CanvasPath interface.
+    * (Note that this is a subset of the CanvasRenderingContext2D interface!)
+    *
+    * @param context A rendering context implementing CanvasPath.
+    * @param size Size of the symbol to draw.
+    */
   def draw(context: CanvasPath_D3Shape, size: scala.Double): scala.Unit
 }
 

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait IterableFunction extends js.Object {
   // See in array explanation of this type
   var of: org.scalablytyped.runtime.StringDictionary[scala.Boolean] = js.native
-  def apply(a: js.Any): /* is Iterable */scala.Boolean = js.native
+  def apply(a: js.Any): /* is std.Iterable<any> */ scala.Boolean = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EventName extends js.Object {
   var callback: js.Function3[
     /* item */ js.UndefOr[js.Any], 

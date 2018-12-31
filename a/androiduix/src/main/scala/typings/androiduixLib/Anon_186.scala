@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_186 extends js.Object {
   var `186`: scala.Double
   var `187`: scala.Double

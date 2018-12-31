@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EncryptionAlgorithm extends js.Object {
   /** The encryption algorithm. */
   var encryptionAlgorithm: js.UndefOr[java.lang.String] = js.undefined

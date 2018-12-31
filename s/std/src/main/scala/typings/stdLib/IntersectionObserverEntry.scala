@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IntersectionObserverEntry extends js.Object {
   val boundingClientRect: ClientRect | DOMRect
   val intersectionRatio: scala.Double

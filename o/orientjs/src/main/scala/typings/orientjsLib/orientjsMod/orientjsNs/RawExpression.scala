@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RawExpression extends js.Object {
   var db: Db
   var value: java.lang.String

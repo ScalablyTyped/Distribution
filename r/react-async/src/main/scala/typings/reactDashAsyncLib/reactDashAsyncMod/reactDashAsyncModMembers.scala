@@ -10,5 +10,14 @@ import scala.scalajs.js.annotation._
 object reactDashAsyncModMembers extends js.Object {
   def default[T](): Async[T] = js.native
   def default[T](defaultProps: AsyncProps[T]): Async[T] = js.native
+  def useAsync[T](
+    opts: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify AsyncOptions<T> */ js.Any
+  ): AsyncState[T] = js.native
+  def useAsync[T](
+    opts: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify AsyncOptions<T> */ js.Any,
+    init: T
+  ): AsyncState[T] = js.native
+  def useAsync[T](opts: reactDashAsyncLib.PromiseFn[T]): AsyncState[T] = js.native
+  def useAsync[T](opts: reactDashAsyncLib.PromiseFn[T], init: T): AsyncState[T] = js.native
 }
 

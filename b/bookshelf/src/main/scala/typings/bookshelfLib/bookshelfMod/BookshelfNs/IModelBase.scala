@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IModelBase extends js.Object {
   /** Should be declared as a getter instead of a plain property. */
   var hasTimestamps: js.UndefOr[scala.Boolean | js.Array[java.lang.String]] = js.undefined

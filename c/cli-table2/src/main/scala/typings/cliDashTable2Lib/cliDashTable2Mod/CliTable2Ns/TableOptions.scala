@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableOptions extends js.Object {
   var colAligns: js.Array[HorizontalAlignment]
   var colWidths: js.Array[scala.Double | scala.Null]

@@ -17,14 +17,6 @@ trait Extendable[T] extends js.Object {
   	 */
   def extend(): T = js.native
   def extend(arg: js.Any): T = js.native
-  /**
-  	 * Extends the current observable with particular functionality depending on the parameters specified.
-  	 * If the method is called without arguments and jsvalue framework is included the observable will be
-  	 * extended with the methods available in jsvalue for the current type.
-  	 * 
-  	 * @param name Name of the extender
-  	 * @param options Optional options
-  	 */
   def extend(name: java.lang.String, options: js.Any*): T = js.native
 }
 

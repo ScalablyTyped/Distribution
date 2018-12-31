@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Defines data processing and rendering options for SpatialLayer
-         * The initial step of rendering is to split the tile data by rows, where each row represents a bucket.
-         * By default this step is processed with SpatialLayer.defaultDataToRows. This behavior can be changed by defining the dataToRows callback.
-         */
-
+  * Defines data processing and rendering options for SpatialLayer
+  * The initial step of rendering is to split the tile data by rows, where each row represents a bucket.
+  * By default this step is processed with SpatialLayer.defaultDataToRows. This behavior can be changed by defining the dataToRows callback.
+  */
 trait Options extends js.Object {
   /** Defines how the input tile data is split by rows. You can specify this callback to define client-side aggregation and filtering. This callback is called for each tile. */
   var dataToRows: js.UndefOr[

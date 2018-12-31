@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICredentialPickerOptions extends js.Object {
   var alwaysDisplayDialog: scala.Boolean
   var authenticationProtocol: AuthenticationProtocol

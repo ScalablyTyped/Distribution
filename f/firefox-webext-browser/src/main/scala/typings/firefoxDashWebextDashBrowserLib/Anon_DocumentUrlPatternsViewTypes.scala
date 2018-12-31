@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DocumentUrlPatternsViewTypes extends js.Object {
   var checked: js.UndefOr[scala.Boolean] = js.undefined
   var contexts: js.UndefOr[js.Array[firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ContextType]] = js.undefined
@@ -13,9 +12,9 @@ trait Anon_DocumentUrlPatternsViewTypes extends js.Object {
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
   var icons: js.UndefOr[org.scalablytyped.runtime.NumberDictionary[java.lang.String]] = js.undefined
   /**
-           * @param tab The details of the tab where the click took place. Note: this parameter only present for
-           *     extensions.
-           */
+    * @param tab The details of the tab where the click took place. Note: this parameter only present for
+    *     extensions.
+    */
   var onclick: js.UndefOr[
     js.Function2[
       /* info */ firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.OnClickData, 

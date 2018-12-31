@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Really just a regular Array object with $promise and $resolve attached to it
-         */
+  * Really just a regular Array object with $promise and $resolve attached to it
+  */
 @js.native
 trait IResourceArray[T]
   extends stdLib.Array[T with IResource[T]] {

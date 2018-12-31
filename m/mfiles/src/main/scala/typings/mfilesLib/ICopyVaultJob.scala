@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICopyVaultJob extends js.Object {
   var CopyflagAllData: scala.Boolean
   var CopyflagAllExceptData: scala.Boolean

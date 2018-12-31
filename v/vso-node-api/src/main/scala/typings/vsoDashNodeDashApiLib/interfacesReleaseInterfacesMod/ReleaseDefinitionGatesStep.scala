@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReleaseDefinitionGatesStep extends js.Object {
   var gates: js.Array[ReleaseDefinitionGate]
   var gatesOptions: ReleaseDefinitionGatesOptions

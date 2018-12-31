@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocalForageConfig extends js.Object {
   var description: js.UndefOr[java.lang.String] = js.undefined
   var driver: js.UndefOr[java.lang.String] = js.undefined

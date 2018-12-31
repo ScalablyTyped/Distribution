@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClusterRerouteParams extends GenericParams {
   var dryRun: js.UndefOr[scala.Boolean] = js.undefined
   var explain: js.UndefOr[scala.Boolean] = js.undefined

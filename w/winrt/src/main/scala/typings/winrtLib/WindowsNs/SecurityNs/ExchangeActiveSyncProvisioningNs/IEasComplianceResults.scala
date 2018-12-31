@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEasComplianceResults extends js.Object {
   var compliant: scala.Boolean
   var disallowConvenienceLogonResult: EasDisallowConvenienceLogonResult

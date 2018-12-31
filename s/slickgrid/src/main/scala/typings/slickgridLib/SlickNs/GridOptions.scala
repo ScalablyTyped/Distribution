@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridOptions[T /* <: SlickData */] extends js.Object {
   /**
   		* Delay after which cell editor is loaded. Ignored unless asyncEditorLoading is true.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransitionsOptions extends js.Object {
   var create: js.UndefOr[
     js.Function2[

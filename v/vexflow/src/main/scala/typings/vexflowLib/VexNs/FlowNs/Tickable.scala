@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Tickable extends js.Object {
   def addModifier(mod: Modifier): Tickable
   def addToModifierContext(mc: ModifierContext): scala.Unit

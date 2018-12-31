@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Partial) */ 
-trait LabelProps extends js.Object {
+- Lifted 1 members from Set(std.Partial<recharts.recharts.PresentationAttributes<number, number>>) */ trait LabelProps extends js.Object {
   var angle: js.UndefOr[scala.Double] = js.undefined
   var children: js.UndefOr[
     js.Array[reactLib.reactMod.ReactNs.ReactNode] | reactLib.reactMod.ReactNs.ReactNode

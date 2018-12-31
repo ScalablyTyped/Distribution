@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEaseIn extends ILinear {
   /** [Method] Returns the value of exponent
   		* @returns Number

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BarData extends js.Object {
   var height: scala.Double
   var radius: scala.Double | js.Array[_]

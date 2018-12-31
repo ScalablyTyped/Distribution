@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StepperProps extends js.Object {
   var activeStep: js.UndefOr[scala.Double] = js.undefined
   var linear: js.UndefOr[scala.Boolean] = js.undefined

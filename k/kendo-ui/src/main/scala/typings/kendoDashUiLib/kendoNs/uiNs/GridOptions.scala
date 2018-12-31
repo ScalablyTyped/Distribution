@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridOptions extends js.Object {
   var allowCopy: js.UndefOr[scala.Boolean | GridAllowCopy] = js.undefined
   var altRowTemplate: js.UndefOr[java.lang.String | js.Function] = js.undefined

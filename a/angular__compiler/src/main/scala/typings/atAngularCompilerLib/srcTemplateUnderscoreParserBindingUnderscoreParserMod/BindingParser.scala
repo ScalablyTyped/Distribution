@@ -25,10 +25,10 @@ class BindingParser protected () extends js.Object {
   var _schemaRegistry: js.Any = js.native
   var _usedPipes: js.Any = js.native
   /**
-       * @param propName the name of the property / attribute
-       * @param sourceSpan
-       * @param isAttr true when binding to an attribute
-       */
+    * @param propName the name of the property / attribute
+    * @param sourceSpan
+    * @param isAttr true when binding to an attribute
+    */
   var _validatePropertyOrAttributeName: js.Any = js.native
   var errors: js.Array[atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseError] = js.native
   var pipesByName: (stdLib.Map[

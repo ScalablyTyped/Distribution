@@ -6,37 +6,36 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     *
-     * Represents the search criteria to be used.
-     *
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
-
+  *
+  * Represents the search criteria to be used.
+  *
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 trait SearchCriteria extends js.Object {
   /**
-           *
-           * Specifies whether the match needs to be complete or partial. Default is false (partial).
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Specifies whether the match needs to be complete or partial. Default is false (partial).
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var completeMatch: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           *
-           * Specifies whether the match is case sensitive. Default is false (insensitive).
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Specifies whether the match is case sensitive. Default is false (insensitive).
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var matchCase: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           *
-           * Specifies the search direction. Default is forward. See Excel.SearchDirection.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Specifies the search direction. Default is forward. See Excel.SearchDirection.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var searchDirection: js.UndefOr[
     SearchDirection | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Forward | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Backwards
   ] = js.undefined

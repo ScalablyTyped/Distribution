@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlowElement extends BaseElement {
   var auditing: Auditing
   var categoryValueRef: js.Array[CategoryValue]

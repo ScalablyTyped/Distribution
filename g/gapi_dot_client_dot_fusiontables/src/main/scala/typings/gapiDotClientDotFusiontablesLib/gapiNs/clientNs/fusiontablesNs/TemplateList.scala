@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TemplateList extends js.Object {
   /** List of all requested templates. */
   var items: js.UndefOr[js.Array[Template]] = js.undefined

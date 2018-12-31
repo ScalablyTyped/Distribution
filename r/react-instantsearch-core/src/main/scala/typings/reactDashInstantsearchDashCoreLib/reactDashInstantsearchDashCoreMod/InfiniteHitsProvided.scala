@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InfiniteHitsProvided[THit] extends js.Object {
   /** indicates if there are more pages to load */
   var hasMore: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Weekdays extends js.Object {
   var blank: js.UndefOr[java.lang.String] = js.undefined
   var headerFormat: js.UndefOr[java.lang.String] = js.undefined

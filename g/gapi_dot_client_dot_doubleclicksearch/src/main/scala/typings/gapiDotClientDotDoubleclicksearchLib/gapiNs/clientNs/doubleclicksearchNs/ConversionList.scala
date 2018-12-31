@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConversionList extends js.Object {
   /** The conversions being requested. */
   var conversion: js.UndefOr[js.Array[Conversion]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridFSBucketOpenUploadStreamOptions extends js.Object {
   var aliases: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var chunkSizeBytes: js.UndefOr[scala.Double] = js.undefined

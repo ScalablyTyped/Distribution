@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ParentAccesstokenPageSizePrettyPrint extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -30,9 +29,9 @@ trait Anon_ParentAccesstokenPageSizePrettyPrint extends js.Object {
   /** The standard List page token. */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The database name. For example:
-                   * `projects/{project_id}/databases/{database_id}`
-                   */
+    * The database name. For example:
+    * `projects/{project_id}/databases/{database_id}`
+    */
   var parent: java.lang.String
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

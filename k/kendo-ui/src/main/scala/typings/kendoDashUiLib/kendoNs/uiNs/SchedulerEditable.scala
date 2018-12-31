@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SchedulerEditable extends js.Object {
   var confirmation: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   var create: js.UndefOr[scala.Boolean] = js.undefined

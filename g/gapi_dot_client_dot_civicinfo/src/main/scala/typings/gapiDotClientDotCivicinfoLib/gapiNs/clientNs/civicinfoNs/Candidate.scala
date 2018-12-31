@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Candidate extends js.Object {
   /** The URL for the candidate's campaign web site. */
   var candidateUrl: js.UndefOr[java.lang.String] = js.undefined
@@ -14,9 +13,9 @@ trait Candidate extends js.Object {
   /** The email address for the candidate's campaign. */
   var email: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The candidate's name. If this is a joint ticket it will indicate the name of the candidate at the top of a ticket followed by a / and that name of
-               * candidate at the bottom of the ticket. e.g. "Mitt Romney / Paul Ryan"
-               */
+    * The candidate's name. If this is a joint ticket it will indicate the name of the candidate at the top of a ticket followed by a / and that name of
+    * candidate at the bottom of the ticket. e.g. "Mitt Romney / Paul Ryan"
+    */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /** The order the candidate appears on the ballot for this contest. */
   var orderOnBallot: js.UndefOr[java.lang.String] = js.undefined

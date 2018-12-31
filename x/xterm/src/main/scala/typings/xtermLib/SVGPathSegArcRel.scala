@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGPathSegArcRel extends SVGPathSeg {
   var angle: scala.Double
   var largeArcFlag: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SDKURL extends js.Object {
   var hash: java.lang.String
   var host: java.lang.String

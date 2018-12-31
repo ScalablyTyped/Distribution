@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeclareExportDeclaration extends BaseNode {
   var declaration: Flow | scala.Null
   var default: scala.Boolean | scala.Null

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IdPOptions extends js.Object {
   var RelayState: js.UndefOr[java.lang.String] = js.undefined
   var audience: js.UndefOr[java.lang.String] = js.undefined

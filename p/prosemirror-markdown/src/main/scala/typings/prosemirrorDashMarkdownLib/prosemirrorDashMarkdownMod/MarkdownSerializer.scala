@@ -18,13 +18,13 @@ class MarkdownSerializer[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod
       ]
     ], marks: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
   /**
-     * The mark serializer info.
-     */
+    * The mark serializer info.
+    */
   var marks: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   /**
-     * The node serializer
-     * functions for this serializer.
-     */
+    * The node serializer
+    * functions for this serializer.
+    */
   var nodes: org.scalablytyped.runtime.StringDictionary[
     js.Function2[
       /* p1 */ MarkdownSerializerState[S], 
@@ -33,14 +33,10 @@ class MarkdownSerializer[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod
     ]
   ] = js.native
   /**
-     * Serialize the content of the given node to
-     * [CommonMark](http://commonmark.org/).
-     */
+    * Serialize the content of the given node to
+    * [CommonMark](http://commonmark.org/).
+    */
   def serialize(content: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S]): java.lang.String = js.native
-  /**
-     * Serialize the content of the given node to
-     * [CommonMark](http://commonmark.org/).
-     */
   def serialize(
     content: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S],
     options: org.scalablytyped.runtime.StringDictionary[js.Any]

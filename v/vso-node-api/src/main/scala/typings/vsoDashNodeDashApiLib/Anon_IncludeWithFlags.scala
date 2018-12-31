@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IncludeWithFlags extends js.Object {
   var category: scala.Double
   var contributionType: scala.Double

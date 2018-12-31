@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReadingPosition extends js.Object {
   /** Position in an EPUB as a CFI. */
   var epubCfiPosition: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapOptions extends js.Object {
   var beforeReset: js.UndefOr[js.Function1[/* e */ MapBeforeResetEvent, scala.Unit]] = js.undefined
   var center: js.UndefOr[js.Any | kendoDashUiLib.kendoNs.datavizNs.mapNs.Location] = js.undefined

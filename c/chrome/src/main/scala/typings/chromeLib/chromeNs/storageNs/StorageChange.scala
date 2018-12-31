@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StorageChange extends js.Object {
   /** Optional. The new value of the item, if there is a new value. */
   var newValue: js.UndefOr[js.Any] = js.undefined

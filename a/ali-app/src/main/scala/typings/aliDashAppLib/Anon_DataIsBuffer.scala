@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DataIsBuffer extends js.Object {
   /**
   		 * 需要发送的内容：普通的文本内容 String 或者经 base64 编码后的 String

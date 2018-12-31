@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Plugin extends js.Object {
   var onStart: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onStop: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

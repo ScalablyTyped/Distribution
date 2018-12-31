@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Videostream extends js.Object {
   /** The height, in pixels, of the video resource. */
   var height: js.UndefOr[scala.Double] = js.undefined

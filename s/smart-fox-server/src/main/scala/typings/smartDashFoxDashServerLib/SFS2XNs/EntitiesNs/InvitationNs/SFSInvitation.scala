@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class SFSInvitation protected () extends js.Object {
   /**
-                   * Creates a new SFSInvitation instance.
-                   * @param {SFSUser} inviter          A SFSUser object corresponding to the user who sent the invitation.
-                   * @param {SFSUser} invitee          A SFSUser object corresponding to the user who received the invitation.
-                   * @param {number}  secondsForAnswer The number of seconds available to the invitee to reply to the invitation.
-                   * @param {Object}  params           An object containing a custom set of parameters representing the invitation details.
-                   */
+    * Creates a new SFSInvitation instance.
+    * @param {SFSUser} inviter          A SFSUser object corresponding to the user who sent the invitation.
+    * @param {SFSUser} invitee          A SFSUser object corresponding to the user who received the invitation.
+    * @param {number}  secondsForAnswer The number of seconds available to the invitee to reply to the invitation.
+    * @param {Object}  params           An object containing a custom set of parameters representing the invitation details.
+    */
   def this(inviter: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSUser, invitee: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSUser, secondsForAnswer: scala.Double, params: js.Object) = this()
   /** @type {number} Indicates the id of the invitation. */
   var id: scala.Double = js.native

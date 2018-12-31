@@ -10,8 +10,8 @@ trait LocalUtf8StringValueBlock
   extends LocalHexBlock
      with LocalBaseBlock {
   /**
-           * Convertion for the block to JSON object
-           * @returns {*}
+    * Convertion for the block to JSON object
+    * @returns {*}
   	     */
   /* InferMemberOverrides */
   override def toJSON(): js.Any with JsonLocalBaseBlock = js.native

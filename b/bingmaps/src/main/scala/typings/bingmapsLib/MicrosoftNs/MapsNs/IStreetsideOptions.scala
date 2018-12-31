@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStreetsideOptions extends js.Object {
   /** A boolean indicating if the ability to navigate between image bubbles should be disabled in streetside map mode. Default: false */
   var disablePanoramaNavigation: js.UndefOr[scala.Boolean] = js.undefined
@@ -16,13 +15,13 @@ trait IStreetsideOptions extends js.Object {
   /** A callback function that is triggered after the streetside view has loaded successfully. */
   var onSuccessLoading: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
-          * Specifies how to render the overview map when in streetside mode.
-          * Default: Microsoft.Maps.OverviewMapMode.expanded
-          */
+    * Specifies how to render the overview map when in streetside mode.
+    * Default: Microsoft.Maps.OverviewMapMode.expanded
+    */
   var overviewMapMode: js.UndefOr[OverviewMapMode] = js.undefined
   /**
-          * Information for a streetside panorama scene to load.
-          */
+    * Information for a streetside panorama scene to load.
+    */
   var panoramaInfo: js.UndefOr[IPanoramaInfo] = js.undefined
   /** The radius to search in for available streetside panoramas. */
   var panoramaLookupRadius: js.UndefOr[scala.Double] = js.undefined

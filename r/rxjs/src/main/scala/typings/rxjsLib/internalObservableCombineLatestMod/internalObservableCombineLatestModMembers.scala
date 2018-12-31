@@ -11,11 +11,11 @@ object internalObservableCombineLatestModMembers extends js.Object {
   def combineLatest[R](array: js.Array[rxjsLib.internalTypesMod.ObservableInput[_]]): rxjsLib.internalObservableMod.Observable[R] = js.native
   def combineLatest[R](
     array: js.Array[rxjsLib.internalTypesMod.ObservableInput[_]],
-    resultSelector: js.Function1[/* repeated */js.Any, R]
+    resultSelector: js.Function1[/* repeated */ js.Any, R]
   ): rxjsLib.internalObservableMod.Observable[R] = js.native
   def combineLatest[R](
     array: js.Array[rxjsLib.internalTypesMod.ObservableInput[_]],
-    resultSelector: js.Function1[/* repeated */js.Any, R],
+    resultSelector: js.Function1[/* repeated */ js.Any, R],
     scheduler: rxjsLib.internalTypesMod.SchedulerLike
   ): rxjsLib.internalObservableMod.Observable[R] = js.native
   def combineLatest[R](
@@ -23,7 +23,7 @@ object internalObservableCombineLatestModMembers extends js.Object {
     scheduler: rxjsLib.internalTypesMod.SchedulerLike
   ): rxjsLib.internalObservableMod.Observable[R] = js.native
   def combineLatest[R](
-    observables: (rxjsLib.internalTypesMod.ObservableInput[_] | (js.Function1[/* repeated */js.Any, R]) | rxjsLib.internalTypesMod.SchedulerLike)*
+    observables: (rxjsLib.internalTypesMod.ObservableInput[_] | (js.Function1[/* repeated */ js.Any, R]) | rxjsLib.internalTypesMod.SchedulerLike)*
   ): rxjsLib.internalObservableMod.Observable[R] = js.native
   def combineLatest[T, R](v1: rxjsLib.internalTypesMod.ObservableInput[T], resultSelector: js.Function1[/* v1 */ T, R]): rxjsLib.internalObservableMod.Observable[R] = js.native
   def combineLatest[T, R](
@@ -182,17 +182,17 @@ object internalObservableCombineLatestModMembers extends js.Object {
   @JSName("combineLatest")
   def combineLatest_TR[T, R](
     array: js.Array[rxjsLib.internalTypesMod.ObservableInput[T]],
-    resultSelector: js.Function1[/* repeated */T, R]
+    resultSelector: js.Function1[/* repeated */ T, R]
   ): rxjsLib.internalObservableMod.Observable[R] = js.native
   @JSName("combineLatest")
   def combineLatest_TR[T, R](
     array: js.Array[rxjsLib.internalTypesMod.ObservableInput[T]],
-    resultSelector: js.Function1[/* repeated */T, R],
+    resultSelector: js.Function1[/* repeated */ T, R],
     scheduler: rxjsLib.internalTypesMod.SchedulerLike
   ): rxjsLib.internalObservableMod.Observable[R] = js.native
   @JSName("combineLatest")
   def combineLatest_TR[T, R](
-    observables: (rxjsLib.internalTypesMod.ObservableInput[T] | (js.Function1[/* repeated */T, R]) | rxjsLib.internalTypesMod.SchedulerLike)*
+    observables: (rxjsLib.internalTypesMod.ObservableInput[T] | (js.Function1[/* repeated */ T, R]) | rxjsLib.internalTypesMod.SchedulerLike)*
   ): rxjsLib.internalObservableMod.Observable[R] = js.native
 }
 

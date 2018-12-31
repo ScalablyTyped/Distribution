@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICameraCaptureUI extends js.Object {
   var photoSettings: CameraCaptureUIPhotoCaptureSettings
   var videoSettings: CameraCaptureUIVideoCaptureSettings

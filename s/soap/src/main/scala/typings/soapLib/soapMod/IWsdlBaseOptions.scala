@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IWsdlBaseOptions extends js.Object {
   var attributesKey: js.UndefOr[java.lang.String] = js.undefined
   var escapeXML: js.UndefOr[scala.Boolean] = js.undefined

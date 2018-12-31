@@ -14,8 +14,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ESP8266
   extends /**
-     * 
-     * @return  
-     */
+  * 
+  * @return  
+  */
 org.scalablytyped.runtime.Instantiable0[ESP8266]
 

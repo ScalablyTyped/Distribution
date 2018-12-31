@@ -780,84 +780,84 @@ trait LoDashFp extends js.Object {
   def F(): lodashLib.lodashLibNumbers.`false` = js.native
   def T(): lodashLib.lodashLibNumbers.`true` = js.native
   /**
-          * Creates a lodash object which wraps value to enable implicit method chain sequences.
-          * Methods that operate on and return arrays, collections, and functions can be chained together.
-          * Methods that retrieve a single value or may return a primitive value will automatically end the
-          * chain sequence and return the unwrapped value. Otherwise, the value must be unwrapped with value().
-          *
-          * Explicit chain sequences, which must be unwrapped with value(), may be enabled using _.chain.
-          *
-          * The execution of chained methods is lazy, that is, it's deferred until value() is
-          * implicitly or explicitly called.
-          *
-          * Lazy evaluation allows several methods to support shortcut fusion. Shortcut fusion
-          * is an optimization to merge iteratee calls; this avoids the creation of intermediate
-          * arrays and can greatly reduce the number of iteratee executions. Sections of a chain
-          * sequence qualify for shortcut fusion if the section is applied to an array and iteratees
-          * accept only one argument. The heuristic for whether a section qualifies for shortcut
-          * fusion is subject to change.
-          *
-          * Chaining is supported in custom builds as long as the value() method is directly or
-          * indirectly included in the build.
-          *
-          * In addition to lodash methods, wrappers have Array and String methods.
-          * The wrapper Array methods are:
-          * concat, join, pop, push, shift, sort, splice, and unshift.
-          * The wrapper String methods are:
-          * replace and split.
-          *
-          * The wrapper methods that support shortcut fusion are:
-          * at, compact, drop, dropRight, dropWhile, filter, find, findLast, head, initial, last,
-          * map, reject, reverse, slice, tail, take, takeRight, takeRightWhile, takeWhile, and toArray
-          *
-          * The chainable wrapper methods are:
-          * after, ary, assign, assignIn, assignInWith, assignWith, at, before, bind, bindAll, bindKey,
-          * castArray, chain, chunk, commit, compact, concat, conforms, constant, countBy, create,
-          * curry, debounce, defaults, defaultsDeep, defer, delay, difference, differenceBy, differenceWith,
-          * drop, dropRight, dropRightWhile, dropWhile, extend, extendWith, fill, filter, flatMap,
-          * flatMapDeep, flatMapDepth, flatten, flattenDeep, flattenDepth, flip, flow, flowRight,
-          * fromPairs, functions, functionsIn, groupBy, initial, intersection, intersectionBy, intersectionWith,
-          * invert, invertBy, invokeMap, iteratee, keyBy, keys, keysIn, map, mapKeys, mapValues,
-          * matches, matchesProperty, memoize, merge, mergeWith, method, methodOf, mixin, negate,
-          * nthArg, omit, omitBy, once, orderBy, over, overArgs, overEvery, overSome, partial, partialRight,
-          * partition, pick, pickBy, plant, property, propertyOf, pull, pullAll, pullAllBy, pullAllWith, pullAt,
-          * push, range, rangeRight, rearg, reject, remove, rest, reverse, sampleSize, set, setWith,
-          * shuffle, slice, sort, sortBy, sortedUniq, sortedUniqBy, splice, spread, tail, take,
-          * takeRight, takeRightWhile, takeWhile, tap, throttle, thru, toArray, toPairs, toPairsIn,
-          * toPath, toPlainObject, transform, unary, union, unionBy, unionWith, uniq, uniqBy, uniqWith,
-          * unset, unshift, unzip, unzipWith, update, updateWith, values, valuesIn, without, wrap,
-          * xor, xorBy, xorWith, zip, zipObject, zipObjectDeep, and zipWith.
-          *
-          * The wrapper methods that are not chainable by default are:
-          * add, attempt, camelCase, capitalize, ceil, clamp, clone, cloneDeep, cloneDeepWith, cloneWith,
-          * conformsTo, deburr, defaultTo, divide, each, eachRight, endsWith, eq, escape, escapeRegExp,
-          * every, find, findIndex, findKey, findLast, findLastIndex, findLastKey, first, floor, forEach,
-          * forEachRight, forIn, forInRight, forOwn, forOwnRight, get, gt, gte, has, hasIn, head,
-          * identity, includes, indexOf, inRange, invoke, isArguments, isArray, isArrayBuffer,
-          * isArrayLike, isArrayLikeObject, isBoolean, isBuffer, isDate, isElement, isEmpty, isEqual, isEqualWith,
-          * isError, isFinite, isFunction, isInteger, isLength, isMap, isMatch, isMatchWith, isNaN,
-          * isNative, isNil, isNull, isNumber, isObject, isObjectLike, isPlainObject, isRegExp,
-          * isSafeInteger, isSet, isString, isUndefined, isTypedArray, isWeakMap, isWeakSet, join,
-          * kebabCase, last, lastIndexOf, lowerCase, lowerFirst, lt, lte, max, maxBy, mean, meanBy,
-          * min, minBy, multiply, noConflict, noop, now, nth, pad, padEnd, padStart, parseInt, pop,
-          * random, reduce, reduceRight, repeat, result, round, runInContext, sample, shift, size,
-          * snakeCase, some, sortedIndex, sortedIndexBy, sortedLastIndex, sortedLastIndexBy, startCase,
-          * startsWith, stubArray, stubFalse, stubObject, stubString, stubTrue, subtract, sum, sumBy,
-          * template, times, toFinite, toInteger, toJSON, toLength, toLower, toNumber, toSafeInteger,
-          * toString, toUpper, trim, trimEnd, trimStart, truncate, unescape, uniqueId, upperCase,
-          * upperFirst, value, and words.
-          **/
+    * Creates a lodash object which wraps value to enable implicit method chain sequences.
+    * Methods that operate on and return arrays, collections, and functions can be chained together.
+    * Methods that retrieve a single value or may return a primitive value will automatically end the
+    * chain sequence and return the unwrapped value. Otherwise, the value must be unwrapped with value().
+    *
+    * Explicit chain sequences, which must be unwrapped with value(), may be enabled using _.chain.
+    *
+    * The execution of chained methods is lazy, that is, it's deferred until value() is
+    * implicitly or explicitly called.
+    *
+    * Lazy evaluation allows several methods to support shortcut fusion. Shortcut fusion
+    * is an optimization to merge iteratee calls; this avoids the creation of intermediate
+    * arrays and can greatly reduce the number of iteratee executions. Sections of a chain
+    * sequence qualify for shortcut fusion if the section is applied to an array and iteratees
+    * accept only one argument. The heuristic for whether a section qualifies for shortcut
+    * fusion is subject to change.
+    *
+    * Chaining is supported in custom builds as long as the value() method is directly or
+    * indirectly included in the build.
+    *
+    * In addition to lodash methods, wrappers have Array and String methods.
+    * The wrapper Array methods are:
+    * concat, join, pop, push, shift, sort, splice, and unshift.
+    * The wrapper String methods are:
+    * replace and split.
+    *
+    * The wrapper methods that support shortcut fusion are:
+    * at, compact, drop, dropRight, dropWhile, filter, find, findLast, head, initial, last,
+    * map, reject, reverse, slice, tail, take, takeRight, takeRightWhile, takeWhile, and toArray
+    *
+    * The chainable wrapper methods are:
+    * after, ary, assign, assignIn, assignInWith, assignWith, at, before, bind, bindAll, bindKey,
+    * castArray, chain, chunk, commit, compact, concat, conforms, constant, countBy, create,
+    * curry, debounce, defaults, defaultsDeep, defer, delay, difference, differenceBy, differenceWith,
+    * drop, dropRight, dropRightWhile, dropWhile, extend, extendWith, fill, filter, flatMap,
+    * flatMapDeep, flatMapDepth, flatten, flattenDeep, flattenDepth, flip, flow, flowRight,
+    * fromPairs, functions, functionsIn, groupBy, initial, intersection, intersectionBy, intersectionWith,
+    * invert, invertBy, invokeMap, iteratee, keyBy, keys, keysIn, map, mapKeys, mapValues,
+    * matches, matchesProperty, memoize, merge, mergeWith, method, methodOf, mixin, negate,
+    * nthArg, omit, omitBy, once, orderBy, over, overArgs, overEvery, overSome, partial, partialRight,
+    * partition, pick, pickBy, plant, property, propertyOf, pull, pullAll, pullAllBy, pullAllWith, pullAt,
+    * push, range, rangeRight, rearg, reject, remove, rest, reverse, sampleSize, set, setWith,
+    * shuffle, slice, sort, sortBy, sortedUniq, sortedUniqBy, splice, spread, tail, take,
+    * takeRight, takeRightWhile, takeWhile, tap, throttle, thru, toArray, toPairs, toPairsIn,
+    * toPath, toPlainObject, transform, unary, union, unionBy, unionWith, uniq, uniqBy, uniqWith,
+    * unset, unshift, unzip, unzipWith, update, updateWith, values, valuesIn, without, wrap,
+    * xor, xorBy, xorWith, zip, zipObject, zipObjectDeep, and zipWith.
+    *
+    * The wrapper methods that are not chainable by default are:
+    * add, attempt, camelCase, capitalize, ceil, clamp, clone, cloneDeep, cloneDeepWith, cloneWith,
+    * conformsTo, deburr, defaultTo, divide, each, eachRight, endsWith, eq, escape, escapeRegExp,
+    * every, find, findIndex, findKey, findLast, findLastIndex, findLastKey, first, floor, forEach,
+    * forEachRight, forIn, forInRight, forOwn, forOwnRight, get, gt, gte, has, hasIn, head,
+    * identity, includes, indexOf, inRange, invoke, isArguments, isArray, isArrayBuffer,
+    * isArrayLike, isArrayLikeObject, isBoolean, isBuffer, isDate, isElement, isEmpty, isEqual, isEqualWith,
+    * isError, isFinite, isFunction, isInteger, isLength, isMap, isMatch, isMatchWith, isNaN,
+    * isNative, isNil, isNull, isNumber, isObject, isObjectLike, isPlainObject, isRegExp,
+    * isSafeInteger, isSet, isString, isUndefined, isTypedArray, isWeakMap, isWeakSet, join,
+    * kebabCase, last, lastIndexOf, lowerCase, lowerFirst, lt, lte, max, maxBy, mean, meanBy,
+    * min, minBy, multiply, noConflict, noop, now, nth, pad, padEnd, padStart, parseInt, pop,
+    * random, reduce, reduceRight, repeat, result, round, runInContext, sample, shift, size,
+    * snakeCase, some, sortedIndex, sortedIndexBy, sortedLastIndex, sortedLastIndexBy, startCase,
+    * startsWith, stubArray, stubFalse, stubObject, stubString, stubTrue, subtract, sum, sumBy,
+    * template, times, toFinite, toInteger, toJSON, toLength, toLower, toNumber, toSafeInteger,
+    * toString, toUpper, trim, trimEnd, trimStart, truncate, unescape, uniqueId, upperCase,
+    * upperFirst, value, and words.
+    **/
   def `__`[T](value: T): lodashLib.lodashMod.underscoreNs.LoDashImplicitWrapper[T] = js.native
   def add(augend: lodashLib.lodashMod.underscoreNs.`__`, addend: scala.Double): LodashAdd1x2 = js.native
   def add(augend: scala.Double): LodashAdd1x1 = js.native
   def add(augend: scala.Double, addend: scala.Double): scala.Double = js.native
   def after(func: lodashLib.lodashMod.underscoreNs.`__`, n: scala.Double): LodashAfter1x2 = js.native
-  def after[TFunc /* <: js.Function1[/* repeated */js.Any, _] */](func: TFunc): LodashAfter1x1[TFunc] = js.native
-  def after[TFunc /* <: js.Function1[/* repeated */js.Any, _] */](func: TFunc, n: scala.Double): TFunc = js.native
+  def after[TFunc /* <: js.Function1[/* repeated */ js.Any, _] */](func: TFunc): LodashAfter1x1[TFunc] = js.native
+  def after[TFunc /* <: js.Function1[/* repeated */ js.Any, _] */](func: TFunc, n: scala.Double): TFunc = js.native
   def all[T](predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean]): LodashEvery1x1[T] = js.native
   def all[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ],
     collection: T
@@ -872,7 +872,7 @@ trait LoDashFp extends js.Object {
     predicate: lodashLib.lodashMod.underscoreNs.`__`,
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashEvery1x2[T] = js.native
-  def allPass[T](predicates: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */T, scala.Boolean]]): js.Function1[/* repeated */T, scala.Boolean] = js.native
+  def allPass[T](predicates: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ T, scala.Boolean]]): js.Function1[/* repeated */ T, scala.Boolean] = js.native
   @JSName("all")
   def all_TBoolean[T](predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean]): scala.Boolean = js.native
   @JSName("all")
@@ -880,7 +880,7 @@ trait LoDashFp extends js.Object {
   @JSName("all")
   def all_TObjectBoolean[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ]
   ): scala.Boolean = js.native
@@ -888,7 +888,7 @@ trait LoDashFp extends js.Object {
   def any[T](predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean]): scala.Boolean = js.native
   def any[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ],
     collection: T
@@ -903,7 +903,7 @@ trait LoDashFp extends js.Object {
     predicate: lodashLib.lodashMod.underscoreNs.`__`,
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashSome1x2[T] = js.native
-  def anyPass[T](predicates: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */T, scala.Boolean]]): js.Function1[/* repeated */T, scala.Boolean] = js.native
+  def anyPass[T](predicates: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ T, scala.Boolean]]): js.Function1[/* repeated */ T, scala.Boolean] = js.native
   @JSName("any")
   def any_TLodashSome1x1[T](predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean]): LodashSome1x1[T] = js.native
   @JSName("any")
@@ -911,15 +911,15 @@ trait LoDashFp extends js.Object {
   @JSName("any")
   def any_TObject[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ]
   ): scala.Boolean = js.native
   @JSName("apply")
-  def apply[TResult](func: js.Function1[/* repeated */js.Any, TResult]): js.Function1[/* repeated */js.Any, TResult] = js.native
-  def ary(n: lodashLib.lodashMod.underscoreNs.`__`, func: js.Function1[/* repeated */js.Any, _]): LodashAry1x2 = js.native
+  def apply[TResult](func: js.Function1[/* repeated */ js.Any, TResult]): js.Function1[/* repeated */ js.Any, TResult] = js.native
+  def ary(n: lodashLib.lodashMod.underscoreNs.`__`, func: js.Function1[/* repeated */ js.Any, _]): LodashAry1x2 = js.native
   def ary(n: scala.Double): LodashAry1x1 = js.native
-  def ary(n: scala.Double, func: js.Function1[/* repeated */js.Any, _]): js.Function1[/* repeated */js.Any, _] = js.native
+  def ary(n: scala.Double, func: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
   def assign[TObject](`object`: TObject): LodashAssign1x1[TObject] = js.native
   def assign[TSource](`object`: lodashLib.lodashMod.underscoreNs.`__`, source: TSource): LodashAssign1x2[TSource] = js.native
   def assign[TObject, TSource](`object`: TObject, source: TSource): TObject with TSource = js.native
@@ -1031,9 +1031,7 @@ trait LoDashFp extends js.Object {
     `object`: T
   ): LodashSet1x4[T] = js.native
   def at(props: lodashLib.lodashMod.underscoreNs.PropertyPath): LodashAt1x1 = js.native
-  def at[T /* <: js.Object */](props: lodashLib.lodashMod.underscoreNs.Many[java.lang.String], `object`: T): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  def at[T /* <: js.Object */](props: lodashLib.lodashMod.underscoreNs.Many[java.lang.String], `object`: T): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def at[T](
     props: lodashLib.lodashMod.underscoreNs.PropertyPath,
     `object`: lodashLib.lodashMod.underscoreNs.Dictionary[T]
@@ -1062,23 +1060,21 @@ trait LoDashFp extends js.Object {
   @JSName("at")
   def at_TLodashAt1x2[T](props: lodashLib.lodashMod.underscoreNs.`__`): LodashAt1x2[T] = js.native
   @JSName("at")
-  def at_TObjectArray[T /* <: js.Object */](props: lodashLib.lodashMod.underscoreNs.Many[java.lang.String]): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  def at_TObjectArray[T /* <: js.Object */](props: lodashLib.lodashMod.underscoreNs.Many[java.lang.String]): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   @JSName("at")
   def at_TObjectLodashAt2x1[T /* <: js.Object */](props: lodashLib.lodashMod.underscoreNs.Many[java.lang.String]): LodashAt2x1[T] = js.native
-  def attempt[TResult](func: js.Function1[/* repeated */js.Any, TResult]): TResult | stdLib.Error = js.native
+  def attempt[TResult](func: js.Function1[/* repeated */ js.Any, TResult]): TResult | stdLib.Error = js.native
   def before(func: lodashLib.lodashMod.underscoreNs.`__`, n: scala.Double): LodashBefore1x2 = js.native
-  def before[TFunc /* <: js.Function1[/* repeated */js.Any, _] */](func: TFunc): LodashBefore1x1[TFunc] = js.native
-  def before[TFunc /* <: js.Function1[/* repeated */js.Any, _] */](func: TFunc, n: scala.Double): TFunc = js.native
-  def bind(func: js.Function1[/* repeated */js.Any, _]): LodashBind1x1 = js.native
-  def bind(func: js.Function1[/* repeated */js.Any, _], thisArg: js.Any): js.Function1[/* repeated */js.Any, _] = js.native
+  def before[TFunc /* <: js.Function1[/* repeated */ js.Any, _] */](func: TFunc): LodashBefore1x1[TFunc] = js.native
+  def before[TFunc /* <: js.Function1[/* repeated */ js.Any, _] */](func: TFunc, n: scala.Double): TFunc = js.native
+  def bind(func: js.Function1[/* repeated */ js.Any, _]): LodashBind1x1 = js.native
+  def bind(func: js.Function1[/* repeated */ js.Any, _], thisArg: js.Any): js.Function1[/* repeated */ js.Any, _] = js.native
   def bind(func: lodashLib.lodashMod.underscoreNs.`__`, thisArg: js.Any): LodashBind1x2 = js.native
   def bindAll(methodNames: lodashLib.lodashMod.underscoreNs.Many[java.lang.String]): LodashBindAll1x1 = js.native
   def bindAll[T](methodNames: lodashLib.lodashMod.underscoreNs.Many[java.lang.String], `object`: T): T = js.native
   def bindAll[T](methodNames: lodashLib.lodashMod.underscoreNs.`__`, `object`: T): LodashBindAll1x2[T] = js.native
   def bindKey(`object`: js.Object): LodashBindKey1x1 = js.native
-  def bindKey(`object`: js.Object, key: java.lang.String): js.Function1[/* repeated */js.Any, _] = js.native
+  def bindKey(`object`: js.Object, key: java.lang.String): js.Function1[/* repeated */ js.Any, _] = js.native
   def bindKey(`object`: lodashLib.lodashMod.underscoreNs.`__`, key: java.lang.String): LodashBindKey1x2 = js.native
   def camelCase(string: java.lang.String): java.lang.String = js.native
   def capitalize(string: java.lang.String): java.lang.String = js.native
@@ -1123,7 +1119,7 @@ trait LoDashFp extends js.Object {
     ]
   ): js.Array[T] = js.native
   def complement(predicate: js.Function0[scala.Boolean]): js.Function0[scala.Boolean] = js.native
-  def complement(predicate: js.Function1[/* repeated */js.Any, _]): js.Function1[/* repeated */js.Any, scala.Boolean] = js.native
+  def complement(predicate: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, scala.Boolean] = js.native
   def complement[A1, A2](predicate: js.Function2[/* a1 */ A1, /* a2 */ A2, scala.Boolean]): js.Function2[/* a1 */ A1, /* a2 */ A2, scala.Boolean] = js.native
   @JSName("complement")
   def complement_A1[A1](predicate: js.Function1[/* a1 */ A1, scala.Boolean]): js.Function1[/* a1 */ A1, scala.Boolean] = js.native
@@ -1135,17 +1131,17 @@ trait LoDashFp extends js.Object {
     f3: js.Function1[/* a */ js.Any, _],
     f2: js.Function1[/* a */ js.Any, _],
     f1: js.Function0[_],
-    funcs: (lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */_, _]])*
-  ): js.Function1[/* repeated */js.Any, _] = js.native
-  def compose(funcs: js.Array[lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */_, _]]]): js.Function1[/* repeated */js.Any, _] = js.native
+    funcs: (lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ _, _]])*
+  ): js.Function1[/* repeated */ js.Any, _] = js.native
+  def compose(funcs: js.Array[lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ _, _]]]): js.Function1[/* repeated */ js.Any, _] = js.native
   def compose[R2, R1](f2: js.Function1[/* a */ R1, R2], f1: js.Function0[R1]): js.Function0[R2] = js.native
-  def compose[R2, R1](f2: js.Function1[/* a */ R1, R2], f1: js.Function1[/* repeated */js.Any, R1]): js.Function1[/* repeated */js.Any, R2] = js.native
+  def compose[R2, R1](f2: js.Function1[/* a */ R1, R2], f1: js.Function1[/* repeated */ js.Any, R1]): js.Function1[/* repeated */ js.Any, R2] = js.native
   def compose[R3, R2, R1](f3: js.Function1[/* a */ R2, R3], f2: js.Function1[/* a */ R1, R2], f1: js.Function0[R1]): js.Function0[R3] = js.native
   def compose[R3, R2, R1](
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
-    f1: js.Function1[/* repeated */js.Any, R1]
-  ): js.Function1[/* repeated */js.Any, R3] = js.native
+    f1: js.Function1[/* repeated */ js.Any, R1]
+  ): js.Function1[/* repeated */ js.Any, R3] = js.native
   def compose[A1, A2, R2, R1](f2: js.Function1[/* a */ R1, R2], f1: js.Function2[/* a1 */ A1, /* a2 */ A2, R1]): js.Function2[/* a1 */ A1, /* a2 */ A2, R2] = js.native
   def compose[R4, R3, R2, R1](
     f4: js.Function1[/* a */ R3, R4],
@@ -1157,8 +1153,8 @@ trait LoDashFp extends js.Object {
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
-    f1: js.Function1[/* repeated */js.Any, R1]
-  ): js.Function1[/* repeated */js.Any, R4] = js.native
+    f1: js.Function1[/* repeated */ js.Any, R1]
+  ): js.Function1[/* repeated */ js.Any, R4] = js.native
   def compose[A1, A2, A3, R2, R1](f2: js.Function1[/* a */ R1, R2], f1: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, R1]): js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, R2] = js.native
   def compose[A1, A2, R3, R2, R1](
     f3: js.Function1[/* a */ R2, R3],
@@ -1177,8 +1173,8 @@ trait LoDashFp extends js.Object {
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
-    f1: js.Function1[/* repeated */js.Any, R1]
-  ): js.Function1[/* repeated */js.Any, R5] = js.native
+    f1: js.Function1[/* repeated */ js.Any, R1]
+  ): js.Function1[/* repeated */ js.Any, R5] = js.native
   def compose[A1, A2, A3, A4, R2, R1](
     f2: js.Function1[/* a */ R1, R2],
     f1: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R1]
@@ -1208,8 +1204,8 @@ trait LoDashFp extends js.Object {
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
-    f1: js.Function1[/* repeated */js.Any, R1]
-  ): js.Function1[/* repeated */js.Any, R6] = js.native
+    f1: js.Function1[/* repeated */ js.Any, R1]
+  ): js.Function1[/* repeated */ js.Any, R6] = js.native
   def compose[A1, A2, A3, A4, R3, R2, R1](
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
@@ -1244,8 +1240,8 @@ trait LoDashFp extends js.Object {
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
-    f1: js.Function1[/* repeated */js.Any, R1]
-  ): js.Function1[/* repeated */js.Any, R7] = js.native
+    f1: js.Function1[/* repeated */ js.Any, R1]
+  ): js.Function1[/* repeated */ js.Any, R7] = js.native
   def compose[A1, A2, A3, A4, R4, R3, R2, R1](
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
@@ -1391,9 +1387,7 @@ trait LoDashFp extends js.Object {
   def contains_TLodashContains1x1[T](target: T): LodashContains1x1[T] = js.native
   def countBy[T](iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[T]): lodashLib.lodashMod.underscoreNs.Dictionary[scala.Double] = js.native
   def countBy[T /* <: js.Object */](
-    iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ],
+    iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any],
     collection: T
   ): lodashLib.lodashMod.underscoreNs.Dictionary[scala.Double] = js.native
   def countBy[T](
@@ -1412,19 +1406,17 @@ trait LoDashFp extends js.Object {
   def countBy_TLodashCountBy1x2[T](iteratee: lodashLib.lodashMod.underscoreNs.`__`): LodashCountBy1x2[T] = js.native
   @JSName("countBy")
   def countBy_TObject[T /* <: js.Object */](
-    iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ): lodashLib.lodashMod.underscoreNs.Dictionary[scala.Double] = js.native
   def create[T /* <: js.Object */, U /* <: js.Object */](prototype: T): T with U = js.native
-  def curry(func: js.Function1[/* repeated */js.Any, _]): js.Function1[/* repeated */js.Any, _] = js.native
+  def curry(func: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
   def curry[T1, T2, R](func: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): lodashLib.lodashMod.underscoreNs.CurriedFunction2[T1, T2, R] = js.native
   def curry[T1, T2, T3, R](func: js.Function3[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, R]): lodashLib.lodashMod.underscoreNs.CurriedFunction3[T1, T2, T3, R] = js.native
   def curry[T1, T2, T3, T4, R](func: js.Function4[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, R]): lodashLib.lodashMod.underscoreNs.CurriedFunction4[T1, T2, T3, T4, R] = js.native
   def curry[T1, T2, T3, T4, T5, R](func: js.Function5[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, /* t5 */ T5, R]): lodashLib.lodashMod.underscoreNs.CurriedFunction5[T1, T2, T3, T4, T5, R] = js.native
-  def curryN(arity: lodashLib.lodashMod.underscoreNs.`__`, func: js.Function1[/* repeated */js.Any, _]): LodashCurryN6x2 = js.native
+  def curryN(arity: lodashLib.lodashMod.underscoreNs.`__`, func: js.Function1[/* repeated */ js.Any, _]): LodashCurryN6x2 = js.native
   def curryN(arity: scala.Double): LodashCurryN1x1 = js.native
-  def curryN(arity: scala.Double, func: js.Function1[/* repeated */js.Any, _]): js.Function1[/* repeated */js.Any, _] = js.native
+  def curryN(arity: scala.Double, func: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
   def curryN[T1, T2, R](arity: lodashLib.lodashMod.underscoreNs.`__`, func: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): LodashCurryN2x2[T1, T2, R] = js.native
   def curryN[T1, T2, R](arity: scala.Double, func: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): lodashLib.lodashMod.underscoreNs.CurriedFunction2[T1, T2, R] = js.native
   def curryN[T1, T2, T3, R](
@@ -1449,14 +1441,14 @@ trait LoDashFp extends js.Object {
   def curryN_T1RCurriedFunction1[T1, R](arity: scala.Double, func: js.Function1[/* t1 */ T1, R]): lodashLib.lodashMod.underscoreNs.CurriedFunction1[T1, R] = js.native
   @JSName("curryN")
   def curryN_T1RLodashCurryN1x2[T1, R](arity: lodashLib.lodashMod.underscoreNs.`__`, func: js.Function1[/* t1 */ T1, R]): LodashCurryN1x2[T1, R] = js.native
-  def curryRight(func: js.Function1[/* repeated */js.Any, _]): js.Function1[/* repeated */js.Any, _] = js.native
+  def curryRight(func: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
   def curryRight[T1, T2, R](func: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): lodashLib.lodashMod.underscoreNs.RightCurriedFunction2[T1, T2, R] = js.native
   def curryRight[T1, T2, T3, R](func: js.Function3[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, R]): lodashLib.lodashMod.underscoreNs.RightCurriedFunction3[T1, T2, T3, R] = js.native
   def curryRight[T1, T2, T3, T4, R](func: js.Function4[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, R]): lodashLib.lodashMod.underscoreNs.RightCurriedFunction4[T1, T2, T3, T4, R] = js.native
   def curryRight[T1, T2, T3, T4, T5, R](func: js.Function5[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* t4 */ T4, /* t5 */ T5, R]): lodashLib.lodashMod.underscoreNs.RightCurriedFunction5[T1, T2, T3, T4, T5, R] = js.native
-  def curryRightN(arity: lodashLib.lodashMod.underscoreNs.`__`, func: js.Function1[/* repeated */js.Any, _]): LodashCurryRightN6x2 = js.native
+  def curryRightN(arity: lodashLib.lodashMod.underscoreNs.`__`, func: js.Function1[/* repeated */ js.Any, _]): LodashCurryRightN6x2 = js.native
   def curryRightN(arity: scala.Double): LodashCurryRightN1x1 = js.native
-  def curryRightN(arity: scala.Double, func: js.Function1[/* repeated */js.Any, _]): js.Function1[/* repeated */js.Any, _] = js.native
+  def curryRightN(arity: scala.Double, func: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
   def curryRightN[T1, T2, R](arity: lodashLib.lodashMod.underscoreNs.`__`, func: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): LodashCurryRightN2x2[T1, T2, R] = js.native
   def curryRightN[T1, T2, R](arity: scala.Double, func: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): lodashLib.lodashMod.underscoreNs.RightCurriedFunction2[T1, T2, R] = js.native
   def curryRightN[T1, T2, T3, R](
@@ -1486,8 +1478,8 @@ trait LoDashFp extends js.Object {
   @JSName("curry")
   def curry_T1RCurriedFunction1[T1, R](func: js.Function1[/* t1 */ T1, R]): lodashLib.lodashMod.underscoreNs.CurriedFunction1[T1, R] = js.native
   def debounce(wait: scala.Double): LodashDebounce1x1 = js.native
-  def debounce[T /* <: js.Function1[/* repeated */js.Any, _] */](wait: lodashLib.lodashMod.underscoreNs.`__`, func: T): LodashDebounce1x2[T] = js.native
-  def debounce[T /* <: js.Function1[/* repeated */js.Any, _] */](wait: scala.Double, func: T): T with lodashLib.lodashMod.underscoreNs.Cancelable = js.native
+  def debounce[T /* <: js.Function1[/* repeated */ js.Any, _] */](wait: lodashLib.lodashMod.underscoreNs.`__`, func: T): LodashDebounce1x2[T] = js.native
+  def debounce[T /* <: js.Function1[/* repeated */ js.Any, _] */](wait: scala.Double, func: T): T with lodashLib.lodashMod.underscoreNs.Cancelable = js.native
   def deburr(string: java.lang.String): java.lang.String = js.native
   def defaultTo[T](defaultValue: T): T = js.native
   def defaultTo[T](defaultValue: T, value: T): T = js.native
@@ -1515,10 +1507,10 @@ trait LoDashFp extends js.Object {
   def defaultsDeep(sources: js.Any, `object`: js.Any): js.Any = js.native
   def defaultsDeep(sources: lodashLib.lodashMod.underscoreNs.`__`, `object`: js.Any): LodashDefaultsDeep1x2 = js.native
   def defaultsDeepAll(`object`: js.Array[_]): js.Any = js.native
-  def defer(func: js.Function1[/* repeated */js.Any, _], args: js.Any*): scala.Double = js.native
-  def delay(wait: lodashLib.lodashMod.underscoreNs.`__`, func: js.Function1[/* repeated */js.Any, _]): LodashDelay1x2 = js.native
+  def defer(func: js.Function1[/* repeated */ js.Any, _], args: js.Any*): scala.Double = js.native
+  def delay(wait: lodashLib.lodashMod.underscoreNs.`__`, func: js.Function1[/* repeated */ js.Any, _]): LodashDelay1x2 = js.native
   def delay(wait: scala.Double): LodashDelay1x1 = js.native
-  def delay(wait: scala.Double, func: js.Function1[/* repeated */js.Any, _]): scala.Double = js.native
+  def delay(wait: scala.Double, func: js.Function1[/* repeated */ js.Any, _]): scala.Double = js.native
   def difference[T](): LodashDifference1x1[T] = js.native
   def difference[T](array: js.UndefOr[scala.Nothing], values: lodashLib.lodashMod.underscoreNs.List[T]): js.Array[T] = js.native
   def difference[T](array: lodashLib.lodashMod.underscoreNs.List[T]): LodashDifference1x1[T] = js.native
@@ -1685,7 +1677,7 @@ trait LoDashFp extends js.Object {
   def each(iteratee: lodashLib.lodashMod.underscoreNs.`__`, collection: java.lang.String): LodashForEach2x2 = js.native
   def each[T /* <: js.Object */](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ],
     collection: T
@@ -1704,7 +1696,7 @@ trait LoDashFp extends js.Object {
   def eachRight(iteratee: lodashLib.lodashMod.underscoreNs.`__`, collection: java.lang.String): LodashForEachRight2x2 = js.native
   def eachRight[T /* <: js.Object */](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ],
     collection: T
@@ -1725,7 +1717,7 @@ trait LoDashFp extends js.Object {
   @JSName("eachRight")
   def eachRight_TObjectT[T /* <: js.Object */](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ],
     collection: T
@@ -1733,7 +1725,7 @@ trait LoDashFp extends js.Object {
   @JSName("eachRight")
   def eachRight_TObjectUndefOr[T /* <: js.Object */](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ]
   ): js.UndefOr[T | scala.Null] = js.native
@@ -1768,7 +1760,7 @@ trait LoDashFp extends js.Object {
   @JSName("each")
   def each_TObjectT[T /* <: js.Object */](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ],
     collection: T
@@ -1776,7 +1768,7 @@ trait LoDashFp extends js.Object {
   @JSName("each")
   def each_TObjectUndefOr[T /* <: js.Object */](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ]
   ): js.UndefOr[T | scala.Null] = js.native
@@ -1824,7 +1816,7 @@ trait LoDashFp extends js.Object {
   def every[T](predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean]): LodashEvery1x1[T] = js.native
   def every[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ],
     collection: T
@@ -1846,7 +1838,7 @@ trait LoDashFp extends js.Object {
   @JSName("every")
   def every_TObjectBoolean[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ]
   ): scala.Boolean = js.native
@@ -2020,13 +2012,11 @@ trait LoDashFp extends js.Object {
   def filter[T](predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean]): js.Array[T] = js.native
   def filter[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ],
     collection: T
-  ): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def filter[T](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean],
     collection: lodashLib.lodashMod.underscoreNs.List[T]
@@ -2036,9 +2026,9 @@ trait LoDashFp extends js.Object {
     predicate: lodashLib.lodashMod.underscoreNs.`__`,
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashFilter2x2[T] = js.native
-  def filter[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def filter[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ],
     collection: T
@@ -2056,25 +2046,23 @@ trait LoDashFp extends js.Object {
   @JSName("filter")
   def filter_TObject[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ]
-  ): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   @JSName("filter")
   def filter_TObjectLodashFilter4x2[T /* <: js.Object */](predicate: lodashLib.lodashMod.underscoreNs.`__`): LodashFilter4x2[T] = js.native
   @JSName("filter")
-  def filter_TObjectSAny[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def filter_TObjectSAny[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ]
   ): js.Array[S] = js.native
   @JSName("filter")
-  def filter_TObjectSAnyLodashFilter4x1[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def filter_TObjectSAnyLodashFilter4x1[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ]
   ): LodashFilter4x1[T, S] = js.native
@@ -2085,13 +2073,11 @@ trait LoDashFp extends js.Object {
   def find[T](predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean]): js.UndefOr[T] = js.native
   def find[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ],
     collection: T
-  ): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def find[T](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean],
     collection: lodashLib.lodashMod.underscoreNs.List[T]
@@ -2103,9 +2089,9 @@ trait LoDashFp extends js.Object {
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashFind1x2[T] = js.native
   def find[T, S /* <: T */](predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[T, S]): LodashFind1x1[T, S] = js.native
-  def find[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def find[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ],
     collection: T
@@ -2118,14 +2104,14 @@ trait LoDashFp extends js.Object {
   def findFrom[T](predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean]): LodashFindFrom2x1[T] = js.native
   def findFrom[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ],
     fromIndex: lodashLib.lodashMod.underscoreNs.`__`
   ): LodashFindFrom4x5[T] = js.native
   def findFrom[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ],
     fromIndex: lodashLib.lodashMod.underscoreNs.`__`,
@@ -2142,14 +2128,12 @@ trait LoDashFp extends js.Object {
   ): LodashFindFrom2x3[T] = js.native
   def findFrom[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ],
     fromIndex: scala.Double,
     collection: T
-  ): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def findFrom[T](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean],
     fromIndex: scala.Double,
@@ -2172,9 +2156,9 @@ trait LoDashFp extends js.Object {
     fromIndex: scala.Double,
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashFindFrom1x6[T] = js.native
-  def findFrom[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def findFrom[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ]
   ): LodashFindFrom3x1[T, S] = js.native
@@ -2182,9 +2166,9 @@ trait LoDashFp extends js.Object {
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[T, S],
     fromIndex: lodashLib.lodashMod.underscoreNs.`__`
   ): LodashFindFrom1x5[S] = js.native
-  def findFrom[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def findFrom[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ],
     fromIndex: lodashLib.lodashMod.underscoreNs.`__`,
@@ -2196,9 +2180,9 @@ trait LoDashFp extends js.Object {
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashFindFrom1x5[S] = js.native
   def findFrom[T, S /* <: T */](predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[T, S], fromIndex: scala.Double): js.UndefOr[S] = js.native
-  def findFrom[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def findFrom[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ],
     fromIndex: scala.Double,
@@ -2221,25 +2205,25 @@ trait LoDashFp extends js.Object {
   @JSName("findFrom")
   def findFrom_TObjectLodashFindFrom3x6[T /* <: js.Object */](predicate: lodashLib.lodashMod.underscoreNs.`__`, fromIndex: scala.Double): LodashFindFrom3x6[T] = js.native
   @JSName("findFrom")
-  def findFrom_TObjectSAny[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def findFrom_TObjectSAny[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ],
     fromIndex: scala.Double
   ): js.UndefOr[S] = js.native
   @JSName("findFrom")
-  def findFrom_TObjectSAnyLodashFindFrom3x3[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def findFrom_TObjectSAnyLodashFindFrom3x3[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ],
     fromIndex: scala.Double
   ): LodashFindFrom3x3[T, S] = js.native
   @JSName("findFrom")
-  def findFrom_TObjectSAnyLodashFindFrom3x5[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def findFrom_TObjectSAnyLodashFindFrom3x5[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ],
     fromIndex: lodashLib.lodashMod.underscoreNs.`__`
@@ -2247,13 +2231,11 @@ trait LoDashFp extends js.Object {
   @JSName("findFrom")
   def findFrom_TObjectUndefOr[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ],
     fromIndex: scala.Double
-  ): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   @JSName("findFrom")
   def findFrom_TSTLodashFindFrom1x1[T, S /* <: T */](predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[T, S]): LodashFindFrom1x1[T, S] = js.native
   @JSName("findFrom")
@@ -2312,29 +2294,23 @@ trait LoDashFp extends js.Object {
   def findIndex_TDouble[T](predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean]): scala.Double = js.native
   def findKey[T](predicate: lodashLib.lodashMod.underscoreNs.ValueIteratee[T]): LodashFindKey1x1[T] = js.native
   def findKey[T](
-    predicate: lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ],
+    predicate: lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any],
     `object`: T
   ): js.UndefOr[java.lang.String] = js.native
   def findKey[T](predicate: lodashLib.lodashMod.underscoreNs.`__`): LodashFindKey1x2[T] = js.native
   def findKey[T](predicate: lodashLib.lodashMod.underscoreNs.`__`, `object`: T): LodashFindKey1x2[T] = js.native
   @JSName("findKey")
   def findKey_TUndefOr[T](
-    predicate: lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    predicate: lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ): js.UndefOr[java.lang.String] = js.native
   def findLast[T](predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean]): js.UndefOr[T] = js.native
   def findLast[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ],
     collection: T
-  ): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def findLast[T](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean],
     collection: lodashLib.lodashMod.underscoreNs.List[T]
@@ -2345,15 +2321,15 @@ trait LoDashFp extends js.Object {
     predicate: lodashLib.lodashMod.underscoreNs.`__`,
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashFindLast1x2[T] = js.native
-  def findLast[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def findLast[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ]
   ): LodashFindLast3x1[T, S] = js.native
-  def findLast[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def findLast[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ],
     collection: T
@@ -2366,14 +2342,14 @@ trait LoDashFp extends js.Object {
   def findLastFrom[T](predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean]): LodashFindLastFrom2x1[T] = js.native
   def findLastFrom[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ],
     fromIndex: lodashLib.lodashMod.underscoreNs.`__`
   ): LodashFindLastFrom4x5[T] = js.native
   def findLastFrom[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ],
     fromIndex: lodashLib.lodashMod.underscoreNs.`__`,
@@ -2390,14 +2366,12 @@ trait LoDashFp extends js.Object {
   ): LodashFindLastFrom2x3[T] = js.native
   def findLastFrom[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ],
     fromIndex: scala.Double,
     collection: T
-  ): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def findLastFrom[T](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean],
     fromIndex: scala.Double,
@@ -2421,16 +2395,16 @@ trait LoDashFp extends js.Object {
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashFindLastFrom1x6[T] = js.native
   def findLastFrom[T, S /* <: T */](predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[T, S]): LodashFindLastFrom1x1[T, S] = js.native
-  def findLastFrom[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def findLastFrom[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ],
     fromIndex: lodashLib.lodashMod.underscoreNs.`__`
   ): LodashFindLastFrom3x5[S] = js.native
-  def findLastFrom[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def findLastFrom[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ],
     fromIndex: lodashLib.lodashMod.underscoreNs.`__`,
@@ -2442,9 +2416,9 @@ trait LoDashFp extends js.Object {
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): LodashFindLastFrom1x5[S] = js.native
   def findLastFrom[T, S /* <: T */](predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[T, S], fromIndex: scala.Double): js.UndefOr[S] = js.native
-  def findLastFrom[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def findLastFrom[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ],
     fromIndex: scala.Double,
@@ -2467,24 +2441,24 @@ trait LoDashFp extends js.Object {
   @JSName("findLastFrom")
   def findLastFrom_TObjectLodashFindLastFrom3x6[T /* <: js.Object */](predicate: lodashLib.lodashMod.underscoreNs.`__`, fromIndex: scala.Double): LodashFindLastFrom3x6[T] = js.native
   @JSName("findLastFrom")
-  def findLastFrom_TObjectSAny[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def findLastFrom_TObjectSAny[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ],
     fromIndex: scala.Double
   ): js.UndefOr[S] = js.native
   @JSName("findLastFrom")
-  def findLastFrom_TObjectSAnyLodashFindLastFrom3x1[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def findLastFrom_TObjectSAnyLodashFindLastFrom3x1[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ]
   ): LodashFindLastFrom3x1[T, S] = js.native
   @JSName("findLastFrom")
-  def findLastFrom_TObjectSAnyLodashFindLastFrom3x3[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def findLastFrom_TObjectSAnyLodashFindLastFrom3x3[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ],
     fromIndex: scala.Double
@@ -2492,13 +2466,11 @@ trait LoDashFp extends js.Object {
   @JSName("findLastFrom")
   def findLastFrom_TObjectUndefOr[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ],
     fromIndex: scala.Double
-  ): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   @JSName("findLastFrom")
   def findLastFrom_TSTLodashFindLastFrom1x3[T, S /* <: T */](predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[T, S], fromIndex: scala.Double): LodashFindLastFrom1x3[T, S] = js.native
   @JSName("findLastFrom")
@@ -2560,36 +2532,30 @@ trait LoDashFp extends js.Object {
   def findLastIndex_TDouble[T](predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean]): scala.Double = js.native
   def findLastKey[T](predicate: lodashLib.lodashMod.underscoreNs.ValueIteratee[T]): LodashFindLastKey1x1[T] = js.native
   def findLastKey[T](
-    predicate: lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ],
+    predicate: lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any],
     `object`: T
   ): js.UndefOr[java.lang.String] = js.native
   def findLastKey[T](predicate: lodashLib.lodashMod.underscoreNs.`__`): LodashFindLastKey1x2[T] = js.native
   def findLastKey[T](predicate: lodashLib.lodashMod.underscoreNs.`__`, `object`: T): LodashFindLastKey1x2[T] = js.native
   @JSName("findLastKey")
   def findLastKey_TUndefOr[T](
-    predicate: lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    predicate: lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ): js.UndefOr[java.lang.String] = js.native
   @JSName("findLast")
   def findLast_TLodashFindLast2x1[T](predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean]): LodashFindLast2x1[T] = js.native
   @JSName("findLast")
   def findLast_TObject[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ]
-  ): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   @JSName("findLast")
   def findLast_TObjectLodashFindLast3x2[T /* <: js.Object */](predicate: lodashLib.lodashMod.underscoreNs.`__`): LodashFindLast3x2[T] = js.native
   @JSName("findLast")
-  def findLast_TObjectSAnyUndefOr[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def findLast_TObjectSAnyUndefOr[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ]
   ): js.UndefOr[S] = js.native
@@ -2604,23 +2570,21 @@ trait LoDashFp extends js.Object {
   @JSName("find")
   def find_TObject[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ]
-  ): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   @JSName("find")
-  def find_TObjectSAnyLodashFind3x1[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def find_TObjectSAnyLodashFind3x1[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ]
   ): LodashFind3x1[T, S] = js.native
   @JSName("find")
-  def find_TObjectSAnyUndefOr[T /* <: js.Object */, S /* <: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any */](
+  def find_TObjectSAnyUndefOr[T /* <: js.Object */, S /* <: /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIteratorTypeGuard[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       S
     ]
   ): js.UndefOr[S] = js.native
@@ -2642,7 +2606,7 @@ trait LoDashFp extends js.Object {
   def flatMap[T, TResult](iteratee: js.Function1[/* value */ T, lodashLib.lodashMod.underscoreNs.Many[TResult]]): js.Array[TResult] = js.native
   def flatMap[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       lodashLib.lodashMod.underscoreNs.Many[TResult]
     ],
     collection: T
@@ -2670,7 +2634,7 @@ trait LoDashFp extends js.Object {
   ): js.Array[TResult] = js.native
   def flatMapDeep[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       lodashLib.lodashMod.underscoreNs.ListOfRecursiveArraysOrValues[TResult] | TResult
     ],
     collection: T
@@ -2693,14 +2657,14 @@ trait LoDashFp extends js.Object {
   @JSName("flatMapDeep")
   def flatMapDeep_TObjectTResult[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       lodashLib.lodashMod.underscoreNs.ListOfRecursiveArraysOrValues[TResult] | TResult
     ]
   ): js.Array[TResult] = js.native
   @JSName("flatMapDeep")
   def flatMapDeep_TObjectTResultLodashFlatMapDeep2x1[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       lodashLib.lodashMod.underscoreNs.ListOfRecursiveArraysOrValues[TResult] | TResult
     ]
   ): LodashFlatMapDeep2x1[T, TResult] = js.native
@@ -2747,20 +2711,20 @@ trait LoDashFp extends js.Object {
   ): LodashFlatMapDepth1x6[T] = js.native
   def flatMapDepth[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       lodashLib.lodashMod.underscoreNs.ListOfRecursiveArraysOrValues[TResult] | TResult
     ]
   ): LodashFlatMapDepth2x1[T, TResult] = js.native
   def flatMapDepth[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       lodashLib.lodashMod.underscoreNs.ListOfRecursiveArraysOrValues[TResult] | TResult
     ],
     depth: lodashLib.lodashMod.underscoreNs.`__`
   ): LodashFlatMapDepth2x5[TResult] = js.native
   def flatMapDepth[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       lodashLib.lodashMod.underscoreNs.ListOfRecursiveArraysOrValues[TResult] | TResult
     ],
     depth: lodashLib.lodashMod.underscoreNs.`__`,
@@ -2783,7 +2747,7 @@ trait LoDashFp extends js.Object {
   ): js.Array[TResult] = js.native
   def flatMapDepth[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       lodashLib.lodashMod.underscoreNs.ListOfRecursiveArraysOrValues[TResult] | TResult
     ],
     depth: scala.Double,
@@ -2814,7 +2778,7 @@ trait LoDashFp extends js.Object {
   @JSName("flatMapDepth")
   def flatMapDepth_TObjectTResult[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       lodashLib.lodashMod.underscoreNs.ListOfRecursiveArraysOrValues[TResult] | TResult
     ],
     depth: scala.Double
@@ -2822,7 +2786,7 @@ trait LoDashFp extends js.Object {
   @JSName("flatMapDepth")
   def flatMapDepth_TObjectTResultLodashFlatMapDepth2x3[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       lodashLib.lodashMod.underscoreNs.ListOfRecursiveArraysOrValues[TResult] | TResult
     ],
     depth: scala.Double
@@ -2861,14 +2825,14 @@ trait LoDashFp extends js.Object {
   @JSName("flatMap")
   def flatMap_TObjectTResult[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       lodashLib.lodashMod.underscoreNs.Many[TResult]
     ]
   ): js.Array[TResult] = js.native
   @JSName("flatMap")
   def flatMap_TObjectTResultLodashFlatMap2x1[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       lodashLib.lodashMod.underscoreNs.Many[TResult]
     ]
   ): LodashFlatMap2x1[T, TResult] = js.native
@@ -2887,9 +2851,9 @@ trait LoDashFp extends js.Object {
   def flattenDepth[T](depth: scala.Double, array: lodashLib.lodashMod.underscoreNs.ListOfRecursiveArraysOrValues[T]): js.Array[T] = js.native
   @JSName("flattenDepth")
   def flattenDepth_TArray[T](depth: scala.Double): js.Array[T] = js.native
-  def flip[T /* <: js.Function1[/* repeated */js.Any, _] */](func: T): T = js.native
+  def flip[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T): T = js.native
   def floor(n: scala.Double): scala.Double = js.native
-  def flow(funcs: js.Array[lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */_, _]]]): js.Function1[/* repeated */js.Any, _] = js.native
+  def flow(funcs: js.Array[lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ _, _]]]): js.Function1[/* repeated */ js.Any, _] = js.native
   def flow[R1, R2](f1: js.Function0[R1], f2: js.Function1[/* a */ R1, R2]): js.Function0[R2] = js.native
   def flow[R1, R2, R3](f1: js.Function0[R1], f2: js.Function1[/* a */ R1, R2], f3: js.Function1[/* a */ R2, R3]): js.Function0[R3] = js.native
   def flow[A1, R1, R2](f1: js.Function1[/* a1 */ A1, R1], f2: js.Function1[/* a */ R1, R2]): js.Function1[/* a1 */ A1, R2] = js.native
@@ -2955,9 +2919,9 @@ trait LoDashFp extends js.Object {
     f2: js.Function1[/* a */ R1, R2]
   ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R2] = js.native
   def flow[A1, A2, A3, A4, R1, R2](
-    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R1],
+    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R1],
     f2: js.Function1[/* a */ R1, R2]
-  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R2] = js.native
+  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R2] = js.native
   def flow[R1, R2, R3, R4, R5, R6, R7](
     f1: js.Function0[R1],
     f2: js.Function1[/* a */ R1, R2],
@@ -3004,10 +2968,10 @@ trait LoDashFp extends js.Object {
     f3: js.Function1[/* a */ R2, R3]
   ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R3] = js.native
   def flow[A1, A2, A3, A4, R1, R2, R3](
-    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R1],
+    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3]
-  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R3] = js.native
+  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R3] = js.native
   def flow[A1, R1, R2, R3, R4, R5, R6, R7](
     f1: js.Function1[/* a1 */ A1, R1],
     f2: js.Function1[/* a */ R1, R2],
@@ -3049,11 +3013,11 @@ trait LoDashFp extends js.Object {
     f4: js.Function1[/* a */ R3, R4]
   ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R4] = js.native
   def flow[A1, A2, A3, A4, R1, R2, R3, R4](
-    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R1],
+    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
     f4: js.Function1[/* a */ R3, R4]
-  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R4] = js.native
+  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R4] = js.native
   def flow[A1, A2, R1, R2, R3, R4, R5, R6, R7](
     f1: js.Function2[/* a1 */ A1, /* a2 */ A2, R1],
     f2: js.Function1[/* a */ R1, R2],
@@ -3089,12 +3053,12 @@ trait LoDashFp extends js.Object {
     f5: js.Function1[/* a */ R4, R5]
   ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R5] = js.native
   def flow[A1, A2, A3, A4, R1, R2, R3, R4, R5](
-    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R1],
+    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
     f4: js.Function1[/* a */ R3, R4],
     f5: js.Function1[/* a */ R4, R5]
-  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R5] = js.native
+  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R5] = js.native
   def flow[A1, A2, A3, R1, R2, R3, R4, R5, R6, R7](
     f1: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, R1],
     f2: js.Function1[/* a */ R1, R2],
@@ -3123,13 +3087,13 @@ trait LoDashFp extends js.Object {
     f6: js.Function1[/* a */ R5, R6]
   ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R6] = js.native
   def flow[A1, A2, A3, A4, R1, R2, R3, R4, R5, R6](
-    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R1],
+    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
     f4: js.Function1[/* a */ R3, R4],
     f5: js.Function1[/* a */ R4, R5],
     f6: js.Function1[/* a */ R5, R6]
-  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R6] = js.native
+  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R6] = js.native
   def flow[A1, A2, A3, A4, R1, R2, R3, R4, R5, R6, R7](
     f1: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R1],
     f2: js.Function1[/* a */ R1, R2],
@@ -3150,16 +3114,16 @@ trait LoDashFp extends js.Object {
     funcs: (lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* a */ _, _]])*
   ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, _] = js.native
   def flow[A1, A2, A3, A4, R1, R2, R3, R4, R5, R6, R7](
-    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R1],
+    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
     f4: js.Function1[/* a */ R3, R4],
     f5: js.Function1[/* a */ R4, R5],
     f6: js.Function1[/* a */ R5, R6],
     f7: js.Function1[/* a */ R6, R7]
-  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R7] = js.native
+  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R7] = js.native
   def flow[A1, A2, A3, A4, R1, R2, R3, R4, R5, R6, R7](
-    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R1],
+    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
     f4: js.Function1[/* a */ R3, R4],
@@ -3167,7 +3131,7 @@ trait LoDashFp extends js.Object {
     f6: js.Function1[/* a */ R5, R6],
     f7: js.Function1[/* a */ R6, R7],
     funcs: (lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* a */ _, _]])*
-  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, _] = js.native
+  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, _] = js.native
   def flowRight(
     f7: js.Function1[/* a */ js.Any, _],
     f6: js.Function1[/* a */ js.Any, _],
@@ -3176,17 +3140,17 @@ trait LoDashFp extends js.Object {
     f3: js.Function1[/* a */ js.Any, _],
     f2: js.Function1[/* a */ js.Any, _],
     f1: js.Function0[_],
-    funcs: (lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */_, _]])*
-  ): js.Function1[/* repeated */js.Any, _] = js.native
-  def flowRight(funcs: js.Array[lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */_, _]]]): js.Function1[/* repeated */js.Any, _] = js.native
+    funcs: (lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ _, _]])*
+  ): js.Function1[/* repeated */ js.Any, _] = js.native
+  def flowRight(funcs: js.Array[lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ _, _]]]): js.Function1[/* repeated */ js.Any, _] = js.native
   def flowRight[R2, R1](f2: js.Function1[/* a */ R1, R2], f1: js.Function0[R1]): js.Function0[R2] = js.native
-  def flowRight[R2, R1](f2: js.Function1[/* a */ R1, R2], f1: js.Function1[/* repeated */js.Any, R1]): js.Function1[/* repeated */js.Any, R2] = js.native
+  def flowRight[R2, R1](f2: js.Function1[/* a */ R1, R2], f1: js.Function1[/* repeated */ js.Any, R1]): js.Function1[/* repeated */ js.Any, R2] = js.native
   def flowRight[R3, R2, R1](f3: js.Function1[/* a */ R2, R3], f2: js.Function1[/* a */ R1, R2], f1: js.Function0[R1]): js.Function0[R3] = js.native
   def flowRight[R3, R2, R1](
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
-    f1: js.Function1[/* repeated */js.Any, R1]
-  ): js.Function1[/* repeated */js.Any, R3] = js.native
+    f1: js.Function1[/* repeated */ js.Any, R1]
+  ): js.Function1[/* repeated */ js.Any, R3] = js.native
   def flowRight[A1, A2, R2, R1](f2: js.Function1[/* a */ R1, R2], f1: js.Function2[/* a1 */ A1, /* a2 */ A2, R1]): js.Function2[/* a1 */ A1, /* a2 */ A2, R2] = js.native
   def flowRight[R4, R3, R2, R1](
     f4: js.Function1[/* a */ R3, R4],
@@ -3198,8 +3162,8 @@ trait LoDashFp extends js.Object {
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
-    f1: js.Function1[/* repeated */js.Any, R1]
-  ): js.Function1[/* repeated */js.Any, R4] = js.native
+    f1: js.Function1[/* repeated */ js.Any, R1]
+  ): js.Function1[/* repeated */ js.Any, R4] = js.native
   def flowRight[A1, A2, A3, R2, R1](f2: js.Function1[/* a */ R1, R2], f1: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, R1]): js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, R2] = js.native
   def flowRight[A1, A2, R3, R2, R1](
     f3: js.Function1[/* a */ R2, R3],
@@ -3218,8 +3182,8 @@ trait LoDashFp extends js.Object {
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
-    f1: js.Function1[/* repeated */js.Any, R1]
-  ): js.Function1[/* repeated */js.Any, R5] = js.native
+    f1: js.Function1[/* repeated */ js.Any, R1]
+  ): js.Function1[/* repeated */ js.Any, R5] = js.native
   def flowRight[A1, A2, A3, A4, R2, R1](
     f2: js.Function1[/* a */ R1, R2],
     f1: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R1]
@@ -3249,8 +3213,8 @@ trait LoDashFp extends js.Object {
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
-    f1: js.Function1[/* repeated */js.Any, R1]
-  ): js.Function1[/* repeated */js.Any, R6] = js.native
+    f1: js.Function1[/* repeated */ js.Any, R1]
+  ): js.Function1[/* repeated */ js.Any, R6] = js.native
   def flowRight[A1, A2, A3, A4, R3, R2, R1](
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
@@ -3285,8 +3249,8 @@ trait LoDashFp extends js.Object {
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
-    f1: js.Function1[/* repeated */js.Any, R1]
-  ): js.Function1[/* repeated */js.Any, R7] = js.native
+    f1: js.Function1[/* repeated */ js.Any, R1]
+  ): js.Function1[/* repeated */ js.Any, R7] = js.native
   def flowRight[A1, A2, A3, A4, R4, R3, R2, R1](
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
@@ -3405,7 +3369,7 @@ trait LoDashFp extends js.Object {
   def forEach(iteratee: lodashLib.lodashMod.underscoreNs.`__`, collection: java.lang.String): LodashForEach2x2 = js.native
   def forEach[T /* <: js.Object */](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ],
     collection: T
@@ -3424,7 +3388,7 @@ trait LoDashFp extends js.Object {
   def forEachRight(iteratee: lodashLib.lodashMod.underscoreNs.`__`, collection: java.lang.String): LodashForEachRight2x2 = js.native
   def forEachRight[T /* <: js.Object */](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ],
     collection: T
@@ -3445,7 +3409,7 @@ trait LoDashFp extends js.Object {
   @JSName("forEachRight")
   def forEachRight_TObjectT[T /* <: js.Object */](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ],
     collection: T
@@ -3453,7 +3417,7 @@ trait LoDashFp extends js.Object {
   @JSName("forEachRight")
   def forEachRight_TObjectUndefOr[T /* <: js.Object */](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ]
   ): js.UndefOr[T | scala.Null] = js.native
@@ -3488,7 +3452,7 @@ trait LoDashFp extends js.Object {
   @JSName("forEach")
   def forEach_TObjectT[T /* <: js.Object */](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ],
     collection: T
@@ -3496,7 +3460,7 @@ trait LoDashFp extends js.Object {
   @JSName("forEach")
   def forEach_TObjectUndefOr[T /* <: js.Object */](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ]
   ): js.UndefOr[T | scala.Null] = js.native
@@ -3527,7 +3491,7 @@ trait LoDashFp extends js.Object {
   def forIn[T](iteratee: js.Function1[/* value */ T, _]): LodashForIn1x1[T] = js.native
   def forIn[T](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ],
     `object`: T
@@ -3536,13 +3500,13 @@ trait LoDashFp extends js.Object {
   def forIn[T](iteratee: lodashLib.lodashMod.underscoreNs.`__`, `object`: T): LodashForIn2x2[T] = js.native
   def forInRight[T](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ]
   ): js.UndefOr[T | scala.Null] = js.native
   def forInRight[T](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ],
     `object`: T
@@ -3556,7 +3520,7 @@ trait LoDashFp extends js.Object {
   @JSName("forInRight")
   def forInRight_TT[T](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ],
     `object`: T
@@ -3566,7 +3530,7 @@ trait LoDashFp extends js.Object {
   @JSName("forIn")
   def forIn_TT[T](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ],
     `object`: T
@@ -3574,14 +3538,14 @@ trait LoDashFp extends js.Object {
   @JSName("forIn")
   def forIn_TUndefOr[T](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ]
   ): js.UndefOr[T | scala.Null] = js.native
   def forOwn[T](iteratee: js.Function1[/* value */ T, _]): LodashForOwn1x1[T] = js.native
   def forOwn[T](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ],
     `object`: T
@@ -3591,7 +3555,7 @@ trait LoDashFp extends js.Object {
   def forOwnRight[T](iteratee: js.Function1[/* value */ T, _]): LodashForOwnRight1x1[T] = js.native
   def forOwnRight[T](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ],
     `object`: T
@@ -3603,7 +3567,7 @@ trait LoDashFp extends js.Object {
   @JSName("forOwnRight")
   def forOwnRight_TT[T](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ],
     `object`: T
@@ -3611,7 +3575,7 @@ trait LoDashFp extends js.Object {
   @JSName("forOwnRight")
   def forOwnRight_TUndefOr[T](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ]
   ): js.UndefOr[T | scala.Null] = js.native
@@ -3620,7 +3584,7 @@ trait LoDashFp extends js.Object {
   @JSName("forOwn")
   def forOwn_TT[T](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ],
     `object`: T
@@ -3628,7 +3592,7 @@ trait LoDashFp extends js.Object {
   @JSName("forOwn")
   def forOwn_TUndefOr[T](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ]
   ): js.UndefOr[T | scala.Null] = js.native
@@ -3654,16 +3618,16 @@ trait LoDashFp extends js.Object {
   ): LodashGet3x2[T] = js.native
   def get[T](path: scala.Double, `object`: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): js.UndefOr[T] = js.native
   def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey, `object`: TObject): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey]): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def get[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey], `object`: TObject): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def getOr(defaultValue: js.Any): LodashGetOr4x1 = js.native
   def getOr(defaultValue: js.Any, path: lodashLib.lodashMod.underscoreNs.PropertyPath): LodashGetOr4x3 = js.native
@@ -3720,9 +3684,9 @@ trait LoDashFp extends js.Object {
   def getOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */](defaultValue: lodashLib.lodashMod.underscoreNs.`__`, path: js.Array[TKey]): LodashGetOr1x6[TObject, TKey] = js.native
   def getOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */](defaultValue: lodashLib.lodashMod.underscoreNs.`__`, path: js.Array[TKey], `object`: TObject): LodashGetOr1x6[TObject, TKey] = js.native
   def getOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: TKey): LodashGetOr1x3[TObject, TKey, TDefault] = js.native
-  def getOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: TKey, `object`: TObject): (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any) | TDefault = js.native
+  def getOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: TKey, `object`: TObject): (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault = js.native
   def getOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: js.Array[TKey]): LodashGetOr1x3[TObject, TKey, TDefault] = js.native
-  def getOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: js.Array[TKey], `object`: TObject): (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any) | TDefault = js.native
+  def getOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: js.Array[TKey], `object`: TObject): (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault = js.native
   @JSName("getOr")
   def getOr_LodashGetOr3x2(
     defaultValue: lodashLib.lodashMod.underscoreNs.`__`,
@@ -3743,9 +3707,9 @@ trait LoDashFp extends js.Object {
   @JSName("getOr")
   def getOr_TObjectObjectTKeyStringLodashGetOr1x2[TObject /* <: js.Object */, TKey /* <: java.lang.String */](defaultValue: lodashLib.lodashMod.underscoreNs.`__`, path: js.Array[TKey]): LodashGetOr1x2[TObject, TKey] = js.native
   @JSName("getOr")
-  def `getOr_TObjectObjectTKeyStringTDefault<union>`[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: TKey): (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any) | TDefault = js.native
+  def `getOr_TObjectObjectTKeyStringTDefault<union>`[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: TKey): (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault = js.native
   @JSName("getOr")
-  def `getOr_TObjectObjectTKeyStringTDefault<union>`[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: js.Array[TKey]): (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any) | TDefault = js.native
+  def `getOr_TObjectObjectTKeyStringTDefault<union>`[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: js.Array[TKey]): (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault = js.native
   @JSName("getOr")
   def `getOr_TTDefault<union>`[T, TDefault](defaultValue: TDefault, path: scala.Double): T | TDefault = js.native
   @JSName("getOr")
@@ -3764,9 +3728,9 @@ trait LoDashFp extends js.Object {
   @JSName("get")
   def get_TObjectObjectLodashGet2x2[TObject /* <: js.Object */](path: lodashLib.lodashMod.underscoreNs.`__`): LodashGet2x2[TObject] = js.native
   @JSName("get")
-  def get_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey, `object`: TObject): /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any = js.native
+  def get_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey, `object`: TObject): /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any = js.native
   @JSName("get")
-  def get_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey], `object`: TObject): /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any = js.native
+  def get_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey], `object`: TObject): /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any = js.native
   @JSName("get")
   def get_TObjectObjectTKeyStringLodashGet1x1[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey): LodashGet1x1[TObject, TKey] = js.native
   @JSName("get")
@@ -3777,14 +3741,10 @@ trait LoDashFp extends js.Object {
   def get_TUndefOr[T](path: scala.Double): js.UndefOr[T] = js.native
   def groupBy[T](iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[T]): lodashLib.lodashMod.underscoreNs.Dictionary[js.Array[T]] = js.native
   def groupBy[T /* <: js.Object */](
-    iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ],
+    iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any],
     collection: T
   ): lodashLib.lodashMod.underscoreNs.Dictionary[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   def groupBy[T](
     iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[T],
@@ -3800,13 +3760,9 @@ trait LoDashFp extends js.Object {
   def groupBy_TLodashGroupBy1x1[T](iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[T]): LodashGroupBy1x1[T] = js.native
   @JSName("groupBy")
   def groupBy_TObject[T /* <: js.Object */](
-    iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ): lodashLib.lodashMod.underscoreNs.Dictionary[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   @JSName("groupBy")
   def groupBy_TObjectLodashGroupBy2x2[T /* <: js.Object */](iteratee: lodashLib.lodashMod.underscoreNs.`__`): LodashGroupBy2x2[T] = js.native
@@ -3925,13 +3881,11 @@ trait LoDashFp extends js.Object {
   ): lodashLib.lodashMod.underscoreNs.Dictionary[T] = js.native
   def indexBy[T /* <: js.Object */](
     iteratee: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       lodashLib.lodashMod.underscoreNs.PropertyName
     ],
     collection: T
-  ): lodashLib.lodashMod.underscoreNs.Dictionary[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): lodashLib.lodashMod.underscoreNs.Dictionary[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def indexBy[T](
     iteratee: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, lodashLib.lodashMod.underscoreNs.PropertyName],
     collection: lodashLib.lodashMod.underscoreNs.List[T]
@@ -3949,12 +3903,10 @@ trait LoDashFp extends js.Object {
   @JSName("indexBy")
   def indexBy_TObject[T /* <: js.Object */](
     iteratee: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       lodashLib.lodashMod.underscoreNs.PropertyName
     ]
-  ): lodashLib.lodashMod.underscoreNs.Dictionary[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): lodashLib.lodashMod.underscoreNs.Dictionary[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   @JSName("indexBy")
   def indexBy_TObjectLodashKeyBy2x2[T /* <: js.Object */](iteratee: lodashLib.lodashMod.underscoreNs.`__`): LodashKeyBy2x2[T] = js.native
   def indexOf[T](value: T): LodashIndexOf1x1[T] = js.native
@@ -4092,9 +4044,7 @@ trait LoDashFp extends js.Object {
   def invert(`object`: js.Object): lodashLib.lodashMod.underscoreNs.Dictionary[java.lang.String] = js.native
   def invertBy[T](interatee: lodashLib.lodashMod.underscoreNs.ValueIteratee[T]): lodashLib.lodashMod.underscoreNs.Dictionary[js.Array[java.lang.String]] = js.native
   def invertBy[T /* <: js.Object */](
-    interatee: lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ],
+    interatee: lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any],
     `object`: T
   ): lodashLib.lodashMod.underscoreNs.Dictionary[js.Array[java.lang.String]] = js.native
   def invertBy[T](
@@ -4127,9 +4077,7 @@ trait LoDashFp extends js.Object {
   def invertBy_TLodashInvertBy1x1[T](interatee: lodashLib.lodashMod.underscoreNs.ValueIteratee[T]): LodashInvertBy1x1[T] = js.native
   @JSName("invertBy")
   def invertBy_TObject[T /* <: js.Object */](
-    interatee: lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    interatee: lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ): lodashLib.lodashMod.underscoreNs.Dictionary[js.Array[java.lang.String]] = js.native
   @JSName("invertBy")
   def invertBy_TObjectLodashInvertBy2x2[T /* <: js.Object */](interatee: lodashLib.lodashMod.underscoreNs.`__`): LodashInvertBy2x2[T] = js.native
@@ -4172,12 +4120,12 @@ trait LoDashFp extends js.Object {
   def invokeArgsMap(methodName: java.lang.String, args: js.Array[_], collection: js.Object): js.Array[_] = js.native
   def invokeArgsMap(methodName: java.lang.String, args: lodashLib.lodashMod.underscoreNs.`__`): LodashInvokeArgsMap1x5 = js.native
   def invokeArgsMap(methodName: java.lang.String, args: lodashLib.lodashMod.underscoreNs.`__`, collection: js.Object): LodashInvokeArgsMap1x5 = js.native
-  def invokeArgsMap[TResult](method: js.Function1[/* repeated */js.Any, TResult]): LodashInvokeArgsMap2x1[TResult] = js.native
-  def invokeArgsMap[TResult](method: js.Function1[/* repeated */js.Any, TResult], args: js.Array[_]): js.Array[TResult] = js.native
-  def invokeArgsMap[TResult](method: js.Function1[/* repeated */js.Any, TResult], args: js.Array[_], collection: js.Object): js.Array[TResult] = js.native
-  def invokeArgsMap[TResult](method: js.Function1[/* repeated */js.Any, TResult], args: lodashLib.lodashMod.underscoreNs.`__`): LodashInvokeArgsMap2x5[TResult] = js.native
+  def invokeArgsMap[TResult](method: js.Function1[/* repeated */ js.Any, TResult]): LodashInvokeArgsMap2x1[TResult] = js.native
+  def invokeArgsMap[TResult](method: js.Function1[/* repeated */ js.Any, TResult], args: js.Array[_]): js.Array[TResult] = js.native
+  def invokeArgsMap[TResult](method: js.Function1[/* repeated */ js.Any, TResult], args: js.Array[_], collection: js.Object): js.Array[TResult] = js.native
+  def invokeArgsMap[TResult](method: js.Function1[/* repeated */ js.Any, TResult], args: lodashLib.lodashMod.underscoreNs.`__`): LodashInvokeArgsMap2x5[TResult] = js.native
   def invokeArgsMap[TResult](
-    method: js.Function1[/* repeated */js.Any, TResult],
+    method: js.Function1[/* repeated */ js.Any, TResult],
     args: lodashLib.lodashMod.underscoreNs.`__`,
     collection: js.Object
   ): LodashInvokeArgsMap2x5[TResult] = js.native
@@ -4186,61 +4134,50 @@ trait LoDashFp extends js.Object {
   @JSName("invokeArgsMap")
   def invokeArgsMap_LodashInvokeArgsMap1x3(methodName: java.lang.String, args: js.Array[_]): LodashInvokeArgsMap1x3 = js.native
   @JSName("invokeArgsMap")
-  def invokeArgsMap_TResultLodashInvokeArgsMap2x3[TResult](method: js.Function1[/* repeated */js.Any, TResult], args: js.Array[_]): LodashInvokeArgsMap2x3[TResult] = js.native
+  def invokeArgsMap_TResultLodashInvokeArgsMap2x3[TResult](method: js.Function1[/* repeated */ js.Any, TResult], args: js.Array[_]): LodashInvokeArgsMap2x3[TResult] = js.native
   def invokeMap(methodNameOrMethod: lodashLib.lodashMod.underscoreNs.`__`): LodashInvokeMap1x2 = js.native
   def invokeMap(methodNameOrMethod: lodashLib.lodashMod.underscoreNs.`__`, collection: js.Object): LodashInvokeMap1x2 = js.native
   def invokeMap(methodName: java.lang.String): js.Array[_] = js.native
   def invokeMap(methodName: java.lang.String, collection: js.Object): js.Array[_] = js.native
-  def invokeMap[TResult](method: js.Function1[/* repeated */js.Any, TResult]): LodashInvokeMap2x1[TResult] = js.native
-  def invokeMap[TResult](method: js.Function1[/* repeated */js.Any, TResult], collection: js.Object): js.Array[TResult] = js.native
+  def invokeMap[TResult](method: js.Function1[/* repeated */ js.Any, TResult]): LodashInvokeMap2x1[TResult] = js.native
+  def invokeMap[TResult](method: js.Function1[/* repeated */ js.Any, TResult], collection: js.Object): js.Array[TResult] = js.native
   @JSName("invokeMap")
   def invokeMap_LodashInvokeMap1x1(methodName: java.lang.String): LodashInvokeMap1x1 = js.native
   @JSName("invokeMap")
-  def invokeMap_TResultArray[TResult](method: js.Function1[/* repeated */js.Any, TResult]): js.Array[TResult] = js.native
-  def isArguments(value: js.Any): /* is IArguments */scala.Boolean = js.native
-  def isArray(value: js.Any): /* is Array */scala.Boolean = js.native
-  def isArrayBuffer(value: js.Any): /* is ArrayBuffer */scala.Boolean = js.native
-  def isArrayLike(): /* is never */scala.Boolean = js.native
-  def isArrayLike(value: js.Any): /* is Anon_Length */scala.Boolean = js.native
-  def isArrayLike(value: js.Function1[/* repeated */js.Any, _]): /* is never */scala.Boolean = js.native
+  def invokeMap_TResultArray[TResult](method: js.Function1[/* repeated */ js.Any, TResult]): js.Array[TResult] = js.native
+  def isArguments(value: js.Any): /* is std.IArguments */ scala.Boolean = js.native
+  def isArray(value: js.Any): /* is std.Array<any> */ scala.Boolean = js.native
+  def isArrayBuffer(value: js.Any): /* is std.ArrayBuffer */ scala.Boolean = js.native
+  def isArrayLike(): /* is never */ scala.Boolean = js.native
+  def isArrayLike(value: js.Any): /* is lodash.Anon_Length */ scala.Boolean = js.native
+  def isArrayLike(value: js.Function1[/* repeated */ js.Any, _]): /* is never */ scala.Boolean = js.native
   def isArrayLike[T](value: T with java.lang.String with scala.Double): scala.Boolean = js.native
+  def isArrayLikeObject(): /* is never */ scala.Boolean = js.native
+  def isArrayLikeObject(value: java.lang.String): /* is never */ scala.Boolean = js.native
+  def isArrayLikeObject(value: js.Function): /* is never */ scala.Boolean = js.native
   // tslint:disable-next-line:ban-types (type guard doesn't seem to work correctly without the Function type)
-  def isArrayLikeObject(): /* is never */scala.Boolean = js.native
-  // tslint:disable-next-line:ban-types (type guard doesn't seem to work correctly without the Function type)
-  def isArrayLikeObject(value: java.lang.String): /* is never */scala.Boolean = js.native
-  // tslint:disable-next-line:ban-types (type guard doesn't seem to work correctly without the Function type)
-  def isArrayLikeObject(value: js.Function): /* is never */scala.Boolean = js.native
-  // tslint:disable-next-line:ban-types (type guard doesn't seem to work correctly without the Function type)
-  def isArrayLikeObject(value: js.Function1[/* repeated */js.Any, _]): /* is never */scala.Boolean = js.native
-  // tslint:disable-next-line:ban-types (type guard doesn't seem to work correctly without the Function type)
-  def isArrayLikeObject(value: scala.Boolean): /* is never */scala.Boolean = js.native
-  // tslint:disable-next-line:ban-types (type guard doesn't seem to work correctly without the Function type)
-  def isArrayLikeObject(value: scala.Double): /* is never */scala.Boolean = js.native
+  def isArrayLikeObject(value: js.Function1[/* repeated */ js.Any, _]): /* is never */ scala.Boolean = js.native
+  def isArrayLikeObject(value: scala.Boolean): /* is never */ scala.Boolean = js.native
+  def isArrayLikeObject(value: scala.Double): /* is never */ scala.Boolean = js.native
   // tslint:disable-next-line:ban-types (type guard doesn't seem to work correctly without the Function type)
   def isArrayLikeObject[T /* <: js.Object */](value: T): scala.Boolean = js.native
   @JSName("isArrayLikeObject")
   def isArrayLikeObject_T[T](value: T with java.lang.String with scala.Double): scala.Boolean = js.native
-  // tslint:disable-next-line:ban-types (type guard doesn't seem to work correctly without the Function type)
   @JSName("isArrayLikeObject")
   def isArrayLikeObject_TObject[T /* <: js.Object */](): scala.Boolean = js.native
-  // tslint:disable-next-line:ban-types (type guard doesn't seem to work correctly without the Function type)
   @JSName("isArrayLikeObject")
   def isArrayLikeObject_TObject[T /* <: js.Object */](value: java.lang.String): scala.Boolean = js.native
-  // tslint:disable-next-line:ban-types (type guard doesn't seem to work correctly without the Function type)
   @JSName("isArrayLikeObject")
   def isArrayLikeObject_TObject[T /* <: js.Object */](value: js.Function): scala.Boolean = js.native
-  // tslint:disable-next-line:ban-types (type guard doesn't seem to work correctly without the Function type)
   @JSName("isArrayLikeObject")
-  def isArrayLikeObject_TObject[T /* <: js.Object */](value: js.Function1[/* repeated */js.Any, _]): scala.Boolean = js.native
-  // tslint:disable-next-line:ban-types (type guard doesn't seem to work correctly without the Function type)
+  def isArrayLikeObject_TObject[T /* <: js.Object */](value: js.Function1[/* repeated */ js.Any, _]): scala.Boolean = js.native
   @JSName("isArrayLikeObject")
   def isArrayLikeObject_TObject[T /* <: js.Object */](value: scala.Boolean): scala.Boolean = js.native
-  // tslint:disable-next-line:ban-types (type guard doesn't seem to work correctly without the Function type)
   @JSName("isArrayLikeObject")
   def isArrayLikeObject_TObject[T /* <: js.Object */](value: scala.Double): scala.Boolean = js.native
-  def isBoolean(value: js.Any): /* is boolean */scala.Boolean = js.native
+  def isBoolean(value: js.Any): /* is boolean */ scala.Boolean = js.native
   def isBuffer(value: js.Any): scala.Boolean = js.native
-  def isDate(value: js.Any): /* is Date */scala.Boolean = js.native
+  def isDate(value: js.Any): /* is std.Date */ scala.Boolean = js.native
   def isElement(value: js.Any): scala.Boolean = js.native
   def isEmpty(value: js.Any): scala.Boolean = js.native
   def isEqual(value: js.Any): LodashIsEqual1x1 = js.native
@@ -4261,12 +4198,12 @@ trait LoDashFp extends js.Object {
     value: lodashLib.lodashMod.underscoreNs.`__`,
     other: js.Any
   ): LodashIsEqualWith1x4 = js.native
-  def isError(value: js.Any): /* is Error */scala.Boolean = js.native
+  def isError(value: js.Any): /* is std.Error */ scala.Boolean = js.native
   def isFinite(value: js.Any): scala.Boolean = js.native
   def isFunction(value: js.Any): scala.Boolean = js.native
   def isInteger(value: js.Any): scala.Boolean = js.native
   def isLength(value: js.Any): scala.Boolean = js.native
-  def isMap(value: js.Any): /* is Map */scala.Boolean = js.native
+  def isMap(value: js.Any): /* is lodash.lodash.Global.Map<any, any> */ scala.Boolean = js.native
   def isMatch(source: js.Object): LodashIsMatch1x1 = js.native
   def isMatch(source: js.Object, `object`: js.Object): scala.Boolean = js.native
   def isMatch(source: lodashLib.lodashMod.underscoreNs.`__`, `object`: js.Object): LodashIsMatch1x2 = js.native
@@ -4292,43 +4229,41 @@ trait LoDashFp extends js.Object {
   def isNaN(value: js.Any): scala.Boolean = js.native
   def isNative(value: js.Any): scala.Boolean = js.native
   def isNil(value: js.Any): scala.Boolean = js.native
-  def isNull(value: js.Any): /* is null */scala.Boolean = js.native
-  def isNumber(value: js.Any): /* is number */scala.Boolean = js.native
+  def isNull(value: js.Any): /* is null */ scala.Boolean = js.native
+  def isNumber(value: js.Any): /* is number */ scala.Boolean = js.native
   def isObject(value: js.Any): scala.Boolean = js.native
   def isObjectLike(value: js.Any): scala.Boolean = js.native
   def isPlainObject(value: js.Any): scala.Boolean = js.native
-  def isRegExp(value: js.Any): /* is RegExp */scala.Boolean = js.native
+  def isRegExp(value: js.Any): /* is std.RegExp */ scala.Boolean = js.native
   def isSafeInteger(value: js.Any): scala.Boolean = js.native
-  def isSet(value: js.Any): /* is Set */scala.Boolean = js.native
-  def isString(value: js.Any): /* is string */scala.Boolean = js.native
+  def isSet(value: js.Any): /* is lodash.lodash.Global.Set<any> */ scala.Boolean = js.native
+  def isString(value: js.Any): /* is string */ scala.Boolean = js.native
   def isSymbol(value: js.Any): scala.Boolean = js.native
   def isTypedArray(value: js.Any): scala.Boolean = js.native
-  def isUndefined(value: js.Any): /* is undefined */scala.Boolean = js.native
-  def isWeakMap(value: js.Any): /* is WeakMap */scala.Boolean = js.native
-  def isWeakSet(value: js.Any): /* is WeakSet */scala.Boolean = js.native
-  def iteratee(func: java.lang.String): js.Function1[/* repeated */js.Any, _] = js.native
-  def iteratee(func: js.Object): js.Function1[/* repeated */js.Any, _] = js.native
-  def iteratee[TFunction /* <: js.Function1[/* repeated */js.Any, _] */](func: TFunction): TFunction = js.native
+  def isUndefined(value: js.Any): /* is undefined */ scala.Boolean = js.native
+  def isWeakMap(value: js.Any): /* is lodash.lodash.Global.WeakMap<object, any> */ scala.Boolean = js.native
+  def isWeakSet(value: js.Any): /* is lodash.lodash.Global.WeakSet<object> */ scala.Boolean = js.native
+  def iteratee(func: java.lang.String): js.Function1[/* repeated */ js.Any, _] = js.native
+  def iteratee(func: js.Object): js.Function1[/* repeated */ js.Any, _] = js.native
+  def iteratee[TFunction /* <: js.Function1[/* repeated */ js.Any, _] */](func: TFunction): TFunction = js.native
   def join(separator: java.lang.String): LodashJoin1x1 = js.native
   def join(separator: java.lang.String, array: lodashLib.lodashMod.underscoreNs.List[_]): java.lang.String = js.native
   def join(separator: lodashLib.lodashMod.underscoreNs.`__`): LodashJoin1x2 = js.native
   def join(separator: lodashLib.lodashMod.underscoreNs.`__`, array: lodashLib.lodashMod.underscoreNs.List[_]): LodashJoin1x2 = js.native
   @JSName("join")
   def join_String(separator: java.lang.String): java.lang.String = js.native
-  def juxt[TResult](iteratees: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */_, TResult]]): js.Function1[/* repeated */js.Any, js.Array[TResult]] = js.native
+  def juxt[TResult](iteratees: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ _, TResult]]): js.Function1[/* repeated */ js.Any, js.Array[TResult]] = js.native
   def kebabCase(string: java.lang.String): java.lang.String = js.native
   def keyBy[T](
     iteratee: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, lodashLib.lodashMod.underscoreNs.PropertyName]
   ): lodashLib.lodashMod.underscoreNs.Dictionary[T] = js.native
   def keyBy[T /* <: js.Object */](
     iteratee: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       lodashLib.lodashMod.underscoreNs.PropertyName
     ],
     collection: T
-  ): lodashLib.lodashMod.underscoreNs.Dictionary[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): lodashLib.lodashMod.underscoreNs.Dictionary[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def keyBy[T](
     iteratee: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, lodashLib.lodashMod.underscoreNs.PropertyName],
     collection: lodashLib.lodashMod.underscoreNs.List[T]
@@ -4346,12 +4281,10 @@ trait LoDashFp extends js.Object {
   @JSName("keyBy")
   def keyBy_TObject[T /* <: js.Object */](
     iteratee: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       lodashLib.lodashMod.underscoreNs.PropertyName
     ]
-  ): lodashLib.lodashMod.underscoreNs.Dictionary[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): lodashLib.lodashMod.underscoreNs.Dictionary[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   @JSName("keyBy")
   def keyBy_TObjectLodashKeyBy2x2[T /* <: js.Object */](iteratee: lodashLib.lodashMod.underscoreNs.`__`): LodashKeyBy2x2[T] = js.native
   def keys(`object`: js.Any): js.Array[java.lang.String] = js.native
@@ -4436,22 +4369,14 @@ trait LoDashFp extends js.Object {
     iteratee: lodashLib.lodashMod.underscoreNs.`__`,
     collection: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]
   ): LodashMap4x2[T] = js.native
-  def map[T, K /* <: java.lang.String */](iteratee: K): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-  ] = js.native
-  def map[T, K /* <: java.lang.String */](iteratee: K, collection: lodashLib.lodashMod.underscoreNs.Dictionary[T]): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-  ] = js.native
-  def map[T, K /* <: java.lang.String */](iteratee: K, collection: lodashLib.lodashMod.underscoreNs.List[T]): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-  ] = js.native
-  def map[T, K /* <: java.lang.String */](iteratee: K, collection: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-  ] = js.native
+  def map[T, K /* <: java.lang.String */](iteratee: K): js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
+  def map[T, K /* <: java.lang.String */](iteratee: K, collection: lodashLib.lodashMod.underscoreNs.Dictionary[T]): js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
+  def map[T, K /* <: java.lang.String */](iteratee: K, collection: lodashLib.lodashMod.underscoreNs.List[T]): js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
+  def map[T, K /* <: java.lang.String */](iteratee: K, collection: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
   def map[T, TResult](iteratee: js.Function1[/* value */ T, TResult]): js.Array[TResult] = js.native
   def map[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       TResult
     ],
     collection: T
@@ -4462,9 +4387,7 @@ trait LoDashFp extends js.Object {
     collection: lodashLib.lodashMod.underscoreNs.List[T]
   ): js.Array[TResult] = js.native
   def mapKeys(iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[java.lang.String]): LodashMapKeys2x1 = js.native
-  def mapKeys[T /* <: js.Object */](iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[java.lang.String], `object`: T): lodashLib.lodashMod.underscoreNs.Dictionary[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  def mapKeys[T /* <: js.Object */](iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[java.lang.String], `object`: T): lodashLib.lodashMod.underscoreNs.Dictionary[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def mapKeys[T](
     iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[scala.Double],
     `object`: lodashLib.lodashMod.underscoreNs.List[T]
@@ -4480,9 +4403,7 @@ trait LoDashFp extends js.Object {
   @JSName("mapKeys")
   def mapKeys_TDictionary[T](iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[scala.Double]): lodashLib.lodashMod.underscoreNs.Dictionary[T] = js.native
   @JSName("mapKeys")
-  def mapKeys_TObjectDictionary[T /* <: js.Object */](iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[java.lang.String]): lodashLib.lodashMod.underscoreNs.Dictionary[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  def mapKeys_TObjectDictionary[T /* <: js.Object */](iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[java.lang.String]): lodashLib.lodashMod.underscoreNs.Dictionary[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   @JSName("mapKeys")
   def mapKeys_TObjectLodashMapKeys2x2[T /* <: js.Object */](iteratee: lodashLib.lodashMod.underscoreNs.`__`): LodashMapKeys2x2[T] = js.native
   def mapValues(callback: lodashLib.lodashMod.underscoreNs.`__`): LodashMapValues1x2 = js.native
@@ -4508,7 +4429,7 @@ trait LoDashFp extends js.Object {
   def mapValues[T](iteratee: js.Object, obj: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): lodashLib.lodashMod.underscoreNs.Dictionary[scala.Boolean] = js.native
   def mapValues[T /* <: js.Object */, TResult](
     callback: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       TResult
     ],
     obj: T
@@ -4521,15 +4442,9 @@ trait LoDashFp extends js.Object {
     callback: js.Function1[/* value */ T, TResult],
     obj: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]
   ): lodashLib.lodashMod.underscoreNs.Dictionary[TResult] = js.native
-  def mapValues[T, TKey /* <: java.lang.String */](iteratee: TKey): lodashLib.lodashMod.underscoreNs.Dictionary[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(TKey))) */js.Any
-  ] = js.native
-  def mapValues[T, TKey /* <: java.lang.String */](iteratee: TKey, obj: lodashLib.lodashMod.underscoreNs.Dictionary[T]): lodashLib.lodashMod.underscoreNs.Dictionary[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(TKey))) */js.Any
-  ] = js.native
-  def mapValues[T, TKey /* <: java.lang.String */](iteratee: TKey, obj: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): lodashLib.lodashMod.underscoreNs.Dictionary[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(TKey))) */js.Any
-  ] = js.native
+  def mapValues[T, TKey /* <: java.lang.String */](iteratee: TKey): lodashLib.lodashMod.underscoreNs.Dictionary[/* import warning: ImportType.apply Failed type conversion: T[TKey] */ js.Any] = js.native
+  def mapValues[T, TKey /* <: java.lang.String */](iteratee: TKey, obj: lodashLib.lodashMod.underscoreNs.Dictionary[T]): lodashLib.lodashMod.underscoreNs.Dictionary[/* import warning: ImportType.apply Failed type conversion: T[TKey] */ js.Any] = js.native
+  def mapValues[T, TKey /* <: java.lang.String */](iteratee: TKey, obj: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): lodashLib.lodashMod.underscoreNs.Dictionary[/* import warning: ImportType.apply Failed type conversion: T[TKey] */ js.Any] = js.native
   @JSName("mapValues")
   def mapValues_TDictionary[T](iteratee: java.lang.String): lodashLib.lodashMod.underscoreNs.Dictionary[_] = js.native
   @JSName("mapValues")
@@ -4545,14 +4460,14 @@ trait LoDashFp extends js.Object {
   @JSName("mapValues")
   def `mapValues_TObjectTResult<intersection>`[T /* <: js.Object */, TResult](
     callback: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       TResult
     ]
   ): lodashLib.lodashLibStrings.LoDashFp with js.Any = js.native
   @JSName("mapValues")
   def mapValues_TObjectTResultLodashMapValues3x1[T /* <: js.Object */, TResult](
     callback: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       TResult
     ]
   ): LodashMapValues3x1[T, TResult] = js.native
@@ -4584,14 +4499,14 @@ trait LoDashFp extends js.Object {
   @JSName("map")
   def map_TObjectTResult[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       TResult
     ]
   ): js.Array[TResult] = js.native
   @JSName("map")
   def map_TObjectTResultLodashMap3x1[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       TResult
     ]
   ): LodashMap3x1[T, TResult] = js.native
@@ -4631,7 +4546,7 @@ trait LoDashFp extends js.Object {
   ): LodashMeanBy1x2[T] = js.native
   @JSName("meanBy")
   def meanBy_TLodashMeanBy1x1[T](iteratee: lodashLib.lodashMod.underscoreNs.ValueIteratee[T]): LodashMeanBy1x1[T] = js.native
-  def memoize[T /* <: js.Function1[/* repeated */js.Any, _] */](func: T): T with lodashLib.lodashMod.underscoreNs.MemoizedFunction = js.native
+  def memoize[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T): T with lodashLib.lodashMod.underscoreNs.MemoizedFunction = js.native
   def merge[TObject](`object`: TObject): LodashMerge1x1[TObject] = js.native
   def merge[TSource](`object`: lodashLib.lodashMod.underscoreNs.`__`, source: TSource): LodashMerge1x2[TSource] = js.native
   def merge[TObject, TSource](`object`: TObject, source: TSource): TObject with TSource = js.native
@@ -4681,22 +4596,22 @@ trait LoDashFp extends js.Object {
   def multiply(multiplier: lodashLib.lodashMod.underscoreNs.`__`, multiplicand: scala.Double): LodashMultiply1x2 = js.native
   def multiply(multiplier: scala.Double): LodashMultiply1x1 = js.native
   def multiply(multiplier: scala.Double, multiplicand: scala.Double): scala.Double = js.native
-  def nAry(n: lodashLib.lodashMod.underscoreNs.`__`, func: js.Function1[/* repeated */js.Any, _]): LodashAry1x2 = js.native
+  def nAry(n: lodashLib.lodashMod.underscoreNs.`__`, func: js.Function1[/* repeated */ js.Any, _]): LodashAry1x2 = js.native
   def nAry(n: scala.Double): LodashAry1x1 = js.native
-  def nAry(n: scala.Double, func: js.Function1[/* repeated */js.Any, _]): js.Function1[/* repeated */js.Any, _] = js.native
+  def nAry(n: scala.Double, func: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
   def negate(predicate: js.Function0[scala.Boolean]): js.Function0[scala.Boolean] = js.native
-  def negate(predicate: js.Function1[/* repeated */js.Any, _]): js.Function1[/* repeated */js.Any, scala.Boolean] = js.native
+  def negate(predicate: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, scala.Boolean] = js.native
   def negate[A1, A2](predicate: js.Function2[/* a1 */ A1, /* a2 */ A2, scala.Boolean]): js.Function2[/* a1 */ A1, /* a2 */ A2, scala.Boolean] = js.native
   @JSName("negate")
   def negate_A1[A1](predicate: js.Function1[/* a1 */ A1, scala.Boolean]): js.Function1[/* a1 */ A1, scala.Boolean] = js.native
-  def noConflict(): js.Object = js.native
+  def noConflict(): lodashLib.lodashMod.underscoreNs.LoDashStatic = js.native
   def noop(args: js.Any*): scala.Unit = js.native
   def now(): scala.Double = js.native
   def nth(n: scala.Double): LodashNth1x1 = js.native
   def nth[T](n: lodashLib.lodashMod.underscoreNs.`__`): LodashNth1x2[T] = js.native
   def nth[T](n: lodashLib.lodashMod.underscoreNs.`__`, array: lodashLib.lodashMod.underscoreNs.List[T]): LodashNth1x2[T] = js.native
   def nth[T](n: scala.Double, array: lodashLib.lodashMod.underscoreNs.List[T]): js.UndefOr[T] = js.native
-  def nthArg(n: scala.Double): js.Function1[/* repeated */js.Any, _] = js.native
+  def nthArg(n: scala.Double): js.Function1[/* repeated */ js.Any, _] = js.native
   @JSName("nth")
   def nth_TUndefOr[T](n: scala.Double): js.UndefOr[T] = js.native
   def omit(paths: lodashLib.lodashMod.underscoreNs.Many[lodashLib.lodashMod.underscoreNs.PropertyName]): LodashOmit1x1 = js.native
@@ -4734,9 +4649,7 @@ trait LoDashFp extends js.Object {
   ): lodashLib.lodashMod.underscoreNs.PartialObject[T] = js.native
   def omitBy[T](predicate: lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[T]): lodashLib.lodashMod.underscoreNs.NumericDictionary[T] = js.native
   def omitBy[T /* <: js.Object */](
-    predicate: lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ],
+    predicate: lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any],
     `object`: T
   ): lodashLib.lodashMod.underscoreNs.PartialObject[T] = js.native
   def omitBy[T](
@@ -4767,9 +4680,7 @@ trait LoDashFp extends js.Object {
   def omitBy_TObjectLodashOmitBy3x2[T /* <: js.Object */](predicate: lodashLib.lodashMod.underscoreNs.`__`): LodashOmitBy3x2[T] = js.native
   @JSName("omitBy")
   def omitBy_TObjectPartialObject[T /* <: js.Object */](
-    predicate: lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    predicate: lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ): lodashLib.lodashMod.underscoreNs.PartialObject[T] = js.native
   @JSName("omit")
   def omit_TAnyKindOfDictionaryT[T /* <: lodashLib.lodashMod.underscoreNs.AnyKindOfDictionary */](paths: lodashLib.lodashMod.underscoreNs.Many[lodashLib.lodashMod.underscoreNs.PropertyName]): T = js.native
@@ -4790,7 +4701,7 @@ trait LoDashFp extends js.Object {
     paths: lodashLib.lodashMod.underscoreNs.Many[lodashLib.lodashMod.underscoreNs.PropertyName],
     `object`: T
   ): lodashLib.lodashMod.underscoreNs.PartialObject[T] = js.native
-  def once[T /* <: js.Function1[/* repeated */js.Any, _] */](func: T): T = js.native
+  def once[T /* <: js.Function1[/* repeated */ js.Any, _] */](func: T): T = js.native
   def orderBy(
     iteratees: lodashLib.lodashMod.underscoreNs.`__`,
     orders: lodashLib.lodashMod.underscoreNs.Many[scala.Boolean | lodashLib.lodashLibStrings.asc | lodashLib.lodashLibStrings.desc]
@@ -4805,17 +4716,13 @@ trait LoDashFp extends js.Object {
   def orderBy[T /* <: js.Object */](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
       (js.Function1[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+        /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
         lodashLib.lodashMod.underscoreNs.NotVoid
-      ]) | (lodashLib.lodashMod.underscoreNs.ValueIteratee[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-      ])
+      ]) | (lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any])
     ],
     orders: lodashLib.lodashMod.underscoreNs.Many[scala.Boolean | lodashLib.lodashLibStrings.asc | lodashLib.lodashLibStrings.desc],
     collection: T
-  ): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def orderBy[T](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
       (js.Function1[/* value */ T, lodashLib.lodashMod.underscoreNs.NotVoid]) | lodashLib.lodashMod.underscoreNs.ValueIteratee[T]
@@ -4829,9 +4736,7 @@ trait LoDashFp extends js.Object {
   ): LodashOrderBy2x5[T] = js.native
   def orderBy[T /* <: js.Object */](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
-      lodashLib.lodashMod.underscoreNs.ValueIteratee[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-      ]
+      lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
     ],
     orders: lodashLib.lodashMod.underscoreNs.`__`,
     collection: T
@@ -4900,21 +4805,17 @@ trait LoDashFp extends js.Object {
   def orderBy_TObjectArray[T /* <: js.Object */](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
       (js.Function1[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+        /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
         lodashLib.lodashMod.underscoreNs.NotVoid
-      ]) | (lodashLib.lodashMod.underscoreNs.ValueIteratee[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-      ])
+      ]) | (lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any])
     ],
     orders: lodashLib.lodashMod.underscoreNs.Many[scala.Boolean | lodashLib.lodashLibStrings.asc | lodashLib.lodashLibStrings.desc]
-  ): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   @JSName("orderBy")
   def orderBy_TObjectLodashOrderBy3x5[T /* <: js.Object */](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
       js.Function1[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+        /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
         lodashLib.lodashMod.underscoreNs.NotVoid
       ]
     ],
@@ -4924,7 +4825,7 @@ trait LoDashFp extends js.Object {
   def orderBy_TObjectLodashOrderBy3x5[T /* <: js.Object */](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
       js.Function1[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+        /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
         lodashLib.lodashMod.underscoreNs.NotVoid
       ]
     ],
@@ -4939,24 +4840,22 @@ trait LoDashFp extends js.Object {
   @JSName("orderBy")
   def orderBy_TObjectLodashOrderBy4x5[T /* <: js.Object */](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
-      lodashLib.lodashMod.underscoreNs.ValueIteratee[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-      ]
+      lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
     ],
     orders: lodashLib.lodashMod.underscoreNs.`__`
   ): LodashOrderBy4x5[T] = js.native
-  def over[TResult](iteratees: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */_, TResult]]): js.Function1[/* repeated */js.Any, js.Array[TResult]] = js.native
-  def overArgs(func: js.Function1[/* repeated */js.Any, _]): LodashOverArgs1x1 = js.native
+  def over[TResult](iteratees: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ _, TResult]]): js.Function1[/* repeated */ js.Any, js.Array[TResult]] = js.native
+  def overArgs(func: js.Function1[/* repeated */ js.Any, _]): LodashOverArgs1x1 = js.native
   def overArgs(
-    func: js.Function1[/* repeated */js.Any, _],
-    transforms: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */_, _]]
-  ): js.Function1[/* repeated */js.Any, _] = js.native
+    func: js.Function1[/* repeated */ js.Any, _],
+    transforms: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ _, _]]
+  ): js.Function1[/* repeated */ js.Any, _] = js.native
   def overArgs(
     func: lodashLib.lodashMod.underscoreNs.`__`,
-    transforms: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */_, _]]
+    transforms: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ _, _]]
   ): LodashOverArgs1x2 = js.native
-  def overEvery[T](predicates: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */T, scala.Boolean]]): js.Function1[/* repeated */T, scala.Boolean] = js.native
-  def overSome[T](predicates: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */T, scala.Boolean]]): js.Function1[/* repeated */T, scala.Boolean] = js.native
+  def overEvery[T](predicates: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ T, scala.Boolean]]): js.Function1[/* repeated */ T, scala.Boolean] = js.native
+  def overSome[T](predicates: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ T, scala.Boolean]]): js.Function1[/* repeated */ T, scala.Boolean] = js.native
   def pad(length: lodashLib.lodashMod.underscoreNs.`__`, string: java.lang.String): LodashPad1x2 = js.native
   def pad(length: scala.Double): LodashPad1x1 = js.native
   def pad(length: scala.Double, string: java.lang.String): java.lang.String = js.native
@@ -5002,8 +4901,8 @@ trait LoDashFp extends js.Object {
   def parseInt(radix: lodashLib.lodashMod.underscoreNs.`__`, string: java.lang.String): LodashParseInt1x2 = js.native
   def parseInt(radix: scala.Double): LodashParseInt1x1 = js.native
   def parseInt(radix: scala.Double, string: java.lang.String): scala.Double = js.native
-  def partial(func: js.Function1[/* repeated */js.Any, _]): LodashPartial27x1 = js.native
-  def partial(func: js.Function1[/* repeated */js.Any, _], args: js.Array[_]): js.Function1[/* repeated */js.Any, _] = js.native
+  def partial(func: js.Function1[/* repeated */ js.Any, _]): LodashPartial27x1 = js.native
+  def partial(func: js.Function1[/* repeated */ js.Any, _], args: js.Array[_]): js.Function1[/* repeated */ js.Any, _] = js.native
   def partial(func: lodashLib.lodashMod.underscoreNs.`__`, args: js.Array[_]): LodashPartial27x2 = js.native
   def partial[T2](
     func: lodashLib.lodashMod.underscoreNs.`__`,
@@ -5047,8 +4946,8 @@ trait LoDashFp extends js.Object {
     func: lodashLib.lodashMod.underscoreNs.Function4[T1, T2, T3, T4, R],
     arg1: js.Tuple4[T1, T2, T3, T4]
   ): lodashLib.lodashMod.underscoreNs.Function0[R] = js.native
-  def partialRight(func: js.Function1[/* repeated */js.Any, _]): LodashPartialRight27x1 = js.native
-  def partialRight(func: js.Function1[/* repeated */js.Any, _], args: js.Array[_]): js.Function1[/* repeated */js.Any, _] = js.native
+  def partialRight(func: js.Function1[/* repeated */ js.Any, _]): LodashPartialRight27x1 = js.native
+  def partialRight(func: js.Function1[/* repeated */ js.Any, _], args: js.Array[_]): js.Function1[/* repeated */ js.Any, _] = js.native
   def partialRight(func: lodashLib.lodashMod.underscoreNs.`__`, args: js.Array[_]): LodashPartialRight27x2 = js.native
   def partialRight[T1](
     func: lodashLib.lodashMod.underscoreNs.`__`,
@@ -5361,17 +5260,11 @@ trait LoDashFp extends js.Object {
   ): LodashPartial23x2[T3, T4] = js.native
   def partition[T](callback: lodashLib.lodashMod.underscoreNs.ValueIteratee[T]): js.Tuple2[js.Array[T], js.Array[T]] = js.native
   def partition[T /* <: js.Object */](
-    callback: lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ],
+    callback: lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any],
     collection: T
   ): js.Tuple2[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ], 
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any], 
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   def partition[T](
     callback: lodashLib.lodashMod.underscoreNs.ValueIteratee[T],
@@ -5387,16 +5280,10 @@ trait LoDashFp extends js.Object {
   def partition_TLodashPartition1x1[T](callback: lodashLib.lodashMod.underscoreNs.ValueIteratee[T]): LodashPartition1x1[T] = js.native
   @JSName("partition")
   def partition_TObject[T /* <: js.Object */](
-    callback: lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    callback: lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ): js.Tuple2[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ], 
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any], 
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   @JSName("partition")
   def partition_TObjectLodashPartition2x2[T /* <: js.Object */](callback: lodashLib.lodashMod.underscoreNs.`__`): LodashPartition2x2[T] = js.native
@@ -5412,16 +5299,16 @@ trait LoDashFp extends js.Object {
   ): LodashPath3x2[T] = js.native
   def path[T](path: scala.Double, `object`: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): js.UndefOr[T] = js.native
   def path[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def path[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey, `object`: TObject): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def path[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey]): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def path[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey], `object`: TObject): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def pathEq(path: lodashLib.lodashMod.underscoreNs.PropertyPath): LodashMatchesProperty1x1 = js.native
   def pathEq[T](path: lodashLib.lodashMod.underscoreNs.PropertyPath, srcValue: T): js.Function1[/* value */ js.Any, scala.Boolean] = js.native
@@ -5481,9 +5368,9 @@ trait LoDashFp extends js.Object {
   def pathOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */](defaultValue: lodashLib.lodashMod.underscoreNs.`__`, path: js.Array[TKey]): LodashPathOr1x6[TObject, TKey] = js.native
   def pathOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */](defaultValue: lodashLib.lodashMod.underscoreNs.`__`, path: js.Array[TKey], `object`: TObject): LodashPathOr1x6[TObject, TKey] = js.native
   def pathOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: TKey): LodashPathOr1x3[TObject, TKey, TDefault] = js.native
-  def pathOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: TKey, `object`: TObject): (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any) | TDefault = js.native
+  def pathOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: TKey, `object`: TObject): (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault = js.native
   def pathOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: js.Array[TKey]): LodashPathOr1x3[TObject, TKey, TDefault] = js.native
-  def pathOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: js.Array[TKey], `object`: TObject): (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any) | TDefault = js.native
+  def pathOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: js.Array[TKey], `object`: TObject): (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault = js.native
   @JSName("pathOr")
   def pathOr_LodashPathOr3x6(
     defaultValue: lodashLib.lodashMod.underscoreNs.`__`,
@@ -5504,9 +5391,9 @@ trait LoDashFp extends js.Object {
   @JSName("pathOr")
   def pathOr_TObjectObjectTKeyStringLodashPathOr1x2[TObject /* <: js.Object */, TKey /* <: java.lang.String */](defaultValue: lodashLib.lodashMod.underscoreNs.`__`, path: js.Array[TKey]): LodashPathOr1x2[TObject, TKey] = js.native
   @JSName("pathOr")
-  def `pathOr_TObjectObjectTKeyStringTDefault<union>`[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: TKey): (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any) | TDefault = js.native
+  def `pathOr_TObjectObjectTKeyStringTDefault<union>`[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: TKey): (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault = js.native
   @JSName("pathOr")
-  def `pathOr_TObjectObjectTKeyStringTDefault<union>`[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: js.Array[TKey]): (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any) | TDefault = js.native
+  def `pathOr_TObjectObjectTKeyStringTDefault<union>`[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: js.Array[TKey]): (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault = js.native
   @JSName("pathOr")
   def `pathOr_TTDefault<union>`[T, TDefault](defaultValue: TDefault, path: scala.Double): T | TDefault = js.native
   @JSName("pathOr")
@@ -5523,9 +5410,9 @@ trait LoDashFp extends js.Object {
   @JSName("path")
   def path_TObjectObjectLodashPath2x2[TObject /* <: js.Object */](path: lodashLib.lodashMod.underscoreNs.`__`, `object`: TObject): LodashPath2x2[TObject] = js.native
   @JSName("path")
-  def path_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey, `object`: TObject): /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any = js.native
+  def path_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey, `object`: TObject): /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any = js.native
   @JSName("path")
-  def path_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey], `object`: TObject): /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any = js.native
+  def path_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey], `object`: TObject): /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any = js.native
   @JSName("path")
   def path_TObjectObjectTKeyStringLodashPath1x1[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey): LodashPath1x1[TObject, TKey] = js.native
   @JSName("path")
@@ -5537,9 +5424,7 @@ trait LoDashFp extends js.Object {
   @JSName("path")
   def path_UndefOr(path: lodashLib.lodashMod.underscoreNs.PropertyPath): js.UndefOr[scala.Nothing] = js.native
   def paths(props: lodashLib.lodashMod.underscoreNs.PropertyPath): LodashAt1x1 = js.native
-  def paths[T /* <: js.Object */](props: lodashLib.lodashMod.underscoreNs.Many[java.lang.String], `object`: T): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  def paths[T /* <: js.Object */](props: lodashLib.lodashMod.underscoreNs.Many[java.lang.String], `object`: T): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def paths[T](
     props: lodashLib.lodashMod.underscoreNs.PropertyPath,
     `object`: lodashLib.lodashMod.underscoreNs.Dictionary[T]
@@ -5568,9 +5453,7 @@ trait LoDashFp extends js.Object {
   @JSName("paths")
   def paths_TLodashAt1x2[T](props: lodashLib.lodashMod.underscoreNs.`__`): LodashAt1x2[T] = js.native
   @JSName("paths")
-  def paths_TObjectArray[T /* <: js.Object */](props: lodashLib.lodashMod.underscoreNs.Many[java.lang.String]): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  def paths_TObjectArray[T /* <: js.Object */](props: lodashLib.lodashMod.underscoreNs.Many[java.lang.String]): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   @JSName("paths")
   def paths_TObjectLodashAt2x1[T /* <: js.Object */](props: lodashLib.lodashMod.underscoreNs.Many[java.lang.String]): LodashAt2x1[T] = js.native
   def pick(props: lodashLib.lodashMod.underscoreNs.PropertyPath): LodashPick2x1 = js.native
@@ -5591,9 +5474,7 @@ trait LoDashFp extends js.Object {
   def pickAll_TPartialDeep[T](props: lodashLib.lodashMod.underscoreNs.PropertyPath): lodashLib.lodashMod.underscoreNs.PartialDeep[T] = js.native
   def pickBy[T](predicate: lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[T]): lodashLib.lodashMod.underscoreNs.NumericDictionary[T] = js.native
   def pickBy[T /* <: js.Object */](
-    predicate: lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ],
+    predicate: lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any],
     `object`: T
   ): lodashLib.lodashMod.underscoreNs.PartialObject[T] = js.native
   def pickBy[T](
@@ -5633,9 +5514,7 @@ trait LoDashFp extends js.Object {
   def pickBy_TObjectLodashPickBy5x2[T /* <: js.Object */](predicate: lodashLib.lodashMod.underscoreNs.`__`): LodashPickBy5x2[T] = js.native
   @JSName("pickBy")
   def pickBy_TObjectPartialObject[T /* <: js.Object */](
-    predicate: lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    predicate: lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ): lodashLib.lodashMod.underscoreNs.PartialObject[T] = js.native
   @JSName("pickBy")
   def pickBy_TSTDictionary[T, S /* <: T */](predicate: lodashLib.lodashMod.underscoreNs.ValueKeyIterateeTypeGuard[T, S]): lodashLib.lodashMod.underscoreNs.Dictionary[S] = js.native
@@ -5649,7 +5528,7 @@ trait LoDashFp extends js.Object {
   def pick_TObjectUStringPick[T /* <: js.Object */, U /* <: java.lang.String */](props: lodashLib.lodashMod.underscoreNs.Many[U], `object`: T): stdLib.Pick[T, U] = js.native
   @JSName("pick")
   def pick_TPartialDeep[T](props: lodashLib.lodashMod.underscoreNs.PropertyPath): lodashLib.lodashMod.underscoreNs.PartialDeep[T] = js.native
-  def pipe(funcs: js.Array[lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */_, _]]]): js.Function1[/* repeated */js.Any, _] = js.native
+  def pipe(funcs: js.Array[lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ _, _]]]): js.Function1[/* repeated */ js.Any, _] = js.native
   def pipe[R1, R2](f1: js.Function0[R1], f2: js.Function1[/* a */ R1, R2]): js.Function0[R2] = js.native
   def pipe[R1, R2, R3](f1: js.Function0[R1], f2: js.Function1[/* a */ R1, R2], f3: js.Function1[/* a */ R2, R3]): js.Function0[R3] = js.native
   def pipe[A1, R1, R2](f1: js.Function1[/* a1 */ A1, R1], f2: js.Function1[/* a */ R1, R2]): js.Function1[/* a1 */ A1, R2] = js.native
@@ -5715,9 +5594,9 @@ trait LoDashFp extends js.Object {
     f2: js.Function1[/* a */ R1, R2]
   ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R2] = js.native
   def pipe[A1, A2, A3, A4, R1, R2](
-    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R1],
+    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R1],
     f2: js.Function1[/* a */ R1, R2]
-  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R2] = js.native
+  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R2] = js.native
   def pipe[R1, R2, R3, R4, R5, R6, R7](
     f1: js.Function0[R1],
     f2: js.Function1[/* a */ R1, R2],
@@ -5764,10 +5643,10 @@ trait LoDashFp extends js.Object {
     f3: js.Function1[/* a */ R2, R3]
   ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R3] = js.native
   def pipe[A1, A2, A3, A4, R1, R2, R3](
-    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R1],
+    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3]
-  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R3] = js.native
+  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R3] = js.native
   def pipe[A1, R1, R2, R3, R4, R5, R6, R7](
     f1: js.Function1[/* a1 */ A1, R1],
     f2: js.Function1[/* a */ R1, R2],
@@ -5809,11 +5688,11 @@ trait LoDashFp extends js.Object {
     f4: js.Function1[/* a */ R3, R4]
   ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R4] = js.native
   def pipe[A1, A2, A3, A4, R1, R2, R3, R4](
-    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R1],
+    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
     f4: js.Function1[/* a */ R3, R4]
-  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R4] = js.native
+  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R4] = js.native
   def pipe[A1, A2, R1, R2, R3, R4, R5, R6, R7](
     f1: js.Function2[/* a1 */ A1, /* a2 */ A2, R1],
     f2: js.Function1[/* a */ R1, R2],
@@ -5849,12 +5728,12 @@ trait LoDashFp extends js.Object {
     f5: js.Function1[/* a */ R4, R5]
   ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R5] = js.native
   def pipe[A1, A2, A3, A4, R1, R2, R3, R4, R5](
-    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R1],
+    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
     f4: js.Function1[/* a */ R3, R4],
     f5: js.Function1[/* a */ R4, R5]
-  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R5] = js.native
+  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R5] = js.native
   def pipe[A1, A2, A3, R1, R2, R3, R4, R5, R6, R7](
     f1: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, R1],
     f2: js.Function1[/* a */ R1, R2],
@@ -5883,13 +5762,13 @@ trait LoDashFp extends js.Object {
     f6: js.Function1[/* a */ R5, R6]
   ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R6] = js.native
   def pipe[A1, A2, A3, A4, R1, R2, R3, R4, R5, R6](
-    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R1],
+    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
     f4: js.Function1[/* a */ R3, R4],
     f5: js.Function1[/* a */ R4, R5],
     f6: js.Function1[/* a */ R5, R6]
-  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R6] = js.native
+  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R6] = js.native
   def pipe[A1, A2, A3, A4, R1, R2, R3, R4, R5, R6, R7](
     f1: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R1],
     f2: js.Function1[/* a */ R1, R2],
@@ -5910,16 +5789,16 @@ trait LoDashFp extends js.Object {
     funcs: (lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* a */ _, _]])*
   ): js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, _] = js.native
   def pipe[A1, A2, A3, A4, R1, R2, R3, R4, R5, R6, R7](
-    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R1],
+    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
     f4: js.Function1[/* a */ R3, R4],
     f5: js.Function1[/* a */ R4, R5],
     f6: js.Function1[/* a */ R5, R6],
     f7: js.Function1[/* a */ R6, R7]
-  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R7] = js.native
+  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R7] = js.native
   def pipe[A1, A2, A3, A4, R1, R2, R3, R4, R5, R6, R7](
-    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, R1],
+    f1: js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, R1],
     f2: js.Function1[/* a */ R1, R2],
     f3: js.Function1[/* a */ R2, R3],
     f4: js.Function1[/* a */ R3, R4],
@@ -5927,75 +5806,75 @@ trait LoDashFp extends js.Object {
     f6: js.Function1[/* a */ R5, R6],
     f7: js.Function1[/* a */ R6, R7],
     funcs: (lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* a */ _, _]])*
-  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */js.Any, _] = js.native
+  ): js.Function5[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, /* repeated */ js.Any, _] = js.native
   /**
-          * Creates a lodash object which wraps value to enable implicit method chain sequences.
-          * Methods that operate on and return arrays, collections, and functions can be chained together.
-          * Methods that retrieve a single value or may return a primitive value will automatically end the
-          * chain sequence and return the unwrapped value. Otherwise, the value must be unwrapped with value().
-          *
-          * Explicit chain sequences, which must be unwrapped with value(), may be enabled using _.chain.
-          *
-          * The execution of chained methods is lazy, that is, it's deferred until value() is
-          * implicitly or explicitly called.
-          *
-          * Lazy evaluation allows several methods to support shortcut fusion. Shortcut fusion
-          * is an optimization to merge iteratee calls; this avoids the creation of intermediate
-          * arrays and can greatly reduce the number of iteratee executions. Sections of a chain
-          * sequence qualify for shortcut fusion if the section is applied to an array and iteratees
-          * accept only one argument. The heuristic for whether a section qualifies for shortcut
-          * fusion is subject to change.
-          *
-          * Chaining is supported in custom builds as long as the value() method is directly or
-          * indirectly included in the build.
-          *
-          * In addition to lodash methods, wrappers have Array and String methods.
-          * The wrapper Array methods are:
-          * concat, join, pop, push, shift, sort, splice, and unshift.
-          * The wrapper String methods are:
-          * replace and split.
-          *
-          * The wrapper methods that support shortcut fusion are:
-          * at, compact, drop, dropRight, dropWhile, filter, find, findLast, head, initial, last,
-          * map, reject, reverse, slice, tail, take, takeRight, takeRightWhile, takeWhile, and toArray
-          *
-          * The chainable wrapper methods are:
-          * after, ary, assign, assignIn, assignInWith, assignWith, at, before, bind, bindAll, bindKey,
-          * castArray, chain, chunk, commit, compact, concat, conforms, constant, countBy, create,
-          * curry, debounce, defaults, defaultsDeep, defer, delay, difference, differenceBy, differenceWith,
-          * drop, dropRight, dropRightWhile, dropWhile, extend, extendWith, fill, filter, flatMap,
-          * flatMapDeep, flatMapDepth, flatten, flattenDeep, flattenDepth, flip, flow, flowRight,
-          * fromPairs, functions, functionsIn, groupBy, initial, intersection, intersectionBy, intersectionWith,
-          * invert, invertBy, invokeMap, iteratee, keyBy, keys, keysIn, map, mapKeys, mapValues,
-          * matches, matchesProperty, memoize, merge, mergeWith, method, methodOf, mixin, negate,
-          * nthArg, omit, omitBy, once, orderBy, over, overArgs, overEvery, overSome, partial, partialRight,
-          * partition, pick, pickBy, plant, property, propertyOf, pull, pullAll, pullAllBy, pullAllWith, pullAt,
-          * push, range, rangeRight, rearg, reject, remove, rest, reverse, sampleSize, set, setWith,
-          * shuffle, slice, sort, sortBy, sortedUniq, sortedUniqBy, splice, spread, tail, take,
-          * takeRight, takeRightWhile, takeWhile, tap, throttle, thru, toArray, toPairs, toPairsIn,
-          * toPath, toPlainObject, transform, unary, union, unionBy, unionWith, uniq, uniqBy, uniqWith,
-          * unset, unshift, unzip, unzipWith, update, updateWith, values, valuesIn, without, wrap,
-          * xor, xorBy, xorWith, zip, zipObject, zipObjectDeep, and zipWith.
-          *
-          * The wrapper methods that are not chainable by default are:
-          * add, attempt, camelCase, capitalize, ceil, clamp, clone, cloneDeep, cloneDeepWith, cloneWith,
-          * conformsTo, deburr, defaultTo, divide, each, eachRight, endsWith, eq, escape, escapeRegExp,
-          * every, find, findIndex, findKey, findLast, findLastIndex, findLastKey, first, floor, forEach,
-          * forEachRight, forIn, forInRight, forOwn, forOwnRight, get, gt, gte, has, hasIn, head,
-          * identity, includes, indexOf, inRange, invoke, isArguments, isArray, isArrayBuffer,
-          * isArrayLike, isArrayLikeObject, isBoolean, isBuffer, isDate, isElement, isEmpty, isEqual, isEqualWith,
-          * isError, isFinite, isFunction, isInteger, isLength, isMap, isMatch, isMatchWith, isNaN,
-          * isNative, isNil, isNull, isNumber, isObject, isObjectLike, isPlainObject, isRegExp,
-          * isSafeInteger, isSet, isString, isUndefined, isTypedArray, isWeakMap, isWeakSet, join,
-          * kebabCase, last, lastIndexOf, lowerCase, lowerFirst, lt, lte, max, maxBy, mean, meanBy,
-          * min, minBy, multiply, noConflict, noop, now, nth, pad, padEnd, padStart, parseInt, pop,
-          * random, reduce, reduceRight, repeat, result, round, runInContext, sample, shift, size,
-          * snakeCase, some, sortedIndex, sortedIndexBy, sortedLastIndex, sortedLastIndexBy, startCase,
-          * startsWith, stubArray, stubFalse, stubObject, stubString, stubTrue, subtract, sum, sumBy,
-          * template, times, toFinite, toInteger, toJSON, toLength, toLower, toNumber, toSafeInteger,
-          * toString, toUpper, trim, trimEnd, trimStart, truncate, unescape, uniqueId, upperCase,
-          * upperFirst, value, and words.
-          **/
+    * Creates a lodash object which wraps value to enable implicit method chain sequences.
+    * Methods that operate on and return arrays, collections, and functions can be chained together.
+    * Methods that retrieve a single value or may return a primitive value will automatically end the
+    * chain sequence and return the unwrapped value. Otherwise, the value must be unwrapped with value().
+    *
+    * Explicit chain sequences, which must be unwrapped with value(), may be enabled using _.chain.
+    *
+    * The execution of chained methods is lazy, that is, it's deferred until value() is
+    * implicitly or explicitly called.
+    *
+    * Lazy evaluation allows several methods to support shortcut fusion. Shortcut fusion
+    * is an optimization to merge iteratee calls; this avoids the creation of intermediate
+    * arrays and can greatly reduce the number of iteratee executions. Sections of a chain
+    * sequence qualify for shortcut fusion if the section is applied to an array and iteratees
+    * accept only one argument. The heuristic for whether a section qualifies for shortcut
+    * fusion is subject to change.
+    *
+    * Chaining is supported in custom builds as long as the value() method is directly or
+    * indirectly included in the build.
+    *
+    * In addition to lodash methods, wrappers have Array and String methods.
+    * The wrapper Array methods are:
+    * concat, join, pop, push, shift, sort, splice, and unshift.
+    * The wrapper String methods are:
+    * replace and split.
+    *
+    * The wrapper methods that support shortcut fusion are:
+    * at, compact, drop, dropRight, dropWhile, filter, find, findLast, head, initial, last,
+    * map, reject, reverse, slice, tail, take, takeRight, takeRightWhile, takeWhile, and toArray
+    *
+    * The chainable wrapper methods are:
+    * after, ary, assign, assignIn, assignInWith, assignWith, at, before, bind, bindAll, bindKey,
+    * castArray, chain, chunk, commit, compact, concat, conforms, constant, countBy, create,
+    * curry, debounce, defaults, defaultsDeep, defer, delay, difference, differenceBy, differenceWith,
+    * drop, dropRight, dropRightWhile, dropWhile, extend, extendWith, fill, filter, flatMap,
+    * flatMapDeep, flatMapDepth, flatten, flattenDeep, flattenDepth, flip, flow, flowRight,
+    * fromPairs, functions, functionsIn, groupBy, initial, intersection, intersectionBy, intersectionWith,
+    * invert, invertBy, invokeMap, iteratee, keyBy, keys, keysIn, map, mapKeys, mapValues,
+    * matches, matchesProperty, memoize, merge, mergeWith, method, methodOf, mixin, negate,
+    * nthArg, omit, omitBy, once, orderBy, over, overArgs, overEvery, overSome, partial, partialRight,
+    * partition, pick, pickBy, plant, property, propertyOf, pull, pullAll, pullAllBy, pullAllWith, pullAt,
+    * push, range, rangeRight, rearg, reject, remove, rest, reverse, sampleSize, set, setWith,
+    * shuffle, slice, sort, sortBy, sortedUniq, sortedUniqBy, splice, spread, tail, take,
+    * takeRight, takeRightWhile, takeWhile, tap, throttle, thru, toArray, toPairs, toPairsIn,
+    * toPath, toPlainObject, transform, unary, union, unionBy, unionWith, uniq, uniqBy, uniqWith,
+    * unset, unshift, unzip, unzipWith, update, updateWith, values, valuesIn, without, wrap,
+    * xor, xorBy, xorWith, zip, zipObject, zipObjectDeep, and zipWith.
+    *
+    * The wrapper methods that are not chainable by default are:
+    * add, attempt, camelCase, capitalize, ceil, clamp, clone, cloneDeep, cloneDeepWith, cloneWith,
+    * conformsTo, deburr, defaultTo, divide, each, eachRight, endsWith, eq, escape, escapeRegExp,
+    * every, find, findIndex, findKey, findLast, findLastIndex, findLastKey, first, floor, forEach,
+    * forEachRight, forIn, forInRight, forOwn, forOwnRight, get, gt, gte, has, hasIn, head,
+    * identity, includes, indexOf, inRange, invoke, isArguments, isArray, isArrayBuffer,
+    * isArrayLike, isArrayLikeObject, isBoolean, isBuffer, isDate, isElement, isEmpty, isEqual, isEqualWith,
+    * isError, isFinite, isFunction, isInteger, isLength, isMap, isMatch, isMatchWith, isNaN,
+    * isNative, isNil, isNull, isNumber, isObject, isObjectLike, isPlainObject, isRegExp,
+    * isSafeInteger, isSet, isString, isUndefined, isTypedArray, isWeakMap, isWeakSet, join,
+    * kebabCase, last, lastIndexOf, lowerCase, lowerFirst, lt, lte, max, maxBy, mean, meanBy,
+    * min, minBy, multiply, noConflict, noop, now, nth, pad, padEnd, padStart, parseInt, pop,
+    * random, reduce, reduceRight, repeat, result, round, runInContext, sample, shift, size,
+    * snakeCase, some, sortedIndex, sortedIndexBy, sortedLastIndex, sortedLastIndexBy, startCase,
+    * startsWith, stubArray, stubFalse, stubObject, stubString, stubTrue, subtract, sum, sumBy,
+    * template, times, toFinite, toInteger, toJSON, toLength, toLower, toNumber, toSafeInteger,
+    * toString, toUpper, trim, trimEnd, trimStart, truncate, unescape, uniqueId, upperCase,
+    * upperFirst, value, and words.
+    **/
   def placeholder[T](value: T): lodashLib.lodashMod.underscoreNs.LoDashImplicitWrapper[T] = js.native
   def pluck(iteratee: java.lang.String): LodashMap5x1 = js.native
   def pluck(iteratee: js.Object): LodashMap6x1 = js.native
@@ -6020,22 +5899,14 @@ trait LoDashFp extends js.Object {
     iteratee: lodashLib.lodashMod.underscoreNs.`__`,
     collection: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]
   ): LodashMap4x2[T] = js.native
-  def pluck[T, K /* <: java.lang.String */](iteratee: K): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-  ] = js.native
-  def pluck[T, K /* <: java.lang.String */](iteratee: K, collection: lodashLib.lodashMod.underscoreNs.Dictionary[T]): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-  ] = js.native
-  def pluck[T, K /* <: java.lang.String */](iteratee: K, collection: lodashLib.lodashMod.underscoreNs.List[T]): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-  ] = js.native
-  def pluck[T, K /* <: java.lang.String */](iteratee: K, collection: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-  ] = js.native
+  def pluck[T, K /* <: java.lang.String */](iteratee: K): js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
+  def pluck[T, K /* <: java.lang.String */](iteratee: K, collection: lodashLib.lodashMod.underscoreNs.Dictionary[T]): js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
+  def pluck[T, K /* <: java.lang.String */](iteratee: K, collection: lodashLib.lodashMod.underscoreNs.List[T]): js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
+  def pluck[T, K /* <: java.lang.String */](iteratee: K, collection: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
   def pluck[T, TResult](iteratee: js.Function1[/* value */ T, TResult]): js.Array[TResult] = js.native
   def pluck[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       TResult
     ],
     collection: T
@@ -6065,14 +5936,14 @@ trait LoDashFp extends js.Object {
   @JSName("pluck")
   def pluck_TObjectTResult[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       TResult
     ]
   ): js.Array[TResult] = js.native
   @JSName("pluck")
   def pluck_TObjectTResultLodashMap3x1[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       TResult
     ]
   ): LodashMap3x1[T, TResult] = js.native
@@ -6090,16 +5961,16 @@ trait LoDashFp extends js.Object {
   ): LodashProp4x2[T] = js.native
   def prop[T](path: scala.Double, `object`: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): js.UndefOr[T] = js.native
   def prop[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def prop[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey, `object`: TObject): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def prop[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey]): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def prop[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey], `object`: TObject): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def propEq(path: lodashLib.lodashMod.underscoreNs.PropertyPath): LodashMatchesProperty1x1 = js.native
   def propEq[T](path: lodashLib.lodashMod.underscoreNs.PropertyPath, srcValue: T): js.Function1[/* value */ js.Any, scala.Boolean] = js.native
@@ -6158,10 +6029,10 @@ trait LoDashFp extends js.Object {
   def propOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */](defaultValue: lodashLib.lodashMod.underscoreNs.`__`, path: TKey, `object`: TObject): LodashPropOr1x6[TObject, TKey] = js.native
   def propOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */](defaultValue: lodashLib.lodashMod.underscoreNs.`__`, path: js.Array[TKey]): LodashPropOr1x2[TObject, TKey] = js.native
   def propOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */](defaultValue: lodashLib.lodashMod.underscoreNs.`__`, path: js.Array[TKey], `object`: TObject): LodashPropOr1x6[TObject, TKey] = js.native
-  def propOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: TKey): (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any) | TDefault = js.native
-  def propOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: TKey, `object`: TObject): (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any) | TDefault = js.native
-  def propOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: js.Array[TKey]): (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any) | TDefault = js.native
-  def propOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: js.Array[TKey], `object`: TObject): (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any) | TDefault = js.native
+  def propOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: TKey): (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault = js.native
+  def propOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: TKey, `object`: TObject): (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault = js.native
+  def propOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: js.Array[TKey]): (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault = js.native
+  def propOr[TObject /* <: js.Object */, TKey /* <: java.lang.String */, TDefault](defaultValue: TDefault, path: js.Array[TKey], `object`: TObject): (/* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any) | TDefault = js.native
   @JSName("propOr")
   def propOr_LodashPropOr3x6(
     defaultValue: lodashLib.lodashMod.underscoreNs.`__`,
@@ -6201,9 +6072,9 @@ trait LoDashFp extends js.Object {
   @JSName("prop")
   def prop_TObjectObjectLodashProp2x2[TObject /* <: js.Object */](path: lodashLib.lodashMod.underscoreNs.`__`): LodashProp2x2[TObject] = js.native
   @JSName("prop")
-  def prop_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey, `object`: TObject): /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any = js.native
+  def prop_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey, `object`: TObject): /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any = js.native
   @JSName("prop")
-  def prop_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey], `object`: TObject): /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any = js.native
+  def prop_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey], `object`: TObject): /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any = js.native
   @JSName("prop")
   def prop_TObjectObjectTKeyStringLodashProp1x1[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey): LodashProp1x1[TObject, TKey] = js.native
   @JSName("prop")
@@ -6226,16 +6097,16 @@ trait LoDashFp extends js.Object {
   ): LodashProperty3x2[T] = js.native
   def property[T](path: scala.Double, `object`: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): js.UndefOr[T] = js.native
   def property[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def property[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey, `object`: TObject): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def property[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey]): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def property[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey], `object`: TObject): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def propertyOf(path: lodashLib.lodashMod.underscoreNs.PropertyPath): js.UndefOr[scala.Nothing] = js.native
   def propertyOf(path: lodashLib.lodashMod.underscoreNs.PropertyPath, `object`: js.Any): js.Any = js.native
@@ -6249,16 +6120,16 @@ trait LoDashFp extends js.Object {
   ): LodashPropertyOf4x2[T] = js.native
   def propertyOf[T](path: scala.Double, `object`: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): js.UndefOr[T] = js.native
   def propertyOf[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def propertyOf[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey, `object`: TObject): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def propertyOf[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey]): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def propertyOf[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey], `object`: TObject): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   @JSName("propertyOf")
   def propertyOf_LodashPropertyOf5x1(path: lodashLib.lodashMod.underscoreNs.PropertyPath): LodashPropertyOf5x1 = js.native
@@ -6274,9 +6145,9 @@ trait LoDashFp extends js.Object {
   @JSName("propertyOf")
   def propertyOf_TObjectObjectLodashPropertyOf2x2[TObject /* <: js.Object */](path: lodashLib.lodashMod.underscoreNs.`__`, `object`: TObject): LodashPropertyOf2x2[TObject] = js.native
   @JSName("propertyOf")
-  def propertyOf_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey, `object`: TObject): /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any = js.native
+  def propertyOf_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey, `object`: TObject): /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any = js.native
   @JSName("propertyOf")
-  def propertyOf_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey], `object`: TObject): /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any = js.native
+  def propertyOf_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey], `object`: TObject): /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any = js.native
   @JSName("propertyOf")
   def propertyOf_TObjectObjectTKeyStringLodashPropertyOf1x1[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey): LodashPropertyOf1x1[TObject, TKey] = js.native
   @JSName("propertyOf")
@@ -6299,9 +6170,9 @@ trait LoDashFp extends js.Object {
   @JSName("property")
   def property_TObjectObjectLodashProperty2x2[TObject /* <: js.Object */](path: lodashLib.lodashMod.underscoreNs.`__`, `object`: TObject): LodashProperty2x2[TObject] = js.native
   @JSName("property")
-  def property_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey, `object`: TObject): /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any = js.native
+  def property_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey, `object`: TObject): /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any = js.native
   @JSName("property")
-  def property_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey], `object`: TObject): /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any = js.native
+  def property_TObjectObjectTKeyStringAny[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey], `object`: TObject): /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any = js.native
   @JSName("property")
   def property_TObjectObjectTKeyStringLodashProperty1x1[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey): LodashProperty1x1[TObject, TKey] = js.native
   @JSName("property")
@@ -6311,9 +6182,7 @@ trait LoDashFp extends js.Object {
   @JSName("property")
   def property_TUndefOr[T](path: scala.Double): js.UndefOr[T] = js.native
   def props(props: lodashLib.lodashMod.underscoreNs.PropertyPath): LodashAt1x1 = js.native
-  def props[T /* <: js.Object */](props: lodashLib.lodashMod.underscoreNs.Many[java.lang.String], `object`: T): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  def props[T /* <: js.Object */](props: lodashLib.lodashMod.underscoreNs.Many[java.lang.String], `object`: T): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def props[T](
     props: lodashLib.lodashMod.underscoreNs.PropertyPath,
     `object`: lodashLib.lodashMod.underscoreNs.Dictionary[T]
@@ -6342,9 +6211,7 @@ trait LoDashFp extends js.Object {
   @JSName("props")
   def props_TLodashAt1x2[T](props: lodashLib.lodashMod.underscoreNs.`__`): LodashAt1x2[T] = js.native
   @JSName("props")
-  def props_TObjectArray[T /* <: js.Object */](props: lodashLib.lodashMod.underscoreNs.Many[java.lang.String]): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  def props_TObjectArray[T /* <: js.Object */](props: lodashLib.lodashMod.underscoreNs.Many[java.lang.String]): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   @JSName("props")
   def props_TObjectLodashAt2x1[T /* <: js.Object */](props: lodashLib.lodashMod.underscoreNs.Many[java.lang.String]): LodashAt2x1[T] = js.native
   def pull[T](values: T): LodashPull1x1[T] = js.native
@@ -6613,9 +6480,9 @@ trait LoDashFp extends js.Object {
   def rearg(indexes: lodashLib.lodashMod.underscoreNs.Many[scala.Double]): LodashRearg1x1 = js.native
   def rearg(
     indexes: lodashLib.lodashMod.underscoreNs.Many[scala.Double],
-    func: js.Function1[/* repeated */js.Any, _]
-  ): js.Function1[/* repeated */js.Any, _] = js.native
-  def rearg(indexes: lodashLib.lodashMod.underscoreNs.`__`, func: js.Function1[/* repeated */js.Any, _]): LodashRearg1x2 = js.native
+    func: js.Function1[/* repeated */ js.Any, _]
+  ): js.Function1[/* repeated */ js.Any, _] = js.native
+  def rearg(indexes: lodashLib.lodashMod.underscoreNs.`__`, func: js.Function1[/* repeated */ js.Any, _]): LodashRearg1x2 = js.native
   def reduce[TResult](callback: lodashLib.lodashMod.underscoreNs.`__`, accumulator: TResult): LodashReduce1x2[TResult] = js.native
   def reduce[T /* <: js.Object */](
     callback: lodashLib.lodashMod.underscoreNs.`__`,
@@ -6638,14 +6505,14 @@ trait LoDashFp extends js.Object {
   ): LodashReduce2x4[T] = js.native
   def reduce[T /* <: js.Object */, TResult](
     callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCapped[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ]
   ): LodashReduce3x1[T, TResult] = js.native
   def reduce[T, TResult](callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCapped[T, TResult], accumulator: TResult): TResult = js.native
   def reduce[T /* <: js.Object */, TResult](
     callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCapped[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ],
     accumulator: TResult,
@@ -6667,7 +6534,7 @@ trait LoDashFp extends js.Object {
   ): LodashReduce1x5[TResult] = js.native
   def reduce[T /* <: js.Object */, TResult](
     callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCapped[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ],
     accumulator: lodashLib.lodashMod.underscoreNs.`__`,
@@ -6717,7 +6584,7 @@ trait LoDashFp extends js.Object {
   ): TResult = js.native
   def reduceRight[T /* <: js.Object */, TResult](
     callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCappedRight[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ],
     accumulator: TResult,
@@ -6739,7 +6606,7 @@ trait LoDashFp extends js.Object {
   ): LodashReduceRight1x5[TResult] = js.native
   def reduceRight[T /* <: js.Object */, TResult](
     callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCappedRight[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ],
     accumulator: lodashLib.lodashMod.underscoreNs.`__`,
@@ -6775,7 +6642,7 @@ trait LoDashFp extends js.Object {
   @JSName("reduceRight")
   def reduceRight_TObjectTResult[T /* <: js.Object */, TResult](
     callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCappedRight[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ],
     accumulator: TResult
@@ -6783,14 +6650,14 @@ trait LoDashFp extends js.Object {
   @JSName("reduceRight")
   def reduceRight_TObjectTResultLodashReduceRight3x1[T /* <: js.Object */, TResult](
     callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCappedRight[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ]
   ): LodashReduceRight3x1[T, TResult] = js.native
   @JSName("reduceRight")
   def reduceRight_TObjectTResultLodashReduceRight3x3[T /* <: js.Object */, TResult](
     callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCappedRight[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ],
     accumulator: TResult
@@ -6798,7 +6665,7 @@ trait LoDashFp extends js.Object {
   @JSName("reduceRight")
   def reduceRight_TObjectTResultLodashReduceRight3x5[T /* <: js.Object */, TResult](
     callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCappedRight[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ],
     accumulator: lodashLib.lodashMod.underscoreNs.`__`
@@ -6832,7 +6699,7 @@ trait LoDashFp extends js.Object {
   @JSName("reduce")
   def reduce_TObjectTResult[T /* <: js.Object */, TResult](
     callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCapped[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ],
     accumulator: TResult
@@ -6840,7 +6707,7 @@ trait LoDashFp extends js.Object {
   @JSName("reduce")
   def reduce_TObjectTResultLodashReduce3x3[T /* <: js.Object */, TResult](
     callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCapped[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ],
     accumulator: TResult
@@ -6848,7 +6715,7 @@ trait LoDashFp extends js.Object {
   @JSName("reduce")
   def reduce_TObjectTResultLodashReduce3x5[T /* <: js.Object */, TResult](
     callback: lodashLib.lodashMod.underscoreNs.MemoIteratorCapped[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       TResult
     ],
     accumulator: lodashLib.lodashMod.underscoreNs.`__`
@@ -6875,13 +6742,11 @@ trait LoDashFp extends js.Object {
   def reject[T](predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean]): js.Array[T] = js.native
   def reject[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ],
     collection: T
-  ): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def reject[T](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean],
     collection: lodashLib.lodashMod.underscoreNs.List[T]
@@ -6900,12 +6765,10 @@ trait LoDashFp extends js.Object {
   @JSName("reject")
   def reject_TObject[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ]
-  ): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   @JSName("reject")
   def reject_TObjectLodashReject3x2[T /* <: js.Object */](predicate: lodashLib.lodashMod.underscoreNs.`__`): LodashReject3x2[T] = js.native
   def remove[T](predicate: lodashLib.lodashMod.underscoreNs.ValueIteratee[T]): LodashRemove1x1[T] = js.native
@@ -6965,10 +6828,10 @@ trait LoDashFp extends js.Object {
     replacement: lodashLib.lodashMod.underscoreNs.`__`,
     string: java.lang.String
   ): LodashReplace1x5 = js.native
-  def rest(func: js.Function1[/* repeated */js.Any, _]): js.Function1[/* repeated */js.Any, _] = js.native
-  def restFrom(start: lodashLib.lodashMod.underscoreNs.`__`, func: js.Function1[/* repeated */js.Any, _]): LodashRestFrom1x2 = js.native
+  def rest(func: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
+  def restFrom(start: lodashLib.lodashMod.underscoreNs.`__`, func: js.Function1[/* repeated */ js.Any, _]): LodashRestFrom1x2 = js.native
   def restFrom(start: scala.Double): LodashRestFrom1x1 = js.native
-  def restFrom(start: scala.Double, func: js.Function1[/* repeated */js.Any, _]): js.Function1[/* repeated */js.Any, _] = js.native
+  def restFrom(start: scala.Double, func: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
   def result(path: lodashLib.lodashMod.underscoreNs.PropertyPath): LodashResult1x1 = js.native
   def result(path: lodashLib.lodashMod.underscoreNs.`__`, `object`: js.Any): LodashResult1x2 = js.native
   def result[TResult](path: lodashLib.lodashMod.underscoreNs.PropertyPath, `object`: js.Any): TResult = js.native
@@ -6976,9 +6839,7 @@ trait LoDashFp extends js.Object {
   def round(n: scala.Double): scala.Double = js.native
   def runInContext(context: js.Object): lodashLib.lodashMod.underscoreNs.LoDashStatic = js.native
   def sample[T](): js.UndefOr[T] = js.native
-  def sample[T /* <: js.Object */](collection: T): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  def sample[T /* <: js.Object */](collection: T): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def sample[T](collection: lodashLib.lodashMod.underscoreNs.Dictionary[T]): js.UndefOr[T] = js.native
   def sample[T](collection: lodashLib.lodashMod.underscoreNs.List[T]): js.UndefOr[T] = js.native
   def sample[T](collection: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): js.UndefOr[T] = js.native
@@ -6994,9 +6855,7 @@ trait LoDashFp extends js.Object {
     n: lodashLib.lodashMod.underscoreNs.`__`,
     collection: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]
   ): LodashSampleSize1x2[T] = js.native
-  def sampleSize[T /* <: js.Object */](n: scala.Double, collection: T): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  def sampleSize[T /* <: js.Object */](n: scala.Double, collection: T): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def sampleSize[T](n: scala.Double, collection: lodashLib.lodashMod.underscoreNs.Dictionary[T]): js.Array[T] = js.native
   def sampleSize[T](n: scala.Double, collection: lodashLib.lodashMod.underscoreNs.List[T]): js.Array[T] = js.native
   def sampleSize[T](n: scala.Double, collection: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): js.Array[T] = js.native
@@ -7005,13 +6864,9 @@ trait LoDashFp extends js.Object {
   @JSName("sampleSize")
   def sampleSize_TLodashSampleSize1x2[T](n: lodashLib.lodashMod.underscoreNs.`__`): LodashSampleSize1x2[T] = js.native
   @JSName("sampleSize")
-  def sampleSize_TObjectArray[T /* <: js.Object */](n: scala.Double): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  def sampleSize_TObjectArray[T /* <: js.Object */](n: scala.Double): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   @JSName("sample")
-  def sample_TObject[T /* <: js.Object */](): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  def sample_TObject[T /* <: js.Object */](): js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def set(path: lodashLib.lodashMod.underscoreNs.PropertyPath): LodashSet1x1 = js.native
   def set(path: lodashLib.lodashMod.underscoreNs.PropertyPath, value: js.Any): LodashSet1x3 = js.native
   def set(
@@ -7117,14 +6972,10 @@ trait LoDashFp extends js.Object {
     `object`: T
   ): LodashSetWith1x8[T] = js.native
   def shuffle[T](): js.Array[T] = js.native
-  def shuffle[T /* <: js.Object */](collection: T): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  def shuffle[T /* <: js.Object */](collection: T): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def shuffle[T](collection: lodashLib.lodashMod.underscoreNs.List[T]): js.Array[T] = js.native
   @JSName("shuffle")
-  def shuffle_TObject[T /* <: js.Object */](): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  def shuffle_TObject[T /* <: js.Object */](): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def size(): scala.Double = js.native
   def size(collection: java.lang.String): scala.Double = js.native
   def size(collection: js.Object): scala.Double = js.native
@@ -7157,7 +7008,7 @@ trait LoDashFp extends js.Object {
   def some[T](predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, scala.Boolean]): scala.Boolean = js.native
   def some[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ],
     collection: T
@@ -7179,7 +7030,7 @@ trait LoDashFp extends js.Object {
   @JSName("some")
   def some_TObject[T /* <: js.Object */](
     predicate: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       scala.Boolean
     ]
   ): scala.Boolean = js.native
@@ -7188,14 +7039,10 @@ trait LoDashFp extends js.Object {
   ): js.Array[T] = js.native
   def sortBy[T /* <: js.Object */](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
-      lodashLib.lodashMod.underscoreNs.ValueIteratee[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-      ]
+      lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
     ],
     collection: T
-  ): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def sortBy[T](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[lodashLib.lodashMod.underscoreNs.ValueIteratee[T]],
     collection: lodashLib.lodashMod.underscoreNs.List[T]
@@ -7213,13 +7060,9 @@ trait LoDashFp extends js.Object {
   @JSName("sortBy")
   def sortBy_TObject[T /* <: js.Object */](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
-      lodashLib.lodashMod.underscoreNs.ValueIteratee[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-      ]
+      lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
     ]
-  ): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   @JSName("sortBy")
   def sortBy_TObjectLodashSortBy2x2[T /* <: js.Object */](iteratees: lodashLib.lodashMod.underscoreNs.`__`): LodashSortBy2x2[T] = js.native
   def sortedIndex[T](value: T): scala.Double = js.native
@@ -7326,10 +7169,10 @@ trait LoDashFp extends js.Object {
   def split(separator: lodashLib.lodashMod.underscoreNs.`__`, string: java.lang.String): LodashSplit1x2 = js.native
   def split(separator: stdLib.RegExp): LodashSplit1x1 = js.native
   def split(separator: stdLib.RegExp, string: java.lang.String): js.Array[java.lang.String] = js.native
-  def spread[TResult](func: js.Function1[/* repeated */js.Any, TResult]): js.Function1[/* repeated */js.Any, TResult] = js.native
+  def spread[TResult](func: js.Function1[/* repeated */ js.Any, TResult]): js.Function1[/* repeated */ js.Any, TResult] = js.native
   def spreadFrom(start: scala.Double): LodashSpreadFrom1x1 = js.native
-  def spreadFrom[TResult](start: lodashLib.lodashMod.underscoreNs.`__`, func: js.Function1[/* repeated */js.Any, TResult]): LodashSpreadFrom1x2[TResult] = js.native
-  def spreadFrom[TResult](start: scala.Double, func: js.Function1[/* repeated */js.Any, TResult]): js.Function1[/* repeated */js.Any, TResult] = js.native
+  def spreadFrom[TResult](start: lodashLib.lodashMod.underscoreNs.`__`, func: js.Function1[/* repeated */ js.Any, TResult]): LodashSpreadFrom1x2[TResult] = js.native
+  def spreadFrom[TResult](start: scala.Double, func: js.Function1[/* repeated */ js.Any, TResult]): js.Function1[/* repeated */ js.Any, TResult] = js.native
   def startCase(string: java.lang.String): java.lang.String = js.native
   def startsWith(target: java.lang.String): LodashStartsWith1x1 = js.native
   def startsWith(target: java.lang.String, string: java.lang.String): scala.Boolean = js.native
@@ -7562,8 +7405,8 @@ trait LoDashFp extends js.Object {
   def tap[T](interceptor: lodashLib.lodashMod.underscoreNs.`__`, value: T): LodashTap1x2[T] = js.native
   def template(string: java.lang.String): lodashLib.lodashMod.underscoreNs.TemplateExecutor = js.native
   def throttle(wait: scala.Double): LodashThrottle1x1 = js.native
-  def throttle[T /* <: js.Function1[/* repeated */js.Any, _] */](wait: lodashLib.lodashMod.underscoreNs.`__`, func: T): LodashThrottle1x2[T] = js.native
-  def throttle[T /* <: js.Function1[/* repeated */js.Any, _] */](wait: scala.Double, func: T): T with lodashLib.lodashMod.underscoreNs.Cancelable = js.native
+  def throttle[T /* <: js.Function1[/* repeated */ js.Any, _] */](wait: lodashLib.lodashMod.underscoreNs.`__`, func: T): LodashThrottle1x2[T] = js.native
+  def throttle[T /* <: js.Function1[/* repeated */ js.Any, _] */](wait: scala.Double, func: T): T with lodashLib.lodashMod.underscoreNs.Cancelable = js.native
   def thru[T](interceptor: lodashLib.lodashMod.underscoreNs.`__`, value: T): LodashThru1x2[T] = js.native
   def thru[T, TResult](interceptor: js.Function1[/* value */ T, TResult]): LodashThru1x1[T, TResult] = js.native
   def thru[T, TResult](interceptor: js.Function1[/* value */ T, TResult], value: T): TResult = js.native
@@ -7571,9 +7414,7 @@ trait LoDashFp extends js.Object {
   def times[TResult](iteratee: js.Function1[/* num */ scala.Double, TResult]): LodashTimes1x1[TResult] = js.native
   def times[TResult](iteratee: js.Function1[/* num */ scala.Double, TResult], n: scala.Double): js.Array[TResult] = js.native
   def toArray(): js.Array[_] = js.native
-  def toArray[T](value: T): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  def toArray[T](value: T): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def toArray[T](value: lodashLib.lodashMod.underscoreNs.Dictionary[T]): js.Array[T] = js.native
   def toArray[T](value: lodashLib.lodashMod.underscoreNs.List[T]): js.Array[T] = js.native
   def toArray[T](value: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): js.Array[T] = js.native
@@ -7700,8 +7541,8 @@ trait LoDashFp extends js.Object {
   def truncate(options: lodashLib.lodashMod.underscoreNs.TruncateOptions): LodashTruncate1x1 = js.native
   def truncate(options: lodashLib.lodashMod.underscoreNs.TruncateOptions, string: java.lang.String): java.lang.String = js.native
   def truncate(options: lodashLib.lodashMod.underscoreNs.`__`, string: java.lang.String): LodashTruncate1x2 = js.native
-  def unapply(func: js.Function1[/* repeated */js.Any, _]): js.Function1[/* repeated */js.Any, _] = js.native
-  def unary[T, TResult](func: js.Function2[/* arg1 */ T, /* repeated */js.Any, TResult]): js.Function1[/* arg1 */ T, TResult] = js.native
+  def unapply(func: js.Function1[/* repeated */ js.Any, _]): js.Function1[/* repeated */ js.Any, _] = js.native
+  def unary[T, TResult](func: js.Function2[/* arg1 */ T, /* repeated */ js.Any, TResult]): js.Function1[/* arg1 */ T, TResult] = js.native
   def unescape(string: java.lang.String): java.lang.String = js.native
   def union[T](): js.Array[T] = js.native
   def union[T](arrays2: js.UndefOr[scala.Nothing], arrays: lodashLib.lodashMod.underscoreNs.List[T]): js.Array[T] = js.native
@@ -7887,13 +7728,13 @@ trait LoDashFp extends js.Object {
     iteratee: lodashLib.lodashMod.underscoreNs.`__`,
     array: lodashLib.lodashMod.underscoreNs.List[lodashLib.lodashMod.underscoreNs.List[T]]
   ): LodashUnzipWith1x2[T] = js.native
-  def unzipWith[T, TResult](iteratee: js.Function1[/* repeated */T, TResult]): js.Array[TResult] = js.native
+  def unzipWith[T, TResult](iteratee: js.Function1[/* repeated */ T, TResult]): js.Array[TResult] = js.native
   def unzipWith[T, TResult](
-    iteratee: js.Function1[/* repeated */T, TResult],
+    iteratee: js.Function1[/* repeated */ T, TResult],
     array: lodashLib.lodashMod.underscoreNs.List[lodashLib.lodashMod.underscoreNs.List[T]]
   ): js.Array[TResult] = js.native
   @JSName("unzipWith")
-  def unzipWith_TTResultLodashUnzipWith1x1[T, TResult](iteratee: js.Function1[/* repeated */T, TResult]): LodashUnzipWith1x1[T, TResult] = js.native
+  def unzipWith_TTResultLodashUnzipWith1x1[T, TResult](iteratee: js.Function1[/* repeated */ T, TResult]): LodashUnzipWith1x1[T, TResult] = js.native
   def update(path: lodashLib.lodashMod.underscoreNs.PropertyPath): LodashUpdate1x1 = js.native
   def update(path: lodashLib.lodashMod.underscoreNs.PropertyPath, updater: js.Function1[/* value */ js.Any, _]): LodashUpdate1x3 = js.native
   def update(
@@ -7996,38 +7837,30 @@ trait LoDashFp extends js.Object {
   ): LodashUpdateWith1x8[T] = js.native
   def upperCase(string: java.lang.String): java.lang.String = js.native
   def upperFirst(string: java.lang.String): java.lang.String = js.native
-  def useWith(func: js.Function1[/* repeated */js.Any, _]): LodashOverArgs1x1 = js.native
+  def useWith(func: js.Function1[/* repeated */ js.Any, _]): LodashOverArgs1x1 = js.native
   def useWith(
-    func: js.Function1[/* repeated */js.Any, _],
-    transforms: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */_, _]]
-  ): js.Function1[/* repeated */js.Any, _] = js.native
+    func: js.Function1[/* repeated */ js.Any, _],
+    transforms: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ _, _]]
+  ): js.Function1[/* repeated */ js.Any, _] = js.native
   def useWith(
     func: lodashLib.lodashMod.underscoreNs.`__`,
-    transforms: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */_, _]]
+    transforms: lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ _, _]]
   ): LodashOverArgs1x2 = js.native
   def values(`object`: js.Any): js.Array[_] = js.native
   def values[T](): js.Array[T] = js.native
-  def values[T /* <: js.Object */](`object`: T): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  def values[T /* <: js.Object */](`object`: T): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def values[T](`object`: lodashLib.lodashMod.underscoreNs.Dictionary[T]): js.Array[T] = js.native
   def values[T](`object`: lodashLib.lodashMod.underscoreNs.List[T]): js.Array[T] = js.native
   def values[T](`object`: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): js.Array[T] = js.native
   def valuesIn[T](): js.Array[T] = js.native
-  def valuesIn[T /* <: js.Object */](`object`: T): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  def valuesIn[T /* <: js.Object */](`object`: T): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def valuesIn[T](`object`: lodashLib.lodashMod.underscoreNs.Dictionary[T]): js.Array[T] = js.native
   def valuesIn[T](`object`: lodashLib.lodashMod.underscoreNs.List[T]): js.Array[T] = js.native
   def valuesIn[T](`object`: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): js.Array[T] = js.native
   @JSName("valuesIn")
-  def valuesIn_TObject[T /* <: js.Object */](): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  def valuesIn_TObject[T /* <: js.Object */](): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   @JSName("values")
-  def values_TObject[T /* <: js.Object */](): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  def values_TObject[T /* <: js.Object */](): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def where[T](source: lodashLib.lodashMod.underscoreNs.ConformsPredicateObject[T]): LodashConformsTo1x1[T] = js.native
   def where[T](source: lodashLib.lodashMod.underscoreNs.ConformsPredicateObject[T], `object`: T): scala.Boolean = js.native
   def where[T](source: lodashLib.lodashMod.underscoreNs.`__`, `object`: T): LodashConformsTo1x2[T] = js.native
@@ -8042,12 +7875,12 @@ trait LoDashFp extends js.Object {
   def without_TArray[T](values: js.Array[T]): js.Array[T] = js.native
   def words(string: java.lang.String): js.Array[java.lang.String] = js.native
   def wrap[T](wrapper: lodashLib.lodashMod.underscoreNs.`__`, value: T): LodashWrap1x2[T] = js.native
-  def wrap[T, TResult](wrapper: js.Function2[/* value */ T, /* repeated */js.Any, TResult]): LodashWrap2x1[T, TResult] = js.native
-  def wrap[T, TResult](wrapper: js.Function2[/* value */ T, /* repeated */js.Any, TResult], value: T): js.Function1[/* repeated */js.Any, TResult] = js.native
+  def wrap[T, TResult](wrapper: js.Function2[/* value */ T, /* repeated */ js.Any, TResult]): LodashWrap2x1[T, TResult] = js.native
+  def wrap[T, TResult](wrapper: js.Function2[/* value */ T, /* repeated */ js.Any, TResult], value: T): js.Function1[/* repeated */ js.Any, TResult] = js.native
   @JSName("wrap")
-  def wrap_TTArgsTResult[T, TArgs, TResult](wrapper: js.Function2[/* value */ T, /* repeated */TArgs, TResult], value: T): js.Function1[/* repeated */TArgs, TResult] = js.native
+  def wrap_TTArgsTResult[T, TArgs, TResult](wrapper: js.Function2[/* value */ T, /* repeated */ TArgs, TResult], value: T): js.Function1[/* repeated */ TArgs, TResult] = js.native
   @JSName("wrap")
-  def wrap_TTArgsTResultLodashWrap1x1[T, TArgs, TResult](wrapper: js.Function2[/* value */ T, /* repeated */TArgs, TResult]): LodashWrap1x1[T, TArgs, TResult] = js.native
+  def wrap_TTArgsTResultLodashWrap1x1[T, TArgs, TResult](wrapper: js.Function2[/* value */ T, /* repeated */ TArgs, TResult]): LodashWrap1x1[T, TArgs, TResult] = js.native
   def xor[T](): js.Array[T] = js.native
   def xor[T](arrays2: js.UndefOr[scala.Nothing], arrays: lodashLib.lodashMod.underscoreNs.List[T]): js.Array[T] = js.native
   def xor[T](arrays2: lodashLib.lodashMod.underscoreNs.List[T]): js.Array[T] = js.native

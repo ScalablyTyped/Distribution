@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AffixProps extends js.Object {
   var offset: js.UndefOr[scala.Double] = js.undefined
   /** 距离窗口底部达到指定偏移量后触发 */
   var offsetBottom: js.UndefOr[scala.Double] = js.undefined
   /**
-       * 距离窗口顶部达到指定偏移量后触发
-       */
+    * 距离窗口顶部达到指定偏移量后触发
+    */
   var offsetTop: js.UndefOr[scala.Double] = js.undefined
   /** 固定状态改变时触发的回调函数 */
   var onChange: js.UndefOr[js.Function1[/* affixed */ js.UndefOr[scala.Boolean], scala.Unit]] = js.undefined

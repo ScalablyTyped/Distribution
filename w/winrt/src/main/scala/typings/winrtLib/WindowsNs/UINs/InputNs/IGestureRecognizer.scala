@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGestureRecognizer extends js.Object {
   var autoProcessInertia: scala.Boolean
   var crossSlideExact: scala.Boolean

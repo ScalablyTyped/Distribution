@@ -12,22 +12,22 @@ sealed trait GetOption extends js.Object
 @js.native
 object GetOption extends js.Object {
   /**
-       * A user-specified version has been supplied.
-       */
+    * A user-specified version has been supplied.
+    */
   @js.native
   sealed trait Custom
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.GetOption
   
   /**
-       * Use the latest changeset at the time the build is started.
-       */
+    * Use the latest changeset at the time the build is started.
+    */
   @js.native
   sealed trait LatestOnBuild
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.GetOption
   
   /**
-       * Use the latest changeset at the time the build is queued.
-       */
+    * Use the latest changeset at the time the build is queued.
+    */
   @js.native
   sealed trait LatestOnQueue
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.GetOption

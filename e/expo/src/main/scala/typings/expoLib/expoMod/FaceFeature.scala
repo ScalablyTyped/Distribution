@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FaceFeature extends js.Object {
   var bottomMouthPosition: js.UndefOr[Point] = js.undefined
   var bounds: expoLib.Anon_SizeOrigin

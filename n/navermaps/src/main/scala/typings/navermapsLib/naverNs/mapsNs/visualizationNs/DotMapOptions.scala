@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DotMapOptions extends js.Object {
   var data: js.Array[navermapsLib.naverNs.mapsNs.LatLng] | js.Array[navermapsLib.naverNs.mapsNs.PointArrayLiteral] | js.Array[WeightedLocation]
   var fillColor: js.UndefOr[java.lang.String] = js.undefined

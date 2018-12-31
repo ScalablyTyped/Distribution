@@ -20,9 +20,9 @@ abstract class WebAccountProviderRequestTokenOperation () extends js.Object {
   /** Informs the activating app that the operation completed successfully. */
   def reportCompleted(): scala.Unit = js.native
   /**
-                           * Informs the activating app that the operation encountered an error.
-                           * @param value The type of error encountered.
-                           */
+    * Informs the activating app that the operation encountered an error.
+    * @param value The type of error encountered.
+    */
   def reportError(value: winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.CoreNs.WebProviderError): scala.Unit = js.native
   /** Informs the activating app that the user cancelled the operation. */
   def reportUserCanceled(): scala.Unit = js.native

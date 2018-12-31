@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Builder extends js.Object {
   def bind(values: js.Any*): Builder
   def exec(): js.Promise[js.Array[js.Object]]

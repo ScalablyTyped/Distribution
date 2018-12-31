@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VastCreative extends js.Object {
   var adId: java.lang.String
   var apiFramework: js.Any

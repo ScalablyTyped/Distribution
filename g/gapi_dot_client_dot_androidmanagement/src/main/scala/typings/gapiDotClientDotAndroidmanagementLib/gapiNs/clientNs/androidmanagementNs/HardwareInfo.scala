@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HardwareInfo extends js.Object {
   /** Battery shutdown temperature thresholds in Celsius for each battery on the device. */
   var batteryShutdownTemperatures: js.UndefOr[js.Array[scala.Double]] = js.undefined

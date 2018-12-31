@@ -13,9 +13,9 @@ class PopoutMenu protected ()
   def closeMenu(): scala.Unit = js.native
   //#region Methods
   /**
-          * Releases resources held by an object that implements the Sys.IDisposable interface.
-          * Implement the dispose method to close or release resources held by an object, or to prepare an object for reuse.
-          */
+    * Releases resources held by an object that implements the Sys.IDisposable interface.
+    * Implement the dispose method to close or release resources held by an object, or to prepare an object for reuse.
+    */
   /* CompleteClass */
   override def dispose(): scala.Unit = js.native
   def launchMenu(): scala.Unit = js.native

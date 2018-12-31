@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestAttachment extends js.Object {
   var attachmentType: AttachmentType
   var comment: java.lang.String

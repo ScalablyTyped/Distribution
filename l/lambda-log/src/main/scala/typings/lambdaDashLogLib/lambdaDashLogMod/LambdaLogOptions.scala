@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LambdaLogOptions extends js.Object {
   // Enable debugging mode (log.debug messages)
   var debug: js.UndefOr[scala.Boolean] = js.undefined

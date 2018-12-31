@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait StageCategory extends js.Object
 
 /**
-     * Enumeration of stage categories.
-     */
+  * Enumeration of stage categories.
+  */
 @JSGlobal("XrmEnum.StageCategory")
 @js.native
 object StageCategory extends js.Object {

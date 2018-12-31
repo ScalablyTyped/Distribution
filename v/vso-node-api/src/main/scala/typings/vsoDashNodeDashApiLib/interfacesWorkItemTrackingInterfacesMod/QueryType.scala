@@ -12,22 +12,22 @@ sealed trait QueryType extends js.Object
 @js.native
 object QueryType extends js.Object {
   /**
-       * Gets a flat list of work items.
-       */
+    * Gets a flat list of work items.
+    */
   @js.native
   sealed trait Flat
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.QueryType
   
   /**
-       * Gets a list of work items and their direct links.
-       */
+    * Gets a list of work items and their direct links.
+    */
   @js.native
   sealed trait OneHop
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.QueryType
   
   /**
-       * Gets a tree of work items showing their link hierarchy.
-       */
+    * Gets a tree of work items showing their link hierarchy.
+    */
   @js.native
   sealed trait Tree
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.QueryType

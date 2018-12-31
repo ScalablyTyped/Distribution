@@ -13,6 +13,6 @@ object srcRender3InterfacesInjectorModMembers extends js.Object {
   val PARENT_INJECTOR: /* 8 */ scala.Double = js.native
   val TNODE: /* 8 */ scala.Double = js.native
   val unusedValueExportToPlacateAjd: /* 1 */ scala.Double = js.native
-  def isFactory(obj: js.Any): /* is NodeInjectorFactory */scala.Boolean = js.native
+  def isFactory(obj: js.Any): /* is @angular/core.@angular/core/src/render3/interfaces/injector.NodeInjectorFactory */ scala.Boolean = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScrollAreaProps
   extends reactLib.reactMod.ReactNs.Props[ScrollArea] {
   var className: js.UndefOr[java.lang.String] = js.undefined

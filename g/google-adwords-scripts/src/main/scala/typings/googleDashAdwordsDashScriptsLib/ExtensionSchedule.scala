@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 // Video
 // Non-entity
-
 trait ExtensionSchedule extends js.Object {
   def getDayOfWeek(): DayOfWeekString
   def getEndHour(): scala.Double

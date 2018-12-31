@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActiveXObject extends js.Object {
   def on(
     obj: activexDashWiaLib.WIANs.DeviceManager,

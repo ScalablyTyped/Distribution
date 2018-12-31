@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaymentPathRecord extends Record {
   var destination_amount: java.lang.String
   var destination_asset_code: java.lang.String

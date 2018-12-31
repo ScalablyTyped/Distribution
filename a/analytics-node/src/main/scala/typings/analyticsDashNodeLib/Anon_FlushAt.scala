@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FlushAt extends js.Object {
   var enable: js.UndefOr[scala.Boolean] = js.undefined
   var flushAfter: js.UndefOr[scala.Double] = js.undefined

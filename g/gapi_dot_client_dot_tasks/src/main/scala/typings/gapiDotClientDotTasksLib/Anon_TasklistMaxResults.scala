@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TasklistMaxResults extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -30,9 +29,9 @@ trait Anon_TasklistMaxResults extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** Flag indicating whether completed tasks are returned in the result. Optional. The default is True. */
   var showCompleted: js.UndefOr[scala.Boolean] = js.undefined
@@ -43,9 +42,9 @@ trait Anon_TasklistMaxResults extends js.Object {
   /** Task list identifier. */
   var tasklist: java.lang.String
   /**
-                   * Lower bound for a task's last modification time (as a RFC 3339 timestamp) to filter by. Optional. The default is not to filter by last modification
-                   * time.
-                   */
+    * Lower bound for a task's last modification time (as a RFC 3339 timestamp) to filter by. Optional. The default is not to filter by last modification
+    * time.
+    */
   var updatedMin: js.UndefOr[java.lang.String] = js.undefined
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[java.lang.String] = js.undefined

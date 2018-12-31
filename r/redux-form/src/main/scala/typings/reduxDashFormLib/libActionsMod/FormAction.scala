@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FormAction
   extends reduxLib.reduxMod.Action[js.Any] {
   var error: js.UndefOr[js.Any] = js.undefined

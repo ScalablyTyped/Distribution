@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NotyCallbackOptions extends js.Object {
   var afterClose: js.UndefOr[js.Function] = js.undefined
   var afterShow: js.UndefOr[js.Function] = js.undefined

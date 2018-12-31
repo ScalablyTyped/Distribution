@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClockTriggerBuilder extends js.Object {
   def after(durationMilliseconds: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): ClockTriggerBuilder
   def at(date: stdLib.Date): ClockTriggerBuilder

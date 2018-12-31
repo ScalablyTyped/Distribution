@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ArrayUnshift extends js.Object {
   var arrayInsert: js.Function4[
     /* form */ java.lang.String, 
@@ -96,23 +95,18 @@ trait Anon_ArrayUnshift extends js.Object {
     /* form */ java.lang.String, 
     /* keepTouched */ scala.Boolean, 
     /* persistentSubmitErrors */ scala.Boolean, 
-    /* repeated */java.lang.String, 
+    /* repeated */ java.lang.String, 
     reduxDashFormLib.libActionsMod.FormAction
   ]
   var clearSubmit: js.Function1[/* form */ java.lang.String, reduxDashFormLib.libActionsMod.FormAction]
   var clearSubmitErrors: js.Function1[/* form */ java.lang.String, reduxDashFormLib.libActionsMod.FormAction]
-  var destroy: js.Function1[/* repeated */java.lang.String, reduxDashFormLib.libActionsMod.FormAction]
+  var destroy: js.Function1[/* repeated */ java.lang.String, reduxDashFormLib.libActionsMod.FormAction]
   var focus: js.Function2[
     /* form */ java.lang.String, 
     /* field */ java.lang.String, 
     reduxDashFormLib.libActionsMod.FormAction
   ]
-  var initialize: js.Function3[
-    /* form */ java.lang.String, 
-    /* data */ js.Any, 
-    /* options */ js.UndefOr[stdLib.Partial[reduxDashFormLib.libActionsMod.InitializeOptions]], 
-    reduxDashFormLib.libActionsMod.FormAction
-  ]
+  var initialize: Anon_Form
   var registerField: js.Function3[
     /* form */ java.lang.String, 
     /* name */ java.lang.String, 
@@ -122,12 +116,12 @@ trait Anon_ArrayUnshift extends js.Object {
   var reset: js.Function1[/* form */ java.lang.String, reduxDashFormLib.libActionsMod.FormAction]
   var setSubmitFailed: js.Function2[
     /* form */ java.lang.String, 
-    /* repeated */java.lang.String, 
+    /* repeated */ java.lang.String, 
     reduxDashFormLib.libActionsMod.FormAction
   ]
   var setSubmitSucceeded: js.Function2[
     /* form */ java.lang.String, 
-    /* repeated */java.lang.String, 
+    /* repeated */ java.lang.String, 
     reduxDashFormLib.libActionsMod.FormAction
   ]
   var startAsyncValidation: js.Function1[/* form */ java.lang.String, reduxDashFormLib.libActionsMod.FormAction]
@@ -145,7 +139,7 @@ trait Anon_ArrayUnshift extends js.Object {
   var submit: js.Function1[/* form */ java.lang.String, reduxDashFormLib.libActionsMod.FormAction]
   var touch: js.Function2[
     /* form */ java.lang.String, 
-    /* repeated */java.lang.String, 
+    /* repeated */ java.lang.String, 
     reduxDashFormLib.libActionsMod.FormAction
   ]
   var unregisterField: js.Function2[
@@ -155,20 +149,10 @@ trait Anon_ArrayUnshift extends js.Object {
   ]
   var untouch: js.Function2[
     /* form */ java.lang.String, 
-    /* repeated */java.lang.String, 
+    /* repeated */ java.lang.String, 
     reduxDashFormLib.libActionsMod.FormAction
   ]
-  var updateSyncErrors: js.Function3[
-    /* from */ java.lang.String, 
-    /* syncErrors */ reduxDashFormLib.reduxDashFormMod.FormErrors[stdLib.FormData, _], 
-    /* error */ js.Any, 
-    reduxDashFormLib.libActionsMod.FormAction
-  ]
-  var updateSyncWarnings: js.Function3[
-    /* form */ java.lang.String, 
-    /* syncWarnings */ reduxDashFormLib.reduxDashFormMod.FormWarnings[stdLib.FormData, _], 
-    /* warning */ js.Any, 
-    reduxDashFormLib.libActionsMod.FormAction
-  ]
+  var updateSyncErrors: Anon_From
+  var updateSyncWarnings: Anon_FormSyncWarnings
 }
 

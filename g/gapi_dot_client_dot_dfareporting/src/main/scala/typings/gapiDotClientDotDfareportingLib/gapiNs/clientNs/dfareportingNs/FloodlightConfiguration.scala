@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FloodlightConfiguration extends js.Object {
   /** Account ID of this floodlight configuration. This is a read-only field that can be left blank. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined
@@ -16,9 +15,9 @@ trait FloodlightConfiguration extends js.Object {
   /** Whether advertiser data is shared with Google Analytics. */
   var analyticsDataSharingEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               * Whether the exposure-to-conversion report is enabled. This report shows detailed pathway information on up to 10 of the most recent ad exposures seen
-               * by a user before converting.
-               */
+    * Whether the exposure-to-conversion report is enabled. This report shows detailed pathway information on up to 10 of the most recent ad exposures seen
+    * by a user before converting.
+    */
   var exposureToConversionEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /** Day that will be counted as the first day of the week in reports. This is a required field. */
   var firstDayOfWeek: js.UndefOr[java.lang.String] = js.undefined

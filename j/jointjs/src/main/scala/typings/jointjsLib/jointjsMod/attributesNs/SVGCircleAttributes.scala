@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGCircleAttributes extends SVGAttributes {
   var cx: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var cy: js.UndefOr[java.lang.String | scala.Double] = js.undefined

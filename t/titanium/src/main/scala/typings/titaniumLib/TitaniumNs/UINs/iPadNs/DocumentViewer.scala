@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 			 * A DocumentViewer provides in-app support for managing user interactions with files on the
 			 * local system.
 			 */
-
 trait DocumentViewer
   extends titaniumLib.TitaniumNs.Proxy {
   /**

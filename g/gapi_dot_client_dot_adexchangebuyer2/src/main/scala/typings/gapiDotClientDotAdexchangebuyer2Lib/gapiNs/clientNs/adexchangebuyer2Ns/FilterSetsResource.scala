@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilterSetsResource extends js.Object {
   var bidMetrics: BidMetricsResource
   var bidResponseErrors: BidResponseErrorsResource
@@ -18,16 +17,16 @@ trait FilterSetsResource extends js.Object {
   /** Creates the specified filter set for the account with the given account ID. */
   def create(request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenIsTransient): gapiDotClientLib.gapiNs.clientNs.Request[FilterSet]
   /**
-               * Deletes the requested filter set from the account with the given account
-               * ID.
-               */
+    * Deletes the requested filter set from the account with the given account
+    * ID.
+    */
   def delete(
     request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenPrettyPrintBearertokenAccountIdCallbackQuotaUser
   ): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
   /**
-               * Retrieves the requested filter set for the account with the given account
-               * ID.
-               */
+    * Retrieves the requested filter set for the account with the given account
+    * ID.
+    */
   def get(
     request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenPrettyPrintBearertokenAccountIdCallbackQuotaUser
   ): gapiDotClientLib.gapiNs.clientNs.Request[FilterSet]

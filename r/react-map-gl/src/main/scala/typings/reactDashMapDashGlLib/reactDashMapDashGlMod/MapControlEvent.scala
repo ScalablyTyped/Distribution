@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapControlEvent extends js.Object {
   var center: Center
   var delta: js.UndefOr[scala.Double] = js.undefined

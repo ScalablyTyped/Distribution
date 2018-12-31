@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodeRefOffset extends js.Object {
   /** 节点的dataset */
   var dataset: js.Any

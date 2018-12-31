@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object codeactionsNs extends js.Object {
   /**
-       * In version 7.21.0: introduced
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IBasicParameterType because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * In version 7.21.0: introduced
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IBasicParameterType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class BasicParameterType protected () extends ParameterType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
@@ -19,55 +19,55 @@ object codeactionsNs extends js.Object {
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IBooleanType because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * In version 7.21.0: introduced
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IBooleanType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class BooleanType protected () extends PrimitiveType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ICodeAction because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ICodeAction because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   abstract class CodeAction protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
     /**
-             * In version 7.21.0: introduced
-             */
+      * In version 7.21.0: introduced
+      */
     val actionParameters: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[CodeActionParameter] = js.native
     /**
-             * In version 7.21.0: introduced
-             */
+      * In version 7.21.0: introduced
+      */
     var actionReturnType: Type = js.native
     /**
-             * In version 7.21.0: introduced
-             */
+      * In version 7.21.0: introduced
+      */
     val actionTypeParameters: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[TypeParameter] = js.native
     /**
-             * In version 7.21.0: introduced
-             */
+      * In version 7.21.0: introduced
+      */
     var modelerActionInfo: MicroflowActionInfo | scala.Null = js.native
   }
   
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ICodeActionParameter because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ICodeActionParameter because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   abstract class CodeActionParameter protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     /**
-             * In version 7.21.0: introduced
-             */
+      * In version 7.21.0: introduced
+      */
     var actionParameterType: ParameterType = js.native
     /**
-             * In version 7.18.0: introduced
-             */
+      * In version 7.18.0: introduced
+      */
     var category: java.lang.String = js.native
     val containerAsCodeAction: CodeAction = js.native
     val containerAsJavaAction: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction = js.native
     /**
-             * In version 6.10.0: introduced
-             */
+      * In version 6.10.0: introduced
+      */
     var description: java.lang.String = js.native
     @JSName("model")
     var model_CodeActionParameter: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
@@ -76,9 +76,9 @@ object codeactionsNs extends js.Object {
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IConcreteEntityType because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * In version 7.21.0: introduced
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IConcreteEntityType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class ConcreteEntityType protected () extends EntityType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
@@ -87,36 +87,36 @@ object codeactionsNs extends js.Object {
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IDateTimeType because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * In version 7.21.0: introduced
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IDateTimeType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class DateTimeType protected () extends PrimitiveType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IDecimalType because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * In version 7.21.0: introduced
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IDecimalType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class DecimalType protected () extends PrimitiveType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IEntityType because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * In version 7.21.0: introduced
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IEntityType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   abstract class EntityType protected () extends Type {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IEntityTypeParameterType because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * In version 7.21.0: introduced
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IEntityTypeParameterType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class EntityTypeParameterType protected () extends ParameterType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
@@ -124,9 +124,9 @@ object codeactionsNs extends js.Object {
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IEnumerationType because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * In version 7.21.0: introduced
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IEnumerationType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class EnumerationType protected () extends Type {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
@@ -135,28 +135,28 @@ object codeactionsNs extends js.Object {
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IFloatType because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * In version 7.21.0: introduced
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IFloatType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class FloatType protected () extends PrimitiveType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   trait IBasicParameterType extends IParameterType {
     /**
-             * This property is required and cannot be set to null.
-             */
+      * This property is required and cannot be set to null.
+      */
     val `type`: IType = js.native
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   trait IBooleanType extends IPrimitiveType
   
@@ -164,22 +164,22 @@ object codeactionsNs extends js.Object {
   trait ICodeAction
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.IDocument {
     /**
-             * In version 7.21.0: introduced
-             */
+      * In version 7.21.0: introduced
+      */
     val actionParameters: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[ICodeActionParameter] = js.native
     /**
-             * This property is required and cannot be set to null.
-             *
-             * In version 7.21.0: introduced
-             */
+      * This property is required and cannot be set to null.
+      *
+      * In version 7.21.0: introduced
+      */
     val actionReturnType: IType = js.native
     /**
-             * In version 7.21.0: introduced
-             */
+      * In version 7.21.0: introduced
+      */
     val actionTypeParameters: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[ITypeParameter] = js.native
     /**
-             * In version 7.21.0: introduced
-             */
+      * In version 7.21.0: introduced
+      */
     val modelerActionInfo: IMicroflowActionInfo | scala.Null = js.native
   }
   
@@ -188,16 +188,16 @@ object codeactionsNs extends js.Object {
     extends mendixmodelsdkLib.distSdkInternalElementsMod.IElement
        with mendixmodelsdkLib.distSdkInternalElementsMod.IByNameReferrable {
     /**
-             * This property is required and cannot be set to null.
-             *
-             * In version 7.21.0: introduced
-             */
+      * This property is required and cannot be set to null.
+      *
+      * In version 7.21.0: introduced
+      */
     val actionParameterType: IParameterType = js.native
     val containerAsCodeAction: ICodeAction = js.native
     val containerAsJavaAction: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IJavaAction = js.native
     /**
-             * In version 6.10.0: introduced
-             */
+      * In version 6.10.0: introduced
+      */
     val description: java.lang.String = js.native
     @JSName("model")
     val model_ICodeActionParameter: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
@@ -205,81 +205,81 @@ object codeactionsNs extends js.Object {
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   trait IConcreteEntityType extends IEntityType {
     /**
-             * This property is required and cannot be set to null.
-             */
+      * This property is required and cannot be set to null.
+      */
     val entity: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IEntity = js.native
     val entityQualifiedName: java.lang.String = js.native
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   trait IDateTimeType extends IPrimitiveType
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   trait IDecimalType extends IPrimitiveType
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   trait IEntityType extends IType
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   trait IEntityTypeParameterType extends IParameterType {
     val typeParameter: ITypeParameter | scala.Null = js.native
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   trait IEnumerationType extends IType {
     /**
-             * This property is required and cannot be set to null.
-             */
+      * This property is required and cannot be set to null.
+      */
     val enumeration: mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.IEnumeration = js.native
     val enumerationQualifiedName: java.lang.String = js.native
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   trait IFloatType extends IPrimitiveType
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   trait IIntegerType extends IPrimitiveType
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   trait IListType extends IType {
     /**
-             * This property is required and cannot be set to null.
-             */
+      * This property is required and cannot be set to null.
+      */
     val parameter: IEntityType = js.native
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   trait IMicroflowActionInfo
     extends mendixmodelsdkLib.distSdkInternalElementsMod.IElement {
@@ -293,11 +293,11 @@ object codeactionsNs extends js.Object {
   }
   
   /**
-       * Interfaces and instance classes for types from the Mendix sub meta model `CodeActions`.
-       */
+    * Interfaces and instance classes for types from the Mendix sub meta model `CodeActions`.
+    */
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   trait IParameterType
     extends mendixmodelsdkLib.distSdkInternalElementsMod.IElement {
@@ -307,31 +307,31 @@ object codeactionsNs extends js.Object {
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   trait IParameterizedEntityType extends IEntityType {
     /**
-             * This property is required and cannot be set to null.
-             */
+      * This property is required and cannot be set to null.
+      */
     val typeParameter: ITypeParameter = js.native
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   trait IPrimitiveType extends IType
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   trait IStringType extends IPrimitiveType
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   trait IType
     extends mendixmodelsdkLib.distSdkInternalElementsMod.IElement {
@@ -343,8 +343,8 @@ object codeactionsNs extends js.Object {
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   trait ITypeParameter
     extends mendixmodelsdkLib.distSdkInternalElementsMod.IElement
@@ -356,18 +356,18 @@ object codeactionsNs extends js.Object {
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IIntegerType because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * In version 7.21.0: introduced
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IIntegerType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class IntegerType protected () extends PrimitiveType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IListType because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * In version 7.21.0: introduced
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IListType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class ListType protected () extends Type {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
@@ -375,9 +375,9 @@ object codeactionsNs extends js.Object {
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IMicroflowActionInfo because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * In version 7.21.0: introduced
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IMicroflowActionInfo because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class MicroflowActionInfo protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
@@ -392,9 +392,9 @@ object codeactionsNs extends js.Object {
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IParameterType because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * In version 7.21.0: introduced
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IParameterType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   abstract class ParameterType protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
@@ -405,9 +405,9 @@ object codeactionsNs extends js.Object {
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IParameterizedEntityType because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * In version 7.21.0: introduced
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IParameterizedEntityType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class ParameterizedEntityType protected () extends EntityType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
@@ -415,27 +415,27 @@ object codeactionsNs extends js.Object {
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IPrimitiveType because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * In version 7.21.0: introduced
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IPrimitiveType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   abstract class PrimitiveType protected () extends Type {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IStringType because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * In version 7.21.0: introduced
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IStringType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class StringType protected () extends PrimitiveType {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IType because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * In version 7.21.0: introduced
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IType because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   abstract class Type protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
@@ -448,9 +448,9 @@ object codeactionsNs extends js.Object {
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ITypeParameter because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * In version 7.21.0: introduced
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ITypeParameter because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class TypeParameter protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
@@ -463,50 +463,50 @@ object codeactionsNs extends js.Object {
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   object BasicParameterType extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCodeactionsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new BasicParameterType instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new BasicParameterType instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.BasicParameterType = js.native
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   object BooleanType extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCodeactionsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new BooleanType instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new BooleanType instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.BooleanType = js.native
     /**
-             * Creates and returns a new BooleanType instance in the SDK and on the server.
-             * The new BooleanType will be automatically stored in the 'type' property
-             * of the parent BasicParameterType element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new BooleanType instance in the SDK and on the server.
+      * The new BooleanType will be automatically stored in the 'type' property
+      * of the parent BasicParameterType element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInBasicParameterTypeUnderType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.BasicParameterType): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.BooleanType = js.native
     /**
-             * Creates and returns a new BooleanType instance in the SDK and on the server.
-             * The new BooleanType will be automatically stored in the 'actionReturnType' property
-             * of the parent CodeAction element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new BooleanType instance in the SDK and on the server.
+      * The new BooleanType will be automatically stored in the 'actionReturnType' property
+      * of the parent CodeAction element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInCodeActionUnderActionReturnType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.BooleanType = js.native
   }
   
@@ -523,116 +523,116 @@ object codeactionsNs extends js.Object {
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   object ConcreteEntityType extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCodeactionsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new ConcreteEntityType instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new ConcreteEntityType instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ConcreteEntityType = js.native
     /**
-             * Creates and returns a new ConcreteEntityType instance in the SDK and on the server.
-             * The new ConcreteEntityType will be automatically stored in the 'type' property
-             * of the parent BasicParameterType element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new ConcreteEntityType instance in the SDK and on the server.
+      * The new ConcreteEntityType will be automatically stored in the 'type' property
+      * of the parent BasicParameterType element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInBasicParameterTypeUnderType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.BasicParameterType): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ConcreteEntityType = js.native
     /**
-             * Creates and returns a new ConcreteEntityType instance in the SDK and on the server.
-             * The new ConcreteEntityType will be automatically stored in the 'actionReturnType' property
-             * of the parent CodeAction element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new ConcreteEntityType instance in the SDK and on the server.
+      * The new ConcreteEntityType will be automatically stored in the 'actionReturnType' property
+      * of the parent CodeAction element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInCodeActionUnderActionReturnType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ConcreteEntityType = js.native
     /**
-             * Creates and returns a new ConcreteEntityType instance in the SDK and on the server.
-             * The new ConcreteEntityType will be automatically stored in the 'parameter' property
-             * of the parent ListType element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new ConcreteEntityType instance in the SDK and on the server.
+      * The new ConcreteEntityType will be automatically stored in the 'parameter' property
+      * of the parent ListType element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInListTypeUnderParameter(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ListType): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ConcreteEntityType = js.native
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   object DateTimeType extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCodeactionsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new DateTimeType instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new DateTimeType instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.DateTimeType = js.native
     /**
-             * Creates and returns a new DateTimeType instance in the SDK and on the server.
-             * The new DateTimeType will be automatically stored in the 'type' property
-             * of the parent BasicParameterType element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new DateTimeType instance in the SDK and on the server.
+      * The new DateTimeType will be automatically stored in the 'type' property
+      * of the parent BasicParameterType element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInBasicParameterTypeUnderType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.BasicParameterType): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.DateTimeType = js.native
     /**
-             * Creates and returns a new DateTimeType instance in the SDK and on the server.
-             * The new DateTimeType will be automatically stored in the 'actionReturnType' property
-             * of the parent CodeAction element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new DateTimeType instance in the SDK and on the server.
+      * The new DateTimeType will be automatically stored in the 'actionReturnType' property
+      * of the parent CodeAction element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInCodeActionUnderActionReturnType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.DateTimeType = js.native
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   object DecimalType extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCodeactionsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new DecimalType instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new DecimalType instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.DecimalType = js.native
     /**
-             * Creates and returns a new DecimalType instance in the SDK and on the server.
-             * The new DecimalType will be automatically stored in the 'type' property
-             * of the parent BasicParameterType element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new DecimalType instance in the SDK and on the server.
+      * The new DecimalType will be automatically stored in the 'type' property
+      * of the parent BasicParameterType element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInBasicParameterTypeUnderType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.BasicParameterType): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.DecimalType = js.native
     /**
-             * Creates and returns a new DecimalType instance in the SDK and on the server.
-             * The new DecimalType will be automatically stored in the 'actionReturnType' property
-             * of the parent CodeAction element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new DecimalType instance in the SDK and on the server.
+      * The new DecimalType will be automatically stored in the 'actionReturnType' property
+      * of the parent CodeAction element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInCodeActionUnderActionReturnType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.DecimalType = js.native
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   object EntityType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -640,179 +640,179 @@ object codeactionsNs extends js.Object {
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   object EntityTypeParameterType extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCodeactionsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new EntityTypeParameterType instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new EntityTypeParameterType instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.EntityTypeParameterType = js.native
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   object EnumerationType extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCodeactionsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new EnumerationType instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new EnumerationType instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.EnumerationType = js.native
     /**
-             * Creates and returns a new EnumerationType instance in the SDK and on the server.
-             * The new EnumerationType will be automatically stored in the 'type' property
-             * of the parent BasicParameterType element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new EnumerationType instance in the SDK and on the server.
+      * The new EnumerationType will be automatically stored in the 'type' property
+      * of the parent BasicParameterType element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInBasicParameterTypeUnderType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.BasicParameterType): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.EnumerationType = js.native
     /**
-             * Creates and returns a new EnumerationType instance in the SDK and on the server.
-             * The new EnumerationType will be automatically stored in the 'actionReturnType' property
-             * of the parent CodeAction element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new EnumerationType instance in the SDK and on the server.
+      * The new EnumerationType will be automatically stored in the 'actionReturnType' property
+      * of the parent CodeAction element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInCodeActionUnderActionReturnType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.EnumerationType = js.native
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   object FloatType extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCodeactionsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new FloatType instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new FloatType instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.FloatType = js.native
     /**
-             * Creates and returns a new FloatType instance in the SDK and on the server.
-             * The new FloatType will be automatically stored in the 'type' property
-             * of the parent BasicParameterType element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new FloatType instance in the SDK and on the server.
+      * The new FloatType will be automatically stored in the 'type' property
+      * of the parent BasicParameterType element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInBasicParameterTypeUnderType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.BasicParameterType): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.FloatType = js.native
     /**
-             * Creates and returns a new FloatType instance in the SDK and on the server.
-             * The new FloatType will be automatically stored in the 'actionReturnType' property
-             * of the parent CodeAction element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new FloatType instance in the SDK and on the server.
+      * The new FloatType will be automatically stored in the 'actionReturnType' property
+      * of the parent CodeAction element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInCodeActionUnderActionReturnType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.FloatType = js.native
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   object IntegerType extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCodeactionsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new IntegerType instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new IntegerType instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IntegerType = js.native
     /**
-             * Creates and returns a new IntegerType instance in the SDK and on the server.
-             * The new IntegerType will be automatically stored in the 'type' property
-             * of the parent BasicParameterType element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new IntegerType instance in the SDK and on the server.
+      * The new IntegerType will be automatically stored in the 'type' property
+      * of the parent BasicParameterType element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInBasicParameterTypeUnderType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.BasicParameterType): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IntegerType = js.native
     /**
-             * Creates and returns a new IntegerType instance in the SDK and on the server.
-             * The new IntegerType will be automatically stored in the 'actionReturnType' property
-             * of the parent CodeAction element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new IntegerType instance in the SDK and on the server.
+      * The new IntegerType will be automatically stored in the 'actionReturnType' property
+      * of the parent CodeAction element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInCodeActionUnderActionReturnType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IntegerType = js.native
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   object ListType extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCodeactionsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new ListType instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new ListType instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ListType = js.native
     /**
-             * Creates and returns a new ListType instance in the SDK and on the server.
-             * The new ListType will be automatically stored in the 'type' property
-             * of the parent BasicParameterType element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new ListType instance in the SDK and on the server.
+      * The new ListType will be automatically stored in the 'type' property
+      * of the parent BasicParameterType element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInBasicParameterTypeUnderType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.BasicParameterType): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ListType = js.native
     /**
-             * Creates and returns a new ListType instance in the SDK and on the server.
-             * The new ListType will be automatically stored in the 'actionReturnType' property
-             * of the parent CodeAction element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new ListType instance in the SDK and on the server.
+      * The new ListType will be automatically stored in the 'actionReturnType' property
+      * of the parent CodeAction element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInCodeActionUnderActionReturnType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ListType = js.native
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   object MicroflowActionInfo extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCodeactionsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new MicroflowActionInfo instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new MicroflowActionInfo instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.MicroflowActionInfo = js.native
     /**
-             * Creates and returns a new MicroflowActionInfo instance in the SDK and on the server.
-             * The new MicroflowActionInfo will be automatically stored in the 'modelerActionInfo' property
-             * of the parent CodeAction element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new MicroflowActionInfo instance in the SDK and on the server.
+      * The new MicroflowActionInfo will be automatically stored in the 'modelerActionInfo' property
+      * of the parent CodeAction element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createIn(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.MicroflowActionInfo = js.native
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   object ParameterType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -820,50 +820,50 @@ object codeactionsNs extends js.Object {
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   object ParameterizedEntityType extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCodeactionsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new ParameterizedEntityType instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new ParameterizedEntityType instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ParameterizedEntityType = js.native
     /**
-             * Creates and returns a new ParameterizedEntityType instance in the SDK and on the server.
-             * The new ParameterizedEntityType will be automatically stored in the 'type' property
-             * of the parent BasicParameterType element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new ParameterizedEntityType instance in the SDK and on the server.
+      * The new ParameterizedEntityType will be automatically stored in the 'type' property
+      * of the parent BasicParameterType element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInBasicParameterTypeUnderType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.BasicParameterType): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ParameterizedEntityType = js.native
     /**
-             * Creates and returns a new ParameterizedEntityType instance in the SDK and on the server.
-             * The new ParameterizedEntityType will be automatically stored in the 'actionReturnType' property
-             * of the parent CodeAction element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new ParameterizedEntityType instance in the SDK and on the server.
+      * The new ParameterizedEntityType will be automatically stored in the 'actionReturnType' property
+      * of the parent CodeAction element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInCodeActionUnderActionReturnType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ParameterizedEntityType = js.native
     /**
-             * Creates and returns a new ParameterizedEntityType instance in the SDK and on the server.
-             * The new ParameterizedEntityType will be automatically stored in the 'parameter' property
-             * of the parent ListType element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new ParameterizedEntityType instance in the SDK and on the server.
+      * The new ParameterizedEntityType will be automatically stored in the 'parameter' property
+      * of the parent ListType element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInListTypeUnderParameter(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ListType): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ParameterizedEntityType = js.native
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   object PrimitiveType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -871,41 +871,41 @@ object codeactionsNs extends js.Object {
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   object StringType extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCodeactionsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new StringType instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new StringType instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.StringType = js.native
     /**
-             * Creates and returns a new StringType instance in the SDK and on the server.
-             * The new StringType will be automatically stored in the 'type' property
-             * of the parent BasicParameterType element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new StringType instance in the SDK and on the server.
+      * The new StringType will be automatically stored in the 'type' property
+      * of the parent BasicParameterType element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInBasicParameterTypeUnderType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.BasicParameterType): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.StringType = js.native
     /**
-             * Creates and returns a new StringType instance in the SDK and on the server.
-             * The new StringType will be automatically stored in the 'actionReturnType' property
-             * of the parent CodeAction element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new StringType instance in the SDK and on the server.
+      * The new StringType will be automatically stored in the 'actionReturnType' property
+      * of the parent CodeAction element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInCodeActionUnderActionReturnType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.StringType = js.native
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   object Type extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -913,17 +913,17 @@ object codeactionsNs extends js.Object {
   }
   
   /**
-       * In version 7.21.0: introduced
-       */
+    * In version 7.21.0: introduced
+    */
   @js.native
   object TypeParameter extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCodeactionsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new TypeParameter instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new TypeParameter instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.TypeParameter = js.native
   }
   

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RawForeignKeySpec extends js.Object {
   var action: js.UndefOr[lovefieldLib.lovefieldMod.lfNs.ConstraintAction] = js.undefined
   var local: java.lang.String

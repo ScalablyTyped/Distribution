@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ImageFormat extends js.Object
 
 /**
-     * [Api set: WordApi]
-     */
+  * [Api set: WordApi]
+  */
 @JSGlobal("Word.ImageFormat")
 @js.native
 object ImageFormat extends js.Object {

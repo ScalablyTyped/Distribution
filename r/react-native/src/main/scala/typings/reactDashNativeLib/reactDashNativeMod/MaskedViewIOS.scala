@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Dropped TsTypeConstructor() */ @JSImport("react-native", "MaskedViewIOS")
+- Dropped new Some()Some((args  : ...any))Some(: react-native.react-native.NativeMethodsMixin) */ @JSImport("react-native", "MaskedViewIOS")
 @js.native
 class MaskedViewIOS () extends js.Object
 

@@ -31,7 +31,7 @@ package object asyncMod {
     scala.Unit
   ]
   type AsyncFunctionEx[T, E] = js.Function1[
-    /* callback */ js.Function2[/* err */ js.UndefOr[E | scala.Null], /* repeated */T, scala.Unit], 
+    /* callback */ js.Function2[/* err */ js.UndefOr[E | scala.Null], /* repeated */ T, scala.Unit], 
     scala.Unit
   ]
   type AsyncIterator[T, E] = js.Function2[/* item */ T, /* callback */ ErrorCallback[E], scala.Unit]

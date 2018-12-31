@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateTaggedFormatterOptions extends js.Object {
   var colors: js.UndefOr[atIonicCliDashFrameworkLib.libColorsMod.Colors] = js.undefined
   var prefix: js.UndefOr[java.lang.String | js.Function0[java.lang.String]] = js.undefined

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Options pertaining to a Browserify instance.
- */
-
+  * Options pertaining to a Browserify instance.
+  */
 trait Options extends CustomOptions {
   // sets the list of built-ins to use, which by default is set in lib/builtins.js in this distribution.
   var builtins: js.UndefOr[

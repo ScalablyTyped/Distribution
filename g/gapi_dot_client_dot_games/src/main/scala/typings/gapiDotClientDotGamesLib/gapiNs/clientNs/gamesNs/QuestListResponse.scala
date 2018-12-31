@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QuestListResponse extends js.Object {
   /** The quests. */
   var items: js.UndefOr[js.Array[Quest]] = js.undefined

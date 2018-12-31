@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProxyHandler[T] extends js.Object {
   @JSName("apply")
   var apply: js.UndefOr[

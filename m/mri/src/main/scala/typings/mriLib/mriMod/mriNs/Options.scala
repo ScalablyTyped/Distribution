@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   /** Additional aliases for specific flags */
   var alias: js.UndefOr[DictionaryObject[ArrayOrString]] = js.undefined

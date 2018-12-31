@@ -45,22 +45,14 @@ trait ICommAngularStatic extends js.Object {
     commandConfig: ICommandConfig
   ): scala.Unit = js.native
   /**
-           * Use this function to create and register a command with Commangular
-           *
-           * @param commandName It's the name of the command you are creating. It's useful to reference the command from the command provider.
-           * @param commandFunction It's the command class that will be executed when commangular runs this command.
+    * Use this function to create and register a command with Commangular
+    *
+    * @param commandName It's the name of the command you are creating. It's useful to reference the command from the command provider.
+    * @param commandFunction It's the command class that will be executed when commangular runs this command.
   		 * 				It has to be something that implements ICommand. Same as angular syntax
-           * @param commandConfig It's and object with paramaters to configure the command execution.
-           */
+    * @param commandConfig It's and object with paramaters to configure the command execution.
+    */
   def create(commandName: java.lang.String, commandFunction: angularLib.angularMod.Global.Function): scala.Unit = js.native
-  /**
-           * Use this function to create and register a command with Commangular
-           *
-           * @param commandName It's the name of the command you are creating. It's useful to reference the command from the command provider.
-           * @param commandFunction It's the command class that will be executed when commangular runs this command.
-  		 * 				It has to be something that implements ICommand. Same as angular syntax
-           * @param commandConfig It's and object with paramaters to configure the command execution.
-           */
   def create(
     commandName: java.lang.String,
     commandFunction: angularLib.angularMod.Global.Function,

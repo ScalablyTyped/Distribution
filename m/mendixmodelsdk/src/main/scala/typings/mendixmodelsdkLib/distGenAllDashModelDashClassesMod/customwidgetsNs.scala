@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object customwidgetsNs extends js.Object {
   /**
-       * Interfaces and instance classes for types from the Mendix sub meta model `CustomWidgets`.
-       */
+    * Interfaces and instance classes for types from the Mendix sub meta model `CustomWidgets`.
+    */
   @js.native
   class CustomWidget protected ()
     extends mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget {
@@ -98,431 +98,431 @@ object customwidgetsNs extends js.Object {
     extends mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum
   
   /**
-       * Interfaces and instance classes for types from the Mendix sub meta model `CustomWidgets`.
-       */
+    * Interfaces and instance classes for types from the Mendix sub meta model `CustomWidgets`.
+    */
   @js.native
   object CustomWidget extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCustomwidgetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widget' property
-             * of the parent pages.BuildingBlock element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.7.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widget' property
+      * of the parent pages.BuildingBlock element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.7.0 to 7.14.0
+      */
     def createInBuildingBlockUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.BuildingBlock): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widgets' property
-             * of the parent pages.BuildingBlock element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.15.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent pages.BuildingBlock element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.15.0 and higher
+      */
     def createInBuildingBlockUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.BuildingBlock): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'footerWidget' property
-             * of the parent pages.DataView element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.7.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'footerWidget' property
+      * of the parent pages.DataView element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.7.0 to 7.14.0
+      */
     def createInDataViewUnderFooterWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.DataView): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'footerWidgets' property
-             * of the parent pages.DataView element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.15.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'footerWidgets' property
+      * of the parent pages.DataView element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.15.0 and higher
+      */
     def createInDataViewUnderFooterWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.DataView): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widget' property
-             * of the parent pages.DataView element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widget' property
+      * of the parent pages.DataView element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.14.0
+      */
     def createInDataViewUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.DataView): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widgets' property
-             * of the parent pages.DataView element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.15.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent pages.DataView element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.15.0 and higher
+      */
     def createInDataViewUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.DataView): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widget' property
-             * of the parent pages.DivContainer element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widget' property
+      * of the parent pages.DivContainer element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.14.0
+      */
     def createInDivContainerUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.DivContainer): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widgets' property
-             * of the parent pages.DivContainer element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.15.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent pages.DivContainer element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.15.0 and higher
+      */
     def createInDivContainerUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.DivContainer): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widget' property
-             * of the parent pages.GroupBox element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widget' property
+      * of the parent pages.GroupBox element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.14.0
+      */
     def createInGroupBoxUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.GroupBox): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widgets' property
-             * of the parent pages.GroupBox element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.15.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent pages.GroupBox element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.15.0 and higher
+      */
     def createInGroupBoxUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.GroupBox): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'leftWidget' property
-             * of the parent pages.Header element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'leftWidget' property
+      * of the parent pages.Header element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.14.0
+      */
     def createInHeaderUnderLeftWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Header): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'leftWidgets' property
-             * of the parent pages.Header element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.15.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'leftWidgets' property
+      * of the parent pages.Header element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.15.0 and higher
+      */
     def createInHeaderUnderLeftWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Header): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'rightWidget' property
-             * of the parent pages.Header element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'rightWidget' property
+      * of the parent pages.Header element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.14.0
+      */
     def createInHeaderUnderRightWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Header): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'rightWidgets' property
-             * of the parent pages.Header element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.15.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'rightWidgets' property
+      * of the parent pages.Header element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.15.0 and higher
+      */
     def createInHeaderUnderRightWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Header): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widget' property
-             * of the parent pages.LayoutCallArgument element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widget' property
+      * of the parent pages.LayoutCallArgument element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.14.0
+      */
     def createInLayoutCallArgumentUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutCallArgument): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widgets' property
-             * of the parent pages.LayoutCallArgument element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.15.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent pages.LayoutCallArgument element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.15.0 and higher
+      */
     def createInLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutCallArgument): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widget' property
-             * of the parent pages.LayoutGridColumn element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widget' property
+      * of the parent pages.LayoutGridColumn element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.14.0
+      */
     def createInLayoutGridColumnUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutGridColumn): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widgets' property
-             * of the parent pages.LayoutGridColumn element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.15.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent pages.LayoutGridColumn element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.15.0 and higher
+      */
     def createInLayoutGridColumnUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutGridColumn): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widget' property
-             * of the parent pages.Layout element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widget' property
+      * of the parent pages.Layout element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.14.0
+      */
     def createInLayoutUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widgets' property
-             * of the parent pages.Layout element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.15.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent pages.Layout element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.15.0 and higher
+      */
     def createInLayoutUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widget' property
-             * of the parent pages.ListViewTemplate element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widget' property
+      * of the parent pages.ListViewTemplate element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.14.0
+      */
     def createInListViewTemplateUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListViewTemplate): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widgets' property
-             * of the parent pages.ListViewTemplate element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.15.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent pages.ListViewTemplate element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.15.0 and higher
+      */
     def createInListViewTemplateUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListViewTemplate): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widget' property
-             * of the parent pages.ListView element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widget' property
+      * of the parent pages.ListView element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.14.0
+      */
     def createInListViewUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widgets' property
-             * of the parent pages.ListView element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.15.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent pages.ListView element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.15.0 and higher
+      */
     def createInListViewUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widget' property
-             * of the parent pages.MasterDetailRegion element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.1.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widget' property
+      * of the parent pages.MasterDetailRegion element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.1.0 to 7.14.0
+      */
     def createInMasterDetailRegionUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.MasterDetailRegion): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'headerWidget' property
-             * of the parent nativepages.NativeLayout element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.22.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'headerWidget' property
+      * of the parent nativepages.NativeLayout element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.22.0 and higher
+      */
     def createInNativeLayoutUnderHeaderWidget(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widgets' property
-             * of the parent nativepages.NativeLayout element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.21.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent nativepages.NativeLayout element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.21.0 and higher
+      */
     def createInNativeLayoutUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widget' property
-             * of the parent pages.NavigationListItem element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widget' property
+      * of the parent pages.NavigationListItem element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.14.0
+      */
     def createInNavigationListItemUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationListItem): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widgets' property
-             * of the parent pages.NavigationListItem element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.15.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent pages.NavigationListItem element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.15.0 and higher
+      */
     def createInNavigationListItemUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationListItem): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'parameterWidget' property
-             * of the parent reports.ReportPane element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 6.9.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'parameterWidget' property
+      * of the parent reports.ReportPane element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 6.9.0
+      */
     def createInReportPaneUnderParameterWidget(container: mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportPane): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'reportWidget' property
-             * of the parent reports.ReportPane element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 6.9.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'reportWidget' property
+      * of the parent reports.ReportPane element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 6.9.0
+      */
     def createInReportPaneUnderReportWidget(container: mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportPane): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widget' property
-             * of the parent pages.ScrollContainerRegion element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widget' property
+      * of the parent pages.ScrollContainerRegion element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.14.0
+      */
     def createInScrollContainerRegionUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollContainerRegion): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widgets' property
-             * of the parent pages.ScrollContainerRegion element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.15.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent pages.ScrollContainerRegion element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.15.0 and higher
+      */
     def createInScrollContainerRegionUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollContainerRegion): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widget' property
-             * of the parent pages.Snippet element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widget' property
+      * of the parent pages.Snippet element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.14.0
+      */
     def createInSnippetUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Snippet): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widgets' property
-             * of the parent pages.Snippet element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.15.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent pages.Snippet element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.15.0 and higher
+      */
     def createInSnippetUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Snippet): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'firstWidget' property
-             * of the parent pages.SplitPane element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'firstWidget' property
+      * of the parent pages.SplitPane element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.14.0
+      */
     def createInSplitPaneUnderFirstWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'firstWidgets' property
-             * of the parent pages.SplitPane element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.15.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'firstWidgets' property
+      * of the parent pages.SplitPane element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.15.0 and higher
+      */
     def createInSplitPaneUnderFirstWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'secondWidget' property
-             * of the parent pages.SplitPane element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'secondWidget' property
+      * of the parent pages.SplitPane element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.14.0
+      */
     def createInSplitPaneUnderSecondWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'secondWidgets' property
-             * of the parent pages.SplitPane element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.15.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'secondWidgets' property
+      * of the parent pages.SplitPane element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.15.0 and higher
+      */
     def createInSplitPaneUnderSecondWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SplitPane): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widget' property
-             * of the parent pages.TabPage element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widget' property
+      * of the parent pages.TabPage element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.14.0
+      */
     def createInTabPageUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.TabPage): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widgets' property
-             * of the parent pages.TabPage element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.15.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent pages.TabPage element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.15.0 and higher
+      */
     def createInTabPageUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.TabPage): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widget' property
-             * of the parent pages.TableCell element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widget' property
+      * of the parent pages.TableCell element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.14.0
+      */
     def createInTableCellUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.TableCell): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widgets' property
-             * of the parent pages.TableCell element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.15.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent pages.TableCell element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.15.0 and higher
+      */
     def createInTableCellUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.TableCell): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widget' property
-             * of the parent pages.TemplateGridContents element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widget' property
+      * of the parent pages.TemplateGridContents element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.14.0
+      */
     def createInTemplateGridContentsUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.TemplateGridContents): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widgets' property
-             * of the parent pages.TemplateGridContents element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.15.0 and higher
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent pages.TemplateGridContents element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.15.0 and higher
+      */
     def createInTemplateGridContentsUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.TemplateGridContents): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
-             * Creates and returns a new CustomWidget instance in the SDK and on the server.
-             * The new CustomWidget will be automatically stored in the 'widgets' property
-             * of the parent pages.VerticalFlow element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.14.0
-             */
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent pages.VerticalFlow element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.14.0
+      */
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
   }
   
@@ -547,16 +547,16 @@ object customwidgetsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCustomwidgetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new CustomWidgetType instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new CustomWidgetType instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidgetType = js.native
     /**
-             * Creates and returns a new CustomWidgetType instance in the SDK and on the server.
-             * The new CustomWidgetType will be automatically stored in the 'type' property
-             * of the parent CustomWidget element passed as argument.
-             */
+      * Creates and returns a new CustomWidgetType instance in the SDK and on the server.
+      * The new CustomWidgetType will be automatically stored in the 'type' property
+      * of the parent CustomWidget element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidgetType = js.native
   }
   
@@ -579,16 +579,16 @@ object customwidgetsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCustomwidgetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new WidgetEnumerationValue instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new WidgetEnumerationValue instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetEnumerationValue = js.native
     /**
-             * Creates and returns a new WidgetEnumerationValue instance in the SDK and on the server.
-             * The new WidgetEnumerationValue will be automatically stored in the 'enumerationValues' property
-             * of the parent WidgetValueType element passed as argument.
-             */
+      * Creates and returns a new WidgetEnumerationValue instance in the SDK and on the server.
+      * The new WidgetEnumerationValue will be automatically stored in the 'enumerationValues' property
+      * of the parent WidgetValueType element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueType): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetEnumerationValue = js.native
   }
   
@@ -597,22 +597,22 @@ object customwidgetsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCustomwidgetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new WidgetObject instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new WidgetObject instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetObject = js.native
     /**
-             * Creates and returns a new WidgetObject instance in the SDK and on the server.
-             * The new WidgetObject will be automatically stored in the 'object' property
-             * of the parent CustomWidget element passed as argument.
-             */
+      * Creates and returns a new WidgetObject instance in the SDK and on the server.
+      * The new WidgetObject will be automatically stored in the 'object' property
+      * of the parent CustomWidget element passed as argument.
+      */
     def createInCustomWidgetUnderObject(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetObject = js.native
     /**
-             * Creates and returns a new WidgetObject instance in the SDK and on the server.
-             * The new WidgetObject will be automatically stored in the 'objects' property
-             * of the parent WidgetValue element passed as argument.
-             */
+      * Creates and returns a new WidgetObject instance in the SDK and on the server.
+      * The new WidgetObject will be automatically stored in the 'objects' property
+      * of the parent WidgetValue element passed as argument.
+      */
     def createInWidgetValueUnderObjects(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetObject = js.native
   }
   
@@ -621,22 +621,22 @@ object customwidgetsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCustomwidgetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new WidgetObjectType instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new WidgetObjectType instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetObjectType = js.native
     /**
-             * Creates and returns a new WidgetObjectType instance in the SDK and on the server.
-             * The new WidgetObjectType will be automatically stored in the 'objectType' property
-             * of the parent CustomWidgetType element passed as argument.
-             */
+      * Creates and returns a new WidgetObjectType instance in the SDK and on the server.
+      * The new WidgetObjectType will be automatically stored in the 'objectType' property
+      * of the parent CustomWidgetType element passed as argument.
+      */
     def createInCustomWidgetTypeUnderObjectType(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidgetType): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetObjectType = js.native
     /**
-             * Creates and returns a new WidgetObjectType instance in the SDK and on the server.
-             * The new WidgetObjectType will be automatically stored in the 'objectType' property
-             * of the parent WidgetValueType element passed as argument.
-             */
+      * Creates and returns a new WidgetObjectType instance in the SDK and on the server.
+      * The new WidgetObjectType will be automatically stored in the 'objectType' property
+      * of the parent WidgetValueType element passed as argument.
+      */
     def createInWidgetValueTypeUnderObjectType(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueType): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetObjectType = js.native
   }
   
@@ -645,16 +645,16 @@ object customwidgetsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCustomwidgetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new WidgetProperty instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new WidgetProperty instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetProperty = js.native
     /**
-             * Creates and returns a new WidgetProperty instance in the SDK and on the server.
-             * The new WidgetProperty will be automatically stored in the 'properties' property
-             * of the parent WidgetObject element passed as argument.
-             */
+      * Creates and returns a new WidgetProperty instance in the SDK and on the server.
+      * The new WidgetProperty will be automatically stored in the 'properties' property
+      * of the parent WidgetObject element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetObject): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetProperty = js.native
   }
   
@@ -663,16 +663,16 @@ object customwidgetsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCustomwidgetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new WidgetPropertyType instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new WidgetPropertyType instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetPropertyType = js.native
     /**
-             * Creates and returns a new WidgetPropertyType instance in the SDK and on the server.
-             * The new WidgetPropertyType will be automatically stored in the 'propertyTypes' property
-             * of the parent WidgetObjectType element passed as argument.
-             */
+      * Creates and returns a new WidgetPropertyType instance in the SDK and on the server.
+      * The new WidgetPropertyType will be automatically stored in the 'propertyTypes' property
+      * of the parent WidgetObjectType element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetObjectType): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetPropertyType = js.native
   }
   
@@ -681,16 +681,16 @@ object customwidgetsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCustomwidgetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new WidgetReturnType instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new WidgetReturnType instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetReturnType = js.native
     /**
-             * Creates and returns a new WidgetReturnType instance in the SDK and on the server.
-             * The new WidgetReturnType will be automatically stored in the 'returnType' property
-             * of the parent WidgetValueType element passed as argument.
-             */
+      * Creates and returns a new WidgetReturnType instance in the SDK and on the server.
+      * The new WidgetReturnType will be automatically stored in the 'returnType' property
+      * of the parent WidgetValueType element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueType): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetReturnType = js.native
   }
   
@@ -711,16 +711,16 @@ object customwidgetsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCustomwidgetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new WidgetTranslation instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new WidgetTranslation instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetTranslation = js.native
     /**
-             * Creates and returns a new WidgetTranslation instance in the SDK and on the server.
-             * The new WidgetTranslation will be automatically stored in the 'translations' property
-             * of the parent WidgetValueType element passed as argument.
-             */
+      * Creates and returns a new WidgetTranslation instance in the SDK and on the server.
+      * The new WidgetTranslation will be automatically stored in the 'translations' property
+      * of the parent WidgetValueType element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueType): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetTranslation = js.native
   }
   
@@ -729,16 +729,16 @@ object customwidgetsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCustomwidgetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new WidgetValue instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new WidgetValue instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue = js.native
     /**
-             * Creates and returns a new WidgetValue instance in the SDK and on the server.
-             * The new WidgetValue will be automatically stored in the 'value' property
-             * of the parent WidgetProperty element passed as argument.
-             */
+      * Creates and returns a new WidgetValue instance in the SDK and on the server.
+      * The new WidgetValue will be automatically stored in the 'value' property
+      * of the parent WidgetProperty element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetProperty): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue = js.native
   }
   
@@ -747,16 +747,16 @@ object customwidgetsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCustomwidgetsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new WidgetValueType instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new WidgetValueType instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueType = js.native
     /**
-             * Creates and returns a new WidgetValueType instance in the SDK and on the server.
-             * The new WidgetValueType will be automatically stored in the 'valueType' property
-             * of the parent WidgetPropertyType element passed as argument.
-             */
+      * Creates and returns a new WidgetValueType instance in the SDK and on the server.
+      * The new WidgetValueType will be automatically stored in the 'valueType' property
+      * of the parent WidgetPropertyType element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetPropertyType): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueType = js.native
   }
   

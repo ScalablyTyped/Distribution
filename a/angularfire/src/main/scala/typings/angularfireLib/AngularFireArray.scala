@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Creates and maintains a synchronized list of data. This is a pseudo-read-only array. One should
- * not call splice(), push(), pop(), et al directly on this array, but should instead use the
- * $remove and $add methods.
- *
- * It is acceptable to .sort() this array, but it is important to use this in conjunction with
- * $watch(), so that it will be re-sorted any time the server data changes. Examples of this are
- * included in the $watch documentation.
- */
+  * Creates and maintains a synchronized list of data. This is a pseudo-read-only array. One should
+  * not call splice(), push(), pop(), et al directly on this array, but should instead use the
+  * $remove and $add methods.
+  *
+  * It is acceptable to .sort() this array, but it is important to use this in conjunction with
+  * $watch(), so that it will be re-sorted any time the server data changes. Examples of this are
+  * included in the $watch documentation.
+  */
 @js.native
 trait AngularFireArray
   extends coreDashJsLib.Array[AngularFireSimpleObject] {
@@ -33,7 +33,9 @@ trait AngularFireArray
   	 * @returns a promise resolved after data is added
   	 */
   @JSName("$add")
-  def $add(newData: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $add(newData: js.Any): angularLib.angularMod.angularNs.IPromise[
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Firebase */ _
+  ] = js.native
   /**
   	 * Informs $firebase to stop sending events and clears memory being used
   	 * by this array (delete's its local content).
@@ -83,18 +85,6 @@ trait AngularFireArray
   	 */
   @JSName("$loaded")
   def $loaded(): angularLib.angularMod.angularNs.IPromise[AngularFireArray] = js.native
-  /**
-  	 * The loaded method is invoked after the initial batch of data arrives from the server.
-  	 * When this resolves, all data which existed prior to calling $asArray() is now cached
-  	 * locally in the array.
-  	 *
-  	 * As a shortcut is also possible to pass resolve/reject methods directly into this
-  	 * method just as they would be passed to .then()
-  	 *
-  	 * @param {Function} [resolve]
-  	 * @param {Function} [reject]
-  	 * @returns a promise
-  	 */
   @JSName("$loaded")
   def $loaded(
     resolve: js.Function1[
@@ -102,18 +92,6 @@ trait AngularFireArray
       angularLib.angularMod.angularNs.IHttpPromise[js.Object] | angularLib.angularMod.angularNs.IPromise[js.Object] | scala.Unit
     ]
   ): angularLib.angularMod.angularNs.IPromise[AngularFireArray] = js.native
-  /**
-  	 * The loaded method is invoked after the initial batch of data arrives from the server.
-  	 * When this resolves, all data which existed prior to calling $asArray() is now cached
-  	 * locally in the array.
-  	 *
-  	 * As a shortcut is also possible to pass resolve/reject methods directly into this
-  	 * method just as they would be passed to .then()
-  	 *
-  	 * @param {Function} [resolve]
-  	 * @param {Function} [reject]
-  	 * @returns a promise
-  	 */
   @JSName("$loaded")
   def $loaded(
     resolve: js.Function1[
@@ -142,7 +120,9 @@ trait AngularFireArray
   	 * @returns a promise which resolves after data is removed
   	 */
   @JSName("$remove")
-  def $remove(recordOrIndex: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $remove(recordOrIndex: js.Any): angularLib.angularMod.angularNs.IPromise[
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Firebase */ _
+  ] = js.native
   /**
   	 * Pass either an item in the array or the index of an item and it will be saved back
   	 * to Firebase. While the array is read-only and its structure should not be changed,
@@ -158,7 +138,9 @@ trait AngularFireArray
   	 * @returns a promise resolved after data is saved
   	 */
   @JSName("$save")
-  def $save(recordOrIndex: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
+  def $save(recordOrIndex: js.Any): angularLib.angularMod.angularNs.IPromise[
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Firebase */ _
+  ] = js.native
   /**
   	 * Listeners passed into this method are notified whenever a new change (add, updated,
   	 * move, remove) is received from the server. Each invocation is sent an object
@@ -183,21 +165,6 @@ trait AngularFireArray
       scala.Unit
     ]
   ): angularLib.angularMod.Global.Function = js.native
-  /**
-  	 * Listeners passed into this method are notified whenever a new change (add, updated,
-  	 * move, remove) is received from the server. Each invocation is sent an object
-  	 * containing <code>{ type: 'child_added|child_updated|child_moved|child_removed',
-  	 * key: 'key_of_item_affected'}</code>
-  	 *
-  	 * Additionally, added and moved events receive a prevChild parameter, containing the
-  	 * key of the item before this one in the array.
-  	 *
-  	 * This method returns a function which can be invoked to stop observing events.
-  	 *
-  	 * @param {Function} cb
-  	 * @param {Object} [context]
-  	 * @returns {Function} used to stop observing
-  	 */
   @JSName("$watch")
   def $watch(
     cb: js.Function3[

@@ -12,29 +12,29 @@ sealed trait SubscriptionTemplateQueryFlags extends js.Object
 @js.native
 object SubscriptionTemplateQueryFlags extends js.Object {
   /**
-       * Include the event type details like the fields and operators
-       */
+    * Include the event type details like the fields and operators
+    */
   @js.native
   sealed trait IncludeEventTypeInformation
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionTemplateQueryFlags
   
   /**
-       * Include group templates
-       */
+    * Include group templates
+    */
   @js.native
   sealed trait IncludeGroup
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionTemplateQueryFlags
   
   /**
-       * Include user templates
-       */
+    * Include user templates
+    */
   @js.native
   sealed trait IncludeUser
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionTemplateQueryFlags
   
   /**
-       * Include user and group templates
-       */
+    * Include user and group templates
+    */
   @js.native
   sealed trait IncludeUserAndGroup
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionTemplateQueryFlags

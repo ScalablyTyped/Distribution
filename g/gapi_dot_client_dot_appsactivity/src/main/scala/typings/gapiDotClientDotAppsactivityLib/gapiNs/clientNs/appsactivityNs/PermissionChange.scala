@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PermissionChange extends js.Object {
   /** Lists all Permission objects added. */
   var addedPermissions: js.UndefOr[js.Array[Permission]] = js.undefined

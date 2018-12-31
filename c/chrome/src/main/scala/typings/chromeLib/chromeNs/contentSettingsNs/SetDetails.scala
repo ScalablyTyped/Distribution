@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SetDetails extends js.Object {
   /** The pattern for the primary URL. For details on the format of a pattern, see Content Setting Patterns. */
   var primaryPattern: java.lang.String

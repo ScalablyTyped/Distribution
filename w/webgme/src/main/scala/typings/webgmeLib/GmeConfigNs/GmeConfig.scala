@@ -21,9 +21,9 @@ class GmeConfig () extends js.Object {
   /** Client related settings. */
   var core: webgmeLib.Anon_EnableCustomConstraints = js.native
   /**
-           * If true will add extra debug messages and also 
-           * enable experimental Visualizers, (URL equivalent (only on client side) ?debug=true).
-           */
+    * If true will add extra debug messages and also 
+    * enable experimental Visualizers, (URL equivalent (only on client side) ?debug=true).
+    */
   var debug: scala.Boolean = js.native
   /** Executor related settings. */
   var executor: webgmeLib.Anon_EnableNonce = js.native
@@ -32,12 +32,12 @@ class GmeConfig () extends js.Object {
   /** Plugin related settings. */
   var plugin: webgmeLib.Anon_AllowServerExecution = js.native
   /** Additional paths to for requirejs. 
-           * Custom paths that will be added to the 
-           * paths of requirejs configuration. 
-           * Paths added here will also be served under the given key, 
-           * i.e. {myPath: './aPath/aSubPath/'} 
-           * will expose files via <host>/myPath/someFile.js.
-           */
+    * Custom paths that will be added to the 
+    * paths of requirejs configuration. 
+    * Paths added here will also be served under the given key, 
+    * i.e. {myPath: './aPath/aSubPath/'} 
+    * will expose files via <host>/myPath/someFile.js.
+    */
   var requirejsPaths: webgmeLib.GmeCommonNs.Dictionary[java.lang.String] = js.native
   /** REST related settings. */
   var rest: webgmeLib.Anon_Components = js.native
@@ -53,10 +53,10 @@ class GmeConfig () extends js.Object {
   var visualization: webgmeLib.Anon_ExtraCss = js.native
   var webhooks: webgmeLib.Anon_Manager = js.native
   /**
-           *  Serialize the configuration.
-           * @returns {*} 
-           * @memberOf GmeConfig
-           */
+    *  Serialize the configuration.
+    * @returns {*} 
+    * @memberOf GmeConfig
+    */
   def serialize(): js.Any = js.native
 }
 

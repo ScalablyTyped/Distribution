@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CardActionStyle extends js.Object {
   var borderStyle: js.UndefOr[
     reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitLibStrings.solid | reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitLibStrings.dotted | reactDashNativeDashMaterialDashKitLib.reactDashNativeDashMaterialDashKitLibStrings.dashed

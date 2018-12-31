@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CoverageMap extends js.Object {
   var data: RawCoverage
   def addFileCoverage(fileCoverage: RawFileCoverage): scala.Unit

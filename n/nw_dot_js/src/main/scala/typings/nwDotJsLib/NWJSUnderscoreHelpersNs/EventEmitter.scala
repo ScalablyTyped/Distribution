@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Node.js v6.x EventEmitter Class
-     */
+  * Node.js v6.x EventEmitter Class
+  */
 @JSGlobal("NWJS_Helpers.EventEmitter")
 @js.native
 class EventEmitter ()
@@ -19,8 +19,8 @@ class EventEmitter ()
 }
 
 /**
-     * Node.js v6.x EventEmitter Class
-     */
+  * Node.js v6.x EventEmitter Class
+  */
 @JSGlobal("NWJS_Helpers.EventEmitter")
 @js.native
 object EventEmitter extends js.Object {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RealmDelimiter extends js.Object {
   var acls: js.Array[loopbackLib.loopbackMod.lNs.ACL]
   var caseSensitiveEmail: scala.Boolean

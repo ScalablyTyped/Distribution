@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Fields extends js.Object {
   var cksum: scala.Double
   var devmaj: scala.Double

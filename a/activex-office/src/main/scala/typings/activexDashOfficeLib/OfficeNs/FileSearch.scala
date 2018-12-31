@@ -30,28 +30,13 @@ class FileSearch protected () extends js.Object {
   var SearchSubFolders: scala.Boolean = js.native
   var TextOrProperty: java.lang.String = js.native
   /**
-           * @param SortBy [SortBy=1]
-           * @param SortOrder [SortOrder=1]
-           * @param AlwaysAccurate [AlwaysAccurate=true]
-           */
+    * @param SortBy [SortBy=1]
+    * @param SortOrder [SortOrder=1]
+    * @param AlwaysAccurate [AlwaysAccurate=true]
+    */
   def Execute(): scala.Double = js.native
-  /**
-           * @param SortBy [SortBy=1]
-           * @param SortOrder [SortOrder=1]
-           * @param AlwaysAccurate [AlwaysAccurate=true]
-           */
   def Execute(SortBy: MsoSortBy): scala.Double = js.native
-  /**
-           * @param SortBy [SortBy=1]
-           * @param SortOrder [SortOrder=1]
-           * @param AlwaysAccurate [AlwaysAccurate=true]
-           */
   def Execute(SortBy: MsoSortBy, SortOrder: MsoSortOrder): scala.Double = js.native
-  /**
-           * @param SortBy [SortBy=1]
-           * @param SortOrder [SortOrder=1]
-           * @param AlwaysAccurate [AlwaysAccurate=true]
-           */
   def Execute(SortBy: MsoSortBy, SortOrder: MsoSortOrder, AlwaysAccurate: scala.Boolean): scala.Double = js.native
   def FileTypes(Index: scala.Double): MsoFileType = js.native
   def FoundFiles(Index: scala.Double): java.lang.String = js.native

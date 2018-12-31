@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TorrentInfo extends js.Object {
   var files: js.UndefOr[js.Array[stdLib.File]] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NUMPADPLUS extends js.Object {
   var BACKSPACE: scala.Double
   var DELETE: scala.Double

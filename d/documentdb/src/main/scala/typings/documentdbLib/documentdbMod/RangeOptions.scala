@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RangeOptions extends js.Object {
   /** The high value in the range. */
   var high: js.Any

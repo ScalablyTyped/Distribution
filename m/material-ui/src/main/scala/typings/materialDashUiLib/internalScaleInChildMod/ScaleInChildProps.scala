@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScaleInChildProps
   extends reactLib.reactMod.ReactNs.Props[ScaleInChild] {
   var enterDelay: js.UndefOr[scala.Double] = js.undefined

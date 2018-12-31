@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Net extends js.Object {
   var Interface: java.lang.String
   var bytes: procfsDashStatsLib.Anon_TransmitReceive

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Subaccount extends js.Object {
   /** ID of the account that contains this subaccount. This is a read-only field that can be left blank. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccessToken extends js.Object {
   var accountSid: java.lang.String
   var grants: js.Array[Grant]

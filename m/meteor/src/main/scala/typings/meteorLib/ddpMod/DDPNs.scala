@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("meteor/ddp", "DDP")
 @js.native
 object DDPNs extends js.Object {
-  
   trait DDPStatic extends js.Object {
     @JSName("apply")
     def apply(method: java.lang.String, parameters: js.Any*): scala.Unit
@@ -20,7 +19,6 @@ object DDPNs extends js.Object {
     def status(): DDPStatus
     def subscribe(name: java.lang.String, rest: js.Any*): meteorLib.MeteorNs.SubscriptionHandle
   }
-  
   
   trait DDPStatus extends js.Object {
     var connected: scala.Boolean

@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 			 * A PreviewActionGroup provides options to configure a group of actions used by the iOS9 3D-Touch
 			 * feature "Peek and Pop".
 			 */
-
 trait PreviewActionGroup
   extends titaniumLib.TitaniumNs.Proxy {
   /**

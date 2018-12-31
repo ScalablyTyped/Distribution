@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 2 members from Set(std.Pick, react-apollo.react-apollo/Query.ObservableQueryFields) */ 
-trait QueryResult[TData, TVariables] extends js.Object {
+- Lifted 2 members from Set(std.Pick<apollo-client.apollo-client.ObservableQuery<TData, TVariables>, 'startPolling' | 'stopPolling' | 'subscribeToMore' | 'updateQuery' | 'refetch' | 'variables'>, react-apollo.react-apollo/Query.ObservableQueryFields<TData, TVariables>) */ trait QueryResult[TData, TVariables] extends js.Object {
   var client: apolloDashClientLib.apolloDashClientMod.default[_]
   var data: js.UndefOr[TData]
   var error: js.UndefOr[apolloDashClientLib.apolloDashClientMod.ApolloError] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReindexParams extends GenericParams {
   @JSName("body")
   var body_ReindexParams: elasticsearchLib.Anon_Script

@@ -12,43 +12,43 @@ sealed trait OperationStatus extends js.Object
 @js.native
 object OperationStatus extends js.Object {
   /**
-       * The operation was cancelled by the user.
-       */
+    * The operation was cancelled by the user.
+    */
   @js.native
   sealed trait Cancelled
     extends vsoDashNodeDashApiLib.interfacesCommonOperationsInterfacesMod.OperationStatus
   
   /**
-       * The operation completed with a failure.
-       */
+    * The operation completed with a failure.
+    */
   @js.native
   sealed trait Failed
     extends vsoDashNodeDashApiLib.interfacesCommonOperationsInterfacesMod.OperationStatus
   
   /**
-       * The operation is in progress.
-       */
+    * The operation is in progress.
+    */
   @js.native
   sealed trait InProgress
     extends vsoDashNodeDashApiLib.interfacesCommonOperationsInterfacesMod.OperationStatus
   
   /**
-       * The operation object does not have the status set.
-       */
+    * The operation object does not have the status set.
+    */
   @js.native
   sealed trait NotSet
     extends vsoDashNodeDashApiLib.interfacesCommonOperationsInterfacesMod.OperationStatus
   
   /**
-       * The operation has been queued.
-       */
+    * The operation has been queued.
+    */
   @js.native
   sealed trait Queued
     extends vsoDashNodeDashApiLib.interfacesCommonOperationsInterfacesMod.OperationStatus
   
   /**
-       * The operation completed successfully.
-       */
+    * The operation completed successfully.
+    */
   @js.native
   sealed trait Succeeded
     extends vsoDashNodeDashApiLib.interfacesCommonOperationsInterfacesMod.OperationStatus

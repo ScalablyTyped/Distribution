@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SwitchProps extends js.Object {
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var checked: js.UndefOr[scala.Boolean] = js.undefined

@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object outDeclarationsContractsModMembers extends js.Object {
   def baseTypeToTelemetryType(baseType: java.lang.String): applicationinsightsLib.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryType = js.native
-  def domainSupportsProperties(domain: applicationinsightsLib.outDeclarationsContractsGeneratedMod.Domain): /* is ISupportProperties */scala.Boolean = js.native
+  def domainSupportsProperties(domain: applicationinsightsLib.outDeclarationsContractsGeneratedMod.Domain): /* is applicationinsights.applicationinsights/out/Declarations/Contracts/Constants.ISupportProperties */ scala.Boolean = js.native
   def telemetryTypeToBaseType(
     `type`: applicationinsightsLib.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryType
   ): java.lang.String = js.native

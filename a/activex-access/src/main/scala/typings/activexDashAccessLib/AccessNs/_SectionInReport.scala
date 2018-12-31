@@ -59,7 +59,6 @@ class _SectionInReport protected () extends js.Object {
   var Visible: scala.Boolean = js.native
   var WillContinue: scala.Boolean = js.native
   var _Name: java.lang.String = js.native
-  // tslint:disable-next-line:no-unnecessary-generics
   def Controls[T](Index: java.lang.String): T = js.native
   // tslint:disable-next-line:no-unnecessary-generics
   def Controls[T](Index: scala.Double): T = js.native

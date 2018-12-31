@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridIcons extends js.Object {
   var collapseGroup: js.UndefOr[java.lang.String] = js.undefined
   var collapseRow: js.UndefOr[java.lang.String] = js.undefined

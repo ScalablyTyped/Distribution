@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExtractCommentsOptions extends js.Object {
   var banner: js.UndefOr[
     scala.Boolean | java.lang.String | (js.Function1[/* fileName */ java.lang.String, java.lang.String])

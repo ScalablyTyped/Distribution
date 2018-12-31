@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait YogaStatic extends ConstantsStatic {
   var Config: ConfigStatic
   var Layout: org.scalablytyped.runtime.Instantiable6[

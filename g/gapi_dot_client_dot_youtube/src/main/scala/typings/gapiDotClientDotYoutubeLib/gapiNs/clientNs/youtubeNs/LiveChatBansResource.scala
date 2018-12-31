@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LiveChatBansResource extends js.Object {
   /** Removes a chat ban. */
   def delete(request: gapiDotClientDotYoutubeLib.Anon_PrettyPrintQuotaUserKeyUserIpOauthtokenId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 @js.native
 class ObserverLocator () extends js.Object {
   /**
-     * Adds a property observation adapter.
-     */
+    * Adds a property observation adapter.
+    */
   def addAdapter(adapter: ObjectObservationAdapter): scala.Unit = js.native
   /**
-     * Gets an observer for array mutation.
-     */
+    * Gets an observer for array mutation.
+    */
   def getArrayObserver(array: js.Array[_]): InternalCollectionObserver = js.native
   /**
-     * Gets an observer for map mutation.
-     */
+    * Gets an observer for map mutation.
+    */
   def getMapObserver(map: stdLib.Map[_, _]): InternalCollectionObserver = js.native
   /**
-     * Gets an observer for property changes.
-     */
+    * Gets an observer for property changes.
+    */
   def getObserver(obj: js.Any, propertyName: java.lang.String): InternalPropertyObserver = js.native
 }
 

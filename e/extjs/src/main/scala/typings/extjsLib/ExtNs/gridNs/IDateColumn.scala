@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDateColumn
   extends extjsLib.ExtNs.gridNs.columnNs.IColumn {
   /** [Method] When defined this will take precedence over the renderer config

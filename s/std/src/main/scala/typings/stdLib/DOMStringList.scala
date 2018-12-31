@@ -5,23 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DOMStringList
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[java.lang.String] {
   @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[java.lang.String]]
   /**
-       * Returns the number of strings in strings.
-       */
+    * Returns the number of strings in strings.
+    */
   val length: scala.Double
   /**
-       * Returns true if strings contains string, and false
-       * otherwise.
-       */
+    * Returns true if strings contains string, and false
+    * otherwise.
+    */
   def contains(string: java.lang.String): scala.Boolean
   /**
-       * Returns the string with index index from strings.
-       */
+    * Returns the string with index index from strings.
+    */
   def item(index: scala.Double): java.lang.String | scala.Null
 }
 

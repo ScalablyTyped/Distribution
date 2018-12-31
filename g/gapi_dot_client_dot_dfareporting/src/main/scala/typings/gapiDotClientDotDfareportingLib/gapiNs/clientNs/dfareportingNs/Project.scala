@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Project extends js.Object {
   /** Account ID of this project. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined
@@ -16,9 +15,9 @@ trait Project extends js.Object {
   /** Audience gender of this project. */
   var audienceGender: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Budget of this project in the currency specified by the current account. The value stored in this field represents only the non-fractional amount. For
-               * example, for USD, the smallest value that can be represented by this field is 1 US dollar.
-               */
+    * Budget of this project in the currency specified by the current account. The value stored in this field represents only the non-fractional amount. For
+    * example, for USD, the smallest value that can be represented by this field is 1 US dollar.
+    */
   var budget: js.UndefOr[java.lang.String] = js.undefined
   /** Client billing code of this project. */
   var clientBillingCode: js.UndefOr[java.lang.String] = js.undefined

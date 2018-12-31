@@ -50,9 +50,9 @@ abstract class PlayToManager () extends js.Object {
 @js.native
 object PlayToManager extends js.Object {
   /**
-                   * Gets the Play To manager for the current view.
-                   * @return The Play To manager for the current view.
-                   */
+    * Gets the Play To manager for the current view.
+    * @return The Play To manager for the current view.
+    */
   def getForCurrentView(): winrtDashUwpLib.WindowsNs.MediaNs.PlayToNs.PlayToManager = js.native
   /** Displays the Play To UI. */
   def showPlayToUI(): scala.Unit = js.native

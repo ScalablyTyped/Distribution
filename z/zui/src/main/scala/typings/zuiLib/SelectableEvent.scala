@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * selectable
- */
-
+  * selectable
+  */
 @js.native
 trait SelectableEvent
   extends stdLib.Event {

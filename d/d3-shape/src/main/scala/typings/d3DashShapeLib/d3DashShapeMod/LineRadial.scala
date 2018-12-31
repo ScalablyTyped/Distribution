@@ -8,146 +8,146 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LineRadial[Datum] extends js.Object {
   /**
-       * Generates a radial line for the given array of data. Depending on this radial line generator’s associated curve,
-       * the given input data may need to be sorted by x-value before being passed to the line generator.
-       *
-       * IMPORTANT: If the rendering context of the radial line generator is null,
-       * then the radial line is returned as a path data string.
-       *
-       * @param data Array of data elements.
-       */
+    * Generates a radial line for the given array of data. Depending on this radial line generator’s associated curve,
+    * the given input data may need to be sorted by x-value before being passed to the line generator.
+    *
+    * IMPORTANT: If the rendering context of the radial line generator is null,
+    * then the radial line is returned as a path data string.
+    *
+    * @param data Array of data elements.
+    */
   def apply(data: js.Array[Datum]): java.lang.String | scala.Null = js.native
   /**
-       * Returns the current angle accessor function, which defaults to a function returning first element of a two-element array of numbers.
-       */
+    * Returns the current angle accessor function, which defaults to a function returning first element of a two-element array of numbers.
+    */
   def angle(): js.Function3[/* d */ Datum, /* index */ scala.Double, /* data */ js.Array[Datum], scala.Double] = js.native
   /**
-       * Sets the angle accessor to the specified function and returns this radial line generator.
-       *
-       * When a radial line is generated, the angle accessor will be invoked for each defined element in the input data array.
-       *
-       * The default angle accessor assumes that the input data are two-element arrays of numbers. If your data are in a different format, or if you wish to transform the data before rendering,
-       * then you should specify a custom accessor.
-       *
-       * @param angle An angle accessor function which returns the angle value in radians, with 0 at -y (12 o’clock). The angle accessor will be invoked for each defined element in the input data array,
-       * being passed the element d, the index i, and the array data as three arguments.
-       */
+    * Sets the angle accessor to the specified function and returns this radial line generator.
+    *
+    * When a radial line is generated, the angle accessor will be invoked for each defined element in the input data array.
+    *
+    * The default angle accessor assumes that the input data are two-element arrays of numbers. If your data are in a different format, or if you wish to transform the data before rendering,
+    * then you should specify a custom accessor.
+    *
+    * @param angle An angle accessor function which returns the angle value in radians, with 0 at -y (12 o’clock). The angle accessor will be invoked for each defined element in the input data array,
+    * being passed the element d, the index i, and the array data as three arguments.
+    */
   def angle(
     angle: js.Function3[/* d */ Datum, /* index */ scala.Double, /* data */ js.Array[Datum], scala.Double]
   ): this.type = js.native
   /**
-       * Sets the angle accessor to the specified number and returns this radial line generator.
-       *
-       * @param angle A constant angle value in radians, with 0 at -y (12 o’clock).
-       */
+    * Sets the angle accessor to the specified number and returns this radial line generator.
+    *
+    * @param angle A constant angle value in radians, with 0 at -y (12 o’clock).
+    */
   def angle(angle: scala.Double): this.type = js.native
   /**
-       * Returns the current rendering context, which defaults to null.
-       */
+    * Returns the current rendering context, which defaults to null.
+    */
   def context(): d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D | scala.Null = js.native
   /**
-       * Sets the rendering context and returns this radial line generator.
-       *
-       * If the context is not null, then the generated radial line is rendered to this context as a sequence of path method calls.
-       *
-       * @param context The rendering context.
-       */
+    * Sets the rendering context and returns this radial line generator.
+    *
+    * If the context is not null, then the generated radial line is rendered to this context as a sequence of path method calls.
+    *
+    * @param context The rendering context.
+    */
   def context(context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D): this.type = js.native
   /**
-       * Sets the rendering context to null and returns this radial line generator.
-       *
-       * A path data string representing the generated radial line will be returned when the generator is invoked with data.
-       *
-       * @param context null, to remove rendering context.
-       */
+    * Sets the rendering context to null and returns this radial line generator.
+    *
+    * A path data string representing the generated radial line will be returned when the generator is invoked with data.
+    *
+    * @param context null, to remove rendering context.
+    */
   @JSName("context")
   def `context_<this>`(): this.type = js.native
   /**
-       * Returns the current curve factory, which defaults to curveLinear.
-       */
+    * Returns the current curve factory, which defaults to curveLinear.
+    */
   def curve(): CurveFactory | CurveFactoryLineOnly = js.native
   /**
-       * Sets the curve factory and returns this radial line generator.
-       *
-       * Note that curveMonotoneX or curveMonotoneY are not recommended for radial lines because they assume that the data is monotonic in x or y,
-       * which is typically untrue of radial lines.
-       *
-       * @param curve A valid curve factory.
-       */
+    * Sets the curve factory and returns this radial line generator.
+    *
+    * Note that curveMonotoneX or curveMonotoneY are not recommended for radial lines because they assume that the data is monotonic in x or y,
+    * which is typically untrue of radial lines.
+    *
+    * @param curve A valid curve factory.
+    */
   def curve(curve: CurveFactory | CurveFactoryLineOnly): this.type = js.native
   /**
-       * Returns the current curve factory, which defaults to curveLinear.
-       *
-       * The generic allows to cast the curve factory to a specific type, if known.
-       */
+    * Returns the current curve factory, which defaults to curveLinear.
+    *
+    * The generic allows to cast the curve factory to a specific type, if known.
+    */
   @JSName("curve")
   def `curve_C<union>C`[C /* <: CurveFactory | CurveFactoryLineOnly */](): C = js.native
   /**
-       * Returns the current defined accessor, which defaults to a function returning a constant boolean value of true.
-       */
+    * Returns the current defined accessor, which defaults to a function returning a constant boolean value of true.
+    */
   def defined(): js.Function3[/* d */ Datum, /* index */ scala.Double, /* data */ js.Array[Datum], scala.Boolean] = js.native
   /**
-       * Sets the defined accessor to the specified function and returns this radial line generator.
-       *
-       * The default accessor for defined returns a constant boolean value of true, thus assumes that the input data is always defined.
-       *
-       * When a radial line is generated, the defined accessor will be invoked for each element in the input data array,
-       * being passed the element d, the index i, and the array data as three arguments.
-       * If the given element is defined (i.e., if the defined accessor returns a truthy value for this element),
-       * the angle and radius accessors will subsequently be evaluated and the point will be added to the current radial line segment.
-       * Otherwise, the element will be skipped, the current radial line segment will be ended, and a new radial line segment will be generated for the next defined point.
-       * As a result, the generated radial line may have several discrete segments.
-       *
-       * Note that if a radial line segment consists of only a single point, it may appear invisible unless rendered with rounded or square line caps.
-       * In addition, some curves such as curveCardinalOpen only render a visible segment if it contains multiple points.
-       *
-       * @param defined An accessor function which returns a boolean value. The accessor will be invoked for each defined element in the input data array,
-       * being passed the element d, the index i, and the array data as three arguments.
-       */
+    * Sets the defined accessor to the specified function and returns this radial line generator.
+    *
+    * The default accessor for defined returns a constant boolean value of true, thus assumes that the input data is always defined.
+    *
+    * When a radial line is generated, the defined accessor will be invoked for each element in the input data array,
+    * being passed the element d, the index i, and the array data as three arguments.
+    * If the given element is defined (i.e., if the defined accessor returns a truthy value for this element),
+    * the angle and radius accessors will subsequently be evaluated and the point will be added to the current radial line segment.
+    * Otherwise, the element will be skipped, the current radial line segment will be ended, and a new radial line segment will be generated for the next defined point.
+    * As a result, the generated radial line may have several discrete segments.
+    *
+    * Note that if a radial line segment consists of only a single point, it may appear invisible unless rendered with rounded or square line caps.
+    * In addition, some curves such as curveCardinalOpen only render a visible segment if it contains multiple points.
+    *
+    * @param defined An accessor function which returns a boolean value. The accessor will be invoked for each defined element in the input data array,
+    * being passed the element d, the index i, and the array data as three arguments.
+    */
   def defined(
     defined: js.Function3[/* d */ Datum, /* index */ scala.Double, /* data */ js.Array[Datum], scala.Boolean]
   ): this.type = js.native
   /**
-       * Sets the defined accessor to the specified boolean and returns this radial line generator.
-       *
-       * The default accessor for defined returns a constant boolean value of true, thus assumes that the input data is always defined.
-       *
-       * When a radial line is generated, the defined accessor will be invoked for each element in the input data array,
-       * being passed the element d, the index i, and the array data as three arguments.
-       * If the given element is defined (i.e., if the defined accessor returns a truthy value for this element),
-       * the angle and radius accessors will subsequently be evaluated and the point will be added to the current radial line segment.
-       * Otherwise, the element will be skipped, the current radial line segment will be ended, and a new radial line segment will be generated for the next defined point.
-       * As a result, the generated radial line may have several discrete segments.
-       *
-       * Note that if a radial line segment consists of only a single point, it may appear invisible unless rendered with rounded or square line caps.
-       * In addition, some curves such as curveCardinalOpen only render a visible segment if it contains multiple points.
-       *
-       * @param defined A boolean constant
-       */
+    * Sets the defined accessor to the specified boolean and returns this radial line generator.
+    *
+    * The default accessor for defined returns a constant boolean value of true, thus assumes that the input data is always defined.
+    *
+    * When a radial line is generated, the defined accessor will be invoked for each element in the input data array,
+    * being passed the element d, the index i, and the array data as three arguments.
+    * If the given element is defined (i.e., if the defined accessor returns a truthy value for this element),
+    * the angle and radius accessors will subsequently be evaluated and the point will be added to the current radial line segment.
+    * Otherwise, the element will be skipped, the current radial line segment will be ended, and a new radial line segment will be generated for the next defined point.
+    * As a result, the generated radial line may have several discrete segments.
+    *
+    * Note that if a radial line segment consists of only a single point, it may appear invisible unless rendered with rounded or square line caps.
+    * In addition, some curves such as curveCardinalOpen only render a visible segment if it contains multiple points.
+    *
+    * @param defined A boolean constant
+    */
   def defined(defined: scala.Boolean): this.type = js.native
   /**
-       * Returns the current radius accessor function, which defaults to a function returning second element of a two-element array of numbers.
-       */
+    * Returns the current radius accessor function, which defaults to a function returning second element of a two-element array of numbers.
+    */
   def radius(): js.Function3[/* d */ Datum, /* index */ scala.Double, /* data */ js.Array[Datum], scala.Double] = js.native
   /**
-       * Sets the radius accessor to the specified function and returns this radial line generator.
-       *
-       * When a radial line is generated, the radius accessor will be invoked for each defined element in the input data array.
-       *
-       * The default radius accessor assumes that the input data are two-element arrays of numbers. If your data are in a different format, or if you wish to transform the data before rendering,
-       * then you should specify a custom accessor.
-       *
-       * @param radius A radius accessor function which returns the radius value. The radius accessor will be invoked for each defined element in the input data array,
-       * being passed the element d, the index i, and the array data as three arguments.
-       */
+    * Sets the radius accessor to the specified function and returns this radial line generator.
+    *
+    * When a radial line is generated, the radius accessor will be invoked for each defined element in the input data array.
+    *
+    * The default radius accessor assumes that the input data are two-element arrays of numbers. If your data are in a different format, or if you wish to transform the data before rendering,
+    * then you should specify a custom accessor.
+    *
+    * @param radius A radius accessor function which returns the radius value. The radius accessor will be invoked for each defined element in the input data array,
+    * being passed the element d, the index i, and the array data as three arguments.
+    */
   def radius(
     radius: js.Function3[/* d */ Datum, /* index */ scala.Double, /* data */ js.Array[Datum], scala.Double]
   ): this.type = js.native
   /**
-       * Sets the radius accessor to the specified number and returns this radial line generator.
-       *
-       * @param radius A constant radius value.
-       */
+    * Sets the radius accessor to the specified number and returns this radial line generator.
+    *
+    * @param radius A constant radius value.
+    */
   def radius(radius: scala.Double): this.type = js.native
 }
 

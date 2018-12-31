@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AesCCM extends IParams {
   var aad: js.UndefOr[nodeLib.Buffer] = js.undefined
   var dataLen: scala.Double

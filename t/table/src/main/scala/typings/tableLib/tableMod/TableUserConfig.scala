@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableUserConfig extends js.Object {
   var border: js.UndefOr[JoinStruct] = js.undefined
   var columnCount: js.UndefOr[scala.Double] = js.undefined

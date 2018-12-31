@@ -15,31 +15,24 @@ object cryptoModMembers extends js.Object {
   val fips: scala.Boolean = js.native
   /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(algorithm: java.lang.String, password: java.lang.String): Cipher = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(
     algorithm: java.lang.String,
     password: java.lang.String,
     options: nodeLib.streamMod.internalNs.TransformOptions
   ): Cipher = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(algorithm: java.lang.String, password: nodeLib.Buffer): Cipher = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(
     algorithm: java.lang.String,
     password: nodeLib.Buffer,
     options: nodeLib.streamMod.internalNs.TransformOptions
   ): Cipher = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(algorithm: java.lang.String, password: nodeLib.NodeJSNs.TypedArray): Cipher = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(
     algorithm: java.lang.String,
     password: nodeLib.NodeJSNs.TypedArray,
     options: nodeLib.streamMod.internalNs.TransformOptions
   ): Cipher = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(algorithm: java.lang.String, password: stdLib.DataView): Cipher = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(
     algorithm: java.lang.String,
     password: stdLib.DataView,
@@ -47,27 +40,17 @@ object cryptoModMembers extends js.Object {
   ): Cipher = js.native
   /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(algorithm: CipherCCMTypes, password: java.lang.String, options: CipherCCMOptions): CipherCCM = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(algorithm: CipherCCMTypes, password: nodeLib.Buffer, options: CipherCCMOptions): CipherCCM = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(algorithm: CipherCCMTypes, password: nodeLib.NodeJSNs.TypedArray, options: CipherCCMOptions): CipherCCM = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(algorithm: CipherCCMTypes, password: stdLib.DataView, options: CipherCCMOptions): CipherCCM = js.native
   /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(algorithm: CipherGCMTypes, password: java.lang.String): CipherGCM = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(algorithm: CipherGCMTypes, password: java.lang.String, options: CipherGCMOptions): CipherGCM = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(algorithm: CipherGCMTypes, password: nodeLib.Buffer): CipherGCM = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(algorithm: CipherGCMTypes, password: nodeLib.Buffer, options: CipherGCMOptions): CipherGCM = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(algorithm: CipherGCMTypes, password: nodeLib.NodeJSNs.TypedArray): CipherGCM = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(algorithm: CipherGCMTypes, password: nodeLib.NodeJSNs.TypedArray, options: CipherGCMOptions): CipherGCM = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(algorithm: CipherGCMTypes, password: stdLib.DataView): CipherGCM = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createCipher(algorithm: CipherGCMTypes, password: stdLib.DataView, options: CipherGCMOptions): CipherGCM = js.native
   def createCipheriv(algorithm: java.lang.String, key: java.lang.String, iv: java.lang.String): Cipher = js.native
   def createCipheriv(
@@ -302,31 +285,24 @@ object cryptoModMembers extends js.Object {
   def createCredentials(details: CredentialDetails): Credentials = js.native
   /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(algorithm: java.lang.String, password: java.lang.String): Decipher = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(
     algorithm: java.lang.String,
     password: java.lang.String,
     options: nodeLib.streamMod.internalNs.TransformOptions
   ): Decipher = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(algorithm: java.lang.String, password: nodeLib.Buffer): Decipher = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(
     algorithm: java.lang.String,
     password: nodeLib.Buffer,
     options: nodeLib.streamMod.internalNs.TransformOptions
   ): Decipher = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(algorithm: java.lang.String, password: nodeLib.NodeJSNs.TypedArray): Decipher = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(
     algorithm: java.lang.String,
     password: nodeLib.NodeJSNs.TypedArray,
     options: nodeLib.streamMod.internalNs.TransformOptions
   ): Decipher = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(algorithm: java.lang.String, password: stdLib.DataView): Decipher = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(
     algorithm: java.lang.String,
     password: stdLib.DataView,
@@ -334,27 +310,17 @@ object cryptoModMembers extends js.Object {
   ): Decipher = js.native
   /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(algorithm: CipherCCMTypes, password: java.lang.String, options: CipherCCMOptions): DecipherCCM = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(algorithm: CipherCCMTypes, password: nodeLib.Buffer, options: CipherCCMOptions): DecipherCCM = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(algorithm: CipherCCMTypes, password: nodeLib.NodeJSNs.TypedArray, options: CipherCCMOptions): DecipherCCM = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(algorithm: CipherCCMTypes, password: stdLib.DataView, options: CipherCCMOptions): DecipherCCM = js.native
   /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(algorithm: CipherGCMTypes, password: java.lang.String): DecipherGCM = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(algorithm: CipherGCMTypes, password: java.lang.String, options: CipherGCMOptions): DecipherGCM = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(algorithm: CipherGCMTypes, password: nodeLib.Buffer): DecipherGCM = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(algorithm: CipherGCMTypes, password: nodeLib.Buffer, options: CipherGCMOptions): DecipherGCM = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(algorithm: CipherGCMTypes, password: nodeLib.NodeJSNs.TypedArray): DecipherGCM = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(algorithm: CipherGCMTypes, password: nodeLib.NodeJSNs.TypedArray, options: CipherGCMOptions): DecipherGCM = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(algorithm: CipherGCMTypes, password: stdLib.DataView): DecipherGCM = js.native
-  /** @deprecated since v10.0.0 use createCipheriv() */
   def createDecipher(algorithm: CipherGCMTypes, password: stdLib.DataView, options: CipherGCMOptions): DecipherGCM = js.native
   def createDecipheriv(algorithm: java.lang.String, key: java.lang.String, iv: java.lang.String): Decipher = js.native
   def createDecipheriv(

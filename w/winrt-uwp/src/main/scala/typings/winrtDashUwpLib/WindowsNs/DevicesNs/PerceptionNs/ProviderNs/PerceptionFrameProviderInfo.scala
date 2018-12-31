@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** A specific set of properties describing a unique IPerceptionFrameProvider. */
 @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFrameProviderInfo")
 @js.native
+/** Initializes a new PerceptionFrameProviderInfo instance. */
 class PerceptionFrameProviderInfo () extends js.Object {
   /** Gets or sets the descriptor of the kind of FrameProvider categorically, for example, "com.contoso.depthcamera.x500". */
   var deviceKind: java.lang.String = js.native

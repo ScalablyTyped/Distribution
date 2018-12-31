@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 trait OnsInputElement
   extends stdLib.HTMLElement {
   /**
-       * @description This boolean specifies whether the input is checked or not. Only works for `radio` and `checkbox` type inputs.
-       */
+    * @description This boolean specifies whether the input is checked or not. Only works for `radio` and `checkbox` type inputs.
+    */
   var checked: scala.Boolean = js.native
   /**
-       * @description A boolean value that specifies whether the input is disabled or not.
-       */
+    * @description A boolean value that specifies whether the input is disabled or not.
+    */
   var disabled: scala.Boolean = js.native
   /**
-       * @description The current value of the input.
-       */
+    * @description The current value of the input.
+    */
   var value: java.lang.String = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PurchasedItem extends js.Object {
     // only Apple
   var appItemId: js.UndefOr[java.lang.String] = js.undefined

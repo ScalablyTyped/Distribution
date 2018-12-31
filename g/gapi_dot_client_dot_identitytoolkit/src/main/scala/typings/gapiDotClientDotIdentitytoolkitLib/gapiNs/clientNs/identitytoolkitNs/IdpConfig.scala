@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IdpConfig extends js.Object {
   /** OAuth2 client ID. */
   var clientId: js.UndefOr[java.lang.String] = js.undefined

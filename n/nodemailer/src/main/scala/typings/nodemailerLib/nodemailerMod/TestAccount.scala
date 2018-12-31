@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestAccount extends js.Object {
   var imap: nodemailerLib.Anon_Secure
   var pass: java.lang.String

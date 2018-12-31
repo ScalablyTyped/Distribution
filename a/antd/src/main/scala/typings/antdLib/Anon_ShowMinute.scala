@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ShowMinute extends js.Object {
   var showHour: scala.Boolean
   var showMinute: scala.Boolean

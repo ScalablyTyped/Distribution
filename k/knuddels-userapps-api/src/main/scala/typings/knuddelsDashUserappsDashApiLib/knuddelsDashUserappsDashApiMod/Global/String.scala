@@ -60,9 +60,6 @@ trait String extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/String.html#method_limitString
   		 */
   def limitString(fontSize: scala.Double, isBold: scala.Boolean, maxPixelWidth: scala.Double): java.lang.String = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/String.html#method_limitString
-  		 */
   def limitString(
     fontSize: scala.Double,
     isBold: scala.Boolean,
@@ -78,9 +75,6 @@ trait String extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/String.html#method_replaceAll
   		 */
   def replaceAll(search: java.lang.String, replacement: java.lang.String): java.lang.String = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/String.html#method_replaceAll
-  		 */
   def replaceAll(search: stdLib.RegExp, replacement: java.lang.String): java.lang.String = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/String.html#method_startsWith

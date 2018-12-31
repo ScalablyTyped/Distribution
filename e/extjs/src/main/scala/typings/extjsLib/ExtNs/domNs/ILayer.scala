@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILayer
   extends extjsLib.ExtNs.IElement {
   /** [Config Option] (String) */

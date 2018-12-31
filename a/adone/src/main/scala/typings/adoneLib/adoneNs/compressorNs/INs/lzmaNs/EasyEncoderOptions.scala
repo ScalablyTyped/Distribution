@@ -5,23 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EasyEncoderOptions extends js.Object {
   /**
-                   * Any of:
-                   *
-                   * CHECK_CRC32 (1)
-                   *
-                   * CHECK_CRC64 (4)
-                   *
-                   * CHECK_NONE (0)
-                   *
-                   * CHECK_SHA256 (10)
-                   */
+    * Any of:
+    *
+    * CHECK_CRC32 (1)
+    *
+    * CHECK_CRC64 (4)
+    *
+    * CHECK_NONE (0)
+    *
+    * CHECK_SHA256 (10)
+    */
   var check: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * A number from 0 to 9, 0 being the fastest and weakest compression, 9 the slowest and highest compression level
-                   */
+    * A number from 0 to 9, 0 being the fastest and weakest compression, 9 the slowest and highest compression level
+    */
   var preset: js.UndefOr[scala.Double] = js.undefined
 }
 

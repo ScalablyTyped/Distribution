@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BuildReference extends js.Object {
   var branchName: java.lang.String
   var buildSystem: java.lang.String

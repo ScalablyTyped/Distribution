@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IResolverOptions[TSource, TContext] extends js.Object {
   var __isTypeOf: js.UndefOr[graphqlLib.typeDefinitionMod.GraphQLIsTypeOfFn[TSource, TContext]] = js.undefined
   var __resolveType: js.UndefOr[graphqlLib.typeDefinitionMod.GraphQLTypeResolver[TSource, TContext]] = js.undefined

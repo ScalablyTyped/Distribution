@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object rawModMembers extends js.Object {
   /**
-   * Executes a task as soon as possible.
-   * @param task Function or any object that implements `call()`.
-   */
+    * Executes a task as soon as possible.
+    * @param task Function or any object that implements `call()`.
+    */
   def apply(task: Task): scala.Unit = js.native
   /**
-       * Flushes the event queue.
-       */
+    * Flushes the event queue.
+    */
   def requestFlush(): scala.Unit = js.native
 }
 

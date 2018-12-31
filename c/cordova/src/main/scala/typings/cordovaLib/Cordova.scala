@@ -19,25 +19,18 @@ trait Cordova extends js.Object {
     factory: js.Function3[/* require */ js.Any, /* exports */ js.Any, /* module */ js.Any, _]
   ): scala.Unit = js.native
   /** Invokes native functionality by specifying corresponding service name, action and optional parameters.
-       * @param success A success callback function.
-       * @param fail An error callback function.
-       * @param service The service name to call on the native side (corresponds to a native class).
-       * @param action The action name to call on the native side (generally corresponds to the native class method).
-       * @param args An array of arguments to pass into the native environment.
-       */
+    * @param success A success callback function.
+    * @param fail An error callback function.
+    * @param service The service name to call on the native side (corresponds to a native class).
+    * @param action The action name to call on the native side (generally corresponds to the native class method).
+    * @param args An array of arguments to pass into the native environment.
+    */
   def exec(
     success: js.Function1[/* data */ js.Any, _],
     fail: js.Function1[/* err */ js.Any, _],
     service: java.lang.String,
     action: java.lang.String
   ): scala.Unit = js.native
-  /** Invokes native functionality by specifying corresponding service name, action and optional parameters.
-       * @param success A success callback function.
-       * @param fail An error callback function.
-       * @param service The service name to call on the native side (corresponds to a native class).
-       * @param action The action name to call on the native side (generally corresponds to the native class method).
-       * @param args An array of arguments to pass into the native environment.
-       */
   def exec(
     success: js.Function1[/* data */ js.Any, _],
     fail: js.Function1[/* err */ js.Any, _],

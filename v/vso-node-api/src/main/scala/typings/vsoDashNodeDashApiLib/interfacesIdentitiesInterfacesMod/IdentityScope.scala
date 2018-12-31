@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IdentityScope extends js.Object {
   var administrators: IdentityDescriptor
   var id: java.lang.String

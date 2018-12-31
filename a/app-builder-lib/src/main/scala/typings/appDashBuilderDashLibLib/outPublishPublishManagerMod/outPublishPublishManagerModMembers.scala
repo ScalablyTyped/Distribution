@@ -32,7 +32,7 @@ object outPublishPublishManagerModMembers extends js.Object {
   ): js.Promise[appDashBuilderDashLibLib.Anon_PublishAutoUpdate | scala.Null] = js.native
   def getPublishConfigs(
     platformPackager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_],
-    targetSpecificOptions: js.Any,
+    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify PlatformSpecificBuildOptions */ js.Any,
     arch: builderDashUtilLib.outArchMod.Arch,
     errorIfCannot: scala.Boolean
   ): js.Promise[
@@ -40,7 +40,7 @@ object outPublishPublishManagerModMembers extends js.Object {
   ] = js.native
   def getPublishConfigs(
     platformPackager: appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_],
-    targetSpecificOptions: js.Any,
+    targetSpecificOptions: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify PlatformSpecificBuildOptions */ js.Any,
     arch: scala.Null,
     errorIfCannot: scala.Boolean
   ): js.Promise[

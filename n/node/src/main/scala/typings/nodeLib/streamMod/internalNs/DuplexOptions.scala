@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveMultipleInheritance: Dropped parents List(nodeLib.streamMod.internalNs.WritableOptions because Would inherit conflicting mutable fields List(destroy, highWaterMark, objectMode))*/
-
 trait DuplexOptions extends ReadableOptions {
   var allowHalfOpen: js.UndefOr[scala.Boolean] = js.undefined
   @JSName("destroy")

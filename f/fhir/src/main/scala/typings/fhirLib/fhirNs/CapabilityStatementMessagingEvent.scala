@@ -6,53 +6,52 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Declare support for this event
-     */
-
+  * Declare support for this event
+  */
 trait CapabilityStatementMessagingEvent extends BackboneElement {
   /**
-           * Contains extended information for property 'category'.
-           */
+    * Contains extended information for property 'category'.
+    */
   var _category: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'documentation'.
-           */
+    * Contains extended information for property 'documentation'.
+    */
   var _documentation: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'focus'.
-           */
+    * Contains extended information for property 'focus'.
+    */
   var _focus: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'mode'.
-           */
+    * Contains extended information for property 'mode'.
+    */
   var _mode: js.UndefOr[Element] = js.undefined
   /**
-           * Consequence | Currency | Notification
-           */
+    * Consequence | Currency | Notification
+    */
   var category: js.UndefOr[code] = js.undefined
   /**
-           * Event type
-           */
+    * Event type
+    */
   var code: Coding
   /**
-           * Endpoint-specific event documentation
-           */
+    * Endpoint-specific event documentation
+    */
   var documentation: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Resource that's focus of message
-           */
+    * Resource that's focus of message
+    */
   var focus: code
   /**
-           * sender | receiver
-           */
+    * sender | receiver
+    */
   var mode: code
   /**
-           * Profile that describes the request
-           */
+    * Profile that describes the request
+    */
   var request: Reference
   /**
-           * Profile that describes the response
-           */
+    * Profile that describes the response
+    */
   var response: Reference
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MergedCellCoords extends js.Object {
   var col: scala.Double
   var colspan: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WmxSitemap extends js.Object {
   /** The various content types in the sitemap. */
   var contents: js.UndefOr[js.Array[WmxSitemapContent]] = js.undefined

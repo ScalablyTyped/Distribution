@@ -6,21 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * An object with survival game info
- */
-
+  * An object with survival game info
+  */
 trait SurvivalGameInfo extends js.Object {
   /**
-       * Current score.
-       */
+    * Current score.
+    */
   var score: scala.Double
   /**
-       * Time to the next wave of invaders.
-       */
+    * Time to the next wave of invaders.
+    */
   var timeToWave: scala.Double
   /**
-       * The number of the next wave.
-       */
+    * The number of the next wave.
+    */
   var wave: scala.Double
 }
 

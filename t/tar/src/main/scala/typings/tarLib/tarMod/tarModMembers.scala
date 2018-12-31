@@ -9,12 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object tarModMembers extends js.Object {
   val blockSize: scala.Double = js.native
-  val c: js.Function3[
-    /* options */ CreateOptions with FileOptions, 
-    /* fileList */ js.Array[java.lang.String], 
-    /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
-    scala.Unit
-  ] = js.native
+  val c: tarLib.Anon_OptionsFileListCallbackErr = js.native
   val fieldEnds: js.Array[scala.Double] = js.native
   val fieldOffs: js.Array[scala.Double] = js.native
   val fieldSize: js.Array[scala.Double] = js.native
@@ -22,30 +17,11 @@ object tarModMembers extends js.Object {
   val knownExtended: tarLib.Anon_Path = js.native
   val modes: tarLib.Anon_Oread = js.native
   val numeric: tarLib.Anon_Ino = js.native
-  val r: js.Function3[
-    /* options */ ReplaceOptions, 
-    /* fileList */ js.UndefOr[js.Array[java.lang.String]], 
-    /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
-    js.Promise[scala.Unit]
-  ] = js.native
-  val t: js.Function2[
-    /* options */ ListOptions with FileOptions with tarLib.Anon_Sync, 
-    /* fileList */ js.UndefOr[js.Array[java.lang.String]], 
-    scala.Unit
-  ] = js.native
+  val r: tarLib.Anon_OptionsFileListCallback = js.native
+  val t: tarLib.Anon_OptionsFileList = js.native
   val types: tarLib.Anon_GlobalExtendedHeader = js.native
-  val u: js.Function3[
-    /* options */ ReplaceOptions, 
-    /* fileList */ js.UndefOr[js.Array[java.lang.String]], 
-    /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
-    js.Promise[scala.Unit]
-  ] = js.native
-  val x: js.Function3[
-    /* options */ ExtractOptions with FileOptions, 
-    /* fileList */ js.UndefOr[js.Array[java.lang.String]], 
-    /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
-    scala.Unit
-  ] = js.native
+  val u: tarLib.Anon_OptionsFileListCallback = js.native
+  val x: tarLib.Anon_Options = js.native
   def Extract(opts: java.lang.String): ParseStream = js.native
   def Extract(opts: ExtractOptions): ParseStream = js.native
   def Pack(): PackStream = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PENDINGTRANSITION extends js.Object {
   	// = 200, caller tried to fire an event while an async transition was still pending
   var INVALID_CALLBACK: scala.Double

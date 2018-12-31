@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MaximumCorner extends js.Object {
   var maximumCorner: cesiumLib.cesiumMod.CesiumNs.Cartesian3
   var minimumCorner: cesiumLib.cesiumMod.CesiumNs.Cartesian3

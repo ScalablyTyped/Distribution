@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CSSRuleList
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[CSSRule] {
   val length: scala.Double

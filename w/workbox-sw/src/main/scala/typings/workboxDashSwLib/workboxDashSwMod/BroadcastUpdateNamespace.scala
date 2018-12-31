@@ -6,9 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * ===== BroadcastUpdateNamespace =====
- */
-
-
+  * ===== BroadcastUpdateNamespace =====
+  */
 trait BroadcastUpdateNamespace extends js.Object
 

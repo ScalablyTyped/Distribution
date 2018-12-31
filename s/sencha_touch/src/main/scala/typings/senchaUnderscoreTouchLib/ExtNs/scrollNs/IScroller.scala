@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IScroller
   extends senchaUnderscoreTouchLib.ExtNs.IEvented {
   /** [Config Option] (Number) */

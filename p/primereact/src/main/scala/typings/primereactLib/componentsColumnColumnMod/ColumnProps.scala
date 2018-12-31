@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnProps extends js.Object {
   var body: js.UndefOr[js.Any] = js.undefined
   var bodyClassName: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PrettyPrintQuotaUserKey extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -18,17 +17,17 @@ trait Anon_PrettyPrintQuotaUserKey extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The request mode for pulling notifications.
-                   * Specifying waitForNotifications will cause the request to block and wait until one or more notifications are present, or return an empty notification
-                   * list if no notifications are present after some time.
-                   * Speciying returnImmediately will cause the request to immediately return the pending notifications, or an empty list if no notifications are present.
-                   * If omitted, defaults to waitForNotifications.
-                   */
+    * The request mode for pulling notifications.
+    * Specifying waitForNotifications will cause the request to block and wait until one or more notifications are present, or return an empty notification
+    * list if no notifications are present after some time.
+    * Speciying returnImmediately will cause the request to immediately return the pending notifications, or an empty list if no notifications are present.
+    * If omitted, defaults to waitForNotifications.
+    */
   var requestMode: js.UndefOr[java.lang.String] = js.undefined
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[java.lang.String] = js.undefined

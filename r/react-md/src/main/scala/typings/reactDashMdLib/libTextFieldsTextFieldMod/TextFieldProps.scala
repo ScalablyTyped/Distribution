@@ -5,22 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextFieldProps
   extends reactDashMdLib.libMod.Props
      with SharedTextFieldProps {
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var adjustMinWidth: js.UndefOr[scala.Boolean] = js.undefined
   var defaultValue: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var floatingLabel: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var id: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
   var onChange: js.UndefOr[

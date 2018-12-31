@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DOMRectList
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[DOMRect] {
   @JSName(org.scalablytyped.runtime.Symbol.iterator)

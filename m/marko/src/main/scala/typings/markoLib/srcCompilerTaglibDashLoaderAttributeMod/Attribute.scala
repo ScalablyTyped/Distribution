@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Attribute extends js.Object {
   var allowExpressions: scala.Boolean
   var autocomplete: scala.Boolean

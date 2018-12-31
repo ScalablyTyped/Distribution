@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestParam extends UrlParam {
   var data: js.UndefOr[js.Object | java.lang.String | stdLib.ArrayBuffer] = js.undefined
   var dataType: js.UndefOr[wepyLib.wepyLibStrings.json | wepyLib.wepyLibStrings.text] = js.undefined

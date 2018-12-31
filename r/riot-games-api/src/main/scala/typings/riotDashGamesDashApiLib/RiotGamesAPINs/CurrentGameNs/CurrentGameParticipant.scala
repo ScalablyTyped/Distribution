@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CurrentGameParticipant extends js.Object {
   var bot: scala.Boolean
   var championId: scala.Double

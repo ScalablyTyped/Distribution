@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TaskOrchestrationPlanReference extends js.Object {
   var artifactLocation: java.lang.String
   var artifactUri: java.lang.String

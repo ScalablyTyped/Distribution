@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseIconOptions extends LayerOptions {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var iconAnchor: js.UndefOr[PointExpression] = js.undefined

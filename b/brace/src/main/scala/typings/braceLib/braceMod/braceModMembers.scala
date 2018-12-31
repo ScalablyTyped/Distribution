@@ -15,12 +15,12 @@ object braceModMembers extends js.Object {
   var Editor: braceLib.Anon_Renderer = js.native
   var PlaceHolder: braceLib.Anon_SessionLength = js.native
   /**
-       * Creates a new `Range` object with the given starting and ending row and column points.
-       * @param startRow The starting row
-       * @param startColumn The starting column
-       * @param endRow The ending row
-       * @param endColumn The ending column
-      **/
+    * Creates a new `Range` object with the given starting and ending row and column points.
+    * @param startRow The starting row
+    * @param startColumn The starting column
+    * @param endRow The ending row
+    * @param endColumn The ending column
+    **/
   var Range: braceLib.Anon_StartRow = js.native
   var RangeList: braceLib.Anon_IRangeList = js.native
   var RenderLoop: braceLib.Anon_RenderLoop = js.native

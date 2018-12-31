@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object Route53Ns extends js.Object {
   @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class Types ()
     extends awsDashSdkLib.awsDashSdkMod.Route53Ns.Types {
-    /**
-       * Constructs a service object. This object has one method for each API operation.
-       */
     def this(options: awsDashSdkLib.clientsRoute53Mod.Route53Ns.ClientConfiguration) = this()
   }
   

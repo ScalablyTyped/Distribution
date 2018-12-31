@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VideoHTMLAttributes[T] extends MediaHTMLAttributes[T] {
   var height: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var playsInline: js.UndefOr[scala.Boolean] = js.undefined

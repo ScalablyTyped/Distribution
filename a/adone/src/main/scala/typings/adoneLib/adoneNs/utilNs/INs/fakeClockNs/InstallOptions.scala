@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InstallOptions extends js.Object {
   var advanceTimeDelta: js.UndefOr[scala.Double] = js.undefined
   var loopLimit: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MagicNumber extends js.Object {
   var boolCount: scala.Double
   var dataSize: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CheckboxProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined

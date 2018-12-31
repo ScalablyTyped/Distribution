@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OpenVoucherDetailOptions2
   extends BaseOptions[js.Any, js.Any] {
   var partnerId: java.lang.String

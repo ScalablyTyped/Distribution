@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CategoricalChartWrapper[L] extends js.Object {
   var barCategoryGap: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var barGap: js.UndefOr[scala.Double | java.lang.String] = js.undefined

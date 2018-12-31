@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPanelProxy
   extends extjsLib.ExtNs.IBase {
   /** [Method] Gets the proxy s element

@@ -8,13 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("d3-array", JSImport.Namespace)
 @js.native
 object d3DashArrayModMembers extends js.Object {
-  val bisect: js.Function4[
-    /* array */ stdLib.ArrayLike[stdLib.Date], 
-    /* x */ stdLib.Date, 
-    /* lo */ js.UndefOr[scala.Double], 
-    /* hi */ js.UndefOr[scala.Double], 
-    scala.Double
-  ] = js.native
+  val bisect: d3DashArrayLib.Anon_Array = js.native
   def ascending(): scala.Double = js.native
   def ascending(a: Primitive | js.UndefOr[scala.Nothing], b: Primitive): scala.Double = js.native
   def ascending(a: Primitive): scala.Double = js.native
@@ -150,9 +144,7 @@ object d3DashArrayModMembers extends js.Object {
   def pairs[T](array: stdLib.ArrayLike[T]): js.Array[js.Tuple2[T, T]] = js.native
   def pairs[T, U](array: stdLib.ArrayLike[T], reducer: js.Function2[/* a */ T, /* b */ T, U]): js.Array[U] = js.native
   def permute[T](array: org.scalablytyped.runtime.NumberDictionary[T], keys: stdLib.ArrayLike[scala.Double]): js.Array[T] = js.native
-  def permute[T, K /* <: java.lang.String */](`object`: T, keys: stdLib.ArrayLike[K]): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-  ] = js.native
+  def permute[T, K /* <: java.lang.String */](`object`: T, keys: stdLib.ArrayLike[K]): js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
   def quantile[T /* <: Numeric */](array: stdLib.ArrayLike[js.UndefOr[T | scala.Null]], p: scala.Double): js.UndefOr[scala.Double] = js.native
   def quantile[T](
     array: stdLib.ArrayLike[T],

@@ -24,7 +24,7 @@ trait FoundationStatic extends js.Object {
     method: java.lang.String,
     options: js.Object
   ): foundationLib.JQuery = js.native
-  def init_lib(lib: js.Any, args: js.Any): js.Function1[/* repeated */js.Any, _] = js.native
+  def init_lib(lib: js.Any, args: js.Any): js.Function1[/* repeated */ js.Any, _] = js.native
   def patch(lib: js.Any): scala.Unit = js.native
   def set_namespace(): scala.Unit = js.native
 }

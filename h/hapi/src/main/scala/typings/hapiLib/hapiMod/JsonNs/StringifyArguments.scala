@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * For context [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsjson)
-     */
-
+  * For context [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsjson)
+  */
 trait StringifyArguments extends js.Object {
   /* calls Hoek.jsonEscape() after conversion to JSON string. Defaults to false. */
   var escape: js.UndefOr[scala.Boolean] = js.undefined

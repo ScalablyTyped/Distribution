@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HiddenPlayerList extends js.Object {
   /** The players. */
   var items: js.UndefOr[js.Array[HiddenPlayer]] = js.undefined

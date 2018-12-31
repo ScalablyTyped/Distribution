@@ -25,19 +25,7 @@ trait Call extends js.Object {
   		*	@param extraHeaders Optional custom parameters (SIP headers) that should be sent after accepting incoming call. Parameter names must start with "X-" to be processed by application
   		*/
   def answer(): scala.Unit = js.native
-  /**
-  		*	Answer on incoming call
-  		*
-  		*	@param customData Set custom string associated with call session. It can be later obtained from Call History using HTTP API
-  		*	@param extraHeaders Optional custom parameters (SIP headers) that should be sent after accepting incoming call. Parameter names must start with "X-" to be processed by application
-  		*/
   def answer(customData: java.lang.String): scala.Unit = js.native
-  /**
-  		*	Answer on incoming call
-  		*
-  		*	@param customData Set custom string associated with call session. It can be later obtained from Call History using HTTP API
-  		*	@param extraHeaders Optional custom parameters (SIP headers) that should be sent after accepting incoming call. Parameter names must start with "X-" to be processed by application
-  		*/
   def answer(customData: java.lang.String, extraHeaders: js.Object): scala.Unit = js.native
   /**
   		*	Reject incoming call
@@ -45,11 +33,6 @@ trait Call extends js.Object {
   		*	@param extraHeaders Optional custom parameters (SIP headers) that should be sent after accepting incoming call. Parameter names must start with "X-" to be processed by application
   		*/
   def decline(): scala.Unit = js.native
-  /**
-  		*	Reject incoming call
-  		*
-  		*	@param extraHeaders Optional custom parameters (SIP headers) that should be sent after accepting incoming call. Parameter names must start with "X-" to be processed by application
-  		*/
   def decline(extraHeaders: js.Object): scala.Unit = js.native
   /**
   		*	Returns display name
@@ -65,11 +48,6 @@ trait Call extends js.Object {
   		*	@param extraHeaders Optional custom parameters (SIP headers) that should be sent after disconnecting/cancelling call. Parameter names must start with "X-" to be processed by application
   		*/
   def hangup(): scala.Unit = js.native
-  /**
-  		*	Hangup call
-  		*
-  		*	@param extraHeaders Optional custom parameters (SIP headers) that should be sent after disconnecting/cancelling call. Parameter names must start with "X-" to be processed by application
-  		*/
   def hangup(extraHeaders: js.Object): scala.Unit = js.native
   /**
   		*	Returns headers object
@@ -97,11 +75,6 @@ trait Call extends js.Object {
   		*	@param extraHeaders Optional custom parameters (SIP headers) that should be sent after disconnecting/cancelling call. Parameter names must start with "X-" to be processed by application
   		*/
   def reject(): scala.Unit = js.native
-  /**
-  		*	Reject incoming call
-  		*
-  		*	@param extraHeaders Optional custom parameters (SIP headers) that should be sent after disconnecting/cancelling call. Parameter names must start with "X-" to be processed by application
-  		*/
   def reject(extraHeaders: js.Object): scala.Unit = js.native
   /**
   		*	Remove handler for specified event
@@ -118,13 +91,6 @@ trait Call extends js.Object {
   		*	@param extraHeaders Optional headers to be passed with the message
   		*/
   def sendInfo(mimeType: java.lang.String, body: java.lang.String): scala.Unit = js.native
-  /**
-  		*	Send Info (SIP INFO) message inside the call
-  		*
-  		*	@param mimeType MIME type of the message
-  		*	@param body Message content
-  		*	@param extraHeaders Optional headers to be passed with the message
-  		*/
   def sendInfo(mimeType: java.lang.String, body: java.lang.String, extraHeaders: js.Object): scala.Unit = js.native
   /**
   		*	Send text message
@@ -152,29 +118,8 @@ trait Call extends js.Object {
   		*	@param height Height in pixels
   		*/
   def setRemoteVideoSize(width: scala.Double, height: scala.Double): scala.Unit = js.native
-  /**
-  		*	Set video settings
-  		*
-  		*	@param settings Video settings for current call
-  		*	@param successCallback Called in WebRTC mode if video settings were applied successfully
-  		*	@param failedCallback Called in WebRTC mode if video settings couldn't be applied
-  		*/
   def setVideoSettings(settings: FlashVideoSettings): scala.Unit = js.native
-  /**
-  		*	Set video settings
-  		*
-  		*	@param settings Video settings for current call
-  		*	@param successCallback Called in WebRTC mode if video settings were applied successfully
-  		*	@param failedCallback Called in WebRTC mode if video settings couldn't be applied
-  		*/
   def setVideoSettings(settings: FlashVideoSettings, successCallback: js.Function0[_]): scala.Unit = js.native
-  /**
-  		*	Set video settings
-  		*
-  		*	@param settings Video settings for current call
-  		*	@param successCallback Called in WebRTC mode if video settings were applied successfully
-  		*	@param failedCallback Called in WebRTC mode if video settings couldn't be applied
-  		*/
   def setVideoSettings(settings: FlashVideoSettings, successCallback: js.Function0[_], failedCallback: js.Function0[_]): scala.Unit = js.native
   /**
   		*	Set video settings
@@ -184,21 +129,7 @@ trait Call extends js.Object {
   		*	@param failedCallback Called in WebRTC mode if video settings couldn't be applied
   		*/
   def setVideoSettings(settings: VideoSettings): scala.Unit = js.native
-  /**
-  		*	Set video settings
-  		*
-  		*	@param settings Video settings for current call
-  		*	@param successCallback Called in WebRTC mode if video settings were applied successfully
-  		*	@param failedCallback Called in WebRTC mode if video settings couldn't be applied
-  		*/
   def setVideoSettings(settings: VideoSettings, successCallback: js.Function0[_]): scala.Unit = js.native
-  /**
-  		*	Set video settings
-  		*
-  		*	@param settings Video settings for current call
-  		*	@param successCallback Called in WebRTC mode if video settings were applied successfully
-  		*	@param failedCallback Called in WebRTC mode if video settings couldn't be applied
-  		*/
   def setVideoSettings(settings: VideoSettings, successCallback: js.Function0[_], failedCallback: js.Function0[_]): scala.Unit = js.native
   /**
   		*	Show/hide remote party video

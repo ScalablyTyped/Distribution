@@ -27,9 +27,9 @@ abstract class Magnetometer () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[Magnetometer, MagnetometerReadingChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Gets the current magnetometer reading.
-                   * @return The current magnetometer reading.
-                   */
+    * Gets the current magnetometer reading.
+    * @return The current magnetometer reading.
+    */
   def getCurrentReading(): MagnetometerReading = js.native
   /** Occurs each time the compass reports a new sensor reading. */
   def onreadingchanged(ev: MagnetometerReadingChangedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[Magnetometer]): scala.Unit = js.native
@@ -46,9 +46,9 @@ abstract class Magnetometer () extends js.Object {
 @js.native
 object Magnetometer extends js.Object {
   /**
-                   * Returns the default magnetometer.
-                   * @return The default magnetometer.
-                   */
+    * Returns the default magnetometer.
+    * @return The default magnetometer.
+    */
   def getDefault(): winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.Magnetometer = js.native
 }
 

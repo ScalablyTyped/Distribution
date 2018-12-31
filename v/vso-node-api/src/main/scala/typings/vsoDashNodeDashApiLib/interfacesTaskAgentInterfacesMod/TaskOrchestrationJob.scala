@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TaskOrchestrationJob extends TaskOrchestrationItem {
   var demands: js.Array[_]
   var executeAs: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef

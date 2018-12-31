@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Replace extends js.Object {
   var go: js.Function1[
     /* n */ scala.Double, 

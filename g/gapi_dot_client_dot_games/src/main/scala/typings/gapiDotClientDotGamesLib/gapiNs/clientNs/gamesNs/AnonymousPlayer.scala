@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnonymousPlayer extends js.Object {
   /** The base URL for the image to display for the anonymous player. */
   var avatarImageUrl: js.UndefOr[java.lang.String] = js.undefined

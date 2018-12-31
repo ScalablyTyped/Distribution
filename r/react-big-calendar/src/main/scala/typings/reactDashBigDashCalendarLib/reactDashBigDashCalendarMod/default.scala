@@ -13,23 +13,23 @@ class default[TEvent /* <: Event */, TResource /* <: js.Object */] () extends Bi
 @js.native
 object default extends js.Object {
   /**
-       * action constants for Navigate
-       */
+    * action constants for Navigate
+    */
   var Navigate: reactDashBigDashCalendarLib.Anon_PREVIOUS = js.native
   /**
-       * action constants for View
-       */
+    * action constants for View
+    */
   var Views: stdLib.Record[
     reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.ViewKey, 
     reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.View
   ] = js.native
   /**
-       * create DateLocalizer from globalize
-       */
+    * create DateLocalizer from globalize
+    */
   def globalizeLocalizer(globalizeInstance: js.Object): reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.DateLocalizer = js.native
   /**
-       * create DateLocalizer from a moment
-       */
+    * create DateLocalizer from a moment
+    */
   def momentLocalizer(momentInstance: js.Object): reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.DateLocalizer = js.native
   def move(
     View: reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.ViewKey,

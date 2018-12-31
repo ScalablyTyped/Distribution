@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpeedLimit extends js.Object {
   /** A unique identifier for a place. All place IDs returned by the Roads API will correspond to road segments. */
   var placeId: java.lang.String

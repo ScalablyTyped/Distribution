@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Adapter extends js.Object {
   def getCount(): scala.Double
   def getItem(position: scala.Double): js.Any

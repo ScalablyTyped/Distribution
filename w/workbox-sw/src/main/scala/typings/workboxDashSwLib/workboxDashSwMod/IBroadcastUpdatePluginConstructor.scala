@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Construct a new instance with a specific channelName to broadcast messages on
- */
+  * Construct a new instance with a specific channelName to broadcast messages on
+  */
 @js.native
 trait IBroadcastUpdatePluginConstructor
   extends org.scalablytyped.runtime.Instantiable1[/* channelName */ java.lang.String, BroadcastUpdatePlugin]

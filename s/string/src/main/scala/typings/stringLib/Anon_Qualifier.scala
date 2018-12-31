@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Qualifier extends js.Object {
   var delimiter: js.UndefOr[java.lang.String] = js.undefined
   var encloseNumbers: js.UndefOr[scala.Boolean] = js.undefined

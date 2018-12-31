@@ -5,39 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UAParser extends js.Object {
   /**
-           *  Returns browser information
-           */
+    *  Returns browser information
+    */
   def getBrowser(): uaDashParserDashJsLib.IUAParserNs.IBrowser
   /**
-           *  Returns parsed CPU information
-           */
+    *  Returns parsed CPU information
+    */
   def getCPU(): uaDashParserDashJsLib.IUAParserNs.ICPU
   /**
-           *  Returns device information
-           */
+    *  Returns device information
+    */
   def getDevice(): uaDashParserDashJsLib.IUAParserNs.IDevice
   /**
-           *  Returns browsers engine information
-           */
+    *  Returns browsers engine information
+    */
   def getEngine(): uaDashParserDashJsLib.IUAParserNs.IEngine
   /**
-           *  Returns OS information
-           */
+    *  Returns OS information
+    */
   def getOS(): uaDashParserDashJsLib.IUAParserNs.IOS
   /**
-           *  Returns parse result
-           */
+    *  Returns parse result
+    */
   def getResult(): uaDashParserDashJsLib.IUAParserNs.IResult
   /**
-           *  Returns UA string of current instance
-           */
+    *  Returns UA string of current instance
+    */
   def getUA(): java.lang.String
   /**
-           *  Set & parse UA string
-           */
+    *  Set & parse UA string
+    */
   def setUA(uastring: java.lang.String): UAParser
 }
 

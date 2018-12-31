@@ -9,9 +9,7 @@ import scala.scalajs.js.annotation._
 trait LodashOmitBy extends js.Object {
   def apply[T](predicate: lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[T]): lodashLib.lodashMod.underscoreNs.NumericDictionary[T] = js.native
   def apply[T /* <: js.Object */](
-    predicate: lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ],
+    predicate: lodashLib.lodashMod.underscoreNs.ValueKeyIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any],
     `object`: T
   ): lodashLib.lodashMod.underscoreNs.PartialObject[T] = js.native
   def apply[T](

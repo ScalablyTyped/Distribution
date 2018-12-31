@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Activities extends js.Object {
   /** Activity group. */
   var activities: js.UndefOr[gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.Activities] = js.undefined
@@ -16,9 +15,9 @@ trait Anon_Activities extends js.Object {
   /** The date range for which this report should be run. */
   var dateRange: js.UndefOr[gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.DateRange] = js.undefined
   /**
-                   * The list of filters on which dimensions are filtered.
-                   * Filters for different dimensions are ANDed, filters for the same dimension are grouped together and ORed.
-                   */
+    * The list of filters on which dimensions are filtered.
+    * Filters for different dimensions are ANDed, filters for the same dimension are grouped together and ORed.
+    */
   var dimensionFilters: js.UndefOr[
     js.Array[gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.DimensionValue]
   ] = js.undefined

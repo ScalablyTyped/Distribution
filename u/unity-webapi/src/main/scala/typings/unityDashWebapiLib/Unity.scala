@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Unity extends js.Object {
   var Launcher: UnityLauncher
   var MediaPlayer: UnityMediaPlayer

@@ -46,9 +46,9 @@ package object DataTablesNs {
   ]
   type FunctionDrawCallback = js.Function1[/* settings */ SettingsLegacy, scala.Unit]
   /**
-       * @param data Data from the column cell to be analysed.
-       * @param DataTables settings object.
-       */
+    * @param data Data from the column cell to be analysed.
+    * @param DataTables settings object.
+    */
   type FunctionExtTypeSettingsDetect = js.Function2[/* data */ js.Any, /* settings */ Settings, java.lang.String | scala.Null]
   type FunctionFooterCallback = js.Function5[
     /* tfoot */ stdLib.Node, 

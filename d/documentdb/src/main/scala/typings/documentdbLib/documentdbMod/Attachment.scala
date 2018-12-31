@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Attachment
   extends /** Other properties */
 /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {

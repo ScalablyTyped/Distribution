@@ -6,44 +6,32 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * @summary Redis store for Express Brute
- */
+  * @summary Redis store for Express Brute
+  */
 @js.native
 trait express_brute_redis extends js.Object {
   /**
-       * @summary Gets a key in Redis storage.
-       */
+    * @summary Gets a key in Redis storage.
+    */
   def get(key: java.lang.String): scala.Unit = js.native
-  /**
-       * @summary Gets a key in Redis storage.
-       */
   def get(
     key: java.lang.String,
     callback: js.Function2[/* err */ nodeLib.Error, /* data */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   /**
-       * @summary Resets a key in Redis storage.
-       */
+    * @summary Resets a key in Redis storage.
+    */
   def reset(key: java.lang.String): scala.Unit = js.native
-  /**
-       * @summary Resets a key in Redis storage.
-       */
   def reset(
     key: java.lang.String,
     callback: js.Function2[/* err */ nodeLib.Error, /* data */ js.Any, scala.Unit],
     args: js.Any*
   ): scala.Unit = js.native
   /**
-       * @summary Sets a key in Redis storage.
-       */
+    * @summary Sets a key in Redis storage.
+    */
   def set(key: java.lang.String, value: java.lang.String): scala.Unit = js.native
-  /**
-       * @summary Sets a key in Redis storage.
-       */
   def set(key: java.lang.String, value: java.lang.String, lifetime: scala.Double): scala.Unit = js.native
-  /**
-       * @summary Sets a key in Redis storage.
-       */
   def set(
     key: java.lang.String,
     value: java.lang.String,

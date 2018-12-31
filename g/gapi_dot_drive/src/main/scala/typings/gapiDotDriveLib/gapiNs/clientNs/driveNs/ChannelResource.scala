@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChannelResource extends js.Object {
   var expiration: scala.Double
   var id: java.lang.String

@@ -16,9 +16,9 @@ abstract class PerceptionPropertyChangeRequest () extends js.Object {
   /** Gets the requested new value of the property. */
   var value: js.Any = js.native
   /**
-                       * Gets a Windows::Foundation::Deferral object to allow background processing if needed.
-                       * @return The Deferral object.
-                       */
+    * Gets a Windows::Foundation::Deferral object to allow background processing if needed.
+    * @return The Deferral object.
+    */
   def getDeferral(): winrtDashUwpLib.WindowsNs.FoundationNs.Deferral = js.native
 }
 

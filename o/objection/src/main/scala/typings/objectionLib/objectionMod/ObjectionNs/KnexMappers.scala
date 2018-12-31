@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KnexMappers extends js.Object {
   def postProcessResponse(response: js.Any): js.Any
   def wrapIdentifier(

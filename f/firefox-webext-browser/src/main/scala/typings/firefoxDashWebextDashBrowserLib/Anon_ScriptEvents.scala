@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ScriptEvents extends js.Object {
   var events: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.experimentsNs.APIEvents] = js.undefined
   var paths: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.experimentsNs.APIPaths] = js.undefined

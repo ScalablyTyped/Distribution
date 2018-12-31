@@ -35,10 +35,10 @@ class namespaced () extends ClientJS {
   /* CompleteClass */
   override def getCurrentResolution(): java.lang.String = js.native
   /**
-       * @param datapoints Any number of datapoints that are (or can be coerced to
-       *                   be) strings.
-       * @return A 32-bit integer representing the cumulative fingerprint.
-       */
+    * @param datapoints Any number of datapoints that are (or can be coerced to
+    *                   be) strings.
+    * @return A 32-bit integer representing the cumulative fingerprint.
+    */
   /* CompleteClass */
   override def getCustomFingerprint(datapoints: (java.lang.String | scala.Double)*): scala.Double = js.native
   // Device methods

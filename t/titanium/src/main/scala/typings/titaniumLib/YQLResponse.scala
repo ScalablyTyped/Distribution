@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Properties passed to a yql callback to report a success or failure.
- */
-
+  * Properties passed to a yql callback to report a success or failure.
+  */
 trait YQLResponse extends js.Object {
   /**
   	 * Error code. Returns 0 if `success` is `true`.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   // Set to false to disable advanced optimizations - selector & property merging, reduction, etc.
   var advanced: js.UndefOr[scala.Boolean] = js.undefined

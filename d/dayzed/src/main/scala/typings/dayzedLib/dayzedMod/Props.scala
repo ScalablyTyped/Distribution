@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Props extends js.Object {
   var children: js.UndefOr[dayzedLib.RenderFn] = js.undefined
   var date: js.UndefOr[stdLib.Date] = js.undefined

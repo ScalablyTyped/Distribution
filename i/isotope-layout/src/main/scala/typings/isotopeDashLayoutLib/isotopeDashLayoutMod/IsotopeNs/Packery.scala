@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Packery extends js.Object {
   var columnWidth: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var gutter: js.UndefOr[scala.Double | java.lang.String] = js.undefined

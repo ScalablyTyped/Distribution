@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation._
 
 /* userScripts types */
 /** Details of a user script */
-
 trait UserScriptOptions extends js.Object {
   /**
-           * If allFrames is `true`, implies that the JavaScript should be injected into all frames of current page. By
-           * default, it's `false` and is only injected into the top frame.
-           */
+    * If allFrames is `true`, implies that the JavaScript should be injected into all frames of current page. By
+    * default, it's `false` and is only injected into the top frame.
+    */
   var allFrames: js.UndefOr[scala.Boolean] = js.undefined
   var excludeGlobs: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var excludeMatches: js.UndefOr[
@@ -25,10 +24,10 @@ trait UserScriptOptions extends js.Object {
     js.Array[firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.ExtensionFileOrCode]
   ] = js.undefined
   /**
-           * If matchAboutBlank is true, then the code is also injected in about:blank and about:srcdoc frames if your
-           * extension has access to its parent document. Code cannot be inserted in top-level about:-frames. By default
-           * it is `false`.
-           */
+    * If matchAboutBlank is true, then the code is also injected in about:blank and about:srcdoc frames if your
+    * extension has access to its parent document. Code cannot be inserted in top-level about:-frames. By default
+    * it is `false`.
+    */
   var matchAboutBlank: js.UndefOr[scala.Boolean] = js.undefined
   var matches: js.Array[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.MatchPattern]
   /** The soonest that the JavaScript will be injected into the tab. Defaults to "document_idle". */

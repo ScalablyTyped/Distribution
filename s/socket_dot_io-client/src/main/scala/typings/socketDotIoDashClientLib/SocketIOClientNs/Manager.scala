@@ -40,9 +40,6 @@ trait Manager extends Emitter {
   		 * @see open( fn );
   		 */
   def connect(): Manager = js.native
-  /**
-  		 * @see open( fn );
-  		 */
   def connect(fn: js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit]): Manager = js.native
   /**
   		 * Sets the current transport socket and opens our connection
@@ -51,12 +48,6 @@ trait Manager extends Emitter {
   		 * @return This Manager
   		 */
   def open(): Manager = js.native
-  /**
-  		 * Sets the current transport socket and opens our connection
-  		 * @param fn An optional callback to call when our socket has either opened, or
-  		 * failed. It can take one optional parameter of type Error
-  		 * @return This Manager
-  		 */
   def open(fn: js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit]): Manager = js.native
   /**
   		 * Gets the randomisation factor used in the exponential backoff jitter

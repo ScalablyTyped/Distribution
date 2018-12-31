@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Message extends js.Object {
   var card: js.UndefOr[Card] = js.undefined
   var payload: js.UndefOr[js.Any] = js.undefined

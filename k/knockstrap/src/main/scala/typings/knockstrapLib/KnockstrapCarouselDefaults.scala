@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KnockstrapCarouselDefaults extends js.Object {
   var controlsTemplate: KnockstrapCarouselDefaultsControlsTemplate
   var css: java.lang.String

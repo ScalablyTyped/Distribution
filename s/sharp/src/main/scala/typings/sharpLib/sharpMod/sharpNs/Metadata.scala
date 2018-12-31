@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Metadata extends WriteableMetadata {
   /** Number of bands e.g. 3 for sRGB, 4 for CMYK */
   var channels: js.UndefOr[Channels] = js.undefined

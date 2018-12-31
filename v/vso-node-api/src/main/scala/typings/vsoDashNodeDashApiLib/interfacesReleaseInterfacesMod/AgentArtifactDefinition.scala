@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AgentArtifactDefinition extends js.Object {
   var alias: java.lang.String
   var artifactType: AgentArtifactType

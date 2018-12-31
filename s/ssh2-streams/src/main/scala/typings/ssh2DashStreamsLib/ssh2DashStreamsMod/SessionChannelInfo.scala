@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SessionChannelInfo extends js.Object {
   var packetSize: scala.Double
   var sender: scala.Double

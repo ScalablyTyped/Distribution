@@ -20,12 +20,12 @@ abstract class AuthClient ()
     ]
   ): this.type = js.native
   /**
-       * Provides an alternative Axios request implementation with auth credentials
-       */
+    * Provides an alternative Axios request implementation with auth credentials
+    */
   def request[T](opts: axiosLib.axiosMod.AxiosRequestConfig): axiosLib.axiosMod.AxiosPromise[T] = js.native
   /**
-       * Sets the auth credentials.
-       */
+    * Sets the auth credentials.
+    */
   def setCredentials(credentials: googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.Credentials): scala.Unit = js.native
 }
 

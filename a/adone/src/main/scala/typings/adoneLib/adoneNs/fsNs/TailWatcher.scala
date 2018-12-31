@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Represents an event emitter that watches for a file growing,
-         * emits "line" event for each new line in a file
-         */
+  * Represents an event emitter that watches for a file growing,
+  * emits "line" event for each new line in a file
+  */
 @JSGlobal("adone.fs.TailWatcher")
 @js.native
 class TailWatcher protected ()
@@ -21,8 +21,8 @@ class TailWatcher protected ()
     callback: js.Function1[/* line */ java.lang.String, scala.Unit]
   ): this.type = js.native
   /**
-               * Stop watching
-               */
+    * Stop watching
+    */
   def unwatch(): scala.Unit = js.native
 }
 

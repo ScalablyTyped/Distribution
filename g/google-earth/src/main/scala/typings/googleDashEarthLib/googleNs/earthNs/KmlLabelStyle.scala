@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class KmlLabelStyle () extends KmlColorStyle {
   /**
-       * Resizes the label.
-       */
+    * Resizes the label.
+    */
   def getScale(): scala.Double = js.native
   /**
-       * Resizes the label.
-       */
+    * Resizes the label.
+    */
   def setScale(scale: scala.Double): scala.Unit = js.native
 }
 

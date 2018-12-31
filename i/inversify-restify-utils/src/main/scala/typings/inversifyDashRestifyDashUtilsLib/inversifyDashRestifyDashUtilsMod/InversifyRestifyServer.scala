@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class InversifyRestifyServer protected ()
   extends inversifyDashRestifyDashUtilsLib.dtsServerMod.InversifyRestifyServer {
-  def this(container: js.Any) = this()
-  def this(container: js.Any, opts: restifyLib.restifyMod.ServerOptions with inversifyDashRestifyDashUtilsLib.dtsInterfacesMod.interfacesNs.ServerOptions) = this()
+  def this(container: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify inversify.interfaces.Container */ js.Any) = this()
+  def this(container: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify inversify.interfaces.Container */ js.Any, opts: restifyLib.restifyMod.ServerOptions with inversifyDashRestifyDashUtilsLib.dtsInterfacesMod.interfacesNs.ServerOptions) = this()
 }
 

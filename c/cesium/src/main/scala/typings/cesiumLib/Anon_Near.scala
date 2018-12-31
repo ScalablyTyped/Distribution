@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Near extends js.Object {
   var aspectRatio: scala.Double
   var far: scala.Double

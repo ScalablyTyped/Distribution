@@ -10,12 +10,9 @@ import scala.scalajs.js.annotation._
 abstract class Component[TOptions] protected ()
   extends materializeDashCssLib.MNs.Component[TOptions] {
   /**
-           * Construct component instance and set everything up
-           */
+    * Construct component instance and set everything up
+    */
   def this(elem: stdLib.Element) = this()
-  /**
-           * Construct component instance and set everything up
-           */
   def this(elem: stdLib.Element, options: stdLib.Partial[TOptions]) = this()
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Certification extends js.Object {
   /** Whether this certification has been achieved. */
   var achieved: js.UndefOr[scala.Boolean] = js.undefined

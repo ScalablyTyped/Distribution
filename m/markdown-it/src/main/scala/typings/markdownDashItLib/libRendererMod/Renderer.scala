@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Renderer extends js.Object {
   var rules: org.scalablytyped.runtime.StringDictionary[markdownDashItLib.libMod.MarkdownItNs.TokenRender]
   def render(tokens: js.Array[markdownDashItLib.libTokenMod.namespaced], options: js.Any, env: js.Any): java.lang.String

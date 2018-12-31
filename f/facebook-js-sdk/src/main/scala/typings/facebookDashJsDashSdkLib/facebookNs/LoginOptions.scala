@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LoginOptions extends js.Object {
   var auth_type: js.UndefOr[facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.rerequest] = js.undefined
   var enable_profile_selector: js.UndefOr[scala.Boolean] = js.undefined

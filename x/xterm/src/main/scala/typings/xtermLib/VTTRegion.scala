@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VTTRegion extends js.Object {
   var id: java.lang.String
   var lines: scala.Double

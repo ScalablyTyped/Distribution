@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseUI extends js.Object {
   var buildState: scala.Boolean
   var eventManager: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.EventManager

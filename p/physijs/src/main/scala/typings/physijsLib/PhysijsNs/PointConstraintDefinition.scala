@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PointConstraintDefinition extends js.Object {
   var id: scala.Double
   var objecta: threeLib.threeMod.Object3D

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // type/directives.js
-
 trait GraphQLDirective extends js.Object {
   var args: js.Array[GraphQLArgument]
   var description: java.lang.String

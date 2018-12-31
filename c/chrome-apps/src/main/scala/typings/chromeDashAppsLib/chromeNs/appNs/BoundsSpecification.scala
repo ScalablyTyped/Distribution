@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BoundsSpecification extends js.Object {
   /** The height of the content or window. */
   var height: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined

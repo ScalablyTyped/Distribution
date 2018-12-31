@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AndroidRoboTest extends js.Object {
   /** The initial activity that should be used to start the app. Optional */
   var appInitialActivity: js.UndefOr[java.lang.String] = js.undefined

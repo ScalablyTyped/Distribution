@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DistanceMatrixRequest extends js.Object {
   var avoidFerries: js.UndefOr[scala.Boolean] = js.undefined
   var avoidHighways: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SetOptions
   extends avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.ErrorOption
      with avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.SilentOption {

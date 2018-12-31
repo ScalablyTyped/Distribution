@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Contact extends js.Object {
   var first_name: java.lang.String
   var last_name: js.UndefOr[java.lang.String] = js.undefined

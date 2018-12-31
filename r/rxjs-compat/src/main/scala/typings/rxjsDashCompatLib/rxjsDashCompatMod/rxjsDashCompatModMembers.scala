@@ -12,21 +12,21 @@ object rxjsDashCompatModMembers extends js.Object {
   val EmptyError: rxjsLib.internalUtilEmptyErrorMod.EmptyErrorCtor = js.native
   val ObjectUnsubscribedError: rxjsLib.internalUtilObjectUnsubscribedErrorMod.ObjectUnsubscribedErrorCtor = js.native
   /**
-   * @typedef {Object} Rx.Scheduler
-   * @property {Scheduler} queue Schedules on a queue in the current event frame
-   * (trampoline scheduler). Use this for iteration operations.
-   * @property {Scheduler} asap Schedules on the micro task queue, which is the same
-   * queue used for promises. Basically after the current job, but before the next
-   * job. Use this for asynchronous conversions.
-   * @property {Scheduler} async Schedules work with `setInterval`. Use this for
-   * time-based operations.
-   * @property {Scheduler} animationFrame Schedules work with `requestAnimationFrame`.
-   * Use this for synchronizing with the platform's painting
-   */
+    * @typedef {Object} Rx.Scheduler
+    * @property {Scheduler} queue Schedules on a queue in the current event frame
+    * (trampoline scheduler). Use this for iteration operations.
+    * @property {Scheduler} asap Schedules on the micro task queue, which is the same
+    * queue used for promises. Basically after the current job, but before the next
+    * job. Use this for asynchronous conversions.
+    * @property {Scheduler} async Schedules work with `setInterval`. Use this for
+    * time-based operations.
+    * @property {Scheduler} animationFrame Schedules work with `requestAnimationFrame`.
+    * Use this for synchronizing with the platform's painting
+    */
   var Scheduler: rxjsDashCompatLib.Anon_AnimationFrame = js.native
   val TimeoutError: rxjsLib.internalUtilTimeoutErrorMod.TimeoutErrorCtor = js.native
   val UnsubscriptionError: rxjsLib.internalUtilUnsubscriptionErrorMod.UnsubscriptionErrorCtor = js.native
-  val operators: js.Any = js.native
+  val operators: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof _operators */ js.Any = js.native
   def pipe[T](): rxjsLib.internalTypesMod.UnaryFunction[T, T] = js.native
   def pipe[T, A](fn1: rxjsLib.internalTypesMod.UnaryFunction[T, A]): rxjsLib.internalTypesMod.UnaryFunction[T, A] = js.native
   def pipe[T, A, B](

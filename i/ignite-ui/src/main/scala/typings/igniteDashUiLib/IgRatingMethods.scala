@@ -44,11 +44,6 @@ trait IgRatingMethods extends js.Object {
   	 * @param destroy Request to destroy validator.
   	 */
   def validator(): js.Object = js.native
-  /**
-  	 * Gets reference to [igValidator](ui.igvalidator) used by igRating.
-  	 *
-  	 * @param destroy Request to destroy validator.
-  	 */
   def validator(destroy: scala.Boolean): js.Object = js.native
   /**
   	 * Gets/Sets (selected) value.
@@ -64,12 +59,6 @@ trait IgRatingMethods extends js.Object {
   	 * @return number|object If parameter is not "number", then last value which was rendered with hover css is returned. Otherwise, reference to igRating is returned.
   	 */
   def valueHover(): scala.Double | js.Object = js.native
-  /**
-  	 * Gets/Sets hover value.
-  	 *
-  	 * @param val New value which will be rendered with hover css when rating gets mouse.
-  	 * @return number|object If parameter is not "number", then last value which was rendered with hover css is returned. Otherwise, reference to igRating is returned.
-  	 */
   def valueHover(`val`: scala.Double): scala.Double | js.Object = js.native
 }
 

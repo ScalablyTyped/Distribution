@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options[Content /* <: js.Object */, Reduction] extends js.Object {
   /** Include attachment data. */
   var attachments: js.UndefOr[scala.Boolean] = js.undefined
@@ -20,9 +19,9 @@ trait Options[Content /* <: js.Object */, Reduction] extends js.Object {
   /** True if you want the reduce function to group results by keys, rather than returning a single result. */
   var group: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               * Number of elements in a key to group by, assuming the keys are arrays.
-               * Defaults to the full length of the array.
-               */
+    * Number of elements in a key to group by, assuming the keys are arrays.
+    * Defaults to the full length of the array.
+    */
   var group_level: js.UndefOr[scala.Double] = js.undefined
   /** Include the document in each row in the doc field. */
   var include_docs: js.UndefOr[scala.Boolean] = js.undefined
@@ -41,10 +40,10 @@ trait Options[Content /* <: js.Object */, Reduction] extends js.Object {
   /** Number of rows to skip before returning (warning: poor performance on IndexedDB/LevelDB!). */
   var skip: js.UndefOr[scala.Double] = js.undefined
   /**
-               * unspecified (default): Returns the latest results, waiting for the view to build if necessary.
-               * 'ok': Returns results immediately, even if they’re out-of-date.
-               * 'update_after': Returns results immediately, but kicks off a build afterwards.
-               */
+    * unspecified (default): Returns the latest results, waiting for the view to build if necessary.
+    * 'ok': Returns results immediately, even if they’re out-of-date.
+    * 'update_after': Returns results immediately, but kicks off a build afterwards.
+    */
   var stale: js.UndefOr[
     pouchdbDashMapreduceLib.pouchdbDashMapreduceLibStrings.ok | pouchdbDashMapreduceLib.pouchdbDashMapreduceLibStrings.update_after
   ] = js.undefined

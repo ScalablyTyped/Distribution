@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Entry extends js.Object {
   var license: java.lang.String
   var repository: java.lang.String

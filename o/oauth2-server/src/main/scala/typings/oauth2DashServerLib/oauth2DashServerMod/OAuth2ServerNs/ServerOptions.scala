@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerOptions
   extends AuthenticateOptions
      with AuthorizeOptions
      with TokenOptions {
   /**
-           * Model object
-           */
+    * Model object
+    */
   var model: AuthorizationCodeModel | ClientCredentialsModel | RefreshTokenModel | PasswordModel | ExtensionModel
 }
 

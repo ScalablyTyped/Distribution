@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Property extends js.Object {
   val basename: java.lang.String
   val custom: scala.Boolean

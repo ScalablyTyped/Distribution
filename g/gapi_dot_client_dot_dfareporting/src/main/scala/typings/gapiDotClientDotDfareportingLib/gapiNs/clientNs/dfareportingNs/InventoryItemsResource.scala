@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InventoryItemsResource extends js.Object {
   /** Gets one inventory item by ID. */
   def get(request: gapiDotClientDotDfareportingLib.Anon_ProfileIdPrettyPrintProjectId): gapiDotClientLib.gapiNs.clientNs.Request[InventoryItem]

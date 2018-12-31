@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventAttributes extends js.Object {
   var onClick: js.UndefOr[RechartsFunction] = js.undefined
   var onMouseDown: js.UndefOr[RechartsFunction] = js.undefined

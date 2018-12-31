@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a chat message. */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatMessage")
 @js.native
+/** Creates a new instance of the ChatMessage class. */
 class ChatMessage () extends js.Object {
   /** Gets a list of chat message attachments. */
   var attachments: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[ChatMessageAttachment] = js.native

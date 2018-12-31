@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Activity extends js.Object {
   /** Identifies who has access to see this activity. */
   var access: js.UndefOr[Acl] = js.undefined
@@ -46,10 +45,10 @@ trait Activity extends js.Object {
   /** The link to this activity. */
   var url: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * This activity's verb, which indicates the action that was performed. Possible values include, but are not limited to, the following values:
-               * - "post" - Publish content to the stream.
-               * - "share" - Reshare an activity.
-               */
+    * This activity's verb, which indicates the action that was performed. Possible values include, but are not limited to, the following values:
+    * - "post" - Publish content to the stream.
+    * - "share" - Reshare an activity.
+    */
   var verb: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -25,7 +25,6 @@ class ProtectedViewWindow protected () extends js.Object {
   def Close(): scala.Unit = js.native
   /** @param string [ModifyPassword=''] */
   def Edit(): Presentation = js.native
-  /** @param string [ModifyPassword=''] */
   def Edit(ModifyPassword: java.lang.String): Presentation = js.native
 }
 

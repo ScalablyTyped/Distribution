@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Mixin[P, S]
   extends ComponentLifecycle[P, S, js.Any] {
   var childContextTypes: js.UndefOr[ValidationMap[_]] = js.undefined

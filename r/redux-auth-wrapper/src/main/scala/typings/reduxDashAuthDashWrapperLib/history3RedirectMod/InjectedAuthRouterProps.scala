@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InjectedAuthRouterProps[Redirect] extends InjectedAuthReduxProps {
   var redirect: Redirect
 }

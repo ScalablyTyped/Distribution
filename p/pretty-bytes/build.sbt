@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "pretty-bytes"
-version := "5.1-dt-20180705Z-7c7ac1"
+version := "5.1-dt-20180705Z-f63e33"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "std" % "3.2.2-669a73")
+  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

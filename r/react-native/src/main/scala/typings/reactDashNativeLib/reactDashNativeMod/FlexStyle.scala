@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlexStyle extends js.Object {
   var alignContent: js.UndefOr[
     reactDashNativeLib.reactDashNativeLibStrings.`flex-start` | reactDashNativeLib.reactDashNativeLibStrings.`flex-end` | reactDashNativeLib.reactDashNativeLibStrings.center | reactDashNativeLib.reactDashNativeLibStrings.stretch | reactDashNativeLib.reactDashNativeLibStrings.`space-between` | reactDashNativeLib.reactDashNativeLibStrings.`space-around`
@@ -24,8 +23,8 @@ trait FlexStyle extends js.Object {
   var borderWidth: js.UndefOr[scala.Double] = js.undefined
   var bottom: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   /**
-       * @platform ios
-       */
+    * @platform ios
+    */
   var direction: js.UndefOr[
     reactDashNativeLib.reactDashNativeLibStrings.inherit | reactDashNativeLib.reactDashNativeLibStrings.ltr | reactDashNativeLib.reactDashNativeLibStrings.rtl
   ] = js.undefined

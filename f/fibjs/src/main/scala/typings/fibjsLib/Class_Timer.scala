@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 	* @brief 定时器处理器对象
 	* @detail 
 	*/
-
 @JSGlobal("Class_Timer")
 @js.native
 class Class_Timer () extends Class__object {

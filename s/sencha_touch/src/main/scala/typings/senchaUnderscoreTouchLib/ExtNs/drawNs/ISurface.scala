@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISurface
   extends senchaUnderscoreTouchLib.ExtNs.IComponent {
   /** [Method] Add a Sprite to the surface  */

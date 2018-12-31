@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObjectAccessControls extends js.Object {
   /** The list of items. */
   var items: js.UndefOr[js.Array[ObjectAccessControl]] = js.undefined

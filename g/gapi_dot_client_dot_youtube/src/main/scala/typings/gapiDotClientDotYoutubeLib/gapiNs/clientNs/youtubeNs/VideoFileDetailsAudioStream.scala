@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VideoFileDetailsAudioStream extends js.Object {
   /** The audio stream's bitrate, in bits per second. */
   var bitrateBps: js.UndefOr[java.lang.String] = js.undefined

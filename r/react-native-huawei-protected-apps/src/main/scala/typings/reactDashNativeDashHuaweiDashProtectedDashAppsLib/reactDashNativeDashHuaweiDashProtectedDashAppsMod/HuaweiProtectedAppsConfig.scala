@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HuaweiProtectedAppsConfig extends js.Object {
   var doNotShowAgainText: java.lang.String
   var negativeText: java.lang.String

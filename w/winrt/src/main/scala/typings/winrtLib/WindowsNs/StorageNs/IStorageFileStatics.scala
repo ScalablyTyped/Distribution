@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStorageFileStatics extends js.Object {
   def createStreamedFileAsync(
     displayNameWithExtension: java.lang.String,

@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateTransmission extends js.Object {
   /**
-           * Recipients to discreetly receive a carbon copy of the transmission
-           *
-           */
+    * Recipients to discreetly receive a carbon copy of the transmission
+    *
+    */
   var bcc: js.UndefOr[js.Array[Recipient]] = js.undefined
   /** Name of the campaign */
   var campaign_id: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Recipients to receive a carbon copy of the transmission
-           *
-           */
+    * Recipients to receive a carbon copy of the transmission
+    *
+    */
   var cc: js.UndefOr[js.Array[Recipient]] = js.undefined
   /** Content that will be used to construct a message */
   var content: InlineContent | sparkpostLib.Anon_TemplateidUsedrafttemplate | sparkpostLib.Anon_Emailrfc822

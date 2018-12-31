@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Bucket extends js.Object {
   var StorageClass: StorageType
   var creationDate: java.lang.String

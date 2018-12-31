@@ -43,12 +43,6 @@ trait IgHtmlEditorMethods extends js.Object {
   	 * @param args Additional parameter for the command.
   	 */
   def executeAction(actionName: java.lang.String): scala.Unit = js.native
-  /**
-  	 * Executes htmleditor commands.
-  	 *
-  	 * @param actionName The command name.
-  	 * @param args Additional parameter for the command.
-  	 */
   def executeAction(actionName: java.lang.String, args: js.Object): scala.Unit = js.native
   /**
   	 * Gets the content of the html editor.

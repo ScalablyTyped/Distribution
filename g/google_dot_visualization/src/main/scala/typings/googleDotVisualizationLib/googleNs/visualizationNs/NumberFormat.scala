@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class NumberFormat () extends DefaultFormatter {
   def this(options: NumberFormatOptions) = this()
   /**
-               * Returns the formatted value of a given value. This method does not require a DataTable.
-               */
+    * Returns the formatted value of a given value. This method does not require a DataTable.
+    */
   def formatValue(value: scala.Double): java.lang.String = js.native
 }
 

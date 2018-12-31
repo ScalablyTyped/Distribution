@@ -12,22 +12,22 @@ sealed trait LinkQueryMode extends js.Object
 @js.native
 object LinkQueryMode extends js.Object {
   /**
-       * Returns work items that satisfy the source, only if no linked work item satisfies the link and target criteria.
-       */
+    * Returns work items that satisfy the source, only if no linked work item satisfies the link and target criteria.
+    */
   @js.native
   sealed trait LinksOneHopDoesNotContain
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.LinkQueryMode
   
   /**
-       * Returns work items that satisfy the source and link criteria, even if no linked work item satisfies the target criteria.
-       */
+    * Returns work items that satisfy the source and link criteria, even if no linked work item satisfies the target criteria.
+    */
   @js.native
   sealed trait LinksOneHopMayContain
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.LinkQueryMode
   
   /**
-       * Returns work items where the source, target, and link criteria are all satisfied.
-       */
+    * Returns work items where the source, target, and link criteria are all satisfied.
+    */
   @js.native
   sealed trait LinksOneHopMustContain
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.LinkQueryMode
@@ -37,8 +37,8 @@ object LinkQueryMode extends js.Object {
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.LinkQueryMode
   
   /**
-       * Returns work items a hierarchy of work items that by default satisfy the source
-       */
+    * Returns work items a hierarchy of work items that by default satisfy the source
+    */
   @js.native
   sealed trait LinksRecursiveMayContain
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.LinkQueryMode

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CanonicalCoordinate extends js.Object {
   var key: scala.Double
   var x: scala.Double

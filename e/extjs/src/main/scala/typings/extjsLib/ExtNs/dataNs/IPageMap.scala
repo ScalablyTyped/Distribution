@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPageMap
   extends extjsLib.ExtNs.utilNs.ILruCache {
   /** [Method] Returns the first record in this page map which elicits a true return value from the passed selection function

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryError extends js.Object {
   /** A string representing the error information. */
   var body: java.lang.String

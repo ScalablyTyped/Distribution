@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StockChartNavigatorSeriesItemHighlight extends js.Object {
   var border: js.UndefOr[StockChartNavigatorSeriesItemHighlightBorder] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined

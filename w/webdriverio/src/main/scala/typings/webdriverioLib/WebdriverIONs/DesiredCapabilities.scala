@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DesiredCapabilities extends Capabilities {
   var acceptSslCerts: js.UndefOr[scala.Boolean] = js.undefined
   var addCustomRequestHeaders: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DrawableOptions extends js.Object {
   var behavior: js.UndefOr[athenajsLib.Anon_Sprite] = js.undefined
   var canCollide: js.UndefOr[scala.Boolean] = js.undefined

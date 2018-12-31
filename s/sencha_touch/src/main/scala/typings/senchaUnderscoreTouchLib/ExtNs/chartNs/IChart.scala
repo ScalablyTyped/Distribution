@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IChart extends IAbstractChart {
   /** [Config Option] (Boolean) */
   var flipXY: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiagramEditableResizeHandles extends js.Object {
   var fill: js.UndefOr[java.lang.String | DiagramEditableResizeHandlesFill] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined

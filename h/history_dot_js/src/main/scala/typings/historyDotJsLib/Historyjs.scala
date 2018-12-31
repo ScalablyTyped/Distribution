@@ -37,11 +37,11 @@ trait Historyjs extends js.Object {
   def replaceState(data: js.Any, title: java.lang.String, url: java.lang.String): scala.Boolean = js.native
   def replaceState(data: js.Any, title: java.lang.String, url: java.lang.String, queue: scala.Boolean): scala.Boolean = js.native
   /**
-       * History.setTitle(title)
-       * Applies the title to the document
-       * @param {HistoryState} newState
-       * @return {Boolean}
-       */
+    * History.setTitle(title)
+    * Applies the title to the document
+    * @param {HistoryState} newState
+    * @return {Boolean}
+    */
   def setTitle(newState: HistoryState): scala.Boolean = js.native
 }
 

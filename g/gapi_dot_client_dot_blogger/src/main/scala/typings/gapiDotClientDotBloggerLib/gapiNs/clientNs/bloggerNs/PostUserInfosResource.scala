@@ -5,17 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PostUserInfosResource extends js.Object {
   /**
-               * Gets one post and user info pair, by post ID and user ID. The post user info contains per-user information about the post, such as access rights,
-               * specific to the user.
-               */
+    * Gets one post and user info pair, by post ID and user ID. The post user info contains per-user information about the post, such as access rights,
+    * specific to the user.
+    */
   def get(request: gapiDotClientDotBloggerLib.Anon_MaxComments): gapiDotClientLib.gapiNs.clientNs.Request[PostUserInfo]
   /**
-               * Retrieves a list of post and post user info pairs, possibly filtered. The post user info contains per-user information about the post, such as access
-               * rights, specific to the user.
-               */
+    * Retrieves a list of post and post user info pairs, possibly filtered. The post user info contains per-user information about the post, such as access
+    * rights, specific to the user.
+    */
   def list(request: gapiDotClientDotBloggerLib.Anon_EndDateMaxResultsPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[PostUserInfosList]
 }
 

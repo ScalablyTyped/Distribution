@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictTransitionablePortalProps extends js.Object {
   /** Primary content. */
   var children: reactLib.reactMod.ReactNs.ReactNode
   /**
-     * Called when a close event happens.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props and internal state.
-     */
+    * Called when a close event happens.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props and internal state.
+    */
   var onClose: js.UndefOr[
     js.Function2[
       /* nothing */ scala.Null, 
@@ -23,11 +22,11 @@ trait StrictTransitionablePortalProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Callback on each transition that changes visibility to hidden.
-     *
-     * @param {null}
-     * @param {object} data - All props with status.
-     */
+    * Callback on each transition that changes visibility to hidden.
+    *
+    * @param {null}
+    * @param {object} data - All props with status.
+    */
   var onHide: js.UndefOr[
     js.Function2[
       /* nothing */ scala.Null, 
@@ -36,11 +35,11 @@ trait StrictTransitionablePortalProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called when an open event happens.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props and internal state.
-     */
+    * Called when an open event happens.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props and internal state.
+    */
   var onOpen: js.UndefOr[
     js.Function2[
       /* nothing */ scala.Null, 
@@ -49,11 +48,11 @@ trait StrictTransitionablePortalProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Callback on animation start.
-     *
-     * @param {null}
-     * @param {object} data - All props with status.
-     */
+    * Callback on animation start.
+    *
+    * @param {null}
+    * @param {object} data - All props with status.
+    */
   var onStart: js.UndefOr[
     js.Function2[
       /* nothing */ scala.Null, 

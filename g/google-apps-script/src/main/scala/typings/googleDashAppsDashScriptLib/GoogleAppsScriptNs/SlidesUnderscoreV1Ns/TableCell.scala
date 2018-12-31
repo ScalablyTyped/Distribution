@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableCell extends js.Object {
   // Column span of the cell.
   var column_span: scala.Double

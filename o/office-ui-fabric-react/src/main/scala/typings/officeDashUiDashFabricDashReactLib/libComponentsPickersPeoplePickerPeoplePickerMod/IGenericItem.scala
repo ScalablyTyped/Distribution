@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGenericItem extends js.Object {
   var ValidationState: officeDashUiDashFabricDashReactLib.libComponentsPickersBasePickerDotTypesMod.ValidationState
   var imageInitials: java.lang.String

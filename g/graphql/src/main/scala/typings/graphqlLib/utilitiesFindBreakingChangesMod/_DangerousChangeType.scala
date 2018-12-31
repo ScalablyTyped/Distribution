@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // @internal
-
 trait _DangerousChangeType extends js.Object {
   var ARG_DEFAULT_VALUE_CHANGE: graphqlLib.graphqlLibStrings.ARG_DEFAULT_VALUE_CHANGE
   var INTERFACE_ADDED_TO_OBJECT: graphqlLib.graphqlLibStrings.INTERFACE_ADDED_TO_OBJECT

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransitionHookOptions extends js.Object {
   var bind: js.UndefOr[js.Any] = js.undefined
   var current: js.UndefOr[js.Function0[atUirouterCoreLib.libTransitionTransitionMod.Transition]] = js.undefined

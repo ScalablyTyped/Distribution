@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SourceTileOptions extends js.Object {
   var attributions: js.UndefOr[AttributionLike] = js.undefined
   var cacheSize: js.UndefOr[scala.Double] = js.undefined

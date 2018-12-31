@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * @class
-             */
-
+  * @class
+  */
 trait DoubleTap
   extends siestaLib.SiestaNs.TestNs.IAction
      with siestaLib.SiestaNs.TestNs.ActionNs.RoleNs.IHasTarget

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SimpleEventEmitter extends js.Object {
   var SimpleEventEmitter: org.scalablytyped.runtime.Instantiable0[mobservableLib.libSimpleeventemitterMod.default]
   var getDNode: js.Function1[/* thing */ js.Any, _]

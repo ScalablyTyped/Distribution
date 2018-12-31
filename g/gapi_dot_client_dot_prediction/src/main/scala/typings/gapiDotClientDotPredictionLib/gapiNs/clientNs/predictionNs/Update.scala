@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Update extends js.Object {
   /** The input features for this instance. */
   var csvInstance: js.UndefOr[js.Array[_]] = js.undefined

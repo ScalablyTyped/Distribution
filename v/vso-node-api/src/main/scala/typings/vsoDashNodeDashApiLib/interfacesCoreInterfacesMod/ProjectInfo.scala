@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProjectInfo extends js.Object {
   var abbreviation: java.lang.String
   var description: java.lang.String
@@ -14,8 +13,8 @@ trait ProjectInfo extends js.Object {
   var name: java.lang.String
   var properties: js.Array[ProjectProperty]
   /**
-       * Current revision of the project
-       */
+    * Current revision of the project
+    */
   var revision: scala.Double
   var state: js.Any
   var uri: java.lang.String

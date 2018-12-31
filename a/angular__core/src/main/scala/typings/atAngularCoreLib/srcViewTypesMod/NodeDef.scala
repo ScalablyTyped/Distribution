@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodeDef extends js.Object {
   var bindingFlags: BindingFlags
   var bindingIndex: scala.Double
@@ -16,18 +15,18 @@ trait NodeDef extends js.Object {
   /** aggregated NodeFlags for all transitive children (does not include self) **/
   var childFlags: NodeFlags
   /**
-       * Binary or of all query ids that are matched by one of the children.
-       * This includes query ids from templates as well.
-       * Used as a bloom filter.
-       */
+    * Binary or of all query ids that are matched by one of the children.
+    * This includes query ids from templates as well.
+    * Used as a bloom filter.
+    */
   var childMatchedQueries: scala.Double
   /** aggregated NodeFlags for all direct children (does not include self) **/
   var directChildFlags: NodeFlags
   var element: ElementDef | scala.Null
   var flags: NodeFlags
   /**
-       * ids and value types of all queries that are matched by this node.
-       */
+    * ids and value types of all queries that are matched by this node.
+    */
   var matchedQueries: org.scalablytyped.runtime.NumberDictionary[QueryValueType]
   /** Binary or of all matched query ids of this node. */
   var matchedQueryIds: scala.Double
@@ -41,8 +40,8 @@ trait NodeDef extends js.Object {
   var provider: ProviderDef | scala.Null
   var query: QueryDef | scala.Null
   /**
-       * references that the user placed on the element
-       */
+    * references that the user placed on the element
+    */
   var references: org.scalablytyped.runtime.StringDictionary[QueryValueType]
   var renderParent: NodeDef | scala.Null
   var text: TextDef | scala.Null

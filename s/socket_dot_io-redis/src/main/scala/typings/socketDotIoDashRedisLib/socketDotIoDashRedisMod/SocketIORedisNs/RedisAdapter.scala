@@ -47,15 +47,6 @@ trait RedisAdapter
   		 * @param {(err: any, rooms: string[]) => void} callback
   		 */
   def allRooms(callback: js.Function2[/* err */ js.Any, /* rooms */ js.Array[java.lang.String], scala.Unit]): scala.Unit = js.native
-  /**
-  		 * Broadcasts a packet
-  		 * @param packet The packet to broadcast
-  		 * @param opts Any options to send along:
-  		 *    - rooms: An optional list of rooms to broadcast to. If empty, the packet is broadcast to all sockets
-  		 *    - except: A list of Socket IDs to exclude
-  		 *    - flags: Any flags that we want to send along ('json', 'volatile', 'broadcast')
-  		 * @param remote The optional flag, whether the packet came from another node
-  		 */
   def broadcast(packet: js.Any, opts: socketDotIoDashRedisLib.Anon_Rooms, remote: scala.Boolean): scala.Unit = js.native
   /**
   		 * clientRooms returns the list of rooms the client with the given ID has joined
@@ -88,11 +79,6 @@ trait RedisAdapter
   		 * @param {(err: any, replies: any[]) => void} callback
   		 */
   def customRequest(data: js.Any, callback: js.Function2[/* err */ js.Any, /* replies */ js.Array[_], scala.Unit]): scala.Unit = js.native
-  /**
-  		 * Removes a socket from all the rooms that it's joined
-  		 * @param id The ID of the socket that we're removing
-  		 * @param callback An optional callback to call when the socket has been
-  		 */
   def delAll(id: java.lang.String, callback: js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit]): scala.Unit = js.native
   /**
   		 * remoteDisconnect makes the socket with the given id to get disconnected.

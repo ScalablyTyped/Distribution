@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 // nlobjRecord.prototype.getSubList.!ret
 /**
-     *
-     */
-
+  *
+  */
 trait GetSubListRet extends js.Object
 

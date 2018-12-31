@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Footnote extends js.Object {
   def copy(): Footnote
   def getAttributes(): js.Object

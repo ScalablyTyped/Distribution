@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictBreadcrumbProps extends js.Object {
   /** An element type to render as (string or function). */
   var as: js.UndefOr[js.Any] = js.undefined
@@ -16,8 +15,8 @@ trait StrictBreadcrumbProps extends js.Object {
   /** Shorthand for primary content of the Breadcrumb.Divider. */
   var divider: js.UndefOr[semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent] = js.undefined
   /** For use with the sections prop. Render as an `Icon` component with `divider` class instead of a `div` in
-     *  Breadcrumb.Divider.
-     */
+    *  Breadcrumb.Divider.
+    */
   var icon: js.UndefOr[
     semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsElementsIconIconMod.IconProps]
   ] = js.undefined

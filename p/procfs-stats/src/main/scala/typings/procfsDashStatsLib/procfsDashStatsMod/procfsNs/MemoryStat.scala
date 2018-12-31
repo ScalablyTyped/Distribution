@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MemoryStat extends js.Object {
   var data: java.lang.String
   var dt: java.lang.String

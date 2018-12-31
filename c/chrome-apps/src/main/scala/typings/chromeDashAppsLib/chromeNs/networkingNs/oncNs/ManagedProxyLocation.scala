@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ManagedProxyLocation extends js.Object {
   /** The proxy IP address host. */
   var Host: js.UndefOr[ManagedDOMString] = js.undefined

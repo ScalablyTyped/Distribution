@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Bootbox options available for prompt modals */
-
 trait BootboxPromptOptions
   extends BootboxBaseOptions[java.lang.String] {
   @JSName("buttons")

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlaceAttribute extends js.Object {
   var `app:id`: java.lang.String
   var iso3: java.lang.String

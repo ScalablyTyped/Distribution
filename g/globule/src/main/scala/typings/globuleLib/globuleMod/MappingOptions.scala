@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MappingOptions extends FindOptions {
   var destBase: js.UndefOr[java.lang.String] = js.undefined
   var ext: js.UndefOr[java.lang.String] = js.undefined

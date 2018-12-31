@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReplacementSolution extends js.Object {
   var currentText: js.UndefOr[java.lang.String] = js.undefined
   var position: atomLib.atomMod.Range

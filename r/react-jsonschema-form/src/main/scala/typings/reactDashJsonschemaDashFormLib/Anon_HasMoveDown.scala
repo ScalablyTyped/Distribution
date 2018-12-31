@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_HasMoveDown extends js.Object {
   var children: reactLib.reactMod.ReactNs.ReactElement[_]
   var className: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IThumb
   extends extjsLib.ExtNs.IBase {
   /** [Config Option] (Boolean) */

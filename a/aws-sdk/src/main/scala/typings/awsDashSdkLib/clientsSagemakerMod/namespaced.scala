@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("aws-sdk/clients/sagemaker", JSImport.Namespace)
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class namespaced () extends SageMaker {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsSagemakerMod.SageMakerNs.ClientConfiguration) = this()
 }
 

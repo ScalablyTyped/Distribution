@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITask extends js.Object {
   /** [Method] Destroys this instance stopping this task s execution  */
   var destroy: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

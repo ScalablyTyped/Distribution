@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataURL extends js.Object {
   var base64: java.lang.String
   var data: java.lang.String

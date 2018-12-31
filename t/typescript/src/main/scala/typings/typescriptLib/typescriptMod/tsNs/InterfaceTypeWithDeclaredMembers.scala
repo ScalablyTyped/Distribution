@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InterfaceTypeWithDeclaredMembers extends InterfaceType {
   var declaredCallSignatures: js.Array[Signature]
   var declaredConstructSignatures: js.Array[Signature]

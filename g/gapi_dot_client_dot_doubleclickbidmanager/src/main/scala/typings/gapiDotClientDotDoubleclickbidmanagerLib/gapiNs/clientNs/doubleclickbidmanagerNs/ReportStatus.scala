@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReportStatus extends js.Object {
   /** If the report failed, this records the cause. */
   var failure: js.UndefOr[ReportFailure] = js.undefined

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait HeaderLevel extends js.Object
 
 /**
-     * Different levels for headers
-    */
+  * Different levels for headers
+  */
 @JSGlobal("sap.m.HeaderLevel")
 @js.native
 object HeaderLevel extends js.Object {

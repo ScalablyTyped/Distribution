@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Custom configuration used in single message call.
-         */
-
+  * Custom configuration used in single message call.
+  */
 trait IGrowlMessageConfig extends js.Object {
   var disableCloseButton: js.UndefOr[scala.Boolean] = js.undefined
   var disableCountDown: js.UndefOr[scala.Boolean] = js.undefined

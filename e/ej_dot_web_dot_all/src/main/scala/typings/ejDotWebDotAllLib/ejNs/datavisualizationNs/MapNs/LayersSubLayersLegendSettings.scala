@@ -5,83 +5,82 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LayersSubLayersLegendSettings extends js.Object {
   /** Determines whether the legend should be placed outside or inside the map bounds
-               * @Default {false}
-               */
+    * @Default {false}
+    */
   var dockOnMap: js.UndefOr[scala.Boolean] = js.undefined
   /** Determines the legend placement and it is valid only when dockOnMap is true
-               * @Default {top}
-               */
+    * @Default {top}
+    */
   var dockPosition: js.UndefOr[DockPosition | java.lang.String] = js.undefined
   /** height value for legend setting
-               * @Default {0}
-               */
+    * @Default {0}
+    */
   var height: js.UndefOr[scala.Double] = js.undefined
   /** to get icon value for legend setting
-               * @Default {rectangle}
-               */
+    * @Default {rectangle}
+    */
   var icon: js.UndefOr[LegendIcons | java.lang.String] = js.undefined
   /** icon height value for legend setting
-               * @Default {20}
-               */
+    * @Default {20}
+    */
   var iconHeight: js.UndefOr[scala.Double] = js.undefined
   /** icon Width value for legend setting
-               * @Default {20}
-               */
+    * @Default {20}
+    */
   var iconWidth: js.UndefOr[scala.Double] = js.undefined
   /** set the orientation of legend labels
-               * @Default {vertical}
-               */
+    * @Default {vertical}
+    */
   var labelOrientation: js.UndefOr[LabelOrientation | java.lang.String] = js.undefined
   /** to get leftLabel value for legend setting
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var leftLabel: js.UndefOr[java.lang.String] = js.undefined
   /** to get mode of legend setting
-               * @Default {default}
-               */
+    * @Default {default}
+    */
   var mode: js.UndefOr[Mode | java.lang.String] = js.undefined
   /** set the position of legend settings
-               * @Default {topleft}
-               */
+    * @Default {topleft}
+    */
   var position: js.UndefOr[Position | java.lang.String] = js.undefined
   /** x position value for legend setting
-               * @Default {0}
-               */
+    * @Default {0}
+    */
   var positionX: js.UndefOr[scala.Double] = js.undefined
   /** y position value for legend setting
-               * @Default {0}
-               */
+    * @Default {0}
+    */
   var positionY: js.UndefOr[scala.Double] = js.undefined
   /** to get rightLabel value for legend setting
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var rightLabel: js.UndefOr[java.lang.String] = js.undefined
   /** Enables or Disables the showLabels
-               * @Default {false}
-               */
+    * @Default {false}
+    */
   var showLabels: js.UndefOr[scala.Boolean] = js.undefined
   /** Enables or Disables the showLegend
-               * @Default {false}
-               */
+    * @Default {false}
+    */
   var showLegend: js.UndefOr[scala.Boolean] = js.undefined
   /** To get the field name in the datasource for generating legend items.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var textPath: js.UndefOr[java.lang.String] = js.undefined
   /** to get title of legend setting
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var title: js.UndefOr[java.lang.String] = js.undefined
   /** to get type of legend setting
-               * @Default {layers}
-               */
+    * @Default {layers}
+    */
   var `type`: js.UndefOr[LegendType | java.lang.String] = js.undefined
   /** width value for legend setting
-               * @Default {0}
-               */
+    * @Default {0}
+    */
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 

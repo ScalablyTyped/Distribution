@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ViewConfig extends js.Object {
   @JSName("$id")
   var $id: scala.Double

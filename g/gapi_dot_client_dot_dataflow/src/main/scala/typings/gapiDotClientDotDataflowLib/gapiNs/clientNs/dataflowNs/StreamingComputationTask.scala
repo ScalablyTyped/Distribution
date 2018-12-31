@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StreamingComputationTask extends js.Object {
   /** Contains ranges of a streaming computation this task should apply to. */
   var computationRanges: js.UndefOr[js.Array[StreamingComputationRanges]] = js.undefined

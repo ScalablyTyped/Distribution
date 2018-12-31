@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Editor
-
 trait EditorSettings extends js.Object {
   var changed: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.undefined
   //Events

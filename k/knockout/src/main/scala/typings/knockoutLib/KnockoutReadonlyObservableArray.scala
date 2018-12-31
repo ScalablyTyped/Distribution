@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * While all observable arrays are writable at runtime, this type is analogous to the native ReadonlyArray type:
- * casting an observable array to this type expresses the intention that it shouldn't be mutated.
- */
+  * While all observable arrays are writable at runtime, this type is analogous to the native ReadonlyArray type:
+  * casting an observable array to this type expresses the intention that it shouldn't be mutated.
+  */
 @js.native
 trait KnockoutReadonlyObservableArray[T]
   extends KnockoutReadonlyObservable[js.Array[T]]

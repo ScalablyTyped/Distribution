@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinkProps extends js.Object {
   var activeProps: js.UndefOr[ObjectLiteral[_]] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestHeaders
   extends /* name */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] {
   var Accept: js.UndefOr[java.lang.String] = js.undefined

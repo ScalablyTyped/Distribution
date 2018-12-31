@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation._
 	 * ILabel provides methods for manipulating label content, such as set address or text
 	 * on the label.
 	 */
-
 trait ILabel extends js.Object {
   /**
   		 * Gets the Intelligent Mail barcode position for an Address object.
@@ -45,11 +44,11 @@ trait ILabel extends js.Object {
   def getObjectNames(): js.Array[java.lang.String]
   /**
   		 * Gets the 'text' content of an object. The content depends on the object type.
-           * * Address and Text objects - Returns the object text without formatting.
-           * * Barcode object - Returns the barcode string.
-           * * Image - Returns the base64-encoded string on the image's PNG stream (only if image data is embedded with the label and not linked to a URL or file).
-           * * Circular Text object - Returns the object text.
-           * * Other objects - Returns an empty string.
+    * * Address and Text objects - Returns the object text without formatting.
+    * * Barcode object - Returns the barcode string.
+    * * Image - Returns the base64-encoded string on the image's PNG stream (only if image data is embedded with the label and not linked to a URL or file).
+    * * Circular Text object - Returns the object text.
+    * * Other objects - Returns an empty string.
   		 *
   		 * @param objectName The name of the object.
   		 */
@@ -57,9 +56,9 @@ trait ILabel extends js.Object {
   /**
   		 * Prints the label.
   		 *
-       	 * @param printerName The name of the printer to print to. A list of printers can be obtained using dymo.label.framework.getPrinters.
-       	 * @param printParamsXml The print parameters, such as number of copies, print quality, etc. See [PrintParams.xsd]{@link http://labelwriter.com/software/dls/sdk/PrintParams.xsd}.
-       	 * @param labelSetXml
+    	 * @param printerName The name of the printer to print to. A list of printers can be obtained using dymo.label.framework.getPrinters.
+    	 * @param printParamsXml The print parameters, such as number of copies, print quality, etc. See [PrintParams.xsd]{@link http://labelwriter.com/software/dls/sdk/PrintParams.xsd}.
+    	 * @param labelSetXml
   		 *   The LabelSet to print. LabelSet is used to print multiple labels with the same layout, but with different
   		 *   data, such as multiple addresses. Use the dymo.label.framework.LabelSetBuilder class to create a LabelSet
   		 *   or construct XML manually according to [LabelSet.xsd]{@link http://labelwriter.com/software/dls/sdk/LabelSet.xsd}.
@@ -68,9 +67,9 @@ trait ILabel extends js.Object {
   /**
   		 * Prints a label and runs status checking in a loop
   		 *
-       	 * @param printerName The name of the printer to print to. A list of printers can be obtained using dymo.label.framework.getPrinters.
-       	 * @param printParamsXml The print parameters, such as number of copies, print quality, etc. See [PrintParams.xsd]{@link http://labelwriter.com/software/dls/sdk/PrintParams.xsd}.
-       	 * @param labelSetXml The LabelSet to print.
+    	 * @param printerName The name of the printer to print to. A list of printers can be obtained using dymo.label.framework.getPrinters.
+    	 * @param printParamsXml The print parameters, such as number of copies, print quality, etc. See [PrintParams.xsd]{@link http://labelwriter.com/software/dls/sdk/PrintParams.xsd}.
+    	 * @param labelSetXml The LabelSet to print.
   		 *   LabelSet is used to print multiple labels with the same layout, but with different data, such as multiple
   		 *   addresses. Use the dymo.label.framework.LabelSetBuilder class to create a LabelSet or construct XML manually
   		 *   according to [LabelSet.xsd]{@link http://labelwriter.com/software/dls/sdk/LabelSet.xsd}.
@@ -94,10 +93,10 @@ trait ILabel extends js.Object {
   ): PrintJob
   /**
   		 * Creates a label raster image that can be used for label previewing.
-           *
+    *
   		 * @param renderParamsXml Rendering parameters, such as shadow depth, label color, etc.
   		 *   See [LabelRenderParams.xsd]{@link http://labelwriter.com/software/dls/sdk/LabelRenderParams.xsd}.
-           * @param printerName The name of the printer that the preview is generated for.
+    * @param printerName The name of the printer that the preview is generated for.
   		 *   The preview/output can be different for different printers,
   		 *   especially for tape printers with different print head sizes.
   		 *   If it is not important what printer the label is printed to,
@@ -119,7 +118,7 @@ trait ILabel extends js.Object {
   		 * Sets the text content of an Address object.
   		 *
   		 * @param addressIndex The zero-based index of the Address object in a 'virtual' array of all Address objects on the label.
-       	 * @param text The plain text string that contains the content of the Address object. Note: The current text formatting is retained on a line-by-line basis.
+    	 * @param text The plain text string that contains the content of the Address object. Note: The current text formatting is retained on a line-by-line basis.
   		  *
   		  * @returns self
   		 */
@@ -137,7 +136,7 @@ trait ILabel extends js.Object {
   		 * * Other objects - An empty string.
   		 *
   	     * @param objectName The name of the object.
-      	 * @param text The plain text string for new object content.
+    	 * @param text The plain text string for new object content.
   		 */
   def setObjectText(objectName: java.lang.String, text: java.lang.String): ILabel
 }

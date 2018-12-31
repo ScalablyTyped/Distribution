@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EntityType extends js.Object {
   var autoExpansionMode: EntityAutoExpansionMode
   var displayName: java.lang.String

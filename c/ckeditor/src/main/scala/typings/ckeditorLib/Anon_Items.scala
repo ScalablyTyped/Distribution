@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Items extends js.Object {
   var groups: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var items: js.UndefOr[js.Array[java.lang.String]] = js.undefined

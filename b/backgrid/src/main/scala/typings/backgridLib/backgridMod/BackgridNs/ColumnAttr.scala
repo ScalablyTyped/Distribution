@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnAttr extends js.Object {
   var cell: java.lang.String
   var editable: scala.Boolean

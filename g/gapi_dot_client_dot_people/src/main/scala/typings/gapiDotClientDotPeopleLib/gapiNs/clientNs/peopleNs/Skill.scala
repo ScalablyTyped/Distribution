@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Skill extends js.Object {
   /** Metadata about the skill. */
   var metadata: js.UndefOr[FieldMetadata] = js.undefined

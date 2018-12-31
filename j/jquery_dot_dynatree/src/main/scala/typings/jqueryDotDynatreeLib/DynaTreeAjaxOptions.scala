@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DynaTreeAjaxOptions extends js.Object {
   var cache: js.UndefOr[scala.Boolean] = js.undefined
    // >0: Make sure we get an ajax error for invalid URLs

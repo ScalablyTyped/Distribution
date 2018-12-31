@@ -12,11 +12,11 @@ trait BasicSourceMapConsumerConstructor
       js.Promise[BasicSourceMapConsumer]
     ] {
   /**
-       * Create a BasicSourceMapConsumer from a SourceMapGenerator.
-       *
-       * @param sourceMap
-       *        The source map that will be consumed.
-       */
+    * Create a BasicSourceMapConsumer from a SourceMapGenerator.
+    *
+    * @param sourceMap
+    *        The source map that will be consumed.
+    */
   def fromSourceMap(sourceMap: SourceMapGenerator): js.Promise[BasicSourceMapConsumer] = js.native
 }
 

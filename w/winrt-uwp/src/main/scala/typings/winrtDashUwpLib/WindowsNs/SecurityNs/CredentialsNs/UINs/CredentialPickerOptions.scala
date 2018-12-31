@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Controls the appearance and behavior of a credential prompt. */
 @JSGlobal("Windows.Security.Credentials.UI.CredentialPickerOptions")
 @js.native
+/** Creates and initializes a new, empty instance of the CredentialPickerOptions object. */
 class CredentialPickerOptions () extends js.Object {
   /** Gets or sets the option of whether the dialog box is displayed. */
   var alwaysDisplayDialog: scala.Boolean = js.native

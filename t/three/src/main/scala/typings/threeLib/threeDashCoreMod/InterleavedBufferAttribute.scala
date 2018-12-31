@@ -15,8 +15,8 @@ class InterleavedBufferAttribute protected () extends js.Object {
   var data: InterleavedBuffer = js.native
   var itemSize: scala.Double = js.native
   /**
-       * @deprecated Use {@link InterleavedBufferAttribute#count .count} instead.
-       */
+    * @deprecated Use {@link InterleavedBufferAttribute#count .count} instead.
+    */
   var length: scala.Double = js.native
   var normalized: scala.Boolean = js.native
   var offset: scala.Double = js.native

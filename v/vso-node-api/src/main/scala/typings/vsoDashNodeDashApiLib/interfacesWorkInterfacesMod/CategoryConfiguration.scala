@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CategoryConfiguration extends js.Object {
   /**
-       * Name
-       */
+    * Name
+    */
   var name: java.lang.String
   /**
-       * Category Reference Name
-       */
+    * Category Reference Name
+    */
   var referenceName: java.lang.String
   /**
-       * Work item types for the backlog category
-       */
+    * Work item types for the backlog category
+    */
   var workItemTypes: js.Array[
     vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeReference
   ]

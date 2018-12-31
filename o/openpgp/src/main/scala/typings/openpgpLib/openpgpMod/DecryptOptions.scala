@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DecryptOptions extends js.Object {
   var date: js.UndefOr[stdLib.Date] = js.undefined
   var format: js.UndefOr[java.lang.String] = js.undefined

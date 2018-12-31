@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EmbeddedScatterChartBuilder extends js.Object {
   def addRange(range: Range): EmbeddedChartBuilder
   def asAreaChart(): EmbeddedAreaChartBuilder

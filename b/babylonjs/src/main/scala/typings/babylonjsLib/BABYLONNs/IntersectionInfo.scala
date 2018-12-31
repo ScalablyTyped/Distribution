@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * @hidden
-     */
+  * @hidden
+  */
 @JSGlobal("BABYLON.IntersectionInfo")
 @js.native
 class IntersectionInfo protected () extends js.Object {

@@ -9,58 +9,58 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Slice {
   /**
-       * Opacity of a slice.
-       */
+    * Opacity of a slice.
+    */
   /* CompleteClass */
   override var alpha: scala.Double = js.native
   /**
-       * Color of a slice.
-       */
+    * Color of a slice.
+    */
   /* CompleteClass */
   override var color: java.lang.String = js.native
   /**
-       * Original object from data provider.
-       */
+    * Original object from data provider.
+    */
   /* CompleteClass */
   override var dataContext: js.Object = js.native
   /**
-       * Slice description.
-       */
+    * Slice description.
+    */
   /* CompleteClass */
   override var description: java.lang.String = js.native
   /**
-       * Specifies whether the slice is hidden
-       */
+    * Specifies whether the slice is hidden
+    */
   /* CompleteClass */
   override var hidden: scala.Boolean = js.native
   /**
-       * Percent value of a slice.
-       */
+    * Percent value of a slice.
+    */
   /* CompleteClass */
   override var percents: scala.Double = js.native
   /**
-       * Specifies whether the slice is pulled or not.
-       */
+    * Specifies whether the slice is pulled or not.
+    */
   /* CompleteClass */
   override var pulled: scala.Boolean = js.native
   /**
-       * Slice title
-       */
+    * Slice title
+    */
   /* CompleteClass */
   override var title: java.lang.String = js.native
   /**
-       * Url of a slice
-       */
+    * Url of a slice
+    */
   /* CompleteClass */
   override var url: java.lang.String = js.native
   /**
-       * Value of a slice
-       */
+    * Value of a slice
+    */
   /* CompleteClass */
   override var value: scala.Double = js.native
   /**
-       * specifies whether this slice has a legend entry
-       */
+    * specifies whether this slice has a legend entry
+    */
   /* CompleteClass */
   override var visibleInLegend: scala.Boolean = js.native
 }

@@ -12,36 +12,36 @@ sealed trait SubscriptionFlags extends js.Object
 @js.native
 object SubscriptionFlags extends js.Object {
   /**
-       * A user that is member of the subscription's subscriber group can opt in/out of the subscription.
-       */
+    * A user that is member of the subscription's subscriber group can opt in/out of the subscription.
+    */
   @js.native
   sealed trait CanOptOut
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionFlags
   
   /**
-       * Subscription is contributed and not persisted. This means certain fields of the subscription, like Filter, are read-only.
-       */
+    * Subscription is contributed and not persisted. This means certain fields of the subscription, like Filter, are read-only.
+    */
   @js.native
   sealed trait ContributedSubscription
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionFlags
   
   /**
-       * Subscription's subscriber is a group, not a user
-       */
+    * Subscription's subscriber is a group, not a user
+    */
   @js.native
   sealed trait GroupSubscription
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionFlags
   
   /**
-       * None
-       */
+    * None
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionFlags
   
   /**
-       * If the subscriber is a group, is it a team.
-       */
+    * If the subscriber is a group, is it a team.
+    */
   @js.native
   sealed trait TeamSubscription
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionFlags

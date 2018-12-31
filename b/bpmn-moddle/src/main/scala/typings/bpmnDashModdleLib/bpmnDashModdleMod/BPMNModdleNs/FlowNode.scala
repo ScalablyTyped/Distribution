@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlowNode extends FlowElement {
   var incoming: js.Array[SequenceFlow]
   var lanes: js.Array[Lane]

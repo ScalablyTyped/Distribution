@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AdunitsResource extends js.Object {
   /** Delete the specified ad unit from the specified publisher AdSense account. */
   def delete(request: gapiDotClientDotAdsensehostLib.Anon_PrettyPrintAdClientIdAccountIdQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[AdUnit]

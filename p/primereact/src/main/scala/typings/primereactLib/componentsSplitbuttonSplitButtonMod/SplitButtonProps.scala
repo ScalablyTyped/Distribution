@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SplitButtonProps extends js.Object {
   var appendTo: js.UndefOr[reactLib.HTMLElement] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined

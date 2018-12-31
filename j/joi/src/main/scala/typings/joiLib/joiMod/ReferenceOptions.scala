@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReferenceOptions extends js.Object {
   var contextPrefix: js.UndefOr[java.lang.String] = js.undefined
   var default: js.UndefOr[js.Any] = js.undefined

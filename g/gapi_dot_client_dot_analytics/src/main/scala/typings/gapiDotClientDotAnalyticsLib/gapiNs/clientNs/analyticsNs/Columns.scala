@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Columns extends js.Object {
   /** List of attributes names returned by columns. */
   var attributeNames: js.UndefOr[js.Array[java.lang.String]] = js.undefined

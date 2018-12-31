@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TinderUpdates extends js.Object {
   var blocks: js.Array[_]
   var deleted_lists: js.Array[_]

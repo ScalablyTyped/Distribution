@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RetryOptions extends js.Object {
   var maxRetryAfter: js.UndefOr[scala.Double] = js.undefined
   var methods: js.UndefOr[

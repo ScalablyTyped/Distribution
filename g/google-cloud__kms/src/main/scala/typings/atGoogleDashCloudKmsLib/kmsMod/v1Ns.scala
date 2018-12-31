@@ -11,7 +11,6 @@ object v1Ns extends js.Object {
   @js.native
   sealed trait AttestationFormat extends js.Object
   
-  
   trait CryptoKey extends js.Object {
     var createTime: googleDashProtobufLib.googleProtobufTimestampUnderscorePbMod.TimestampNs.AsObject
     var labels: org.scalablytyped.runtime.StringDictionary[java.lang.String]
@@ -26,7 +25,6 @@ object v1Ns extends js.Object {
   
   @js.native
   sealed trait CryptoKeyPurpose extends js.Object
-  
   
   trait CryptoKeyVersion extends js.Object {
     var algorithm: CryptoKeyVersionAlgorithm
@@ -49,7 +47,6 @@ object v1Ns extends js.Object {
   
   @js.native
   sealed trait CryptoKeyVersionState extends js.Object
-  
   
   trait CryptoKeyVersionTemplate extends js.Object {
     var algorithm: CryptoKeyVersionAlgorithm
@@ -165,11 +162,9 @@ object v1Ns extends js.Object {
     def locationPath(project: java.lang.String, location: java.lang.String): java.lang.String = js.native
   }
   
-  
   trait KeyOperationAttestation extends js.Object {
     var format: AttestationFormat
   }
-  
   
   trait KeyRing extends js.Object {
     var createTime: googleDashProtobufLib.googleProtobufTimestampUnderscorePbMod.TimestampNs.AsObject
@@ -389,7 +384,6 @@ object v1Ns extends js.Object {
   @JSName("KeyManagementServiceClient")
   @js.native
   object KeyManagementServiceClientNs extends js.Object {
-    
     trait ConfigurationObject extends js.Object {
       var credentials: js.UndefOr[atGoogleDashCloudKmsLib.Anon_Clientemail] = js.undefined
       var email: js.UndefOr[java.lang.String] = js.undefined
@@ -400,18 +394,15 @@ object v1Ns extends js.Object {
       var servicePath: js.UndefOr[java.lang.String] = js.undefined
     }
     
-    
     trait DecryptRequest extends js.Object {
       var additionalAuthenticatedData: js.UndefOr[java.lang.String] = js.undefined
       var ciphertext: java.lang.String
       var name: java.lang.String
     }
     
-    
     trait DecryptResponse extends js.Object {
       var plaintext: nodeLib.Buffer
     }
-    
     
     trait EncryptRequest extends js.Object {
       var additionalAuthenticatedData: js.UndefOr[java.lang.String] = js.undefined
@@ -419,19 +410,16 @@ object v1Ns extends js.Object {
       var plaintext: java.lang.String
     }
     
-    
     trait EncryptResponse extends js.Object {
       var ciphertext: nodeLib.Buffer
       var name: java.lang.String
     }
-    
     
     trait ListCryptoKeysRequest extends js.Object {
       var page_size: js.UndefOr[scala.Double] = js.undefined
       var page_token: js.UndefOr[java.lang.String] = js.undefined
       var parent: java.lang.String
     }
-    
     
     trait ListKeyRingsRequest extends js.Object {
       var page_size: js.UndefOr[scala.Double] = js.undefined

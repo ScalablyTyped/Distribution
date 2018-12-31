@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("node-forge", "pkcs12")
 @js.native
 object pkcs12Ns extends js.Object {
-  
   trait Bag extends js.Object {
     var asn1: nodeDashForgeLib.nodeDashForgeMod.asn1Ns.Asn1
     var attributes: js.Any
@@ -17,14 +16,12 @@ object pkcs12Ns extends js.Object {
     var `type`: java.lang.String
   }
   
-  
   trait BagsFilter extends js.Object {
     var bagType: js.UndefOr[java.lang.String] = js.undefined
     var friendlyName: js.UndefOr[java.lang.String] = js.undefined
     var localKeyId: js.UndefOr[java.lang.String] = js.undefined
     var localKeyIdHex: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait Pkcs12Pfx extends js.Object {
     var safeContents: js.Array[nodeDashForgeLib.Anon_Encrypted]

@@ -12,18 +12,12 @@ trait OCSPRequest extends js.Object {
   def fromSchema(schema: js.Any): scala.Unit = js.native
   def toJSON(): js.Any = js.native
   /**
-           * Convert current object to asn1js object and set correct values
-           * 
-           * @param {boolean} [encodeFlag]
-           * @returns {*}
-           */
+    * Convert current object to asn1js object and set correct values
+    * 
+    * @param {boolean} [encodeFlag]
+    * @returns {*}
+    */
   def toSchema(): js.Any = js.native
-  /**
-           * Convert current object to asn1js object and set correct values
-           * 
-           * @param {boolean} [encodeFlag]
-           * @returns {*}
-           */
   def toSchema(encodeFlag: scala.Boolean): js.Any = js.native
 }
 

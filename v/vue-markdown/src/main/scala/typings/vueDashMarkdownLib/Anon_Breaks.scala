@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Breaks extends js.Object {
   var anchorAttributes: Anon_TypeDefaultAny
   var breaks: Anon_Type

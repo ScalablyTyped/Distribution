@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TypeData extends js.Object {
   var accept: java.lang.String
   var data: js.Any

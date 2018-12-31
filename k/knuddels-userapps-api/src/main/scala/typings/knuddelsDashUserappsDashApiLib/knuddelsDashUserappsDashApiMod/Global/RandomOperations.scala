@@ -31,10 +31,6 @@ object RandomOperations extends js.Object {
   		 * @since AppServer 92699
   		 */
   def getRandomString(length: scala.Double): java.lang.String = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/RandomOperations.html#method_getRandomString
-  		 * @since AppServer 92699
-  		 */
   def getRandomString(length: scala.Double, allowedCharacters: java.lang.String): java.lang.String = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/RandomOperations.html#method_nextInt

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MaxResultsPrettyPrint extends js.Object {
   /** Account which contains the ad client. */
   var accountId: java.lang.String
@@ -24,16 +23,16 @@ trait Anon_MaxResultsPrettyPrint extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * A continuation token, used to page through ad units. To retrieve the next page, set this parameter to the value of "nextPageToken" from the previous
-                   * response.
-                   */
+    * A continuation token, used to page through ad units. To retrieve the next page, set this parameter to the value of "nextPageToken" from the previous
+    * response.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[java.lang.String] = js.undefined

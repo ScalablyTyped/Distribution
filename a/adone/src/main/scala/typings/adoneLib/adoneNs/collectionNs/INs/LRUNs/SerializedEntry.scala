@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SerializedEntry[K, V] extends js.Object {
   /**
-               * when it becomes expired
-               */
+    * when it becomes expired
+    */
   var e: scala.Double
   /**
-               * key
-               */
+    * key
+    */
   var key: K
   /**
-               * value
-               */
+    * value
+    */
   var value: V
 }
 

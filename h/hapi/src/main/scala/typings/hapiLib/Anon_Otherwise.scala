@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Otherwise extends js.Object {
   var otherwise: js.UndefOr[java.lang.String] = js.undefined
   var privacy: js.UndefOr[

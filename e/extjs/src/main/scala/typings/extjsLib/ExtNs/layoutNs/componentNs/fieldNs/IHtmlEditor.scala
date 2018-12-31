@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHtmlEditor extends IFieldContainer {
   /** [Method] This method is called after all layouts are complete and their calculations flushed to the DOM  */
   @JSName("finishedLayout")

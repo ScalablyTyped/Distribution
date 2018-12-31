@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 sealed trait PivotFilterTopBottomCriterion extends js.Object
 
 /**
-     *
-     * Represents the criteria for the top/bottom values filter.
-     *
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  *
+  * Represents the criteria for the top/bottom values filter.
+  *
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.PivotFilterTopBottomCriterion")
 @js.native
 object PivotFilterTopBottomCriterion extends js.Object {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UnpackagedExtensionData extends js.Object {
   var categories: js.Array[java.lang.String]
   var description: java.lang.String

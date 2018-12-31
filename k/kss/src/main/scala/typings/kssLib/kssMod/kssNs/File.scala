@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait File extends js.Object {
   /** bath to source directory */
   var base: java.lang.String

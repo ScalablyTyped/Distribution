@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StackData extends js.Object {
   var column: js.UndefOr[scala.Double] = js.undefined
   var constructor: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_QPathSeparator extends js.Object {
   /**
-               * Path Separator for the OS
-               */
+    * Path Separator for the OS
+    */
   var qPathSeparator: java.lang.String
 }
 

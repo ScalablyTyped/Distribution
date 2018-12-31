@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Enables automatic observability of plain javascript object for ES5 compatible browsers. Also, converts promise properties into observables that are updated when the promise resolves.
- * @requires system
- * @requires binder
- * @requires knockout
- */
+  * Enables automatic observability of plain javascript object for ES5 compatible browsers. Also, converts promise properties into observables that are updated when the promise resolves.
+  * @requires system
+  * @requires binder
+  * @requires knockout
+  */
 @JSImport("plugins/observable", JSImport.Namespace)
 @js.native
 object observableMod extends js.Object {

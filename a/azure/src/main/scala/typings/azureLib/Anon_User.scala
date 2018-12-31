@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_User extends js.Object {
   var database: java.lang.String
   var password: java.lang.String

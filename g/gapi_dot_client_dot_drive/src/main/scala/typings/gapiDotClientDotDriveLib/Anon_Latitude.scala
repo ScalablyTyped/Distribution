@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Latitude extends js.Object {
   /** The altitude stored in the image. */
   var altitude: js.UndefOr[scala.Double] = js.undefined

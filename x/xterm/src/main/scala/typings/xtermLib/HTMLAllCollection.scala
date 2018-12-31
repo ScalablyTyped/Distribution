@@ -9,20 +9,17 @@ import scala.scalajs.js.annotation._
 trait HTMLAllCollection
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[Element] {
   /**
-       * Returns the number of elements in the collection.
-       */
+    * Returns the number of elements in the collection.
+    */
   val length: scala.Double = js.native
   /**
-       * element = collection(index)
-       */
+    * element = collection(index)
+    */
   def item(): HTMLCollection | Element | scala.Null = js.native
-  /**
-       * element = collection(index)
-       */
   def item(nameOrIndex: java.lang.String): HTMLCollection | Element | scala.Null = js.native
   /**
-       * element = collection(name)
-       */
+    * element = collection(name)
+    */
   def namedItem(name: java.lang.String): HTMLCollection | Element | scala.Null = js.native
 }
 

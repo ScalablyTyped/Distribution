@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Style
   extends /* additionalProperty */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var alignment: js.UndefOr[Alignment] = js.undefined

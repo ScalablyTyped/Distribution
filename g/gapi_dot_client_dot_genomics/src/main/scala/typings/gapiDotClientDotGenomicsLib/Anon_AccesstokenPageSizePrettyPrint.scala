@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPageSizePrettyPrint extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -25,15 +24,15 @@ trait Anon_AccesstokenPageSizePrettyPrint extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The maximum number of results to return in a single page. If unspecified,
-                   * defaults to 50. The maximum value is 1024.
-                   */
+    * The maximum number of results to return in a single page. If unspecified,
+    * defaults to 50. The maximum value is 1024.
+    */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * The continuation token, which is used to page through large result sets.
-                   * To get the next page of results, set this parameter to the value of
-                   * `nextPageToken` from the previous response.
-                   */
+    * The continuation token, which is used to page through large result sets.
+    * To get the next page of results, set this parameter to the value of
+    * `nextPageToken` from the previous response.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

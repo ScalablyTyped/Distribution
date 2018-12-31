@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObjectAccessControlsResource extends js.Object {
   /** Permanently deletes the ACL entry for the specified entity on the specified object. */
   def delete(request: gapiDotClientDotStorageLib.Anon_GenerationPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

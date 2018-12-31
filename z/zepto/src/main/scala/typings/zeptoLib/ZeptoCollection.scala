@@ -14,7 +14,6 @@ trait ZeptoCollection extends js.Object {
   /**
   	* Core
   	**/
-  
   /**
   	* Modify the current collection by adding the results of performing the CSS selector on the whole document, or, if context is given, just inside context elements.
   	* @param selector
@@ -22,16 +21,6 @@ trait ZeptoCollection extends js.Object {
   	* @return Self object.
   	**/
   def add(selector: java.lang.String): ZeptoCollection = js.native
-  /**
-  	* Core
-  	**/
-  
-  /**
-  	* Modify the current collection by adding the results of performing the CSS selector on the whole document, or, if context is given, just inside context elements.
-  	* @param selector
-  	* @param context
-  	* @return Self object.
-  	**/
   def add(selector: java.lang.String, context: js.Any): ZeptoCollection = js.native
   /**
   	* Add class name to each of the elements in the collection. Multiple class names can be given in a space-separated string.
@@ -60,7 +49,6 @@ trait ZeptoCollection extends js.Object {
   /**
   	* Effects
   	**/
-  
   /**
   	* Smoothly transition CSS properties of elements in the current collection.
   	* @param properties object that holds CSS values to animate to; or CSS keyframe animation name.
@@ -89,101 +77,8 @@ trait ZeptoCollection extends js.Object {
   	* @note Zepto exclusively uses CSS transitions for effects and animation. jQuery easings are not supported. jQuery's syntax for relative changes ("=+10px") is not supported. See the spec for a list of animatable properties (http://www.w3.org/TR/css3-transitions/#animatable-properties-). Browser support may vary, so be sure to test in all browsers you want to support.
   	**/
   def animate(properties: js.Any): ZeptoCollection = js.native
-  /**
-  	* Effects
-  	**/
-  
-  /**
-  	* Smoothly transition CSS properties of elements in the current collection.
-  	* @param properties object that holds CSS values to animate to; or CSS keyframe animation name.
-  	*	Zepto also supports the following CSS transform porperties:
-  	*		translate(X|Y|Z|3d)
-  	*		rotate(X|Y|Z|3d)
-  	*		scale(X|Y|Z)
-  	*		matrix(3d)
-  	*		perspective
-  	*		skew(X|Y)
-  	* @param duration (default 400): duration in milliseconds, or a string:
-  	*		fast (200 ms)
-  	*		slow (600 ms)
-  	*		any custom property of $.fx.speeds
-  	* @param easing (default linear): specifies the type of animation easing to use, one of:
-  	*		ease
-  	*		linear
-  	*		ease-in
-  	*		ease-out
-  	*		ease-in-out
-  	*		cubic-bezier(x1, y1, x2, y2)
-  	* @param complete Callback function when the animation has completed.
-  	* @return Self object.
-  	* @note If the duration is 0 or $.fx.off is true (default in a browser that doesn’t support CSS transitions), animations will not be executed; instead the target values will take effect instantly. Similarly, when the target CSS properties match the current state of the element, there will be no animation and the complete function won’t be called.
-  	*	If the first argument is a string instead of object, it is taken as a CSS keyframe animation name.
-  	* @note Zepto exclusively uses CSS transitions for effects and animation. jQuery easings are not supported. jQuery's syntax for relative changes ("=+10px") is not supported. See the spec for a list of animatable properties (http://www.w3.org/TR/css3-transitions/#animatable-properties-). Browser support may vary, so be sure to test in all browsers you want to support.
-  	**/
   def animate(properties: js.Any, duration: scala.Double): ZeptoCollection = js.native
-  /**
-  	* Effects
-  	**/
-  
-  /**
-  	* Smoothly transition CSS properties of elements in the current collection.
-  	* @param properties object that holds CSS values to animate to; or CSS keyframe animation name.
-  	*	Zepto also supports the following CSS transform porperties:
-  	*		translate(X|Y|Z|3d)
-  	*		rotate(X|Y|Z|3d)
-  	*		scale(X|Y|Z)
-  	*		matrix(3d)
-  	*		perspective
-  	*		skew(X|Y)
-  	* @param duration (default 400): duration in milliseconds, or a string:
-  	*		fast (200 ms)
-  	*		slow (600 ms)
-  	*		any custom property of $.fx.speeds
-  	* @param easing (default linear): specifies the type of animation easing to use, one of:
-  	*		ease
-  	*		linear
-  	*		ease-in
-  	*		ease-out
-  	*		ease-in-out
-  	*		cubic-bezier(x1, y1, x2, y2)
-  	* @param complete Callback function when the animation has completed.
-  	* @return Self object.
-  	* @note If the duration is 0 or $.fx.off is true (default in a browser that doesn’t support CSS transitions), animations will not be executed; instead the target values will take effect instantly. Similarly, when the target CSS properties match the current state of the element, there will be no animation and the complete function won’t be called.
-  	*	If the first argument is a string instead of object, it is taken as a CSS keyframe animation name.
-  	* @note Zepto exclusively uses CSS transitions for effects and animation. jQuery easings are not supported. jQuery's syntax for relative changes ("=+10px") is not supported. See the spec for a list of animatable properties (http://www.w3.org/TR/css3-transitions/#animatable-properties-). Browser support may vary, so be sure to test in all browsers you want to support.
-  	**/
   def animate(properties: js.Any, duration: scala.Double, easing: java.lang.String): ZeptoCollection = js.native
-  /**
-  	* Effects
-  	**/
-  
-  /**
-  	* Smoothly transition CSS properties of elements in the current collection.
-  	* @param properties object that holds CSS values to animate to; or CSS keyframe animation name.
-  	*	Zepto also supports the following CSS transform porperties:
-  	*		translate(X|Y|Z|3d)
-  	*		rotate(X|Y|Z|3d)
-  	*		scale(X|Y|Z)
-  	*		matrix(3d)
-  	*		perspective
-  	*		skew(X|Y)
-  	* @param duration (default 400): duration in milliseconds, or a string:
-  	*		fast (200 ms)
-  	*		slow (600 ms)
-  	*		any custom property of $.fx.speeds
-  	* @param easing (default linear): specifies the type of animation easing to use, one of:
-  	*		ease
-  	*		linear
-  	*		ease-in
-  	*		ease-out
-  	*		ease-in-out
-  	*		cubic-bezier(x1, y1, x2, y2)
-  	* @param complete Callback function when the animation has completed.
-  	* @return Self object.
-  	* @note If the duration is 0 or $.fx.off is true (default in a browser that doesn’t support CSS transitions), animations will not be executed; instead the target values will take effect instantly. Similarly, when the target CSS properties match the current state of the element, there will be no animation and the complete function won’t be called.
-  	*	If the first argument is a string instead of object, it is taken as a CSS keyframe animation name.
-  	* @note Zepto exclusively uses CSS transitions for effects and animation. jQuery easings are not supported. jQuery's syntax for relative changes ("=+10px") is not supported. See the spec for a list of animatable properties (http://www.w3.org/TR/css3-transitions/#animatable-properties-). Browser support may vary, so be sure to test in all browsers you want to support.
-  	**/
   def animate(
     properties: js.Any,
     duration: scala.Double,
@@ -278,7 +173,6 @@ trait ZeptoCollection extends js.Object {
   /**
   	* Event
   	**/
-  
   /**
   	* Attach an event handler to elements.
   	* @deprecated use ZeptoCollection.on instead.
@@ -297,11 +191,6 @@ trait ZeptoCollection extends js.Object {
   	* @return Children elements.
   	**/
   def children(): ZeptoCollection = js.native
-  /**
-  	* Get immediate children of each element in the current collection. If selector is given, filter the results to only include ones matching the CSS selector.
-  	* @param selector
-  	* @return Children elements.
-  	**/
   def children(selector: java.lang.String): ZeptoCollection = js.native
   def click(): ZeptoCollection = js.native
   def click(fn: ZeptoEventHandler): ZeptoCollection = js.native
@@ -313,13 +202,6 @@ trait ZeptoCollection extends js.Object {
   	* @return Closest element from the selector and context.
   	**/
   def closest(selector: java.lang.String): ZeptoCollection = js.native
-  /**
-  	* Traverse upwards from the current element to find the first element that matches the selector. If context node is given, consider only elements that are its descendants. This method is similar to parents(selector), but it only returns the first ancestor matched.
-  	* If a Zepto collection or element is given, the resulting element will have to match one of the given elements instead of a selector.
-  	* @param selector
-  	* @param context
-  	* @return Closest element from the selector and context.
-  	**/
   def closest(selector: java.lang.String, context: js.Any): ZeptoCollection = js.native
   /**
   	* Modify the collection by adding elements to it. If any of the arguments is an array, its elements are merged into the current collection.
@@ -537,21 +419,8 @@ trait ZeptoCollection extends js.Object {
   	* @return
   	**/
   def index(): scala.Double = js.native
-  /**
-  	* Get the position of an element. When no element is given, returns position of the current element among its siblings. When an element is given, returns its position in the current collection. Returns -1 if not found.
-  	* @param element
-  	* @return
-  	**/
   def index(element: java.lang.String): scala.Double = js.native
-  /**
-  	* @see ZeptoCollection.index
-  	* @param element
-  	**/
   def index(element: js.Any): scala.Double = js.native
-  /**
-  	* @see ZeptoCollection.index
-  	* @param element
-  	**/
   def index(element: stdLib.HTMLElement): scala.Double = js.native
    // not sure so leaving in for now
   /**
@@ -563,35 +432,18 @@ trait ZeptoCollection extends js.Object {
   	* @return
   	**/
   def indexOf(element: java.lang.String): scala.Double = js.native
-   // not sure so leaving in for now
-  /**
-  	* Get the position of an element in the current collection. If fromIndex number is given, search only from that position onwards. Returns the 0-based position when found and -1 if not found. Use of index is recommended over this method.
-  	* (!) This is a Zepto-provided method that is not part of the jQuery API.
-  	* @see ZeptoCollection.index
-  	* @param element
-  	* @param fromIndex
-  	* @return
-  	**/
   def indexOf(element: java.lang.String, fromIndex: scala.Double): scala.Double = js.native
   /**
   	* @see ZeptoCollection.indexOf
   	* @param element
   	**/
   def indexOf(element: js.Any): scala.Double = js.native
-  /**
-  	* @see ZeptoCollection.indexOf
-  	* @param element
-  	**/
   def indexOf(element: js.Any, fromIndex: scala.Double): scala.Double = js.native
   /**
   	* @see ZeptoCollection.indexOf
   	* @param element
   	**/
   def indexOf(element: stdLib.HTMLElement): scala.Double = js.native
-  /**
-  	* @see ZeptoCollection.indexOf
-  	* @param element
-  	**/
   def indexOf(element: stdLib.HTMLElement, fromIndex: scala.Double): scala.Double = js.native
    // not sure so leaving in for now
   /**
@@ -623,12 +475,6 @@ trait ZeptoCollection extends js.Object {
   	* @return
   	**/
   def is(): scala.Boolean = js.native
-  /**
-  	* Check if the first element of the current collection matches the CSS selector. For basic support of jQuery’s non-standard pseudo-selectors such as :visible, include the optional “selector” module.
-  	* (!) jQuery CSS extensions are not supported. The optional "selector" module only provides limited support for few of the most used ones.
-  	* @param selector
-  	* @return
-  	**/
   def is(selector: java.lang.String): scala.Boolean = js.native
   def keydown(): ZeptoCollection = js.native
   def keydown(fn: ZeptoEventHandler): ZeptoCollection = js.native
@@ -654,7 +500,6 @@ trait ZeptoCollection extends js.Object {
   /**
   	* Ajax
   	**/
-  
   /**
   	* Set the html contents of the current collection to the result of a GET Ajax call to the given URL. Optionally, a CSS selector can be specified in the URL, like so, to use only the HTML content matching the selector for updating the collection:
   	* $('#some_element').load('/foo.html #bar')
@@ -667,21 +512,6 @@ trait ZeptoCollection extends js.Object {
   	*	$('#some_element').load('/foo.html #bar')
   	**/
   def load(url: java.lang.String): ZeptoCollection = js.native
-  /**
-  	* Ajax
-  	**/
-  
-  /**
-  	* Set the html contents of the current collection to the result of a GET Ajax call to the given URL. Optionally, a CSS selector can be specified in the URL, like so, to use only the HTML content matching the selector for updating the collection:
-  	* $('#some_element').load('/foo.html #bar')
-  	* If no CSS selector is given, the complete response text is used instead.
-  	* Note that any JavaScript blocks found are only executed in case no selector is given.
-  	* @param url URL to send the HTTP GET request to.
-  	* @param fn Callback function when the HTTP GET request is completed.
-  	* @return Self object.
-  	* @example
-  	*	$('#some_element').load('/foo.html #bar')
-  	**/
   def load(
     url: java.lang.String,
     fn: js.Function3[
@@ -718,11 +548,6 @@ trait ZeptoCollection extends js.Object {
   	* @return
   	**/
   def next(): ZeptoCollection = js.native
-  /**
-  	* Get the next sibling—optinally filtered by selector—of each element in the collection.
-  	* @param selector
-  	* @return
-  	**/
   def next(selector: java.lang.String): ZeptoCollection = js.native
   /**
   	* @see ZeptoCollection.not
@@ -750,10 +575,6 @@ trait ZeptoCollection extends js.Object {
   	* @param events
   	**/
   def off(events: ZeptoEventHandlers): ZeptoCollection = js.native
-  /**
-  	* @see ZeptoCollection.off
-  	* @param events
-  	**/
   def off(events: ZeptoEventHandlers, selector: java.lang.String): ZeptoCollection = js.native
   /**
   	* @see ZeptoCollection.off
@@ -763,9 +584,6 @@ trait ZeptoCollection extends js.Object {
   	* @see ZeptoCollection.off
   	**/
   def off(`type`: java.lang.String, fn: ZeptoEventHandler): ZeptoCollection = js.native
-  /**
-  	* @see ZeptoCollection.off
-  	**/
   def off(`type`: java.lang.String, selector: java.lang.String): ZeptoCollection = js.native
   /**
   	* Detach event handlers added with on. To detach a specific event handler, the same function must be passed that was used for on(). Otherwise, just calling this method with an event type with detach all handlers of that type. When called without arguments, it detaches all event handlers registered on current elements.
@@ -809,18 +627,6 @@ trait ZeptoCollection extends js.Object {
   	* @param events
   	**/
   def on(events: ZeptoEventHandlers): ZeptoCollection = js.native
-  // todo: v0.9 will introduce string literals
-  //on(type: 'ajaxStart', fn: ZeptoAjaxStartEvent): ZeptoCollection;
-  //on(type: 'ajaxBeforeSend', fn: ZeptoAjaxBeforeSendEvent): ZeptoCollection;
-  //on(type: 'ajaxSend', fn: ZeptoAjaxSendEvent): ZeptoCollection;
-  //on(type: 'ajaxSuccess', fn: ZeptoAjaxSuccessEvent): ZeptoCollection;
-  //on(type: 'ajaxError', fn: ZeptoAjaxErrorEvent): ZeptoCollection;
-  //on(type: 'ajaxComplete', fn: ZeptoAjaxCompleteEvent): ZeptoCollection;
-  //on(type: 'ajaxStop', fn: ZeptoAjaxStopEvent): ZeptoCollection;
-  /**
-  	* @see ZeptoCollection.on
-  	* @param events
-  	**/
   def on(events: ZeptoEventHandlers, selector: java.lang.String): ZeptoCollection = js.native
   /**
   	* @see ZeptoCollection.on
@@ -853,11 +659,6 @@ trait ZeptoCollection extends js.Object {
   	* @return
   	**/
   def parent(): ZeptoCollection = js.native
-  /**
-  	* Get immediate parents of each element in the collection. If CSS selector is given, filter results to include only ones matching the selector.
-  	* @param selector
-  	* @return
-  	**/
   def parent(selector: java.lang.String): ZeptoCollection = js.native
   /**
   	* Get all ancestors of each element in the collection. If CSS selector is given, filter results to include only ones matching the selector.
@@ -866,12 +667,6 @@ trait ZeptoCollection extends js.Object {
   	* @return
   	**/
   def parents(): ZeptoCollection = js.native
-  /**
-  	* Get all ancestors of each element in the collection. If CSS selector is given, filter results to include only ones matching the selector.
-  	* To get only immediate parents, use parent. To only get the first ancestor that matches the selector, use closest.
-  	* @param selector
-  	* @return
-  	**/
   def parents(selector: java.lang.String): ZeptoCollection = js.native
   /**
   	* Get values from a named property of each element in the collection, with null and undefined values filtered out.
@@ -934,11 +729,6 @@ trait ZeptoCollection extends js.Object {
   	* @return
   	**/
   def prev(): ZeptoCollection = js.native
-  /**
-  	* Get the previous sibling—optionally filtered by selector—of each element in the collection.
-  	* @param selector
-  	* @return
-  	**/
   def prev(selector: java.lang.String): ZeptoCollection = js.native
   /**
   	* Read or set properties of DOM elements. This should be preferred over attr in case of reading values of properties that change with user interaction over time, such as checked and selected.
@@ -1010,11 +800,6 @@ trait ZeptoCollection extends js.Object {
   	* @param fn
   	**/
   def removeClass(fn: js.Function2[/* index */ scala.Double, /* oldClassName */ java.lang.String, scala.Unit]): ZeptoCollection = js.native
-  /**
-  	* Remove the specified class name from all elements in the collection. When the class name isn’t given, remove all class names. Multiple class names can be given in a space-separated string.
-  	* @param name
-  	* @return
-  	**/
   def removeClass(name: java.lang.String): ZeptoCollection = js.native
   /**
   	* Replace each element in the collection—both its contents and the element itself—with the new content. Content can be of any type described in before.
@@ -1046,7 +831,6 @@ trait ZeptoCollection extends js.Object {
   /**
   	* Form
   	**/
-  
   /**
   	* Serialize form values to an URL-encoded string for use in Ajax post requests.
   	* @return Seralized form values in URL-encoded string.
@@ -1068,11 +852,6 @@ trait ZeptoCollection extends js.Object {
   	* @return
   	**/
   def siblings(): ZeptoCollection = js.native
-  /**
-  	* Get all sibling nodes of each element in the collection. If CSS selector is specified, filter the results to contain only elements that match the selector.
-  	* @param selector
-  	* @return
-  	**/
   def siblings(selector: java.lang.String): ZeptoCollection = js.native
   /**
   	* Get the number of elements in this collection.
@@ -1086,19 +865,7 @@ trait ZeptoCollection extends js.Object {
   	* @return
   	**/
   def slice(): js.Array[ZeptoCollection] = js.native
-  /**
-  	* Extract the subset of this array, starting at start index. If end is specified, extract up to but not including end index.
-  	* @param start
-  	* @param end
-  	* @return
-  	**/
   def slice(start: scala.Double): js.Array[ZeptoCollection] = js.native
-  /**
-  	* Extract the subset of this array, starting at start index. If end is specified, extract up to but not including end index.
-  	* @param start
-  	* @param end
-  	* @return
-  	**/
   def slice(start: scala.Double, end: scala.Double): js.Array[ZeptoCollection] = js.native
   /**
   	* Trigger or attach a handler for the submit event. When no function given, trigger the “submit” event on the current form and have it perform its submit action unless preventDefault() was called for the event.
@@ -1129,21 +896,12 @@ trait ZeptoCollection extends js.Object {
   	* @return
   	**/
   def toggle(): ZeptoCollection = js.native
-  /**
-  	* Toggle between showing and hiding each of the elements, based on whether the first element is visible or not. If setting is present, this method behaves like show if setting is truthy or hide otherwise.
-  	* @param setting
-  	* @return
-  	**/
   def toggle(setting: scala.Boolean): ZeptoCollection = js.native
   /**
   	* @see ZeptoCollection.toggleClass
   	* @param fn
   	**/
   def toggleClass(fn: js.Function2[/* index */ scala.Double, /* oldClassNames */ java.lang.String, scala.Unit]): ZeptoCollection = js.native
-  /**
-  	* @see ZeptoCollection.toggleClass
-  	* @param fn
-  	**/
   def toggleClass(
     fn: js.Function2[/* index */ scala.Double, /* oldClassNames */ java.lang.String, scala.Unit],
     setting: scala.Boolean
@@ -1155,12 +913,6 @@ trait ZeptoCollection extends js.Object {
   	* @return
   	**/
   def toggleClass(names: java.lang.String): ZeptoCollection = js.native
-  /**
-  	* Toggle given class names (space-separated) in each element in the collection. The class name is removed if present on an element; otherwise it’s added. If setting is present, this method behaves like addClass if setting is truthy or removeClass otherwise.
-  	* @param names
-  	* @param setting
-  	* @return
-  	**/
   def toggleClass(names: java.lang.String, setting: scala.Boolean): ZeptoCollection = js.native
   /**
   	* Trigger the specified event on elements of the collection. Event can either be a string type, or a full event object obtained with $.Event. If a data array is given, it is passed as additional arguments to event handlers.
@@ -1170,13 +922,6 @@ trait ZeptoCollection extends js.Object {
   	* @return
   	**/
   def trigger(event: java.lang.String): ZeptoCollection = js.native
-  /**
-  	* Trigger the specified event on elements of the collection. Event can either be a string type, or a full event object obtained with $.Event. If a data array is given, it is passed as additional arguments to event handlers.
-  	* (!) Zepto only supports triggering events on DOM elements.
-  	* @param event
-  	* @param data
-  	* @return
-  	**/
   def trigger(event: java.lang.String, data: js.Array[_]): ZeptoCollection = js.native
   /**
   	* Like trigger, but triggers only event handlers on current elements and doesn’t bubble.
@@ -1185,12 +930,6 @@ trait ZeptoCollection extends js.Object {
   	* @return
   	**/
   def triggerHandler(event: java.lang.String): ZeptoCollection = js.native
-  /**
-  	* Like trigger, but triggers only event handlers on current elements and doesn’t bubble.
-  	* @param event
-  	* @param data
-  	* @return
-  	**/
   def triggerHandler(event: java.lang.String, data: js.Array[_]): ZeptoCollection = js.native
   /**
   	* Detach event handler added with bind.

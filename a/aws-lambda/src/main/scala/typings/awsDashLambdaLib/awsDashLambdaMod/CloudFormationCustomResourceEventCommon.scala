@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CloudFormationCustomResourceEventCommon extends js.Object {
   var LogicalResourceId: java.lang.String
   var RequestId: java.lang.String

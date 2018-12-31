@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadAsync extends js.Object {
   var autoRetryAfter: js.UndefOr[scala.Double] = js.undefined
   var autoUpload: js.UndefOr[scala.Boolean] = js.undefined

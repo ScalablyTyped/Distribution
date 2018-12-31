@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDialogProvider
   extends angularLib.angularMod.angularNs.IServiceProvider {
   /**

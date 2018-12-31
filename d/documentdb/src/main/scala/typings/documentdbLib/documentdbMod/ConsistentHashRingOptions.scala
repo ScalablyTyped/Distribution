@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConsistentHashRingOptions extends js.Object {
   /** Function to compute the hash for a given link or partition key */
   var computeHash: js.UndefOr[

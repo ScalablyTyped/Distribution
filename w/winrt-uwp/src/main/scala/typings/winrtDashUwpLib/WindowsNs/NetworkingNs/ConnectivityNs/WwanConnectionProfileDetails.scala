@@ -14,14 +14,14 @@ abstract class WwanConnectionProfileDetails () extends js.Object {
   /** Indicates the Home Network Provider ID. */
   var homeProviderId: java.lang.String = js.native
   /**
-                   * Indicates the class of data service offered by the network currently in use for the WWAN connection.
-                   * @return The class of data service currently provided.
-                   */
+    * Indicates the class of data service offered by the network currently in use for the WWAN connection.
+    * @return The class of data service currently provided.
+    */
   def getCurrentDataClass(): WwanDataClass = js.native
   /**
-                   * Retrieves the current network registration state for the WWAN connection.
-                   * @return The current network registration state.
-                   */
+    * Retrieves the current network registration state for the WWAN connection.
+    * @return The current network registration state.
+    */
   def getNetworkRegistrationState(): WwanNetworkRegistrationState = js.native
 }
 

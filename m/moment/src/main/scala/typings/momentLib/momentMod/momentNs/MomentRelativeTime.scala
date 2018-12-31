@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MomentRelativeTime extends js.Object {
   var M: js.Any
   var MM: js.Any

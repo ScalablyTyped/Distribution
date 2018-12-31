@@ -9,35 +9,35 @@ import scala.scalajs.js.annotation._
 sealed trait AssetTaskState extends js.Object
 
 /**
-     * Defines the list of states available for a task inside a AssetsManager
-     */
+  * Defines the list of states available for a task inside a AssetsManager
+  */
 @JSGlobal("BABYLON.AssetTaskState")
 @js.native
 object AssetTaskState extends js.Object {
   /**
-           * Done
-           */
+    * Done
+    */
   @js.native
   sealed trait DONE
     extends babylonjsLib.BABYLONNs.AssetTaskState
   
   /**
-           * Error
-           */
+    * Error
+    */
   @js.native
   sealed trait ERROR
     extends babylonjsLib.BABYLONNs.AssetTaskState
   
   /**
-           * Initialization
-           */
+    * Initialization
+    */
   @js.native
   sealed trait INIT
     extends babylonjsLib.BABYLONNs.AssetTaskState
   
   /**
-           * Running
-           */
+    * Running
+    */
   @js.native
   sealed trait RUNNING
     extends babylonjsLib.BABYLONNs.AssetTaskState

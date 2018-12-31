@@ -12,8 +12,8 @@ package object ObjectionNs {
   type ColumnRef = java.lang.String | Raw | Reference | (QueryBuilder[js.Any, js.Array[js.Any], js.Array[js.Any]])
   type Distinct[QM /* <: Model */, RM, RV] = ColumnNamesMethod[QM, RM, RV]
   /**
-     * @see http://vincit.github.io/objection.js/#fieldexpression
-     */
+    * @see http://vincit.github.io/objection.js/#fieldexpression
+    */
   type FieldExpression = java.lang.String
   type FilterFunction[QM /* <: Model */] = js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
   type Id = java.lang.String | scala.Double
@@ -54,8 +54,8 @@ package object ObjectionNs {
   type Reference = Castable
   type ReferenceBuilder = js.Function1[/* expression */ java.lang.String, Reference]
   /**
-     * @see http://vincit.github.io/objection.js/#relationexpression
-     */
+    * @see http://vincit.github.io/objection.js/#relationexpression
+    */
   type RelationExpression = java.lang.String | js.Object
   type RelationExpressionMethod[QM /* <: Model */, RM, RV] = js.Function1[/* relationExpression */ RelationExpression, QueryBuilder[QM, RM, RV]]
   type Select[QM /* <: Model */, RM, RV] = ColumnNamesMethod[QM, RM, RV]

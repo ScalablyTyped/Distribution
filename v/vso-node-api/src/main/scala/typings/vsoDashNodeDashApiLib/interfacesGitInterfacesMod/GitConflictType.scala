@@ -12,106 +12,106 @@ sealed trait GitConflictType extends js.Object
 @js.native
 object GitConflictType extends js.Object {
   /**
-       * Added on source and target; content differs
-       */
+    * Added on source and target; content differs
+    */
   @js.native
   sealed trait AddAdd
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitConflictType
   
   /**
-       * Added on source and rename destination on target
-       */
+    * Added on source and rename destination on target
+    */
   @js.native
   sealed trait AddRename
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitConflictType
   
   /**
-       * Deleted on source and edited on target
-       */
+    * Deleted on source and edited on target
+    */
   @js.native
   sealed trait DeleteEdit
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitConflictType
   
   /**
-       * Deleted on source and renamed on target
-       */
+    * Deleted on source and renamed on target
+    */
   @js.native
   sealed trait DeleteRename
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitConflictType
   
   /**
-       * Children of directory which has DirectoryFile or FileDirectory conflict
-       */
+    * Children of directory which has DirectoryFile or FileDirectory conflict
+    */
   @js.native
   sealed trait DirectoryChild
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitConflictType
   
   /**
-       * Path is a directory on source and a file on target
-       */
+    * Path is a directory on source and a file on target
+    */
   @js.native
   sealed trait DirectoryFile
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitConflictType
   
   /**
-       * Edited on source and deleted on target
-       */
+    * Edited on source and deleted on target
+    */
   @js.native
   sealed trait EditDelete
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitConflictType
   
   /**
-       * Edited on source and target; content differs
-       */
+    * Edited on source and target; content differs
+    */
   @js.native
   sealed trait EditEdit
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitConflictType
   
   /**
-       * Path is a file on source and a directory on target
-       */
+    * Path is a file on source and a directory on target
+    */
   @js.native
   sealed trait FileDirectory
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitConflictType
   
   /**
-       * No conflict
-       */
+    * No conflict
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitConflictType
   
   /**
-       * Same file renamed on both source and target; destination paths differ
-       */
+    * Same file renamed on both source and target; destination paths differ
+    */
   @js.native
   sealed trait Rename1to2
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitConflictType
   
   /**
-       * Different files renamed to same destination path on both source and target
-       */
+    * Different files renamed to same destination path on both source and target
+    */
   @js.native
   sealed trait Rename2to1
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitConflictType
   
   /**
-       * Rename destination on source and new file on target
-       */
+    * Rename destination on source and new file on target
+    */
   @js.native
   sealed trait RenameAdd
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitConflictType
   
   /**
-       * Renamed on source and deleted on target
-       */
+    * Renamed on source and deleted on target
+    */
   @js.native
   sealed trait RenameDelete
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitConflictType
   
   /**
-       * Rename destination on both source and target; content differs
-       */
+    * Rename destination on both source and target; content differs
+    */
   @js.native
   sealed trait RenameRename
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitConflictType

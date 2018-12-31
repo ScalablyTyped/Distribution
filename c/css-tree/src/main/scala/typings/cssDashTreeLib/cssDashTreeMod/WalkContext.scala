@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WalkContext extends js.Object {
   var atrule: Atrule
   var atrulePrelude: AtrulePrelude

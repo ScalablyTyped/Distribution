@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("aws-sdk/clients/all", "CloudSearchDomain")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class CloudSearchDomain ()
   extends awsDashSdkLib.clientsCloudsearchdomainMod.namespaced {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsCloudsearchdomainMod.CloudSearchDomainNs.ClientConfiguration) = this()
 }
 

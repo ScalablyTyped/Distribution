@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IProperty
   extends extjsLib.ExtNs.dataNs.IModel {
   /** [Property] (Ext.util.MixedCollection) */

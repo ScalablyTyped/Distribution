@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PermissionRequestHandler extends js.Object {
   /** Allow the permission request. */
   def allow(): scala.Unit

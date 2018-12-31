@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Failure extends js.Object {
   var body: js.UndefOr[
     joiLib.joiMod.AnySchema | org.scalablytyped.runtime.StringDictionary[joiLib.joiMod.AnySchema]

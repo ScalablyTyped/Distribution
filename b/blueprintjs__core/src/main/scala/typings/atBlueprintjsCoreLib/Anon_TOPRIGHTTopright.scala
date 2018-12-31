@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TOPRIGHTTopright extends js.Object {
   var AUTO: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.auto
   var AUTO_END: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.`auto-end`

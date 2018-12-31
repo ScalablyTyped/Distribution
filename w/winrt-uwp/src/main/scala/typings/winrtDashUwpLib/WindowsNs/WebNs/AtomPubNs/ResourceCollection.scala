@@ -32,10 +32,10 @@ abstract class ResourceCollection () extends js.Object {
   /** Gets the Uniform Resource Identifier (URI) representing the href attribute of the app:collection element. This is the absolute URI resolved against the xml:base attribute when it is present. If the href attribute is a relative URI string and there is no xml:base attribute, this property will be Null. */
   var uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri = js.native
   /**
-                   * Generates the DOM object that represents this element, and all the attributes and child elements including foreign markups.
-                   * @param format The format of the element. The only formats accepted by this method are Atom 1.0 and RSS 2.0.
-                   * @return The XML document.
-                   */
+    * Generates the DOM object that represents this element, and all the attributes and child elements including foreign markups.
+    * @param format The format of the element. The only formats accepted by this method are Atom 1.0 and RSS 2.0.
+    * @return The XML document.
+    */
   def getXmlDocument(format: winrtDashUwpLib.WindowsNs.WebNs.SyndicationNs.SyndicationFormat): winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument = js.native
 }
 

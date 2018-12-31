@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Based on jsTGALoader - Javascript loader for TGA file
-     * By Vincent Thibault
-     * @see http://blog.robrowser.com/javascript-tga-loader.html
-     */
+  * Based on jsTGALoader - Javascript loader for TGA file
+  * By Vincent Thibault
+  * @see http://blog.robrowser.com/javascript-tga-loader.html
+  */
 @JSGlobal("BABYLON.TGATools")
 @js.native
 class TGATools () extends js.Object
 
 /**
-     * Based on jsTGALoader - Javascript loader for TGA file
-     * By Vincent Thibault
-     * @see http://blog.robrowser.com/javascript-tga-loader.html
-     */
+  * Based on jsTGALoader - Javascript loader for TGA file
+  * By Vincent Thibault
+  * @see http://blog.robrowser.com/javascript-tga-loader.html
+  */
 @JSGlobal("BABYLON.TGATools")
 @js.native
 object TGATools extends js.Object {
@@ -35,15 +35,15 @@ object TGATools extends js.Object {
   var _TYPE_RLE_INDEXED: js.Any = js.native
   var _TYPE_RLE_RGB: js.Any = js.native
   /**
-           * Gets the header of a TGA file
-           * @param data defines the TGA data
-           * @returns the header
-           */
+    * Gets the header of a TGA file
+    * @param data defines the TGA data
+    * @returns the header
+    */
   def GetTGAHeader(data: stdLib.Uint8Array): js.Any = js.native
   /**
-           * Uploads TGA content to a Babylon Texture
-           * @hidden
-           */
+    * Uploads TGA content to a Babylon Texture
+    * @hidden
+    */
   def UploadContent(texture: babylonjsLib.BABYLONNs.InternalTexture, data: stdLib.Uint8Array): scala.Unit = js.native
   /** @hidden */
   def _getImageData16bits(

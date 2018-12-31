@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CellSelectionJSON extends js.Object {
   var anchor: scala.Double
   var head: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Geometry extends js.Object {
   /** The list of geometries in this geometry collection. */
   var geometries: js.UndefOr[js.Array[_]] = js.undefined

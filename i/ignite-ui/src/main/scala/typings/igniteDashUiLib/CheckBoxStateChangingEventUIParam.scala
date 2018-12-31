@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CheckBoxStateChangingEventUIParam extends js.Object {
   /**
   	 * Gets the current state of the checkbox ("on","off").

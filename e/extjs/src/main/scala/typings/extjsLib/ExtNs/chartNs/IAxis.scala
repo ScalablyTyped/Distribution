@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAxis
   extends extjsLib.ExtNs.chartNs.axisNs.IAbstract {
   /** [Config Option] (Boolean) */

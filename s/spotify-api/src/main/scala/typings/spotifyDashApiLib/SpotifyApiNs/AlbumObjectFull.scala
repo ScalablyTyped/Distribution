@@ -10,10 +10,9 @@ import scala.scalajs.js.annotation._
 // [Object Model](https://developer.spotify.com/web-api/object-model)
 //
 /**
-     * Full Album Object
-     * [album object (full)](https://developer.spotify.com/web-api/object-model/#album-object-simplified)
-     */
-
+  * Full Album Object
+  * [album object (full)](https://developer.spotify.com/web-api/object-model/#album-object-simplified)
+  */
 trait AlbumObjectFull extends AlbumObjectSimplified {
   var artists: js.Array[ArtistObjectSimplified]
   var copyrights: js.Array[CopyrightObject]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPageSizePrettyPrint extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -21,13 +20,13 @@ trait Anon_AccesstokenPageSizePrettyPrint extends js.Object {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Optional. A filter constraining the clusters to list. Filters are case-sensitive and have the following syntax:field = value AND field = value ...where
-                   * field is one of status.state, clusterName, or labels.[KEY], and [KEY] is a label key. value can be &#42; to match all values. status.state can be one of
-                   * the following: ACTIVE, INACTIVE, CREATING, RUNNING, ERROR, DELETING, or UPDATING. ACTIVE contains the CREATING, UPDATING, and RUNNING states. INACTIVE
-                   * contains the DELETING and ERROR states. clusterName is the name of the cluster provided at creation time. Only the logical AND operator is supported;
-                   * space-separated items are treated as having an implicit AND operator.Example filter:status.state = ACTIVE AND clusterName = mycluster AND labels.env =
-                   * staging AND labels.starred = &#42;
-                   */
+    * Optional. A filter constraining the clusters to list. Filters are case-sensitive and have the following syntax:field = value AND field = value ...where
+    * field is one of status.state, clusterName, or labels.[KEY], and [KEY] is a label key. value can be &#42; to match all values. status.state can be one of
+    * the following: ACTIVE, INACTIVE, CREATING, RUNNING, ERROR, DELETING, or UPDATING. ACTIVE contains the CREATING, UPDATING, and RUNNING states. INACTIVE
+    * contains the DELETING and ERROR states. clusterName is the name of the cluster provided at creation time. Only the logical AND operator is supported;
+    * space-separated items are treated as having an implicit AND operator.Example filter:status.state = ACTIVE AND clusterName = mycluster AND labels.env =
+    * staging AND labels.starred = &#42;
+    */
   var filter: js.UndefOr[java.lang.String] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined

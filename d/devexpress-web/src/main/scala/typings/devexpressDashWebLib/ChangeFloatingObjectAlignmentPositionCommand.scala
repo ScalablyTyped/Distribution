@@ -6,18 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * A command to modify a floating object's alignment position.
- */
-
+  * A command to modify a floating object's alignment position.
+  */
 trait ChangeFloatingObjectAlignmentPositionCommand extends CommandBase {
   /**
-       * Executes the ChangeFloatingObjectAlignmentPositionCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-       * @param settings A FloatingObjectAlignmentPositionSettings object specifying alignment position settings.
-       */
+    * Executes the ChangeFloatingObjectAlignmentPositionCommand command by applying the specified setting.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    * @param settings A FloatingObjectAlignmentPositionSettings object specifying alignment position settings.
+    */
   def execute(settings: FloatingObjectAlignmentPositionSettings): scala.Boolean
   /**
-       * Gets information about the command state.
-       */
+    * Gets information about the command state.
+    */
   def getState(): js.Any
 }
 

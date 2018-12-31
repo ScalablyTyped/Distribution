@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Number extends js.Object {
   var array: reduxDashSagaLib.utilsMod.GuardPredicate[js.Array[_]]
   var buffer: reduxDashSagaLib.utilsMod.GuardPredicate[reduxDashSagaLib.reduxDashSagaMod.Buffer[_]]

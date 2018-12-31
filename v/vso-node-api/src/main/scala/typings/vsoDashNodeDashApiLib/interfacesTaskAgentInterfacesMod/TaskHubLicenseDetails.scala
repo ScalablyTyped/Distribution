@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TaskHubLicenseDetails extends js.Object {
   var enterpriseUsersCount: scala.Double
   var freeLicenseCount: scala.Double

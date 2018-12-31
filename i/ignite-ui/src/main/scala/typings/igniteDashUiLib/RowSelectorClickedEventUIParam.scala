@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RowSelectorClickedEventUIParam extends js.Object {
   /**
   	 * Gets reference to the fixed row the clicked row selector resides in(if there are fixed columns).

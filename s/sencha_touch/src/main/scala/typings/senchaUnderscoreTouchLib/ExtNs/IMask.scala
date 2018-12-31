@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMask extends IComponent {
   /** [Method] Returns the value of transparent
   		* @returns Boolean

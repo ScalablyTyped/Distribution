@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GoogleEarthEnterpriseMetadata extends js.Object {
   var imageryPresent: scala.Boolean
   var key: stdLib.ArrayBuffer

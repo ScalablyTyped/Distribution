@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait IntegerAttributeFormat extends js.Object
 
 /**
-     * Constant Enum: Integer attribute formats for Attributes.Attribute.getFormat(), used by {@link Attributes.NumberAttribute NumberAttribute}.
-     * @see {@link Xrm.Attributes.IntegerAttributeFormat}
-     */
+  * Constant Enum: Integer attribute formats for Attributes.Attribute.getFormat(), used by {@link Attributes.NumberAttribute NumberAttribute}.
+  * @see {@link Xrm.Attributes.IntegerAttributeFormat}
+  */
 @JSGlobal("XrmEnum.IntegerAttributeFormat")
 @js.native
 object IntegerAttributeFormat extends js.Object {

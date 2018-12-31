@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IProvider
   extends senchaUnderscoreTouchLib.ExtNs.mixinNs.IObservable {
   /** [Method] Abstract methods for subclasses to implement  */

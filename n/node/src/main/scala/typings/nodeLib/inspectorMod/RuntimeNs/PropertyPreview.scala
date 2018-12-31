@@ -6,29 +6,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @experimental
-         */
-
+  * @experimental
+  */
 trait PropertyPreview extends js.Object {
   /**
-               * Property name.
-               */
+    * Property name.
+    */
   var name: java.lang.String
   /**
-               * Object subtype hint. Specified for `object` type values only.
-               */
+    * Object subtype hint. Specified for `object` type values only.
+    */
   var subtype: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Object type. Accessor means that the property itself is an accessor property.
-               */
+    * Object type. Accessor means that the property itself is an accessor property.
+    */
   var `type`: java.lang.String
   /**
-               * User-friendly property value string.
-               */
+    * User-friendly property value string.
+    */
   var value: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Nested value preview.
-               */
+    * Nested value preview.
+    */
   var valuePreview: js.UndefOr[ObjectPreview] = js.undefined
 }
 

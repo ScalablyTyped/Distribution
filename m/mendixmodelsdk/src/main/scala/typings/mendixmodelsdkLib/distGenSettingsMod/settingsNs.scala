@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object settingsNs extends js.Object {
   /**
-       * Interfaces and instance classes for types from the Mendix sub meta model `Settings`.
-       */
+    * Interfaces and instance classes for types from the Mendix sub meta model `Settings`.
+    */
   @js.native
   class Certificate protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
@@ -33,8 +33,8 @@ object settingsNs extends js.Object {
     extends mendixmodelsdkLib.distSdkInternalMod.AbstractEnum
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/configuration relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/configuration relevant section in reference guide}
+    */
   @js.native
   class Configuration protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
@@ -52,8 +52,8 @@ object settingsNs extends js.Object {
     var databaseUseIntegratedSecurity: scala.Boolean = js.native
     var databaseUserName: java.lang.String = js.native
     /**
-             * In version 7.21.0: deleted
-             */
+      * In version 7.21.0: deleted
+      */
     var emulateCloudSecurity: scala.Boolean = js.native
     var extraJvmParameters: java.lang.String = js.native
     var maxJavaHeapSize: scala.Double = js.native
@@ -106,8 +106,8 @@ object settingsNs extends js.Object {
     extends mendixmodelsdkLib.distSdkInternalMod.AbstractEnum
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/project-settings relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/project-settings relevant section in reference guide}
+    */
   @js.native
   trait IProjectSettings
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProjectDocument
@@ -118,10 +118,10 @@ object settingsNs extends js.Object {
   }
   
   /**
-       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-       *
-       * In version 6.9.0: introduced
-       */
+    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+    *
+    * In version 6.9.0: introduced
+    */
   @js.native
   class JavaActionsSettings protected () extends ProjectSettingsPart {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
@@ -156,9 +156,9 @@ object settingsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/project-settings relevant section in reference guide}
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenSettingsMod.settingsNs.IProjectSettings because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * See: {@link https://docs.mendix.com/refguide7/project-settings relevant section in reference guide}
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenSettingsMod.settingsNs.IProjectSettings because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class ProjectSettings protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.ProjectDocument {
@@ -189,16 +189,16 @@ object settingsNs extends js.Object {
     val beforeShutdownMicroflowQualifiedName: java.lang.String | scala.Null = js.native
     var defaultTimeZoneCode: java.lang.String = js.native
     /**
-             * In version 7.10.0: introduced
-             */
+      * In version 7.10.0: introduced
+      */
     var enableDataStorageNewQueryHandling: scala.Boolean = js.native
     /**
-             * In version 7.5.0: introduced
-             */
+      * In version 7.5.0: introduced
+      */
     var enableDataStorageOptimisticLocking: scala.Boolean = js.native
     /**
-             * In version 7.1.0: introduced
-             */
+      * In version 7.1.0: introduced
+      */
     var enforceDataStorageUniqueness: scala.Boolean = js.native
     var firstDayOfWeek: FirstDayOfWeekEnum = js.native
     var hashAlgorithm: HashAlgorithmType = js.native
@@ -207,8 +207,8 @@ object settingsNs extends js.Object {
     var roundingMode: RoundingMode = js.native
     var scheduledEventTimeZoneCode: java.lang.String = js.native
     /**
-             * In version 7.15.0: introduced
-             */
+      * In version 7.15.0: introduced
+      */
     var useDeprecatedClientForWebServiceCalls: scala.Boolean = js.native
   }
   
@@ -216,43 +216,43 @@ object settingsNs extends js.Object {
   class WebUIProjectSettingsPart protected () extends ProjectSettingsPart {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     /**
-             * In version 6.6.0: introduced
-             */
+      * In version 6.6.0: introduced
+      */
     var enableDownloadResources: scala.Boolean = js.native
     /**
-             * In version 7.0.2: introduced
-             */
+      * In version 7.0.2: introduced
+      */
     var enableMicroflowReachabilityAnalysis: scala.Boolean = js.native
     var enableWidgetBundling: scala.Boolean = js.native
     /**
-             * In version 6.2.0: deleted
-             */
+      * In version 6.2.0: deleted
+      */
     var feedbackWidgetUpdated: scala.Boolean = js.native
     var theme: java.lang.String = js.native
     /**
-             * In version 7.9.0: introduced
-             */
+      * In version 7.9.0: introduced
+      */
     var themeModuleName: java.lang.String = js.native
   }
   
   /**
-       * Interfaces and instance classes for types from the Mendix sub meta model `Settings`.
-       */
+    * Interfaces and instance classes for types from the Mendix sub meta model `Settings`.
+    */
   @js.native
   object Certificate extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenSettingsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new Certificate instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new Certificate instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenSettingsMod.settingsNs.Certificate = js.native
     /**
-             * Creates and returns a new Certificate instance in the SDK and on the server.
-             * The new Certificate will be automatically stored in the 'certificates' property
-             * of the parent CertificateSettings element passed as argument.
-             */
+      * Creates and returns a new Certificate instance in the SDK and on the server.
+      * The new Certificate will be automatically stored in the 'certificates' property
+      * of the parent CertificateSettings element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.CertificateSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.Certificate = js.native
   }
   
@@ -261,16 +261,16 @@ object settingsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenSettingsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new CertificateSettings instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new CertificateSettings instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenSettingsMod.settingsNs.CertificateSettings = js.native
     /**
-             * Creates and returns a new CertificateSettings instance in the SDK and on the server.
-             * The new CertificateSettings will be automatically stored in the 'settingsParts' property
-             * of the parent ProjectSettings element passed as argument.
-             */
+      * Creates and returns a new CertificateSettings instance in the SDK and on the server.
+      * The new CertificateSettings will be automatically stored in the 'settingsParts' property
+      * of the parent ProjectSettings element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.ProjectSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.CertificateSettings = js.native
   }
   
@@ -281,23 +281,23 @@ object settingsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/configuration relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/configuration relevant section in reference guide}
+    */
   @js.native
   object Configuration extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenSettingsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new Configuration instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new Configuration instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenSettingsMod.settingsNs.Configuration = js.native
     /**
-             * Creates and returns a new Configuration instance in the SDK and on the server.
-             * The new Configuration will be automatically stored in the 'configurations' property
-             * of the parent ConfigurationSettings element passed as argument.
-             */
+      * Creates and returns a new Configuration instance in the SDK and on the server.
+      * The new Configuration will be automatically stored in the 'configurations' property
+      * of the parent ConfigurationSettings element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.ConfigurationSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.Configuration = js.native
   }
   
@@ -306,16 +306,16 @@ object settingsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenSettingsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new ConfigurationSettings instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new ConfigurationSettings instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenSettingsMod.settingsNs.ConfigurationSettings = js.native
     /**
-             * Creates and returns a new ConfigurationSettings instance in the SDK and on the server.
-             * The new ConfigurationSettings will be automatically stored in the 'settingsParts' property
-             * of the parent ProjectSettings element passed as argument.
-             */
+      * Creates and returns a new ConfigurationSettings instance in the SDK and on the server.
+      * The new ConfigurationSettings will be automatically stored in the 'settingsParts' property
+      * of the parent ProjectSettings element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.ProjectSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.ConfigurationSettings = js.native
   }
   
@@ -324,16 +324,16 @@ object settingsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenSettingsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new ConstantValue instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new ConstantValue instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenSettingsMod.settingsNs.ConstantValue = js.native
     /**
-             * Creates and returns a new ConstantValue instance in the SDK and on the server.
-             * The new ConstantValue will be automatically stored in the 'constantValues' property
-             * of the parent Configuration element passed as argument.
-             */
+      * Creates and returns a new ConstantValue instance in the SDK and on the server.
+      * The new ConstantValue will be automatically stored in the 'constantValues' property
+      * of the parent Configuration element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.Configuration): mendixmodelsdkLib.distGenSettingsMod.settingsNs.ConstantValue = js.native
   }
   
@@ -342,16 +342,16 @@ object settingsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenSettingsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new CustomSetting instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new CustomSetting instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenSettingsMod.settingsNs.CustomSetting = js.native
     /**
-             * Creates and returns a new CustomSetting instance in the SDK and on the server.
-             * The new CustomSetting will be automatically stored in the 'customSettings' property
-             * of the parent Configuration element passed as argument.
-             */
+      * Creates and returns a new CustomSetting instance in the SDK and on the server.
+      * The new CustomSetting will be automatically stored in the 'customSettings' property
+      * of the parent Configuration element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.Configuration): mendixmodelsdkLib.distGenSettingsMod.settingsNs.CustomSetting = js.native
   }
   
@@ -390,42 +390,42 @@ object settingsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenSettingsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new IntegrationProjectSettingsPart instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new IntegrationProjectSettingsPart instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenSettingsMod.settingsNs.IntegrationProjectSettingsPart = js.native
     /**
-             * Creates and returns a new IntegrationProjectSettingsPart instance in the SDK and on the server.
-             * The new IntegrationProjectSettingsPart will be automatically stored in the 'settingsParts' property
-             * of the parent ProjectSettings element passed as argument.
-             */
+      * Creates and returns a new IntegrationProjectSettingsPart instance in the SDK and on the server.
+      * The new IntegrationProjectSettingsPart will be automatically stored in the 'settingsParts' property
+      * of the parent ProjectSettings element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.ProjectSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.IntegrationProjectSettingsPart = js.native
   }
   
   /**
-       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-       *
-       * In version 6.9.0: introduced
-       */
+    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+    *
+    * In version 6.9.0: introduced
+    */
   @js.native
   object JavaActionsSettings extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenSettingsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new JavaActionsSettings instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new JavaActionsSettings instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenSettingsMod.settingsNs.JavaActionsSettings = js.native
     /**
-             * Creates and returns a new JavaActionsSettings instance in the SDK and on the server.
-             * The new JavaActionsSettings will be automatically stored in the 'settingsParts' property
-             * of the parent ProjectSettings element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.9.0 and higher
-             */
+      * Creates and returns a new JavaActionsSettings instance in the SDK and on the server.
+      * The new JavaActionsSettings will be automatically stored in the 'settingsParts' property
+      * of the parent ProjectSettings element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.9.0 and higher
+      */
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.ProjectSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.JavaActionsSettings = js.native
   }
   
@@ -434,16 +434,16 @@ object settingsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenSettingsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new Language instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new Language instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenSettingsMod.settingsNs.Language = js.native
     /**
-             * Creates and returns a new Language instance in the SDK and on the server.
-             * The new Language will be automatically stored in the 'languages' property
-             * of the parent LanguageSettings element passed as argument.
-             */
+      * Creates and returns a new Language instance in the SDK and on the server.
+      * The new Language will be automatically stored in the 'languages' property
+      * of the parent LanguageSettings element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.LanguageSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.Language = js.native
   }
   
@@ -452,16 +452,16 @@ object settingsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenSettingsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new LanguageSettings instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new LanguageSettings instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenSettingsMod.settingsNs.LanguageSettings = js.native
     /**
-             * Creates and returns a new LanguageSettings instance in the SDK and on the server.
-             * The new LanguageSettings will be automatically stored in the 'settingsParts' property
-             * of the parent ProjectSettings element passed as argument.
-             */
+      * Creates and returns a new LanguageSettings instance in the SDK and on the server.
+      * The new LanguageSettings will be automatically stored in the 'settingsParts' property
+      * of the parent ProjectSettings element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.ProjectSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.LanguageSettings = js.native
   }
   
@@ -470,30 +470,30 @@ object settingsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenSettingsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new ModelerSettings instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new ModelerSettings instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenSettingsMod.settingsNs.ModelerSettings = js.native
     /**
-             * Creates and returns a new ModelerSettings instance in the SDK and on the server.
-             * The new ModelerSettings will be automatically stored in the 'settingsParts' property
-             * of the parent ProjectSettings element passed as argument.
-             */
+      * Creates and returns a new ModelerSettings instance in the SDK and on the server.
+      * The new ModelerSettings will be automatically stored in the 'settingsParts' property
+      * of the parent ProjectSettings element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.ProjectSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.ModelerSettings = js.native
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/project-settings relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/project-settings relevant section in reference guide}
+    */
   @js.native
   object ProjectSettings extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenSettingsMod.StructureVersionInfo = js.native
     /**
-             * Creates a new ProjectSettings unit in the SDK and on the server.
-             * Expects one argument, the projects.IProject in which this unit is contained.
-             */
+      * Creates a new ProjectSettings unit in the SDK and on the server.
+      * Expects one argument, the projects.IProject in which this unit is contained.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject): mendixmodelsdkLib.distGenSettingsMod.settingsNs.ProjectSettings = js.native
   }
   
@@ -514,16 +514,16 @@ object settingsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenSettingsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new RuntimeSettings instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new RuntimeSettings instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenSettingsMod.settingsNs.RuntimeSettings = js.native
     /**
-             * Creates and returns a new RuntimeSettings instance in the SDK and on the server.
-             * The new RuntimeSettings will be automatically stored in the 'settingsParts' property
-             * of the parent ProjectSettings element passed as argument.
-             */
+      * Creates and returns a new RuntimeSettings instance in the SDK and on the server.
+      * The new RuntimeSettings will be automatically stored in the 'settingsParts' property
+      * of the parent ProjectSettings element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.ProjectSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.RuntimeSettings = js.native
   }
   
@@ -532,16 +532,16 @@ object settingsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenSettingsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new WebUIProjectSettingsPart instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new WebUIProjectSettingsPart instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenSettingsMod.settingsNs.WebUIProjectSettingsPart = js.native
     /**
-             * Creates and returns a new WebUIProjectSettingsPart instance in the SDK and on the server.
-             * The new WebUIProjectSettingsPart will be automatically stored in the 'settingsParts' property
-             * of the parent ProjectSettings element passed as argument.
-             */
+      * Creates and returns a new WebUIProjectSettingsPart instance in the SDK and on the server.
+      * The new WebUIProjectSettingsPart will be automatically stored in the 'settingsParts' property
+      * of the parent ProjectSettings element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.ProjectSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.WebUIProjectSettingsPart = js.native
   }
   

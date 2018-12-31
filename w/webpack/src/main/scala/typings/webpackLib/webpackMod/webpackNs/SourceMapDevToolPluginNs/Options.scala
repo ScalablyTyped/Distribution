@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** @todo extend EvalSourceMapDevToolPlugin.Options */
-
 trait Options extends js.Object {
   var append: js.UndefOr[webpackLib.webpackLibNumbers.`false` | java.lang.String] = js.undefined
   var columns: js.UndefOr[scala.Boolean] = js.undefined

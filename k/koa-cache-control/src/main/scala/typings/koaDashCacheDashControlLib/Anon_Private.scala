@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Private extends js.Object {
   var maxAge: js.UndefOr[scala.Double] = js.undefined
   var mustRevalidate: js.UndefOr[scala.Boolean] = js.undefined

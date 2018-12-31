@@ -6,25 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Responsible for the account
-     */
-
+  * Responsible for the account
+  */
 trait AccountGuarantor extends BackboneElement {
   /**
-           * Contains extended information for property 'onHold'.
-           */
+    * Contains extended information for property 'onHold'.
+    */
   var _onHold: js.UndefOr[Element] = js.undefined
   /**
-           * Credit or other hold applied
-           */
+    * Credit or other hold applied
+    */
   var onHold: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * Responsible entity
-           */
+    * Responsible entity
+    */
   var party: Reference
   /**
-           * Guarrantee account during
-           */
+    * Guarrantee account during
+    */
   var period: js.UndefOr[Period] = js.undefined
 }
 

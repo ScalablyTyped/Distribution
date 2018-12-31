@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // These are the user options with defaults applied.
-
 trait ExplorerOptions extends js.Object {
   var cache: js.UndefOr[scala.Boolean] = js.undefined
   var ignoreEmptySearchPlaces: js.UndefOr[scala.Boolean] = js.undefined

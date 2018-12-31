@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServiceAccount extends js.Object {
   /** The ID of the notification. */
   var email_address: js.UndefOr[java.lang.String] = js.undefined

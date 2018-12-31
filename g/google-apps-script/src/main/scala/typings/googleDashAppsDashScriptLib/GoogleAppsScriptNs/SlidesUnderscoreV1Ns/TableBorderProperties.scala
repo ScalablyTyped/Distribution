@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableBorderProperties extends js.Object {
   // The dash style of the border.
   var dash_style: DashStyle

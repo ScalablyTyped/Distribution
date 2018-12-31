@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodeDroppingEventUIParam extends js.Object {
   /**
   	 * Gets a reference to the binding object for the level at which the target node is located.

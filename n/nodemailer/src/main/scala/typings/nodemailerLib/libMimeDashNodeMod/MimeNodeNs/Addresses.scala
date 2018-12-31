@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Addresses extends js.Object {
   var bcc: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var cc: js.UndefOr[js.Array[java.lang.String]] = js.undefined

@@ -12,50 +12,50 @@ sealed trait DayOfWeek extends js.Object
 @js.native
 object DayOfWeek extends js.Object {
   /**
-       * Indicates Friday.
-       */
+    * Indicates Friday.
+    */
   @js.native
   sealed trait Friday
     extends vsoDashNodeDashApiLib.interfacesCommonSystemMod.DayOfWeek
   
   /**
-       * Indicates Monday.
-       */
+    * Indicates Monday.
+    */
   @js.native
   sealed trait Monday
     extends vsoDashNodeDashApiLib.interfacesCommonSystemMod.DayOfWeek
   
   /**
-       * Indicates Saturday.
-       */
+    * Indicates Saturday.
+    */
   @js.native
   sealed trait Saturday
     extends vsoDashNodeDashApiLib.interfacesCommonSystemMod.DayOfWeek
   
   /**
-       * Indicates Sunday.
-       */
+    * Indicates Sunday.
+    */
   @js.native
   sealed trait Sunday
     extends vsoDashNodeDashApiLib.interfacesCommonSystemMod.DayOfWeek
   
   /**
-       * Indicates Thursday.
-       */
+    * Indicates Thursday.
+    */
   @js.native
   sealed trait Thursday
     extends vsoDashNodeDashApiLib.interfacesCommonSystemMod.DayOfWeek
   
   /**
-       * Indicates Tuesday.
-       */
+    * Indicates Tuesday.
+    */
   @js.native
   sealed trait Tuesday
     extends vsoDashNodeDashApiLib.interfacesCommonSystemMod.DayOfWeek
   
   /**
-       * Indicates Wednesday.
-       */
+    * Indicates Wednesday.
+    */
   @js.native
   sealed trait Wednesday
     extends vsoDashNodeDashApiLib.interfacesCommonSystemMod.DayOfWeek

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Breakdown extends js.Object {
   /** The list of dimensions the report should include. */
   var breakdown: js.UndefOr[

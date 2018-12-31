@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Milestone extends js.Object {
   var closed_at: stdLib.Date | scala.Null
   var closed_issues: scala.Double

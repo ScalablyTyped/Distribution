@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BucketByActivity extends js.Object {
   /** The default activity stream will be used if a specific activityDataSourceId is not specified. */
   var activityDataSourceId: js.UndefOr[java.lang.String] = js.undefined

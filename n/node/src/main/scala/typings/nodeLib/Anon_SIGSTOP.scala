@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SIGSTOP extends js.Object {
   var SIGABRT: scala.Double
   var SIGALRM: scala.Double

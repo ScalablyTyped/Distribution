@@ -6,465 +6,439 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     *
-     * Represents a series in a chart.
-     *
-     * [Api set: ExcelApi 1.1]
-     */
+  *
+  * Represents a series in a chart.
+  *
+  * [Api set: ExcelApi 1.1]
+  */
 @JSGlobal("Excel.ChartSeries")
 @js.native
 class ChartSeries ()
   extends officeDashJsDashPreviewLib.OfficeExtensionNs.ClientObject {
   /**
-           *
-           * Returns or sets the group for the specified series. Read/Write
-           *
-           * [Api set: ExcelApi 1.8]
-           */
+    *
+    * Returns or sets the group for the specified series. Read/Write
+    *
+    * [Api set: ExcelApi 1.8]
+    */
   var axisGroup: ChartAxisGroup | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Primary | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Secondary = js.native
   /**
-           *
-           * Encapsulates the bin options only for histogram chart and pareto chart. Read-only.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Encapsulates the bin options only for histogram chart and pareto chart. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   val binOptions: ChartBinOptions = js.native
   /**
-           *
-           * Encapsulates the options for the Box & Whisker chart. Read-only.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Encapsulates the options for the Box & Whisker chart. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   val boxwhiskerOptions: ChartBoxwhiskerOptions = js.native
   /**
-           *
-           * Returns or sets the scale factor for bubbles in the specified chart group. Can be an integer value from 0 (zero) to 300, corresponding to a percentage of the default size. Applies only to bubble charts. Read/Write.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Returns or sets the scale factor for bubbles in the specified chart group. Can be an integer value from 0 (zero) to 300, corresponding to a percentage of the default size. Applies only to bubble charts. Read/Write.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var bubbleScale: scala.Double = js.native
   /**
-           *
-           * Represents the chart type of a series. See Excel.ChartType for details.
-           *
-           * [Api set: ExcelApi 1.7]
-           */
-  var chartType: /* LimitUnionLength: was union type with length 83 */js.Any = js.native
+    *
+    * Represents the chart type of a series. See Excel.ChartType for details.
+    *
+    * [Api set: ExcelApi 1.7]
+    */
+  var chartType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 83 */ js.Any = js.native
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_ChartSeries: RequestContext = js.native
   /**
-           *
-           * Represents a collection of all dataLabels in the series.
-           *
-           * [Api set: ExcelApi 1.8]
-           */
+    *
+    * Represents a collection of all dataLabels in the series.
+    *
+    * [Api set: ExcelApi 1.8]
+    */
   val dataLabels: ChartDataLabels = js.native
   /**
-           *
-           * Represents the doughnut hole size of a chart series.  Only valid on doughnut and doughnutExploded charts.
-              Throws an invalid argument exception on invalid charts.
-           *
-           * [Api set: ExcelApi 1.7]
-           */
+    *
+    * Represents the doughnut hole size of a chart series.  Only valid on doughnut and doughnutExploded charts.
+    Throws an invalid argument exception on invalid charts.
+    *
+    * [Api set: ExcelApi 1.7]
+    */
   var doughnutHoleSize: scala.Double = js.native
   /**
-           *
-           * Returns or sets the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie). Read/Write.
-           *
-           * [Api set: ExcelApi 1.8]
-           */
+    *
+    * Returns or sets the explosion value for a pie-chart or doughnut-chart slice. Returns 0 (zero) if there's no explosion (the tip of the slice is in the center of the pie). Read/Write.
+    *
+    * [Api set: ExcelApi 1.8]
+    */
   var explosion: scala.Double = js.native
   /**
-           *
-           * Boolean value representing if the series is filtered or not. Not applicable for surface charts.
-           *
-           * [Api set: ExcelApi 1.7]
-           */
+    *
+    * Boolean value representing if the series is filtered or not. Not applicable for surface charts.
+    *
+    * [Api set: ExcelApi 1.7]
+    */
   var filtered: scala.Boolean = js.native
   /**
-           *
-           * Returns or sets the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
-           *
-           * [Api set: ExcelApi 1.8]
-           */
+    *
+    * Returns or sets the angle of the first pie-chart or doughnut-chart slice, in degrees (clockwise from vertical). Applies only to pie, 3-D pie, and doughnut charts. Can be a value from 0 through 360. Read/Write
+    *
+    * [Api set: ExcelApi 1.8]
+    */
   var firstSliceAngle: scala.Double = js.native
   /**
-           *
-           * Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
-           *
-           * [Api set: ExcelApi 1.1]
-           */
+    *
+    * Represents the formatting of a chart series, which includes fill and line formatting. Read-only.
+    *
+    * [Api set: ExcelApi 1.1]
+    */
   val format: ChartSeriesFormat = js.native
   /**
-           *
-           * Represents the gap width of a chart series.  Only valid on bar and column charts, as well as
-              specific classes of line and pie charts.  Throws an invalid argument exception on invalid charts.
-           *
-           * [Api set: ExcelApi 1.7]
-           */
+    *
+    * Represents the gap width of a chart series.  Only valid on bar and column charts, as well as
+    specific classes of line and pie charts.  Throws an invalid argument exception on invalid charts.
+    *
+    * [Api set: ExcelApi 1.7]
+    */
   var gapWidth: scala.Double = js.native
   /**
-           *
-           * Returns or sets the Color for maximum value of a region map chart series. Read/Write.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Returns or sets the Color for maximum value of a region map chart series. Read/Write.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var gradientMaximumColor: java.lang.String = js.native
   /**
-           *
-           * Returns or sets the type for maximum value of a region map chart series. Read/Write.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Returns or sets the type for maximum value of a region map chart series. Read/Write.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var gradientMaximumType: ChartGradientStyleType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ExtremeValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Number | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percent = js.native
   /**
-           *
-           * Returns or sets the maximum value of a region map chart series. Read/Write.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Returns or sets the maximum value of a region map chart series. Read/Write.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var gradientMaximumValue: scala.Double = js.native
   /**
-           *
-           * Returns or sets the Color for midpoint value of a region map chart series. Read/Write.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Returns or sets the Color for midpoint value of a region map chart series. Read/Write.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var gradientMidpointColor: java.lang.String = js.native
   /**
-           *
-           * Returns or sets the type for midpoint value of a region map chart series. Read/Write.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Returns or sets the type for midpoint value of a region map chart series. Read/Write.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var gradientMidpointType: ChartGradientStyleType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ExtremeValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Number | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percent = js.native
   /**
-           *
-           * Returns or sets the midpoint value of a region map chart series. Read/Write.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Returns or sets the midpoint value of a region map chart series. Read/Write.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var gradientMidpointValue: scala.Double = js.native
   /**
-           *
-           * Returns or sets the Color for minimum value of a region map chart series. Read/Write.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Returns or sets the Color for minimum value of a region map chart series. Read/Write.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var gradientMinimumColor: java.lang.String = js.native
   /**
-           *
-           * Returns or sets the type for minimum value of a region map chart series. Read/Write.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Returns or sets the type for minimum value of a region map chart series. Read/Write.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var gradientMinimumType: ChartGradientStyleType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ExtremeValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Number | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percent = js.native
   /**
-           *
-           * Returns or sets the minimum value of a region map chart series. Read/Write.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Returns or sets the minimum value of a region map chart series. Read/Write.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var gradientMinimumValue: scala.Double = js.native
   /**
-           *
-           * Returns or sets series gradient style of a region map chart. Read/Write.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Returns or sets series gradient style of a region map chart. Read/Write.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var gradientStyle: ChartGradientStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TwoPhaseColor | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThreePhaseColor = js.native
   /**
-           *
-           * Boolean value representing if the series has data labels or not.
-           *
-           * [Api set: ExcelApi 1.7]
-           */
+    *
+    * Boolean value representing if the series has data labels or not.
+    *
+    * [Api set: ExcelApi 1.7]
+    */
   var hasDataLabels: scala.Boolean = js.native
   /**
-           *
-           * Returns or sets the fill color for negative data points in a series. Read/Write.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Returns or sets the fill color for negative data points in a series. Read/Write.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var invertColor: java.lang.String = js.native
   /**
-           *
-           * True if Microsoft Excel inverts the pattern in the item when it corresponds to a negative number. Read/Write.
-           *
-           * [Api set: ExcelApi 1.8]
-           */
+    *
+    * True if Microsoft Excel inverts the pattern in the item when it corresponds to a negative number. Read/Write.
+    *
+    * [Api set: ExcelApi 1.8]
+    */
   var invertIfNegative: scala.Boolean = js.native
   /**
-           *
-           * Encapsulates the options for the Map chart. Read-only.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Encapsulates the options for the Map chart. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   val mapOptions: ChartMapOptions = js.native
   /**
-           *
-           * Represents markers background color of a chart series.
-           *
-           * [Api set: ExcelApi 1.7]
-           */
+    *
+    * Represents markers background color of a chart series.
+    *
+    * [Api set: ExcelApi 1.7]
+    */
   var markerBackgroundColor: java.lang.String = js.native
   /**
-           *
-           * Represents markers foreground color of a chart series.
-           *
-           * [Api set: ExcelApi 1.7]
-           */
+    *
+    * Represents markers foreground color of a chart series.
+    *
+    * [Api set: ExcelApi 1.7]
+    */
   var markerForegroundColor: java.lang.String = js.native
   /**
-           *
-           * Represents marker size of a chart series.
-           *
-           * [Api set: ExcelApi 1.7]
-           */
+    *
+    * Represents marker size of a chart series.
+    *
+    * [Api set: ExcelApi 1.7]
+    */
   var markerSize: scala.Double = js.native
   /**
-           *
-           * Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
-           *
-           * [Api set: ExcelApi 1.7]
-           */
+    *
+    * Represents marker style of a chart series. See Excel.ChartMarkerStyle for details.
+    *
+    * [Api set: ExcelApi 1.7]
+    */
   var markerStyle: ChartMarkerStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Invalid | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Automatic | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Square | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Diamond | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Triangle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.X | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Star | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Dot | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Dash | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Circle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Plus | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Picture = js.native
   /**
-           *
-           * Represents the name of a series in a chart.
-           *
-           * [Api set: ExcelApi 1.1]
-           */
+    *
+    * Represents the name of a series in a chart.
+    *
+    * [Api set: ExcelApi 1.1]
+    */
   var name: java.lang.String = js.native
   /**
-           *
-           * Specifies how bars and columns are positioned. Can be a value between – 100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write.
-           *
-           * [Api set: ExcelApi 1.8]
-           */
+    *
+    * Specifies how bars and columns are positioned. Can be a value between – 100 and 100. Applies only to 2-D bar and 2-D column charts. Read/Write.
+    *
+    * [Api set: ExcelApi 1.8]
+    */
   var overlap: scala.Double = js.native
   /**
-           *
-           * Returns or sets series parent label strategy area of a treemap chart. Read/Write.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Returns or sets series parent label strategy area of a treemap chart. Read/Write.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var parentLabelStrategy: ChartParentLabelStrategy | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Banner | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Overlapping = js.native
   /**
-           *
-           * Represents the plot order of a chart series within the chart group.
-           *
-           * [Api set: ExcelApi 1.7]
-           */
+    *
+    * Represents the plot order of a chart series within the chart group.
+    *
+    * [Api set: ExcelApi 1.7]
+    */
   var plotOrder: scala.Double = js.native
   /**
-           *
-           * Represents a collection of all points in the series. Read-only.
-           *
-           * [Api set: ExcelApi 1.1]
-           */
+    *
+    * Represents a collection of all points in the series. Read-only.
+    *
+    * [Api set: ExcelApi 1.1]
+    */
   val points: ChartPointsCollection = js.native
   /**
-           *
-           * Returns or sets the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write.
-           *
-           * [Api set: ExcelApi 1.8]
-           */
+    *
+    * Returns or sets the size of the secondary section of either a pie of pie chart or a bar of pie chart, as a percentage of the size of the primary pie. Can be a value from 5 to 200. Read/Write.
+    *
+    * [Api set: ExcelApi 1.8]
+    */
   var secondPlotSize: scala.Double = js.native
   /**
-           *
-           * Returns or sets if connector lines show in a waterfall chart. Read/Write.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Returns or sets if connector lines show in a waterfall chart. Read/Write.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var showConnectorLines: scala.Boolean = js.native
   /**
-           *
-           * True if Microsoft Excel show leaderlines for each datalabel in series. Read/Write.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * True if Microsoft Excel show leaderlines for each datalabel in series. Read/Write.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var showLeaderLines: scala.Boolean = js.native
   /**
-           *
-           * Boolean value representing if the series has a shadow or not.
-           *
-           * [Api set: ExcelApi 1.7]
-           */
+    *
+    * Boolean value representing if the series has a shadow or not.
+    *
+    * [Api set: ExcelApi 1.7]
+    */
   var showShadow: scala.Boolean = js.native
   /**
-           *
-           * Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts.
-           *
-           * [Api set: ExcelApi 1.7]
-           */
+    *
+    * Boolean value representing if the series is smooth or not. Only applicable to line and scatter charts.
+    *
+    * [Api set: ExcelApi 1.7]
+    */
   var smooth: scala.Boolean = js.native
   /**
-           *
-           * Returns or sets the way the two sections of either a pie of pie chart or a bar of pie chart are split. Read/Write.
-           *
-           * [Api set: ExcelApi 1.8]
-           */
+    *
+    * Returns or sets the way the two sections of either a pie of pie chart or a bar of pie chart are split. Read/Write.
+    *
+    * [Api set: ExcelApi 1.8]
+    */
   var splitType: ChartSplitType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SplitByPosition | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SplitByValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SplitByPercentValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SplitByCustomSplit = js.native
   /**
-           *
-           * Returns or sets the threshold value separating the two sections of either a pie of pie chart or a bar of pie chart. Read/Write.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Returns or sets the threshold value separating the two sections of either a pie of pie chart or a bar of pie chart. Read/Write.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var splitValue: scala.Double = js.native
   /**
-           *
-           * Represents a collection of trendlines in the series. Read-only.
-           *
-           * [Api set: ExcelApi 1.7]
-           */
+    *
+    * Represents a collection of trendlines in the series. Read-only.
+    *
+    * [Api set: ExcelApi 1.7]
+    */
   val trendlines: ChartTrendlineCollection = js.native
   /**
-           *
-           * True if Microsoft Excel assigns a different color or pattern to each data marker. The chart must contain only one series. Read/Write.
-           *
-           * [Api set: ExcelApi 1.8]
-           */
+    *
+    * True if Microsoft Excel assigns a different color or pattern to each data marker. The chart must contain only one series. Read/Write.
+    *
+    * [Api set: ExcelApi 1.8]
+    */
   var varyByCategories: scala.Boolean = js.native
   /**
-           *
-           * Represents the error bar object for a chart series.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Represents the error bar object for a chart series.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   val xerrorBars: ChartErrorBars = js.native
   /**
-           *
-           * Represents the error bar object for a chart series.
-           *
-           * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-           * @beta
-           */
+    *
+    * Represents the error bar object for a chart series.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   val yerrorBars: ChartErrorBars = js.native
   /**
-           *
-           * Deletes the chart series.
-           *
-           * [Api set: ExcelApi 1.7]
-           */
+    *
+    * Deletes the chart series.
+    *
+    * [Api set: ExcelApi 1.7]
+    */
   def delete(): scala.Unit = js.native
   /**
-           * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-           *
-           * @remarks
-           *
-           * In addition to this signature, this method has the following signatures:
-           *
-           * `load(option?: string | string[]): Excel.ChartSeries` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-           *
-           * `load(option?: { select?: string; expand?: string; }): Excel.ChartSeries` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-           *
-           * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartSeries` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-           *
-           * @param options Provides options for which properties of the object to load.
-           */
+    * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
+    *
+    * @remarks
+    *
+    * In addition to this signature, this method has the following signatures:
+    *
+    * `load(option?: string | string[]): Excel.ChartSeries` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
+    *
+    * `load(option?: { select?: string; expand?: string; }): Excel.ChartSeries` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
+    *
+    * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartSeries` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
+    *
+    * @param options Provides options for which properties of the object to load.
+    */
   def load(): ChartSeries = js.native
   def load(option: java.lang.String): ChartSeries = js.native
   def load(option: js.Array[java.lang.String]): ChartSeries = js.native
   def load(option: officeDashJsDashPreviewLib.Anon_Select): ChartSeries = js.native
-  /**
-           * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
-           *
-           * @remarks
-           *
-           * In addition to this signature, this method has the following signatures:
-           *
-           * `load(option?: string | string[]): Excel.ChartSeries` - Where option is a comma-delimited string or an array of strings that specify the properties to load.
-           *
-           * `load(option?: { select?: string; expand?: string; }): Excel.ChartSeries` - Where option.select is a comma-delimited string that specifies the properties to load, and options.expand is a comma-delimited string that specifies the navigation properties to load.
-           *
-           * `load(option?: { select?: string; expand?: string; top?: number; skip?: number }): Excel.ChartSeries` - Only available on collection types. It is similar to the preceding signature. Option.top specifies the maximum number of collection items that can be included in the result. Option.skip specifies the number of items that are to be skipped and not included in the result. If option.top is specified, the result set will start after skipping the specified number of items.
-           *
-           * @param options Provides options for which properties of the object to load.
-           */
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.ChartSeriesLoadOptions): ChartSeries = js.native
   /** Sets multiple properties on the object at the same time, based on an existing loaded object. */
   def set(properties: ChartSeries): scala.Unit = js.native
   /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-           *
-           * @remarks
-           *
-           * This method has the following additional signature:
-           *
-           * `set(properties: Excel.ChartSeries): void`
-           *
-           * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-           * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
-           */
+    *
+    * @remarks
+    *
+    * This method has the following additional signature:
+    *
+    * `set(properties: Excel.ChartSeries): void`
+    *
+    * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
+    * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
+    */
   def set(properties: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.ChartSeriesUpdateData): scala.Unit = js.native
-  /** Sets multiple properties of an object at the same time. You can pass either a plain object with the appropriate properties, or another API object of the same type.
-           *
-           * @remarks
-           *
-           * This method has the following additional signature:
-           *
-           * `set(properties: Excel.ChartSeries): void`
-           *
-           * @param properties A JavaScript object with properties that are structured isomorphically to the properties of the object on which the method is called.
-           * @param options Provides an option to suppress errors if the properties object tries to set any read-only properties.
-           */
   def set(
     properties: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.ChartSeriesUpdateData,
     options: officeDashJsDashPreviewLib.OfficeExtensionNs.UpdateOptions
   ): scala.Unit = js.native
   /**
-           *
-           * Set bubble sizes for a chart series. Only works for bubble charts.
-           *
-           * [Api set: ExcelApi 1.7]
-           *
-           * @param sourceData The Range object corresponding to the source data.
-           */
+    *
+    * Set bubble sizes for a chart series. Only works for bubble charts.
+    *
+    * [Api set: ExcelApi 1.7]
+    *
+    * @param sourceData The Range object corresponding to the source data.
+    */
   def setBubbleSizes(sourceData: Range): scala.Unit = js.native
   /**
-           *
-           * Set values for a chart series. For scatter chart, it means Y axis values.
-           *
-           * [Api set: ExcelApi 1.7]
-           *
-           * @param sourceData The Range object corresponding to the source data.
-           */
+    *
+    * Set values for a chart series. For scatter chart, it means Y axis values.
+    *
+    * [Api set: ExcelApi 1.7]
+    *
+    * @param sourceData The Range object corresponding to the source data.
+    */
   def setValues(sourceData: Range): scala.Unit = js.native
   /**
-           *
-           * Set values of X axis for a chart series. Only works for scatter charts.
-           *
-           * [Api set: ExcelApi 1.7]
-           *
-           * @param sourceData The Range object corresponding to the source data.
-           */
+    *
+    * Set values of X axis for a chart series. Only works for scatter charts.
+    *
+    * [Api set: ExcelApi 1.7]
+    *
+    * @param sourceData The Range object corresponding to the source data.
+    */
   def setXAxisValues(sourceData: Range): scala.Unit = js.native
   /**
-          * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
-          * Whereas the original Excel.ChartSeries object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesData`) that contains shallow copies of any loaded child properties from the original object.
-          */
+    * Overrides the JavaScript `toJSON()` method in order to provide more useful output when an API object is passed to `JSON.stringify()`. (`JSON.stringify`, in turn, calls the `toJSON` method of the object that is passed to it.)
+    * Whereas the original Excel.ChartSeries object is an API object, the `toJSON` method returns a plain JavaScript object (typed as `Excel.Interfaces.ChartSeriesData`) that contains shallow copies of any loaded child properties from the original object.
+    */
   def toJSON(): officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.ChartSeriesData = js.native
 }
 

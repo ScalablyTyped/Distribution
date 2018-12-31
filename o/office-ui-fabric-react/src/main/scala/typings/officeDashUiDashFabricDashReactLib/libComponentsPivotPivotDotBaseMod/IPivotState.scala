@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPivotState extends js.Object {
   var links: js.Array[
     officeDashUiDashFabricDashReactLib.libComponentsPivotPivotItemDotTypesMod.IPivotItemProps

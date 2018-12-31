@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAcceleratorKeyEventArgs extends ICoreWindowEventArgs {
   var eventType: CoreAcceleratorKeyEventType
   var keyStatus: CorePhysicalKeyStatus

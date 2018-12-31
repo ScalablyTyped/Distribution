@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DropdownMenuColumnProps
   extends reactDashMdLib.libMenusDropdownMenuMod.DropdownMenuProps {
   var menuClassName: js.UndefOr[java.lang.String] = js.undefined

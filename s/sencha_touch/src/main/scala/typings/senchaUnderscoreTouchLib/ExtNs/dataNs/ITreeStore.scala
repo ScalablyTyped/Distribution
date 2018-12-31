@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITreeStore extends INodeStore {
   /** [Config Option] (Boolean) */
   var clearOnLoad: js.UndefOr[scala.Boolean] = js.undefined

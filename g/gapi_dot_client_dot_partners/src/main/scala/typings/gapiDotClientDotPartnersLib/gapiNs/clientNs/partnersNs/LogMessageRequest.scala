@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LogMessageRequest extends js.Object {
   /** Map of client info, such as URL, browser navigator, browser platform, etc. */
   var clientInfo: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined

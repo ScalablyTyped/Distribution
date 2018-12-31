@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataSource extends js.Object {
   var changedEvent: Event
   var clock: DataSourceClock

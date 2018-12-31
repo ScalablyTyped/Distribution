@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PopupOptions extends DivOverlayOptions {
   var autoClose: js.UndefOr[scala.Boolean] = js.undefined
   var autoPan: js.UndefOr[scala.Boolean] = js.undefined

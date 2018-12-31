@@ -19,49 +19,36 @@ import scala.scalajs.js.annotation._
 *       $.totalStorage('people');
 *
 */
-
 @js.native
 trait JQueryTotalStorage extends js.Object {
   /**
-      * @desc Set or get a key's value
-      * @param key Key to set.
-      * @param value Value to set for key. If ommited, current value for key is returned.
+    * @desc Set or get a key's value
+    * @param key Key to set.
+    * @param value Value to set for key. If ommited, current value for key is returned.
   	* @param options Not implemented.
-      */
+    */
   def apply(key: java.lang.String): js.Any = js.native
-  /**
-      * @desc Set or get a key's value
-      * @param key Key to set.
-      * @param value Value to set for key. If ommited, current value for key is returned.
-  	* @param options Not implemented.
-      */
   def apply(key: java.lang.String, value: js.Any): js.Any = js.native
-  /**
-      * @desc Set or get a key's value
-      * @param key Key to set.
-      * @param value Value to set for key. If ommited, current value for key is returned.
-  	* @param options Not implemented.
-      */
   def apply(key: java.lang.String, value: js.Any, options: JQueryTotalStorageOptions): js.Any = js.native
   /**
-      * @desc Delete item by key
-      * @param key Key of item to delete
-      */
+    * @desc Delete item by key
+    * @param key Key of item to delete
+    */
   def deleteItem(key: java.lang.String): scala.Boolean = js.native
   /**
-      * @desc Get all set values
-      */
+    * @desc Get all set values
+    */
   def getAll(): js.Array[_] = js.native
   /**
-      * @desc Get a key's value
-      * @param key Key to get.
-      */
+    * @desc Get a key's value
+    * @param key Key to get.
+    */
   def getItem(key: java.lang.String): js.Any = js.native
   /**
-      * @desc Set a key's value
-      * @param key Key to set.
-      * @param value Value to set for key.
-      */
+    * @desc Set a key's value
+    * @param key Key to set.
+    * @param value Value to set for key.
+    */
   def setItem(key: java.lang.String, value: js.Any): js.Any = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommonOptions
   extends sipDotJsLib.sipDotJsMod.ExtraHeadersOptions {
   var body: js.UndefOr[java.lang.String] = js.undefined

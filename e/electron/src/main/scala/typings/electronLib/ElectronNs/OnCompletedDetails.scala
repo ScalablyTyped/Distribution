@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnCompletedDetails extends js.Object {
   var fromCache: scala.Boolean
   var id: scala.Double

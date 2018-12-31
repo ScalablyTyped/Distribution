@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Props extends js.Object {
   var defaultFormats: js.UndefOr[js.Any] = js.undefined
   var defaultLocale: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FullSyncBefore extends js.Object {
   var currentTime: scala.Double
   var fullSyncBefore: scala.Double

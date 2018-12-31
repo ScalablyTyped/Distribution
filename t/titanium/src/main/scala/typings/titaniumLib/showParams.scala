@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Dictionary of options for the <Titanium.UI.OptionDialog.show> method.
- */
-
+  * Dictionary of options for the <Titanium.UI.OptionDialog.show> method.
+  */
 trait showParams extends js.Object {
   /**
   	 * Determines whether to animate the dialog as it is shown.

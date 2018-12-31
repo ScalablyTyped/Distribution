@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MaskedTextBoxOptions extends js.Object {
   var change: js.UndefOr[js.Function1[/* e */ MaskedTextBoxChangeEvent, scala.Unit]] = js.undefined
   var clearPromptChar: js.UndefOr[scala.Boolean] = js.undefined

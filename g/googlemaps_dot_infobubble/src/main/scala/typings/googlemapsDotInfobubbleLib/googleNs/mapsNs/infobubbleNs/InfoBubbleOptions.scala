@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InfoBubbleOptions extends js.Object {
   /**
-            * Percentage from the bottom left corner of the infobubble
-            */
+    * Percentage from the bottom left corner of the infobubble
+    */
   var arrowPosition: js.UndefOr[scala.Double] = js.undefined
   var arrowSize: js.UndefOr[scala.Double] = js.undefined
   /**
-            * 0: Middle, 1: Left, 2: Right
-            */
+    * 0: Middle, 1: Left, 2: Right
+    */
   var arrowStyle: js.UndefOr[scala.Double] = js.undefined
   var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
   var borderColor: js.UndefOr[java.lang.String] = js.undefined
@@ -28,8 +27,8 @@ trait InfoBubbleOptions extends js.Object {
   var minWidth: js.UndefOr[scala.Double] = js.undefined
   var padding: js.UndefOr[scala.Double] = js.undefined
   /**
-            * 0: None, 1: Right, 2: Under
-            */
+    * 0: None, 1: Right, 2: Under
+    */
   var shadowStyle: js.UndefOr[scala.Double] = js.undefined
 }
 

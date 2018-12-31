@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDDProxy extends IDD {
   /** [Property] (Boolean) */
   var centerFrame: js.UndefOr[scala.Boolean] = js.undefined

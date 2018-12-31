@@ -16,29 +16,29 @@ class ReaderTaskEither[E, L, A] protected () extends js.Object {
   def alt(fy: ReaderTaskEither[E, L, A]): ReaderTaskEither[E, L, A] = js.native
   def ap[B](fab: ReaderTaskEither[E, L, js.Function1[/* a */ A, B]]): ReaderTaskEither[E, L, B] = js.native
   /**
-       * Flipped version of {@link ap}
-       */
+    * Flipped version of {@link ap}
+    */
   def `ap_`[B, C](`this`: ReaderTaskEither[E, L, js.Function1[/* b */ B, C]], fb: ReaderTaskEither[E, L, B]): ReaderTaskEither[E, L, C] = js.native
   /**
-       * Combine two effectful actions, keeping only the result of the first
-       */
+    * Combine two effectful actions, keeping only the result of the first
+    */
   def applyFirst[B](fb: ReaderTaskEither[E, L, B]): ReaderTaskEither[E, L, A] = js.native
   /**
-       * Combine two effectful actions, keeping only the result of the second
-       */
+    * Combine two effectful actions, keeping only the result of the second
+    */
   def applySecond[B](fb: ReaderTaskEither[E, L, B]): ReaderTaskEither[E, L, B] = js.native
   def bimap[V, B](f: js.Function1[/* l */ L, V], g: js.Function1[/* a */ A, B]): ReaderTaskEither[E, V, B] = js.native
   def chain[B](f: js.Function1[/* a */ A, ReaderTaskEither[E, L, B]]): ReaderTaskEither[E, L, B] = js.native
   def fold[R](left: js.Function1[/* l */ L, R], right: js.Function1[/* a */ A, R]): fpDashTsLib.libReaderMod.Reader[E, fpDashTsLib.libTaskMod.Task[R]] = js.native
   /**
-       * @since 1.6.1
-       */
+    * @since 1.6.1
+    */
   def local[E2](f: js.Function1[/* e */ E2, E]): ReaderTaskEither[E2, L, A] = js.native
   def map[B](f: js.Function1[/* a */ A, B]): ReaderTaskEither[E, L, B] = js.native
   def mapLeft[M](f: js.Function1[/* l */ L, M]): ReaderTaskEither[E, M, A] = js.native
   /**
-       * Transforms the failure value of the `ReaderTaskEither` into a new `ReaderTaskEither`
-       */
+    * Transforms the failure value of the `ReaderTaskEither` into a new `ReaderTaskEither`
+    */
   def orElse[M](f: js.Function1[/* l */ L, ReaderTaskEither[E, M, A]]): ReaderTaskEither[E, M, A] = js.native
   /** Runs the inner `TaskEither` */
   def run(e: E): js.Promise[fpDashTsLib.libEitherMod.Either[L, A]] = js.native

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * initCloudOptions 的 env 参数，可以指定各个服务的默认环境
 	 */
-
 trait InitCloudEnvOptions extends js.Object {
   /**
   		 * 数据库 API 默认环境配置

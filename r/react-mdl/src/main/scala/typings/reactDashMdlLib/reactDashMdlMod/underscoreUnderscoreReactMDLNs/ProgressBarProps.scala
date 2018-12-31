@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProgressBarProps
   extends reactLib.reactMod.ReactNs.HTMLProps[js.Any] {
   var buffer: js.UndefOr[scala.Double] = js.undefined

@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 class JsGridControl protected () extends js.Object {
   def this(parentNode: stdLib.HTMLElement, bShowLoadingBanner: scala.Boolean) = this()
   /** Adds one of builtin row state indicator icons into the row header.
-                  Please pass one of the values of SP.JsGrid.RowHeaderStyleId
-                  Row header is the leftmost gray column of the table. */
+    Please pass one of the values of SP.JsGrid.RowHeaderStyleId
+    Row header is the leftmost gray column of the table. */
   def AddBuiltInRowHeaderState(recordKey: scala.Double, rowHeaderStateId: java.lang.String): scala.Unit = js.native
   /** Adds a column, based on the specified grid field */
   def AddColumn(columnInfo: ColumnInfo, gridField: GridField): scala.Unit = js.native
   /** Adds the specified state into the row header.
-                  There can be several row header states for one row. Only one is shown (according to the Priority).
-                  Row header is the leftmost gray column of the table. */
+    There can be several row header states for one row. Only one is shown (according to the Priority).
+    Row header is the leftmost gray column of the table. */
   def AddRowHeaderState(recordKey: scala.Double, rowHeaderState: RowHeaderState): scala.Unit = js.native
   /** Returns true, if there are any errors in the JsGrid */
   def AnyErrors(): scala.Boolean = js.native
@@ -45,26 +45,23 @@ class JsGridControl protected () extends js.Object {
   def ClearRowError(recordKey: scala.Double, id: scala.Double): scala.Unit = js.native
   def ClearTableView(): scala.Unit = js.native
   /** Removes all new record rows (aka entry rows), including unsaved and even empty ones.
-                  The latter seems to be a bug, as I haven't found any easy way to restore the empty entry row. */
+    The latter seems to be a bug, as I haven't found any easy way to restore the empty entry row. */
   def ClearUncommitedEntryRecords(): scala.Unit = js.native
   /** Copy data from currently selected cells into the clipboard. */
   def CopyToClipboard(): scala.Unit = js.native
   def CreateAndSynchronizeToNewChangeKey(): js.Any = js.native
   def CreateDataUpdateCmd(bUseCustomInitialUpdate: scala.Boolean): js.Any = js.native
   /** Cut data from currently selected cells into the clipboard.
-                  Will not work if current selection contains entry row or readonly cells. */
+    Will not work if current selection contains entry row or readonly cells. */
   def CutToClipboard(): scala.Unit = js.native
   def DeleteRecords(recordKeys: js.Any): js.Any = js.native
   def DeleteRecords(recordKeys: js.Any, optChangeKey: js.Any): js.Any = js.native
   /** Detach a previously set event handler */
   def DetachEvent(eventType: EventType, fnOnEvent: js.Any): scala.Unit = js.native
   /** Covers the grid with the semi-transparent panel, preventing any operations with it.
-                  Additionally, displays loading animated gif and optMsg as the message next to it.
-                  If optMsg is not specified, displays "Loading..." text. */
+    Additionally, displays loading animated gif and optMsg as the message next to it.
+    If optMsg is not specified, displays "Loading..." text. */
   def Disable(): scala.Unit = js.native
-  /** Covers the grid with the semi-transparent panel, preventing any operations with it.
-                  Additionally, displays loading animated gif and optMsg as the message next to it.
-                  If optMsg is not specified, displays "Loading..." text. */
   def Disable(optMsg: java.lang.String): scala.Unit = js.native
   /** Disables grid editing: all the records become readonly */
   def DisableEditing(): scala.Unit = js.native
@@ -81,16 +78,14 @@ class JsGridControl protected () extends js.Object {
   def GetAllDataJson(fnOnFinished: js.Any): scala.Unit = js.native
   def GetAllDataJson(fnOnFinished: js.Any, optFnGetCellStyleID: js.Any): scala.Unit = js.native
   /** Get error message for the specified cell.
-                  If many errors are set on the cell, only first is returned.
-                  If there are no errors in the cell, returns null. */
+    If many errors are set on the cell, only first is returned.
+    If there are no errors in the cell, returns null. */
   def GetCellErrorMessage(recordKey: scala.Double, fieldKey: java.lang.String): java.lang.String = js.native
   def GetChangeKeyForVersion(version: js.Any): js.Any = js.native
   def GetCheckSelectionManager(): js.Any = js.native
   /** Get ColumnInfo object by fieldKey
-                  @fieldKey when working with SharePoint data sources, fieldKey corresponds to field internal name */
+    @fieldKey when working with SharePoint data sources, fieldKey corresponds to field internal name */
   def GetColumnByFieldKey(fieldKey: java.lang.String): ColumnInfo = js.native
-  /** Get ColumnInfo object by fieldKey
-                  @fieldKey when working with SharePoint data sources, fieldKey corresponds to field internal name */
   def GetColumnByFieldKey(fieldKey: java.lang.String, optPaneId: js.Any): ColumnInfo = js.native
   def GetColumns(): js.Array[ColumnInfo] = js.native
   def GetColumns(optPaneId: java.lang.String): js.Array[ColumnInfo] = js.native
@@ -101,7 +96,7 @@ class JsGridControl protected () extends js.Object {
   /** Get diff tracker object that tracks changes to the grid data. */
   def GetDiffTracker(): sharepointLib.SPNs.JsGridNs.InternalNs.DiffTracker = js.native
   /** Get entry record with the specified key.
-                  Entry record is a special type of record because it represents a new record that doesn't exist yet. */
+    Entry record is a special type of record because it represents a new record that doesn't exist yet. */
   def GetEntryRecord(key: js.Any): js.Any = js.native
   def GetFocusedItem(): js.Any = js.native
   def GetGanttZoomLevel(): js.Any = js.native
@@ -113,21 +108,21 @@ class JsGridControl protected () extends js.Object {
   def GetNodeExpandCollapseState(recordKey: scala.Double): js.Any = js.native
   def GetOutlineLevel(record: js.Any): js.Any = js.native
   /** Gets record based on the recordKey
-                  @recordKey internal unique id of a row. You can get recordKey from view index via GetRecordKeyByViewIndex method. */
+    @recordKey internal unique id of a row. You can get recordKey from view index via GetRecordKeyByViewIndex method. */
   def GetRecord(recordKey: scala.Double): IRecord = js.native
   /** Returns index of the system RecordIndicatorCheckBoxColumn. If not present in the view, returns null. */
   def GetRecordIndicatorCheckBoxColumnIndex(): scala.Double = js.native
   /** Get record key for a row that is specified by the viewIdx.
-                  viewIdx - index of the row in the view, use GetTopRecordIndex to get the first one.
-                  Returns recordKey, which is a unique numeric identifier of a row within a dataset.
-                  Main difference between viewIdx and recordKey is that viewIdx is only unique within a view,
-                  e.g. if you do paging, it can be same for different records.
-               */
+    viewIdx - index of the row in the view, use GetTopRecordIndex to get the first one.
+    Returns recordKey, which is a unique numeric identifier of a row within a dataset.
+    Main difference between viewIdx and recordKey is that viewIdx is only unique within a view,
+    e.g. if you do paging, it can be same for different records.
+    */
   def GetRecordKeyByViewIndex(viewIdx: scala.Double): scala.Double = js.native
   def GetReorderRange(recordKeys: js.Any): js.Any = js.native
   /** Get error message for the specified row.
-                  If many errors are set on the row, only first is returned.
-                  If there are no errors in the row, returns null. */
+    If many errors are set on the row, only first is returned.
+    If there are no errors in the row, returns null. */
   def GetRowErrorMessage(recordKey: scala.Double): java.lang.String = js.native
   def GetSelectedColumnRanges(): js.Any = js.native
   def GetSelectedColumnRanges(optPaneId: js.Any): js.Any = js.native
@@ -139,17 +134,17 @@ class JsGridControl protected () extends js.Object {
   def GetSpCsrRenderCtx(): js.Any = js.native
   def GetSplitterPosition(): js.Any = js.native
   /** Get top record view index.
-                  You can then use GetRecordKeyByViewIndex to convert this value into the recordKey. */
+    You can then use GetRecordKeyByViewIndex to convert this value into the recordKey. */
   def GetTopRecordIndex(): scala.Double = js.native
   /** Get top row index. Usually returns 0.
-                  You can then use GetRecordKeyByViewIndex to convert this value into the recordKey. */
+    You can then use GetRecordKeyByViewIndex to convert this value into the recordKey. */
   def GetTopRowIndex(): scala.Double = js.native
   /** Get undo manager for performing undo/redo operations programmatically. */
   def GetUndoManager(): CommandManager = js.native
   def GetUnfilteredHierarchyMap(): js.Any = js.native
   /** Opposite to GetRecordKeyByViewIndex, resolves the view index of the record based on record key.
-                  recordKey - unique numeric identifier of a row in the current dataset.
-                  Returns viewIdx - index of the row in the current view */
+    recordKey - unique numeric identifier of a row in the current dataset.
+    Returns viewIdx - index of the row in the current view */
   def GetViewIndexOfRecord(recordKey: scala.Double): scala.Double = js.native
   /** Get number of rows displayed in the current view. */
   def GetViewRecordCount(): scala.Double = js.native
@@ -172,7 +167,6 @@ class JsGridControl protected () extends js.Object {
   def InsertRecordBefore(beforeRecordKey: scala.Double, newRecord: js.Any, optChangeKey: js.Any): js.Any = js.native
   /** Determine whether the specified cell is editable. */
   def IsCellEditable(record: IRecord, fieldKey: java.lang.String): scala.Boolean = js.native
-  /** Determine whether the specified cell is editable. */
   def IsCellEditable(record: IRecord, fieldKey: java.lang.String, optPaneId: js.Any): scala.Boolean = js.native
   def IsChangeKeyApplied(changeKey: js.Any): js.Any = js.native
   /** Determine if the specified record key identifies valid entry row. */
@@ -257,8 +251,8 @@ class JsGridControl protected () extends js.Object {
   /** Paste data from clipboard into currently selected cells. */
   def PasteFromClipboard(): scala.Unit = js.native
   /** Re-render all rows in the view.
-                  It can be used e.g. if you have some custom display controls and they are rendered differently depending on some external settings.
-                  In this case, if you update the external settings, obviously you have to then update the view for these settings to take effect. */
+    It can be used e.g. if you have some custom display controls and they are rendered differently depending on some external settings.
+    In this case, if you update the external settings, obviously you have to then update the view for these settings to take effect. */
   def RefreshAllRows(): scala.Unit = js.native
   /** Re-render the specified row in the view. */
   def RefreshRow(recordKey: scala.Double): scala.Unit = js.native
@@ -276,25 +270,13 @@ class JsGridControl protected () extends js.Object {
   def ResetData(cache: TableCache): scala.Unit = js.native
   def ScrollGanttToDate(date: js.Any): scala.Unit = js.native
   /** This method is used mostly when you have a rather tall JSGrid and you want to ensure that user sees
-                  that some error has occured.
-                  You can specify the minId or/and filter function.
-                  If minId is specified, method searches for an error with first id which is greater than minId.
-                  Scrolls to the Returns the id of the found record.
-                  If there aren't any errors, that satisfy the conditions, method does nothing and returns null. */
+    that some error has occured.
+    You can specify the minId or/and filter function.
+    If minId is specified, method searches for an error with first id which is greater than minId.
+    Scrolls to the Returns the id of the found record.
+    If there aren't any errors, that satisfy the conditions, method does nothing and returns null. */
   def ScrollToAndExpandNextError(): js.Any = js.native
-  /** This method is used mostly when you have a rather tall JSGrid and you want to ensure that user sees
-                  that some error has occured.
-                  You can specify the minId or/and filter function.
-                  If minId is specified, method searches for an error with first id which is greater than minId.
-                  Scrolls to the Returns the id of the found record.
-                  If there aren't any errors, that satisfy the conditions, method does nothing and returns null. */
   def ScrollToAndExpandNextError(minId: scala.Double): js.Any = js.native
-  /** This method is used mostly when you have a rather tall JSGrid and you want to ensure that user sees
-                  that some error has occured.
-                  You can specify the minId or/and filter function.
-                  If minId is specified, method searches for an error with first id which is greater than minId.
-                  Scrolls to the Returns the id of the found record.
-                  If there aren't any errors, that satisfy the conditions, method does nothing and returns null. */
   def ScrollToAndExpandNextError(
     minId: scala.Double,
     fnFilter: js.Function3[
@@ -305,20 +287,11 @@ class JsGridControl protected () extends js.Object {
     ]
   ): js.Any = js.native
   /** Same as ScrollToAndExpandNextError, but searches within the specified record.
-                  recordKey should be not null, otherwise you'll get an exception.
-                  bDontExpand controls whether the error tooltip will be shown (if bDontExpand=true, tooltip will not be shown). */
+    recordKey should be not null, otherwise you'll get an exception.
+    bDontExpand controls whether the error tooltip will be shown (if bDontExpand=true, tooltip will not be shown). */
   def ScrollToAndExpandNextErrorOnRecord(): js.Any = js.native
-  /** Same as ScrollToAndExpandNextError, but searches within the specified record.
-                  recordKey should be not null, otherwise you'll get an exception.
-                  bDontExpand controls whether the error tooltip will be shown (if bDontExpand=true, tooltip will not be shown). */
   def ScrollToAndExpandNextErrorOnRecord(minId: scala.Double): js.Any = js.native
-  /** Same as ScrollToAndExpandNextError, but searches within the specified record.
-                  recordKey should be not null, otherwise you'll get an exception.
-                  bDontExpand controls whether the error tooltip will be shown (if bDontExpand=true, tooltip will not be shown). */
   def ScrollToAndExpandNextErrorOnRecord(minId: scala.Double, recordKey: scala.Double): js.Any = js.native
-  /** Same as ScrollToAndExpandNextError, but searches within the specified record.
-                  recordKey should be not null, otherwise you'll get an exception.
-                  bDontExpand controls whether the error tooltip will be shown (if bDontExpand=true, tooltip will not be shown). */
   def ScrollToAndExpandNextErrorOnRecord(
     minId: scala.Double,
     recordKey: scala.Double,
@@ -329,9 +302,6 @@ class JsGridControl protected () extends js.Object {
       scala.Boolean
     ]
   ): js.Any = js.native
-  /** Same as ScrollToAndExpandNextError, but searches within the specified record.
-                  recordKey should be not null, otherwise you'll get an exception.
-                  bDontExpand controls whether the error tooltip will be shown (if bDontExpand=true, tooltip will not be shown). */
   def ScrollToAndExpandNextErrorOnRecord(
     minId: scala.Double,
     recordKey: scala.Double,
@@ -383,24 +353,22 @@ class JsGridControl protected () extends js.Object {
   def SelectRowRangeByKey(rowKey1: js.Any, rowKey2: js.Any, bAppend: scala.Boolean, optPaneId: java.lang.String): scala.Unit = js.native
   def SendKeyDownEvent(eventInfo: microsoftDashAjaxLib.SysNs.UINs.DomEvent): js.Any = js.native
   /** Set error for the specified by recordKey and fieldKey cell.
-                  Returns id of the error, so that later you can clear the error using this id. */
+    Returns id of the error, so that later you can clear the error using this id. */
   def SetCellError(recordKey: scala.Double, fieldKey: java.lang.String, errorMessage: java.lang.String): scala.Double = js.native
   /** Set a delegate. Delegates are way to replace default functionality with custom one. */
   def SetDelegate(delegateKey: DelegateType, fn: js.Any): scala.Unit = js.native
   def SetGanttZoomLevel(level: js.Any): scala.Unit = js.native
   /** Set error for the specified by recordKey row.
-                  In the leftmost column of this row, exclamation mark error indicator will appear.
-                  Clicking on this indicator will cause the specified error message appear in form of a reddish tooltip.
-                  Returns id of the error, so that later you can clear the error using this id. */
+    In the leftmost column of this row, exclamation mark error indicator will appear.
+    Clicking on this indicator will cause the specified error message appear in form of a reddish tooltip.
+    Returns id of the error, so that later you can clear the error using this id. */
   def SetRowError(recordKey: scala.Double, errorMessage: java.lang.String): scala.Double = js.native
   def SetRowView(rowViewParam: js.Any): scala.Unit = js.native
   def SetSplitterPosition(pos: js.Any): scala.Unit = js.native
   def SetTableView(tableViewParams: js.Any): scala.Unit = js.native
   /** Show a previously hidden column at a specified position.
-                  If atIdx is not defined, column will be shown at it's previous position. */
+    If atIdx is not defined, column will be shown at it's previous position. */
   def ShowColumn(columnKey: java.lang.String): scala.Unit = js.native
-  /** Show a previously hidden column at a specified position.
-                  If atIdx is not defined, column will be shown at it's previous position. */
   def ShowColumn(columnKey: java.lang.String, atIdx: scala.Double): scala.Unit = js.native
   /** Shows a dialog where user can reorder columns and change their widths. */
   def ShowColumnConfigurationDialog(): scala.Unit = js.native
@@ -408,7 +376,7 @@ class JsGridControl protected () extends js.Object {
   def ShowInitialGridErrorMsg(errorMsg: java.lang.String): scala.Unit = js.native
   def ToggleExpandCollapse(recordKey: scala.Double): scala.Unit = js.native
   /** Switches the currently selected cell into edit mode: displays edit control and sets focus into it.
-                  Returns true if success. */
+    Returns true if success. */
   def TryBeginEdit(): scala.Boolean = js.native
   /** Try saving the new record row (aka entry row) if it was edited. */
   def TryCommitFirstEntryRecords(fnCommitComplete: js.Function0[scala.Unit]): scala.Unit = js.native

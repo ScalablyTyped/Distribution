@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * Represetns a mark that is used in exceptions to define the error's location
-             */
+  * Represetns a mark that is used in exceptions to define the error's location
+  */
 @JSGlobal("adone.data.yaml.Mark")
 @js.native
 class Mark protected () extends js.Object {

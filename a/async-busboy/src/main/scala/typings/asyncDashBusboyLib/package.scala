@@ -5,5 +5,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object asyncDashBusboyLib {
-  type AsyncBusboy = js.Function2[/* req */ js.Any, /* options */ js.UndefOr[js.Any], js.Promise[Anon_Fields]]
+  type AsyncBusboy = js.Function2[
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify http.IncomingMessage */ /* req */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Options */ /* options */ js.UndefOr[
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Options */ js.Any
+    ], 
+    js.Promise[Anon_Fields]
+  ]
 }

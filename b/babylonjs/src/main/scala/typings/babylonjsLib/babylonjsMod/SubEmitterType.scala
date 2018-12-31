@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Type of sub emitter
-     */
+  * Type of sub emitter
+  */
 @JSImport("babylonjs", "SubEmitterType")
 @js.native
 object SubEmitterType extends js.Object {

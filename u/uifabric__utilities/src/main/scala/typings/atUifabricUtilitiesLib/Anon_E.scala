@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_E extends js.Object {
   var a: atUifabricUtilitiesLib.atUifabricUtilitiesLibNumbers.`65`
   var add: atUifabricUtilitiesLib.atUifabricUtilitiesLibNumbers.`107`

@@ -19,17 +19,12 @@ abstract class RouteReuseStrategy () extends js.Object {
     future: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot,
     curr: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot
   ): scala.Boolean = js.native
-  /**
-       * Stores the detached route.
-       *
-       * Storing a `null` value should erase the previously stored value.
-       */
   def store(route: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot): scala.Unit = js.native
   /**
-       * Stores the detached route.
-       *
-       * Storing a `null` value should erase the previously stored value.
-       */
+    * Stores the detached route.
+    *
+    * Storing a `null` value should erase the previously stored value.
+    */
   def store(
     route: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot,
     handle: DetachedRouteHandle

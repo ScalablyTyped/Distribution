@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RouteRecord extends js.Object {
   var beforeEnter: js.UndefOr[
     js.Function3[

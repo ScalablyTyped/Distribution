@@ -9,62 +9,62 @@ import scala.scalajs.js.annotation._
 @js.native
 class Buy () extends Resource {
   /**
-       * Amount in bitcoin, litecoin or ethereum
-       */
+    * Amount in bitcoin, litecoin or ethereum
+    */
   var amount: MoneyHash = js.native
   /**
-       * Has this buy been committed?
-       */
+    * Has this buy been committed?
+    */
   var committed: scala.Boolean = js.native
   /**
-       * Fee associated to this buy
-       */
+    * Fee associated to this buy
+    */
   var fee: MoneyHash = js.native
   /**
-       * Was this buy executed instantly?
-       */
+    * Was this buy executed instantly?
+    */
   var instant: scala.Boolean = js.native
   /**
-       * Associated payment method (e.g. a bank, fiat account)
-       */
+    * Associated payment method (e.g. a bank, fiat account)
+    */
   var payment_method: ResourceRef = js.native
   /**
-       * When a buy isn’t executed instantly, it will receive a payout date for the time it will be executed. ISO timestamp
-       */
+    * When a buy isn’t executed instantly, it will receive a payout date for the time it will be executed. ISO timestamp
+    */
   var payout_at: js.UndefOr[java.lang.String] = js.native
   /**
-       * Resource type
-       */
+    * Resource type
+    */
   /* CompleteClass */
   override var resource: ResourceType = js.native
   /**
-       * Constant "buy"
-       */
+    * Constant "buy"
+    */
   @JSName("resource")
   var resource_Buy: coinbaseLib.coinbaseLibStrings.buy = js.native
   /**
-       * Status
-       */
+    * Status
+    */
   var status: BuyStatus = js.native
   /**
-       * Fiat amount without fees
-       */
+    * Fiat amount without fees
+    */
   var subtotal: MoneyHash = js.native
   /**
-       * Fiat amount with fees
-       */
+    * Fiat amount with fees
+    */
   var total: MoneyHash = js.native
   /**
-       * Associated transaction (e.g. a bank, fiat account)
-       */
+    * Associated transaction (e.g. a bank, fiat account)
+    */
   var transaction: ResourceRef = js.native
   /**
-       * Completes a buy that is created in commit: false state.
-       * If the exchange rate has changed since the buy was created, this call will fail with the error “The exchange rate updated while you
-       * were waiting. The new total is shown below”. The buy’s total will also be updated. You can repeat the `commit` call to accept the new
-       * values and start the buy at the new rates.
-       * Scope: wallet:buys:create
-       */
+    * Completes a buy that is created in commit: false state.
+    * If the exchange rate has changed since the buy was created, this call will fail with the error “The exchange rate updated while you
+    * were waiting. The new total is shown below”. The buy’s total will also be updated. You can repeat the `commit` call to accept the new
+    * values and start the buy at the new rates.
+    * Scope: wallet:buys:create
+    */
   def commit(cb: js.Function2[/* error */ stdLib.Error, /* transaction */ this.type, scala.Unit]): scala.Unit = js.native
 }
 

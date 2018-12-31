@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InfoWindowOptions extends js.Object {
   var anchorColor: js.UndefOr[java.lang.String] = js.undefined
   var anchorSize: js.UndefOr[Size | SizeLiteral] = js.undefined

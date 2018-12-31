@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Parent extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -29,9 +28,9 @@ trait Anon_Parent extends js.Object {
   /** The `next_page_token` value returned from a previous List request, if any. */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The name of the resource to list all attached Liens.
-                   * For example, `projects/1234`.
-                   */
+    * The name of the resource to list all attached Liens.
+    * For example, `projects/1234`.
+    */
   var parent: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

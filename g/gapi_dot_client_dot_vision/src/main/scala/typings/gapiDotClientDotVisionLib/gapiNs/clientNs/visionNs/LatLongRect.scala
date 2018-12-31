@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LatLongRect extends js.Object {
   /** Max lat/long pair. */
   var maxLatLng: js.UndefOr[LatLng] = js.undefined

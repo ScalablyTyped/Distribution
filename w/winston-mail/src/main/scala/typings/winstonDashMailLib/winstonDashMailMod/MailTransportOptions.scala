@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MailTransportOptions extends js.Object {
   var authentication: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var filter: js.UndefOr[js.Function1[/* obj */ winstonDashMailLib.Anon_Level, scala.Boolean]] = js.undefined

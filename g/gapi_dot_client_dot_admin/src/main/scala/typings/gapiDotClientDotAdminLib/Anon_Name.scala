@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Name extends js.Object {
   /** Boolean value of the parameter. */
   var boolValue: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBatch
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Method] Adds a new operation to this batch at the end of the operations array

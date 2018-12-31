@@ -204,9 +204,9 @@ trait LanguageService extends js.Object {
   def getIndentationAtPosition(fileName: java.lang.String, position: scala.Double, options: EditorOptions): scala.Double = js.native
   def getIndentationAtPosition(fileName: java.lang.String, position: scala.Double, options: EditorSettings): scala.Double = js.native
   /**
-           * This will return a defined result if the position is after the `>` of the opening tag, or somewhere in the text, of a JSXElement with no closing tag.
-           * Editors should call this after `>` is typed.
-           */
+    * This will return a defined result if the position is after the `>` of the opening tag, or somewhere in the text, of a JSXElement with no closing tag.
+    * Editors should call this after `>` is typed.
+    */
   def getJsxClosingTagAtPosition(fileName: java.lang.String, position: scala.Double): js.UndefOr[JsxClosingTagInfo] = js.native
   def getNameOrDottedNameSpan(fileName: java.lang.String, startPos: scala.Double, endPos: scala.Double): js.UndefOr[TextSpan] = js.native
   def getNavigateToItems(searchValue: java.lang.String): js.Array[NavigateToItem] = js.native
@@ -228,8 +228,8 @@ trait LanguageService extends js.Object {
   def getReferencesAtPosition(fileName: java.lang.String, position: scala.Double): js.UndefOr[js.Array[ReferenceEntry]] = js.native
   def getRenameInfo(fileName: java.lang.String, position: scala.Double): RenameInfo = js.native
   /**
-           * @deprecated Use getEncodedSemanticClassifications instead.
-           */
+    * @deprecated Use getEncodedSemanticClassifications instead.
+    */
   def getSemanticClassifications(fileName: java.lang.String, span: TextSpan): js.Array[ClassifiedSpan] = js.native
   /** The first time this is called, it will return global diagnostics (no location). */
   def getSemanticDiagnostics(fileName: java.lang.String): js.Array[Diagnostic] = js.native
@@ -238,8 +238,8 @@ trait LanguageService extends js.Object {
   def getSpanOfEnclosingComment(fileName: java.lang.String, position: scala.Double, onlyMultiLine: scala.Boolean): js.UndefOr[TextSpan] = js.native
   def getSuggestionDiagnostics(fileName: java.lang.String): js.Array[DiagnosticWithLocation] = js.native
   /**
-           * @deprecated Use getEncodedSyntacticClassifications instead.
-           */
+    * @deprecated Use getEncodedSyntacticClassifications instead.
+    */
   def getSyntacticClassifications(fileName: java.lang.String, span: TextSpan): js.Array[ClassifiedSpan] = js.native
   def getSyntacticDiagnostics(fileName: java.lang.String): js.Array[DiagnosticWithLocation] = js.native
   def getTodoComments(fileName: java.lang.String, descriptors: js.Array[TodoCommentDescriptor]): js.Array[TodoComment] = js.native

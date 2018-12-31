@@ -6,12 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** @since Chrome 39. */
-
 trait ConfigDescriptor extends js.Object {
   /**
-               * Is this the active configuration?
-               * @since Chrome 47.
-               */
+    * Is this the active configuration?
+    * @since Chrome 47.
+    */
   var active: scala.Boolean
   /** The configuration number. */
   var configurationValue: chromeDashAppsLib.chromeNs.integer

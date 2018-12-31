@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryParams extends js.Object {
   var contexts: js.UndefOr[js.Array[Context[java.lang.String, _]]] = js.undefined
   var geoLocation: js.UndefOr[LatLong] = js.undefined

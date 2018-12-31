@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("three", "Clock")
 @js.native
+/**
+  * @param autoStart Automatically start the clock.
+  */
 class Clock ()
   extends threeLib.threeDashCoreMod.Clock {
-  /**
-       * @param autoStart Automatically start the clock.
-       */
   def this(autoStart: scala.Boolean) = this()
 }
 

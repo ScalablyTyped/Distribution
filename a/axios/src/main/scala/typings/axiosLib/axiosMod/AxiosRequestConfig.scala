@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AxiosRequestConfig extends js.Object {
   var adapter: js.UndefOr[AxiosAdapter] = js.undefined
   var auth: js.UndefOr[AxiosBasicCredentials] = js.undefined

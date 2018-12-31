@@ -5,22 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateInstanceMetadata extends js.Object {
   /**
-               * The time at which this operation was cancelled. If set, this operation is
-               * in the process of undoing itself (which is guaranteed to succeed) and
-               * cannot be cancelled again.
-               */
+    * The time at which this operation was cancelled. If set, this operation is
+    * in the process of undoing itself (which is guaranteed to succeed) and
+    * cannot be cancelled again.
+    */
   var cancelTime: js.UndefOr[java.lang.String] = js.undefined
   /** The time at which this operation failed or was completed successfully. */
   var endTime: js.UndefOr[java.lang.String] = js.undefined
   /** The desired end state of the update. */
   var instance: js.UndefOr[Instance] = js.undefined
   /**
-               * The time at which UpdateInstance
-               * request was received.
-               */
+    * The time at which UpdateInstance
+    * request was received.
+    */
   var startTime: js.UndefOr[java.lang.String] = js.undefined
 }
 

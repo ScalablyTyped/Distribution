@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CacheOptions extends js.Object {
   var defaultTtl: js.UndefOr[scala.Double] = js.undefined
   var resource: js.UndefOr[java.lang.String] = js.undefined

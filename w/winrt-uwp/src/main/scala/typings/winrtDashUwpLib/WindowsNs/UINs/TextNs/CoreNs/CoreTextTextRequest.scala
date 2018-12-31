@@ -16,9 +16,9 @@ abstract class CoreTextTextRequest () extends js.Object {
   /** Gets or sets the text that the text input server is requesting. The application should set the text being requested before returning from the event handler. */
   var text: java.lang.String = js.native
   /**
-                       * Requests that the text request operation be delayed. Call this method if your text input control is hosted on a worker thread rather than on the UI thread.
-                       * @return A Deferral object.
-                       */
+    * Requests that the text request operation be delayed. Call this method if your text input control is hosted on a worker thread rather than on the UI thread.
+    * @return A Deferral object.
+    */
   def getDeferral(): winrtDashUwpLib.WindowsNs.FoundationNs.Deferral = js.native
 }
 

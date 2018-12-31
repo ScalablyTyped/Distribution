@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Represents displayed item data.
- */
-
+  * Represents displayed item data.
+  */
 trait ListDataItem extends js.Object {
   /**
   	 * Contains key-value pairs of view properties and their values that are applied to the

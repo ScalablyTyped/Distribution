@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectionStartCap extends js.Object {
   var fill: js.UndefOr[java.lang.String | ConnectionStartCapFill] = js.undefined
   var stroke: js.UndefOr[java.lang.String | ConnectionStartCapStroke] = js.undefined

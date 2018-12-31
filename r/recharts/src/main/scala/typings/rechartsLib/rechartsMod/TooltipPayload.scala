@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TooltipPayload extends js.Object {
   var color: js.UndefOr[java.lang.String] = js.undefined
   var dataKey: js.UndefOr[DataKey] = js.undefined

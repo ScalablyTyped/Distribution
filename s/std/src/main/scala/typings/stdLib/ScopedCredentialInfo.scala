@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScopedCredentialInfo extends js.Object {
   val credential: ScopedCredential
   val publicKey: CryptoKey

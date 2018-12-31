@@ -11,8 +11,8 @@ class StringAsset protected () extends Asset {
   def this(text: java.lang.String) = this()
   def this(text: js.Promise[java.lang.String]) = this()
   /**
-       * The string contents.
-       */
+    * The string contents.
+    */
   val text: js.Promise[java.lang.String] = js.native
 }
 

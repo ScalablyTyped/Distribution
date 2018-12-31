@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 trait Noise
   extends p5Lib.p5Mod.Oscillator {
   /**
-       *   Set type of noise to 'white', 'pink' or 'brown'.
-       *   White is the default.
-       *   @param [type] 'white', 'pink' or 'brown'
-       */
+    *   Set type of noise to 'white', 'pink' or 'brown'.
+    *   White is the default.
+    *   @param [type] 'white', 'pink' or 'brown'
+    */
   def setType(): scala.Unit = js.native
 }
 

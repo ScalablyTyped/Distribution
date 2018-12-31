@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // boxes.js
-
 trait Box extends js.Object {
   var cx: scala.Double
   var cy: scala.Double

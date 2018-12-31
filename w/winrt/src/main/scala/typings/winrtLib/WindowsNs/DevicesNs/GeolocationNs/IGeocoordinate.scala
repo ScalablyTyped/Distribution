@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGeocoordinate extends js.Object {
   var accuracy: scala.Double
   var altitude: scala.Double

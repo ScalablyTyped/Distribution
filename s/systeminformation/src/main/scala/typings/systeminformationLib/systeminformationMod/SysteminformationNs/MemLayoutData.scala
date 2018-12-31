@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MemLayoutData extends js.Object {
   var bank: java.lang.String
   var clockSpeed: scala.Double

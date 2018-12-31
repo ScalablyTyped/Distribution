@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ItemsObject extends js.Object {
   var collectionFormat: js.UndefOr[java.lang.String] = js.undefined
   var default: js.UndefOr[js.Any] = js.undefined

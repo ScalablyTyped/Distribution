@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LogEntryObject extends js.Object {
   var action: js.UndefOr[java.lang.String | scala.Boolean | ActionToString] = js.undefined
   var error: js.UndefOr[js.Function1[/* error */ js.Any, _]] = js.undefined

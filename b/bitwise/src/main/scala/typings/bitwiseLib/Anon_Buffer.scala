@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Buffer extends js.Object {
   var bits: Anon_Xnor
   var buffer: Anon_Read

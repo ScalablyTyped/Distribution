@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TypeExtensionDefinition extends js.Object {
   var definition: ObjectTypeDefinition
   var kind: java.lang.String

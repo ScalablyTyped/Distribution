@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPageSizePrettyPrintBearertoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -19,12 +18,12 @@ trait Anon_AccesstokenPageSizePrettyPrintBearertoken extends js.Object {
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Include services consumed by the specified consumer.
-                   *
-                   * The Google Service Management implementation accepts the following
-                   * forms:
-                   * - project:<project_id>
-                   */
+    * Include services consumed by the specified consumer.
+    *
+    * The Google Service Management implementation accepts the following
+    * forms:
+    * - project:<project_id>
+    */
   var consumerId: js.UndefOr[java.lang.String] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
@@ -35,9 +34,9 @@ trait Anon_AccesstokenPageSizePrettyPrintBearertoken extends js.Object {
   /** Requested size of the next page of data. */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * Token identifying which result to start with; returned by a previous list
-                   * call.
-                   */
+    * Token identifying which result to start with; returned by a previous list
+    * call.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

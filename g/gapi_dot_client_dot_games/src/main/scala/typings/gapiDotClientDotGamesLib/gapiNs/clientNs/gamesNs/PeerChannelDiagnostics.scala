@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PeerChannelDiagnostics extends js.Object {
   /** Number of bytes received. */
   var bytesReceived: js.UndefOr[AggregateStats] = js.undefined

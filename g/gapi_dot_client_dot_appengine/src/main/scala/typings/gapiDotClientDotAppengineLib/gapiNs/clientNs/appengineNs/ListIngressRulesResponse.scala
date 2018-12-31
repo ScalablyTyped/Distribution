@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListIngressRulesResponse extends js.Object {
   /** The ingress FirewallRules for this application. */
   var ingressRules: js.UndefOr[js.Array[FirewallRule]] = js.undefined

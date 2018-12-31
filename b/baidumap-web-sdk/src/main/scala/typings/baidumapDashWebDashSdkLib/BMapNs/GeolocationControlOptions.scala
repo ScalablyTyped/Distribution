@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GeolocationControlOptions extends js.Object {
   var anchor: js.UndefOr[ControlAnchor] = js.undefined
   var enableAutoLocation: js.UndefOr[scala.Boolean] = js.undefined

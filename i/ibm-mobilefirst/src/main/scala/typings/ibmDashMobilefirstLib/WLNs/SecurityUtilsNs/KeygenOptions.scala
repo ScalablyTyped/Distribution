@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeygenOptions extends js.Object {
   var iterations: scala.Double
   var password: java.lang.String

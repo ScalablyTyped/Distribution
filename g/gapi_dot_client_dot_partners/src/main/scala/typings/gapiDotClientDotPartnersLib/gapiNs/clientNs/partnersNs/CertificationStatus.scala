@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CertificationStatus extends js.Object {
   /** List of certification exam statuses. */
   var examStatuses: js.UndefOr[js.Array[CertificationExamStatus]] = js.undefined

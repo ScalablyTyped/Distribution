@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TextFormat extends js.Object {
   var args: js.Array[java.lang.String] | (stdLib.Record[java.lang.String, _]) | java.lang.String
   var callback: js.UndefOr[js.Function1[/* result */ java.lang.String, scala.Unit]] = js.undefined
@@ -19,9 +18,9 @@ trait Anon_TextFormat extends js.Object {
   // it should be up to them to use a cast rather than the typedef to be
   // overly lenient. We never know if grasp might change their internal use of
   // fs, after all.
-  var fs: js.UndefOr[js.Any] = js.undefined
+  var fs: js.UndefOr[Anon_StatSync] = js.undefined
   var input: js.UndefOr[java.lang.String] = js.undefined
-  var stdin: js.UndefOr[js.Any] = js.undefined
-  var textFormat: js.UndefOr[js.Any] = js.undefined
+  var stdin: js.UndefOr[nodeLib.NodeJSNs.ReadStream] = js.undefined
+  var textFormat: js.UndefOr[cliDashColorLib.cliDashColorMod.mNs.Format] = js.undefined
 }
 

@@ -21,11 +21,9 @@ package object wxNs {
   // 传播类
   type menuShare = jweixinLib.jweixinLibStrings.`menuItem:share:appMessage` | jweixinLib.jweixinLibStrings.`menuItem:share:timeline` | jweixinLib.jweixinLibStrings.`menuItem:share:qq` | jweixinLib.jweixinLibStrings.`menuItem:share:weiboApp` | jweixinLib.jweixinLibStrings.`menuItem:favorite` | jweixinLib.jweixinLibStrings.`menuItem:share:facebook` | jweixinLib.jweixinLibStrings.`menuItem:share:QZone`
   /*=============================智能接口================================*/
-  
   /*=============================设备信息================================*/
   type networkType = jweixinLib.jweixinLibStrings.`2g` | jweixinLib.jweixinLibStrings.`3g` | jweixinLib.jweixinLibStrings.`4g` | jweixinLib.jweixinLibStrings.wifi
   /*=============================界面操作================================*/
   /*=============================微信扫一扫================================*/
-  
   type scanType = jweixinLib.jweixinLibStrings.qrCode | jweixinLib.jweixinLibStrings.barCode
 }

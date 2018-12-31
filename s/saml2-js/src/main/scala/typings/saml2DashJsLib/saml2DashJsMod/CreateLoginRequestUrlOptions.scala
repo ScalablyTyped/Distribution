@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateLoginRequestUrlOptions extends js.Object {
   var auth_context: js.UndefOr[AuthnContextClassRef] = js.undefined
   var force_authn: js.UndefOr[scala.Boolean] = js.undefined

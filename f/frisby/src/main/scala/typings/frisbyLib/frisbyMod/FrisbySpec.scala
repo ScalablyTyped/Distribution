@@ -13,7 +13,7 @@ class FrisbySpec protected () extends js.Object {
   def `catch`(onRejected: js.Function1[/* error */ nodeLib.Error, scala.Unit]): FrisbySpec = js.native
   def del(url: java.lang.String): FrisbySpec = js.native
   def del(url: java.lang.String, params: js.Object): FrisbySpec = js.native
-  def done(doneFn: js.Function1[/* repeated */js.Any, scala.Unit]): FrisbySpec = js.native
+  def done(doneFn: js.Function1[/* repeated */ js.Any, scala.Unit]): FrisbySpec = js.native
   def expect(expectName: java.lang.String, args: js.Any*): FrisbySpec = js.native
   def expectNot(expectName: java.lang.String): FrisbySpec = js.native
   def fetch(url: java.lang.String): FrisbySpec = js.native
@@ -39,21 +39,21 @@ class FrisbySpec protected () extends js.Object {
   def put(url: java.lang.String): FrisbySpec = js.native
   def put(url: java.lang.String, params: js.Object): FrisbySpec = js.native
   def setup(opts: js.Object, replace: scala.Boolean): FrisbySpec = js.native
-  def `then`(onFulfilled: js.Function1[/* repeated */js.Any, scala.Unit]): FrisbySpec = js.native
+  def `then`(onFulfilled: js.Function1[/* repeated */ js.Any, scala.Unit]): FrisbySpec = js.native
   def `then`(
-    onFulfilled: js.Function1[/* repeated */js.Any, scala.Unit],
-    onRejected: js.Function1[/* repeated */js.Any, scala.Unit]
+    onFulfilled: js.Function1[/* repeated */ js.Any, scala.Unit],
+    onRejected: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): FrisbySpec = js.native
   def `then`(onFulfilled: js.Object): FrisbySpec = js.native
-  def `then`(onFulfilled: js.Object, onRejected: js.Function1[/* repeated */js.Any, scala.Unit]): FrisbySpec = js.native
+  def `then`(onFulfilled: js.Object, onRejected: js.Function1[/* repeated */ js.Any, scala.Unit]): FrisbySpec = js.native
   def timeout(timeout: scala.Double): scala.Double = js.native
-  def use(fn: js.Function1[/* repeated */js.Any, scala.Unit]): FrisbySpec = js.native
+  def use(fn: js.Function1[/* repeated */ js.Any, scala.Unit]): FrisbySpec = js.native
 }
 
 @JSImport("frisby", "FrisbySpec")
 @js.native
 object FrisbySpec extends js.Object {
-  def addExpectHandler(expectName: java.lang.String, expectFn: js.Function1[/* repeated */js.Any, _]): scala.Unit = js.native
+  def addExpectHandler(expectName: java.lang.String, expectFn: js.Function1[/* repeated */ js.Any, _]): scala.Unit = js.native
   def removeExpectHandler(expectName: java.lang.String): scala.Unit = js.native
 }
 

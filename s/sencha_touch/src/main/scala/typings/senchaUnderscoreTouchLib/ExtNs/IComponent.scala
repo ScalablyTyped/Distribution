@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IComponent extends IEvented {
   /** [Method] Adds a CSS class or classes to this Component s rendered element
   		* @param cls String The CSS class to add.

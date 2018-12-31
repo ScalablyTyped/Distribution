@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CodePipelineCloudWatchActionEvent extends js.Object {
   var account: java.lang.String
   var detail: awsDashLambdaLib.Anon_Stage

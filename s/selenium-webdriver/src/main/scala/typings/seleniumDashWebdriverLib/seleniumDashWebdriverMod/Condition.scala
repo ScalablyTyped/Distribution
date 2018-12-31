@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class Condition[T] protected () extends js.Object {
   /**
-     * @param {string} message A descriptive error message. Should complete the
-     *     sentence 'Waiting [...]'
-     * @param {function(!WebDriver): OUT} fn The condition function to
-     *     evaluate on each iteration of the wait loop.
-     * @constructor
-     */
+    * @param {string} message A descriptive error message. Should complete the
+    *     sentence 'Waiting [...]'
+    * @param {function(!WebDriver): OUT} fn The condition function to
+    *     evaluate on each iteration of the wait loop.
+    * @constructor
+    */
   def this(message: java.lang.String, fn: js.Function1[/* webdriver */ WebDriver, _]) = this()
   /** @return {string} A description of this condition. */
   def description(): java.lang.String = js.native

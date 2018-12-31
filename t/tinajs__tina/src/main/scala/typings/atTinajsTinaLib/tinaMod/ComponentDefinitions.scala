@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ComponentDefinitions extends ComponentLifecycles {
   var data: org.scalablytyped.runtime.StringDictionary[js.Any]
   var methods: org.scalablytyped.runtime.StringDictionary[js.ThisFunction0[/* this */ Component, _]]

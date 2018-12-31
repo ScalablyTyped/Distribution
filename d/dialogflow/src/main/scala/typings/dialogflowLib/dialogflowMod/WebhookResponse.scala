@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebhookResponse extends js.Object {
   var followupEventInput: js.UndefOr[EventInput] = js.undefined
   var fulfillmentMessages: js.UndefOr[js.Array[Message]] = js.undefined

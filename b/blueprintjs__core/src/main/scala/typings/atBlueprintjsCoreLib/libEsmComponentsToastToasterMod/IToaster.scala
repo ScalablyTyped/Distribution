@@ -14,16 +14,11 @@ trait IToaster extends js.Object {
   /** Returns the props for all current toasts. */
   def getToasts(): js.Array[IToastOptions] = js.native
   /**
-       * Shows a new toast to the user, or updates an existing toast corresponding to the provided key (optional).
-       *
-       * Returns the unique key of the toast.
-       */
+    * Shows a new toast to the user, or updates an existing toast corresponding to the provided key (optional).
+    *
+    * Returns the unique key of the toast.
+    */
   def show(props: atBlueprintjsCoreLib.libEsmComponentsToastToastMod.IToastProps): java.lang.String = js.native
-  /**
-       * Shows a new toast to the user, or updates an existing toast corresponding to the provided key (optional).
-       *
-       * Returns the unique key of the toast.
-       */
   def show(props: atBlueprintjsCoreLib.libEsmComponentsToastToastMod.IToastProps, key: java.lang.String): java.lang.String = js.native
 }
 

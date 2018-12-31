@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IstopSearchBeacons extends BaseParams {
   // 关闭查找完成后的回调函数
   @JSName("complete")

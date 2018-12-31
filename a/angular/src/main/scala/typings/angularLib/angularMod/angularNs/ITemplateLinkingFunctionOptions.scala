@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITemplateLinkingFunctionOptions extends js.Object {
   var futureParentElement: js.UndefOr[angularLib.JQuery] = js.undefined
   var parentBoundTranscludeFn: js.UndefOr[ITranscludeFunction] = js.undefined

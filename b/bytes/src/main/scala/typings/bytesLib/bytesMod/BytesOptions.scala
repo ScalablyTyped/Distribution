@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BytesOptions extends js.Object {
   var decimalPlaces: js.UndefOr[scala.Double] = js.undefined
   var fixedDecimals: js.UndefOr[scala.Boolean] = js.undefined

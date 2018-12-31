@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPointerDevice extends js.Object {
   var isIntegrated: scala.Boolean
   var maxContacts: scala.Double

@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion
 //#region TabBar https://docs.alipay.com/mini/api/ui-tabbar
-
 trait SwitchTabOptions
   extends BaseOptions[js.Any, js.Any] {
   /**

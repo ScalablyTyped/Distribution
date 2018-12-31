@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MetadataObject extends js.Object {
   var childXmlNames: js.Array[java.lang.String]
   var directoryName: java.lang.String

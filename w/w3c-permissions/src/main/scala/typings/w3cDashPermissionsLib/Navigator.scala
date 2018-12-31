@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // https://www.w3.org/TR/permissions/#navigator-and-workernavigator-extension
-
 trait Navigator extends js.Object {
   val permissions: Permissions
 }

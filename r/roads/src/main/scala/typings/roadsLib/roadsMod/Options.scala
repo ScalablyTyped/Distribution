@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var babelify: js.UndefOr[Option] = js.undefined
   var envify: js.UndefOr[Option] = js.undefined

@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommentNewProps extends js.Object {
   /**
-           * The comment's text.
-           */
+    * The comment's text.
+    */
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 

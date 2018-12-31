@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Profunctor4[F /* <: fpDashTsLib.libHKTMod.URIS4 */]
   extends fpDashTsLib.libFunctorMod.Functor4[F] {
   def promap[X, U, A, B, C, D](

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MigratorConfig extends js.Object {
   var database: js.UndefOr[java.lang.String] = js.undefined
   var directory: js.UndefOr[java.lang.String] = js.undefined

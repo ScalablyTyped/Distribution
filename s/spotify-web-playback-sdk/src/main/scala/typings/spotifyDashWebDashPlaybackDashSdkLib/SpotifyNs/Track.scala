@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Track extends js.Object {
   var album: Album
   var artists: js.Array[Artist]

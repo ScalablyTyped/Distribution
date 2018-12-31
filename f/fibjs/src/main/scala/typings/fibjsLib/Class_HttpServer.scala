@@ -103,14 +103,6 @@ class Class_HttpServer protected () extends Class_TcpServer {
   	 * 
   	 */
   def enableCrossOrigin(): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 允许跨域请求
-  	 * @param allowHeaders 指定接受的 http 头字段
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def enableCrossOrigin(allowHeaders: java.lang.String): scala.Unit = js.native
   /**
   	 * 

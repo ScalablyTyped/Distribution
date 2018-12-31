@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StripeCard extends js.Object {
   var address_city: js.UndefOr[java.lang.String] = js.undefined
   var address_country: js.UndefOr[java.lang.String] = js.undefined

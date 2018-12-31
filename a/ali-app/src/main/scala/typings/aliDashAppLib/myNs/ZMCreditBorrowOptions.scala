@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion
 //#region 信用借还 https://docs.alipay.com/mini/api/zmcreditborrow
-
 trait ZMCreditBorrowOptions
   extends BaseOptions[js.Any, js.Any] {
   /**

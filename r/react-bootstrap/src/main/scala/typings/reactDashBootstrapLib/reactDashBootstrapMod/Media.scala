@@ -13,11 +13,11 @@ class Media ()
 @JSImport("react-bootstrap", "Media")
 @js.native
 object Media extends js.Object {
-  var Body: js.Any = js.native
-  var Heading: js.Any = js.native
-  var Left: js.Any = js.native
-  var List: js.Any = js.native
-  var ListItem: js.Any = js.native
-  var Right: js.Any = js.native
+  var Body: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libMediaBodyMod.namespaced] = js.native
+  var Heading: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libMediaHeadingMod.namespaced] = js.native
+  var Left: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libMediaLeftMod.namespaced] = js.native
+  var List: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libMediaListMod.namespaced] = js.native
+  var ListItem: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libMediaListItemMod.namespaced] = js.native
+  var Right: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libMediaRightMod.namespaced] = js.native
 }
 

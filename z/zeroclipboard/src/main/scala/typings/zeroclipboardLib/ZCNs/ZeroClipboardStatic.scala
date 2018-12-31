@@ -14,42 +14,42 @@ trait ZeroClipboardStatic
       ZeroClipboardClient
     ] {
   /**
-       * The version of the ZeroClipboard library being used, e.g. "2.0.0".
-       * @type {string}
-       */
+    * The version of the ZeroClipboard library being used, e.g. "2.0.0".
+    * @type {string}
+    */
   var version: java.lang.String = js.native
   /**
-       * Focus/"activate" the provided element by moving the Flash SWF object in front of it.
-       * @param {Element} element
-       * @deprecated: The preferred method to use is focus but the alias activate is available for backward compatibility's sake.
-       */
+    * Focus/"activate" the provided element by moving the Flash SWF object in front of it.
+    * @param {Element} element
+    * @deprecated: The preferred method to use is focus but the alias activate is available for backward compatibility's sake.
+    */
   def activate(element: stdLib.Element): scala.Unit = js.native
   /**
-       * Return the currently "activated" element that the Flash SWF object is in front of it.
-       * @return {HTMLElement} or {null}
-       */
+    * Return the currently "activated" element that the Flash SWF object is in front of it.
+    * @return {HTMLElement} or {null}
+    */
   def activeElement(): stdLib.HTMLElement = js.native
   /**
-       * Blur/"deactivate" the currently focused/"activated" element, moving the Flash SWF object off the screen.
-       * @since 2.1.0
-       */
+    * Blur/"deactivate" the currently focused/"activated" element, moving the Flash SWF object off the screen.
+    * @since 2.1.0
+    */
   def blur(): scala.Unit = js.native
   /**
-       * Get a copy of the active configuration for ZeroClipboard.
-       * @return {ZeroClipboardConfig}
-       */
+    * Get a copy of the active configuration for ZeroClipboard.
+    * @return {ZeroClipboardConfig}
+    */
   def config(): ZeroClipboardConfig = js.native
   /**
-       * Set the active configuration for ZeroClipboard. Returns a copy of the updated active configuration.
-       * @param  {ZeroClipboardConfig} config
-       * @return {ZeroClipboardConfig}
-       */
+    * Set the active configuration for ZeroClipboard. Returns a copy of the updated active configuration.
+    * @param  {ZeroClipboardConfig} config
+    * @return {ZeroClipboardConfig}
+    */
   def config(config: ZeroClipboardConfig): ZeroClipboardConfig = js.native
   /**
-       *  Get a copy of the actively configured value for this configuration property for ZeroClipboard.
-       * @param  {string} propName
-       * @return {any}
-       */
+    *  Get a copy of the actively configured value for this configuration property for ZeroClipboard.
+    * @param  {string} propName
+    * @return {any}
+    */
   def config(propName: java.lang.String): js.Any = js.native
   @JSName("config")
   def config_activeClass(propName: zeroclipboardLib.zeroclipboardLibStrings.activeClass): java.lang.String = js.native
@@ -84,37 +84,37 @@ trait ZeroClipboardStatic
   @JSName("config")
   def config_zIndex(propName: zeroclipboardLib.zeroclipboardLibStrings.zIndex): scala.Double = js.native
   /**
-       * Create the Flash bridge SWF object.
-       * IMPORTANT: This method should be considered private.
-       * @private
-       */
+    * Create the Flash bridge SWF object.
+    * IMPORTANT: This method should be considered private.
+    * @private
+    */
   def create(): scala.Unit = js.native
   /**
-       * Blur/"deactivate" the currently focused/"activated" element, moving the Flash SWF object off the screen.
-       * @deprecated: The preferred method to use is blur but the alias deactivate is available for backward compatibility's sake.
-       */
+    * Blur/"deactivate" the currently focused/"activated" element, moving the Flash SWF object off the screen.
+    * @deprecated: The preferred method to use is blur but the alias deactivate is available for backward compatibility's sake.
+    */
   def deactivate(): scala.Unit = js.native
   /**
-       * Emit the "destroy" event, remove all event handlers, and destroy the Flash bridge.
-       */
+    * Emit the "destroy" event, remove all event handlers, and destroy the Flash bridge.
+    */
   def destroy(): scala.Unit = js.native
   /**
-       * Focus/"activate" the provided element by moving the Flash SWF object in front of it.
-       * @param {Element} element
-       * @since 2.1.0
-       */
+    * Focus/"activate" the provided element by moving the Flash SWF object in front of it.
+    * @param {Element} element
+    * @since 2.1.0
+    */
   def focus(element: stdLib.Element): scala.Unit = js.native
   /**
-       * Indicates if Flash Player is definitely unusable (disabled, outdated, unavailable, or deactivated).
-       * IMPORTANT: This method should be considered private.
-       * @return {boolean}
-       * @private
-       */
+    * Indicates if Flash Player is definitely unusable (disabled, outdated, unavailable, or deactivated).
+    * IMPORTANT: This method should be considered private.
+    * @return {boolean}
+    * @private
+    */
   def isFlashUnusable(): scala.Boolean = js.native
   /**
-       * Diagnostic method that describes the state of the browser, Flash Player, and ZeroClipboard.
-       * @return {Object}
-       */
+    * Diagnostic method that describes the state of the browser, Flash Player, and ZeroClipboard.
+    * @return {Object}
+    */
   def state(): js.Object = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LabelIds extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -26,14 +25,14 @@ trait Anon_LabelIds extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Only return messages matching the specified query. Supports the same query format as the Gmail search box. For example, "from:someuser@example.com
-                   * rfc822msgid:<somemsgid@example.com> is:unread". Parameter cannot be used when accessing the api using the gmail.metadata scope.
-                   */
+    * Only return messages matching the specified query. Supports the same query format as the Gmail search box. For example, "from:someuser@example.com
+    * rfc822msgid:<somemsgid@example.com> is:unread". Parameter cannot be used when accessing the api using the gmail.metadata scope.
+    */
   var q: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** The user's email address. The special value me can be used to indicate the authenticated user. */
   var userId: java.lang.String

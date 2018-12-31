@@ -9,15 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object haversineModMembers extends js.Object {
   /**
-   * Determines the great-circle distance between two points on a sphere given their longitudes and latitudes
-   */
+    * Determines the great-circle distance between two points on a sphere given their longitudes and latitudes
+    */
   def apply(
     start: haversineLib.haversineMod.haversineNs.Coordinate,
     end: haversineLib.haversineMod.haversineNs.Coordinate
   ): scala.Double = js.native
-  /**
-   * Determines the great-circle distance between two points on a sphere given their longitudes and latitudes
-   */
   def apply(
     start: haversineLib.haversineMod.haversineNs.Coordinate,
     end: haversineLib.haversineMod.haversineNs.Coordinate,

@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * A Picture is a GraphObject that shows an image, video-frame, or Canvas element.
-    * You can specify what to show by either setting the .source URL property
-    * to a URL string or the .element property to an HTMLImageElement,
-    * HTMLCanvasElement, or HTMLVideoElement.
-    */
+  * A Picture is a GraphObject that shows an image, video-frame, or Canvas element.
+  * You can specify what to show by either setting the .source URL property
+  * to a URL string or the .element property to an HTMLImageElement,
+  * HTMLCanvasElement, or HTMLVideoElement.
+  */
 @js.native
 trait Picture extends GraphObject {
   /**Gets or sets the Picture's HTML element, an Image or Video or Canvas element.*/

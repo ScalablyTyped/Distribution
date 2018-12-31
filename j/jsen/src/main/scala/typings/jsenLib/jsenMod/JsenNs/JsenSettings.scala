@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JsenSettings extends js.Object {
   var formats: js.UndefOr[JsenFormats] = js.undefined
   var greedy: js.UndefOr[scala.Boolean] = js.undefined

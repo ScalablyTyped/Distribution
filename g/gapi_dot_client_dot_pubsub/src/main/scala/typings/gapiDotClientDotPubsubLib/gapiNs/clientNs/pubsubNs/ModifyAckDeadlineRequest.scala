@@ -5,17 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModifyAckDeadlineRequest extends js.Object {
   /**
-               * The new ack deadline with respect to the time this request was sent to
-               * the Pub/Sub system. For example, if the value is 10, the new
-               * ack deadline will expire 10 seconds after the `ModifyAckDeadline` call
-               * was made. Specifying zero may immediately make the message available for
-               * another pull request.
-               * The minimum deadline you can specify is 0 seconds.
-               * The maximum deadline you can specify is 600 seconds (10 minutes).
-               */
+    * The new ack deadline with respect to the time this request was sent to
+    * the Pub/Sub system. For example, if the value is 10, the new
+    * ack deadline will expire 10 seconds after the `ModifyAckDeadline` call
+    * was made. Specifying zero may immediately make the message available for
+    * another pull request.
+    * The minimum deadline you can specify is 0 seconds.
+    * The maximum deadline you can specify is 600 seconds (10 minutes).
+    */
   var ackDeadlineSeconds: js.UndefOr[scala.Double] = js.undefined
   /** List of acknowledgment IDs. */
   var ackIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined

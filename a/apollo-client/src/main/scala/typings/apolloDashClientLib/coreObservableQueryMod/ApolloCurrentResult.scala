@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ApolloCurrentResult[T] extends js.Object {
   var data: T | js.Object
   var error: js.UndefOr[apolloDashClientLib.errorsApolloErrorMod.ApolloError] = js.undefined

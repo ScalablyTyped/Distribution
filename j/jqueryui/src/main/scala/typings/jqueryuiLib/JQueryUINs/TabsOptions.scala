@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Tabs //////////////////////////////////////////////////
-
 trait TabsOptions extends TabsEvents {
   var active: js.UndefOr[js.Any] = js.undefined
    // boolean or number

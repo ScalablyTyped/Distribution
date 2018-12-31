@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LedOption extends js.Object {
   var address: js.UndefOr[scala.Double] = js.undefined
   var controller: js.UndefOr[java.lang.String] = js.undefined

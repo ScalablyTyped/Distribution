@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParsedDomain extends js.Object {
   var domain: java.lang.String | scala.Null
   var error: js.UndefOr[scala.Nothing]

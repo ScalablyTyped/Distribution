@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait INotifyConfigProvider
   extends angularLib.angularMod.angularNs.IServiceProvider {
   var defaultNotifyConfig: java.lang.String

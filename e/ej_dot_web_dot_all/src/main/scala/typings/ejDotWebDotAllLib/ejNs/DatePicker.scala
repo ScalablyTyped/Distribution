@@ -16,28 +16,28 @@ class DatePicker protected () extends Widget {
   @JSName("model")
   var model_DatePicker: ejDotWebDotAllLib.ejNs.DatePickerNs.Model = js.native
   /** Disables the DatePicker control.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def disable(): scala.Unit = js.native
   /** Enable the DatePicker control, if it is in disabled state.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def enable(): scala.Unit = js.native
   /** Returns the current date value in the DatePicker control.
-           * @returns {string}
-           */
+    * @returns {string}
+    */
   def getValue(): java.lang.String = js.native
   /** Close the DatePicker popup, if it is in opened state.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def hide(): scala.Unit = js.native
   /** sets the date value for the DatePicker.
-           * @returns {string}
-           */
+    * @returns {string}
+    */
   def setValue(): java.lang.String = js.native
   /** Opens the DatePicker popup.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def show(): scala.Unit = js.native
 }
 

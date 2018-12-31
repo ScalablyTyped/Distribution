@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListGroupsResponse extends js.Object {
   /** The groups that match the specified filters. */
   var group: js.UndefOr[js.Array[Group]] = js.undefined
   /**
-               * If there are more results than have been returned, then this field is set to a non-empty value. To see the additional results, use that value as
-               * pageToken in the next call to this method.
-               */
+    * If there are more results than have been returned, then this field is set to a non-empty value. To see the additional results, use that value as
+    * pageToken in the next call to this method.
+    */
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 

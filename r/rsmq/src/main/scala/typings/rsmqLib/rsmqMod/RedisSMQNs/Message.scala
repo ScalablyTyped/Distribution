@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Message extends MessageIdentifier {
   var fr: scala.Double
   var message: java.lang.String

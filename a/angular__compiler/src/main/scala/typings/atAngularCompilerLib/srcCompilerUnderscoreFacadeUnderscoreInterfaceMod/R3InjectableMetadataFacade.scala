@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait R3InjectableMetadataFacade extends js.Object {
   var ctorDeps: js.Array[R3DependencyMetadataFacade] | scala.Null
   var name: java.lang.String

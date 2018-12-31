@@ -14,27 +14,21 @@ class Datepicker ()
 @js.native
 object Datepicker extends js.Object {
   /**
-           * Get Instance
-           */
+    * Get Instance
+    */
   def getInstance(elem: stdLib.Element): materializeDashCssLib.MNs.Datepicker = js.native
   /**
-           * Init Datepickers
-           */
+    * Init Datepickers
+    */
   def init(els: materializeDashCssLib.MElements): js.Array[materializeDashCssLib.MNs.Datepicker] = js.native
-  /**
-           * Init Datepickers
-           */
   def init(
     els: materializeDashCssLib.MElements,
     options: stdLib.Partial[materializeDashCssLib.MNs.DatepickerOptions]
   ): js.Array[materializeDashCssLib.MNs.Datepicker] = js.native
   /**
-           * Init Datepicker
-           */
+    * Init Datepicker
+    */
   def init(els: stdLib.Element): materializeDashCssLib.MNs.Datepicker = js.native
-  /**
-           * Init Datepicker
-           */
   def init(els: stdLib.Element, options: stdLib.Partial[materializeDashCssLib.MNs.DatepickerOptions]): materializeDashCssLib.MNs.Datepicker = js.native
 }
 

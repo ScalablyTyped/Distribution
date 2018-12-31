@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NotifySettings extends js.Object {
   var allow_dismiss: js.UndefOr[scala.Boolean] = js.undefined
   var allow_duplicates: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ParentAccesstokenPageSize extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -29,11 +28,11 @@ trait Anon_ParentAccesstokenPageSize extends js.Object {
   /** Optional pagination token returned in an earlier ListRolesResponse. */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The resource name of the parent resource in one of the following formats:
-                   * `` (empty string) -- this refers to curated roles.
-                   * `organizations/{ORGANIZATION_ID}`
-                   * `projects/{PROJECT_ID}`
-                   */
+    * The resource name of the parent resource in one of the following formats:
+    * `` (empty string) -- this refers to curated roles.
+    * `organizations/{ORGANIZATION_ID}`
+    * `projects/{PROJECT_ID}`
+    */
   var parent: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

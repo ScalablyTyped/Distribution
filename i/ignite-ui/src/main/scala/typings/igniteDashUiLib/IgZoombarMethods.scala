@@ -45,19 +45,7 @@ trait IgZoombarMethods extends js.Object {
   	 * @param width The width parameter of the new zoom window in percentages
   	 */
   def zoom(): js.Object = js.native
-  /**
-  	 * Gets or sets the current zoom window
-  	 *
-  	 * @param left The left parameter of the new zoom window in percentages
-  	 * @param width The width parameter of the new zoom window in percentages
-  	 */
   def zoom(left: scala.Double): js.Object = js.native
-  /**
-  	 * Gets or sets the current zoom window
-  	 *
-  	 * @param left The left parameter of the new zoom window in percentages
-  	 * @param width The width parameter of the new zoom window in percentages
-  	 */
   def zoom(left: scala.Double, width: scala.Double): js.Object = js.native
 }
 

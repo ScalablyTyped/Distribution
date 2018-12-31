@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MDCGridListAdapter extends js.Object {
   def deregisterResizeHandler(handler: stdLib.EventListener): scala.Unit
   def getNumberOfTiles(): scala.Double

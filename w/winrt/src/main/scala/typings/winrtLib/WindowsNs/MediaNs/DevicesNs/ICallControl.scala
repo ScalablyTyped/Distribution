@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICallControl extends js.Object {
   var hasRinger: scala.Boolean
   var onanswerrequested: js.Any

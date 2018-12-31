@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IProjection extends js.Object {
   def fromGlobalPixels(globalPixelPoint: js.Array[scala.Double], zoom: scala.Double): js.Array[scala.Double]
   def getCoordSystem(): ICoordSystem

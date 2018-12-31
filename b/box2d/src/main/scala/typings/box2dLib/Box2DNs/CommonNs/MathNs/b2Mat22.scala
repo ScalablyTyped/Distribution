@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Common.Math.b2Mat22")
 @js.native
+/**
+		* Empty constructor
+		**/
 class b2Mat22 () extends js.Object {
   /**
   		* Column 1

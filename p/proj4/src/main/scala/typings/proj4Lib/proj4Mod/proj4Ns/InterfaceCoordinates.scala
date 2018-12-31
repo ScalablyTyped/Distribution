@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InterfaceCoordinates extends js.Object {
   var m: js.UndefOr[scala.Double] = js.undefined
   var x: scala.Double

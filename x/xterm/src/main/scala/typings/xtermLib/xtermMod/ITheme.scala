@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITheme extends js.Object {
   /** The default background color */
   var background: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SurveyCost extends js.Object {
   var costPerResponseNanos: js.UndefOr[java.lang.String] = js.undefined
   var currencyCode: js.UndefOr[java.lang.String] = js.undefined

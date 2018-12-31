@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 class SVGDrawer protected ()
   extends plottableLib.buildSrcDrawersSvgDrawerMod.SVGDrawer {
   /**
-       * @param svgElementName an HTML/SVG tag name to be created, one per datum.
-       * @param className CSS classes to be applied to the drawn primitives.
-       * @param applyDefaultAttributes
-       */
+    * @param svgElementName an HTML/SVG tag name to be created, one per datum.
+    * @param className CSS classes to be applied to the drawn primitives.
+    * @param applyDefaultAttributes
+    */
   def this(svgElementName: java.lang.String, className: java.lang.String) = this()
 }
 

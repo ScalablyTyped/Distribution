@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITextCharacterFormat extends js.Object {
   var allCaps: FormatEffect
   var backgroundColor: winrtLib.WindowsNs.UINs.Color

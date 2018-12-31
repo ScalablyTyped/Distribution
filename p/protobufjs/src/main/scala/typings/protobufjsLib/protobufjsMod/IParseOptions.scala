@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IParseOptions extends js.Object {
   /** Recognize double-slash comments in addition to doc-block comments. */
   var alternateCommentMode: js.UndefOr[scala.Boolean] = js.undefined

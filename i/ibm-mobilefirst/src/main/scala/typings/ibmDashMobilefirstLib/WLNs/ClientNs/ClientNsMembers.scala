@@ -20,20 +20,20 @@ object ClientNsMembers extends js.Object {
   def deleteUserPref(key: java.lang.String): scala.Unit = js.native
   def deleteUserPref(key: java.lang.String, options: ibmDashMobilefirstLib.WLNs.Options): scala.Unit = js.native
   /**
-       * See WL.AppProperty for possible results
-       */
+    * See WL.AppProperty for possible results
+    */
   def getAppProperty(property: js.Any): js.Any = js.native
   /**
-       * See WL.Environment for possible results
-       */
+    * See WL.Environment for possible results
+    */
   def getEnvironment(): java.lang.String = js.native
   def getLanguage(): java.lang.String = js.native
   def getLastAccessToken(): java.lang.String = js.native
   def getLastAccessToken(scope: java.lang.String): java.lang.String = js.native
   def getLoginName(realmName: java.lang.String): java.lang.String = js.native
   /**
-       * @deprecated since version 7.0
-       */
+    * @deprecated since version 7.0
+    */
   def getRequiredAccessTokenScope(status: scala.Double, header: java.lang.String): java.lang.String = js.native
   def getSharedToken(`object`: SharedTokenObject): jqueryLib.JQueryDeferred[_] = js.native
   def getUserInfo(realm: java.lang.String, key: java.lang.String): js.Any = js.native
@@ -44,13 +44,13 @@ object ClientNsMembers extends js.Object {
   def invokeProcedure(invocationData: ProcedureInvocationData): jqueryLib.JQueryDeferred[ibmDashMobilefirstLib.WLNs.Response] = js.native
   def invokeProcedure(invocationData: ProcedureInvocationData, options: ProcedureInvocationOptions): jqueryLib.JQueryDeferred[ibmDashMobilefirstLib.WLNs.Response] = js.native
   /**
-       * @deprecated since version 4.1.3. Use WL.Device.getNetworkInfo instead.
-       */
+    * @deprecated since version 4.1.3. Use WL.Device.getNetworkInfo instead.
+    */
   def isConnected(): scala.Unit = js.native
   def isUserAuthenticated(realm: java.lang.String): scala.Boolean = js.native
   /**
-       * @deprecated since version 7.0. Use WL.Logger instead.
-       */
+    * @deprecated since version 7.0. Use WL.Logger instead.
+    */
   def logActivity(activityType: java.lang.String): scala.Unit = js.native
   def login(realm: java.lang.String): scala.Unit = js.native
   def login(realm: java.lang.String, options: ibmDashMobilefirstLib.WLNs.Options): scala.Unit = js.native
@@ -58,8 +58,8 @@ object ClientNsMembers extends js.Object {
   def logout(realm: java.lang.String, options: ibmDashMobilefirstLib.WLNs.Options): scala.Unit = js.native
   def minimize(): scala.Unit = js.native
   /**
-       * @deprecated since version 7.0
-       */
+    * @deprecated since version 7.0
+    */
   def obtainAccessToken(
     scope: java.lang.String,
     onSuccess: ibmDashMobilefirstLib.WLNs.ResponseHandler[ibmDashMobilefirstLib.WLNs.Response],

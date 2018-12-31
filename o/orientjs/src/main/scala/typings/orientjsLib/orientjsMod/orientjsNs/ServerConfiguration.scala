@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerConfiguration extends js.Object {
   def get(name: java.lang.String): java.lang.String
   def list(): js.Any

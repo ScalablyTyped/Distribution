@@ -29,22 +29,22 @@ object Config extends js.Object {
   var parentPath: java.lang.String = js.native
   var runCommand: java.lang.String = js.native
   /**
-       * Get the binary versions from the configuration file.
-       * @returns A map of the versions defined in the configuration file.
-       */
+    * Get the binary versions from the configuration file.
+    * @returns A map of the versions defined in the configuration file.
+    */
   def binaryVersions(): webdriverDashManagerLib.builtLibConfigMod.ConfigFile = js.native
   /**
-       * Get the CDN urls from the configuration file.
-       * @returns A map of the CDN versions defined in the configuration file.
-       */
+    * Get the CDN urls from the configuration file.
+    * @returns A map of the CDN versions defined in the configuration file.
+    */
   def cdnUrls(): webdriverDashManagerLib.builtLibConfigMod.ConfigFile = js.native
   def getBaseDir(): java.lang.String = js.native
   def `getConfigFile_`(): java.lang.String = js.native
   def `getPackageFile_`(): java.lang.String = js.native
   def getSeleniumDir(): java.lang.String = js.native
   /**
-       * Get the package version.
-       */
+    * Get the package version.
+    */
   def getVersion(): java.lang.String = js.native
   def httpProxy(): java.lang.String = js.native
   def httpsProxy(): java.lang.String = js.native

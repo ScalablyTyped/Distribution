@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MDCTabBarAdapter extends js.Object {
   def addClass(className: java.lang.String): scala.Unit
   def bindOnMDCTabSelectedEvent(): scala.Unit

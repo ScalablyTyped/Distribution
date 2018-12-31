@@ -170,21 +170,21 @@ class Application protected () extends js.Object {
   def CommandBars(Index: java.lang.String): activexDashOfficeLib.OfficeNs.CommandBar = js.native
   def CommandBars(Index: scala.Double): activexDashOfficeLib.OfficeNs.CommandBar = js.native
   /**
-           * @param Word.WdCompareDestination [Destination=2]
-           * @param Word.WdGranularity [Granularity=1]
-           * @param boolean [CompareFormatting=true]
-           * @param boolean [CompareCaseChanges=true]
-           * @param boolean [CompareWhitespace=true]
-           * @param boolean [CompareTables=true]
-           * @param boolean [CompareHeaders=true]
-           * @param boolean [CompareFootnotes=true]
-           * @param boolean [CompareTextboxes=true]
-           * @param boolean [CompareFields=true]
-           * @param boolean [CompareComments=true]
-           * @param boolean [CompareMoves=true]
-           * @param string [RevisedAuthor='']
-           * @param boolean [IgnoreAllComparisonWarnings=false]
-           */
+    * @param Word.WdCompareDestination [Destination=2]
+    * @param Word.WdGranularity [Granularity=1]
+    * @param boolean [CompareFormatting=true]
+    * @param boolean [CompareCaseChanges=true]
+    * @param boolean [CompareWhitespace=true]
+    * @param boolean [CompareTables=true]
+    * @param boolean [CompareHeaders=true]
+    * @param boolean [CompareFootnotes=true]
+    * @param boolean [CompareTextboxes=true]
+    * @param boolean [CompareFields=true]
+    * @param boolean [CompareComments=true]
+    * @param boolean [CompareMoves=true]
+    * @param string [RevisedAuthor='']
+    * @param boolean [IgnoreAllComparisonWarnings=false]
+    */
   def CompareDocuments(
     OriginalDocument: Document,
     RevisedDocument: Document,
@@ -254,7 +254,6 @@ class Application protected () extends js.Object {
   def KeyString(KeyCode: scala.Double, KeyCode2: js.Any): java.lang.String = js.native
   /** @param number [LangId=0] */
   def Keyboard(): scala.Double = js.native
-  /** @param number [LangId=0] */
   def Keyboard(LangId: scala.Double): scala.Double = js.native
   def KeyboardBidi(): scala.Unit = js.native
   def KeyboardLatin(): scala.Unit = js.native
@@ -265,22 +264,22 @@ class Application protected () extends js.Object {
   def LoadMasterList(FileName: java.lang.String): scala.Unit = js.native
   def LookupNameProperties(Name: java.lang.String): scala.Unit = js.native
   /**
-           * @param Word.WdCompareDestination [Destination=2]
-           * @param Word.WdGranularity [Granularity=1]
-           * @param boolean [CompareFormatting=true]
-           * @param boolean [CompareCaseChanges=true]
-           * @param boolean [CompareWhitespace=true]
-           * @param boolean [CompareTables=true]
-           * @param boolean [CompareHeaders=true]
-           * @param boolean [CompareFootnotes=true]
-           * @param boolean [CompareTextboxes=true]
-           * @param boolean [CompareFields=true]
-           * @param boolean [CompareComments=true]
-           * @param boolean [CompareMoves=true]
-           * @param string [OriginalAuthor='']
-           * @param string [RevisedAuthor='']
-           * @param Word.WdMergeFormatFrom [FormatFrom=2]
-           */
+    * @param Word.WdCompareDestination [Destination=2]
+    * @param Word.WdGranularity [Granularity=1]
+    * @param boolean [CompareFormatting=true]
+    * @param boolean [CompareCaseChanges=true]
+    * @param boolean [CompareWhitespace=true]
+    * @param boolean [CompareTables=true]
+    * @param boolean [CompareHeaders=true]
+    * @param boolean [CompareFootnotes=true]
+    * @param boolean [CompareTextboxes=true]
+    * @param boolean [CompareFields=true]
+    * @param boolean [CompareComments=true]
+    * @param boolean [CompareMoves=true]
+    * @param string [OriginalAuthor='']
+    * @param string [RevisedAuthor='']
+    * @param Word.WdMergeFormatFrom [FormatFrom=2]
+    */
   def MergeDocuments(
     OriginalDocument: Document,
     RevisedDocument: Document,

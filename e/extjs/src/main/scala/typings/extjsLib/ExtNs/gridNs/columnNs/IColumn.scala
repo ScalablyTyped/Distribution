@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IColumn
   extends extjsLib.ExtNs.gridNs.headerNs.IContainer {
   /** [Method] private Inform the header container about the resize

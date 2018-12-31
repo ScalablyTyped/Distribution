@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion
 //#region 剪贴板 https://docs.alipay.com/mini/api/clipboard
-
 trait GetClipboardOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")

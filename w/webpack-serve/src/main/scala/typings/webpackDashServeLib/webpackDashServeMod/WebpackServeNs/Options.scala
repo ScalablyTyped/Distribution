@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   /** Addon to webpack-serve that allows access to the Koa server instance */
   var add: js.UndefOr[

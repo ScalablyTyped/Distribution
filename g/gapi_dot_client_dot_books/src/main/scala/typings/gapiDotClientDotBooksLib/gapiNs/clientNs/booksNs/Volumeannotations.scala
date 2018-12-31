@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Volumeannotations extends js.Object {
   /** A list of volume annotations. */
   var items: js.UndefOr[js.Array[Volumeannotation]] = js.undefined
@@ -16,9 +15,9 @@ trait Volumeannotations extends js.Object {
   /** The total number of volume annotations found. */
   var totalItems: js.UndefOr[scala.Double] = js.undefined
   /**
-               * The version string for all of the volume annotations in this layer (not just the ones in this response). Note: the version string doesn't apply to the
-               * annotation data, just the information in this response (e.g. the location of annotations in the book).
-               */
+    * The version string for all of the volume annotations in this layer (not just the ones in this response). Note: the version string doesn't apply to the
+    * annotation data, just the information in this response (e.g. the location of annotations in the book).
+    */
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 

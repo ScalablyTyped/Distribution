@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProxyOptions extends js.Object {
   var proxyReqOptDecorator: js.UndefOr[
     js.Function2[

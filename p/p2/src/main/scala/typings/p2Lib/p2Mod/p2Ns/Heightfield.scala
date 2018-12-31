@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Heightfield extends Shape {
   var data: js.Array[scala.Double]
   var elementWidth: scala.Double

@@ -5,39 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TeamProjectReference extends js.Object {
   /**
-       * Project abbreviation.
-       */
+    * Project abbreviation.
+    */
   var abbreviation: java.lang.String
   /**
-       * The project's description (if any).
-       */
+    * The project's description (if any).
+    */
   var description: java.lang.String
   /**
-       * Project identifier.
-       */
+    * Project identifier.
+    */
   var id: java.lang.String
   /**
-       * Project name.
-       */
+    * Project name.
+    */
   var name: java.lang.String
   /**
-       * Project revision.
-       */
+    * Project revision.
+    */
   var revision: scala.Double
   /**
-       * Project state.
-       */
+    * Project state.
+    */
   var state: js.Any
   /**
-       * Url to the full version of the object.
-       */
+    * Url to the full version of the object.
+    */
   var url: java.lang.String
   /**
-       * Project visibility.
-       */
+    * Project visibility.
+    */
   var visibility: ProjectVisibility
 }
 

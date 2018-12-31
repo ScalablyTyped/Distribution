@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Options for snap
-         */
-
+  * Options for snap
+  */
 trait SnapOptions extends js.Object {
   var edge: js.UndefOr[scala.Boolean] = js.undefined
   var features: js.UndefOr[openlayersLib.openlayersMod.Collection[openlayersLib.openlayersMod.Feature]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiffEdit[LHS, RHS] extends js.Object {
   var kind: deepDashDiffLib.deepDashDiffLibStrings.E
   var lhs: LHS

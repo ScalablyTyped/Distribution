@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Component interface
-     * @see https://docs.angularjs.org/guide/component
-     */
-
+  * Component interface
+  * @see https://docs.angularjs.org/guide/component
+  */
 trait iComponent extends js.Object {
   var bindings: js.UndefOr[js.Object] = js.undefined
   var controllerAs: js.UndefOr[java.lang.String] = js.undefined

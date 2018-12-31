@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Indices extends js.Object {
   var attributes: cesiumLib.cesiumMod.CesiumNs.GeometryAttributes
   var boundingSphere: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.BoundingSphere] = js.undefined

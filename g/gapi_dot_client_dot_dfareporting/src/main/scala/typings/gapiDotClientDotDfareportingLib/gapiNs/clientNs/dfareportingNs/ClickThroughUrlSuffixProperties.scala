@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClickThroughUrlSuffixProperties extends js.Object {
   /** Click-through URL suffix to apply to all ads in this entity's scope. Must be less than 128 characters long. */
   var clickThroughUrlSuffix: js.UndefOr[java.lang.String] = js.undefined

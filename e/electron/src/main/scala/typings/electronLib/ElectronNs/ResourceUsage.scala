@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResourceUsage extends js.Object {
   var cssStyleSheets: MemoryUsageDetails
   var fonts: MemoryUsageDetails

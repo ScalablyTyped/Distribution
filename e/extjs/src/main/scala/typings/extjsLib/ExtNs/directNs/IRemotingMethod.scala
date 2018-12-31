@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRemotingMethod
   extends extjsLib.ExtNs.IBase {
   /** [Method] Takes the arguments for the Direct function and splits the arguments from the scope and the callback

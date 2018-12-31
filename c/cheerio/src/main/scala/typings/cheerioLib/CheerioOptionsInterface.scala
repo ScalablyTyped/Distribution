@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CheerioOptionsInterface extends js.Object {
   var decodeEntities: js.UndefOr[scala.Boolean] = js.undefined
   var ignoreWhitespace: js.UndefOr[scala.Boolean] = js.undefined

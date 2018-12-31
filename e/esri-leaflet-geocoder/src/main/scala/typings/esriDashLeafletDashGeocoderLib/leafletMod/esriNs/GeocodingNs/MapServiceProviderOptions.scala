@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapServiceProviderOptions extends BaseProviderOptions {
   var bufferRadius: scala.Double | js.Array[scala.Double]
   var layers: scala.Double | js.Array[scala.Double]

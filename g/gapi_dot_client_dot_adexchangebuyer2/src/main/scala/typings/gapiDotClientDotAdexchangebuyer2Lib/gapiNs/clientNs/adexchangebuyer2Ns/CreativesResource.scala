@@ -15,21 +15,21 @@ trait CreativesResource extends js.Object {
   /** Lists creatives. */
   def list(request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenPageSizePrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[ListCreativesResponse] = js.native
   /**
-               * List all creatives associated with a specific reason for which bids were
-               * filtered, with the number of bids filtered for each creative.
-               */
+    * List all creatives associated with a specific reason for which bids were
+    * filtered, with the number of bids filtered for each creative.
+    */
   def list(request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenPageSizePrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[ListCreativeStatusBreakdownByCreativeResponse] = js.native
   /**
-               * Stops watching a creative. Will stop push notifications being sent to the
-               * topics when the creative changes status.
-               */
+    * Stops watching a creative. Will stop push notifications being sent to the
+    * topics when the creative changes status.
+    */
   def stopWatching(request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object] = js.native
   /** Updates a creative. */
   def update(request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[Creative] = js.native
   /**
-               * Watches a creative. Will result in push notifications being sent to the
-               * topic when the creative changes status.
-               */
+    * Watches a creative. Will result in push notifications being sent to the
+    * topic when the creative changes status.
+    */
   def watch(request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenPrettyPrintBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[js.Object] = js.native
 }
 

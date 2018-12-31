@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PassengerCounts extends js.Object {
   /** The number of passengers that are adults. */
   var adultCount: js.UndefOr[scala.Double] = js.undefined

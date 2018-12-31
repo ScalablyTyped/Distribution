@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait FilterOn extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.2]
-     */
+  * [Api set: ExcelApi 1.2]
+  */
 @JSGlobal("Excel.FilterOn")
 @js.native
 object FilterOn extends js.Object {

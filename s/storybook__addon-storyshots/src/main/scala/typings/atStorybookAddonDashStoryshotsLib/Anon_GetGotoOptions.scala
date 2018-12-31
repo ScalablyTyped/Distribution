@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_GetGotoOptions extends js.Object {
   var beforeScreenshot: js.UndefOr[
     js.Function2[

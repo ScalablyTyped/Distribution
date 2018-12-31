@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_File extends js.Object {
   // The size of live data inside the database, in bytes.
   var active: scala.Double

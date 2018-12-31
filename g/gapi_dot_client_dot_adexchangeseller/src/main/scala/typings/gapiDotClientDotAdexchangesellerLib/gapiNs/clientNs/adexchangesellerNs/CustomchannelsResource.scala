@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomchannelsResource extends js.Object {
   /** Get the specified custom channel from the specified ad client. */
   def get(request: gapiDotClientDotAdexchangesellerLib.Anon_PrettyPrintAdClientId): gapiDotClientLib.gapiNs.clientNs.Request[CustomChannel]

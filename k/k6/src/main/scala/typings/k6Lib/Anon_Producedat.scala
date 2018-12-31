@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Producedat extends js.Object {
   var next_update: scala.Double
   var produced_at: scala.Double

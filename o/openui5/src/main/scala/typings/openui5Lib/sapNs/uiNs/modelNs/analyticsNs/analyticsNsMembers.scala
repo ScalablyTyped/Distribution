@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object analyticsNsMembers extends js.Object {
   /**
-           * If called on an instance of an (v1/v2) ODataModel it will enrich it with analytics capabilities.
-          */
+    * If called on an instance of an (v1/v2) ODataModel it will enrich it with analytics capabilities.
+    */
   def ODataModelAdapter(): scala.Unit = js.native
 }
 

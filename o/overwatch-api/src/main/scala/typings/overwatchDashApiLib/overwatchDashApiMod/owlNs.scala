@@ -8,14 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("overwatch-api", "owl")
 @js.native
 object owlNs extends js.Object {
-  
   trait ApiResponse[T] extends js.Object {
     var data: T
   }
   
-  
   trait LiveMatchData extends js.Object
-  
   
   trait MatchData extends js.Object {
     var clientHints: js.Array[_]
@@ -46,13 +43,11 @@ object owlNs extends js.Object {
     var youtubeId: java.lang.String
   }
   
-  
   trait MatchGameAttributeData extends js.Object {
     var instanceID: java.lang.String
     var map: java.lang.String
     var mapScore: MatchGameScore
   }
-  
   
   trait MatchGameData extends js.Object {
     var attributes: MatchGameAttributeData
@@ -66,24 +61,20 @@ object owlNs extends js.Object {
     var statusReason: java.lang.String
   }
   
-  
   trait MatchGameScore extends js.Object {
     var team1: scala.Double
     var team2: scala.Double
   }
   
-  
   trait MatchScores extends js.Object {
     var value: scala.Double
   }
-  
   
   trait MatchTournamentData extends js.Object {
     var id: scala.Double
     var location: java.lang.String
     var `type`: java.lang.String
   }
-  
   
   trait MatchVideoData extends js.Object {
     var description: java.lang.String
@@ -93,18 +84,15 @@ object owlNs extends js.Object {
     var youtubeId: java.lang.String
   }
   
-  
   trait PreseasonStandingInfo extends StandingInfo {
     var comparisons: js.Array[StandingComparison]
   }
-  
   
   trait ScheduleInfo extends js.Object {
     var endDate: java.lang.String
     var stages: js.Array[StageScheduleInfo]
     var startDate: java.lang.String
   }
-  
   
   trait StageScheduleInfo extends js.Object {
     var enabled: scala.Boolean
@@ -116,11 +104,9 @@ object owlNs extends js.Object {
     var weeks: js.Array[WeekData]
   }
   
-  
   trait StageStandingInfo extends PreseasonStandingInfo {
     var isPlayoffWinner: scala.Boolean
   }
-  
   
   trait Stages extends js.Object {
     var stage1: StageStandingInfo
@@ -129,12 +115,10 @@ object owlNs extends js.Object {
     var stage4: StageStandingInfo
   }
   
-  
   trait StandingComparison extends js.Object {
     var key: java.lang.String
     var value: scala.Double
   }
-  
   
   trait StandingInfo extends js.Object {
     var gameLoss: scala.Double
@@ -148,7 +132,6 @@ object owlNs extends js.Object {
     var matchWin: scala.Double
     var placement: scala.Double
   }
-  
   
   trait TeamData extends js.Object {
     var abbreviatedName: java.lang.String
@@ -167,7 +150,6 @@ object owlNs extends js.Object {
     var `type`: java.lang.String
   }
   
-  
   trait TeamStandingInfo extends js.Object {
     var abbreviatedName: java.lang.String
     var divisionId: scala.Double
@@ -178,12 +160,10 @@ object owlNs extends js.Object {
     var stages: Stages
   }
   
-  
   trait TournamentData extends js.Object {
     var id: scala.Double
     var `type`: java.lang.String
   }
-  
   
   trait WeekData extends js.Object {
     var endDate: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ValueOnChange extends js.Object {
   var disabled: js.UndefOr[scala.Boolean]
   var name: js.UndefOr[java.lang.String]

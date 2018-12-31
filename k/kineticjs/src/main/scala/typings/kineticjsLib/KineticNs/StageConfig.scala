@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StageConfig extends ObjectOptionsConfig {
   var container: java.lang.String
   @JSName("height")

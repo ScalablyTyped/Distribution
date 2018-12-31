@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPanelStackState extends js.Object {
   /** Whether the stack is currently animating the push or pop of a panel. */
   var direction: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.push | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.pop

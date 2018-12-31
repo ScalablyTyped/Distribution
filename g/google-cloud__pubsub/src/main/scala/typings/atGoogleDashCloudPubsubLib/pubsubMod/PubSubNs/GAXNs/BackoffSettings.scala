@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** https://googleapis.github.io/gax-nodejs/global.html#BackoffSettings */
-
 trait BackoffSettings extends js.Object {
   var initialRetryDelayMillis: scala.Double
   var initialRpcTimeoutMillis: scala.Double

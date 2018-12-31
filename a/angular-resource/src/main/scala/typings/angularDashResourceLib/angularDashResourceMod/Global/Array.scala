@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Array[T] extends js.Object {
   /** The promise of the original server interaction that created this collection. */
   @JSName("$promise")

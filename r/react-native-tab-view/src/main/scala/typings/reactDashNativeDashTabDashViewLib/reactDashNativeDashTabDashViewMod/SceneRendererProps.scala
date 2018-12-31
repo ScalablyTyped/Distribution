@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SceneRendererProps[T /* <: RouteBase */] extends js.Object {
   var getLastPosition: js.Function0[scala.Double]
   var jumpTo: js.Function1[/* key */ java.lang.String, scala.Unit]

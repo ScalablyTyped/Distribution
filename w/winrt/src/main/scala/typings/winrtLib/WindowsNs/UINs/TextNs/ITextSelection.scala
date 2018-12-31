@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITextSelection extends ITextRange {
   var options: SelectionOptions
   var `type`: SelectionType

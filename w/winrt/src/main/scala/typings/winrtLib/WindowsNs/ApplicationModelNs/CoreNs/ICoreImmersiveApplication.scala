@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICoreImmersiveApplication extends js.Object {
   var mainView: CoreApplicationView
   var views: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[CoreApplicationView]

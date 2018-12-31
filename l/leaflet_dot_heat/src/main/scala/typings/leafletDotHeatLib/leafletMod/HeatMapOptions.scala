@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HeatMapOptions extends js.Object {
   var blur: js.UndefOr[scala.Double] = js.undefined
   var gradient: js.UndefOr[ColorGradientConfig] = js.undefined

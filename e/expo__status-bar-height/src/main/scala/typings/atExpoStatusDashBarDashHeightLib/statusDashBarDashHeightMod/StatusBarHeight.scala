@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class StatusBarHeight () extends js.Object {
   /**
-     * Add 'willChange' event listener
-     */
+    * Add 'willChange' event listener
+    */
   def addEventListener(handler: StatusBarHeightHandler): scala.Unit = js.native
   /**
-     * Get the current status bar height
-     */
+    * Get the current status bar height
+    */
   def getAsync(): js.Promise[scala.Double] = js.native
   /**
-     * Remove 'willChange' event listener
-     */
+    * Remove 'willChange' event listener
+    */
   def removeEventListener(handler: StatusBarHeightHandler): scala.Unit = js.native
 }
 

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait IconTabFilterDesign extends js.Object
 
 /**
-     * Available Filter Item Design.
-    */
+  * Available Filter Item Design.
+  */
 @JSGlobal("sap.m.IconTabFilterDesign")
 @js.native
 object IconTabFilterDesign extends js.Object {

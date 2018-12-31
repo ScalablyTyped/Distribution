@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISeparatedSyntaxList extends ISyntaxElement {
   def insertChildrenInto(array: js.Array[ISyntaxElement], index: scala.Double): scala.Unit
   def nonSeparatorAt(index: scala.Double): ISyntaxNodeOrToken

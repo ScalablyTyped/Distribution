@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Duration extends js.Object {
   var asset: js.UndefOr[scala.Double] = js.undefined
   var autoPlay: js.UndefOr[scala.Boolean] = js.undefined

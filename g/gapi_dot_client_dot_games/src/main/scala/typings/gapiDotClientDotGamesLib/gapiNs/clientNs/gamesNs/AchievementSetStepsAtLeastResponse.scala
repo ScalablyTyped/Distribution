@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AchievementSetStepsAtLeastResponse extends js.Object {
   /** The current steps recorded for this incremental achievement. */
   var currentSteps: js.UndefOr[scala.Double] = js.undefined

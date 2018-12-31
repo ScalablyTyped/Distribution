@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DiscardedCurrentWindow extends js.Object {
   /** Whether the tabs are active in their windows. */
   var active: js.UndefOr[scala.Boolean] = js.undefined
@@ -34,8 +33,8 @@ trait Anon_DiscardedCurrentWindow extends js.Object {
   /** Whether the tabs are muted. */
   var muted: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * The ID of the tab that opened this tab. If specified, the opener tab must be in the same window as this tab.
-           */
+    * The ID of the tab that opened this tab. If specified, the opener tab must be in the same window as this tab.
+    */
   var openerTabId: js.UndefOr[scala.Double] = js.undefined
   /** Whether the tabs are pinned. */
   var pinned: js.UndefOr[scala.Boolean] = js.undefined

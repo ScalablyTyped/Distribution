@@ -18,15 +18,12 @@ class HTMLProject protected () extends js.Object {
   def HTMLProjectItems(Index: js.Any): HTMLProjectItem = js.native
   /** @param OpenKind [OpenKind=0] */
   def Open(): scala.Unit = js.native
-  /** @param OpenKind [OpenKind=0] */
   def Open(OpenKind: MsoHTMLProjectOpen): scala.Unit = js.native
   /** @param Refresh [Refresh=true] */
   def RefreshDocument(): scala.Unit = js.native
-  /** @param Refresh [Refresh=true] */
   def RefreshDocument(Refresh: scala.Boolean): scala.Unit = js.native
   /** @param Refresh [Refresh=true] */
   def RefreshProject(): scala.Unit = js.native
-  /** @param Refresh [Refresh=true] */
   def RefreshProject(Refresh: scala.Boolean): scala.Unit = js.native
 }
 

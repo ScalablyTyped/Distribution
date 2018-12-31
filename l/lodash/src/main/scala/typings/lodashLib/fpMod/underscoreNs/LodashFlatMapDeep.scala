@@ -26,7 +26,7 @@ trait LodashFlatMapDeep extends js.Object {
   ): js.Array[TResult] = js.native
   def apply[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       lodashLib.lodashMod.underscoreNs.ListOfRecursiveArraysOrValues[TResult] | TResult
     ],
     collection: T

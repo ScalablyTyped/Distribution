@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IUuidGenerator extends IIdGenerator {
   /** [Method] Reconfigures this generator given new config properties
   		* @param config Object

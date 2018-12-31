@@ -21,25 +21,17 @@ object InteractionsNs extends js.Object {
     extends plottableLib.buildSrcInteractionsMod.Key
   
   @js.native
+  /**
+    * A PanZoom Interaction updates the domains of an x-scale and/or a y-scale
+    * in response to the user panning or zooming.
+    *
+    * @constructor
+    * @param {TransformableScale} [xScale] The x-scale to update on panning/zooming.
+    * @param {TransformableScale} [yScale] The y-scale to update on panning/zooming.
+    */
   class PanZoom ()
     extends plottableLib.buildSrcInteractionsMod.PanZoom {
-    /**
-         * A PanZoom Interaction updates the domains of an x-scale and/or a y-scale
-         * in response to the user panning or zooming.
-         *
-         * @constructor
-         * @param {TransformableScale} [xScale] The x-scale to update on panning/zooming.
-         * @param {TransformableScale} [yScale] The y-scale to update on panning/zooming.
-         */
     def this(xScale: plottableLib.buildSrcScalesScaleMod.TransformableScale[_, scala.Double]) = this()
-    /**
-         * A PanZoom Interaction updates the domains of an x-scale and/or a y-scale
-         * in response to the user panning or zooming.
-         *
-         * @constructor
-         * @param {TransformableScale} [xScale] The x-scale to update on panning/zooming.
-         * @param {TransformableScale} [yScale] The y-scale to update on panning/zooming.
-         */
     def this(xScale: plottableLib.buildSrcScalesScaleMod.TransformableScale[_, scala.Double], yScale: plottableLib.buildSrcScalesScaleMod.TransformableScale[_, scala.Double]) = this()
   }
   
@@ -61,8 +53,8 @@ object InteractionsNs extends js.Object {
   @js.native
   object PanZoom extends js.Object {
     /**
-         * The number of pixels occupied in a line.
-         */
+      * The number of pixels occupied in a line.
+      */
     var _PIXELS_PER_LINE: js.Any = js.native
     /* private */ def _pointDistance(point1: js.Any, point2: js.Any): js.Any = js.native
     def centerPoint(

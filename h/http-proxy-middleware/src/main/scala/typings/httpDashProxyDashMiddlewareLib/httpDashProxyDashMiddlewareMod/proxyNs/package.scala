@@ -11,6 +11,6 @@ package object proxyNs {
     /* req */ nodeLib.httpMod.IncomingMessage, 
     scala.Boolean
   ]
-  type Logger = js.Function1[/* repeated */js.Any, scala.Unit]
+  type Logger = js.Function1[/* repeated */ js.Any, scala.Unit]
   type Proxy = connectLib.connectMod.createServerNs.NextHandleFunction
 }

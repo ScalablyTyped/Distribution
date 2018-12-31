@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FirehoseTransformationEvent extends js.Object {
   var deliveryStreamArn: java.lang.String
   var invocationId: java.lang.String

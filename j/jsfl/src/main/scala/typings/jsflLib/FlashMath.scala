@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlashMath extends js.Object {
   /** Method; performs a matrix concatenation and returns the result. */
   def concatMatrix(mat1: FlashMatrix, mat2: FlashMatrix): FlashMatrix

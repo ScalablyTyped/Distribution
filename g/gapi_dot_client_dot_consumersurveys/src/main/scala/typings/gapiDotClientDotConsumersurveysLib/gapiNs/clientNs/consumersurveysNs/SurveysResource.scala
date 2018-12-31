@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SurveysResource extends js.Object {
   /** Removes a survey from view in all user GET requests. */
   def delete(request: gapiDotClientDotConsumersurveysLib.Anon_SurveyUrlId): gapiDotClientLib.gapiNs.clientNs.Request[SurveysDeleteResponse]

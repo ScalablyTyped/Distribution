@@ -45,7 +45,7 @@ object toolsNs extends js.Object {
   def htmlEncodeAttr(text: java.lang.String): java.lang.String = js.native
   def indexOf[T](array: js.Array[T], value: T): scala.Double = js.native
   def indexOf[T](array: js.Array[T], value: js.Function1[/* el */ T, scala.Boolean]): scala.Double = js.native
-  def isArray[T](`object`: js.Any): /* is Array */scala.Boolean = js.native
+  def isArray[T](`object`: js.Any): /* is std.Array<T> */ scala.Boolean = js.native
   def isEmpty(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Boolean = js.native
   def keystrokeToArray(lang: org.scalablytyped.runtime.StringDictionary[js.Any], keystroke: scala.Double): ckeditorLib.Anon_AriaDisplay = js.native
   def keystrokeToString(lang: org.scalablytyped.runtime.StringDictionary[js.Any], keystroke: scala.Double): ckeditorLib.Anon_Aria = js.native

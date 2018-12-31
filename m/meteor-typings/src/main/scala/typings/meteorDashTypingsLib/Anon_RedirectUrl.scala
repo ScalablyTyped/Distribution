@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RedirectUrl extends js.Object {
   var loginStyle: js.UndefOr[java.lang.String] = js.undefined
   var loginUrlParameters: js.UndefOr[js.Object] = js.undefined

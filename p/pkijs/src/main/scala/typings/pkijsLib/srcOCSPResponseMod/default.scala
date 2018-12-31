@@ -12,11 +12,11 @@ class default () extends OCSPResponse {
   /* CompleteClass */
   override var responseStatus: asn1jsLib.asn1jsMod.Enumerated = js.native
   /**
-           * Making OCSP Request for specific certificate
-           * @param {Certificate} certificate Certificate making OCSP Request for
-           * @param {CreateFroCertificateParams} parameters Additional parameters
-           * @returns {Promise}
-           */
+    * Making OCSP Request for specific certificate
+    * @param {Certificate} certificate Certificate making OCSP Request for
+    * @param {CreateFroCertificateParams} parameters Additional parameters
+    * @returns {Promise}
+    */
   /* CompleteClass */
   override def createForCertificate(
     certificate: pkijsLib.srcCertificateMod.default,
@@ -25,11 +25,11 @@ class default () extends OCSPResponse {
   /* CompleteClass */
   override def fromSchema(schema: js.Any): scala.Unit = js.native
   /**
-           * Get OCSP response status for specific certificate
-           * @param {Certificate} certificate
-           * @param {Certificate} issuerCertificate
-           * @returns {*}
-           */
+    * Get OCSP response status for specific certificate
+    * @param {Certificate} certificate
+    * @param {Certificate} issuerCertificate
+    * @returns {*}
+    */
   /* CompleteClass */
   override def getCertificateStatus(
     certificate: pkijsLib.srcCertificateMod.default,
@@ -45,10 +45,10 @@ class default () extends OCSPResponse {
 @js.native
 object default extends js.Object {
   /**
-           * Compare values with default values for all class members
-           * @param {string} memberName String name for a class member
-           * @param {*} memberValue Value to compare with default value
-           */
+    * Compare values with default values for all class members
+    * @param {string} memberName String name for a class member
+    * @param {*} memberValue Value to compare with default value
+    */
   def compareWithDefault(memberName: java.lang.String, memberValue: js.Any): scala.Boolean = js.native
   def defaultValues(memberName: java.lang.String): js.Any = js.native
   def schema(): js.Any = js.native

@@ -6,49 +6,48 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Enrollment request
-     */
-
+  * Enrollment request
+  */
 trait EnrollmentRequest extends DomainResource {
   /**
-           * Contains extended information for property 'created'.
-           */
+    * Contains extended information for property 'created'.
+    */
   var _created: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'status'.
-           */
+    * Contains extended information for property 'status'.
+    */
   var _status: js.UndefOr[Element] = js.undefined
   /**
-           * Insurance information
-           */
+    * Insurance information
+    */
   var coverage: js.UndefOr[Reference] = js.undefined
   /**
-           * Creation date
-           */
+    * Creation date
+    */
   var created: js.UndefOr[dateTime] = js.undefined
   /**
-           * Business Identifier
-           */
+    * Business Identifier
+    */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   /**
-           * Target
-           */
+    * Target
+    */
   var insurer: js.UndefOr[Reference] = js.undefined
   /**
-           * Responsible organization
-           */
+    * Responsible organization
+    */
   var organization: js.UndefOr[Reference] = js.undefined
   /**
-           * Responsible practitioner
-           */
+    * Responsible practitioner
+    */
   var provider: js.UndefOr[Reference] = js.undefined
   /**
-           * active | cancelled | draft | entered-in-error
-           */
+    * active | cancelled | draft | entered-in-error
+    */
   var status: js.UndefOr[code] = js.undefined
   /**
-           * The subject of the Products and Services
-           */
+    * The subject of the Products and Services
+    */
   var subject: js.UndefOr[Reference] = js.undefined
 }
 

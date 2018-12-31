@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * A representation of a media item returned by [openMusicLibrary](Titanium.Media.openMusicLibrary) or [queryMusicLibrary](Titanium.Media.queryMusicLibrary).
 		 */
-
 trait Item
   extends titaniumLib.TitaniumNs.Proxy {
   /**

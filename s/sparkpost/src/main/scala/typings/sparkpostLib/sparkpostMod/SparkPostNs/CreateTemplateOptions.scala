@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateTemplateOptions extends js.Object {
   /** Enable or disable click tracking */
   var click_tracking: js.UndefOr[scala.Boolean] = js.undefined

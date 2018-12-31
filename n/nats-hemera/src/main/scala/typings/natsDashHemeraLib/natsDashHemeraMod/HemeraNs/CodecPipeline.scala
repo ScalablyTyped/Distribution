@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CodecPipeline extends js.Object {
   def add(step: js.Any): CodecPipeline
   def reset(step: js.Any): CodecPipeline

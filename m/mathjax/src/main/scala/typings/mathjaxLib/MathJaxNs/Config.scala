@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Config extends js.Object {
   var AsciiMath: js.UndefOr[AsciiMathInputProcessor] = js.undefined
   var CommonHTML: js.UndefOr[CommonHTMLOutputProcessor] = js.undefined
@@ -23,135 +22,135 @@ trait Config extends js.Object {
   var TeX: js.UndefOr[TeXInputProcessor] = js.undefined
   var asciimath2jax: js.UndefOr[Asciimath2jaxPreprocessor] = js.undefined
   /*A list of configuration files to load when MathJax starts up, e.g., to define local macros,
-           * etc., and there is a sample config file named config/local/local.js. The default directory is the
-           * MathJax/config directory. The MMLorHTML.js configuration is one such configuration file, and there are a
-           * number of other pre-defined configurations (see Using a configuration file for more details).
-           */
+    * etc., and there is a sample config file named config/local/local.js. The default directory is the
+    * MathJax/config directory. The MMLorHTML.js configuration is one such configuration file, and there are a
+    * number of other pre-defined configurations (see Using a configuration file for more details).
+    */
   var config: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /*Normally MathJax will perform its startup commands (loading of configuration, styles, jax, and so on) as soon
-           * as it can. If you expect to be doing additional configuration on the page, however, you may want to have it
-           * wait until the page’s onload handler is called. If so, set this to "onload". You can also set this to
-           * "configured", in which case, MathJax will delay its startup until you explicitly call
-           * MathJax.Hub.Configured(). See Configuring MathJax after it is loaded for more details.
-           */
+    * as it can. If you expect to be doing additional configuration on the page, however, you may want to have it
+    * wait until the page’s onload handler is called. If so, set this to "onload". You can also set this to
+    * "configured", in which case, MathJax will delay its startup until you explicitly call
+    * MathJax.Hub.Configured(). See Configuring MathJax after it is loaded for more details.
+    */
   var delayStartupUntil: js.UndefOr[java.lang.String] = js.undefined
   /*These two parameters control the alignment and shifting of displayed equations. The first can be "left",
-           * "center", or "right", and determines the alignment of displayed equations. When the alignment is not "center",
-           * the second determines an indentation from the left or right side for the displayed equations.*/
+    * "center", or "right", and determines the alignment of displayed equations. When the alignment is not "center",
+    * the second determines an indentation from the left or right side for the displayed equations.*/
   var displayAlign: js.UndefOr[java.lang.String] = js.undefined
   var displayIndent: js.UndefOr[java.lang.String] = js.undefined
   /*This is a list of DOM element ID’s that are the ones to process for mathematics when any of the Hub typesetting
-           * calls (Typeset(), Process(), Update(), etc.) are called with no element specified, and during MathJax’s initial
-           * typesetting run when it starts up. This lets you restrict the processing to particular containers rather than
-           * scanning the entire document for mathematics. If none are supplied, the complete document is processed.
-           */
+    * calls (Typeset(), Process(), Update(), etc.) are called with no element specified, and during MathJax’s initial
+    * typesetting run when it starts up. This lets you restrict the processing to particular containers rather than
+    * scanning the entire document for mathematics. If none are supplied, the complete document is processed.
+    */
   var elements: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /*This block contains settings that control how MathJax responds to unexpected errors while processing
-           * mathematical equations. Rather than simply crash, MathJax can report an error and go on.
-           */
+    * mathematical equations. Rather than simply crash, MathJax can report an error and go on.
+    */
   var errorSettings: js.UndefOr[ErrorSettings] = js.undefined
   /*A list of extensions to load at startup. The default directory is MathJax/extensions. The
-           * tex2jax and mml2jax preprocessors can be listed here, as well as a FontWarnings extension that you can use to
-           * inform your user that mathematics fonts are available that they can download to improve their experience of
-           * your site.
-           */
+    * tex2jax and mml2jax preprocessors can be listed here, as well as a FontWarnings extension that you can use to
+    * inform your user that mathematics fonts are available that they can download to improve their experience of
+    * your site.
+    */
   var extensions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /*A list of input and output jax to initialize at startup. Their main code is loaded only when
-           * they are actually used, so it is not inefficient to include jax that may not actually be used on the page.
-           * These are found in the MathJax/jax directory.
-           */
+    * they are actually used, so it is not inefficient to include jax that may not actually be used on the page.
+    * These are found in the MathJax/jax directory.
+    */
   var jax: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var jsMath2jax: js.UndefOr[JSMath2jaxPreprocessor] = js.undefined
   /*This block contains settings for the mathematics contextual menu that act as the defaults for the user’s
-           * settings in that menu.
-           * There are also settings for format, renderer, font, mpContext, and mpMouse, but these are maintained by
-           * MathJax and should not be set by the page author.
-           */
+    * settings in that menu.
+    * There are also settings for format, renderer, font, mpContext, and mpMouse, but these are maintained by
+    * MathJax and should not be set by the page author.
+    */
   var menuSettings: js.UndefOr[MenuSettings] = js.undefined
   /*This value controls the verbosity of the messages in the lower left-hand corner. Set it to "none" to eliminate
-           * all messages, or set it to "simple" to show “Loading...” and “Processing...” rather than showing the full file
-           * name or the percentage of the mathematics processed.
-           */
+    * all messages, or set it to "simple" to show “Loading...” and “Processing...” rather than showing the full file
+    * name or the percentage of the mathematics processed.
+    */
   var messageStyle: js.UndefOr[java.lang.String] = js.undefined
   var mml2jax: js.UndefOr[MML2jaxPreprocessor] = js.undefined
   /*ince typesetting usually changes the vertical dimensions of the page, if the URL contains an anchor position,
-           * then after the page is typeset, you may no longer be positioned at the correct position on the page. MathJax
-           * can reposition to that location after it completes its initial typesetting of the page. This value controls
-           * whether MathJax will reposition the browser to the #hash location from the page URL after typesetting for
-           * the page.
-           */
+    * then after the page is typeset, you may no longer be positioned at the correct position on the page. MathJax
+    * can reposition to that location after it completes its initial typesetting of the page. This value controls
+    * whether MathJax will reposition the browser to the #hash location from the page URL after typesetting for
+    * the page.
+    */
   var positionToHash: js.UndefOr[scala.Boolean] = js.undefined
   var postJax: js.UndefOr[js.Any] = js.undefined
   /*Patterns to remove from before and after math script tags. If you are not using one of the preprocessors, you
-           * need to insert something extra into your HTML file in order to avoid a bug in Internet Explorer. IE removes
-           * spaces from the DOM that it thinks are redundant, and since a <script> tag usually doesn’t add content to the
-           * page, if there is a space before and after a MathJax <script> tag, IE will remove the first space. When
-           * MathJax inserts the typeset mathematics, this means there will be no space before it and the preceding text.
-           * In order to avoid this, you should include some “guard characters” before or after the math SCRIPT tag; define
-           * the patterns you want to use below. Note that these are used as part of a regular expression, so you will need
-           * to quote special characters. Furthermore, since they are javascript strings, you must quote javascript special
-           * characters as well. So to obtain a backslash, you must use \\ (doubled for javascript). For example, "\\["
-           * represents the pattern \[ in the regular expression, or [ in the text of the web page. That means that if you
-           * want an actual backslash in your guard characters, you need to use "\\\\" in order to get \\ in the regular
-           * expression, and \ in the actual text. If both preJax and postJax are defined, both must be present in order
-           * to be removed.
-           *
-           * See also the preRemoveClass comments below.
-           *
-           * Examples:
-           *
-           * preJax: "\\\\\\\\\" makes a double backslash the preJax text
-           *
-           * preJax: "\\[\\[", postJax: "\\]\\]" makes it so jax scripts must be enclosed in double brackets.
-           */
+    * need to insert something extra into your HTML file in order to avoid a bug in Internet Explorer. IE removes
+    * spaces from the DOM that it thinks are redundant, and since a <script> tag usually doesn’t add content to the
+    * page, if there is a space before and after a MathJax <script> tag, IE will remove the first space. When
+    * MathJax inserts the typeset mathematics, this means there will be no space before it and the preceding text.
+    * In order to avoid this, you should include some “guard characters” before or after the math SCRIPT tag; define
+    * the patterns you want to use below. Note that these are used as part of a regular expression, so you will need
+    * to quote special characters. Furthermore, since they are javascript strings, you must quote javascript special
+    * characters as well. So to obtain a backslash, you must use \\ (doubled for javascript). For example, "\\["
+    * represents the pattern \[ in the regular expression, or [ in the text of the web page. That means that if you
+    * want an actual backslash in your guard characters, you need to use "\\\\" in order to get \\ in the regular
+    * expression, and \ in the actual text. If both preJax and postJax are defined, both must be present in order
+    * to be removed.
+    *
+    * See also the preRemoveClass comments below.
+    *
+    * Examples:
+    *
+    * preJax: "\\\\\\\\\" makes a double backslash the preJax text
+    *
+    * preJax: "\\[\\[", postJax: "\\]\\]" makes it so jax scripts must be enclosed in double brackets.
+    */
   var preJax: js.UndefOr[js.Any] = js.undefined
   /*This is the CSS class name for math previews that will be removed preceding a MathJax SCRIPT tag. If the tag
-           * just before the MathJax <script> tag is of this class, its contents are removed when MathJax processes the
-           * <script> tag. This allows you to include a math preview in a form that will be displayed prior to MathJax
-           * performing its typesetting. It also avoids the Internet Explorer space-removal bug, and can be used in place
-           * of preJax and postJax if that is more convenient.
-           *
-           * For example
-           *
-           * <span class="MathJax_Preview">[math]</span><script  type="math/tex">...</script>
-           * would display “[math]” in place of the math until MathJax is able to typeset it.
-           */
+    * just before the MathJax <script> tag is of this class, its contents are removed when MathJax processes the
+    * <script> tag. This allows you to include a math preview in a form that will be displayed prior to MathJax
+    * performing its typesetting. It also avoids the Internet Explorer space-removal bug, and can be used in place
+    * of preJax and postJax if that is more convenient.
+    *
+    * For example
+    *
+    * <span class="MathJax_Preview">[math]</span><script  type="math/tex">...</script>
+    * would display “[math]” in place of the math until MathJax is able to typeset it.
+    */
   var preRemoveClass: js.UndefOr[java.lang.String] = js.undefined
   /*These control whether to attach the MathJax contextual menu to the expressions typeset by MathJax. Since the
-           * code for handling MathPlayer in Internet Explorer is somewhat delicate, it is controlled separately via
-           * showMathMenuMSIE, but the latter is now deprecated in favor of the MathJax contextual menu settings for
-           * MathPlayer (see below).
-           *
-           * If showMathMenu is true, then right-clicking (on Windows or Linux) or control-clicking (on Mac OS X) will
-           * produce a MathJax menu that allows you to get the source of the mathematics in various formats, change the
-           * size of the mathematics relative to the surrounding text, get information about MathJax, and configure other
-           * MathJax settings.
-           *
-           * Set this to false to disable the menu. When true, the MathMenu configuration block determines the operation
-           * of the menu. See the MathMenu options for more details.
-           *
-           * These values used to be listed in the separate output jax, but have been moved to this more central location
-           * since they are shared by all output jax. MathJax will still honor their values from their original positions,
-           * if they are set there.
-           */
+    * code for handling MathPlayer in Internet Explorer is somewhat delicate, it is controlled separately via
+    * showMathMenuMSIE, but the latter is now deprecated in favor of the MathJax contextual menu settings for
+    * MathPlayer (see below).
+    *
+    * If showMathMenu is true, then right-clicking (on Windows or Linux) or control-clicking (on Mac OS X) will
+    * produce a MathJax menu that allows you to get the source of the mathematics in various formats, change the
+    * size of the mathematics relative to the surrounding text, get information about MathJax, and configure other
+    * MathJax settings.
+    *
+    * Set this to false to disable the menu. When true, the MathMenu configuration block determines the operation
+    * of the menu. See the MathMenu options for more details.
+    *
+    * These values used to be listed in the separate output jax, but have been moved to this more central location
+    * since they are shared by all output jax. MathJax will still honor their values from their original positions,
+    * if they are set there.
+    */
   var showMathMenu: js.UndefOr[scala.Boolean] = js.undefined
   var showMathMenuMSIE: js.UndefOr[scala.Boolean] = js.undefined
   /*This value controls whether the Processing Math: nn% messages are displayed in the lower left-hand corner.
-           * Set to false to prevent those messages (though file loading and other messages will still be shown).
-           */
+    * Set to false to prevent those messages (though file loading and other messages will still be shown).
+    */
   var showProcessingMessages: js.UndefOr[scala.Boolean] = js.undefined
   /*Normally MathJax will typeset the mathematics on the page as soon as the page is loaded. If you want to delay
-           * that process, in which case you will need to call MathJax.Hub.Typeset() yourself by hand, set this value to
-           * true.
-           */
+    * that process, in which case you will need to call MathJax.Hub.Typeset() yourself by hand, set this value to
+    * true.
+    */
   var skipStartupTypeset: js.UndefOr[scala.Boolean] = js.undefined
   /*A list of CSS stylesheet files to be loaded when MathJax starts up. The default directory is
-           * the MathJax/config directory.
-           */
+    * the MathJax/config directory.
+    */
   var styleSheets: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /*CSS styles to be defined dynamically at startup time. These are in the form selector:rules (see CSS Style
-           * Objects for complete details).
-           */
+    * Objects for complete details).
+    */
   var styles: js.UndefOr[js.Any] = js.undefined
   var tex2jax: js.UndefOr[TEX2jaxPreprocessor] = js.undefined
   var `v1.0-compatible`: js.UndefOr[scala.Boolean] = js.undefined

@@ -10,9 +10,9 @@ trait ParseConfigHost extends js.Object {
   var trace: js.UndefOr[js.Function1[/* s */ java.lang.String, scala.Unit]] = js.native
   var useCaseSensitiveFileNames: scala.Boolean = js.native
   /**
-           * Gets a value indicating whether the specified path exists and is a file.
-           * @param path The path to test.
-           */
+    * Gets a value indicating whether the specified path exists and is a file.
+    * @param path The path to test.
+    */
   def fileExists(path: java.lang.String): scala.Boolean = js.native
   def readDirectory(
     rootDir: java.lang.String,

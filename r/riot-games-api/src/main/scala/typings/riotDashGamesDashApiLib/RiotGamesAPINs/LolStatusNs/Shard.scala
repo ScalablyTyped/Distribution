@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Shard extends js.Object {
   var hostname: java.lang.String
   var locales: js.Array[java.lang.String]

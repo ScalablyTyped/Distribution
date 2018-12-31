@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProcessorUsage extends js.Object {
   /** The cumulative time spent idle by this processor. */
   var idle: chromeDashAppsLib.chromeNs.double

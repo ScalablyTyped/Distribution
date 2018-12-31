@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IText extends IBase {
   /** [Config Option] (Boolean) */
   var allowBlank: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PopperOptions extends js.Object {
   var eventsEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var modifiers: js.UndefOr[Modifiers] = js.undefined

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** end of `module bson` */
-
 /** module Or Internal Object */
 /**
 	* @brief bson 编码与解码模块

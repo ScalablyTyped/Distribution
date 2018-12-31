@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetObjectOptions extends js.Object {
    // image process params, will send with x-oss-process e.g.: {process: 'image/resize,w_200'}
   var headers: js.UndefOr[js.Object] = js.undefined

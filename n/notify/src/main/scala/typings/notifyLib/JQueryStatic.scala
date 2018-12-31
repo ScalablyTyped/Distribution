@@ -16,21 +16,15 @@ trait JQueryStatic extends js.Object {
   def notify(element: JQuery, data: js.Any, className: java.lang.String): scala.Unit = js.native
   def notify(element: JQuery, data: js.Any, options: notifyLib.NotifyNs.Options): scala.Unit = js.native
   /**
-           * Create a notification positioned relative to the given element.
-           */
+    * Create a notification positioned relative to the given element.
+    */
   def notify(element: JQuery, text: java.lang.String): scala.Unit = js.native
-  /**
-           * Create a notification positioned relative to the given element.
-           */
   def notify(element: JQuery, text: java.lang.String, className: java.lang.String): scala.Unit = js.native
   def notify(element: JQuery, text: java.lang.String, options: notifyLib.NotifyNs.Options): scala.Unit = js.native
   /**
-           * Create a global notification.
-           */
+    * Create a global notification.
+    */
   def notify(text: java.lang.String): scala.Unit = js.native
-  /**
-           * Create a global notification.
-           */
   def notify(text: java.lang.String, className: java.lang.String): scala.Unit = js.native
   def notify(text: java.lang.String, options: notifyLib.NotifyNs.Options): scala.Unit = js.native
 }

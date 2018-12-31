@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Prompt extends js.Object {
   /** Whether the user's input should be displayed on-screen */
   var echo: scala.Boolean

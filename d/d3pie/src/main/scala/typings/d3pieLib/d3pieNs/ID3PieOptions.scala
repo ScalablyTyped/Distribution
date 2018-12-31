@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ID3PieOptions extends js.Object {
   var callbacks: js.UndefOr[d3pieLib.Anon_OnMouseoverSegment] = js.undefined
   var data: d3pieLib.Anon_SmallSegmentGrouping

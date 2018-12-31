@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GeoPoint extends js.Object {
   /** Altitude above the reference ellipsoid, in meters. */
   var altitude: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditorColours extends js.Object {
   var atom: java.lang.String
   var attribute: java.lang.String

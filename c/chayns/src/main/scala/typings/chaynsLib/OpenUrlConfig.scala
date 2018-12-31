@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // chayns.openUrl()
-
 trait OpenUrlConfig extends js.Object {
   var darkenBackground: js.UndefOr[scala.Boolean] = js.undefined
   var exclusiveView: js.UndefOr[scala.Boolean] = js.undefined

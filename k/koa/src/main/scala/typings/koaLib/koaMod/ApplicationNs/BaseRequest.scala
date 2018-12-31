@@ -9,25 +9,25 @@ import scala.scalajs.js.annotation._
 trait BaseRequest
   extends koaLib.koaMod.ContextDelegatedRequest {
   /**
-           * Get the charset when present or undefined.
-           */
+    * Get the charset when present or undefined.
+    */
   var charset: java.lang.String = js.native
   /**
-           * Return parsed Content-Length when present.
-           */
+    * Return parsed Content-Length when present.
+    */
   var length: scala.Double = js.native
   /**
-           * Return the request mime type void of
-           * parameters such as "charset".
-           */
+    * Return the request mime type void of
+    * parameters such as "charset".
+    */
   var `type`: java.lang.String = js.native
   /**
-           * Inspect implementation.
-           */
+    * Inspect implementation.
+    */
   def inspect(): js.Any = js.native
   /**
-           * Return JSON representation.
-           */
+    * Return JSON representation.
+    */
   def toJSON(): js.Any = js.native
 }
 

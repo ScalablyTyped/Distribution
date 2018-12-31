@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait User extends js.Object {
   /** [Output Only] Creation timestamp in RFC3339 text format. */
   var creationTimestamp: js.UndefOr[java.lang.String] = js.undefined
@@ -20,9 +19,9 @@ trait User extends js.Object {
   /** Name of the resource; provided by the client when the resource is created. */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Email address of account's owner. This account will be validated to make sure it exists. The email can belong to any domain, but it must be tied to a
-               * Google account.
-               */
+    * Email address of account's owner. This account will be validated to make sure it exists. The email can belong to any domain, but it must be tied to a
+    * Google account.
+    */
   var owner: js.UndefOr[java.lang.String] = js.undefined
   /** [Output Only] Public keys that this user may use to login. */
   var publicKeys: js.UndefOr[js.Array[PublicKey]] = js.undefined

@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * @namespace
- * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.timeout
- */
+  * @namespace
+  * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.timeout
+  */
 @JSGlobal("chrome.cast.media.timeout")
 @js.native
 object timeoutNs extends js.Object {

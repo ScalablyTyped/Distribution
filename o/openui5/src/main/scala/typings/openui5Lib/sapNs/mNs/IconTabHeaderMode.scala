@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait IconTabHeaderMode extends js.Object
 
 /**
-     * Specifies <code>IconTabBar</code> header mode.
-    */
+  * Specifies <code>IconTabBar</code> header mode.
+  */
 @JSGlobal("sap.m.IconTabHeaderMode")
 @js.native
 object IconTabHeaderMode extends js.Object {

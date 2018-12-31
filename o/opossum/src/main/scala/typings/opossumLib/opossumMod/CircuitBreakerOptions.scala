@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CircuitBreakerOptions extends js.Object {
   var allowWarmUp: js.UndefOr[scala.Boolean] = js.undefined
   var capacity: js.UndefOr[scala.Double] = js.undefined

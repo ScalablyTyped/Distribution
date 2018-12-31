@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateOperatorOptions extends js.Object {
   var commutator: js.UndefOr[Name] = js.undefined
   var hashes: js.UndefOr[scala.Boolean] = js.undefined

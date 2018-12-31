@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NullableType extends js.Object {
   var AllLiteral: doctrineLib.doctrineLibStrings.AllLiteral
   var ArrayType: doctrineLib.doctrineLibStrings.ArrayType

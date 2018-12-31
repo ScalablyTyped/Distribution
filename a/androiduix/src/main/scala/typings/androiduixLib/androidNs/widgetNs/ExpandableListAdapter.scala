@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExpandableListAdapter extends js.Object {
   def areAllItemsEnabled(): scala.Boolean
   def getChild(groupPosition: scala.Double, childPosition: scala.Double): js.Any

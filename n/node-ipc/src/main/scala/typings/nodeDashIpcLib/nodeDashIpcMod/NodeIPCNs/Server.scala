@@ -17,12 +17,12 @@ trait Server extends Client {
   def emit(socket: nodeLib.netMod.Socket, event: java.lang.String, value: js.Any): Server = js.native
   def emit(value: js.Any): Client = js.native
   /**
-           * start serving need top call serve or serveNet first to set up the server
-           */
+    * start serving need top call serve or serveNet first to set up the server
+    */
   def start(): scala.Unit = js.native
   /**
-           * close the server and stop serving
-           */
+    * close the server and stop serving
+    */
   def stop(): scala.Unit = js.native
 }
 

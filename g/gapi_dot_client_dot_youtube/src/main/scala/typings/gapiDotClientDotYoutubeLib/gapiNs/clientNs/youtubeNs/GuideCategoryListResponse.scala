@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GuideCategoryListResponse extends js.Object {
   /** Etag of this resource. */
   var etag: js.UndefOr[java.lang.String] = js.undefined
   /** Serialized EventId of the request which produced this response. */
   var eventId: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * A list of categories that can be associated with YouTube channels. In this map, the category ID is the map key, and its value is the corresponding
-               * guideCategory resource.
-               */
+    * A list of categories that can be associated with YouTube channels. In this map, the category ID is the map key, and its value is the corresponding
+    * guideCategory resource.
+    */
   var items: js.UndefOr[js.Array[GuideCategory]] = js.undefined
   /** Identifies what kind of resource this is. Value: the fixed string "youtube#guideCategoryListResponse". */
   var kind: js.UndefOr[java.lang.String] = js.undefined

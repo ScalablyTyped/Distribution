@@ -54,9 +54,6 @@ trait Row extends Style {
     opt: exceljsLib.Anon_IncludeEmpty,
     callback: js.Function2[/* cell */ Cell, /* colNumber */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
-  /**
-  	 * Get cell by number, column letter or column key
-  	 */
   def getCell(indexOrKey: java.lang.String): Cell = js.native
   /**
   	 * Get cell by number, column letter or column key

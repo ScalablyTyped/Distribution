@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // http://foundation.zurb.com/docs/components/range_slider.html
-
 trait SliderOptions extends js.Object {
   var end: js.UndefOr[scala.Double] = js.undefined
   var initial: js.UndefOr[scala.Double] = js.undefined

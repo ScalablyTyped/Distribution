@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Numerator extends js.Object {
   var denominator: scala.Double
   var numerator: scala.Double

@@ -9,16 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced protected () extends SonicBoom {
   /**
-       * @param [fileDescriptor] File path or numerical file descriptor
-       * relative protocol is enabled. Default: process.stdout
-       * @returns a new sonic-boom instance
-       */
+    * @param [fileDescriptor] File path or numerical file descriptor
+    * relative protocol is enabled. Default: process.stdout
+    * @returns a new sonic-boom instance
+    */
   def this(fileDescriptor: java.lang.String) = this()
-  /**
-       * @param [fileDescriptor] File path or numerical file descriptor
-       * relative protocol is enabled. Default: process.stdout
-       * @returns a new sonic-boom instance
-       */
   def this(fileDescriptor: scala.Double) = this()
 }
 

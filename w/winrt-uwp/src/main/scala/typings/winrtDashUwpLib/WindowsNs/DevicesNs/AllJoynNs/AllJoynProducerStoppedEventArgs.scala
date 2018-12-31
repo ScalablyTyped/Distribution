@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class AllJoynProducerStoppedEventArgs protected () extends js.Object {
   /**
-                   * Generates an object containing status information for the stopped Producer app.
-                   * @param status An AllJoyn status code that indicates why the Producer was stopped.
-                   */
+    * Generates an object containing status information for the stopped Producer app.
+    * @param status An AllJoyn status code that indicates why the Producer was stopped.
+    */
   def this(status: scala.Double) = this()
   /** Returns an AllJoyn status code that indicates why the Producer was stopped. Common values are defined by AllJoynStatus . */
   var status: scala.Double = js.native

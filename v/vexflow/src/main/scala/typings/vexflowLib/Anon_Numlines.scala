@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Numlines extends js.Object {
   var fill_style: js.UndefOr[java.lang.String] = js.undefined
   var glyph_spacing_px: js.UndefOr[scala.Double] = js.undefined

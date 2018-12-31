@@ -15,16 +15,13 @@ trait Joyride
   def reset(): scala.Unit = js.native
   def reset(restart: scala.Boolean): scala.Unit = js.native
   /**
-       * Please don't use the `start` and `stop` methods anymore. Instead use a combination of the props `run` and `autoStart`.
-       */
+    * Please don't use the `start` and `stop` methods anymore. Instead use a combination of the props `run` and `autoStart`.
+    */
   /* private */ def start(): scala.Unit = js.native
-  /**
-       * Please don't use the `start` and `stop` methods anymore. Instead use a combination of the props `run` and `autoStart`.
-       */
   /* private */ def start(autorun: scala.Boolean): scala.Unit = js.native
   /**
-       * Please don't use the `start` and `stop` methods anymore. Instead use a combination of the props `run` and `autoStart`.
-       */
+    * Please don't use the `start` and `stop` methods anymore. Instead use a combination of the props `run` and `autoStart`.
+    */
   /* private */ def stop(): scala.Unit = js.native
 }
 

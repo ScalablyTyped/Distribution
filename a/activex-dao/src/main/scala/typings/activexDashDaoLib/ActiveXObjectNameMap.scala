@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActiveXObjectNameMap extends js.Object {
   var `DAO.DBEngine`: activexDashDaoLib.DAONs.DBEngine
   var `DAO.Field`: activexDashDaoLib.DAONs.Field

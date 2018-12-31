@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompilationHooks extends js.Object {
   var additionalAssets: tapableLib.tapableMod.AsyncSeriesHook[_, _, _]
   var additionalChunkAssets: tapableLib.tapableMod.SyncHook[js.Array[Chunk], _, _]

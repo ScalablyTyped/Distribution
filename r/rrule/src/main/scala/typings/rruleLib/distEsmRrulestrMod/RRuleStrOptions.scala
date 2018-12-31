@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RRuleStrOptions extends js.Object {
   var cache: scala.Boolean
   var compatible: scala.Boolean

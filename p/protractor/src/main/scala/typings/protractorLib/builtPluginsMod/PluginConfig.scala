@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PluginConfig
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var `inline`: js.UndefOr[ProtractorPlugin] = js.undefined

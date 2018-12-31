@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EstimatedRowSize extends js.Object {
   var disableHeader: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`false`
   var estimatedRowSize: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`30`

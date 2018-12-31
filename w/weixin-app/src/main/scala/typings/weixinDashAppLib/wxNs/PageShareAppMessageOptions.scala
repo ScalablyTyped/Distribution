@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 // #endregion
 // #region Page
-
 trait PageShareAppMessageOptions extends js.Object {
   /** 转发事件来源。button：页面内转发按钮；menu：右上角转发菜单 */
   var from: weixinDashAppLib.weixinDashAppLibStrings.button | weixinDashAppLib.weixinDashAppLibStrings.menu

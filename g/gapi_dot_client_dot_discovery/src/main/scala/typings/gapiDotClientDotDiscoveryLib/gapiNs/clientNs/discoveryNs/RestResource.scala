@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RestResource extends js.Object {
   /** Methods on this resource. */
   var methods: js.UndefOr[stdLib.Record[java.lang.String, RestMethod]] = js.undefined

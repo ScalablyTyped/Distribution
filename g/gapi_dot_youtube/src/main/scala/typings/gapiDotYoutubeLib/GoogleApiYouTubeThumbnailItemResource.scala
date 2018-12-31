@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GoogleApiYouTubeThumbnailItemResource extends js.Object {
   /**
-       * The images height.
-       */
+    * The images height.
+    */
   var height: scala.Double
   /**
-       * The images URL.
-       */
+    * The images URL.
+    */
   var url: java.lang.String
   /**
-       * The images width.
-       */
+    * The images width.
+    */
   var width: scala.Double
 }
 

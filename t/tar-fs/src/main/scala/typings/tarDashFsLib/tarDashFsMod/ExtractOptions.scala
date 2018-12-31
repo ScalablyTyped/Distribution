@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExtractOptions extends Options {
   @JSName("filter")
   var filter_ExtractOptions: js.UndefOr[

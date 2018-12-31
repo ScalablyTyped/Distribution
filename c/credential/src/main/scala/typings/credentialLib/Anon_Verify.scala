@@ -14,7 +14,6 @@ trait Anon_Verify extends js.Object {
   // iterations(work: number, base): number;
   def verify(hash: credentialLib.credentialMod.hashObject, password: java.lang.String, callback: VerifyCallback): scala.Unit = js.native
   def verify(hash: java.lang.String, password: java.lang.String): js.Promise[scala.Boolean] = js.native
-  // iterations(work: number, base): number;
   def verify(hash: java.lang.String, password: java.lang.String, callback: VerifyCallback): scala.Unit = js.native
 }
 

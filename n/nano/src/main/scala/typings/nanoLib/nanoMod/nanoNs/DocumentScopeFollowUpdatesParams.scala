@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DocumentScopeFollowUpdatesParams extends js.Object {
   var feed: js.UndefOr[nanoLib.nanoLibStrings.continuous] = js.undefined
   var filter: js.UndefOr[java.lang.String | FollowUpdatesParamsFilterFunction] = js.undefined

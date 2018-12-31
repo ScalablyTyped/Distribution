@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait contextDefinition extends js.Object {
   var cssSelector: js.UndefOr[java.lang.String] = js.undefined
   var priority: js.UndefOr[scala.Double] = js.undefined

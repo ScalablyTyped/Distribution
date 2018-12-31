@@ -16,9 +16,9 @@ abstract class AdvancedPhotoControl () extends js.Object {
   /** Gets a list of the advanced capture modes supported by the current capture device. */
   var supportedModes: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[AdvancedPhotoMode] = js.native
   /**
-                   * Configures the AdvancedPhotoControl object with the specified settings.
-                   * @param settings The object defining the configuration settings.
-                   */
+    * Configures the AdvancedPhotoControl object with the specified settings.
+    * @param settings The object defining the configuration settings.
+    */
   def configure(settings: AdvancedPhotoCaptureSettings): scala.Unit = js.native
 }
 

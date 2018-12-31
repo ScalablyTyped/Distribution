@@ -24,8 +24,6 @@ trait FontFaceSet
   // return whether all fonts in the fontlist are loaded
   // (does not initiate load if not available)
   def check(font: java.lang.String): scala.Boolean = js.native
-  // return whether all fonts in the fontlist are loaded
-  // (does not initiate load if not available)
   def check(font: java.lang.String, text: java.lang.String): scala.Boolean = js.native
   // check and start loads if appropriate
   // and fulfill promise when all loads complete
@@ -34,8 +32,6 @@ trait FontFaceSet
       cssDashFontDashLoadingDashModuleLib.cssDashFontDashLoadingDashModuleMod.Global.FontFace
     ]
   ] = js.native
-  // check and start loads if appropriate
-  // and fulfill promise when all loads complete
   def load(font: java.lang.String, text: java.lang.String): js.Promise[
     js.Array[
       cssDashFontDashLoadingDashModuleLib.cssDashFontDashLoadingDashModuleMod.Global.FontFace

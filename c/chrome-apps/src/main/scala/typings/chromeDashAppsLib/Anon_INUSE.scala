@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_INUSE extends js.Object {
   var ABORT: chromeDashAppsLib.chromeDashAppsLibStrings.ABORT
   var ACCESS_DENIED: chromeDashAppsLib.chromeDashAppsLibStrings.ACCESS_DENIED

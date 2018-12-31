@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AvailableOffer extends js.Object {
   /** The number of codes for this offer that are available for distribution. */
   var available: js.UndefOr[scala.Double] = js.undefined

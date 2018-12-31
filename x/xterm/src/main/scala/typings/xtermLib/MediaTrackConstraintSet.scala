@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaTrackConstraintSet extends js.Object {
   var aspectRatio: js.UndefOr[scala.Double | ConstrainDoubleRange] = js.undefined
   var channelCount: js.UndefOr[scala.Double | ConstrainLongRange] = js.undefined

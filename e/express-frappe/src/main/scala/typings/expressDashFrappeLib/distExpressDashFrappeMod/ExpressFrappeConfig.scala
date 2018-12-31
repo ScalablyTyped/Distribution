@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExpressFrappeConfig extends js.Object {
   var bodyParser: js.UndefOr[scala.Boolean | expressDashFrappeLib.Anon_Urlencoded] = js.undefined
   var cors: js.UndefOr[scala.Boolean | corsLib.corsMod.eNs.CorsOptions] = js.undefined

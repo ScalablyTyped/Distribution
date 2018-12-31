@@ -15,32 +15,32 @@ abstract class RandomAccessStream () extends js.Object
 @js.native
 object RandomAccessStream extends js.Object {
   /**
-                   * Copies a source stream to a destination stream and waits for the copy operation to complete.
-                   * @param source The stream to copy data from.
-                   * @param destination The stream to copy data to.
-                   * @return The asynchronous operation.
-                   */
+    * Copies a source stream to a destination stream and waits for the copy operation to complete.
+    * @param source The stream to copy data from.
+    * @param destination The stream to copy data to.
+    * @return The asynchronous operation.
+    */
   def copyAndCloseAsync(
     source: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IInputStream,
     destination: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IOutputStream
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[scala.Double, scala.Double] = js.native
   /**
-                   * Copies a source stream to a destination stream.
-                   * @param source The stream to copy data from.
-                   * @param destination The stream to copy data to.
-                   * @return The asynchronous operation.
-                   */
+    * Copies a source stream to a destination stream.
+    * @param source The stream to copy data from.
+    * @param destination The stream to copy data to.
+    * @return The asynchronous operation.
+    */
   def copyAsync(
     source: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IInputStream,
     destination: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IOutputStream
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[scala.Double, scala.Double] = js.native
   /**
-                   * Copies the specified number of bytes from a source stream to a destination stream.
-                   * @param source The stream to copy data from.
-                   * @param destination The stream to copy data to.
-                   * @param bytesToCopy The number of bytes to copy.
-                   * @return The asynchronous operation.
-                   */
+    * Copies the specified number of bytes from a source stream to a destination stream.
+    * @param source The stream to copy data from.
+    * @param destination The stream to copy data to.
+    * @param bytesToCopy The number of bytes to copy.
+    * @return The asynchronous operation.
+    */
   def copyAsync(
     source: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IInputStream,
     destination: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IOutputStream,

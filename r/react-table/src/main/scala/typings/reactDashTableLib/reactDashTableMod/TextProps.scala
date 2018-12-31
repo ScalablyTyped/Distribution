@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextProps extends js.Object {
   /** Default: 'Loading...' */
   var loadingText: reactLib.reactMod.ReactNs.ReactNode

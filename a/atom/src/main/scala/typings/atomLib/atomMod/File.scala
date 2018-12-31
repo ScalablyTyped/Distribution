@@ -11,22 +11,20 @@ class File protected () extends js.Object {
   // Construction
   /** Configures a new File instance, no files are accessed. */
   def this(filePath: java.lang.String) = this()
-  // Construction
-  /** Configures a new File instance, no files are accessed. */
   def this(filePath: java.lang.String, symlink: scala.Boolean) = this()
   /**
-       *  Creates the file on disk that corresponds to ::getPath() if no such file
-       *  already exists.
-       */
+    *  Creates the file on disk that corresponds to ::getPath() if no such file
+    *  already exists.
+    */
   def create(): js.Promise[scala.Boolean] = js.native
   /** Returns a stream to read the content of the file. */
   def createReadStream(): nodeLib.fsMod.ReadStream = js.native
   /** Returns a stream to write content to the file. */
   def createWriteStream(): nodeLib.fsMod.WriteStream = js.native
   /**
-       *  Returns a promise that resolves to a boolean, true if the file exists,
-       *  false otherwise.
-       */
+    *  Returns a promise that resolves to a boolean, true if the file exists,
+    *  false otherwise.
+    */
   def exists(): js.Promise[scala.Boolean] = js.native
   /** Returns a boolean, true if the file exists, false otherwise. */
   def existsSync(): scala.Boolean = js.native
@@ -45,17 +43,17 @@ class File protected () extends js.Object {
   /** Returns the string path for the file. */
   def getPath(): java.lang.String = js.native
   /**
-       *  Returns a promise that resolves to the file's completely resolved
-       *  string path.
-       */
+    *  Returns a promise that resolves to the file's completely resolved
+    *  string path.
+    */
   def getRealPath(): js.Promise[java.lang.String] = js.native
   /** Returns this file's completely resolved string path. */
   def getRealPathSync(): java.lang.String = js.native
   /** Returns a boolean, always false. */
-  def isDirectory(): /* is Directory */scala.Boolean = js.native
+  def isDirectory(): /* is atom.atom.Directory */ scala.Boolean = js.native
   // File Metadata
   /** Returns a boolean, always true. */
-  def isFile(): /* is File */scala.Boolean = js.native
+  def isFile(): /* is atom.atom.File */ scala.Boolean = js.native
   /** Returns a boolean indicating whether or not this is a symbolic link. */
   def isSymbolicLink(): scala.Boolean = js.native
   // Event Subscription
@@ -66,16 +64,14 @@ class File protected () extends js.Object {
   /** Invoke the given callback when the file's path changes. */
   def onDidRename(callback: js.Function0[scala.Unit]): Disposable = js.native
   /**
-       *  Invoke the given callback when there is an error with the watch. When
-       *  your callback has been invoked, the file will have unsubscribed from the
-       *  file watches.
-       */
+    *  Invoke the given callback when there is an error with the watch. When
+    *  your callback has been invoked, the file will have unsubscribed from the
+    *  file watches.
+    */
   def onWillThrowWatchError(callback: js.Function1[/* event */ PathWatchErrorThrownEvent, scala.Unit]): Disposable = js.native
   // Reading and Writing
   /** Reads the contents of the file. */
   def read(): js.Promise[java.lang.String | scala.Null] = js.native
-  // Reading and Writing
-  /** Reads the contents of the file. */
   def read(flushCache: scala.Boolean): js.Promise[java.lang.String | scala.Null] = js.native
   /** Sets the file's character set encoding name. */
   def setEncoding(encoding: java.lang.String): scala.Unit = js.native

@@ -8,11 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("node-forge", "pem")
 @js.native
 object pemNs extends js.Object {
-  
   trait EncodeOptions extends js.Object {
     var maxline: js.UndefOr[scala.Double] = js.undefined
   }
-  
   
   trait ObjectPEM extends js.Object {
     var body: nodeDashForgeLib.nodeDashForgeMod.Bytes

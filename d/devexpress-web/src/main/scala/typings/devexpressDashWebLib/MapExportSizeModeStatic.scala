@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapExportSizeModeStatic extends js.Object {
   /**
-       * A map dashboard item is exported in a size identical to that shown on the dashboard
-       */
+    * A map dashboard item is exported in a size identical to that shown on the dashboard
+    */
   var None: java.lang.String
   /**
-       * A map dashboard item is resized proportionally to best fit the exported page.
-       */
+    * A map dashboard item is resized proportionally to best fit the exported page.
+    */
   var Zoom: java.lang.String
 }
 

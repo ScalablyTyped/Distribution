@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RedomComponent extends js.Object {
   var el: stdLib.HTMLElement
   var onmount: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

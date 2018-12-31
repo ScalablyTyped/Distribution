@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Info extends js.Object {
   var _duration_hms: java.lang.String
   var _duration_raw: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ForOfStatement extends BaseNode {
   var await: scala.Boolean
   var body: Statement

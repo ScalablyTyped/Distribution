@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PrettyPrintProposalIdQuotaUserKey extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -20,14 +19,14 @@ trait Anon_PrettyPrintProposalIdQuotaUserKey extends js.Object {
   /** The proposal id to update. */
   var proposalId: java.lang.String
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The last known revision number to update. If the head revision in the marketplace database has since changed, an error will be thrown. The caller
-                   * should then fetch the latest proposal at head revision and retry the update at that revision.
-                   */
+    * The last known revision number to update. If the head revision in the marketplace database has since changed, an error will be thrown. The caller
+    * should then fetch the latest proposal at head revision and retry the update at that revision.
+    */
   var revisionNumber: java.lang.String
   /** The proposed action to take on the proposal. This field is required and it must be set when updating a proposal. */
   var updateAction: java.lang.String

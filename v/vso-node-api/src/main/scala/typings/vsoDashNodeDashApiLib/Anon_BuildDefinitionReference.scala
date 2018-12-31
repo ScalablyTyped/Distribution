@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BuildDefinitionReference extends js.Object {
   var AgentStatus: Anon_EnumValuesAnonOfflineUnavailable
   var AuditAction: Anon_EnumValuesAnonUpdateDelete

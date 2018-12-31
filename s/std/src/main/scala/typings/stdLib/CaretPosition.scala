@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CaretPosition extends js.Object {
   val offset: scala.Double
   val offsetNode: Node

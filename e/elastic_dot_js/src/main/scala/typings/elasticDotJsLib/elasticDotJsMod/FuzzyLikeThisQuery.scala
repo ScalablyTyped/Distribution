@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class FuzzyLikeThisQuery protected ()
   extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.FuzzyLikeThisQuery {
   /*
-       Constructs a query where each documents returned are “like” provided text
-       */
+    Constructs a query where each documents returned are “like” provided text
+    */
   def this(likeText: java.lang.String) = this()
 }
 

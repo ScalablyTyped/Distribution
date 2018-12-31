@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GoogleApiOptions extends js.Object {
   var LoadingContainer: js.UndefOr[js.Any] = js.undefined
   var apiKey: java.lang.String

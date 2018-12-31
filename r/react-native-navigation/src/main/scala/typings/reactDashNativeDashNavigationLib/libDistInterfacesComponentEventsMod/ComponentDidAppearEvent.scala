@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ComponentDidAppearEvent extends ComponentEvent {
   var componentName: java.lang.String
 }

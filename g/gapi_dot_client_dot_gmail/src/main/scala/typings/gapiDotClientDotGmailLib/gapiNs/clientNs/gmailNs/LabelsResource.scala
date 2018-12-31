@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LabelsResource extends js.Object {
   /** Creates a new label. */
   def create(request: gapiDotClientDotGmailLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Label]

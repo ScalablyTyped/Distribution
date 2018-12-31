@@ -42,22 +42,12 @@ object Commit extends js.Object {
     signatureField: java.lang.String
   ): js.Promise[nodegitLib.oidMod.Oid] = js.native
   /**
-       * Retrieves the commit pointed to by the oid
-       *
-       *
-       */
+    * Retrieves the commit pointed to by the oid
+    *
+    *
+    */
   def lookup(repo: nodegitLib.repositoryMod.Repository, id: java.lang.String): js.Promise[nodegitLib.commitMod.Commit] = js.native
-  /**
-       * Retrieves the commit pointed to by the oid
-       *
-       *
-       */
   def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.commitMod.Commit): js.Promise[nodegitLib.commitMod.Commit] = js.native
-  /**
-       * Retrieves the commit pointed to by the oid
-       *
-       *
-       */
   def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid): js.Promise[nodegitLib.commitMod.Commit] = js.native
   def lookupPrefix(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid, len: scala.Double): js.Promise[nodegitLib.commitMod.Commit] = js.native
 }

@@ -18,18 +18,14 @@ trait FBSDKCanvas extends js.Object {
   def setAutoGrow(stopTimer: scala.Boolean): scala.Unit = js.native
   def setAutoGrow(stopTimer: scala.Boolean, diffInterval: stdLib.Number): scala.Unit = js.native
   /* Calls you back with an integer, in milliseconds, of the timing of the page load, beginning from the time when the first bytes arrive on
-          the client, and ending from the point at which you call this function.
-      */
+    the client, and ending from the point at which you call this function.
+    */
   def setDoneLoading(): FBSDKCanvasDoneLoading = js.native
-  /* Calls you back with an integer, in milliseconds, of the timing of the page load, beginning from the time when the first bytes arrive on
-          the client, and ending from the point at which you call this function.
-      */
   def setDoneLoading(handler: js.Function): FBSDKCanvasDoneLoading = js.native
   /* Tells Facebook to resize your iframe. */
   def setSize(canvasSizeOptions: FBSDKCanvasSize): scala.Unit = js.native
   /* Registers the callback for inline processing (i.e. without page reload) of user actions when they click on any link to the current app from Canvas */
   def setUrlHandler(): java.lang.String = js.native
-  /* Registers the callback for inline processing (i.e. without page reload) of user actions when they click on any link to the current app from Canvas */
   def setUrlHandler(handler: js.Function): java.lang.String = js.native
   /* Displays the HTML element passed in via the elem param, after it has been hidden via FB.Canvas.hideFlashElement. */
   def showFlashElement(element: stdLib.Element): scala.Unit = js.native
@@ -38,7 +34,6 @@ trait FBSDKCanvas extends js.Object {
   def startTimer(): scala.Unit = js.native
   /* Call stopTimer when you wish to stop timing the page load for a period of time */
   def stopTimer(): scala.Unit = js.native
-  /* Call stopTimer when you wish to stop timing the page load for a period of time */
   def stopTimer(handler: js.Function1[/* fbResponseObject */ js.Object, _]): scala.Unit = js.native
 }
 

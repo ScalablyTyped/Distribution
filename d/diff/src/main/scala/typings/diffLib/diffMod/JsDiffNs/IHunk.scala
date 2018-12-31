@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHunk extends js.Object {
   var lines: js.Array[java.lang.String]
   var newLines: scala.Double

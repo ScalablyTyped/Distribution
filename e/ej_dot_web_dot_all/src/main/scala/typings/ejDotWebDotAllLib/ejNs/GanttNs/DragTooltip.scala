@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DragTooltip extends js.Object {
   /** Specifies option to enable/disable tooltip while drag and drop a row.
-               * @Default {true}
-               */
+    * @Default {true}
+    */
   var showTooltip: js.UndefOr[scala.Boolean] = js.undefined
   /** Specifies the data source fields to be displayed in the drag tooltip.
-               * @Default {[]}
-               */
+    * @Default {[]}
+    */
   var tooltipItems: js.UndefOr[js.Array[_]] = js.undefined
   /** Specifies the custom template for drag tooltip.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var tooltipTemplate: js.UndefOr[java.lang.String] = js.undefined
 }
 

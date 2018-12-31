@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Address details.
- */
-
+  * Address details.
+  */
 trait EmailAddress extends js.Object {
   /**
   	 * The email address.

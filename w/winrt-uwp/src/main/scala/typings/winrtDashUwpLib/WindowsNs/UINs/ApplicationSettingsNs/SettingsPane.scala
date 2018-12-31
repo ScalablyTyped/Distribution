@@ -35,9 +35,9 @@ object SettingsPane extends js.Object {
   /** Gets a value indicating whether the Settings charm appears on the left or right edge of the screen. */
   var edge: winrtDashUwpLib.WindowsNs.UINs.ApplicationSettingsNs.SettingsEdgeLocation = js.native
   /**
-                   * Gets a SettingsPane object that is associated with the current app view (that is, with CoreWindow ).
-                   * @return The settings pane.
-                   */
+    * Gets a SettingsPane object that is associated with the current app view (that is, with CoreWindow ).
+    * @return The settings pane.
+    */
   def getForCurrentView(): winrtDashUwpLib.WindowsNs.UINs.ApplicationSettingsNs.SettingsPane = js.native
   /** Displays the Settings Charm pane to the user. */
   def show(): scala.Unit = js.native

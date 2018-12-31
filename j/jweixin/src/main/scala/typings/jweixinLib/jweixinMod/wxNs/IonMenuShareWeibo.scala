@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IonMenuShareWeibo extends BaseParams {
    // 分享标题
   var desc: java.lang.String

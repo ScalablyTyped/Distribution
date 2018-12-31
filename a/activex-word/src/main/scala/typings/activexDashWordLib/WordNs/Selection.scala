@@ -90,7 +90,6 @@ class Selection protected () extends js.Object {
   def ClearParagraphStyle(): scala.Unit = js.native
   /** @param WdCollapseDirection [Direction=wdCollapseStart] */
   def Collapse(): scala.Unit = js.native
-  /** @param WdCollapseDirection [Direction=wdCollapseStart] */
   def Collapse(Direction: WdCollapseDirection): scala.Unit = js.native
   def ConvertToTable(
     Separator: js.UndefOr[js.Any],
@@ -146,17 +145,17 @@ class Selection protected () extends js.Object {
   def Expand(): scala.Double = js.native
   def Expand(Unit: js.Any): scala.Double = js.native
   /**
-           * @param boolean [OpenAfterExport=false]
-           * @param Word.WdExportOptimizeFor [OptimizeFor=0]
-           * @param boolean [ExportCurrentPage=false]
-           * @param Word.WdExportItem [Item=0]
-           * @param boolean [IncludeDocProps=false]
-           * @param boolean [KeepIRM=true]
-           * @param Word.WdExportCreateBookmarks [CreateBookmarks=0]
-           * @param boolean [DocStructureTags=true]
-           * @param boolean [BitmapMissingFonts=true]
-           * @param boolean [UseISO19005_1=false]
-           */
+    * @param boolean [OpenAfterExport=false]
+    * @param Word.WdExportOptimizeFor [OptimizeFor=0]
+    * @param boolean [ExportCurrentPage=false]
+    * @param Word.WdExportItem [Item=0]
+    * @param boolean [IncludeDocProps=false]
+    * @param boolean [KeepIRM=true]
+    * @param Word.WdExportCreateBookmarks [CreateBookmarks=0]
+    * @param boolean [DocStructureTags=true]
+    * @param boolean [BitmapMissingFonts=true]
+    * @param boolean [UseISO19005_1=false]
+    */
   def ExportAsFixedFormat(
     OutputFileName: java.lang.String,
     ExportFormat: WdExportFormat,
@@ -455,7 +454,6 @@ class Selection protected () extends js.Object {
   def WholeStory(): scala.Unit = js.native
   /** @param boolean [DataOnly=false] */
   def XML(): java.lang.String = js.native
-  /** @param boolean [DataOnly=false] */
   def XML(DataOnly: scala.Boolean): java.lang.String = js.native
 }
 

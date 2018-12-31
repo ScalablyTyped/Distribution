@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * A picker column, representing a selectable group of items in a <Titanium.UI.Picker>.
 		 */
-
 trait PickerColumn
   extends titaniumLib.TitaniumNs.Proxy {
   /**

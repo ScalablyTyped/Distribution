@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MaterialAppearance extends Appearance {
   val faceForward: scala.Boolean
   val flat: scala.Boolean

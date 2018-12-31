@@ -39,14 +39,14 @@ class Reaction protected ()
   override var observing_IDerivation: js.Array[mobxLib.libCoreObservableMod.IObservable] = js.native
   var onInvalidate: js.Any = js.native
   /**
-       * Id of the current run of a derivation. Each time the derivation is tracked
-       * this number is increased by one. This number is globally unique
-       */
+    * Id of the current run of a derivation. Each time the derivation is tracked
+    * this number is increased by one. This number is globally unique
+    */
   /* CompleteClass */
   override var runId: scala.Double = js.native
   /**
-       * amount of dependencies used by the derivation in this run, which has not been bound yet.
-       */
+    * amount of dependencies used by the derivation in this run, which has not been bound yet.
+    */
   /* CompleteClass */
   override var unboundDepsCount: scala.Double = js.native
   def getDisposer(): IReactionDisposer = js.native
@@ -55,8 +55,8 @@ class Reaction protected ()
   override def onBecomeStale(): scala.Unit = js.native
   def reportExceptionInDerivation(error: js.Any): scala.Unit = js.native
   /**
-       * internal, use schedule() if you intend to kick off a reaction
-       */
+    * internal, use schedule() if you intend to kick off a reaction
+    */
   def runReaction(): scala.Unit = js.native
   def schedule(): scala.Unit = js.native
   def track(fn: js.Function0[scala.Unit]): scala.Unit = js.native

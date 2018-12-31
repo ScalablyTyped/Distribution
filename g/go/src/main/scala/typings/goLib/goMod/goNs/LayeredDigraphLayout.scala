@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * This arranges nodes into layers.
-    * The method uses a hierarchical approach
-    * for creating drawings of digraphs with nodes arranged in layers.
-    * The layout algorithm consists of four-major steps: Cycle Removal,
-    * Layer Assignment, Crossing Reduction, and Straightening and Packing.
-    */
+  * This arranges nodes into layers.
+  * The method uses a hierarchical approach
+  * for creating drawings of digraphs with nodes arranged in layers.
+  * The layout algorithm consists of four-major steps: Cycle Removal,
+  * Layer Assignment, Crossing Reduction, and Straightening and Packing.
+  */
 @js.native
 trait LayeredDigraphLayout extends Layout {
   /**Gets or sets which aggressive option is being used to look for link crossings.*/
@@ -46,23 +46,23 @@ trait LayeredDigraphLayout extends Layout {
   /**Gets or sets whether the FromSpot and ToSpot of each link should be set to values appropriate for the given value of LayeredDigraphLayout.direction.*/
   var setsPortSpots: scala.Boolean = js.native
   /**
-          * Assigns every vertex in the input network to a layer.
-          */
+    * Assigns every vertex in the input network to a layer.
+    */
   def assignLayers(): scala.Unit = js.native
   /**
-          * This overridable method is called by commitLayout
-          * to support custom arrangement of bands or labels across each layout layer.
-          * @param Array<*> layerRects an Array of Rects with the bounds of each of the "layers"
-          * @param {Point} offset the position of the top-left corner of the banded area relative to the coordinates given by the layerRects
-          */
+    * This overridable method is called by commitLayout
+    * to support custom arrangement of bands or labels across each layout layer.
+    * @param Array<*> layerRects an Array of Rects with the bounds of each of the "layers"
+    * @param {Point} offset the position of the top-left corner of the banded area relative to the coordinates given by the layerRects
+    */
   def commitLayers(layerRects: js.Array[Rect], offset: Point): scala.Unit = js.native
   /**
-          * Routes the links.
-          */
+    * Routes the links.
+    */
   def commitLinks(): scala.Unit = js.native
   /**
-          * Lays out the nodes.
-          */
+    * Lays out the nodes.
+    */
   def commitNodes(): scala.Unit = js.native
     // undocumented
   /* protected */ def nodeMinColumnSpace(v: LayeredDigraphVertex, tl: scala.Boolean): scala.Double = js.native

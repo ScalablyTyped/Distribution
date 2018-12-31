@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MessageOpens extends js.Object {
   var Client: VendorTrackingInfo
   var FirstOpen: scala.Boolean

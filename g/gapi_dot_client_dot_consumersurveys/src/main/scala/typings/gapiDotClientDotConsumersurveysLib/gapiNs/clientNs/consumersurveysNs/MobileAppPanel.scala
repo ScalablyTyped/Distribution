@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MobileAppPanel extends js.Object {
   var country: js.UndefOr[java.lang.String] = js.undefined
   var isPublicPanel: js.UndefOr[scala.Boolean] = js.undefined

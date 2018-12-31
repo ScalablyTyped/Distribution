@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGlobalizationPreferencesStatics extends js.Object {
   var calendars: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String]
   var clocks: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String]

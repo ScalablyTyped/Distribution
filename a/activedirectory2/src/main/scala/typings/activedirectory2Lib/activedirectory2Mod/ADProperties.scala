@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ADProperties extends js.Object {
   var attributes: js.UndefOr[activedirectory2Lib.Anon_Group] = js.undefined
   var baseDN: java.lang.String

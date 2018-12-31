@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** The ConnectionProfileFilter class defines a set of properties that are used to improve the relevance of FindConnectionProfilesAsync results. */
 @JSGlobal("Windows.Networking.Connectivity.ConnectionProfileFilter")
 @js.native
+/** Creates an instance of ConnectionProfileFilter , which contains a set of properties that are used to improve the relevance of FindConnectionProfilesAsync results. */
 class ConnectionProfileFilter () extends js.Object {
   /** Gets or sets whether background data usage is restricted by this connection profile filter. */
   var isBackgroundDataUsageRestricted: scala.Boolean = js.native

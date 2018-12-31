@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Bordered extends js.Object {
   var bordered: scala.Boolean
   var className: java.lang.String

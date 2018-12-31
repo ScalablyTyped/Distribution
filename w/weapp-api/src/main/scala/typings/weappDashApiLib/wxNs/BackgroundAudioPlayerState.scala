@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BackgroundAudioPlayerState extends js.Object {
   /** 选定音频的播放位置（单位：s），只有在当前有音乐播放时返回 */
   var currentPosition: js.UndefOr[scala.Double] = js.undefined

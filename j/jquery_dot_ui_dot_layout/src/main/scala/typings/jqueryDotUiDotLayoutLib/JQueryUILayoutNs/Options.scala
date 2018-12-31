@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends PaneOptions {
   var center: js.UndefOr[PaneOptions] = js.undefined
   var center__applyDefaultStyles: js.UndefOr[scala.Boolean] = js.undefined

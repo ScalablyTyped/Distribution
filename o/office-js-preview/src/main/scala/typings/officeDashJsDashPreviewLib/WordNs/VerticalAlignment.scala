@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait VerticalAlignment extends js.Object
 
 /**
-     * [Api set: WordApi]
-     */
+  * [Api set: WordApi]
+  */
 @JSGlobal("Word.VerticalAlignment")
 @js.native
 object VerticalAlignment extends js.Object {

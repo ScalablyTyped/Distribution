@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // lifecycle: https://github.com/acdlite/recompose/blob/master/docs/API.md#lifecycle
-
 trait ReactLifeCycleFunctions[TProps, TState, TInstance] extends js.Object {
   var componentDidMount: js.UndefOr[
     js.ThisFunction0[

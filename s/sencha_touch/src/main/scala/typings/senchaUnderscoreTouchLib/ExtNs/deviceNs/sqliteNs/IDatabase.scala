@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDatabase
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Verifies and changes the version of the database at the same time as doing a schema update with a Ext device sqlite S

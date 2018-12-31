@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RemoteConfigParameterValue extends js.Object {
   /** if true, omit the parameter from the map of fetched parameter values */
   var useInAppDefault: js.UndefOr[scala.Boolean] = js.undefined

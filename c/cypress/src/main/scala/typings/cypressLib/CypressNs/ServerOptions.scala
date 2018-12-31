@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-   * Setting default options for cy.server()
-   * @see https://on.cypress.io/server
-   */
-
+  * Setting default options for cy.server()
+  * @see https://on.cypress.io/server
+  */
 trait ServerOptions extends js.Object {
   var delay: scala.Double
   var enable: scala.Boolean

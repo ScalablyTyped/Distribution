@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenCourseIdPrettyPrintBearertoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -19,10 +18,10 @@ trait Anon_AccesstokenCourseIdPrettyPrintBearertoken extends js.Object {
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Identifier of the course.
-                   * This identifier can be either the Classroom-assigned identifier or an
-                   * alias.
-                   */
+    * Identifier of the course.
+    * This identifier can be either the Classroom-assigned identifier or an
+    * alias.
+    */
   var courseId: java.lang.String
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined

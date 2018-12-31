@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MultichannelAddress extends js.Object {
   /** SparkPost Enterprise API only. Required if channel is “gcm” or “apns” */
   var app_id: java.lang.String

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a single wallet transaction in the transaction history. */
 @JSGlobal("Windows.ApplicationModel.Wallet.WalletTransaction")
 @js.native
+/** Initializes a new instance of the WalletTransaction class. */
 class WalletTransaction () extends js.Object {
   /** Gets or sets the summary description (suitable for user UI) of the transaction. */
   var description: java.lang.String = js.native

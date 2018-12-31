@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @mixin
-         */
+  * @mixin
+  */
 @js.native
 trait IElement extends js.Object {
   def chainClick(elements: js.Array[_], callback: js.Function): scala.Unit = js.native

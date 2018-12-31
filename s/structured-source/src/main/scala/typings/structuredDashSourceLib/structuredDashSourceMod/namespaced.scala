@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced protected () extends StructuredSource {
   /**
-       * @param source - source code text.
-       */
+    * @param source - source code text.
+    */
   def this(source: java.lang.String) = this()
   /* CompleteClass */
   override def indexToPosition(index: scala.Double): structuredDashSourceLib.structuredDashSourceMod.StructuredSourceNs.SourcePosition = js.native

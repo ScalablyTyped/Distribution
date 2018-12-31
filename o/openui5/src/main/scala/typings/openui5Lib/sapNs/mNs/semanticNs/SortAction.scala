@@ -9,16 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class SortAction protected () extends SemanticButton {
   /**
-           * Constructor for a new SortAction.
-           * @param sId ID for the new control, generated automatically if no ID is given
-           * @param mSettings Custom initial settings for the new control
-          */
+    * Constructor for a new SortAction.
+    * @param sId ID for the new control, generated automatically if no ID is given
+    * @param mSettings Custom initial settings for the new control
+    */
   def this(sId: java.lang.String) = this()
-  /**
-           * Constructor for a new SortAction.
-           * @param sId ID for the new control, generated automatically if no ID is given
-           * @param mSettings Custom initial settings for the new control
-          */
   def this(sId: java.lang.String, mSettings: js.Any) = this()
 }
 

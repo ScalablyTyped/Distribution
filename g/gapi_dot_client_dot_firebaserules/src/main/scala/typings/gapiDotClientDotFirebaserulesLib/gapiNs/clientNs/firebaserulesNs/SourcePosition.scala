@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SourcePosition extends js.Object {
   /** First column on the source line associated with the source fragment. */
   var column: js.UndefOr[scala.Double] = js.undefined

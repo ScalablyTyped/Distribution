@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IResponseBody extends js.Object {
   var canonical_ids: scala.Double
   var failure: scala.Double

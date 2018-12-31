@@ -11,18 +11,12 @@ class Form ()
   extends nodeLib.eventsMod.EventEmitter {
   def this(options: FormOptions) = this()
   /**
-       * Parses an incoming node.js request containing form data.
-       * This will cause form to emit events based off the incoming request
-       * @param request
-       * @param callback
-       */
+    * Parses an incoming node.js request containing form data.
+    * This will cause form to emit events based off the incoming request
+    * @param request
+    * @param callback
+    */
   def parse(request: nodeLib.httpMod.IncomingMessage): scala.Unit = js.native
-  /**
-       * Parses an incoming node.js request containing form data.
-       * This will cause form to emit events based off the incoming request
-       * @param request
-       * @param callback
-       */
   def parse(
     request: nodeLib.httpMod.IncomingMessage,
     callback: js.Function3[/* error */ nodeLib.Error, /* fields */ js.Any, /* files */ js.Any, _]

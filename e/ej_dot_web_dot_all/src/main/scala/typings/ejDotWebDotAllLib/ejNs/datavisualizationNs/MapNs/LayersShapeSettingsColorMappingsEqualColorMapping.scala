@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LayersShapeSettingsColorMappingsEqualColorMapping extends js.Object {
   /** Specifies the equalColorMapping color in the shape layer of map.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var color: js.UndefOr[java.lang.String] = js.undefined
   /** Specifies the equalColorMapping value in the shape layer of map.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 

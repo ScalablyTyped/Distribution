@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Apply3[F /* <: fpDashTsLib.libHKTMod.URIS3 */]
   extends fpDashTsLib.libFunctorMod.Functor3[F] {
   def ap[U, L, A, B](

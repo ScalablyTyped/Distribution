@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaQueryMatchers extends js.Object {
   var aspectRatio: js.UndefOr[java.lang.String] = js.undefined
   var color: js.UndefOr[scala.Boolean] = js.undefined

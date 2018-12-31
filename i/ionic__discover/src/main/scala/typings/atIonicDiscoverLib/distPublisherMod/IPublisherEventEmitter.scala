@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPublisherEventEmitter extends js.Object {
   @JSName("on")
   def on_error(

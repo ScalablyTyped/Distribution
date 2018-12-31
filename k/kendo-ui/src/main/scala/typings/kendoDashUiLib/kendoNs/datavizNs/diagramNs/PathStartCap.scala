@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PathStartCap extends js.Object {
   var fill: js.UndefOr[java.lang.String | PathStartCapFill] = js.undefined
   var stroke: js.UndefOr[java.lang.String | PathStartCapStroke] = js.undefined

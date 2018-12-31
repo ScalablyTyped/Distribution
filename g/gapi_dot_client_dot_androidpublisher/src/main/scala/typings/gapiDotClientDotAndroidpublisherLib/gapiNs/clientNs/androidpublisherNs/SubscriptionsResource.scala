@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SubscriptionsResource extends js.Object {
   /** Cancels a user's subscription purchase. The subscription remains valid until its expiration time. */
   def cancel(request: gapiDotClientDotAndroidpublisherLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

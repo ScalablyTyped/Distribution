@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WaterfallOptions extends js.Object {
   /** set the chart type: waterfall or connection [waterfall] */
   var chartType: js.UndefOr[java.lang.String] = js.undefined

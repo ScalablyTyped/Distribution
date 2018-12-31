@@ -15,7 +15,7 @@ class default protected () extends RestIO {
 @JSImport("rest-io", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var AuthorizedResource: js.Any = js.native
+  var AuthorizedResource: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof authorizedResource.AuthorizedResource */ js.Any = js.native
   var AuthorizedSubResource: org.scalablytyped.runtime.Instantiable1[
     /* subResDef */ restDashIoLib.libSrcAuthorizedSubResourceMod.ISubResource, 
     restDashIoLib.libSrcAuthorizedSubResourceMod.default
@@ -30,6 +30,6 @@ object default extends js.Object {
     restDashIoLib.libSrcSubResourceMod.default
   ] = js.native
   var UserResource: org.scalablytyped.runtime.Instantiable0[restDashIoLib.libSrcUserResourceMod.default] = js.native
-  var authorizedResource: js.Any = js.native
+  var authorizedResource: restDashIoLib.Anon_Default = js.native
 }
 

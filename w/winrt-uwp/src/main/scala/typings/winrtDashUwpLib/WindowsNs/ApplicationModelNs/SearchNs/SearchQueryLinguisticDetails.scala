@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class SearchQueryLinguisticDetails protected () extends js.Object {
   /**
-                   * Initializes a new instance of the SearchQueryLinguisticDetails class.
-                   * @param queryTextAlternatives A list of the text alternatives for the current query text.
-                   * @param queryTextCompositionStart The starting location of the text that the user is composing with an IME.
-                   * @param queryTextCompositionLength The length of the portion of the query text that the user is composing with an IME.
-                   */
+    * Initializes a new instance of the SearchQueryLinguisticDetails class.
+    * @param queryTextAlternatives A list of the text alternatives for the current query text.
+    * @param queryTextCompositionStart The starting location of the text that the user is composing with an IME.
+    * @param queryTextCompositionLength The length of the portion of the query text that the user is composing with an IME.
+    */
   def this(queryTextAlternatives: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String], queryTextCompositionStart: scala.Double, queryTextCompositionLength: scala.Double) = this()
   /** A list of the text alternatives for the current query text. These alternatives account for uncomposed text the user is entering in an IME. */
   var queryTextAlternatives: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String] = js.native

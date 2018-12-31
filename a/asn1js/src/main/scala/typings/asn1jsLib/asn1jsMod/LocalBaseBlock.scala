@@ -19,12 +19,12 @@ class LocalBaseBlock ()
   /* CompleteClass */
   override var warnings: js.Array[java.lang.String] = js.native
   /**
-           * Convertion for the block to JSON object
-           * 
-           * @returns {JsonLocalBaseBlock}
-           * 
-           * @memberOf LocalBaseBlock
-           */
+    * Convertion for the block to JSON object
+    * 
+    * @returns {JsonLocalBaseBlock}
+    * 
+    * @memberOf LocalBaseBlock
+    */
   /* CompleteClass */
   override def toJSON(): asn1jsLib.asn1jsMod.Asn1jsNs.JsonLocalBaseBlock = js.native
 }
@@ -33,13 +33,13 @@ class LocalBaseBlock ()
 @js.native
 object LocalBaseBlock extends js.Object {
   /**
-           * Aux function, need to get a block name. Need to have it here for inhiritence
-           * 
-           * @static
-           * @returns {string}
-           * 
-           * @memberOf LocalBaseBlock
-           */
+    * Aux function, need to get a block name. Need to have it here for inhiritence
+    * 
+    * @static
+    * @returns {string}
+    * 
+    * @memberOf LocalBaseBlock
+    */
   def blockName(): java.lang.String = js.native
 }
 

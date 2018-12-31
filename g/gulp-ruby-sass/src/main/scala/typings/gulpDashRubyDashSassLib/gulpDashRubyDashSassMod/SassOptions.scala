@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * The interface includes all options that available for sass executable.
- * Options are converted from dashed to camelCase
- * @interface SassOptions
- */
-
+  * The interface includes all options that available for sass executable.
+  * Options are converted from dashed to camelCase
+  * @interface SassOptions
+  */
 trait SassOptions extends js.Object {
   var cacheLocation: js.UndefOr[java.lang.String] = js.undefined
   var check: js.UndefOr[scala.Boolean] = js.undefined

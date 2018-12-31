@@ -9,26 +9,21 @@ import scala.scalajs.js.annotation._
 @js.native
 class Raw protected () extends ODataType {
   /**
-               * Constructor for a placeholder for all unsupported OData primitive types.
-               * @param oFormatOptions Must be <code>undefined</code>
-               * @param oConstraints Must be <code>undefined</code>
-              */
+    * Constructor for a placeholder for all unsupported OData primitive types.
+    * @param oFormatOptions Must be <code>undefined</code>
+    * @param oConstraints Must be <code>undefined</code>
+    */
   def this(oFormatOptions: js.Any) = this()
-  /**
-               * Constructor for a placeholder for all unsupported OData primitive types.
-               * @param oFormatOptions Must be <code>undefined</code>
-               * @param oConstraints Must be <code>undefined</code>
-              */
   def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
   /**
-               * Method not supported
-               * @since 1.37.0
-              */
+    * Method not supported
+    * @since 1.37.0
+    */
   def parseValue(): scala.Unit = js.native
   /**
-               * Method not supported
-               * @since 1.37.0
-              */
+    * Method not supported
+    * @since 1.37.0
+    */
   def validateValue(): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMessageBox extends IWindow {
   /** [Property] (Number) */
   var CANCEL: js.UndefOr[scala.Double] = js.undefined

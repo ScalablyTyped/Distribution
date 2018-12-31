@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PerformanceReport extends js.Object {
   /** The number of bid responses with an ad. */
   var bidRate: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PalxPalette
   extends /* name */ org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]] {
   var base: java.lang.String

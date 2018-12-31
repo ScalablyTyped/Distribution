@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_StatusCode extends js.Object {
   var body: java.lang.String
   var boundary: java.lang.String

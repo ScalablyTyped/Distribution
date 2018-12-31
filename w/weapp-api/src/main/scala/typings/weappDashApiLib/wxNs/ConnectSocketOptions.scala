@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectSocketOptions extends js.Object {
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
   var complete: js.UndefOr[ResponseCallback] = js.undefined

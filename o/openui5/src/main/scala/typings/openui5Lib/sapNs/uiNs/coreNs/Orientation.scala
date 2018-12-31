@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait Orientation extends js.Object
 
 /**
-       * Orientation of an UI element
-      */
+  * Orientation of an UI element
+  */
 @JSGlobal("sap.ui.core.Orientation")
 @js.native
 object Orientation extends js.Object {

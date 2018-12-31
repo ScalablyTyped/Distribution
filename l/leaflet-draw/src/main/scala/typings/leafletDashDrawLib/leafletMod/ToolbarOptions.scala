@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ToolbarOptions extends js.Object {
   var circle: js.UndefOr[leafletDashDrawLib.leafletMod.DrawOptionsNs.CircleOptions] = js.undefined
   var circlemarker: js.UndefOr[leafletDashDrawLib.leafletMod.DrawOptionsNs.CircleOptions] = js.undefined

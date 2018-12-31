@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Instance
   extends stdLib.Object {
   var announce: js.UndefOr[js.Array[java.lang.String]] = js.undefined

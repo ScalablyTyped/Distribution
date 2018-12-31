@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomAuthorizerEvent extends js.Object {
   var apiId: js.UndefOr[java.lang.String] = js.undefined
   var authorizationToken: js.UndefOr[java.lang.String] = js.undefined

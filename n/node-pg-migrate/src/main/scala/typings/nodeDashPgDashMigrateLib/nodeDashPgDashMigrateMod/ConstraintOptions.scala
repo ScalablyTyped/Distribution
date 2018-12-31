@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConstraintOptions extends js.Object {
   var check: js.UndefOr[java.lang.String] = js.undefined
   var deferrable: js.UndefOr[scala.Boolean] = js.undefined

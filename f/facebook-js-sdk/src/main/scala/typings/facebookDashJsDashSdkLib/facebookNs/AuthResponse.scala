@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 //  RESPONSES
 //
 ////////////////////////
-
 trait AuthResponse extends js.Object {
   var accessToken: java.lang.String
   var expiresIn: scala.Double

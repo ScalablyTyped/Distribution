@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // ELangBase
-
 trait IELangBaseDefaults extends js.Object {
   var contentCSS: java.lang.String
   var contentInnerCSS: java.lang.String

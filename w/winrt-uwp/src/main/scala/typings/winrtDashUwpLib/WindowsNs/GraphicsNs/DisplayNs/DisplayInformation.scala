@@ -61,9 +61,9 @@ abstract class DisplayInformation () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[DisplayInformation, _]
   ): scala.Unit = js.native
   /**
-                   * Asynchronously gets the default International Color Consortium (ICC) color profile that is associated with the physical display.
-                   * @return Object that manages the asynchronous retrieval of the color profile.
-                   */
+    * Asynchronously gets the default International Color Consortium (ICC) color profile that is associated with the physical display.
+    * @return Object that manages the asynchronous retrieval of the color profile.
+    */
   def getColorProfileAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream] = js.native
   /** Occurs when the physical display's color profile changes. */
   def oncolorprofilechanged(ev: js.Any with winrtDashUwpLib.WindowsNs.WinRTEvent[DisplayInformation]): scala.Unit = js.native
@@ -112,9 +112,9 @@ object DisplayInformation extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[winrtDashUwpLib.WindowsNs.GraphicsNs.DisplayNs.DisplayInformation, _]
   ): scala.Unit = js.native
   /**
-                   * Gets the current physical display information.
-                   * @return A DisplayInformation object that contains the current physical display information.
-                   */
+    * Gets the current physical display information.
+    * @return A DisplayInformation object that contains the current physical display information.
+    */
   def getForCurrentView(): winrtDashUwpLib.WindowsNs.GraphicsNs.DisplayNs.DisplayInformation = js.native
   /** Occurs when the display requires redrawing. */
   def ondisplaycontentsinvalidated(

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class HttpMethod protected () extends js.Object {
   /**
-                   * Initializes a new instance of the HttpMethod class with a specific HTTP method.
-                   * @param method The HTTP method.
-                   */
+    * Initializes a new instance of the HttpMethod class with a specific HTTP method.
+    * @param method The HTTP method.
+    */
   def this(method: java.lang.String) = this()
   /** Gets the HTTP method. */
   var method: java.lang.String = js.native

@@ -14,10 +14,10 @@ trait ITimeoutService extends js.Object {
   def apply(): IPromise[scala.Unit] = js.native
   def apply(delay: scala.Double): IPromise[scala.Unit] = js.native
   def apply(delay: scala.Double, invokeApply: scala.Boolean): IPromise[scala.Unit] = js.native
-  def apply[T](fn: js.Function1[/* repeated */js.Any, T | IPromise[T]]): IPromise[T] = js.native
-  def apply[T](fn: js.Function1[/* repeated */js.Any, T | IPromise[T]], delay: scala.Double): IPromise[T] = js.native
+  def apply[T](fn: js.Function1[/* repeated */ js.Any, T | IPromise[T]]): IPromise[T] = js.native
+  def apply[T](fn: js.Function1[/* repeated */ js.Any, T | IPromise[T]], delay: scala.Double): IPromise[T] = js.native
   def apply[T](
-    fn: js.Function1[/* repeated */js.Any, T | IPromise[T]],
+    fn: js.Function1[/* repeated */ js.Any, T | IPromise[T]],
     delay: scala.Double,
     invokeApply: scala.Boolean,
     args: js.Any*

@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class WalletItem protected () extends js.Object {
   /**
-                   * Initializes a new instance of the WalletItem class.
-                   * @param kind The type of wallet item.
-                   * @param displayName The display name of the item.
-                   */
+    * Initializes a new instance of the WalletItem class.
+    * @param kind The type of wallet item.
+    * @param displayName The display name of the item.
+    */
   def this(kind: WalletItemKind, displayName: java.lang.String) = this()
   /** Gets or sets the barcode that's representative of the wallet item. */
   var barcode: WalletBarcode = js.native

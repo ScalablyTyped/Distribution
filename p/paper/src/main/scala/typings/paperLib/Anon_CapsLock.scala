@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CapsLock extends js.Object {
   var alt: scala.Boolean
   var capsLock: scala.Boolean

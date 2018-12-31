@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Reference extends js.Object {
   var from: Scope
   var identifier: estreeLib.estreeMod.Identifier

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var cacheDirectory: js.UndefOr[java.lang.String] = js.undefined
   var cachePrune: js.UndefOr[hardDashSourceDashWebpackDashPluginLib.Anon_SizeThreshold] = js.undefined

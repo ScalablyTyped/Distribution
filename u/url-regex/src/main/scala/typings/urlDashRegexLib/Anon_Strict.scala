@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Strict extends js.Object {
   /** Only match an exact string. Useful with RegExp#test to check if a string is a URL. */
   var exact: js.UndefOr[scala.Boolean] = js.undefined

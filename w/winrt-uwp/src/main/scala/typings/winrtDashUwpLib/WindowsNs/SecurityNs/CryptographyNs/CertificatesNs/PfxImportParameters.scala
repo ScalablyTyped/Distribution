@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents PFX import parameters. */
 @JSGlobal("Windows.Security.Cryptography.Certificates.PfxImportParameters")
 @js.native
+/** Creates a new instance of the PfxImportParameters class. */
 class PfxImportParameters () extends js.Object {
   /** Gets or sets the container name prefix. */
   var containerNamePrefix: java.lang.String = js.native

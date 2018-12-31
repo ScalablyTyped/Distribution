@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigationTransitionProps extends js.Object {
   var index: scala.Double
   // The layout of the screen container

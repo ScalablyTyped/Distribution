@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DirectorySiteContact extends js.Object {
   /** Address of this directory site contact. */
   var address: js.UndefOr[java.lang.String] = js.undefined

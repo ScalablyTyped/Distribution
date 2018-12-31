@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * An interface representing the client and associated data
-     */
-
+  * An interface representing the client and associated data
+  */
 trait Client
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var accessTokenLifetime: js.UndefOr[scala.Double] = js.undefined

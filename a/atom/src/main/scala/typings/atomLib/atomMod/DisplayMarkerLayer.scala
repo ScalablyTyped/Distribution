@@ -15,13 +15,13 @@ trait DisplayMarkerLayer extends js.Object {
   /** Destroy this layer. */
   def destroy(): scala.Unit = js.native
   /**
-       *  Find markers in the layer conforming to the given parameters.
-       *
-       *  This method finds markers based on the given properties. Markers can be associated
-       *  with custom properties that will be compared with basic equality. In addition,
-       *  there are several special properties that will be compared with the range of the
-       *  markers rather than their properties.
-       */
+    *  Find markers in the layer conforming to the given parameters.
+    *
+    *  This method finds markers based on the given properties. Markers can be associated
+    *  with custom properties that will be compared with basic equality. In addition,
+    *  there are several special properties that will be compared with the range of the
+    *  markers rather than their properties.
+    */
   def findMarkers(properties: FindDisplayMarkerOptions): js.Array[DisplayMarker] = js.native
   // Querying
   /** Get an existing marker by its id. */
@@ -33,28 +33,19 @@ trait DisplayMarkerLayer extends js.Object {
   /** Determine whether this layer has been destroyed. */
   def isDestroyed(): scala.Boolean = js.native
   /**
-       *  Create a marker on this layer with its head at the given buffer position
-       *  and no tail.
-       */
+    *  Create a marker on this layer with its head at the given buffer position
+    *  and no tail.
+    */
   def markBufferPosition(bufferPosition: PointCompatible): DisplayMarker = js.native
-  /**
-       *  Create a marker on this layer with its head at the given buffer position
-       *  and no tail.
-       */
   def markBufferPosition(bufferPosition: PointCompatible, options: atomLib.Anon_ExclusiveInvalidate): DisplayMarker = js.native
   /** Create a marker with the given buffer range. */
   def markBufferRange(range: RangeCompatible): DisplayMarker = js.native
-  /** Create a marker with the given buffer range. */
   def markBufferRange(range: RangeCompatible, options: atomLib.Anon_Exclusive): DisplayMarker = js.native
   /**
-       *  Create a marker on this layer with its head at the given screen position
-       *  and no tail.
-       */
+    *  Create a marker on this layer with its head at the given screen position
+    *  and no tail.
+    */
   def markScreenPosition(screenPosition: PointCompatible): DisplayMarker = js.native
-  /**
-       *  Create a marker on this layer with its head at the given screen position
-       *  and no tail.
-       */
   def markScreenPosition(
     screenPosition: PointCompatible,
     options: atomLib.Anon_ClipDirectionBackwardForwardClosestExclusiveInvalidate
@@ -62,23 +53,21 @@ trait DisplayMarkerLayer extends js.Object {
   // Marker creation
   /** Create a marker with the given screen range. */
   def markScreenRange(range: RangeCompatible): DisplayMarker = js.native
-  // Marker creation
-  /** Create a marker with the given screen range. */
   def markScreenRange(range: RangeCompatible, options: atomLib.Anon_ClipDirectionBackwardForwardClosestExclusive): DisplayMarker = js.native
   /**
-       *  Subscribe to be notified synchronously whenever markers are created on this
-       *  layer. Avoid this method for optimal performance when interacting with layers
-       *  that could contain large numbers of markers.
-       */
+    *  Subscribe to be notified synchronously whenever markers are created on this
+    *  layer. Avoid this method for optimal performance when interacting with layers
+    *  that could contain large numbers of markers.
+    */
   def onDidCreateMarker(callback: js.Function1[/* marker */ DisplayMarker | Marker, scala.Unit]): Disposable = js.native
   // Event Subscription
   /** Subscribe to be notified synchronously when this layer is destroyed. */
   def onDidDestroy(callback: js.Function0[scala.Unit]): Disposable = js.native
   /**
-       *  Subscribe to be notified asynchronously whenever markers are created, updated,
-       *  or destroyed on this layer. Prefer this method for optimal performance when
-       *  interacting with layers that could contain large numbers of markers.
-       */
+    *  Subscribe to be notified asynchronously whenever markers are created, updated,
+    *  or destroyed on this layer. Prefer this method for optimal performance when
+    *  interacting with layers that could contain large numbers of markers.
+    */
   def onDidUpdate(callback: js.Function0[scala.Unit]): Disposable = js.native
 }
 

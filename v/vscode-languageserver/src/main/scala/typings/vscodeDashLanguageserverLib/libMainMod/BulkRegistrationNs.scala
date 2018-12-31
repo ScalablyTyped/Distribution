@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object BulkRegistrationNs extends js.Object {
   /**
-       * Creates a new bulk registration.
-       * @return an empty bulk registration.
-       */
+    * Creates a new bulk registration.
+    * @return an empty bulk registration.
+    */
   def create(): vscodeDashLanguageserverLib.libMainMod.BulkRegistration = js.native
 }
 

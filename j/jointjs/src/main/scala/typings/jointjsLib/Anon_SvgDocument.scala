@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SvgDocument extends js.Object {
   var ellipsis: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   var eol: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimeseriesDescriptor extends js.Object {
   /** The label's name. */
   var labels: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined

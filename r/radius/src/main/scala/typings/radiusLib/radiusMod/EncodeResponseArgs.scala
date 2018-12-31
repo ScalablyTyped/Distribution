@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * {@link https://github.com/retailnext/node-radius#radiusencode_responseargs} for more info.
- **/
-
+  * {@link https://github.com/retailnext/node-radius#radiusencode_responseargs} for more info.
+  **/
 trait EncodeResponseArgs extends js.Object {
   var attributes: js.UndefOr[js.Any] = js.undefined
   var code: java.lang.String

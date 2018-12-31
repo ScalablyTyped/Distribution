@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Global Time-To-Leave configuration.
-         */
-
+  * Global Time-To-Leave configuration.
+  */
 trait IGrowlTTLConfig extends js.Object {
   var error: js.UndefOr[scala.Double] = js.undefined
   var info: js.UndefOr[scala.Double] = js.undefined

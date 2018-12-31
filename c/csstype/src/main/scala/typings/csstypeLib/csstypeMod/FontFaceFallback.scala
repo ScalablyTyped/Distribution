@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FontFaceFallback extends js.Object {
   var MozFontFeatureSettings: js.UndefOr[
     csstypeLib.FontFaceFontFeatureSettingsProperty | js.Array[csstypeLib.FontFaceFontFeatureSettingsProperty]

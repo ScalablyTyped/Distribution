@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPathErrorStats extends js.Object {
   /** PathErrorStats children */
   var children: js.UndefOr[org.scalablytyped.runtime.StringDictionary[IPathErrorStats] | scala.Null] = js.undefined

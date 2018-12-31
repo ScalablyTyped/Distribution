@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Color2 extends js.Object {
   var color1: java.lang.String
   var color2: java.lang.String

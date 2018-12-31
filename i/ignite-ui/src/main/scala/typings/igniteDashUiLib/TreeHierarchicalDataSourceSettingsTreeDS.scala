@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TreeHierarchicalDataSourceSettingsTreeDS
   extends /**
 	 * Option for TreeHierarchicalDataSourceSettingsTreeDS

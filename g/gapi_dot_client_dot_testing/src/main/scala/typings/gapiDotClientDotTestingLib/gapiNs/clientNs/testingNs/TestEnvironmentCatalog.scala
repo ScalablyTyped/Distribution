@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestEnvironmentCatalog extends js.Object {
   /** Android devices suitable for running Android Instrumentation Tests. */
   var androidDeviceCatalog: js.UndefOr[AndroidDeviceCatalog] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IdentitySnapshot extends js.Object {
   var groups: js.Array[Identity]
   var identityIds: js.Array[java.lang.String]

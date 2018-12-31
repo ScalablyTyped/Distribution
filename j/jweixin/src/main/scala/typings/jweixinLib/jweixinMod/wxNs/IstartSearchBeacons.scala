@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 /*=============================地理位置================================*/
 /*=============================摇一摇周边================================*/
-
 trait IstartSearchBeacons extends BaseParams {
   var ticket: java.lang.String
     // 摇周边的业务ticket, 系统自动添加在摇出来的页面链接后面

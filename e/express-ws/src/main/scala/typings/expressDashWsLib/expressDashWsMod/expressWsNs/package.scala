@@ -10,7 +10,7 @@ package object expressWsNs {
   type Router = expressLib.expressMod.eNs.Router with WithWebsocketMethod
   type WebsocketMethod[T] = js.Function2[
     /* route */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.PathParams, 
-    /* repeated */WebsocketRequestHandler, 
+    /* repeated */ WebsocketRequestHandler, 
     T
   ]
   type WebsocketRequestHandler = js.Function3[

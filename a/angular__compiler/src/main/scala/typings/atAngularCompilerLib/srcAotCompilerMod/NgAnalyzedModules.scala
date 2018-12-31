@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NgAnalyzedModules extends js.Object {
   var files: js.Array[NgAnalyzedFile]
   var ngModuleByPipeOrDirective: stdLib.Map[

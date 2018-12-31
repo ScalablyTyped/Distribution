@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 class LocalVerifier protected () extends js.Object {
   def this(app: atFeathersjsFeathersLib.feathersMod.Application[_], options: js.Any) = this()
   def _comparePassword[T](entity: T, password: java.lang.String): js.Promise[T] = js.native
-   // compares password using bcrypt
   def _normalizeResult[T](results: atFeathersjsFeathersLib.feathersMod.Paginated[T]): js.Promise[T] = js.native
    // compares password using bcrypt
   def _normalizeResult[T](results: js.Array[T]): js.Promise[T] = js.native

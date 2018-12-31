@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Token extends js.Object {
   var attrs: js.Array[js.Array[java.lang.String]]
   var block: scala.Boolean

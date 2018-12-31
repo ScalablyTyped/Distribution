@@ -9,49 +9,21 @@ import scala.scalajs.js.annotation._
 @js.native
 class TargetState protected () extends js.Object {
   /**
-       * The TargetState constructor
-       *
-       * Note: Do not construct a `TargetState` manually.
-       * To create a `TargetState`, use the [[StateService.target]] factory method.
-       *
-       * @param _stateRegistry The StateRegistry to use to look up the _definition
-       * @param _identifier An identifier for a state.
-       *    Either a fully-qualified state name, or the object used to define the state.
-       * @param _params Parameters for the target state
-       * @param _options Transition options.
-       *
-       * @internalapi
-       */
+    * The TargetState constructor
+    *
+    * Note: Do not construct a `TargetState` manually.
+    * To create a `TargetState`, use the [[StateService.target]] factory method.
+    *
+    * @param _stateRegistry The StateRegistry to use to look up the _definition
+    * @param _identifier An identifier for a state.
+    *    Either a fully-qualified state name, or the object used to define the state.
+    * @param _params Parameters for the target state
+    * @param _options Transition options.
+    *
+    * @internalapi
+    */
   def this(_stateRegistry: atUirouterCoreLib.libStateStateRegistryMod.StateRegistry, _identifier: atUirouterCoreLib.libStateInterfaceMod.StateOrName) = this()
-  /**
-       * The TargetState constructor
-       *
-       * Note: Do not construct a `TargetState` manually.
-       * To create a `TargetState`, use the [[StateService.target]] factory method.
-       *
-       * @param _stateRegistry The StateRegistry to use to look up the _definition
-       * @param _identifier An identifier for a state.
-       *    Either a fully-qualified state name, or the object used to define the state.
-       * @param _params Parameters for the target state
-       * @param _options Transition options.
-       *
-       * @internalapi
-       */
   def this(_stateRegistry: atUirouterCoreLib.libStateStateRegistryMod.StateRegistry, _identifier: atUirouterCoreLib.libStateInterfaceMod.StateOrName, _params: atUirouterCoreLib.libParamsInterfaceMod.RawParams) = this()
-  /**
-       * The TargetState constructor
-       *
-       * Note: Do not construct a `TargetState` manually.
-       * To create a `TargetState`, use the [[StateService.target]] factory method.
-       *
-       * @param _stateRegistry The StateRegistry to use to look up the _definition
-       * @param _identifier An identifier for a state.
-       *    Either a fully-qualified state name, or the object used to define the state.
-       * @param _params Parameters for the target state
-       * @param _options Transition options.
-       *
-       * @internalapi
-       */
   def this(_stateRegistry: atUirouterCoreLib.libStateStateRegistryMod.StateRegistry, _identifier: atUirouterCoreLib.libStateInterfaceMod.StateOrName, _params: atUirouterCoreLib.libParamsInterfaceMod.RawParams, _options: atUirouterCoreLib.libTransitionInterfaceMod.TransitionOptions) = this()
   var _definition: js.Any = js.native
   var _identifier: js.Any = js.native
@@ -78,43 +50,29 @@ class TargetState protected () extends js.Object {
   /** True if the object is valid */
   def valid(): scala.Boolean = js.native
   /**
-       * Returns a copy of this TargetState, using the specified Transition Options.
-       *
-       * @param options the new options to use
-       * @param replace When false (default) the new options will be merged with the current options.
-       *                When true the options will be used instead of the current options.
-       */
+    * Returns a copy of this TargetState, using the specified Transition Options.
+    *
+    * @param options the new options to use
+    * @param replace When false (default) the new options will be merged with the current options.
+    *                When true the options will be used instead of the current options.
+    */
   def withOptions(options: atUirouterCoreLib.libTransitionInterfaceMod.TransitionOptions): TargetState = js.native
-  /**
-       * Returns a copy of this TargetState, using the specified Transition Options.
-       *
-       * @param options the new options to use
-       * @param replace When false (default) the new options will be merged with the current options.
-       *                When true the options will be used instead of the current options.
-       */
   def withOptions(options: atUirouterCoreLib.libTransitionInterfaceMod.TransitionOptions, replace: scala.Boolean): TargetState = js.native
   /**
-       * Returns a copy of this TargetState, using the specified parameter values.
-       *
-       * @param params the new parameter values to use
-       * @param replace When false (default) the new parameter values will be merged with the current values.
-       *                When true the parameter values will be used instead of the current values.
-       */
+    * Returns a copy of this TargetState, using the specified parameter values.
+    *
+    * @param params the new parameter values to use
+    * @param replace When false (default) the new parameter values will be merged with the current values.
+    *                When true the parameter values will be used instead of the current values.
+    */
   def withParams(params: atUirouterCoreLib.libParamsInterfaceMod.RawParams): TargetState = js.native
-  /**
-       * Returns a copy of this TargetState, using the specified parameter values.
-       *
-       * @param params the new parameter values to use
-       * @param replace When false (default) the new parameter values will be merged with the current values.
-       *                When true the parameter values will be used instead of the current values.
-       */
   def withParams(params: atUirouterCoreLib.libParamsInterfaceMod.RawParams, replace: scala.Boolean): TargetState = js.native
   /**
-       * Returns a copy of this TargetState which targets a different state.
-       * The new TargetState has the same parameter values and transition options.
-       *
-       * @param state The new state that should be targeted
-       */
+    * Returns a copy of this TargetState which targets a different state.
+    * The new TargetState has the same parameter values and transition options.
+    *
+    * @param state The new state that should be targeted
+    */
   def withState(state: atUirouterCoreLib.libStateInterfaceMod.StateOrName): TargetState = js.native
 }
 
@@ -122,6 +80,6 @@ class TargetState protected () extends js.Object {
 @js.native
 object TargetState extends js.Object {
   /** Returns true if the object has a state property that might be a state or state name */
-  def isDef(obj: js.Any): /* is TargetStateDef */scala.Boolean = js.native
+  def isDef(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.TargetStateDef */ scala.Boolean = js.native
 }
 

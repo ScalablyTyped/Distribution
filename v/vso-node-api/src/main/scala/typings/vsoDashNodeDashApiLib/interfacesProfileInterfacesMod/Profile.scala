@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Profile extends js.Object {
   var applicationContainer: AttributesContainer
   var coreAttributes: org.scalablytyped.runtime.StringDictionary[CoreProfileAttribute]

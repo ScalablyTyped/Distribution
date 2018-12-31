@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ModesTopiclength extends js.Object {
   var channel: Anon_Modes
   var kicklength: scala.Double

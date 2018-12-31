@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProfilesResource extends js.Object {
   /** Deletes a view (profile). */
   def delete(request: gapiDotClientDotAnalyticsLib.Anon_ProfileId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

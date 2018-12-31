@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConversionsBatchInsertResponse extends js.Object {
   /** Indicates that some or all conversions failed to insert. */
   var hasFailures: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Masonry extends js.Object {
   var addItems: js.UndefOr[js.Function1[/* elements */ js.Array[_], scala.Unit]] = js.undefined
   // add and remove items

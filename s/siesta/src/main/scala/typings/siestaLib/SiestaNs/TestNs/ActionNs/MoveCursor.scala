@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * @class
-             */
-
+  * @class
+  */
 trait MoveCursor
   extends siestaLib.SiestaNs.TestNs.IAction
      with siestaLib.SiestaNs.TestNs.ActionNs.RoleNs.IHasTarget {

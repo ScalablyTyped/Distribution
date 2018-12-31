@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Config extends js.Object {
   var LOG_DEBUG: java.lang.String
   var LOG_DISABLE: java.lang.String

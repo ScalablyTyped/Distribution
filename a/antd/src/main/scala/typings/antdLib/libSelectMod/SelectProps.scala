@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectProps[T] extends AbstractSelectProps {
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var clearIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined

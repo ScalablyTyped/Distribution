@@ -6,22 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Represents a base for client editor objects realizing the dropdown editor functionality.
- */
-
+  * Represents a base for client editor objects realizing the dropdown editor functionality.
+  */
 trait ASPxClientDropDownEdit extends ASPxClientDropDownEditBase {
   /**
-       * Allows you to handle a click on 'Ok' and 'Cancel' buttons in the drop-down arrow.
-       */
+    * Allows you to handle a click on 'Ok' and 'Cancel' buttons in the drop-down arrow.
+    */
   var DropDownCommandButtonClick: ASPxClientEvent[ASPxClientDropDownCommandEventHandler[ASPxClientDropDownEdit]]
   /**
-       * Obtains the key value associated with the text displayed within the editor's edit box.
-       */
+    * Obtains the key value associated with the text displayed within the editor's edit box.
+    */
   def GetKeyValue(): java.lang.String
   /**
-       * Specifies the key value associated with the text displayed within the editor's edit box.
-       * @param keyValue A string specifying the key value associated with the editor's value (displayed text).
-       */
+    * Specifies the key value associated with the text displayed within the editor's edit box.
+    * @param keyValue A string specifying the key value associated with the editor's value (displayed text).
+    */
   def SetKeyValue(keyValue: java.lang.String): scala.Unit
 }
 

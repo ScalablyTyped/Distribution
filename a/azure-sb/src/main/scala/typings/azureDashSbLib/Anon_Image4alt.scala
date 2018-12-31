@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Image4alt extends js.Object {
   var image1alt: java.lang.String
   var image1src: java.lang.String

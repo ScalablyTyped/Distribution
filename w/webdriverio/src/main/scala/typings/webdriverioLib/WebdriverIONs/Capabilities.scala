@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Capabilities extends js.Object {
   var acceptInsecureCerts: js.UndefOr[scala.Boolean] = js.undefined
   var browserName: java.lang.String

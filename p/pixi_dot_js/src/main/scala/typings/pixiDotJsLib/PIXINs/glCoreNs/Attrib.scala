@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Attrib extends js.Object {
   var attribute: pixiDotJsLib.Anon_Location
   var buffer: stdLib.ArrayBuffer

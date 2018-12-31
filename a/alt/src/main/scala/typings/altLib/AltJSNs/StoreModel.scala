@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StoreModel[S] extends js.Object {
   var afterEach: js.UndefOr[js.Function2[/* payload */ js.Object, /* state */ js.Object, scala.Unit]] = js.undefined
   var alt: js.UndefOr[Alt] = js.undefined

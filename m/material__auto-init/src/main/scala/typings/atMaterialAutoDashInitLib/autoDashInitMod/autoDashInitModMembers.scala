@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object autoDashInitModMembers extends js.Object {
   /**
-   * Auto-initializes all mdc components on a page.
-   */
+    * Auto-initializes all mdc components on a page.
+    */
   // tslint:disable-next-line:strict-export-declare-modifiers
   val default: MDCAutoInit = js.native
 }

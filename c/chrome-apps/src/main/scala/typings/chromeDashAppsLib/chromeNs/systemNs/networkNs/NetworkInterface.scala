@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NetworkInterface extends js.Object {
   /** The available IPv4/6 address. */
   var address: java.lang.String

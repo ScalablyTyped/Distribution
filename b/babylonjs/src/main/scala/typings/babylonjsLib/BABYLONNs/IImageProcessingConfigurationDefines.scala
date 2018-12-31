@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Interface to follow in your material defines to integrate easily the
-     * Image proccessing functions.
-     * @hidden
-     */
-
+  * Interface to follow in your material defines to integrate easily the
+  * Image proccessing functions.
+  * @hidden
+  */
 trait IImageProcessingConfigurationDefines extends js.Object {
   var COLORCURVES: scala.Boolean
   var COLORGRADING: scala.Boolean

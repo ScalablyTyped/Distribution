@@ -12,15 +12,15 @@ sealed trait BuildAuthorizationScope extends js.Object
 @js.native
 object BuildAuthorizationScope extends js.Object {
   /**
-       * The identity used should have build service account permissions scoped to the project in which the build definition resides. This is useful for isolation of build jobs to a particular team project to avoid any unintentional escalation of privilege attacks during a build.
-       */
+    * The identity used should have build service account permissions scoped to the project in which the build definition resides. This is useful for isolation of build jobs to a particular team project to avoid any unintentional escalation of privilege attacks during a build.
+    */
   @js.native
   sealed trait Project
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildAuthorizationScope
   
   /**
-       * The identity used should have build service account permissions scoped to the project collection. This is useful when resources for a single build are spread across multiple projects.
-       */
+    * The identity used should have build service account permissions scoped to the project collection. This is useful when resources for a single build are spread across multiple projects.
+    */
   @js.native
   sealed trait ProjectCollection
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildAuthorizationScope

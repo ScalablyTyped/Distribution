@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransitLine extends js.Object {
   var agencies: js.Array[TransitAgency]
   var color: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SendDebugCaptureRequest extends js.Object {
   /** The internal component id for which debug information is sent. */
   var componentId: js.UndefOr[java.lang.String] = js.undefined

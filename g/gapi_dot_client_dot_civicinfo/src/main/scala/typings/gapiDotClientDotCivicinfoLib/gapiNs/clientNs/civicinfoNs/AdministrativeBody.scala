@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AdministrativeBody extends js.Object {
   /** A URL provided by this administrative body for information on absentee voting. */
   var absenteeVotingInfoUrl: js.UndefOr[java.lang.String] = js.undefined

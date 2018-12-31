@@ -10,12 +10,9 @@ import scala.scalajs.js.annotation._
 class IndicesFilter protected ()
   extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.IndicesFilter {
   /*
-       A configurable filter that is dependent on the index name.
-       */
+    A configurable filter that is dependent on the index name.
+    */
   def this(fltr: js.Object, indices: java.lang.String) = this()
-  /*
-       A configurable filter that is dependent on the index name.
-       */
   def this(fltr: js.Object, indices: js.Array[java.lang.String]) = this()
 }
 

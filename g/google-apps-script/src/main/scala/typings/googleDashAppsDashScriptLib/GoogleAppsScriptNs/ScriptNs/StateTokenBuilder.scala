@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StateTokenBuilder extends js.Object {
   def createToken(): java.lang.String
   def withArgument(name: java.lang.String, value: java.lang.String): StateTokenBuilder

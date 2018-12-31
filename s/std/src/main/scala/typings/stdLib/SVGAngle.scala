@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGAngle extends js.Object {
   val SVG_ANGLETYPE_DEG: scala.Double
   val SVG_ANGLETYPE_GRAD: scala.Double

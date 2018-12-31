@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetActionsRequestedOptions extends js.Object {
   /** The path of the entry to return the list of actions for. */
   var entryPath: java.lang.String

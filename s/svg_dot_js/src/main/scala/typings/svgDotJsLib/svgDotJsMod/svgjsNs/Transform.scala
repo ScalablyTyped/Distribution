@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Transform extends js.Object {
    // 1,0,0,1,0,0
   var a: js.UndefOr[scala.Double] = js.undefined

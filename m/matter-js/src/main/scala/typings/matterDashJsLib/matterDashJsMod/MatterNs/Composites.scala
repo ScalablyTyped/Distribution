@@ -5,18 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Composites extends js.Object {
   /**
-           * Creates a composite with a Newton's Cradle setup of bodies and constraints.
-           * @method newtonsCradle
-           * @param {number} xx
-           * @param {number} yy
-           * @param {number} number
-           * @param {number} size
-           * @param {number} length
-           * @return {composite} A new composite newtonsCradle body
-           */
+    * Creates a composite with a Newton's Cradle setup of bodies and constraints.
+    * @method newtonsCradle
+    * @param {number} xx
+    * @param {number} yy
+    * @param {number} number
+    * @param {number} size
+    * @param {number} length
+    * @return {composite} A new composite newtonsCradle body
+    */
   def newtonsCradle(
     xx: scala.Double,
     yy: scala.Double,

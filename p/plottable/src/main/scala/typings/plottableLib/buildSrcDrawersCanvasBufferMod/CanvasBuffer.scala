@@ -32,33 +32,21 @@ class CanvasBuffer protected () extends js.Object {
     y: scala.Double
   ): scala.Unit = js.native
   /**
-       * Temporarily resets the current context transformation and fills the
-       * entire canvas with the provided color. If no color is provided, the
-       * canvas is cleared instead.
-       */
+    * Temporarily resets the current context transformation and fills the
+    * entire canvas with the provided color. If no color is provided, the
+    * canvas is cleared instead.
+    */
   def clear(): this.type = js.native
-  /**
-       * Temporarily resets the current context transformation and fills the
-       * entire canvas with the provided color. If no color is provided, the
-       * canvas is cleared instead.
-       */
   def clear(color: java.lang.String): this.type = js.native
   def getImageData(): stdLib.ImageData = js.native
   /**
-       * Changes the size of the underlying canvas in screen space, respecting the
-       * current devicePixelRatio.
-       *
-       * @param center - optionally enable a translate transformation moving the
-       *                 origin to the center of the canvas.
-       */
+    * Changes the size of the underlying canvas in screen space, respecting the
+    * current devicePixelRatio.
+    *
+    * @param center - optionally enable a translate transformation moving the
+    *                 origin to the center of the canvas.
+    */
   def resize(screenWidth: scala.Double, screenHeight: scala.Double): this.type = js.native
-  /**
-       * Changes the size of the underlying canvas in screen space, respecting the
-       * current devicePixelRatio.
-       *
-       * @param center - optionally enable a translate transformation moving the
-       *                 origin to the center of the canvas.
-       */
   def resize(screenWidth: scala.Double, screenHeight: scala.Double, center: scala.Boolean): this.type = js.native
 }
 
@@ -66,8 +54,8 @@ class CanvasBuffer protected () extends js.Object {
 @js.native
 object CanvasBuffer extends js.Object {
   /**
-       * Resizes the canvas' internal pixel buffer to match the devicePixelRatio
-       */
+    * Resizes the canvas' internal pixel buffer to match the devicePixelRatio
+    */
   def sizePixels(
     ctx: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D,
     screenWidth: scala.Double,

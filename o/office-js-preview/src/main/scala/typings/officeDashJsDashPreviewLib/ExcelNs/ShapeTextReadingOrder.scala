@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait ShapeTextReadingOrder extends js.Object
 
 /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.ShapeTextReadingOrder")
 @js.native
 object ShapeTextReadingOrder extends js.Object {

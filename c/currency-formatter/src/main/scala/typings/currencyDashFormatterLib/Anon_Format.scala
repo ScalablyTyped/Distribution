@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Format extends js.Object {
   var code: js.UndefOr[java.lang.String] = js.undefined
   var decimal: js.UndefOr[java.lang.String] = js.undefined

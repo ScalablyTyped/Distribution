@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * @ngdoc service
-    * @name umbraco.services.cropperHelper
-    * @description A helper object used for dealing with image cropper data
-    */
-
+  * @ngdoc service
+  * @name umbraco.services.cropperHelper
+  * @description A helper object used for dealing with image cropper data
+  */
 trait ICropperHelper extends js.Object {
   /**
   		* @ngdoc method

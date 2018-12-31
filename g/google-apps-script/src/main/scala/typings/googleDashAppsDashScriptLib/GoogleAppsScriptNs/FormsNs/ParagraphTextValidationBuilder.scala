@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParagraphTextValidationBuilder extends js.Object {
   def requireTextContainsPattern(pattern: java.lang.String): ParagraphTextValidationBuilder
   def requireTextDoesNotContainPattern(pattern: java.lang.String): ParagraphTextValidationBuilder

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MatchWebFonts extends js.Object {
   /*Initial delay before the first check for web fonts (in milliseconds).*/
   var fontCheckDelay: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SelectOnClick extends js.Object {
   var selectOnClick: js.UndefOr[scala.Boolean] = js.undefined
   var size: js.UndefOr[

@@ -72,83 +72,83 @@ object TransactionValuesNs extends js.Object {
   sealed trait TransactionUserDecision extends js.Object
   
   /**
-       * List of possible actions to take on the order.
-       */
+    * List of possible actions to take on the order.
+    */
   @js.native
   object ActionType extends js.Object {
     /**
-             * Call.
-             */
+      * Call.
+      */
     @js.native
     sealed trait CALL
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ActionType
     
     /**
-             * Cancel order.
-             */
+      * Cancel order.
+      */
     @js.native
     sealed trait CANCEL
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ActionType
     
     /**
-             * Customer Service.
-             */
+      * Customer Service.
+      */
     @js.native
     sealed trait CUSTOMER_SERVICE
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ActionType
     
     /**
-             * Email.
-             */
+      * Email.
+      */
     @js.native
     sealed trait EMAIL
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ActionType
     
     /**
-             * Exchange order.
-             */
+      * Exchange order.
+      */
     @js.native
     sealed trait EXCHANGE
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ActionType
     
     /**
-             * Modify order.
-             */
+      * Modify order.
+      */
     @js.native
     sealed trait MODIFY
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ActionType
     
     /**
-             * Reorder.
-             */
+      * Reorder.
+      */
     @js.native
     sealed trait REORDER
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ActionType
     
     /**
-             * Return order.
-             */
+      * Return order.
+      */
     @js.native
     sealed trait RETURN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ActionType
     
     /**
-             * Review.
-             */
+      * Review.
+      */
     @js.native
     sealed trait REVIEW
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ActionType
     
     /**
-             * Unknown action.
-             */
+      * Unknown action.
+      */
     @js.native
     sealed trait UNKNOWN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ActionType
     
     /**
-             * View details.
-             */
+      * View details.
+      */
     @js.native
     sealed trait VIEW_DETAILS
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ActionType
@@ -171,48 +171,48 @@ object TransactionValuesNs extends js.Object {
   }
   
   /**
-       * List of transaction card networks available when paying with Google.
-       */
+    * List of transaction card networks available when paying with Google.
+    */
   @js.native
   object CardNetwork extends js.Object {
     /**
-             * American Express.
-             */
+      * American Express.
+      */
     @js.native
     sealed trait AMEX
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.CardNetwork
     
     /**
-             * Discover.
-             */
+      * Discover.
+      */
     @js.native
     sealed trait DISCOVER
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.CardNetwork
     
     /**
-             * JCB.
-             */
+      * JCB.
+      */
     @js.native
     sealed trait JCB
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.CardNetwork
     
     /**
-             * Master Card.
-             */
+      * Master Card.
+      */
     @js.native
     sealed trait MASTERCARD
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.CardNetwork
     
     /**
-             * Unspecified.
-             */
+      * Unspecified.
+      */
     @js.native
     sealed trait UNSPECIFIED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.CardNetwork
     
     /**
-             * Visa.
-             */
+      * Visa.
+      */
     @js.native
     sealed trait VISA
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.CardNetwork
@@ -230,42 +230,42 @@ object TransactionValuesNs extends js.Object {
   }
   
   /**
-       * List of possible order confirmation user decisions
-       */
+    * List of possible order confirmation user decisions
+    */
   @js.native
   object ConfirmationDecision extends js.Object {
     /**
-             * Order was approved by user.
-             */
+      * Order was approved by user.
+      */
     @js.native
     sealed trait ACCEPTED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ConfirmationDecision
     
     /**
-             * Order was not declined, but the cart was updated during confirmation.
-             */
+      * Order was not declined, but the cart was updated during confirmation.
+      */
     @js.native
     sealed trait CART_CHANGE_REQUESTED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ConfirmationDecision
     
     /**
-             * Order was not declined, but the delivery address was updated during
-             * confirmation.
-             */
+      * Order was not declined, but the delivery address was updated during
+      * confirmation.
+      */
     @js.native
     sealed trait DELIVERY_ADDRESS_UPDATED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ConfirmationDecision
     
     /**
-             * Order was declined by user.
-             */
+      * Order was declined by user.
+      */
     @js.native
     sealed trait REJECTED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ConfirmationDecision
     
     /**
-             * Unspecified user decision.
-             */
+      * Unspecified user decision.
+      */
     @js.native
     sealed trait UNKNOWN_USER_DECISION
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ConfirmationDecision
@@ -282,8 +282,8 @@ object TransactionValuesNs extends js.Object {
   }
   
   /**
-       * List of customer information properties that can be requested.
-       */
+    * List of customer information properties that can be requested.
+    */
   @js.native
   object CustomerInfoProperties extends js.Object {
     @js.native
@@ -303,27 +303,27 @@ object TransactionValuesNs extends js.Object {
   }
   
   /**
-       * List of possible user decisions to give delivery address.
-       */
+    * List of possible user decisions to give delivery address.
+    */
   @js.native
   object DeliveryAddressDecision extends js.Object {
     /**
-             * User granted delivery address.
-             */
+      * User granted delivery address.
+      */
     @js.native
     sealed trait ACCEPTED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.DeliveryAddressDecision
     
     /**
-             * User denied to give delivery address.
-             */
+      * User denied to give delivery address.
+      */
     @js.native
     sealed trait REJECTED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.DeliveryAddressDecision
     
     /**
-             * Unknown.
-             */
+      * Unknown.
+      */
     @js.native
     sealed trait UNKNOWN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.DeliveryAddressDecision
@@ -338,27 +338,27 @@ object TransactionValuesNs extends js.Object {
   }
   
   /**
-       * List of possible user decisions to give delivery address.
-       */
+    * List of possible user decisions to give delivery address.
+    */
   @js.native
   object DeliveryAddressUserDecision extends js.Object {
     /**
-             * User granted delivery address.
-             */
+      * User granted delivery address.
+      */
     @js.native
     sealed trait ACCEPTED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.DeliveryAddressUserDecision
     
     /**
-             * User denied to give delivery address.
-             */
+      * User denied to give delivery address.
+      */
     @js.native
     sealed trait REJECTED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.DeliveryAddressUserDecision
     
     /**
-             * Unknown.
-             */
+      * Unknown.
+      */
     @js.native
     sealed trait UNKNOWN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.DeliveryAddressUserDecision
@@ -373,62 +373,62 @@ object TransactionValuesNs extends js.Object {
   }
   
   /**
-       * List of possible item types.
-       */
+    * List of possible item types.
+    */
   @js.native
   object ItemType extends js.Object {
     /**
-             * Delivery
-             */
+      * Delivery
+      */
     @js.native
     sealed trait DELIVERY
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ItemType
     
     /**
-             * Discount
-             */
+      * Discount
+      */
     @js.native
     sealed trait DISCOUNT
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ItemType
     
     /**
-             * Fee. For everything else, there's fee.
-             */
+      * Fee. For everything else, there's fee.
+      */
     @js.native
     sealed trait FEE
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ItemType
     
     /**
-             * Gratuity
-             */
+      * Gratuity
+      */
     @js.native
     sealed trait GRATUITY
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ItemType
     
     /**
-             * Regular.
-             */
+      * Regular.
+      */
     @js.native
     sealed trait REGULAR
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ItemType
     
     /**
-             * Subtotal
-             */
+      * Subtotal
+      */
     @js.native
     sealed trait SUBTOTAL
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ItemType
     
     /**
-             * Tax.
-             */
+      * Tax.
+      */
     @js.native
     sealed trait TAX
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ItemType
     
     /**
-             * Unspecified.
-             */
+      * Unspecified.
+      */
     @js.native
     sealed trait UNSPECIFIED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ItemType
@@ -448,62 +448,62 @@ object TransactionValuesNs extends js.Object {
   }
   
   /**
-       * List of possible item types.
-       */
+    * List of possible item types.
+    */
   @js.native
   object LineItemType extends js.Object {
     /**
-             * Delivery
-             */
+      * Delivery
+      */
     @js.native
     sealed trait DELIVERY
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LineItemType
     
     /**
-             * Discount
-             */
+      * Discount
+      */
     @js.native
     sealed trait DISCOUNT
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LineItemType
     
     /**
-             * Fee. For everything else, there's fee.
-             */
+      * Fee. For everything else, there's fee.
+      */
     @js.native
     sealed trait FEE
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LineItemType
     
     /**
-             * Gratuity
-             */
+      * Gratuity
+      */
     @js.native
     sealed trait GRATUITY
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LineItemType
     
     /**
-             * Regular.
-             */
+      * Regular.
+      */
     @js.native
     sealed trait REGULAR
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LineItemType
     
     /**
-             * Subtotal
-             */
+      * Subtotal
+      */
     @js.native
     sealed trait SUBTOTAL
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LineItemType
     
     /**
-             * Tax.
-             */
+      * Tax.
+      */
     @js.native
     sealed trait TAX
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LineItemType
     
     /**
-             * Unspecified.
-             */
+      * Unspecified.
+      */
     @js.native
     sealed trait UNSPECIFIED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LineItemType
@@ -523,48 +523,48 @@ object TransactionValuesNs extends js.Object {
   }
   
   /**
-       * List of possible order location types.
-       */
+    * List of possible order location types.
+    */
   @js.native
   object LocationType extends js.Object {
     /**
-             * Business location of order provider.
-             */
+      * Business location of order provider.
+      */
     @js.native
     sealed trait BUSINESS
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LocationType
     
     /**
-             * Delivery location for an order.
-             */
+      * Delivery location for an order.
+      */
     @js.native
     sealed trait DELIVERY
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LocationType
     
     /**
-             * Destination of the order.
-             */
+      * Destination of the order.
+      */
     @js.native
     sealed trait DESTINATION
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LocationType
     
     /**
-             * Origin of the order.
-             */
+      * Origin of the order.
+      */
     @js.native
     sealed trait ORIGIN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LocationType
     
     /**
-             * Pick up location of the order.
-             */
+      * Pick up location of the order.
+      */
     @js.native
     sealed trait PICK_UP
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LocationType
     
     /**
-             * Unknown.
-             */
+      * Unknown.
+      */
     @js.native
     sealed trait UNKNOWN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LocationType
@@ -582,83 +582,83 @@ object TransactionValuesNs extends js.Object {
   }
   
   /**
-       * List of possible actions to take on the order.
-       */
+    * List of possible actions to take on the order.
+    */
   @js.native
   object OrderAction extends js.Object {
     /**
-             * Call.
-             */
+      * Call.
+      */
     @js.native
     sealed trait CALL
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderAction
     
     /**
-             * Cancel order.
-             */
+      * Cancel order.
+      */
     @js.native
     sealed trait CANCEL
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderAction
     
     /**
-             * Customer Service.
-             */
+      * Customer Service.
+      */
     @js.native
     sealed trait CUSTOMER_SERVICE
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderAction
     
     /**
-             * Email.
-             */
+      * Email.
+      */
     @js.native
     sealed trait EMAIL
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderAction
     
     /**
-             * Exchange order.
-             */
+      * Exchange order.
+      */
     @js.native
     sealed trait EXCHANGE
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderAction
     
     /**
-             * Modify order.
-             */
+      * Modify order.
+      */
     @js.native
     sealed trait MODIFY
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderAction
     
     /**
-             * Reorder.
-             */
+      * Reorder.
+      */
     @js.native
     sealed trait REORDER
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderAction
     
     /**
-             * Return order.
-             */
+      * Return order.
+      */
     @js.native
     sealed trait RETURN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderAction
     
     /**
-             * Review.
-             */
+      * Review.
+      */
     @js.native
     sealed trait REVIEW
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderAction
     
     /**
-             * Unknown action.
-             */
+      * Unknown action.
+      */
     @js.native
     sealed trait UNKNOWN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderAction
     
     /**
-             * View details.
-             */
+      * View details.
+      */
     @js.native
     sealed trait VIEW_DETAILS
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderAction
@@ -681,48 +681,48 @@ object TransactionValuesNs extends js.Object {
   }
   
   /**
-       * List of possible order location types.
-       */
+    * List of possible order location types.
+    */
   @js.native
   object OrderLocationType extends js.Object {
     /**
-             * Business location of order provider.
-             */
+      * Business location of order provider.
+      */
     @js.native
     sealed trait BUSINESS
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderLocationType
     
     /**
-             * Delivery location for an order.
-             */
+      * Delivery location for an order.
+      */
     @js.native
     sealed trait DELIVERY
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderLocationType
     
     /**
-             * Destination of the order.
-             */
+      * Destination of the order.
+      */
     @js.native
     sealed trait DESTINATION
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderLocationType
     
     /**
-             * Origin of the order.
-             */
+      * Origin of the order.
+      */
     @js.native
     sealed trait ORIGIN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderLocationType
     
     /**
-             * Pick up location of the order.
-             */
+      * Pick up location of the order.
+      */
     @js.native
     sealed trait PICK_UP
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderLocationType
     
     /**
-             * Unknown.
-             */
+      * Unknown.
+      */
     @js.native
     sealed trait UNKNOWN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderLocationType
@@ -740,55 +740,55 @@ object TransactionValuesNs extends js.Object {
   }
   
   /**
-       * List of possible order states.
-       */
+    * List of possible order states.
+    */
   @js.native
   object OrderState extends js.Object {
     /**
-             * User cancelled the order.
-             */
+      * User cancelled the order.
+      */
     @js.native
     sealed trait CANCELLED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderState
     
     /**
-             * Order was confirmed by integrator and is active.
-             */
+      * Order was confirmed by integrator and is active.
+      */
     @js.native
     sealed trait CONFIRMED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderState
     
     /**
-             * Order was created at the integrator's system.
-             */
+      * Order was created at the integrator's system.
+      */
     @js.native
     sealed trait CREATED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderState
     
     /**
-             * User received what was ordered.
-             */
+      * User received what was ordered.
+      */
     @js.native
     sealed trait FULFILLED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderState
     
     /**
-             * Order is being delivered.
-             */
+      * Order is being delivered.
+      */
     @js.native
     sealed trait IN_TRANSIT
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderState
     
     /**
-             * Order was rejected.
-             */
+      * Order was rejected.
+      */
     @js.native
     sealed trait REJECTED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderState
     
     /**
-             * User performed a return.
-             */
+      * User performed a return.
+      */
     @js.native
     sealed trait RETURNED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderState
@@ -807,48 +807,48 @@ object TransactionValuesNs extends js.Object {
   }
   
   /**
-       * List of possible order state objects.
-       */
+    * List of possible order state objects.
+    */
   @js.native
   object OrderStateInfo extends js.Object {
     /**
-             * Information about order cancellation. Used with {@link CancellationInfo}.
-             */
+      * Information about order cancellation. Used with {@link CancellationInfo}.
+      */
     @js.native
     sealed trait CANCELLATION
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderStateInfo
     
     /**
-             * Information about order fulfillment. Used with {@link FulfillmentInfo}.
-             */
+      * Information about order fulfillment. Used with {@link FulfillmentInfo}.
+      */
     @js.native
     sealed trait FULFILLMENT
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderStateInfo
     
     /**
-             * Information about in-transit order. Used with {@link TransitInfo}.
-             */
+      * Information about in-transit order. Used with {@link TransitInfo}.
+      */
     @js.native
     sealed trait IN_TRANSIT
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderStateInfo
     
     /**
-             * Information about order receipt. Used with {@link ReceiptInfo}.
-             */
+      * Information about order receipt. Used with {@link ReceiptInfo}.
+      */
     @js.native
     sealed trait RECEIPT
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderStateInfo
     
     /**
-             * Information about order rejection. Used with {@link RejectionInfo}.
-             */
+      * Information about order rejection. Used with {@link RejectionInfo}.
+      */
     @js.native
     sealed trait REJECTION
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderStateInfo
     
     /**
-             * Information about order return. Used with {@link ReturnInfo}.
-             */
+      * Information about order return. Used with {@link ReturnInfo}.
+      */
     @js.native
     sealed trait RETURN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderStateInfo
@@ -866,28 +866,28 @@ object TransactionValuesNs extends js.Object {
   }
   
   /**
-       * List of possible tokenization types for the payment method
-       */
+    * List of possible tokenization types for the payment method
+    */
   @js.native
   object PaymentMethodTokenizationType extends js.Object {
     /**
-             * Allows payment service to pass public key for payment info encryption and receive encrypted
-             * response.
-             */
+      * Allows payment service to pass public key for payment info encryption and receive encrypted
+      * response.
+      */
     @js.native
     sealed trait DIRECT
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentMethodTokenizationType
     
     /**
-             * Use external payment gateway tokenization API to tokenize selected payment method.
-             */
+      * Use external payment gateway tokenization API to tokenize selected payment method.
+      */
     @js.native
     sealed trait PAYMENT_GATEWAY
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentMethodTokenizationType
     
     /**
-             * Unspecified tokenization type.
-             */
+      * Unspecified tokenization type.
+      */
     @js.native
     sealed trait UNSPECIFIED_TOKENIZATION_TYPE
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentMethodTokenizationType
@@ -902,48 +902,48 @@ object TransactionValuesNs extends js.Object {
   }
   
   /**
-       * List of possible item types.
-       */
+    * List of possible item types.
+    */
   @js.native
   object PaymentType extends js.Object {
     /**
-             * Bank.
-             */
+      * Bank.
+      */
     @js.native
     sealed trait BANK
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentType
     
     /**
-             * Gift card.
-             */
+      * Gift card.
+      */
     @js.native
     sealed trait GIFT_CARD
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentType
     
     /**
-             * Loyalty program.
-             */
+      * Loyalty program.
+      */
     @js.native
     sealed trait LOYALTY_PROGRAM
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentType
     
     /**
-             * On order fulfillment, such as cash on delivery.
-             */
+      * On order fulfillment, such as cash on delivery.
+      */
     @js.native
     sealed trait ON_FULFILLMENT
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentType
     
     /**
-             * Payment card.
-             */
+      * Payment card.
+      */
     @js.native
     sealed trait PAYMENT_CARD
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentType
     
     /**
-             * Unspecified.
-             */
+      * Unspecified.
+      */
     @js.native
     sealed trait UNSPECIFIED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentType
@@ -961,27 +961,27 @@ object TransactionValuesNs extends js.Object {
   }
   
   /**
-       * List of price types.
-       */
+    * List of price types.
+    */
   @js.native
   object PriceType extends js.Object {
     /**
-             * Actual.
-             */
+      * Actual.
+      */
     @js.native
     sealed trait ACTUAL
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PriceType
     
     /**
-             * Estimate.
-             */
+      * Estimate.
+      */
     @js.native
     sealed trait ESTIMATE
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PriceType
     
     /**
-             * Unknown.
-             */
+      * Unknown.
+      */
     @js.native
     sealed trait UNKNOWN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PriceType
@@ -996,20 +996,20 @@ object TransactionValuesNs extends js.Object {
   }
   
   /**
-       * List of possible types of order rejection.
-       */
+    * List of possible types of order rejection.
+    */
   @js.native
   object ReasonType extends js.Object {
     /**
-             * Payment was declined.
-             */
+      * Payment was declined.
+      */
     @js.native
     sealed trait PAYMENT_DECLINED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ReasonType
     
     /**
-             * Unknown
-             */
+      * Unknown
+      */
     @js.native
     sealed trait UNKNOWN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ReasonType
@@ -1023,20 +1023,20 @@ object TransactionValuesNs extends js.Object {
   }
   
   /**
-       * List of possible types of order rejection.
-       */
+    * List of possible types of order rejection.
+    */
   @js.native
   object RejectionType extends js.Object {
     /**
-             * Payment was declined.
-             */
+      * Payment was declined.
+      */
     @js.native
     sealed trait PAYMENT_DECLINED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.RejectionType
     
     /**
-             * Unknown
-             */
+      * Unknown
+      */
     @js.native
     sealed trait UNKNOWN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.RejectionType
@@ -1050,42 +1050,42 @@ object TransactionValuesNs extends js.Object {
   }
   
   /**
-       * List of possible order transaction requirements check result types.
-       */
+    * List of possible order transaction requirements check result types.
+    */
   @js.native
   object ResultType extends js.Object {
     /**
-             * Transactions are not supported on current device/surface.
-             */
+      * Transactions are not supported on current device/surface.
+      */
     @js.native
     sealed trait ASSISTANT_SURFACE_NOT_SUPPORTED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ResultType
     
     /**
-             * OK to continue transaction.
-             */
+      * OK to continue transaction.
+      */
     @js.native
     sealed trait OK
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ResultType
     
     /**
-             * Transactions are not supported for current region/country.
-             */
+      * Transactions are not supported for current region/country.
+      */
     @js.native
     sealed trait REGION_NOT_SUPPORTED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ResultType
     
     /**
-             * Unspecified.
-             */
+      * Unspecified.
+      */
     @js.native
     sealed trait UNSPECIFIED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ResultType
     
     /**
-             * User is expected to take action, e.g. enable payments, to continue
-             * transaction.
-             */
+      * User is expected to take action, e.g. enable payments, to continue
+      * transaction.
+      */
     @js.native
     sealed trait USER_ACTION_REQUIRED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ResultType
@@ -1102,34 +1102,34 @@ object TransactionValuesNs extends js.Object {
   }
   
   /**
-       * List of possible order time types.
-       */
+    * List of possible order time types.
+    */
   @js.native
   object TimeType extends js.Object {
     /**
-             * Date of delivery for the order.
-             */
+      * Date of delivery for the order.
+      */
     @js.native
     sealed trait DELIVERY_DATE
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TimeType
     
     /**
-             * Estimated Time of Arrival for order.
-             */
+      * Estimated Time of Arrival for order.
+      */
     @js.native
     sealed trait ETA
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TimeType
     
     /**
-             * Reservation time.
-             */
+      * Reservation time.
+      */
     @js.native
     sealed trait RESERVATION_SLOT
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TimeType
     
     /**
-             * Unknown.
-             */
+      * Unknown.
+      */
     @js.native
     sealed trait UNKNOWN
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TimeType
@@ -1145,42 +1145,42 @@ object TransactionValuesNs extends js.Object {
   }
   
   /**
-       * List of possible order confirmation user decisions
-       */
+    * List of possible order confirmation user decisions
+    */
   @js.native
   object TransactionUserDecision extends js.Object {
     /**
-             * Order was approved by user.
-             */
+      * Order was approved by user.
+      */
     @js.native
     sealed trait ACCEPTED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TransactionUserDecision
     
     /**
-             * Order was not declined, but the cart was updated during confirmation.
-             */
+      * Order was not declined, but the cart was updated during confirmation.
+      */
     @js.native
     sealed trait CART_CHANGE_REQUESTED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TransactionUserDecision
     
     /**
-             * Order was not declined, but the delivery address was updated during
-             * confirmation.
-             */
+      * Order was not declined, but the delivery address was updated during
+      * confirmation.
+      */
     @js.native
     sealed trait DELIVERY_ADDRESS_UPDATED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TransactionUserDecision
     
     /**
-             * Order was declined by user.
-             */
+      * Order was declined by user.
+      */
     @js.native
     sealed trait REJECTED
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TransactionUserDecision
     
     /**
-             * Unspecified user decision.
-             */
+      * Unspecified user decision.
+      */
     @js.native
     sealed trait UNKNOWN_USER_DECISION
       extends actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TransactionUserDecision

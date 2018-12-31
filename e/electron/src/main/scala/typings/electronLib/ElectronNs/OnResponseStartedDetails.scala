@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnResponseStartedDetails extends js.Object {
   /**
-       * Indicates whether the response was fetched from disk cache.
-       */
+    * Indicates whether the response was fetched from disk cache.
+    */
   var fromCache: scala.Boolean
   var id: scala.Double
   var method: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebResponseHeadersDetails extends WebResponseDetails {
   /** standard HTTP method i.e. GET, POST, PUT, etc. */
   var method: java.lang.String

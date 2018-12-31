@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GooglePrivacyDlpV2beta1InfoTypeDescription extends js.Object {
   /** List of categories this infoType belongs to. */
   var categories: js.UndefOr[js.Array[GooglePrivacyDlpV2beta1CategoryDescription]] = js.undefined

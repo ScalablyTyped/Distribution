@@ -5,17 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AwsAccessKey extends js.Object {
   /**
-               * AWS access key ID.
-               * Required.
-               */
+    * AWS access key ID.
+    * Required.
+    */
   var accessKeyId: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * AWS secret access key. This field is not returned in RPC responses.
-               * Required.
-               */
+    * AWS secret access key. This field is not returned in RPC responses.
+    * Required.
+    */
   var secretAccessKey: js.UndefOr[java.lang.String] = js.undefined
 }
 

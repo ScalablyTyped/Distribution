@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * Default color map
-             *
-             * @see https://mochajs.org/api/module-base#.colors
-             */
-
+  * Default color map
+  *
+  * @see https://mochajs.org/api/module-base#.colors
+  */
 trait ColorMap
   extends /* key */ org.scalablytyped.runtime.StringDictionary[scala.Double] {
   var `bright fail`: scala.Double

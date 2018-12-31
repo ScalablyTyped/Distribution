@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OlapFlatDataSourceOptions
   extends /**
 	 * Option for OlapFlatDataSourceOptions

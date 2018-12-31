@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FsSizeData extends js.Object {
   var fs: java.lang.String
   var mount: java.lang.String

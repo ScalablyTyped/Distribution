@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RTCSessionDescription extends js.Object {
   val sdp: java.lang.String
   val `type`: RTCSdpType

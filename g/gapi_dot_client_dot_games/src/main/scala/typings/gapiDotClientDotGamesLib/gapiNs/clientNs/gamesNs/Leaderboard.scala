@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Leaderboard extends js.Object {
   /** The icon for the leaderboard. */
   var iconUrl: js.UndefOr[java.lang.String] = js.undefined
@@ -18,11 +17,11 @@ trait Leaderboard extends js.Object {
   /** The name of the leaderboard. */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * How scores are ordered.
-               * Possible values are:
-               * - "LARGER_IS_BETTER" - Larger values are better; scores are sorted in descending order.
-               * - "SMALLER_IS_BETTER" - Smaller values are better; scores are sorted in ascending order.
-               */
+    * How scores are ordered.
+    * Possible values are:
+    * - "LARGER_IS_BETTER" - Larger values are better; scores are sorted in descending order.
+    * - "SMALLER_IS_BETTER" - Smaller values are better; scores are sorted in ascending order.
+    */
   var order: js.UndefOr[java.lang.String] = js.undefined
 }
 

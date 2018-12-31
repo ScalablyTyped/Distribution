@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default '.ui.dimmer > .content, .ui.dimmer > .content > .center'
-                   */
+    * @default '.ui.dimmer > .content, .ui.dimmer > .content > .center'
+    */
   var content: java.lang.String
   /**
-                   * @default '.dimmable'
-                   */
+    * @default '.dimmable'
+    */
   var dimmable: java.lang.String
   /**
-                   * @default '.ui.dimmer'
-                   */
+    * @default '.ui.dimmer'
+    */
   var dimmer: java.lang.String
 }
 

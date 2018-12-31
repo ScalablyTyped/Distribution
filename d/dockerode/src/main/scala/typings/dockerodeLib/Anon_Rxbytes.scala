@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Rxbytes extends js.Object {
   var rx_bytes: scala.Double
   var rx_dropped: scala.Double

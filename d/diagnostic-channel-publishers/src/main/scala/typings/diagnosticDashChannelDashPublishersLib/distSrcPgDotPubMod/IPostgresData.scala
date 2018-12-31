@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPostgresData extends js.Object {
   var database: diagnosticDashChannelDashPublishersLib.Anon_Host
   var duration: scala.Double

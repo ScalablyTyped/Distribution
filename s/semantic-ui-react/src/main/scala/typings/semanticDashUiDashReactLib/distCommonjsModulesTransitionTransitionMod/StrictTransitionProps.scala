@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictTransitionProps extends js.Object {
   /** Named animation event to used. Must be defined in CSS. */
   var animation: js.UndefOr[semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticTRANSITIONS] = js.undefined
@@ -16,38 +15,38 @@ trait StrictTransitionProps extends js.Object {
   /** Wait until the first "enter" transition to mount the component (add it to the DOM). */
   var mountOnShow: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * Callback on each transition that changes visibility to shown.
-     *
-     * @param {null}
-     * @param {object} data - All props with status.
-     */
+    * Callback on each transition that changes visibility to shown.
+    *
+    * @param {null}
+    * @param {object} data - All props with status.
+    */
   var onComplete: js.UndefOr[
     js.Function2[/* nothing */ scala.Null, /* data */ TransitionEventData, scala.Unit]
   ] = js.undefined
   /**
-     * Callback on each transition that changes visibility to hidden.
-     *
-     * @param {null}
-     * @param {object} data - All props with status.
-     */
+    * Callback on each transition that changes visibility to hidden.
+    *
+    * @param {null}
+    * @param {object} data - All props with status.
+    */
   var onHide: js.UndefOr[
     js.Function2[/* nothing */ scala.Null, /* data */ TransitionEventData, scala.Unit]
   ] = js.undefined
   /**
-     * Callback on each transition that changes visibility to shown.
-     *
-     * @param {null}
-     * @param {object} data - All props with status.
-     */
+    * Callback on each transition that changes visibility to shown.
+    *
+    * @param {null}
+    * @param {object} data - All props with status.
+    */
   var onShow: js.UndefOr[
     js.Function2[/* nothing */ scala.Null, /* data */ TransitionEventData, scala.Unit]
   ] = js.undefined
   /**
-     * Callback on animation start.
-     *
-     * @param {null}
-     * @param {object} data - All props with status.
-     */
+    * Callback on animation start.
+    *
+    * @param {null}
+    * @param {object} data - All props with status.
+    */
   var onStart: js.UndefOr[
     js.Function2[/* nothing */ scala.Null, /* data */ TransitionEventData, scala.Unit]
   ] = js.undefined

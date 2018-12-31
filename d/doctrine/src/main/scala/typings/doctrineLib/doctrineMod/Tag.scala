@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Tag extends js.Object {
   /** The description of the thing this tag is documenting. */
   var description: java.lang.String | scala.Null

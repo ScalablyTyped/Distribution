@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserParams extends js.Object {
   var add_groups: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var admin: js.UndefOr[scala.Boolean] = js.undefined

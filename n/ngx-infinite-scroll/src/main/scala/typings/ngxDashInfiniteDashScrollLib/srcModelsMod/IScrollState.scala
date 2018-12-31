@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IScrollState extends js.Object {
   var lastScrollPosition: scala.Double
   var lastTotalToScroll: scala.Double

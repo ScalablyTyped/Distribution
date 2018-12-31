@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Represents a Map that has a default values factory object or function.
-     * Each get of non-existent key goes through the factory
-     */
+  * Represents a Map that has a default values factory object or function.
+  * Each get of non-existent key goes through the factory
+  */
 @JSGlobal("adone.collection.DefaultMap")
 @js.native
 class DefaultMap[K, V] ()

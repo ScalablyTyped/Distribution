@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVideo extends IMedia {
   /** [Method] Returns the value of posterUrl
   		* @returns String

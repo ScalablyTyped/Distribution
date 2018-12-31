@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Create extends js.Object {
   var attributes: Anon_Username
   var create: js.Function1[

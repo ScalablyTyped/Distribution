@@ -6,24 +6,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * The LinkReshapingTool is used to interactively change the route of a Link.
-    * This tool makes use of an Adornment, shown when the adorned Link is selected,
-    * that includes some number of reshape handles.
-    * This tool conducts a transaction while the tool is active.
-    * A successful reshaping will result in a "LinkReshaped" DiagramEvent and a "LinkReshaping" transaction.
-    */
+  * The LinkReshapingTool is used to interactively change the route of a Link.
+  * This tool makes use of an Adornment, shown when the adorned Link is selected,
+  * that includes some number of reshape handles.
+  * This tool conducts a transaction while the tool is active.
+  * A successful reshaping will result in a "LinkReshaped" DiagramEvent and a "LinkReshaping" transaction.
+  */
 @JSImport("go", "LinkReshapingTool")
 @js.native
+/**
+  * You do not normally need to create an instance of this tool because one already exists as the ToolManager.linkReshapingTool, which you can modify.
+  */
 class LinkReshapingTool ()
   extends goLib.goMod.goNs.LinkReshapingTool
 
 /**
-    * The LinkReshapingTool is used to interactively change the route of a Link.
-    * This tool makes use of an Adornment, shown when the adorned Link is selected,
-    * that includes some number of reshape handles.
-    * This tool conducts a transaction while the tool is active.
-    * A successful reshaping will result in a "LinkReshaped" DiagramEvent and a "LinkReshaping" transaction.
-    */
+  * The LinkReshapingTool is used to interactively change the route of a Link.
+  * This tool makes use of an Adornment, shown when the adorned Link is selected,
+  * that includes some number of reshape handles.
+  * This tool conducts a transaction while the tool is active.
+  * A successful reshaping will result in a "LinkReshaped" DiagramEvent and a "LinkReshaping" transaction.
+  */
 @JSImport("go", "LinkReshapingTool")
 @js.native
 object LinkReshapingTool extends js.Object {

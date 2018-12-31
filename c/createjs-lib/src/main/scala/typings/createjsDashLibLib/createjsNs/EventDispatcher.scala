@@ -21,7 +21,6 @@ class EventDispatcher () extends js.Object {
     `type`: java.lang.String,
     listener: js.Function1[/* eventObj */ js.Object, scala.Boolean | scala.Unit]
   ): js.Function = js.native
-  // methods
   def addEventListener(
     `type`: java.lang.String,
     listener: js.Function1[/* eventObj */ js.Object, scala.Boolean | scala.Unit],
@@ -104,20 +103,17 @@ class EventDispatcher () extends js.Object {
     `type`: java.lang.String,
     listener: js.Function1[/* eventObj */ js.Object, scala.Boolean | scala.Unit]
   ): js.Function = js.native
-   // It is necessary for "arguments.callee"
   def on(
     `type`: java.lang.String,
     listener: js.Function1[/* eventObj */ js.Object, scala.Boolean | scala.Unit],
     scope: js.Object
   ): js.Function = js.native
-   // It is necessary for "arguments.callee"
   def on(
     `type`: java.lang.String,
     listener: js.Function1[/* eventObj */ js.Object, scala.Boolean | scala.Unit],
     scope: js.Object,
     once: scala.Boolean
   ): js.Function = js.native
-   // It is necessary for "arguments.callee"
   def on(
     `type`: java.lang.String,
     listener: js.Function1[/* eventObj */ js.Object, scala.Boolean | scala.Unit],
@@ -125,7 +121,6 @@ class EventDispatcher () extends js.Object {
     once: scala.Boolean,
     data: js.Any
   ): js.Function = js.native
-   // It is necessary for "arguments.callee"
   def on(
     `type`: java.lang.String,
     listener: js.Function1[/* eventObj */ js.Object, scala.Boolean | scala.Unit],

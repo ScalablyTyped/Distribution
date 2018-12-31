@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GraphQLResolveInfo extends js.Object {
   var fieldASTs: js.Array[Field]
   var fieldName: java.lang.String

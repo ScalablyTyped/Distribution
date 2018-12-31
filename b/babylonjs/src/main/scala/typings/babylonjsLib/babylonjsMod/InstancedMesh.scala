@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Creates an instance based on a source mesh.
-     */
+  * Creates an instance based on a source mesh.
+  */
 @JSImport("babylonjs", "InstancedMesh")
 @js.native
 class InstancedMesh protected ()

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateProfileContext extends js.Object {
   var cIData: org.scalablytyped.runtime.StringDictionary[js.Any]
   var contactWithOffers: scala.Boolean

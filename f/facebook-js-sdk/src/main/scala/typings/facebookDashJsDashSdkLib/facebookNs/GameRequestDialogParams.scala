@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GameRequestDialogParams extends DialogParams {
   var action_type: js.UndefOr[
     facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.send | facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.askfor | facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.turn

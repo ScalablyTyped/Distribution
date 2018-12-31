@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "ImageManipulator")
 @js.native
 object ImageManipulatorNs extends js.Object {
-  
   trait Crop extends js.Object {
     var height: scala.Double
     var originX: scala.Double
@@ -16,11 +15,9 @@ object ImageManipulatorNs extends js.Object {
     var width: scala.Double
   }
   
-  
   trait Flip extends js.Object {
     var flip: js.UndefOr[expoLib.Anon_Horizontal] = js.undefined
   }
-  
   
   trait ImageResult extends js.Object {
     var base64: js.UndefOr[java.lang.String] = js.undefined
@@ -29,16 +26,13 @@ object ImageManipulatorNs extends js.Object {
     var width: scala.Double
   }
   
-  
   trait Resize extends js.Object {
     var resize: expoLib.Anon_HeightWidth
   }
   
-  
   trait Rotate extends js.Object {
     var rotate: scala.Double
   }
-  
   
   trait SaveOptions extends js.Object {
     var base64: js.UndefOr[scala.Boolean] = js.undefined

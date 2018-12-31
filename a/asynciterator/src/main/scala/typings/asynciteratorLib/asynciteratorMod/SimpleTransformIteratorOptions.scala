@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SimpleTransformIteratorOptions[S, T] extends TransformIteratorOptions[S] {
   var append: js.UndefOr[js.Array[T]] = js.undefined
   var filter: js.UndefOr[js.Function1[/* item */ S, scala.Boolean]] = js.undefined

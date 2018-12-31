@@ -12,36 +12,36 @@ sealed trait PullRequestStatus extends js.Object
 @js.native
 object PullRequestStatus extends js.Object {
   /**
-       * Pull request is abandoned.
-       */
+    * Pull request is abandoned.
+    */
   @js.native
   sealed trait Abandoned
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.PullRequestStatus
   
   /**
-       * Pull request is active.
-       */
+    * Pull request is active.
+    */
   @js.native
   sealed trait Active
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.PullRequestStatus
   
   /**
-       * Used in pull request search criterias to include all statuses.
-       */
+    * Used in pull request search criterias to include all statuses.
+    */
   @js.native
   sealed trait All
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.PullRequestStatus
   
   /**
-       * Pull request is completed.
-       */
+    * Pull request is completed.
+    */
   @js.native
   sealed trait Completed
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.PullRequestStatus
   
   /**
-       * Status not set. Default state.
-       */
+    * Status not set. Default state.
+    */
   @js.native
   sealed trait NotSet
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.PullRequestStatus

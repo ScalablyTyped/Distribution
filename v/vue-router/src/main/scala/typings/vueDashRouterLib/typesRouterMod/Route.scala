@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Route extends js.Object {
   var fullPath: java.lang.String
   var hash: java.lang.String

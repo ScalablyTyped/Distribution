@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExpansionPanelProps
   extends reactDashMdLib.libMod.Props
      with // for the `component` prop until refactored out
@@ -25,12 +24,12 @@ trait ExpansionPanelProps
   var contentStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var defaultExpanded: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var expandIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var expandIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var expanded: js.UndefOr[scala.Boolean] = js.undefined
   var expandedSecondaryLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined

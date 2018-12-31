@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Name extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -23,12 +22,12 @@ trait Anon_Name extends js.Object {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The resource name of the service account in the following format:
-                   * `projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}`.
-                   * Using `-` as a wildcard for the `PROJECT_ID` will infer the project from
-                   * the account. The `ACCOUNT` value can be the `email` address or the
-                   * `unique_id` of the service account.
-                   */
+    * The resource name of the service account in the following format:
+    * `projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT}`.
+    * Using `-` as a wildcard for the `PROJECT_ID` will infer the project from
+    * the account. The `ACCOUNT` value can be the `email` address or the
+    * `unique_id` of the service account.
+    */
   var name: java.lang.String
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined

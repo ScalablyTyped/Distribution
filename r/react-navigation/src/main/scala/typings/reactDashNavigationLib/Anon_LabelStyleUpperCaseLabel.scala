@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LabelStyleUpperCaseLabel extends js.Object {
   var activeBackgroundColor: js.UndefOr[java.lang.String] = js.undefined
   var activeTintColor: js.UndefOr[java.lang.String] = js.undefined

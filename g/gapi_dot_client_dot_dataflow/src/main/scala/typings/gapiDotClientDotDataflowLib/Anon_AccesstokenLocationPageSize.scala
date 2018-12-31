@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenLocationPageSize extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -29,15 +28,15 @@ trait Anon_AccesstokenLocationPageSize extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * If there are many jobs, limit response to at most this many.
-                   * The actual number of jobs returned will be the lesser of max_responses
-                   * and an unspecified server-defined limit.
-                   */
+    * If there are many jobs, limit response to at most this many.
+    * The actual number of jobs returned will be the lesser of max_responses
+    * and an unspecified server-defined limit.
+    */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * Set this to the 'next_page_token' field of a previous response
-                   * to request additional results in a long list.
-                   */
+    * Set this to the 'next_page_token' field of a previous response
+    * to request additional results in a long list.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

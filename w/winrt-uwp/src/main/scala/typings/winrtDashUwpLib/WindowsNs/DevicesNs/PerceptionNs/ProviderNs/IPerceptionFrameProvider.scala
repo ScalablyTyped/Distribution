@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents an object that can produce PerceptionFrames. */
-
 trait IPerceptionFrameProvider
   extends winrtDashUwpLib.WindowsNs.FoundationNs.IClosable {
   /** Gets a value indicating whether or not the device is ready to start producing PerceptionFrames. */
@@ -16,9 +15,9 @@ trait IPerceptionFrameProvider
   /** The properties describing the device and the frames produced by the device. */
   var properties: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet
   /**
-                       * The device is requested to update one of its Properties to a new value.
-                       * @param value Success or failure will be conveyed to the app.
-                       */
+    * The device is requested to update one of its Properties to a new value.
+    * @param value Success or failure will be conveyed to the app.
+    */
   def setProperty(value: PerceptionPropertyChangeRequest): scala.Unit
   /** Tells the device to start producing frames. If success is returned, PerceptionFrameProviderManagerService::PublishFrameForProvider is expected to be called by this Provider. */
   def start(): scala.Unit

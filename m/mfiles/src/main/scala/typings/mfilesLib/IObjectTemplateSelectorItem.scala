@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IObjectTemplateSelectorItem extends js.Object {
   def GetClassID(): scala.Double
   def GetClassName(): java.lang.String

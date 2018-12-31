@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // incoming headers will never contain number
-
 trait IncomingHttpHeaders
   extends /* header */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | js.Array[java.lang.String]]] {
   var accept: js.UndefOr[java.lang.String] = js.undefined

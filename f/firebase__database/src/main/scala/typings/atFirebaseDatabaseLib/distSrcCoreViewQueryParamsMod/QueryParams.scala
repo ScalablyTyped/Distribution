@@ -21,126 +21,116 @@ class QueryParams () extends js.Object {
   var `startSet_`: js.Any = js.native
   var `viewFrom_`: js.Any = js.native
   /**
-       * @return {!QueryParams}
-       * @private
-       */
+    * @return {!QueryParams}
+    * @private
+    */
   /* private */ def `copy_`(): js.Any = js.native
   /**
-       * @param {*} indexValue
-       * @param {?string=} key
-       * @return {!QueryParams}
-       */
+    * @param {*} indexValue
+    * @param {?string=} key
+    * @return {!QueryParams}
+    */
   def endAt(indexValue: js.Any): QueryParams = js.native
-  /**
-       * @param {*} indexValue
-       * @param {?string=} key
-       * @return {!QueryParams}
-       */
   def endAt(indexValue: js.Any, key: java.lang.String): QueryParams = js.native
   /**
-       * @return {!Index}
-       */
+    * @return {!Index}
+    */
   def getIndex(): atFirebaseDatabaseLib.distSrcCoreSnapIndexesIndexMod.Index = js.native
   /**
-       * Only valid to call if hasEnd() returns true.
-       * Returns the end key name for the range defined by these query parameters
-       * @return {!string}
-       */
+    * Only valid to call if hasEnd() returns true.
+    * Returns the end key name for the range defined by these query parameters
+    * @return {!string}
+    */
   def getIndexEndName(): java.lang.String = js.native
   /**
-       * Only valid to call if hasEnd() returns true.
-       * @return {*}
-       */
+    * Only valid to call if hasEnd() returns true.
+    * @return {*}
+    */
   def getIndexEndValue(): js.Any = js.native
   /**
-       * Only valid to call if hasStart() returns true.
-       * Returns the starting key name for the range defined by these query parameters
-       * @return {!string}
-       */
+    * Only valid to call if hasStart() returns true.
+    * Returns the starting key name for the range defined by these query parameters
+    * @return {!string}
+    */
   def getIndexStartName(): java.lang.String = js.native
   /**
-       * Only valid to call if hasStart() returns true
-       * @return {*}
-       */
+    * Only valid to call if hasStart() returns true
+    * @return {*}
+    */
   def getIndexStartValue(): js.Any = js.native
   /**
-       * Only valid to call if hasLimit() returns true
-       * @return {!number}
-       */
+    * Only valid to call if hasLimit() returns true
+    * @return {!number}
+    */
   def getLimit(): scala.Double = js.native
   /**
-       * @return {!NodeFilter}
-       */
+    * @return {!NodeFilter}
+    */
   def getNodeFilter(): atFirebaseDatabaseLib.distSrcCoreViewFilterNodeFilterMod.NodeFilter = js.native
   /**
-       * @return {!Object}
-       */
+    * @return {!Object}
+    */
   def getQueryObject(): js.Object = js.native
   /**
-       * @return {boolean} True if a limit has been set and it has been explicitly anchored
-       */
+    * @return {boolean} True if a limit has been set and it has been explicitly anchored
+    */
   def hasAnchoredLimit(): scala.Boolean = js.native
   /**
-       * @return {boolean}
-       */
+    * @return {boolean}
+    */
   def hasEnd(): scala.Boolean = js.native
   /**
-       * @return {boolean}
-       */
+    * @return {boolean}
+    */
   def hasLimit(): scala.Boolean = js.native
   /**
-       * @return {boolean}
-       */
+    * @return {boolean}
+    */
   def hasStart(): scala.Boolean = js.native
   /**
-       * @return {boolean}
-       */
+    * @return {boolean}
+    */
   def isDefault(): scala.Boolean = js.native
   /**
-       * @return {boolean} True if it would return from left.
-       */
+    * @return {boolean} True if it would return from left.
+    */
   def isViewFromLeft(): scala.Boolean = js.native
   /**
-       * @param {!number} newLimit
-       * @return {!QueryParams}
-       */
+    * @param {!number} newLimit
+    * @return {!QueryParams}
+    */
   def limit(newLimit: scala.Double): QueryParams = js.native
   /**
-       * @param {!number} newLimit
-       * @return {!QueryParams}
-       */
+    * @param {!number} newLimit
+    * @return {!QueryParams}
+    */
   def limitToFirst(newLimit: scala.Double): QueryParams = js.native
   /**
-       * @param {!number} newLimit
-       * @return {!QueryParams}
-       */
+    * @param {!number} newLimit
+    * @return {!QueryParams}
+    */
   def limitToLast(newLimit: scala.Double): QueryParams = js.native
   /**
-       * @return {boolean}
-       */
+    * @return {boolean}
+    */
   def loadsAllData(): scala.Boolean = js.native
   /**
-       * @param {!Index} index
-       * @return {!QueryParams}
-       */
+    * @param {!Index} index
+    * @return {!QueryParams}
+    */
   def orderBy(index: atFirebaseDatabaseLib.distSrcCoreSnapIndexesIndexMod.Index): QueryParams = js.native
   /**
-       * @param {*} indexValue
-       * @param {?string=} key
-       * @return {!QueryParams}
-       */
+    * @param {*} indexValue
+    * @param {?string=} key
+    * @return {!QueryParams}
+    */
   def startAt(indexValue: js.Any): QueryParams = js.native
-  /**
-       * @param {*} indexValue
-       * @param {?string=} key
-       * @return {!QueryParams}
-       */
   def startAt(indexValue: js.Any, key: java.lang.String): QueryParams = js.native
   /**
-       * Returns a set of REST query string parameters representing this query.
-       *
-       * @return {!Object.<string,*>} query string parameters
-       */
+    * Returns a set of REST query string parameters representing this query.
+    *
+    * @return {!Object.<string,*>} query string parameters
+    */
   def toRestQueryStringParameters(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
@@ -148,24 +138,24 @@ class QueryParams () extends js.Object {
 @js.native
 object QueryParams extends js.Object {
   /**
-       * Default, empty query parameters
-       * @type {!QueryParams}
-       * @const
-       */
+    * Default, empty query parameters
+    * @type {!QueryParams}
+    * @const
+    */
   val DEFAULT: atFirebaseDatabaseLib.distSrcCoreViewQueryParamsMod.QueryParams = js.native
   /**
-       * REST Query Constants
-       * @const
-       * @enum {string}
-       * @private
-       */
+    * REST Query Constants
+    * @const
+    * @enum {string}
+    * @private
+    */
   val `REST_QUERY_CONSTANTS_`: js.Any = js.native
   /**
-       * Wire Protocol Constants
-       * @const
-       * @enum {string}
-       * @private
-       */
+    * Wire Protocol Constants
+    * @const
+    * @enum {string}
+    * @private
+    */
   val `WIRE_PROTOCOL_CONSTANTS_`: js.Any = js.native
 }
 

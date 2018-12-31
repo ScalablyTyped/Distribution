@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrganizationSummary extends UserOrOrgSummary {
   var description: java.lang.String
   var hooks_url: java.lang.String

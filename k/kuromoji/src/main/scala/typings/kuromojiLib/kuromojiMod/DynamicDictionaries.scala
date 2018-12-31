@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DynamicDictionaries extends js.Object {
   var connection_costs: ConnectionCosts
   var token_info_dictionary: TokenInfoDictionary

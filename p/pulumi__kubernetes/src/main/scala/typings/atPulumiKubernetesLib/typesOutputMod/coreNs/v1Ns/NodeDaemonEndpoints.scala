@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * NodeDaemonEndpoints lists ports opened by daemons running on the Node.
-         */
-
+  * NodeDaemonEndpoints lists ports opened by daemons running on the Node.
+  */
 trait NodeDaemonEndpoints extends js.Object {
   /**
-               * Endpoint on which Kubelet is listening.
-               */
+    * Endpoint on which Kubelet is listening.
+    */
   val kubeletEndpoint: DaemonEndpoint
 }
 

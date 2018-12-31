@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Face extends js.Object {
   var code: js.UndefOr[java.lang.String] = js.undefined
     // 50,

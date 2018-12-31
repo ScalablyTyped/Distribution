@@ -15,14 +15,10 @@ object osNs extends js.Object {
   def endianness(): adoneLib.adoneLibStrings.BE | adoneLib.adoneLibStrings.LE = js.native
   def freemem(): scala.Double = js.native
   /**
-       * Gets the priority of a process.
-       * Defaults to current process.
-       */
+    * Gets the priority of a process.
+    * Defaults to current process.
+    */
   def getPriority(): scala.Double = js.native
-  /**
-       * Gets the priority of a process.
-       * Defaults to current process.
-       */
   def getPriority(pid: scala.Double): scala.Double = js.native
   def homedir(): java.lang.String = js.native
   def hostname(): java.lang.String = js.native
@@ -31,14 +27,14 @@ object osNs extends js.Object {
   def platform(): nodeLib.NodeJSNs.Platform = js.native
   def release(): java.lang.String = js.native
   /**
-       * Sets the priority of the process specified process.
-       * @param priority Must be in range of -20 to 19
-       */
+    * Sets the priority of the process specified process.
+    * @param priority Must be in range of -20 to 19
+    */
   def setPriority(pid: scala.Double, priority: scala.Double): scala.Unit = js.native
   /**
-       * Sets the priority of the current process.
-       * @param priority Must be in range of -20 to 19
-       */
+    * Sets the priority of the current process.
+    * @param priority Must be in range of -20 to 19
+    */
   def setPriority(priority: scala.Double): scala.Unit = js.native
   def tmpdir(): java.lang.String = js.native
   def totalmem(): scala.Double = js.native

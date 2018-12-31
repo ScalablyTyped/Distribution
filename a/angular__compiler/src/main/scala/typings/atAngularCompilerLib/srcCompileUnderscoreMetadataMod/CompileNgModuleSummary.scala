@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompileNgModuleSummary extends CompileTypeSummary {
   var entryComponents: js.Array[CompileEntryComponentMetadata]
   var exportedDirectives: js.Array[CompileIdentifierMetadata]

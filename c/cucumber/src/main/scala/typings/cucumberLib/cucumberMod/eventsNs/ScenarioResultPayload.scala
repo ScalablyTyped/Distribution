@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScenarioResultPayload extends EventPayload {
   var duration: js.Any
   var failureException: stdLib.Error

@@ -26,13 +26,6 @@ trait Param extends js.Object {
   		 *   * response - the response from the service request
   		 */
   def set(value: js.Any): scala.Unit = js.native
-  /**
-  		 * Sets the value of the param in ROS.
-  		 *
-  		 * @param value - value to set param to.
-  		 * @param callback - function with params:
-  		 *   * response - the response from the service request
-  		 */
   def set(value: js.Any, callback: js.Function1[/* response */ js.Any, scala.Unit]): scala.Unit = js.native
 }
 

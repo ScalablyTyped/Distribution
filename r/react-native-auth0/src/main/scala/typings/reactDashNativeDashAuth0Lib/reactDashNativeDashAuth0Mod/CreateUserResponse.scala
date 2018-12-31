@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateUserResponse extends js.Object {
   var Id: java.lang.String
   var email: java.lang.String

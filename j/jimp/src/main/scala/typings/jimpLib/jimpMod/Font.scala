@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Font extends js.Object {
   var chars: org.scalablytyped.runtime.StringDictionary[FontChar]
   var common: FontCommon

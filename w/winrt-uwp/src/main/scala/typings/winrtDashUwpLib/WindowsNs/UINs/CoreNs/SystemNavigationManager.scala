@@ -35,9 +35,9 @@ abstract class SystemNavigationManager () extends js.Object {
 @js.native
 object SystemNavigationManager extends js.Object {
   /**
-                   * Returns the SystemNavigationManager object associated with the current window.
-                   * @return The SystemNavigationManager object associated with the current window.
-                   */
+    * Returns the SystemNavigationManager object associated with the current window.
+    * @return The SystemNavigationManager object associated with the current window.
+    */
   def getForCurrentView(): winrtDashUwpLib.WindowsNs.UINs.CoreNs.SystemNavigationManager = js.native
 }
 

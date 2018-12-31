@@ -18,9 +18,9 @@ trait Window
      with GlobalFetch
      with WindowOrWorkerGlobalScope
      with WindowEventHandlers {
-  var Blob: Anon_BlobParts with (/* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(std), TsIdentSimple(Blob)))) */js.Any) = js.native
-  var URL: Anon_Url with (/* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(std), TsIdentSimple(URL)))) */js.Any) = js.native
-  var URLSearchParams: Anon_Init with (/* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(std), TsIdentSimple(URLSearchParams)))) */js.Any) = js.native
+  var Blob: Anon_BlobParts = js.native
+  var URL: Anon_Url = js.native
+  var URLSearchParams: Anon_Init = js.native
   val applicationCache: ApplicationCache = js.native
   val clientInformation: Navigator = js.native
   val closed: scala.Boolean = js.native

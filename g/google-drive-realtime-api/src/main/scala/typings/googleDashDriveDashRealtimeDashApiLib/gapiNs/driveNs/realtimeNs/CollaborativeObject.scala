@@ -19,17 +19,12 @@ class CollaborativeObject () extends js.Object {
   // Even if you add the same handler multiple times using the same type then it will only be called once
   // when the event is dispatched.
   def addEventListener(`type`: java.lang.String, listener: GoogEventHandler): scala.Unit = js.native
-  // Adds an event listener to the event target. The same handler can only be added once per the type.
-  // Even if you add the same handler multiple times using the same type then it will only be called once
-  // when the event is dispatched.
   def addEventListener(`type`: java.lang.String, listener: GoogEventHandler, opt_capture: scala.Boolean): scala.Unit = js.native
   // Removes all event listeners from this object.
   def removeAllEventListeners(): scala.Unit = js.native
   // Removes an event listener from the event target. The handler must be the same object as the one added.
   // If the handler has not been added then nothing is done.
   def removeEventListener(`type`: java.lang.String, listener: GoogEventHandler): scala.Unit = js.native
-  // Removes an event listener from the event target. The handler must be the same object as the one added.
-  // If the handler has not been added then nothing is done.
   def removeEventListener(`type`: java.lang.String, listener: GoogEventHandler, opt_capture: scala.Boolean): scala.Unit = js.native
 }
 

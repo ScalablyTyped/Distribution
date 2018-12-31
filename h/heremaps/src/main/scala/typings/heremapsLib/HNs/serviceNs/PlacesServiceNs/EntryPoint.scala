@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait EntryPoint extends js.Object
 
 /**
-             * List of available entry points
-             */
+  * List of available entry points
+  */
 @JSGlobal("H.service.PlacesService.EntryPoint")
 @js.native
 object EntryPoint extends js.Object {

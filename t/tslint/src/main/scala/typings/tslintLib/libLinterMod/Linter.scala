@@ -39,17 +39,9 @@ class Linter protected () extends js.Object {
 object Linter extends js.Object {
   var VERSION: java.lang.String = js.native
   @JSName("findConfigurationPath")
-  var findConfigurationPath_Original: js.Function2[
-    /* suppliedConfigFilePath */ java.lang.String, 
-    /* inputFilePath */ js.UndefOr[java.lang.String], 
-    js.UndefOr[java.lang.String]
-  ] = js.native
+  var findConfigurationPath_Original: tslintLib.Anon_SuppliedConfigFilePath = js.native
   @JSName("findConfiguration")
-  var findConfiguration_Original: js.Function2[
-    /* configFile */ java.lang.String, 
-    /* inputFilePath */ js.UndefOr[java.lang.String], 
-    tslintLib.libConfigurationMod.IConfigurationLoadResult
-  ] = js.native
+  var findConfiguration_Original: tslintLib.Anon_ConfigFile = js.native
   @JSName("getRulesDirectories")
   var getRulesDirectories_Original: js.Function2[
     /* directories */ js.UndefOr[java.lang.String | js.Array[java.lang.String]], 
@@ -63,21 +55,20 @@ object Linter extends js.Object {
     tslintLib.libConfigurationMod.IConfigurationFile
   ] = js.native
   /**
-       * Creates a TypeScript program object from a tsconfig.json file path and optional project directory.
-       */
+    * Creates a TypeScript program object from a tsconfig.json file path and optional project directory.
+    */
   def createProgram(configFile: java.lang.String): typescriptLib.typescriptMod.tsNs.Program = js.native
-  /**
-       * Creates a TypeScript program object from a tsconfig.json file path and optional project directory.
-       */
   def createProgram(configFile: java.lang.String, projectDirectory: java.lang.String): typescriptLib.typescriptMod.tsNs.Program = js.native
   def findConfiguration(configFile: java.lang.String): tslintLib.libConfigurationMod.IConfigurationLoadResult = js.native
   def findConfiguration(configFile: java.lang.String, inputFilePath: java.lang.String): tslintLib.libConfigurationMod.IConfigurationLoadResult = js.native
+  def findConfiguration(configFile: scala.Null, inputFilePath: java.lang.String): tslintLib.libConfigurationMod.IConfigurationLoadResult = js.native
   def findConfigurationPath(suppliedConfigFilePath: java.lang.String): js.UndefOr[java.lang.String] = js.native
   def findConfigurationPath(suppliedConfigFilePath: java.lang.String, inputFilePath: java.lang.String): js.UndefOr[java.lang.String] = js.native
+  def findConfigurationPath(suppliedConfigFilePath: scala.Null, inputFilePath: java.lang.String): js.UndefOr[java.lang.String] = js.native
   /**
-       * Returns a list of source file names from a TypeScript program. This includes all referenced
-       * files and excludes declaration (".d.ts") files.
-       */
+    * Returns a list of source file names from a TypeScript program. This includes all referenced
+    * files and excludes declaration (".d.ts") files.
+    */
   def getFileNames(program: typescriptLib.typescriptMod.tsNs.Program): js.Array[java.lang.String] = js.native
   def getRulesDirectories(): js.Array[java.lang.String] = js.native
   def getRulesDirectories(directories: java.lang.String): js.Array[java.lang.String] = js.native

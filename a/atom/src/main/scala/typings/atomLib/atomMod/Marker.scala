@@ -10,35 +10,30 @@ trait Marker extends js.Object {
   /** The identifier for this Marker. */
   val id: scala.Double = js.native
   /**
-       *  Removes the marker's tail.
-       *  Returns a boolean indicating whether or not the marker was updated.
-       */
+    *  Removes the marker's tail.
+    *  Returns a boolean indicating whether or not the marker was updated.
+    */
   def clearTail(): scala.Boolean = js.native
   /**
-       *  Compares this marker to another based on their ranges.
-       *  Returns "-1" if this marker precedes the argument.
-       *  Returns "0" if this marker is equivalent to the argument.
-       *  Returns "1" if this marker follows the argument.
-       */
+    *  Compares this marker to another based on their ranges.
+    *  Returns "-1" if this marker precedes the argument.
+    *  Returns "0" if this marker is equivalent to the argument.
+    *  Returns "1" if this marker follows the argument.
+    */
   def compare(other: Marker): scala.Double = js.native
   // Lifecycle
   /**
-       *  Creates and returns a new Marker with the same properties as this
-       *  marker.
-       */
+    *  Creates and returns a new Marker with the same properties as this
+    *  marker.
+    */
   def copy(): Marker = js.native
-  // Lifecycle
-  /**
-       *  Creates and returns a new Marker with the same properties as this
-       *  marker.
-       */
   def copy(options: CopyMarkerOptions): Marker = js.native
   /** Destroys the marker, causing it to emit the "destroyed" event. */
   def destroy(): scala.Unit = js.native
   /**
-       *  Returns a point representing the end position of the marker, which
-       *  could be the head or tail position, depending on its orientation.
-       */
+    *  Returns a point representing the end position of the marker, which
+    *  could be the head or tail position, depending on its orientation.
+    */
   def getEndPosition(): Point = js.native
   /** Returns a point representing the marker's current head position. */
   def getHeadPosition(): Point = js.native
@@ -48,9 +43,9 @@ trait Marker extends js.Object {
   /** Returns the current range of the marker. The range is immutable. */
   def getRange(): Range = js.native
   /**
-       *  Returns a point representing the start position of the marker, which
-       *  could be the head or tail position, depending on its orientation.
-       */
+    *  Returns a point representing the start position of the marker, which
+    *  could be the head or tail position, depending on its orientation.
+    */
   def getStartPosition(): Point = js.native
   /** Returns a point representing the marker's current tail position. */
   def getTailPosition(): Point = js.native
@@ -60,14 +55,14 @@ trait Marker extends js.Object {
   def isDestroyed(): scala.Boolean = js.native
   // Comparison
   /**
-       *  Returns a boolean indicating whether this marker is equivalent to
-       *  another marker, meaning they have the same range and options.
-       */
+    *  Returns a boolean indicating whether this marker is equivalent to
+    *  another marker, meaning they have the same range and options.
+    */
   def isEqual(other: Marker): scala.Boolean = js.native
   /**
-       *  Returns a boolean indicating whether changes that occur exactly at
-       *  the marker's head or tail cause it to move.
-       */
+    *  Returns a boolean indicating whether changes that occur exactly at
+    *  the marker's head or tail cause it to move.
+    */
   def isExclusive(): scala.Boolean = js.native
   /** Returns a boolean indicating whether the head precedes the tail. */
   def isReversed(): scala.Boolean = js.native
@@ -79,31 +74,26 @@ trait Marker extends js.Object {
   /** Invoke the given callback when the marker is destroyed. */
   def onDidDestroy(callback: js.Function0[scala.Unit]): Disposable = js.native
   /**
-       *  Plants the marker's tail at the current head position.
-       *  Returns a boolean indicating whether or not the marker was updated.
-       */
+    *  Plants the marker's tail at the current head position.
+    *  Returns a boolean indicating whether or not the marker was updated.
+    */
   def plantTail(): scala.Boolean = js.native
   /**
-       *  Sets the head position of the marker.
-       *  Returns a boolean indicating whether or not the marker was updated.
-       */
+    *  Sets the head position of the marker.
+    *  Returns a boolean indicating whether or not the marker was updated.
+    */
   def setHeadPosition(position: PointCompatible): scala.Boolean = js.native
   // Mutating Markers
   /**
-       *  Sets the range of the marker.
-       *  Returns a boolean indicating whether or not the marker was updated.
-       */
+    *  Sets the range of the marker.
+    *  Returns a boolean indicating whether or not the marker was updated.
+    */
   def setRange(range: RangeCompatible): scala.Boolean = js.native
-  // Mutating Markers
-  /**
-       *  Sets the range of the marker.
-       *  Returns a boolean indicating whether or not the marker was updated.
-       */
   def setRange(range: RangeCompatible, params: atomLib.Anon_ExclusiveReversed): scala.Boolean = js.native
   /**
-       *  Sets the tail position of the marker.
-       *  Returns a boolean indicating whether or not the marker was updated.
-       */
+    *  Sets the tail position of the marker.
+    *  Returns a boolean indicating whether or not the marker was updated.
+    */
   def setTailPosition(position: PointCompatible): scala.Boolean = js.native
 }
 

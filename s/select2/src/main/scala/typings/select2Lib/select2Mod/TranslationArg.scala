@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TranslationArg extends js.Object {
   var input: java.lang.String
   var maximum: scala.Double

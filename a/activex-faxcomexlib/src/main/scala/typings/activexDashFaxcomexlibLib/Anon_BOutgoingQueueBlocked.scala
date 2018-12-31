@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BOutgoingQueueBlocked extends js.Object {
   val bIncomingQueueBlocked: scala.Boolean
   val bOutgoingQueueBlocked: scala.Boolean

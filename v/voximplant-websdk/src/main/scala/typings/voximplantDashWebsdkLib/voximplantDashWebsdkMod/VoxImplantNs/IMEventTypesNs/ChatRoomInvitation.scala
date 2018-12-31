@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when invitation to chat room received
 		*/
-
 trait ChatRoomInvitation extends js.Object {
   /**
   			* The body of the message

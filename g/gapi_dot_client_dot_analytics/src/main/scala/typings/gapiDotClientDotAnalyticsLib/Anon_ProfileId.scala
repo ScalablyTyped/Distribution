@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ProfileId extends js.Object {
   /** Account ID to create the experiment for. */
   var accountId: java.lang.String
@@ -22,9 +21,9 @@ trait Anon_ProfileId extends js.Object {
   /** View (Profile) ID to create the experiment for. */
   var profileId: java.lang.String
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[java.lang.String] = js.undefined

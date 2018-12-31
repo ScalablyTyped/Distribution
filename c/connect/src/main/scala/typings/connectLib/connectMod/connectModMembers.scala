@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object connectModMembers extends js.Object {
   /**
-   * Create a new connect server.
-   * @public
-   */
+    * Create a new connect server.
+    * @public
+    */
   def apply(): connectLib.connectMod.createServerNs.Server = js.native
 }
 

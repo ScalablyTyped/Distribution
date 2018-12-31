@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileCoverageTotal extends js.Object {
   var covered: scala.Double
   var pct: js.UndefOr[scala.Double] = js.undefined

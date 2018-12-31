@@ -6,12 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * A PathSegment represents a straight line or curved segment of a path between
-    * two or more points that are part of a PathFigure.
-    * A PathSegment must not be modified once its containing PathFigure's
-    * Geometry has been assigned to a Shape.
-    */
-
+  * A PathSegment represents a straight line or curved segment of a path between
+  * two or more points that are part of a PathFigure.
+  * A PathSegment must not be modified once its containing PathFigure's
+  * Geometry has been assigned to a Shape.
+  */
 trait PathSegment extends js.Object {
   /**Gets or sets the center X value of the Arc for a PathSegment of type .Arc.*/
   var centerX: scala.Double
@@ -48,12 +47,12 @@ trait PathSegment extends js.Object {
   /**Gets or sets the X-axis rotation for a PathSegment of type .SvgArc.*/
   var xAxisRotation: scala.Double
   /**
-          * Closes the path after this PathSegment.
-          */
+    * Closes the path after this PathSegment.
+    */
   def close(): PathSegment
   /**
-          * Makes a copy of this PathSegment.
-          */
+    * Makes a copy of this PathSegment.
+    */
   def copy(): PathSegment
   def equalsApprox(s: PathSegment): scala.Boolean
 }

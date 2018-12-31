@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Get and set text and HTML selections in the current web page
- */
+  * Get and set text and HTML selections in the current web page
+  */
 @JSImport("sdk/selection", JSImport.Namespace)
 @js.native
 object selectionMod extends js.Object {

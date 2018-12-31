@@ -30,7 +30,6 @@ import scala.scalajs.js.annotation._
 //  Required.The payment networks supported by the merchant.The value must be one or more of amex, discover, interac, masterCard, privateLabel, or visa.
 //    total
 //  Required.The total amount for the payment.The total must be greater than zero and have a label to pass validation.
-
 trait ApplePayPaymentRequest extends js.Object {
   var billingContact: js.UndefOr[js.Any] = js.undefined
   var countryCode: java.lang.String

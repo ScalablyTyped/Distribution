@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Deferred[T] extends js.Object {
   var promise: Promise[T]
   var reject: js.Function1[/* reason */ js.UndefOr[js.Any], scala.Unit]

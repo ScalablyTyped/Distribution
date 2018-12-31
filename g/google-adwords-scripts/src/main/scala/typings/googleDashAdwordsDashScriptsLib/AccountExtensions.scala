@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Ad extensions
-
 trait AccountExtensions extends js.Object {
   def callouts(): AdWordsSelector[Callout]
   def message(): AdWordsSelector[Message]

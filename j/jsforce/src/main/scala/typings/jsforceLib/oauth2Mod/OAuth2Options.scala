@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OAuth2Options extends js.Object {
   var authCode: js.UndefOr[java.lang.String] = js.undefined
   var authzServiceUrl: js.UndefOr[java.lang.String] = js.undefined

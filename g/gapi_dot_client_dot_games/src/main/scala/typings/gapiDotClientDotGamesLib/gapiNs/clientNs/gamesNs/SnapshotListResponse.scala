@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SnapshotListResponse extends js.Object {
   /** The snapshots. */
   var items: js.UndefOr[js.Array[Snapshot]] = js.undefined

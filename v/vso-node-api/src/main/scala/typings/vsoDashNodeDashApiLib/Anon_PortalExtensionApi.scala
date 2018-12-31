@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PortalExtensionApi extends js.Object {
   var ibiza: scala.Double
   var portalExtensionApi: scala.Double

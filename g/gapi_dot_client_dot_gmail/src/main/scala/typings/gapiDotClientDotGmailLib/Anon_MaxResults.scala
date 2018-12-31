@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MaxResults extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -26,17 +25,17 @@ trait Anon_MaxResults extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Required. Returns history records after the specified startHistoryId. The supplied startHistoryId should be obtained from the historyId of a message,
-                   * thread, or previous list response. History IDs increase chronologically but are not contiguous with random gaps in between valid IDs. Supplying an
-                   * invalid or out of date startHistoryId typically returns an HTTP 404 error code. A historyId is typically valid for at least a week, but in some rare
-                   * circumstances may be valid for only a few hours. If you receive an HTTP 404 error response, your application should perform a full sync. If you receive
-                   * no nextPageToken in the response, there are no updates to retrieve and you can store the returned historyId for a future request.
-                   */
+    * Required. Returns history records after the specified startHistoryId. The supplied startHistoryId should be obtained from the historyId of a message,
+    * thread, or previous list response. History IDs increase chronologically but are not contiguous with random gaps in between valid IDs. Supplying an
+    * invalid or out of date startHistoryId typically returns an HTTP 404 error code. A historyId is typically valid for at least a week, but in some rare
+    * circumstances may be valid for only a few hours. If you receive an HTTP 404 error response, your application should perform a full sync. If you receive
+    * no nextPageToken in the response, there are no updates to retrieve and you can store the returned historyId for a future request.
+    */
   var startHistoryId: js.UndefOr[java.lang.String] = js.undefined
   /** The user's email address. The special value me can be used to indicate the authenticated user. */
   var userId: java.lang.String

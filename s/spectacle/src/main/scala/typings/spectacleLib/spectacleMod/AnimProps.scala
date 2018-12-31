@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnimProps extends js.Object {
   var easing: easeType
   var fromStyle: CSSProperties | js.Array[CSSProperties]

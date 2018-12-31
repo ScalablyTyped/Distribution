@@ -38,38 +38,22 @@ class XMLNode protected () extends js.Object {
   def Delete(): scala.Unit = js.native
   def RemoveChild(ChildElement: XMLNode): scala.Unit = js.native
   /**
-           * @param string [PrefixMapping='']
-           * @param boolean [FastSearchSkippingTextNodes=true]
-           */
+    * @param string [PrefixMapping='']
+    * @param boolean [FastSearchSkippingTextNodes=true]
+    */
   def SelectNodes(XPath: java.lang.String): XMLNodes = js.native
-  /**
-           * @param string [PrefixMapping='']
-           * @param boolean [FastSearchSkippingTextNodes=true]
-           */
   def SelectNodes(XPath: java.lang.String, PrefixMapping: java.lang.String): XMLNodes = js.native
-  /**
-           * @param string [PrefixMapping='']
-           * @param boolean [FastSearchSkippingTextNodes=true]
-           */
   def SelectNodes(
     XPath: java.lang.String,
     PrefixMapping: java.lang.String,
     FastSearchSkippingTextNodes: scala.Boolean
   ): XMLNodes = js.native
   /**
-           * @param string [PrefixMapping='']
-           * @param boolean [FastSearchSkippingTextNodes=true]
-           */
+    * @param string [PrefixMapping='']
+    * @param boolean [FastSearchSkippingTextNodes=true]
+    */
   def SelectSingleNode(XPath: java.lang.String): XMLNode = js.native
-  /**
-           * @param string [PrefixMapping='']
-           * @param boolean [FastSearchSkippingTextNodes=true]
-           */
   def SelectSingleNode(XPath: java.lang.String, PrefixMapping: java.lang.String): XMLNode = js.native
-  /**
-           * @param string [PrefixMapping='']
-           * @param boolean [FastSearchSkippingTextNodes=true]
-           */
   def SelectSingleNode(
     XPath: java.lang.String,
     PrefixMapping: java.lang.String,
@@ -77,16 +61,13 @@ class XMLNode protected () extends js.Object {
   ): XMLNode = js.native
   /** @param boolean [ClearedAutomatically=true] */
   def SetValidationError(Status: WdXMLValidationStatus, ErrorText: js.Any): scala.Unit = js.native
-  /** @param boolean [ClearedAutomatically=true] */
   def SetValidationError(Status: WdXMLValidationStatus, ErrorText: js.Any, ClearedAutomatically: scala.Boolean): scala.Unit = js.native
   def Validate(): scala.Unit = js.native
   /** @param boolean [Advanced=false] */
   def ValidationErrorText(): java.lang.String = js.native
-  /** @param boolean [Advanced=false] */
   def ValidationErrorText(Advanced: scala.Boolean): java.lang.String = js.native
   /** @param boolean [DataOnly=false] */
   def XML(): java.lang.String = js.native
-  /** @param boolean [DataOnly=false] */
   def XML(DataOnly: scala.Boolean): java.lang.String = js.native
 }
 

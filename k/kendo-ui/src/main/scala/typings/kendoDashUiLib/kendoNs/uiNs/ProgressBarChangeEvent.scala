@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProgressBarChangeEvent extends ProgressBarEvent {
   var value: js.UndefOr[scala.Double] = js.undefined
 }

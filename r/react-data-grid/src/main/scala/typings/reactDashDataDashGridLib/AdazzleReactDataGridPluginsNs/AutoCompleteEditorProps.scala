@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AutoCompleteEditorProps extends js.Object {
   var column: js.UndefOr[reactDashDataDashGridLib.AdazzleReactDataGridNs.ExcelColumn] = js.undefined
   var editorDisplayValue: js.UndefOr[

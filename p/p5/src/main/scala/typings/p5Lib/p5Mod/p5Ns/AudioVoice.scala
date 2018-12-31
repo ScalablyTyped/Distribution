@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AudioVoice extends js.Object {
   /**
-       *   Connect to p5 objects or Web Audio Nodes
-       */
+    *   Connect to p5 objects or Web Audio Nodes
+    */
   def connect(unit: js.Object): scala.Unit
   /**
-       *   Disconnect from soundOut
-       */
+    *   Disconnect from soundOut
+    */
   def disconnect(): scala.Unit
 }
 

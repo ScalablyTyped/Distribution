@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IconCollections extends js.Object {
   var fiveArrows: FiveArrowsSet
   var fiveArrowsGray: FiveArrowsGraySet

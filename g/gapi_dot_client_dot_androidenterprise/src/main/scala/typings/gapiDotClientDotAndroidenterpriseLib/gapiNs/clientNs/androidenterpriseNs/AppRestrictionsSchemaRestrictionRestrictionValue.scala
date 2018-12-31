@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AppRestrictionsSchemaRestrictionRestrictionValue extends js.Object {
   /** The type of the value being provided. */
   var `type`: js.UndefOr[java.lang.String] = js.undefined

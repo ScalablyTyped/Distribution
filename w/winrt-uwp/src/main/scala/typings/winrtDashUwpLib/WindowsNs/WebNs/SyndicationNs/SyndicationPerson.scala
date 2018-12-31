@@ -8,18 +8,19 @@ import scala.scalajs.js.annotation._
 /** Represents an author or contributor of syndication content. */
 @JSGlobal("Windows.Web.Syndication.SyndicationPerson")
 @js.native
+/** Creates a SyndicationPerson object. */
 class SyndicationPerson () extends js.Object {
   /**
-                   * Creates a SyndicationPerson object with the specified Name property value.
-                   * @param name The name of the SyndicationPerson . This parameter represents the atom:name element.
-                   */
+    * Creates a SyndicationPerson object with the specified Name property value.
+    * @param name The name of the SyndicationPerson . This parameter represents the atom:name element.
+    */
   def this(name: java.lang.String) = this()
   /**
-                   * Creates a SyndicationPerson object with the specified Name, Email, and Uri property values.
-                   * @param name The name of the SyndicationPerson . This parameter represents the atom:name element.
-                   * @param email Gets or sets the email address of the person. This property represents the atom:email element.
-                   * @param uri Gets or sets the URI of the person. This property represents the atom:uri element. It is the absolute URI resolved against the xml:base attribute, if it is present. If the href attribute is a relative URI string and there is no xml:base attribute, this property is NULL because relative URI is not supported by the runtime URI class.
-                   */
+    * Creates a SyndicationPerson object with the specified Name, Email, and Uri property values.
+    * @param name The name of the SyndicationPerson . This parameter represents the atom:name element.
+    * @param email Gets or sets the email address of the person. This property represents the atom:email element.
+    * @param uri Gets or sets the URI of the person. This property represents the atom:uri element. It is the absolute URI resolved against the xml:base attribute, if it is present. If the href attribute is a relative URI string and there is no xml:base attribute, this property is NULL because relative URI is not supported by the runtime URI class.
+    */
   def this(name: java.lang.String, email: java.lang.String, uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri) = this()
   /** Gets the list of custom attributes of the element. */
   var attributeExtensions: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[SyndicationAttribute] = js.native
@@ -42,10 +43,10 @@ class SyndicationPerson () extends js.Object {
   /** Gets or sets the Uniform Resource Identifier (URI) of the person. This property represents the atom:uri element. It is the absolute URI resolved against the xml:base attribute, if it is present. If the href attribute is a relative URI string and there is no xml:base attribute, this property is NULL because the relative URI is not supported by the runtime URI class. */
   var uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri = js.native
   /**
-                   * Generates the DOM object that represents this element, all the attributes and child elements including foreign markups. The only formats accepted by this method are Atom 1.0 and RSS 2.0.
-                   * @param format The format of the data.
-                   * @return The DOM object that represents this element, and all the attributes and child elements, including foreign markups.
-                   */
+    * Generates the DOM object that represents this element, all the attributes and child elements including foreign markups. The only formats accepted by this method are Atom 1.0 and RSS 2.0.
+    * @param format The format of the data.
+    * @return The DOM object that represents this element, and all the attributes and child elements, including foreign markups.
+    */
   def getXmlDocument(format: SyndicationFormat): winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument = js.native
 }
 

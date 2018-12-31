@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched after if call failed
 		*/
-
 trait Failed extends js.Object {
   /**
   			*	Call that dispatched the event

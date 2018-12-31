@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JwtToken extends js.Object {
   var aud: js.UndefOr[java.lang.String] = js.undefined
   var exp: js.UndefOr[scala.Double] = js.undefined

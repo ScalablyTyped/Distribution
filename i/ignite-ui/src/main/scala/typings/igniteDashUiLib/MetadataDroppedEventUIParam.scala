@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MetadataDroppedEventUIParam extends js.Object {
   /**
   	 * A reference to the dragged element.

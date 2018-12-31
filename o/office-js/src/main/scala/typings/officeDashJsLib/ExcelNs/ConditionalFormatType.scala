@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ConditionalFormatType extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.6]
-     */
+  * [Api set: ExcelApi 1.6]
+  */
 @JSGlobal("Excel.ConditionalFormatType")
 @js.native
 object ConditionalFormatType extends js.Object {

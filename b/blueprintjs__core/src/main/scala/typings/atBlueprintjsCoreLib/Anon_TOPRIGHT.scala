@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TOPRIGHT extends js.Object {
   var BOTTOM: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.bottom
   var BOTTOM_LEFT: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.`bottom-left`

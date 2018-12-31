@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IToastOptions extends js.Object {
   var autoWrap: js.UndefOr[scala.Boolean] = js.undefined
   var bindToController: js.UndefOr[scala.Boolean] = js.undefined

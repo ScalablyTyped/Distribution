@@ -28,7 +28,7 @@ class I18n () extends js.Object {
   def select(id: java.lang.String, config: atLinguiCoreLib.selectMod.SelectProps): java.lang.String = js.native
   def selectOrdinal(config: atLinguiCoreLib.selectMod.PluralProps): java.lang.String = js.native
   def selectOrdinal(id: java.lang.String, config: atLinguiCoreLib.selectMod.PluralProps): java.lang.String = js.native
-  def t(id: java.lang.String): js.Function2[/* strings */ stdLib.TemplateStringsArray, /* repeated */js.Any, java.lang.String] = js.native
+  def t(id: java.lang.String): js.Function2[/* strings */ stdLib.TemplateStringsArray, /* repeated */ js.Any, java.lang.String] = js.native
   def t(strings: stdLib.TemplateStringsArray, values: js.Any*): java.lang.String = js.native
   def use(language: java.lang.String): I18n = js.native
 }

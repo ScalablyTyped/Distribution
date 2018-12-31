@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGZoomAndPan extends js.Object {
   val zoomAndPan: scala.Double
 }

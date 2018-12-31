@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiagnosticWithLocation extends Diagnostic {
   @JSName("file")
   var file_DiagnosticWithLocation: SourceFile

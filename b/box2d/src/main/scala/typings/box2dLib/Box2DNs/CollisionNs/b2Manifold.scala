@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Collision.b2Manifold")
 @js.native
+/**
+		* Creates a new manifold.
+		**/
 class b2Manifold () extends js.Object {
   /**
   		* Not used for Type e_points

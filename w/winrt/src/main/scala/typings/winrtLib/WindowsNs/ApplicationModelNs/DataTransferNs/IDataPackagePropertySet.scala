@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDataPackagePropertySet
   extends winrtLib.WindowsNs.FoundationNs.CollectionsNs.IMap[java.lang.String, js.Any] {
   var applicationListingUri: winrtLib.WindowsNs.FoundationNs.Uri

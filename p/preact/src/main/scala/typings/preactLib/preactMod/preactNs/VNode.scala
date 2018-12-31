@@ -12,7 +12,6 @@ import scala.scalajs.js.annotation._
 	 * of child {VNode}s and a key. The key is used by preact for
 	 * internal purposes.
 	 */
-
 trait VNode[P] extends js.Object {
   var attributes: P
   var children: js.Array[VNode[_] | java.lang.String]

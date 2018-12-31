@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GlobalConfig extends js.Object {
   var bail: scala.Boolean
   var collectCoverage: scala.Boolean

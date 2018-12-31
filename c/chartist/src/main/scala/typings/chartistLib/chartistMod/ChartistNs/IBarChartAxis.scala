@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBarChartAxis extends js.Object {
   var labelInterpolationFnc: js.UndefOr[js.Function] = js.undefined
   var labelOffset: js.UndefOr[chartistLib.Anon_Y] = js.undefined

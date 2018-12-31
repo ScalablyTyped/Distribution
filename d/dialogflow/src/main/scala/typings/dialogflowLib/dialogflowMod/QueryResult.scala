@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryResult extends js.Object {
   var action: java.lang.String
   var allRequiredParamsSent: scala.Boolean

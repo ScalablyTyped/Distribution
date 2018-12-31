@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Base class of materials working in push mode in babylon JS
-     * @hidden
-     */
+  * Base class of materials working in push mode in babylon JS
+  * @hidden
+  */
 @JSGlobal("BABYLON.PushMaterial")
 @js.native
 class PushMaterial protected () extends Material {
@@ -19,10 +19,10 @@ class PushMaterial protected () extends Material {
   /* protected */ def _mustRebind(scene: Scene, effect: Effect): scala.Boolean = js.native
   /* protected */ def _mustRebind(scene: Scene, effect: Effect, visibility: scala.Double): scala.Boolean = js.native
   /**
-           * Binds the given normal matrix to the active effect
-           *
-           * @param normalMatrix the matrix to bind
-           */
+    * Binds the given normal matrix to the active effect
+    *
+    * @param normalMatrix the matrix to bind
+    */
   def bindOnlyNormalMatrix(normalMatrix: Matrix): scala.Unit = js.native
 }
 

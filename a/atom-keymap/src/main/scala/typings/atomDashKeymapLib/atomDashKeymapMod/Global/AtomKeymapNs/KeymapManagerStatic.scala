@@ -10,18 +10,15 @@ import scala.scalajs.js.annotation._
 trait KeymapManagerStatic
   extends /** Create a new KeymapManager. */
 org.scalablytyped.runtime.Instantiable0[KeymapManager]
-     with /** Create a new KeymapManager. */
-org.scalablytyped.runtime.Instantiable1[/* options */ atomDashKeymapLib.Anon_DefaultTarget, KeymapManager] {
+     with org.scalablytyped.runtime.Instantiable1[/* options */ atomDashKeymapLib.Anon_DefaultTarget, KeymapManager] {
   /** Create a keydown DOM event. */
   def buildKeydownEvent(key: java.lang.String): scala.Unit = js.native
-  /** Create a keydown DOM event. */
   def buildKeydownEvent(
     key: java.lang.String,
     options: atomDashKeymapLib.atomDashKeymapMod.Global.AtomKeymapNs.OptionsNs.BuildKeyEvent
   ): scala.Unit = js.native
   /** Create a keyup DOM event. */
   def buildKeyupEvent(key: java.lang.String): scala.Unit = js.native
-  /** Create a keyup DOM event. */
   def buildKeyupEvent(
     key: java.lang.String,
     options: atomDashKeymapLib.atomDashKeymapMod.Global.AtomKeymapNs.OptionsNs.BuildKeyEvent

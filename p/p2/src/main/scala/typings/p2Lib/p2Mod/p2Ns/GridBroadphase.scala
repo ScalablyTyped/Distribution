@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridBroadphase extends Broadphase {
   var binsizeX: scala.Double
   var binsizeY: scala.Double

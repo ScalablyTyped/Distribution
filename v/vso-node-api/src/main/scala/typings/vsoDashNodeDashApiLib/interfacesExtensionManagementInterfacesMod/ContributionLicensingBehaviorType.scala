@@ -12,22 +12,22 @@ sealed trait ContributionLicensingBehaviorType extends js.Object
 @js.native
 object ContributionLicensingBehaviorType extends js.Object {
   /**
-       * Always include the contribution regardless of whether or not the user is licensed for the extension
-       */
+    * Always include the contribution regardless of whether or not the user is licensed for the extension
+    */
   @js.native
   sealed trait AlwaysInclude
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ContributionLicensingBehaviorType
   
   /**
-       * Default value - only include the contribution if the user is licensed for the extension
-       */
+    * Default value - only include the contribution if the user is licensed for the extension
+    */
   @js.native
   sealed trait OnlyIfLicensed
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ContributionLicensingBehaviorType
   
   /**
-       * Only include the contribution if the user is NOT licensed for the extension
-       */
+    * Only include the contribution if the user is NOT licensed for the extension
+    */
   @js.native
   sealed trait OnlyIfUnlicensed
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ContributionLicensingBehaviorType

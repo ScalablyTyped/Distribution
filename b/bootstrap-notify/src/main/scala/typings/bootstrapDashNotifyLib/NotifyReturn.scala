@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NotifyReturn extends js.Object {
   @JSName("$ele")
   var $ele: JQueryStatic

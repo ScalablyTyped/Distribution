@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RendererProps extends js.Object {
   var Container: RelayContainerClass[_]
    // `QueryConfig` or `Relay.Route` that defines the query roots.

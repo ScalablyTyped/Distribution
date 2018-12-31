@@ -15,17 +15,11 @@ trait NdArray[T]
   	 * Add `x` to the array, element-wise.
   	 */
   def add(x: NjParam[T]): NdArray[T] = js.native
-  /**
-  	 * Add `x` to the array, element-wise.
-  	 */
   def add(x: NjParam[T], copy: scala.Boolean): NdArray[T] = js.native
   /**
   	 * Assign `x` to the array, element-wise.
   	 */
   def assign(x: NjParam[T]): NdArray[T] = js.native
-  /**
-  	 * Assign `x` to the array, element-wise.
-  	 */
   def assign(x: NjParam[T], copy: scala.Boolean): NdArray[T] = js.native
   /**
   	 * Returns the discrete, linear convolution of the array using the given filter.
@@ -40,9 +34,6 @@ trait NdArray[T]
   	 * Divide array by `x`, element-wise.
   	 */
   def divide(x: NjParam[T]): NdArray[T] = js.native
-  /**
-  	 * Divide array by `x`, element-wise.
-  	 */
   def divide(x: NjParam[T], copy: scala.Boolean): NdArray[T] = js.native
   /**
   	 * Dot product of two arrays.
@@ -58,11 +49,6 @@ trait NdArray[T]
   	 * @param [copy=true] - set to false to modify the array rather than create a new one
   	 */
   def exp(): NdArray[T] = js.native
-  /**
-  	 * Calculate the exponential of all elements in the array, element-wise.
-  	 *
-  	 * @param [copy=true] - set to false to modify the array rather than create a new one
-  	 */
   def exp(copy: scala.Boolean): NdArray[T] = js.native
   def fftconvolve(filter: NjArray[T]): NdArray[T] = js.native
   /**
@@ -90,9 +76,6 @@ trait NdArray[T]
   	 * Multiply array by `x`, element-wise.
   	 */
   def multiply(x: NjParam[T]): NdArray[T] = js.native
-  /**
-  	 * Multiply array by `x`, element-wise.
-  	 */
   def multiply(x: NjParam[T], copy: scala.Boolean): NdArray[T] = js.native
   /**
   	 * Return the inverse of the array, element-wise.
@@ -104,19 +87,11 @@ trait NdArray[T]
   	 * @param [copy=true] - set to false to modify the array rather than create a new one
   	 */
   def pow(x: NjParam[T]): NdArray[T] = js.native
-  /**
-  	 * Raise array elements to powers from given array, element-wise.
-  	 *
-  	 * @param [copy=true] - set to false to modify the array rather than create a new one
-  	 */
   def pow(x: NjParam[T], copy: scala.Boolean): NdArray[T] = js.native
   /**
   	 * Round array to the to the nearest integer.
   	 */
   def round(): NdArray[T] = js.native
-  /**
-  	 * Round array to the to the nearest integer.
-  	 */
   def round(copy: scala.Boolean): NdArray[T] = js.native
   def slice(args: (scala.Double | js.Array[scala.Double])*): NdArray[T] = js.native
   /**
@@ -125,11 +100,6 @@ trait NdArray[T]
   	 * @param [copy=true] - set to false to modify the array rather than create a new one
   	 */
   def sqrt(): NdArray[T] = js.native
-  /**
-  	 * Calculate the positive square-root of all elements in the array, element-wise.
-  	 *
-  	 * @param [copy=true] - set to false to modify the array rather than create a new one
-  	 */
   def sqrt(copy: scala.Boolean): NdArray[T] = js.native
   /**
   	 * Returns the standard deviation, a measure of the spread of a distribution, of the array elements.
@@ -139,9 +109,6 @@ trait NdArray[T]
   	 * Subtract `x` to the array, element-wise.
   	 */
   def subtract(x: NjParam[T]): NdArray[T] = js.native
-  /**
-  	 * Subtract `x` to the array, element-wise.
-  	 */
   def subtract(x: NjParam[T], copy: scala.Boolean): NdArray[T] = js.native
   /**
   	 * Sum of array elements.
@@ -159,9 +126,6 @@ trait NdArray[T]
   	 * Permute the dimensions of the array.
   	 */
   def transpose(): NdArray[T] = js.native
-  /**
-  	 * Permute the dimensions of the array.
-  	 */
   def transpose(args: js.Array[scala.Double]): NdArray[T] = js.native
 }
 

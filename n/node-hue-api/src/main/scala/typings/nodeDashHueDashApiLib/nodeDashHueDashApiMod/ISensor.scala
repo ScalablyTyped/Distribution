@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISensor extends js.Object {
   var config: org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String]
   var id: js.UndefOr[java.lang.String] = js.undefined

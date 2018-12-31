@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Adds and removes POSIX capabilities from running containers.
-         */
-
+  * Adds and removes POSIX capabilities from running containers.
+  */
 trait Capabilities extends js.Object {
   /**
-               * Added capabilities
-               */
+    * Added capabilities
+    */
   val add: js.Array[java.lang.String]
   /**
-               * Removed capabilities
-               */
+    * Removed capabilities
+    */
   val drop: js.Array[java.lang.String]
 }
 

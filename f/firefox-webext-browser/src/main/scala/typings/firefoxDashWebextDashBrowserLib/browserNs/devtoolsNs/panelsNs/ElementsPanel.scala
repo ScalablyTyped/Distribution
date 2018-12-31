@@ -12,16 +12,11 @@ trait ElementsPanel extends js.Object {
   /** Fired when an object is selected in the panel. */
   var onSelectionChanged: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function0[scala.Unit]] = js.native
   /**
-           * Creates a pane within panel's sidebar.
-           * @param title Text that is displayed in sidebar caption.
-           * @param [callback] A callback invoked when the sidebar is created.
-           */
+    * Creates a pane within panel's sidebar.
+    * @param title Text that is displayed in sidebar caption.
+    * @param [callback] A callback invoked when the sidebar is created.
+    */
   def createSidebarPane(title: java.lang.String): scala.Unit = js.native
-  /**
-           * Creates a pane within panel's sidebar.
-           * @param title Text that is displayed in sidebar caption.
-           * @param [callback] A callback invoked when the sidebar is created.
-           */
   def createSidebarPane(title: java.lang.String, callback: js.Function1[/* result */ ExtensionSidebarPane, scala.Unit]): scala.Unit = js.native
 }
 

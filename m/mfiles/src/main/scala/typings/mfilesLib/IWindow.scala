@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IWindow extends js.Object {
   val Events: IWindowEvents
   val Handle: scala.Double

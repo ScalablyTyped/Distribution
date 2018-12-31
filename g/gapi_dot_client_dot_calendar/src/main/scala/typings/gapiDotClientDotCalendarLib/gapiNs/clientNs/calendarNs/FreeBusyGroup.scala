@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FreeBusyGroup extends js.Object {
   /** List of calendars' identifiers within a group. */
   var calendars: js.UndefOr[js.Array[java.lang.String]] = js.undefined

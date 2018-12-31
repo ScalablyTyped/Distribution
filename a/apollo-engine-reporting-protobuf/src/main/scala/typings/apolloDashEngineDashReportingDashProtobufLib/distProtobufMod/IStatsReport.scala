@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStatsReport extends js.Object {
   /** StatsReport endTime */
   var endTime: js.UndefOr[

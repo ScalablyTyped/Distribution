@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictModalProps
   extends semanticDashUiDashReactLib.distCommonjsAddonsPortalPortalMod.StrictPortalProps {
   /** Shorthand for Modal.Actions. Typically an array of button shorthand. */
@@ -43,11 +42,11 @@ trait StrictModalProps
     ]
   ] = js.undefined
   /**
-     * Action onClick handler when using shorthand `actions`.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Action onClick handler when using shorthand `actions`.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onActionClick: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
@@ -56,11 +55,11 @@ trait StrictModalProps
     ]
   ] = js.undefined
   /**
-     * Called when a close event happens.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called when a close event happens.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   @JSName("onClose")
   var onClose_StrictModalProps: js.UndefOr[
     js.Function2[
@@ -70,19 +69,19 @@ trait StrictModalProps
     ]
   ] = js.undefined
   /**
-     * Called when the portal is mounted on the DOM.
-     *
-     * @param {null}
-     * @param {object} data - All props.
-     */
+    * Called when the portal is mounted on the DOM.
+    *
+    * @param {null}
+    * @param {object} data - All props.
+    */
   @JSName("onMount")
   var onMount_StrictModalProps: js.UndefOr[js.Function2[/* nothing */ scala.Null, /* data */ ModalProps, scala.Unit]] = js.undefined
   /**
-     * Called when an open event happens.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called when an open event happens.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   @JSName("onOpen")
   var onOpen_StrictModalProps: js.UndefOr[
     js.Function2[
@@ -92,11 +91,11 @@ trait StrictModalProps
     ]
   ] = js.undefined
   /**
-     * Called when the portal is unmounted from the DOM.
-     *
-     * @param {null}
-     * @param {object} data - All props.
-     */
+    * Called when the portal is unmounted from the DOM.
+    *
+    * @param {null}
+    * @param {object} data - All props.
+    */
   @JSName("onUnmount")
   var onUnmount_StrictModalProps: js.UndefOr[js.Function2[/* nothing */ scala.Null, /* data */ ModalProps, scala.Unit]] = js.undefined
   /** A modal can vary in size. */

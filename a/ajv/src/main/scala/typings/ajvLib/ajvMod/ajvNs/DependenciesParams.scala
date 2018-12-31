@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DependenciesParams extends js.Object {
   var deps: java.lang.String
   var depsCount: scala.Double

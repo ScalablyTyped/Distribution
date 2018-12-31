@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Interface to define a geographic shape. */
-
 trait IGeoshape extends js.Object {
   /** The altitude reference system of the geographic shape. */
   var altitudeReferenceSystem: AltitudeReferenceSystem

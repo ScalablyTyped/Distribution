@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LeaderboardsResource extends js.Object {
   /** Retrieves the metadata of the leaderboard with the given ID. */
   def get(

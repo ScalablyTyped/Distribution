@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Config extends js.Object {
   /** This event is triggered when the fonts have rendered. */
   var active: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

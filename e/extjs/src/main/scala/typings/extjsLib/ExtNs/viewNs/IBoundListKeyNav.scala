@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBoundListKeyNav
   extends extjsLib.ExtNs.utilNs.IKeyNav {
   /** [Config Option] (Ext.view.BoundList) */

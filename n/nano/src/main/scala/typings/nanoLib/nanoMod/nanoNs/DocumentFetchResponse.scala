@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DocumentFetchResponse[D] extends js.Object {
   var offset: scala.Double
   var rows: js.Array[DocumentResponseRow[D]]

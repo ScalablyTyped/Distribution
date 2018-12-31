@@ -39,7 +39,6 @@ trait ITranslateProvider
   def translations(key: java.lang.String, translationTable: ITranslationTable): ITranslateProvider = js.native
    // JeroMiya - the library should probably return ITranslateProvider but it doesn't here
   def uniformLanguageTag(options: java.lang.String): ITranslateProvider = js.native
-   // JeroMiya - the library should probably return ITranslateProvider but it doesn't here
   def uniformLanguageTag(options: js.Object): ITranslateProvider = js.native
   def use(): java.lang.String = js.native
   def use(key: java.lang.String): ITranslateProvider = js.native

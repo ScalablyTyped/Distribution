@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Public extends js.Object {
   var html: js.UndefOr[js.Any] = js.undefined
   var json: js.UndefOr[js.Any] = js.undefined

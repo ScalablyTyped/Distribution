@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RawObject extends js.Object {
   var height: scala.Double
   var raw: stdLib.ArrayBufferView | glDashTexture2dLib.InputType | stdLib.ImageBitmap

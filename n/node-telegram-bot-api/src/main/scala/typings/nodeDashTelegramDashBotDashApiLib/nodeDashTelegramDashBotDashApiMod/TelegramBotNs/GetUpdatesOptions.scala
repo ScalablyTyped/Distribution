@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetUpdatesOptions extends js.Object {
   var allowed_updates: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var limit: js.UndefOr[scala.Double] = js.undefined

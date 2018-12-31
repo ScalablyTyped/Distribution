@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Strings extends js.Object {
   var addExtraScreenshot: java.lang.String
   var addImageFromGallery: java.lang.String

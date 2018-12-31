@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChampionSpellDto extends js.Object {
   var altimages: js.Array[ImageDto]
   var cooldown: js.Array[scala.Double]

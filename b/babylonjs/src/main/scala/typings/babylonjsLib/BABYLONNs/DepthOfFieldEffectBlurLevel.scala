@@ -9,28 +9,28 @@ import scala.scalajs.js.annotation._
 sealed trait DepthOfFieldEffectBlurLevel extends js.Object
 
 /**
-     * Specifies the level of max blur that should be applied when using the depth of field effect
-     */
+  * Specifies the level of max blur that should be applied when using the depth of field effect
+  */
 @JSGlobal("BABYLON.DepthOfFieldEffectBlurLevel")
 @js.native
 object DepthOfFieldEffectBlurLevel extends js.Object {
   /**
-           * Large blur
-           */
+    * Large blur
+    */
   @js.native
   sealed trait High
     extends babylonjsLib.BABYLONNs.DepthOfFieldEffectBlurLevel
   
   /**
-           * Subtle blur
-           */
+    * Subtle blur
+    */
   @js.native
   sealed trait Low
     extends babylonjsLib.BABYLONNs.DepthOfFieldEffectBlurLevel
   
   /**
-           * Medium blur
-           */
+    * Medium blur
+    */
   @js.native
   sealed trait Medium
     extends babylonjsLib.BABYLONNs.DepthOfFieldEffectBlurLevel

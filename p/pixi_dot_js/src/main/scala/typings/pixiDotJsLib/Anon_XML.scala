@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_XML extends js.Object {
   var AUDIO: scala.Double
   var IMAGE: scala.Double

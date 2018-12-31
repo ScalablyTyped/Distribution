@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(semanticDashUiDashReactLib.distCommonjsCollectionsFormFormFieldMod.StrictFormFieldProps because Would inherit conflicting mutable fields List(label, as, className, disabled, `type`))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(semanticDashUiDashReactLib.distCommonjsCollectionsFormFormFieldMod.StrictFormFieldProps because Would inherit conflicting mutable fields List(as, className, disabled, label, `type`))*/
 trait StrictFormRadioProps
   extends semanticDashUiDashReactLib.distCommonjsAddonsRadioRadioMod.StrictRadioProps {
   /** A FormField control prop. */

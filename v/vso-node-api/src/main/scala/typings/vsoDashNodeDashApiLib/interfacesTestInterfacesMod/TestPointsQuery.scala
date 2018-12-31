@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestPointsQuery extends js.Object {
   var orderBy: java.lang.String
   var points: js.Array[TestPoint]

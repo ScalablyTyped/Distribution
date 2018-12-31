@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PixelmatchOptions extends js.Object {
   /** If true, disables detecting and ignoring anti-aliased pixels. false by default. */
   val includeAA: js.UndefOr[scala.Boolean] = js.undefined

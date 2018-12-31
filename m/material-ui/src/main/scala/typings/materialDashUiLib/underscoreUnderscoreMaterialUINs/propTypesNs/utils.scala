@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait utils extends js.Object {
   def addDays(date: stdLib.Date, days: scala.Double): stdLib.Date
   def addMonths(date: stdLib.Date, months: scala.Double): stdLib.Date

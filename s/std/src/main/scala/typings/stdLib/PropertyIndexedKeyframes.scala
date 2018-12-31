@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PropertyIndexedKeyframes
   extends /* property */ org.scalablytyped.runtime.StringDictionary[
       js.UndefOr[

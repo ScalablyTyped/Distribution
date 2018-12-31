@@ -24,7 +24,7 @@ class Default protected () extends js.Object {
   var start: momentLib.momentMod.momentNs.Moment = js.native
   var stuntedReleaseCnt: scala.Double = js.native
   var timezone: js.Any = js.native
-  var trigger: js.Function2[/* types */ js.Any, /* repeated */js.Any, _] = js.native
+  var trigger: js.Function2[/* types */ js.Any, /* repeated */ js.Any, _] = js.native
   var triggerWith: js.Function3[/* types */ js.Any, /* context */ js.Any, /* args */ js.Any, _] = js.native
   var unzonedRange: fullcalendarLib.unzonedrangeMod.default = js.native
   def addEventDef(eventDef: js.Any): scala.Unit = js.native

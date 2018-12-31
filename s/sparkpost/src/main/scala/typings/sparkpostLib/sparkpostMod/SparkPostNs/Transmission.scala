@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Transmission extends js.Object {
   /** Name of the campaign */
   var campaign_id: java.lang.String

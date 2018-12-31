@@ -6,5 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object modulesEventlistenersMod {
-  type On = snabbdomLib.snabbdomLibStrings.On with js.Any with org.scalablytyped.runtime.StringDictionary[stdLib.EventListener]
+  type On = snabbdomLib.Anon_Ev
 }

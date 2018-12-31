@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ERRORDESCRIPTION extends js.Object {
   var ACCESS_TOKEN_KEY: reactDashAdalLib.reactDashAdalLibStrings.adalDOTaccessDOTtokenDOTkey
   var ERROR: reactDashAdalLib.reactDashAdalLibStrings.adalDOTerror

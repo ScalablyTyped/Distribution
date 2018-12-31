@@ -20,40 +20,18 @@ trait MobileServiceClient
   var push: Push = js.native
   def getTable(tableName: java.lang.String): MobileServiceTable = js.native
   /**
-           * Invokes the specified custom api and returns a response object.
-           *
-           * @param apiName The custom api to invoke.
-           * @param options Contains additional parameter information, valid values are:
-           *     body: The body of the HTTP request.
-           *     method: The HTTP method to use in the request, with the default being POST,
-           *     parameters: Any additional query string parameters, 
-           *     headers: HTTP request headers, specified as an object.
-           * @param callback Optional callback accepting (error, results) parameters.
-           */
+    * Invokes the specified custom api and returns a response object.
+    *
+    * @param apiName The custom api to invoke.
+    * @param options Contains additional parameter information, valid values are:
+    *     body: The body of the HTTP request.
+    *     method: The HTTP method to use in the request, with the default being POST,
+    *     parameters: Any additional query string parameters, 
+    *     headers: HTTP request headers, specified as an object.
+    * @param callback Optional callback accepting (error, results) parameters.
+    */
   def invokeApi(apiName: java.lang.String): asyncPromise = js.native
-  /**
-           * Invokes the specified custom api and returns a response object.
-           *
-           * @param apiName The custom api to invoke.
-           * @param options Contains additional parameter information, valid values are:
-           *     body: The body of the HTTP request.
-           *     method: The HTTP method to use in the request, with the default being POST,
-           *     parameters: Any additional query string parameters, 
-           *     headers: HTTP request headers, specified as an object.
-           * @param callback Optional callback accepting (error, results) parameters.
-           */
   def invokeApi(apiName: java.lang.String, options: InvokeApiOptions): asyncPromise = js.native
-  /**
-           * Invokes the specified custom api and returns a response object.
-           *
-           * @param apiName The custom api to invoke.
-           * @param options Contains additional parameter information, valid values are:
-           *     body: The body of the HTTP request.
-           *     method: The HTTP method to use in the request, with the default being POST,
-           *     parameters: Any additional query string parameters, 
-           *     headers: HTTP request headers, specified as an object.
-           * @param callback Optional callback accepting (error, results) parameters.
-           */
   def invokeApi(
     apiName: java.lang.String,
     options: InvokeApiOptions,

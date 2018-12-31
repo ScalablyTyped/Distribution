@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PointerEventInit extends MouseEventInit {
   var height: js.UndefOr[scala.Double] = js.undefined
   var isPrimary: js.UndefOr[scala.Boolean] = js.undefined

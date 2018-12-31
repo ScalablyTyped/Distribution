@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ShowSearch extends js.Object {
   var choiceTransitionName: java.lang.String
   var filterOption: scala.Boolean

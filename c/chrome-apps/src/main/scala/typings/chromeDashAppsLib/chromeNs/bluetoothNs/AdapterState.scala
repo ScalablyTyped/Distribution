@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AdapterState extends js.Object {
   /** The address of the adapter, in the format 'XX:XX:XX:XX:XX:XX'. */
   var address: java.lang.String

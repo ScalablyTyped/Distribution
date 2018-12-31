@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait PreprocessorType extends js.Object
 
 /**
-           * Specifies the available preprocessor types for XMLViews
-          */
+  * Specifies the available preprocessor types for XMLViews
+  */
 @JSGlobal("sap.ui.core.mvc.XMLView.PreprocessorType")
 @js.native
 object PreprocessorType extends js.Object {

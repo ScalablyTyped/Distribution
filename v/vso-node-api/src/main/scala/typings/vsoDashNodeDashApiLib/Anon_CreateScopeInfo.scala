@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CreateScopeInfo extends js.Object {
   var CreateScopeInfo: js.Any
   var FrameworkIdentityInfo: js.Any

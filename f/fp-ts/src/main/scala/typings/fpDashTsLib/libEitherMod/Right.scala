@@ -30,8 +30,8 @@ class Right[L, A] protected () extends js.Object {
   def getOrElse(a: A): A = js.native
   def getOrElseL(f: js.Function1[/* l */ L, A]): A = js.native
   def inspect(): java.lang.String = js.native
-  def isLeft(): /* is Left */scala.Boolean = js.native
-  def isRight(): /* is Right */scala.Boolean = js.native
+  def isLeft(): /* is fp-ts.fp-ts/lib/Either.Left<L, A> */ scala.Boolean = js.native
+  def isRight(): /* is fp-ts.fp-ts/lib/Either.Right<L, A> */ scala.Boolean = js.native
   def map[B](f: js.Function1[/* a */ A, B]): Either[L, B] = js.native
   def mapLeft[M](f: js.Function1[/* l */ L, M]): Either[M, A] = js.native
   def orElse[M](fy: js.Function1[/* l */ L, Either[M, A]]): Either[M, A] = js.native

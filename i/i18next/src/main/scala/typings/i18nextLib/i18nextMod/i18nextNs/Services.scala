@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Services extends js.Object {
   var backendConnector: js.Any
   var i18nFormat: js.Any

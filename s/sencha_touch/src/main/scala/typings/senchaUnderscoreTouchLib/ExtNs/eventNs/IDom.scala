@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDom extends js.Object {
   /** [Property] (Number) */
   var distance: js.UndefOr[scala.Double] = js.undefined

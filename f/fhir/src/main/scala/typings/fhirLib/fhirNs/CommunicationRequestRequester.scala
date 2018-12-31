@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Who/what is requesting service
-     */
-
+  * Who/what is requesting service
+  */
 trait CommunicationRequestRequester extends BackboneElement {
   /**
-           * Individual making the request
-           */
+    * Individual making the request
+    */
   var agent: Reference
   /**
-           * Organization agent is acting for
-           */
+    * Organization agent is acting for
+    */
   var onBehalfOf: js.UndefOr[Reference] = js.undefined
 }
 

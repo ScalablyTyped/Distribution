@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Page extends js.Object {
   /** List of blocks of text, images etc on this page. */
   var blocks: js.UndefOr[js.Array[Block]] = js.undefined

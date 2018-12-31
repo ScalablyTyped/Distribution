@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Location extends js.Object {
    // 分类结果置信度（0–1.0）
   var location: Anon_Top

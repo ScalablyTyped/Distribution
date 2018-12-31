@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RecordTypeInfo extends js.Object {
   var available: scala.Boolean
   var defaultRecordTypeMapping: scala.Boolean

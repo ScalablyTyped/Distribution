@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anchor extends js.Object {
   def addBlurHandler(handler: Handler): Anchor
   def addClickHandler(handler: Handler): Anchor

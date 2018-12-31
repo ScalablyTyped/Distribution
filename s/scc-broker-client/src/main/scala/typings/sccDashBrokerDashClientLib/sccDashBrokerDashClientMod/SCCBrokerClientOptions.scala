@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SCCBrokerClientOptions extends js.Object {
   var authKey: js.UndefOr[jsonwebtokenLib.jsonwebtokenMod.Secret] = js.undefined
   var brokerRetryDelay: js.UndefOr[scala.Double] = js.undefined

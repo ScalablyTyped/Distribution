@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataViewTable extends js.Object {
   var columns: js.Array[DataViewMetadataColumn]
   var identity: js.UndefOr[js.Array[DataViewScopeIdentity]] = js.undefined

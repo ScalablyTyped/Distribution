@@ -6,67 +6,67 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Defines the octree scene component responsible to manage any octrees
-     * in a given scene.
-     */
+  * Defines the octree scene component responsible to manage any octrees
+  * in a given scene.
+  */
 @JSGlobal("BABYLON.OctreeSceneComponent")
 @js.native
 class OctreeSceneComponent protected () extends js.Object {
   /**
-           * Creates a new instance of the component for the given scene
-           * @param scene Defines the scene to register the component in
-           */
+    * Creates a new instance of the component for the given scene
+    * @param scene Defines the scene to register the component in
+    */
   def this(scene: Scene) = this()
   var _tempRay: js.Any = js.native
   /**
-           * Indicates if the meshes have been checked to make sure they are isEnabled()
-           */
+    * Indicates if the meshes have been checked to make sure they are isEnabled()
+    */
   val checksIsEnabled: scala.Boolean = js.native
   /**
-           * The component name helpfull to identify the component in the list of scene components.
-           */
+    * The component name helpfull to identify the component in the list of scene components.
+    */
   val name: java.lang.String = js.native
   /**
-           * The scene the component belongs to.
-           */
+    * The scene the component belongs to.
+    */
   var scene: Scene = js.native
   /**
-           * Disposes the component and the associated ressources.
-           */
+    * Disposes the component and the associated ressources.
+    */
   def dispose(): scala.Unit = js.native
   /**
-           * Return the list of active meshes
-           * @returns the list of active meshes
-           */
+    * Return the list of active meshes
+    * @returns the list of active meshes
+    */
   def getActiveMeshCandidates(): ISmartArrayLike[AbstractMesh] = js.native
   /**
-           * Return the list of active sub meshes
-           * @param mesh The mesh to get the candidates sub meshes from
-           * @returns the list of active sub meshes
-           */
+    * Return the list of active sub meshes
+    * @param mesh The mesh to get the candidates sub meshes from
+    * @returns the list of active sub meshes
+    */
   def getActiveSubMeshCandidates(mesh: AbstractMesh): ISmartArrayLike[SubMesh] = js.native
   /**
-           * Return the list of sub meshes colliding with a collider
-           * @param mesh defines the mesh to find the submesh for
-           * @param collider defines the collider to evaluate the collision against
-           * @returns the list of colliding sub meshes
-           */
+    * Return the list of sub meshes colliding with a collider
+    * @param mesh defines the mesh to find the submesh for
+    * @param collider defines the collider to evaluate the collision against
+    * @returns the list of colliding sub meshes
+    */
   def getCollidingSubMeshCandidates(mesh: AbstractMesh, collider: Collider): ISmartArrayLike[SubMesh] = js.native
   /**
-           * Return the list of sub meshes intersecting with a given local ray
-           * @param mesh defines the mesh to find the submesh for
-           * @param localRay defines the ray in local space
-           * @returns the list of intersecting sub meshes
-           */
+    * Return the list of sub meshes intersecting with a given local ray
+    * @param mesh defines the mesh to find the submesh for
+    * @param localRay defines the ray in local space
+    * @returns the list of intersecting sub meshes
+    */
   def getIntersectingSubMeshCandidates(mesh: AbstractMesh, localRay: Ray): ISmartArrayLike[SubMesh] = js.native
   /**
-           * Rebuilds the elements related to this component in case of
-           * context lost for instance.
-           */
+    * Rebuilds the elements related to this component in case of
+    * context lost for instance.
+    */
   def rebuild(): scala.Unit = js.native
   /**
-           * Registers the component in a given scene
-           */
+    * Registers the component in a given scene
+    */
   def register(): scala.Unit = js.native
 }
 

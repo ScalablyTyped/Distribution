@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StreetViewTileData extends js.Object {
   var centerHeading: js.UndefOr[scala.Double] = js.undefined
   var tileSize: js.UndefOr[Size] = js.undefined

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** List of error codes returned by database operations in the RequestCallback and FeedCallback. See the corresponding error message for more details. */
-
 trait IErrorCodes extends js.Object {
   // Client error
   /** (400) Request failed due to bad inputs **/

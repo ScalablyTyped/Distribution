@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateItemOptions extends js.Object {
   var ConditionExpression: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ConditionExpression] = js.undefined
   var ConditionalOperator: js.UndefOr[awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ConditionalOperator] = js.undefined

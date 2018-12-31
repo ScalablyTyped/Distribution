@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Date extends js.Object {
   var editor: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Date
   var renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Autocomplete

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FullFontDetails extends js.Object {
   /** The font ID. See the description in getFont. */
   var fontId: java.lang.String

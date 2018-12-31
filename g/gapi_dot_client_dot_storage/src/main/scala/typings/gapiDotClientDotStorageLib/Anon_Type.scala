@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Type extends js.Object {
   /** Target storage class. Required iff the type of the action is SetStorageClass. */
   var storageClass: js.UndefOr[java.lang.String] = js.undefined

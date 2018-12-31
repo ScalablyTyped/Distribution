@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ShapeBShapeA extends js.Object {
   var bodyA: p2Lib.p2Mod.p2Ns.Body
   var bodyB: p2Lib.p2Mod.p2Ns.Body

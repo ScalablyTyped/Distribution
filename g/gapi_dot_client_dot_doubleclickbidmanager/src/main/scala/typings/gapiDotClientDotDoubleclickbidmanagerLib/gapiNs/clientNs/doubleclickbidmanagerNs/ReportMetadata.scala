@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReportMetadata extends js.Object {
   /** The path to the location in Google Cloud Storage where the report is stored. */
   var googleCloudStoragePath: js.UndefOr[java.lang.String] = js.undefined

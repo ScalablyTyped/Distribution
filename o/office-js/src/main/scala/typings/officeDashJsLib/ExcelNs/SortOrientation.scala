@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait SortOrientation extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.2]
-     */
+  * [Api set: ExcelApi 1.2]
+  */
 @JSGlobal("Excel.SortOrientation")
 @js.native
 object SortOrientation extends js.Object {

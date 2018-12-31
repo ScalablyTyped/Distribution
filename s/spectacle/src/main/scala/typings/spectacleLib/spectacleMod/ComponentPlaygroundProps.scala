@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ComponentPlaygroundProps extends js.Object {
   var code: js.UndefOr[java.lang.String] = js.undefined
   var previewBackgroundColor: js.UndefOr[java.lang.String] = js.undefined

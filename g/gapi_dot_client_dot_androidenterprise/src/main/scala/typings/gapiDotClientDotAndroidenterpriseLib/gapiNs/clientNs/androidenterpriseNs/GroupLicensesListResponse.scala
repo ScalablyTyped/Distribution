@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GroupLicensesListResponse extends js.Object {
   /** A group license for a product approved for use in the enterprise. */
   var groupLicense: js.UndefOr[js.Array[GroupLicense]] = js.undefined

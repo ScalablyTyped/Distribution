@@ -22,9 +22,6 @@ object KnuddelsServer extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/KnuddelsServer.html#method_createKnuddelPot
   		 */
   def createKnuddelPot(knuddelAmount: knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.KnuddelAmount): knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.KnuddelPot = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/KnuddelsServer.html#method_createKnuddelPot
-  		 */
   def createKnuddelPot(
     knuddelAmount: knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.KnuddelAmount,
     params: knuddelsDashUserappsDashApiLib.Anon_OnPotSealed

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * An interface representing the authorization code and associated data.
-     */
-
+  * An interface representing the authorization code and associated data.
+  */
 trait AuthorizationCode
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var authorizationCode: java.lang.String

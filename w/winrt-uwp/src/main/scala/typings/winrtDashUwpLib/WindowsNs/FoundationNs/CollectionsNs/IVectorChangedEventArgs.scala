@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides data for the changed event of a vector. */
-
 trait IVectorChangedEventArgs extends js.Object {
   /** Gets the type of change that occurred in the vector. */
   var collectionChange: CollectionChange

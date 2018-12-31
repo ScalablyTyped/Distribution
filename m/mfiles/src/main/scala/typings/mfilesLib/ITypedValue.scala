@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITypedValue extends js.Object {
   val DataType: mfilesLib.MFilesNs.MFDataType
   val DisplayValue: java.lang.String

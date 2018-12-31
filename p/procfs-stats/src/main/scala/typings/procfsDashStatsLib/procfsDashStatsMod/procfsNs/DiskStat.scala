@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiskStat extends js.Object {
   var device: java.lang.String
   var device_number: java.lang.String

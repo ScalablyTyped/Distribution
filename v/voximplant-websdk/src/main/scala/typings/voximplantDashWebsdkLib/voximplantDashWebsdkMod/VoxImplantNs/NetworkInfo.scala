@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	*	Network information
 	*/
-
 trait NetworkInfo extends js.Object {
   /**
   		*	Packet loss percentage

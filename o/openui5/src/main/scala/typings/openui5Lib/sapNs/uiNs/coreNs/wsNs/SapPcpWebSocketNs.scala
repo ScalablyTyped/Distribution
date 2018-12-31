@@ -12,8 +12,8 @@ object SapPcpWebSocketNs extends js.Object {
   @js.native
   object SUPPORTEDUnderscorePROTOCOLSNs extends js.Object {
     /**
-               * Protocol v10.pcp.sap.com
-              */
+      * Protocol v10.pcp.sap.com
+      */
     var v10: js.Any = js.native
   }
   

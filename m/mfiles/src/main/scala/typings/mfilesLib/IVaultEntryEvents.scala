@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVaultEntryEvents extends IEvents {
   var OnAddObjectFile: js.UndefOr[
     js.Function2[

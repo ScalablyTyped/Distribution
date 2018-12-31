@@ -12,22 +12,22 @@ sealed trait JavaAppletStatus extends js.Object
 @js.native
 object JavaAppletStatus extends js.Object {
   /**
-       * @summary Error while loading applet.
-       */
+    * @summary Error while loading applet.
+    */
   @js.native
   sealed trait Error
     extends javaDashAppletLib.JavaAppletStatus
   
   /**
-       * @summary Applet is loading.
-       */
+    * @summary Applet is loading.
+    */
   @js.native
   sealed trait Loading
     extends javaDashAppletLib.JavaAppletStatus
   
   /**
-       * @summary Applet has loaded completely and is ready to receive JavaScript calls.
-       */
+    * @summary Applet has loaded completely and is ready to receive JavaScript calls.
+    */
   @js.native
   sealed trait Ready
     extends javaDashAppletLib.JavaAppletStatus

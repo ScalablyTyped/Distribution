@@ -5,136 +5,135 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Model extends js.Object {
   /** Fires when the time value changed in the TimePicker.
-               */
+    */
   var beforeChange: js.UndefOr[js.Function1[/* e */ BeforeChangeEventArgs, scala.Unit]] = js.undefined
   /** Fires when the TimePicker popup before opened.
-               */
+    */
   var beforeOpen: js.UndefOr[js.Function1[/* e */ BeforeOpenEventArgs, scala.Unit]] = js.undefined
   /** Fires when the time value changed in the TimePicker.
-               */
+    */
   var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, scala.Unit]] = js.undefined
   /** Fires when the TimePicker popup closed.
-               */
+    */
   var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, scala.Unit]] = js.undefined
   /** Fires when create TimePicker successfully.
-               */
+    */
   var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, scala.Unit]] = js.undefined
   /** Sets the root CSS class for the TimePicker theme, which is used to customize.
-               */
+    */
   var cssClass: js.UndefOr[java.lang.String] = js.undefined
   /** Fires when the TimePicker is destroyed successfully.
-               */
+    */
   var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, scala.Unit]] = js.undefined
   /** Specifies the list of time range to be disabled.
-               * @Default {{}}
-               */
+    * @Default {{}}
+    */
   var disableTimeRanges: js.UndefOr[js.Any] = js.undefined
   /** Specifies the animation behavior in TimePicker.
-               * @Default {true}
-               */
+    * @Default {true}
+    */
   var enableAnimation: js.UndefOr[scala.Boolean] = js.undefined
   /** Save current model value to browser cookies for maintaining states. When refreshing the TimePicker control page, the model value is applied from browser cookies or HTML 5local
-               * storage.
-               * @Default {false}
-               */
+    * storage.
+    * @Default {false}
+    */
   var enablePersistence: js.UndefOr[scala.Boolean] = js.undefined
   /** Displays the TimePicker as right to left alignment.
-               * @Default {false}
-               */
+    * @Default {false}
+    */
   var enableRTL: js.UndefOr[scala.Boolean] = js.undefined
   /** When the enableStrictMode is set as true it allows the value outside of the range and also indicate with red color border, otherwise it internally changed to the min or max range
-               * value based an input value.
-               * @Default {false}
-               */
+    * value based an input value.
+    * @Default {false}
+    */
   var enableStrictMode: js.UndefOr[scala.Boolean] = js.undefined
   /** When this property is set to false, it disables the TimePicker control.
-               * @Default {true}
-               */
+    * @Default {true}
+    */
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
   /** Fires when the TimePicker control gets focus.
-               */
+    */
   var focusIn: js.UndefOr[js.Function1[/* e */ FocusInEventArgs, scala.Unit]] = js.undefined
   /** Fires when the TimePicker control get lost focus.
-               */
+    */
   var focusOut: js.UndefOr[js.Function1[/* e */ FocusOutEventArgs, scala.Unit]] = js.undefined
   /** Defines the height of the TimePicker textbox.
-               */
+    */
   var height: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   /** Sets the step value for increment an hour value through arrow keys or mouse scroll.
-               * @Default {1}
-               */
+    * @Default {1}
+    */
   var hourInterval: js.UndefOr[scala.Double] = js.undefined
   /** It allows to define the characteristics of the TimePicker control. It will helps to extend the capability of an HTML element.
-               * @Default {{}}
-               */
+    * @Default {{}}
+    */
   var htmlAttributes: js.UndefOr[js.Any] = js.undefined
   /** Sets the time interval between the two adjacent time values in the popup.
-               * @Default {30}
-               */
+    * @Default {30}
+    */
   var interval: js.UndefOr[scala.Double] = js.undefined
   /** Defines the localization info used by the TimePicker.
-               * @Default {en-US}
-               */
+    * @Default {en-US}
+    */
   var locale: js.UndefOr[java.lang.String] = js.undefined
   /** Sets the maximum time value to the TimePicker.
-               * @Default {11:59:59 PM}
-               */
+    * @Default {11:59:59 PM}
+    */
   var maxTime: js.UndefOr[java.lang.String] = js.undefined
   /** Sets the minimum time value to the TimePicker.
-               * @Default {12:00:00 AM}
-               */
+    * @Default {12:00:00 AM}
+    */
   var minTime: js.UndefOr[java.lang.String] = js.undefined
   /** Sets the step value for increment the minute value through arrow keys or mouse scroll.
-               * @Default {1}
-               */
+    * @Default {1}
+    */
   var minutesInterval: js.UndefOr[scala.Double] = js.undefined
   /** Fires when the TimePicker popup opened.
-               */
+    */
   var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, scala.Unit]] = js.undefined
   /** Defines the height of the TimePicker popup.
-               * @Default {191px}
-               */
+    * @Default {191px}
+    */
   var popupHeight: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   /** Defines the width of the TimePicker popup.
-               * @Default {auto}
-               */
+    * @Default {auto}
+    */
   var popupWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   /** Toggles the readonly state of the TimePicker. When the widget is readOnly, it doesnâ€™t allow your input.
-               * @Default {false}
-               */
+    * @Default {false}
+    */
   var readOnly: js.UndefOr[scala.Boolean] = js.undefined
   /** Sets the step value for increment the seconds value through arrow keys or mouse scroll.
-               * @Default {1}
-               */
+    * @Default {1}
+    */
   var secondsInterval: js.UndefOr[scala.Double] = js.undefined
   /** Fires when the value is selected from the TimePicker dropdown list.
-               */
+    */
   var select: js.UndefOr[js.Function1[/* e */ SelectEventArgs, scala.Unit]] = js.undefined
   /** shows or hides the drop down button in TimePicker.
-               * @Default {true}
-               */
+    * @Default {true}
+    */
   var showPopupButton: js.UndefOr[scala.Boolean] = js.undefined
   /** TimePicker is displayed with rounded corner when this property is set to true.
-               * @Default {false}
-               */
+    * @Default {false}
+    */
   var showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined
   /** Defines the time format displayed in the TimePicker.
-               * @Default {h:mm tt}
-               */
+    * @Default {h:mm tt}
+    */
   var timeFormat: js.UndefOr[java.lang.String] = js.undefined
   /** Sets a specified time value on the TimePicker.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var value: js.UndefOr[java.lang.String | stdLib.Date] = js.undefined
   /** Specifies the water mark text to be displayed in input text.
-               * @Default {select a time}
-               */
+    * @Default {select a time}
+    */
   var watermarkText: js.UndefOr[java.lang.String] = js.undefined
   /** Defines the width of the TimePicker textbox.
-               */
+    */
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 

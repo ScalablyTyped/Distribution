@@ -12,22 +12,22 @@ sealed trait ReviewFilterOptions extends js.Object
 @js.native
 object ReviewFilterOptions extends js.Object {
   /**
-       * Filter out review items with empty review text
-       */
+    * Filter out review items with empty review text
+    */
   @js.native
   sealed trait FilterEmptyReviews
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ReviewFilterOptions
   
   /**
-       * Filter out review items with empty usernames
-       */
+    * Filter out review items with empty usernames
+    */
   @js.native
   sealed trait FilterEmptyUserNames
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ReviewFilterOptions
   
   /**
-       * No filtering, all reviews are returned (default option)
-       */
+    * No filtering, all reviews are returned (default option)
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ReviewFilterOptions

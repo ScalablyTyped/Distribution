@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccountInfoResult extends js.Object {
   var account: java.lang.String
   var account_status: java.lang.String

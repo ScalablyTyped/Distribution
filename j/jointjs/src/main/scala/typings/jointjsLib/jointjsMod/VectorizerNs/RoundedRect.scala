@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RoundedRect
   extends jointjsLib.jointjsMod.gNs.PlainRect {
   var `bottom-rx`: js.UndefOr[scala.Double] = js.undefined

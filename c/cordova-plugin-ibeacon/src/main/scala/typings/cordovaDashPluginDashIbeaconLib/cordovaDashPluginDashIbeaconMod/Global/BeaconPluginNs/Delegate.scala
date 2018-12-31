@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Delegate extends js.Object {
   def didChangeAuthorizationStatus(authorizationStatus: java.lang.String): scala.Unit
   def didDetermineStateForRegion(pluginResult: PluginResult): scala.Unit

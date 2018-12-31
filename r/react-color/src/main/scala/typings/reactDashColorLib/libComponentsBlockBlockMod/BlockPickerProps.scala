@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BlockPickerProps
   extends reactDashColorLib.reactDashColorMod.ColorPickerProps[BlockPicker] {
   var colors: js.UndefOr[js.Array[java.lang.String]] = js.undefined

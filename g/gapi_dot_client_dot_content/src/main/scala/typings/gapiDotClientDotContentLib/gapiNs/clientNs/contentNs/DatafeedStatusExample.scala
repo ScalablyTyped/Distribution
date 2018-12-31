@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatafeedStatusExample extends js.Object {
   /** The ID of the example item. */
   var itemId: js.UndefOr[java.lang.String] = js.undefined

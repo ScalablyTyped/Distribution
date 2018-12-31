@@ -1328,7 +1328,7 @@ object d3DashSelectionModMembers extends js.Object {
   def creator_wbr(name: d3DashSelectionLib.d3DashSelectionLibStrings.wbr): js.ThisFunction0[/* this */ BaseType, stdLib.HTMLElement] = js.native
   def customEvent[Context, Result](
     event: BaseEvent,
-    listener: js.ThisFunction1[/* this */ Context, /* repeated */js.Any, Result],
+    listener: js.ThisFunction1[/* this */ Context, /* repeated */ js.Any, Result],
     that: Context,
     args: js.Any*
   ): Result = js.native

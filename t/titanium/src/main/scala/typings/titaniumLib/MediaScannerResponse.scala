@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Simple object passed to the [scanMediaFiles](Titanium.Media.Android.scanMediaFiles) callback.
- */
-
+  * Simple object passed to the [scanMediaFiles](Titanium.Media.Android.scanMediaFiles) callback.
+  */
 trait MediaScannerResponse extends js.Object {
   /**
   	 * Path to the media file that was scanned.

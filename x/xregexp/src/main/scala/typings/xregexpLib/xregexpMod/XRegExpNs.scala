@@ -19,7 +19,6 @@ object XRegExpNs extends js.Object {
       java.lang.String
     ]
   ): scala.Unit = js.native
-  // begin API definitions
   def addToken(
     regex: stdLib.RegExp,
     handler: js.Function2[

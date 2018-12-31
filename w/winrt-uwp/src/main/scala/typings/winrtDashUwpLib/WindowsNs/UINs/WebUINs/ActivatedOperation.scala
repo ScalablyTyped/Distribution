@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ActivatedOperation () extends js.Object {
   /**
-                   * Requests that the completion of app activation be delayed.
-                   * @return The activation deferral object.
-                   */
+    * Requests that the completion of app activation be delayed.
+    * @return The activation deferral object.
+    */
   def getDeferral(): ActivatedDeferral = js.native
 }
 

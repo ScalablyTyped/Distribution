@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class HttpContentDispositionHeaderValue protected () extends js.Object {
   /**
-                       * Initializes a new instance of the HttpContentDispositionHeaderValue class with content-coding information for use in the Content-Disposition HTTP header.
-                       * @param dispositionType The value of the disposition-type information to be used in the Content-Disposition HTTP header.
-                       */
+    * Initializes a new instance of the HttpContentDispositionHeaderValue class with content-coding information for use in the Content-Disposition HTTP header.
+    * @param dispositionType The value of the disposition-type information to be used in the Content-Disposition HTTP header.
+    */
   def this(dispositionType: java.lang.String) = this()
   /** Gets or sets the value of the disposition-type information in the Content-Disposition HTTP header. */
   var dispositionType: java.lang.String = js.native
@@ -33,15 +33,15 @@ class HttpContentDispositionHeaderValue protected () extends js.Object {
 @js.native
 object HttpContentDispositionHeaderValue extends js.Object {
   /**
-                       * Converts a string to an HttpContentDispositionHeaderValue instance.
-                       * @param input A string that represents the content disposition information in the Content-Disposition HTTP header.
-                       * @return An HttpContentDispositionHeaderValue instance.
-                       */
+    * Converts a string to an HttpContentDispositionHeaderValue instance.
+    * @param input A string that represents the content disposition information in the Content-Disposition HTTP header.
+    * @return An HttpContentDispositionHeaderValue instance.
+    */
   def parse(input: java.lang.String): winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpContentDispositionHeaderValue = js.native
   /**
-                       * Determines whether a string is valid HttpContentDispositionHeaderValue information.
-                       * @param input The string to validate.
-                       */
+    * Determines whether a string is valid HttpContentDispositionHeaderValue information.
+    * @param input The string to validate.
+    */
   def tryParse(input: java.lang.String): winrtDashUwpLib.Anon_ContentDispositionHeaderValue = js.native
 }
 

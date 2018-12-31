@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinearSpring extends Spring {
   var localAnchorA: js.Array[scala.Double]
   var localAnchorB: js.Array[scala.Double]

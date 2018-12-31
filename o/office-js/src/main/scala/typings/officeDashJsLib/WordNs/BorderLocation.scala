@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait BorderLocation extends js.Object
 
 /**
-     * [Api set: WordApi]
-     */
+  * [Api set: WordApi]
+  */
 @JSGlobal("Word.BorderLocation")
 @js.native
 object BorderLocation extends js.Object {

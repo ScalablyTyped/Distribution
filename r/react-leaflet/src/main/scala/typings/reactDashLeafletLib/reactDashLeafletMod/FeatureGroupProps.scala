@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FeatureGroupProps
   extends leafletLib.leafletMod.PathOptions
      with FeatureGroupEvents {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BootstrapButtonEditEventMap extends BootstrapClientEditEventMap {
   var buttonClick: ButtonEditClickEventArgs
   var keyDown: EditKeyEventArgs

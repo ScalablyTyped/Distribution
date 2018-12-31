@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataProvider extends js.Object {
   var changes: js.Object
   var hot: handsontableLib.handsontableMod.underscoreHandsontableNs.Core

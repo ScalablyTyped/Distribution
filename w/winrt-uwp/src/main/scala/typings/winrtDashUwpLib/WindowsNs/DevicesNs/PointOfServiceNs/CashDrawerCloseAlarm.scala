@@ -35,9 +35,9 @@ abstract class CashDrawerCloseAlarm () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[CashDrawerCloseAlarm, _]
   ): scala.Unit = js.native
   /**
-                   * Starts the alarm countdown, returning an awaitable object that completes when the cash drawer is closed.
-                   * @return True if the drawer has been closed; otherwise, false indicates a problem has occurred.
-                   */
+    * Starts the alarm countdown, returning an awaitable object that completes when the cash drawer is closed.
+    * @return True if the drawer has been closed; otherwise, false indicates a problem has occurred.
+    */
   def startAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
 }
 

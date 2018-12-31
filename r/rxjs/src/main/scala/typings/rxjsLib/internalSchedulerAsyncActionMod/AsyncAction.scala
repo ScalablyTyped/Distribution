@@ -23,9 +23,9 @@ class AsyncAction[T] protected ()
   /** @deprecated This is an internal implementation detail, do not use. */
   def _unsubscribe(): scala.Unit = js.native
   /**
-       * Immediately executes this action and the `work` it contains.
-       * @return {any}
-       */
+    * Immediately executes this action and the `work` it contains.
+    * @return {any}
+    */
   def execute(state: T, delay: scala.Double): js.Any = js.native
   /* protected */ def recycleAsyncId(scheduler: rxjsLib.internalSchedulerAsyncSchedulerMod.AsyncScheduler, id: js.Any): js.Any = js.native
   /* protected */ def recycleAsyncId(

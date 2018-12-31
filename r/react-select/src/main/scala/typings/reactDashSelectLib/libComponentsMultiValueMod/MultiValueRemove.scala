@@ -13,6 +13,6 @@ class MultiValueRemove[OptionType] ()
 @JSImport("react-select/lib/components/MultiValue", "MultiValueRemove")
 @js.native
 object MultiValueRemove extends js.Object {
-  var defaultProps: reactDashSelectLib.Anon_ChildrenReactNode_1719049753 = js.native
+  var defaultProps: reactDashSelectLib.Anon_ChildrenReactNode_1758406492 = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Legacy extends js.Object {
   /** Styles as of cli-progress v1.3.0 */
   var legacy: cliDashProgressLib.cliDashProgressMod.Preset

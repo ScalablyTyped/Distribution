@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Base extends js.Object {
   var Accent: EightColorScheme
   var Blues: NineColorScheme

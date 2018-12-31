@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DisksIoData extends js.Object {
   var ms: scala.Double
   var rIO: scala.Double

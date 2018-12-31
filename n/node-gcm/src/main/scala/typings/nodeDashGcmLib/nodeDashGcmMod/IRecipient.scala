@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRecipient extends js.Object {
   var condition: js.UndefOr[java.lang.String] = js.undefined
   var notificationKey: js.UndefOr[java.lang.String] = js.undefined

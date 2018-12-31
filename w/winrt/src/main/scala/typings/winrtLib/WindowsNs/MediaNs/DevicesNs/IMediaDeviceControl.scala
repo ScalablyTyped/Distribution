@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMediaDeviceControl extends js.Object {
   var capabilities: MediaDeviceControlCapabilities
   def tryGetAuto(): winrtLib.Anon_ValueSucceeded

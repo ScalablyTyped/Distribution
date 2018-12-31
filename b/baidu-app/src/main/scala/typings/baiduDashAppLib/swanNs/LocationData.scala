@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 // #endregion
 // #region 位置API列表
 // 位置-----获取位置
-
 trait LocationData extends js.Object {
   /** 位置的精确度 */
   var accuracy: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Instruction extends js.Object {
   var identity: java.lang.String
   var list_index: js.UndefOr[_]

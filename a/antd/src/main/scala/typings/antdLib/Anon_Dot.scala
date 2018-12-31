@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Dot extends js.Object {
   var count: scala.Null
   var dot: scala.Boolean

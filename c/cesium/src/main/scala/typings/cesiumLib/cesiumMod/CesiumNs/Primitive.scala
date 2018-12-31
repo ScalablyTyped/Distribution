@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Primitive extends js.Object {
   val allowPicking: scala.Boolean
   var appearance: Appearance

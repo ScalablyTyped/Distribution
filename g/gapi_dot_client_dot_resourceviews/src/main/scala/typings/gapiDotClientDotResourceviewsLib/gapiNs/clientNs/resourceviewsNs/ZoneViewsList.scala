@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ZoneViewsList extends js.Object {
   /** The result that contains all resource views that meet the criteria. */
   var items: js.UndefOr[js.Array[ResourceView]] = js.undefined

@@ -5,10 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinearOptimizationService extends js.Object {
-  var Status: js.Any
-  var VariableType: js.Any
+  var Status: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Optimization.Status */ js.Any
+  var VariableType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Optimization.VariableType */ js.Any
   def createEngine(): LinearOptimizationEngine
 }
 

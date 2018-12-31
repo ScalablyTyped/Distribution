@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** The progress data for an asynchronous photo import operation. */
-
 trait PhotoImportProgress extends js.Object {
   /** The number of bytes that have been imported. */
   var bytesImported: scala.Double

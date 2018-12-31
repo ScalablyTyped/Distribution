@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BootstrapMemoEventMap extends BootstrapClientEditEventMap {
   var keyDown: EditKeyEventArgs
   var keyPress: EditKeyEventArgs

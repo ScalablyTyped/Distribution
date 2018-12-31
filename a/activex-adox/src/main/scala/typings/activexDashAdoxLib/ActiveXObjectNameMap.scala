@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActiveXObjectNameMap extends js.Object {
   var `ADOX.Catalog`: activexDashAdoxLib.ADOXNs.Catalog
   var `ADOX.Column`: activexDashAdoxLib.ADOXNs.Column

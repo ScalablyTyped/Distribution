@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DailyApiRequests extends Limit {
   var `Chatter Desktop`: Limit
   var `Chatter Mobile for BlackBerry`: Limit

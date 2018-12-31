@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RaisedButtonProps extends SharedEnhancedButtonProps[RaisedButton] {
   // <EnhancedButton/> is the element that get the 'other' properties
   var backgroundColor: js.UndefOr[java.lang.String] = js.undefined

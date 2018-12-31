@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomLauncher extends js.Object {
   var base: java.lang.String
   var browserName: js.UndefOr[java.lang.String] = js.undefined

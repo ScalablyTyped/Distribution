@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Field[A]
   extends fpDashTsLib.libRingMod.Ring[A] {
   def degree(a: A): scala.Double

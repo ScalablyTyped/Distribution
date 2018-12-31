@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMenuButton
   extends senchaUnderscoreTouchLib.ExtNs.IButton {
   /** [Method] Returns the value of menuItems

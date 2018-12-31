@@ -129,7 +129,7 @@ object d3DashGeoModMembers extends js.Object {
   @JSName("geoPath")
   def geoPath_ThisDatumObjectGeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: scala.Null, context: GeoContext): GeoPath[This, DatumObject] = js.native
   def geoProjection(project: GeoRawProjection): GeoProjection = js.native
-  def geoProjectionMutator(factory: js.Function1[/* repeated */js.Any, GeoRawProjection]): js.Function0[GeoProjection] = js.native
+  def geoProjectionMutator(factory: js.Function1[/* repeated */ js.Any, GeoRawProjection]): js.Function0[GeoProjection] = js.native
   def geoRotation(angles: js.Tuple2[scala.Double, scala.Double]): GeoRotation = js.native
   def geoRotation(angles: js.Tuple3[scala.Double, scala.Double, scala.Double]): GeoRotation = js.native
   def geoStereographic(): GeoProjection = js.native

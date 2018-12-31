@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object mappingsNs extends js.Object {
   /**
-       * Interfaces and instance classes for types from the Mendix sub meta model `Mappings`.
-       */
+    * Interfaces and instance classes for types from the Mendix sub meta model `Mappings`.
+    */
   /**
-       * In version 6.6.0: introduced
-       */
+    * In version 6.6.0: introduced
+    */
   @js.native
   abstract class Element protected ()
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.mappingsNs.Element {
@@ -25,8 +25,8 @@ object mappingsNs extends js.Object {
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.mappingsNs.ElementType
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/mapping-documents relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/mapping-documents relevant section in reference guide}
+    */
   @js.native
   abstract class MappingDocument protected ()
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.mappingsNs.MappingDocument {
@@ -72,11 +72,11 @@ object mappingsNs extends js.Object {
   }
   
   /**
-       * Interfaces and instance classes for types from the Mendix sub meta model `Mappings`.
-       */
+    * Interfaces and instance classes for types from the Mendix sub meta model `Mappings`.
+    */
   /**
-       * In version 6.6.0: introduced
-       */
+    * In version 6.6.0: introduced
+    */
   @js.native
   object Element extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -98,8 +98,8 @@ object mappingsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/mapping-documents relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/mapping-documents relevant section in reference guide}
+    */
   @js.native
   object MappingDocument extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -117,16 +117,16 @@ object mappingsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenMappingsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new MappingMicroflowCall instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new MappingMicroflowCall instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenMappingsMod.mappingsNs.MappingMicroflowCall = js.native
     /**
-             * Creates and returns a new MappingMicroflowCall instance in the SDK and on the server.
-             * The new MappingMicroflowCall will be automatically stored in the 'mappingMicroflowCall' property
-             * of the parent ObjectMappingElement element passed as argument.
-             */
+      * Creates and returns a new MappingMicroflowCall instance in the SDK and on the server.
+      * The new MappingMicroflowCall will be automatically stored in the 'mappingMicroflowCall' property
+      * of the parent ObjectMappingElement element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ObjectMappingElement): mendixmodelsdkLib.distGenMappingsMod.mappingsNs.MappingMicroflowCall = js.native
   }
   
@@ -135,16 +135,16 @@ object mappingsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenMappingsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new MappingMicroflowParameter instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new MappingMicroflowParameter instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenMappingsMod.mappingsNs.MappingMicroflowParameter = js.native
     /**
-             * Creates and returns a new MappingMicroflowParameter instance in the SDK and on the server.
-             * The new MappingMicroflowParameter will be automatically stored in the 'parameterMappings' property
-             * of the parent MappingMicroflowCall element passed as argument.
-             */
+      * Creates and returns a new MappingMicroflowParameter instance in the SDK and on the server.
+      * The new MappingMicroflowParameter will be automatically stored in the 'parameterMappings' property
+      * of the parent MappingMicroflowCall element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.MappingMicroflowCall): mendixmodelsdkLib.distGenMappingsMod.mappingsNs.MappingMicroflowParameter = js.native
   }
   

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Describes a data value type in the client type system. Can be used to get a concrete ValueType instance. */
-
 trait ValueTypeDescriptor extends js.Object {
   val binary: js.UndefOr[scala.Boolean] = js.undefined
   val bool: js.UndefOr[scala.Boolean] = js.undefined

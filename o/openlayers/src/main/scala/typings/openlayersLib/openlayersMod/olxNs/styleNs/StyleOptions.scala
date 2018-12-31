@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StyleOptions extends js.Object {
   var fill: js.UndefOr[openlayersLib.openlayersMod.styleNs.Fill] = js.undefined
   var geometry: js.UndefOr[

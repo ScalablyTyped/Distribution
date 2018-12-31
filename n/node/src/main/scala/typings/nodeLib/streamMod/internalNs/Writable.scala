@@ -27,15 +27,15 @@ trait Writable
     callback: js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
   ): scala.Unit = js.native
   /**
-               * Event emitter
-               * The defined events on documents including:
-               * 1. close
-               * 2. drain
-               * 3. error
-               * 4. finish
-               * 5. pipe
-               * 6. unpipe
-               */
+    * Event emitter
+    * The defined events on documents including:
+    * 1. close
+    * 2. drain
+    * 3. error
+    * 4. finish
+    * 5. pipe
+    * 6. unpipe
+    */
   @JSName("addListener")
   def addListener_close(event: nodeLib.nodeLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("addListener")

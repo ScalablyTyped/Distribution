@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * ===== Workbox Plugin =====
- */
-
+  * ===== Workbox Plugin =====
+  */
 trait WorkboxPlugin extends js.Object {
   /**
   	 * Called when a new entry is added to a cache or it’s updated. Useful if you wish to perform an action after a cache update.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileWatchersInfo extends js.Object {
   /** The path of the entry being observed. */
   var entryPath: java.lang.String

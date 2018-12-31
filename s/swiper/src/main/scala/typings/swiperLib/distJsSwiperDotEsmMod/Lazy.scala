@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class Lazy () extends js.Object {
   /**
-       * Load/update lazy images based on current slider state (position)
-       */
+    * Load/update lazy images based on current slider state (position)
+    */
   def load(): scala.Unit = js.native
   /**
-       * Force to load lazy images in slide by specified index
-       * @param number index number of slide to load lazy images in
-       */
+    * Force to load lazy images in slide by specified index
+    * @param number index number of slide to load lazy images in
+    */
   def loadInSlide(index: scala.Double): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Hooks extends js.Object {
   var after: js.UndefOr[
     js.Function3[

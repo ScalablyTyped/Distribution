@@ -14,13 +14,13 @@ abstract class ResourceMapIterator () extends js.Object {
   /** Gets a value that indicates whether there is a current item, or whether the iterator is at the end of the ResourceMap . */
   var hasCurrent: scala.Boolean = js.native
   /**
-                       * Returns all the items in the ResourceMap .
-                       */
+    * Returns all the items in the ResourceMap .
+    */
   def getMany(): winrtDashUwpLib.Anon_ItemsReturnValueIKeyValuePair = js.native
   /**
-                       * Moves the iterator forward to the next item and returns HasCurrent .
-                       * @return TRUE if the iterator refers to a valid item that is in the map, and otherwise FALSE.
-                       */
+    * Moves the iterator forward to the next item and returns HasCurrent .
+    * @return TRUE if the iterator refers to a valid item that is in the map, and otherwise FALSE.
+    */
   def moveNext(): scala.Boolean = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TreeListFilterableOperatorsNumber extends js.Object {
   @JSName("eq")
   var eq_FTreeListFilterableOperatorsNumber: js.UndefOr[java.lang.String] = js.undefined

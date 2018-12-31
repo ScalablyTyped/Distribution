@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(reactDashNativeLib.reactDashNativeMod.TouchableWithoutFeedbackProps because Would inherit conflicting mutable fields List(accessibilityComponentType, accessibilityLiveRegion, importantForAccessibility, accessibilityElementsHidden, accessibilityIgnoresInvertColors, accessibilityTraits, onAccessibilityTap, onMagicTap, accessibilityHint, accessibilityLabel, accessibilityRole, accessibilityStates, accessible, hitSlop, onLayout, style, testID))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(reactDashNativeLib.reactDashNativeMod.TouchableWithoutFeedbackProps because Would inherit conflicting mutable fields List(accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityStates, accessibilityTraits, accessible, hitSlop, importantForAccessibility, onAccessibilityTap, onLayout, onMagicTap, style, testID))*/
 trait MKRadioButtonProperties extends MKRippleProperties {
   var borderOffColor: js.UndefOr[java.lang.String] = js.undefined
   var borderOnColor: js.UndefOr[java.lang.String] = js.undefined

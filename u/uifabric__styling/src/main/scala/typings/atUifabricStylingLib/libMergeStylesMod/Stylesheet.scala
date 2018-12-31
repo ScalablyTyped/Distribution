@@ -16,8 +16,8 @@ class Stylesheet ()
 @js.native
 object Stylesheet extends js.Object {
   /**
-       * Gets the singleton instance.
-       */
+    * Gets the singleton instance.
+    */
   def getInstance(): atUifabricMergeDashStylesLib.libStylesheetMod.Stylesheet = js.native
 }
 

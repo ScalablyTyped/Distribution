@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BannerClickEventUIParam extends js.Object {
   /**
   	 * Get the banner html element in the DOM.

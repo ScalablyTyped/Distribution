@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Atrule extends CssNodeCommon {
   var block: Block | scala.Null
   var name: java.lang.String

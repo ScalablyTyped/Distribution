@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ValidationPath protected () extends js.Object {
   /**
-       * @param {!Path} path Initial Path.
-       * @param {string} errorPrefix_ Prefix for any error messages.
-       */
+    * @param {!Path} path Initial Path.
+    * @param {string} errorPrefix_ Prefix for any error messages.
+    */
   def this(path: Path, `errorPrefix_`: java.lang.String) = this()
   /** @type {number} Initialize to number of '/' chars needed in path. */
   var `byteLength_`: js.Any = js.native
@@ -23,10 +23,10 @@ class ValidationPath protected () extends js.Object {
   /** @param {string} child */
   def push(child: java.lang.String): scala.Unit = js.native
   /**
-       * String for use in error messages - uses '.' notation for path.
-       *
-       * @return {string}
-       */
+    * String for use in error messages - uses '.' notation for path.
+    *
+    * @return {string}
+    */
   def toErrorString(): java.lang.String = js.native
 }
 

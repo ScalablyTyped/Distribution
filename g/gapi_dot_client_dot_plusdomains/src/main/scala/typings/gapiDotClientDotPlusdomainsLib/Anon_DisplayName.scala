@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DisplayName extends js.Object {
   /** Actor info specific to particular clients. */
   var clientSpecificActorInfo: js.UndefOr[Anon_YoutubeActorInfo] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DialogButtonOptions
   extends /* attr */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var click: js.UndefOr[js.Function1[/* eventObject */ jqueryLib.JQueryEventObject, _]] = js.undefined

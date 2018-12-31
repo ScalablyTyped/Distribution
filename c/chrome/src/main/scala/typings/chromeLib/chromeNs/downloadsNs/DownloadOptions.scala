@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DownloadOptions extends js.Object {
   /** Optional. Post body.  */
   var body: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RenderData extends js.Object {
   var days: js.Array[CalendarDay]
   var daysOfTheWeek: js.Array[java.lang.String]

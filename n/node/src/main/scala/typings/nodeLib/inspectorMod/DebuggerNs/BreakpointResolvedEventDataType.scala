@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BreakpointResolvedEventDataType extends js.Object {
   /**
-               * Breakpoint unique identifier.
-               */
+    * Breakpoint unique identifier.
+    */
   var breakpointId: BreakpointId
   /**
-               * Actual breakpoint location.
-               */
+    * Actual breakpoint location.
+    */
   var location: Location
 }
 

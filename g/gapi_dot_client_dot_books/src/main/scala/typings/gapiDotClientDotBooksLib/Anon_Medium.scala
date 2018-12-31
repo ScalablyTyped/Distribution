@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Medium extends js.Object {
   /** Image link for extra large size (width of ~1280 pixels). (In LITE projection) */
   var extraLarge: js.UndefOr[java.lang.String] = js.undefined

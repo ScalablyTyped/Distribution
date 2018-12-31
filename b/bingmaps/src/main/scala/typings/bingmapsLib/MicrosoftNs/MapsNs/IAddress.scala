@@ -5,17 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAddress extends js.Object {
   /**
-          * The street line of an address. The addressLine property is the most precise, official line for an address relative to the postal agency
-          * servicing the area specified by the locality or postalCode properties.
-          */
+    * The street line of an address. The addressLine property is the most precise, official line for an address relative to the postal agency
+    * servicing the area specified by the locality or postalCode properties.
+    */
   var addressLine: java.lang.String
   /**
-          * The subdivision name within the country or region for an address. This element is also commonly treated as the first order administrative
-          * subdivision. An example is a US state, such as “Oregon”.
-          */
+    * The subdivision name within the country or region for an address. This element is also commonly treated as the first order administrative
+    * subdivision. An example is a US state, such as “Oregon”.
+    */
   var adminDistrict: java.lang.String
   /** The country or region name of the address. */
   var countryRegion: java.lang.String

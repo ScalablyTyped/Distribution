@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An object encapsulating one visit to a URL. */
-
 trait VisitItem extends js.Object {
   /** The unique identifier for the item. */
   var id: java.lang.String

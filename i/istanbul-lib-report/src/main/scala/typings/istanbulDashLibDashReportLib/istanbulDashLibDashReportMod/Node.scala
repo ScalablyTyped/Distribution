@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Node extends js.Object {
   def getChildren(): js.Array[Node]
   def getCoverageSummary(filesOnly: scala.Boolean): istanbulDashLibDashCoverageLib.istanbulDashLibDashCoverageMod.CoverageSummary

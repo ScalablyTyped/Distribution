@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StoreOptions extends js.Object {
   var dehydrate: js.UndefOr[js.Function0[_]] = js.undefined
   var handlers: org.scalablytyped.runtime.StringDictionary[java.lang.String]

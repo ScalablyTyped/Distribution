@@ -15,10 +15,10 @@ abstract class BackgroundTransferError () extends js.Object
 @js.native
 object BackgroundTransferError extends js.Object {
   /**
-                   * Gets the specific error using the returned HRESULT value. Possible values are defined by WebErrorStatus .
-                   * @param hresult An HRESULT returned during the operation.
-                   * @return The error encountered.
-                   */
+    * Gets the specific error using the returned HRESULT value. Possible values are defined by WebErrorStatus .
+    * @param hresult An HRESULT returned during the operation.
+    * @return The error encountered.
+    */
   def getStatus(hresult: scala.Double): winrtDashUwpLib.WindowsNs.WebNs.WebErrorStatus = js.native
 }
 

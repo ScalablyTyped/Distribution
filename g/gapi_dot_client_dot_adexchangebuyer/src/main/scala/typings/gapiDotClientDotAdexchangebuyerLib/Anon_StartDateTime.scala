@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_StartDateTime extends js.Object {
   /** The account id to get the reports. */
   var accountId: java.lang.String
@@ -22,16 +21,16 @@ trait Anon_StartDateTime extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * A continuation token, used to page through performance reports. To retrieve the next page, set this parameter to the value of "nextPageToken" from the
-                   * previous response. Optional.
-                   */
+    * A continuation token, used to page through performance reports. To retrieve the next page, set this parameter to the value of "nextPageToken" from the
+    * previous response. Optional.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** The start time of the report in ISO 8601 timestamp format using UTC. */
   var startDateTime: java.lang.String

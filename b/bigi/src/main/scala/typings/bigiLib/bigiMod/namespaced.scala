@@ -20,7 +20,7 @@ object namespaced extends js.Object {
   def fromDERInteger(): scala.Double = js.native
   def fromDERInteger(byteArray: js.Any): scala.Double = js.native
   def fromHex(hex: java.lang.String): bigiLib.bigiMod.bigi = js.native
-  def isBigInteger(obj: js.Any, check_ver: js.Any): /* is bigi */scala.Boolean = js.native
+  def isBigInteger(obj: js.Any, check_ver: js.Any): /* is bigi.bigi.bigi */ scala.Boolean = js.native
   def valueOf(i: js.Any): bigiLib.bigiMod.bigi = js.native
 }
 

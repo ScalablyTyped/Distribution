@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait languages extends js.Object {
   /**
   		 * List the source/target languages supported by the API

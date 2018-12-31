@@ -10,8 +10,8 @@ trait Transform
   extends xmlDashCoreLib.xmlDashCoreMod.XmlObject
      with ITransform {
   /**
-           * XPath of the transformation
-           */
+    * XPath of the transformation
+    */
   var XPath: java.lang.String = js.native
   var innerXml: stdLib.Node | scala.Null = js.native
 }

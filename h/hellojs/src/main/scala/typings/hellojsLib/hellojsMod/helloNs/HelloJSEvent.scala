@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HelloJSEvent extends js.Object {
   def emit(event: java.lang.String, data: js.Any): HelloJSStatic
   def emitAfter(): HelloJSStatic

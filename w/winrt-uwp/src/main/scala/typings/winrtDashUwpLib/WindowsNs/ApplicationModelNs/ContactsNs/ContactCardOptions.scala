@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents data about how to display a mini contact card. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactCardOptions")
 @js.native
+/** Initializes a new instance of the ContactCardOptions class. */
 class ContactCardOptions () extends js.Object {
   /** Gets or sets a value that specifies the type of header to display on the contact card. */
   var headerKind: ContactCardHeaderKind = js.native

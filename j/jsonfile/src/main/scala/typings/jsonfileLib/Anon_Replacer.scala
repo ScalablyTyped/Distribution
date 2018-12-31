@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Replacer extends js.Object {
   var EOL: js.UndefOr[java.lang.String] = js.undefined
   var encoding: js.UndefOr[java.lang.String | scala.Null] = js.undefined

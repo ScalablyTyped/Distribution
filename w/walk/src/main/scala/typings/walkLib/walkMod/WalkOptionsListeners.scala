@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WalkOptionsListeners extends js.Object {
   var directories: js.UndefOr[WalkStatArrayEventCallback] = js.undefined
   var directory: js.UndefOr[WalkStatEventCallback] = js.undefined

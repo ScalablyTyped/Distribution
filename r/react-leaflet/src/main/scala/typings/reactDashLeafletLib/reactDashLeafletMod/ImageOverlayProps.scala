@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageOverlayProps
   extends leafletLib.leafletMod.ImageOverlayOptions {
   var bounds: leafletLib.leafletMod.LatLngBoundsExpression

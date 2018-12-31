@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MenuBarDocument extends js.Object {
   /**
   		 * Retrieves the document associated with the specified menu item.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProviderViewModel extends js.Object {
   var creationCommand: Command
   var iconUrl: java.lang.String

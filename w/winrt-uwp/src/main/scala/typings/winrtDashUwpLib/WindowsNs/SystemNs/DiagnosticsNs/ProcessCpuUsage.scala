@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ProcessCpuUsage () extends js.Object {
   /**
-                   * Gets the ProcessCpuUsageReport for the process.
-                   * @return The CPU usage report for the process.
-                   */
+    * Gets the ProcessCpuUsageReport for the process.
+    * @return The CPU usage report for the process.
+    */
   def getReport(): ProcessCpuUsageReport = js.native
 }
 

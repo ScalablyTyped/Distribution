@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains information about a PlayReady license. */
-
 trait IPlayReadyLicense extends js.Object {
   /** Gets the chain depth of the license chain represented by the current IPlayReadyLicense interface. */
   var chainDepth: scala.Double
@@ -21,10 +20,10 @@ trait IPlayReadyLicense extends js.Object {
   /** Gets whether this license is usable for playback. */
   var usableForPlay: scala.Boolean
   /**
-                       * Gets the key identifier (KID) of the license at the specified chain depth.
-                       * @param chainDepth The depth of the license in the chain for which to retrieve the KID. This value is a 0-based index.
-                       * @return The KID of the license. This return value is sensitive to the underlying platform's endianness. Carefully test your app on all platforms you intend to support to ensure that correct endianness is used on each platform.
-                       */
+    * Gets the key identifier (KID) of the license at the specified chain depth.
+    * @param chainDepth The depth of the license in the chain for which to retrieve the KID. This value is a 0-based index.
+    * @return The KID of the license. This return value is sensitive to the underlying platform's endianness. Carefully test your app on all platforms you intend to support to ensure that correct endianness is used on each platform.
+    */
   def getKIDAtChainDepth(chainDepth: scala.Double): java.lang.String
 }
 

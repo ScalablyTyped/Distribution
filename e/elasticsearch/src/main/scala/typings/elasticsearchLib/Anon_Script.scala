@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Script extends js.Object {
   var conflicts: js.UndefOr[java.lang.String] = js.undefined
   var dest: Anon_Pipeline

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigationNavigatorProps[O, S] extends js.Object {
   var detached: js.UndefOr[scala.Boolean] = js.undefined
   var navigation: js.UndefOr[NavigationProp[S]] = js.undefined

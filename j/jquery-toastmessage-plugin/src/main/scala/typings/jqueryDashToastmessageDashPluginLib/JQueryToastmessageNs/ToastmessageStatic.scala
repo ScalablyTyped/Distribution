@@ -14,7 +14,6 @@ trait ToastmessageStatic extends js.Object {
     command: jqueryDashToastmessageDashPluginLib.jqueryDashToastmessageDashPluginLibStrings.removeToast,
     toast: jqueryDashToastmessageDashPluginLib.JQuery
   ): scala.Unit = js.native
-  /** removes the specified toast and returns it */
   def apply(
     command: jqueryDashToastmessageDashPluginLib.jqueryDashToastmessageDashPluginLibStrings.removeToast,
     toast: jqueryDashToastmessageDashPluginLib.JQuery,

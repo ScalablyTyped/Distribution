@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StreamTransport
   extends nodemailerLib.nodemailerMod.Transport {
   var logger: nodemailerLib.libSharedMod.Logger

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This interface is implemented by all types of SMS messages that are supported. */
-
 trait ISmsMessage extends js.Object {
   /** Retrieves an ID for the message, which can later be specified in calling message store methods in order to get or delete the message. */
   var id: scala.Double

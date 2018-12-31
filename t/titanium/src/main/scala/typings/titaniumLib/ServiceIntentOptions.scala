@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Options passed to <Titanium.Android.createServiceIntent>.
- */
-
+  * Options passed to <Titanium.Android.createServiceIntent>.
+  */
 trait ServiceIntentOptions extends js.Object {
   /**
   	 * One of the `START_` constants from <Titanium.Android> to specify the "stickiness" of the Service when Android shuts down the host application.

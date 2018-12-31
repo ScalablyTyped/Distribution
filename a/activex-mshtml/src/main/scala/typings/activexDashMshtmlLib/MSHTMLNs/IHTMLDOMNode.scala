@@ -27,7 +27,6 @@ class IHTMLDOMNode protected () extends js.Object {
   def removeChild(oldChild: IHTMLDOMNode): IHTMLDOMNode = js.native
   /** @param fDeep [fDeep=false] */
   def removeNode(): IHTMLDOMNode = js.native
-  /** @param fDeep [fDeep=false] */
   def removeNode(fDeep: scala.Boolean): IHTMLDOMNode = js.native
   def replaceChild(newChild: IHTMLDOMNode, oldChild: IHTMLDOMNode): IHTMLDOMNode = js.native
   def replaceNode(replacement: IHTMLDOMNode): IHTMLDOMNode = js.native

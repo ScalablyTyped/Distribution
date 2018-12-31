@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when sent message status changed
 		*/
-
 trait MessageStatus extends js.Object {
   /**
   			*	User id

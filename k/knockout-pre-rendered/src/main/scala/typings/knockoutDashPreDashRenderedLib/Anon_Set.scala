@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Set extends js.Object {
   def clear(node: stdLib.Element): scala.Boolean
   def get(node: stdLib.Element, key: java.lang.String): js.Any

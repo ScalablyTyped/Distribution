@@ -6,13 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * The RowColumnDefinition class describes constraints on a row or a column
-    * in a Panel of type Panel.Table.
-    * It also provides information about the actual layout after the
-    * Table Panel has been arranged.
-    */
+  * The RowColumnDefinition class describes constraints on a row or a column
+  * in a Panel of type Panel.Table.
+  * It also provides information about the actual layout after the
+  * Table Panel has been arranged.
+  */
 @JSImport("go", "RowColumnDefinition")
 @js.native
+/**
+  * You do not need to use this constructor, because calls to Panel.getRowDefinition or Panel.getColumnDefinition will automatically create and remember a RowColumnDefinition for you.
+  */
 class RowColumnDefinition ()
   extends goLib.goMod.goNs.RowColumnDefinition {
   /**This read-only property returns the usable row height or column width, after arrangement, that objects in this row or column can be placed within.*/
@@ -73,9 +76,9 @@ class RowColumnDefinition ()
   /* CompleteClass */
   override var width: scala.Double = js.native
   /**
-          * Add a data-binding of a property on this object to a property on a data object.
-          * @param {Binding} binding
-          */
+    * Add a data-binding of a property on this object to a property on a data object.
+    * @param {Binding} binding
+    */
   /* CompleteClass */
   override def bind(binding: goLib.goMod.goNs.Binding): scala.Unit = js.native
   /* CompleteClass */
@@ -86,11 +89,11 @@ class RowColumnDefinition ()
 }
 
 /**
-    * The RowColumnDefinition class describes constraints on a row or a column
-    * in a Panel of type Panel.Table.
-    * It also provides information about the actual layout after the
-    * Table Panel has been arranged.
-    */
+  * The RowColumnDefinition class describes constraints on a row or a column
+  * in a Panel of type Panel.Table.
+  * It also provides information about the actual layout after the
+  * Table Panel has been arranged.
+  */
 @JSImport("go", "RowColumnDefinition")
 @js.native
 object RowColumnDefinition extends js.Object {

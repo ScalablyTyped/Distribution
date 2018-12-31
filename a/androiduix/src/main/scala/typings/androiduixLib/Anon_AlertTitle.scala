@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AlertTitle extends js.Object {
   var action_bar_center_layout: java.lang.String
   var action_bar_left: java.lang.String

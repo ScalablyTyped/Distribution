@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResourceUpdate extends js.Object {
   /** The Access Control Policy to set on this resource after updating the resource itself. */
   var accessControl: js.UndefOr[ResourceAccessControl] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEntity[C /* <: plottableLib.buildSrcComponentsComponentMod.Component */] extends js.Object {
   var bounds: IEntityBounds
   var component: C

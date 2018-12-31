@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ID extends js.Object {
   var Addr: java.lang.String
   var Cpus: scala.Double

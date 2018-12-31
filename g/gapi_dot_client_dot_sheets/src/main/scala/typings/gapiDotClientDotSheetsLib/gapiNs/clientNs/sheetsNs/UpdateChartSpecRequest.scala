@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateChartSpecRequest extends js.Object {
   /** The ID of the chart to update. */
   var chartId: js.UndefOr[scala.Double] = js.undefined

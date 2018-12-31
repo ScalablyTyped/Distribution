@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 //shape configs class
-
 trait RectConfig
   extends DrawOptionsConfig
      with ObjectOptionsConfig {

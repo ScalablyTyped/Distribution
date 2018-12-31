@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NetIpcConnectOptions
   extends nodeLib.netMod.IpcNetConnectOpts
      with BaseConnectOptions {

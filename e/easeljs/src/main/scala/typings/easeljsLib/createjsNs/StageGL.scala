@@ -68,9 +68,7 @@ object StageGL extends js.Object {
   var WEBGL_MAX_INDEX_NUM: scala.Double = js.native
   // methods
   def buildUVRects(spritesheet: easeljsLib.createjsNs.SpriteSheet): js.Object = js.native
-  // methods
   def buildUVRects(spritesheet: easeljsLib.createjsNs.SpriteSheet, target: scala.Double): js.Object = js.native
-  // methods
   def buildUVRects(spritesheet: easeljsLib.createjsNs.SpriteSheet, target: scala.Double, onlyTarget: scala.Boolean): js.Object = js.native
   def isWebGLActive(ctx: stdLib.CanvasRenderingContext2D): scala.Boolean = js.native
 }

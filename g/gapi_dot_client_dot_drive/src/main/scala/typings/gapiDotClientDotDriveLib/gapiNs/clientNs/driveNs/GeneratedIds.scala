@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GeneratedIds extends js.Object {
   /** The IDs generated for the requesting user in the specified space. */
   var ids: js.UndefOr[js.Array[java.lang.String]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FontDetails extends js.Object {
   /** The generic font family for the font. */
   var genericFamily: java.lang.String

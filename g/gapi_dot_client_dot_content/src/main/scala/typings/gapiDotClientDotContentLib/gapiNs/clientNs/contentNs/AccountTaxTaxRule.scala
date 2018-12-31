@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccountTaxTaxRule extends js.Object {
   /** Country code in which tax is applicable. */
   var country: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Config extends js.Object {
   var batchInterval: js.UndefOr[scala.Double] = js.undefined
   var host: js.UndefOr[java.lang.String] = js.undefined

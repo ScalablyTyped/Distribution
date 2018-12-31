@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PopoverProps extends js.Object {
   var anchorEl: js.UndefOr[reactLib.reactMod.ReactNs.ReactInstance] = js.undefined
   var anchorOrigin: js.UndefOr[materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin] = js.undefined

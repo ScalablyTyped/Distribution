@@ -12,63 +12,49 @@ trait WebSocketClient extends js.Object {
   var _receiveDataQueue: js.Array[_] = js.native
   var _socket: stdLib.WebSocket = js.native
   /**
-       * Resets the receive arrays and close events, called in the constructor
-       */
+    * Resets the receive arrays and close events, called in the constructor
+    */
   /* private */ def _reset(): scala.Unit = js.native
   /**
-       * Sets up the event listeners, which do the bulk of the work.
-       */
+    * Sets up the event listeners, which do the bulk of the work.
+    */
   /* private */ def _setupListenersOnConnect(): js.Promise[scala.Unit] = js.native
   /**
-       * Sets up a WebSocket connection to specified url. Resolves when the
-       * connection is established. Can be called again to reconnect to any url.
-       */
+    * Sets up a WebSocket connection to specified url. Resolves when the
+    * connection is established. Can be called again to reconnect to any url.
+    */
   def connect(url: java.lang.String): js.Promise[scala.Unit] = js.native
-  /**
-       * Sets up a WebSocket connection to specified url. Resolves when the
-       * connection is established. Can be called again to reconnect to any url.
-       */
   def connect(url: java.lang.String, protocols: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       * Whether a connection is currently open.
-       * @returns true if the connection is open.
-       */
+    * Whether a connection is currently open.
+    * @returns true if the connection is open.
+    */
   def connected(): scala.Boolean = js.native
   /**
-       * The number of messages available to receive.
-       * @returns The number of queued messages that can be retrieved with {@link #receive}
-       */
+    * The number of messages available to receive.
+    * @returns The number of queued messages that can be retrieved with {@link #receive}
+    */
   def dataAvailable(): scala.Double = js.native
   /**
-       * Initiates the close handshake if there is an active connection.
-       * Returns a promise that will never reject.
-       * The promise resolves once the WebSocket connection is closed.
-       */
+    * Initiates the close handshake if there is an active connection.
+    * Returns a promise that will never reject.
+    * The promise resolves once the WebSocket connection is closed.
+    */
   def disconnect(): js.Promise[stdLib.CloseEvent | scala.Null] = js.native
-  /**
-       * Initiates the close handshake if there is an active connection.
-       * Returns a promise that will never reject.
-       * The promise resolves once the WebSocket connection is closed.
-       */
   def disconnect(code: scala.Double): js.Promise[stdLib.CloseEvent | scala.Null] = js.native
-  /**
-       * Initiates the close handshake if there is an active connection.
-       * Returns a promise that will never reject.
-       * The promise resolves once the WebSocket connection is closed.
-       */
   def disconnect(code: scala.Double, reason: java.lang.String): js.Promise[stdLib.CloseEvent | scala.Null] = js.native
   /**
-       * Asynchronously receive data from the websocket.
-       * Resolves immediately if there is buffered, unreceived data.
-       * Otherwise, resolves with the next rececived message,
-       * or rejects if disconnected.
-       * @returns A promise that resolves with the data received.
-       */
+    * Asynchronously receive data from the websocket.
+    * Resolves immediately if there is buffered, unreceived data.
+    * Otherwise, resolves with the next rececived message,
+    * or rejects if disconnected.
+    * @returns A promise that resolves with the data received.
+    */
   def receive(): js.Promise[_] = js.native
   /**
-       * Send data through the websocket.
-       * Must be connected. See {@link #connected}.
-       */
+    * Send data through the websocket.
+    * Must be connected. See {@link #connected}.
+    */
   def send(data: js.Any): scala.Unit = js.native
 }
 

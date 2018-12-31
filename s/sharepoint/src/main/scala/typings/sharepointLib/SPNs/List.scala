@@ -160,10 +160,10 @@ class List[T] () extends SecurableObject {
   /** This member is reserved for internal use and is not intended to be used directly from your code. */
   def reserveListItemId(): IntResult = js.native
   /** First tries to find if the view already exists. Overwrite it if yes, add a new view if no. Then extract all the adhoc filter/sort info from the URL and build and update the view's xml Returns the url of the new/overwritten view.
-              @param oldName The name of the view the user did the adhoc filter on (is currently on).
-              @param newName The desired name the user typed
-              @param privateView Boolean true when the user wants make a new view that's personal
-              @param uri Url that keeps all the adhoc filter/sort inforatmion */
+    @param oldName The name of the view the user did the adhoc filter on (is currently on).
+    @param newName The desired name the user typed
+    @param privateView Boolean true when the user wants make a new view that's personal
+    @param uri Url that keeps all the adhoc filter/sort inforatmion */
   def saveAsNewView(
     oldName: java.lang.String,
     newName: java.lang.String,

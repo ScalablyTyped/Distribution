@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMemento
   extends extjsLib.ExtNs.IBase {
   /** [Method] Captures the specified properties from the target object in this memento

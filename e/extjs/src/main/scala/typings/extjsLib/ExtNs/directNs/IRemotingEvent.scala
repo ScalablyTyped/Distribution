@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRemotingEvent extends IEvent {
   /** [Method] Get the transaction associated with this event
   		* @returns Ext.direct.Transaction The transaction

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SetRequestHeaderParams extends js.Object {
   /** HTTP request header name */
   var name: java.lang.String

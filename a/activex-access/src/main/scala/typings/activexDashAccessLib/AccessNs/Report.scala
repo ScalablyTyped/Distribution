@@ -196,7 +196,6 @@ class Report protected () extends js.Object {
     end: scala.Double,
     aspect: scala.Double
   ): scala.Unit = js.native
-  // tslint:disable-next-line:no-unnecessary-generics
   def Controls[T](Index: java.lang.String): T = js.native
   // tslint:disable-next-line:no-unnecessary-generics
   def Controls[T](Index: scala.Double): T = js.native

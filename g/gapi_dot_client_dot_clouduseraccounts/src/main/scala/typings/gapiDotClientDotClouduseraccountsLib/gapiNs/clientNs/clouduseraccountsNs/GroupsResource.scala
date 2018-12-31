@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GroupsResource extends js.Object {
   /** Adds users to the specified group. */
   def addMember(request: gapiDotClientDotClouduseraccountsLib.Anon_ProjectPrettyPrintQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[Operation]

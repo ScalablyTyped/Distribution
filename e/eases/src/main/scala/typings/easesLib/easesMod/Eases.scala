@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Eases extends js.Object {
   def backIn(t: scala.Double): scala.Double
   def backInOut(t: scala.Double): scala.Double

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * An interface representing the refresh token and associated data.
-     */
-
+  * An interface representing the refresh token and associated data.
+  */
 trait RefreshToken
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var client: Client

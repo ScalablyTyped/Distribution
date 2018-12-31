@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICryptographicBufferStatics extends js.Object {
   def compare(
     object1: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer,

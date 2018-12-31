@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait UnitSystem extends js.Object
 
 /**
-         * This enumeration holds the possible unit systems for the UI to display distances.
-         */
+  * This enumeration holds the possible unit systems for the UI to display distances.
+  */
 @JSGlobal("H.ui.UnitSystem")
 @js.native
 object UnitSystem extends js.Object {

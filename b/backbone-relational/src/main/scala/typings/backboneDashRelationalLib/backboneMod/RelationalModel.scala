@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait RelationalModel
   extends backboneLib.backboneMod.Model {
   /**
-          * Do not use, prefer TypeScript's extend functionality.
-          **/
+    * Do not use, prefer TypeScript's extend functionality.
+    **/
   //private static extend(properties:any, classProperties?:any):any;
   var relations: js.Any = js.native
   var subModelTypeAttribute: js.Any = js.native

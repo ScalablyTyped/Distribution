@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPicker extends ITrigger {
   /** [Method] Aligns the picker to the input element */
   var alignPicker: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

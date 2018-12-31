@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Creates requests to the Datastore endpoint.
-     * Designed to be inherited by {@link Datastore} & {@link DatastoreTransaction}
-     */
+  * Creates requests to the Datastore endpoint.
+  * Designed to be inherited by {@link Datastore} & {@link DatastoreTransaction}
+  */
 @JSImport("@google-cloud/datastore/request", "DatastoreRequest")
 @js.native
 abstract class DatastoreRequest () extends js.Object {

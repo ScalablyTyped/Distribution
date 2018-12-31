@@ -19,11 +19,11 @@ class NamedNode protected () extends js.Object {
 @js.native
 object NamedNode extends js.Object {
   /**
-       *
-       * @param {!string} name
-       * @param {!Node} node
-       * @return {NamedNode}
-       */
+    *
+    * @param {!string} name
+    * @param {!Node} node
+    * @return {NamedNode}
+    */
   def Wrap(name: java.lang.String, node: atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node): atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.NamedNode = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Platform extends js.Object {
   /** Only set when contextType=AUCTION_TYPE. Represents the auction types this correction applies to. */
   var auctionType: js.UndefOr[js.Array[java.lang.String]] = js.undefined

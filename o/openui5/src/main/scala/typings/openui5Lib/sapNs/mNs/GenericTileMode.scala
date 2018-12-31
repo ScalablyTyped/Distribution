@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait GenericTileMode extends js.Object
 
 /**
-     * Defines the mode of GenericTile.
-    */
+  * Defines the mode of GenericTile.
+  */
 @JSGlobal("sap.m.GenericTileMode")
 @js.native
 object GenericTileMode extends js.Object {

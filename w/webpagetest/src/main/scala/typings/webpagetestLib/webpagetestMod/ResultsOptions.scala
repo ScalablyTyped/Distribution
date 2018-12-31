@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResultsOptions extends js.Object {
   /** include the breakdown of requests and bytes by mime type */
   var breakDown: js.UndefOr[scala.Boolean] = js.undefined

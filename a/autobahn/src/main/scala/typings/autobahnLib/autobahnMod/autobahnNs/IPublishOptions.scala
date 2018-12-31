@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPublishOptions extends js.Object {
   var acknowledge: js.UndefOr[scala.Boolean] = js.undefined
   var disclose_me: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MutationState[TData] extends js.Object {
   var called: scala.Boolean
   var data: js.UndefOr[TData] = js.undefined

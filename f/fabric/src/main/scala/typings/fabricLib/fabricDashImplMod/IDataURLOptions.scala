@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 // Data Object Interfaces - These intrface are not specific part of fabric,
 // They are just helpful for for defining function parameters
 //////////////////////////////////////////////////////////////////////////////
-
 trait IDataURLOptions extends js.Object {
   /**
   	 * The format of the output image. Either "jpeg" or "png"

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ArchiveOptions extends js.Object {
   var hasAudio: js.UndefOr[scala.Boolean] = js.undefined
   var hasVideo: js.UndefOr[scala.Boolean] = js.undefined

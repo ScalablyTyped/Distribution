@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 // react-reconciler/ReactFiberRoot
 // TODO: This should be lifted into the renderer.
-
 trait Batch extends js.Object {
   var _defer: scala.Boolean
   var _expirationTime: ExpirationTime

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IResourceCandidate extends js.Object {
   var isDefault: scala.Boolean
   var isMatch: scala.Boolean

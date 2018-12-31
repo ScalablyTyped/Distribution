@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VcardAddress extends js.Object {
   /** The postal code associated with the address. For example: 94423. */
   var code: js.UndefOr[java.lang.String] = js.undefined

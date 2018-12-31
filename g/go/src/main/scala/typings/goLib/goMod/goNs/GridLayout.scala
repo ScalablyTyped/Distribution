@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * This simple layout places all of the Parts in a grid-like arrangement, ordered, spaced apart,
-    * and wrapping as needed.  It ignores any Links connecting the Nodes being laid out.
-    */
+  * This simple layout places all of the Parts in a grid-like arrangement, ordered, spaced apart,
+  * and wrapping as needed.  It ignores any Links connecting the Nodes being laid out.
+  */
 @js.native
 trait GridLayout extends Layout {
   /**Gets or sets whether the Part.location or the position should be used to arrange each part.*/

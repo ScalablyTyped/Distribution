@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CloudFormationCustomResourceCreateEvent extends CloudFormationCustomResourceEventCommon {
   var RequestType: awsDashLambdaLib.awsDashLambdaLibStrings.Create
 }

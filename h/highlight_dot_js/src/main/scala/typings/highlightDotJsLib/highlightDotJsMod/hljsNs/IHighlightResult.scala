@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHighlightResult extends IHighlightResultBase {
   var top: ICompiledMode
 }

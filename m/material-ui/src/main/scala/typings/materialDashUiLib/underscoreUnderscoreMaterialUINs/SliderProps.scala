@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SliderProps extends js.Object {
   var axis: js.UndefOr[
     materialDashUiLib.materialDashUiLibStrings.x | materialDashUiLib.materialDashUiLibStrings.`x-reverse` | materialDashUiLib.materialDashUiLibStrings.y | materialDashUiLib.materialDashUiLibStrings.`y-reverse`

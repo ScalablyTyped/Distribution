@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetClientsOptions extends js.Object {
   var app_type: js.UndefOr[js.Array[ClientAppType]] = js.undefined
   var fields: js.UndefOr[js.Array[java.lang.String]] = js.undefined

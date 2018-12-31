@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NotesProperties extends js.Object {
   // The object ID of the shape on this notes page that contains the speaker
   // notes for the corresponding slide.

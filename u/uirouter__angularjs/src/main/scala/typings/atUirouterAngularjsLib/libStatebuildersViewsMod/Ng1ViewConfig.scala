@@ -31,10 +31,10 @@ class Ng1ViewConfig protected ()
   @JSName("viewDecl")
   var viewDecl_Ng1ViewConfig: atUirouterAngularjsLib.libInterfaceMod.Ng1ViewDeclaration = js.native
   /**
-       * Gets the controller for a view configuration.
-       *
-       * @returns {Function|Promise.<Function>} Returns a controller, or a promise that resolves to a controller.
-       */
+    * Gets the controller for a view configuration.
+    *
+    * @returns {Function|Promise.<Function>} Returns a controller, or a promise that resolves to a controller.
+    */
   def getController(context: atUirouterCoreLib.coreMod.ResolveContext): atUirouterCoreLib.libCommonCommonMod.IInjectable | java.lang.String | (js.Promise[atUirouterCoreLib.libCommonCommonMod.IInjectable | java.lang.String]) = js.native
   def getTemplate(uiView: js.Any, context: atUirouterCoreLib.coreMod.ResolveContext): java.lang.String = js.native
   /** Fetches templates, runs dynamic (controller|template)Provider code, lazy loads Components, etc */

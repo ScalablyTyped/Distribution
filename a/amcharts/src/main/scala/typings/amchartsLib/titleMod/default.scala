@@ -9,34 +9,34 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Title {
   /**
-       * @default 1
-       */
+    * @default 1
+    */
   /* CompleteClass */
   override var alpha: scala.Double = js.native
   /**
-       * Specifies if the tile is bold or not.
-       * @default false
-       */
+    * Specifies if the tile is bold or not.
+    * @default false
+    */
   /* CompleteClass */
   override var bold: scala.Boolean = js.native
   /**
-       * Text color of a title.
-       */
+    * Text color of a title.
+    */
   /* CompleteClass */
   override var color: java.lang.String = js.native
   /**
-       * Unique id of a Title. You don't need to set it, unless you want to.
-       */
+    * Unique id of a Title. You don't need to set it, unless you want to.
+    */
   /* CompleteClass */
   override var id: java.lang.String = js.native
   /**
-       * Text size
-       */
+    * Text size
+    */
   /* CompleteClass */
   override var size: scala.Double = js.native
   /**
-       * Text of a label
-       */
+    * Text of a label
+    */
   /* CompleteClass */
   override var text: java.lang.String = js.native
 }

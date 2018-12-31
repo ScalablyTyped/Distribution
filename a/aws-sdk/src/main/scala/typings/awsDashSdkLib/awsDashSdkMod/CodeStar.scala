@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("aws-sdk", "CodeStar")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class CodeStar ()
   extends awsDashSdkLib.clientsAllMod.CodeStar {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsCodestarMod.CodeStarNs.ClientConfiguration) = this()
 }
 

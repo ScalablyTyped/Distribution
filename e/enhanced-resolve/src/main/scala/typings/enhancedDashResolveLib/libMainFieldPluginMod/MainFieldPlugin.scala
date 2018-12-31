@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MainFieldPlugin extends js.Object {
   var options: enhancedDashResolveLib.Anon_ForceRelative
   var source: java.lang.String

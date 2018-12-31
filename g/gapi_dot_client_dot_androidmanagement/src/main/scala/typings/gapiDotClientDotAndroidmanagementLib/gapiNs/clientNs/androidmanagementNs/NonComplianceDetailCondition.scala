@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NonComplianceDetailCondition extends js.Object {
   /** The reason the device is not in compliance with the setting. If not set, then this condition matches any reason. */
   var nonComplianceReason: js.UndefOr[java.lang.String] = js.undefined

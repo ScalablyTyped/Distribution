@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PanoramaPov extends js.Object {
   var fov: scala.Double
   var pan: scala.Double

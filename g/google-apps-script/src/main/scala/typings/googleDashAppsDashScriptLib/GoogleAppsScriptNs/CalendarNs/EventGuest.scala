@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventGuest extends js.Object {
   def getAdditionalGuests(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   def getEmail(): java.lang.String

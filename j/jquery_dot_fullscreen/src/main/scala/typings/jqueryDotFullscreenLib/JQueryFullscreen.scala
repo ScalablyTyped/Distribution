@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Interface for the jquery plugin
- */
+  * Interface for the jquery plugin
+  */
 @js.native
 trait JQueryFullscreen extends js.Object {
   /**
@@ -35,11 +35,6 @@ trait JQueryFullscreen extends js.Object {
   	 * @param {Object}  options [description]
   	 */
   def open(element: stdLib.Element): scala.Unit = js.native
-  /**
-  	 * [open Activate fullscreen mode in a specific element through static method]
-  	 * @param {Element} element [description]
-  	 * @param {Object}  options [description]
-  	 */
   def open(element: stdLib.Element, options: js.Object): scala.Unit = js.native
 }
 

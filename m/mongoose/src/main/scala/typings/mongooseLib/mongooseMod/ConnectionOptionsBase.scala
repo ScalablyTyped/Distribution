@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectionOptionsBase extends js.Object {
   /** options for authentication (see http://mongodb.github.com/node-mongodb-native/api-generated/db.html#authenticate) */
   var auth: js.UndefOr[js.Any] = js.undefined
@@ -53,9 +52,9 @@ trait ConnectionOptionsBase extends js.Object {
   /** Will wait # milliseconds between retries (default: 1000) */
   var reconnectInterval: js.UndefOr[scala.Double] = js.undefined
   /** If you're connected to a single server or mongos proxy (as opposed to a replica set),
-       * the MongoDB driver will try to reconnect every reconnectInterval milliseconds for reconnectTries
-       * times, and give up afterward. When the driver gives up, the mongoose connection emits a
-       * reconnectFailed event. (default: 30) */
+    * the MongoDB driver will try to reconnect every reconnectInterval milliseconds for reconnectTries
+    * times, and give up afterward. When the driver gives up, the mongoose connection emits a
+    * reconnectFailed event. (default: 30) */
   var reconnectTries: js.UndefOr[scala.Double] = js.undefined
   /** The name of the replicaset to connect to. */
   var replicaSet: js.UndefOr[java.lang.String] = js.undefined

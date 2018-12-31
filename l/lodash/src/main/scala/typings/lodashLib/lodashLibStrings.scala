@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object lodashLibStrings {
   @js.native
-  sealed trait ConformsPredicateObject extends js.Object
-  
-  @js.native
   sealed trait Empty extends js.Object
   
   @js.native
@@ -40,15 +37,11 @@ object lodashLibStrings {
   sealed trait LodashMapValues7x1 extends js.Object
   
   @js.native
-  sealed trait PartialDeep extends js.Object
-  
-  @js.native
   sealed trait asc extends js.Object
   
   @js.native
   sealed trait desc extends js.Object
   
-  def ConformsPredicateObject: ConformsPredicateObject = "ConformsPredicateObject".asInstanceOf[ConformsPredicateObject]
   def Empty: Empty = "".asInstanceOf[Empty]
   def LoDashExplicitWrapper: LoDashExplicitWrapper = "LoDashExplicitWrapper".asInstanceOf[LoDashExplicitWrapper]
   def LoDashFp: LoDashFp = "LoDashFp".asInstanceOf[LoDashFp]
@@ -59,7 +52,6 @@ object lodashLibStrings {
   def LodashMapValues3x2: LodashMapValues3x2 = "LodashMapValues3x2".asInstanceOf[LodashMapValues3x2]
   def LodashMapValues4x1: LodashMapValues4x1 = "LodashMapValues4x1".asInstanceOf[LodashMapValues4x1]
   def LodashMapValues7x1: LodashMapValues7x1 = "LodashMapValues7x1".asInstanceOf[LodashMapValues7x1]
-  def PartialDeep: PartialDeep = "PartialDeep".asInstanceOf[PartialDeep]
   def asc: asc = "asc".asInstanceOf[asc]
   def desc: desc = "desc".asInstanceOf[desc]
 }

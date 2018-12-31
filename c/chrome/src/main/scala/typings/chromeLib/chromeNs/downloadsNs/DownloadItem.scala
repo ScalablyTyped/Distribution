@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DownloadItem extends js.Object {
   /** Optional. The identifier for the extension that initiated this download if this download was initiated by an extension. Does not change once it is set.  */
   var byExtensionId: js.UndefOr[java.lang.String] = js.undefined

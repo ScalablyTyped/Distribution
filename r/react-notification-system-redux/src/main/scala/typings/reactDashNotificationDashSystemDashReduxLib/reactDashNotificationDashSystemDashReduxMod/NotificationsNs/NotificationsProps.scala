@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NotificationsProps
   extends reactDashNotificationDashSystemLib.reactDashNotificationDashSystemMod.NotificationSystemNs.Attributes {
   var notifications: js.UndefOr[

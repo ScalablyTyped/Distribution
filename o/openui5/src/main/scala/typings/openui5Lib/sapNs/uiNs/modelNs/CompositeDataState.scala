@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class CompositeDataState () extends DataState {
   /**
-           * Returns an array of the properties set on the inner datastates
-          */
+    * Returns an array of the properties set on the inner datastates
+    */
   def getInternalProperty(): scala.Unit = js.native
 }
 

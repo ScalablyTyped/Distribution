@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RadialGradientOptions extends js.Object {
   var center: js.UndefOr[js.Any | kendoDashUiLib.kendoNs.geometryNs.Point] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined

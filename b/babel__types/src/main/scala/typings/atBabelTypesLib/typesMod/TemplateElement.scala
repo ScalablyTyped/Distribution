@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TemplateElement extends BaseNode {
   var tail: scala.Boolean
   @JSName("type")

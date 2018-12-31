@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPrettyPrintBearertokenAccountId extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -13,11 +12,11 @@ trait Anon_AccesstokenPrettyPrintBearertokenAccountId extends js.Object {
   /** OAuth access token. */
   var access_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The account that this creative belongs to.
-                   * Can be used to filter the response of the
-                   * creatives.list
-                   * method.
-                   */
+    * The account that this creative belongs to.
+    * Can be used to filter the response of the
+    * creatives.list
+    * method.
+    */
   var accountId: java.lang.String
   /** Data format for response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -26,9 +25,9 @@ trait Anon_AccesstokenPrettyPrintBearertokenAccountId extends js.Object {
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Indicates if multiple creatives can share an ID or not. Default is
-                   * NO_DUPLICATES (one ID per creative).
-                   */
+    * Indicates if multiple creatives can share an ID or not. Default is
+    * NO_DUPLICATES (one ID per creative).
+    */
   var duplicateIdMode: js.UndefOr[java.lang.String] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined

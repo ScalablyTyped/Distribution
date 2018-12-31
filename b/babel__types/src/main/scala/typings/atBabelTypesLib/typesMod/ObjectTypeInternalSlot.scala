@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObjectTypeInternalSlot extends BaseNode {
   var id: Identifier
   var method: scala.Boolean

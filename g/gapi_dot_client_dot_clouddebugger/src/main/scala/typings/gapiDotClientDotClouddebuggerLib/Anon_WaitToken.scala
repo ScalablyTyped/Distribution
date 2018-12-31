@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_WaitToken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -33,24 +32,24 @@ trait Anon_WaitToken extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * If set to `true` (recommended), returns `google.rpc.Code.OK` status and
-                   * sets the `wait_expired` response field to `true` when the server-selected
-                   * timeout has expired.
-                   *
-                   * If set to `false` (deprecated), returns `google.rpc.Code.ABORTED` status
-                   * when the server-selected timeout has expired.
-                   */
+    * If set to `true` (recommended), returns `google.rpc.Code.OK` status and
+    * sets the `wait_expired` response field to `true` when the server-selected
+    * timeout has expired.
+    *
+    * If set to `false` (deprecated), returns `google.rpc.Code.ABORTED` status
+    * when the server-selected timeout has expired.
+    */
   var successOnTimeout: js.UndefOr[scala.Boolean] = js.undefined
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * A token that, if specified, blocks the method call until the list
-                   * of active breakpoints has changed, or a server-selected timeout has
-                   * expired. The value should be set from the `next_wait_token` field in
-                   * the last response. The initial value should be set to `"init"`.
-                   */
+    * A token that, if specified, blocks the method call until the list
+    * of active breakpoints has changed, or a server-selected timeout has
+    * expired. The value should be set from the `next_wait_token` field in
+    * the last response. The initial value should be set to `"init"`.
+    */
   var waitToken: js.UndefOr[java.lang.String] = js.undefined
 }
 

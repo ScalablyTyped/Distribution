@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "AppSync")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class AppSync ()
   extends awsDashSdkLib.awsDashSdkMod.AppSync {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsAppsyncMod.AppSyncNs.ClientConfiguration) = this()
 }
 

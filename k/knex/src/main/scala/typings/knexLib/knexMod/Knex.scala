@@ -23,8 +23,8 @@ trait Knex
   def batchInsert(tableName: knexLib.TableName, data: js.Array[_]): knexLib.knexMod.KnexNs.QueryBuilder = js.native
   def batchInsert(tableName: knexLib.TableName, data: js.Array[_], chunkSize: scala.Double): knexLib.knexMod.KnexNs.QueryBuilder = js.native
   def destroy(): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  def destroy(callback: js.Function1[/* repeated */js.Any, scala.Unit]): scala.Unit = js.native
-  def on(eventName: java.lang.String, callback: js.Function1[/* repeated */js.Any, scala.Unit]): knexLib.knexMod.KnexNs.QueryBuilder = js.native
+  def destroy(callback: js.Function1[/* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
+  def on(eventName: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): knexLib.knexMod.KnexNs.QueryBuilder = js.native
   def queryBuilder(): knexLib.knexMod.KnexNs.QueryBuilder = js.native
   def raw(sql: java.lang.String, bindings: (knexLib.Value | knexLib.knexMod.KnexNs.QueryBuilder)*): knexLib.knexMod.KnexNs.Raw = js.native
   def raw(sql: java.lang.String, bindings: js.Array[knexLib.Value | knexLib.knexMod.KnexNs.QueryBuilder]): knexLib.knexMod.KnexNs.Raw = js.native

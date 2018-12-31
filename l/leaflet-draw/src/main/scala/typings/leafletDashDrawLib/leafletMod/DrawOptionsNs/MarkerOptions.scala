@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MarkerOptions extends js.Object {
   /**
   			 * TThe icon displayed when drawing a marker.

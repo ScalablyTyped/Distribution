@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Distance extends js.Object {
   var distance: scala.Double
   var startVertex: java.lang.String

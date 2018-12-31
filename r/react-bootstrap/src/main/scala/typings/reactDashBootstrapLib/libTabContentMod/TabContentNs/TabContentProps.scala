@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TabContentProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libTabContentMod.TabContent] {
   var animation: js.UndefOr[scala.Boolean | reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined

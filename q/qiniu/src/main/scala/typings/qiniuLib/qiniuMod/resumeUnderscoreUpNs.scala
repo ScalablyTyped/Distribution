@@ -9,63 +9,31 @@ import scala.scalajs.js.annotation._
 @js.native
 object resumeUnderscoreUpNs extends js.Object {
   @js.native
+  /**
+    * 上传可选参数
+    * @param fname 请求体中的文件的名称
+    * @param params 额外参数设置，参数名称必须以x:开头
+    * @param mimeType 指定文件的mimeType
+    * @param resumeRecordFile
+    * @param progressCallback
+    */
   class PutExtra () extends js.Object {
-    /**
-             * 上传可选参数
-             * @param fname 请求体中的文件的名称
-             * @param params 额外参数设置，参数名称必须以x:开头
-             * @param mimeType 指定文件的mimeType
-             * @param resumeRecordFile
-             * @param progressCallback
-             */
     def this(fname: java.lang.String) = this()
-    /**
-             * 上传可选参数
-             * @param fname 请求体中的文件的名称
-             * @param params 额外参数设置，参数名称必须以x:开头
-             * @param mimeType 指定文件的mimeType
-             * @param resumeRecordFile
-             * @param progressCallback
-             */
     def this(fname: java.lang.String, params: js.Any) = this()
-    /**
-             * 上传可选参数
-             * @param fname 请求体中的文件的名称
-             * @param params 额外参数设置，参数名称必须以x:开头
-             * @param mimeType 指定文件的mimeType
-             * @param resumeRecordFile
-             * @param progressCallback
-             */
     def this(fname: java.lang.String, params: js.Any, mimeType: java.lang.String) = this()
-    /**
-             * 上传可选参数
-             * @param fname 请求体中的文件的名称
-             * @param params 额外参数设置，参数名称必须以x:开头
-             * @param mimeType 指定文件的mimeType
-             * @param resumeRecordFile
-             * @param progressCallback
-             */
     def this(fname: java.lang.String, params: js.Any, mimeType: java.lang.String, resumeRecordFile: java.lang.String) = this()
-    /**
-             * 上传可选参数
-             * @param fname 请求体中的文件的名称
-             * @param params 额外参数设置，参数名称必须以x:开头
-             * @param mimeType 指定文件的mimeType
-             * @param resumeRecordFile
-             * @param progressCallback
-             */
     def this(fname: java.lang.String, params: js.Any, mimeType: java.lang.String, resumeRecordFile: java.lang.String, progressCallback: js.Function1[/* data */ js.Any, scala.Unit]) = this()
     /**
-             * @default ''
-             */
+      * @default ''
+      */
     var fname: java.lang.String = js.native
     /**
-             * @default null
-             */
+      * @default null
+      */
     var mimeType: js.UndefOr[java.lang.String] = js.native
     /**
-             * @default {}
-             */
+      * @default {}
+      */
     var params: js.Any = js.native
   }
   
@@ -74,13 +42,13 @@ object resumeUnderscoreUpNs extends js.Object {
     def this(config: qiniuLib.qiniuMod.confNs.Config) = this()
     var config: qiniuLib.qiniuMod.confNs.Config = js.native
     /**
-             *
-             * @param uploadToken
-             * @param key
-             * @param localFile
-             * @param putExtra
-             * @param callback
-             */
+      *
+      * @param uploadToken
+      * @param key
+      * @param localFile
+      * @param putExtra
+      * @param callback
+      */
     def putFile(
       uploadToken: java.lang.String,
       key: java.lang.String,
@@ -88,14 +56,6 @@ object resumeUnderscoreUpNs extends js.Object {
       putExtra: PutExtra,
       callback: qiniuLib.qiniuMod.callback
     ): scala.Unit = js.native
-    /**
-             *
-             * @param uploadToken
-             * @param key
-             * @param localFile
-             * @param putExtra
-             * @param callback
-             */
     def putFile(
       uploadToken: java.lang.String,
       key: java.lang.String,
@@ -103,14 +63,6 @@ object resumeUnderscoreUpNs extends js.Object {
       putExtra: scala.Null,
       callback: qiniuLib.qiniuMod.callback
     ): scala.Unit = js.native
-    /**
-             *
-             * @param uploadToken
-             * @param key
-             * @param localFile
-             * @param putExtra
-             * @param callback
-             */
     def putFile(
       uploadToken: java.lang.String,
       key: scala.Null,
@@ -118,14 +70,6 @@ object resumeUnderscoreUpNs extends js.Object {
       putExtra: PutExtra,
       callback: qiniuLib.qiniuMod.callback
     ): scala.Unit = js.native
-    /**
-             *
-             * @param uploadToken
-             * @param key
-             * @param localFile
-             * @param putExtra
-             * @param callback
-             */
     def putFile(
       uploadToken: java.lang.String,
       key: scala.Null,
@@ -134,25 +78,18 @@ object resumeUnderscoreUpNs extends js.Object {
       callback: qiniuLib.qiniuMod.callback
     ): scala.Unit = js.native
     /**
-             *
-             * @param uploadToken
-             * @param localFile
-             * @param putExtra
-             * @param callback
-             */
+      *
+      * @param uploadToken
+      * @param localFile
+      * @param putExtra
+      * @param callback
+      */
     def putFileWithoutKey(
       uploadToken: java.lang.String,
       localFile: java.lang.String,
       putExtra: PutExtra,
       callback: qiniuLib.qiniuMod.callback
     ): scala.Unit = js.native
-    /**
-             *
-             * @param uploadToken
-             * @param localFile
-             * @param putExtra
-             * @param callback
-             */
     def putFileWithoutKey(
       uploadToken: java.lang.String,
       localFile: java.lang.String,
@@ -160,14 +97,14 @@ object resumeUnderscoreUpNs extends js.Object {
       callback: qiniuLib.qiniuMod.callback
     ): scala.Unit = js.native
     /**
-             *
-             * @param uploadToken
-             * @param key
-             * @param rsStream
-             * @param rsStreamLen
-             * @param putExtra
-             * @param callback
-             */
+      *
+      * @param uploadToken
+      * @param key
+      * @param rsStream
+      * @param rsStreamLen
+      * @param putExtra
+      * @param callback
+      */
     def putStream(
       uploadToken: java.lang.String,
       key: java.lang.String,
@@ -176,15 +113,6 @@ object resumeUnderscoreUpNs extends js.Object {
       putExtra: PutExtra,
       callback: qiniuLib.qiniuMod.callback
     ): scala.Unit = js.native
-    /**
-             *
-             * @param uploadToken
-             * @param key
-             * @param rsStream
-             * @param rsStreamLen
-             * @param putExtra
-             * @param callback
-             */
     def putStream(
       uploadToken: java.lang.String,
       key: java.lang.String,
@@ -193,15 +121,6 @@ object resumeUnderscoreUpNs extends js.Object {
       putExtra: scala.Null,
       callback: qiniuLib.qiniuMod.callback
     ): scala.Unit = js.native
-    /**
-             *
-             * @param uploadToken
-             * @param key
-             * @param rsStream
-             * @param rsStreamLen
-             * @param putExtra
-             * @param callback
-             */
     def putStream(
       uploadToken: java.lang.String,
       key: scala.Null,
@@ -210,15 +129,6 @@ object resumeUnderscoreUpNs extends js.Object {
       putExtra: PutExtra,
       callback: qiniuLib.qiniuMod.callback
     ): scala.Unit = js.native
-    /**
-             *
-             * @param uploadToken
-             * @param key
-             * @param rsStream
-             * @param rsStreamLen
-             * @param putExtra
-             * @param callback
-             */
     def putStream(
       uploadToken: java.lang.String,
       key: scala.Null,

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Provides controls and objects that manipulate data.
+  * Provides controls and objects that manipulate data.
 **/
 @JSImport("winjs", "UI")
 @js.native
@@ -14,301 +14,225 @@ object UINs extends js.Object {
   //#endregion Interfaces
   //#region Objects
   /**
-       * Displays ICommands in overlayed application pane that opens and closes at the top or bottom of the main view.
-      **/
+    * Displays ICommands in overlayed application pane that opens and closes at the top or bottom of the main view.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new AppBar object.
+    * @constructor
+    * @param element The DOM element that will host the control.
+    * @param options The set of properties and values to apply to the new AppBar.
+    **/
   class AppBar ()
     extends winjsLib.WinJSNs.UINs.AppBar {
-    //#region Constructors
-    /**
-             * Creates a new AppBar object.
-             * @constructor
-             * @param element The DOM element that will host the control.
-             * @param options The set of properties and values to apply to the new AppBar.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new AppBar object.
-             * @constructor
-             * @param element The DOM element that will host the control.
-             * @param options The set of properties and values to apply to the new AppBar.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Represents a command to be displayed in an app bar.
-      **/
+    * Represents a command to be displayed in an app bar.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new AppBarCommand object.
+    * @constructor
+    * @param element The DOM element that will host the control.
+    * @param options The set of properties and values to apply to the new AppBarCommand.
+    **/
   class AppBarCommand ()
     extends winjsLib.WinJSNs.UINs.AppBarCommand {
-    //#region Constructors
-    /**
-             * Creates a new AppBarCommand object.
-             * @constructor
-             * @param element The DOM element that will host the control.
-             * @param options The set of properties and values to apply to the new AppBarCommand.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new AppBarCommand object.
-             * @constructor
-             * @param element The DOM element that will host the control.
-             * @param options The set of properties and values to apply to the new AppBarCommand.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * A rich input box that provides suggestions as the user types.
-      **/
+    * A rich input box that provides suggestions as the user types.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new AutoSuggestBox.
+    * @constructor
+    * @param element The DOM element hosts the new AutoSuggestBox.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
+    **/
   class AutoSuggestBox ()
     extends winjsLib.WinJSNs.UINs.AutoSuggestBox {
-    //#region Constructors
-    /**
-             * Creates a new AutoSuggestBox.
-             * @constructor
-             * @param element The DOM element hosts the new AutoSuggestBox.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new AutoSuggestBox.
-             * @constructor
-             * @param element The DOM element hosts the new AutoSuggestBox.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Provides backwards navigation in the form of a button.
-      **/
+    * Provides backwards navigation in the form of a button.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new BackButton.
+    * @constructor
+    * @param element The DOM element hosts the new BackButton.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
+    **/
   class BackButton ()
     extends winjsLib.WinJSNs.UINs.BackButton {
-    //#region Constructors
-    /**
-             * Creates a new BackButton.
-             * @constructor
-             * @param element The DOM element hosts the new BackButton.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new BackButton.
-             * @constructor
-             * @param element The DOM element hosts the new BackButton.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Represents a layout for the ListView in which items are arranged in a grid and items can span multiple grid cells.
-      **/
+    * Represents a layout for the ListView in which items are arranged in a grid and items can span multiple grid cells.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new CellSpanningLayout.
+    * @constructor
+    * @param options An object that contains one or more property/value pairs to apply to the new CellSpanningLayout. Each property of the options object corresponds to one of the object's properties or events. Event names must begin with "on".
+    **/
   class CellSpanningLayout ()
     extends winjsLib.WinJSNs.UINs.CellSpanningLayout {
-    //#region Constructors
-    /**
-             * Creates a new CellSpanningLayout.
-             * @constructor
-             * @param options An object that contains one or more property/value pairs to apply to the new CellSpanningLayout. Each property of the options object corresponds to one of the object's properties or events. Event names must begin with "on".
-            **/
     def this(options: js.Any) = this()
   }
   
   /**
-       * Represents a command to be displayed in an AppBar or ToolBar
-      **/
+    * Represents a command to be displayed in an AppBar or ToolBar
+    **/
   @js.native
   class Command ()
     extends winjsLib.WinJSNs.UINs.Command
   
   /**
-       * Displays a modal dialog which can display arbitrary HTML content.
-      **/
+    * Displays a modal dialog which can display arbitrary HTML content.
+    **/
   @js.native
+  /**
+    * Creates a new ContentDialog control.
+    * @constructor
+    * @param The DOM element that hosts the ContentDialog control.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
+    **/
   class ContentDialog ()
     extends winjsLib.WinJSNs.UINs.ContentDialog {
-    /**
-             * Creates a new ContentDialog control.
-             * @constructor
-             * @param The DOM element that hosts the ContentDialog control.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    /**
-             * Creates a new ContentDialog control.
-             * @constructor
-             * @param The DOM element that hosts the ContentDialog control.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Allows users to pick a date value.
-      **/
+    * Allows users to pick a date value.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Initializes a new instance of the DatePicker control.
+    * @constructor
+    * @param element The DOM element associated with the DatePicker control.
+    * @param options The set of options to be applied initially to the DatePicker control. The options are the following: calendar, current, datePattern, disabled, maxYear, minYear, monthPattern, yearPattern.
+    **/
   class DatePicker ()
     extends winjsLib.WinJSNs.UINs.DatePicker {
-    //#region Constructors
-    /**
-             * Initializes a new instance of the DatePicker control.
-             * @constructor
-             * @param element The DOM element associated with the DatePicker control.
-             * @param options The set of options to be applied initially to the DatePicker control. The options are the following: calendar, current, datePattern, disabled, maxYear, minYear, monthPattern, yearPattern.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Initializes a new instance of the DatePicker control.
-             * @constructor
-             * @param element The DOM element associated with the DatePicker control.
-             * @param options The set of options to be applied initially to the DatePicker control. The options are the following: calendar, current, datePattern, disabled, maxYear, minYear, monthPattern, yearPattern.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Displays a collection, such as a set of photos, one item at a time.
-      **/
+    * Displays a collection, such as a set of photos, one item at a time.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new FlipView.
+    * @constructor
+    * @param element The DOM element that hosts the control.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the pageselected event, add a property named "onpageselected" and set its value to the event handler.
+    **/
   class FlipView[T] ()
     extends winjsLib.WinJSNs.UINs.FlipView[T] {
-    //#region Constructors
-    /**
-             * Creates a new FlipView.
-             * @constructor
-             * @param element The DOM element that hosts the control.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the pageselected event, add a property named "onpageselected" and set its value to the event handler.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new FlipView.
-             * @constructor
-             * @param element The DOM element that hosts the control.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the pageselected event, add a property named "onpageselected" and set its value to the event handler.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Displays lightweight UI that is either information, or requires user interaction. Unlike a dialog, a Flyout can be light dismissed by clicking or tapping off of it.
-      **/
+    * Displays lightweight UI that is either information, or requires user interaction. Unlike a dialog, a Flyout can be light dismissed by clicking or tapping off of it.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new Flyout object.
+    * @constructor
+    * @param element The DOM element that will host the control.
+    * @param options The set of properties and values to apply to the new Flyout.
+    **/
   class Flyout ()
     extends winjsLib.WinJSNs.UINs.Flyout {
-    //#region Constructors
-    /**
-             * Creates a new Flyout object.
-             * @constructor
-             * @param element The DOM element that will host the control.
-             * @param options The set of properties and values to apply to the new Flyout.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new Flyout object.
-             * @constructor
-             * @param element The DOM element that will host the control.
-             * @param options The set of properties and values to apply to the new Flyout.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Represents a grid layout for the ListView in which items are arranged in a horizontal grid.
-      **/
+    * Represents a grid layout for the ListView in which items are arranged in a horizontal grid.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new GridLayout object.
+    * @constructor
+    * @param options The set of properties and values to apply to the new GridLayout.
+    **/
   class GridLayout ()
     extends winjsLib.WinJSNs.UINs.GridLayout {
-    //#region Constructors
-    /**
-             * Creates a new GridLayout object.
-             * @constructor
-             * @param options The set of properties and values to apply to the new GridLayout.
-            **/
     def this(options: js.Any) = this()
   }
   
   /**
-       * Enables you to include an HTML page dynamically. As part of the constructor, you must include an option indicating the URI of the page.
-      **/
+    * Enables you to include an HTML page dynamically. As part of the constructor, you must include an option indicating the URI of the page.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Initializes a new instance of HtmlControl to define a new page control.
+    * @constructor
+    * @param element The element that hosts the HtmlControl.
+    * @param options The options for configuring the page. The uri option is required in order to specify the source document for the content of the page. Other options are the ones used by the WinJS.Pages.render method.
+    **/
   class HtmlControl ()
     extends winjsLib.WinJSNs.UINs.HtmlControl {
-    //#region Constructors
-    /**
-             * Initializes a new instance of HtmlControl to define a new page control.
-             * @constructor
-             * @param element The element that hosts the HtmlControl.
-             * @param options The options for configuring the page. The uri option is required in order to specify the source document for the content of the page. Other options are the ones used by the WinJS.Pages.render method.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Initializes a new instance of HtmlControl to define a new page control.
-             * @constructor
-             * @param element The element that hosts the HtmlControl.
-             * @param options The options for configuring the page. The uri option is required in order to specify the source document for the content of the page. Other options are the ones used by the WinJS.Pages.render method.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Creates a hub navigation pattern consisting of sections that can be navigated to. Each section is defined by a HubSection object.
-      **/
+    * Creates a hub navigation pattern consisting of sections that can be navigated to. Each section is defined by a HubSection object.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new Hub control.
+    * @constructor
+    * @param element The DOM element that will host the Hub control.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the contentanimating event, add a property named "oncontentanimating" to the options object and set its value to the event handler.
+    **/
   class Hub ()
     extends winjsLib.WinJSNs.UINs.Hub {
-    //#region Constructors
-    /**
-             * Creates a new Hub control.
-             * @constructor
-             * @param element The DOM element that will host the Hub control.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the contentanimating event, add a property named "oncontentanimating" to the options object and set its value to the event handler.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new Hub control.
-             * @constructor
-             * @param element The DOM element that will host the Hub control.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the contentanimating event, add a property named "oncontentanimating" to the options object and set its value to the event handler.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Defines a section of a Hub.
-      **/
+    * Defines a section of a Hub.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new HubSection.
+    * @constructor
+    * @param element The DOM element hosts the new HubSection.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
+    **/
   class HubSection ()
     extends winjsLib.WinJSNs.UINs.HubSection {
-    //#region Constructors
-    /**
-             * Creates a new HubSection.
-             * @constructor
-             * @param element The DOM element hosts the new HubSection.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new HubSection.
-             * @constructor
-             * @param element The DOM element hosts the new HubSection.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
@@ -317,744 +241,550 @@ object UINs extends js.Object {
     //#endregion Methods
     //#region Properties
     /**
-             * Gets or sets a value that indicates whether the ICommand is disabled.
-            **/
+      * Gets or sets a value that indicates whether the ICommand is disabled.
+      **/
     var disabled: scala.Boolean = js.native
     /**
-             * Gets the DOM element that hosts the ICommand.
-            **/
+      * Gets the DOM element that hosts the ICommand.
+      **/
     var element: stdLib.HTMLElement = js.native
     /**
-             * Adds an extra CSS class during construction.
-            **/
+      * Adds an extra CSS class during construction.
+      **/
     var extraClass: java.lang.String = js.native
     /**
-             * Gets or sets the HTMLElement with a 'content' type ICommand that should receive focus whenever focus moves by the user pressing HOME or the arrow keys, from the previous ICommand to this ICommand.
-            **/
+      * Gets or sets the HTMLElement with a 'content' type ICommand that should receive focus whenever focus moves by the user pressing HOME or the arrow keys, from the previous ICommand to this ICommand.
+      **/
     var firstElementFocus: stdLib.HTMLElement = js.native
     /**
-             * Gets or sets the Flyout object displayed by this command. The specified flyout is shown when the ICommand's button is invoked.
-            **/
+      * Gets or sets the Flyout object displayed by this command. The specified flyout is shown when the ICommand's button is invoked.
+      **/
     var flyout: winjsLib.WinJSNs.UINs.Flyout = js.native
     /**
-             * Gets or sets a value that indicates whether the ICommand is hiding or in the process of becoming hidden.
-            **/
+      * Gets or sets a value that indicates whether the ICommand is hiding or in the process of becoming hidden.
+      **/
     var hidden: scala.Boolean = js.native
     /**
-             * Gets or sets the icon of the ICommand.
-            **/
+      * Gets or sets the icon of the ICommand.
+      **/
     var icon: java.lang.String = js.native
     /**
-             * Gets the element identifier (ID) of the command.
-            **/
+      * Gets the element identifier (ID) of the command.
+      **/
     var id: java.lang.String = js.native
     /**
-             * Gets or sets the label of the command.
-            **/
+      * Gets or sets the label of the command.
+      **/
     var label: java.lang.String = js.native
     /**
-             * Gets or sets the HTMLElement with a 'content' type ICommand that should receive focus whenever focus moves by the user pressing END or the arrow keys, from the previous Command to this Command.
-            **/
+      * Gets or sets the HTMLElement with a 'content' type ICommand that should receive focus whenever focus moves by the user pressing END or the arrow keys, from the previous Command to this Command.
+      **/
     var lastElementFocus: stdLib.HTMLElement = js.native
     /**
-             * Gets or sets the function to be invoked when the command is clicked.
-            **/
+      * Gets or sets the function to be invoked when the command is clicked.
+      **/
     var onclick: js.Function = js.native
     /**
-              * Gets or sets the priority of the command.
-             **/
+      * Gets or sets the priority of the command.
+      **/
     var priority: scala.Double = js.native
     /**
-             * Gets the section of the parent control that the command is in. The section can only be set through constructor options.
-            **/
+      * Gets the section of the parent control that the command is in. The section can only be set through constructor options.
+      **/
     var section: java.lang.String = js.native
     /**
-             * Gets or sets the selected state of a toggle button.
-            **/
+      * Gets or sets the selected state of a toggle button.
+      **/
     var selected: scala.Boolean = js.native
     /**
-             * Gets or sets the tooltip of the command.
-            **/
+      * Gets or sets the tooltip of the command.
+      **/
     var tooltip: java.lang.String = js.native
     /**
-             * Gets the type of the command. The type can only be set through constructor options.
-            **/
+      * Gets the type of the command. The type can only be set through constructor options.
+      **/
     var `type`: java.lang.String = js.native
     //#region Methods
     /**
-             * Registers an event handler for the specified event.
-             * @param type The event type to register.
-             * @param listener The event handler function to associate with the event.
-             * @param useCapture Set to true to register the event handler for the capturing phase; otherwise, set to false to register the event handler for the bubbling phase.
-            **/
+      * Registers an event handler for the specified event.
+      * @param type The event type to register.
+      * @param listener The event handler function to associate with the event.
+      * @param useCapture Set to true to register the event handler for the capturing phase; otherwise, set to false to register the event handler for the bubbling phase.
+      **/
     def addEventListener(`type`: java.lang.String, listener: js.Function): scala.Unit = js.native
-    //#region Methods
-    /**
-             * Registers an event handler for the specified event.
-             * @param type The event type to register.
-             * @param listener The event handler function to associate with the event.
-             * @param useCapture Set to true to register the event handler for the capturing phase; otherwise, set to false to register the event handler for the bubbling phase.
-            **/
     def addEventListener(`type`: java.lang.String, listener: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
     /**
-             * Releases resources held by this ICommand. Call this method when the ICommand is no longer needed. After calling this method, the ICommand becomes unusable.
-            **/
+      * Releases resources held by this ICommand. Call this method when the ICommand is no longer needed. After calling this method, the ICommand becomes unusable.
+      **/
     def dispose(): scala.Unit = js.native
     /**
-             * Removes an event handler that the addEventListener method registered.
-             * @param type The event type to unregister.
-             * @param listener The event handler function to remove.
-             * @param useCapture Set to true to remove the capturing phase event handler; set to false to remove the bubbling phase event handler.
-            **/
+      * Removes an event handler that the addEventListener method registered.
+      * @param type The event type to unregister.
+      * @param listener The event handler function to remove.
+      * @param useCapture Set to true to remove the capturing phase event handler; set to false to remove the bubbling phase event handler.
+      **/
     def removeEventListener(`type`: java.lang.String, listener: js.Function): scala.Unit = js.native
-    /**
-             * Removes an event handler that the addEventListener method registered.
-             * @param type The event type to unregister.
-             * @param listener The event handler function to remove.
-             * @param useCapture Set to true to remove the capturing phase event handler; set to false to remove the bubbling phase event handler.
-            **/
     def removeEventListener(`type`: java.lang.String, listener: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
   }
   
   /**
-       * Defines an item that can be pressed, swiped, and dragged.
-      **/
+    * Defines an item that can be pressed, swiped, and dragged.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new ItemContainer.
+    * @constructor
+    * @param element The DOM element hosts the new ItemContainer. For the ItemContainer to be accessible, this element must have its role attribute set to "list" or "listbox". If tapBehavior is set to none and selectionDisabled is true, then use the "list" role; otherwise, use the "listbox" role.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
+    **/
   class ItemContainer ()
     extends winjsLib.WinJSNs.UINs.ItemContainer {
-    //#region Constructors
-    /**
-             * Creates a new ItemContainer.
-             * @constructor
-             * @param element The DOM element hosts the new ItemContainer. For the ItemContainer to be accessible, this element must have its role attribute set to "list" or "listbox". If tapBehavior is set to none and selectionDisabled is true, then use the "list" role; otherwise, use the "listbox" role.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new ItemContainer.
-             * @constructor
-             * @param element The DOM element hosts the new ItemContainer. For the ItemContainer to be accessible, this element must have its role attribute set to "list" or "listbox". If tapBehavior is set to none and selectionDisabled is true, then use the "list" role; otherwise, use the "listbox" role.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * This object supports the WinJS infrastructure and is not intended to be used directly from your code.
-      **/
+    * This object supports the WinJS infrastructure and is not intended to be used directly from your code.
+    **/
   @js.native
   class Layout ()
     extends winjsLib.WinJSNs.UINs.Layout
   
   /**
-       * Represents a layout for the ListView in which items are arranged in a vertical list.
-      **/
+    * Represents a layout for the ListView in which items are arranged in a vertical list.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new ListLayout.
+    * @constructor
+    * @param options An object that contains one or more property/value pairs to apply to the new ListLayout. Each property of the options object corresponds to one of the object's properties or events. Event names must begin with "on".
+    **/
   class ListLayout ()
     extends winjsLib.WinJSNs.UINs.ListLayout {
-    //#region Constructors
-    /**
-             * Creates a new ListLayout.
-             * @constructor
-             * @param options An object that contains one or more property/value pairs to apply to the new ListLayout. Each property of the options object corresponds to one of the object's properties or events. Event names must begin with "on".
-            **/
     def this(options: js.Any) = this()
   }
   
   /**
-       * Displays data items in a customizable list or grid.
-      **/
+    * Displays data items in a customizable list or grid.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new ListView.
+    * @constructor
+    * @param element The DOM element that hosts the ListView control.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the selectionchanged event, add a property named "onselectionchanged" to the options object and set its value to the event handler.
+    **/
   class ListView[T] ()
     extends winjsLib.WinJSNs.UINs.ListView[T] {
-    //#region Constructors
-    /**
-             * Creates a new ListView.
-             * @constructor
-             * @param element The DOM element that hosts the ListView control.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the selectionchanged event, add a property named "onselectionchanged" to the options object and set its value to the event handler.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new ListView.
-             * @constructor
-             * @param element The DOM element that hosts the ListView control.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the selectionchanged event, add a property named "onselectionchanged" to the options object and set its value to the event handler.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Represents a menu flyout for displaying commands.
-      **/
+    * Represents a menu flyout for displaying commands.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new Menu object.
+    * @constructor
+    * @param element The DOM element that will host the control.
+    * @param options The set of properties and values to apply to the new Menu.
+    **/
   class Menu ()
     extends winjsLib.WinJSNs.UINs.Menu {
-    //#region Constructors
-    /**
-             * Creates a new Menu object.
-             * @constructor
-             * @param element The DOM element that will host the control.
-             * @param options The set of properties and values to apply to the new Menu.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new Menu object.
-             * @constructor
-             * @param element The DOM element that will host the control.
-             * @param options The set of properties and values to apply to the new Menu.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Represents a command to be displayed in a Menu object.
-      **/
+    * Represents a command to be displayed in a Menu object.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new MenuCommand object.
+    * @constructor
+    * @param element The DOM element that will host the control.
+    * @param options The set of properties and values to apply to the new MenuCommand.
+    **/
   class MenuCommand ()
     extends winjsLib.WinJSNs.UINs.MenuCommand {
-    //#region Constructors
-    /**
-             * Creates a new MenuCommand object.
-             * @constructor
-             * @param element The DOM element that will host the control.
-             * @param options The set of properties and values to apply to the new MenuCommand.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new MenuCommand object.
-             * @constructor
-             * @param element The DOM element that will host the control.
-             * @param options The set of properties and values to apply to the new MenuCommand.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Displays NavBarCommands in an overlayed navigation pane that opens and closes at the top or bottom of the main view.
-      **/
+    * Displays NavBarCommands in an overlayed navigation pane that opens and closes at the top or bottom of the main view.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new NavBar.
+    * @constructor
+    * @param element The DOM element that will host the new NavBar.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
+    **/
   class NavBar ()
     extends winjsLib.WinJSNs.UINs.NavBar {
-    //#region Constructors
-    /**
-             * Creates a new NavBar.
-             * @constructor
-             * @param element The DOM element that will host the new NavBar.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new NavBar.
-             * @constructor
-             * @param element The DOM element that will host the new NavBar.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Represents a navigation command in a NavBarContainer.
-      **/
+    * Represents a navigation command in a NavBarContainer.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new NavBarCommand.
+    * @constructor
+    * @param element The DOM element hosts the new NavBarCommand.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
+    **/
   class NavBarCommand ()
     extends winjsLib.WinJSNs.UINs.NavBarCommand {
-    //#region Constructors
-    /**
-             * Creates a new NavBarCommand.
-             * @constructor
-             * @param element The DOM element hosts the new NavBarCommand.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new NavBarCommand.
-             * @constructor
-             * @param element The DOM element hosts the new NavBarCommand.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Contains a group of NavBarCommand objects in a NavBar.
-      **/
+    * Contains a group of NavBarCommand objects in a NavBar.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new NavBarContainer.
+    * @constructor
+    * @param element The DOM element hosts the new NavBarContainer.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
+    **/
   class NavBarContainer ()
     extends winjsLib.WinJSNs.UINs.NavBarContainer {
-    //#region Constructors
-    /**
-             * Creates a new NavBarContainer.
-             * @constructor
-             * @param element The DOM element hosts the new NavBarContainer.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new NavBarContainer.
-             * @constructor
-             * @param element The DOM element hosts the new NavBarContainer.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * A tab control that displays multiple items.
-      **/
+    * A tab control that displays multiple items.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new Pivot.
+    * @constructor
+    * @param element The DOM element hosts the new Pivot.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the cancel event, add a property named "oncancel" to the options object and set its value to the event handler.
+    **/
   class Pivot ()
     extends winjsLib.WinJSNs.UINs.Pivot {
-    //#region Constructors
-    /**
-             * Creates a new Pivot.
-             * @constructor
-             * @param element The DOM element hosts the new Pivot.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the cancel event, add a property named "oncancel" to the options object and set its value to the event handler.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new Pivot.
-             * @constructor
-             * @param element The DOM element hosts the new Pivot.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the cancel event, add a property named "oncancel" to the options object and set its value to the event handler.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * An item within a Pivot control.
-      **/
+    * An item within a Pivot control.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new PivotItem.
+    * @constructor
+    * @param element The DOM element hosts the new PivotItem.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the cancel event, add a property named "oncancel" to the options object and set its value to the event handler.
+    **/
   class PivotItem ()
     extends winjsLib.WinJSNs.UINs.PivotItem {
-    //#region Constructors
-    /**
-             * Creates a new PivotItem.
-             * @constructor
-             * @param element The DOM element hosts the new PivotItem.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the cancel event, add a property named "oncancel" to the options object and set its value to the event handler.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new PivotItem.
-             * @constructor
-             * @param element The DOM element hosts the new PivotItem.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the cancel event, add a property named "oncancel" to the options object and set its value to the event handler.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Lets the user rate something by clicking an icon that represents a rating. The Rating control can display three types of ratings: an average rating, a tentative rating, and the user's rating.
-      **/
+    * Lets the user rate something by clicking an icon that represents a rating. The Rating control can display three types of ratings: an average rating, a tentative rating, and the user's rating.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new Rating.
+    * @constructor
+    * @param element The DOM element hosts the new Rating.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the cancel event, add a property named "oncancel" to the options object and set its value to the event handler.
+    **/
   class Rating ()
     extends winjsLib.WinJSNs.UINs.Rating {
-    //#region Constructors
-    /**
-             * Creates a new Rating.
-             * @constructor
-             * @param element The DOM element hosts the new Rating.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the cancel event, add a property named "oncancel" to the options object and set its value to the event handler.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new Rating.
-             * @constructor
-             * @param element The DOM element hosts the new Rating.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the cancel event, add a property named "oncancel" to the options object and set its value to the event handler.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Generates HTML from a set of data. Use this control to generate lists of items.
-      **/
+    * Generates HTML from a set of data. Use this control to generate lists of items.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new Repeater control.
+    * @constructor
+    * @param elemnt The DOM element that will host the new control. The Repeater will create an element if this value is null.
+    * @param options An object that contains one or more property/value pairs to apply to the new Repeater. Each property of the options object corresponds to one of the object's properties or events. Event names must begin with "on".
+    **/
   class Repeater ()
     extends winjsLib.WinJSNs.UINs.Repeater {
-    //#region Constructors
-    /**
-             * Creates a new Repeater control.
-             * @constructor
-             * @param elemnt The DOM element that will host the new control. The Repeater will create an element if this value is null.
-             * @param options An object that contains one or more property/value pairs to apply to the new Repeater. Each property of the options object corresponds to one of the object's properties or events. Event names must begin with "on".
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new Repeater control.
-             * @constructor
-             * @param elemnt The DOM element that will host the new control. The Repeater will create an element if this value is null.
-             * @param options An object that contains one or more property/value pairs to apply to the new Repeater. Each property of the options object corresponds to one of the object's properties or events. Event names must begin with "on".
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Enables the user to perform search queries and select suggestions.
-      **/
+    * Enables the user to perform search queries and select suggestions.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new SearchBox.
+    * @constructor
+    * @param element The DOM element hosts the new SearchBox.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
+    **/
   class SearchBox ()
     extends winjsLib.WinJSNs.UINs.SearchBox {
-    //#region Constructors
-    /**
-             * Creates a new SearchBox.
-             * @constructor
-             * @param element The DOM element hosts the new SearchBox.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new SearchBox.
-             * @constructor
-             * @param element The DOM element hosts the new SearchBox.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Enables the user to zoom between two different views supplied by two child controls. One child control supplies the zoomed-out view and the other provides the zoomed-in view.
-      **/
+    * Enables the user to zoom between two different views supplied by two child controls. One child control supplies the zoomed-out view and the other provides the zoomed-in view.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new SemanticZoom.
+    * @constructor
+    * @param element The DOM element that hosts the SemanticZoom.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. This object can contain these properties: initiallyZoomedOut Boolean, zoomFactor 0.2–0.85.
+    **/
   class SemanticZoom ()
     extends winjsLib.WinJSNs.UINs.SemanticZoom {
-    //#region Constructors
-    /**
-             * Creates a new SemanticZoom.
-             * @constructor
-             * @param element The DOM element that hosts the SemanticZoom.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. This object can contain these properties: initiallyZoomedOut Boolean, zoomFactor 0.2–0.85.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new SemanticZoom.
-             * @constructor
-             * @param element The DOM element that hosts the SemanticZoom.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. This object can contain these properties: initiallyZoomedOut Boolean, zoomFactor 0.2–0.85.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Provides users with fast, in-context access to settings that affect the current Windows Store app.
-      **/
+    * Provides users with fast, in-context access to settings that affect the current Windows Store app.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new SettingsFlyout object.
+    * @constructor
+    * @param element The DOM element that will host the control.
+    * @param options The set of properties and values to apply to the new SettingsFlyout.
+    **/
   class SettingsFlyout ()
     extends winjsLib.WinJSNs.UINs.SettingsFlyout {
-    //#region Constructors
-    /**
-             * Creates a new SettingsFlyout object.
-             * @constructor
-             * @param element The DOM element that will host the control.
-             * @param options The set of properties and values to apply to the new SettingsFlyout.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new SettingsFlyout object.
-             * @constructor
-             * @param element The DOM element that will host the control.
-             * @param options The set of properties and values to apply to the new SettingsFlyout.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Displays a SplitView which renders a collapsable pane next to arbitrary HTML content.
-      **/
+    * Displays a SplitView which renders a collapsable pane next to arbitrary HTML content.
+    **/
   @js.native
+  /**
+    * Creates a new SplitView.
+    * @constructor
+    * @param element The DOM element hosts the new SplitView.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
+    **/
   class SplitView ()
     extends winjsLib.WinJSNs.UINs.SplitView {
-    /**
-             * Creates a new SplitView.
-             * @constructor
-             * @param element The DOM element hosts the new SplitView.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    /**
-             * Creates a new SplitView.
-             * @constructor
-             * @param element The DOM element hosts the new SplitView.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-      * Represents a command in the SplitView Pane.
-      **/
+    * Represents a command in the SplitView Pane.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new SplitViewCommand.
+    * @constructor
+    * @param element The DOM element hosts the new SplitViewCommand.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
+    **/
   class SplitViewCommand ()
     extends winjsLib.WinJSNs.UINs.SplitViewCommand {
-    //#region Constructors
-    /**
-             * Creates a new SplitViewCommand.
-             * @constructor
-             * @param element The DOM element hosts the new SplitViewCommand.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new SplitViewCommand.
-             * @constructor
-             * @param element The DOM element hosts the new SplitViewCommand.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Displays a button which is used for opening and closing a SplitView's pane.
-      **/
+    * Displays a button which is used for opening and closing a SplitView's pane.
+    **/
   @js.native
+  /**
+    * Creates a new SplitViewPaneToggle.
+    * @constructor
+    * @param element The DOM element hosts the new SplitViewPaneToggle.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
+    **/
   class SplitViewPaneToggle ()
     extends winjsLib.WinJSNs.UINs.SplitViewPaneToggle {
-    /**
-             * Creates a new SplitViewPaneToggle.
-             * @constructor
-             * @param element The DOM element hosts the new SplitViewPaneToggle.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLButtonElement) = this()
-    /**
-             * Creates a new SplitViewPaneToggle.
-             * @constructor
-             * @param element The DOM element hosts the new SplitViewPaneToggle.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events.
-            **/
     def this(element: stdLib.HTMLButtonElement, options: js.Any) = this()
   }
   
   /**
-       * A type of IListDataSource that provides read-access to an object that implements the IStorageQueryResultBase interface. A StorageDataSource enables you to query and bind to items in the data source.
-      **/
+    * A type of IListDataSource that provides read-access to an object that implements the IStorageQueryResultBase interface. A StorageDataSource enables you to query and bind to items in the data source.
+    **/
   @js.native
   class StorageDataSource[T] protected ()
     extends winjsLib.WinJSNs.UINs.StorageDataSource[T] {
     //#region Constructors
     /**
-             * Creates a new StorageDataSource object.
-             * @constructor
-             * @param query The IStorageQueryResultBase that the StorageDataSource obtains its items from. Instead of IStorageQueryResultBase, you can also pass one of these string values: Music, Pictures, Videos, Documents.
-             * @param options The set of properties and values to apply to the new StorageDataSource. Properties on this object may include: mode , requestedThumbnailSize , thumbnailOptions , synchronous .
-            **/
+      * Creates a new StorageDataSource object.
+      * @constructor
+      * @param query The IStorageQueryResultBase that the StorageDataSource obtains its items from. Instead of IStorageQueryResultBase, you can also pass one of these string values: Music, Pictures, Videos, Documents.
+      * @param options The set of properties and values to apply to the new StorageDataSource. Properties on this object may include: mode , requestedThumbnailSize , thumbnailOptions , synchronous .
+      **/
     def this(query: js.Any) = this()
-    //#region Constructors
-    /**
-             * Creates a new StorageDataSource object.
-             * @constructor
-             * @param query The IStorageQueryResultBase that the StorageDataSource obtains its items from. Instead of IStorageQueryResultBase, you can also pass one of these string values: Music, Pictures, Videos, Documents.
-             * @param options The set of properties and values to apply to the new StorageDataSource. Properties on this object may include: mode , requestedThumbnailSize , thumbnailOptions , synchronous .
-            **/
     def this(query: js.Any, options: js.Any) = this()
   }
   
   /**
-       * Prevents a DOM sub-tree from receiving tab navigations and focus.
-      **/
+    * Prevents a DOM sub-tree from receiving tab navigations and focus.
+    **/
   @js.native
   class TabContainer protected ()
     extends winjsLib.WinJSNs.UINs.TabContainer {
     //#region Constructors
     /**
-             * Creates a new TabContainer.
-             * @constructor
-             * @param element The DOM element that hosts the TabContainer control.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties.
-            **/
+      * Creates a new TabContainer.
+      * @constructor
+      * @param element The DOM element that hosts the TabContainer control.
+      * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties.
+      **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new TabContainer.
-             * @constructor
-             * @param element The DOM element that hosts the TabContainer control.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Allows users to select time values.
-      **/
+    * Allows users to select time values.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Initializes a new instance of a TimePicker control.
+    * @constructor
+    * @param element The DOM element associated with the TimePicker control.
+    * @param options The set of options to be applied initially to the TimePicker control. The options are the following: clock.
+    **/
   class TimePicker ()
     extends winjsLib.WinJSNs.UINs.TimePicker {
-    //#region Constructors
-    /**
-             * Initializes a new instance of a TimePicker control.
-             * @constructor
-             * @param element The DOM element associated with the TimePicker control.
-             * @param options The set of options to be applied initially to the TimePicker control. The options are the following: clock.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Initializes a new instance of a TimePicker control.
-             * @constructor
-             * @param element The DOM element associated with the TimePicker control.
-             * @param options The set of options to be applied initially to the TimePicker control. The options are the following: clock.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * A control that lets the user switch an option between two states: on (checked is set to true) and off (checked is set to false).
-      **/
+    * A control that lets the user switch an option between two states: on (checked is set to true) and off (checked is set to false).
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new ToggleSwitch.
+    * @constructor
+    * @param element The DOM that hosts the control.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the change event, add a property named "onchange" to the options object and set its value to the event handler.
+    **/
   class ToggleSwitch ()
     extends winjsLib.WinJSNs.UINs.ToggleSwitch {
-    //#region Constructors
-    /**
-             * Creates a new ToggleSwitch.
-             * @constructor
-             * @param element The DOM that hosts the control.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the change event, add a property named "onchange" to the options object and set its value to the event handler.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new ToggleSwitch.
-             * @constructor
-             * @param element The DOM that hosts the control.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the change event, add a property named "onchange" to the options object and set its value to the event handler.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Displays ICommands within the flow of the app. Use the ToolBar around other statically positioned app content.
-      **/
+    * Displays ICommands within the flow of the app. Use the ToolBar around other statically positioned app content.
+    **/
   @js.native
+  /**
+    * Creates a new ToolBar control.
+    * @param element The DOM element that will host the control.
+    * @param options The set of properties and values to apply to the new ToolBar.
+    **/
   class ToolBar ()
     extends winjsLib.WinJSNs.UINs.ToolBar {
-    /**
-             * Creates a new ToolBar control.
-             * @param element The DOM element that will host the control.
-             * @param options The set of properties and values to apply to the new ToolBar.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    /**
-             * Creates a new ToolBar control.
-             * @param element The DOM element that will host the control.
-             * @param options The set of properties and values to apply to the new ToolBar.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Displays a tooltip that can contain images and formatting.
-      **/
+    * Displays a tooltip that can contain images and formatting.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Creates a new Tooltip.
+    * @constructor
+    * @param element The DOM element associated that hosts the Tooltip.
+    * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the opened event, add a property named "onopened" to the options object and set its value to the event handler.
+    **/
   class Tooltip ()
     extends winjsLib.WinJSNs.UINs.Tooltip {
-    //#region Constructors
-    /**
-             * Creates a new Tooltip.
-             * @constructor
-             * @param element The DOM element associated that hosts the Tooltip.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the opened event, add a property named "onopened" to the options object and set its value to the event handler.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Creates a new Tooltip.
-             * @constructor
-             * @param element The DOM element associated that hosts the Tooltip.
-             * @param options An object that contains one or more property/value pairs to apply to the new control. Each property of the options object corresponds to one of the control's properties or events. Event names must begin with "on". For example, to provide a handler for the opened event, add a property named "onopened" to the options object and set its value to the event handler.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Scales a single child element to fill the available space without resizing it. This control reacts to changes in the size of the container as well as changes in size of the child element. For example, a media query may result in a change in aspect ratio.
-      **/
+    * Scales a single child element to fill the available space without resizing it. This control reacts to changes in the size of the container as well as changes in size of the child element. For example, a media query may result in a change in aspect ratio.
+    **/
   @js.native
+  //#region Constructors
+  /**
+    * Initializes a new instance of the ViewBox control.
+    * @constructor
+    * @param element The DOM element that functions as the scaling box. This element fills 100% of the width and height allotted to it.
+    * @param options The set of options to be applied initially to the ViewBox control. There are currently no options on this control, and any options included in this parameter are ignored.
+    **/
   class ViewBox ()
     extends winjsLib.WinJSNs.UINs.ViewBox {
-    //#region Constructors
-    /**
-             * Initializes a new instance of the ViewBox control.
-             * @constructor
-             * @param element The DOM element that functions as the scaling box. This element fills 100% of the width and height allotted to it.
-             * @param options The set of options to be applied initially to the ViewBox control. There are currently no options on this control, and any options included in this parameter are ignored.
-            **/
     def this(element: stdLib.HTMLElement) = this()
-    //#region Constructors
-    /**
-             * Initializes a new instance of the ViewBox control.
-             * @constructor
-             * @param element The DOM element that functions as the scaling box. This element fills 100% of the width and height allotted to it.
-             * @param options The set of options to be applied initially to the ViewBox control. There are currently no options on this control, and any options included in this parameter are ignored.
-            **/
     def this(element: stdLib.HTMLElement, options: js.Any) = this()
   }
   
   /**
-       * Serves as the base class for a custom IListDataSource.
-      **/
+    * Serves as the base class for a custom IListDataSource.
+    **/
   @js.native
   class VirtualizedDataSource[T] protected ()
     extends winjsLib.WinJSNs.UINs.VirtualizedDataSource[T] {
     //#region Constructors
     /**
-             * Initializes the VirtualizedDataSource base class of a custom data source.
-             * @constructor
-             * @param listDataAdapter The object that supplies data to the VirtualizedDataSource.
-             * @param options An object that can contain properties that specify additional options for the VirtualizedDataSource. It supports these properties: cacheSize.
-            **/
+      * Initializes the VirtualizedDataSource base class of a custom data source.
+      * @constructor
+      * @param listDataAdapter The object that supplies data to the VirtualizedDataSource.
+      * @param options An object that can contain properties that specify additional options for the VirtualizedDataSource. It supports these properties: cacheSize.
+      **/
     def this(listDataAdapter: winjsLib.WinJSNs.UINs.IListDataAdapter[T]) = this()
-    //#region Constructors
-    /**
-             * Initializes the VirtualizedDataSource base class of a custom data source.
-             * @constructor
-             * @param listDataAdapter The object that supplies data to the VirtualizedDataSource.
-             * @param options An object that can contain properties that specify additional options for the VirtualizedDataSource. It supports these properties: cacheSize.
-            **/
     def this(listDataAdapter: winjsLib.WinJSNs.UINs.IListDataAdapter[T], options: js.Any) = this()
   }
   
   //#endregion Objects
   //#region Functions
   /**
-       * Returns a new IListDataSource that adds group information to the items of another IListDataSource.
-       * @param listDataSource The data source for the individual items to group.
-       * @param groupKey A callback function that accepts a single argument: an item in the IListDataSource. The function is called for each item in the list and must return the group key for that item as a string.
-       * @param groupData A callback function that accepts a single argument: an item in the IListDataSource. The function is called on one IListDataSource item for each group and must return an object that represents the header of that group.
-       * @param options An object that can contain properties that specify additional options: groupCountEstimate, batchSize.
-       * @returns An IListGroupDataSource that contains the items in the original data source and provides additional group information in the form of a "groups" property. The "groups" property returns another IListDataSource that enumerates the different groups in the list.
-      **/
+    * Returns a new IListDataSource that adds group information to the items of another IListDataSource.
+    * @param listDataSource The data source for the individual items to group.
+    * @param groupKey A callback function that accepts a single argument: an item in the IListDataSource. The function is called for each item in the list and must return the group key for that item as a string.
+    * @param groupData A callback function that accepts a single argument: an item in the IListDataSource. The function is called on one IListDataSource item for each group and must return an object that represents the header of that group.
+    * @param options An object that can contain properties that specify additional options: groupCountEstimate, batchSize.
+    * @returns An IListGroupDataSource that contains the items in the original data source and provides additional group information in the form of a "groups" property. The "groups" property returns another IListDataSource that enumerates the different groups in the list.
+    **/
   def computeDataSourceGroups[T](
     listDataSource: winjsLib.WinJSNs.UINs.IListDataSource[T],
     groupKey: js.Function,
     groupData: js.Function
   ): winjsLib.WinJSNs.UINs.IListGroupDataSource[T] = js.native
-  //#endregion Objects
-  //#region Functions
-  /**
-       * Returns a new IListDataSource that adds group information to the items of another IListDataSource.
-       * @param listDataSource The data source for the individual items to group.
-       * @param groupKey A callback function that accepts a single argument: an item in the IListDataSource. The function is called for each item in the list and must return the group key for that item as a string.
-       * @param groupData A callback function that accepts a single argument: an item in the IListDataSource. The function is called on one IListDataSource item for each group and must return an object that represents the header of that group.
-       * @param options An object that can contain properties that specify additional options: groupCountEstimate, batchSize.
-       * @returns An IListGroupDataSource that contains the items in the original data source and provides additional group information in the form of a "groups" property. The "groups" property returns another IListDataSource that enumerates the different groups in the list.
-      **/
   def computeDataSourceGroups[T](
     listDataSource: winjsLib.WinJSNs.UINs.IListDataSource[T],
     groupKey: js.Function,
@@ -1062,639 +792,500 @@ object UINs extends js.Object {
     options: js.Any
   ): winjsLib.WinJSNs.UINs.IListGroupDataSource[T] = js.native
   /**
-       * Used to disables all Animations Library and ListView animations. Calling this function does not guarantee that the animations will be disabled, as the determination is made based on several factors.
-      **/
+    * Used to disables all Animations Library and ListView animations. Calling this function does not guarantee that the animations will be disabled, as the determination is made based on several factors.
+    **/
   def disableAnimations(): scala.Unit = js.native
   /**
-       * Used to enable all Animations Library and ListView animations. Calling this function does not guarantee that the animations will be enabled, as the determination is made based on several factors.
-      **/
+    * Used to enable all Animations Library and ListView animations. Calling this function does not guarantee that the animations will be enabled, as the determination is made based on several factors.
+    **/
   def enableAnimations(): scala.Unit = js.native
   /**
-       * Marks a event handler function as being compatible with declarative processing.
-       * @param handler The handler to be marked as compatible with declarative processing.
-       * @returns The handler, marked as compatible with declarative processing.
-      **/
+    * Marks a event handler function as being compatible with declarative processing.
+    * @param handler The handler to be marked as compatible with declarative processing.
+    * @returns The handler, marked as compatible with declarative processing.
+    **/
   def eventHandler(handler: js.Any): js.Any = js.native
   /**
-       * Asynchronously executes a collection of CSS animations on a collection of elements. This is the underlying animation mechanism used by the Animations Library. Apps are encouraged to use the Animations Library to conform with the standard look and feel of the rest of the system, rather than calling this function directly.
-       * @param element Element or elements to be animated. This parameter can be expressed in several ways: As the special value "undefined", which means that the animation has no target, As a single object, As a JavaScript array (possibly empty), in which each element of the array can be a single element or a JavaScript array of elements., As a NodeList (for example, the result of querySelectorAll), As an HTMLCollection.
-       * @param animation The animation description or an array of animation descriptions to apply to element. An animation description is a JavaScript object with specific properties, listed below. There are two types of animation descriptions: one for keyframe-based animations and one for explicit animations. These types are distinguished by whether the keyframe property has a defined value. The following properties are required for both types of animation descriptions: property (string), delay (number), duration (number), timing (string). If an animation has a keyframe property with a defined, non-null value, then the animation is a keyframe-based animation. A keyframe-based animation description requires the following property in addition to those mentioned above: keyframe (string). If an animation does not have a keyframe property, or if the value of the property is null or undefined, then the animation is an explicit animation. An explicit animation description requires the following properties in addition to the common properties mentioned above: from, to. The values given in the from and to properties must be valid for the CSS property specified by the property property. For example, if the CSS property is "opacity", then the from and to properties must be numbers between 0 and 1 (inclusive).
-       * @returns Returns a Promise object that completes when the CSS animation is complete.
-      **/
+    * Asynchronously executes a collection of CSS animations on a collection of elements. This is the underlying animation mechanism used by the Animations Library. Apps are encouraged to use the Animations Library to conform with the standard look and feel of the rest of the system, rather than calling this function directly.
+    * @param element Element or elements to be animated. This parameter can be expressed in several ways: As the special value "undefined", which means that the animation has no target, As a single object, As a JavaScript array (possibly empty), in which each element of the array can be a single element or a JavaScript array of elements., As a NodeList (for example, the result of querySelectorAll), As an HTMLCollection.
+    * @param animation The animation description or an array of animation descriptions to apply to element. An animation description is a JavaScript object with specific properties, listed below. There are two types of animation descriptions: one for keyframe-based animations and one for explicit animations. These types are distinguished by whether the keyframe property has a defined value. The following properties are required for both types of animation descriptions: property (string), delay (number), duration (number), timing (string). If an animation has a keyframe property with a defined, non-null value, then the animation is a keyframe-based animation. A keyframe-based animation description requires the following property in addition to those mentioned above: keyframe (string). If an animation does not have a keyframe property, or if the value of the property is null or undefined, then the animation is an explicit animation. An explicit animation description requires the following properties in addition to the common properties mentioned above: from, to. The values given in the from and to properties must be valid for the CSS property specified by the property property. For example, if the CSS property is "opacity", then the from and to properties must be numbers between 0 and 1 (inclusive).
+    * @returns Returns a Promise object that completes when the CSS animation is complete.
+    **/
   def executeAnimation(element: stdLib.HTMLElement, animation: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
   /**
-       * Asynchronously executes a collection of CSS transitions on a collection of elements. This is the underlying animation mechanism used by the Animations Library. Apps are encouraged to use the Animations Library to conform with the standard look and feel of the rest of the system, rather than calling this function directly.
-       * @param element Element or elements on which to perform the transition. This parameter can be expressed in several ways: As the special value "undefined", which means that the transition has no target, As a single object, As a JavaScript array (possibly empty), in which each element of the array can be a single element or a JavaScript array of elements., As a NodeList (for example, the result of querySelectorAll), As an HTMLCollection.
-       * @param transition The transition description or an array of transition descriptions to apply to element. A transition description is a JavaScript object with these properties: property (string), delay (number), duration (number), timing (string), from (optional), to. The values given in the from and to properties must be valid for the CSS property specified by the property property. For example, if the CSS property is "opacity", then the from and to properties must be numbers between 0 and 1 (inclusive).
-       * @returns Returns a Promise that completes when the transition is finished.
-      **/
+    * Asynchronously executes a collection of CSS transitions on a collection of elements. This is the underlying animation mechanism used by the Animations Library. Apps are encouraged to use the Animations Library to conform with the standard look and feel of the rest of the system, rather than calling this function directly.
+    * @param element Element or elements on which to perform the transition. This parameter can be expressed in several ways: As the special value "undefined", which means that the transition has no target, As a single object, As a JavaScript array (possibly empty), in which each element of the array can be a single element or a JavaScript array of elements., As a NodeList (for example, the result of querySelectorAll), As an HTMLCollection.
+    * @param transition The transition description or an array of transition descriptions to apply to element. A transition description is a JavaScript object with these properties: property (string), delay (number), duration (number), timing (string), from (optional), to. The values given in the from and to properties must be valid for the CSS property specified by the property property. For example, if the CSS property is "opacity", then the from and to properties must be numbers between 0 and 1 (inclusive).
+    * @returns Returns a Promise that completes when the transition is finished.
+    **/
   def executeTransition(element: stdLib.HTMLElement, transition: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
   /**
-       * Retrieves the items in the specified index range.
-       * @param dataSource The data source that contains the items to retrieve.
-       * @param ranges An array of ISelectionRange objects that have firstIndex and lastIndex values.
-       * @returns A Promise that contains an array of the requested IItem objects.
-      **/
+    * Retrieves the items in the specified index range.
+    * @param dataSource The data source that contains the items to retrieve.
+    * @param ranges An array of ISelectionRange objects that have firstIndex and lastIndex values.
+    * @returns A Promise that contains an array of the requested IItem objects.
+    **/
   def getItemsFromRanges[U](
     dataSource: winjsLib.WinJSNs.UINs.IListDataSource[U],
     ranges: js.Array[winjsLib.WinJSNs.UINs.ISelectionRange]
   ): winjsLib.WinJSNs.Promise[winjsLib.WinJSNs.UINs.IItem[U]] = js.native
   /**
-       * Determines whether the Animations Library and ListView animations will be performed if called.
-       * @returns Returns true if animations will be performed; otherwise false.
-      **/
+    * Determines whether the Animations Library and ListView animations will be performed if called.
+    * @returns Returns true if animations will be performed; otherwise false.
+    **/
   def isAnimationEnabled(): scala.Boolean = js.native
   /**
-       * * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
-      **/
+    * * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
+    **/
   def optionsParser(value: java.lang.String): js.Any = js.native
-  /**
-       * * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
-      **/
   def optionsParser(value: java.lang.String, context: js.Any): js.Any = js.native
-  /**
-       * * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
-      **/
   def optionsParser(value: java.lang.String, context: js.Any, functionContext: js.Any): js.Any = js.native
   /**
-       * Applies declarative control binding to the specified element.
-       * @param element The element to bind.
-       * @returns A promise that is fulfilled after the control is activated. The value of the promise is the control that is attached to element.
-      **/
+    * Applies declarative control binding to the specified element.
+    * @param element The element to bind.
+    * @returns A promise that is fulfilled after the control is activated. The value of the promise is the control that is attached to element.
+    **/
   def process(element: winjsLib.Element): winjsLib.WinJSNs.Promise[_] = js.native
   /**
-       * Applies declarative control binding to all elements, starting at the specified root element.
-       * @param rootElement The element at which to start applying the binding. If this parameter is not specified, the binding is applied to the entire document.
-       * @param skipRoot If true, the elements to be bound skip the specified root element and include only the children.
-       * @returns A promise that is fulfilled when binding has been applied to all the controls.
-      **/
+    * Applies declarative control binding to all elements, starting at the specified root element.
+    * @param rootElement The element at which to start applying the binding. If this parameter is not specified, the binding is applied to the entire document.
+    * @param skipRoot If true, the elements to be bound skip the specified root element and include only the children.
+    * @returns A promise that is fulfilled when binding has been applied to all the controls.
+    **/
   def processAll(): winjsLib.WinJSNs.Promise[_] = js.native
-  /**
-       * Applies declarative control binding to all elements, starting at the specified root element.
-       * @param rootElement The element at which to start applying the binding. If this parameter is not specified, the binding is applied to the entire document.
-       * @param skipRoot If true, the elements to be bound skip the specified root element and include only the children.
-       * @returns A promise that is fulfilled when binding has been applied to all the controls.
-      **/
   def processAll(rootElement: winjsLib.Element): winjsLib.WinJSNs.Promise[_] = js.native
-  /**
-       * Applies declarative control binding to all elements, starting at the specified root element.
-       * @param rootElement The element at which to start applying the binding. If this parameter is not specified, the binding is applied to the entire document.
-       * @param skipRoot If true, the elements to be bound skip the specified root element and include only the children.
-       * @returns A promise that is fulfilled when binding has been applied to all the controls.
-      **/
   def processAll(rootElement: winjsLib.Element, skipRoot: scala.Boolean): winjsLib.WinJSNs.Promise[_] = js.native
   /**
-       * Walks the DOM tree from the given element to the root of the document. Whenever a selector scope is encountered, this method performs a lookup within that scope for the specified selector string. The first matching element is returned.
-       * @param selector The selector string.
-       * @param element The element to begin walking to the root of the document from.
-       * @returns The target element, if found.
-      **/
+    * Walks the DOM tree from the given element to the root of the document. Whenever a selector scope is encountered, this method performs a lookup within that scope for the specified selector string. The first matching element is returned.
+    * @param selector The selector string.
+    * @param element The element to begin walking to the root of the document from.
+    * @returns The target element, if found.
+    **/
   def scopedSelect(selector: java.lang.String, element: stdLib.HTMLElement): stdLib.HTMLElement = js.native
   /**
-       * Adds the set of declaratively specified options (properties and events) to the specified control. If name of the options property begins with "on", the property value is a function and the control supports addEventListener, setOptions calls addEventListener on the control.
-       * @param control The control on which the properties and events are to be applied.
-       * @param options The set of options that are specified declaratively.
-      **/
+    * Adds the set of declaratively specified options (properties and events) to the specified control. If name of the options property begins with "on", the property value is a function and the control supports addEventListener, setOptions calls addEventListener on the control.
+    * @param control The control on which the properties and events are to be applied.
+    * @param options The set of options that are specified declaratively.
+    **/
   def setOptions(control: js.Any): scala.Unit = js.native
-  /**
-       * Adds the set of declaratively specified options (properties and events) to the specified control. If name of the options property begins with "on", the property value is a function and the control supports addEventListener, setOptions calls addEventListener on the control.
-       * @param control The control on which the properties and events are to be applied.
-       * @param options The set of options that are specified declaratively.
-      **/
   def setOptions(control: js.Any, options: js.Any): scala.Unit = js.native
   /**
-       * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
-      **/
+    * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
+    **/
   def simpleItemRenderer(fn: js.Function): js.Function = js.native
   /**
-   * Provides access to the Windows animations. These functions provide developers with the ability to use animations in their custom controls that are consistent with animations used by Windows controls.
+    * Provides access to the Windows animations. These functions provide developers with the ability to use animations in their custom controls that are consistent with animations used by Windows controls.
   **/
   @JSName("Animation")
   @js.native
   object AnimationNs extends js.Object {
     /**
-         * Execute a continuum animation, scaling down the incoming page while scaling, rotating, and translating the incoming item.
-         * @param page Single element to be scaled down that is the page root and contains the incoming item.
-         * @param item Single element to be scaled, rotated, and translated into its final position on the page.
-         * @returns A Promise that completes when the animation is finished.
-        **/
+      * Execute a continuum animation, scaling down the incoming page while scaling, rotating, and translating the incoming item.
+      * @param page Single element to be scaled down that is the page root and contains the incoming item.
+      * @param item Single element to be scaled, rotated, and translated into its final position on the page.
+      * @returns A Promise that completes when the animation is finished.
+      **/
     def continuumBackwardIn(page: js.Any, item: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Execute a continuum animation, scaling down the outgoing page while.
-         * @param page Single element to be scaled down that is the page root.
-         * @returns A Promise that completes when the animation is finished.
-        **/
+      * Execute a continuum animation, scaling down the outgoing page while.
+      * @param page Single element to be scaled down that is the page root.
+      * @returns A Promise that completes when the animation is finished.
+      **/
     def continuumBackwardOut(page: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Execute a continuum animation, scaling up the incoming page while scaling, rotating, and translating the incoming item.
-         * @param page Single element to be scaled up that is the page root and does not contain the incoming item.
-         * @param itemRoot Root of the item that will be translated as part of the continuum animation.
-         * @param itemContent Content of the item that will be scaled and rotated as part of the continuum animation.
-         * @returns A Promise that completes when the animation is finished.
-        **/
+      * Execute a continuum animation, scaling up the incoming page while scaling, rotating, and translating the incoming item.
+      * @param page Single element to be scaled up that is the page root and does not contain the incoming item.
+      * @param itemRoot Root of the item that will be translated as part of the continuum animation.
+      * @param itemContent Content of the item that will be scaled and rotated as part of the continuum animation.
+      * @returns A Promise that completes when the animation is finished.
+      **/
     def continuumForwardIn(page: js.Any, itemRoot: js.Any, itemContent: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Execute a continuum animation, scaling down the outgoing page while scaling, rotating, and translating the outgoing item.
-         * @param page Single element to be scaled down that is the page root and contains the outgoing item.
-         * @param item Single element to be scaled, rotated, and translated away from the outgoing page.
-         * @returns A Promise that completes when the animation is finished.
-        **/
+      * Execute a continuum animation, scaling down the outgoing page while scaling, rotating, and translating the outgoing item.
+      * @param page Single element to be scaled down that is the page root and contains the outgoing item.
+      * @param item Single element to be scaled, rotated, and translated away from the outgoing page.
+      * @returns A Promise that completes when the animation is finished.
+      **/
     def continuumForwardOut(page: js.Any, item: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     //#region Functions
     /**
-         * Creates an object that performs an animation that adds an item or items to a list.
-         * @param added Element or elements to add to the list.
-         * @param affected Element or elements affected by the added items. Typically, this is all other items displayed in the list.
-         * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
-        **/
+      * Creates an object that performs an animation that adds an item or items to a list.
+      * @param added Element or elements to add to the list.
+      * @param affected Element or elements affected by the added items. Typically, this is all other items displayed in the list.
+      * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
+      **/
     def createAddToListAnimation(added: js.Any, affected: js.Any): winjsLib.WinJSNs.UINs.AnimationNs.IAnimationMethodResponse = js.native
     /**
-         * Creates an object that performs an animation that adds an item or items to a list of search results.
-         * @param added Element or elements to add to the list.
-         * @param affected Element or elements affected by the added items. Typically, this is all other items displayed in the list.
-         * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
-        **/
+      * Creates an object that performs an animation that adds an item or items to a list of search results.
+      * @param added Element or elements to add to the list.
+      * @param affected Element or elements affected by the added items. Typically, this is all other items displayed in the list.
+      * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
+      **/
     def createAddToSearchListAnimation(added: js.Any, affected: js.Any): winjsLib.WinJSNs.UINs.AnimationNs.IAnimationMethodResponse = js.native
     /**
-         * Creates an object that performs an animation that collapses a list.
-         * @param hidden Element or elements hidden as a result of the collapse.
-         * @param affected Element or elements affected by the hidden items. Typically, this is all other items displayed in the list.
-         * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
-        **/
+      * Creates an object that performs an animation that collapses a list.
+      * @param hidden Element or elements hidden as a result of the collapse.
+      * @param affected Element or elements affected by the hidden items. Typically, this is all other items displayed in the list.
+      * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
+      **/
     def createCollapseAnimation(hidden: js.Any, affected: js.Any): winjsLib.WinJSNs.UINs.AnimationNs.IAnimationMethodResponse = js.native
     /**
-         * Creates an object that performs an animation that removes an item or items from a list.
-         * @param deleted Element or elements to delete from the list.
-         * @param remaining Element or elements affected by the removal of the deleted items. Typically, this is all other items displayed in the list.
-         * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
-        **/
+      * Creates an object that performs an animation that removes an item or items from a list.
+      * @param deleted Element or elements to delete from the list.
+      * @param remaining Element or elements affected by the removal of the deleted items. Typically, this is all other items displayed in the list.
+      * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
+      **/
     def createDeleteFromListAnimation(deleted: js.Any, remaining: js.Any): winjsLib.WinJSNs.UINs.AnimationNs.IAnimationMethodResponse = js.native
     /**
-         * Creates an object that performs an animation that removes an item or items from a list of search results.
-         * @param deleted Element or elements to delete from the list.
-         * @param remaining Element or elements affected by the removal of the deleted items. Typically, this is all other items displayed in the list.
-         * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
-        **/
+      * Creates an object that performs an animation that removes an item or items from a list of search results.
+      * @param deleted Element or elements to delete from the list.
+      * @param remaining Element or elements affected by the removal of the deleted items. Typically, this is all other items displayed in the list.
+      * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
+      **/
     def createDeleteFromSearchListAnimation(deleted: js.Any, remaining: js.Any): winjsLib.WinJSNs.UINs.AnimationNs.IAnimationMethodResponse = js.native
     /**
-         * Creates an object that performs an animation that expands a list.
-         * @param revealed Element or elements revealed by the expansion.
-         * @param affected Element or elements affected by the newly revealed items. Typically, this is all other items displayed in the list.
-         * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
-        **/
+      * Creates an object that performs an animation that expands a list.
+      * @param revealed Element or elements revealed by the expansion.
+      * @param affected Element or elements affected by the newly revealed items. Typically, this is all other items displayed in the list.
+      * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
+      **/
     def createExpandAnimation(revealed: js.Any, affected: js.Any): winjsLib.WinJSNs.UINs.AnimationNs.IAnimationMethodResponse = js.native
     /**
-         * Creates an exit and entrance animation to play for a page navigation given the current and incoming pages'
-         * animation preferences and whether the pages are navigating forwards or backwards.
-         * @param currentPreferredAnimation A value from WinJS.UI.PageNavigationAnimation describing the animation the current page prefers to use.
-         * @param A value from nextPreferredAnimation WinJS.UI.PageNavigationAnimation describing the animation the incoming page prefers to use.
-         * @param movingBackwards Boolean value for whether the navigation is moving backwards.
-         * @returns an object containing the exit and entrance animations to play based on the parameters given.
-        **/
+      * Creates an exit and entrance animation to play for a page navigation given the current and incoming pages'
+      * animation preferences and whether the pages are navigating forwards or backwards.
+      * @param currentPreferredAnimation A value from WinJS.UI.PageNavigationAnimation describing the animation the current page prefers to use.
+      * @param A value from nextPreferredAnimation WinJS.UI.PageNavigationAnimation describing the animation the incoming page prefers to use.
+      * @param movingBackwards Boolean value for whether the navigation is moving backwards.
+      * @returns an object containing the exit and entrance animations to play based on the parameters given.
+      **/
     def createPageNavigationAnimations(
       currentPreferredAnimation: java.lang.String,
       nextPreferredAnimation: java.lang.String,
       movingBackwards: scala.Boolean
     ): winjsLib.Anon_EntranceExit = js.native
     /**
-         * Creates an object that performs a peek animation.
-         * @param element Element or elements involved in the peek.
-         * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
-        **/
+      * Creates an object that performs a peek animation.
+      * @param element Element or elements involved in the peek.
+      * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
+      **/
     def createPeekAnimation(element: js.Any): winjsLib.WinJSNs.UINs.AnimationNs.IAnimationMethodResponse = js.native
     /**
-         * Creates an object that performs an animation that moves an item or items.
-         * @param element Element or elements involved in the reposition.
-         * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise object that completes when the animation is finished.
-        **/
+      * Creates an object that performs an animation that moves an item or items.
+      * @param element Element or elements involved in the reposition.
+      * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise object that completes when the animation is finished.
+      **/
     def createRepositionAnimation(element: js.Any): winjsLib.WinJSNs.UINs.AnimationNs.IAnimationMethodResponse = js.native
     /**
-         * Performs an animation that fades an item or items in, fading out existing items that occupy the same space.
-         * @param incoming Element or elements being faded in.
-         * @param outgoing Element or elements being replaced.
-         * @returns An object that completes when the animation has finished.
-        **/
+      * Performs an animation that fades an item or items in, fading out existing items that occupy the same space.
+      * @param incoming Element or elements being faded in.
+      * @param outgoing Element or elements being replaced.
+      * @returns An object that completes when the animation has finished.
+      **/
     def crossFade(incoming: js.Any, outgoing: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs an animation when a dragged object is moved such that dropping it in that position would move other items. The potentially affected items are animated out of the way to show where the object would be dropped.
-         * @param target Element or elements that the dragged object would cause to be moved if it were dropped.
-         * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @returns An object that completes when the animation is finished.
-        **/
+      * Performs an animation when a dragged object is moved such that dropping it in that position would move other items. The potentially affected items are animated out of the way to show where the object would be dropped.
+      * @param target Element or elements that the dragged object would cause to be moved if it were dropped.
+      * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
+      * @returns An object that completes when the animation is finished.
+      **/
     def dragBetweenEnter(target: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
-    /**
-         * Performs an animation when a dragged object is moved such that dropping it in that position would move other items. The potentially affected items are animated out of the way to show where the object would be dropped.
-         * @param target Element or elements that the dragged object would cause to be moved if it were dropped.
-         * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @returns An object that completes when the animation is finished.
-        **/
     def dragBetweenEnter(target: js.Any, offset: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs an animation when a dragged object is moved away from items that it had previously involved in a dragBetweenEnter animation. The affected objects are animated back to their original positions.
-         * @param target Element or elements that the dragged object would no longer cause to be displaced, due to its moving away. This should be the same element or element collection passed as the target parameter in the dragBetweenEnter animation.
-         * @returns An object that completes when the animation is finished.
-        **/
+      * Performs an animation when a dragged object is moved away from items that it had previously involved in a dragBetweenEnter animation. The affected objects are animated back to their original positions.
+      * @param target Element or elements that the dragged object would no longer cause to be displaced, due to its moving away. This should be the same element or element collection passed as the target parameter in the dragBetweenEnter animation.
+      * @returns An object that completes when the animation is finished.
+      **/
     def dragBetweenLeave(target: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs an animation when the user finishes dragging an object.
-         * @param dragSource Element or elements that were dragged.
-         * @param offset Initial offset from the drop point. The dropped object begins at the offset and animates to its final position at the drop point. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @param affected Element or elements whose position the dropped object affects. Typically, this is all other items in a reorderable list. This should be the same element or element collection passed as the affected parameter in the dragSourceStart animation.
-         * @returns An object that completes when the animation is finished.
-        **/
+      * Performs an animation when the user finishes dragging an object.
+      * @param dragSource Element or elements that were dragged.
+      * @param offset Initial offset from the drop point. The dropped object begins at the offset and animates to its final position at the drop point. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
+      * @param affected Element or elements whose position the dropped object affects. Typically, this is all other items in a reorderable list. This should be the same element or element collection passed as the affected parameter in the dragSourceStart animation.
+      * @returns An object that completes when the animation is finished.
+      **/
     def dragSourceEnd(dragSource: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
-    /**
-         * Performs an animation when the user finishes dragging an object.
-         * @param dragSource Element or elements that were dragged.
-         * @param offset Initial offset from the drop point. The dropped object begins at the offset and animates to its final position at the drop point. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @param affected Element or elements whose position the dropped object affects. Typically, this is all other items in a reorderable list. This should be the same element or element collection passed as the affected parameter in the dragSourceStart animation.
-         * @returns An object that completes when the animation is finished.
-        **/
     def dragSourceEnd(dragSource: js.Any, offset: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
-    /**
-         * Performs an animation when the user finishes dragging an object.
-         * @param dragSource Element or elements that were dragged.
-         * @param offset Initial offset from the drop point. The dropped object begins at the offset and animates to its final position at the drop point. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @param affected Element or elements whose position the dropped object affects. Typically, this is all other items in a reorderable list. This should be the same element or element collection passed as the affected parameter in the dragSourceStart animation.
-         * @returns An object that completes when the animation is finished.
-        **/
     def dragSourceEnd(dragSource: js.Any, offset: js.Any, affected: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs an animation when the user begins to drag an object.
-         * @param dragSource Element or elements being dragged.
-         * @param affected Element or elements whose position is affected by the movement of the dragged object. Typically, this is all other items in a reorderable list.
-         * @returns An object that completes when the animation is finished.
-        **/
+      * Performs an animation when the user begins to drag an object.
+      * @param dragSource Element or elements being dragged.
+      * @param affected Element or elements whose position is affected by the movement of the dragged object. Typically, this is all other items in a reorderable list.
+      * @returns An object that completes when the animation is finished.
+      **/
     def dragSourceStart(dragSource: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
-    /**
-         * Performs an animation when the user begins to drag an object.
-         * @param dragSource Element or elements being dragged.
-         * @param affected Element or elements whose position is affected by the movement of the dragged object. Typically, this is all other items in a reorderable list.
-         * @returns An object that completes when the animation is finished.
-        **/
     def dragSourceStart(dragSource: js.Any, affected: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Execute the incoming phase of the drill in animation, scaling up the incoming page while fading it in.
-         * @param incomingPage Element to be scaled up and faded in.
-         * @returns Promise object that completes when the animation is complete.
-        **/
+      * Execute the incoming phase of the drill in animation, scaling up the incoming page while fading it in.
+      * @param incomingPage Element to be scaled up and faded in.
+      * @returns Promise object that completes when the animation is complete.
+      **/
     def drillInIncoming(incomingPage: stdLib.HTMLElement): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Execute the outgoing phase of the drill in animation, scaling up the outgoing page while fading it out.
-         * @param incomingPage Element to be scaled up and faded out.
-         * @returns Promise object that completes when the animation is complete.
-        **/
+      * Execute the outgoing phase of the drill in animation, scaling up the outgoing page while fading it out.
+      * @param incomingPage Element to be scaled up and faded out.
+      * @returns Promise object that completes when the animation is complete.
+      **/
     def drillInOutgoing(outgoingPage: stdLib.HTMLElement): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Execute the incoming phase of the drill out animation, scaling down the incoming page while fading it in.
-         * @param incomingPage Element to be scaled up and faded in.
-         * @returns Promise object that completes when the animation is complete.
-        **/
+      * Execute the incoming phase of the drill out animation, scaling down the incoming page while fading it in.
+      * @param incomingPage Element to be scaled up and faded in.
+      * @returns Promise object that completes when the animation is complete.
+      **/
     def drillOutIncoming(incomingPage: stdLib.HTMLElement): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Execute the outgoing phase of the drill out animation, scaling down the outgoing page while fading it out.
-         * @param outgoingPage Element to be scaled down and faded out.
-         * @returns Promise object that completes when the animation is complete.
-        **/
+      * Execute the outgoing phase of the drill out animation, scaling down the outgoing page while fading it out.
+      * @param outgoingPage Element to be scaled down and faded out.
+      * @returns Promise object that completes when the animation is complete.
+      **/
     def drillOutOutgoing(outgoingPage: stdLib.HTMLElement): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs an animation that displays one or more elements on a page.
-         * @param incoming Element or elements that compose the incoming content.
-         * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @param options Optional. Set this value to { mechanism: "transition" } to play the animation using CSS transitions instead of the default CSS animations. In some cases this can result in improved performance.
-         * @returns An object that completes when the animation is finished.
-        **/
+      * Performs an animation that displays one or more elements on a page.
+      * @param incoming Element or elements that compose the incoming content.
+      * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
+      * @param options Optional. Set this value to { mechanism: "transition" } to play the animation using CSS transitions instead of the default CSS animations. In some cases this can result in improved performance.
+      * @returns An object that completes when the animation is finished.
+      **/
     def enterContent(incoming: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
-    /**
-         * Performs an animation that displays one or more elements on a page.
-         * @param incoming Element or elements that compose the incoming content.
-         * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @param options Optional. Set this value to { mechanism: "transition" } to play the animation using CSS transitions instead of the default CSS animations. In some cases this can result in improved performance.
-         * @returns An object that completes when the animation is finished.
-        **/
     def enterContent(incoming: js.Any, offset: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
-    /**
-         * Performs an animation that displays one or more elements on a page.
-         * @param incoming Element or elements that compose the incoming content.
-         * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @param options Optional. Set this value to { mechanism: "transition" } to play the animation using CSS transitions instead of the default CSS animations. In some cases this can result in improved performance.
-         * @returns An object that completes when the animation is finished.
-        **/
     def enterContent(incoming: js.Any, offset: js.Any, options: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs an animation that shows a new page of content, either when transitioning between pages in a running app or when displaying the first content in a newly launched app.
-         * @param element Element or an array of elements that represent the content. If element refers to an array of elements, the elements enter in array order.
-         * @param offset An initial offset where the element or elements begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @returns An object that completes when the animation is finished.
-        **/
+      * Performs an animation that shows a new page of content, either when transitioning between pages in a running app or when displaying the first content in a newly launched app.
+      * @param element Element or an array of elements that represent the content. If element refers to an array of elements, the elements enter in array order.
+      * @param offset An initial offset where the element or elements begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
+      * @returns An object that completes when the animation is finished.
+      **/
     def enterPage(element: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
-    /**
-         * Performs an animation that shows a new page of content, either when transitioning between pages in a running app or when displaying the first content in a newly launched app.
-         * @param element Element or an array of elements that represent the content. If element refers to an array of elements, the elements enter in array order.
-         * @param offset An initial offset where the element or elements begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @returns An object that completes when the animation is finished.
-        **/
     def enterPage(element: js.Any, offset: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs an animation that hides one or more elements on a page.
-         * @param outgoing Element or elements that compose the outgoing content.
-         * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @returns An object that completes when the animation is finished.
-        **/
+      * Performs an animation that hides one or more elements on a page.
+      * @param outgoing Element or elements that compose the outgoing content.
+      * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
+      * @returns An object that completes when the animation is finished.
+      **/
     def exitContent(outgoing: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
-    /**
-         * Performs an animation that hides one or more elements on a page.
-         * @param outgoing Element or elements that compose the outgoing content.
-         * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @returns An object that completes when the animation is finished.
-        **/
     def exitContent(outgoing: js.Any, offset: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs an animation that dismisses the current page when transitioning between pages in an app.
-         * @param outgoing Element or elements that compose the outgoing page.
-         * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @returns An object that completes when the animation is finished.
-        **/
+      * Performs an animation that dismisses the current page when transitioning between pages in an app.
+      * @param outgoing Element or elements that compose the outgoing page.
+      * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
+      * @returns An object that completes when the animation is finished.
+      **/
     def exitPage(outgoing: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
-    /**
-         * Performs an animation that dismisses the current page when transitioning between pages in an app.
-         * @param outgoing Element or elements that compose the outgoing page.
-         * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @returns An object that completes when the animation is finished.
-        **/
     def exitPage(outgoing: js.Any, offset: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs an animation that fades an item or set of items into view.
-         * @param shown Element or elements being faded in.
-         * @returns An object that completes when the animation has finished. Use this object when subsequent actions need this animation to finish before they take place.
-        **/
+      * Performs an animation that fades an item or set of items into view.
+      * @param shown Element or elements being faded in.
+      * @returns An object that completes when the animation has finished. Use this object when subsequent actions need this animation to finish before they take place.
+      **/
     def fadeIn(shown: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs an animation that fades an item or set of items out of view.
-         * @param hidden Element or elements being faded out.
-         * @returns An object that completes when the animation is finished.
-        **/
+      * Performs an animation that fades an item or set of items out of view.
+      * @param hidden Element or elements being faded out.
+      * @returns An object that completes when the animation is finished.
+      **/
     def fadeOut(hidden: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs an animation that hides edge-based user interface (UI).
-         * @param element Element or elements that are being hidden.
-         * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Offsets should be the chosen so that the elements end the animation just off-screen. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @param options Optional. Set this value to { mechanism: "transition" } to play the animation using CSS transitions instead of the default CSS animations. In some cases this can result in improved performance.
-         * @returns An object that completes when the animation is finished.
-        **/
+      * Performs an animation that hides edge-based user interface (UI).
+      * @param element Element or elements that are being hidden.
+      * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Offsets should be the chosen so that the elements end the animation just off-screen. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
+      * @param options Optional. Set this value to { mechanism: "transition" } to play the animation using CSS transitions instead of the default CSS animations. In some cases this can result in improved performance.
+      * @returns An object that completes when the animation is finished.
+      **/
     def hideEdgeUI(element: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
-    /**
-         * Performs an animation that hides edge-based user interface (UI).
-         * @param element Element or elements that are being hidden.
-         * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Offsets should be the chosen so that the elements end the animation just off-screen. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @param options Optional. Set this value to { mechanism: "transition" } to play the animation using CSS transitions instead of the default CSS animations. In some cases this can result in improved performance.
-         * @returns An object that completes when the animation is finished.
-        **/
     def hideEdgeUI(element: js.Any, offset: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
-    /**
-         * Performs an animation that hides edge-based user interface (UI).
-         * @param element Element or elements that are being hidden.
-         * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Offsets should be the chosen so that the elements end the animation just off-screen. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @param options Optional. Set this value to { mechanism: "transition" } to play the animation using CSS transitions instead of the default CSS animations. In some cases this can result in improved performance.
-         * @returns An object that completes when the animation is finished.
-        **/
     def hideEdgeUI(element: js.Any, offset: js.Any, options: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs an animation that hides a panel.
-         * @param element Element or elements that are being hidden.
-         * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Offsets should be the chosen so that the elements end the animation just off-screen. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @returns An object that completes when the animation is finished.
-        **/
+      * Performs an animation that hides a panel.
+      * @param element Element or elements that are being hidden.
+      * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Offsets should be the chosen so that the elements end the animation just off-screen. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
+      * @returns An object that completes when the animation is finished.
+      **/
     def hidePanel(element: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
-    /**
-         * Performs an animation that hides a panel.
-         * @param element Element or elements that are being hidden.
-         * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Offsets should be the chosen so that the elements end the animation just off-screen. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @returns An object that completes when the animation is finished.
-        **/
     def hidePanel(element: js.Any, offset: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs an animation that removes pop-up user interface (UI).
-         * @param element Element or elements that are being hidden.
-         * @returns An object that completes when the animation is finished.
-        **/
+      * Performs an animation that removes pop-up user interface (UI).
+      * @param element Element or elements that are being hidden.
+      * @returns An object that completes when the animation is finished.
+      **/
     def hidePopup(element: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs an animation when a pointer is pressed on an object.
-         * @param element Element or elements on which the pointer is pressed.
-         * @returns An object that completes when the animation is finished.
-        **/
+      * Performs an animation when a pointer is pressed on an object.
+      * @param element Element or elements on which the pointer is pressed.
+      * @returns An object that completes when the animation is finished.
+      **/
     def pointerDown(element: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs an animation when a pointer is released.
-         * @param element Element or elements that the pointer was pressed on.
-         * @returns An object that completes when the animation is finished.
-        **/
+      * Performs an animation when a pointer is released.
+      * @param element Element or elements that the pointer was pressed on.
+      * @returns An object that completes when the animation is finished.
+      **/
     def pointerUp(element: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs an animation that slides a narrow, edge-based user interface (UI) into view.
-         * @param element Element or elements that are being shown.
-         * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Offsets should be the chosen so that the elements begin the animation from just off-screen. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @param options Optional. Set this value to { mechanism: "transition" } to play the animation using CSS transitions instead of the default CSS animations. In some cases this can result in improved performance.
-         * @returns An object that completes when the animation is finished.
-        **/
+      * Performs an animation that slides a narrow, edge-based user interface (UI) into view.
+      * @param element Element or elements that are being shown.
+      * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Offsets should be the chosen so that the elements begin the animation from just off-screen. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
+      * @param options Optional. Set this value to { mechanism: "transition" } to play the animation using CSS transitions instead of the default CSS animations. In some cases this can result in improved performance.
+      * @returns An object that completes when the animation is finished.
+      **/
     def showEdgeUI(element: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
-    /**
-         * Performs an animation that slides a narrow, edge-based user interface (UI) into view.
-         * @param element Element or elements that are being shown.
-         * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Offsets should be the chosen so that the elements begin the animation from just off-screen. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @param options Optional. Set this value to { mechanism: "transition" } to play the animation using CSS transitions instead of the default CSS animations. In some cases this can result in improved performance.
-         * @returns An object that completes when the animation is finished.
-        **/
     def showEdgeUI(element: js.Any, offset: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
-    /**
-         * Performs an animation that slides a narrow, edge-based user interface (UI) into view.
-         * @param element Element or elements that are being shown.
-         * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Offsets should be the chosen so that the elements begin the animation from just off-screen. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @param options Optional. Set this value to { mechanism: "transition" } to play the animation using CSS transitions instead of the default CSS animations. In some cases this can result in improved performance.
-         * @returns An object that completes when the animation is finished.
-        **/
     def showEdgeUI(element: js.Any, offset: js.Any, options: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs an animation that slides a large panel user interface (UI) into view.
-         * @param element Element or elements that are being shown.
-         * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Offsets should be the chosen so that the elements begin the animation from just off-screen. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @returns An object that completes when the animation is finished.
-        **/
+      * Performs an animation that slides a large panel user interface (UI) into view.
+      * @param element Element or elements that are being shown.
+      * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Offsets should be the chosen so that the elements begin the animation from just off-screen. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
+      * @returns An object that completes when the animation is finished.
+      **/
     def showPanel(element: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
-    /**
-         * Performs an animation that slides a large panel user interface (UI) into view.
-         * @param element Element or elements that are being shown.
-         * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Offsets should be the chosen so that the elements begin the animation from just off-screen. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @returns An object that completes when the animation is finished.
-        **/
     def showPanel(element: js.Any, offset: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs an animation that displays a pop-up user interface (UI).
-         * @param element Element or elements that are being shown.
-         * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Offsets should be the chosen so that the elements begin the animation from just off-screen. Set this parameter to null to use the recommended default offset. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @returns An object that completes when the animation is finished.
-        **/
+      * Performs an animation that displays a pop-up user interface (UI).
+      * @param element Element or elements that are being shown.
+      * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Offsets should be the chosen so that the elements begin the animation from just off-screen. Set this parameter to null to use the recommended default offset. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
+      * @returns An object that completes when the animation is finished.
+      **/
     def showPopup(element: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
-    /**
-         * Performs an animation that displays a pop-up user interface (UI).
-         * @param element Element or elements that are being shown.
-         * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Offsets should be the chosen so that the elements begin the animation from just off-screen. Set this parameter to null to use the recommended default offset. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @returns An object that completes when the animation is finished.
-        **/
     def showPopup(element: js.Any, offset: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Execute a slide down animation.
-         * @param incoming Single element or collection of elements to animate sliding down.
-         * @returns A Promise that completes when the animation is finished.
-        **/
+      * Execute a slide down animation.
+      * @param incoming Single element or collection of elements to animate sliding down.
+      * @returns A Promise that completes when the animation is finished.
+      **/
     def slideDown(incoming: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Execute a slide in from right to left animation.
-         * @param page The page containing all elements to slide.
-         * @param first First element or collection of elements to animate sliding in.
-         * @param second Second element or collection of elements to animate sliding in, which will be offset slightly farther than the first.
-         * @param third Third element or collection of elements to animate sliding in, which will be offset slightly farther than the second.
-         * @returns A Promise that completes when the animation is finished.
-        **/
+      * Execute a slide in from right to left animation.
+      * @param page The page containing all elements to slide.
+      * @param first First element or collection of elements to animate sliding in.
+      * @param second Second element or collection of elements to animate sliding in, which will be offset slightly farther than the first.
+      * @param third Third element or collection of elements to animate sliding in, which will be offset slightly farther than the second.
+      * @returns A Promise that completes when the animation is finished.
+      **/
     def slideLeftIn(page: js.Any, first: js.Any, second: js.Any, third: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Execute a slide out from right to left animation.
-         * @param page The page containing all elements to slide.
-         * @param first First element or collection of elements to animate sliding out.
-         * @param second Second element or collection of elements to animate sliding out, which will be offset slightly farther than the first.
-         * @param third Third element or collection of elements to animate sliding out, which will be offset slightly farther than the second.
-         * @returns A Promise that completes when the animation is finished.
-        **/
+      * Execute a slide out from right to left animation.
+      * @param page The page containing all elements to slide.
+      * @param first First element or collection of elements to animate sliding out.
+      * @param second Second element or collection of elements to animate sliding out, which will be offset slightly farther than the first.
+      * @param third Third element or collection of elements to animate sliding out, which will be offset slightly farther than the second.
+      * @returns A Promise that completes when the animation is finished.
+      **/
     def slideLeftOut(page: js.Any, first: js.Any, second: js.Any, third: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Execute a slide in from left to right animation.
-         * @param page The page containing all elements to slide.
-         * @param first First element or collection of elements to animate sliding in.
-         * @param second Second element or collection of elements to animate sliding in, which will be offset slightly farther than the first.
-         * @param third Third element or collection of elements to animate sliding in, which will be offset slightly farther than the second.
-         * @returns A Promise that completes when the animation is finished.
-        **/
+      * Execute a slide in from left to right animation.
+      * @param page The page containing all elements to slide.
+      * @param first First element or collection of elements to animate sliding in.
+      * @param second Second element or collection of elements to animate sliding in, which will be offset slightly farther than the first.
+      * @param third Third element or collection of elements to animate sliding in, which will be offset slightly farther than the second.
+      * @returns A Promise that completes when the animation is finished.
+      **/
     def slideRightIn(page: js.Any, first: js.Any, second: js.Any, third: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Execute a slide out from left to right animation.
-         * @param page The page containing all elements to slide.
-         * @param first First element or collection of elements to animate sliding out.
-         * @param second Second element or collection of elements to animate sliding out, which will be offset slightly farther than the first.
-         * @param third Third element or collection of elements to animate sliding out, which will be offset slightly farther than the second.
-         * @returns A Promise that completes when the animation is finished.
-        **/
+      * Execute a slide out from left to right animation.
+      * @param page The page containing all elements to slide.
+      * @param first First element or collection of elements to animate sliding out.
+      * @param second Second element or collection of elements to animate sliding out, which will be offset slightly farther than the first.
+      * @param third Third element or collection of elements to animate sliding out, which will be offset slightly farther than the second.
+      * @returns A Promise that completes when the animation is finished.
+      **/
     def slideRightOut(page: js.Any, first: js.Any, second: js.Any, third: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Execute a slide up animation.
-         * @param incoming Single element or collection of elements to animate sliding up.
-         * @returns A Promise that completes when the animation is finished.
-        **/
+      * Execute a slide up animation.
+      * @param incoming Single element or collection of elements to animate sliding up.
+      * @returns A Promise that completes when the animation is finished.
+      **/
     def slideUp(incoming: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs a deselection animation in response to a swipe interaction.
-         * @param deselected Element or elements that become unselected.
-         * @param selection Element or elements that represent the selection, typically a check mark.
-         * @returns An object that completes when the animation is finished.
-        **/
+      * Performs a deselection animation in response to a swipe interaction.
+      * @param deselected Element or elements that become unselected.
+      * @param selection Element or elements that represent the selection, typically a check mark.
+      * @returns An object that completes when the animation is finished.
+      **/
     def swipeDeselect(deselected: js.Any, selection: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs an animation that reveals an item or items in response to a swipe interaction.
-         * @param target Element or elements being revealed.
-         * @param offset An initial offset where the animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @returns An object that completes when the animation is finished.
-        **/
+      * Performs an animation that reveals an item or items in response to a swipe interaction.
+      * @param target Element or elements being revealed.
+      * @param offset An initial offset where the animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
+      * @returns An object that completes when the animation is finished.
+      **/
     def swipeReveal(target: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
-    /**
-         * Performs an animation that reveals an item or items in response to a swipe interaction.
-         * @param target Element or elements being revealed.
-         * @param offset An initial offset where the animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @returns An object that completes when the animation is finished.
-        **/
     def swipeReveal(target: js.Any, offset: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs a selection animation in response to a swipe interaction.
-         * @param selected Element or elements being selected.
-         * @param selection Element or elements that show that something is selected, typically a check mark.
-         * @returns An object that completes when the animation is finished.
-        **/
+      * Performs a selection animation in response to a swipe interaction.
+      * @param selected Element or elements being selected.
+      * @param selection Element or elements that show that something is selected, typically a check mark.
+      * @returns An object that completes when the animation is finished.
+      **/
     def swipeSelect(selected: js.Any, selection: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Execute a turnstile backward in animation.
-         * @param incoming Single element or collection of elements to animate.
-         * @returns A Promise that completes when the animation is finished.
-        **/
+      * Execute a turnstile backward in animation.
+      * @param incoming Single element or collection of elements to animate.
+      * @returns A Promise that completes when the animation is finished.
+      **/
     def turnstileBackwardIn(incoming: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Execute a turnstile backward out animation.
-         * @param outgoing Single element or collection of elements to animate.
-         * @returns A Promise that completes when the animation is finished.
-        **/
+      * Execute a turnstile backward out animation.
+      * @param outgoing Single element or collection of elements to animate.
+      * @returns A Promise that completes when the animation is finished.
+      **/
     def turnstileBackwardOut(outgoing: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Execute a turnstile forward in animation.
-         * @param incoming Single element or collection of elements to animate.
-         * @returns A Promise that completes when the animation is finished.
-        **/
+      * Execute a turnstile forward in animation.
+      * @param incoming Single element or collection of elements to animate.
+      * @returns A Promise that completes when the animation is finished.
+      **/
     def turnstileForwardIn(incoming: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Execute a turnstile forward out animation.
-         * @param outgoing Single element or collection of elements to animate.
-         * @returns A Promise that completes when the animation is finished.
-        **/
+      * Execute a turnstile forward out animation.
+      * @param outgoing Single element or collection of elements to animate.
+      * @returns A Promise that completes when the animation is finished.
+      **/
     def turnstileForwardOut(outgoing: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Performs an animation that updates a badge.
-         * @param incoming Element or elements that comprise the new badge.
-         * @param offset Initial offsets where incoming animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @returns An object that completes when the animation is finished.
-        **/
+      * Performs an animation that updates a badge.
+      * @param incoming Element or elements that comprise the new badge.
+      * @param offset Initial offsets where incoming animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
+      * @returns An object that completes when the animation is finished.
+      **/
     def updateBadge(incoming: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
-    /**
-         * Performs an animation that updates a badge.
-         * @param incoming Element or elements that comprise the new badge.
-         * @param offset Initial offsets where incoming animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
-         * @returns An object that completes when the animation is finished.
-        **/
     def updateBadge(incoming: js.Any, offset: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
   }
   
   //#endregion Interfaces
   //#region Objects
   /**
-       * Displays ICommands in overlayed application pane that opens and closes at the top or bottom of the main view.
-      **/
+    * Displays ICommands in overlayed application pane that opens and closes at the top or bottom of the main view.
+    **/
   @js.native
   object AppBar extends js.Object {
     /**
-             * Display options for the AppBar when closed.
-            **/
+      * Display options for the AppBar when closed.
+      **/
     var ClosedDisplayMode: winjsLib.Anon_NoneMinimal = js.native
     /**
-             * Display options for AppBar placement in relation to the main view.
-            */
+      * Display options for AppBar placement in relation to the main view.
+      */
     var Placement: winjsLib.Anon_BottomTop = js.native
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Represents a command to be displayed in an app bar.
-      **/
+    * Represents a command to be displayed in an app bar.
+    **/
   @js.native
   object AppBarCommand extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   //#region Enumerations
   /**
-       * Specifies an icon that appears in an AppBarCommand object.
-      **/
+    * Specifies an icon that appears in an AppBarCommand object.
+    **/
   @js.native
   object AppBarIcon extends js.Object {
     val accept: winjsLib.WinJSNs.UINs.AppBarIcon.accept with java.lang.String = js.native
@@ -1899,73 +1490,73 @@ object UINs extends js.Object {
   }
   
   /**
-       * A rich input box that provides suggestions as the user types.
-      **/
+    * A rich input box that provides suggestions as the user types.
+    **/
   @js.native
   object AutoSuggestBox extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
     //#endregion Properties
     /**
-             * Creates the image argument for SearchSuggestionCollection.appendResultSuggestion.
-             * @param url The url of the image.
-            **/
+      * Creates the image argument for SearchSuggestionCollection.appendResultSuggestion.
+      * @param url The url of the image.
+      **/
     def createResultSuggestionImage(url: java.lang.String): js.Any = js.native
   }
   
   /**
-       * Provides backwards navigation in the form of a button.
-      **/
+    * Provides backwards navigation in the form of a button.
+    **/
   @js.native
   object BackButton extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Represents a layout for the ListView in which items are arranged in a grid and items can span multiple grid cells.
-      **/
+    * Represents a layout for the ListView in which items are arranged in a grid and items can span multiple grid cells.
+    **/
   @js.native
   object CellSpanningLayout extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Represents a command to be displayed in an AppBar or ToolBar
-      **/
+    * Represents a command to be displayed in an AppBar or ToolBar
+    **/
   @js.native
   object Command extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Displays a modal dialog which can display arbitrary HTML content.
-      **/
+    * Displays a modal dialog which can display arbitrary HTML content.
+    **/
   @js.native
   object ContentDialog extends js.Object {
     /**
-             * Specifies the result of dismissing the ContentDialog.
-            **/
+      * Specifies the result of dismissing the ContentDialog.
+      **/
     var DismissalResult: winjsLib.Anon_None = js.native
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Indicates that the IListDataAdapter was unable to provide a count.
-      **/
+    * Indicates that the IListDataAdapter was unable to provide a count.
+    **/
   @js.native
   object CountError extends js.Object {
     val noResponse: winjsLib.WinJSNs.UINs.CountError.noResponse with java.lang.String = js.native
@@ -1974,8 +1565,8 @@ object UINs extends js.Object {
   }
   
   /**
-       * Indicates whether the IListDataAdapter was able to provide a count.
-      **/
+    * Indicates whether the IListDataAdapter was able to provide a count.
+    **/
   @js.native
   object CountResult extends js.Object {
     val unknown: winjsLib.WinJSNs.UINs.CountResult.unknown with java.lang.String = js.native
@@ -1984,8 +1575,8 @@ object UINs extends js.Object {
   }
   
   /**
-       * Adds event-related methods to the control.
-      **/
+    * Adds event-related methods to the control.
+    **/
   @JSName("DOMEventMixin")
   @js.native
   object DOMEventMixinNs extends js.Object {
@@ -1997,8 +1588,8 @@ object UINs extends js.Object {
   }
   
   /**
-       * Describes the status of an IListDataSource.
-      **/
+    * Describes the status of an IListDataSource.
+    **/
   @js.native
   object DataSourceStatus extends js.Object {
     val failure: winjsLib.WinJSNs.UINs.DataSourceStatus.failure with java.lang.String = js.native
@@ -2009,31 +1600,25 @@ object UINs extends js.Object {
   }
   
   /**
-       * Allows users to pick a date value.
-      **/
+    * Allows users to pick a date value.
+    **/
   @js.native
   object DatePicker extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
     /**
-             * This API supports the WinJS infrastructure and is not intended to be used directly from your code. Use render instead.
-            **/
+      * This API supports the WinJS infrastructure and is not intended to be used directly from your code. Use render instead.
+      **/
     def getInformation(startDate: js.Any, endDate: js.Any): js.Any = js.native
-    /**
-             * This API supports the WinJS infrastructure and is not intended to be used directly from your code. Use render instead.
-            **/
     def getInformation(startDate: js.Any, endDate: js.Any, calendar: js.Any): js.Any = js.native
-    /**
-             * This API supports the WinJS infrastructure and is not intended to be used directly from your code. Use render instead.
-            **/
     def getInformation(startDate: js.Any, endDate: js.Any, calendar: js.Any, datePatterns: js.Any): js.Any = js.native
   }
   
   /**
-       * Specifies the type of error that occurred during an edit operation on a IListDataSource or an IListDataAdapter.
-      **/
+    * Specifies the type of error that occurred during an edit operation on a IListDataSource or an IListDataAdapter.
+    **/
   @js.native
   object EditError extends js.Object {
     val canceled: winjsLib.WinJSNs.UINs.EditError.canceled with java.lang.String = js.native
@@ -2045,8 +1630,8 @@ object UINs extends js.Object {
   }
   
   /**
-       * Specifies the type of error encountered when retrieving items from an IListDataAdapter.
-      **/
+    * Specifies the type of error encountered when retrieving items from an IListDataAdapter.
+    **/
   @js.native
   object FetchError extends js.Object {
     val doesNotExist: winjsLib.WinJSNs.UINs.FetchError.doesNotExist with java.lang.String = js.native
@@ -2056,108 +1641,96 @@ object UINs extends js.Object {
   }
   
   /**
-       * Displays a collection, such as a set of photos, one item at a time.
-      **/
+    * Displays a collection, such as a set of photos, one item at a time.
+    **/
   @js.native
   object FlipView extends js.Object {
     /**
-             * Event Name
-            **/
+      * Event Name
+      **/
     var datasourceCountChangedEvent: java.lang.String = js.native
     /**
-             * Event Name
-            **/
+      * Event Name
+      **/
     var pageCompletedEvent: java.lang.String = js.native
     /**
-             * Event Name
-            **/
+      * Event Name
+      **/
     var pageSelectedEvent: java.lang.String = js.native
     /**
-             * Event Name
-            **/
+      * Event Name
+      **/
     var pageVisibilityChangedEvent: java.lang.String = js.native
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Displays lightweight UI that is either information, or requires user interaction. Unlike a dialog, a Flyout can be light dismissed by clicking or tapping off of it.
-      **/
+    * Displays lightweight UI that is either information, or requires user interaction. Unlike a dialog, a Flyout can be light dismissed by clicking or tapping off of it.
+    **/
   @js.native
   object Flyout extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-   * Provides functions to load HTML content programmatically.
+    * Provides functions to load HTML content programmatically.
   **/
   @JSName("Fragments")
   @js.native
   object FragmentsNs extends js.Object {
     //#region Functions
     /**
-         * Starts loading the fragment at the specified location. The returned promise completes when the fragment is ready to be copied.
-         * @param href The URI that contains the fragment to be copied.
-         * @returns A promise that is fulfilled when the fragment has been prepared for copying.
-        **/
+      * Starts loading the fragment at the specified location. The returned promise completes when the fragment is ready to be copied.
+      * @param href The URI that contains the fragment to be copied.
+      * @returns A promise that is fulfilled when the fragment has been prepared for copying.
+      **/
     def cache(href: java.lang.String): winjsLib.WinJSNs.Promise[_] = js.native
     /**
-         * Removes any cached information about the specified fragment. This method does not unload any scripts or styles that are referenced by the fragment.
-         * @param href The URI that contains the fragment to be cleared. If no URI is provided, the entire contents of the cache are cleared.
-        **/
+      * Removes any cached information about the specified fragment. This method does not unload any scripts or styles that are referenced by the fragment.
+      * @param href The URI that contains the fragment to be cleared. If no URI is provided, the entire contents of the cache are cleared.
+      **/
     def clearCache(href: java.lang.String): scala.Unit = js.native
     def clearCache(href: stdLib.HTMLElement): scala.Unit = js.native
     /**
-         * Loads the contents of the specified URI into the specified element without copying it.
-         * @param href The URI that contains the fragment to copy.
-         * @param element Optional. The element to which the fragment is appended.
-         * @returns A promise that is fulfilled when the fragment has been loaded. If a target element is not specified, the copied fragment is the completed value. The element is not added to the cache. See also rendercopy, where the element is added to the cache.
-        **/
+      * Loads the contents of the specified URI into the specified element without copying it.
+      * @param href The URI that contains the fragment to copy.
+      * @param element Optional. The element to which the fragment is appended.
+      * @returns A promise that is fulfilled when the fragment has been loaded. If a target element is not specified, the copied fragment is the completed value. The element is not added to the cache. See also rendercopy, where the element is added to the cache.
+      **/
     def render(href: java.lang.String): winjsLib.WinJSNs.Promise[stdLib.HTMLElement] = js.native
-    /**
-         * Loads the contents of the specified URI into the specified element without copying it.
-         * @param href The URI that contains the fragment to copy.
-         * @param element Optional. The element to which the fragment is appended.
-         * @returns A promise that is fulfilled when the fragment has been loaded. If a target element is not specified, the copied fragment is the completed value. The element is not added to the cache. See also rendercopy, where the element is added to the cache.
-        **/
     def render(href: java.lang.String, element: stdLib.HTMLElement): winjsLib.WinJSNs.Promise[stdLib.HTMLElement] = js.native
     /**
-         * Loads and copies the contents of the specified URI into the specified element.
-         * @param href The URI that contains the fragment to copy.
-         * @param target The element to which the fragment is appended.
-         * @returns A promise that is fulfilled when the fragment has been loaded. If a target element is not specified, the copied fragment is the completed value. The fragment is added to the cache. See also render, where the element is not added to the cache.
-        **/
+      * Loads and copies the contents of the specified URI into the specified element.
+      * @param href The URI that contains the fragment to copy.
+      * @param target The element to which the fragment is appended.
+      * @returns A promise that is fulfilled when the fragment has been loaded. If a target element is not specified, the copied fragment is the completed value. The fragment is added to the cache. See also render, where the element is not added to the cache.
+      **/
     def renderCopy(href: java.lang.String): winjsLib.WinJSNs.Promise[stdLib.HTMLElement] = js.native
-    /**
-         * Loads and copies the contents of the specified URI into the specified element.
-         * @param href The URI that contains the fragment to copy.
-         * @param target The element to which the fragment is appended.
-         * @returns A promise that is fulfilled when the fragment has been loaded. If a target element is not specified, the copied fragment is the completed value. The fragment is added to the cache. See also render, where the element is not added to the cache.
-        **/
     def renderCopy(href: java.lang.String, target: stdLib.HTMLElement): winjsLib.WinJSNs.Promise[stdLib.HTMLElement] = js.native
     def renderCopy(href: stdLib.HTMLElement): winjsLib.WinJSNs.Promise[stdLib.HTMLElement] = js.native
     def renderCopy(href: stdLib.HTMLElement, target: stdLib.HTMLElement): winjsLib.WinJSNs.Promise[stdLib.HTMLElement] = js.native
   }
   
   /**
-       * Represents a grid layout for the ListView in which items are arranged in a horizontal grid.
-      **/
+    * Represents a grid layout for the ListView in which items are arranged in a horizontal grid.
+    **/
   @js.native
   object GridLayout extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Specifies how group headers in a ListView respond to the tap interaction.
-      **/
+    * Specifies how group headers in a ListView respond to the tap interaction.
+    **/
   @js.native
   object GroupHeaderTapBehavior extends js.Object {
     val invoke: winjsLib.WinJSNs.UINs.GroupHeaderTapBehavior.invoke with java.lang.String = js.native
@@ -2167,8 +1740,8 @@ object UINs extends js.Object {
   }
   
   /**
-       * Specifies the position of group headers relative to their items in a ListView.
-      **/
+    * Specifies the position of group headers relative to their items in a ListView.
+    **/
   @js.native
   object HeaderPosition extends js.Object {
     val left: winjsLib.WinJSNs.UINs.HeaderPosition.left with java.lang.String = js.native
@@ -2178,103 +1751,103 @@ object UINs extends js.Object {
   }
   
   /**
-       * Enables you to include an HTML page dynamically. As part of the constructor, you must include an option indicating the URI of the page.
-      **/
+    * Enables you to include an HTML page dynamically. As part of the constructor, you must include an option indicating the URI of the page.
+    **/
   @js.native
   object HtmlControl extends js.Object {
     //#endregion Constructors
     //#region Properties
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Creates a hub navigation pattern consisting of sections that can be navigated to. Each section is defined by a HubSection object.
-      **/
+    * Creates a hub navigation pattern consisting of sections that can be navigated to. Each section is defined by a HubSection object.
+    **/
   @js.native
   object Hub extends js.Object {
     /**
-             * Specifies whether the Hub animation is an entrance animation or a transition animation.
-            **/
+      * Specifies whether the Hub animation is an entrance animation or a transition animation.
+      **/
     var AnimationType: winjsLib.Anon_Entrance = js.native
     /**
-             * Gets the current loading state of the Hub.
-            **/
+      * Gets the current loading state of the Hub.
+      **/
     var LoadingState: winjsLib.Anon_Loading = js.native
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Defines a section of a Hub.
-      **/
+    * Defines a section of a Hub.
+    **/
   @js.native
   object HubSection extends js.Object {
     /**
-             * This object supports the WinJS infrastructure and is not intended to be used directly from your code.
-            **/
+      * This object supports the WinJS infrastructure and is not intended to be used directly from your code.
+      **/
     var isDeclarativeControlContainer: js.Any = js.native
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Defines an item that can be pressed, swiped, and dragged.
-      **/
+    * Defines an item that can be pressed, swiped, and dragged.
+    **/
   @js.native
   object ItemContainer extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * This object supports the WinJS infrastructure and is not intended to be used directly from your code.
-      **/
+    * This object supports the WinJS infrastructure and is not intended to be used directly from your code.
+    **/
   @js.native
   object Layout extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Represents a layout for the ListView in which items are arranged in a vertical list.
-      **/
+    * Represents a layout for the ListView in which items are arranged in a vertical list.
+    **/
   @js.native
   object ListLayout extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Displays data items in a customizable list or grid.
-      **/
+    * Displays data items in a customizable list or grid.
+    **/
   @js.native
   object ListView extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
     /**
-             * Triggers the ListView disposal service manually.
-            **/
+      * Triggers the ListView disposal service manually.
+      **/
     def triggerDispose(): scala.Unit = js.native
   }
   
   /**
-       * Specifies that type of animation for which a contentanimating event was raised.
-      **/
+    * Specifies that type of animation for which a contentanimating event was raised.
+    **/
   @js.native
   object ListViewAnimationType extends js.Object {
     val contentTransition: winjsLib.WinJSNs.UINs.ListViewAnimationType.contentTransition with java.lang.String = js.native
@@ -2284,67 +1857,67 @@ object UINs extends js.Object {
   }
   
   /**
-       * Represents a menu flyout for displaying commands.
-      **/
+    * Represents a menu flyout for displaying commands.
+    **/
   @js.native
   object Menu extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Represents a command to be displayed in a Menu object.
-      **/
+    * Represents a command to be displayed in a Menu object.
+    **/
   @js.native
   object MenuCommand extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Displays NavBarCommands in an overlayed navigation pane that opens and closes at the top or bottom of the main view.
-      **/
+    * Displays NavBarCommands in an overlayed navigation pane that opens and closes at the top or bottom of the main view.
+    **/
   @js.native
   object NavBar extends js.Object {
     /**
-             * This object supports the WinJS infrastructure and is not intended to be used directly from your code.
-            **/
+      * This object supports the WinJS infrastructure and is not intended to be used directly from your code.
+      **/
     var isDeclarativeControlContainer: js.Any = js.native
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Represents a navigation command in a NavBarContainer.
-      **/
+    * Represents a navigation command in a NavBarContainer.
+    **/
   @js.native
   object NavBarCommand extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Contains a group of NavBarCommand objects in a NavBar.
-      **/
+    * Contains a group of NavBarCommand objects in a NavBar.
+    **/
   @js.native
   object NavBarContainer extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Describes the type of object in a ListView.
-      **/
+    * Describes the type of object in a ListView.
+    **/
   @js.native
   object ObjectType extends js.Object {
     val footer: winjsLib.WinJSNs.UINs.ObjectType.footer with java.lang.String = js.native
@@ -2356,8 +1929,8 @@ object UINs extends js.Object {
   }
   
   /**
-       * Specifies the orientation of a control.
-      **/
+    * Specifies the orientation of a control.
+    **/
   @js.native
   object Orientation extends js.Object {
     val horizontal: winjsLib.WinJSNs.UINs.Orientation.horizontal with java.lang.String = js.native
@@ -2367,8 +1940,8 @@ object UINs extends js.Object {
   }
   
   /**
-       * Specifies what animation type should be returned by WinJS.UI.Animation.createPageNavigationAnimations.
-      **/
+    * Specifies what animation type should be returned by WinJS.UI.Animation.createPageNavigationAnimations.
+    **/
   @js.native
   object PageNavigationAnimation extends js.Object {
     val continuum: winjsLib.WinJSNs.UINs.PageNavigationAnimation.continuum with java.lang.String = js.native
@@ -2380,7 +1953,7 @@ object UINs extends js.Object {
   }
   
   /**
-   * Provides methods for defining and displaying PageControl objects.
+    * Provides methods for defining and displaying PageControl objects.
   **/
   @JSName("Pages")
   @js.native
@@ -2390,11 +1963,11 @@ object UINs extends js.Object {
     //#endregion Objects
     //#region Functions
     /**
-         * Creates a new PageControl from the specified URI that contains the specified members. Multiple calls to this method for the same URI are allowed, and all members will be merged.
-         * @param uri The URI for the content that defines the page.
-         * @param members An object that defines the members that the control will have.
-         * @returns A constructor function that creates the PageControl.
-        **/
+      * Creates a new PageControl from the specified URI that contains the specified members. Multiple calls to this method for the same URI are allowed, and all members will be merged.
+      * @param uri The URI for the content that defines the page.
+      * @param members An object that defines the members that the control will have.
+      * @returns A constructor function that creates the PageControl.
+      **/
     def define(uri: java.lang.String, members: winjsLib.WinJSNs.UINs.PagesNs.IPageControlMembers): js.Function4[
         /* element */ js.UndefOr[stdLib.HTMLElement], 
         /* options */ js.UndefOr[js.Any], 
@@ -2403,10 +1976,10 @@ object UINs extends js.Object {
         scala.Unit
       ] = js.native
     /**
-         * Gets an already-defined page control for the specified URI, or creates a new one.
-         * @param uri The URI for the content that defines the page.
-         * @returns A constructor function that creates the page.
-        **/
+      * Gets an already-defined page control for the specified URI, or creates a new one.
+      * @param uri The URI for the content that defines the page.
+      * @returns A constructor function that creates the page.
+      **/
     def get(uri: java.lang.String): js.Function4[
         /* element */ js.UndefOr[stdLib.HTMLElement], 
         /* options */ js.UndefOr[js.Any], 
@@ -2415,40 +1988,16 @@ object UINs extends js.Object {
         scala.Unit
       ] = js.native
     /**
-         * Creates a PageControl from the specified URI and inserts it inside the specified element.
-         * @param uri The URI for the content that defines the page.
-         * @param element The DOM element to which the PageControl is appended.
-         * @param options An object that contains one or more property/value pairs to apply to the new PageControl. How these property/value pairs are used (or not used) depends on the implementation of that particular PageControl.
-         * @param parentedPromise A Promise that is fulfilled when the new PageControl is done rendering and its contents becomes the child of element.
-         * @returns A promise that is fulfilled when rendering is complete, if asynchronous processing is necessary. If not, returns nothing.
-        **/
+      * Creates a PageControl from the specified URI and inserts it inside the specified element.
+      * @param uri The URI for the content that defines the page.
+      * @param element The DOM element to which the PageControl is appended.
+      * @param options An object that contains one or more property/value pairs to apply to the new PageControl. How these property/value pairs are used (or not used) depends on the implementation of that particular PageControl.
+      * @param parentedPromise A Promise that is fulfilled when the new PageControl is done rendering and its contents becomes the child of element.
+      * @returns A promise that is fulfilled when rendering is complete, if asynchronous processing is necessary. If not, returns nothing.
+      **/
     def render(uri: java.lang.String): winjsLib.WinJSNs.Promise[_] = js.native
-    /**
-         * Creates a PageControl from the specified URI and inserts it inside the specified element.
-         * @param uri The URI for the content that defines the page.
-         * @param element The DOM element to which the PageControl is appended.
-         * @param options An object that contains one or more property/value pairs to apply to the new PageControl. How these property/value pairs are used (or not used) depends on the implementation of that particular PageControl.
-         * @param parentedPromise A Promise that is fulfilled when the new PageControl is done rendering and its contents becomes the child of element.
-         * @returns A promise that is fulfilled when rendering is complete, if asynchronous processing is necessary. If not, returns nothing.
-        **/
     def render(uri: java.lang.String, element: stdLib.HTMLElement): winjsLib.WinJSNs.Promise[_] = js.native
-    /**
-         * Creates a PageControl from the specified URI and inserts it inside the specified element.
-         * @param uri The URI for the content that defines the page.
-         * @param element The DOM element to which the PageControl is appended.
-         * @param options An object that contains one or more property/value pairs to apply to the new PageControl. How these property/value pairs are used (or not used) depends on the implementation of that particular PageControl.
-         * @param parentedPromise A Promise that is fulfilled when the new PageControl is done rendering and its contents becomes the child of element.
-         * @returns A promise that is fulfilled when rendering is complete, if asynchronous processing is necessary. If not, returns nothing.
-        **/
     def render(uri: java.lang.String, element: stdLib.HTMLElement, options: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
-    /**
-         * Creates a PageControl from the specified URI and inserts it inside the specified element.
-         * @param uri The URI for the content that defines the page.
-         * @param element The DOM element to which the PageControl is appended.
-         * @param options An object that contains one or more property/value pairs to apply to the new PageControl. How these property/value pairs are used (or not used) depends on the implementation of that particular PageControl.
-         * @param parentedPromise A Promise that is fulfilled when the new PageControl is done rendering and its contents becomes the child of element.
-         * @returns A promise that is fulfilled when rendering is complete, if asynchronous processing is necessary. If not, returns nothing.
-        **/
     def render(
       uri: java.lang.String,
       element: stdLib.HTMLElement,
@@ -2458,73 +2007,73 @@ object UINs extends js.Object {
   }
   
   /**
-       * A tab control that displays multiple items.
-      **/
+    * A tab control that displays multiple items.
+    **/
   @js.native
   object Pivot extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * An item within a Pivot control.
-      **/
+    * An item within a Pivot control.
+    **/
   @js.native
   object PivotItem extends js.Object {
     /**
-             * This object supports the WinJS infrastructure and is not intended to be used directly from your code.
-            **/
+      * This object supports the WinJS infrastructure and is not intended to be used directly from your code.
+      **/
     var isDeclarativeControlContainer: js.Any = js.native
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Lets the user rate something by clicking an icon that represents a rating. The Rating control can display three types of ratings: an average rating, a tentative rating, and the user's rating.
-      **/
+    * Lets the user rate something by clicking an icon that represents a rating. The Rating control can display three types of ratings: an average rating, a tentative rating, and the user's rating.
+    **/
   @js.native
   object Rating extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Generates HTML from a set of data. Use this control to generate lists of items.
-      **/
+    * Generates HTML from a set of data. Use this control to generate lists of items.
+    **/
   @js.native
   object Repeater extends js.Object {
     /**
-             * This object supports the WinJS infrastructure and is not intended to be used directly from your code.
-            **/
+      * This object supports the WinJS infrastructure and is not intended to be used directly from your code.
+      **/
     var isDeclarativeControlContainer: js.Any = js.native
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Enables the user to perform search queries and select suggestions.
-      **/
+    * Enables the user to perform search queries and select suggestions.
+    **/
   @js.native
   object SearchBox extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
     //#endregion Properties
     def createResultSuggestionImage(url: java.lang.String): js.Any = js.native
   }
   
   /**
-       * Specifies the selection mode of a ListView.
-      **/
+    * Specifies the selection mode of a ListView.
+    **/
   @js.native
   object SelectionMode extends js.Object {
     val multi: winjsLib.WinJSNs.UINs.SelectionMode.multi with java.lang.String = js.native
@@ -2535,102 +2084,102 @@ object UINs extends js.Object {
   }
   
   /**
-       * Enables the user to zoom between two different views supplied by two child controls. One child control supplies the zoomed-out view and the other provides the zoomed-in view.
-      **/
+    * Enables the user to zoom between two different views supplied by two child controls. One child control supplies the zoomed-out view and the other provides the zoomed-in view.
+    **/
   @js.native
   object SemanticZoom extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Provides users with fast, in-context access to settings that affect the current Windows Store app.
-      **/
+    * Provides users with fast, in-context access to settings that affect the current Windows Store app.
+    **/
   @js.native
   object SettingsFlyout extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
     /**
-             * Loads a fragment of the SettingsFlyout. Your app calls this when the user invokes a settings command and the WinJS.Application.onsettings event occurs.
-             * @param e An object that contains information about the event, received from the WinJS.Application.onsettings event. The detail property of this object contains the applicationcommands sub-property that you set to an array of settings commands. You then populate the SettingsFlyout with these commands by a call to populateSettings.
-            **/
+      * Loads a fragment of the SettingsFlyout. Your app calls this when the user invokes a settings command and the WinJS.Application.onsettings event occurs.
+      * @param e An object that contains information about the event, received from the WinJS.Application.onsettings event. The detail property of this object contains the applicationcommands sub-property that you set to an array of settings commands. You then populate the SettingsFlyout with these commands by a call to populateSettings.
+      **/
     def populateSettings(e: stdLib.CustomEvent[_]): scala.Unit = js.native
     /**
-             * Shows the SettingsPane UI, if hidden, regardless of other state.
-            **/
+      * Shows the SettingsPane UI, if hidden, regardless of other state.
+      **/
     def show(): scala.Unit = js.native
     /**
-             * Show the Settings flyout using the Settings element identifier (ID) and the path of the page that contains the Settings element.
-             * @param id The ID of the Settings element.
-             * @param path The path of the page that contains the Settings element.
-            **/
+      * Show the Settings flyout using the Settings element identifier (ID) and the path of the page that contains the Settings element.
+      * @param id The ID of the Settings element.
+      * @param path The path of the page that contains the Settings element.
+      **/
     def showSettings(id: java.lang.String, path: js.Any): scala.Unit = js.native
   }
   
   /**
-       * Displays a SplitView which renders a collapsable pane next to arbitrary HTML content.
-      **/
+    * Displays a SplitView which renders a collapsable pane next to arbitrary HTML content.
+    **/
   @js.native
   object SplitView extends js.Object {
     /**
-             * Display options for a SplitView's pane when it is closed.
-            **/
+      * Display options for a SplitView's pane when it is closed.
+      **/
     var ClosedDisplayMode: winjsLib.Anon_NoneInline = js.native
     /**
-             * Display options for a SplitView's pane when it is open.
-            **/
+      * Display options for a SplitView's pane when it is open.
+      **/
     var OpenedDisplayMode: winjsLib.Anon_Inline = js.native
     /**
-             * Placement options for a SplitView's pane.
-            **/
+      * Placement options for a SplitView's pane.
+      **/
     var PanePlacement: winjsLib.Anon_Bottom = js.native
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-      * Represents a command in the SplitView Pane.
-      **/
+    * Represents a command in the SplitView Pane.
+    **/
   @js.native
   object SplitViewCommand extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Displays a button which is used for opening and closing a SplitView's pane.
-      **/
+    * Displays a button which is used for opening and closing a SplitView's pane.
+    **/
   @js.native
   object SplitViewPaneToggle extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * A type of IListDataSource that provides read-access to an object that implements the IStorageQueryResultBase interface. A StorageDataSource enables you to query and bind to items in the data source.
-      **/
+    * A type of IListDataSource that provides read-access to an object that implements the IStorageQueryResultBase interface. A StorageDataSource enables you to query and bind to items in the data source.
+    **/
   @js.native
   object StorageDataSource extends js.Object {
     //#endregion Methods
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Specifies whether elements are selected when the user performs a swipe interaction.
-      **/
+    * Specifies whether elements are selected when the user performs a swipe interaction.
+    **/
   @js.native
   object SwipeBehavior extends js.Object {
     val none: winjsLib.WinJSNs.UINs.SwipeBehavior.none with java.lang.String = js.native
@@ -2640,19 +2189,19 @@ object UINs extends js.Object {
   }
   
   /**
-       * Prevents a DOM sub-tree from receiving tab navigations and focus.
-      **/
+    * Prevents a DOM sub-tree from receiving tab navigations and focus.
+    **/
   @js.native
   object TabContainer extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Specifies how items in a ListView respond to the tap interaction.
-      **/
+    * Specifies how items in a ListView respond to the tap interaction.
+    **/
   @js.native
   object TapBehavior extends js.Object {
     val directSelect: winjsLib.WinJSNs.UINs.TapBehavior.directSelect with java.lang.String = js.native
@@ -2664,112 +2213,108 @@ object UINs extends js.Object {
   }
   
   /**
-       * Allows users to select time values.
-      **/
+    * Allows users to select time values.
+    **/
   @js.native
   object TimePicker extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
     /**
-             * This API supports the WinJS infrastructure and is not intended to be used directly from your code. Use render instead.
-            **/
+      * This API supports the WinJS infrastructure and is not intended to be used directly from your code. Use render instead.
+      **/
     def getInformation(clock: js.Any, minuteIncrement: js.Any): js.Any = js.native
-    /**
-             * This API supports the WinJS infrastructure and is not intended to be used directly from your code. Use render instead.
-            **/
     def getInformation(clock: js.Any, minuteIncrement: js.Any, timerPatterns: js.Any): js.Any = js.native
   }
   
   /**
-       * A control that lets the user switch an option between two states: on (checked is set to true) and off (checked is set to false).
-      **/
+    * A control that lets the user switch an option between two states: on (checked is set to true) and off (checked is set to false).
+    **/
   @js.native
   object ToggleSwitch extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Displays ICommands within the flow of the app. Use the ToolBar around other statically positioned app content.
-      **/
+    * Displays ICommands within the flow of the app. Use the ToolBar around other statically positioned app content.
+    **/
   @js.native
   object ToolBar extends js.Object {
     /**
-             * Display options for the closed ToolBar.
-            **/
+      * Display options for the closed ToolBar.
+      **/
     var ClosedDisplayMode: winjsLib.Anon_Compact = js.native
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Displays a tooltip that can contain images and formatting.
-      **/
+    * Displays a tooltip that can contain images and formatting.
+    **/
   @js.native
   object Tooltip extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-   * Provides methods for detecting when the user tabs to or from DOM elements.
+    * Provides methods for detecting when the user tabs to or from DOM elements.
   **/
   @JSName("TrackTabBehavior")
   @js.native
   object TrackTabBehaviorNs extends js.Object {
     //#region Functions
     /**
-         * Sets the tab order for the specified element within its container.
-         * @param element The element to update.
-         * @param tabIndex The index value of the element within its container.
-        **/
+      * Sets the tab order for the specified element within its container.
+      * @param element The element to update.
+      * @param tabIndex The index value of the element within its container.
+      **/
     def attach(element: stdLib.HTMLElement, tabIndex: scala.Double): scala.Unit = js.native
     /**
-         * Removes the tab order information from the specified element.
-         * @param element The element to remove tab information from.
-        **/
+      * Removes the tab order information from the specified element.
+      * @param element The element to remove tab information from.
+      **/
     def detach(element: stdLib.HTMLElement): scala.Unit = js.native
   }
   
   /**
-       * Scales a single child element to fill the available space without resizing it. This control reacts to changes in the size of the container as well as changes in size of the child element. For example, a media query may result in a change in aspect ratio.
-      **/
+    * Scales a single child element to fill the available space without resizing it. This control reacts to changes in the size of the container as well as changes in size of the child element. For example, a media query may result in a change in aspect ratio.
+    **/
   @js.native
   object ViewBox extends js.Object {
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-       * Serves as the base class for a custom IListDataSource.
-      **/
+    * Serves as the base class for a custom IListDataSource.
+    **/
   @js.native
   object VirtualizedDataSource extends js.Object {
     //#endregion Methods
     //#region Properties
     /**
-             * Indicates that the object is compatibile with declarative processing.
-            **/
+      * Indicates that the object is compatibile with declarative processing.
+      **/
     var supportedForProcessing: scala.Boolean = js.native
   }
   
   /**
-   * Provides utility functions for generic directional focus movement
+    * Provides utility functions for generic directional focus movement
   **/
   @JSName("XYFocus")
   @js.native
   object XYFocusNs extends js.Object {
-    
     trait IRect extends js.Object {
       var bottom: js.UndefOr[scala.Double] = js.undefined
       var height: scala.Double
@@ -2786,23 +2331,22 @@ object UINs extends js.Object {
       var detail_XYFocusEvent: winjsLib.Anon_PreviousFocusElement = js.native
     }
     
-    
     trait XYFocusOptions extends js.Object {
       /**
-               * The focus scope, only children of this element are considered in the calculation.
-              **/
+        * The focus scope, only children of this element are considered in the calculation.
+        **/
       var focusRoot: js.UndefOr[stdLib.HTMLElement] = js.undefined
       /**
-               * A rectangle indicating where focus came from before the current state.
-              **/
+        * A rectangle indicating where focus came from before the current state.
+        **/
       var historyRect: js.UndefOr[winjsLib.WinJSNs.UINs.XYFocusNs.IRect] = js.undefined
       /**
-               * The element from which to calculate the next focusable element; if specified, referenceRect is ignored.
-              **/
+        * The element from which to calculate the next focusable element; if specified, referenceRect is ignored.
+        **/
       var referenceElement: js.UndefOr[stdLib.HTMLElement] = js.undefined
       /**
-               * The rectangle from which to calculate next focusable element; ignored if referenceElement is also specified.
-              **/
+        * The rectangle from which to calculate next focusable element; ignored if referenceElement is also specified.
+        **/
       var referenceRect: js.UndefOr[winjsLib.WinJSNs.UINs.XYFocusNs.IRect] = js.undefined
     }
     

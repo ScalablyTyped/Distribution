@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHttpInterceptor extends js.Object {
   var request: js.UndefOr[
     js.Function1[/* config */ IRequestConfig, IRequestConfig | IPromise[IRequestConfig]]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBarChartOptions extends IChartOptions {
   var axisX: js.UndefOr[IBarChartAxis] = js.undefined
   var axisY: js.UndefOr[IBarChartAxis] = js.undefined
@@ -18,8 +17,8 @@ trait IBarChartOptions extends IChartOptions {
   var onlyInteger: js.UndefOr[scala.Boolean] = js.undefined
   var seriesBarDistance: js.UndefOr[scala.Double] = js.undefined
   /**
-           * If set to true this property will cause the series bars to be stacked and form a total for each series point. This will also influence the y-axis and the overall bounds of the chart. In stacked mode the seriesBarDistance property will have no effect.
-           */
+    * If set to true this property will cause the series bars to be stacked and form a total for each series point. This will also influence the y-axis and the overall bounds of the chart. In stacked mode the seriesBarDistance property will have no effect.
+    */
   var stackBars: js.UndefOr[scala.Boolean] = js.undefined
   var stackMode: js.UndefOr[
     chartistLib.chartistLibStrings.overlap | chartistLib.chartistLibStrings.accumulate

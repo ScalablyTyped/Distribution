@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BanReason extends js.Object {
   var INAPPROPRIATE_GENRE: scala.Double
   var NEGATIVE_ATTITUDE: scala.Double

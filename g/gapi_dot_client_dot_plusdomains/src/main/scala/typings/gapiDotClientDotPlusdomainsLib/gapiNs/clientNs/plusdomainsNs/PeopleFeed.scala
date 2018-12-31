@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PeopleFeed extends js.Object {
   /** ETag of this response for caching purposes. */
   var etag: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The people in this page of results. Each item includes the id, displayName, image, and url for the person. To retrieve additional profile data, see the
-               * people.get method.
-               */
+    * The people in this page of results. Each item includes the id, displayName, image, and url for the person. To retrieve additional profile data, see the
+    * people.get method.
+    */
   var items: js.UndefOr[js.Array[Person]] = js.undefined
   /** Identifies this resource as a collection of people. Value: "plus#peopleFeed". */
   var kind: js.UndefOr[java.lang.String] = js.undefined
@@ -23,9 +22,9 @@ trait PeopleFeed extends js.Object {
   /** The title of this collection of people. */
   var title: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The total number of people available in this list. The number of people in a response might be smaller due to paging. This might not be set for all
-               * collections.
-               */
+    * The total number of people available in this list. The number of people in a response might be smaller due to paging. This might not be set for all
+    * collections.
+    */
   var totalItems: js.UndefOr[scala.Double] = js.undefined
 }
 

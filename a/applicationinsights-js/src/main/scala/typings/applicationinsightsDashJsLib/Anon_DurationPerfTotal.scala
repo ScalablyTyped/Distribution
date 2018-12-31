@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DurationPerfTotal extends js.Object {
   var domProcessing: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType
   var duration: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GraphicsStats extends js.Object {
   /** Histogram of frame render times. There should be 154 buckets ranging from [5ms, 6ms) to [4950ms, infinity) */
   var buckets: js.UndefOr[js.Array[GraphicsStatsBucket]] = js.undefined

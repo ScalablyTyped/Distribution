@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InstanceIosDetails extends js.Object {
   /** Bundle identifier. */
   var bundleIdentifier: js.UndefOr[java.lang.String] = js.undefined

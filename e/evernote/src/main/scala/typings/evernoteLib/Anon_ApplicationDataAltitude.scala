@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ApplicationDataAltitude extends js.Object {
   var altitude: js.UndefOr[scala.Double] = js.undefined
   var applicationData: js.UndefOr[evernoteLib.evernoteMod.EvernoteNs.LazyMap] = js.undefined

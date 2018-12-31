@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AddPageTabDialogParams extends DialogParams {
   var method: facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.pagetab
   @JSName("redirect_uri")

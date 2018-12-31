@@ -8,52 +8,40 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CubehelixColor extends Color {
   /**
-       * Hue channel value.
-       */
+    * Hue channel value.
+    */
   var h: scala.Double = js.native
   /**
-       * Lightness channel value.
-       */
+    * Lightness channel value.
+    */
   var l: scala.Double = js.native
   /**
-       * Opacity value.
-       */
+    * Opacity value.
+    */
   var opacity: scala.Double = js.native
   /**
-       * Saturation channel value.
-       */
+    * Saturation channel value.
+    */
   var s: scala.Double = js.native
   /**
-       * Returns a brighter copy of this color. If k is specified, it controls how much brighter the returned color should be.
-       * If k is not specified, it defaults to 1.
-       *
-       * @param k A color space dependent number to determine, how much brighter the returned color should be.
-       */
+    * Returns a brighter copy of this color. If k is specified, it controls how much brighter the returned color should be.
+    * If k is not specified, it defaults to 1.
+    *
+    * @param k A color space dependent number to determine, how much brighter the returned color should be.
+    */
   def brighter(): this.type = js.native
-  /**
-       * Returns a brighter copy of this color. If k is specified, it controls how much brighter the returned color should be.
-       * If k is not specified, it defaults to 1.
-       *
-       * @param k A color space dependent number to determine, how much brighter the returned color should be.
-       */
   def brighter(k: scala.Double): this.type = js.native
   /**
-       * Returns a darker copy of this color. If k is specified, it controls how much darker the returned color should be.
-       * If k is not specified, it defaults to 1.
-       *
-       * @param k A color space dependent number to determine, how much darker the returned color should be.
-       */
+    * Returns a darker copy of this color. If k is specified, it controls how much darker the returned color should be.
+    * If k is not specified, it defaults to 1.
+    *
+    * @param k A color space dependent number to determine, how much darker the returned color should be.
+    */
   def darker(): this.type = js.native
-  /**
-       * Returns a darker copy of this color. If k is specified, it controls how much darker the returned color should be.
-       * If k is not specified, it defaults to 1.
-       *
-       * @param k A color space dependent number to determine, how much darker the returned color should be.
-       */
   def darker(k: scala.Double): this.type = js.native
   /**
-       * Returns the RGB color equivalent of this color.
-       */
+    * Returns the RGB color equivalent of this color.
+    */
   def rgb(): RGBColor = js.native
 }
 

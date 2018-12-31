@@ -20,8 +20,8 @@ class TokenPaginator[T /* <: ionicLib.definitionsMod.Response[js.Array[js.Object
   var reqgen_Original: ionicLib.definitionsMod.PaginatorRequestGenerator = js.native
   /* CompleteClass */
   override val state: ionicLib.definitionsMod.TokenPaginatorState = js.native
-  /* protected */ def guard(res: ionicLib.definitionsMod.APIResponseSuccess): /* is T */scala.Boolean = js.native
-  def isPageTokenResponseMeta(meta: js.Any): /* is APIResponsePageTokenMeta */scala.Boolean = js.native
+  /* protected */ def guard(res: ionicLib.definitionsMod.APIResponseSuccess): /* is T */ scala.Boolean = js.native
+  def isPageTokenResponseMeta(meta: js.Any): /* is ionic.ionic/definitions.APIResponsePageTokenMeta */ scala.Boolean = js.native
   def next(): nodeLib.IteratorResult[js.Promise[T]] = js.native
   /* protected */ def reqgen(): js.Promise[ionicLib.Anon_Req] = js.native
 }

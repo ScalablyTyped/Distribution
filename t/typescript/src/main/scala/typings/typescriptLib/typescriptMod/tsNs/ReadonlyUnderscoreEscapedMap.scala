@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** ReadonlyMap where keys are `__String`s. */
-
 trait ReadonlyUnderscoreEscapedMap[T] extends js.Object {
   val size: scala.Double
   def entries(): Iterator[js.Tuple2[__String, T]]

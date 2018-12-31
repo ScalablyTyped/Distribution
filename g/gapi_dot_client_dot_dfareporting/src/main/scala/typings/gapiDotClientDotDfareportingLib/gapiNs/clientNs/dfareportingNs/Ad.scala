@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Ad extends js.Object {
   /** Account ID of this ad. This is a read-only field that can be left blank. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined
@@ -30,65 +29,65 @@ trait Ad extends js.Object {
   /** Comments for this ad. */
   var comments: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Compatibility of this ad. Applicable when type is AD_SERVING_DEFAULT_AD. DISPLAY and DISPLAY_INTERSTITIAL refer to either rendering on desktop or on
-               * mobile devices or in mobile apps for regular or interstitial ads, respectively. APP and APP_INTERSTITIAL are only used for existing default ads. New
-               * mobile placements must be assigned DISPLAY or DISPLAY_INTERSTITIAL and default ads created for those placements will be limited to those compatibility
-               * types. IN_STREAM_VIDEO refers to rendering in-stream video ads developed with the VAST standard.
-               */
+    * Compatibility of this ad. Applicable when type is AD_SERVING_DEFAULT_AD. DISPLAY and DISPLAY_INTERSTITIAL refer to either rendering on desktop or on
+    * mobile devices or in mobile apps for regular or interstitial ads, respectively. APP and APP_INTERSTITIAL are only used for existing default ads. New
+    * mobile placements must be assigned DISPLAY or DISPLAY_INTERSTITIAL and default ads created for those placements will be limited to those compatibility
+    * types. IN_STREAM_VIDEO refers to rendering in-stream video ads developed with the VAST standard.
+    */
   var compatibility: js.UndefOr[java.lang.String] = js.undefined
   /** Information about the creation of this ad. This is a read-only field. */
   var createInfo: js.UndefOr[LastModifiedInfo] = js.undefined
   /**
-               * Creative group assignments for this ad. Applicable when type is AD_SERVING_CLICK_TRACKER. Only one assignment per creative group number is allowed for
-               * a maximum of two assignments.
-               */
+    * Creative group assignments for this ad. Applicable when type is AD_SERVING_CLICK_TRACKER. Only one assignment per creative group number is allowed for
+    * a maximum of two assignments.
+    */
   var creativeGroupAssignments: js.UndefOr[js.Array[CreativeGroupAssignment]] = js.undefined
   /**
-               * Creative rotation for this ad. Applicable when type is AD_SERVING_DEFAULT_AD, AD_SERVING_STANDARD_AD, or AD_SERVING_TRACKING. When type is
-               * AD_SERVING_DEFAULT_AD, this field should have exactly one creativeAssignment.
-               */
+    * Creative rotation for this ad. Applicable when type is AD_SERVING_DEFAULT_AD, AD_SERVING_STANDARD_AD, or AD_SERVING_TRACKING. When type is
+    * AD_SERVING_DEFAULT_AD, this field should have exactly one creativeAssignment.
+    */
   var creativeRotation: js.UndefOr[CreativeRotation] = js.undefined
   /**
-               * Time and day targeting information for this ad. This field must be left blank if the ad is using a targeting template. Applicable when type is
-               * AD_SERVING_STANDARD_AD.
-               */
+    * Time and day targeting information for this ad. This field must be left blank if the ad is using a targeting template. Applicable when type is
+    * AD_SERVING_STANDARD_AD.
+    */
   var dayPartTargeting: js.UndefOr[DayPartTargeting] = js.undefined
   /** Default click-through event tag properties for this ad. */
   var defaultClickThroughEventTagProperties: js.UndefOr[DefaultClickThroughEventTagProperties] = js.undefined
   /**
-               * Delivery schedule information for this ad. Applicable when type is AD_SERVING_STANDARD_AD or AD_SERVING_TRACKING. This field along with subfields
-               * priority and impressionRatio are required on insertion when type is AD_SERVING_STANDARD_AD.
-               */
+    * Delivery schedule information for this ad. Applicable when type is AD_SERVING_STANDARD_AD or AD_SERVING_TRACKING. This field along with subfields
+    * priority and impressionRatio are required on insertion when type is AD_SERVING_STANDARD_AD.
+    */
   var deliverySchedule: js.UndefOr[DeliverySchedule] = js.undefined
   /**
-               * Whether this ad is a dynamic click tracker. Applicable when type is AD_SERVING_CLICK_TRACKER. This is a required field on insert, and is read-only
-               * after insert.
-               */
+    * Whether this ad is a dynamic click tracker. Applicable when type is AD_SERVING_CLICK_TRACKER. This is a required field on insert, and is read-only
+    * after insert.
+    */
   var dynamicClickTracker: js.UndefOr[scala.Boolean] = js.undefined
   /** Date and time that this ad should stop serving. Must be later than the start time. This is a required field on insertion. */
   var endTime: js.UndefOr[java.lang.String] = js.undefined
   /** Event tag overrides for this ad. */
   var eventTagOverrides: js.UndefOr[js.Array[EventTagOverride]] = js.undefined
   /**
-               * Geographical targeting information for this ad. This field must be left blank if the ad is using a targeting template. Applicable when type is
-               * AD_SERVING_STANDARD_AD.
-               */
+    * Geographical targeting information for this ad. This field must be left blank if the ad is using a targeting template. Applicable when type is
+    * AD_SERVING_STANDARD_AD.
+    */
   var geoTargeting: js.UndefOr[GeoTargeting] = js.undefined
   /** ID of this ad. This is a read-only, auto-generated field. */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /** Dimension value for the ID of this ad. This is a read-only, auto-generated field. */
   var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
   /**
-               * Key-value targeting information for this ad. This field must be left blank if the ad is using a targeting template. Applicable when type is
-               * AD_SERVING_STANDARD_AD.
-               */
+    * Key-value targeting information for this ad. This field must be left blank if the ad is using a targeting template. Applicable when type is
+    * AD_SERVING_STANDARD_AD.
+    */
   var keyValueTargetingExpression: js.UndefOr[KeyValueTargetingExpression] = js.undefined
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#ad". */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Language targeting information for this ad. This field must be left blank if the ad is using a targeting template. Applicable when type is
-               * AD_SERVING_STANDARD_AD.
-               */
+    * Language targeting information for this ad. This field must be left blank if the ad is using a targeting template. Applicable when type is
+    * AD_SERVING_STANDARD_AD.
+    */
   var languageTargeting: js.UndefOr[LanguageTargeting] = js.undefined
   /** Information about the most recent modification of this ad. This is a read-only field. */
   var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.undefined
@@ -97,9 +96,9 @@ trait Ad extends js.Object {
   /** Placement assignments for this ad. */
   var placementAssignments: js.UndefOr[js.Array[PlacementAssignment]] = js.undefined
   /**
-               * Remarketing list targeting expression for this ad. This field must be left blank if the ad is using a targeting template. Applicable when type is
-               * AD_SERVING_STANDARD_AD.
-               */
+    * Remarketing list targeting expression for this ad. This field must be left blank if the ad is using a targeting template. Applicable when type is
+    * AD_SERVING_STANDARD_AD.
+    */
   var remarketingListExpression: js.UndefOr[ListTargetingExpression] = js.undefined
   /** Size of this ad. Applicable when type is AD_SERVING_DEFAULT_AD. */
   var size: js.UndefOr[Size] = js.undefined
@@ -112,15 +111,15 @@ trait Ad extends js.Object {
   /** Subaccount ID of this ad. This is a read-only field that can be left blank. */
   var subaccountId: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Targeting template ID, used to apply preconfigured targeting information to this ad. This cannot be set while any of dayPartTargeting, geoTargeting,
-               * keyValueTargetingExpression, languageTargeting, remarketingListExpression, or technologyTargeting are set. Applicable when type is
-               * AD_SERVING_STANDARD_AD.
-               */
+    * Targeting template ID, used to apply preconfigured targeting information to this ad. This cannot be set while any of dayPartTargeting, geoTargeting,
+    * keyValueTargetingExpression, languageTargeting, remarketingListExpression, or technologyTargeting are set. Applicable when type is
+    * AD_SERVING_STANDARD_AD.
+    */
   var targetingTemplateId: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Technology platform targeting information for this ad. This field must be left blank if the ad is using a targeting template. Applicable when type is
-               * AD_SERVING_STANDARD_AD.
-               */
+    * Technology platform targeting information for this ad. This field must be left blank if the ad is using a targeting template. Applicable when type is
+    * AD_SERVING_STANDARD_AD.
+    */
   var technologyTargeting: js.UndefOr[TechnologyTargeting] = js.undefined
   /** Type of ad. This is a required field on insertion. Note that default ads (AD_SERVING_DEFAULT_AD) cannot be created directly (see Creative resource). */
   var `type`: js.UndefOr[java.lang.String] = js.undefined

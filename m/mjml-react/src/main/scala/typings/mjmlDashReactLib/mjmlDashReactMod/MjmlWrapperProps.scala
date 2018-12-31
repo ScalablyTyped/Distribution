@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MjmlWrapperProps extends js.Object {
   var backgroundColor: js.UndefOr[csstypeLib.csstypeMod.BackgroundColorProperty] = js.undefined
   var backgroundRepeat: js.UndefOr[csstypeLib.csstypeMod.BackgroundRepeatProperty] = js.undefined

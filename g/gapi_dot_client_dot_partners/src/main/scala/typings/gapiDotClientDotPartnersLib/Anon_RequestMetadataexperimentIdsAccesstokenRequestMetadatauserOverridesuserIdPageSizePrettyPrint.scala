@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RequestMetadataexperimentIdsAccesstokenRequestMetadatauserOverridesuserIdPageSizePrettyPrint extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -25,21 +24,21 @@ trait Anon_RequestMetadataexperimentIdsAccesstokenRequestMetadatauserOverridesus
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * How to order Leads. Currently, only `create_time`
-                   * and `create_time desc` are supported
-                   */
+    * How to order Leads. Currently, only `create_time`
+    * and `create_time desc` are supported
+    */
   var orderBy: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Requested page size. Server may return fewer leads than requested.
-                   * If unspecified, server picks an appropriate default.
-                   */
+    * Requested page size. Server may return fewer leads than requested.
+    * If unspecified, server picks an appropriate default.
+    */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * A token identifying a page of results that the server returns.
-                   * Typically, this is the value of `ListLeadsResponse.next_page_token`
-                   * returned from the previous call to
-                   * ListLeads.
-                   */
+    * A token identifying a page of results that the server returns.
+    * Typically, this is the value of `ListLeadsResponse.next_page_token`
+    * returned from the previous call to
+    * ListLeads.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined
@@ -54,16 +53,16 @@ trait Anon_RequestMetadataexperimentIdsAccesstokenRequestMetadatauserOverridesus
   /** Google Partners session ID. */
   var `requestMetadata.partnersSessionId`: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Identifier to indicate where the traffic comes from.
-                   * An identifier has multiple letters created by a team which redirected the
-                   * traffic to us.
-                   */
+    * Identifier to indicate where the traffic comes from.
+    * An identifier has multiple letters created by a team which redirected the
+    * traffic to us.
+    */
   var `requestMetadata.trafficSource.trafficSourceId`: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Second level identifier to indicate where the traffic comes from.
-                   * An identifier has multiple letters created by a team which redirected the
-                   * traffic to us.
-                   */
+    * Second level identifier to indicate where the traffic comes from.
+    * An identifier has multiple letters created by a team which redirected the
+    * traffic to us.
+    */
   var `requestMetadata.trafficSource.trafficSubId`: js.UndefOr[java.lang.String] = js.undefined
   /** IP address to use instead of the user's geo-located IP address. */
   var `requestMetadata.userOverrides.ipAddress`: js.UndefOr[java.lang.String] = js.undefined

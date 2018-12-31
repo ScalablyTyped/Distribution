@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Video extends js.Object {
   /** Age restriction details related to a video. This data can only be retrieved by the video owner. */
   var ageGating: js.UndefOr[VideoAgeGating] = js.undefined
@@ -14,18 +13,18 @@ trait Video extends js.Object {
   /** Etag of this resource. */
   var etag: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The fileDetails object encapsulates information about the video file that was uploaded to YouTube, including the file's resolution, duration, audio and
-               * video codecs, stream bitrates, and more. This data can only be retrieved by the video owner.
-               */
+    * The fileDetails object encapsulates information about the video file that was uploaded to YouTube, including the file's resolution, duration, audio and
+    * video codecs, stream bitrates, and more. This data can only be retrieved by the video owner.
+    */
   var fileDetails: js.UndefOr[VideoFileDetails] = js.undefined
   /** The ID that YouTube uses to uniquely identify the video. */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /** Identifies what kind of resource this is. Value: the fixed string "youtube#video". */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The liveStreamingDetails object contains metadata about a live video broadcast. The object will only be present in a video resource if the video is an
-               * upcoming, live, or completed live broadcast.
-               */
+    * The liveStreamingDetails object contains metadata about a live video broadcast. The object will only be present in a video resource if the video is an
+    * upcoming, live, or completed live broadcast.
+    */
   var liveStreamingDetails: js.UndefOr[VideoLiveStreamingDetails] = js.undefined
   /** List with all localizations. */
   var localizations: js.UndefOr[stdLib.Record[java.lang.String, VideoLocalization]] = js.undefined
@@ -34,13 +33,13 @@ trait Video extends js.Object {
   /** The player object contains information that you would use to play the video in an embedded player. */
   var player: js.UndefOr[VideoPlayer] = js.undefined
   /**
-               * The processingProgress object encapsulates information about YouTube's progress in processing the uploaded video file. The properties in the object
-               * identify the current processing status and an estimate of the time remaining until YouTube finishes processing the video. This part also indicates
-               * whether different types of data or content, such as file details or thumbnail images, are available for the video.
-               *
-               * The processingProgress object is designed to be polled so that the video uploaded can track the progress that YouTube has made in processing the
-               * uploaded video file. This data can only be retrieved by the video owner.
-               */
+    * The processingProgress object encapsulates information about YouTube's progress in processing the uploaded video file. The properties in the object
+    * identify the current processing status and an estimate of the time remaining until YouTube finishes processing the video. This part also indicates
+    * whether different types of data or content, such as file details or thumbnail images, are available for the video.
+    *
+    * The processingProgress object is designed to be polled so that the video uploaded can track the progress that YouTube has made in processing the
+    * uploaded video file. This data can only be retrieved by the video owner.
+    */
   var processingDetails: js.UndefOr[VideoProcessingDetails] = js.undefined
   /** The projectDetails object contains information about the project specific video metadata. */
   var projectDetails: js.UndefOr[VideoProjectDetails] = js.undefined
@@ -53,9 +52,9 @@ trait Video extends js.Object {
   /** The status object contains information about the video's uploading, processing, and privacy statuses. */
   var status: js.UndefOr[VideoStatus] = js.undefined
   /**
-               * The suggestions object encapsulates suggestions that identify opportunities to improve the video quality or the metadata for the uploaded video. This
-               * data can only be retrieved by the video owner.
-               */
+    * The suggestions object encapsulates suggestions that identify opportunities to improve the video quality or the metadata for the uploaded video. This
+    * data can only be retrieved by the video owner.
+    */
   var suggestions: js.UndefOr[VideoSuggestions] = js.undefined
   /** The topicDetails object encapsulates information about Freebase topics associated with the video. */
   var topicDetails: js.UndefOr[VideoTopicDetails] = js.undefined

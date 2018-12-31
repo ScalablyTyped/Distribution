@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait InjectableType[T]
   extends atAngularCoreLib.srcTypeMod.Type[T] {
   /**
-       * Opaque type whose structure is highly version dependent. Do not rely on any properties.
-       */
+    * Opaque type whose structure is highly version dependent. Do not rely on any properties.
+    */
   var ngInjectableDef: scala.Nothing = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LiveStreamConfigurationIssue extends js.Object {
   /** The long-form description of the issue and how to resolve it. */
   var description: js.UndefOr[java.lang.String] = js.undefined

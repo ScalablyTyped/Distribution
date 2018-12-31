@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RevisionsResource extends js.Object {
   /** Permanently deletes a revision. This method is only applicable to files with binary content in Drive. */
   def delete(request: gapiDotClientDotDriveLib.Anon_FileIdPrettyPrintQuotaUserRevisionId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

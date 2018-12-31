@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebAccountClientView protected () extends js.Object {
   /**
-                           * Creates a new instance of the WebAccountClientView class.
-                           * @param viewType The client view type.
-                           * @param applicationCallbackUri The callback URI that indicates the completion of the operation.
-                           */
+    * Creates a new instance of the WebAccountClientView class.
+    * @param viewType The client view type.
+    * @param applicationCallbackUri The callback URI that indicates the completion of the operation.
+    */
   def this(viewType: WebAccountClientViewType, applicationCallbackUri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri) = this()
   /**
-                           * Creates a new instance of the WebAccountClientView class.
-                           * @param viewType The client view type.
-                           * @param applicationCallbackUri The callback URI that indicates the completion of the operation.
-                           * @param accountPairwiseId The account pairwise Id.
-                           */
+    * Creates a new instance of the WebAccountClientView class.
+    * @param viewType The client view type.
+    * @param applicationCallbackUri The callback URI that indicates the completion of the operation.
+    * @param accountPairwiseId The account pairwise Id.
+    */
   def this(viewType: WebAccountClientViewType, applicationCallbackUri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri, accountPairwiseId: java.lang.String) = this()
   /** Gets the account pairwise Id. */
   var accountPairwiseId: java.lang.String = js.native

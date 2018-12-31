@@ -11,111 +11,111 @@ class Node protected () extends js.Object {
   def this(nodeType: java.lang.String) = this()
   def this(nodeType: java.lang.String, sourcepos: Position) = this()
   /**
-       * Setting the backing object of listType, listTight, listStat and listDelimiter directly.
-       * Not needed unless creating list nodes directly. Should be fixed from v>0.22.1
-       * https://github.com/jgm/commonmark.js/issues/74
-       */
+    * Setting the backing object of listType, listTight, listStat and listDelimiter directly.
+    * Not needed unless creating list nodes directly. Should be fixed from v>0.22.1
+    * https://github.com/jgm/commonmark.js/issues/74
+    */
   var _listData: ListData = js.native
   /**
-       * link or image destination (String) or null.
-       */
+    * link or image destination (String) or null.
+    */
   var destination: java.lang.String | scala.Null = js.native
   /**
-       * (read-only): a Node or null.
-       */
+    * (read-only): a Node or null.
+    */
   val firstChild: Node | scala.Null = js.native
   /**
-       * fenced code block info string (String) or null.
-       */
+    * fenced code block info string (String) or null.
+    */
   var info: java.lang.String | scala.Null = js.native
   /**
-       * (read-only): true if the Node can contain other Nodes as children.
-       */
+    * (read-only): true if the Node can contain other Nodes as children.
+    */
   val isContainer: scala.Boolean = js.native
   /**
-       * (read-only): a Node or null.
-       */
+    * (read-only): a Node or null.
+    */
   val lastChild: Node | scala.Null = js.native
   /**
-       * heading level (Number).
-       */
+    * heading level (Number).
+    */
   var level: scala.Double = js.native
   /**
-       * a String, either ) or . for an ordered list.
-       */
+    * a String, either ) or . for an ordered list.
+    */
   var listDelimiter: commonmarkLib.commonmarkLibStrings.`)` | commonmarkLib.commonmarkLibStrings.DOT = js.native
   /**
-       * a Number, the starting number of an ordered list.
-       */
+    * a Number, the starting number of an ordered list.
+    */
   var listStart: scala.Double = js.native
   /**
-       * true if list is tight
-       */
+    * true if list is tight
+    */
   var listTight: scala.Boolean = js.native
   /**
-       * either Bullet or Ordered (or undefined).
-       */
+    * either Bullet or Ordered (or undefined).
+    */
   var listType: commonmarkLib.commonmarkLibStrings.bullet | commonmarkLib.commonmarkLibStrings.ordered = js.native
   /**
-       *  the literal String content of the node or null.
-       */
+    *  the literal String content of the node or null.
+    */
   var literal: java.lang.String | scala.Null = js.native
   /**
-       * (read-only): a Node or null.
-       */
+    * (read-only): a Node or null.
+    */
   val next: Node | scala.Null = js.native
   /**
-       * used only for CustomBlock or CustomInline.
-       */
+    * used only for CustomBlock or CustomInline.
+    */
   var onEnter: java.lang.String = js.native
   /**
-       * used only for CustomBlock or CustomInline.
-       */
+    * used only for CustomBlock or CustomInline.
+    */
   var onExit: java.lang.String = js.native
   /**
-       * (read-only): a Node or null.
-       */
+    * (read-only): a Node or null.
+    */
   val parent: Node | scala.Null = js.native
   /**
-       * (read-only): a Node or null.
-       */
+    * (read-only): a Node or null.
+    */
   val prev: Node | scala.Null = js.native
   /**
-       * (read-only): an Array with the following form: [[startline, startcolumn], [endline, endcolumn]]
-       */
+    * (read-only): an Array with the following form: [[startline, startcolumn], [endline, endcolumn]]
+    */
   val sourcepos: Position = js.native
   /**
-       *  link or image title (String) or null.
-       */
+    *  link or image title (String) or null.
+    */
   var title: java.lang.String | scala.Null = js.native
   /**
-       * (read-only): a String, one of text, softbreak, linebreak, emph, strong, html_inline, link, image, code, document, paragraph,
-       * block_quote, item, list, heading, code_block, html_block, thematic_break.
-       */
+    * (read-only): a String, one of text, softbreak, linebreak, emph, strong, html_inline, link, image, code, document, paragraph,
+    * block_quote, item, list, heading, code_block, html_block, thematic_break.
+    */
   val `type`: commonmarkLib.commonmarkLibStrings.text | commonmarkLib.commonmarkLibStrings.softbreak | commonmarkLib.commonmarkLibStrings.linebreak | commonmarkLib.commonmarkLibStrings.emph | commonmarkLib.commonmarkLibStrings.strong | commonmarkLib.commonmarkLibStrings.html_inline | commonmarkLib.commonmarkLibStrings.link | commonmarkLib.commonmarkLibStrings.image | commonmarkLib.commonmarkLibStrings.code | commonmarkLib.commonmarkLibStrings.document | commonmarkLib.commonmarkLibStrings.paragraph | commonmarkLib.commonmarkLibStrings.block_quote | commonmarkLib.commonmarkLibStrings.item | commonmarkLib.commonmarkLibStrings.list | commonmarkLib.commonmarkLibStrings.heading | commonmarkLib.commonmarkLibStrings.code_block | commonmarkLib.commonmarkLibStrings.html_block | commonmarkLib.commonmarkLibStrings.thematic_break | commonmarkLib.commonmarkLibStrings.custom_inline | commonmarkLib.commonmarkLibStrings.custom_block = js.native
   /**
-       * Append a Node child to the end of the Node's children.
-       */
+    * Append a Node child to the end of the Node's children.
+    */
   def appendChild(child: Node): scala.Unit = js.native
   /**
-       * Insert a Node sibling after the Node.
-       */
+    * Insert a Node sibling after the Node.
+    */
   def insertAfter(sibling: Node): scala.Unit = js.native
   /**
-       * Insert a Node sibling before the Node.
-       */
+    * Insert a Node sibling before the Node.
+    */
   def insertBefore(sibling: Node): scala.Unit = js.native
   /**
-       *  Prepend a Node child to the beginning of the Node's children.
-       */
+    *  Prepend a Node child to the beginning of the Node's children.
+    */
   def prependChild(child: Node): scala.Unit = js.native
   /**
-       *  Remove the Node from the tree, severing its links with siblings and parents, and closing up gaps as needed.
-       */
+    *  Remove the Node from the tree, severing its links with siblings and parents, and closing up gaps as needed.
+    */
   def unlink(): scala.Unit = js.native
   /**
-       * Returns a NodeWalker that can be used to iterate through the Node tree rooted in the Node
-       */
+    * Returns a NodeWalker that can be used to iterate through the Node tree rooted in the Node
+    */
   def walker(): NodeWalker = js.native
 }
 

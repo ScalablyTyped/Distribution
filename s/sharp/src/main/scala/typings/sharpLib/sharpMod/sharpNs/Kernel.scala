@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Kernel extends js.Object {
   /** height of the kernel in pixels. */
   var height: scala.Double

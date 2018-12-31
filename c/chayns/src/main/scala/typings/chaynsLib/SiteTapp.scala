@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Enviroment Variables
- * Site
- * interfaces
- */
-
+  * Enviroment Variables
+  * Site
+  * interfaces
+  */
 trait SiteTapp extends js.Object {
   var customUrl: java.lang.String
   var id: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait config extends js.Object {
   var allowedUpdates: js.UndefOr[js.Array[java.lang.String]] = js.undefined
    // Optional. Plugin folder location relative to telebot package.

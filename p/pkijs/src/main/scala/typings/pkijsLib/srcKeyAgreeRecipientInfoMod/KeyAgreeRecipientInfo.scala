@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeyAgreeRecipientInfo extends js.Object {
   var keyEncryptionAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default
   var originator: pkijsLib.srcOriginatorIdentifierOrKeyMod.default

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Route extends js.Object {
   /** [Output Only] Creation timestamp in RFC3339 text format. */
   var creationTimestamp: js.UndefOr[java.lang.String] = js.undefined
@@ -18,22 +17,22 @@ trait Route extends js.Object {
   /** [Output Only] Type of this resource. Always compute#routes for Route resources. */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035.
-               * Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]&#42;[a-z0-9])? which means the first character must be
-               * a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-               */
+    * Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035.
+    * Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]&#42;[a-z0-9])? which means the first character must be
+    * a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
+    */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /** Fully-qualified URL of the network that this route applies to. */
   var network: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The URL to a gateway that should handle matching packets. You can only specify the internet gateway using a full or partial valid URL:
-               * projects/<project-id>/global/gateways/default-internet-gateway
-               */
+    * The URL to a gateway that should handle matching packets. You can only specify the internet gateway using a full or partial valid URL:
+    * projects/<project-id>/global/gateways/default-internet-gateway
+    */
   var nextHopGateway: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The URL to an instance that should handle matching packets. You can specify this as a full or partial URL. For example:
-               * https://www.googleapis.com/compute/v1/projects/project/zones/zone/instances/
-               */
+    * The URL to an instance that should handle matching packets. You can specify this as a full or partial URL. For example:
+    * https://www.googleapis.com/compute/v1/projects/project/zones/zone/instances/
+    */
   var nextHopInstance: js.UndefOr[java.lang.String] = js.undefined
   /** The network IP address of an instance that should handle matching packets. Only IPv4 is supported. */
   var nextHopIp: js.UndefOr[java.lang.String] = js.undefined
@@ -44,9 +43,9 @@ trait Route extends js.Object {
   /** The URL to a VpnTunnel that should handle matching packets. */
   var nextHopVpnTunnel: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The priority of this route. Priority is used to break ties in cases where there is more than one matching route of equal prefix length. In the case of
-               * two routes with equal prefix length, the one with the lowest-numbered priority value wins. Default value is 1000. Valid range is 0 through 65535.
-               */
+    * The priority of this route. Priority is used to break ties in cases where there is more than one matching route of equal prefix length. In the case of
+    * two routes with equal prefix length, the one with the lowest-numbered priority value wins. Default value is 1000. Valid range is 0 through 65535.
+    */
   var priority: js.UndefOr[scala.Double] = js.undefined
   /** [Output Only] Server-defined fully-qualified URL for this resource. */
   var selfLink: js.UndefOr[java.lang.String] = js.undefined

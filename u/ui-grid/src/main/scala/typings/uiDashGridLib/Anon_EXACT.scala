@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EXACT extends js.Object {
   var CONTAINS: scala.Double
   var ENDS_WITH: scala.Double

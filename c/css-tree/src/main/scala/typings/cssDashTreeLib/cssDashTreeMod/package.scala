@@ -20,7 +20,7 @@ package object cssDashTreeMod {
     /* item */ TData, 
     /* node */ ListItem[TData], 
     /* list */ List[TData], 
-    /* is TResult */scala.Boolean
+    /* is TResult */ scala.Boolean
   ]
   type IteratorFn[TData, TResult, TContext] = js.ThisFunction3[
     /* this */ TContext, 

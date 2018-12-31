@@ -24,9 +24,9 @@ abstract class UsbInterfaceSetting () extends js.Object {
   /** Determines whether the alternate setting is currently selected. */
   var selected: scala.Boolean = js.native
   /**
-                   * Selects the alternate setting as the current setting in the USB interface.
-                   * @return An IAsyncAction object that is used to control the asynchronous operation.
-                   */
+    * Selects the alternate setting as the current setting in the USB interface.
+    * @return An IAsyncAction object that is used to control the asynchronous operation.
+    */
   def selectSettingAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

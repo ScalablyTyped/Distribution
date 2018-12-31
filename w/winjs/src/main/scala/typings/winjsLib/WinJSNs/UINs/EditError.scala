@@ -9,35 +9,35 @@ import scala.scalajs.js.annotation._
 sealed trait EditError extends js.Object
 
 /**
-     * Specifies the type of error that occurred during an edit operation on a IListDataSource or an IListDataAdapter.
-    **/
+  * Specifies the type of error that occurred during an edit operation on a IListDataSource or an IListDataAdapter.
+  **/
 @JSGlobal("WinJS.UI.EditError")
 @js.native
 object EditError extends js.Object {
   /**
-           * The edit operation was canceled.
-          **/
+    * The edit operation was canceled.
+    **/
   @js.native
   sealed trait canceled
     extends winjsLib.WinJSNs.UINs.EditError
   
   /**
-           * The item has changed.
-          **/
+    * The item has changed.
+    **/
   @js.native
   sealed trait noLongerMeaningful
     extends winjsLib.WinJSNs.UINs.EditError
   
   /**
-           * The edit operation timed out.
-          **/
+    * The edit operation timed out.
+    **/
   @js.native
   sealed trait noResponse
     extends winjsLib.WinJSNs.UINs.EditError
   
   /**
-           * The data source cannot be written to.
-          **/
+    * The data source cannot be written to.
+    **/
   @js.native
   sealed trait notPermitted
     extends winjsLib.WinJSNs.UINs.EditError

@@ -39,14 +39,14 @@ abstract class ClaimedPosPrinter () extends js.Object {
   /** Disposes the claimed point-of-service printer object synchronously, releases the exclusive claim on the printer and disables it. */
   def close(): scala.Unit = js.native
   /**
-                   * Notifies the underlying hardware to turn off.
-                   * @return True if the attempt turn off the printer succeeded; otherwise false.
-                   */
+    * Notifies the underlying hardware to turn off.
+    * @return True if the attempt turn off the printer succeeded; otherwise false.
+    */
   def disableAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
   /**
-                   * Notifies the underlying hardware asynchronously to power on for use.
-                   * @return True if the attempt to turn on the printer succeeded; otherwise false.
-                   */
+    * Notifies the underlying hardware asynchronously to power on for use.
+    * @return True if the attempt to turn on the printer succeeded; otherwise false.
+    */
   def enableAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
   /** Occurs when a point-of-service printer gets a request to release its exclusive claim. */
   def onreleasedevicerequested(
@@ -59,23 +59,23 @@ abstract class ClaimedPosPrinter () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[ClaimedPosPrinter, PosPrinterReleaseDeviceRequestedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Resets the specified statistics to zero for all statistics for the point-of-service printer that can be reset.
-                   * @param statisticsCategories A list of the names of the statistics that you want to reset.
-                   * @return An operation that returns true if the reset succeeds, or otherwise returns false.
-                   */
+    * Resets the specified statistics to zero for all statistics for the point-of-service printer that can be reset.
+    * @param statisticsCategories A list of the names of the statistics that you want to reset.
+    * @return An operation that returns true if the reset succeeds, or otherwise returns false.
+    */
   def resetStatisticsAsync(
     statisticsCategories: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String]
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
   /**
-                   * Retains the claim on the point-of-service printer asynchronously, usually in response to the ReleaseDeviceRequested event.
-                   * @return True if the printer was successfully retained; otherwise, false.
-                   */
+    * Retains the claim on the point-of-service printer asynchronously, usually in response to the ReleaseDeviceRequested event.
+    * @return True if the printer was successfully retained; otherwise, false.
+    */
   def retainDeviceAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
   /**
-                   * Updates the specified statistics for the point-of-service printer.
-                   * @param statistics The statistics to update.
-                   * @return An operation that returns true if the update succeeds, or otherwise returns false.
-                   */
+    * Updates the specified statistics for the point-of-service printer.
+    * @param statistics The statistics to update.
+    * @return An operation that returns true if the update succeeds, or otherwise returns false.
+    */
   def updateStatisticsAsync(
     statistics: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IKeyValuePair[_, _]]
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native

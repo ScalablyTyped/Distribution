@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TweenConfig
   extends /** Any tweenable property */
 /* p */ org.scalablytyped.runtime.StringDictionary[js.Any] {
@@ -14,24 +13,24 @@ trait TweenConfig
   /** The scope to be used for all of the callbacks (onStart, onUpdate, onComplete, etc.). The scope is what "this" refers to inside any of the callbacks. */
   var callbackScope: js.UndefOr[js.Object] = js.undefined
   /**
-           * Amount of delay in seconds (or frames for frames-based tweens) before the animation should begin.
-           */
+    * Amount of delay in seconds (or frames for frames-based tweens) before the animation should begin.
+    */
   var delay: js.UndefOr[scala.Double] = js.undefined
   /** Ease (or () => void or String) - You can choose from various eases to control the rate of change during the animation, giving it a specific "feel". */
   var ease: js.UndefOr[Ease] = js.undefined
   /**
-           * Normally when you create a tween, it begins rendering on the very next frame (update cycle) unless you specify a delay. However, if you prefer to force the tween to render
-           * immediately when it is created, setimmediateRender to true. Or to prevent a from() from rendering immediately, set immediateRender to false. By default, from() tweens set
-           * immediateRender to true.
-           */
+    * Normally when you create a tween, it begins rendering on the very next frame (update cycle) unless you specify a delay. However, if you prefer to force the tween to render
+    * immediately when it is created, setimmediateRender to true. Or to prevent a from() from rendering immediately, set immediateRender to false. By default, from() tweens set
+    * immediateRender to true.
+    */
   var immediateRender: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * When a tween renders for the very first time and reads its starting values, GSAP will automatically "lazy render" that particular tick by default, meaning it will try to delay the
-           * rendering (writing of values) until the very end of the "tick" cycle which can improve performance because it avoids the read/write/read/write layout thrashing that some browsers do.
-           *
-           * If you would like to disable lazy rendering for a particular tween, you can set lazy:false. Or, since zero-duration tweens do not lazy-render by default, you can specifically give it
-           * permission to lazy-render by setting lazy:true like TweenLite.set(element, {opacity:0, lazy:true});. In most cases, you won't need to set lazy.
-           */
+    * When a tween renders for the very first time and reads its starting values, GSAP will automatically "lazy render" that particular tick by default, meaning it will try to delay the
+    * rendering (writing of values) until the very end of the "tick" cycle which can improve performance because it avoids the read/write/read/write layout thrashing that some browsers do.
+    *
+    * If you would like to disable lazy rendering for a particular tween, you can set lazy:false. Or, since zero-duration tweens do not lazy-render by default, you can specifically give it
+    * permission to lazy-render by setting lazy:true like TweenLite.set(element, {opacity:0, lazy:true});. In most cases, you won't need to set lazy.
+    */
   var `lazy`: js.UndefOr[scala.Boolean] = js.undefined
   /**  A () => void that should be called when the animation has completed. */
   var onComplete: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -62,9 +61,9 @@ trait TweenConfig
   /** Defines the scope of the onUpdate () => void (what "this" refers to inside that () => void). */
   var onUpdateScope: js.UndefOr[js.Object] = js.undefined
   /**
-           * Controls how (and if) other tweens of the same target are overwritten. There are several modes to choose from, but "auto" is the default (although you can change the default mode using
-           * theTweenLite.defaultOverwrite property)
-           */
+    * Controls how (and if) other tweens of the same target are overwritten. There are several modes to choose from, but "auto" is the default (although you can change the default mode using
+    * theTweenLite.defaultOverwrite property)
+    */
   var overwrite: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   /** If true, the tween will pause itself immediately upon creation. */
   var paused: js.UndefOr[scala.Boolean] = js.undefined
@@ -72,9 +71,9 @@ trait TweenConfig
   var repeatDelay: js.UndefOr[scala.Double] = js.undefined
   var startAt: js.UndefOr[js.Object] = js.undefined
   /**
-           * If useFrames is true, the tweens's timing will be based on frames instead of seconds because it is intially added to the root frames-based timeline. This causes both its duration and
-           * delay to be based on frames. An animations's timing mode is always determined by its parent timeline.
-           */
+    * If useFrames is true, the tweens's timing will be based on frames instead of seconds because it is intially added to the root frames-based timeline. This causes both its duration and
+    * delay to be based on frames. An animations's timing mode is always determined by its parent timeline.
+    */
   var useFrames: js.UndefOr[scala.Boolean] = js.undefined
   var yoyo: js.UndefOr[scala.Boolean] = js.undefined
 }

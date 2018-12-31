@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Metric extends js.Object {
   /** The set of label values that uniquely identify this metric. All labels listed in the MetricDescriptor must be assigned values. */
   var labels: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined

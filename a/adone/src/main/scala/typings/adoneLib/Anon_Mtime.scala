@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Mtime extends js.Object {
   /**
-                           * Defines file mode, 0o40775 by default
-                           */
+    * Defines file mode, 0o40775 by default
+    */
   var mode: js.UndefOr[scala.Double] = js.undefined
   /**
-                           * Defines modified date, now by default
-                           */
+    * Defines modified date, now by default
+    */
   var mtime: js.UndefOr[scala.Double] = js.undefined
 }
 

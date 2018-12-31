@@ -18,7 +18,6 @@ class HTMLProjectItem protected () extends js.Object {
   def LoadFromFile(FileName: java.lang.String): scala.Unit = js.native
   /** @param OpenKind [OpenKind=0] */
   def Open(): scala.Unit = js.native
-  /** @param OpenKind [OpenKind=0] */
   def Open(OpenKind: MsoHTMLProjectOpen): scala.Unit = js.native
   def SaveCopyAs(FileName: java.lang.String): scala.Unit = js.native
 }

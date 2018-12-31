@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventEmitter extends js.Object {
   def emit(event: js.Any): EventEmitter
   def has(`type`: java.lang.String, listener: js.Function): scala.Boolean

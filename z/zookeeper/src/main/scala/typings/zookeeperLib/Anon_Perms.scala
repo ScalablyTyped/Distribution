@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Perms extends js.Object {
   var auth: java.lang.String
   var perms: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISequential extends ISimple {
   /** [Method] Returns the value of seed
   		* @returns Number

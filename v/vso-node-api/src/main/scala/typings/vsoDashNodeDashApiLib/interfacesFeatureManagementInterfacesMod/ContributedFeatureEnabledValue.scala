@@ -12,22 +12,22 @@ sealed trait ContributedFeatureEnabledValue extends js.Object
 @js.native
 object ContributedFeatureEnabledValue extends js.Object {
   /**
-       * The feature is disabled at the specified scope
-       */
+    * The feature is disabled at the specified scope
+    */
   @js.native
   sealed trait Disabled
     extends vsoDashNodeDashApiLib.interfacesFeatureManagementInterfacesMod.ContributedFeatureEnabledValue
   
   /**
-       * The feature is enabled at the specified scope
-       */
+    * The feature is enabled at the specified scope
+    */
   @js.native
   sealed trait Enabled
     extends vsoDashNodeDashApiLib.interfacesFeatureManagementInterfacesMod.ContributedFeatureEnabledValue
   
   /**
-       * The state of the feature is not set for the specified scope
-       */
+    * The state of the feature is not set for the specified scope
+    */
   @js.native
   sealed trait Undefined
     extends vsoDashNodeDashApiLib.interfacesFeatureManagementInterfacesMod.ContributedFeatureEnabledValue

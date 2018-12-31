@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextValidationBuilder extends js.Object {
   def requireNumber(): TextValidationBuilder
   def requireNumberBetween(start: stdLib.Number, end: stdLib.Number): TextValidationBuilder

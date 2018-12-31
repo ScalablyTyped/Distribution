@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Segment1 extends js.Object {
   var bez1: js.Array[_]
   var bez2: js.Array[_]

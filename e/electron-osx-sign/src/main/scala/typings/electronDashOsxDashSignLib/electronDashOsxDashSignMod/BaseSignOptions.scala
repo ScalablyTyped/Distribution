@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseSignOptions extends js.Object {
   var app: java.lang.String
   var identity: js.UndefOr[java.lang.String] = js.undefined

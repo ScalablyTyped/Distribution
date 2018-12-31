@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPrintTaskOptionChangedEventArgs extends js.Object {
   var optionId: js.Any
 }

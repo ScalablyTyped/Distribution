@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NumericText extends js.Object {
   /** Description of the categorical values of this feature. */
   var categorical: js.UndefOr[Anon_CountValues] = js.undefined

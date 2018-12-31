@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Dropped any */ 
-trait Label extends js.Object {
+- Dropped any */ trait Label extends js.Object {
   def close(): scala.Unit
   def onAdd(map: leafletLib.leafletMod.Map): scala.Unit
   def onRemove(map: leafletLib.leafletMod.Map): scala.Unit

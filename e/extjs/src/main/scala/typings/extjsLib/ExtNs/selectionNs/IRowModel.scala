@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRowModel extends IModel {
   /** [Config Option] (Boolean) */
   var enableKeyNav: js.UndefOr[scala.Boolean] = js.undefined

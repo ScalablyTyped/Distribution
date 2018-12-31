@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Configuration extends js.Object {
   /** Set the value of require.amd and define.amd. */
   var amd: js.UndefOr[org.scalablytyped.runtime.StringDictionary[scala.Boolean]] = js.undefined
@@ -14,9 +13,9 @@ trait Configuration extends js.Object {
   /** Cache generated modules and chunks to improve performance for multiple incremental builds. */
   var cache: js.UndefOr[scala.Boolean | js.Object] = js.undefined
   /**
-           * The base directory (absolute path!) for resolving the `entry` option.
-           * If `output.pathinfo` is set, the included pathinfo is shortened to this directory.
-           */
+    * The base directory (absolute path!) for resolving the `entry` option.
+    * If `output.pathinfo` is set, the included pathinfo is shortened to this directory.
+    */
   var context: js.UndefOr[java.lang.String] = js.undefined
   /** Switch loaders to debug mode. */
   var debug: js.UndefOr[scala.Boolean] = js.undefined
@@ -24,9 +23,9 @@ trait Configuration extends js.Object {
   var devtool: js.UndefOr[webpackLib.webpackMod.webpackNs.OptionsNs.Devtool] = js.undefined
   var entry: js.UndefOr[java.lang.String | js.Array[java.lang.String] | Entry | EntryFunc] = js.undefined
   /**
-           * Specify dependencies that shouldn’t be resolved by webpack, but should become dependencies of the resulting bundle.
-           * The kind of the dependency depends on output.libraryTarget.
-           */
+    * Specify dependencies that shouldn’t be resolved by webpack, but should become dependencies of the resulting bundle.
+    * The kind of the dependency depends on output.libraryTarget.
+    */
   var externals: js.UndefOr[ExternalsElement | js.Array[ExternalsElement]] = js.undefined
   /** Enable production optimizations or development hints. */
   var mode: js.UndefOr[
@@ -65,18 +64,18 @@ trait Configuration extends js.Object {
   /** Stats options for logging  */
   var stats: js.UndefOr[webpackLib.webpackMod.webpackNs.OptionsNs.Stats] = js.undefined
   /**
-           * - "web" Compile for usage in a browser-like environment (default).
-           * - "webworker" Compile as WebWorker.
-           * - "node" Compile for usage in a node.js-like environment (use require to load chunks).
-           * - "async-node" Compile for usage in a node.js-like environment (use fs and vm to load chunks async).
-           * - "node-webkit" Compile for usage in webkit, uses jsonp chunk loading but also supports builtin node.js modules plus require(“nw.gui”) (experimental)
-           * - "atom" Compile for usage in electron (formerly known as atom-shell), supports require for modules necessary to run Electron.
-           * - "electron-renderer" Compile for Electron for renderer process, providing a target using JsonpTemplatePlugin, FunctionModulePlugin for browser
-           *   environments and NodeTargetPlugin and ExternalsPlugin for CommonJS and Electron built-in modules.
-           * - "electron-main" Compile for Electron for main process.
-           * - "atom" Alias for electron-main.
-           * - "electron" Alias for electron-main.
-           */
+    * - "web" Compile for usage in a browser-like environment (default).
+    * - "webworker" Compile as WebWorker.
+    * - "node" Compile for usage in a node.js-like environment (use require to load chunks).
+    * - "async-node" Compile for usage in a node.js-like environment (use fs and vm to load chunks async).
+    * - "node-webkit" Compile for usage in webkit, uses jsonp chunk loading but also supports builtin node.js modules plus require(“nw.gui”) (experimental)
+    * - "atom" Compile for usage in electron (formerly known as atom-shell), supports require for modules necessary to run Electron.
+    * - "electron-renderer" Compile for Electron for renderer process, providing a target using JsonpTemplatePlugin, FunctionModulePlugin for browser
+    *   environments and NodeTargetPlugin and ExternalsPlugin for CommonJS and Electron built-in modules.
+    * - "electron-main" Compile for Electron for main process.
+    * - "atom" Alias for electron-main.
+    * - "electron" Alias for electron-main.
+    */
   var target: js.UndefOr[
     webpackLib.webpackLibStrings.web | webpackLib.webpackLibStrings.webworker | webpackLib.webpackLibStrings.node | webpackLib.webpackLibStrings.`async-node` | webpackLib.webpackLibStrings.`node-webkit` | webpackLib.webpackLibStrings.atom | webpackLib.webpackLibStrings.electron | webpackLib.webpackLibStrings.`electron-renderer` | webpackLib.webpackLibStrings.`electron-main` | (js.Function1[/* compiler */ js.UndefOr[js.Any], scala.Unit])
   ] = js.undefined

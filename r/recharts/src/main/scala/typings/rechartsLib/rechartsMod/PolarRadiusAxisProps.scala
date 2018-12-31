@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Partial) */ 
-trait PolarRadiusAxisProps extends EventAttributes {
+- Lifted 1 members from Set(std.Partial<recharts.recharts.PresentationAttributes<number, number>>) */ trait PolarRadiusAxisProps extends EventAttributes {
   var allowDataOverflow: js.UndefOr[scala.Boolean] = js.undefined
   var angle: js.UndefOr[scala.Double] = js.undefined
   var axisLine: js.UndefOr[scala.Boolean | js.Object] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IExternalFormValidationConfig extends js.Object {
   var globals: js.UndefOr[js.Any] = js.undefined
   var ignore: js.UndefOr[js.Any] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PublicKeyCertificate extends js.Object {
   /** The certificate data. */
   var certificate: js.UndefOr[java.lang.String] = js.undefined

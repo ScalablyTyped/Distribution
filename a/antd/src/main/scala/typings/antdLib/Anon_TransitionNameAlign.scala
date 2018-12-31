@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TransitionNameAlign extends js.Object {
   var align: Anon_Offset
   var disabled: scala.Boolean

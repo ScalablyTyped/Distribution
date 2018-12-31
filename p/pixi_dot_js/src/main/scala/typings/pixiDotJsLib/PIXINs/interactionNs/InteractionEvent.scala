@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InteractionEvent extends js.Object {
   var currentTarget: pixiDotJsLib.PIXINs.DisplayObject
   var data: InteractionData

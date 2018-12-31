@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAbidePatterns extends js.Object {
   var alpha: js.UndefOr[stdLib.RegExp] = js.undefined
   var alpha_numeric: js.UndefOr[stdLib.RegExp] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPrettyPrintBearertoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -29,9 +28,9 @@ trait Anon_AccesstokenPrettyPrintBearertoken extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * The Google Developers Console [project ID or project
-                   * number](https://support.google.com/cloud/answer/6158840).
-                   */
+    * The Google Developers Console [project ID or project
+    * number](https://support.google.com/cloud/answer/6158840).
+    */
   var projectId: java.lang.String
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
@@ -40,10 +39,10 @@ trait Anon_AccesstokenPrettyPrintBearertoken extends js.Object {
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The name of the Google Compute Engine
-                   * [zone](/compute/docs/zones#available) in which the cluster
-                   * resides, or "-" for all zones.
-                   */
+    * The name of the Google Compute Engine
+    * [zone](/compute/docs/zones#available) in which the cluster
+    * resides, or "-" for all zones.
+    */
   var zone: java.lang.String
 }
 

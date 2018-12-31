@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options
   extends nodeLib.streamMod.internalNs.TransformOptions {
   /** line break matcher for str.split() (default: /\r?\n/) */

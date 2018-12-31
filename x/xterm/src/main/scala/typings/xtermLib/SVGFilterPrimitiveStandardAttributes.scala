@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGFilterPrimitiveStandardAttributes extends js.Object {
   val height: SVGAnimatedLength
   val result: SVGAnimatedString

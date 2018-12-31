@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IArc extends ICircle {
   /** [Config Option] (Boolean) */
   var anticlockwise: js.UndefOr[scala.Boolean] = js.undefined

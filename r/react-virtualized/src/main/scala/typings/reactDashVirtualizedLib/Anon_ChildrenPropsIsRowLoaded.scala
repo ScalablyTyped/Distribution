@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ChildrenPropsIsRowLoaded extends js.Object {
   var children: reactLib.reactMod.ReactNs.Validator[
     js.Function1[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserVoiceSettings extends js.Object {
   var id: java.lang.String
   var mute: js.UndefOr[scala.Boolean] = js.undefined

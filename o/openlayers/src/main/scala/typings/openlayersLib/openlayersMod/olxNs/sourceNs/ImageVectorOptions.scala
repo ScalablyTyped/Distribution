@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageVectorOptions extends js.Object {
   var attributions: js.UndefOr[openlayersLib.openlayersMod.AttributionLike] = js.undefined
   var logo: js.UndefOr[java.lang.String | openlayersLib.openlayersMod.olxNs.LogoOptions] = js.undefined

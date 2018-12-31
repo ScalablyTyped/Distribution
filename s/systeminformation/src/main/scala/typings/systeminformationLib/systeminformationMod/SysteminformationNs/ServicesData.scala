@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServicesData extends js.Object {
   var name: java.lang.String
   var pcpu: scala.Double

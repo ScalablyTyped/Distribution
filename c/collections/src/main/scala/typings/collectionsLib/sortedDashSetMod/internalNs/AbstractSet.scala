@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 // TODO: These methods can be similar in others collection. One's should make some
 // class model.
-
 trait AbstractSet extends js.Object {
   def addBeforeOwnPropertyChangeListener(plus: js.Any*): js.Any
   def addBeforeRangeChangeListener(plus: js.Any*): js.Any

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait extentChangeStatsObj extends js.Object {
   var centerLat: scala.Double
   var centerLon: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommandMetrics extends js.Object {
   def addExecutionTime(value: scala.Double): scala.Unit
   def decrementExecutionCount(): scala.Unit

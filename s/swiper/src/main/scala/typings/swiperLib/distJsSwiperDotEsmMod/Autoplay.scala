@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation._
 class Autoplay () extends js.Object {
   // Properties
   /**
-       * Whether autoplay enabled and running
-       */
+    * Whether autoplay enabled and running
+    */
   var running: scala.Boolean = js.native
   // Methods
   /**
-       * Start autoplay
-       */
+    * Start autoplay
+    */
   def start(): scala.Boolean = js.native
   /**
-       * Stop autoplay
-       */
+    * Stop autoplay
+    */
   def stop(): scala.Boolean = js.native
 }
 

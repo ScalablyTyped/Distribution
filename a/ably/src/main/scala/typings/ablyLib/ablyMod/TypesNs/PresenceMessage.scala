@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PresenceMessage extends js.Object {
   var action: PresenceAction
   var clientId: java.lang.String

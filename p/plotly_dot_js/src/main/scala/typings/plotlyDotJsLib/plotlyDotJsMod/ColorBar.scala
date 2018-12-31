@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColorBar extends js.Object {
   var bgcolor: Color
   var bordercolor: Color

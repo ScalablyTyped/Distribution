@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WidgetTypesResponse extends js.Object {
   var _links: js.Any
   var uri: java.lang.String

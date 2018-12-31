@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Device extends js.Object {
   var interface: scala.Double
   var manufacturer: js.UndefOr[java.lang.String] = js.undefined

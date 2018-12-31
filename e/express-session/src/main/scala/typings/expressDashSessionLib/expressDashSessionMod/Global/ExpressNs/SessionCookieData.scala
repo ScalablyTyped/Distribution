@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SessionCookieData extends js.Object {
   var domain: js.UndefOr[java.lang.String] = js.undefined
   var expires: stdLib.Date | scala.Boolean

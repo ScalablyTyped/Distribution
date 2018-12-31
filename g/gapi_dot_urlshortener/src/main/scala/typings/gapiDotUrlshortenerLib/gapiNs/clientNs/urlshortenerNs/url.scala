@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait url extends js.Object {
   /**
-           * Expands a short URL or gets creation time and analytics.
-           */
+    * Expands a short URL or gets creation time and analytics.
+    */
   def get(`object`: gapiDotUrlshortenerLib.Anon_Projection): gapiLib.gapiNs.clientNs.HttpRequest[gapiDotUrlshortenerLib.GoogleApiUrlShortenerUrlResource]
   /**
-           * Creates a new short URL.
-           */
+    * Creates a new short URL.
+    */
   def insert(`object`: gapiDotUrlshortenerLib.Anon_RequestBody): gapiLib.gapiNs.clientNs.HttpRequest[gapiDotUrlshortenerLib.GoogleApiUrlShortenerUrlResource]
   /**
-           * Retrieves a list of URLs shortened by a user.
-           */
+    * Retrieves a list of URLs shortened by a user.
+    */
   def list(`object`: gapiDotUrlshortenerLib.Anon_ProjectionFields): gapiLib.gapiNs.clientNs.HttpRequest[gapiDotUrlshortenerLib.GoogleApiUrlShortenerUrlResource]
 }
 

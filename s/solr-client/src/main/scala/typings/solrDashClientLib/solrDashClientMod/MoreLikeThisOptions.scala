@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MoreLikeThisOptions extends js.Object {
   var boost: js.UndefOr[scala.Boolean] = js.undefined
   var count: js.UndefOr[scala.Double] = js.undefined

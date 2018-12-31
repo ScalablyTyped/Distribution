@@ -13,9 +13,9 @@ trait Autocomplete
       js.Any
     ] {
   /**
-       * Autocomplete exposes a subset of `HTMLInputElement` properties to the parent component.
-       * They can be accessed through Autocomplete's `ref` prop.
-       */
+    * Autocomplete exposes a subset of `HTMLInputElement` properties to the parent component.
+    * They can be accessed through Autocomplete's `ref` prop.
+    */
   var blur: js.Any = js.native
   var checkValidity: js.Any = js.native
   var click: js.Any = js.native

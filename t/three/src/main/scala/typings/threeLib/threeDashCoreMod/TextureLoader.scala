@@ -14,32 +14,17 @@ class TextureLoader () extends js.Object {
   var path: java.lang.String = js.native
   var withCredentials: java.lang.String = js.native
   /**
-       * Begin loading from url
-       *
-       * @param url
-       */
+    * Begin loading from url
+    *
+    * @param url
+    */
   def load(url: java.lang.String): Texture = js.native
-  /**
-       * Begin loading from url
-       *
-       * @param url
-       */
   def load(url: java.lang.String, onLoad: js.Function1[/* texture */ Texture, scala.Unit]): Texture = js.native
-  /**
-       * Begin loading from url
-       *
-       * @param url
-       */
   def load(
     url: java.lang.String,
     onLoad: js.Function1[/* texture */ Texture, scala.Unit],
     onProgress: js.Function1[/* event */ stdLib.ProgressEvent, scala.Unit]
   ): Texture = js.native
-  /**
-       * Begin loading from url
-       *
-       * @param url
-       */
   def load(
     url: java.lang.String,
     onLoad: js.Function1[/* texture */ Texture, scala.Unit],

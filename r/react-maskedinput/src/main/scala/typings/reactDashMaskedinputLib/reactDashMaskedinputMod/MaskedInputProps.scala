@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MaskedInputProps
   extends reactLib.reactMod.ReactNs.InputHTMLAttributes[js.Any] {
   var formatCharacters: js.UndefOr[CharsFormatters] = js.undefined

@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JQuery extends js.Object {
   def mousewheel(
     handler: js.Function2[
       /* eventObject */ jqueryDashMousewheelLib.JQueryMousewheelNs.JQueryMousewheelEventObject, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       _
     ]
   ): JQuery
@@ -19,7 +18,7 @@ trait JQuery extends js.Object {
     event: jqueryDashMousewheelLib.jqueryDashMousewheelLibStrings.mousewheel,
     handler: js.Function2[
       /* eventObject */ jqueryDashMousewheelLib.JQueryMousewheelNs.JQueryMousewheelEventObject, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       _
     ]
   ): JQuery

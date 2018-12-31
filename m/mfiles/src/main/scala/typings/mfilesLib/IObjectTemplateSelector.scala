@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IObjectTemplateSelector extends js.Object {
   val ClassSelector: IMetadataCardControl
   val Events: IEvents

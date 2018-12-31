@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GroupingOptions[T] extends js.Object {
   var aggregateChildGroups: js.UndefOr[scala.Boolean] = js.undefined
   var aggregateCollapsed: js.UndefOr[scala.Boolean] = js.undefined

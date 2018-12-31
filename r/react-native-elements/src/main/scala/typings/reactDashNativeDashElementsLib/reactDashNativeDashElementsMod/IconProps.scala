@@ -5,77 +5,76 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IconProps extends js.Object {
   /**
-       * Color of icon
-       *
-       * @default 'black'
-       */
+    * Color of icon
+    *
+    * @default 'black'
+    */
   var color: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * View if no onPress method is defined, TouchableHighlight if onPress method is defined	React Native component	update React Native Component
-       */
+    * View if no onPress method is defined, TouchableHighlight if onPress method is defined	React Native component	update React Native Component
+    */
   var component: js.UndefOr[
     reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]
   ] = js.undefined
   /**
-       * Add styling to container holding icon
-       */
+    * Add styling to container holding icon
+    */
   var containerStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
   /**
-       * Additional styling to icon
-       */
+    * Additional styling to icon
+    */
   var iconStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[
       reactDashNativeLib.reactDashNativeMod.TextStyle | reactDashNativeLib.reactDashNativeMod.ViewStyle
     ]
   ] = js.undefined
   /**
-       * Name of icon
-       */
+    * Name of icon
+    */
   var name: java.lang.String
   /**
-       * onLongPress method for button
-       */
+    * onLongPress method for button
+    */
   var onLongPress: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
-       * onPress method for button
-       */
+    * onPress method for button
+    */
   var onPress: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /**
-       * Adds box shadow to button
-       *
-       * @default false
-       */
+    * Adds box shadow to button
+    *
+    * @default false
+    */
   var raised: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Reverses color scheme
-       *
-       * @default false
-       */
+    * Reverses color scheme
+    *
+    * @default false
+    */
   var reverse: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Specify reverse icon color
-       *
-       * @default 'white'
-       */
+    * Specify reverse icon color
+    *
+    * @default 'white'
+    */
   var reverseColor: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Size of icon
-       * @default 26
-       */
+    * Size of icon
+    * @default 26
+    */
   var size: js.UndefOr[scala.Double] = js.undefined
   /**
-       * Type (defaults to material, options are material-community, zocial, font-awesome, octicon, ionicon, foundation, evilicon, simple-line-icon, or entypo)
-       * @default 'material'
-       */
+    * Type (defaults to material, options are material-community, zocial, font-awesome, octicon, ionicon, foundation, evilicon, simple-line-icon, or entypo)
+    * @default 'material'
+    */
   var `type`: js.UndefOr[IconType] = js.undefined
   /**
-       * UnderlayColor for press event
-       */
+    * UnderlayColor for press event
+    */
   var underlayColor: js.UndefOr[java.lang.String] = js.undefined
 }
 

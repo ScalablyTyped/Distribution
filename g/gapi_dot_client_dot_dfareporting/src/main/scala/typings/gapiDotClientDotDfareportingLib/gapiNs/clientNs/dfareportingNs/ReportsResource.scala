@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReportsResource extends js.Object {
   var compatibleFields: CompatibleFieldsResource
   var files: FilesResource

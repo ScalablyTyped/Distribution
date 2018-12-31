@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStructure extends js.Object {
   val container: mendixmodelsdkLib.distSdkInternalStructuresMod.aliasesNs.IContainer | scala.Null
   var id: java.lang.String
@@ -13,15 +12,15 @@ trait IStructure extends js.Object {
   var model: mendixmodelsdkLib.distSdkInternalAbstractDashModelMod.IAbstractModel
   var structureTypeName: java.lang.String
   /**
-       * Unit that owns/contains this thing.
-       */
+    * Unit that owns/contains this thing.
+    */
   var unit: mendixmodelsdkLib.distSdkInternalUnitsMod.IAbstractUnit
   def allProperties(): js.Array[
     mendixmodelsdkLib.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty[_, _]
   ]
   /**
-       * Returns all properties when this structure is loaded, otherwise just the public properties.
-       */
+    * Returns all properties when this structure is loaded, otherwise just the public properties.
+    */
   def loadedProperties(): js.Array[
     mendixmodelsdkLib.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty[_, _]
   ]
@@ -29,24 +28,24 @@ trait IStructure extends js.Object {
     mendixmodelsdkLib.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty[_, _]
   ]
   /**
-       * Renders the structure as plain JSON (without observables magic).
-       * This is intended for debugging and development convenience.
-       * Note that the resulting object is not of the interface type corresponding to this structure.
-       */
+    * Renders the structure as plain JSON (without observables magic).
+    * This is intended for debugging and development convenience.
+    * Note that the resulting object is not of the interface type corresponding to this structure.
+    */
   def toJSON(): js.Object
   /**
-       * Traverses this structure by calling the provided visitor function
-       * on itself and all the structures contained (as part) by it,
-       * in depth-first order, and it returns synchronously after that.
-       */
+    * Traverses this structure by calling the provided visitor function
+    * on itself and all the structures contained (as part) by it,
+    * in depth-first order, and it returns synchronously after that.
+    */
   def traverse(visit: js.Function1[/* structure */ this.type, scala.Unit]): scala.Unit
   /**
-       * Traverses this structure, returning immediately when `visit` returns something other than `null`.
-       */
+    * Traverses this structure, returning immediately when `visit` returns something other than `null`.
+    */
   def traverseFind[T](visit: js.Function1[/* structure */ this.type, T]): T | scala.Null
   /**
-       * Traverses this structure, only visiting children contained in public properties.
-       */
+    * Traverses this structure, only visiting children contained in public properties.
+    */
   def traversePublicParts(visit: js.Function1[/* structure */ this.type, scala.Unit]): scala.Unit
 }
 

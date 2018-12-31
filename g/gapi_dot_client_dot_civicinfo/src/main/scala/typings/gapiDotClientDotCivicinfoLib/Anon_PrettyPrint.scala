@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PrettyPrint extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -18,15 +17,15 @@ trait Anon_PrettyPrint extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * The search query. Queries can cover any parts of a OCD ID or a human readable division name. All words given in the query are treated as required
-                   * patterns. In addition to that, most query operators of the Apache Lucene library are supported. See
-                   * http://lucene.apache.org/core/2_9_4/queryparsersyntax.html
-                   */
+    * The search query. Queries can cover any parts of a OCD ID or a human readable division name. All words given in the query are treated as required
+    * patterns. In addition to that, most query operators of the Apache Lucene library are supported. See
+    * http://lucene.apache.org/core/2_9_4/queryparsersyntax.html
+    */
   var query: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[java.lang.String] = js.undefined

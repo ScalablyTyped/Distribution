@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Hash extends js.Object {
   /** The type of hash that was performed. */
   var `type`: js.UndefOr[java.lang.String] = js.undefined

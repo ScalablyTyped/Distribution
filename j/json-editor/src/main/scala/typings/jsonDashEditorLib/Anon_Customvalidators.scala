@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Customvalidators extends js.Object {
   var custom_validators: js.Array[
     js.Function3[

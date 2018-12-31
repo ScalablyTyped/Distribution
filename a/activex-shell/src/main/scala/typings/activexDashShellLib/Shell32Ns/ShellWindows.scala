@@ -12,14 +12,10 @@ class ShellWindows protected () extends js.Object {
   val Count: scala.Double = js.native
   var `Shell32.ShellWindows_typekey`: ShellWindows = js.native
   /**
-           * Retrieves an InternetExplorer object that represents the Shell window.
-           * @param index Default is 0
-           */
+    * Retrieves an InternetExplorer object that represents the Shell window.
+    * @param index Default is 0
+    */
   def Item(): activexDashShdocvwLib.SHDocVwNs.InternetExplorer = js.native
-  /**
-           * Retrieves an InternetExplorer object that represents the Shell window.
-           * @param index Default is 0
-           */
   def Item(index: scala.Double): activexDashShdocvwLib.SHDocVwNs.InternetExplorer = js.native
 }
 

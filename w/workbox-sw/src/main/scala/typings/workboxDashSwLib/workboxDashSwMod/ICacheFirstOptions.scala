@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * ===== CacheFirst strategy =====
- */
-
-
+  * ===== CacheFirst strategy =====
+  */
 trait ICacheFirstOptions extends ICacheOnlyOptions {
   /**
   	 * Values passed along to the init of all fetch() requests made by this strategy.

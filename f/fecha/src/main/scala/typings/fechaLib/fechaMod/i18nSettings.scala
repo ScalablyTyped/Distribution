@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait i18nSettings extends js.Object {
   var amPm: js.Tuple2[java.lang.String, java.lang.String]
   var dayNames: Days

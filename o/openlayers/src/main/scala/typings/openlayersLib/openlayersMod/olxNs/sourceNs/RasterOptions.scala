@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @api
-         */
-
+  * @api
+  */
 trait RasterOptions extends js.Object {
   var lib: js.UndefOr[openlayersLib.openlayersMod.GlobalObject] = js.undefined
   var operation: js.UndefOr[openlayersLib.openlayersMod.RasterOperation] = js.undefined

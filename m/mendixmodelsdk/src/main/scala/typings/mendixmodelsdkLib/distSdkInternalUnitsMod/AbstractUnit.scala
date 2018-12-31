@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distSdkInternalUnitsMod.IAbstractUnit because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+/* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distSdkInternalUnitsMod.IAbstractUnit because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
 @JSImport("mendixmodelsdk/dist/sdk/internal/units", "AbstractUnit")
 @js.native
 abstract class AbstractUnit protected ()

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ButtonProps[T /* <: reactLib.HTMLElement */]
   extends reactLib.reactMod.ReactNs.HTMLAttributes[T] {
   /**
@@ -16,8 +15,8 @@ trait ButtonProps[T /* <: reactLib.HTMLElement */]
   /**
   	 * The HTML tag for this element. Default: 'span'.
   	 */
-  var tag: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(tagName))) */js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(tagName))) */js.Any
+  var tag: /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.Any
   ] = js.undefined
 }
 

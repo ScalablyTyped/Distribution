@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NetworkType extends js.Object {
   /** 网络是否可用 */
   var networkAvailable: scala.Boolean

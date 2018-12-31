@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(animejsLib.animejsMod.animeNs.AnimeAnimParams because Would inherit conflicting mutable fields List(begin, run, complete, update))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(animejsLib.animejsMod.animeNs.AnimeAnimParams because Would inherit conflicting mutable fields List(begin, complete, run, update))*/
 trait AnimeParams extends AnimeInstanceParams
 

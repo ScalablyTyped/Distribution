@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BlockHeader extends js.Object {
   var extraData: java.lang.String
   var gasLimit: scala.Double

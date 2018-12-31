@@ -25,14 +25,14 @@ abstract class ProximitySensor () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[ProximitySensor, ProximitySensorReadingChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Creates a controller responsible for turning the display on or off based on the ProximitySensorReading .
-                   * @return The controller for the phone display.
-                   */
+    * Creates a controller responsible for turning the display on or off based on the ProximitySensorReading .
+    * @return The controller for the phone display.
+    */
   def createDisplayOnOffController(): ProximitySensorDisplayOnOffController = js.native
   /**
-                   * Gets the current reading for the proximity sensor.
-                   * @return Indicates whether or not the proximity sensor detects an object, and if so, the distance to that object.
-                   */
+    * Gets the current reading for the proximity sensor.
+    * @return Indicates whether or not the proximity sensor detects an object, and if so, the distance to that object.
+    */
   def getCurrentReading(): ProximitySensorReading = js.native
   /** Occurs each time the proximity sensor reports a new value. */
   def onreadingchanged(
@@ -51,21 +51,21 @@ abstract class ProximitySensor () extends js.Object {
 @js.native
 object ProximitySensor extends js.Object {
   /**
-                   * Obtains the proximity sensor from its identifier.
-                   * @param sensorId The sensor identifier.
-                   * @return Returns the ProximitySensor object from its identifier.
-                   */
+    * Obtains the proximity sensor from its identifier.
+    * @param sensorId The sensor identifier.
+    * @return Returns the ProximitySensor object from its identifier.
+    */
   def fromId(sensorId: java.lang.String): winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.ProximitySensor = js.native
   /**
-                   * Gets the device selector.
-                   * @return Returns the device selector. If no device selector is available, this method returns null.
-                   */
+    * Gets the device selector.
+    * @return Returns the device selector. If no device selector is available, this method returns null.
+    */
   def getDeviceSelector(): java.lang.String = js.native
   /**
-                   * Gets readings from the trigger details in background task.
-                   * @param triggerDetails The trigger details received from the background task.
-                   * @return The collection of proximity data retrieved from the trigger details.
-                   */
+    * Gets readings from the trigger details in background task.
+    * @param triggerDetails The trigger details received from the background task.
+    * @return The collection of proximity data retrieved from the trigger details.
+    */
   def getReadingsFromTriggerDetails(triggerDetails: winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.SensorDataThresholdTriggerDetails): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.ProximitySensorReading] = js.native
 }
 

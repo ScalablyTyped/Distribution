@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KnockoutBindingHandlers extends js.Object {
   var alert: AlertKnockoutBindingHandler
   var carousel: CarouselKnockoutBindingHandler

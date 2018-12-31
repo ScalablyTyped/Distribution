@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IJwkRsa extends js.Object {
   var alg: java.lang.String
   var e: java.lang.String

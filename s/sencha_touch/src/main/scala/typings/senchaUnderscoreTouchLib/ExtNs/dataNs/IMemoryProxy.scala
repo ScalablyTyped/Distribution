@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMemoryProxy
   extends senchaUnderscoreTouchLib.ExtNs.dataNs.proxyNs.IClient {
   /** [Config Option] (Object) */

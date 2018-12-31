@@ -10,9 +10,16 @@ import scala.scalajs.js.annotation._
 	* @brief 64位整数对象
 	* @detail 创建方法：,```JavaScript,var n = new Int64(123);,```
 	*/
-
 @JSGlobal("Class_Int64")
 @js.native
+/**
+	 * 
+	 * @brief Int64 构造函数
+	 * @param num 初始化的值
+	 * 
+	 * 
+	 * 
+	 */
 class Class_Int64 () extends Class__object {
   /**
   	 * 
@@ -33,14 +40,6 @@ class Class_Int64 () extends Class__object {
   	 * 
   	 */
   def this(num: java.lang.String) = this()
-  /**
-  	 * 
-  	 * @brief Int64 构造函数
-  	 * @param num 初始化的值
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def this(num: scala.Double) = this()
   /**
   	 * 
@@ -52,15 +51,6 @@ class Class_Int64 () extends Class__object {
   	 * 
   	 */
   def this(hi: scala.Double, lo: scala.Double) = this()
-  /**
-  	 * 
-  	 * @brief Int64 构造函数
-  	 * @param num 数字字符串
-  	 * @param base 数字字符串的编码方式，可以接受 2-16, 32, 64，默认为 10，为 10 时自动识别 0x 编码
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def this(num: java.lang.String, base: scala.Double) = this()
   /**
   	 * class prop 
@@ -191,15 +181,6 @@ class Class_Int64 () extends Class__object {
   	 * 
   	 */
   def toNumber(): scala.Double = js.native
-  /**
-  	 * 
-  	 * @brief 转换成字符串类型
-  	 * @param base 字符串进制数，可以接受 2-16, 32, 64，默认为 10
-  	 * @return 返回转换后的字符串
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def toString(base: scala.Double): java.lang.String = js.native
   /**
   	 * 

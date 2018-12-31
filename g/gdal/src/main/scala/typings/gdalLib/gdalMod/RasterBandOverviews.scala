@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RasterBandOverviews extends js.Object {
   def count(): scala.Double
   def forEach(callback: js.Function2[/* overviewBand */ RasterBand, /* i */ scala.Double, scala.Unit]): scala.Unit

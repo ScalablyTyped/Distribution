@@ -12,8 +12,8 @@ object expectModMembers extends js.Object {
   def any[T](ctor: expectLib.Anon_T[T]): T = js.native
   def assert(condition: scala.Boolean, messageFormat: java.lang.String, extraArgs: js.Any*): scala.Unit = js.native
   def createSpy(): expectLib.expectMod.expectNs.Spy[_] = js.native
-  def createSpy(fn: js.Function1[/* repeated */js.Any, _]): expectLib.expectMod.expectNs.Spy[_] = js.native
-  def createSpy(fn: js.Function1[/* repeated */js.Any, _], restore: js.Function1[/* repeated */js.Any, _]): expectLib.expectMod.expectNs.Spy[_] = js.native
+  def createSpy(fn: js.Function1[/* repeated */ js.Any, _]): expectLib.expectMod.expectNs.Spy[_] = js.native
+  def createSpy(fn: js.Function1[/* repeated */ js.Any, _], restore: js.Function1[/* repeated */ js.Any, _]): expectLib.expectMod.expectNs.Spy[_] = js.native
   def extend(extension: expectLib.expectMod.expectNs.Extension): scala.Unit = js.native
   def isSpy(`object`: js.Object): scala.Boolean = js.native
   def restoreSpies(): scala.Unit = js.native

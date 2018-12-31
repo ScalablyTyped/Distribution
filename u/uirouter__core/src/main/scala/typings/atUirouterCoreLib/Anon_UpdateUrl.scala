@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_UpdateUrl extends js.Object {
   var activateViews: js.Function
   var addCoreResolves: js.Function

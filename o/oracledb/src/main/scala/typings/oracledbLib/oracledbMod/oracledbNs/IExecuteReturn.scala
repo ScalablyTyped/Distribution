@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IExecuteReturn extends js.Object {
   /** Metadata information - column names is always given. If the Oracledb extendedMetaData or execute() option extendedMetaData are true then additional information is included. */
   var metaData: js.UndefOr[js.Array[IMetaData]] = js.undefined

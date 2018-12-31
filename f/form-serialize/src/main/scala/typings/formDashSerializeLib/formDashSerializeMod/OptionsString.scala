@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OptionsString
   extends Options[java.lang.String] {
   @JSName("hash")

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ShowColorBlendMode extends js.Object {
   var clampAnimations: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property | scala.Boolean] = js.undefined
   var clippingPlanes: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined

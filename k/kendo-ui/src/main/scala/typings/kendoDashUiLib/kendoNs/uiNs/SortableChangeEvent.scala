@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SortableChangeEvent extends SortableEvent {
   var action: js.UndefOr[java.lang.String] = js.undefined
   var draggableEvent: js.UndefOr[js.Any] = js.undefined

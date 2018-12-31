@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableOptions extends js.Object {
   var borderless: js.UndefOr[scala.Boolean] = js.undefined
   var countAnsiEscapeCodes: js.UndefOr[scala.Boolean] = js.undefined

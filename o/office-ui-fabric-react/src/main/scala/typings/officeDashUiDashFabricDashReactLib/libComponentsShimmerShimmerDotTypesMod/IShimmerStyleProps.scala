@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IShimmerStyleProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var isDataLoaded: js.UndefOr[scala.Boolean] = js.undefined

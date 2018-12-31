@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IcheckJsApi extends BaseParams {
   var jsApiList: jsApiList
    // 需要检测的JS接口列表，所有JS接口列表见附录2,

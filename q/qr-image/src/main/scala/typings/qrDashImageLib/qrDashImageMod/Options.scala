@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var ec_level: js.UndefOr[ec_level] = js.undefined
   		// (png and svg only) for png and undefined for svg.-(png and svg only) — size of one module in pixels.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HystrixConfig extends js.Object {
   def circuitBreakerErrorThresholdPercentage(): scala.Double
   def circuitBreakerForceClosed(): scala.Boolean

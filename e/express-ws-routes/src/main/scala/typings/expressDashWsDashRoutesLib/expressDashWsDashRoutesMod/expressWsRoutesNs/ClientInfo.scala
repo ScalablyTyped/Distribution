@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClientInfo extends js.Object {
   var origin: java.lang.String
   var req: expressLib.expressMod.eNs.Request

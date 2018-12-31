@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridsterOptions extends js.Object {
   /**
-       * A boolean to specify if the stylesheet should be generated or not
-       **/
+    * A boolean to specify if the stylesheet should be generated or not
+    **/
   var autogenerate_stylesheet: js.UndefOr[scala.Boolean] = js.undefined
   /**
   	* If true, all the CSS required to  osition  	l widgets in their respective col umns and rows will be generated automatically and injectedt the<head> of thed cument.You can set this to false, and write your own CSS targeting rows and cols via data - attributes like so: [data - col = "1"] { left: 10px; }
@@ -64,8 +63,8 @@ trait GridsterOptions extends js.Object {
   	**/
   var namespace: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * An object with all options for Resizable class you want to overwrite.  @see GridsterResizable or docs for more info.
-       **/
+    * An object with all options for Resizable class you want to overwrite.  @see GridsterResizable or docs for more info.
+    **/
   var resize: js.UndefOr[GridsterResizable] = js.undefined
   /**
   	* Return the data you want for each widget in the serialization.

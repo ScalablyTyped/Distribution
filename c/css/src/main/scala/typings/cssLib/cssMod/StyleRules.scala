@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StyleRules extends js.Object {
   /** Array of Errors. Errors collected during parsing when option silent is true. */
   var parsingErrors: js.UndefOr[js.Array[ParserError]] = js.undefined

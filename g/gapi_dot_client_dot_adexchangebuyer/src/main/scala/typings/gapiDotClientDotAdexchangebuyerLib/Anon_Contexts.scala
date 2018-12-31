@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Contexts extends js.Object {
   /** All known serving contexts containing serving status information. */
   var contexts: js.UndefOr[js.Array[Anon_Platform]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlotScatterDataPoint extends js.Object {
   var curveNumber: scala.Double
   var data: PlotData

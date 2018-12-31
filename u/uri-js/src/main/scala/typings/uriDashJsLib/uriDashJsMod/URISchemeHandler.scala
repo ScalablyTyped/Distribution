@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait URISchemeHandler[Components /* <: URIComponents */, Options /* <: URIOptions */, ParentComponents /* <: URIComponents */] extends js.Object {
   var absolutePath: js.UndefOr[scala.Boolean] = js.undefined
   var domainHost: js.UndefOr[scala.Boolean] = js.undefined

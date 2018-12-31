@@ -17,7 +17,7 @@ trait Pool extends EscapeFunctions {
   def end(): scala.Unit = js.native
   def end(callback: js.Function1[/* err */ MysqlError, scala.Unit]): scala.Unit = js.native
   def getConnection(callback: js.Function2[/* err */ MysqlError, /* connection */ PoolConnection, scala.Unit]): scala.Unit = js.native
-  def on(ev: java.lang.String, callback: js.Function1[/* repeated */js.Any, scala.Unit]): Pool = js.native
+  def on(ev: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): Pool = js.native
   @JSName("on")
   def on_acquire(
     ev: mysqlLib.mysqlLibStrings.acquire,

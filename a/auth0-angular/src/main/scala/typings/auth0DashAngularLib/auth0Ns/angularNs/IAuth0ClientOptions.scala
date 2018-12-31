@@ -5,27 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAuth0ClientOptions extends js.Object {
   /**
-          * Client identifier of your Auth0 application
-          */
+    * Client identifier of your Auth0 application
+    */
   var clientID: java.lang.String
   /**
-          * Domain of your Auth0 account
-          */
+    * Domain of your Auth0 account
+    */
   var domain: java.lang.String
   /**
-          * Login state if you're using ui-router
-          */
+    * Login state if you're using ui-router
+    */
   var loginState: js.UndefOr[java.lang.String] = js.undefined
   /**
-          * Login url if you're using ngRoute
-          */
+    * Login url if you're using ngRoute
+    */
   var loginUrl: js.UndefOr[java.lang.String] = js.undefined
   /**
-          * Use single signon
-          */
+    * Use single signon
+    */
   var sso: js.UndefOr[scala.Boolean] = js.undefined
 }
 

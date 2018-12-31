@@ -12,11 +12,11 @@ trait JQuery extends js.Object {
   def DataTable(): datatablesDotNetLib.DataTablesNs.Api = js.native
   def DataTable(opts: datatablesDotNetLib.DataTablesNs.Settings): datatablesDotNetLib.DataTablesNs.Api = js.native
   /**
-           * Returns JQuery object
-           *
-           * Usage:
-           * $( selector ).dataTable();
-           */
+    * Returns JQuery object
+    *
+    * Usage:
+    * $( selector ).dataTable();
+    */
   def dataTable(): datatablesDotNetLib.DataTablesNs.JQueryDataTables = js.native
 }
 

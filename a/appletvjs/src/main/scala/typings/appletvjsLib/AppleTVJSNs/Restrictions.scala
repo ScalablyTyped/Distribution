@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Restrictions extends js.Object {
   /** A boolean value that indicates if explicit media is allowed. */
   var allowsExplicit: scala.Boolean

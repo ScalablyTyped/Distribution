@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Cors extends js.Object {
   var cacheMaxAge: js.UndefOr[scala.Double] = js.undefined
   var requestHeaders: js.UndefOr[js.Array[java.lang.String]] = js.undefined

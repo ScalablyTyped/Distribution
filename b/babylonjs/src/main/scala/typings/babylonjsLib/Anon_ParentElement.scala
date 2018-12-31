@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ParentElement extends js.Object {
   var initialTab: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var newColors: js.UndefOr[Anon_BackgroundColor] = js.undefined

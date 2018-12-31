@@ -23,8 +23,8 @@ object CSGNsMembers extends js.Object {
   def parseOptionAsFloat(options: js.Any, optionname: js.Any, defaultvalue: js.Any): js.Any = js.native
   def parseOptionAsInt(options: js.Any, optionname: js.Any, defaultvalue: js.Any): js.Any = js.native
   /**
-       * polyhedron accepts openscad style arguments. I.e. define face vertices clockwise looking from outside
-       */
+    * polyhedron accepts openscad style arguments. I.e. define face vertices clockwise looking from outside
+    */
   def polyhedron(options: js.Any): openjscadLib.CSG = js.native
   def reTesselateCoplanarPolygons(sourcepolygons: js.Array[Polygon], destpolygons: js.Array[Polygon]): scala.Unit = js.native
   def roundedCube(options: js.Any): openjscadLib.CSG = js.native

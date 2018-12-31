@@ -6,25 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * htmlparser2 tree adapter TextNode interface.
-     */
-
+  * htmlparser2 tree adapter TextNode interface.
+  */
 trait TextNode extends Node {
   /**
-           * Text content.
-           */
+    * Text content.
+    */
   var data: java.lang.String
   /**
-           * The name of the node.
-           */
+    * The name of the node.
+    */
   var name: parse5DashHtmlparser2DashTreeDashAdapterLib.parse5DashHtmlparser2DashTreeDashAdapterLibStrings.text
   /**
-           * Same as {@link data}. [DOM spec](https://dom.spec.whatwg.org)-compatible alias.
-           */
+    * Same as {@link data}. [DOM spec](https://dom.spec.whatwg.org)-compatible alias.
+    */
   var nodeValue: java.lang.String
   /**
-           * Comment source code location info. Available if location info is enabled via ParserOptions.
-           */
+    * Comment source code location info. Available if location info is enabled via ParserOptions.
+    */
   var sourceCodeLocation: js.UndefOr[parse5Lib.parse5Mod.Location] = js.undefined
 }
 

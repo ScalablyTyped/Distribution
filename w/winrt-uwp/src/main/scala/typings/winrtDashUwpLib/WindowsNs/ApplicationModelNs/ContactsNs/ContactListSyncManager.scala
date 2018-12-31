@@ -33,9 +33,9 @@ abstract class ContactListSyncManager () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[ContactListSyncManager, _]
   ): scala.Unit = js.native
   /**
-                   * Asynchronously attempts to sync with the contacts server.
-                   * @return A Boolean value indicating if the sync was successful.
-                   */
+    * Asynchronously attempts to sync with the contacts server.
+    * @return A Boolean value indicating if the sync was successful.
+    */
   def syncAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
 }
 

@@ -35,13 +35,6 @@ trait Wol extends js.Object {
   		 * @param {ErrorCallback} callback is called when all packets have been sent or an error occurs.
   		 */
   def wake(macAddress: java.lang.String, opts: WakeOptions): scala.Unit = js.native
-  /**
-  		 * Send a sequence of Wake-on-LAN magic packets to the given MAC address.
-  		 *
-  		 * @param {string} macAddress the mac address of the target device
-  		 * @param {WakeOptions} opts additional options to send the packet
-  		 * @param {ErrorCallback} callback is called when all packets have been sent or an error occurs.
-  		 */
   def wake(macAddress: java.lang.String, opts: WakeOptions, callback: js.Function): scala.Unit = js.native
 }
 

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * Represents a YAML exception
-             */
+  * Represents a YAML exception
+  */
 @JSGlobal("adone.data.yaml.Exception")
 @js.native
 class Exception protected ()

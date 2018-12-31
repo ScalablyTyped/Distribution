@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Configuration extends js.Object {
   var appenders: org.scalablytyped.runtime.StringDictionary[Appender]
   var categories: org.scalablytyped.runtime.StringDictionary[log4jsLib.Anon_Level]

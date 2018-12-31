@@ -21,10 +21,6 @@ class Quest () extends js.Object {
   		 * @since AppServer 82290, ChatServer 82290
   		 */
   def setSolved(): scala.Unit = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Quest.html#method_setSolved
-  		 * @since AppServer 82290, ChatServer 82290
-  		 */
   def setSolved(count: scala.Double): scala.Unit = js.native
 }
 

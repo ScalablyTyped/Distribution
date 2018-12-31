@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReflectionContainer extends js.Object {
   var flags: ReflectionFlagsObject
   var id: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IonMenuShareTimeline extends BaseParams {
    // 分享链接
   var imgUrl: java.lang.String

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ImageFittingMode extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.2]
-     */
+  * [Api set: ExcelApi 1.2]
+  */
 @JSGlobal("Excel.ImageFittingMode")
 @js.native
 object ImageFittingMode extends js.Object {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomPropertyItems extends CustomPropertyCommon {
   var items: org.scalablytyped.runtime.StringDictionary[CustomProperty]
   @JSName("type")

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IdownloadImage extends BaseParams {
    // 需要下载的图片的服务器端ID，由uploadImage接口获得
   var isShowProgressTips: scala.Double

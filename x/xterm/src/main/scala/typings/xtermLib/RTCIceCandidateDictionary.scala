@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RTCIceCandidateDictionary extends js.Object {
   var foundation: js.UndefOr[java.lang.String] = js.undefined
   var ip: js.UndefOr[java.lang.String] = js.undefined

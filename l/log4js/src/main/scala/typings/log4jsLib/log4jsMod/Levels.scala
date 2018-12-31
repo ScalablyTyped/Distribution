@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Levels extends js.Object {
   var ALL: Level
   var DEBUG: Level

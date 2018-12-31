@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Operation extends BaseElement {
   var errorRef: ErrorElement
   var implementationRef: java.lang.String

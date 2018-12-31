@@ -8,13 +8,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_SessionLength
   extends /**
-         * - @param session (Document): The document to associate with the anchor
-         * - @param length (Number): The starting row position
-         * - @param pos (Number): The starting column position
-         * - @param others (String):
-         * - @param mainClass (String):
-         * - @param othersClass (String):
-        **/
+  * - @param session (Document): The document to associate with the anchor
+  * - @param length (Number): The starting row position
+  * - @param pos (Number): The starting column position
+  * - @param others (String):
+  * - @param mainClass (String):
+  * - @param othersClass (String):
+  **/
 org.scalablytyped.runtime.Instantiable6[
       /* session */ braceLib.braceMod.AceAjaxNs.Document, 
       /* length */ scala.Double, 

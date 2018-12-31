@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IModel
   extends senchaUnderscoreTouchLib.ExtNs.mixinNs.IObservable {
   /** [Config Option] (Object[]) */

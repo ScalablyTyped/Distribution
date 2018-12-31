@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HintOptions extends js.Object {
   var content: js.UndefOr[js.Function1[/* item */ java.lang.String, htmlElement | jqueryLib.JQueryNs.Node]] = js.undefined
   var `match`: stdLib.RegExp

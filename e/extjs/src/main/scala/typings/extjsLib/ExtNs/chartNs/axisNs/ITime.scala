@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITime extends INumeric {
   /** [Config Option] (String/Boolean) */
   var dateFormat: js.UndefOr[js.Any] = js.undefined

@@ -9,10 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object Global extends js.Object {
   // https://github.com/emberjs/ember.js/blob/master/packages/ember-testing/lib/helpers/and_then.js
-  def andThen[T](callback: js.Function1[/* repeated */js.Any, T]): rsvpLib.rsvpMod.defaultNs.Promise[T] = js.native
+  def andThen[T](callback: js.Function1[/* repeated */ js.Any, T]): rsvpLib.rsvpMod.defaultNs.Promise[T] = js.native
   // https://github.com/emberjs/ember.js/blob/master/packages/ember-testing/lib/helpers/click.js
   def click(selector: java.lang.String): emberDashTestingDashHelpersLib.WaitResult[scala.Unit] = js.native
-  // https://github.com/emberjs/ember.js/blob/master/packages/ember-testing/lib/helpers/click.js
   def click(selector: java.lang.String, context: js.Object): emberDashTestingDashHelpersLib.WaitResult[scala.Unit] = js.native
   // https://github.com/emberjs/ember.js/blob/master/packages/ember-testing/lib/helpers/current_path.js
   def currentPath(): java.lang.String = js.native
@@ -25,11 +24,9 @@ object Global extends js.Object {
   def fillIn(selector: java.lang.String, text: java.lang.String): emberDashTestingDashHelpersLib.WaitResult[scala.Unit] = js.native
   // https://github.com/emberjs/ember.js/blob/master/packages/ember-testing/lib/helpers/find.js
   def find(selector: java.lang.String): jqueryLib.JQuery[stdLib.Node] = js.native
-  // https://github.com/emberjs/ember.js/blob/master/packages/ember-testing/lib/helpers/find.js
   def find(selector: java.lang.String, context: js.Object): jqueryLib.JQuery[stdLib.Node] = js.native
   // https://github.com/emberjs/ember.js/blob/master/packages/ember-testing/lib/helpers/find_with_assert.js
   def findWithAssert(selector: java.lang.String): jqueryLib.JQuery[stdLib.Node] = js.native
-  // https://github.com/emberjs/ember.js/blob/master/packages/ember-testing/lib/helpers/find_with_assert.js
   def findWithAssert(selector: java.lang.String, context: js.Object): jqueryLib.JQuery[stdLib.Node] = js.native
   // https://github.com/emberjs/ember.js/blob/master/packages/ember-testing/lib/helpers/key_event.js
   def keyEvent(

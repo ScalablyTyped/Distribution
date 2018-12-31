@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICookie extends js.Object {
   var domain: js.UndefOr[java.lang.String] = js.undefined
   var expirationDate: js.UndefOr[scala.Double] = js.undefined

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line: interface-name
-
 trait IColumnInfo extends js.Object {
   /** Column identifier */
   var columnKey: java.lang.String
@@ -15,8 +14,8 @@ trait IColumnInfo extends js.Object {
   /** Field keys of the fields, that are displayed in this column */
   var fieldKeys: js.Array[java.lang.String]
   /** Column image URL.
-                  If not null, the column header cell will show the image instead of title text.
-                  If the title is defined at the same time as the imgSrc, the title will be shown as a tooltip. */
+    If not null, the column header cell will show the image instead of title text.
+    If the title is defined at the same time as the imgSrc, the title will be shown as a tooltip. */
   var imgSrc: js.UndefOr[java.lang.String] = js.undefined
   /** true by default */
   var isAutoFilterable: js.UndefOr[scala.Boolean] = js.undefined

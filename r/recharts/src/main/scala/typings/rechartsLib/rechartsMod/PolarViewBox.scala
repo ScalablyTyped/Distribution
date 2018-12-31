@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PolarViewBox extends js.Object {
   var cx: js.UndefOr[scala.Double] = js.undefined
   var cy: js.UndefOr[scala.Double] = js.undefined

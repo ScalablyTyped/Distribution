@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RSAESOAEPParams extends js.Object {
   var hashAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default
   var maskGenAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class SensorDataThresholdTrigger protected () extends js.Object {
   /**
-                   * Initializes a new instance of the SensorDataThresholdTrigger class.
-                   * @param threshold The threshold for a sensor that indicates when it should be triggered.
-                   */
+    * Initializes a new instance of the SensorDataThresholdTrigger class.
+    * @param threshold The threshold for a sensor that indicates when it should be triggered.
+    */
   def this(threshold: winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.ISensorDataThreshold) = this()
 }
 

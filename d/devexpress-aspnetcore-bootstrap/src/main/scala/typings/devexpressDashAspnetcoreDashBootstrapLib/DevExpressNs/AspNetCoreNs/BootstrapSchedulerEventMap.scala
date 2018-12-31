@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BootstrapSchedulerEventMap extends ControlEventMap {
   var activeViewChanged: EventArgs
   var activeViewChanging: ActiveViewChangingEventArgs

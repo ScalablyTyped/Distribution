@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContextMenuOptions extends js.Object {
   var activate: js.UndefOr[js.Function1[/* e */ ContextMenuActivateEvent, scala.Unit]] = js.undefined
   var alignToAnchor: js.UndefOr[scala.Boolean] = js.undefined

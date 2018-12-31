@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ParentAccesstokenPageSize extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -19,21 +18,21 @@ trait Anon_ParentAccesstokenPageSize extends js.Object {
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * A list of device string identifiers. If empty, it will ignore this field.
-                   * For example, `['device0', 'device12']`. This field cannot hold more than
-                   * 10,000 entries.
-                   */
+    * A list of device string identifiers. If empty, it will ignore this field.
+    * For example, `['device0', 'device12']`. This field cannot hold more than
+    * 10,000 entries.
+    */
   var deviceIds: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * A list of device numerical ids. If empty, it will ignore this field. This
-                   * field cannot hold more than 10,000 entries.
-                   */
+    * A list of device numerical ids. If empty, it will ignore this field. This
+    * field cannot hold more than 10,000 entries.
+    */
   var deviceNumIds: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The fields of the `Device` resource to be returned in the response. The
-                   * fields `id`, and `num_id` are always returned by default, along with any
-                   * other fields specified.
-                   */
+    * The fields of the `Device` resource to be returned in the response. The
+    * fields `id`, and `num_id` are always returned by default, along with any
+    * other fields specified.
+    */
   var fieldMask: js.UndefOr[java.lang.String] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
@@ -42,22 +41,22 @@ trait Anon_ParentAccesstokenPageSize extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The maximum number of devices to return in the response. If this value
-                   * is zero, the service will select a default size. A call may return fewer
-                   * objects than requested, but if there is a non-empty `page_token`, it
-                   * indicates that more entries are available.
-                   */
+    * The maximum number of devices to return in the response. If this value
+    * is zero, the service will select a default size. A call may return fewer
+    * objects than requested, but if there is a non-empty `page_token`, it
+    * indicates that more entries are available.
+    */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * The value returned by the last `ListDevicesResponse`; indicates
-                   * that this is a continuation of a prior `ListDevices` call, and
-                   * that the system should return the next page of data.
-                   */
+    * The value returned by the last `ListDevicesResponse`; indicates
+    * that this is a continuation of a prior `ListDevices` call, and
+    * that the system should return the next page of data.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The device registry path. Required. For example,
-                   * `projects/my-project/locations/us-central1/registries/my-registry`.
-                   */
+    * The device registry path. Required. For example,
+    * `projects/my-project/locations/us-central1/registries/my-registry`.
+    */
   var parent: java.lang.String
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

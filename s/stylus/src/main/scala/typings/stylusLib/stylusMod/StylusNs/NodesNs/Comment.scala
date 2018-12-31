@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Comment extends Node {
   var `inline`: scala.Boolean
   var str: java.lang.String

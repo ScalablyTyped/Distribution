@@ -11,20 +11,17 @@ trait HTMLAllCollection
   @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator: js.Function0[IterableIterator[Element]] = js.native
   /**
-       * Returns the number of elements in the collection.
-       */
+    * Returns the number of elements in the collection.
+    */
   val length: scala.Double = js.native
   /**
-       * element = collection(index)
-       */
+    * element = collection(index)
+    */
   def item(): HTMLCollection | Element | scala.Null = js.native
-  /**
-       * element = collection(index)
-       */
   def item(nameOrIndex: java.lang.String): HTMLCollection | Element | scala.Null = js.native
   /**
-       * element = collection(name)
-       */
+    * element = collection(name)
+    */
   def namedItem(name: java.lang.String): HTMLCollection | Element | scala.Null = js.native
 }
 

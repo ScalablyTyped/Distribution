@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRotate extends IAbstract {
   /** [Method] Placeholder method
   		* @param e Object

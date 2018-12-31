@@ -38,9 +38,9 @@ class CanvasShapes protected () extends js.Object {
   ): Shape = js.native
   def AddLine(BeginX: scala.Double, BeginY: scala.Double, EndX: scala.Double, EndY: scala.Double): Shape = js.native
   /**
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
+    * @param number [Width=-1]
+    * @param number [Height=-1]
+    */
   def AddPicture(
     FileName: java.lang.String,
     LinkToFile: activexDashOfficeLib.OfficeNs.MsoTriState,
@@ -48,10 +48,6 @@ class CanvasShapes protected () extends js.Object {
     Left: scala.Double,
     Top: scala.Double
   ): Shape = js.native
-  /**
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddPicture(
     FileName: java.lang.String,
     LinkToFile: activexDashOfficeLib.OfficeNs.MsoTriState,
@@ -60,10 +56,6 @@ class CanvasShapes protected () extends js.Object {
     Top: scala.Double,
     Width: scala.Double
   ): Shape = js.native
-  /**
-           * @param number [Width=-1]
-           * @param number [Height=-1]
-           */
   def AddPicture(
     FileName: java.lang.String,
     LinkToFile: activexDashOfficeLib.OfficeNs.MsoTriState,

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Select2 extends js.Object {
   @JSName("$container")
   var $container: select2Lib.select2Mod.Global.JQuery[stdLib.HTMLElement]

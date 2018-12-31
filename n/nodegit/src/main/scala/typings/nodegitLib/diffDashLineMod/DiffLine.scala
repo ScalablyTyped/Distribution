@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class DiffLine () extends js.Object {
   /**
-       * The relevant line
-       *
-       *
-       */
+    * The relevant line
+    *
+    *
+    */
   def content(): java.lang.String = js.native
   def contentLen(): scala.Double = js.native
   def contentOffset(): scala.Double = js.native
@@ -21,10 +21,10 @@ class DiffLine () extends js.Object {
   def oldLineno(): scala.Double = js.native
   def origin(): scala.Double = js.native
   /**
-       * The non utf8 translated text
-       *
-       *
-       */
+    * The non utf8 translated text
+    *
+    *
+    */
   def rawContent(): java.lang.String = js.native
 }
 

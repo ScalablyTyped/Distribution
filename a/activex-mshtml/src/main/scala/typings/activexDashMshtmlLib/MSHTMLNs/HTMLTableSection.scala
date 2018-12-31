@@ -248,7 +248,6 @@ class HTMLTableSection protected () extends js.Object {
   def createControlRange(): js.Any = js.native
   /** @param index [index=-1] */
   def deleteRow(): scala.Unit = js.native
-  /** @param index [index=-1] */
   def deleteRow(index: scala.Double): scala.Unit = js.native
   def detachEvent(event: java.lang.String, pdisp: js.Any): scala.Unit = js.native
   def doScroll(): scala.Unit = js.native
@@ -259,7 +258,6 @@ class HTMLTableSection protected () extends js.Object {
   def getAdjacentText(where: java.lang.String): java.lang.String = js.native
   /** @param lFlags [lFlags=0] */
   def getAttribute(strAttributeName: java.lang.String): js.Any = js.native
-  /** @param lFlags [lFlags=0] */
   def getAttribute(strAttributeName: java.lang.String, lFlags: scala.Double): js.Any = js.native
   def getAttributeNS(pvarNS: js.Any, strAttributeName: java.lang.String): js.Any = js.native
   def getAttributeNode(bstrName: java.lang.String): IHTMLDOMAttribute = js.native
@@ -282,7 +280,6 @@ class HTMLTableSection protected () extends js.Object {
   def ie8_setAttributeNode(pattr: IHTMLDOMAttribute2): IHTMLDOMAttribute2 = js.native
   /** @param index [index=-1] */
   def ie9_deleteRow(): scala.Unit = js.native
-  /** @param index [index=-1] */
   def ie9_deleteRow(index: scala.Double): scala.Unit = js.native
   def ie9_getAttribute(strAttributeName: java.lang.String): js.Any = js.native
   def ie9_getAttributeNode(strAttributeName: java.lang.String): IHTMLDOMAttribute2 = js.native
@@ -290,7 +287,6 @@ class HTMLTableSection protected () extends js.Object {
   def ie9_hasAttributes(): scala.Boolean = js.native
   /** @param index [index=-1] */
   def ie9_insertRow(): js.Any = js.native
-  /** @param index [index=-1] */
   def ie9_insertRow(index: scala.Double): js.Any = js.native
   def ie9_removeAttribute(strAttributeName: java.lang.String): scala.Unit = js.native
   def ie9_removeAttributeNode(pattr: IHTMLDOMAttribute2): IHTMLDOMAttribute2 = js.native
@@ -303,24 +299,15 @@ class HTMLTableSection protected () extends js.Object {
   def insertBefore(newChild: IHTMLDOMNode, refChild: js.Any): IHTMLDOMNode = js.native
   /** @param index [index=-1] */
   def insertRow(): js.Any = js.native
-  /** @param index [index=-1] */
   def insertRow(index: scala.Double): js.Any = js.native
   def mergeAttributes(mergeThis: IHTMLElement): scala.Unit = js.native
   def mergeAttributes(mergeThis: IHTMLElement, pvarFlags: js.Any): scala.Unit = js.native
   /**
-           * @param indexFrom [indexFrom=-1]
-           * @param indexTo [indexTo=-1]
-           */
+    * @param indexFrom [indexFrom=-1]
+    * @param indexTo [indexTo=-1]
+    */
   def moveRow(): js.Any = js.native
-  /**
-           * @param indexFrom [indexFrom=-1]
-           * @param indexTo [indexTo=-1]
-           */
   def moveRow(indexFrom: scala.Double): js.Any = js.native
-  /**
-           * @param indexFrom [indexFrom=-1]
-           * @param indexTo [indexTo=-1]
-           */
   def moveRow(indexFrom: scala.Double, indexTo: scala.Double): js.Any = js.native
   def msMatchesSelector(v: java.lang.String): scala.Boolean = js.native
   def msReleasePointerCapture(pointerId: scala.Double): scala.Unit = js.native
@@ -329,7 +316,6 @@ class HTMLTableSection protected () extends js.Object {
   def releaseCapture(): scala.Unit = js.native
   /** @param lFlags [lFlags=1] */
   def removeAttribute(strAttributeName: java.lang.String): scala.Boolean = js.native
-  /** @param lFlags [lFlags=1] */
   def removeAttribute(strAttributeName: java.lang.String, lFlags: scala.Double): scala.Boolean = js.native
   def removeAttributeNS(pvarNS: js.Any, strAttributeName: java.lang.String): scala.Unit = js.native
   def removeAttributeNode(pattr: IHTMLDOMAttribute): IHTMLDOMAttribute = js.native
@@ -339,7 +325,6 @@ class HTMLTableSection protected () extends js.Object {
   def removeFilter(pUnk: js.Any): scala.Unit = js.native
   /** @param fDeep [fDeep=false] */
   def removeNode(): IHTMLDOMNode = js.native
-  /** @param fDeep [fDeep=false] */
   def removeNode(fDeep: scala.Boolean): IHTMLDOMNode = js.native
   def replaceAdjacentText(where: java.lang.String, newText: java.lang.String): java.lang.String = js.native
   def replaceChild(newChild: IHTMLDOMNode, oldChild: IHTMLDOMNode): IHTMLDOMNode = js.native
@@ -352,18 +337,15 @@ class HTMLTableSection protected () extends js.Object {
   def setActive(): scala.Unit = js.native
   /** @param lFlags [lFlags=1] */
   def setAttribute(strAttributeName: java.lang.String, AttributeValue: js.Any): scala.Unit = js.native
-  /** @param lFlags [lFlags=1] */
   def setAttribute(strAttributeName: java.lang.String, AttributeValue: js.Any, lFlags: scala.Double): scala.Unit = js.native
   def setAttributeNS(pvarNS: js.Any, strAttributeName: java.lang.String, pvarAttributeValue: js.Any): scala.Unit = js.native
   def setAttributeNode(pattr: IHTMLDOMAttribute): IHTMLDOMAttribute = js.native
   def setAttributeNodeNS(pattr: IHTMLDOMAttribute2): IHTMLDOMAttribute2 = js.native
   /** @param containerCapture [containerCapture=true] */
   def setCapture(): scala.Unit = js.native
-  /** @param containerCapture [containerCapture=true] */
   def setCapture(containerCapture: scala.Boolean): scala.Unit = js.native
   /** @param language [language=''] */
   def setExpression(propname: java.lang.String, expression: java.lang.String): scala.Unit = js.native
-  /** @param language [language=''] */
   def setExpression(propname: java.lang.String, expression: java.lang.String, language: java.lang.String): scala.Unit = js.native
   def swapNode(otherNode: IHTMLDOMNode): IHTMLDOMNode = js.native
 }

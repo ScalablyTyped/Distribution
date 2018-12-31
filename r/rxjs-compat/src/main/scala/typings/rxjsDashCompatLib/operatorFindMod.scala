@@ -20,12 +20,12 @@ object operatorFindMod extends js.Object {
   @JSName("find")
   def find_TST[T, S /* <: T */](
     `this`: rxjsLib.rxjsMod.Observable[T],
-    predicate: js.Function2[/* value */ T, /* index */ scala.Double, /* is S */scala.Boolean]
+    predicate: js.Function2[/* value */ T, /* index */ scala.Double, /* is S */ scala.Boolean]
   ): rxjsLib.rxjsMod.Observable[js.UndefOr[S]] = js.native
   @JSName("find")
   def find_TST[T, S /* <: T */](
     `this`: rxjsLib.rxjsMod.Observable[T],
-    predicate: js.Function2[/* value */ T, /* index */ scala.Double, /* is S */scala.Boolean],
+    predicate: js.Function2[/* value */ T, /* index */ scala.Double, /* is S */ scala.Boolean],
     thisArg: js.Any
   ): rxjsLib.rxjsMod.Observable[js.UndefOr[S]] = js.native
 }

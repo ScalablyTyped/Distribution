@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HeapStatistics extends js.Object {
   var doesZapGarbage: scala.Boolean
   var heapSizeLimit: scala.Double

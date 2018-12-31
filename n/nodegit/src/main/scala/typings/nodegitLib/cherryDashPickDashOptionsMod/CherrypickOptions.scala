@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CherrypickOptions extends js.Object {
   var checkoutOpts: js.UndefOr[nodegitLib.checkoutDashOptionsMod.CheckoutOptions] = js.undefined
   var mainline: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ErrorPayloadObject extends PayloadObject {
   @JSName("error")
   var error_ErrorPayloadObject: SerializerError

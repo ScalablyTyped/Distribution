@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FetcherOperation extends js.Object {
   var context: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var operationName: js.UndefOr[java.lang.String] = js.undefined

@@ -13,12 +13,12 @@ trait CookiesFunction
       Cookies
     ]
      with /**
-     * "options" array of key strings is deprecated, provide using options {"keys": keygrip}
-     */
+  * "options" array of key strings is deprecated, provide using options {"keys": keygrip}
+  */
 // tslint:disable-next-line:unified-signatures
 /**
-     * "options" instance of Keygrip is deprecated, provide using options {"keys": keygrip}
-     */
+  * "options" instance of Keygrip is deprecated, provide using options {"keys": keygrip}
+  */
 org.scalablytyped.runtime.Instantiable3[
       /* request */ nodeLib.httpMod.IncomingMessage, 
       /* response */ nodeLib.httpMod.ServerResponse, 
@@ -33,8 +33,8 @@ org.scalablytyped.runtime.Instantiable3[
     options: cookiesLib.cookiesMod.CookiesNs.Option
   ): Cookies = js.native
   /**
-       * "options" array of key strings is deprecated, provide using options {"keys": keygrip}
-       */
+    * "options" array of key strings is deprecated, provide using options {"keys": keygrip}
+    */
   // tslint:disable-next-line:unified-signatures
   def apply(
     request: nodeLib.httpMod.IncomingMessage,
@@ -42,8 +42,8 @@ org.scalablytyped.runtime.Instantiable3[
     options: js.Array[java.lang.String]
   ): Cookies = js.native
   /**
-       * "options" instance of Keygrip is deprecated, provide using options {"keys": keygrip}
-       */
+    * "options" instance of Keygrip is deprecated, provide using options {"keys": keygrip}
+    */
   // tslint:disable-next-line:unified-signatures
   def apply(
     request: nodeLib.httpMod.IncomingMessage,

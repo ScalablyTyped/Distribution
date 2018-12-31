@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Image extends js.Object {
   def addClickHandler(handler: Handler): Image
   def addErrorHandler(handler: Handler): Image

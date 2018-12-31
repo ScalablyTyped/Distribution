@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilterOptions extends js.Object {
   /** Variable to contain the current search filter */
   var filterText: js.UndefOr[knockoutLib.KnockoutObservable[java.lang.String]] = js.undefined

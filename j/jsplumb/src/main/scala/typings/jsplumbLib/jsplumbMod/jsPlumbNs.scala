@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jsplumb", "jsPlumb")
 @js.native
 object jsPlumbNs extends js.Object {
-  
   trait Anchor extends js.Object {
     var cssClass: java.lang.String
     var elementId: java.lang.String
@@ -22,10 +21,7 @@ object jsPlumbNs extends js.Object {
   }
   
   /* -------------------------------------------- ANCHORS -------------------------------------------------------- */
-  
-  
   trait AnchorOptions extends js.Object
-  
   
   trait ArrowOverlayOptions extends OverlayOptions {
      // 0.5
@@ -41,7 +37,6 @@ object jsPlumbNs extends js.Object {
     var width: js.UndefOr[scala.Double] = js.undefined
   }
   
-  
   trait ConnectParams extends js.Object {
     var anchor: js.UndefOr[AnchorSpec] = js.undefined
     var anchors: js.UndefOr[js.Tuple2[AnchorSpec, AnchorSpec]] = js.undefined
@@ -54,7 +49,6 @@ object jsPlumbNs extends js.Object {
     var target: js.UndefOr[ElementRef | Endpoint] = js.undefined
     var uuids: js.UndefOr[js.Tuple2[UUID, UUID]] = js.undefined
   }
-  
   
   trait Connection extends js.Object {
     var endpoints: js.Tuple2[Endpoint, Endpoint]
@@ -69,7 +63,6 @@ object jsPlumbNs extends js.Object {
     def showOverlay(s: java.lang.String): scala.Unit
   }
   
-  
   trait ConnectionMadeEventInfo extends js.Object {
     var connection: Connection
     var source: stdLib.HTMLDivElement
@@ -80,7 +73,6 @@ object jsPlumbNs extends js.Object {
     var targetId: java.lang.String
   }
   
-  
   trait Connections extends js.Object {
     var length: scala.Double
     def detach(): scala.Unit
@@ -88,10 +80,7 @@ object jsPlumbNs extends js.Object {
   }
   
   /* -------------------------------------------- CONNECTORS ---------------------------------------------------- */
-  
-  
   trait ConnectorOptions extends js.Object
-  
   
   trait Defaults extends js.Object {
     var Anchor: js.UndefOr[AnchorSpec] = js.undefined
@@ -111,7 +100,6 @@ object jsPlumbNs extends js.Object {
     var ReattachConnections: js.UndefOr[scala.Boolean] = js.undefined
   }
   
-  
   trait DragEventCallbackOptions extends js.Object {
     var drag: js.Object
      // The associated Drag instance
@@ -120,7 +108,6 @@ object jsPlumbNs extends js.Object {
      // element being dragged
     var pos: js.Tuple2[scala.Double, scala.Double]
   }
-  
   
   trait DragOptions extends js.Object {
     var containment: js.UndefOr[java.lang.String] = js.undefined
@@ -131,11 +118,9 @@ object jsPlumbNs extends js.Object {
     var zIndex: js.UndefOr[scala.Double] = js.undefined
   }
   
-  
   trait DropOptions extends js.Object {
     var hoverClass: java.lang.String
   }
-  
   
   trait Endpoint extends js.Object {
     var anchor: Anchor
@@ -153,7 +138,6 @@ object jsPlumbNs extends js.Object {
     def setEndpoint(spec: EndpointSpec): scala.Unit
     def setHover(hover: scala.Boolean): scala.Unit
   }
-  
   
   trait EndpointOptions extends js.Object {
     var anchor: js.UndefOr[AnchorSpec] = js.undefined
@@ -193,11 +177,9 @@ object jsPlumbNs extends js.Object {
   }
   
   /**
-       * The actual component that does the rendering.
-       */
-  
+    * The actual component that does the rendering.
+    */
   trait EndpointRenderer extends js.Object
-  
   
   trait LabelOverlayOptions extends OverlayOptions {
     var cssClass: js.UndefOr[java.lang.String] = js.undefined
@@ -206,7 +188,6 @@ object jsPlumbNs extends js.Object {
     var labelStyle: js.UndefOr[jsplumbLib.Anon_BorderWidth] = js.undefined
     var location: js.UndefOr[scala.Double] = js.undefined
   }
-  
   
   trait OnConnectionBindInfo extends js.Object {
     var connection: Connection
@@ -231,14 +212,10 @@ object jsPlumbNs extends js.Object {
     var targetId: java.lang.String
   }
   
-  
   trait Overlay extends js.Object
   
   /* --------------------------------------- OVERLAYS ------------------------------------------------------------- */
-  
-  
   trait OverlayOptions extends js.Object
-  
   
   trait PaintStyle extends js.Object {
     var fill: js.UndefOr[java.lang.String] = js.undefined
@@ -556,7 +533,6 @@ object jsPlumbNs extends js.Object {
   type ElementId = java.lang.String
   type ElementRef = ElementId | stdLib.Element
   /* -------------------------------------------- ENDPOINTS ------------------------------------------------------ */
-  
   type EndpointId = jsplumbLib.jsplumbLibStrings.Rectangle | jsplumbLib.jsplumbLibStrings.Dot | jsplumbLib.jsplumbLibStrings.Blank | UserDefinedEndpointId
   type EndpointSpec = EndpointId | (js.Tuple2[EndpointId, EndpointOptions])
   type OverlayId = jsplumbLib.jsplumbLibStrings.Label | jsplumbLib.jsplumbLibStrings.Arrow | jsplumbLib.jsplumbLibStrings.PlainArrow | jsplumbLib.jsplumbLibStrings.Custom

@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Partial) */ 
-trait DynamicNumberProps extends js.Object {
+- Lifted 1 members from Set(std.Partial<react-dynamic-number.react-dynamic-number.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<react.HTMLInputElement>, react.HTMLInputElement>, 'ref' | 'value' | 'onChange' | 'placeholder'>>) */ trait DynamicNumberProps extends js.Object {
   var fraction: js.UndefOr[scala.Double] = js.undefined
   var integer: js.UndefOr[scala.Double] = js.undefined
   var negative: js.UndefOr[scala.Boolean] = js.undefined

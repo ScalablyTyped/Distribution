@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateID extends js.Object {
   var absflat: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var absfuzz: js.UndefOr[js.Array[scala.Double]] = js.undefined

@@ -24,7 +24,6 @@ class WindowObject protected () extends js.Object {
   def Activate(): scala.Unit = js.native
   /** @param boolean [fForce=false] */
   def Close(): scala.Unit = js.native
-  /** @param boolean [fForce=false] */
   def Close(fForce: scala.Boolean): scala.Unit = js.native
 }
 

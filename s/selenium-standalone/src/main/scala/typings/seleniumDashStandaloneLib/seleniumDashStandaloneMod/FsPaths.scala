@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FsPaths
   extends /* x */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var chrome: js.UndefOr[seleniumDashStandaloneLib.Anon_X] = js.undefined

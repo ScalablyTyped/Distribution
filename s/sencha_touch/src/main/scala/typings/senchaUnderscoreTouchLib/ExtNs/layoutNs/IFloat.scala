@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFloat extends IDefault {
   /** [Method] Returns the value of direction
   		* @returns String

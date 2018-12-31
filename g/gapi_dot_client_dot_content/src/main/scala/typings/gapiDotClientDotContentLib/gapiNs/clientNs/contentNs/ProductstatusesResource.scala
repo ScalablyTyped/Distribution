@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProductstatusesResource extends js.Object {
   /** Gets the statuses of multiple products in a single request. This method can only be called for non-multi-client accounts. */
   def custombatch(request: gapiDotClientDotContentLib.Anon_PrettyPrintQuotaUserKeyUserIpOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[ProductstatusesCustomBatchResponse]

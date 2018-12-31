@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DialogFacebookResultSelection extends js.Object {
   var first_name: java.lang.String
   var gender: java.lang.String

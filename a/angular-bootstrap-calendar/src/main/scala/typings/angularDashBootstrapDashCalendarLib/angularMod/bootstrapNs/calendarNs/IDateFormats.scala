@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDateFormats extends js.Object {
   var datetime: java.lang.String
   var day: java.lang.String

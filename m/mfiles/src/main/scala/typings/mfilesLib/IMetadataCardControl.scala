@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMetadataCardControl extends js.Object {
   val AllowAdding: scala.Boolean
   val Events: IEvents

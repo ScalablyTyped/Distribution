@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestOptions extends js.Object {
   var agent: js.UndefOr[wreckLib.Anon_HttpsAllowUnauthorized | wreckLib.wreckLibNumbers.`false`] = js.undefined
   var baseUrl: js.UndefOr[java.lang.String] = js.undefined

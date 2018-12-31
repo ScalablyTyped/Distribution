@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_YXNumber extends js.Object {
   var x: scala.Double | reactDashNativeLib.reactDashNativeMod.AnimatedNs.AnimatedValue
   var y: scala.Double | reactDashNativeLib.reactDashNativeMod.AnimatedNs.AnimatedValue

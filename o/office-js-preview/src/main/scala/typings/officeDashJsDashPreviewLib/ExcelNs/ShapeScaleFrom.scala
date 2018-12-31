@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait ShapeScaleFrom extends js.Object
 
 /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.ShapeScaleFrom")
 @js.native
 object ShapeScaleFrom extends js.Object {

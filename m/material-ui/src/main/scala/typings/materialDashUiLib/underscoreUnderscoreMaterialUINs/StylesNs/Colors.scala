@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Colors extends js.Object {
   var amber100: java.lang.String
   var amber200: java.lang.String

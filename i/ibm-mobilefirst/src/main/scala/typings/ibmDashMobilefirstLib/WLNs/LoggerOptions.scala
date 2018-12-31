@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LoggerOptions extends js.Object {
   var autoSendLogs: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * @deprecated since version 6.2. use filters instead.
-           */
+    * @deprecated since version 6.2. use filters instead.
+    */
   var blacklist: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var callback: js.UndefOr[LoggerCallback] = js.undefined
   var capture: js.UndefOr[scala.Boolean] = js.undefined
@@ -23,8 +22,8 @@ trait LoggerOptions extends js.Object {
   var stringify: js.UndefOr[scala.Boolean] = js.undefined
   var tag: js.UndefOr[Tag] = js.undefined
   /**
-           * @deprecated since version 6.2. use filters instead.
-           */
+    * @deprecated since version 6.2. use filters instead.
+    */
   var whitelist: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 

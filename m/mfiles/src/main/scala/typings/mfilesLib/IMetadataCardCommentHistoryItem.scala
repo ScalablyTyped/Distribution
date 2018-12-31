@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMetadataCardCommentHistoryItem extends js.Object {
   def GetCommentAuthor(): java.lang.String
   def GetCommentText(): java.lang.String

@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnBeforeRedirectDetails extends js.Object {
   var fromCache: scala.Boolean
   var id: scala.Double
   /**
-       * The server IP address that the request was actually sent to.
-       */
+    * The server IP address that the request was actually sent to.
+    */
   var ip: js.UndefOr[java.lang.String] = js.undefined
   var method: java.lang.String
   var redirectURL: java.lang.String

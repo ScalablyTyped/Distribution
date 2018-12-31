@@ -21,17 +21,13 @@ trait LodashOrderBy extends js.Object {
   def apply[T /* <: js.Object */](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
       (js.Function1[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+        /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
         lodashLib.lodashMod.underscoreNs.NotVoid
-      ]) | (lodashLib.lodashMod.underscoreNs.ValueIteratee[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-      ])
+      ]) | (lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any])
     ],
     orders: lodashLib.lodashMod.underscoreNs.Many[scala.Boolean | lodashLib.lodashLibStrings.asc | lodashLib.lodashLibStrings.desc],
     collection: T
-  ): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def apply[T](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
       (js.Function1[/* value */ T, lodashLib.lodashMod.underscoreNs.NotVoid]) | lodashLib.lodashMod.underscoreNs.ValueIteratee[T]
@@ -45,9 +41,7 @@ trait LodashOrderBy extends js.Object {
   ): LodashOrderBy2x5[T] = js.native
   def apply[T /* <: js.Object */](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
-      lodashLib.lodashMod.underscoreNs.ValueIteratee[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-      ]
+      lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
     ],
     orders: lodashLib.lodashMod.underscoreNs.`__`,
     collection: T

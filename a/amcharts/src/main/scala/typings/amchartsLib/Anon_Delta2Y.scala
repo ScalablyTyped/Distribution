@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Delta2Y extends js.Object {
   var chart: amchartsLib.amchartMod.default
   var delta2X: js.UndefOr[scala.Double] = js.undefined

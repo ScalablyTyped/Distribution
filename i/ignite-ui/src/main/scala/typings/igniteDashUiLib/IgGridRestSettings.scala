@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgGridRestSettings
   extends /**
 	 * Option for IgGridRestSettings

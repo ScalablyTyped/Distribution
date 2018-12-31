@@ -138,7 +138,6 @@ abstract class BaseConnection ()
   /** Returns a value from the cache if it exists, otherwise calls Connection.describe */
   @JSName("describe$")
   def describe$(`type`: java.lang.String): jsforceLib.describeDashResultMod.DescribeSObjectResult = js.native
-  /** Returns a value from the cache if it exists, otherwise calls Connection.describe */
   @JSName("describe$")
   def describe$(
     `type`: java.lang.String,
@@ -159,7 +158,6 @@ abstract class BaseConnection ()
   /** Returns a value from the cache if it exists, otherwise calls Connection.describeGlobal */
   @JSName("describeGlobal$")
   def describeGlobal$(): jsforceLib.describeDashResultMod.DescribeGlobalResult = js.native
-  /** Returns a value from the cache if it exists, otherwise calls Connection.describeGlobal */
   @JSName("describeGlobal$")
   def describeGlobal$(
     callback: js.Function2[

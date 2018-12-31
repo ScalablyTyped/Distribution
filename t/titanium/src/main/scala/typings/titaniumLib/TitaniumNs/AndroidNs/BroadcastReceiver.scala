@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * Monitor and handle Android system broadcasts.
 		 */
-
 trait BroadcastReceiver
   extends titaniumLib.TitaniumNs.Proxy {
   /**

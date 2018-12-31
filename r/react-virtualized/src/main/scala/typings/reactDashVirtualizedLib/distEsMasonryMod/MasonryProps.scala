@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MasonryProps
   extends /**
-     * PLEASE NOTE
-     * The [key: string]: any; line is here on purpose
-     * This is due to the need of force re-render of PureComponent
-     * Check the following link if you want to know more
-     * https://github.com/bvaughn/react-virtualized#pass-thru-props
-     */
+  * PLEASE NOTE
+  * The [key: string]: any; line is here on purpose
+  * This is due to the need of force re-render of PureComponent
+  * Check the following link if you want to know more
+  * https://github.com/bvaughn/react-virtualized#pass-thru-props
+  */
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var autoHeight: scala.Boolean
   var cellCount: scala.Double

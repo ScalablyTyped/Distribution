@@ -59,8 +59,6 @@ trait FlashFL extends js.Object {
   //closeProject();
   /** A string that specifies the type of document to create. Acceptable values are "timeline", "presentation", and "application". The default value is "timeline", which has the same effect as choosing File > New > Flash File (ActionScript 3.0). This parameter is optional. */
   def createDocument(): FlashDocument = js.native
-  //closeProject();
-  /** A string that specifies the type of document to create. Acceptable values are "timeline", "presentation", and "application". The default value is "timeline", which has the same effect as choosing File > New > Flash File (ActionScript 3.0). This parameter is optional. */
   def createDocument(document: java.lang.String): FlashDocument = js.native
   def exportPublishProfileString(ucfURI: java.lang.String, profileName: java.lang.String): java.lang.String = js.native
   //createProject();
@@ -89,9 +87,7 @@ trait FlashFL extends js.Object {
   def openDocument(fileURI: java.lang.String): FlashDocument = js.native
   //openProject();
   def openScript(fileURI: java.lang.String): scala.Unit = js.native
-  //openProject();
   def openScript(fileURI: java.lang.String, createExtension: java.lang.String): scala.Unit = js.native
-  //openProject();
   def openScript(fileURI: java.lang.String, createExtension: java.lang.String, className: java.lang.String): scala.Unit = js.native
   def quit(): scala.Unit = js.native
   def quit(bPromptIfNeeded: scala.Boolean): scala.Unit = js.native
@@ -104,14 +100,11 @@ trait FlashFL extends js.Object {
   def revertDocument(document: FlashDocument): scala.Unit = js.native
   //revertDocumentToLastVersion();
   def runScript(fileURI: java.lang.String): js.Any = js.native
-  //revertDocumentToLastVersion();
   def runScript(fileURI: java.lang.String, funcName: js.Function): js.Any = js.native
-  //revertDocumentToLastVersion();
   def runScript(fileURI: java.lang.String, funcName: js.Function, args: js.Array[_]): js.Any = js.native
   def saveAll(): scala.Unit = js.native
   //saveVersionOfDocument();
   def saveDocument(document: FlashDocument): scala.Boolean = js.native
-  //saveVersionOfDocument();
   def saveDocument(document: FlashDocument, fileURI: java.lang.String): scala.Boolean = js.native
   def saveDocumentAs(document: FlashDocument): scala.Boolean = js.native
   def selectActiveWindow(document: FlashDocument): scala.Unit = js.native

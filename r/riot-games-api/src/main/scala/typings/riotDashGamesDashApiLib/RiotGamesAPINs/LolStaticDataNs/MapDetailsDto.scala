@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapDetailsDto extends js.Object {
   var image: ImageDto
   var mapId: scala.Double

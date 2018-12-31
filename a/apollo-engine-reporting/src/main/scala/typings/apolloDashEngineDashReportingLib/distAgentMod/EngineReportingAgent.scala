@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("apollo-engine-reporting/dist/agent", "EngineReportingAgent")
 @js.native
 class EngineReportingAgent[TContext] protected () extends js.Object {
-  def this(options: EngineReportingOptions[TContext], hasSchemaHash: js.Any) = this()
-  def this(options: js.UndefOr[scala.Nothing], hasSchemaHash: js.Any) = this()
+  def this(options: EngineReportingOptions[TContext], hasSchemaHash: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify GraphQLServiceContext */ js.Any) = this()
+  def this(options: js.UndefOr[scala.Nothing], hasSchemaHash: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify GraphQLServiceContext */ js.Any) = this()
   var apiKey: js.Any = js.native
   var options: js.Any = js.native
   var report: js.Any = js.native

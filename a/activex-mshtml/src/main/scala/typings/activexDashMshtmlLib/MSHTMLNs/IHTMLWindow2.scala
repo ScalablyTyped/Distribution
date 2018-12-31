@@ -57,7 +57,6 @@ trait IHTMLWindow2 extends js.Object {
   def Option(text: js.Any, value: js.Any, defaultSelected: js.Any, selected: js.Any): IHTMLOptionElement = js.native
   /** @param message [message=''] */
   def alert(): scala.Unit = js.native
-  /** @param message [message=''] */
   def alert(message: java.lang.String): scala.Unit = js.native
   def blur(): scala.Unit = js.native
   def clearInterval(timerID: scala.Double): scala.Unit = js.native
@@ -65,11 +64,9 @@ trait IHTMLWindow2 extends js.Object {
   def close(): scala.Unit = js.native
   /** @param message [message=''] */
   def confirm(): scala.Boolean = js.native
-  /** @param message [message=''] */
   def confirm(message: java.lang.String): scala.Boolean = js.native
   /** @param language [language='JScript'] */
   def execScript(code: java.lang.String): js.Any = js.native
-  /** @param language [language='JScript'] */
   def execScript(code: java.lang.String, language: java.lang.String): js.Any = js.native
   def focus(): scala.Unit = js.native
   def frames(pvarIndex: js.Any): js.Any = js.native
@@ -78,55 +75,23 @@ trait IHTMLWindow2 extends js.Object {
   def moveTo(x: scala.Double, y: scala.Double): scala.Unit = js.native
   def navigate(url: java.lang.String): scala.Unit = js.native
   /**
-           * @param url [url='']
-           * @param name [name='']
-           * @param features [features='']
-           * @param replace [replace=false]
-           */
+    * @param url [url='']
+    * @param name [name='']
+    * @param features [features='']
+    * @param replace [replace=false]
+    */
   def open(): IHTMLWindow2 = js.native
-  /**
-           * @param url [url='']
-           * @param name [name='']
-           * @param features [features='']
-           * @param replace [replace=false]
-           */
   def open(url: java.lang.String): IHTMLWindow2 = js.native
-  /**
-           * @param url [url='']
-           * @param name [name='']
-           * @param features [features='']
-           * @param replace [replace=false]
-           */
   def open(url: java.lang.String, name: java.lang.String): IHTMLWindow2 = js.native
-  /**
-           * @param url [url='']
-           * @param name [name='']
-           * @param features [features='']
-           * @param replace [replace=false]
-           */
   def open(url: java.lang.String, name: java.lang.String, features: java.lang.String): IHTMLWindow2 = js.native
-  /**
-           * @param url [url='']
-           * @param name [name='']
-           * @param features [features='']
-           * @param replace [replace=false]
-           */
   def open(url: java.lang.String, name: java.lang.String, features: java.lang.String, replace: scala.Boolean): IHTMLWindow2 = js.native
   def parent(pvarIndex: js.Any): js.Any = js.native
   /**
-           * @param message [message='']
-           * @param defstr [defstr='undefined']
-           */
+    * @param message [message='']
+    * @param defstr [defstr='undefined']
+    */
   def prompt(): js.Any = js.native
-  /**
-           * @param message [message='']
-           * @param defstr [defstr='undefined']
-           */
   def prompt(message: java.lang.String): js.Any = js.native
-  /**
-           * @param message [message='']
-           * @param defstr [defstr='undefined']
-           */
   def prompt(message: java.lang.String, defstr: java.lang.String): js.Any = js.native
   def resizeBy(x: scala.Double, y: scala.Double): scala.Unit = js.native
   def resizeTo(x: scala.Double, y: scala.Double): scala.Unit = js.native
@@ -140,7 +105,6 @@ trait IHTMLWindow2 extends js.Object {
   def setTimeout(expression: java.lang.String, msec: scala.Double, language: js.Any): scala.Double = js.native
   /** @param features [features=''] */
   def showHelp(helpURL: java.lang.String, helpArg: js.Any): scala.Unit = js.native
-  /** @param features [features=''] */
   def showHelp(helpURL: java.lang.String, helpArg: js.Any, features: java.lang.String): scala.Unit = js.native
   def showModalDialog(dialog: java.lang.String): js.Any = js.native
   def showModalDialog(dialog: java.lang.String, varArgIn: js.Any): js.Any = js.native

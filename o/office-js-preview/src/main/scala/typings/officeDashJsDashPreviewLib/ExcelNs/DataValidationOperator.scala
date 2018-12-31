@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 sealed trait DataValidationOperator extends js.Object
 
 /**
-     *
-     * Represents Data validation operator enum.
-     *
-     * [Api set: ExcelApi 1.8]
-     */
+  *
+  * Represents Data validation operator enum.
+  *
+  * [Api set: ExcelApi 1.8]
+  */
 @JSGlobal("Excel.DataValidationOperator")
 @js.native
 object DataValidationOperator extends js.Object {

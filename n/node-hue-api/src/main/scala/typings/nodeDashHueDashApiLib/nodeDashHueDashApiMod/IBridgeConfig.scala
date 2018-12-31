@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBridgeConfig extends js.Object {
   var UTC: stdLib.Date
   var apiversion: java.lang.String

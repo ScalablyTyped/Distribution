@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommandExecutor extends js.Object {
   var commands: js.Object
   var commonCallback: js.Function0[scala.Unit] | scala.Unit

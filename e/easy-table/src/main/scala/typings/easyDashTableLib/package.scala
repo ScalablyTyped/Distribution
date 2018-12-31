@@ -13,5 +13,8 @@ package object easyDashTableLib {
     scala.Unit
   ]
   type ReduceFunction[T] = js.Function4[/* acc */ T, /* val */ T, /* idx */ scala.Double, /* length */ scala.Double, T]
-  type TablePostProcessing = js.Function1[/* result */ js.Any, java.lang.String]
+  type TablePostProcessing = js.Function1[
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify EasyTable */ /* result */ js.Any, 
+    java.lang.String
+  ]
 }

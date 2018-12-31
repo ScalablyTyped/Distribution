@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Rgb extends js.Object {
   var cmyk: jqueryDotColorpickerLib.JQueryColorpickerStaticNs.CMYK
   var hsl: jqueryDotColorpickerLib.JQueryColorpickerStaticNs.HSL

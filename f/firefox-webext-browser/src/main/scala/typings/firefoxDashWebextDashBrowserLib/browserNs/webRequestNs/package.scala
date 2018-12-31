@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 package object webRequestNs {
   type CertificateTransparencyStatus = firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.not_applicable | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.policy_compliant | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.policy_not_enough_scts | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.policy_not_diverse_scts
   /**
-       * An array of HTTP headers. Each header is represented as a dictionary containing the keys `name` and either
-       * `value` or `binaryValue`.
-       */
+    * An array of HTTP headers. Each header is represented as a dictionary containing the keys `name` and either
+    * `value` or `binaryValue`.
+    */
   type HttpHeaders = js.Array[firefoxDashWebextDashBrowserLib.Anon_BinaryValue]
   type OnAuthRequiredOptions = firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.responseHeaders | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.blocking | firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.asyncBlocking
   type OnBeforeRedirectOptions = firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.responseHeaders

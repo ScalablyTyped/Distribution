@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Sheet2JSONOpts extends DateNFOption {
   /** Include or omit blank lines in the output */
   var blankrows: js.UndefOr[scala.Boolean] = js.undefined

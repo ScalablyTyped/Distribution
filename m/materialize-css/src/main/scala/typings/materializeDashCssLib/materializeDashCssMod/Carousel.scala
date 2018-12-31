@@ -14,27 +14,21 @@ class Carousel ()
 @js.native
 object Carousel extends js.Object {
   /**
-           * Get Instance
-           */
+    * Get Instance
+    */
   def getInstance(elem: stdLib.Element): materializeDashCssLib.MNs.Carousel = js.native
   /**
-           * Init carousels
-           */
+    * Init carousels
+    */
   def init(els: materializeDashCssLib.MElements): js.Array[materializeDashCssLib.MNs.Carousel] = js.native
-  /**
-           * Init carousels
-           */
   def init(
     els: materializeDashCssLib.MElements,
     options: stdLib.Partial[materializeDashCssLib.MNs.CarouselOptions]
   ): js.Array[materializeDashCssLib.MNs.Carousel] = js.native
   /**
-           * Init carousel
-           */
+    * Init carousel
+    */
   def init(els: stdLib.Element): materializeDashCssLib.MNs.Carousel = js.native
-  /**
-           * Init carousel
-           */
   def init(els: stdLib.Element, options: stdLib.Partial[materializeDashCssLib.MNs.CarouselOptions]): materializeDashCssLib.MNs.Carousel = js.native
 }
 

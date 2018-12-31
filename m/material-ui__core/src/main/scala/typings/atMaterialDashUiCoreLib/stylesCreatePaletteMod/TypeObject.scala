@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TypeObject extends js.Object {
   var action: TypeAction
   var background: TypeBackground

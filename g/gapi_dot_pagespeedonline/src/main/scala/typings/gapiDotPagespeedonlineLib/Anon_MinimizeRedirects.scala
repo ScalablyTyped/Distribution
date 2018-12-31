@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MinimizeRedirects extends js.Object {
   var AvoidBadRequests: GoogleApiPageSpeedOnlineRuleResource
   var AvoidCharsetInMetaTag: GoogleApiPageSpeedOnlineRuleResource

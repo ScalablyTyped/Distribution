@@ -20,15 +20,15 @@ abstract class HttpDateOrDeltaHeaderValue () extends js.Object {
 @js.native
 object HttpDateOrDeltaHeaderValue extends js.Object {
   /**
-                       * Converts a string to an HttpDateOrDeltaHeaderValue instance.
-                       * @param input A string that represents the HTTP-date or delta-seconds information in the Retry-After HTTP header.
-                       * @return An HttpDateOrDeltaHeaderValue instance.
-                       */
+    * Converts a string to an HttpDateOrDeltaHeaderValue instance.
+    * @param input A string that represents the HTTP-date or delta-seconds information in the Retry-After HTTP header.
+    * @return An HttpDateOrDeltaHeaderValue instance.
+    */
   def parse(input: java.lang.String): winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpDateOrDeltaHeaderValue = js.native
   /**
-                       * Determines whether a string is valid HttpDateOrDeltaHeaderValue information.
-                       * @param input The string to validate.
-                       */
+    * Determines whether a string is valid HttpDateOrDeltaHeaderValue information.
+    * @param input The string to validate.
+    */
   def tryParse(input: java.lang.String): winrtDashUwpLib.Anon_DateOrDeltaHeaderValue = js.native
 }
 

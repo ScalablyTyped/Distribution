@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AceOptions extends js.Object {
   var animatedScroll: js.UndefOr[scala.Boolean] = js.undefined
   /** this is needed if editor is inside scrollable page */

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VariableDeclaration extends BaseNode {
   var declarations: js.Array[VariableDeclarator]
   var declare: scala.Boolean | scala.Null

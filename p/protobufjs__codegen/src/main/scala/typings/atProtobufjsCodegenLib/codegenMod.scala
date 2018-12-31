@@ -11,30 +11,19 @@ object codegenMod extends js.Object {
   /** When set to `true`, codegen will log generated code to console. Useful for debugging. */
   var verbose: scala.Boolean = js.native
   /**
-   * Begins generating a function.
-   * @param [functionName] Function name if not anonymous
-   * @returns Appender that appends code to the function's body
-   */
+    * Begins generating a function.
+    * @param [functionName] Function name if not anonymous
+    * @returns Appender that appends code to the function's body
+    */
   def apply(): atProtobufjsCodegenLib.Codegen = js.native
-  /**
-   * Begins generating a function.
-   * @param [functionName] Function name if not anonymous
-   * @returns Appender that appends code to the function's body
-   */
   def apply(functionName: java.lang.String): atProtobufjsCodegenLib.Codegen = js.native
   /**
-   * Begins generating a function.
-   * @param functionParams Function parameter names
-   * @param [functionName] Function name if not anonymous
-   * @returns Appender that appends code to the function's body
-   */
+    * Begins generating a function.
+    * @param functionParams Function parameter names
+    * @param [functionName] Function name if not anonymous
+    * @returns Appender that appends code to the function's body
+    */
   def apply(functionParams: js.Array[java.lang.String]): atProtobufjsCodegenLib.Codegen = js.native
-  /**
-   * Begins generating a function.
-   * @param functionParams Function parameter names
-   * @param [functionName] Function name if not anonymous
-   * @returns Appender that appends code to the function's body
-   */
   def apply(functionParams: js.Array[java.lang.String], functionName: java.lang.String): atProtobufjsCodegenLib.Codegen = js.native
 }
 

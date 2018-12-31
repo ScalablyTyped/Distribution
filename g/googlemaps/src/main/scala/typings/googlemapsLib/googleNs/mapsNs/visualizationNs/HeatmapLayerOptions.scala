@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HeatmapLayerOptions extends js.Object {
   var data: js.Any
   var dissipating: js.UndefOr[scala.Boolean] = js.undefined

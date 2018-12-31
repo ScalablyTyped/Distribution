@@ -15,8 +15,8 @@ trait FormData extends js.Object {
   def append(name: java.lang.String, value: Blob, fileName: java.lang.String): scala.Unit = js.native
   def delete(name: java.lang.String): scala.Unit = js.native
   /**
-       * Returns an array of key, value pairs for every entry in the list.
-       */
+    * Returns an array of key, value pairs for every entry in the list.
+    */
   def entries(): IterableIterator[js.Tuple2[java.lang.String, FormDataEntryValue]] = js.native
   def forEach(
     callbackfn: js.Function3[
@@ -39,16 +39,16 @@ trait FormData extends js.Object {
   def getAll(name: java.lang.String): js.Array[FormDataEntryValue] = js.native
   def has(name: java.lang.String): scala.Boolean = js.native
   /**
-       * Returns a list of keys in the list.
-       */
+    * Returns a list of keys in the list.
+    */
   def keys(): IterableIterator[java.lang.String] = js.native
   def set(name: java.lang.String, value: java.lang.String): scala.Unit = js.native
   def set(name: java.lang.String, value: java.lang.String, fileName: java.lang.String): scala.Unit = js.native
   def set(name: java.lang.String, value: Blob): scala.Unit = js.native
   def set(name: java.lang.String, value: Blob, fileName: java.lang.String): scala.Unit = js.native
   /**
-       * Returns a list of values in the list.
-       */
+    * Returns a list of values in the list.
+    */
   def values(): IterableIterator[FormDataEntryValue] = js.native
 }
 

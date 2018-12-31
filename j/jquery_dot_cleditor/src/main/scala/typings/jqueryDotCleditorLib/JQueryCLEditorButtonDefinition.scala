@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JQueryCLEditorButtonDefinition extends js.Object {
   var buttonClick: js.UndefOr[
     js.Function2[

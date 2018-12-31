@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Just a reference to facilitate describing new actions
-
 trait IActionDescriptor extends js.Object {
   var headers: js.UndefOr[js.Any] = js.undefined
   var isArray: js.UndefOr[scala.Boolean] = js.undefined

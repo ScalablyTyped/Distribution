@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ViewToken extends js.Object {
   var index: scala.Double | scala.Null
   var isViewable: scala.Boolean

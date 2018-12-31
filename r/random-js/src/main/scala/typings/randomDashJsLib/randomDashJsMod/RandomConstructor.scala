@@ -37,9 +37,7 @@ trait RandomConstructor
   def integer(min: scala.Double, max: scala.Double): js.Function1[/* engine */ randomDashJsLib.randomDashJsMod.RandomNs.Engine, scala.Double] = js.native
    // tslint:disable-line unified-signatures
   def pick[T](engine: randomDashJsLib.randomDashJsMod.RandomNs.Engine, array: js.Array[T]): T = js.native
-   // tslint:disable-line unified-signatures
   def pick[T](engine: randomDashJsLib.randomDashJsMod.RandomNs.Engine, array: js.Array[T], begin: scala.Double): T = js.native
-   // tslint:disable-line unified-signatures
   def pick[T](
     engine: randomDashJsLib.randomDashJsMod.RandomNs.Engine,
     array: js.Array[T],

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TargetVpnGatewaysScopedList extends js.Object {
   /** [Output Only] List of target vpn gateways contained in this scope. */
   var targetVpnGateways: js.UndefOr[js.Array[TargetVpnGateway]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BrowsersListResponse extends js.Object {
   /** Browser collection. */
   var browsers: js.UndefOr[js.Array[Browser]] = js.undefined

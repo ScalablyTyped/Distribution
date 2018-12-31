@@ -16,20 +16,20 @@ class ProgressBar protected () extends Widget {
   @JSName("model")
   var model_ProgressBar: ejDotWebDotAllLib.ejNs.ProgressBarNs.Model = js.native
   /** Disables the progressbar control
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def disable(): scala.Unit = js.native
   /** Enables the progressbar control
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def enable(): scala.Unit = js.native
   /** Returns the current progress value in percent.
-           * @returns {number}
-           */
+    * @returns {number}
+    */
   def getPercentage(): scala.Double = js.native
   /** Returns the current progress value
-           * @returns {number}
-           */
+    * @returns {number}
+    */
   def getValue(): scala.Double = js.native
 }
 

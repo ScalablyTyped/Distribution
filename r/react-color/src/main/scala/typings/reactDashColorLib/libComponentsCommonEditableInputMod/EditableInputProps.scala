@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditableInputProps
   extends reactLib.reactMod.ReactNs.ClassAttributes[EditableInput] {
   var color: js.UndefOr[reactDashColorLib.reactDashColorMod.Color] = js.undefined

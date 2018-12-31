@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GroupItemMetadataProviderOptions extends js.Object {
   var enableExpandCollapse: js.UndefOr[scala.Boolean] = js.undefined
   var groupCssClass: js.UndefOr[java.lang.String] = js.undefined

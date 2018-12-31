@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SettledResult[T] extends js.Object {
   var isFulfilled: scala.Boolean
   var isRejected: scala.Boolean

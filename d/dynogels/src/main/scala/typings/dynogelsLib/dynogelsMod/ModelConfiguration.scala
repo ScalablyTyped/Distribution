@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModelConfiguration extends js.Object {
   var createdAt: js.UndefOr[scala.Boolean] = js.undefined
   var hashKey: java.lang.String

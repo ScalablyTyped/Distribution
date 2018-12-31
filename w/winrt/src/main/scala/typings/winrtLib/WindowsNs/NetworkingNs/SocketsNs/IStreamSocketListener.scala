@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStreamSocketListener
   extends winrtLib.WindowsNs.FoundationNs.IClosable {
   var control: StreamSocketListenerControl

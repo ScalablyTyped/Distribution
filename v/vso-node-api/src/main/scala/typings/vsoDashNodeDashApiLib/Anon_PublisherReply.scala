@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PublisherReply extends js.Object {
   var adminReply: scala.Double
   var publisherReply: scala.Double

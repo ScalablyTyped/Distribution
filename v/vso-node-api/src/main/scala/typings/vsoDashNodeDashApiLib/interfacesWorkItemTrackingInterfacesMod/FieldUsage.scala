@@ -12,36 +12,36 @@ sealed trait FieldUsage extends js.Object
 @js.native
 object FieldUsage extends js.Object {
   /**
-       * Empty usage.
-       */
+    * Empty usage.
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.FieldUsage
   
   /**
-       * Treenode field usage.
-       */
+    * Treenode field usage.
+    */
   @js.native
   sealed trait Tree
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.FieldUsage
   
   /**
-       * Work item field usage.
-       */
+    * Work item field usage.
+    */
   @js.native
   sealed trait WorkItem
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.FieldUsage
   
   /**
-       * Work item link field usage.
-       */
+    * Work item link field usage.
+    */
   @js.native
   sealed trait WorkItemLink
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.FieldUsage
   
   /**
-       * Work Item Type Extension usage.
-       */
+    * Work Item Type Extension usage.
+    */
   @js.native
   sealed trait WorkItemTypeExtension
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.FieldUsage

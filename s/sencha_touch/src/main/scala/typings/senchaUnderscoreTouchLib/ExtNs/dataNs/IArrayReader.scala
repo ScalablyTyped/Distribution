@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IArrayReader
   extends senchaUnderscoreTouchLib.ExtNs.dataNs.readerNs.IJson {
   /** [Method] Sets the value of successProperty

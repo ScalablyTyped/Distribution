@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDataProviderRequest extends js.Object {
   var deadline: stdLib.Date
   var formatId: java.lang.String

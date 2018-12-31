@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConvertOptions extends js.Object {
   var bom: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   var from: js.UndefOr[Encoding] = js.undefined

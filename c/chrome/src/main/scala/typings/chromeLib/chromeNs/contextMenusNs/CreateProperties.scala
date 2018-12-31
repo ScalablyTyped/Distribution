@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateProperties extends js.Object {
   /** Optional. The initial state of a checkbox or radio item: true for selected and false for unselected. Only one radio item can be selected at a time in a given group of radio items.  */
   var checked: js.UndefOr[scala.Boolean] = js.undefined
@@ -14,23 +13,23 @@ trait CreateProperties extends js.Object {
   /** Optional. Lets you restrict the item to apply only to documents whose URL matches one of the given patterns. (This applies to frames as well.) For details on the format of a pattern, see Match Patterns.  */
   var documentUrlPatterns: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-           * Optional.
-            * Since Chrome 20.
-           * Whether this context menu item is enabled or disabled. Defaults to true.
-           */
+    * Optional.
+    * Since Chrome 20.
+    * Whether this context menu item is enabled or disabled. Defaults to true.
+    */
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * Optional.
-            * Since Chrome 21.
-           * The unique ID to assign to this item. Mandatory for event pages. Cannot be the same as another ID for this extension.
-           */
+    * Optional.
+    * Since Chrome 21.
+    * The unique ID to assign to this item. Mandatory for event pages. Cannot be the same as another ID for this extension.
+    */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Optional.
-            * A function that will be called back when the menu item is clicked. Event pages cannot use this; instead, they should register a listener for chrome.contextMenus.onClicked.
-           * @param info Information sent when a context menu item is clicked.
-           * @param tab The details of the tab where the click took place. Note: this parameter only present for extensions.
-           */
+    * Optional.
+    * A function that will be called back when the menu item is clicked. Event pages cannot use this; instead, they should register a listener for chrome.contextMenus.onClicked.
+    * @param info Information sent when a context menu item is clicked.
+    * @param tab The details of the tab where the click took place. Note: this parameter only present for extensions.
+    */
   var onclick: js.UndefOr[
     js.Function2[/* info */ OnClickData, /* tab */ chromeLib.chromeNs.tabsNs.Tab, scala.Unit]
   ] = js.undefined

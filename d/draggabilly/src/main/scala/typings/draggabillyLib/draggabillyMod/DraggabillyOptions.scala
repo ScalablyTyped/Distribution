@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DraggabillyOptions extends js.Object {
   var axis: js.UndefOr[draggabillyLib.draggabillyLibStrings.x | draggabillyLib.draggabillyLibStrings.y] = js.undefined
   var containment: js.UndefOr[stdLib.Element | java.lang.String | scala.Boolean] = js.undefined

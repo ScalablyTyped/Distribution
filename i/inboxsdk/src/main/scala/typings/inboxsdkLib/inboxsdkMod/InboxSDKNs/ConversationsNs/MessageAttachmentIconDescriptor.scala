@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MessageAttachmentIconDescriptor extends js.Object {
   var iconClass: js.UndefOr[java.lang.String] = js.undefined
   var iconUrl: java.lang.String

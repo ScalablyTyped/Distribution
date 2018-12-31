@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Locale extends js.Object {
   var amPM: js.Tuple2[java.lang.String, java.lang.String]
   var daysInMonth: js.Tuple12[

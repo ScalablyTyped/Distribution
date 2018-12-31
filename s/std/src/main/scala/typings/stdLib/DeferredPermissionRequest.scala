@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeferredPermissionRequest extends js.Object {
   val id: scala.Double
   val `type`: MSWebViewPermissionType

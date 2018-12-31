@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnswerInlineQueryOptions extends js.Object {
   var cache_time: js.UndefOr[scala.Double] = js.undefined
   var is_personal: js.UndefOr[scala.Boolean] = js.undefined

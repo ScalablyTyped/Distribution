@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 sealed trait ConditionalCellValueOperator extends js.Object
 
 /**
-     *
-     * Represents the operator of the text conditional format type.
-     *
-     * [Api set: ExcelApi 1.6]
-     */
+  *
+  * Represents the operator of the text conditional format type.
+  *
+  * [Api set: ExcelApi 1.6]
+  */
 @JSGlobal("Excel.ConditionalCellValueOperator")
 @js.native
 object ConditionalCellValueOperator extends js.Object {

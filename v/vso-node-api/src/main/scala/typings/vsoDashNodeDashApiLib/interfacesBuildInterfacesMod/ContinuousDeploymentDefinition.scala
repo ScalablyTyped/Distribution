@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContinuousDeploymentDefinition extends js.Object {
   /**
-       * The connected service associated with the continuous deployment
-       */
+    * The connected service associated with the continuous deployment
+    */
   var connectedService: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.WebApiConnectedServiceRef
   /**
-       * The definition associated with the continuous deployment
-       */
+    * The definition associated with the continuous deployment
+    */
   var definition: XamlDefinitionReference
   var gitBranch: java.lang.String
   var hostedServiceName: java.lang.String

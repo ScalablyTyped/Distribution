@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Checkpoint extends js.Object {
   var doneParts: js.Array[aliDashOssLib.Anon_Etag]
   var file: js.Any

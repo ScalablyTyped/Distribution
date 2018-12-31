@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServiceAccount extends js.Object {
   /** Credentials that can be used to authenticate as this ServiceAccount. */
   var key: js.UndefOr[ServiceAccountKey] = js.undefined

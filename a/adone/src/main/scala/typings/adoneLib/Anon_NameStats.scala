@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NameStats extends js.Object {
   var atime: stdLib.Date
   var mode: scala.Double

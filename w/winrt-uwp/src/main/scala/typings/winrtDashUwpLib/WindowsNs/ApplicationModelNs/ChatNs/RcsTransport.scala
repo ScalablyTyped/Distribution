@@ -29,16 +29,16 @@ abstract class RcsTransport () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[RcsTransport, RcsServiceKindSupportedChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Gets a Boolean value indicating if the specified service kind is supported, such as chat, group chat, file transfer, and so on.
-                   * @param serviceKind The service kind to verify.
-                   * @return TRUE if the RcsServiceKind specified in the serviceKind parameter is supported.
-                   */
+    * Gets a Boolean value indicating if the specified service kind is supported, such as chat, group chat, file transfer, and so on.
+    * @param serviceKind The service kind to verify.
+    * @return TRUE if the RcsServiceKind specified in the serviceKind parameter is supported.
+    */
   def isServiceKindSupported(serviceKind: RcsServiceKind): scala.Boolean = js.native
   /**
-                   * Gets a Boolean value indicating if the specified service kind supports store and forward functionality.
-                   * @param serviceKind The service kind to check for store and forward functionality.
-                   * @return A Boolean value indicating if the serviceKind supports store and forward.
-                   */
+    * Gets a Boolean value indicating if the specified service kind supports store and forward functionality.
+    * @param serviceKind The service kind to check for store and forward functionality.
+    * @return A Boolean value indicating if the serviceKind supports store and forward.
+    */
   def isStoreAndForwardEnabled(serviceKind: RcsServiceKind): scala.Boolean = js.native
   /** Occurs when the service capabilities change. */
   def onservicekindsupportedchanged(

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait legendOptions extends js.Object {
                   //number of pixels or [x margin, y margin]
   var backgroundColor: js.UndefOr[js.Any] = js.undefined

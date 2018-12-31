@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LIBRARYDIRECTORYPATH extends js.Object {
   var CACHES_DIRECTORY_PATH: java.lang.String
   var DOCUMENT_DIRECTORY_PATH: java.lang.String

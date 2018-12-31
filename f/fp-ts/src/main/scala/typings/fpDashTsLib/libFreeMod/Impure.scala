@@ -19,8 +19,8 @@ class Impure[F, A, X] protected () extends js.Object {
   def chain[B](f: js.Function1[/* a */ A, Free[F, B]]): Free[F, B] = js.native
   def f(x: X): Free[F, A] = js.native
   def inspect(): java.lang.String = js.native
-  def isImpure(): /* is Impure */scala.Boolean = js.native
-  def isPure(): /* is Pure */scala.Boolean = js.native
+  def isImpure(): /* is fp-ts.fp-ts/lib/Free.Impure<F, A, X> */ scala.Boolean = js.native
+  def isPure(): /* is fp-ts.fp-ts/lib/Free.Pure<F, A> */ scala.Boolean = js.native
   def map[B](f: js.Function1[/* a */ A, B]): Free[F, B] = js.native
 }
 

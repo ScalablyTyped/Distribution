@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DtlEnvironmentDetails extends js.Object {
   var csmContent: java.lang.String
   var csmParameters: java.lang.String

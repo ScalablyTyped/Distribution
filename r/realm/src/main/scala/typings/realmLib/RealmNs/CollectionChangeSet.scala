@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CollectionChangeSet extends js.Object {
   var deletions: js.Array[scala.Double]
   var insertions: js.Array[scala.Double]

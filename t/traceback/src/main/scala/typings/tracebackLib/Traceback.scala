@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Traceback extends js.Object {
    // | The line number in the file
   var col: scala.Double

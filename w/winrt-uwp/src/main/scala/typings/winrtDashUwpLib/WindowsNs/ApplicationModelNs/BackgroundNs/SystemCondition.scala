@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class SystemCondition protected () extends js.Object {
   /**
-                   * Initializes a new instance of a system condition.
-                   * @param conditionType Specifies the condition type.
-                   */
+    * Initializes a new instance of a system condition.
+    * @param conditionType Specifies the condition type.
+    */
   def this(conditionType: SystemConditionType) = this()
   /** Gets the condition type of a system condition. */
   var conditionType: SystemConditionType = js.native

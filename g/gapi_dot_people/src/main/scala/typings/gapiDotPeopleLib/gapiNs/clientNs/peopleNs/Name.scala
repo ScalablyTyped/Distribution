@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Name extends js.Object {
   var displayName: java.lang.String
   var displayNameLastFirst: java.lang.String

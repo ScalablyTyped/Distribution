@@ -11,15 +11,12 @@ trait RDSDataService
   @JSName("config")
   var config_RDSDataService: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsRdsdataserviceMod.RDSDataServiceNs.ClientConfiguration = js.native
   /**
-     * Executes any SQL statement on the target database synchronously
-     */
+    * Executes any SQL statement on the target database synchronously
+    */
   def executeSql(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsdataserviceMod.RDSDataServiceNs.ExecuteSqlResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Executes any SQL statement on the target database synchronously
-     */
   def executeSql(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
@@ -31,15 +28,12 @@ trait RDSDataService
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-     * Executes any SQL statement on the target database synchronously
-     */
+    * Executes any SQL statement on the target database synchronously
+    */
   def executeSql(params: awsDashSdkLib.clientsRdsdataserviceMod.RDSDataServiceNs.ExecuteSqlRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRdsdataserviceMod.RDSDataServiceNs.ExecuteSqlResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
-  /**
-     * Executes any SQL statement on the target database synchronously
-     */
   def executeSql(
     params: awsDashSdkLib.clientsRdsdataserviceMod.RDSDataServiceNs.ExecuteSqlRequest,
     callback: js.Function2[

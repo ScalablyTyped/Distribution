@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LegendColor extends js.Object {
   /** Base color of the date cells */
   var base: js.UndefOr[java.lang.String] = js.undefined

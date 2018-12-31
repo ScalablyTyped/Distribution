@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Bookshelf extends js.Object {
   /** Whether this bookshelf is PUBLIC or PRIVATE. */
   var access: js.UndefOr[java.lang.String] = js.undefined

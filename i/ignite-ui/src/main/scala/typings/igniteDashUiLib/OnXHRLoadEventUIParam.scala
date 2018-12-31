@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnXHRLoadEventUIParam extends js.Object {
   /**
   	 * Gets the unique identifier of the file.

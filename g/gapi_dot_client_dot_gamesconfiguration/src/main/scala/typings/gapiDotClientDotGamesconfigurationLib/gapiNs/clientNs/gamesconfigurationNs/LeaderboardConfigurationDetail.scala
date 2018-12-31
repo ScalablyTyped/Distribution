@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LeaderboardConfigurationDetail extends js.Object {
   /** The icon url of this leaderboard. Writes to this field are ignored. */
   var iconUrl: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClassNames extends js.Object {
   var root: java.lang.String
   var rootFocused: java.lang.String

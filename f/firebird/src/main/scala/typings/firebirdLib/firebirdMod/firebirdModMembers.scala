@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object firebirdModMembers extends js.Object {
   /**
-       * @see createConnection() method will create Firebird Connection object for you
-       */
+    * @see createConnection() method will create Firebird Connection object for you
+    */
   def createConnection(): Connection = js.native
 }
 

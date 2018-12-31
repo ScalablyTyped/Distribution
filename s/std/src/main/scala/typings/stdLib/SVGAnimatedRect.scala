@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGAnimatedRect extends js.Object {
   val animVal: DOMRectReadOnly
   val baseVal: DOMRect

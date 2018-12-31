@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Defines the potential axis of a Joystick
-     */
+  * Defines the potential axis of a Joystick
+  */
 @JSImport("babylonjs", "JoystickAxis")
 @js.native
 object JoystickAxis extends js.Object {

@@ -12,10 +12,6 @@ trait IUtilAnimation extends js.Object {
   	 * @param [options] Animation options
   	 */
   def animate(): scala.Unit = js.native
-  /**
-  	 * Changes value from one to another within certain period of time, invoking callbacks as value is being changed.
-  	 * @param [options] Animation options
-  	 */
   def animate(options: IUtilAnimationOptions): scala.Unit = js.native
   /**
   	 * requestAnimationFrame polyfill based on http://paulirish.com/2011/requestanimationframe-for-smart-animating/

@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(eslint.eslint.Rule.NodeListener) */ 
-trait RuleListener
+- Lifted 1 members from Set(eslint.eslint.Rule.NodeListener) */ trait RuleListener
   extends /* key */ org.scalablytyped.runtime.StringDictionary[
       js.UndefOr[
         (js.Function2[/* codePath */ CodePath, /* node */ estreeLib.estreeMod.Node, scala.Unit]) | (js.Function2[/* segment */ CodePathSegment, /* node */ estreeLib.estreeMod.Node, scala.Unit]) | (js.Function3[

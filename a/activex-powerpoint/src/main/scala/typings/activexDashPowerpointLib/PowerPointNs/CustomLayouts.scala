@@ -16,7 +16,6 @@ class CustomLayouts protected () extends js.Object {
   def Item(Index: js.Any): CustomLayout = js.native
   /** @param number [Index=-1] */
   def Paste(): CustomLayout = js.native
-  /** @param number [Index=-1] */
   def Paste(Index: scala.Double): CustomLayout = js.native
 }
 

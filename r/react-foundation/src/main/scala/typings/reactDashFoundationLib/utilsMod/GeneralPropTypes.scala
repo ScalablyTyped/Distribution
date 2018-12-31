@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GeneralPropTypes extends ClassNameProps {
   var float: js.UndefOr[reactDashFoundationLib.enumsMod.FloatTypes] = js.undefined
   var hideFor: js.UndefOr[

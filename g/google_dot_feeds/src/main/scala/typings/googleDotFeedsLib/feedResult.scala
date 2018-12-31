@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait feedResult extends js.Object {
   var error: js.UndefOr[feedError] = js.undefined
   var feed: feedJSON

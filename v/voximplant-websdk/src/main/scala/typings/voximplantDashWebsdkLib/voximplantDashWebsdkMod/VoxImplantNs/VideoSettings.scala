@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	*	WebRTC Video Settings (aka Constraints)
 	*/
-
 trait VideoSettings extends js.Object {
   /**
   		* The exact aspect ratio (width in pixels divided by height in pixels, represented as a double rounded to the tenth decimal place) or aspect ratio range

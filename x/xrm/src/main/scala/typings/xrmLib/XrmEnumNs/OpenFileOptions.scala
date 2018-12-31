@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait OpenFileOptions extends js.Object
 
 /**
-     * An enumeration for open file dialog options
-     */
+  * An enumeration for open file dialog options
+  */
 @JSGlobal("XrmEnum.OpenFileOptions")
 @js.native
 object OpenFileOptions extends js.Object {

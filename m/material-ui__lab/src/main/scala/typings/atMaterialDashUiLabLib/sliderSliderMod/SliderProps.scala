@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick) */ 
-trait SliderProps
+- Lifted 1 members from Set(std.Pick<react.react.HTMLAttributes<react.HTMLDivElement>, std.Exclude<keyof react.react.HTMLAttributes<react.HTMLDivElement>, 'classes' | 'onChange'>>) */ trait SliderProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[SliderClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Table extends js.Object {
   /** Headers of the table's columns. Optional: if not set then the table has only one dimension. */
   var columnHeaders: js.UndefOr[Headers] = js.undefined

@@ -82,7 +82,7 @@ object sharepointLibMembers extends js.Object {
   @JSName("$setResultObject")
   def $setResultObject(id: java.lang.String, resultObject: js.Any): scala.Unit = js.native
   /** Ensures that url has correct protocol or is a relative URL, and html-encodes it.
-   * If URL is incorrect, returns empty string. */
+    * If URL is incorrect, returns empty string. */
   @JSName("$urlHtmlEncode")
   def $urlHtmlEncode(s: java.lang.String): java.lang.String = js.native
   /** (alias for SP.Utilities.HttpUtility.urlKeyValueEncode) */
@@ -94,7 +94,7 @@ object sharepointLibMembers extends js.Object {
   def AddEvtHandler(element: stdLib.HTMLElement, event: java.lang.String, func: stdLib.EventListener): scala.Unit = js.native
   def CoreRender(template: js.Any, context: js.Any): java.lang.String = js.native
   def ExecuteOrDelayUntilBodyLoaded(initFunc: js.Function0[scala.Unit]): scala.Unit = js.native
-  def ExecuteOrDelayUntilEventNotified(func: js.Function1[/* repeated */js.Any, scala.Unit], eventName: java.lang.String): scala.Boolean = js.native
+  def ExecuteOrDelayUntilEventNotified(func: js.Function1[/* repeated */ js.Any, scala.Unit], eventName: java.lang.String): scala.Boolean = js.native
   def ExecuteOrDelayUntilScriptLoaded(func: js.Function0[scala.Unit], depScriptFileName: java.lang.String): scala.Boolean = js.native
   def GenerateIID(renderCtx: sharepointLib.SPClientTemplatesNs.RenderContext_ItemInView): java.lang.String = js.native
   def GenerateIIDForListItem(

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActiveXObjectNameMap extends js.Object {
   var `InternetExplorer.Application`: activexDashShdocvwLib.SHDocVwNs.InternetExplorer
   var `Shell.Explorer`: activexDashShdocvwLib.SHDocVwNs.WebBrowser

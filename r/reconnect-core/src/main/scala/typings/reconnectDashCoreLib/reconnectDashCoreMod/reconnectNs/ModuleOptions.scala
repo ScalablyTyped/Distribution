@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModuleOptions[ConnectionType]
   extends backoffLib.backoffMod.ExponentialOptions {
   var failAfter: js.UndefOr[scala.Double] = js.undefined

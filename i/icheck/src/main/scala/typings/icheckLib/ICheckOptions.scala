@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICheckOptions extends js.Object {
   /**
   	* Class added on active state (mouse button is pressed on an input)

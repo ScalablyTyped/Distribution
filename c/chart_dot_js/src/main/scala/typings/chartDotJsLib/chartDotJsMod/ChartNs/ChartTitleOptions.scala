@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartTitleOptions extends js.Object {
   var display: js.UndefOr[scala.Boolean] = js.undefined
   var fontColor: js.UndefOr[ChartColor] = js.undefined

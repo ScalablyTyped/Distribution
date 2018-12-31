@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EnterprisesListResponse extends js.Object {
   /** An enterprise. */
   var enterprise: js.UndefOr[js.Array[Enterprise]] = js.undefined

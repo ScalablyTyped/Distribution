@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SegmentedControlProps extends js.Object {
   var items: js.Array[reactLib.reactMod.ReactNs.ReactNode]
   var selectedItemIndex: scala.Double

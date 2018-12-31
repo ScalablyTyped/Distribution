@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait INumber extends IText {
   /** [Method] Returns the value of maxValue
   		* @returns Number

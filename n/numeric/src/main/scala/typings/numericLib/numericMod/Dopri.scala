@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Dopri extends js.Object {
   var events: js.UndefOr[scala.Boolean | numericLib.VectorBoolean] = js.undefined
   var f: numericLib.Vector

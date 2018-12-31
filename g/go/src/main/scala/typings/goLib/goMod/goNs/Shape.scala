@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * A Shape is a GraphObject that shows a geometric figure.
-    * The Geometry determines what is drawn;
-    * the properties .fill and .stroke
-    * (and other stroke properties) determine how it is drawn.
-    */
+  * A Shape is a GraphObject that shows a geometric figure.
+  * The Geometry determines what is drawn;
+  * the properties .fill and .stroke
+  * (and other stroke properties) determine how it is drawn.
+  */
 @js.native
 trait Shape extends GraphObject {
   /**Gets or sets the figure name, used to construct a Geometry.*/

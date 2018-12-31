@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITagItemSuggestionProps
   extends reactLib.reactMod.ReactNs.AllHTMLAttributes[reactLib.HTMLElement] {
   /** Call to provide customized styling that will layer on top of the variant rules. */

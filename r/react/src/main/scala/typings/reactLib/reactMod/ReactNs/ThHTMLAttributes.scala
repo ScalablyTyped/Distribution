@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThHTMLAttributes[T] extends HTMLAttributes[T] {
   var align: js.UndefOr[
     reactLib.reactLibStrings.left | reactLib.reactLibStrings.center | reactLib.reactLibStrings.right | reactLib.reactLibStrings.justify | reactLib.reactLibStrings.char

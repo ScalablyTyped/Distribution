@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFlowOptions extends js.Object {
   var allowDuplicateUploads: js.UndefOr[scala.Boolean] = js.undefined
   var chunkRetryInterval: js.UndefOr[scala.Double] = js.undefined

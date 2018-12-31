@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Template that represents the basic appearance of a list item.
- */
-
+  * Template that represents the basic appearance of a list item.
+  */
 trait ItemTemplate extends js.Object {
   /**
   	 * Contains an array of subview templates to be added (in order) as children to this view.

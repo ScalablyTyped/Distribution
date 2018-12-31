@@ -21,7 +21,7 @@ package object OrchestratorNs {
   ]
   type Strings = java.lang.String | js.Array[java.lang.String]
   /** A task, can either call a callback to indicate task completion or return a promise or a stream: (task is marked complete when promise.then() resolves/fails or stream ends)
-       */
+    */
   type TaskFunc = js.Function1[
     /* callback */ js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit], 
     qLib.qMod.QNs.Promise[js.Any] | nodeLib.streamMod.Stream | js.Any

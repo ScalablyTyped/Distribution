@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VoiceRecognizerTask extends js.Object {
    // 停止;
   def cancel(): scala.Unit

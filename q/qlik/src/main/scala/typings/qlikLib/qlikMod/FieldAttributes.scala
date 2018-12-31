@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FieldAttributes extends js.Object {
   var qDec: java.lang.String
   var qFmt: java.lang.String

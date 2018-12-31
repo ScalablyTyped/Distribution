@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InputOutputBinding extends TypeDerived {
   var inputDataRef: InputSet
   var operationRef: Operation

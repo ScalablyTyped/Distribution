@@ -12,50 +12,50 @@ sealed trait DeploymentStatus extends js.Object
 @js.native
 object DeploymentStatus extends js.Object {
   /**
-       * The deployment status is all.
-       */
+    * The deployment status is all.
+    */
   @js.native
   sealed trait All
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentStatus
   
   /**
-       * The deployment status is failed.
-       */
+    * The deployment status is failed.
+    */
   @js.native
   sealed trait Failed
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentStatus
   
   /**
-       * The deployment status is inprogress.
-       */
+    * The deployment status is inprogress.
+    */
   @js.native
   sealed trait InProgress
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentStatus
   
   /**
-       * The deployment status is not deployed.
-       */
+    * The deployment status is not deployed.
+    */
   @js.native
   sealed trait NotDeployed
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentStatus
   
   /**
-       * The deployment status is partiallysucceeded.
-       */
+    * The deployment status is partiallysucceeded.
+    */
   @js.native
   sealed trait PartiallySucceeded
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentStatus
   
   /**
-       * The deployment status is succeeded.
-       */
+    * The deployment status is succeeded.
+    */
   @js.native
   sealed trait Succeeded
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentStatus
   
   /**
-       * The deployment status is undefined.
-       */
+    * The deployment status is undefined.
+    */
   @js.native
   sealed trait Undefined
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentStatus

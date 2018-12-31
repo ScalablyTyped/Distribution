@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // WebSocket
-
 trait ConnectSocketOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 请求的数据 */

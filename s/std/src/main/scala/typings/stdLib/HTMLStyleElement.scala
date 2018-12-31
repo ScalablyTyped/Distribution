@@ -10,12 +10,12 @@ trait HTMLStyleElement
   extends HTMLElement
      with LinkStyle {
   /**
-       * Sets or retrieves the media type.
-       */
+    * Sets or retrieves the media type.
+    */
   var media: java.lang.String = js.native
   /**
-       * Retrieves the CSS language in which the style sheet is written.
-       */
+    * Retrieves the CSS language in which the style sheet is written.
+    */
   /** @deprecated */
   var `type`: java.lang.String = js.native
   /* InferMemberOverrides */

@@ -142,114 +142,114 @@ trait Commands[R] extends js.Object {
   @JSName("ZUNIONSTORE")
   var ZUNIONSTORE_Original: OverloadedCommand[java.lang.String | scala.Double, scala.Double, R] = js.native
   /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
+    * Perform arbitrary bitfield integer operations on strings.
+    */
   @JSName("bitfield")
   var bitfield_Original: OverloadedKeyCommand[java.lang.String | scala.Double, js.Tuple2[scala.Double, scala.Double], R] = js.native
   /**
-       * Remove and get the first element in a list, or block until one is available.
-       */
+    * Remove and get the first element in a list, or block until one is available.
+    */
   @JSName("blpop")
   var blpop_Original: OverloadedLastCommand[java.lang.String, scala.Double, js.Tuple2[java.lang.String, java.lang.String], R] = js.native
   /**
-       * Remove and get the last element in a list, or block until one is available.
-       */
+    * Remove and get the last element in a list, or block until one is available.
+    */
   @JSName("brpop")
   var brpop_Original: OverloadedLastCommand[java.lang.String, scala.Double, js.Tuple2[java.lang.String, java.lang.String], R] = js.native
   /**
-       * KILL - Kill the connection of a client.
-       * LIST - Get the list of client connections.
-       * GETNAME - Get the current connection name.
-       * PAUSE - Stop processing commands from clients for some time.
-       * REPLY - Instruct the server whether to reply to commands.
-       * SETNAME - Set the current connection name.
-       */
+    * KILL - Kill the connection of a client.
+    * LIST - Get the list of client connections.
+    * GETNAME - Get the current connection name.
+    * PAUSE - Stop processing commands from clients for some time.
+    * REPLY - Instruct the server whether to reply to commands.
+    * SETNAME - Set the current connection name.
+    */
   @JSName("client")
   var client_Original: OverloadedCommand[java.lang.String, _, R] = js.native
   /**
-       * ADDSLOTS - Assign new hash slots to receiving node.
-       * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
-       * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
-       * DELSLOTS - Set hash slots as unbound in receiving node.
-       * FAILOVER - Forces a slave to perform a manual failover of its master.
-       * FORGET - Remove a node from the nodes table.
-       * GETKEYSINSLOT - Return local key names in the specified hash slot.
-       * INFO - Provides info about Redis Cluster node state.
-       * KEYSLOT - Returns the hash slot of the specified key.
-       * MEET - Force a node cluster to handshake with another node.
-       * NODES - Get cluster config for the node.
-       * REPLICATE - Reconfigure a node as a slave of the specified master node.
-       * RESET - Reset a Redis Cluster node.
-       * SAVECONFIG - Forces the node to save cluster state on disk.
-       * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
-       * SETSLOT - Bind a hash slot to a specified node.
-       * SLAVES - List slave nodes of the specified master node.
-       * SLOTS - Get array of Cluster slot to node mappings.
-       */
+    * ADDSLOTS - Assign new hash slots to receiving node.
+    * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
+    * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
+    * DELSLOTS - Set hash slots as unbound in receiving node.
+    * FAILOVER - Forces a slave to perform a manual failover of its master.
+    * FORGET - Remove a node from the nodes table.
+    * GETKEYSINSLOT - Return local key names in the specified hash slot.
+    * INFO - Provides info about Redis Cluster node state.
+    * KEYSLOT - Returns the hash slot of the specified key.
+    * MEET - Force a node cluster to handshake with another node.
+    * NODES - Get cluster config for the node.
+    * REPLICATE - Reconfigure a node as a slave of the specified master node.
+    * RESET - Reset a Redis Cluster node.
+    * SAVECONFIG - Forces the node to save cluster state on disk.
+    * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
+    * SETSLOT - Bind a hash slot to a specified node.
+    * SLAVES - List slave nodes of the specified master node.
+    * SLOTS - Get array of Cluster slot to node mappings.
+    */
   @JSName("cluster")
   var cluster_Original: OverloadedCommand[java.lang.String, _, this.type] = js.native
   /**
-       * Get array of Redis command details.
-       *
-       * COUNT - Get array of Redis command details.
-       * GETKEYS - Extract keys given a full Redis command.
-       * INFO - Get array of specific Redis command details.
-       * GET - Get the value of a configuration parameter.
-       * REWRITE - Rewrite the configuration file with the in memory configuration.
-       * SET - Set a configuration parameter to the given value.
-       * RESETSTAT - Reset the stats returned by INFO.
-       */
+    * Get array of Redis command details.
+    *
+    * COUNT - Get array of Redis command details.
+    * GETKEYS - Extract keys given a full Redis command.
+    * INFO - Get array of specific Redis command details.
+    * GET - Get the value of a configuration parameter.
+    * REWRITE - Rewrite the configuration file with the in memory configuration.
+    * SET - Set a configuration parameter to the given value.
+    * RESETSTAT - Reset the stats returned by INFO.
+    */
   @JSName("config")
   var config_Original: OverloadedCommand[java.lang.String, scala.Boolean, R] = js.native
   /**
-       * OBJECT - Get debugging information about a key.
-       * SEGFAULT - Make the server crash.
-       */
+    * OBJECT - Get debugging information about a key.
+    * SEGFAULT - Make the server crash.
+    */
   @JSName("debug")
   var debug_Original: OverloadedCommand[java.lang.String, scala.Boolean, R] = js.native
   /**
-       * Delete a key.
-       */
+    * Delete a key.
+    */
   @JSName("del")
   var del_Original: OverloadedCommand[java.lang.String, scala.Double, R] = js.native
   /**
-       * Execute a Lua script server side.
-       */
+    * Execute a Lua script server side.
+    */
   @JSName("eval")
   var eval_Original: OverloadedCommand[java.lang.String | scala.Double, _, R] = js.native
   /**
-       * Execute a Lue script server side.
-       */
+    * Execute a Lue script server side.
+    */
   @JSName("evalsha")
   var evalsha_Original: OverloadedCommand[java.lang.String | scala.Double, _, R] = js.native
   /**
-       * Determine if a key exists.
-       */
+    * Determine if a key exists.
+    */
   @JSName("exists")
   var exists_Original: OverloadedCommand[java.lang.String, scala.Double, R] = js.native
   /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
+    * Add one or more geospatial items in the geospatial index represented using a sorted set.
+    */
   @JSName("geoadd")
   var geoadd_Original: OverloadedKeyCommand[java.lang.String | scala.Double, scala.Double, R] = js.native
   /**
-       * Returns the distance between two members of a geospatial index.
-       */
+    * Returns the distance between two members of a geospatial index.
+    */
   @JSName("geodist")
   var geodist_Original: OverloadedKeyCommand[java.lang.String, java.lang.String, R] = js.native
   /**
-       * Returns members of a geospatial index as standard geohash strings.
-       */
+    * Returns members of a geospatial index as standard geohash strings.
+    */
   @JSName("geohash")
   var geohash_Original: OverloadedKeyCommand[java.lang.String, java.lang.String, R] = js.native
   /**
-       * Returns longitude and latitude of members of a geospatial index.
-       */
+    * Returns longitude and latitude of members of a geospatial index.
+    */
   @JSName("geopos")
   var geopos_Original: OverloadedKeyCommand[java.lang.String, js.Array[js.Tuple2[scala.Double, scala.Double]], R] = js.native
   /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
+    * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
+    */
   @JSName("georadius")
   var georadius_Original: OverloadedKeyCommand[
     java.lang.String | scala.Double, 
@@ -262,8 +262,8 @@ trait Commands[R] extends js.Object {
     R
   ] = js.native
   /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
+    * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
+    */
   @JSName("georadiusbymember")
   var georadiusbymember_Original: OverloadedKeyCommand[
     java.lang.String | scala.Double, 
@@ -276,137 +276,137 @@ trait Commands[R] extends js.Object {
     R
   ] = js.native
   /**
-       * Delete on or more hash fields.
-       */
+    * Delete on or more hash fields.
+    */
   @JSName("hdel")
   var hdel_Original: OverloadedKeyCommand[java.lang.String, scala.Double, R] = js.native
   /**
-       * Get the values of all the given hash fields.
-       */
+    * Get the values of all the given hash fields.
+    */
   @JSName("hmget")
   var hmget_Original: OverloadedKeyCommand[java.lang.String, js.Array[java.lang.String], R] = js.native
   /**
-       * Set multiple hash fields to multiple values.
-       */
+    * Set multiple hash fields to multiple values.
+    */
   @JSName("hmset")
   var hmset_Original: OverloadedSetCommand[java.lang.String | scala.Double, redisLib.redisLibStrings.OK, R] = js.native
   /**
-       * Incrementally iterate hash fields and associated values.
-       */
+    * Incrementally iterate hash fields and associated values.
+    */
   @JSName("hscan")
   var hscan_Original: OverloadedKeyCommand[java.lang.String, js.Tuple2[java.lang.String, js.Array[java.lang.String]], R] = js.native
   /**
-       * Prepend one or multiple values to a list.
-       */
+    * Prepend one or multiple values to a list.
+    */
   @JSName("lpush")
   var lpush_Original: OverloadedKeyCommand[java.lang.String, scala.Double, R] = js.native
   /**
-       * Get the values of all given keys.
-       */
+    * Get the values of all given keys.
+    */
   @JSName("mget")
   var mget_Original: OverloadedCommand[java.lang.String, js.Array[java.lang.String], R] = js.native
   /**
-       * Atomically tranfer a key from a Redis instance to another one.
-       */
+    * Atomically tranfer a key from a Redis instance to another one.
+    */
   @JSName("migrate")
   var migrate_Original: OverloadedCommand[java.lang.String, scala.Boolean, R] = js.native
   /**
-       * Set multiple keys to multiple values.
-       */
+    * Set multiple keys to multiple values.
+    */
   @JSName("mset")
   var mset_Original: OverloadedCommand[java.lang.String, scala.Boolean, R] = js.native
   /**
-       * Set multiple keys to multiple values, only if none of the keys exist.
-       */
+    * Set multiple keys to multiple values, only if none of the keys exist.
+    */
   @JSName("msetnx")
   var msetnx_Original: OverloadedCommand[java.lang.String, scala.Boolean, R] = js.native
   /**
-       * Inspect the internals of Redis objects.
-       */
+    * Inspect the internals of Redis objects.
+    */
   @JSName("object")
   var object_Original: OverloadedCommand[java.lang.String, _, R] = js.native
   /**
-       * Adds the specified elements to the specified HyperLogLog.
-       */
+    * Adds the specified elements to the specified HyperLogLog.
+    */
   @JSName("pfadd")
   var pfadd_Original: OverloadedKeyCommand[java.lang.String, scala.Double, R] = js.native
   /**
-       * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
-       */
+    * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
+    */
   @JSName("pfcount")
   var pfcount_Original: OverloadedCommand[java.lang.String, scala.Double, R] = js.native
   /**
-       * Merge N different HyperLogLogs into a single one.
-       */
+    * Merge N different HyperLogLogs into a single one.
+    */
   @JSName("pfmerge")
   var pfmerge_Original: OverloadedCommand[java.lang.String, scala.Boolean, R] = js.native
   /**
-       * Listen for messages published to channels matching the given patterns.
-       */
+    * Listen for messages published to channels matching the given patterns.
+    */
   @JSName("psubscribe")
   var psubscribe_Original: OverloadedListCommand[java.lang.String, java.lang.String, R] = js.native
   /**
-       * Inspect the state of the Pub/Sub subsytem.
-       */
+    * Inspect the state of the Pub/Sub subsytem.
+    */
   @JSName("pubsub")
   var pubsub_Original: OverloadedCommand[java.lang.String, scala.Double, R] = js.native
   /**
-       * Stop listening for messages posted to channels matching the given patterns.
-       */
+    * Stop listening for messages posted to channels matching the given patterns.
+    */
   @JSName("punsubscribe")
   var punsubscribe_Original: OverloadedListCommand[java.lang.String, java.lang.String, R] = js.native
   /**
-       * Append one or multiple values to a list.
-       */
+    * Append one or multiple values to a list.
+    */
   @JSName("rpush")
   var rpush_Original: OverloadedKeyCommand[java.lang.String, scala.Double, R] = js.native
   /**
-       * Append one or multiple members to a set.
-       */
+    * Append one or multiple members to a set.
+    */
   @JSName("sadd")
   var sadd_Original: OverloadedKeyCommand[java.lang.String, scala.Double, R] = js.native
   /**
-       * Incrementally iterate the keys space.
-       */
+    * Incrementally iterate the keys space.
+    */
   @JSName("scan")
   var scan_Original: OverloadedCommand[java.lang.String, js.Tuple2[java.lang.String, js.Array[java.lang.String]], R] = js.native
   /**
-       * DEBUG - Set the debug mode for executed scripts.
-       * EXISTS - Check existence of scripts in the script cache.
-       * FLUSH - Remove all scripts from the script cache.
-       * KILL - Kill the script currently in execution.
-       * LOAD - Load the specified Lua script into the script cache.
-       */
+    * DEBUG - Set the debug mode for executed scripts.
+    * EXISTS - Check existence of scripts in the script cache.
+    * FLUSH - Remove all scripts from the script cache.
+    * KILL - Kill the script currently in execution.
+    * LOAD - Load the specified Lua script into the script cache.
+    */
   @JSName("script")
   var script_Original: OverloadedCommand[java.lang.String, _, R] = js.native
   /**
-       * Subtract multiple sets.
-       */
+    * Subtract multiple sets.
+    */
   @JSName("sdiff")
   var sdiff_Original: OverloadedCommand[java.lang.String, js.Array[java.lang.String], R] = js.native
   /**
-       * Subtract multiple sets and store the resulting set in a key.
-       */
+    * Subtract multiple sets and store the resulting set in a key.
+    */
   @JSName("sdiffstore")
   var sdiffstore_Original: OverloadedKeyCommand[java.lang.String, scala.Double, R] = js.native
   /**
-       * Synchronously save the dataset to disk and then shut down the server.
-       */
+    * Synchronously save the dataset to disk and then shut down the server.
+    */
   @JSName("shutdown")
   var shutdown_Original: OverloadedCommand[java.lang.String, java.lang.String, R] = js.native
   /**
-       * Intersect multiple sets.
-       */
+    * Intersect multiple sets.
+    */
   @JSName("sinter")
   var sinter_Original: OverloadedKeyCommand[java.lang.String, js.Array[java.lang.String], R] = js.native
   /**
-       * Intersect multiple sets and store the resulting set in a key.
-       */
+    * Intersect multiple sets and store the resulting set in a key.
+    */
   @JSName("sinterstore")
   var sinterstore_Original: OverloadedCommand[java.lang.String, scala.Double, R] = js.native
   /**
-       * Manages the Redis slow queries log.
-       */
+    * Manages the Redis slow queries log.
+    */
   @JSName("slowlog")
   var slowlog_Original: OverloadedCommand[
     java.lang.String, 
@@ -414,68 +414,68 @@ trait Commands[R] extends js.Object {
     R
   ] = js.native
   /**
-       * Sort the elements in a list, set or sorted set.
-       */
+    * Sort the elements in a list, set or sorted set.
+    */
   @JSName("sort")
   var sort_Original: OverloadedCommand[java.lang.String, js.Array[java.lang.String], R] = js.native
   /**
-       * Remove one or more members from a set.
-       */
+    * Remove one or more members from a set.
+    */
   @JSName("srem")
   var srem_Original: OverloadedKeyCommand[java.lang.String, scala.Double, R] = js.native
   /**
-       * Incrementally iterate Set elements.
-       */
+    * Incrementally iterate Set elements.
+    */
   @JSName("sscan")
   var sscan_Original: OverloadedKeyCommand[java.lang.String, js.Tuple2[java.lang.String, js.Array[java.lang.String]], R] = js.native
   /**
-       * Listen for messages published to the given channels.
-       */
+    * Listen for messages published to the given channels.
+    */
   @JSName("subscribe")
   var subscribe_Original: OverloadedListCommand[java.lang.String, java.lang.String, R] = js.native
   /**
-       * Add multiple sets.
-       */
+    * Add multiple sets.
+    */
   @JSName("sunion")
   var sunion_Original: OverloadedCommand[java.lang.String, js.Array[java.lang.String], R] = js.native
   /**
-       * Add multiple sets and store the resulting set in a key.
-       */
+    * Add multiple sets and store the resulting set in a key.
+    */
   @JSName("sunionstore")
   var sunionstore_Original: OverloadedCommand[java.lang.String, scala.Double, R] = js.native
   /**
-       * Stop listening for messages posted to the given channels.
-       */
+    * Stop listening for messages posted to the given channels.
+    */
   @JSName("unsubscribe")
   var unsubscribe_Original: OverloadedListCommand[java.lang.String, java.lang.String, R] = js.native
   /**
-       * Watch the given keys to determine execution of the MULTI/EXEC block.
-       */
+    * Watch the given keys to determine execution of the MULTI/EXEC block.
+    */
   @JSName("watch")
   var watch_Original: OverloadedCommand[java.lang.String, redisLib.redisLibStrings.OK, R] = js.native
   /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
+    * Add one or more members to a sorted set, or update its score if it already exists.
+    */
   @JSName("zadd")
   var zadd_Original: OverloadedKeyCommand[java.lang.String | scala.Double, scala.Double, R] = js.native
   /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
+    * Intersect multiple sorted sets and store the resulting sorted set in a new key.
+    */
   @JSName("zinterstore")
   var zinterstore_Original: OverloadedCommand[java.lang.String | scala.Double, scala.Double, R] = js.native
   /**
-       * Remove one or more members from a sorted set.
-       */
+    * Remove one or more members from a sorted set.
+    */
   @JSName("zrem")
   var zrem_Original: OverloadedKeyCommand[java.lang.String, scala.Double, R] = js.native
   /**
-       * Incrementally iterate sorted sets elements and associated scores.
-       */
+    * Incrementally iterate sorted sets elements and associated scores.
+    */
   @JSName("zscan")
   var zscan_Original: OverloadedKeyCommand[java.lang.String, js.Tuple2[java.lang.String, js.Array[java.lang.String]], R] = js.native
   /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
+    * Add multiple sorted sets and store the resulting sorted set in a new key.
+    */
   @JSName("zunionstore")
   var zunionstore_Original: OverloadedCommand[java.lang.String | scala.Double, scala.Double, R] = js.native
   def APPEND(key: java.lang.String, value: java.lang.String): R = js.native
@@ -7779,59 +7779,44 @@ trait Commands[R] extends js.Object {
   def ZUNIONSTORE(arg1: scala.Double, arg2: scala.Double, arg3: scala.Double, cb: Callback[scala.Double]): R = js.native
   def ZUNIONSTORE(args: (java.lang.String | scala.Double | Callback[scala.Double])*): R = js.native
   /**
-       * Append a value to a key.
-       */
+    * Append a value to a key.
+    */
   def append(key: java.lang.String, value: java.lang.String): R = js.native
-  /**
-       * Append a value to a key.
-       */
   def append(key: java.lang.String, value: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Authenticate to the server.
-       */
+    * Authenticate to the server.
+    */
   def auth(password: java.lang.String): R = js.native
-  /**
-       * Authenticate to the server.
-       */
   def auth(password: java.lang.String, callback: Callback[java.lang.String]): R = js.native
   /**
-       * Asynchronously rewrite the append-only file.
-       */
+    * Asynchronously rewrite the append-only file.
+    */
   def bgrewriteaof(): R = js.native
-  /**
-       * Asynchronously rewrite the append-only file.
-       */
   @JSName("bgrewriteaof")
   def bgrewriteaof_OK(cb: Callback[redisLib.redisLibStrings.OK]): R = js.native
   /**
-       * Asynchronously save the dataset to disk.
-       */
+    * Asynchronously save the dataset to disk.
+    */
   def bgsave(): R = js.native
-  /**
-       * Asynchronously save the dataset to disk.
-       */
   def bgsave(cb: Callback[java.lang.String]): R = js.native
   /**
-       * Count set bits in a string.
-       */
+    * Count set bits in a string.
+    */
   def bitcount(key: java.lang.String): R = js.native
-  /**
-       * Count set bits in a string.
-       */
   def bitcount(key: java.lang.String, cb: Callback[scala.Double]): R = js.native
   def bitcount(key: java.lang.String, start: scala.Double, end: scala.Double): R = js.native
   def bitcount(key: java.lang.String, start: scala.Double, end: scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
+    * Perform arbitrary bitfield integer operations on strings.
+    */
   def bitfield(args: (java.lang.String | scala.Double | (Callback[js.Tuple2[scala.Double, scala.Double]]))*): R = js.native
   /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
+    * Perform arbitrary bitfield integer operations on strings.
+    */
   def bitfield(key: java.lang.String, arg1: java.lang.String | scala.Double): R = js.native
   /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
+    * Perform arbitrary bitfield integer operations on strings.
+    */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -7841,8 +7826,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double
   ): R = js.native
   /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
+    * Perform arbitrary bitfield integer operations on strings.
+    */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -7852,9 +7837,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double,
     arg6: java.lang.String | scala.Double
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -7865,9 +7847,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String | scala.Double,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -7877,25 +7856,22 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
   /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
+    * Perform arbitrary bitfield integer operations on strings.
+    */
   def bitfield(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
+    * Perform arbitrary bitfield integer operations on strings.
+    */
   def bitfield(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
+    * Perform arbitrary bitfield integer operations on strings.
+    */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -7903,9 +7879,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -7914,9 +7887,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -7924,9 +7894,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -7935,9 +7902,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -7945,13 +7909,7 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -7959,9 +7917,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -7970,9 +7925,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -7980,9 +7932,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -7991,9 +7940,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -8001,26 +7947,14 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
     arg2: java.lang.String,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -8028,9 +7962,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -8039,9 +7970,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -8049,9 +7977,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -8060,9 +7985,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -8070,13 +7992,7 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -8084,9 +8000,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -8095,9 +8008,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -8105,9 +8015,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -8116,9 +8023,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -8126,38 +8030,20 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: java.lang.String,
     arg2: scala.Double,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(key: java.lang.String, arg1: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: js.Array[java.lang.String | scala.Double],
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
@@ -8165,9 +8051,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
@@ -8176,9 +8059,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
@@ -8186,9 +8066,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
@@ -8197,9 +8074,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
@@ -8207,13 +8081,7 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
@@ -8221,9 +8089,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
@@ -8232,9 +8097,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
@@ -8242,9 +8104,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
@@ -8253,9 +8112,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
@@ -8263,26 +8119,14 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
     arg2: java.lang.String,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(key: java.lang.String, arg1: scala.Double, arg2: scala.Double): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(key: java.lang.String, arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
@@ -8290,9 +8134,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
@@ -8301,9 +8142,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
@@ -8311,9 +8149,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
@@ -8322,9 +8157,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
@@ -8332,13 +8164,7 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(key: java.lang.String, arg1: scala.Double, arg2: scala.Double, arg3: scala.Double): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
@@ -8346,9 +8172,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
@@ -8357,9 +8180,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
@@ -8367,9 +8187,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
@@ -8378,9 +8195,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
@@ -8388,9 +8202,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
-  /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
   def bitfield(
     key: java.lang.String,
     arg1: scala.Double,
@@ -8398,8 +8209,8 @@ trait Commands[R] extends js.Object {
     cb: Callback[js.Tuple2[scala.Double, scala.Double]]
   ): R = js.native
   /**
-       * Perform arbitrary bitfield integer operations on strings.
-       */
+    * Perform arbitrary bitfield integer operations on strings.
+    */
   def bitfield(
     key: java.lang.String,
     args: (java.lang.String | scala.Double | (Callback[js.Tuple2[scala.Double, scala.Double]]))*
@@ -8423,8 +8234,8 @@ trait Commands[R] extends js.Object {
     cb: Callback[scala.Double]
   ): R = js.native
   /**
-       * Perform bitwise operations between strings.
-       */
+    * Perform bitwise operations between strings.
+    */
   def bitop(
     operation: java.lang.String,
     destkey: java.lang.String,
@@ -8432,9 +8243,6 @@ trait Commands[R] extends js.Object {
     key2: java.lang.String,
     key3: java.lang.String
   ): R = js.native
-  /**
-       * Perform bitwise operations between strings.
-       */
   def bitop(
     operation: java.lang.String,
     destkey: java.lang.String,
@@ -8455,12 +8263,9 @@ trait Commands[R] extends js.Object {
   def bitpos(key: java.lang.String, bit: scala.Double, start: scala.Double): R = js.native
   def bitpos(key: java.lang.String, bit: scala.Double, start: scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Find first bit set or clear in a string.
-       */
+    * Find first bit set or clear in a string.
+    */
   def bitpos(key: java.lang.String, bit: scala.Double, start: scala.Double, end: scala.Double): R = js.native
-  /**
-       * Find first bit set or clear in a string.
-       */
   def bitpos(
     key: java.lang.String,
     bit: scala.Double,
@@ -8469,8 +8274,8 @@ trait Commands[R] extends js.Object {
     cb: Callback[scala.Double]
   ): R = js.native
   /**
-       * Remove and get the first element in a list, or block until one is available.
-       */
+    * Remove and get the first element in a list, or block until one is available.
+    */
   def blpop(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -8479,9 +8284,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: scala.Double
   ): R = js.native
-  /**
-       * Remove and get the first element in a list, or block until one is available.
-       */
   def blpop(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -8492,8 +8294,8 @@ trait Commands[R] extends js.Object {
     cb: Callback[js.Tuple2[java.lang.String, java.lang.String]]
   ): R = js.native
   /**
-       * Remove and get the first element in a list, or block until one is available.
-       */
+    * Remove and get the first element in a list, or block until one is available.
+    */
   def blpop(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -8501,9 +8303,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     arg5: scala.Double
   ): R = js.native
-  /**
-       * Remove and get the first element in a list, or block until one is available.
-       */
   def blpop(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -8513,12 +8312,9 @@ trait Commands[R] extends js.Object {
     cb: Callback[js.Tuple2[java.lang.String, java.lang.String]]
   ): R = js.native
   /**
-       * Remove and get the first element in a list, or block until one is available.
-       */
+    * Remove and get the first element in a list, or block until one is available.
+    */
   def blpop(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: scala.Double): R = js.native
-  /**
-       * Remove and get the first element in a list, or block until one is available.
-       */
   def blpop(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -8527,62 +8323,47 @@ trait Commands[R] extends js.Object {
     cb: Callback[js.Tuple2[java.lang.String, java.lang.String]]
   ): R = js.native
   /**
-       * Remove and get the first element in a list, or block until one is available.
-       */
+    * Remove and get the first element in a list, or block until one is available.
+    */
   def blpop(arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Remove and get the first element in a list, or block until one is available.
-       */
   def blpop(
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: scala.Double,
     cb: Callback[js.Tuple2[java.lang.String, java.lang.String]]
   ): R = js.native
-  /**
-       * Remove and get the first element in a list, or block until one is available.
-       */
   def blpop(arg1: java.lang.String, arg2: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Remove and get the first element in a list, or block until one is available.
-       */
   def blpop(
     arg1: java.lang.String,
     arg2: js.Array[java.lang.String | scala.Double],
     cb: Callback[js.Tuple2[java.lang.String, java.lang.String]]
   ): R = js.native
   /**
-       * Remove and get the first element in a list, or block until one is available.
-       */
+    * Remove and get the first element in a list, or block until one is available.
+    */
   def blpop(arg1: java.lang.String, arg2: scala.Double): R = js.native
-  /**
-       * Remove and get the first element in a list, or block until one is available.
-       */
   def blpop(
     arg1: java.lang.String,
     arg2: scala.Double,
     cb: Callback[js.Tuple2[java.lang.String, java.lang.String]]
   ): R = js.native
   /**
-       * Remove and get the first element in a list, or block until one is available.
-       */
+    * Remove and get the first element in a list, or block until one is available.
+    */
   def blpop(
     args: (java.lang.String | scala.Double | (Callback[js.Tuple2[java.lang.String, java.lang.String]]))*
   ): R = js.native
   /**
-       * Remove and get the first element in a list, or block until one is available.
-       */
+    * Remove and get the first element in a list, or block until one is available.
+    */
   def blpop(args: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Remove and get the first element in a list, or block until one is available.
-       */
   def blpop(
     args: js.Array[java.lang.String | scala.Double],
     cb: Callback[js.Tuple2[java.lang.String, java.lang.String]]
   ): R = js.native
   /**
-       * Remove and get the last element in a list, or block until one is available.
-       */
+    * Remove and get the last element in a list, or block until one is available.
+    */
   def brpop(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -8591,9 +8372,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: scala.Double
   ): R = js.native
-  /**
-       * Remove and get the last element in a list, or block until one is available.
-       */
   def brpop(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -8604,8 +8382,8 @@ trait Commands[R] extends js.Object {
     cb: Callback[js.Tuple2[java.lang.String, java.lang.String]]
   ): R = js.native
   /**
-       * Remove and get the last element in a list, or block until one is available.
-       */
+    * Remove and get the last element in a list, or block until one is available.
+    */
   def brpop(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -8613,9 +8391,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     arg5: scala.Double
   ): R = js.native
-  /**
-       * Remove and get the last element in a list, or block until one is available.
-       */
   def brpop(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -8625,12 +8400,9 @@ trait Commands[R] extends js.Object {
     cb: Callback[js.Tuple2[java.lang.String, java.lang.String]]
   ): R = js.native
   /**
-       * Remove and get the last element in a list, or block until one is available.
-       */
+    * Remove and get the last element in a list, or block until one is available.
+    */
   def brpop(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: scala.Double): R = js.native
-  /**
-       * Remove and get the last element in a list, or block until one is available.
-       */
   def brpop(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -8639,66 +8411,48 @@ trait Commands[R] extends js.Object {
     cb: Callback[js.Tuple2[java.lang.String, java.lang.String]]
   ): R = js.native
   /**
-       * Remove and get the last element in a list, or block until one is available.
-       */
+    * Remove and get the last element in a list, or block until one is available.
+    */
   def brpop(arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Remove and get the last element in a list, or block until one is available.
-       */
   def brpop(
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: scala.Double,
     cb: Callback[js.Tuple2[java.lang.String, java.lang.String]]
   ): R = js.native
-  /**
-       * Remove and get the last element in a list, or block until one is available.
-       */
   def brpop(arg1: java.lang.String, arg2: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Remove and get the last element in a list, or block until one is available.
-       */
   def brpop(
     arg1: java.lang.String,
     arg2: js.Array[java.lang.String | scala.Double],
     cb: Callback[js.Tuple2[java.lang.String, java.lang.String]]
   ): R = js.native
   /**
-       * Remove and get the last element in a list, or block until one is available.
-       */
+    * Remove and get the last element in a list, or block until one is available.
+    */
   def brpop(arg1: java.lang.String, arg2: scala.Double): R = js.native
-  /**
-       * Remove and get the last element in a list, or block until one is available.
-       */
   def brpop(
     arg1: java.lang.String,
     arg2: scala.Double,
     cb: Callback[js.Tuple2[java.lang.String, java.lang.String]]
   ): R = js.native
   /**
-       * Remove and get the last element in a list, or block until one is available.
-       */
+    * Remove and get the last element in a list, or block until one is available.
+    */
   def brpop(
     args: (java.lang.String | scala.Double | (Callback[js.Tuple2[java.lang.String, java.lang.String]]))*
   ): R = js.native
   /**
-       * Remove and get the last element in a list, or block until one is available.
-       */
+    * Remove and get the last element in a list, or block until one is available.
+    */
   def brpop(args: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Remove and get the last element in a list, or block until one is available.
-       */
   def brpop(
     args: js.Array[java.lang.String | scala.Double],
     cb: Callback[js.Tuple2[java.lang.String, java.lang.String]]
   ): R = js.native
   /**
-       * Pop a value from a list, push it to another list and return it; or block until one is available.
-       */
+    * Pop a value from a list, push it to another list and return it; or block until one is available.
+    */
   def brpoplpush(source: java.lang.String, destination: java.lang.String, timeout: scala.Double): R = js.native
-  /**
-       * Pop a value from a list, push it to another list and return it; or block until one is available.
-       */
   def brpoplpush(
     source: java.lang.String,
     destination: java.lang.String,
@@ -8706,49 +8460,49 @@ trait Commands[R] extends js.Object {
     cb: Callback[java.lang.String | scala.Null]
   ): R = js.native
   /**
-       * KILL - Kill the connection of a client.
-       * LIST - Get the list of client connections.
-       * GETNAME - Get the current connection name.
-       * PAUSE - Stop processing commands from clients for some time.
-       * REPLY - Instruct the server whether to reply to commands.
-       * SETNAME - Set the current connection name.
-       */
+    * KILL - Kill the connection of a client.
+    * LIST - Get the list of client connections.
+    * GETNAME - Get the current connection name.
+    * PAUSE - Stop processing commands from clients for some time.
+    * REPLY - Instruct the server whether to reply to commands.
+    * SETNAME - Set the current connection name.
+    */
   def client(arg1: java.lang.String): R = js.native
   /**
-       * KILL - Kill the connection of a client.
-       * LIST - Get the list of client connections.
-       * GETNAME - Get the current connection name.
-       * PAUSE - Stop processing commands from clients for some time.
-       * REPLY - Instruct the server whether to reply to commands.
-       * SETNAME - Set the current connection name.
-       */
+    * KILL - Kill the connection of a client.
+    * LIST - Get the list of client connections.
+    * GETNAME - Get the current connection name.
+    * PAUSE - Stop processing commands from clients for some time.
+    * REPLY - Instruct the server whether to reply to commands.
+    * SETNAME - Set the current connection name.
+    */
   def client(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * KILL - Kill the connection of a client.
-       * LIST - Get the list of client connections.
-       * GETNAME - Get the current connection name.
-       * PAUSE - Stop processing commands from clients for some time.
-       * REPLY - Instruct the server whether to reply to commands.
-       * SETNAME - Set the current connection name.
-       */
+    * KILL - Kill the connection of a client.
+    * LIST - Get the list of client connections.
+    * GETNAME - Get the current connection name.
+    * PAUSE - Stop processing commands from clients for some time.
+    * REPLY - Instruct the server whether to reply to commands.
+    * SETNAME - Set the current connection name.
+    */
   def client(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * KILL - Kill the connection of a client.
-       * LIST - Get the list of client connections.
-       * GETNAME - Get the current connection name.
-       * PAUSE - Stop processing commands from clients for some time.
-       * REPLY - Instruct the server whether to reply to commands.
-       * SETNAME - Set the current connection name.
-       */
+    * KILL - Kill the connection of a client.
+    * LIST - Get the list of client connections.
+    * GETNAME - Get the current connection name.
+    * PAUSE - Stop processing commands from clients for some time.
+    * REPLY - Instruct the server whether to reply to commands.
+    * SETNAME - Set the current connection name.
+    */
   def client(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * KILL - Kill the connection of a client.
-       * LIST - Get the list of client connections.
-       * GETNAME - Get the current connection name.
-       * PAUSE - Stop processing commands from clients for some time.
-       * REPLY - Instruct the server whether to reply to commands.
-       * SETNAME - Set the current connection name.
-       */
+    * KILL - Kill the connection of a client.
+    * LIST - Get the list of client connections.
+    * GETNAME - Get the current connection name.
+    * PAUSE - Stop processing commands from clients for some time.
+    * REPLY - Instruct the server whether to reply to commands.
+    * SETNAME - Set the current connection name.
+    */
   def client(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -8757,13 +8511,13 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * KILL - Kill the connection of a client.
-       * LIST - Get the list of client connections.
-       * GETNAME - Get the current connection name.
-       * PAUSE - Stop processing commands from clients for some time.
-       * REPLY - Instruct the server whether to reply to commands.
-       * SETNAME - Set the current connection name.
-       */
+    * KILL - Kill the connection of a client.
+    * LIST - Get the list of client connections.
+    * GETNAME - Get the current connection name.
+    * PAUSE - Stop processing commands from clients for some time.
+    * REPLY - Instruct the server whether to reply to commands.
+    * SETNAME - Set the current connection name.
+    */
   def client(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -8772,14 +8526,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * KILL - Kill the connection of a client.
-       * LIST - Get the list of client connections.
-       * GETNAME - Get the current connection name.
-       * PAUSE - Stop processing commands from clients for some time.
-       * REPLY - Instruct the server whether to reply to commands.
-       * SETNAME - Set the current connection name.
-       */
   def client(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -8789,14 +8535,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * KILL - Kill the connection of a client.
-       * LIST - Get the list of client connections.
-       * GETNAME - Get the current connection name.
-       * PAUSE - Stop processing commands from clients for some time.
-       * REPLY - Instruct the server whether to reply to commands.
-       * SETNAME - Set the current connection name.
-       */
   def client(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -8805,14 +8543,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * KILL - Kill the connection of a client.
-       * LIST - Get the list of client connections.
-       * GETNAME - Get the current connection name.
-       * PAUSE - Stop processing commands from clients for some time.
-       * REPLY - Instruct the server whether to reply to commands.
-       * SETNAME - Set the current connection name.
-       */
   def client(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -8820,182 +8550,126 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * KILL - Kill the connection of a client.
-       * LIST - Get the list of client connections.
-       * GETNAME - Get the current connection name.
-       * PAUSE - Stop processing commands from clients for some time.
-       * REPLY - Instruct the server whether to reply to commands.
-       * SETNAME - Set the current connection name.
-       */
   def client(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, cb: Callback[_]): R = js.native
-  /**
-       * KILL - Kill the connection of a client.
-       * LIST - Get the list of client connections.
-       * GETNAME - Get the current connection name.
-       * PAUSE - Stop processing commands from clients for some time.
-       * REPLY - Instruct the server whether to reply to commands.
-       * SETNAME - Set the current connection name.
-       */
   def client(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[_]): R = js.native
-  /**
-       * KILL - Kill the connection of a client.
-       * LIST - Get the list of client connections.
-       * GETNAME - Get the current connection name.
-       * PAUSE - Stop processing commands from clients for some time.
-       * REPLY - Instruct the server whether to reply to commands.
-       * SETNAME - Set the current connection name.
-       */
   def client(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * KILL - Kill the connection of a client.
-       * LIST - Get the list of client connections.
-       * GETNAME - Get the current connection name.
-       * PAUSE - Stop processing commands from clients for some time.
-       * REPLY - Instruct the server whether to reply to commands.
-       * SETNAME - Set the current connection name.
-       */
   def client(arg1: java.lang.String, arg2: js.Array[java.lang.String], cb: Callback[_]): R = js.native
-  /**
-       * KILL - Kill the connection of a client.
-       * LIST - Get the list of client connections.
-       * GETNAME - Get the current connection name.
-       * PAUSE - Stop processing commands from clients for some time.
-       * REPLY - Instruct the server whether to reply to commands.
-       * SETNAME - Set the current connection name.
-       */
   def client(arg1: java.lang.String, cb: Callback[_]): R = js.native
-  /**
-       * KILL - Kill the connection of a client.
-       * LIST - Get the list of client connections.
-       * GETNAME - Get the current connection name.
-       * PAUSE - Stop processing commands from clients for some time.
-       * REPLY - Instruct the server whether to reply to commands.
-       * SETNAME - Set the current connection name.
-       */
   def client(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * KILL - Kill the connection of a client.
-       * LIST - Get the list of client connections.
-       * GETNAME - Get the current connection name.
-       * PAUSE - Stop processing commands from clients for some time.
-       * REPLY - Instruct the server whether to reply to commands.
-       * SETNAME - Set the current connection name.
-       */
   def client(arg1: js.Array[java.lang.String], cb: Callback[_]): R = js.native
   /**
-       * KILL - Kill the connection of a client.
-       * LIST - Get the list of client connections.
-       * GETNAME - Get the current connection name.
-       * PAUSE - Stop processing commands from clients for some time.
-       * REPLY - Instruct the server whether to reply to commands.
-       * SETNAME - Set the current connection name.
-       */
+    * KILL - Kill the connection of a client.
+    * LIST - Get the list of client connections.
+    * GETNAME - Get the current connection name.
+    * PAUSE - Stop processing commands from clients for some time.
+    * REPLY - Instruct the server whether to reply to commands.
+    * SETNAME - Set the current connection name.
+    */
   def client(args: (java.lang.String | Callback[_])*): R = js.native
   /**
-       * ADDSLOTS - Assign new hash slots to receiving node.
-       * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
-       * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
-       * DELSLOTS - Set hash slots as unbound in receiving node.
-       * FAILOVER - Forces a slave to perform a manual failover of its master.
-       * FORGET - Remove a node from the nodes table.
-       * GETKEYSINSLOT - Return local key names in the specified hash slot.
-       * INFO - Provides info about Redis Cluster node state.
-       * KEYSLOT - Returns the hash slot of the specified key.
-       * MEET - Force a node cluster to handshake with another node.
-       * NODES - Get cluster config for the node.
-       * REPLICATE - Reconfigure a node as a slave of the specified master node.
-       * RESET - Reset a Redis Cluster node.
-       * SAVECONFIG - Forces the node to save cluster state on disk.
-       * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
-       * SETSLOT - Bind a hash slot to a specified node.
-       * SLAVES - List slave nodes of the specified master node.
-       * SLOTS - Get array of Cluster slot to node mappings.
-       */
+    * ADDSLOTS - Assign new hash slots to receiving node.
+    * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
+    * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
+    * DELSLOTS - Set hash slots as unbound in receiving node.
+    * FAILOVER - Forces a slave to perform a manual failover of its master.
+    * FORGET - Remove a node from the nodes table.
+    * GETKEYSINSLOT - Return local key names in the specified hash slot.
+    * INFO - Provides info about Redis Cluster node state.
+    * KEYSLOT - Returns the hash slot of the specified key.
+    * MEET - Force a node cluster to handshake with another node.
+    * NODES - Get cluster config for the node.
+    * REPLICATE - Reconfigure a node as a slave of the specified master node.
+    * RESET - Reset a Redis Cluster node.
+    * SAVECONFIG - Forces the node to save cluster state on disk.
+    * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
+    * SETSLOT - Bind a hash slot to a specified node.
+    * SLAVES - List slave nodes of the specified master node.
+    * SLOTS - Get array of Cluster slot to node mappings.
+    */
   def cluster(arg1: java.lang.String): this.type = js.native
   /**
-       * ADDSLOTS - Assign new hash slots to receiving node.
-       * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
-       * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
-       * DELSLOTS - Set hash slots as unbound in receiving node.
-       * FAILOVER - Forces a slave to perform a manual failover of its master.
-       * FORGET - Remove a node from the nodes table.
-       * GETKEYSINSLOT - Return local key names in the specified hash slot.
-       * INFO - Provides info about Redis Cluster node state.
-       * KEYSLOT - Returns the hash slot of the specified key.
-       * MEET - Force a node cluster to handshake with another node.
-       * NODES - Get cluster config for the node.
-       * REPLICATE - Reconfigure a node as a slave of the specified master node.
-       * RESET - Reset a Redis Cluster node.
-       * SAVECONFIG - Forces the node to save cluster state on disk.
-       * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
-       * SETSLOT - Bind a hash slot to a specified node.
-       * SLAVES - List slave nodes of the specified master node.
-       * SLOTS - Get array of Cluster slot to node mappings.
-       */
+    * ADDSLOTS - Assign new hash slots to receiving node.
+    * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
+    * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
+    * DELSLOTS - Set hash slots as unbound in receiving node.
+    * FAILOVER - Forces a slave to perform a manual failover of its master.
+    * FORGET - Remove a node from the nodes table.
+    * GETKEYSINSLOT - Return local key names in the specified hash slot.
+    * INFO - Provides info about Redis Cluster node state.
+    * KEYSLOT - Returns the hash slot of the specified key.
+    * MEET - Force a node cluster to handshake with another node.
+    * NODES - Get cluster config for the node.
+    * REPLICATE - Reconfigure a node as a slave of the specified master node.
+    * RESET - Reset a Redis Cluster node.
+    * SAVECONFIG - Forces the node to save cluster state on disk.
+    * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
+    * SETSLOT - Bind a hash slot to a specified node.
+    * SLAVES - List slave nodes of the specified master node.
+    * SLOTS - Get array of Cluster slot to node mappings.
+    */
   def cluster(arg1: java.lang.String, arg2: java.lang.String): this.type = js.native
   /**
-       * ADDSLOTS - Assign new hash slots to receiving node.
-       * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
-       * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
-       * DELSLOTS - Set hash slots as unbound in receiving node.
-       * FAILOVER - Forces a slave to perform a manual failover of its master.
-       * FORGET - Remove a node from the nodes table.
-       * GETKEYSINSLOT - Return local key names in the specified hash slot.
-       * INFO - Provides info about Redis Cluster node state.
-       * KEYSLOT - Returns the hash slot of the specified key.
-       * MEET - Force a node cluster to handshake with another node.
-       * NODES - Get cluster config for the node.
-       * REPLICATE - Reconfigure a node as a slave of the specified master node.
-       * RESET - Reset a Redis Cluster node.
-       * SAVECONFIG - Forces the node to save cluster state on disk.
-       * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
-       * SETSLOT - Bind a hash slot to a specified node.
-       * SLAVES - List slave nodes of the specified master node.
-       * SLOTS - Get array of Cluster slot to node mappings.
-       */
+    * ADDSLOTS - Assign new hash slots to receiving node.
+    * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
+    * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
+    * DELSLOTS - Set hash slots as unbound in receiving node.
+    * FAILOVER - Forces a slave to perform a manual failover of its master.
+    * FORGET - Remove a node from the nodes table.
+    * GETKEYSINSLOT - Return local key names in the specified hash slot.
+    * INFO - Provides info about Redis Cluster node state.
+    * KEYSLOT - Returns the hash slot of the specified key.
+    * MEET - Force a node cluster to handshake with another node.
+    * NODES - Get cluster config for the node.
+    * REPLICATE - Reconfigure a node as a slave of the specified master node.
+    * RESET - Reset a Redis Cluster node.
+    * SAVECONFIG - Forces the node to save cluster state on disk.
+    * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
+    * SETSLOT - Bind a hash slot to a specified node.
+    * SLAVES - List slave nodes of the specified master node.
+    * SLOTS - Get array of Cluster slot to node mappings.
+    */
   def cluster(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): this.type = js.native
   /**
-       * ADDSLOTS - Assign new hash slots to receiving node.
-       * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
-       * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
-       * DELSLOTS - Set hash slots as unbound in receiving node.
-       * FAILOVER - Forces a slave to perform a manual failover of its master.
-       * FORGET - Remove a node from the nodes table.
-       * GETKEYSINSLOT - Return local key names in the specified hash slot.
-       * INFO - Provides info about Redis Cluster node state.
-       * KEYSLOT - Returns the hash slot of the specified key.
-       * MEET - Force a node cluster to handshake with another node.
-       * NODES - Get cluster config for the node.
-       * REPLICATE - Reconfigure a node as a slave of the specified master node.
-       * RESET - Reset a Redis Cluster node.
-       * SAVECONFIG - Forces the node to save cluster state on disk.
-       * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
-       * SETSLOT - Bind a hash slot to a specified node.
-       * SLAVES - List slave nodes of the specified master node.
-       * SLOTS - Get array of Cluster slot to node mappings.
-       */
+    * ADDSLOTS - Assign new hash slots to receiving node.
+    * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
+    * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
+    * DELSLOTS - Set hash slots as unbound in receiving node.
+    * FAILOVER - Forces a slave to perform a manual failover of its master.
+    * FORGET - Remove a node from the nodes table.
+    * GETKEYSINSLOT - Return local key names in the specified hash slot.
+    * INFO - Provides info about Redis Cluster node state.
+    * KEYSLOT - Returns the hash slot of the specified key.
+    * MEET - Force a node cluster to handshake with another node.
+    * NODES - Get cluster config for the node.
+    * REPLICATE - Reconfigure a node as a slave of the specified master node.
+    * RESET - Reset a Redis Cluster node.
+    * SAVECONFIG - Forces the node to save cluster state on disk.
+    * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
+    * SETSLOT - Bind a hash slot to a specified node.
+    * SLAVES - List slave nodes of the specified master node.
+    * SLOTS - Get array of Cluster slot to node mappings.
+    */
   def cluster(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): this.type = js.native
   /**
-       * ADDSLOTS - Assign new hash slots to receiving node.
-       * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
-       * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
-       * DELSLOTS - Set hash slots as unbound in receiving node.
-       * FAILOVER - Forces a slave to perform a manual failover of its master.
-       * FORGET - Remove a node from the nodes table.
-       * GETKEYSINSLOT - Return local key names in the specified hash slot.
-       * INFO - Provides info about Redis Cluster node state.
-       * KEYSLOT - Returns the hash slot of the specified key.
-       * MEET - Force a node cluster to handshake with another node.
-       * NODES - Get cluster config for the node.
-       * REPLICATE - Reconfigure a node as a slave of the specified master node.
-       * RESET - Reset a Redis Cluster node.
-       * SAVECONFIG - Forces the node to save cluster state on disk.
-       * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
-       * SETSLOT - Bind a hash slot to a specified node.
-       * SLAVES - List slave nodes of the specified master node.
-       * SLOTS - Get array of Cluster slot to node mappings.
-       */
+    * ADDSLOTS - Assign new hash slots to receiving node.
+    * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
+    * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
+    * DELSLOTS - Set hash slots as unbound in receiving node.
+    * FAILOVER - Forces a slave to perform a manual failover of its master.
+    * FORGET - Remove a node from the nodes table.
+    * GETKEYSINSLOT - Return local key names in the specified hash slot.
+    * INFO - Provides info about Redis Cluster node state.
+    * KEYSLOT - Returns the hash slot of the specified key.
+    * MEET - Force a node cluster to handshake with another node.
+    * NODES - Get cluster config for the node.
+    * REPLICATE - Reconfigure a node as a slave of the specified master node.
+    * RESET - Reset a Redis Cluster node.
+    * SAVECONFIG - Forces the node to save cluster state on disk.
+    * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
+    * SETSLOT - Bind a hash slot to a specified node.
+    * SLAVES - List slave nodes of the specified master node.
+    * SLOTS - Get array of Cluster slot to node mappings.
+    */
   def cluster(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9004,25 +8678,25 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): this.type = js.native
   /**
-       * ADDSLOTS - Assign new hash slots to receiving node.
-       * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
-       * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
-       * DELSLOTS - Set hash slots as unbound in receiving node.
-       * FAILOVER - Forces a slave to perform a manual failover of its master.
-       * FORGET - Remove a node from the nodes table.
-       * GETKEYSINSLOT - Return local key names in the specified hash slot.
-       * INFO - Provides info about Redis Cluster node state.
-       * KEYSLOT - Returns the hash slot of the specified key.
-       * MEET - Force a node cluster to handshake with another node.
-       * NODES - Get cluster config for the node.
-       * REPLICATE - Reconfigure a node as a slave of the specified master node.
-       * RESET - Reset a Redis Cluster node.
-       * SAVECONFIG - Forces the node to save cluster state on disk.
-       * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
-       * SETSLOT - Bind a hash slot to a specified node.
-       * SLAVES - List slave nodes of the specified master node.
-       * SLOTS - Get array of Cluster slot to node mappings.
-       */
+    * ADDSLOTS - Assign new hash slots to receiving node.
+    * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
+    * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
+    * DELSLOTS - Set hash slots as unbound in receiving node.
+    * FAILOVER - Forces a slave to perform a manual failover of its master.
+    * FORGET - Remove a node from the nodes table.
+    * GETKEYSINSLOT - Return local key names in the specified hash slot.
+    * INFO - Provides info about Redis Cluster node state.
+    * KEYSLOT - Returns the hash slot of the specified key.
+    * MEET - Force a node cluster to handshake with another node.
+    * NODES - Get cluster config for the node.
+    * REPLICATE - Reconfigure a node as a slave of the specified master node.
+    * RESET - Reset a Redis Cluster node.
+    * SAVECONFIG - Forces the node to save cluster state on disk.
+    * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
+    * SETSLOT - Bind a hash slot to a specified node.
+    * SLAVES - List slave nodes of the specified master node.
+    * SLOTS - Get array of Cluster slot to node mappings.
+    */
   def cluster(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9031,26 +8705,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): this.type = js.native
-  /**
-       * ADDSLOTS - Assign new hash slots to receiving node.
-       * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
-       * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
-       * DELSLOTS - Set hash slots as unbound in receiving node.
-       * FAILOVER - Forces a slave to perform a manual failover of its master.
-       * FORGET - Remove a node from the nodes table.
-       * GETKEYSINSLOT - Return local key names in the specified hash slot.
-       * INFO - Provides info about Redis Cluster node state.
-       * KEYSLOT - Returns the hash slot of the specified key.
-       * MEET - Force a node cluster to handshake with another node.
-       * NODES - Get cluster config for the node.
-       * REPLICATE - Reconfigure a node as a slave of the specified master node.
-       * RESET - Reset a Redis Cluster node.
-       * SAVECONFIG - Forces the node to save cluster state on disk.
-       * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
-       * SETSLOT - Bind a hash slot to a specified node.
-       * SLAVES - List slave nodes of the specified master node.
-       * SLOTS - Get array of Cluster slot to node mappings.
-       */
   def cluster(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9060,26 +8714,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[_]
   ): this.type = js.native
-  /**
-       * ADDSLOTS - Assign new hash slots to receiving node.
-       * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
-       * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
-       * DELSLOTS - Set hash slots as unbound in receiving node.
-       * FAILOVER - Forces a slave to perform a manual failover of its master.
-       * FORGET - Remove a node from the nodes table.
-       * GETKEYSINSLOT - Return local key names in the specified hash slot.
-       * INFO - Provides info about Redis Cluster node state.
-       * KEYSLOT - Returns the hash slot of the specified key.
-       * MEET - Force a node cluster to handshake with another node.
-       * NODES - Get cluster config for the node.
-       * REPLICATE - Reconfigure a node as a slave of the specified master node.
-       * RESET - Reset a Redis Cluster node.
-       * SAVECONFIG - Forces the node to save cluster state on disk.
-       * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
-       * SETSLOT - Bind a hash slot to a specified node.
-       * SLAVES - List slave nodes of the specified master node.
-       * SLOTS - Get array of Cluster slot to node mappings.
-       */
   def cluster(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9088,26 +8722,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[_]
   ): this.type = js.native
-  /**
-       * ADDSLOTS - Assign new hash slots to receiving node.
-       * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
-       * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
-       * DELSLOTS - Set hash slots as unbound in receiving node.
-       * FAILOVER - Forces a slave to perform a manual failover of its master.
-       * FORGET - Remove a node from the nodes table.
-       * GETKEYSINSLOT - Return local key names in the specified hash slot.
-       * INFO - Provides info about Redis Cluster node state.
-       * KEYSLOT - Returns the hash slot of the specified key.
-       * MEET - Force a node cluster to handshake with another node.
-       * NODES - Get cluster config for the node.
-       * REPLICATE - Reconfigure a node as a slave of the specified master node.
-       * RESET - Reset a Redis Cluster node.
-       * SAVECONFIG - Forces the node to save cluster state on disk.
-       * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
-       * SETSLOT - Bind a hash slot to a specified node.
-       * SLAVES - List slave nodes of the specified master node.
-       * SLOTS - Get array of Cluster slot to node mappings.
-       */
   def cluster(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9115,189 +8729,42 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[_]
   ): this.type = js.native
-  /**
-       * ADDSLOTS - Assign new hash slots to receiving node.
-       * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
-       * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
-       * DELSLOTS - Set hash slots as unbound in receiving node.
-       * FAILOVER - Forces a slave to perform a manual failover of its master.
-       * FORGET - Remove a node from the nodes table.
-       * GETKEYSINSLOT - Return local key names in the specified hash slot.
-       * INFO - Provides info about Redis Cluster node state.
-       * KEYSLOT - Returns the hash slot of the specified key.
-       * MEET - Force a node cluster to handshake with another node.
-       * NODES - Get cluster config for the node.
-       * REPLICATE - Reconfigure a node as a slave of the specified master node.
-       * RESET - Reset a Redis Cluster node.
-       * SAVECONFIG - Forces the node to save cluster state on disk.
-       * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
-       * SETSLOT - Bind a hash slot to a specified node.
-       * SLAVES - List slave nodes of the specified master node.
-       * SLOTS - Get array of Cluster slot to node mappings.
-       */
   def cluster(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, cb: Callback[_]): this.type = js.native
-  /**
-       * ADDSLOTS - Assign new hash slots to receiving node.
-       * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
-       * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
-       * DELSLOTS - Set hash slots as unbound in receiving node.
-       * FAILOVER - Forces a slave to perform a manual failover of its master.
-       * FORGET - Remove a node from the nodes table.
-       * GETKEYSINSLOT - Return local key names in the specified hash slot.
-       * INFO - Provides info about Redis Cluster node state.
-       * KEYSLOT - Returns the hash slot of the specified key.
-       * MEET - Force a node cluster to handshake with another node.
-       * NODES - Get cluster config for the node.
-       * REPLICATE - Reconfigure a node as a slave of the specified master node.
-       * RESET - Reset a Redis Cluster node.
-       * SAVECONFIG - Forces the node to save cluster state on disk.
-       * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
-       * SETSLOT - Bind a hash slot to a specified node.
-       * SLAVES - List slave nodes of the specified master node.
-       * SLOTS - Get array of Cluster slot to node mappings.
-       */
   def cluster(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[_]): this.type = js.native
-  /**
-       * ADDSLOTS - Assign new hash slots to receiving node.
-       * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
-       * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
-       * DELSLOTS - Set hash slots as unbound in receiving node.
-       * FAILOVER - Forces a slave to perform a manual failover of its master.
-       * FORGET - Remove a node from the nodes table.
-       * GETKEYSINSLOT - Return local key names in the specified hash slot.
-       * INFO - Provides info about Redis Cluster node state.
-       * KEYSLOT - Returns the hash slot of the specified key.
-       * MEET - Force a node cluster to handshake with another node.
-       * NODES - Get cluster config for the node.
-       * REPLICATE - Reconfigure a node as a slave of the specified master node.
-       * RESET - Reset a Redis Cluster node.
-       * SAVECONFIG - Forces the node to save cluster state on disk.
-       * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
-       * SETSLOT - Bind a hash slot to a specified node.
-       * SLAVES - List slave nodes of the specified master node.
-       * SLOTS - Get array of Cluster slot to node mappings.
-       */
   def cluster(arg1: java.lang.String, arg2: js.Array[java.lang.String]): this.type = js.native
-  /**
-       * ADDSLOTS - Assign new hash slots to receiving node.
-       * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
-       * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
-       * DELSLOTS - Set hash slots as unbound in receiving node.
-       * FAILOVER - Forces a slave to perform a manual failover of its master.
-       * FORGET - Remove a node from the nodes table.
-       * GETKEYSINSLOT - Return local key names in the specified hash slot.
-       * INFO - Provides info about Redis Cluster node state.
-       * KEYSLOT - Returns the hash slot of the specified key.
-       * MEET - Force a node cluster to handshake with another node.
-       * NODES - Get cluster config for the node.
-       * REPLICATE - Reconfigure a node as a slave of the specified master node.
-       * RESET - Reset a Redis Cluster node.
-       * SAVECONFIG - Forces the node to save cluster state on disk.
-       * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
-       * SETSLOT - Bind a hash slot to a specified node.
-       * SLAVES - List slave nodes of the specified master node.
-       * SLOTS - Get array of Cluster slot to node mappings.
-       */
   def cluster(arg1: java.lang.String, arg2: js.Array[java.lang.String], cb: Callback[_]): this.type = js.native
-  /**
-       * ADDSLOTS - Assign new hash slots to receiving node.
-       * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
-       * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
-       * DELSLOTS - Set hash slots as unbound in receiving node.
-       * FAILOVER - Forces a slave to perform a manual failover of its master.
-       * FORGET - Remove a node from the nodes table.
-       * GETKEYSINSLOT - Return local key names in the specified hash slot.
-       * INFO - Provides info about Redis Cluster node state.
-       * KEYSLOT - Returns the hash slot of the specified key.
-       * MEET - Force a node cluster to handshake with another node.
-       * NODES - Get cluster config for the node.
-       * REPLICATE - Reconfigure a node as a slave of the specified master node.
-       * RESET - Reset a Redis Cluster node.
-       * SAVECONFIG - Forces the node to save cluster state on disk.
-       * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
-       * SETSLOT - Bind a hash slot to a specified node.
-       * SLAVES - List slave nodes of the specified master node.
-       * SLOTS - Get array of Cluster slot to node mappings.
-       */
   def cluster(arg1: java.lang.String, cb: Callback[_]): this.type = js.native
-  /**
-       * ADDSLOTS - Assign new hash slots to receiving node.
-       * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
-       * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
-       * DELSLOTS - Set hash slots as unbound in receiving node.
-       * FAILOVER - Forces a slave to perform a manual failover of its master.
-       * FORGET - Remove a node from the nodes table.
-       * GETKEYSINSLOT - Return local key names in the specified hash slot.
-       * INFO - Provides info about Redis Cluster node state.
-       * KEYSLOT - Returns the hash slot of the specified key.
-       * MEET - Force a node cluster to handshake with another node.
-       * NODES - Get cluster config for the node.
-       * REPLICATE - Reconfigure a node as a slave of the specified master node.
-       * RESET - Reset a Redis Cluster node.
-       * SAVECONFIG - Forces the node to save cluster state on disk.
-       * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
-       * SETSLOT - Bind a hash slot to a specified node.
-       * SLAVES - List slave nodes of the specified master node.
-       * SLOTS - Get array of Cluster slot to node mappings.
-       */
   def cluster(arg1: js.Array[java.lang.String]): this.type = js.native
-  /**
-       * ADDSLOTS - Assign new hash slots to receiving node.
-       * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
-       * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
-       * DELSLOTS - Set hash slots as unbound in receiving node.
-       * FAILOVER - Forces a slave to perform a manual failover of its master.
-       * FORGET - Remove a node from the nodes table.
-       * GETKEYSINSLOT - Return local key names in the specified hash slot.
-       * INFO - Provides info about Redis Cluster node state.
-       * KEYSLOT - Returns the hash slot of the specified key.
-       * MEET - Force a node cluster to handshake with another node.
-       * NODES - Get cluster config for the node.
-       * REPLICATE - Reconfigure a node as a slave of the specified master node.
-       * RESET - Reset a Redis Cluster node.
-       * SAVECONFIG - Forces the node to save cluster state on disk.
-       * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
-       * SETSLOT - Bind a hash slot to a specified node.
-       * SLAVES - List slave nodes of the specified master node.
-       * SLOTS - Get array of Cluster slot to node mappings.
-       */
   def cluster(arg1: js.Array[java.lang.String], cb: Callback[_]): this.type = js.native
   /**
-       * ADDSLOTS - Assign new hash slots to receiving node.
-       * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
-       * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
-       * DELSLOTS - Set hash slots as unbound in receiving node.
-       * FAILOVER - Forces a slave to perform a manual failover of its master.
-       * FORGET - Remove a node from the nodes table.
-       * GETKEYSINSLOT - Return local key names in the specified hash slot.
-       * INFO - Provides info about Redis Cluster node state.
-       * KEYSLOT - Returns the hash slot of the specified key.
-       * MEET - Force a node cluster to handshake with another node.
-       * NODES - Get cluster config for the node.
-       * REPLICATE - Reconfigure a node as a slave of the specified master node.
-       * RESET - Reset a Redis Cluster node.
-       * SAVECONFIG - Forces the node to save cluster state on disk.
-       * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
-       * SETSLOT - Bind a hash slot to a specified node.
-       * SLAVES - List slave nodes of the specified master node.
-       * SLOTS - Get array of Cluster slot to node mappings.
-       */
+    * ADDSLOTS - Assign new hash slots to receiving node.
+    * COUNT-FAILURE-REPORTS - Return the number of failure reports active for a given node.
+    * COUNTKEYSINSLOT - Return the number of local keys in the specified hash slot.
+    * DELSLOTS - Set hash slots as unbound in receiving node.
+    * FAILOVER - Forces a slave to perform a manual failover of its master.
+    * FORGET - Remove a node from the nodes table.
+    * GETKEYSINSLOT - Return local key names in the specified hash slot.
+    * INFO - Provides info about Redis Cluster node state.
+    * KEYSLOT - Returns the hash slot of the specified key.
+    * MEET - Force a node cluster to handshake with another node.
+    * NODES - Get cluster config for the node.
+    * REPLICATE - Reconfigure a node as a slave of the specified master node.
+    * RESET - Reset a Redis Cluster node.
+    * SAVECONFIG - Forces the node to save cluster state on disk.
+    * SET-CONFIG-EPOCH - Set the configuration epoch in a new node.
+    * SETSLOT - Bind a hash slot to a specified node.
+    * SLAVES - List slave nodes of the specified master node.
+    * SLOTS - Get array of Cluster slot to node mappings.
+    */
   def cluster(args: (java.lang.String | Callback[_])*): this.type = js.native
   /**
-       * Get array of Redis command details.
-       *
-       * COUNT - Get total number of Redis commands.
-       * GETKEYS - Extract keys given a full Redis command.
-       * INFO - Get array of specific REdis command details.
-       */
+    * Get array of Redis command details.
+    *
+    * COUNT - Get total number of Redis commands.
+    * GETKEYS - Extract keys given a full Redis command.
+    * INFO - Get array of specific REdis command details.
+    */
   def command(): R = js.native
-  /**
-       * Get array of Redis command details.
-       *
-       * COUNT - Get total number of Redis commands.
-       * GETKEYS - Extract keys given a full Redis command.
-       * INFO - Get array of specific REdis command details.
-       */
   def command(
     cb: Callback[
       js.Array[
@@ -9313,64 +8780,64 @@ trait Commands[R] extends js.Object {
     ]
   ): R = js.native
   /**
-       * Get array of Redis command details.
-       *
-       * COUNT - Get array of Redis command details.
-       * GETKEYS - Extract keys given a full Redis command.
-       * INFO - Get array of specific Redis command details.
-       * GET - Get the value of a configuration parameter.
-       * REWRITE - Rewrite the configuration file with the in memory configuration.
-       * SET - Set a configuration parameter to the given value.
-       * RESETSTAT - Reset the stats returned by INFO.
-       */
+    * Get array of Redis command details.
+    *
+    * COUNT - Get array of Redis command details.
+    * GETKEYS - Extract keys given a full Redis command.
+    * INFO - Get array of specific Redis command details.
+    * GET - Get the value of a configuration parameter.
+    * REWRITE - Rewrite the configuration file with the in memory configuration.
+    * SET - Set a configuration parameter to the given value.
+    * RESETSTAT - Reset the stats returned by INFO.
+    */
   def config(arg1: java.lang.String): R = js.native
   /**
-       * Get array of Redis command details.
-       *
-       * COUNT - Get array of Redis command details.
-       * GETKEYS - Extract keys given a full Redis command.
-       * INFO - Get array of specific Redis command details.
-       * GET - Get the value of a configuration parameter.
-       * REWRITE - Rewrite the configuration file with the in memory configuration.
-       * SET - Set a configuration parameter to the given value.
-       * RESETSTAT - Reset the stats returned by INFO.
-       */
+    * Get array of Redis command details.
+    *
+    * COUNT - Get array of Redis command details.
+    * GETKEYS - Extract keys given a full Redis command.
+    * INFO - Get array of specific Redis command details.
+    * GET - Get the value of a configuration parameter.
+    * REWRITE - Rewrite the configuration file with the in memory configuration.
+    * SET - Set a configuration parameter to the given value.
+    * RESETSTAT - Reset the stats returned by INFO.
+    */
   def config(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Get array of Redis command details.
-       *
-       * COUNT - Get array of Redis command details.
-       * GETKEYS - Extract keys given a full Redis command.
-       * INFO - Get array of specific Redis command details.
-       * GET - Get the value of a configuration parameter.
-       * REWRITE - Rewrite the configuration file with the in memory configuration.
-       * SET - Set a configuration parameter to the given value.
-       * RESETSTAT - Reset the stats returned by INFO.
-       */
+    * Get array of Redis command details.
+    *
+    * COUNT - Get array of Redis command details.
+    * GETKEYS - Extract keys given a full Redis command.
+    * INFO - Get array of specific Redis command details.
+    * GET - Get the value of a configuration parameter.
+    * REWRITE - Rewrite the configuration file with the in memory configuration.
+    * SET - Set a configuration parameter to the given value.
+    * RESETSTAT - Reset the stats returned by INFO.
+    */
   def config(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Get array of Redis command details.
-       *
-       * COUNT - Get array of Redis command details.
-       * GETKEYS - Extract keys given a full Redis command.
-       * INFO - Get array of specific Redis command details.
-       * GET - Get the value of a configuration parameter.
-       * REWRITE - Rewrite the configuration file with the in memory configuration.
-       * SET - Set a configuration parameter to the given value.
-       * RESETSTAT - Reset the stats returned by INFO.
-       */
+    * Get array of Redis command details.
+    *
+    * COUNT - Get array of Redis command details.
+    * GETKEYS - Extract keys given a full Redis command.
+    * INFO - Get array of specific Redis command details.
+    * GET - Get the value of a configuration parameter.
+    * REWRITE - Rewrite the configuration file with the in memory configuration.
+    * SET - Set a configuration parameter to the given value.
+    * RESETSTAT - Reset the stats returned by INFO.
+    */
   def config(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Get array of Redis command details.
-       *
-       * COUNT - Get array of Redis command details.
-       * GETKEYS - Extract keys given a full Redis command.
-       * INFO - Get array of specific Redis command details.
-       * GET - Get the value of a configuration parameter.
-       * REWRITE - Rewrite the configuration file with the in memory configuration.
-       * SET - Set a configuration parameter to the given value.
-       * RESETSTAT - Reset the stats returned by INFO.
-       */
+    * Get array of Redis command details.
+    *
+    * COUNT - Get array of Redis command details.
+    * GETKEYS - Extract keys given a full Redis command.
+    * INFO - Get array of specific Redis command details.
+    * GET - Get the value of a configuration parameter.
+    * REWRITE - Rewrite the configuration file with the in memory configuration.
+    * SET - Set a configuration parameter to the given value.
+    * RESETSTAT - Reset the stats returned by INFO.
+    */
   def config(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9379,16 +8846,16 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Get array of Redis command details.
-       *
-       * COUNT - Get array of Redis command details.
-       * GETKEYS - Extract keys given a full Redis command.
-       * INFO - Get array of specific Redis command details.
-       * GET - Get the value of a configuration parameter.
-       * REWRITE - Rewrite the configuration file with the in memory configuration.
-       * SET - Set a configuration parameter to the given value.
-       * RESETSTAT - Reset the stats returned by INFO.
-       */
+    * Get array of Redis command details.
+    *
+    * COUNT - Get array of Redis command details.
+    * GETKEYS - Extract keys given a full Redis command.
+    * INFO - Get array of specific Redis command details.
+    * GET - Get the value of a configuration parameter.
+    * REWRITE - Rewrite the configuration file with the in memory configuration.
+    * SET - Set a configuration parameter to the given value.
+    * RESETSTAT - Reset the stats returned by INFO.
+    */
   def config(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9397,17 +8864,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Get array of Redis command details.
-       *
-       * COUNT - Get array of Redis command details.
-       * GETKEYS - Extract keys given a full Redis command.
-       * INFO - Get array of specific Redis command details.
-       * GET - Get the value of a configuration parameter.
-       * REWRITE - Rewrite the configuration file with the in memory configuration.
-       * SET - Set a configuration parameter to the given value.
-       * RESETSTAT - Reset the stats returned by INFO.
-       */
   def config(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9417,17 +8873,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * Get array of Redis command details.
-       *
-       * COUNT - Get array of Redis command details.
-       * GETKEYS - Extract keys given a full Redis command.
-       * INFO - Get array of specific Redis command details.
-       * GET - Get the value of a configuration parameter.
-       * REWRITE - Rewrite the configuration file with the in memory configuration.
-       * SET - Set a configuration parameter to the given value.
-       * RESETSTAT - Reset the stats returned by INFO.
-       */
   def config(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9436,17 +8881,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * Get array of Redis command details.
-       *
-       * COUNT - Get array of Redis command details.
-       * GETKEYS - Extract keys given a full Redis command.
-       * INFO - Get array of specific Redis command details.
-       * GET - Get the value of a configuration parameter.
-       * REWRITE - Rewrite the configuration file with the in memory configuration.
-       * SET - Set a configuration parameter to the given value.
-       * RESETSTAT - Reset the stats returned by INFO.
-       */
   def config(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9454,139 +8888,59 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * Get array of Redis command details.
-       *
-       * COUNT - Get array of Redis command details.
-       * GETKEYS - Extract keys given a full Redis command.
-       * INFO - Get array of specific Redis command details.
-       * GET - Get the value of a configuration parameter.
-       * REWRITE - Rewrite the configuration file with the in memory configuration.
-       * SET - Set a configuration parameter to the given value.
-       * RESETSTAT - Reset the stats returned by INFO.
-       */
   def config(
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * Get array of Redis command details.
-       *
-       * COUNT - Get array of Redis command details.
-       * GETKEYS - Extract keys given a full Redis command.
-       * INFO - Get array of specific Redis command details.
-       * GET - Get the value of a configuration parameter.
-       * REWRITE - Rewrite the configuration file with the in memory configuration.
-       * SET - Set a configuration parameter to the given value.
-       * RESETSTAT - Reset the stats returned by INFO.
-       */
   def config(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Boolean]): R = js.native
-  /**
-       * Get array of Redis command details.
-       *
-       * COUNT - Get array of Redis command details.
-       * GETKEYS - Extract keys given a full Redis command.
-       * INFO - Get array of specific Redis command details.
-       * GET - Get the value of a configuration parameter.
-       * REWRITE - Rewrite the configuration file with the in memory configuration.
-       * SET - Set a configuration parameter to the given value.
-       * RESETSTAT - Reset the stats returned by INFO.
-       */
   def config(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * Get array of Redis command details.
-       *
-       * COUNT - Get array of Redis command details.
-       * GETKEYS - Extract keys given a full Redis command.
-       * INFO - Get array of specific Redis command details.
-       * GET - Get the value of a configuration parameter.
-       * REWRITE - Rewrite the configuration file with the in memory configuration.
-       * SET - Set a configuration parameter to the given value.
-       * RESETSTAT - Reset the stats returned by INFO.
-       */
   def config(arg1: java.lang.String, arg2: js.Array[java.lang.String], cb: Callback[scala.Boolean]): R = js.native
-  /**
-       * Get array of Redis command details.
-       *
-       * COUNT - Get array of Redis command details.
-       * GETKEYS - Extract keys given a full Redis command.
-       * INFO - Get array of specific Redis command details.
-       * GET - Get the value of a configuration parameter.
-       * REWRITE - Rewrite the configuration file with the in memory configuration.
-       * SET - Set a configuration parameter to the given value.
-       * RESETSTAT - Reset the stats returned by INFO.
-       */
   def config(arg1: java.lang.String, cb: Callback[scala.Boolean]): R = js.native
-  /**
-       * Get array of Redis command details.
-       *
-       * COUNT - Get array of Redis command details.
-       * GETKEYS - Extract keys given a full Redis command.
-       * INFO - Get array of specific Redis command details.
-       * GET - Get the value of a configuration parameter.
-       * REWRITE - Rewrite the configuration file with the in memory configuration.
-       * SET - Set a configuration parameter to the given value.
-       * RESETSTAT - Reset the stats returned by INFO.
-       */
   def config(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Get array of Redis command details.
-       *
-       * COUNT - Get array of Redis command details.
-       * GETKEYS - Extract keys given a full Redis command.
-       * INFO - Get array of specific Redis command details.
-       * GET - Get the value of a configuration parameter.
-       * REWRITE - Rewrite the configuration file with the in memory configuration.
-       * SET - Set a configuration parameter to the given value.
-       * RESETSTAT - Reset the stats returned by INFO.
-       */
   def config(arg1: js.Array[java.lang.String], cb: Callback[scala.Boolean]): R = js.native
   /**
-       * Get array of Redis command details.
-       *
-       * COUNT - Get array of Redis command details.
-       * GETKEYS - Extract keys given a full Redis command.
-       * INFO - Get array of specific Redis command details.
-       * GET - Get the value of a configuration parameter.
-       * REWRITE - Rewrite the configuration file with the in memory configuration.
-       * SET - Set a configuration parameter to the given value.
-       * RESETSTAT - Reset the stats returned by INFO.
-       */
+    * Get array of Redis command details.
+    *
+    * COUNT - Get array of Redis command details.
+    * GETKEYS - Extract keys given a full Redis command.
+    * INFO - Get array of specific Redis command details.
+    * GET - Get the value of a configuration parameter.
+    * REWRITE - Rewrite the configuration file with the in memory configuration.
+    * SET - Set a configuration parameter to the given value.
+    * RESETSTAT - Reset the stats returned by INFO.
+    */
   def config(args: (java.lang.String | Callback[scala.Boolean])*): R = js.native
   /**
-       * Return the number of keys in the selected database.
-       */
+    * Return the number of keys in the selected database.
+    */
   def dbsize(): R = js.native
-  /**
-       * Return the number of keys in the selected database.
-       */
   def dbsize(cb: Callback[scala.Double]): R = js.native
   /**
-       * OBJECT - Get debugging information about a key.
-       * SEGFAULT - Make the server crash.
-       */
+    * OBJECT - Get debugging information about a key.
+    * SEGFAULT - Make the server crash.
+    */
   def debug(arg1: java.lang.String): R = js.native
   /**
-       * OBJECT - Get debugging information about a key.
-       * SEGFAULT - Make the server crash.
-       */
+    * OBJECT - Get debugging information about a key.
+    * SEGFAULT - Make the server crash.
+    */
   def debug(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * OBJECT - Get debugging information about a key.
-       * SEGFAULT - Make the server crash.
-       */
+    * OBJECT - Get debugging information about a key.
+    * SEGFAULT - Make the server crash.
+    */
   def debug(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * OBJECT - Get debugging information about a key.
-       * SEGFAULT - Make the server crash.
-       */
+    * OBJECT - Get debugging information about a key.
+    * SEGFAULT - Make the server crash.
+    */
   def debug(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * OBJECT - Get debugging information about a key.
-       * SEGFAULT - Make the server crash.
-       */
+    * OBJECT - Get debugging information about a key.
+    * SEGFAULT - Make the server crash.
+    */
   def debug(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9595,9 +8949,9 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * OBJECT - Get debugging information about a key.
-       * SEGFAULT - Make the server crash.
-       */
+    * OBJECT - Get debugging information about a key.
+    * SEGFAULT - Make the server crash.
+    */
   def debug(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9606,10 +8960,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * OBJECT - Get debugging information about a key.
-       * SEGFAULT - Make the server crash.
-       */
   def debug(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9619,10 +8969,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * OBJECT - Get debugging information about a key.
-       * SEGFAULT - Make the server crash.
-       */
   def debug(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9631,10 +8977,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * OBJECT - Get debugging information about a key.
-       * SEGFAULT - Make the server crash.
-       */
   def debug(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9642,86 +8984,52 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * OBJECT - Get debugging information about a key.
-       * SEGFAULT - Make the server crash.
-       */
   def debug(
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * OBJECT - Get debugging information about a key.
-       * SEGFAULT - Make the server crash.
-       */
   def debug(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Boolean]): R = js.native
-  /**
-       * OBJECT - Get debugging information about a key.
-       * SEGFAULT - Make the server crash.
-       */
   def debug(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * OBJECT - Get debugging information about a key.
-       * SEGFAULT - Make the server crash.
-       */
   def debug(arg1: java.lang.String, arg2: js.Array[java.lang.String], cb: Callback[scala.Boolean]): R = js.native
-  /**
-       * OBJECT - Get debugging information about a key.
-       * SEGFAULT - Make the server crash.
-       */
   def debug(arg1: java.lang.String, cb: Callback[scala.Boolean]): R = js.native
-  /**
-       * OBJECT - Get debugging information about a key.
-       * SEGFAULT - Make the server crash.
-       */
   def debug(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * OBJECT - Get debugging information about a key.
-       * SEGFAULT - Make the server crash.
-       */
   def debug(arg1: js.Array[java.lang.String], cb: Callback[scala.Boolean]): R = js.native
   /**
-       * OBJECT - Get debugging information about a key.
-       * SEGFAULT - Make the server crash.
-       */
+    * OBJECT - Get debugging information about a key.
+    * SEGFAULT - Make the server crash.
+    */
   def debug(args: (java.lang.String | Callback[scala.Boolean])*): R = js.native
   /**
-       * Decrement the integer value of a key by one.
-       */
+    * Decrement the integer value of a key by one.
+    */
   def decr(key: java.lang.String): R = js.native
-  /**
-       * Decrement the integer value of a key by one.
-       */
   def decr(key: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Decrement the integer value of a key by the given number.
-       */
+    * Decrement the integer value of a key by the given number.
+    */
   def decrby(key: java.lang.String, decrement: scala.Double): R = js.native
-  /**
-       * Decrement the integer value of a key by the given number.
-       */
   def decrby(key: java.lang.String, decrement: scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Delete a key.
-       */
+    * Delete a key.
+    */
   def del(arg1: java.lang.String): R = js.native
   /**
-       * Delete a key.
-       */
+    * Delete a key.
+    */
   def del(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Delete a key.
-       */
+    * Delete a key.
+    */
   def del(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Delete a key.
-       */
+    * Delete a key.
+    */
   def del(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Delete a key.
-       */
+    * Delete a key.
+    */
   def del(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9730,8 +9038,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Delete a key.
-       */
+    * Delete a key.
+    */
   def del(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9740,9 +9048,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Delete a key.
-       */
   def del(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9752,9 +9057,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Delete a key.
-       */
   def del(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9763,9 +9065,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Delete a key.
-       */
   def del(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9773,70 +9072,40 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Delete a key.
-       */
   def del(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Delete a key.
-       */
   def del(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Delete a key.
-       */
   def del(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * Delete a key.
-       */
   def del(arg1: java.lang.String, arg2: js.Array[java.lang.String], cb: Callback[scala.Double]): R = js.native
-  /**
-       * Delete a key.
-       */
   def del(arg1: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Delete a key.
-       */
   def del(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Delete a key.
-       */
   def del(arg1: js.Array[java.lang.String], cb: Callback[scala.Double]): R = js.native
   /**
-       * Delete a key.
-       */
+    * Delete a key.
+    */
   def del(args: (java.lang.String | Callback[scala.Double])*): R = js.native
   /**
-       * Discard all commands issued after MULTI.
-       */
+    * Discard all commands issued after MULTI.
+    */
   def discard(): R = js.native
-  /**
-       * Discard all commands issued after MULTI.
-       */
   @JSName("discard")
   def discard_OK(cb: Callback[redisLib.redisLibStrings.OK]): R = js.native
   /**
-       * Return a serialized version of the value stored at the specified key.
-       */
+    * Return a serialized version of the value stored at the specified key.
+    */
   def dump(key: java.lang.String): R = js.native
-  /**
-       * Return a serialized version of the value stored at the specified key.
-       */
   def dump(key: java.lang.String, cb: Callback[java.lang.String]): R = js.native
   /**
-       * Echo the given string.
-       */
+    * Echo the given string.
+    */
   def echo[T /* <: java.lang.String */](message: T): R = js.native
-  /**
-       * Echo the given string.
-       */
   def echo[T /* <: java.lang.String */](message: T, cb: Callback[T]): R = js.native
   /**
-       * Execute a Lua script server side.
-       */
+    * Execute a Lua script server side.
+    */
   def eval(arg1: java.lang.String | scala.Double): R = js.native
   /**
-       * Execute a Lua script server side.
-       */
+    * Execute a Lua script server side.
+    */
   def eval(
     arg1: java.lang.String | scala.Double,
     arg2: java.lang.String | scala.Double,
@@ -9845,8 +9114,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double
   ): R = js.native
   /**
-       * Execute a Lua script server side.
-       */
+    * Execute a Lua script server side.
+    */
   def eval(
     arg1: java.lang.String | scala.Double,
     arg2: java.lang.String | scala.Double,
@@ -9855,9 +9124,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double,
     arg6: java.lang.String | scala.Double
   ): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(
     arg1: java.lang.String | scala.Double,
     arg2: java.lang.String | scala.Double,
@@ -9867,9 +9133,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String | scala.Double,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(
     arg1: java.lang.String | scala.Double,
     arg2: java.lang.String | scala.Double,
@@ -9878,29 +9141,20 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: java.lang.String | scala.Double, cb: Callback[_]): R = js.native
   /**
-       * Execute a Lua script server side.
-       */
+    * Execute a Lua script server side.
+    */
   def eval(arg1: java.lang.String, arg2: java.lang.String | scala.Double): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: java.lang.String, arg2: java.lang.String | scala.Double, cb: Callback[_]): R = js.native
   /**
-       * Execute a Lua script server side.
-       */
+    * Execute a Lua script server side.
+    */
   def eval(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Execute a Lua script server side.
-       */
+    * Execute a Lua script server side.
+    */
   def eval(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9908,13 +9162,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: scala.Double): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9922,21 +9170,9 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double, arg4: java.lang.String): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9944,13 +9180,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double, arg4: scala.Double): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -9958,29 +9188,11 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double, cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: java.lang.String, arg2: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: java.lang.String, arg2: js.Array[java.lang.String | scala.Double], cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String, arg4: java.lang.String): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(
     arg1: java.lang.String,
     arg2: scala.Double,
@@ -9988,13 +9200,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String, arg4: scala.Double): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(
     arg1: java.lang.String,
     arg2: scala.Double,
@@ -10002,21 +9208,9 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String, cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double, arg4: java.lang.String): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(
     arg1: java.lang.String,
     arg2: scala.Double,
@@ -10024,13 +9218,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double, arg4: scala.Double): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(
     arg1: java.lang.String,
     arg2: scala.Double,
@@ -10038,37 +9226,13 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double, cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: js.Array[java.lang.String | scala.Double], cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: scala.Double, arg2: java.lang.String | scala.Double): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: scala.Double, arg2: java.lang.String | scala.Double, cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(
     arg1: scala.Double,
     arg2: java.lang.String,
@@ -10076,13 +9240,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String, arg4: scala.Double): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(
     arg1: scala.Double,
     arg2: java.lang.String,
@@ -10090,21 +9248,9 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String, cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double, arg4: java.lang.String): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(
     arg1: scala.Double,
     arg2: java.lang.String,
@@ -10112,13 +9258,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double, arg4: scala.Double): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(
     arg1: scala.Double,
     arg2: java.lang.String,
@@ -10126,29 +9266,11 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double, cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: scala.Double, arg2: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: scala.Double, arg2: js.Array[java.lang.String | scala.Double], cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String, arg4: java.lang.String): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(
     arg1: scala.Double,
     arg2: scala.Double,
@@ -10156,13 +9278,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String, arg4: scala.Double): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(
     arg1: scala.Double,
     arg2: scala.Double,
@@ -10170,21 +9286,9 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String, cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: scala.Double, arg2: scala.Double, arg3: scala.Double): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: scala.Double, arg2: scala.Double, arg3: scala.Double, arg4: java.lang.String): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(
     arg1: scala.Double,
     arg2: scala.Double,
@@ -10192,29 +9296,20 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: scala.Double, arg2: scala.Double, arg3: scala.Double, arg4: scala.Double): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: scala.Double, arg2: scala.Double, arg3: scala.Double, arg4: scala.Double, cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lua script server side.
-       */
   def eval(arg1: scala.Double, arg2: scala.Double, arg3: scala.Double, cb: Callback[_]): R = js.native
   /**
-       * Execute a Lua script server side.
-       */
+    * Execute a Lua script server side.
+    */
   def eval(args: (java.lang.String | scala.Double | Callback[_])*): R = js.native
   /**
-       * Execute a Lue script server side.
-       */
+    * Execute a Lue script server side.
+    */
   def evalsha(arg1: java.lang.String | scala.Double): R = js.native
   /**
-       * Execute a Lue script server side.
-       */
+    * Execute a Lue script server side.
+    */
   def evalsha(
     arg1: java.lang.String | scala.Double,
     arg2: java.lang.String | scala.Double,
@@ -10223,8 +9318,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double
   ): R = js.native
   /**
-       * Execute a Lue script server side.
-       */
+    * Execute a Lue script server side.
+    */
   def evalsha(
     arg1: java.lang.String | scala.Double,
     arg2: java.lang.String | scala.Double,
@@ -10233,9 +9328,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double,
     arg6: java.lang.String | scala.Double
   ): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(
     arg1: java.lang.String | scala.Double,
     arg2: java.lang.String | scala.Double,
@@ -10245,9 +9337,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String | scala.Double,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(
     arg1: java.lang.String | scala.Double,
     arg2: java.lang.String | scala.Double,
@@ -10256,29 +9345,20 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: java.lang.String | scala.Double, cb: Callback[_]): R = js.native
   /**
-       * Execute a Lue script server side.
-       */
+    * Execute a Lue script server side.
+    */
   def evalsha(arg1: java.lang.String, arg2: java.lang.String | scala.Double): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: java.lang.String, arg2: java.lang.String | scala.Double, cb: Callback[_]): R = js.native
   /**
-       * Execute a Lue script server side.
-       */
+    * Execute a Lue script server side.
+    */
   def evalsha(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Execute a Lue script server side.
-       */
+    * Execute a Lue script server side.
+    */
   def evalsha(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -10286,13 +9366,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: scala.Double): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -10300,21 +9374,9 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double, arg4: java.lang.String): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -10322,13 +9384,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double, arg4: scala.Double): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -10336,29 +9392,11 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double, cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: java.lang.String, arg2: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: java.lang.String, arg2: js.Array[java.lang.String | scala.Double], cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String, arg4: java.lang.String): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(
     arg1: java.lang.String,
     arg2: scala.Double,
@@ -10366,13 +9404,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String, arg4: scala.Double): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(
     arg1: java.lang.String,
     arg2: scala.Double,
@@ -10380,21 +9412,9 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String, cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double, arg4: java.lang.String): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(
     arg1: java.lang.String,
     arg2: scala.Double,
@@ -10402,13 +9422,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double, arg4: scala.Double): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(
     arg1: java.lang.String,
     arg2: scala.Double,
@@ -10416,37 +9430,13 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double, cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: js.Array[java.lang.String | scala.Double], cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: scala.Double, arg2: java.lang.String | scala.Double): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: scala.Double, arg2: java.lang.String | scala.Double, cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(
     arg1: scala.Double,
     arg2: java.lang.String,
@@ -10454,13 +9444,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String, arg4: scala.Double): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(
     arg1: scala.Double,
     arg2: java.lang.String,
@@ -10468,21 +9452,9 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String, cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double, arg4: java.lang.String): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(
     arg1: scala.Double,
     arg2: java.lang.String,
@@ -10490,13 +9462,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double, arg4: scala.Double): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(
     arg1: scala.Double,
     arg2: java.lang.String,
@@ -10504,29 +9470,11 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double, cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: scala.Double, arg2: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: scala.Double, arg2: js.Array[java.lang.String | scala.Double], cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String, arg4: java.lang.String): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(
     arg1: scala.Double,
     arg2: scala.Double,
@@ -10534,13 +9482,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String, arg4: scala.Double): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(
     arg1: scala.Double,
     arg2: scala.Double,
@@ -10548,21 +9490,9 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String, cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: scala.Double, arg2: scala.Double, arg3: scala.Double): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: scala.Double, arg2: scala.Double, arg3: scala.Double, arg4: java.lang.String): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(
     arg1: scala.Double,
     arg2: scala.Double,
@@ -10570,41 +9500,32 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: scala.Double, arg2: scala.Double, arg3: scala.Double, arg4: scala.Double): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: scala.Double, arg2: scala.Double, arg3: scala.Double, arg4: scala.Double, cb: Callback[_]): R = js.native
-  /**
-       * Execute a Lue script server side.
-       */
   def evalsha(arg1: scala.Double, arg2: scala.Double, arg3: scala.Double, cb: Callback[_]): R = js.native
   /**
-       * Execute a Lue script server side.
-       */
+    * Execute a Lue script server side.
+    */
   def evalsha(args: (java.lang.String | scala.Double | Callback[_])*): R = js.native
   /**
-       * Determine if a key exists.
-       */
+    * Determine if a key exists.
+    */
   def exists(arg1: java.lang.String): R = js.native
   /**
-       * Determine if a key exists.
-       */
+    * Determine if a key exists.
+    */
   def exists(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Determine if a key exists.
-       */
+    * Determine if a key exists.
+    */
   def exists(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Determine if a key exists.
-       */
+    * Determine if a key exists.
+    */
   def exists(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Determine if a key exists.
-       */
+    * Determine if a key exists.
+    */
   def exists(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -10613,8 +9534,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Determine if a key exists.
-       */
+    * Determine if a key exists.
+    */
   def exists(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -10623,9 +9544,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Determine if a key exists.
-       */
   def exists(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -10635,9 +9553,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Determine if a key exists.
-       */
   def exists(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -10646,9 +9561,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Determine if a key exists.
-       */
   def exists(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -10656,82 +9568,49 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Determine if a key exists.
-       */
   def exists(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Determine if a key exists.
-       */
   def exists(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Determine if a key exists.
-       */
   def exists(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * Determine if a key exists.
-       */
   def exists(arg1: java.lang.String, arg2: js.Array[java.lang.String], cb: Callback[scala.Double]): R = js.native
-  /**
-       * Determine if a key exists.
-       */
   def exists(arg1: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Determine if a key exists.
-       */
   def exists(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Determine if a key exists.
-       */
   def exists(arg1: js.Array[java.lang.String], cb: Callback[scala.Double]): R = js.native
   /**
-       * Determine if a key exists.
-       */
+    * Determine if a key exists.
+    */
   def exists(args: (java.lang.String | Callback[scala.Double])*): R = js.native
   /**
-       * Set a key's time to live in seconds.
-       */
+    * Set a key's time to live in seconds.
+    */
   def expire(key: java.lang.String, seconds: scala.Double): R = js.native
-  /**
-       * Set a key's time to live in seconds.
-       */
   def expire(key: java.lang.String, seconds: scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Set the expiration for a key as a UNIX timestamp.
-       */
+    * Set the expiration for a key as a UNIX timestamp.
+    */
   def expireat(key: java.lang.String, timestamp: scala.Double): R = js.native
-  /**
-       * Set the expiration for a key as a UNIX timestamp.
-       */
   def expireat(key: java.lang.String, timestamp: scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Remove all keys from all databases.
-       */
+    * Remove all keys from all databases.
+    */
   def flushall(): R = js.native
-  /**
-       * Remove all keys from all databases.
-       */
   def flushall(cb: Callback[java.lang.String]): R = js.native
   /**
-       * Remove all keys from the current database.
-       */
+    * Remove all keys from the current database.
+    */
   def flushdb(): R = js.native
-  /**
-       * Remove all keys from the current database.
-       */
   @JSName("flushdb")
   def flushdb_OK(cb: Callback[redisLib.redisLibStrings.OK]): R = js.native
   /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
+    * Add one or more geospatial items in the geospatial index represented using a sorted set.
+    */
   def geoadd(args: (java.lang.String | scala.Double | Callback[scala.Double])*): R = js.native
   /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
+    * Add one or more geospatial items in the geospatial index represented using a sorted set.
+    */
   def geoadd(key: java.lang.String, arg1: java.lang.String | scala.Double): R = js.native
   /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
+    * Add one or more geospatial items in the geospatial index represented using a sorted set.
+    */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -10741,8 +9620,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double
   ): R = js.native
   /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
+    * Add one or more geospatial items in the geospatial index represented using a sorted set.
+    */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -10752,9 +9631,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double,
     arg6: java.lang.String | scala.Double
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -10765,9 +9641,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String | scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -10777,21 +9650,18 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(key: java.lang.String, arg1: java.lang.String | scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
+    * Add one or more geospatial items in the geospatial index represented using a sorted set.
+    */
   def geoadd(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
+    * Add one or more geospatial items in the geospatial index represented using a sorted set.
+    */
   def geoadd(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
+    * Add one or more geospatial items in the geospatial index represented using a sorted set.
+    */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -10799,9 +9669,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -10810,9 +9677,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -10820,9 +9684,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -10831,9 +9692,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -10841,13 +9699,7 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -10855,9 +9707,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -10866,9 +9715,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -10876,9 +9722,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -10887,9 +9730,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -10897,21 +9737,9 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -10919,9 +9747,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -10930,9 +9755,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -10940,9 +9762,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -10951,9 +9770,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -10961,13 +9777,7 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -10975,9 +9785,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -10986,9 +9793,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -10996,9 +9800,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11007,9 +9808,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11017,29 +9815,11 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(key: java.lang.String, arg1: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(key: java.lang.String, arg1: js.Array[java.lang.String | scala.Double], cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -11047,9 +9827,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -11058,9 +9835,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -11068,9 +9842,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -11079,9 +9850,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -11089,13 +9857,7 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -11103,9 +9865,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -11114,9 +9873,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -11124,9 +9880,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -11135,9 +9888,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -11145,21 +9895,9 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(key: java.lang.String, arg1: scala.Double, arg2: scala.Double): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(key: java.lang.String, arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -11167,9 +9905,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -11178,9 +9913,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -11188,9 +9920,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -11199,9 +9928,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -11209,13 +9935,7 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(key: java.lang.String, arg1: scala.Double, arg2: scala.Double, arg3: scala.Double): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -11223,9 +9943,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -11234,9 +9951,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -11244,9 +9958,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -11255,9 +9966,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -11265,33 +9973,30 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
   def geoadd(key: java.lang.String, arg1: scala.Double, arg2: scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Add one or more geospatial items in the geospatial index represented using a sorted set.
-       */
+    * Add one or more geospatial items in the geospatial index represented using a sorted set.
+    */
   def geoadd(key: java.lang.String, args: (java.lang.String | scala.Double | Callback[scala.Double])*): R = js.native
   /**
-       * Returns the distance between two members of a geospatial index.
-       */
+    * Returns the distance between two members of a geospatial index.
+    */
   def geodist(args: (java.lang.String | Callback[java.lang.String])*): R = js.native
   /**
-       * Returns the distance between two members of a geospatial index.
-       */
+    * Returns the distance between two members of a geospatial index.
+    */
   def geodist(key: java.lang.String, arg1: java.lang.String): R = js.native
   /**
-       * Returns the distance between two members of a geospatial index.
-       */
+    * Returns the distance between two members of a geospatial index.
+    */
   def geodist(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Returns the distance between two members of a geospatial index.
-       */
+    * Returns the distance between two members of a geospatial index.
+    */
   def geodist(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Returns the distance between two members of a geospatial index.
-       */
+    * Returns the distance between two members of a geospatial index.
+    */
   def geodist(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11300,8 +10005,8 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String
   ): R = js.native
   /**
-       * Returns the distance between two members of a geospatial index.
-       */
+    * Returns the distance between two members of a geospatial index.
+    */
   def geodist(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11311,8 +10016,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Returns the distance between two members of a geospatial index.
-       */
+    * Returns the distance between two members of a geospatial index.
+    */
   def geodist(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11322,9 +10027,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Returns the distance between two members of a geospatial index.
-       */
   def geodist(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11335,9 +10037,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Returns the distance between two members of a geospatial index.
-       */
   def geodist(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11347,9 +10046,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Returns the distance between two members of a geospatial index.
-       */
   def geodist(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11358,9 +10054,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Returns the distance between two members of a geospatial index.
-       */
   def geodist(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11368,50 +10061,38 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Returns the distance between two members of a geospatial index.
-       */
   def geodist(
     key: java.lang.String,
     arg1: java.lang.String,
     arg2: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Returns the distance between two members of a geospatial index.
-       */
   def geodist(key: java.lang.String, arg1: java.lang.String, cb: Callback[java.lang.String]): R = js.native
-  /**
-       * Returns the distance between two members of a geospatial index.
-       */
   def geodist(key: java.lang.String, arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Returns the distance between two members of a geospatial index.
-       */
   def geodist(key: java.lang.String, arg1: js.Array[java.lang.String], cb: Callback[java.lang.String]): R = js.native
   /**
-       * Returns the distance between two members of a geospatial index.
-       */
+    * Returns the distance between two members of a geospatial index.
+    */
   def geodist(key: java.lang.String, args: (java.lang.String | Callback[java.lang.String])*): R = js.native
   /**
-       * Returns members of a geospatial index as standard geohash strings.
-       */
+    * Returns members of a geospatial index as standard geohash strings.
+    */
   def geohash(args: (java.lang.String | Callback[java.lang.String])*): R = js.native
   /**
-       * Returns members of a geospatial index as standard geohash strings.
-       */
+    * Returns members of a geospatial index as standard geohash strings.
+    */
   def geohash(key: java.lang.String, arg1: java.lang.String): R = js.native
   /**
-       * Returns members of a geospatial index as standard geohash strings.
-       */
+    * Returns members of a geospatial index as standard geohash strings.
+    */
   def geohash(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Returns members of a geospatial index as standard geohash strings.
-       */
+    * Returns members of a geospatial index as standard geohash strings.
+    */
   def geohash(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Returns members of a geospatial index as standard geohash strings.
-       */
+    * Returns members of a geospatial index as standard geohash strings.
+    */
   def geohash(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11420,8 +10101,8 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String
   ): R = js.native
   /**
-       * Returns members of a geospatial index as standard geohash strings.
-       */
+    * Returns members of a geospatial index as standard geohash strings.
+    */
   def geohash(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11431,8 +10112,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Returns members of a geospatial index as standard geohash strings.
-       */
+    * Returns members of a geospatial index as standard geohash strings.
+    */
   def geohash(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11442,9 +10123,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Returns members of a geospatial index as standard geohash strings.
-       */
   def geohash(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11455,9 +10133,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Returns members of a geospatial index as standard geohash strings.
-       */
   def geohash(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11467,9 +10142,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Returns members of a geospatial index as standard geohash strings.
-       */
   def geohash(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11478,9 +10150,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Returns members of a geospatial index as standard geohash strings.
-       */
   def geohash(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11488,50 +10157,38 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Returns members of a geospatial index as standard geohash strings.
-       */
   def geohash(
     key: java.lang.String,
     arg1: java.lang.String,
     arg2: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Returns members of a geospatial index as standard geohash strings.
-       */
   def geohash(key: java.lang.String, arg1: java.lang.String, cb: Callback[java.lang.String]): R = js.native
-  /**
-       * Returns members of a geospatial index as standard geohash strings.
-       */
   def geohash(key: java.lang.String, arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Returns members of a geospatial index as standard geohash strings.
-       */
   def geohash(key: java.lang.String, arg1: js.Array[java.lang.String], cb: Callback[java.lang.String]): R = js.native
   /**
-       * Returns members of a geospatial index as standard geohash strings.
-       */
+    * Returns members of a geospatial index as standard geohash strings.
+    */
   def geohash(key: java.lang.String, args: (java.lang.String | Callback[java.lang.String])*): R = js.native
   /**
-       * Returns longitude and latitude of members of a geospatial index.
-       */
+    * Returns longitude and latitude of members of a geospatial index.
+    */
   def geopos(args: (java.lang.String | (Callback[js.Array[js.Tuple2[scala.Double, scala.Double]]]))*): R = js.native
   /**
-       * Returns longitude and latitude of members of a geospatial index.
-       */
+    * Returns longitude and latitude of members of a geospatial index.
+    */
   def geopos(key: java.lang.String, arg1: java.lang.String): R = js.native
   /**
-       * Returns longitude and latitude of members of a geospatial index.
-       */
+    * Returns longitude and latitude of members of a geospatial index.
+    */
   def geopos(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Returns longitude and latitude of members of a geospatial index.
-       */
+    * Returns longitude and latitude of members of a geospatial index.
+    */
   def geopos(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Returns longitude and latitude of members of a geospatial index.
-       */
+    * Returns longitude and latitude of members of a geospatial index.
+    */
   def geopos(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11540,8 +10197,8 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String
   ): R = js.native
   /**
-       * Returns longitude and latitude of members of a geospatial index.
-       */
+    * Returns longitude and latitude of members of a geospatial index.
+    */
   def geopos(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11551,8 +10208,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Returns longitude and latitude of members of a geospatial index.
-       */
+    * Returns longitude and latitude of members of a geospatial index.
+    */
   def geopos(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11562,9 +10219,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Returns longitude and latitude of members of a geospatial index.
-       */
   def geopos(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11575,9 +10229,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[js.Array[js.Tuple2[scala.Double, scala.Double]]]
   ): R = js.native
-  /**
-       * Returns longitude and latitude of members of a geospatial index.
-       */
   def geopos(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11587,9 +10238,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[js.Array[js.Tuple2[scala.Double, scala.Double]]]
   ): R = js.native
-  /**
-       * Returns longitude and latitude of members of a geospatial index.
-       */
   def geopos(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11598,9 +10246,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[js.Array[js.Tuple2[scala.Double, scala.Double]]]
   ): R = js.native
-  /**
-       * Returns longitude and latitude of members of a geospatial index.
-       */
   def geopos(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11608,45 +10253,33 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[js.Array[js.Tuple2[scala.Double, scala.Double]]]
   ): R = js.native
-  /**
-       * Returns longitude and latitude of members of a geospatial index.
-       */
   def geopos(
     key: java.lang.String,
     arg1: java.lang.String,
     arg2: java.lang.String,
     cb: Callback[js.Array[js.Tuple2[scala.Double, scala.Double]]]
   ): R = js.native
-  /**
-       * Returns longitude and latitude of members of a geospatial index.
-       */
   def geopos(
     key: java.lang.String,
     arg1: java.lang.String,
     cb: Callback[js.Array[js.Tuple2[scala.Double, scala.Double]]]
   ): R = js.native
-  /**
-       * Returns longitude and latitude of members of a geospatial index.
-       */
   def geopos(key: java.lang.String, arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Returns longitude and latitude of members of a geospatial index.
-       */
   def geopos(
     key: java.lang.String,
     arg1: js.Array[java.lang.String],
     cb: Callback[js.Array[js.Tuple2[scala.Double, scala.Double]]]
   ): R = js.native
   /**
-       * Returns longitude and latitude of members of a geospatial index.
-       */
+    * Returns longitude and latitude of members of a geospatial index.
+    */
   def geopos(
     key: java.lang.String,
     args: (java.lang.String | (Callback[js.Array[js.Tuple2[scala.Double, scala.Double]]]))*
   ): R = js.native
   /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
+    * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
+    */
   def georadius(
     args: (java.lang.String | scala.Double | (Callback[
       js.Array[
@@ -11658,12 +10291,12 @@ trait Commands[R] extends js.Object {
     ]))*
   ): R = js.native
   /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
+    * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
+    */
   def georadius(key: java.lang.String, arg1: java.lang.String | scala.Double): R = js.native
   /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
+    * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
+    */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -11673,8 +10306,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double
   ): R = js.native
   /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
+    * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
+    */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -11684,9 +10317,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double,
     arg6: java.lang.String | scala.Double
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -11704,9 +10334,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -11723,9 +10350,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -11739,16 +10363,16 @@ trait Commands[R] extends js.Object {
     ]
   ): R = js.native
   /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
+    * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
+    */
   def georadius(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
+    * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
+    */
   def georadius(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
+    * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
+    */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11756,9 +10380,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11774,9 +10395,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11784,9 +10402,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11802,9 +10417,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11819,13 +10431,7 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11833,9 +10439,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11851,9 +10454,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11861,9 +10461,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11879,9 +10476,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11896,9 +10490,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11912,17 +10503,8 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11930,9 +10512,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11948,9 +10527,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11958,9 +10534,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11976,9 +10549,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -11993,13 +10563,7 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12007,9 +10571,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12025,9 +10586,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12035,9 +10593,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12053,9 +10608,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12070,9 +10622,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12086,13 +10635,7 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(key: java.lang.String, arg1: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: js.Array[java.lang.String | scala.Double],
@@ -12105,17 +10648,8 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12123,9 +10657,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12141,9 +10672,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12151,9 +10679,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12169,9 +10694,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12186,13 +10708,7 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12200,9 +10716,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12218,9 +10731,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12228,9 +10738,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12246,9 +10753,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12263,9 +10767,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12279,17 +10780,8 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(key: java.lang.String, arg1: scala.Double, arg2: scala.Double): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(key: java.lang.String, arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12297,9 +10789,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12315,9 +10804,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12325,9 +10811,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12343,9 +10826,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12360,13 +10840,7 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(key: java.lang.String, arg1: scala.Double, arg2: scala.Double, arg3: scala.Double): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12374,9 +10848,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12392,9 +10863,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12402,9 +10870,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12420,9 +10885,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12437,9 +10899,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
   def georadius(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12454,8 +10913,8 @@ trait Commands[R] extends js.Object {
     ]
   ): R = js.native
   /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
-       */
+    * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a point.
+    */
   def georadius(
     key: java.lang.String,
     args: (java.lang.String | scala.Double | (Callback[
@@ -12468,8 +10927,8 @@ trait Commands[R] extends js.Object {
     ]))*
   ): R = js.native
   /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
+    * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
+    */
   def georadiusbymember(
     args: (java.lang.String | scala.Double | (Callback[
       js.Array[
@@ -12481,12 +10940,12 @@ trait Commands[R] extends js.Object {
     ]))*
   ): R = js.native
   /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
+    * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
+    */
   def georadiusbymember(key: java.lang.String, arg1: java.lang.String | scala.Double): R = js.native
   /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
+    * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
+    */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -12496,8 +10955,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double
   ): R = js.native
   /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
+    * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
+    */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -12507,9 +10966,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double,
     arg6: java.lang.String | scala.Double
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -12527,9 +10983,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -12546,9 +10999,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -12562,16 +11012,16 @@ trait Commands[R] extends js.Object {
     ]
   ): R = js.native
   /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
+    * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
+    */
   def georadiusbymember(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
+    * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
+    */
   def georadiusbymember(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
+    * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
+    */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12579,9 +11029,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12597,9 +11044,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12607,9 +11051,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12625,9 +11066,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12642,13 +11080,7 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12656,9 +11088,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12674,9 +11103,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12684,9 +11110,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12702,9 +11125,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12719,9 +11139,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12735,17 +11152,8 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12753,9 +11161,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12771,9 +11176,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12781,9 +11183,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12799,9 +11198,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12816,13 +11212,7 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12830,9 +11220,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12848,9 +11235,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12858,9 +11242,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12876,9 +11257,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12893,9 +11271,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -12909,13 +11284,7 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(key: java.lang.String, arg1: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: js.Array[java.lang.String | scala.Double],
@@ -12928,17 +11297,8 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12946,9 +11306,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12964,9 +11321,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12974,9 +11328,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -12992,9 +11343,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13009,13 +11357,7 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13023,9 +11365,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13041,9 +11380,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13051,9 +11387,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13069,9 +11402,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13086,9 +11416,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13102,17 +11429,8 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(key: java.lang.String, arg1: scala.Double, arg2: scala.Double): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(key: java.lang.String, arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13120,9 +11438,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13138,9 +11453,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13148,9 +11460,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13166,9 +11475,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13183,13 +11489,7 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(key: java.lang.String, arg1: scala.Double, arg2: scala.Double, arg3: scala.Double): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13197,9 +11497,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13215,9 +11512,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13225,9 +11519,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13243,9 +11534,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13260,9 +11548,6 @@ trait Commands[R] extends js.Object {
       ]
     ]
   ): R = js.native
-  /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
   def georadiusbymember(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13277,8 +11562,8 @@ trait Commands[R] extends js.Object {
     ]
   ): R = js.native
   /**
-       * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
-       */
+    * Query a sorted set representing a geospatial index to fetch members matching a given maximum distance from a member.
+    */
   def georadiusbymember(
     key: java.lang.String,
     args: (java.lang.String | scala.Double | (Callback[
@@ -13291,56 +11576,44 @@ trait Commands[R] extends js.Object {
     ]))*
   ): R = js.native
   /**
-       * Get the value of a key.
-       */
+    * Get the value of a key.
+    */
   def get(key: java.lang.String): R = js.native
-  /**
-       * Get the value of a key.
-       */
   def get(key: java.lang.String, cb: Callback[java.lang.String]): R = js.native
   /**
-       * Returns the bit value at offset in the string value stored at key.
-       */
+    * Returns the bit value at offset in the string value stored at key.
+    */
   def getbit(key: java.lang.String, offset: scala.Double): R = js.native
-  /**
-       * Returns the bit value at offset in the string value stored at key.
-       */
   def getbit(key: java.lang.String, offset: scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Get a substring of the string stored at a key.
-       */
+    * Get a substring of the string stored at a key.
+    */
   def getrange(key: java.lang.String, start: scala.Double, end: scala.Double): R = js.native
-  /**
-       * Get a substring of the string stored at a key.
-       */
   def getrange(key: java.lang.String, start: scala.Double, end: scala.Double, cb: Callback[java.lang.String]): R = js.native
   /**
-       * Set the string value of a key and return its old value.
-       */
+    * Set the string value of a key and return its old value.
+    */
   def getset(key: java.lang.String, value: java.lang.String): R = js.native
-  /**
-       * Set the string value of a key and return its old value.
-       */
   def getset(key: java.lang.String, value: java.lang.String, cb: Callback[java.lang.String]): R = js.native
   /**
-       * Delete on or more hash fields.
-       */
+    * Delete on or more hash fields.
+    */
   def hdel(args: (java.lang.String | Callback[scala.Double])*): R = js.native
   /**
-       * Delete on or more hash fields.
-       */
+    * Delete on or more hash fields.
+    */
   def hdel(key: java.lang.String, arg1: java.lang.String): R = js.native
   /**
-       * Delete on or more hash fields.
-       */
+    * Delete on or more hash fields.
+    */
   def hdel(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Delete on or more hash fields.
-       */
+    * Delete on or more hash fields.
+    */
   def hdel(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Delete on or more hash fields.
-       */
+    * Delete on or more hash fields.
+    */
   def hdel(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13349,8 +11622,8 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String
   ): R = js.native
   /**
-       * Delete on or more hash fields.
-       */
+    * Delete on or more hash fields.
+    */
   def hdel(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13360,8 +11633,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Delete on or more hash fields.
-       */
+    * Delete on or more hash fields.
+    */
   def hdel(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13371,9 +11644,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Delete on or more hash fields.
-       */
   def hdel(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13384,9 +11654,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Delete on or more hash fields.
-       */
   def hdel(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13396,9 +11663,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Delete on or more hash fields.
-       */
   def hdel(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13407,9 +11671,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Delete on or more hash fields.
-       */
   def hdel(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13417,57 +11678,33 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Delete on or more hash fields.
-       */
   def hdel(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Delete on or more hash fields.
-       */
   def hdel(key: java.lang.String, arg1: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Delete on or more hash fields.
-       */
   def hdel(key: java.lang.String, arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Delete on or more hash fields.
-       */
   def hdel(key: java.lang.String, arg1: js.Array[java.lang.String], cb: Callback[scala.Double]): R = js.native
   /**
-       * Delete on or more hash fields.
-       */
+    * Delete on or more hash fields.
+    */
   def hdel(key: java.lang.String, args: (java.lang.String | Callback[scala.Double])*): R = js.native
   /**
-       * Determine if a hash field exists.
-       */
+    * Determine if a hash field exists.
+    */
   def hexists(key: java.lang.String, field: java.lang.String): R = js.native
-  /**
-       * Determine if a hash field exists.
-       */
   def hexists(key: java.lang.String, field: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Get the value of a hash field.
-       */
+    * Get the value of a hash field.
+    */
   def hget(key: java.lang.String, field: java.lang.String): R = js.native
-  /**
-       * Get the value of a hash field.
-       */
   def hget(key: java.lang.String, field: java.lang.String, cb: Callback[java.lang.String]): R = js.native
   /**
-       * Get all fields and values in a hash.
-       */
+    * Get all fields and values in a hash.
+    */
   def hgetall(key: java.lang.String): R = js.native
-  /**
-       * Get all fields and values in a hash.
-       */
   def hgetall(key: java.lang.String, cb: Callback[org.scalablytyped.runtime.StringDictionary[java.lang.String]]): R = js.native
   /**
-       * Increment the integer value of a hash field by the given number.
-       */
+    * Increment the integer value of a hash field by the given number.
+    */
   def hincrby(key: java.lang.String, field: java.lang.String, increment: scala.Double): R = js.native
-  /**
-       * Increment the integer value of a hash field by the given number.
-       */
   def hincrby(
     key: java.lang.String,
     field: java.lang.String,
@@ -13475,12 +11712,9 @@ trait Commands[R] extends js.Object {
     cb: Callback[scala.Double]
   ): R = js.native
   /**
-       * Increment the float value of a hash field by the given amount.
-       */
+    * Increment the float value of a hash field by the given amount.
+    */
   def hincrbyfloat(key: java.lang.String, field: java.lang.String, increment: scala.Double): R = js.native
-  /**
-       * Increment the float value of a hash field by the given amount.
-       */
   def hincrbyfloat(
     key: java.lang.String,
     field: java.lang.String,
@@ -13488,40 +11722,34 @@ trait Commands[R] extends js.Object {
     cb: Callback[java.lang.String]
   ): R = js.native
   /**
-       * Get all the fields of a hash.
-       */
+    * Get all the fields of a hash.
+    */
   def hkeys(key: java.lang.String): R = js.native
-  /**
-       * Get all the fields of a hash.
-       */
   def hkeys(key: java.lang.String, cb: Callback[js.Array[java.lang.String]]): R = js.native
   /**
-       * Get the number of fields in a hash.
-       */
+    * Get the number of fields in a hash.
+    */
   def hlen(key: java.lang.String): R = js.native
-  /**
-       * Get the number of fields in a hash.
-       */
   def hlen(key: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Get the values of all the given hash fields.
-       */
+    * Get the values of all the given hash fields.
+    */
   def hmget(args: (java.lang.String | Callback[js.Array[java.lang.String]])*): R = js.native
   /**
-       * Get the values of all the given hash fields.
-       */
+    * Get the values of all the given hash fields.
+    */
   def hmget(key: java.lang.String, arg1: java.lang.String): R = js.native
   /**
-       * Get the values of all the given hash fields.
-       */
+    * Get the values of all the given hash fields.
+    */
   def hmget(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Get the values of all the given hash fields.
-       */
+    * Get the values of all the given hash fields.
+    */
   def hmget(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Get the values of all the given hash fields.
-       */
+    * Get the values of all the given hash fields.
+    */
   def hmget(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13530,8 +11758,8 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String
   ): R = js.native
   /**
-       * Get the values of all the given hash fields.
-       */
+    * Get the values of all the given hash fields.
+    */
   def hmget(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13541,8 +11769,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Get the values of all the given hash fields.
-       */
+    * Get the values of all the given hash fields.
+    */
   def hmget(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13552,9 +11780,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Get the values of all the given hash fields.
-       */
   def hmget(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13565,9 +11790,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Get the values of all the given hash fields.
-       */
   def hmget(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13577,9 +11799,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Get the values of all the given hash fields.
-       */
   def hmget(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13588,9 +11807,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Get the values of all the given hash fields.
-       */
   def hmget(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13598,38 +11814,26 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Get the values of all the given hash fields.
-       */
   def hmget(
     key: java.lang.String,
     arg1: java.lang.String,
     arg2: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Get the values of all the given hash fields.
-       */
   def hmget(key: java.lang.String, arg1: java.lang.String, cb: Callback[js.Array[java.lang.String]]): R = js.native
-  /**
-       * Get the values of all the given hash fields.
-       */
   def hmget(key: java.lang.String, arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Get the values of all the given hash fields.
-       */
   def hmget(key: java.lang.String, arg1: js.Array[java.lang.String], cb: Callback[js.Array[java.lang.String]]): R = js.native
   /**
-       * Get the values of all the given hash fields.
-       */
+    * Get the values of all the given hash fields.
+    */
   def hmget(key: java.lang.String, args: (java.lang.String | Callback[js.Array[java.lang.String]])*): R = js.native
   /**
-       * Set multiple hash fields to multiple values.
-       */
+    * Set multiple hash fields to multiple values.
+    */
   def hmset(key: java.lang.String, arg1: java.lang.String | scala.Double): R = js.native
   /**
-       * Set multiple hash fields to multiple values.
-       */
+    * Set multiple hash fields to multiple values.
+    */
   def hmset(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -13639,8 +11843,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double
   ): R = js.native
   /**
-       * Set multiple hash fields to multiple values.
-       */
+    * Set multiple hash fields to multiple values.
+    */
   def hmset(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -13651,16 +11855,16 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String | scala.Double
   ): R = js.native
   /**
-       * Set multiple hash fields to multiple values.
-       */
+    * Set multiple hash fields to multiple values.
+    */
   def hmset(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Set multiple hash fields to multiple values.
-       */
+    * Set multiple hash fields to multiple values.
+    */
   def hmset(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Set multiple hash fields to multiple values.
-       */
+    * Set multiple hash fields to multiple values.
+    */
   def hmset(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13668,9 +11872,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13678,13 +11879,7 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13692,9 +11887,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13702,17 +11894,8 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13720,9 +11903,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13730,13 +11910,7 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13744,9 +11918,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -13754,28 +11925,13 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(key: java.lang.String, arg1: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(
     key: java.lang.String,
     arg1: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13783,9 +11939,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13793,13 +11946,7 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13807,9 +11954,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13817,17 +11961,8 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(key: java.lang.String, arg1: scala.Double, arg2: scala.Double): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(key: java.lang.String, arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13835,9 +11970,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13845,13 +11977,7 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(key: java.lang.String, arg1: scala.Double, arg2: scala.Double, arg3: scala.Double): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13859,9 +11985,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   def hmset(
     key: java.lang.String,
     arg1: scala.Double,
@@ -13869,9 +11992,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -13883,9 +12003,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String | scala.Double,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -13896,18 +12013,12 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -13917,9 +12028,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -13929,9 +12037,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -13940,9 +12045,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -13952,9 +12054,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -13964,9 +12063,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -13975,9 +12071,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -13985,9 +12078,6 @@ trait Commands[R] extends js.Object {
     arg2: java.lang.String,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -13997,9 +12087,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -14009,9 +12096,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -14020,9 +12104,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -14032,9 +12113,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -14044,9 +12122,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -14055,9 +12130,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -14065,27 +12137,18 @@ trait Commands[R] extends js.Object {
     arg2: scala.Double,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
     arg1: js.Array[java.lang.String | scala.Double],
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
     arg1: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double],
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -14095,9 +12158,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -14107,9 +12167,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -14118,9 +12175,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -14130,9 +12184,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -14142,9 +12193,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -14153,9 +12201,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -14163,9 +12208,6 @@ trait Commands[R] extends js.Object {
     arg2: java.lang.String,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -14175,9 +12217,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -14187,9 +12226,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -14198,9 +12234,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -14210,9 +12243,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -14222,9 +12252,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -14233,9 +12260,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Set multiple hash fields to multiple values.
-       */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
@@ -14244,32 +12268,32 @@ trait Commands[R] extends js.Object {
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
   /**
-       * Set multiple hash fields to multiple values.
-       */
+    * Set multiple hash fields to multiple values.
+    */
   @JSName("hmset")
   def hmset_OK(
     key: java.lang.String,
     args: (java.lang.String | scala.Double | Callback[redisLib.redisLibStrings.OK])*
   ): R = js.native
   /**
-       * Incrementally iterate hash fields and associated values.
-       */
+    * Incrementally iterate hash fields and associated values.
+    */
   def hscan(args: (java.lang.String | (Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]))*): R = js.native
   /**
-       * Incrementally iterate hash fields and associated values.
-       */
+    * Incrementally iterate hash fields and associated values.
+    */
   def hscan(key: java.lang.String, arg1: java.lang.String): R = js.native
   /**
-       * Incrementally iterate hash fields and associated values.
-       */
+    * Incrementally iterate hash fields and associated values.
+    */
   def hscan(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Incrementally iterate hash fields and associated values.
-       */
+    * Incrementally iterate hash fields and associated values.
+    */
   def hscan(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Incrementally iterate hash fields and associated values.
-       */
+    * Incrementally iterate hash fields and associated values.
+    */
   def hscan(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -14278,8 +12302,8 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String
   ): R = js.native
   /**
-       * Incrementally iterate hash fields and associated values.
-       */
+    * Incrementally iterate hash fields and associated values.
+    */
   def hscan(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -14289,8 +12313,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Incrementally iterate hash fields and associated values.
-       */
+    * Incrementally iterate hash fields and associated values.
+    */
   def hscan(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -14300,9 +12324,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Incrementally iterate hash fields and associated values.
-       */
   def hscan(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -14313,9 +12334,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate hash fields and associated values.
-       */
   def hscan(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -14325,9 +12343,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate hash fields and associated values.
-       */
   def hscan(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -14336,9 +12351,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate hash fields and associated values.
-       */
   def hscan(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -14346,49 +12358,34 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate hash fields and associated values.
-       */
   def hscan(
     key: java.lang.String,
     arg1: java.lang.String,
     arg2: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate hash fields and associated values.
-       */
   def hscan(
     key: java.lang.String,
     arg1: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate hash fields and associated values.
-       */
   def hscan(key: java.lang.String, arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Incrementally iterate hash fields and associated values.
-       */
   def hscan(
     key: java.lang.String,
     arg1: js.Array[java.lang.String],
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
   /**
-       * Incrementally iterate hash fields and associated values.
-       */
+    * Incrementally iterate hash fields and associated values.
+    */
   def hscan(
     key: java.lang.String,
     args: (java.lang.String | (Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]))*
   ): R = js.native
   /**
-       * Set the string value of a hash field.
-       */
+    * Set the string value of a hash field.
+    */
   def hset(key: java.lang.String, field: java.lang.String, value: java.lang.String): R = js.native
-  /**
-       * Set the string value of a hash field.
-       */
   def hset(
     key: java.lang.String,
     field: java.lang.String,
@@ -14396,12 +12393,9 @@ trait Commands[R] extends js.Object {
     cb: Callback[scala.Double]
   ): R = js.native
   /**
-       * Set the value of a hash field, only if the field does not exist.
-       */
+    * Set the value of a hash field, only if the field does not exist.
+    */
   def hsetnx(key: java.lang.String, field: java.lang.String, value: java.lang.String): R = js.native
-  /**
-       * Set the value of a hash field, only if the field does not exist.
-       */
   def hsetnx(
     key: java.lang.String,
     field: java.lang.String,
@@ -14409,84 +12403,54 @@ trait Commands[R] extends js.Object {
     cb: Callback[scala.Double]
   ): R = js.native
   /**
-       * Get the length of the value of a hash field.
-       */
+    * Get the length of the value of a hash field.
+    */
   def hstrlen(key: java.lang.String, field: java.lang.String): R = js.native
-  /**
-       * Get the length of the value of a hash field.
-       */
   def hstrlen(key: java.lang.String, field: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Get all the values of a hash.
-       */
+    * Get all the values of a hash.
+    */
   def hvals(key: java.lang.String): R = js.native
-  /**
-       * Get all the values of a hash.
-       */
   def hvals(key: java.lang.String, cb: Callback[js.Array[java.lang.String]]): R = js.native
   /**
-       * Increment the integer value of a key by one.
-       */
+    * Increment the integer value of a key by one.
+    */
   def incr(key: java.lang.String): R = js.native
-  /**
-       * Increment the integer value of a key by one.
-       */
   def incr(key: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Increment the integer value of a key by the given amount.
-       */
+    * Increment the integer value of a key by the given amount.
+    */
   def incrby(key: java.lang.String, increment: scala.Double): R = js.native
-  /**
-       * Increment the integer value of a key by the given amount.
-       */
   def incrby(key: java.lang.String, increment: scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Increment the float value of a key by the given amount.
-       */
+    * Increment the float value of a key by the given amount.
+    */
   def incrbyfloat(key: java.lang.String, increment: scala.Double): R = js.native
-  /**
-       * Increment the float value of a key by the given amount.
-       */
   def incrbyfloat(key: java.lang.String, increment: scala.Double, cb: Callback[java.lang.String]): R = js.native
   /**
-       * Get information and statistics about the server.
-       */
+    * Get information and statistics about the server.
+    */
   def info(): R = js.native
-  /**
-       * Get information and statistics about the server.
-       */
   def info(cb: Callback[ServerInfo]): R = js.native
   def info(section: java.lang.String): R = js.native
   def info(section: java.lang.String, cb: Callback[ServerInfo]): R = js.native
   def info(section: js.Array[java.lang.String]): R = js.native
   def info(section: js.Array[java.lang.String], cb: Callback[ServerInfo]): R = js.native
   /**
-       * Find all keys matching the given pattern.
-       */
+    * Find all keys matching the given pattern.
+    */
   def keys(pattern: java.lang.String): R = js.native
-  /**
-       * Find all keys matching the given pattern.
-       */
   def keys(pattern: java.lang.String, cb: Callback[js.Array[java.lang.String]]): R = js.native
   /**
-       * Get the UNIX time stamp of the last successful save to disk.
-       */
+    * Get the UNIX time stamp of the last successful save to disk.
+    */
   def lastsave(): R = js.native
-  /**
-       * Get the UNIX time stamp of the last successful save to disk.
-       */
   def lastsave(cb: Callback[scala.Double]): R = js.native
   /**
-       * Get an element from a list by its index.
-       */
+    * Get an element from a list by its index.
+    */
   def lindex(key: java.lang.String, index: scala.Double): R = js.native
-  /**
-       * Get an element from a list by its index.
-       */
   def lindex(key: java.lang.String, index: scala.Double, cb: Callback[java.lang.String]): R = js.native
-  /**
-       * Insert an element before or after another element in a list.
-       */
   @JSName("linsert")
   def linsert_AFTER(
     key: java.lang.String,
@@ -14494,9 +12458,6 @@ trait Commands[R] extends js.Object {
     pivot: java.lang.String,
     value: java.lang.String
   ): R = js.native
-  /**
-       * Insert an element before or after another element in a list.
-       */
   @JSName("linsert")
   def linsert_AFTER(
     key: java.lang.String,
@@ -14506,8 +12467,8 @@ trait Commands[R] extends js.Object {
     cb: Callback[java.lang.String]
   ): R = js.native
   /**
-       * Insert an element before or after another element in a list.
-       */
+    * Insert an element before or after another element in a list.
+    */
   @JSName("linsert")
   def linsert_BEFORE(
     key: java.lang.String,
@@ -14515,9 +12476,6 @@ trait Commands[R] extends js.Object {
     pivot: java.lang.String,
     value: java.lang.String
   ): R = js.native
-  /**
-       * Insert an element before or after another element in a list.
-       */
   @JSName("linsert")
   def linsert_BEFORE(
     key: java.lang.String,
@@ -14527,40 +12485,34 @@ trait Commands[R] extends js.Object {
     cb: Callback[java.lang.String]
   ): R = js.native
   /**
-       * Get the length of a list.
-       */
+    * Get the length of a list.
+    */
   def llen(key: java.lang.String): R = js.native
-  /**
-       * Get the length of a list.
-       */
   def llen(key: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Remove and get the first element in a list.
-       */
+    * Remove and get the first element in a list.
+    */
   def lpop(key: java.lang.String): R = js.native
-  /**
-       * Remove and get the first element in a list.
-       */
   def lpop(key: java.lang.String, cb: Callback[java.lang.String]): R = js.native
   /**
-       * Prepend one or multiple values to a list.
-       */
+    * Prepend one or multiple values to a list.
+    */
   def lpush(args: (java.lang.String | Callback[scala.Double])*): R = js.native
   /**
-       * Prepend one or multiple values to a list.
-       */
+    * Prepend one or multiple values to a list.
+    */
   def lpush(key: java.lang.String, arg1: java.lang.String): R = js.native
   /**
-       * Prepend one or multiple values to a list.
-       */
+    * Prepend one or multiple values to a list.
+    */
   def lpush(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Prepend one or multiple values to a list.
-       */
+    * Prepend one or multiple values to a list.
+    */
   def lpush(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Prepend one or multiple values to a list.
-       */
+    * Prepend one or multiple values to a list.
+    */
   def lpush(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -14569,8 +12521,8 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String
   ): R = js.native
   /**
-       * Prepend one or multiple values to a list.
-       */
+    * Prepend one or multiple values to a list.
+    */
   def lpush(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -14580,8 +12532,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Prepend one or multiple values to a list.
-       */
+    * Prepend one or multiple values to a list.
+    */
   def lpush(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -14591,9 +12543,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Prepend one or multiple values to a list.
-       */
   def lpush(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -14604,9 +12553,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Prepend one or multiple values to a list.
-       */
   def lpush(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -14616,9 +12562,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Prepend one or multiple values to a list.
-       */
   def lpush(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -14627,9 +12570,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Prepend one or multiple values to a list.
-       */
   def lpush(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -14637,41 +12577,23 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Prepend one or multiple values to a list.
-       */
   def lpush(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Prepend one or multiple values to a list.
-       */
   def lpush(key: java.lang.String, arg1: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Prepend one or multiple values to a list.
-       */
   def lpush(key: java.lang.String, arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Prepend one or multiple values to a list.
-       */
   def lpush(key: java.lang.String, arg1: js.Array[java.lang.String], cb: Callback[scala.Double]): R = js.native
   /**
-       * Prepend one or multiple values to a list.
-       */
+    * Prepend one or multiple values to a list.
+    */
   def lpush(key: java.lang.String, args: (java.lang.String | Callback[scala.Double])*): R = js.native
   /**
-       * Prepend a value to a list, only if the list exists.
-       */
+    * Prepend a value to a list, only if the list exists.
+    */
   def lpushx(key: java.lang.String, value: java.lang.String): R = js.native
-  /**
-       * Prepend a value to a list, only if the list exists.
-       */
   def lpushx(key: java.lang.String, value: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Get a range of elements from a list.
-       */
+    * Get a range of elements from a list.
+    */
   def lrange(key: java.lang.String, start: scala.Double, stop: scala.Double): R = js.native
-  /**
-       * Get a range of elements from a list.
-       */
   def lrange(
     key: java.lang.String,
     start: scala.Double,
@@ -14679,20 +12601,14 @@ trait Commands[R] extends js.Object {
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
   /**
-       * Remove elements from a list.
-       */
+    * Remove elements from a list.
+    */
   def lrem(key: java.lang.String, count: scala.Double, value: java.lang.String): R = js.native
-  /**
-       * Remove elements from a list.
-       */
   def lrem(key: java.lang.String, count: scala.Double, value: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Set the value of an element in a list by its index.
-       */
+    * Set the value of an element in a list by its index.
+    */
   def lset(key: java.lang.String, index: scala.Double, value: java.lang.String): R = js.native
-  /**
-       * Set the value of an element in a list by its index.
-       */
   @JSName("lset")
   def lset_OK(
     key: java.lang.String,
@@ -14701,12 +12617,9 @@ trait Commands[R] extends js.Object {
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
   /**
-       * Trim a list to the specified range.
-       */
+    * Trim a list to the specified range.
+    */
   def ltrim(key: java.lang.String, start: scala.Double, stop: scala.Double): R = js.native
-  /**
-       * Trim a list to the specified range.
-       */
   @JSName("ltrim")
   def ltrim_OK(
     key: java.lang.String,
@@ -14715,24 +12628,24 @@ trait Commands[R] extends js.Object {
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
   /**
-       * Get the values of all given keys.
-       */
+    * Get the values of all given keys.
+    */
   def mget(arg1: java.lang.String): R = js.native
   /**
-       * Get the values of all given keys.
-       */
+    * Get the values of all given keys.
+    */
   def mget(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Get the values of all given keys.
-       */
+    * Get the values of all given keys.
+    */
   def mget(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Get the values of all given keys.
-       */
+    * Get the values of all given keys.
+    */
   def mget(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Get the values of all given keys.
-       */
+    * Get the values of all given keys.
+    */
   def mget(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -14741,8 +12654,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Get the values of all given keys.
-       */
+    * Get the values of all given keys.
+    */
   def mget(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -14751,9 +12664,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Get the values of all given keys.
-       */
   def mget(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -14763,9 +12673,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Get the values of all given keys.
-       */
   def mget(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -14774,9 +12681,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Get the values of all given keys.
-       */
   def mget(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -14784,62 +12688,41 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Get the values of all given keys.
-       */
   def mget(
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Get the values of all given keys.
-       */
   def mget(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[js.Array[java.lang.String]]): R = js.native
-  /**
-       * Get the values of all given keys.
-       */
   def mget(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * Get the values of all given keys.
-       */
   def mget(arg1: java.lang.String, arg2: js.Array[java.lang.String], cb: Callback[js.Array[java.lang.String]]): R = js.native
-  /**
-       * Get the values of all given keys.
-       */
   def mget(arg1: java.lang.String, cb: Callback[js.Array[java.lang.String]]): R = js.native
-  /**
-       * Get the values of all given keys.
-       */
   def mget(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Get the values of all given keys.
-       */
   def mget(arg1: js.Array[java.lang.String], cb: Callback[js.Array[java.lang.String]]): R = js.native
   /**
-       * Get the values of all given keys.
-       */
+    * Get the values of all given keys.
+    */
   def mget(args: (java.lang.String | Callback[js.Array[java.lang.String]])*): R = js.native
   /**
-       * Atomically tranfer a key from a Redis instance to another one.
-       */
+    * Atomically tranfer a key from a Redis instance to another one.
+    */
   def migrate(arg1: java.lang.String): R = js.native
   /**
-       * Atomically tranfer a key from a Redis instance to another one.
-       */
+    * Atomically tranfer a key from a Redis instance to another one.
+    */
   def migrate(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Atomically tranfer a key from a Redis instance to another one.
-       */
+    * Atomically tranfer a key from a Redis instance to another one.
+    */
   def migrate(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Atomically tranfer a key from a Redis instance to another one.
-       */
+    * Atomically tranfer a key from a Redis instance to another one.
+    */
   def migrate(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Atomically tranfer a key from a Redis instance to another one.
-       */
+    * Atomically tranfer a key from a Redis instance to another one.
+    */
   def migrate(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -14848,8 +12731,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Atomically tranfer a key from a Redis instance to another one.
-       */
+    * Atomically tranfer a key from a Redis instance to another one.
+    */
   def migrate(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -14858,9 +12741,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Atomically tranfer a key from a Redis instance to another one.
-       */
   def migrate(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -14870,9 +12750,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * Atomically tranfer a key from a Redis instance to another one.
-       */
   def migrate(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -14881,9 +12758,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * Atomically tranfer a key from a Redis instance to another one.
-       */
   def migrate(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -14891,78 +12765,51 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * Atomically tranfer a key from a Redis instance to another one.
-       */
   def migrate(
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * Atomically tranfer a key from a Redis instance to another one.
-       */
   def migrate(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Boolean]): R = js.native
-  /**
-       * Atomically tranfer a key from a Redis instance to another one.
-       */
   def migrate(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * Atomically tranfer a key from a Redis instance to another one.
-       */
   def migrate(arg1: java.lang.String, arg2: js.Array[java.lang.String], cb: Callback[scala.Boolean]): R = js.native
-  /**
-       * Atomically tranfer a key from a Redis instance to another one.
-       */
   def migrate(arg1: java.lang.String, cb: Callback[scala.Boolean]): R = js.native
-  /**
-       * Atomically tranfer a key from a Redis instance to another one.
-       */
   def migrate(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Atomically tranfer a key from a Redis instance to another one.
-       */
   def migrate(arg1: js.Array[java.lang.String], cb: Callback[scala.Boolean]): R = js.native
   /**
-       * Atomically tranfer a key from a Redis instance to another one.
-       */
+    * Atomically tranfer a key from a Redis instance to another one.
+    */
   def migrate(args: (java.lang.String | Callback[scala.Boolean])*): R = js.native
   /**
-       * Listen for all requests received by the server in real time.
-       */
+    * Listen for all requests received by the server in real time.
+    */
   def monitor(): R = js.native
-  /**
-       * Listen for all requests received by the server in real time.
-       */
   def monitor(cb: Callback[js.UndefOr[scala.Nothing]]): R = js.native
   /**
-       * Move a key to another database.
-       */
+    * Move a key to another database.
+    */
   def move(key: java.lang.String, db: java.lang.String): R = js.native
-  /**
-       * Move a key to another database.
-       */
   def move(key: java.lang.String, db: scala.Double): R = js.native
   /**
-       * Set multiple keys to multiple values.
-       */
+    * Set multiple keys to multiple values.
+    */
   def mset(arg1: java.lang.String): R = js.native
   /**
-       * Set multiple keys to multiple values.
-       */
+    * Set multiple keys to multiple values.
+    */
   def mset(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Set multiple keys to multiple values.
-       */
+    * Set multiple keys to multiple values.
+    */
   def mset(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Set multiple keys to multiple values.
-       */
+    * Set multiple keys to multiple values.
+    */
   def mset(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Set multiple keys to multiple values.
-       */
+    * Set multiple keys to multiple values.
+    */
   def mset(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -14971,8 +12818,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Set multiple keys to multiple values.
-       */
+    * Set multiple keys to multiple values.
+    */
   def mset(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -14981,9 +12828,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Set multiple keys to multiple values.
-       */
   def mset(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -14993,9 +12837,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * Set multiple keys to multiple values.
-       */
   def mset(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15004,9 +12845,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * Set multiple keys to multiple values.
-       */
   def mset(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15014,62 +12852,41 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * Set multiple keys to multiple values.
-       */
   def mset(
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * Set multiple keys to multiple values.
-       */
   def mset(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Boolean]): R = js.native
-  /**
-       * Set multiple keys to multiple values.
-       */
   def mset(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * Set multiple keys to multiple values.
-       */
   def mset(arg1: java.lang.String, arg2: js.Array[java.lang.String], cb: Callback[scala.Boolean]): R = js.native
-  /**
-       * Set multiple keys to multiple values.
-       */
   def mset(arg1: java.lang.String, cb: Callback[scala.Boolean]): R = js.native
-  /**
-       * Set multiple keys to multiple values.
-       */
   def mset(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Set multiple keys to multiple values.
-       */
   def mset(arg1: js.Array[java.lang.String], cb: Callback[scala.Boolean]): R = js.native
   /**
-       * Set multiple keys to multiple values.
-       */
+    * Set multiple keys to multiple values.
+    */
   def mset(args: (java.lang.String | Callback[scala.Boolean])*): R = js.native
   /**
-       * Set multiple keys to multiple values, only if none of the keys exist.
-       */
+    * Set multiple keys to multiple values, only if none of the keys exist.
+    */
   def msetnx(arg1: java.lang.String): R = js.native
   /**
-       * Set multiple keys to multiple values, only if none of the keys exist.
-       */
+    * Set multiple keys to multiple values, only if none of the keys exist.
+    */
   def msetnx(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Set multiple keys to multiple values, only if none of the keys exist.
-       */
+    * Set multiple keys to multiple values, only if none of the keys exist.
+    */
   def msetnx(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Set multiple keys to multiple values, only if none of the keys exist.
-       */
+    * Set multiple keys to multiple values, only if none of the keys exist.
+    */
   def msetnx(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Set multiple keys to multiple values, only if none of the keys exist.
-       */
+    * Set multiple keys to multiple values, only if none of the keys exist.
+    */
   def msetnx(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15078,8 +12895,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Set multiple keys to multiple values, only if none of the keys exist.
-       */
+    * Set multiple keys to multiple values, only if none of the keys exist.
+    */
   def msetnx(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15088,9 +12905,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Set multiple keys to multiple values, only if none of the keys exist.
-       */
   def msetnx(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15100,9 +12914,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * Set multiple keys to multiple values, only if none of the keys exist.
-       */
   def msetnx(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15111,9 +12922,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * Set multiple keys to multiple values, only if none of the keys exist.
-       */
   def msetnx(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15121,62 +12929,41 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * Set multiple keys to multiple values, only if none of the keys exist.
-       */
   def msetnx(
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * Set multiple keys to multiple values, only if none of the keys exist.
-       */
   def msetnx(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Boolean]): R = js.native
-  /**
-       * Set multiple keys to multiple values, only if none of the keys exist.
-       */
   def msetnx(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * Set multiple keys to multiple values, only if none of the keys exist.
-       */
   def msetnx(arg1: java.lang.String, arg2: js.Array[java.lang.String], cb: Callback[scala.Boolean]): R = js.native
-  /**
-       * Set multiple keys to multiple values, only if none of the keys exist.
-       */
   def msetnx(arg1: java.lang.String, cb: Callback[scala.Boolean]): R = js.native
-  /**
-       * Set multiple keys to multiple values, only if none of the keys exist.
-       */
   def msetnx(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Set multiple keys to multiple values, only if none of the keys exist.
-       */
   def msetnx(arg1: js.Array[java.lang.String], cb: Callback[scala.Boolean]): R = js.native
   /**
-       * Set multiple keys to multiple values, only if none of the keys exist.
-       */
+    * Set multiple keys to multiple values, only if none of the keys exist.
+    */
   def msetnx(args: (java.lang.String | Callback[scala.Boolean])*): R = js.native
   /**
-       * Inspect the internals of Redis objects.
-       */
+    * Inspect the internals of Redis objects.
+    */
   def `object`(arg1: java.lang.String): R = js.native
   /**
-       * Inspect the internals of Redis objects.
-       */
+    * Inspect the internals of Redis objects.
+    */
   def `object`(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Inspect the internals of Redis objects.
-       */
+    * Inspect the internals of Redis objects.
+    */
   def `object`(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Inspect the internals of Redis objects.
-       */
+    * Inspect the internals of Redis objects.
+    */
   def `object`(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Inspect the internals of Redis objects.
-       */
+    * Inspect the internals of Redis objects.
+    */
   def `object`(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15185,8 +12972,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Inspect the internals of Redis objects.
-       */
+    * Inspect the internals of Redis objects.
+    */
   def `object`(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15195,9 +12982,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Inspect the internals of Redis objects.
-       */
   def `object`(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15207,9 +12991,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Inspect the internals of Redis objects.
-       */
   def `object`(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15218,9 +12999,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Inspect the internals of Redis objects.
-       */
   def `object`(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15228,81 +13006,51 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * Inspect the internals of Redis objects.
-       */
   def `object`(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, cb: Callback[_]): R = js.native
-  /**
-       * Inspect the internals of Redis objects.
-       */
   def `object`(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[_]): R = js.native
-  /**
-       * Inspect the internals of Redis objects.
-       */
   def `object`(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * Inspect the internals of Redis objects.
-       */
   def `object`(arg1: java.lang.String, arg2: js.Array[java.lang.String], cb: Callback[_]): R = js.native
-  /**
-       * Inspect the internals of Redis objects.
-       */
   def `object`(arg1: java.lang.String, cb: Callback[_]): R = js.native
-  /**
-       * Inspect the internals of Redis objects.
-       */
   def `object`(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Inspect the internals of Redis objects.
-       */
   def `object`(arg1: js.Array[java.lang.String], cb: Callback[_]): R = js.native
   /**
-       * Inspect the internals of Redis objects.
-       */
+    * Inspect the internals of Redis objects.
+    */
   def `object`(args: (java.lang.String | Callback[_])*): R = js.native
   /**
-       * Remove the expiration from a key.
-       */
+    * Remove the expiration from a key.
+    */
   def persist(key: java.lang.String): R = js.native
-  /**
-       * Remove the expiration from a key.
-       */
   def persist(key: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Remove a key's time to live in milliseconds.
-       */
+    * Remove a key's time to live in milliseconds.
+    */
   def pexpire(key: java.lang.String, milliseconds: scala.Double): R = js.native
-  /**
-       * Remove a key's time to live in milliseconds.
-       */
   def pexpire(key: java.lang.String, milliseconds: scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Set the expiration for a key as a UNIX timestamp specified in milliseconds.
-       */
+    * Set the expiration for a key as a UNIX timestamp specified in milliseconds.
+    */
   def pexpireat(key: java.lang.String, millisecondsTimestamp: scala.Double): R = js.native
-  /**
-       * Set the expiration for a key as a UNIX timestamp specified in milliseconds.
-       */
   def pexpireat(key: java.lang.String, millisecondsTimestamp: scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Adds the specified elements to the specified HyperLogLog.
-       */
+    * Adds the specified elements to the specified HyperLogLog.
+    */
   def pfadd(args: (java.lang.String | Callback[scala.Double])*): R = js.native
   /**
-       * Adds the specified elements to the specified HyperLogLog.
-       */
+    * Adds the specified elements to the specified HyperLogLog.
+    */
   def pfadd(key: java.lang.String, arg1: java.lang.String): R = js.native
   /**
-       * Adds the specified elements to the specified HyperLogLog.
-       */
+    * Adds the specified elements to the specified HyperLogLog.
+    */
   def pfadd(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Adds the specified elements to the specified HyperLogLog.
-       */
+    * Adds the specified elements to the specified HyperLogLog.
+    */
   def pfadd(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Adds the specified elements to the specified HyperLogLog.
-       */
+    * Adds the specified elements to the specified HyperLogLog.
+    */
   def pfadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -15311,8 +13059,8 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String
   ): R = js.native
   /**
-       * Adds the specified elements to the specified HyperLogLog.
-       */
+    * Adds the specified elements to the specified HyperLogLog.
+    */
   def pfadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -15322,8 +13070,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Adds the specified elements to the specified HyperLogLog.
-       */
+    * Adds the specified elements to the specified HyperLogLog.
+    */
   def pfadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -15333,9 +13081,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Adds the specified elements to the specified HyperLogLog.
-       */
   def pfadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -15346,9 +13091,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Adds the specified elements to the specified HyperLogLog.
-       */
   def pfadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -15358,9 +13100,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Adds the specified elements to the specified HyperLogLog.
-       */
   def pfadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -15369,9 +13108,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Adds the specified elements to the specified HyperLogLog.
-       */
   def pfadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -15379,45 +13115,33 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Adds the specified elements to the specified HyperLogLog.
-       */
   def pfadd(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Adds the specified elements to the specified HyperLogLog.
-       */
   def pfadd(key: java.lang.String, arg1: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Adds the specified elements to the specified HyperLogLog.
-       */
   def pfadd(key: java.lang.String, arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Adds the specified elements to the specified HyperLogLog.
-       */
   def pfadd(key: java.lang.String, arg1: js.Array[java.lang.String], cb: Callback[scala.Double]): R = js.native
   /**
-       * Adds the specified elements to the specified HyperLogLog.
-       */
+    * Adds the specified elements to the specified HyperLogLog.
+    */
   def pfadd(key: java.lang.String, args: (java.lang.String | Callback[scala.Double])*): R = js.native
   /**
-       * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
-       */
+    * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
+    */
   def pfcount(arg1: java.lang.String): R = js.native
   /**
-       * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
-       */
+    * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
+    */
   def pfcount(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
-       */
+    * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
+    */
   def pfcount(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
-       */
+    * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
+    */
   def pfcount(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
-       */
+    * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
+    */
   def pfcount(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15426,8 +13150,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
-       */
+    * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
+    */
   def pfcount(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15436,9 +13160,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
-       */
   def pfcount(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15448,9 +13169,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
-       */
   def pfcount(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15459,9 +13177,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
-       */
   def pfcount(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15469,57 +13184,36 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
-       */
   def pfcount(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
-       */
   def pfcount(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
-       */
   def pfcount(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
-       */
   def pfcount(arg1: java.lang.String, arg2: js.Array[java.lang.String], cb: Callback[scala.Double]): R = js.native
-  /**
-       * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
-       */
   def pfcount(arg1: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
-       */
   def pfcount(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
-       */
   def pfcount(arg1: js.Array[java.lang.String], cb: Callback[scala.Double]): R = js.native
   /**
-       * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
-       */
+    * Return the approximated cardinality of the set(s) observed by the HyperLogLog at key(s).
+    */
   def pfcount(args: (java.lang.String | Callback[scala.Double])*): R = js.native
   /**
-       * Merge N different HyperLogLogs into a single one.
-       */
+    * Merge N different HyperLogLogs into a single one.
+    */
   def pfmerge(arg1: java.lang.String): R = js.native
   /**
-       * Merge N different HyperLogLogs into a single one.
-       */
+    * Merge N different HyperLogLogs into a single one.
+    */
   def pfmerge(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Merge N different HyperLogLogs into a single one.
-       */
+    * Merge N different HyperLogLogs into a single one.
+    */
   def pfmerge(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Merge N different HyperLogLogs into a single one.
-       */
+    * Merge N different HyperLogLogs into a single one.
+    */
   def pfmerge(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Merge N different HyperLogLogs into a single one.
-       */
+    * Merge N different HyperLogLogs into a single one.
+    */
   def pfmerge(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15528,8 +13222,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Merge N different HyperLogLogs into a single one.
-       */
+    * Merge N different HyperLogLogs into a single one.
+    */
   def pfmerge(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15538,9 +13232,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Merge N different HyperLogLogs into a single one.
-       */
   def pfmerge(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15550,9 +13241,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * Merge N different HyperLogLogs into a single one.
-       */
   def pfmerge(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15561,9 +13249,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * Merge N different HyperLogLogs into a single one.
-       */
   def pfmerge(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15571,60 +13256,33 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * Merge N different HyperLogLogs into a single one.
-       */
   def pfmerge(
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: java.lang.String,
     cb: Callback[scala.Boolean]
   ): R = js.native
-  /**
-       * Merge N different HyperLogLogs into a single one.
-       */
   def pfmerge(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Boolean]): R = js.native
-  /**
-       * Merge N different HyperLogLogs into a single one.
-       */
   def pfmerge(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * Merge N different HyperLogLogs into a single one.
-       */
   def pfmerge(arg1: java.lang.String, arg2: js.Array[java.lang.String], cb: Callback[scala.Boolean]): R = js.native
-  /**
-       * Merge N different HyperLogLogs into a single one.
-       */
   def pfmerge(arg1: java.lang.String, cb: Callback[scala.Boolean]): R = js.native
-  /**
-       * Merge N different HyperLogLogs into a single one.
-       */
   def pfmerge(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Merge N different HyperLogLogs into a single one.
-       */
   def pfmerge(arg1: js.Array[java.lang.String], cb: Callback[scala.Boolean]): R = js.native
   /**
-       * Merge N different HyperLogLogs into a single one.
-       */
+    * Merge N different HyperLogLogs into a single one.
+    */
   def pfmerge(args: (java.lang.String | Callback[scala.Boolean])*): R = js.native
   /**
-       * Ping the server.
-       */
+    * Ping the server.
+    */
   def ping(): R = js.native
-  /**
-       * Ping the server.
-       */
   def ping(callback: Callback[java.lang.String]): R = js.native
   def ping(message: java.lang.String): R = js.native
   def ping(message: java.lang.String, callback: Callback[java.lang.String]): R = js.native
   /**
-       * Set the value and expiration in milliseconds of a key.
-       */
+    * Set the value and expiration in milliseconds of a key.
+    */
   def psetex(key: java.lang.String, milliseconds: scala.Double, value: java.lang.String): R = js.native
-  /**
-       * Set the value and expiration in milliseconds of a key.
-       */
   @JSName("psetex")
   def psetex_OK(
     key: java.lang.String,
@@ -15633,24 +13291,24 @@ trait Commands[R] extends js.Object {
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
   /**
-       * Listen for messages published to channels matching the given patterns.
-       */
+    * Listen for messages published to channels matching the given patterns.
+    */
   def psubscribe(arg1: java.lang.String): R = js.native
   /**
-       * Listen for messages published to channels matching the given patterns.
-       */
+    * Listen for messages published to channels matching the given patterns.
+    */
   def psubscribe(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Listen for messages published to channels matching the given patterns.
-       */
+    * Listen for messages published to channels matching the given patterns.
+    */
   def psubscribe(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Listen for messages published to channels matching the given patterns.
-       */
+    * Listen for messages published to channels matching the given patterns.
+    */
   def psubscribe(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Listen for messages published to channels matching the given patterns.
-       */
+    * Listen for messages published to channels matching the given patterns.
+    */
   def psubscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15659,8 +13317,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Listen for messages published to channels matching the given patterns.
-       */
+    * Listen for messages published to channels matching the given patterns.
+    */
   def psubscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15669,9 +13327,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Listen for messages published to channels matching the given patterns.
-       */
   def psubscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15681,9 +13336,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Listen for messages published to channels matching the given patterns.
-       */
   def psubscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15692,9 +13344,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Listen for messages published to channels matching the given patterns.
-       */
   def psubscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15702,70 +13351,49 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Listen for messages published to channels matching the given patterns.
-       */
   def psubscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Listen for messages published to channels matching the given patterns.
-       */
   def psubscribe(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[java.lang.String]): R = js.native
-  /**
-       * Listen for messages published to channels matching the given patterns.
-       */
   def psubscribe(arg1: java.lang.String, cb: Callback[java.lang.String]): R = js.native
-  /**
-       * Listen for messages published to channels matching the given patterns.
-       */
   def psubscribe(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Listen for messages published to channels matching the given patterns.
-       */
   def psubscribe(arg1: js.Array[java.lang.String], cb: Callback[java.lang.String]): R = js.native
   /**
-       * Listen for messages published to channels matching the given patterns.
-       */
+    * Listen for messages published to channels matching the given patterns.
+    */
   def psubscribe(args: (java.lang.String | Callback[java.lang.String])*): R = js.native
   /**
-       * Get the time to live for a key in milliseconds.
-       */
+    * Get the time to live for a key in milliseconds.
+    */
   def pttl(key: java.lang.String): R = js.native
-  /**
-       * Get the time to live for a key in milliseconds.
-       */
   def pttl(key: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Post a message to a channel.
-       */
+    * Post a message to a channel.
+    */
   def publish(channel: java.lang.String, value: java.lang.String): R = js.native
-  /**
-       * Post a message to a channel.
-       */
   def publish(channel: java.lang.String, value: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Inspect the state of the Pub/Sub subsytem.
-       */
+    * Inspect the state of the Pub/Sub subsytem.
+    */
   def pubsub(arg1: java.lang.String): R = js.native
   /**
-       * Inspect the state of the Pub/Sub subsytem.
-       */
+    * Inspect the state of the Pub/Sub subsytem.
+    */
   def pubsub(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Inspect the state of the Pub/Sub subsytem.
-       */
+    * Inspect the state of the Pub/Sub subsytem.
+    */
   def pubsub(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Inspect the state of the Pub/Sub subsytem.
-       */
+    * Inspect the state of the Pub/Sub subsytem.
+    */
   def pubsub(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Inspect the state of the Pub/Sub subsytem.
-       */
+    * Inspect the state of the Pub/Sub subsytem.
+    */
   def pubsub(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15774,8 +13402,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Inspect the state of the Pub/Sub subsytem.
-       */
+    * Inspect the state of the Pub/Sub subsytem.
+    */
   def pubsub(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15784,9 +13412,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Inspect the state of the Pub/Sub subsytem.
-       */
   def pubsub(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15796,9 +13421,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Inspect the state of the Pub/Sub subsytem.
-       */
   def pubsub(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15807,9 +13429,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Inspect the state of the Pub/Sub subsytem.
-       */
   def pubsub(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15817,57 +13436,36 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Inspect the state of the Pub/Sub subsytem.
-       */
   def pubsub(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Inspect the state of the Pub/Sub subsytem.
-       */
   def pubsub(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Inspect the state of the Pub/Sub subsytem.
-       */
   def pubsub(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * Inspect the state of the Pub/Sub subsytem.
-       */
   def pubsub(arg1: java.lang.String, arg2: js.Array[java.lang.String], cb: Callback[scala.Double]): R = js.native
-  /**
-       * Inspect the state of the Pub/Sub subsytem.
-       */
   def pubsub(arg1: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Inspect the state of the Pub/Sub subsytem.
-       */
   def pubsub(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Inspect the state of the Pub/Sub subsytem.
-       */
   def pubsub(arg1: js.Array[java.lang.String], cb: Callback[scala.Double]): R = js.native
   /**
-       * Inspect the state of the Pub/Sub subsytem.
-       */
+    * Inspect the state of the Pub/Sub subsytem.
+    */
   def pubsub(args: (java.lang.String | Callback[scala.Double])*): R = js.native
   /**
-       * Stop listening for messages posted to channels matching the given patterns.
-       */
+    * Stop listening for messages posted to channels matching the given patterns.
+    */
   def punsubscribe(arg1: java.lang.String): R = js.native
   /**
-       * Stop listening for messages posted to channels matching the given patterns.
-       */
+    * Stop listening for messages posted to channels matching the given patterns.
+    */
   def punsubscribe(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Stop listening for messages posted to channels matching the given patterns.
-       */
+    * Stop listening for messages posted to channels matching the given patterns.
+    */
   def punsubscribe(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Stop listening for messages posted to channels matching the given patterns.
-       */
+    * Stop listening for messages posted to channels matching the given patterns.
+    */
   def punsubscribe(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Stop listening for messages posted to channels matching the given patterns.
-       */
+    * Stop listening for messages posted to channels matching the given patterns.
+    */
   def punsubscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15876,8 +13474,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Stop listening for messages posted to channels matching the given patterns.
-       */
+    * Stop listening for messages posted to channels matching the given patterns.
+    */
   def punsubscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15886,9 +13484,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Stop listening for messages posted to channels matching the given patterns.
-       */
   def punsubscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15898,9 +13493,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Stop listening for messages posted to channels matching the given patterns.
-       */
   def punsubscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15909,9 +13501,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Stop listening for messages posted to channels matching the given patterns.
-       */
   def punsubscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -15919,92 +13508,56 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Stop listening for messages posted to channels matching the given patterns.
-       */
   def punsubscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Stop listening for messages posted to channels matching the given patterns.
-       */
   def punsubscribe(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[java.lang.String]): R = js.native
-  /**
-       * Stop listening for messages posted to channels matching the given patterns.
-       */
   def punsubscribe(arg1: java.lang.String, cb: Callback[java.lang.String]): R = js.native
-  /**
-       * Stop listening for messages posted to channels matching the given patterns.
-       */
   def punsubscribe(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Stop listening for messages posted to channels matching the given patterns.
-       */
   def punsubscribe(arg1: js.Array[java.lang.String], cb: Callback[java.lang.String]): R = js.native
   /**
-       * Stop listening for messages posted to channels matching the given patterns.
-       */
+    * Stop listening for messages posted to channels matching the given patterns.
+    */
   def punsubscribe(args: (java.lang.String | Callback[java.lang.String])*): R = js.native
   /**
-       * Close the connection.
-       */
+    * Close the connection.
+    */
   def quit(): R = js.native
-  /**
-       * Close the connection.
-       */
   @JSName("quit")
   def quit_OK(cb: Callback[redisLib.redisLibStrings.OK]): R = js.native
   /**
-       * Return a random key from the keyspace.
-       */
+    * Return a random key from the keyspace.
+    */
   def randomkey(): R = js.native
-  /**
-       * Return a random key from the keyspace.
-       */
   def randomkey(cb: Callback[java.lang.String]): R = js.native
   /**
-       * Enables read queries for a connection to a cluster slave node.
-       */
+    * Enables read queries for a connection to a cluster slave node.
+    */
   def readonly(): R = js.native
-  /**
-       * Enables read queries for a connection to a cluster slave node.
-       */
   def readonly(cb: Callback[java.lang.String]): R = js.native
   /**
-       * Disables read queries for a connection to cluster slave node.
-       */
+    * Disables read queries for a connection to cluster slave node.
+    */
   def readwrite(): R = js.native
-  /**
-       * Disables read queries for a connection to cluster slave node.
-       */
   def readwrite(cb: Callback[java.lang.String]): R = js.native
   /**
-       * Rename a key.
-       */
+    * Rename a key.
+    */
   def rename(key: java.lang.String, newkey: java.lang.String): R = js.native
-  /**
-       * Rename a key.
-       */
   @JSName("rename")
   def rename_OK(key: java.lang.String, newkey: java.lang.String, cb: Callback[redisLib.redisLibStrings.OK]): R = js.native
   /**
-       * Rename a key, only if the new key does not exist.
-       */
+    * Rename a key, only if the new key does not exist.
+    */
   def renamenx(key: java.lang.String, newkey: java.lang.String): R = js.native
-  /**
-       * Rename a key, only if the new key does not exist.
-       */
   def renamenx(key: java.lang.String, newkey: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Create a key using the provided serialized value, previously obtained using DUMP.
-       */
+    * Create a key using the provided serialized value, previously obtained using DUMP.
+    */
   def restore(key: java.lang.String, ttl: scala.Double, serializedValue: java.lang.String): R = js.native
-  /**
-       * Create a key using the provided serialized value, previously obtained using DUMP.
-       */
   @JSName("restore")
   def restore_OK(
     key: java.lang.String,
@@ -16013,12 +13566,9 @@ trait Commands[R] extends js.Object {
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
   /**
-       * Return the role of the instance in the context of replication.
-       */
+    * Return the role of the instance in the context of replication.
+    */
   def role(): R = js.native
-  /**
-       * Return the role of the instance in the context of replication.
-       */
   def role(
     cb: Callback[
       js.Tuple3[
@@ -16029,40 +13579,34 @@ trait Commands[R] extends js.Object {
     ]
   ): R = js.native
   /**
-       * Remove and get the last element in a list.
-       */
+    * Remove and get the last element in a list.
+    */
   def rpop(key: java.lang.String): R = js.native
-  /**
-       * Remove and get the last element in a list.
-       */
   def rpop(key: java.lang.String, cb: Callback[java.lang.String]): R = js.native
   /**
-       * Remove the last element in a list, prepend it to another list and return it.
-       */
+    * Remove the last element in a list, prepend it to another list and return it.
+    */
   def rpoplpush(source: java.lang.String, destination: java.lang.String): R = js.native
-  /**
-       * Remove the last element in a list, prepend it to another list and return it.
-       */
   def rpoplpush(source: java.lang.String, destination: java.lang.String, cb: Callback[java.lang.String]): R = js.native
   /**
-       * Append one or multiple values to a list.
-       */
+    * Append one or multiple values to a list.
+    */
   def rpush(args: (java.lang.String | Callback[scala.Double])*): R = js.native
   /**
-       * Append one or multiple values to a list.
-       */
+    * Append one or multiple values to a list.
+    */
   def rpush(key: java.lang.String, arg1: java.lang.String): R = js.native
   /**
-       * Append one or multiple values to a list.
-       */
+    * Append one or multiple values to a list.
+    */
   def rpush(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Append one or multiple values to a list.
-       */
+    * Append one or multiple values to a list.
+    */
   def rpush(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Append one or multiple values to a list.
-       */
+    * Append one or multiple values to a list.
+    */
   def rpush(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -16071,8 +13615,8 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String
   ): R = js.native
   /**
-       * Append one or multiple values to a list.
-       */
+    * Append one or multiple values to a list.
+    */
   def rpush(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -16082,8 +13626,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Append one or multiple values to a list.
-       */
+    * Append one or multiple values to a list.
+    */
   def rpush(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -16093,9 +13637,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Append one or multiple values to a list.
-       */
   def rpush(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -16106,9 +13647,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Append one or multiple values to a list.
-       */
   def rpush(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -16118,9 +13656,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Append one or multiple values to a list.
-       */
   def rpush(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -16129,9 +13664,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Append one or multiple values to a list.
-       */
   def rpush(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -16139,53 +13671,38 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Append one or multiple values to a list.
-       */
   def rpush(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Append one or multiple values to a list.
-       */
   def rpush(key: java.lang.String, arg1: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Append one or multiple values to a list.
-       */
   def rpush(key: java.lang.String, arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Append one or multiple values to a list.
-       */
   def rpush(key: java.lang.String, arg1: js.Array[java.lang.String], cb: Callback[scala.Double]): R = js.native
   /**
-       * Append one or multiple values to a list.
-       */
+    * Append one or multiple values to a list.
+    */
   def rpush(key: java.lang.String, args: (java.lang.String | Callback[scala.Double])*): R = js.native
   /**
-       * Append a value to a list, only if the list exists.
-       */
+    * Append a value to a list, only if the list exists.
+    */
   def rpushx(key: java.lang.String, value: java.lang.String): R = js.native
-  /**
-       * Append a value to a list, only if the list exists.
-       */
   def rpushx(key: java.lang.String, value: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Append one or multiple members to a set.
-       */
+    * Append one or multiple members to a set.
+    */
   def sadd(args: (java.lang.String | Callback[scala.Double])*): R = js.native
   /**
-       * Append one or multiple members to a set.
-       */
+    * Append one or multiple members to a set.
+    */
   def sadd(key: java.lang.String, arg1: java.lang.String): R = js.native
   /**
-       * Append one or multiple members to a set.
-       */
+    * Append one or multiple members to a set.
+    */
   def sadd(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Append one or multiple members to a set.
-       */
+    * Append one or multiple members to a set.
+    */
   def sadd(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Append one or multiple members to a set.
-       */
+    * Append one or multiple members to a set.
+    */
   def sadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -16194,8 +13711,8 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String
   ): R = js.native
   /**
-       * Append one or multiple members to a set.
-       */
+    * Append one or multiple members to a set.
+    */
   def sadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -16205,8 +13722,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Append one or multiple members to a set.
-       */
+    * Append one or multiple members to a set.
+    */
   def sadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -16216,9 +13733,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Append one or multiple members to a set.
-       */
   def sadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -16229,9 +13743,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Append one or multiple members to a set.
-       */
   def sadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -16241,9 +13752,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Append one or multiple members to a set.
-       */
   def sadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -16252,9 +13760,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Append one or multiple members to a set.
-       */
   def sadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -16262,53 +13767,38 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Append one or multiple members to a set.
-       */
   def sadd(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Append one or multiple members to a set.
-       */
   def sadd(key: java.lang.String, arg1: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Append one or multiple members to a set.
-       */
   def sadd(key: java.lang.String, arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Append one or multiple members to a set.
-       */
   def sadd(key: java.lang.String, arg1: js.Array[java.lang.String], cb: Callback[scala.Double]): R = js.native
   /**
-       * Append one or multiple members to a set.
-       */
+    * Append one or multiple members to a set.
+    */
   def sadd(key: java.lang.String, args: (java.lang.String | Callback[scala.Double])*): R = js.native
   /**
-       * Synchronously save the dataset to disk.
-       */
+    * Synchronously save the dataset to disk.
+    */
   def save(): R = js.native
-  /**
-       * Synchronously save the dataset to disk.
-       */
   def save(cb: Callback[java.lang.String]): R = js.native
   /**
-       * Incrementally iterate the keys space.
-       */
+    * Incrementally iterate the keys space.
+    */
   def scan(arg1: java.lang.String): R = js.native
   /**
-       * Incrementally iterate the keys space.
-       */
+    * Incrementally iterate the keys space.
+    */
   def scan(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Incrementally iterate the keys space.
-       */
+    * Incrementally iterate the keys space.
+    */
   def scan(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Incrementally iterate the keys space.
-       */
+    * Incrementally iterate the keys space.
+    */
   def scan(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Incrementally iterate the keys space.
-       */
+    * Incrementally iterate the keys space.
+    */
   def scan(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -16317,8 +13807,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Incrementally iterate the keys space.
-       */
+    * Incrementally iterate the keys space.
+    */
   def scan(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -16327,9 +13817,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Incrementally iterate the keys space.
-       */
   def scan(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -16339,9 +13826,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate the keys space.
-       */
   def scan(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -16350,9 +13834,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate the keys space.
-       */
   def scan(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -16360,101 +13841,77 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate the keys space.
-       */
   def scan(
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate the keys space.
-       */
   def scan(
     arg1: java.lang.String,
     arg2: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate the keys space.
-       */
   def scan(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * Incrementally iterate the keys space.
-       */
   def scan(
     arg1: java.lang.String,
     arg2: js.Array[java.lang.String],
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate the keys space.
-       */
   def scan(arg1: java.lang.String, cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]): R = js.native
-  /**
-       * Incrementally iterate the keys space.
-       */
   def scan(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Incrementally iterate the keys space.
-       */
   def scan(
     arg1: js.Array[java.lang.String],
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
   /**
-       * Incrementally iterate the keys space.
-       */
+    * Incrementally iterate the keys space.
+    */
   def scan(args: (java.lang.String | (Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]))*): R = js.native
   /**
-       * Get the number of members in a set.
-       */
+    * Get the number of members in a set.
+    */
   def scard(key: java.lang.String): R = js.native
-  /**
-       * Get the number of members in a set.
-       */
   def scard(key: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * DEBUG - Set the debug mode for executed scripts.
-       * EXISTS - Check existence of scripts in the script cache.
-       * FLUSH - Remove all scripts from the script cache.
-       * KILL - Kill the script currently in execution.
-       * LOAD - Load the specified Lua script into the script cache.
-       */
+    * DEBUG - Set the debug mode for executed scripts.
+    * EXISTS - Check existence of scripts in the script cache.
+    * FLUSH - Remove all scripts from the script cache.
+    * KILL - Kill the script currently in execution.
+    * LOAD - Load the specified Lua script into the script cache.
+    */
   def script(arg1: java.lang.String): R = js.native
   /**
-       * DEBUG - Set the debug mode for executed scripts.
-       * EXISTS - Check existence of scripts in the script cache.
-       * FLUSH - Remove all scripts from the script cache.
-       * KILL - Kill the script currently in execution.
-       * LOAD - Load the specified Lua script into the script cache.
-       */
+    * DEBUG - Set the debug mode for executed scripts.
+    * EXISTS - Check existence of scripts in the script cache.
+    * FLUSH - Remove all scripts from the script cache.
+    * KILL - Kill the script currently in execution.
+    * LOAD - Load the specified Lua script into the script cache.
+    */
   def script(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * DEBUG - Set the debug mode for executed scripts.
-       * EXISTS - Check existence of scripts in the script cache.
-       * FLUSH - Remove all scripts from the script cache.
-       * KILL - Kill the script currently in execution.
-       * LOAD - Load the specified Lua script into the script cache.
-       */
+    * DEBUG - Set the debug mode for executed scripts.
+    * EXISTS - Check existence of scripts in the script cache.
+    * FLUSH - Remove all scripts from the script cache.
+    * KILL - Kill the script currently in execution.
+    * LOAD - Load the specified Lua script into the script cache.
+    */
   def script(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * DEBUG - Set the debug mode for executed scripts.
-       * EXISTS - Check existence of scripts in the script cache.
-       * FLUSH - Remove all scripts from the script cache.
-       * KILL - Kill the script currently in execution.
-       * LOAD - Load the specified Lua script into the script cache.
-       */
+    * DEBUG - Set the debug mode for executed scripts.
+    * EXISTS - Check existence of scripts in the script cache.
+    * FLUSH - Remove all scripts from the script cache.
+    * KILL - Kill the script currently in execution.
+    * LOAD - Load the specified Lua script into the script cache.
+    */
   def script(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * DEBUG - Set the debug mode for executed scripts.
-       * EXISTS - Check existence of scripts in the script cache.
-       * FLUSH - Remove all scripts from the script cache.
-       * KILL - Kill the script currently in execution.
-       * LOAD - Load the specified Lua script into the script cache.
-       */
+    * DEBUG - Set the debug mode for executed scripts.
+    * EXISTS - Check existence of scripts in the script cache.
+    * FLUSH - Remove all scripts from the script cache.
+    * KILL - Kill the script currently in execution.
+    * LOAD - Load the specified Lua script into the script cache.
+    */
   def script(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -16463,12 +13920,12 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * DEBUG - Set the debug mode for executed scripts.
-       * EXISTS - Check existence of scripts in the script cache.
-       * FLUSH - Remove all scripts from the script cache.
-       * KILL - Kill the script currently in execution.
-       * LOAD - Load the specified Lua script into the script cache.
-       */
+    * DEBUG - Set the debug mode for executed scripts.
+    * EXISTS - Check existence of scripts in the script cache.
+    * FLUSH - Remove all scripts from the script cache.
+    * KILL - Kill the script currently in execution.
+    * LOAD - Load the specified Lua script into the script cache.
+    */
   def script(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -16477,13 +13934,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * DEBUG - Set the debug mode for executed scripts.
-       * EXISTS - Check existence of scripts in the script cache.
-       * FLUSH - Remove all scripts from the script cache.
-       * KILL - Kill the script currently in execution.
-       * LOAD - Load the specified Lua script into the script cache.
-       */
   def script(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -16493,13 +13943,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * DEBUG - Set the debug mode for executed scripts.
-       * EXISTS - Check existence of scripts in the script cache.
-       * FLUSH - Remove all scripts from the script cache.
-       * KILL - Kill the script currently in execution.
-       * LOAD - Load the specified Lua script into the script cache.
-       */
   def script(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -16508,13 +13951,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * DEBUG - Set the debug mode for executed scripts.
-       * EXISTS - Check existence of scripts in the script cache.
-       * FLUSH - Remove all scripts from the script cache.
-       * KILL - Kill the script currently in execution.
-       * LOAD - Load the specified Lua script into the script cache.
-       */
   def script(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -16522,89 +13958,40 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[_]
   ): R = js.native
-  /**
-       * DEBUG - Set the debug mode for executed scripts.
-       * EXISTS - Check existence of scripts in the script cache.
-       * FLUSH - Remove all scripts from the script cache.
-       * KILL - Kill the script currently in execution.
-       * LOAD - Load the specified Lua script into the script cache.
-       */
   def script(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, cb: Callback[_]): R = js.native
-  /**
-       * DEBUG - Set the debug mode for executed scripts.
-       * EXISTS - Check existence of scripts in the script cache.
-       * FLUSH - Remove all scripts from the script cache.
-       * KILL - Kill the script currently in execution.
-       * LOAD - Load the specified Lua script into the script cache.
-       */
   def script(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[_]): R = js.native
-  /**
-       * DEBUG - Set the debug mode for executed scripts.
-       * EXISTS - Check existence of scripts in the script cache.
-       * FLUSH - Remove all scripts from the script cache.
-       * KILL - Kill the script currently in execution.
-       * LOAD - Load the specified Lua script into the script cache.
-       */
   def script(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * DEBUG - Set the debug mode for executed scripts.
-       * EXISTS - Check existence of scripts in the script cache.
-       * FLUSH - Remove all scripts from the script cache.
-       * KILL - Kill the script currently in execution.
-       * LOAD - Load the specified Lua script into the script cache.
-       */
   def script(arg1: java.lang.String, arg2: js.Array[java.lang.String], cb: Callback[_]): R = js.native
-  /**
-       * DEBUG - Set the debug mode for executed scripts.
-       * EXISTS - Check existence of scripts in the script cache.
-       * FLUSH - Remove all scripts from the script cache.
-       * KILL - Kill the script currently in execution.
-       * LOAD - Load the specified Lua script into the script cache.
-       */
   def script(arg1: java.lang.String, cb: Callback[_]): R = js.native
-  /**
-       * DEBUG - Set the debug mode for executed scripts.
-       * EXISTS - Check existence of scripts in the script cache.
-       * FLUSH - Remove all scripts from the script cache.
-       * KILL - Kill the script currently in execution.
-       * LOAD - Load the specified Lua script into the script cache.
-       */
   def script(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * DEBUG - Set the debug mode for executed scripts.
-       * EXISTS - Check existence of scripts in the script cache.
-       * FLUSH - Remove all scripts from the script cache.
-       * KILL - Kill the script currently in execution.
-       * LOAD - Load the specified Lua script into the script cache.
-       */
   def script(arg1: js.Array[java.lang.String], cb: Callback[_]): R = js.native
   /**
-       * DEBUG - Set the debug mode for executed scripts.
-       * EXISTS - Check existence of scripts in the script cache.
-       * FLUSH - Remove all scripts from the script cache.
-       * KILL - Kill the script currently in execution.
-       * LOAD - Load the specified Lua script into the script cache.
-       */
+    * DEBUG - Set the debug mode for executed scripts.
+    * EXISTS - Check existence of scripts in the script cache.
+    * FLUSH - Remove all scripts from the script cache.
+    * KILL - Kill the script currently in execution.
+    * LOAD - Load the specified Lua script into the script cache.
+    */
   def script(args: (java.lang.String | Callback[_])*): R = js.native
   /**
-       * Subtract multiple sets.
-       */
+    * Subtract multiple sets.
+    */
   def sdiff(arg1: java.lang.String): R = js.native
   /**
-       * Subtract multiple sets.
-       */
+    * Subtract multiple sets.
+    */
   def sdiff(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Subtract multiple sets.
-       */
+    * Subtract multiple sets.
+    */
   def sdiff(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Subtract multiple sets.
-       */
+    * Subtract multiple sets.
+    */
   def sdiff(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Subtract multiple sets.
-       */
+    * Subtract multiple sets.
+    */
   def sdiff(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -16613,8 +14000,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Subtract multiple sets.
-       */
+    * Subtract multiple sets.
+    */
   def sdiff(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -16623,9 +14010,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Subtract multiple sets.
-       */
   def sdiff(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -16635,9 +14019,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Subtract multiple sets.
-       */
   def sdiff(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -16646,9 +14027,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Subtract multiple sets.
-       */
   def sdiff(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -16656,62 +14034,41 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Subtract multiple sets.
-       */
   def sdiff(
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Subtract multiple sets.
-       */
   def sdiff(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[js.Array[java.lang.String]]): R = js.native
-  /**
-       * Subtract multiple sets.
-       */
   def sdiff(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * Subtract multiple sets.
-       */
   def sdiff(arg1: java.lang.String, arg2: js.Array[java.lang.String], cb: Callback[js.Array[java.lang.String]]): R = js.native
-  /**
-       * Subtract multiple sets.
-       */
   def sdiff(arg1: java.lang.String, cb: Callback[js.Array[java.lang.String]]): R = js.native
-  /**
-       * Subtract multiple sets.
-       */
   def sdiff(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Subtract multiple sets.
-       */
   def sdiff(arg1: js.Array[java.lang.String], cb: Callback[js.Array[java.lang.String]]): R = js.native
   /**
-       * Subtract multiple sets.
-       */
+    * Subtract multiple sets.
+    */
   def sdiff(args: (java.lang.String | Callback[js.Array[java.lang.String]])*): R = js.native
   /**
-       * Subtract multiple sets and store the resulting set in a key.
-       */
+    * Subtract multiple sets and store the resulting set in a key.
+    */
   def sdiffstore(args: (java.lang.String | Callback[scala.Double])*): R = js.native
   /**
-       * Subtract multiple sets and store the resulting set in a key.
-       */
+    * Subtract multiple sets and store the resulting set in a key.
+    */
   def sdiffstore(key: java.lang.String, arg1: java.lang.String): R = js.native
   /**
-       * Subtract multiple sets and store the resulting set in a key.
-       */
+    * Subtract multiple sets and store the resulting set in a key.
+    */
   def sdiffstore(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Subtract multiple sets and store the resulting set in a key.
-       */
+    * Subtract multiple sets and store the resulting set in a key.
+    */
   def sdiffstore(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Subtract multiple sets and store the resulting set in a key.
-       */
+    * Subtract multiple sets and store the resulting set in a key.
+    */
   def sdiffstore(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -16720,8 +14077,8 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String
   ): R = js.native
   /**
-       * Subtract multiple sets and store the resulting set in a key.
-       */
+    * Subtract multiple sets and store the resulting set in a key.
+    */
   def sdiffstore(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -16731,8 +14088,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Subtract multiple sets and store the resulting set in a key.
-       */
+    * Subtract multiple sets and store the resulting set in a key.
+    */
   def sdiffstore(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -16742,9 +14099,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Subtract multiple sets and store the resulting set in a key.
-       */
   def sdiffstore(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -16755,9 +14109,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Subtract multiple sets and store the resulting set in a key.
-       */
   def sdiffstore(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -16767,9 +14118,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Subtract multiple sets and store the resulting set in a key.
-       */
   def sdiffstore(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -16778,9 +14126,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Subtract multiple sets and store the resulting set in a key.
-       */
   def sdiffstore(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -16788,45 +14133,24 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Subtract multiple sets and store the resulting set in a key.
-       */
   def sdiffstore(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Subtract multiple sets and store the resulting set in a key.
-       */
   def sdiffstore(key: java.lang.String, arg1: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Subtract multiple sets and store the resulting set in a key.
-       */
   def sdiffstore(key: java.lang.String, arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Subtract multiple sets and store the resulting set in a key.
-       */
   def sdiffstore(key: java.lang.String, arg1: js.Array[java.lang.String], cb: Callback[scala.Double]): R = js.native
   /**
-       * Subtract multiple sets and store the resulting set in a key.
-       */
+    * Subtract multiple sets and store the resulting set in a key.
+    */
   def sdiffstore(key: java.lang.String, args: (java.lang.String | Callback[scala.Double])*): R = js.native
-  /**
-       * Change the selected database for the current connection.
-       */
   def select(index: java.lang.String): R = js.native
-  /**
-       * Change the selected database for the current connection.
-       */
   def select(index: java.lang.String, cb: Callback[java.lang.String]): R = js.native
   /**
-       * Change the selected database for the current connection.
-       */
+    * Change the selected database for the current connection.
+    */
   def select(index: scala.Double): R = js.native
-  /**
-       * Change the selected database for the current connection.
-       */
   def select(index: scala.Double, cb: Callback[java.lang.String]): R = js.native
   /**
-       * Set the string value of a key.
-       */
+    * Set the string value of a key.
+    */
   def set(key: java.lang.String, value: java.lang.String): R = js.native
   def set(key: java.lang.String, value: java.lang.String, flag: java.lang.String): R = js.native
   def set(key: java.lang.String, value: java.lang.String, mode: java.lang.String, duration: scala.Double): R = js.native
@@ -16837,9 +14161,6 @@ trait Commands[R] extends js.Object {
     duration: scala.Double,
     flag: java.lang.String
   ): R = js.native
-  /**
-       * Set the string value of a key.
-       */
   @JSName("set")
   def set_OK(key: java.lang.String, value: java.lang.String, cb: Callback[redisLib.redisLibStrings.OK]): R = js.native
   @JSName("set")
@@ -16867,20 +14188,14 @@ trait Commands[R] extends js.Object {
     cb: Callback[js.UndefOr[redisLib.redisLibStrings.OK]]
   ): R = js.native
   /**
-       * Sets or clears the bit at offset in the string value stored at key.
-       */
+    * Sets or clears the bit at offset in the string value stored at key.
+    */
   def setbit(key: java.lang.String, offset: scala.Double, value: java.lang.String): R = js.native
-  /**
-       * Sets or clears the bit at offset in the string value stored at key.
-       */
   def setbit(key: java.lang.String, offset: scala.Double, value: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Set the value and expiration of a key.
-       */
+    * Set the value and expiration of a key.
+    */
   def setex(key: java.lang.String, seconds: scala.Double, value: java.lang.String): R = js.native
-  /**
-       * Set the value and expiration of a key.
-       */
   def setex(
     key: java.lang.String,
     seconds: scala.Double,
@@ -16888,40 +14203,34 @@ trait Commands[R] extends js.Object {
     cb: Callback[java.lang.String]
   ): R = js.native
   /**
-       * Set the value of a key, only if the key does not exist.
-       */
+    * Set the value of a key, only if the key does not exist.
+    */
   def setnx(key: java.lang.String, value: java.lang.String): R = js.native
-  /**
-       * Set the value of a key, only if the key does not exist.
-       */
   def setnx(key: java.lang.String, value: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Overwrite part of a string at key starting at the specified offset.
-       */
+    * Overwrite part of a string at key starting at the specified offset.
+    */
   def setrange(key: java.lang.String, offset: scala.Double, value: java.lang.String): R = js.native
-  /**
-       * Overwrite part of a string at key starting at the specified offset.
-       */
   def setrange(key: java.lang.String, offset: scala.Double, value: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Synchronously save the dataset to disk and then shut down the server.
-       */
+    * Synchronously save the dataset to disk and then shut down the server.
+    */
   def shutdown(arg1: java.lang.String): R = js.native
   /**
-       * Synchronously save the dataset to disk and then shut down the server.
-       */
+    * Synchronously save the dataset to disk and then shut down the server.
+    */
   def shutdown(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Synchronously save the dataset to disk and then shut down the server.
-       */
+    * Synchronously save the dataset to disk and then shut down the server.
+    */
   def shutdown(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Synchronously save the dataset to disk and then shut down the server.
-       */
+    * Synchronously save the dataset to disk and then shut down the server.
+    */
   def shutdown(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Synchronously save the dataset to disk and then shut down the server.
-       */
+    * Synchronously save the dataset to disk and then shut down the server.
+    */
   def shutdown(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -16930,8 +14239,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Synchronously save the dataset to disk and then shut down the server.
-       */
+    * Synchronously save the dataset to disk and then shut down the server.
+    */
   def shutdown(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -16940,9 +14249,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Synchronously save the dataset to disk and then shut down the server.
-       */
   def shutdown(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -16952,9 +14258,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Synchronously save the dataset to disk and then shut down the server.
-       */
   def shutdown(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -16963,9 +14266,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Synchronously save the dataset to disk and then shut down the server.
-       */
   def shutdown(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -16973,62 +14273,41 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Synchronously save the dataset to disk and then shut down the server.
-       */
   def shutdown(
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Synchronously save the dataset to disk and then shut down the server.
-       */
   def shutdown(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[java.lang.String]): R = js.native
-  /**
-       * Synchronously save the dataset to disk and then shut down the server.
-       */
   def shutdown(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * Synchronously save the dataset to disk and then shut down the server.
-       */
   def shutdown(arg1: java.lang.String, arg2: js.Array[java.lang.String], cb: Callback[java.lang.String]): R = js.native
-  /**
-       * Synchronously save the dataset to disk and then shut down the server.
-       */
   def shutdown(arg1: java.lang.String, cb: Callback[java.lang.String]): R = js.native
-  /**
-       * Synchronously save the dataset to disk and then shut down the server.
-       */
   def shutdown(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Synchronously save the dataset to disk and then shut down the server.
-       */
   def shutdown(arg1: js.Array[java.lang.String], cb: Callback[java.lang.String]): R = js.native
   /**
-       * Synchronously save the dataset to disk and then shut down the server.
-       */
+    * Synchronously save the dataset to disk and then shut down the server.
+    */
   def shutdown(args: (java.lang.String | Callback[java.lang.String])*): R = js.native
   /**
-       * Intersect multiple sets.
-       */
+    * Intersect multiple sets.
+    */
   def sinter(args: (java.lang.String | Callback[js.Array[java.lang.String]])*): R = js.native
   /**
-       * Intersect multiple sets.
-       */
+    * Intersect multiple sets.
+    */
   def sinter(key: java.lang.String, arg1: java.lang.String): R = js.native
   /**
-       * Intersect multiple sets.
-       */
+    * Intersect multiple sets.
+    */
   def sinter(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Intersect multiple sets.
-       */
+    * Intersect multiple sets.
+    */
   def sinter(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Intersect multiple sets.
-       */
+    * Intersect multiple sets.
+    */
   def sinter(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -17037,8 +14316,8 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String
   ): R = js.native
   /**
-       * Intersect multiple sets.
-       */
+    * Intersect multiple sets.
+    */
   def sinter(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -17048,8 +14327,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Intersect multiple sets.
-       */
+    * Intersect multiple sets.
+    */
   def sinter(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -17059,9 +14338,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Intersect multiple sets.
-       */
   def sinter(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -17072,9 +14348,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Intersect multiple sets.
-       */
   def sinter(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -17084,9 +14357,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Intersect multiple sets.
-       */
   def sinter(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -17095,9 +14365,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Intersect multiple sets.
-       */
   def sinter(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -17105,50 +14372,38 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Intersect multiple sets.
-       */
   def sinter(
     key: java.lang.String,
     arg1: java.lang.String,
     arg2: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Intersect multiple sets.
-       */
   def sinter(key: java.lang.String, arg1: java.lang.String, cb: Callback[js.Array[java.lang.String]]): R = js.native
-  /**
-       * Intersect multiple sets.
-       */
   def sinter(key: java.lang.String, arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Intersect multiple sets.
-       */
   def sinter(key: java.lang.String, arg1: js.Array[java.lang.String], cb: Callback[js.Array[java.lang.String]]): R = js.native
   /**
-       * Intersect multiple sets.
-       */
+    * Intersect multiple sets.
+    */
   def sinter(key: java.lang.String, args: (java.lang.String | Callback[js.Array[java.lang.String]])*): R = js.native
   /**
-       * Intersect multiple sets and store the resulting set in a key.
-       */
+    * Intersect multiple sets and store the resulting set in a key.
+    */
   def sinterstore(arg1: java.lang.String): R = js.native
   /**
-       * Intersect multiple sets and store the resulting set in a key.
-       */
+    * Intersect multiple sets and store the resulting set in a key.
+    */
   def sinterstore(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Intersect multiple sets and store the resulting set in a key.
-       */
+    * Intersect multiple sets and store the resulting set in a key.
+    */
   def sinterstore(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Intersect multiple sets and store the resulting set in a key.
-       */
+    * Intersect multiple sets and store the resulting set in a key.
+    */
   def sinterstore(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Intersect multiple sets and store the resulting set in a key.
-       */
+    * Intersect multiple sets and store the resulting set in a key.
+    */
   def sinterstore(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17157,8 +14412,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Intersect multiple sets and store the resulting set in a key.
-       */
+    * Intersect multiple sets and store the resulting set in a key.
+    */
   def sinterstore(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17167,9 +14422,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Intersect multiple sets and store the resulting set in a key.
-       */
   def sinterstore(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17179,9 +14431,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sets and store the resulting set in a key.
-       */
   def sinterstore(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17190,9 +14439,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sets and store the resulting set in a key.
-       */
   def sinterstore(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17200,81 +14446,48 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sets and store the resulting set in a key.
-       */
   def sinterstore(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Intersect multiple sets and store the resulting set in a key.
-       */
   def sinterstore(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Intersect multiple sets and store the resulting set in a key.
-       */
   def sinterstore(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * Intersect multiple sets and store the resulting set in a key.
-       */
   def sinterstore(arg1: java.lang.String, arg2: js.Array[java.lang.String], cb: Callback[scala.Double]): R = js.native
-  /**
-       * Intersect multiple sets and store the resulting set in a key.
-       */
   def sinterstore(arg1: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Intersect multiple sets and store the resulting set in a key.
-       */
   def sinterstore(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Intersect multiple sets and store the resulting set in a key.
-       */
   def sinterstore(arg1: js.Array[java.lang.String], cb: Callback[scala.Double]): R = js.native
   /**
-       * Intersect multiple sets and store the resulting set in a key.
-       */
+    * Intersect multiple sets and store the resulting set in a key.
+    */
   def sinterstore(args: (java.lang.String | Callback[scala.Double])*): R = js.native
   /**
-       * Determine if a given value is a member of a set.
-       */
+    * Determine if a given value is a member of a set.
+    */
   def sismember(key: java.lang.String, member: java.lang.String): R = js.native
-  /**
-       * Determine if a given value is a member of a set.
-       */
   def sismember(key: java.lang.String, member: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Make the server a slave of another instance, or promote it as master.
-       */
+    * Make the server a slave of another instance, or promote it as master.
+    */
   def slaveof(host: java.lang.String, port: java.lang.String): R = js.native
-  /**
-       * Make the server a slave of another instance, or promote it as master.
-       */
   def slaveof(host: java.lang.String, port: java.lang.String, cb: Callback[java.lang.String]): R = js.native
-  /**
-       * Make the server a slave of another instance, or promote it as master.
-       */
   def slaveof(host: java.lang.String, port: scala.Double): R = js.native
-  /**
-       * Make the server a slave of another instance, or promote it as master.
-       */
   def slaveof(host: java.lang.String, port: scala.Double, cb: Callback[java.lang.String]): R = js.native
   /**
-       * Manages the Redis slow queries log.
-       */
+    * Manages the Redis slow queries log.
+    */
   def slowlog(arg1: java.lang.String): R = js.native
   /**
-       * Manages the Redis slow queries log.
-       */
+    * Manages the Redis slow queries log.
+    */
   def slowlog(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Manages the Redis slow queries log.
-       */
+    * Manages the Redis slow queries log.
+    */
   def slowlog(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Manages the Redis slow queries log.
-       */
+    * Manages the Redis slow queries log.
+    */
   def slowlog(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Manages the Redis slow queries log.
-       */
+    * Manages the Redis slow queries log.
+    */
   def slowlog(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17283,8 +14496,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Manages the Redis slow queries log.
-       */
+    * Manages the Redis slow queries log.
+    */
   def slowlog(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17293,9 +14506,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Manages the Redis slow queries log.
-       */
   def slowlog(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17307,9 +14517,6 @@ trait Commands[R] extends js.Object {
       js.Array[js.Tuple4[scala.Double, scala.Double, scala.Double, js.Array[java.lang.String]]]
     ]
   ): R = js.native
-  /**
-       * Manages the Redis slow queries log.
-       */
   def slowlog(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17320,9 +14527,6 @@ trait Commands[R] extends js.Object {
       js.Array[js.Tuple4[scala.Double, scala.Double, scala.Double, js.Array[java.lang.String]]]
     ]
   ): R = js.native
-  /**
-       * Manages the Redis slow queries log.
-       */
   def slowlog(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17332,9 +14536,6 @@ trait Commands[R] extends js.Object {
       js.Array[js.Tuple4[scala.Double, scala.Double, scala.Double, js.Array[java.lang.String]]]
     ]
   ): R = js.native
-  /**
-       * Manages the Redis slow queries log.
-       */
   def slowlog(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17343,9 +14544,6 @@ trait Commands[R] extends js.Object {
       js.Array[js.Tuple4[scala.Double, scala.Double, scala.Double, js.Array[java.lang.String]]]
     ]
   ): R = js.native
-  /**
-       * Manages the Redis slow queries log.
-       */
   def slowlog(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17353,13 +14551,7 @@ trait Commands[R] extends js.Object {
       js.Array[js.Tuple4[scala.Double, scala.Double, scala.Double, js.Array[java.lang.String]]]
     ]
   ): R = js.native
-  /**
-       * Manages the Redis slow queries log.
-       */
   def slowlog(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * Manages the Redis slow queries log.
-       */
   def slowlog(
     arg1: java.lang.String,
     arg2: js.Array[java.lang.String],
@@ -17367,22 +14559,13 @@ trait Commands[R] extends js.Object {
       js.Array[js.Tuple4[scala.Double, scala.Double, scala.Double, js.Array[java.lang.String]]]
     ]
   ): R = js.native
-  /**
-       * Manages the Redis slow queries log.
-       */
   def slowlog(
     arg1: java.lang.String,
     cb: Callback[
       js.Array[js.Tuple4[scala.Double, scala.Double, scala.Double, js.Array[java.lang.String]]]
     ]
   ): R = js.native
-  /**
-       * Manages the Redis slow queries log.
-       */
   def slowlog(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Manages the Redis slow queries log.
-       */
   def slowlog(
     arg1: js.Array[java.lang.String],
     cb: Callback[
@@ -17390,28 +14573,22 @@ trait Commands[R] extends js.Object {
     ]
   ): R = js.native
   /**
-       * Manages the Redis slow queries log.
-       */
+    * Manages the Redis slow queries log.
+    */
   def slowlog(
     args: (java.lang.String | (Callback[
       js.Array[js.Tuple4[scala.Double, scala.Double, scala.Double, js.Array[java.lang.String]]]
     ]))*
   ): R = js.native
   /**
-       * Get all the members in a set.
-       */
+    * Get all the members in a set.
+    */
   def smembers(key: java.lang.String): R = js.native
-  /**
-       * Get all the members in a set.
-       */
   def smembers(key: java.lang.String, cb: Callback[js.Array[java.lang.String]]): R = js.native
   /**
-       * Move a member from one set to another.
-       */
+    * Move a member from one set to another.
+    */
   def smove(source: java.lang.String, destination: java.lang.String, member: java.lang.String): R = js.native
-  /**
-       * Move a member from one set to another.
-       */
   def smove(
     source: java.lang.String,
     destination: java.lang.String,
@@ -17419,24 +14596,24 @@ trait Commands[R] extends js.Object {
     cb: Callback[scala.Double]
   ): R = js.native
   /**
-       * Sort the elements in a list, set or sorted set.
-       */
+    * Sort the elements in a list, set or sorted set.
+    */
   def sort(arg1: java.lang.String): R = js.native
   /**
-       * Sort the elements in a list, set or sorted set.
-       */
+    * Sort the elements in a list, set or sorted set.
+    */
   def sort(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Sort the elements in a list, set or sorted set.
-       */
+    * Sort the elements in a list, set or sorted set.
+    */
   def sort(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Sort the elements in a list, set or sorted set.
-       */
+    * Sort the elements in a list, set or sorted set.
+    */
   def sort(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Sort the elements in a list, set or sorted set.
-       */
+    * Sort the elements in a list, set or sorted set.
+    */
   def sort(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17445,8 +14622,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Sort the elements in a list, set or sorted set.
-       */
+    * Sort the elements in a list, set or sorted set.
+    */
   def sort(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17455,9 +14632,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Sort the elements in a list, set or sorted set.
-       */
   def sort(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17467,9 +14641,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Sort the elements in a list, set or sorted set.
-       */
   def sort(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17478,9 +14649,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Sort the elements in a list, set or sorted set.
-       */
   def sort(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17488,82 +14656,55 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Sort the elements in a list, set or sorted set.
-       */
   def sort(
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Sort the elements in a list, set or sorted set.
-       */
   def sort(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[js.Array[java.lang.String]]): R = js.native
-  /**
-       * Sort the elements in a list, set or sorted set.
-       */
   def sort(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * Sort the elements in a list, set or sorted set.
-       */
   def sort(arg1: java.lang.String, arg2: js.Array[java.lang.String], cb: Callback[js.Array[java.lang.String]]): R = js.native
-  /**
-       * Sort the elements in a list, set or sorted set.
-       */
   def sort(arg1: java.lang.String, cb: Callback[js.Array[java.lang.String]]): R = js.native
-  /**
-       * Sort the elements in a list, set or sorted set.
-       */
   def sort(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Sort the elements in a list, set or sorted set.
-       */
   def sort(arg1: js.Array[java.lang.String], cb: Callback[js.Array[java.lang.String]]): R = js.native
   /**
-       * Sort the elements in a list, set or sorted set.
-       */
+    * Sort the elements in a list, set or sorted set.
+    */
   def sort(args: (java.lang.String | Callback[js.Array[java.lang.String]])*): R = js.native
   /**
-       * Remove and return one or multiple random members from a set.
-       */
+    * Remove and return one or multiple random members from a set.
+    */
   def spop(key: java.lang.String): R = js.native
-  /**
-       * Remove and return one or multiple random members from a set.
-       */
   def spop(key: java.lang.String, cb: Callback[java.lang.String]): R = js.native
   def spop(key: java.lang.String, count: scala.Double): R = js.native
   def spop(key: java.lang.String, count: scala.Double, cb: Callback[js.Array[java.lang.String]]): R = js.native
   /**
-       * Get one or multiple random members from a set.
-       */
+    * Get one or multiple random members from a set.
+    */
   def srandmember(key: java.lang.String): R = js.native
-  /**
-       * Get one or multiple random members from a set.
-       */
   def srandmember(key: java.lang.String, cb: Callback[java.lang.String]): R = js.native
   def srandmember(key: java.lang.String, count: scala.Double): R = js.native
   def srandmember(key: java.lang.String, count: scala.Double, cb: Callback[js.Array[java.lang.String]]): R = js.native
   /**
-       * Remove one or more members from a set.
-       */
+    * Remove one or more members from a set.
+    */
   def srem(args: (java.lang.String | Callback[scala.Double])*): R = js.native
   /**
-       * Remove one or more members from a set.
-       */
+    * Remove one or more members from a set.
+    */
   def srem(key: java.lang.String, arg1: java.lang.String): R = js.native
   /**
-       * Remove one or more members from a set.
-       */
+    * Remove one or more members from a set.
+    */
   def srem(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Remove one or more members from a set.
-       */
+    * Remove one or more members from a set.
+    */
   def srem(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Remove one or more members from a set.
-       */
+    * Remove one or more members from a set.
+    */
   def srem(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -17572,8 +14713,8 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String
   ): R = js.native
   /**
-       * Remove one or more members from a set.
-       */
+    * Remove one or more members from a set.
+    */
   def srem(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -17583,8 +14724,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Remove one or more members from a set.
-       */
+    * Remove one or more members from a set.
+    */
   def srem(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -17594,9 +14735,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Remove one or more members from a set.
-       */
   def srem(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -17607,9 +14745,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Remove one or more members from a set.
-       */
   def srem(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -17619,9 +14754,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Remove one or more members from a set.
-       */
   def srem(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -17630,9 +14762,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Remove one or more members from a set.
-       */
   def srem(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -17640,45 +14769,33 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Remove one or more members from a set.
-       */
   def srem(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Remove one or more members from a set.
-       */
   def srem(key: java.lang.String, arg1: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Remove one or more members from a set.
-       */
   def srem(key: java.lang.String, arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Remove one or more members from a set.
-       */
   def srem(key: java.lang.String, arg1: js.Array[java.lang.String], cb: Callback[scala.Double]): R = js.native
   /**
-       * Remove one or more members from a set.
-       */
+    * Remove one or more members from a set.
+    */
   def srem(key: java.lang.String, args: (java.lang.String | Callback[scala.Double])*): R = js.native
   /**
-       * Incrementally iterate Set elements.
-       */
+    * Incrementally iterate Set elements.
+    */
   def sscan(args: (java.lang.String | (Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]))*): R = js.native
   /**
-       * Incrementally iterate Set elements.
-       */
+    * Incrementally iterate Set elements.
+    */
   def sscan(key: java.lang.String, arg1: java.lang.String): R = js.native
   /**
-       * Incrementally iterate Set elements.
-       */
+    * Incrementally iterate Set elements.
+    */
   def sscan(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Incrementally iterate Set elements.
-       */
+    * Incrementally iterate Set elements.
+    */
   def sscan(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Incrementally iterate Set elements.
-       */
+    * Incrementally iterate Set elements.
+    */
   def sscan(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -17687,8 +14804,8 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String
   ): R = js.native
   /**
-       * Incrementally iterate Set elements.
-       */
+    * Incrementally iterate Set elements.
+    */
   def sscan(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -17698,8 +14815,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Incrementally iterate Set elements.
-       */
+    * Incrementally iterate Set elements.
+    */
   def sscan(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -17709,9 +14826,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Incrementally iterate Set elements.
-       */
   def sscan(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -17722,9 +14836,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate Set elements.
-       */
   def sscan(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -17734,9 +14845,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate Set elements.
-       */
   def sscan(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -17745,9 +14853,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate Set elements.
-       */
   def sscan(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -17755,69 +14860,54 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate Set elements.
-       */
   def sscan(
     key: java.lang.String,
     arg1: java.lang.String,
     arg2: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate Set elements.
-       */
   def sscan(
     key: java.lang.String,
     arg1: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate Set elements.
-       */
   def sscan(key: java.lang.String, arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Incrementally iterate Set elements.
-       */
   def sscan(
     key: java.lang.String,
     arg1: js.Array[java.lang.String],
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
   /**
-       * Incrementally iterate Set elements.
-       */
+    * Incrementally iterate Set elements.
+    */
   def sscan(
     key: java.lang.String,
     args: (java.lang.String | (Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]))*
   ): R = js.native
   /**
-       * Get the length of the value stored in a key.
-       */
+    * Get the length of the value stored in a key.
+    */
   def strlen(key: java.lang.String): R = js.native
-  /**
-       * Get the length of the value stored in a key.
-       */
   def strlen(key: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Listen for messages published to the given channels.
-       */
+    * Listen for messages published to the given channels.
+    */
   def subscribe(arg1: java.lang.String): R = js.native
   /**
-       * Listen for messages published to the given channels.
-       */
+    * Listen for messages published to the given channels.
+    */
   def subscribe(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Listen for messages published to the given channels.
-       */
+    * Listen for messages published to the given channels.
+    */
   def subscribe(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Listen for messages published to the given channels.
-       */
+    * Listen for messages published to the given channels.
+    */
   def subscribe(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Listen for messages published to the given channels.
-       */
+    * Listen for messages published to the given channels.
+    */
   def subscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17826,8 +14916,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Listen for messages published to the given channels.
-       */
+    * Listen for messages published to the given channels.
+    */
   def subscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17836,9 +14926,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Listen for messages published to the given channels.
-       */
   def subscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17848,9 +14935,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Listen for messages published to the given channels.
-       */
   def subscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17859,9 +14943,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Listen for messages published to the given channels.
-       */
   def subscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17869,54 +14950,39 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Listen for messages published to the given channels.
-       */
   def subscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Listen for messages published to the given channels.
-       */
   def subscribe(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[java.lang.String]): R = js.native
-  /**
-       * Listen for messages published to the given channels.
-       */
   def subscribe(arg1: java.lang.String, cb: Callback[java.lang.String]): R = js.native
-  /**
-       * Listen for messages published to the given channels.
-       */
   def subscribe(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Listen for messages published to the given channels.
-       */
   def subscribe(arg1: js.Array[java.lang.String], cb: Callback[java.lang.String]): R = js.native
   /**
-       * Listen for messages published to the given channels.
-       */
+    * Listen for messages published to the given channels.
+    */
   def subscribe(args: (java.lang.String | Callback[java.lang.String])*): R = js.native
   /**
-       * Add multiple sets.
-       */
+    * Add multiple sets.
+    */
   def sunion(arg1: java.lang.String): R = js.native
   /**
-       * Add multiple sets.
-       */
+    * Add multiple sets.
+    */
   def sunion(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Add multiple sets.
-       */
+    * Add multiple sets.
+    */
   def sunion(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Add multiple sets.
-       */
+    * Add multiple sets.
+    */
   def sunion(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Add multiple sets.
-       */
+    * Add multiple sets.
+    */
   def sunion(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17925,8 +14991,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Add multiple sets.
-       */
+    * Add multiple sets.
+    */
   def sunion(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17935,9 +15001,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Add multiple sets.
-       */
   def sunion(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17947,9 +15010,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Add multiple sets.
-       */
   def sunion(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17958,9 +15018,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Add multiple sets.
-       */
   def sunion(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -17968,62 +15025,41 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Add multiple sets.
-       */
   def sunion(
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: java.lang.String,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Add multiple sets.
-       */
   def sunion(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[js.Array[java.lang.String]]): R = js.native
-  /**
-       * Add multiple sets.
-       */
   def sunion(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * Add multiple sets.
-       */
   def sunion(arg1: java.lang.String, arg2: js.Array[java.lang.String], cb: Callback[js.Array[java.lang.String]]): R = js.native
-  /**
-       * Add multiple sets.
-       */
   def sunion(arg1: java.lang.String, cb: Callback[js.Array[java.lang.String]]): R = js.native
-  /**
-       * Add multiple sets.
-       */
   def sunion(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Add multiple sets.
-       */
   def sunion(arg1: js.Array[java.lang.String], cb: Callback[js.Array[java.lang.String]]): R = js.native
   /**
-       * Add multiple sets.
-       */
+    * Add multiple sets.
+    */
   def sunion(args: (java.lang.String | Callback[js.Array[java.lang.String]])*): R = js.native
   /**
-       * Add multiple sets and store the resulting set in a key.
-       */
+    * Add multiple sets and store the resulting set in a key.
+    */
   def sunionstore(arg1: java.lang.String): R = js.native
   /**
-       * Add multiple sets and store the resulting set in a key.
-       */
+    * Add multiple sets and store the resulting set in a key.
+    */
   def sunionstore(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Add multiple sets and store the resulting set in a key.
-       */
+    * Add multiple sets and store the resulting set in a key.
+    */
   def sunionstore(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Add multiple sets and store the resulting set in a key.
-       */
+    * Add multiple sets and store the resulting set in a key.
+    */
   def sunionstore(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Add multiple sets and store the resulting set in a key.
-       */
+    * Add multiple sets and store the resulting set in a key.
+    */
   def sunionstore(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -18032,8 +15068,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Add multiple sets and store the resulting set in a key.
-       */
+    * Add multiple sets and store the resulting set in a key.
+    */
   def sunionstore(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -18042,9 +15078,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Add multiple sets and store the resulting set in a key.
-       */
   def sunionstore(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -18054,9 +15087,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sets and store the resulting set in a key.
-       */
   def sunionstore(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -18065,9 +15095,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sets and store the resulting set in a key.
-       */
   def sunionstore(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -18075,89 +15102,56 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sets and store the resulting set in a key.
-       */
   def sunionstore(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add multiple sets and store the resulting set in a key.
-       */
   def sunionstore(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add multiple sets and store the resulting set in a key.
-       */
   def sunionstore(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * Add multiple sets and store the resulting set in a key.
-       */
   def sunionstore(arg1: java.lang.String, arg2: js.Array[java.lang.String], cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add multiple sets and store the resulting set in a key.
-       */
   def sunionstore(arg1: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add multiple sets and store the resulting set in a key.
-       */
   def sunionstore(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Add multiple sets and store the resulting set in a key.
-       */
   def sunionstore(arg1: js.Array[java.lang.String], cb: Callback[scala.Double]): R = js.native
   /**
-       * Add multiple sets and store the resulting set in a key.
-       */
+    * Add multiple sets and store the resulting set in a key.
+    */
   def sunionstore(args: (java.lang.String | Callback[scala.Double])*): R = js.native
   /**
-       * Internal command used for replication.
-       */
+    * Internal command used for replication.
+    */
   def sync(): R = js.native
-  /**
-       * Internal command used for replication.
-       */
   def sync(cb: Callback[js.UndefOr[scala.Nothing]]): R = js.native
   /**
-       * Return the current server time.
-       */
+    * Return the current server time.
+    */
   def time(): R = js.native
-  /**
-       * Return the current server time.
-       */
   def time(cb: Callback[js.Tuple2[java.lang.String, java.lang.String]]): R = js.native
   /**
-       * Get the time to live for a key.
-       */
+    * Get the time to live for a key.
+    */
   def ttl(key: java.lang.String): R = js.native
-  /**
-       * Get the time to live for a key.
-       */
   def ttl(key: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Determine the type stored at key.
-       */
+    * Determine the type stored at key.
+    */
   def `type`(key: java.lang.String): R = js.native
-  /**
-       * Determine the type stored at key.
-       */
   def `type`(key: java.lang.String, cb: Callback[java.lang.String]): R = js.native
   /**
-       * Stop listening for messages posted to the given channels.
-       */
+    * Stop listening for messages posted to the given channels.
+    */
   def unsubscribe(arg1: java.lang.String): R = js.native
   /**
-       * Stop listening for messages posted to the given channels.
-       */
+    * Stop listening for messages posted to the given channels.
+    */
   def unsubscribe(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Stop listening for messages posted to the given channels.
-       */
+    * Stop listening for messages posted to the given channels.
+    */
   def unsubscribe(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Stop listening for messages posted to the given channels.
-       */
+    * Stop listening for messages posted to the given channels.
+    */
   def unsubscribe(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Stop listening for messages posted to the given channels.
-       */
+    * Stop listening for messages posted to the given channels.
+    */
   def unsubscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -18166,8 +15160,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Stop listening for messages posted to the given channels.
-       */
+    * Stop listening for messages posted to the given channels.
+    */
   def unsubscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -18176,9 +15170,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Stop listening for messages posted to the given channels.
-       */
   def unsubscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -18188,9 +15179,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Stop listening for messages posted to the given channels.
-       */
   def unsubscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -18199,9 +15187,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Stop listening for messages posted to the given channels.
-       */
   def unsubscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -18209,71 +15194,50 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Stop listening for messages posted to the given channels.
-       */
   def unsubscribe(
     arg1: java.lang.String,
     arg2: java.lang.String,
     arg3: java.lang.String,
     cb: Callback[java.lang.String]
   ): R = js.native
-  /**
-       * Stop listening for messages posted to the given channels.
-       */
   def unsubscribe(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[java.lang.String]): R = js.native
-  /**
-       * Stop listening for messages posted to the given channels.
-       */
   def unsubscribe(arg1: java.lang.String, cb: Callback[java.lang.String]): R = js.native
-  /**
-       * Stop listening for messages posted to the given channels.
-       */
   def unsubscribe(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Stop listening for messages posted to the given channels.
-       */
   def unsubscribe(arg1: js.Array[java.lang.String], cb: Callback[java.lang.String]): R = js.native
   /**
-       * Stop listening for messages posted to the given channels.
-       */
+    * Stop listening for messages posted to the given channels.
+    */
   def unsubscribe(args: (java.lang.String | Callback[java.lang.String])*): R = js.native
   /**
-       * Forget about all watched keys.
-       */
+    * Forget about all watched keys.
+    */
   def unwatch(): R = js.native
-  /**
-       * Forget about all watched keys.
-       */
   @JSName("unwatch")
   def unwatch_OK(cb: Callback[redisLib.redisLibStrings.OK]): R = js.native
   /**
-       * Wait for the synchronous replication of all the write commands sent in the context of the current connection.
-       */
+    * Wait for the synchronous replication of all the write commands sent in the context of the current connection.
+    */
   def wait(numslaves: scala.Double, timeout: scala.Double): R = js.native
-  /**
-       * Wait for the synchronous replication of all the write commands sent in the context of the current connection.
-       */
   def wait(numslaves: scala.Double, timeout: scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Watch the given keys to determine execution of the MULTI/EXEC block.
-       */
+    * Watch the given keys to determine execution of the MULTI/EXEC block.
+    */
   def watch(arg1: java.lang.String): R = js.native
   /**
-       * Watch the given keys to determine execution of the MULTI/EXEC block.
-       */
+    * Watch the given keys to determine execution of the MULTI/EXEC block.
+    */
   def watch(arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Watch the given keys to determine execution of the MULTI/EXEC block.
-       */
+    * Watch the given keys to determine execution of the MULTI/EXEC block.
+    */
   def watch(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Watch the given keys to determine execution of the MULTI/EXEC block.
-       */
+    * Watch the given keys to determine execution of the MULTI/EXEC block.
+    */
   def watch(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
   /**
-       * Watch the given keys to determine execution of the MULTI/EXEC block.
-       */
+    * Watch the given keys to determine execution of the MULTI/EXEC block.
+    */
   def watch(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -18282,8 +15246,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Watch the given keys to determine execution of the MULTI/EXEC block.
-       */
+    * Watch the given keys to determine execution of the MULTI/EXEC block.
+    */
   def watch(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -18292,17 +15256,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Watch the given keys to determine execution of the MULTI/EXEC block.
-       */
   def watch(arg1: java.lang.String, arg2: js.Array[java.lang.String]): R = js.native
-  /**
-       * Watch the given keys to determine execution of the MULTI/EXEC block.
-       */
   def watch(arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Watch the given keys to determine execution of the MULTI/EXEC block.
-       */
   @JSName("watch")
   def watch_OK(
     arg1: java.lang.String,
@@ -18313,9 +15268,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Watch the given keys to determine execution of the MULTI/EXEC block.
-       */
   @JSName("watch")
   def watch_OK(
     arg1: java.lang.String,
@@ -18325,9 +15277,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Watch the given keys to determine execution of the MULTI/EXEC block.
-       */
   @JSName("watch")
   def watch_OK(
     arg1: java.lang.String,
@@ -18336,9 +15285,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Watch the given keys to determine execution of the MULTI/EXEC block.
-       */
   @JSName("watch")
   def watch_OK(
     arg1: java.lang.String,
@@ -18346,46 +15292,34 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Watch the given keys to determine execution of the MULTI/EXEC block.
-       */
   @JSName("watch")
   def watch_OK(arg1: java.lang.String, arg2: java.lang.String, cb: Callback[redisLib.redisLibStrings.OK]): R = js.native
-  /**
-       * Watch the given keys to determine execution of the MULTI/EXEC block.
-       */
   @JSName("watch")
   def watch_OK(
     arg1: java.lang.String,
     arg2: js.Array[java.lang.String],
     cb: Callback[redisLib.redisLibStrings.OK]
   ): R = js.native
-  /**
-       * Watch the given keys to determine execution of the MULTI/EXEC block.
-       */
   @JSName("watch")
   def watch_OK(arg1: java.lang.String, cb: Callback[redisLib.redisLibStrings.OK]): R = js.native
-  /**
-       * Watch the given keys to determine execution of the MULTI/EXEC block.
-       */
   @JSName("watch")
   def watch_OK(arg1: js.Array[java.lang.String], cb: Callback[redisLib.redisLibStrings.OK]): R = js.native
   /**
-       * Watch the given keys to determine execution of the MULTI/EXEC block.
-       */
+    * Watch the given keys to determine execution of the MULTI/EXEC block.
+    */
   @JSName("watch")
   def watch_OK(args: (java.lang.String | Callback[redisLib.redisLibStrings.OK])*): R = js.native
   /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
+    * Add one or more members to a sorted set, or update its score if it already exists.
+    */
   def zadd(args: (java.lang.String | scala.Double | Callback[scala.Double])*): R = js.native
   /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
+    * Add one or more members to a sorted set, or update its score if it already exists.
+    */
   def zadd(key: java.lang.String, arg1: java.lang.String | scala.Double): R = js.native
   /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
+    * Add one or more members to a sorted set, or update its score if it already exists.
+    */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -18395,8 +15329,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double
   ): R = js.native
   /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
+    * Add one or more members to a sorted set, or update its score if it already exists.
+    */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -18406,9 +15340,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double,
     arg6: java.lang.String | scala.Double
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -18419,9 +15350,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String | scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String | scala.Double,
@@ -18431,21 +15359,18 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(key: java.lang.String, arg1: java.lang.String | scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
+    * Add one or more members to a sorted set, or update its score if it already exists.
+    */
   def zadd(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
+    * Add one or more members to a sorted set, or update its score if it already exists.
+    */
   def zadd(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
+    * Add one or more members to a sorted set, or update its score if it already exists.
+    */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -18453,9 +15378,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -18464,9 +15386,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -18474,9 +15393,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -18485,9 +15401,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -18495,13 +15408,7 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -18509,9 +15416,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -18520,9 +15424,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -18530,9 +15431,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -18541,9 +15439,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -18551,21 +15446,9 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -18573,9 +15456,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -18584,9 +15464,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -18594,9 +15471,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -18605,9 +15479,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -18615,13 +15486,7 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -18629,9 +15494,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -18640,9 +15502,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -18650,9 +15509,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -18661,9 +15517,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -18671,29 +15524,11 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(key: java.lang.String, arg1: java.lang.String, arg2: scala.Double, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(key: java.lang.String, arg1: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(key: java.lang.String, arg1: js.Array[java.lang.String | scala.Double], cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -18701,9 +15536,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -18712,9 +15544,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -18722,9 +15551,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -18733,9 +15559,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -18743,13 +15566,7 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -18757,9 +15574,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -18768,9 +15582,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -18778,9 +15589,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -18789,9 +15597,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -18799,21 +15604,9 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(key: java.lang.String, arg1: scala.Double, arg2: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(key: java.lang.String, arg1: scala.Double, arg2: scala.Double): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(key: java.lang.String, arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -18821,9 +15614,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -18832,9 +15622,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -18842,9 +15629,6 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -18853,9 +15637,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -18863,13 +15644,7 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(key: java.lang.String, arg1: scala.Double, arg2: scala.Double, arg3: scala.Double): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -18877,9 +15652,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: java.lang.String
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -18888,9 +15660,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -18898,9 +15667,6 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     arg4: scala.Double
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -18909,9 +15675,6 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(
     key: java.lang.String,
     arg1: scala.Double,
@@ -18919,61 +15682,31 @@ trait Commands[R] extends js.Object {
     arg3: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
   def zadd(key: java.lang.String, arg1: scala.Double, arg2: scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Add one or more members to a sorted set, or update its score if it already exists.
-       */
+    * Add one or more members to a sorted set, or update its score if it already exists.
+    */
   def zadd(key: java.lang.String, args: (java.lang.String | scala.Double | Callback[scala.Double])*): R = js.native
   /**
-       * Get the number of members in a sorted set.
-       */
+    * Get the number of members in a sorted set.
+    */
   def zcard(key: java.lang.String): R = js.native
-  /**
-       * Get the number of members in a sorted set.
-       */
   def zcard(key: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Count the members in a sorted set with scores between the given values.
-       */
   def zcount(key: java.lang.String, min: java.lang.String, max: java.lang.String): R = js.native
-  /**
-       * Count the members in a sorted set with scores between the given values.
-       */
   def zcount(key: java.lang.String, min: java.lang.String, max: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Count the members in a sorted set with scores between the given values.
-       */
   def zcount(key: java.lang.String, min: java.lang.String, max: scala.Double): R = js.native
-  /**
-       * Count the members in a sorted set with scores between the given values.
-       */
   def zcount(key: java.lang.String, min: java.lang.String, max: scala.Double, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Count the members in a sorted set with scores between the given values.
-       */
   def zcount(key: java.lang.String, min: scala.Double, max: java.lang.String): R = js.native
-  /**
-       * Count the members in a sorted set with scores between the given values.
-       */
   def zcount(key: java.lang.String, min: scala.Double, max: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Count the members in a sorted set with scores between the given values.
-       */
+    * Count the members in a sorted set with scores between the given values.
+    */
   def zcount(key: java.lang.String, min: scala.Double, max: scala.Double): R = js.native
-  /**
-       * Count the members in a sorted set with scores between the given values.
-       */
   def zcount(key: java.lang.String, min: scala.Double, max: scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Increment the score of a member in a sorted set.
-       */
+    * Increment the score of a member in a sorted set.
+    */
   def zincrby(key: java.lang.String, increment: scala.Double, member: java.lang.String): R = js.native
-  /**
-       * Increment the score of a member in a sorted set.
-       */
   def zincrby(
     key: java.lang.String,
     increment: scala.Double,
@@ -18981,12 +15714,12 @@ trait Commands[R] extends js.Object {
     cb: Callback[java.lang.String]
   ): R = js.native
   /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
+    * Intersect multiple sorted sets and store the resulting sorted set in a new key.
+    */
   def zinterstore(arg1: java.lang.String | scala.Double): R = js.native
   /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
+    * Intersect multiple sorted sets and store the resulting sorted set in a new key.
+    */
   def zinterstore(
     arg1: java.lang.String | scala.Double,
     arg2: java.lang.String | scala.Double,
@@ -18995,8 +15728,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double
   ): R = js.native
   /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
+    * Intersect multiple sorted sets and store the resulting sorted set in a new key.
+    */
   def zinterstore(
     arg1: java.lang.String | scala.Double,
     arg2: java.lang.String | scala.Double,
@@ -19005,9 +15738,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double,
     arg6: java.lang.String | scala.Double
   ): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(
     arg1: java.lang.String | scala.Double,
     arg2: java.lang.String | scala.Double,
@@ -19017,9 +15747,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String | scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(
     arg1: java.lang.String | scala.Double,
     arg2: java.lang.String | scala.Double,
@@ -19028,29 +15755,20 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: java.lang.String | scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
+    * Intersect multiple sorted sets and store the resulting sorted set in a new key.
+    */
   def zinterstore(arg1: java.lang.String, arg2: java.lang.String | scala.Double): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: java.lang.String, arg2: java.lang.String | scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
+    * Intersect multiple sorted sets and store the resulting sorted set in a new key.
+    */
   def zinterstore(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
+    * Intersect multiple sorted sets and store the resulting sorted set in a new key.
+    */
   def zinterstore(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -19058,13 +15776,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: scala.Double): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -19072,21 +15784,9 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double, arg4: java.lang.String): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -19094,13 +15794,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double, arg4: scala.Double): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -19108,33 +15802,15 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: java.lang.String, arg2: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(
     arg1: java.lang.String,
     arg2: js.Array[java.lang.String | scala.Double],
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String, arg4: java.lang.String): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(
     arg1: java.lang.String,
     arg2: scala.Double,
@@ -19142,13 +15818,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String, arg4: scala.Double): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(
     arg1: java.lang.String,
     arg2: scala.Double,
@@ -19156,21 +15826,9 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double, arg4: java.lang.String): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(
     arg1: java.lang.String,
     arg2: scala.Double,
@@ -19178,13 +15836,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double, arg4: scala.Double): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(
     arg1: java.lang.String,
     arg2: scala.Double,
@@ -19192,37 +15844,13 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: js.Array[java.lang.String | scala.Double], cb: Callback[scala.Double]): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: scala.Double, arg2: java.lang.String | scala.Double): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: scala.Double, arg2: java.lang.String | scala.Double, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(
     arg1: scala.Double,
     arg2: java.lang.String,
@@ -19230,13 +15858,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String, arg4: scala.Double): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(
     arg1: scala.Double,
     arg2: java.lang.String,
@@ -19244,21 +15866,9 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double, arg4: java.lang.String): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(
     arg1: scala.Double,
     arg2: java.lang.String,
@@ -19266,13 +15876,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double, arg4: scala.Double): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(
     arg1: scala.Double,
     arg2: java.lang.String,
@@ -19280,29 +15884,11 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: scala.Double, arg2: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: scala.Double, arg2: js.Array[java.lang.String | scala.Double], cb: Callback[scala.Double]): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String, arg4: java.lang.String): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(
     arg1: scala.Double,
     arg2: scala.Double,
@@ -19310,13 +15896,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String, arg4: scala.Double): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(
     arg1: scala.Double,
     arg2: scala.Double,
@@ -19324,21 +15904,9 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: scala.Double, arg2: scala.Double, arg3: scala.Double): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: scala.Double, arg2: scala.Double, arg3: scala.Double, arg4: java.lang.String): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(
     arg1: scala.Double,
     arg2: scala.Double,
@@ -19346,13 +15914,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: scala.Double, arg2: scala.Double, arg3: scala.Double, arg4: scala.Double): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(
     arg1: scala.Double,
     arg2: scala.Double,
@@ -19360,29 +15922,20 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zinterstore(arg1: scala.Double, arg2: scala.Double, arg3: scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Intersect multiple sorted sets and store the resulting sorted set in a new key.
-       */
+    * Intersect multiple sorted sets and store the resulting sorted set in a new key.
+    */
   def zinterstore(args: (java.lang.String | scala.Double | Callback[scala.Double])*): R = js.native
   /**
-       * Count the number of members in a sorted set between a given lexicographic range.
-       */
+    * Count the number of members in a sorted set between a given lexicographic range.
+    */
   def zlexcount(key: java.lang.String, min: java.lang.String, max: java.lang.String): R = js.native
-  /**
-       * Count the number of members in a sorted set between a given lexicographic range.
-       */
   def zlexcount(key: java.lang.String, min: java.lang.String, max: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Return a range of members in a sorted set, by index.
-       */
+    * Return a range of members in a sorted set, by index.
+    */
   def zrange(key: java.lang.String, start: scala.Double, stop: scala.Double): R = js.native
-  /**
-       * Return a range of members in a sorted set, by index.
-       */
   def zrange(
     key: java.lang.String,
     start: scala.Double,
@@ -19398,12 +15951,9 @@ trait Commands[R] extends js.Object {
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
   /**
-       * Return a range of members in a sorted set, by lexicographical range.
-       */
+    * Return a range of members in a sorted set, by lexicographical range.
+    */
   def zrangebylex(key: java.lang.String, min: java.lang.String, max: java.lang.String): R = js.native
-  /**
-       * Return a range of members in a sorted set, by lexicographical range.
-       */
   def zrangebylex(
     key: java.lang.String,
     min: java.lang.String,
@@ -19427,13 +15977,7 @@ trait Commands[R] extends js.Object {
     count: scala.Double,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Return a range of members in a sorted set, by score.
-       */
   def zrangebyscore(key: java.lang.String, min: java.lang.String, max: java.lang.String): R = js.native
-  /**
-       * Return a range of members in a sorted set, by score.
-       */
   def zrangebyscore(
     key: java.lang.String,
     min: java.lang.String,
@@ -19484,13 +16028,7 @@ trait Commands[R] extends js.Object {
     count: scala.Double,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Return a range of members in a sorted set, by score.
-       */
   def zrangebyscore(key: java.lang.String, min: java.lang.String, max: scala.Double): R = js.native
-  /**
-       * Return a range of members in a sorted set, by score.
-       */
   def zrangebyscore(
     key: java.lang.String,
     min: java.lang.String,
@@ -19541,13 +16079,7 @@ trait Commands[R] extends js.Object {
     count: scala.Double,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Return a range of members in a sorted set, by score.
-       */
   def zrangebyscore(key: java.lang.String, min: scala.Double, max: java.lang.String): R = js.native
-  /**
-       * Return a range of members in a sorted set, by score.
-       */
   def zrangebyscore(
     key: java.lang.String,
     min: scala.Double,
@@ -19599,12 +16131,9 @@ trait Commands[R] extends js.Object {
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
   /**
-       * Return a range of members in a sorted set, by score.
-       */
+    * Return a range of members in a sorted set, by score.
+    */
   def zrangebyscore(key: java.lang.String, min: scala.Double, max: scala.Double): R = js.native
-  /**
-       * Return a range of members in a sorted set, by score.
-       */
   def zrangebyscore(
     key: java.lang.String,
     min: scala.Double,
@@ -19656,32 +16185,29 @@ trait Commands[R] extends js.Object {
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
   /**
-       * Determine the index of a member in a sorted set.
-       */
+    * Determine the index of a member in a sorted set.
+    */
   def zrank(key: java.lang.String, member: java.lang.String): R = js.native
-  /**
-       * Determine the index of a member in a sorted set.
-       */
   def zrank(key: java.lang.String, member: java.lang.String, cb: Callback[js.UndefOr[scala.Double]]): R = js.native
   /**
-       * Remove one or more members from a sorted set.
-       */
+    * Remove one or more members from a sorted set.
+    */
   def zrem(args: (java.lang.String | Callback[scala.Double])*): R = js.native
   /**
-       * Remove one or more members from a sorted set.
-       */
+    * Remove one or more members from a sorted set.
+    */
   def zrem(key: java.lang.String, arg1: java.lang.String): R = js.native
   /**
-       * Remove one or more members from a sorted set.
-       */
+    * Remove one or more members from a sorted set.
+    */
   def zrem(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Remove one or more members from a sorted set.
-       */
+    * Remove one or more members from a sorted set.
+    */
   def zrem(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Remove one or more members from a sorted set.
-       */
+    * Remove one or more members from a sorted set.
+    */
   def zrem(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -19690,8 +16216,8 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String
   ): R = js.native
   /**
-       * Remove one or more members from a sorted set.
-       */
+    * Remove one or more members from a sorted set.
+    */
   def zrem(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -19701,8 +16227,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Remove one or more members from a sorted set.
-       */
+    * Remove one or more members from a sorted set.
+    */
   def zrem(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -19712,9 +16238,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Remove one or more members from a sorted set.
-       */
   def zrem(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -19725,9 +16248,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Remove one or more members from a sorted set.
-       */
   def zrem(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -19737,9 +16257,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Remove one or more members from a sorted set.
-       */
   def zrem(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -19748,9 +16265,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Remove one or more members from a sorted set.
-       */
   def zrem(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -19758,81 +16272,39 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Remove one or more members from a sorted set.
-       */
   def zrem(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Remove one or more members from a sorted set.
-       */
   def zrem(key: java.lang.String, arg1: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Remove one or more members from a sorted set.
-       */
   def zrem(key: java.lang.String, arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Remove one or more members from a sorted set.
-       */
   def zrem(key: java.lang.String, arg1: js.Array[java.lang.String], cb: Callback[scala.Double]): R = js.native
   /**
-       * Remove one or more members from a sorted set.
-       */
+    * Remove one or more members from a sorted set.
+    */
   def zrem(key: java.lang.String, args: (java.lang.String | Callback[scala.Double])*): R = js.native
   /**
-       * Remove all members in a sorted set between the given lexicographical range.
-       */
+    * Remove all members in a sorted set between the given lexicographical range.
+    */
   def zremrangebylex(key: java.lang.String, min: java.lang.String, max: java.lang.String): R = js.native
-  /**
-       * Remove all members in a sorted set between the given lexicographical range.
-       */
   def zremrangebylex(key: java.lang.String, min: java.lang.String, max: java.lang.String, cb: Callback[scala.Double]): R = js.native
   /**
-       * Remove all members in a sorted set within the given indexes.
-       */
+    * Remove all members in a sorted set within the given indexes.
+    */
   def zremrangebyrank(key: java.lang.String, start: scala.Double, stop: scala.Double): R = js.native
-  /**
-       * Remove all members in a sorted set within the given indexes.
-       */
   def zremrangebyrank(key: java.lang.String, start: scala.Double, stop: scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Remove all members in a sorted set within the given indexes.
-       */
+    * Remove all members in a sorted set within the given indexes.
+    */
   def zremrangebyscore(key: java.lang.String, min: java.lang.String, max: java.lang.String): R = js.native
-  /**
-       * Remove all members in a sorted set within the given indexes.
-       */
   def zremrangebyscore(key: java.lang.String, min: java.lang.String, max: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Remove all members in a sorted set within the given indexes.
-       */
   def zremrangebyscore(key: java.lang.String, min: java.lang.String, max: scala.Double): R = js.native
-  /**
-       * Remove all members in a sorted set within the given indexes.
-       */
   def zremrangebyscore(key: java.lang.String, min: java.lang.String, max: scala.Double, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Remove all members in a sorted set within the given indexes.
-       */
   def zremrangebyscore(key: java.lang.String, min: scala.Double, max: java.lang.String): R = js.native
-  /**
-       * Remove all members in a sorted set within the given indexes.
-       */
   def zremrangebyscore(key: java.lang.String, min: scala.Double, max: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Remove all members in a sorted set within the given indexes.
-       */
   def zremrangebyscore(key: java.lang.String, min: scala.Double, max: scala.Double): R = js.native
-  /**
-       * Remove all members in a sorted set within the given indexes.
-       */
   def zremrangebyscore(key: java.lang.String, min: scala.Double, max: scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Return a range of members in a sorted set, by index, with scores ordered from high to low.
-       */
+    * Return a range of members in a sorted set, by index, with scores ordered from high to low.
+    */
   def zrevrange(key: java.lang.String, start: scala.Double, stop: scala.Double): R = js.native
-  /**
-       * Return a range of members in a sorted set, by index, with scores ordered from high to low.
-       */
   def zrevrange(
     key: java.lang.String,
     start: scala.Double,
@@ -19848,12 +16320,9 @@ trait Commands[R] extends js.Object {
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
   /**
-       * Return a range of members in a sorted set, by lexicographical range, ordered from higher to lower strings.
-       */
+    * Return a range of members in a sorted set, by lexicographical range, ordered from higher to lower strings.
+    */
   def zrevrangebylex(key: java.lang.String, min: java.lang.String, max: java.lang.String): R = js.native
-  /**
-       * Return a range of members in a sorted set, by lexicographical range, ordered from higher to lower strings.
-       */
   def zrevrangebylex(
     key: java.lang.String,
     min: java.lang.String,
@@ -19877,13 +16346,7 @@ trait Commands[R] extends js.Object {
     count: scala.Double,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Return a range of members in a sorted set, by score, with scores ordered from high to low.
-       */
   def zrevrangebyscore(key: java.lang.String, min: java.lang.String, max: java.lang.String): R = js.native
-  /**
-       * Return a range of members in a sorted set, by score, with scores ordered from high to low.
-       */
   def zrevrangebyscore(
     key: java.lang.String,
     min: java.lang.String,
@@ -19934,13 +16397,7 @@ trait Commands[R] extends js.Object {
     count: scala.Double,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Return a range of members in a sorted set, by score, with scores ordered from high to low.
-       */
   def zrevrangebyscore(key: java.lang.String, min: java.lang.String, max: scala.Double): R = js.native
-  /**
-       * Return a range of members in a sorted set, by score, with scores ordered from high to low.
-       */
   def zrevrangebyscore(
     key: java.lang.String,
     min: java.lang.String,
@@ -19991,13 +16448,7 @@ trait Commands[R] extends js.Object {
     count: scala.Double,
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
-  /**
-       * Return a range of members in a sorted set, by score, with scores ordered from high to low.
-       */
   def zrevrangebyscore(key: java.lang.String, min: scala.Double, max: java.lang.String): R = js.native
-  /**
-       * Return a range of members in a sorted set, by score, with scores ordered from high to low.
-       */
   def zrevrangebyscore(
     key: java.lang.String,
     min: scala.Double,
@@ -20049,12 +16500,9 @@ trait Commands[R] extends js.Object {
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
   /**
-       * Return a range of members in a sorted set, by score, with scores ordered from high to low.
-       */
+    * Return a range of members in a sorted set, by score, with scores ordered from high to low.
+    */
   def zrevrangebyscore(key: java.lang.String, min: scala.Double, max: scala.Double): R = js.native
-  /**
-       * Return a range of members in a sorted set, by score, with scores ordered from high to low.
-       */
   def zrevrangebyscore(
     key: java.lang.String,
     min: scala.Double,
@@ -20106,32 +16554,29 @@ trait Commands[R] extends js.Object {
     cb: Callback[js.Array[java.lang.String]]
   ): R = js.native
   /**
-       * Determine the index of a member in a sorted set, with scores ordered from high to low.
-       */
+    * Determine the index of a member in a sorted set, with scores ordered from high to low.
+    */
   def zrevrank(key: java.lang.String, member: java.lang.String): R = js.native
-  /**
-       * Determine the index of a member in a sorted set, with scores ordered from high to low.
-       */
   def zrevrank(key: java.lang.String, member: java.lang.String, cb: Callback[js.UndefOr[scala.Double]]): R = js.native
   /**
-       * Incrementally iterate sorted sets elements and associated scores.
-       */
+    * Incrementally iterate sorted sets elements and associated scores.
+    */
   def zscan(args: (java.lang.String | (Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]))*): R = js.native
   /**
-       * Incrementally iterate sorted sets elements and associated scores.
-       */
+    * Incrementally iterate sorted sets elements and associated scores.
+    */
   def zscan(key: java.lang.String, arg1: java.lang.String): R = js.native
   /**
-       * Incrementally iterate sorted sets elements and associated scores.
-       */
+    * Incrementally iterate sorted sets elements and associated scores.
+    */
   def zscan(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): R = js.native
   /**
-       * Incrementally iterate sorted sets elements and associated scores.
-       */
+    * Incrementally iterate sorted sets elements and associated scores.
+    */
   def zscan(key: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Incrementally iterate sorted sets elements and associated scores.
-       */
+    * Incrementally iterate sorted sets elements and associated scores.
+    */
   def zscan(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -20140,8 +16585,8 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String
   ): R = js.native
   /**
-       * Incrementally iterate sorted sets elements and associated scores.
-       */
+    * Incrementally iterate sorted sets elements and associated scores.
+    */
   def zscan(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -20151,8 +16596,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String
   ): R = js.native
   /**
-       * Incrementally iterate sorted sets elements and associated scores.
-       */
+    * Incrementally iterate sorted sets elements and associated scores.
+    */
   def zscan(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -20162,9 +16607,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     arg6: java.lang.String
   ): R = js.native
-  /**
-       * Incrementally iterate sorted sets elements and associated scores.
-       */
   def zscan(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -20175,9 +16617,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate sorted sets elements and associated scores.
-       */
   def zscan(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -20187,9 +16626,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate sorted sets elements and associated scores.
-       */
   def zscan(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -20198,9 +16634,6 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate sorted sets elements and associated scores.
-       */
   def zscan(
     key: java.lang.String,
     arg1: java.lang.String,
@@ -20208,57 +16641,42 @@ trait Commands[R] extends js.Object {
     arg3: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate sorted sets elements and associated scores.
-       */
   def zscan(
     key: java.lang.String,
     arg1: java.lang.String,
     arg2: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate sorted sets elements and associated scores.
-       */
   def zscan(
     key: java.lang.String,
     arg1: java.lang.String,
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
-  /**
-       * Incrementally iterate sorted sets elements and associated scores.
-       */
   def zscan(key: java.lang.String, arg1: js.Array[java.lang.String]): R = js.native
-  /**
-       * Incrementally iterate sorted sets elements and associated scores.
-       */
   def zscan(
     key: java.lang.String,
     arg1: js.Array[java.lang.String],
     cb: Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]
   ): R = js.native
   /**
-       * Incrementally iterate sorted sets elements and associated scores.
-       */
+    * Incrementally iterate sorted sets elements and associated scores.
+    */
   def zscan(
     key: java.lang.String,
     args: (java.lang.String | (Callback[js.Tuple2[java.lang.String, js.Array[java.lang.String]]]))*
   ): R = js.native
   /**
-       * Get the score associated with the given member in a sorted set.
-       */
+    * Get the score associated with the given member in a sorted set.
+    */
   def zscore(key: java.lang.String, member: java.lang.String): R = js.native
-  /**
-       * Get the score associated with the given member in a sorted set.
-       */
   def zscore(key: java.lang.String, member: java.lang.String, cb: Callback[java.lang.String]): R = js.native
   /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
+    * Add multiple sorted sets and store the resulting sorted set in a new key.
+    */
   def zunionstore(arg1: java.lang.String | scala.Double): R = js.native
   /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
+    * Add multiple sorted sets and store the resulting sorted set in a new key.
+    */
   def zunionstore(
     arg1: java.lang.String | scala.Double,
     arg2: java.lang.String | scala.Double,
@@ -20267,8 +16685,8 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double
   ): R = js.native
   /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
+    * Add multiple sorted sets and store the resulting sorted set in a new key.
+    */
   def zunionstore(
     arg1: java.lang.String | scala.Double,
     arg2: java.lang.String | scala.Double,
@@ -20277,9 +16695,6 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double,
     arg6: java.lang.String | scala.Double
   ): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(
     arg1: java.lang.String | scala.Double,
     arg2: java.lang.String | scala.Double,
@@ -20289,9 +16704,6 @@ trait Commands[R] extends js.Object {
     arg6: java.lang.String | scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(
     arg1: java.lang.String | scala.Double,
     arg2: java.lang.String | scala.Double,
@@ -20300,29 +16712,20 @@ trait Commands[R] extends js.Object {
     arg5: java.lang.String | scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: java.lang.String | scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
+    * Add multiple sorted sets and store the resulting sorted set in a new key.
+    */
   def zunionstore(arg1: java.lang.String, arg2: java.lang.String | scala.Double): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: java.lang.String, arg2: java.lang.String | scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
+    * Add multiple sorted sets and store the resulting sorted set in a new key.
+    */
   def zunionstore(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): R = js.native
   /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
+    * Add multiple sorted sets and store the resulting sorted set in a new key.
+    */
   def zunionstore(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -20330,13 +16733,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: scala.Double): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -20344,21 +16741,9 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double, arg4: java.lang.String): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -20366,13 +16751,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double, arg4: scala.Double): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(
     arg1: java.lang.String,
     arg2: java.lang.String,
@@ -20380,33 +16759,15 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: java.lang.String, arg2: java.lang.String, arg3: scala.Double, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: java.lang.String, arg2: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(
     arg1: java.lang.String,
     arg2: js.Array[java.lang.String | scala.Double],
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String, arg4: java.lang.String): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(
     arg1: java.lang.String,
     arg2: scala.Double,
@@ -20414,13 +16775,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String, arg4: scala.Double): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(
     arg1: java.lang.String,
     arg2: scala.Double,
@@ -20428,21 +16783,9 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: java.lang.String, arg2: scala.Double, arg3: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double, arg4: java.lang.String): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(
     arg1: java.lang.String,
     arg2: scala.Double,
@@ -20450,13 +16793,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double, arg4: scala.Double): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(
     arg1: java.lang.String,
     arg2: scala.Double,
@@ -20464,37 +16801,13 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: java.lang.String, arg2: scala.Double, arg3: scala.Double, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: js.Array[java.lang.String | scala.Double], cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: scala.Double, arg2: java.lang.String | scala.Double): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: scala.Double, arg2: java.lang.String | scala.Double, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(
     arg1: scala.Double,
     arg2: java.lang.String,
@@ -20502,13 +16815,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String, arg4: scala.Double): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(
     arg1: scala.Double,
     arg2: java.lang.String,
@@ -20516,21 +16823,9 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: scala.Double, arg2: java.lang.String, arg3: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double, arg4: java.lang.String): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(
     arg1: scala.Double,
     arg2: java.lang.String,
@@ -20538,13 +16833,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double, arg4: scala.Double): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(
     arg1: scala.Double,
     arg2: java.lang.String,
@@ -20552,29 +16841,11 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: scala.Double, arg2: java.lang.String, arg3: scala.Double, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: scala.Double, arg2: js.Array[java.lang.String | scala.Double]): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: scala.Double, arg2: js.Array[java.lang.String | scala.Double], cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String, arg4: java.lang.String): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(
     arg1: scala.Double,
     arg2: scala.Double,
@@ -20582,13 +16853,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String, arg4: scala.Double): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(
     arg1: scala.Double,
     arg2: scala.Double,
@@ -20596,21 +16861,9 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: scala.Double, arg2: scala.Double, arg3: java.lang.String, cb: Callback[scala.Double]): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: scala.Double, arg2: scala.Double, arg3: scala.Double): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: scala.Double, arg2: scala.Double, arg3: scala.Double, arg4: java.lang.String): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(
     arg1: scala.Double,
     arg2: scala.Double,
@@ -20618,13 +16871,7 @@ trait Commands[R] extends js.Object {
     arg4: java.lang.String,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: scala.Double, arg2: scala.Double, arg3: scala.Double, arg4: scala.Double): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(
     arg1: scala.Double,
     arg2: scala.Double,
@@ -20632,13 +16879,10 @@ trait Commands[R] extends js.Object {
     arg4: scala.Double,
     cb: Callback[scala.Double]
   ): R = js.native
-  /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
   def zunionstore(arg1: scala.Double, arg2: scala.Double, arg3: scala.Double, cb: Callback[scala.Double]): R = js.native
   /**
-       * Add multiple sorted sets and store the resulting sorted set in a new key.
-       */
+    * Add multiple sorted sets and store the resulting sorted set in a new key.
+    */
   def zunionstore(args: (java.lang.String | scala.Double | Callback[scala.Double])*): R = js.native
 }
 

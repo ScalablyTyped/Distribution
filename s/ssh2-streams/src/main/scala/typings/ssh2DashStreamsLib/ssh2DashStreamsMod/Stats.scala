@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Stats extends Attributes {
   def isBlockDevice(): scala.Boolean
   def isCharacterDevice(): scala.Boolean

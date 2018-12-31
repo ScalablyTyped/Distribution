@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CookieOptions extends js.Object {
   var domain: js.UndefOr[java.lang.String] = js.undefined
   var encode: js.UndefOr[js.Function1[/* input */ java.lang.String, java.lang.String]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DropDownCancelClickedEventUIParam extends js.Object {
   /**
   	 * Gets the column key for which Cancel button is clicked.

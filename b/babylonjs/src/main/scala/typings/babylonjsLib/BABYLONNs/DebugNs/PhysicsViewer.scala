@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Used to show the physics impostor around the specific mesh
-     */
+  * Used to show the physics impostor around the specific mesh
+  */
 @JSGlobal("BABYLON.Debug.PhysicsViewer")
 @js.native
 class PhysicsViewer protected () extends js.Object {
   /**
-           * Creates a new PhysicsViewer
-           * @param scene defines the hosting scene
-           */
+    * Creates a new PhysicsViewer
+    * @param scene defines the hosting scene
+    */
   def this(scene: babylonjsLib.BABYLONNs.Scene) = this()
   var _debugBoxMesh: js.Any = js.native
   var _debugMaterial: js.Any = js.native
@@ -39,14 +39,14 @@ class PhysicsViewer protected () extends js.Object {
   /** Releases all resources */
   def dispose(): scala.Unit = js.native
   /**
-           * Hides a specified physic impostor
-           * @param impostor defines the impostor to hide
-           */
+    * Hides a specified physic impostor
+    * @param impostor defines the impostor to hide
+    */
   def hideImpostor(impostor: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.PhysicsImpostor]): scala.Unit = js.native
   /**
-           * Renders a specified physic impostor
-           * @param impostor defines the impostor to render
-           */
+    * Renders a specified physic impostor
+    * @param impostor defines the impostor to render
+    */
   def showImpostor(impostor: babylonjsLib.BABYLONNs.PhysicsImpostor): scala.Unit = js.native
 }
 

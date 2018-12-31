@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlashLayer extends js.Object {
   var color: js.Any
   var frameCount: scala.Double

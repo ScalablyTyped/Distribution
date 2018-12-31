@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomPosition extends js.Object {
   var bottom: scala.Double | jqueryDashToastDashPluginLib.jqueryDashToastDashPluginLibStrings.auto
   var left: scala.Double | jqueryDashToastDashPluginLib.jqueryDashToastDashPluginLibStrings.auto

@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 sealed trait AttributeRequirementLevel extends js.Object
 
 /**
-     * Constant Enum: Requirement Level for {@link Attributes.Attribute.getRequiredLevel Attributes.Attribute.getRequiredLevel()} and
-     * {@link Attributes.Attribute.setRequiredLevel Attributes.Attribute.setRequiredLevel()}.
-     * @see {@link Xrm.Attributes.RequirementLevel}
-     */
+  * Constant Enum: Requirement Level for {@link Attributes.Attribute.getRequiredLevel Attributes.Attribute.getRequiredLevel()} and
+  * {@link Attributes.Attribute.setRequiredLevel Attributes.Attribute.setRequiredLevel()}.
+  * @see {@link Xrm.Attributes.RequirementLevel}
+  */
 @JSGlobal("XrmEnum.AttributeRequirementLevel")
 @js.native
 object AttributeRequirementLevel extends js.Object {

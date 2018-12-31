@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BindConfig extends js.Object {
   var binary: js.UndefOr[java.lang.String] = js.undefined
   var portal: js.UndefOr[java.lang.String] = js.undefined

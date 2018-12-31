@@ -5,27 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default 'active'
-                   */
+    * @default 'active'
+    */
   var active: java.lang.String
   /**
-                   * @default 'empty'
-                   */
+    * @default 'empty'
+    */
   var empty: java.lang.String
   /**
-                   * @default 'focus'
-                   */
+    * @default 'focus'
+    */
   var focus: java.lang.String
   /**
-                   * @default 'loading'
-                   */
+    * @default 'loading'
+    */
   var loading: java.lang.String
   /**
-                   * @default 'down'
-                   */
+    * @default 'down'
+    */
   var pressed: java.lang.String
 }
 

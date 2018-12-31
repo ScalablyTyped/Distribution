@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILineOptions extends IGridChartOptions {
   /** Define how null and undefined values are handled (see documentation). */
   var continuousLine: js.UndefOr[scala.Boolean] = js.undefined

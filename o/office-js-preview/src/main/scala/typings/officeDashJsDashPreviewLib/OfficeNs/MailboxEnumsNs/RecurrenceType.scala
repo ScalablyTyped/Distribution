@@ -9,49 +9,49 @@ import scala.scalajs.js.annotation._
 sealed trait RecurrenceType extends js.Object
 
 /**
-         * Specifies the type of recurrence.
-         * 
-         * [Api set: Mailbox 1.7]
-         *
-         * @remarks
-         * <table><tr><td>
-         * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
-         * </td><td>Compose or read</td></tr></table>
-         */
+  * Specifies the type of recurrence.
+  * 
+  * [Api set: Mailbox 1.7]
+  *
+  * @remarks
+  * <table><tr><td>
+  * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
+  * </td><td>Compose or read</td></tr></table>
+  */
 @JSGlobal("Office.MailboxEnums.RecurrenceType")
 @js.native
 object RecurrenceType extends js.Object {
   /**
-               * Daily.
-               */
+    * Daily.
+    */
   @js.native
   sealed trait Daily
     extends officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.RecurrenceType
   
   /**
-               * Monthly.
-               */
+    * Monthly.
+    */
   @js.native
   sealed trait Monthly
     extends officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.RecurrenceType
   
   /**
-               * Weekday.
-               */
+    * Weekday.
+    */
   @js.native
   sealed trait Weekday
     extends officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.RecurrenceType
   
   /**
-               * Weekly.
-               */
+    * Weekly.
+    */
   @js.native
   sealed trait Weekly
     extends officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.RecurrenceType
   
   /**
-               * Yearly.
-               */
+    * Yearly.
+    */
   @js.native
   sealed trait Yearly
     extends officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.RecurrenceType

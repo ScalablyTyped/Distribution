@@ -23,9 +23,9 @@ abstract class AudioRenderEffectsManager () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[AudioRenderEffectsManager, _]
   ): scala.Unit = js.native
   /**
-                   * Gets the list of audio effects on the device.
-                   * @return The list of audio effects.
-                   */
+    * Gets the list of audio effects on the device.
+    * @return The list of audio effects.
+    */
   def getAudioRenderEffects(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[AudioEffect] = js.native
   /** Occurs when audio process chain changes. */
   def onaudiorendereffectschanged(ev: js.Any with winrtDashUwpLib.WindowsNs.WinRTEvent[AudioRenderEffectsManager]): scala.Unit = js.native

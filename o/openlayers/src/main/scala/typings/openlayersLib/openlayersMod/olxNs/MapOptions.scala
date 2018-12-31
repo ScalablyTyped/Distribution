@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Object literal with config options for the map.
-     */
-
+  * Object literal with config options for the map.
+  */
 trait MapOptions extends js.Object {
   var controls: js.UndefOr[
     openlayersLib.openlayersMod.Collection[openlayersLib.openlayersMod.controlNs.Control] | js.Array[openlayersLib.openlayersMod.controlNs.Control]

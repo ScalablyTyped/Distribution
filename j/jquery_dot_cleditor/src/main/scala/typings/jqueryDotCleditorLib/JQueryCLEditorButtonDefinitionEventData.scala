@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JQueryCLEditorButtonDefinitionEventData extends js.Object {
   var button: stdLib.HTMLElement
   var buttonName: java.lang.String

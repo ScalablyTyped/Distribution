@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBodyOptions extends js.Object {
   var allowSleep: js.UndefOr[scala.Boolean] = js.undefined
   var angularDamping: js.UndefOr[scala.Double] = js.undefined

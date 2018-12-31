@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IncludeAll extends js.Object {
   var ignoreConstraints: scala.Double
   var includeAll: scala.Double

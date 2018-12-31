@@ -34,32 +34,32 @@ object commonDashTagsModMembers extends js.Object {
   def replaceResultTransformer(replaceWhat: java.lang.String, replaceWith: java.lang.String): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def replaceResultTransformer(
     replaceWhat: java.lang.String,
-    replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
+    replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def replaceResultTransformer(replaceWhat: stdLib.RegExp, replaceWith: java.lang.String): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def replaceResultTransformer(
     replaceWhat: stdLib.RegExp,
-    replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
+    replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def replaceStringTransformer(replaceWhat: java.lang.String, replaceWith: java.lang.String): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def replaceStringTransformer(
     replaceWhat: java.lang.String,
-    replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
+    replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def replaceStringTransformer(replaceWhat: stdLib.RegExp, replaceWith: java.lang.String): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def replaceStringTransformer(
     replaceWhat: stdLib.RegExp,
-    replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
+    replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def replaceSubstitutionTransformer(replaceWhat: java.lang.String, replaceWith: java.lang.String): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def replaceSubstitutionTransformer(
     replaceWhat: java.lang.String,
-    replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
+    replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def replaceSubstitutionTransformer(replaceWhat: stdLib.RegExp, replaceWith: java.lang.String): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def replaceSubstitutionTransformer(
     replaceWhat: stdLib.RegExp,
-    replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
+    replaceWith: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def splitStringTransformer(splitBy: java.lang.String): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def stripIndentTransformer(): TemplateTransformer[org.scalablytyped.runtime.StringDictionary[_]] = js.native

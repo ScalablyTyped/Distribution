@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContainersResource extends js.Object {
   var environments: EnvironmentsResource
   var version_headers: Version_headersResource

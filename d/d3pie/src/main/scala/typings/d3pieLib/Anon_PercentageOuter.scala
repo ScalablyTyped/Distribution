@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PercentageOuter extends js.Object {
   var formatter: js.UndefOr[js.Function1[/* context */ Anon_Section, java.lang.String]] = js.undefined
   var inner: js.UndefOr[d3pieLib.d3pieNs.ID3PieLabelsOptions] = js.undefined

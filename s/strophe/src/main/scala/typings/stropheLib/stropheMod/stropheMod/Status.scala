@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Constants: Connection Status Constants
-     *  Connection status constants for use by the connection handler
-     *  callback.
-     *
-     *  Status.ERROR - An error has occurred
-     *  Status.CONNECTING - The connection is currently being made
-     *  Status.CONNFAIL - The connection attempt failed
-     *  Status.AUTHENTICATING - The connection is authenticating
-     *  Status.AUTHFAIL - The authentication attempt failed
-     *  Status.CONNECTED - The connection has succeeded
-     *  Status.DISCONNECTED - The connection has been terminated
-     *  Status.DISCONNECTING - The connection is currently being terminated
-     *  Status.ATTACHED - The connection has been attached
-     */
+  *  Connection status constants for use by the connection handler
+  *  callback.
+  *
+  *  Status.ERROR - An error has occurred
+  *  Status.CONNECTING - The connection is currently being made
+  *  Status.CONNFAIL - The connection attempt failed
+  *  Status.AUTHENTICATING - The connection is authenticating
+  *  Status.AUTHFAIL - The authentication attempt failed
+  *  Status.CONNECTED - The connection has succeeded
+  *  Status.DISCONNECTED - The connection has been terminated
+  *  Status.DISCONNECTING - The connection is currently being terminated
+  *  Status.ATTACHED - The connection has been attached
+  */
 @JSImport("Strophe", "Status")
 @js.native
 object Status extends js.Object {

@@ -22,9 +22,9 @@ abstract class RemoveAppointmentOperation () extends js.Object {
   /** Informs the activating app that the operation was completed successfully. */
   def reportCompleted(): scala.Unit = js.native
   /**
-                       * Informs the activating app that the operation couldn't be completed because of a provider error.
-                       * @param value A string that contains info about the error.
-                       */
+    * Informs the activating app that the operation couldn't be completed because of a provider error.
+    * @param value A string that contains info about the error.
+    */
   def reportError(value: java.lang.String): scala.Unit = js.native
 }
 

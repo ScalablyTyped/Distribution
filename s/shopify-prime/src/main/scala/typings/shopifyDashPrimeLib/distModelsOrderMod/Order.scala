@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Order
   extends shopifyDashPrimeLib.distModelsBaseMod.ShopifyObject {
   var billing_address: js.UndefOr[shopifyDashPrimeLib.distModelsAddressMod.Address] = js.undefined

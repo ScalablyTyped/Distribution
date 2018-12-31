@@ -5,24 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(reactDashMdLib.libInksInjectInkMod.InjectedInkProps because Would inherit conflicting mutable fields List(disabled, onBlur, onDragStart, onMouseLeave, onDrag, onTouchStart, onKeyDown, style, onDragLeave, onDrop, onDragExit, onDragOver, onDragEnd, onMouseUp, onTouchEnd, onKeyUp, onMouseMove, onMouseOver, onTouchCancel, className, onMouseOut, onFocus, onDragEnter, onTouchMove, onMouseEnter, onMouseDown, onClick))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(reactDashMdLib.libInksInjectInkMod.InjectedInkProps because Would inherit conflicting mutable fields List(className, disabled, onBlur, onClick, onDrag, onDragEnd, onDragEnter, onDragExit, onDragLeave, onDragOver, onDragStart, onDrop, onFocus, onKeyDown, onKeyUp, onMouseDown, onMouseEnter, onMouseLeave, onMouseMove, onMouseOut, onMouseOver, onMouseUp, onTouchCancel, onTouchEnd, onTouchMove, onTouchStart, style))*/
 trait MenuButtonProps
   extends reactDashMdLib.libMenusDropdownMenuMod.SharedDropdownMenuProps
      with reactDashMdLib.libButtonsButtonMod.SharedButtonProps
      with reactDashMdLib.libTooltipsInjectTooltipMod.InjectedTooltipProps {
   /**
-     * @deprecated
-     * */
+    * @deprecated
+    * */
   var buttonChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * @deprecated
-     * */
+    * @deprecated
+    * */
   var defaultOpen: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * @deprecated
-     * */
+    * @deprecated
+    * */
   var isOpen: js.UndefOr[scala.Boolean] = js.undefined
   var onMenuBlur: js.UndefOr[
     js.Function1[/* event */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLElement], scala.Unit]
@@ -79,8 +78,8 @@ trait MenuButtonProps
     ]
   ] = js.undefined
   /**
-     * @deprecated
-     * */
+    * @deprecated
+    * */
   var onMenuToggle: js.UndefOr[js.Function] = js.undefined
   var onMenuTouchCancel: js.UndefOr[
     js.Function1[/* event */ reactLib.reactMod.ReactNs.TouchEvent[reactLib.HTMLElement], scala.Unit]

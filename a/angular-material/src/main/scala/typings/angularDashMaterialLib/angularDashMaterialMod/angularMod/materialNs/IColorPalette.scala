@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IColorPalette extends js.Object {
   var amber: IPalette
   var blue: IPalette

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Interface for UserSettings.dateFormattingInfo response
-     */
-
+  * Interface for UserSettings.dateFormattingInfo response
+  */
 trait DateFormattingInfo extends js.Object {
   var abbreviatedDayNames: js.Array[java.lang.String]
   var abbreviatedMonthGenitiveNames: js.Array[java.lang.String]

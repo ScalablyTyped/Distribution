@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PassOptions
   extends consulLib.consulMod.ConsulNs.CommonOptions {
   var id: java.lang.String

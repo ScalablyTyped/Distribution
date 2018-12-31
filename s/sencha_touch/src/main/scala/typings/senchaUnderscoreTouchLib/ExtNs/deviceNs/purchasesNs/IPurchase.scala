@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPurchase
   extends senchaUnderscoreTouchLib.ExtNs.dataNs.IModel {
   /** [Method] Attempts to mark this purchase as complete

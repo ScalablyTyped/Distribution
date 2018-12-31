@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ZoneOperationsResource extends js.Object {
   /** Deletes the specified zone-specific Operations resource. */
   def delete(request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintQuotaUserKeyUserIpOauthtokenOperation): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

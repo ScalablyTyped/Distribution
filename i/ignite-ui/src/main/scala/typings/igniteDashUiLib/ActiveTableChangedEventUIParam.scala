@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActiveTableChangedEventUIParam extends js.Object {
   /**
   	 * Gets the current active [Table](ig.excel.WorksheetTable).

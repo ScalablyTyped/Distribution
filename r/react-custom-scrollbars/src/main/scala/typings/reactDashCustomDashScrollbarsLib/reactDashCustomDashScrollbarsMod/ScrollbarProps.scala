@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScrollbarProps
   extends reactLib.reactMod.ReactNs.HTMLProps[Scrollbars] {
   var autoHeight: js.UndefOr[scala.Boolean] = js.undefined

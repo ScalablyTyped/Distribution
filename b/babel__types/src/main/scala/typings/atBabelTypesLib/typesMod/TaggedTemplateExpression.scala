@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TaggedTemplateExpression extends BaseNode {
   var quasi: TemplateLiteral
   var tag: Expression

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // ________________________________________________________________________
-
 trait SjclExceptions extends js.Object {
   var bug: SjclExceptionFactory
   var corrupt: SjclExceptionFactory

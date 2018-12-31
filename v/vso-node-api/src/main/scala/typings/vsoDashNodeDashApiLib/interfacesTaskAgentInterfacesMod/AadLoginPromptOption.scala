@@ -12,29 +12,29 @@ sealed trait AadLoginPromptOption extends js.Object
 @js.native
 object AadLoginPromptOption extends js.Object {
   /**
-       * Force the user to login again.  Ignore current authentication state and force the user to authenticate again. This option should be used instead of Login.
-       */
+    * Force the user to login again.  Ignore current authentication state and force the user to authenticate again. This option should be used instead of Login.
+    */
   @js.native
   sealed trait FreshLogin
     extends vsoDashNodeDashApiLib.interfacesTaskAgentInterfacesMod.AadLoginPromptOption
   
   /**
-       * Force the user to login again.
-       */
+    * Force the user to login again.
+    */
   @js.native
   sealed trait Login
     extends vsoDashNodeDashApiLib.interfacesTaskAgentInterfacesMod.AadLoginPromptOption
   
   /**
-       * Do not provide a prompt option
-       */
+    * Do not provide a prompt option
+    */
   @js.native
   sealed trait NoOption
     extends vsoDashNodeDashApiLib.interfacesTaskAgentInterfacesMod.AadLoginPromptOption
   
   /**
-       * Force the user to select which account they are logging in with instead of automatically picking the user up from the session state. NOTE: This does not work for switching bewtween the variants of a dual-homed user.
-       */
+    * Force the user to select which account they are logging in with instead of automatically picking the user up from the session state. NOTE: This does not work for switching bewtween the variants of a dual-homed user.
+    */
   @js.native
   sealed trait SelectAccount
     extends vsoDashNodeDashApiLib.interfacesTaskAgentInterfacesMod.AadLoginPromptOption

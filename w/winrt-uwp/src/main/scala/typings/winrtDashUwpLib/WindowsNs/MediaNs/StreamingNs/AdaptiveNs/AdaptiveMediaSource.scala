@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class AdaptiveMediaSource () extends js.Object {
   var advancedSettings: js.Any = js.native
-   /* unmapped type *//** Gets a value indicating if the content streamed by the media source contains only audio. */
+   /* unmapped type */ /** Gets a value indicating if the content streamed by the media source contains only audio. */
   var audioOnlyPlayback: scala.Boolean = js.native
   /** Gets the available adaptive bit rates of the adaptive streaming manifest that is the source of the adaptive streaming object. */
   var availableBitrates: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[scala.Double] = js.native
@@ -126,12 +126,12 @@ abstract class AdaptiveMediaSource () extends js.Object {
 @js.native
 object AdaptiveMediaSource extends js.Object {
   /**
-                       * Asynchronously creates a AdaptiveMediaSource object from the provided input stream.
-                       * @param stream The input stream from which the AdaptiveMediaSource is created.
-                       * @param uri The URI of the source. This is used by the AdaptiveMediaSource to resolve relative URIs.
-                       * @param contentType A string that identifies the MIME content type of the source. This can be an Http Live Streaming (HLS) or a Dynamic Adaptive Streaming over HTTP (DASH) content type.
-                       * @return Returns an AdaptiveMediaSourceCreationResult upon successful completion.
-                       */
+    * Asynchronously creates a AdaptiveMediaSource object from the provided input stream.
+    * @param stream The input stream from which the AdaptiveMediaSource is created.
+    * @param uri The URI of the source. This is used by the AdaptiveMediaSource to resolve relative URIs.
+    * @param contentType A string that identifies the MIME content type of the source. This can be an Http Live Streaming (HLS) or a Dynamic Adaptive Streaming over HTTP (DASH) content type.
+    * @return Returns an AdaptiveMediaSourceCreationResult upon successful completion.
+    */
   def createFromStreamAsync(
     stream: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IInputStream,
     uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri,
@@ -140,13 +140,13 @@ object AdaptiveMediaSource extends js.Object {
     winrtDashUwpLib.WindowsNs.MediaNs.StreamingNs.AdaptiveNs.AdaptiveMediaSourceCreationResult
   ] = js.native
   /**
-                       * Asynchronously creates a AdaptiveMediaSource object from the provided input stream.
-                       * @param stream The input stream from which the AdaptiveMediaSource is created.
-                       * @param uri The URI of the source. This is used by the AdaptiveMediaSource to resolve relative URIs.
-                       * @param contentType A string that identifies the MIME content type of the source. This can be an Http Live Streaming (HLS) or a Dynamic Adaptive Streaming over HTTP (DASH) content type.
-                       * @param httpClient The HttpClient instance that the AdaptiveMediaSource should use for downloading resources. This allows you to specify custom HTTP headers for the requests.
-                       * @return Returns an AdaptiveMediaSourceCreationResult upon successful completion.
-                       */
+    * Asynchronously creates a AdaptiveMediaSource object from the provided input stream.
+    * @param stream The input stream from which the AdaptiveMediaSource is created.
+    * @param uri The URI of the source. This is used by the AdaptiveMediaSource to resolve relative URIs.
+    * @param contentType A string that identifies the MIME content type of the source. This can be an Http Live Streaming (HLS) or a Dynamic Adaptive Streaming over HTTP (DASH) content type.
+    * @param httpClient The HttpClient instance that the AdaptiveMediaSource should use for downloading resources. This allows you to specify custom HTTP headers for the requests.
+    * @return Returns an AdaptiveMediaSourceCreationResult upon successful completion.
+    */
   def createFromStreamAsync(
     stream: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IInputStream,
     uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri,
@@ -156,19 +156,19 @@ object AdaptiveMediaSource extends js.Object {
     winrtDashUwpLib.WindowsNs.MediaNs.StreamingNs.AdaptiveNs.AdaptiveMediaSourceCreationResult
   ] = js.native
   /**
-                       * Asynchronously creates a AdaptiveMediaSource object from the Uniform Resource Identifier (URI) of the source.
-                       * @param uri T he URI of the source.
-                       * @return Returns an AdaptiveMediaSourceCreationResult upon successful completion.
-                       */
+    * Asynchronously creates a AdaptiveMediaSource object from the Uniform Resource Identifier (URI) of the source.
+    * @param uri T he URI of the source.
+    * @return Returns an AdaptiveMediaSourceCreationResult upon successful completion.
+    */
   def createFromUriAsync(uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[
     winrtDashUwpLib.WindowsNs.MediaNs.StreamingNs.AdaptiveNs.AdaptiveMediaSourceCreationResult
   ] = js.native
   /**
-                       * Asynchronously creates a AdaptiveMediaSource object from the Uniform Resource Identifier (URI) of the source.
-                       * @param uri T he URI of the source.
-                       * @param httpClient The HttpClient instance that the AdaptiveMediaSource should use for downloading resources. This allows you to specify custom HTTP headers for the requests.
-                       * @return Returns an AdaptiveMediaSourceCreationResult upon successful completion.
-                       */
+    * Asynchronously creates a AdaptiveMediaSource object from the Uniform Resource Identifier (URI) of the source.
+    * @param uri T he URI of the source.
+    * @param httpClient The HttpClient instance that the AdaptiveMediaSource should use for downloading resources. This allows you to specify custom HTTP headers for the requests.
+    * @return Returns an AdaptiveMediaSourceCreationResult upon successful completion.
+    */
   def createFromUriAsync(
     uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri,
     httpClient: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HttpClient
@@ -176,10 +176,10 @@ object AdaptiveMediaSource extends js.Object {
     winrtDashUwpLib.WindowsNs.MediaNs.StreamingNs.AdaptiveNs.AdaptiveMediaSourceCreationResult
   ] = js.native
   /**
-                       * Determines whether the content type of the source is supported.
-                       * @param contentType A string that identifies the content type of the source. Can be a Http Live Streaming (HLS) or Dynamic Adaptive Streaming over HTTP (DASH) content type.
-                       * @return Returns a value that indicates whether the content type of the source is supported. true if supported; otherwise, false.
-                       */
+    * Determines whether the content type of the source is supported.
+    * @param contentType A string that identifies the content type of the source. Can be a Http Live Streaming (HLS) or Dynamic Adaptive Streaming over HTTP (DASH) content type.
+    * @return Returns a value that indicates whether the content type of the source is supported. true if supported; otherwise, false.
+    */
   def isContentTypeSupported(contentType: java.lang.String): scala.Boolean = js.native
 }
 

@@ -26,15 +26,15 @@ abstract class UsbInterfaceDescriptor () extends js.Object {
 @js.native
 object UsbInterfaceDescriptor extends js.Object {
   /**
-                   * Parses the specified USB descriptor and returns alternate setting information in a UsbInterfaceDescriptor object.
-                   * @param descriptor A UsbDescriptor object that contains the USB interface descriptor.
-                   * @return A UsbInterfaceDescriptor object describes the alternate setting.
-                   */
+    * Parses the specified USB descriptor and returns alternate setting information in a UsbInterfaceDescriptor object.
+    * @param descriptor A UsbDescriptor object that contains the USB interface descriptor.
+    * @return A UsbInterfaceDescriptor object describes the alternate setting.
+    */
   def parse(descriptor: winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbDescriptor): winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbInterfaceDescriptor = js.native
   /**
-                   * Retrieves information about the alternate setting in a UsbInterfaceDescriptor object that is contained in a UsbDescriptor object.
-                   * @param descriptor The UsbDescriptor object to parse.
-                   */
+    * Retrieves information about the alternate setting in a UsbInterfaceDescriptor object that is contained in a UsbDescriptor object.
+    * @param descriptor The UsbDescriptor object to parse.
+    */
   def tryParse(descriptor: winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbDescriptor): winrtDashUwpLib.Anon_ReturnValue = js.native
 }
 

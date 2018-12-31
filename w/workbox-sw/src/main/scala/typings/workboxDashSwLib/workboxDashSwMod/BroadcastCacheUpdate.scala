@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Uses the Broadcast Channel API to notify interested parties when a cached response has been updated.
- * For efficiency's sake, the underlying response bodies are not compared; only specific response headers are checked
- */
-
+  * Uses the Broadcast Channel API to notify interested parties when a cached response has been updated.
+  * For efficiency's sake, the underlying response bodies are not compared; only specific response headers are checked
+  */
 trait BroadcastCacheUpdate extends js.Object {
   /**
   	 * Compare two Responses and send a message via the Broadcast Channel API if they differ.

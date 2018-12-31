@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimeEvent extends js.Object {
   /** Text annotation with a set of attributes. */
   var annotation: js.UndefOr[Annotation] = js.undefined

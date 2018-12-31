@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object TextNs extends js.Object {
   // Added to support `tokenize`
-  
   trait Token extends js.Object {
     var `type`: scala.Double
     var value: js.UndefOr[java.lang.String] = js.undefined

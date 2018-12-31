@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditorResizable extends js.Object {
   var content: js.UndefOr[scala.Boolean] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined

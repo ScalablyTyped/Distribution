@@ -12,22 +12,22 @@ sealed trait ExtensionRequestState extends js.Object
 @js.native
 object ExtensionRequestState extends js.Object {
   /**
-       * The request was accepted (extension installed or license assigned)
-       */
+    * The request was accepted (extension installed or license assigned)
+    */
   @js.native
   sealed trait Accepted
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ExtensionRequestState
   
   /**
-       * The request has been opened, but not yet responded to
-       */
+    * The request has been opened, but not yet responded to
+    */
   @js.native
   sealed trait Open
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ExtensionRequestState
   
   /**
-       * The request was rejected (extension not installed or license not assigned)
-       */
+    * The request was rejected (extension not installed or license not assigned)
+    */
   @js.native
   sealed trait Rejected
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ExtensionRequestState

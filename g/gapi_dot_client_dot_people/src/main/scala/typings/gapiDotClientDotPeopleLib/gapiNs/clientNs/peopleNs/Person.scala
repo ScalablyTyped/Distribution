@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Person extends js.Object {
   /** The person's street addresses. */
   var addresses: js.UndefOr[js.Array[Address]] = js.undefined
   /**
-               * &#42;&#42;DEPRECATED&#42;&#42; (Please use `person.ageRanges` instead)&#42;&#42;
-               *
-               * The person's read-only age range.
-               */
+    * &#42;&#42;DEPRECATED&#42;&#42; (Please use `person.ageRanges` instead)&#42;&#42;
+    *
+    * The person's read-only age range.
+    */
   var ageRange: js.UndefOr[java.lang.String] = js.undefined
   /** The person's read-only age ranges. */
   var ageRanges: js.UndefOr[js.Array[AgeRangeType]] = js.undefined
@@ -28,9 +27,9 @@ trait Person extends js.Object {
   /** The person's email addresses. */
   var emailAddresses: js.UndefOr[js.Array[EmailAddress]] = js.undefined
   /**
-               * The [HTTP entity tag](https://en.wikipedia.org/wiki/HTTP_ETag) of the
-               * resource. Used for web cache validation.
-               */
+    * The [HTTP entity tag](https://en.wikipedia.org/wiki/HTTP_ETag) of the
+    * resource. Used for web cache validation.
+    */
   var etag: js.UndefOr[java.lang.String] = js.undefined
   /** The person's events. */
   var events: js.UndefOr[js.Array[Event]] = js.undefined
@@ -67,10 +66,10 @@ trait Person extends js.Object {
   /** The person's residences. */
   var residences: js.UndefOr[js.Array[Residence]] = js.undefined
   /**
-               * The resource name for the person, assigned by the server. An ASCII string
-               * with a max length of 27 characters, in the form of
-               * `people/`<var>person_id</var>.
-               */
+    * The resource name for the person, assigned by the server. An ASCII string
+    * with a max length of 27 characters, in the form of
+    * `people/`<var>person_id</var>.
+    */
   var resourceName: js.UndefOr[java.lang.String] = js.undefined
   /** The person's skills. */
   var skills: js.UndefOr[js.Array[Skill]] = js.undefined

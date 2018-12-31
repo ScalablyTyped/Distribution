@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait numbers
   extends atMaterialBaseLib.foundationMod.MDCNumbers {
   var DEBOUNCE_THROTTLE_RESIZE_TIME_MS: atMaterialTopDashAppDashBarLib.atMaterialTopDashAppDashBarLibNumbers.`100`

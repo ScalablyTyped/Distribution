@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Utf8 extends js.Object {
   var Base64: cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.Encoder
   var Hex: cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.Encoder

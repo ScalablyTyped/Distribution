@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * User Object (Public)
-     * [](https://developer.spotify.com/web-api/object-model/#track-object-simplified)
-     */
-
+  * User Object (Public)
+  * [](https://developer.spotify.com/web-api/object-model/#track-object-simplified)
+  */
 trait UserObjectPublic extends js.Object {
   var display_name: js.UndefOr[java.lang.String] = js.undefined
   var external_urls: ExternalUrlObject

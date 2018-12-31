@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Headers extends js.Object {
   var gid: scala.Double
   var mode: scala.Double

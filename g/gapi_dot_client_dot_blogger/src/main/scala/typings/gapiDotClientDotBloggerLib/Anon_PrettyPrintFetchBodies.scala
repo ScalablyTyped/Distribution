@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PrettyPrintFetchBodies extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
   /** ID of the blog to fetch the post from. */
   var blogId: java.lang.String
   /**
-                   * Whether the body content of posts is included (default: true). This should be set to false when the post bodies are not required, to help minimize
-                   * traffic.
-                   */
+    * Whether the body content of posts is included (default: true). This should be set to false when the post bodies are not required, to help minimize
+    * traffic.
+    */
   var fetchBodies: js.UndefOr[scala.Boolean] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
@@ -29,9 +28,9 @@ trait Anon_PrettyPrintFetchBodies extends js.Object {
   /** Query terms to search this blog for matching posts. */
   var q: java.lang.String
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[java.lang.String] = js.undefined

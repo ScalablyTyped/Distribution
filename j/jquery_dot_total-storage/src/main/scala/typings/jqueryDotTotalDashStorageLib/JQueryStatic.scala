@@ -10,25 +10,13 @@ trait JQueryStatic extends js.Object {
   @JSName("totalStorage")
   var totalStorage_Original: JQueryTotalStorage = js.native
   /**
-      * @desc Set or get a key's value
-      * @param key Key to set.
-      * @param value Value to set for key. If ommited, current value for key is returned.
+    * @desc Set or get a key's value
+    * @param key Key to set.
+    * @param value Value to set for key. If ommited, current value for key is returned.
   	* @param options Not implemented.
-      */
+    */
   def totalStorage(key: java.lang.String): js.Any = js.native
-  /**
-      * @desc Set or get a key's value
-      * @param key Key to set.
-      * @param value Value to set for key. If ommited, current value for key is returned.
-  	* @param options Not implemented.
-      */
   def totalStorage(key: java.lang.String, value: js.Any): js.Any = js.native
-  /**
-      * @desc Set or get a key's value
-      * @param key Key to set.
-      * @param value Value to set for key. If ommited, current value for key is returned.
-  	* @param options Not implemented.
-      */
   def totalStorage(key: java.lang.String, value: js.Any, options: JQueryTotalStorageOptions): js.Any = js.native
 }
 

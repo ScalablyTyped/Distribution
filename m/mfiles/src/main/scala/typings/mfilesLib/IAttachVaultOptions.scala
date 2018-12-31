@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAttachVaultOptions extends js.Object {
   var DisableEventHandlers: scala.Boolean
   var DisableExportImportJobs: scala.Boolean

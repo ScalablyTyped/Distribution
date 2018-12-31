@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Metric extends js.Object {
   /** The kind of resource this is, in this case dfareporting#metric. */
   var kind: js.UndefOr[java.lang.String] = js.undefined

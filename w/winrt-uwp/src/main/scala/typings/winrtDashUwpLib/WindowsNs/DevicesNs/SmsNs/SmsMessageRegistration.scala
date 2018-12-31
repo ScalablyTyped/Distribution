@@ -41,11 +41,11 @@ object SmsMessageRegistration extends js.Object {
   /** Static property that gets a list of currently registered message filters.. */
   var allRegistrations: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsMessageRegistration] = js.native
   /**
-                   * Registers a message filter.
-                   * @param id Identifier used to describe this message filter.
-                   * @param filterRules An object that represents the filter rules to be used for this registered message filter.
-                   * @return On successful completion, the SmsMessageRegistration object that represents this registered message filter.
-                   */
+    * Registers a message filter.
+    * @param id Identifier used to describe this message filter.
+    * @param filterRules An object that represents the filter rules to be used for this registered message filter.
+    * @return On successful completion, the SmsMessageRegistration object that represents this registered message filter.
+    */
   def register(id: java.lang.String, filterRules: winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsFilterRules): winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsMessageRegistration = js.native
 }
 

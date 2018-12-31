@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IChoiceGroupState extends js.Object {
   var keyChecked: java.lang.String | scala.Double
   /** Is true when the control has focus. */

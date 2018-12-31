@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrderRefund extends js.Object {
   /** The actor that created the refund. */
   var actor: js.UndefOr[java.lang.String] = js.undefined

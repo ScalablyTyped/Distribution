@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Configuration extends js.Object {
   /** Provides the ability to execute custom middleware after all other middleware internally within the server. */
   var after: js.UndefOr[js.Function1[/* app */ expressLib.expressMod.eNs.Application, scala.Unit]] = js.undefined
@@ -16,29 +15,29 @@ trait Configuration extends js.Object {
   /** This option broadcasts the server via ZeroConf networking on start. */
   var bonjour: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * When using inline mode, the console in your DevTools will show you messages e.g. before reloading,
-           * before an error or when Hot Module Replacement is enabled. This may be too verbose.
-           */
+    * When using inline mode, the console in your DevTools will show you messages e.g. before reloading,
+    * before an error or when Hot Module Replacement is enabled. This may be too verbose.
+    */
   var clientLogLevel: js.UndefOr[
     webpackDashDevDashServerLib.webpackDashDevDashServerLibStrings.none | webpackDashDevDashServerLib.webpackDashDevDashServerLibStrings.error | webpackDashDevDashServerLib.webpackDashDevDashServerLibStrings.warning | webpackDashDevDashServerLib.webpackDashDevDashServerLibStrings.info
   ] = js.undefined
   /** Enable gzip compression for everything served. */
   var compress: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * Tell the server where to serve content from. This is only necessary if you want to serve static files.
-           * devServer.publicPath will be used to determine where the bundles should be served from, and takes precedence.
-           */
+    * Tell the server where to serve content from. This is only necessary if you want to serve static files.
+    * devServer.publicPath will be used to determine where the bundles should be served from, and takes precedence.
+    */
   var contentBase: js.UndefOr[scala.Boolean | java.lang.String | js.Array[java.lang.String]] = js.undefined
   /**
-           * When set to true this option bypasses host checking.
-           * THIS IS NOT RECOMMENDED as apps that do not check the host are vulnerable to DNS rebinding attacks.
-           */
+    * When set to true this option bypasses host checking.
+    * THIS IS NOT RECOMMENDED as apps that do not check the host are vulnerable to DNS rebinding attacks.
+    */
   var disableHostCheck: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * This option lets you reduce the compilations in lazy mode.
-           * By default in lazy mode, every request results in a new compilation.
-           * With filename, it's possible to only compile when a certain file is requested.
-           */
+    * This option lets you reduce the compilations in lazy mode.
+    * By default in lazy mode, every request results in a new compilation.
+    * With filename, it's possible to only compile when a certain file is requested.
+    */
   var filename: js.UndefOr[java.lang.String] = js.undefined
   /** Adds headers to all responses. */
   var headers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
@@ -55,22 +54,22 @@ trait Configuration extends js.Object {
   /** The filename that is considered the index file. */
   var index: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Toggle between the dev-server's two different modes.
-           * By default the application will be served with inline mode enabled.
-           * This means that a script will be inserted in your bundle to take care of live reloading,
-           * and build messages will appear in the browser console.
-           */
+    * Toggle between the dev-server's two different modes.
+    * By default the application will be served with inline mode enabled.
+    * This means that a script will be inserted in your bundle to take care of live reloading,
+    * and build messages will appear in the browser console.
+    */
   var `inline`: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * When lazy is enabled, the dev-server will only compile the bundle when it gets requested.
-           * This means that webpack will not watch any file changes.
-           */
+    * When lazy is enabled, the dev-server will only compile the bundle when it gets requested.
+    * This means that webpack will not watch any file changes.
+    */
   var `lazy`: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * With noInfo enabled, messages like the webpack bundle information that is shown
-           * when starting up and after each save,will be hidden.
-           * Errors and warnings will still be shown.
-           */
+    * With noInfo enabled, messages like the webpack bundle information that is shown
+    * when starting up and after each save,will be hidden.
+    * Errors and warnings will still be shown.
+    */
   var noInfo: js.UndefOr[scala.Boolean] = js.undefined
   /** When open is enabled, the dev server will open the browser. */
   var open: js.UndefOr[scala.Boolean] = js.undefined
@@ -85,22 +84,22 @@ trait Configuration extends js.Object {
   /** Specify a port number to listen for requests on. */
   var port: js.UndefOr[scala.Double] = js.undefined
   /**
-           * Proxying some URLs can be useful when you have a separate API backend development server
-           * and you want to send API requests on the same domain.
-           */
+    * Proxying some URLs can be useful when you have a separate API backend development server
+    * and you want to send API requests on the same domain.
+    */
   var proxy: js.UndefOr[ProxyConfigMap | ProxyConfigArray] = js.undefined
   /**
-           * When using inline mode and you're proxying dev-server,
-           * the inline client script does not always know where to connect to.
-           * It will try to guess the URL of the server based on window.location, but if that fails you'll need to use this.
-           */
+    * When using inline mode and you're proxying dev-server,
+    * the inline client script does not always know where to connect to.
+    * It will try to guess the URL of the server based on window.location, but if that fails you'll need to use this.
+    */
   var public: js.UndefOr[java.lang.String] = js.undefined
   /** The bundled files will be available in the browser under this path. */
   var publicPath: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * With quiet enabled, nothing except the initial startup information will be written to the console.
-           * This also means that errors or warnings from webpack are not visible.
-           */
+    * With quiet enabled, nothing except the initial startup information will be written to the console.
+    * This also means that errors or warnings from webpack are not visible.
+    */
   var quiet: js.UndefOr[scala.Boolean] = js.undefined
   /** @deprecated Here you can access the Express app object and add your own custom middleware to it. */
   var setup: js.UndefOr[js.Function1[/* app */ expressLib.expressMod.eNs.Application, scala.Unit]] = js.undefined
@@ -109,9 +108,9 @@ trait Configuration extends js.Object {
   /** It is possible to configure advanced options for serving static files from contentBase. */
   var staticOptions: js.UndefOr[serveDashStaticLib.serveDashStaticMod.serveStaticNs.ServeStaticOptions] = js.undefined
   /**
-           * This option lets you precisely control what bundle information gets displayed.
-           * This can be a nice middle ground if you want some bundle information, but not all of it.
-           */
+    * This option lets you precisely control what bundle information gets displayed.
+    * This can be a nice middle ground if you want some bundle information, but not all of it.
+    */
   var stats: js.UndefOr[webpackLib.webpackMod.webpackNs.OptionsNs.Stats] = js.undefined
   /** This option lets the browser open with your local IP. */
   var useLocalIp: js.UndefOr[scala.Boolean] = js.undefined

@@ -44,8 +44,8 @@ class LoadQueue () extends AbstractLoader {
   def setPaused(value: scala.Boolean): scala.Unit = js.native
   def setPreferXHR(value: scala.Boolean): scala.Boolean = js.native
   /**
-           * @deprecated - use 'preferXHR' property instead (or setUseXHR())
-           */
+    * @deprecated - use 'preferXHR' property instead (or setUseXHR())
+    */
   def setUseXHR(value: scala.Boolean): scala.Unit = js.native
   def unregisterLoader(loader: AbstractLoader): scala.Unit = js.native
 }

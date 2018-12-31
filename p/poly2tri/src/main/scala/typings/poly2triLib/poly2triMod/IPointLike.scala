@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPointLike extends js.Object {
   /** x coordinate */
   var x: scala.Double

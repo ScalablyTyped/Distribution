@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColorStop extends js.Object {
   // The alpha value of this color in the gradient band. Defaults to 1.0,
   // fully opaque.

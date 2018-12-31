@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreativeFieldValue extends js.Object {
   /** ID of this creative field value. This is a read-only, auto-generated field. */
   var id: js.UndefOr[java.lang.String] = js.undefined

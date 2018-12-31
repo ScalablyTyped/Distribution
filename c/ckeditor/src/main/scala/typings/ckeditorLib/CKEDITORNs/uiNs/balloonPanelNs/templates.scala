@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait templates extends js.Object {
   var close: js.UndefOr[ckeditorLib.CKEDITORNs.template] = js.undefined
   var content: js.UndefOr[ckeditorLib.CKEDITORNs.template] = js.undefined

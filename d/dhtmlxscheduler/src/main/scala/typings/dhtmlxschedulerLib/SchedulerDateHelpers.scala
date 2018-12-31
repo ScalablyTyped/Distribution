@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SchedulerDateHelpers extends js.Object {
   def add(origin: stdLib.Date, count: scala.Double, unit: java.lang.String): stdLib.Date
   def convert_to_utc(origin: stdLib.Date): stdLib.Date

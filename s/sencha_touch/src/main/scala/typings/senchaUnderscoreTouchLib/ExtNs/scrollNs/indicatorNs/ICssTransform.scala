@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICssTransform extends IAbstract {
   /** [Method] Returns the value of cls
   		* @returns String

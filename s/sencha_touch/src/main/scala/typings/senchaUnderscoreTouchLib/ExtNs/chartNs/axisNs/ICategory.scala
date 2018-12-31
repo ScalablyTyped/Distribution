@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICategory extends IAxis {
   /** [Method] Returns the value of layout
   		* @returns String

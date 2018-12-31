@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSFill extends js.Object {
   var _class: sketchappLib.sketchappLibStrings.fill
   var color: js.UndefOr[SketchMSColor] = js.undefined

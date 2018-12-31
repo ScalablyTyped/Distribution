@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMatrix
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Property] (Number) */

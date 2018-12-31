@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 object onetimeModMembers extends js.Object {
   def apply[R](fn: js.Function0[R]): js.Function0[R] = js.native
   def apply[R](fn: js.Function0[R], options: onetimeLib.onetimeMod.oneTimeNs.Options): js.Function0[R] = js.native
-  def apply[R](fn: js.Function1[/* repeated */js.Any, R]): js.Function1[/* repeated */js.Any, R] = js.native
-  def apply[R](fn: js.Function1[/* repeated */js.Any, R], options: onetimeLib.onetimeMod.oneTimeNs.Options): js.Function1[/* repeated */js.Any, R] = js.native
+  def apply[R](fn: js.Function1[/* repeated */ js.Any, R]): js.Function1[/* repeated */ js.Any, R] = js.native
+  def apply[R](fn: js.Function1[/* repeated */ js.Any, R], options: onetimeLib.onetimeMod.oneTimeNs.Options): js.Function1[/* repeated */ js.Any, R] = js.native
   def apply[T1, T2, R](fn: js.Function2[/* t1 */ T1, /* t2 */ T2, R]): js.Function2[/* t1 */ T1, /* t2 */ T2, R] = js.native
   def apply[T1, T2, R](fn: js.Function2[/* t1 */ T1, /* t2 */ T2, R], options: onetimeLib.onetimeMod.oneTimeNs.Options): js.Function2[/* t1 */ T1, /* t2 */ T2, R] = js.native
   def apply[T1, T2, T3, R](fn: js.Function3[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, R]): js.Function3[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, R] = js.native

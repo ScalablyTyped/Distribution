@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Bounds extends js.Object {
   /** The height of the display in pixels. */
   var height: chromeDashAppsLib.chromeNs.integer

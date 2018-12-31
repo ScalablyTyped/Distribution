@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SwaggerObject extends js.Object {
   var basePath: js.UndefOr[java.lang.String] = js.undefined
   var consumes: js.UndefOr[MimeTypes] = js.undefined

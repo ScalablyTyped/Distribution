@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GitPathAction extends js.Object {
   var action: GitPathActions
   var base64Content: java.lang.String

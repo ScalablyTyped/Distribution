@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VRDisplayCapabilities extends js.Object {
   val canPresent: scala.Boolean
   val hasExternalDisplay: scala.Boolean

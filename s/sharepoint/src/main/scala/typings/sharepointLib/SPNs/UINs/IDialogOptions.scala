@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 /** Options for dialog creation */
 // tslint:disable-next-line: interface-name
-
 trait IDialogOptions extends js.Object {
   /** specifies if maximize button should be shown on the dialog */
   var allowMaximize: js.UndefOr[scala.Boolean] = js.undefined

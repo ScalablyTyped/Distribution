@@ -20,14 +20,14 @@ abstract class InkStroke () extends js.Object {
   /** Gets whether the stroke is selected. */
   var selected: scala.Boolean = js.native
   /**
-                       * Gets the collection of InkPoint objects used to construct the InkStroke .
-                       * @return The collection of InkPoint objects used to construct the InkStroke .
-                       */
+    * Gets the collection of InkPoint objects used to construct the InkStroke .
+    * @return The collection of InkPoint objects used to construct the InkStroke .
+    */
   def getInkPoints(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[InkPoint] = js.native
   /**
-                       * Gets the rendering segments of the stroke.
-                       * @return The collection of InkStrokeRenderingSegment objects.
-                       */
+    * Gets the rendering segments of the stroke.
+    * @return The collection of InkStrokeRenderingSegment objects.
+    */
   def getRenderingSegments(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[InkStrokeRenderingSegment] = js.native
 }
 

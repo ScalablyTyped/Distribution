@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SortableUIParams extends js.Object {
   var helper: jqueryuiLib.JQuery
   var item: jqueryuiLib.JQuery

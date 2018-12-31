@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** @hidden */
-
 trait SerializedMesh extends js.Object {
   var boxMaximum: js.Array[scala.Double]
   var boxMinimum: js.Array[scala.Double]

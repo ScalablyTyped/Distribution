@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SwipeableOnPreChange extends js.Object {
   var animation: js.UndefOr[
     reactDashOnsenuiLib.reactDashOnsenuiLibStrings.none | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.slide

@@ -7,8 +7,6 @@ import scala.scalajs.js.annotation._
 
 /*=============================微信扫一扫================================*/
 /*=============================微信小店================================*/
-
-
 trait IopenProductSpecificView extends BaseParams {
   var productId: java.lang.String
    // 商品id

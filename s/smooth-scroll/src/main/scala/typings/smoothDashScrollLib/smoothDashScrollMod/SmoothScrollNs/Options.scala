@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var clip: js.UndefOr[scala.Boolean] = js.undefined
   var customEasing: js.UndefOr[js.Function1[/* time */ scala.Double, scala.Double]] = js.undefined

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 //  Validator
 // ~~~~~~~~~~~
 /**
-     * Validator Interface
-     */
+  * Validator Interface
+  */
 @js.native
 trait Validator
   extends validatorLib.ValidatorJSNs.ValidatorStatic {

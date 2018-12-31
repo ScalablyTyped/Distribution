@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContentBody extends js.Object {
   var action: js.UndefOr[Action | js.Array[Action]] = js.undefined
   var dictionary: js.UndefOr[js.Any] = js.undefined

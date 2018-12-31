@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictModalActionsProps extends js.Object {
   /** Array of shorthand buttons. */
   var actions: js.UndefOr[
@@ -20,11 +19,11 @@ trait StrictModalActionsProps extends js.Object {
   /** Shorthand for primary content. */
   var content: js.UndefOr[semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent] = js.undefined
   /**
-     * onClick handler for an action. Mutually exclusive with children.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All item props.
-     */
+    * onClick handler for an action. Mutually exclusive with children.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All item props.
+    */
   var onActionClick: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 

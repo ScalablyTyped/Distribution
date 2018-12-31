@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ElementData extends js.Object {
   var componentView: ViewData
   var renderElement: js.Any

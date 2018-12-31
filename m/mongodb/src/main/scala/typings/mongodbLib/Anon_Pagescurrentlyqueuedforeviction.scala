@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Pagescurrentlyqueuedforeviction extends js.Object {
   var `Average difference between current eviction generation when the page was last considered`: scala.Double
   var `Average on-disk page image size seen`: scala.Double

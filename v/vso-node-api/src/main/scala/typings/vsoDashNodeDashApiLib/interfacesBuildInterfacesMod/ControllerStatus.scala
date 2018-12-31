@@ -12,22 +12,22 @@ sealed trait ControllerStatus extends js.Object
 @js.native
 object ControllerStatus extends js.Object {
   /**
-       * Indicates that the build controller is currently available.
-       */
+    * Indicates that the build controller is currently available.
+    */
   @js.native
   sealed trait Available
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.ControllerStatus
   
   /**
-       * Indicates that the build controller has taken itself offline.
-       */
+    * Indicates that the build controller has taken itself offline.
+    */
   @js.native
   sealed trait Offline
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.ControllerStatus
   
   /**
-       * Indicates that the build controller cannot be contacted.
-       */
+    * Indicates that the build controller cannot be contacted.
+    */
   @js.native
   sealed trait Unavailable
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.ControllerStatus

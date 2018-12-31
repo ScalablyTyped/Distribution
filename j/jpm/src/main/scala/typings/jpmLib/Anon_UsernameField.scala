@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_UsernameField extends js.Object {
   var formSubmitURL: js.UndefOr[java.lang.String] = js.undefined
   var onComplete: js.Function1[/* credentials */ js.Array[jpmLib.passwordsMod.Credential], _]

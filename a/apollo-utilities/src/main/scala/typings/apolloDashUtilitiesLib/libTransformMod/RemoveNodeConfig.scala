@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RemoveNodeConfig[N] extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
   var remove: js.UndefOr[scala.Boolean] = js.undefined

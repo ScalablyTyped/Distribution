@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DropTargetEvent
   extends kendoDashUiLib.JQueryEventObject {
   var draggable: js.UndefOr[Draggable] = js.undefined

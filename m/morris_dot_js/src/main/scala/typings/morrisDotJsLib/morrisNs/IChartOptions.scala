@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IChartOptions extends js.Object {
   /** The ID of (or a reference to) the element into which to insert the graph. */
   var element: js.Any

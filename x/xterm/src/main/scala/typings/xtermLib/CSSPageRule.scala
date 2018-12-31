@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CSSPageRule extends CSSRule {
   val pseudoClass: java.lang.String
   val selector: java.lang.String

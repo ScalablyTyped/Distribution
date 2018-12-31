@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomMetricsResource extends js.Object {
   /** Get a custom metric to which the user has access. */
   def get(request: gapiDotClientDotAnalyticsLib.Anon_PrettyPrintAccountIdQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[CustomMetric]

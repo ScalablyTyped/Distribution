@@ -12,22 +12,22 @@ sealed trait GitPullRequestQueryType extends js.Object
 @js.native
 object GitPullRequestQueryType extends js.Object {
   /**
-       * Search for pull requests that merged the suppliest commits.
-       */
+    * Search for pull requests that merged the suppliest commits.
+    */
   @js.native
   sealed trait Commit
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitPullRequestQueryType
   
   /**
-       * Search for pull requests that created the supplied merge commits.
-       */
+    * Search for pull requests that created the supplied merge commits.
+    */
   @js.native
   sealed trait LastMergeCommit
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitPullRequestQueryType
   
   /**
-       * No query type set.
-       */
+    * No query type set.
+    */
   @js.native
   sealed trait NotSet
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitPullRequestQueryType

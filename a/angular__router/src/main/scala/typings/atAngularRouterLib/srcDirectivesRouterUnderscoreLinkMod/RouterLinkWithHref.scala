@@ -30,19 +30,19 @@ class RouterLinkWithHref protected ()
   var updateTargetUrlAndHref: js.Any = js.native
   val urlTree: atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree = js.native
   /**
-       * A callback method that is invoked immediately after the
-       * default change detector has checked data-bound properties
-       * if at least one has changed, and before the view and content
-       * children are checked.
-       * @param changes The changed properties.
-       */
+    * A callback method that is invoked immediately after the
+    * default change detector has checked data-bound properties
+    * if at least one has changed, and before the view and content
+    * children are checked.
+    * @param changes The changed properties.
+    */
   /* CompleteClass */
   override def ngOnChanges(changes: atAngularCoreLib.srcMetadataLifecycleUnderscoreHooksMod.SimpleChanges): scala.Unit = js.native
   def ngOnChanges(changes: js.Object): js.Any = js.native
   /**
-       * A callback method that performs custom clean-up, invoked immediately
-       * after a directive, pipe, or service instance is destroyed.
-       */
+    * A callback method that performs custom clean-up, invoked immediately
+    * after a directive, pipe, or service instance is destroyed.
+    */
   /* CompleteClass */
   override def ngOnDestroy(): scala.Unit = js.native
   def onClick(button: scala.Double, ctrlKey: scala.Boolean, metaKey: scala.Boolean, shiftKey: scala.Boolean): scala.Boolean = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var dmode: js.UndefOr[scala.Double] = js.undefined
   var filter: js.UndefOr[js.Function1[/* name */ java.lang.String, scala.Boolean]] = js.undefined

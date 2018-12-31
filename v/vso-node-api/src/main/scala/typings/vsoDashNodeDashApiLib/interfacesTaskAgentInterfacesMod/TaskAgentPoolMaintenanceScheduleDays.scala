@@ -12,64 +12,64 @@ sealed trait TaskAgentPoolMaintenanceScheduleDays extends js.Object
 @js.native
 object TaskAgentPoolMaintenanceScheduleDays extends js.Object {
   /**
-       * Run on all days of the week.
-       */
+    * Run on all days of the week.
+    */
   @js.native
   sealed trait All
     extends vsoDashNodeDashApiLib.interfacesTaskAgentInterfacesMod.TaskAgentPoolMaintenanceScheduleDays
   
   /**
-       * Run on Friday.
-       */
+    * Run on Friday.
+    */
   @js.native
   sealed trait Friday
     extends vsoDashNodeDashApiLib.interfacesTaskAgentInterfacesMod.TaskAgentPoolMaintenanceScheduleDays
   
   /**
-       * Run on Monday.
-       */
+    * Run on Monday.
+    */
   @js.native
   sealed trait Monday
     extends vsoDashNodeDashApiLib.interfacesTaskAgentInterfacesMod.TaskAgentPoolMaintenanceScheduleDays
   
   /**
-       * Do not run.
-       */
+    * Do not run.
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesTaskAgentInterfacesMod.TaskAgentPoolMaintenanceScheduleDays
   
   /**
-       * Run on Saturday.
-       */
+    * Run on Saturday.
+    */
   @js.native
   sealed trait Saturday
     extends vsoDashNodeDashApiLib.interfacesTaskAgentInterfacesMod.TaskAgentPoolMaintenanceScheduleDays
   
   /**
-       * Run on Sunday.
-       */
+    * Run on Sunday.
+    */
   @js.native
   sealed trait Sunday
     extends vsoDashNodeDashApiLib.interfacesTaskAgentInterfacesMod.TaskAgentPoolMaintenanceScheduleDays
   
   /**
-       * Run on Thursday.
-       */
+    * Run on Thursday.
+    */
   @js.native
   sealed trait Thursday
     extends vsoDashNodeDashApiLib.interfacesTaskAgentInterfacesMod.TaskAgentPoolMaintenanceScheduleDays
   
   /**
-       * Run on Tuesday.
-       */
+    * Run on Tuesday.
+    */
   @js.native
   sealed trait Tuesday
     extends vsoDashNodeDashApiLib.interfacesTaskAgentInterfacesMod.TaskAgentPoolMaintenanceScheduleDays
   
   /**
-       * Run on Wednesday.
-       */
+    * Run on Wednesday.
+    */
   @js.native
   sealed trait Wednesday
     extends vsoDashNodeDashApiLib.interfacesTaskAgentInterfacesMod.TaskAgentPoolMaintenanceScheduleDays

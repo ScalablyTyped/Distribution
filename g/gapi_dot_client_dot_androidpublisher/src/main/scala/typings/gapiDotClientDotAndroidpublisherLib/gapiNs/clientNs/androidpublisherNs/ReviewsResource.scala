@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReviewsResource extends js.Object {
   /** Returns a single review. */
   def get(request: gapiDotClientDotAndroidpublisherLib.Anon_TranslationLanguage): gapiDotClientLib.gapiNs.clientNs.Request[Review]

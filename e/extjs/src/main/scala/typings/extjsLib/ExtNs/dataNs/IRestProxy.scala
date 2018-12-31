@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRestProxy
   extends extjsLib.ExtNs.dataNs.proxyNs.IAjax {
   /** [Config Option] (Boolean) */

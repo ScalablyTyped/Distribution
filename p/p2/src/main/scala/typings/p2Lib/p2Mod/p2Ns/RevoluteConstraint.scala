@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RevoluteConstraint extends Constraint {
   var angle: scala.Double
   var lowerLimit: scala.Double

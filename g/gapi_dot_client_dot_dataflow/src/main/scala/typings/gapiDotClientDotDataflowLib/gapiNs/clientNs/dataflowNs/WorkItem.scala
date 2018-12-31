@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkItem extends js.Object {
   /** Work item-specific configuration as an opaque blob. */
   var configuration: js.UndefOr[java.lang.String] = js.undefined
@@ -20,9 +19,9 @@ trait WorkItem extends js.Object {
   /** Additional information for MapTask WorkItems. */
   var mapTask: js.UndefOr[MapTask] = js.undefined
   /**
-               * Any required packages that need to be fetched in order to execute
-               * this WorkItem.
-               */
+    * Any required packages that need to be fetched in order to execute
+    * this WorkItem.
+    */
   var packages: js.UndefOr[js.Array[Package]] = js.undefined
   /** Identifies the cloud project this WorkItem belongs to. */
   var projectId: js.UndefOr[java.lang.String] = js.undefined

@@ -9,10 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object apolloDashLinkModMembers extends js.Object {
   val Observable: zenDashObservableDashTsLib.Anon_Of = js.native
-  val makePromise: js.Function1[
-    /* observable */ zenDashObservableDashTsLib.libZenObservableMod.Observable[js.Any], 
-    js.Promise[js.Any]
-  ] = js.native
+  val makePromise: apolloDashLinkLib.Anon_Observable = js.native
   def concat(first: apolloDashLinkLib.libLinkMod.ApolloLink, second: apolloDashLinkLib.libLinkMod.ApolloLink): apolloDashLinkLib.libLinkMod.ApolloLink = js.native
   def concat(
     first: apolloDashLinkLib.libLinkMod.ApolloLink,

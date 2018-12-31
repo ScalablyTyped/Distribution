@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AttachmentCardView extends js.Object {
   var destroyed: scala.Boolean
   def addButton(buttonDescriptor: CustomButtonDescriptor): scala.Unit
   def getAttachmentType(): java.lang.String
   /**
-         * @deprecated. Use AttachmentCardClickEvent.getDownloadURL() instead
-         */
+    * @deprecated. Use AttachmentCardClickEvent.getDownloadURL() instead
+    */
   def getDownloadURL(): js.Promise[java.lang.String]
   def getMessageView(): MessageView | scala.Null
   def getTitle(): java.lang.String

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Represents the permissions of a file
-         */
+  * Represents the permissions of a file
+  */
 @JSGlobal("adone.fs.Mode")
 @js.native
 class Mode protected () extends js.Object {

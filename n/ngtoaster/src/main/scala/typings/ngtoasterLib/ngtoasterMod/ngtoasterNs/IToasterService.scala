@@ -38,8 +38,8 @@ trait IToasterService extends js.Object {
   ): IPopReturn = js.native
   def pop(params: IPopParams): scala.Unit = js.native
   /**
-           * @param type Type of toaster  -- 'error', 'info', 'wait', 'success', and 'warning'
-           */
+    * @param type Type of toaster  -- 'error', 'info', 'wait', 'success', and 'warning'
+    */
   def pop(
     `type`: js.UndefOr[java.lang.String],
     title: js.UndefOr[java.lang.String],

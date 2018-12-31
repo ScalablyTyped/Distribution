@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FindOperatorsOrdered extends js.Object {
   def delete(): OrderedBulkOperation
   def deleteOne(): OrderedBulkOperation

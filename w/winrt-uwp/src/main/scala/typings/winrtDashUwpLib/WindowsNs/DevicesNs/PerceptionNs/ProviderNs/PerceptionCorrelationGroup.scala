@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class PerceptionCorrelationGroup protected () extends js.Object {
   /**
-                       * Initializes a new PerceptionCorrelationGroup from a collection of one or more PerceptionCorrelation objects describing multiple providers in a common coordinate frame.
-                       * @param relativeLocations The collection of PerceptionCorrelations describing multiple providers in a common coordinate frame.
-                       */
+    * Initializes a new PerceptionCorrelationGroup from a collection of one or more PerceptionCorrelation objects describing multiple providers in a common coordinate frame.
+    * @param relativeLocations The collection of PerceptionCorrelations describing multiple providers in a common coordinate frame.
+    */
   def this(relativeLocations: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[PerceptionCorrelation]) = this()
   /** The collection of PerceptionCorrelations describing multiple unique providers in a common coordinate frame. */
   var relativeLocations: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[PerceptionCorrelation] = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DimensionsResource extends js.Object {
   /** List the metadata for the dimensions available to this AdSense account. */
   def list(request: gapiDotClientDotAdsenseLib.Anon_PrettyPrintQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[Metadata]

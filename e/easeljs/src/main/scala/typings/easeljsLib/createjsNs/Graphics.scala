@@ -21,7 +21,6 @@ class Graphics () extends js.Object {
   ): Graphics = js.native
   // methods
   def append(command: js.Object): Graphics = js.native
-  // methods
   def append(command: js.Object, clean: scala.Boolean): Graphics = js.native
   def arc(
     x: scala.Double,
@@ -144,8 +143,8 @@ class Graphics () extends js.Object {
   def es(): Graphics = js.native
   def f(color: java.lang.String): Graphics = js.native
   /**
-           * @deprecated - use the instructions property instead
-           */
+    * @deprecated - use the instructions property instead
+    */
   def getInstructions(): js.Array[js.Object] = js.native
   def inject(callback: js.Function1[/* data */ js.Any, _], data: js.Any): Graphics = js.native
    // deprecated

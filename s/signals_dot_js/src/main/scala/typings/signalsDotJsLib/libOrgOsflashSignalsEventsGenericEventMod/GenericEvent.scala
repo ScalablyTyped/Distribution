@@ -24,7 +24,7 @@ class GenericEvent ()
   /* CompleteClass */
   override var signal: signalsDotJsLib.libOrgOsflashSignalsIPrioritySignalMod.IPrioritySignal = js.native
   /** The object that originally dispatched the event.
-       *  When dispatched from an signal, the target is the object containing the signal. */
+    *  When dispatched from an signal, the target is the object containing the signal. */
   /* CompleteClass */
   override var target: js.Object = js.native
 }

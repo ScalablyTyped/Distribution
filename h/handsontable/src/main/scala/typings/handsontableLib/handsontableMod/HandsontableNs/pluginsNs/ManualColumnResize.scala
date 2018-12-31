@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ManualColumnResize extends Base {
   var autoresizeTimeout: js.Function0[scala.Unit] | scala.Unit
   var currentCol: scala.Double | scala.Unit

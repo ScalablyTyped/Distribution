@@ -10,16 +10,11 @@ import scala.scalajs.js.annotation._
 class BaseComponent[TProps /* <: atUifabricUtilitiesLib.libBaseComponentMod.IBaseProps[_] */, TState] protected ()
   extends officeDashUiDashFabricDashReactLib.libUtilitiesMod.BaseComponent[TProps, TState] {
   /**
-       * BaseComponent constructor
-       * @param props - The props for the component.
-       * @param context - The context for the component.
-       */
+    * BaseComponent constructor
+    * @param props - The props for the component.
+    * @param context - The context for the component.
+    */
   def this(props: TProps) = this()
-  /**
-       * BaseComponent constructor
-       * @param props - The props for the component.
-       * @param context - The context for the component.
-       */
   def this(props: TProps, context: js.Any) = this()
 }
 
@@ -27,16 +22,10 @@ class BaseComponent[TProps /* <: atUifabricUtilitiesLib.libBaseComponentMod.IBas
 @js.native
 object BaseComponent extends js.Object {
   /**
-       * @deprecated Use React's error boundaries instead.
-       */
+    * @deprecated Use React's error boundaries instead.
+    */
   def onError(): scala.Unit = js.native
-  /**
-       * @deprecated Use React's error boundaries instead.
-       */
   def onError(errorMessage: java.lang.String): scala.Unit = js.native
-  /**
-       * @deprecated Use React's error boundaries instead.
-       */
   def onError(errorMessage: java.lang.String, ex: js.Any): scala.Unit = js.native
 }
 

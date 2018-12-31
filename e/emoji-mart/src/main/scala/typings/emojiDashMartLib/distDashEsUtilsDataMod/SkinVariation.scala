@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SkinVariation extends js.Object {
   var added_in: java.lang.String
   var has_img_apple: scala.Boolean

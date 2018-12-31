@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GlobalAccountsOperationsResource extends js.Object {
   /** Deletes the specified operation resource. */
   def delete(request: gapiDotClientDotClouduseraccountsLib.Anon_Project): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

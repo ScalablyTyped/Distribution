@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Keyboard extends js.Object {
   var activeIndex: js.UndefOr[scala.Double] = js.undefined
   var cssModule: js.UndefOr[reactstrapLib.reactstrapMod.CSSModule] = js.undefined

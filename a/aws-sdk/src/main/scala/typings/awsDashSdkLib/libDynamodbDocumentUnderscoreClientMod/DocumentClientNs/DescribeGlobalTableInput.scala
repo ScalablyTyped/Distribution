@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DescribeGlobalTableInput extends js.Object {
   /**
-       * The name of the global table.
-       */
+    * The name of the global table.
+    */
   var GlobalTableName: TableName
 }
 

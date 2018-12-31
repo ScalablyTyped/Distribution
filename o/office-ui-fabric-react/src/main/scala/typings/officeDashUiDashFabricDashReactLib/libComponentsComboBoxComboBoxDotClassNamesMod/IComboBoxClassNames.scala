@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IComboBoxClassNames extends js.Object {
   var callout: java.lang.String
   var container: java.lang.String

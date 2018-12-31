@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PMRMessage extends js.Object {
   var canceledQuantity: js.UndefOr[scala.Double] = js.undefined
   var incomingOrderNumber: js.UndefOr[scala.Double] = js.undefined

@@ -12,36 +12,36 @@ sealed trait QueuePriority extends js.Object
 @js.native
 object QueuePriority extends js.Object {
   /**
-       * Above normal priority.
-       */
+    * Above normal priority.
+    */
   @js.native
   sealed trait AboveNormal
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.QueuePriority
   
   /**
-       * Below normal priority.
-       */
+    * Below normal priority.
+    */
   @js.native
   sealed trait BelowNormal
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.QueuePriority
   
   /**
-       * High priority.
-       */
+    * High priority.
+    */
   @js.native
   sealed trait High
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.QueuePriority
   
   /**
-       * Low priority.
-       */
+    * Low priority.
+    */
   @js.native
   sealed trait Low
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.QueuePriority
   
   /**
-       * Normal priority.
-       */
+    * Normal priority.
+    */
   @js.native
   sealed trait Normal
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.QueuePriority

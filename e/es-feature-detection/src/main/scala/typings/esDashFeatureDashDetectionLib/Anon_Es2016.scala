@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Es2016 extends js.Object {
   var es2015: stdLib.Record[
     esDashFeatureDashDetectionLib.esDashFeatureDashDetectionMod.ES2015Builtins, 

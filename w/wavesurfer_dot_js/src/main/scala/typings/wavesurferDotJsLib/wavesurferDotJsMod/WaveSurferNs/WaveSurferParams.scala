@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WaveSurferParams extends js.Object {
   var audioContext: js.UndefOr[stdLib.AudioContext] = js.undefined
   var audioRate: js.UndefOr[scala.Double] = js.undefined

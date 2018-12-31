@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AchievementDefinitionsListResponse extends js.Object {
   /** The achievement definitions. */
   var items: js.UndefOr[js.Array[AchievementDefinition]] = js.undefined

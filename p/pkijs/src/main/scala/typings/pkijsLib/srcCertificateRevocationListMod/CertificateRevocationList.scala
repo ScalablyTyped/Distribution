@@ -21,37 +21,26 @@ trait CertificateRevocationList extends js.Object {
   def fromSchema(schema: js.Any): scala.Unit = js.native
   def isCertificateRevoked(certificate: pkijsLib.srcCertificateMod.default): scala.Boolean = js.native
   /**
-           * Make a signature for existing CRL data
-           * @param {CryptoKey} privateKey Private key for "subjectPublicKeyInfo" structure
-           * @param {string} [hashAlgorithm] Hashing algorithm. Default SHA-1
-           */
+    * Make a signature for existing CRL data
+    * @param {CryptoKey} privateKey Private key for "subjectPublicKeyInfo" structure
+    * @param {string} [hashAlgorithm] Hashing algorithm. Default SHA-1
+    */
   def sign(privateKey: stdLib.CryptoKey): js.Thenable[stdLib.ArrayBuffer] = js.native
-  /**
-           * Make a signature for existing CRL data
-           * @param {CryptoKey} privateKey Private key for "subjectPublicKeyInfo" structure
-           * @param {string} [hashAlgorithm] Hashing algorithm. Default SHA-1
-           */
   def sign(privateKey: stdLib.CryptoKey, hashAlgorithm: java.lang.String): js.Thenable[stdLib.ArrayBuffer] = js.native
   def toJSON(): js.Any = js.native
   /**
-           * Convert current object to asn1js object and set correct values
-           * 
-           * @param {boolean} [encodeFlag]
-           * @returns {*}
-           */
+    * Convert current object to asn1js object and set correct values
+    * 
+    * @param {boolean} [encodeFlag]
+    * @returns {*}
+    */
   def toSchema(): js.Any = js.native
-  /**
-           * Convert current object to asn1js object and set correct values
-           * 
-           * @param {boolean} [encodeFlag]
-           * @returns {*}
-           */
   def toSchema(encodeFlag: scala.Boolean): js.Any = js.native
   /**
-           * Verify existing signature
-           * @param {{[issuerCertificate]: Certificate, [publicKeyInfo]: PublicKeyInfo}} parameters
-           * @returns {*}
-           */
+    * Verify existing signature
+    * @param {{[issuerCertificate]: Certificate, [publicKeyInfo]: PublicKeyInfo}} parameters
+    * @returns {*}
+    */
   def verify(parameters: pkijsLib.Anon_IssuerCertificate): js.Thenable[scala.Boolean] = js.native
 }
 

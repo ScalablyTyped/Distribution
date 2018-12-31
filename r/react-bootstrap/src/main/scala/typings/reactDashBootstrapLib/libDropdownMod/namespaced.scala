@@ -12,7 +12,7 @@ class namespaced () extends Dropdown
 @JSImport("react-bootstrap/lib/Dropdown", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {
-  var Menu: js.Any = js.native
-  var Toggle: js.Any = js.native
+  var Menu: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libDropdownMenuMod.namespaced] = js.native
+  var Toggle: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libDropdownToggleMod.namespaced] = js.native
 }
 

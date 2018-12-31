@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Quality extends js.Object {
   var format: js.UndefOr[
     expoLib.expoLibStrings.png | expoLib.expoLibStrings.jpg | expoLib.expoLibStrings.jpeg | expoLib.expoLibStrings.webm

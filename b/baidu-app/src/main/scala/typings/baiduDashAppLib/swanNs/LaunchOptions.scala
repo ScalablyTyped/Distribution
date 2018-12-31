@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 // #endregion
 // #region App里的onLaunch、onShow回调参数
-
 trait LaunchOptions extends js.Object {
   /**
   		 * 打开小程序的路径

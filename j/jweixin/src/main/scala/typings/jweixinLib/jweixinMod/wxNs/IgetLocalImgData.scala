@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgetLocalImgData extends BaseParams {
   var localId: java.lang.String
    // 图片的localID

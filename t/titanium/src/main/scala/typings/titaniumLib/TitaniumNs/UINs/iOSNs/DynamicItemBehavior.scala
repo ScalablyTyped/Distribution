@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 			 * Base dynamic configuration for an item.
 			 */
-
 trait DynamicItemBehavior
   extends titaniumLib.TitaniumNs.Proxy {
   /**

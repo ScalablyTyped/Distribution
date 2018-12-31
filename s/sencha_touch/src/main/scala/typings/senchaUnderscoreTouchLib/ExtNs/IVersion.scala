@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVersion extends js.Object {
   /** [Method] Create a closure for deprecated code
   		* @param packageName String The package name.

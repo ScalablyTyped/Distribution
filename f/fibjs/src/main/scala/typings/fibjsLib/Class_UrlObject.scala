@@ -10,9 +10,18 @@ import scala.scalajs.js.annotation._
 	* @brief Url 处理对象
 	* @detail 基础模块。提供 url 的格式化，解析与拼装,```JavaScript,var url = new net.Url('http://www.xici.net/');,var url = new net.Url({protocol: 'http:', hostname:'www.xici.net', pathname:'/'});,```
 	*/
-
 @JSGlobal("Class_UrlObject")
 @js.native
+/**
+	 *
+	 * @brief UrlObject 对象构造函数，使用 url 字符串构造
+	 * @param url 指定构造 url 字符串
+	 * @param parseQueryString 指定是否解析 query
+	 * @param slashesDenoteHost  默认为false, 如果设置为true，则从字符串'//'之后到下一个'/'之前的字符串会被解析为host，例如'//foo/bar', 结果应该是{host: 'foo', pathname: '/bar'}而不是{pathname: '//foo/bar'}
+	 *
+	 *
+	 *
+	 */
 class Class_UrlObject () extends Class__object {
   /**
   	 *
@@ -23,38 +32,8 @@ class Class_UrlObject () extends Class__object {
   	 *
   	 */
   def this(args: js.Object) = this()
-  /**
-  	 *
-  	 * @brief UrlObject 对象构造函数，使用 url 字符串构造
-  	 * @param url 指定构造 url 字符串
-  	 * @param parseQueryString 指定是否解析 query
-  	 * @param slashesDenoteHost  默认为false, 如果设置为true，则从字符串'//'之后到下一个'/'之前的字符串会被解析为host，例如'//foo/bar', 结果应该是{host: 'foo', pathname: '/bar'}而不是{pathname: '//foo/bar'}
-  	 *
-  	 *
-  	 *
-  	 */
   def this(url: java.lang.String) = this()
-  /**
-  	 *
-  	 * @brief UrlObject 对象构造函数，使用 url 字符串构造
-  	 * @param url 指定构造 url 字符串
-  	 * @param parseQueryString 指定是否解析 query
-  	 * @param slashesDenoteHost  默认为false, 如果设置为true，则从字符串'//'之后到下一个'/'之前的字符串会被解析为host，例如'//foo/bar', 结果应该是{host: 'foo', pathname: '/bar'}而不是{pathname: '//foo/bar'}
-  	 *
-  	 *
-  	 *
-  	 */
   def this(url: java.lang.String, parseQueryString: scala.Boolean) = this()
-  /**
-  	 *
-  	 * @brief UrlObject 对象构造函数，使用 url 字符串构造
-  	 * @param url 指定构造 url 字符串
-  	 * @param parseQueryString 指定是否解析 query
-  	 * @param slashesDenoteHost  默认为false, 如果设置为true，则从字符串'//'之后到下一个'/'之前的字符串会被解析为host，例如'//foo/bar', 结果应该是{host: 'foo', pathname: '/bar'}而不是{pathname: '//foo/bar'}
-  	 *
-  	 *
-  	 *
-  	 */
   def this(url: java.lang.String, parseQueryString: scala.Boolean, slashesDenoteHost: scala.Boolean) = this()
   /**
   	 * class prop
@@ -66,7 +45,6 @@ class Class_UrlObject () extends Class__object {
   	 *
   	 * @type String
   	 */
-  
   var auth: java.lang.String = js.native
   /**
   	 * class prop
@@ -78,7 +56,6 @@ class Class_UrlObject () extends Class__object {
   	 *
   	 * @type String
   	 */
-  
   var hash: java.lang.String = js.native
   /**
   	 * class prop
@@ -90,7 +67,6 @@ class Class_UrlObject () extends Class__object {
   	 *
   	 * @type String
   	 */
-  
   var host: java.lang.String = js.native
   /**
   	 * class prop
@@ -102,7 +78,6 @@ class Class_UrlObject () extends Class__object {
   	 *
   	 * @type String
   	 */
-  
   var hostname: java.lang.String = js.native
   /**
   	 * class prop
@@ -114,7 +89,6 @@ class Class_UrlObject () extends Class__object {
   	 *
   	 * @type String
   	 */
-  
   var href: java.lang.String = js.native
   /**
   	 * class prop
@@ -126,7 +100,6 @@ class Class_UrlObject () extends Class__object {
   	 *
   	 * @type String
   	 */
-  
   var password: java.lang.String = js.native
   /**
   	 * class prop
@@ -138,7 +111,6 @@ class Class_UrlObject () extends Class__object {
   	 *
   	 * @type String
   	 */
-  
   var path: java.lang.String = js.native
   /**
   	 * class prop
@@ -150,7 +122,6 @@ class Class_UrlObject () extends Class__object {
   	 *
   	 * @type String
   	 */
-  
   var pathname: java.lang.String = js.native
   /**
   	 * class prop
@@ -162,7 +133,6 @@ class Class_UrlObject () extends Class__object {
   	 *
   	 * @type String
   	 */
-  
   var port: java.lang.String = js.native
   /**
   	 * class prop
@@ -174,7 +144,6 @@ class Class_UrlObject () extends Class__object {
   	 *
   	 * @type String
   	 */
-  
   var protocol: java.lang.String = js.native
   /**
   	 * class prop
@@ -186,7 +155,6 @@ class Class_UrlObject () extends Class__object {
   	 *
   	 * @type Value
   	 */
-  
   var query: js.Any = js.native
   /**
   	 * class prop
@@ -198,7 +166,6 @@ class Class_UrlObject () extends Class__object {
   	 *
   	 * @type String
   	 */
-  
   var search: java.lang.String = js.native
   /**
   	 * class prop
@@ -210,7 +177,6 @@ class Class_UrlObject () extends Class__object {
   	 *
   	 * @type Boolean
   	 */
-  
   var slashes: scala.Boolean = js.native
   /**
   	 * class prop
@@ -222,7 +188,6 @@ class Class_UrlObject () extends Class__object {
   	 *
   	 * @type String
   	 */
-  
   var username: java.lang.String = js.native
   /**
   	 *
@@ -252,27 +217,7 @@ class Class_UrlObject () extends Class__object {
   	 *
   	 */
   def parse(url: java.lang.String): scala.Unit = js.native
-  /**
-  	 *
-  	 * @brief 解析一个 url 字符串
-  	 * @param url 指定需要解析的 url 字符串
-  	 * @param parseQueryString 指定是否解析 query
-  	 * @param slashesDenoteHost  默认为false, 如果设置为true，则从字符串'//'之后到下一个'/'之前的字符串会被解析为host，例如'//foo/bar', 结果应该是{host: 'foo', pathname: '/bar'}而不是{pathname: '//foo/bar'}
-  	 *
-  	 *
-  	 *
-  	 */
   def parse(url: java.lang.String, parseQueryString: scala.Boolean): scala.Unit = js.native
-  /**
-  	 *
-  	 * @brief 解析一个 url 字符串
-  	 * @param url 指定需要解析的 url 字符串
-  	 * @param parseQueryString 指定是否解析 query
-  	 * @param slashesDenoteHost  默认为false, 如果设置为true，则从字符串'//'之后到下一个'/'之前的字符串会被解析为host，例如'//foo/bar', 结果应该是{host: 'foo', pathname: '/bar'}而不是{pathname: '//foo/bar'}
-  	 *
-  	 *
-  	 *
-  	 */
   def parse(url: java.lang.String, parseQueryString: scala.Boolean, slashesDenoteHost: scala.Boolean): scala.Unit = js.native
   /**
   	 *

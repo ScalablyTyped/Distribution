@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Source extends js.Object {
   var card: js.UndefOr[Card] = js.undefined
   var client_secret: java.lang.String

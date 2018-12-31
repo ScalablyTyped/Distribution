@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Operator symbols to be used when querying data
-     */
-
+  * Operator symbols to be used when querying data
+  */
 trait Operators extends js.Object {
   var adjacent: js.Symbol
   var all: js.Symbol

@@ -8,23 +8,19 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "Permissions")
 @js.native
 object PermissionsNs extends js.Object {
-  
   trait PermissionDetailsLocationAndroid extends js.Object {
     var scope: expoLib.expoLibStrings.fine | expoLib.expoLibStrings.coarse | expoLib.expoLibStrings.none
   }
   
-  
   trait PermissionDetailsLocationIOS extends js.Object {
     var scope: expoLib.expoLibStrings.whenInUse | expoLib.expoLibStrings.always
   }
-  
   
   trait PermissionResponse extends js.Object {
     var expires: PermissionExpires
     var permissions: expoLib.expoLibStrings.PermissionResponse with js.Any
     var status: PermissionStatus
   }
-  
   
   trait SinglePermissionResponse extends js.Object {
     var android: js.UndefOr[PermissionDetailsLocationAndroid] = js.undefined
@@ -42,8 +38,8 @@ object PermissionsNs extends js.Object {
   val NOTIFICATIONS: expoLib.expoLibStrings.notifications = js.native
   val REMINDERS: expoLib.expoLibStrings.reminders = js.native
   /**
-       * Will be removed in SDK 32
-       */
+    * Will be removed in SDK 32
+    */
   val SMS: expoLib.expoLibStrings.SMS = js.native
   val SYSTEM_BRIGHTNESS: expoLib.expoLibStrings.systemBrightness = js.native
   val USER_FACING_NOTIFICATIONS: expoLib.expoLibStrings.userFacingNotifications = js.native

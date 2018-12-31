@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListPartsQuery extends js.Object {
    // Starting position of a specific list. A part is listed only when the part number is greater than the value of this parameter.
   var `encoding-type`: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatePickerAndroidOpenReturn extends js.Object {
   var action: java.lang.String
   var day: js.UndefOr[scala.Double] = js.undefined

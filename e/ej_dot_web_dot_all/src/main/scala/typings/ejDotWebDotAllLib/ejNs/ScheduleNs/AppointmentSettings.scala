@@ -5,85 +5,84 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AppointmentSettings extends js.Object {
   /** Binds the name of allDay field in dataSource. It indicates whether the appointment is an all-day appointment or not.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var allDay: js.UndefOr[java.lang.String] = js.undefined
   /** When set to false, doesn't consider the time difference offset calculation on appointment time.
-               * @Default {true}
-               */
+    * @Default {true}
+    */
   var applyTimeOffset: js.UndefOr[scala.Boolean] = js.undefined
   /** Binds the name of categorize field in dataSource. It indicates the categorize value, red categorize, green, yellow and so on applied to the appointments.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var categorize: js.UndefOr[java.lang.String] = js.undefined
   /** The dataSource option accepts either JSON object collection or DataManager (ej.DataManager) instance that contains Schedule appointments.
-               * @Default {[]}
-               */
+    * @Default {[]}
+    */
   var dataSource: js.UndefOr[js.Any | js.Array[_]] = js.undefined
   /** Binds the description field name in dataSource. It indicates the appointment description.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var description: js.UndefOr[java.lang.String] = js.undefined
   /** When set to true, introduces a new option to edit only the future occurrences of the appointments in a recurrence series from the currently selected appointment's date.
-               * @Default {false}
-               */
+    * @Default {false}
+    */
   var editFutureEventsOnly: js.UndefOr[scala.Boolean] = js.undefined
   /** Binds the name of endTime field in dataSource with the end time of Schedule appointments. It indicates the date and time when Schedule appointment actually ends.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var endTime: js.UndefOr[java.lang.String] = js.undefined
   /** Binds the name of end timezone field in dataSource. It indicates the timezone of appointment end date. When the endTimeZone field is not mentioned, the appointment uses the
-               * Schedule timeZone or System timeZone.
-               * @Default {null}
-               */
+    * Schedule timeZone or System timeZone.
+    * @Default {null}
+    */
   var endTimeZone: js.UndefOr[java.lang.String] = js.undefined
   /** Binds the id field name in dataSource to the id of Schedule appointments. It denotes the unique id assigned to appointments.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /** Binds the name of location field in dataSource. It indicates the appointment location.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var location: js.UndefOr[java.lang.String] = js.undefined
   /** Binds the name of the priority field in dataSource. It indicates the priority, high, low, medium and none of the appointments.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var priority: js.UndefOr[java.lang.String] = js.undefined
   /** It holds either the ej.Query() object or simply the query string that retrieves the specified records from the table.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var query: js.UndefOr[java.lang.String] = js.undefined
   /** Binds the name of recurrence field in dataSource. It indicates whether the appointment is a recurrence appointment or not.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var recurrence: js.UndefOr[java.lang.String] = js.undefined
   /** Binds the name of recurrenceRule field in dataSource. It indicates the recurrence pattern associated with appointments.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var recurrenceRule: js.UndefOr[java.lang.String] = js.undefined
   /** Binds one or more fields in resource collection dataSource. It maps the resource field names with appointments denoting the resource of appointments actually belongs.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var resourceFields: js.UndefOr[java.lang.String] = js.undefined
   /** Binds the name of startTime field in the dataSource with start time of the Schedule appointments. It indicates the date and Time when Schedule appointment actually starts.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var startTime: js.UndefOr[java.lang.String] = js.undefined
   /** Binds the name of start timezone field in dataSource. It indicates the timezone of appointment start date. When startTimeZone field is not mentioned, the appointment uses the
-               * Schedule timeZone or System timeZone.
-               * @Default {null}
-               */
+    * Schedule timeZone or System timeZone.
+    * @Default {null}
+    */
   var startTimeZone: js.UndefOr[java.lang.String] = js.undefined
   /** Binds the name of subject field in the dataSource to appointment Subject. Indicates the Subject or title that gets displayed on Schedule appointments.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var subject: js.UndefOr[java.lang.String] = js.undefined
   /** Assign the table name from where the records are to be fetched for the Schedule.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var tableName: js.UndefOr[java.lang.String] = js.undefined
 }
 

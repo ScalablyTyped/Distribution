@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SocketTypes extends js.Object {
   var dealer: scala.Double
   var pair: scala.Double

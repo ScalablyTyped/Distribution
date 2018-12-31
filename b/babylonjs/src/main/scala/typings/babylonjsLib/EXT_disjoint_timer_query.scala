@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EXT_disjoint_timer_query extends js.Object {
   var GPU_DISJOINT_EXT: scala.Double
   var QUERY_COUNTER_BITS_EXT: scala.Double

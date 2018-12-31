@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Opts extends js.Object {
   // the 'browser' property to use from package.json (defaults to 'browser')
   var browser: js.UndefOr[java.lang.String] = js.undefined

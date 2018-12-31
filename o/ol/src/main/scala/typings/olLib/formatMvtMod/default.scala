@@ -6,23 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * @classdesc
-     * Feature format for reading data in the Mapbox MVT format.
-     *
-     * @param opt_options Options.
-     * @api
-     */
+  * @classdesc
+  * Feature format for reading data in the Mapbox MVT format.
+  *
+  * @param opt_options Options.
+  * @api
+  */
 @JSImport("ol/format/mvt", JSImport.Default)
 @js.native
+/**
+  * @classdesc
+  * Feature format for reading data in the Mapbox MVT format.
+  *
+  * @param opt_options Options.
+  * @api
+  */
 class default ()
   extends openlayersLib.openlayersMod.formatNs.MVT {
-  /**
-           * @classdesc
-           * Feature format for reading data in the Mapbox MVT format.
-           *
-           * @param opt_options Options.
-           * @api
-           */
   def this(opt_options: openlayersLib.openlayersMod.olxNs.formatNs.MVTOptions) = this()
 }
 

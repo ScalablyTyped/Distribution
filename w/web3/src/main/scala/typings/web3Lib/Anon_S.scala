@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_S extends js.Object {
   var gas: java.lang.String
   var gasPrice: java.lang.String

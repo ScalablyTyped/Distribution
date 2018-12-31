@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options
   extends babelDashCoreLib.babelDashCoreMod.TransformOptions {
   var exclude: js.UndefOr[Matcher] = js.undefined

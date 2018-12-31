@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AbstractBlock extends js.Object {
   var difficulty: bignumberDotJsLib.bignumberDotJsMod.default
   var extraData: java.lang.String

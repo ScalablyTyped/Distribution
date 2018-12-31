@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFolderListingColumn extends js.Object {
   var Flags: mfilesLib.MFilesNs.MFFolderListingColumnFlags
   val ID: scala.Double

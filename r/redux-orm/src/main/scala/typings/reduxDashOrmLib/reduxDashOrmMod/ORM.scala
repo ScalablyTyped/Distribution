@@ -33,9 +33,7 @@ class ORM[State /* <: ORMCommonState */] () extends js.Object {
     model: org.scalablytyped.runtime.Instantiable1[/* props */ ModelProps, Model[js.Object, js.Object, js.Object]]
   ): scala.Unit = js.native
   @JSName("register")
-  def register_M[M](
-    model: (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(M))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(M))),List())))) */js.Any)*
-  ): scala.Unit = js.native
+  def register_M[M](model: (/* import warning: ImportType.apply Failed type conversion: M[keyof M] */ js.Any)*): scala.Unit = js.native
   def session(state: State): SessionWithModels[State] = js.native
   def setFieldInstalled(modelName: java.lang.String, fieldName: java.lang.String): scala.Unit = js.native
 }

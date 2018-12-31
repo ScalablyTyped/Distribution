@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * @class
-             */
-
+  * @class
+  */
 trait Wait
   extends siestaLib.SiestaNs.TestNs.IAction {
   var args: js.UndefOr[js.Array[_]] = js.undefined

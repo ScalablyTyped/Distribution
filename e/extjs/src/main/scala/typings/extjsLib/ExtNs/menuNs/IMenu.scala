@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMenu
   extends extjsLib.ExtNs.panelNs.IPanel {
   /** [Method] Invoked after the Component is shown after onShow is called */

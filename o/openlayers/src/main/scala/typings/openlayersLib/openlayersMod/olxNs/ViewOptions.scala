@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Object literal with config options for the view.
-     */
-
+  * Object literal with config options for the view.
+  */
 trait ViewOptions extends js.Object {
   var center: js.UndefOr[openlayersLib.openlayersMod.Coordinate] = js.undefined
   var constrainRotation: js.UndefOr[scala.Boolean | scala.Double] = js.undefined

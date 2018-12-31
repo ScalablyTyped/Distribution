@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Baud extends js.Object {
   var baud: scala.Double
   var portId: firmataLib.firmataMod.BoardNs.SERIAL_PORT_ID

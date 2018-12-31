@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JQueryMobileEvents extends js.Object {
   var orientationchange: js.Any
   var pagebeforechange: js.Any

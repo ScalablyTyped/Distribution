@@ -29,14 +29,14 @@ class TreeEdge ()
   /* CompleteClass */
   override var toVertex: goLib.goMod.goNs.LayoutVertex = js.native
   /**
-          * Commits the route of this edge to the corresponding Link, if any.
-          */
+    * Commits the route of this edge to the corresponding Link, if any.
+    */
   /* CompleteClass */
   override def commit(): scala.Unit = js.native
   /**
-          * Returns the edge's vertex at the other of this edge from the given vertex.
-          * @param {LayoutVertex} v
-          */
+    * Returns the edge's vertex at the other of this edge from the given vertex.
+    * @param {LayoutVertex} v
+    */
   /* CompleteClass */
   override def getOtherVertex(v: goLib.goMod.goNs.LayoutVertex): scala.Unit = js.native
 }

@@ -12,29 +12,29 @@ sealed trait InputTypes extends js.Object
 @js.native
 object InputTypes extends js.Object {
   /**
-       * Input given by keyboard (typed).
-       */
+    * Input given by keyboard (typed).
+    */
   @js.native
   sealed trait KEYBOARD
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.InputTypes
   
   /**
-       * Input given by touch.
-       */
+    * Input given by touch.
+    */
   @js.native
   sealed trait TOUCH
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.InputTypes
   
   /**
-       * Unspecified.
-       */
+    * Unspecified.
+    */
   @js.native
   sealed trait UNSPECIFIED
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.InputTypes
   
   /**
-       * Input given by voice (spoken).
-       */
+    * Input given by voice (spoken).
+    */
   @js.native
   sealed trait VOICE
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.InputTypes

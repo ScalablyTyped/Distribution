@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseFieldsProps[P] extends js.Object {
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[_]] = js.undefined
   var format: js.UndefOr[reduxDashFormLib.libFieldMod.Formatter | scala.Null] = js.undefined

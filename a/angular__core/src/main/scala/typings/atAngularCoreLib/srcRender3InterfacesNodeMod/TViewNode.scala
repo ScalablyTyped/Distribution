@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TViewNode extends TNode {
   @JSName("child")
   var child_TViewNode: TElementNode | TTextNode | TElementContainerNode | TContainerNode | TProjectionNode | scala.Null

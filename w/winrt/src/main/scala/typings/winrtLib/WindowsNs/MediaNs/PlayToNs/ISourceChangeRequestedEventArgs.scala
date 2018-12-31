@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISourceChangeRequestedEventArgs extends js.Object {
   var album: java.lang.String
   var author: java.lang.String

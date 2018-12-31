@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MouseEvent extends js.Object {
   var mozMovementX: scala.Double
   var mozMovementY: scala.Double

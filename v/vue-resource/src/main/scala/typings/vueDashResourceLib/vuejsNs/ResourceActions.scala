@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResourceActions extends js.Object {
   var delete: vueDashResourceLib.Anon_Method
   var get: vueDashResourceLib.Anon_Method

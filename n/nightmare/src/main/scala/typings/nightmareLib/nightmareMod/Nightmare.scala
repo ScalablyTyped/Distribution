@@ -39,7 +39,6 @@ trait Nightmare extends js.Object {
   ): Nightmare = js.native
   // Extract
   def exists(selector: java.lang.String): Nightmare = js.native
-  // Extract
   def exists(selector: java.lang.String, cb: js.Function1[/* result */ scala.Boolean, scala.Unit]): Nightmare = js.native
   def forward(): Nightmare = js.native
   def goto(url: java.lang.String): Nightmare = js.native

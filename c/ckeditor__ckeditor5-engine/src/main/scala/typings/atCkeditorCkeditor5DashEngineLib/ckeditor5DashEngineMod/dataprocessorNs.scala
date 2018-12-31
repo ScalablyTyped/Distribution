@@ -16,7 +16,6 @@ object dataprocessorNs extends js.Object {
   }
   
   // engine/dataprocessor/dataprocessor
-  
   trait DataProcessor extends js.Object
   
   // engine/dataprocessor/htmldataprocessor
@@ -24,7 +23,6 @@ object dataprocessorNs extends js.Object {
   class HtmlDataProcessor () extends DataProcessor
   
   // engine/dataprocessor/htmlwriter
-  
   trait HtmlWriter extends js.Object {
     def getHtml(fragment: atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.DocumentFragment): java.lang.String
   }

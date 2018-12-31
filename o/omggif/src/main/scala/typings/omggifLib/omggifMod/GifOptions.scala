@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GifOptions extends js.Object {
   var background: js.UndefOr[scala.Double] = js.undefined
   var loop: js.UndefOr[scala.Double] = js.undefined

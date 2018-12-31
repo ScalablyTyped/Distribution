@@ -43,9 +43,9 @@ abstract class Gamepad () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[IGameController, winrtDashUwpLib.WindowsNs.SystemNs.UserChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Gets a snapshot of the gamepad state.
-                   * @return Returns a GamepadReading containing the current state of the gamepad.
-                   */
+    * Gets a snapshot of the gamepad state.
+    * @return Returns a GamepadReading containing the current state of the gamepad.
+    */
   def getCurrentReading(): GamepadReading = js.native
   /** Signals when a headset is attached to the gamepad. */
   def onheadsetconnected(ev: Headset with winrtDashUwpLib.WindowsNs.WinRTEvent[IGameController]): scala.Unit = js.native

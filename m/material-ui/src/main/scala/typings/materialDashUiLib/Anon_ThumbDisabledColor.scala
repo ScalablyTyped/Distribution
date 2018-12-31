@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ThumbDisabledColor extends js.Object {
   var labelColor: js.UndefOr[java.lang.String] = js.undefined
   var labelDisabledColor: js.UndefOr[java.lang.String] = js.undefined

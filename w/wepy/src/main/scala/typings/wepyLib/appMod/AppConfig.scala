@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AppConfig extends js.Object {
   var appEvents: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var noPromiseAPI: js.UndefOr[

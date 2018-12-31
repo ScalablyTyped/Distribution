@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DerivedSource extends js.Object {
   /** What source to base the produced source on (if any). */
   var derivationMode: js.UndefOr[java.lang.String] = js.undefined

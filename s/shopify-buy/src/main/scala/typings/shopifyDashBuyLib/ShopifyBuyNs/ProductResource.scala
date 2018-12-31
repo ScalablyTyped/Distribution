@@ -14,9 +14,9 @@ trait ProductResource extends js.Object {
   def fetchMultiple(ids: js.Array[java.lang.String]): js.Promise[js.Array[Product]] = js.native
   def fetchQuery(query: Query): js.Promise[js.Array[Product]] = js.native
   /**
-          *   Product Helper Namespace
-          *   @link https://shopify.github.io/js-buy-sdk/ProductResource.html
-          */
+    *   Product Helper Namespace
+    *   @link https://shopify.github.io/js-buy-sdk/ProductResource.html
+    */
   def variantForOptions(product: Product, options: Option): ProductVariant = js.native
 }
 

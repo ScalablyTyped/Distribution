@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IChartOptions extends js.Object {
   /**
-       * Displays not the latest data, but data from the given percentile.
-       * Useful when trying to see old data saved by setting a high value for maxDataSetLength.
-       * Should be a value between 0 and 1.
-       */
+    * Displays not the latest data, but data from the given percentile.
+    * Useful when trying to see old data saved by setting a high value for maxDataSetLength.
+    * Should be a value between 0 and 1.
+    */
   var displayDataFromPercentile: js.UndefOr[scala.Double] = js.undefined
   /** Whether to render at different DPI depending upon the device. Enabled by default. */
   var enableDpiScaling: js.UndefOr[scala.Boolean] = js.undefined

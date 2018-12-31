@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISortService extends js.Object {
   var colSortFnCache: js.Any
   var isCustomSort: scala.Boolean

@@ -17,6 +17,11 @@ class namespaced protected () extends Chart {
 @JSImport("chart.js", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {
+  val Chart: org.scalablytyped.runtime.Instantiable2[
+    /* context */ java.lang.String | stdLib.CanvasRenderingContext2D | stdLib.HTMLCanvasElement | (stdLib.ArrayLike[stdLib.CanvasRenderingContext2D | stdLib.HTMLCanvasElement]), 
+    /* options */ chartDotJsLib.chartDotJsMod.ChartNs.ChartConfiguration, 
+    chartDotJsLib.chartDotJsMod.Chart
+  ] = js.native
   // Tooltip Static Options
   var Tooltip: chartDotJsLib.chartDotJsMod.ChartNs.ChartTooltipsStaticConfiguration = js.native
   var controllers: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native

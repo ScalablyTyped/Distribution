@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IArguments
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[js.Any] {
   var callee: js.Function

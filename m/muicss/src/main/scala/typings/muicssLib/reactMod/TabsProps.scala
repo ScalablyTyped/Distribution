@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TabsProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
   var defaultSelectedIndex: js.UndefOr[scala.Double] = js.undefined

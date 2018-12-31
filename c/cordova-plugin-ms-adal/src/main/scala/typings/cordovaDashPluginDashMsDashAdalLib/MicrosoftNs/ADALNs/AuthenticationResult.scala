@@ -18,10 +18,10 @@ class AuthenticationResult () extends js.Object {
   var tenantId: java.lang.String = js.native
   var userInfo: UserInfo = js.native
   /**
-              * Creates authorization header for web requests.
-              *
-              * @returns {String} The authorization header.
-              */
+    * Creates authorization header for web requests.
+    *
+    * @returns {String} The authorization header.
+    */
   def createAuthorizationHeader(): java.lang.String = js.native
 }
 

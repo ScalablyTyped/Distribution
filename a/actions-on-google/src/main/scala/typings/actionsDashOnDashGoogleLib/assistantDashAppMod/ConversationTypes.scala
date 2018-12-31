@@ -12,22 +12,22 @@ sealed trait ConversationTypes extends js.Object
 @js.native
 object ConversationTypes extends js.Object {
   /**
-       * An active (ongoing) conversation.
-       */
+    * An active (ongoing) conversation.
+    */
   @js.native
   sealed trait ACTIVE
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.ConversationTypes
   
   /**
-       * A new conversation.
-       */
+    * A new conversation.
+    */
   @js.native
   sealed trait NEW
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.ConversationTypes
   
   /**
-       * Unspecified conversation state.
-       */
+    * Unspecified conversation state.
+    */
   @js.native
   sealed trait UNSPECIFIED
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.ConversationTypes

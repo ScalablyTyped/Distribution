@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PullCallSymbolInfo extends js.Object {
   var ast: AST
   var candidateSignature: PullSignatureSymbol

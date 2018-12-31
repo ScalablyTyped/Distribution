@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Filter extends js.Object {
   var BLOOM_UPDATE_ALL: scala.Double
   var BLOOM_UPDATE_NONE: scala.Double

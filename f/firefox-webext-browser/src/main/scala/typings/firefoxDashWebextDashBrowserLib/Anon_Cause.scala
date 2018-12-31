@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Cause extends js.Object {
   /** The underlying reason behind the cookie's change. */
   var cause: firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.OnChangedCause

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Parent extends js.Object {
   var fields: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var index: js.UndefOr[java.lang.String] = js.undefined

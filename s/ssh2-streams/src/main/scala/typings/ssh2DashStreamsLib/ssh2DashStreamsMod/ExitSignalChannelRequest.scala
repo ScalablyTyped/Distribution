@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExitSignalChannelRequest extends js.Object {
   var coredump: scala.Boolean
   var description: java.lang.String

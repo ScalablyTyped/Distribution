@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StateHistory extends js.Object {
   /** The teacher or student who made the change */
   var actorUserId: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Analyze extends js.Object {
    // Detects if faces are present.If present, generate coordinates, gender and age.
   var Adult: js.UndefOr[scala.Boolean] = js.undefined

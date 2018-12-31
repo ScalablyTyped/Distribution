@@ -10,18 +10,18 @@ trait ColumnsMethods
   extends CoreMethods
      with CommonColumnMethod {
   /**
-           * Obtain the data for the columns from the selector
-           */
+    * Obtain the data for the columns from the selector
+    */
   def data(): Api = js.native
   /**
-           * Get the data source property for the selected columns.
-           */
+    * Get the data source property for the selected columns.
+    */
   def dataSrc(): Api = js.native
   /**
-           * Iterate over each selected column, with the function context set to be the column in question. Since: DataTables 1.10.6
-           *
-           * @param fn Function to execute for every column selected.
-           */
+    * Iterate over each selected column, with the function context set to be the column in question. Since: DataTables 1.10.6
+    *
+    * @param fn Function to execute for every column selected.
+    */
   def every(
     fn: js.ThisFunction3[
       /* this */ ColumnMethods, 
@@ -32,20 +32,15 @@ trait ColumnsMethods
     ]
   ): Api = js.native
   /**
-           * Get the column indexes of the selected columns.
-           *
-           * @param t Specify if you want to get the column data index (default) or the visible index (visible).
-           */
+    * Get the column indexes of the selected columns.
+    *
+    * @param t Specify if you want to get the column data index (default) or the visible index (visible).
+    */
   def indexes(): Api = js.native
-  /**
-           * Get the column indexes of the selected columns.
-           *
-           * @param t Specify if you want to get the column data index (default) or the visible index (visible).
-           */
   def indexes(t: java.lang.String): Api = js.native
   /**
-           * Obtain the th / td nodes for the selected columns
-           */
+    * Obtain the th / td nodes for the selected columns
+    */
   def nodes(): js.Array[js.Array[Api]] = js.native
 }
 

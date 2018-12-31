@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ResetContent extends js.Object {
   var Accepted: scala.Double
   var BadGateway: scala.Double

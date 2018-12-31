@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Media extends js.Object {
   /** The person who uploaded this media. */
   var author: js.UndefOr[gapiDotClientDotPlusdomainsLib.Anon_DisplayNameUrlImageId] = js.undefined
@@ -40,13 +39,13 @@ trait Media extends js.Object {
   /** The duration in milliseconds of this video. */
   var videoDuration: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The encoding status of this video. Possible values are:
-               * - "UPLOADING" - Not all the video bytes have been received.
-               * - "PENDING" - Video not yet processed.
-               * - "FAILED" - Video processing failed.
-               * - "READY" - A single video stream is playable.
-               * - "FINAL" - All video streams are playable.
-               */
+    * The encoding status of this video. Possible values are:
+    * - "UPLOADING" - Not all the video bytes have been received.
+    * - "PENDING" - Video not yet processed.
+    * - "FAILED" - Video processing failed.
+    * - "READY" - A single video stream is playable.
+    * - "FINAL" - All video streams are playable.
+    */
   var videoStatus: js.UndefOr[java.lang.String] = js.undefined
   /** The width in pixels of the original image. */
   var width: js.UndefOr[scala.Double] = js.undefined

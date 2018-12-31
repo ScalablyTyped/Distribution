@@ -26,7 +26,7 @@ package object effectsMod {
     /* arg4 */ T4, 
     /* arg5 */ T5, 
     /* arg6 */ T6, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     js.Any
   ]
   type GenericAllEffectDescriptor[T] = js.Array[T] | org.scalablytyped.runtime.StringDictionary[T]
@@ -53,7 +53,7 @@ package object effectsMod {
     /* arg5 */ T5, 
     /* arg6 */ T6, 
     /* arg7 */ js.Any, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     js.Any
   ]
   type JoinEffectDescriptor = reduxDashSagaLib.reduxDashSagaMod.Task

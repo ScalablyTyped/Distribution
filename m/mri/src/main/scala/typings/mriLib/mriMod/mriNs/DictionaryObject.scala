@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An object with any keys whose values conform to a specific type */
-
 trait DictionaryObject[T]
   extends /* key */ org.scalablytyped.runtime.StringDictionary[T]
 

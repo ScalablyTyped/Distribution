@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait XSSFilters extends js.Object {
   def inDoubleQuotedAttr(s: java.lang.String): java.lang.String
   def inHTMLComment(s: java.lang.String): java.lang.String

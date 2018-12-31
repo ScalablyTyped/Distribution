@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AuthorizedKeysView extends js.Object {
   /** [Output Only] The list of authorized public keys in SSH format. */
   var keys: js.UndefOr[js.Array[java.lang.String]] = js.undefined

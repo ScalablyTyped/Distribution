@@ -7,18 +7,17 @@ import scala.scalajs.js.annotation._
 
 @JSImport("atom", "TextEditor")
 @js.native
+// NOTE: undocumented within the public API. Don't go down the rabbit hole.
 class TextEditor () extends js.Object {
-  // NOTE: undocumented within the public API. Don't go down the rabbit hole.
   def this(options: js.Object) = this()
   val id: scala.Double = js.native
   /**
-       *  Abort an open transaction, undoing any operations performed so far within the
-       *  transaction.
-       */
+    *  Abort an open transaction, undoing any operations performed so far within the
+    *  transaction.
+    */
   def abortTransaction(): scala.Unit = js.native
   /** Add a cursor at the given position in buffer coordinates. */
   def addCursorAtBufferPosition(bufferPosition: PointCompatible): Cursor = js.native
-  /** Add a cursor at the given position in buffer coordinates. */
   def addCursorAtBufferPosition(bufferPosition: PointCompatible, options: atomLib.Anon_Autoscroll): Cursor = js.native
   /** Add a cursor at the position in screen coordinates. */
   def addCursorAtScreenPosition(screenPosition: PointCompatible): Cursor = js.native
@@ -27,34 +26,26 @@ class TextEditor () extends js.Object {
   def addGutter(options: GutterOptions): Gutter = js.native
   /** Create a marker layer to group related markers. */
   def addMarkerLayer(): DisplayMarkerLayer = js.native
-  /** Create a marker layer to group related markers. */
   def addMarkerLayer(options: atomLib.Anon_MaintainHistory): DisplayMarkerLayer = js.native
   /** Add a selection for the given range in buffer coordinates. */
   def addSelectionForBufferRange(bufferRange: RangeCompatible): Selection = js.native
-  /** Add a selection for the given range in buffer coordinates. */
   def addSelectionForBufferRange(bufferRange: RangeCompatible, options: atomLib.Anon_ReversedPreserveFolds): Selection = js.native
   /** Add a selection for the given range in screen coordinates. */
   def addSelectionForScreenRange(screenRange: RangeCompatible): Selection = js.native
-  /** Add a selection for the given range in screen coordinates. */
   def addSelectionForScreenRange(screenRange: RangeCompatible, options: atomLib.Anon_ReversedPreserveFolds): Selection = js.native
   /** Indent rows intersecting selections based on the grammar's suggested indent level. */
   def autoIndentSelectedRows(): scala.Unit = js.native
-  /** Indent rows intersecting selections based on the grammar's suggested indent level. */
   def autoIndentSelectedRows(options: ReadonlyEditOptions): scala.Unit = js.native
   /**
-       *  For each selection, if the selection is empty, delete the character preceding
-       *  the cursor. Otherwise delete the selected text.
-       */
+    *  For each selection, if the selection is empty, delete the character preceding
+    *  the cursor. Otherwise delete the selected text.
+    */
   def backspace(): scala.Unit = js.native
-  /**
-       *  For each selection, if the selection is empty, delete the character preceding
-       *  the cursor. Otherwise delete the selected text.
-       */
   def backspace(options: ReadonlyEditOptions): scala.Unit = js.native
   /**
-       *  Scan regular expression matches in a given range in reverse order, calling the
-       *  given iterator function on each match.
-       */
+    *  Scan regular expression matches in a given range in reverse order, calling the
+    *  given iterator function on each match.
+    */
   def backwardsScanInBufferRange(
     regex: stdLib.RegExp,
     range: RangeCompatible,
@@ -62,12 +53,11 @@ class TextEditor () extends js.Object {
   ): scala.Unit = js.native
   /** Convert a position in screen-coordinates to buffer-coordinates. */
   def bufferPositionForScreenPosition(bufferPosition: PointCompatible): Point = js.native
-  /** Convert a position in screen-coordinates to buffer-coordinates. */
   def bufferPositionForScreenPosition(bufferPosition: PointCompatible, options: atomLib.Anon_ClipDirectionBackwardForward): Point = js.native
   /**
-       *  Get the range in buffer coordinates of all tokens surrounding the cursor
-       *  that match the given scope selector.
-       */
+    *  Get the range in buffer coordinates of all tokens surrounding the cursor
+    *  that match the given scope selector.
+    */
   def bufferRangeForScopeAtCursor(scopeSelector: java.lang.String): Range = js.native
   /** Undocumented: Buffer range for syntax scope at position */
   def bufferRangeForScopeAtPosition(scope: java.lang.String, point: PointCompatible): Range = js.native
@@ -76,193 +66,139 @@ class TextEditor () extends js.Object {
   /** Clip the given Point to a valid position in the buffer. */
   def clipBufferPosition(bufferPosition: PointCompatible): Point = js.native
   /**
-       *  Clip the start and end of the given range to valid positions in the buffer.
-       *  See ::clipBufferPosition for more information.
-       */
+    *  Clip the start and end of the given range to valid positions in the buffer.
+    *  See ::clipBufferPosition for more information.
+    */
   def clipBufferRange(range: RangeCompatible): Range = js.native
   /** Clip the given Point to a valid position on screen. */
   def clipScreenPosition(screenPosition: PointCompatible): Point = js.native
-  /** Clip the given Point to a valid position on screen. */
   def clipScreenPosition(screenPosition: PointCompatible, options: atomLib.Anon_ClipDirectionBackwardForward): Point = js.native
   /**
-       *  Clip the start and end of the given range to valid positions on screen.
-       *  See ::clipScreenPosition for more information.
-       */
+    *  Clip the start and end of the given range to valid positions on screen.
+    *  See ::clipScreenPosition for more information.
+    */
   def clipScreenRange(range: RangeCompatible): Range = js.native
-  /**
-       *  Clip the start and end of the given range to valid positions on screen.
-       *  See ::clipScreenPosition for more information.
-       */
   def clipScreenRange(range: RangeCompatible, options: atomLib.Anon_ClipDirectionBackwardForward): Range = js.native
   // Clipboard Operations
   /** For each selection, copy the selected text. */
   def copySelectedText(): scala.Unit = js.native
   /**
-       *  Create a pointer to the current state of the buffer for use with ::revertToCheckpoint
-       *  and ::groupChangesSinceCheckpoint.
-       */
+    *  Create a pointer to the current state of the buffer for use with ::revertToCheckpoint
+    *  and ::groupChangesSinceCheckpoint.
+    */
   def createCheckpoint(): scala.Double = js.native
   /** For each selection, cut the selected text. */
   def cutSelectedText(): scala.Unit = js.native
-  /** For each selection, cut the selected text. */
   def cutSelectedText(options: ReadonlyEditOptions): scala.Unit = js.native
   /**
-       *  For each selection, if the selection is empty, cut all characters of the
-       *  containing buffer line following the cursor. Otherwise cut the selected text.
-       */
+    *  For each selection, if the selection is empty, cut all characters of the
+    *  containing buffer line following the cursor. Otherwise cut the selected text.
+    */
   def cutToEndOfBufferLine(): scala.Unit = js.native
-  /**
-       *  For each selection, if the selection is empty, cut all characters of the
-       *  containing buffer line following the cursor. Otherwise cut the selected text.
-       */
   def cutToEndOfBufferLine(options: ReadonlyEditOptions): scala.Unit = js.native
   /**
-       *  For each selection, if the selection is empty, cut all characters of the
-       *  containing screen line following the cursor. Otherwise cut the selected text.
-       */
+    *  For each selection, if the selection is empty, cut all characters of the
+    *  containing screen line following the cursor. Otherwise cut the selected text.
+    */
   def cutToEndOfLine(): scala.Unit = js.native
-  /**
-       *  For each selection, if the selection is empty, cut all characters of the
-       *  containing screen line following the cursor. Otherwise cut the selected text.
-       */
   def cutToEndOfLine(options: ReadonlyEditOptions): scala.Unit = js.native
   // Decorations
   /**
-       *  Add a decoration that tracks a DisplayMarker. When the marker moves, is
-       *  invalidated, or is destroyed, the decoration will be updated to reflect
-       *  the marker's state.
-       */
+    *  Add a decoration that tracks a DisplayMarker. When the marker moves, is
+    *  invalidated, or is destroyed, the decoration will be updated to reflect
+    *  the marker's state.
+    */
   def decorateMarker(marker: DisplayMarker, decorationParams: DecorationOptions): Decoration = js.native
-  /**
-       *  Add a decoration to every marker in the given marker layer. Can be used to
-       *  decorate a large number of markers without having to create and manage many
-       *  individual decorations.
-       */
   def decorateMarkerLayer(markerLayer: DisplayMarkerLayer, decorationParams: DecorationLayerOptions): LayerDecoration = js.native
   /**
-       *  Add a decoration to every marker in the given marker layer. Can be used to
-       *  decorate a large number of markers without having to create and manage many
-       *  individual decorations.
-       */
+    *  Add a decoration to every marker in the given marker layer. Can be used to
+    *  decorate a large number of markers without having to create and manage many
+    *  individual decorations.
+    */
   def decorateMarkerLayer(markerLayer: MarkerLayer, decorationParams: DecorationLayerOptions): LayerDecoration = js.native
   /**
-       *  For each selection, if the selection is empty, delete the character following
-       *  the cursor. Otherwise delete the selected text.
-       */
+    *  For each selection, if the selection is empty, delete the character following
+    *  the cursor. Otherwise delete the selected text.
+    */
   def delete(): scala.Unit = js.native
-  /**
-       *  For each selection, if the selection is empty, delete the character following
-       *  the cursor. Otherwise delete the selected text.
-       */
   def delete(options: ReadonlyEditOptions): scala.Unit = js.native
   /** Delete all lines intersecting selections. */
   def deleteLine(): scala.Unit = js.native
-  /** Delete all lines intersecting selections. */
   def deleteLine(options: ReadonlyEditOptions): scala.Unit = js.native
   /**
-       *  For each selection, if the selection is empty, delete all characters of the
-       *  containing line that precede the cursor. Otherwise delete the selected text.
-       */
+    *  For each selection, if the selection is empty, delete all characters of the
+    *  containing line that precede the cursor. Otherwise delete the selected text.
+    */
   def deleteToBeginningOfLine(): scala.Unit = js.native
-  /**
-       *  For each selection, if the selection is empty, delete all characters of the
-       *  containing line that precede the cursor. Otherwise delete the selected text.
-       */
   def deleteToBeginningOfLine(options: ReadonlyEditOptions): scala.Unit = js.native
   /**
-       *  For each selection, if the selection is empty, delete all characters of the
-       *  containing subword following the cursor. Otherwise delete the selected text.
-       */
+    *  For each selection, if the selection is empty, delete all characters of the
+    *  containing subword following the cursor. Otherwise delete the selected text.
+    */
   def deleteToBeginningOfSubword(): scala.Unit = js.native
-  /**
-       *  For each selection, if the selection is empty, delete all characters of the
-       *  containing subword following the cursor. Otherwise delete the selected text.
-       */
   def deleteToBeginningOfSubword(options: ReadonlyEditOptions): scala.Unit = js.native
   /**
-       *  For each selection, if the selection is empty, delete all characters of the
-       *  containing word that precede the cursor. Otherwise delete the selected text.
-       */
+    *  For each selection, if the selection is empty, delete all characters of the
+    *  containing word that precede the cursor. Otherwise delete the selected text.
+    */
   def deleteToBeginningOfWord(): scala.Unit = js.native
-  /**
-       *  For each selection, if the selection is empty, delete all characters of the
-       *  containing word that precede the cursor. Otherwise delete the selected text.
-       */
   def deleteToBeginningOfWord(options: ReadonlyEditOptions): scala.Unit = js.native
   /**
-       *  For each selection, if the selection is not empty, deletes the selection
-       *  otherwise, deletes all characters of the containing line following the cursor.
-       *  If the cursor is already at the end of the line, deletes the following newline.
-       */
+    *  For each selection, if the selection is not empty, deletes the selection
+    *  otherwise, deletes all characters of the containing line following the cursor.
+    *  If the cursor is already at the end of the line, deletes the following newline.
+    */
   def deleteToEndOfLine(): scala.Unit = js.native
-  /**
-       *  For each selection, if the selection is not empty, deletes the selection
-       *  otherwise, deletes all characters of the containing line following the cursor.
-       *  If the cursor is already at the end of the line, deletes the following newline.
-       */
   def deleteToEndOfLine(options: ReadonlyEditOptions): scala.Unit = js.native
   /**
-       *  For each selection, if the selection is empty, delete all characters of the
-       *  containing subword following the cursor. Otherwise delete the selected text.
-       */
+    *  For each selection, if the selection is empty, delete all characters of the
+    *  containing subword following the cursor. Otherwise delete the selected text.
+    */
   def deleteToEndOfSubword(): scala.Unit = js.native
-  /**
-       *  For each selection, if the selection is empty, delete all characters of the
-       *  containing subword following the cursor. Otherwise delete the selected text.
-       */
   def deleteToEndOfSubword(options: ReadonlyEditOptions): scala.Unit = js.native
   /**
-       *  For each selection, if the selection is empty, delete all characters of the
-       *  containing word following the cursor. Otherwise delete the selected text.
-       */
+    *  For each selection, if the selection is empty, delete all characters of the
+    *  containing word following the cursor. Otherwise delete the selected text.
+    */
   def deleteToEndOfWord(): scala.Unit = js.native
-  /**
-       *  For each selection, if the selection is empty, delete all characters of the
-       *  containing word following the cursor. Otherwise delete the selected text.
-       */
   def deleteToEndOfWord(options: ReadonlyEditOptions): scala.Unit = js.native
   /** Similar to ::deleteToEndOfWord, but deletes only up to the next word boundary. */
   def deleteToNextWordBoundary(): scala.Unit = js.native
-  /** Similar to ::deleteToEndOfWord, but deletes only up to the next word boundary. */
   def deleteToNextWordBoundary(options: ReadonlyEditOptions): scala.Unit = js.native
   /**
-       *  Similar to ::deleteToBeginningOfWord, but deletes only back to the previous
-       *  word boundary.
-       */
+    *  Similar to ::deleteToBeginningOfWord, but deletes only back to the previous
+    *  word boundary.
+    */
   def deleteToPreviousWordBoundary(): scala.Unit = js.native
-  /**
-       *  Similar to ::deleteToBeginningOfWord, but deletes only back to the previous
-       *  word boundary.
-       */
   def deleteToPreviousWordBoundary(options: ReadonlyEditOptions): scala.Unit = js.native
   /**
-       *  Find all DisplayMarkers on the default marker layer that match the given properties.
-       *
-       *  This method finds markers based on the given properties. Markers can be associated
-       *  with custom properties that will be compared with basic equality. In addition, there
-       *  are several special properties that will be compared with the range of the markers
-       *  rather than their properties.
-       */
+    *  Find all DisplayMarkers on the default marker layer that match the given properties.
+    *
+    *  This method finds markers based on the given properties. Markers can be associated
+    *  with custom properties that will be compared with basic equality. In addition, there
+    *  are several special properties that will be compared with the range of the markers
+    *  rather than their properties.
+    */
   def findMarkers(properties: FindDisplayMarkerOptions): js.Array[DisplayMarker] = js.native
   /** Fold all foldable lines. */
   def foldAll(): scala.Unit = js.native
   /**
-       * Fold all foldable lines at the given indent level.
-       * @param level A zero-indexed number.
-       */
+    * Fold all foldable lines at the given indent level.
+    * @param level A zero-indexed number.
+    */
   def foldAllAtIndentLevel(level: scala.Double): scala.Unit = js.native
   /**
-       *  Fold the given row in buffer coordinates based on its indentation level.
-       *  If the given row is foldable, the fold will begin there. Otherwise, it will
-       *  begin at the first foldable row preceding the given row.
-       */
+    *  Fold the given row in buffer coordinates based on its indentation level.
+    *  If the given row is foldable, the fold will begin there. Otherwise, it will
+    *  begin at the first foldable row preceding the given row.
+    */
   def foldBufferRow(bufferRow: scala.Double): scala.Unit = js.native
   // Folds
   /**
-       *  Fold the most recent cursor's row based on its indentation level.
-       *  The fold will extend from the nearest preceding line with a lower indentation
-       *  level up to the nearest following row with a lower indentation level.
-       */
+    *  Fold the most recent cursor's row based on its indentation level.
+    *  The fold will extend from the nearest preceding line with a lower indentation
+    *  level up to the nearest following row with a lower indentation level.
+    */
   def foldCurrentRow(): scala.Unit = js.native
   /** For each selection, fold the rows it intersects. */
   def foldSelectedLines(): scala.Unit = js.native
@@ -284,18 +220,17 @@ class TextEditor () extends js.Object {
   /** Get an Array of all Cursors. */
   def getCursors(): js.Array[Cursor] = js.native
   /**
-       *  Get all Cursors, ordered by their position in the buffer instead of the
-       *  order in which they were added.
-       */
+    *  Get all Cursors, ordered by their position in the buffer instead of the
+    *  order in which they were added.
+    */
   def getCursorsOrderedByBufferPosition(): js.Array[Cursor] = js.native
   /** Get all decorations. */
   def getDecorations(): js.Array[Decoration] = js.native
-  /** Get all decorations. */
   def getDecorations(propertyFilter: DecorationOptions): js.Array[Decoration] = js.native
   /**
-       *  Get the default DisplayMarkerLayer.
-       *  All marker APIs not tied to an explicit layer interact with this default layer.
-       */
+    *  Get the default DisplayMarkerLayer.
+    *  All marker APIs not tied to an explicit layer interact with this default layer.
+    */
   def getDefaultMarkerLayer(): DisplayMarkerLayer = js.native
   /** Returns the string character set encoding of this editor's text buffer. */
   def getEncoding(): java.lang.String = js.native
@@ -306,19 +241,18 @@ class TextEditor () extends js.Object {
   def getGutters(): js.Array[Gutter] = js.native
   /** Get all decorations of type 'highlight'. */
   def getHighlightDecorations(): js.Array[Decoration] = js.native
-  /** Get all decorations of type 'highlight'. */
   def getHighlightDecorations(propertyFilter: DecorationOptions): js.Array[Decoration] = js.native
   /**
-       *  Returns a number representing the last zero-indexed buffer row number of
-       *  the editor.
-       */
+    *  Returns a number representing the last zero-indexed buffer row number of
+    *  the editor.
+    */
   def getLastBufferRow(): scala.Double = js.native
   /** Returns the most recently added Cursor. */
   def getLastCursor(): Cursor = js.native
   /**
-       *  Returns a number representing the last zero-indexed screen row number of
-       *  the editor.
-       */
+    *  Returns a number representing the last zero-indexed screen row number of
+    *  the editor.
+    */
   def getLastScreenRow(): scala.Double = js.native
   /** Get the most recently added Selection. */
   def getLastSelection(): Selection = js.native
@@ -326,23 +260,21 @@ class TextEditor () extends js.Object {
   def getLineCount(): scala.Double = js.native
   /** Get all decorations of type 'line'. */
   def getLineDecorations(): js.Array[Decoration] = js.native
-  /** Get all decorations of type 'line'. */
   def getLineDecorations(propertyFilter: DecorationOptions): js.Array[Decoration] = js.native
   // TextEditor Rendering
   /** Retrieves the rendered line height in pixels. */
   def getLineHeightInPixels(): scala.Double = js.native
   /** Get all decorations of type 'line-number'. */
   def getLineNumberDecorations(): js.Array[Decoration] = js.native
-  /** Get all decorations of type 'line-number'. */
   def getLineNumberDecorations(propertyFilter: DecorationOptions): js.Array[Decoration] = js.native
   /**
-       *  Get unique title for display in other parts of the UI, such as the window title.
-       *  If the editor's buffer is unsaved, its title is "untitled" If the editor's
-       *  buffer is saved, its unique title is formatted as one of the following,
-       *
-       *  "" when it is the only editing buffer with this file name.
-       *  " — " when other buffers have this file name.
-       */
+    *  Get unique title for display in other parts of the UI, such as the window title.
+    *  If the editor's buffer is unsaved, its title is "untitled" If the editor's
+    *  buffer is saved, its unique title is formatted as one of the following,
+    *
+    *  "" when it is the only editing buffer with this file name.
+    *  " — " when other buffers have this file name.
+    */
   def getLongTitle(): java.lang.String = js.native
   /** Get the DisplayMarker on the default layer for the given marker id. */
   def getMarker(id: scala.Double): DisplayMarker = js.native
@@ -354,7 +286,6 @@ class TextEditor () extends js.Object {
   def getMarkers(): js.Array[DisplayMarker] = js.native
   /** Get all decorations of type 'overlay'. */
   def getOverlayDecorations(): js.Array[Decoration] = js.native
-  /** Get all decorations of type 'overlay'. */
   def getOverlayDecorations(propertyFilter: DecorationOptions): js.Array[Decoration] = js.native
   /** Returns the string path of this editor's text buffer. */
   def getPath(): js.UndefOr[java.lang.String] = js.native
@@ -362,28 +293,28 @@ class TextEditor () extends js.Object {
   def getPlaceholderText(): java.lang.String = js.native
   // Managing Syntax Scopes
   /**
-       *  Returns a ScopeDescriptor that includes this editor's language.
-       *  e.g. [".source.ruby"], or [".source.coffee"].
-       */
+    *  Returns a ScopeDescriptor that includes this editor's language.
+    *  e.g. [".source.ruby"], or [".source.coffee"].
+    */
   def getRootScopeDescriptor(): ScopeDescriptor = js.native
   /**
-       *  Returns a number representing the number of screen lines in the editor.
-       *  This accounts for folds.
-       */
+    *  Returns a number representing the number of screen lines in the editor.
+    *  This accounts for folds.
+    */
   def getScreenLineCount(): scala.Double = js.native
   /** Get the Range of the most recently added selection in buffer coordinates. */
   def getSelectedBufferRange(): Range = js.native
   /**
-       *  Get the Ranges of all selections in buffer coordinates.
-       *  The ranges are sorted by when the selections were added. Most recent at the end.
-       */
+    *  Get the Ranges of all selections in buffer coordinates.
+    *  The ranges are sorted by when the selections were added. Most recent at the end.
+    */
   def getSelectedBufferRanges(): js.Array[Range] = js.native
   /** Get the Range of the most recently added selection in screen coordinates. */
   def getSelectedScreenRange(): Range = js.native
   /**
-       *  Get the Ranges of all selections in screen coordinates.
-       *  The ranges are sorted by when the selections were added. Most recent at the end.
-       */
+    *  Get the Ranges of all selections in screen coordinates.
+    *  The ranges are sorted by when the selections were added. Most recent at the end.
+    */
   def getSelectedScreenRanges(): js.Array[Range] = js.native
   // Selections
   /** Get the selected text of the most recently added selection. */
@@ -391,9 +322,9 @@ class TextEditor () extends js.Object {
   /** Get current Selections. */
   def getSelections(): js.Array[Selection] = js.native
   /**
-       *  Get all Selections, ordered by their position in the buffer instead of the
-       *  order in which they were added.
-       */
+    *  Get all Selections, ordered by their position in the buffer instead of the
+    *  order in which they were added.
+    */
   def getSelectionsOrderedByBufferPosition(): js.Array[Selection] = js.native
   // Tab Behavior
   /** Returns a boolean indicating whether softTabs are enabled for this editor. */
@@ -403,10 +334,10 @@ class TextEditor () extends js.Object {
   /** Get the on-screen length of tab characters. */
   def getTabLength(): scala.Double = js.native
   /**
-       *  Get the text representing a single level of indent.
-       *  If soft tabs are enabled, the text is composed of N spaces, where N is the
-       *  tab length. Otherwise the text is a tab character (\t).
-       */
+    *  Get the text representing a single level of indent.
+    *  If soft tabs are enabled, the text is composed of N spaces, where N is the
+    *  tab length. Otherwise the text is a tab character (\t).
+    */
   def getTabText(): java.lang.String = js.native
   // Reading Text
   /** Returns a string representing the entire contents of the editor. */
@@ -415,74 +346,68 @@ class TextEditor () extends js.Object {
   def getTextInBufferRange(range: RangeCompatible): java.lang.String = js.native
   // File Details
   /**
-       *  Get the editor's title for display in other parts of the UI such as the tabs.
-       *  If the editor's buffer is saved, its title is the file name. If it is unsaved,
-       *  its title is "untitled".
-       */
+    *  Get the editor's title for display in other parts of the UI such as the tabs.
+    *  If the editor's buffer is saved, its title is the file name. If it is unsaved,
+    *  its title is "untitled".
+    */
   def getTitle(): java.lang.String = js.native
   /** Returns the word surrounding the most recently added cursor. */
   def getWordUnderCursor(): java.lang.String = js.native
-  /** Returns the word surrounding the most recently added cursor. */
   def getWordUnderCursor(options: atomLib.Anon_IncludeNonWordCharacters): java.lang.String = js.native
   /**
-       *  Group all changes since the given checkpoint into a single transaction for purposes
-       *  of undo/redo.
-       *  If the given checkpoint is no longer present in the undo history, no grouping will be
-       *  performed and this method will return false.
-       */
+    *  Group all changes since the given checkpoint into a single transaction for purposes
+    *  of undo/redo.
+    *  If the given checkpoint is no longer present in the undo history, no grouping will be
+    *  performed and this method will return false.
+    */
   def groupChangesSinceCheckpoint(checkpoint: scala.Double): scala.Boolean = js.native
   /** Get the gutter with the given name. */
   def gutterWithName(name: java.lang.String): Gutter | scala.Null = js.native
   /** Returns a boolean indicating whether or not there are multiple cursors. */
   def hasMultipleCursors(): scala.Boolean = js.native
   /**
-       *  Get the indentation level of the given line of text.
-       *  Determines how deeply the given line is indented based on the soft tabs and tab length
-       *  settings of this editor. Note that if soft tabs are enabled and the tab length is 2,
-       *  a row with 4 leading spaces would have an indentation level of 2.
-       */
+    *  Get the indentation level of the given line of text.
+    *  Determines how deeply the given line is indented based on the soft tabs and tab length
+    *  settings of this editor. Note that if soft tabs are enabled and the tab length is 2,
+    *  a row with 4 leading spaces would have an indentation level of 2.
+    */
   def indentLevelForLine(line: java.lang.String): scala.Double = js.native
   /** Indent rows intersecting selections by one level. */
   def indentSelectedRows(): scala.Unit = js.native
-  /** Indent rows intersecting selections by one level. */
   def indentSelectedRows(options: ReadonlyEditOptions): scala.Unit = js.native
   // Indentation
   /**
-       *  Get the indentation level of the given buffer row.
-       *  Determines how deeply the given row is indented based on the soft tabs and tab
-       *  length settings of this editor. Note that if soft tabs are enabled and the tab
-       *  length is 2, a row with 4 leading spaces would have an indentation level of 2.
-       */
+    *  Get the indentation level of the given buffer row.
+    *  Determines how deeply the given row is indented based on the soft tabs and tab
+    *  length settings of this editor. Note that if soft tabs are enabled and the tab
+    *  length is 2, a row with 4 leading spaces would have an indentation level of 2.
+    */
   def indentationForBufferRow(bufferRow: scala.Double): scala.Double = js.native
   /** For each selection, replace the selected text with a newline. */
   def insertNewline(): scala.Unit = js.native
-  /** For each selection, replace the selected text with a newline. */
   def insertNewline(options: ReadonlyEditOptions): scala.Unit = js.native
   /** For each cursor, insert a newline at the end of the preceding line. */
   def insertNewlineAbove(): scala.Unit = js.native
-  /** For each cursor, insert a newline at the end of the preceding line. */
   def insertNewlineAbove(options: ReadonlyEditOptions): scala.Unit = js.native
   /** For each cursor, insert a newline at beginning the following line. */
   def insertNewlineBelow(): scala.Unit = js.native
-  /** For each cursor, insert a newline at beginning the following line. */
   def insertNewlineBelow(options: ReadonlyEditOptions): scala.Unit = js.native
   /* For each selection, replace the selected text with the given text. */
   def insertText(text: java.lang.String): Range | atomLib.atomLibNumbers.`false` = js.native
-  /* For each selection, replace the selected text with the given text. */
   def insertText(text: java.lang.String, options: TextInsertionOptions with ReadonlyEditOptions): Range | atomLib.atomLibNumbers.`false` = js.native
   /** Determine if the given row is entirely a comment. */
   def isBufferRowCommented(bufferRow: scala.Double): scala.Boolean = js.native
   /** Returns boolean true if this editor has no content. */
   def isEmpty(): scala.Boolean = js.native
   /**
-       *  Determine whether the given row in buffer coordinates is foldable.
-       *  A foldable row is a row that starts a row range that can be folded.
-       */
+    *  Determine whether the given row in buffer coordinates is foldable.
+    *  A foldable row is a row that starts a row range that can be folded.
+    */
   def isFoldableAtBufferRow(bufferRow: scala.Double): scala.Boolean = js.native
   /**
-       *  Determine whether the given row in screen coordinates is foldable.
-       *  A foldable row is a row that starts a row range that can be folded.
-       */
+    *  Determine whether the given row in screen coordinates is foldable.
+    *  A foldable row is a row that starts a row range that can be folded.
+    */
   def isFoldableAtScreenRow(bufferRow: scala.Double): scala.Boolean = js.native
   /** Determine whether the given row in buffer coordinates is folded. */
   def isFoldedAtBufferRow(bufferRow: scala.Double): scala.Boolean = js.native
@@ -498,88 +423,59 @@ class TextEditor () extends js.Object {
   /** Determine whether lines in this editor are soft-wrapped. */
   def isSoftWrapped(): scala.Boolean = js.native
   /**
-       *  Returns a string representing the contents of the line at the given
-       *  buffer row.
-       */
+    *  Returns a string representing the contents of the line at the given
+    *  buffer row.
+    */
   def lineTextForBufferRow(bufferRow: scala.Double): java.lang.String = js.native
   /**
-       *  Returns a string representing the contents of the line at the given
-       *  screen row.
-       */
+    *  Returns a string representing the contents of the line at the given
+    *  screen row.
+    */
   def lineTextForScreenRow(screenRow: scala.Double): java.lang.String = js.native
   /**
-       *  Convert the selected text to lower case.
-       *  For each selection, if the selection is empty, converts the containing word
-       *  to upper case. Otherwise convert the selected text to upper case.
-       */
+    *  Convert the selected text to lower case.
+    *  For each selection, if the selection is empty, converts the containing word
+    *  to upper case. Otherwise convert the selected text to upper case.
+    */
   def lowerCase(): scala.Unit = js.native
-  /**
-       *  Convert the selected text to lower case.
-       *  For each selection, if the selection is empty, converts the containing word
-       *  to upper case. Otherwise convert the selected text to upper case.
-       */
   def lowerCase(options: ReadonlyEditOptions): scala.Unit = js.native
   /**
-       *  Create a marker on the default marker layer with the given buffer position and no tail.
-       *  To group multiple markers together in their own private layer, see ::addMarkerLayer.
-       */
+    *  Create a marker on the default marker layer with the given buffer position and no tail.
+    *  To group multiple markers together in their own private layer, see ::addMarkerLayer.
+    */
   def markBufferPosition(bufferPosition: PointCompatible): DisplayMarker = js.native
-  /**
-       *  Create a marker on the default marker layer with the given buffer position and no tail.
-       *  To group multiple markers together in their own private layer, see ::addMarkerLayer.
-       */
   def markBufferPosition(bufferPosition: PointCompatible, options: atomLib.Anon_Invalidate): DisplayMarker = js.native
   // Markers
   /**
-       *  Create a marker on the default marker layer with the given range in buffer coordinates.
-       *  This marker will maintain its logical location as the buffer is changed, so if you mark
-       *  a particular word, the marker will remain over that word even if the word's location
-       *  in the buffer changes.
-       */
+    *  Create a marker on the default marker layer with the given range in buffer coordinates.
+    *  This marker will maintain its logical location as the buffer is changed, so if you mark
+    *  a particular word, the marker will remain over that word even if the word's location
+    *  in the buffer changes.
+    */
   def markBufferRange(range: RangeCompatible): DisplayMarker = js.native
-  // Markers
-  /**
-       *  Create a marker on the default marker layer with the given range in buffer coordinates.
-       *  This marker will maintain its logical location as the buffer is changed, so if you mark
-       *  a particular word, the marker will remain over that word even if the word's location
-       *  in the buffer changes.
-       */
   def markBufferRange(range: RangeCompatible, properties: atomLib.Anon_MaintainHistoryInvalidate): DisplayMarker = js.native
   /**
-       *  Create a marker on the default marker layer with the given screen position and no tail.
-       *  To group multiple markers together in their own private layer, see ::addMarkerLayer.
-       */
+    *  Create a marker on the default marker layer with the given screen position and no tail.
+    *  To group multiple markers together in their own private layer, see ::addMarkerLayer.
+    */
   def markScreenPosition(screenPosition: PointCompatible): DisplayMarker = js.native
-  /**
-       *  Create a marker on the default marker layer with the given screen position and no tail.
-       *  To group multiple markers together in their own private layer, see ::addMarkerLayer.
-       */
   def markScreenPosition(screenPosition: PointCompatible, options: atomLib.Anon_ClipDirectionBackwardForwardClosest): DisplayMarker = js.native
   /**
-       *  Create a marker on the default marker layer with the given range in screen coordinates.
-       *  This marker will maintain its logical location as the buffer is changed, so if you mark
-       *  a particular word, the marker will remain over that word even if the word's location in
-       *  the buffer changes.
-       */
+    *  Create a marker on the default marker layer with the given range in screen coordinates.
+    *  This marker will maintain its logical location as the buffer is changed, so if you mark
+    *  a particular word, the marker will remain over that word even if the word's location in
+    *  the buffer changes.
+    */
   def markScreenRange(range: RangeCompatible): DisplayMarker = js.native
-  /**
-       *  Create a marker on the default marker layer with the given range in screen coordinates.
-       *  This marker will maintain its logical location as the buffer is changed, so if you mark
-       *  a particular word, the marker will remain over that word even if the word's location in
-       *  the buffer changes.
-       */
   def markScreenRange(range: RangeCompatible, properties: atomLib.Anon_MaintainHistoryInvalidate): DisplayMarker = js.native
   /** Move every cursor down one row in screen coordinates. */
   def moveDown(): scala.Unit = js.native
-  /** Move every cursor down one row in screen coordinates. */
   def moveDown(lineCount: scala.Double): scala.Unit = js.native
   /** Move every cursor left one column. */
   def moveLeft(): scala.Unit = js.native
-  /** Move every cursor left one column. */
   def moveLeft(columnCount: scala.Double): scala.Unit = js.native
   /** Move every cursor right one column. */
   def moveRight(): scala.Unit = js.native
-  /** Move every cursor right one column. */
   def moveRight(columnCount: scala.Double): scala.Unit = js.native
   /** Move every cursor to the beginning of its line in buffer coordinates. */
   def moveToBeginningOfLine(): scala.Unit = js.native
@@ -594,9 +490,9 @@ class TextEditor () extends js.Object {
   /** Move every cursor to the beginning of its surrounding word. */
   def moveToBeginningOfWord(): scala.Unit = js.native
   /**
-       *  Move every cursor to the bottom of the buffer.
-       *  If there are multiple cursors, they will be merged into a single cursor.
-       */
+    *  Move every cursor to the bottom of the buffer.
+    *  If there are multiple cursors, they will be merged into a single cursor.
+    */
   def moveToBottom(): scala.Unit = js.native
   /** Move every cursor to the end of its line in buffer coordinates. */
   def moveToEndOfLine(): scala.Unit = js.native
@@ -615,44 +511,43 @@ class TextEditor () extends js.Object {
   /** Move every cursor to the previous word boundary. */
   def moveToPreviousWordBoundary(): scala.Unit = js.native
   /**
-       *  Move every cursor to the top of the buffer.
-       *  If there are multiple cursors, they will be merged into a single cursor.
-       */
+    *  Move every cursor to the top of the buffer.
+    *  If there are multiple cursors, they will be merged into a single cursor.
+    */
   def moveToTop(): scala.Unit = js.native
   /** Move every cursor up one row in screen coordinates. */
   def moveUp(): scala.Unit = js.native
-  /** Move every cursor up one row in screen coordinates. */
   def moveUp(lineCount: scala.Double): scala.Unit = js.native
   /**
-       *  Mutate the text of all the selections in a single transaction.
-       *  All the changes made inside the given function can be reverted with a single
-       *  call to ::undo.
-       */
+    *  Mutate the text of all the selections in a single transaction.
+    *  All the changes made inside the given function can be reverted with a single
+    *  call to ::undo.
+    */
   def mutateSelectedText(fn: js.Function2[/* selection */ Selection, /* index */ scala.Double, scala.Unit]): scala.Unit = js.native
   /**
-       *  Calls your callback when a Cursor is added to the editor. Immediately calls
-       *  your callback for each existing cursor.
-       */
+    *  Calls your callback when a Cursor is added to the editor. Immediately calls
+    *  your callback for each existing cursor.
+    */
   def observeCursors(callback: js.Function1[/* cursor */ Cursor, scala.Unit]): Disposable = js.native
   /**
-       *  Calls your callback with each Decoration added to the editor. Calls your
-       *  callback immediately for any existing decorations.
-       */
+    *  Calls your callback with each Decoration added to the editor. Calls your
+    *  callback immediately for any existing decorations.
+    */
   def observeDecorations(callback: js.Function1[/* decoration */ Decoration, scala.Unit]): Disposable = js.native
   /**
-       *  Calls your callback when the grammar that interprets and colorizes the text
-       *  has been changed. Immediately calls your callback with the current grammar.
-       */
+    *  Calls your callback when the grammar that interprets and colorizes the text
+    *  has been changed. Immediately calls your callback with the current grammar.
+    */
   def observeGrammar(callback: js.Function1[/* grammar */ Grammar, scala.Unit]): Disposable = js.native
   /**
-       *  Calls your callback when a Gutter is added to the editor. Immediately calls
-       *  your callback for each existing gutter.
-       */
+    *  Calls your callback when a Gutter is added to the editor. Immediately calls
+    *  your callback for each existing gutter.
+    */
   def observeGutters(callback: js.Function1[/* gutter */ Gutter, scala.Unit]): Disposable = js.native
   /**
-       *  Calls your callback when a Selection is added to the editor. Immediately
-       *  calls your callback for each existing selection.
-       */
+    *  Calls your callback when a Selection is added to the editor. Immediately
+    *  calls your callback for each existing selection.
+    */
   def observeSelections(callback: js.Function1[/* selection */ Selection, scala.Unit]): Disposable = js.native
   /** Calls your callback when a Cursor is added to the editor. */
   def onDidAddCursor(callback: js.Function1[/* cursor */ Cursor, scala.Unit]): Disposable = js.native
@@ -663,21 +558,21 @@ class TextEditor () extends js.Object {
   /** Calls your callback when a Selection is added to the editor. */
   def onDidAddSelection(callback: js.Function1[/* selection */ Selection, scala.Unit]): Disposable = js.native
   /**
-       *  Invoke the given callback synchronously when the content of the buffer
-       *  changes.
-       */
+    *  Invoke the given callback synchronously when the content of the buffer
+    *  changes.
+    */
   def onDidChange(callback: js.Function1[/* event */ js.Array[EditorChangedEvent], scala.Unit]): Disposable = js.native
   /**
-       *  Calls your callback when a Cursor is moved. If there are multiple cursors,
-       *  your callback will be called for each cursor.
-       */
+    *  Calls your callback when a Cursor is moved. If there are multiple cursors,
+    *  your callback will be called for each cursor.
+    */
   def onDidChangeCursorPosition(callback: js.Function1[/* event */ CursorPositionChangedEvent, scala.Unit]): Disposable = js.native
   /** Calls your callback when the buffer's encoding has changed. */
   def onDidChangeEncoding(callback: js.Function1[/* encoding */ java.lang.String, scala.Unit]): Disposable = js.native
   /**
-       *  Calls your callback when the grammar that interprets and colorizes the text
-       *  has been changed.
-       */
+    *  Calls your callback when the grammar that interprets and colorizes the text
+    *  has been changed.
+    */
   def onDidChangeGrammar(callback: js.Function1[/* grammar */ Grammar, scala.Unit]): Disposable = js.native
   /** Calls your callback when the result of ::isModified changes. */
   def onDidChangeModified(callback: js.Function1[/* modified */ scala.Boolean, scala.Unit]): Disposable = js.native
@@ -693,9 +588,9 @@ class TextEditor () extends js.Object {
   /** Calls your callback when the buffer's title has changed. */
   def onDidChangeTitle(callback: js.Function1[/* title */ java.lang.String, scala.Unit]): Disposable = js.native
   /**
-       *  Calls your callback when the buffer's underlying file changes on disk at a
-       *  moment when the result of ::isModified is true.
-       */
+    *  Calls your callback when the buffer's underlying file changes on disk at a
+    *  moment when the result of ::isModified is true.
+    */
   def onDidConflict(callback: js.Function0[scala.Unit]): Disposable = js.native
   /** Invoke the given callback when the editor is destroyed. */
   def onDidDestroy(callback: js.Function0[scala.Unit]): Disposable = js.native
@@ -712,76 +607,68 @@ class TextEditor () extends js.Object {
   /** Invoke the given callback after the buffer is saved to disk. */
   def onDidSave(callback: js.Function1[/* event */ atomLib.Anon_Path, scala.Unit]): Disposable = js.native
   /**
-       *  Invoke callback when the buffer's contents change. It is emit
-       *  asynchronously 300ms after the last buffer change. This is a good place
-       *  to handle changes to the buffer without compromising typing performance.
-       */
+    *  Invoke callback when the buffer's contents change. It is emit
+    *  asynchronously 300ms after the last buffer change. This is a good place
+    *  to handle changes to the buffer without compromising typing performance.
+    */
   def onDidStopChanging(callback: js.Function1[/* event */ BufferStoppedChangingEvent, scala.Unit]): Disposable = js.native
   /** Calls your callback before text has been inserted. */
   def onWillInsertText(callback: js.Function1[/* event */ atomLib.Anon_Text, scala.Unit]): Disposable = js.native
   /** Outdent rows intersecting selections by one level. */
   def outdentSelectedRows(): scala.Unit = js.native
-  /** Outdent rows intersecting selections by one level. */
   def outdentSelectedRows(options: ReadonlyEditOptions): scala.Unit = js.native
   /**
-       *  For each selection, replace the selected text with the contents of the clipboard.
-       *  If the clipboard contains the same number of selections as the current editor,
-       *  each selection will be replaced with the content of the corresponding clipboard
-       *  selection text.
-       */
+    *  For each selection, replace the selected text with the contents of the clipboard.
+    *  If the clipboard contains the same number of selections as the current editor,
+    *  each selection will be replaced with the content of the corresponding clipboard
+    *  selection text.
+    */
   def pasteText(): scala.Unit = js.native
-  /**
-       *  For each selection, replace the selected text with the contents of the clipboard.
-       *  If the clipboard contains the same number of selections as the current editor,
-       *  each selection will be replaced with the content of the corresponding clipboard
-       *  selection text.
-       */
   def pasteText(options: TextInsertionOptions with ReadonlyEditOptions): scala.Unit = js.native
   /** Redo the last change. */
   def redo(): scala.Unit = js.native
-  /** Redo the last change. */
   def redo(options: ReadonlyEditOptions): scala.Unit = js.native
   /**
-       *  Revert the buffer to the state it was in when the given checkpoint was created.
-       *  The redo stack will be empty following this operation, so changes since the checkpoint
-       *  will be lost. If the given checkpoint is no longer present in the undo history, no
-       *  changes will be made to the buffer and this method will return false.
-       */
+    *  Revert the buffer to the state it was in when the given checkpoint was created.
+    *  The redo stack will be empty following this operation, so changes since the checkpoint
+    *  will be lost. If the given checkpoint is no longer present in the undo history, no
+    *  changes will be made to the buffer and this method will return false.
+    */
   def revertToCheckpoint(checkpoint: scala.Double): scala.Boolean = js.native
   // File Operations
   /**
-       *  Saves the editor's text buffer.
-       *  See TextBuffer::save for more details.
-       */
+    *  Saves the editor's text buffer.
+    *  See TextBuffer::save for more details.
+    */
   def save(): js.Promise[scala.Unit] = js.native
   /**
-       *  Saves the editor's text buffer as the given path.
-       *  See TextBuffer::saveAs for more details.
-       */
+    *  Saves the editor's text buffer as the given path.
+    *  See TextBuffer::saveAs for more details.
+    */
   def saveAs(filePath: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       *  Scan regular expression matches in the entire buffer, calling the given
-       *  iterator function on each match.
-       *
-       *  ::scan functions as the replace method as well via the replace.
-       */
+    *  Scan regular expression matches in the entire buffer, calling the given
+    *  iterator function on each match.
+    *
+    *  ::scan functions as the replace method as well via the replace.
+    */
   def scan(regex: stdLib.RegExp, iterator: js.Function1[/* params */ BufferScanResult, scala.Unit]): scala.Unit = js.native
   // Searching and Replacing
   /**
-       *  Scan regular expression matches in the entire buffer, calling the given
-       *  iterator function on each match.
-       *
-       *  ::scan functions as the replace method as well via the replace.
-       */
+    *  Scan regular expression matches in the entire buffer, calling the given
+    *  iterator function on each match.
+    *
+    *  ::scan functions as the replace method as well via the replace.
+    */
   def scan(
     regex: stdLib.RegExp,
     options: ScanContextOptions,
     iterator: js.Function1[/* params */ ContextualBufferScanResult, scala.Unit]
   ): scala.Unit = js.native
   /**
-       *  Scan regular expression matches in a given range, calling the given iterator.
-       *  function on each match.
-       */
+    *  Scan regular expression matches in a given range, calling the given iterator.
+    *  function on each match.
+    */
   def scanInBufferRange(
     regex: stdLib.RegExp,
     range: RangeCompatible,
@@ -792,181 +679,155 @@ class TextEditor () extends js.Object {
   // TextEditor Coordinates
   /** Convert a position in buffer-coordinates to screen-coordinates. */
   def screenPositionForBufferPosition(bufferPosition: PointCompatible): Point = js.native
-  // TextEditor Coordinates
-  /** Convert a position in buffer-coordinates to screen-coordinates. */
   def screenPositionForBufferPosition(bufferPosition: PointCompatible, options: atomLib.Anon_ClipDirectionBackwardForward): Point = js.native
   /** Convert a range in buffer-coordinates to screen-coordinates. */
   def screenRangeForBufferRange(bufferRange: RangeCompatible): Range = js.native
   /** Scrolls the editor to the given buffer position. */
   def scrollToBufferPosition(bufferPosition: PointCompatible): scala.Unit = js.native
-  /** Scrolls the editor to the given buffer position. */
   def scrollToBufferPosition(bufferPosition: PointCompatible, options: atomLib.Anon_Center): scala.Unit = js.native
   // Scrolling the TextEditor
   /** Scroll the editor to reveal the most recently added cursor if it is off-screen. */
   def scrollToCursorPosition(): scala.Unit = js.native
-  // Scrolling the TextEditor
-  /** Scroll the editor to reveal the most recently added cursor if it is off-screen. */
   def scrollToCursorPosition(options: atomLib.Anon_Center): scala.Unit = js.native
   /** Scrolls the editor to the given screen position. */
   def scrollToScreenPosition(screenPosition: PointCompatible): scala.Unit = js.native
-  /** Scrolls the editor to the given screen position. */
   def scrollToScreenPosition(screenPosition: PointCompatible, options: atomLib.Anon_Center): scala.Unit = js.native
   /**
-       *  Select all text in the buffer.
-       *  This method merges multiple selections into a single selection.
-       */
+    *  Select all text in the buffer.
+    *  This method merges multiple selections into a single selection.
+    */
   def selectAll(): scala.Unit = js.native
   /**
-       *  Move the cursor of each selection one character downward while preserving
-       *  the selection's tail position.
-       *  This method may merge selections that end up intersecting.
-       */
+    *  Move the cursor of each selection one character downward while preserving
+    *  the selection's tail position.
+    *  This method may merge selections that end up intersecting.
+    */
   def selectDown(): scala.Unit = js.native
-  /**
-       *  Move the cursor of each selection one character downward while preserving
-       *  the selection's tail position.
-       *  This method may merge selections that end up intersecting.
-       */
   def selectDown(rowCount: scala.Double): scala.Unit = js.native
   /** For each selection, select the syntax node that contains that selection. */
   def selectLargerSyntaxNode(): scala.Unit = js.native
   /**
-       *  Move the cursor of each selection one character leftward while preserving
-       *  the selection's tail position.
-       *  This method may merge selections that end up intersecting.
-       */
+    *  Move the cursor of each selection one character leftward while preserving
+    *  the selection's tail position.
+    *  This method may merge selections that end up intersecting.
+    */
   def selectLeft(): scala.Unit = js.native
-  /**
-       *  Move the cursor of each selection one character leftward while preserving
-       *  the selection's tail position.
-       *  This method may merge selections that end up intersecting.
-       */
   def selectLeft(columnCount: scala.Double): scala.Unit = js.native
   /**
-       *  For each cursor, select the containing line.
-       *  This method merges selections on successive lines.
-       */
+    *  For each cursor, select the containing line.
+    *  This method merges selections on successive lines.
+    */
   def selectLinesContainingCursors(): scala.Unit = js.native
   /** Select the range of the given marker if it is valid. */
   def selectMarker(marker: DisplayMarker): js.UndefOr[Range] = js.native
   /**
-       *  Move the cursor of each selection one character rightward while preserving
-       *  the selection's tail position.
-       *  This method may merge selections that end up intersecting.
-       */
+    *  Move the cursor of each selection one character rightward while preserving
+    *  the selection's tail position.
+    *  This method may merge selections that end up intersecting.
+    */
   def selectRight(): scala.Unit = js.native
-  /**
-       *  Move the cursor of each selection one character rightward while preserving
-       *  the selection's tail position.
-       *  This method may merge selections that end up intersecting.
-       */
   def selectRight(columnCount: scala.Double): scala.Unit = js.native
   /** Undo the effect a preceding call to `::selectLargerSyntaxNode`. */
   def selectSmallerSyntaxNode(): scala.Unit = js.native
   /**
-       *  Move the cursor of each selection to the beginning of its line while preserving
-       *  the selection's tail position.
-       *  This method may merge selections that end up intersecting.
-       */
+    *  Move the cursor of each selection to the beginning of its line while preserving
+    *  the selection's tail position.
+    *  This method may merge selections that end up intersecting.
+    */
   def selectToBeginningOfLine(): scala.Unit = js.native
   /**
-       *  Expand selections to the beginning of the next paragraph.
-       *  Operates on all selections. Moves the cursor to the beginning of the next
-       *  paragraph while preserving the selection's tail position.
-       */
+    *  Expand selections to the beginning of the next paragraph.
+    *  Operates on all selections. Moves the cursor to the beginning of the next
+    *  paragraph while preserving the selection's tail position.
+    */
   def selectToBeginningOfNextParagraph(): scala.Unit = js.native
   /**
-       *  Expand selections to the beginning of the next word.
-       *  Operates on all selections. Moves the cursor to the beginning of the next word
-       *  while preserving the selection's tail position.
-       */
+    *  Expand selections to the beginning of the next word.
+    *  Operates on all selections. Moves the cursor to the beginning of the next word
+    *  while preserving the selection's tail position.
+    */
   def selectToBeginningOfNextWord(): scala.Unit = js.native
   /**
-       *  Expand selections to the beginning of the next paragraph.
-       *  Operates on all selections. Moves the cursor to the beginning of the next
-       *  paragraph while preserving the selection's tail position.
-       */
+    *  Expand selections to the beginning of the next paragraph.
+    *  Operates on all selections. Moves the cursor to the beginning of the next
+    *  paragraph while preserving the selection's tail position.
+    */
   def selectToBeginningOfPreviousParagraph(): scala.Unit = js.native
   /**
-       *  Expand selections to the beginning of their containing word.
-       *  Operates on all selections. Moves the cursor to the beginning of the containing
-       *  word while preserving the selection's tail position.
-       */
+    *  Expand selections to the beginning of their containing word.
+    *  Operates on all selections. Moves the cursor to the beginning of the containing
+    *  word while preserving the selection's tail position.
+    */
   def selectToBeginningOfWord(): scala.Unit = js.native
   /**
-       *  Selects from the top of the first selection in the buffer to the end of the buffer.
-       *  This method merges multiple selections into a single selection.
-       */
+    *  Selects from the top of the first selection in the buffer to the end of the buffer.
+    *  This method merges multiple selections into a single selection.
+    */
   def selectToBottom(): scala.Unit = js.native
   /**
-       *  Select from the current cursor position to the given position in buffer coordinates.
-       *  This method may merge selections that end up intersecting.
-       */
+    *  Select from the current cursor position to the given position in buffer coordinates.
+    *  This method may merge selections that end up intersecting.
+    */
   def selectToBufferPosition(position: PointCompatible): scala.Unit = js.native
   /**
-       *  Move the cursor of each selection to the end of its line while preserving the
-       *  selection's tail position.
-       *  This method may merge selections that end up intersecting.
-       */
+    *  Move the cursor of each selection to the end of its line while preserving the
+    *  selection's tail position.
+    *  This method may merge selections that end up intersecting.
+    */
   def selectToEndOfLine(): scala.Unit = js.native
   /**
-       *  Expand selections to the end of their containing word.
-       *  Operates on all selections. Moves the cursor to the end of the containing word
-       *  while preserving the selection's tail position.
-       */
+    *  Expand selections to the end of their containing word.
+    *  Operates on all selections. Moves the cursor to the end of the containing word
+    *  while preserving the selection's tail position.
+    */
   def selectToEndOfWord(): scala.Unit = js.native
   /**
-       *  Move the cursor of each selection to the first non-whitespace character of its
-       *  line while preserving the selection's tail position. If the cursor is already
-       *  on the first character of the line, move it to the beginning of the line.
-       *  This method may merge selections that end up intersecting.
-       */
+    *  Move the cursor of each selection to the first non-whitespace character of its
+    *  line while preserving the selection's tail position. If the cursor is already
+    *  on the first character of the line, move it to the beginning of the line.
+    *  This method may merge selections that end up intersecting.
+    */
   def selectToFirstCharacterOfLine(): scala.Unit = js.native
   /**
-       *  For each selection, move its cursor to the next subword boundary while maintaining
-       *  the selection's tail position.
-       *  This method may merge selections that end up intersecting.
-       */
+    *  For each selection, move its cursor to the next subword boundary while maintaining
+    *  the selection's tail position.
+    *  This method may merge selections that end up intersecting.
+    */
   def selectToNextSubwordBoundary(): scala.Unit = js.native
   /**
-       *  For each selection, move its cursor to the next word boundary while maintaining
-       *  the selection's tail position.
-       *  This method may merge selections that end up intersecting.
-       */
+    *  For each selection, move its cursor to the next word boundary while maintaining
+    *  the selection's tail position.
+    *  This method may merge selections that end up intersecting.
+    */
   def selectToNextWordBoundary(): scala.Unit = js.native
   /**
-       *  For each selection, move its cursor to the preceding subword boundary while
-       *  maintaining the selection's tail position.
-       *  This method may merge selections that end up intersecting.
-       */
+    *  For each selection, move its cursor to the preceding subword boundary while
+    *  maintaining the selection's tail position.
+    *  This method may merge selections that end up intersecting.
+    */
   def selectToPreviousSubwordBoundary(): scala.Unit = js.native
   /**
-       *  For each selection, move its cursor to the preceding word boundary while
-       *  maintaining the selection's tail position.
-       *  This method may merge selections that end up intersecting.
-       */
+    *  For each selection, move its cursor to the preceding word boundary while
+    *  maintaining the selection's tail position.
+    *  This method may merge selections that end up intersecting.
+    */
   def selectToPreviousWordBoundary(): scala.Unit = js.native
   /**
-       *  Select from the current cursor position to the given position in screen coordinates.
-       *  This method may merge selections that end up intersecting.
-       */
+    *  Select from the current cursor position to the given position in screen coordinates.
+    *  This method may merge selections that end up intersecting.
+    */
   def selectToScreenPosition(position: PointCompatible): scala.Unit = js.native
   /**
-       *  Select from the top of the buffer to the end of the last selection in the buffer.
-       *  This method merges multiple selections into a single selection.
-       */
+    *  Select from the top of the buffer to the end of the last selection in the buffer.
+    *  This method merges multiple selections into a single selection.
+    */
   def selectToTop(): scala.Unit = js.native
   /**
-       *  Move the cursor of each selection one character upward while preserving the
-       *  selection's tail position.
-       *  This method may merge selections that end up intersecting.
-       */
+    *  Move the cursor of each selection one character upward while preserving the
+    *  selection's tail position.
+    *  This method may merge selections that end up intersecting.
+    */
   def selectUp(): scala.Unit = js.native
-  /**
-       *  Move the cursor of each selection one character upward while preserving the
-       *  selection's tail position.
-       *  This method may merge selections that end up intersecting.
-       */
   def selectUp(rowCount: scala.Double): scala.Unit = js.native
   /** Select the word surrounding each cursor. */
   def selectWordsContainingCursors(): scala.Unit = js.native
@@ -976,120 +837,82 @@ class TextEditor () extends js.Object {
   /** Determine if a given range in buffer coordinates intersects a selection. */
   def selectionIntersectsBufferRange(bufferRange: RangeLike): scala.Boolean = js.native
   /**
-       *  Move the cursor to the given position in buffer coordinates.
-       *  If there are multiple cursors, they will be consolidated to a single cursor.
-       */
+    *  Move the cursor to the given position in buffer coordinates.
+    *  If there are multiple cursors, they will be consolidated to a single cursor.
+    */
   def setCursorBufferPosition(position: PointCompatible): scala.Unit = js.native
-  /**
-       *  Move the cursor to the given position in buffer coordinates.
-       *  If there are multiple cursors, they will be consolidated to a single cursor.
-       */
   def setCursorBufferPosition(position: PointCompatible, options: atomLib.Anon_Autoscroll): scala.Unit = js.native
   /**
-       *  Move the cursor to the given position in screen coordinates.
-       *  If there are multiple cursors, they will be consolidated to a single cursor.
-       */
+    *  Move the cursor to the given position in screen coordinates.
+    *  If there are multiple cursors, they will be consolidated to a single cursor.
+    */
   def setCursorScreenPosition(position: PointCompatible): scala.Unit = js.native
-  /**
-       *  Move the cursor to the given position in screen coordinates.
-       *  If there are multiple cursors, they will be consolidated to a single cursor.
-       */
   def setCursorScreenPosition(position: PointCompatible, options: atomLib.Anon_Autoscroll): scala.Unit = js.native
   /** Set the character set encoding to use in this editor's text buffer. */
   def setEncoding(encoding: java.lang.String): scala.Unit = js.native
   /**
-       *  Set the indentation level for the given buffer row.
-       *  Inserts or removes hard tabs or spaces based on the soft tabs and tab length settings
-       *  of this editor in order to bring it to the given indentation level. Note that if soft
-       *  tabs are enabled and the tab length is 2, a row with 4 leading spaces would have an
-       *  indentation level of 2.
-       */
+    *  Set the indentation level for the given buffer row.
+    *  Inserts or removes hard tabs or spaces based on the soft tabs and tab length settings
+    *  of this editor in order to bring it to the given indentation level. Note that if soft
+    *  tabs are enabled and the tab length is 2, a row with 4 leading spaces would have an
+    *  indentation level of 2.
+    */
   def setIndentationForBufferRow(bufferRow: scala.Double, newLevel: scala.Double): scala.Unit = js.native
-  /**
-       *  Set the indentation level for the given buffer row.
-       *  Inserts or removes hard tabs or spaces based on the soft tabs and tab length settings
-       *  of this editor in order to bring it to the given indentation level. Note that if soft
-       *  tabs are enabled and the tab length is 2, a row with 4 leading spaces would have an
-       *  indentation level of 2.
-       */
   def setIndentationForBufferRow(bufferRow: scala.Double, newLevel: scala.Double, options: atomLib.Anon_PreserveLeadingWhitespace): scala.Unit = js.native
   /**
-       *  Set the greyed out placeholder of a mini editor. Placeholder text will be
-       *  displayed when the editor has no content.
-       */
+    *  Set the greyed out placeholder of a mini editor. Placeholder text will be
+    *  displayed when the editor has no content.
+    */
   def setPlaceholderText(placeholderText: java.lang.String): scala.Unit = js.native
   /** Sets the read-only state for the editor. */
   def setReadOnly(readonly: scala.Boolean): scala.Unit = js.native
   /**
-       *  Set the selected range in buffer coordinates. If there are multiple selections,
-       *  they are reduced to a single selection with the given range.
-       */
+    *  Set the selected range in buffer coordinates. If there are multiple selections,
+    *  they are reduced to a single selection with the given range.
+    */
   def setSelectedBufferRange(bufferRange: RangeCompatible): scala.Unit = js.native
-  /**
-       *  Set the selected range in buffer coordinates. If there are multiple selections,
-       *  they are reduced to a single selection with the given range.
-       */
   def setSelectedBufferRange(bufferRange: RangeCompatible, options: atomLib.Anon_ReversedPreserveFolds): scala.Unit = js.native
   /**
-       *  Set the selected ranges in buffer coordinates. If there are multiple selections,
-       *  they are replaced by new selections with the given ranges.
-       */
+    *  Set the selected ranges in buffer coordinates. If there are multiple selections,
+    *  they are replaced by new selections with the given ranges.
+    */
   def setSelectedBufferRanges(bufferRanges: js.Array[RangeCompatible]): scala.Unit = js.native
-  /**
-       *  Set the selected ranges in buffer coordinates. If there are multiple selections,
-       *  they are replaced by new selections with the given ranges.
-       */
   def setSelectedBufferRanges(bufferRanges: js.Array[RangeCompatible], options: atomLib.Anon_ReversedPreserveFolds): scala.Unit = js.native
   /**
-       *  Set the selected range in screen coordinates. If there are multiple selections,
-       *  they are reduced to a single selection with the given range.
-       */
+    *  Set the selected range in screen coordinates. If there are multiple selections,
+    *  they are reduced to a single selection with the given range.
+    */
   def setSelectedScreenRange(screenRange: RangeCompatible): scala.Unit = js.native
-  /**
-       *  Set the selected range in screen coordinates. If there are multiple selections,
-       *  they are reduced to a single selection with the given range.
-       */
   def setSelectedScreenRange(screenRange: RangeCompatible, options: atomLib.Anon_ReversedBoolean): scala.Unit = js.native
   /**
-       *  Set the selected ranges in screen coordinates. If there are multiple selections,
-       *  they are replaced by new selections with the given ranges.
-       */
+    *  Set the selected ranges in screen coordinates. If there are multiple selections,
+    *  they are replaced by new selections with the given ranges.
+    */
   def setSelectedScreenRanges(screenRanges: js.Array[RangeCompatible]): scala.Unit = js.native
-  /**
-       *  Set the selected ranges in screen coordinates. If there are multiple selections,
-       *  they are replaced by new selections with the given ranges.
-       */
   def setSelectedScreenRanges(screenRanges: js.Array[RangeCompatible], options: atomLib.Anon_ReversedBoolean): scala.Unit = js.native
   /** Enable or disable soft tabs for this editor. */
   def setSoftTabs(softTabs: scala.Boolean): scala.Unit = js.native
   /** Enable or disable soft wrapping for this editor. */
   def setSoftWrapped(softWrapped: scala.Boolean): scala.Boolean = js.native
   /**
-       *  Set the on-screen length of tab characters. Setting this to a number will
-       *  override the editor.tabLength setting.
-       */
+    *  Set the on-screen length of tab characters. Setting this to a number will
+    *  override the editor.tabLength setting.
+    */
   def setTabLength(tabLength: scala.Double): scala.Unit = js.native
   // Mutating Text
   /** Replaces the entire contents of the buffer with the given string. */
   def setText(text: java.lang.String): scala.Unit = js.native
-  // Mutating Text
-  /** Replaces the entire contents of the buffer with the given string. */
   def setText(text: java.lang.String, options: ReadonlyEditOptions): scala.Unit = js.native
   /** Set the text in the given Range in buffer coordinates. */
   def setTextInBufferRange(range: RangeCompatible, text: java.lang.String): Range = js.native
-  /** Set the text in the given Range in buffer coordinates. */
   def setTextInBufferRange(range: RangeCompatible, text: java.lang.String, options: TextEditOptions with ReadonlyEditOptions): Range = js.native
   /** Fold the given buffer row if it isn't currently folded, and unfold it otherwise. */
   def toggleFoldAtBufferRow(bufferRow: scala.Double): scala.Unit = js.native
   /**
-       *  Toggle line comments for rows intersecting selections.
-       *  If the current grammar doesn't support comments, does nothing.
-       */
+    *  Toggle line comments for rows intersecting selections.
+    *  If the current grammar doesn't support comments, does nothing.
+    */
   def toggleLineCommentsInSelection(): scala.Unit = js.native
-  /**
-       *  Toggle line comments for rows intersecting selections.
-       *  If the current grammar doesn't support comments, does nothing.
-       */
   def toggleLineCommentsInSelection(options: ReadonlyEditOptions): scala.Unit = js.native
   /** Toggle soft tabs for this editor. */
   def toggleSoftTabs(): scala.Boolean = js.native
@@ -1098,38 +921,31 @@ class TextEditor () extends js.Object {
   /** Undocumented: Get syntax token at buffer position */
   def tokenForBufferPosition(pos: PointCompatible): atomLib.Anon_Scopes = js.native
   /**
-       *  Batch multiple operations as a single undo/redo step.
-       *  Any group of operations that are logically grouped from the perspective of undoing
-       *  and redoing should be performed in a transaction. If you want to abort the transaction,
-       *  call ::abortTransaction to terminate the function's execution and revert any changes
-       *  performed up to the abortion.
-       */
+    *  Batch multiple operations as a single undo/redo step.
+    *  Any group of operations that are logically grouped from the perspective of undoing
+    *  and redoing should be performed in a transaction. If you want to abort the transaction,
+    *  call ::abortTransaction to terminate the function's execution and revert any changes
+    *  performed up to the abortion.
+    */
   def transact(fn: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
-       *  Batch multiple operations as a single undo/redo step.
-       *  Any group of operations that are logically grouped from the perspective of undoing
-       *  and redoing should be performed in a transaction. If you want to abort the transaction,
-       *  call ::abortTransaction to terminate the function's execution and revert any changes
-       *  performed up to the abortion.
-       */
+    *  Batch multiple operations as a single undo/redo step.
+    *  Any group of operations that are logically grouped from the perspective of undoing
+    *  and redoing should be performed in a transaction. If you want to abort the transaction,
+    *  call ::abortTransaction to terminate the function's execution and revert any changes
+    *  performed up to the abortion.
+    */
   def transact(groupingInterval: scala.Double, fn: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
-       *  For each selection, transpose the selected text.
-       *  If the selection is empty, the characters preceding and following the cursor
-       *  are swapped. Otherwise, the selected characters are reversed.
-       */
+    *  For each selection, transpose the selected text.
+    *  If the selection is empty, the characters preceding and following the cursor
+    *  are swapped. Otherwise, the selected characters are reversed.
+    */
   def transpose(): scala.Unit = js.native
-  /**
-       *  For each selection, transpose the selected text.
-       *  If the selection is empty, the characters preceding and following the cursor
-       *  are swapped. Otherwise, the selected characters are reversed.
-       */
   def transpose(options: ReadonlyEditOptions): scala.Unit = js.native
   // History
   /** Undo the last change. */
   def undo(): scala.Unit = js.native
-  // History
-  /** Undo the last change. */
   def undo(options: ReadonlyEditOptions): scala.Unit = js.native
   /** Unfold all existing folds. */
   def unfoldAll(): scala.Unit = js.native
@@ -1138,16 +954,11 @@ class TextEditor () extends js.Object {
   /** Unfold the most recent cursor's row by one level. */
   def unfoldCurrentRow(): scala.Unit = js.native
   /**
-       *  Convert the selected text to upper case.
-       *  For each selection, if the selection is empty, converts the containing word
-       *  to upper case. Otherwise convert the selected text to upper case.
-       */
+    *  Convert the selected text to upper case.
+    *  For each selection, if the selection is empty, converts the containing word
+    *  to upper case. Otherwise convert the selected text to upper case.
+    */
   def upperCase(): scala.Unit = js.native
-  /**
-       *  Convert the selected text to upper case.
-       *  For each selection, if the selection is empty, converts the containing word
-       *  to upper case. Otherwise convert the selected text to upper case.
-       */
   def upperCase(options: ReadonlyEditOptions): scala.Unit = js.native
   /** Determine if the buffer uses hard or soft tabs. */
   def usesSoftTabs(): js.UndefOr[scala.Boolean] = js.native

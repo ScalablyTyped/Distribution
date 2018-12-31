@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object inquireMod extends js.Object {
   /**
-   * Requires a module only if available.
-   * @memberof util
-   * @param {string} moduleName Module to require
-   * @returns {?Object} Required module if available and not empty, otherwise `null`
-   */
+    * Requires a module only if available.
+    * @memberof util
+    * @param {string} moduleName Module to require
+    * @returns {?Object} Required module if available and not empty, otherwise `null`
+    */
   def apply(moduleName: java.lang.String): js.Object = js.native
 }
 

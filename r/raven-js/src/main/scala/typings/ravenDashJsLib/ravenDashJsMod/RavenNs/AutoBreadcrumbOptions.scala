@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AutoBreadcrumbOptions extends js.Object {
   var console: js.UndefOr[scala.Boolean] = js.undefined
   var dom: js.UndefOr[scala.Boolean] = js.undefined

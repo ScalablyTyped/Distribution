@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ProceduralRenderer3 extends js.Object {
   /**
-       * This property is allowed to be null / undefined,
-       * in which case the view engine won't call it.
-       * This is used as a performance optimization for production mode.
-       */
+    * This property is allowed to be null / undefined,
+    * in which case the view engine won't call it.
+    * This is used as a performance optimization for production mode.
+    */
   var destroyNode: js.UndefOr[(js.Function1[/* node */ RNode, scala.Unit]) | scala.Null] = js.native
   def addClass(el: RElement, name: java.lang.String): scala.Unit = js.native
   def appendChild(parent: RElement, newChild: RNode): scala.Unit = js.native

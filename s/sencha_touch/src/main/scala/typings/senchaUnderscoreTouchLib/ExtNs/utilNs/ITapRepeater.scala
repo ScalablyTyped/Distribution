@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITapRepeater
   extends senchaUnderscoreTouchLib.ExtNs.mixinNs.IObservable {
   /** [Method] Returns the value of accelerate

@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Dictionary object of parameters used to create a notification using
- * <Titanium.App.iOS.scheduleLocalNotification>.
- */
-
+  * Dictionary object of parameters used to create a notification using
+  * <Titanium.App.iOS.scheduleLocalNotification>.
+  */
 trait NotificationParams extends js.Object {
   /**
   	 * Alert button text ('Open', by default) or home text ('Press Home to unlock', by default)

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransitionProps
   extends TransitionActions
      with /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StatsCategories extends js.Object {
   var assists: StatsByGameType[Stat]
   var average: StatsByGameType[Stat]

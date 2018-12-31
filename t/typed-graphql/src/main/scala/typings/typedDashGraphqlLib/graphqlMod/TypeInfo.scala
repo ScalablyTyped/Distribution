@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // utilities/Typeinfo.js
-
 trait TypeInfo extends js.Object {
   def enter(node: Node): scala.Unit
   def getArgument(): GraphQLArgument

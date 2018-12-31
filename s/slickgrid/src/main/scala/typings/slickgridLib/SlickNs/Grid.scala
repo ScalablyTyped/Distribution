@@ -16,45 +16,10 @@ class Grid[T /* <: SlickData */] protected () extends js.Object {
   		* @param options Additional options.  See Grid Options for a list of options that can be included.
   		**/
   def this(container: java.lang.String, data: js.Array[T], columns: js.Array[Column[T]], options: GridOptions[T]) = this()
-  /**
-  		* Create an instance of the grid.
-  		* @param container Container node to create the grid in. This can be a DOM Element, a jQuery node, or a jQuery selector.
-  		* @param data Databinding source. This can either be a regular JavaScript array or a custom object exposing getItem(index) and getLength() functions.
-  		* @param columns An array of column definition objects. See Column Options for a list of options that can be included on each column definition object.
-  		* @param options Additional options.  See Grid Options for a list of options that can be included.
-  		**/
   def this(container: java.lang.String, data: DataProvider[T], columns: js.Array[Column[T]], options: GridOptions[T]) = this()
-  /**
-  		* Create an instance of the grid.
-  		* @param container Container node to create the grid in. This can be a DOM Element, a jQuery node, or a jQuery selector.
-  		* @param data Databinding source. This can either be a regular JavaScript array or a custom object exposing getItem(index) and getLength() functions.
-  		* @param columns An array of column definition objects. See Column Options for a list of options that can be included on each column definition object.
-  		* @param options Additional options.  See Grid Options for a list of options that can be included.
-  		**/
   def this(container: jqueryLib.JQuery[stdLib.HTMLElement], data: js.Array[T], columns: js.Array[Column[T]], options: GridOptions[T]) = this()
-  /**
-  		* Create an instance of the grid.
-  		* @param container Container node to create the grid in. This can be a DOM Element, a jQuery node, or a jQuery selector.
-  		* @param data Databinding source. This can either be a regular JavaScript array or a custom object exposing getItem(index) and getLength() functions.
-  		* @param columns An array of column definition objects. See Column Options for a list of options that can be included on each column definition object.
-  		* @param options Additional options.  See Grid Options for a list of options that can be included.
-  		**/
   def this(container: jqueryLib.JQuery[stdLib.HTMLElement], data: DataProvider[T], columns: js.Array[Column[T]], options: GridOptions[T]) = this()
-  /**
-  		* Create an instance of the grid.
-  		* @param container Container node to create the grid in. This can be a DOM Element, a jQuery node, or a jQuery selector.
-  		* @param data Databinding source. This can either be a regular JavaScript array or a custom object exposing getItem(index) and getLength() functions.
-  		* @param columns An array of column definition objects. See Column Options for a list of options that can be included on each column definition object.
-  		* @param options Additional options.  See Grid Options for a list of options that can be included.
-  		**/
   def this(container: stdLib.HTMLElement, data: js.Array[T], columns: js.Array[Column[T]], options: GridOptions[T]) = this()
-  /**
-  		* Create an instance of the grid.
-  		* @param container Container node to create the grid in. This can be a DOM Element, a jQuery node, or a jQuery selector.
-  		* @param data Databinding source. This can either be a regular JavaScript array or a custom object exposing getItem(index) and getLength() functions.
-  		* @param columns An array of column definition objects. See Column Options for a list of options that can be included on each column definition object.
-  		* @param options Additional options.  See Grid Options for a list of options that can be included.
-  		**/
   def this(container: stdLib.HTMLElement, data: DataProvider[T], columns: js.Array[Column[T]], options: GridOptions[T]) = this()
   var onActiveCellChanged: Event[OnActiveCellChangedEventArgs[T]] = js.native
   var onActiveCellPositionChanged: Event[OnActiveCellPositionChangedEventArgs[T]] = js.native
@@ -146,12 +111,6 @@ class Grid[T /* <: SlickData */] protected () extends js.Object {
   		* @param speed (optional) - The milliseconds delay between the toggling calls. Defaults to 100 ms.
   		**/
   def flashCell(row: scala.Double, cell: scala.Double): scala.Unit = js.native
-  /**
-  		* Flashes the cell twice by toggling the CSS class 4 times.
-  		* @param row A row index.
-  		* @param cell A column index.
-  		* @param speed (optional) - The milliseconds delay between the toggling calls. Defaults to 100 ms.
-  		**/
   def flashCell(row: scala.Double, cell: scala.Double, speed: scala.Double): scala.Unit = js.native
   def focus(): scala.Unit = js.native
   /**
@@ -307,14 +266,6 @@ class Grid[T /* <: SlickData */] protected () extends js.Object {
   		* @return
   		**/
   def gotoCell(row: scala.Double, cell: scala.Double): scala.Unit = js.native
-  /**
-  		* Accepts a row integer and a cell integer, scrolling the view to the row where row is its row index, and cell is its cell index. Optionally accepts a forceEdit boolean which, if true, will attempt to initiate the edit dialogue for the field in the specified cell.
-  		* Unlike setActiveCell, this scrolls the row into the viewport and sets the keyboard focus.
-  		* @param row A row index.
-  		* @param cell A column index.
-  		* @param forceEdit If true, will attempt to initiate the edit dialogue for the field in the specified cell.
-  		* @return
-  		**/
   def gotoCell(row: scala.Double, cell: scala.Double, forceEdit: scala.Boolean): scala.Unit = js.native
   // #region Core
   /**
@@ -451,19 +402,7 @@ class Grid[T /* <: SlickData */] protected () extends js.Object {
   		* @param toolTip New column tooltip.
   		**/
   def updateColumnHeader(columnId: java.lang.String): scala.Unit = js.native
-  /**
-  		* Updates an existing column definition and a corresponding header DOM element with the new title and tooltip.
-  		* @param columnId Column id.
-  		* @param title New column name.
-  		* @param toolTip New column tooltip.
-  		**/
   def updateColumnHeader(columnId: java.lang.String, title: java.lang.String): scala.Unit = js.native
-  /**
-  		* Updates an existing column definition and a corresponding header DOM element with the new title and tooltip.
-  		* @param columnId Column id.
-  		* @param title New column name.
-  		* @param toolTip New column tooltip.
-  		**/
   def updateColumnHeader(columnId: java.lang.String, title: java.lang.String, toolTip: java.lang.String): scala.Unit = js.native
   def updateRow(row: scala.Double): scala.Unit = js.native
   def updateRowCount(): scala.Unit = js.native

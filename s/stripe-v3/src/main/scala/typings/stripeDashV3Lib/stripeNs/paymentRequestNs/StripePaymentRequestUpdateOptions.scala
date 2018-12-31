@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StripePaymentRequestUpdateOptions extends js.Object {
   var currency: java.lang.String
   var displayItems: js.UndefOr[js.Array[DisplayItem]] = js.undefined

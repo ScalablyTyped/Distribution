@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IServerManagementOperations extends js.Object {
   def BackupMasterDB(
     BackupFile: java.lang.String,

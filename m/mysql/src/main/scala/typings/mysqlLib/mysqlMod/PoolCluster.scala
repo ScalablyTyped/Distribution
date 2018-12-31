@@ -27,7 +27,7 @@ trait PoolCluster extends js.Object {
   def of(pattern: js.UndefOr[scala.Nothing], selector: java.lang.String): Pool = js.native
   def of(pattern: mysqlLib.mysqlLibNumbers.`false`, selector: java.lang.String): Pool = js.native
   def of(pattern: scala.Null, selector: java.lang.String): Pool = js.native
-  def on(ev: java.lang.String, callback: js.Function1[/* repeated */js.Any, scala.Unit]): PoolCluster = js.native
+  def on(ev: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): PoolCluster = js.native
   @JSName("on")
   def on_offline(
     ev: mysqlLib.mysqlLibStrings.offline,
@@ -39,8 +39,8 @@ trait PoolCluster extends js.Object {
     callback: js.Function1[/* nodeId */ java.lang.String, scala.Unit]
   ): PoolCluster = js.native
   /**
-       * remove all pools which match pattern
-       */
+    * remove all pools which match pattern
+    */
   def remove(pattern: java.lang.String): scala.Unit = js.native
 }
 

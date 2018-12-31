@@ -28,7 +28,15 @@ object default extends js.Object {
       atLedgerhqHwDashTransportLib.hwDashTransportMod.DescriptorEvent[atLedgerhqHwDashTransportLib.hwDashTransportMod.Descriptor]
     ]
   ): atLedgerhqHwDashTransportLib.hwDashTransportMod.Subscription = js.native
-  def open(descriptor: atLedgerhqHwDashTransportLib.hwDashTransportMod.Descriptor): js.Promise[atLedgerhqHwDashTransportLib.hwDashTransportMod.Transport[_]] = js.native
-  def open(descriptor: atLedgerhqHwDashTransportLib.hwDashTransportMod.Descriptor, timeout: scala.Double): js.Promise[atLedgerhqHwDashTransportLib.hwDashTransportMod.Transport[_]] = js.native
+  def open(descriptor: atLedgerhqHwDashTransportLib.hwDashTransportMod.Descriptor): js.Promise[
+    atLedgerhqHwDashTransportLib.hwDashTransportMod.Transport[
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof descriptor */ _
+    ]
+  ] = js.native
+  def open(descriptor: atLedgerhqHwDashTransportLib.hwDashTransportMod.Descriptor, timeout: scala.Double): js.Promise[
+    atLedgerhqHwDashTransportLib.hwDashTransportMod.Transport[
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof descriptor */ _
+    ]
+  ] = js.native
 }
 

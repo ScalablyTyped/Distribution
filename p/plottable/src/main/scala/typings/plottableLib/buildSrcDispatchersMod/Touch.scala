@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 class Touch protected ()
   extends plottableLib.buildSrcDispatchersTouchDispatcherMod.Touch {
   /**
-       * This constructor should not be invoked directly.
-       *
-       * @param {SVGElement} svg The root <svg> to attach to.
-       */
+    * This constructor should not be invoked directly.
+    *
+    * @param {SVGElement} svg The root <svg> to attach to.
+    */
   def this(component: plottableLib.buildSrcComponentsComponentMod.Component) = this()
 }
 
@@ -26,12 +26,12 @@ object Touch extends js.Object {
   var _TOUCHMOVE_EVENT_NAME: js.Any = js.native
   var _TOUCHSTART_EVENT_NAME: js.Any = js.native
   /**
-       * Gets a Touch Dispatcher for the component.
-       * If one already exists, it will be returned; otherwise, a new one will be created.
-       *
-       * @param component
-       * @return {Dispatchers.Touch}
-       */
+    * Gets a Touch Dispatcher for the component.
+    * If one already exists, it will be returned; otherwise, a new one will be created.
+    *
+    * @param component
+    * @return {Dispatchers.Touch}
+    */
   def getDispatcher(component: plottableLib.buildSrcComponentsComponentMod.Component): plottableLib.buildSrcDispatchersMod.Touch = js.native
 }
 

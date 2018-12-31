@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SearchResult extends js.Object {
   /** Etag of this resource. */
   var etag: js.UndefOr[java.lang.String] = js.undefined
@@ -14,9 +13,9 @@ trait SearchResult extends js.Object {
   /** Identifies what kind of resource this is. Value: the fixed string "youtube#searchResult". */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The snippet object contains basic details about a search result, such as its title or description. For example, if the search result is a video, then
-               * the title will be the video's title and the description will be the video's description.
-               */
+    * The snippet object contains basic details about a search result, such as its title or description. For example, if the search result is a video, then
+    * the title will be the video's title and the description will be the video's description.
+    */
   var snippet: js.UndefOr[SearchResultSnippet] = js.undefined
 }
 

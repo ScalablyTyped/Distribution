@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AutocompleteResultPoi extends js.Object {
   var City: java.lang.String
   var business: java.lang.String

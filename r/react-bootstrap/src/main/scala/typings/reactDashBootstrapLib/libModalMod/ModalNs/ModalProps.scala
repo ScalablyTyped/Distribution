@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModalProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libModalMod.Modal]
      with reactDashBootstrapLib.reactDashBootstrapMod.TransitionCallbacks {

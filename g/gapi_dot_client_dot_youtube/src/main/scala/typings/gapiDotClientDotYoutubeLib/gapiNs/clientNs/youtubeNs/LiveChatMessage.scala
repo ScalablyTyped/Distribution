@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LiveChatMessage extends js.Object {
   /** The authorDetails object contains basic details about the user that posted this message. */
   var authorDetails: js.UndefOr[LiveChatMessageAuthorDetails] = js.undefined

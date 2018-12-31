@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReportsResource extends js.Object {
   /** Retrieves stored reports. */
   def listreports(request: gapiDotClientDotDoubleclickbidmanagerLib.Anon_QueryId): gapiDotClientLib.gapiNs.clientNs.Request[ListReportsResponse]

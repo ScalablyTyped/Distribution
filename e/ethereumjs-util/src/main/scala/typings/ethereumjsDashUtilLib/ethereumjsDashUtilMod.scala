@@ -139,7 +139,7 @@ object ethereumjsDashUtilMod extends js.Object {
   def toRpcSig(v: scala.Double, r: nodeLib.Buffer, s: stdLib.Uint8Array): java.lang.String = js.native
   def toRpcSig(v: scala.Double, r: stdLib.Uint8Array, s: nodeLib.Buffer): java.lang.String = js.native
   def toRpcSig(v: scala.Double, r: stdLib.Uint8Array, s: stdLib.Uint8Array): java.lang.String = js.native
-  def toUnsigned(num: js.Any): nodeLib.Buffer | stdLib.Uint8Array = js.native
+  def toUnsigned(num: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify BN */ js.Any): nodeLib.Buffer | stdLib.Uint8Array = js.native
   def unpad[T /* <: nodeLib.Buffer | stdLib.Uint8Array | js.Array[_] | java.lang.String */](a: T): T = js.native
   def zeroAddress(): java.lang.String = js.native
   def zeros(bytes: scala.Double): nodeLib.Buffer | stdLib.Uint8Array = js.native

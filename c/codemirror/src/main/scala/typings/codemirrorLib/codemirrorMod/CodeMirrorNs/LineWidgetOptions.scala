@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LineWidgetOptions extends js.Object {
   /** Causes the widget to be placed above instead of below the text of the line. */
   var above: js.UndefOr[scala.Boolean] = js.undefined

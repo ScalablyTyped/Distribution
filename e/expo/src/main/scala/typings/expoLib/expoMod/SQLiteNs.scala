@@ -24,7 +24,6 @@ object SQLiteNs extends js.Object {
     ): scala.Unit = js.native
   }
   
-  
   trait ResultSet extends js.Object {
     var insertId: scala.Double
     var rowAffected: scala.Double

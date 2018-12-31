@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Tcp extends js.Object {
   var `_`: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var inode: java.lang.String

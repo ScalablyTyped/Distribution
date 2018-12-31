@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IObjectVersion extends js.Object {
   val AccessedByMeUtc: stdLib.Date
   val CheckedOutAtUtc: stdLib.Date

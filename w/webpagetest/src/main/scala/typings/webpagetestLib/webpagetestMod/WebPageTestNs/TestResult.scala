@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestResult extends js.Object {
   var average: TestRun
   var bwDown: scala.Double

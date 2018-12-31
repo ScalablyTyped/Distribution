@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "RoboMaker")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class RoboMaker ()
   extends awsDashSdkLib.awsDashSdkMod.RoboMaker {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ClientConfiguration) = this()
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Result extends js.Object {
   var cacheId: js.UndefOr[java.lang.String] = js.undefined
   var displayLink: js.UndefOr[java.lang.String] = js.undefined

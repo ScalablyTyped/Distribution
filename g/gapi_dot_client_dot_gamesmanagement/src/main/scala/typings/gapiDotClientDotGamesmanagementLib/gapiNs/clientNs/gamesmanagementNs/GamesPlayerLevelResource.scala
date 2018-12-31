@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GamesPlayerLevelResource extends js.Object {
   /** The level for the user. */
   var level: js.UndefOr[scala.Double] = js.undefined

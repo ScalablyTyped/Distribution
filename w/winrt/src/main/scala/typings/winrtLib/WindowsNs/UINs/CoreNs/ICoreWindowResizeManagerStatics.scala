@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICoreWindowResizeManagerStatics extends js.Object {
   def getForCurrentView(): CoreWindowResizeManager
 }

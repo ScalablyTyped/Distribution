@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * This class handles animations in a Diagram.  Each Diagram has one, the Diagram.animationManager.
-    */
-
+  * This class handles animations in a Diagram.  Each Diagram has one, the Diagram.animationManager.
+  */
 trait AnimationManager extends js.Object {
   /**Gets or sets the duration for animations, in milliseconds. The default value is 600 milliseconds.*/
   var duration: scala.Double
@@ -21,8 +20,8 @@ trait AnimationManager extends js.Object {
   /**This read-only property is true when the animation manager is in the middle of an animation tick.*/
   var isTicking: scala.Boolean
   /**
-          * Stops any running animation and updates the Diagram to its final state.
-          */
+    * Stops any running animation and updates the Diagram to its final state.
+    */
   def stopAnimation(): scala.Unit
 }
 

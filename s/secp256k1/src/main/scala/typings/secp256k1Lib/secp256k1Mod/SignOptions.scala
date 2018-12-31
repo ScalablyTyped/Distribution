@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SignOptions extends js.Object {
   /**
-       * Additional data for noncefn (RFC 6979 3.6) (32 bytes).
-       *
-       * By default is `null`.
-       */
+    * Additional data for noncefn (RFC 6979 3.6) (32 bytes).
+    *
+    * By default is `null`.
+    */
   var data: js.UndefOr[nodeLib.Buffer] = js.undefined
   /** Nonce generator. By default it is rfc6979 */
   var noncefn: js.UndefOr[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_VertexShaderSourceTranslucent extends js.Object {
   var fragmentShaderSource: js.UndefOr[java.lang.String] = js.undefined
   var material: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Material] = js.undefined

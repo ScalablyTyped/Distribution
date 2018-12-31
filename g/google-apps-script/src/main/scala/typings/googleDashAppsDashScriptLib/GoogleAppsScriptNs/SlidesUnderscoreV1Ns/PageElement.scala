@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PageElement extends js.Object {
   // The description of the page element. Combined with title to display alt
   // text.

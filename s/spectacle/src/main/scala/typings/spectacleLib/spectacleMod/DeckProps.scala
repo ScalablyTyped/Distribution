@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeckProps extends js.Object {
   var autoplay: js.UndefOr[scala.Boolean] = js.undefined
   var autoplayDuration: js.UndefOr[scala.Double] = js.undefined

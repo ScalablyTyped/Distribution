@@ -17,7 +17,7 @@ object DateRangesOverlapType extends js.Object {
     extends camljsLib.CamlBuilderNs.DateRangesOverlapType
   
   /** Returns events for one month, specified by CalendarDate in QueryOptions.
-              Caution: usually also returns few days from previous and next months */
+    Caution: usually also returns few days from previous and next months */
   @js.native
   sealed trait Month
     extends camljsLib.CamlBuilderNs.DateRangesOverlapType

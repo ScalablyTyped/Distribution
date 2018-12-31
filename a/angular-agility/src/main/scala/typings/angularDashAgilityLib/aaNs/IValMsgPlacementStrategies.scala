@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IValMsgPlacementStrategies
   extends /* strategyName */ org.scalablytyped.runtime.StringDictionary[
       js.Function3[

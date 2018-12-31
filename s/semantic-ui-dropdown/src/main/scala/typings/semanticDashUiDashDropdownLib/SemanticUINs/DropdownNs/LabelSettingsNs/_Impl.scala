@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default 200
-                   */
+    * @default 200
+    */
   var duration: scala.Double
   /**
-                   * @default 'horizontal flip'
-                   */
+    * @default 'horizontal flip'
+    */
   var transition: java.lang.String
   /**
-                   * @default false
-                   */
+    * @default false
+    */
   var variation: semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | java.lang.String
 }
 

@@ -22,32 +22,8 @@ trait PushNotification extends js.Object {
   		 * @param id
   		 */
   def finish(): scala.Unit = js.native
-  /**
-  		 * iOS only
-  		 * Tells the OS that you are done processing a background push notification.
-  		 * successHandler gets called when background push processing is successfully completed.
-  		 * @param successHandler
-  		 * @param errorHandler
-  		 * @param id
-  		 */
   def finish(successHandler: js.Function0[_]): scala.Unit = js.native
-  /**
-  		 * iOS only
-  		 * Tells the OS that you are done processing a background push notification.
-  		 * successHandler gets called when background push processing is successfully completed.
-  		 * @param successHandler
-  		 * @param errorHandler
-  		 * @param id
-  		 */
   def finish(successHandler: js.Function0[_], errorHandler: js.Function0[_]): scala.Unit = js.native
-  /**
-  		 * iOS only
-  		 * Tells the OS that you are done processing a background push notification.
-  		 * successHandler gets called when background push processing is successfully completed.
-  		 * @param successHandler
-  		 * @param errorHandler
-  		 * @param id
-  		 */
   def finish(successHandler: js.Function0[_], errorHandler: js.Function0[_], id: java.lang.String): scala.Unit = js.native
   /**
   		 * Get the current badge count visible when the app is not running
@@ -145,23 +121,7 @@ trait PushNotification extends js.Object {
   		 * @param topics
   		 */
   def unregister(successHandler: js.Function0[_]): scala.Unit = js.native
-  /**
-  		 * The unregister method is used when the application no longer wants to receive push notifications.
-  		 * Beware that this cleans up all event handlers previously registered,
-  		 * so you will need to re-register them if you want them to function again without an application reload.
-  		 * @param successHandler
-  		 * @param errorHandler
-  		 * @param topics
-  		 */
   def unregister(successHandler: js.Function0[_], errorHandler: js.Function0[_]): scala.Unit = js.native
-  /**
-  		 * The unregister method is used when the application no longer wants to receive push notifications.
-  		 * Beware that this cleans up all event handlers previously registered,
-  		 * so you will need to re-register them if you want them to function again without an application reload.
-  		 * @param successHandler
-  		 * @param errorHandler
-  		 * @param topics
-  		 */
   def unregister(successHandler: js.Function0[_], errorHandler: js.Function0[_], topics: js.Array[java.lang.String]): scala.Unit = js.native
   /**
   		 * The unsubscribe method is used when the application no longer wants to receive push notifications

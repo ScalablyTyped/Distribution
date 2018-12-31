@@ -9,27 +9,27 @@ import scala.scalajs.js.annotation._
 @js.native
 class Event () extends js.Object {
   /**
-           * The current state of the keyboard modifiers.
-           * Read Only
-           */
+    * The current state of the keyboard modifiers.
+    * Read Only
+    */
   val modifiers: js.Any = js.native
   /**
-           * The time at which the event was created, in milliseconds since the epoch.
-           * Read only.
-           */
+    * The time at which the event was created, in milliseconds since the epoch.
+    * Read only.
+    */
   val timeStamp: scala.Double = js.native
   /**
-           * Cancels the event if it is cancelable, without stopping further propagation of the event.
-           */
+    * Cancels the event if it is cancelable, without stopping further propagation of the event.
+    */
   def preventDefault(): scala.Unit = js.native
   /**
-           * Cancels the event if it is cancelable, and stops stopping further propagation of the event. This is has the same effect as calling both stopPropagation() and preventDefault().
-           * Any handler can also return false to indicate that stop() should be called right after.
-           */
+    * Cancels the event if it is cancelable, and stops stopping further propagation of the event. This is has the same effect as calling both stopPropagation() and preventDefault().
+    * Any handler can also return false to indicate that stop() should be called right after.
+    */
   def stop(): scala.Unit = js.native
   /**
-           * Prevents further propagation of the current event.
-           */
+    * Prevents further propagation of the current event.
+    */
   def stopPropagation(): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Result extends js.Object {
   /** List of entries that provide additional details about a single URL. Optional. */
   var details: js.UndefOr[

@@ -9,9 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class CommentSerializer ()
   extends typedocLib.distLibSerializationComponentsMod.SerializerComponent[typedocLib.distLibModelsMod.Comment] {
-  var serializeGroup: js.Any = js.native
+  var serializeGroup: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CommentSerializer.serializeGroup */ js.Any = js.native
   @JSName("serializeGroupSymbol")
-  var serializeGroupSymbol_CommentSerializer: typedocLib.Anon_Data = js.native
+  var serializeGroupSymbol_CommentSerializer: org.scalablytyped.runtime.Instantiable2[
+    /* shortText */ js.UndefOr[/* shortText */ java.lang.String], 
+    /* text */ js.UndefOr[/* text */ java.lang.String], 
+    typedocLib.distLibModelsMod.Comment
+  ] = js.native
 }
 
 @JSImport("typedoc/dist/lib/serialization/serializers/comments/comment", "CommentSerializer")

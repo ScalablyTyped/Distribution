@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PartOfSpeech extends js.Object {
   /** The grammatical aspect. */
   var aspect: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ZoneBoundary extends js.Object {
   /** The conditions that, when conjoined, make up the boundary. */
   var condition: js.UndefOr[js.Array[Condition]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ClickButton extends js.Object {
   var blurButton: downshiftLib.downshiftMod.StateChangeTypes
   var blurInput: downshiftLib.downshiftMod.StateChangeTypes

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ENUM extends js.Object {
   var ENUM: graphqlLib.graphqlLibStrings.ENUM
   var INPUT_OBJECT: graphqlLib.graphqlLibStrings.INPUT_OBJECT

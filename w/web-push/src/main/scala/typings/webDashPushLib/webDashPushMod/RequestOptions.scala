@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestOptions extends js.Object {
   var TTL: js.UndefOr[scala.Double] = js.undefined
    // a value in seconds that describes how long a push message is retained by the push service (by default, four weeks).

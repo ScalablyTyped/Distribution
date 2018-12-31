@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Promise A+
-     */
+  * Promise A+
+  */
 @js.native
 trait IPromise[T] extends js.Object {
   def `then`[R](): IPromise[R] = js.native

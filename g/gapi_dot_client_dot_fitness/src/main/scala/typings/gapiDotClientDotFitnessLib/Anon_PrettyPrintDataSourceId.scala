@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PrettyPrintDataSourceId extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -14,9 +13,9 @@ trait Anon_PrettyPrintDataSourceId extends js.Object {
   /** The data stream ID of the data source that created the dataset. */
   var dataSourceId: java.lang.String
   /**
-                   * Dataset identifier that is a composite of the minimum data point start time and maximum data point end time represented as nanoseconds from the epoch.
-                   * The ID is formatted like: "startTime-endTime" where startTime and endTime are 64 bit integers.
-                   */
+    * Dataset identifier that is a composite of the minimum data point start time and maximum data point end time represented as nanoseconds from the epoch.
+    * The ID is formatted like: "startTime-endTime" where startTime and endTime are 64 bit integers.
+    */
   var datasetId: java.lang.String
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
@@ -29,9 +28,9 @@ trait Anon_PrettyPrintDataSourceId extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** Delete a dataset for the person identified. Use me to indicate the authenticated user. Only me is supported at this time. */
   var userId: java.lang.String

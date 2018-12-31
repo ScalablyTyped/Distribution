@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Prerequests extends js.Object {
   var assertions: newmanLib.newmanMod.NewmanRunStat
   var items: newmanLib.newmanMod.NewmanRunStat

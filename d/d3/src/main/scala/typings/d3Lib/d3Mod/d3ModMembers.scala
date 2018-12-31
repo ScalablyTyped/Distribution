@@ -8,13 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("d3", JSImport.Namespace)
 @js.native
 object d3ModMembers extends js.Object {
-  val bisect: js.Function4[
-    /* array */ stdLib.ArrayLike[stdLib.Date], 
-    /* x */ stdLib.Date, 
-    /* lo */ js.UndefOr[scala.Double], 
-    /* hi */ js.UndefOr[scala.Double], 
-    scala.Double
-  ] = js.native
+  val bisect: d3DashArrayLib.Anon_Array = js.native
   val color: d3DashColorLib.d3DashColorMod.ColorFactory = js.native
   val cubehelix: d3DashColorLib.d3DashColorMod.CubehelixColorFactory = js.native
   val curveBasis: d3DashShapeLib.d3DashShapeMod.CurveFactory = js.native
@@ -1786,7 +1780,7 @@ object d3ModMembers extends js.Object {
   ): js.Array[ParsedRow] = js.native
   def customEvent[Context, Result](
     event: d3DashSelectionLib.d3DashSelectionMod.BaseEvent,
-    listener: js.ThisFunction1[/* this */ Context, /* repeated */js.Any, Result],
+    listener: js.ThisFunction1[/* this */ Context, /* repeated */ js.Any, Result],
     that: Context,
     args: js.Any*
   ): Result = js.native
@@ -2154,7 +2148,7 @@ object d3ModMembers extends js.Object {
   @JSName("geoPath")
   def geoPath_ThisDatumObjectGeoPermissibleObjects[This, DatumObject /* <: d3DashGeoLib.d3DashGeoMod.GeoPermissibleObjects */](projection: scala.Null, context: d3DashGeoLib.d3DashGeoMod.GeoContext): d3DashGeoLib.d3DashGeoMod.GeoPath[This, DatumObject] = js.native
   def geoProjection(project: d3DashGeoLib.d3DashGeoMod.GeoRawProjection): d3DashGeoLib.d3DashGeoMod.GeoProjection = js.native
-  def geoProjectionMutator(factory: js.Function1[/* repeated */js.Any, d3DashGeoLib.d3DashGeoMod.GeoRawProjection]): js.Function0[d3DashGeoLib.d3DashGeoMod.GeoProjection] = js.native
+  def geoProjectionMutator(factory: js.Function1[/* repeated */ js.Any, d3DashGeoLib.d3DashGeoMod.GeoRawProjection]): js.Function0[d3DashGeoLib.d3DashGeoMod.GeoProjection] = js.native
   def geoRotation(angles: js.Tuple2[scala.Double, scala.Double]): d3DashGeoLib.d3DashGeoMod.GeoRotation = js.native
   def geoRotation(angles: js.Tuple3[scala.Double, scala.Double, scala.Double]): d3DashGeoLib.d3DashGeoMod.GeoRotation = js.native
   def geoStereographic(): d3DashGeoLib.d3DashGeoMod.GeoProjection = js.native
@@ -2454,9 +2448,7 @@ object d3ModMembers extends js.Object {
   def partition[Datum](): d3DashHierarchyLib.d3DashHierarchyMod.PartitionLayout[Datum] = js.native
   def path(): d3DashPathLib.d3DashPathMod.Path = js.native
   def permute[T](array: org.scalablytyped.runtime.NumberDictionary[T], keys: stdLib.ArrayLike[scala.Double]): js.Array[T] = js.native
-  def permute[T, K /* <: java.lang.String */](`object`: T, keys: stdLib.ArrayLike[K]): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-  ] = js.native
+  def permute[T, K /* <: java.lang.String */](`object`: T, keys: stdLib.ArrayLike[K]): js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
   def pie(): d3DashShapeLib.d3DashShapeMod.Pie[_, scala.Double | d3DashShapeLib.Anon_ValueOf] = js.native
   @JSName("pie")
   def pie_Datum[Datum](): d3DashShapeLib.d3DashShapeMod.Pie[_, Datum] = js.native

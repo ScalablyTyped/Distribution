@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MomentZone extends js.Object {
   var abbrs: js.Array[java.lang.String]
   var name: java.lang.String

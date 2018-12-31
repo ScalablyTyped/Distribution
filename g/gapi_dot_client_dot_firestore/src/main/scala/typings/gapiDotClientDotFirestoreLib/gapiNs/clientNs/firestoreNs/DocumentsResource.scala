@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DocumentsResource extends js.Object {
   /**
-               * Gets multiple documents.
-               *
-               * Documents returned by this method are not guaranteed to be returned in the
-               * same order that they were requested.
-               */
+    * Gets multiple documents.
+    *
+    * Documents returned by this method are not guaranteed to be returned in the
+    * same order that they were requested.
+    */
   def batchGet(request: gapiDotClientDotFirestoreLib.Anon_Database): gapiDotClientLib.gapiNs.clientNs.Request[BatchGetDocumentsResponse]
   /** Starts a new transaction. */
   def beginTransaction(request: gapiDotClientDotFirestoreLib.Anon_Database): gapiDotClientLib.gapiNs.clientNs.Request[BeginTransactionResponse]

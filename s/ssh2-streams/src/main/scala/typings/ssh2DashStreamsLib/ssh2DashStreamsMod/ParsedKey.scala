@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParsedKey extends js.Object {
   var comment: java.lang.String
   var encryption: java.lang.String

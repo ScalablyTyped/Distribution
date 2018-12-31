@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UniformOptions extends js.Object {
   var roomDugPercentage: js.UndefOr[scala.Double] = js.undefined
   var roomHeight: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.undefined

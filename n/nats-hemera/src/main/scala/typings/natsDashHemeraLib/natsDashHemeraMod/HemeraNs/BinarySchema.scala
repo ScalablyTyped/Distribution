@@ -8,20 +8,20 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BinarySchema extends AnySchema {
   /**
-           * Sets the string encoding format if a string input is converted to a buffer.
-           */
+    * Sets the string encoding format if a string input is converted to a buffer.
+    */
   def encoding(encoding: java.lang.String): this.type = js.native
   /**
-           * Specifies the exact length of the buffer:
-           */
+    * Specifies the exact length of the buffer:
+    */
   def length(limit: scala.Double): this.type = js.native
   /**
-           * Specifies the maximum length of the buffer.
-           */
+    * Specifies the maximum length of the buffer.
+    */
   def max(limit: scala.Double): this.type = js.native
   /**
-           * Specifies the minimum length of the buffer.
-           */
+    * Specifies the minimum length of the buffer.
+    */
   def min(limit: scala.Double): this.type = js.native
 }
 

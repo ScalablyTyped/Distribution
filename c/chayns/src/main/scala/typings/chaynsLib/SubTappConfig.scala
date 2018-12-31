@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // chayns.setSubTapp()
-
 trait SubTappConfig extends js.Object {
   var boldText: js.UndefOr[scala.Boolean] = js.undefined
   var buttonName: java.lang.String

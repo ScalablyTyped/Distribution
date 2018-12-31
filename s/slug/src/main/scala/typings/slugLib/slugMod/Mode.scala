@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Mode extends js.Object {
   var charmap: js.UndefOr[CharMap | scala.Null] = js.undefined
   var lower: js.UndefOr[scala.Boolean | scala.Null] = js.undefined

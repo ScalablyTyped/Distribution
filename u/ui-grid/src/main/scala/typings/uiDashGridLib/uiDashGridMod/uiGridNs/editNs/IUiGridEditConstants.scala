@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IUiGridEditConstants extends js.Object {
   var EDITABLE_CELL_DIRECTIVE: java.lang.String
   var EDITABLE_CELL_TEMPLATE: java.lang.String

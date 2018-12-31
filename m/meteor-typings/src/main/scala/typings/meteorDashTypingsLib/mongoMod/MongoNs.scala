@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("meteor/mongo", "Mongo")
 @js.native
 object MongoNs extends js.Object {
-  
   trait AllowDenyOptions extends js.Object {
     var fetch: js.UndefOr[js.Array[java.lang.String]] = js.undefined
     var insert: js.UndefOr[js.Function2[/* userId */ java.lang.String, /* doc */ js.Any, scala.Boolean]] = js.undefined
@@ -145,13 +144,10 @@ object MongoNs extends js.Object {
   trait CursorStatic
     extends org.scalablytyped.runtime.Instantiable0[Cursor[js.Object]]
   
-  
   trait FieldSpecifier
     extends /* id */ org.scalablytyped.runtime.StringDictionary[stdLib.Number]
   
-  
   trait Modifier extends js.Object
-  
   
   trait ObjectID extends js.Object
   
@@ -159,7 +155,6 @@ object MongoNs extends js.Object {
   trait ObjectIDStatic
     extends org.scalablytyped.runtime.Instantiable0[ObjectID]
        with org.scalablytyped.runtime.Instantiable1[/* hexString */ java.lang.String, ObjectID]
-  
   
   trait ObserveCallbacks extends js.Object {
     var added: js.UndefOr[js.Function1[/* document */ js.Object, scala.Unit]] = js.undefined
@@ -197,7 +192,6 @@ object MongoNs extends js.Object {
       ] = js.undefined
   }
   
-  
   trait ObserveChangesCallbacks extends js.Object {
     var added: js.UndefOr[js.Function2[/* id */ java.lang.String, /* fields */ js.Object, scala.Unit]] = js.undefined
     var addedBefore: js.UndefOr[
@@ -208,11 +202,9 @@ object MongoNs extends js.Object {
     var removed: js.UndefOr[js.Function1[/* id */ java.lang.String, scala.Unit]] = js.undefined
   }
   
-  
   trait Selector
     extends stdLib.Object
        with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
-  
   
   trait SortSpecifier extends js.Object
   

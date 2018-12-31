@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 object pDashThrottleModMembers extends js.Object {
   def apply[R](fn: js.Function0[js.Thenable[R] | R], limit: scala.Double, interval: scala.Double): js.Function0[js.Promise[R]] with pDashThrottleLib.Anon_Abort = js.native
   def apply[R](
-    fn: js.Function1[/* repeated */js.Any, js.Thenable[R] | R],
+    fn: js.Function1[/* repeated */ js.Any, js.Thenable[R] | R],
     limit: scala.Double,
     interval: scala.Double
-  ): (js.Function1[/* repeated */js.Any, js.Promise[R]]) with pDashThrottleLib.Anon_Abort = js.native
+  ): (js.Function1[/* repeated */ js.Any, js.Promise[R]]) with pDashThrottleLib.Anon_Abort = js.native
   def apply[R, T1, T2](
     fn: js.Function2[/* arg1 */ T1, /* arg2 */ T2, js.Thenable[R] | R],
     limit: scala.Double,

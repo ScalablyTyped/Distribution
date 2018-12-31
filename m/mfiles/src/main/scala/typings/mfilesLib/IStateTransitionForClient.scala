@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStateTransitionForClient extends js.Object {
   var FromState: scala.Double
   val ID: scala.Double

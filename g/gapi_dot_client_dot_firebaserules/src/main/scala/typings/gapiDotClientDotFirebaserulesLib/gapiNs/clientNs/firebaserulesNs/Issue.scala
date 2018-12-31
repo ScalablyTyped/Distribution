@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Issue extends js.Object {
   /** Short error description. */
   var description: js.UndefOr[java.lang.String] = js.undefined

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class KmlMultiGeometry () extends KmlGeometry {
   /**
-       * The collection of geometries that are children of this multi-geometry.
-       */
+    * The collection of geometries that are children of this multi-geometry.
+    */
   def getGeometries(): GEGeometryContainer = js.native
 }
 

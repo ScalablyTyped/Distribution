@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait GridControlContext extends js.Object
 
 /**
-     * Enumeration of grid control context resolutions.
-     */
+  * Enumeration of grid control context resolutions.
+  */
 @JSGlobal("XrmEnum.GridControlContext")
 @js.native
 object GridControlContext extends js.Object {

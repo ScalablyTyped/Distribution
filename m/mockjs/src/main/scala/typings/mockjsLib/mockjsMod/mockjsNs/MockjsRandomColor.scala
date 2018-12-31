@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 // Mockjs.Random - Color
 // see https://github.com/nuysoft/Mock/wiki/Color
-
 trait MockjsRandomColor extends js.Object {
   // Random.color
   def color(): S

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICustomMapStyle extends js.Object {
   /** A list of map elements to be styled. */
   var elements: js.UndefOr[IMapElements] = js.undefined

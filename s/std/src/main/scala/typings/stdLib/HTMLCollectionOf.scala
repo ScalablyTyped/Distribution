@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HTMLCollectionOf[T /* <: Element */] extends HTMLCollectionBase {
   @JSName(org.scalablytyped.runtime.Symbol.iterator)
   var iterator_HTMLCollectionOf: js.Function0[IterableIterator[T]]

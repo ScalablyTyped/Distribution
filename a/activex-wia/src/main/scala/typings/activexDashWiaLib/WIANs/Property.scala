@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * The Property object is a container for a property associated with a Device, DeviceInfo, Filter, ImageFile or Item object. See the Properties property
-     * on any of these objects for details on accessing Property objects.
-     */
+  * The Property object is a container for a property associated with a Device, DeviceInfo, Filter, ImageFile or Item object. See the Properties property
+  * on any of these objects for details on accessing Property objects.
+  */
 @JSGlobal("WIA.Property")
 @js.native
 class Property protected () extends js.Object {

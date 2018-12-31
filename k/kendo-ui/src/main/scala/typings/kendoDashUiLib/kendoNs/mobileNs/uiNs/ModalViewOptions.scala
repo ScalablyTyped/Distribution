@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModalViewOptions extends js.Object {
   var beforeOpen: js.UndefOr[js.Function1[/* e */ ModalViewBeforeOpenEvent, scala.Unit]] = js.undefined
   var close: js.UndefOr[js.Function1[/* e */ ModalViewCloseEvent, scala.Unit]] = js.undefined

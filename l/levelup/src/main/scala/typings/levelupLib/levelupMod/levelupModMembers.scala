@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object levelupModMembers extends js.Object {
   val default: LevelUpConstructor = js.native
-  val errors: js.Any = js.native
+  val errors: /*typeof levelerrors*/ js.Any = js.native
 }
 

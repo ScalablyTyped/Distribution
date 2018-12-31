@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaneState extends js.Object {
   var isClosed: scala.Boolean
   var isHidden: scala.Boolean

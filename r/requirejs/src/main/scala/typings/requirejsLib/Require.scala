@@ -44,10 +44,6 @@ trait Require extends js.Object {
   	* @param err
   	**/
   def onError(err: RequireError): scala.Unit = js.native
-  /**
-  	* On Error override
-  	* @param err
-  	**/
   def onError(err: RequireError, errback: js.Function1[/* err */ RequireError, scala.Unit]): scala.Unit = js.native
   /**
   	* Semi-private function, overload in special instance of undef()

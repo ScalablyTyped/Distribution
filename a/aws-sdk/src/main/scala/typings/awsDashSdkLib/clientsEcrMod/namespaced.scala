@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("aws-sdk/clients/ecr", JSImport.Namespace)
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class namespaced () extends ECR {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsEcrMod.ECRNs.ClientConfiguration) = this()
 }
 

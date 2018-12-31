@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * A table view section is a container within a table used to organize table view rows.
 		 */
-
 trait TableViewSection
   extends titaniumLib.TitaniumNs.Proxy {
   /**

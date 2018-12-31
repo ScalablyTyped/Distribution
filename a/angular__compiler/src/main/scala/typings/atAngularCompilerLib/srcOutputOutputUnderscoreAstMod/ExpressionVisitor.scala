@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExpressionVisitor extends js.Object {
   def visitAssertNotNullExpr(ast: AssertNotNull, context: js.Any): js.Any
   def visitBinaryOperatorExpr(ast: BinaryOperatorExpr, context: js.Any): js.Any

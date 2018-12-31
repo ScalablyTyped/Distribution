@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Global object NFC.
-     */
-
+  * Global object NFC.
+  */
 trait Window extends js.Object {
   var ndef: Ndef
   var nfc: Nfc

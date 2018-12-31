@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChUIEventInterface extends js.Object {
   var doubletap: java.lang.String
   var eventCancel: java.lang.String

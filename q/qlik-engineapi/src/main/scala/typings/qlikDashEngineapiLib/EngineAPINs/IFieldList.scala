@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * FieldListObject...
-     */
-
+  * FieldListObject...
+  */
 trait IFieldList extends js.Object {
   /**
-           * NxFieldDescription[]
-           */
+    * NxFieldDescription[]
+    */
   var qItems: js.Array[INxFieldDescription]
 }
 

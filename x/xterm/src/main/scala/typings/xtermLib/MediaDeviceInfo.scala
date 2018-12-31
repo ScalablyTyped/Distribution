@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaDeviceInfo extends js.Object {
   val deviceId: java.lang.String
   val groupId: java.lang.String

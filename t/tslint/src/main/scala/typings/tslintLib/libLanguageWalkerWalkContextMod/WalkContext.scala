@@ -22,7 +22,6 @@ class WalkContext[T] protected () extends js.Object {
   ): scala.Unit = js.native
   /** Add a failure with any arbitrary span. Prefer `addFailureAtNode` if possible. */
   def addFailureAt(start: scala.Double, width: scala.Double, failure: java.lang.String): scala.Unit = js.native
-  /** Add a failure with any arbitrary span. Prefer `addFailureAtNode` if possible. */
   def addFailureAt(
     start: scala.Double,
     width: scala.Double,
@@ -31,7 +30,6 @@ class WalkContext[T] protected () extends js.Object {
   ): scala.Unit = js.native
   /** Add a failure using a node's span. */
   def addFailureAtNode(node: typescriptLib.typescriptMod.tsNs.Node, failure: java.lang.String): scala.Unit = js.native
-  /** Add a failure using a node's span. */
   def addFailureAtNode(
     node: typescriptLib.typescriptMod.tsNs.Node,
     failure: java.lang.String,

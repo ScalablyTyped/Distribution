@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDirectoryEntry extends IEntry {
   /** [Method] Works the same way as getFile but creates or looks up a directory
   		* @param config Object

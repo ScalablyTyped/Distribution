@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Credit extends js.Object {
   val element: stdLib.HTMLElement
   val html: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FastifyInstance[HttpServer, HttpRequest, HttpResponse] extends js.Object {
   var jwt: jwt
 }

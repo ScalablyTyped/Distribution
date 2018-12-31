@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RebaseBinding extends js.Object {
   var context: js.Object
   var endpoint: java.lang.String

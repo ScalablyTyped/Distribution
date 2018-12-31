@@ -11,7 +11,7 @@ class Callout () extends js.Object {
   /** Adds a link to the actions panel in the bottom part of the callout window */
   def addAction(action: CalloutAction): scala.Unit = js.native
   /** Adds event handler to the callout.
-          @param eventName one of the following: "opened", "opening", "closing", "closed" */
+    @param eventName one of the following: "opened", "opening", "closing", "closed" */
   def addEventCallback(eventName: java.lang.String, callback: js.Function1[/* callout */ this.type, scala.Unit]): scala.Unit = js.native
   /** Hide the callout. Animation can be used only for IE9+ */
   def close(useAnimation: scala.Boolean): scala.Unit = js.native

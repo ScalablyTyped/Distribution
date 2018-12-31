@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AcceleratorTypesScopedList extends js.Object {
   /** [Output Only] List of accelerator types contained in this scope. */
   var acceleratorTypes: js.UndefOr[js.Array[AcceleratorType]] = js.undefined

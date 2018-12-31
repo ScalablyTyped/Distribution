@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebpOptions extends OutputOptions {
   /** Quality of alpha layer, number from 0-100 (optional, default 100) */
   var alphaQuality: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateContainerOpts extends js.Object {
   var fragments: Fragments
   var initialVariables: js.UndefOr[js.Any] = js.undefined

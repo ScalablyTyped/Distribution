@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PatternIndexPath extends js.Object {
   /**
-                       * File path
-                       */
+    * File path
+    */
   var path: java.lang.String
   /**
-                       * Pattern index
-                       */
+    * Pattern index
+    */
   var patternIndex: scala.Double
   /**
-                       * File stats
-                       */
+    * File stats
+    */
   var stat: adoneLib.adoneNs.fsNs.INs.Stats
 }
 

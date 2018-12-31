@@ -19,9 +19,9 @@ class PathNode protected ()
 @js.native
 object PathNode extends js.Object {
   /**
-       * Returns a clone of the PathNode
-       * @deprecated use instance method `node.clone()`
-       */
+    * Returns a clone of the PathNode
+    * @deprecated use instance method `node.clone()`
+    */
   def clone(node: atUirouterCoreLib.libPathPathNodeMod.PathNode): atUirouterCoreLib.libPathPathNodeMod.PathNode = js.native
 }
 

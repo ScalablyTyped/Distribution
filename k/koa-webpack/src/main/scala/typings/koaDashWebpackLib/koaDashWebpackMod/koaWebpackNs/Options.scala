@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var compiler: js.UndefOr[webpackLib.webpackMod.Compiler] = js.undefined
   var config: js.UndefOr[webpackLib.webpackMod.webpackNs.Configuration] = js.undefined

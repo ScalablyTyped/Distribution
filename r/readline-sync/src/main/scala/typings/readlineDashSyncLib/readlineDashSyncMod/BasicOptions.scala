@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BasicOptions extends js.Object {
   var bufferSize: js.UndefOr[scala.Double] = js.undefined
   var cancel: js.UndefOr[js.Any] = js.undefined

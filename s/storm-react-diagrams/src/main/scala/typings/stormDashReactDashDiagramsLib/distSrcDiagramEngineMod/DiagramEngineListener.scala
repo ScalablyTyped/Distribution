@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiagramEngineListener
   extends stormDashReactDashDiagramsLib.distSrcBaseEntityMod.BaseListener[js.Any] {
   var labelFactoriesUpdated: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

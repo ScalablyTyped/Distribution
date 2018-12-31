@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * Each <Titanium.XML.Document> has a `doctype` attribute whose value is either 'null' or a <Titanium.XML.DocumentType> object.
 		 */
-
 trait DocumentType
   extends titaniumLib.TitaniumNs.Proxy {
   /**

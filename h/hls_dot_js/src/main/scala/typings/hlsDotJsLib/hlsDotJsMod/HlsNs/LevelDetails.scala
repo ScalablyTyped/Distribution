@@ -6,45 +6,44 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * a LevelDetails object contains level details retrieved after level playlist parsing
-     */
-
+  * a LevelDetails object contains level details retrieved after level playlist parsing
+  */
 trait LevelDetails extends js.Object {
   /**
-           * average fragment duration
-           */
+    * average fragment duration
+    */
   var averagetargetduration: scala.Double
   /**
-           * end sequence number
-           */
+    * end sequence number
+    */
   var endSN: scala.Double
   /**
-           * array of fragments info
-           */
+    * array of fragments info
+    */
   var fragments: js.Array[Fragment]
   /**
-           * is this level a live playlist or not?
-           */
+    * is this level a live playlist or not?
+    */
   var live: scala.Boolean
   /**
-           * start sequence number
-           */
+    * start sequence number
+    */
   var startSN: scala.Double
   /**
-           * level fragment target duration
-           */
+    * level fragment target duration
+    */
   var targetduration: scala.Double
   /**
-           * level total duration
-           */
+    * level total duration
+    */
   var totalduration: scala.Double
   /**
-           * playlist type
-           */
+    * playlist type
+    */
   var `type`: java.lang.String
   /**
-           * protocol version
-           */
+    * protocol version
+    */
   var version: scala.Double
 }
 

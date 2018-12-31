@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClientConfig extends js.Object {
   var charset: js.UndefOr[java.lang.String] = js.undefined
   var compress: js.UndefOr[scala.Boolean] = js.undefined

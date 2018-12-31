@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_UH2O extends js.Object {
   var GH2O: screepsLib.screepsLibStrings.XGH2O
   var GHO2: screepsLib.screepsLibStrings.XGHO2

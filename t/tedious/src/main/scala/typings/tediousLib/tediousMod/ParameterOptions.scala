@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParameterOptions extends js.Object {
   //  for VarChar, NVarChar, VarBinary
   var length: js.UndefOr[scala.Double | tediousLib.tediousLibStrings.max] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Le extends js.Object {
   var add: js.Array[java.lang.String]
   var and: js.Array[java.lang.String]

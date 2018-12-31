@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveMultipleInheritance: Dropped parents List(materialDashUiLib.underscoreUnderscoreMaterialUINs.SharedEnhancedButtonProps because Would inherit conflicting mutable fields List(onBlur, onClick, onFocus, onKeyDown, onKeyUp, style, tabIndex))*/
-
 trait IconButtonProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[js.Object] {
   var disableTouchRipple: js.UndefOr[scala.Boolean] = js.undefined

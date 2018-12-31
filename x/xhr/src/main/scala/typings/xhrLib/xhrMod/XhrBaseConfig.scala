@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait XhrBaseConfig extends js.Object {
   var beforeSend: js.UndefOr[js.Function1[/* xhrObject */ stdLib.XMLHttpRequest, scala.Unit]] = js.undefined
   var body: js.UndefOr[java.lang.String | js.Any] = js.undefined

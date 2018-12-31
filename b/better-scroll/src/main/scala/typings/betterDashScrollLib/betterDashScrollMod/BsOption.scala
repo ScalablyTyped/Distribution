@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BsOption extends js.Object {
   var HWCompositing: scala.Boolean
   var autoBlur: scala.Boolean
@@ -38,41 +37,41 @@ trait BsOption extends js.Object {
   var preventDefaultException: js.Object
   var probeType: scala.Double
   /**
-       * for pull down and refresh
-       * pullDownRefresh: {
-       *   threshold: 50,
-       *   stop: 20
-       * }
-       */
+    * for pull down and refresh
+    * pullDownRefresh: {
+    *   threshold: 50,
+    *   stop: 20
+    * }
+    */
   var pullDownRefresh: stdLib.Partial[PullDownOption] | scala.Boolean
   /**
-       * for pull up and load
-       * pullUpLoad: {
-       *   threshold: 50
-       * }
-       */
+    * for pull up and load
+    * pullUpLoad: {
+    *   threshold: 50
+    * }
+    */
   var pullUpLoad: stdLib.Partial[PullUpOption] | scala.Boolean
   var resizePolling: scala.Double
   var scrollX: scala.Boolean
   var scrollY: scala.Boolean
   /**
-       * for scrollbar
-       * scrollbar: {
-       *   fade: true
-       * }
-       */
+    * for scrollbar
+    * scrollbar: {
+    *   fade: true
+    * }
+    */
   var scrollbar: stdLib.Partial[ScrollBarOption] | scala.Boolean
   /**
-       * for slide
-       * snap: {
-       *   loop: boolean,
-       *   el: domEl,
-       *   threshold: 0.1,
-       *   stepX: 100,
-       *   stepY: 100,
-       *   listenFlick: true
-       * }
-       */
+    * for slide
+    * snap: {
+    *   loop: boolean,
+    *   el: domEl,
+    *   threshold: 0.1,
+    *   stepX: 100,
+    *   stepY: 100,
+    *   listenFlick: true
+    * }
+    */
   var snap: stdLib.Partial[SlideOption] | scala.Boolean
   var startX: scala.Double
   var startY: scala.Double
@@ -83,13 +82,13 @@ trait BsOption extends js.Object {
   var useTransform: scala.Boolean
   var useTransition: scala.Boolean
   /**
-       * for picker
-       * wheel: {
-       *   selectedIndex: 0,
-       *   rotate: 25,
-       *   adjustTime: 400
-       * }
-       */
+    * for picker
+    * wheel: {
+    *   selectedIndex: 0,
+    *   rotate: 25,
+    *   adjustTime: 400
+    * }
+    */
   var wheel: stdLib.Partial[WheelOption] | scala.Boolean
   // zoom: {
   //  start: 1,

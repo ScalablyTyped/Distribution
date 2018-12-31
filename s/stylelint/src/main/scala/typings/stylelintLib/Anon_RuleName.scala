@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RuleName extends js.Object {
   var index: js.UndefOr[scala.Double] = js.undefined
   var line: js.UndefOr[scala.Double] = js.undefined

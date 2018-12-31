@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 			 * A local notification to alert the user of new or pending application information.
 			 */
-
 trait LocalNotification
   extends titaniumLib.TitaniumNs.Proxy {
   /**

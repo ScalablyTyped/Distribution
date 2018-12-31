@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CacheOptions extends js.Object {
   /** Is the maximum number of files to hold open (optional, default 20) */
   var files: js.UndefOr[scala.Double] = js.undefined

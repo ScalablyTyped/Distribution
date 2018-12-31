@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGeoDataResult extends js.Object {
   /** Copyright information for the returned boundary data. */
   var Copyright: ICopyright
   /** A unique ID number associated with this entity. */
   var EntityID: java.lang.String
   /**
-          * A collection of metadata information associated with the entity. The getEntityMetadata option of the request must be set
-          * to true. Note, not all boundaries will return this metadata.
-          */
+    * A collection of metadata information associated with the entity. The getEntityMetadata option of the request must be set
+    * to true. Note, not all boundaries will return this metadata.
+    */
   var EntityMetadata: IMetadata
   /** Information about the name of the boundary location. */
   var Name: IName

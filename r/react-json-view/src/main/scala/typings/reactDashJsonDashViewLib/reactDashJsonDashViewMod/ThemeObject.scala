@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThemeObject extends js.Object {
   var base00: java.lang.String
   var base01: java.lang.String

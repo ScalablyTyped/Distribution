@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScaleItem extends js.Object {
   def createResponse(response: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): ItemResponse
   def duplicate(): ScaleItem

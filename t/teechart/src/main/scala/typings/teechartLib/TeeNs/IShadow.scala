@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IShadow extends js.Object {
   var blur: scala.Double
   var chart: IChart

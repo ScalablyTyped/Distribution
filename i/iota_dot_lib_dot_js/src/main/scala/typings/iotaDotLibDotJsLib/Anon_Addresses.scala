@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Addresses extends js.Object {
   var addresses: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var approvees: js.UndefOr[js.Array[java.lang.String]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SearchCampaignAudienceBuilder[SearchCampaignAudience] extends AdWordsBuilder[SearchCampaignAudience] {
   def exclude(): AdWordsOperation[SearchCampaignAudience]
   def withAudience(userList: UserList): SearchCampaignAudienceBuilder[SearchCampaignAudience]

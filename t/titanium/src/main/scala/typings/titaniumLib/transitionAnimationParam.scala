@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Dictionary specifying the transition animation used with the <Titanium.UI.iOS.createTransitionAnimation> method.
- */
-
+  * Dictionary specifying the transition animation used with the <Titanium.UI.iOS.createTransitionAnimation> method.
+  */
 trait transitionAnimationParam extends js.Object {
   /**
   	 * Length of the transition in milliseconds.

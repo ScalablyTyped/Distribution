@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FieldProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement]
      with /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {

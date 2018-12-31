@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StreamRecord extends js.Object {
   var ApproximateCreationDateTime: js.UndefOr[scala.Double] = js.undefined
   var Keys: js.UndefOr[org.scalablytyped.runtime.StringDictionary[AttributeValue]] = js.undefined

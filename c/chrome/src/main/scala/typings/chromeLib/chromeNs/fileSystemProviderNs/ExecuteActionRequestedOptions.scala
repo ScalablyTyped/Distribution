@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExecuteActionRequestedOptions extends js.Object {
   /** The identifier of the action to be executed. */
   var actionId: java.lang.String

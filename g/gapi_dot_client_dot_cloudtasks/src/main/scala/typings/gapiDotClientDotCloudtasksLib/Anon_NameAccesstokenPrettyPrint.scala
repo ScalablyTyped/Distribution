@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NameAccesstokenPrettyPrint extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -23,11 +22,11 @@ trait Anon_NameAccesstokenPrettyPrint extends js.Object {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Required.
-                   *
-                   * The task name. For example:
-                   * `projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID/tasks/TASK_ID`
-                   */
+    * Required.
+    *
+    * The task name. For example:
+    * `projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID/tasks/TASK_ID`
+    */
   var name: java.lang.String
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
@@ -38,19 +37,19 @@ trait Anon_NameAccesstokenPrettyPrint extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The response_view specifies which subset of the Task will be
-                   * returned.
-                   *
-                   * By default response_view is Task.View.BASIC; not all
-                   * information is retrieved by default because some data, such as
-                   * payloads, might be desirable to return only when needed because
-                   * of its large size or because of the sensitivity of data that it
-                   * contains.
-                   *
-                   * Authorization for Task.View.FULL requires `cloudtasks.tasks.fullView`
-                   * [Google IAM](/iam/) permission on the
-                   * Task.name resource.
-                   */
+    * The response_view specifies which subset of the Task will be
+    * returned.
+    *
+    * By default response_view is Task.View.BASIC; not all
+    * information is retrieved by default because some data, such as
+    * payloads, might be desirable to return only when needed because
+    * of its large size or because of the sensitivity of data that it
+    * contains.
+    *
+    * Authorization for Task.View.FULL requires `cloudtasks.tasks.fullView`
+    * [Google IAM](/iam/) permission on the
+    * Task.name resource.
+    */
   var responseView: js.UndefOr[java.lang.String] = js.undefined
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

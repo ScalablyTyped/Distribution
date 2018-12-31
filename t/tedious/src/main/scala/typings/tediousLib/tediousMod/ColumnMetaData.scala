@@ -5,27 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnMetaData extends js.Object {
   /**
-       * The column's name
-       */
+    * The column's name
+    */
   var colName: java.lang.String
   /**
-       * The length, for char, varchar, nvarchar and varbinary.
-       */
+    * The length, for char, varchar, nvarchar and varbinary.
+    */
   var dataLength: js.UndefOr[scala.Double] = js.undefined
   /**
-       * The precision. Only applicable to numeric and decimal.
-       */
+    * The precision. Only applicable to numeric and decimal.
+    */
   var precision: js.UndefOr[scala.Double] = js.undefined
   /**
-       * The scale. Only applicable to numeric, decimal, time, datetime2 and datetimeoffset.
-       */
+    * The scale. Only applicable to numeric, decimal, time, datetime2 and datetimeoffset.
+    */
   var scale: js.UndefOr[scala.Double] = js.undefined
   /**
-       * The column type.
-       */
+    * The column type.
+    */
   var `type`: ColumnType
 }
 

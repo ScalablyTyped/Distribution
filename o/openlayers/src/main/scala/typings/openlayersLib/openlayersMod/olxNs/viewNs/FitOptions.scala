@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FitOptions extends js.Object {
   var callback: js.UndefOr[openlayersLib.openlayersMod.olxNs.animationNs.AnimateCallback] = js.undefined
   var constrainResolution: js.UndefOr[scala.Boolean] = js.undefined

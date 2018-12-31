@@ -10,8 +10,8 @@ sealed trait AppBarIcon extends js.Object
 
 //#region Enumerations
 /**
-     * Specifies an icon that appears in an AppBarCommand object.
-    **/
+  * Specifies an icon that appears in an AppBarCommand object.
+  **/
 @JSGlobal("WinJS.UI.AppBarIcon")
 @js.native
 object AppBarIcon extends js.Object {

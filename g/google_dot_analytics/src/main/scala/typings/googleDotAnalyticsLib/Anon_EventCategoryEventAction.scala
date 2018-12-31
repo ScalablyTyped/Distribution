@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EventCategoryEventAction extends js.Object {
   var eventAction: java.lang.String
    // 'event'

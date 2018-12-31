@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var dogstatsd: js.UndefOr[nodeDashDogstatsdLib.nodeDashDogstatsdMod.StatsD] = js.undefined
   var method: js.UndefOr[scala.Boolean] = js.undefined

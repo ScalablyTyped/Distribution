@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class SpatialSurfaceMeshBuffer () extends js.Object {
   var data: js.Any = js.native
-   /* unmapped type */var elementCount: js.Any = js.native
-   /* unmapped type */var format: js.Any = js.native
-   /* unmapped type */var stride: js.Any = js.native
+   /* unmapped type */ var elementCount: js.Any = js.native
+   /* unmapped type */ var format: js.Any = js.native
+   /* unmapped type */ var stride: js.Any = js.native
 }
 

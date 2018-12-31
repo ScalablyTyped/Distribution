@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSGraphicsContextSettings extends js.Object {
   var _class: sketchappLib.sketchappLibStrings.graphicsContextSettings
   var blendMode: scala.Double

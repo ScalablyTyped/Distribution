@@ -9,12 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object controlNs extends js.Object {
   /**
-           * Creates a geocoder control.
-           */
+    * Creates a geocoder control.
+    */
   def geocoder(api_key: java.lang.String): leafletDashGeocoderDashMapzenLib.leafletMod.ControlNs.Geocoder = js.native
-  /**
-           * Creates a geocoder control.
-           */
   def geocoder(
     api_key: java.lang.String,
     options: leafletDashGeocoderDashMapzenLib.leafletMod.ControlNs.GeocoderOptions

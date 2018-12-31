@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILaddaButton extends js.Object {
   def disable(): ILaddaButton
   def enable(): ILaddaButton

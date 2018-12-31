@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccountInfo extends js.Object {
   var downloadBandwidthTotal: scala.Double
   var downloadBandwidthUsed: scala.Double

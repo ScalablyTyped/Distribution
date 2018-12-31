@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OpenArgs
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var androidDatabaseImplementation: js.UndefOr[scala.Double] = js.undefined

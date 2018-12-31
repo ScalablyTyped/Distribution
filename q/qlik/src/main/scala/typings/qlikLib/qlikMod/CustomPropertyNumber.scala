@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomPropertyNumber extends CustomPropertyCommon {
   var component: js.UndefOr[java.lang.String] = js.undefined
   var defaultValue: js.UndefOr[scala.Double] = js.undefined

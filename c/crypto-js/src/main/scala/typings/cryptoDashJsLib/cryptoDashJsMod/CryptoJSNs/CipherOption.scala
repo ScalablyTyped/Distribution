@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CipherOption
   extends /* option */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var iv: js.UndefOr[java.lang.String] = js.undefined

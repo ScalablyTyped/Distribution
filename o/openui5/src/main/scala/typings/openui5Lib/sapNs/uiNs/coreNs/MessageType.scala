@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait MessageType extends js.Object
 
 /**
-       * Defines the different message types of a message
-      */
+  * Defines the different message types of a message
+  */
 @JSGlobal("sap.ui.core.MessageType")
 @js.native
 object MessageType extends js.Object {

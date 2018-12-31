@@ -9,21 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 object multimatchModMembers extends js.Object {
   /**
-   * Match utility function which supports multiple pattern globbing.
-   *
-   * @param paths paths to match against.
-   * @param patterns globbing patterns to use. e.g. `[*, "!cake"]`.
-   */
+    * Match utility function which supports multiple pattern globbing.
+    *
+    * @param paths paths to match against.
+    * @param patterns globbing patterns to use. e.g. `[*, "!cake"]`.
+    */
   def apply(
     paths: java.lang.String | js.Array[java.lang.String],
     patterns: java.lang.String | js.Array[java.lang.String]
   ): js.Array[java.lang.String] = js.native
-  /**
-   * Match utility function which supports multiple pattern globbing.
-   *
-   * @param paths paths to match against.
-   * @param patterns globbing patterns to use. e.g. `[*, "!cake"]`.
-   */
   def apply(
     paths: java.lang.String | js.Array[java.lang.String],
     patterns: java.lang.String | js.Array[java.lang.String],

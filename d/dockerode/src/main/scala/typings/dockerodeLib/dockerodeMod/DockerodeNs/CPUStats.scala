@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CPUStats extends js.Object {
   var cpu_usage: dockerodeLib.Anon_Percpuusage
   var online_cpus: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DeleteContacts extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")

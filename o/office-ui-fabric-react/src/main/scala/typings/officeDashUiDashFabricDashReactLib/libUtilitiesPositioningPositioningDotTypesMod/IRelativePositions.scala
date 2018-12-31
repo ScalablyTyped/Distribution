@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRelativePositions extends js.Object {
   var beakPosition: officeDashUiDashFabricDashReactLib.Anon_Position
   var calloutPosition: IPosition

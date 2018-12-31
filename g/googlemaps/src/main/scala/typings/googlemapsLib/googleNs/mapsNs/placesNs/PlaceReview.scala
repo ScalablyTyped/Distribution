@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlaceReview extends js.Object {
   var aspects: js.Array[PlaceAspectRating]
   var author_name: java.lang.String

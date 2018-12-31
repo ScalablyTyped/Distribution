@@ -43,15 +43,6 @@ trait Topic extends js.Object {
   		 *     * unsubscribe, just stop emitting to the passed listener
   		 */
   def unsubscribe(): scala.Unit = js.native
-  /**
-  		 * Unregisters as a subscriber for the topic. Unsubscribing stop remove
-  		 * all subscribe callbacks. To remove a call back, you must explicitly
-  		 * pass the callback function in.
-  		 *
-  		 * @param callback - the optional callback to unregister, if
-  		 *     * provided and other listeners are registered the topic won't
-  		 *     * unsubscribe, just stop emitting to the passed listener
-  		 */
   def unsubscribe(callback: js.Function1[/* callback */ js.Function1[/* message */ Message, scala.Unit], scala.Unit]): scala.Unit = js.native
 }
 

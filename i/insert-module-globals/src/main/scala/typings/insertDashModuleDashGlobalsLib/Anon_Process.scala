@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Process extends js.Object {
   def Buffer(): java.lang.String
   def `Buffer.isBuffer`(file: java.lang.String): java.lang.String

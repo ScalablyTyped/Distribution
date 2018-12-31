@@ -93,9 +93,6 @@ object Client extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_removeEventListener
   		 */
   def removeEventListener(`type`: java.lang.String): scala.Unit = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Client.html#method_removeEventListener
-  		 */
   def removeEventListener(
     `type`: java.lang.String,
     callback: js.Function1[/* event */ knuddelsDashUserappsDashApiLib.Anon_Type, scala.Unit]

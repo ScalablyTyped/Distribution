@@ -9,14 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object keycloakDashJsModMembers extends js.Object {
   /**
-   * Creates a new Keycloak client instance.
-   * @param config Path to a JSON config file or a plain config object.
-   */
+    * Creates a new Keycloak client instance.
+    * @param config Path to a JSON config file or a plain config object.
+    */
   def apply(): keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakInstance = js.native
-  /**
-   * Creates a new Keycloak client instance.
-   * @param config Path to a JSON config file or a plain config object.
-   */
   def apply(config: java.lang.String | js.Object): keycloakDashJsLib.keycloakDashJsMod.KeycloakNs.KeycloakInstance = js.native
 }
 

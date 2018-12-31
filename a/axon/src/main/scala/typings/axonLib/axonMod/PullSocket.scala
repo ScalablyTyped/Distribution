@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class PullSocket () extends Socket {
   /**
-       * @throws {Error}
-       */
+    * @throws {Error}
+    */
   def send(): scala.Unit = js.native
 }
 

@@ -34,23 +34,7 @@ trait App extends js.Object {
   		 * For example App.onError = function (options) {}.
   		 * */
   def reload(): scala.Unit = js.native
-  /**
-  		 * This function reloads the initial JavaScript file without quitting the app.
-  		 * The optional reloadData parameter provides developers with a way to capture
-  		 * and restart the app in it’s current state. If the reloadData parameter is not
-  		 * present, the app is restarted in its initial state. This attribute must be set
-  		 * to a function that accepts an “options” argument.
-  		 * For example App.onError = function (options) {}.
-  		 * */
   def reload(options: js.Any): scala.Unit = js.native
-  /**
-  		 * This function reloads the initial JavaScript file without quitting the app.
-  		 * The optional reloadData parameter provides developers with a way to capture
-  		 * and restart the app in it’s current state. If the reloadData parameter is not
-  		 * present, the app is restarted in its initial state. This attribute must be set
-  		 * to a function that accepts an “options” argument.
-  		 * For example App.onError = function (options) {}.
-  		 * */
   def reload(options: js.Any, reloadData: js.Any): scala.Unit = js.native
 }
 

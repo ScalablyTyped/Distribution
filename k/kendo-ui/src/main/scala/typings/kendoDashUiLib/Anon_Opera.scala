@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Opera extends js.Object {
   var edge: scala.Boolean
   var mozilla: scala.Boolean

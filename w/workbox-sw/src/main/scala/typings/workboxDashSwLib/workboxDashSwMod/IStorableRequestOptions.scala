@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * ===== BackgroundSync =====
- */
-
-
+  * ===== BackgroundSync =====
+  */
 trait IStorableRequestOptions extends js.Object {
   /**
   	 * See: https://fetch.spec.whatwg.org/#requestinit

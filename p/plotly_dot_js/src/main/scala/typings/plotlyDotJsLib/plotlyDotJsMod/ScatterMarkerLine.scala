@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScatterMarkerLine extends js.Object {
   var autocolorscale: scala.Boolean
   var cauto: scala.Boolean

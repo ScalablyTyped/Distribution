@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Credentials extends js.Object {
   var accessKey: java.lang.String
   var secretKey: java.lang.String

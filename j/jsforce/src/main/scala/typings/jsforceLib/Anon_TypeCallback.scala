@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 trait Anon_TypeCallback extends js.Object {
   /** Returns a value from the cache if it exists, otherwise calls Connection.describe */
   def apply(`type`: java.lang.String): jsforceLib.describeDashResultMod.DescribeSObjectResult = js.native
-  /** Returns a value from the cache if it exists, otherwise calls Connection.describe */
   def apply(
     `type`: java.lang.String,
     callback: js.Function2[

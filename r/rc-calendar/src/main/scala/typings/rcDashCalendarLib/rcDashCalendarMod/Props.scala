@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Props extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var dateInputPlaceholder: js.UndefOr[java.lang.String] = js.undefined

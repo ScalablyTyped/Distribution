@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContinueStatement extends BaseNode {
   var label: js.UndefOr[Identifier | scala.Null] = js.undefined
   @JSName("type")

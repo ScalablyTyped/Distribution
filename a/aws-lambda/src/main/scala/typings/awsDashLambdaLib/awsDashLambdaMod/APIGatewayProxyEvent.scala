@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait APIGatewayProxyEvent extends js.Object {
   var body: java.lang.String | scala.Null
   var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]

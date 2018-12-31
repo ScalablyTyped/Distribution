@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_InsertDataOption extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -21,10 +20,10 @@ trait Anon_InsertDataOption extends js.Object {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Determines if the update response should include the values
-                   * of the cells that were appended. By default, responses
-                   * do not include the updated values.
-                   */
+    * Determines if the update response should include the values
+    * of the cells that were appended. By default, responses
+    * do not include the updated values.
+    */
   var includeValuesInResponse: js.UndefOr[scala.Boolean] = js.undefined
   /** How the input data should be inserted. */
   var insertDataOption: js.UndefOr[java.lang.String] = js.undefined
@@ -39,21 +38,21 @@ trait Anon_InsertDataOption extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The A1 notation of a range to search for a logical table of data.
-                   * Values will be appended after the last row of the table.
-                   */
+    * The A1 notation of a range to search for a logical table of data.
+    * Values will be appended after the last row of the table.
+    */
   var range: java.lang.String
   /**
-                   * Determines how dates, times, and durations in the response should be
-                   * rendered. This is ignored if response_value_render_option is
-                   * FORMATTED_VALUE.
-                   * The default dateTime render option is [DateTimeRenderOption.SERIAL_NUMBER].
-                   */
+    * Determines how dates, times, and durations in the response should be
+    * rendered. This is ignored if response_value_render_option is
+    * FORMATTED_VALUE.
+    * The default dateTime render option is [DateTimeRenderOption.SERIAL_NUMBER].
+    */
   var responseDateTimeRenderOption: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Determines how values in the response should be rendered.
-                   * The default render option is ValueRenderOption.FORMATTED_VALUE.
-                   */
+    * Determines how values in the response should be rendered.
+    * The default render option is ValueRenderOption.FORMATTED_VALUE.
+    */
   var responseValueRenderOption: js.UndefOr[java.lang.String] = js.undefined
   /** The ID of the spreadsheet to update. */
   var spreadsheetId: java.lang.String

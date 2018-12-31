@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Restarting extends js.Object {
   var Dead: scala.Boolean
   var Error: java.lang.String

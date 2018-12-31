@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICartesianProductGenerator[T] extends IPredictableGenerator[T] {
   /**
   		 * Arguments are coordinates in integer.

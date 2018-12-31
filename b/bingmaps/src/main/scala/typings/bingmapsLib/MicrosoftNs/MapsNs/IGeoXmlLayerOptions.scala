@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGeoXmlLayerOptions extends IGeoXmlReadOptions {
   /** A boolean indicating if the map should automatically upate the view when a data set is loaded. Default: true */
   var autoUpdateMapView: js.UndefOr[scala.Boolean] = js.undefined

@@ -51,11 +51,6 @@ class ZoombarProviderDefault protected () extends js.Object {
   	 * @param obj the new target component instance to set
   	 */
   def targetObject(): scala.Unit = js.native
-  /**
-  	 * Gets/sets the target object
-  	 *
-  	 * @param obj the new target component instance to set
-  	 */
   def targetObject(obj: js.Object): scala.Unit = js.native
   /**
   	 * Returns the target widget width property

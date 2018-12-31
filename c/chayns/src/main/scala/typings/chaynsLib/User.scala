@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait User extends js.Object {
   var FacebookID: java.lang.String
   var FirstName: java.lang.String

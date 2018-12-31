@@ -18,7 +18,6 @@ class Cursor () extends js.Object {
    // returning false stops iteration
   @JSName("each")
   def each_T[T](cb: js.Function2[/* err */ nodeLib.Error, /* row */ T, scala.Boolean | scala.Unit]): scala.Unit = js.native
-   // returning false stops iteration
   @JSName("each")
   def each_T[T](
     cb: js.Function2[/* err */ nodeLib.Error, /* row */ T, scala.Boolean | scala.Unit],

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictFeedSummaryProps extends js.Object {
   /** An element type to render as (string or function). */
   var as: js.UndefOr[js.Any] = js.undefined

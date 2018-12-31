@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Marshal extends js.Object {
   var close: js.UndefOr[js.Function1[/* response */ hapiLib.hapiMod.ResponseObject, scala.Unit]] = js.undefined
   var marshal: js.UndefOr[

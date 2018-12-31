@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Subscription extends js.Object {
   /** The URL where notifications should be delivered (must start with https://). */
   var callbackUrl: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The collection to subscribe to. Allowed values are:
-               * - timeline - Changes in the timeline including insertion, deletion, and updates.
-               * - locations - Location updates.
-               * - settings - Settings updates.
-               */
+    * The collection to subscribe to. Allowed values are:
+    * - timeline - Changes in the timeline including insertion, deletion, and updates.
+    * - locations - Location updates.
+    * - settings - Settings updates.
+    */
   var collection: js.UndefOr[java.lang.String] = js.undefined
   /** The ID of the subscription. */
   var id: js.UndefOr[java.lang.String] = js.undefined
@@ -23,13 +22,13 @@ trait Subscription extends js.Object {
   /** Container object for notifications. This is not populated in the Subscription resource. */
   var notification: js.UndefOr[Notification] = js.undefined
   /**
-               * A list of operations that should be subscribed to. An empty list indicates that all operations on the collection should be subscribed to. Allowed
-               * values are:
-               * - UPDATE - The item has been updated.
-               * - INSERT - A new item has been inserted.
-               * - DELETE - The item has been deleted.
-               * - MENU_ACTION - A custom menu item has been triggered by the user.
-               */
+    * A list of operations that should be subscribed to. An empty list indicates that all operations on the collection should be subscribed to. Allowed
+    * values are:
+    * - UPDATE - The item has been updated.
+    * - INSERT - A new item has been inserted.
+    * - DELETE - The item has been deleted.
+    * - MENU_ACTION - A custom menu item has been triggered by the user.
+    */
   var operation: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** The time at which this subscription was last modified, formatted according to RFC 3339. */
   var updated: js.UndefOr[java.lang.String] = js.undefined

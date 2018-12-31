@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * @see {@link https://w3c.github.io/webauthn/#dictdef-publickeycredentialrequestoptions}
- */
-
+  * @see {@link https://w3c.github.io/webauthn/#dictdef-publickeycredentialrequestoptions}
+  */
 trait PublicKeyCredentialRequestOptions extends js.Object {
   var allowCredentials: js.UndefOr[js.Array[PublicKeyCredentialDescriptor]] = js.undefined
   var challenge: stdLib.BufferSource

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SavingMessageDescriptorHtml extends SavingMessageDescriptorBase {
   var html: java.lang.String
 }

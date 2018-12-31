@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinearGradientProps extends js.Object {
   var colors: js.Array[java.lang.String]
   var end: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.undefined

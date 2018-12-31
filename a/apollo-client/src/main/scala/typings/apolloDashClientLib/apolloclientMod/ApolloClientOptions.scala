@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ApolloClientOptions[TCacheShape] extends js.Object {
   var cache: apolloDashCacheLib.apolloDashCacheMod.ApolloCache[TCacheShape]
   var connectToDevTools: js.UndefOr[scala.Boolean] = js.undefined

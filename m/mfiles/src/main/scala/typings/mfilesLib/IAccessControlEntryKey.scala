@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAccessControlEntryKey extends js.Object {
   val HasConcreteUserOrGroupID: scala.Boolean
   val IsGroup: scala.Boolean

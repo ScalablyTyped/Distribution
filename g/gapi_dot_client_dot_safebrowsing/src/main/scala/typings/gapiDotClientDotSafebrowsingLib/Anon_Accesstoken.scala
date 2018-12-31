@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Accesstoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -19,9 +18,9 @@ trait Anon_Accesstoken extends js.Object {
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * A client ID that (hopefully) uniquely identifies the client implementation
-                   * of the Safe Browsing API.
-                   */
+    * A client ID that (hopefully) uniquely identifies the client implementation
+    * of the Safe Browsing API.
+    */
   var clientId: js.UndefOr[java.lang.String] = js.undefined
   /** The version of the client implementation. */
   var clientVersion: js.UndefOr[java.lang.String] = js.undefined

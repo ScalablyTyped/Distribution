@@ -23,8 +23,8 @@ class Plane () extends js.Object {
   def intersectsBox(box: Box3): scala.Boolean = js.native
   def intersectsLine(line: Line3): scala.Boolean = js.native
   /**
-       * @deprecated Use {@link Plane#intersectsLine .intersectsLine()} instead.
-       */
+    * @deprecated Use {@link Plane#intersectsLine .intersectsLine()} instead.
+    */
   def isIntersectionLine(l: js.Any): js.Any = js.native
   def negate(): Plane = js.native
   def normalize(): Plane = js.native

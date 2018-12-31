@@ -12,9 +12,9 @@ trait GridRow extends js.Object {
   /** Data of a specified row. */
   var data: js.Array[_] = js.native
   /**
-       * The depth of the current row in the case of a tree structure.
-       * @default 0
-       */
+    * The depth of the current row in the case of a tree structure.
+    * @default 0
+    */
   var depth: scala.Double = js.native
   /** TR element of a specified row. */
   var element: js.Any = js.native
@@ -29,13 +29,13 @@ trait GridRow extends js.Object {
   /** Data of a sequence. */
   var seq: scala.Double = js.native
   /**
-       * State value that indicates whether a child row is shown or hidden.
-       */
+    * State value that indicates whether a child row is shown or hidden.
+    */
   var tpl: js.UndefOr[js.Function0[scala.Unit]] = js.native
   /**
-       * State value that indicates whether a child row is shown or hidden.
-       * @default "fold"
-       */
+    * State value that indicates whether a child row is shown or hidden.
+    * @default "fold"
+    */
   var `type`: juiDashGridLib.juiDashGridLibStrings.open | juiDashGridLib.juiDashGridLibStrings.fold = js.native
   def appendChild(row: GridRow): scala.Unit = js.native
   def destroy(): scala.Unit = js.native

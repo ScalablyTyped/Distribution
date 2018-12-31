@@ -17,16 +17,16 @@ class SymbolPalette protected ()
   @JSName("model")
   var model_SymbolPalette: ejDotWebDotAllLib.ejNs.datavisualizationNs.SymbolPaletteNs.Model = js.native
   /** Add items to Palettes at runtime
-           * @param {string} name of the Palette
-           * @param {any} JSON for the new items to added in Palette
-           * @returns {void}
-           */
+    * @param {string} name of the Palette
+    * @param {any} JSON for the new items to added in Palette
+    * @returns {void}
+    */
   def addPaletteItem(paletteName: java.lang.String, node: js.Any): scala.Unit = js.native
   /** Remove items to Palettes at runtime
-           * @param {string} name of the Palette
-           * @param {any} JSON for the new node to removed in Palette
-           * @returns {void}
-           */
+    * @param {string} name of the Palette
+    * @param {any} JSON for the new node to removed in Palette
+    * @returns {void}
+    */
   def removePaletteItem(paletteName: java.lang.String, node: js.Any): scala.Unit = js.native
 }
 

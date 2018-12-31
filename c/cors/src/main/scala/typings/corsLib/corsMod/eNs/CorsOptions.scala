@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CorsOptions extends js.Object {
   var allowedHeaders: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var credentials: js.UndefOr[scala.Boolean] = js.undefined

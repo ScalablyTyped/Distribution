@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RelativeDateFilterOptions extends js.Object {
   /** The UTC date from which to filter. */
   var anchorDate: stdLib.Date

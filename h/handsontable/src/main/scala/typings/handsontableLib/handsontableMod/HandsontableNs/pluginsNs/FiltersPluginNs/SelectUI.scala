@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectUI extends BaseUI {
   var items: js.Array[_]
   var menu: handsontableLib.handsontableMod.HandsontableNs.pluginsNs.Menu | scala.Unit

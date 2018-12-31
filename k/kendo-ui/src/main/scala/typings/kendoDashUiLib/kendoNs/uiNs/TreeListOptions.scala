@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TreeListOptions extends js.Object {
   var autoBind: js.UndefOr[scala.Boolean] = js.undefined
   var beforeEdit: js.UndefOr[js.Function1[/* e */ TreeListBeforeEditEvent, scala.Unit]] = js.undefined

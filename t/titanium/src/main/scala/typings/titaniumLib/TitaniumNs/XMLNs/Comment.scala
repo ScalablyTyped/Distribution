@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * Represents the contents of an XML comment.
 		 */
-
 trait Comment
   extends titaniumLib.TitaniumNs.Proxy {
   /**

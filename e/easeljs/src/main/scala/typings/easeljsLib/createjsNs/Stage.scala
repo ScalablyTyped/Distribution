@@ -22,8 +22,8 @@ class Stage protected () extends Container {
   var mouseY: scala.Double = js.native
   var nextStage: Stage = js.native
   /**
-           * @deprecated
-           */
+    * @deprecated
+    */
   var preventSelection: scala.Boolean = js.native
   var snapToPixelEnabled: scala.Boolean = js.native
     // deprecated

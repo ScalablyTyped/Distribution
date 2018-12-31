@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait OptionSetAttributeFormat extends js.Object
 
 /**
-     * Constant Enum: OptionSet attribute formats for Attributes.Attribute.getFormat(), used by {@link Attributes.OptionSetAttribute OptionSetAttribute}.
-     * @see {@link Xrm.Attributes.OptionSetAttributeFormat}
-     */
+  * Constant Enum: OptionSet attribute formats for Attributes.Attribute.getFormat(), used by {@link Attributes.OptionSetAttribute OptionSetAttribute}.
+  * @see {@link Xrm.Attributes.OptionSetAttributeFormat}
+  */
 @JSGlobal("XrmEnum.OptionSetAttributeFormat")
 @js.native
 object OptionSetAttributeFormat extends js.Object {

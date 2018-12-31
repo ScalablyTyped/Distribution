@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-   * Bounding box data for individal tracking rectangles.
-   */
-
+  * Bounding box data for individal tracking rectangles.
+  */
 trait TrackRect extends js.Object {
   /** Color being tracked (for ColorTracker only) */
   var color: js.UndefOr[java.lang.String] = js.undefined

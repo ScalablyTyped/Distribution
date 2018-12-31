@@ -12,22 +12,22 @@ sealed trait FoldingRangeKind extends js.Object
 @js.native
 object FoldingRangeKind extends js.Object {
   /**
-       * Folding range for a comment
-       */
+    * Folding range for a comment
+    */
   @js.native
   sealed trait Comment
     extends vscodeDashLanguageserverDashProtocolLib.libProtocolDotFoldingRangeMod.FoldingRangeKind
   
   /**
-       * Folding range for a imports or includes
-       */
+    * Folding range for a imports or includes
+    */
   @js.native
   sealed trait Imports
     extends vscodeDashLanguageserverDashProtocolLib.libProtocolDotFoldingRangeMod.FoldingRangeKind
   
   /**
-       * Folding range for a region (e.g. `#region`)
-       */
+    * Folding range for a region (e.g. `#region`)
+    */
   @js.native
   sealed trait Region
     extends vscodeDashLanguageserverDashProtocolLib.libProtocolDotFoldingRangeMod.FoldingRangeKind

@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Simple object passed to the
- * [startActivityForResult](Titanium.Android.Activity.startActivityForResult) callback.
- */
-
+  * Simple object passed to the
+  * [startActivityForResult](Titanium.Android.Activity.startActivityForResult) callback.
+  */
 trait ActivityResult extends js.Object {
   /**
   	 * Intent that can contain data returned to the caller. Data can be attached to

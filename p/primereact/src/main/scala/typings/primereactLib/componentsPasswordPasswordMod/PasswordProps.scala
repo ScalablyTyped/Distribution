@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PasswordProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLInputElement]
      with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BackgroundColor extends js.Object {
   var bgBlack: CodePair
   var bgBlackBright: CodePair

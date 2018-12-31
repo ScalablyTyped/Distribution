@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Url extends js.Object {
   /** A summary of the click analytics for the short and long URL. Might not be present if not requested or currently unavailable. */
   var analytics: js.UndefOr[AnalyticsSummary] = js.undefined
@@ -18,9 +17,9 @@ trait Url extends js.Object {
   /** Long URL, e.g. "http://www.google.com/". Might not be present if the status is "REMOVED". */
   var longUrl: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Status of the target URL. Possible values: "OK", "MALWARE", "PHISHING", or "REMOVED". A URL might be marked "REMOVED" if it was flagged as spam, for
-               * example.
-               */
+    * Status of the target URL. Possible values: "OK", "MALWARE", "PHISHING", or "REMOVED". A URL might be marked "REMOVED" if it was flagged as spam, for
+    * example.
+    */
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -9,49 +9,49 @@ import scala.scalajs.js.annotation._
 sealed trait ResponseType extends js.Object
 
 /**  
-         * Specifies the type of response to a meeting invitation.
-         *
-         * [Api set: Mailbox 1.0]
-         *
-         * @remarks
-         * <table><tr><td>
-         * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
-         * </td><td>Compose or read</td></tr></table>
-         */
+  * Specifies the type of response to a meeting invitation.
+  *
+  * [Api set: Mailbox 1.0]
+  *
+  * @remarks
+  * <table><tr><td>
+  * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
+  * </td><td>Compose or read</td></tr></table>
+  */
 @JSGlobal("Office.MailboxEnums.ResponseType")
 @js.native
 object ResponseType extends js.Object {
   /**
-               * The meeting request was accepted by the attendee.
-               */
+    * The meeting request was accepted by the attendee.
+    */
   @js.native
   sealed trait Accepted
     extends officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.ResponseType
   
   /**
-               * The meeting request was declined by the attendee.
-               */
+    * The meeting request was declined by the attendee.
+    */
   @js.native
   sealed trait Declined
     extends officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.ResponseType
   
   /**
-               * There has been no response from the attendee.
-               */
+    * There has been no response from the attendee.
+    */
   @js.native
   sealed trait None
     extends officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.ResponseType
   
   /**
-               * The attendee is the meeting organizer.
-               */
+    * The attendee is the meeting organizer.
+    */
   @js.native
   sealed trait Organizer
     extends officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.ResponseType
   
   /**
-               * The meeting request was tentatively accepted by the attendee.
-               */
+    * The meeting request was tentatively accepted by the attendee.
+    */
   @js.native
   sealed trait Tentative
     extends officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.ResponseType

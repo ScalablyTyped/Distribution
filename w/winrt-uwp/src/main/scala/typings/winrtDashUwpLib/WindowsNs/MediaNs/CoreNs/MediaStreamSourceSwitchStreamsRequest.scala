@@ -14,9 +14,9 @@ abstract class MediaStreamSourceSwitchStreamsRequest () extends js.Object {
   /** Gets the stream descriptor for the stream which is no longer selected by the MediaStreamSource . */
   var oldStreamDescriptor: IMediaStreamDescriptor = js.native
   /**
-                   * Defers completing the MediaStreamSource.SwitchStreamsRequested event.
-                   * @return The deferral.
-                   */
+    * Defers completing the MediaStreamSource.SwitchStreamsRequested event.
+    * @return The deferral.
+    */
   def getDeferral(): MediaStreamSourceSwitchStreamsRequestDeferral = js.native
 }
 

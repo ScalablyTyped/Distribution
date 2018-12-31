@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TypeMarkupLanguage extends js.Object {
   /** The markup language to use for this ad unit. */
   var markupLanguage: js.UndefOr[java.lang.String] = js.undefined

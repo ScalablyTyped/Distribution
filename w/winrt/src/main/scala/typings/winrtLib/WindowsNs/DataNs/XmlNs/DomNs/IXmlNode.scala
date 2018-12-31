@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IXmlNode
   extends IXmlNodeSelector
      with IXmlNodeSerializer {

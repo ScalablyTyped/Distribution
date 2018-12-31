@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Accesstoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -19,9 +18,9 @@ trait Anon_Accesstoken extends js.Object {
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The end position (0-based, exclusive) of this query. Defaults to the length
-                   * of this reference.
-                   */
+    * The end position (0-based, exclusive) of this query. Defaults to the length
+    * of this reference.
+    */
   var end: js.UndefOr[java.lang.String] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
@@ -30,16 +29,16 @@ trait Anon_Accesstoken extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The maximum number of bases to return in a single page. If unspecified,
-                   * defaults to 200Kbp (kilo base pairs). The maximum value is 10Mbp (mega base
-                   * pairs).
-                   */
+    * The maximum number of bases to return in a single page. If unspecified,
+    * defaults to 200Kbp (kilo base pairs). The maximum value is 10Mbp (mega base
+    * pairs).
+    */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * The continuation token, which is used to page through large result sets.
-                   * To get the next page of results, set this parameter to the value of
-                   * `nextPageToken` from the previous response.
-                   */
+    * The continuation token, which is used to page through large result sets.
+    * To get the next page of results, set this parameter to the value of
+    * `nextPageToken` from the previous response.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

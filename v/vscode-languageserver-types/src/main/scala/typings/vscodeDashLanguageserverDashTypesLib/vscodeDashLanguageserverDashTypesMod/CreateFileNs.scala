@@ -13,6 +13,6 @@ object CreateFileNs extends js.Object {
     uri: java.lang.String,
     options: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CreateFileOptions
   ): vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CreateFile = js.native
-  def is(value: js.Any): /* is CreateFile */scala.Boolean = js.native
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CreateFile */ scala.Boolean = js.native
 }
 

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Rendering options
-    */
-
+  * Rendering options
+  */
 trait IDialogRenderingOptions extends js.Object {
   /*animation css class, by default set to "fade"*/
   var animation: js.UndefOr[java.lang.String] = js.undefined
@@ -17,8 +16,8 @@ trait IDialogRenderingOptions extends js.Object {
   /*the DOM element to inject the modal into, by default set to body*/
   var container: js.UndefOr[stdLib.HTMLElement] = js.undefined
   /** 
-           * It will set this value as a property on the dialog controller's scope as $scope.dialogData
-           */
+    * It will set this value as a property on the dialog controller's scope as $scope.dialogData
+    */
   var dialogData: js.UndefOr[js.Any] = js.undefined
   /*load template in an iframe, only needed for serverside templates*/
   var iframe: scala.Boolean

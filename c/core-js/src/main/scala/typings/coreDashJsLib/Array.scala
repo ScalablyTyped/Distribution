@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Array[T] extends js.Object {
   /**
-       * Non-standard.
-       */
+    * Non-standard.
+    */
   def turn(
     callbackfn: js.Function4[
       /* memo */ Array[T], 
@@ -23,9 +23,6 @@ trait Array[T] extends js.Object {
       scala.Unit
     ]
   ): Array[T] = js.native
-  /**
-       * Non-standard.
-       */
   def turn(
     callbackfn: js.Function4[
       /* memo */ Array[T], 
@@ -36,16 +33,13 @@ trait Array[T] extends js.Object {
     ],
     memo: Array[T]
   ): Array[T] = js.native
-  /**
-       * Non-standard.
-       */
   def turn[U](
     callbackfn: js.Function4[/* memo */ U, /* value */ T, /* index */ scala.Double, /* array */ Array[T], scala.Unit],
     memo: U
   ): U = js.native
   /**
-       * Non-standard.
-       */
+    * Non-standard.
+    */
   @JSName("turn")
   def turn_UU[U](
     callbackfn: js.Function4[/* memo */ U, /* value */ T, /* index */ scala.Double, /* array */ Array[T], scala.Unit]

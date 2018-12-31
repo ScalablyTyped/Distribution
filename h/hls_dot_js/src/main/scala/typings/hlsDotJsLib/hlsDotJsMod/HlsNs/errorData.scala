@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait errorData extends js.Object {
   var buffer: js.UndefOr[scala.Double] = js.undefined
   var context: js.UndefOr[LoaderContext] = js.undefined

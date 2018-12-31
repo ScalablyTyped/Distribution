@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlacementArgs extends js.Object {
   var isFixedPosition: scala.Boolean
   var maxHeight: scala.Double

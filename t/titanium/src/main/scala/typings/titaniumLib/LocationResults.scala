@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Argument passed to the [getCurrentPosition](Titanium.Geolocation.getCurrentPosition) callback.
- */
-
+  * Argument passed to the [getCurrentPosition](Titanium.Geolocation.getCurrentPosition) callback.
+  */
 trait LocationResults extends js.Object {
   /**
   	 * Error code. Returns 0 if `success` is `true`.

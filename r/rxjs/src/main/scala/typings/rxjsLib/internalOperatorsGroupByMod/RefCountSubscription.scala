@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RefCountSubscription extends js.Object {
   var attemptedToUnsubscribe: scala.Boolean
   var closed: scala.Boolean

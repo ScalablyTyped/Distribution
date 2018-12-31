@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGridChartOptions extends IChartOptions {
   /** Set to false to disable drawing the x and y axes. */
   var axes: js.UndefOr[scala.Boolean] = js.undefined

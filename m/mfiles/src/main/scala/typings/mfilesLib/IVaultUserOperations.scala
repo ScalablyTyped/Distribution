@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVaultUserOperations extends js.Object {
   def AddOrUndeleteUserAccount(User: IUserAccount): IUserAccount
   def AddUserAccount(User: IUserAccount): IUserAccount

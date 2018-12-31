@@ -9,39 +9,18 @@ import scala.scalajs.js.annotation._
 @js.native
 object webpackDashStreamMod extends js.Object {
   /**
-   * Run webpack with the specified configuration and webpack instance
-   *
-   * @param config - Webpack configuration
-   * @param wp - A webpack object
-   * @param callback - A callback with the webpack stats and error objects.
-   */
+    * Run webpack with the specified configuration and webpack instance
+    *
+    * @param config - Webpack configuration
+    * @param wp - A webpack object
+    * @param callback - A callback with the webpack stats and error objects.
+    */
   def apply(): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  /**
-   * Run webpack with the specified configuration and webpack instance
-   *
-   * @param config - Webpack configuration
-   * @param wp - A webpack object
-   * @param callback - A callback with the webpack stats and error objects.
-   */
   def apply(config: webpackLib.webpackMod.webpackNs.Configuration): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  /**
-   * Run webpack with the specified configuration and webpack instance
-   *
-   * @param config - Webpack configuration
-   * @param wp - A webpack object
-   * @param callback - A callback with the webpack stats and error objects.
-   */
-  def apply(config: webpackLib.webpackMod.webpackNs.Configuration, wp: js.Any): nodeLib.NodeJSNs.ReadWriteStream = js.native
-  /**
-   * Run webpack with the specified configuration and webpack instance
-   *
-   * @param config - Webpack configuration
-   * @param wp - A webpack object
-   * @param callback - A callback with the webpack stats and error objects.
-   */
+  def apply(config: webpackLib.webpackMod.webpackNs.Configuration, wp: webpackDashStreamLib.Anon_Options): nodeLib.NodeJSNs.ReadWriteStream = js.native
   def apply(
     config: webpackLib.webpackMod.webpackNs.Configuration,
-    wp: js.Any,
+    wp: webpackDashStreamLib.Anon_Options,
     callback: webpackLib.webpackMod.webpackNs.CompilerNs.Handler
   ): nodeLib.NodeJSNs.ReadWriteStream = js.native
 }

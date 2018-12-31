@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeviceInfo extends js.Object {
   var UDN: java.lang.String
   var applicationUrl: java.lang.String

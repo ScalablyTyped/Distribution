@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Constants extends js.Object {
   var COLOR_PATTERN: java.lang.String
   var CONSOLE_APPENDER: karmaLib.Anon_TypeLayout

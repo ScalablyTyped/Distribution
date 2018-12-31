@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ProcessDiskUsage () extends js.Object {
   /**
-                   * Gets the ProcessDiskUsageReport for the process.
-                   * @return The ProcessDiskUsageReport for the process.
-                   */
+    * Gets the ProcessDiskUsageReport for the process.
+    * @return The ProcessDiskUsageReport for the process.
+    */
   def getReport(): ProcessDiskUsageReport = js.native
 }
 

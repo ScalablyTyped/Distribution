@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InterfaceProjection extends js.Object {
   var b: scala.Double
   var datum: java.lang.String

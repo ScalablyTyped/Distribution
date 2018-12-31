@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Brotli extends js.Object {
   var brotli: Anon_Quality
   var cacheSize: scala.Double

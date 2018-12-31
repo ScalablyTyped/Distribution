@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait feedJSON extends js.Object {
   var author: java.lang.String
   var description: java.lang.String

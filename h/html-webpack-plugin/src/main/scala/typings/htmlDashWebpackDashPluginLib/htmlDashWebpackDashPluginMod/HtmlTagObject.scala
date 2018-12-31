@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HtmlTagObject extends js.Object {
   /**
   	 * Attributes of the html tag

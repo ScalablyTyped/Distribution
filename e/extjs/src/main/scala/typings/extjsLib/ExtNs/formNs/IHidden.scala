@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHidden
   extends extjsLib.ExtNs.formNs.fieldNs.IBase {
   /** [Config Option] (Boolean) */

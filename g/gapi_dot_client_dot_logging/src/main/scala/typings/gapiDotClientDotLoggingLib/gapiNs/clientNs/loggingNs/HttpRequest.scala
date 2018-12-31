@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HttpRequest extends js.Object {
   /** The number of HTTP response bytes inserted into cache. Set only when a cache fill was attempted. */
   var cacheFillBytes: js.UndefOr[java.lang.String] = js.undefined
@@ -28,9 +27,9 @@ trait HttpRequest extends js.Object {
   /** The size of the HTTP request message in bytes, including the request headers and the request body. */
   var requestSize: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The scheme (http, https), the host name, the path and the query portion of the URL that was requested. Example:
-               * "http://example.com/some/info?color=red".
-               */
+    * The scheme (http, https), the host name, the path and the query portion of the URL that was requested. Example:
+    * "http://example.com/some/info?color=red".
+    */
   var requestUrl: js.UndefOr[java.lang.String] = js.undefined
   /** The size of the HTTP response message sent back to the client, in bytes, including the response headers and the response body. */
   var responseSize: js.UndefOr[java.lang.String] = js.undefined

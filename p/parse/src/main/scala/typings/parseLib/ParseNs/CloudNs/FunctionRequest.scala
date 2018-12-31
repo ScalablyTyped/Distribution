@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FunctionRequest extends js.Object {
   var installationId: js.UndefOr[nodeLib.String] = js.undefined
   var master: js.UndefOr[scala.Boolean] = js.undefined

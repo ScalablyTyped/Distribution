@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEnvelope extends ISerializable {
   var appId: java.lang.String
   var appVer: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Spacing extends js.Object {
   var desktopDropDownMenuFontSize: js.UndefOr[scala.Double] = js.undefined
   var desktopDropDownMenuItemHeight: js.UndefOr[scala.Double] = js.undefined

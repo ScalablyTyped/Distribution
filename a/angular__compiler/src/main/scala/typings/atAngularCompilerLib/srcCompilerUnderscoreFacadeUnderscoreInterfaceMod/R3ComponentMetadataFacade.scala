@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait R3ComponentMetadataFacade extends R3DirectiveMetadataFacade {
   var animations: js.UndefOr[js.Array[_]]
   var directives: stdLib.Map[java.lang.String, _]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISliderOptions extends js.Object {
   var binding: js.UndefOr[scala.Boolean] = js.undefined
   var clickSelect: js.UndefOr[scala.Boolean] = js.undefined

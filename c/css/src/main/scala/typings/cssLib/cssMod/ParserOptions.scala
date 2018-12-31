@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParserOptions extends js.Object {
   /** Silently fail on parse errors */
   var silent: js.UndefOr[scala.Boolean] = js.undefined

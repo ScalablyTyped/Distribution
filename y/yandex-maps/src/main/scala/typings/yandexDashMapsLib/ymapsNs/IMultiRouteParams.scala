@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMultiRouteParams extends js.Object {
   var avoidTrafficJams: js.UndefOr[scala.Boolean] = js.undefined
   var boundedBy: js.UndefOr[js.Array[js.Array[scala.Double]] | scala.Null] = js.undefined

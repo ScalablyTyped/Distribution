@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListBoxEvent extends js.Object {
   /** any object */
   var args: js.Any

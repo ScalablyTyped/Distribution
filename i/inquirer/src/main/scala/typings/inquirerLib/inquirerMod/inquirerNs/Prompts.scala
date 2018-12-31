@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Prompts
   extends /* name */ org.scalablytyped.runtime.StringDictionary[PromptModule]
 

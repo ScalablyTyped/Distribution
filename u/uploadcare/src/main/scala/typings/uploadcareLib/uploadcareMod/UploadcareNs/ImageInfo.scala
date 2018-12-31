@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageInfo extends js.Object {
   var datetime_original: scala.Null
   var dpi: js.Array[scala.Double]

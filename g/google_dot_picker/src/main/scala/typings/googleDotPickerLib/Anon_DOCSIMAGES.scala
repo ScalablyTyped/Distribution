@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DOCSIMAGES extends js.Object {
   var DOCS: java.lang.String
   var DOCS_IMAGES: java.lang.String

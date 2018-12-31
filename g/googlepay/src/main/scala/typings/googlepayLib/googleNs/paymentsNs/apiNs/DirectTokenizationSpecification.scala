@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DirectTokenizationSpecification extends BasePaymentMethodTokenizationSpecification {
   var parameters: googlepayLib.Anon_PublicKey
   @JSName("type")

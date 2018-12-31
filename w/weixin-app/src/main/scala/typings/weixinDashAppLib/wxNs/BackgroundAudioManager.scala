@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BackgroundAudioManager extends js.Object {
   /** 音频缓冲的时间点，仅保证当前播放时间点到此时间点内容已缓冲。 是 */
   var buffered: scala.Double

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Global State
-     */
-
+  * Global State
+  */
 trait IGlobalState extends js.Object {
   var isReady: scala.Boolean
   var navMode: js.Any

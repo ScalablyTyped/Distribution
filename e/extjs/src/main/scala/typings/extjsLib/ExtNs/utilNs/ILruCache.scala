@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILruCache extends IHashMap {
   /** [Method] Removes all items from the hash
   		* @param initial Object

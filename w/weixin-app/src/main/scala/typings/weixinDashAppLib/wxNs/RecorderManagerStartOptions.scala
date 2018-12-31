@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RecorderManagerStartOptions extends js.Object {
   /**
   		 * 指定录音的时长，单位 ms

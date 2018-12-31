@@ -54,20 +54,12 @@ trait Worksheet extends js.Object {
   	 * Using the image id from `Workbook.addImage`, set the background to the worksheet
   	 */
   def addBackgroundImage(imageId: java.lang.String): scala.Unit = js.native
-  /**
-  	 * Using the image id from `Workbook.addImage`,
-  	 * embed an image within the worksheet to cover a range
-  	 */
   def addImage(imageId: java.lang.String, range: ImageRange): scala.Unit = js.native
   /**
   	 * Using the image id from `Workbook.addImage`,
   	 * embed an image within the worksheet to cover a range
   	 */
   def addImage(imageId: java.lang.String, range: java.lang.String): scala.Unit = js.native
-  /**
-  	 * Add a couple of Rows by key-value, after the last current row, using the column keys,
-  	 * or add a row by contiguous Array (assign to columns A, B & C)
-  	 */
   def addRow(data: js.Any): Row = js.native
   /**
   	 * Add a couple of Rows by key-value, after the last current row, using the column keys,
@@ -97,9 +89,6 @@ trait Worksheet extends js.Object {
   	 * Get or create cell
   	 */
   def getCell(ref: java.lang.String): Cell = js.native
-  /**
-  	 * Access an individual columns by key, letter and 1-based column number
-  	 */
   def getColumn(indexOrKey: java.lang.String): Column with ColumnExtension = js.native
   /**
   	 * Access an individual columns by key, letter and 1-based column number
@@ -109,75 +98,12 @@ trait Worksheet extends js.Object {
   	 * Get or create row by 0-based index
   	 */
   def getRow(index: scala.Double): Row = js.native
-  /**
-  	 * Merge cells, either:
-  	 *
-  	 * tlbr string, e.g. `'A4:B5'`
-  	 *
-  	 * tl string, br string, e.g. `'G10', 'H11'`
-  	 *
-  	 * t, l, b, r numbers, e.g. `10,11,12,13`
-  	 */
   def mergeCells(a: java.lang.String): scala.Unit = js.native
-  /**
-  	 * Merge cells, either:
-  	 *
-  	 * tlbr string, e.g. `'A4:B5'`
-  	 *
-  	 * tl string, br string, e.g. `'G10', 'H11'`
-  	 *
-  	 * t, l, b, r numbers, e.g. `10,11,12,13`
-  	 */
   def mergeCells(a: java.lang.String, b: java.lang.String): scala.Unit = js.native
-  /**
-  	 * Merge cells, either:
-  	 *
-  	 * tlbr string, e.g. `'A4:B5'`
-  	 *
-  	 * tl string, br string, e.g. `'G10', 'H11'`
-  	 *
-  	 * t, l, b, r numbers, e.g. `10,11,12,13`
-  	 */
   def mergeCells(a: java.lang.String, b: java.lang.String, c: scala.Double): scala.Unit = js.native
-  /**
-  	 * Merge cells, either:
-  	 *
-  	 * tlbr string, e.g. `'A4:B5'`
-  	 *
-  	 * tl string, br string, e.g. `'G10', 'H11'`
-  	 *
-  	 * t, l, b, r numbers, e.g. `10,11,12,13`
-  	 */
   def mergeCells(a: java.lang.String, b: java.lang.String, c: scala.Double, d: scala.Double): scala.Unit = js.native
-  /**
-  	 * Merge cells, either:
-  	 *
-  	 * tlbr string, e.g. `'A4:B5'`
-  	 *
-  	 * tl string, br string, e.g. `'G10', 'H11'`
-  	 *
-  	 * t, l, b, r numbers, e.g. `10,11,12,13`
-  	 */
   def mergeCells(a: java.lang.String, b: scala.Double): scala.Unit = js.native
-  /**
-  	 * Merge cells, either:
-  	 *
-  	 * tlbr string, e.g. `'A4:B5'`
-  	 *
-  	 * tl string, br string, e.g. `'G10', 'H11'`
-  	 *
-  	 * t, l, b, r numbers, e.g. `10,11,12,13`
-  	 */
   def mergeCells(a: java.lang.String, b: scala.Double, c: scala.Double): scala.Unit = js.native
-  /**
-  	 * Merge cells, either:
-  	 *
-  	 * tlbr string, e.g. `'A4:B5'`
-  	 *
-  	 * tl string, br string, e.g. `'G10', 'H11'`
-  	 *
-  	 * t, l, b, r numbers, e.g. `10,11,12,13`
-  	 */
   def mergeCells(a: java.lang.String, b: scala.Double, c: scala.Double, d: scala.Double): scala.Unit = js.native
   /**
   	 * Merge cells, either:
@@ -189,65 +115,11 @@ trait Worksheet extends js.Object {
   	 * t, l, b, r numbers, e.g. `10,11,12,13`
   	 */
   def mergeCells(a: scala.Double): scala.Unit = js.native
-  /**
-  	 * Merge cells, either:
-  	 *
-  	 * tlbr string, e.g. `'A4:B5'`
-  	 *
-  	 * tl string, br string, e.g. `'G10', 'H11'`
-  	 *
-  	 * t, l, b, r numbers, e.g. `10,11,12,13`
-  	 */
   def mergeCells(a: scala.Double, b: java.lang.String): scala.Unit = js.native
-  /**
-  	 * Merge cells, either:
-  	 *
-  	 * tlbr string, e.g. `'A4:B5'`
-  	 *
-  	 * tl string, br string, e.g. `'G10', 'H11'`
-  	 *
-  	 * t, l, b, r numbers, e.g. `10,11,12,13`
-  	 */
   def mergeCells(a: scala.Double, b: java.lang.String, c: scala.Double): scala.Unit = js.native
-  /**
-  	 * Merge cells, either:
-  	 *
-  	 * tlbr string, e.g. `'A4:B5'`
-  	 *
-  	 * tl string, br string, e.g. `'G10', 'H11'`
-  	 *
-  	 * t, l, b, r numbers, e.g. `10,11,12,13`
-  	 */
   def mergeCells(a: scala.Double, b: java.lang.String, c: scala.Double, d: scala.Double): scala.Unit = js.native
-  /**
-  	 * Merge cells, either:
-  	 *
-  	 * tlbr string, e.g. `'A4:B5'`
-  	 *
-  	 * tl string, br string, e.g. `'G10', 'H11'`
-  	 *
-  	 * t, l, b, r numbers, e.g. `10,11,12,13`
-  	 */
   def mergeCells(a: scala.Double, b: scala.Double): scala.Unit = js.native
-  /**
-  	 * Merge cells, either:
-  	 *
-  	 * tlbr string, e.g. `'A4:B5'`
-  	 *
-  	 * tl string, br string, e.g. `'G10', 'H11'`
-  	 *
-  	 * t, l, b, r numbers, e.g. `10,11,12,13`
-  	 */
   def mergeCells(a: scala.Double, b: scala.Double, c: scala.Double): scala.Unit = js.native
-  /**
-  	 * Merge cells, either:
-  	 *
-  	 * tlbr string, e.g. `'A4:B5'`
-  	 *
-  	 * tl string, br string, e.g. `'G10', 'H11'`
-  	 *
-  	 * t, l, b, r numbers, e.g. `10,11,12,13`
-  	 */
   def mergeCells(a: scala.Double, b: scala.Double, c: scala.Double, d: scala.Double): scala.Unit = js.native
   /**
   	 * Cut one or more columns (columns to the right are shifted left)

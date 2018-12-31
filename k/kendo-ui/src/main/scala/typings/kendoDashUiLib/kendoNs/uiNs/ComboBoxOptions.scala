@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ComboBoxOptions extends js.Object {
   var animation: js.UndefOr[ComboBoxAnimation] = js.undefined
   var autoBind: js.UndefOr[scala.Boolean] = js.undefined

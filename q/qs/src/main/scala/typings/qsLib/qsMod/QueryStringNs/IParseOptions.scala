@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IParseOptions extends js.Object {
   var allowDots: js.UndefOr[scala.Boolean] = js.undefined
   var allowPrototypes: js.UndefOr[scala.Boolean] = js.undefined

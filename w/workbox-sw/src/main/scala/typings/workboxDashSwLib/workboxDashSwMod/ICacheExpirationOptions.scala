@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * ===== CacheExpiration =====
- */
-
-
+  * ===== CacheExpiration =====
+  */
 trait ICacheExpirationOptions extends js.Object {
   /**
   	 * The maximum lifetime of a request to stay in the cache before it's removed.

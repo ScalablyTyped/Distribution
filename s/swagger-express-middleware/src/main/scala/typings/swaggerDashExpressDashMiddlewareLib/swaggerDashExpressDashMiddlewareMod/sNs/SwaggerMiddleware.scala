@@ -8,228 +8,180 @@ import scala.scalajs.js.annotation._
 @js.native
 trait SwaggerMiddleware extends js.Object {
   /**
-               * Handles CORS preflight requests and sets CORS headers for all requests according the Swagger API definition.
-               */
+    * Handles CORS preflight requests and sets CORS headers for all requests according the Swagger API definition.
+    */
   @JSName("CORS")
   var CORS_Original: CORSSignature = js.native
   /**
-               * Serves the Swagger API file(s) in JSON and YAML formats, so they can be used with third-party front-end tools like Swagger UI and Swagger Editor.
-               */
+    * Serves the Swagger API file(s) in JSON and YAML formats, so they can be used with third-party front-end tools like Swagger UI and Swagger Editor.
+    */
   @JSName("files")
   var files_Original: FilesSignature = js.native
   /**
-              * Annotates the HTTP request (the `req` object) with Swagger metadata.
-              * This middleware populates Request.swagger
-              */
+    * Annotates the HTTP request (the `req` object) with Swagger metadata.
+    * This middleware populates Request.swagger
+    */
   @JSName("metadata")
   var metadata_Original: MetadataSignature = js.native
   /**
-               * Implements mock behavior for HTTP requests, based on the Swagger API.
-               */
+    * Implements mock behavior for HTTP requests, based on the Swagger API.
+    */
   @JSName("mock")
   var mock_Original: MockSignature = js.native
   /**
-               * Parses the HTTP request into typed values.
-               */
+    * Parses the HTTP request into typed values.
+    */
   @JSName("parseRequest")
   var parseRequest_Original: ParseRequestSignature = js.native
   /**
-               * Handles CORS preflight requests and sets CORS headers for all requests according the Swagger API definition.
-               */
+    * Handles CORS preflight requests and sets CORS headers for all requests according the Swagger API definition.
+    */
   def CORS(): expressLib.expressMod.eNs.RequestHandler = js.native
   /**
-               * Serves the Swagger API file(s) in JSON and YAML formats, so they can be used with third-party front-end tools like Swagger UI and Swagger Editor.
-               */
+    * Serves the Swagger API file(s) in JSON and YAML formats, so they can be used with third-party front-end tools like Swagger UI and Swagger Editor.
+    */
   def files(): expressLib.expressMod.eNs.RequestHandler = js.native
+  def files(/**
+    * Options for how the files are served
+    */
+  options: FilesOptions): expressLib.expressMod.eNs.RequestHandler = js.native
   /**
-               * Serves the Swagger API file(s) in JSON and YAML formats, so they can be used with third-party front-end tools like Swagger UI and Swagger Editor.
-               */
+    * Serves the Swagger API file(s) in JSON and YAML formats, so they can be used with third-party front-end tools like Swagger UI and Swagger Editor.
+    */
   def files(
     /**
-                   * Options for how the files are served
-                   */
-  options: FilesOptions
-  ): expressLib.expressMod.eNs.RequestHandler = js.native
-  /**
-               * Serves the Swagger API file(s) in JSON and YAML formats, so they can be used with third-party front-end tools like Swagger UI and Swagger Editor.
-               */
-  def files(
-    /**
-                   * If an Express Application or Router is passed, then its routing settings will be used.
-                   */
+    * If an Express Application or Router is passed, then its routing settings will be used.
+    */
   router: expressLib.expressMod.eNs.Application
   ): expressLib.expressMod.eNs.RequestHandler = js.native
-  /**
-               * Serves the Swagger API file(s) in JSON and YAML formats, so they can be used with third-party front-end tools like Swagger UI and Swagger Editor.
-               */
   def files(
     /**
-                   * If an Express Application or Router is passed, then its routing settings will be used.
-                   */
+    * If an Express Application or Router is passed, then its routing settings will be used.
+    */
   router: expressLib.expressMod.eNs.Application,
     /**
-                   * Options for how the files are served
-                   */
+    * Options for how the files are served
+    */
   options: FilesOptions
   ): expressLib.expressMod.eNs.RequestHandler = js.native
-  /**
-               * Serves the Swagger API file(s) in JSON and YAML formats, so they can be used with third-party front-end tools like Swagger UI and Swagger Editor.
-               */
   def files(
     /**
-                   * If an Express Application or Router is passed, then its routing settings will be used.
-                   */
+    * If an Express Application or Router is passed, then its routing settings will be used.
+    */
   router: expressLib.expressMod.eNs.Router
   ): expressLib.expressMod.eNs.RequestHandler = js.native
-  /**
-               * Serves the Swagger API file(s) in JSON and YAML formats, so they can be used with third-party front-end tools like Swagger UI and Swagger Editor.
-               */
   def files(
     /**
-                   * If an Express Application or Router is passed, then its routing settings will be used.
-                   */
+    * If an Express Application or Router is passed, then its routing settings will be used.
+    */
   router: expressLib.expressMod.eNs.Router,
     /**
-                   * Options for how the files are served
-                   */
+    * Options for how the files are served
+    */
   options: FilesOptions
   ): expressLib.expressMod.eNs.RequestHandler = js.native
   /**
-              * Annotates the HTTP request (the `req` object) with Swagger metadata.
-              * This middleware populates Request.swagger
-              */
+    * Annotates the HTTP request (the `req` object) with Swagger metadata.
+    * This middleware populates Request.swagger
+    */
   def metadata(): expressLib.expressMod.eNs.RequestHandler = js.native
-  /**
-              * Annotates the HTTP request (the `req` object) with Swagger metadata.
-              * This middleware populates Request.swagger
-              */
   def metadata(router: expressLib.expressMod.eNs.Application): expressLib.expressMod.eNs.RequestHandler = js.native
-  /**
-              * Annotates the HTTP request (the `req` object) with Swagger metadata.
-              * This middleware populates Request.swagger
-              */
   def metadata(router: expressLib.expressMod.eNs.Router): expressLib.expressMod.eNs.RequestHandler = js.native
   /**
-               * Implements mock behavior for HTTP requests, based on the Swagger API.
-               */
+    * Implements mock behavior for HTTP requests, based on the Swagger API.
+    */
   def mock(): expressLib.expressMod.eNs.RequestHandler = js.native
-  /**
-               * Implements mock behavior for HTTP requests, based on the Swagger API.
-               */
   def mock(
     /**
-                   * Express routing options (e.g. `caseSensitive`, `strict`).
-                   * If an Express Application or Router is passed, then its routing settings will be used.
-                   */
+    * Express routing options (e.g. `caseSensitive`, `strict`).
+    * If an Express Application or Router is passed, then its routing settings will be used.
+    */
   router: expressLib.expressMod.eNs.Application
   ): expressLib.expressMod.eNs.RequestHandler = js.native
-  /**
-               * Implements mock behavior for HTTP requests, based on the Swagger API.
-               */
   def mock(
     /**
-                   * Express routing options (e.g. `caseSensitive`, `strict`).
-                   * If an Express Application or Router is passed, then its routing settings will be used.
-                   */
+    * Express routing options (e.g. `caseSensitive`, `strict`).
+    * If an Express Application or Router is passed, then its routing settings will be used.
+    */
   router: expressLib.expressMod.eNs.Application,
     /**
-                  * The data store that will be used to persist REST resources.
-                  * If `router` is an Express Application, then you can set/get the data store
-                  * using `router.get("mock data store")
-                  */
+    * The data store that will be used to persist REST resources.
+    * If `router` is an Express Application, then you can set/get the data store
+    * using `router.get("mock data store")
+    */
   datastore: js.Any
   ): expressLib.expressMod.eNs.RequestHandler = js.native
-  /**
-               * Implements mock behavior for HTTP requests, based on the Swagger API.
-               */
   def mock(
     /**
-                   * Express routing options (e.g. `caseSensitive`, `strict`).
-                   * If an Express Application or Router is passed, then its routing settings will be used.
-                   */
+    * Express routing options (e.g. `caseSensitive`, `strict`).
+    * If an Express Application or Router is passed, then its routing settings will be used.
+    */
   router: expressLib.expressMod.eNs.Router
   ): expressLib.expressMod.eNs.RequestHandler = js.native
-  /**
-               * Implements mock behavior for HTTP requests, based on the Swagger API.
-               */
   def mock(
     /**
-                   * Express routing options (e.g. `caseSensitive`, `strict`).
-                   * If an Express Application or Router is passed, then its routing settings will be used.
-                   */
+    * Express routing options (e.g. `caseSensitive`, `strict`).
+    * If an Express Application or Router is passed, then its routing settings will be used.
+    */
   router: expressLib.expressMod.eNs.Router,
     /**
-                  * The data store that will be used to persist REST resources.
-                  * If `router` is an Express Application, then you can set/get the data store
-                  * using `router.get("mock data store")
-                  */
+    * The data store that will be used to persist REST resources.
+    * If `router` is an Express Application, then you can set/get the data store
+    * using `router.get("mock data store")
+    */
   datastore: js.Any
   ): expressLib.expressMod.eNs.RequestHandler = js.native
   /**
-               * Parses the HTTP request into typed values.
-               */
+    * Parses the HTTP request into typed values.
+    */
   def parseRequest(): expressLib.expressMod.eNs.RequestHandler = js.native
+  def parseRequest(/**
+    * Options for each of the request-parsing middleware
+    */
+  options: ParseRequestOptions): expressLib.expressMod.eNs.RequestHandler = js.native
   /**
-               * Parses the HTTP request into typed values.
-               */
+    * Parses the HTTP request into typed values.
+    */
   def parseRequest(
     /**
-                   * Options for each of the request-parsing middleware
-                   */
-  options: ParseRequestOptions
-  ): expressLib.expressMod.eNs.RequestHandler = js.native
-  /**
-               * Parses the HTTP request into typed values.
-               */
-  def parseRequest(
-    /**
-                   * An Express Application or Router.
-                   * If provided, this will be used to register path-param middleware via Router.Param
-                   */
+    * An Express Application or Router.
+    * If provided, this will be used to register path-param middleware via Router.Param
+    */
   router: expressLib.expressMod.eNs.Application
   ): expressLib.expressMod.eNs.RequestHandler = js.native
-  /**
-               * Parses the HTTP request into typed values.
-               */
   def parseRequest(
     /**
-                   * An Express Application or Router.
-                   * If provided, this will be used to register path-param middleware via Router.Param
-                   */
+    * An Express Application or Router.
+    * If provided, this will be used to register path-param middleware via Router.Param
+    */
   router: expressLib.expressMod.eNs.Application,
     /**
-                   * Options for each of the request-parsing middleware
-                   */
+    * Options for each of the request-parsing middleware
+    */
   options: ParseRequestOptions
   ): expressLib.expressMod.eNs.RequestHandler = js.native
-  /**
-               * Parses the HTTP request into typed values.
-               */
   def parseRequest(
     /**
-                   * An Express Application or Router.
-                   * If provided, this will be used to register path-param middleware via Router.Param
-                   */
+    * An Express Application or Router.
+    * If provided, this will be used to register path-param middleware via Router.Param
+    */
   router: expressLib.expressMod.eNs.Router
   ): expressLib.expressMod.eNs.RequestHandler = js.native
-  /**
-               * Parses the HTTP request into typed values.
-               */
   def parseRequest(
     /**
-                   * An Express Application or Router.
-                   * If provided, this will be used to register path-param middleware via Router.Param
-                   */
+    * An Express Application or Router.
+    * If provided, this will be used to register path-param middleware via Router.Param
+    */
   router: expressLib.expressMod.eNs.Router,
     /**
-                   * Options for each of the request-parsing middleware
-                   */
+    * Options for each of the request-parsing middleware
+    */
   options: ParseRequestOptions
   ): expressLib.expressMod.eNs.RequestHandler = js.native
   /**
-               * Validates the HTTP request against the Swagger API.
-               * An error is sent downstream if the request is invalid for any reason.
-               */
+    * Validates the HTTP request against the Swagger API.
+    * An error is sent downstream if the request is invalid for any reason.
+    */
   def validateRequest(): expressLib.expressMod.eNs.RequestHandler = js.native
 }
 

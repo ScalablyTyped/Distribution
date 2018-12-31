@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait ShapeAutoSize extends js.Object
 
 /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.ShapeAutoSize")
 @js.native
 object ShapeAutoSize extends js.Object {

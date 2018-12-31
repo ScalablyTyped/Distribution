@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * $filter - $filterProvider - service in module ng
-     *
-     * Filters are used for formatting data displayed to the user.
-     *
-     * see https://docs.angularjs.org/api/ng/service/$filter
-     */
+  * $filter - $filterProvider - service in module ng
+  *
+  * Filters are used for formatting data displayed to the user.
+  *
+  * see https://docs.angularjs.org/api/ng/service/$filter
+  */
 @js.native
 trait IFilterService extends js.Object {
   def apply(name: angularLib.angularLibStrings.currency): IFilterCurrency = js.native
@@ -24,11 +24,11 @@ trait IFilterService extends js.Object {
   def apply(name: angularLib.angularLibStrings.orderBy): IFilterOrderBy = js.native
   def apply(name: angularLib.angularLibStrings.uppercase): IFilterUppercase = js.native
   /**
-           * Usage:
-           * $filter(name);
-           *
-           * @param name Name of the filter function to retrieve
-           */
+    * Usage:
+    * $filter(name);
+    *
+    * @param name Name of the filter function to retrieve
+    */
   def apply[T](name: java.lang.String): T = js.native
 }
 

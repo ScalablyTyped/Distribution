@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActivePaneChangedEventUIParam extends js.Object {
   /**
   	 * Gets the active cell of the new active pane or null if there is no active pane.

@@ -10,9 +10,9 @@ trait ClientCredentialsModel
   extends BaseModel
      with RequestAuthenticationModel {
   /**
-           * Invoked to check if the requested scope is valid for a particular client/user combination.
-           *
-           */
+    * Invoked to check if the requested scope is valid for a particular client/user combination.
+    *
+    */
   var validateScope: js.UndefOr[
     js.Function4[
       /* user */ User, 
@@ -23,14 +23,10 @@ trait ClientCredentialsModel
     ]
   ] = js.native
   /**
-           * Invoked to retrieve the user associated with the specified client.
-           *
-           */
+    * Invoked to retrieve the user associated with the specified client.
+    *
+    */
   def getUserFromClient(client: Client): js.Promise[User | Falsey] = js.native
-  /**
-           * Invoked to retrieve the user associated with the specified client.
-           *
-           */
   def getUserFromClient(client: Client, callback: Callback[User | Falsey]): js.Promise[User | Falsey] = js.native
 }
 

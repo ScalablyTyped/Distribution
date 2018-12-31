@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * The DeviceEvents object is a collection of all the supported DeviceEvent for an imaging device. See the Events property of a Device object for more
-     * details on determining the collection of supported device events.
-     */
+  * The DeviceEvents object is a collection of all the supported DeviceEvent for an imaging device. See the Events property of a Device object for more
+  * details on determining the collection of supported device events.
+  */
 @js.native
 trait DeviceEvents extends js.Object {
   /** Returns the number of members in the collection */

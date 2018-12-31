@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PayDialogResponse extends DialogResponse {
   var amount: java.lang.String
   var currency: java.lang.String

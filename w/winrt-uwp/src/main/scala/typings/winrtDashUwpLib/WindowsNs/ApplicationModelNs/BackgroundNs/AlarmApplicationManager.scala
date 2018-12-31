@@ -15,14 +15,14 @@ abstract class AlarmApplicationManager () extends js.Object
 @js.native
 object AlarmApplicationManager extends js.Object {
   /**
-                   * Retrieves the status of user permission for the app to set alarms.
-                   * @return Indicates whether the user has granted permission to set alarms.
-                   */
+    * Retrieves the status of user permission for the app to set alarms.
+    * @return Indicates whether the user has granted permission to set alarms.
+    */
   def getAccessStatus(): winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.AlarmAccessStatus = js.native
   /**
-                   * Requests permission from the user to set alarms.
-                   * @return This method returns an AlarmAccessStatus value when it completes.
-                   */
+    * Requests permission from the user to set alarms.
+    * @return This method returns an AlarmAccessStatus value when it completes.
+    */
   def requestAccessAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.AlarmAccessStatus] = js.native
 }
 

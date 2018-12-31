@@ -6,19 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * This interface defines kinetic move parameters used by map for kinetic drag.
-             * @property power {number} - Power multiplier. Multiplier is used to increase the speed of the kinetic move. By default map uses 1.
-             * @property duration {number} - Defines duration of the kinetic move.
-             */
-
+  * This interface defines kinetic move parameters used by map for kinetic drag.
+  * @property power {number} - Power multiplier. Multiplier is used to increase the speed of the kinetic move. By default map uses 1.
+  * @property duration {number} - Defines duration of the kinetic move.
+  */
 trait IKinetics extends js.Object {
   var duration: scala.Double
   var power: scala.Double
   /**
-                   * Easing function modifies animation progress. In example it can modify the animation in a way it starts rapidly and then slows down at the end.
-                   * @param p {number} - current progress
-                   * @returns {number} - modified progress
-                   */
+    * Easing function modifies animation progress. In example it can modify the animation in a way it starts rapidly and then slows down at the end.
+    * @param p {number} - current progress
+    * @returns {number} - modified progress
+    */
   def ease(p: scala.Double): scala.Double
 }
 

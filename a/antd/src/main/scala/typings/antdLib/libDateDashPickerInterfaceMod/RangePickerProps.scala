@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RangePickerProps extends PickerProps {
   var defaultPickerValue: js.UndefOr[RangePickerValue] = js.undefined
   var defaultValue: js.UndefOr[RangePickerValue] = js.undefined

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 *
 **/
-
 trait RequireMap extends js.Object {
   /**
   	*

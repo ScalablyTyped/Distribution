@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetFileInfoOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 计算文件摘要的算法，默认值 md5，有效值：md5，sha1 */

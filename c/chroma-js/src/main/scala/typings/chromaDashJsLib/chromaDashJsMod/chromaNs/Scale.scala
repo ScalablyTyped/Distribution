@@ -10,78 +10,37 @@ trait Scale[OutType] extends js.Object {
   def apply(c: js.Array[java.lang.String]): Scale[Color] = js.native
   def apply(value: scala.Double): OutType = js.native
   def cache(use: scala.Boolean): scala.Boolean = js.native
-  /**
-           * If you want the scale function to return a distinct set of colors instead of a continuous gradient, you can
-           * use scale.classes. If you pass a number the scale will broken into equi-distant classes.
-           * You can also define custom class breaks by passing them as array
-           */
   def classes(c: js.Array[scala.Double]): this.type = js.native
   /**
-           * If you want the scale function to return a distinct set of colors instead of a continuous gradient, you can
-           * use scale.classes. If you pass a number the scale will broken into equi-distant classes.
-           * You can also define custom class breaks by passing them as array
-           */
+    * If you want the scale function to return a distinct set of colors instead of a continuous gradient, you can
+    * use scale.classes. If you pass a number the scale will broken into equi-distant classes.
+    * You can also define custom class breaks by passing them as array
+    */
   def classes(c: scala.Double): this.type = js.native
-  /**
-           * You can call scale.colors(n) to quickly grab `c` equi-distant colors from a color scale. If called with no
-           * arguments, scale.colors returns the original array of colors used to create the scale.
-           */
   def colors(): js.Array[Color] = js.native
   /**
-           * You can call scale.colors(n) to quickly grab `c` equi-distant colors from a color scale. If called with no
-           * arguments, scale.colors returns the original array of colors used to create the scale.
-           */
+    * You can call scale.colors(n) to quickly grab `c` equi-distant colors from a color scale. If called with no
+    * arguments, scale.colors returns the original array of colors used to create the scale.
+    */
   def colors(c: scala.Double): js.Array[Color] = js.native
-  /**
-           * You can call scale.colors(n) to quickly grab `c` equi-distant colors from a color scale. If called with no
-           * arguments, scale.colors returns the original array of colors used to create the scale.
-           */
   @JSName("colors")
   def colors_alpha(c: js.UndefOr[scala.Nothing], format: chromaDashJsLib.chromaDashJsLibStrings.alpha): js.Array[Color] = js.native
-  /**
-           * You can call scale.colors(n) to quickly grab `c` equi-distant colors from a color scale. If called with no
-           * arguments, scale.colors returns the original array of colors used to create the scale.
-           */
   @JSName("colors")
   def colors_alpha(c: scala.Double, format: chromaDashJsLib.chromaDashJsLibStrings.alpha): js.Array[Color] = js.native
-  /**
-           * You can call scale.colors(n) to quickly grab `c` equi-distant colors from a color scale. If called with no
-           * arguments, scale.colors returns the original array of colors used to create the scale.
-           */
   @JSName("colors")
   def colors_brighten(c: js.UndefOr[scala.Nothing], format: chromaDashJsLib.chromaDashJsLibStrings.brighten): js.Array[Color] = js.native
-  /**
-           * You can call scale.colors(n) to quickly grab `c` equi-distant colors from a color scale. If called with no
-           * arguments, scale.colors returns the original array of colors used to create the scale.
-           */
   @JSName("colors")
   def colors_brighten(c: scala.Double, format: chromaDashJsLib.chromaDashJsLibStrings.brighten): js.Array[Color] = js.native
   @JSName("colors")
   def colors_cmyk(c: js.UndefOr[scala.Nothing], format: chromaDashJsLib.chromaDashJsLibStrings.cmyk): js.Array[js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]] = js.native
   @JSName("colors")
   def colors_cmyk(c: scala.Double, format: chromaDashJsLib.chromaDashJsLibStrings.cmyk): js.Array[js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]] = js.native
-  /**
-           * You can call scale.colors(n) to quickly grab `c` equi-distant colors from a color scale. If called with no
-           * arguments, scale.colors returns the original array of colors used to create the scale.
-           */
   @JSName("colors")
   def colors_darken(c: js.UndefOr[scala.Nothing], format: chromaDashJsLib.chromaDashJsLibStrings.darken): js.Array[Color] = js.native
-  /**
-           * You can call scale.colors(n) to quickly grab `c` equi-distant colors from a color scale. If called with no
-           * arguments, scale.colors returns the original array of colors used to create the scale.
-           */
   @JSName("colors")
   def colors_darken(c: scala.Double, format: chromaDashJsLib.chromaDashJsLibStrings.darken): js.Array[Color] = js.native
-  /**
-           * You can call scale.colors(n) to quickly grab `c` equi-distant colors from a color scale. If called with no
-           * arguments, scale.colors returns the original array of colors used to create the scale.
-           */
   @JSName("colors")
   def colors_desaturate(c: js.UndefOr[scala.Nothing], format: chromaDashJsLib.chromaDashJsLibStrings.desaturate): js.Array[Color] = js.native
-  /**
-           * You can call scale.colors(n) to quickly grab `c` equi-distant colors from a color scale. If called with no
-           * arguments, scale.colors returns the original array of colors used to create the scale.
-           */
   @JSName("colors")
   def colors_desaturate(c: scala.Double, format: chromaDashJsLib.chromaDashJsLibStrings.desaturate): js.Array[Color] = js.native
   @JSName("colors")
@@ -132,16 +91,8 @@ trait Scale[OutType] extends js.Object {
   def colors_rgba(c: js.UndefOr[scala.Nothing], format: chromaDashJsLib.chromaDashJsLibStrings.rgba): js.Array[js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]] = js.native
   @JSName("colors")
   def colors_rgba(c: scala.Double, format: chromaDashJsLib.chromaDashJsLibStrings.rgba): js.Array[js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]] = js.native
-  /**
-           * You can call scale.colors(n) to quickly grab `c` equi-distant colors from a color scale. If called with no
-           * arguments, scale.colors returns the original array of colors used to create the scale.
-           */
   @JSName("colors")
   def colors_saturate(c: js.UndefOr[scala.Nothing], format: chromaDashJsLib.chromaDashJsLibStrings.saturate): js.Array[Color] = js.native
-  /**
-           * You can call scale.colors(n) to quickly grab `c` equi-distant colors from a color scale. If called with no
-           * arguments, scale.colors returns the original array of colors used to create the scale.
-           */
   @JSName("colors")
   def colors_saturate(c: scala.Double, format: chromaDashJsLib.chromaDashJsLibStrings.saturate): js.Array[Color] = js.native
   @JSName("colors")
@@ -157,8 +108,8 @@ trait Scale[OutType] extends js.Object {
   def gamma(g: scala.Double): this.type = js.native
   def mode(mode: InterpolationMode): this.type = js.native
   /**
-           * Set out format for scale() call. Passing null will result in a scale which outputs colors.
-           */
+    * Set out format for scale() call. Passing null will result in a scale which outputs colors.
+    */
   def out(): Scale[Color] = js.native
   @JSName("out")
   def out_cmyk(format: chromaDashJsLib.chromaDashJsLibStrings.cmyk): Scale[js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]] = js.native

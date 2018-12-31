@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GameDto extends js.Object {
   var championId: scala.Double
   var createDate: scala.Double

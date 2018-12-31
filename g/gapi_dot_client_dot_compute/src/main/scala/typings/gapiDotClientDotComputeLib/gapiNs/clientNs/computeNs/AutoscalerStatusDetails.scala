@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AutoscalerStatusDetails extends js.Object {
   /** The status message. */
   var message: js.UndefOr[java.lang.String] = js.undefined

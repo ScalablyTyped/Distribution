@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IndicesSegmentsParams extends GenericParams {
   var allowNoIndices: js.UndefOr[scala.Boolean] = js.undefined
   var expandWildcards: js.UndefOr[ExpandWildcards] = js.undefined

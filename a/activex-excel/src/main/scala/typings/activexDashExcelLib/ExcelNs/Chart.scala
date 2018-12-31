@@ -120,9 +120,7 @@ class Chart protected () extends js.Object {
   def AutoFormat(Gallery: scala.Double, Format: js.Any): scala.Unit = js.native
   /** @param AxisGroup [AxisGroup=1] */
   def Axes(): Axes | Axis = js.native
-  /** @param AxisGroup [AxisGroup=1] */
   def Axes(Type: XlAxisType): Axes | Axis = js.native
-  /** @param AxisGroup [AxisGroup=1] */
   def Axes(Type: XlAxisType, AxisGroup: XlAxisGroup): Axes | Axis = js.native
   def BarGroups(): js.Any = js.native
   def BarGroups(Index: js.Any): js.Any = js.native
@@ -167,33 +165,18 @@ class Chart protected () extends js.Object {
   def Copy(Before: js.UndefOr[scala.Nothing], After: Sheet): scala.Unit = js.native
   def CopyChartBuild(): scala.Unit = js.native
   /**
-           * @param Appearance [Appearance=1]
-           * @param Format [Format=-4147]
-           * @param Size [Size=2]
-           */
+    * @param Appearance [Appearance=1]
+    * @param Format [Format=-4147]
+    * @param Size [Size=2]
+    */
   def CopyPicture(): scala.Unit = js.native
-  /**
-           * @param Appearance [Appearance=1]
-           * @param Format [Format=-4147]
-           * @param Size [Size=2]
-           */
   def CopyPicture(Appearance: XlPictureAppearance): scala.Unit = js.native
-  /**
-           * @param Appearance [Appearance=1]
-           * @param Format [Format=-4147]
-           * @param Size [Size=2]
-           */
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): scala.Unit = js.native
-  /**
-           * @param Appearance [Appearance=1]
-           * @param Format [Format=-4147]
-           * @param Size [Size=2]
-           */
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat, Size: XlPictureAppearance): scala.Unit = js.native
   /**
-           * @param Appearance [Appearance=1]
-           * @param Size [Size=1]
-           */
+    * @param Appearance [Appearance=1]
+    * @param Size [Size=1]
+    */
   def CreatePublisher(
     Edition: js.Any,
     Appearance: js.UndefOr[XlPictureAppearance],
@@ -278,20 +261,15 @@ class Chart protected () extends js.Object {
   def PrintPreview(EnableChanges: scala.Boolean): scala.Unit = js.native
   /** @param Scenarios Passing `true` for this argument is only valid on worksheets */
   def Protect(): scala.Unit = js.native
-  /** @param Scenarios Passing `true` for this argument is only valid on worksheets */
   def Protect(Password: java.lang.String): scala.Unit = js.native
-  /** @param Scenarios Passing `true` for this argument is only valid on worksheets */
   def Protect(Password: java.lang.String, DrawingObjects: scala.Boolean): scala.Unit = js.native
-  /** @param Scenarios Passing `true` for this argument is only valid on worksheets */
   def Protect(Password: java.lang.String, DrawingObjects: scala.Boolean, Contents: scala.Boolean): scala.Unit = js.native
-  /** @param Scenarios Passing `true` for this argument is only valid on worksheets */
   def Protect(
     Password: java.lang.String,
     DrawingObjects: scala.Boolean,
     Contents: scala.Boolean,
     Scenarios: activexDashExcelLib.activexDashExcelLibNumbers.`false`
   ): scala.Unit = js.native
-  /** @param Scenarios Passing `true` for this argument is only valid on worksheets */
   def Protect(
     Password: java.lang.String,
     DrawingObjects: scala.Boolean,
@@ -342,13 +320,9 @@ class Chart protected () extends js.Object {
   def XYGroups(Index: js.Any): js.Any = js.native
   /** @param Type [Type=2] */
   def _ApplyDataLabels(): scala.Unit = js.native
-  /** @param Type [Type=2] */
   def _ApplyDataLabels(Type: XlDataLabelsType): scala.Unit = js.native
-  /** @param Type [Type=2] */
   def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any): scala.Unit = js.native
-  /** @param Type [Type=2] */
   def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any): scala.Unit = js.native
-  /** @param Type [Type=2] */
   def _ApplyDataLabels(Type: XlDataLabelsType, LegendKey: js.Any, AutoText: js.Any, HasLeaderLines: js.Any): scala.Unit = js.native
   def _Evaluate(Name: js.Any): js.Any = js.native
   def _PrintOut(

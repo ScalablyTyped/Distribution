@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CellMeasurerCacheParams extends js.Object {
   var defaultHeight: js.UndefOr[scala.Double] = js.undefined
   var defaultWidth: js.UndefOr[scala.Double] = js.undefined

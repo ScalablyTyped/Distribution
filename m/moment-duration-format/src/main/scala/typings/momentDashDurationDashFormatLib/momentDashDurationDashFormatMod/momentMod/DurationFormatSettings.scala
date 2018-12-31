@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DurationFormatSettings extends js.Object {
   var decimalSeparator: js.UndefOr[java.lang.String] = js.undefined
   var forceLength: js.UndefOr[scala.Boolean] = js.undefined

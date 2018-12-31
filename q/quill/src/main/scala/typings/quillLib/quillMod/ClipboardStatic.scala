@@ -9,9 +9,20 @@ import scala.scalajs.js.annotation._
 trait ClipboardStatic extends js.Object {
   def addMatcher(
     selectorOrNodeType: java.lang.String,
-    callback: js.Function2[/* node */ js.Any, /* delta */ js.Any, _]
+    callback: js.Function2[
+      /* node */ js.Any, 
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Delta */ /* delta */ js.Any, 
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Delta */ _
+    ]
   ): scala.Unit = js.native
-  def addMatcher(selectorOrNodeType: scala.Double, callback: js.Function2[/* node */ js.Any, /* delta */ js.Any, _]): scala.Unit = js.native
+  def addMatcher(
+    selectorOrNodeType: scala.Double,
+    callback: js.Function2[
+      /* node */ js.Any, 
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Delta */ /* delta */ js.Any, 
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Delta */ _
+    ]
+  ): scala.Unit = js.native
   def convert(): js.Any = js.native
   def convert(html: java.lang.String): js.Any = js.native
   def dangerouslyPasteHTML(html: java.lang.String): scala.Unit = js.native

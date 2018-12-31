@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Event extends js.Object {
   var component: js.UndefOr[Ractive] = js.undefined
   var context: js.Any

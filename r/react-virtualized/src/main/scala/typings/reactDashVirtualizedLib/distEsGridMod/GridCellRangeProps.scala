@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridCellRangeProps extends js.Object {
   var cellCache: reactDashVirtualizedLib.reactDashVirtualizedMod.Map[_]
   var cellRenderer: GridCellRenderer

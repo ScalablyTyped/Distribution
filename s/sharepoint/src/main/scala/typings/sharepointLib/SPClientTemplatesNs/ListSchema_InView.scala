@@ -5,10 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListSchema_InView extends ListSchema {
   /** Key-value object that represents all aggregations defined for the view.
-              Key specifies the field internal name, and value specifies the type of the aggregation. */
+    Key specifies the field internal name, and value specifies the type of the aggregation. */
   var Aggregate: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /** Either "TRUE" or false (for grouping) */
   var Collapse: java.lang.String

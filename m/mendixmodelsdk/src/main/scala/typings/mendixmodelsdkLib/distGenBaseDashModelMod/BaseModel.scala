@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenBaseDashModelMod.IBaseModel because Would inherit conflicting mutable fields List(mxVersionForModel, id, workingCopy, metaModelVersion))*/
+/* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenBaseDashModelMod.IBaseModel because Would inherit conflicting mutable fields List(id, metaModelVersion, mxVersionForModel, workingCopy))*/
 @JSImport("mendixmodelsdk/dist/gen/base-model", "BaseModel")
 @js.native
 abstract class BaseModel ()

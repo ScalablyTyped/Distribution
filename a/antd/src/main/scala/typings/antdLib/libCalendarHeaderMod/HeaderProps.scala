@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HeaderProps extends js.Object {
   var fullscreen: js.UndefOr[scala.Boolean] = js.undefined
   var locale: js.UndefOr[js.Any] = js.undefined

@@ -53,8 +53,8 @@ abstract class default protected () extends Default {
 @JSImport("fullcalendar/EventDef", "Default")
 @js.native
 object Default extends js.Object {
-  var copyVerbatimStandardProps: js.Any = js.native
-  var defineStandardProps: js.Any = js.native
+  var copyVerbatimStandardProps: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParsableModelMixin.copyVerbatimStandardProps */ js.Any = js.native
+  var defineStandardProps: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParsableModelMixin.defineStandardProps */ js.Any = js.native
   var uuid: scala.Double = js.native
   def generateId(): java.lang.String = js.native
   def normalizeId(id: js.Any): java.lang.String = js.native
@@ -64,8 +64,8 @@ object Default extends js.Object {
 @JSImport("fullcalendar/EventDef", JSImport.Default)
 @js.native
 object default extends js.Object {
-  var copyVerbatimStandardProps: js.Any = js.native
-  var defineStandardProps: js.Any = js.native
+  var copyVerbatimStandardProps: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParsableModelMixin.copyVerbatimStandardProps */ js.Any = js.native
+  var defineStandardProps: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParsableModelMixin.defineStandardProps */ js.Any = js.native
   var uuid: scala.Double = js.native
   def generateId(): java.lang.String = js.native
   def normalizeId(id: js.Any): java.lang.String = js.native

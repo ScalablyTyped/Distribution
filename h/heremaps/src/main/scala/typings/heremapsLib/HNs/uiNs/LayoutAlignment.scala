@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait LayoutAlignment extends js.Object
 
 /**
-         * This enumeration holds the possible layout alignments for the UI elements.
-         */
+  * This enumeration holds the possible layout alignments for the UI elements.
+  */
 @JSGlobal("H.ui.LayoutAlignment")
 @js.native
 object LayoutAlignment extends js.Object {

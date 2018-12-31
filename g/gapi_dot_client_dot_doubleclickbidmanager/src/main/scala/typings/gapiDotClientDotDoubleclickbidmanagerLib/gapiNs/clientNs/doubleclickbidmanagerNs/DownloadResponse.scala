@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DownloadResponse extends js.Object {
   /** Retrieved ad groups in SDF format. */
   var adGroups: js.UndefOr[java.lang.String] = js.undefined

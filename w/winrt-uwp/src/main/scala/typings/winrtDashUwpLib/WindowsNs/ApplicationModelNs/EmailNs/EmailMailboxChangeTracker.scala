@@ -14,9 +14,9 @@ abstract class EmailMailboxChangeTracker () extends js.Object {
   /** Enables change tracking on a mailbox. */
   def enable(): scala.Unit = js.native
   /**
-                   * Gets a reader that will read a batch of changes.
-                   * @return A reader that will read a batch of changes.
-                   */
+    * Gets a reader that will read a batch of changes.
+    * @return A reader that will read a batch of changes.
+    */
   def getChangeReader(): EmailMailboxChangeReader = js.native
   /** Moves the change tracking cursor to now. */
   def reset(): scala.Unit = js.native

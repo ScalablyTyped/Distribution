@@ -12,10 +12,10 @@ class QueryList[T] protected ()
   def this(props: IQueryListProps[T]) = this()
   def this(props: IQueryListProps[T], context: js.Any) = this()
   /**
-       * The item that we expect to be the next selected active item (based on click
-       * or key interactions). When scrollToActiveItem = false, used to detect if
-       * an unexpected external change to the active item has been made.
-       */
+    * The item that we expect to be the next selected active item (based on click
+    * or key interactions). When scrollToActiveItem = false, used to detect if
+    * an unexpected external change to the active item has been made.
+    */
   var expectedNextActiveItem: js.Any = js.native
   var handleItemSelect: js.Any = js.native
   var handleKeyDown: js.Any = js.native
@@ -28,10 +28,10 @@ class QueryList[T] protected ()
   /** default `itemListRenderer` implementation */
   var renderItemList: js.Any = js.native
   /**
-       * Flag indicating that we should check whether selected item is in viewport
-       * after rendering, typically because of keyboard change. Set to `true` when
-       * manipulating state in a way that may cause active item to scroll away.
-       */
+    * Flag indicating that we should check whether selected item is in viewport
+    * after rendering, typically because of keyboard change. Set to `true` when
+    * manipulating state in a way that may cause active item to scroll away.
+    */
   var shouldCheckActiveItemInViewport: js.Any = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MQueryList(prevProps: IQueryListProps[T]): scala.Unit = js.native
@@ -42,16 +42,11 @@ class QueryList[T] protected ()
   /* private */ def getActiveIndex(items: js.Any): js.Any = js.native
   /* private */ def getItemsParentPadding(): js.Any = js.native
   /**
-       * Get the next enabled item, moving in the given direction from the start
-       * index. An `undefined` return value means no suitable item was found.
-       * @param direction amount to move in each iteration, typically +/-1
-       */
+    * Get the next enabled item, moving in the given direction from the start
+    * index. An `undefined` return value means no suitable item was found.
+    * @param direction amount to move in each iteration, typically +/-1
+    */
   /* private */ def getNextActiveItem(direction: js.Any): js.Any = js.native
-  /**
-       * Get the next enabled item, moving in the given direction from the start
-       * index. An `undefined` return value means no suitable item was found.
-       * @param direction amount to move in each iteration, typically +/-1
-       */
   /* private */ def getNextActiveItem(direction: js.Any, startIndex: js.Any): js.Any = js.native
   def scrollActiveItemIntoView(): scala.Unit = js.native
   /* private */ def setActiveItem(activeItem: js.Any): js.Any = js.native

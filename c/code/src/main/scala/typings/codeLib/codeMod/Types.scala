@@ -19,11 +19,8 @@ trait Types[T] extends js.Object {
   def date(): AssertionChain[T] = js.native
   /** Asserts that the reference value is an error. */
   def error(): AssertionChain[T] = js.native
-  /** Asserts that the reference value is an error. */
   def error(`type`: js.Any): AssertionChain[T] = js.native
-  /** Asserts that the reference value is an error. */
   def error(`type`: js.Any, message: java.lang.String): AssertionChain[T] = js.native
-  /** Asserts that the reference value is an error. */
   def error(`type`: js.Any, message: stdLib.RegExp): AssertionChain[T] = js.native
   /** Asserts that the reference value is a function. */
   def function(): AssertionChain[T] = js.native

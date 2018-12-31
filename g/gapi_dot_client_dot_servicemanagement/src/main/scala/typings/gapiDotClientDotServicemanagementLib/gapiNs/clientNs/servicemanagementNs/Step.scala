@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Step extends js.Object {
   /** The short description of the step. */
   var description: js.UndefOr[java.lang.String] = js.undefined

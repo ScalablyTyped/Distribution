@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JQueryColorpickerInstance extends js.Object {
   def close(): scala.Unit
   def destroy(): scala.Unit

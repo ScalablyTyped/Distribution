@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Data extends js.Object {
   // The data to be appended.
   var data: js.UndefOr[js.Array[_] | echartsLib.echartsNs.TypedArray] = js.undefined

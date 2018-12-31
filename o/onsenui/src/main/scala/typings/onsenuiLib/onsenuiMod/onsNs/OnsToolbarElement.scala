@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 trait OnsToolbarElement
   extends stdLib.HTMLElement {
   /**
-       * @description Hide the toolbar element
-       */
+    * @description Hide the toolbar element
+    */
   def hide(): scala.Unit = js.native
   /**
-       * @description Show or hide the toolbar element
-       */
+    * @description Show or hide the toolbar element
+    */
   def setVisibility(visible: scala.Boolean): scala.Unit = js.native
   /**
-       * @description Show the toolbar element
-       */
+    * @description Show the toolbar element
+    */
   def show(): scala.Unit = js.native
 }
 

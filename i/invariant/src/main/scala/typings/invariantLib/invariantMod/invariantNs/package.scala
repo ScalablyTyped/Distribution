@@ -9,7 +9,7 @@ package object invariantNs {
   type InvariantStatic = js.Function3[
     /* testValue */ js.Any, 
     /* format */ js.UndefOr[java.lang.String], 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     scala.Unit
   ]
 }

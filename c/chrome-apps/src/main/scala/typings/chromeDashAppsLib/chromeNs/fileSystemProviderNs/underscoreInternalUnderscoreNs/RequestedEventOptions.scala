@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * @private
-             * @internal
-             */
-
+  * @private
+  * @internal
+  */
 trait RequestedEventOptions extends js.Object {
   /** The identifier of the file system related to this operation. */
   var fileSystemId: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataTableOption extends js.Object {
   var afterLoad: js.UndefOr[js.Function1[/* event */ AfterLoadEvent, scala.Unit]] = js.undefined
   var checkByClickRow: js.UndefOr[scala.Boolean] = js.undefined

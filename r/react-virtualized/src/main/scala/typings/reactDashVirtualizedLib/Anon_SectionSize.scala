@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SectionSize extends js.Object {
   var `aria-label`: reactLib.reactMod.ReactNs.Requireable[java.lang.String]
   var cellCount: reactLib.reactMod.ReactNs.Validator[scala.Double]

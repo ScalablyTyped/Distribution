@@ -19,18 +19,14 @@ class SpriteSheetBuilder ()
   var timeSlice: scala.Double = js.native
   // methods
   def addAnimation(name: java.lang.String, frames: js.Array[scala.Double]): scala.Unit = js.native
-  // methods
   def addAnimation(name: java.lang.String, frames: js.Array[scala.Double], next: java.lang.String): scala.Unit = js.native
-  // methods
   def addAnimation(
     name: java.lang.String,
     frames: js.Array[scala.Double],
     next: java.lang.String,
     frequency: scala.Double
   ): scala.Unit = js.native
-  // methods
   def addAnimation(name: java.lang.String, frames: js.Array[scala.Double], next: scala.Boolean): scala.Unit = js.native
-  // methods
   def addAnimation(
     name: java.lang.String,
     frames: js.Array[scala.Double],

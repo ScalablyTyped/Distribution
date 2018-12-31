@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class ParserWarning () extends js.Object {
   /**
-       * The line number on which the warning occurred
-       */
+    * The line number on which the warning occurred
+    */
   var lineNumber: java.lang.String = js.native
   /**
-       * The warning message
-       */
+    * The warning message
+    */
   var message: java.lang.String = js.native
 }
 

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * DimensionItemLayout...
-     */
-
+  * DimensionItemLayout...
+  */
 trait IDimensionItemLayout extends js.Object {
   var qData: scala.Null
   var qInfo: INxInfo

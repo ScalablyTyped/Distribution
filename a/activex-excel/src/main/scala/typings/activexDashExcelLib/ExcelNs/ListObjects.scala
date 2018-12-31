@@ -45,9 +45,9 @@ trait ListObjects extends js.Object {
     TableStyleName: java.lang.String
   ): ListObject = js.native
   /**
-           * @param SourceType [SourceType=1]
-           * @param XlListObjectHasHeaders [XlListObjectHasHeaders=0]
-           */
+    * @param SourceType [SourceType=1]
+    * @param XlListObjectHasHeaders [XlListObjectHasHeaders=0]
+    */
   def Add(
     SourceType: js.UndefOr[XlListObjectSourceType],
     Source: js.UndefOr[js.Any],
@@ -59,39 +59,19 @@ trait ListObjects extends js.Object {
   def Item(Index: java.lang.String): ListObject = js.native
   def Item(Index: scala.Double): ListObject = js.native
   /**
-           * @param SourceType [SourceType=1]
-           * @param XlListObjectHasHeaders [XlListObjectHasHeaders=0]
-           */
+    * @param SourceType [SourceType=1]
+    * @param XlListObjectHasHeaders [XlListObjectHasHeaders=0]
+    */
   def _Add(): ListObject = js.native
-  /**
-           * @param SourceType [SourceType=1]
-           * @param XlListObjectHasHeaders [XlListObjectHasHeaders=0]
-           */
   def _Add(SourceType: XlListObjectSourceType): ListObject = js.native
-  /**
-           * @param SourceType [SourceType=1]
-           * @param XlListObjectHasHeaders [XlListObjectHasHeaders=0]
-           */
   def _Add(SourceType: XlListObjectSourceType, Source: js.Any): ListObject = js.native
-  /**
-           * @param SourceType [SourceType=1]
-           * @param XlListObjectHasHeaders [XlListObjectHasHeaders=0]
-           */
   def _Add(SourceType: XlListObjectSourceType, Source: js.Any, LinkSource: js.Any): ListObject = js.native
-  /**
-           * @param SourceType [SourceType=1]
-           * @param XlListObjectHasHeaders [XlListObjectHasHeaders=0]
-           */
   def _Add(
     SourceType: XlListObjectSourceType,
     Source: js.Any,
     LinkSource: js.Any,
     XlListObjectHasHeaders: XlYesNoGuess
   ): ListObject = js.native
-  /**
-           * @param SourceType [SourceType=1]
-           * @param XlListObjectHasHeaders [XlListObjectHasHeaders=0]
-           */
   def _Add(
     SourceType: XlListObjectSourceType,
     Source: js.Any,

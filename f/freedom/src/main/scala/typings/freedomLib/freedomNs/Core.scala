@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // See |Core_unprivileged| in |core.unprivileged.js|
-
 trait Core extends js.Object {
   // Given an ChannelEndpointIdentifier for a channel, create a proxy event
   // interface for it.

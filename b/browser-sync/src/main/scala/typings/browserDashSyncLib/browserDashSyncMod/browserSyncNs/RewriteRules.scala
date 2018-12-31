@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RewriteRules extends js.Object {
   var fn: js.UndefOr[
     js.Function3[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InlineContent extends js.Object {
   /** JSON array of attachments. */
   var attachments: js.UndefOr[js.Array[Attachment]] = js.undefined

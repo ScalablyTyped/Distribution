@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModalDialogProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libModalDialogMod.ModalDialog] {
   var onEnter: js.UndefOr[js.Function] = js.undefined

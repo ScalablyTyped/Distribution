@@ -6,21 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Interface for a Lookup value.
-     */
-
+  * Interface for a Lookup value.
+  */
 trait LookupValue extends js.Object {
   /**
-           * Type of the entity.
-           */
+    * Type of the entity.
+    */
   var entityType: java.lang.String
   /**
-           * The identifier.
-           */
+    * The identifier.
+    */
   var id: java.lang.String
   /**
-           * The name
-           */
+    * The name
+    */
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 

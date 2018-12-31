@@ -14,8 +14,8 @@ object utilNsMembers extends js.Object {
   val `match`: adoneLib.adoneNs.utilNs.INs.MatchFunction = js.native
   val toposort: adoneLib.adoneNs.utilNs.INs.ToposortFunction = js.native
   /**
-           * Finds difference between the given arrays
-           */
+    * Finds difference between the given arrays
+    */
   def arrayDiff[T](arrays: js.Array[T]*): js.Array[T] = js.native
   def arrify[T](`val`: T): js.Array[T] = js.native
   def arrify[T](`val`: js.Array[T]): js.Array[T] = js.native
@@ -40,26 +40,22 @@ object utilNsMembers extends js.Object {
   def asyncWaterfall[T](tasks: js.Array[adoneLib.adoneNs.utilNs.INs.WaterFallTask]): scala.Unit = js.native
   def asyncWaterfall[T](
     tasks: js.Array[adoneLib.adoneNs.utilNs.INs.WaterFallTask],
-    callback: js.Function2[/* err */ js.UndefOr[nodeLib.Error | scala.Null], /* repeated */js.Any, scala.Unit]
+    callback: js.Function2[/* err */ js.UndefOr[nodeLib.Error | scala.Null], /* repeated */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def clone(`object`: js.Any): js.Any = js.native
   def clone(`object`: js.Any, options: adoneLib.adoneNs.utilNs.INs.CloneOptions): js.Any = js.native
   /**
-           * Creates a function that delays invoking of the given function until after "timeout" ms
-           * have elapsed since the last invoking
-           */
+    * Creates a function that delays invoking of the given function until after "timeout" ms
+    * have elapsed since the last invoking
+    */
   def debounce[R](fn: js.Function0[R], timeout: scala.Double): js.Function0[R] = js.native
-  /**
-           * Creates a function that delays invoking of the given function until after "timeout" ms
-           * have elapsed since the last invoking
-           */
   def debounce[R](fn: js.Function0[R], timeout: scala.Double, options: adoneLib.adoneNs.utilNs.INs.DebounceOptions): js.Function0[R] = js.native
-  def debounce[R](fn: js.Function1[/* repeated */js.Any, R], timeout: scala.Double): js.Function1[/* repeated */js.Any, R] = js.native
+  def debounce[R](fn: js.Function1[/* repeated */ js.Any, R], timeout: scala.Double): js.Function1[/* repeated */ js.Any, R] = js.native
   def debounce[R](
-    fn: js.Function1[/* repeated */js.Any, R],
+    fn: js.Function1[/* repeated */ js.Any, R],
     timeout: scala.Double,
     options: adoneLib.adoneNs.utilNs.INs.DebounceOptions
-  ): js.Function1[/* repeated */js.Any, R] = js.native
+  ): js.Function1[/* repeated */ js.Any, R] = js.native
   def debounce[T1, T2, R](fn: js.Function2[/* a */ T1, /* b */ T2, R], timeout: scala.Double): js.Function2[/* a */ T1, /* b */ T2, R] = js.native
   def debounce[T1, T2, R](
     fn: js.Function2[/* a */ T1, /* b */ T2, R],
@@ -135,8 +131,8 @@ object utilNsMembers extends js.Object {
     options: adoneLib.adoneNs.utilNs.INs.FillRangeOptions with adoneLib.Anon_ToRegex
   ): java.lang.String = js.native
   /**
-           * Expands numbers and letters
-           */
+    * Expands numbers and letters
+    */
   @JSName("fillRange")
   def fillRange_String(
     from: scala.Double,
@@ -145,7 +141,7 @@ object utilNsMembers extends js.Object {
   ): java.lang.String = js.native
   def flatten(array: js.Array[_]): js.Array[_] = js.native
   def flatten(array: js.Array[_], options: adoneLib.adoneNs.utilNs.INs.FlattenOptions): js.Array[_] = js.native
-  def functionName(fn: js.Function1[/* repeated */js.Any, _]): java.lang.String = js.native
+  def functionName(fn: js.Function1[/* repeated */ js.Any, _]): java.lang.String = js.native
   def globParent(str: java.lang.String): java.lang.String = js.native
   def globize(path: java.lang.String): java.lang.String = js.native
   def globize(path: java.lang.String, options: adoneLib.adoneNs.utilNs.INs.GlobizeOptions): java.lang.String = js.native
@@ -176,8 +172,8 @@ object utilNsMembers extends js.Object {
   def omit(obj: js.Any, props: java.lang.String): js.Object = js.native
   def omit(obj: js.Any, props: js.Array[java.lang.String]): js.Object = js.native
   def omit(obj: js.Any, props: js.Function1[/* v */ java.lang.String, scala.Boolean]): js.Object = js.native
-  def once[T](fn: js.Function1[/* repeated */js.Any, T]): js.Function1[/* repeated */js.Any, T] = js.native
-  def once[T](fn: js.Function1[/* repeated */js.Any, T], options: adoneLib.adoneNs.utilNs.INs.OnceOptions): js.Function1[/* repeated */js.Any, T] = js.native
+  def once[T](fn: js.Function1[/* repeated */ js.Any, T]): js.Function1[/* repeated */ js.Any, T] = js.native
+  def once[T](fn: js.Function1[/* repeated */ js.Any, T], options: adoneLib.adoneNs.utilNs.INs.OnceOptions): js.Function1[/* repeated */ js.Any, T] = js.native
   def parseMs(ms: scala.Double): adoneLib.adoneNs.utilNs.INs.ParseMsResult = js.native
   def parseSize(str: java.lang.String): scala.Double | scala.Null = js.native
   def parseSize(str: scala.Double): scala.Double | scala.Null = js.native
@@ -197,9 +193,9 @@ object utilNsMembers extends js.Object {
   def reFindAll(regexp: stdLib.RegExp, str: java.lang.String): js.Array[stdLib.RegExpExecArray] = js.native
   def regexNot(pattern: java.lang.String): stdLib.RegExp = js.native
   def regexNot(pattern: java.lang.String, options: adoneLib.adoneNs.utilNs.INs.RegexNotOptions): stdLib.RegExp = js.native
-  def reinterval(callback: js.Function1[/* repeated */js.Any, scala.Unit], interval: scala.Double): adoneLib.adoneNs.utilNs.INs.ReInterval = js.native
+  def reinterval(callback: js.Function1[/* repeated */ js.Any, scala.Unit], interval: scala.Double): adoneLib.adoneNs.utilNs.INs.ReInterval = js.native
   def reinterval(
-    callback: js.Function1[/* repeated */js.Any, scala.Unit],
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit],
     interval: scala.Double,
     args: js.Array[_]
   ): adoneLib.adoneNs.utilNs.INs.ReInterval = js.native

@@ -5,23 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default 'active'
-                   */
+    * @default 'active'
+    */
   var active: java.lang.String
   /**
-                   * @default 'disabled'
-                   */
+    * @default 'disabled'
+    */
   var disabled: java.lang.String
   /**
-                   * @default 'default'
-                   */
+    * @default 'default'
+    */
   var placeholder: java.lang.String
   /**
-                   * @default 'visible'
-                   */
+    * @default 'visible'
+    */
   var visible: java.lang.String
 }
 

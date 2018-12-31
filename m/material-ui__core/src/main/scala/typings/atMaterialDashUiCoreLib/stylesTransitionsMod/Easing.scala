@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Easing extends js.Object {
   var easeIn: java.lang.String
   var easeInOut: java.lang.String

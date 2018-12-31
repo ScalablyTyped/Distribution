@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBar extends ICartesian {
   /** [Config Option] (Boolean) */
   var column: js.UndefOr[scala.Boolean] = js.undefined

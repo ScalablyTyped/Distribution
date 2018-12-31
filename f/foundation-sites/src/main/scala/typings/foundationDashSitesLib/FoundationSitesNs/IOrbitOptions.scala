@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOrbitOptions extends js.Object {
   var accessible: js.UndefOr[scala.Boolean] = js.undefined
   var animInFromLeft: js.UndefOr[java.lang.String] = js.undefined

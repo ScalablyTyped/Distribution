@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ItemRenderedEventUIParam extends js.Object {
   /**
   	 * Used to get a reference of the item's index, if the layout is flow or vertical

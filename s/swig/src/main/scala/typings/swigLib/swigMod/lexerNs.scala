@@ -60,8 +60,8 @@ object lexerNs extends js.Object {
       extends swigLib.swigMod.lexerNs.TYPES
     
     /** End of an array
-             * Currently unused
-            ARRAYCLOSE = 16, */
+      * Currently unused
+      ARRAYCLOSE = 16, */
     /** Open curly brace */
     @js.native
     sealed trait CURLYOPEN
@@ -133,8 +133,8 @@ object lexerNs extends js.Object {
       extends swigLib.swigMod.lexerNs.TYPES
     
     /** End of a method
-             * Currently unused
-            METHODEND = 26, */
+      * Currently unused
+      METHODEND = 26, */
     /** Unknown type */
     @js.native
     sealed trait UNKNOWN

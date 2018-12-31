@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IImg extends IComponent {
   /** [Config Option] (String) */
   var alt: js.UndefOr[java.lang.String] = js.undefined

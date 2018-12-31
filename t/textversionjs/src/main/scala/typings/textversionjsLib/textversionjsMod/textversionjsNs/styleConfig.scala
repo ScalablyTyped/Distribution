@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait styleConfig extends js.Object {
   var headingStyle: js.UndefOr[
     textversionjsLib.textversionjsLibStrings.underline | textversionjsLib.textversionjsLibStrings.linebreak | textversionjsLib.textversionjsLibStrings.hashify

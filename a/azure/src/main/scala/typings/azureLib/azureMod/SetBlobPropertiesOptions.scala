@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SetBlobPropertiesOptions extends LeaseAccessConditionsOptions {
   var cacheControl: js.UndefOr[java.lang.String] = js.undefined
   var contentDisposition: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinkProps extends js.Object {
   var as: js.UndefOr[java.lang.String | nextDashServerLib.routerMod.UrlLike] = js.undefined
   var children: reactLib.reactMod.ReactNs.ReactElement[_]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SSLVerifyObject extends js.Object {
   var acceptedByOpenSSL: scala.Boolean
   var depth: scala.Double

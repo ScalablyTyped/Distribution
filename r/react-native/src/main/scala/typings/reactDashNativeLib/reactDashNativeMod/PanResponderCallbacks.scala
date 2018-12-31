@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PanResponderCallbacks extends js.Object {
   var onMoveShouldSetPanResponder: js.UndefOr[
     js.Function2[

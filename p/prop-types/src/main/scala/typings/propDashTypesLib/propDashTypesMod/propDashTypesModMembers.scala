@@ -12,7 +12,7 @@ object propDashTypesModMembers extends js.Object {
   val array: Requireable[js.Array[js.Any]] = js.native
   val bool: Requireable[scala.Boolean] = js.native
   val element: Requireable[ReactElementLike] = js.native
-  val func: Requireable[js.Function1[/* repeated */js.Any, js.Any]] = js.native
+  val func: Requireable[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
   val node: Requireable[ReactNodeLike] = js.native
   val nominalTypeHack: js.Symbol = js.native
   val number: Requireable[scala.Double] = js.native

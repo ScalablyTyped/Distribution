@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Name extends js.Object {
   /** The department within the organization. Deprecated. */
   var department: js.UndefOr[java.lang.String] = js.undefined
@@ -24,10 +23,10 @@ trait Anon_Name extends js.Object {
   /** The person's job title or role within the organization. */
   var title: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The type of organization. Possible values include, but are not limited to, the following values:
-                   * - "work" - Work.
-                   * - "school" - School.
-                   */
+    * The type of organization. Possible values include, but are not limited to, the following values:
+    * - "work" - Work.
+    * - "school" - School.
+    */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 

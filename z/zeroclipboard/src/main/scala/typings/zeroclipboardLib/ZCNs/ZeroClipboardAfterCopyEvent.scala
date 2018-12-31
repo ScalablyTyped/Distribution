@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ZeroClipboardAfterCopyEvent extends ZeroClipboardEvent {
   var data: Dictionary[java.lang.String]
   var errors: js.Array[_]

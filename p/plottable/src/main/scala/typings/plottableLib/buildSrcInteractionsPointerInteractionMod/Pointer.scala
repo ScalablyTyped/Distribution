@@ -21,46 +21,46 @@ class Pointer ()
   /* private */ def _handlePointerEvent(p: js.Any, insideSVG: js.Any): js.Any = js.native
   /* private */ def _handleTouchEvent(p: js.Any, e: js.Any): js.Any = js.native
   /**
-       * Removes a callback that would be called when the pointer enters the Component.
-       *
-       * @param {PointerCallback} callback
-       * @return {Interactions.Pointer} The calling Pointer Interaction.
-       */
+    * Removes a callback that would be called when the pointer enters the Component.
+    *
+    * @param {PointerCallback} callback
+    * @return {Interactions.Pointer} The calling Pointer Interaction.
+    */
   def offPointerEnter(callback: PointerCallback): this.type = js.native
   /**
-       * Removes a callback that would be called when the pointer exits the Component.
-       *
-       * @param {PointerCallback} callback
-       * @return {Interactions.Pointer} The calling Pointer Interaction.
-       */
+    * Removes a callback that would be called when the pointer exits the Component.
+    *
+    * @param {PointerCallback} callback
+    * @return {Interactions.Pointer} The calling Pointer Interaction.
+    */
   def offPointerExit(callback: PointerCallback): this.type = js.native
   /**
-       * Removes a callback that would be called when the pointer moves within the Component.
-       *
-       * @param {PointerCallback} callback
-       * @return {Interactions.Pointer} The calling Pointer Interaction.
-       */
+    * Removes a callback that would be called when the pointer moves within the Component.
+    *
+    * @param {PointerCallback} callback
+    * @return {Interactions.Pointer} The calling Pointer Interaction.
+    */
   def offPointerMove(callback: PointerCallback): this.type = js.native
   /**
-       * Adds a callback to be called when the pointer enters the Component.
-       *
-       * @param {PointerCallback} callback
-       * @return {Interactions.Pointer} The calling Pointer Interaction.
-       */
+    * Adds a callback to be called when the pointer enters the Component.
+    *
+    * @param {PointerCallback} callback
+    * @return {Interactions.Pointer} The calling Pointer Interaction.
+    */
   def onPointerEnter(callback: PointerCallback): this.type = js.native
   /**
-       * Adds a callback to be called when the pointer exits the Component.
-       *
-       * @param {PointerCallback} callback
-       * @return {Interactions.Pointer} The calling Pointer Interaction.
-       */
+    * Adds a callback to be called when the pointer exits the Component.
+    *
+    * @param {PointerCallback} callback
+    * @return {Interactions.Pointer} The calling Pointer Interaction.
+    */
   def onPointerExit(callback: PointerCallback): this.type = js.native
   /**
-       * Adds a callback to be called when the pointer moves within the Component.
-       *
-       * @param {PointerCallback} callback
-       * @return {Interactions.Pointer} The calling Pointer Interaction.
-       */
+    * Adds a callback to be called when the pointer moves within the Component.
+    *
+    * @param {PointerCallback} callback
+    * @return {Interactions.Pointer} The calling Pointer Interaction.
+    */
   def onPointerMove(callback: PointerCallback): this.type = js.native
 }
 

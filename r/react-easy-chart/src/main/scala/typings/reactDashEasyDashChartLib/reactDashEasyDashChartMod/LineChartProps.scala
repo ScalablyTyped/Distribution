@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LineChartProps extends js.Object {
   /** Whether to show axis labels */
   var axes: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InsertModalHeaderProps extends js.Object {
   /**
   	 * Callback function to call prior to closing the Insert Modal window.

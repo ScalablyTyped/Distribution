@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClampOptions extends js.Object {
   var animate: js.UndefOr[scala.Boolean] = js.undefined
   var clamp: js.UndefOr[scala.Double | java.lang.String] = js.undefined

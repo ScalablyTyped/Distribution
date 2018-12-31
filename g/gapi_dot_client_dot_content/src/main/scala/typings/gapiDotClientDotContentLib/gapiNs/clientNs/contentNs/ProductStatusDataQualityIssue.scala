@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProductStatusDataQualityIssue extends js.Object {
   /** A more detailed error string. */
   var detail: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModularScaleOptions extends js.Object {
   /** The base font size (in pixels) to use for the type scale. Defaults to 16 */
   var base: js.UndefOr[scala.Double] = js.undefined

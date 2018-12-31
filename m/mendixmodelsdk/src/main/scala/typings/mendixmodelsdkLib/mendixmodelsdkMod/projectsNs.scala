@@ -15,8 +15,8 @@ object projectsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://world.mendix.com/display/howto50/Add+documents+to+a+module relevant section in reference guide}
-       */
+    * See: {@link https://world.mendix.com/display/howto50/Add+documents+to+a+module relevant section in reference guide}
+    */
   @js.native
   class Folder protected ()
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.projectsNs.Folder {
@@ -31,8 +31,8 @@ object projectsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/modules relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/modules relevant section in reference guide}
+    */
   @js.native
   class Module protected ()
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.projectsNs.Module {
@@ -53,8 +53,8 @@ object projectsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
+    */
   @js.native
   class Project protected ()
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.projectsNs.Project {
@@ -68,8 +68,8 @@ object projectsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
+    */
   @js.native
   abstract class ProjectDocument protected ()
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.projectsNs.ProjectDocument {
@@ -83,16 +83,16 @@ object projectsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://world.mendix.com/display/howto50/Add+documents+to+a+module relevant section in reference guide}
-       */
+    * See: {@link https://world.mendix.com/display/howto50/Add+documents+to+a+module relevant section in reference guide}
+    */
   @js.native
   object Folder extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenProjectsMod.StructureVersionInfo = js.native
     /**
-             * Creates a new Folder unit in the SDK and on the server.
-             * Expects one argument, the IFolderBase in which this unit is contained.
-             */
+      * Creates a new Folder unit in the SDK and on the server.
+      * Expects one argument, the IFolderBase in which this unit is contained.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenProjectsMod.projectsNs.Folder = js.native
   }
   
@@ -103,16 +103,16 @@ object projectsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/modules relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/modules relevant section in reference guide}
+    */
   @js.native
   object Module extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenProjectsMod.StructureVersionInfo = js.native
     /**
-             * Creates a new Module unit in the SDK and on the server.
-             * Expects one argument, the IProject in which this unit is contained.
-             */
+      * Creates a new Module unit in the SDK and on the server.
+      * Expects one argument, the IProject in which this unit is contained.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject): mendixmodelsdkLib.distGenProjectsMod.projectsNs.Module = js.native
   }
   
@@ -127,22 +127,22 @@ object projectsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenProjectsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new OneTimeConversionMarker instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new OneTimeConversionMarker instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenProjectsMod.projectsNs.OneTimeConversionMarker = js.native
     /**
-             * Creates and returns a new OneTimeConversionMarker instance in the SDK and on the server.
-             * The new OneTimeConversionMarker will be automatically stored in the 'markers' property
-             * of the parent ProjectConversion element passed as argument.
-             */
+      * Creates and returns a new OneTimeConversionMarker instance in the SDK and on the server.
+      * The new OneTimeConversionMarker will be automatically stored in the 'markers' property
+      * of the parent ProjectConversion element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.ProjectConversion): mendixmodelsdkLib.distGenProjectsMod.projectsNs.OneTimeConversionMarker = js.native
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
+    */
   @js.native
   object Project extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -154,15 +154,15 @@ object projectsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenProjectsMod.StructureVersionInfo = js.native
     /**
-             * Creates a new ProjectConversion unit in the SDK and on the server.
-             * Expects one argument, the IProject in which this unit is contained.
-             */
+      * Creates a new ProjectConversion unit in the SDK and on the server.
+      * Expects one argument, the IProject in which this unit is contained.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject): mendixmodelsdkLib.distGenProjectsMod.projectsNs.ProjectConversion = js.native
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
+    */
   @js.native
   object ProjectDocument extends js.Object {
     var structureTypeName: java.lang.String = js.native

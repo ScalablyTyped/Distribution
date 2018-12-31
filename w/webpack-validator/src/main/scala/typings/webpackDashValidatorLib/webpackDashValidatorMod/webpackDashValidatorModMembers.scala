@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object webpackDashValidatorModMembers extends js.Object {
   /**
-       * Validate your webpack configs with joi
-       */
+    * Validate your webpack configs with joi
+    */
   def apply(config: webpackLib.webpackMod.webpackNs.Configuration): webpackLib.webpackMod.webpackNs.Configuration = js.native
   /**
-       * Validate your webpack configs with joi
-       */
+    * Validate your webpack configs with joi
+    */
   def apply(config: webpackLib.webpackMod.webpackNs.Configuration, options: ValidationOptions): webpackLib.webpackMod.webpackNs.Configuration = js.native
 }
 

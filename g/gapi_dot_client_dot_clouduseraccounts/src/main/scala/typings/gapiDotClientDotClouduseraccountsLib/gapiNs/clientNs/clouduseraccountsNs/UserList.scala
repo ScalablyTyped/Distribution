@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserList extends js.Object {
   /** [Output Only] Unique identifier for the resource; defined by the server. */
   var id: js.UndefOr[java.lang.String] = js.undefined

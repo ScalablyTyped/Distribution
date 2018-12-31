@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccordionItemEventArgs extends ProcessingModeEventArgs {
   val htmlElement: js.Object
   val htmlEvent: js.Object

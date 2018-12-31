@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LimitTrack extends js.Object {
   var dest: js.UndefOr[
     js.Function3[/* index */ scala.Double, /* data */ js.Any, /* delay */ scala.Double, _]

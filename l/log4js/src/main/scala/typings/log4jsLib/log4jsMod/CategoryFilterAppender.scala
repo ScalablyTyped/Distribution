@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CategoryFilterAppender extends js.Object {
   // the name of the appender to filter. see https://log4js-node.github.io/log4js-node/layouts.html
   var appender: js.UndefOr[java.lang.String] = js.undefined

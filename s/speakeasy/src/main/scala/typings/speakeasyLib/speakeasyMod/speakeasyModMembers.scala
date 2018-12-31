@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object speakeasyModMembers extends js.Object {
   val counter: Hotp = js.native
-  val generate_key: js.Function1[/* options */ js.UndefOr[GenerateSecretOptions], GeneratedSecret] = js.native
+  val generate_key: speakeasyLib.Anon_Options = js.native
   val generate_key_ascii: js.Function2[
     /* length */ js.UndefOr[scala.Double], 
     /* symbols */ js.UndefOr[scala.Boolean], 

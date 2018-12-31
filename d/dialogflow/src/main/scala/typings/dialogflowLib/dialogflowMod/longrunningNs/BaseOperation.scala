@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseOperation extends js.Object {
   var done: scala.Boolean
   var metadata: js.Any

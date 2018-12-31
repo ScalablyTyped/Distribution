@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** A CompassError object is returned to the onError callback function when an error occurs. */
-
 trait CompassError extends js.Object {
   /**
-       * One of the predefined error codes
-       *     CompassError.COMPASS_INTERNAL_ERR
-       *     CompassError.COMPASS_NOT_SUPPORTED
-       */
+    * One of the predefined error codes
+    *     CompassError.COMPASS_INTERNAL_ERR
+    *     CompassError.COMPASS_NOT_SUPPORTED
+    */
   var code: scala.Double
 }
 

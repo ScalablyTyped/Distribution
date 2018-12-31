@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * @version: Google PubSub 0.18.0
-     */
-
+  * @version: Google PubSub 0.18.0
+  */
 trait GCloudConfiguration extends js.Object {
   var apiEndpoint: js.UndefOr[java.lang.String] = js.undefined
   var autoRetry: js.UndefOr[scala.Boolean] = js.undefined

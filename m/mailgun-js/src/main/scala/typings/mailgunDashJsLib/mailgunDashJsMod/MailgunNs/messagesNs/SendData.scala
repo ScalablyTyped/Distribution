@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SendData extends js.Object {
   var attachment: js.UndefOr[
     mailgunDashJsLib.mailgunDashJsMod.MailgunNs.AttachmentData | js.Array[mailgunDashJsLib.mailgunDashJsMod.MailgunNs.AttachmentData]

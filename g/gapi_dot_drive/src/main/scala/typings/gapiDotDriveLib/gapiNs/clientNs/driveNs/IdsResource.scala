@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IdsResource extends js.Object {
   var ids: js.Array[java.lang.String]
   var kind: gapiDotDriveLib.gapiDotDriveLibStrings.`drive#generatedIds`

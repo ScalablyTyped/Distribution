@@ -12,8 +12,8 @@ class SubSocket () extends Socket {
   def hasSubscriptions(): scala.Boolean = js.native
   def matches(topic: java.lang.String): scala.Boolean = js.native
   /**
-       * @throws {Error}
-       */
+    * @throws {Error}
+    */
   def send(): scala.Unit = js.native
   def subscribe(re: java.lang.String): stdLib.RegExp = js.native
   def subscribe(re: stdLib.RegExp): stdLib.RegExp = js.native

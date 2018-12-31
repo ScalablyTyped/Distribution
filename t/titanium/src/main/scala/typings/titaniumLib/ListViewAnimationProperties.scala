@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * A simple object for specifying the animation properties to use when inserting or deleting
- * sections or cells, or scrolling the list.
- */
-
+  * A simple object for specifying the animation properties to use when inserting or deleting
+  * sections or cells, or scrolling the list.
+  */
 trait ListViewAnimationProperties extends js.Object {
   /**
   	 * Whether this list change should be animated. Ignored if any `animationStyle` value is specified.

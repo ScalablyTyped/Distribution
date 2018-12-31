@@ -12,8 +12,8 @@ trait LocalSidValueBlock
   var isFirstSid: scala.Boolean = js.native
   var valueDec: scala.Double = js.native
   /**
-           * Convertion for the block to JSON object
-           * @returns {*}
+    * Convertion for the block to JSON object
+    * @returns {*}
   	     */
   /* InferMemberOverrides */
   override def toJSON(): js.Any with JsonLocalBaseBlock = js.native

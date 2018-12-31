@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TraceId extends js.Object {
   val flags: scala.Double
   val parentId: java.lang.String

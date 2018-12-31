@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UrlDefinition extends PropertyBaseDefinition {
   var auth: js.UndefOr[postmanDashCollectionLib.Anon_User] = js.undefined
   var hash: js.UndefOr[java.lang.String] = js.undefined

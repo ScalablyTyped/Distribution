@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExportFontInfo extends js.Object {
   var GdiCharSet: js.Any
   var Name: java.lang.String

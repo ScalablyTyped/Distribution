@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClusterPutSettingsParams extends GenericParams {
   var flatSettings: js.UndefOr[scala.Boolean] = js.undefined
   var masterTimeout: js.UndefOr[TimeSpan] = js.undefined

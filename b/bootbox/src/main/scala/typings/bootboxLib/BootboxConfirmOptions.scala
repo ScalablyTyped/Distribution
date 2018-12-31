@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Bootbox options available for confirm modals */
-
 trait BootboxConfirmOptions
   extends BootboxDialogOptions[scala.Boolean] {
   @JSName("buttons")

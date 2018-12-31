@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Argument passed to the write callback when an asynchronous
- * [write](Titanium.Stream.write) operation
- * finishes.
- */
-
+  * Argument passed to the write callback when an asynchronous
+  * [write](Titanium.Stream.write) operation
+  * finishes.
+  */
 trait WriteCallbackArgs extends js.Object {
   /**
   	 * Number of bytes processed, or -1 in the event of an error or end of stream.

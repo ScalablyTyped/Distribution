@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGradientOptions extends js.Object {
   /**
   	 * Color stops object eg. {0:string; 1:string;

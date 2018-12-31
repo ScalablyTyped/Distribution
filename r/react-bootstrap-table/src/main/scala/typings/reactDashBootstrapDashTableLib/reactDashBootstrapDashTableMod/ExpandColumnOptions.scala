@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExpandColumnOptions extends js.Object {
   /**
   	 * set the width of indicator column.

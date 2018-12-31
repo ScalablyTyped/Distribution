@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BrowserPreference extends js.Object {
   var Chrome: js.UndefOr[java.lang.String] = js.undefined
   var Firefox: js.UndefOr[java.lang.String] = js.undefined

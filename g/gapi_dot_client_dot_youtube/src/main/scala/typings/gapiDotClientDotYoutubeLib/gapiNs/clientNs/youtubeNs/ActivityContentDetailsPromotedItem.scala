@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActivityContentDetailsPromotedItem extends js.Object {
   /** The URL the client should fetch to request a promoted item. */
   var adTag: js.UndefOr[java.lang.String] = js.undefined
@@ -22,9 +21,9 @@ trait ActivityContentDetailsPromotedItem extends js.Object {
   /** The URL the client should direct the user to, if the user chooses to visit the advertiser's website. */
   var destinationUrl: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The list of forecasting URLs. The client should ping all of these URLs when a promoted item is not available, to indicate that a promoted item could
-               * have been shown.
-               */
+    * The list of forecasting URLs. The client should ping all of these URLs when a promoted item is not available, to indicate that a promoted item could
+    * have been shown.
+    */
   var forecastingUrl: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** The list of impression URLs. The client should ping all of these URLs to indicate that the user was shown this promoted item. */
   var impressionUrl: js.UndefOr[js.Array[java.lang.String]] = js.undefined

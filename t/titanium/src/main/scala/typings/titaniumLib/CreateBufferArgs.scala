@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Arguments to be passed to createBuffer
- */
-
+  * Arguments to be passed to createBuffer
+  */
 trait CreateBufferArgs extends js.Object {
   /**
   	 * The byte order of this buffer.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServicesResource extends js.Object {
   var versions: VersionsResource
   /** Deletes the specified service and all enclosed versions. */

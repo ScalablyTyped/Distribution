@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReactMCEProps extends js.Object {
   // Non-events
   var config: tinymceLib.tinymceMod.Settings

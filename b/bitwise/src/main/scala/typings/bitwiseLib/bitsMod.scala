@@ -20,10 +20,29 @@ object bitsMod extends js.Object {
   def reduceOr(bits: js.Array[bitwiseLib.typesMod.Bit]): bitwiseLib.typesMod.Bit = js.native
   def reduceXnor(bits: js.Array[bitwiseLib.typesMod.Bit]): bitwiseLib.typesMod.Bit = js.native
   def reduceXor(bits: js.Array[bitwiseLib.typesMod.Bit]): bitwiseLib.typesMod.Bit = js.native
-  def toBoolean(bits: js.Array[_]): js.Array[scala.Boolean] = js.native
-  def toString(bits: js.Array[_]): java.lang.String = js.native
-  def toString(bits: js.Array[_], spacing: scala.Double): java.lang.String = js.native
-  def toString(bits: js.Array[_], spacing: scala.Double, spacer: java.lang.String): java.lang.String = js.native
+  def toBoolean(
+    bits: js.Array[
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _
+    ]
+  ): js.Array[scala.Boolean] = js.native
+  def toString(
+    bits: js.Array[
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _
+    ]
+  ): java.lang.String = js.native
+  def toString(
+    bits: js.Array[
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _
+    ],
+    spacing: scala.Double
+  ): java.lang.String = js.native
+  def toString(
+    bits: js.Array[
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _
+    ],
+    spacing: scala.Double,
+    spacer: java.lang.String
+  ): java.lang.String = js.native
   def xnor(bits1: js.Array[bitwiseLib.typesMod.Bit], bits2: js.Array[bitwiseLib.typesMod.Bit]): js.Array[bitwiseLib.typesMod.Bit] = js.native
   def xor(bits1: js.Array[bitwiseLib.typesMod.Bit], bits2: js.Array[bitwiseLib.typesMod.Bit]): js.Array[bitwiseLib.typesMod.Bit] = js.native
 }

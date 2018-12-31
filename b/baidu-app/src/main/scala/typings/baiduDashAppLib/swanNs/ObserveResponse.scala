@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObserveResponse extends js.Object {
    // 相交区域占目标节点的布局区域的比例
   var boundingClientRect: RectArea

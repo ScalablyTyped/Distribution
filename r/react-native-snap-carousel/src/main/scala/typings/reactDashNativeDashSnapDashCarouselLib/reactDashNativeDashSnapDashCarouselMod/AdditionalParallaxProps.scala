@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AdditionalParallaxProps extends js.Object {
   var carouselRef: js.UndefOr[
     reactLib.reactMod.Component[reactDashNativeLib.reactDashNativeMod.FlatListProps[_], js.Object, _]

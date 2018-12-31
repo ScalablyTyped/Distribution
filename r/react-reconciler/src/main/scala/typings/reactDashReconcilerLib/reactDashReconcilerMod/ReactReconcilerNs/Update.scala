@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // react-reconciler/ReactUpdateQueue
-
 trait Update[State] extends js.Object {
   var callback: js.Function0[_] | scala.Null
   var expirationTime: ExpirationTime

@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.formNs.fieldNs.IField because Would inherit conflicting mutable fields List(statics, uses, mixins, config, extend, inheritableStatics, alias, alternateClassName, requires, singleton, callSuper, self, getInitialConfig, callParent, callOverridden, initConfig, disabled), extjsLib.ExtNs.formNs.ILabelable because Would inherit conflicting mutable fields List(statics, uses, mixins, config, extend, inheritableStatics, alias, alternateClassName, requires, singleton, callSuper, self, getInitialConfig, callParent, callOverridden, initConfig))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.formNs.fieldNs.IField because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, disabled, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses), extjsLib.ExtNs.formNs.ILabelable because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
 trait IField
   extends extjsLib.ExtNs.IComponent {
   /** [Method] A utility for grouping a set of modifications which may trigger value changes into a single transaction to prevent e

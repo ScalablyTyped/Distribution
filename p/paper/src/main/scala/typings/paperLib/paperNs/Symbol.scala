@@ -9,40 +9,31 @@ import scala.scalajs.js.annotation._
 @js.native
 class Symbol protected () extends js.Object {
   /**
-           * Creates a Symbol item.
-           * @param item - the source item which is copied as the definition of the symbol
-           * @param dontCenter [optional] - default: false
-           */
+    * Creates a Symbol item.
+    * @param item - the source item which is copied as the definition of the symbol
+    * @param dontCenter [optional] - default: false
+    */
   def this(item: Item) = this()
-  /**
-           * Creates a Symbol item.
-           * @param item - the source item which is copied as the definition of the symbol
-           * @param dontCenter [optional] - default: false
-           */
   def this(item: Item, dontCenter: scala.Boolean) = this()
   /**
-           * The symbol definition.
-           */
+    * The symbol definition.
+    */
   var definition: Item = js.native
   /**
-           * The project that this symbol belongs to.
-           * Read Only.
-           */
+    * The project that this symbol belongs to.
+    * Read Only.
+    */
   val project: Project = js.native
   /**
-           * Checks whether the symbol’s definition is equal to the supplied symbol.
-           * @param symbol Symbol
-           */
+    * Checks whether the symbol’s definition is equal to the supplied symbol.
+    * @param symbol Symbol
+    */
   def equals(symbol: Symbol): scala.Boolean = js.native
   /**
-           * Places in instance of the symbol in the project.
-           * @param position [optional] - The position of the placed symbol.
-           */
+    * Places in instance of the symbol in the project.
+    * @param position [optional] - The position of the placed symbol.
+    */
   def place(): PlacedSymbol = js.native
-  /**
-           * Places in instance of the symbol in the project.
-           * @param position [optional] - The position of the placed symbol.
-           */
   def place(position: Point): PlacedSymbol = js.native
 }
 

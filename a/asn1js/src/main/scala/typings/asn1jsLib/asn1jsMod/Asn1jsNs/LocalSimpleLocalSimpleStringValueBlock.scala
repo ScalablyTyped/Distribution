@@ -11,8 +11,8 @@ trait LocalSimpleLocalSimpleStringValueBlock
      with LocalBaseBlock {
   var value: java.lang.String = js.native
   /**
-           * Convertion for the block to JSON object
-           * @returns {*}
+    * Convertion for the block to JSON object
+    * @returns {*}
   	     */
   /* InferMemberOverrides */
   override def toJSON(): js.Any with JsonLocalBaseBlock = js.native

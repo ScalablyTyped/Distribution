@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_HighlightLuminosity extends js.Object {
   var highlightLuminosity: js.UndefOr[scala.Double] = js.undefined
   var highlightSegmentOnMouseover: js.UndefOr[scala.Boolean] = js.undefined

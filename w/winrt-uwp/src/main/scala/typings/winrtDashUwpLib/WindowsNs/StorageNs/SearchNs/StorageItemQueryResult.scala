@@ -29,37 +29,37 @@ abstract class StorageItemQueryResult () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[IStorageQueryResultBase, _]
   ): scala.Unit = js.native
   /**
-                   * Modifies query results based on new QueryOptions .
-                   * @param newQueryOptions The new query options.
-                   */
+    * Modifies query results based on new QueryOptions .
+    * @param newQueryOptions The new query options.
+    */
   def applyNewQueryOptions(newQueryOptions: QueryOptions): scala.Unit = js.native
   /**
-                   * Retrieves the index of the item from the query results that most closely matches the specified property value. The property that is matched is determined by the first SortEntry of the QueryOptions.SortOrder list.
-                   * @param value The property value to match when searching the query results. The property to that is used to match this value is the property in the first SortEntry of the QueryOptions.SortOrder list.
-                   * @return When this method completes successfully it returns the index of the matched item in the query results.
-                   */
+    * Retrieves the index of the item from the query results that most closely matches the specified property value. The property that is matched is determined by the first SortEntry of the QueryOptions.SortOrder list.
+    * @param value The property value to match when searching the query results. The property to that is used to match this value is the property in the first SortEntry of the QueryOptions.SortOrder list.
+    * @return When this method completes successfully it returns the index of the matched item in the query results.
+    */
   def findStartIndexAsync(value: js.Any): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Double] = js.native
   /**
-                   * Retrieves the query options used to determine query results.
-                   * @return The query options.
-                   */
+    * Retrieves the query options used to determine query results.
+    * @return The query options.
+    */
   def getCurrentQueryOptions(): QueryOptions = js.native
   /**
-                   * Retrieves the number of items in the set of query results.
-                   * @return When this method completes successfully, it returns the number of items in the location that match the query.
-                   */
+    * Retrieves the number of items in the set of query results.
+    * @return When this method completes successfully, it returns the number of items in the location that match the query.
+    */
   def getItemCountAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Double] = js.native
   /**
-                   * Retrieves a list of all the items (files and folders) in the query results set.
-                   * @return When this method completes successfully, it returns a list (type IVectorView ) of items. Each item is the IStorageItem type and represents a file, folder, or file group.
-                   */
+    * Retrieves a list of all the items (files and folders) in the query results set.
+    * @return When this method completes successfully, it returns a list (type IVectorView ) of items. Each item is the IStorageItem type and represents a file, folder, or file group.
+    */
   def getItemsAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
   /**
-                   * Retrieves a list of items (files and folders) in a specified range.
-                   * @param startIndex The zero-based index of the first item to retrieve. This parameter defaults to 0.
-                   * @param maxNumberOfItems The maximum number of items to retrieve. Use -1 to retrieve all items. If the range contains fewer items than the max number, all items in the range are returned.
-                   * @return When this method completes successfully, it returns a list (type IVectorView ) of items. Each item is the IStorageItem type and represents a file, folder, or file group.
-                   */
+    * Retrieves a list of items (files and folders) in a specified range.
+    * @param startIndex The zero-based index of the first item to retrieve. This parameter defaults to 0.
+    * @param maxNumberOfItems The maximum number of items to retrieve. Use -1 to retrieve all items. If the range contains fewer items than the max number, all items in the range are returned.
+    * @return When this method completes successfully, it returns a list (type IVectorView ) of items. Each item is the IStorageItem type and represents a file, folder, or file group.
+    */
   def getItemsAsync(startIndex: scala.Double, maxNumberOfItems: scala.Double): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
   /** Fires when an item is added to, deleted from, or modified in the folder being queried. This event only fires after GetItemsAsync has been called at least once. */
   def oncontentschanged(ev: js.Any with winrtDashUwpLib.WindowsNs.WinRTEvent[IStorageQueryResultBase]): scala.Unit = js.native

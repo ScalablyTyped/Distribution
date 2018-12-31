@@ -16,13 +16,13 @@ class LocalHexBlock protected ()
 @js.native
 object LocalHexBlock extends js.Object {
   /**
-           * Aux function, need to get a block name. Need to have it here for inhiritence
-           * 
-           * @static
-           * @returns {string}
-           * 
-           * @memberOf LocalHexBlockMixin
-           */
+    * Aux function, need to get a block name. Need to have it here for inhiritence
+    * 
+    * @static
+    * @returns {string}
+    * 
+    * @memberOf LocalHexBlockMixin
+    */
   def blockName(): java.lang.String = js.native
 }
 

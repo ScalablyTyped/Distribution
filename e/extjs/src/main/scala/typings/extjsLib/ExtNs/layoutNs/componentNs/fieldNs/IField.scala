@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IField
   extends extjsLib.ExtNs.layoutNs.componentNs.IAuto {
   /** [Method] Called before any calculation cycles to reset DOM values and prepare for calculation

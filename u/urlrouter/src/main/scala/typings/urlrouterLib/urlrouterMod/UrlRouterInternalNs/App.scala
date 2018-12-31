@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait App extends js.Object {
   def all(urlpattern: java.lang.String, handler: HttpHandler): scala.Unit
   def checkout(urlpattern: java.lang.String, handler: HttpHandler): scala.Unit

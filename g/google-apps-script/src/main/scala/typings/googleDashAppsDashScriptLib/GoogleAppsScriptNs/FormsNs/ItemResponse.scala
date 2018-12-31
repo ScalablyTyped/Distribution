@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ItemResponse extends js.Object {
   def getFeedback(): js.Object
   def getItem(): Item

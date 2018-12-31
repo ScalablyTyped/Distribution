@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DownloadOptions extends js.Object {
   var add_paused: scala.Boolean
   var compact_allocation: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilterXSS extends js.Object {
   def process(html: java.lang.String): java.lang.String
 }

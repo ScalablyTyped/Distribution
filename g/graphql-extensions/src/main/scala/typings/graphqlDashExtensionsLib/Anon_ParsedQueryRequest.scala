@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ParsedQueryRequest[TContext] extends js.Object {
   var context: TContext
   var operationName: js.UndefOr[java.lang.String] = js.undefined
@@ -17,7 +16,7 @@ trait Anon_ParsedQueryRequest[TContext] extends js.Object {
     apolloDashServerDashEnvLib.apolloDashServerDashEnvMod.Request, 
     graphqlDashExtensionsLib.graphqlDashExtensionsLibStrings.url | graphqlDashExtensionsLib.graphqlDashExtensionsLibStrings.method | graphqlDashExtensionsLib.graphqlDashExtensionsLibStrings.headers
   ]
-  var requestContext: js.Any
+  var requestContext: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLRequestContext[TContext]
   var variables: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

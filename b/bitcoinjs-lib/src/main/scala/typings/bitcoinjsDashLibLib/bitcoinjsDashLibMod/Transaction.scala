@@ -31,9 +31,7 @@ class Transaction () extends js.Object {
   def setWitness(index: scala.Double, witness: js.Any, args: js.Any*): scala.Unit = js.native
   /** @since 3.0.0 */
   def toBuffer(): nodeLib.Buffer = js.native
-  /** @since 3.0.0 */
   def toBuffer(buffer: nodeLib.Buffer): nodeLib.Buffer = js.native
-  /** @since 3.0.0 */
   def toBuffer(buffer: nodeLib.Buffer, initialOffset: scala.Double): nodeLib.Buffer = js.native
   def toHex(): java.lang.String = js.native
   /** @since 3.1.0 */

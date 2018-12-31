@@ -8,56 +8,26 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Rellax
   extends /**
-         * Inits and starts the Parallax animations
-         * @param el Single element or string with selector of elements
-         * @param options Options
-         */
+  * Inits and starts the Parallax animations
+  * @param el Single element or string with selector of elements
+  * @param options Options
+  */
 org.scalablytyped.runtime.Instantiable0[RellaxInstance]
-     with /**
-         * Inits and starts the Parallax animations
-         * @param el Single element or string with selector of elements
-         * @param options Options
-         */
-org.scalablytyped.runtime.Instantiable2[
+     with org.scalablytyped.runtime.Instantiable2[
       (/* el */ stdLib.Element) | (/* el */ java.lang.String), 
       /* options */ RellaxOptions, 
       RellaxInstance
     ]
-     with /**
-         * Inits and starts the Parallax animations
-         * @param el Single element or string with selector of elements
-         * @param options Options
-         */
-org.scalablytyped.runtime.Instantiable1[(/* el */ stdLib.Element) | (/* el */ java.lang.String), RellaxInstance] {
+     with org.scalablytyped.runtime.Instantiable1[(/* el */ stdLib.Element) | (/* el */ java.lang.String), RellaxInstance] {
   /**
-           * Inits and starts the Parallax animations
-           * @param el Single element or string with selector of elements
-           * @param options Options
-           */
+    * Inits and starts the Parallax animations
+    * @param el Single element or string with selector of elements
+    * @param options Options
+    */
   def apply(): RellaxInstance = js.native
-  /**
-           * Inits and starts the Parallax animations
-           * @param el Single element or string with selector of elements
-           * @param options Options
-           */
   def apply(el: java.lang.String): RellaxInstance = js.native
-  /**
-           * Inits and starts the Parallax animations
-           * @param el Single element or string with selector of elements
-           * @param options Options
-           */
   def apply(el: java.lang.String, options: RellaxOptions): RellaxInstance = js.native
-  /**
-           * Inits and starts the Parallax animations
-           * @param el Single element or string with selector of elements
-           * @param options Options
-           */
   def apply(el: stdLib.Element): RellaxInstance = js.native
-  /**
-           * Inits and starts the Parallax animations
-           * @param el Single element or string with selector of elements
-           * @param options Options
-           */
   def apply(el: stdLib.Element, options: RellaxOptions): RellaxInstance = js.native
 }
 

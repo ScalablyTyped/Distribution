@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrderCountOptions
   extends shopifyDashPrimeLib.distOptionsBaseMod.DateOptions {
   var financial_status: js.UndefOr[shopifyDashPrimeLib.distEnumsFinancialUnderscoreStatusMod.FinancialStatus] = js.undefined

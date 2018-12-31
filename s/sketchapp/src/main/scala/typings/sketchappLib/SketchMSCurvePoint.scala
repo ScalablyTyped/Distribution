@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSCurvePoint extends js.Object {
   var _class: sketchappLib.sketchappLibStrings.curvePoint
   var cornerRadius: scala.Double

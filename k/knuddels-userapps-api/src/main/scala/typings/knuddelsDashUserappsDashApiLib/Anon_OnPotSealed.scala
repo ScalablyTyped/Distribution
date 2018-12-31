@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnPotSealed extends js.Object {
   var onPotSealed: js.UndefOr[
     js.Function1[

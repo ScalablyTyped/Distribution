@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Only extends js.Object {
   var except: js.UndefOr[
     js.Function0[scala.Unit] | java.lang.String | js.Array[java.lang.String] | angularLib.angularMod.angularNs.IPromise[_]

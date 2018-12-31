@@ -27,9 +27,9 @@ abstract class Gyrometer () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[Gyrometer, GyrometerReadingChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Gets the current gyrometer reading.
-                   * @return This method has no parameters.
-                   */
+    * Gets the current gyrometer reading.
+    * @return This method has no parameters.
+    */
   def getCurrentReading(): GyrometerReading = js.native
   /** Occurs each time the gyrometer reports the current sensor reading. */
   def onreadingchanged(ev: GyrometerReadingChangedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[Gyrometer]): scala.Unit = js.native
@@ -46,9 +46,9 @@ abstract class Gyrometer () extends js.Object {
 @js.native
 object Gyrometer extends js.Object {
   /**
-                   * Returns the default gyrometer.
-                   * @return The default gyrometer or null if no integrated gyrometers are found.
-                   */
+    * Returns the default gyrometer.
+    * @return The default gyrometer or null if no integrated gyrometers are found.
+    */
   def getDefault(): winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.Gyrometer = js.native
 }
 

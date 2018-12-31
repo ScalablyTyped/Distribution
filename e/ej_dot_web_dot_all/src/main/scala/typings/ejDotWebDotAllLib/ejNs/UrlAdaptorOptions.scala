@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UrlAdaptorOptions extends js.Object {
   var accept: js.UndefOr[java.lang.String] = js.undefined
   var batch: js.UndefOr[java.lang.String] = js.undefined

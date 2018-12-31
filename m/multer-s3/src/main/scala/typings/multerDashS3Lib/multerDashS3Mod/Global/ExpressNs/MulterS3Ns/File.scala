@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait File
   extends multerLib.multerMod.Global.ExpressNs.MulterNs.File {
   var acl: java.lang.String

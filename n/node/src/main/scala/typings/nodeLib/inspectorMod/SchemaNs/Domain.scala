@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Description of the protocol domain.
-         */
-
+  * Description of the protocol domain.
+  */
 trait Domain extends js.Object {
   /**
-               * Domain name.
-               */
+    * Domain name.
+    */
   var name: java.lang.String
   /**
-               * Domain version.
-               */
+    * Domain version.
+    */
   var version: java.lang.String
 }
 

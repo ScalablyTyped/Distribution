@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DialogButtonInstance extends js.Object {
   /** Equals to $button.toggleEnable(false); */
   def disable(): scala.Unit

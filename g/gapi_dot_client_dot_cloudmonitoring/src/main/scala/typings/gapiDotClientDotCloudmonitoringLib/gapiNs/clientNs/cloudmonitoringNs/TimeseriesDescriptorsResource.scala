@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimeseriesDescriptorsResource extends js.Object {
   /**
-               * List the descriptors of the time series that match the metric and labels values and that have data points in the interval. Large responses are
-               * paginated; use the nextPageToken returned in the response to request subsequent pages of results by setting the pageToken query parameter to the value
-               * of the nextPageToken.
-               */
+    * List the descriptors of the time series that match the metric and labels values and that have data points in the interval. Large responses are
+    * paginated; use the nextPageToken returned in the response to request subsequent pages of results by setting the pageToken query parameter to the value
+    * of the nextPageToken.
+    */
   def list(request: gapiDotClientDotCloudmonitoringLib.Anon_Window): gapiDotClientLib.gapiNs.clientNs.Request[ListTimeseriesDescriptorsResponse]
 }
 

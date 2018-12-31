@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IUniDiff extends js.Object {
   var hunks: js.Array[IHunk]
   var index: java.lang.String

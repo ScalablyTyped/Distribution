@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CampaignsListResponse extends js.Object {
   /** Campaign collection. */
   var campaigns: js.UndefOr[js.Array[Campaign]] = js.undefined

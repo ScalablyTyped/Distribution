@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPie extends ISeries {
   /** [Config Option] (String) */
   var angleField: js.UndefOr[java.lang.String] = js.undefined

@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Database...
-     */
-
+  * Database...
+  */
 trait IDatabase extends js.Object {
   /**
-           * Is set to true if the database is set by default.
-           */
+    * Is set to true if the database is set by default.
+    */
   var qIsDefault: scala.Boolean
   /**
-           * Name of the database.
-           */
+    * Name of the database.
+    */
   var qName: java.lang.String
 }
 

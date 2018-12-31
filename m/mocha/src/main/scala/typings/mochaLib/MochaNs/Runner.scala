@@ -31,10 +31,10 @@ import scala.scalajs.js.annotation._
 // #region Runner "start" event
 // #region Runner "waiting" event
 /**
-     * Initialize a `Runner` for the given `suite`.
-     *
-     * @see https://mochajs.org/api/Mocha.Runner.html
-     */
+  * Initialize a `Runner` for the given `suite`.
+  *
+  * @see https://mochajs.org/api/Mocha.Runner.html
+  */
 @JSGlobal("Mocha.Runner")
 @js.native
 class Runner protected ()
@@ -64,12 +64,12 @@ class Runner protected ()
   var test: js.UndefOr[Test] = js.native
   var total: scala.Double = js.native
   /**
-           * Cleanly abort execution.
-           *
-           * @see https://mochajs.org/api/Mocha.Runner.html#.Runner#abort
-           */
+    * Cleanly abort execution.
+    *
+    * @see https://mochajs.org/api/Mocha.Runner.html#.Runner#abort
+    */
   def abort(): this.type = js.native
-  def addListener(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): this.type = js.native
+  def addListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_end(event: mochaLib.mochaLibStrings.end, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("addListener")
@@ -98,10 +98,10 @@ class Runner protected ()
   @JSName("addListener")
   def addListener_waiting(event: mochaLib.mochaLibStrings.waiting, listener: js.Function1[/* rootSuite */ Suite, scala.Unit]): this.type = js.native
   /**
-           * Check for global variable leaks.
-           *
-           * @see https://mochajs.org/api/Mocha.Runner.html#checkGlobals
-           */
+    * Check for global variable leaks.
+    *
+    * @see https://mochajs.org/api/Mocha.Runner.html#checkGlobals
+    */
   /* protected */ def checkGlobals(test: Test): scala.Unit = js.native
   def emit(name: java.lang.String, args: js.Any*): scala.Boolean = js.native
   @JSName("emit")
@@ -129,101 +129,101 @@ class Runner protected ()
   @JSName("emit")
   def emit_waiting(name: mochaLib.mochaLibStrings.waiting, rootSuite: Suite): scala.Boolean = js.native
   /**
-           * Fail the given `test`.
-           *
-           * @see https://mochajs.org/api/Mocha.Runner.html#fail
-           */
+    * Fail the given `test`.
+    *
+    * @see https://mochajs.org/api/Mocha.Runner.html#fail
+    */
   /* protected */ def fail(test: Test, err: js.Any): scala.Unit = js.native
   /**
-           * Fail the given `hook` with `err`.
-           *
-           * Hook failures work in the following pattern:
-           * - If bail, then exit
-           * - Failed `before` hook skips all tests in a suite and subsuites,
-           *   but jumps to corresponding `after` hook
-           * - Failed `before each` hook skips remaining tests in a
-           *   suite and jumps to corresponding `after each` hook,
-           *   which is run only once
-           * - Failed `after` hook does not alter
-           *   execution order
-           * - Failed `after each` hook skips remaining tests in a
-           *   suite and subsuites, but executes other `after each`
-           *   hooks
-           *
-           * @see https://mochajs.org/api/Mocha.Runner.html#failHook
-           */
+    * Fail the given `hook` with `err`.
+    *
+    * Hook failures work in the following pattern:
+    * - If bail, then exit
+    * - Failed `before` hook skips all tests in a suite and subsuites,
+    *   but jumps to corresponding `after` hook
+    * - Failed `before each` hook skips remaining tests in a
+    *   suite and jumps to corresponding `after each` hook,
+    *   which is run only once
+    * - Failed `after` hook does not alter
+    *   execution order
+    * - Failed `after each` hook skips remaining tests in a
+    *   suite and subsuites, but executes other `after each`
+    *   hooks
+    *
+    * @see https://mochajs.org/api/Mocha.Runner.html#failHook
+    */
   /* protected */ def failHook(hook: Hook, err: js.Any): scala.Unit = js.native
   /**
-           * Return a list of global properties.
-           *
-           * @see https://mochajs.org/api/Mocha.Runner.html#globalProps
-           */
+    * Return a list of global properties.
+    *
+    * @see https://mochajs.org/api/Mocha.Runner.html#globalProps
+    */
   /* protected */ def globalProps(): js.Array[java.lang.String] = js.native
   /**
-           * Gets the allowed globals.
-           *
-           * @see https://mochajs.org/api/Mocha.Runner.html#.Runner#globals
-           */
+    * Gets the allowed globals.
+    *
+    * @see https://mochajs.org/api/Mocha.Runner.html#.Runner#globals
+    */
   def globals(): js.Array[java.lang.String] = js.native
   /**
-           * Allow the given `arr` of globals.
-           *
-           * @see https://mochajs.org/api/Mocha.Runner.html#.Runner#globals
-           */
+    * Allow the given `arr` of globals.
+    *
+    * @see https://mochajs.org/api/Mocha.Runner.html#.Runner#globals
+    */
   def globals(arr: js.Array[java.lang.String]): this.type = js.native
    // added by reporters
   /**
-           * Run tests with full titles matching `re`. Updates runner.total
-           * with number of tests matched.
-           *
-           * @see https://mochajs.org/api/Mocha.Runner.html#.Runner#grep
-           */
+    * Run tests with full titles matching `re`. Updates runner.total
+    * with number of tests matched.
+    *
+    * @see https://mochajs.org/api/Mocha.Runner.html#.Runner#grep
+    */
   def grep(re: stdLib.RegExp, invert: scala.Boolean): this.type = js.native
   /** @deprecated Use the overload that accepts `Mocha.Suite` instead. */
   def grepTotal(suite: ISuite): scala.Double = js.native
   /**
-           * Returns the number of tests matching the grep search for the
-           * given suite.
-           *
-           * @see https://mochajs.org/api/Mocha.Runner.html#.Runner#grepTotal
-           */
+    * Returns the number of tests matching the grep search for the
+    * given suite.
+    *
+    * @see https://mochajs.org/api/Mocha.Runner.html#.Runner#grepTotal
+    */
   def grepTotal(suite: Suite): scala.Double = js.native
   /**
-           * Run hook `name` callbacks and then invoke `fn()`.
-           *
-           * @see https://mochajs.org/api/Mocha.Runner.html#hook
-           */
+    * Run hook `name` callbacks and then invoke `fn()`.
+    *
+    * @see https://mochajs.org/api/Mocha.Runner.html#hook
+    */
   /* protected */ def hook(name: java.lang.String, fn: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
-           * Run hooks from the bottom up.
-           *
-           * @see https://mochajs.org/api/Mocha.Runner.html#hookDown
-           */
+    * Run hooks from the bottom up.
+    *
+    * @see https://mochajs.org/api/Mocha.Runner.html#hookDown
+    */
   /* protected */ def hookDown(
     name: java.lang.String,
     fn: js.Function2[/* err */ js.UndefOr[js.Any], /* errSuite */ js.UndefOr[Suite], scala.Unit]
   ): scala.Unit = js.native
   /**
-           * Run hooks from the top level down.
-           *
-           * @see https://mochajs.org/api/Mocha.Runner.html#hookUp
-           */
+    * Run hooks from the top level down.
+    *
+    * @see https://mochajs.org/api/Mocha.Runner.html#hookUp
+    */
   /* protected */ def hookUp(
     name: java.lang.String,
     fn: js.Function2[/* err */ js.UndefOr[js.Any], /* errSuite */ js.UndefOr[Suite], scala.Unit]
   ): scala.Unit = js.native
   /**
-           * Run hook `name` for the given array of `suites`
-           * in order, and callback `fn(err, errSuite)`.
-           *
-           * @see https://mochajs.org/api/Mocha.Runner.html#hooks
-           */
+    * Run hook `name` for the given array of `suites`
+    * in order, and callback `fn(err, errSuite)`.
+    *
+    * @see https://mochajs.org/api/Mocha.Runner.html#hooks
+    */
   /* protected */ def hooks(
     name: java.lang.String,
     suites: js.Array[Suite],
     fn: js.Function2[/* err */ js.UndefOr[js.Any], /* errSuite */ js.UndefOr[Suite], scala.Unit]
   ): scala.Unit = js.native
-  def on(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): this.type = js.native
+  def on(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_end(event: mochaLib.mochaLibStrings.end, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
@@ -251,7 +251,7 @@ class Runner protected ()
   def `on_test end`(event: mochaLib.mochaLibStrings.`test end`, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_waiting(event: mochaLib.mochaLibStrings.waiting, listener: js.Function1[/* rootSuite */ Suite, scala.Unit]): this.type = js.native
-  def once(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): this.type = js.native
+  def once(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   @JSName("once")
   def once_end(event: mochaLib.mochaLibStrings.end, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("once")
@@ -280,12 +280,12 @@ class Runner protected ()
   @JSName("once")
   def once_waiting(event: mochaLib.mochaLibStrings.waiting, listener: js.Function1[/* rootSuite */ Suite, scala.Unit]): this.type = js.native
   /**
-           * Return an array of parent Suites from closest to furthest.
-           *
-           * @see https://mochajs.org/api/Mocha.Runner.html#parents
-           */
+    * Return an array of parent Suites from closest to furthest.
+    *
+    * @see https://mochajs.org/api/Mocha.Runner.html#parents
+    */
   /* protected */ def parents(): js.Array[Suite] = js.native
-  def prependListener(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): this.type = js.native
+  def prependListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_end(event: mochaLib.mochaLibStrings.end, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("prependListener")
@@ -313,7 +313,7 @@ class Runner protected ()
   def `prependListener_test end`(event: mochaLib.mochaLibStrings.`test end`, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
   @JSName("prependListener")
   def prependListener_waiting(event: mochaLib.mochaLibStrings.waiting, listener: js.Function1[/* rootSuite */ Suite, scala.Unit]): this.type = js.native
-  def prependOnceListener(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): this.type = js.native
+  def prependOnceListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_end(event: mochaLib.mochaLibStrings.end, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
@@ -341,7 +341,7 @@ class Runner protected ()
   def `prependOnceListener_test end`(event: mochaLib.mochaLibStrings.`test end`, listener: js.Function1[/* test */ Test, scala.Unit]): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_waiting(event: mochaLib.mochaLibStrings.waiting, listener: js.Function1[/* rootSuite */ Suite, scala.Unit]): this.type = js.native
-  def removeListener(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): this.type = js.native
+  def removeListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   @JSName("removeListener")
   def removeListener_end(event: mochaLib.mochaLibStrings.end, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("removeListener")
@@ -370,40 +370,35 @@ class Runner protected ()
   @JSName("removeListener")
   def removeListener_waiting(event: mochaLib.mochaLibStrings.waiting, listener: js.Function1[/* rootSuite */ Suite, scala.Unit]): this.type = js.native
   /**
-           * Run the root suite and invoke `fn(failures)` on completion.
-           *
-           * @see https://mochajs.org/api/Mocha.Runner.html#.Runner#run
-           */
+    * Run the root suite and invoke `fn(failures)` on completion.
+    *
+    * @see https://mochajs.org/api/Mocha.Runner.html#.Runner#run
+    */
   def run(): this.type = js.native
-  /**
-           * Run the root suite and invoke `fn(failures)` on completion.
-           *
-           * @see https://mochajs.org/api/Mocha.Runner.html#.Runner#run
-           */
   def run(fn: js.Function1[/* failures */ scala.Double, scala.Unit]): this.type = js.native
   /**
-           * Run the given `suite` and invoke the callback `fn()` when complete.
-           *
-           * @see https://mochajs.org/api/Mocha.Runner.html#runSuite
-           */
+    * Run the given `suite` and invoke the callback `fn()` when complete.
+    *
+    * @see https://mochajs.org/api/Mocha.Runner.html#runSuite
+    */
   /* protected */ def runSuite(suite: Suite, fn: js.Function1[/* errSuite */ js.UndefOr[Suite], scala.Unit]): scala.Unit = js.native
   /**
-           * Run the current test and callback `fn(err)`.
-           *
-           * @see https://mochajs.org/api/Mocha.Runner.html#runTest
-           */
+    * Run the current test and callback `fn(err)`.
+    *
+    * @see https://mochajs.org/api/Mocha.Runner.html#runTest
+    */
   /* protected */ def runTest(fn: Done): js.Any = js.native
   /**
-           * Run tests in the given `suite` and invoke the callback `fn()` when complete.
-           *
-           * @see https://mochajs.org/api/Mocha.Runner.html#runTests
-           */
+    * Run tests in the given `suite` and invoke the callback `fn()` when complete.
+    *
+    * @see https://mochajs.org/api/Mocha.Runner.html#runTests
+    */
   /* protected */ def runTests(suite: Suite, fn: js.Function1[/* errSuite */ js.UndefOr[Suite], scala.Unit]): scala.Unit = js.native
   /**
-           * Handle uncaught exceptions.
-           *
-           * @see https://mochajs.org/api/Mocha.Runner.html#uncaught
-           */
+    * Handle uncaught exceptions.
+    *
+    * @see https://mochajs.org/api/Mocha.Runner.html#uncaught
+    */
   def uncaught(err: js.Any): scala.Unit = js.native
 }
 
@@ -433,16 +428,16 @@ class Runner protected ()
 // #region Runner "start" event
 // #region Runner "waiting" event
 /**
-     * Initialize a `Runner` for the given `suite`.
-     *
-     * @see https://mochajs.org/api/Mocha.Runner.html
-     */
+  * Initialize a `Runner` for the given `suite`.
+  *
+  * @see https://mochajs.org/api/Mocha.Runner.html
+  */
 @JSGlobal("Mocha.Runner")
 @js.native
 object Runner extends js.Object {
   /**
-           * Wrapper for setImmediate, process.nextTick, or browser polyfill.
-           */
+    * Wrapper for setImmediate, process.nextTick, or browser polyfill.
+    */
   /* protected */ def immediately(callback: js.Function): scala.Unit = js.native
 }
 

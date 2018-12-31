@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebViewApi extends js.Object {
   def createWebView(viewHash: scala.Double): scala.Unit
   def destroyWebView(viewHash: scala.Double): scala.Unit

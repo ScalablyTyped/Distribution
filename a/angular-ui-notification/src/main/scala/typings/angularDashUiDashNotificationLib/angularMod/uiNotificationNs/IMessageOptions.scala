@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMessageOptions extends js.Object {
   var closeOnClick: js.UndefOr[scala.Boolean] = js.undefined
   var delay: js.UndefOr[scala.Double] = js.undefined

@@ -6,19 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * NxSelectionInfo...
-     */
-
+  * NxSelectionInfo...
+  */
 trait INxSelectionInfo extends js.Object {
   /**
-           * Is set to true if the visualization is in selection mode.
-           * For more information about the selection mode
-           */
+    * Is set to true if the visualization is in selection mode.
+    * For more information about the selection mode
+    */
   var qInSelections: scala.Boolean
   /**
-           * Is set to true if the visualization is in selection mode
-           * and if some selections have been made while in selection mode.
-           */
+    * Is set to true if the visualization is in selection mode
+    * and if some selections have been made while in selection mode.
+    */
   var qMadeSelections: scala.Boolean
 }
 

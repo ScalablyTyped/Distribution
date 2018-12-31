@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * FolderItem...
-     */
-
+  * FolderItem...
+  */
 trait IFolderItem extends js.Object {
   /**
-           * Name of the folder item.
-           */
+    * Name of the folder item.
+    */
   var qName: java.lang.String
   /**
-           * Type of the folder item.
-           */
+    * Type of the folder item.
+    */
   var qType: FolderItemType
 }
 

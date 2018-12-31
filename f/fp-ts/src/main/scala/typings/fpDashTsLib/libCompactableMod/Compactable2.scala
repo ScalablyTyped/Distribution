@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Compactable2[F /* <: fpDashTsLib.libHKTMod.URIS2 */] extends js.Object {
   val URI: F
   def compact[L, A](fa: fpDashTsLib.libHKTMod.Type2[F, L, fpDashTsLib.libOptionMod.Option[A]]): fpDashTsLib.libHKTMod.Type2[F, L, A]

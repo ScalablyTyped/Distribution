@@ -84,19 +84,15 @@ object srcCoreModMembers extends js.Object {
     scala.Unit
   ] = js.native
   val `ɵSWITCH_ELEMENT_REF_FACTORY__POST_R3__`: js.Function1[
-    /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibraryScoped(angular,Some(core)), TsIdentModule(Some(angular),List(core, src, linker, element_ref)), TsIdentSimple(ElementRef)))) *//* ElementRefToken */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: typeof @angular/core.@angular/core/src/linker/element_ref.ElementRef */ /* ElementRefToken */ js.Any, 
     atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
   ] = js.native
   val `ɵSWITCH_IVY_ENABLED__POST_R3__`: /* true */ scala.Boolean = js.native
   val `ɵSWITCH_RENDERER2_FACTORY__POST_R3__`: js.Function0[atAngularCoreLib.srcRenderApiMod.Renderer2] = js.native
-  val `ɵSWITCH_TEMPLATE_REF_FACTORY__POST_R3__`: js.Function2[
-    /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibraryScoped(angular,Some(core)), TsIdentModule(Some(angular),List(core, src, linker, template_ref)), TsIdentSimple(TemplateRef)))) *//* TemplateRefToken */ js.Any, 
-    /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibraryScoped(angular,Some(core)), TsIdentModule(Some(angular),List(core, src, linker, element_ref)), TsIdentSimple(ElementRef)))) *//* ElementRefToken */ js.Any, 
-    atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Any] | scala.Null
-  ] = js.native
+  val `ɵSWITCH_TEMPLATE_REF_FACTORY__POST_R3__`: atAngularCoreLib.Anon_TemplateRefToken = js.native
   val `ɵSWITCH_VIEW_CONTAINER_REF_FACTORY__POST_R3__`: js.Function2[
-    /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibraryScoped(angular,Some(core)), TsIdentModule(Some(angular),List(core, src, linker, view_container_ref)), TsIdentSimple(ViewContainerRef)))) *//* ViewContainerRefToken */ js.Any, 
-    /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibraryScoped(angular,Some(core)), TsIdentModule(Some(angular),List(core, src, linker, element_ref)), TsIdentSimple(ElementRef)))) *//* ElementRefToken */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: typeof @angular/core.@angular/core/src/linker/view_container_ref.ViewContainerRef */ /* ViewContainerRefToken */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: typeof @angular/core.@angular/core/src/linker/element_ref.ElementRef */ /* ElementRefToken */ js.Any, 
     atAngularCoreLib.srcLinkerViewUnderscoreContainerUnderscoreRefMod.ViewContainerRef
   ] = js.native
   val ɵWRAP_RENDERER_FACTORY2: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[
@@ -1044,9 +1040,9 @@ object srcCoreModMembers extends js.Object {
     changeDetectionStrategy: atAngularCoreLib.srcChangeUnderscoreDetectionConstantsMod.ChangeDetectionStrategy
   ): scala.Boolean = js.native
   def ɵisListLikeIterable(obj: js.Any): scala.Boolean = js.native
-  def ɵisObservable(obj: js.Any): /* is Observable */scala.Boolean = js.native
-  def ɵisObservable(obj: rxjsLib.rxjsMod.Observable[_]): /* is Observable */scala.Boolean = js.native
-  def ɵisPromise(obj: js.Any): /* is Promise */scala.Boolean = js.native
+  def ɵisObservable(obj: js.Any): /* is rxjs.rxjs.Observable<any> */ scala.Boolean = js.native
+  def ɵisObservable(obj: rxjsLib.rxjsMod.Observable[_]): /* is rxjs.rxjs.Observable<any> */ scala.Boolean = js.native
+  def ɵisPromise(obj: js.Any): /* is std.Promise<any> */ scala.Boolean = js.native
   def ɵlistener(eventName: java.lang.String, listenerFn: js.Function1[/* e */ js.UndefOr[js.Any], _]): scala.Unit = js.native
   def ɵlistener(
     eventName: java.lang.String,
@@ -1057,20 +1053,20 @@ object srcCoreModMembers extends js.Object {
   def ɵloadQueryList[T](queryListIdx: scala.Double): atAngularCoreLib.srcLinkerMod.QueryList[T] = js.native
   def ɵlooseIdentical(a: js.Any, b: js.Any): scala.Boolean = js.native
   def ɵmakeDecorator[T](name: java.lang.String): atAngularCoreLib.Anon_Args = js.native
-  def ɵmakeDecorator[T](name: java.lang.String, props: js.Function1[/* repeated */js.Any, _]): atAngularCoreLib.Anon_Args = js.native
-  def ɵmakeDecorator[T](name: java.lang.String, props: js.Function1[/* repeated */js.Any, _], parentClass: js.Any): atAngularCoreLib.Anon_Args = js.native
+  def ɵmakeDecorator[T](name: java.lang.String, props: js.Function1[/* repeated */ js.Any, _]): atAngularCoreLib.Anon_Args = js.native
+  def ɵmakeDecorator[T](name: java.lang.String, props: js.Function1[/* repeated */ js.Any, _], parentClass: js.Any): atAngularCoreLib.Anon_Args = js.native
   def ɵmakeDecorator[T](
     name: java.lang.String,
-    props: js.Function1[/* repeated */js.Any, _],
+    props: js.Function1[/* repeated */ js.Any, _],
     parentClass: js.Any,
     additionalProcessing: js.Function1[/* type */ atAngularCoreLib.srcTypeMod.Type[T], scala.Unit]
   ): atAngularCoreLib.Anon_Args = js.native
   def ɵmakeDecorator[T](
     name: java.lang.String,
-    props: js.Function1[/* repeated */js.Any, _],
+    props: js.Function1[/* repeated */ js.Any, _],
     parentClass: js.Any,
     additionalProcessing: js.Function1[/* type */ atAngularCoreLib.srcTypeMod.Type[T], scala.Unit],
-    typeFn: js.Function2[/* type */ atAngularCoreLib.srcTypeMod.Type[T], /* repeated */js.Any, scala.Unit]
+    typeFn: js.Function2[/* type */ atAngularCoreLib.srcTypeMod.Type[T], /* repeated */ js.Any, scala.Unit]
   ): atAngularCoreLib.Anon_Args = js.native
   def ɵmarkDirty[T](component: T): scala.Unit = js.native
   def ɵmod(providers: js.Array[atAngularCoreLib.srcViewTypesMod.NgModuleProviderDef]): atAngularCoreLib.srcViewTypesMod.NgModuleDefinition = js.native
@@ -1329,10 +1325,10 @@ object srcCoreModMembers extends js.Object {
     exp8: js.Any,
     thisArg: js.Any
   ): js.Any = js.native
-  def ɵpureFunctionV(slotOffset: scala.Double, pureFn: js.Function1[/* repeated */js.Any, _], exps: js.Array[_]): js.Any = js.native
+  def ɵpureFunctionV(slotOffset: scala.Double, pureFn: js.Function1[/* repeated */ js.Any, _], exps: js.Array[_]): js.Any = js.native
   def ɵpureFunctionV(
     slotOffset: scala.Double,
-    pureFn: js.Function1[/* repeated */js.Any, _],
+    pureFn: js.Function1[/* repeated */ js.Any, _],
     exps: js.Array[_],
     thisArg: js.Any
   ): js.Any = js.native

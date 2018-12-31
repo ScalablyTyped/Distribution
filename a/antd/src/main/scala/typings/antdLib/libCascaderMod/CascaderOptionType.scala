@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CascaderOptionType
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var children: js.UndefOr[js.Array[CascaderOptionType]] = js.undefined

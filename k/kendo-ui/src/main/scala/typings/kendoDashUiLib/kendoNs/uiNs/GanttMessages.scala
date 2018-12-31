@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GanttMessages extends js.Object {
   var actions: js.UndefOr[GanttMessagesActions] = js.undefined
   var cancel: js.UndefOr[java.lang.String] = js.undefined

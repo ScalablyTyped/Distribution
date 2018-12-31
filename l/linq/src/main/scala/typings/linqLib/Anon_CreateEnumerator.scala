@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CreateEnumerator extends js.Object {
   def createEnumerable[T](getEnumerator: js.Function0[linqLib.linqMod.EnumerableNs.IEnumerator[T]]): linqLib.linqMod.EnumerableNs.IEnumerable[T]
   def createEnumerator[T](
@@ -13,7 +12,7 @@ trait Anon_CreateEnumerator extends js.Object {
     tryGetNext: js.Function0[scala.Boolean],
     dispose: js.Function0[scala.Unit]
   ): linqLib.linqMod.EnumerableNs.IEnumerator[T]
-  def createLambda(expression: js.Any): js.Function1[/* repeated */js.Any, _]
+  def createLambda(expression: js.Any): js.Function1[/* repeated */ js.Any, _]
   def extendTo(`type`: js.Any): scala.Unit
 }
 

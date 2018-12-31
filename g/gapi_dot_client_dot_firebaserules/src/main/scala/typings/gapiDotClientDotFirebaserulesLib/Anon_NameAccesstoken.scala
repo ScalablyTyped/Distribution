@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NameAccesstoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -23,14 +22,14 @@ trait Anon_NameAccesstoken extends js.Object {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Tests may either provide `source` or a `Ruleset` resource name.
-                   *
-                   * For tests against `source`, the resource name must refer to the project:
-                   * Format: `projects/{project_id}`
-                   *
-                   * For tests against a `Ruleset`, this must be the `Ruleset` resource name:
-                   * Format: `projects/{project_id}/rulesets/{ruleset_id}`
-                   */
+    * Tests may either provide `source` or a `Ruleset` resource name.
+    *
+    * For tests against `source`, the resource name must refer to the project:
+    * Format: `projects/{project_id}`
+    *
+    * For tests against a `Ruleset`, this must be the `Ruleset` resource name:
+    * Format: `projects/{project_id}/rulesets/{ruleset_id}`
+    */
   var name: java.lang.String
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined

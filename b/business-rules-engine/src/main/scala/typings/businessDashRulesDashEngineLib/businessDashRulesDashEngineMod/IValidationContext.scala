@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IValidationContext[T] extends js.Object {
   var Data: T
   var Key: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FixedToolbarOptions extends js.Object {
   var disablePageZoom: js.UndefOr[scala.Boolean] = js.undefined
   var fullscreen: js.UndefOr[scala.Boolean] = js.undefined

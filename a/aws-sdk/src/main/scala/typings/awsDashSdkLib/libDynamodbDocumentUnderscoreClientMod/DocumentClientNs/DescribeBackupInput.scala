@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DescribeBackupInput extends js.Object {
   /**
-       * The ARN associated with the backup.
-       */
+    * The ARN associated with the backup.
+    */
   var BackupArn: BackupArn
 }
 

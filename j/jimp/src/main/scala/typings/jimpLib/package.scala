@@ -9,9 +9,9 @@ package object jimpLib {
   type ColorActionName = jimpLib.jimpLibStrings.mix | jimpLib.jimpLibStrings.tint | jimpLib.jimpLibStrings.shade | jimpLib.jimpLibStrings.xor | jimpLib.jimpLibStrings.red | jimpLib.jimpLibStrings.green | jimpLib.jimpLibStrings.blue | jimpLib.jimpLibStrings.hue
   type GenericCallback[T, U, TThis] = js.ThisFunction2[/* this */ TThis, /* err */ nodeLib.Error | scala.Null, /* value */ T, U]
   type ImageCallback[U] = js.ThisFunction3[
-    /* this */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Jimp */ /* this */ js.Any, 
     /* err */ nodeLib.Error | scala.Null, 
-    /* value */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Jimp */ /* value */ js.Any, 
     /* coords */ Anon_Y, 
     U
   ]

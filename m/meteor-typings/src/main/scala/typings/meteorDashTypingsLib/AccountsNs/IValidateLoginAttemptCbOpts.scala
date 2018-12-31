@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IValidateLoginAttemptCbOpts extends js.Object {
   var allowed: scala.Boolean
   var connection: meteorDashTypingsLib.MeteorNs.Connection

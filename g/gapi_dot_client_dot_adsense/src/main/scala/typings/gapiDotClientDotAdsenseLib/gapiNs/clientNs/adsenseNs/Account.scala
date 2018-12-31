@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Account extends js.Object {
   var creation_time: js.UndefOr[java.lang.String] = js.undefined
   /** Unique identifier of this account. */

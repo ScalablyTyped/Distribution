@@ -12,9 +12,9 @@ abstract class PerceptionDepthFrameArrivedEventArgs () extends js.Object {
   /** Gets the relative time of this frame. */
   var relativeTime: scala.Double = js.native
   /**
-                   * Attempts to open the depth frame that has arrived. Existing frames should be closed before opening new frames. If an app has three or more frames still open when this method is called, TryOpenFrame will fail.
-                   * @return If the attempt is successful, this method returns the newly-arrived depth frame. If the attempt is unsuccessful, this value is unchanged.
-                   */
+    * Attempts to open the depth frame that has arrived. Existing frames should be closed before opening new frames. If an app has three or more frames still open when this method is called, TryOpenFrame will fail.
+    * @return If the attempt is successful, this method returns the newly-arrived depth frame. If the attempt is unsuccessful, this value is unchanged.
+    */
   def tryOpenFrame(): PerceptionDepthFrame = js.native
 }
 

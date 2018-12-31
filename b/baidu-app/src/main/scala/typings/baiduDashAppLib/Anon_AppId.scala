@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AppId extends js.Object {
   /* 来源小程序或公众号或App的 appId，详见下方说明 */
   var appId: java.lang.String

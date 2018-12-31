@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("chartmogul-node", "Transaction")
 @js.native
 object TransactionNs extends js.Object {
-  
   trait Transaction extends js.Object {
     var date: java.lang.String
     var external_id: js.UndefOr[java.lang.String] = js.undefined

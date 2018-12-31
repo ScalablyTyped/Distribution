@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CategoryId extends js.Object {
   var badgeUrl: js.UndefOr[java.lang.String] = js.undefined
   var categoryId: js.UndefOr[java.lang.String] = js.undefined

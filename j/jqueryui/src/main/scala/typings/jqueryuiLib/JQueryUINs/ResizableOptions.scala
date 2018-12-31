@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Resizable //////////////////////////////////////////////////
-
 trait ResizableOptions extends ResizableEvents {
   var alsoResize: js.UndefOr[js.Any] = js.undefined
    // Selector, JQuery or Element

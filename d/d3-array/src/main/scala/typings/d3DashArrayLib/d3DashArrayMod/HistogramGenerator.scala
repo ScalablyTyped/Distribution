@@ -20,14 +20,14 @@ trait HistogramGenerator[Datum, Value /* <: js.UndefOr[scala.Double | stdLib.Dat
   ): this.type = js.native
   def domain(domain: js.Tuple2[Value, Value]): this.type = js.native
   /**
-       * Set the array of values to be used as thresholds in determining the bins.
-       *
-       * Any threshold values outside the domain are ignored. The first bin.x0 is always equal to the minimum domain value,
-       * and the last bin.x1 is always equal to the maximum domain value.
-       *
-       * @param thresholds Array of threshold values used for binning. The elements must
-       * be of the same type as the materialized values of the histogram.
-       */
+    * Set the array of values to be used as thresholds in determining the bins.
+    *
+    * Any threshold values outside the domain are ignored. The first bin.x0 is always equal to the minimum domain value,
+    * and the last bin.x1 is always equal to the maximum domain value.
+    *
+    * @param thresholds Array of threshold values used for binning. The elements must
+    * be of the same type as the materialized values of the histogram.
+    */
   def thresholds(thresholds: stdLib.ArrayLike[Value]): this.type = js.native
   def value(): js.Function3[/* d */ Datum, /* i */ scala.Double, /* data */ stdLib.ArrayLike[Datum], Value] = js.native
   def value(

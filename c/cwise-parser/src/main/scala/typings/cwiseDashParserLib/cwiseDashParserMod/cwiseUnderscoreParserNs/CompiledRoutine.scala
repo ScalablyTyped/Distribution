@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompiledRoutine extends js.Object {
   var args: js.Array[CompiledArgument]
   var body: java.lang.String

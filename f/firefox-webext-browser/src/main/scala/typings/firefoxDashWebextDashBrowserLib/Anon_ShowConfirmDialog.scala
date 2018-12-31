@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ShowConfirmDialog extends js.Object {
   /** The message to display to a user when being asked to confirm removal of the extension. */
   var dialogMessage: js.UndefOr[java.lang.String] = js.undefined

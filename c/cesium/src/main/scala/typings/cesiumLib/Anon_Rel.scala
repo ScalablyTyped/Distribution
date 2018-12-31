@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Rel extends js.Object {
   var href: java.lang.String
   var hreflang: java.lang.String

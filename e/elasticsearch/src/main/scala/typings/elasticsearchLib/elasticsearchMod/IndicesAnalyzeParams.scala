@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IndicesAnalyzeParams extends GenericParams {
   var analyzer: js.UndefOr[java.lang.String] = js.undefined
   var attributes: js.UndefOr[NameList] = js.undefined

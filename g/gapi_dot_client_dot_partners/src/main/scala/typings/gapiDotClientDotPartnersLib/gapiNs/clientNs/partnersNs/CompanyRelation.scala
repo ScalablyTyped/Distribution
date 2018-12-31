@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompanyRelation extends js.Object {
   /** The primary address for this company. */
   var address: js.UndefOr[java.lang.String] = js.undefined
@@ -14,19 +13,19 @@ trait CompanyRelation extends js.Object {
   /** Indicates if the user is an admin for this company. */
   var companyAdmin: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               * The ID of the company. There may be no id if this is a
-               * pending company.5
-               */
+    * The ID of the company. There may be no id if this is a
+    * pending company.5
+    */
   var companyId: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The timestamp of when affiliation was requested.
-               * @OutputOnly
-               */
+    * The timestamp of when affiliation was requested.
+    * @OutputOnly
+    */
   var creationTime: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The internal company ID.
-               * Only available for a whitelisted set of api clients.
-               */
+    * The internal company ID.
+    * Only available for a whitelisted set of api clients.
+    */
   var internalCompanyId: js.UndefOr[java.lang.String] = js.undefined
   /** The flag that indicates if the company is pending verification. */
   var isPending: js.UndefOr[scala.Boolean] = js.undefined
@@ -45,9 +44,9 @@ trait CompanyRelation extends js.Object {
   /** The primary language code of the company. */
   var primaryLanguageCode: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The timestamp when the user was approved.
-               * @OutputOnly
-               */
+    * The timestamp when the user was approved.
+    * @OutputOnly
+    */
   var resolvedTimestamp: js.UndefOr[java.lang.String] = js.undefined
   /** The segment the company is classified as. */
   var segment: js.UndefOr[js.Array[java.lang.String]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDateTimeFormatter extends js.Object {
   var calendar: java.lang.String
   var clock: java.lang.String

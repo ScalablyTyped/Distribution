@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditorSettings extends js.Object {
   var baseIndentSize: js.UndefOr[scala.Double] = js.undefined
   var convertTabsToSpaces: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartProps[T] extends js.Object {
   var animate: js.UndefOr[scala.Boolean] = js.undefined
   var animationDuration: js.UndefOr[scala.Double] = js.undefined

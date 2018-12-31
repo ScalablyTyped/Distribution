@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion
 //#region 获取服务器时间 https://docs.alipay.com/mini/api/get-server-time
-
 trait GetServerTimeOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")

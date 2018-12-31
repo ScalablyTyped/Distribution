@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CollectionConsistencyTokenMaxResults extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -22,9 +21,9 @@ trait Anon_CollectionConsistencyTokenMaxResults extends js.Object {
   /** The ID of the leaderboard. */
   var leaderboardId: java.lang.String
   /**
-                   * The maximum number of leaderboard scores to return in the response. For any response, the actual number of leaderboard scores returned may be less than
-                   * the specified maxResults.
-                   */
+    * The maximum number of leaderboard scores to return in the response. For any response, the actual number of leaderboard scores returned may be less than
+    * the specified maxResults.
+    */
   var maxResults: js.UndefOr[scala.Double] = js.undefined
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
@@ -33,14 +32,14 @@ trait Anon_CollectionConsistencyTokenMaxResults extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The preferred number of scores to return above the player's score. More scores may be returned if the player is at the bottom of the leaderboard; fewer
-                   * may be returned if the player is at the top. Must be less than or equal to maxResults.
-                   */
+    * The preferred number of scores to return above the player's score. More scores may be returned if the player is at the bottom of the leaderboard; fewer
+    * may be returned if the player is at the top. Must be less than or equal to maxResults.
+    */
   var resultsAbove: js.UndefOr[scala.Double] = js.undefined
   /** True if the top scores should be returned when the player is not in the leaderboard. Defaults to true. */
   var returnTopIfAbsent: js.UndefOr[scala.Boolean] = js.undefined

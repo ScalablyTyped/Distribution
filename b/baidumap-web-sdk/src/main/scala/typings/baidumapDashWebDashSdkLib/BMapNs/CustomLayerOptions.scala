@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomLayerOptions extends js.Object {
   var databoxId: js.UndefOr[java.lang.String] = js.undefined
   var filter: js.UndefOr[java.lang.String] = js.undefined

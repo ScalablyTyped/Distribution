@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnClear extends js.Object {
   var autocomplete: java.lang.String
   var lang: Anon_Cancel

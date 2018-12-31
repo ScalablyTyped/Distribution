@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Services extends js.Object {
   var alternateErrorPagesEnabled: chromeLib.chromeNs.typesNs.ChromeSetting
   var autofillEnabled: chromeLib.chromeNs.typesNs.ChromeSetting

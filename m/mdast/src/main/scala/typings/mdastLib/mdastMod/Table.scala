@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Table extends Parent {
   var align: js.UndefOr[js.Array[AlignType]] = js.undefined
   @JSName("children")

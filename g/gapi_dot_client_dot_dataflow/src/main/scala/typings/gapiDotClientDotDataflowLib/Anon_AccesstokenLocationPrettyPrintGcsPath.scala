@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenLocationPrettyPrintGcsPath extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -21,10 +20,10 @@ trait Anon_AccesstokenLocationPrettyPrintGcsPath extends js.Object {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Required. A Cloud Storage path to the template from which to
-                   * create the job.
-                   * Must be a valid Cloud Storage URL, beginning with `gs://`.
-                   */
+    * Required. A Cloud Storage path to the template from which to
+    * create the job.
+    * Must be a valid Cloud Storage URL, beginning with `gs://`.
+    */
   var gcsPath: js.UndefOr[java.lang.String] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined

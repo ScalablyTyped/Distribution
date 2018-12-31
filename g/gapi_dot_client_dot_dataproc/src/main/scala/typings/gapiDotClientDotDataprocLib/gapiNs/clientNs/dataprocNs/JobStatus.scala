@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JobStatus extends js.Object {
   /** Output-only. Optional job state details, such as an error description if the state is <code>ERROR</code>. */
   var details: js.UndefOr[java.lang.String] = js.undefined

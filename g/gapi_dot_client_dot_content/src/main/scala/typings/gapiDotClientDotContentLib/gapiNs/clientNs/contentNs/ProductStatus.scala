@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProductStatus extends js.Object {
   /** Date on which the item has been created, in ISO 8601 format. */
   var creationDate: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Operation extends js.Object {
   var extensions: stdLib.Record[java.lang.String, _]
   var operationName: java.lang.String

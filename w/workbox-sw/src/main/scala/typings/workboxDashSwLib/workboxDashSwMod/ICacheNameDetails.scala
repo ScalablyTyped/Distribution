@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICacheNameDetails extends js.Object {
   var googleAnalytics: java.lang.String
   var precache: java.lang.String

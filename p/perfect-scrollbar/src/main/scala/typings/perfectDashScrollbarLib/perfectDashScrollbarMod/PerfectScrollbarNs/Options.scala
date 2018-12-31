@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var handlers: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var maxScrollbarLength: js.UndefOr[scala.Double] = js.undefined

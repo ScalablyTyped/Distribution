@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "DocumentPicker")
 @js.native
 object DocumentPickerNs extends js.Object {
-  
   trait Options extends js.Object {
     var `type`: js.UndefOr[java.lang.String] = js.undefined
   }

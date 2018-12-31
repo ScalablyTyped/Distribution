@@ -12,15 +12,15 @@ sealed trait OpenCardMode extends js.Object
 @js.native
 object OpenCardMode extends js.Object {
   /**
-       * Open card by hot key
-       */
+    * Open card by hot key
+    */
   @js.native
   sealed trait hotKey
     extends officeDashUiDashFabricDashReactLib.libComponentsHoverCardHoverCardDotTypesMod.OpenCardMode
   
   /**
-       * Open card by hover
-       */
+    * Open card by hover
+    */
   @js.native
   sealed trait hover
     extends officeDashUiDashFabricDashReactLib.libComponentsHoverCardHoverCardDotTypesMod.OpenCardMode

@@ -9,17 +9,14 @@ import scala.scalajs.js.annotation._
 trait QFrame extends js.Object {
   // Create an element and append it to the frame's body. Throws an exception unless exactly one element is created. (But that one element may contain children.)
   def add(html: java.lang.String): QElement = js.native
-  // Create an element and append it to the frame's body. Throws an exception unless exactly one element is created. (But that one element may contain children.)
   def add(html: java.lang.String, nickname: java.lang.String): QElement = js.native
   // Retrieves the frame's body element.
   def body(): QElement = js.native
   // Retrieve an element matching a selector. Throws an exception unless exactly one matching element is found
   def get(selector: java.lang.String): QElement = js.native
-  // Retrieve an element matching a selector. Throws an exception unless exactly one matching element is found
   def get(selector: java.lang.String, nickname: java.lang.String): QElement = js.native
   // Retrieve a list of elements matching a selector. If you want to ensure that exactly one element is retrieved, use frame.get() instead.
   def getAll(selector: java.lang.String): QElementList = js.native
-  // Retrieve a list of elements matching a selector. If you want to ensure that exactly one element is retrieved, use frame.get() instead.
   def getAll(selector: java.lang.String, nickname: java.lang.String): QElementList = js.native
   // Determine the (x, y) coordinate of the top-left corner of the frame. This uses pageXOffset and pageYOffset under the covers. (On IE 8, it uses scrollLeft and scrollTop.)
   def getRawScrollPosition(x: scala.Double, y: scala.Double): js.Object = js.native

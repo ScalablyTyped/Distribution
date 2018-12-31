@@ -22,7 +22,6 @@ import scala.scalajs.js.annotation._
 // text is contained in a shape without a parent placeholder, unsetting these
 // fields will revert the style to a value matching the defaults in the Slides
 // editor.
-
 trait TextStyle extends js.Object {
   // The background color of the text. If set, the color is either opaque or
   // transparent, depending on if the `opaque_color` field in it is set.

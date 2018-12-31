@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // http://docs.couchdb.org/en/latest/api/ddoc/views.html#get--db-_design-ddoc-_view-view
-
 trait DocumentViewParams extends js.Object {
   // Include encoding information in attachment stubs if include_docs is true and the particular attachment is
   // compressed. Ignored if include_docs isn’t true. Default is false.

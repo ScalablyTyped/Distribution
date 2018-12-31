@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CrossSlideThresholds extends js.Object {
   var rearrangeStart: scala.Double
   var selectionStart: scala.Double

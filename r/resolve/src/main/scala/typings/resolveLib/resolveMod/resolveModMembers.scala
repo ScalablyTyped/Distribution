@@ -15,19 +15,19 @@ object resolveModMembers extends js.Object {
     java.lang.String
   ] = js.native
   /**
-   * Asynchronously resolve the module path string id into cb(err, res [, pkg]), where pkg (if defined) is the data from package.json
-   *
-   * @param id Identifier to resolve
-   * @param callback
-   */
+    * Asynchronously resolve the module path string id into cb(err, res [, pkg]), where pkg (if defined) is the data from package.json
+    *
+    * @param id Identifier to resolve
+    * @param callback
+    */
   def apply(id: java.lang.String, cb: resolveLib.resolveCallback): scala.Unit = js.native
   /**
-   * Asynchronously resolve the module path string id into cb(err, res [, pkg]), where pkg (if defined) is the data from package.json
-   *
-   * @param id Identifier to resolve
-   * @param options Options to use for resolving, optional.
-   * @param callback
-   */
+    * Asynchronously resolve the module path string id into cb(err, res [, pkg]), where pkg (if defined) is the data from package.json
+    *
+    * @param id Identifier to resolve
+    * @param options Options to use for resolving, optional.
+    * @param callback
+    */
   def apply(
     id: java.lang.String,
     opts: resolveLib.resolveMod.resolveNs.AsyncOpts,

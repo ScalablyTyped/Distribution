@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SettableMetadata extends js.Object {
   var cacheControl: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var contentDisposition: js.UndefOr[java.lang.String | scala.Null] = js.undefined

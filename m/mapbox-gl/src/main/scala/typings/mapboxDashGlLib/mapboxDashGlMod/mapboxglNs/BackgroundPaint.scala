@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BackgroundPaint extends js.Object {
   var `background-color`: js.UndefOr[java.lang.String | Expression] = js.undefined
   var `background-color-transition`: js.UndefOr[Transition] = js.undefined

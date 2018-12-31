@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IconProps extends js.Object {
   var accessibilityLabel: java.lang.String
   var color: js.UndefOr[

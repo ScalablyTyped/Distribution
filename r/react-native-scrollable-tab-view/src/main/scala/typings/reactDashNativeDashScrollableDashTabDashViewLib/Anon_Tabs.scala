@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Tabs extends js.Object {
   var activeTab: js.UndefOr[scala.Double] = js.undefined
   var containerWidth: js.UndefOr[scala.Double] = js.undefined

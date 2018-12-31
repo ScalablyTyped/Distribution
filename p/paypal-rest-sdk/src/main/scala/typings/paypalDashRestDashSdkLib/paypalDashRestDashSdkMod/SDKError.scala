@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SDKError extends js.Object {
   var httpStatusCode: scala.Double
   var message: java.lang.String

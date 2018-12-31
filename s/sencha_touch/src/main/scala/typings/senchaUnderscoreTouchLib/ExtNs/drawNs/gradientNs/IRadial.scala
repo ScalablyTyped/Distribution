@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRadial extends IGradient {
   /** [Config Option] (Object) */
   var end: js.UndefOr[js.Any] = js.undefined

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Data object passed to FancytreeNode() constructor. Note: typically these attributes are accessed by meber methods, e.g. `node.isExpanded()` and `node.setSelected(false)`.  */
-
 trait NodeData extends js.Object {
   /** (initialization only, but will not be stored with the node). */
   var active: js.UndefOr[scala.Boolean] = js.undefined

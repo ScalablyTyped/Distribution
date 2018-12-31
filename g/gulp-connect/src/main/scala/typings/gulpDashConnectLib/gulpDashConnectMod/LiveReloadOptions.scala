@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LiveReloadOptions extends js.Object {
   /** Hostname to bind live reload server to */
   var hostname: js.UndefOr[java.lang.String] = js.undefined

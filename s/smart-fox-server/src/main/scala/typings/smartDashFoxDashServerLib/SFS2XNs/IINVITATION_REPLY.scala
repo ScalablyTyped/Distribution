@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IINVITATION_REPLY extends js.Object {
   var data: js.Object
   var invitee: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSUser

@@ -12,22 +12,22 @@ sealed trait GitVersionOptions extends js.Object
 @js.native
 object GitVersionOptions extends js.Object {
   /**
-       * First parent of commit (HEAD^)
-       */
+    * First parent of commit (HEAD^)
+    */
   @js.native
   sealed trait FirstParent
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitVersionOptions
   
   /**
-       * Not specified
-       */
+    * Not specified
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitVersionOptions
   
   /**
-       * Commit that changed item prior to the current version
-       */
+    * Commit that changed item prior to the current version
+    */
   @js.native
   sealed trait PreviousChange
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitVersionOptions

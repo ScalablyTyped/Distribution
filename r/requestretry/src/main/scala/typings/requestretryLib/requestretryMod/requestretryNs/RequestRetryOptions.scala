@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestRetryOptions
   extends requestLib.requestMod.requestNs.CoreOptions {
   var maxAttempts: js.UndefOr[scala.Double] = js.undefined

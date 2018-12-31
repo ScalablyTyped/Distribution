@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Trophy extends js.Object {
   var data: java.lang.String
   var data_link: java.lang.String

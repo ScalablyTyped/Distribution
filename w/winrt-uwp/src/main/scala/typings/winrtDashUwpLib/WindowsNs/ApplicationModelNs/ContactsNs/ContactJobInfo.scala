@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents job info for a contact. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactJobInfo")
 @js.native
+/** Initializes a new instance of a ContactJobInfo class. */
 class ContactJobInfo () extends js.Object {
   /** Gets and sets the company address of the job info for a contact. The maximum string length for the company address is 1024 characters. */
   var companyAddress: java.lang.String = js.native

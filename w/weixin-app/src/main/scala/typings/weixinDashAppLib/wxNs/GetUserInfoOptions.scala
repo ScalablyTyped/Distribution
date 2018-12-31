@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetUserInfoOptions
   extends BaseOptions[js.Any, js.Any] {
    // 是否带上登录态信息

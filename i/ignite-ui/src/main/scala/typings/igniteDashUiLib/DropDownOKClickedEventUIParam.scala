@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DropDownOKClickedEventUIParam extends js.Object {
   /**
   	 * Gets the column key for which OK button is clicked.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PropsType extends js.Object {
   var clearIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var closeIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined

@@ -27,7 +27,6 @@ trait MediaQueryList extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, _],
     options: AddEventListenerOptions
   ): scala.Unit = js.native
-  /** @deprecated */
   def addListener(): scala.Unit = js.native
   /** @deprecated */
   def addListener(listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, _]): scala.Unit = js.native
@@ -48,7 +47,6 @@ trait MediaQueryList extends EventTarget {
     listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, _],
     options: EventListenerOptions
   ): scala.Unit = js.native
-  /** @deprecated */
   def removeListener(): scala.Unit = js.native
   /** @deprecated */
   def removeListener(listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaQueryListEvent, _]): scala.Unit = js.native

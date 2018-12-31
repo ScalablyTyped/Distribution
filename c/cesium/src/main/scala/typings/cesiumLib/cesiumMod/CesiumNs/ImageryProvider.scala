@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageryProvider extends js.Object {
   var credit: Credit
   var defaultAlpha: scala.Double

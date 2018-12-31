@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClientData extends js.Object {
   var challenge: java.lang.String
   var extensions: js.UndefOr[WebAuthnExtensions] = js.undefined

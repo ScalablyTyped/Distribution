@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 object babylonjsLibMembers extends js.Object {
   var DracoDecoderModule: js.Any = js.native
   /**
-   * MediaRecoreder object available in some browsers.
-   */
+    * MediaRecoreder object available in some browsers.
+    */
   var MediaRecorder: MediaRecorderConstructor = js.native
   var WebAssembly: js.Any = js.native
   val safePostMessage: js.Any = js.native

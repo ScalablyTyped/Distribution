@@ -955,49 +955,31 @@ object AndroidNsMembers extends js.Object {
   		 * Creates and returns an instance of <Titanium.Android.BigPictureStyle>.
   		 */
   def createBigPictureStyle(): BigPictureStyle = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.Android.BigPictureStyle>.
-  		 */
   def createBigPictureStyle(parameters: js.Any): BigPictureStyle = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Android.BigTextStyle>.
   		 */
   def createBigTextStyle(): BigTextStyle = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.Android.BigTextStyle>.
-  		 */
   def createBigTextStyle(parameters: js.Any): BigTextStyle = js.native
   /**
   		 * Create an `Intent` to be used in a broadcast.
   		 */
   def createBroadcastIntent(): Intent = js.native
-  /**
-  		 * Create an `Intent` to be used in a broadcast.
-  		 */
   def createBroadcastIntent(parameters: js.Any): Intent = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Android.BroadcastReceiver>.
   		 */
   def createBroadcastReceiver(): BroadcastReceiver = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.Android.BroadcastReceiver>.
-  		 */
   def createBroadcastReceiver(parameters: js.Any): BroadcastReceiver = js.native
   /**
   		 * Creates a [DrawerLayout](Titanium.UI.Android.DrawerLayout).
   		 */
   def createDrawerLayout(): titaniumLib.TitaniumNs.UINs.AndroidNs.DrawerLayout = js.native
-  /**
-  		 * Creates a [DrawerLayout](Titanium.UI.Android.DrawerLayout).
-  		 */
   def createDrawerLayout(parameters: js.Any): titaniumLib.TitaniumNs.UINs.AndroidNs.DrawerLayout = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Android.Intent>.
   		 */
   def createIntent(): Intent = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.Android.Intent>.
-  		 */
   def createIntent(parameters: js.Any): Intent = js.native
   /**
   		 * Creates an activity chooser intent, used to allow the user to select a target activity
@@ -1008,43 +990,27 @@ object AndroidNsMembers extends js.Object {
   		 * Creates and returns an instance of <Titanium.Android.Notification>.
   		 */
   def createNotification(): Notification = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.Android.Notification>.
-  		 */
   def createNotification(parameters: js.Any): Notification = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Android.NotificationChannel>.
   		 */
   def createNotificationChannel(): NotificationChannel = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.Android.NotificationChannel>.
-  		 */
   def createNotificationChannel(parameters: js.Any): NotificationChannel = js.native
   /**
   		 * Creates a [PendingIntent](Titanium.Android.PendingIntent) to be used inside a
   		 * [Notification](Titanium.Android.Notification).
   		 */
   def createPendingIntent(): PendingIntent = js.native
-  /**
-  		 * Creates a [PendingIntent](Titanium.Android.PendingIntent) to be used inside a
-  		 * [Notification](Titanium.Android.Notification).
-  		 */
   def createPendingIntent(parameters: js.Any): PendingIntent = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Android.QuickSettingsService>.
   		 */
   def createQuickSettingsService(): QuickSettingsService = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.Android.QuickSettingsService>.
-  		 */
   def createQuickSettingsService(parameters: js.Any): QuickSettingsService = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Android.RemoteViews>.
   		 */
   def createRemoteViews(): RemoteViews = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.Android.RemoteViews>.
-  		 */
   def createRemoteViews(parameters: js.Any): RemoteViews = js.native
   /**
   		 * Create a <Titanium.Android.Service> so you can start/stop it and listen for events from it.
@@ -1094,9 +1060,6 @@ object AndroidNsMembers extends js.Object {
   		 * Request for permission access.
   		 */
   def requestPermissions(permissions: java.lang.String): scala.Unit = js.native
-  /**
-  		 * Request for permission access.
-  		 */
   def requestPermissions(
     permissions: java.lang.String,
     callback: js.Function1[/* param0 */ titaniumLib.RequestPermissionAccessResult, _]
@@ -1105,9 +1068,6 @@ object AndroidNsMembers extends js.Object {
   		 * Request for permission access.
   		 */
   def requestPermissions(permissions: js.Array[java.lang.String]): scala.Unit = js.native
-  /**
-  		 * Request for permission access.
-  		 */
   def requestPermissions(
     permissions: js.Array[java.lang.String],
     callback: js.Function1[/* param0 */ titaniumLib.RequestPermissionAccessResult, _]

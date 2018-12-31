@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISample extends js.Object {
   /**
-           * Sample rate
-           */
+    * Sample rate
+    */
   var sampleRate: scala.Double
 }
 

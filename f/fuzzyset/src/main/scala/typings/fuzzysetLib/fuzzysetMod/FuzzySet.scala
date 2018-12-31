@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FuzzySet extends js.Object {
   def add(value: java.lang.String): scala.Boolean
   def get(candidate: java.lang.String): js.Array[js.Tuple2[scala.Double, java.lang.String]]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IConfig extends js.Object {
   var accountId: js.UndefOr[java.lang.String] = js.undefined
   var appId: js.UndefOr[java.lang.String] = js.undefined

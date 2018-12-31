@@ -14,27 +14,21 @@ class Chips ()
 @js.native
 object Chips extends js.Object {
   /**
-           * Get Instance
-           */
+    * Get Instance
+    */
   def getInstance(elem: stdLib.Element): materializeDashCssLib.MNs.Chips = js.native
   /**
-           * Init Chipses
-           */
+    * Init Chipses
+    */
   def init(els: materializeDashCssLib.MElements): js.Array[materializeDashCssLib.MNs.Chips] = js.native
-  /**
-           * Init Chipses
-           */
   def init(
     els: materializeDashCssLib.MElements,
     options: stdLib.Partial[materializeDashCssLib.MNs.ChipsOptions]
   ): js.Array[materializeDashCssLib.MNs.Chips] = js.native
   /**
-           * Init Chips
-           */
+    * Init Chips
+    */
   def init(els: stdLib.Element): materializeDashCssLib.MNs.Chips = js.native
-  /**
-           * Init Chips
-           */
   def init(els: stdLib.Element, options: stdLib.Partial[materializeDashCssLib.MNs.ChipsOptions]): materializeDashCssLib.MNs.Chips = js.native
 }
 

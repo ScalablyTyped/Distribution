@@ -21,9 +21,9 @@ class That[L, A] protected () extends js.Object {
     both: js.Function2[/* l */ L, /* a */ A, B]
   ): B = js.native
   def inspect(): java.lang.String = js.native
-  def isBoth(): /* is Both */scala.Boolean = js.native
-  def isThat(): /* is That */scala.Boolean = js.native
-  def isThis(): /* is This */scala.Boolean = js.native
+  def isBoth(): /* is fp-ts.fp-ts/lib/These.Both<L, A> */ scala.Boolean = js.native
+  def isThat(): /* is fp-ts.fp-ts/lib/These.That<L, A> */ scala.Boolean = js.native
+  def isThis(): /* is fp-ts.fp-ts/lib/These.This<L, A> */ scala.Boolean = js.native
   def map[B](f: js.Function1[/* a */ A, B]): These[L, B] = js.native
   def reduce[B](b: B, f: js.Function2[/* b */ B, /* a */ A, B]): B = js.native
 }

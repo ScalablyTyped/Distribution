@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConfigOptions extends js.Object {
   var _exit: js.UndefOr[scala.Boolean] = js.undefined
   var `always-auth`: js.UndefOr[scala.Boolean] = js.undefined

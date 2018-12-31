@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MetricsResource extends js.Object {
   /** Creates a logs-based metric. */
   def create(request: gapiDotClientDotLoggingLib.Anon_Parent): gapiDotClientLib.gapiNs.clientNs.Request[LogMetric]

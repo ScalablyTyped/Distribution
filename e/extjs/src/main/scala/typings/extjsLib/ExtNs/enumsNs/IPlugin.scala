@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPlugin extends js.Object {
   /** [Property] (String) */
   var bufferedrenderer: js.UndefOr[java.lang.String] = js.undefined

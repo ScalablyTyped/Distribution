@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetResponse extends js.Object {
   /** The current app state version. */
   var currentStateVersion: js.UndefOr[java.lang.String] = js.undefined

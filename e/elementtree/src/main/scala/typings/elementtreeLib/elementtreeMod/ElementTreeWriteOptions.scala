@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ElementTreeWriteOptions extends js.Object {
   var default_namespace: js.UndefOr[java.lang.String] = js.undefined
   var encoding: js.UndefOr[java.lang.String] = js.undefined

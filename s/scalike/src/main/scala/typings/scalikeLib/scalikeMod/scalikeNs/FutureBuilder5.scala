@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FutureBuilder5[A, B, C, D, E, F] extends js.Object {
   var oa: js.Any
   var ob: js.Any

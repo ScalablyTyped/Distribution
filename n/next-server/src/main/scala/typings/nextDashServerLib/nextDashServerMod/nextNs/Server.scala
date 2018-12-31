@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Next.js server instance API.
-     */
+  * Next.js server instance API.
+  */
 @js.native
 trait Server extends js.Object {
   var buildId: java.lang.String = js.native

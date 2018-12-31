@@ -15,7 +15,6 @@ object CollectionNs extends js.Object {
     property: java.lang.String,
     target: js.Any
   ): js.Any = js.native
-  /** Extends a collection with Refs aware methods */
   def extend(
     collection: js.Array[_],
     refs: objectDashRefsLib.objectDashRefsMod.Refs,

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IXmlElement extends IXmlNode {
   var tagName: java.lang.String
   def getAttribute(attributeName: java.lang.String): java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IItem
   extends extjsLib.ExtNs.IComponent {
   /** [Method] Disable the component  */

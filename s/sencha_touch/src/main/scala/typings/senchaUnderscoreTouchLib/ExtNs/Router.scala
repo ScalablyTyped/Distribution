@@ -16,9 +16,6 @@ object Router extends js.Object {
   		* @param app Object
   		*/
   def setAppInstance(): scala.Unit = js.native
-  /** [Method] Application s onDependenciesLoaded has a deprecated wrapped line that calls this
-  		* @param app Object
-  		*/
   def setAppInstance(app: js.Any): scala.Unit = js.native
 }
 

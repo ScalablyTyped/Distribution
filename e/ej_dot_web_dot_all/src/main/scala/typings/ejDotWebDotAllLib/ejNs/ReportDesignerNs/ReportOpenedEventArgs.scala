@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReportOpenedEventArgs extends js.Object {
   /** Specifies whether report opened from device or server.
-               */
+    */
   var isServerReport: js.UndefOr[scala.Boolean] = js.undefined
   /** Name of Opened Report.
-               */
+    */
   var reportName: js.UndefOr[java.lang.String] = js.undefined
 }
 

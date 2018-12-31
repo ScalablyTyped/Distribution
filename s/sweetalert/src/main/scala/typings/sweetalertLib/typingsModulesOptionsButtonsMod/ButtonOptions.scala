@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ButtonOptions extends js.Object {
   var className: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var closeModal: js.UndefOr[scala.Boolean] = js.undefined

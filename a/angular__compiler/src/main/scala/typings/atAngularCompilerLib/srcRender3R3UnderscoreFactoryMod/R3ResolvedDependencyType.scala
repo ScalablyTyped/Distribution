@@ -12,17 +12,17 @@ sealed trait R3ResolvedDependencyType extends js.Object
 @js.native
 object R3ResolvedDependencyType extends js.Object {
   /**
-       * The dependency is for an attribute.
-       *
-       * The token expression is a string representing the attribute name.
-       */
+    * The dependency is for an attribute.
+    *
+    * The token expression is a string representing the attribute name.
+    */
   @js.native
   sealed trait Attribute
     extends atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3ResolvedDependencyType
   
   /**
-       * A normal token dependency.
-       */
+    * A normal token dependency.
+    */
   @js.native
   sealed trait Token
     extends atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3ResolvedDependencyType

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PasswordlessStartOptions extends js.Object {
   var authParams: js.UndefOr[js.Any] = js.undefined
   var connection: java.lang.String

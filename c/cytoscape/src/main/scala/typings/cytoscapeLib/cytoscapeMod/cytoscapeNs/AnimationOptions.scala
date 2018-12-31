@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnimationOptions extends js.Object {
   /** An object containing centring options from which the graph will be animated. */
   var center: js.UndefOr[CenterOptions] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VideoSnippet extends js.Object {
   /** The YouTube video category associated with the video. */
   var categoryId: js.UndefOr[java.lang.String] = js.undefined
@@ -28,9 +27,9 @@ trait VideoSnippet extends js.Object {
   /** A list of keyword tags associated with the video. Tags may contain spaces. */
   var tags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-               * A map of thumbnail images associated with the video. For each object in the map, the key is the name of the thumbnail image, and the value is an object
-               * that contains other information about the thumbnail.
-               */
+    * A map of thumbnail images associated with the video. For each object in the map, the key is the name of the thumbnail image, and the value is an object
+    * that contains other information about the thumbnail.
+    */
   var thumbnails: js.UndefOr[ThumbnailDetails] = js.undefined
   /** The video's title. */
   var title: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LayoutProperties extends js.Object {
   // The human-readable name of the layout.
   var display_name: java.lang.String

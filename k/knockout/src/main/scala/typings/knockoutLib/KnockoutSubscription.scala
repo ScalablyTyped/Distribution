@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KnockoutSubscription extends js.Object {
   /**
-       * Terminates a subscription 
-       */
+    * Terminates a subscription 
+    */
   def dispose(): scala.Unit
 }
 

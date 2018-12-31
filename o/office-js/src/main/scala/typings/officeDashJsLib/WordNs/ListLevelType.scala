@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ListLevelType extends js.Object
 
 /**
-     * [Api set: WordApi]
-     */
+  * [Api set: WordApi]
+  */
 @JSGlobal("Word.ListLevelType")
 @js.native
 object ListLevelType extends js.Object {

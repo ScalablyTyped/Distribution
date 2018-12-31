@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Middleware extends js.Object {
   /** Function to call to add koa-static */
   def content(): scala.Unit

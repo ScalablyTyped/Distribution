@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PermissionsResource extends js.Object {
   /** Creates a permission for a file or Team Drive. */
   def create(request: gapiDotClientDotDriveLib.Anon_FileIdSendNotificationEmail): gapiDotClientLib.gapiNs.clientNs.Request[Permission]

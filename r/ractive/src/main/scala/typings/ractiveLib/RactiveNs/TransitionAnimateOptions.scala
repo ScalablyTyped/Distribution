@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransitionAnimateOptions extends js.Object {
   // TODO: Do it have default value?
   var delay: scala.Double

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * @hidden
-     */
+  * @hidden
+  */
 @JSImport("babylonjs", "ImageProcessingConfigurationDefines")
 @js.native
 class ImageProcessingConfigurationDefines ()

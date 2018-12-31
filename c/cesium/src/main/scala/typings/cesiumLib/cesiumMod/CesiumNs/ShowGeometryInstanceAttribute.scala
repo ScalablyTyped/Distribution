@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShowGeometryInstanceAttribute extends js.Object {
   var componentDatatype: ComponentDatatype
   var componentsPerAttribute: scala.Double

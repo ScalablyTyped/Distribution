@@ -31,25 +31,13 @@ class Persistence () extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/Persistence.html#method_getNumber
   		 */
   def getNumber(key: java.lang.String): scala.Double = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Persistence.html#method_getNumber
-  		 */
   def getNumber(key: java.lang.String, defaultValue: scala.Double): scala.Double = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Persistence.html#method_getObject
   		 */
   def getObject(key: java.lang.String): KnuddelsJson | KnuddelsJsonArray | knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.KnuddelsSerializable = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Persistence.html#method_getObject
-  		 */
   def getObject(key: java.lang.String, defaultValue: KnuddelsJson): KnuddelsJson | KnuddelsJsonArray | knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.KnuddelsSerializable = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Persistence.html#method_getObject
-  		 */
   def getObject(key: java.lang.String, defaultValue: KnuddelsJsonArray): KnuddelsJson | KnuddelsJsonArray | knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.KnuddelsSerializable = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Persistence.html#method_getObject
-  		 */
   def getObject(
     key: java.lang.String,
     defaultValue: knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.KnuddelsSerializable
@@ -58,9 +46,6 @@ class Persistence () extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/Persistence.html#method_getString
   		 */
   def getString(key: java.lang.String): java.lang.String = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Persistence.html#method_getString
-  		 */
   def getString(key: java.lang.String, defaultValue: java.lang.String): java.lang.String = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/Persistence.html#method_hasNumber
@@ -82,13 +67,7 @@ class Persistence () extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/Persistence.html#method_setObject
   		 */
   def setObject(key: java.lang.String, `object`: KnuddelsJson): scala.Unit = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Persistence.html#method_setObject
-  		 */
   def setObject(key: java.lang.String, `object`: KnuddelsJsonArray): scala.Unit = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/Persistence.html#method_setObject
-  		 */
   def setObject(
     key: java.lang.String,
     `object`: knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.KnuddelsSerializable

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Bullet extends js.Object {
   /** The paragraph specific text style applied to this bullet. */
   var bulletStyle: js.UndefOr[TextStyle] = js.undefined

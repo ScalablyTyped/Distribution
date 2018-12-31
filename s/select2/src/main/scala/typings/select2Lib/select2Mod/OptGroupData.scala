@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OptGroupData extends js.Object {
   var children: js.Array[OptionData]
   var disabled: scala.Boolean

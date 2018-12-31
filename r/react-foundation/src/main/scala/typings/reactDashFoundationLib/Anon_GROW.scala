@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_GROW extends js.Object {
   var AUTO: reactDashFoundationLib.enumsMod.SpaceControls
   var GROW: reactDashFoundationLib.enumsMod.SpaceControls

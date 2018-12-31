@@ -15,7 +15,6 @@ class XSLTransforms protected () extends js.Object {
   var `Word.XSLTransforms_typekey`: XSLTransforms = js.native
   /** @param boolean [InstallForAllUsers=false] */
   def Add(Location: java.lang.String, Alias: js.Any): XSLTransform = js.native
-  /** @param boolean [InstallForAllUsers=false] */
   def Add(Location: java.lang.String, Alias: js.Any, InstallForAllUsers: scala.Boolean): XSLTransform = js.native
   def Item(Index: js.Any): XSLTransform = js.native
 }

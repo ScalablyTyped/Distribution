@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HoldableProps extends js.Object {
   /** @see defineHold */
   var config: js.UndefOr[HoldableConfig] = js.undefined

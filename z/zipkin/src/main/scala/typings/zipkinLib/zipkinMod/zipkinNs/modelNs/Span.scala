@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Span extends js.Object {
   val annotations: js.Array[Annotation]
   val debug: scala.Boolean

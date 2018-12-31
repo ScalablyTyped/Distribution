@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Zone extends js.Object {
   /** [Output Only] Available cpu/platform selections for the zone. */
   var availableCpuPlatforms: js.UndefOr[js.Array[java.lang.String]] = js.undefined

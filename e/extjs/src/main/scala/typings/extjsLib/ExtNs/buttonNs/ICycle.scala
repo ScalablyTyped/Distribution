@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICycle extends ISplit {
   /** [Config Option] (Function) */
   var changeHandler: js.UndefOr[js.Any] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictDropdownProps extends js.Object {
   /** Label prefixed to an option added by a user. */
   var additionLabel: js.UndefOr[scala.Double | java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
@@ -14,9 +13,9 @@ trait StrictDropdownProps extends js.Object {
     semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.top | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bottom
   ] = js.undefined
   /**
-     * Allow user additions to the list of options (boolean).
-     * Requires the use of `selection`, `options` and `search`.
-     */
+    * Allow user additions to the list of options (boolean).
+    * Requires the use of `selection`, `options` and `search`.
+    */
   var allowAdditions: js.UndefOr[scala.Boolean] = js.undefined
   /** An element type to render as (string or function). */
   var as: js.UndefOr[js.Any] = js.undefined
@@ -33,10 +32,10 @@ trait StrictDropdownProps extends js.Object {
   /** Whether or not the menu should close when the dropdown is blurred. */
   var closeOnBlur: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * Whether or not the menu should close when a value is selected from the dropdown.
-     * By default, multiple selection dropdowns will remain open on change, while single
-     * selection dropdowns will close on change.
-     */
+    * Whether or not the menu should close when a value is selected from the dropdown.
+    * By default, multiple selection dropdowns will remain open on change, while single
+    * selection dropdowns will close on change.
+    */
   var closeOnChange: js.UndefOr[scala.Boolean] = js.undefined
   /** A compact dropdown has no minimum width. */
   var compact: js.UndefOr[scala.Boolean] = js.undefined
@@ -87,11 +86,11 @@ trait StrictDropdownProps extends js.Object {
   /** Message to display when there are no results. */
   var noResultsMessage: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * Called when a user adds a new item. Use this to update the options list.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props and the new item's value.
-     */
+    * Called when a user adds a new item. Use this to update the options list.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props and the new item's value.
+    */
   var onAddItem: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement], 
@@ -100,11 +99,11 @@ trait StrictDropdownProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called on blur.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called on blur.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onBlur: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement], 
@@ -113,11 +112,11 @@ trait StrictDropdownProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called when the user attempts to change the value.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props and proposed value.
-     */
+    * Called when the user attempts to change the value.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props and proposed value.
+    */
   var onChange: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
@@ -126,11 +125,11 @@ trait StrictDropdownProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called on click.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called on click.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onClick: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement], 
@@ -139,11 +138,11 @@ trait StrictDropdownProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called when a close event happens.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called when a close event happens.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onClose: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
@@ -152,11 +151,11 @@ trait StrictDropdownProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called on focus.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called on focus.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onFocus: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
@@ -165,11 +164,11 @@ trait StrictDropdownProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called when a multi-select label is clicked.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All label props.
-     */
+    * Called when a multi-select label is clicked.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All label props.
+    */
   var onLabelClick: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
@@ -178,11 +177,11 @@ trait StrictDropdownProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called on mousedown.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called on mousedown.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onMouseDown: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
@@ -191,11 +190,11 @@ trait StrictDropdownProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called when an open event happens.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called when an open event happens.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onOpen: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
@@ -204,11 +203,11 @@ trait StrictDropdownProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called on search input change.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props, includes current value of searchQuery.
-     */
+    * Called on search input change.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props, includes current value of searchQuery.
+    */
   var onSearchChange: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
@@ -233,14 +232,14 @@ trait StrictDropdownProps extends js.Object {
     scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.top | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`top left`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`top right`) | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bottom | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`bottom left`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`bottom right`)
   ] = js.undefined
   /**
-     * Mapped over the active items and returns shorthand for the active item Labels.
-     * Only applies to `multiple` Dropdowns.
-     *
-     * @param {object} item - A currently active dropdown item.
-     * @param {number} index - The current index.
-     * @param {object} defaultLabelProps - The default props for an active item Label.
-     * @returns {*} Shorthand for a Label.
-     */
+    * Mapped over the active items and returns shorthand for the active item Labels.
+    * Only applies to `multiple` Dropdowns.
+    *
+    * @param {object} item - A currently active dropdown item.
+    * @param {number} index - The current index.
+    * @param {object} defaultLabelProps - The default props for an active item Label.
+    * @returns {*} Shorthand for a Label.
+    */
   var renderLabel: js.UndefOr[
     js.Function3[
       /* item */ semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownItemMod.DropdownItemProps, 
@@ -252,9 +251,9 @@ trait StrictDropdownProps extends js.Object {
   /** A dropdown can have its menu scroll. */
   var scrolling: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * A selection dropdown can allow a user to search through a large list of choices.
-     * Pass a function here to replace the default search.
-     */
+    * A selection dropdown can allow a user to search through a large list of choices.
+    * Pass a function here to replace the default search.
+    */
   var search: js.UndefOr[
     scala.Boolean | (js.Function2[
       /* options */ js.Array[
@@ -293,9 +292,9 @@ trait StrictDropdownProps extends js.Object {
     scala.Boolean | scala.Double | java.lang.String | (js.Array[scala.Boolean | scala.Double | java.lang.String])
   ] = js.undefined
   /**
-     * A dropdown will go to the last element when ArrowUp is pressed on the first,
-     * or go to the first when ArrowDown is pressed on the last( aka infinite selection )
-     */
+    * A dropdown will go to the last element when ArrowUp is pressed on the first,
+    * or go to the first when ArrowDown is pressed on the last( aka infinite selection )
+    */
   var wrapSelection: js.UndefOr[scala.Boolean] = js.undefined
 }
 

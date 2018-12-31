@@ -12,22 +12,22 @@ sealed trait AtType extends js.Object
 @js.native
 object AtType extends js.Object {
   /**
-       * Local time (no DST)
-       */
+    * Local time (no DST)
+    */
   @js.native
   sealed trait Standard
     extends timezonecompleteLib.distLibTzDashDatabaseMod.AtType
   
   /**
-       * Utc time
-       */
+    * Utc time
+    */
   @js.native
   sealed trait Utc
     extends timezonecompleteLib.distLibTzDashDatabaseMod.AtType
   
   /**
-       * Wall clock time (local time with DST)
-       */
+    * Wall clock time (local time with DST)
+    */
   @js.native
   sealed trait Wall
     extends timezonecompleteLib.distLibTzDashDatabaseMod.AtType

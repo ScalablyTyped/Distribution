@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IObservable
   extends senchaUnderscoreTouchLib.ExtNs.mixinNs.IIdentifiable {
   /** [Method] Appends an after event handler
@@ -106,7 +105,7 @@ trait IObservable
   		* @returns Boolean Returns false if any of the handlers return false.
   		*/
   var fireEvent: js.UndefOr[
-    js.Function2[/* eventName */ java.lang.String, /* repeated */js.Any, scala.Boolean]
+    js.Function2[/* eventName */ java.lang.String, /* repeated */ js.Any, scala.Boolean]
   ] = js.undefined
   /** [Method] Returns the value of bubbleEvents
   		* @returns String/String[]

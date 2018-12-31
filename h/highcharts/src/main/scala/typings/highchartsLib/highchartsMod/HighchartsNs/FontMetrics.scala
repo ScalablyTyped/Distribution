@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FontMetrics extends js.Object {
   /**
-           * The baseline relative to the top of the box.
-           */
+    * The baseline relative to the top of the box.
+    */
   var b: scala.Double
   /**
-           * The font size.
-           */
+    * The font size.
+    */
   var f: scala.Double
   /**
-           * The line height.
-           */
+    * The line height.
+    */
   var h: scala.Double
 }
 

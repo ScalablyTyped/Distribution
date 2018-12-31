@@ -14,9 +14,9 @@ class default () extends RSAPublicKey {
   /* CompleteClass */
   override var publicExponent: asn1jsLib.asn1jsMod.Integer = js.native
   /**
-           * Convert JSON value into current object
-           * @param {JsonWebKey} json
-           */
+    * Convert JSON value into current object
+    * @param {JsonWebKey} json
+    */
   /* CompleteClass */
   override def fromJSON(json: stdLib.JsonWebKey): scala.Unit = js.native
   /* CompleteClass */

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /*----------------------
 		Observable
 	----------------------*/
-
 @js.native
 trait Observable extends js.Object {
   /**
@@ -29,11 +28,6 @@ trait Observable extends js.Object {
   		 * @param the target of observation
   		 */
   def open(onChange: js.Function2[/* newValue */ js.Any, /* oldValue */ js.Any, _]): scala.Unit = js.native
-  /**
-  		 * Begins observation.
-  		 * @param onChange the function that gets invoked if a change is detected
-  		 * @param the target of observation
-  		 */
   def open(onChange: js.Function2[/* newValue */ js.Any, /* oldValue */ js.Any, _], receiver: js.Any): scala.Unit = js.native
 }
 

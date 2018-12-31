@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VisualObjectInstancesToPersist extends js.Object {
   /** Instances which should be merged with existing instances. */
   var merge: js.UndefOr[js.Array[VisualObjectInstance]] = js.undefined

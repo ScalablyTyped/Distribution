@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExtensionStatisticUpdate extends js.Object {
   var extensionName: java.lang.String
   var operation: ExtensionStatisticOperation

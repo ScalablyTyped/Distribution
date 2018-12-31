@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait InsertLocation extends js.Object
 
 /**
-     * [Api set: OneNoteApi 1.1]
-     */
+  * [Api set: OneNoteApi 1.1]
+  */
 @JSGlobal("OneNote.InsertLocation")
 @js.native
 object InsertLocation extends js.Object {

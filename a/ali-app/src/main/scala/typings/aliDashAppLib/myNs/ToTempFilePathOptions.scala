@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion
 //#region 画布 https://docs.alipay.com/mini/api/ui-canvas
-
 trait ToTempFilePathOptions
   extends BaseOptions[js.Any, js.Any] {
   	// 输出的图片宽度，默认为 width

@@ -10,9 +10,9 @@ trait RefreshTokenModel
   extends BaseModel
      with RequestAuthenticationModel {
   /**
-           * Invoked to generate a new refresh token.
-           *
-           */
+    * Invoked to generate a new refresh token.
+    *
+    */
   var generateRefreshToken: js.UndefOr[
     js.Function4[
       /* client */ Client, 
@@ -23,34 +23,18 @@ trait RefreshTokenModel
     ]
   ] = js.native
   /**
-           * Invoked to retrieve an existing refresh token previously saved through Model#saveToken().
-           *
-           */
+    * Invoked to retrieve an existing refresh token previously saved through Model#saveToken().
+    *
+    */
   def getRefreshToken(refreshToken: java.lang.String): js.Promise[RefreshToken | Falsey] = js.native
-  /**
-           * Invoked to retrieve an existing refresh token previously saved through Model#saveToken().
-           *
-           */
   def getRefreshToken(refreshToken: java.lang.String, callback: Callback[RefreshToken]): js.Promise[RefreshToken | Falsey] = js.native
   /**
-           * Invoked to revoke a refresh token.
-           *
-           */
+    * Invoked to revoke a refresh token.
+    *
+    */
   def revokeToken(token: RefreshToken): js.Promise[scala.Boolean] = js.native
-  /**
-           * Invoked to revoke a refresh token.
-           *
-           */
   def revokeToken(token: RefreshToken, callback: Callback[scala.Boolean]): js.Promise[scala.Boolean] = js.native
-  /**
-           * Invoked to revoke a refresh token.
-           *
-           */
   def revokeToken(token: Token): js.Promise[scala.Boolean] = js.native
-  /**
-           * Invoked to revoke a refresh token.
-           *
-           */
   def revokeToken(token: Token, callback: Callback[scala.Boolean]): js.Promise[scala.Boolean] = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PublisherMessage extends js.Object {
   var commPort: js.UndefOr[scala.Double] = js.undefined
   var host: java.lang.String

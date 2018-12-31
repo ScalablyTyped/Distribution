@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ButtonKey extends js.Object {
   var altKey: js.UndefOr[scala.Boolean] = js.undefined
   var ctrlKey: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InputSet extends BaseElement {
   var dataInputRefs: js.Array[DataInput]
   var name: java.lang.String

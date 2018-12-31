@@ -13,8 +13,8 @@ trait Anon_Options extends js.Object {
     nodules: js.Array[Nodule],
     names: js.Array[FieldName],
     wrapper: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Nodule))),List()),Left(TsIdentSimple(FieldName))) *//* original */ js.Any, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Nodule))),List()),Left(TsIdentSimple(FieldName))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: Nodule[FieldName] */ /* original */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: Nodule[FieldName] */ js.Any
     ]
   ): scala.Unit = js.native
   def unwrap[Nodule /* <: js.Object */](nodule: Nodule, name: java.lang.String): scala.Unit = js.native
@@ -22,8 +22,8 @@ trait Anon_Options extends js.Object {
     nodule: Nodule,
     name: FieldName,
     wrapper: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Nodule))),List()),Left(TsIdentSimple(FieldName))) *//* original */ js.Any, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Nodule))),List()),Left(TsIdentSimple(FieldName))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: Nodule[FieldName] */ /* original */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: Nodule[FieldName] */ js.Any
     ]
   ): scala.Unit = js.native
 }

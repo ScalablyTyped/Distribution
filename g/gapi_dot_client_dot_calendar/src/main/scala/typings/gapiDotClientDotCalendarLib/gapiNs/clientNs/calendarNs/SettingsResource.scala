@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SettingsResource extends js.Object {
   /** Returns a single user setting. */
   def get(request: gapiDotClientDotCalendarLib.Anon_Setting): gapiDotClientLib.gapiNs.clientNs.Request[Setting]

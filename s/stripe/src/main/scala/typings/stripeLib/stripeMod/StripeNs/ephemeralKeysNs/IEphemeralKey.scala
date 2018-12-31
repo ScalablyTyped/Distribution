@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEphemeralKey
   extends stripeLib.stripeMod.StripeNs.IResourceObject {
   var associated_objects: js.Array[IAssociatedObject]

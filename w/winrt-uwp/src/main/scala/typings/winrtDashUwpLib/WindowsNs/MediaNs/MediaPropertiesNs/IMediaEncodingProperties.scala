@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Describes the format of a media stream or media container. */
-
 trait IMediaEncodingProperties extends js.Object {
   /** Gets additional format properties. */
   var properties: MediaPropertySet

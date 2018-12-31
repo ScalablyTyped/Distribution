@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AsObject extends js.Object {
   var enumvalueList: js.Array[googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.EnumValueNs.AsObject]
   var name: java.lang.String

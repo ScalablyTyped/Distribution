@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DebounceRendering extends js.Object {
   var debounceRendering: js.UndefOr[js.Function1[/* render */ js.Function0[scala.Unit], scala.Unit]] = js.undefined
   var event: js.UndefOr[js.Function1[/* event */ stdLib.Event, stdLib.Event]] = js.undefined

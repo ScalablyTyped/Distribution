@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GroupAll[T, TValue] extends js.Object {
   def dispose(): GroupAll[T, TValue]
   def reduce[TValue](

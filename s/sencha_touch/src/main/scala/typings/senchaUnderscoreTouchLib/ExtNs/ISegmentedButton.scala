@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISegmentedButton extends IContainer {
   /** [Config Option] (Boolean) */
   var allowDepress: js.UndefOr[scala.Boolean] = js.undefined

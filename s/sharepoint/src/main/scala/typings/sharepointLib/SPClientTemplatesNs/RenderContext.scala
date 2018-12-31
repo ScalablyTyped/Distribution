@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RenderContext extends js.Object {
   var BaseViewID: js.UndefOr[scala.Double] = js.undefined
   var ControlMode: js.UndefOr[ClientControlMode] = js.undefined

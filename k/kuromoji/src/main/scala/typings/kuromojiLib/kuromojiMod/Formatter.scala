@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Formatter[T] extends js.Object {
   def formatEntry(
     word_id: scala.Double,

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_UseEventValue extends js.Object {
   /** List of event conditions. */
   var eventConditions: js.UndefOr[js.Array[Anon_MatchType]] = js.undefined

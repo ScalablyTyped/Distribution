@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line: interface-name
-
 trait INavigationOptions extends js.Object {
   var appHelpPageOnClick: js.UndefOr[java.lang.String] = js.undefined
   var appHelpPageUrl: js.UndefOr[java.lang.String] = js.undefined

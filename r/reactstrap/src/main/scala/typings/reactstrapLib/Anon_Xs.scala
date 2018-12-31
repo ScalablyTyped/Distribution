@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Xs extends js.Object {
   var lg: js.UndefOr[reactstrapLib.libColMod.ColumnProps] = js.undefined
   var md: js.UndefOr[reactstrapLib.libColMod.ColumnProps] = js.undefined

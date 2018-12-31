@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILightweightPlotEntity extends js.Object {
   var component: plottableLib.buildSrcPlotsPlotMod.Plot
   var dataset: plottableLib.buildSrcCoreDatasetMod.Dataset

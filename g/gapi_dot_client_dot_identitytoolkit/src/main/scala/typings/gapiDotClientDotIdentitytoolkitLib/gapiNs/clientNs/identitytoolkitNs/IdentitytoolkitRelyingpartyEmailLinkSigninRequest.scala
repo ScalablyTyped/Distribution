@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IdentitytoolkitRelyingpartyEmailLinkSigninRequest extends js.Object {
   /** The email address of the user. */
   var email: js.UndefOr[java.lang.String] = js.undefined

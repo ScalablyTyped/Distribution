@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChainRec3[F /* <: fpDashTsLib.libHKTMod.URIS3 */]
   extends fpDashTsLib.libChainMod.Chain3[F] {
   def chainRec[U, L, A, B](

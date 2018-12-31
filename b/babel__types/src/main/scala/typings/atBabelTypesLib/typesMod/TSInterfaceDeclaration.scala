@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TSInterfaceDeclaration extends BaseNode {
   var body: TSInterfaceBody
   var declare: scala.Boolean | scala.Null

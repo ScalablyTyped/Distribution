@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CellsMergingEventUIParam extends js.Object {
   /**
   	 * Gets the column key the merge is being executed for.

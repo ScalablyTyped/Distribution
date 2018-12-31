@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodeInfo extends js.Object {
   var appName: java.lang.String
   var appVersion: java.lang.String

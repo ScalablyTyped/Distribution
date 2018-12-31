@@ -70,10 +70,10 @@ class server ()
   /** Close all open WebSocket connections and unmount the server */
   def shutDown(): scala.Unit = js.native
   /**
-       * Detach the `server` instance from the Node http.Server instance.
-       * All existing connections are left alone and will not be affected,
-       * but no new WebSocket connections will be accepted.
-       */
+    * Detach the `server` instance from the Node http.Server instance.
+    * All existing connections are left alone and will not be affected,
+    * but no new WebSocket connections will be accepted.
+    */
   def unmount(): scala.Unit = js.native
 }
 

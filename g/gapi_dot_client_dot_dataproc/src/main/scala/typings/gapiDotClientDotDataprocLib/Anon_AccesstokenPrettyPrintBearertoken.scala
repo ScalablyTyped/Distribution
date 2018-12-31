@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPrettyPrintBearertoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -37,10 +36,10 @@ trait Anon_AccesstokenPrettyPrintBearertoken extends js.Object {
   /** Required. The Cloud Dataproc region in which to handle the request. */
   var region: java.lang.String
   /**
-                   * Required. Specifies the path, relative to <code>Job</code>, of the field to update. For example, to update the labels of a Job the
-                   * <code>update_mask</code> parameter would be specified as <code>labels</code>, and the PATCH request body would specify the new value.
-                   * <strong>Note:</strong> Currently, <code>labels</code> is the only field that can be updated.
-                   */
+    * Required. Specifies the path, relative to <code>Job</code>, of the field to update. For example, to update the labels of a Job the
+    * <code>update_mask</code> parameter would be specified as <code>labels</code>, and the PATCH request body would specify the new value.
+    * <strong>Note:</strong> Currently, <code>labels</code> is the only field that can be updated.
+    */
   var updateMask: js.UndefOr[java.lang.String] = js.undefined
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 trait KnockoutComputed[T] extends js.Object {
   // starts validation for observable
   def validate(): valerieLib.ValerieNs.PropertyValidationState[KnockoutComputed[T]] = js.native
-  // starts validation for observable
   def validate(validationOptions: valerieLib.ValerieNs.ValidationOptions): valerieLib.ValerieNs.PropertyValidationState[KnockoutComputed[T]] = js.native
 }
 

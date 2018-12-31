@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MashupDataSourceMashupSettings
   extends /**
 	 * Option for MashupDataSourceMashupSettings

@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Payload extends js.Object {
   /**
-           * "Every key/value pair will be included ... in the response payload under the attributes key."
-           * [see docs](https://github.com/hapijs/boom#boomunauthorizedmessage-scheme-attributes)
-           */
+    * "Every key/value pair will be included ... in the response payload under the attributes key."
+    * [see docs](https://github.com/hapijs/boom#boomunauthorizedmessage-scheme-attributes)
+    */
   var attributes: js.UndefOr[js.Any] = js.undefined
   /** error - the HTTP status message (e.g. 'Bad Request', 'Internal Server Error') derived from statusCode. */
   var error: java.lang.String

@@ -12,49 +12,49 @@ sealed trait ChangeDetectorStatus extends js.Object
 @js.native
 object ChangeDetectorStatus extends js.Object {
   /**
-       * A state in which change detection continues automatically until explictly
-       * deactivated.
-       */
+    * A state in which change detection continues automatically until explictly
+    * deactivated.
+    */
   @js.native
   sealed trait CheckAlways
     extends atAngularCoreLib.srcChangeUnderscoreDetectionConstantsMod.ChangeDetectorStatus
   
   /**
-       * A state in which, after calling `detectChanges()`, the change detector
-       * state becomes `Checked`, and must be explicitly invoked or reactivated.
-       */
+    * A state in which, after calling `detectChanges()`, the change detector
+    * state becomes `Checked`, and must be explicitly invoked or reactivated.
+    */
   @js.native
   sealed trait CheckOnce
     extends atAngularCoreLib.srcChangeUnderscoreDetectionConstantsMod.ChangeDetectorStatus
   
   /**
-       * A state in which change detection is skipped until the change detector mode
-       * becomes `CheckOnce`.
-       */
+    * A state in which change detection is skipped until the change detector mode
+    * becomes `CheckOnce`.
+    */
   @js.native
   sealed trait Checked
     extends atAngularCoreLib.srcChangeUnderscoreDetectionConstantsMod.ChangeDetectorStatus
   
   /**
-       * Indicates that the change detector has been destroyed.
-       */
+    * Indicates that the change detector has been destroyed.
+    */
   @js.native
   sealed trait Destroyed
     extends atAngularCoreLib.srcChangeUnderscoreDetectionConstantsMod.ChangeDetectorStatus
   
   /**
-       * A state in which a change detector sub tree is not a part of the main tree and
-       * should be skipped.
-       */
+    * A state in which a change detector sub tree is not a part of the main tree and
+    * should be skipped.
+    */
   @js.native
   sealed trait Detached
     extends atAngularCoreLib.srcChangeUnderscoreDetectionConstantsMod.ChangeDetectorStatus
   
   /**
-       * Indicates that the change detector encountered an error checking a binding
-       * or calling a directive lifecycle method and is now in an inconsistent state. Change
-       * detectors in this state do not detect changes.
-       */
+    * Indicates that the change detector encountered an error checking a binding
+    * or calling a directive lifecycle method and is now in an inconsistent state. Change
+    * detectors in this state do not detect changes.
+    */
   @js.native
   sealed trait Errored
     extends atAngularCoreLib.srcChangeUnderscoreDetectionConstantsMod.ChangeDetectorStatus

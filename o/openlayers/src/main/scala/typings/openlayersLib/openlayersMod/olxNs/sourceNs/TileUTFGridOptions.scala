@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TileUTFGridOptions extends js.Object {
   var jsonp: js.UndefOr[scala.Boolean] = js.undefined
   var preemptive: js.UndefOr[scala.Boolean] = js.undefined

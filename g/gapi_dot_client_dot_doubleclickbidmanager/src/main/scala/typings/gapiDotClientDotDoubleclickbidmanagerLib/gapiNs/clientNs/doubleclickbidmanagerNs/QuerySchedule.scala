@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QuerySchedule extends js.Object {
   /** Datetime to periodically run the query until. */
   var endTimeMs: js.UndefOr[java.lang.String] = js.undefined

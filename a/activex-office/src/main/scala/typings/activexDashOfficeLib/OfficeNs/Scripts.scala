@@ -13,12 +13,12 @@ trait Scripts extends js.Object {
   val Parent: js.Any = js.native
   def apply(Index: js.Any): Script = js.native
   /**
-           * @param Location [Location=2]
-           * @param Language [Language=2]
-           * @param Id [Id='']
-           * @param Extended [Extended='']
-           * @param ScriptText [ScriptText='']
-           */
+    * @param Location [Location=2]
+    * @param Language [Language=2]
+    * @param Id [Id='']
+    * @param Extended [Extended='']
+    * @param ScriptText [ScriptText='']
+    */
   def Add(
     Anchor: js.UndefOr[js.Any],
     Location: js.UndefOr[MsoScriptLocation],

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigateToMiniProgramOptions
   extends BaseOptions[js.Any, js.Any] {
   var appId: java.lang.String

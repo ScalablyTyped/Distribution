@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenIsTransient extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -23,10 +22,10 @@ trait Anon_AccesstokenIsTransient extends js.Object {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Whether the filter set is transient, or should be persisted indefinitely.
-                   * By default, filter sets are not transient.
-                   * If transient, it will be available for at least 1 hour after creation.
-                   */
+    * Whether the filter set is transient, or should be persisted indefinitely.
+    * By default, filter sets are not transient.
+    * If transient, it will be available for at least 1 hour after creation.
+    */
   var isTransient: js.UndefOr[scala.Boolean] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined

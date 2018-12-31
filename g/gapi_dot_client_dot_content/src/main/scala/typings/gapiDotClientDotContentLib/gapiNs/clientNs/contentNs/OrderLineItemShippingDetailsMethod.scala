@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrderLineItemShippingDetailsMethod extends js.Object {
   /** The carrier for the shipping. Optional. See shipments[].carrier for a list of acceptable values. */
   var carrier: js.UndefOr[java.lang.String] = js.undefined

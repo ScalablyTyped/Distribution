@@ -10,11 +10,8 @@ trait ActiveXObject extends js.Object {
   def hasRegisteredObjects(): scala.Boolean = js.native
   /** Unregister all handlers, all handlers on a specific object, all handlers for a specific object's events, or a specific handler */
   def off(): scala.Unit = js.native
-  /** Unregister all handlers, all handlers on a specific object, all handlers for a specific object's events, or a specific handler */
   def off(obj: js.Any): scala.Unit = js.native
-  /** Unregister all handlers, all handlers on a specific object, all handlers for a specific object's events, or a specific handler */
   def off(obj: js.Any, eventName: java.lang.String): scala.Unit = js.native
-  /** Unregister all handlers, all handlers on a specific object, all handlers for a specific object's events, or a specific handler */
   def off(obj: js.Any, eventName: java.lang.String, handler: js.Function): scala.Unit = js.native
   /** Register an event handler with the passed-in object, for the specified event */
   def on[T](
@@ -23,7 +20,7 @@ trait ActiveXObject extends js.Object {
     handler: js.ThisFunction1[/* this */ T, /* parameter */ js.Object, scala.Unit]
   ): scala.Unit = js.native
   /** Register an event handler with the passed-in object, for the specified event; 
-       * specifying the parameters on the object passed into the handler */
+    * specifying the parameters on the object passed into the handler */
   def on[T, K /* <: java.lang.String */](
     obj: T,
     eventName: java.lang.String,

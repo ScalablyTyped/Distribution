@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RedirectProps extends js.Object {
   var exact: js.UndefOr[scala.Boolean] = js.undefined
   var from: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TemplateCompileOptions extends js.Object {
   var compiler: atVueComponentDashCompilerDashUtilsLib.distTypesMod.VueTemplateCompiler
   var compilerOptions: js.UndefOr[atVueComponentDashCompilerDashUtilsLib.distTypesMod.VueTemplateCompilerOptions] = js.undefined

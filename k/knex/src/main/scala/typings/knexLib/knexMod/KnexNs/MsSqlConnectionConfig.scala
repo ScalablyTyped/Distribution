@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MsSqlConnectionConfig extends js.Object {
   var database: java.lang.String
   var options: MsSqlOptionsConfig

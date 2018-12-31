@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Token extends js.Object {
   /** The character at which the token ends. */
   var end: scala.Double

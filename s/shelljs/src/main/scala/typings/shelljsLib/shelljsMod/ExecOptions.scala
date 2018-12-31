@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExecOptions
   extends nodeLib.childUnderscoreProcessMod.ExecOptions {
   /** Asynchronous execution. If a callback is provided, it will be set to true, regardless of the passed value (default: false). */

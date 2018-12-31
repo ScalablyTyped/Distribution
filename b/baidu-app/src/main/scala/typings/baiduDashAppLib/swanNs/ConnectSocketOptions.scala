@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // WebSocket
-
 trait ConnectSocketOptions
   extends BaseOptions[js.Any, js.Any] {
   /** HTTP Header , header 中不能设置 Referer */

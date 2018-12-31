@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRowBody extends IFeature {
   /** [Method] Provides additional data to the prepareData call within the grid view
   		* @param data Object The data for this particular record.

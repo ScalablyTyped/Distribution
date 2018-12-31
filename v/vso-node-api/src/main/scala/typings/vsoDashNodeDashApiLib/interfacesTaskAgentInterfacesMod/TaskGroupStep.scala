@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TaskGroupStep extends js.Object {
   var alwaysRun: scala.Boolean
   var continueOnError: scala.Boolean

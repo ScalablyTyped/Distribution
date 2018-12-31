@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Context extends js.Object {
   var Promise: js.Promise[_]
   var awsRequestId: java.lang.String

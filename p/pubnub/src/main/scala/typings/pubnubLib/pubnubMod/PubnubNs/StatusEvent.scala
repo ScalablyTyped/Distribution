@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StatusEvent extends js.Object {
   var affectedChannelGroups: js.Array[java.lang.String]
    // see Pubnub.Operations

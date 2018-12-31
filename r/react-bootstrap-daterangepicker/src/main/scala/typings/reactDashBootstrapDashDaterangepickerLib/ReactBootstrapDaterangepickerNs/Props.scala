@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Props
   extends daterangepickerLib.daterangepickerMod.daterangepickerNs.Options {
   var containerClass: js.UndefOr[java.lang.String] = js.undefined

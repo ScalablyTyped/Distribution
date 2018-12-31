@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object unitsNs extends js.Object {
   /**
-       * Get a conversion ratio between a source unit and a destination unit.
-       *
-       * @param srcUnitType unitType converting from.
-       * @param destUnitType unitType converting to.
-       * @returns Numeric ratio of the conversion.
-       */
+    * Get a conversion ratio between a source unit and a destination unit.
+    *
+    * @param srcUnitType unitType converting from.
+    * @param destUnitType unitType converting to.
+    * @returns Numeric ratio of the conversion.
+    */
   def conversionScale(srcUnitType: java.lang.String, destUnitType: java.lang.String): scala.Double = js.native
 }
 

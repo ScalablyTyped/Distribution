@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Graph2dBarChartOption extends js.Object {
   var align: js.UndefOr[Graph2dBarChartAlign] = js.undefined
   var minWidth: js.UndefOr[scala.Double] = js.undefined

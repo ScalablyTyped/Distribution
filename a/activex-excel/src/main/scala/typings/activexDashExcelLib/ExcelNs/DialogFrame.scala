@@ -33,19 +33,11 @@ class DialogFrame protected () extends js.Object {
   def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: js.Any, AlwaysSuggest: js.Any): js.Any = js.native
   def CheckSpelling(CustomDictionary: js.Any, IgnoreUppercase: js.Any, AlwaysSuggest: js.Any, SpellLang: js.Any): js.Any = js.native
   /**
-           * @param Appearance [Appearance=2]
-           * @param Format [Format=-4147]
-           */
+    * @param Appearance [Appearance=2]
+    * @param Format [Format=-4147]
+    */
   def CopyPicture(): js.Any = js.native
-  /**
-           * @param Appearance [Appearance=2]
-           * @param Format [Format=-4147]
-           */
   def CopyPicture(Appearance: XlPictureAppearance): js.Any = js.native
-  /**
-           * @param Appearance [Appearance=2]
-           * @param Format [Format=-4147]
-           */
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): js.Any = js.native
   def Select(): js.Any = js.native
   def Select(Replace: js.Any): js.Any = js.native

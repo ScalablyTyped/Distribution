@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AssignmentProperty extends Node {
   var computed: scala.Boolean
   var decorators: js.UndefOr[js.Array[Decorator]] = js.undefined

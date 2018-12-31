@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VimeoTextTrack extends js.Object {
   var kind: java.lang.String
   var label: java.lang.String

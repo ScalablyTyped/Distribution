@@ -11,7 +11,6 @@ object layoutNs extends js.Object {
   @JSName("DirectedGraph")
   @js.native
   object DirectedGraphNs extends js.Object {
-    
     trait Edge extends js.Object {
       var height: js.UndefOr[scala.Double] = js.undefined
       var labeloffset: js.UndefOr[scala.Double] = js.undefined
@@ -22,7 +21,6 @@ object layoutNs extends js.Object {
       var weight: js.UndefOr[scala.Double] = js.undefined
       var width: js.UndefOr[scala.Double] = js.undefined
     }
-    
     
     trait LayoutOptions extends js.Object {
       var clusterPadding: js.UndefOr[jointjsLib.jointjsMod.diaNs.Padding] = js.undefined
@@ -66,7 +64,6 @@ object layoutNs extends js.Object {
             ])
           ] = js.undefined
     }
-    
     
     trait Node extends js.Object {
       var height: js.UndefOr[scala.Double] = js.undefined

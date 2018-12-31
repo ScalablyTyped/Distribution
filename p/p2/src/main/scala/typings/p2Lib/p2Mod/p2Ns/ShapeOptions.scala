@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShapeOptions extends SharedShapeOptions {
   var `type`: js.UndefOr[scala.Double] = js.undefined
 }

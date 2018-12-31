@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IResolverValidationOptions extends js.Object {
   var allowResolversNotInSchema: js.UndefOr[scala.Boolean] = js.undefined
   var requireResolversForAllFields: js.UndefOr[scala.Boolean] = js.undefined

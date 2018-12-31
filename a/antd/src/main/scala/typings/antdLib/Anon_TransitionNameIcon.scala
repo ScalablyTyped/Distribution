@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TransitionNameIcon extends js.Object {
   var icon: reactLib.reactMod.Global.JSXNs.Element
   var okType: js.UndefOr[

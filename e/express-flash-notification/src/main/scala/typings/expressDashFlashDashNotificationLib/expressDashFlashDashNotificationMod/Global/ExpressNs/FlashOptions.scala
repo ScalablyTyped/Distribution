@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlashOptions extends js.Object {
   var message: js.UndefOr[java.lang.String] = js.undefined
   var redirect: js.UndefOr[scala.Boolean] = js.undefined

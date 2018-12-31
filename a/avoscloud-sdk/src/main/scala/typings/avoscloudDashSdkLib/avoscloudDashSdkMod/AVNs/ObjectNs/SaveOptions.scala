@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SaveOptions
   extends avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.SuccessFailureOptions
      with avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.SilentOption

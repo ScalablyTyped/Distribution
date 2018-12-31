@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventsResponseObject extends js.Object {
   var divisions: js.Array[java.lang.String]
   var end: java.lang.String

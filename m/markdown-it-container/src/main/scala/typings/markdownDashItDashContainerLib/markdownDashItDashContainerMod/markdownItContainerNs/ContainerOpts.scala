@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContainerOpts extends js.Object {
   var marker: js.UndefOr[java.lang.String] = js.undefined
   var render: js.UndefOr[

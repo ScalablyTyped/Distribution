@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RegisterStreamProtocolRequest extends js.Object {
   var headers: Headers
   var method: java.lang.String

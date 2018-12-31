@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Node extends js.Object {
   var end: scala.Double
   var loc: js.UndefOr[estreeLib.estreeMod.SourceLocation] = js.undefined

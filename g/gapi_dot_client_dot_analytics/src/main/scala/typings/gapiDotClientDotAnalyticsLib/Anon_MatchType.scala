@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MatchType extends js.Object {
   /** Type of comparison. Possible values are LESS_THAN, GREATER_THAN or EQUAL. */
   var comparisonType: js.UndefOr[java.lang.String] = js.undefined

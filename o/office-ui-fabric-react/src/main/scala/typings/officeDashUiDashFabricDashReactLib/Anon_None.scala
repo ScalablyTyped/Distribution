@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_None extends js.Object {
   var all: officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibNumbers.`1`
   var inputOnly: officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibNumbers.`2`

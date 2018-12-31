@@ -12,29 +12,29 @@ sealed trait SurfaceCapabilities extends js.Object
 @js.native
 object SurfaceCapabilities extends js.Object {
   /**
-       * The ability to output audio.
-       */
+    * The ability to output audio.
+    */
   @js.native
   sealed trait AUDIO_OUTPUT
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.SurfaceCapabilities
   
   /**
-       * The ability to output a MediaResponse
-       */
+    * The ability to output a MediaResponse
+    */
   @js.native
   sealed trait MEDIA_RESPONSE_AUDIO
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.SurfaceCapabilities
   
   /**
-       * The ability to output on a screen
-       */
+    * The ability to output on a screen
+    */
   @js.native
   sealed trait SCREEN_OUTPUT
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.SurfaceCapabilities
   
   /**
-       * The ability to open a web URL
-       */
+    * The ability to open a web URL
+    */
   @js.native
   sealed trait WEB_BROWSER
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.SurfaceCapabilities

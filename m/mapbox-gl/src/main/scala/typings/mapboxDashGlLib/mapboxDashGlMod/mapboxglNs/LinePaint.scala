@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinePaint extends js.Object {
   var `line-blur`: js.UndefOr[scala.Double | StyleFunction | Expression] = js.undefined
   var `line-blur-transition`: js.UndefOr[Transition] = js.undefined

@@ -12,8 +12,8 @@ sealed trait ContainerOptions extends js.Object
 @js.native
 object ContainerOptions extends js.Object {
   /**
-       * No option.
-       */
+    * No option.
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesFileContainerInterfacesMod.ContainerOptions

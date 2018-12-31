@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransitionerState extends js.Object {
   var layout: NavigationLayout
   var position: reactDashNativeLib.reactDashNativeMod.AnimatedNs.Value

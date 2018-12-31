@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PromptQuestionConfirm extends PromptQuestionBase {
   @JSName("default")
   var default_PromptQuestionConfirm: js.UndefOr[PromptValueConfirm] = js.undefined

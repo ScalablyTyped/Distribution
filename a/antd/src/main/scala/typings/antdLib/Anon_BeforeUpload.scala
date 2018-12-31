@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BeforeUpload extends js.Object {
   var accept: java.lang.String
   var action: java.lang.String

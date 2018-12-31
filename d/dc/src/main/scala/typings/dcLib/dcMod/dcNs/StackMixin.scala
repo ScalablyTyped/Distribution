@@ -11,7 +11,10 @@ trait StackMixin[T] extends js.Object {
   var hidableStacks_Original: IGetSet[scala.Boolean, T] = js.native
   // title(stackName: string, titleFn: Accessor<any, T>);
   @JSName("stackLayout")
-  var stackLayout_Original: IGetSet[_, T] = js.native
+  var stackLayout_Original: IGetSet[
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify d3.layout.Stack<Array<any>, any> */ _, 
+    T
+  ] = js.native
   def hidableStacks(): scala.Boolean = js.native
   def hidableStacks(t: scala.Boolean): scala.Boolean = js.native
   def hideStack(name: java.lang.String): scala.Unit = js.native
@@ -22,6 +25,8 @@ trait StackMixin[T] extends js.Object {
   // title(stackName: string, titleFn: Accessor<any, T>);
   def stackLayout(): js.Any = js.native
   // title(stackName: string, titleFn: Accessor<any, T>);
-  def stackLayout(t: js.Any): js.Any = js.native
+  def stackLayout(
+    t: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify d3.layout.Stack<Array<any>, any> */ js.Any
+  ): js.Any = js.native
 }
 

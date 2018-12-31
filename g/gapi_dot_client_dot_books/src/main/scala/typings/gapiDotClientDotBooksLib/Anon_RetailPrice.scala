@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RetailPrice extends js.Object {
   /** The finsky offer type (e.g., PURCHASE=0 RENTAL=3) */
   var finskyOfferType: js.UndefOr[scala.Double] = js.undefined

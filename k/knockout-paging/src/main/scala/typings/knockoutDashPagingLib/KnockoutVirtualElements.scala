@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KnockoutVirtualElements extends js.Object {
   var allowedBindings: org.scalablytyped.runtime.StringDictionary[scala.Boolean]
   def childNodes(node: KnockoutVirtualElement): js.Array[stdLib.Node]

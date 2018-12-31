@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait TitleLevel extends js.Object
 
 /**
-       * Level of a title.
-      */
+  * Level of a title.
+  */
 @JSGlobal("sap.ui.core.TitleLevel")
 @js.native
 object TitleLevel extends js.Object {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Recipient extends js.Object {
   /** The delivery type for the recipient. */
   var deliveryType: js.UndefOr[java.lang.String] = js.undefined

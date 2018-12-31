@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TaskDefinition extends js.Object {
   var agentExecution: TaskExecution
   var author: java.lang.String

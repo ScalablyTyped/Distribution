@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPageSize extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -35,9 +34,9 @@ trait Anon_AccesstokenPageSize extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The name of the service.  See the [overview](/service-management/overview)
-                   * for naming requirements.  For example: `example.googleapis.com`.
-                   */
+    * The name of the service.  See the [overview](/service-management/overview)
+    * for naming requirements.  For example: `example.googleapis.com`.
+    */
   var serviceName: java.lang.String
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

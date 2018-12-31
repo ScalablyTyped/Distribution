@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object odata4analyticsNsMembers extends js.Object {
   /**
-             * Specify which components of the dimension shall be included in the valueset.
-             * @param bIncludeText Indicator whether or not to include the dimension text (if           available)
-             * in the value set.
-             * @param bIncludeAttributes Indicator whether or not to include all dimension attributes           (if
-             * available) in the value set.
-            */
+    * Specify which components of the dimension shall be included in the valueset.
+    * @param bIncludeText Indicator whether or not to include the dimension text (if           available)
+    * in the value set.
+    * @param bIncludeAttributes Indicator whether or not to include all dimension attributes           (if
+    * available) in the value set.
+    */
   def includeDimensionTextAttributes(bIncludeText: js.Any, bIncludeAttributes: js.Any): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDatePicker extends ISelect {
   /** [Config Option] (String) */
   var dateFormat: js.UndefOr[java.lang.String] = js.undefined

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // TestResult
-
 trait RawFileCoverage extends js.Object {
   var b: org.scalablytyped.runtime.NumberDictionary[scala.Double]
   var branchMap: org.scalablytyped.runtime.NumberDictionary[js.Any]

@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class Frustum protected () extends js.Object {
   def this(p0: js.UndefOr[Plane], p1: js.UndefOr[Plane], p2: js.UndefOr[Plane], p3: js.UndefOr[Plane], p4: js.UndefOr[Plane], p5: js.UndefOr[Plane]) = this()
   /**
-       * Array of 6 vectors.
-       */
+    * Array of 6 vectors.
+    */
   var planes: js.Array[Plane] = js.native
   def containsPoint(point: Vector3): scala.Boolean = js.native
   def copy(frustum: this.type): this.type = js.native

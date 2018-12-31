@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObjectExpression extends BaseNode {
   var properties: js.Array[Property]
   @JSName("type")

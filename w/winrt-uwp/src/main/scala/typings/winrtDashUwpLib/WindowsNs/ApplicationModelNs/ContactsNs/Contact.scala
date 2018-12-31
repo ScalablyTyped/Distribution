@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a contact. */
 @JSGlobal("Windows.ApplicationModel.Contacts.Contact")
 @js.native
+/** Creates a new instance of the Contact class. */
 class Contact () extends js.Object {
   /** Gets the contact addresses for a contact. */
   var addresses: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[ContactAddress] = js.native
@@ -80,7 +81,7 @@ class Contact () extends js.Object {
   /** Gets or puts the path to the audio file to play when an SMS/MMS message is received from the Contact . */
   var textToneToken: java.lang.String = js.native
   var thumbnail: js.Any = js.native
-   /* unmapped type *//** Gets the Web sites for a contact. */
+   /* unmapped type */ /** Gets the Web sites for a contact. */
   var websites: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[ContactWebsite] = js.native
   /** Gets the Yomi (phonetic Japanese equivalent) display name for a contact. */
   var yomiDisplayName: java.lang.String = js.native

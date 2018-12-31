@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HttpResponse extends js.Object {
   var body: js.UndefOr[nodeLib.NodeJSNs.ReadableStream] = js.undefined
   var content: java.lang.String | nodeLib.Buffer

@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 	* @brief XmlNode 对象是整个 DOM 的基础数据类型
 	* @detail 
 	*/
-
 @JSGlobal("Class_XmlNode")
 @js.native
 class Class_XmlNode () extends Class__object {
@@ -178,17 +177,6 @@ class Class_XmlNode () extends Class__object {
   	 * 
   	 */
   def cloneNode(): Class_XmlNode = js.native
-  /**
-  	 * 
-  	 * @brief 创建指定的节点的精确拷贝
-  	 * 
-  	 * 该方法将复制并返回调用它的节点的副本。如果传递给它的参数是 true，它还将递归复制当前节点的所有子孙节点。 否则，它只复制当前节点。返回的节点不属于文档树，它的 parentNode 属性为 null。当复制的是 Element 节点时，它的所有属性都将被复制。
-  	 * @param deep 是否深度拷贝，为 true 时，被克隆的节点会克隆原节点的所有子节点
-  	 * @return 返回所复制的节点
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def cloneNode(deep: scala.Boolean): Class_XmlNode = js.native
   /**
   	 * 

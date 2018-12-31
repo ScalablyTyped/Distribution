@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Properties used in any event or callback which needs to report a success.
- */
-
+  * Properties used in any event or callback which needs to report a success.
+  */
 trait SuccessResponse extends js.Object {
   /**
   	 * Error code. Returns 0.

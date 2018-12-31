@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LintOptions extends js.Object {
   var allowInlineConfig: js.UndefOr[scala.Boolean] = js.undefined
   var filename: js.UndefOr[java.lang.String] = js.undefined

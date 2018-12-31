@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SingleTileImageryProvider extends ImageryProvider {
   var url: java.lang.String
 }

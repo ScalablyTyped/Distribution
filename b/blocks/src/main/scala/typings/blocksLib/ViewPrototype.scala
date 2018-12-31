@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /////////////////////////////////////////
 // App.View
 /////////////////////////////////////////
-
 trait ViewPrototype
   extends /* propertyName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
@@ -23,8 +22,8 @@ trait ViewPrototype
   var options: js.UndefOr[Anon_UrlRoute] = js.undefined
   var parentView: js.UndefOr[js.Any] = js.undefined
   /**
-       * Override the ready method to perform actions when the DOM is ready and
-       * all data-query have been executed.
+    * Override the ready method to perform actions when the DOM is ready and
+    * all data-query have been executed.
   	 */
   var ready: js.UndefOr[js.Function] = js.undefined
   /**

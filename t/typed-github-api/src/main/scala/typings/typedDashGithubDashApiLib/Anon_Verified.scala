@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Verified extends js.Object {
   var payload: java.lang.String
   var reason: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.valid

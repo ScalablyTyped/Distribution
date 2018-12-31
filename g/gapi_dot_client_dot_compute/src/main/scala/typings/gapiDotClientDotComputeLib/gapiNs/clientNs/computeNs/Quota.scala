@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Quota extends js.Object {
   /** [Output Only] Quota limit for this metric. */
   var limit: js.UndefOr[scala.Double] = js.undefined

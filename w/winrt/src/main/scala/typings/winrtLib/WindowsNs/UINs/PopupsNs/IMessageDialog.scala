@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMessageDialog extends js.Object {
   var cancelCommandIndex: scala.Double
   var commands: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVector[IUICommand]

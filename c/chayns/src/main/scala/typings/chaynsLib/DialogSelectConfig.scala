@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // chayns.dialog.select()
-
 trait DialogSelectConfig extends js.Object {
   var buttons: js.UndefOr[js.Array[_]] = js.undefined
   		// TODO interface for buttons

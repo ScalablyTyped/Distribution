@@ -6,16 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * @hidden
-     */
+  * @hidden
+  */
 @JSImport("babylonjs", "Tmp")
 @js.native
 class Tmp ()
   extends babylonjsLib.BABYLONNs.Tmp
 
 /**
-     * @hidden
-     */
+  * @hidden
+  */
 @JSImport("babylonjs", "Tmp")
 @js.native
 object Tmp extends js.Object {

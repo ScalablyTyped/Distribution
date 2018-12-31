@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContourGenerateOptions extends js.Object {
   var dst: Layer
   var elevField: js.UndefOr[scala.Double] = js.undefined

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class WebGLRenderLists () extends js.Object {
   def dispose(): scala.Unit = js.native
   /**
-      *
-      * returns {<String> : <WebGLRenderList>}
-      */
+    *
+    * returns {<String> : <WebGLRenderList>}
+    */
   def get(scene: Scene, camera: Camera): WebGLRenderList = js.native
 }
 

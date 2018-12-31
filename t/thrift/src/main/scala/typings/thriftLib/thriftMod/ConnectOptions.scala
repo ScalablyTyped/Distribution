@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectOptions extends js.Object {
   var connect_timeout: js.UndefOr[scala.Double] = js.undefined
   var debug: js.UndefOr[scala.Boolean] = js.undefined

@@ -17,8 +17,8 @@ class Headers ()
 @js.native
 object Headers extends js.Object {
   /**
-       * Returns a new Headers instance from the given DOMString of Response Headers
-       */
+    * Returns a new Headers instance from the given DOMString of Response Headers
+    */
   def fromResponseHeaderString(headersString: java.lang.String): atAngularHttpLib.srcHeadersMod.Headers = js.native
 }
 

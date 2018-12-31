@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Played extends js.Object {
   var loaded: scala.Double
   var loadedSeconds: scala.Double

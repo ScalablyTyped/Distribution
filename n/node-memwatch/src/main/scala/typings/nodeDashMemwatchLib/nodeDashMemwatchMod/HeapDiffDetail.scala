@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HeapDiffDetail extends js.Object {
   var `+`: scala.Double
   var `-`: scala.Double

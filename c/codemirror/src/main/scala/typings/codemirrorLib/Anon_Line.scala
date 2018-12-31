@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Line extends js.Object {
   var bgClass: java.lang.String
   /** Object mapping gutter IDs to marker elements. */

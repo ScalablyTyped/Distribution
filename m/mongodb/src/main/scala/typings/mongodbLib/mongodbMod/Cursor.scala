@@ -80,7 +80,6 @@ class Cursor[T] ()
   def setCursorOption(field: java.lang.String, value: js.Object): Cursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#setReadPreference */
   def setReadPreference(readPreference: java.lang.String): Cursor[T] = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#setReadPreference */
   def setReadPreference(readPreference: ReadPreference): Cursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#showRecordId */
   def showRecordId(showRecordId: js.Object): Cursor[T] = js.native
@@ -90,19 +89,13 @@ class Cursor[T] ()
   def snapshot(snapshot: js.Object): Cursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#sort */
   def sort(keyOrList: java.lang.String): Cursor[T] = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#sort */
   def sort(keyOrList: java.lang.String, direction: scala.Double): Cursor[T] = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#sort */
   def sort(keyOrList: js.Array[js.Object]): Cursor[T] = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#sort */
   def sort(keyOrList: js.Array[js.Object], direction: scala.Double): Cursor[T] = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#sort */
   def sort(keyOrList: js.Object): Cursor[T] = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#sort */
   def sort(keyOrList: js.Object, direction: scala.Double): Cursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#stream */
   def stream(): Cursor[T] = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#stream */
   def stream(options: mongodbLib.Anon_TransformFunction): Cursor[T] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Cursor.html#toArray */
   def toArray(): js.Promise[js.Array[T]] = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TabsProps
   extends MDLHTMLAttributes
      with MDLDOMAttributes[Tabs] {

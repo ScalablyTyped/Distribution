@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FractalConfig extends js.Object {
   var project: js.UndefOr[atFrctlFractalLib.Anon_Title] = js.undefined
   var `project.author`: js.UndefOr[java.lang.String] = js.undefined

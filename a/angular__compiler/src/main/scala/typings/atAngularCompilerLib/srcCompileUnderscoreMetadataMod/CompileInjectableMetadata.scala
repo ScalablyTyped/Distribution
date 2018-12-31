@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompileInjectableMetadata extends js.Object {
   var deps: js.UndefOr[js.Array[_]] = js.undefined
   var providedIn: js.UndefOr[atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol] = js.undefined

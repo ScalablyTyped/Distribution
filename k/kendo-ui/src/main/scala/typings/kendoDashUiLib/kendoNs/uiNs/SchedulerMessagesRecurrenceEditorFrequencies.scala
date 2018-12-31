@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SchedulerMessagesRecurrenceEditorFrequencies extends js.Object {
   var daily: js.UndefOr[java.lang.String] = js.undefined
   var monthly: js.UndefOr[java.lang.String] = js.undefined

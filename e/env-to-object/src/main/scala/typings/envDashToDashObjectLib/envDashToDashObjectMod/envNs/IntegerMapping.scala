@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IntegerMapping extends GenericMapping {
   var radix: scala.Double
   @JSName("type")

@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Simple object representing a place, returned in the callback from the
- * [reverseGeocoder](Titanium.Geolocation.reverseGeocoder) method.
- */
-
+  * Simple object representing a place, returned in the callback from the
+  * [reverseGeocoder](Titanium.Geolocation.reverseGeocoder) method.
+  */
 trait GeocodedAddress extends js.Object {
   /**
   	 * Full address.

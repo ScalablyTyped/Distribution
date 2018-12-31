@@ -71,10 +71,6 @@ trait Animation extends js.Object {
   		 * 两个参数时表示在X轴缩放sx倍数，在Y轴缩放sy倍数
   		 */
   def scale(sx: scala.Double): Animation = js.native
-  /**
-  		 * 一个参数时，表示在X轴、Y轴同时缩放sx倍数；
-  		 * 两个参数时表示在X轴缩放sx倍数，在Y轴缩放sy倍数
-  		 */
   def scale(sx: scala.Double, sy: scala.Double): Animation = js.native
   /** 在X轴缩放sx倍数，在Y轴缩放sy倍数，在Z轴缩放sz倍数 */
   def scale3d(sx: scala.Double, sy: scala.Double, sz: scala.Double): Animation = js.native
@@ -90,11 +86,6 @@ trait Animation extends js.Object {
   		 * 两个参数时，分别在X轴倾斜ax度，在Y轴倾斜ay度
   		 */
   def skew(ax: scala.Double): Animation = js.native
-  /**
-  		 * 参数范围-180~180；
-  		 * 一个参数时，Y轴坐标不变，X轴坐标延顺时针倾斜ax度；
-  		 * 两个参数时，分别在X轴倾斜ax度，在Y轴倾斜ay度
-  		 */
   def skew(ax: scala.Double, ay: scala.Double): Animation = js.native
   /** 参数范围-180~180；Y轴坐标不变，X轴坐标延顺时针倾斜ax度 */
   def skewX(ax: scala.Double): Animation = js.native
@@ -108,13 +99,6 @@ trait Animation extends js.Object {
   		 * @param options 指定当前组动画的配置
   		 */
   def step(): scala.Unit = js.native
-  /**
-  		 * 调用动画操作方法后要调用 step() 来表示一组动画完成，
-  		 * 可以在一组动画中调用任意多个动画方法，
-  		 * 一组动画中的所有动画会同时开始，
-  		 * 一组动画完成后才会进行下一组动画。
-  		 * @param options 指定当前组动画的配置
-  		 */
   def step(options: CreateAnimationOptions): scala.Unit = js.native
   /** 长度值，如果传入 Number 则默认使用 px，可传入其他自定义单位的长度值 */
   def top(length: scala.Double): Animation = js.native
@@ -123,10 +107,6 @@ trait Animation extends js.Object {
   		 * 两个参数时，表示在X轴偏移tx，在Y轴偏移ty，单位px。
   		 */
   def translate(tx: scala.Double): Animation = js.native
-  /**
-  		 * 一个参数时，表示在X轴偏移tx，单位px；
-  		 * 两个参数时，表示在X轴偏移tx，在Y轴偏移ty，单位px。
-  		 */
   def translate(tx: scala.Double, ty: scala.Double): Animation = js.native
   /**
   		 * 在X轴偏移tx，在Y轴偏移ty，在Z轴偏移tz，单位px

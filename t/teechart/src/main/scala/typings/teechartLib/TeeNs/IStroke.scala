@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStroke extends js.Object {
   var cap: java.lang.String
   var chart: IChart

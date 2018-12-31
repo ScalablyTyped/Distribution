@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PortalContext extends js.Object {
   var capabilities: msportalfxDashTestLib.Anon_BrowserName
   var chromeDriverPath: js.UndefOr[java.lang.String] = js.undefined

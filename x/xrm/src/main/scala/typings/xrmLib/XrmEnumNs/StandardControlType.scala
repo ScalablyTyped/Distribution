@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait StandardControlType extends js.Object
 
 /**
-     * Constant Enum: Control types for {@link Controls.Control.getControlType Controls.Control.getControlType()}.
-     * @see {@link Xrm.Controls.ControlType}
-     */
+  * Constant Enum: Control types for {@link Controls.Control.getControlType Controls.Control.getControlType()}.
+  * @see {@link Xrm.Controls.ControlType}
+  */
 @JSGlobal("XrmEnum.StandardControlType")
 @js.native
 object StandardControlType extends js.Object {

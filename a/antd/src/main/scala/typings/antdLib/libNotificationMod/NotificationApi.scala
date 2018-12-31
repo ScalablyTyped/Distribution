@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NotificationApi extends js.Object {
   def close(key: java.lang.String): scala.Unit
   def config(options: ConfigProps): scala.Unit

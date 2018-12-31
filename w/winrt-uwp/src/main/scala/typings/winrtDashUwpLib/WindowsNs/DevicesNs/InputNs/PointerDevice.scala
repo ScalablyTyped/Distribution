@@ -14,7 +14,7 @@ abstract class PointerDevice () extends js.Object {
   /** Gets a value indicating the maximum number of contacts supported by the input device. */
   var maxContacts: scala.Double = js.native
   var maxPointersWithZDistance: js.Any = js.native
-   /* unmapped type *//** Gets the coordinates of the bounding rectangle supported by the input device. */
+   /* unmapped type */ /** Gets the coordinates of the bounding rectangle supported by the input device. */
   var physicalDeviceRect: winrtDashUwpLib.WindowsNs.FoundationNs.Rect = js.native
   /** Gets the pointer device type. */
   var pointerDeviceType: PointerDeviceType = js.native
@@ -29,15 +29,15 @@ abstract class PointerDevice () extends js.Object {
 @js.native
 object PointerDevice extends js.Object {
   /**
-                   * Gets information about the pointer device associated with the specified input pointer ID.
-                   * @param pointerId The ID of the pointer input.
-                   * @return The PointerDevice object that represents the associated pointer device.
-                   */
+    * Gets information about the pointer device associated with the specified input pointer ID.
+    * @param pointerId The ID of the pointer input.
+    * @return The PointerDevice object that represents the associated pointer device.
+    */
   def getPointerDevice(pointerId: scala.Double): winrtDashUwpLib.WindowsNs.DevicesNs.InputNs.PointerDevice = js.native
   /**
-                   * Gets information about the pointer devices attached to the system.
-                   * @return The collection of PointerDevice objects that represent the pointer devices attached to the system.
-                   */
+    * Gets information about the pointer devices attached to the system.
+    * @return The collection of PointerDevice objects that represent the pointer devices attached to the system.
+    */
   def getPointerDevices(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[winrtDashUwpLib.WindowsNs.DevicesNs.InputNs.PointerDevice] = js.native
 }
 

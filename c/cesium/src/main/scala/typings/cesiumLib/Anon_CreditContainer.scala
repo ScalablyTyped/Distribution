@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CreditContainer extends js.Object {
   var canvas: stdLib.HTMLCanvasElement
   var contextOptions: js.UndefOr[js.Any] = js.undefined

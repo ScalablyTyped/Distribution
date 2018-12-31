@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait INavigationRouteOptions extends js.Object {
   /**
   	 * If any of these patterns match, the route will not handle the request (even if a whitelist RegExp matches).

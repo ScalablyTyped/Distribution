@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FogDensity extends js.Object {
   var fogColor: threeLib.threeDashCoreMod.IUniform
   var fogDensity: threeLib.threeDashCoreMod.IUniform

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartStroke extends js.Object {
   var fill: java.lang.String
   var stroke: java.lang.String

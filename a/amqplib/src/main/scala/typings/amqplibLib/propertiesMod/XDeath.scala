@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait XDeath extends js.Object {
   var count: scala.Double
   var exchange: java.lang.String

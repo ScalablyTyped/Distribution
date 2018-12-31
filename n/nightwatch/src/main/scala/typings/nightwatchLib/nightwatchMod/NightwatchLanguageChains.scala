@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NightwatchLanguageChains extends js.Object {
   var and: Expect
   var at: Expect

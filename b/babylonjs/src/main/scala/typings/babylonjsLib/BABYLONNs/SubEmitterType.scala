@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation._
 sealed trait SubEmitterType extends js.Object
 
 /**
-     * Type of sub emitter
-     */
+  * Type of sub emitter
+  */
 @JSGlobal("BABYLON.SubEmitterType")
 @js.native
 object SubEmitterType extends js.Object {
   /**
-           * Attached to the particle over it's lifetime
-           */
+    * Attached to the particle over it's lifetime
+    */
   @js.native
   sealed trait ATTACHED
     extends babylonjsLib.BABYLONNs.SubEmitterType
   
   /**
-           * Created when the particle dies
-           */
+    * Created when the particle dies
+    */
   @js.native
   sealed trait END
     extends babylonjsLib.BABYLONNs.SubEmitterType

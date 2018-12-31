@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RowsRequestingEventUIParam extends js.Object {
   /**
   	 * Gets the next chunk index.

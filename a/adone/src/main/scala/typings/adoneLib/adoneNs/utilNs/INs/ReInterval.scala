@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReInterval extends js.Object {
   def clear(): scala.Unit
   def destroy(): scala.Unit

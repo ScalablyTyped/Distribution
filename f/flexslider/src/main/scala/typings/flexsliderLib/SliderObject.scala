@@ -35,7 +35,6 @@ trait SliderObject extends js.Object {
   def canAdvance(target: js.Any): scala.Boolean = js.native
            //Object: The manualControls element of the slider
   def flexAnimate(target: js.Any): js.Any = js.native
-           //Object: The manualControls element of the slider
   def flexAnimate(target: js.Any, pause: js.Any): js.Any = js.native
        //Function: returns boolean if slider can advance - (target) parameter
   def getTarget(dir: js.Any): js.Any = js.native

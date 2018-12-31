@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PrinterInfo extends js.Object {
   // Docs: http://electronjs.org/docs/api/structures/printer-info
   var description: java.lang.String

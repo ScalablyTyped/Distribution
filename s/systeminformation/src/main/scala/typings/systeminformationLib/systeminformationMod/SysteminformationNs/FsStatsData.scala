@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FsStatsData extends js.Object {
   var ms: scala.Double
   var rx: scala.Double

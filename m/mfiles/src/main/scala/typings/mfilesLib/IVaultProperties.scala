@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVaultProperties extends js.Object {
   var DisplayName: java.lang.String
   var EncryptionOfFileDataAtRest: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CellOptions extends js.Object {
   var chars: js.UndefOr[stdLib.Partial[stdLib.Record[CharName, java.lang.String]]] = js.undefined
   var colSpan: js.UndefOr[scala.Double] = js.undefined

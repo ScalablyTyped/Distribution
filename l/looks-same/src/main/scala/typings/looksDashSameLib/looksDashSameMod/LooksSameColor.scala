@@ -6,21 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Pass to looksSame.colors function
- */
-
+  * Pass to looksSame.colors function
+  */
 trait LooksSameColor extends js.Object {
   /**
-       * Blue
-       */
+    * Blue
+    */
   var B: scala.Double
   /**
-       * Green
-       */
+    * Green
+    */
   var G: scala.Double
   /**
-       * Red
-       */
+    * Red
+    */
   var R: scala.Double
 }
 

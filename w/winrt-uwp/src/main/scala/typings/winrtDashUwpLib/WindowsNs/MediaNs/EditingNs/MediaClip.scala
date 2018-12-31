@@ -34,9 +34,9 @@ abstract class MediaClip () extends js.Object {
   /** Gets or sets the volume of the media clip. */
   var volume: scala.Double = js.native
   /**
-                   * Gets the VideoEncodingProperties for the media clip.
-                   * @return The VideoEncodingProperties for the media clip.
-                   */
+    * Gets the VideoEncodingProperties for the media clip.
+    * @return The VideoEncodingProperties for the media clip.
+    */
   def getVideoEncodingProperties(): winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.VideoEncodingProperties = js.native
 }
 
@@ -45,31 +45,31 @@ abstract class MediaClip () extends js.Object {
 @js.native
 object MediaClip extends js.Object {
   /**
-                   * Creates a solid color video clip that displays a single color for a specified length of time. Solid color video clips are typically used to create an explicit gap between video segments.
-                   * @param color The color to display in the video clip.
-                   * @param originalDuration How long to display the color in the video clip.
-                   * @return A new media clip object containing the color-based video clip.
-                   */
+    * Creates a solid color video clip that displays a single color for a specified length of time. Solid color video clips are typically used to create an explicit gap between video segments.
+    * @param color The color to display in the video clip.
+    * @param originalDuration How long to display the color in the video clip.
+    * @return A new media clip object containing the color-based video clip.
+    */
   def createFromColor(color: winrtDashUwpLib.WindowsNs.UINs.Color, originalDuration: scala.Double): winrtDashUwpLib.WindowsNs.MediaNs.EditingNs.MediaClip = js.native
   /**
-                   * Creates a video clip from a video file.
-                   * @param file A StorageFile object representing the source video file.
-                   * @return A new media clip object containing a video clip of the video file.
-                   */
+    * Creates a video clip from a video file.
+    * @param file A StorageFile object representing the source video file.
+    * @return A new media clip object containing a video clip of the video file.
+    */
   def createFromFileAsync(file: winrtDashUwpLib.WindowsNs.StorageNs.IStorageFile): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.MediaNs.EditingNs.MediaClip] = js.native
   /**
-                   * Creates a video clip that displays a single image for a specified length of time.
-                   * @param file A StorageFile object representing the source image file.
-                   * @param originalDuration How long to display the image in the video clip.
-                   * @return A new media clip object containing the image-based video clip.
-                   */
+    * Creates a video clip that displays a single image for a specified length of time.
+    * @param file A StorageFile object representing the source image file.
+    * @param originalDuration How long to display the image in the video clip.
+    * @return A new media clip object containing the image-based video clip.
+    */
   def createFromImageFileAsync(file: winrtDashUwpLib.WindowsNs.StorageNs.IStorageFile, originalDuration: scala.Double): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.MediaNs.EditingNs.MediaClip] = js.native
   /**
-                   * Creates a video clip from a Direct3D surface.
-                   * @param surface The Direct3D surface.
-                   * @param originalDuration The initial duration of the created video clip.
-                   * @return A new media clip object containing the video clip.
-                   */
+    * Creates a video clip from a Direct3D surface.
+    * @param surface The Direct3D surface.
+    * @param originalDuration The initial duration of the created video clip.
+    * @return A new media clip object containing the video clip.
+    */
   def createFromSurface(
     surface: winrtDashUwpLib.WindowsNs.GraphicsNs.DirectXNs.Direct3D11Ns.IDirect3DSurface,
     originalDuration: scala.Double

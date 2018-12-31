@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Shortcut extends js.Object {
   /** The new description for the command. */
   var description: js.UndefOr[java.lang.String] = js.undefined

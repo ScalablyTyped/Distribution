@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Class_Routing")
 @js.native
+/**
+	 * 
+	 * @brief 创建一个消息处理器路由对象
+	 * @param map 初始化路由参数
+	 * 
+	 * 
+	 * 
+	 */
 class Class_Routing () extends Class_Handler {
-  /**
-  	 * 
-  	 * @brief 创建一个消息处理器路由对象
-  	 * @param map 初始化路由参数
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def this(map: js.Object) = this()
   /**
   	 * 

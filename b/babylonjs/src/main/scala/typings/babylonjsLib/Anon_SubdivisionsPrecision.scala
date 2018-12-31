@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SubdivisionsPrecision extends js.Object {
   var precision: js.UndefOr[Anon_W] = js.undefined
   var subdivisions: js.UndefOr[Anon_W] = js.undefined

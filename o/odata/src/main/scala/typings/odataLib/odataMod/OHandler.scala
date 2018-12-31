@@ -15,7 +15,6 @@ trait OHandler[T] extends js.Object {
   def beforeRouting(callback: js.Function1[/* routeParams */ js.Any, scala.Boolean]): OHandler[T] = js.native
   				    // this object holds all parameter for a route
   def config[T](): OHandler[T] = js.native
-  				    // this object holds all parameter for a route
   def config[T](options: Options): OHandler[T] = js.native
   def count[T](): OHandler[T] = js.native
   def deleteRef[T](resource: java.lang.String, id: java.lang.String): OHandler[T] = js.native

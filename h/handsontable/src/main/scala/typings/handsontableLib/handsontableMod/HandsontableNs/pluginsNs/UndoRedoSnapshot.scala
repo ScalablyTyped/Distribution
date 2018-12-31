@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UndoRedoSnapshot extends js.Object {
   var sheet: Sheet
   var stack: Stack

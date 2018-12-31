@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class default[T] protected () extends IndefiniteObservable[T] {
   /**
-       * The provided function should receive an observer and connect that
-       * observer's `next` method to an event source (for instance,
-       * `element.addEventListener('click', observer.next)`).
-       *
-       * It must return a function that will disconnect the observer from the event
-       * source.
-       */
+    * The provided function should receive an observer and connect that
+    * observer's `next` method to an event source (for instance,
+    * `element.addEventListener('click', observer.next)`).
+    *
+    * It must return a function that will disconnect the observer from the event
+    * source.
+    */
   def this(connect: indefiniteDashObservableLib.distTypesMod.Connect[T]) = this()
 }
 

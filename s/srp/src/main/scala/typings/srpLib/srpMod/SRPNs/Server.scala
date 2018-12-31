@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Server extends js.Object {
   def checkM1(M1: nodeLib.Buffer): nodeLib.Buffer
   def computeB(): nodeLib.Buffer

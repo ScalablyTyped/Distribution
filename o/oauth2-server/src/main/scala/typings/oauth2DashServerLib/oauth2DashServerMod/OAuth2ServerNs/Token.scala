@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * An interface representing the token(s) and associated data.
-     */
-
+  * An interface representing the token(s) and associated data.
+  */
 trait Token
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var accessToken: java.lang.String

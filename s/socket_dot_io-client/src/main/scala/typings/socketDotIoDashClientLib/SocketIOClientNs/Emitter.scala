@@ -41,13 +41,6 @@ trait Emitter extends js.Object {
   		 * @return This Emitter
   		 */
   def off(event: java.lang.String): Emitter = js.native
-  /**
-  		 * Removes a listener for a particular type of event. This will either
-  		 * remove a specific listener, or all listeners for this type of event
-  		 * @param event The event that we want to remove the listener of
-  		 * @param fn The function to remove, or null if we want to remove all functions
-  		 * @return This Emitter
-  		 */
   def off(event: java.lang.String, fn: js.Function): Emitter = js.native
   /**
   		 * Adds a listener for a particular event. Calling multiple times will add
@@ -76,17 +69,11 @@ trait Emitter extends js.Object {
   		 * @see off( event, fn )
   		 */
   def removeEventListener(event: java.lang.String): Emitter = js.native
-  /**
-  		 * @see off( event, fn )
-  		 */
   def removeEventListener(event: java.lang.String, fn: js.Function): Emitter = js.native
   /**
   		 * @see off( event, fn )
   		 */
   def removeListener(event: java.lang.String): Emitter = js.native
-  /**
-  		 * @see off( event, fn )
-  		 */
   def removeListener(event: java.lang.String, fn: js.Function): Emitter = js.native
 }
 

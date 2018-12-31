@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PluginInfo extends js.Object {
   var Config: PluginConfig
   var Enabled: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatetimepickerOptions extends js.Object {
   var autoclose: js.UndefOr[scala.Double | scala.Boolean] = js.undefined
   var calendarWeeks: js.UndefOr[scala.Boolean] = js.undefined

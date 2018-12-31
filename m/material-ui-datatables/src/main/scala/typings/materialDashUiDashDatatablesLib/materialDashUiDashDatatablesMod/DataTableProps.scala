@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataTableProps extends js.Object {
   /**
-       * The column structure.
-       * ```let columns: Column[] = [{
-       *      key: 'bookName',
-       *      label: 'Book Name & Author',
-       *      render: (__value: any, book: any) => book.name + ' by ' book.author
-       *  },```
-       */
+    * The column structure.
+    * ```let columns: Column[] = [{
+    *      key: 'bookName',
+    *      label: 'Book Name & Author',
+    *      render: (__value: any, book: any) => book.name + ' by ' book.author
+    *  },```
+    */
   var columns: js.Array[Column]
   var count: scala.Double
   /** The array of objects used as data for the table */

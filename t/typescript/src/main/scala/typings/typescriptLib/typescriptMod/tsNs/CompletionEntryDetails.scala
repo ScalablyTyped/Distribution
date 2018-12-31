@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompletionEntryDetails extends js.Object {
   var codeActions: js.UndefOr[js.Array[CodeAction]] = js.undefined
   var displayParts: js.Array[SymbolDisplayPart]

@@ -22,16 +22,10 @@ class Database () extends js.Object {
   def register(models: js.Array[ModelClass]): scala.Unit = js.native
   def register(models: ModelClass): scala.Unit = js.native
   /**
-       * @see Model#use()
-       */
+    * @see Model#use()
+    */
   def use(): scala.Unit = js.native
-  /**
-       * @see Model#use()
-       */
   def use(plugins: js.Array[Plugin]): scala.Unit = js.native
-  /**
-       * @see Model#use()
-       */
   def use(plugins: Plugin): scala.Unit = js.native
 }
 

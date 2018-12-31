@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChooseCityOptions
   extends BaseOptions[js.Any, js.Any] {
   		// 	是否显示热门城市，默认 true

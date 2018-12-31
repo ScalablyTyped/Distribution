@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITreeNodeProps[T] extends ITreeNode[T] {
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var contentRef: js.UndefOr[

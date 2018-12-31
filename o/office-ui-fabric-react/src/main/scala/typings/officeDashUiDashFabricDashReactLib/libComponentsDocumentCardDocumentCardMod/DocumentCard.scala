@@ -19,8 +19,8 @@ class DocumentCard protected ()
   var _onKeyDown: js.Any = js.native
   var _rootElement: js.Any = js.native
   /**
-       * Sets focus to the DocumentCard.
-       */
+    * Sets focus to the DocumentCard.
+    */
   /* CompleteClass */
   override def focus(): scala.Unit = js.native
 }

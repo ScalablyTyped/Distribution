@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChoreographyActivity extends FlowNode {
   var correlationKeys: js.Array[CorrelationKey]
   var initiatingParticipantRef: Participant

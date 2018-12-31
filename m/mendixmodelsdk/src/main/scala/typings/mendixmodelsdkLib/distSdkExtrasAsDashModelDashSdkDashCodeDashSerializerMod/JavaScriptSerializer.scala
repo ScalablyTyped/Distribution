@@ -17,9 +17,9 @@ class JavaScriptSerializer protected () extends js.Object {
 @js.native
 object JavaScriptSerializer extends js.Object {
   /**
-       * Given a unit, generates JavaScript(/TypeScript) code that would re-create the same unit.
-       * Useful as scaffolding for model generators.
-       */
+    * Given a unit, generates JavaScript(/TypeScript) code that would re-create the same unit.
+    * Useful as scaffolding for model generators.
+    */
   def serializeToJs(unit: mendixmodelsdkLib.distSdkInternalUnitsMod.IAbstractUnit): java.lang.String = js.native
 }
 

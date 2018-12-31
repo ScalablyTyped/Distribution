@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SheetProps extends js.Object {
   /** Name of Document Module in associated VBA Project */
   var CodeName: js.UndefOr[java.lang.String] = js.undefined

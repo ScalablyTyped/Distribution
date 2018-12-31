@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AlignLabelEventUIParam extends js.Object {
   /**
   	 * Used to obtain the maximum value of the bullet graph scale.

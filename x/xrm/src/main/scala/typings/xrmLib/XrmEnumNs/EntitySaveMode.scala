@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 sealed trait EntitySaveMode extends js.Object
 
 /**
-     * Constant Enum: {@link Entity.save Entity} Save Modes
-     * @see {@link Xrm.EntitySaveMode}
-     * @see {@link Entity}
-     * @see {@link Entity.save}
-     */
+  * Constant Enum: {@link Entity.save Entity} Save Modes
+  * @see {@link Xrm.EntitySaveMode}
+  * @see {@link Entity}
+  * @see {@link Entity.save}
+  */
 @JSGlobal("XrmEnum.EntitySaveMode")
 @js.native
 object EntitySaveMode extends js.Object {

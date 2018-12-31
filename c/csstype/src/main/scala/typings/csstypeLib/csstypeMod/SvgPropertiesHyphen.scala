@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SvgPropertiesHyphen[TLength] extends js.Object {
   var `alignment-baseline`: js.UndefOr[AlignmentBaselineProperty] = js.undefined
   var `baseline-shift`: js.UndefOr[BaselineShiftProperty[TLength]] = js.undefined

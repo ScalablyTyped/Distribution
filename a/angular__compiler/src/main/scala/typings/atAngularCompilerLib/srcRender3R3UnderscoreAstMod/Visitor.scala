@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Visitor[Result] extends js.Object {
   var visit: js.UndefOr[js.Function1[/* node */ Node, Result]] = js.undefined
   def visitBoundAttribute(attribute: BoundAttribute): Result

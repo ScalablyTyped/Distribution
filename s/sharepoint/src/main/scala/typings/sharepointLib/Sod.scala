@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Sod extends js.Object {
   var depkeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var key: java.lang.String

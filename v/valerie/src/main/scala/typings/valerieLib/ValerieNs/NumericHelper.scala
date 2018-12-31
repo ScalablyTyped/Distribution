@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // A helper for parsing and formatting numeric values.
-
 trait NumericHelper extends js.Object {
   // Adds thousands separators to the given numeric string.
   def addThousandsSeparator(numericString: java.lang.String): java.lang.String

@@ -6,33 +6,32 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Resource for non-supported content
-     */
-
+  * Resource for non-supported content
+  */
 trait Basic extends DomainResource {
   /**
-           * Contains extended information for property 'created'.
-           */
+    * Contains extended information for property 'created'.
+    */
   var _created: js.UndefOr[Element] = js.undefined
   /**
-           * Who created
-           */
+    * Who created
+    */
   var author: js.UndefOr[Reference] = js.undefined
   /**
-           * Kind of Resource
-           */
+    * Kind of Resource
+    */
   var code: CodeableConcept
   /**
-           * When created
-           */
+    * When created
+    */
   var created: js.UndefOr[date] = js.undefined
   /**
-           * Business identifier
-           */
+    * Business identifier
+    */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   /**
-           * Identifies the focus of this resource
-           */
+    * Identifies the focus of this resource
+    */
   var subject: js.UndefOr[Reference] = js.undefined
 }
 

@@ -41,8 +41,8 @@ trait SignaturePad extends js.Object {
     drawDot: js.Function1[/* _a */ signatureUnderscorePadLib.Anon_Color, scala.Unit]
   ): scala.Unit = js.native
   /**
-     * Privates
-     */
+    * Privates
+    */
   def _handleMouseDown(event: stdLib.MouseEvent): scala.Unit = js.native
   def _handleMouseEvents(event: stdLib.MouseEvent): scala.Unit = js.native
   def _handleMouseMove(event: stdLib.MouseEvent): scala.Unit = js.native
@@ -59,65 +59,54 @@ trait SignaturePad extends js.Object {
   def _strokeWidth(velocity: scala.Double): scala.Double = js.native
   def _toSVG(): java.lang.String = js.native
   /**
-     *   Clears the canvas
-     */
+    *   Clears the canvas
+    */
   def clear(): scala.Unit = js.native
   /**
-     *   Draws signature image from array of signature point groups
-     */
+    *   Draws signature image from array of signature point groups
+    */
   def fromData(
     pointGroups: js.Array[
       js.Array[signatureUnderscorePadLib.signatureUnderscorePadMod.SignaturePadNs.Point]
     ]
   ): scala.Unit = js.native
   /**
-     *   Draws signature image from data URL
-     */
+    *   Draws signature image from data URL
+    */
   def fromDataURL(dataUrl: java.lang.String): scala.Unit = js.native
-  /**
-     *   Draws signature image from data URL
-     */
   def fromDataURL(dataUrl: java.lang.String, options: signatureUnderscorePadLib.Anon_Callback): scala.Unit = js.native
   /**
-     *   Returns true if canvas is empty, otherwise returns false
-     */
+    *   Returns true if canvas is empty, otherwise returns false
+    */
   def isEmpty(): scala.Boolean = js.native
   /**
-     *   Unbinds all event handlers
-     */
+    *   Unbinds all event handlers
+    */
   def off(): scala.Unit = js.native
   /**
-     *   Rebinds all event handlers
-     */
+    *   Rebinds all event handlers
+    */
   def on(): scala.Unit = js.native
   /**
-     * Callback when stroke begin
-     */
+    * Callback when stroke begin
+    */
   def onBegin(event: stdLib.MouseEvent): scala.Unit = js.native
   /**
-     * Callback when stroke end.
-     */
+    * Callback when stroke end.
+    */
   def onEnd(event: stdLib.MouseEvent): scala.Unit = js.native
   /**
-     *   Returns array of signature point groups
-     */
+    *   Returns array of signature point groups
+    */
   def toData(): js.Array[
     js.Array[signatureUnderscorePadLib.signatureUnderscorePadMod.SignaturePadNs.Point]
   ] = js.native
   /**
-     *   Returns signature image as data URL.
-     *   If 'type' parameter is ommitted, PNG dataUrl is returned.
-     */
+    *   Returns signature image as data URL.
+    *   If 'type' parameter is ommitted, PNG dataUrl is returned.
+    */
   def toDataURL(): java.lang.String = js.native
-  /**
-     *   Returns signature image as data URL.
-     *   If 'type' parameter is ommitted, PNG dataUrl is returned.
-     */
   def toDataURL(`type`: java.lang.String): java.lang.String = js.native
-  /**
-     *   Returns signature image as data URL.
-     *   If 'type' parameter is ommitted, PNG dataUrl is returned.
-     */
   def toDataURL(`type`: java.lang.String, encoderOptions: js.Any): java.lang.String = js.native
 }
 

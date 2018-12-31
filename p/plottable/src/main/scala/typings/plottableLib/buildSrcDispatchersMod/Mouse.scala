@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("plottable/build/src/dispatchers", "Mouse")
 @js.native
+/**
+  * This constructor not be invoked directly.
+  *
+  * @constructor
+  */
 class Mouse protected ()
   extends plottableLib.buildSrcDispatchersMouseDispatcherMod.Mouse
 
@@ -22,12 +27,12 @@ object Mouse extends js.Object {
   var _MOUSEUP_EVENT_NAME: js.Any = js.native
   var _WHEEL_EVENT_NAME: js.Any = js.native
   /**
-       * Get a Mouse Dispatcher for the component tree.
-       * If one already exists on that <svg>, it will be returned; otherwise, a new one will be created.
-       *
-       * @param {SVGElement} elem
-       * @return {Dispatchers.Mouse}
-       */
+    * Get a Mouse Dispatcher for the component tree.
+    * If one already exists on that <svg>, it will be returned; otherwise, a new one will be created.
+    *
+    * @param {SVGElement} elem
+    * @return {Dispatchers.Mouse}
+    */
   def getDispatcher(component: plottableLib.buildSrcComponentsComponentMod.Component): plottableLib.buildSrcDispatchersMod.Mouse = js.native
 }
 

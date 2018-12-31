@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SeriesResource extends js.Object {
   var membership: MembershipResource
   /** Returns Series metadata for the given series ids. */

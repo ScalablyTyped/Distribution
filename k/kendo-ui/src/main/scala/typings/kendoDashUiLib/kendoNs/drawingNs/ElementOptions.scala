@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ElementOptions extends js.Object {
   var clip: js.UndefOr[Path] = js.undefined
   var cursor: js.UndefOr[java.lang.String] = js.undefined

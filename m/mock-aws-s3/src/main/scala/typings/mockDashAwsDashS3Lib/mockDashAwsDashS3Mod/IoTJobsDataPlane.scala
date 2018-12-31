@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "IoTJobsDataPlane")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class IoTJobsDataPlane ()
   extends awsDashSdkLib.awsDashSdkMod.IoTJobsDataPlane {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsIotjobsdataplaneMod.IoTJobsDataPlaneNs.ClientConfiguration) = this()
 }
 

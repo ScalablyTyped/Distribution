@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IInputEnabledEventArgs extends ICoreWindowEventArgs {
   var inputEnabled: scala.Boolean
 }

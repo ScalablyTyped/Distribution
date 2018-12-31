@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClientJS extends js.Object {
   /** @return A string containing the available resolution. */
   def getAvailableResolution(): java.lang.String
@@ -26,10 +25,10 @@ trait ClientJS extends js.Object {
   /** @return A string containing the current resolution. */
   def getCurrentResolution(): java.lang.String
   /**
-       * @param datapoints Any number of datapoints that are (or can be coerced to
-       *                   be) strings.
-       * @return A 32-bit integer representing the cumulative fingerprint.
-       */
+    * @param datapoints Any number of datapoints that are (or can be coerced to
+    *                   be) strings.
+    * @return A 32-bit integer representing the cumulative fingerprint.
+    */
   def getCustomFingerprint(datapoints: (java.lang.String | scala.Double)*): scala.Double
   // Device methods
   /** @return A string containing the device. */

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Target extends js.Object {
   /**
   			 * Selector specifying which fields to include in a partial response.

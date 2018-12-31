@@ -9,9 +9,7 @@ import scala.scalajs.js.annotation._
 trait LodashInvertBy extends js.Object {
   def apply[T](interatee: lodashLib.lodashMod.underscoreNs.ValueIteratee[T]): lodashLib.lodashMod.underscoreNs.Dictionary[js.Array[java.lang.String]] = js.native
   def apply[T /* <: js.Object */](
-    interatee: lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ],
+    interatee: lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any],
     `object`: T
   ): lodashLib.lodashMod.underscoreNs.Dictionary[js.Array[java.lang.String]] = js.native
   def apply[T](

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiagramEditable extends js.Object {
   var connectionTemplate: js.UndefOr[java.lang.String | js.Function] = js.undefined
   var drag: js.UndefOr[scala.Boolean | DiagramEditableDrag] = js.undefined

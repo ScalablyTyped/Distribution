@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BrowserLogOptions extends js.Object {
   var reporters: js.UndefOr[
     js.Array[

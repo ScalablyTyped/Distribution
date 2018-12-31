@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object underscoreNs {
   type Callback[R] = js.Function2[/* err */ stdLib.Error, /* result */ R, js.Any]
-  type F = js.Function1[/* repeated */js.Any, js.Any]
+  type F = js.Function1[/* repeated */ js.Any, js.Any]
   type F0[R] = js.Function1[/* cb */ Callback[R], js.Any]
   type F1[A, R] = js.Function2[/* a */ A, /* cb */ Callback[R], js.Any]
   type F2[A, B, R] = js.Function3[/* a */ A, /* b */ B, /* cb */ Callback[R], js.Any]
@@ -38,5 +38,5 @@ package object underscoreNs {
     /* cb */ Callback[R], 
     js.Any
   ]
-  type M = js.Function2[/* err */ stdLib.Error, /* repeated */js.Any, js.Array[js.Any]]
+  type M = js.Function2[/* err */ stdLib.Error, /* repeated */ js.Any, js.Array[js.Any]]
 }

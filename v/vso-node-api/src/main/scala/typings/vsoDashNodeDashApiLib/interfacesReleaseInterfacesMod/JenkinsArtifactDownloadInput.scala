@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JenkinsArtifactDownloadInput extends ArtifactDownloadInputBase {
   var artifactItems: js.Array[java.lang.String]
 }

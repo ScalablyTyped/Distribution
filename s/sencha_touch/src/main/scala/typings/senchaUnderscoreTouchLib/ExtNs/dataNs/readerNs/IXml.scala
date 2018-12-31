@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IXml extends IReader {
   /** [Method] Normalizes the data object
   		* @param data Object The raw data object.

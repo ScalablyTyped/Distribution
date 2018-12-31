@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line: interface-name
-
 trait ICalendarController extends js.Object {
   def collapseAll(): scala.Unit
   def deleteItem(itemId: java.lang.String): scala.Unit

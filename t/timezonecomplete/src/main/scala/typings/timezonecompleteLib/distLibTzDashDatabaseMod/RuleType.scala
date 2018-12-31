@@ -12,22 +12,22 @@ sealed trait RuleType extends js.Object
 @js.native
 object RuleType extends js.Object {
   /**
-       * No rule applies
-       */
+    * No rule applies
+    */
   @js.native
   sealed trait None
     extends timezonecompleteLib.distLibTzDashDatabaseMod.RuleType
   
   /**
-       * Fixed given offset
-       */
+    * Fixed given offset
+    */
   @js.native
   sealed trait Offset
     extends timezonecompleteLib.distLibTzDashDatabaseMod.RuleType
   
   /**
-       * Reference to a named set of rules
-       */
+    * Reference to a named set of rules
+    */
   @js.native
   sealed trait RuleName
     extends timezonecompleteLib.distLibTzDashDatabaseMod.RuleType

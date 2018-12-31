@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IProgressBar extends IComponent {
   /** [Method] Returns true if the progress bar is currently in a wait operation
   		* @returns Boolean True if waiting, else false

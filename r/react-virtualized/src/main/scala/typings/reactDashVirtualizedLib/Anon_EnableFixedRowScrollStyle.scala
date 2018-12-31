@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EnableFixedRowScrollStyle extends js.Object {
   var classNameBottomLeftGrid: js.UndefOr[java.lang.String] = js.undefined
   var classNameBottomRightGrid: js.UndefOr[java.lang.String] = js.undefined

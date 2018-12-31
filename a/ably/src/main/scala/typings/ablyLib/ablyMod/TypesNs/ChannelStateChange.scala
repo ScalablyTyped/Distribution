@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChannelStateChange extends js.Object {
   var current: ChannelState
   var previous: ChannelState

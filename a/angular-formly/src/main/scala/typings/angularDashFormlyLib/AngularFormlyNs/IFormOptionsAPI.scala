@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFormOptionsAPI extends js.Object {
   var data: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var fieldTransform: js.UndefOr[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Thread extends js.Object {
   /** The ID of the last history record that modified this thread. */
   var historyId: js.UndefOr[java.lang.String] = js.undefined

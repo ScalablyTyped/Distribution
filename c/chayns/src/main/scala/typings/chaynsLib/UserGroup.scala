@@ -6,12 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Enviroment Variables
- * User
- * interfaces
- */
+  * Enviroment Variables
+  * User
+  * interfaces
+  */
 // chayns.env.user.groups
-
 trait UserGroup extends js.Object {
   var id: scala.Double
   var isActive: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DurationMillis extends js.Object {
   /** The duration of the video in milliseconds. */
   var durationMillis: js.UndefOr[java.lang.String] = js.undefined

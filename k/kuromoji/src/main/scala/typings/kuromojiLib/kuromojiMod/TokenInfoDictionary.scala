@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TokenInfoDictionary extends js.Object {
   def addMapping(source: scala.Double, target: scala.Double): scala.Unit
   def buildDictionary(entries: js.Array[js.Array[_]]): org.scalablytyped.runtime.NumberDictionary[java.lang.String]

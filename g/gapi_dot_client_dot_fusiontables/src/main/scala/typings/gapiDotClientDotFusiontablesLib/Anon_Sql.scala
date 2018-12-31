@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Sql extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -20,20 +19,20 @@ trait Anon_Sql extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * A Fusion Tables SQL statement, which can be any of
-                   * - SELECT
-                   * - INSERT
-                   * - UPDATE
-                   * - DELETE
-                   * - SHOW
-                   * - DESCRIBE
-                   * - CREATE
-                   */
+    * A Fusion Tables SQL statement, which can be any of
+    * - SELECT
+    * - INSERT
+    * - UPDATE
+    * - DELETE
+    * - SHOW
+    * - DESCRIBE
+    * - CREATE
+    */
   var sql: java.lang.String
   /** Whether typed values are returned in the (JSON) response: numbers for numeric values and parsed geometries for KML values. Default is true. */
   var typed: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BasicConstraints extends js.Object {
   var cA: scala.Boolean
   var pathLenConstraint: scala.Double | asn1jsLib.asn1jsMod.Integer

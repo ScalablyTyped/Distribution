@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // HTMLAttributes (minus the 'data', 'icon', 'label', 'name', 'rows', 'size', 'title', 'value' attributes)
-
 trait MDLHTMLAttributes
   extends // Allows aria- and data- Attributes
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {

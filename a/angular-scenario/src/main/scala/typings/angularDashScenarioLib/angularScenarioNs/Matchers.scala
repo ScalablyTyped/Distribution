@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Matchers extends js.Object {
   def toBe(value: js.Any): scala.Unit
   def toBeDefined(): scala.Unit

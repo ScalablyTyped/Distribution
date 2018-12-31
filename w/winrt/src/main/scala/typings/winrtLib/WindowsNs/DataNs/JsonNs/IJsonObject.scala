@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IJsonObject extends IJsonValue {
   def getNamedArray(name: java.lang.String): JsonArray
   def getNamedBoolean(name: java.lang.String): scala.Boolean

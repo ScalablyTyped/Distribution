@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Transaction extends js.Object {
   def attach(query: lovefieldLib.lovefieldMod.lfNs.queryNs.Builder): js.Promise[js.Array[js.Object]]
   def begin(scope: js.Array[lovefieldLib.lovefieldMod.lfNs.schemaNs.Table]): js.Promise[scala.Unit]

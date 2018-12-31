@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Simple object passed to <Titanium.UI.create2DMatrix> to initialize a matrix.
- */
-
+  * Simple object passed to <Titanium.UI.create2DMatrix> to initialize a matrix.
+  */
 trait MatrixCreationDict extends js.Object {
   /**
   	 * Point to rotate around, specified as a dictionary object with `x` and `y`

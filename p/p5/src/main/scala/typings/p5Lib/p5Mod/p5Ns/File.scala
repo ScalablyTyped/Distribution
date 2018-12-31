@@ -5,33 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait File extends js.Object {
   /**
-       *   URL string containing image data.
-       */
+    *   URL string containing image data.
+    */
   var data: js.Any
   /**
-       *   Underlying File object. All normal File methods
-       *   can be called on this.
-       */
+    *   Underlying File object. All normal File methods
+    *   can be called on this.
+    */
   var file: js.Any
   /**
-       *   File name
-       */
+    *   File name
+    */
   var name: js.Any
   /**
-       *   File size
-       */
+    *   File size
+    */
   var size: js.Any
   /**
-       *   File subtype (usually the file extension jpg, png,
-       *   xml, etc.)
-       */
+    *   File subtype (usually the file extension jpg, png,
+    *   xml, etc.)
+    */
   var subtype: js.Any
   /**
-       *   File type (image, text, etc.)
-       */
+    *   File type (image, text, etc.)
+    */
   var `type`: js.Any
 }
 

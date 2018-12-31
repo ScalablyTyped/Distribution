@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnRenderItem extends js.Object {
   var onRenderItem: js.Function1[
     /* props */ officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagPickerDotTypesMod.ITagItemProps, 

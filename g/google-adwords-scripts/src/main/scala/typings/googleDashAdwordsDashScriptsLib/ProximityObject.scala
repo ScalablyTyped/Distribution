@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProximityObject extends js.Object {
   var address: js.UndefOr[AddressObject] = js.undefined
   var bidModifier: js.UndefOr[scala.Double] = js.undefined

@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         *  A mutable text container with undo/redo support and the ability to
-         *  annotate logical regions in the text.
-         */
+  *  A mutable text container with undo/redo support and the ability to
+  *  annotate logical regions in the text.
+  */
 @js.native
 trait TextBuffer extends js.Object {
   var conflict: scala.Boolean = js.native
@@ -22,24 +22,21 @@ trait TextBuffer extends js.Object {
   var refcount: scala.Double = js.native
   var stoppedChangingDelay: scala.Double = js.native
   /**
-               *  Call within a transaction to terminate the function's execution and
-               *  revert any changes performed up to the abortion.
-               */
+    *  Call within a transaction to terminate the function's execution and
+    *  revert any changes performed up to the abortion.
+    */
   def abortTransaction(): scala.Unit = js.native
   // Markers
   /** Create a layer to contain a set of related markers. */
   def addMarkerLayer(): MarkerLayer = js.native
-  // Markers
-  /** Create a layer to contain a set of related markers. */
   def addMarkerLayer(options: textDashBufferLib.Anon_MaintainHistory): MarkerLayer = js.native
   /** Append text to the end of the buffer. */
   def append(text: java.lang.String): Range = js.native
-  /** Append text to the end of the buffer. */
   def append(text: java.lang.String, options: textDashBufferLib.Anon_Undo): Range = js.native
   /**
-               *  Scan regular expression matches in the entire buffer in reverse order,
-               *  calling the given iterator function on each match.
-               */
+    *  Scan regular expression matches in the entire buffer in reverse order,
+    *  calling the given iterator function on each match.
+    */
   def backwardsScan(
     regex: stdLib.RegExp,
     iterator: js.Function1[
@@ -48,9 +45,9 @@ trait TextBuffer extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-               *  Scan regular expression matches in the entire buffer in reverse order,
-               *  calling the given iterator function on each match.
-               */
+    *  Scan regular expression matches in the entire buffer in reverse order,
+    *  calling the given iterator function on each match.
+    */
   def backwardsScan(
     regex: stdLib.RegExp,
     options: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.OptionsNs.ScanContext,
@@ -60,9 +57,9 @@ trait TextBuffer extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-               *  Scan regular expression matches in a given range in reverse order,
-               *  calling the given iterator function on each match.
-               */
+    *  Scan regular expression matches in a given range in reverse order,
+    *  calling the given iterator function on each match.
+    */
   def backwardsScanInRange(
     regex: stdLib.RegExp,
     range: RangeCompatible,
@@ -72,9 +69,9 @@ trait TextBuffer extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-               *  Scan regular expression matches in a given range in reverse order,
-               *  calling the given iterator function on each match.
-               */
+    *  Scan regular expression matches in a given range in reverse order,
+    *  calling the given iterator function on each match.
+    */
   def backwardsScanInRange(
     regex: stdLib.RegExp,
     range: RangeCompatible,
@@ -84,35 +81,31 @@ trait TextBuffer extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /**
-               *  Convert a position in the buffer in row/column coordinates to an absolute
-               *  character offset, inclusive of line ending characters.
-               */
   def characterIndexForPosition(position: js.Tuple2[scala.Double, scala.Double]): scala.Double = js.native
   /**
-               *  Convert a position in the buffer in row/column coordinates to an absolute
-               *  character offset, inclusive of line ending characters.
-               */
+    *  Convert a position in the buffer in row/column coordinates to an absolute
+    *  character offset, inclusive of line ending characters.
+    */
   def characterIndexForPosition(position: Point): scala.Double = js.native
   /**
-               *  Clear the undo stack. When calling this method within a transaction,
-               *  the ::onDidChangeText event will not be triggered because the information
-               *  describing the changes is lost.
-               */
+    *  Clear the undo stack. When calling this method within a transaction,
+    *  the ::onDidChangeText event will not be triggered because the information
+    *  describing the changes is lost.
+    */
   def clearUndoStack(): scala.Unit = js.native
   /** Clip the given point so it is at a valid position in the buffer. */
   def clipPosition(position: PointCompatible): Point = js.native
   /** Clip the given range so it starts and ends at valid positions. */
   def clipRange(range: RangeCompatible): Range = js.native
   /**
-               *  Create a pointer to the current state of the buffer for use with
-               *  ::revertToCheckpoint and ::groupChangesSinceCheckpoint.
-               */
+    *  Create a pointer to the current state of the buffer for use with
+    *  ::revertToCheckpoint and ::groupChangesSinceCheckpoint.
+    */
   def createCheckpoint(): scala.Double = js.native
   /**
-               *  Schedules a 'did-stop-changing' emission. The event will be emitted between
-               *  now and TextBuffer::stoppedChangingDelay milliseconds in the future.
-               */
+    *  Schedules a 'did-stop-changing' emission. The event will be emitted between
+    *  now and TextBuffer::stoppedChangingDelay milliseconds in the future.
+    */
   def debouncedEmitDidStopChangingEvent(): scala.Unit = js.native
   /** Delete the text in the given range. */
   def delete(range: RangeCompatible): Range = js.native
@@ -128,10 +121,10 @@ trait TextBuffer extends js.Object {
   /** Find markers conforming to the given parameters in the default marker layer. */
   def findMarkers(params: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.OptionsNs.FindMarker): js.Array[Marker] = js.native
   /**
-               *  Returns a list of changes since the given checkpoint.
-               *  If the given checkpoint is no longer present in the undo history, this method
-               *  will return an empty Array.
-               */
+    *  Returns a list of changes since the given checkpoint.
+    *  If the given checkpoint is no longer present in the undo history, this method
+    *  will return an empty Array.
+    */
   def getChangesSinceCheckpoint(checkpoint: scala.Double): js.Array[textDashBufferLib.Anon_NewExtent] = js.native
   /** Get the default MarkerLayer. */
   def getDefaultMarkerLayer(): MarkerLayer = js.native
@@ -154,9 +147,9 @@ trait TextBuffer extends js.Object {
   /** Get the number of markers in the default marker layer. */
   def getMarkerCount(): scala.Double = js.native
   /**
-               *  Get a MarkerLayer by id.
-               *  Returns a MarkerLayer or `` if no layer exists with the given id.
-               */
+    *  Get a MarkerLayer by id.
+    *  Returns a MarkerLayer or `` if no layer exists with the given id.
+    */
   def getMarkerLayer(id: java.lang.String): js.UndefOr[MarkerLayer] = js.native
   /** Get all existing markers on the default marker layer. */
   def getMarkers(): js.Array[Marker] = js.native
@@ -168,9 +161,9 @@ trait TextBuffer extends js.Object {
   /** Get the range spanning from [0, 0] to ::getEndPosition. */
   def getRange(): Range = js.native
   /**
-               *  Get the number of milliseconds that will elapse without a change before
-               *  ::onDidStopChanging observers are invoked following a change.
-               */
+    *  Get the number of milliseconds that will elapse without a change before
+    *  ::onDidStopChanging observers are invoked following a change.
+    */
   def getStoppedChangingDelay(): scala.Double = js.native
   /** Get the entire text of the buffer. */
   def getText(): java.lang.String = js.native
@@ -179,16 +172,15 @@ trait TextBuffer extends js.Object {
   /** Get the path of the associated file. */
   def getUri(): java.lang.String = js.native
   /**
-               *  Group all changes since the given checkpoint into a single transaction for
-               *  purposes of undo/redo.
-               *  Returns a boolean indicating whether the operation succeeded.
-               */
+    *  Group all changes since the given checkpoint into a single transaction for
+    *  purposes of undo/redo.
+    *  Returns a boolean indicating whether the operation succeeded.
+    */
   def groupChangesSinceCheckpoint(checkpoint: scala.Double): scala.Boolean = js.native
   /** Identifies if the buffer belongs to multiple editors. */
   def hasMultipleEditors(): scala.Boolean = js.native
   /** Insert text at the given position. */
   def insert(position: PointCompatible, text: java.lang.String): Range = js.native
-  /** Insert text at the given position. */
   def insert(position: PointCompatible, text: java.lang.String, options: textDashBufferLib.Anon_Undo): Range = js.native
   /** Returns whether or not the given buffer is alive. */
   def isAlive(): scala.Boolean = js.native
@@ -198,16 +190,16 @@ trait TextBuffer extends js.Object {
   /** Determine whether the buffer is empty. */
   def isEmpty(): scala.Boolean = js.native
   /**
-               *  Determine if the in-memory contents of the buffer conflict with the on-disk
-               *  contents of its associated file.
-               */
+    *  Determine if the in-memory contents of the buffer conflict with the on-disk
+    *  contents of its associated file.
+    */
   def isInConflict(): scala.Boolean = js.native
   // File Details
   /**
-               *  Determine if the in-memory contents of the buffer differ from its contents
-               *  on disk.
-               *  If the buffer is unsaved, always returns true unless the buffer is empty.
-               */
+    *  Determine if the in-memory contents of the buffer differ from its contents
+    *  on disk.
+    *  If the buffer is unsaved, always returns true unless the buffer is empty.
+    */
   def isModified(): scala.Boolean = js.native
   /** Returns whether or not this text buffer is currently retained. */
   def isRetained(): scala.Boolean = js.native
@@ -218,27 +210,25 @@ trait TextBuffer extends js.Object {
   /** Get the text of the line at the given row, without its line ending. */
   def lineForRow(row: scala.Double): js.UndefOr[java.lang.String] = js.native
   /**
-               *  Get the length of the line for the given 0-indexed row, without its line
-               *  ending.
-               */
+    *  Get the length of the line for the given 0-indexed row, without its line
+    *  ending.
+    */
   def lineLengthForRow(row: scala.Double): scala.Double = js.native
   /** Create a marker at the given position with no tail in the default marker layer. */
   def markPosition(position: PointCompatible): Marker = js.native
-  /** Create a marker at the given position with no tail in the default marker layer. */
   def markPosition(position: PointCompatible, options: textDashBufferLib.Anon_ExclusiveInvalidate): Marker = js.native
   /** Create a marker with the given range in the default marker layer. */
   def markRange(range: RangeCompatible): Marker = js.native
-  /** Create a marker with the given range in the default marker layer. */
   def markRange(range: RangeCompatible, properties: textDashBufferLib.Anon_Exclusive): Marker = js.native
   /**
-               *  Given a row, find the next row that's not blank.
-               *  Returns a number or null if there's no next non-blank row.
-               */
+    *  Given a row, find the next row that's not blank.
+    *  Returns a number or null if there's no next non-blank row.
+    */
   def nextNonBlankRow(startRow: scala.Double): scala.Double | scala.Null = js.native
   /**
-               *  Invoke the given callback synchronously when the content of the buffer
-               *  changes. You should probably not be using this in packages.
-               */
+    *  Invoke the given callback synchronously when the content of the buffer
+    *  changes. You should probably not be using this in packages.
+    */
   def onDidChange(
     callback: js.Function1[
       /* event */ textDashBufferLib.textDashBufferMod.Global.TextBufferNs.EventsNs.BufferChanged, 
@@ -252,9 +242,9 @@ trait TextBuffer extends js.Object {
   /** Invoke the given callback when the value of ::getPath changes. */
   def onDidChangePath(callback: js.Function1[/* path */ java.lang.String, scala.Unit]): eventDashKitLib.eventDashKitMod.Disposable = js.native
   /**
-               *  Invoke the given callback synchronously when a transaction finishes with
-               *  a list of all the changes in the transaction.
-               */
+    *  Invoke the given callback synchronously when a transaction finishes with
+    *  a list of all the changes in the transaction.
+    */
   def onDidChangeText(
     callback: js.Function1[
       /* event */ textDashBufferLib.textDashBufferMod.Global.TextBufferNs.EventsNs.BufferStoppedChanging, 
@@ -262,9 +252,9 @@ trait TextBuffer extends js.Object {
     ]
   ): eventDashKitLib.eventDashKitMod.Disposable = js.native
   /**
-               *  Invoke the given callback when the in-memory contents of the buffer become
-               *  in conflict with the contents of the file on disk.
-               */
+    *  Invoke the given callback when the in-memory contents of the buffer become
+    *  in conflict with the contents of the file on disk.
+    */
   def onDidConflict(callback: js.Function0[scala.Unit]): eventDashKitLib.eventDashKitMod.Disposable = js.native
   def onDidCreateMarker(callback: js.Function1[/* marker */ Marker, scala.Unit]): eventDashKitLib.eventDashKitMod.Disposable = js.native
   /** Invoke the given callback after the file backing the buffer is deleted. */
@@ -272,9 +262,9 @@ trait TextBuffer extends js.Object {
   /** Invoke the given callback when the buffer is destroyed. */
   def onDidDestroy(callback: js.Function0[scala.Unit]): eventDashKitLib.eventDashKitMod.Disposable = js.native
   /**
-               *  Invoke the given callback after the buffer is reloaded from the contents
-               *  of its file on disk.
-               */
+    *  Invoke the given callback after the buffer is reloaded from the contents
+    *  of its file on disk.
+    */
   def onDidReload(callback: js.Function0[scala.Unit]): eventDashKitLib.eventDashKitMod.Disposable = js.native
   /** Invoke the given callback after the buffer is saved to disk. */
   def onDidSave(
@@ -284,9 +274,9 @@ trait TextBuffer extends js.Object {
     ]
   ): eventDashKitLib.eventDashKitMod.Disposable = js.native
   /**
-               *  Invoke the given callback asynchronously following one or more changes after
-               *  ::getStoppedChangingDelay milliseconds elapse without an additional change.
-               */
+    *  Invoke the given callback asynchronously following one or more changes after
+    *  ::getStoppedChangingDelay milliseconds elapse without an additional change.
+    */
   def onDidStopChanging(
     callback: js.Function1[
       /* event */ textDashBufferLib.textDashBufferMod.Global.TextBufferNs.EventsNs.BufferStoppedChanging, 
@@ -294,15 +284,15 @@ trait TextBuffer extends js.Object {
     ]
   ): eventDashKitLib.eventDashKitMod.Disposable = js.native
   /**
-               *  Invoke the given callback when all marker ::onDidChange observers have been
-               *  notified following a change to the buffer.
-               */
+    *  Invoke the given callback when all marker ::onDidChange observers have been
+    *  notified following a change to the buffer.
+    */
   def onDidUpdateMarkers(callback: js.Function0[scala.Unit]): eventDashKitLib.eventDashKitMod.Disposable = js.native
   // Event Subscription
   /**
-               *  Invoke the given callback synchronously before the content of the buffer
-               *  changes.
-               */
+    *  Invoke the given callback synchronously before the content of the buffer
+    *  changes.
+    */
   def onWillChange(
     callback: js.Function1[
       /* event */ textDashBufferLib.textDashBufferMod.Global.TextBufferNs.EventsNs.BufferChanging, 
@@ -310,15 +300,15 @@ trait TextBuffer extends js.Object {
     ]
   ): eventDashKitLib.eventDashKitMod.Disposable = js.native
   /**
-               *  Invoke the given callback before the buffer is reloaded from the contents
-               *  of its file on disk.
-               */
+    *  Invoke the given callback before the buffer is reloaded from the contents
+    *  of its file on disk.
+    */
   def onWillReload(callback: js.Function0[scala.Unit]): eventDashKitLib.eventDashKitMod.Disposable = js.native
   /**
-               *  Invoke the given callback before the buffer is saved to disk. If the
-               *  given callback returns a promise, then the buffer will not be saved until
-               *  the promise resolves.
-               */
+    *  Invoke the given callback before the buffer is saved to disk. If the
+    *  given callback returns a promise, then the buffer will not be saved until
+    *  the promise resolves.
+    */
   def onWillSave(callback: js.Function0[js.Promise[scala.Unit] | scala.Unit]): eventDashKitLib.eventDashKitMod.Disposable = js.native
   /** Invoke the given callback when there is an error in watching the file. */
   def onWillThrowWatchError(
@@ -328,14 +318,14 @@ trait TextBuffer extends js.Object {
     ]
   ): eventDashKitLib.eventDashKitMod.Disposable = js.native
   /**
-               *  Convert an absolute character offset, inclusive of newlines, to a position
-               *  in the buffer in row/column coordinates.
-               */
+    *  Convert an absolute character offset, inclusive of newlines, to a position
+    *  in the buffer in row/column coordinates.
+    */
   def positionForCharacterIndex(offset: scala.Double): Point = js.native
   /**
-               *  Given a row, find the first preceding row that's not blank.
-               *  Returns a number or null if there's no preceding non-blank row.
-               */
+    *  Given a row, find the first preceding row that's not blank.
+    *  Returns a number or null if there's no preceding non-blank row.
+    */
   def previousNonBlankRow(startRow: scala.Double): scala.Double | scala.Null = js.native
   /** Get the range for the given row. */
   def rangeForRow(row: scala.Double, includeNewline: scala.Boolean): Range = js.native
@@ -350,9 +340,9 @@ trait TextBuffer extends js.Object {
   /** Retains the text buffer, preventing its destruction via TextBuffer::release. */
   def retain(): TextBuffer = js.native
   /**
-               *  Revert the buffer to the state it was in when the given checkpoint was created.
-               *  Returns a boolean indicating whether the operation succeeded.
-               */
+    *  Revert the buffer to the state it was in when the given checkpoint was created.
+    *  Returns a boolean indicating whether the operation succeeded.
+    */
   def revertToCheckpoint(checkpoint: scala.Double): scala.Boolean = js.native
   // Buffer Operations
   /** Save the buffer. */
@@ -361,9 +351,9 @@ trait TextBuffer extends js.Object {
   def saveAs(filePath: java.lang.String): js.Promise[scala.Unit] = js.native
   // Search and Replace
   /**
-               *  Scan regular expression matches in the entire buffer, calling the given
-               *  iterator function on each match.
-               */
+    *  Scan regular expression matches in the entire buffer, calling the given
+    *  iterator function on each match.
+    */
   def scan(
     regex: stdLib.RegExp,
     iterator: js.Function1[
@@ -372,9 +362,9 @@ trait TextBuffer extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-               *  Scan regular expression matches in the entire buffer, calling the given
-               *  iterator function on each match.
-               */
+    *  Scan regular expression matches in the entire buffer, calling the given
+    *  iterator function on each match.
+    */
   def scan(
     regex: stdLib.RegExp,
     options: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.OptionsNs.ScanContext,
@@ -384,9 +374,9 @@ trait TextBuffer extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-               *  Scan regular expression matches in a given range , calling the given
-               *  iterator function on each match.
-               */
+    *  Scan regular expression matches in a given range , calling the given
+    *  iterator function on each match.
+    */
   def scanInRange(
     regex: stdLib.RegExp,
     range: RangeCompatible,
@@ -396,9 +386,9 @@ trait TextBuffer extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-               *  Scan regular expression matches in a given range , calling the given
-               *  iterator function on each match.
-               */
+    *  Scan regular expression matches in a given range , calling the given
+    *  iterator function on each match.
+    */
   def scanInRange(
     regex: stdLib.RegExp,
     range: RangeCompatible,
@@ -417,12 +407,11 @@ trait TextBuffer extends js.Object {
   def setText(text: java.lang.String): Range = js.native
   /** Set the text in the given range. */
   def setTextInRange(range: RangeCompatible, text: java.lang.String): Range = js.native
-  /** Set the text in the given range. */
   def setTextInRange(range: RangeCompatible, text: java.lang.String, options: textDashBufferLib.Anon_Undo): Range = js.native
   /**
-               *  Replace the current buffer contents by applying a diff based on the
-               *  given text.
-               */
+    *  Replace the current buffer contents by applying a diff based on the
+    *  given text.
+    */
   def setTextViaDiff(text: java.lang.String): scala.Unit = js.native
   def transact[T](fn: js.Function0[T]): T = js.native
   /** Batch multiple operations as a single undo/redo step. */

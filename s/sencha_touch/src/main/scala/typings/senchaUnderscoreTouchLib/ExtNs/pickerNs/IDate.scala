@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDate extends IPicker {
   /** [Config Option] (String) */
   var dayText: js.UndefOr[java.lang.String] = js.undefined

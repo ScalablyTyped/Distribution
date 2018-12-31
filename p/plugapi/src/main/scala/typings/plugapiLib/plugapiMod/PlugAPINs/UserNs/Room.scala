@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Room extends Default {
   var badge: java.lang.String
   var gRole: scala.Double

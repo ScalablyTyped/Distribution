@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait EnumDWT_MessageType extends js.Object
 
 /** For query the operation that are supported by the data source on a capability .
- *  Application gets these through DG_CONTROL/DAT_CAPABILITY/MSG_QUERYSUPPORT
- */
+  *  Application gets these through DG_CONTROL/DAT_CAPABILITY/MSG_QUERYSUPPORT
+  */
 @JSGlobal("EnumDWT_MessageType")
 @js.native
 object EnumDWT_MessageType extends js.Object {

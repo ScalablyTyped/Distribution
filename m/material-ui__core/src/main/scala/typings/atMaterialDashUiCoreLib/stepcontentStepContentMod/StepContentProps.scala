@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick, @material-ui/core.@material-ui/core.StandardProps) */ 
-trait StepContentProps
+- Lifted 3 members from Set(std.Pick<react.react.HTMLAttributes<react.HTMLDivElement>, std.Exclude<keyof react.react.HTMLAttributes<react.HTMLDivElement>, 'classes' | never>>, @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLDivElement>, @material-ui/core.@material-ui/core/StepContent/StepContent.StepContentClasskey, never>) */ trait StepContentProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[StepContentClasskey] {
   var TransitionComponent: js.UndefOr[
     reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps]

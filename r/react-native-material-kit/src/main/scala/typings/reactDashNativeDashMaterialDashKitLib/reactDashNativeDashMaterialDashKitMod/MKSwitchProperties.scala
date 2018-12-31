@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MKSwitchProperties
   extends reactDashNativeLib.reactDashNativeMod.TouchableWithoutFeedbackProps {
   var checked: js.UndefOr[scala.Boolean] = js.undefined

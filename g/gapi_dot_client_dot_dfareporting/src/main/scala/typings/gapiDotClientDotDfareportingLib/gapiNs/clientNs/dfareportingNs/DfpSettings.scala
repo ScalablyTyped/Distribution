@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DfpSettings extends js.Object {
   /** DFP network code for this directory site. */
   var dfpNetworkCode: js.UndefOr[java.lang.String] = js.undefined

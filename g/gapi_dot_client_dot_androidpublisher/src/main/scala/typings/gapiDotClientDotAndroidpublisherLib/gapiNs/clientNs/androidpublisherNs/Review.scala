@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Review extends js.Object {
   /** The name of the user who wrote the review. */
   var authorName: js.UndefOr[java.lang.String] = js.undefined

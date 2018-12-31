@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InlineQueryResultCachedVoice extends InlineQueryResultBase {
   var caption: js.UndefOr[java.lang.String] = js.undefined
   var input_message_content: js.UndefOr[InputMessageContent] = js.undefined

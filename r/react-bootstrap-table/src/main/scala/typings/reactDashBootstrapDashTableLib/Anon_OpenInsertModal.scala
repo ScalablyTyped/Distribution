@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OpenInsertModal extends js.Object {
   /**
   		 * Callback to close the insert row modal window.

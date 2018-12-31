@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISpacing extends js.Object {
   var l1: java.lang.String
   var l2: java.lang.String

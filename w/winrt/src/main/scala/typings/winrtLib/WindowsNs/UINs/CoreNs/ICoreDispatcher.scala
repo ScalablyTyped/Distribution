@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICoreDispatcher extends ICoreAcceleratorKeys {
   var hasThreadAccess: scala.Boolean
   def processEvents(options: CoreProcessEventsOption): scala.Unit

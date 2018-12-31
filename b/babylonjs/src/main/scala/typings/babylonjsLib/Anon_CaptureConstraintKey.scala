@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CaptureConstraintKey extends js.Object {
   var capture: scala.Null
   var captureConstraint: scala.Null

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPrepareTranscodeResult extends js.Object {
   var canTranscode: scala.Boolean
   var failureReason: TranscodeFailureReason

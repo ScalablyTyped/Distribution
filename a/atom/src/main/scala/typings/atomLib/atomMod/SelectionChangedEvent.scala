@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectionChangedEvent extends js.Object {
   var newBufferRange: Range
   var newScreenRange: Range

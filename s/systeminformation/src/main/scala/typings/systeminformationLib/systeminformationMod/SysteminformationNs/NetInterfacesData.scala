@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NetInterfacesData extends js.Object {
   var iface: java.lang.String
   var internal: scala.Boolean

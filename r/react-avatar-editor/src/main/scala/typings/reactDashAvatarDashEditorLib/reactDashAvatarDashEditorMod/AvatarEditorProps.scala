@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AvatarEditorProps extends js.Object {
   var border: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
   var borderRadius: js.UndefOr[scala.Double] = js.undefined

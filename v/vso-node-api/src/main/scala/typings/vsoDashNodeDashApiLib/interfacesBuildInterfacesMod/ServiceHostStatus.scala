@@ -12,15 +12,15 @@ sealed trait ServiceHostStatus extends js.Object
 @js.native
 object ServiceHostStatus extends js.Object {
   /**
-       * The service host is currently disconnected and not accepting commands.
-       */
+    * The service host is currently disconnected and not accepting commands.
+    */
   @js.native
   sealed trait Offline
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.ServiceHostStatus
   
   /**
-       * The service host is currently connected and accepting commands.
-       */
+    * The service host is currently connected and accepting commands.
+    */
   @js.native
   sealed trait Online
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.ServiceHostStatus

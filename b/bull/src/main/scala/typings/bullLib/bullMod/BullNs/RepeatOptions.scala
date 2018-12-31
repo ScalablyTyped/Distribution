@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RepeatOptions extends js.Object {
   /**
-       * End date when the repeat job should stop repeating
-       */
+    * End date when the repeat job should stop repeating
+    */
   var endDate: js.UndefOr[stdLib.Date | java.lang.String | scala.Double] = js.undefined
   /**
-       * Number of times the job should repeat at max.
-       */
+    * Number of times the job should repeat at max.
+    */
   var limit: js.UndefOr[scala.Double] = js.undefined
   /**
-       * Timezone
-       */
+    * Timezone
+    */
   var tz: js.UndefOr[java.lang.String] = js.undefined
 }
 

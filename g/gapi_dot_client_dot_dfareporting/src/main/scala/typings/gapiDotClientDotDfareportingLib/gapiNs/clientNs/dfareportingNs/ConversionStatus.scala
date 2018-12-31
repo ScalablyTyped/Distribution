@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConversionStatus extends js.Object {
   /** The original conversion that was inserted or updated. */
   var conversion: js.UndefOr[Conversion] = js.undefined

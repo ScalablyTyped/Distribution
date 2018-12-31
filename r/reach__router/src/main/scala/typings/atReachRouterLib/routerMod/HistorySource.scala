@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HistorySource extends js.Object {
   var history: atReachRouterLib.Anon_ReplaceState
   val location: WindowLocation

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PageOption extends js.Object {
   var pageX: scala.Double
   var pageY: scala.Double

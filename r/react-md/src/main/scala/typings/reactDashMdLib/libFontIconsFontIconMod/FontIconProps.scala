@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FontIconProps
   extends reactDashMdLib.libMod.Props {
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined

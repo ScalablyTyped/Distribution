@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BoundariesElement extends js.Object {
   var behavior: js.UndefOr[
     popperDotJsLib.popperDotJsMod.PopperNs.Behavior | js.Array[popperDotJsLib.popperDotJsMod.PopperNs.Position]

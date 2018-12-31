@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TinderHistory extends js.Object {
   var blocks: js.Array[java.lang.String]
    // todo

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigationControlProps extends BaseControlProps {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var onViewStateChange: js.UndefOr[js.Function1[/* info */ ViewStateChangeInfo, scala.Unit]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBarChartClasses extends js.Object {
   var bar: js.UndefOr[java.lang.String] = js.undefined
   var chart: js.UndefOr[java.lang.String] = js.undefined

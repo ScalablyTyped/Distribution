@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CloudFrontRequest extends js.Object {
   var clientIp: java.lang.String
   var headers: CloudFrontHeaders

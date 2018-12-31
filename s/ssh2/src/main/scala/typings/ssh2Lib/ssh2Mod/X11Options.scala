@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait X11Options extends js.Object {
   /** The Screen number to use (default: `0`). */
   var screen: js.UndefOr[scala.Double] = js.undefined

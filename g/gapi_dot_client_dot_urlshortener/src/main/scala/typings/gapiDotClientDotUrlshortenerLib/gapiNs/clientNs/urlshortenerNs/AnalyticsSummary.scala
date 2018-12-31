@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnalyticsSummary extends js.Object {
   /** Click analytics over all time. */
   var allTime: js.UndefOr[AnalyticsSnapshot] = js.undefined

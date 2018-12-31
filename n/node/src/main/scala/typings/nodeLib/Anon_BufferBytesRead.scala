@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BufferBytesRead[TBuffer /* <: Buffer | stdLib.Uint8Array */] extends js.Object {
   var buffer: TBuffer
   var bytesRead: scala.Double

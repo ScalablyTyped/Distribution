@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ManglePropertiesOptions extends js.Object {
   /** Use true to allow the mangling of builtin DOM properties. Not recommended to override this setting. */
   var builtins: js.UndefOr[scala.Boolean] = js.undefined

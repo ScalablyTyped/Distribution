@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WrappedAst extends NodeWrap {
   @JSName("next")
   var next_WrappedAst: NodeWrap

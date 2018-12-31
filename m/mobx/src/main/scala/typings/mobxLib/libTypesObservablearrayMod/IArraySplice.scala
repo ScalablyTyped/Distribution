@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IArraySplice[T] extends js.Object {
   var added: js.Array[T]
   var addedCount: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeyboardNavigation extends js.Object {
   /**
   	 * Set to false to disable click to navigate, usually user wants to click to select row instead of navigation.

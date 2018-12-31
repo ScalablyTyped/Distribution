@@ -26,9 +26,9 @@ abstract class BackgroundAudioTrack () extends js.Object {
   /** Gets or sets the volume of the background audio track. */
   var volume: scala.Double = js.native
   /**
-                   * Gets the AudioEncodingProperties for the background audio track.
-                   * @return The AudioEncodingProperties for the background audio track.
-                   */
+    * Gets the AudioEncodingProperties for the background audio track.
+    * @return The AudioEncodingProperties for the background audio track.
+    */
   def getAudioEncodingProperties(): winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.AudioEncodingProperties = js.native
 }
 
@@ -37,16 +37,16 @@ abstract class BackgroundAudioTrack () extends js.Object {
 @js.native
 object BackgroundAudioTrack extends js.Object {
   /**
-                   * Creates a background audio track object with audio content copied from an embedded audio track object.
-                   * @param embeddedAudioTrack An embedded audio track to use as the source audio for the background audio track.
-                   * @return A new background audio track object containing audio content copied from the embedded audio track.
-                   */
+    * Creates a background audio track object with audio content copied from an embedded audio track object.
+    * @param embeddedAudioTrack An embedded audio track to use as the source audio for the background audio track.
+    * @return A new background audio track object containing audio content copied from the embedded audio track.
+    */
   def createFromEmbeddedAudioTrack(embeddedAudioTrack: winrtDashUwpLib.WindowsNs.MediaNs.EditingNs.EmbeddedAudioTrack): winrtDashUwpLib.WindowsNs.MediaNs.EditingNs.BackgroundAudioTrack = js.native
   /**
-                   * Creates a background audio track from an audio file.
-                   * @param file A StorageFile object representing the source audio file.
-                   * @return A new background audio track object containing the contents of the audio file.
-                   */
+    * Creates a background audio track from an audio file.
+    * @param file A StorageFile object representing the source audio file.
+    * @return A new background audio track object containing the contents of the audio file.
+    */
   def createFromFileAsync(file: winrtDashUwpLib.WindowsNs.StorageNs.IStorageFile): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.MediaNs.EditingNs.BackgroundAudioTrack] = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectionOptions extends js.Object {
   var application_name: java.lang.String | scala.Null
   var client_encoding: java.lang.String | scala.Null

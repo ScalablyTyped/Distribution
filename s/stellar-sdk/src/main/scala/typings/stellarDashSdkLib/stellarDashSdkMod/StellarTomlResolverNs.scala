@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("stellar-sdk", "StellarTomlResolver")
 @js.native
 object StellarTomlResolverNs extends js.Object {
-  
   trait StellarTomlResolveOptions extends js.Object {
     var allowHttp: js.UndefOr[scala.Boolean] = js.undefined
     var timeout: js.UndefOr[scala.Double] = js.undefined

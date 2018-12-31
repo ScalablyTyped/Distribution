@@ -77,25 +77,25 @@ trait IInjectorService extends js.Object {
   def instantiate[T](typeConstructor: angularLib.Anon_Args[T]): T = js.native
   def instantiate[T](typeConstructor: angularLib.Anon_Args[T], locals: js.Any): T = js.native
   def invoke[T](
-    func: angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.Global.Function | (js.Function1[/* repeated */_, T])]
+    func: angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.Global.Function | (js.Function1[/* repeated */ _, T])]
   ): T = js.native
   def invoke[T](
-    func: angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.Global.Function | (js.Function1[/* repeated */_, T])],
+    func: angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.Global.Function | (js.Function1[/* repeated */ _, T])],
     context: js.Any
   ): T = js.native
   def invoke[T](
-    func: angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.Global.Function | (js.Function1[/* repeated */_, T])],
+    func: angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.Global.Function | (js.Function1[/* repeated */ _, T])],
     context: js.Any,
     locals: js.Any
   ): T = js.native
   /**
-               * Add the specified modules to the current injector.
-               * This method will add each of the injectables to the injector and execute all of the config and run blocks for each module passed to the method.
-               * @param modules A module, module name or annotated injection function.
-               */
+    * Add the specified modules to the current injector.
+    * This method will add each of the injectables to the injector and execute all of the config and run blocks for each module passed to the method.
+    * @param modules A module, module name or annotated injection function.
+    */
   def loadNewModules(
     modules: js.Array[
-      angularLib.angularMod.angularNs.IModule | java.lang.String | (angularLib.angularMod.angularNs.Injectable[js.Function1[/* repeated */_, scala.Unit]])
+      angularLib.angularMod.angularNs.IModule | java.lang.String | (angularLib.angularMod.angularNs.Injectable[js.Function1[/* repeated */ _, scala.Unit]])
     ]
   ): scala.Unit = js.native
 }

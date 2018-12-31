@@ -10,19 +10,19 @@ import scala.scalajs.js.annotation._
 @js.native
 class VideoFrame protected () extends js.Object {
   /**
-               * Initializes a new instance of the VideoFrame class.
-               * @param format The pixel format of the video frame.
-               * @param width The width of the video frame, in pixels.
-               * @param height The height of the video frame, in pixels.
-               */
+    * Initializes a new instance of the VideoFrame class.
+    * @param format The pixel format of the video frame.
+    * @param width The width of the video frame, in pixels.
+    * @param height The height of the video frame, in pixels.
+    */
   def this(format: winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.BitmapPixelFormat, width: scala.Double, height: scala.Double) = this()
   /**
-               * Initializes a new instance of the VideoFrame class.
-               * @param format The pixel format of the video frame.
-               * @param width The width of the video frame, in pixels.
-               * @param height The height of the video frame, in pixels.
-               * @param alpha The alpha mode of the video frame.
-               */
+    * Initializes a new instance of the VideoFrame class.
+    * @param format The pixel format of the video frame.
+    * @param width The width of the video frame, in pixels.
+    * @param height The height of the video frame, in pixels.
+    * @param alpha The alpha mode of the video frame.
+    */
   def this(format: winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.BitmapPixelFormat, width: scala.Double, height: scala.Double, alpha: winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.BitmapAlphaMode) = this()
   /** Gets the IDirect3DSurface object containing the pixel data of the video frame, when one is present. */
   var direct3DSurface: winrtDashUwpLib.WindowsNs.GraphicsNs.DirectXNs.Direct3D11Ns.IDirect3DSurface = js.native
@@ -45,10 +45,10 @@ class VideoFrame protected () extends js.Object {
   /** Disposes of the object and associated resources. */
   def close(): scala.Unit = js.native
   /**
-               * Copies the current VideoFrame into a provided VideoFrame object.
-               * @param frame The target video frame into which the current frame will be copied.
-               * @return An asynchronous action.
-               */
+    * Copies the current VideoFrame into a provided VideoFrame object.
+    * @param frame The target video frame into which the current frame will be copied.
+    * @return An asynchronous action.
+    */
   def copyToAsync(frame: VideoFrame): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

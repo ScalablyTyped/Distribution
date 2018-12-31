@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents registration data for a Telemetry event. */
-
 trait EventData extends js.Object {
   /**
-           * True if this event entry is expired. This allows recording it without error, but it will be discarded.
-           */
+    * True if this event entry is expired. This allows recording it without error, but it will be discarded.
+    */
   var expired: js.UndefOr[scala.Boolean] = js.undefined
   /** List of allowed extra keys for this event entry. */
   var extra_keys: js.Array[java.lang.String]

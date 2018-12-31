@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Describes the bullet of a paragraph.
-
 trait Bullet extends js.Object {
   // The paragraph specific text style applied to this bullet.
   var bullet_style: TextStyle

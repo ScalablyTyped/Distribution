@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DownloadButtonDescriptor extends js.Object {
   var downloadFilename: js.UndefOr[java.lang.String] = js.undefined
   var downloadUrl: java.lang.String

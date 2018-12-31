@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TrackController extends js.Object {
   val xAxis: ScrollbarTrack
   val yAxis: ScrollbarTrack

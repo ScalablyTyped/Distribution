@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomLine extends js.Object {
   def isBookSpecific(): scala.Boolean
   def setAccountId(accountId: scala.Double): scala.Unit

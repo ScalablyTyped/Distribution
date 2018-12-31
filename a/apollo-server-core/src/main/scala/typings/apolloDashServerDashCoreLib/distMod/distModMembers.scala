@@ -37,7 +37,7 @@ object distModMembers extends js.Object {
   ] = js.native
   def resolveGraphqlOptions(
     options: js.Function1[
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       (js.Promise[
         apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _]
       ]) | (apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _])

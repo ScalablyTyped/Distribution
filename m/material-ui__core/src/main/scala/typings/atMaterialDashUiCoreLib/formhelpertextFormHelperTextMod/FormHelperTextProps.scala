@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick, @material-ui/core.@material-ui/core.StandardProps) */ 
-trait FormHelperTextProps
+- Lifted 3 members from Set(std.Pick<react.react.HTMLAttributes<react.HTMLParagraphElement>, std.Exclude<keyof react.react.HTMLAttributes<react.HTMLParagraphElement>, 'classes' | never>>, @material-ui/core.@material-ui/core.StandardProps<react.react.HTMLAttributes<react.HTMLParagraphElement>, @material-ui/core.@material-ui/core/FormHelperText/FormHelperText.FormHelperTextClassKey, never>) */ trait FormHelperTextProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[FormHelperTextClassKey] {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[FormHelperTextProps]] = js.undefined

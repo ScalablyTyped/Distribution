@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Listener extends js.Object {
   def onConnect(controller: Controller): scala.Unit
   def onDisconnect(controller: Controller): scala.Unit

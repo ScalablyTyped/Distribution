@@ -9,28 +9,18 @@ import scala.scalajs.js.annotation._
 @js.native
 object tarNsMembers extends js.Object {
   /**
-               * Creates a pack stream for the files from the given directory
-               *
-               * @param cwd directory to pack
-               */
+    * Creates a pack stream for the files from the given directory
+    *
+    * @param cwd directory to pack
+    */
   def packStream(cwd: java.lang.String): RawPackStream = js.native
-  /**
-               * Creates a pack stream for the files from the given directory
-               *
-               * @param cwd directory to pack
-               */
   def packStream(cwd: java.lang.String, options: adoneLib.adoneNs.archiveNs.tarNs.INs.PackOptions): RawPackStream = js.native
   /**
-               * Creates an unpack stream to the given direcotry
-               *
-               * @param cwd direcotry to unpack to
-               */
+    * Creates an unpack stream to the given direcotry
+    *
+    * @param cwd direcotry to unpack to
+    */
   def unpackStream(cwd: java.lang.String): RawUnpackStream = js.native
-  /**
-               * Creates an unpack stream to the given direcotry
-               *
-               * @param cwd direcotry to unpack to
-               */
   def unpackStream(cwd: java.lang.String, options: adoneLib.adoneNs.archiveNs.tarNs.INs.UnpackOptions): RawUnpackStream = js.native
 }
 

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * http://js.cytoscape.org/#eles.aStar
-     */
-
+  * http://js.cytoscape.org/#eles.aStar
+  */
 trait SearchAStarOptions extends js.Object {
   var directed: js.UndefOr[scala.Boolean] = js.undefined
   var goal: Selector | CollectionArgument

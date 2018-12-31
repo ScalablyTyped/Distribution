@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReleaseDefinitionApprovalStep extends ReleaseDefinitionEnvironmentStep {
   var approver: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
   var isAutomated: scala.Boolean

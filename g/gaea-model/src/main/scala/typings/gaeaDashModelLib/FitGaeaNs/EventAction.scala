@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventAction extends js.Object {
   var call: js.UndefOr[EventCallType] = js.undefined
   var name: java.lang.String

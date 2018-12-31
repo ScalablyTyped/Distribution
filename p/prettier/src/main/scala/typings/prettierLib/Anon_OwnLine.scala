@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OwnLine extends js.Object {
   var endOfLine: js.UndefOr[
     js.Function5[

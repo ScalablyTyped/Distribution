@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MovingComponent extends js.Object {
   // 是否是新拖拽的
   var isNew: scala.Boolean

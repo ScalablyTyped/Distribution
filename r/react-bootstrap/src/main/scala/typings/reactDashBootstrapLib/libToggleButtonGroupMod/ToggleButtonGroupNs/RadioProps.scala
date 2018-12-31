@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RadioProps extends js.Object {
   /** Required if `type` is set to "radio" */
   var name: java.lang.String

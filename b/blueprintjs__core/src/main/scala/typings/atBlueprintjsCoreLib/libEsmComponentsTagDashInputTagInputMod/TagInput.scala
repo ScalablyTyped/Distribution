@@ -28,10 +28,10 @@ class TagInput ()
   /* private */ def findNextIndex(startIndex: js.Any, direction: js.Any): js.Any = js.native
   /* private */ def getNextActiveIndex(direction: js.Any): js.Any = js.native
   /**
-       * Splits inputValue on separator prop,
-       * trims whitespace from each new value,
-       * and ignores empty values.
-       */
+    * Splits inputValue on separator prop,
+    * trims whitespace from each new value,
+    * and ignores empty values.
+    */
   /* private */ def getValues(inputValue: js.Any): js.Any = js.native
   /* private */ def handleBackspaceToRemove(event: js.Any): js.Any = js.native
   /* private */ def invokeKeyPressCallback(propCallbackName: js.Any, event: js.Any, activeIndex: js.Any): js.Any = js.native

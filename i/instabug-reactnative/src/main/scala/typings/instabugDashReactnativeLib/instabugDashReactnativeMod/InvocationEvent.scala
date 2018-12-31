@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InvocationEvent extends js.Object {
   var floatingButton: java.lang.String
   var none: java.lang.String

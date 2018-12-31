@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FeathersAuthClientConfig extends js.Object {
   var cookie: js.UndefOr[java.lang.String] = js.undefined
   var entity: js.UndefOr[java.lang.String] = js.undefined

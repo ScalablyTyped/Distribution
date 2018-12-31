@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FiveArrowsSet
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] {
   var greenUpArrow: Icon

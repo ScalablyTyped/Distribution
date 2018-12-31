@@ -7,37 +7,23 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait XmppRoom extends js.Object {
-  /**
-           * Adds a handler to the MUC room.
-           * Parameters:
-           * @param handler_type - 'message', 'presence' or 'roster'.
-           * @param handler - The handler function.
-           * @return id - the id of handler.
-           */
   @JSName("addHandler")
   def addHandler_message(
     handler_type: stropheDotJsLib.stropheDotJsLibStrings.message,
     handler: js.Function1[/* stanza */ stdLib.Element, _]
   ): scala.Double = js.native
   /**
-           * Adds a handler to the MUC room.
-           * Parameters:
-           * @param handler_type - 'message', 'presence' or 'roster'.
-           * @param handler - The handler function.
-           * @return id - the id of handler.
-           */
+    * Adds a handler to the MUC room.
+    * Parameters:
+    * @param handler_type - 'message', 'presence' or 'roster'.
+    * @param handler - The handler function.
+    * @return id - the id of handler.
+    */
   @JSName("addHandler")
   def addHandler_presence(
     handler_type: stropheDotJsLib.stropheDotJsLibStrings.presence,
     handler: js.Function1[/* stanza */ stdLib.Element, _]
   ): scala.Double = js.native
-  /**
-           * Adds a handler to the MUC room.
-           * Parameters:
-           * @param handler_type - 'message', 'presence' or 'roster'.
-           * @param handler - The handler function.
-           * @return id - the id of handler.
-           */
   @JSName("addHandler")
   def addHandler_roster(
     handler_type: stropheDotJsLib.stropheDotJsLibStrings.roster,
@@ -213,13 +199,13 @@ trait XmppRoom extends js.Object {
     error_cb: js.Function1[/* stanza */ stdLib.Element, _]
   ): scala.Unit = js.native
   /**
-           * Removes a handler from the MUC room.
-           * This function takes ONLY ids returned by the addHandler function
-           * of this room. passing handler ids returned by connection.addHandler
-           * may brake things!
-           *
-           * @param id - the id of the handler
-           */
+    * Removes a handler from the MUC room.
+    * This function takes ONLY ids returned by the addHandler function
+    * of this room. passing handler ids returned by connection.addHandler
+    * may brake things!
+    *
+    * @param id - the id of the handler
+    */
   def removeHandler(id: scala.Double): scala.Unit = js.native
   def revoke(jid: java.lang.String): java.lang.String = js.native
   def revoke(jid: java.lang.String, reason: java.lang.String): java.lang.String = js.native

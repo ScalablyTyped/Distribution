@@ -12,7 +12,7 @@ trait TextMarker extends js.Object {
   /** Remove the mark. */
   def clear(): scala.Unit = js.native
   /** Returns a {from, to} object (both holding document positions), indicating the current position of the marked range,
-          or undefined if the marker is no longer in the document. */
+    or undefined if the marker is no longer in the document. */
   def find(): codemirrorLib.Anon_From = js.native
   /**  Returns an object representing the options for the marker. If copyWidget is given true, it will clone the value of the replacedWith option, if any. */
   def getOptions(copyWidget: scala.Boolean): TextMarkerOptions = js.native

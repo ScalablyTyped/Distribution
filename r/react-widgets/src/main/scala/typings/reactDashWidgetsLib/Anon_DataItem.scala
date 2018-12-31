@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DataItem extends js.Object {
   var action: reactDashWidgetsLib.reactDashWidgetsLibStrings.insert | reactDashWidgetsLib.reactDashWidgetsLibStrings.remove
   var dataItem: js.Any

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataSourceBinding extends js.Object {
   var dataSourceName: java.lang.String
   var endpointId: java.lang.String

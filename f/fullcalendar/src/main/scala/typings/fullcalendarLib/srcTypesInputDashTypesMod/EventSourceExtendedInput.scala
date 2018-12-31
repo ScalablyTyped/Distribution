@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventSourceExtendedInput
   extends jqueryLib.JQueryNs.AjaxSettings[js.Any]
      with EventOptionsBase {

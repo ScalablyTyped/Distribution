@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NamePathDescription extends js.Object {
   var allowed_extensions: js.Array[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionID]
   var description: java.lang.String

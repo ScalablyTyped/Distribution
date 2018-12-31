@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FeedDialogParams extends js.Object {
     // "feed"
   var app_id: java.lang.String

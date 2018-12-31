@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MatchesResponseObject extends js.Object {
   var blue1: java.lang.String
   var blue2: java.lang.String

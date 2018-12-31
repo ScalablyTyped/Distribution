@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LegendClickEvent extends js.Object {
   var config: stdLib.Partial[Config]
   var curveNumber: scala.Double

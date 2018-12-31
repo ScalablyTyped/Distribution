@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreditDisplay extends js.Object {
   var container: stdLib.HTMLElement
   def addCredit(credit: Credit): scala.Unit

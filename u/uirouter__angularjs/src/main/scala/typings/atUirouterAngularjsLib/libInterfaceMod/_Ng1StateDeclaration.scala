@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Ng1StateDeclaration
   extends atUirouterCoreLib.libStateInterfaceMod.StateDeclaration {
   @JSName("onEnter")

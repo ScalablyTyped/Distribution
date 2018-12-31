@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SmoothCurveToCommand extends js.Object {
   var code: svgDashPathDashParserLib.svgDashPathDashParserLibStrings.s | svgDashPathDashParserLib.svgDashPathDashParserLibStrings.S
   var command: svgDashPathDashParserLib.svgDashPathDashParserLibStrings.`smooth curveto`

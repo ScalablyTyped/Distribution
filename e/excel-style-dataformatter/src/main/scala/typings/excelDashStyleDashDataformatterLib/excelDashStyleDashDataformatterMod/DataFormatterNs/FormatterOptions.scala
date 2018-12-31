@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FormatterOptions extends js.Object {
   var UTCOffset: js.UndefOr[scala.Double | scala.Null] = js.undefined
   var debug: js.UndefOr[scala.Boolean] = js.undefined

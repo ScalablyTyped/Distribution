@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MarketplaceLabel extends js.Object {
   /** The accountId of the party that created the label. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined

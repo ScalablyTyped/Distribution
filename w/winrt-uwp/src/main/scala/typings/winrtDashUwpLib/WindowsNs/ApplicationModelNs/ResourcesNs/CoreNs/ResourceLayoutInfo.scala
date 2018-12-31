@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Structure that determines version and counts of resources returned for the app package. */
-
 trait ResourceLayoutInfo extends js.Object {
   /** Framework-generated checksum. */
   var checksum: scala.Double

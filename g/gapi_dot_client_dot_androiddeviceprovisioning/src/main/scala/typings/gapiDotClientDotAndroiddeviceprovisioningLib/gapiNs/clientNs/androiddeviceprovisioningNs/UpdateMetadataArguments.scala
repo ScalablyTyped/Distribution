@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateMetadataArguments extends js.Object {
   /** Device ID of the device. */
   var deviceId: js.UndefOr[java.lang.String] = js.undefined

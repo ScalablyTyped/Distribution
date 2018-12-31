@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ThetaLengthOuterRadius extends js.Object {
   var innerRadius: scala.Double
   var outerRadius: scala.Double

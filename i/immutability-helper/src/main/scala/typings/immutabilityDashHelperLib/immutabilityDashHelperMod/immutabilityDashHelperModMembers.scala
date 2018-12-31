@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("immutability-helper", JSImport.Namespace)
 @js.native
 object immutabilityDashHelperModMembers extends js.Object {
-  def default[T, C /* <: CustomCommands[js.Object] */](target: T, spec: Spec[T, C]): T = js.native
+  val isEquals: js.Any = js.native
+  def default[T, C /* <: CustomCommands[js.Object] */](`object`: T, $spec: Spec[T, C]): T = js.native
+  def extend[T](directive: java.lang.String, fn: js.Function2[/* param */ js.Any, /* old */ T, T]): scala.Unit = js.native
 }
 

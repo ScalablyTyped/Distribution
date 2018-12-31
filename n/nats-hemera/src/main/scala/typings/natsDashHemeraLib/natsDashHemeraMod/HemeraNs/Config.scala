@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Config extends js.Object {
   var bloomrun: js.UndefOr[BloomrunConfig] = js.undefined
   var childLogger: js.UndefOr[scala.Boolean] = js.undefined

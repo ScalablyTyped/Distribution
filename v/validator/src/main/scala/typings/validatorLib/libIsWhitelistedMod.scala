@@ -8,5 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("validator/lib/isWhitelisted", JSImport.Namespace)
 @js.native
 object libIsWhitelistedMod
-  extends org.scalablytyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[
+      js.Function2[
+        /* str */ java.lang.String, 
+        /* chars */ java.lang.String | js.Array[java.lang.String], 
+        scala.Boolean
+      ]
+    ]
 

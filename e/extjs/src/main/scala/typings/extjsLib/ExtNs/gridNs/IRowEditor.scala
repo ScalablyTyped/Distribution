@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRowEditor
   extends extjsLib.ExtNs.formNs.IPanel {
   /** [Method] Lie to the CQ system about our nesting structure  */

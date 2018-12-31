@@ -5,32 +5,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LayoutTheme extends js.Object {
   var appbarFixed: js.UndefOr[java.lang.String] = js.undefined
   /**
-     * The root class that wraps the whole layout.
-     */
+    * The root class that wraps the whole layout.
+    */
   var layout: js.UndefOr[java.lang.String] = js.undefined
   /**
-     * Added to the root if there is a clipped NavDrawer.
-     */
+    * Added to the root if there is a clipped NavDrawer.
+    */
   var navDrawerClipped: js.UndefOr[java.lang.String] = js.undefined
   /**
-     * Added to the root if there is a pinned `NavDrawer`
-     */
+    * Added to the root if there is a pinned `NavDrawer`
+    */
   var navDrawerPinned: js.UndefOr[java.lang.String] = js.undefined
   /**
-     * Added to the root if there is a clipped sidebar.
-     */
+    * Added to the root if there is a clipped sidebar.
+    */
   var sidebarClipped: js.UndefOr[java.lang.String] = js.undefined
   /**
-     * Added to the root if there is a pinned sidebar.
-     */
+    * Added to the root if there is a pinned sidebar.
+    */
   var sidebarPinned: js.UndefOr[java.lang.String] = js.undefined
   /**
-     * Added to the root element in case there is a sidebar present. width correspond to the value passed to the `Sidebar`.
-     */
+    * Added to the root element in case there is a sidebar present. width correspond to the value passed to the `Sidebar`.
+    */
   var sidebarWidth1: js.UndefOr[java.lang.String] = js.undefined
   var sidebarWidth10: js.UndefOr[java.lang.String] = js.undefined
   var sidebarWidth100: js.UndefOr[java.lang.String] = js.undefined

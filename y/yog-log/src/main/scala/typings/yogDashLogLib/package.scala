@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object yogDashLogLib {
   type LevelInt = java.lang.String
-  type LevelName = js.Any
-  type LogInput = java.lang.String | js.Any | nodeLib.Error
+  type LevelName = /* import warning: ImportType.apply Failed type conversion: any[yog-log.LevelInt] */ js.Any
+  type LogInput = java.lang.String | (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify LogInfo */ js.Any) | nodeLib.Error
   type LogReturn = js.UndefOr[yogDashLogLib.yogDashLogLibNumbers.`false`]
 }

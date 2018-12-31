@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Column extends js.Object {
   def deleteColumn(): scala.Unit
   def getName(): java.lang.String

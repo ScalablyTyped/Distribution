@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SetClipboardOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 剪贴板数据 */

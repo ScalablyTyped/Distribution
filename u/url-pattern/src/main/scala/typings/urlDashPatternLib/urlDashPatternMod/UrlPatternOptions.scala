@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UrlPatternOptions extends js.Object {
   var escapeChar: js.UndefOr[java.lang.String] = js.undefined
   var optionalSegmentEndChar: js.UndefOr[java.lang.String] = js.undefined

@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Monitor extends js.Object {
   /**
-               * Connections.
-               * @type {any}
-               */
+    * Connections.
+    * @type {any}
+    */
   var connections: js.Any
 }
 

@@ -15,8 +15,8 @@ class ScrollbarTrack protected ()
   /* CompleteClass */
   override val element: stdLib.HTMLElement = js.native
   /**
-       * Track element
-       */
+    * Track element
+    */
   @JSName("element")
   val element_ScrollbarTrack: stdLib.HTMLDivElement = js.native
   /* CompleteClass */

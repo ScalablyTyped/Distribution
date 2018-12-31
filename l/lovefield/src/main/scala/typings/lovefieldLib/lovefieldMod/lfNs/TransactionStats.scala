@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransactionStats extends js.Object {
   def changedTableCount(): scala.Double
   def deletedRowCount(): scala.Double

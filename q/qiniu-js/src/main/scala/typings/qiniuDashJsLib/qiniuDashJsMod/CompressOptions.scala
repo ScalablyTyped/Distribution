@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompressOptions extends js.Object {
   	// 压缩图片的最大宽度值
   var maxHeight: scala.Double

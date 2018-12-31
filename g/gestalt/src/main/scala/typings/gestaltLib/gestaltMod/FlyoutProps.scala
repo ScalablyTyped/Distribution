@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlyoutProps extends js.Object {
   var anchor: reactLib.reactMod.ReactNs.RefObject[_]
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined

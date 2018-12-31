@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line: interface-name
-
 trait IFieldInfo extends js.Object {
   var dateOnly: js.UndefOr[scala.Boolean] = js.undefined
   var defaultCellStyleId: js.UndefOr[js.Any] = js.undefined

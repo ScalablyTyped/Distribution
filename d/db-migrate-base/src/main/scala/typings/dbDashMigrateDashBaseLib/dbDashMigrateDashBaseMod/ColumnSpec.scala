@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnSpec extends js.Object {
   var autoIncrement: js.UndefOr[scala.Boolean] = js.undefined
   var defaultValue: js.UndefOr[js.Any] = js.undefined

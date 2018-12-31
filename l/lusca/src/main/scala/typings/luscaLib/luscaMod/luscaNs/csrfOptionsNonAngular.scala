@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait csrfOptionsNonAngular extends js.Object {
   var angular: js.UndefOr[luscaLib.luscaLibNumbers.`false`] = js.undefined
   var cookie: js.UndefOr[java.lang.String | luscaLib.Anon_OptionsName] = js.undefined

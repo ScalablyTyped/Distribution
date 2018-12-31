@@ -18,11 +18,11 @@ object yamlNs extends js.Object {
         org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.pulumiMod.CustomResource]
       ] = js.native
     /**
-             * getCustomResource returns a resource defined by a CRD with the given group/version/kind and name.
-             *
-             * For example:
-             *     getCustomResource("monitoring.coreos.com/v1/ServiceMonitor", "kube-prometheus-exporter-kubernetes")
-             */
+      * getCustomResource returns a resource defined by a CRD with the given group/version/kind and name.
+      *
+      * For example:
+      *     getCustomResource("monitoring.coreos.com/v1/ServiceMonitor", "kube-prometheus-exporter-kubernetes")
+      */
     def getCustomResource[T /* <: atPulumiPulumiLib.pulumiMod.CustomResource */](groupVersionKind: java.lang.String, namespace: java.lang.String): atPulumiPulumiLib.pulumiMod.Output[T] = js.native
     def getCustomResource[T /* <: atPulumiPulumiLib.pulumiMod.CustomResource */](groupVersionKind: java.lang.String, namespace: java.lang.String, name: java.lang.String): atPulumiPulumiLib.pulumiMod.Output[T] = js.native
     def getResourceProperty(
@@ -78,11 +78,11 @@ object yamlNs extends js.Object {
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.metadata
     ): atPulumiPulumiLib.pulumiMod.Output[atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta] = js.native
     /**
-             * getResourceProperty returns a single property of a resource defined by a built-in Kubernetes group/version/kind and name.
-             *
-             * For example:
-             *     getResourceProperty("v1/Service", "nginx", "spec")
-             */
+      * getResourceProperty returns a single property of a resource defined by a built-in Kubernetes group/version/kind and name.
+      *
+      * For example:
+      *     getResourceProperty("v1/Service", "nginx", "spec")
+      */
     def getResourceProperty(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfiguration`,
       name: java.lang.String,
@@ -9693,11 +9693,11 @@ object yamlNs extends js.Object {
       property: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.status
     ): atPulumiPulumiLib.pulumiMod.Output[java.lang.String] = js.native
     /**
-             * getResource returns a resource defined by a built-in Kubernetes group/version/kind and name.
-             *
-             * For example:
-             *     getResource("apps/v1/Deployment", "nginx")
-             */
+      * getResource returns a resource defined by a built-in Kubernetes group/version/kind and name.
+      *
+      * For example:
+      *     getResource("apps/v1/Deployment", "nginx")
+      */
     @JSName("getResource")
     def `getResource_admissionregistrationk8sio/v1alpha1/InitializerConfiguration`(
       groupVersionKind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1/InitializerConfiguration`,
@@ -11779,9 +11779,9 @@ object yamlNs extends js.Object {
   }
   
   /**
-       * ConfigFile creates a set of Kubernetes resources from Kubernetes YAML file. If `config.name`
-       * is not specified, `ConfigFile` assumes the argument `name` is the filename.
-       */
+    * ConfigFile creates a set of Kubernetes resources from Kubernetes YAML file. If `config.name`
+    * is not specified, `ConfigFile` assumes the argument `name` is the filename.
+    */
   @js.native
   class ConfigFile protected () extends CollectionComponentResource {
     def this(name: java.lang.String) = this()
@@ -11789,34 +11789,32 @@ object yamlNs extends js.Object {
     def this(name: java.lang.String, config: ConfigFileOpts, opts: atPulumiPulumiLib.resourceMod.ComponentResourceOptions) = this()
   }
   
-  
   trait ConfigFileOpts extends js.Object {
     var file: js.UndefOr[java.lang.String] = js.undefined
     var transformations: js.UndefOr[js.Array[js.Function1[/* o */ _, scala.Unit]]] = js.undefined
   }
   
   /**
-       * ConfigGroup creates a set of Kubernetes resources from Kubernetes YAML text. The YAML text
-       * may be supplied using any of the following `ConfigGroupOpts`:
-       *
-       *   1. Using a filename or a list of filenames:
-       *        a. `{files: "foo.yaml"}`
-       *        b. `{files: ["foo.yaml", "bar.yaml"]}`
-       *   2. Using a file pattern or a list of file patterns:
-       *        a. `{files: "*.yaml"}`
-       *        b. `{files: ["foo/ *.yaml", "bar/ *.yaml"]}`
-       *   3. Using a literal string containing YAML, or a list of such strings:
-       *        a. `{yaml: "(LITERAL YAML HERE)"}`
-       *        b. `{yaml: ["(LITERAL YAML HERE)", "(MORE YAML)"]}`
-       *   4. Any combination of files, patterns, or YAML strings:
-       *        a. `{files: "foo.yaml", yaml: "(LITERAL YAML HERE)"}`
-       */
+    * ConfigGroup creates a set of Kubernetes resources from Kubernetes YAML text. The YAML text
+    * may be supplied using any of the following `ConfigGroupOpts`:
+    *
+    *   1. Using a filename or a list of filenames:
+    *        a. `{files: "foo.yaml"}`
+    *        b. `{files: ["foo.yaml", "bar.yaml"]}`
+    *   2. Using a file pattern or a list of file patterns:
+    *        a. `{files: "*.yaml"}`
+    *        b. `{files: ["foo/ *.yaml", "bar/ *.yaml"]}`
+    *   3. Using a literal string containing YAML, or a list of such strings:
+    *        a. `{yaml: "(LITERAL YAML HERE)"}`
+    *        b. `{yaml: ["(LITERAL YAML HERE)", "(MORE YAML)"]}`
+    *   4. Any combination of files, patterns, or YAML strings:
+    *        a. `{files: "foo.yaml", yaml: "(LITERAL YAML HERE)"}`
+    */
   @js.native
   class ConfigGroup protected () extends CollectionComponentResource {
     def this(name: java.lang.String, config: ConfigGroupOpts) = this()
     def this(name: java.lang.String, config: ConfigGroupOpts, opts: atPulumiPulumiLib.resourceMod.ComponentResourceOptions) = this()
   }
-  
   
   trait ConfigGroupOpts extends js.Object {
     var files: js.UndefOr[js.Array[java.lang.String] | java.lang.String] = js.undefined
@@ -11824,7 +11822,6 @@ object yamlNs extends js.Object {
     var transformations: js.UndefOr[js.Array[js.Function1[/* o */ _, scala.Unit]]] = js.undefined
     var yaml: js.UndefOr[js.Array[java.lang.String] | java.lang.String] = js.undefined
   }
-  
   
   trait ConfigOpts extends js.Object {
     var objs: js.Array[_]

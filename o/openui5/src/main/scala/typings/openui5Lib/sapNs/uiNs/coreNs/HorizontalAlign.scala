@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait HorizontalAlign extends js.Object
 
 /**
-       * Configuration options for horizontal alignments of controls
-      */
+  * Configuration options for horizontal alignments of controls
+  */
 @JSGlobal("sap.ui.core.HorizontalAlign")
 @js.native
 object HorizontalAlign extends js.Object {

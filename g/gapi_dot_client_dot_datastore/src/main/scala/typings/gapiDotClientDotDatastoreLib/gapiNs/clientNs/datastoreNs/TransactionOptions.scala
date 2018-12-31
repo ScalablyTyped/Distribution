@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransactionOptions extends js.Object {
   /** The transaction should only allow reads. */
   var readOnly: js.UndefOr[js.Any] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TargetTcpProxiesResource extends js.Object {
   /** Deletes the specified TargetTcpProxy resource. */
   def delete(request: gapiDotClientDotComputeLib.Anon_TargetTcpProxy): gapiDotClientLib.gapiNs.clientNs.Request[Operation]

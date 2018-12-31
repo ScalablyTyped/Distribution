@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObjectTypeSpreadProperty extends BaseNode {
   var argument: FlowType
   @JSName("type")

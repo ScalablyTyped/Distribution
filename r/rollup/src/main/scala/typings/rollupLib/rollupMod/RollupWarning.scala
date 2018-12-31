@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RollupWarning extends RollupLogProps {
   @JSName("code")
   var code_RollupWarning: java.lang.String

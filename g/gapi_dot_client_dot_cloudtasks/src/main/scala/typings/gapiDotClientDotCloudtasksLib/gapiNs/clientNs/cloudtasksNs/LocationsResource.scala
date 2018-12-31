@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocationsResource extends js.Object {
   var queues: QueuesResource
   /** Get information about a location. */

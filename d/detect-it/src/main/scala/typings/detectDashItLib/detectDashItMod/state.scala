@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait state extends js.Object {
   var detectHover: detectDashHoverLib.detectDashHoverMod.detectHover
   var detectPassiveEvents: detectDashPassiveDashEventsLib.detectDashPassiveDashEventsMod.detectPassiveEvents

@@ -25,60 +25,26 @@ class DBEngine protected () extends js.Object {
   def BeginTrans(): scala.Unit = js.native
   /** @param Option [Option=0] */
   def CommitTrans(): scala.Unit = js.native
-  /** @param Option [Option=0] */
   def CommitTrans(Option: scala.Double): scala.Unit = js.native
   /**
-           * Compact a closed database
-           *
-           * @param DstLocale Specify one of the following:
-           * *  the locale, using one of the language constants
-           * * the password, in the form `;pwd=MyNewPassword'`
-           * * both the constant and a password, e.g. `dbLangGreek + ';pwd=MyNewPassword'`
-           *
-           * @param Options `dbEncrypt` and `dbDecrypt` are deprecated, and unsupported for ACCDB
-           * @param password Deprecated, and unsupported for ACCDB
-           */
+    * Compact a closed database
+    *
+    * @param DstLocale Specify one of the following:
+    * *  the locale, using one of the language constants
+    * * the password, in the form `;pwd=MyNewPassword'`
+    * * both the constant and a password, e.g. `dbLangGreek + ';pwd=MyNewPassword'`
+    *
+    * @param Options `dbEncrypt` and `dbDecrypt` are deprecated, and unsupported for ACCDB
+    * @param password Deprecated, and unsupported for ACCDB
+    */
   def CompactDatabase(SrcName: java.lang.String, DstName: java.lang.String): scala.Unit = js.native
-  /**
-           * Compact a closed database
-           *
-           * @param DstLocale Specify one of the following:
-           * *  the locale, using one of the language constants
-           * * the password, in the form `;pwd=MyNewPassword'`
-           * * both the constant and a password, e.g. `dbLangGreek + ';pwd=MyNewPassword'`
-           *
-           * @param Options `dbEncrypt` and `dbDecrypt` are deprecated, and unsupported for ACCDB
-           * @param password Deprecated, and unsupported for ACCDB
-           */
   def CompactDatabase(SrcName: java.lang.String, DstName: java.lang.String, DstLocale: LanguageConstants): scala.Unit = js.native
-  /**
-           * Compact a closed database
-           *
-           * @param DstLocale Specify one of the following:
-           * *  the locale, using one of the language constants
-           * * the password, in the form `;pwd=MyNewPassword'`
-           * * both the constant and a password, e.g. `dbLangGreek + ';pwd=MyNewPassword'`
-           *
-           * @param Options `dbEncrypt` and `dbDecrypt` are deprecated, and unsupported for ACCDB
-           * @param password Deprecated, and unsupported for ACCDB
-           */
   def CompactDatabase(
     SrcName: java.lang.String,
     DstName: java.lang.String,
     DstLocale: LanguageConstants,
     Options: DatabaseTypeEnum
   ): scala.Unit = js.native
-  /**
-           * Compact a closed database
-           *
-           * @param DstLocale Specify one of the following:
-           * *  the locale, using one of the language constants
-           * * the password, in the form `;pwd=MyNewPassword'`
-           * * both the constant and a password, e.g. `dbLangGreek + ';pwd=MyNewPassword'`
-           *
-           * @param Options `dbEncrypt` and `dbDecrypt` are deprecated, and unsupported for ACCDB
-           * @param password Deprecated, and unsupported for ACCDB
-           */
   def CompactDatabase(
     SrcName: java.lang.String,
     DstName: java.lang.String,
@@ -86,46 +52,13 @@ class DBEngine protected () extends js.Object {
     Options: DatabaseTypeEnum,
     password: java.lang.String
   ): scala.Unit = js.native
-  /**
-           * Compact a closed database
-           *
-           * @param DstLocale Specify one of the following:
-           * *  the locale, using one of the language constants
-           * * the password, in the form `;pwd=MyNewPassword'`
-           * * both the constant and a password, e.g. `dbLangGreek + ';pwd=MyNewPassword'`
-           *
-           * @param Options `dbEncrypt` and `dbDecrypt` are deprecated, and unsupported for ACCDB
-           * @param password Deprecated, and unsupported for ACCDB
-           */
   def CompactDatabase(SrcName: java.lang.String, DstName: java.lang.String, DstLocale: java.lang.String): scala.Unit = js.native
-  /**
-           * Compact a closed database
-           *
-           * @param DstLocale Specify one of the following:
-           * *  the locale, using one of the language constants
-           * * the password, in the form `;pwd=MyNewPassword'`
-           * * both the constant and a password, e.g. `dbLangGreek + ';pwd=MyNewPassword'`
-           *
-           * @param Options `dbEncrypt` and `dbDecrypt` are deprecated, and unsupported for ACCDB
-           * @param password Deprecated, and unsupported for ACCDB
-           */
   def CompactDatabase(
     SrcName: java.lang.String,
     DstName: java.lang.String,
     DstLocale: java.lang.String,
     Options: DatabaseTypeEnum
   ): scala.Unit = js.native
-  /**
-           * Compact a closed database
-           *
-           * @param DstLocale Specify one of the following:
-           * *  the locale, using one of the language constants
-           * * the password, in the form `;pwd=MyNewPassword'`
-           * * both the constant and a password, e.g. `dbLangGreek + ';pwd=MyNewPassword'`
-           *
-           * @param Options `dbEncrypt` and `dbDecrypt` are deprecated, and unsupported for ACCDB
-           * @param password Deprecated, and unsupported for ACCDB
-           */
   def CompactDatabase(
     SrcName: java.lang.String,
     DstName: java.lang.String,
@@ -134,32 +67,14 @@ class DBEngine protected () extends js.Object {
     password: java.lang.String
   ): scala.Unit = js.native
   /**
-           * @param Locale  Specify one of the following:
-           * *  the locale, using one of the language constants
-           * * the password, in the form `;pwd=MyNewPassword'`
-           * * both the constant and a password, e.g. `dbLangGreek + ';pwd=MyNewPassword'`
-           */
+    * @param Locale  Specify one of the following:
+    * *  the locale, using one of the language constants
+    * * the password, in the form `;pwd=MyNewPassword'`
+    * * both the constant and a password, e.g. `dbLangGreek + ';pwd=MyNewPassword'`
+    */
   def CreateDatabase(Name: java.lang.String, Locale: LanguageConstants): Database = js.native
-  /**
-           * @param Locale  Specify one of the following:
-           * *  the locale, using one of the language constants
-           * * the password, in the form `;pwd=MyNewPassword'`
-           * * both the constant and a password, e.g. `dbLangGreek + ';pwd=MyNewPassword'`
-           */
   def CreateDatabase(Name: java.lang.String, Locale: LanguageConstants, Option: DatabaseTypeEnum): Database = js.native
-  /**
-           * @param Locale  Specify one of the following:
-           * *  the locale, using one of the language constants
-           * * the password, in the form `;pwd=MyNewPassword'`
-           * * both the constant and a password, e.g. `dbLangGreek + ';pwd=MyNewPassword'`
-           */
   def CreateDatabase(Name: java.lang.String, Locale: java.lang.String): Database = js.native
-  /**
-           * @param Locale  Specify one of the following:
-           * *  the locale, using one of the language constants
-           * * the password, in the form `;pwd=MyNewPassword'`
-           * * both the constant and a password, e.g. `dbLangGreek + ';pwd=MyNewPassword'`
-           */
   def CreateDatabase(Name: java.lang.String, Locale: java.lang.String, Option: DatabaseTypeEnum): Database = js.native
   def CreateWorkspace(Name: java.lang.String, UserName: java.lang.String, Password: java.lang.String): Workspace = js.native
   def CreateWorkspace(
@@ -171,42 +86,23 @@ class DBEngine protected () extends js.Object {
   def Errors(Item: js.Any): Error = js.native
   /** Returns various statistics from the Jet engine */
   def ISAMStats(StatNum: ISAMStatsEnum): scala.Double = js.native
-  /** Returns various statistics from the Jet engine */
   def ISAMStats(StatNum: ISAMStatsEnum, Reset: scala.Boolean): scala.Double = js.native
   def Idle(): scala.Unit = js.native
   def Idle(Action: IdleEnum): scala.Unit = js.native
   /**
-           * @param Connect ODBC connection string; prepend with `ODBC;`
-           */
+    * @param Connect ODBC connection string; prepend with `ODBC;`
+    */
   def OpenConnection(Name: java.lang.String): Connection = js.native
-  /**
-           * @param Connect ODBC connection string; prepend with `ODBC;`
-           */
   def OpenConnection(Name: java.lang.String, Options: DriverPromptEnum): Connection = js.native
-  /**
-           * @param Connect ODBC connection string; prepend with `ODBC;`
-           */
   def OpenConnection(Name: java.lang.String, Options: DriverPromptEnum, ReadOnly: scala.Boolean): Connection = js.native
-  /**
-           * @param Connect ODBC connection string; prepend with `ODBC;`
-           */
   def OpenConnection(
     Name: java.lang.String,
     Options: DriverPromptEnum,
     ReadOnly: scala.Boolean,
     Connect: java.lang.String
   ): Connection = js.native
-  /**
-           * @param Connect ODBC connection string; prepend with `ODBC;`
-           */
   def OpenConnection(Name: java.lang.String, Options: RecordsetOptionEnum): Connection = js.native
-  /**
-           * @param Connect ODBC connection string; prepend with `ODBC;`
-           */
   def OpenConnection(Name: java.lang.String, Options: RecordsetOptionEnum, ReadOnly: scala.Boolean): Connection = js.native
-  /**
-           * @param Connect ODBC connection string; prepend with `ODBC;`
-           */
   def OpenConnection(
     Name: java.lang.String,
     Options: RecordsetOptionEnum,

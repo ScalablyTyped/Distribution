@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Subscription extends js.Object {
   /** The contentDetails object contains basic statistics about the subscription. */
   var contentDetails: js.UndefOr[SubscriptionContentDetails] = js.undefined

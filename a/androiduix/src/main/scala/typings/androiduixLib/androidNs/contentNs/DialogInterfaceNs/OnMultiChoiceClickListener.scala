@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnMultiChoiceClickListener extends js.Object {
   def onClick(
     dialog: androiduixLib.androidNs.contentNs.DialogInterface,

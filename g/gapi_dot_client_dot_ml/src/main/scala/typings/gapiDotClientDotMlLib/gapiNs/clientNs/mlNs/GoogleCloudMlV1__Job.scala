@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GoogleCloudMlV1__Job extends js.Object {
   /** Output only. When the job was created. */
   var createTime: js.UndefOr[java.lang.String] = js.undefined

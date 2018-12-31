@@ -118,7 +118,6 @@ object fractalNs extends js.Object {
         def variants(): this.type = js.native
       }
       
-      
       trait ComponentConfig extends js.Object {
         var default: js.UndefOr[ComponentDefaultConfig] = js.undefined
         var `default.collated`: js.UndefOr[scala.Boolean] = js.undefined
@@ -137,7 +136,6 @@ object fractalNs extends js.Object {
         var title: js.UndefOr[java.lang.String] = js.undefined
         var `yield`: js.UndefOr[java.lang.String] = js.undefined
       }
-      
       
       trait ComponentDefaultConfig extends js.Object {
         var collated: js.UndefOr[scala.Boolean] = js.undefined
@@ -239,7 +237,6 @@ object fractalNs extends js.Object {
         def pages(): this.type = js.native
       }
       
-      
       trait DocConfig extends js.Object {
         var default: js.UndefOr[DocDefaultConfig] = js.undefined
         var `default.context`: js.UndefOr[js.Any] = js.undefined
@@ -263,13 +260,11 @@ object fractalNs extends js.Object {
         var title: js.UndefOr[java.lang.String] = js.undefined
       }
       
-      
       trait DocDefaultConfig extends js.Object {
         var context: js.UndefOr[js.Any] = js.undefined
         var prefix: js.UndefOr[java.lang.String] = js.undefined
         var status: js.UndefOr[java.lang.String] = js.undefined
       }
-      
       
       trait DocMarkdownConfig extends js.Object {
         var breaks: js.UndefOr[scala.Boolean] = js.undefined
@@ -322,7 +317,6 @@ object fractalNs extends js.Object {
     @JSName("files")
     @js.native
     object filesNs extends js.Object {
-      
       trait File extends js.Object {
         var base: java.lang.String
         val contents: nodeLib.Buffer
@@ -538,7 +532,6 @@ object fractalNs extends js.Object {
   @JSName("core")
   @js.native
   object coreNs extends js.Object {
-    
     trait StatusInfo extends js.Object {
       var color: js.UndefOr[java.lang.String] = js.undefined
       var description: js.UndefOr[java.lang.String] = js.undefined
@@ -604,26 +597,17 @@ object fractalNs extends js.Object {
         def each(fn: js.Function1[/* item */ T, scala.Unit]): this.type = js.native
         def eq(pos: scala.Double): js.UndefOr[T] = js.native
         def filter(handle: java.lang.String): js.Array[T] = js.native
-        def filter[TKey /* <: java.lang.String */](
-          name: TKey,
-          value: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(TKey))) */js.Any
-        ): js.Array[T] = js.native
+        def filter[TKey /* <: java.lang.String */](name: TKey, value: /* import warning: ImportType.apply Failed type conversion: T[TKey] */ js.Any): js.Array[T] = js.native
         def filterItems(items: js.Array[T], handle: java.lang.String): js.Array[T] = js.native
         def filterItems[TKey /* <: java.lang.String */](
           items: js.Array[T],
           name: TKey,
-          value: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(TKey))) */js.Any
+          value: /* import warning: ImportType.apply Failed type conversion: T[TKey] */ js.Any
         ): js.Array[T] = js.native
         def find(handle: java.lang.String): T = js.native
-        def find[TKey /* <: java.lang.String */](
-          name: TKey,
-          value: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(TKey))) */js.Any
-        ): T = js.native
+        def find[TKey /* <: java.lang.String */](name: TKey, value: /* import warning: ImportType.apply Failed type conversion: T[TKey] */ js.Any): T = js.native
         def findCollection(handle: java.lang.String): Collection[T] = js.native
-        def findCollection[TKey /* <: java.lang.String */](
-          name: TKey,
-          value: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(TKey))) */js.Any
-        ): Collection[T] = js.native
+        def findCollection[TKey /* <: java.lang.String */](name: TKey, value: /* import warning: ImportType.apply Failed type conversion: T[TKey] */ js.Any): Collection[T] = js.native
         def first(): js.UndefOr[T] = js.native
         def flatten(): this.type = js.native
         def flattenDeep(): this.type = js.native
@@ -649,21 +633,18 @@ object fractalNs extends js.Object {
         def config(): T = js.native
         def config(config: T): this.type = js.native
         def get[K /* <: java.lang.String */, V](path: K): js.UndefOr[
-                (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any) | V | scala.Null
+                (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | scala.Null
               ] = js.native
         def get[K /* <: java.lang.String */, V](path: K, defaultValue: V): js.UndefOr[
-                (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any) | V | scala.Null
+                (/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any) | V | scala.Null
               ] = js.native
         def set[K /* <: java.lang.String */](path: K): this.type = js.native
-        def set[K /* <: java.lang.String */](
-          path: K,
-          value: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-        ): this.type = js.native
+        def set[K /* <: java.lang.String */](path: K, value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any): this.type = js.native
       }
       
       /**
-                   * Combined EventEmitter and Configurable mixins
-                   */
+        * Combined EventEmitter and Configurable mixins
+        */
       /* RemoveMultipleInheritance: Dropped parents List(atFrctlFractalLib.fractalMod.fractalNs.coreNs.mixinsNs.Configurable because Inheritance from two classes)*/
       @js.native
       abstract class ConfigurableEmitter[T] ()
@@ -716,8 +697,8 @@ object fractalNs extends js.Object {
     class Builder ()
       extends nodeLib.eventsMod.EventEmitter {
       /**
-                   * @deprecated Use start() instead.
-                   */
+        * @deprecated Use start() instead.
+        */
       def build(): js.Promise[atFrctlFractalLib.Anon_ErrorCount] = js.native
       def start(): js.Promise[atFrctlFractalLib.Anon_ErrorCount] = js.native
       def stop(): scala.Unit = js.native
@@ -751,7 +732,6 @@ object fractalNs extends js.Object {
       def theme(name: java.lang.String, instance: atFrctlFractalLib.fractalMod.WebTheme): this.type = js.native
     }
     
-    
     trait WebBuilderConfig extends js.Object {
       var concurrency: js.UndefOr[scala.Double] = js.undefined
       var dest: js.UndefOr[java.lang.String] = js.undefined
@@ -760,11 +740,9 @@ object fractalNs extends js.Object {
       var urls: js.UndefOr[WebBuilderUrls] = js.undefined
     }
     
-    
     trait WebBuilderUrls extends js.Object {
       var ext: js.UndefOr[java.lang.String] = js.undefined
     }
-    
     
     trait WebConfig extends js.Object {
       var builder: js.UndefOr[WebBuilderConfig] = js.undefined
@@ -788,7 +766,6 @@ object fractalNs extends js.Object {
       var `static.path`: js.UndefOr[java.lang.String] = js.undefined
     }
     
-    
     trait WebServerConfig extends js.Object {
       var port: js.UndefOr[scala.Double] = js.undefined
       var sync: js.UndefOr[scala.Boolean] = js.undefined
@@ -797,14 +774,12 @@ object fractalNs extends js.Object {
       var watch: js.UndefOr[scala.Boolean] = js.undefined
     }
     
-    
     trait WebServerSyncOptions extends js.Object {
       var browser: js.UndefOr[js.Array[java.lang.String]] = js.undefined
       @JSName("notify")
       var notify_FWebServerSyncOptions: js.UndefOr[scala.Boolean] = js.undefined
       var open: js.UndefOr[scala.Boolean] = js.undefined
     }
-    
     
     trait WebStaticConfig extends js.Object {
       var mount: js.UndefOr[java.lang.String] = js.undefined

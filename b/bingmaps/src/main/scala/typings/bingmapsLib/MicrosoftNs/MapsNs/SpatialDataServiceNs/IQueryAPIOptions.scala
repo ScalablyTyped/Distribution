@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IQueryAPIOptions extends js.Object {
   /** Specifies a conditional expression for a list of properties and values. */
   var filter: js.UndefOr[java.lang.String | IFilter] = js.undefined
@@ -14,17 +13,17 @@ trait IQueryAPIOptions extends js.Object {
   /** Specifies to query the staged version of the data source instead of the published version. Default: false */
   var isStaging: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * Specifies one or more properties to use to sort the results of a query. 
-           * You can specify up to three (3) properties. Results are sorted in ascending order.
-           * Note: You cannot use the latitude and longitude properties to sort results. You can use the elevation property.
-           */
+    * Specifies one or more properties to use to sort the results of a query. 
+    * You can specify up to three (3) properties. Results are sorted in ascending order.
+    * Note: You cannot use the latitude and longitude properties to sort results. You can use the elevation property.
+    */
   var orderBy: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** A queryurl containing the access id, data source name and the entity type name. */
   var queryUrl: java.lang.String
   /**
-           * Specifies the data source properties to return in the response. If the $select query option is not specified or
-           * if it is set to "" ($select=), all data source properties are returned. Default: "*,_distance"
-           */
+    * Specifies the data source properties to return in the response. If the $select query option is not specified or
+    * if it is set to "" ($select=), all data source properties are returned. Default: "*,_distance"
+    */
   var select: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Specifies to not return a specified number of query results. */
   var skip: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GeosearchObject extends js.Object {
   var allowMultipleResults: js.UndefOr[scala.Boolean] = js.undefined
   var collapseAfterResult: js.UndefOr[scala.Boolean] = js.undefined

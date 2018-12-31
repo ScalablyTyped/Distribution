@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Optimistic extends js.Object {
   /**
-               * Optimistic information
-               */
+    * Optimistic information
+    */
   var optimistic: Anon_Type
 }
 

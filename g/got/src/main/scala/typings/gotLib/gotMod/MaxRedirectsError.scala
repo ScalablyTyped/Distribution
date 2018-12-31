@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MaxRedirectsError extends StdError {
   var name: gotLib.gotLibStrings.MaxRedirectsError
   var redirectUrls: js.Array[java.lang.String]

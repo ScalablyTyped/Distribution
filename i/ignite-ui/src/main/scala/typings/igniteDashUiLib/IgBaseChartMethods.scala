@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgBaseChartMethods extends js.Object {
   /**
   	 * Adds a new item to the data source and notifies the chart.

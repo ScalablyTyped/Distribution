@@ -5,17 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CertificateVerifyProcRequest extends js.Object {
   var certificate: Certificate
   /**
-       * Error code.
-       */
+    * Error code.
+    */
   var errorCode: scala.Double
   var hostname: java.lang.String
   /**
-       * Verification result from chromium.
-       */
+    * Verification result from chromium.
+    */
   var verificationResult: java.lang.String
 }
 

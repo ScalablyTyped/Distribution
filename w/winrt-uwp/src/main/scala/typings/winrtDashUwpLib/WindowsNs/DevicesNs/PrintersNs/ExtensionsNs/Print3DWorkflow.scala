@@ -23,9 +23,9 @@ abstract class Print3DWorkflow () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[Print3DWorkflow, Print3DWorkflowPrintRequestedEventArgs]
   ): scala.Unit = js.native
   /**
-                       * Gets the model of the 3D object to be printed.
-                       * @return The model of the 3D object to be printed.
-                       */
+    * Gets the model of the 3D object to be printed.
+    * @return The model of the 3D object to be printed.
+    */
   def getPrintModelPackage(): js.Any = js.native
   /** Occurs when the user initiates printing. */
   def onprintrequested(

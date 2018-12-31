@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MoreButtonClickedEventArgs extends ProcessingModeEventArgs {
   var handled: scala.Boolean
   val interval: BootstrapTimeInterval

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Describes a color in terms of alpha, red, green, and blue channels. */
-
 trait Color extends js.Object {
   /** Gets or sets the sRGB alpha channel value of the color. */
   var a: scala.Double

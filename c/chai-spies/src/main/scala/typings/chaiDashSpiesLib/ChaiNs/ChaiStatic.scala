@@ -10,17 +10,17 @@ trait ChaiStatic extends js.Object {
   @JSName("spy")
   var spy_Original: chaiDashSpiesLib.ChaiSpiesNs.Spy = js.native
   /**
-           * #### chai.spy (function)
-           *
-           * Wraps a function in a proxy function. All calls will pass through to the original function.
-           * ```ts
-           * function original() {}
-           * var spy = chai.spy(original)
-           *   , e_spy = chai.spy();
-           * ```
-           * @param fn function to spy on. @default ```function () {}```
-           * @returns function to actually call
-           */
+    * #### chai.spy (function)
+    *
+    * Wraps a function in a proxy function. All calls will pass through to the original function.
+    * ```ts
+    * function original() {}
+    * var spy = chai.spy(original)
+    *   , e_spy = chai.spy();
+    * ```
+    * @param fn function to spy on. @default ```function () {}```
+    * @returns function to actually call
+    */
   def spy(): chaiDashSpiesLib.ChaiSpiesNs.SpyFunc0Proxy[scala.Unit] = js.native
   def spy[R](fn: chaiDashSpiesLib.ChaiSpiesNs.SpyFunc0[R]): chaiDashSpiesLib.ChaiSpiesNs.SpyFunc0Proxy[R] = js.native
   def spy[R](name: java.lang.String, fn: chaiDashSpiesLib.ChaiSpiesNs.SpyFunc0[R]): chaiDashSpiesLib.ChaiSpiesNs.SpyFunc0Proxy[R] = js.native

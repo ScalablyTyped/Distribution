@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Filtered extends js.Object {
   var executionTime: scala.Double
   var filtered: scala.Double

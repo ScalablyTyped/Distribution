@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Settings extends js.Object {
   var align: js.UndefOr[Alignment] = js.undefined
   var ease: js.UndefOr[js.Function1[/* value */ scala.Double, scala.Double]] = js.undefined

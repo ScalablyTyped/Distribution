@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObjectTypeAnnotation extends Node {
   var callProperties: js.Array[ObjectTypeCallProperty]
   var indexers: js.Array[ObjectTypeIndexer]

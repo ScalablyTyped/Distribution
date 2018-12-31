@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseOptions extends js.Object {
   var allowInput: scala.Boolean
   var altFormat: java.lang.String

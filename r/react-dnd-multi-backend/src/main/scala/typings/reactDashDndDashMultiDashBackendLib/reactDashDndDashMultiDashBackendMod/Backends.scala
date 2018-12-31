@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Backends extends js.Object {
   /**
-       * The array of backends to use. The first backend in the list is used as the default backend.
-       * This means that you can start with the html5 backend, and fall-back to a touch backend if
-       * the event is not one that is compatible with the html5 backend.
-       */
+    * The array of backends to use. The first backend in the list is used as the default backend.
+    * This means that you can start with the html5 backend, and fall-back to a touch backend if
+    * the event is not one that is compatible with the html5 backend.
+    */
   var backends: js.Array[BackendDeclaration]
 }
 

@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 		 * An object that represents a contact record for a person or organization in the system contacts
 		 * address book.
 		 */
-
 trait Person
   extends titaniumLib.TitaniumNs.Proxy {
   /**

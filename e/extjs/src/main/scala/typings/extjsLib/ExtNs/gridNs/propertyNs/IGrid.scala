@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGrid
   extends extjsLib.ExtNs.gridNs.IPanel {
   /** [Config Option] (Object) */

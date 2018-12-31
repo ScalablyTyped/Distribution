@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TextValue extends js.Object {
   var delta: js.Any
   var htmlValue: java.lang.String | scala.Null

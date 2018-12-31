@@ -16,19 +16,11 @@ class DiagramNodeChildren protected () extends js.Object {
   val Parent: js.Any = js.native
   var `Word.DiagramNodeChildren_typekey`: DiagramNodeChildren = js.native
   /**
-           * @param any [Index=-1]
-           * @param Office.MsoDiagramNodeType [NodeType=1]
-           */
+    * @param any [Index=-1]
+    * @param Office.MsoDiagramNodeType [NodeType=1]
+    */
   def AddNode(): DiagramNode = js.native
-  /**
-           * @param any [Index=-1]
-           * @param Office.MsoDiagramNodeType [NodeType=1]
-           */
   def AddNode(Index: js.Any): DiagramNode = js.native
-  /**
-           * @param any [Index=-1]
-           * @param Office.MsoDiagramNodeType [NodeType=1]
-           */
   def AddNode(Index: js.Any, NodeType: activexDashOfficeLib.OfficeNs.MsoDiagramNodeType): DiagramNode = js.native
   def Item(Index: js.Any): DiagramNode = js.native
   def SelectAll(): scala.Unit = js.native

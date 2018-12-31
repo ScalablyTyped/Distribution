@@ -20,30 +20,16 @@ class IPCMessageWriter protected ()
   override def dispose(): scala.Unit = js.native
   def doWriteMessage(msg: vscodeDashJsonrpcLib.libMessagesMod.Message): scala.Unit = js.native
   /**
-       *
-       * @param listener The listener function will be call when the event happens.
-       * @param thisArgs The 'this' which will be used when calling the event listener.
-       * @param disposables An array to which a {{IDisposable}} will be added. The
-       * @return
-      */
+    *
+    * @param listener The listener function will be call when the event happens.
+    * @param thisArgs The 'this' which will be used when calling the event listener.
+    * @param disposables An array to which a {{IDisposable}} will be added. The
+    * @return
+    */
   /* InferMemberOverrides */
   override def onClose(listener: js.Function1[/* e */ scala.Unit, _]): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
-  /**
-       *
-       * @param listener The listener function will be call when the event happens.
-       * @param thisArgs The 'this' which will be used when calling the event listener.
-       * @param disposables An array to which a {{IDisposable}} will be added. The
-       * @return
-      */
   /* InferMemberOverrides */
   override def onClose(listener: js.Function1[/* e */ scala.Unit, _], thisArgs: js.Any): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
-  /**
-       *
-       * @param listener The listener function will be call when the event happens.
-       * @param thisArgs The 'this' which will be used when calling the event listener.
-       * @param disposables An array to which a {{IDisposable}} will be added. The
-       * @return
-      */
   /* InferMemberOverrides */
   override def onClose(
     listener: js.Function1[/* e */ scala.Unit, _],
@@ -51,12 +37,12 @@ class IPCMessageWriter protected ()
     disposables: js.Array[vscodeDashJsonrpcLib.libEventsMod.Disposable]
   ): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
   /**
-       *
-       * @param listener The listener function will be call when the event happens.
-       * @param thisArgs The 'this' which will be used when calling the event listener.
-       * @param disposables An array to which a {{IDisposable}} will be added. The
-       * @return
-      */
+    *
+    * @param listener The listener function will be call when the event happens.
+    * @param thisArgs The 'this' which will be used when calling the event listener.
+    * @param disposables An array to which a {{IDisposable}} will be added. The
+    * @return
+    */
   /* InferMemberOverrides */
   override def onError(
     listener: js.Function1[
@@ -68,13 +54,6 @@ class IPCMessageWriter protected ()
       _
     ]
   ): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
-  /**
-       *
-       * @param listener The listener function will be call when the event happens.
-       * @param thisArgs The 'this' which will be used when calling the event listener.
-       * @param disposables An array to which a {{IDisposable}} will be added. The
-       * @return
-      */
   /* InferMemberOverrides */
   override def onError(
     listener: js.Function1[
@@ -87,13 +66,6 @@ class IPCMessageWriter protected ()
     ],
     thisArgs: js.Any
   ): vscodeDashJsonrpcLib.libEventsMod.Disposable = js.native
-  /**
-       *
-       * @param listener The listener function will be call when the event happens.
-       * @param thisArgs The 'this' which will be used when calling the event listener.
-       * @param disposables An array to which a {{IDisposable}} will be added. The
-       * @return
-      */
   /* InferMemberOverrides */
   override def onError(
     listener: js.Function1[

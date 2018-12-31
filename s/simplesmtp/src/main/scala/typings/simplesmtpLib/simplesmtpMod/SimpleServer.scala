@@ -21,13 +21,6 @@ class SimpleServer ()
   	 * @param {Function} callback The callback function to run when the server is listening
   	 */
   def listen(port: scala.Double, host: java.lang.String): scala.Unit = js.native
-  /**
-  	 * Server starts listening on defined port and hostname
-  	 *
-  	 * @param {Number} port The port number to listen
-  	 * @param {String} [host] The hostname to listen
-  	 * @param {Function} callback The callback function to run when the server is listening
-  	 */
   def listen(
     port: scala.Double,
     host: java.lang.String,

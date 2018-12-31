@@ -16,10 +16,10 @@ object runtimeModMembers extends js.Object {
   def blockParams(obj: js.Array[_], ids: js.Array[_]): js.Array[_] = js.native
   def compile[T](input: js.Any): handlebarsLib.HandlebarsTemplateDelegate[T] = js.native
   def compile[T](input: js.Any, options: handlebarsLib.CompileOptions): handlebarsLib.HandlebarsTemplateDelegate[T] = js.native
-  def create(): js.Object = js.native
+  def create(): js.Any = js.native
   def createFrame(`object`: js.Any): js.Any = js.native
   def log(level: scala.Double, obj: js.Any): scala.Unit = js.native
-  def noConflict(): js.Object = js.native
+  def noConflict(): js.Any = js.native
   def parse(input: java.lang.String): handlebarsLib.hbsNs.ASTNs.Program = js.native
   def parse(input: java.lang.String, options: handlebarsLib.HandlebarsNs.ParseOptions): handlebarsLib.hbsNs.ASTNs.Program = js.native
   def precompile(input: js.Any): handlebarsLib.TemplateSpecification = js.native

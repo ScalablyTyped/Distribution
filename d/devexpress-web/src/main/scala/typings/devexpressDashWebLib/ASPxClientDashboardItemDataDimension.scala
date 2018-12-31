@@ -6,39 +6,38 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Contains the dimension metadata.
- */
-
+  * Contains the dimension metadata.
+  */
 trait ASPxClientDashboardItemDataDimension extends js.Object {
   /**
-       * Gets the data member identifier for the current dimension.
-       * Value: A string value that identifies a data member.
-       */
+    * Gets the data member identifier for the current dimension.
+    * Value: A string value that identifies a data member.
+    */
   var DataMember: java.lang.String
   /**
-       * Gets the group interval for date-time values for the current dimension.
-       * Value: A string value that represents how date-time values are grouped.
-       */
+    * Gets the group interval for date-time values for the current dimension.
+    * Value: A string value that represents how date-time values are grouped.
+    */
   var DateTimeGroupInterval: java.lang.String
   /**
-       * Gets the dimension identifier.
-       * Value: A string value that is the dimension identifier.
-       */
+    * Gets the dimension identifier.
+    * Value: A string value that is the dimension identifier.
+    */
   var Id: java.lang.String
   /**
-       * Gets or sets the name of the dimension.
-       * Value: A string value that is the name of the dimension.
-       */
+    * Gets or sets the name of the dimension.
+    * Value: A string value that is the name of the dimension.
+    */
   var Name: java.lang.String
   /**
-       * Gets the group interval for string values.
-       * Value: A string value that specifies the group interval for string values.
-       */
+    * Gets the group interval for string values.
+    * Value: A string value that specifies the group interval for string values.
+    */
   var TextGroupInterval: java.lang.String
   /**
-       * Formats the specified value using format settings of the current dimension.
-       * @param value A value to be formatted.
-       */
+    * Formats the specified value using format settings of the current dimension.
+    * @param value A value to be formatted.
+    */
   def Format(value: js.Object): java.lang.String
 }
 

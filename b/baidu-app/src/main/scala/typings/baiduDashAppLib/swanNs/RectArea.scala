@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RectArea extends js.Object {
   /** 节点的下边界坐标 */
   var bottom: scala.Double

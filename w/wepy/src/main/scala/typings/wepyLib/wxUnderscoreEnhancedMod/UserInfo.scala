@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserInfo extends js.Object {
   var avatarUrl: java.lang.String
   var city: java.lang.String

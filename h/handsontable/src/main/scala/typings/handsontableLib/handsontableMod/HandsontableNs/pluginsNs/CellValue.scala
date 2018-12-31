@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CellValue extends BaseCell {
   var error: java.lang.String | scala.Unit
   var precedents: js.Array[_]

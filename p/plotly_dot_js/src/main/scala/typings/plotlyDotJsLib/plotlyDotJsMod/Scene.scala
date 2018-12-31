@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Scene extends js.Object {
   var annotations: stdLib.Partial[Annotations] | js.Array[stdLib.Partial[Annotations]]
   var aspectmode: plotlyDotJsLib.plotlyDotJsLibStrings.auto | plotlyDotJsLib.plotlyDotJsLibStrings.cube | plotlyDotJsLib.plotlyDotJsLibStrings.data | plotlyDotJsLib.plotlyDotJsLibStrings.manual

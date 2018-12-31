@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContentInfo extends js.Object {
   var content: js.Any
   var contentType: java.lang.String

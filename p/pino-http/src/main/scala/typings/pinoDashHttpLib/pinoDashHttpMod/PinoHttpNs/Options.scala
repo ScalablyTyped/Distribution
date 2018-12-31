@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options
   extends pinoLib.pinoMod.PNs.LoggerOptions {
   var genReqId: js.UndefOr[js.Function1[/* req */ nodeLib.httpMod.IncomingMessage, scala.Double]] = js.undefined

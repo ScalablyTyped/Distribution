@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocaleObject extends js.Object {
   var array: js.UndefOr[yupLib.yupLibStrings.LocaleObject with js.Any] = js.undefined
   var bool: js.UndefOr[yupLib.yupLibStrings.LocaleObject with js.Any] = js.undefined

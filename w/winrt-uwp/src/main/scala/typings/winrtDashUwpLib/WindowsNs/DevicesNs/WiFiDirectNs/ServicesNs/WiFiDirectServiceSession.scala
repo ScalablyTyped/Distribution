@@ -30,10 +30,10 @@ abstract class WiFiDirectServiceSession () extends js.Object {
   /** Gets the session status. */
   var status: WiFiDirectServiceSessionStatus = js.native
   /**
-                       * Adds a DatagramSocket to the session. Your code creates the DatagramSocket before calling this method. Associating a socket to the session causes port information to be sent to the remote device(s) in the session. (In terms of this API, a RemotePortAdded event is raised on each remote device in the session, specifying the UDP protocol.) A remote device can use that information to open a socket and connect back to the local machine.
-                       * @param value The DatagramSocket instance to associate with this session.
-                       * @return An asynchronous association action. Returns on successful completion of the association.
-                       */
+    * Adds a DatagramSocket to the session. Your code creates the DatagramSocket before calling this method. Associating a socket to the session causes port information to be sent to the remote device(s) in the session. (In terms of this API, a RemotePortAdded event is raised on each remote device in the session, specifying the UDP protocol.) A remote device can use that information to open a socket and connect back to the local machine.
+    * @param value The DatagramSocket instance to associate with this session.
+    * @return An asynchronous association action. Returns on successful completion of the association.
+    */
   def addDatagramSocketAsync(value: winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.DatagramSocket): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   def addEventListener(`type`: java.lang.String, listener: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_]): scala.Unit = js.native
   @JSName("addEventListener")
@@ -47,17 +47,17 @@ abstract class WiFiDirectServiceSession () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[WiFiDirectServiceSession, _]
   ): scala.Unit = js.native
   /**
-                       * Adds a StreamSocketListener to the session. Your code creates the StreamSocketListener before calling this method. Associating a socket to the session causes port information to be sent to the remote device(s) in the session. (In terms of this API, a RemotePortAdded event is raised on each remote device in the session, specifying the TCP protocol.) A remote device can use that information to open a socket and connect back to the local machine.
-                       * @param value The StreamSocketListener instance to be associated with the session.
-                       * @return An asynchronous association action. Returns on successful completion of the association.
-                       */
+    * Adds a StreamSocketListener to the session. Your code creates the StreamSocketListener before calling this method. Associating a socket to the session causes port information to be sent to the remote device(s) in the session. (In terms of this API, a RemotePortAdded event is raised on each remote device in the session, specifying the TCP protocol.) A remote device can use that information to open a socket and connect back to the local machine.
+    * @param value The StreamSocketListener instance to be associated with the session.
+    * @return An asynchronous association action. Returns on successful completion of the association.
+    */
   def addStreamSocketListenerAsync(value: winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.StreamSocketListener): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /** Closes the session. */
   def close(): scala.Unit = js.native
   /**
-                       * Gets a list of connection endpoint pairs for the session. Your code uses IVectorView operations to enumerate the endpoint pairs in the list.
-                       * @return An immutable snapshot list of endpoint pairs involved in the session.
-                       */
+    * Gets a list of connection endpoint pairs for the session. Your code uses IVectorView operations to enumerate the endpoint pairs in the list.
+    * @return An immutable snapshot list of endpoint pairs involved in the session.
+    */
   def getConnectionEndpointPairs(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[winrtDashUwpLib.WindowsNs.NetworkingNs.EndpointPair] = js.native
   /** Event raised when a new remote port is added to the session. Your event handler should respond by establishing the appropriate socket connection to the new remote port. */
   def onremoteportadded(

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OverrideEnvironment extends js.Object {
   /** True if the ping should contain the client id. */
   var addClientId: js.UndefOr[scala.Boolean] = js.undefined

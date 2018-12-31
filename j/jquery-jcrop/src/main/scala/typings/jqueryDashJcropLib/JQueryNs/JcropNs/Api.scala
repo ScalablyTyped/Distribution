@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Api extends js.Object {
   /** Animate selection to new selection, format: [ x,y,x2,y2 ] */
   def animateTo(selection: js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]): scala.Unit

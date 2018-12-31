@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PollyConfig extends js.Object {
   var adapterOptions: js.UndefOr[js.Any] = js.undefined
   var adapters: js.UndefOr[

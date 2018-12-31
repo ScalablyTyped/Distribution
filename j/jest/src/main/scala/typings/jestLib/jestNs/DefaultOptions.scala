@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DefaultOptions extends js.Object {
   var automock: scala.Boolean
   var bail: scala.Boolean

@@ -16,40 +16,40 @@ class PivotTreeMap protected () extends Widget {
   @JSName("model")
   var model_PivotTreeMap: ejDotWebDotAllLib.ejNs.PivotTreeMapNs.Model = js.native
   /** Performs an asynchronous HTTP (AJAX) request.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def doAjaxPost(): scala.Unit = js.native
   /** Performs an asynchronous HTTP (FullPost) submit.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def doPostBack(): scala.Unit = js.native
   /** Renders the control with the pivot engine obtained from OLAP cube.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def generateJSON(): scala.Unit = js.native
   /** Returns the JSON records formed to render the control.
-           * @returns {any[]}
-           */
+    * @returns {any[]}
+    */
   def getJSONRecords(): js.Array[_] = js.native
   /** Returns the OlapReport string maintained along with the axis elements information.
-           * @returns {string}
-           */
+    * @returns {string}
+    */
   def getOlapReport(): java.lang.String = js.native
   /** This function receives the update from service-end, which would be utilized for rendering the widget.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def renderControlSuccess(): scala.Unit = js.native
   /** This function receives the JSON formatted datasource to render the PivotTreeMap control.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def renderTreeMapFromJSON(): scala.Unit = js.native
   /** Sets the JSON records to render the control.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def setJSONRecords(): scala.Unit = js.native
   /** Sets the OlapReport string along with the axis information and maintains it in a property.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def setOlapReport(): scala.Unit = js.native
 }
 

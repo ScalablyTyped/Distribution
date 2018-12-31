@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KmlFeatureData extends js.Object {
   var author: KmlAuthor
   var description: java.lang.String

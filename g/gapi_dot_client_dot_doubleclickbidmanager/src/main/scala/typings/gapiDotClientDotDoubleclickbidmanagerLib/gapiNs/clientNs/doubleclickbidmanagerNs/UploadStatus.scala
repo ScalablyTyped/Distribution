@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadStatus extends js.Object {
   /** Reasons why upload can't be completed. */
   var errors: js.UndefOr[js.Array[java.lang.String]] = js.undefined

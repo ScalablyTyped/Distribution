@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait seriesOptions extends js.Object {
   var bars: js.UndefOr[barsOptions] = js.undefined
   var clickable: js.UndefOr[scala.Boolean] = js.undefined

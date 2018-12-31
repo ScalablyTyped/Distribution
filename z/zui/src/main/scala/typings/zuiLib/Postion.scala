@@ -6,14 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * draggable
- */
-
+  * draggable
+  */
 /**
- * droppable
- */
-
-
+  * droppable
+  */
 trait Postion extends js.Object {
   var height: scala.Double
   var left: scala.Double

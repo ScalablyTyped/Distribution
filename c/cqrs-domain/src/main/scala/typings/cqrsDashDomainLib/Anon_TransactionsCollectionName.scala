@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TransactionsCollectionName extends js.Object {
   var authSource: js.UndefOr[java.lang.String] = js.undefined
   var dbName: js.UndefOr[java.lang.String] = js.undefined

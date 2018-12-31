@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 sealed trait CountResult extends js.Object
 
 /**
-     * Indicates whether the IListDataAdapter was able to provide a count.
-    **/
+  * Indicates whether the IListDataAdapter was able to provide a count.
+  **/
 @JSGlobal("WinJS.UI.CountResult")
 @js.native
 object CountResult extends js.Object {
   /**
-           * Indicates no count is available.
-          **/
+    * Indicates no count is available.
+    **/
   @js.native
   sealed trait unknown
     extends winjsLib.WinJSNs.UINs.CountResult

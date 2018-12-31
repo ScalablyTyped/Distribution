@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DictionaryBuilder extends js.Object {
   var tid_entries: js.Array[java.lang.String]
   var unk_entries: js.Array[java.lang.String]

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "SourceCodeInfo")
 @js.native
 object SourceCodeInfoNs extends js.Object {
-  
   trait AsObject extends js.Object {
     var locationList: js.Array[
         googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.SourceCodeInfoNs.LocationNs.AsObject
@@ -69,7 +68,6 @@ object SourceCodeInfoNs extends js.Object {
   @JSName("Location")
   @js.native
   object LocationNs extends js.Object {
-    
     trait AsObject extends js.Object {
       var leadingComments: js.UndefOr[java.lang.String] = js.undefined
       var leadingDetachedCommentsList: js.Array[java.lang.String]

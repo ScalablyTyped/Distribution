@@ -19,13 +19,13 @@ object MigrationNs extends js.Object {
     extends orientjsLib.orientjsMod.orientjsNs.MigrationNs.Migration
   
   @js.native
+  /**
+    * # Migration Manager
+    *
+    * @param config The configuration for the migration manager.
+    */
   class MigrationManager ()
     extends orientjsLib.orientjsMod.orientjsNs.MigrationNs.MigrationManager {
-    /**
-                 * # Migration Manager
-                 *
-                 * @param config The configuration for the migration manager.
-                 */
     def this(config: orientjsLib.orientjsMod.orientjsNs.MigrationNs.MigrationManagerConfig) = this()
   }
   

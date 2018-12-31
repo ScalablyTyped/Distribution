@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait BodyType extends js.Object
 
 /**
-     * [Api set: WordApi]
-     */
+  * [Api set: WordApi]
+  */
 @JSGlobal("Word.BodyType")
 @js.native
 object BodyType extends js.Object {

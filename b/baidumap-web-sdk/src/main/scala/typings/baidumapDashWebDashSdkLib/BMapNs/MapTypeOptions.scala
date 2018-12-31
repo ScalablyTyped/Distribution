@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapTypeOptions extends js.Object {
   var errorImageUrl: js.UndefOr[java.lang.String] = js.undefined
   var maxZoom: js.UndefOr[scala.Double] = js.undefined

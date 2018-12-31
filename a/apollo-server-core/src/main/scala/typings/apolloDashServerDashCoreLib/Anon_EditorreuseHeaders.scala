@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EditorreuseHeaders extends js.Object {
   var `editor.cursorShape`: java.lang.String
   var `editor.fontFamily`: java.lang.String

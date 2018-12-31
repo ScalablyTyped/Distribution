@@ -14,13 +14,13 @@ object eventsNs extends js.Object {
   def addListener(
     visualization: js.Any,
     eventName: java.lang.String,
-    callback: js.Function1[/* repeated */js.Any, scala.Unit]
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): js.Any = js.native
   def addOneTimeListener(visualization: js.Any, eventName: java.lang.String, callback: js.Function): js.Any = js.native
   def addOneTimeListener(
     visualization: js.Any,
     eventName: java.lang.String,
-    callback: js.Function1[/* repeated */js.Any, scala.Unit]
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): js.Any = js.native
   def removeAllListeners(visualization: js.Any): scala.Unit = js.native
   def removeListener(listener: js.Any): scala.Unit = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CertificateCreationResult extends js.Object {
   var certificate: js.Any
   var clientKey: java.lang.String

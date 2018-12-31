@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TileMinimizingEventUIParam extends js.Object {
   /**
   	 * Used to get reference to the tile that is maximizing simultaneously or null if no tile is maximizing.

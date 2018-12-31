@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebSocketTransport extends Transport {
   var webSocket: stdLib.WebSocket
 }

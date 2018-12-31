@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkerMessageResponse extends js.Object {
   /** The service's response to a worker's health report. */
   var workerHealthReportResponse: js.UndefOr[WorkerHealthReportResponse] = js.undefined

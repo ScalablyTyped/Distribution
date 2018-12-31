@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BOTTOMCENTER extends js.Object {
   var BOTTOM: reactDashFoundationLib.enumsMod.VerticalAlignments
   var CENTER: reactDashFoundationLib.enumsMod.MenuAlignments

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PageIndexChangingEventUIParam extends js.Object {
   /**
   	 * Gets current page index.

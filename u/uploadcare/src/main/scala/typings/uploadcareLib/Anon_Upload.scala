@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Upload extends js.Object {
   var fromUrl: js.Function3[
     /* url */ java.lang.String, 

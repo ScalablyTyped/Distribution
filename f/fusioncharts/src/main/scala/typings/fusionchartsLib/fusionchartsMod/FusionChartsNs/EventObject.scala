@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventObject extends js.Object {
   var cancelled: scala.Boolean
   var detached: scala.Boolean

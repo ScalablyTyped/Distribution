@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IXTemplate extends ITemplate {
   /** [Method] Appends the result of this template to the provided output array
   		* @param values Object/Array The template values. See apply.

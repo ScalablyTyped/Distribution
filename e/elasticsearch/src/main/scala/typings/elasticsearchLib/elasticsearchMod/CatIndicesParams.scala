@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CatIndicesParams extends CatCommonParams {
   var bytes: js.UndefOr[CatBytes] = js.undefined
   var health: js.UndefOr[

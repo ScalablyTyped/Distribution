@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NxMeasure extends js.Object {
   var qAttributeDimensions: js.Array[NxAttrDimDef]
   var qAttributeExpressions: js.Array[NxAttrExprDef]

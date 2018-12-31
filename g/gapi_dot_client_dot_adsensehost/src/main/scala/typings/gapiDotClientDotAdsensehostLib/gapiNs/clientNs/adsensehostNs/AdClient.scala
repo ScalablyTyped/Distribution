@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AdClient extends js.Object {
   /** Whether this ad client is opted in to ARC. */
   var arcOptIn: js.UndefOr[scala.Boolean] = js.undefined

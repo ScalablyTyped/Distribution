@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FloatingLabelProperties extends js.Object {
   var allowFontScaling: js.UndefOr[scala.Boolean] = js.undefined
   var floatingLabelAniDuration: js.UndefOr[scala.Double] = js.undefined

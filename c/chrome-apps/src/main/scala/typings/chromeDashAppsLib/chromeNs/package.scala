@@ -7,16 +7,12 @@ import scala.scalajs.js.annotation._
 
 package object chromeNs {
   /**
-       * Convert constant and variables that function as enums to string literals.
-       * Makes it possible to use both the enum and string.
-       * String enums are a combination of 'enum type' and string literal type.
-       */
+    * Convert constant and variables that function as enums to string literals.
+    * Makes it possible to use both the enum and string.
+    * String enums are a combination of 'enum type' and string literal type.
+    */
   type IDict[T, K, F] = F
-  type ToStringLiteral[C /* <: js.Object */, K, V] = IDict[
-    C, 
-    V, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(C))),List()),Left(TsIdentSimple(K))) */js.Any
-  ]
+  type ToStringLiteral[C /* <: js.Object */, K, V] = IDict[C, V, /* import warning: ImportType.apply Failed type conversion: C[V] */ js.Any]
   /** @deprecated Should never be used, used to guide migrations. */
   type deprecated = scala.Nothing
   // #region internal
@@ -30,17 +26,17 @@ package object chromeNs {
   /// TypeScript doesn't support it either, so till then, use helper types.
   ///
   /**
-       * Double
-       * -
-       * Chrome uses JS number, but internally requires an integer or double.
-       * This is a helper type to prevent mixup.
-       */
+    * Double
+    * -
+    * Chrome uses JS number, but internally requires an integer or double.
+    * This is a helper type to prevent mixup.
+    */
   type double = scala.Double
   /**
-       * Integer
-       * -
-       * Chrome uses JS number, but internally requires an integer or double.
-       * This is a helper type to prevent mixup.
-       */
+    * Integer
+    * -
+    * Chrome uses JS number, but internally requires an integer or double.
+    * This is a helper type to prevent mixup.
+    */
   type integer = scala.Double
 }

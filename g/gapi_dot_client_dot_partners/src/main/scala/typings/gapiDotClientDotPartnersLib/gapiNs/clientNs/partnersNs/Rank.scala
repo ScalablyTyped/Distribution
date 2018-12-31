@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Rank extends js.Object {
   /** The type of rank. */
   var `type`: js.UndefOr[java.lang.String] = js.undefined

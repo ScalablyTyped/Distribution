@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FormProps[T] extends js.Object {
   var ArrayFieldTemplate: js.UndefOr[reactLib.reactMod.ReactNs.StatelessComponent[ArrayFieldTemplateProps]] = js.undefined
   var ErrorList: js.UndefOr[reactLib.reactMod.ReactNs.StatelessComponent[ErrorListProps]] = js.undefined

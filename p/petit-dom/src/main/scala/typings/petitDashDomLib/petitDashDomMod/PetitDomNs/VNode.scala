@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VNode extends js.Object {
   val content: js.Array[VNode]
   val isSVG: scala.Boolean

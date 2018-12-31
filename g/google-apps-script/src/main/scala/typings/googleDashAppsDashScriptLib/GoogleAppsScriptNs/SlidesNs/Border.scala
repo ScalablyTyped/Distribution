@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Border extends js.Object {
   def getDashStyle(): DashStyle
   def getLineFill(): LineFill

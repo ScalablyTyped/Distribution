@@ -1,0 +1,14 @@
+package typings
+package atPulumiAwsLib.autoscalingGetGroupMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@pulumi/aws/autoscaling/getGroup", JSImport.Namespace)
+@js.native
+object autoscalingGetGroupModMembers extends js.Object {
+  def getGroup(args: GetGroupArgs): js.Promise[GetGroupResult] = js.native
+  def getGroup(args: GetGroupArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[GetGroupResult] = js.native
+}
+

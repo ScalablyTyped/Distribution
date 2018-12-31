@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OperatingSystemVersion extends js.Object {
   /** ID of this operating system version. */
   var id: js.UndefOr[java.lang.String] = js.undefined

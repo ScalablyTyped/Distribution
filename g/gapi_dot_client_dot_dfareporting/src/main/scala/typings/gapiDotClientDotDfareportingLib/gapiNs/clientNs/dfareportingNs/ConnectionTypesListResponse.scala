@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectionTypesListResponse extends js.Object {
   /** Collection of connection types such as broadband and mobile. */
   var connectionTypes: js.UndefOr[js.Array[ConnectionType]] = js.undefined

@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(jsflLib.FlashSymbolInstance because Would inherit conflicting mutable fields List(tabIndex, silent, description, accName, forceSimple, shortcut, actionScript))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(jsflLib.FlashSymbolInstance because Would inherit conflicting mutable fields List(accName, actionScript, description, forceSimple, shortcut, silent, tabIndex))*/
 trait FlashElement
   extends FlashShape
      with FlashInstance

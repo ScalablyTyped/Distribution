@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEllpiticalArcOptions extends IRadiusOptions {
   var clockwise: js.UndefOr[scala.Boolean] = js.undefined
   var large: js.UndefOr[scala.Boolean] = js.undefined

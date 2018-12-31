@@ -63,8 +63,8 @@ trait WebPage extends js.Object {
   // evaluate<T1, T2, R>(callback: (arg1: T1, arg2: T2) => R, arg1: T1, arg2: T2): Promise<R>;
   // evaluate<T1, T2, T3, R>(callback: (arg1: T1, arg2: T2, arg3: T3) => R, arg1: T1, arg2: T2, arg3: T3): Promise<R>;
   // evaluate<R>(callback: (...args: any[]) => R, ...args: any[]): Promise<R>;
-  def evaluate[R](callback: js.Function1[/* repeated */js.Any, R], args: js.Any*): R = js.native
-  def evaluateAsync(fn: js.Function1[/* repeated */js.Any, scala.Unit], delayMilli: scala.Double, args: js.Any*): scala.Unit = js.native
+  def evaluate[R](callback: js.Function1[/* repeated */ js.Any, R], args: js.Any*): R = js.native
+  def evaluateAsync(fn: js.Function1[/* repeated */ js.Any, scala.Unit], delayMilli: scala.Double, args: js.Any*): scala.Unit = js.native
   def evaluateJavaScript(str: java.lang.String): js.Any = js.native
    // :TODO: elaborate this when documentation improves
   def getPage(windowName: java.lang.String): WebPage = js.native
@@ -107,7 +107,6 @@ trait WebPage extends js.Object {
   def onUrlChanged(targetUrl: java.lang.String): js.Any = js.native
   // open(url: string): Promise<string>;
   def open(url: java.lang.String): js.Promise[java.lang.String] = js.native
-  // open(url: string): Promise<string>;
   def open(url: java.lang.String, callback: js.Function1[/* status */ java.lang.String, _]): js.Promise[java.lang.String] = js.native
   def open(
     url: java.lang.String,
@@ -116,7 +115,6 @@ trait WebPage extends js.Object {
   ): js.Promise[java.lang.String] = js.native
    // maybe data is missing
   def open(url: java.lang.String, method: java.lang.String, data: js.Any): js.Promise[java.lang.String] = js.native
-   // maybe data is missing
   def open(
     url: java.lang.String,
     method: java.lang.String,
@@ -190,7 +188,6 @@ trait WebPage extends js.Object {
   @JSName("setContent")
   def setContent_Unit(content: java.lang.String, url: java.lang.String): scala.Unit = js.native
   def stop(): scala.Unit = js.native
-  // switchToFrame(framePosition: number): void;
   def switchToChildFrame(framePosOrName: java.lang.String): scala.Unit = js.native
   // switchToFrame(framePosition: number): void;
   def switchToChildFrame(framePosOrName: scala.Double): scala.Unit = js.native

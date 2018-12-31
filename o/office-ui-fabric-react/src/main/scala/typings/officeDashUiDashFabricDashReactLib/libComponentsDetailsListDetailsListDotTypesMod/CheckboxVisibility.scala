@@ -12,22 +12,22 @@ sealed trait CheckboxVisibility extends js.Object
 @js.native
 object CheckboxVisibility extends js.Object {
   /**
-       * Visible always.
-       */
+    * Visible always.
+    */
   @js.native
   sealed trait always
     extends officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.CheckboxVisibility
   
   /**
-       * Hide checkboxes.
-       */
+    * Hide checkboxes.
+    */
   @js.native
   sealed trait hidden
     extends officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.CheckboxVisibility
   
   /**
-       * Visible on hover.
-       */
+    * Visible on hover.
+    */
   @js.native
   sealed trait onHover
     extends officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.CheckboxVisibility

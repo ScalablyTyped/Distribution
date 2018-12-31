@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContentRating extends js.Object {
   /**
-               * The video's Australian Classification Board (ACB) or Australian Communications and Media Authority (ACMA) rating. ACMA ratings are used to classify
-               * children's television programming.
-               */
+    * The video's Australian Classification Board (ACB) or Australian Communications and Media Authority (ACMA) rating. ACMA ratings are used to classify
+    * children's television programming.
+    */
   var acbRating: js.UndefOr[java.lang.String] = js.undefined
   /** The video's rating from Italy's Autorità per le Garanzie nelle Comunicazioni (AGCOM). */
   var agcomRating: js.UndefOr[java.lang.String] = js.undefined
@@ -23,14 +22,14 @@ trait ContentRating extends js.Object {
   /** The video's rating from the Austrian Board of Media Classification (Bundesministerium für Unterricht, Kunst und Kultur). */
   var bmukkRating: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Rating system for Canadian TV - Canadian TV Classification System The video's rating from the Canadian Radio-Television and Telecommunications
-               * Commission (CRTC) for Canadian English-language broadcasts. For more information, see the Canadian Broadcast Standards Council website.
-               */
+    * Rating system for Canadian TV - Canadian TV Classification System The video's rating from the Canadian Radio-Television and Telecommunications
+    * Commission (CRTC) for Canadian English-language broadcasts. For more information, see the Canadian Broadcast Standards Council website.
+    */
   var catvRating: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The video's rating from the Canadian Radio-Television and Telecommunications Commission (CRTC) for Canadian French-language broadcasts. For more
-               * information, see the Canadian Broadcast Standards Council website.
-               */
+    * The video's rating from the Canadian Radio-Television and Telecommunications Commission (CRTC) for Canadian French-language broadcasts. For more
+    * information, see the Canadian Broadcast Standards Council website.
+    */
   var catvfrRating: js.UndefOr[java.lang.String] = js.undefined
   /** The video's Central Board of Film Certification (CBFC - India) rating. */
   var cbfcRating: js.UndefOr[java.lang.String] = js.undefined

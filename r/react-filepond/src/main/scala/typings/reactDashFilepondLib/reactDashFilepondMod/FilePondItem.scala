@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilePondItem extends js.Object {
   var archived: scala.Boolean
   var file: stdLib.File

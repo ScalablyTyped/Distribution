@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a device picker that contains a list of casting devices for the user to choose from. */
 @JSGlobal("Windows.Media.Casting.CastingDevicePicker")
 @js.native
+/** Creates a CastingDevicePicker object. */
 class CastingDevicePicker () extends js.Object {
   /** Gets the colors of the picker UI. */
   var appearance: winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DevicePickerAppearance = js.native
@@ -48,15 +49,15 @@ class CastingDevicePicker () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[CastingDevicePicker, CastingDeviceSelectedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Shows the casting device picker UI, which flies out from an edge of the provided rectangle.
-                   * @param selection The rectangle from which the picker UI should fly out.
-                   */
+    * Shows the casting device picker UI, which flies out from an edge of the provided rectangle.
+    * @param selection The rectangle from which the picker UI should fly out.
+    */
   def show(selection: winrtDashUwpLib.WindowsNs.FoundationNs.Rect): scala.Unit = js.native
   /**
-                   * Shows the casting device picker UI, which flies out from the specified edge of the provided rectangle.
-                   * @param selection The rectangle from which the picker should fly out.
-                   * @param preferredPlacement The edge of the rectangle from which the picker should fly out.
-                   */
+    * Shows the casting device picker UI, which flies out from the specified edge of the provided rectangle.
+    * @param selection The rectangle from which the picker should fly out.
+    * @param preferredPlacement The edge of the rectangle from which the picker should fly out.
+    */
   def show(
     selection: winrtDashUwpLib.WindowsNs.FoundationNs.Rect,
     preferredPlacement: winrtDashUwpLib.WindowsNs.UINs.PopupsNs.Placement

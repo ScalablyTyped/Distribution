@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAccelerometerReading extends js.Object {
   var accelerationX: scala.Double
   var accelerationY: scala.Double

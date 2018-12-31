@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SeqMapTaskOutputInfo extends js.Object {
   /** The sink to write the output value to. */
   var sink: js.UndefOr[Sink] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ComponentProps extends js.Object {
   /** Component to wrap the label, recieves headingProps. */
   var Heading: reactLib.reactMod.ReactNs.ComponentType[_]

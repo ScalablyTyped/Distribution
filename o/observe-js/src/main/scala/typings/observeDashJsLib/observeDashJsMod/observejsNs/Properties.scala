@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 /*----------------------
 		ObjectObserver
 	----------------------*/
-
-
 trait Properties
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
 

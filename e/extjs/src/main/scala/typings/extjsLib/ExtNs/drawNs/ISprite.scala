@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.utilNs.IAnimate because Would inherit conflicting mutable fields List(statics, uses, mixins, config, extend, inheritableStatics, alias, alternateClassName, requires, singleton, callSuper, self, getInitialConfig, callParent, callOverridden, initConfig))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.utilNs.IAnimate because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
 trait ISprite
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Method] Adds one or more CSS classes to the element

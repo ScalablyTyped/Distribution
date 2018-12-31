@@ -13,19 +13,11 @@ trait CustomXMLValidationErrors extends js.Object {
   val Parent: js.Any = js.native
   def apply(Index: scala.Double): CustomXMLValidationError = js.native
   /**
-           * @param ErrorText [ErrorText='']
-           * @param ClearedOnUpdate [ClearedOnUpdate=true]
-           */
+    * @param ErrorText [ErrorText='']
+    * @param ClearedOnUpdate [ClearedOnUpdate=true]
+    */
   def Add(Node: CustomXMLNode, ErrorName: java.lang.String): scala.Unit = js.native
-  /**
-           * @param ErrorText [ErrorText='']
-           * @param ClearedOnUpdate [ClearedOnUpdate=true]
-           */
   def Add(Node: CustomXMLNode, ErrorName: java.lang.String, ErrorText: java.lang.String): scala.Unit = js.native
-  /**
-           * @param ErrorText [ErrorText='']
-           * @param ClearedOnUpdate [ClearedOnUpdate=true]
-           */
   def Add(
     Node: CustomXMLNode,
     ErrorName: java.lang.String,

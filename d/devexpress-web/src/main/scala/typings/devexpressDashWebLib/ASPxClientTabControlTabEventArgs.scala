@@ -6,14 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Provides data for events which concern manipulations on tabs.
- */
-
+  * Provides data for events which concern manipulations on tabs.
+  */
 trait ASPxClientTabControlTabEventArgs extends ASPxClientEventArgs {
   /**
-       * Gets the tab object related to the event.
-       * Value: An ASPxClientTab object, manipulations on which forced the event to be raised.
-       */
+    * Gets the tab object related to the event.
+    * Value: An ASPxClientTab object, manipulations on which forced the event to be raised.
+    */
   var tab: ASPxClientTab
 }
 

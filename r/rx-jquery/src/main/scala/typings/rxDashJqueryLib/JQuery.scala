@@ -13,7 +13,6 @@ trait JQuery extends js.Object {
   def bindAsObservable[T /* <: jqueryLib.BaseJQueryEventObject */](eventType: java.lang.String, eventData: js.Any): rxDashLiteDashAggregatesLib.RxNs.Observable[T] = js.native
   //liveAsObservable<T extends BaseJQueryEventObject>(eventType: string, eventData?: any): Rx.Observable<T>;	// removed in jquery 1.9
   def changeAsObservable(): rxDashLiteDashAggregatesLib.RxNs.Observable[jqueryLib.JQueryInputEventObject] = js.native
-  //liveAsObservable<T extends BaseJQueryEventObject>(eventType: string, eventData?: any): Rx.Observable<T>;	// removed in jquery 1.9
   def changeAsObservable(eventData: js.Any): rxDashLiteDashAggregatesLib.RxNs.Observable[jqueryLib.JQueryInputEventObject] = js.native
   def clickAsObservable(): rxDashLiteDashAggregatesLib.RxNs.Observable[jqueryLib.JQueryMouseEventObject] = js.native
   def clickAsObservable(eventData: js.Any): rxDashLiteDashAggregatesLib.RxNs.Observable[jqueryLib.JQueryMouseEventObject] = js.native

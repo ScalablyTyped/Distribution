@@ -34,37 +34,22 @@ abstract class BasePrepare[UploadHookSource] protected () extends js.Object {
   def registerFindHook(addHook: AddHook): this.type = js.native
   def registerUploadHook(uploadHook: UploadHook[UploadHookSource]): this.type = js.native
   /* protected */ def tick(): scala.Unit = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def upload(item: js.Any): scala.Unit = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def upload(item: js.Any, done: js.Function0[scala.Unit]): scala.Unit = js.native
   //tslint:disable-next-line:ban-types forbidden-types
   def upload(item: js.Function): scala.Unit = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def upload(item: js.Function, done: js.Function0[scala.Unit]): scala.Unit = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def upload(item: pixiDotJsLib.PIXINs.BaseTexture): scala.Unit = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def upload(item: pixiDotJsLib.PIXINs.BaseTexture, done: js.Function0[scala.Unit]): scala.Unit = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def upload(item: pixiDotJsLib.PIXINs.Container): scala.Unit = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def upload(item: pixiDotJsLib.PIXINs.Container, done: js.Function0[scala.Unit]): scala.Unit = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def upload(item: pixiDotJsLib.PIXINs.DisplayObject): scala.Unit = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def upload(item: pixiDotJsLib.PIXINs.DisplayObject, done: js.Function0[scala.Unit]): scala.Unit = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def upload(item: pixiDotJsLib.PIXINs.Graphics): scala.Unit = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def upload(item: pixiDotJsLib.PIXINs.Graphics, done: js.Function0[scala.Unit]): scala.Unit = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def upload(item: pixiDotJsLib.PIXINs.Text): scala.Unit = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def upload(item: pixiDotJsLib.PIXINs.Text, done: js.Function0[scala.Unit]): scala.Unit = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def upload(item: pixiDotJsLib.PIXINs.Texture): scala.Unit = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def upload(item: pixiDotJsLib.PIXINs.Texture, done: js.Function0[scala.Unit]): scala.Unit = js.native
 }
 

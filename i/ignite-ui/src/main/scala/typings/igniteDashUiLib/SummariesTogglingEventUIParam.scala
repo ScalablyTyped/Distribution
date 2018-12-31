@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SummariesTogglingEventUIParam extends js.Object {
   /**
   	 * Gets whether summaries are shown or not.

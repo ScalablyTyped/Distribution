@@ -12,15 +12,15 @@ sealed trait ToType extends js.Object
 @js.native
 object ToType extends js.Object {
   /**
-       * "max"
-       */
+    * "max"
+    */
   @js.native
   sealed trait Max
     extends timezonecompleteLib.distLibTzDashDatabaseMod.ToType
   
   /**
-       * Either a year number or "only"
-       */
+    * Either a year number or "only"
+    */
   @js.native
   sealed trait Year
     extends timezonecompleteLib.distLibTzDashDatabaseMod.ToType

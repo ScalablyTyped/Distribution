@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Layersummaries extends js.Object {
   /** A list of layer summary items. */
   var items: js.UndefOr[js.Array[Layersummary]] = js.undefined

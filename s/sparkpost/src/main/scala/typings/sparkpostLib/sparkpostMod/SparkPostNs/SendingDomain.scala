@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SendingDomain extends js.Object {
   /** JSON object in which DKIM key configuration is defined. */
   var dkim: js.UndefOr[DKIM] = js.undefined

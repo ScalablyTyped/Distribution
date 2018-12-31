@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SourceFork extends js.Object {
   /** DEPRECATED */
   var primary: js.UndefOr[SourceSplitShard] = js.undefined

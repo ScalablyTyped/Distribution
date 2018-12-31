@@ -13,16 +13,13 @@ trait UsageRecords
     data: stripeLib.stripeMod.StripeNs.usageRecordsNs.IUsageRecordCreationOptions
   ): js.Promise[stripeLib.stripeMod.StripeNs.usageRecordsNs.IUsageRecord] = js.native
   /**
-               * Creates a usage record for a specified subscription item and date, and fills it with a quantity.
-               */
+    * Creates a usage record for a specified subscription item and date, and fills it with a quantity.
+    */
   def create(
     subscription: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.usageRecordsNs.IUsageRecordCreationOptions,
     options: stripeLib.stripeMod.StripeNs.HeaderOptions
   ): js.Promise[stripeLib.stripeMod.StripeNs.usageRecordsNs.IUsageRecord] = js.native
-  /**
-               * Creates a usage record for a specified subscription item and date, and fills it with a quantity.
-               */
   def create(
     subscription: java.lang.String,
     data: stripeLib.stripeMod.StripeNs.usageRecordsNs.IUsageRecordCreationOptions,

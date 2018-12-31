@@ -14,6 +14,6 @@ class Hub () extends js.Object {
   def connect(): jqueryLib.JQueryPromise[_] = js.native
   def disconnect(): scala.Unit = js.native
   def invoke(method: java.lang.String, args: js.Any*): jqueryLib.JQueryDeferred[_] = js.native
-  def on(event: java.lang.String, fn: js.Function1[/* repeated */js.Any, scala.Unit]): scala.Unit = js.native
+  def on(event: java.lang.String, fn: js.Function1[/* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
 }
 

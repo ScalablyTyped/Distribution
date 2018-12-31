@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ListHeaderDesign extends js.Object
 
 /**
-     * Defines the different header styles.
-    */
+  * Defines the different header styles.
+  */
 @JSGlobal("sap.m.ListHeaderDesign")
 @js.native
 object ListHeaderDesign extends js.Object {

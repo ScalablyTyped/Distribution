@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SubjectPosition extends js.Object {
   /**
-       * x-coordinate
-       */
+    * x-coordinate
+    */
   var x: scala.Double
   /**
-       * y-coordinate
-       */
+    * y-coordinate
+    */
   var y: scala.Double
 }
 

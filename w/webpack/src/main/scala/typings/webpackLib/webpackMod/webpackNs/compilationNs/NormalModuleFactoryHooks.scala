@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NormalModuleFactoryHooks extends js.Object {
   var afterResolve: tapableLib.tapableMod.AsyncSeriesWaterfallHook[_, _, _]
   var beforeResolve: tapableLib.tapableMod.AsyncSeriesWaterfallHook[_, _, _]

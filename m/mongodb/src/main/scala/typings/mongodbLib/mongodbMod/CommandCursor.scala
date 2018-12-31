@@ -31,7 +31,6 @@ class CommandCursor ()
   def rewind(): CommandCursor = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#setReadPreference */
   def setReadPreference(readPreference: java.lang.String): CommandCursor = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#setReadPreference */
   def setReadPreference(readPreference: ReadPreference): CommandCursor = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/CommandCursor.html#toArray */
   def toArray(): js.Promise[js.Array[_]] = js.native

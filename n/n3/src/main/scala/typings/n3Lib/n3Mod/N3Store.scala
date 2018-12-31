@@ -11,45 +11,45 @@ trait N3Store[Q_RDF /* <: rdfDashJsLib.rdfDashJsMod.BaseQuad */, Q_N3 /* <: Base
   val size: scala.Double = js.native
   def addQuad(quad: Q_RDF): scala.Unit = js.native
   def addQuad(
-    subject: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(subject))) */js.Any,
-    predicate: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(predicate))) */js.Any,
-    `object`: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(object))) */js.Any
+    subject: /* import warning: ImportType.apply Failed type conversion: Q_RDF['subject'] */ js.Any,
+    predicate: /* import warning: ImportType.apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
+    `object`: /* import warning: ImportType.apply Failed type conversion: Q_RDF['object'] */ js.Any
   ): scala.Unit = js.native
   def addQuad(
-    subject: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(subject))) */js.Any,
-    predicate: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(predicate))) */js.Any,
-    `object`: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(object))) */js.Any,
-    graph: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(graph))) */js.Any
+    subject: /* import warning: ImportType.apply Failed type conversion: Q_RDF['subject'] */ js.Any,
+    predicate: /* import warning: ImportType.apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
+    `object`: /* import warning: ImportType.apply Failed type conversion: Q_RDF['object'] */ js.Any,
+    graph: /* import warning: ImportType.apply Failed type conversion: Q_RDF['graph'] */ js.Any
   ): scala.Unit = js.native
   def addQuad(
-    subject: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(subject))) */js.Any,
-    predicate: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(predicate))) */js.Any,
-    `object`: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(object))) */js.Any,
-    graph: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(graph))) */js.Any,
+    subject: /* import warning: ImportType.apply Failed type conversion: Q_RDF['subject'] */ js.Any,
+    predicate: /* import warning: ImportType.apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
+    `object`: /* import warning: ImportType.apply Failed type conversion: Q_RDF['object'] */ js.Any,
+    graph: /* import warning: ImportType.apply Failed type conversion: Q_RDF['graph'] */ js.Any,
     done: js.Function0[scala.Unit]
   ): scala.Unit = js.native
   def addQuad(
-    subject: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(subject))) */js.Any,
-    predicate: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(predicate))) */js.Any,
+    subject: /* import warning: ImportType.apply Failed type conversion: Q_RDF['subject'] */ js.Any,
+    predicate: /* import warning: ImportType.apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
     `object`: js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(object))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: Q_RDF['object'] */ js.Any
     ]
   ): scala.Unit = js.native
   def addQuad(
-    subject: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(subject))) */js.Any,
-    predicate: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(predicate))) */js.Any,
+    subject: /* import warning: ImportType.apply Failed type conversion: Q_RDF['subject'] */ js.Any,
+    predicate: /* import warning: ImportType.apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
     `object`: js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(object))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: Q_RDF['object'] */ js.Any
     ],
-    graph: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(graph))) */js.Any
+    graph: /* import warning: ImportType.apply Failed type conversion: Q_RDF['graph'] */ js.Any
   ): scala.Unit = js.native
   def addQuad(
-    subject: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(subject))) */js.Any,
-    predicate: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(predicate))) */js.Any,
+    subject: /* import warning: ImportType.apply Failed type conversion: Q_RDF['subject'] */ js.Any,
+    predicate: /* import warning: ImportType.apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
     `object`: js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(object))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: Q_RDF['object'] */ js.Any
     ],
-    graph: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(graph))) */js.Any,
+    graph: /* import warning: ImportType.apply Failed type conversion: Q_RDF['graph'] */ js.Any,
     done: js.Function0[scala.Unit]
   ): scala.Unit = js.native
   def addQuads(quads: js.Array[Q_RDF]): scala.Unit = js.native
@@ -63,62 +63,62 @@ trait N3Store[Q_RDF /* <: rdfDashJsLib.rdfDashJsMod.BaseQuad */, Q_N3 /* <: Base
   def forPredicates(callback: QuadCallback[Q_N3], subject: OTerm, `object`: OTerm, graph: OTerm): scala.Unit = js.native
   def forSubjects(callback: QuadCallback[Q_N3], predicate: OTerm, `object`: OTerm, graph: OTerm): scala.Unit = js.native
   def getGraphs(subject: OTerm, predicate: OTerm, `object`: OTerm): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_N3))),List()),Left(TsIdentSimple(graph))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: Q_N3['graph'] */ js.Any
   ] = js.native
   def getObjects(subject: OTerm, predicate: OTerm, graph: OTerm): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_N3))),List()),Left(TsIdentSimple(object))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: Q_N3['object'] */ js.Any
   ] = js.native
   def getPredicates(subject: OTerm, `object`: OTerm, graph: OTerm): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_N3))),List()),Left(TsIdentSimple(predicate))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: Q_N3['predicate'] */ js.Any
   ] = js.native
   def getQuads(subject: OTerm, predicate: OTerm, `object`: js.Array[OTerm], graph: OTerm): js.Array[Quad] = js.native
   def getQuads(subject: OTerm, predicate: OTerm, `object`: OTerm, graph: OTerm): js.Array[Quad] = js.native
   def getSubjects(predicate: OTerm, `object`: OTerm, graph: OTerm): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_N3))),List()),Left(TsIdentSimple(subject))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: Q_N3['subject'] */ js.Any
   ] = js.native
   // match, removeMatches and deleteGraph are missing for full RDF.Store adherence
   def remove(stream: nodeLib.streamMod.Stream): nodeLib.eventsMod.EventEmitter = js.native
   def removeQuad(quad: Q_RDF): scala.Unit = js.native
   def removeQuad(
-    subject: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(subject))) */js.Any,
-    predicate: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(predicate))) */js.Any,
-    `object`: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(object))) */js.Any
+    subject: /* import warning: ImportType.apply Failed type conversion: Q_RDF['subject'] */ js.Any,
+    predicate: /* import warning: ImportType.apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
+    `object`: /* import warning: ImportType.apply Failed type conversion: Q_RDF['object'] */ js.Any
   ): scala.Unit = js.native
   def removeQuad(
-    subject: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(subject))) */js.Any,
-    predicate: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(predicate))) */js.Any,
-    `object`: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(object))) */js.Any,
-    graph: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(graph))) */js.Any
+    subject: /* import warning: ImportType.apply Failed type conversion: Q_RDF['subject'] */ js.Any,
+    predicate: /* import warning: ImportType.apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
+    `object`: /* import warning: ImportType.apply Failed type conversion: Q_RDF['object'] */ js.Any,
+    graph: /* import warning: ImportType.apply Failed type conversion: Q_RDF['graph'] */ js.Any
   ): scala.Unit = js.native
   def removeQuad(
-    subject: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(subject))) */js.Any,
-    predicate: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(predicate))) */js.Any,
-    `object`: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(object))) */js.Any,
-    graph: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(graph))) */js.Any,
+    subject: /* import warning: ImportType.apply Failed type conversion: Q_RDF['subject'] */ js.Any,
+    predicate: /* import warning: ImportType.apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
+    `object`: /* import warning: ImportType.apply Failed type conversion: Q_RDF['object'] */ js.Any,
+    graph: /* import warning: ImportType.apply Failed type conversion: Q_RDF['graph'] */ js.Any,
     done: js.Function0[scala.Unit]
   ): scala.Unit = js.native
   def removeQuad(
-    subject: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(subject))) */js.Any,
-    predicate: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(predicate))) */js.Any,
+    subject: /* import warning: ImportType.apply Failed type conversion: Q_RDF['subject'] */ js.Any,
+    predicate: /* import warning: ImportType.apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
     `object`: js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(object))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: Q_RDF['object'] */ js.Any
     ]
   ): scala.Unit = js.native
   def removeQuad(
-    subject: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(subject))) */js.Any,
-    predicate: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(predicate))) */js.Any,
+    subject: /* import warning: ImportType.apply Failed type conversion: Q_RDF['subject'] */ js.Any,
+    predicate: /* import warning: ImportType.apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
     `object`: js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(object))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: Q_RDF['object'] */ js.Any
     ],
-    graph: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(graph))) */js.Any
+    graph: /* import warning: ImportType.apply Failed type conversion: Q_RDF['graph'] */ js.Any
   ): scala.Unit = js.native
   def removeQuad(
-    subject: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(subject))) */js.Any,
-    predicate: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(predicate))) */js.Any,
+    subject: /* import warning: ImportType.apply Failed type conversion: Q_RDF['subject'] */ js.Any,
+    predicate: /* import warning: ImportType.apply Failed type conversion: Q_RDF['predicate'] */ js.Any,
     `object`: js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(object))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: Q_RDF['object'] */ js.Any
     ],
-    graph: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Q_RDF))),List()),Left(TsIdentSimple(graph))) */js.Any,
+    graph: /* import warning: ImportType.apply Failed type conversion: Q_RDF['graph'] */ js.Any,
     done: js.Function0[scala.Unit]
   ): scala.Unit = js.native
   def removeQuads(quads: js.Array[Q_RDF]): scala.Unit = js.native

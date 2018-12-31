@@ -14,52 +14,52 @@ trait Element
      with Animatable {
   val attributes: NamedNodeMap = js.native
   /**
-       * Allows for manipulation of element's class content attribute as a
-       * set of whitespace-separated tokens through a DOMTokenList object.
-       */
+    * Allows for manipulation of element's class content attribute as a
+    * set of whitespace-separated tokens through a DOMTokenList object.
+    */
   val classList: DOMTokenList = js.native
   /**
-       * Returns the value of element's class content attribute. Can be set
-       * to change it.
-       */
+    * Returns the value of element's class content attribute. Can be set
+    * to change it.
+    */
   var className: java.lang.String = js.native
   val clientHeight: scala.Double = js.native
   val clientLeft: scala.Double = js.native
   val clientTop: scala.Double = js.native
   val clientWidth: scala.Double = js.native
   /**
-       * Returns the value of element's id content attribute. Can be set to
-       * change it.
-       */
+    * Returns the value of element's id content attribute. Can be set to
+    * change it.
+    */
   var id: java.lang.String = js.native
   var innerHTML: java.lang.String = js.native
   /**
-       * Returns the local name.
-       */
+    * Returns the local name.
+    */
   val localName: java.lang.String = js.native
   var onfullscreenchange: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
   var onfullscreenerror: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
   var outerHTML: java.lang.String = js.native
   /**
-       * Returns the namespace prefix.
-       */
+    * Returns the namespace prefix.
+    */
   val prefix: java.lang.String | scala.Null = js.native
   val scrollHeight: scala.Double = js.native
   var scrollLeft: scala.Double = js.native
   var scrollTop: scala.Double = js.native
   val scrollWidth: scala.Double = js.native
   /**
-       * Returns element's shadow root, if any, and if shadow root's mode is "open", and null otherwise.
-       */
+    * Returns element's shadow root, if any, and if shadow root's mode is "open", and null otherwise.
+    */
   val shadowRoot: ShadowRoot | scala.Null = js.native
   /**
-       * Returns the value of element's slot content attribute. Can be set to
-       * change it.
-       */
+    * Returns the value of element's slot content attribute. Can be set to
+    * change it.
+    */
   var slot: java.lang.String = js.native
   /**
-       * Returns the HTML-uppercased qualified name.
-       */
+    * Returns the HTML-uppercased qualified name.
+    */
   val tagName: java.lang.String = js.native
   @JSName("addEventListener")
   def addEventListener_fullscreenchange(
@@ -96,193 +96,193 @@ trait Element
     options: AddEventListenerOptions
   ): scala.Unit = js.native
   /**
-       * Creates a shadow root for element and returns it.
-       */
+    * Creates a shadow root for element and returns it.
+    */
   def attachShadow(shadowRootInitDict: ShadowRootInit): ShadowRoot = js.native
   def closest(selector: java.lang.String): Element | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_a(selector: xtermLib.xtermLibStrings.a): HTMLAnchorElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_abbr(selector: xtermLib.xtermLibStrings.abbr): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_address(selector: xtermLib.xtermLibStrings.address): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_applet(selector: xtermLib.xtermLibStrings.applet): HTMLAppletElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_area(selector: xtermLib.xtermLibStrings.area): HTMLAreaElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_article(selector: xtermLib.xtermLibStrings.article): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_aside(selector: xtermLib.xtermLibStrings.aside): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_audio(selector: xtermLib.xtermLibStrings.audio): HTMLAudioElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_b(selector: xtermLib.xtermLibStrings.b): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_base(selector: xtermLib.xtermLibStrings.base): HTMLBaseElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_basefont(selector: xtermLib.xtermLibStrings.basefont): HTMLBaseFontElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_bdo(selector: xtermLib.xtermLibStrings.bdo): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_blockquote(selector: xtermLib.xtermLibStrings.blockquote): HTMLQuoteElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_body(selector: xtermLib.xtermLibStrings.body): HTMLBodyElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_br(selector: xtermLib.xtermLibStrings.br): HTMLBRElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_button(selector: xtermLib.xtermLibStrings.button): HTMLButtonElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_canvas(selector: xtermLib.xtermLibStrings.canvas): HTMLCanvasElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_caption(selector: xtermLib.xtermLibStrings.caption): HTMLTableCaptionElement | scala.Null = js.native
   @JSName("closest")
   def closest_circle(selector: xtermLib.xtermLibStrings.circle): SVGCircleElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_cite(selector: xtermLib.xtermLibStrings.cite): HTMLElement | scala.Null = js.native
   @JSName("closest")
   def closest_clipPath(selector: xtermLib.xtermLibStrings.clipPath): SVGClipPathElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_code(selector: xtermLib.xtermLibStrings.code): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_col(selector: xtermLib.xtermLibStrings.col): HTMLTableColElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_colgroup(selector: xtermLib.xtermLibStrings.colgroup): HTMLTableColElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_data(selector: xtermLib.xtermLibStrings.data): HTMLDataElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_datalist(selector: xtermLib.xtermLibStrings.datalist): HTMLDataListElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_dd(selector: xtermLib.xtermLibStrings.dd): HTMLElement | scala.Null = js.native
   @JSName("closest")
   def closest_defs(selector: xtermLib.xtermLibStrings.defs): SVGDefsElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_del(selector: xtermLib.xtermLibStrings.del): HTMLModElement | scala.Null = js.native
   @JSName("closest")
   def closest_desc(selector: xtermLib.xtermLibStrings.desc): SVGDescElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_details(selector: xtermLib.xtermLibStrings.details): HTMLDetailsElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_dfn(selector: xtermLib.xtermLibStrings.dfn): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_dialog(selector: xtermLib.xtermLibStrings.dialog): HTMLDialogElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_dir(selector: xtermLib.xtermLibStrings.dir): HTMLDirectoryElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_div(selector: xtermLib.xtermLibStrings.div): HTMLDivElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_dl(selector: xtermLib.xtermLibStrings.dl): HTMLDListElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_dt(selector: xtermLib.xtermLibStrings.dt): HTMLElement | scala.Null = js.native
   @JSName("closest")
   def closest_ellipse(selector: xtermLib.xtermLibStrings.ellipse): SVGEllipseElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_em(selector: xtermLib.xtermLibStrings.em): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_embed(selector: xtermLib.xtermLibStrings.embed): HTMLEmbedElement | scala.Null = js.native
   @JSName("closest")
@@ -334,151 +334,151 @@ trait Element
   @JSName("closest")
   def closest_feTurbulence(selector: xtermLib.xtermLibStrings.feTurbulence): SVGFETurbulenceElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_fieldset(selector: xtermLib.xtermLibStrings.fieldset): HTMLFieldSetElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_figcaption(selector: xtermLib.xtermLibStrings.figcaption): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_figure(selector: xtermLib.xtermLibStrings.figure): HTMLElement | scala.Null = js.native
   @JSName("closest")
   def closest_filter(selector: xtermLib.xtermLibStrings.filter): SVGFilterElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_font(selector: xtermLib.xtermLibStrings.font): HTMLFontElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_footer(selector: xtermLib.xtermLibStrings.footer): HTMLElement | scala.Null = js.native
   @JSName("closest")
   def closest_foreignObject(selector: xtermLib.xtermLibStrings.foreignObject): SVGForeignObjectElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_form(selector: xtermLib.xtermLibStrings.form): HTMLFormElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_frame(selector: xtermLib.xtermLibStrings.frame): HTMLFrameElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_frameset(selector: xtermLib.xtermLibStrings.frameset): HTMLFrameSetElement | scala.Null = js.native
   @JSName("closest")
   def closest_g(selector: xtermLib.xtermLibStrings.g): SVGGElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_h1(selector: xtermLib.xtermLibStrings.h1): HTMLHeadingElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_h2(selector: xtermLib.xtermLibStrings.h2): HTMLHeadingElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_h3(selector: xtermLib.xtermLibStrings.h3): HTMLHeadingElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_h4(selector: xtermLib.xtermLibStrings.h4): HTMLHeadingElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_h5(selector: xtermLib.xtermLibStrings.h5): HTMLHeadingElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_h6(selector: xtermLib.xtermLibStrings.h6): HTMLHeadingElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_head(selector: xtermLib.xtermLibStrings.head): HTMLHeadElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_header(selector: xtermLib.xtermLibStrings.header): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_hgroup(selector: xtermLib.xtermLibStrings.hgroup): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_hr(selector: xtermLib.xtermLibStrings.hr): HTMLHRElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_html(selector: xtermLib.xtermLibStrings.html): HTMLHtmlElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_i(selector: xtermLib.xtermLibStrings.i): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_iframe(selector: xtermLib.xtermLibStrings.iframe): HTMLIFrameElement | scala.Null = js.native
   @JSName("closest")
   def closest_image(selector: xtermLib.xtermLibStrings.image): SVGImageElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_img(selector: xtermLib.xtermLibStrings.img): HTMLImageElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_input(selector: xtermLib.xtermLibStrings.input): HTMLInputElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_ins(selector: xtermLib.xtermLibStrings.ins): HTMLModElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_kbd(selector: xtermLib.xtermLibStrings.kbd): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_label(selector: xtermLib.xtermLibStrings.label): HTMLLabelElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_legend(selector: xtermLib.xtermLibStrings.legend): HTMLLegendElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_li(selector: xtermLib.xtermLibStrings.li): HTMLLIElement | scala.Null = js.native
   @JSName("closest")
@@ -486,89 +486,89 @@ trait Element
   @JSName("closest")
   def closest_linearGradient(selector: xtermLib.xtermLibStrings.linearGradient): SVGLinearGradientElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_link(selector: xtermLib.xtermLibStrings.link): HTMLLinkElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_map(selector: xtermLib.xtermLibStrings.map): HTMLMapElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_mark(selector: xtermLib.xtermLibStrings.mark): HTMLElement | scala.Null = js.native
   @JSName("closest")
   def closest_marker(selector: xtermLib.xtermLibStrings.marker): SVGMarkerElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_marquee(selector: xtermLib.xtermLibStrings.marquee): HTMLMarqueeElement | scala.Null = js.native
   @JSName("closest")
   def closest_mask(selector: xtermLib.xtermLibStrings.mask): SVGMaskElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_menu(selector: xtermLib.xtermLibStrings.menu): HTMLMenuElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_meta(selector: xtermLib.xtermLibStrings.meta): HTMLMetaElement | scala.Null = js.native
   @JSName("closest")
   def closest_metadata(selector: xtermLib.xtermLibStrings.metadata): SVGMetadataElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_meter(selector: xtermLib.xtermLibStrings.meter): HTMLMeterElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_nav(selector: xtermLib.xtermLibStrings.nav): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_noscript(selector: xtermLib.xtermLibStrings.noscript): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_object(selector: xtermLib.xtermLibStrings.`object`): HTMLObjectElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_ol(selector: xtermLib.xtermLibStrings.ol): HTMLOListElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_optgroup(selector: xtermLib.xtermLibStrings.optgroup): HTMLOptGroupElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_option(selector: xtermLib.xtermLibStrings.option): HTMLOptionElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_output(selector: xtermLib.xtermLibStrings.output): HTMLOutputElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_p(selector: xtermLib.xtermLibStrings.p): HTMLParagraphElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_param(selector: xtermLib.xtermLibStrings.param): HTMLParamElement | scala.Null = js.native
   @JSName("closest")
@@ -576,8 +576,8 @@ trait Element
   @JSName("closest")
   def closest_pattern(selector: xtermLib.xtermLibStrings.pattern): SVGPatternElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_picture(selector: xtermLib.xtermLibStrings.picture): HTMLPictureElement | scala.Null = js.native
   @JSName("closest")
@@ -585,18 +585,18 @@ trait Element
   @JSName("closest")
   def closest_polyline(selector: xtermLib.xtermLibStrings.polyline): SVGPolylineElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_pre(selector: xtermLib.xtermLibStrings.pre): HTMLPreElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_progress(selector: xtermLib.xtermLibStrings.progress): HTMLProgressElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_q(selector: xtermLib.xtermLibStrings.q): HTMLQuoteElement | scala.Null = js.native
   @JSName("closest")
@@ -604,80 +604,80 @@ trait Element
   @JSName("closest")
   def closest_rect(selector: xtermLib.xtermLibStrings.rect): SVGRectElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_rt(selector: xtermLib.xtermLibStrings.rt): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_ruby(selector: xtermLib.xtermLibStrings.ruby): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_s(selector: xtermLib.xtermLibStrings.s): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_samp(selector: xtermLib.xtermLibStrings.samp): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_script(selector: xtermLib.xtermLibStrings.script): HTMLScriptElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_section(selector: xtermLib.xtermLibStrings.section): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_select(selector: xtermLib.xtermLibStrings.select): HTMLSelectElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_slot(selector: xtermLib.xtermLibStrings.slot): HTMLSlotElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_small(selector: xtermLib.xtermLibStrings.small): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_source(selector: xtermLib.xtermLibStrings.source): HTMLSourceElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_span(selector: xtermLib.xtermLibStrings.span): HTMLSpanElement | scala.Null = js.native
   @JSName("closest")
   def closest_stop(selector: xtermLib.xtermLibStrings.stop): SVGStopElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_strong(selector: xtermLib.xtermLibStrings.strong): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_style(selector: xtermLib.xtermLibStrings.style): HTMLStyleElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_sub(selector: xtermLib.xtermLibStrings.sub): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_sup(selector: xtermLib.xtermLibStrings.sup): HTMLElement | scala.Null = js.native
   @JSName("closest")
@@ -687,23 +687,23 @@ trait Element
   @JSName("closest")
   def closest_symbol(selector: xtermLib.xtermLibStrings.symbol): SVGSymbolElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_table(selector: xtermLib.xtermLibStrings.table): HTMLTableElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_tbody(selector: xtermLib.xtermLibStrings.tbody): HTMLTableSectionElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_td(selector: xtermLib.xtermLibStrings.td): HTMLTableDataCellElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_template(selector: xtermLib.xtermLibStrings.template): HTMLTemplateElement | scala.Null = js.native
   @JSName("closest")
@@ -711,94 +711,90 @@ trait Element
   @JSName("closest")
   def closest_textPath(selector: xtermLib.xtermLibStrings.textPath): SVGTextPathElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_textarea(selector: xtermLib.xtermLibStrings.textarea): HTMLTextAreaElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_tfoot(selector: xtermLib.xtermLibStrings.tfoot): HTMLTableSectionElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_th(selector: xtermLib.xtermLibStrings.th): HTMLTableHeaderCellElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_thead(selector: xtermLib.xtermLibStrings.thead): HTMLTableSectionElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_time(selector: xtermLib.xtermLibStrings.time): HTMLTimeElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_title(selector: xtermLib.xtermLibStrings.title): HTMLTitleElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_tr(selector: xtermLib.xtermLibStrings.tr): HTMLTableRowElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_track(selector: xtermLib.xtermLibStrings.track): HTMLTrackElement | scala.Null = js.native
   @JSName("closest")
   def closest_tspan(selector: xtermLib.xtermLibStrings.tspan): SVGTSpanElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_u(selector: xtermLib.xtermLibStrings.u): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_ul(selector: xtermLib.xtermLibStrings.ul): HTMLUListElement | scala.Null = js.native
   @JSName("closest")
   def closest_use(selector: xtermLib.xtermLibStrings.use): SVGUseElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_var(selector: xtermLib.xtermLibStrings.`var`): HTMLElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_video(selector: xtermLib.xtermLibStrings.video): HTMLVideoElement | scala.Null = js.native
   @JSName("closest")
   def closest_view(selector: xtermLib.xtermLibStrings.view): SVGViewElement | scala.Null = js.native
   /**
-       * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
-       */
+    * Returns the first (starting at element) inclusive ancestor that matches selectors, and null otherwise.
+    */
   @JSName("closest")
   def closest_wbr(selector: xtermLib.xtermLibStrings.wbr): HTMLElement | scala.Null = js.native
   /**
-       * Returns element's first attribute whose qualified name is qualifiedName, and null if there is no such attribute otherwise.
-       */
+    * Returns element's first attribute whose qualified name is qualifiedName, and null if there is no such attribute otherwise.
+    */
   def getAttribute(qualifiedName: java.lang.String): java.lang.String | scala.Null = js.native
   /**
-       * Returns element's attribute whose namespace is namespace and local name is localName, and null if there is
-       * no such attribute otherwise.
-       */
+    * Returns element's attribute whose namespace is namespace and local name is localName, and null if there is
+    * no such attribute otherwise.
+    */
   def getAttributeNS(namespace: java.lang.String, localName: java.lang.String): java.lang.String | scala.Null = js.native
-  /**
-       * Returns element's attribute whose namespace is namespace and local name is localName, and null if there is
-       * no such attribute otherwise.
-       */
   def getAttributeNS(namespace: scala.Null, localName: java.lang.String): java.lang.String | scala.Null = js.native
   /**
-       * Returns the qualified names of all element's attributes.
-       * Can contain duplicates.
-       */
+    * Returns the qualified names of all element's attributes.
+    * Can contain duplicates.
+    */
   def getAttributeNames(): js.Array[java.lang.String] = js.native
   def getAttributeNode(name: java.lang.String): Attr | scala.Null = js.native
   def getAttributeNodeNS(namespaceURI: java.lang.String, localName: java.lang.String): Attr | scala.Null = js.native
@@ -1154,42 +1150,36 @@ trait Element
   @JSName("getElementsByTagName")
   def getElementsByTagName_wbr(qualifiedName: xtermLib.xtermLibStrings.wbr): HTMLCollectionOf[HTMLElement] = js.native
   /**
-       * Returns true if element has an attribute whose qualified name is qualifiedName, and false otherwise.
-       */
+    * Returns true if element has an attribute whose qualified name is qualifiedName, and false otherwise.
+    */
   def hasAttribute(qualifiedName: java.lang.String): scala.Boolean = js.native
   /**
-       * Returns true if element has an attribute whose namespace is namespace and local name is localName.
-       */
+    * Returns true if element has an attribute whose namespace is namespace and local name is localName.
+    */
   def hasAttributeNS(namespace: java.lang.String, localName: java.lang.String): scala.Boolean = js.native
-  /**
-       * Returns true if element has an attribute whose namespace is namespace and local name is localName.
-       */
   def hasAttributeNS(namespace: scala.Null, localName: java.lang.String): scala.Boolean = js.native
   /**
-       * Returns true if element has attributes, and false otherwise.
-       */
+    * Returns true if element has attributes, and false otherwise.
+    */
   def hasAttributes(): scala.Boolean = js.native
   def hasPointerCapture(pointerId: scala.Double): scala.Boolean = js.native
   def insertAdjacentElement(position: InsertPosition, insertedElement: Element): Element | scala.Null = js.native
   def insertAdjacentHTML(where: InsertPosition, html: java.lang.String): scala.Unit = js.native
   def insertAdjacentText(where: InsertPosition, text: java.lang.String): scala.Unit = js.native
   /**
-       * Returns true if matching selectors against element's root yields element, and false otherwise.
-       */
+    * Returns true if matching selectors against element's root yields element, and false otherwise.
+    */
   def matches(selectors: java.lang.String): scala.Boolean = js.native
   def msGetRegionContent(): js.Any = js.native
   def releasePointerCapture(pointerId: scala.Double): scala.Unit = js.native
   /**
-       * Removes element's first attribute whose qualified name is qualifiedName.
-       */
+    * Removes element's first attribute whose qualified name is qualifiedName.
+    */
   def removeAttribute(qualifiedName: java.lang.String): scala.Unit = js.native
   /**
-       * Removes element's attribute whose namespace is namespace and local name is localName.
-       */
+    * Removes element's attribute whose namespace is namespace and local name is localName.
+    */
   def removeAttributeNS(namespace: java.lang.String, localName: java.lang.String): scala.Unit = js.native
-  /**
-       * Removes element's attribute whose namespace is namespace and local name is localName.
-       */
   def removeAttributeNS(namespace: scala.Null, localName: java.lang.String): scala.Unit = js.native
   def removeAttributeNode(attr: Attr): Attr = js.native
   @JSName("removeEventListener")
@@ -1227,8 +1217,8 @@ trait Element
     options: EventListenerOptions
   ): scala.Unit = js.native
   /**
-       * Displays element fullscreen and resolves promise when done.
-       */
+    * Displays element fullscreen and resolves promise when done.
+    */
   def requestFullscreen(): js.Promise[scala.Unit] = js.native
   def scroll(): scala.Unit = js.native
   def scroll(options: ScrollToOptions): scala.Unit = js.native
@@ -1243,31 +1233,23 @@ trait Element
   def scrollTo(options: ScrollToOptions): scala.Unit = js.native
   def scrollTo(x: scala.Double, y: scala.Double): scala.Unit = js.native
   /**
-       * Sets the value of element's first attribute whose qualified name is qualifiedName to value.
-       */
+    * Sets the value of element's first attribute whose qualified name is qualifiedName to value.
+    */
   def setAttribute(qualifiedName: java.lang.String, value: java.lang.String): scala.Unit = js.native
   /**
-       * Sets the value of element's attribute whose namespace is namespace and local name is localName to value.
-       */
+    * Sets the value of element's attribute whose namespace is namespace and local name is localName to value.
+    */
   def setAttributeNS(namespace: java.lang.String, qualifiedName: java.lang.String, value: java.lang.String): scala.Unit = js.native
-  /**
-       * Sets the value of element's attribute whose namespace is namespace and local name is localName to value.
-       */
   def setAttributeNS(namespace: scala.Null, qualifiedName: java.lang.String, value: java.lang.String): scala.Unit = js.native
   def setAttributeNode(attr: Attr): Attr | scala.Null = js.native
   def setAttributeNodeNS(attr: Attr): Attr | scala.Null = js.native
   def setPointerCapture(pointerId: scala.Double): scala.Unit = js.native
   /**
-       * If force is not given, "toggles" qualifiedName, removing it if it is
-       * present and adding it if it is not present. If force is true, adds qualifiedName. If force is false, removes qualifiedName.
-       * Returns true if qualifiedName is now present, and false otherwise.
-       */
+    * If force is not given, "toggles" qualifiedName, removing it if it is
+    * present and adding it if it is not present. If force is true, adds qualifiedName. If force is false, removes qualifiedName.
+    * Returns true if qualifiedName is now present, and false otherwise.
+    */
   def toggleAttribute(qualifiedName: java.lang.String): scala.Boolean = js.native
-  /**
-       * If force is not given, "toggles" qualifiedName, removing it if it is
-       * present and adding it if it is not present. If force is true, adds qualifiedName. If force is false, removes qualifiedName.
-       * Returns true if qualifiedName is now present, and false otherwise.
-       */
   def toggleAttribute(qualifiedName: java.lang.String, force: scala.Boolean): scala.Boolean = js.native
   def webkitMatchesSelector(selectors: java.lang.String): scala.Boolean = js.native
 }

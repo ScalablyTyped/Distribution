@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CameraConstants extends js.Object {
   val AutoFocus: expoLib.Anon_On
   val BarCodeType: expoLib.Anon_Upcean

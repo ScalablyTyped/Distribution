@@ -8,11 +8,12 @@ import scala.scalajs.js.annotation._
 /** Implements the ISyndicationClient interface which retrieves feeds from a URI asynchronously. */
 @JSGlobal("Windows.Web.Syndication.SyndicationClient")
 @js.native
+/** Creates a new SyndicationClient object. */
 class SyndicationClient () extends js.Object {
   /**
-                   * Creates a new SyndicationClient object with authentication credentials.
-                   * @param serverCredential Credentials for user authentication.
-                   */
+    * Creates a new SyndicationClient object with authentication credentials.
+    * @param serverCredential Credentials for user authentication.
+    */
   def this(serverCredential: winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.PasswordCredential) = this()
   /** Gets or sets a Boolean value that specifies whether to bypass the cache when retrieving the feed. */
   var bypassCacheOnRetrieve: scala.Boolean = js.native
@@ -25,16 +26,16 @@ class SyndicationClient () extends js.Object {
   /** Gets or sets the maximum amount of time, in milliseconds, to wait for any of the asynchronous operations to complete. If the operation is not complete within this amount of time, it will fail with a status code indicating that it timed out. */
   var timeout: scala.Double = js.native
   /**
-                   * Starts an asynchronous operation to download the syndication feed from the given URI. This method instantiates a SyndicationFeed object from the feed string, which can be in one of the formats specified in SyndicationFormat .
-                   * @param uri The URI from which the feed is downloaded.
-                   * @return Contains the results of the operation.
-                   */
+    * Starts an asynchronous operation to download the syndication feed from the given URI. This method instantiates a SyndicationFeed object from the feed string, which can be in one of the formats specified in SyndicationFormat .
+    * @param uri The URI from which the feed is downloaded.
+    * @return Contains the results of the operation.
+    */
   def retrieveFeedAsync(uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[SyndicationFeed, RetrievalProgress] = js.native
   /**
-                   * Sets an HTTP header for the request. This method can be called multiple times to set multiple headers. When the same header is set multiple times, the values will be concatenated and separated by ",".
-                   * @param name The name of the header.
-                   * @param value The value of the header.
-                   */
+    * Sets an HTTP header for the request. This method can be called multiple times to set multiple headers. When the same header is set multiple times, the values will be concatenated and separated by ",".
+    * @param name The name of the header.
+    * @param value The value of the header.
+    */
   def setRequestHeader(name: java.lang.String, value: java.lang.String): scala.Unit = js.native
 }
 

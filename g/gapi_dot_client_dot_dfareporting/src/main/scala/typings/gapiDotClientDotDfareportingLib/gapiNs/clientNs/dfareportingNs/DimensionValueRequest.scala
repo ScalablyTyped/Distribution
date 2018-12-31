@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DimensionValueRequest extends js.Object {
   /** The name of the dimension for which values should be requested. */
   var dimensionName: js.UndefOr[java.lang.String] = js.undefined

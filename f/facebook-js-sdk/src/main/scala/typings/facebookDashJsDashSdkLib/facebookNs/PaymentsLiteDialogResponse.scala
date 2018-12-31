@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaymentsLiteDialogResponse extends DialogResponse {
   var app_id: scala.Double
   var developer_payload: js.UndefOr[java.lang.String] = js.undefined

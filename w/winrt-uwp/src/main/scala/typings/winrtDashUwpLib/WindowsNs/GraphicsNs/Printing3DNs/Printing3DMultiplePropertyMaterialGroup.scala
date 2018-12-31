@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class Printing3DMultiplePropertyMaterialGroup protected () extends js.Object {
   /**
-                   * Creates a new instance of the Printing3DMultiplePropertyMaterialGroup class.
-                   * @param MaterialGroupId The identifier (ID) of the multi-property material group; a value greater than zero.
-                   */
+    * Creates a new instance of the Printing3DMultiplePropertyMaterialGroup class.
+    * @param MaterialGroupId The identifier (ID) of the multi-property material group; a value greater than zero.
+    */
   def this(MaterialGroupId: scala.Double) = this()
   /** Gets the identifier (ID) of the multi-property material group. */
   var materialGroupId: scala.Double = js.native

@@ -73,10 +73,10 @@ abstract class HttpDiagnosticProvider () extends js.Object {
 @js.native
 object HttpDiagnosticProvider extends js.Object {
   /**
-                       * Creates a new HttpDiagnosticProvider based on the specified ProcessDiagnosticInfo object.
-                       * @param processDiagnosticInfo The ProcessDiagnosticInfo that identifies the process to watch.
-                       * @return The newly created HttpDiagnosticProvider .
-                       */
+    * Creates a new HttpDiagnosticProvider based on the specified ProcessDiagnosticInfo object.
+    * @param processDiagnosticInfo The ProcessDiagnosticInfo that identifies the process to watch.
+    * @return The newly created HttpDiagnosticProvider .
+    */
   def createFromProcessDiagnosticInfo(processDiagnosticInfo: winrtDashUwpLib.WindowsNs.SystemNs.DiagnosticsNs.ProcessDiagnosticInfo): winrtDashUwpLib.WindowsNs.WebNs.HttpNs.DiagnosticsNs.HttpDiagnosticProvider = js.native
 }
 

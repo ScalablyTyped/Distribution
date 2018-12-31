@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableOptions extends js.Object {
   var allowHtml: js.UndefOr[scala.Boolean] = js.undefined
   var alternatingRowStyle: js.UndefOr[scala.Boolean] = js.undefined

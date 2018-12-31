@@ -14,8 +14,11 @@ object dtsUtilsMod extends js.Object {
     inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.ControllerMethodMetadata
   ] = js.native
   def getControllerParameterMetadata(constructor: js.Any): inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.ControllerParameterMetadata = js.native
-  def getControllersFromContainer(container: js.Any, forceControllers: scala.Boolean): js.Array[inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.Controller] = js.native
+  def getControllersFromContainer(
+    container: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify inversifyInterfaces.Container */ js.Any,
+    forceControllers: scala.Boolean
+  ): js.Array[inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.Controller] = js.native
   def getControllersFromMetadata(): js.Array[_] = js.native
-  def instanceOfIHttpActionResult(value: js.Any): /* is IHttpActionResult */scala.Boolean = js.native
+  def instanceOfIHttpActionResult(value: js.Any): /* is inversify-express-utils.inversify-express-utils/dts/interfaces.interfaces.IHttpActionResult */ scala.Boolean = js.native
 }
 

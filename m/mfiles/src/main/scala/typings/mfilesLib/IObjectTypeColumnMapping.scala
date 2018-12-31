@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IObjectTypeColumnMapping extends js.Object {
   var ObjectType: mfilesLib.MFilesNs.MFBuiltInObjectType | scala.Double
   var Ordinal: scala.Double

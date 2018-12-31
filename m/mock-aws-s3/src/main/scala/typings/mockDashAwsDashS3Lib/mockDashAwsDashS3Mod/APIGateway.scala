@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "APIGateway")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class APIGateway ()
   extends awsDashSdkLib.awsDashSdkMod.APIGateway {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsApigatewayMod.APIGatewayNs.ClientConfiguration) = this()
 }
 

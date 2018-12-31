@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListItemStyle extends js.Object {
   var LeftElement: js.UndefOr[TextStyle] = js.undefined
   var centerElementContainer: js.UndefOr[ViewStyle] = js.undefined

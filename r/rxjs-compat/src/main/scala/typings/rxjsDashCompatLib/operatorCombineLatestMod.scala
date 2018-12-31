@@ -14,14 +14,14 @@ object operatorCombineLatestMod extends js.Object {
   ): rxjsLib.rxjsMod.Observable[js.Array[T]] = js.native
   def combineLatest[T, R](
     `this`: rxjsLib.rxjsMod.Observable[T],
-    observables: (rxjsLib.internalTypesMod.ObservableInput[T] | (js.Function1[/* repeated */T, R]))*
+    observables: (rxjsLib.internalTypesMod.ObservableInput[T] | (js.Function1[/* repeated */ T, R]))*
   ): rxjsLib.rxjsMod.Observable[R] = js.native
   def combineLatest[T, R](`this`: rxjsLib.rxjsMod.Observable[T], project: js.Function1[/* v1 */ T, R]): rxjsLib.rxjsMod.Observable[R] = js.native
   def combineLatest[T, T2](`this`: rxjsLib.rxjsMod.Observable[T], v2: rxjsLib.internalTypesMod.ObservableInput[T2]): rxjsLib.rxjsMod.Observable[js.Tuple2[T, T2]] = js.native
   def combineLatest[T, TOther, R](
     `this`: rxjsLib.rxjsMod.Observable[T],
     array: js.Array[rxjsLib.internalTypesMod.ObservableInput[TOther]],
-    project: js.Function2[/* v1 */ T, /* repeated */TOther, R]
+    project: js.Function2[/* v1 */ T, /* repeated */ TOther, R]
   ): rxjsLib.rxjsMod.Observable[R] = js.native
   def combineLatest[T, T2, R](
     `this`: rxjsLib.rxjsMod.Observable[T],

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IChartistAutoScaleAxis extends ILineChartAxis {
   var high: js.UndefOr[scala.Double] = js.undefined
   var low: js.UndefOr[scala.Double] = js.undefined

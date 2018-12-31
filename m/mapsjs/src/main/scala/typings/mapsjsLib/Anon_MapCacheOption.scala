@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MapCacheOption extends js.Object {
   var backgroundColorStr: js.UndefOr[java.lang.String] = js.undefined
   var bleedRatio: js.UndefOr[scala.Double] = js.undefined

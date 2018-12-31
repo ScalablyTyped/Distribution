@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DisplayName extends js.Object {
   /** The creator's name, if available. */
   var displayName: js.UndefOr[java.lang.String] = js.undefined

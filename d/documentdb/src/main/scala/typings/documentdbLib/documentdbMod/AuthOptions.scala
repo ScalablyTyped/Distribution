@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AuthOptions extends js.Object {
   /** The authorization master key to use to create the client. */
   var masterKey: js.UndefOr[java.lang.String] = js.undefined

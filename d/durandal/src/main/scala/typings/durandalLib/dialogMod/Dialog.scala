@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Dialog extends js.Object {
   var activator: durandalLib.DurandalActivator[_]
   var context: DialogContext

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TripOption extends js.Object {
   /** Identifier uniquely identifying this trip in a response. */
   var id: js.UndefOr[java.lang.String] = js.undefined

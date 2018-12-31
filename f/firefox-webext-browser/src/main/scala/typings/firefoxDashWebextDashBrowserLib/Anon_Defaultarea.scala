@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Defaultarea extends js.Object {
   var browser_style: js.UndefOr[scala.Boolean] = js.undefined
   /** Defines the location the browserAction will appear by default. The default location is navbar. */

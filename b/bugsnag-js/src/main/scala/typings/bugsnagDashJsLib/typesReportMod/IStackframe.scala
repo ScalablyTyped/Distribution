@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStackframe extends js.Object {
   var code: js.UndefOr[js.Object] = js.undefined
   var columnNumber: js.UndefOr[scala.Double] = js.undefined

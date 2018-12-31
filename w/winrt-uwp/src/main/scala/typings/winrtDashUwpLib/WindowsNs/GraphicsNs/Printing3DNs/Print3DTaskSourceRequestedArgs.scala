@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class Print3DTaskSourceRequestedArgs () extends js.Object {
   /**
-                   * Specifies the 3D Manufacturing Format (3MF) package to use in the print job.
-                   * @param source The 3D Manufacturing Format (3MF) package to use in the print job.
-                   */
+    * Specifies the 3D Manufacturing Format (3MF) package to use in the print job.
+    * @param source The 3D Manufacturing Format (3MF) package to use in the print job.
+    */
   def setSource(source: Printing3D3MFPackage): scala.Unit = js.native
 }
 

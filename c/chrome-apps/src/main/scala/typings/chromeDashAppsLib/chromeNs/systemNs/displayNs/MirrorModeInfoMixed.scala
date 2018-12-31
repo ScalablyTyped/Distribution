@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MirrorModeInfoMixed extends MirrorModeInfo {
   /** The ids of the mirroring destination displays. */
   var mirroringDestinationIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined

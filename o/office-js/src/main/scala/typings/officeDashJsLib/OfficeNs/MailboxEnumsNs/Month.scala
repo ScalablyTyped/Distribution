@@ -9,98 +9,98 @@ import scala.scalajs.js.annotation._
 sealed trait Month extends js.Object
 
 /**
-         * Specifies the month.
-         * 
-         * [Api set: Mailbox 1.7]
-         *
-         * @remarks
-         * <table><tr><td>
-         * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
-         * </td><td>Compose or read</td></tr></table>
-         */
+  * Specifies the month.
+  * 
+  * [Api set: Mailbox 1.7]
+  *
+  * @remarks
+  * <table><tr><td>
+  * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
+  * </td><td>Compose or read</td></tr></table>
+  */
 @JSGlobal("Office.MailboxEnums.Month")
 @js.native
 object Month extends js.Object {
   /**
-               * April
-               */
+    * April
+    */
   @js.native
   sealed trait Apr
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Month
   
   /**
-               * August
-               */
+    * August
+    */
   @js.native
   sealed trait Aug
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Month
   
   /**
-               * December
-               */
+    * December
+    */
   @js.native
   sealed trait Dec
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Month
   
   /**
-               * February
-               */
+    * February
+    */
   @js.native
   sealed trait Feb
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Month
   
   /**
-               * January
-               */
+    * January
+    */
   @js.native
   sealed trait Jan
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Month
   
   /**
-               * July
-               */
+    * July
+    */
   @js.native
   sealed trait Jul
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Month
   
   /**
-               * June
-               */
+    * June
+    */
   @js.native
   sealed trait Jun
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Month
   
   /**
-               * March
-               */
+    * March
+    */
   @js.native
   sealed trait Mar
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Month
   
   /**
-               * May
-               */
+    * May
+    */
   @js.native
   sealed trait May
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Month
   
   /**
-               * November
-               */
+    * November
+    */
   @js.native
   sealed trait Nov
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Month
   
   /**
-               * October
-               */
+    * October
+    */
   @js.native
   sealed trait Oct
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Month
   
   /**
-               * September
-               */
+    * September
+    */
   @js.native
   sealed trait Sep
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Month

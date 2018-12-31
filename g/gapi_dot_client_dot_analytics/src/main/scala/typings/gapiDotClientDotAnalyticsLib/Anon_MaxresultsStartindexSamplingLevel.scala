@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MaxresultsStartindexSamplingLevel extends js.Object {
   /** List of analytics dimensions. */
   var dimensions: js.UndefOr[java.lang.String] = js.undefined

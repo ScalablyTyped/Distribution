@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventTagOverride extends js.Object {
   /** Whether this override is enabled. */
   var enabled: js.UndefOr[scala.Boolean] = js.undefined

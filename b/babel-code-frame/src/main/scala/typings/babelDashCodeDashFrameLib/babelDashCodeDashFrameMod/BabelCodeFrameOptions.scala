@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BabelCodeFrameOptions extends js.Object {
   /**
-       * Forcibly syntax highlight the code as JavaScript (for non-terminals);
-       * overrides highlightCode.
-       * default: false
-       */
+    * Forcibly syntax highlight the code as JavaScript (for non-terminals);
+    * overrides highlightCode.
+    * default: false
+    */
   var forceColor: js.UndefOr[scala.Boolean] = js.undefined
   /** Syntax highlight the code as JavaScript for terminals. default: false */
   var highlightCode: js.UndefOr[scala.Boolean] = js.undefined

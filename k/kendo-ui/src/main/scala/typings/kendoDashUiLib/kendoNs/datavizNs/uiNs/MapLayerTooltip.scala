@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapLayerTooltip extends js.Object {
   var animation: js.UndefOr[MapLayerTooltipAnimation] = js.undefined
   var autoHide: js.UndefOr[scala.Boolean] = js.undefined

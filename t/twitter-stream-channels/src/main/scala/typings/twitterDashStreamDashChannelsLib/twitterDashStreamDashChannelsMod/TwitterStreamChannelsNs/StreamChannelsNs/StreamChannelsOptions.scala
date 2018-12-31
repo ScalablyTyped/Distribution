@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StreamChannelsOptions extends js.Object {
   var enableChannelsEvents: js.UndefOr[scala.Boolean] = js.undefined
   var enableKeywordsEvents: js.UndefOr[scala.Boolean] = js.undefined

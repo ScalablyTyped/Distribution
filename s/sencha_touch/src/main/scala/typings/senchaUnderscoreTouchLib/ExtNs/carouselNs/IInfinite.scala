@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IInfinite extends ICarousel {
   /** [Method] Returns the value of innerItemConfig
   		* @returns Object

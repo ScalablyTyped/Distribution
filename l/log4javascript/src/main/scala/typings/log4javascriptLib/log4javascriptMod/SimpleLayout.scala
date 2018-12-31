@@ -7,5 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("log4javascript", "SimpleLayout")
 @js.native
+/**
+	 * Constructor
+	 */
 class SimpleLayout () extends Layout
 

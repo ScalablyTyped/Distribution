@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GooglePrivacyDlpV2beta1ImageLocation extends js.Object {
   /** Height of the bounding box in pixels. */
   var height: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Service extends js.Object {
   /** The IP address of an mDNS advertised service. */
   var ipAddress: java.lang.String

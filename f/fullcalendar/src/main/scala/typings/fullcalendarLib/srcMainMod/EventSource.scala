@@ -15,8 +15,8 @@ class EventSource protected ()
 @JSImport("fullcalendar/src/main", "EventSource")
 @js.native
 object EventSource extends js.Object {
-  var copyVerbatimStandardProps: js.Any = js.native
-  var defineStandardProps: js.Any = js.native
+  var copyVerbatimStandardProps: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParsableModelMixin.copyVerbatimStandardProps */ js.Any = js.native
+  var defineStandardProps: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ParsableModelMixin.defineStandardProps */ js.Any = js.native
   var uuid: scala.Double = js.native
   def normalizeId(id: js.Any): java.lang.String = js.native
   def parse(rawInput: js.Any, calendar: js.Any): fullcalendarLib.fullcalendarLibNumbers.`false` | fullcalendarLib.eventsourceMod.Default = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClauseBiblioEntry extends BiblioEntryBase {
   @JSName("aoid")
   var aoid_ClauseBiblioEntry: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Settings extends js.Object {
   val application: atlassianDashCrowdDashClientLib.Anon_NamePassword
   val attributesEncoder: js.UndefOr[js.Function1[/* obj */ js.Any, java.lang.String]] = js.undefined

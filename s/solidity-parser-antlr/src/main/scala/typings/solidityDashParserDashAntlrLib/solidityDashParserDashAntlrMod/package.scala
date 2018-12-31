@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object solidityDashParserDashAntlrMod {
-  type ASTNode = /* LimitUnionLength: was union type with length 82 */js.Any
+  type ASTNode = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 82 */ js.Any
   type AssemblyAssignment = BaseASTNode
   type AssemblyBlock = BaseASTNode
   type AssemblyCall = BaseASTNode

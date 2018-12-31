@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PerformanceNavigation extends js.Object {
   val TYPE_BACK_FORWARD: scala.Double
   val TYPE_NAVIGATE: scala.Double

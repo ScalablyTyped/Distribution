@@ -19,8 +19,8 @@ class Box3 () extends js.Object {
   def copy(box: this.type): this.type = js.native
   def distanceToPoint(point: Vector3): scala.Double = js.native
   /**
-       * @deprecated Use {@link Box3#isEmpty .isEmpty()} instead.
-       */
+    * @deprecated Use {@link Box3#isEmpty .isEmpty()} instead.
+    */
   def empty(): js.Any = js.native
   def equals(box: Box3): scala.Boolean = js.native
   def expandByObject(`object`: Object3D): this.type = js.native
@@ -37,12 +37,12 @@ class Box3 () extends js.Object {
   def intersectsSphere(sphere: Sphere): scala.Boolean = js.native
   def isEmpty(): scala.Boolean = js.native
   /**
-       * @deprecated Use {@link Box3#intersectsBox .intersectsBox()} instead.
-       */
+    * @deprecated Use {@link Box3#intersectsBox .intersectsBox()} instead.
+    */
   def isIntersectionBox(b: js.Any): js.Any = js.native
   /**
-       * @deprecated Use {@link Box3#intersectsSphere .intersectsSphere()} instead.
-       */
+    * @deprecated Use {@link Box3#intersectsSphere .intersectsSphere()} instead.
+    */
   def isIntersectionSphere(s: js.Any): js.Any = js.native
   def makeEmpty(): this.type = js.native
   def set(min: Vector3, max: Vector3): this.type = js.native

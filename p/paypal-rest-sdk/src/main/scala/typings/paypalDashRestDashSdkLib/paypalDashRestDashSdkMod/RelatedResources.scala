@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RelatedResources extends js.Object {
   var authorization: js.UndefOr[AuthorizationResource] = js.undefined
   var capture: js.UndefOr[CaptureResource] = js.undefined

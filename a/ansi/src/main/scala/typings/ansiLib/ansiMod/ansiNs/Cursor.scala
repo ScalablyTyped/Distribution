@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Cursor
-  extends /* key */ org.scalablytyped.runtime.StringDictionary[(js.Function1[/* repeated */js.Any, Cursor]) | Colorer] {
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[(js.Function1[/* repeated */ js.Any, Cursor]) | Colorer] {
   var bg: Colorer = js.native
   var fg: Colorer = js.native
   def back(): Cursor = js.native
   /**
-           * Makes a beep sound!
-           */
+    * Makes a beep sound!
+    */
   def beep(): Cursor = js.native
   def black(): Cursor = js.native
   def blue(): Cursor = js.native
@@ -27,40 +27,34 @@ trait Cursor
   def brightWhite(): Cursor = js.native
   def brightYellow(): Cursor = js.native
   /**
-           * Buffer `write()` calls into memory.
-           *
-           * @api public
-           */
+    * Buffer `write()` calls into memory.
+    *
+    * @api public
+    */
   def buffer(): Cursor = js.native
   def cyan(): Cursor = js.native
   def down(): Cursor = js.native
   def eraseData(): Cursor = js.native
   def eraseLine(): Cursor = js.native
   /**
-           * Write out the in-memory buffer.
-           *
-           * @api public
-           */
+    * Write out the in-memory buffer.
+    *
+    * @api public
+    */
   def flush(): Cursor = js.native
   def forward(): Cursor = js.native
   /**
-           * Moves cursor to specific position
-           */
+    * Moves cursor to specific position
+    */
   def goto(): Cursor = js.native
-  /**
-           * Moves cursor to specific position
-           */
   def goto(x: scala.Double): Cursor = js.native
-  /**
-           * Moves cursor to specific position
-           */
   def goto(x: scala.Double, y: scala.Double): Cursor = js.native
   def green(): Cursor = js.native
   def grey(): Cursor = js.native
   /**
-           * Accepts CSS color codes for use with ANSI escape codes.
-           * For example: `#FF000` would be bright red.
-           */
+    * Accepts CSS color codes for use with ANSI escape codes.
+    * For example: `#FF000` would be bright red.
+    */
   def hex(color: java.lang.String): Cursor = js.native
   def hide(): Cursor = js.native
   def horizontalAbsolute(): Cursor = js.native
@@ -72,8 +66,8 @@ trait Cursor
   def queryPosition(): Cursor = js.native
   def red(): Cursor = js.native
   /**
-           * Resets all ANSI formatting on the stream.
-           */
+    * Resets all ANSI formatting on the stream.
+    */
   def reset(): Cursor = js.native
   def resetbold(): Cursor = js.native
   def resetinverse(): Cursor = js.native
@@ -81,9 +75,9 @@ trait Cursor
   def resetunderline(): Cursor = js.native
   def restorePosition(): Cursor = js.native
   /**
-           * Sets the foreground color with the given RGB values.
-           * The closest match out of the 216 colors is picked.
-           */
+    * Sets the foreground color with the given RGB values.
+    * The closest match out of the 216 colors is picked.
+    */
   def rgb(r: scala.Double, g: scala.Double, b: scala.Double): Cursor = js.native
   def savePosition(): Cursor = js.native
   def scrollDown(): Cursor = js.native
@@ -93,10 +87,10 @@ trait Cursor
   def up(): Cursor = js.native
   def white(): Cursor = js.native
   /**
-           * Helper function that calls `write()` on the underlying Stream.
-           * Returns `this` instead of the write() return value to keep
-           * the chaining going.
-           */
+    * Helper function that calls `write()` on the underlying Stream.
+    * Returns `this` instead of the write() return value to keep
+    * the chaining going.
+    */
   def write(data: java.lang.String): Cursor = js.native
   def yellow(): Cursor = js.native
 }

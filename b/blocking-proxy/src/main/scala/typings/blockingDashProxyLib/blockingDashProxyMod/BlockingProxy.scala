@@ -17,8 +17,8 @@ class BlockingProxy protected ()
 @js.native
 object BlockingProxy extends js.Object {
   /**
-       * This command is for the proxy server, not to be forwarded to Selenium.
-       */
+    * This command is for the proxy server, not to be forwarded to Selenium.
+    */
   def isProxyCommand(commandPath: java.lang.String): scala.Boolean = js.native
 }
 

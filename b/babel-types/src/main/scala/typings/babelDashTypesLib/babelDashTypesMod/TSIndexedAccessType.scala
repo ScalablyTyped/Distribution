@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TSIndexedAccessType extends Node {
   var indexType: TSType
   var objectType: TSType

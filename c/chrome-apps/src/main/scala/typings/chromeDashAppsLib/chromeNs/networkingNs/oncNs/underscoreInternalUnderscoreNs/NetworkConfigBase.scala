@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NetworkConfigBase[M /* <: chromeDashAppsLib.chromeNs.networkingNs.oncNs.ManagedObject */, IF /* <: chromeDashAppsLib.chromeNs.networkingNs.oncNs.InterfaceType */, OF /* <: ObjectFunction */] extends js.Object {
   /** For cellular networks, cellular network properties. */
   var Cellular: js.UndefOr[

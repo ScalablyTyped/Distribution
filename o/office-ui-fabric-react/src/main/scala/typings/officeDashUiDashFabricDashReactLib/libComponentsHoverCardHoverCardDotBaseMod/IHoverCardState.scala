@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHoverCardState extends js.Object {
   var isHoverCardVisible: js.UndefOr[scala.Boolean] = js.undefined
   var mode: js.UndefOr[

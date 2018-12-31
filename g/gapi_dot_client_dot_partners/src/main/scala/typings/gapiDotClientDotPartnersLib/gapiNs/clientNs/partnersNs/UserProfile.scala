@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserProfile extends js.Object {
   /** The user's mailing address, contains multiple fields. */
   var address: js.UndefOr[Location] = js.undefined
   /**
-               * If the user has edit access to multiple accounts, the user can choose the
-               * preferred account and it is used when a personal account is needed. Can
-               * be empty.
-               */
+    * If the user has edit access to multiple accounts, the user can choose the
+    * preferred account and it is used when a personal account is needed. Can
+    * be empty.
+    */
   var adwordsManagerAccount: js.UndefOr[java.lang.String] = js.undefined
   /** A list of ids representing which channels the user selected they were in. */
   var channels: js.UndefOr[js.Array[java.lang.String]] = js.undefined

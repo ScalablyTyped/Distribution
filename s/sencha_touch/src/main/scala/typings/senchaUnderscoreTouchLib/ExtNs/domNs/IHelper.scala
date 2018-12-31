@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHelper extends js.Object {
   /** [Method] Creates new DOM element s and appends them to el
   		* @param el String/HTMLElement/Ext.Element The context element

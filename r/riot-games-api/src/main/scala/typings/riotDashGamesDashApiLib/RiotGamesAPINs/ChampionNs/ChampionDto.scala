@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChampionDto extends js.Object {
   var active: scala.Boolean
   var botEnabled: scala.Boolean

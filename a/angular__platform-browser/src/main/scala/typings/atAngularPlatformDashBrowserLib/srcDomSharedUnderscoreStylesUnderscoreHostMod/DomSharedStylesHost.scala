@@ -17,9 +17,9 @@ class DomSharedStylesHost protected ()
   var _styleNodes: js.Any = js.native
   def addHost(hostNode: stdLib.Node): scala.Unit = js.native
   /**
-       * A callback method that performs custom clean-up, invoked immediately
-       * after a directive, pipe, or service instance is destroyed.
-       */
+    * A callback method that performs custom clean-up, invoked immediately
+    * after a directive, pipe, or service instance is destroyed.
+    */
   /* CompleteClass */
   override def ngOnDestroy(): scala.Unit = js.native
   def removeHost(hostNode: stdLib.Node): scala.Unit = js.native

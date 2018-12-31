@@ -42,13 +42,6 @@ trait ICommAngularDescriptor extends js.Object {
   		 * @param services A comma seperated list of services that are used in the above expression
   		 */
   def link(expression: java.lang.String): ICommAngularDescriptor = js.native
-  /**
-  		 * This is to be used with flowing commands to attach an expression that
-  		 * evaluates using Angular $parse.
-  		 * see http://commangular.org/docs/#building-command-flows
-  		 * @param expression A string form expression that can make use of services to validate conditions.
-  		 * @param services A comma seperated list of services that are used in the above expression
-  		 */
   def link(expression: java.lang.String, services: java.lang.String): ICommAngularDescriptor = js.native
   /**
   		 * Works with the <code>link</code> function to attach a command to the flow if the

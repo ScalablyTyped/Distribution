@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AttributeValue extends js.Object {
   /** A Boolean value represented by `true` or `false`. */
   var boolValue: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InstanceChainData extends js.Object {
   var fns: js.Array[js.Function]
   var isGetter: scala.Boolean

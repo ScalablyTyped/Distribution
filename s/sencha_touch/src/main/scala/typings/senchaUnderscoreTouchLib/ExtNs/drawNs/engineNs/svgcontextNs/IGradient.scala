@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGradient
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Adds a color stop with the given color to the gradient at the given offset

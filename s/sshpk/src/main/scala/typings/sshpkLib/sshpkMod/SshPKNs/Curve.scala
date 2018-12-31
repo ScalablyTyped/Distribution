@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Curve extends js.Object {
   var G: nodeLib.Buffer
   var a: nodeLib.Buffer

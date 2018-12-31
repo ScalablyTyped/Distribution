@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait flowVisitors[V] extends js.Object {
   var AnyTypeAnnotation: js.UndefOr[V] = js.undefined
   var ArrayTypeAnnotation: js.UndefOr[V] = js.undefined

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched in case of error during chat room message modification
 		*/
-
 trait ChatRoomMessageNotModified extends js.Object {
   /**
   			* Error code

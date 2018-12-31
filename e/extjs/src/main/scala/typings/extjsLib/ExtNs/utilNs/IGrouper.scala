@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGrouper extends ISorter {
   /** [Method] Returns the value for grouping to be used
   		* @param instance Ext.data.Model The Model instance

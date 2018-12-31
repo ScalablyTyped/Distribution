@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrderDocument extends js.Object {
   /** Account ID of this order document. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined
   /** Advertiser ID of this order document. */
   var advertiserId: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The amended order document ID of this order document. An order document can be created by optionally amending another order document so that the change
-               * history can be preserved.
-               */
+    * The amended order document ID of this order document. An order document can be created by optionally amending another order document so that the change
+    * history can be preserved.
+    */
   var amendedOrderDocumentId: js.UndefOr[java.lang.String] = js.undefined
   /** IDs of users who have approved this order document. */
   var approvedByUserProfileIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined

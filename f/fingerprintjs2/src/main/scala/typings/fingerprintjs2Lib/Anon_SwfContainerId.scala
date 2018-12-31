@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SwfContainerId extends js.Object {
   var extendedJsFonts: scala.Boolean
   var swfContainerId: java.lang.String

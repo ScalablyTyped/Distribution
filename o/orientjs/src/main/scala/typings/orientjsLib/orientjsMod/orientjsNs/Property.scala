@@ -26,75 +26,40 @@ trait Property extends js.Object {
   def configure(): scala.Unit = js.native
   def configure(config: js.Any): scala.Unit = js.native
   /**
-           * Create a new property.
-           *
-           * @param  config The property name or configuration.
-           * @param   reload      Whether to reload the property, default to true.
-           * @promise {Object}              The created property.
-           */
+    * Create a new property.
+    *
+    * @param  config The property name or configuration.
+    * @param   reload      Whether to reload the property, default to true.
+    * @promise {Object}              The created property.
+    */
   def create(): bluebirdLib.bluebirdMod.namespaced[Property] = js.native
-  /**
-           * Create a new property.
-           *
-           * @param  config The property name or configuration.
-           * @param   reload      Whether to reload the property, default to true.
-           * @promise {Object}              The created property.
-           */
   def create(config: java.lang.String): bluebirdLib.bluebirdMod.namespaced[Property] = js.native
-  /**
-           * Create a new property.
-           *
-           * @param  config The property name or configuration.
-           * @param   reload      Whether to reload the property, default to true.
-           * @promise {Object}              The created property.
-           */
   def create(config: java.lang.String, reload: scala.Boolean): bluebirdLib.bluebirdMod.namespaced[Property] = js.native
   def create(config: js.Array[PropertyCreateConfig]): bluebirdLib.bluebirdMod.namespaced[js.Array[Property]] = js.native
   def create(config: js.Array[PropertyCreateConfig], reload: scala.Boolean): bluebirdLib.bluebirdMod.namespaced[js.Array[Property]] = js.native
-  /**
-           * Create a new property.
-           *
-           * @param  config The property name or configuration.
-           * @param   reload      Whether to reload the property, default to true.
-           * @promise {Object}              The created property.
-           */
   def create(config: PropertyCreateConfig): bluebirdLib.bluebirdMod.namespaced[Property] = js.native
-  /**
-           * Create a new property.
-           *
-           * @param  config The property name or configuration.
-           * @param   reload      Whether to reload the property, default to true.
-           * @promise {Object}              The created property.
-           */
   def create(config: PropertyCreateConfig, reload: scala.Boolean): bluebirdLib.bluebirdMod.namespaced[Property] = js.native
   def drop(name: java.lang.String): bluebirdLib.bluebirdMod.namespaced[Class] = js.native
   def drop(name: java.lang.String, config: orientjsLib.Anon_Ifexist): bluebirdLib.bluebirdMod.namespaced[Class] = js.native
   /**
-           * Get the property with the given name.
-           *
-           * @param   name   The property to get.
-           * @promise {Object|null}   The retrieved property.
-           */
+    * Get the property with the given name.
+    *
+    * @param   name   The property to get.
+    * @promise {Object|null}   The retrieved property.
+    */
   def get(name: java.lang.String): bluebirdLib.bluebirdMod.namespaced[Property] = js.native
   def list(): bluebirdLib.bluebirdMod.namespaced[js.Array[Property]] = js.native
   def reload(): bluebirdLib.bluebirdMod.namespaced[Property] = js.native
   def rename(oldName: java.lang.String): bluebirdLib.bluebirdMod.namespaced[Property] = js.native
   def rename(oldName: java.lang.String, newName: java.lang.String): bluebirdLib.bluebirdMod.namespaced[Property] = js.native
   /**
-           * Update the given property.
-           *
-           * @param    property The property settings.
-           * @param   reload   Whether to reload the property, default to true.
-           * @promise {Object}           The updated property.
-           */
+    * Update the given property.
+    *
+    * @param    property The property settings.
+    * @param   reload   Whether to reload the property, default to true.
+    * @promise {Object}           The updated property.
+    */
   def update(config: PropertyUpdateConfig): bluebirdLib.bluebirdMod.namespaced[Property] = js.native
-  /**
-           * Update the given property.
-           *
-           * @param    property The property settings.
-           * @param   reload   Whether to reload the property, default to true.
-           * @promise {Object}           The updated property.
-           */
   def update(config: PropertyUpdateConfig, reload: scala.Boolean): bluebirdLib.bluebirdMod.namespaced[Property] = js.native
 }
 

@@ -30,9 +30,7 @@ object animejsModMembers extends js.Object {
   def setDashoffset(el: stdLib.SVGElement): scala.Double = js.native
   // Timeline
   def timeline(): animejsLib.animejsMod.animeNs.AnimeTimelineInstance = js.native
-  // Timeline
   def timeline(params: animejsLib.animejsMod.animeNs.AnimeInstanceParams): animejsLib.animejsMod.animeNs.AnimeTimelineInstance = js.native
-  // Timeline
   def timeline(params: js.Array[animejsLib.animejsMod.animeNs.AnimeInstance]): animejsLib.animejsMod.animeNs.AnimeTimelineInstance = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait X9ECParameters extends js.Object {
   var G: js.Any
   var g: js.Any

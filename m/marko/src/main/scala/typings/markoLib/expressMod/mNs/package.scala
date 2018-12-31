@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object mNs {
   type MarkoRouterMatcher = js.Function2[
     /* path */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.PathParams, 
-    /* repeated */RequestHandler, 
+    /* repeated */ RequestHandler, 
     Application
   ]
   type RequestHandler = js.Function3[

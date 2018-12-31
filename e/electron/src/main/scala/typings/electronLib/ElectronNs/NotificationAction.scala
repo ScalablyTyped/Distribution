@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NotificationAction extends js.Object {
   // Docs: http://electronjs.org/docs/api/structures/notification-action
   /**
-       * The label for the given action.
-       */
+    * The label for the given action.
+    */
   var text: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * The type of action, can be button.
-       */
+    * The type of action, can be button.
+    */
   var `type`: electronLib.electronLibStrings.button
 }
 

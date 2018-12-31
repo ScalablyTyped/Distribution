@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISyndicationClient extends js.Object {
   var bypassCacheOnRetrieve: scala.Boolean
   var maxResponseBufferSize: scala.Double

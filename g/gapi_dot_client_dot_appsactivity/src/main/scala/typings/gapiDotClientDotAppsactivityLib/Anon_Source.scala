@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Source extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -28,14 +27,14 @@ trait Anon_Source extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The Google service from which to return activities. Possible values of source are:
-                   * - drive.google.com
-                   */
+    * The Google service from which to return activities. Possible values of source are:
+    * - drive.google.com
+    */
   var source: js.UndefOr[java.lang.String] = js.undefined
   /** Indicates the user to return activity for. Use the special value me to indicate the currently authenticated user. */
   var userId: js.UndefOr[java.lang.String] = js.undefined

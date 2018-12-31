@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a MIDI message which is implemented by all MIDI message classes. */
-
 trait IMidiMessage extends js.Object {
   /** Gets the array of bytes associated with the MIDI message, including status byte. */
   var rawData: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer

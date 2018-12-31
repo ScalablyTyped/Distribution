@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectComponents[OptionType] extends js.Object {
   var ClearIndicator: IndicatorComponentType[OptionType] | scala.Null
   var Control: reactLib.reactMod.ReactNs.ComponentType[reactDashSelectLib.libComponentsControlMod.ControlProps[OptionType]]

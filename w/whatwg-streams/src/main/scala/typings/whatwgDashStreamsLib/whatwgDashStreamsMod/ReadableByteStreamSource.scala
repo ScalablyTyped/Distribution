@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReadableByteStreamSource extends js.Object {
   var autoAllocateChunkSize: js.UndefOr[scala.Double] = js.undefined
   var cancel: js.UndefOr[js.Function1[/* reason */ js.Any, scala.Unit | js.Promise[_]]] = js.undefined

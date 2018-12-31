@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParDoInstruction extends js.Object {
   /** The input. */
   var input: js.UndefOr[InstructionInput] = js.undefined

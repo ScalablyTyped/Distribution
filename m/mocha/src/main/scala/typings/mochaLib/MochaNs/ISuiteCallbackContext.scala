@@ -12,7 +12,6 @@ trait ISuiteCallbackContext extends js.Object {
   def retries(n: scala.Double): this.type = js.native
   /** @deprecated `.slow()` has additional overloads in `Mocha.Suite`. */
   def slow(ms: scala.Double): this.type = js.native
-  /** @deprecated `.timeout()` has additional overloads in `Mocha.Suite`. */
   def timeout(ms: java.lang.String): this.type = js.native
   /** @deprecated `.timeout()` has additional overloads in `Mocha.Suite`. */
   def timeout(ms: scala.Double): this.type = js.native

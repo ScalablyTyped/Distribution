@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebGLActiveInfo extends js.Object {
   val name: java.lang.String
   val size: GLint

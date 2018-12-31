@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgGridModalDialogMethods extends js.Object {
   /**
   	 * Changes the widget language to global language. Global language is the value in $.ig.util.language

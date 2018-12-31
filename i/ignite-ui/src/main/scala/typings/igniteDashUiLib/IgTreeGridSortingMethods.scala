@@ -57,11 +57,6 @@ trait IgTreeGridSortingMethods extends js.Object {
   	 * @param exprs array of sorting expressions. If not set then the method uses expressions defined in sorting settings of the data source.
   	 */
   def sortMultiple(): scala.Unit = js.native
-  /**
-  	 * Sorts the data in grid columns and updates the UI. It accepts optional argument - array of sorting expressions. If passed then sorts the data and sets sorting expressions of the data source. If not passed uses current sorting expressions of the data source.
-  	 *
-  	 * @param exprs array of sorting expressions. If not set then the method uses expressions defined in sorting settings of the data source.
-  	 */
   def sortMultiple(exprs: js.Array[_]): scala.Unit = js.native
   /**
   	 * Removes sorting for the grid column with the specified columnKey/columnIndex and updates the UI.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableResults extends js.Object {
   var destinations: js.Array[Waypoint]
   var durations: js.Array[js.Array[Duration]]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StreamSpec extends js.Object {
   var attributes: js.UndefOr[agoraDashRtcDashSdkLib.Anon_MaxFrameRate] = js.undefined
   var audio: scala.Boolean

@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Simplified Album Object
-     * [album object (simplified)](https://developer.spotify.com/web-api/object-model/#album-object-simplified)
-     */
-
+  * Simplified Album Object
+  * [album object (simplified)](https://developer.spotify.com/web-api/object-model/#album-object-simplified)
+  */
 trait AlbumObjectSimplified extends js.Object {
   var album_type: java.lang.String
   var available_markets: js.UndefOr[js.Array[java.lang.String]] = js.undefined

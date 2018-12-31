@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 	* @brief mongodb 数据库数据集对象
 	* @detail 使用 MongoDB.getCollection 创建：,```JavaScript,var col1 = mdb.getCollection('test');,var col = mdb.test;,```
 	*/
-
 @JSGlobal("Class_MongoCollection")
 @js.native
 class Class_MongoCollection () extends Class__object {
@@ -50,15 +49,6 @@ class Class_MongoCollection () extends Class__object {
   	 * 
   	 */
   def ensureIndex(keys: js.Object): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 在当前集合上创建索引
-  	 * @param keys 给定索引字段、顺序和方向
-  	 * @param options 给定索引的选项，唯一索引等
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def ensureIndex(keys: js.Object, options: js.Object): scala.Unit = js.native
   /**
   	 * 
@@ -71,27 +61,7 @@ class Class_MongoCollection () extends Class__object {
   	 * 
   	 */
   def find(): Class_MongoCursor = js.native
-  /**
-  	 * 
-  	 * @brief 根据给定的查询条件和返回字段设定，建立游标对象
-  	 * @param query 指定查询条件的对象
-  	 * @param projection 指定返回字段的对象
-  	 * @return 返回游标对象
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def find(query: js.Object): Class_MongoCursor = js.native
-  /**
-  	 * 
-  	 * @brief 根据给定的查询条件和返回字段设定，建立游标对象
-  	 * @param query 指定查询条件的对象
-  	 * @param projection 指定返回字段的对象
-  	 * @return 返回游标对象
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def find(query: js.Object, projection: js.Object): Class_MongoCursor = js.native
   /**
   	 * 
@@ -114,27 +84,7 @@ class Class_MongoCollection () extends Class__object {
   	 * 
   	 */
   def findOne(): js.Object = js.native
-  /**
-  	 * 
-  	 * @brief 根据给定的查询条件和返回字段设定，查询一条结果
-  	 * @param query 指定查询条件的对象
-  	 * @param projection 指定返回字段的对象
-  	 * @return 返回第一条结果
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def findOne(query: js.Object): js.Object = js.native
-  /**
-  	 * 
-  	 * @brief 根据给定的查询条件和返回字段设定，查询一条结果
-  	 * @param query 指定查询条件的对象
-  	 * @param projection 指定返回字段的对象
-  	 * @return 返回第一条结果
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def findOne(query: js.Object, projection: js.Object): js.Object = js.native
   /**
   	 * 
@@ -202,16 +152,6 @@ class Class_MongoCollection () extends Class__object {
   	 * 
   	 */
   def runCommand(cmd: java.lang.String): js.Object = js.native
-  /**
-  	 * 
-  	 * @brief 执行数据库命令
-  	 * @param cmd 给定命令名称
-  	 * @param arg 给定命令参数选项
-  	 * @return 返回命令返回结果
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def runCommand(cmd: java.lang.String, arg: js.Object): js.Object = js.native
   /**
   	 * 
@@ -255,29 +195,7 @@ class Class_MongoCollection () extends Class__object {
   	 * 
   	 */
   def update(query: js.Object, document: js.Object, options: js.Object): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 根据给定的查询条件更新数据
-  	 * @param query 指定查询条件的对象
-  	 * @param document 指定要更新的数据
-  	 * @param upsert 数据不存在时，插入一条新数据，缺省为 false，不插入
-  	 * @param multi 当符合条件的数据多于一条时，更新所有数据，缺省为 false，只更新第一条
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def update(query: js.Object, document: js.Object, upsert: scala.Boolean): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 根据给定的查询条件更新数据
-  	 * @param query 指定查询条件的对象
-  	 * @param document 指定要更新的数据
-  	 * @param upsert 数据不存在时，插入一条新数据，缺省为 false，不插入
-  	 * @param multi 当符合条件的数据多于一条时，更新所有数据，缺省为 false，只更新第一条
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def update(query: js.Object, document: js.Object, upsert: scala.Boolean, multi: scala.Boolean): scala.Unit = js.native
 }
 

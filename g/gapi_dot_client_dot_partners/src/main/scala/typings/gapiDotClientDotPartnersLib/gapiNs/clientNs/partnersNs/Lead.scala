@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Lead extends js.Object {
   /** The AdWords Customer ID of the lead. */
   var adwordsCustomerId: js.UndefOr[java.lang.String] = js.undefined
@@ -24,10 +23,10 @@ trait Lead extends js.Object {
   /** ID of the lead. */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Language code of the lead's language preference, as defined by
-               * <a href="https://tools.ietf.org/html/bcp47">BCP 47</a>
-               * (IETF BCP 47, "Tags for Identifying Languages").
-               */
+    * Language code of the lead's language preference, as defined by
+    * <a href="https://tools.ietf.org/html/bcp47">BCP 47</a>
+    * (IETF BCP 47, "Tags for Identifying Languages").
+    */
   var languageCode: js.UndefOr[java.lang.String] = js.undefined
   /** Whether or not the lead signed up for marketing emails */
   var marketingOptIn: js.UndefOr[scala.Boolean] = js.undefined

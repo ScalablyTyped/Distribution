@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MultipartUploadCopySourceData extends js.Object {
    // data copy start byte offset, e.g: 0
   var endOffset: scala.Double

@@ -14,6 +14,6 @@ object libComponentsPickersPeoplePickerPeoplePickerModMembers extends js.Object 
   def createGenericItem(
     name: java.lang.String,
     currentValidationState: officeDashUiDashFabricDashReactLib.libComponentsPickersBasePickerDotTypesMod.ValidationState
-  ): IGenericItem with officeDashUiDashFabricDashReactLib.Anon_Key_902091276 = js.native
+  ): IGenericItem with officeDashUiDashFabricDashReactLib.Anon_Key_2068182360 = js.native
 }
 

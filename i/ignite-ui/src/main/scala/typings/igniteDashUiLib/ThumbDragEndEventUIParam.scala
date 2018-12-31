@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThumbDragEndEventUIParam extends js.Object {
   /**
   	 * Gets which scrollbar thumb is being used - horizontal(true) or vertical(false).

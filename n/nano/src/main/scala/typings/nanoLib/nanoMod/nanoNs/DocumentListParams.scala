@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // http://docs.couchdb.org/en/latest/api/database/bulk-api.html#get--db-_all_docs
-
 trait DocumentListParams extends js.Object {
   // Includes conflicts information in response. Ignored if include_docs isn’t true. Default is false.
   var conflicts: js.UndefOr[scala.Boolean] = js.undefined

@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "react-swipe"
-version := "5.0-dt-20180806Z-4793f2"
+version := "5.0-dt-20180806Z-201f27"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "csstype" % "2.5.8-28635b",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-3109dd",
-  "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-b38950",
-  "org.scalablytyped" %%% "std" % "3.2.2-669a73",
-  "org.scalablytyped" %%% "swipe" % "2.0-dt-20180214Z-cac843")
+  "org.scalablytyped" %%% "csstype" % "2.5.8-a13970",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-89199d",
+  "org.scalablytyped" %%% "react" % "16.7-dt-20181220Z-3dff88",
+  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff",
+  "org.scalablytyped" %%% "swipe" % "2.0-dt-20180214Z-c1a6b7")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDetailsRowStyles extends js.Object {
   var cell: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   var cellMeasurer: atUifabricMergeDashStylesLib.libIStyleMod.IStyle

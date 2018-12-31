@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AjaxDataRequestColumn extends js.Object {
   var data: java.lang.String | scala.Double
   var name: java.lang.String

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Simple object holding the data for a location update.
- */
-
+  * Simple object holding the data for a location update.
+  */
 trait LocationCoordinates extends js.Object {
   /**
   	 * Accuracy of the location update, in meters.

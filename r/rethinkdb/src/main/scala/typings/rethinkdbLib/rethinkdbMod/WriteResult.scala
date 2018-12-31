@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WriteResult extends js.Object {
   var deleted: scala.Double
   var errors: scala.Double

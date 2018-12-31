@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FastSimplexNoise extends js.Object {
   val amplitude: scala.Double
   val frequency: scala.Double

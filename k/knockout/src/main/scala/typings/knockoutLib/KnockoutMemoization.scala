@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KnockoutMemoization extends js.Object {
   def memoize(callback: js.Function0[java.lang.String]): java.lang.String
   def parseMemoText(memoText: java.lang.String): java.lang.String

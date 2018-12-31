@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EllipsoidPrimitive extends js.Object {
   var center: Cartesian3
   var debugShowBoundingVolume: scala.Boolean

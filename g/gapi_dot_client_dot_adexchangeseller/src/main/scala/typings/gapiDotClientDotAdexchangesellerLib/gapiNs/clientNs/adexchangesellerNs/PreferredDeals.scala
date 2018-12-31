@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PreferredDeals extends js.Object {
   /** The preferred deals returned in this list response. */
   var items: js.UndefOr[js.Array[PreferredDeal]] = js.undefined

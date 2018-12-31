@@ -13,9 +13,9 @@ abstract class PlatformDiagnosticsAndUsageDataSettings () extends js.Object
 @js.native
 object PlatformDiagnosticsAndUsageDataSettings extends js.Object {
   var addEventListener: js.Any = js.native
-   /* unmapped type */var canCollectDiagnostics: js.Any = js.native
-   /* unmapped type */var collectionLevel: js.Any = js.native
-   /* unmapped type */var oncollectionlevelchanged: js.Any = js.native
-   /* unmapped type */var removeEventListener: js.Any = js.native
+   /* unmapped type */ var canCollectDiagnostics: js.Any = js.native
+   /* unmapped type */ var collectionLevel: js.Any = js.native
+   /* unmapped type */ var oncollectionlevelchanged: js.Any = js.native
+   /* unmapped type */ var removeEventListener: js.Any = js.native
 }
 

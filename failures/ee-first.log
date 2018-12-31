@@ -1,6 +1,0 @@
-[debug] PhaseRunner.scala:85 Failure, [ee-first => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ee-first/index.d.ts): Parse error at 27.33 '']'' expected but '...' found] [id => ee-first, phase => typescript] 
-[warn ] PhaseRunner.scala:67 Failed because of, [ee-first => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ee-first/index.d.ts): Parse error at 27.33 '']'' expected but '...' found] [id => ee-first, phase => typescript] 
-[debug] PhaseRunner.scala:85 Failure, [ee-first => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ee-first/index.d.ts): Parse error at 27.33 '']'' expected but '...' found] [id => ee-first, phase => typescript] 
-[debug] PhaseRunner.scala:85 Failure, [ee-first => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ee-first/index.d.ts): Parse error at 27.33 '']'' expected but '...' found] [id => ee-first, phase => scala.js] 
-[debug] PhaseRunner.scala:85 Failure, [ee-first => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ee-first/index.d.ts): Parse error at 27.33 '']'' expected but '...' found] [id => ee-first, phase => build] 
-[debug] PhaseRunner.scala:85 Failure, [ee-first => InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/ee-first/index.d.ts): Parse error at 27.33 '']'' expected but '...' found] [id => ee-first, phase => publish] 

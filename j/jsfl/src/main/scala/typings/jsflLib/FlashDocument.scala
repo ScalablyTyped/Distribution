@@ -79,21 +79,15 @@ trait FlashDocument extends js.Object {
   def addNewLine(startPoint: FlashPoint, endpoint: FlashPoint): scala.Unit = js.native
    // Adds a new path between two points.
   def addNewOval(boundingRectangle: FlashRectangle): scala.Unit = js.native
-   // Adds a new path between two points.
   def addNewOval(boundingRectangle: FlashRectangle, bSuppressFill: scala.Boolean): scala.Unit = js.native
-   // Adds a new path between two points.
   def addNewOval(boundingRectangle: FlashRectangle, bSuppressFill: scala.Boolean, bSuppressStroke: scala.Boolean): scala.Unit = js.native
    // Adds a new Oval object in the specified
   def addNewPrimitiveOval(boundingRectangle: FlashRectangle): scala.Unit = js.native
-   // Adds a new Oval object in the specified
   def addNewPrimitiveOval(boundingRectangle: FlashRectangle, bSpupressFill: scala.Boolean): scala.Unit = js.native
-   // Adds a new Oval object in the specified
   def addNewPrimitiveOval(boundingRectangle: FlashRectangle, bSpupressFill: scala.Boolean, bSuppressStroke: scala.Boolean): scala.Unit = js.native
    // Adds a new rectangle or rounded rectangle,
   def addNewPrimitiveRectangle(boundingRectangle: FlashRectangle, roundness: scala.Double): js.Any = js.native
-   // Adds a new rectangle or rounded rectangle,
   def addNewPrimitiveRectangle(boundingRectangle: FlashRectangle, roundness: scala.Double, bSuppressFill: scala.Boolean): js.Any = js.native
-   // Adds a new rectangle or rounded rectangle,
   def addNewPrimitiveRectangle(
     boundingRectangle: FlashRectangle,
     roundness: scala.Double,
@@ -102,7 +96,6 @@ trait FlashDocument extends js.Object {
   ): js.Any = js.native
    // Adds a new rectangle or rounded rectangle,
   def addNewPublishProfile(): scala.Unit = js.native
-   // Adds a new rectangle or rounded rectangle,
   def addNewPublishProfile(profileName: java.lang.String): scala.Unit = js.native
   def addNewRectangle(boundingRectangle: FlashRectangle, roundness: scala.Double): js.Any = js.native
   def addNewRectangle(boundingRectangle: FlashRectangle, roundness: scala.Double, bSuppressFill: scala.Boolean): js.Any = js.native
@@ -115,11 +108,9 @@ trait FlashDocument extends js.Object {
   def addNewScene(name: java.lang.String): scala.Boolean = js.native
    // Adds a new scene (Timeline object) as the next
   def addNewText(boundingRectangle: FlashRectangle): scala.Unit = js.native
-   // Adds a new scene (Timeline object) as the next
   def addNewText(boundingRectangle: FlashRectangle, text: java.lang.String): scala.Unit = js.native
    // Inserts a new empty text field.
   def align(alignmode: java.lang.String): js.Any = js.native
-   // Inserts a new empty text field.
   def align(alignmode: java.lang.String, bUseDocumentBounds: scala.Boolean): js.Any = js.native
    // Aligns the selection.
   def allowScreens(): scala.Unit = js.native
@@ -146,11 +137,9 @@ trait FlashDocument extends js.Object {
   def clipCut(): scala.Unit = js.native
   /** Pastes the contents of the Clipboard into the document. */
   def clipPaste(): scala.Unit = js.native
-  /** Pastes the contents of the Clipboard into the document. */
   def clipPaste(bInPlace: scala.Boolean): scala.Unit = js.native
   /** Closes the specified document. */
   def close(): scala.Unit = js.native
-  /** Closes the specified document. */
   def close(bPromptToSaveChanges: scala.Boolean): scala.Unit = js.native
   /** Converts lines to fills on the selected objects. */
   def convertLinesToFills(): scala.Unit = js.native
@@ -160,7 +149,6 @@ trait FlashDocument extends js.Object {
   def crop(): scala.Unit = js.native
   /** Method; Invokes the Debug Movie command on the document. */
   def debugMovie(): scala.Unit = js.native
-  /** Method; Invokes the Debug Movie command on the document. */
   def debugMovie(abortIfErrorsExist: scala.Boolean): scala.Unit = js.native
   /** Deletes the envelope (bounding box that */
   def deleteEnvelope(): scala.Boolean = js.native
@@ -178,7 +166,6 @@ trait FlashDocument extends js.Object {
   def disableOtherFilters(enabledFilterIndex: scala.Double): scala.Unit = js.native
   /** Distributes the selection. */
   def distribute(distributemode: java.lang.String): scala.Unit = js.native
-  /** Distributes the selection. */
   def distribute(distributemode: java.lang.String, bUseDocumentBounds: scala.Boolean): scala.Unit = js.native
   /** Performs a distribute-to-layers operation on the */
   def distributeToLayers(): scala.Unit = js.native
@@ -186,7 +173,6 @@ trait FlashDocument extends js.Object {
   def documentHasData(name: java.lang.String): scala.Boolean = js.native
   /** Duplicates the currently active profile and gives */
   def duplicatePublishProfile(): scala.Double = js.native
-  /** Duplicates the currently active profile and gives */
   def duplicatePublishProfile(profileName: java.lang.String): scala.Double = js.native
   /** Makes a copy of the currently selected scene, */
   def duplicateScene(): scala.Boolean = js.native
@@ -200,25 +186,20 @@ trait FlashDocument extends js.Object {
   def enableFilter(filterIndex: scala.Double): scala.Unit = js.native
   /** Switches the authoring tool into the editing mode */
   def enterEditMode(): scala.Unit = js.native
-  /** Switches the authoring tool into the editing mode */
   def enterEditMode(editMode: java.lang.String): scala.Unit = js.native
   /** Exits from symbol-editing mode and returns */
   def exitEditMode(): scala.Unit = js.native
   /** Exports the document as one or more PNG files. */
   def exportPNG(fileURI: java.lang.String): scala.Boolean = js.native
-  /** Exports the document as one or more PNG files. */
   def exportPNG(fileURI: java.lang.String, bCurrentPNGSettings: scala.Boolean): scala.Boolean = js.native
-  /** Exports the document as one or more PNG files. */
   def exportPNG(fileURI: java.lang.String, bCurrentPNGSettings: scala.Boolean, bCurrentFrame: scala.Boolean): scala.Boolean = js.native
   /** Exports the currently active profile to an XML */
   def exportPublishProfile(fileURI: java.lang.String): scala.Unit = js.native
   /** returns a string that specifies, in XML format, the specified profile. If you don't pass a value for profileName, the current profile is exported. */
   def exportPublishProfileString(): java.lang.String = js.native
-  /** returns a string that specifies, in XML format, the specified profile. If you don't pass a value for profileName, the current profile is exported. */
   def exportPublishProfileString(profileName: java.lang.String): java.lang.String = js.native
   /** Exports the document in the Flash SWF format. */
   def exportSWF(fileURI: java.lang.String): scala.Unit = js.native
-  /** Exports the document in the Flash SWF format. */
   def exportSWF(fileURI: java.lang.String, bCurrentSettings: scala.Boolean): scala.Unit = js.native
   /** Identical to retrieving the value of the To Stage */
   def getAlignToDocument(): scala.Boolean = js.native
@@ -226,11 +207,9 @@ trait FlashDocument extends js.Object {
   def getBlendMode(): java.lang.String = js.native
   /** Retrieves the fill object of the selected shape, or */
   def getCustomFill(): FlashFill = js.native
-  /** Retrieves the fill object of the selected shape, or */
   def getCustomFill(objectToFill: java.lang.String): FlashFill = js.native
   /** Returns the stroke object of the selected shape, */
   def getCustomStroke(): FlashStroke = js.native
-  /** Returns the stroke object of the selected shape, */
   def getCustomStroke(locationOfStroke: java.lang.String): FlashStroke = js.native
   /** Retrieves the value of the specified data. */
   def getDataFromDocument(name: java.lang.String): js.Any = js.native
@@ -238,9 +217,7 @@ trait FlashDocument extends js.Object {
   def getElementProperty(propertyName: java.lang.String): js.Any = js.native
   /** Gets a specified TextAttrs property of the*/
   def getElementTextAttr(attrName: java.lang.String): FlashTextAttrs = js.native
-  /** Gets a specified TextAttrs property of the*/
   def getElementTextAttr(attrName: java.lang.String, startIndex: scala.Double): FlashTextAttrs = js.native
-  /** Gets a specified TextAttrs property of the*/
   def getElementTextAttr(attrName: java.lang.String, startIndex: scala.Double, endIndex: scala.Double): FlashTextAttrs = js.native
   /** Returns an array that contains the list of filters*/
   def getFilters(): js.Array[FlashFilter] = js.native
@@ -254,9 +231,7 @@ trait FlashDocument extends js.Object {
   def getSelectionRect(): FlashRectangle = js.native
   /** Gets the currently selected text. */
   def getTextString(): java.lang.String = js.native
-  /** Gets the currently selected text. */
   def getTextString(startIndex: scala.Double): java.lang.String = js.native
-  /** Gets the currently selected text. */
   def getTextString(startIndex: scala.Double, endIndex: scala.Double): java.lang.String = js.native
   /** Retrieves the current Timeline object in the */
   def getTimeline(): FlashTimeline = js.native
@@ -266,7 +241,6 @@ trait FlashDocument extends js.Object {
   def group(): scala.Unit = js.native
   /** Imports a file into the document. */
   def importFile(fileURI: java.lang.String): scala.Unit = js.native
-  /** Imports a file into the document. */
   def importFile(fileURI: java.lang.String, importToLibrary: scala.Boolean): scala.Unit = js.native
   /** Imports a profile from a file. */
   def importPublishProfile(fileURI: java.lang.String): scala.Double = js.native
@@ -280,7 +254,6 @@ trait FlashDocument extends js.Object {
   def loadCuepointXML(uri: java.lang.String): js.Array[_] = js.native
   /** Makes the size of the selected objects the same. */
   def `match`(bWidth: scala.Boolean, bHeight: scala.Boolean): scala.Unit = js.native
-  /** Makes the size of the selected objects the same. */
   def `match`(bWidth: scala.Boolean, bHeight: scala.Boolean, bUseDocumentBounds: scala.Boolean): scala.Unit = js.native
   /** Performs a mouse click from the Selection tool. */
   def mouseClick(position: FlashPoint, bToggleSel: scala.Boolean, bShiftSel: scala.Boolean): scala.Unit = js.native
@@ -311,7 +284,6 @@ trait FlashDocument extends js.Object {
   def removeFilter(filterIndex: scala.Double): scala.Unit = js.native
   /** Renames the current profile.*/
   def renamePublishProfile(): scala.Boolean = js.native
-  /** Renames the current profile.*/
   def renamePublishProfile(profileNewName: java.lang.String): scala.Boolean = js.native
   /** Renames the currently selected scene in the */
   def renameScene(name: java.lang.String): scala.Boolean = js.native
@@ -331,21 +303,16 @@ trait FlashDocument extends js.Object {
   def rotate3DSelection(xyzCoordinate: FlashPoint3D, bGlobalTransform: scala.Boolean): scala.Unit = js.native
   /** Rotates the selection by a specified number of */
   def rotateSelection(angle: scala.Double): scala.Unit = js.native
-  /** Rotates the selection by a specified number of */
   def rotateSelection(angle: scala.Double, rotationPoint: java.lang.String): scala.Unit = js.native
   /** Saves the document in its default location;*/
   def save(): scala.Boolean = js.native
-  /** Saves the document in its default location;*/
   def save(bOkToSaveAs: scala.Boolean): scala.Boolean = js.native
   /** saves and compacts the file. This method is equivalent to selecting File > Save and Compact. */
   def saveAndCompact(): scala.Boolean = js.native
-  /** saves and compacts the file. This method is equivalent to selecting File > Save and Compact. */
   def saveAndCompact(bOkToSaveAs: scala.Boolean): scala.Boolean = js.native
   //saveAsVersion(); // Saves a version of the specified document to the
   /** Scales the selection by a specified amount;*/
   def scaleSelection(xScale: scala.Double, yScale: scala.Double): scala.Unit = js.native
-  //saveAsVersion(); // Saves a version of the specified document to the
-  /** Scales the selection by a specified amount;*/
   def scaleSelection(xScale: scala.Double, yScale: scala.Double, whichCorner: java.lang.String): scala.Unit = js.native
   /** Selects all items on the Stage; equivalent to*/
   def selectAll(): scala.Unit = js.native
@@ -353,7 +320,6 @@ trait FlashDocument extends js.Object {
   def selectNone(): scala.Unit = js.native
   /** Sets the preferences for document.align(),*/
   def setAlignToDocument(): scala.Unit = js.native
-  /** Sets the preferences for document.align(),*/
   def setAlignToDocument(bToStage: scala.Boolean): scala.Unit = js.native
   /** Sets the blending mode for the selected objects.*/
   def setBlendMode(mode: java.lang.String): scala.Unit = js.native
@@ -365,9 +331,7 @@ trait FlashDocument extends js.Object {
   def setElementProperty(property: java.lang.String, value: scala.Double): scala.Unit = js.native
   /** Sets the specified TextAttrs property of the */
   def setElementTextAttr(attrName: java.lang.String, attrValue: FlashTextAttrs): scala.Boolean = js.native
-  /** Sets the specified TextAttrs property of the */
   def setElementTextAttr(attrName: java.lang.String, attrValue: FlashTextAttrs, startIndex: scala.Double): scala.Boolean = js.native
-  /** Sets the specified TextAttrs property of the */
   def setElementTextAttr(
     attrName: java.lang.String,
     attrValue: FlashTextAttrs,
@@ -398,13 +362,10 @@ trait FlashDocument extends js.Object {
   def setRectangleObjectProperty(propertyName: java.lang.String, value: js.Any): scala.Unit = js.native
   /** Moves and resizes the selection in a single */
   def setSelectionBounds(boundingRectangle: FlashRectangle): scala.Unit = js.native
-  /** Moves and resizes the selection in a single */
   def setSelectionBounds(boundingRectangle: FlashRectangle, bContactSensitiveSelection: scala.Boolean): scala.Unit = js.native
   /** Draws a rectangular selection marquee relative */
   def setSelectionRect(rect: FlashRectangle): scala.Unit = js.native
-  /** Draws a rectangular selection marquee relative */
   def setSelectionRect(rect: FlashRectangle, bReplaceCurrentSelection: scala.Boolean): scala.Unit = js.native
-  /** Draws a rectangular selection marquee relative */
   def setSelectionRect(
     rect: FlashRectangle,
     bReplaceCurrentSelection: scala.Boolean,
@@ -427,21 +388,17 @@ trait FlashDocument extends js.Object {
   def setTextSelection(startIndex: scala.Double, endIndex: scala.Double): scala.Boolean = js.native
   /** Inserts a string of text. */
   def setTextString(text: java.lang.String): scala.Boolean = js.native
-  /** Inserts a string of text. */
   def setTextString(text: java.lang.String, startIndex: scala.Double): scala.Boolean = js.native
-  /** Inserts a string of text. */
   def setTextString(text: java.lang.String, startIndex: scala.Double, endIndex: scala.Double): scala.Boolean = js.native
   /** Moves the transformation point of the current */
   def setTransformationPoint(transformationPoint: FlashPoint): scala.Unit = js.native
   /** Skews the selection by a specified amount. */
   def skewSelection(xSkew: scala.Double, ySkew: scala.Double): scala.Unit = js.native
-  /** Skews the selection by a specified amount. */
   def skewSelection(xSkew: scala.Double, ySkew: scala.Double, whichEdge: java.lang.String): scala.Unit = js.native
   /** Smooths the curve of each selected fill outline or */
   def smoothSelection(): scala.Unit = js.native
   /** Spaces the objects in the selection evenly. */
   def space(direction: java.lang.String): scala.Unit = js.native
-  /** Spaces the objects in the selection evenly. */
   def space(direction: java.lang.String, bUseDocumentBounds: scala.Boolean): scala.Unit = js.native
   /** Straightens the currently selected strokes; */
   def straightenSelection(): scala.Unit = js.native

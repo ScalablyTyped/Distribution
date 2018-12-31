@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Acceleration extends js.Object {
   var timestamp: scala.Double
   var x: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PageletOption extends js.Object {
   var compiled: js.UndefOr[scala.Boolean] = js.undefined
   var container: js.UndefOr[java.lang.String] = js.undefined

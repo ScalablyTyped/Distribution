@@ -12,10 +12,20 @@ object reduxDashRouterModMembers extends js.Object {
   def go(args: js.Object*): reduxDashRouterLib.libActionCreatorsMod.ReduxRouterAction = js.native
   def goBack(args: js.Object*): reduxDashRouterLib.libActionCreatorsMod.ReduxRouterAction = js.native
   def goForward(args: js.Object*): reduxDashRouterLib.libActionCreatorsMod.ReduxRouterAction = js.native
-  def historyAPI(method: js.Any): js.Function1[/* repeated */js.Object, reduxDashRouterLib.libActionCreatorsMod.ReduxRouterAction] = js.native
+  def historyAPI(method: js.Any): js.Function1[
+    /* repeated */ js.Object, 
+    reduxDashRouterLib.libActionCreatorsMod.ReduxRouterAction
+  ] = js.native
   def isActive(pathname: historyLib.historyMod.Pathname): scala.Boolean = js.native
-  def isActive(pathname: historyLib.historyMod.Pathname, query: js.Any): scala.Boolean = js.native
-  def isActive(pathname: historyLib.historyMod.Pathname, query: js.Any, indexOnly: scala.Boolean): scala.Boolean = js.native
+  def isActive(
+    pathname: historyLib.historyMod.Pathname,
+    query: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify H.Query */ js.Any
+  ): scala.Boolean = js.native
+  def isActive(
+    pathname: historyLib.historyMod.Pathname,
+    query: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify H.Query */ js.Any,
+    indexOnly: scala.Boolean
+  ): scala.Boolean = js.native
   def push(args: js.Object*): reduxDashRouterLib.libActionCreatorsMod.ReduxRouterAction = js.native
   def pushState(args: js.Object*): reduxDashRouterLib.libActionCreatorsMod.ReduxRouterAction = js.native
   def replace(args: js.Object*): reduxDashRouterLib.libActionCreatorsMod.ReduxRouterAction = js.native

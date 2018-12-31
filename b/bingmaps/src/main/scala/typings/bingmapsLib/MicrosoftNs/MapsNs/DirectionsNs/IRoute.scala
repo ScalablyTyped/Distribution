@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRoute extends js.Object {
   /** The legs of the route. Each route leg represents the route between two waypoints. */
   var routeLegs: js.Array[IRouteLeg]

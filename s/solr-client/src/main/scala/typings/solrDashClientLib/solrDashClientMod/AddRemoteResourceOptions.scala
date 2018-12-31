@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AddRemoteResourceOptions extends js.Object {
   var contentType: java.lang.String
   var format: java.lang.String

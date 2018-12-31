@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EllipsoidGeodesic extends js.Object {
   var end: Cartographic
   var endHeading: scala.Double

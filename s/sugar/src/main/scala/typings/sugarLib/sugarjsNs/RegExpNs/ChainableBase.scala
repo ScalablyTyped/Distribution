@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChainableBase[RawValue] extends js.Object {
   var raw: RawValue
   def addFlags(flags: java.lang.String): sugarLib.sugarjsNs.SugarDefaultChainable[stdLib.RegExp]

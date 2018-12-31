@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var encoding: js.UndefOr[java.lang.String] = js.undefined
   var formTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined

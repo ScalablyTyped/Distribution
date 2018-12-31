@@ -11,13 +11,13 @@ class WrappedLabel ()
   extends plottableLib.buildSrcComponentsLabelMod.Label {
   var _maxLines: scala.Double = js.native
   /**
-       * Get the label max number of wrapped lines.
-       */
+    * Get the label max number of wrapped lines.
+    */
   def maxLines(): scala.Double = js.native
   /**
-       * Set the label's max number of wrapped lines.
-       * @param maxLines
-       */
+    * Set the label's max number of wrapped lines.
+    * @param maxLines
+    */
   def maxLines(maxLines: scala.Double): this.type = js.native
 }
 

@@ -46,7 +46,7 @@ object joiModMembers extends js.Object {
   def func(): FunctionSchema = js.native
   def invalid(value: js.Any, values: js.Any*): Schema = js.native
   def invalid(values: js.Array[_]): Schema = js.native
-  def isRef(ref: js.Any): /* is Reference */scala.Boolean = js.native
+  def isRef(ref: js.Any): /* is joi.joi.Reference */ scala.Boolean = js.native
   def label(name: java.lang.String): Schema = js.native
   def `lazy`(cb: js.Function0[Schema]): LazySchema = js.native
   def `lazy`(cb: js.Function0[Schema], options: LazyOptions): LazySchema = js.native

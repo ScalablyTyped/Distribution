@@ -6,10 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * This class handles animations in a Diagram.  Each Diagram has one, the Diagram.animationManager.
-    */
+  * This class handles animations in a Diagram.  Each Diagram has one, the Diagram.animationManager.
+  */
 @JSImport("go", "AnimationManager")
 @js.native
+/**You do not normally need to create an instance of this class because one already exists as the Diagram.animationManager, which you can modify.*/
 class AnimationManager ()
   extends goLib.goMod.goNs.AnimationManager {
   /**Gets or sets the duration for animations, in milliseconds. The default value is 600 milliseconds.*/
@@ -28,8 +29,8 @@ class AnimationManager ()
   /* CompleteClass */
   override var isTicking: scala.Boolean = js.native
   /**
-          * Stops any running animation and updates the Diagram to its final state.
-          */
+    * Stops any running animation and updates the Diagram to its final state.
+    */
   /* CompleteClass */
   override def stopAnimation(): scala.Unit = js.native
 }

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICursorTool extends ITool {
   var direction: java.lang.String
   var dragging: scala.Double

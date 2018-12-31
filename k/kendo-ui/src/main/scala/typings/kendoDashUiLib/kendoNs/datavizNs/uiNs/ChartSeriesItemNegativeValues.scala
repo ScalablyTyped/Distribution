@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartSeriesItemNegativeValues extends js.Object {
   var color: js.UndefOr[java.lang.String] = js.undefined
   var visible: js.UndefOr[scala.Boolean] = js.undefined

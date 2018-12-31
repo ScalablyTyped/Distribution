@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object remoteDashReduxDashDevtoolsModMembers extends js.Object {
   def composeWithDevTools(): js.Function1[
-    /* repeated */reduxLib.reduxMod.StoreEnhancer[js.Object, js.Object], 
+    /* repeated */ reduxLib.reduxMod.StoreEnhancer[js.Object, js.Object], 
     reduxLib.reduxMod.StoreEnhancer[js.Object, js.Object]
   ] = js.native
   def composeWithDevTools(funcs: (reduxLib.reduxMod.StoreEnhancer[js.Object, js.Object])*): reduxLib.reduxMod.StoreEnhancer[js.Object, js.Object] = js.native
   def composeWithDevTools(options: RemoteReduxDevToolsOptions): js.Function1[
-    /* repeated */reduxLib.reduxMod.StoreEnhancer[js.Object, js.Object], 
+    /* repeated */ reduxLib.reduxMod.StoreEnhancer[js.Object, js.Object], 
     reduxLib.reduxMod.StoreEnhancer[js.Object, js.Object]
   ] = js.native
 }

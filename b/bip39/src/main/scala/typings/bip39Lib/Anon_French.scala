@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_French extends js.Object {
   var EN: js.Array[java.lang.String]
   var JA: js.Array[java.lang.String]

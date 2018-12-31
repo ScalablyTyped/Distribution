@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * MODULES
- */
+  * MODULES
+  */
 @JSImport("string-template", JSImport.Namespace)
 @js.native
 object stringDashTemplateMod

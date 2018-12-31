@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridLayerOptions extends js.Object {
   var attribution: js.UndefOr[java.lang.String] = js.undefined
   var bounds: js.UndefOr[LatLngBoundsExpression] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IModStatFieldExpression extends js.Object {
   /** Checks whether the value of the field is Approved - same as ModStatId.EqualTo(0) */
   def IsApproved(): IExpression

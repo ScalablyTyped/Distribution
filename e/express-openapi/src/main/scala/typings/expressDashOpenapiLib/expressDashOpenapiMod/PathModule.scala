@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PathModule extends js.Object {
   var delete: js.UndefOr[Operation] = js.undefined
   var get: js.UndefOr[Operation] = js.undefined

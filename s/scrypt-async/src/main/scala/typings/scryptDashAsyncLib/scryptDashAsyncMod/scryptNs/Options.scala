@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var N: js.UndefOr[scala.Double] = js.undefined
   var dkLen: scala.Double

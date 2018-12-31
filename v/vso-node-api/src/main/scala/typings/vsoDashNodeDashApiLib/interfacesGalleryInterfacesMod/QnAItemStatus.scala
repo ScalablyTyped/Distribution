@@ -16,15 +16,15 @@ object QnAItemStatus extends js.Object {
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.QnAItemStatus
   
   /**
-       * The PublisherCreated flag indicates whether the item has been created by extension publisher.
-       */
+    * The PublisherCreated flag indicates whether the item has been created by extension publisher.
+    */
   @js.native
   sealed trait PublisherCreated
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.QnAItemStatus
   
   /**
-       * The UserEditable flag indicates whether the item is editable by the logged in user.
-       */
+    * The UserEditable flag indicates whether the item is editable by the logged in user.
+    */
   @js.native
   sealed trait UserEditable
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.QnAItemStatus

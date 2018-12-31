@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MSNavigatorDoNotTrack extends js.Object {
   def confirmSiteSpecificTrackingException(args: ConfirmSiteSpecificExceptionsInformation): scala.Boolean
   def confirmWebWideTrackingException(args: ExceptionInformation): scala.Boolean

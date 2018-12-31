@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDropZone extends IDropTarget {
   /** [Method] Returns a custom data object associated with the DOM node that is the target of the event
   		* @param e Event The event

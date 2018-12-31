@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait CalendarType extends js.Object
 
 /**
-       * The types of Calendar
-      */
+  * The types of Calendar
+  */
 @JSGlobal("sap.ui.core.CalendarType")
 @js.native
 object CalendarType extends js.Object {

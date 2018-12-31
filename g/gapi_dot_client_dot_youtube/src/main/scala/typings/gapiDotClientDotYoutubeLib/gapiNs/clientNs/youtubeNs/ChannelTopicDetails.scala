@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChannelTopicDetails extends js.Object {
   /** A list of Wikipedia URLs that describe the channel's content. */
   var topicCategories: js.UndefOr[js.Array[java.lang.String]] = js.undefined

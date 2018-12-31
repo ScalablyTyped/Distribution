@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModMoveDJ extends js.Object {
   var index: scala.Double
   var moderator: java.lang.String

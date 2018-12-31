@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SnapshotSummary extends js.Object {
   var added: scala.Double
   var didUpdate: scala.Boolean

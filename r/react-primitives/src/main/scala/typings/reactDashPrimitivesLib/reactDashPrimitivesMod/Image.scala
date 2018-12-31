@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Dropped TsTypeConstructor() */ @JSImport("react-primitives", "Image")
+- Dropped new Some()Some((args  : ...any))Some(: react-native.react-native.NativeMethodsMixin) */ @JSImport("react-primitives", "Image")
 @js.native
 class Image ()
   extends reactDashNativeLib.reactDashNativeMod.Image
 
 /* RemoveDifficultInheritance: 
-- Dropped TsTypeConstructor() */ @JSImport("react-primitives", "Image")
+- Dropped new Some()Some((args  : ...any))Some(: react-native.react-native.NativeMethodsMixin) */ @JSImport("react-primitives", "Image")
 @js.native
 object Image extends js.Object {
   var abortPrefetch: js.UndefOr[js.Function1[/* requestId */ scala.Double, scala.Unit]] = js.native
@@ -34,8 +34,8 @@ object Image extends js.Object {
   ): js.Any = js.native
   def prefetch(url: java.lang.String): js.Any = js.native
   /**
-       * @see https://facebook.github.io/react-native/docs/image.html#resolveassetsource
-       */
+    * @see https://facebook.github.io/react-native/docs/image.html#resolveassetsource
+    */
   def resolveAssetSource(source: reactDashNativeLib.reactDashNativeMod.ImageSourcePropType): reactDashNativeLib.reactDashNativeMod.ImageResolvedAssetSource = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DropdownMenuProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libDropdownMenuMod.DropdownMenu] {
   var labelledBy: js.UndefOr[java.lang.String | scala.Double] = js.undefined

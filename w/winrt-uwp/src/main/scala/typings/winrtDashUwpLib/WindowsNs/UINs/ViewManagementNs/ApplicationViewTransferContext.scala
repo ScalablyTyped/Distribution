@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.UI.ViewManagement.ApplicationViewTransferContext")
 @js.native
 abstract class ApplicationViewTransferContext () extends js.Object {
-   /* unmapped type */var viewId: js.Any = js.native
+   /* unmapped type */ var viewId: js.Any = js.native
 }
 
 @JSGlobal("Windows.UI.ViewManagement.ApplicationViewTransferContext")

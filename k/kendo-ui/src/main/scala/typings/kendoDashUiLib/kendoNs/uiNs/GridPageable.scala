@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridPageable extends js.Object {
   var alwaysVisible: js.UndefOr[scala.Boolean] = js.undefined
   var buttonCount: js.UndefOr[scala.Double] = js.undefined

@@ -12,13 +12,13 @@ class TypeCheckCompiler protected () extends js.Object {
   var options: js.Any = js.native
   var reflector: js.Any = js.native
   /**
-       * Important notes:
-       * - This must not produce new `import` statements, but only refer to types outside
-       *   of the file via the variables provided via externalReferenceVars.
-       *   This allows Typescript to reuse the old program's structure as no imports have changed.
-       * - This must not produce any exports, as this would pollute the .d.ts file
-       *   and also violate the point above.
-       */
+    * Important notes:
+    * - This must not produce new `import` statements, but only refer to types outside
+    *   of the file via the variables provided via externalReferenceVars.
+    *   This allows Typescript to reuse the old program's structure as no imports have changed.
+    * - This must not produce any exports, as this would pollute the .d.ts file
+    *   and also violate the point above.
+    */
   def compileComponent(
     componentId: java.lang.String,
     component: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileDirectiveMetadata,

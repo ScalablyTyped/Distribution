@@ -241,19 +241,11 @@ class HTMLDocument protected () extends js.Object {
   def createRange(): IHTMLDOMRange = js.native
   def createRenderStyle(v: java.lang.String): IHTMLRenderStyle = js.native
   /**
-           * @param bstrHref [bstrHref='']
-           * @param lIndex [lIndex=-1]
-           */
+    * @param bstrHref [bstrHref='']
+    * @param lIndex [lIndex=-1]
+    */
   def createStyleSheet(): IHTMLStyleSheet = js.native
-  /**
-           * @param bstrHref [bstrHref='']
-           * @param lIndex [lIndex=-1]
-           */
   def createStyleSheet(bstrHref: java.lang.String): IHTMLStyleSheet = js.native
-  /**
-           * @param bstrHref [bstrHref='']
-           * @param lIndex [lIndex=-1]
-           */
   def createStyleSheet(bstrHref: java.lang.String, lIndex: scala.Double): IHTMLStyleSheet = js.native
   def createTextNode(text: java.lang.String): IHTMLDOMNode = js.native
   def createTreeWalker(
@@ -273,9 +265,7 @@ class HTMLDocument protected () extends js.Object {
   def embeds(name: js.Any, index: js.Any): js.Any = js.native
   /** @param showUI [showUI=false] */
   def execCommand(cmdID: java.lang.String): scala.Boolean = js.native
-  /** @param showUI [showUI=false] */
   def execCommand(cmdID: java.lang.String, showUI: scala.Boolean): scala.Boolean = js.native
-  /** @param showUI [showUI=false] */
   def execCommand(cmdID: java.lang.String, showUI: scala.Boolean, value: js.Any): scala.Boolean = js.native
   def execCommandShowHelp(cmdID: java.lang.String): scala.Boolean = js.native
   def focus(): scala.Unit = js.native
@@ -322,13 +312,9 @@ class HTMLDocument protected () extends js.Object {
   def normalize(): scala.Unit = js.native
   /** @param url [url='text/html'] */
   def open(): js.Any = js.native
-  /** @param url [url='text/html'] */
   def open(url: java.lang.String): js.Any = js.native
-  /** @param url [url='text/html'] */
   def open(url: java.lang.String, name: js.Any): js.Any = js.native
-  /** @param url [url='text/html'] */
   def open(url: java.lang.String, name: js.Any, features: js.Any): js.Any = js.native
-  /** @param url [url='text/html'] */
   def open(url: java.lang.String, name: js.Any, features: js.Any, replace: js.Any): js.Any = js.native
   def parentWindow(pvarIndex: js.Any): js.Any = js.native
   def plugins(): js.Any = js.native
@@ -344,14 +330,12 @@ class HTMLDocument protected () extends js.Object {
   def querySelectorAll(v: java.lang.String): IHTMLDOMChildrenCollection = js.native
   /** @param fForce [fForce=false] */
   def recalc(): scala.Unit = js.native
-  /** @param fForce [fForce=false] */
   def recalc(fForce: scala.Boolean): scala.Unit = js.native
   def releaseCapture(): scala.Unit = js.native
   def removeChild(oldChild: IHTMLDOMNode): IHTMLDOMNode = js.native
   def removeEventListener(`type`: java.lang.String, listener: js.Any, useCapture: scala.Boolean): scala.Unit = js.native
   /** @param fDeep [fDeep=false] */
   def removeNode(): IHTMLDOMNode = js.native
-  /** @param fDeep [fDeep=false] */
   def removeNode(fDeep: scala.Boolean): IHTMLDOMNode = js.native
   def replaceChild(newChild: IHTMLDOMNode, oldChild: IHTMLDOMNode): IHTMLDOMNode = js.native
   def replaceNode(replacement: IHTMLDOMNode): IHTMLDOMNode = js.native

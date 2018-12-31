@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPersonFieldsPrettyPrint extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -25,37 +24,37 @@ trait Anon_AccesstokenPersonFieldsPrettyPrint extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * &#42;&#42;Required.&#42;&#42; A field mask to restrict which fields on the person are
-                   * returned. Valid values are:
-                   *
-                   * &#42; addresses
-                   * &#42; ageRanges
-                   * &#42; biographies
-                   * &#42; birthdays
-                   * &#42; braggingRights
-                   * &#42; coverPhotos
-                   * &#42; emailAddresses
-                   * &#42; events
-                   * &#42; genders
-                   * &#42; imClients
-                   * &#42; interests
-                   * &#42; locales
-                   * &#42; memberships
-                   * &#42; metadata
-                   * &#42; names
-                   * &#42; nicknames
-                   * &#42; occupations
-                   * &#42; organizations
-                   * &#42; phoneNumbers
-                   * &#42; photos
-                   * &#42; relations
-                   * &#42; relationshipInterests
-                   * &#42; relationshipStatuses
-                   * &#42; residences
-                   * &#42; skills
-                   * &#42; taglines
-                   * &#42; urls
-                   */
+    * &#42;&#42;Required.&#42;&#42; A field mask to restrict which fields on the person are
+    * returned. Valid values are:
+    *
+    * &#42; addresses
+    * &#42; ageRanges
+    * &#42; biographies
+    * &#42; birthdays
+    * &#42; braggingRights
+    * &#42; coverPhotos
+    * &#42; emailAddresses
+    * &#42; events
+    * &#42; genders
+    * &#42; imClients
+    * &#42; interests
+    * &#42; locales
+    * &#42; memberships
+    * &#42; metadata
+    * &#42; names
+    * &#42; nicknames
+    * &#42; occupations
+    * &#42; organizations
+    * &#42; phoneNumbers
+    * &#42; photos
+    * &#42; relations
+    * &#42; relationshipInterests
+    * &#42; relationshipStatuses
+    * &#42; residences
+    * &#42; skills
+    * &#42; taglines
+    * &#42; urls
+    */
   var personFields: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined
@@ -64,21 +63,21 @@ trait Anon_AccesstokenPersonFieldsPrettyPrint extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * &#42;&#42;Required.&#42;&#42; Comma-separated list of person fields to be included in the
-                   * response. Each path should start with `person.`: for example,
-                   * `person.names` or `person.photos`.
-                   */
+    * &#42;&#42;Required.&#42;&#42; Comma-separated list of person fields to be included in the
+    * response. Each path should start with `person.`: for example,
+    * `person.names` or `person.photos`.
+    */
   var `requestMask.includeField`: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The resource name of the person to provide information about.
-                   *
-                   * - To get information about the authenticated user, specify `people/me`.
-                   * - To get information about a google account, specify
-                   * `people/`<var>account_id</var>.
-                   * - To get information about a contact, specify the resource name that
-                   * identifies the contact as returned by
-                   * [`people.connections.list`](/people/api/rest/v1/people.connections/list).
-                   */
+    * The resource name of the person to provide information about.
+    *
+    * - To get information about the authenticated user, specify `people/me`.
+    * - To get information about a google account, specify
+    * `people/`<var>account_id</var>.
+    * - To get information about a contact, specify the resource name that
+    * identifies the contact as returned by
+    * [`people.connections.list`](/people/api/rest/v1/people.connections/list).
+    */
   var resourceName: java.lang.String
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

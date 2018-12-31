@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Beacon extends js.Object {
   var accuracy: scala.Double
   var major: java.lang.String

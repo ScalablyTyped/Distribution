@@ -30,16 +30,16 @@ abstract class JumpListItem () extends js.Object {
 @js.native
 object JumpListItem extends js.Object {
   /**
-                   * Creates a jump list item that is an inert separator for a custom group within the app's jump list.
-                   * @return A jump list item that can be added to an app's jump list through the items property.
-                   */
+    * Creates a jump list item that is an inert separator for a custom group within the app's jump list.
+    * @return A jump list item that can be added to an app's jump list through the items property.
+    */
   def createSeparator(): winrtDashUwpLib.WindowsNs.UINs.StartScreenNs.JumpListItem = js.native
   /**
-                   * Creates a new jump list item for an app's jump list.
-                   * @param arguments String that specifies any command line arguments that should be passed onto the app when the jump list item is selected by a user.
-                   * @param displayName String that specifies a display name for the jump list item. If localization is desired, this string must be a ms-resource: scheme specified URI.
-                   * @return A jump list item with the specified parameters that can be added to an app's jump list through the items property.
-                   */
+    * Creates a new jump list item for an app's jump list.
+    * @param arguments String that specifies any command line arguments that should be passed onto the app when the jump list item is selected by a user.
+    * @param displayName String that specifies a display name for the jump list item. If localization is desired, this string must be a ms-resource: scheme specified URI.
+    * @return A jump list item with the specified parameters that can be added to an app's jump list through the items property.
+    */
   def createWithArguments(args: java.lang.String, displayName: java.lang.String): winrtDashUwpLib.WindowsNs.UINs.StartScreenNs.JumpListItem = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrderLineItemProduct extends js.Object {
   /** Brand of the item. */
   var brand: js.UndefOr[java.lang.String] = js.undefined
@@ -36,9 +35,9 @@ trait OrderLineItemProduct extends js.Object {
   /** The title of the product. */
   var title: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Variant attributes for the item. These are dimensions of the product, such as color, gender, material, pattern, and size. You can find a comprehensive
-               * list of variant attributes here.
-               */
+    * Variant attributes for the item. These are dimensions of the product, such as color, gender, material, pattern, and size. You can find a comprehensive
+    * list of variant attributes here.
+    */
   var variantAttributes: js.UndefOr[js.Array[OrderLineItemProductVariantAttribute]] = js.undefined
 }
 

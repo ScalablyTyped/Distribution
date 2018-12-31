@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Provides access to the current geographic location. */
 @JSGlobal("Windows.Devices.Geolocation.Geolocator")
 @js.native
+/** Initializes a new Geolocator object. */
 class Geolocator () extends js.Object {
   /** The accuracy level at which the Geolocator provides location updates. */
   var desiredAccuracy: PositionAccuracy = js.native
@@ -37,16 +38,16 @@ class Geolocator () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[Geolocator, StatusChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Starts an asynchronous operation to retrieve the current location of the device.
-                   * @return Provides methods for starting the asynchronous request for location data and handling its completion.
-                   */
+    * Starts an asynchronous operation to retrieve the current location of the device.
+    * @return Provides methods for starting the asynchronous request for location data and handling its completion.
+    */
   def getGeopositionAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[Geoposition] = js.native
   /**
-                   * Starts an asynchronous operation to retrieve the current location of the device.
-                   * @param maximumAge The maximum acceptable age of cached location data. A TimeSpan is a time period expressed in 100-nanosecond units.
-                   * @param timeout The timeout. A TimeSpan is a time period expressed in 100-nanosecond units.
-                   * @return Provides methods for starting the asynchronous request for location data and handling its completion.
-                   */
+    * Starts an asynchronous operation to retrieve the current location of the device.
+    * @param maximumAge The maximum acceptable age of cached location data. A TimeSpan is a time period expressed in 100-nanosecond units.
+    * @param timeout The timeout. A TimeSpan is a time period expressed in 100-nanosecond units.
+    * @return Provides methods for starting the asynchronous request for location data and handling its completion.
+    */
   def getGeopositionAsync(maximumAge: scala.Double, timeout: scala.Double): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[Geoposition] = js.native
   /** Raised when the location is updated. */
   def onpositionchanged(ev: PositionChangedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[Geolocator]): scala.Unit = js.native
@@ -70,22 +71,22 @@ class Geolocator () extends js.Object {
 @js.native
 object Geolocator extends js.Object {
   /**
-                   * Starts an asynchronous operation to retrieve the location history of the device.
-                   * @param startTime Represents the beginning of the time span for which positions are to be returned.
-                   * @return Positions (of type Geoposition ) that were collected during the specified time span.
-                   */
+    * Starts an asynchronous operation to retrieve the location history of the device.
+    * @param startTime Represents the beginning of the time span for which positions are to be returned.
+    * @return Positions (of type Geoposition ) that were collected during the specified time span.
+    */
   def getGeopositionHistoryAsync(startTime: stdLib.Date): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
   /**
-                   * Starts an asynchronous operation to retrieve the location history of the device.
-                   * @param startTime Represents the beginning of the time span for which positions are to be returned.
-                   * @param duration Represents the length of time after startTime for which positions are to be returned.
-                   * @return Positions (of type Geoposition ) that were collected during the specified time span.
-                   */
+    * Starts an asynchronous operation to retrieve the location history of the device.
+    * @param startTime Represents the beginning of the time span for which positions are to be returned.
+    * @param duration Represents the length of time after startTime for which positions are to be returned.
+    * @return Positions (of type Geoposition ) that were collected during the specified time span.
+    */
   def getGeopositionHistoryAsync(startTime: stdLib.Date, duration: scala.Double): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
   /**
-                   * Requests permission to access location data.
-                   * @return A GeolocationAccessStatus that indicates if permission to location data has been granted.
-                   */
+    * Requests permission to access location data.
+    * @return A GeolocationAccessStatus that indicates if permission to location data has been granted.
+    */
   def requestAccessAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.GeolocationAccessStatus] = js.native
 }
 

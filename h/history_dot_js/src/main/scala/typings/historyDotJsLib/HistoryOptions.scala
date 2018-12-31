@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HistoryOptions extends js.Object {
   var busyDelay: js.UndefOr[scala.Double] = js.undefined
   var debug: js.UndefOr[scala.Boolean] = js.undefined

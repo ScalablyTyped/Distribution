@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CellNamespace extends js.Object {
   var cellModel: js.UndefOr[
     org.scalablytyped.runtime.Instantiable2[

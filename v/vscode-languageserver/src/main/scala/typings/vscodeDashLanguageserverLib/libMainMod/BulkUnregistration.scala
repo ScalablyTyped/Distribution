@@ -9,14 +9,10 @@ import scala.scalajs.js.annotation._
 trait BulkUnregistration
   extends vscodeDashJsonrpcLib.libEventsMod.Disposable {
   /**
-       * Disposes a single registration. It will be removed from the
-       * `BulkUnregistration`.
-       */
+    * Disposes a single registration. It will be removed from the
+    * `BulkUnregistration`.
+    */
   def disposeSingle(arg: java.lang.String): scala.Boolean = js.native
-  /**
-       * Disposes a single registration. It will be removed from the
-       * `BulkUnregistration`.
-       */
   def disposeSingle(arg: vscodeDashJsonrpcLib.libMessagesMod.MessageType): scala.Boolean = js.native
 }
 

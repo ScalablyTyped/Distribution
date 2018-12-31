@@ -14,7 +14,6 @@ class Sequences protected () extends js.Object {
   var `PowerPoint.Sequences_typekey`: Sequences = js.native
   /** @param number [Index=-1] */
   def Add(): Sequence = js.native
-  /** @param number [Index=-1] */
   def Add(Index: scala.Double): Sequence = js.native
   def Item(Index: scala.Double): Sequence = js.native
 }

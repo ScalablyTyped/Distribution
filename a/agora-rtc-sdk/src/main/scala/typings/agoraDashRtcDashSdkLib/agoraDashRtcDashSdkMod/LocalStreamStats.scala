@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocalStreamStats extends js.Object {
   var audioCodecName: java.lang.String
   var audioSendBytes: java.lang.String

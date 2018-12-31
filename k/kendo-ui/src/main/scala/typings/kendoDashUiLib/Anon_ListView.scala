@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ListView extends js.Object {
   var ActionSheet: org.scalablytyped.runtime.Instantiable2[
     /* element */ stdLib.Element, 

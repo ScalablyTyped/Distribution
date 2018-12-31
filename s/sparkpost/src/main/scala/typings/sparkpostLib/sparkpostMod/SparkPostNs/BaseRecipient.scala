@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseRecipient extends js.Object {
   /** Key/value pairs associated with a recipient. */
   var metadata: js.UndefOr[js.Any] = js.undefined

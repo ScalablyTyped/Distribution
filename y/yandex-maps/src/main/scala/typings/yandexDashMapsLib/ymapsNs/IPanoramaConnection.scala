@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPanoramaConnection extends js.Object {
   def getConnectedPanorama(): js.Promise[IPanorama]
 }

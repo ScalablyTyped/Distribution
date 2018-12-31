@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigationPropertyOptions extends js.Object {
   var associationName: js.UndefOr[java.lang.String] = js.undefined
   var entityTypeName: java.lang.String

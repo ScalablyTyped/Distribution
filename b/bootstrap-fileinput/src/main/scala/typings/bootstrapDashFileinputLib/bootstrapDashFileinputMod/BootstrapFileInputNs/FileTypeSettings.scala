@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileTypeSettings extends js.Object {
   def audio(vType: java.lang.String, vName: java.lang.String): scala.Boolean
   def flash(vType: java.lang.String, vName: java.lang.String): scala.Boolean

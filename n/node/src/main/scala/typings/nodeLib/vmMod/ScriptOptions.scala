@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScriptOptions extends BaseOptions {
   var cachedData: js.UndefOr[nodeLib.Buffer] = js.undefined
   var displayErrors: js.UndefOr[scala.Boolean] = js.undefined

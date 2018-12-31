@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetParameters extends js.Object {
   // Query parameters
   var personFields: java.lang.String

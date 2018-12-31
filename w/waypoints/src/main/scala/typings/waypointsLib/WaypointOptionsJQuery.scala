@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WaypointOptionsJQuery extends WaypointOptionsBase {
   var context: js.UndefOr[stdLib.HTMLElement | java.lang.String] = js.undefined
   var handler: js.UndefOr[

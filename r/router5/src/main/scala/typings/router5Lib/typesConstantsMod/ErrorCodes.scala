@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ErrorCodes extends js.Object {
   var CANNOT_ACTIVATE: java.lang.String
   var CANNOT_DEACTIVATE: java.lang.String

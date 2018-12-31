@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Specifies the options to use when launching File Explorer to display the contents of a specific folder by calling the LaunchFolderAsync(IStorageFolder, FolderLauncherOptions) method. */
 @JSGlobal("Windows.System.FolderLauncherOptions")
 @js.native
+/** Initializes a new instance of the FolderLauncherOptions class. */
 class FolderLauncherOptions () extends js.Object {
   /** Specifies how much space on the screen to leave for the calling app when launching File Explorer. The calling app can take up more or less space than File Explorer, or File Explorer can fill the entire screen. */
   var desiredRemainingView: winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.ViewSizePreference = js.native

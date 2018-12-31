@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object FilterTypeNs extends js.Object {
   /**
-           * Filters which are changed by the application
-          */
+    * Filters which are changed by the application
+    */
   var Application: js.Any = js.native
   /**
-           * Filters which are set by the different controls
-          */
+    * Filters which are set by the different controls
+    */
   var Control: js.Any = js.native
 }
 

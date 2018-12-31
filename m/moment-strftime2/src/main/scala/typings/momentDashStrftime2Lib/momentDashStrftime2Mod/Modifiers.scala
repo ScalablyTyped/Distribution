@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Modifiers extends js.Object {
   var `%`: java.lang.String
   var A: java.lang.String

@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * @hidden
-     */
+  * @hidden
+  */
 @JSGlobal("BABYLON.Tmp")
 @js.native
 class Tmp () extends js.Object
 
 /**
-     * @hidden
-     */
+  * @hidden
+  */
 @JSGlobal("BABYLON.Tmp")
 @js.native
 object Tmp extends js.Object {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Screen extends js.Object {
   /** File reference of the png file. Required. */
   var fileReference: js.UndefOr[java.lang.String] = js.undefined

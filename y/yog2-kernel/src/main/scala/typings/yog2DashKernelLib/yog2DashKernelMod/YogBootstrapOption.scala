@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait YogBootstrapOption extends js.Object {
   // 设置app，未设置则直接使用express
   var app: js.UndefOr[expressLib.expressMod.eNs.Express] = js.undefined

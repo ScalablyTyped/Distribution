@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 			 * Continuous or instantaneous force to apply to an item.
 			 */
-
 trait PushBehavior
   extends titaniumLib.TitaniumNs.Proxy {
   /**

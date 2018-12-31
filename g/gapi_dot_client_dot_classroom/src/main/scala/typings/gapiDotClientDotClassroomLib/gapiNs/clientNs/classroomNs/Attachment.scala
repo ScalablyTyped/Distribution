@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Attachment extends js.Object {
   /** Google Drive file attachment. */
   var driveFile: js.UndefOr[DriveFile] = js.undefined

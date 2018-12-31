@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BytesizeIconsProps
   extends reactLib.reactMod.ReactNs.Props[js.Any] {
   var color: js.UndefOr[java.lang.String] = js.undefined

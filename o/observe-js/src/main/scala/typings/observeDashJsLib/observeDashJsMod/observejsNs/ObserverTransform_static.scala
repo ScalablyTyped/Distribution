@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /*----------------------
 		ObserverTransform
 	----------------------*/
-
 @js.native
 trait ObserverTransform_static
   extends /**

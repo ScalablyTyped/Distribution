@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TagSettings extends js.Object {
   /** Whether dynamic floodlight tags are enabled. */
   var dynamicTagEnabled: js.UndefOr[scala.Boolean] = js.undefined

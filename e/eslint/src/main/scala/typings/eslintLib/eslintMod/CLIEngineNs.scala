@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("eslint", "CLIEngine")
 @js.native
 object CLIEngineNs extends js.Object {
-  
   trait LintReport extends js.Object {
     var errorCount: scala.Double
     var fixableErrorCount: scala.Double
@@ -16,7 +15,6 @@ object CLIEngineNs extends js.Object {
     var results: js.Array[LintResult]
     var warningCount: scala.Double
   }
-  
   
   trait LintResult extends js.Object {
     var errorCount: scala.Double

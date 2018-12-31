@@ -5,27 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStringOptions extends js.Object {
   /**
-       * Whether double quotes or single quotes should be used in XML attributes.
-       * If left undefined, single quotes are used.
-       */
+    * Whether double quotes or single quotes should be used in XML attributes.
+    * If left undefined, single quotes are used.
+    */
   var doubleQuotes: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * The indent string used for pretty-printing. If left undefined, the
-       * default indent string is four spaces.
-       */
+    * The indent string used for pretty-printing. If left undefined, the
+    * default indent string is four spaces.
+    */
   var indent: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * The newline string used for pretty-printing. If left undefined, the
-       * default newline string is "\n".
-       */
+    * The newline string used for pretty-printing. If left undefined, the
+    * default newline string is "\n".
+    */
   var newline: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Whether pretty-printing is enabled. If left undefined, pretty-printing
-       * is enabled.
-       */
+    * Whether pretty-printing is enabled. If left undefined, pretty-printing
+    * is enabled.
+    */
   var pretty: js.UndefOr[scala.Boolean] = js.undefined
 }
 

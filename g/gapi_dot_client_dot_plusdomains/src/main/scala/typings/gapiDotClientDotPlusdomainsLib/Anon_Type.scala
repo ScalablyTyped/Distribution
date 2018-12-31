@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Type extends js.Object {
   /** The height, in pixels, of the linked resource. */
   var height: js.UndefOr[scala.Double] = js.undefined

@@ -13,8 +13,8 @@ trait KnockoutStatic extends js.Object {
   var bindingProvider: Anon_Instance = js.native
   var components: KnockoutComponents = js.native
   /**
-       * Get information about the current computed property during the execution of a computed observable’s evaluator function.
-       */
+    * Get information about the current computed property during the execution of a computed observable’s evaluator function.
+    */
   var computedContext: KnockoutComputedContext = js.native
   @JSName("computed")
   var computed_Original: KnockoutComputedStatic = js.native
@@ -84,139 +84,88 @@ trait KnockoutStatic extends js.Object {
   def applyBindingsToNode(node: stdLib.Node, bindings: js.Any, viewModelOrBindingContext: js.Any): js.Any = js.native
   def cleanNode(node: stdLib.Node): stdLib.Node = js.native
   /**
-       * Creates computed observable
-       */
+    * Creates computed observable
+    */
   def computed[T](): KnockoutComputed[T] = js.native
   /**
-       * Creates computed observable
-       * @param evaluatorFunction Function that computes the observable value
-       * @param context Defines the value of 'this' when evaluating the computed observable
-       * @param options An object with further properties for the computed observable
-       */
+    * Creates computed observable
+    * @param evaluatorFunction Function that computes the observable value
+    * @param context Defines the value of 'this' when evaluating the computed observable
+    * @param options An object with further properties for the computed observable
+    */
   def computed[T](evaluatorFunction: js.Function0[T]): KnockoutComputed[T] = js.native
-  /**
-       * Creates computed observable
-       * @param evaluatorFunction Function that computes the observable value
-       * @param context Defines the value of 'this' when evaluating the computed observable
-       * @param options An object with further properties for the computed observable
-       */
   def computed[T](evaluatorFunction: js.Function0[T], context: js.Any): KnockoutComputed[T] = js.native
-  /**
-       * Creates computed observable
-       * @param evaluatorFunction Function that computes the observable value
-       * @param context Defines the value of 'this' when evaluating the computed observable
-       * @param options An object with further properties for the computed observable
-       */
   def computed[T](evaluatorFunction: js.Function0[T], context: js.Any, options: KnockoutComputedOptions[T]): KnockoutComputed[T] = js.native
   /**
-       * Creates computed observable
-       * @param options An object that defines the computed observable options and behavior
-       * @param context Defines the value of 'this' when evaluating the computed observable
-       */
+    * Creates computed observable
+    * @param options An object that defines the computed observable options and behavior
+    * @param context Defines the value of 'this' when evaluating the computed observable
+    */
   def computed[T](options: KnockoutComputedDefine[T]): KnockoutComputed[T] = js.native
-  /**
-       * Creates computed observable
-       * @param options An object that defines the computed observable options and behavior
-       * @param context Defines the value of 'this' when evaluating the computed observable
-       */
   def computed[T](options: KnockoutComputedDefine[T], context: js.Any): KnockoutComputed[T] = js.native
   def contextFor(node: js.Any): js.Any = js.native
   def dataFor(node: js.Any): js.Any = js.native
   def getBindingHandler(handler: java.lang.String): KnockoutBindingHandler[_, _, _] = js.native
   /**
-       * Executes a callback function inside a computed observable, without creating a dependecy between it and the observables inside the function
-       * @param callback Function to be called.
-       * @param callbackTarget Defines the value of 'this' in the callback function
-       * @param callbackArgs Arguments for the callback Function
-       */
+    * Executes a callback function inside a computed observable, without creating a dependecy between it and the observables inside the function
+    * @param callback Function to be called.
+    * @param callbackTarget Defines the value of 'this' in the callback function
+    * @param callbackArgs Arguments for the callback Function
+    */
   def ignoreDependencies[T](callback: js.Function0[T]): T = js.native
-  /**
-       * Executes a callback function inside a computed observable, without creating a dependecy between it and the observables inside the function
-       * @param callback Function to be called.
-       * @param callbackTarget Defines the value of 'this' in the callback function
-       * @param callbackArgs Arguments for the callback Function
-       */
   def ignoreDependencies[T](callback: js.Function0[T], callbackTarget: js.Any): T = js.native
-  /**
-       * Executes a callback function inside a computed observable, without creating a dependecy between it and the observables inside the function
-       * @param callback Function to be called.
-       * @param callbackTarget Defines the value of 'this' in the callback function
-       * @param callbackArgs Arguments for the callback Function
-       */
   def ignoreDependencies[T](callback: js.Function0[T], callbackTarget: js.Any, callbackArgs: js.Any): T = js.native
   /**
-       * Determine if argument is a computed observable
-       * @param instance Object to be checked
-       */
-  def isComputed(instance: js.Any): /* is KnockoutComputed */scala.Boolean = js.native
+    * Determine if argument is a computed observable
+    * @param instance Object to be checked
+    */
+  def isComputed(instance: js.Any): /* is knockout.KnockoutComputed<any> */ scala.Boolean = js.native
+  def isComputed[T](instance: T): /* is knockout.KnockoutComputed<T> */ scala.Boolean = js.native
   /**
-       * Determine if argument is a computed observable
-       * @param instance Object to be checked
-       */
-  def isComputed[T](instance: T): /* is KnockoutComputed */scala.Boolean = js.native
+    * Determine if argument is a computed observable
+    * @param instance Object to be checked
+    */
+  def isComputed[T](instance: KnockoutObservable[T]): /* is knockout.KnockoutComputed<T> */ scala.Boolean = js.native
   /**
-       * Determine if argument is a computed observable
-       * @param instance Object to be checked
-       */
-  def isComputed[T](instance: KnockoutObservable[T]): /* is KnockoutComputed */scala.Boolean = js.native
+    * Determine if argument is an observable. Returns true for observables, observable arrays, and all computed observables.
+    * @param instance Object to be checked
+    */
+  def isObservable(instance: js.Any): /* is knockout.KnockoutObservable<any> */ scala.Boolean = js.native
+  def isObservable[T](instance: T): /* is knockout.KnockoutObservable<T> */ scala.Boolean = js.native
   /**
-       * Determine if argument is an observable. Returns true for observables, observable arrays, and all computed observables.
-       * @param instance Object to be checked
-       */
-  def isObservable(instance: js.Any): /* is KnockoutObservable */scala.Boolean = js.native
+    * Determine if argument is an observable. Returns true for observables, observable arrays, and all computed observables.
+    * @param instance Object to be checked
+    */
+  def isObservable[T](instance: KnockoutObservable[T]): /* is knockout.KnockoutObservable<T> */ scala.Boolean = js.native
+  def isSubscribable(instance: js.Any): /* is knockout.KnockoutSubscribable<any> */ scala.Boolean = js.native
   /**
-       * Determine if argument is an observable. Returns true for observables, observable arrays, and all computed observables.
-       * @param instance Object to be checked
-       */
-  def isObservable[T](instance: T): /* is KnockoutObservable */scala.Boolean = js.native
+    * Determine if argument is a writable observable. Returns true for observables, observable arrays, and writable computed observables.
+    * @param instance Object to be checked
+    */
+  def isWriteableObservable(instance: js.Any): /* is knockout.KnockoutObservable<any> */ scala.Boolean = js.native
+  def isWriteableObservable[T](instance: T): /* is knockout.KnockoutObservable<T> */ scala.Boolean = js.native
   /**
-       * Determine if argument is an observable. Returns true for observables, observable arrays, and all computed observables.
-       * @param instance Object to be checked
-       */
-  def isObservable[T](instance: KnockoutObservable[T]): /* is KnockoutObservable */scala.Boolean = js.native
-  def isSubscribable(instance: js.Any): /* is KnockoutSubscribable */scala.Boolean = js.native
-  /**
-       * Determine if argument is a writable observable. Returns true for observables, observable arrays, and writable computed observables.
-       * @param instance Object to be checked
-       */
-  def isWriteableObservable(instance: js.Any): /* is KnockoutObservable */scala.Boolean = js.native
-  /**
-       * Determine if argument is a writable observable. Returns true for observables, observable arrays, and writable computed observables.
-       * @param instance Object to be checked
-       */
-  def isWriteableObservable[T](instance: T): /* is KnockoutObservable */scala.Boolean = js.native
-  /**
-       * Determine if argument is a writable observable. Returns true for observables, observable arrays, and writable computed observables.
-       * @param instance Object to be checked
-       */
-  def isWriteableObservable[T](instance: KnockoutObservable[T]): /* is KnockoutObservable */scala.Boolean = js.native
+    * Determine if argument is a writable observable. Returns true for observables, observable arrays, and writable computed observables.
+    * @param instance Object to be checked
+    */
+  def isWriteableObservable[T](instance: KnockoutObservable[T]): /* is knockout.KnockoutObservable<T> */ scala.Boolean = js.native
   def observable[T](): KnockoutObservable[T | scala.Null] = js.native
   def observable[T](value: T): KnockoutObservable[T] = js.native
   def observableArray[T](): KnockoutObservableArray[T] = js.native
   def observableArray[T](value: js.Array[T]): KnockoutObservableArray[T] = js.native
   /**
-       * Creates a pure computed observable
-       * @param evaluatorFunction Function that computes the observable value
-       * @param context Defines the value of 'this' when evaluating the computed observable
-       */
+    * Creates a pure computed observable
+    * @param evaluatorFunction Function that computes the observable value
+    * @param context Defines the value of 'this' when evaluating the computed observable
+    */
   def pureComputed[T](evaluatorFunction: js.Function0[T]): KnockoutComputed[T] = js.native
-  /**
-       * Creates a pure computed observable
-       * @param evaluatorFunction Function that computes the observable value
-       * @param context Defines the value of 'this' when evaluating the computed observable
-       */
   def pureComputed[T](evaluatorFunction: js.Function0[T], context: js.Any): KnockoutComputed[T] = js.native
   /**
-       * Creates a pure computed observable
-       * @param options An object that defines the computed observable options and behavior
-       * @param context Defines the value of 'this' when evaluating the computed observable
-       */
+    * Creates a pure computed observable
+    * @param options An object that defines the computed observable options and behavior
+    * @param context Defines the value of 'this' when evaluating the computed observable
+    */
   def pureComputed[T](options: KnockoutComputedDefine[T]): KnockoutComputed[T] = js.native
-  /**
-       * Creates a pure computed observable
-       * @param options An object that defines the computed observable options and behavior
-       * @param context Defines the value of 'this' when evaluating the computed observable
-       */
   def pureComputed[T](options: KnockoutComputedDefine[T], context: js.Any): KnockoutComputed[T] = js.native
   def removeNode(node: stdLib.Node): scala.Unit = js.native
   def renderTemplate(template: java.lang.String, viewModel: js.Any): js.Any = js.native
@@ -311,9 +260,6 @@ trait KnockoutStatic extends js.Object {
     targetNode: stdLib.Node,
     parentBindingContext: KnockoutBindingContext
   ): js.Any = js.native
-  //////////////////////////////////
-  // templating.js
-  //////////////////////////////////
   def setTemplateEngine(): scala.Unit = js.native
   //////////////////////////////////
   // templating.js

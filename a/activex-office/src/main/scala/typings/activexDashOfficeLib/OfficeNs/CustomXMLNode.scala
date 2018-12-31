@@ -31,39 +31,15 @@ class CustomXMLNode protected () extends js.Object {
   val XML: java.lang.String = js.native
   val XPath: java.lang.String = js.native
   /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           */
+    * @param Name [Name='']
+    * @param NamespaceURI [NamespaceURI='']
+    * @param NodeType [NodeType=1]
+    * @param NodeValue [NodeValue='']
+    */
   def AppendChildNode(): scala.Unit = js.native
-  /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           */
   def AppendChildNode(Name: java.lang.String): scala.Unit = js.native
-  /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           */
   def AppendChildNode(Name: java.lang.String, NamespaceURI: java.lang.String): scala.Unit = js.native
-  /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           */
   def AppendChildNode(Name: java.lang.String, NamespaceURI: java.lang.String, NodeType: MsoCustomXMLNodeType): scala.Unit = js.native
-  /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           */
   def AppendChildNode(
     Name: java.lang.String,
     NamespaceURI: java.lang.String,
@@ -76,57 +52,22 @@ class CustomXMLNode protected () extends js.Object {
   def Delete(): scala.Unit = js.native
   def HasChildNodes(): scala.Boolean = js.native
   /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           * @param NextSibling [NextSibling=0]
-           */
+    * @param Name [Name='']
+    * @param NamespaceURI [NamespaceURI='']
+    * @param NodeType [NodeType=1]
+    * @param NodeValue [NodeValue='']
+    * @param NextSibling [NextSibling=0]
+    */
   def InsertNodeBefore(): scala.Unit = js.native
-  /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           * @param NextSibling [NextSibling=0]
-           */
   def InsertNodeBefore(Name: java.lang.String): scala.Unit = js.native
-  /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           * @param NextSibling [NextSibling=0]
-           */
   def InsertNodeBefore(Name: java.lang.String, NamespaceURI: java.lang.String): scala.Unit = js.native
-  /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           * @param NextSibling [NextSibling=0]
-           */
   def InsertNodeBefore(Name: java.lang.String, NamespaceURI: java.lang.String, NodeType: MsoCustomXMLNodeType): scala.Unit = js.native
-  /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           * @param NextSibling [NextSibling=0]
-           */
   def InsertNodeBefore(
     Name: java.lang.String,
     NamespaceURI: java.lang.String,
     NodeType: MsoCustomXMLNodeType,
     NodeValue: java.lang.String
   ): scala.Unit = js.native
-  /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           * @param NextSibling [NextSibling=0]
-           */
   def InsertNodeBefore(
     Name: java.lang.String,
     NamespaceURI: java.lang.String,
@@ -136,48 +77,23 @@ class CustomXMLNode protected () extends js.Object {
   ): scala.Unit = js.native
   /** @param NextSibling [NextSibling=0] */
   def InsertSubtreeBefore(XML: java.lang.String): scala.Unit = js.native
-  /** @param NextSibling [NextSibling=0] */
   def InsertSubtreeBefore(XML: java.lang.String, NextSibling: CustomXMLNode): scala.Unit = js.native
   def RemoveChild(Child: CustomXMLNode): scala.Unit = js.native
   /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           */
+    * @param Name [Name='']
+    * @param NamespaceURI [NamespaceURI='']
+    * @param NodeType [NodeType=1]
+    * @param NodeValue [NodeValue='']
+    */
   def ReplaceChildNode(OldNode: CustomXMLNode): scala.Unit = js.native
-  /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           */
   def ReplaceChildNode(OldNode: CustomXMLNode, Name: java.lang.String): scala.Unit = js.native
-  /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           */
   def ReplaceChildNode(OldNode: CustomXMLNode, Name: java.lang.String, NamespaceURI: java.lang.String): scala.Unit = js.native
-  /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           */
   def ReplaceChildNode(
     OldNode: CustomXMLNode,
     Name: java.lang.String,
     NamespaceURI: java.lang.String,
     NodeType: MsoCustomXMLNodeType
   ): scala.Unit = js.native
-  /**
-           * @param Name [Name='']
-           * @param NamespaceURI [NamespaceURI='']
-           * @param NodeType [NodeType=1]
-           * @param NodeValue [NodeValue='']
-           */
   def ReplaceChildNode(
     OldNode: CustomXMLNode,
     Name: java.lang.String,

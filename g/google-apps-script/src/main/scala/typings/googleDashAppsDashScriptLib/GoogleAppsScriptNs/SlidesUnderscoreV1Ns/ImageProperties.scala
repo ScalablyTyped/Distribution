@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageProperties extends js.Object {
   // The brightness effect of the image. The value should be in the interval
   // [-1.0, 1.0], where 0 means no effect. This property is read-only.

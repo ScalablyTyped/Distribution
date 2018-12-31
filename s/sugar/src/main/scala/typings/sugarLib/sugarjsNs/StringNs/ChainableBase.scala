@@ -187,12 +187,12 @@ trait ChainableBase[RawValue] extends js.Object {
   def replace(searchValue: java.lang.String, replaceValue: java.lang.String): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def replace(
     searchValue: java.lang.String,
-    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
+    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def replace(searchValue: stdLib.RegExp, replaceValue: java.lang.String): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def replace(
     searchValue: stdLib.RegExp,
-    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
+    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def replaceAll(f: java.lang.String, args: js.Any*): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def replaceAll(f: stdLib.RegExp, args: js.Any*): sugarLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native

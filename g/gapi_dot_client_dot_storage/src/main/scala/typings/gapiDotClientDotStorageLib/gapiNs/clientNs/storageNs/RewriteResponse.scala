@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RewriteResponse extends js.Object {
   /** true if the copy is finished; otherwise, false if the copy is in progress. This property is always present in the response. */
   var done: js.UndefOr[scala.Boolean] = js.undefined

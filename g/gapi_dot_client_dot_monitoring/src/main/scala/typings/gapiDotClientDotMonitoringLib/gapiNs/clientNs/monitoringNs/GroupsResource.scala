@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GroupsResource extends js.Object {
   var members: MembersResource
   /** Creates a new group. */

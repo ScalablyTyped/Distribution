@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait NamedItemScope extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.4]
-     */
+  * [Api set: ExcelApi 1.4]
+  */
 @JSGlobal("Excel.NamedItemScope")
 @js.native
 object NamedItemScope extends js.Object {

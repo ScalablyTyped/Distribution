@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait numbers
   extends atMaterialBaseLib.foundationMod.MDCNumbers {
   var DEACTIVATION_TIMEOUT_MS: atMaterialRippleLib.atMaterialRippleLibNumbers.`225`

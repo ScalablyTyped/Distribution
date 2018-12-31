@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReactNativePhotoViewProps extends js.Object {
   var androidScaleType: js.UndefOr[
     reactDashNativeDashPhotoDashViewLib.reactDashNativeDashPhotoDashViewLibStrings.center | reactDashNativeDashPhotoDashViewLib.reactDashNativeDashPhotoDashViewLibStrings.centerCrop | reactDashNativeDashPhotoDashViewLib.reactDashNativeDashPhotoDashViewLibStrings.centerInside | reactDashNativeDashPhotoDashViewLib.reactDashNativeDashPhotoDashViewLibStrings.fitCenter | reactDashNativeDashPhotoDashViewLib.reactDashNativeDashPhotoDashViewLibStrings.fitStart | reactDashNativeDashPhotoDashViewLib.reactDashNativeDashPhotoDashViewLibStrings.fitEnd | reactDashNativeDashPhotoDashViewLib.reactDashNativeDashPhotoDashViewLibStrings.fitXY

@@ -14,9 +14,9 @@ abstract class SetVersionRequest () extends js.Object {
   /** Gets the requested version. */
   var desiredVersion: scala.Double = js.native
   /**
-               * Requests that the set version request be delayed.
-               * @return The set version deferral.
-               */
+    * Requests that the set version request be delayed.
+    * @return The set version deferral.
+    */
   def getDeferral(): SetVersionDeferral = js.native
 }
 

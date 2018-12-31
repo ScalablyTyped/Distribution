@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Search response
-
 trait PeopleFeed extends js.Object {
   var etag: java.lang.String
   var items: js.Array[Person]

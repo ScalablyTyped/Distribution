@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStructureVersionInfo extends ILifeCycle {
   var experimental: js.UndefOr[IModifierValueHistory] = js.undefined
   var properties: js.UndefOr[org.scalablytyped.runtime.StringDictionary[IPropertyVersionInfo]] = js.undefined

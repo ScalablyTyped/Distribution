@@ -10,18 +10,12 @@ import scala.scalajs.js.annotation._
 class UrlMatcher protected ()
   extends atUirouterCoreLib.libUrlUrlMatcherMod.UrlMatcher {
   /**
-       * @param pattern The pattern to compile into a matcher.
-       * @param paramTypes The [[ParamTypes]] registry
-       * @param paramFactory A [[ParamFactory]] object
-       * @param config  A [[UrlMatcherCompileConfig]] configuration object
-       */
+    * @param pattern The pattern to compile into a matcher.
+    * @param paramTypes The [[ParamTypes]] registry
+    * @param paramFactory A [[ParamFactory]] object
+    * @param config  A [[UrlMatcherCompileConfig]] configuration object
+    */
   def this(pattern: java.lang.String, paramTypes: atUirouterCoreLib.libParamsParamTypesMod.ParamTypes, paramFactory: atUirouterCoreLib.libUrlUrlMatcherFactoryMod.ParamFactory) = this()
-  /**
-       * @param pattern The pattern to compile into a matcher.
-       * @param paramTypes The [[ParamTypes]] registry
-       * @param paramFactory A [[ParamFactory]] object
-       * @param config  A [[UrlMatcherCompileConfig]] configuration object
-       */
   def this(pattern: java.lang.String, paramTypes: atUirouterCoreLib.libParamsParamTypesMod.ParamTypes, paramFactory: atUirouterCoreLib.libUrlUrlMatcherFactoryMod.ParamFactory, config: atUirouterCoreLib.libUrlInterfaceMod.UrlMatcherCompileConfig) = this()
 }
 
@@ -31,14 +25,14 @@ object UrlMatcher extends js.Object {
   /** @hidden */
   var nameValidator: stdLib.RegExp = js.native
   /**
-       * Compare two UrlMatchers
-       *
-       * This comparison function converts a UrlMatcher into static and dynamic path segments.
-       * Each static path segment is a static string between a path separator (slash character).
-       * Each dynamic segment is a path parameter.
-       *
-       * The comparison function sorts static segments before dynamic ones.
-       */
+    * Compare two UrlMatchers
+    *
+    * This comparison function converts a UrlMatcher into static and dynamic path segments.
+    * Each static path segment is a static string between a path separator (slash character).
+    * Each dynamic segment is a path parameter.
+    *
+    * The comparison function sorts static segments before dynamic ones.
+    */
   def compare(
     a: atUirouterCoreLib.libUrlUrlMatcherMod.UrlMatcher,
     b: atUirouterCoreLib.libUrlUrlMatcherMod.UrlMatcher

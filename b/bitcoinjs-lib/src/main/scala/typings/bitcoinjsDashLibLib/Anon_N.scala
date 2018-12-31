@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_N extends js.Object {
   var input: nodeLib.Buffer
   var m: scala.Double

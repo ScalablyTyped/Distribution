@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_GetProcessExpandLevel extends js.Object {
   var FieldModel: js.Any
   var FieldType: Anon_EnumValuesAnonPicklistString

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LinkId extends js.Object {
   var label: java.lang.String
   var linkId: java.lang.String

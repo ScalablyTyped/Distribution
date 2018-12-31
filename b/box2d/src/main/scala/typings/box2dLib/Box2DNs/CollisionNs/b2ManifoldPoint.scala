@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Collision.b2ManifoldPoint")
 @js.native
+/**
+		* Creates a new manifold point.
+		**/
 class b2ManifoldPoint () extends js.Object {
   /**
   		* Contact ID.

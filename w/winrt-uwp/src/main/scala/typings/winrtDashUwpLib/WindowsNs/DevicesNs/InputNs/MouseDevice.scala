@@ -33,9 +33,9 @@ abstract class MouseDevice () extends js.Object {
 @js.native
 object MouseDevice extends js.Object {
   /**
-                   * Retrieves the mouse device that is associated with the current view.
-                   * @return The mouse device.
-                   */
+    * Retrieves the mouse device that is associated with the current view.
+    * @return The mouse device.
+    */
   def getForCurrentView(): winrtDashUwpLib.WindowsNs.DevicesNs.InputNs.MouseDevice = js.native
 }
 

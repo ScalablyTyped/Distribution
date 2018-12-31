@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScramSha1Mechanism
   extends saslmechanismsLib.saslmechanismsMod.FactoryNs.Mechanism {
   var clientFirst: saslDashScramDashShaDash1Lib.saslDashScramDashShaDash1LibNumbers.`true`

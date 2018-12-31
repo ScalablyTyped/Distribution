@@ -34,8 +34,8 @@ class HttpClient protected ()
   /* private */ def _isBypassProxy(requestUrl: js.Any): js.Any = js.native
   /* private */ def _prepareRequest(method: js.Any, requestUrl: js.Any, headers: js.Any): js.Any = js.native
   /**
-       * Needs to be called if keepAlive is set to true in request options.
-       */
+    * Needs to be called if keepAlive is set to true in request options.
+    */
   def dispose(): scala.Unit = js.native
   def head(requestUrl: java.lang.String): js.Promise[typedDashRestDashClientLib.interfacesMod.IHttpClientResponse] = js.native
   def head(requestUrl: java.lang.String, additionalHeaders: typedDashRestDashClientLib.interfacesMod.IHeaders): js.Promise[typedDashRestDashClientLib.interfacesMod.IHttpClientResponse] = js.native

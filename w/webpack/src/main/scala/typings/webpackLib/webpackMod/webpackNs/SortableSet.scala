@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SortableSet[T]
   extends nodeLib.Set[T] {
   def getFromCache(fn: js.Function1[/* set */ SortableSet[T], js.Array[T]]): js.Array[T]

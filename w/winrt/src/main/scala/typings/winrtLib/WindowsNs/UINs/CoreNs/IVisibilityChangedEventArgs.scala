@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVisibilityChangedEventArgs extends ICoreWindowEventArgs {
   var visible: scala.Boolean
 }

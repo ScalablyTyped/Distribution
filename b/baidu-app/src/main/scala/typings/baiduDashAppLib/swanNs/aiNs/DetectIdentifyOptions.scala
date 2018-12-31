@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * 用户向服务请求检测图像中的主体位置。
 		 */
-
 trait DetectIdentifyOptions
   extends baiduDashAppLib.swanNs.BaseOptions[js.Any, js.Any] {
   var image: java.lang.String

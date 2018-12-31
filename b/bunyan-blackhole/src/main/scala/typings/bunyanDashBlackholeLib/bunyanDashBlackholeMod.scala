@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object bunyanDashBlackholeMod extends js.Object {
   /**
-   * Constructor.
-   * @param name name of the blackhole Logger
-   * @return A bunyan logger .
-   */
+    * Constructor.
+    * @param name name of the blackhole Logger
+    * @return A bunyan logger .
+    */
   def apply(name: java.lang.String): bunyanLib.bunyanMod.namespaced = js.native
 }
 

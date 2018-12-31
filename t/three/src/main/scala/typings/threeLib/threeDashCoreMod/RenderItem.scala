@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RenderItem extends js.Object {
   var geometry: Geometry | BufferGeometry
   var group: Group

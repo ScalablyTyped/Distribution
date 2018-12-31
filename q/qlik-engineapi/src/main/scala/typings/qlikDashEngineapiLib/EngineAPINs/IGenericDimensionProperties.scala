@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * GenericDimensionProperties width extend GenericProperties
-     */
-
+  * GenericDimensionProperties width extend GenericProperties
+  */
 trait IGenericDimensionProperties extends IGenericProperties {
   var qDim: INxLibraryDimensionDef
 }

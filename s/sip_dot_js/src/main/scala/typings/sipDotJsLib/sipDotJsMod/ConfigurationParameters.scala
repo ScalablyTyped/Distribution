@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConfigurationParameters extends js.Object {
   var allowLegacyNotifications: js.UndefOr[scala.Boolean] = js.undefined
   var authenticationFactory: js.UndefOr[sipDotJsLib.sipDotJsMod.WebRTCNs.MediaHandlerFactory] = js.undefined

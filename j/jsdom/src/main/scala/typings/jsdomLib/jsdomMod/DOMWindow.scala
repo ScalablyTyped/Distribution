@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 trait DOMWindow
   extends stdLib.Window {
   var Attr: jsdomLib.Anon_Attr = js.native
+  @JSName("Blob")
+  var Blob_DOMWindow: jsdomLib.Anon_BlobParts = js.native
   var CDATASection: jsdomLib.Anon_CDATASection = js.native
   var CSSImportRule: jsdomLib.Anon_CSSImportRule = js.native
   var CSSMediaRule: jsdomLib.Anon_CSSMediaRule = js.native
@@ -135,6 +137,10 @@ trait DOMWindow
   var TouchEvent: jsdomLib.Anon_TypeEventInitDictString = js.native
   var TreeWalker: jsdomLib.Anon_TreeWalker = js.native
   var UIEvent: jsdomLib.Anon_TypeArgEventInitDictStringUIEvent = js.native
+  @JSName("URLSearchParams")
+  var URLSearchParams_DOMWindow: jsdomLib.Anon_Init = js.native
+  @JSName("URL")
+  var URL_DOMWindow: jsdomLib.Anon_UrlBase = js.native
   var WheelEvent: jsdomLib.Anon_DOMDELTAPAGE = js.native
   var XMLDocument: jsdomLib.Anon_XMLDocument = js.native
   var XMLHttpRequestEventTarget: stdLib.XMLHttpRequestEventTarget = js.native

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "Magnetometer")
 @js.native
 object MagnetometerNs extends js.Object {
-  
   trait MagnetometerObject extends js.Object {
     var x: expoLib.expoMod.Axis
     var y: expoLib.expoMod.Axis

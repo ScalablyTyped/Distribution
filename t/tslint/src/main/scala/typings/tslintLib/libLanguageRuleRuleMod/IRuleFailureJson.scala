@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRuleFailureJson extends js.Object {
   var endPosition: IRuleFailurePositionJson
   var failure: java.lang.String

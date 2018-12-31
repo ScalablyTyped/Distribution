@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FindDevicesByOwnerRequest extends js.Object {
   /** List of customer IDs to search for. */
   var customerId: js.UndefOr[js.Array[java.lang.String]] = js.undefined

@@ -14,7 +14,7 @@ object srcUtilModMembers extends js.Object {
   def escapeRegExp(s: java.lang.String): java.lang.String = js.native
   def getParseErrors(error: stdLib.Error): js.Array[atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseError] = js.native
   def isDefined(`val`: js.Any): scala.Boolean = js.native
-  def isPromise(obj: js.Any): /* is Promise */scala.Boolean = js.native
+  def isPromise(obj: js.Any): /* is std.Promise<any> */ scala.Boolean = js.native
   def isSyntaxError(error: stdLib.Error): scala.Boolean = js.native
   def noUndefined[T](): T = js.native
   def noUndefined[T](`val`: T): T = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IChartistAnimationOptions extends js.Object {
   var begin: js.UndefOr[java.lang.String] = js.undefined
   var dur: java.lang.String | scala.Double

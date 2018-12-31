@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilterSpecification extends js.Object {
   var filter: java.lang.String
   var inputs: java.lang.String | js.Array[java.lang.String]

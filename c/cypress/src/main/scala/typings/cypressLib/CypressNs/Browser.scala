@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-   * Describes a browser Cypress can control
-   */
-
+  * Describes a browser Cypress can control
+  */
 trait Browser extends js.Object {
   var displayName: cypressLib.cypressLibStrings.Electron | cypressLib.cypressLibStrings.Chrome | cypressLib.cypressLibStrings.Canary | cypressLib.cypressLibStrings.Chromium | cypressLib.cypressLibStrings.FireFox
   var isHeaded: scala.Boolean

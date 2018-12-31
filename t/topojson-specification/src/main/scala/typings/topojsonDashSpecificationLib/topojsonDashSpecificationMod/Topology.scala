@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Topology[T /* <: Objects[Properties] */] extends TopoJSON {
   var arcs: js.Array[Arc]
   var objects: T

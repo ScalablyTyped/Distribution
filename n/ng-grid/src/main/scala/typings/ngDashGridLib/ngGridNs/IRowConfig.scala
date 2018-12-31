@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRowConfig extends js.Object {
   var enableCellSelection: scala.Boolean
   var enableRowSelection: scala.Boolean

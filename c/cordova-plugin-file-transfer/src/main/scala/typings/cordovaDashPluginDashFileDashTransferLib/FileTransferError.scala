@@ -6,18 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** A FileTransferError object is passed to an error callback when an error occurs. */
-
 trait FileTransferError extends js.Object {
   /* Response body. This attribute is only available when a response is received from the HTTP connection. */
   var body: java.lang.String
   /**
-       * One of the predefined error codes listed below.
-       *     FileTransferError.FILE_NOT_FOUND_ERR
-       *     FileTransferError.INVALID_URL_ERR
-       *     FileTransferError.CONNECTION_ERR
-       *     FileTransferError.ABORT_ERR
-       *     FileTransferError.NOT_MODIFIED_ERR
-       */
+    * One of the predefined error codes listed below.
+    *     FileTransferError.FILE_NOT_FOUND_ERR
+    *     FileTransferError.INVALID_URL_ERR
+    *     FileTransferError.CONNECTION_ERR
+    *     FileTransferError.ABORT_ERR
+    *     FileTransferError.NOT_MODIFIED_ERR
+    */
   var code: scala.Double
   /* Exception that is thrown by native code */
   var exception: js.Any

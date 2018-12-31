@@ -6,18 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * SelfSubjectAccessReviewSpec is a description of the access request.  Exactly one of
-         * ResourceAuthorizationAttributes and NonResourceAuthorizationAttributes must be set
-         */
-
+  * SelfSubjectAccessReviewSpec is a description of the access request.  Exactly one of
+  * ResourceAuthorizationAttributes and NonResourceAuthorizationAttributes must be set
+  */
 trait SelfSubjectAccessReviewSpec extends js.Object {
   /**
-               * NonResourceAttributes describes information for a non-resource access request
-               */
+    * NonResourceAttributes describes information for a non-resource access request
+    */
   val nonResourceAttributes: NonResourceAttributes
   /**
-               * ResourceAuthorizationAttributes describes information for a resource access request
-               */
+    * ResourceAuthorizationAttributes describes information for a resource access request
+    */
   val resourceAttributes: ResourceAttributes
 }
 

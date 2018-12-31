@@ -28,51 +28,51 @@ abstract class StorageItemThumbnail () extends js.Object {
   /** Gets a value that indicates if the thumbnail is an icon or an image. */
   var `type`: ThumbnailType = js.native
   /**
-                   * Creates a new stream over the thumbnail that is represented by the current storageItemThumbnail object.
-                   * @return The new thumbnail stream. The initial, internal position of the stream is 0.
-                   */
+    * Creates a new stream over the thumbnail that is represented by the current storageItemThumbnail object.
+    * @return The new thumbnail stream. The initial, internal position of the stream is 0.
+    */
   def cloneStream(): winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream = js.native
   /** Releases system resources that are exposed by a Windows Runtime object. */
   def close(): scala.Unit = js.native
   /**
-                   * Flushes data asynchronously in a sequential stream.
-                   * @return The stream flush operation.
-                   */
+    * Flushes data asynchronously in a sequential stream.
+    * @return The stream flush operation.
+    */
   def flushAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
   /**
-                   * Retrieves the thumbnail image data as an undecoded stream.
-                   * @param position The position in the storage item to start reading thumbnail image data.
-                   * @return An object for reading the thumbnail image data.
-                   */
+    * Retrieves the thumbnail image data as an undecoded stream.
+    * @param position The position in the storage item to start reading thumbnail image data.
+    * @return An object for reading the thumbnail image data.
+    */
   def getInputStreamAt(position: scala.Double): winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IInputStream = js.native
   /**
-                   * Retrieves an output stream object for writing thumbnail image data to a storage item.
-                   * @param position The position in the storage item to start writing thumbnail image data.
-                   * @return The output stream.
-                   */
+    * Retrieves an output stream object for writing thumbnail image data to a storage item.
+    * @param position The position in the storage item to start writing thumbnail image data.
+    * @return The output stream.
+    */
   def getOutputStreamAt(position: scala.Double): winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IOutputStream = js.native
   /**
-                   * Returns an asynchronous byte reader object.
-                   * @param buffer The buffer into which the asynchronous read operation places the bytes that are read.
-                   * @param count The number of bytes to read that is less than or equal to the Capacity value.
-                   * @param options Specifies the type of the asynchronous read operation.
-                   * @return The asynchronous operation.
-                   */
+    * Returns an asynchronous byte reader object.
+    * @param buffer The buffer into which the asynchronous read operation places the bytes that are read.
+    * @param count The number of bytes to read that is less than or equal to the Capacity value.
+    * @param options Specifies the type of the asynchronous read operation.
+    * @return The asynchronous operation.
+    */
   def readAsync(
     buffer: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer,
     count: scala.Double,
     options: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.InputStreamOptions
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer, scala.Double] = js.native
   /**
-                   * Sets the offset of the thumbnail stream to the specified value.
-                   * @param position The number of bytes from the start of the thumbnail stream where the position of the thumbnail stream is set.
-                   */
+    * Sets the offset of the thumbnail stream to the specified value.
+    * @param position The number of bytes from the start of the thumbnail stream where the position of the thumbnail stream is set.
+    */
   def seek(position: scala.Double): scala.Unit = js.native
   /**
-                   * Writes data asynchronously in a sequential stream.
-                   * @param buffer The buffer into which the asynchronous writer operation writes.
-                   * @return The byte writer operation.
-                   */
+    * Writes data asynchronously in a sequential stream.
+    * @param buffer The buffer into which the asynchronous writer operation writes.
+    * @return The byte writer operation.
+    */
   def writeAsync(buffer: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[scala.Double, scala.Double] = js.native
 }
 

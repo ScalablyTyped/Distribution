@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StatsInformation extends js.Object {
   var current_base: scala.Double
   var estimated_base: scala.Double

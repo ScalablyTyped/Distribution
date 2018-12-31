@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WheelEvent[T]
   extends MouseEvent[T, reactLib.NativeWheelEvent] {
   var deltaMode: scala.Double

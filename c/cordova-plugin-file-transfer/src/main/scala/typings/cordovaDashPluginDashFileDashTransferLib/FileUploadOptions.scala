@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Optional parameters for upload method. */
-
 trait FileUploadOptions extends js.Object {
   /** Whether to upload the data in chunked streaming mode. Defaults to true. */
   var chunkedMode: js.UndefOr[scala.Boolean] = js.undefined

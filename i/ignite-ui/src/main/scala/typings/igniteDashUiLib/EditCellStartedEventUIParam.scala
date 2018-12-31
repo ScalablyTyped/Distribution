@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditCellStartedEventUIParam extends js.Object {
   /**
   	 * Gets the index of the column.

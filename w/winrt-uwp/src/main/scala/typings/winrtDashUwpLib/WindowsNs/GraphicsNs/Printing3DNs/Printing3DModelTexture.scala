@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a texture used in the 3D model. */
 @JSGlobal("Windows.Graphics.Printing3D.Printing3DModelTexture")
 @js.native
+/** Creates an instance of the Printing3DModelTexture class. */
 class Printing3DModelTexture () extends js.Object {
   /** Gets or sets the texture resource used by the texture. */
   var textureResource: Printing3DTextureResource = js.native

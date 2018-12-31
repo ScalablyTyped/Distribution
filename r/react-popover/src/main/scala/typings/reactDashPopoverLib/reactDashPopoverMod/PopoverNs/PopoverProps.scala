@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PopoverProps extends js.Object {
   var appendTarget: js.UndefOr[reactLib.Element] = js.undefined
   var body: reactLib.reactMod.ReactNs.ReactNode

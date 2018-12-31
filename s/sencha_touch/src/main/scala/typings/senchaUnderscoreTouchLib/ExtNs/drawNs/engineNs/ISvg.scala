@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISvg
   extends senchaUnderscoreTouchLib.ExtNs.drawNs.ISurface {
   /** [Method] Clears the current transformation state on the surface  */

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NetworkPubkey extends js.Object {
   var address: js.UndefOr[java.lang.String] = js.undefined
   var hash: js.UndefOr[nodeLib.Buffer] = js.undefined

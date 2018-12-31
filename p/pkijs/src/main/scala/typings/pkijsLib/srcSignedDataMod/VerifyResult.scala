@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VerifyResult extends js.Object {
   var code: scala.Double
   var date: stdLib.Date

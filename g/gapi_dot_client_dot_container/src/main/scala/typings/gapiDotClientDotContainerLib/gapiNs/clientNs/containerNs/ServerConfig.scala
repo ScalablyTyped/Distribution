@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerConfig extends js.Object {
   /** Version of Kubernetes the service deploys by default. */
   var defaultClusterVersion: js.UndefOr[java.lang.String] = js.undefined

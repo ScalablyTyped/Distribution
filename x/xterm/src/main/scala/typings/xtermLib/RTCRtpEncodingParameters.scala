@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RTCRtpEncodingParameters extends RTCRtpCodingParameters {
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var codecPayloadType: js.UndefOr[scala.Double] = js.undefined

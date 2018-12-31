@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISelect extends IText {
   /** [Config Option] (Boolean) */
   var autoSelect: js.UndefOr[scala.Boolean] = js.undefined

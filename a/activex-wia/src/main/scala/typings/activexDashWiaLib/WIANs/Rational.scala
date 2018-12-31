@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * The Rational object is a container for the rational values found in Exif tags. It is a supported element type of the Vector object and may be created
-     * using "WIA.Rational" in a call to CreateObject.
-     */
+  * The Rational object is a container for the rational values found in Exif tags. It is a supported element type of the Vector object and may be created
+  * using "WIA.Rational" in a call to CreateObject.
+  */
 @JSGlobal("WIA.Rational")
 @js.native
 class Rational protected () extends js.Object {

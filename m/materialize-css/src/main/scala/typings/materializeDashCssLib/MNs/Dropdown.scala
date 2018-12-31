@@ -9,36 +9,36 @@ import scala.scalajs.js.annotation._
 @js.native
 class Dropdown () extends Component[DropdownOptions] {
   /**
-           * The DOM element of the dropdown
-           */
+    * The DOM element of the dropdown
+    */
   var dropdownEl: stdLib.Element = js.native
   /**
-           * The index of the item focused
-           */
+    * The index of the item focused
+    */
   var focusedIndex: scala.Double = js.native
   /**
-           * ID of the dropdown element
-           */
+    * ID of the dropdown element
+    */
   var id: java.lang.String = js.native
   /**
-           * If the dropdown is open
-           */
+    * If the dropdown is open
+    */
   var isOpen: scala.Boolean = js.native
   /**
-           * If the dropdown content is scrollable
-           */
+    * If the dropdown content is scrollable
+    */
   var isScrollable: scala.Boolean = js.native
   /**
-           * Close dropdown
-           */
+    * Close dropdown
+    */
   def close(): scala.Unit = js.native
   /**
-           * Open dropdown
-           */
+    * Open dropdown
+    */
   def open(): scala.Unit = js.native
   /**
-           * While dropdown is open, you can recalculate its dimensions if its contents have changed
-           */
+    * While dropdown is open, you can recalculate its dimensions if its contents have changed
+    */
   def recalculateDimensions(): scala.Unit = js.native
 }
 
@@ -46,27 +46,21 @@ class Dropdown () extends Component[DropdownOptions] {
 @js.native
 object Dropdown extends js.Object {
   /**
-           * Get Instance
-           */
+    * Get Instance
+    */
   def getInstance(elem: stdLib.Element): materializeDashCssLib.MNs.Dropdown = js.native
   /**
-           * Init Dropdowns
-           */
+    * Init Dropdowns
+    */
   def init(els: materializeDashCssLib.MElements): js.Array[materializeDashCssLib.MNs.Dropdown] = js.native
-  /**
-           * Init Dropdowns
-           */
   def init(
     els: materializeDashCssLib.MElements,
     options: stdLib.Partial[materializeDashCssLib.MNs.DropdownOptions]
   ): js.Array[materializeDashCssLib.MNs.Dropdown] = js.native
   /**
-           * Init Dropdown
-           */
+    * Init Dropdown
+    */
   def init(els: stdLib.Element): materializeDashCssLib.MNs.Dropdown = js.native
-  /**
-           * Init Dropdown
-           */
   def init(els: stdLib.Element, options: stdLib.Partial[materializeDashCssLib.MNs.DropdownOptions]): materializeDashCssLib.MNs.Dropdown = js.native
 }
 

@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RibbonSubgroup extends js.Object {
   /**
-       * End angle of the ribbon subgroup in radians
-       */
+    * End angle of the ribbon subgroup in radians
+    */
   var endAngle: scala.Double
   /**
-       * Radius of the ribbon subgroup
-       */
+    * Radius of the ribbon subgroup
+    */
   var radius: scala.Double
   /**
-       * Start angle of the ribbon subgroup in radians
-       */
+    * Start angle of the ribbon subgroup in radians
+    */
   var startAngle: scala.Double
 }
 

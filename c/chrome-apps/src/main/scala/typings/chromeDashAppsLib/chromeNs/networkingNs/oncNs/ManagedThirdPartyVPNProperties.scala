@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ManagedThirdPartyVPNProperties extends js.Object {
   /** ID of the third-party VPN provider extension. */
   var ExtensionID: ManagedDOMString

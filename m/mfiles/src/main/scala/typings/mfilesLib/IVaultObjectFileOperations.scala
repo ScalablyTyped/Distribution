@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVaultObjectFileOperations extends js.Object {
   def AddEmptyFile(ObjVer: IObjVer, Title: java.lang.String, Extension: java.lang.String): IFileVer
   def AddFile(

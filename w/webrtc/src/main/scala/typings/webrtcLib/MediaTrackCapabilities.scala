@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaTrackCapabilities extends js.Object {
   //width: number | W3C.LongRange;
   //height: number | W3C.LongRange;

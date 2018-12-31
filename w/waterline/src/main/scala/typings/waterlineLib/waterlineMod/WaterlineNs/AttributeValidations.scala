@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AttributeValidations extends js.Object {
   var after: js.UndefOr[AttributeValidation[java.lang.String]] = js.undefined
   var alpha: js.UndefOr[AttributeValidation[scala.Boolean]] = js.undefined

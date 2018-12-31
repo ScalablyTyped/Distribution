@@ -76,11 +76,11 @@ abstract class MediaPlayer () extends js.Object {
   /** Get or sets the audio volume for media playback. */
   var volume: scala.Double = js.native
   /**
-                   * Adds an audio effect to the playback stream of the MediaPlayer .
-                   * @param activatableClassId The activatable class ID of the audio effect to add to the playback stream.
-                   * @param effectOptional A value indicating whether the effect is optional.
-                   * @param configuration A property set containing configuration settings for the specified audio effect.
-                   */
+    * Adds an audio effect to the playback stream of the MediaPlayer .
+    * @param activatableClassId The activatable class ID of the audio effect to add to the playback stream.
+    * @param effectOptional A value indicating whether the effect is optional.
+    * @param configuration A property set containing configuration settings for the specified audio effect.
+    */
   def addAudioEffect(
     activatableClassId: java.lang.String,
     effectOptional: scala.Boolean,
@@ -215,24 +215,24 @@ abstract class MediaPlayer () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[MediaPlayer, _]
   ): scala.Unit = js.native
   /**
-                   * Set the media source to a file.
-                   * @param file The media source file.
-                   */
+    * Set the media source to a file.
+    * @param file The media source file.
+    */
   def setFileSource(file: winrtDashUwpLib.WindowsNs.StorageNs.IStorageFile): scala.Unit = js.native
   /**
-                   * Sets the media source for playback.
-                   * @param source The media source for playback.
-                   */
+    * Sets the media source for playback.
+    * @param source The media source for playback.
+    */
   def setMediaSource(source: winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.IMediaSource): scala.Unit = js.native
   /**
-                   * Sets the media source to a stream.
-                   * @param stream The media source stream.
-                   */
+    * Sets the media source to a stream.
+    * @param stream The media source stream.
+    */
   def setStreamSource(stream: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream): scala.Unit = js.native
   /**
-                   * Sets the path to the media.
-                   * @param value The path to the media.
-                   */
+    * Sets the path to the media.
+    * @param value The path to the media.
+    */
   def setUriSource(value: winrtDashUwpLib.WindowsNs.FoundationNs.Uri): scala.Unit = js.native
 }
 

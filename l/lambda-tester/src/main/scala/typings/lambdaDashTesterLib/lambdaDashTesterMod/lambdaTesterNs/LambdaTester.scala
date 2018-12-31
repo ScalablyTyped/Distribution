@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LambdaTester extends js.Object {
   def clientContext(clientContext: awsDashLambdaLib.awsDashLambdaMod.ClientContext): this.type
   def context(context: awsDashLambdaLib.awsDashLambdaMod.Context): this.type

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgToolbarMethods extends js.Object {
   /**
   	 * Activate item matching provided index.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _spFriendlyUrlPageContextInfo extends js.Object {
   var termId: java.lang.String
   var termSetId: java.lang.String

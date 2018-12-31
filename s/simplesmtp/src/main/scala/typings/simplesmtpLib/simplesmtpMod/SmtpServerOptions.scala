@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SmtpServerOptions extends js.Object {
   /**
   	 * greeting banner that is sent to the client on connection

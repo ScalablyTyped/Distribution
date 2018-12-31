@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditOptions extends js.Object {
   /**
   			 * Edit handler options. Set to false to disable handler.

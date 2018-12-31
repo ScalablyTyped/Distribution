@@ -21,13 +21,12 @@ object ULS extends js.Object {
   /** Increases the indentation for subsequent log messages. */
   def increaseIndent(): scala.Unit = js.native
   /** Logs the specified debug message.
-              This method logs the message with a time stamp. If any log messages are pending, this method also logs them. If the message cannot be logged, the message is added to the list of pending log messages. */
+    This method logs the message with a time stamp. If any log messages are pending, this method also logs them. If the message cannot be logged, the message is added to the list of pending log messages. */
   def log(debugMessage: java.lang.String): scala.Unit = js.native
   /** Sets a value that indicates whether the Unified Logging Service (ULS) is enabled. */
   def set_enabled(value: scala.Boolean): scala.Unit = js.native
   /** Traces when the function was entered. */
   def traceApiEnter(functionName: java.lang.String): scala.Unit = js.native
-  /** Traces when the function was entered. */
   def traceApiEnter(functionName: java.lang.String, args: js.Array[_]): scala.Unit = js.native
   /** Traces when the function has finished. */
   def traceApiLeave(): scala.Unit = js.native

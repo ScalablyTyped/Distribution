@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object history3RedirectModMembers extends js.Object {
   def connectedReduxRedirect[OwnProps, State](config: ConnectedReduxRedirectConfig[OwnProps, State]): reduxDashAuthDashWrapperLib.reduxDashAuthDashWrapperMod.AuthWrapperDecorator[OwnProps with InjectedAuthReduxProps] = js.native
   def connectedRouterRedirect[OwnProps, State](config: ConnectedRouterRedirectConfig[OwnProps, State]): reduxDashAuthDashWrapperLib.reduxDashAuthDashWrapperMod.AuthWrapperDecorator[
-    OwnProps with (InjectedAuthRouterProps[js.Function1[/* repeated */_, reduxLib.reduxMod.Action[_]]])
+    OwnProps with (InjectedAuthRouterProps[js.Function1[/* repeated */ _, reduxLib.reduxMod.Action[_]]])
   ] = js.native
   def createOnEnter[State](config: CreateOnEnterConfig[State]): js.Function3[
     /* store */ reduxLib.reduxMod.Store[_, reduxLib.reduxMod.AnyAction], 

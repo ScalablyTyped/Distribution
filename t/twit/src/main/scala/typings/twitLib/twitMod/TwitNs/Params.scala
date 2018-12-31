@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Params extends js.Object {
   var alt_text: js.UndefOr[twitLib.Anon_Text] = js.undefined
   var count: js.UndefOr[scala.Double] = js.undefined

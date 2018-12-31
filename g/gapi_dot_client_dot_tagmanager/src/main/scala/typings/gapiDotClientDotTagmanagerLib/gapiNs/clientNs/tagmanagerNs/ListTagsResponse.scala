@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListTagsResponse extends js.Object {
   /** Continuation token for fetching the next page of results. */
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined

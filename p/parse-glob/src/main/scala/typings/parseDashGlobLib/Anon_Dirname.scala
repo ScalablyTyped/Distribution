@@ -5,27 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Dirname extends js.Object {
   /**
-               * File name with extension.
-               */
+    * File name with extension.
+    */
   var basename: java.lang.String
   /**
-               * Directory.
-               */
+    * Directory.
+    */
   var dirname: java.lang.String
   /**
-               * File extension without dot.
-               */
+    * File extension without dot.
+    */
   var ext: java.lang.String
   /**
-               * File extension with dot.
-               */
+    * File extension with dot.
+    */
   var extname: java.lang.String
   /**
-               * File name without extension.
-               */
+    * File name without extension.
+    */
   var filename: java.lang.String
 }
 

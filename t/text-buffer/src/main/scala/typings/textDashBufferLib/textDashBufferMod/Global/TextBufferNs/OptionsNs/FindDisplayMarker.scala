@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FindDisplayMarker extends js.Object {
   /** Only include markers contained in this Range in buffer coordinates. */
   var containedInBufferRange: js.UndefOr[textDashBufferLib.textDashBufferMod.Global.TextBufferNs.RangeCompatible] = js.undefined
@@ -30,16 +29,16 @@ trait FindDisplayMarker extends js.Object {
   /** Only include markers intersecting this Range in buffer coordinates. */
   var intersectsBufferRange: js.UndefOr[textDashBufferLib.textDashBufferMod.Global.TextBufferNs.RangeCompatible] = js.undefined
   /**
-                   *  Only include markers intersecting this Array of [startRow, endRow] in
-                   *  buffer coordinates.
-                   */
+    *  Only include markers intersecting this Array of [startRow, endRow] in
+    *  buffer coordinates.
+    */
   var intersectsBufferRowRange: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.undefined
   /** Only include markers intersecting this Range in screen coordinates. */
   var intersectsScreenRange: js.UndefOr[textDashBufferLib.textDashBufferMod.Global.TextBufferNs.RangeCompatible] = js.undefined
   /**
-                   *  Only include markers intersecting this Array of [startRow, endRow] in
-                   *  screen coordinates.
-                   */
+    *  Only include markers intersecting this Array of [startRow, endRow] in
+    *  screen coordinates.
+    */
   var intersectsScreenRowRange: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.undefined
   /** Only include markers starting at this Point in buffer coordinates. */
   var startBufferPosition: js.UndefOr[textDashBufferLib.textDashBufferMod.Global.TextBufferNs.PointCompatible] = js.undefined

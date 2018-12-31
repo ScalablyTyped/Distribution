@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PostPerUserInfo extends js.Object {
   /** ID of the Blog that the post resource belongs to. */
   var blogId: js.UndefOr[java.lang.String] = js.undefined

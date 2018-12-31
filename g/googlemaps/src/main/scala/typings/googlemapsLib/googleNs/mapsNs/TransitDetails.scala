@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransitDetails extends js.Object {
   var arrival_stop: TransitStop
   var arrival_time: Time

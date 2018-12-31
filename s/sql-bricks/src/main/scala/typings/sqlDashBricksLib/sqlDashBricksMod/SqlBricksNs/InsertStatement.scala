@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-   * An INSERT statement
-   */
+  * An INSERT statement
+  */
 @js.native
 trait InsertStatement extends Statement {
   def into(tbl: TableName, columns: js.Any*): InsertStatement = js.native

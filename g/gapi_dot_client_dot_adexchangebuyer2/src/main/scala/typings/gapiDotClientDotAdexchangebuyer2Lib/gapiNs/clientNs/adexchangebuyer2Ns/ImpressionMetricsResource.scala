@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImpressionMetricsResource extends js.Object {
   /** Lists all metrics that are measured in terms of number of impressions. */
   def list(

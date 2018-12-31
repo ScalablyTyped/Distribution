@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MerkleTree extends js.Object {
   def depth(): scala.Double
   def level(level: scala.Double): js.UndefOr[scala.Double]

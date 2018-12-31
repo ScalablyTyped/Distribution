@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AlertProps extends js.Object {
   /** Trigger when animation ending of Alert */
   var afterClose: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -28,8 +27,8 @@ trait AlertProps extends js.Object {
   var showIcon: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   /**
-       * Type of Alert styles, options:`success`, `info`, `warning`, `error`
-       */
+    * Type of Alert styles, options:`success`, `info`, `warning`, `error`
+    */
   var `type`: js.UndefOr[
     antdLib.antdLibStrings.success | antdLib.antdLibStrings.info | antdLib.antdLibStrings.warning | antdLib.antdLibStrings.error
   ] = js.undefined

@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Parameters that combine to specify a predicate that can be used to select a set of downloads. Used for example
-     * in search() and erase()
-     */
-
+  * Parameters that combine to specify a predicate that can be used to select a set of downloads. Used for example
+  * in search() and erase()
+  */
 trait DownloadQuery extends js.Object {
   /** Number of bytes received so far from the host, without considering file compression. */
   var bytesReceived: js.UndefOr[scala.Double] = js.undefined
@@ -31,23 +30,23 @@ trait DownloadQuery extends js.Object {
   var filenameRegex: js.UndefOr[java.lang.String] = js.undefined
   var id: js.UndefOr[scala.Double] = js.undefined
   /**
-           * Setting this integer limits the number of results. Otherwise, all matching DownloadItems will be returned.
-           */
+    * Setting this integer limits the number of results. Otherwise, all matching DownloadItems will be returned.
+    */
   var limit: js.UndefOr[scala.Double] = js.undefined
   /** The file's MIME type. */
   var mime: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Setting elements of this array to DownloadItem properties in order to sort the search results. For example,
-           * setting `orderBy='startTime'` sorts the DownloadItems by their start time in ascending order. To specify
-           * descending order, prefix `orderBy` with a hyphen: '-startTime'.
-           */
+    * Setting elements of this array to DownloadItem properties in order to sort the search results. For example,
+    * setting `orderBy='startTime'` sorts the DownloadItems by their start time in ascending order. To specify
+    * descending order, prefix `orderBy` with a hyphen: '-startTime'.
+    */
   var orderBy: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** True if the download has stopped reading data from the host, but kept the connection open. */
   var paused: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * This array of search terms limits results to DownloadItems whose `filename` or `url` contain all of the
-           * search terms that do not begin with a dash '-' and none of the search terms that do begin with a dash.
-           */
+    * This array of search terms limits results to DownloadItems whose `filename` or `url` contain all of the
+    * search terms that do not begin with a dash '-' and none of the search terms that do begin with a dash.
+    */
   var query: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var startTime: js.UndefOr[java.lang.String] = js.undefined
   /** Limits results to downloads that started after the given ms since the epoch. */

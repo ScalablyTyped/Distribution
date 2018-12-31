@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPrettyPrint extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -29,11 +28,11 @@ trait Anon_AccesstokenPrettyPrint extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * The project id of the project the beacon will be registered to. If
-                   * the project id is not specified then the project making the request
-                   * is used.
-                   * Optional.
-                   */
+    * The project id of the project the beacon will be registered to. If
+    * the project id is not specified then the project making the request
+    * is used.
+    * Optional.
+    */
   var projectId: js.UndefOr[java.lang.String] = js.undefined
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined

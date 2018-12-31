@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object mappingsNs extends js.Object {
   /**
-       * Interfaces and instance classes for types from the Mendix sub meta model `Mappings`.
-       */
+    * Interfaces and instance classes for types from the Mendix sub meta model `Mappings`.
+    */
   /**
-       * In version 6.6.0: introduced
-       */
+    * In version 6.6.0: introduced
+    */
   @js.native
   abstract class Element protected ()
     extends mendixmodelsdkLib.distSdkInternalMod.Element {
@@ -25,8 +25,8 @@ object mappingsNs extends js.Object {
     var elementType: ElementType = js.native
     var errorMessage: java.lang.String = js.native
     /**
-             * In version 7.6.0: introduced
-             */
+      * In version 7.6.0: introduced
+      */
     var exposedItemName: java.lang.String = js.native
     var exposedName: java.lang.String = js.native
     var fractionDigits: scala.Double = js.native
@@ -38,8 +38,8 @@ object mappingsNs extends js.Object {
     var model_Element: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
     var nillable: scala.Boolean = js.native
     /**
-             * The value of this property is conceptually of type mappings.ElementPath.
-             */
+      * The value of this property is conceptually of type mappings.ElementPath.
+      */
     var path: java.lang.String = js.native
     var primitiveType: mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.XmlPrimitiveType = js.native
     var totalDigits: scala.Double = js.native
@@ -51,16 +51,16 @@ object mappingsNs extends js.Object {
     extends mendixmodelsdkLib.distSdkInternalMod.AbstractEnum
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/mapping-documents relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/mapping-documents relevant section in reference guide}
+    */
   @js.native
   trait IMappingDocument
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.IDocument
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/mapping-documents relevant section in reference guide}
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenMappingsMod.mappingsNs.IMappingDocument because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * See: {@link https://docs.mendix.com/refguide7/mapping-documents relevant section in reference guide}
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenMappingsMod.mappingsNs.IMappingDocument because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   abstract class MappingDocument protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
@@ -68,19 +68,19 @@ object mappingsNs extends js.Object {
     var importedWebService: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.IImportedWebService | scala.Null = js.native
     val importedWebServiceQualifiedName: java.lang.String | scala.Null = js.native
     /**
-             * In version 6.4.0: introduced
-             */
+      * In version 6.4.0: introduced
+      */
     var jsonStructure: mendixmodelsdkLib.distGenJsonstructuresMod.jsonstructuresNs.IJsonStructure | scala.Null = js.native
     val jsonStructureQualifiedName: java.lang.String | scala.Null = js.native
     /**
-             * In version 7.6.0: introduced
-             */
+      * In version 7.6.0: introduced
+      */
     var messageDefinition: mendixmodelsdkLib.distGenMessagedefinitionsMod.messagedefinitionsNs.IMessageDefinition | scala.Null = js.native
     val messageDefinitionQualifiedName: java.lang.String | scala.Null = js.native
     var operationName: java.lang.String = js.native
     /**
-             * In version 7.14.0: introduced
-             */
+      * In version 7.14.0: introduced
+      */
     var publicName: java.lang.String = js.native
     var rootElementName: java.lang.String = js.native
     val rootMappingElements: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[ObjectMappingElement] = js.native
@@ -98,14 +98,14 @@ object mappingsNs extends js.Object {
     var documentation: java.lang.String = js.native
     var elementType: ElementType = js.native
     /**
-             * In version 6.6.0: introduced
-             */
+      * In version 6.6.0: introduced
+      */
     var exposedName: java.lang.String = js.native
     /**
-             * The value of this property is conceptually of type mappings.ElementPath.
-             *
-             * In version 7.6.0: introduced
-             */
+      * The value of this property is conceptually of type mappings.ElementPath.
+      *
+      * In version 7.6.0: introduced
+      */
     var jsonPath: java.lang.String = js.native
     var maxOccurs: scala.Double = js.native
     var minOccurs: scala.Double = js.native
@@ -113,16 +113,16 @@ object mappingsNs extends js.Object {
     var model_MappingElement: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
     var nillable: scala.Boolean = js.native
     /**
-             * The value of this property is conceptually of type mappings.ElementPath.
-             *
-             * In version 7.6.0: deleted
-             */
+      * The value of this property is conceptually of type mappings.ElementPath.
+      *
+      * In version 7.6.0: deleted
+      */
     var path: java.lang.String = js.native
     /**
-             * The value of this property is conceptually of type mappings.ElementPath.
-             *
-             * In version 7.6.0: introduced
-             */
+      * The value of this property is conceptually of type mappings.ElementPath.
+      *
+      * In version 7.6.0: introduced
+      */
     var xmlPath: java.lang.String = js.native
   }
   
@@ -144,10 +144,10 @@ object mappingsNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     val containerAsMappingMicroflowCall: MappingMicroflowCall = js.native
     /**
-             * The value of this property is conceptually of type mappings.ElementPath.
-             *
-             * In version 7.6.0: introduced
-             */
+      * The value of this property is conceptually of type mappings.ElementPath.
+      *
+      * In version 7.6.0: introduced
+      */
     var jsonValueElementPath: java.lang.String = js.native
     var levelOfParent: scala.Double = js.native
     @JSName("model")
@@ -155,16 +155,16 @@ object mappingsNs extends js.Object {
     var parameter: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflowParameter | scala.Null = js.native
     val parameterQualifiedName: java.lang.String | scala.Null = js.native
     /**
-             * The value of this property is conceptually of type mappings.ElementPath.
-             *
-             * In version 7.6.0: deleted
-             */
+      * The value of this property is conceptually of type mappings.ElementPath.
+      *
+      * In version 7.6.0: deleted
+      */
     var valueElementPath: java.lang.String = js.native
     /**
-             * The value of this property is conceptually of type mappings.ElementPath.
-             *
-             * In version 7.6.0: introduced
-             */
+      * The value of this property is conceptually of type mappings.ElementPath.
+      *
+      * In version 7.6.0: introduced
+      */
     var xmlValueElementPath: java.lang.String = js.native
   }
   
@@ -185,15 +185,15 @@ object mappingsNs extends js.Object {
     var entity: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IEntity | scala.Null = js.native
     val entityQualifiedName: java.lang.String | scala.Null = js.native
     /**
-             * In version 6.4.0: introduced
-             */
+      * In version 6.4.0: introduced
+      */
     var isDefaultType: scala.Boolean = js.native
     var mappingMicroflowCall: MappingMicroflowCall | scala.Null = js.native
     var objectHandling: ObjectHandlingEnum = js.native
     var objectHandlingBackup: ObjectHandlingBackupEnum = js.native
     /**
-             * In version 7.17.0: introduced
-             */
+      * In version 7.17.0: introduced
+      */
     var objectHandlingBackupAllowOverride: scala.Boolean = js.native
   }
   
@@ -205,8 +205,8 @@ object mappingsNs extends js.Object {
     var converter: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.IMicroflow | scala.Null = js.native
     val converterQualifiedName: java.lang.String | scala.Null = js.native
     /**
-             * In version 6.4.1: deleted
-             */
+      * In version 6.4.1: deleted
+      */
     var expectedContentTypes: java.lang.String = js.native
     var fractionDigits: scala.Double = js.native
     var isContent: scala.Boolean = js.native
@@ -215,27 +215,27 @@ object mappingsNs extends js.Object {
     var maxLength: scala.Double = js.native
     var totalDigits: scala.Double = js.native
     /**
-             * In version 7.9.0: introduced
-             */
+      * In version 7.9.0: introduced
+      */
     var `type`: mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.DataType = js.native
     /**
-             * The value of this property is conceptually of type dataTypes.LegacyDataType.
-             *
-             * In version 7.9.0: deleted
-             */
+      * The value of this property is conceptually of type dataTypes.LegacyDataType.
+      *
+      * In version 7.9.0: deleted
+      */
     var xmlDataType: java.lang.String = js.native
     /**
-             * In version 6.1.0: introduced
-             */
+      * In version 6.1.0: introduced
+      */
     var xmlPrimitiveType: mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.XmlPrimitiveType = js.native
   }
   
   /**
-       * Interfaces and instance classes for types from the Mendix sub meta model `Mappings`.
-       */
+    * Interfaces and instance classes for types from the Mendix sub meta model `Mappings`.
+    */
   /**
-       * In version 6.6.0: introduced
-       */
+    * In version 6.6.0: introduced
+    */
   @js.native
   object Element extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -257,8 +257,8 @@ object mappingsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/mapping-documents relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/mapping-documents relevant section in reference guide}
+    */
   @js.native
   object MappingDocument extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -276,16 +276,16 @@ object mappingsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenMappingsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new MappingMicroflowCall instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new MappingMicroflowCall instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenMappingsMod.mappingsNs.MappingMicroflowCall = js.native
     /**
-             * Creates and returns a new MappingMicroflowCall instance in the SDK and on the server.
-             * The new MappingMicroflowCall will be automatically stored in the 'mappingMicroflowCall' property
-             * of the parent ObjectMappingElement element passed as argument.
-             */
+      * Creates and returns a new MappingMicroflowCall instance in the SDK and on the server.
+      * The new MappingMicroflowCall will be automatically stored in the 'mappingMicroflowCall' property
+      * of the parent ObjectMappingElement element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ObjectMappingElement): mendixmodelsdkLib.distGenMappingsMod.mappingsNs.MappingMicroflowCall = js.native
   }
   
@@ -294,16 +294,16 @@ object mappingsNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenMappingsMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new MappingMicroflowParameter instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new MappingMicroflowParameter instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenMappingsMod.mappingsNs.MappingMicroflowParameter = js.native
     /**
-             * Creates and returns a new MappingMicroflowParameter instance in the SDK and on the server.
-             * The new MappingMicroflowParameter will be automatically stored in the 'parameterMappings' property
-             * of the parent MappingMicroflowCall element passed as argument.
-             */
+      * Creates and returns a new MappingMicroflowParameter instance in the SDK and on the server.
+      * The new MappingMicroflowParameter will be automatically stored in the 'parameterMappings' property
+      * of the parent MappingMicroflowCall element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.MappingMicroflowCall): mendixmodelsdkLib.distGenMappingsMod.mappingsNs.MappingMicroflowParameter = js.native
   }
   

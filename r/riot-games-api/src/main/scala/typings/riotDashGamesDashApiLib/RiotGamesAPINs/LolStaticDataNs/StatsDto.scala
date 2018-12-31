@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StatsDto extends js.Object {
   var armor: scala.Double
   var armorperlevel: scala.Double

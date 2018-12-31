@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AutoText extends js.Object {
   /** The rendered content of this auto text, if available. */
   var content: js.UndefOr[java.lang.String] = js.undefined

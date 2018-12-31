@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DefaultIndex extends js.Object {
   var aniamtion: scala.Boolean
   var defaultIndex: scala.Double

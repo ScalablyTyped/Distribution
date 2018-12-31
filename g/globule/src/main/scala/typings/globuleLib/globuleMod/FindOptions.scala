@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FindOptions
   extends globLib.globMod.GNs.IOptions {
   var filter: js.UndefOr[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JobInformation extends js.Object {
   var cron: java.lang.String
   var endDate: js.UndefOr[scala.Double] = js.undefined

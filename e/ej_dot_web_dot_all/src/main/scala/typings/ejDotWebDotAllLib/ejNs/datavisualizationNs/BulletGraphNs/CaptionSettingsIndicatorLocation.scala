@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CaptionSettingsIndicatorLocation extends js.Object {
   /** Specifies the horizontal position of the indicator.
-               * @Default {10}
-               */
+    * @Default {10}
+    */
   var x: js.UndefOr[scala.Double] = js.undefined
   /** Specifies the vertical position of the indicator.
-               * @Default {60}
-               */
+    * @Default {60}
+    */
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 

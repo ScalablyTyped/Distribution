@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BlogList extends js.Object {
   /** Admin level list of blog per-user information */
   var blogUserInfos: js.UndefOr[js.Array[BlogUserInfo]] = js.undefined

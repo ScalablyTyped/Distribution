@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestInit extends js.Object {
   var body: js.UndefOr[`BodyInit_`] = js.undefined
   var credentials: js.UndefOr[`RequestCredentials_`] = js.undefined

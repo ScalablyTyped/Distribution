@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ItemStyle extends js.Object {
   var DefaultStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var error: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined

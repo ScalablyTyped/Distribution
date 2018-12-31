@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PiBoardId extends js.Object {
   var maker: scala.Double
   var mem: scala.Double

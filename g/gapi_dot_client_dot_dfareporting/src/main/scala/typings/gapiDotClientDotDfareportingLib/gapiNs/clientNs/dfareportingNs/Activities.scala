@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Activities extends js.Object {
   /** List of activity filters. The dimension values need to be all either of type "dfa:activity" or "dfa:activityGroup". */
   var filters: js.UndefOr[js.Array[DimensionValue]] = js.undefined

@@ -19,37 +19,21 @@ class DiagramNode protected () extends js.Object {
   val TextShape: Shape = js.native
   var `Word.DiagramNode_typekey`: DiagramNode = js.native
   /**
-           * @param Office.MsoRelativeNodePosition [Pos=2]
-           * @param Office.MsoDiagramNodeType [NodeType=1]
-           */
+    * @param Office.MsoRelativeNodePosition [Pos=2]
+    * @param Office.MsoDiagramNodeType [NodeType=1]
+    */
   def AddNode(): DiagramNode = js.native
-  /**
-           * @param Office.MsoRelativeNodePosition [Pos=2]
-           * @param Office.MsoDiagramNodeType [NodeType=1]
-           */
   def AddNode(Pos: activexDashOfficeLib.OfficeNs.MsoRelativeNodePosition): DiagramNode = js.native
-  /**
-           * @param Office.MsoRelativeNodePosition [Pos=2]
-           * @param Office.MsoDiagramNodeType [NodeType=1]
-           */
   def AddNode(
     Pos: activexDashOfficeLib.OfficeNs.MsoRelativeNodePosition,
     NodeType: activexDashOfficeLib.OfficeNs.MsoDiagramNodeType
   ): DiagramNode = js.native
   /**
-           * @param Word.DiagramNode [TargetNode=0]
-           * @param Office.MsoRelativeNodePosition [Pos=2]
-           */
+    * @param Word.DiagramNode [TargetNode=0]
+    * @param Office.MsoRelativeNodePosition [Pos=2]
+    */
   def CloneNode(copyChildren: scala.Boolean): DiagramNode = js.native
-  /**
-           * @param Word.DiagramNode [TargetNode=0]
-           * @param Office.MsoRelativeNodePosition [Pos=2]
-           */
   def CloneNode(copyChildren: scala.Boolean, TargetNode: DiagramNode): DiagramNode = js.native
-  /**
-           * @param Word.DiagramNode [TargetNode=0]
-           * @param Office.MsoRelativeNodePosition [Pos=2]
-           */
   def CloneNode(
     copyChildren: scala.Boolean,
     TargetNode: DiagramNode,
@@ -62,7 +46,6 @@ class DiagramNode protected () extends js.Object {
   def ReplaceNode(TargetNode: DiagramNode): scala.Unit = js.native
   /** @param Office.MsoRelativeNodePosition [Pos=-1] */
   def SwapNode(TargetNode: DiagramNode): scala.Unit = js.native
-  /** @param Office.MsoRelativeNodePosition [Pos=-1] */
   def SwapNode(TargetNode: DiagramNode, Pos: activexDashOfficeLib.OfficeNs.MsoRelativeNodePosition): scala.Unit = js.native
   def TransferChildren(ReceivingNode: DiagramNode): scala.Unit = js.native
 }

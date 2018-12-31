@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LanguageServiceHost extends GetEffectiveTypeRootsHost {
   var error: js.UndefOr[js.Function1[/* s */ java.lang.String, scala.Unit]] = js.undefined
   var fileExists: js.UndefOr[js.Function1[/* path */ java.lang.String, scala.Boolean]] = js.undefined
   var getCancellationToken: js.UndefOr[js.Function0[HostCancellationToken]] = js.undefined
   /**
-           * Gets a set of custom transformers to use during emit.
-           */
+    * Gets a set of custom transformers to use during emit.
+    */
   var getCustomTransformers: js.UndefOr[js.Function0[js.UndefOr[CustomTransformers]]] = js.undefined
   var getDirectories: js.UndefOr[js.Function1[/* directoryName */ java.lang.String, js.Array[java.lang.String]]] = js.undefined
   var getLocalizedDiagnosticMessages: js.UndefOr[js.Function0[_]] = js.undefined

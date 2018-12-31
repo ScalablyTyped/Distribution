@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AlertOptions extends js.Object {
   /** @platform android */
   var cancelable: js.UndefOr[scala.Boolean] = js.undefined

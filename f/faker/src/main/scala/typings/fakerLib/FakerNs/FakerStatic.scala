@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FakerStatic extends js.Object {
   var address: fakerLib.Anon_City
   var commerce: fakerLib.Anon_Price

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CirclesResource extends js.Object {
   /** Add a person to a circle. Google+ limits certain circle operations, including the number of circle adds. Learn More. */
   def addPeople(request: gapiDotClientDotPlusdomainsLib.Anon_Email): gapiDotClientLib.gapiNs.clientNs.Request[Circle]

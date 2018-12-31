@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictTabPaneProps extends js.Object {
   /** A tab pane can be active. */
   var active: js.UndefOr[scala.Boolean] = js.undefined

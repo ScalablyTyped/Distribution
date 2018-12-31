@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThreatInfo extends js.Object {
   /** The platform types to be checked. */
   var platformTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined

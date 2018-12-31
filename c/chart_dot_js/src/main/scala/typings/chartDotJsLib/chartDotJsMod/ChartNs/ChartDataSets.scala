@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartDataSets extends js.Object {
   var backgroundColor: js.UndefOr[ChartColor | js.Array[ChartColor]] = js.undefined
   var borderCapStyle: js.UndefOr[

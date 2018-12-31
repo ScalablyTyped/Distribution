@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InternationalizationOptions extends js.Object {
   var cancel: java.lang.String
   var clear: java.lang.String

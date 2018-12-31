@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SignatureMethod extends js.Object {
   var key: java.lang.String
   def getSignature(baseString: java.lang.String): java.lang.String

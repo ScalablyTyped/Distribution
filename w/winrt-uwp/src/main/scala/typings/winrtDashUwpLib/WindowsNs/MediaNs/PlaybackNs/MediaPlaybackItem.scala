@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.Media.Playback.MediaPlaybackItem")
 @js.native
 class MediaPlaybackItem protected () extends js.Object {
-   /* unmapped type *//**
-                   * Initializes a new instance of the MediaPlaybackItem class.
-                   * @param source The media source from which the MediaPlaybackItem is created.
-                   */
+   /* unmapped type */ /**
+    * Initializes a new instance of the MediaPlaybackItem class.
+    * @param source The media source from which the MediaPlaybackItem is created.
+    */
   def this(source: winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaSource) = this()
   /** Gets a read-only list of audio tracks in the MediaSource associated with the MediaPlaybackItem . */
   var audioTracks: MediaPlaybackAudioTrackList = js.native

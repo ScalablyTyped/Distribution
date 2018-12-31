@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CellularOptions extends js.Object {
   var born: js.UndefOr[rotDashJsLib.rotDashJsMod.Global.Array[scala.Double]] = js.undefined
   // Docs say this exists, even though it's never used:

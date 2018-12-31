@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-       * The `RoleMapping` model extends from the built in `loopback.Model` type.
-       * @property {string} id Generated ID.
-       * @property {string} name Name of the role.
-       * @property {string} Description Text description.
-       * @class RoleMapping
-       * @inherits {PersistedModel}
-       */
+  * The `RoleMapping` model extends from the built in `loopback.Model` type.
+  * @property {string} id Generated ID.
+  * @property {string} name Name of the role.
+  * @property {string} Description Text description.
+  * @class RoleMapping
+  * @inherits {PersistedModel}
+  */
 @JSImport("loopback", "RoleMapping")
 @js.native
 class RoleMapping ()
@@ -33,11 +33,11 @@ class RoleMapping ()
   /* CompleteClass */
   override def afterRemoteError(method: java.lang.String, callback: expressLib.expressMod.eNs.NextFunction): scala.Unit = js.native
   /**
-               * loopback 3.x Remote hooks
-               * http://loopback.io/doc/en/lb3/Remote-hooks.html
-               * @param method
-               * @param backback
-               */
+    * loopback 3.x Remote hooks
+    * http://loopback.io/doc/en/lb3/Remote-hooks.html
+    * @param method
+    * @param backback
+    */
   /* CompleteClass */
   override def beforeRemote(
     method: java.lang.String,

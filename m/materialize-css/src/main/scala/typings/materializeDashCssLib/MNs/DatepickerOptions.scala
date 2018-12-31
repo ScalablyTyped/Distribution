@@ -5,107 +5,106 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatepickerOptions extends js.Object {
   /**
-           * Automatically close picker when date is selected
-           * @default false
-           */
+    * Automatically close picker when date is selected
+    * @default false
+    */
   var autoClose: scala.Boolean
   /**
-           * Specify a DOM element to render the calendar in, by default it will be placed before the input
-           * @default null
-           */
+    * Specify a DOM element to render the calendar in, by default it will be placed before the input
+    * @default null
+    */
   var container: stdLib.Element
   /**
-           * The initial date to view when first opened.
-           */
+    * The initial date to view when first opened.
+    */
   var defaultDate: stdLib.Date
   /**
-           * Prevent selection of any date on the weekend.
-           * @default false
-           */
+    * Prevent selection of any date on the weekend.
+    * @default false
+    */
   var disableWeekends: scala.Boolean
   /**
-           * An array of string returned by `Date.toDateString()`, indicating there are events in the specified days.
-           * @default []
-           */
+    * An array of string returned by `Date.toDateString()`, indicating there are events in the specified days.
+    * @default []
+    */
   var events: js.Array[java.lang.String]
   /**
-           * First day of week (0: Sunday, 1: Monday etc).
-           * @default 0
-           */
+    * First day of week (0: Sunday, 1: Monday etc).
+    * @default 0
+    */
   var firstDay: scala.Double
   /**
-           * The date output format for the input field value.
-           * @default 'mmm dd, yyyy'
-           */
+    * The date output format for the input field value.
+    * @default 'mmm dd, yyyy'
+    */
   var format: java.lang.String
   /**
-           * Internationalization options
-           */
+    * Internationalization options
+    */
   var i18n: stdLib.Partial[InternationalizationOptions]
   /**
-           * Changes Datepicker to RTL.
-           * @default false
-           */
+    * Changes Datepicker to RTL.
+    * @default false
+    */
   var isRTL: scala.Boolean
   /**
-           * The latest date that can be selected.
-           */
+    * The latest date that can be selected.
+    */
   var maxDate: stdLib.Date
   /**
-           * The earliest date that can be selected.
-           */
+    * The earliest date that can be selected.
+    */
   var minDate: stdLib.Date
   /**
-           * Make the `defaultDate` the initial selected value
-           * @default false
-           */
+    * Make the `defaultDate` the initial selected value
+    * @default false
+    */
   var setDefaultDate: scala.Boolean
   /**
-           * Show the clear button in the datepicker
-           * @default false
-           */
+    * Show the clear button in the datepicker
+    * @default false
+    */
   var showClearBtn: scala.Boolean
   /**
-           * Render days of the calendar grid that fall in the next or previous month.
-           * @default false
-           */
+    * Render days of the calendar grid that fall in the next or previous month.
+    * @default false
+    */
   var showDaysInNextAndPreviousMonths: scala.Boolean
   /**
-           * Show month after year in Datepicker title.
-           * @default false
-           */
+    * Show month after year in Datepicker title.
+    * @default false
+    */
   var showMonthAfterYear: scala.Boolean
   /**
-           * Number of years either side, or array of upper/lower range.
-           * @default 10
-           */
+    * Number of years either side, or array of upper/lower range.
+    * @default 10
+    */
   var yearRange: scala.Double | js.Array[scala.Double]
   /**
-           * Custom function to disable certain days.
-           */
+    * Custom function to disable certain days.
+    */
   def disableDayFn(day: stdLib.Date): scala.Boolean
   /**
-           * Callback function when Datepicker is closed
-           */
+    * Callback function when Datepicker is closed
+    */
   def onClose(`this`: Datepicker): scala.Unit
   /**
-           * Callback function when Datepicker HTML is refreshed
-           */
+    * Callback function when Datepicker HTML is refreshed
+    */
   def onDraw(`this`: Datepicker): scala.Unit
   /**
-           * Callback function when Datepicker is opened
-           */
+    * Callback function when Datepicker is opened
+    */
   def onOpen(`this`: Datepicker): scala.Unit
   /**
-           * Callback function when date is selected, first parameter is the newly selected date.
-           */
+    * Callback function when date is selected, first parameter is the newly selected date.
+    */
   def onSelect(`this`: Datepicker, selectedDate: stdLib.Date): scala.Unit
   /**
-           * Used to create date object from current input string.
-           */
+    * Used to create date object from current input string.
+    */
   def parse(value: java.lang.String, format: java.lang.String): stdLib.Date
 }
 

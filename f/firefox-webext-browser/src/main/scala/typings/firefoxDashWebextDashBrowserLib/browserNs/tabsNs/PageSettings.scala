@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** The page settings including: orientation, scale, background, margins, headers, footers. */
-
 trait PageSettings extends js.Object {
   /** The spacing between the bottom of the footers and the bottom edge of the paper (inches). Default: 0. */
   var edgeBottom: js.UndefOr[scala.Double] = js.undefined

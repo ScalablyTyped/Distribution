@@ -6,23 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * @classdesc
-     * Feature format for `*.igc` flight recording files.
-     *
-     * @param opt_options Options.
-     * @api
-     */
+  * @classdesc
+  * Feature format for `*.igc` flight recording files.
+  *
+  * @param opt_options Options.
+  * @api
+  */
 @JSImport("ol/format/igc", JSImport.Default)
 @js.native
+/**
+  * @classdesc
+  * Feature format for `*.igc` flight recording files.
+  *
+  * @param opt_options Options.
+  * @api
+  */
 class default ()
   extends openlayersLib.openlayersMod.formatNs.IGC {
-  /**
-           * @classdesc
-           * Feature format for `*.igc` flight recording files.
-           *
-           * @param opt_options Options.
-           * @api
-           */
   def this(opt_options: openlayersLib.openlayersMod.olxNs.formatNs.IGCOptions) = this()
 }
 

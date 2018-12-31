@@ -205,6 +205,9 @@ object sortablejsLibStrings {
   sealed trait captionSide extends js.Object
   
   @js.native
+  sealed trait chosenClass extends js.Object
+  
+  @js.native
   sealed trait clear extends js.Object
   
   @js.native
@@ -274,7 +277,16 @@ object sortablejsLibStrings {
   sealed trait cursor extends js.Object
   
   @js.native
+  sealed trait dataIdAttr extends js.Object
+  
+  @js.native
+  sealed trait delay extends js.Object
+  
+  @js.native
   sealed trait direction extends js.Object
+  
+  @js.native
+  sealed trait disabled extends js.Object
   
   @js.native
   sealed trait display extends js.Object
@@ -283,10 +295,34 @@ object sortablejsLibStrings {
   sealed trait dominantBaseline extends js.Object
   
   @js.native
+  sealed trait dragClass extends js.Object
+  
+  @js.native
+  sealed trait draggable extends js.Object
+  
+  @js.native
+  sealed trait dragoverBubble extends js.Object
+  
+  @js.native
+  sealed trait dropBubble extends js.Object
+  
+  @js.native
   sealed trait emptyCells extends js.Object
   
   @js.native
   sealed trait enableBackground extends js.Object
+  
+  @js.native
+  sealed trait fallbackClass extends js.Object
+  
+  @js.native
+  sealed trait fallbackOffset extends js.Object
+  
+  @js.native
+  sealed trait fallbackOnBody extends js.Object
+  
+  @js.native
+  sealed trait fallbackTolerance extends js.Object
   
   @js.native
   sealed trait fill extends js.Object
@@ -355,7 +391,13 @@ object sortablejsLibStrings {
   sealed trait fontWeight extends js.Object
   
   @js.native
+  sealed trait forceFallback extends js.Object
+  
+  @js.native
   sealed trait gap extends js.Object
+  
+  @js.native
+  sealed trait ghostClass extends js.Object
   
   @js.native
   sealed trait glyphOrientationHorizontal extends js.Object
@@ -418,7 +460,16 @@ object sortablejsLibStrings {
   sealed trait gridTemplateRows extends js.Object
   
   @js.native
+  sealed trait group extends js.Object
+  
+  @js.native
+  sealed trait handle extends js.Object
+  
+  @js.native
   sealed trait height extends js.Object
+  
+  @js.native
+  sealed trait ignore extends js.Object
   
   @js.native
   sealed trait imeMode extends js.Object
@@ -452,6 +503,9 @@ object sortablejsLibStrings {
   
   @js.native
   sealed trait left extends js.Object
+  
+  @js.native
+  sealed trait length extends js.Object
   
   @js.native
   sealed trait letterSpacing extends js.Object
@@ -727,6 +781,9 @@ object sortablejsLibStrings {
   sealed trait pageBreakInside extends js.Object
   
   @js.native
+  sealed trait parentRule extends js.Object
+  
+  @js.native
   sealed trait penAction extends js.Object
   
   @js.native
@@ -740,6 +797,9 @@ object sortablejsLibStrings {
   
   @js.native
   sealed trait position extends js.Object
+  
+  @js.native
+  sealed trait preventOnFilter extends js.Object
   
   @js.native
   sealed trait quotes extends js.Object
@@ -769,13 +829,28 @@ object sortablejsLibStrings {
   sealed trait scale extends js.Object
   
   @js.native
+  sealed trait scroll extends js.Object
+  
+  @js.native
   sealed trait scrollBehavior extends js.Object
+  
+  @js.native
+  sealed trait scrollSensitivity extends js.Object
+  
+  @js.native
+  sealed trait scrollSpeed extends js.Object
+  
+  @js.native
+  sealed trait sort extends js.Object
   
   @js.native
   sealed trait stopColor extends js.Object
   
   @js.native
   sealed trait stopOpacity extends js.Object
+  
+  @js.native
+  sealed trait store extends js.Object
   
   @js.native
   sealed trait stroke extends js.Object
@@ -1239,6 +1314,7 @@ object sortablejsLibStrings {
   def breakBefore: breakBefore = "breakBefore".asInstanceOf[breakBefore]
   def breakInside: breakInside = "breakInside".asInstanceOf[breakInside]
   def captionSide: captionSide = "captionSide".asInstanceOf[captionSide]
+  def chosenClass: chosenClass = "chosenClass".asInstanceOf[chosenClass]
   def clear: clear = "clear".asInstanceOf[clear]
   def clip: clip = "clip".asInstanceOf[clip]
   def clipPath: clipPath = "clipPath".asInstanceOf[clipPath]
@@ -1261,11 +1337,22 @@ object sortablejsLibStrings {
   def cssFloat: cssFloat = "cssFloat".asInstanceOf[cssFloat]
   def cssText: cssText = "cssText".asInstanceOf[cssText]
   def cursor: cursor = "cursor".asInstanceOf[cursor]
+  def dataIdAttr: dataIdAttr = "dataIdAttr".asInstanceOf[dataIdAttr]
+  def delay: delay = "delay".asInstanceOf[delay]
   def direction: direction = "direction".asInstanceOf[direction]
+  def disabled: disabled = "disabled".asInstanceOf[disabled]
   def display: display = "display".asInstanceOf[display]
   def dominantBaseline: dominantBaseline = "dominantBaseline".asInstanceOf[dominantBaseline]
+  def dragClass: dragClass = "dragClass".asInstanceOf[dragClass]
+  def draggable: draggable = "draggable".asInstanceOf[draggable]
+  def dragoverBubble: dragoverBubble = "dragoverBubble".asInstanceOf[dragoverBubble]
+  def dropBubble: dropBubble = "dropBubble".asInstanceOf[dropBubble]
   def emptyCells: emptyCells = "emptyCells".asInstanceOf[emptyCells]
   def enableBackground: enableBackground = "enableBackground".asInstanceOf[enableBackground]
+  def fallbackClass: fallbackClass = "fallbackClass".asInstanceOf[fallbackClass]
+  def fallbackOffset: fallbackOffset = "fallbackOffset".asInstanceOf[fallbackOffset]
+  def fallbackOnBody: fallbackOnBody = "fallbackOnBody".asInstanceOf[fallbackOnBody]
+  def fallbackTolerance: fallbackTolerance = "fallbackTolerance".asInstanceOf[fallbackTolerance]
   def fill: fill = "fill".asInstanceOf[fill]
   def fillOpacity: fillOpacity = "fillOpacity".asInstanceOf[fillOpacity]
   def fillRule: fillRule = "fillRule".asInstanceOf[fillRule]
@@ -1288,7 +1375,9 @@ object sortablejsLibStrings {
   def fontStyle: fontStyle = "fontStyle".asInstanceOf[fontStyle]
   def fontVariant: fontVariant = "fontVariant".asInstanceOf[fontVariant]
   def fontWeight: fontWeight = "fontWeight".asInstanceOf[fontWeight]
+  def forceFallback: forceFallback = "forceFallback".asInstanceOf[forceFallback]
   def gap: gap = "gap".asInstanceOf[gap]
+  def ghostClass: ghostClass = "ghostClass".asInstanceOf[ghostClass]
   def glyphOrientationHorizontal: glyphOrientationHorizontal = "glyphOrientationHorizontal".asInstanceOf[glyphOrientationHorizontal]
   def glyphOrientationVertical: glyphOrientationVertical = "glyphOrientationVertical".asInstanceOf[glyphOrientationVertical]
   def grid: grid = "grid".asInstanceOf[grid]
@@ -1309,7 +1398,10 @@ object sortablejsLibStrings {
   def gridTemplateAreas: gridTemplateAreas = "gridTemplateAreas".asInstanceOf[gridTemplateAreas]
   def gridTemplateColumns: gridTemplateColumns = "gridTemplateColumns".asInstanceOf[gridTemplateColumns]
   def gridTemplateRows: gridTemplateRows = "gridTemplateRows".asInstanceOf[gridTemplateRows]
+  def group: group = "group".asInstanceOf[group]
+  def handle: handle = "handle".asInstanceOf[handle]
   def height: height = "height".asInstanceOf[height]
+  def ignore: ignore = "ignore".asInstanceOf[ignore]
   def imeMode: imeMode = "imeMode".asInstanceOf[imeMode]
   def justifyContent: justifyContent = "justifyContent".asInstanceOf[justifyContent]
   def justifyItems: justifyItems = "justifyItems".asInstanceOf[justifyItems]
@@ -1321,6 +1413,7 @@ object sortablejsLibStrings {
   def layoutGridMode: layoutGridMode = "layoutGridMode".asInstanceOf[layoutGridMode]
   def layoutGridType: layoutGridType = "layoutGridType".asInstanceOf[layoutGridType]
   def left: left = "left".asInstanceOf[left]
+  def length: length = "length".asInstanceOf[length]
   def letterSpacing: letterSpacing = "letterSpacing".asInstanceOf[letterSpacing]
   def lightingColor: lightingColor = "lightingColor".asInstanceOf[lightingColor]
   def lineBreak: lineBreak = "lineBreak".asInstanceOf[lineBreak]
@@ -1412,11 +1505,13 @@ object sortablejsLibStrings {
   def pageBreakAfter: pageBreakAfter = "pageBreakAfter".asInstanceOf[pageBreakAfter]
   def pageBreakBefore: pageBreakBefore = "pageBreakBefore".asInstanceOf[pageBreakBefore]
   def pageBreakInside: pageBreakInside = "pageBreakInside".asInstanceOf[pageBreakInside]
+  def parentRule: parentRule = "parentRule".asInstanceOf[parentRule]
   def penAction: penAction = "penAction".asInstanceOf[penAction]
   def perspective: perspective = "perspective".asInstanceOf[perspective]
   def perspectiveOrigin: perspectiveOrigin = "perspectiveOrigin".asInstanceOf[perspectiveOrigin]
   def pointerEvents: pointerEvents = "pointerEvents".asInstanceOf[pointerEvents]
   def position: position = "position".asInstanceOf[position]
+  def preventOnFilter: preventOnFilter = "preventOnFilter".asInstanceOf[preventOnFilter]
   def quotes: quotes = "quotes".asInstanceOf[quotes]
   def resize: resize = "resize".asInstanceOf[resize]
   def right: right = "right".asInstanceOf[right]
@@ -1426,9 +1521,14 @@ object sortablejsLibStrings {
   def rubyOverhang: rubyOverhang = "rubyOverhang".asInstanceOf[rubyOverhang]
   def rubyPosition: rubyPosition = "rubyPosition".asInstanceOf[rubyPosition]
   def scale: scale = "scale".asInstanceOf[scale]
+  def scroll: scroll = "scroll".asInstanceOf[scroll]
   def scrollBehavior: scrollBehavior = "scrollBehavior".asInstanceOf[scrollBehavior]
+  def scrollSensitivity: scrollSensitivity = "scrollSensitivity".asInstanceOf[scrollSensitivity]
+  def scrollSpeed: scrollSpeed = "scrollSpeed".asInstanceOf[scrollSpeed]
+  def sort: sort = "sort".asInstanceOf[sort]
   def stopColor: stopColor = "stopColor".asInstanceOf[stopColor]
   def stopOpacity: stopOpacity = "stopOpacity".asInstanceOf[stopOpacity]
+  def store: store = "store".asInstanceOf[store]
   def stroke: stroke = "stroke".asInstanceOf[stroke]
   def strokeDasharray: strokeDasharray = "strokeDasharray".asInstanceOf[strokeDasharray]
   def strokeDashoffset: strokeDashoffset = "strokeDashoffset".asInstanceOf[strokeDashoffset]

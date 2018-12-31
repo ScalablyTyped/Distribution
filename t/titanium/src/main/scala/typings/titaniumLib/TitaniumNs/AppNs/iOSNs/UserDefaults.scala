@@ -21,49 +21,31 @@ trait UserDefaults
   				 * Returns the value of a property as a boolean data type.
   				 */
   def getBool(property: java.lang.String): scala.Boolean = js.native
-  /**
-  				 * Returns the value of a property as a boolean data type.
-  				 */
   def getBool(property: java.lang.String, defaultValue: scala.Boolean): scala.Boolean = js.native
   /**
   				 * Returns the value of a property as a double (double-precision, floating point) data type.
   				 */
   def getDouble(property: java.lang.String): scala.Double = js.native
-  /**
-  				 * Returns the value of a property as a double (double-precision, floating point) data type.
-  				 */
   def getDouble(property: java.lang.String, defaultValue: scala.Double): scala.Double = js.native
   /**
   				 * Returns the value of a property as an integer data type.
   				 */
   def getInt(property: java.lang.String): scala.Double = js.native
-  /**
-  				 * Returns the value of a property as an integer data type.
-  				 */
   def getInt(property: java.lang.String, defaultValue: scala.Double): scala.Double = js.native
   /**
   				 * Returns the value of a property as an array data type.
   				 */
   def getList(property: java.lang.String): js.Array[_] = js.native
-  /**
-  				 * Returns the value of a property as an array data type.
-  				 */
   def getList(property: java.lang.String, defaultValue: js.Array[_]): js.Array[_] = js.native
   /**
   				 * Returns the value of a property as an object.
   				 */
   def getObject(property: java.lang.String): js.Any = js.native
-  /**
-  				 * Returns the value of a property as an object.
-  				 */
   def getObject(property: java.lang.String, defaultValue: js.Any): js.Any = js.native
   /**
   				 * Returns the value of a property as a string data type.
   				 */
   def getString(property: java.lang.String): java.lang.String = js.native
-  /**
-  				 * Returns the value of a property as a string data type.
-  				 */
   def getString(property: java.lang.String, defaultValue: java.lang.String): java.lang.String = js.native
   /**
   				 * Gets the value of the <Titanium.App.iOS.UserDefaults.suiteName> property.

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-   * Options for isNumeric
-   */
-
+  * Options for isNumeric
+  */
 trait IsNumericOptions extends js.Object {
   var no_symbols: js.UndefOr[scala.Boolean] = js.undefined
 }

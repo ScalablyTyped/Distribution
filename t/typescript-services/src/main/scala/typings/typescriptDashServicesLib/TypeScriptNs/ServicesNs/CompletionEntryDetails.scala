@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompletionEntryDetails extends js.Object {
   var docComment: java.lang.String
   var fullSymbolName: java.lang.String

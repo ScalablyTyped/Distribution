@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRouteSubLeg extends js.Object {
   /** The location of the last waypoint of the sub leg. */
   var actualEnd: bingmapsLib.MicrosoftNs.MapsNs.Location

@@ -59,12 +59,9 @@ class Map protected () extends Evented {
   def getMaxZoom(): scala.Double = js.native
   def getMinZoom(): scala.Double = js.native
   /**
-       * Name of the pane or the pane as HTML-Element
-       */
+    * Name of the pane or the pane as HTML-Element
+    */
   def getPane(pane: java.lang.String): js.UndefOr[stdLib.HTMLElement] = js.native
-  /**
-       * Name of the pane or the pane as HTML-Element
-       */
   def getPane(pane: stdLib.HTMLElement): js.UndefOr[stdLib.HTMLElement] = js.native
   def getPanes(): org.scalablytyped.runtime.StringDictionary[stdLib.HTMLElement] with DefaultMapPanes = js.native
   def getPixelBounds(): Bounds = js.native
@@ -79,16 +76,10 @@ class Map protected () extends Evented {
   def getZoomScale(toZoom: scala.Double, fromZoom: scala.Double): scala.Double = js.native
   def hasLayer(layer: Layer): scala.Boolean = js.native
   /**
-       * Boolean for animate or advanced ZoomPanOptions
-       */
+    * Boolean for animate or advanced ZoomPanOptions
+    */
   def invalidateSize(): this.type = js.native
-  /**
-       * Boolean for animate or advanced ZoomPanOptions
-       */
   def invalidateSize(options: ZoomPanOptions): this.type = js.native
-  /**
-       * Boolean for animate or advanced ZoomPanOptions
-       */
   def invalidateSize(options: scala.Boolean): this.type = js.native
   def latLngToContainerPoint(latlng: LatLngExpression): Point = js.native
   def latLngToLayerPoint(latlng: LatLngExpression): Point = js.native
@@ -96,7 +87,6 @@ class Map protected () extends Evented {
   def layerPointToLatLng(point: PointExpression): LatLng = js.native
   // Geolocation methods
   def locate(): this.type = js.native
-  // Geolocation methods
   def locate(options: LocateOptions): this.type = js.native
   def mouseEventToContainerPoint(ev: stdLib.MouseEvent): Point = js.native
   def mouseEventToLatLng(ev: stdLib.MouseEvent): LatLng = js.native
@@ -122,7 +112,6 @@ class Map protected () extends Evented {
   def setMinZoom(zoom: scala.Double): this.type = js.native
   // Methods for modifying map state
   def setView(center: LatLngExpression, zoom: scala.Double): this.type = js.native
-  // Methods for modifying map state
   def setView(center: LatLngExpression, zoom: scala.Double, options: ZoomPanOptions): this.type = js.native
   def setZoom(zoom: scala.Double): this.type = js.native
   def setZoom(zoom: scala.Double, options: ZoomPanOptions): this.type = js.native

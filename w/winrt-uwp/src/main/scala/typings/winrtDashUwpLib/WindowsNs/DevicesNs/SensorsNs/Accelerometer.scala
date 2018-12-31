@@ -39,9 +39,9 @@ abstract class Accelerometer () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[Accelerometer, AccelerometerShakenEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Gets the current accelerometer reading.
-                   * @return This method has no parameters.
-                   */
+    * Gets the current accelerometer reading.
+    * @return This method has no parameters.
+    */
   def getCurrentReading(): AccelerometerReading = js.native
   /** Occurs each time the accelerometer reports a new sensor reading. */
   def onreadingchanged(ev: AccelerometerReadingChangedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[Accelerometer]): scala.Unit = js.native
@@ -65,9 +65,9 @@ abstract class Accelerometer () extends js.Object {
 @js.native
 object Accelerometer extends js.Object {
   /**
-                   * Returns the default accelerometer.
-                   * @return The default accelerometer or null if no integrated accelerometers are found.
-                   */
+    * Returns the default accelerometer.
+    * @return The default accelerometer or null if no integrated accelerometers are found.
+    */
   def getDefault(): winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.Accelerometer = js.native
 }
 

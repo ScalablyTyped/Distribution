@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ConstrainMode extends js.Object {
   var checkboxVisibility: officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.CheckboxVisibility
   var compact: scala.Boolean

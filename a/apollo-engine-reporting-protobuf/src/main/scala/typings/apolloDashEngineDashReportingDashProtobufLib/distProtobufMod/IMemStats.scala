@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMemStats extends js.Object {
   /** MemStats gcCountDelta */
   var gcCountDelta: js.UndefOr[scala.Double | scala.Null] = js.undefined

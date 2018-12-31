@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SavedFileInfoData extends js.Object {
   /**
   		 * 创建时间

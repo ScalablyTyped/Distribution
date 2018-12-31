@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IReferenceResolverHost extends js.Object {
   def directoryExists(path: java.lang.String): scala.Boolean
   def fileExists(path: java.lang.String): scala.Boolean

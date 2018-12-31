@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Index extends js.Object {
   /** Design document name (i.e. the part after '_design/', auto-generated if you don't include it */
   var ddoc: java.lang.String | scala.Null

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait coreVisitors[V] extends js.Object {
   var ArrayExpression: js.UndefOr[V] = js.undefined
   var AssignmentExpression: js.UndefOr[V] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObjectCallback extends js.Object {
    // The host header value for initiating callback requests.
   var body: java.lang.String

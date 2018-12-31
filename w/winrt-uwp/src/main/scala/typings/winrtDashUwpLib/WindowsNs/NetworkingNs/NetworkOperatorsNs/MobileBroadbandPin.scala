@@ -24,36 +24,36 @@ abstract class MobileBroadbandPin () extends js.Object {
   /** Gets the PIN type for a mobile broadband PIN. */
   var `type`: MobileBroadbandPinType = js.native
   /**
-                   * Starts an asynchronous operation to change an already-enabled mobile broadband PIN.
-                   * @param currentPin The current mobile broadband PIN.
-                   * @param newPin The new mobile broadband PIN.
-                   * @return An asynchronous operation that returns the result.
-                   */
+    * Starts an asynchronous operation to change an already-enabled mobile broadband PIN.
+    * @param currentPin The current mobile broadband PIN.
+    * @param newPin The new mobile broadband PIN.
+    * @return An asynchronous operation that returns the result.
+    */
   def changeAsync(currentPin: java.lang.String, newPin: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult] = js.native
   /**
-                   * Starts an asynchronous operation to disable a previously-enabled mobile broadband PIN.
-                   * @param currentPin The current mobile broadband PIN.
-                   * @return An asynchronous operation that returns the result.
-                   */
+    * Starts an asynchronous operation to disable a previously-enabled mobile broadband PIN.
+    * @param currentPin The current mobile broadband PIN.
+    * @return An asynchronous operation that returns the result.
+    */
   def disableAsync(currentPin: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult] = js.native
   /**
-                   * Starts an asynchronous operation to enable a previously-disabled mobile broadband PIN.
-                   * @param currentPin The current mobile broadband PIN.
-                   * @return An asynchronous operation that returns the result.
-                   */
+    * Starts an asynchronous operation to enable a previously-disabled mobile broadband PIN.
+    * @param currentPin The current mobile broadband PIN.
+    * @return An asynchronous operation that returns the result.
+    */
   def enableAsync(currentPin: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult] = js.native
   /**
-                   * Starts an asynchronous operation to get the current mobile broadband PIN from the user.
-                   * @param currentPin The current mobile broadband PIN.
-                   * @return An asynchronous operation that returns the result.
-                   */
+    * Starts an asynchronous operation to get the current mobile broadband PIN from the user.
+    * @param currentPin The current mobile broadband PIN.
+    * @return An asynchronous operation that returns the result.
+    */
   def enterAsync(currentPin: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult] = js.native
   /**
-                   * Starts an asynchronous operation to unblock a previously-blocked mobile broadband PIN using a PIN unlock key (PUK).
-                   * @param pinUnblockKey The PIN unblock key.
-                   * @param newPin The new mobile broadband PIN.
-                   * @return An asynchronous operation that returns the result.
-                   */
+    * Starts an asynchronous operation to unblock a previously-blocked mobile broadband PIN using a PIN unlock key (PUK).
+    * @param pinUnblockKey The PIN unblock key.
+    * @param newPin The new mobile broadband PIN.
+    * @return An asynchronous operation that returns the result.
+    */
   def unblockAsync(pinUnblockKey: java.lang.String, newPin: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult] = js.native
 }
 

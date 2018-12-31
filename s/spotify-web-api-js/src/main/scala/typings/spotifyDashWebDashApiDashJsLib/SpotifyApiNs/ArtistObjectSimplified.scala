@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Simplified Artist Object
-     * [artist object (simplified)](https://developer.spotify.com/web-api/object-model/)
-     */
-
+  * Simplified Artist Object
+  * [artist object (simplified)](https://developer.spotify.com/web-api/object-model/)
+  */
 trait ArtistObjectSimplified extends js.Object {
   var external_urls: ExternalUrlObject
   var href: java.lang.String

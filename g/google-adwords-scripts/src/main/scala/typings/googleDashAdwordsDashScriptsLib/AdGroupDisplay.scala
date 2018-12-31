@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AdGroupDisplay extends Display {
   def excludedAudiences(): AdWordsSelector[ExcludedAudience]
   def excludedKeywords(): AdWordsSelector[ExcludedDisplayKeyword]

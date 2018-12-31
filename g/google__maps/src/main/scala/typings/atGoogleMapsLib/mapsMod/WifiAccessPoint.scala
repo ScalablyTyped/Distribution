@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WifiAccessPoint extends js.Object {
   /** The number of milliseconds since this access point was detected. */
   var age: js.UndefOr[scala.Double] = js.undefined

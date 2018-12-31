@@ -30,7 +30,7 @@ object MemoryManager extends js.Object {
   @JSName("onappmemoryusagelimitchanging")
   var onappmemoryusagelimitchanging_Original: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_] = js.native
   var trySetAppMemoryUsageLimit: js.Any = js.native
-   /* unmapped type */def addEventListener(`type`: java.lang.String, listener: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_]): scala.Unit = js.native
+   /* unmapped type */ def addEventListener(`type`: java.lang.String, listener: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_]): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_appmemoryusagedecreased(
     `type`: winrtDashUwpLib.winrtDashUwpLibStrings.appmemoryusagedecreased,
@@ -47,14 +47,14 @@ object MemoryManager extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_]
   ): scala.Unit = js.native
   /**
-               * Gets an AppMemoryReport for the app, which provides information about its memory usage.
-               * @return Information about the process' memory usage.
-               */
+    * Gets an AppMemoryReport for the app, which provides information about its memory usage.
+    * @return Information about the process' memory usage.
+    */
   def getAppMemoryReport(): winrtDashUwpLib.WindowsNs.SystemNs.AppMemoryReport = js.native
   /**
-               * Gets a ProcessMemoryReport for a process, which provides information about its memory usage.
-               * @return Information about the process' memory usage.
-               */
+    * Gets a ProcessMemoryReport for a process, which provides information about its memory usage.
+    * @return Information about the process' memory usage.
+    */
   def getProcessMemoryReport(): winrtDashUwpLib.WindowsNs.SystemNs.ProcessMemoryReport = js.native
   /** Raised when the app's memory consumption has decreased to a lower value in the AppMemoryUsageLevel enumeration. */
   def onappmemoryusagedecreased(ev: js.Any with winrtDashUwpLib.WindowsNs.WinRTEvent[_]): scala.Unit = js.native

@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation._
 trait MDCTabFoundation
   extends atMaterialBaseLib.foundationMod.default[atMaterialTabLib.adapterMod.MDCTabAdapter] {
   /**
-       * Activates the Tab
-       */
+    * Activates the Tab
+    */
   def activate(): scala.Unit = js.native
   /**
-       * Deactivates the Tab
-       */
+    * Deactivates the Tab
+    */
   def deactivate(): scala.Unit = js.native
   def handleTransitionEnd(evt: stdLib.Event): scala.Unit = js.native
   /**
-       * Returns the Tab's active state
-       */
+    * Returns the Tab's active state
+    */
   def isActive(): scala.Boolean = js.native
 }
 

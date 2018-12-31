@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SrcEvent extends js.Object {
   var availablePan: js.UndefOr[scala.Boolean] = js.undefined
   var direction: js.UndefOr[scala.Double] = js.undefined

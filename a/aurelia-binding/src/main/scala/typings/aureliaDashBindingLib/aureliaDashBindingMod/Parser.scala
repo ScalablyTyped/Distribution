@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Parser () extends js.Object {
   /**
-     * Parses a string containing a javascript expression and returns a data-binding specialized AST. Memoized.
-     */
+    * Parses a string containing a javascript expression and returns a data-binding specialized AST. Memoized.
+    */
   def parse(input: java.lang.String): Expression = js.native
 }
 

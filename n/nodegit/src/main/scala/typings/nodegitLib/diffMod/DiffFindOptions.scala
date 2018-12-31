@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiffFindOptions extends js.Object {
   var breakRewriteThreshold: js.UndefOr[scala.Double] = js.undefined
   var copyThreshold: js.UndefOr[scala.Double] = js.undefined

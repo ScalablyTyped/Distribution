@@ -15,8 +15,8 @@ class ReflectionCapabilities ()
   var _ownPropMetadata: js.Any = js.native
   var _reflect: js.Any = js.native
   /**
-       * Return a list of annotations declared on the class
-       */
+    * Return a list of annotations declared on the class
+    */
   /* CompleteClass */
   override def annotations(`type`: atAngularCoreLib.srcTypeMod.Type[_]): js.Array[_] = js.native
   /* CompleteClass */
@@ -35,13 +35,13 @@ class ReflectionCapabilities ()
   /* CompleteClass */
   override def method(name: java.lang.String): atAngularCoreLib.srcReflectionTypesMod.MethodFn = js.native
   /**
-       * Return a list of annotations/types for constructor parameters
-       */
+    * Return a list of annotations/types for constructor parameters
+    */
   /* CompleteClass */
   override def parameters(`type`: atAngularCoreLib.srcTypeMod.Type[_]): js.Array[js.Array[_]] = js.native
   /**
-       * Return a object literal which describes the annotations on Class fields/properties.
-       */
+    * Return a object literal which describes the annotations on Class fields/properties.
+    */
   /* CompleteClass */
   override def propMetadata(typeOrFunc: atAngularCoreLib.srcTypeMod.Type[_]): org.scalablytyped.runtime.StringDictionary[js.Array[_]] = js.native
   def propMetadata(typeOrFunc: js.Any): org.scalablytyped.runtime.StringDictionary[js.Array[_]] = js.native

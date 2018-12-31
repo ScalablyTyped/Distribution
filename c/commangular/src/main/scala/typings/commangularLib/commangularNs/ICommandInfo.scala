@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 	 * Object type expected to be passed into the callback function
 	 * of the dispatch() function
 	 */
-
 trait ICommandInfo extends js.Object {
   /**
   		 * Indicates if the command execution was cancelled.

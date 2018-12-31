@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompletionObserver[T] extends js.Object {
   var closed: js.UndefOr[scala.Boolean] = js.undefined
   var error: js.UndefOr[js.Function1[/* err */ js.Any, scala.Unit]] = js.undefined

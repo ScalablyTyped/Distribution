@@ -33,9 +33,9 @@ abstract class EmailMailboxSyncManager () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[EmailMailboxSyncManager, _]
   ): scala.Unit = js.native
   /**
-                   * Initiates a sync of this mailbox.
-                   * @return A Boolean value indicating success.
-                   */
+    * Initiates a sync of this mailbox.
+    * @return A Boolean value indicating success.
+    */
   def syncAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
 }
 

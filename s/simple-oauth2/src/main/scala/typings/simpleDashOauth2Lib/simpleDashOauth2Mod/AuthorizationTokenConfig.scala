@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AuthorizationTokenConfig extends js.Object {
   /** Authorization code (from previous step) */
   var code: AuthorizationCode

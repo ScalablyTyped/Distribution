@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object MUCNs {
-  type Occupant = js.Any
-  type OccupantInfo = js.Any
-  type OccupantMap = js.Any
-  type Plugin = js.Any
-  type RoomConfig = js.Any
-  type XmppRoom = js.Any
+  type Occupant = /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify _MUC.Occupant */ js.Any
+  type OccupantInfo = /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify _MUC.OccupantInfo */ js.Any
+  type OccupantMap = /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify _MUC.OccupantMap */ js.Any
+  type Plugin = /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify _MUC.Plugin */ js.Any
+  type RoomConfig = /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify _MUC.RoomConfig */ js.Any
+  type XmppRoom = /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify _MUC.XmppRoom */ js.Any
 }

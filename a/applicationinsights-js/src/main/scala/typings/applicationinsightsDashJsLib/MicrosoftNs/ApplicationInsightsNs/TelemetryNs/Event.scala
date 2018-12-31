@@ -10,22 +10,16 @@ import scala.scalajs.js.annotation._
 class Event protected ()
   extends applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.ISerializable {
   /**
-           * Constructs a new instance of the EventTelemetry object
-           */
+    * Constructs a new instance of the EventTelemetry object
+    */
   def this(name: java.lang.String) = this()
-  /**
-           * Constructs a new instance of the EventTelemetry object
-           */
   def this(name: java.lang.String, properties: js.Any) = this()
-  /**
-           * Constructs a new instance of the EventTelemetry object
-           */
   def this(name: java.lang.String, properties: js.Any, measurements: js.Any) = this()
   /**
-           * The set of fields for a serializeable object.
-           * This defines the serialization order and a value of true/false
-           * for each field defines whether the field is required or not.
-           */
+    * The set of fields for a serializeable object.
+    * This defines the serialization order and a value of true/false
+    * for each field defines whether the field is required or not.
+    */
   /* CompleteClass */
   override var aiDataContract: js.Any = js.native
   @JSName("aiDataContract")

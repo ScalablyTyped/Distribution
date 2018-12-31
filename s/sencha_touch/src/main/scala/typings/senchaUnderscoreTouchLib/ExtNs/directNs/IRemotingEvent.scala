@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRemotingEvent extends IEvent {
   /** [Method] Returns the value of tid
   		* @returns Object

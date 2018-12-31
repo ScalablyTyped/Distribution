@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditHandlerOptions extends js.Object {
   /**
   			 * The path options for how the layers will look while in edit mode.

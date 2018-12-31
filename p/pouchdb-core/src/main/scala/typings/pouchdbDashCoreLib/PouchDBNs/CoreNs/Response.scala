@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Response extends BasicResponse {
   /** id of the targeted document */
   var id: DocumentId

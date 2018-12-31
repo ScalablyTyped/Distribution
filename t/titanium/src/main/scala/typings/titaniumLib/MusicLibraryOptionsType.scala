@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Simple object for specifying options to [openMusicLibrary](Titanium.Media.openMusicLibrary).
- */
-
+  * Simple object for specifying options to [openMusicLibrary](Titanium.Media.openMusicLibrary).
+  */
 trait MusicLibraryOptionsType extends js.Object {
   /**
   	 * Set to `true` to allow the user to select multiple items from the library.

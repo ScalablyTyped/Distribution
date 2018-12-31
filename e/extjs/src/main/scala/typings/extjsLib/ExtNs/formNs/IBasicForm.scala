@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBasicForm
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Config Option] (Object) */

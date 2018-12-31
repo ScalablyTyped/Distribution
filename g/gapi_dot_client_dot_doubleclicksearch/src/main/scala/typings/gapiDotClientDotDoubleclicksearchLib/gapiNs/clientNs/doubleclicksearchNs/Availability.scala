@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Availability extends js.Object {
   /** DS advertiser ID. */
   var advertiserId: js.UndefOr[java.lang.String] = js.undefined

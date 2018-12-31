@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BuildKeyEvent extends js.Object {
   var alt: js.UndefOr[scala.Boolean] = js.undefined
   var cmd: js.UndefOr[scala.Boolean] = js.undefined

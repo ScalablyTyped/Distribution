@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * A simple object consisting of a color and an offset.
- */
-
+  * A simple object consisting of a color and an offset.
+  */
 trait GradientColorRef extends js.Object {
   /**
   	 * Color value at this point in the gradient, as a color name or hex triplet.

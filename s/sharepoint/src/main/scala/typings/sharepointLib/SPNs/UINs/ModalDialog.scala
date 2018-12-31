@@ -19,13 +19,11 @@ class ModalDialog () extends Dialog {
 object ModalDialog extends js.Object {
   /** Show modal dialog specified by url, callback, height and width. */
   def OpenPopUpPage(url: java.lang.String, callback: sharepointLib.SPNs.UINs.DialogReturnValueCallback): scala.Unit = js.native
-  /** Show modal dialog specified by url, callback, height and width. */
   def OpenPopUpPage(
     url: java.lang.String,
     callback: sharepointLib.SPNs.UINs.DialogReturnValueCallback,
     width: scala.Double
   ): scala.Unit = js.native
-  /** Show modal dialog specified by url, callback, height and width. */
   def OpenPopUpPage(
     url: java.lang.String,
     callback: sharepointLib.SPNs.UINs.DialogReturnValueCallback,
@@ -39,23 +37,15 @@ object ModalDialog extends js.Object {
   /** Should be called from an existing dialog. */
   def commonModalDialogClose(dialogResult: sharepointLib.SPNs.UINs.DialogResult, returnValue: js.Any): scala.Unit = js.native
   /** Shows a modal dialog, specified by url, callback, args, and options. Internally, uses SP.UI.ModalDialog.showModalDialog.
-                  @param url overrides options.url
-                  @param callback overrides options.dialogResultValueCallback
-                  @param args overrides options.args */
+    @param url overrides options.url
+    @param callback overrides options.dialogResultValueCallback
+    @param args overrides options.args */
   def commonModalDialogOpen(url: java.lang.String, options: sharepointLib.SPNs.UINs.IDialogOptions): scala.Unit = js.native
-  /** Shows a modal dialog, specified by url, callback, args, and options. Internally, uses SP.UI.ModalDialog.showModalDialog.
-                  @param url overrides options.url
-                  @param callback overrides options.dialogResultValueCallback
-                  @param args overrides options.args */
   def commonModalDialogOpen(
     url: java.lang.String,
     options: sharepointLib.SPNs.UINs.IDialogOptions,
     callback: sharepointLib.SPNs.UINs.DialogReturnValueCallback
   ): scala.Unit = js.native
-  /** Shows a modal dialog, specified by url, callback, args, and options. Internally, uses SP.UI.ModalDialog.showModalDialog.
-                  @param url overrides options.url
-                  @param callback overrides options.dialogResultValueCallback
-                  @param args overrides options.args */
   def commonModalDialogOpen(
     url: java.lang.String,
     options: sharepointLib.SPNs.UINs.IDialogOptions,
@@ -68,22 +58,18 @@ object ModalDialog extends js.Object {
   def showPlatformFirstRunDialog(url: java.lang.String, callbackFunc: sharepointLib.SPNs.UINs.DialogReturnValueCallback): sharepointLib.SPNs.UINs.ModalDialog = js.native
   /** Displays a wait/loading modal dialog with the specified title, message, height and width. Height and width are defined in pixels. Cancel button is shown. If user clicks it, the callbackFunc is called. */
   def showWaitScreenSize(title: java.lang.String): sharepointLib.SPNs.UINs.ModalDialog = js.native
-  /** Displays a wait/loading modal dialog with the specified title, message, height and width. Height and width are defined in pixels. Cancel button is shown. If user clicks it, the callbackFunc is called. */
   def showWaitScreenSize(title: java.lang.String, message: java.lang.String): sharepointLib.SPNs.UINs.ModalDialog = js.native
-  /** Displays a wait/loading modal dialog with the specified title, message, height and width. Height and width are defined in pixels. Cancel button is shown. If user clicks it, the callbackFunc is called. */
   def showWaitScreenSize(
     title: java.lang.String,
     message: java.lang.String,
     callbackFunc: sharepointLib.SPNs.UINs.DialogReturnValueCallback
   ): sharepointLib.SPNs.UINs.ModalDialog = js.native
-  /** Displays a wait/loading modal dialog with the specified title, message, height and width. Height and width are defined in pixels. Cancel button is shown. If user clicks it, the callbackFunc is called. */
   def showWaitScreenSize(
     title: java.lang.String,
     message: java.lang.String,
     callbackFunc: sharepointLib.SPNs.UINs.DialogReturnValueCallback,
     height: scala.Double
   ): sharepointLib.SPNs.UINs.ModalDialog = js.native
-  /** Displays a wait/loading modal dialog with the specified title, message, height and width. Height and width are defined in pixels. Cancel button is shown. If user clicks it, the callbackFunc is called. */
   def showWaitScreenSize(
     title: java.lang.String,
     message: java.lang.String,
@@ -93,11 +79,8 @@ object ModalDialog extends js.Object {
   ): sharepointLib.SPNs.UINs.ModalDialog = js.native
   /** Displays a wait/loading modal dialog with the specified title, message, height and width. Height and width are defined in pixels. Cancel/close button is not shown. */
   def showWaitScreenWithNoClose(title: java.lang.String): sharepointLib.SPNs.UINs.ModalDialog = js.native
-  /** Displays a wait/loading modal dialog with the specified title, message, height and width. Height and width are defined in pixels. Cancel/close button is not shown. */
   def showWaitScreenWithNoClose(title: java.lang.String, message: java.lang.String): sharepointLib.SPNs.UINs.ModalDialog = js.native
-  /** Displays a wait/loading modal dialog with the specified title, message, height and width. Height and width are defined in pixels. Cancel/close button is not shown. */
   def showWaitScreenWithNoClose(title: java.lang.String, message: java.lang.String, height: scala.Double): sharepointLib.SPNs.UINs.ModalDialog = js.native
-  /** Displays a wait/loading modal dialog with the specified title, message, height and width. Height and width are defined in pixels. Cancel/close button is not shown. */
   def showWaitScreenWithNoClose(title: java.lang.String, message: java.lang.String, height: scala.Double, width: scala.Double): sharepointLib.SPNs.UINs.ModalDialog = js.native
 }
 

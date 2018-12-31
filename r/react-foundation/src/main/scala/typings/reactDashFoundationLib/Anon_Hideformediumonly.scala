@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Hideformediumonly extends js.Object {
   var clearfix: js.UndefOr[scala.Boolean]
   var `float-center`: scala.Boolean

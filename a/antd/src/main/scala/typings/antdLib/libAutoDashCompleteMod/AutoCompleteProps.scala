@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AutoCompleteProps
   extends antdLib.libSelectMod.AbstractSelectProps {
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined

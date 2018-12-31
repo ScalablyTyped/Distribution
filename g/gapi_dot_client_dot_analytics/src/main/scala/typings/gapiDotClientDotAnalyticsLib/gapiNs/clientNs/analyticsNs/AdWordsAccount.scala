@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AdWordsAccount extends js.Object {
   /** True if auto-tagging is enabled on the AdWords account. Read-only after the insert operation. */
   var autoTaggingEnabled: js.UndefOr[scala.Boolean] = js.undefined

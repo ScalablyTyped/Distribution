@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictAccordionPanelProps extends js.Object {
   /** Whether or not the title is in the open state. */
   var active: js.UndefOr[scala.Boolean] = js.undefined
@@ -18,11 +17,11 @@ trait StrictAccordionPanelProps extends js.Object {
   /** A panel index. */
   var index: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   /**
-     * Called when a panel title is clicked.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {AccordionTitleProps} data - All item props.
-     */
+    * Called when a panel title is clicked.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {AccordionTitleProps} data - All item props.
+    */
   var onTitleClick: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 

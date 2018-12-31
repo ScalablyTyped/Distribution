@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Viewport extends js.Object {
   var deviceScaleFactor: scala.Double
   var hasTouch: scala.Boolean

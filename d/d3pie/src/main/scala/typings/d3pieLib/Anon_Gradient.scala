@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Gradient extends js.Object {
   var canvasPadding: js.UndefOr[Anon_Bottom] = js.undefined
   var colors: js.UndefOr[Anon_Background] = js.undefined

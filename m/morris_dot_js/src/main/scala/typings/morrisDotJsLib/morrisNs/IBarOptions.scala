@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBarOptions extends IGridChartOptions {
   /** Array containing colors for the series bars. */
   var barColors: js.UndefOr[js.Array[java.lang.String]] = js.undefined

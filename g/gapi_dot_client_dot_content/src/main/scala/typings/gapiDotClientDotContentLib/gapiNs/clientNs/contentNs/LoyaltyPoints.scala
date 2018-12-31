@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LoyaltyPoints extends js.Object {
   /** Name of loyalty points program. It is recommended to limit the name to 12 full-width characters or 24 Roman characters. */
   var name: js.UndefOr[java.lang.String] = js.undefined

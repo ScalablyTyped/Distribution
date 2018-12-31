@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Object extends js.Object {
   /** Access controls on the object. */
   var acl: js.UndefOr[js.Array[ObjectAccessControl]] = js.undefined
@@ -24,9 +23,9 @@ trait Object extends js.Object {
   /** Content-Type of the object data. If an object is stored without a Content-Type, it is served as application/octet-stream. */
   var contentType: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * CRC32c checksum, as described in RFC 4960, Appendix B; encoded using base64 in big-endian byte order. For more information about using the CRC32c
-               * checksum, see Hashes and ETags: Best Practices.
-               */
+    * CRC32c checksum, as described in RFC 4960, Appendix B; encoded using base64 in big-endian byte order. For more information about using the CRC32c
+    * checksum, see Hashes and ETags: Best Practices.
+    */
   var crc32c: js.UndefOr[java.lang.String] = js.undefined
   /** Metadata of customer-supplied encryption key, if the object is encrypted by such a key. */
   var customerEncryption: js.UndefOr[gapiDotClientDotStorageLib.Anon_EncryptionAlgorithm] = js.undefined
@@ -47,9 +46,9 @@ trait Object extends js.Object {
   /** User-provided metadata, in key/value pairs. */
   var metadata: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
   /**
-               * The version of the metadata for this object at this generation. Used for preconditions and for detecting changes in metadata. A metageneration number
-               * is only meaningful in the context of a particular generation of a particular object.
-               */
+    * The version of the metadata for this object at this generation. Used for preconditions and for detecting changes in metadata. A metageneration number
+    * is only meaningful in the context of a particular generation of a particular object.
+    */
   var metageneration: js.UndefOr[java.lang.String] = js.undefined
   /** The name of the object. Required if not specified by URL parameter. */
   var name: js.UndefOr[java.lang.String] = js.undefined

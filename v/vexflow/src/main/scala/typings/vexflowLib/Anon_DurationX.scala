@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DurationX extends js.Object {
   var custom_glyph_code: js.UndefOr[java.lang.String] = js.undefined
   var displaced: js.UndefOr[scala.Boolean] = js.undefined

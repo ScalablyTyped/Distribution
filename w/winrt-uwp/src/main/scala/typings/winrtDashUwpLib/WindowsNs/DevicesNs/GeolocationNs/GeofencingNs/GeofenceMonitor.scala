@@ -37,9 +37,9 @@ abstract class GeofenceMonitor () extends js.Object {
   /** Raised when the status of the GeofenceMonitor has changed. */
   def onstatuschanged(ev: js.Any with winrtDashUwpLib.WindowsNs.WinRTEvent[GeofenceMonitor]): scala.Unit = js.native
   /**
-                       * Gets a collection of status changes to the Geofence objects in the Geofences collection of the GeofenceMonitor .
-                       * @return collection of status changes to the GeofenceMonitor .
-                       */
+    * Gets a collection of status changes to the Geofence objects in the Geofences collection of the GeofenceMonitor .
+    * @return collection of status changes to the GeofenceMonitor .
+    */
   def readReports(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[GeofenceStateChangeReport] = js.native
   def removeEventListener(`type`: java.lang.String, listener: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_]): scala.Unit = js.native
   @JSName("removeEventListener")

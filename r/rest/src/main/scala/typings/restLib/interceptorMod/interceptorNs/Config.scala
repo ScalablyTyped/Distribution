@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Config[T, U] extends js.Object {
   var error: js.UndefOr[
     js.Function3[

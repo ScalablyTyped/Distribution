@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/symbol/for", JSImport.Namespace)
 @js.native
 object libraryFnSymbolForMod
-  extends org.scalablytyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[js.Function1[/* key */ java.lang.String, js.Symbol]]
 

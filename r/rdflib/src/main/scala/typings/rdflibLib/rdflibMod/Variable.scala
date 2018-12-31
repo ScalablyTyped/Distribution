@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 class Variable protected () extends Node {
   /**
-       * Initializes this variable
-       * @param name The variable's name
-       */
+    * Initializes this variable
+    * @param name The variable's name
+    */
   def this(name: java.lang.String) = this()
   /**
-       * The base string for a variable's name
-       */
+    * The base string for a variable's name
+    */
   var base: java.lang.String = js.native
   /**
-       * The unique identifier of this variable
-       */
+    * The unique identifier of this variable
+    */
   var uri: java.lang.String = js.native
 }
 

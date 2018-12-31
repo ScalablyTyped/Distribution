@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HeaderFilter extends js.Object {
   /** Matches if the header name contains all of the specified strings. */
   var nameContains: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined

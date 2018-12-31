@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EllipseOptions extends js.Object {
   var bounds: Bounds | BoundsLiteral
   var clickable: js.UndefOr[scala.Boolean] = js.undefined

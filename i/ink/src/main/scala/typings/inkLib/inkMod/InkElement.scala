@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InkElement extends js.Object {
   var _children: js.Array[InkNode]
   var _props: js.Any

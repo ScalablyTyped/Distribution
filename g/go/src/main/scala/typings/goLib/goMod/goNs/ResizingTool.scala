@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * The ResizingTool is used to interactively change the size of a GraphObject
-    * in the selected Part or Node.
-    * This tool does not operate on Links.
-    */
+  * The ResizingTool is used to interactively change the size of a GraphObject
+  * in the selected Part or Node.
+  * This tool does not operate on Links.
+  */
 @js.native
 trait ResizingTool extends Tool {
   /**This read-only property returns the GraphObject that is being resized.*/
@@ -31,31 +31,31 @@ trait ResizingTool extends Tool {
   /**This read-only property returns the Point that was the original value of the Part.location of the Part that is being resized.*/
   var originalLocation: Point = js.native
   /**
-          * The size should be a multiple of the value returned by this method.
-          */
+    * The size should be a multiple of the value returned by this method.
+    */
   def computeCellSize(): Size = js.native
   /**
-          * The effective maximum resizing size is the minimum of the .maxSize and the .adornedObject's GraphObject.maxSize.
-          */
+    * The effective maximum resizing size is the minimum of the .maxSize and the .adornedObject's GraphObject.maxSize.
+    */
   def computeMaxSize(): Size = js.native
   /**
-          * The effective minimum resizing size is the maximum of .minSize and the .adornedObject's GraphObject.minSize.
-          */
+    * The effective minimum resizing size is the maximum of .minSize and the .adornedObject's GraphObject.minSize.
+    */
   def computeMinSize(): Size = js.native
   /**
-          * Given a Spot in the original bounds of the object being resized and a new Point, compute the new Rect.
-          * @param {Point} newPoint a Point in local coordinates.
-          * @param {Spot} spot the alignment spot of the handle being dragged.
-          * @param {Size} min the result of the call to .computeMinSize.
-          * @param {Size} max the result of the call to .computeMaxSize.
-          * @param {Size} cell the result of the call to .computeCellSize.
-          * @param {boolean} reshape true if the new size may change the aspect ratio from that of the natural bounds of the .adornedObject.
-          */
+    * Given a Spot in the original bounds of the object being resized and a new Point, compute the new Rect.
+    * @param {Point} newPoint a Point in local coordinates.
+    * @param {Spot} spot the alignment spot of the handle being dragged.
+    * @param {Size} min the result of the call to .computeMinSize.
+    * @param {Size} max the result of the call to .computeMaxSize.
+    * @param {Size} cell the result of the call to .computeCellSize.
+    * @param {boolean} reshape true if the new size may change the aspect ratio from that of the natural bounds of the .adornedObject.
+    */
   def computeResize(newPoint: Point, spot: Spot, min: Size, max: Size, cell: Size, reshape: scala.Boolean): Rect = js.native
   /**
-          * Change the size of the selected part's Part.resizeObject to have the given bounds.
-          * @param {Rect} newr
-          */
+    * Change the size of the selected part's Part.resizeObject to have the given bounds.
+    * @param {Rect} newr
+    */
   def resize(newr: Rect): scala.Unit = js.native
 }
 

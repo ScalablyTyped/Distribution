@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * @mixin
-             */
+  * @mixin
+  */
 @js.native
 trait IEvent extends js.Object {
   var simulateEventsWith: java.lang.String = js.native

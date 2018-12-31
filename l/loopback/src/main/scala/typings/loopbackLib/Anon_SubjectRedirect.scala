@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SubjectRedirect extends js.Object {
   var from: java.lang.String
   var redirect: java.lang.String

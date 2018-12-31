@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Simple object passed to the [openMusicLibrary](Titanium.Media.openMusicLibrary)
- * `success` callback function.
- */
-
+  * Simple object passed to the [openMusicLibrary](Titanium.Media.openMusicLibrary)
+  * `success` callback function.
+  */
 trait MusicLibraryResponseType extends js.Object {
   /**
   	 * A list of all the items chosen by the user.

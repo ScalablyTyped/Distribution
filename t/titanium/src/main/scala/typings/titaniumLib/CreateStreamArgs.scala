@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Argument passed to [createStream](Titanium.Stream.createStream).
- */
-
+  * Argument passed to [createStream](Titanium.Stream.createStream).
+  */
 trait CreateStreamArgs extends js.Object {
   /**
   	 * Mode to open the stream in.

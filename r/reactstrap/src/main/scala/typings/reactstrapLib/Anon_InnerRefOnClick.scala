@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_InnerRefOnClick extends js.Object {
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var block: js.UndefOr[scala.Boolean] = js.undefined

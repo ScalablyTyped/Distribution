@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Bezier curve constructor. The constructor argument can be one of three things:
-     *
-     * 1. array/4 of {x:..., y:..., z:...}, z optional
-     * 2. numerical array/8 ordered x1,y1,x2,y2,x3,y3,x4,y4
-     * 3. numerical array/12 ordered x1,y1,z1,x2,y2,z2,x3,y3,z3,x4,y4,z4
-     *
-     */
+  * Bezier curve constructor. The constructor argument can be one of three things:
+  *
+  * 1. array/4 of {x:..., y:..., z:...}, z optional
+  * 2. numerical array/8 ordered x1,y1,x2,y2,x3,y3,x4,y4
+  * 3. numerical array/12 ordered x1,y1,z1,x2,y2,z2,x3,y3,z3,x4,y4,z4
+  *
+  */
 @JSGlobal("BezierJs.Bezier")
 @js.native
 class Bezier protected () extends js.Object {
@@ -85,13 +85,13 @@ class Bezier protected () extends js.Object {
 }
 
 /**
-     * Bezier curve constructor. The constructor argument can be one of three things:
-     *
-     * 1. array/4 of {x:..., y:..., z:...}, z optional
-     * 2. numerical array/8 ordered x1,y1,x2,y2,x3,y3,x4,y4
-     * 3. numerical array/12 ordered x1,y1,z1,x2,y2,z2,x3,y3,z3,x4,y4,z4
-     *
-     */
+  * Bezier curve constructor. The constructor argument can be one of three things:
+  *
+  * 1. array/4 of {x:..., y:..., z:...}, z optional
+  * 2. numerical array/8 ordered x1,y1,x2,y2,x3,y3,x4,y4
+  * 3. numerical array/12 ordered x1,y1,z1,x2,y2,z2,x3,y3,z3,x4,y4,z4
+  *
+  */
 @JSGlobal("BezierJs.Bezier")
 @js.native
 object Bezier extends js.Object {

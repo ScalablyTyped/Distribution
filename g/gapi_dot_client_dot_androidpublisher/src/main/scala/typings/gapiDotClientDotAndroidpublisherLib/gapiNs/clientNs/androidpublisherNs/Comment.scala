@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Comment extends js.Object {
   /** A comment from a developer. */
   var developerComment: js.UndefOr[DeveloperComment] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapViewOverlay extends js.Object {
   var coordinates: js.Array[reactDashNativeLib.Anon_Latitude]
   var fillColor: js.UndefOr[java.lang.String] = js.undefined

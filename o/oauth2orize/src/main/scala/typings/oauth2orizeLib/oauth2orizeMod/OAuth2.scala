@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OAuth2 extends js.Object {
   var client: js.Any
   var info: OAuth2Info

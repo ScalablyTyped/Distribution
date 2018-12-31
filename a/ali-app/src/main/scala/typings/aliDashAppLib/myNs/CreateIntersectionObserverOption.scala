@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateIntersectionObserverOption extends js.Object {
   var initialRatio: js.UndefOr[scala.Double] = js.undefined
   var selectAll: js.UndefOr[scala.Boolean] = js.undefined

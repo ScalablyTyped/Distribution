@@ -22,17 +22,17 @@ abstract class BluetoothLEAppearance () extends js.Object {
 @js.native
 object BluetoothLEAppearance extends js.Object {
   /**
-                   * Creates a BluetoothLEAppearance object by supplying values for Category (see BluetoothLEAppearanceCategories ) and Subcategory (see BluetoothLEAppearanceSubcategories ) of the Bluetooth LE device.
-                   * @param appearanceCategory The Bluetooth LE appearance category. See BluetoothLEAppearanceSubcategories .
-                   * @param appearanceSubCategory The Bluetooth LE appearance subcategory. See BluetoothLEAppearanceSubcategories .
-                   * @return The Bluetooth LE appearance object that was created from the appearance category and subcategory.
-                   */
+    * Creates a BluetoothLEAppearance object by supplying values for Category (see BluetoothLEAppearanceCategories ) and Subcategory (see BluetoothLEAppearanceSubcategories ) of the Bluetooth LE device.
+    * @param appearanceCategory The Bluetooth LE appearance category. See BluetoothLEAppearanceSubcategories .
+    * @param appearanceSubCategory The Bluetooth LE appearance subcategory. See BluetoothLEAppearanceSubcategories .
+    * @return The Bluetooth LE appearance object that was created from the appearance category and subcategory.
+    */
   def fromParts(appearanceCategory: scala.Double, appearanceSubCategory: scala.Double): winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothLEAppearance = js.native
   /**
-                   * Creates a BluetoothLEAppearance object by supplying for raw integer values representing the Category and Subcategory of the Bluetooth LE device.
-                   * @param rawValue The raw integer value representing the appearance category and subcategory.
-                   * @return The Bluetooth LE appearance object that was created from the appearance category and subcategory.
-                   */
+    * Creates a BluetoothLEAppearance object by supplying for raw integer values representing the Category and Subcategory of the Bluetooth LE device.
+    * @param rawValue The raw integer value representing the appearance category and subcategory.
+    * @return The Bluetooth LE appearance object that was created from the appearance category and subcategory.
+    */
   def fromRawValue(rawValue: scala.Double): winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothLEAppearance = js.native
 }
 

@@ -27,26 +27,18 @@ class IXSLProcessor protected () extends js.Object {
   /** pass object to stylesheet */
   def addObject(obj: js.Any, namespaceURI: java.lang.String): scala.Unit = js.native
   /**
-           * set <xsl:param> values
-           * @param namespaceURI [namespaceURI='0']
-           */
+    * set <xsl:param> values
+    * @param namespaceURI [namespaceURI='0']
+    */
   def addParameter(baseName: java.lang.String, parameter: js.Any): scala.Unit = js.native
-  /**
-           * set <xsl:param> values
-           * @param namespaceURI [namespaceURI='0']
-           */
   def addParameter(baseName: java.lang.String, parameter: js.Any, namespaceURI: java.lang.String): scala.Unit = js.native
   /** reset state of processor and abort current transform */
   def reset(): scala.Unit = js.native
   /**
-           * set XSL mode and it's namespace
-           * @param namespaceURI [namespaceURI='0']
-           */
+    * set XSL mode and it's namespace
+    * @param namespaceURI [namespaceURI='0']
+    */
   def setStartMode(mode: java.lang.String): scala.Unit = js.native
-  /**
-           * set XSL mode and it's namespace
-           * @param namespaceURI [namespaceURI='0']
-           */
   def setStartMode(mode: java.lang.String, namespaceURI: java.lang.String): scala.Unit = js.native
   /** start/resume the XSL transformation process */
   def transform(): scala.Boolean = js.native

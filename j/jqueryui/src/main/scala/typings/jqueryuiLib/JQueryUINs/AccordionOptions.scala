@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Accordion //////////////////////////////////////////////////
-
 trait AccordionOptions extends AccordionEvents {
   var active: js.UndefOr[js.Any] = js.undefined
    // boolean or number

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlainValue extends Node {
   val strValue: java.lang.String | scala.Null
   @JSName("type")

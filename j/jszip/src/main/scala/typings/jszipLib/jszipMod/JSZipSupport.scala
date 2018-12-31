@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JSZipSupport extends js.Object {
   var arraybuffer: scala.Boolean
   var blob: scala.Boolean

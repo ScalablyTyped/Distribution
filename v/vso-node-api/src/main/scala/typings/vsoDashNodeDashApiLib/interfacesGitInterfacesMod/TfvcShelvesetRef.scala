@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TfvcShelvesetRef extends js.Object {
   var _links: js.Any
   var comment: java.lang.String

@@ -16,8 +16,8 @@ class DatePickerBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsDatePickerDatePickerDotTypesMod.IDatePickerProps) = this()
   var _calendar: js.Any = js.native
   /**
-       * Callback for closing the calendar callout
-       */
+    * Callback for closing the calendar callout
+    */
   var _calendarDismissed: js.Any = js.native
   var _datePickerDiv: js.Any = js.native
   var _dismissDatePickerPopup: js.Any = js.native

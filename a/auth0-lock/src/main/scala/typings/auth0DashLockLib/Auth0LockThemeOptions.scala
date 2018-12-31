@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Auth0LockThemeOptions extends js.Object {
   var authButtons: js.UndefOr[Auth0LockThemeButtonOptions] = js.undefined
   var hideMainScreenTitle: js.UndefOr[scala.Boolean] = js.undefined

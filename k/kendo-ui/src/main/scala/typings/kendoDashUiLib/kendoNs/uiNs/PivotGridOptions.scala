@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PivotGridOptions extends js.Object {
   var autoBind: js.UndefOr[scala.Boolean] = js.undefined
   var collapseMember: js.UndefOr[js.Function1[/* e */ PivotGridCollapseMemberEvent, scala.Unit]] = js.undefined

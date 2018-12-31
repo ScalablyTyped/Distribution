@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ItineraryOptions extends js.Object {
   var alternativeClassName: js.UndefOr[java.lang.String] = js.undefined
   var collapseBtn: js.UndefOr[js.Function1[/* itinerary */ Itinerary, scala.Unit]] = js.undefined

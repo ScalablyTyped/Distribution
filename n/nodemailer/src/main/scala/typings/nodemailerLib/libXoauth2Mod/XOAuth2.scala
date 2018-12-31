@@ -69,55 +69,31 @@ trait XOAuth2
     listener: js.Function1[/* token */ nodemailerLib.libXoauth2Mod.XOAuth2Ns.Token, scala.Unit]
   ): this.type = js.native
   /**
-       * Custom POST request handler.
-       * This is only needed to keep paths short in Windows – usually this module
-       * is a dependency of a dependency and if it tries to require something
-       * like the request module the paths get way too long to handle for Windows.
-       * As we do only a simple POST request we do not actually require complicated
-       * logic support (no redirects, no nothing) anyway.
-       */
+    * Custom POST request handler.
+    * This is only needed to keep paths short in Windows – usually this module
+    * is a dependency of a dependency and if it tries to require something
+    * like the request module the paths get way too long to handle for Windows.
+    * As we do only a simple POST request we do not actually require complicated
+    * logic support (no redirects, no nothing) anyway.
+    */
   def postRequest(
     url: java.lang.String,
     payload: java.lang.String,
     params: nodemailerLib.libXoauth2Mod.XOAuth2Ns.RequestParams,
     callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
-  /**
-       * Custom POST request handler.
-       * This is only needed to keep paths short in Windows – usually this module
-       * is a dependency of a dependency and if it tries to require something
-       * like the request module the paths get way too long to handle for Windows.
-       * As we do only a simple POST request we do not actually require complicated
-       * logic support (no redirects, no nothing) anyway.
-       */
   def postRequest(
     url: java.lang.String,
     payload: nodeLib.Buffer,
     params: nodemailerLib.libXoauth2Mod.XOAuth2Ns.RequestParams,
     callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
-  /**
-       * Custom POST request handler.
-       * This is only needed to keep paths short in Windows – usually this module
-       * is a dependency of a dependency and if it tries to require something
-       * like the request module the paths get way too long to handle for Windows.
-       * As we do only a simple POST request we do not actually require complicated
-       * logic support (no redirects, no nothing) anyway.
-       */
   def postRequest(
     url: java.lang.String,
     payload: nodeLib.streamMod.Readable,
     params: nodemailerLib.libXoauth2Mod.XOAuth2Ns.RequestParams,
     callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* buf */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
-  /**
-       * Custom POST request handler.
-       * This is only needed to keep paths short in Windows – usually this module
-       * is a dependency of a dependency and if it tries to require something
-       * like the request module the paths get way too long to handle for Windows.
-       * As we do only a simple POST request we do not actually require complicated
-       * logic support (no redirects, no nothing) anyway.
-       */
   def postRequest(
     url: java.lang.String,
     payload: org.scalablytyped.runtime.StringDictionary[java.lang.String],
@@ -144,7 +120,6 @@ trait XOAuth2
     event: nodemailerLib.nodemailerLibStrings.error,
     listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]
   ): this.type = js.native
-  /** Encodes a buffer or a string into Base64url format */
   def toBase64URL(data: java.lang.String): java.lang.String = js.native
   /** Encodes a buffer or a string into Base64url format */
   def toBase64URL(data: nodeLib.Buffer): java.lang.String = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextProperty extends js.Object {
   /** Detected start or end of a text segment. */
   var detectedBreak: js.UndefOr[DetectedBreak] = js.undefined

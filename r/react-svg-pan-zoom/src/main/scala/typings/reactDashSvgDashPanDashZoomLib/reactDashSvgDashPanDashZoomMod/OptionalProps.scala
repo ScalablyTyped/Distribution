@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OptionalProps extends js.Object {
   // background of the svg
   var SVGBackground: java.lang.String

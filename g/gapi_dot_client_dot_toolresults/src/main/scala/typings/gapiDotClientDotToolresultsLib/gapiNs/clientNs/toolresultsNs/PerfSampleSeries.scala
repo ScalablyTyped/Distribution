@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PerfSampleSeries extends js.Object {
   /** Basic series represented by a line chart */
   var basicPerfSampleSeries: js.UndefOr[BasicPerfSampleSeries] = js.undefined

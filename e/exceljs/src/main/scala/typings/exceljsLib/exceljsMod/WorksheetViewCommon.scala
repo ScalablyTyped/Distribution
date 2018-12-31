@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorksheetViewCommon extends js.Object {
   /**
   	 * The currently selected cell

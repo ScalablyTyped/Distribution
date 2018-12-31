@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Selection extends js.Object {
   val anchorNode: Node
   val anchorOffset: scala.Double

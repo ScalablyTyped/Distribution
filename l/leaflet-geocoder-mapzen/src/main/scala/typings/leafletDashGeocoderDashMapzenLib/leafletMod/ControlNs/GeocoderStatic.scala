@@ -9,11 +9,8 @@ import scala.scalajs.js.annotation._
 - Dropped any */ @js.native
 trait GeocoderStatic
   extends /**
-             * Creates a geocoder control.
-             */
+  * Creates a geocoder control.
+  */
 org.scalablytyped.runtime.Instantiable0[Geocoder]
-     with /**
-             * Creates a geocoder control.
-             */
-org.scalablytyped.runtime.Instantiable1[/* options */ GeocoderOptions, Geocoder]
+     with org.scalablytyped.runtime.Instantiable1[/* options */ GeocoderOptions, Geocoder]
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Logpath extends js.Object {
   var app: java.lang.String
   var format_wf: java.lang.String

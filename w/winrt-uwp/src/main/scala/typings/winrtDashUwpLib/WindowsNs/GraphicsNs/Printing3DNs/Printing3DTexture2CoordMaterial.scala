@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a 2D texture material used in the 3D model. */
 @JSGlobal("Windows.Graphics.Printing3D.Printing3DTexture2CoordMaterial")
 @js.native
+/** Creates an instance of the Printing3DTexture2CoordMaterial class. */
 class Printing3DTexture2CoordMaterial () extends js.Object {
   /** Gets or sets the texture used in the 2D texture material. */
   var texture: Printing3DModelTexture = js.native

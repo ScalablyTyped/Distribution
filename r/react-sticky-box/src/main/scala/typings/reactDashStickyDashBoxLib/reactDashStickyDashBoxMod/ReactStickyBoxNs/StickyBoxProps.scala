@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StickyBoxProps extends js.Object {
   var bottom: js.UndefOr[scala.Boolean] = js.undefined
   var offsetBottom: js.UndefOr[scala.Double] = js.undefined

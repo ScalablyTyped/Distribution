@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RawConfigFile extends js.Object {
   var defaultSeverity: js.UndefOr[java.lang.String] = js.undefined
   var `extends`: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined

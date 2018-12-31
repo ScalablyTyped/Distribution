@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Selection extends js.Object {
   def getActiveRange(): Range
   def getActiveRangeList(): RangeList

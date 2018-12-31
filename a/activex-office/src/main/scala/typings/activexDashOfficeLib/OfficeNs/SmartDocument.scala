@@ -15,7 +15,6 @@ class SmartDocument protected () extends js.Object {
   var SolutionURL: java.lang.String = js.native
   /** @param ConsiderAllSchemas [ConsiderAllSchemas=false] */
   def PickSolution(): scala.Unit = js.native
-  /** @param ConsiderAllSchemas [ConsiderAllSchemas=false] */
   def PickSolution(ConsiderAllSchemas: scala.Boolean): scala.Unit = js.native
   def RefreshPane(): scala.Unit = js.native
 }

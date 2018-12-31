@@ -11,8 +11,8 @@ trait HTMLOListElement extends HTMLElement {
   var compact: scala.Boolean = js.native
   var reversed: scala.Boolean = js.native
   /**
-       * The starting number.
-       */
+    * The starting number.
+    */
   var start: scala.Double = js.native
   var `type`: java.lang.String = js.native
 }

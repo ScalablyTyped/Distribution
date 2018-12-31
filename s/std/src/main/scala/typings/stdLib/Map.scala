@@ -16,8 +16,8 @@ trait Map[K, V] extends js.Object {
   def clear(): scala.Unit = js.native
   def delete(key: K): scala.Boolean = js.native
   /**
-       * Returns an iterable of key, value pairs for every entry in the map.
-       */
+    * Returns an iterable of key, value pairs for every entry in the map.
+    */
   def entries(): IterableIterator[js.Tuple2[K, V]] = js.native
   def forEach(callbackfn: js.Function3[/* value */ V, /* key */ K, /* map */ Map[K, V], scala.Unit]): scala.Unit = js.native
   def forEach(
@@ -27,13 +27,13 @@ trait Map[K, V] extends js.Object {
   def get(key: K): js.UndefOr[V] = js.native
   def has(key: K): scala.Boolean = js.native
   /**
-       * Returns an iterable of keys in the map
-       */
+    * Returns an iterable of keys in the map
+    */
   def keys(): IterableIterator[K] = js.native
   def set(key: K, value: V): this.type = js.native
   /**
-       * Returns an iterable of values in the map
-       */
+    * Returns an iterable of values in the map
+    */
   def values(): IterableIterator[V] = js.native
 }
 

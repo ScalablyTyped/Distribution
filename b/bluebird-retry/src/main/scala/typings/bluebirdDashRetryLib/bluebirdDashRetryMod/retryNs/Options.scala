@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var args: js.UndefOr[js.Any] = js.undefined
   var backoff: js.UndefOr[scala.Double] = js.undefined

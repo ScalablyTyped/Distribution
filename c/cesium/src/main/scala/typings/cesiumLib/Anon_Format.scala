@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Format extends js.Object {
   var clock: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Clock] = js.undefined
   var credit: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Credit | java.lang.String] = js.undefined

@@ -30,14 +30,10 @@ trait BrowserWindows
     handler: js.Function1[/* window */ jpmLib.FFAddonSDKNs.BrowserWindow, _]
   ): scala.Unit = js.native
   /**
-       * Open a new window
-       * @param options.isPrivate determines whether the new window should be private or not
-       */
+    * Open a new window
+    * @param options.isPrivate determines whether the new window should be private or not
+    */
   def open(options: java.lang.String): jpmLib.FFAddonSDKNs.BrowserWindow = js.native
-  /**
-       * Open a new window
-       * @param options.isPrivate determines whether the new window should be private or not
-       */
   def open(options: jpmLib.Anon_OnActivate): jpmLib.FFAddonSDKNs.BrowserWindow = js.native
 }
 

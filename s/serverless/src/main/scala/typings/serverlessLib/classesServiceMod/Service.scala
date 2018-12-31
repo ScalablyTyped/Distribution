@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Service extends js.Object {
   var custom: serverlessLib.classesServiceMod.ServiceNs.Custom
   var provider: serverlessLib.Anon_CompiledCloudFormationTemplate

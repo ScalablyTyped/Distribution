@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDragOptions extends IForceOptions {
   var max: js.UndefOr[scala.Double] = js.undefined
   var strength: js.UndefOr[scala.Double] = js.undefined

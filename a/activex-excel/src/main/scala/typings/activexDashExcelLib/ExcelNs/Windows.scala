@@ -16,7 +16,6 @@ trait Windows extends js.Object {
   def apply(Index: scala.Double): Window = js.native
   /** @param ArrangeStyle [ArrangeStyle=1] */
   def Arrange(): js.Any = js.native
-  /** @param ArrangeStyle [ArrangeStyle=1] */
   def Arrange(ArrangeStyle: XlArrangeStyle): js.Any = js.native
   def Arrange(
     ArrangeStyle: XlArrangeStyle,
@@ -33,11 +32,8 @@ trait Windows extends js.Object {
     SyncHorizontal: scala.Boolean,
     SyncVertical: scala.Boolean
   ): js.Any = js.native
-  /** @param ArrangeStyle [ArrangeStyle=1] */
   def Arrange(ArrangeStyle: XlArrangeStyle, ActiveWorkbook: scala.Boolean): js.Any = js.native
-  /** @param ArrangeStyle [ArrangeStyle=1] */
   def Arrange(ArrangeStyle: XlArrangeStyle, ActiveWorkbook: scala.Boolean, SyncHorizontal: scala.Boolean): js.Any = js.native
-  /** @param ArrangeStyle [ArrangeStyle=1] */
   def Arrange(
     ArrangeStyle: XlArrangeStyle,
     ActiveWorkbook: scala.Boolean,

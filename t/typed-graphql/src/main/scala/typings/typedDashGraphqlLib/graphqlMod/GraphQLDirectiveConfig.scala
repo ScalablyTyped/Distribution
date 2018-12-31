@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GraphQLDirectiveConfig extends js.Object {
   var args: js.UndefOr[js.Array[GraphQLArgument]] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined

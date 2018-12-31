@@ -23,11 +23,6 @@ trait IUtilMisc extends js.Object {
   	 * when not given, element is created implicitly
   	 */
   def createCanvasElement(): stdLib.HTMLCanvasElement = js.native
-  /**
-  	 * Creates canvas element and initializes it via excanvas if necessary
-  	 * @param [canvasEl] optional canvas element to initialize;
-  	 * when not given, element is created implicitly
-  	 */
   def createCanvasElement(canvasEl: stdLib.HTMLCanvasElement): stdLib.HTMLCanvasElement = js.native
   /**
   	 * Creates image element (works on client and node)
@@ -64,13 +59,6 @@ trait IUtilMisc extends js.Object {
   	 * @param reviver Method for further parsing of object elements, called after each fabric object created.
   	 */
   def enlivenObjects(objects: js.Array[_], callback: js.Function, namespace: java.lang.String): scala.Unit = js.native
-  /**
-  	 * Creates corresponding fabric instances from their object representations
-  	 * @param objects Objects to enliven
-  	 * @param callback Callback to invoke when all objects are created
-  	 * @param namespace Namespace to get klass "Class" object from
-  	 * @param reviver Method for further parsing of object elements, called after each fabric object created.
-  	 */
   def enlivenObjects(objects: js.Array[_], callback: js.Function, namespace: java.lang.String, reviver: js.Function): scala.Unit = js.native
   /**
   	 * Function which always returns `false`.
@@ -99,17 +87,7 @@ trait IUtilMisc extends js.Object {
   	 * @param [options] Options object
   	 */
   def groupSVGElements(elements: js.Array[_]): PathGroup = js.native
-  /**
-  	 * Groups SVG elements (usually those retrieved from SVG document)
-  	 * @param elements SVG elements to group
-  	 * @param [options] Options object
-  	 */
   def groupSVGElements(elements: js.Array[_], options: js.Any): PathGroup = js.native
-  /**
-  	 * Groups SVG elements (usually those retrieved from SVG document)
-  	 * @param elements SVG elements to group
-  	 * @param [options] Options object
-  	 */
   def groupSVGElements(elements: js.Array[_], options: js.Any, path: js.Any): PathGroup = js.native
   /**
   	 * Invert transformation t
@@ -133,25 +111,11 @@ trait IUtilMisc extends js.Object {
   	 * @param [crossOrigin] crossOrigin value to set image element to
   	 */
   def loadImage(url: java.lang.String, callback: js.Function1[/* image */ stdLib.HTMLImageElement, scala.Unit]): scala.Unit = js.native
-  /**
-  	 * Loads image element from given url and passes it to a callback
-  	 * @param url URL representing an image
-  	 * @param callback Callback; invoked with loaded image
-  	 * @param [context] Context to invoke callback in
-  	 * @param [crossOrigin] crossOrigin value to set image element to
-  	 */
   def loadImage(
     url: java.lang.String,
     callback: js.Function1[/* image */ stdLib.HTMLImageElement, scala.Unit],
     context: js.Any
   ): scala.Unit = js.native
-  /**
-  	 * Loads image element from given url and passes it to a callback
-  	 * @param url URL representing an image
-  	 * @param callback Callback; invoked with loaded image
-  	 * @param [context] Context to invoke callback in
-  	 * @param [crossOrigin] crossOrigin value to set image element to
-  	 */
   def loadImage(
     url: java.lang.String,
     callback: js.Function1[/* image */ stdLib.HTMLImageElement, scala.Unit],
@@ -164,17 +128,7 @@ trait IUtilMisc extends js.Object {
   	 * @param  b Second transformMatrix
   	 */
   def multiplyTransformMatrices(a: js.Array[scala.Double], b: js.Array[scala.Double]): js.Array[scala.Double] = js.native
-  /**
-  	 * Converts from attribute value to pixel value if applicable.
-  	 * Returns converted pixels or original value not converted.
-  	 * @param value number to operate on
-  	 */
   def parseUnit(value: java.lang.String): scala.Double | java.lang.String = js.native
-  /**
-  	 * Converts from attribute value to pixel value if applicable.
-  	 * Returns converted pixels or original value not converted.
-  	 * @param value number to operate on
-  	 */
   def parseUnit(value: java.lang.String, fontSize: scala.Double): scala.Double | java.lang.String = js.native
   /**
   	 * Converts from attribute value to pixel value if applicable.
@@ -182,11 +136,6 @@ trait IUtilMisc extends js.Object {
   	 * @param value number to operate on
   	 */
   def parseUnit(value: scala.Double): scala.Double | java.lang.String = js.native
-  /**
-  	 * Converts from attribute value to pixel value if applicable.
-  	 * Returns converted pixels or original value not converted.
-  	 * @param value number to operate on
-  	 */
   def parseUnit(value: scala.Double, fontSize: scala.Double): scala.Double | java.lang.String = js.native
   /**
   	 * Populates an object with properties of another object
@@ -241,12 +190,6 @@ trait IUtilMisc extends js.Object {
   	 * @param  [ignoreOffset] Indicates that the offset should not be applied
   	 */
   def transformPoint(p: Point, t: js.Array[_]): Point = js.native
-  /**
-  	 * Apply transform t to point p
-  	 * @param  p The point to transform
-  	 * @param  t The transform
-  	 * @param  [ignoreOffset] Indicates that the offset should not be applied
-  	 */
   def transformPoint(p: Point, t: js.Array[_], ignoreOffset: scala.Boolean): Point = js.native
 }
 

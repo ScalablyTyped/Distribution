@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_GlobalBusy extends js.Object {
   var globalBusy: js.Function1[/* state */ js.Any, _]
   var link: js.Function4[

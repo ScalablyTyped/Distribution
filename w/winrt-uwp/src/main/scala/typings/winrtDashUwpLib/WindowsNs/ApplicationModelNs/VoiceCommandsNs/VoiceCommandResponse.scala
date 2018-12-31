@@ -26,11 +26,11 @@ object VoiceCommandResponse extends js.Object {
   /** Gets the maximum number of content tiles the background app service can display on the Cortana canvas. */
   var maxSupportedVoiceCommandContentTiles: scala.Double = js.native
   /**
-                   * Creates a VoiceCommandResponse object used in calls to ReportProgressAsync , ReportSuccessAsync or ReportFailureAsync .
-                   * @param message The message that is spoken by Cortana and shown on the Cortana canvas.
-                   * @param contentTiles The collection of assets, containing image and text data, shown on the Cortana canvas.
-                   * @return The response from the background app service for progress, completion, confirmation, or disambiguation screens displayed on the Cortana canvas.
-                   */
+    * Creates a VoiceCommandResponse object used in calls to ReportProgressAsync , ReportSuccessAsync or ReportFailureAsync .
+    * @param message The message that is spoken by Cortana and shown on the Cortana canvas.
+    * @param contentTiles The collection of assets, containing image and text data, shown on the Cortana canvas.
+    * @return The response from the background app service for progress, completion, confirmation, or disambiguation screens displayed on the Cortana canvas.
+    */
   def createResponse(
     message: winrtDashUwpLib.WindowsNs.ApplicationModelNs.VoiceCommandsNs.VoiceCommandUserMessage,
     contentTiles: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[
@@ -38,28 +38,28 @@ object VoiceCommandResponse extends js.Object {
     ]
   ): winrtDashUwpLib.WindowsNs.ApplicationModelNs.VoiceCommandsNs.VoiceCommandResponse = js.native
   /**
-                   * Creates a VoiceCommandResponse object used in calls to ReportProgressAsync , ReportSuccessAsync or ReportFailureAsync .
-                   * @param userMessage The message that is spoken by Cortana and shown on the Cortana canvas.
-                   * @return The response from the background app service for progress, completion, confirmation, or disambiguation screens displayed on the Cortana canvas.
-                   */
+    * Creates a VoiceCommandResponse object used in calls to ReportProgressAsync , ReportSuccessAsync or ReportFailureAsync .
+    * @param userMessage The message that is spoken by Cortana and shown on the Cortana canvas.
+    * @return The response from the background app service for progress, completion, confirmation, or disambiguation screens displayed on the Cortana canvas.
+    */
   def createResponse(userMessage: winrtDashUwpLib.WindowsNs.ApplicationModelNs.VoiceCommandsNs.VoiceCommandUserMessage): winrtDashUwpLib.WindowsNs.ApplicationModelNs.VoiceCommandsNs.VoiceCommandResponse = js.native
   /**
-                   * Creates a VoiceCommandResponse object used in calls to RequestConfirmationAsync or RequestDisambiguationAsync .
-                   * @param message The initial message that is spoken by Cortana and shown on the Cortana canvas.
-                   * @param repeatMessage The secondary message that is spoken by Cortana and shown on the Cortana canvas, if a response was not understood.
-                   * @return The response from the background app service for progress, completion, confirmation, or disambiguation screens displayed on the Cortana canvas.
-                   */
+    * Creates a VoiceCommandResponse object used in calls to RequestConfirmationAsync or RequestDisambiguationAsync .
+    * @param message The initial message that is spoken by Cortana and shown on the Cortana canvas.
+    * @param repeatMessage The secondary message that is spoken by Cortana and shown on the Cortana canvas, if a response was not understood.
+    * @return The response from the background app service for progress, completion, confirmation, or disambiguation screens displayed on the Cortana canvas.
+    */
   def createResponseForPrompt(
     message: winrtDashUwpLib.WindowsNs.ApplicationModelNs.VoiceCommandsNs.VoiceCommandUserMessage,
     repeatMessage: winrtDashUwpLib.WindowsNs.ApplicationModelNs.VoiceCommandsNs.VoiceCommandUserMessage
   ): winrtDashUwpLib.WindowsNs.ApplicationModelNs.VoiceCommandsNs.VoiceCommandResponse = js.native
   /**
-                   * Creates a VoiceCommandResponse object used in calls to RequestConfirmationAsync or RequestDisambiguationAsync .
-                   * @param message The initial message that is spoken by Cortana and shown on the Cortana canvas.
-                   * @param repeatMessage The secondary message that is spoken by Cortana and shown on the Cortana canvas, if a response was not understood.
-                   * @param contentTiles The collection of assets, containing image and text data, shown on the Cortana canvas.
-                   * @return The response from the background app service for progress, completion, confirmation, or disambiguation screens displayed on the Cortana canvas.
-                   */
+    * Creates a VoiceCommandResponse object used in calls to RequestConfirmationAsync or RequestDisambiguationAsync .
+    * @param message The initial message that is spoken by Cortana and shown on the Cortana canvas.
+    * @param repeatMessage The secondary message that is spoken by Cortana and shown on the Cortana canvas, if a response was not understood.
+    * @param contentTiles The collection of assets, containing image and text data, shown on the Cortana canvas.
+    * @return The response from the background app service for progress, completion, confirmation, or disambiguation screens displayed on the Cortana canvas.
+    */
   def createResponseForPrompt(
     message: winrtDashUwpLib.WindowsNs.ApplicationModelNs.VoiceCommandsNs.VoiceCommandUserMessage,
     repeatMessage: winrtDashUwpLib.WindowsNs.ApplicationModelNs.VoiceCommandsNs.VoiceCommandUserMessage,

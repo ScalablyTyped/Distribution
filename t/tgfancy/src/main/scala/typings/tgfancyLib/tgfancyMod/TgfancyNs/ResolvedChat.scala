@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResolvedChat extends js.Object {
   var id: scala.Double | java.lang.String
   var `type`: java.lang.String

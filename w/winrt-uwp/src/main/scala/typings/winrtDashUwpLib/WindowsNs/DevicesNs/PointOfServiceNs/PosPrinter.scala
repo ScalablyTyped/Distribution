@@ -29,21 +29,21 @@ abstract class PosPrinter () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[PosPrinter, PosPrinterStatusUpdatedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Gets the health state of the point-of-service printer asynchronously.
-                   * @param level The type of health check that you want to perform for the point-of-service printer. Only level POSInternal(1) should be used, as any other UnifiedPosHealthCheckLevel levels will result in an error.
-                   * @return An asynchronous operation that returns the health state of the point-of-service printer. You should display this value in the app interface immediately so the user of the app can interpret the value. For example, the operation returns “OK” as the health state if the state of the point-of-service printer is good.
-                   */
+    * Gets the health state of the point-of-service printer asynchronously.
+    * @param level The type of health check that you want to perform for the point-of-service printer. Only level POSInternal(1) should be used, as any other UnifiedPosHealthCheckLevel levels will result in an error.
+    * @return An asynchronous operation that returns the health state of the point-of-service printer. You should display this value in the app interface immediately so the user of the app can interpret the value. For example, the operation returns “OK” as the health state if the state of the point-of-service printer is good.
+    */
   def checkHealthAsync(level: UnifiedPosHealthCheckLevel): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[java.lang.String] = js.native
   /**
-                   * Claims the point-of-service printer for use, and gets an instance of the ClaimedPosPrinter class for the point-of-service printer.
-                   * @return The claimed point-of-service printer.
-                   */
+    * Claims the point-of-service printer for use, and gets an instance of the ClaimedPosPrinter class for the point-of-service printer.
+    * @return The claimed point-of-service printer.
+    */
   def claimPrinterAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[ClaimedPosPrinter] = js.native
   /**
-                   * Gets the specified statistics from the point-of-service printer.
-                   * @param statisticsCategories The list of statistics to retrieve.
-                   * @return The requested statistics.
-                   */
+    * Gets the specified statistics from the point-of-service printer.
+    * @param statisticsCategories The list of statistics to retrieve.
+    * @return The requested statistics.
+    */
   def getStatisticsAsync(
     statisticsCategories: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String]
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[java.lang.String] = js.native
@@ -62,20 +62,20 @@ abstract class PosPrinter () extends js.Object {
 @js.native
 object PosPrinter extends js.Object {
   /**
-                   * Creates a PosPrinter object for point-of-service printer with the specified DeviceInformation.Id .
-                   * @param deviceId The DeviceInformation.Id that identifies a specific point-of-service printer.
-                   * @return The point-of-service printer that the unique device identifier identifies. Returns a null object in the following cases:
-                   */
+    * Creates a PosPrinter object for point-of-service printer with the specified DeviceInformation.Id .
+    * @param deviceId The DeviceInformation.Id that identifies a specific point-of-service printer.
+    * @return The point-of-service printer that the unique device identifier identifies. Returns a null object in the following cases:
+    */
   def fromIdAsync(deviceId: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinter] = js.native
   /**
-                   * Gets the default paired or locally-connected printer.
-                   * @return The default locally-connected printer.
-                   */
+    * Gets the default paired or locally-connected printer.
+    * @return The default locally-connected printer.
+    */
   def getDefaultAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.PosPrinter] = js.native
   /**
-                   * Gets an Advanced Query Syntax (AQS) string that you can use to list the available point-of-service printers.
-                   * @return An Advanced Query Syntax (AQS) string that you can use to list the available point-of-service printers.
-                   */
+    * Gets an Advanced Query Syntax (AQS) string that you can use to list the available point-of-service printers.
+    * @return An Advanced Query Syntax (AQS) string that you can use to list the available point-of-service printers.
+    */
   def getDeviceSelector(): java.lang.String = js.native
 }
 

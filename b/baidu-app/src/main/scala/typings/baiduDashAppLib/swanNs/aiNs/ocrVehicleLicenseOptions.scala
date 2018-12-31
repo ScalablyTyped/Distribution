@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * 对机动车行驶证正本所有关键字段进行识别
 		 */
-
 trait ocrVehicleLicenseOptions
   extends baiduDashAppLib.swanNs.BaseOptions[js.Any, js.Any] {
    // 是否检测图像旋转，可检验图像的选装方向和旋转角度。true：检测旋转角度并矫正识别。针对摆放情况不可控制的情况建议本参数置为true; false:不检测旋转角度，默认不检测。

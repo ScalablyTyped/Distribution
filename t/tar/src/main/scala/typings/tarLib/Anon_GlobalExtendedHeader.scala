@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_GlobalExtendedHeader extends js.Object {
   var Empty: java.lang.String
   var `0`: java.lang.String

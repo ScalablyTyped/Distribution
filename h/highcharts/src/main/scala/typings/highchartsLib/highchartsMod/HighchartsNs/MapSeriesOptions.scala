@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapSeriesOptions extends js.Object {
   var data: js.UndefOr[
     js.Array[scala.Double] | (js.Array[js.Tuple2[scala.Double, scala.Double]]) | (js.Array[js.Tuple2[java.lang.String, scala.Double]]) | js.Array[DataPoint]

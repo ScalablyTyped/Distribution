@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDatePicker extends js.Object {
   /** Sets focus to the text field */
   def focus(): scala.Unit

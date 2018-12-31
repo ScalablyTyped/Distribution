@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Parent extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -25,15 +24,15 @@ trait Anon_Parent extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Required.
-                   *
-                   * The location name in which the queue will be created.
-                   * For example: `projects/PROJECT_ID/locations/LOCATION_ID`
-                   *
-                   * The list of allowed locations can be obtained by calling Cloud
-                   * Tasks' implementation of
-                   * google.cloud.location.Locations.ListLocations.
-                   */
+    * Required.
+    *
+    * The location name in which the queue will be created.
+    * For example: `projects/PROJECT_ID/locations/LOCATION_ID`
+    *
+    * The list of allowed locations can be obtained by calling Cloud
+    * Tasks' implementation of
+    * google.cloud.location.Locations.ListLocations.
+    */
   var parent: java.lang.String
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

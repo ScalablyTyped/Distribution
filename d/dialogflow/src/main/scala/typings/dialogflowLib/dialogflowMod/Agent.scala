@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Agent extends js.Object {
   var avatarUri: js.UndefOr[java.lang.String] = js.undefined
   var classificationThreshold: js.UndefOr[scala.Double] = js.undefined

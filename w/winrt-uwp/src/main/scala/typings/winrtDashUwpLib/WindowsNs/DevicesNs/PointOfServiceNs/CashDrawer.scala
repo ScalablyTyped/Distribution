@@ -29,21 +29,21 @@ abstract class CashDrawer () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[CashDrawer, CashDrawerStatusUpdatedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Gets the device's health state asynchronously.
-                   * @param level The specified health check level.
-                   * @return This value is intended to be reflected in the app interface immediately so the user of the app can interpret it. For example, it will return “OK” as the health string if the device state is good.
-                   */
+    * Gets the device's health state asynchronously.
+    * @param level The specified health check level.
+    * @return This value is intended to be reflected in the app interface immediately so the user of the app can interpret it. For example, it will return “OK” as the health string if the device state is good.
+    */
   def checkHealthAsync(level: UnifiedPosHealthCheckLevel): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[java.lang.String] = js.native
   /**
-                   * Attempts to get exclusive access on the cash drawer.
-                   * @return When the method completes, it returns a ClaimedCashDrawer .
-                   */
+    * Attempts to get exclusive access on the cash drawer.
+    * @return When the method completes, it returns a ClaimedCashDrawer .
+    */
   def claimDrawerAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[ClaimedCashDrawer] = js.native
   /**
-                   * Retrieves the requested statistics from the cash drawer.
-                   * @param statisticsCategories The list of statistics to retrieve.
-                   * @return String representing the requested statistics.
-                   */
+    * Retrieves the requested statistics from the cash drawer.
+    * @param statisticsCategories The list of statistics to retrieve.
+    * @return String representing the requested statistics.
+    */
   def getStatisticsAsync(
     statisticsCategories: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String]
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[java.lang.String] = js.native
@@ -62,20 +62,20 @@ abstract class CashDrawer () extends js.Object {
 @js.native
 object CashDrawer extends js.Object {
   /**
-                   * Creates CashDrawer object from the DeviceInformation.Id .
-                   * @param deviceId The DeviceInformation.Id that identifies a specific cash drawer, which can be retrieved from the DeviceId property.
-                   * @return The cash drawer specified by the unique device identifier. Returns a null object in the following cases:
-                   */
+    * Creates CashDrawer object from the DeviceInformation.Id .
+    * @param deviceId The DeviceInformation.Id that identifies a specific cash drawer, which can be retrieved from the DeviceId property.
+    * @return The cash drawer specified by the unique device identifier. Returns a null object in the following cases:
+    */
   def fromIdAsync(deviceId: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.CashDrawer] = js.native
   /**
-                   * Gets the default paired or locally-connected cash drawer.
-                   * @return The default locally-connected drawer. May return null if there is no drawer available.
-                   */
+    * Gets the default paired or locally-connected cash drawer.
+    * @return The default locally-connected drawer. May return null if there is no drawer available.
+    */
   def getDefaultAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.DevicesNs.PointOfServiceNs.CashDrawer] = js.native
   /**
-                   * Gets an Advanced Query Syntax (AQS) string that you can use to list the available cash drawers.
-                   * @return An Advanced Query Syntax (AQS) string that is used to enumerate available cash drawers.
-                   */
+    * Gets an Advanced Query Syntax (AQS) string that you can use to list the available cash drawers.
+    * @return An Advanced Query Syntax (AQS) string that is used to enumerate available cash drawers.
+    */
   def getDeviceSelector(): java.lang.String = js.native
 }
 

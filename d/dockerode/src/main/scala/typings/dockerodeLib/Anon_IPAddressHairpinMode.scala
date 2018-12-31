@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IPAddressHairpinMode extends js.Object {
   var Bridge: java.lang.String
   var EndpointID: java.lang.String

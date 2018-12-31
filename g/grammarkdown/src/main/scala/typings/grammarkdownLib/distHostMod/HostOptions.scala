@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HostOptions extends HostBaseOptions {
   var readFile: js.UndefOr[
     js.ThisFunction2[

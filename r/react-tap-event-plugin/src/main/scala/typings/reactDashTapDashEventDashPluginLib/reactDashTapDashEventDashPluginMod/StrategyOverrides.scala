@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrategyOverrides extends js.Object {
   var shouldRejectClick: js.UndefOr[
     js.Function2[

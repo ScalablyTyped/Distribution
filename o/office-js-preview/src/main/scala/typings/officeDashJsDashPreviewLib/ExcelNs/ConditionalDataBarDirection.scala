@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 sealed trait ConditionalDataBarDirection extends js.Object
 
 /**
-     *
-     * Represents the Data Bar direction within a cell.
-     *
-     * [Api set: ExcelApi 1.6]
-     */
+  *
+  * Represents the Data Bar direction within a cell.
+  *
+  * [Api set: ExcelApi 1.6]
+  */
 @JSGlobal("Excel.ConditionalDataBarDirection")
 @js.native
 object ConditionalDataBarDirection extends js.Object {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Point[P /* <: Properties */] extends GeometryObjectA[P] {
   var coordinates: Positions
   @JSName("type")

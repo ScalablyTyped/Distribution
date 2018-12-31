@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRadioGroup extends ICheckboxGroup {
   /** [Method] Sets the value of the radio group
   		* @param value Object The map from names to values to be set.

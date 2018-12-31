@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParsedTweet extends js.Object {
   var displayRangeEnd: scala.Double
   var displayRangeStart: scala.Double

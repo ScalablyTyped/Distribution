@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommonAxe extends js.Object {
   var afterBuildTicks: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
   var afterCalculateTickRotation: js.UndefOr[js.Function1[/* scale */ js.UndefOr[js.Any], scala.Unit]] = js.undefined

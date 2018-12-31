@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextDocumentChangeRegistrationOptions extends TextDocumentRegistrationOptions {
   /**
-       * How documents are synced to the server.
-       */
+    * How documents are synced to the server.
+    */
   var syncKind: TextDocumentSyncKind
 }
 

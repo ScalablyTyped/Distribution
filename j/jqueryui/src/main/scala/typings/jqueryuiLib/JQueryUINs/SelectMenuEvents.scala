@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectMenuEvents extends js.Object {
   var change: js.UndefOr[SelectMenuEvent] = js.undefined
   var close: js.UndefOr[SelectMenuEvent] = js.undefined

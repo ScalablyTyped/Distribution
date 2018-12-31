@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IsFocusedChildren[OptionType] extends js.Object {
   var children: reactLib.reactMod.ReactNs.ReactNode
   var components: js.Any

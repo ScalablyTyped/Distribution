@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LiveStreamHealthStatus extends js.Object {
   /** The configurations issues on this stream */
   var configurationIssues: js.UndefOr[js.Array[LiveStreamConfigurationIssue]] = js.undefined

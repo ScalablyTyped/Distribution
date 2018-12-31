@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Set extends js.Object {
   var decrement: scala.Double
   var delete: scala.Double

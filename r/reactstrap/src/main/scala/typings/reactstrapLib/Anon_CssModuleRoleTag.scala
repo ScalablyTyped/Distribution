@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CssModuleRoleTag extends js.Object {
   var `aria-label`: js.UndefOr[java.lang.String] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MinifyOutput extends js.Object {
   var ast: js.UndefOr[scala.Boolean | AST_Toplevel] = js.undefined
   var code: java.lang.String

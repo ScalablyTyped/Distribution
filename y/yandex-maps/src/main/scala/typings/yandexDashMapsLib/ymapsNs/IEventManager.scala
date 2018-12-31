@@ -36,7 +36,6 @@ trait IEventManager extends IEventTrigger {
   ): this.type = js.native
   def getParent(): js.Object | scala.Null = js.native
   def group(): IEventGroup = js.native
-  //remove(types: string[][] | string[] | string, callback: (event: object | IEvent) => void, context?: object, priority?: number): this;
   def setParent(): this.type = js.native
   //remove(types: string[][] | string[] | string, callback: (event: object | IEvent) => void, context?: object, priority?: number): this;
   def setParent(parent: js.Object): this.type = js.native

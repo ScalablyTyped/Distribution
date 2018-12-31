@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ForwardedTcpip extends js.Object {
   var bindAddr: java.lang.String
   var bindPort: scala.Double

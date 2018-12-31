@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AssignmentExpression extends BaseNode {
   var left: LVal
   var operator: java.lang.String

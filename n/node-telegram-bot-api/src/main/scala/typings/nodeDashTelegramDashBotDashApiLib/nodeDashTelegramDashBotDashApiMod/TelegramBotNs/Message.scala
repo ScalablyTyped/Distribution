@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Message extends js.Object {
   var audio: js.UndefOr[Audio] = js.undefined
   var author_signature: js.UndefOr[java.lang.String] = js.undefined

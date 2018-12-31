@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomchannelsResource extends js.Object {
   /** Delete a specific custom channel from the host AdSense account. */
   def delete(request: gapiDotClientDotAdsensehostLib.Anon_PrettyPrintAdClientIdQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[CustomChannel]

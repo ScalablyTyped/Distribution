@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StatusBar extends js.Object {
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
   var hideAnimation: js.UndefOr[

@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateAddressOpts extends js.Object {
   /**
-       * Address label
-       */
+    * Address label
+    */
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 

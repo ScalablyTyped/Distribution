@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartObject extends js.Object {
   var baseChartMessageColor: js.UndefOr[java.lang.String] = js.undefined
   var baseChartMessageFont: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SizePerPageFunctionProps extends js.Object {
   /**
   	 * Current size per page as a string value.

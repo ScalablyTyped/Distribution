@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IClientSubscribeOptions extends js.Object {
   /**
-     * the QoS
-     */
+    * the QoS
+    */
   var qos: mqttDashPacketLib.mqttDashPacketMod.QoS
 }
 

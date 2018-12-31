@@ -20,16 +20,16 @@ abstract class ShareOperation () extends js.Object {
   /** Specifies that the sharing operation is complete. */
   def reportCompleted(): scala.Unit = js.native
   /**
-                       * Specifies that the sharing operation is complete. A QuickLink that the system can save as a shortcut for future sharing operations is included.
-                       * @param quicklink A QuickLink object that the system saves as a shortcut for future sharing operations.
-                       */
+    * Specifies that the sharing operation is complete. A QuickLink that the system can save as a shortcut for future sharing operations is included.
+    * @param quicklink A QuickLink object that the system saves as a shortcut for future sharing operations.
+    */
   def reportCompleted(quicklink: QuickLink): scala.Unit = js.native
   /** Specifies that the app has acquired the content that the user wants to share. */
   def reportDataRetrieved(): scala.Unit = js.native
   /**
-                       * Specifies that an error occurred during the sharing operation.
-                       * @param value Specifies the error message. The system displays this message to the user.
-                       */
+    * Specifies that an error occurred during the sharing operation.
+    * @param value Specifies the error message. The system displays this message to the user.
+    */
   def reportError(value: java.lang.String): scala.Unit = js.native
   /** Specifies that the app has started to acquire the content that the user wants to share. */
   def reportStarted(): scala.Unit = js.native

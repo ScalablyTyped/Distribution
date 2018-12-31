@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MultiColumnHidingEventUIParam extends js.Object {
   /**
   	 * Gets the array of the hidden column keys. Only when you click on Reset button in column chooser there is an array of column keys.

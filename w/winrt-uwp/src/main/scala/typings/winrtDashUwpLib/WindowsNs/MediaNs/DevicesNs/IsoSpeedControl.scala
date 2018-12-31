@@ -26,21 +26,21 @@ abstract class IsoSpeedControl () extends js.Object {
   /** Gets the current ISO speed value. */
   var value: scala.Double = js.native
   /**
-                   * Sets the ISO speed to automatic.
-                   * @return An asynchronous action.
-                   */
+    * Sets the ISO speed to automatic.
+    * @return An asynchronous action.
+    */
   def setAutoAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Asynchronously sets the ISO film speed Preset .
-                   * @param preset The ISO preset value to set the Preset property to.
-                   * @return The object that is used to control the asynchronous operation.
-                   */
+    * Asynchronously sets the ISO film speed Preset .
+    * @param preset The ISO preset value to set the Preset property to.
+    * @return The object that is used to control the asynchronous operation.
+    */
   def setPresetAsync(preset: IsoSpeedPreset): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Sets the ISO speed value.
-                   * @param isoSpeed The ISO speed value.
-                   * @return An asynchronous action.
-                   */
+    * Sets the ISO speed value.
+    * @param isoSpeed The ISO speed value.
+    * @return An asynchronous action.
+    */
   def setValueAsync(isoSpeed: scala.Double): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

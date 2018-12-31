@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RTCIceTransport extends js.Object {
   //readonly role: RTCIceRole;
   //readonly component: RTCIceComponent;

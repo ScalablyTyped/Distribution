@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Node extends js.Object {
   var attributes: stdLib.Record[java.lang.String, java.lang.String | scala.Double]
   var children: js.Array[Node]

@@ -13,11 +13,9 @@ trait FancytreeStatic extends js.Object {
   /** Throw an error if condition fails (debug method).  */
   def assert(cond: scala.Boolean, msg: java.lang.String): scala.Unit = js.native
   /** Return a function that executes *fn* at most every *timeout* ms. */
-  def debounce[T /* <: js.Function1[/* repeated */js.Any, scala.Unit] */](timeout: scala.Double, fn: T): T = js.native
-  /** Return a function that executes *fn* at most every *timeout* ms. */
-  def debounce[T /* <: js.Function1[/* repeated */js.Any, scala.Unit] */](timeout: scala.Double, fn: T, invokeAsap: scala.Boolean): T = js.native
-  /** Return a function that executes *fn* at most every *timeout* ms. */
-  def debounce[T /* <: js.Function1[/* repeated */js.Any, scala.Unit] */](timeout: scala.Double, fn: T, invokeAsap: scala.Boolean, ctx: js.Any): T = js.native
+  def debounce[T /* <: js.Function1[/* repeated */ js.Any, scala.Unit] */](timeout: scala.Double, fn: T): T = js.native
+  def debounce[T /* <: js.Function1[/* repeated */ js.Any, scala.Unit] */](timeout: scala.Double, fn: T, invokeAsap: scala.Boolean): T = js.native
+  def debounce[T /* <: js.Function1[/* repeated */ js.Any, scala.Unit] */](timeout: scala.Double, fn: T, invokeAsap: scala.Boolean, ctx: js.Any): T = js.native
   def debug(msg: java.lang.String): scala.Unit = js.native
   def error(msg: java.lang.String): scala.Unit = js.native
   def escapeHtml(s: java.lang.String): java.lang.String = js.native

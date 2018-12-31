@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ContributedSubscription extends js.Object {
   var canOptOut: scala.Double
   var contributedSubscription: scala.Double

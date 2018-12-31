@@ -11,18 +11,18 @@ sealed trait TableauEventName extends js.Object
 //#endregion
 //#region Viz Event Classes
 /**
-     * Defines strings passed to the Viz.addEventListener and Viz.removeEventListener methods.
-     * The values of the enums are all lowercase strings with no underscores.
-     * For example, CUSTOM_VIEW_LOAD is customviewload.
-     * Either the fully-qualified enum (tableau.TableauEventName.FILTER_CHANGE) or the raw string (filterchange) is acceptable.
-     */
+  * Defines strings passed to the Viz.addEventListener and Viz.removeEventListener methods.
+  * The values of the enums are all lowercase strings with no underscores.
+  * For example, CUSTOM_VIEW_LOAD is customviewload.
+  * Either the fully-qualified enum (tableau.TableauEventName.FILTER_CHANGE) or the raw string (filterchange) is acceptable.
+  */
 @JSGlobal("tableau.TableauEventName")
 @js.native
 object TableauEventName extends js.Object {
   /**
-           * Raised when a custom view has finished loading.
-           * This event is raised after the callback function for onFirstInteractive (if any) has been called.
-           */
+    * Raised when a custom view has finished loading.
+    * This event is raised after the callback function for onFirstInteractive (if any) has been called.
+    */
   @js.native
   sealed trait CUSTOM_VIEW_LOAD
     extends tableauLib.tableauNs.TableauEventName

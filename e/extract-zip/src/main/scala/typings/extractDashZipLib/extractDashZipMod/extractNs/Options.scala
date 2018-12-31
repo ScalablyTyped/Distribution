@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var defaultDirMode: js.UndefOr[scala.Double] = js.undefined
   var defaultFileMode: js.UndefOr[scala.Double] = js.undefined

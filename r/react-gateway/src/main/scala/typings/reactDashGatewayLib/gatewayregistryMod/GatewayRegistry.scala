@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GatewayRegistry extends js.Object {
   var _children: org.scalablytyped.runtime.StringDictionary[
     js.UndefOr[org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactNode]]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ButtonsApiExportInfoParameter extends js.Object {
   var extension: js.UndefOr[java.lang.String | js.Function0[java.lang.String]] = js.undefined
   var filename: js.UndefOr[java.lang.String | js.Function0[java.lang.String]] = js.undefined

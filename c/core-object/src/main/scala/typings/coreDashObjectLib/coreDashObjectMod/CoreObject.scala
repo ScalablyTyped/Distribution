@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 trait CoreObject extends js.Object {
   // TODO restrict to `Record<string, unknown>` once we can restrict to 3.0+ on DT
   def init(): scala.Unit = js.native
-  // TODO restrict to `Record<string, unknown>` once we can restrict to 3.0+ on DT
   def init(options: stdLib.Record[java.lang.String, _]): scala.Unit = js.native
 }
 

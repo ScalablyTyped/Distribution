@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ArgumentParserOptions extends js.Object {
   var addHelp: js.UndefOr[scala.Boolean] = js.undefined
   var argumentDefault: js.UndefOr[js.Any] = js.undefined

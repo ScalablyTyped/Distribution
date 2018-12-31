@@ -6,12 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * The RowColumnDefinition class describes constraints on a row or a column
-    * in a Panel of type Panel.Table.
-    * It also provides information about the actual layout after the
-    * Table Panel has been arranged.
-    */
-
+  * The RowColumnDefinition class describes constraints on a row or a column
+  * in a Panel of type Panel.Table.
+  * It also provides information about the actual layout after the
+  * Table Panel has been arranged.
+  */
 trait RowColumnDefinition extends js.Object {
   /**This read-only property returns the usable row height or column width, after arrangement, that objects in this row or column can be placed within.*/
   var actual: scala.Double
@@ -52,9 +51,9 @@ trait RowColumnDefinition extends js.Object {
   /**Gets or sets the column width.*/
   var width: scala.Double
   /**
-          * Add a data-binding of a property on this object to a property on a data object.
-          * @param {Binding} binding
-          */
+    * Add a data-binding of a property on this object to a property on a data object.
+    * @param {Binding} binding
+    */
   def bind(binding: Binding): scala.Unit
   def computeEffectiveSpacing(): scala.Double
     // undocumented

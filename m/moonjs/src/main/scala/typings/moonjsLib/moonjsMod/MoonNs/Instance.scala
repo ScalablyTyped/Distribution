@@ -15,15 +15,12 @@ trait Instance[Data] extends js.Object {
   def destroy(): scala.Unit = js.native
   def emit(eventName: java.lang.String): scala.Unit = js.native
   def emit(eventName: java.lang.String, data: js.Any): scala.Unit = js.native
-  def get[K /* <: java.lang.String */](name: K): /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Data))),List()),Left(TsIdentSimple(K))) */js.Any = js.native
+  def get[K /* <: java.lang.String */](name: K): /* import warning: ImportType.apply Failed type conversion: Data[K] */ js.Any = js.native
   def mount(selector: java.lang.String): scala.Unit = js.native
   def off(): scala.Unit = js.native
   def off(eventName: java.lang.String): scala.Unit = js.native
   def off(eventName: java.lang.String, listener: js.Function1[/* event */ stdLib.Event, scala.Unit]): scala.Unit = js.native
   def on(eventName: java.lang.String, listener: js.Function1[/* event */ stdLib.Event, scala.Unit]): scala.Unit = js.native
-  def set[K /* <: java.lang.String */](
-    name: K,
-    value: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(Data))),List()),Left(TsIdentSimple(K))) */js.Any
-  ): scala.Unit = js.native
+  def set[K /* <: java.lang.String */](name: K, value: /* import warning: ImportType.apply Failed type conversion: Data[K] */ js.Any): scala.Unit = js.native
 }
 

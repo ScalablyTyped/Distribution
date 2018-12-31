@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Image extends js.Object {
   var clip: js.UndefOr[scala.Double] = js.undefined
   var scale: js.UndefOr[scala.Double] = js.undefined

@@ -15,7 +15,7 @@ object CalloutManager extends js.Object {
   /** Closes all callouts on the page */
   def closeAll(): scala.Boolean = js.native
   /** Gets the first launch point within the specified ancestor element, and returns true if the associated with it callout is opened or opening.
-          If the launch point is not found or the callout is hidden, returns false. */
+    If the launch point is not found or the callout is hidden, returns false. */
   def containsOneCalloutOpen(ancestor: stdLib.HTMLElement): scala.Boolean = js.native
   /** Creates a new callout */
   def createNew(options: sharepointLib.CalloutOptions): sharepointLib.Callout = js.native

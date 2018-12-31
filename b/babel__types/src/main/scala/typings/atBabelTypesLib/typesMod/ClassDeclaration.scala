@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClassDeclaration extends BaseNode {
   var `abstract`: scala.Boolean | scala.Null
   var body: ClassBody

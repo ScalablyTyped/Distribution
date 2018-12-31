@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SCBrokerOptions
   extends /* additionalOptions */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   // An ID to associate with this specific instance of SC

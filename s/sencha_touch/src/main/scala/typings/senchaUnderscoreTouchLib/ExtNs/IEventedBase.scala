@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEventedBase
   extends senchaUnderscoreTouchLib.ExtNs.mixinNs.IObservable {
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this

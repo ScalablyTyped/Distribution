@@ -17,7 +17,7 @@ class AbstractChart protected () extends Base {
   def data(): js.Any = js.native
   def data(data: js.Any): this.type = js.native
   def destroy(): this.type = js.native
-  def dispatchAs(name: java.lang.String, args: js.Any*): js.Function1[/* repeated */js.Any, scala.Unit] = js.native
+  def dispatchAs(name: java.lang.String, args: js.Any*): js.Function1[/* repeated */ js.Any, scala.Unit] = js.native
   def fit(): this.type = js.native
   def fit(fitOptions: FitOptions): this.type = js.native
   def fit(fitOptions: FitOptions, watchOptions: WatchOptions): this.type = js.native

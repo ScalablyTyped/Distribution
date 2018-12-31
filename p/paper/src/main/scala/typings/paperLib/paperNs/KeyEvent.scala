@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 class KeyEvent () extends Event {
   /**
-           * The string character of the key that caused this key event.
-           */
+    * The string character of the key that caused this key event.
+    */
   var character: java.lang.String = js.native
   /**
-           * The key that caused this key event.
-           */
+    * The key that caused this key event.
+    */
   var key: java.lang.String = js.native
   /**
-           * The type of key event.
-           * String('keydown', 'keyup')
-           */
+    * The type of key event.
+    * String('keydown', 'keyup')
+    */
   var `type`: java.lang.String = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SparklineValueAxisItemMajorGridLines extends js.Object {
   var color: js.UndefOr[java.lang.String] = js.undefined
   var skip: js.UndefOr[scala.Double] = js.undefined

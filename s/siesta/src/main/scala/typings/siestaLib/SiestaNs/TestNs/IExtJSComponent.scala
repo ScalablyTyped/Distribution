@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @mixin
-         */
+  * @mixin
+  */
 @js.native
 trait IExtJSComponent extends js.Object {
   def destroysOk(components: js.Any): scala.Unit = js.native

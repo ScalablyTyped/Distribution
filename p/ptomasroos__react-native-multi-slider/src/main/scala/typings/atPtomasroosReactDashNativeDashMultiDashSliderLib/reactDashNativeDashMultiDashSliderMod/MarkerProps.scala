@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MarkerProps extends js.Object {
   var currentValue: scala.Double
   var enabled: scala.Boolean

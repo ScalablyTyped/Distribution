@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PictureOptions extends js.Object {
   var base64: js.UndefOr[scala.Boolean] = js.undefined
   var exif: js.UndefOr[scala.Boolean] = js.undefined

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class SCChannel protected ()
   extends componentDashEmitterLib.componentDashEmitterMod.Emitter {
-  def this(name: java.lang.String, client: js.Any) = this()
-  def this(name: java.lang.String, client: js.Any, options: SCChannelOptions) = this()
+  def this(name: java.lang.String, client: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify SCExchange */ js.Any) = this()
+  def this(name: java.lang.String, client: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify SCExchange */ js.Any, options: SCChannelOptions) = this()
   val PENDING: scDashChannelLib.scDashChannelLibStrings.pending = js.native
   val SUBSCRIBED: scDashChannelLib.scDashChannelLibStrings.subscribed = js.native
   val UNSUBSCRIBED: scDashChannelLib.scDashChannelLibStrings.unsubscribed = js.native
@@ -31,8 +31,14 @@ class SCChannel protected ()
   def subscribe(options: js.Any): scala.Unit = js.native
   def unsubscribe(): scala.Unit = js.native
   def unwatch(): scala.Unit = js.native
-  def unwatch(handler: js.Any): scala.Unit = js.native
-  def watch(handler: js.Any): scala.Unit = js.native
-  def watchers(): js.Array[_] = js.native
+  def unwatch(
+    handler: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify handlerFunction */ js.Any
+  ): scala.Unit = js.native
+  def watch(
+    handler: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify handlerFunction */ js.Any
+  ): scala.Unit = js.native
+  def watchers(): js.Array[
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify handlerFunction */ _
+  ] = js.native
 }
 

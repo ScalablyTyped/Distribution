@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlotData extends js.Object {
   var autobinx: scala.Boolean
   var boxmean: scala.Boolean | plotlyDotJsLib.plotlyDotJsLibStrings.sd

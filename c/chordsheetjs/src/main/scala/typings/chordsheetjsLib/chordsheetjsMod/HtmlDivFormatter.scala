@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class HtmlDivFormatter () extends js.Object {
   /**
-       * Formats a song into HTML.
-       * @param song The song to be formatted
-       */
+    * Formats a song into HTML.
+    * @param song The song to be formatted
+    */
   def format(song: Song): java.lang.String = js.native
 }
 

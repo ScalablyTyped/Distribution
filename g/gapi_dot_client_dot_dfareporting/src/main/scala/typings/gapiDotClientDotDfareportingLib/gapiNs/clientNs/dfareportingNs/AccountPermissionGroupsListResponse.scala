@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccountPermissionGroupsListResponse extends js.Object {
   /** Account permission group collection. */
   var accountPermissionGroups: js.UndefOr[js.Array[AccountPermissionGroup]] = js.undefined

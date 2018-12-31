@@ -11,7 +11,7 @@ object libActionCreatorsModMembers extends js.Object {
   def go(args: js.Object*): ReduxRouterAction = js.native
   def goBack(args: js.Object*): ReduxRouterAction = js.native
   def goForward(args: js.Object*): ReduxRouterAction = js.native
-  def historyAPI(method: js.Any): js.Function1[/* repeated */js.Object, ReduxRouterAction] = js.native
+  def historyAPI(method: js.Any): js.Function1[/* repeated */ js.Object, ReduxRouterAction] = js.native
   def initRoutes(routes: js.Any): ReduxRouterAction = js.native
   def push(args: js.Object*): ReduxRouterAction = js.native
   def pushState(args: js.Object*): ReduxRouterAction = js.native

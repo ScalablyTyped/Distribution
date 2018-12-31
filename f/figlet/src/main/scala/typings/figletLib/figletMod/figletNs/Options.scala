@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var font: js.UndefOr[Fonts] = js.undefined
   var horizontalLayout: js.UndefOr[KerningMethods] = js.undefined

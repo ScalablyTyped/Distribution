@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IChartistFixedScaleAxis extends ILineChartAxis {
   var divisor: js.UndefOr[scala.Double] = js.undefined
   var high: js.UndefOr[scala.Double] = js.undefined

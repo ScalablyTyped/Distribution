@@ -863,43 +863,27 @@ object reselectModMembers extends js.Object {
       T
     ]
   ] = js.native
-  def createSelectorCreator(memoize: js.Function1[/* func */ js.Function, js.Function]): js.Function2[
-    /* selectors */ js.Array[ParametricSelector[_, _, _]], 
-    /* combiner */ js.Function1[/* repeated */js.Any, _], 
-    OutputParametricSelector[_, _, _, js.Function1[/* repeated */_, _]]
-  ] = js.native
-  def createSelectorCreator[O1](memoize: js.Function2[/* func */ js.Function, /* option1 */ O1, js.Function], option1: O1): js.Function2[
-    /* selectors */ js.Array[ParametricSelector[_, _, _]], 
-    /* combiner */ js.Function1[/* repeated */js.Any, _], 
-    OutputParametricSelector[_, _, _, js.Function1[/* repeated */_, _]]
-  ] = js.native
+  def createSelectorCreator(memoize: js.Function1[/* func */ js.Function, js.Function]): reselectLib.Anon_Selectors = js.native
+  def createSelectorCreator[O1](memoize: js.Function2[/* func */ js.Function, /* option1 */ O1, js.Function], option1: O1): reselectLib.Anon_Selectors = js.native
   def createSelectorCreator[O1, O2](
     memoize: js.Function3[/* func */ js.Function, /* option1 */ O1, /* option2 */ O2, js.Function],
     option1: O1,
     option2: O2
-  ): js.Function2[
-    /* selectors */ js.Array[ParametricSelector[_, _, _]], 
-    /* combiner */ js.Function1[/* repeated */js.Any, _], 
-    OutputParametricSelector[_, _, _, js.Function1[/* repeated */_, _]]
-  ] = js.native
+  ): reselectLib.Anon_Selectors = js.native
   def createSelectorCreator[O1, O2, O3](
     memoize: js.Function5[
       /* func */ js.Function, 
       /* option1 */ O1, 
       /* option2 */ O2, 
       /* option3 */ O3, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       js.Function
     ],
     option1: O1,
     option2: O2,
     option3: O3,
     rest: js.Any*
-  ): js.Function2[
-    /* selectors */ js.Array[ParametricSelector[_, _, _]], 
-    /* combiner */ js.Function1[/* repeated */js.Any, _], 
-    OutputParametricSelector[_, _, _, js.Function1[/* repeated */_, _]]
-  ] = js.native
+  ): reselectLib.Anon_Selectors = js.native
   @JSName("createSelector")
   def createSelector_S1P1R1TOutputParametricSelector[S1, P1, R1, T](selectors: js.Array[ParametricSelector[S1, P1, R1]], combiner: js.Function1[/* res1 */ R1, T]): OutputParametricSelector[S1, P1, T, js.Function1[/* res1 */ R1, T]] = js.native
   @JSName("createSelector")
@@ -2458,30 +2442,22 @@ object reselectModMembers extends js.Object {
   @JSName("createSelector")
   def createSelector_SPR1TOutputParametricSelector[S, P, R1, T](selectors: js.Array[ParametricSelector[S, P, R1]], combiner: js.Function1[/* res */ R1, T]): OutputParametricSelector[S, P, T, js.Function1[/* res */ R1, T]] = js.native
   @JSName("createSelector")
-  def createSelector_SPRTOutputParametricSelector[S, P, R, T](selectors: js.Array[ParametricSelector[S, P, R]], combiner: js.Function1[/* repeated */R, T]): OutputParametricSelector[S, P, T, js.Function1[/* repeated */R, T]] = js.native
+  def createSelector_SPRTOutputParametricSelector[S, P, R, T](selectors: js.Array[ParametricSelector[S, P, R]], combiner: js.Function1[/* repeated */ R, T]): OutputParametricSelector[S, P, T, js.Function1[/* repeated */ R, T]] = js.native
   @JSName("createSelector")
   def createSelector_SR1T[S, R1, T](selector: Selector[S, R1], combiner: js.Function1[/* res */ R1, T]): OutputSelector[S, T, js.Function1[/* res */ R1, T]] = js.native
   @JSName("createSelector")
-  def createSelector_SRT[S, R, T](selectors: js.Array[Selector[S, R]], combiner: js.Function1[/* repeated */R, T]): OutputSelector[S, T, js.Function1[/* repeated */R, T]] = js.native
+  def createSelector_SRT[S, R, T](selectors: js.Array[Selector[S, R]], combiner: js.Function1[/* repeated */ R, T]): OutputSelector[S, T, js.Function1[/* repeated */ R, T]] = js.native
   def createStructuredSelector[S, T](selectors: reselectLib.reselectLibStrings.createStructuredSelector with T): Selector[S, T] = js.native
   def createStructuredSelector[S, T](
     selectors: reselectLib.reselectLibStrings.createStructuredSelector with T,
-    selectorCreator: js.Function2[
-      /* selectors */ js.Array[ParametricSelector[_, _, _]], 
-      /* combiner */ js.Function1[/* repeated */js.Any, _], 
-      OutputParametricSelector[_, _, _, js.Function1[/* repeated */_, _]]
-    ]
+    selectorCreator: reselectLib.Anon_Selectors
   ): Selector[S, T] = js.native
   @JSName("createStructuredSelector")
   def createStructuredSelector_SPTParametricSelector[S, P, T](selectors: reselectLib.reselectLibStrings.createStructuredSelector with T): ParametricSelector[S, P, T] = js.native
   @JSName("createStructuredSelector")
   def createStructuredSelector_SPTParametricSelector[S, P, T](
     selectors: reselectLib.reselectLibStrings.createStructuredSelector with T,
-    selectorCreator: js.Function2[
-      /* selectors */ js.Array[ParametricSelector[_, _, _]], 
-      /* combiner */ js.Function1[/* repeated */js.Any, _], 
-      OutputParametricSelector[_, _, _, js.Function1[/* repeated */_, _]]
-    ]
+    selectorCreator: reselectLib.Anon_Selectors
   ): ParametricSelector[S, P, T] = js.native
   def defaultMemoize[F /* <: js.Function */](func: F): F = js.native
   def defaultMemoize[F /* <: js.Function */](

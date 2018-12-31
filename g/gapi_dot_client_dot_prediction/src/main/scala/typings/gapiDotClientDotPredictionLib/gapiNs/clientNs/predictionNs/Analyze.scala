@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Analyze extends js.Object {
   /** Description of the data the model was trained on. */
   var dataDescription: js.UndefOr[gapiDotClientDotPredictionLib.Anon_OutputFeature] = js.undefined

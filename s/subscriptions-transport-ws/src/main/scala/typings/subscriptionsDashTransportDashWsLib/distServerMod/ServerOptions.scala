@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerOptions extends js.Object {
   var execute: js.UndefOr[ExecuteFunction] = js.undefined
   var keepAlive: js.UndefOr[scala.Double] = js.undefined

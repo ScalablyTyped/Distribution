@@ -11,24 +11,12 @@ trait Fields extends js.Object {
   def apply(Index: java.lang.String): Field = js.native
   def apply(Index: scala.Double): Field = js.native
   /**
-           * @param DefinedSize [DefinedSize=0]
-           * @param Attrib [Attrib=-1]
-           */
+    * @param DefinedSize [DefinedSize=0]
+    * @param Attrib [Attrib=-1]
+    */
   def Append(Name: java.lang.String, Type: DataTypeEnum): scala.Unit = js.native
-  /**
-           * @param DefinedSize [DefinedSize=0]
-           * @param Attrib [Attrib=-1]
-           */
   def Append(Name: java.lang.String, Type: DataTypeEnum, DefinedSize: scala.Double): scala.Unit = js.native
-  /**
-           * @param DefinedSize [DefinedSize=0]
-           * @param Attrib [Attrib=-1]
-           */
   def Append(Name: java.lang.String, Type: DataTypeEnum, DefinedSize: scala.Double, Attrib: FieldAttributeEnum): scala.Unit = js.native
-  /**
-           * @param DefinedSize [DefinedSize=0]
-           * @param Attrib [Attrib=-1]
-           */
   def Append(
     Name: java.lang.String,
     Type: DataTypeEnum,
@@ -44,23 +32,14 @@ trait Fields extends js.Object {
   def Refresh(): scala.Unit = js.native
   /** @param ResyncValues [ResyncValues=2] */
   def Resync(): scala.Unit = js.native
-  /** @param ResyncValues [ResyncValues=2] */
   def Resync(ResyncValues: ResyncEnum): scala.Unit = js.native
   def Update(): scala.Unit = js.native
   /**
-           * @param DefinedSize [DefinedSize=0]
-           * @param Attrib [Attrib=-1]
-           */
+    * @param DefinedSize [DefinedSize=0]
+    * @param Attrib [Attrib=-1]
+    */
   def _Append(Name: java.lang.String, Type: DataTypeEnum): scala.Unit = js.native
-  /**
-           * @param DefinedSize [DefinedSize=0]
-           * @param Attrib [Attrib=-1]
-           */
   def _Append(Name: java.lang.String, Type: DataTypeEnum, DefinedSize: scala.Double): scala.Unit = js.native
-  /**
-           * @param DefinedSize [DefinedSize=0]
-           * @param Attrib [Attrib=-1]
-           */
   def _Append(Name: java.lang.String, Type: DataTypeEnum, DefinedSize: scala.Double, Attrib: FieldAttributeEnum): scala.Unit = js.native
 }
 

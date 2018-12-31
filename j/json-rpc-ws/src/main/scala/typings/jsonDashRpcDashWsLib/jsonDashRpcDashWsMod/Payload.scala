@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Payload[ParamType] extends js.Object {
   var error: js.UndefOr[js.Any] = js.undefined
   var id: java.lang.String

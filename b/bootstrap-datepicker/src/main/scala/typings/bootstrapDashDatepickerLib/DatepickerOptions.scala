@@ -6,15 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * All options that take a “Date” can handle a Date object; a String
- * formatted according to the given format; or a timedelta relative
- * to today, eg “-1d”, “+6m +1y”, etc, where valid units are “d” (day),
- * “w” (week), “m” (month), and “y” (year).
- *
- * See online docs for more info:
- *  https://bootstrap-datepicker.readthedocs.io/en/latest/options.html
- */
-
+  * All options that take a “Date” can handle a Date object; a String
+  * formatted according to the given format; or a timedelta relative
+  * to today, eg “-1d”, “+6m +1y”, etc, where valid units are “d” (day),
+  * “w” (week), “m” (month), and “y” (year).
+  *
+  * See online docs for more info:
+  *  https://bootstrap-datepicker.readthedocs.io/en/latest/options.html
+  */
 trait DatepickerOptions extends js.Object {
   var assumeNearbyYear: js.UndefOr[scala.Boolean | scala.Double] = js.undefined
   var autoclose: js.UndefOr[scala.Boolean] = js.undefined

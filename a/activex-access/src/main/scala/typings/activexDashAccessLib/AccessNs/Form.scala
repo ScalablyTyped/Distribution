@@ -295,25 +295,16 @@ class Form protected () extends js.Object {
   val accFocus: js.Any = js.native
   val accParent: js.Any = js.native
   val accSelection: js.Any = js.native
-  // tslint:disable-next-line:no-unnecessary-generics
   def Controls[T](Index: java.lang.String): T = js.native
   // tslint:disable-next-line:no-unnecessary-generics
   def Controls[T](Index: scala.Double): T = js.native
   def DefaultControl(ControlType: scala.Double): Control = js.native
   /**
-           * @param Right [Right=0]
-           * @param Down [Down=0]
-           */
+    * @param Right [Right=0]
+    * @param Down [Down=0]
+    */
   def GoToPage(PageNumber: scala.Double): scala.Unit = js.native
-  /**
-           * @param Right [Right=0]
-           * @param Down [Down=0]
-           */
   def GoToPage(PageNumber: scala.Double, Right: scala.Double): scala.Unit = js.native
-  /**
-           * @param Right [Right=0]
-           * @param Down [Down=0]
-           */
   def GoToPage(PageNumber: scala.Double, Right: scala.Double, Down: scala.Double): scala.Unit = js.native
   def Move(Left: scala.Double): scala.Unit = js.native
   def Move(Left: scala.Double, Top: scala.Double): scala.Unit = js.native

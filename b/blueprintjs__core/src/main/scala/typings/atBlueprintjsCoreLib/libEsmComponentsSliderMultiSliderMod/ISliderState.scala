@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISliderState extends js.Object {
   var labelPrecision: js.UndefOr[scala.Double] = js.undefined
   /** the client size, in pixels, of one tick */

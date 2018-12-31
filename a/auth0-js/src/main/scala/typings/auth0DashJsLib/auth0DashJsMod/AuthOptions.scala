@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AuthOptions extends js.Object {
   var _disableDeprecationWarnings: js.UndefOr[scala.Boolean] = js.undefined
   var _sendTelemetry: js.UndefOr[scala.Boolean] = js.undefined

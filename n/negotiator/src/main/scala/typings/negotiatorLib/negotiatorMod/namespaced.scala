@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced protected () extends Negotiator {
   /**
-       * The negotiator constructor receives a request object
-       */
+    * The negotiator constructor receives a request object
+    */
   def this(req: negotiatorLib.Anon_Headers) = this()
 }
 

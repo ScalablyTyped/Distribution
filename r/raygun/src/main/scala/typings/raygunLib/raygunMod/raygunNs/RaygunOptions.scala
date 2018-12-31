@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RaygunOptions extends js.Object {
   var apiKey: java.lang.String
   var filters: js.UndefOr[js.Array[java.lang.String]] = js.undefined

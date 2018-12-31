@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TemplateResource extends js.Object {
   /** Deletes a template */
   def delete(request: gapiDotClientDotFusiontablesLib.Anon_PrettyPrintQuotaUserKeyUserIpOauthtokenTemplateId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

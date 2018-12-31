@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ASTKindToNode extends js.Object {
   var Argument: ArgumentNode
   var BooleanValue: BooleanValueNode

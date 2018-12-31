@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PayPalAccountDetails extends js.Object {
   var billingAddress: PayPalBillingAddress
   var countryCode: java.lang.String

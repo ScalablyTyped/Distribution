@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPropertyGrid extends IPanel {
   /** [Config Option] (Object) */
   var customEditors: js.UndefOr[js.Any] = js.undefined

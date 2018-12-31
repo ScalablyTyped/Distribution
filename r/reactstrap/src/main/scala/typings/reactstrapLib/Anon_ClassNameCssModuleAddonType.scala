@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ClassNameCssModuleAddonType extends js.Object {
   var addonType: reactstrapLib.reactstrapLibStrings.prepend | reactstrapLib.reactstrapLibStrings.append
   var className: js.UndefOr[java.lang.String] = js.undefined

@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 class AccessMember protected () extends Expression {
   def this(`object`: Expression, name: java.lang.String) = this()
   /**
-     * The property name.
-     */
+    * The property name.
+    */
   var name: java.lang.String = js.native
   /**
-     * The object expression.
-     */
+    * The object expression.
+    */
   var `object`: Expression = js.native
 }
 

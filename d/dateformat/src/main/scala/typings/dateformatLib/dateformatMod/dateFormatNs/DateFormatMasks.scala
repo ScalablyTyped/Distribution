@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * dateFormat.masks
-     *
-     * Predefined Formats
-     *
-     * @see https://github.com/felixge/node-dateformat/blob/master/lib/dateformat.js#L107
-     */
-
+  * dateFormat.masks
+  *
+  * Predefined Formats
+  *
+  * @see https://github.com/felixge/node-dateformat/blob/master/lib/dateformat.js#L107
+  */
 trait DateFormatMasks
   extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String] {
   var default: java.lang.String

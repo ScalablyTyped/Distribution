@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IItemLookupOptions extends js.Object {
   var condition: js.UndefOr[java.lang.String] = js.undefined
   var domain: js.UndefOr[java.lang.String] = js.undefined

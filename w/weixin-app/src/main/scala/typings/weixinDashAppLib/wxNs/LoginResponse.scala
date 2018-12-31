@@ -19,7 +19,6 @@ import scala.scalajs.js.annotation._
 	 * 通过wx.checkSession() 检测用户登录态是否失效。并决定是否调用wx.login()
 	 * 重新获取登录态
 	 */
-
 trait LoginResponse extends js.Object {
   /**
   		 * 用户允许登录后，回调内容会带上 code（有效期五分钟），

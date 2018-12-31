@@ -18,7 +18,7 @@ trait SweetAlert extends js.Object {
   var setDefaults: js.UndefOr[js.Function1[/* opts */ js.Object, scala.Unit]] = js.native
   var stopLoading: js.UndefOr[js.Function0[scala.Unit]] = js.native
   def apply(
-    /* import warning: Dropping repeated marker of param TsIdentSimple(params) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(SwalParams))),List())) is not an array type */params: SwalParams
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param params because its type SwalParams is not an array type */ params: SwalParams
   ): js.Promise[_] = js.native
 }
 

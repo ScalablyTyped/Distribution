@@ -12,64 +12,64 @@ sealed trait ScheduleDays extends js.Object
 @js.native
 object ScheduleDays extends js.Object {
   /**
-       * Run on all days of the week.
-       */
+    * Run on all days of the week.
+    */
   @js.native
   sealed trait All
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.ScheduleDays
   
   /**
-       * Run on Friday.
-       */
+    * Run on Friday.
+    */
   @js.native
   sealed trait Friday
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.ScheduleDays
   
   /**
-       * Run on Monday.
-       */
+    * Run on Monday.
+    */
   @js.native
   sealed trait Monday
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.ScheduleDays
   
   /**
-       * Do not run.
-       */
+    * Do not run.
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.ScheduleDays
   
   /**
-       * Run on Saturday.
-       */
+    * Run on Saturday.
+    */
   @js.native
   sealed trait Saturday
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.ScheduleDays
   
   /**
-       * Run on Sunday.
-       */
+    * Run on Sunday.
+    */
   @js.native
   sealed trait Sunday
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.ScheduleDays
   
   /**
-       * Run on Thursday.
-       */
+    * Run on Thursday.
+    */
   @js.native
   sealed trait Thursday
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.ScheduleDays
   
   /**
-       * Run on Tuesday.
-       */
+    * Run on Tuesday.
+    */
   @js.native
   sealed trait Tuesday
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.ScheduleDays
   
   /**
-       * Run on Wednesday.
-       */
+    * Run on Wednesday.
+    */
   @js.native
   sealed trait Wednesday
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.ScheduleDays

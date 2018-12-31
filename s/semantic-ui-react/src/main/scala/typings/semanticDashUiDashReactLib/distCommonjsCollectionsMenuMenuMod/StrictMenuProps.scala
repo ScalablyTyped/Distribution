@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictMenuProps extends js.Object {
   /** Index of the currently active item. */
   var activeIndex: js.UndefOr[scala.Double | java.lang.String] = js.undefined
@@ -48,11 +47,11 @@ trait StrictMenuProps extends js.Object {
     semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandCollection[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuItemMod.MenuItemProps]
   ] = js.undefined
   /**
-     * onClick handler for MenuItem. Mutually exclusive with children.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All item props.
-     */
+    * onClick handler for MenuItem. Mutually exclusive with children.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All item props.
+    */
   var onItemClick: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 

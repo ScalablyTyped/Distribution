@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStructuralType extends js.Object {
   var complexProperties: js.Array[DataProperty]
   var dataProperties: js.Array[DataProperty]

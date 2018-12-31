@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CorpusQuery extends js.Object {
   /** Details pertaining to Drive holds. If set, corpus must be Drive. */
   var driveQuery: js.UndefOr[HeldDriveQuery] = js.undefined

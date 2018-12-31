@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_StoreIdFirstPartyDomain extends js.Object {
   /** The first-party domain associated with the cookie that's been removed. */
   var firstPartyDomain: java.lang.String

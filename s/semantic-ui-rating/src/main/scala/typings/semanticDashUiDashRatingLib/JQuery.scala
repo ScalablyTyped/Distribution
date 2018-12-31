@@ -12,30 +12,30 @@ trait JQuery extends js.Object {
   def rating(): JQuery = js.native
   def rating(settings: semanticDashUiDashRatingLib.SemanticUINs.RatingSettings): JQuery = js.native
   /**
-           * Clears current rating
-           */
+    * Clears current rating
+    */
   @JSName("rating")
   def `rating_clear rating`(behavior: semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.`clear rating`): JQuery = js.native
   @JSName("rating")
   def rating_destroy(behavior: semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.destroy): JQuery = js.native
   /**
-           * Disables interactive rating mode
-           */
+    * Disables interactive rating mode
+    */
   @JSName("rating")
   def rating_disable(behavior: semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.disable): JQuery = js.native
   /**
-           * Enables interactive rating mode
-           */
+    * Enables interactive rating mode
+    */
   @JSName("rating")
   def rating_enable(behavior: semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.enable): JQuery = js.native
   /**
-           * Gets current rating
-           */
+    * Gets current rating
+    */
   @JSName("rating")
   def `rating_get rating`(behavior: semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.`get rating`): scala.Double = js.native
   /**
-           * Sets rating programmatically
-           */
+    * Sets rating programmatically
+    */
   @JSName("rating")
   def `rating_set rating`(
     behavior: semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.`set rating`,
@@ -47,12 +47,12 @@ trait JQuery extends js.Object {
     value: semanticDashUiDashRatingLib.SemanticUINs.RatingSettings
   ): JQuery = js.native
   @JSName("rating")
-  def rating_setting[K /* <: java.lang.String */](behavior: semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.setting, name: K): js.Any = js.native
+  def rating_setting[K /* <: java.lang.String */](behavior: semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.setting, name: K): /* import warning: ImportType.apply Failed type conversion: semantic-ui-rating.SemanticUI.RatingSettings._Impl[K] */ js.Any = js.native
   @JSName("rating")
   def rating_setting[K /* <: java.lang.String */](
     behavior: semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.setting,
     name: K,
-    value: js.Any
+    value: /* import warning: ImportType.apply Failed type conversion: semantic-ui-rating.SemanticUI.RatingSettings._Impl[K] */ js.Any
   ): JQuery = js.native
 }
 

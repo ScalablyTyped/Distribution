@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParseContext extends js.Object {
   /** Node starts at beginning of line */
   var atLineStart: scala.Boolean

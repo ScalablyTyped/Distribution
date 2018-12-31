@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PerformanceEntry extends js.Object {
   val duration: scala.Double
   val entryType: java.lang.String

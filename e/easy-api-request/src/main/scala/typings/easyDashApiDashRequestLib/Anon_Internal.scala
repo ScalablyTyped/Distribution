@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Internal extends js.Object {
   var cookies: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var headers: js.UndefOr[js.Array[java.lang.String]] = js.undefined

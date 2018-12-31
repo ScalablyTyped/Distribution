@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompilationContext extends js.Object {
   var async: scala.Boolean
   var baseId: java.lang.String

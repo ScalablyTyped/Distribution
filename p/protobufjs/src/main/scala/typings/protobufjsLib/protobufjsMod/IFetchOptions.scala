@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFetchOptions extends js.Object {
   /** Whether expecting a binary response */
   var binary: js.UndefOr[scala.Boolean] = js.undefined

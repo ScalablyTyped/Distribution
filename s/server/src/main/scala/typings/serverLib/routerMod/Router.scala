@@ -24,72 +24,72 @@ trait Router extends js.Object {
   def del(
     path: java.lang.String,
     middlewares: serverLib.typingsCommonMod.Middleware,
-    /* import warning: Dropping repeated marker of param TsIdentSimple(all) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(Middlewares))),List())) is not an array type */all: serverLib.typingsCommonMod.Middlewares
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: serverLib.typingsCommonMod.Middlewares
   ): serverLib.typingsCommonMod.Middleware = js.native
   def del(
     path: java.lang.String,
     middlewares: serverLib.typingsCommonMod.Middlewares,
-    /* import warning: Dropping repeated marker of param TsIdentSimple(all) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(Middlewares))),List())) is not an array type */all: serverLib.typingsCommonMod.Middlewares
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: serverLib.typingsCommonMod.Middlewares
   ): serverLib.typingsCommonMod.Middleware = js.native
   def error(
     name: java.lang.String,
     middlewares: serverLib.typingsCommonMod.Middleware,
-    /* import warning: Dropping repeated marker of param TsIdentSimple(all) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(Middlewares))),List())) is not an array type */all: serverLib.typingsCommonMod.Middlewares
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: serverLib.typingsCommonMod.Middlewares
   ): serverLib.typingsCommonMod.Middleware = js.native
   def error(
     name: java.lang.String,
     middlewares: serverLib.typingsCommonMod.Middlewares,
-    /* import warning: Dropping repeated marker of param TsIdentSimple(all) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(Middlewares))),List())) is not an array type */all: serverLib.typingsCommonMod.Middlewares
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: serverLib.typingsCommonMod.Middlewares
   ): serverLib.typingsCommonMod.Middleware = js.native
   def get(
     path: java.lang.String,
     middlewares: serverLib.typingsCommonMod.Middleware,
-    /* import warning: Dropping repeated marker of param TsIdentSimple(all) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(Middlewares))),List())) is not an array type */all: serverLib.typingsCommonMod.Middlewares
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: serverLib.typingsCommonMod.Middlewares
   ): serverLib.typingsCommonMod.Middleware = js.native
   def get(
     path: java.lang.String,
     middlewares: serverLib.typingsCommonMod.Middlewares,
-    /* import warning: Dropping repeated marker of param TsIdentSimple(all) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(Middlewares))),List())) is not an array type */all: serverLib.typingsCommonMod.Middlewares
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: serverLib.typingsCommonMod.Middlewares
   ): serverLib.typingsCommonMod.Middleware = js.native
   def post(
     path: java.lang.String,
     middlewares: serverLib.typingsCommonMod.Middleware,
-    /* import warning: Dropping repeated marker of param TsIdentSimple(all) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(Middlewares))),List())) is not an array type */all: serverLib.typingsCommonMod.Middlewares
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: serverLib.typingsCommonMod.Middlewares
   ): serverLib.typingsCommonMod.Middleware = js.native
   def post(
     path: java.lang.String,
     middlewares: serverLib.typingsCommonMod.Middlewares,
-    /* import warning: Dropping repeated marker of param TsIdentSimple(all) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(Middlewares))),List())) is not an array type */all: serverLib.typingsCommonMod.Middlewares
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: serverLib.typingsCommonMod.Middlewares
   ): serverLib.typingsCommonMod.Middleware = js.native
   def put(
     path: java.lang.String,
     middlewares: serverLib.typingsCommonMod.Middleware,
-    /* import warning: Dropping repeated marker of param TsIdentSimple(all) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(Middlewares))),List())) is not an array type */all: serverLib.typingsCommonMod.Middlewares
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: serverLib.typingsCommonMod.Middlewares
   ): serverLib.typingsCommonMod.Middleware = js.native
   def put(
     path: java.lang.String,
     middlewares: serverLib.typingsCommonMod.Middlewares,
-    /* import warning: Dropping repeated marker of param TsIdentSimple(all) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(Middlewares))),List())) is not an array type */all: serverLib.typingsCommonMod.Middlewares
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: serverLib.typingsCommonMod.Middlewares
   ): serverLib.typingsCommonMod.Middleware = js.native
   def socket(
     name: java.lang.String,
     middlewares: serverLib.typingsCommonMod.Middleware,
-    /* import warning: Dropping repeated marker of param TsIdentSimple(all) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(Middlewares))),List())) is not an array type */all: serverLib.typingsCommonMod.Middlewares
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: serverLib.typingsCommonMod.Middlewares
   ): serverLib.typingsCommonMod.Middleware = js.native
   def socket(
     name: java.lang.String,
     middlewares: serverLib.typingsCommonMod.Middlewares,
-    /* import warning: Dropping repeated marker of param TsIdentSimple(all) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(Middlewares))),List())) is not an array type */all: serverLib.typingsCommonMod.Middlewares
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: serverLib.typingsCommonMod.Middlewares
   ): serverLib.typingsCommonMod.Middleware = js.native
   def sub(
     subdomain: java.lang.String,
     middlewares: serverLib.typingsCommonMod.Middleware,
-    /* import warning: Dropping repeated marker of param TsIdentSimple(all) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(Middlewares))),List())) is not an array type */all: serverLib.typingsCommonMod.Middlewares
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: serverLib.typingsCommonMod.Middlewares
   ): serverLib.typingsCommonMod.Middleware = js.native
   def sub(
     subdomain: java.lang.String,
     middlewares: serverLib.typingsCommonMod.Middlewares,
-    /* import warning: Dropping repeated marker of param TsIdentSimple(all) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(Middlewares))),List())) is not an array type */all: serverLib.typingsCommonMod.Middlewares
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param all because its type Middlewares is not an array type */ all: serverLib.typingsCommonMod.Middlewares
   ): serverLib.typingsCommonMod.Middleware = js.native
 }
 

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * @since 1.0.0
-     */
-
+  * @since 1.0.0
+  */
 trait UploadOptions extends js.Object {
   var beforeStart: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var complete: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], scala.Unit]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDateElement extends js.Object {
   def day(): IDateElementEvaluator
   def days(): IDateElementEvaluator

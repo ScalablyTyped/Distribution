@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SharedAttributes extends js.Object {
   // a=control
   var control: js.UndefOr[java.lang.String] = js.undefined

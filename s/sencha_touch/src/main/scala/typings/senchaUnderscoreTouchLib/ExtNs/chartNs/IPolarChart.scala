@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPolarChart extends IAbstractChart {
   /** [Config Option] (Array) */
   var center: js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array] = js.undefined

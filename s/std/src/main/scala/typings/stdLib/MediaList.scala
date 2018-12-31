@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaList
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[java.lang.String] {
   @JSName(org.scalablytyped.runtime.Symbol.iterator)

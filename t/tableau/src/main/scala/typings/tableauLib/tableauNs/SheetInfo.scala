@@ -13,14 +13,14 @@ class SheetInfo () extends js.Object {
   /** Gets the index of the sheet within the published tabs. Note that hidden tabs are still counted in the ordering, as long as they are published. */
   def getIndex(): scala.Double = js.native
   /**
-           * Gets a value indicating whether the sheet is the currently active sheet.Due to a technical limitation,
-           * this will always return false if the object is a Worksheet instance that is part of a Dashboard.
-           */
+    * Gets a value indicating whether the sheet is the currently active sheet.Due to a technical limitation,
+    * this will always return false if the object is a Worksheet instance that is part of a Dashboard.
+    */
   def getIsActive(): scala.Boolean = js.native
   /**
-           * Gets a value indicating whether the sheet is hidden in the UI. Note that if the entire tab control is hidden,
-           * it does not affect the state of this flag. This sheet may still report that it is visible even when the tabs control is hidden.
-           */
+    * Gets a value indicating whether the sheet is hidden in the UI. Note that if the entire tab control is hidden,
+    * it does not affect the state of this flag. This sheet may still report that it is visible even when the tabs control is hidden.
+    */
   def getIsHidden(): scala.Boolean = js.native
   /** Gets the name of the sheet. */
   def getName(): java.lang.String = js.native

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // refer to http://developer.piwik.org/api-reference/tracking-api
-
 trait PiwikTrackOptions extends js.Object {
   var _cvar: js.UndefOr[java.lang.String] = js.undefined
   var _ects: js.UndefOr[scala.Double] = js.undefined

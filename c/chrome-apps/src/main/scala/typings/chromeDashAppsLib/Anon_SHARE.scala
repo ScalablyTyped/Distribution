@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SHARE extends js.Object {
   var OFFLINE_NOT_NECESSARY: chromeDashAppsLib.chromeDashAppsLibStrings.OFFLINE_NOT_NECESSARY
   var SAVE_FOR_OFFLINE: chromeDashAppsLib.chromeDashAppsLibStrings.SAVE_FOR_OFFLINE

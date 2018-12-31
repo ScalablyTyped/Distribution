@@ -8,22 +8,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Detective extends js.Object {
   /**
-           * Give some source body src, return an array of all the require() calls with string arguments.
-           * The options parameter opts is passed along to detective.find().
-           */
+    * Give some source body src, return an array of all the require() calls with string arguments.
+    * The options parameter opts is passed along to detective.find().
+    */
   def apply(src: java.lang.String): js.Array[java.lang.String] = js.native
-  /**
-           * Give some source body src, return an array of all the require() calls with string arguments.
-           * The options parameter opts is passed along to detective.find().
-           */
   def apply(src: java.lang.String, opts: Options): js.Array[java.lang.String] = js.native
   /**
-           * Give some source body 'src', return 'found' DetectiveResults
-           */
+    * Give some source body 'src', return 'found' DetectiveResults
+    */
   def find(src: java.lang.String): DetectiveResults = js.native
-  /**
-           * Give some source body 'src', return 'found' DetectiveResults
-           */
   def find(src: java.lang.String, opts: Options): DetectiveResults = js.native
 }
 

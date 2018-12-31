@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object libLanguageUtilsModMembers extends js.Object {
   def ancestorWhere[T /* <: typescriptLib.typescriptMod.tsNs.Node */](
     node: typescriptLib.typescriptMod.tsNs.Node,
-    predicate: js.Function1[/* n */ typescriptLib.typescriptMod.tsNs.Node, /* is T */scala.Boolean]
+    predicate: js.Function1[/* n */ typescriptLib.typescriptMod.tsNs.Node, /* is T */ scala.Boolean]
   ): js.UndefOr[T] = js.native
   def childOfKind(node: typescriptLib.typescriptMod.tsNs.Node, kind: typescriptLib.typescriptMod.tsNs.SyntaxKind): js.UndefOr[typescriptLib.typescriptMod.tsNs.Node] = js.native
   def doesIntersect(
@@ -47,7 +47,7 @@ object libLanguageUtilsModMembers extends js.Object {
     node: typescriptLib.typescriptMod.tsNs.Node,
     flagToCheck: typescriptLib.typescriptMod.tsNs.NodeFlags
   ): scala.Boolean = js.native
-  def isLoop(node: typescriptLib.typescriptMod.tsNs.Node): /* is IterationStatement */scala.Boolean = js.native
+  def isLoop(node: typescriptLib.typescriptMod.tsNs.Node): /* is typescript.typescript.ts.IterationStatement */ scala.Boolean = js.native
   def isNegativeNumberLiteral(node: typescriptLib.typescriptMod.tsNs.Node): scala.Boolean = js.native
   def isNestedModuleDeclaration(decl: typescriptLib.typescriptMod.tsNs.ModuleDeclaration): scala.Boolean = js.native
   def isNodeFlagSet(

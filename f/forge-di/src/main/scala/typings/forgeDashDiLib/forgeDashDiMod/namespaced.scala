@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class namespaced ()
   extends Forge
      with /**
-     * Creates a new instance
-     * @returns {Forge} a new instance.
-     */
+  * Creates a new instance
+  * @returns {Forge} a new instance.
+  */
 org.scalablytyped.runtime.Instantiable0[Forge]
 

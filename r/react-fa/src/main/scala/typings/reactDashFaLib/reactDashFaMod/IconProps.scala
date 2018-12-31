@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IconProps extends SizeOverrideHTMLProps[Icon] {
   var Component: js.UndefOr[reactDashFaLib.CustomComponent] = js.undefined
   var fixedWidth: js.UndefOr[scala.Boolean] = js.undefined

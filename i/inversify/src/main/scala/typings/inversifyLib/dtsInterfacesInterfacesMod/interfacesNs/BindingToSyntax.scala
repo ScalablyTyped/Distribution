@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BindingToSyntax[T] extends js.Object {
   def to(constructor: inversifyLib.Anon_Args[T]): BindingInWhenOnSyntax[T]
   def toAutoFactory[T2](serviceIdentifier: ServiceIdentifier[T2]): BindingWhenOnSyntax[T]

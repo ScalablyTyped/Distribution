@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LineStyle extends js.Object {
   /** Color of the line in #RRGGBB format. */
   var strokeColor: js.UndefOr[java.lang.String] = js.undefined

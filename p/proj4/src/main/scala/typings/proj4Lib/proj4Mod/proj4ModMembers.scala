@@ -18,12 +18,9 @@ object proj4ModMembers extends js.Object {
   def Point(coordinates: java.lang.String): proj4Lib.proj4Mod.proj4Ns.InterfaceCoordinates = js.native
   def Point(coordinates: proj4Lib.proj4Mod.proj4Ns.TemplateCoordinates): proj4Lib.proj4Mod.proj4Ns.InterfaceCoordinates = js.native
   /**
-       * @deprecated v3
-       */
+    * @deprecated v3
+    */
   def Point(x: scala.Double, y: scala.Double): proj4Lib.proj4Mod.proj4Ns.InterfaceCoordinates = js.native
-  /**
-       * @deprecated v3
-       */
   def Point(x: scala.Double, y: scala.Double, z: scala.Double): proj4Lib.proj4Mod.proj4Ns.InterfaceCoordinates = js.native
   def Proj(srsCode: js.Any): proj4Lib.proj4Mod.proj4Ns.InterfaceProjection = js.native
   def Proj(srsCode: js.Any, callback: js.Any): proj4Lib.proj4Mod.proj4Ns.InterfaceProjection = js.native

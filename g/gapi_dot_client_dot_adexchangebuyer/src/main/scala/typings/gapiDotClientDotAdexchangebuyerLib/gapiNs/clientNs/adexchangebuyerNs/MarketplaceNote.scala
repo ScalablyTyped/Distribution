@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MarketplaceNote extends js.Object {
   /** The role of the person (buyer/seller) creating the note. (readonly) */
   var creatorRole: js.UndefOr[java.lang.String] = js.undefined

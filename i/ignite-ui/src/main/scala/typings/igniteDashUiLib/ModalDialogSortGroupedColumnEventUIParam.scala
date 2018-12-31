@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModalDialogSortGroupedColumnEventUIParam extends js.Object {
   /**
   	 * Gets whether column should be sorted ascending or descending.

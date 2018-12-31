@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlusCode extends js.Object {
   /** is a 6 character or longer local code with an explicit location (CWC8+R9, Mountain View, CA, USA). */
   var compound_code: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatafeedstatusesCustomBatchResponseEntry extends js.Object {
   /** The ID of the request entry this entry responds to. */
   var batchId: js.UndefOr[scala.Double] = js.undefined

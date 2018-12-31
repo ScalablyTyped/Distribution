@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class SettingsCommand protected () extends js.Object {
   /**
-                   * Creates a new settings command.
-                   * @param settingsCommandId The ID of the command.
-                   * @param label The label for the command, which is displayed in the settings pane.
-                   * @param handler The event handler that is called when the user selects this command in the settings pane.
-                   */
+    * Creates a new settings command.
+    * @param settingsCommandId The ID of the command.
+    * @param label The label for the command, which is displayed in the settings pane.
+    * @param handler The event handler that is called when the user selects this command in the settings pane.
+    */
   def this(settingsCommandId: js.Any, label: java.lang.String, handler: winrtDashUwpLib.WindowsNs.UINs.PopupsNs.UICommandInvokedHandler) = this()
   /** Gets or sets the command ID. */
   var id: js.Any = js.native

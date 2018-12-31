@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // 上传下载
-
 trait UploadFileOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 要上传文件资源的路径 */

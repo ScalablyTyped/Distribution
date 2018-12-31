@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TabPaneProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libTabPaneMod.TabPane]
      with reactDashBootstrapLib.reactDashBootstrapMod.TransitionCallbacks {

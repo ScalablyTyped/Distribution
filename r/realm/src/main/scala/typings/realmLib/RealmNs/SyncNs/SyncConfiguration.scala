@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SyncConfiguration extends js.Object {
   var _disableQueryBasedSyncUrlChecks: js.UndefOr[scala.Boolean] = js.undefined
   var customQueryBasedSyncIdentifier: js.UndefOr[java.lang.String] = js.undefined

@@ -42,8 +42,8 @@ trait Observable[T] extends js.Object {
   def takeWithTime(duration: scala.Double): Observable[T] = js.native
   def takeWithTime(duration: scala.Double, scheduler: rxDashCoreLib.RxNs.IScheduler): Observable[T] = js.native
   /**
-           * @deprecated use #debounceWithSelector instead.
-           */
+    * @deprecated use #debounceWithSelector instead.
+    */
   def throttleWithSelector[TTimeout](debounceDurationSelector: js.Function1[/* item */ T, Observable[TTimeout]]): Observable[T] = js.native
   def timeoutWithSelector[TTimeout](firstTimeout: Observable[TTimeout]): Observable[T] = js.native
   def timeoutWithSelector[TTimeout](

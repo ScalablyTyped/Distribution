@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JobStatistics2 extends js.Object {
   /** [Output-only] Billing tier for the job. */
   var billingTier: js.UndefOr[scala.Double] = js.undefined

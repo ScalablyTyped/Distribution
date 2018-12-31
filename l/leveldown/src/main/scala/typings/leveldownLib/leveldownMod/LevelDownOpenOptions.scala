@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LevelDownOpenOptions
   extends abstractDashLeveldownLib.abstractDashLeveldownMod.AbstractOpenOptions {
   var blockRestartInterval: js.UndefOr[scala.Double] = js.undefined

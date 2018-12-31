@@ -5,12 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransitionProperties extends js.Object {
-  var fromParams: js.UndefOr[js.Any] = js.undefined
-  var fromState: js.UndefOr[js.Any] = js.undefined
-  var options: js.UndefOr[js.Any] = js.undefined
-  var toParams: js.UndefOr[js.Any] = js.undefined
-  var toState: js.UndefOr[js.Any] = js.undefined
+  var fromParams: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify angular.ui.IStateParamsService */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify angular.ui.IStateParamsService */ js.Any
+  ] = js.undefined
+  var fromState: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify angular.ui.IState */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify angular.ui.IState */ js.Any
+  ] = js.undefined
+  var options: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify angular.ui.IStateOptions */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify angular.ui.IStateOptions */ js.Any
+  ] = js.undefined
+  var toParams: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify angular.ui.IStateParamsService */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify angular.ui.IStateParamsService */ js.Any
+  ] = js.undefined
+  var toState: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify angular.ui.IState */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify angular.ui.IState */ js.Any
+  ] = js.undefined
 }
 

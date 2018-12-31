@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RAW extends js.Object {
   var BASE64: firebaseLib.firebaseMod.firebaseNs.storageNs.StringFormat
   var BASE64URL: firebaseLib.firebaseMod.firebaseNs.storageNs.StringFormat

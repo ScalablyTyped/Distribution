@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SubscriptionObserver[T] extends js.Object {
   var closed: scala.Boolean
   def complete(): scala.Unit

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CallableElement extends BaseElement {
   var ioBinding: InputOutputBinding
   var ioSpecification: InputOutputSpecification

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EffectRecord extends Record {
   var account: java.lang.String
   var amount: js.UndefOr[js.Any] = js.undefined

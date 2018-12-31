@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options
   extends highchartsLib.highchartsMod.HighchartsNs.Options {
   var navigator: js.UndefOr[NavigatorOptions] = js.undefined

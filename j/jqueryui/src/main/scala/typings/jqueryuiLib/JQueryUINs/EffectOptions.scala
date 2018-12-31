@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Effects //////////////////////////////////////////////////
-
 trait EffectOptions extends js.Object {
   var complete: js.Function
   var duration: js.UndefOr[scala.Double] = js.undefined

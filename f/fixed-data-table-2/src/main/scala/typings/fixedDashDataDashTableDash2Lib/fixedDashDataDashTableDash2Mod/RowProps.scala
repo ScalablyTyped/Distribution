@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RowProps extends js.Object {
   /** supplied from the Table or rowHeightGetter */
   var height: scala.Double

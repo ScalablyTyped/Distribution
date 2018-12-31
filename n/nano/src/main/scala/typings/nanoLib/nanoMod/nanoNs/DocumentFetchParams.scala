@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DocumentFetchParams extends js.Object {
   var conflicts: js.UndefOr[scala.Boolean] = js.undefined
   var descending: js.UndefOr[scala.Boolean] = js.undefined

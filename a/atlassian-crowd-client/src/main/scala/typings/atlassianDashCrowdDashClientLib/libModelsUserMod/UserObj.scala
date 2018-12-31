@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserObj extends js.Object {
   val active: scala.Boolean
   val `display-name`: java.lang.String

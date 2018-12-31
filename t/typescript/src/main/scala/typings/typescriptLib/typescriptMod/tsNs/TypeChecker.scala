@@ -23,13 +23,13 @@ trait TypeChecker extends js.Object {
   def getDefaultFromTypeParameter(`type`: Type): js.UndefOr[Type] = js.native
   def getExportSpecifierLocalTargetSymbol(location: ExportSpecifier): js.UndefOr[Symbol] = js.native
   /**
-           * If a symbol is a local symbol with an associated exported symbol, returns the exported symbol.
-           * Otherwise returns its input.
-           * For example, at `export type T = number;`:
-           *     - `getSymbolAtLocation` at the location `T` will return the exported symbol for `T`.
-           *     - But the result of `getSymbolsInScope` will contain the *local* symbol for `T`, not the exported symbol.
-           *     - Calling `getExportSymbolOfSymbol` on that local symbol will return the exported symbol.
-           */
+    * If a symbol is a local symbol with an associated exported symbol, returns the exported symbol.
+    * Otherwise returns its input.
+    * For example, at `export type T = number;`:
+    *     - `getSymbolAtLocation` at the location `T` will return the exported symbol for `T`.
+    *     - But the result of `getSymbolsInScope` will contain the *local* symbol for `T`, not the exported symbol.
+    *     - Calling `getExportSymbolOfSymbol` on that local symbol will return the exported symbol.
+    */
   def getExportSymbolOfSymbol(symbol: Symbol): Symbol = js.native
   def getExportsOfModule(moduleSymbol: Symbol): js.Array[Symbol] = js.native
   def getFullyQualifiedName(symbol: Symbol): java.lang.String = js.native
@@ -42,29 +42,19 @@ trait TypeChecker extends js.Object {
   def getPropertyOfType(`type`: Type, propertyName: java.lang.String): js.UndefOr[Symbol] = js.native
   def getPropertySymbolOfDestructuringAssignment(location: Identifier): js.UndefOr[Symbol] = js.native
   /**
-           * returns unknownSignature in the case of an error.
-           * returns undefined if the node is not valid.
-           * @param argumentCount Apparent number of arguments, passed in case of a possibly incomplete call. This should come from an ArgumentListInfo. See `signatureHelp.ts`.
-           */
+    * returns unknownSignature in the case of an error.
+    * returns undefined if the node is not valid.
+    * @param argumentCount Apparent number of arguments, passed in case of a possibly incomplete call. This should come from an ArgumentListInfo. See `signatureHelp.ts`.
+    */
   def getResolvedSignature(node: CallLikeExpression): js.UndefOr[Signature] = js.native
-  /**
-           * returns unknownSignature in the case of an error.
-           * returns undefined if the node is not valid.
-           * @param argumentCount Apparent number of arguments, passed in case of a possibly incomplete call. This should come from an ArgumentListInfo. See `signatureHelp.ts`.
-           */
   def getResolvedSignature(node: CallLikeExpression, candidatesOutArray: js.Array[Signature]): js.UndefOr[Signature] = js.native
-  /**
-           * returns unknownSignature in the case of an error.
-           * returns undefined if the node is not valid.
-           * @param argumentCount Apparent number of arguments, passed in case of a possibly incomplete call. This should come from an ArgumentListInfo. See `signatureHelp.ts`.
-           */
   def getResolvedSignature(node: CallLikeExpression, candidatesOutArray: js.Array[Signature], argumentCount: scala.Double): js.UndefOr[Signature] = js.native
   def getReturnTypeOfSignature(signature: Signature): Type = js.native
   def getRootSymbols(symbol: Symbol): js.Array[Symbol] = js.native
   /**
-           * The function returns the value (local variable) symbol of an identifier in the short-hand property assignment.
-           * This is necessary as an identifier in short-hand property assignment can contains two meaning: property name and property value.
-           */
+    * The function returns the value (local variable) symbol of an identifier in the short-hand property assignment.
+    * This is necessary as an identifier in short-hand property assignment can contains two meaning: property name and property value.
+    */
   def getShorthandAssignmentValueSymbol(location: Node): js.UndefOr[Symbol] = js.native
   def getSignatureFromDeclaration(declaration: SignatureDeclaration): js.UndefOr[Signature] = js.native
   def getSignaturesOfType(`type`: Type, kind: SignatureKind): js.Array[Signature] = js.native
@@ -77,9 +67,7 @@ trait TypeChecker extends js.Object {
   def getWidenedType(`type`: Type): Type = js.native
   /** Note that the resulting nodes cannot be checked. */
   def indexInfoToIndexSignatureDeclaration(indexInfo: IndexInfo, kind: IndexKind): js.UndefOr[IndexSignatureDeclaration] = js.native
-  /** Note that the resulting nodes cannot be checked. */
   def indexInfoToIndexSignatureDeclaration(indexInfo: IndexInfo, kind: IndexKind, enclosingDeclaration: Node): js.UndefOr[IndexSignatureDeclaration] = js.native
-  /** Note that the resulting nodes cannot be checked. */
   def indexInfoToIndexSignatureDeclaration(indexInfo: IndexInfo, kind: IndexKind, enclosingDeclaration: Node, flags: NodeBuilderFlags): js.UndefOr[IndexSignatureDeclaration] = js.native
   def isArgumentsSymbol(symbol: Symbol): scala.Boolean = js.native
   def isImplementationOfOverload(node: SignatureDeclaration): js.UndefOr[scala.Boolean] = js.native
@@ -90,16 +78,14 @@ trait TypeChecker extends js.Object {
   def isValidPropertyAccess(node: PropertyAccessExpression, propertyName: java.lang.String): scala.Boolean = js.native
   def isValidPropertyAccess(node: QualifiedName, propertyName: java.lang.String): scala.Boolean = js.native
   /**
-           * Depending on the operation performed, it may be appropriate to throw away the checker
-           * if the cancellation token is triggered. Typically, if it is used for error checking
-           * and the operation is cancelled, then it should be discarded, otherwise it is safe to keep.
-           */
+    * Depending on the operation performed, it may be appropriate to throw away the checker
+    * if the cancellation token is triggered. Typically, if it is used for error checking
+    * and the operation is cancelled, then it should be discarded, otherwise it is safe to keep.
+    */
   def runWithCancellationToken[T](token: CancellationToken, cb: js.Function1[/* checker */ this.type, T]): T = js.native
   /** Note that the resulting nodes cannot be checked. */
   def signatureToSignatureDeclaration(signature: Signature, kind: SyntaxKind): js.UndefOr[SignatureDeclaration with typescriptLib.Anon_TypeArguments] = js.native
-  /** Note that the resulting nodes cannot be checked. */
   def signatureToSignatureDeclaration(signature: Signature, kind: SyntaxKind, enclosingDeclaration: Node): js.UndefOr[SignatureDeclaration with typescriptLib.Anon_TypeArguments] = js.native
-  /** Note that the resulting nodes cannot be checked. */
   def signatureToSignatureDeclaration(signature: Signature, kind: SyntaxKind, enclosingDeclaration: Node, flags: NodeBuilderFlags): js.UndefOr[SignatureDeclaration with typescriptLib.Anon_TypeArguments] = js.native
   def signatureToString(signature: Signature): java.lang.String = js.native
   def signatureToString(signature: Signature, enclosingDeclaration: Node): java.lang.String = js.native
@@ -107,21 +93,15 @@ trait TypeChecker extends js.Object {
   def signatureToString(signature: Signature, enclosingDeclaration: Node, flags: TypeFormatFlags, kind: SignatureKind): java.lang.String = js.native
   /** Note that the resulting nodes cannot be checked. */
   def symbolToEntityName(symbol: Symbol, meaning: SymbolFlags): js.UndefOr[EntityName] = js.native
-  /** Note that the resulting nodes cannot be checked. */
   def symbolToEntityName(symbol: Symbol, meaning: SymbolFlags, enclosingDeclaration: Node): js.UndefOr[EntityName] = js.native
-  /** Note that the resulting nodes cannot be checked. */
   def symbolToEntityName(symbol: Symbol, meaning: SymbolFlags, enclosingDeclaration: Node, flags: NodeBuilderFlags): js.UndefOr[EntityName] = js.native
   /** Note that the resulting nodes cannot be checked. */
   def symbolToExpression(symbol: Symbol, meaning: SymbolFlags): js.UndefOr[Expression] = js.native
-  /** Note that the resulting nodes cannot be checked. */
   def symbolToExpression(symbol: Symbol, meaning: SymbolFlags, enclosingDeclaration: Node): js.UndefOr[Expression] = js.native
-  /** Note that the resulting nodes cannot be checked. */
   def symbolToExpression(symbol: Symbol, meaning: SymbolFlags, enclosingDeclaration: Node, flags: NodeBuilderFlags): js.UndefOr[Expression] = js.native
   /** Note that the resulting nodes cannot be checked. */
   def symbolToParameterDeclaration(symbol: Symbol): js.UndefOr[ParameterDeclaration] = js.native
-  /** Note that the resulting nodes cannot be checked. */
   def symbolToParameterDeclaration(symbol: Symbol, enclosingDeclaration: Node): js.UndefOr[ParameterDeclaration] = js.native
-  /** Note that the resulting nodes cannot be checked. */
   def symbolToParameterDeclaration(symbol: Symbol, enclosingDeclaration: Node, flags: NodeBuilderFlags): js.UndefOr[ParameterDeclaration] = js.native
   def symbolToString(symbol: Symbol): java.lang.String = js.native
   def symbolToString(symbol: Symbol, enclosingDeclaration: Node): java.lang.String = js.native
@@ -129,16 +109,12 @@ trait TypeChecker extends js.Object {
   def symbolToString(symbol: Symbol, enclosingDeclaration: Node, meaning: SymbolFlags, flags: SymbolFormatFlags): java.lang.String = js.native
   /** Note that the resulting nodes cannot be checked. */
   def symbolToTypeParameterDeclarations(symbol: Symbol): js.UndefOr[NodeArray[TypeParameterDeclaration]] = js.native
-  /** Note that the resulting nodes cannot be checked. */
   def symbolToTypeParameterDeclarations(symbol: Symbol, enclosingDeclaration: Node): js.UndefOr[NodeArray[TypeParameterDeclaration]] = js.native
-  /** Note that the resulting nodes cannot be checked. */
   def symbolToTypeParameterDeclarations(symbol: Symbol, enclosingDeclaration: Node, flags: NodeBuilderFlags): js.UndefOr[NodeArray[TypeParameterDeclaration]] = js.native
   def tryGetMemberInModuleExports(memberName: java.lang.String, moduleSymbol: Symbol): js.UndefOr[Symbol] = js.native
   /** Note that the resulting nodes cannot be checked. */
   def typeParameterToDeclaration(parameter: TypeParameter): js.UndefOr[TypeParameterDeclaration] = js.native
-  /** Note that the resulting nodes cannot be checked. */
   def typeParameterToDeclaration(parameter: TypeParameter, enclosingDeclaration: Node): js.UndefOr[TypeParameterDeclaration] = js.native
-  /** Note that the resulting nodes cannot be checked. */
   def typeParameterToDeclaration(parameter: TypeParameter, enclosingDeclaration: Node, flags: NodeBuilderFlags): js.UndefOr[TypeParameterDeclaration] = js.native
   def typePredicateToString(predicate: TypePredicate): java.lang.String = js.native
   def typePredicateToString(predicate: TypePredicate, enclosingDeclaration: Node): java.lang.String = js.native
@@ -148,9 +124,7 @@ trait TypeChecker extends js.Object {
   def typeToString(`type`: Type, enclosingDeclaration: Node, flags: TypeFormatFlags): java.lang.String = js.native
   /** Note that the resulting nodes cannot be checked. */
   def typeToTypeNode(`type`: Type): js.UndefOr[TypeNode] = js.native
-  /** Note that the resulting nodes cannot be checked. */
   def typeToTypeNode(`type`: Type, enclosingDeclaration: Node): js.UndefOr[TypeNode] = js.native
-  /** Note that the resulting nodes cannot be checked. */
   def typeToTypeNode(`type`: Type, enclosingDeclaration: Node, flags: NodeBuilderFlags): js.UndefOr[TypeNode] = js.native
 }
 

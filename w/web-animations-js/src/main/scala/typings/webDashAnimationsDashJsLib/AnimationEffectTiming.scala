@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnimationEffectTiming extends js.Object {
   var delay: js.UndefOr[scala.Double] = js.undefined
   var direction: js.UndefOr[AnimationEffectTimingPlaybackDirection] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Output extends js.Object {
   // A list of errors raised
   var errors: js.Array[java.lang.String]

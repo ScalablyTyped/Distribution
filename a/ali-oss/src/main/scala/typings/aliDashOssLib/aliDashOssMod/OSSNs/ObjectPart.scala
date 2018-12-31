@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObjectPart extends js.Object {
    // {Date} Time when a part is uploaded.
   var ETag: java.lang.String

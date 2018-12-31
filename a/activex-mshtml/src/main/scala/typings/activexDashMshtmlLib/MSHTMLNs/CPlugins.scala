@@ -13,7 +13,6 @@ class CPlugins protected () extends js.Object {
   val length: scala.Double = js.native
   /** @param reload [reload=false] */
   def refresh(): scala.Unit = js.native
-  /** @param reload [reload=false] */
   def refresh(reload: scala.Boolean): scala.Unit = js.native
 }
 

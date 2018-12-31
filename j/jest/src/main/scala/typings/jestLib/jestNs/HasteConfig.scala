@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HasteConfig extends js.Object {
   var defaultPlatform: js.UndefOr[Maybe[java.lang.String]] = js.undefined
   var hasteImplModulePath: js.UndefOr[java.lang.String] = js.undefined

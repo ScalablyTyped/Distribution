@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** The base protocol filter for an HttpClient instance. */
 @JSGlobal("Windows.Web.Http.Filters.HttpBaseProtocolFilter")
 @js.native
+/** Initializes a new instance of the HttpBaseProtocolFilter class. */
 class HttpBaseProtocolFilter () extends js.Object {
   /** Get or set a value that indicates whether the HttpBaseProtocolFilter should follow redirection responses. */
   var allowAutoRedirect: scala.Boolean = js.native
@@ -40,10 +41,10 @@ class HttpBaseProtocolFilter () extends js.Object {
   /** Closes the HttpBaseProtocolFilter instance and releases allocated resources. */
   def close(): scala.Unit = js.native
   /**
-                       * Send an HTTP request using the HttpBaseProtocolFilter as an asynchronous operation.
-                       * @param request The HTTP request message to send.
-                       * @return The object representing the asynchronous operation.
-                       */
+    * Send an HTTP request using the HttpBaseProtocolFilter as an asynchronous operation.
+    * @param request The HTTP request message to send.
+    * @return The object representing the asynchronous operation.
+    */
   def sendRequestAsync(request: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HttpRequestMessage): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[
     winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HttpResponseMessage, 
     winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HttpProgress

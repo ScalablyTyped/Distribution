@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LibStatic extends js.Object {
   var Base: Base
   var CipherParams: CipherParams

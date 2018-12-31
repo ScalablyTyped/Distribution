@@ -12,15 +12,15 @@ sealed trait SourceProperty extends js.Object
 @js.native
 object SourceProperty extends js.Object {
   /**
-           * The source of the data is from the body of the message.
-           */
+    * The source of the data is from the body of the message.
+    */
   @js.native
   sealed trait Body
     extends officeDashJsLib.OfficeNs.SourceProperty
   
   /**
-           * The source of the data is from the subject of the message.
-           */
+    * The source of the data is from the subject of the message.
+    */
   @js.native
   sealed trait Subject
     extends officeDashJsLib.OfficeNs.SourceProperty

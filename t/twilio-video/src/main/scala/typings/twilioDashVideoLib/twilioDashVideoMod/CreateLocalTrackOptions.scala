@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateLocalTrackOptions
   extends stdLib.MediaTrackConstraints {
   // In API reference logLevel is not optional, but in the Twilio examples it is

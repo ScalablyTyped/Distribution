@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatafeedFetchSchedule extends js.Object {
   /** The day of the month the feed file should be fetched (1-31). */
   var dayOfMonth: js.UndefOr[scala.Double] = js.undefined
   /**
-               * The URL where the feed file can be fetched. Google Merchant Center will support automatic scheduled uploads using the HTTP, HTTPS, FTP, or SFTP
-               * protocols, so the value will need to be a valid link using one of those four protocols.
-               */
+    * The URL where the feed file can be fetched. Google Merchant Center will support automatic scheduled uploads using the HTTP, HTTPS, FTP, or SFTP
+    * protocols, so the value will need to be a valid link using one of those four protocols.
+    */
   var fetchUrl: js.UndefOr[java.lang.String] = js.undefined
   /** The hour of the day the feed file should be fetched (0-23). */
   var hour: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_UserCustomData extends js.Object {
   var client: Anon_Name
   var environment: Anon_Architecture

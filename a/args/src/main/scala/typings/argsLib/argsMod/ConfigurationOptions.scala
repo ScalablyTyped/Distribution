@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConfigurationOptions extends js.Object {
   var help: js.UndefOr[scala.Boolean] = js.undefined
   var mainColor: java.lang.String | js.Array[java.lang.String]

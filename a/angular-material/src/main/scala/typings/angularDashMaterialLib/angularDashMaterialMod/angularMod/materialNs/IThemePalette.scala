@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IThemePalette extends js.Object {
   var hues: IThemeHues
   var name: java.lang.String

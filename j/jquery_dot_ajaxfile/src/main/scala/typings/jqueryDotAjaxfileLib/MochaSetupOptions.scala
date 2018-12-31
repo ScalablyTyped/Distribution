@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MochaSetupOptions extends js.Object {
   // bail on the first test failure
   var bail: js.UndefOr[scala.Boolean] = js.undefined

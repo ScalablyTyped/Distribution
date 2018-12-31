@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("plottable/build/src/plots", "Area")
 @js.native
+/**
+  * An Area Plot draws a filled region (area) between Y and Y0.
+  *
+  * @constructor
+  */
 class Area[X] ()
   extends plottableLib.buildSrcPlotsAreaPlotMod.Area[X]
 

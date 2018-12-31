@@ -202,7 +202,6 @@ object domNs extends js.Object {
     def unbind(target: js.Object, names: java.lang.String, callback: js.Function0[scala.Unit]): EventUtils = js.native
   }
   
-  
   trait RangeUtils extends js.Object {
     def compareRanges(rng1: stdLib.Range, rng2: stdLib.Range): scala.Boolean
     def getCaretRangeFromPoint(clientX: scala.Double, clientY: scala.Double, doc: stdLib.Document): stdLib.Range
@@ -282,7 +281,6 @@ object domNs extends js.Object {
     def serialize(node: stdLib.HTMLElement, args: js.Object): scala.Unit = js.native
     def setRules(rules: java.lang.String): scala.Unit = js.native
   }
-  
   
   trait TreeWalker extends js.Object {
     def current(): tinymceLib.tinymceMod.htmlNs.Node

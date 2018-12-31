@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommonSerializeOptions extends js.Object {
   /** {default:false}, the serializer will check if keys are valid. */
   var checkKeys: js.UndefOr[scala.Boolean] = js.undefined

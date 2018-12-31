@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestOutput extends js.Object {
   var errorsFromLinter: js.Array[tslintLib.libVerifyLintErrorMod.LintError]
   var errorsFromMarkup: js.Array[tslintLib.libVerifyLintErrorMod.LintError]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Prices extends js.Object {
   var currency: java.lang.String
   var description: java.lang.String

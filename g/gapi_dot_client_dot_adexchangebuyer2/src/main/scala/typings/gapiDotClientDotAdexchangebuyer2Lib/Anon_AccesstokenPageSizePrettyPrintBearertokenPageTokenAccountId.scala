@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPageSizePrettyPrintBearertokenPageTokenAccountId extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -21,13 +20,13 @@ trait Anon_AccesstokenPageSizePrettyPrintBearertokenPageTokenAccountId extends j
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Numerical account ID of the client buyer to list invitations for.
-                   * (required)
-                   * You must either specify a string representation of a
-                   * numerical account identifier or the `-` character
-                   * to list all the invitations for all the clients
-                   * of a given sponsor buyer.
-                   */
+    * Numerical account ID of the client buyer to list invitations for.
+    * (required)
+    * You must either specify a string representation of a
+    * numerical account identifier or the `-` character
+    * to list all the invitations for all the clients
+    * of a given sponsor buyer.
+    */
   var clientAccountId: java.lang.String
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
@@ -36,18 +35,18 @@ trait Anon_AccesstokenPageSizePrettyPrintBearertokenPageTokenAccountId extends j
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Requested page size. Server may return fewer clients than requested.
-                   * If unspecified, server will pick an appropriate default.
-                   */
+    * Requested page size. Server may return fewer clients than requested.
+    * If unspecified, server will pick an appropriate default.
+    */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * A token identifying a page of results the server should return.
-                   * Typically, this is the value of
-                   * ListClientUserInvitationsResponse.nextPageToken
-                   * returned from the previous call to the
-                   * clients.invitations.list
-                   * method.
-                   */
+    * A token identifying a page of results the server should return.
+    * Typically, this is the value of
+    * ListClientUserInvitationsResponse.nextPageToken
+    * returned from the previous call to the
+    * clients.invitations.list
+    * method.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

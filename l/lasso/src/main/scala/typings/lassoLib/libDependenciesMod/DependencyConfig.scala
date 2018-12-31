@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DependencyConfig extends js.Object {
   var attributes: js.UndefOr[lassoLib.Anon_Crossorigin] = js.undefined
   var `css-slot`: js.UndefOr[java.lang.String] = js.undefined

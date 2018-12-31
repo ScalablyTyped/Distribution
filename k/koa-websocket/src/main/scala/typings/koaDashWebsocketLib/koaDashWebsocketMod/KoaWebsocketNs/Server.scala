@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Server extends js.Object {
   var app: App
   var middleware: js.Array[Middleware]

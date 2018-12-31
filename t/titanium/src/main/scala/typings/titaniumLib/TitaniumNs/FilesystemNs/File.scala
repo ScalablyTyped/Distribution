@@ -75,9 +75,6 @@ trait File
   			 * Creates a directory at the path identified by this file object.
   			 */
   def createDirectory(): scala.Boolean = js.native
-  /**
-  			 * Creates a directory at the path identified by this file object.
-  			 */
   def createDirectory(recursive: scala.Boolean): scala.Boolean = js.native
   /**
   			 * Creates a file at the path identified by this file object.
@@ -95,9 +92,6 @@ trait File
   			 * Deletes the directory identified by this file object.
   			 */
   def deleteDirectory(): scala.Boolean = js.native
-  /**
-  			 * Deletes the directory identified by this file object.
-  			 */
   def deleteDirectory(recursive: scala.Boolean): scala.Boolean = js.native
   /**
   			 * Deletes the file identified by this file object.
@@ -227,25 +221,16 @@ trait File
   			 * Writes the specified data to the file identified by this file object.
   			 */
   def write(data: java.lang.String): scala.Boolean = js.native
-  /**
-  			 * Writes the specified data to the file identified by this file object.
-  			 */
   def write(data: java.lang.String, append: scala.Boolean): scala.Boolean = js.native
   /**
   			 * Writes the specified data to the file identified by this file object.
   			 */
   def write(data: titaniumLib.TitaniumNs.Blob): scala.Boolean = js.native
-  /**
-  			 * Writes the specified data to the file identified by this file object.
-  			 */
   def write(data: titaniumLib.TitaniumNs.Blob, append: scala.Boolean): scala.Boolean = js.native
   /**
   			 * Writes the specified data to the file identified by this file object.
   			 */
   def write(data: File): scala.Boolean = js.native
-  /**
-  			 * Writes the specified data to the file identified by this file object.
-  			 */
   def write(data: File, append: scala.Boolean): scala.Boolean = js.native
 }
 

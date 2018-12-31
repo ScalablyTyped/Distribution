@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IValidationResult extends js.Object {
   var Children: js.Array[IValidationResult]
   var ErrorCount: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ValueProps[OptionType] extends js.Object {
   /** The children to be rendered. */
   var children: java.lang.String

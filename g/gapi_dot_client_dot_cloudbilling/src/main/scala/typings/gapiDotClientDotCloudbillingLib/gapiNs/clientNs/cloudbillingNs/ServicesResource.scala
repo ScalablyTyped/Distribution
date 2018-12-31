@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServicesResource extends js.Object {
   var skus: SkusResource
   /** Lists all public cloud services. */

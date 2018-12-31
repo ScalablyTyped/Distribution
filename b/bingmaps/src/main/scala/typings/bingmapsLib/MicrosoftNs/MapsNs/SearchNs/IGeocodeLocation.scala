@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGeocodeLocation extends js.Object {
   /** The latitude of the location. */
   var latitude: scala.Double

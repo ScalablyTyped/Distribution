@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConstantsStatic extends js.Object {
   val ALIGN_AUTO: yogaDashLayoutLib.yogaDashLayoutLibNumbers.`0`
   val ALIGN_BASELINE: yogaDashLayoutLib.yogaDashLayoutLibNumbers.`5`

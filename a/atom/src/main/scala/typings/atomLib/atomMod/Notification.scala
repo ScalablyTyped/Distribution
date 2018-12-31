@@ -19,9 +19,9 @@ class Notification protected () extends js.Object {
   def this(`type`: atomLib.atomLibStrings.success, message: java.lang.String, options: NotificationOptions) = this()
   def this(`type`: atomLib.atomLibStrings.warning, message: java.lang.String, options: NotificationOptions) = this()
   /**
-       *  Dismisses the notification, removing it from the UI. Calling this
-       *  programmatically will call all callbacks added via onDidDismiss.
-       */
+    *  Dismisses the notification, removing it from the UI. Calling this
+    *  programmatically will call all callbacks added via onDidDismiss.
+    */
   def dismiss(): scala.Unit = js.native
   /** Returns the Notification's message. */
   def getMessage(): java.lang.String = js.native

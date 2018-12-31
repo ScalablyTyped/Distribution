@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SyntaxParseError
   extends stdLib.Error {
   var input: java.lang.String

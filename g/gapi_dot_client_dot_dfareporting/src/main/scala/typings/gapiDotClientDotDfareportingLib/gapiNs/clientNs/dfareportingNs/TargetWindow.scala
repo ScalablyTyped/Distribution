@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TargetWindow extends js.Object {
   /** User-entered value. */
   var customHtml: js.UndefOr[java.lang.String] = js.undefined

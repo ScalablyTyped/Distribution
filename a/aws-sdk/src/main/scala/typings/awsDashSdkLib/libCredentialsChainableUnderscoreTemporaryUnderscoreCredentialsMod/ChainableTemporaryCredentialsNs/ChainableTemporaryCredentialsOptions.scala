@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChainableTemporaryCredentialsOptions extends js.Object {
   var masterCredentials: js.UndefOr[awsDashSdkLib.libCredentialsMod.Credentials] = js.undefined
   var params: js.UndefOr[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NpmConfigSetLevels extends AbstractConfigSetLevels {
   var debug: scala.Double
   var error: scala.Double

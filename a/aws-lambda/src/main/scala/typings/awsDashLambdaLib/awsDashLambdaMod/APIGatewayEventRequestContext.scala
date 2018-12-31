@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait APIGatewayEventRequestContext extends js.Object {
   var accountId: java.lang.String
   var apiId: java.lang.String

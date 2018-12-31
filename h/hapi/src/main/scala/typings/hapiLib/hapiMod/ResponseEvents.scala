@@ -14,9 +14,9 @@ trait ResponseEvents
     listener: js.Function1[/* data */ js.UndefOr[scala.Nothing], scala.Unit]
   ): scala.Unit = js.native
   /**
-       * 'peek' - emitted for each chunk of data written back to the client connection. The event method signature is function(chunk, encoding).
-       * 'finish' - emitted when the response finished writing but before the client response connection is ended. The event method signature is function ().
-       */
+    * 'peek' - emitted for each chunk of data written back to the client connection. The event method signature is function(chunk, encoding).
+    * 'finish' - emitted when the response finished writing but before the client response connection is ended. The event method signature is function ().
+    */
   @JSName("on")
   def on_peek(criteria: hapiLib.hapiLibStrings.peek, listener: PeekListener): scala.Unit = js.native
   @JSName("once")
@@ -25,9 +25,9 @@ trait ResponseEvents
     listener: js.Function1[/* data */ js.UndefOr[scala.Nothing], scala.Unit]
   ): scala.Unit = js.native
   /**
-       * 'peek' - emitted for each chunk of data written back to the client connection. The event method signature is function(chunk, encoding).
-       * 'finish' - emitted when the response finished writing but before the client response connection is ended. The event method signature is function ().
-       */
+    * 'peek' - emitted for each chunk of data written back to the client connection. The event method signature is function(chunk, encoding).
+    * 'finish' - emitted when the response finished writing but before the client response connection is ended. The event method signature is function ().
+    */
   @JSName("once")
   def once_peek(criteria: hapiLib.hapiLibStrings.peek, listener: PeekListener): scala.Unit = js.native
 }

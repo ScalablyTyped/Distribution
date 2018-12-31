@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ManagementResource extends js.Object {
   var accountSummaries: AccountSummariesResource
   var accountUserLinks: AccountUserLinksResource

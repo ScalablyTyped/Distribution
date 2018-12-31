@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ControlHeight extends js.Object {
   /* Used to calculate consistent margin/padding on elements */
   var baseUnit: scala.Double

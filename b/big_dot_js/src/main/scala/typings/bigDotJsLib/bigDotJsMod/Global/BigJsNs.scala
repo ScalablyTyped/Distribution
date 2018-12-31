@@ -38,32 +38,32 @@ object BigJsNs extends js.Object {
   @js.native
   object RoundingMode extends js.Object {
     /**
-                 * Rounds towards zero.
-                 * I.e. truncate, no rounding.
-                 */
+      * Rounds towards zero.
+      * I.e. truncate, no rounding.
+      */
     @js.native
     sealed trait RoundDown
       extends bigDotJsLib.bigDotJsMod.Global.BigJsNs.RoundingMode
     
     /**
-                 * Rounds towards nearest neighbour.
-                 * If equidistant, rounds towards even neighbour.
-                 */
+      * Rounds towards nearest neighbour.
+      * If equidistant, rounds towards even neighbour.
+      */
     @js.native
     sealed trait RoundHalfEven
       extends bigDotJsLib.bigDotJsMod.Global.BigJsNs.RoundingMode
     
     /**
-                 * Rounds towards nearest neighbour.
-                 * If equidistant, rounds away from zero.
-                 */
+      * Rounds towards nearest neighbour.
+      * If equidistant, rounds away from zero.
+      */
     @js.native
     sealed trait RoundHalfUp
       extends bigDotJsLib.bigDotJsMod.Global.BigJsNs.RoundingMode
     
     /**
-                 * Rounds away from zero.
-                 */
+      * Rounds away from zero.
+      */
     @js.native
     sealed trait RoundUp
       extends bigDotJsLib.bigDotJsMod.Global.BigJsNs.RoundingMode

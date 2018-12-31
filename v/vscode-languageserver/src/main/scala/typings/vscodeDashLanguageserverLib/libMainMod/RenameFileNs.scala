@@ -14,6 +14,6 @@ object RenameFileNs extends js.Object {
     newUri: java.lang.String,
     options: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.RenameFileOptions
   ): vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.RenameFile = js.native
-  def is(value: js.Any): /* is RenameFile */scala.Boolean = js.native
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.RenameFile */ scala.Boolean = js.native
 }
 

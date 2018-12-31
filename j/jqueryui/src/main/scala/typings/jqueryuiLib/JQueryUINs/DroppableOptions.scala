@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DroppableOptions extends DroppableEvents {
   var accept: js.UndefOr[js.Any] = js.undefined
   var activeClass: js.UndefOr[java.lang.String] = js.undefined

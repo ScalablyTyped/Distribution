@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 package object reduxDashStorageMod {
   /**
-       * Loader interface
-       */
+    * Loader interface
+    */
   type Loader[TState] = js.Function1[
     /* store */ reduxLib.reduxMod.Store[TState, reduxLib.reduxMod.AnyAction], 
     js.Thenable[js.Any]

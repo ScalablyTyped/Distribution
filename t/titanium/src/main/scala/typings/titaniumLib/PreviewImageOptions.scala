@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Options passed to <Titanium.Media.previewImage>.
- */
-
+  * Options passed to <Titanium.Media.previewImage>.
+  */
 trait PreviewImageOptions extends js.Object {
   /**
   	 * Function called back if the preview fails. Check the `message` property of passed back parameter.

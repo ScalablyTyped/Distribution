@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDateTimeFormatterFactory extends js.Object {
   def createDateTimeFormatter(formatTemplate: java.lang.String): DateTimeFormatter
   def createDateTimeFormatterContext(

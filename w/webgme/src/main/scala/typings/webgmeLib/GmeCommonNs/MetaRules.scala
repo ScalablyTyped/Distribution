@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MetaRules extends js.Object {
   var aspects: webgmeLib.Anon_Filter
   var attributes: webgmeLib.Anon_LevelName

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RNFetchBlobWriteStream extends js.Object {
   var append: scala.Boolean
   var encoding: java.lang.String

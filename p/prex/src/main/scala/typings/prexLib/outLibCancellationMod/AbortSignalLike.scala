@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AbortSignalLike extends js.Object {
   val aborted: scala.Boolean
   @JSName("addEventListener")

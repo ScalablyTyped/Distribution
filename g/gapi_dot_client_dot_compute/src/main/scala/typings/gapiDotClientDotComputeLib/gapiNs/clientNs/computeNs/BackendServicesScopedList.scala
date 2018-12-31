@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BackendServicesScopedList extends js.Object {
   /** List of BackendServices contained in this scope. */
   var backendServices: js.UndefOr[js.Array[BackendService]] = js.undefined

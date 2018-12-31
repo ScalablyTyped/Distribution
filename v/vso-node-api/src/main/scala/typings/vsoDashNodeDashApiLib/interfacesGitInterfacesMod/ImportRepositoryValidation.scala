@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImportRepositoryValidation extends js.Object {
   var gitSource: GitImportGitSource
   var password: java.lang.String

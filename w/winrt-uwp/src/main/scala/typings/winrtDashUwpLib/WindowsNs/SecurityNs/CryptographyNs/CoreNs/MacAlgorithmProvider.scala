@@ -14,16 +14,16 @@ abstract class MacAlgorithmProvider () extends js.Object {
   /** Gets the length, in bytes, of the message authentication code. */
   var macLength: scala.Double = js.native
   /**
-                       * Creates a CryptographicHash object that supports incremental hash operations.
-                       * @param keyMaterial Random data used to help generate the hash. You can call the GenerateRandom method to create the random data.
-                       * @return A CryptographicHash object that supports incremental hash operations.
-                       */
+    * Creates a CryptographicHash object that supports incremental hash operations.
+    * @param keyMaterial Random data used to help generate the hash. You can call the GenerateRandom method to create the random data.
+    * @return A CryptographicHash object that supports incremental hash operations.
+    */
   def createHash(keyMaterial: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer): CryptographicHash = js.native
   /**
-                       * Creates a symmetric key that can be used to create the MAC value.
-                       * @param keyMaterial Random data used to help generate the key. You can call the GenerateRandom method to create the random data.
-                       * @return Symmetric key.
-                       */
+    * Creates a symmetric key that can be used to create the MAC value.
+    * @param keyMaterial Random data used to help generate the key. You can call the GenerateRandom method to create the random data.
+    * @return Symmetric key.
+    */
   def createKey(keyMaterial: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer): CryptographicKey = js.native
 }
 
@@ -32,10 +32,10 @@ abstract class MacAlgorithmProvider () extends js.Object {
 @js.native
 object MacAlgorithmProvider extends js.Object {
   /**
-                       * Creates a MacAlgorithmProvider object and opens the specified algorithm for use.
-                       * @param algorithm Algorithm name.
-                       * @return Represents a provider that implements MAC algorithms.
-                       */
+    * Creates a MacAlgorithmProvider object and opens the specified algorithm for use.
+    * @param algorithm Algorithm name.
+    * @return Represents a provider that implements MAC algorithms.
+    */
   def openAlgorithm(algorithm: java.lang.String): winrtDashUwpLib.WindowsNs.SecurityNs.CryptographyNs.CoreNs.MacAlgorithmProvider = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Grid[EntityType] extends js.Object {
   @JSName("$$selectionPhase")
   var $$selectionPhase: scala.Boolean

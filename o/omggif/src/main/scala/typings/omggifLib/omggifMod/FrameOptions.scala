@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FrameOptions extends js.Object {
   var delay: js.UndefOr[scala.Double] = js.undefined
   var disposal: js.UndefOr[scala.Double] = js.undefined

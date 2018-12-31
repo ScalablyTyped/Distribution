@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Hash extends js.Object {
   def array(): js.Array[scala.Double]
   def arrayBuffer(): stdLib.ArrayBuffer

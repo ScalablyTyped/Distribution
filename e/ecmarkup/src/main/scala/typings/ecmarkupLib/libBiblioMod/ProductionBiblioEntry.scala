@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProductionBiblioEntry extends BiblioEntryBase {
   @JSName("name")
   var name_ProductionBiblioEntry: java.lang.String

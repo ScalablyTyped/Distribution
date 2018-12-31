@@ -5,18 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CaptionSnippet extends js.Object {
   /** The type of audio track associated with the caption track. */
   var audioTrackType: js.UndefOr[java.lang.String] = js.undefined
   /** The reason that YouTube failed to process the caption track. This property is only present if the state property's value is failed. */
   var failureReason: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Indicates whether YouTube synchronized the caption track to the audio track in the video. The value will be true if a sync was explicitly requested
-               * when the caption track was uploaded. For example, when calling the captions.insert or captions.update methods, you can set the sync parameter to true
-               * to instruct YouTube to sync the uploaded track to the video. If the value is false, YouTube uses the time codes in the uploaded caption track to
-               * determine when to display captions.
-               */
+    * Indicates whether YouTube synchronized the caption track to the audio track in the video. The value will be true if a sync was explicitly requested
+    * when the caption track was uploaded. For example, when calling the captions.insert or captions.update methods, you can set the sync parameter to true
+    * to instruct YouTube to sync the uploaded track to the video. If the value is false, YouTube uses the time codes in the uploaded caption track to
+    * determine when to display captions.
+    */
   var isAutoSynced: js.UndefOr[scala.Boolean] = js.undefined
   /** Indicates whether the track contains closed captions for the deaf and hard of hearing. The default value is false. */
   var isCC: js.UndefOr[scala.Boolean] = js.undefined

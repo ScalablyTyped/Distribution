@@ -26,9 +26,9 @@ trait Connection extends EscapeFunctions {
   def commit(options: QueryOptions): scala.Unit = js.native
   def commit(options: QueryOptions, callback: js.Function1[/* err */ MysqlError, scala.Unit]): scala.Unit = js.native
   def connect(): scala.Unit = js.native
-  def connect(callback: js.Function2[/* err */ MysqlError, /* repeated */js.Any, scala.Unit]): scala.Unit = js.native
+  def connect(callback: js.Function2[/* err */ MysqlError, /* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
   def connect(options: js.Any): scala.Unit = js.native
-  def connect(options: js.Any, callback: js.Function2[/* err */ MysqlError, /* repeated */js.Any, scala.Unit]): scala.Unit = js.native
+  def connect(options: js.Any, callback: js.Function2[/* err */ MysqlError, /* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
   def createQuery(options: java.lang.String): Query = js.native
   def createQuery(options: java.lang.String, callback: queryCallback): Query = js.native
   def createQuery(options: java.lang.String, values: js.Any): Query = js.native
@@ -38,9 +38,9 @@ trait Connection extends EscapeFunctions {
   def createQuery(query: Query): Query = js.native
   def destroy(): scala.Unit = js.native
   def end(): scala.Unit = js.native
-  def end(callback: js.Function2[/* err */ MysqlError, /* repeated */js.Any, scala.Unit]): scala.Unit = js.native
-  def end(options: js.Any, callback: js.Function2[/* err */ MysqlError, /* repeated */js.Any, scala.Unit]): scala.Unit = js.native
-  def on(ev: java.lang.String, callback: js.Function1[/* repeated */js.Any, scala.Unit]): this.type = js.native
+  def end(callback: js.Function2[/* err */ MysqlError, /* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
+  def end(options: js.Any, callback: js.Function2[/* err */ MysqlError, /* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
+  def on(ev: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_connect(ev: mysqlLib.mysqlLibStrings.connect, callback: js.Function0[scala.Unit]): Connection = js.native
   @JSName("on")
@@ -51,7 +51,7 @@ trait Connection extends EscapeFunctions {
     callback: js.Function1[/* err */ js.UndefOr[MysqlError], scala.Unit]
   ): Connection = js.native
   @JSName("on")
-  def on_enqueue(ev: mysqlLib.mysqlLibStrings.enqueue, callback: js.Function1[/* repeated */js.Any, scala.Unit]): Connection = js.native
+  def on_enqueue(ev: mysqlLib.mysqlLibStrings.enqueue, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): Connection = js.native
   @JSName("on")
   def on_error(ev: mysqlLib.mysqlLibStrings.error, callback: js.Function1[/* err */ MysqlError, scala.Unit]): Connection = js.native
   @JSName("on")

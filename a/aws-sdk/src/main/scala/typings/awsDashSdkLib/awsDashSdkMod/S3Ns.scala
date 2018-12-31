@@ -12,8 +12,8 @@ object S3Ns extends js.Object {
   class ManagedUpload protected ()
     extends awsDashSdkLib.clientsAllMod.S3Ns.ManagedUpload {
     /**
-         * Creates a managed upload object with a set of configuration options.
-         */
+      * Creates a managed upload object with a set of configuration options.
+      */
     def this(options: awsDashSdkLib.libS3ManagedUnderscoreUploadMod.ManagedUploadNs.ManagedUploadOptions) = this()
   }
   
@@ -22,11 +22,11 @@ object S3Ns extends js.Object {
     extends awsDashSdkLib.clientsAllMod.S3Ns.PresignedPost
   
   @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class Types ()
     extends awsDashSdkLib.clientsAllMod.S3Ns.Types {
-    /**
-       * Constructs a service object. This object has one method for each API operation.
-       */
     def this(options: awsDashSdkLib.clientsS3Mod.S3Ns.ClientConfiguration) = this()
   }
   
@@ -34,14 +34,14 @@ object S3Ns extends js.Object {
   @js.native
   object ManagedUpload extends js.Object {
     /**
-         * Default value: 10000
-         */
+      * Default value: 10000
+      */
     var maxTotalParts: scala.Double = js.native
     /**
-         * Returns the minimum number of bytes for an individual part upload.
-         * Note: Minimum allowed size is 5 MB.
-         * 1024 * 5
-         */
+      * Returns the minimum number of bytes for an individual part upload.
+      * Note: Minimum allowed size is 5 MB.
+      * 1024 * 5
+      */
     var minPartSize: scala.Double = js.native
   }
   
@@ -52,8 +52,8 @@ object S3Ns extends js.Object {
     class ManagedUpload protected ()
       extends awsDashSdkLib.clientsAllMod.S3Ns.S3Ns.ManagedUpload {
       /**
-           * Creates a managed upload object with a set of configuration options.
-           */
+        * Creates a managed upload object with a set of configuration options.
+        */
       def this(options: awsDashSdkLib.libS3ManagedUnderscoreUploadMod.ManagedUploadNs.ManagedUploadOptions) = this()
     }
     
@@ -65,14 +65,14 @@ object S3Ns extends js.Object {
     @js.native
     object ManagedUpload extends js.Object {
       /**
-           * Default value: 10000
-           */
+        * Default value: 10000
+        */
       var maxTotalParts: scala.Double = js.native
       /**
-           * Returns the minimum number of bytes for an individual part upload.
-           * Note: Minimum allowed size is 5 MB.
-           * 1024 * 5
-           */
+        * Returns the minimum number of bytes for an individual part upload.
+        * Note: Minimum allowed size is 5 MB.
+        * 1024 * 5
+        */
       var minPartSize: scala.Double = js.native
     }
     

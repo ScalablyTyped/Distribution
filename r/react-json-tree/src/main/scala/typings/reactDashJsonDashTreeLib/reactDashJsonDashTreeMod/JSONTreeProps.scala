@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JSONTreeProps
   extends reactLib.reactMod.ReactNs.Props[JSONTreeComponent] {
   var collectionLimit: js.UndefOr[scala.Double] = js.undefined
@@ -44,7 +43,7 @@ trait JSONTreeProps
     js.Function3[
       /* displayValue */ java.lang.String | scala.Double, 
       /* rawValue */ js.UndefOr[java.lang.String | scala.Double | scala.Boolean | scala.Null], 
-      /* repeated */java.lang.String | scala.Double, 
+      /* repeated */ java.lang.String | scala.Double, 
       reactLib.reactMod.Global.JSXNs.Element
     ]
   ] = js.undefined

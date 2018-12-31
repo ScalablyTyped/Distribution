@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SitesResource extends js.Object {
   /** Adds a site to the set of the user's sites in Search Console. */
   def add(request: gapiDotClientDotWebmastersLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

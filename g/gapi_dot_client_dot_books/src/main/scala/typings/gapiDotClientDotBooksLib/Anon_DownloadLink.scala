@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DownloadLink extends js.Object {
   /** URL to retrieve ACS token for epub download. (In LITE projection.) */
   var acsTokenLink: js.UndefOr[java.lang.String] = js.undefined

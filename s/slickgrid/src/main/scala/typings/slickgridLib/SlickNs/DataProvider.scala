@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataProvider[T /* <: SlickData */] extends js.Object {
   /**
   		 * Returns the metadata for the item at a given index (optional).

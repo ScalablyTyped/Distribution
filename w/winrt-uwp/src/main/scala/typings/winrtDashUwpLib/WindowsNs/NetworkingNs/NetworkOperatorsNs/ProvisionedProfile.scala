@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ProvisionedProfile () extends js.Object {
   /**
-                   * Called by the application to update the cost for a specific profile.
-                   * @param value Updates the cost for the profile.
-                   */
+    * Called by the application to update the cost for a specific profile.
+    * @param value Updates the cost for the profile.
+    */
   def updateCost(value: winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkCostType): scala.Unit = js.native
   /**
-                   * Called by the application to update the usage for a specific profile.
-                   * @param value Updates the usage for a profile.
-                   */
+    * Called by the application to update the usage for a specific profile.
+    * @param value Updates the usage for a profile.
+    */
   def updateUsage(value: ProfileUsage): scala.Unit = js.native
 }
 

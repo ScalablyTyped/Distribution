@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExtensionPanel extends js.Object {
   /** Fired when the user switches away from the panel. */
   var onHidden: PanelHiddenEvent
@@ -14,11 +13,11 @@ trait ExtensionPanel extends js.Object {
   /** Fired when the user switches to the panel. */
   var onShown: PanelShownEvent
   /**
-           * Appends a button to the status bar of the panel.
-           * @param iconPath Path to the icon of the button. The file should contain a 64x24-pixel image composed of two 32x24 icons. The left icon is used when the button is inactive; the right icon is displayed when the button is pressed.
-           * @param tooltipText Text shown as a tooltip when user hovers the mouse over the button.
-           * @param disabled Whether the button is disabled.
-           */
+    * Appends a button to the status bar of the panel.
+    * @param iconPath Path to the icon of the button. The file should contain a 64x24-pixel image composed of two 32x24 icons. The left icon is used when the button is inactive; the right icon is displayed when the button is pressed.
+    * @param tooltipText Text shown as a tooltip when user hovers the mouse over the button.
+    * @param disabled Whether the button is disabled.
+    */
   def createStatusBarButton(iconPath: java.lang.String, tooltipText: java.lang.String, disabled: scala.Boolean): Button
 }
 

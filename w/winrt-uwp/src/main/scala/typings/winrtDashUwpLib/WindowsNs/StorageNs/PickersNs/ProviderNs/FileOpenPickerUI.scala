@@ -35,23 +35,23 @@ abstract class FileOpenPickerUI () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[FileOpenPickerUI, FileRemovedEventArgs]
   ): scala.Unit = js.native
   /**
-                       * Adds the specified file to the list of files that the user has chosen.
-                       * @param id A unique identifier of the file to add.
-                       * @param file The file to add to the list of files that the user has chosen.
-                       * @return The enumeration value that indicates the result of this addFile method.
-                       */
+    * Adds the specified file to the list of files that the user has chosen.
+    * @param id A unique identifier of the file to add.
+    * @param file The file to add to the list of files that the user has chosen.
+    * @return The enumeration value that indicates the result of this addFile method.
+    */
   def addFile(id: java.lang.String, file: winrtDashUwpLib.WindowsNs.StorageNs.IStorageFile): AddFileResult = js.native
   /**
-                       * Indicates whether the specified file can be added to the list of files the user has chosen.
-                       * @param file The file to test.
-                       * @return True if the file can be added to the file picker UI; otherwise false.
-                       */
+    * Indicates whether the specified file can be added to the list of files the user has chosen.
+    * @param file The file to test.
+    * @return True if the file can be added to the file picker UI; otherwise false.
+    */
   def canAddFile(file: winrtDashUwpLib.WindowsNs.StorageNs.IStorageFile): scala.Boolean = js.native
   /**
-                       * Determines whether the specified file is in the list of files that the user has chosen.
-                       * @param id The identifier of the file.
-                       * @return True if the file is in the basket; otherwise false.
-                       */
+    * Determines whether the specified file is in the list of files that the user has chosen.
+    * @param id The identifier of the file.
+    * @return True if the file is in the basket; otherwise false.
+    */
   def containsFile(id: java.lang.String): scala.Boolean = js.native
   /** Fires when the user closes the file picker. */
   def onclosing(ev: PickerClosingEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[FileOpenPickerUI]): scala.Unit = js.native
@@ -69,9 +69,9 @@ abstract class FileOpenPickerUI () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[FileOpenPickerUI, FileRemovedEventArgs]
   ): scala.Unit = js.native
   /**
-                       * Removes the specified file from the list of files the user has chosen.
-                       * @param id The identifier of the file to remove.
-                       */
+    * Removes the specified file from the list of files the user has chosen.
+    * @param id The identifier of the file to remove.
+    */
   def removeFile(id: java.lang.String): scala.Unit = js.native
 }
 

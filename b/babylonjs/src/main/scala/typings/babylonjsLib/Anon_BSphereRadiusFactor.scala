@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BSphereRadiusFactor extends js.Object {
   var bSphereRadiusFactor: js.UndefOr[scala.Double] = js.undefined
   var boundingSphereOnly: js.UndefOr[scala.Boolean] = js.undefined

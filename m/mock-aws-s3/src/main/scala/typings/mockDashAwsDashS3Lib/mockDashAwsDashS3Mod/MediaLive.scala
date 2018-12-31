@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "MediaLive")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class MediaLive ()
   extends awsDashSdkLib.awsDashSdkMod.MediaLive {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ClientConfiguration) = this()
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TileTemplate extends js.Object {
   var backBackgroundImage: java.lang.String
   var backContent: java.lang.String

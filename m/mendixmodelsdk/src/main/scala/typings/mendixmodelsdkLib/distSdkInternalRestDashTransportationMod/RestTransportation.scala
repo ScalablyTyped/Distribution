@@ -17,8 +17,8 @@ class RestTransportation protected ()
   var sanitizedMethod: js.Any = js.native
   var url: js.Any = js.native
   /**
-       * Send a HTTP request, with specified method, url, data, success and failure callbacks.
-       */
+    * Send a HTTP request, with specified method, url, data, success and failure callbacks.
+    */
   /* CompleteClass */
   override def request[T](
     options: mendixmodelsdkLib.distSdkInternalTransportationMod.IRequestOptions,
@@ -38,8 +38,8 @@ class RestTransportation protected ()
     failure: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-       * Send a HTTP request that will be retried in case of network errors, with specified method, url, data, success and failure callbacks.
-       */
+    * Send a HTTP request that will be retried in case of network errors, with specified method, url, data, success and failure callbacks.
+    */
   /* CompleteClass */
   override def retryableRequest[T](
     options: mendixmodelsdkLib.distSdkInternalTransportationMod.IRequestOptions,

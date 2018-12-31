@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libColMod.Col] {
   var componentClass: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined

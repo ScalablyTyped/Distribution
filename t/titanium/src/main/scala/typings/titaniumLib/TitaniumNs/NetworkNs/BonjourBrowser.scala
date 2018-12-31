@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * A browser for the discovery and retrieval of Bonjour services available on the network.
 		 */
-
 trait BonjourBrowser
   extends titaniumLib.TitaniumNs.Proxy {
   /**

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HTMLImportsPolyfill extends js.Object {
   var IMPORT_LINK_TYPE: java.lang.String
   var flags: js.Any

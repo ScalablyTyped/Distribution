@@ -18,9 +18,9 @@ class RouterPreloader protected ()
   var router: js.Any = js.native
   var subscription: js.Any = js.native
   /**
-       * A callback method that performs custom clean-up, invoked immediately
-       * after a directive, pipe, or service instance is destroyed.
-       */
+    * A callback method that performs custom clean-up, invoked immediately
+    * after a directive, pipe, or service instance is destroyed.
+    */
   /* CompleteClass */
   override def ngOnDestroy(): scala.Unit = js.native
   def preload(): rxjsLib.rxjsMod.Observable[_] = js.native

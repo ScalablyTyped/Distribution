@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventUpdateResponse extends js.Object {
   /** Any batch-wide failures which occurred applying updates. */
   var batchFailures: js.UndefOr[js.Array[EventBatchRecordFailure]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IslandNode extends js.Object {
   var body: Body
   var equations: js.Array[Equation]

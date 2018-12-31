@@ -12,57 +12,57 @@ sealed trait EvaluationOperationStatus extends js.Object
 @js.native
 object EvaluationOperationStatus extends js.Object {
   /**
-       * The operation was cancelled by the user.
-       */
+    * The operation was cancelled by the user.
+    */
   @js.native
   sealed trait Cancelled
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.EvaluationOperationStatus
   
   /**
-       * The operation completed with a failure.
-       */
+    * The operation completed with a failure.
+    */
   @js.native
   sealed trait Failed
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.EvaluationOperationStatus
   
   /**
-       * The operation is in progress.
-       */
+    * The operation is in progress.
+    */
   @js.native
   sealed trait InProgress
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.EvaluationOperationStatus
   
   /**
-       * The operation could not be found.
-       */
+    * The operation could not be found.
+    */
   @js.native
   sealed trait NotFound
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.EvaluationOperationStatus
   
   /**
-       * The operation object does not have the status set.
-       */
+    * The operation object does not have the status set.
+    */
   @js.native
   sealed trait NotSet
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.EvaluationOperationStatus
   
   /**
-       * The operation has been queued.
-       */
+    * The operation has been queued.
+    */
   @js.native
   sealed trait Queued
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.EvaluationOperationStatus
   
   /**
-       * The operation completed successfully.
-       */
+    * The operation completed successfully.
+    */
   @js.native
   sealed trait Succeeded
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.EvaluationOperationStatus
   
   /**
-       * The operation timed out.
-       */
+    * The operation timed out.
+    */
   @js.native
   sealed trait TimedOut
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.EvaluationOperationStatus

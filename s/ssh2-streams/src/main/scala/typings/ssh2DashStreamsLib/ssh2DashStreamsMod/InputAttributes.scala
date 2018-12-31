@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InputAttributes extends js.Object {
   var atime: js.UndefOr[scala.Double | stdLib.Date] = js.undefined
   var gid: js.UndefOr[scala.Double] = js.undefined

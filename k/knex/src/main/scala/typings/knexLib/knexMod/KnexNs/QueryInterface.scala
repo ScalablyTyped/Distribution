@@ -256,13 +256,10 @@ trait QueryInterface extends js.Object {
   def first(columnNames: knexLib.ColumnName*): QueryBuilder = js.native
   // Others
   def first(columnNames: js.Array[knexLib.ColumnName]): QueryBuilder = js.native
-  // tslint:disable-next-line ban-types
   def from(tableName: js.Function): QueryBuilder = js.native
   // tslint:disable-next-line ban-types
   def from(tableName: knexLib.TableName): QueryBuilder = js.native
-  // tslint:disable-next-line ban-types
   def from(tableName: knexLib.knexMod.Identifier): QueryBuilder = js.native
-  // tslint:disable-next-line ban-types
   def from(tableName: Raw): QueryBuilder = js.native
   def fullOuterJoin(raw: Raw): QueryBuilder = js.native
   def fullOuterJoin(tableName: knexLib.TableName, clause: JoinCallback): QueryBuilder = js.native
@@ -305,7 +302,6 @@ trait QueryInterface extends js.Object {
   def having(sql: java.lang.String, bindings: (knexLib.Value | QueryBuilder)*): QueryBuilder = js.native
   // Having
   def having(sql: java.lang.String, bindings: js.Array[knexLib.Value | QueryBuilder]): QueryBuilder = js.native
-  // Having
   def having(sql: java.lang.String, bindings: knexLib.knexMod.ValueMap): QueryBuilder = js.native
   // Having
   def having(
@@ -354,13 +350,10 @@ trait QueryInterface extends js.Object {
   def insert(data: js.Any): QueryBuilder = js.native
   def insert(data: js.Any, returning: java.lang.String): QueryBuilder = js.native
   def insert(data: js.Any, returning: js.Array[java.lang.String]): QueryBuilder = js.native
-  // tslint:disable-next-line ban-types
   def into(tableName: js.Function): QueryBuilder = js.native
   // tslint:disable-next-line ban-types
   def into(tableName: knexLib.TableName): QueryBuilder = js.native
-  // tslint:disable-next-line ban-types
   def into(tableName: knexLib.knexMod.Identifier): QueryBuilder = js.native
-  // tslint:disable-next-line ban-types
   def into(tableName: Raw): QueryBuilder = js.native
   // Joins
   def join(raw: Raw): QueryBuilder = js.native
@@ -384,25 +377,19 @@ trait QueryInterface extends js.Object {
   ): QueryBuilder = js.native
   // Joins
   def join(tableName: knexLib.TableName, raw: Raw): QueryBuilder = js.native
-  // Joins
   def join(tableName: QueryCallback, clause: JoinCallback): QueryBuilder = js.native
-  // Joins
   def join(tableName: QueryCallback, column1: java.lang.String, column2: java.lang.String): QueryBuilder = js.native
-  // Joins
   def join(
     tableName: QueryCallback,
     column1: java.lang.String,
     operator: java.lang.String,
     column2: java.lang.String
   ): QueryBuilder = js.native
-  // Joins
   def join(tableName: QueryCallback, column1: java.lang.String, raw: Raw): QueryBuilder = js.native
-  // Joins
   def join(
     tableName: QueryCallback,
     columns: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | Raw]
   ): QueryBuilder = js.native
-  // Joins
   def join(tableName: QueryCallback, raw: Raw): QueryBuilder = js.native
   def joinRaw(tableName: java.lang.String): QueryBuilder = js.native
   def joinRaw(tableName: java.lang.String, binding: knexLib.Value): QueryBuilder = js.native
@@ -546,7 +533,6 @@ trait QueryInterface extends js.Object {
   def orWhereRaw(sql: java.lang.String, bindings: knexLib.knexMod.ValueMap): QueryBuilder = js.native
   // Order by
   def orderBy(columnName: java.lang.String): QueryBuilder = js.native
-  // Order by
   def orderBy(columnName: java.lang.String, direction: java.lang.String): QueryBuilder = js.native
   def orderByRaw(raw: Raw): QueryBuilder = js.native
   def orderByRaw(sql: java.lang.String, bindings: (knexLib.Value | QueryBuilder)*): QueryBuilder = js.native
@@ -651,32 +637,23 @@ trait QueryInterface extends js.Object {
   def sumDistinct(columnName: java.lang.String): QueryBuilder = js.native
   def sumDistinct(columnName: Raw): QueryBuilder = js.native
   def sumDistinct(columnName: stdLib.Record[java.lang.String, java.lang.String | Raw]): QueryBuilder = js.native
-  // tslint:disable-next-line ban-types
   def table(tableName: js.Function): QueryBuilder = js.native
   // tslint:disable-next-line ban-types
   def table(tableName: knexLib.TableName): QueryBuilder = js.native
-  // tslint:disable-next-line ban-types
   def table(tableName: knexLib.knexMod.Identifier): QueryBuilder = js.native
-  // tslint:disable-next-line ban-types
   def table(tableName: Raw): QueryBuilder = js.native
   def truncate(): QueryBuilder = js.native
-  // Union
   def union(callback: QueryBuilder): QueryBuilder = js.native
-  // Union
   def union(callback: QueryBuilder, wrap: scala.Boolean): QueryBuilder = js.native
   // Union
   def union(callback: QueryCallback): QueryBuilder = js.native
-  // Union
   def union(callback: QueryCallback, wrap: scala.Boolean): QueryBuilder = js.native
-  // Union
   def union(callback: Raw): QueryBuilder = js.native
-  // Union
   def union(callback: Raw, wrap: scala.Boolean): QueryBuilder = js.native
   // Union
   def union(callbacks: (QueryCallback | QueryBuilder | Raw)*): QueryBuilder = js.native
   // Union
   def union(callbacks: js.Array[QueryCallback | QueryBuilder | Raw]): QueryBuilder = js.native
-  // Union
   def union(callbacks: js.Array[QueryCallback | QueryBuilder | Raw], wrap: scala.Boolean): QueryBuilder = js.native
   def unionAll(callback: QueryCallback): QueryBuilder = js.native
   def update(columnName: java.lang.String, value: knexLib.Value): QueryBuilder = js.native
@@ -687,23 +664,18 @@ trait QueryInterface extends js.Object {
   def update(data: js.Any, returning: js.Array[java.lang.String]): QueryBuilder = js.native
   // Wheres
   def where(callback: QueryCallback): QueryBuilder = js.native
-  // Wheres
   def where(columnName: java.lang.String): QueryBuilder = js.native
-  // Wheres
   def where(columnName: java.lang.String, operator: java.lang.String): QueryBuilder = js.native
   // Wheres
   def where(columnName: java.lang.String, operator: java.lang.String, value: knexLib.Value): QueryBuilder = js.native
-  // Wheres
   def where(columnName: java.lang.String, operator: java.lang.String, value: QueryBuilder): QueryBuilder = js.native
   // Wheres
   def where(columnName: java.lang.String, value: knexLib.Value): QueryBuilder = js.native
   // Wheres
   def where(condition: scala.Boolean): QueryBuilder = js.native
-  // Wheres
   def where(left: Raw, operator: java.lang.String): QueryBuilder = js.native
   // Wheres
   def where(left: Raw, operator: java.lang.String, right: knexLib.Value): QueryBuilder = js.native
-  // Wheres
   def where(left: Raw, operator: java.lang.String, right: QueryBuilder): QueryBuilder = js.native
   // Wheres
   def where(`object`: js.Object): QueryBuilder = js.native
@@ -713,7 +685,6 @@ trait QueryInterface extends js.Object {
   def where(sql: java.lang.String, bindings: (knexLib.Value | QueryBuilder)*): QueryBuilder = js.native
   // Wheres
   def where(sql: java.lang.String, bindings: js.Array[knexLib.Value | QueryBuilder]): QueryBuilder = js.native
-  // Wheres
   def where(sql: java.lang.String, bindings: knexLib.knexMod.ValueMap): QueryBuilder = js.native
   def whereBetween(columnName: java.lang.String, range: js.Tuple2[knexLib.Value, knexLib.Value]): QueryBuilder = js.native
   def whereExists(callback: QueryCallback): QueryBuilder = js.native

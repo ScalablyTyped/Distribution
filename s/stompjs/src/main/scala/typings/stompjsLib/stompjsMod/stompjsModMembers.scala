@@ -16,6 +16,6 @@ object stompjsModMembers extends js.Object {
   def over(ws: stdLib.WebSocket): Client = js.native
   def overTCP(host: java.lang.String, port: scala.Double): Client = js.native
   def overWS(url: java.lang.String): Client = js.native
-  def setInterval(interval: scala.Double, f: js.Function1[/* repeated */js.Any, scala.Unit]): nodeLib.NodeJSNs.Timer = js.native
+  def setInterval(interval: scala.Double, f: js.Function1[/* repeated */ js.Any, scala.Unit]): nodeLib.NodeJSNs.Timer = js.native
 }
 

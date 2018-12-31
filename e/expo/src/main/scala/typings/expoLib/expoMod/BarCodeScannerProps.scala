@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BarCodeScannerProps
   extends reactDashNativeLib.reactDashNativeMod.ViewProps {
   var barCodeTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined

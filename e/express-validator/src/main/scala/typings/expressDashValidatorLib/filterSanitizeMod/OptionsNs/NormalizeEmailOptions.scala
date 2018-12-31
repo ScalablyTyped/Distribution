@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NormalizeEmailOptions extends js.Object {
   var all_lowercase: js.UndefOr[scala.Boolean] = js.undefined
   var gmail_convert_googlemaildotcom: js.UndefOr[scala.Boolean] = js.undefined

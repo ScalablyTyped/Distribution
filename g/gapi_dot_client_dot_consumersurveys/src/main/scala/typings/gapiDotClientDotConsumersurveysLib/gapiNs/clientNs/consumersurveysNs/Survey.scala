@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Survey extends js.Object {
   var audience: js.UndefOr[SurveyAudience] = js.undefined
   var cost: js.UndefOr[SurveyCost] = js.undefined

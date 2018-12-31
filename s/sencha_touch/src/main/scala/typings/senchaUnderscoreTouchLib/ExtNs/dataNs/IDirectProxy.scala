@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDirectProxy
   extends senchaUnderscoreTouchLib.ExtNs.dataNs.proxyNs.IServer {
   /** [Method] Generates a url based on a given Ext data Request object

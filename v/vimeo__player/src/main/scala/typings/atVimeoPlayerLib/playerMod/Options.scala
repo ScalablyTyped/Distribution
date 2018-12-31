@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var autopause: js.UndefOr[scala.Boolean] = js.undefined
   var autoplay: js.UndefOr[scala.Boolean] = js.undefined

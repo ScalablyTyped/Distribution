@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ThetaLength extends js.Object {
   var heightSegments: scala.Double
   var phiLength: scala.Double

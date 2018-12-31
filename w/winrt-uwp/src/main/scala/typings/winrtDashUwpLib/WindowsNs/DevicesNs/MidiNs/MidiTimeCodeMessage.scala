@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class MidiTimeCodeMessage protected () extends js.Object {
   /**
-                   * Creates a new MidiTimeCodeMessage object.
-                   * @param frameType The frame type from 0-7.
-                   * @param values The time code from 0-32.
-                   */
+    * Creates a new MidiTimeCodeMessage object.
+    * @param frameType The frame type from 0-7.
+    * @param values The time code from 0-32.
+    */
   def this(frameType: scala.Double, values: scala.Double) = this()
   /** Gets the value of the frame type from 0-7. */
   var frameType: scala.Double = js.native

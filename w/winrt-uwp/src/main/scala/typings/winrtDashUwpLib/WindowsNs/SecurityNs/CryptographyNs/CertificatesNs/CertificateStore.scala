@@ -12,14 +12,14 @@ abstract class CertificateStore () extends js.Object {
   /** Gets the name of the certificate store. */
   var name: java.lang.String = js.native
   /**
-                       * Adds a certificate to the certificate store.
-                       * @param certificate The certificate to add to the certificate store.
-                       */
+    * Adds a certificate to the certificate store.
+    * @param certificate The certificate to add to the certificate store.
+    */
   def add(certificate: Certificate): scala.Unit = js.native
   /**
-                       * Deletes a certificate from the certificate store.
-                       * @param certificate The certificate to delete from the certificate store.
-                       */
+    * Deletes a certificate from the certificate store.
+    * @param certificate The certificate to delete from the certificate store.
+    */
   def delete(certificate: Certificate): scala.Unit = js.native
 }
 

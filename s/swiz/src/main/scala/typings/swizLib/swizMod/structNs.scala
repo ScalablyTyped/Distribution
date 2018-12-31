@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("swiz", "struct")
 @js.native
 object structNs extends js.Object {
-  
   trait IField extends js.Object {
     var attribute: scala.Boolean
     var coerceTo: js.Any
@@ -24,7 +23,6 @@ object structNs extends js.Object {
     var `val`: js.UndefOr[swizLib.swizMod.IChain] = js.undefined
   }
   
-  
   trait IFieldOptions extends js.Object {
     var attribute: js.UndefOr[scala.Boolean] = js.undefined
     var coerceTo: js.UndefOr[java.lang.String] = js.undefined
@@ -38,7 +36,6 @@ object structNs extends js.Object {
     var `val`: js.UndefOr[swizLib.swizMod.IChain] = js.undefined
   }
   
-  
   trait IObj extends js.Object {
     var fields: js.Array[IField]
     var name: java.lang.String
@@ -46,7 +43,6 @@ object structNs extends js.Object {
     var plural: java.lang.String
     var singular: java.lang.String
   }
-  
   
   trait IObjOptions extends js.Object {
     var fields: js.UndefOr[js.Array[IField]] = js.undefined

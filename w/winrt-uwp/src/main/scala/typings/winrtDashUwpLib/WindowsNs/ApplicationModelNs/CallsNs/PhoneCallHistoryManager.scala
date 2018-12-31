@@ -15,10 +15,10 @@ abstract class PhoneCallHistoryManager () extends js.Object
 @js.native
 object PhoneCallHistoryManager extends js.Object {
   /**
-                   * Requests the PhoneCallHistoryStore associated with the calling application.
-                   * @param accessType The type of access requested for the PhoneCallHistoryStore object.
-                   * @return An asynchronous operation that returns a PhoneCallHistoryStore object on successful completion.
-                   */
+    * Requests the PhoneCallHistoryStore associated with the calling application.
+    * @param accessType The type of access requested for the PhoneCallHistoryStore object.
+    * @return An asynchronous operation that returns a PhoneCallHistoryStore object on successful completion.
+    */
   def requestStoreAsync(accessType: winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.PhoneCallHistoryStoreAccessType): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.ApplicationModelNs.CallsNs.PhoneCallHistoryStore] = js.native
 }
 

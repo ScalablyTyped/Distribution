@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Datetime extends js.Object {
   var amount: scala.Double
   var datetime: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDragDrop
   extends extjsLib.ExtNs.IAbstractPlugin {
   /** [Config Option] (Object/Boolean) */

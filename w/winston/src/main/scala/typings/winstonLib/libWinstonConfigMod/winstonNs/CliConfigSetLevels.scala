@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CliConfigSetLevels extends AbstractConfigSetLevels {
   var data: scala.Double
   var debug: scala.Double

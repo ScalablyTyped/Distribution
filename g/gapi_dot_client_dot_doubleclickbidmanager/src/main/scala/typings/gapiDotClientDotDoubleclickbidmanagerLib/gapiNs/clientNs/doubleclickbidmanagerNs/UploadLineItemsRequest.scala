@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadLineItemsRequest extends js.Object {
   /** Set to true to get upload status without actually persisting the line items. */
   var dryRun: js.UndefOr[scala.Boolean] = js.undefined

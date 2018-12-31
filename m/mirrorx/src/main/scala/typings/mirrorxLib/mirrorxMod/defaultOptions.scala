@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait defaultOptions extends js.Object {
   var historyMode: js.UndefOr[java.lang.String] = js.undefined
   var initialState: js.UndefOr[js.Object] = js.undefined

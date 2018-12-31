@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Title extends js.Object {
   var Department: java.lang.String
   var Email: java.lang.String

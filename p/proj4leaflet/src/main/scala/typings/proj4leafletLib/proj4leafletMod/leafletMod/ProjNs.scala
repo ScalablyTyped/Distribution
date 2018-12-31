@@ -27,7 +27,6 @@ object ProjNs extends js.Object {
   class ImageOverlay ()
     extends leafletLib.leafletMod.ImageOverlay
   
-  
   trait ProjCRSOptions extends js.Object {
     var bounds: js.UndefOr[leafletLib.leafletMod.Bounds] = js.undefined
     var origin: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.undefined

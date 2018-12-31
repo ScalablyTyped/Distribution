@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DrawerSectionProps extends js.Object {
   var divider: js.UndefOr[scala.Boolean] = js.undefined
   var items: js.Array[DrawerSectionItem]

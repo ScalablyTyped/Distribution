@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Placeholder extends js.Object {
   // The index of the placeholder. If the same placeholder types are present in
   // the same page, they would have different index values.

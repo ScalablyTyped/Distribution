@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PivotGridRenderedEventUIParam extends js.Object {
   /**
   	 * Gets reference to the igGrid widget, which represents the data.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapOptions extends js.Object {
   var chart: js.UndefOr[ChartOptions] = js.undefined
   var colorAxis: js.UndefOr[ColorAxis] = js.undefined

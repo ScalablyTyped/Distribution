@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait styleObj extends js.Object {
   var dashArray: js.UndefOr[java.lang.String] = js.undefined
   var fillColor: js.UndefOr[java.lang.String] = js.undefined

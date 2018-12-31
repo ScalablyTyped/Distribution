@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 	 * r/red, g/green, b/blue for red, green, blue channels.
 	 * The valid range for a/r/g/b fields is [0..255].
 	 */
-
 trait Color extends js.Object {
   /** alpha channel [0..255] default: 255 */
   var alpha: js.UndefOr[scala.Double] = js.undefined

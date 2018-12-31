@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JssExpand extends js.Object {
   var animation: jssLib.Anon_Duration | js.Any
   var background: jssLib.Anon_Size | js.Any

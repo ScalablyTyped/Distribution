@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IntentArgument extends js.Object {
   /** Name of the argument. */
   var name: java.lang.String

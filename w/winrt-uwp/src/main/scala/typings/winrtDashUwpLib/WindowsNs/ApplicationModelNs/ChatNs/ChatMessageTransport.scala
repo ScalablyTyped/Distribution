@@ -22,9 +22,9 @@ abstract class ChatMessageTransport () extends js.Object {
   /** Gets the type of the message transport. */
   var transportKind: ChatMessageTransportKind = js.native
   /**
-                   * Sets the current application to handle messaging notifications.
-                   * @return An asynchronous action.
-                   */
+    * Sets the current application to handle messaging notifications.
+    * @return An asynchronous action.
+    */
   def requestSetAsNotificationProviderAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

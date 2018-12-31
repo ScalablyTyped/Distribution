@@ -39,10 +39,10 @@ abstract class AbstractRule protected ()
   /* CompleteClass */
   override def applyWithWalker(walker: tslintLib.libLanguageWalkerWalkerMod.IWalker): js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure] = js.native
   /**
-       * @deprecated
-       * Failures will be filtered based on `tslint:disable` comments by tslint.
-       * This method now does nothing.
-       */
+    * @deprecated
+    * Failures will be filtered based on `tslint:disable` comments by tslint.
+    * This method now does nothing.
+    */
   /* protected */ def filterFailures(failures: js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure]): js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure] = js.native
   /* CompleteClass */
   override def getOptions(): tslintLib.libLanguageRuleRuleMod.IOptions = js.native

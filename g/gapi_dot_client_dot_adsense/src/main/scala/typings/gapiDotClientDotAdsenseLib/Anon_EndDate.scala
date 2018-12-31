@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EndDate extends js.Object {
   /** Account upon which to report. */
   var accountId: java.lang.String
@@ -34,14 +33,14 @@ trait Anon_EndDate extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The name of a dimension or metric to sort the resulting report on, optionally prefixed with "+" to sort ascending or "-" to sort descending. If no
-                   * prefix is specified, the column is sorted ascending.
-                   */
+    * The name of a dimension or metric to sort the resulting report on, optionally prefixed with "+" to sort ascending or "-" to sort descending. If no
+    * prefix is specified, the column is sorted ascending.
+    */
   var sort: js.UndefOr[java.lang.String] = js.undefined
   /** Start of the date range to report on in "YYYY-MM-DD" format, inclusive. */
   var startDate: java.lang.String

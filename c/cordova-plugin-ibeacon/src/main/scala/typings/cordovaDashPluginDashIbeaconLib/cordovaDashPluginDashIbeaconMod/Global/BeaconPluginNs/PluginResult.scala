@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PluginResult extends js.Object {
   var authorizationStatus: java.lang.String
   var beacons: js.Array[Beacon]

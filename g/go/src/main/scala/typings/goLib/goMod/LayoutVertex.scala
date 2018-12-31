@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 /** A vertex represents a node in a LayoutNetwork. It holds layout-specific data for the node. */
 @JSImport("go", "LayoutVertex")
 @js.native
+/**
+  * This constructs a vertex that does not know about any Node.
+  */
 class LayoutVertex ()
   extends goLib.goMod.goNs.LayoutVertex {
   /**Gets or sets the Bounds of this vertex, in document coordinates.*/
@@ -71,32 +74,32 @@ class LayoutVertex ()
   /* CompleteClass */
   override var y: scala.Double = js.native
   /**
-          * Adds a LayoutEdge to the list of successors (the edge will be going out from this vertex).
-          * @param {LayoutEdge} edge
-          */
+    * Adds a LayoutEdge to the list of successors (the edge will be going out from this vertex).
+    * @param {LayoutEdge} edge
+    */
   /* CompleteClass */
   override def addDestinationEdge(edge: goLib.goMod.goNs.LayoutEdge): scala.Unit = js.native
   /**
-          * Adds a LayoutEdge to the list of predecessors (the edge will be coming into this vertex).
-          * @param {LayoutEdge} edge
-          */
+    * Adds a LayoutEdge to the list of predecessors (the edge will be coming into this vertex).
+    * @param {LayoutEdge} edge
+    */
   /* CompleteClass */
   override def addSourceEdge(edge: goLib.goMod.goNs.LayoutEdge): scala.Unit = js.native
   /**
-          * Moves the Node corresponding to this vertex so that its position is at the current .bounds point.
-          */
+    * Moves the Node corresponding to this vertex so that its position is at the current .bounds point.
+    */
   /* CompleteClass */
   override def commit(): scala.Unit = js.native
   /**
-          * Deletes a LayoutEdge from the list of successors (the edge was going out from this vertex).
-          * @param {LayoutEdge} edge
-          */
+    * Deletes a LayoutEdge from the list of successors (the edge was going out from this vertex).
+    * @param {LayoutEdge} edge
+    */
   /* CompleteClass */
   override def deleteDestinationEdge(edge: goLib.goMod.goNs.LayoutEdge): scala.Unit = js.native
   /**
-          * Deletes a LayoutEdge from the list of predecessors (the edge was coming into this vertex).
-          * @param {LayoutEdge} edge
-          */
+    * Deletes a LayoutEdge from the list of predecessors (the edge was coming into this vertex).
+    * @param {LayoutEdge} edge
+    */
   /* CompleteClass */
   override def deleteSourceEdge(edge: goLib.goMod.goNs.LayoutEdge): scala.Unit = js.native
 }
@@ -106,16 +109,16 @@ class LayoutVertex ()
 @js.native
 object LayoutVertex extends js.Object {
   /**
-          * This static function is used to compare the Part.text values of the .nodes of the argument LayoutVertexes.
-          * @param {LayoutVertex} m
-          * @param {LayoutVertex} n
-          */
+    * This static function is used to compare the Part.text values of the .nodes of the argument LayoutVertexes.
+    * @param {LayoutVertex} m
+    * @param {LayoutVertex} n
+    */
   def smartComparer(m: goLib.goMod.goNs.LayoutVertex, n: goLib.goMod.goNs.LayoutVertex): scala.Double = js.native
   /**
-          * This static function is used to compare the Part.text values of the .nodes of the argument LayoutVertexes.
-          * @param {LayoutVertex} m
-          * @param {LayoutVertex} n
-          */
+    * This static function is used to compare the Part.text values of the .nodes of the argument LayoutVertexes.
+    * @param {LayoutVertex} m
+    * @param {LayoutVertex} n
+    */
   def standardComparer(m: goLib.goMod.goNs.LayoutVertex, n: goLib.goMod.goNs.LayoutVertex): scala.Double = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ExtraDescription extends js.Object {
   /** Name of the source. */
   var description: js.UndefOr[java.lang.String] = js.undefined

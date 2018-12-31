@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SSHBuffer extends js.Object {
   def atEnd(): scala.Boolean
   def expand(): scala.Unit

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BrowserPlatformDetails extends js.Object {
   var args: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var command: js.UndefOr[java.lang.String] = js.undefined

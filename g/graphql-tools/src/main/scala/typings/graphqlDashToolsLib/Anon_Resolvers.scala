@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Resolvers extends js.Object {
   var inheritResolversFromInterfaces: js.UndefOr[scala.Boolean] = js.undefined
   var onTypeConflict: js.UndefOr[graphqlDashToolsLib.distStitchingMergeSchemasMod.OnTypeConflict] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JobStatistics extends js.Object {
   /** [Output-only] Creation time of this job, in milliseconds since the epoch. This field will be present on all jobs. */
   var creationTime: js.UndefOr[java.lang.String] = js.undefined
@@ -18,9 +17,9 @@ trait JobStatistics extends js.Object {
   /** [Output-only] Statistics for a query job. */
   var query: js.UndefOr[JobStatistics2] = js.undefined
   /**
-               * [Output-only] Start time of this job, in milliseconds since the epoch. This field will be present when the job transitions from the PENDING state to
-               * either RUNNING or DONE.
-               */
+    * [Output-only] Start time of this job, in milliseconds since the epoch. This field will be present when the job transitions from the PENDING state to
+    * either RUNNING or DONE.
+    */
   var startTime: js.UndefOr[java.lang.String] = js.undefined
   /** [Output-only] [Deprecated] Use the bytes processed in the query statistics instead. */
   var totalBytesProcessed: js.UndefOr[java.lang.String] = js.undefined

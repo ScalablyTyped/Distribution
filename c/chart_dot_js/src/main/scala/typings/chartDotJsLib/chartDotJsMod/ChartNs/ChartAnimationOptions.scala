@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartAnimationOptions extends js.Object {
   var animateRotate: js.UndefOr[scala.Boolean] = js.undefined
   var animateScale: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompileOptions extends js.Object {
   var assumeObjects: js.UndefOr[scala.Boolean] = js.undefined
   var compat: js.UndefOr[scala.Boolean] = js.undefined

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("google-protobuf/google/protobuf/struct_pb", "Value")
 @js.native
 object ValueNs extends js.Object {
-  
   trait AsObject extends js.Object {
     var boolValue: scala.Boolean
     var listValue: js.UndefOr[googleDashProtobufLib.googleProtobufStructUnderscorePbMod.ListValueNs.AsObject] = js.undefined

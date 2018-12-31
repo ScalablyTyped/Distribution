@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGeolocationControlParameters extends IButtonParameters {
   @JSName("data")
   var data_IGeolocationControlParameters: js.UndefOr[yandexDashMapsLib.Anon_Title] = js.undefined

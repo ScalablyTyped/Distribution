@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AircraftData extends js.Object {
   /** The aircraft code. For example, for a Boeing 777 the code would be 777. */
   var code: js.UndefOr[java.lang.String] = js.undefined

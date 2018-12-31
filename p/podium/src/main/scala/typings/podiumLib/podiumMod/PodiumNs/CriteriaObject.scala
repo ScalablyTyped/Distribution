@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CriteriaObject extends js.Object {
   /** if true, the listener method receives an additional callback argument which must be called when the method completes. No other event will be emitted until the callback methods is called. The method signature is function(). If block is set to a positive integer, the value is used to set a timeout after which any pending events will be emitted, ignoring the eventual call to callback. Defaults to false (non blocking). */
   var block: js.UndefOr[scala.Boolean | scala.Double] = js.undefined
@@ -17,11 +16,11 @@ trait CriteriaObject extends js.Object {
   /** a positive integer indicating the number of times the listener can be called after which the subscription is automatically removed. A count of 1 is the same as calling podium.once(). Defaults to no limit. */
   var count: js.UndefOr[scala.Double] = js.undefined
   /**
-           * the event tags (if present) to subscribe to which can be one of:
-           *  * a tag string.
-           *  * an array of tag strings.
-           *  * an object with the following:
-           */
+    * the event tags (if present) to subscribe to which can be one of:
+    *  * a tag string.
+    *  * an array of tag strings.
+    *  * an object with the following:
+    */
   var filter: js.UndefOr[java.lang.String | js.Array[java.lang.String] | CriteriaFilterOptionsObject] = js.undefined
   /** the handler method set to receive event updates. The function signature depends on the block, spread, and tags options. */
   var listener: js.UndefOr[Listener] = js.undefined

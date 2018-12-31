@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Yayson extends js.Object {
   var Adapter: Adapter
   var Presenter: org.scalablytyped.runtime.Instantiable0[Presenter]

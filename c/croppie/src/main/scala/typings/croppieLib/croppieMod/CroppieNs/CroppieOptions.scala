@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CroppieOptions extends js.Object {
   var boundary: js.UndefOr[croppieLib.Anon_Height] = js.undefined
   var customClass: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProgressInfo extends js.Object {
   var bytesPerSecond: scala.Double
   var delta: scala.Double

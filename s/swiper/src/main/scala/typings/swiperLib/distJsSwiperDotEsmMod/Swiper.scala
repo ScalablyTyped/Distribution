@@ -10,18 +10,12 @@ import scala.scalajs.js.annotation._
 class Swiper protected ()
   extends swiperLib.swiperMod.default {
   /**
-       * Constructs a new Swiper instance.
-       *
-       * @param container Where Swiper applies to.
-       * @param options   Instance options.
-       */
+    * Constructs a new Swiper instance.
+    *
+    * @param container Where Swiper applies to.
+    * @param options   Instance options.
+    */
   def this(container: swiperLib.swiperMod.SelectableElement) = this()
-  /**
-       * Constructs a new Swiper instance.
-       *
-       * @param container Where Swiper applies to.
-       * @param options   Instance options.
-       */
   def this(container: swiperLib.swiperMod.SelectableElement, options: swiperLib.swiperMod.SwiperOptions) = this()
 }
 
@@ -29,8 +23,8 @@ class Swiper protected ()
 @js.native
 object Swiper extends js.Object {
   /**
-       * Installs modules on Swiper in runtime.
-       */
+    * Installs modules on Swiper in runtime.
+    */
   def use(modules: js.Array[swiperLib.swiperMod.SwiperModule]): scala.Unit = js.native
 }
 

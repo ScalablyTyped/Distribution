@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IJsonValue extends js.Object {
   var valueType: JsonValueType
   def getArray(): JsonArray

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CollectionCreateOptions extends CommonOptions {
   var autoIndexId: js.UndefOr[scala.Boolean] = js.undefined
   var capped: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DecisionOptions extends js.Object {
   var cancelField: java.lang.String
   var sessionKey: java.lang.String

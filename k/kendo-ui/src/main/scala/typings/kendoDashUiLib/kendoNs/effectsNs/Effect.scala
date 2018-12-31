@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Effect extends js.Object {
   def add(effect: Effect): Effect
   def duration(value: scala.Double): Effect

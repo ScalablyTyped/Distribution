@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait HorizontalAlignment extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.1]
-     */
+  * [Api set: ExcelApi 1.1]
+  */
 @JSGlobal("Excel.HorizontalAlignment")
 @js.native
 object HorizontalAlignment extends js.Object {

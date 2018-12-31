@@ -15,15 +15,15 @@ class Application ()
 object Application extends js.Object {
   val crypto: xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.CryptoEx = js.native
   /**
-           * Gets the crypto module from the Application
-           */
+    * Gets the crypto module from the Application
+    */
   def isNodePlugin(): scala.Boolean = js.native
   /**
-           * Sets crypto engine for the current Application
-           * @param  {string} name
-           * @param  {Crypto} crypto
-           * @returns void
-           */
+    * Sets crypto engine for the current Application
+    * @param  {string} name
+    * @param  {Crypto} crypto
+    * @returns void
+    */
   def setEngine(name: java.lang.String, crypto: stdLib.Crypto): scala.Unit = js.native
 }
 

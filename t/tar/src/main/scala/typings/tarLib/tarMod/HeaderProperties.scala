@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HeaderProperties extends js.Object {
   var devmaj: js.UndefOr[scala.Double] = js.undefined
   var devmin: js.UndefOr[scala.Double] = js.undefined

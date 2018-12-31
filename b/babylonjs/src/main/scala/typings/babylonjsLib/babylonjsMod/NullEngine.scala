@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * The null engine class provides support for headless version of babylon.js.
-     * This can be used in server side scenario or for testing purposes
-     */
+  * The null engine class provides support for headless version of babylon.js.
+  * This can be used in server side scenario or for testing purposes
+  */
 @JSImport("babylonjs", "NullEngine")
 @js.native
 class NullEngine ()

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait User extends js.Object {
   var contributors_enabled: scala.Boolean
   var created_at: java.lang.String

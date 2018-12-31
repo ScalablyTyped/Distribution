@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Supporting evidence
-     */
-
+  * Supporting evidence
+  */
 trait ConditionEvidence extends BackboneElement {
   /**
-           * Manifestation/symptom
-           */
+    * Manifestation/symptom
+    */
   var code: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   /**
-           * Supporting information found elsewhere
-           */
+    * Supporting information found elsewhere
+    */
   var detail: js.UndefOr[js.Array[Reference]] = js.undefined
 }
 

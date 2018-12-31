@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait TextAlign extends js.Object
 
 /**
-       * Configuration options for text alignments.
-      */
+  * Configuration options for text alignments.
+  */
 @JSGlobal("sap.ui.core.TextAlign")
 @js.native
 object TextAlign extends js.Object {

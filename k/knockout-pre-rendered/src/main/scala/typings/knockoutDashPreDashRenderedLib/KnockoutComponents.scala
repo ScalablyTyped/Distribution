@@ -24,7 +24,6 @@ trait KnockoutComponents extends js.Object {
     componentName: java.lang.String,
     config: knockoutDashPreDashRenderedLib.KnockoutComponentTypesNs.Config
   ): scala.Unit = js.native
-  // overloads for register method:
   def register(
     componentName: java.lang.String,
     config: knockoutDashPreDashRenderedLib.KnockoutComponentTypesNs.EmptyConfig

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StatsRequestCount extends js.Object {
   var failed: scala.Double
   var refused: scala.Double

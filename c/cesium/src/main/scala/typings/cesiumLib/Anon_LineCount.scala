@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LineCount extends js.Object {
   var cellAlpha: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
   var color: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined

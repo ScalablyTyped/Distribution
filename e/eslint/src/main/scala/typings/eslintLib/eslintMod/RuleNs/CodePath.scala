@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CodePath extends js.Object {
   var childCodePaths: js.Array[CodePath]
   var currentSegments: js.Array[CodePathSegment]

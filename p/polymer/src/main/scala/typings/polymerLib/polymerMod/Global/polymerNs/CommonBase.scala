@@ -5,11 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommonBase extends js.Object {
   /* polymer-standard */
-  
-  
   // Annotations
   @JSName("$")
   var $: js.UndefOr[js.Any] = js.undefined
@@ -92,7 +89,7 @@ trait CommonBase extends js.Object {
   // Extends
   var `extends`: js.UndefOr[java.lang.String] = js.undefined
   // Constructors
-  var factoryImpl: js.UndefOr[js.Function1[/* repeated */js.Any, scala.Unit]] = js.undefined
+  var factoryImpl: js.UndefOr[js.Function1[/* repeated */ js.Any, scala.Unit]] = js.undefined
   var fire: js.UndefOr[
     js.Function3[
       /* type */ java.lang.String, 
@@ -114,7 +111,6 @@ trait CommonBase extends js.Object {
   var getNativePrototype: js.UndefOr[js.Function1[/* tag */ java.lang.String, js.Object]] = js.undefined
   var getPropertyInfo: js.UndefOr[js.Function1[/* property */ java.lang.String, js.Object]] = js.undefined
   /* polymer-micro */
-  
   // Attributes
   var hostAttributes: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var importHref: js.UndefOr[
@@ -157,14 +153,12 @@ trait CommonBase extends js.Object {
   var pop: js.UndefOr[js.Function1[/* path */ java.lang.String, _]] = js.undefined
   // Properties
   var properties: js.UndefOr[org.scalablytyped.runtime.StringDictionary[PropConstructorType | PropObjectType]] = js.undefined
-  var push: js.UndefOr[js.Function2[/* path */ java.lang.String, /* repeated */js.Any, scala.Double]] = js.undefined
+  var push: js.UndefOr[js.Function2[/* path */ java.lang.String, /* repeated */ js.Any, scala.Double]] = js.undefined
   /* polymer-mini */
-  
   // Ready
   var ready: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var reflectPropertiesToAttribute: js.UndefOr[js.Function1[/* name */ java.lang.String, scala.Unit]] = js.undefined
   /* common api */
-  
   var registerCallback: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var registered: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   // ResolveUrl
@@ -204,7 +198,7 @@ trait CommonBase extends js.Object {
       /* path */ java.lang.String, 
       /* index */ scala.Double, 
       /* removeCount */ scala.Double, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       scala.Double
     ]
   ] = js.undefined
@@ -241,7 +235,7 @@ trait CommonBase extends js.Object {
       scala.Unit
     ]
   ] = js.undefined
-  var unshift: js.UndefOr[js.Function2[/* path */ java.lang.String, /* repeated */js.Any, scala.Double]] = js.undefined
+  var unshift: js.UndefOr[js.Function2[/* path */ java.lang.String, /* repeated */ js.Any, scala.Double]] = js.undefined
   // XStyling
   var updateStyles: js.UndefOr[
     js.Function1[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Metrics extends js.Object {
   /** Number of documents in the page. */
   var Documents: scala.Double

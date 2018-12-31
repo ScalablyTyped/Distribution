@@ -16,20 +16,20 @@ class Slider protected () extends Widget {
   @JSName("model")
   var model_Slider: ejDotWebDotAllLib.ejNs.SliderNs.Model = js.native
   /** To disable the slider
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def disable(): scala.Unit = js.native
   /** To enable the slider
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def enable(): scala.Unit = js.native
   /** To get value from slider handle
-           * @returns {number}
-           */
+    * @returns {number}
+    */
   def getValue(): scala.Double = js.native
   /** To set value to slider handle.By default animation is false while set the value. If you want to enable the animation, pass the enableAnimation as true to this method.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def setValue(): scala.Unit = js.native
 }
 

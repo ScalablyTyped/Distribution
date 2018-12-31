@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QuotaServiceApplyOptions extends js.Object {
   var allow: scala.Double
   var identifier: java.lang.String

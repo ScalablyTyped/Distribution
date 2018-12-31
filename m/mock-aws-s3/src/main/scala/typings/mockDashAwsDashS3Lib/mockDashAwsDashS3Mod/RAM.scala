@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "RAM")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class RAM ()
   extends awsDashSdkLib.awsDashSdkMod.RAM {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsRamMod.RAMNs.ClientConfiguration) = this()
 }
 

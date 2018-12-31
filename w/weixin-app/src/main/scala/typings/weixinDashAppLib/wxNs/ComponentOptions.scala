@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
 	 * Component组件参数
 	 */
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Partial) */ 
-trait ComponentOptions[Instance /* <: Component[Data, Props] */, Data, Methods, Props] extends js.Object {
+- Lifted 1 members from Set(std.Partial<weixin-app.wx.Lifetimes>) */ trait ComponentOptions[Instance /* <: Component[Data, Props] */, Data, Methods, Props] extends js.Object {
   /**
   		 * 类似于mixins和traits的组件间代码复用机制
   		 * 参见 [behaviors](https://mp.weixin.qq.com/debug/wxadoc/dev/framework/custom-component/behaviors.html)

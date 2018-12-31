@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait NamedItemType extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
-     */
+  * [Api set: ExcelApi 1.1 for String,Integer,Double,Boolean,Range,Error; 1.7 for Array]
+  */
 @JSGlobal("Excel.NamedItemType")
 @js.native
 object NamedItemType extends js.Object {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JwtAuthOptions extends js.Object {
    // In milliseconds to handle the second round trip.
   var callback: js.UndefOr[scala.Boolean] = js.undefined

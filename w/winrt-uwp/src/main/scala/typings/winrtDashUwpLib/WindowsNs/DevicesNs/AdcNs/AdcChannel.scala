@@ -14,14 +14,14 @@ abstract class AdcChannel () extends js.Object {
   /** Closes the connection on this channel, making it available to be opened by others. */
   def close(): scala.Unit = js.native
   /**
-                   * Reads the value as a percentage of the max value possible for this controller.
-                   * @return The value as percentage of the max value.
-                   */
+    * Reads the value as a percentage of the max value possible for this controller.
+    * @return The value as percentage of the max value.
+    */
   def readRatio(): scala.Double = js.native
   /**
-                   * Reads the digital representation of the analog value from the ADC.
-                   * @return The digital value.
-                   */
+    * Reads the digital representation of the analog value from the ADC.
+    * @return The digital value.
+    */
   def readValue(): scala.Double = js.native
 }
 

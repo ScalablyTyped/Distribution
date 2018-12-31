@@ -17,12 +17,12 @@ class TreeMap protected ()
   @JSName("model")
   var model_TreeMap: ejDotWebDotAllLib.ejNs.Model = js.native
   /** Method to drilldown the treemap.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def drillDown(): scala.Unit = js.native
   /** Method to reload treemap with updated values.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def refresh(): scala.Unit = js.native
 }
 

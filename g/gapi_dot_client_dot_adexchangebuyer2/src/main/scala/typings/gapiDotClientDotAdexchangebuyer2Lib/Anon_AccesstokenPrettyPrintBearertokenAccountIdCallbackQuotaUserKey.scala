@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPrettyPrintBearertokenAccountIdCallbackQuotaUserKey extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -21,9 +20,9 @@ trait Anon_AccesstokenPrettyPrintBearertokenAccountIdCallbackQuotaUserKey extend
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Numerical account ID of the client buyer that the user invitation
-                   * to be retrieved is associated with. (required)
-                   */
+    * Numerical account ID of the client buyer that the user invitation
+    * to be retrieved is associated with. (required)
+    */
   var clientAccountId: java.lang.String
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined

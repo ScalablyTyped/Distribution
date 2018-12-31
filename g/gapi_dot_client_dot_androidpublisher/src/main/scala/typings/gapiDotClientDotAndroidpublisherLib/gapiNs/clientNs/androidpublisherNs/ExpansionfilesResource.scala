@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExpansionfilesResource extends js.Object {
   /** Fetches the Expansion File configuration for the APK specified. */
   def get(request: gapiDotClientDotAndroidpublisherLib.Anon_PrettyPrintPackageName): gapiDotClientLib.gapiNs.clientNs.Request[ExpansionFile]
   /**
-               * Updates the APK's Expansion File configuration to reference another APK's Expansion Files. To add a new Expansion File use the Upload method. This
-               * method supports patch semantics.
-               */
+    * Updates the APK's Expansion File configuration to reference another APK's Expansion Files. To add a new Expansion File use the Upload method. This
+    * method supports patch semantics.
+    */
   def patch(request: gapiDotClientDotAndroidpublisherLib.Anon_PrettyPrintPackageName): gapiDotClientLib.gapiNs.clientNs.Request[ExpansionFile]
   /** Updates the APK's Expansion File configuration to reference another APK's Expansion Files. To add a new Expansion File use the Upload method. */
   def update(request: gapiDotClientDotAndroidpublisherLib.Anon_PrettyPrintPackageName): gapiDotClientLib.gapiNs.clientNs.Request[ExpansionFile]

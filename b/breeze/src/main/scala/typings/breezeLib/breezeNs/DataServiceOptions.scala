@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataServiceOptions extends js.Object {
   var adapterName: js.UndefOr[java.lang.String] = js.undefined
   var hasServerMetadata: js.UndefOr[scala.Boolean] = js.undefined

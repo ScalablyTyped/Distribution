@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SuggestionSelectedEventData[TSuggestion] extends js.Object {
   var method: reactDashAutosuggestLib.reactDashAutosuggestLibStrings.click | reactDashAutosuggestLib.reactDashAutosuggestLibStrings.enter
   var sectionIndex: scala.Double | scala.Null

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISyntaxTriviaList extends js.Object {
   def collectTextElements(elements: js.Array[java.lang.String]): scala.Unit
   def concat(trivia: ISyntaxTriviaList): ISyntaxTriviaList

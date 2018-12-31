@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OfflineUnavailable extends js.Object {
   var available: scala.Double
   var offline: scala.Double

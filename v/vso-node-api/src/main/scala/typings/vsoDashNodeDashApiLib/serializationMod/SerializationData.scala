@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SerializationData extends js.Object {
   var requestTypeMetadata: js.UndefOr[ContractMetadata] = js.undefined
   var responseIsCollection: scala.Boolean

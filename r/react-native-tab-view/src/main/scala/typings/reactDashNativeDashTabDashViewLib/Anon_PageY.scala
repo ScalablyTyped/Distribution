@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PageY extends js.Object {
   var changedTouches: js.Array[_]
   var identifier: scala.Double

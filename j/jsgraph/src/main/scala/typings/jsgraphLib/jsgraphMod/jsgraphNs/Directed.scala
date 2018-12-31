@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Directed extends js.Object {
   var colors: colors
   var directedGraph: DirectedGraph

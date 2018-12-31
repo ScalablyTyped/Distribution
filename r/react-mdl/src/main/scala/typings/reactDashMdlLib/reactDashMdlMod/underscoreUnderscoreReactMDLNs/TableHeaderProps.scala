@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableHeaderProps
   extends reactLib.reactMod.ReactNs.ClassAttributes[js.Any]
      with MDLHTMLAttributes

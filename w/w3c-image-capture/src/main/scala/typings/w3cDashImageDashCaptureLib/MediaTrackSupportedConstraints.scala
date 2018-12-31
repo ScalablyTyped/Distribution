@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaTrackSupportedConstraints extends js.Object {
   var brightness: scala.Boolean
   var colorTemperature: scala.Boolean

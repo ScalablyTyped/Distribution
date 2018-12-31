@@ -125,7 +125,7 @@ object tileNs extends js.Object {
     		 * @param {string} layerId The MapDotNet map layer ID.
     		 * @returns {string} Either the CSS style string or the SQL expression,
     		 * according to how the layer's fill color was set.
-             */
+      */
     def getLayerFill(layerId: java.lang.String): java.lang.String = js.native
     /**
     		 * Gets a layer's outline color and thickness.
@@ -213,17 +213,17 @@ object tileNs extends js.Object {
     /**
     		 * Sets a layer's fill color.
     		 * @param {string} layerId The MapDotNet map layer ID.
-             * @param {number} a Alpha level.
-             * @param {number} r Red level.
-             * @param {number} g Green level.
-             * @param {number} b Blue level.
+      * @param {number} a Alpha level.
+      * @param {number} r Red level.
+      * @param {number} g Green level.
+      * @param {number} b Blue level.
     		 */
     def setLayerFill(layerId: java.lang.String, a: scala.Double, r: scala.Double, g: scala.Double, b: scala.Double): scala.Unit = js.native
     /**
     		 * Sets a layer's fill color as a SQL expression.
     		 * @param {string} layerId The MapDotNet map layer ID.
-             * @param {string} exp The SQL expression to select a row's fill color.
-             */
+      * @param {string} exp The SQL expression to select a row's fill color.
+      */
     def setLayerFillAsExpression(layerId: java.lang.String, exp: java.lang.String): scala.Unit = js.native
     /**
     		 * Sets a layer's outline color and thickness.
@@ -252,10 +252,10 @@ object tileNs extends js.Object {
     		 * Add or replace the where clause for a layer. The where clause
     		 * is a SQL expression used to filter rows.
     		 * @param {string} layerId The MapDotNet map layer ID.
-             * @param {string} where The desired SQL where expression.
-             * @param {boolean} [merge] Whether to merge the new where clause
-             * with the existing where clause using a SQL AND or to replace
-             * the existing where clause with the new one. Defaults to true (merge).
+      * @param {string} where The desired SQL where expression.
+      * @param {boolean} [merge] Whether to merge the new where clause
+      * with the existing where clause using a SQL AND or to replace
+      * the existing where clause with the new one. Defaults to true (merge).
     		 */
     def setLayerWhere(layerId: java.lang.String, where: java.lang.String, merge: scala.Boolean): scala.Unit = js.native
     /**
@@ -331,8 +331,8 @@ object tileNs extends js.Object {
     		 */
     def compose(extentsMapUnits: mapsjsLib.mapsjsMod.envelope, extentsDeviceUnits: mapsjsLib.mapsjsMod.envelope): mapsjsLib.Anon_IdxMinX = js.native
     /**
-            * Unbind all associations with this tile layer to facilitate garbage collection
-            */
+      * Unbind all associations with this tile layer to facilitate garbage collection
+      */
     def dispose(): scala.Unit = js.native
     /**
     		 * Returns the tile layer's descriptor, which describes how 
@@ -488,15 +488,8 @@ object tileNs extends js.Object {
     		 * @param {tile.requestor} req A requestor object.
     		 * @param {tile.requestor} [desc] Descriptor object so that both
     		 * can be set in one call and incur only one content change event.
-             */			 
+      */			 
     def setRequestor(req: requestor): scala.Unit = js.native
-    /**
-    		 * Sets this tile layer's requestor, which defines what kind of
-    		 * content to get and where to get it.
-    		 * @param {tile.requestor} req A requestor object.
-    		 * @param {tile.requestor} [desc] Descriptor object so that both
-    		 * can be set in one call and incur only one content change event.
-             */			 
     def setRequestor(req: requestor, desc: js.Any): scala.Unit = js.native
     /**
     		 * Sets whether or not to retain and display previous level tile 
@@ -540,34 +533,34 @@ object tileNs extends js.Object {
   @js.native
   class quad () extends js.Object {
     /** 
-             * Compares this quad tile with another quad tile and determines
-             * whether or not they are equal.
-             * @param {quad} Quad tile with which to check for equality with this quad tile.
-             * @returns {boolean} Result of the equality test.
-             */
+      * Compares this quad tile with another quad tile and determines
+      * whether or not they are equal.
+      * @param {quad} Quad tile with which to check for equality with this quad tile.
+      * @returns {boolean} Result of the equality test.
+      */
     def equals(q: quad): scala.Boolean = js.native
     /**
-             * Generates the quad tile which is a given number of levels above
-             * this tile in the pyramid and in which this quad tile is contained.
-             * @param {number} ancestorsBack Number of levels above this tile the
-             * generated tile should be.
-             * @returns {quad} The generated parent tile.
-             */
+      * Generates the quad tile which is a given number of levels above
+      * this tile in the pyramid and in which this quad tile is contained.
+      * @param {number} ancestorsBack Number of levels above this tile the
+      * generated tile should be.
+      * @returns {quad} The generated parent tile.
+      */
     def factoryParent(ancestorsBack: scala.Double): quad = js.native
     /**
-             * Gets the envelope in map units which encompasses this quad tile.
-             * @returns {envelope} The encompassing envelope of this quad tile.
-             */
+      * Gets the envelope in map units which encompasses this quad tile.
+      * @returns {envelope} The encompassing envelope of this quad tile.
+      */
     def getEnvelope(): mapsjsLib.mapsjsMod.envelope = js.native
     /**
-             * Gets the quad key for this quad tile as a string.
-             * @returns {string} Quad key for this quad tile as a string.
-             */
+      * Gets the quad key for this quad tile as a string.
+      * @returns {string} Quad key for this quad tile as a string.
+      */
     def getKey(): java.lang.String = js.native
     /**
-             * Gets the z coordinate of this quad tile, or depth.
-             * @returns {number} The z coordinate of this quad tile.
-             */
+      * Gets the z coordinate of this quad tile, or depth.
+      * @returns {number} The z coordinate of this quad tile.
+      */
     def getLevel(): scala.Double = js.native
     /**
     		 * Gets the x coodinate of this quad tile.
@@ -575,9 +568,9 @@ object tileNs extends js.Object {
     		 */
     def getX(): scala.Double = js.native
     /** 
-             * Gets the y coordinate of this quad tile.
-             * @returns {number} The y coordinate of this quad tile.
-         	 */
+      * Gets the y coordinate of this quad tile.
+      * @returns {number} The y coordinate of this quad tile.
+      	 */
     def getY(): scala.Double = js.native
   }
   
@@ -643,11 +636,6 @@ object tileNs extends js.Object {
     		 * changes, the density changes.
     		 */
     def notifyRecompute(): scala.Unit = js.native
-    /**
-    		 * Tells renderer to re-render density map and recompute ranges. 
-    		 * This should be called if the data changes or if, due to extent
-    		 * changes, the density changes.
-    		 */
     def notifyRecompute(extents: mapsjsLib.mapsjsMod.envelope): scala.Unit = js.native
     /**
     		 * Sets the bleed ratio, which is the sets the percentage of the
@@ -862,10 +850,10 @@ object tileNs extends js.Object {
     def this(options: mapsjsLib.Anon_DataFormatTimeoutMs) = this()
     /** 
     		 * Returns your source data parsed into theformat { Shapes: [],
-             * Values: [], Bounds: [] } This may be useful for doing client-side 
-             * queries on the local data where all of the WKT has been parsed 
-             * into points and geometry. There is also a bounds collection to 
-             * do a quick spatial check for complex polygons.
+      * Values: [], Bounds: [] } This may be useful for doing client-side 
+      * queries on the local data where all of the WKT has been parsed 
+      * into points and geometry. There is also a bounds collection to 
+      * do a quick spatial check for complex polygons.
     		 * @returns {object} Parsed data object in the form {Shapes, Values, Bounds}.
     		 */
     def getParsedData(): mapsjsLib.Anon_Shapes = js.native

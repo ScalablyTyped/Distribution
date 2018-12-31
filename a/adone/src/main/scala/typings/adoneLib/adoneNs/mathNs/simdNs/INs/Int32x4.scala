@@ -6,17 +6,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * 128-bits divided into 4 lanes storing 32-bit signed integer values.
-             */
+  * 128-bits divided into 4 lanes storing 32-bit signed integer values.
+  */
 @js.native
+/**
+  * SIMD.Int32x4 constructor
+  * @param s0 A 32bit int specifying the value of the lane.
+  * @param s1 A 32bit int specifying the value of the lane.
+  * @param s2 A 32bit int specifying the value of the lane.
+  * @param s3 A 32bit int specifying the value of the lane.
+  * @return SIMD.Int32x4 object
+  */
 trait Int32x4 extends js.Object {
   @JSName("constructor")
   var constructor_Original: Int32x4Constructor = js.native
   @JSName(org.scalablytyped.runtime.Symbol.toPrimitive)
   var toPrimitive: (js.Function1[adoneLib.adoneLibStrings.string, java.lang.String]) with (js.Function1[adoneLib.adoneLibStrings.number, scala.Double]) with (js.Function1[adoneLib.adoneLibStrings.default, Int32x4]) with (js.Function1[/* hint */ java.lang.String, _]) = js.native
   /**
-                   * The initial value of the @@toStringTag property is the String value "SIMD.Int32x4".
-                   */
+    * The initial value of the @@toStringTag property is the String value "SIMD.Int32x4".
+    */
   @JSName(org.scalablytyped.runtime.Symbol.toStringTag)
   var toStringTag: java.lang.String = js.native
 }

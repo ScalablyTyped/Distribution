@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Project extends js.Object {
   /** Metadata key/value pairs available to all instances contained in this project. See Custom metadata for more information. */
   var commonInstanceMetadata: js.UndefOr[Metadata] = js.undefined
@@ -18,9 +17,9 @@ trait Project extends js.Object {
   /** Restricted features enabled for use on this project. */
   var enabledFeatures: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-               * [Output Only] The unique identifier for the resource. This identifier is defined by the server. This is not the project ID, and is just a unique ID
-               * used by Compute Engine to identify resources.
-               */
+    * [Output Only] The unique identifier for the resource. This identifier is defined by the server. This is not the project ID, and is just a unique ID
+    * used by Compute Engine to identify resources.
+    */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /** [Output Only] Type of the resource. Always compute#project for projects. */
   var kind: js.UndefOr[java.lang.String] = js.undefined

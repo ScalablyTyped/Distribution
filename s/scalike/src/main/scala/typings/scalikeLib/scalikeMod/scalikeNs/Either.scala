@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Either[A, B] extends js.Object {
   var isLeft: scala.Boolean
   var isRight: scala.Boolean

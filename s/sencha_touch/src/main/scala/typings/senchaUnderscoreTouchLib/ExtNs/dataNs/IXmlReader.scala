@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IXmlReader
   extends senchaUnderscoreTouchLib.ExtNs.dataNs.readerNs.IReader {
   /** [Method] Normalizes the data object

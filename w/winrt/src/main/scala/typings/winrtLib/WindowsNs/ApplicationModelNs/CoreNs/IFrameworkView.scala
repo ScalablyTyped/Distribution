@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFrameworkView extends js.Object {
   def initialize(applicationView: CoreApplicationView): scala.Unit
   def load(entryPoint: java.lang.String): scala.Unit

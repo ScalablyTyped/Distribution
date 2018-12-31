@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DecorationOptions extends SharedDecorationOptions {
   /** The name of the gutter we're decorating, if type is "gutter". */
   var gutterName: js.UndefOr[java.lang.String] = js.undefined

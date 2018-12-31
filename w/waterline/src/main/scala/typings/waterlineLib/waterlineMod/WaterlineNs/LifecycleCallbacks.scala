@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LifecycleCallbacks extends js.Object {
   var afterCreate: js.UndefOr[
     js.Array[waterlineLib.Anon_NewlyCreatedRecord] | waterlineLib.Anon_NewlyCreatedRecord

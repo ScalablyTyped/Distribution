@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FullHistory extends js.Object {
   var firstParent: scala.Double
   var fullHistory: scala.Double

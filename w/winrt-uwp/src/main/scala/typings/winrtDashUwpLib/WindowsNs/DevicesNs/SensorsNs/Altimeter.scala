@@ -25,9 +25,9 @@ abstract class Altimeter () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[Altimeter, AltimeterReadingChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Gets the current reading for the altimeter.
-                   * @return The current alititude reading for this sensor.
-                   */
+    * Gets the current reading for the altimeter.
+    * @return The current alititude reading for this sensor.
+    */
   def getCurrentReading(): AltimeterReading = js.native
   /** Occurs each time the altimeter sensor reports a new value. */
   def onreadingchanged(ev: AltimeterReadingChangedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[Altimeter]): scala.Unit = js.native
@@ -44,9 +44,9 @@ abstract class Altimeter () extends js.Object {
 @js.native
 object Altimeter extends js.Object {
   /**
-                   * Returns the default altimeter sensor.
-                   * @return The default altimeter.
-                   */
+    * Returns the default altimeter sensor.
+    * @return The default altimeter.
+    */
   def getDefault(): winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.Altimeter = js.native
 }
 

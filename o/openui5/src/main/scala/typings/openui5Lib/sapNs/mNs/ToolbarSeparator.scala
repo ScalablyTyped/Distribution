@@ -10,16 +10,11 @@ import scala.scalajs.js.annotation._
 class ToolbarSeparator protected ()
   extends openui5Lib.sapNs.uiNs.coreNs.Control {
   /**
-         * Constructor for a new ToolbarSeparator.
-         * @param sId id for the new control, generated automatically if no id is given
-         * @param mSettings initial settings for the new control
-        */
+    * Constructor for a new ToolbarSeparator.
+    * @param sId id for the new control, generated automatically if no id is given
+    * @param mSettings initial settings for the new control
+    */
   def this(sId: java.lang.String) = this()
-  /**
-         * Constructor for a new ToolbarSeparator.
-         * @param sId id for the new control, generated automatically if no id is given
-         * @param mSettings initial settings for the new control
-        */
   def this(sId: java.lang.String, mSettings: js.Any) = this()
 }
 

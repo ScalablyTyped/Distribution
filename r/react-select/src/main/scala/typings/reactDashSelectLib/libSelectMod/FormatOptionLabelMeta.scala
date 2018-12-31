@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FormatOptionLabelMeta[OptionType] extends js.Object {
   var context: FormatOptionLabelContext
   var inputValue: java.lang.String

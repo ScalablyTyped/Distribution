@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Module extends js.Object {
   var exprContextCritical: js.UndefOr[scala.Boolean] = js.undefined
   var exprContextRecursive: js.UndefOr[scala.Boolean] = js.undefined

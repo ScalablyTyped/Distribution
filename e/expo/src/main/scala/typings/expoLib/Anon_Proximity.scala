@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Proximity extends js.Object {
   var coords: js.UndefOr[Anon_Latitude] = js.undefined
   var proximity: js.UndefOr[java.lang.String] = js.undefined

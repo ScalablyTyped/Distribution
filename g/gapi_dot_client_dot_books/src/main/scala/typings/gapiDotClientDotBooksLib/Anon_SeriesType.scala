@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SeriesType extends js.Object {
   var bannerImageUrl: js.UndefOr[java.lang.String] = js.undefined
   var imageUrl: js.UndefOr[java.lang.String] = js.undefined

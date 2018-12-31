@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestDetails extends js.Object {
   var body: nodeLib.Buffer | scala.Null
   var endpoint: java.lang.String

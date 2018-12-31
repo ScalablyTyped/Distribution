@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDialogPropTypes extends js.Object {
   var afterClose: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var animation: js.UndefOr[js.Any] = js.undefined

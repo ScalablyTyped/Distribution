@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Point extends js.Object {
   /** The coordinates that define the point. */
   var coordinates: js.UndefOr[js.Array[scala.Double]] = js.undefined

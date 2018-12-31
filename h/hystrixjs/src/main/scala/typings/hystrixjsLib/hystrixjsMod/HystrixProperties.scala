@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HystrixProperties extends js.Object {
   var `hystrix.circuit.errorThresholdPercentage`: js.UndefOr[scala.Double] = js.undefined
   var `hystrix.circuit.sleepWindowInMilliseconds`: js.UndefOr[scala.Double] = js.undefined

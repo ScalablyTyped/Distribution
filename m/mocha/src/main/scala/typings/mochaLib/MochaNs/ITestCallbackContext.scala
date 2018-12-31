@@ -15,7 +15,6 @@ trait ITestCallbackContext
   def skip(): this.type = js.native
   /** @deprecated `.slow()` has additional overloads in `Mocha.Context`. */
   def slow(ms: scala.Double): this.type = js.native
-  /** @deprecated `.timeout()` has additional overloads in `Mocha.Context`. */
   def timeout(ms: java.lang.String): this.type = js.native
   /** @deprecated `.timeout()` has additional overloads in `Mocha.Context`. */
   def timeout(ms: scala.Double): this.type = js.native

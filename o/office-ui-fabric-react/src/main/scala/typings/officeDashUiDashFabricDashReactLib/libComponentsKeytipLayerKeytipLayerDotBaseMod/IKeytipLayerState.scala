@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IKeytipLayerState extends js.Object {
   var inKeytipMode: scala.Boolean
   var keytips: js.Array[

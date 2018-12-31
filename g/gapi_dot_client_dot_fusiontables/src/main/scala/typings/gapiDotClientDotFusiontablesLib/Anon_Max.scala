@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Max extends js.Object {
   /** Array with two or more colors. */
   var colors: js.UndefOr[js.Array[Anon_Opacity]] = js.undefined

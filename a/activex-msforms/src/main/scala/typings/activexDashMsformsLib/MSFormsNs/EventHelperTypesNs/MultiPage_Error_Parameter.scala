@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MultiPage_Error_Parameter extends js.Object {
   val CancelDisplay: activexDashMsformsLib.MSFormsNs.ReturnBoolean
   val Description: activexDashMsformsLib.MSFormsNs.ReturnString

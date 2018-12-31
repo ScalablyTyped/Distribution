@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IContactLocationField extends IContactField {
   var city: java.lang.String
   var country: java.lang.String

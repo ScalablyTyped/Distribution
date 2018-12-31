@@ -9,16 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object mochaDashEachModMembers extends js.Object {
   /**
-   * This function takes an array collections of parameters to be used in
-   * a series of mocha tests, defined using the `it` notation common to
-   * Mocha.
-   */
+    * This function takes an array collections of parameters to be used in
+    * a series of mocha tests, defined using the `it` notation common to
+    * Mocha.
+    */
   def apply(parameters: js.Array[_]): mochaDashEachLib.Anon_It = js.native
-  /**
-   * This function takes an array collections of parameters to be used in
-   * a series of mocha tests, defined using the `it` notation common to
-   * Mocha.
-   */
   def apply(parameters: js.Array[_], defaultIt: mochaLib.MochaNs.ITestDefinition): mochaDashEachLib.Anon_It = js.native
 }
 

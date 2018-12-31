@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IntlConfig extends js.Object {
   var defaultFormats: reactLib.reactMod.ReactNs.Requireable[_]
   var defaultLocale: reactLib.reactMod.ReactNs.Requireable[_]

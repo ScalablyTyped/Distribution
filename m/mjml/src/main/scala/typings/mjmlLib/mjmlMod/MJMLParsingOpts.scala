@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MJMLParsingOpts extends js.Object {
   var beautify: js.UndefOr[scala.Boolean] = js.undefined
   var filePath: js.UndefOr[java.lang.String] = js.undefined

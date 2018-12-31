@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashAddonsDashTransitionDashGroupLib {
-  type ReactTransitionGroup = js.Any
+  type ReactTransitionGroup = /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ComponentClass<TransitionGroupProps> */ js.Any
 }

@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 trait FpReturnBase[PathT] extends js.Object {
   def apply(funcs: js.Array[js.Function1[/* a */ _, _]]): js.Any = js.native
   /**
-       * Execute a series of functions on the data at a given path.
-       * Result of previous function is the input of the next one.
-       * Returns the result of the last function.
-       */
+    * Execute a series of functions on the data at a given path.
+    * Result of previous function is the input of the next one.
+    * Returns the result of the last function.
+    */
   def apply[R1](f1: js.Function1[/* a1 */ PathT, R1]): R1 = js.native
   // <R1>(f1: [(a1: PathT) => R1]): R1;
   def apply[R1, R2](f1: js.Tuple2[js.Function1[/* a1 */ PathT, R1], js.Function1[/* a */ R1, R2]]): R2 = js.native

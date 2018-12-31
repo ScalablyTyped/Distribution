@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-       * Tracks changes in chunks from oroginal to new.
-       */
-
+  * Tracks changes in chunks from oroginal to new.
+  */
 trait MergeViewDiffChunk extends js.Object {
   var editFrom: scala.Double
   var editTo: scala.Double

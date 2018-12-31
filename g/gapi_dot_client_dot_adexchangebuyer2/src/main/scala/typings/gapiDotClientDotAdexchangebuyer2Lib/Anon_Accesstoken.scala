@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Accesstoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -13,9 +12,9 @@ trait Anon_Accesstoken extends js.Object {
   /** OAuth access token. */
   var access_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Unique numerical account ID for the buyer of which the client buyer
-                   * is a customer; the sponsor buyer to create a client for. (required)
-                   */
+    * Unique numerical account ID for the buyer of which the client buyer
+    * is a customer; the sponsor buyer to create a client for. (required)
+    */
   var accountId: java.lang.String
   /** Data format for response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined

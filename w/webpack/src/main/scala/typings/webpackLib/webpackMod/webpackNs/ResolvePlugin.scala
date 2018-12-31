@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResolvePlugin
   extends tapableLib.tapableMod.TapableNs.Plugin {
   @JSName("apply")

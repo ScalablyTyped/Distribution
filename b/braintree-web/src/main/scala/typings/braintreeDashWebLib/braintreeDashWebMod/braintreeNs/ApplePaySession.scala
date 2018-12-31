@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ApplePaySession extends js.Object {
   def abort(): scala.Unit
   def begin(): scala.Unit

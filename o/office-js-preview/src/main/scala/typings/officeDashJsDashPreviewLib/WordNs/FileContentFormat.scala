@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait FileContentFormat extends js.Object
 
 /**
-     * [Api set: WordApi]
-     */
+  * [Api set: WordApi]
+  */
 @JSGlobal("Word.FileContentFormat")
 @js.native
 object FileContentFormat extends js.Object {

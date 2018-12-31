@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Reporter extends js.Object {
   def log(str: java.lang.String): scala.Unit
   def reportRunnerResults(runner: Runner): scala.Unit

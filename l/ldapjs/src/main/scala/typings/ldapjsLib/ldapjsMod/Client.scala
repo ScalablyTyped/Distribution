@@ -85,17 +85,6 @@ trait Client
   	 * @param {Object} err (Optional) error that was cause of client destruction
   	 */
   def destroy(): scala.Unit = js.native
-  /**
-  	 * Disconnect from the LDAP server and do not allow reconnection.
-  	 *
-  	 * If the client is instantiated with proper reconnection options, it's
-  	 * possible to initiate new requests after a call to unbind since the client
-  	 * will attempt to reconnect in order to fulfill the request.
-  	 *
-  	 * Calling destroy will prevent any further reconnection from occurring.
-  	 *
-  	 * @param {Object} err (Optional) error that was cause of client destruction
-  	 */
   def destroy(err: js.Any): scala.Unit = js.native
   /**
   	 * Performs an extended operation on the LDAP server.
@@ -118,15 +107,6 @@ trait Client
     callback: ExopCallback
   ): scala.Unit = js.native
   def exop(name: java.lang.String, value: java.lang.String, controls: Control, callback: ExopCallback): scala.Unit = js.native
-  /**
-  	 * Performs an LDAP modify against the server.
-  	 *
-  	 * @param name the DN of the entry to modify.
-  	 * @param change update to perform (can be [Change]).
-  	 * @param controls (optional) either a Control or [Control].
-  	 * @param callback of the form f(err, res).
-  	 * @throws {TypeError} on invalid input.
-  	 */
   def modify(name: java.lang.String, change: js.Array[Change], callback: ErrorCallback): scala.Unit = js.native
   def modify(
     name: java.lang.String,
@@ -211,9 +191,6 @@ trait Client
     callback: SearchCallBack,
     _bypass: scala.Boolean
   ): scala.Unit = js.native
-  /**
-  	 * Attempt to secure connection with StartTLS.
-  	 */
   def starttls(options: js.Object, controls: js.Array[Control], callback: CallBack): scala.Unit = js.native
   def starttls(options: js.Object, controls: js.Array[Control], callback: CallBack, _bypass: scala.Boolean): scala.Unit = js.native
   /**
@@ -231,15 +208,6 @@ trait Client
   	 * @throws {TypeError} if you pass in callback as not a function.
   	 */
   def unbind(): scala.Unit = js.native
-  /**
-  	 * Unbinds this client from the LDAP server.
-  	 *
-  	 * Note that unbind does not have a response, so this callback is actually
-  	 * optional; either way, the client is disconnected.
-  	 *
-  	 * @param {Function} callback of the form f(err).
-  	 * @throws {TypeError} if you pass in callback as not a function.
-  	 */
   def unbind(callback: ErrorCallback): scala.Unit = js.native
 }
 

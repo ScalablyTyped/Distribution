@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ArtifactInstanceData extends js.Object {
   var accountName: java.lang.String
   var authenticationToken: java.lang.String

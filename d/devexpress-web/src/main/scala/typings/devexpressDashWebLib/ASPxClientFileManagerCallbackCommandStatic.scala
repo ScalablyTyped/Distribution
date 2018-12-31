@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ASPxClientFileManagerCallbackCommandStatic extends js.Object {
   var ChangeFolder: java.lang.String
   var ChangeFolderInTreeView: java.lang.String

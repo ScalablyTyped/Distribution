@@ -57,7 +57,7 @@ class Casper protected () extends js.Object {
   def eachThen(array: js.Array[_], `then`: FunctionThen): Casper = js.native
   def echo(message: java.lang.String): Casper = js.native
   def echo(message: java.lang.String, style: java.lang.String): Casper = js.native
-  def evaluate[T](fn: js.Function1[/* repeated */js.Any, T], args: js.Any*): T = js.native
+  def evaluate[T](fn: js.Function1[/* repeated */ js.Any, T], args: js.Any*): T = js.native
   def evaluateOrDie(fn: js.Function0[_]): Casper = js.native
   def evaluateOrDie(fn: js.Function0[_], message: java.lang.String): Casper = js.native
   def evaluateOrDie(fn: js.Function0[_], message: java.lang.String, status: scala.Double): Casper = js.native

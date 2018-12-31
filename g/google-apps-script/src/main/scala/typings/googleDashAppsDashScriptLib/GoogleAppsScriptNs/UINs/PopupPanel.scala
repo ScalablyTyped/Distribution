@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PopupPanel extends js.Object {
   def add(widget: Widget): PopupPanel
   def addAutoHidePartner(partner: Component): PopupPanel

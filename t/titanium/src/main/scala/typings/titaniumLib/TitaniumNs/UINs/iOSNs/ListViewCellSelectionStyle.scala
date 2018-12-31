@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 			 * ListItem, which is set in the `properties` dictionary of either the <ListDataItem> or
 			 * <ItemTemplate>.
 			 */
-
 trait ListViewCellSelectionStyle
   extends titaniumLib.TitaniumNs.Proxy {
   /**

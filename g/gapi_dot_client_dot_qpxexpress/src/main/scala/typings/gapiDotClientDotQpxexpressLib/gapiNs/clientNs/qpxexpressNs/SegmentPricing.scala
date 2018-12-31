@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SegmentPricing extends js.Object {
   /** A segment identifier unique within a single solution. It is used to refer to different parts of the same solution. */
   var fareId: js.UndefOr[java.lang.String] = js.undefined

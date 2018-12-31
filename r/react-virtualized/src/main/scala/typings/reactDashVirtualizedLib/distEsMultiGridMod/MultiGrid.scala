@@ -12,13 +12,11 @@ class MultiGrid ()
   def forceUpdateGrids(): scala.Unit = js.native
   /** See Grid#invalidateCellSizeAfterRender */
   def invalidateCellSizeAfterRender(): scala.Unit = js.native
-  /** See Grid#invalidateCellSizeAfterRender */
   def invalidateCellSizeAfterRender(params: stdLib.Partial[reactDashVirtualizedLib.distEsCellMeasurerMod.CellPosition]): scala.Unit = js.native
   /** See Grid#measureAllCells */
   def measureAllCells(): scala.Unit = js.native
   /** See Grid#recomputeGridSize */
   def recomputeGridSize(): scala.Unit = js.native
-  /** See Grid#recomputeGridSize */
   def recomputeGridSize(params: reactDashVirtualizedLib.Anon_ColumnIndex): scala.Unit = js.native
 }
 

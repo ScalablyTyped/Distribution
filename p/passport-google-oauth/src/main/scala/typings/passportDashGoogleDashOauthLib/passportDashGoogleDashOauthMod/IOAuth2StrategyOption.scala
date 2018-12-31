@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOAuth2StrategyOption extends js.Object {
   var accessType: js.UndefOr[java.lang.String] = js.undefined
   var approval_prompt: js.UndefOr[java.lang.String] = js.undefined

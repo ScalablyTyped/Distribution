@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EmailSubject extends js.Object {
   var answerCorrect: js.UndefOr[scala.Boolean] = js.undefined
   var autoConfirmUser: js.UndefOr[scala.Boolean] = js.undefined

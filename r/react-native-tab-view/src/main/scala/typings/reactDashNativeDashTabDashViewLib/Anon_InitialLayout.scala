@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_InitialLayout[T /* <: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.RouteBase */] extends js.Object {
   var canJumpToTab: js.UndefOr[js.Function1[/* route */ T, scala.Boolean]] = js.undefined
   var initialLayout: js.UndefOr[reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.Layout] = js.undefined
   var `lazy`: js.UndefOr[scala.Boolean] = js.undefined
   var navigationState: reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.NavigationState[T]
   var onIndexChange: js.Function1[/* index */ scala.Double, scala.Unit]
-  var onPositionChange: js.UndefOr[js.Function1[/* props */ Anon_Value, scala.Unit]] = js.undefined
+  var onPositionChange: js.UndefOr[js.Function1[/* props */ Anon_ValueNumber, scala.Unit]] = js.undefined
   var renderPager: js.UndefOr[
     js.Function1[
       /* props */ reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.SceneRendererProps[T] with reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.PagerProps, 

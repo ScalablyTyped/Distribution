@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimelineHiddenDateOption extends js.Object {
   var end: DateType
   var repeat: js.UndefOr[

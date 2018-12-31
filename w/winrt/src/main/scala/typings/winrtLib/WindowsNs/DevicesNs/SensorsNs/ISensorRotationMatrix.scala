@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISensorRotationMatrix extends js.Object {
   var m11: scala.Double
   var m12: scala.Double

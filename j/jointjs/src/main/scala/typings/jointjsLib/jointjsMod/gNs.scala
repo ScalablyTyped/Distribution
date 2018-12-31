@@ -155,6 +155,7 @@ object gNs extends js.Object {
   }
   
   @js.native
+   // getter
   class Path () extends js.Object {
     def this(curve: Curve) = this()
     def this(line: Line) = this()
@@ -233,18 +234,15 @@ object gNs extends js.Object {
     /* private */ def updateSubpathStartSegment(segment: Segment): scala.Unit = js.native
   }
   
-  
   trait PathT extends js.Object {
     var segmentIndex: scala.Double
     var value: scala.Double
   }
   
-  
   trait PlainPoint extends js.Object {
     var x: scala.Double
     var y: scala.Double
   }
-  
   
   trait PlainRect extends js.Object {
     var height: scala.Double
@@ -317,6 +315,7 @@ object gNs extends js.Object {
   }
   
   @js.native
+   // getter
   class Polyline () extends js.Object {
     def this(points: js.Array[Point]) = this()
     def this(svgString: java.lang.String) = this()
@@ -351,7 +350,6 @@ object gNs extends js.Object {
     def translate(tx: scala.Double): this.type = js.native
     def translate(tx: scala.Double, ty: scala.Double): this.type = js.native
   }
-  
   
   trait PrecisionOpt extends js.Object {
     var precision: js.UndefOr[scala.Double] = js.undefined
@@ -431,7 +429,6 @@ object gNs extends js.Object {
     def union(rect: PlainRect): Rect = js.native
   }
   
-  
   trait Scale extends js.Object {
     var sx: scala.Double
     var sy: scala.Double
@@ -480,15 +477,12 @@ object gNs extends js.Object {
     def translate(tx: scala.Double, ty: scala.Double): this.type = js.native
   }
   
-  
   trait SegmentSubdivisionsOpt extends PrecisionOpt {
     var segmentSubdivisions: js.UndefOr[js.Array[js.Array[Curve]]] = js.undefined
   }
   
-  
   trait SegmentTypes
     extends /* key */ org.scalablytyped.runtime.StringDictionary[Segment]
-  
   
   trait SubdivisionsOpt extends PrecisionOpt {
     var subdivisions: js.UndefOr[js.Array[Curve]] = js.undefined
@@ -538,7 +532,6 @@ object gNs extends js.Object {
   @JSName("bezier")
   @js.native
   object bezierNs extends js.Object {
-    
     trait IBezierCurve extends js.Object {
       var p0: jointjsLib.jointjsMod.gNs.Point
       var p1: jointjsLib.jointjsMod.gNs.Point

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EmailTemplate extends js.Object {
   /** Email body. */
   var body: js.UndefOr[java.lang.String] = js.undefined

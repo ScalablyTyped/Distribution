@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TasklistsResource extends js.Object {
   /** Deletes the authenticated user's specified task list. */
   def delete(request: gapiDotClientDotTasksLib.Anon_Tasklist): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

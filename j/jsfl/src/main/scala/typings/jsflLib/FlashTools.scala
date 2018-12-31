@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlashTools extends js.Object {
   var activeTool: js.Any
   var altIsDown: js.Any

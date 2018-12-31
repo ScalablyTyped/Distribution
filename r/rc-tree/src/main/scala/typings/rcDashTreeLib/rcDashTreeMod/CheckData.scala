@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CheckData extends js.Object {
   var checked: scala.Boolean
   var checkedNodes: js.Array[InternalTreeNode]

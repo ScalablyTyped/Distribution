@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GeoSearchProvided[THit] extends js.Object {
   /** the refinement currently applied */
   var currentRefinement: NESW

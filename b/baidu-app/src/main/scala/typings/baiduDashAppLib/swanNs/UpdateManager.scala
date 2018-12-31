@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 // #endregion
 // #region 更新
-
 trait UpdateManager extends js.Object {
   def applyUpdate(): scala.Unit
   def onCheckForUpdate(callback: js.Function1[/* res */ baiduDashAppLib.Anon_HasUpdate, scala.Unit]): scala.Unit

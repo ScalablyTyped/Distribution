@@ -7,20 +7,15 @@ import scala.scalajs.js.annotation._
 
 @JSImport("fabric/fabric-impl", "ActiveSelection")
 @js.native
+/**
+	 * Constructor
+	 * @param objects ActiveSelection objects
+	 * @param [options] Options object
+	 */
 class ActiveSelection ()
   extends Object
      with ICollection[Group] {
-  /**
-  	 * Constructor
-  	 * @param objects ActiveSelection objects
-  	 * @param [options] Options object
-  	 */
   def this(items: js.Array[Object]) = this()
-  /**
-  	 * Constructor
-  	 * @param objects ActiveSelection objects
-  	 * @param [options] Options object
-  	 */
   def this(items: js.Array[Object], options: IObjectOptions) = this()
   /**
   	 * Returns number representation of a collection complexity
@@ -29,10 +24,10 @@ class ActiveSelection ()
   /* InferMemberOverrides */
   override def complexity(): scala.Double = js.native
   /**
-       * Change te activeSelection to a normal group,
-       * High level function that automatically adds it to canvas as
-       * active object. no events fired.
-       */
+    * Change te activeSelection to a normal group,
+    * High level function that automatically adds it to canvas as
+    * active object. no events fired.
+    */
   def toGroup(): Group = js.native
 }
 

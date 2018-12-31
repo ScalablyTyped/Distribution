@@ -7,5 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("log4javascript", "NullLayout")
 @js.native
+/**
+	 * Constructor
+	 */
 class NullLayout () extends Layout
 

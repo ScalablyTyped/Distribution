@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default '.disabled'
-                   */
+    * @default '.disabled'
+    */
   var disabled: java.lang.String
   /**
-                   * @default 'form'
-                   */
+    * @default 'form'
+    */
   var form: java.lang.String
 }
 

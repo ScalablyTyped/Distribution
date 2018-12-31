@@ -31,12 +31,12 @@ class CamlQuery () extends ClientValueObject {
 @js.native
 object CamlQuery extends js.Object {
   /** This method creates a Collaborative Application Markup Language (CAML) string
-              that can be used to recursively get all of the folders in a list, including
-              the subfolders. */
+    that can be used to recursively get all of the folders in a list, including
+    the subfolders. */
   def createAllFoldersQuery(): sharepointLib.SPNs.CamlQuery = js.native
   /** This method creates a Collaborative Application Markup Language (CAML) string
-              that can be used to recursively get all of the items in a list, including
-              the items in the subfolders. */
+    that can be used to recursively get all of the items in a list, including
+    the items in the subfolders. */
   def createAllItemsQuery(): sharepointLib.SPNs.CamlQuery = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IsArticle extends js.Object {
   /** The tab's new attention state. */
   var attention: js.UndefOr[scala.Boolean] = js.undefined
@@ -14,9 +13,9 @@ trait Anon_IsArticle extends js.Object {
   /** True while the tab is not loaded with content. */
   var discarded: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * The tab's new favicon URL. This property is only present if the extension's manifest includes the `"tabs"`
-           * permission.
-           */
+    * The tab's new favicon URL. This property is only present if the extension's manifest includes the `"tabs"`
+    * permission.
+    */
   var favIconUrl: js.UndefOr[java.lang.String] = js.undefined
   /** The tab's new hidden state. */
   var hidden: js.UndefOr[scala.Boolean] = js.undefined
@@ -31,14 +30,14 @@ trait Anon_IsArticle extends js.Object {
   /** The status of the tab. Can be either _loading_ or _complete_. */
   var status: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * The title of the tab if it has changed. This property is only present if the extension's manifest includes
-           * the `"tabs"` permission.
-           */
+    * The title of the tab if it has changed. This property is only present if the extension's manifest includes
+    * the `"tabs"` permission.
+    */
   var title: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * The tab's URL if it has changed. This property is only present if the extension's manifest includes the
-           * `"tabs"` permission.
-           */
+    * The tab's URL if it has changed. This property is only present if the extension's manifest includes the
+    * `"tabs"` permission.
+    */
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Response extends js.Object {
   var card: js.UndefOr[Card] = js.undefined
   var directives: js.UndefOr[js.Any] = js.undefined

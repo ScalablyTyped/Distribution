@@ -12,14 +12,14 @@ abstract class MessageWebSocketMessageReceivedEventArgs () extends js.Object {
   /** Gets the type of the message received by a MessageWebSocket object. */
   var messageType: SocketMessageType = js.native
   /**
-                   * Gets a DataReader object to read incoming data received from the remote network destination on a MessageWebSocket .
-                   * @return A DataReader object to read incoming data received from the remote network destination on a MessageWebSocket .
-                   */
+    * Gets a DataReader object to read incoming data received from the remote network destination on a MessageWebSocket .
+    * @return A DataReader object to read incoming data received from the remote network destination on a MessageWebSocket .
+    */
   def getDataReader(): winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.DataReader = js.native
   /**
-                   * Gets an IInputStream object (a message represented as a sequential stream of bytes) from the remote network destination on a MessageWebSocket object.
-                   * @return A message represented as a sequential stream of bytes.
-                   */
+    * Gets an IInputStream object (a message represented as a sequential stream of bytes) from the remote network destination on a MessageWebSocket object.
+    * @return A message represented as a sequential stream of bytes.
+    */
   def getDataStream(): winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IInputStream = js.native
 }
 

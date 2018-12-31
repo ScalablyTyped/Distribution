@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TranslateMarkerOptions
   extends BaseOptions[js.Any, js.Any] {
   	// 动画持续时长，默认值1000ms，平移与旋转分别计算。

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAbstractManager extends IBase {
   /** [Property] (Ext.util.HashMap) */
   var all: js.UndefOr[senchaUnderscoreTouchLib.ExtNs.utilNs.IHashMap] = js.undefined

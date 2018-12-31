@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(typescriptLib.typescriptMod.tsNs.Declaration because Would inherit conflicting mutable fields List(pos, end, parent, flags, decorators, modifiers, kind))*/
+/* RemoveMultipleInheritance: Dropped parents List(typescriptLib.typescriptMod.tsNs.Declaration because Would inherit conflicting mutable fields List(decorators, end, flags, kind, modifiers, parent, pos))*/
 @js.native
 trait JSDocPropertyLikeTag extends JSDocTag {
   var isBracketed: scala.Boolean = js.native

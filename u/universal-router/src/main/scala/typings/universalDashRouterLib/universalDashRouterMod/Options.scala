@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options[C /* <: Context */, R] extends js.Object {
   var baseUrl: js.UndefOr[java.lang.String] = js.undefined
   var context: js.UndefOr[C] = js.undefined

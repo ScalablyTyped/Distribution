@@ -19,19 +19,11 @@ class XMLMapping protected () extends js.Object {
   val XPath: java.lang.String = js.native
   def Delete(): scala.Unit = js.native
   /**
-           * @param string [PrefixMapping='']
-           * @param Office.CustomXMLPart [Source=0]
-           */
+    * @param string [PrefixMapping='']
+    * @param Office.CustomXMLPart [Source=0]
+    */
   def SetMapping(XPath: java.lang.String): scala.Boolean = js.native
-  /**
-           * @param string [PrefixMapping='']
-           * @param Office.CustomXMLPart [Source=0]
-           */
   def SetMapping(XPath: java.lang.String, PrefixMapping: java.lang.String): scala.Boolean = js.native
-  /**
-           * @param string [PrefixMapping='']
-           * @param Office.CustomXMLPart [Source=0]
-           */
   def SetMapping(
     XPath: java.lang.String,
     PrefixMapping: java.lang.String,

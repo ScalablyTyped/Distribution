@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Playlist extends js.Object {
   /** The contentDetails object contains information like video count. */
   var contentDetails: js.UndefOr[PlaylistContentDetails] = js.undefined

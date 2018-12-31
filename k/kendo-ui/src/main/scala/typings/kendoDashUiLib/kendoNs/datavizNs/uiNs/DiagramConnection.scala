@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiagramConnection extends js.Object {
   var content: js.UndefOr[DiagramConnectionContent] = js.undefined
   var editable: js.UndefOr[scala.Boolean | DiagramConnectionEditable] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CollapsibleProp extends js.Object {
   var accordionPosition: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var children: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined

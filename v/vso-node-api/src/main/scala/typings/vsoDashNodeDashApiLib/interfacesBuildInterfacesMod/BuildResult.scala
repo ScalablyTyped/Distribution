@@ -12,36 +12,36 @@ sealed trait BuildResult extends js.Object
 @js.native
 object BuildResult extends js.Object {
   /**
-       * The build was canceled before starting.
-       */
+    * The build was canceled before starting.
+    */
   @js.native
   sealed trait Canceled
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildResult
   
   /**
-       * The build completed unsuccessfully.
-       */
+    * The build completed unsuccessfully.
+    */
   @js.native
   sealed trait Failed
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildResult
   
   /**
-       * No result
-       */
+    * No result
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildResult
   
   /**
-       * The build completed compilation successfully but had other errors.
-       */
+    * The build completed compilation successfully but had other errors.
+    */
   @js.native
   sealed trait PartiallySucceeded
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildResult
   
   /**
-       * The build completed successfully.
-       */
+    * The build completed successfully.
+    */
   @js.native
   sealed trait Succeeded
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildResult

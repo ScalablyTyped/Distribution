@@ -12,9 +12,9 @@ object errorsNs extends js.Object {
   class AsanaError protected ()
     extends asanaLib.asanaMod.asanaNs.errorsNs.AsanaError {
     /**
-                 * @param message
-                 * @return
-                 */
+      * @param message
+      * @return
+      */
     def this(message: js.Any) = this()
     /* CompleteClass */
     override var code: scala.Double = js.native
@@ -30,9 +30,9 @@ object errorsNs extends js.Object {
   class Forbidden protected ()
     extends asanaLib.asanaMod.asanaNs.errorsNs.Forbidden {
     /**
-                 * @param value
-                 * @return
-                 */
+      * @param value
+      * @return
+      */
     def this(value: js.Any) = this()
     /* CompleteClass */
     override var code: scala.Double = js.native
@@ -48,9 +48,9 @@ object errorsNs extends js.Object {
   class InvalidRequest protected ()
     extends asanaLib.asanaMod.asanaNs.errorsNs.InvalidRequest {
     /**
-                 * @param value
-                 * @return
-                 */
+      * @param value
+      * @return
+      */
     def this(value: js.Any) = this()
     /* CompleteClass */
     override var code: scala.Double = js.native
@@ -66,9 +66,9 @@ object errorsNs extends js.Object {
   class NoAuthorization protected ()
     extends asanaLib.asanaMod.asanaNs.errorsNs.NoAuthorization {
     /**
-                 * @param value
-                 * @return
-                 */
+      * @param value
+      * @return
+      */
     def this(value: js.Any) = this()
     /* CompleteClass */
     override var code: scala.Double = js.native
@@ -84,9 +84,9 @@ object errorsNs extends js.Object {
   class NotFound protected ()
     extends asanaLib.asanaMod.asanaNs.errorsNs.NotFound {
     /**
-                 * @param value
-                 * @return
-                 */
+      * @param value
+      * @return
+      */
     def this(value: js.Any) = this()
     /* CompleteClass */
     override var code: scala.Double = js.native
@@ -102,9 +102,9 @@ object errorsNs extends js.Object {
   class RateLimitEnforced protected ()
     extends asanaLib.asanaMod.asanaNs.errorsNs.RateLimitEnforced {
     /**
-                 * @param value
-                 * @return
-                 */
+      * @param value
+      * @return
+      */
     def this(value: js.Any) = this()
     /* CompleteClass */
     override var code: scala.Double = js.native
@@ -120,9 +120,9 @@ object errorsNs extends js.Object {
   class ServerError protected ()
     extends asanaLib.asanaMod.asanaNs.errorsNs.ServerError {
     /**
-                 * @param value
-                 * @return
-                 */
+      * @param value
+      * @return
+      */
     def this(value: js.Any) = this()
     /* CompleteClass */
     override var code: scala.Double = js.native

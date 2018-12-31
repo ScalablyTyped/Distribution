@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TemplateInstance extends js.Object {
   var data: js.Object
   var firstNode: js.Object

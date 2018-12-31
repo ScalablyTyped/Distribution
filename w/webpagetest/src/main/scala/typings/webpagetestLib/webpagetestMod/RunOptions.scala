@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RunOptions extends js.Object {
   /** if true returns the repeat view (cached) data */
   var repeatView: js.UndefOr[scala.Boolean] = js.undefined

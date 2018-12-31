@@ -27,7 +27,7 @@ object cliDashFrameworkModMembers extends js.Object {
   ] = js.native
   val NO_COLORS: atIonicCliDashFrameworkLib.libColorsMod.Colors = js.native
   val logger: atIonicCliDashFrameworkLib.libLoggerMod.Logger = js.native
-  val parseArgs: js.Any = js.native
+  val parseArgs: atIonicCliDashFrameworkLib.Anon_Args = js.native
   val validators: atIonicCliDashFrameworkLib.definitionsMod.Validators = js.native
   def contains(
     values: js.Array[js.UndefOr[java.lang.String]],

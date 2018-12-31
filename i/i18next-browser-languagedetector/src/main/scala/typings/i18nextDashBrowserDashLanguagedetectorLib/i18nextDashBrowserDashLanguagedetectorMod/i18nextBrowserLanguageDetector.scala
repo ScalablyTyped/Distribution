@@ -8,18 +8,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait i18nextBrowserLanguageDetector extends js.Object {
   /**
-       * Adds detector.
-       */
+    * Adds detector.
+    */
   def addDetector(
     detector: i18nextDashBrowserDashLanguagedetectorLib.i18nextDashBrowserDashLanguagedetectorMod.i18nextBrowserLanguageDetectorNs.CustomDetector
   ): i18nextBrowserLanguageDetector = js.native
   /**
-       * Initializes detector.
-       */
+    * Initializes detector.
+    */
   def init(): scala.Unit = js.native
-  /**
-       * Initializes detector.
-       */
   def init(
     options: i18nextDashBrowserDashLanguagedetectorLib.i18nextDashBrowserDashLanguagedetectorMod.i18nextBrowserLanguageDetectorNs.DetectorOptions
   ): scala.Unit = js.native

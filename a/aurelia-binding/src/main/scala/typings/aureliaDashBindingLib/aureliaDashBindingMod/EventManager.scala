@@ -15,14 +15,14 @@ class EventManager () extends js.Object {
     delegate: delegationStrategy
   ): js.Function0[scala.Unit] = js.native
   /**
-     * Subscribes to specified event on the target element.
-     * @param target Target element.
-     * @param targetEvent Name of event to subscribe.
-     * @param callback Event listener callback.
-     * @param delegate True to use event delegation mechanism.
-     * @param disposable True to return a disposable object with dispose() method instead of a function
-     * @returns function which removes event listener.
-     */
+    * Subscribes to specified event on the target element.
+    * @param target Target element.
+    * @param targetEvent Name of event to subscribe.
+    * @param callback Event listener callback.
+    * @param delegate True to use event delegation mechanism.
+    * @param disposable True to return a disposable object with dispose() method instead of a function
+    * @returns function which removes event listener.
+    */
   def addEventListener(
     target: stdLib.EventTarget,
     targetEvent: java.lang.String,

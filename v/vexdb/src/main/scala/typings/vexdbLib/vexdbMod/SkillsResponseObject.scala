@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SkillsResponseObject extends js.Object {
   var attempts: scala.Double
   var program: java.lang.String

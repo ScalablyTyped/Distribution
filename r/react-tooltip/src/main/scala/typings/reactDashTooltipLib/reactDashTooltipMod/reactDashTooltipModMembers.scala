@@ -9,20 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object reactDashTooltipModMembers extends js.Object {
   /**
-       * Hide the tooltip manually, the target is optional, if no target passed in, all existing tooltips will be hidden
-       */
+    * Hide the tooltip manually, the target is optional, if no target passed in, all existing tooltips will be hidden
+    */
   def hide(): scala.Unit = js.native
-  /**
-       * Hide the tooltip manually, the target is optional, if no target passed in, all existing tooltips will be hidden
-       */
   def hide(target: reactLib.Element): scala.Unit = js.native
   /**
-       * Rebinding all tooltips
-       */
+    * Rebinding all tooltips
+    */
   def rebuild(): scala.Unit = js.native
   /**
-       * Show specific tooltip manually
-       */
+    * Show specific tooltip manually
+    */
   def show(target: reactLib.Element): scala.Unit = js.native
 }
 

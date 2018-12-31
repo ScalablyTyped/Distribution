@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GlobalCatalog
   extends /* key */ org.scalablytyped.runtime.StringDictionary[LocaleCatalog]
 

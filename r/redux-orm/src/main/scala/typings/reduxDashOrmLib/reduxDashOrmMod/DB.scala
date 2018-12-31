@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DB extends js.Object {
   var describe: js.Any
   var getEmptyState: js.Any

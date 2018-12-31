@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DecoratorPanel extends js.Object {
   def add(widget: Widget): DecoratorPanel
   def addStyleDependentName(styleName: java.lang.String): DecoratorPanel

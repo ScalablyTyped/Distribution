@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * properties of the current business app in Customer Engagement.
-     */
-
+  * properties of the current business app in Customer Engagement.
+  */
 trait AppProperties extends js.Object {
   var appId: js.UndefOr[java.lang.String] = js.undefined
   var displayName: js.UndefOr[java.lang.String] = js.undefined

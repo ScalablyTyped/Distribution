@@ -13,14 +13,12 @@ trait PickerResults extends js.Object {
   def apply(Index: scala.Double): PickerResult = js.native
   /** @param SIPId [SIPId=''] */
   def Add(Id: java.lang.String, DisplayName: java.lang.String, Type: java.lang.String): PickerResult = js.native
-  /** @param SIPId [SIPId=''] */
   def Add(
     Id: java.lang.String,
     DisplayName: java.lang.String,
     Type: java.lang.String,
     SIPId: java.lang.String
   ): PickerResult = js.native
-  /** @param SIPId [SIPId=''] */
   def Add(
     Id: java.lang.String,
     DisplayName: java.lang.String,
@@ -28,7 +26,6 @@ trait PickerResults extends js.Object {
     SIPId: java.lang.String,
     ItemData: js.Any
   ): PickerResult = js.native
-  /** @param SIPId [SIPId=''] */
   def Add(
     Id: java.lang.String,
     DisplayName: java.lang.String,

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TypeObject extends js.Object {
   var constraint: js.UndefOr[TypeObject] = js.undefined
   var declaration: js.UndefOr[ReflectionObject] = js.undefined

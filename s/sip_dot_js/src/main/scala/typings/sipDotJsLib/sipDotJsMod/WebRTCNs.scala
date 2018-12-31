@@ -59,7 +59,6 @@ object WebRTCNs extends js.Object {
     def render(renderHint: sipDotJsLib.sipDotJsMod.RenderHint): scala.Unit = js.native
   }
   
-  
   trait Options extends js.Object {
     var RTCConstraints: js.UndefOr[js.Any] = js.undefined
     var stunServers: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined

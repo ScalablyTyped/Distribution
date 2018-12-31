@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ObjectMarkerType extends js.Object
 
 /**
-     * Predefined types for ObjectMarker.
-    */
+  * Predefined types for ObjectMarker.
+  */
 @JSGlobal("sap.m.ObjectMarkerType")
 @js.native
 object ObjectMarkerType extends js.Object {

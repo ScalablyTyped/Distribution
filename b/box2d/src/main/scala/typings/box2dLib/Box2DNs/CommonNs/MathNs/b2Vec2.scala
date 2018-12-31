@@ -7,18 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Common.Math.b2Vec2")
 @js.native
+/**
+		* Creates a new vector 2.
+		* @param x x value, default = 0.
+		* @param y y value, default = 0.
+		**/
 class b2Vec2 () extends js.Object {
-  /**
-  		* Creates a new vector 2.
-  		* @param x x value, default = 0.
-  		* @param y y value, default = 0.
-  		**/
   def this(x: scala.Double) = this()
-  /**
-  		* Creates a new vector 2.
-  		* @param x x value, default = 0.
-  		* @param y y value, default = 0.
-  		**/
   def this(x: scala.Double, y: scala.Double) = this()
   /**
   		* x value
@@ -112,17 +107,7 @@ class b2Vec2 () extends js.Object {
   		* @param y y value, default is 0.
   		**/
   def Set(): scala.Unit = js.native
-  /**
-  		* Sets the vector 2.
-  		* @param x x value, default is 0.
-  		* @param y y value, default is 0.
-  		**/
   def Set(x: scala.Double): scala.Unit = js.native
-  /**
-  		* Sets the vector 2.
-  		* @param x x value, default is 0.
-  		* @param y y value, default is 0.
-  		**/
   def Set(x: scala.Double, y: scala.Double): scala.Unit = js.native
   /**
   		* Sets the vector 2 from a vector 2.

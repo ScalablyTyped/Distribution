@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveMultipleInheritance: Dropped parents List(reactLib.reactMod.ReactNs.Props because Would inherit conflicting mutable fields List(children))*/
-
 trait DialogProps
   extends reactLib.reactMod.ReactNs.DOMAttributes[js.Object] {
   /** @deprecated use a custom `actions` property instead */

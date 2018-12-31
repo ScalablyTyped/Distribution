@@ -41,37 +41,27 @@ trait Dynatable extends js.Object {
   /** The `state` API */
   var state: State = js.native
   /**
-          * Initialize Dynatable plugin
-          *
-          * @param options An optional object that allow you to change the default configuration options
-          */
+    * Initialize Dynatable plugin
+    *
+    * @param options An optional object that allow you to change the default configuration options
+    */
   def apply(): dynatableLib.JQuery = js.native
-  /**
-          * Initialize Dynatable plugin
-          *
-          * @param options An optional object that allow you to change the default configuration options
-          */
   def apply(options: Options): dynatableLib.JQuery = js.native
   /**
-           * Each dynatable instance inherits from this,
-           * set properties specific to instance
-           *
-           * @param element The html node to be used by dynatable
-           * @param options The JQueryDynatable.Options object which contains all the settings
-           * @return A reference to the current and brand new dynatable object
-           */
+    * Each dynatable instance inherits from this,
+    * set properties specific to instance
+    *
+    * @param element The html node to be used by dynatable
+    * @param options The JQueryDynatable.Options object which contains all the settings
+    * @return A reference to the current and brand new dynatable object
+    */
   def init(element: stdLib.Element, options: Options): Dynatable = js.native
   /**
-           * Call the process method on all the components of this dynatable
-           *
-           * @param skipPushState A boolean allowing to skip the update the query string in the URL
-           */
+    * Call the process method on all the components of this dynatable
+    *
+    * @param skipPushState A boolean allowing to skip the update the query string in the URL
+    */
   def process(): scala.Unit = js.native
-  /**
-           * Call the process method on all the components of this dynatable
-           *
-           * @param skipPushState A boolean allowing to skip the update the query string in the URL
-           */
   def process(skipPushState: scala.Boolean): scala.Unit = js.native
 }
 

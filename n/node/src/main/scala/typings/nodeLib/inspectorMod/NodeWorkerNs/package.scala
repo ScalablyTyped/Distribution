@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 package object NodeWorkerNs {
   /**
-           * Unique identifier of attached debugging session.
-           */
+    * Unique identifier of attached debugging session.
+    */
   type SessionID = java.lang.String
   type WorkerID = java.lang.String
 }

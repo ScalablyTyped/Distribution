@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveMultipleInheritance: Dropped parents List(reactDashMdLib.libButtonsButtonMod.SharedButtonProps because Would inherit conflicting mutable fields List(disabled))*/
-
 trait ButtonProps
   extends reactDashMdLib.libInksInjectInkMod.InjectedInkProps
      with reactDashMdLib.libTooltipsInjectTooltipMod.InjectedTooltipProps

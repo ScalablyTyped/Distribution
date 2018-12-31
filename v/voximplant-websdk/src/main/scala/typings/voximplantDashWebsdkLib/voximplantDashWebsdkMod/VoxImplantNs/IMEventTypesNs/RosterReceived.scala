@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when roster data received
 		*/
-
 trait RosterReceived extends js.Object {
   /**
   			*	User id

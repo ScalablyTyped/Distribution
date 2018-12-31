@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class Sandbox () extends js.Object {
   var requestList: js.Array[_] = js.native
   /**
-       * abort sandboxed requests as a group.
-       */
+    * abort sandboxed requests as a group.
+    */
   def abort(): scala.Unit = js.native
   def add(request: js.Any): scala.Unit = js.native
 }

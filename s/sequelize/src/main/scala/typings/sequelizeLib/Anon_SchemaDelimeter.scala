@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SchemaDelimeter extends js.Object {
   var logging: js.UndefOr[scala.Boolean | js.Function] = js.undefined
   var schema: js.UndefOr[java.lang.String] = js.undefined

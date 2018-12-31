@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Computation extends js.Object {
   var firstRun: scala.Boolean
   var invalidated: scala.Boolean

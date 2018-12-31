@@ -42,7 +42,6 @@ trait Static extends Utils {
     /** the create options. String is a single attribute name, Array is an array of attribute names. */
   options: IObservableOptions
   ): knockoutLib.KnockoutObservable[_] = js.native
-  /** Base class for observing model attributes. */
   def observable(
     /** the model to observe (can be null) */
   model: backboneLib.backboneMod.Model,

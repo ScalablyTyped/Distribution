@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Tooltip extends js.Object {
   /** Specify showCustomLabelTooltip value of linear gauge
-               * @Default {false}
-               */
+    * @Default {false}
+    */
   var showCustomLabelTooltip: js.UndefOr[scala.Boolean] = js.undefined
   /** Specify showLabelTooltip value of linear gauge
-               * @Default {false}
-               */
+    * @Default {false}
+    */
   var showLabelTooltip: js.UndefOr[scala.Boolean] = js.undefined
   /** Specify templateID value of linear gauge
-               * @Default {false}
-               */
+    * @Default {false}
+    */
   var templateID: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -18,7 +18,7 @@ trait Dropzone extends js.Object {
   def createThumbnail(file: dropzoneLib.dropzoneMod.DropzoneNs.DropzoneFile): js.Any = js.native
   def createThumbnail(
     file: dropzoneLib.dropzoneMod.DropzoneNs.DropzoneFile,
-    callback: js.Function1[/* repeated */js.Any, scala.Unit]
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): js.Any = js.native
   def createThumbnail(file: dropzoneLib.dropzoneMod.DropzoneNs.DropzoneFile, width: scala.Double): js.Any = js.native
   def createThumbnail(file: dropzoneLib.dropzoneMod.DropzoneNs.DropzoneFile, width: scala.Double, height: scala.Double): js.Any = js.native
@@ -41,13 +41,13 @@ trait Dropzone extends js.Object {
     height: scala.Double,
     resizeMethod: java.lang.String,
     fixOrientation: scala.Boolean,
-    callback: js.Function1[/* repeated */js.Any, scala.Unit]
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): js.Any = js.native
   def createThumbnailFromUrl(file: dropzoneLib.dropzoneMod.DropzoneNs.DropzoneFile, url: java.lang.String): js.Any = js.native
   def createThumbnailFromUrl(
     file: dropzoneLib.dropzoneMod.DropzoneNs.DropzoneFile,
     url: java.lang.String,
-    callback: js.Function1[/* repeated */js.Any, scala.Unit]
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): js.Any = js.native
   def createThumbnailFromUrl(
     file: dropzoneLib.dropzoneMod.DropzoneNs.DropzoneFile,
@@ -55,7 +55,7 @@ trait Dropzone extends js.Object {
     height: js.UndefOr[scala.Double],
     resizeMethod: js.UndefOr[java.lang.String],
     fixOrientation: js.UndefOr[scala.Boolean],
-    callback: js.UndefOr[js.Function1[/* repeated */js.Any, scala.Unit]],
+    callback: js.UndefOr[js.Function1[/* repeated */ js.Any, scala.Unit]],
     crossOrigin: js.UndefOr[java.lang.String]
   ): js.Any = js.native
   def destroy(): Dropzone = js.native
@@ -214,8 +214,8 @@ trait Dropzone extends js.Object {
   def getUploadingFiles(): js.Array[dropzoneLib.dropzoneMod.DropzoneNs.DropzoneFile] = js.native
   def off(): Dropzone = js.native
   def off(eventName: java.lang.String): Dropzone = js.native
-  def off(eventName: java.lang.String, callback: js.Function1[/* repeated */js.Any, scala.Unit]): Dropzone = js.native
-  def on(eventName: java.lang.String, callback: js.Function1[/* repeated */js.Any, scala.Unit]): Dropzone = js.native
+  def off(eventName: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): Dropzone = js.native
+  def on(eventName: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): Dropzone = js.native
   @JSName("on")
   def on_addedfile(
     eventName: dropzoneLib.dropzoneLibStrings.addedfile,
@@ -407,7 +407,7 @@ trait Dropzone extends js.Object {
     width: scala.Double,
     height: scala.Double,
     resizeMethod: java.lang.String,
-    callback: js.Function1[/* repeated */js.Any, scala.Unit]
+    callback: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def uploadFile(file: dropzoneLib.dropzoneMod.DropzoneNs.DropzoneFile): scala.Unit = js.native
   def uploadFiles(files: js.Array[dropzoneLib.dropzoneMod.DropzoneNs.DropzoneFile]): scala.Unit = js.native

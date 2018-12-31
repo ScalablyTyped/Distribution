@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SuggestionsRequestedEvent extends js.Object {
   /** Whether the autocomplete request was initiated by the user. */
   var activatedManually: scala.Boolean

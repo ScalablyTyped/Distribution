@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Resources extends js.Object {
   var errorDuringStartRequest: java.lang.String
   var errorOnNegotiate: java.lang.String

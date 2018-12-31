@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ForInStatement extends Node {
   var body: Statement
   var left: VariableDeclaration | LVal

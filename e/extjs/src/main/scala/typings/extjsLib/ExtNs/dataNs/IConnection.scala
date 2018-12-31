@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IConnection
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Method] Aborts an active request

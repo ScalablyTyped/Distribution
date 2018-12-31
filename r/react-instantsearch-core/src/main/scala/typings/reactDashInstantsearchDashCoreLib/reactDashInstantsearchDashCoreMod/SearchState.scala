@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SearchState extends js.Object {
   var configure: js.UndefOr[reactDashInstantsearchDashCoreLib.Anon_Key] = js.undefined
   var hierarchicalMenu: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined

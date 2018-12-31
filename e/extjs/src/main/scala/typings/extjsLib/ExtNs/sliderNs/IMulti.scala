@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMulti
   extends extjsLib.ExtNs.formNs.fieldNs.IBase {
   /** [Method] Creates a new thumb and adds it to the slider

@@ -18,27 +18,27 @@ abstract class DeviceInformationPairing () extends js.Object {
   /** Gets the level of protection used to pair the device. */
   var protectionLevel: DevicePairingProtectionLevel = js.native
   /**
-                   * Attempts to pair the device.
-                   * @return The result of the pairing action.
-                   */
+    * Attempts to pair the device.
+    * @return The result of the pairing action.
+    */
   def pairAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[DevicePairingResult] = js.native
   /**
-                   * Attempts to pair the device using a provided level of protection.
-                   * @param minProtectionLevel The required level of protection to use for the pairing action.
-                   * @return The result of the pairing action.
-                   */
+    * Attempts to pair the device using a provided level of protection.
+    * @param minProtectionLevel The required level of protection to use for the pairing action.
+    * @return The result of the pairing action.
+    */
   def pairAsync(minProtectionLevel: DevicePairingProtectionLevel): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[DevicePairingResult] = js.native
   /**
-                   * Attempts to pair a device object with a specified protection level and custom settings.
-                   * @param minProtectionLevel The required level of protection to use for the pairing action.
-                   * @param devicePairingSettings The custom device pairing settings.
-                   * @return The result of the pairing action.
-                   */
+    * Attempts to pair a device object with a specified protection level and custom settings.
+    * @param minProtectionLevel The required level of protection to use for the pairing action.
+    * @param devicePairingSettings The custom device pairing settings.
+    * @return The result of the pairing action.
+    */
   def pairAsync(minProtectionLevel: DevicePairingProtectionLevel, devicePairingSettings: IDevicePairingSettings): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[DevicePairingResult] = js.native
   /**
-                   * Attempts to unpair the device.
-                   * @return The result of the unpairing action.
-                   */
+    * Attempts to unpair the device.
+    * @return The result of the unpairing action.
+    */
   def unpairAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[DeviceUnpairingResult] = js.native
 }
 
@@ -47,10 +47,10 @@ abstract class DeviceInformationPairing () extends js.Object {
 @js.native
 object DeviceInformationPairing extends js.Object {
   /**
-                   * Attempts to pair for all inbound pairing requests
-                   * @param pairingKindsSupported The pairing kinds this device supports.
-                   * @return Whether or not the attempt was successful.
-                   */
+    * Attempts to pair for all inbound pairing requests
+    * @param pairingKindsSupported The pairing kinds this device supports.
+    * @return Whether or not the attempt was successful.
+    */
   def tryRegisterForAllInboundPairingRequests(pairingKindsSupported: winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DevicePairingKinds): scala.Boolean = js.native
 }
 

@@ -48,21 +48,18 @@ object momentDashJalaaliModMembers extends js.Object {
   ): momentLib.momentMod.momentNs.Duration = js.native
   def invalid(): momentLib.momentMod.momentNs.Moment = js.native
   def invalid(flags: momentLib.momentMod.momentNs.MomentParsingFlagsOpt): momentLib.momentMod.momentNs.Moment = js.native
-  def isDate(m: js.Any): /* is Date */scala.Boolean = js.native
-  def isDuration(d: js.Any): /* is Duration */scala.Boolean = js.native
-  def isMoment(m: js.Any): /* is Moment */scala.Boolean = js.native
+  def isDate(m: js.Any): /* is std.Date */ scala.Boolean = js.native
+  def isDuration(d: js.Any): /* is moment.moment.moment.Duration */ scala.Boolean = js.native
+  def isMoment(m: js.Any): /* is moment.moment.moment.Moment */ scala.Boolean = js.native
   def jDaysInMonth(year: scala.Double, month: scala.Double): scala.Double = js.native
   def jIsLeapYear(year: scala.Double): scala.Boolean = js.native
   def lang(): java.lang.String = js.native
   def lang(language: java.lang.String): java.lang.String = js.native
   def lang(language: java.lang.String, definition: momentLib.momentMod.momentNs.Locale): java.lang.String = js.native
   /**
-       * Add persian language.
-       */
+    * Add persian language.
+    */
   def loadPersian(): scala.Unit = js.native
-  /**
-       * Add persian language.
-       */
   def loadPersian(options: momentDashJalaaliLib.momentDashJalaaliMod.momentMod.LoadPersianOptions): scala.Unit = js.native
   def locale(): java.lang.String = js.native
   def locale(language: java.lang.String): java.lang.String = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReportRow extends js.Object {
   /** List of requested dimensions. */
   var dimensions: js.UndefOr[js.Array[java.lang.String]] = js.undefined

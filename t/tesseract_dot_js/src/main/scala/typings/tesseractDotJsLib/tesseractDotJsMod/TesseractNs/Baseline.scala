@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Baseline extends js.Object {
   var has_baseline: scala.Boolean
   var x0: scala.Double

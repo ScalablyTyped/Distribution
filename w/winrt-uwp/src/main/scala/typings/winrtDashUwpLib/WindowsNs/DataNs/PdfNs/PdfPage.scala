@@ -22,22 +22,22 @@ abstract class PdfPage () extends js.Object {
   /** Releases all resources associated with the Portable Document Format (PDF) page. */
   def close(): scala.Unit = js.native
   /**
-                   * Begins building the Portable Document Format (PDF) page. After this method finishes, the PDF page is completely built.
-                   * @return Represents the fully-built PDF page.
-                   */
+    * Begins building the Portable Document Format (PDF) page. After this method finishes, the PDF page is completely built.
+    * @return Represents the fully-built PDF page.
+    */
   def preparePageAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Outputs a stream of data, which represents a Portable Document Format (PDF) page's contents, as an asynchronous action. This asynchronous action can be used to create an image of the PDF page.
-                   * @param outputStream The stream of data, which represents a PDF page's content.
-                   * @return The asynchronous action.
-                   */
+    * Outputs a stream of data, which represents a Portable Document Format (PDF) page's contents, as an asynchronous action. This asynchronous action can be used to create an image of the PDF page.
+    * @param outputStream The stream of data, which represents a PDF page's content.
+    * @return The asynchronous action.
+    */
   def renderToStreamAsync(outputStream: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Takes a set of display settings, applies them to the output of a Portable Document Format (PDF) page's contents, and creates a stream with the customized, rendered output as an asynchronous action. This asynchronous action can be used to create a customized display image of the PDF page.
-                   * @param outputStream The stream of data, which represents a PDF page's contents.
-                   * @param options The requested set of display settings to apply to the display image that is output based on the PDF page.
-                   * @return The asynchronous action.
-                   */
+    * Takes a set of display settings, applies them to the output of a Portable Document Format (PDF) page's contents, and creates a stream with the customized, rendered output as an asynchronous action. This asynchronous action can be used to create a customized display image of the PDF page.
+    * @param outputStream The stream of data, which represents a PDF page's contents.
+    * @param options The requested set of display settings to apply to the display image that is output based on the PDF page.
+    * @return The asynchronous action.
+    */
   def renderToStreamAsync(
     outputStream: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream,
     options: PdfPageRenderOptions

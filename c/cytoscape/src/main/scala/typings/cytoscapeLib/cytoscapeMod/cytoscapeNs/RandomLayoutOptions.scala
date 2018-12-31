@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * http://js.cytoscape.org/#layouts/random
-     */
-
+  * http://js.cytoscape.org/#layouts/random
+  */
 trait RandomLayoutOptions
   extends BaseLayoutOptions
      with AnimatedLayoutOptions {

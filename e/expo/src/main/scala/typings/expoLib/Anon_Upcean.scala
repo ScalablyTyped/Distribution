@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Upcean extends js.Object {
   var aztec: java.lang.String
   var codabar: java.lang.String

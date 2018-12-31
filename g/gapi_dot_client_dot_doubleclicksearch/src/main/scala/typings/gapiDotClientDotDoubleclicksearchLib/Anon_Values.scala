@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Values extends js.Object {
   /** Column to perform the filter on. This can be a DoubleClick Search column or a saved column. */
   var column: js.UndefOr[

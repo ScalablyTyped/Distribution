@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait algs extends js.Object {
   var curves: curves
   var hashAlgs: hashAlgs

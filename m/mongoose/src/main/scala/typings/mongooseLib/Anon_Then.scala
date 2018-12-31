@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Then extends js.Object {
   var `catch`: (js.Function0[js.Promise[mongooseLib.mongooseMod.Connection | _]]) | (js.Function1[
     /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 

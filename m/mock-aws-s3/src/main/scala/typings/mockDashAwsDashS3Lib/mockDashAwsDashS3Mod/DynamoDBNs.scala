@@ -13,20 +13,20 @@ object DynamoDBNs extends js.Object {
     extends awsDashSdkLib.awsDashSdkMod.DynamoDBNs.Converter
   
   @js.native
+  /**
+    * Creates a DynamoDB document client with a set of configuration options.
+    */
   class DocumentClient ()
     extends awsDashSdkLib.awsDashSdkMod.DynamoDBNs.DocumentClient {
-    /**
-         * Creates a DynamoDB document client with a set of configuration options.
-         */
     def this(options: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.DocumentClientOptions with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ClientConfiguration) = this()
   }
   
   @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class Types ()
     extends awsDashSdkLib.awsDashSdkMod.DynamoDBNs.Types {
-    /**
-       * Constructs a service object. This object has one method for each API operation.
-       */
     def this(options: awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ClientConfiguration) = this()
   }
   
@@ -60,11 +60,11 @@ object DynamoDBNs extends js.Object {
       extends awsDashSdkLib.awsDashSdkMod.DynamoDBNs.DynamoDBNs.Converter
     
     @js.native
+    /**
+      * Creates a DynamoDB document client with a set of configuration options.
+      */
     class DocumentClient ()
       extends awsDashSdkLib.awsDashSdkMod.DynamoDBNs.DynamoDBNs.DocumentClient {
-      /**
-           * Creates a DynamoDB document client with a set of configuration options.
-           */
       def this(options: awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs.DocumentClientOptions with awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.ClientConfiguration) = this()
     }
     

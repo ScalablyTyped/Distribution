@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ZoomOptions extends js.Object {
   var containerClass: js.UndefOr[java.lang.String] = js.undefined
   var maxRatio: js.UndefOr[scala.Double] = js.undefined

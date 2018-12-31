@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents an important date for a contact. */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactDate")
 @js.native
+/** Initializes a new instance of a ContactDate class. */
 class ContactDate () extends js.Object {
   /** Gets and sets the day for an important date for a contact. */
   var day: scala.Double = js.native

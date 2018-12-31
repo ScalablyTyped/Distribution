@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ProximitySensorDataThreshold protected () extends js.Object {
   /**
-                   * Creates a ProximitySensorDataThreshold object.
-                   * @param sensor The proximity sensor.
-                   */
+    * Creates a ProximitySensorDataThreshold object.
+    * @param sensor The proximity sensor.
+    */
   def this(sensor: ProximitySensor) = this()
 }
 

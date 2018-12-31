@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgRadialGaugeMethods extends js.Object {
   /**
   	 * Adds a new range to the radial gauge.

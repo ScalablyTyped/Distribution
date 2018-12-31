@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GitResolutionMergeContent extends GitResolution {
   var mergeType: GitResolutionMergeType
   var userMergedBlob: GitBlobRef

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadProgress extends js.Object {
   var bytesPerSec: js.UndefOr[scala.Double] = js.undefined
   var failed: js.UndefOr[scala.Double] = js.undefined

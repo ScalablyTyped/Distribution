@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // options for IsCurrency
-
 trait IsCurrencyOptions extends js.Object {
   var allow_decimal: js.UndefOr[scala.Boolean] = js.undefined
   var allow_negative_sign_placeholder: js.UndefOr[scala.Boolean] = js.undefined

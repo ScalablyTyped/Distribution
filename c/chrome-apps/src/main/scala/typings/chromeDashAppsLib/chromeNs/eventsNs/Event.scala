@@ -9,89 +9,60 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Event[T /* <: js.Function */] extends js.Object {
   /**
-               * Registers an event listener callback to an event.
-               * @param callback Called when an event occurs. The parameters of this function depend on the type of event.
-               */
+    * Registers an event listener callback to an event.
+    * @param callback Called when an event occurs. The parameters of this function depend on the type of event.
+    */
   def addListener(callback: T): scala.Unit = js.native
   /**
-               * Registers rules to handle events.
-               * @param rules Rules to be registered. These do not replace previously registered rules.
-               * @param callback Called with registered rules.
-               * Parameter rules: Rules that were registered, the optional parameters are filled with values.
-               */
+    * Registers rules to handle events.
+    * @param rules Rules to be registered. These do not replace previously registered rules.
+    * @param callback Called with registered rules.
+    * Parameter rules: Rules that were registered, the optional parameters are filled with values.
+    */
   def addRules(rules: js.Array[Rule[_, _]]): scala.Unit = js.native
-  /**
-               * Registers rules to handle events.
-               * @param rules Rules to be registered. These do not replace previously registered rules.
-               * @param callback Called with registered rules.
-               * Parameter rules: Rules that were registered, the optional parameters are filled with values.
-               */
   def addRules(rules: js.Array[Rule[_, _]], callback: js.Function1[/* rules */ js.Array[Rule[_, _]], scala.Unit]): scala.Unit = js.native
   /**
-               * Returns currently registered rules.
-               * @param callback Called with registered rules.
-               * Parameter *rules*: Rules that were registered, the optional parameters are filled with values.
-               */
+    * Returns currently registered rules.
+    * @param callback Called with registered rules.
+    * Parameter *rules*: Rules that were registered, the optional parameters are filled with values.
+    */
   def getRules(callback: js.Function1[/* rules */ js.Array[Rule[_, _]], scala.Unit]): scala.Unit = js.native
   /**
-               * Returns currently registered rules.
-               * @param ruleIdentifiers If an array is passed, only rules with identifiers contained in this array are returned.
-               * @param callback Called with registered rules.
-               * Parameter *rules*: Rules that were registered, the optional parameters are filled with values.
-               */
+    * Returns currently registered rules.
+    * @param ruleIdentifiers If an array is passed, only rules with identifiers contained in this array are returned.
+    * @param callback Called with registered rules.
+    * Parameter *rules*: Rules that were registered, the optional parameters are filled with values.
+    */
   def getRules(
     ruleIdentifiers: js.Array[java.lang.String],
     callback: js.Function1[/* rules */ js.Array[Rule[_, _]], scala.Unit]
   ): scala.Unit = js.native
   /**
-               * Has this event this provided listener?
-               * @param listener Listener whose registration status shall be tested.
-               * @return If it has the provided listener
-               */
+    * Has this event this provided listener?
+    * @param listener Listener whose registration status shall be tested.
+    * @return If it has the provided listener
+    */
   def hasListener(callback: T): scala.Boolean = js.native
-  /**
-               * Has this event this provided listener?
-               * @param listener Listener whose registration status shall be tested.
-               * @return If it has the provided listener
-               */
   def hasListener(callback: js.Function): scala.Boolean = js.native
   /**
-               * Has this event listeners?
-               */
+    * Has this event listeners?
+    */
   def hasListeners(): scala.Boolean = js.native
   /**
-               * Deregisters an event listener callback from an event.
-               * @param callback Listener that shall be unregistered.
-               */
+    * Deregisters an event listener callback from an event.
+    * @param callback Listener that shall be unregistered.
+    */
   def removeListener(callback: T): scala.Unit = js.native
   /**
-               * Unregisters currently registered rules.
-               * @param ruleIdentifiers If an array is passed, only rules with identifiers contained in this array are unregistered.
-               * @param callback Called when rules were unregistered.
-               * If you specify the callback parameter, it should be a function that looks like this:
-               * function() {...};
-               */
+    * Unregisters currently registered rules.
+    * @param ruleIdentifiers If an array is passed, only rules with identifiers contained in this array are unregistered.
+    * @param callback Called when rules were unregistered.
+    * If you specify the callback parameter, it should be a function that looks like this:
+    * function() {...};
+    */
   def removeRules(): scala.Unit = js.native
-  /**
-               * Unregisters currently registered rules.
-               * @param callback Called when rules were unregistered.
-               */
   def removeRules(callback: js.Function0[scala.Unit]): scala.Unit = js.native
-  /**
-               * Unregisters currently registered rules.
-               * @param ruleIdentifiers If an array is passed, only rules with identifiers contained in this array are unregistered.
-               * @param callback Called when rules were unregistered.
-               * If you specify the callback parameter, it should be a function that looks like this:
-               * function() {...};
-               */
   def removeRules(ruleIdentifiers: js.Array[java.lang.String]): scala.Unit = js.native
-  /**
-               * Unregisters currently registered rules.
-               * @param ruleIdentifiers If an array is passed, only rules with identifiers contained in this array are unregistered.
-               * @param callback Called when rules were unregistered.
-               * If you specify the callback parameter, it should be a function that looks like this:
-               * function() {...};
-               */
   def removeRules(ruleIdentifiers: js.Array[java.lang.String], callback: js.Function0[scala.Unit]): scala.Unit = js.native
 }
 

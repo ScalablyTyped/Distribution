@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Table extends js.Object {
   // Number of columns in the table.
   var columns: scala.Double

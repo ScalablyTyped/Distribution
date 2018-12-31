@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NetStatsData extends js.Object {
   var iface: java.lang.String
   var ms: scala.Double

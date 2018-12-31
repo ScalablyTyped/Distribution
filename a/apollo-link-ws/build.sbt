@@ -1,25 +1,25 @@
 organization := "org.scalablytyped"
 name := "apollo-link-ws"
-version := "1.0.12-eba05e"
+version := "1.0.12-b97f74"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.6-d4b20d",
-  "org.scalablytyped" %%% "apollo-utilities" % "1.0.27-52c89b",
-  "org.scalablytyped" %%% "backo2" % "1.0-dt-20180601Z-f25749",
-  "org.scalablytyped" %%% "eventemitter3" % "3.1.0-50d79a",
-  "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-904c02",
-  "org.scalablytyped" %%% "graphql" % "14.0-dt-20181016Z-3245d4",
-  "org.scalablytyped" %%% "iterall" % "1.2.2-b891ad",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-e45326",
-  "org.scalablytyped" %%% "std" % "3.2.2-669a73",
-  "org.scalablytyped" %%% "subscriptions-transport-ws" % "0.9.15-1d6d8a",
-  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-43e3c6",
-  "org.scalablytyped" %%% "ws" % "6.0-dt-20180830Z-790def",
-  "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180618Z-76c70f",
-  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.13-850d40")
+  "org.scalablytyped" %%% "apollo-link" % "1.2.6-65536a",
+  "org.scalablytyped" %%% "apollo-utilities" % "1.0.27-52f69b",
+  "org.scalablytyped" %%% "backo2" % "1.0-dt-20180601Z-5aca12",
+  "org.scalablytyped" %%% "eventemitter3" % "3.1.0-f1fa89",
+  "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-353ee5",
+  "org.scalablytyped" %%% "graphql" % "14.0-dt-20181016Z-ed78a4",
+  "org.scalablytyped" %%% "iterall" % "1.2.2-1d5c18",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20181219Z-77ce7e",
+  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff",
+  "org.scalablytyped" %%% "subscriptions-transport-ws" % "0.9.15-0ce6d9",
+  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-dc48cb",
+  "org.scalablytyped" %%% "ws" % "6.0-dt-20180830Z-5fcabc",
+  "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180618Z-9c6819",
+  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.13-80038a")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

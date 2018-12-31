@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AuthMode extends js.Object {
    // 错误码
   var authMode: java.lang.String

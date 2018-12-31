@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateRecipientList extends js.Object {
   /** Recipient list attribute object */
   var attributes: js.UndefOr[js.Any] = js.undefined

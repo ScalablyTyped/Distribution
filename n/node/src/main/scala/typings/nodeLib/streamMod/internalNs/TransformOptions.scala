@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransformOptions extends DuplexOptions {
   @JSName("destroy")
   var destroy_TransformOptions: js.UndefOr[

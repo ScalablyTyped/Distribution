@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParseTweetOptions extends js.Object {
   var defaultWeight: js.UndefOr[scala.Double] = js.undefined
   var maxWeightedTweetLength: js.UndefOr[scala.Double] = js.undefined

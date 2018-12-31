@@ -66,66 +66,66 @@ abstract class MediaSource () extends js.Object {
 @js.native
 object MediaSource extends js.Object {
   /**
-                   * Creates an instance of MediaSource from the provided AdaptiveMediaSource .
-                   * @param mediaSource The AdaptiveMediaSource from which the MediaSource is created.
-                   * @return The new media source.
-                   */
+    * Creates an instance of MediaSource from the provided AdaptiveMediaSource .
+    * @param mediaSource The AdaptiveMediaSource from which the MediaSource is created.
+    * @return The new media source.
+    */
   def createFromAdaptiveMediaSource(mediaSource: winrtDashUwpLib.WindowsNs.MediaNs.StreamingNs.AdaptiveNs.AdaptiveMediaSource): winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaSource = js.native
   /**
-                   * Creates an instance of MediaSource from the provided IMediaSource .
-                   * @param mediaSource The IMediaSource from which the MediaSource is created.
-                   * @return The new media source.
-                   */
+    * Creates an instance of MediaSource from the provided IMediaSource .
+    * @param mediaSource The IMediaSource from which the MediaSource is created.
+    * @return The new media source.
+    */
   def createFromIMediaSource(mediaSource: winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.IMediaSource): winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaSource = js.native
   /**
-                   * Creates an instance of MediaSource from the provided MediaBinder .
-                   * @param binder The MediaBinder with which the MediaSource is associated.
-                   * @return The new media source.
-                   */
+    * Creates an instance of MediaSource from the provided MediaBinder .
+    * @param binder The MediaBinder with which the MediaSource is associated.
+    * @return The new media source.
+    */
   def createFromMediaBinder(binder: winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaBinder): winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaSource = js.native
   /**
-                   * Creates an instance of MediaSource from the provided MediaStreamSource .
-                   * @param mediaSource The MediaStreamSource from which the MediaSource is created.
-                   * @return The new media source.
-                   */
+    * Creates an instance of MediaSource from the provided MediaStreamSource .
+    * @param mediaSource The MediaStreamSource from which the MediaSource is created.
+    * @return The new media source.
+    */
   def createFromMediaStreamSource(mediaSource: winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaStreamSource): winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaSource = js.native
   /**
-                   * Creates an instance of MediaSource from the provided MseStreamSource .
-                   * @param mediaSource The MediaStreamSource from which the MediaSource is created.
-                   * @return The new media source.
-                   */
+    * Creates an instance of MediaSource from the provided MseStreamSource .
+    * @param mediaSource The MediaStreamSource from which the MediaSource is created.
+    * @return The new media source.
+    */
   def createFromMseStreamSource(mediaSource: winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MseStreamSource): winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaSource = js.native
   /**
-                   * Creates an instance of MediaSource from the provided IStorageFile .
-                   * @param file The IStorageFile from which the MediaSource is created.
-                   * @return The new media source.
-                   */
+    * Creates an instance of MediaSource from the provided IStorageFile .
+    * @param file The IStorageFile from which the MediaSource is created.
+    * @return The new media source.
+    */
   def createFromStorageFile(file: winrtDashUwpLib.WindowsNs.StorageNs.IStorageFile): winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaSource = js.native
   /**
-                   * Creates an instance of MediaSource from the provided IRandomAccessStream .
-                   * @param stream The stream from which the MediaSource is created.
-                   * @param contentType The MIME type of the contents of the stream.
-                   * @return The new media source.
-                   */
+    * Creates an instance of MediaSource from the provided IRandomAccessStream .
+    * @param stream The stream from which the MediaSource is created.
+    * @param contentType The MIME type of the contents of the stream.
+    * @return The new media source.
+    */
   def createFromStream(
     stream: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream,
     contentType: java.lang.String
   ): winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaSource = js.native
   /**
-                   * Creates an instance of MediaSource from the provided IRandomAccessStreamReference .
-                   * @param stream The stream reference from which the MediaSource is created.
-                   * @param contentType The MIME type of the contents of the stream.
-                   * @return The new media source.
-                   */
+    * Creates an instance of MediaSource from the provided IRandomAccessStreamReference .
+    * @param stream The stream reference from which the MediaSource is created.
+    * @param contentType The MIME type of the contents of the stream.
+    * @return The new media source.
+    */
   def createFromStreamReference(
     stream: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStreamReference,
     contentType: java.lang.String
   ): winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaSource = js.native
   /**
-                   * Creates an instance of MediaSource from the provided Uri .
-                   * @param uri The URI from which the MediaSource is created.
-                   * @return The new media source.
-                   */
+    * Creates an instance of MediaSource from the provided Uri .
+    * @param uri The URI from which the MediaSource is created.
+    * @return The new media source.
+    */
   def createFromUri(uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri): winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaSource = js.native
 }
 

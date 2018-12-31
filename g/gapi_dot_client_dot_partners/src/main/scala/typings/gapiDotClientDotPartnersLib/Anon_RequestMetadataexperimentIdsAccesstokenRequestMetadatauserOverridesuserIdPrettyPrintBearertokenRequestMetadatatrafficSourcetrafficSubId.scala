@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RequestMetadataexperimentIdsAccesstokenRequestMetadatauserOverridesuserIdPrettyPrintBearertokenRequestMetadatatrafficSourcetrafficSubId extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -37,26 +36,26 @@ trait Anon_RequestMetadataexperimentIdsAccesstokenRequestMetadatauserOverridesus
   /** Google Partners session ID. */
   var `requestMetadata.partnersSessionId`: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Identifier to indicate where the traffic comes from.
-                   * An identifier has multiple letters created by a team which redirected the
-                   * traffic to us.
-                   */
+    * Identifier to indicate where the traffic comes from.
+    * An identifier has multiple letters created by a team which redirected the
+    * traffic to us.
+    */
   var `requestMetadata.trafficSource.trafficSourceId`: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Second level identifier to indicate where the traffic comes from.
-                   * An identifier has multiple letters created by a team which redirected the
-                   * traffic to us.
-                   */
+    * Second level identifier to indicate where the traffic comes from.
+    * An identifier has multiple letters created by a team which redirected the
+    * traffic to us.
+    */
   var `requestMetadata.trafficSource.trafficSubId`: js.UndefOr[java.lang.String] = js.undefined
   /** IP address to use instead of the user's geo-located IP address. */
   var `requestMetadata.userOverrides.ipAddress`: js.UndefOr[java.lang.String] = js.undefined
   /** Logged-in user ID to impersonate instead of the user's ID. */
   var `requestMetadata.userOverrides.userId`: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Standard field mask for the set of fields to be updated.
-                   * Required with at least 1 value in FieldMask's paths.
-                   * Only `state` and `adwords_customer_id` are currently supported.
-                   */
+    * Standard field mask for the set of fields to be updated.
+    * Required with at least 1 value in FieldMask's paths.
+    * Only `state` and `adwords_customer_id` are currently supported.
+    */
   var updateMask: js.UndefOr[java.lang.String] = js.undefined
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

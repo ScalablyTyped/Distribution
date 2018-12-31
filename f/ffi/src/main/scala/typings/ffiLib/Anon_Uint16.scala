@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Uint16 extends js.Object {
   var CString: refLib.refMod.Type
   var Object: refLib.refMod.Type

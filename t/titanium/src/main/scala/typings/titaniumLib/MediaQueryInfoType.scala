@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * A full query descriptor for a filtering predicate.
- */
-
+  * A full query descriptor for a filtering predicate.
+  */
 trait MediaQueryInfoType extends js.Object {
   /**
   	 * Whether or not the predicate is for an exact match.  The default is `true`.

@@ -28,19 +28,14 @@ class Container () extends DisplayObject {
   //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_added(event: pixiDotJsLib.pixiDotJsLibStrings.added): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_added(event: pixiDotJsLib.pixiDotJsLibStrings.added, fn: js.Function): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_added(event: pixiDotJsLib.pixiDotJsLibStrings.added, fn: js.Function, context: js.Any): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_removed(event: pixiDotJsLib.pixiDotJsLibStrings.removed): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_removed(event: pixiDotJsLib.pixiDotJsLibStrings.removed, fn: js.Function): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_removed(event: pixiDotJsLib.pixiDotJsLibStrings.removed, fn: js.Function, context: js.Any): this.type = js.native
   /* protected */ def onChildrenChange(args: js.Any*): scala.Unit = js.native

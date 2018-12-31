@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KnockstrapModalDefaults extends js.Object {
   var attributes: KnockstrapModalDefaultsAttributes
   var bodyTemplate: KnockstrapDefaultsTemplateBase

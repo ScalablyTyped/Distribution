@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RangeSelector extends Label {
   var activecolor: java.lang.String
   var borderwidth: scala.Double

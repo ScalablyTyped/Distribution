@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Environmental Variables
-     * chayns.env
-     */
+  * Environmental Variables
+  * chayns.env
+  */
 @JSGlobal("chayns.env")
 @js.native
 object envNs extends js.Object {
@@ -36,9 +36,9 @@ object envNs extends js.Object {
   var os: java.lang.String = js.native
   var parameters: js.Any = js.native
   /**
-           * Environmental Variables
-           * chayns.env.app
-           */
+    * Environmental Variables
+    * chayns.env.app
+    */
   @JSName("app")
   @js.native
   object appNs extends js.Object {
@@ -51,9 +51,9 @@ object envNs extends js.Object {
   }
   
   /**
-           * Environmental Variables
-           * chayns.env.browser
-           */
+    * Environmental Variables
+    * chayns.env.browser
+    */
   @JSName("browser")
   @js.native
   object browserNs extends js.Object {
@@ -62,9 +62,9 @@ object envNs extends js.Object {
   }
   
   /**
-           * Environmental Variables
-           * chayns.env.device
-           */
+    * Environmental Variables
+    * chayns.env.device
+    */
   @JSName("device")
   @js.native
   object deviceNs extends js.Object {
@@ -78,9 +78,9 @@ object envNs extends js.Object {
   }
   
   /**
-           * Environmental Variables
-           * chayns.env.site
-           */
+    * Environmental Variables
+    * chayns.env.site
+    */
   @JSName("site")
   @js.native
   object siteNs extends js.Object {
@@ -101,9 +101,9 @@ object envNs extends js.Object {
     var url: java.lang.String = js.native
     var version: java.lang.String = js.native
     /**
-                 * Environmental Variables
-                 * chayns.env.site.tapp
-                 */
+      * Environmental Variables
+      * chayns.env.site.tapp
+      */
     @JSName("tapp")
     @js.native
     object tappNs extends js.Object {
@@ -121,9 +121,9 @@ object envNs extends js.Object {
   }
   
   /**
-           * Environmental Variables
-           * chayns.env.user
-           */
+    * Environmental Variables
+    * chayns.env.user
+    */
   @JSName("user")
   @js.native
   object userNs extends js.Object {

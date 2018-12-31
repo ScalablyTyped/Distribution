@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IslandSplit extends js.Object {
   var broadphase: js.UndefOr[p2Lib.p2Mod.p2Ns.Broadphase] = js.undefined
   var doProfiling: js.UndefOr[scala.Boolean] = js.undefined

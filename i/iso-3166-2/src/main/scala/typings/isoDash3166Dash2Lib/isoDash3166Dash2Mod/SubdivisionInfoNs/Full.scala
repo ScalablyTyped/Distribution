@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Full extends Partial {
   var code: java.lang.String
   var countryCode: java.lang.String

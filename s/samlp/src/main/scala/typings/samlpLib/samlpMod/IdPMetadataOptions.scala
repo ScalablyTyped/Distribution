@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IdPMetadataOptions extends js.Object {
   var cert: java.lang.String | nodeLib.Buffer
   var issuer: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DetailedArguments extends js.Object {
   var aliases: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]]
   var argv: Arguments

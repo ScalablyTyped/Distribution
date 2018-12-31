@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AssertQueue extends js.Object {
   var arguments: js.UndefOr[js.Any] = js.undefined
   var autoDelete: js.UndefOr[scala.Boolean] = js.undefined

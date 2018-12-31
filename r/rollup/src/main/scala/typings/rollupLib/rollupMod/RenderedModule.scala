@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RenderedModule extends js.Object {
   var originalLength: scala.Double
   var removedExports: js.Array[java.lang.String]

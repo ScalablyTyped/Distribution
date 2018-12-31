@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActivitiesResource extends js.Object {
   /** Get an activity. */
   def get(request: gapiDotClientDotPlusdomainsLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Activity]

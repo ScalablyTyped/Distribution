@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait User extends js.Object {
   val active: scala.Boolean
   val attributes: org.scalablytyped.runtime.StringDictionary[js.Any]

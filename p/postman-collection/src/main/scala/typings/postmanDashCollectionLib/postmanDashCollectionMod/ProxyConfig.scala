@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(postmanDashCollectionLib.postmanDashCollectionMod.ProxyConfigDefinition because Would inherit conflicting mutable fields List(description, name, disabled, id))*/
+/* RemoveMultipleInheritance: Dropped parents List(postmanDashCollectionLib.postmanDashCollectionMod.ProxyConfigDefinition because Would inherit conflicting mutable fields List(description, disabled, id, name))*/
 @JSImport("postman-collection", "ProxyConfig")
 @js.native
 class ProxyConfig () extends Property[ProxyConfigDefinition] {

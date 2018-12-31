@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MediumShort extends js.Object {
   var full: intlDashMessageformatLib.intlDashMessageformatMod.TimeFormat
   var long: intlDashMessageformatLib.intlDashMessageformatMod.TimeFormat

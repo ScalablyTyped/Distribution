@@ -49,8 +49,8 @@ class Remote () extends js.Object {
   def push(refSpecs: js.Array[_], options: nodegitLib.pushDashOptionsMod.PushOptions, callback: js.Function): js.Promise[scala.Double] = js.native
   def pushurl(): java.lang.String = js.native
   /**
-       * Lists advertised references from a remote. You must connect to the remote before using referenceList.
-       */
+    * Lists advertised references from a remote. You must connect to the remote before using referenceList.
+    */
   def referenceList(): js.Promise[js.Array[_]] = js.native
   def refspecCount(): scala.Double = js.native
   def stats(): nodegitLib.transferDashProgressMod.TransferProgress = js.native

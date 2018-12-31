@@ -18,13 +18,13 @@ class ButtonHelper protected () extends js.Object {
   var play: scala.Boolean = js.native
   var target: MovieClip | Sprite = js.native
   /**
-           * @deprecated - use the 'enabled' property instead
-           */
+    * @deprecated - use the 'enabled' property instead
+    */
   def getEnabled(): scala.Boolean = js.native
   // methods
   /**
-           * @deprecated - use the 'enabled' property instead
-           */
+    * @deprecated - use the 'enabled' property instead
+    */
   def setEnabled(value: scala.Boolean): scala.Unit = js.native
 }
 

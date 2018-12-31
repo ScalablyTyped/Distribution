@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveMultipleInheritance: Dropped parents List(atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps because Would inherit conflicting mutable fields List(className))*/
-
 trait IMenuProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLUListElement] {
   /** Whether the menu items in this menu should use a large appearance. */

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DownloadItem extends js.Object {
   var byExtensionId: js.UndefOr[java.lang.String] = js.undefined
   var byExtensionName: js.UndefOr[java.lang.String] = js.undefined

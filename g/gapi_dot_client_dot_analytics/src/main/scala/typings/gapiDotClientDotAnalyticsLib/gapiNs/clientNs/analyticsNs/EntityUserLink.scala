@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EntityUserLink extends js.Object {
   /** Entity for this link. It can be an account, a web property, or a view (profile). */
   var entity: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_WebPropertyRef] = js.undefined

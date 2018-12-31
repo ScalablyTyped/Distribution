@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParsedQuery extends js.Object {
   var ast: js.Array[QueryAstNode]
   var bindVars: js.Array[java.lang.String]

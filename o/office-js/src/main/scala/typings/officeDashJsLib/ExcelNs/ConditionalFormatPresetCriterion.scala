@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 sealed trait ConditionalFormatPresetCriterion extends js.Object
 
 /**
-     *
-     * Represents the criteria for the Preset Criteria conditional format type.
-     *
-     * [Api set: ExcelApi 1.6]
-     */
+  *
+  * Represents the criteria for the Preset Criteria conditional format type.
+  *
+  * [Api set: ExcelApi 1.6]
+  */
 @JSGlobal("Excel.ConditionalFormatPresetCriterion")
 @js.native
 object ConditionalFormatPresetCriterion extends js.Object {

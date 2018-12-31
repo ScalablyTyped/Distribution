@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableCellLocation extends js.Object {
   // The 0-based column index.
   var column_index: scala.Double

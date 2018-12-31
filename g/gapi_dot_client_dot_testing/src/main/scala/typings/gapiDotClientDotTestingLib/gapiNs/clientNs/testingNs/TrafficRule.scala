@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TrafficRule extends js.Object {
   /** Bandwidth in kbits/second */
   var bandwidth: js.UndefOr[scala.Double] = js.undefined

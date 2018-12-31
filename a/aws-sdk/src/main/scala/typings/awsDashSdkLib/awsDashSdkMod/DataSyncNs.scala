@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object DataSyncNs extends js.Object {
   @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class Types ()
     extends awsDashSdkLib.clientsAllMod.DataSyncNs.Types {
-    /**
-       * Constructs a service object. This object has one method for each API operation.
-       */
     def this(options: awsDashSdkLib.clientsDatasyncMod.DataSyncNs.ClientConfiguration) = this()
   }
   

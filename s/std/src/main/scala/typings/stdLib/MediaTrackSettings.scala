@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaTrackSettings extends js.Object {
   var aspectRatio: js.UndefOr[scala.Double] = js.undefined
   var deviceId: js.UndefOr[java.lang.String] = js.undefined

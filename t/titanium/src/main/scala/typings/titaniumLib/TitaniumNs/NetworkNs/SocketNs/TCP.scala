@@ -103,13 +103,7 @@ trait TCP
   				 * Reads data from this stream into a buffer.
   				 */
   def read(buffer: titaniumLib.TitaniumNs.Buffer): scala.Double = js.native
-  /**
-  				 * Reads data from this stream into a buffer.
-  				 */
   def read(buffer: titaniumLib.TitaniumNs.Buffer, offset: scala.Double): scala.Double = js.native
-  /**
-  				 * Reads data from this stream into a buffer.
-  				 */
   def read(buffer: titaniumLib.TitaniumNs.Buffer, offset: scala.Double, length: scala.Double): scala.Double = js.native
   /**
   				 * Sets the value of the <Titanium.Network.Socket.TCP.accepted> property.
@@ -143,13 +137,7 @@ trait TCP
   				 * Writes data from a buffer to this stream.
   				 */
   def write(buffer: titaniumLib.TitaniumNs.Buffer): scala.Double = js.native
-  /**
-  				 * Writes data from a buffer to this stream.
-  				 */
   def write(buffer: titaniumLib.TitaniumNs.Buffer, offset: scala.Double): scala.Double = js.native
-  /**
-  				 * Writes data from a buffer to this stream.
-  				 */
   def write(buffer: titaniumLib.TitaniumNs.Buffer, offset: scala.Double, length: scala.Double): scala.Double = js.native
 }
 

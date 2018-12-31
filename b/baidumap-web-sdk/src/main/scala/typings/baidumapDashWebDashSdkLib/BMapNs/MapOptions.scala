@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapOptions extends js.Object {
   var enableAutoResize: js.UndefOr[scala.Boolean] = js.undefined
   var enableHighResolution: js.UndefOr[scala.Boolean] = js.undefined

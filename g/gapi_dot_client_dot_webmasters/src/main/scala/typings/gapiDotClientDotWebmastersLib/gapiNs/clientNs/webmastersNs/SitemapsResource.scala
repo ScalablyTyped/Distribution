@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SitemapsResource extends js.Object {
   /** Deletes a sitemap from this site. */
   def delete(request: gapiDotClientDotWebmastersLib.Anon_PrettyPrintFeedpath): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

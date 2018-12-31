@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DropdownProps extends js.Object {
   var appendTo: js.UndefOr[js.Any] = js.undefined
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined

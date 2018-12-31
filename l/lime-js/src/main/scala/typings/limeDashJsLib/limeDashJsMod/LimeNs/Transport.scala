@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Transport extends ITransportStateListener {
   var compression: java.lang.String
   var encryption: java.lang.String

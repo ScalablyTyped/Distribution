@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a data cue that can be included in a TimedMetadataTrack . */
 @JSGlobal("Windows.Media.Core.DataCue")
 @js.native
+/** Initializes a new instance of the DataCue class. */
 class DataCue () extends js.Object {
   /** Gets the data associated with the cue. */
   var data: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer = js.native

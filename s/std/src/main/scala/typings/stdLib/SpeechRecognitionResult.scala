@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpeechRecognitionResult
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[SpeechRecognitionAlternative] {
   val isFinal: scala.Boolean

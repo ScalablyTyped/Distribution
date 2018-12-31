@@ -26,8 +26,8 @@ object libOptionModMembers extends js.Object {
   def getOrd[A](O: fpDashTsLib.libOrdMod.Ord[A]): fpDashTsLib.libOrdMod.Ord[Option[A]] = js.native
   def getRefinement[A, B /* <: A */](getOption: js.Function1[/* a */ A, Option[B]]): fpDashTsLib.libFunctionMod.Refinement[A, B] = js.native
   def getSetoid[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[Option[A]] = js.native
-  def isNone[A](fa: Option[A]): /* is None */scala.Boolean = js.native
-  def isSome[A](fa: Option[A]): /* is Some */scala.Boolean = js.native
+  def isNone[A](fa: Option[A]): /* is fp-ts.fp-ts/lib/Option.None<A> */ scala.Boolean = js.native
+  def isSome[A](fa: Option[A]): /* is fp-ts.fp-ts/lib/Option.Some<A> */ scala.Boolean = js.native
   def some[A](a: A): Option[A] = js.native
   def tryCatch[A](f: fpDashTsLib.libFunctionMod.Lazy[A]): Option[A] = js.native
 }

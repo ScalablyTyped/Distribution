@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageArcGISRestOptions extends js.Object {
   var attributions: js.UndefOr[js.Array[openlayersLib.openlayersMod.Attribution]] = js.undefined
   var crossOrigin: js.UndefOr[java.lang.String] = js.undefined

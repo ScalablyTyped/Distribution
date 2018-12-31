@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("pixi.js", "WebGLRenderer")
 @js.native
+// plugintarget mixin end
 class WebGLRenderer ()
   extends pixiDotJsLib.PIXINs.WebGLRenderer {
-  // plugintarget mixin end
   def this(options: pixiDotJsLib.PIXINs.WebGLRendererOptions) = this()
   def this(screenWidth: scala.Double) = this()
   def this(screenWidth: scala.Double, screenHeight: scala.Double) = this()

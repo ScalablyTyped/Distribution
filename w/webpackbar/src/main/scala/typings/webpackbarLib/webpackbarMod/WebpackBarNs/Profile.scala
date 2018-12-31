@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Profile extends js.Object {
   var name: java.lang.String
   var requests: js.Array[_]

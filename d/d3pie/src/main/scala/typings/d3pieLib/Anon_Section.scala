@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Section extends js.Object {
   var label: java.lang.String
   var section: d3pieLib.d3pieLibStrings.outer | d3pieLib.d3pieLibStrings.inner

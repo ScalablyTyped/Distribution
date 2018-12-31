@@ -11,11 +11,11 @@ object storageNsMembers extends js.Object {
   /** Items in the local storage area are local to each machine. */
   val local: LocalStorageArea = js.native
   /**
-           * Items in the managed storage area are set by the domain administrator,
-           * and are read-only for the extension; trying to modify this namespace
-           * results in an error.
-           * @since Chrome 33.
-           */
+    * Items in the managed storage area are set by the domain administrator,
+    * and are read-only for the extension; trying to modify this namespace
+    * results in an error.
+    * @since Chrome 33.
+    */
   val managed: ManagedStorageArea = js.native
   /** Fired when one or more items change. */
   val onChanged: chromeDashAppsLib.chromeNs.eventsNs.Event[

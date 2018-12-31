@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 trait Panel extends js.Object {
   /**Notifies panel that height of DOM node has changed */
   def changed(): scala.Unit = js.native
-  /**Notifies panel that height of DOM node has changed */
   def changed(height: scala.Double): scala.Unit = js.native
   /**Removes the panel from the editor */
   def clear(): scala.Unit = js.native

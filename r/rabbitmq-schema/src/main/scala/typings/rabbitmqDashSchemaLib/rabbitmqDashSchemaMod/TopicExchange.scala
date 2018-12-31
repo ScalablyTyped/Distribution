@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TopicExchange extends Exchange {
   @JSName("bindings")
   var bindings_TopicExchange: js.Array[TopicBinding]

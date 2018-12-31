@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeserializerManager extends js.Object {
   /** Register the given class(es) as deserializers. */
   def add(deserializers: Deserializer*): Disposable

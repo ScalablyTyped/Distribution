@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConditionOperators extends js.Object {
   /** Matches an array value if it contains all the elements of the argument array. */
   @JSName("$all")
@@ -34,11 +33,11 @@ trait ConditionOperators extends js.Object {
   @JSName("$lte")
   var $lte: js.UndefOr[js.Any] = js.undefined
   /**
-               * Divisor and Remainder are both positive or negative integers.
-               * Non-integer values result in a 404 status.
-               * Matches documents where (field % Divisor == Remainder) is true, and only when the document field is an integer.
-               * [divisor, remainder]
-               */
+    * Divisor and Remainder are both positive or negative integers.
+    * Non-integer values result in a 404 status.
+    * Matches documents where (field % Divisor == Remainder) is true, and only when the document field is an integer.
+    * [divisor, remainder]
+    */
   @JSName("$mod")
   var $mod: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.undefined
   /** Match fields not equal to this one. */

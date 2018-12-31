@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SecondFactorRequired extends js.Object {
   var authenticationToken: java.lang.String
   var currentTime: scala.Double

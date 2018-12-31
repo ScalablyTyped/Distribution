@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEventCollision[T] extends IEventTimestamped[T] {
   /**
-           * The collision pair
-           */
+    * The collision pair
+    */
   var pairs: js.Array[IPair]
 }
 

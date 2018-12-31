@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GooglePrivacyDlpV2beta1StorageConfig extends js.Object {
   /** BigQuery options specification. */
   var bigQueryOptions: js.UndefOr[GooglePrivacyDlpV2beta1BigQueryOptions] = js.undefined

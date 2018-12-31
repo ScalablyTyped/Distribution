@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UncaughtPromiseError
   extends stdLib.Error {
   var promise: js.Promise[_]

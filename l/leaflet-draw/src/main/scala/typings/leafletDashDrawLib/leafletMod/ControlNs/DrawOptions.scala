@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DrawOptions extends js.Object {
   /**
   			 * Circle draw handler options. Set to false to disable handler.

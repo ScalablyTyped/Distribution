@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomPropertyCommon extends js.Object {
   var label: js.UndefOr[java.lang.String] = js.undefined
   var ref: js.UndefOr[java.lang.String] = js.undefined

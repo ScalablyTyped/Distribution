@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SurfaceTooltipOpenEvent extends SurfaceEvent {
   var element: js.UndefOr[kendoDashUiLib.kendoNs.drawingNs.Element] = js.undefined
   var target: js.UndefOr[kendoDashUiLib.kendoNs.drawingNs.Element] = js.undefined

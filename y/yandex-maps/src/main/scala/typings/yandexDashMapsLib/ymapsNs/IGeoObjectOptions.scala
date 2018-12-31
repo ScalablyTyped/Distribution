@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGeoObjectOptions extends ICircleOptions {
   var iconCaptionMaxWidth: js.UndefOr[scala.Double] = js.undefined
   var iconColor: js.UndefOr[java.lang.String] = js.undefined

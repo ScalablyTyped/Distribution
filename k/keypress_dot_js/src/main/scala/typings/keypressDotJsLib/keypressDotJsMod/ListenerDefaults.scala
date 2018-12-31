@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListenerDefaults extends js.Object {
   var is_counting: scala.Boolean
   var is_exclusive: scala.Boolean

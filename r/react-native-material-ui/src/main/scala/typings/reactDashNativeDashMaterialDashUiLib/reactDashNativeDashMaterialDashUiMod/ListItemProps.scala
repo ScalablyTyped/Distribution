@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListItemProps extends js.Object {
   var centerElement: reactLib.reactMod.Global.JSXNs.Element | java.lang.String | ListItemCenterElement
   var dense: js.UndefOr[scala.Boolean] = js.undefined

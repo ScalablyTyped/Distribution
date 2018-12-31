@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait VerticalPlacementType extends js.Object
 
 /**
-     * Types for the placement of message popover control.
-    */
+  * Types for the placement of message popover control.
+  */
 @JSGlobal("sap.m.VerticalPlacementType")
 @js.native
 object VerticalPlacementType extends js.Object {

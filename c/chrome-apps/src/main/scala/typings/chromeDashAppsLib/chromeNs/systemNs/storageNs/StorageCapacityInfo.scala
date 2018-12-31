@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StorageCapacityInfo extends js.Object {
   /** The available capacity of the storage device, in bytes. */
   var availableCapacity: chromeDashAppsLib.chromeNs.integer

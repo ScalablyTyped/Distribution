@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Address extends js.Object {
   def getCityName(): java.lang.String
   def getCountryCode(): java.lang.String

@@ -18,13 +18,10 @@ trait Base extends js.Object {
   var utils: Utils = js.native
   // http://dc-js.github.io/dc.js/docs/html/core.js.html, Line 20
   var version: java.lang.String = js.native
-  // http://dc-js.github.io/dc.js/docs/html/dc.barChart.html
   def barChart(parent: CompositeChart): BarChart = js.native
-  // http://dc-js.github.io/dc.js/docs/html/dc.barChart.html
   def barChart(parent: CompositeChart, chartGroup: java.lang.String): BarChart = js.native
   // http://dc-js.github.io/dc.js/docs/html/dc.barChart.html
   def barChart(parent: java.lang.String): BarChart = js.native
-  // http://dc-js.github.io/dc.js/docs/html/dc.barChart.html
   def barChart(parent: java.lang.String, chartGroup: java.lang.String): BarChart = js.native
   def boxPlot(parent: java.lang.String): BoxPlot = js.native
   def boxPlot(parent: java.lang.String, chartGroup: java.lang.String): BoxPlot = js.native
@@ -53,13 +50,10 @@ trait Base extends js.Object {
   def heatMap(parent: java.lang.String, chartGroup: java.lang.String): HeatMap = js.native
   def instanceOfChart(`object`: js.Any): scala.Boolean = js.native
   def legend(): Legend = js.native
-  // http://dc-js.github.io/dc.js/docs/html/dc.lineChart.html
   def lineChart(parent: CompositeChart): LineChart = js.native
-  // http://dc-js.github.io/dc.js/docs/html/dc.lineChart.html
   def lineChart(parent: CompositeChart, chartGroup: java.lang.String): LineChart = js.native
   // http://dc-js.github.io/dc.js/docs/html/dc.lineChart.html
   def lineChart(parent: java.lang.String): LineChart = js.native
-  // http://dc-js.github.io/dc.js/docs/html/dc.lineChart.html
   def lineChart(parent: java.lang.String, chartGroup: java.lang.String): LineChart = js.native
   def numberDisplay(parent: java.lang.String): NumberDisplayWidget = js.native
   def numberDisplay(parent: java.lang.String, chartGroup: java.lang.String): NumberDisplayWidget = js.native
@@ -85,10 +79,20 @@ trait Base extends js.Object {
   def seriesChart(parent: java.lang.String): SeriesChart = js.native
   def seriesChart(parent: java.lang.String, chartGroup: java.lang.String): SeriesChart = js.native
   def transition(
-    selections: d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _],
+    selections: d3DashSelectionLib.d3DashSelectionMod.Selection[
+      _, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+      d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+    ],
     duration: scala.Double,
     callback: js.Function1[
-      /* s */ d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _], 
+      /* s */ d3DashSelectionLib.d3DashSelectionMod.Selection[
+        _, 
+        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+        d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+        /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+      ], 
       scala.Unit
     ]
   ): scala.Unit = js.native

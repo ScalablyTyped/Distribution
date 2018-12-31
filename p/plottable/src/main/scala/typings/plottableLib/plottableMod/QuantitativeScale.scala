@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSImport("plottable", "QuantitativeScale")
 @js.native
+/**
+  * A QuantitativeScale is a Scale that maps number-like values to numbers.
+  * It is invertible and continuous.
+  *
+  * @constructor
+  */
 class QuantitativeScale[D] ()
   extends plottableLib.buildSrcScalesQuantitativeScaleMod.QuantitativeScale[D]
 

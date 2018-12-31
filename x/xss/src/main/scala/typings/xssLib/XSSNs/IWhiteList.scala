@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IWhiteList extends js.Object {
   var a: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var abbr: js.UndefOr[js.Array[java.lang.String]] = js.undefined

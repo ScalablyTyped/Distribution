@@ -13,34 +13,34 @@ class SimpleWebDriverClient protected () extends js.Object {
   /* private */ def createSeleniumRequest(method: js.Any, messageUrl: js.Any): js.Any = js.native
   /* private */ def createSeleniumRequest(method: js.Any, messageUrl: js.Any, data: js.Any): js.Any = js.native
   /**
-       * Send an execute script command.
-       *
-       * @param sessionId
-       * @param data A JSON blob with the script and arguments to execute.
-       */
+    * Send an execute script command.
+    *
+    * @param sessionId
+    * @param data A JSON blob with the script and arguments to execute.
+    */
   def execute(sessionId: java.lang.String, data: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       * Send an execute async script command.
-       *
-       * @param sessionId
-       * @param data A JSON blob with the script and arguments to execute.
-       */
+    * Send an execute async script command.
+    *
+    * @param sessionId
+    * @param data A JSON blob with the script and arguments to execute.
+    */
   def executeAsync(sessionId: java.lang.String, data: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       * Get the location of an element.
-       *
-       * @param sessionId
-       * @param elementId
-       * @returns Promise<{}> A promise that resolves with the x and y coordinates of the element.
-       */
+    * Get the location of an element.
+    *
+    * @param sessionId
+    * @param elementId
+    * @returns Promise<{}> A promise that resolves with the x and y coordinates of the element.
+    */
   def getLocation(sessionId: java.lang.String, elementId: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       * Get the size of an element.
-       *
-       * @param sessionId
-       * @param elementId
-       * @returns Promise<{}> A promise that resolves with the height and width of the element.
-       */
+    * Get the size of an element.
+    *
+    * @param sessionId
+    * @param elementId
+    * @returns Promise<{}> A promise that resolves with the height and width of the element.
+    */
   def getSize(sessionId: java.lang.String, elementId: java.lang.String): js.Promise[scala.Unit] = js.native
 }
 

@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class MaintenanceTrigger protected () extends js.Object {
   /**
-                   * Initializes a new instance of a maintenance trigger.
-                   * @param freshnessTime The number of minutes to wait before scheduling the background task. The system schedules the task within 15 minutes after freshnessTime elapses.
-                   * @param oneShot True if the maintenance trigger is used once; false if it is used each time the freshnessTime interval elapses.
-                   */
+    * Initializes a new instance of a maintenance trigger.
+    * @param freshnessTime The number of minutes to wait before scheduling the background task. The system schedules the task within 15 minutes after freshnessTime elapses.
+    * @param oneShot True if the maintenance trigger is used once; false if it is used each time the freshnessTime interval elapses.
+    */
   def this(freshnessTime: scala.Double, oneShot: scala.Boolean) = this()
   /** Gets the interval of a maintenance trigger. */
   var freshnessTime: scala.Double = js.native

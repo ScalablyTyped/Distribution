@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ManagedZonesResource extends js.Object {
   /** Create a new ManagedZone. */
   def create(request: gapiDotClientDotDnsLib.Anon_ProjectPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[ManagedZone]

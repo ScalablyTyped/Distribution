@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AddressInfo extends js.Object {
   var connectArgs: stompitLib.libConnectMod.connectNs.ConnectOptions
   var host: js.UndefOr[java.lang.String] = js.undefined

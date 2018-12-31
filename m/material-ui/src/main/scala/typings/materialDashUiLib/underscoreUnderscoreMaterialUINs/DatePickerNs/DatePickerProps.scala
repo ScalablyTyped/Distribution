@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatePickerProps extends js.Object {
   // <TextField/> is the element that get the 'other' properties
   var DateTimeFormat: js.UndefOr[stdLib.Anon_LocalesOptions] = js.undefined

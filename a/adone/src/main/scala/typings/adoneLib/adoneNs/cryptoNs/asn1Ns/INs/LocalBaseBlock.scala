@@ -14,8 +14,8 @@ class LocalBaseBlock () extends js.Object {
   var valueBeforeDecode: stdLib.ArrayBuffer = js.native
   var warnings: js.Array[java.lang.String] = js.native
   /**
-                   * Convertion for the block to JSON object
-                   */
+    * Convertion for the block to JSON object
+    */
   def toJSON(): JsonLocalBaseBlock = js.native
 }
 
@@ -23,8 +23,8 @@ class LocalBaseBlock () extends js.Object {
 @js.native
 object LocalBaseBlock extends js.Object {
   /**
-                   * Aux function, need to get a block name. Need to have it here for inhiritence
-                   */
+    * Aux function, need to get a block name. Need to have it here for inhiritence
+    */
   def blockName(): java.lang.String = js.native
 }
 

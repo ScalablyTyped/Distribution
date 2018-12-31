@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PositionOptions extends js.Object {
   var bottomBuffer: js.UndefOr[scala.Double] = js.undefined
   var buffer: js.UndefOr[scala.Double] = js.undefined

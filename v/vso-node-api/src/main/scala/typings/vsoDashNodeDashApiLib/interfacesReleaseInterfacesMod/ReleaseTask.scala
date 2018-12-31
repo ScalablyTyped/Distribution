@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReleaseTask extends js.Object {
   var agentName: java.lang.String
   var dateEnded: stdLib.Date

@@ -16,24 +16,24 @@ class MaskEdit protected () extends Widget {
   @JSName("model")
   var model_MaskEdit: ejDotWebDotAllLib.ejNs.MaskEditNs.Model = js.native
   /** To clear the text in mask edit textbox control.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def clear(): scala.Unit = js.native
   /** To disable the mask edit textbox control.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def disable(): scala.Unit = js.native
   /** To enable the mask edit textbox control.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def enable(): scala.Unit = js.native
   /** To obtained the pure value of the text value, removes all the symbols in mask edit textbox control.
-           * @returns {string}
-           */
+    * @returns {string}
+    */
   def get_StrippedValue(): java.lang.String = js.native
   /** To obtained the textbox value as such that, Just replace all '_' to ' '(space) in mask edit textbox control.
-           * @returns {string}
-           */
+    * @returns {string}
+    */
   def get_UnstrippedValue(): java.lang.String = js.native
 }
 

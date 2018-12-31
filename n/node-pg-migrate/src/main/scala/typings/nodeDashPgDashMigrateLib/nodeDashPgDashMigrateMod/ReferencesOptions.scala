@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReferencesOptions extends js.Object {
   var `match`: js.UndefOr[
     nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.FULL | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.SIMPLE

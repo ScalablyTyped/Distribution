@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RelatedVideoClickEventUIParam extends js.Object {
   /**
   	 * Get the relatedVideo object from the relatedVideos array.

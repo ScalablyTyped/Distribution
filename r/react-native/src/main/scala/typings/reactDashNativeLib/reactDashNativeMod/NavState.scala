@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavState
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var canGoBack: js.UndefOr[scala.Boolean] = js.undefined

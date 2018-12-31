@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion
 //#region 联系人 https://docs.alipay.com/mini/api/ui-contact
-
 trait ChoosePhoneContactOptions
   extends BaseOptions[js.Any, js.Any] {
   /**

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HTMLElementTagNameMap extends js.Object {
   var a: HTMLAnchorElement
   var abbr: HTMLElement

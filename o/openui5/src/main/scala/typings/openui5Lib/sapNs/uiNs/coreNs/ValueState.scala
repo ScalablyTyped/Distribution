@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ValueState extends js.Object
 
 /**
-       * Marker for the correctness of the current value.
-      */
+  * Marker for the correctness of the current value.
+  */
 @JSGlobal("sap.ui.core.ValueState")
 @js.native
 object ValueState extends js.Object {

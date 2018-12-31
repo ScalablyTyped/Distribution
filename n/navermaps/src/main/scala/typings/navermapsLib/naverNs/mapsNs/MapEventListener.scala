@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-   * Interfaces
-   */
-
+  * Interfaces
+  */
 trait MapEventListener extends js.Object {
   var eventName: java.lang.String
   var listenerId: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var async: js.UndefOr[scala.Boolean] = js.undefined
   var dispose: js.UndefOr[js.Function1[/* value */ js.Any, scala.Unit]] = js.undefined

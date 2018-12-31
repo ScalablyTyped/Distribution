@@ -5,22 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeploymentAttempt extends js.Object {
   var attempt: scala.Double
   var deploymentId: scala.Double
   /**
-       * Error log to show any unexpected error that occurred during executing deploy step
-       */
+    * Error log to show any unexpected error that occurred during executing deploy step
+    */
   var errorLog: java.lang.String
   /**
-       * Specifies whether deployment has started or not
-       */
+    * Specifies whether deployment has started or not
+    */
   var hasStarted: scala.Boolean
   var id: scala.Double
   /**
-       * All the issues related to the deployment
-       */
+    * All the issues related to the deployment
+    */
   var issues: js.Array[Issue]
   var job: ReleaseTask
   var lastModifiedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef

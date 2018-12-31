@@ -6,32 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * Represents BSON Code type
-             */
+  * Represents BSON Code type
+  */
 @JSGlobal("adone.data.bson.Code")
 @js.native
 class Code protected ()
   extends adoneLib.adoneNs.dataNs.bsonNs.INs.Type {
   /**
-                   * @param code a string or function
-                   * @param scope an optional scope for the function
-                   */
+    * @param code a string or function
+    * @param scope an optional scope for the function
+    */
   def this(code: java.lang.String) = this()
-  /**
-                   * @param code a string or function
-                   * @param scope an optional scope for the function
-                   */
-  def this(code: js.Function1[/* repeated */js.Any, scala.Unit]) = this()
-  /**
-                   * @param code a string or function
-                   * @param scope an optional scope for the function
-                   */
+  def this(code: js.Function1[/* repeated */ js.Any, scala.Unit]) = this()
   def this(code: java.lang.String, scope: js.Object) = this()
-  /**
-                   * @param code a string or function
-                   * @param scope an optional scope for the function
-                   */
-  def this(code: js.Function1[/* repeated */js.Any, scala.Unit], scope: js.Object) = this()
+  def this(code: js.Function1[/* repeated */ js.Any, scala.Unit], scope: js.Object) = this()
   /* CompleteClass */
   override var _bsontype: java.lang.String = js.native
   @JSName("_bsontype")

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DraftsResource extends js.Object {
   /** Creates a new draft with the DRAFT label. */
   def create(request: gapiDotClientDotGmailLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Draft]

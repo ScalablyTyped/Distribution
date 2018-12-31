@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartSeriesDefaults extends js.Object {
   var area: js.UndefOr[js.Any] = js.undefined
   var bar: js.UndefOr[js.Any] = js.undefined

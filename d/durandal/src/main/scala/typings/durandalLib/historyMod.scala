@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * This module is based on Backbone's core history support. It abstracts away the low level details of working with browser history and url changes in order to provide a solid foundation for a router.
- * @requires system
- * @requires jquery
- */
+  * This module is based on Backbone's core history support. It abstracts away the low level details of working with browser history and url changes in order to provide a solid foundation for a router.
+  * @requires system
+  * @requires jquery
+  */
 @JSImport("plugins/history", JSImport.Namespace)
 @js.native
 object historyMod extends js.Object {

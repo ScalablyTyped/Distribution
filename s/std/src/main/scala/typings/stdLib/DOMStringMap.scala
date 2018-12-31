@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DOMStringMap
   extends /* name */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DefaultTabBarProps extends js.Object {
   var activeTextColor: js.UndefOr[java.lang.String] = js.undefined
   var backgroundColor: js.UndefOr[java.lang.String] = js.undefined

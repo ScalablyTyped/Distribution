@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICurrentApp extends js.Object {
   var appId: java.lang.String
   var licenseInformation: LicenseInformation

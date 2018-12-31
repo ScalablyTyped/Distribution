@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // The profile of a user on a social network.
-
 trait UserProfile extends js.Object {
   // Image URI (e.g. data:image/png;base64,adkwe329...)
   var imageData: js.UndefOr[java.lang.String] = js.undefined

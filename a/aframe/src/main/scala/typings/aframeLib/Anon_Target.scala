@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Target[D] extends js.Object {
   var detail: D
   var target: stdLib.EventTarget with (aframeLib.aframeMod.Entity[

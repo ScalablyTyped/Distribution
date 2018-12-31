@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimescaleTier extends js.Object {
   var backgroundColor: js.Any
   var font: js.Any

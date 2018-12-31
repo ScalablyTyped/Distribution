@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** dateArithmetic Public Instance Methods */
-
 trait dateArithmeticStatic extends js.Object {
   /** Add specified amount of units to a provided date and return new date as a result */
   def add(date: stdLib.Date, num: scala.Double, unit: Unit): stdLib.Date

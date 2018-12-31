@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Common properties for all manifest.json files */
-
 trait ManifestBase extends js.Object {
   var applications: js.UndefOr[firefoxDashWebextDashBrowserLib.Anon_Gecko] = js.undefined
   var author: js.UndefOr[java.lang.String] = js.undefined

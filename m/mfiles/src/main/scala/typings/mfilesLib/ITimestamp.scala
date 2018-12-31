@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITimestamp extends js.Object {
   var Day: scala.Double
   var Fraction: scala.Double

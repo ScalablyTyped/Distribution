@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateIntentRequest extends js.Object {
   var intent: Intent
   var intentView: js.UndefOr[IntentView] = js.undefined

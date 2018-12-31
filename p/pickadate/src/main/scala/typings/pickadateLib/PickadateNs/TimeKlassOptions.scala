@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimeKlassOptions extends KlassOptions {
    // default 'picker picker--time'
   // List of times

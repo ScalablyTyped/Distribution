@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MarkerOptions extends js.Object {
   var animation: js.UndefOr[js.Any] = js.undefined
   var clickable: js.UndefOr[scala.Boolean] = js.undefined

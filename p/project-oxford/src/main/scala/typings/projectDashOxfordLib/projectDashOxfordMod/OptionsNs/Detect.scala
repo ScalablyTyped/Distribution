@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Detect extends js.Object {
    // Analyze face landmarks?
   var analyzesAge: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeyComponentsPrivate extends js.Object {
   var coeff: nodeLib.Buffer
   var d: nodeLib.Buffer

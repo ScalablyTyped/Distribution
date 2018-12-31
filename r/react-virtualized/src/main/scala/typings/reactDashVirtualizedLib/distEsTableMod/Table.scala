@@ -17,15 +17,12 @@ class Table ()
   def measureAllRows(): scala.Unit = js.native
   /** See Grid#recomputeGridSize */
   def recomputeRowHeights(): scala.Unit = js.native
-  /** See Grid#recomputeGridSize */
   def recomputeRowHeights(index: scala.Double): scala.Unit = js.native
   /** See Grid#scrollToPosition */
   def scrollToPosition(): scala.Unit = js.native
-  /** See Grid#scrollToPosition */
   def scrollToPosition(scrollTop: scala.Double): scala.Unit = js.native
   /** See Grid#scrollToCell */
   def scrollToRow(): scala.Unit = js.native
-  /** See Grid#scrollToCell */
   def scrollToRow(index: scala.Double): scala.Unit = js.native
 }
 

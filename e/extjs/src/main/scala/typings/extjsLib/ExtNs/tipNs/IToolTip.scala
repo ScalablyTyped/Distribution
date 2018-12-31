@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IToolTip extends ITip {
   /** [Config Option] (String) */
   var anchor: js.UndefOr[java.lang.String] = js.undefined

@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("aws-sdk", "SES")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class SES ()
   extends awsDashSdkLib.clientsAllMod.SES {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsSesMod.SESNs.ClientConfiguration) = this()
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Issue extends js.Object {
   /** List of issues. Applicable only for Collection Edition and Omnibus. */
   var issue: js.UndefOr[js.Array[Anon_IssueDisplayNumber]] = js.undefined

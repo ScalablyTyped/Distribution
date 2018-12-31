@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IToken extends js.Object {
   var `match`: java.lang.String
   var otherVal: js.Any

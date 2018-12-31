@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Visitor extends js.Object {
   var AssemblyAssignment: js.UndefOr[js.Function1[/* node */ AssemblyAssignment, scala.Unit]] = js.undefined
   var AssemblyBlock: js.UndefOr[js.Function1[/* node */ AssemblyBlock, scala.Unit]] = js.undefined

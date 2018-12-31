@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StripeStatic extends js.Object {
   var applePay: StripeApplePay
   var bankAccount: StripeBankAccount

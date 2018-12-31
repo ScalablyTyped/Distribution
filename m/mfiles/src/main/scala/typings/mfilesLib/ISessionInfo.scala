@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISessionInfo extends js.Object {
   val ACLMode: mfilesLib.MFilesNs.MFACLMode
   val AccountName: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IWhoisData extends js.Object {
   /** Channels */
   var channels: js.Array[java.lang.String]

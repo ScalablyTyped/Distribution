@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options
   extends stdLib.RequestInit {
   var afterJSON: js.UndefOr[js.Function1[/* body */ js.Any, scala.Unit]] = js.undefined

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * Describes a service on the network which is published by Bonjour.
 		 */
-
 trait BonjourService
   extends titaniumLib.TitaniumNs.Proxy {
   /**

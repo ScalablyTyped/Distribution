@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class Database protected ()
   extends atFirebaseDatabaseLib.distSrcApiDatabaseMod.Database {
   /**
-       * The constructor should not be called by users of our public API.
-       * @param {!Repo} repo_
-       */
+    * The constructor should not be called by users of our public API.
+    * @param {!Repo} repo_
+    */
   def this(`repo_`: atFirebaseDatabaseLib.distSrcCoreRepoMod.Repo) = this()
 }
 

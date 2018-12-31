@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 	 *
 	 * see http://docs.angular-formly.com/docs/custom-templates#section-formlyconfig-settype-options
 	 */
-
 trait ITypeOptions extends js.Object {
   var apiCheck: js.UndefOr[
     org.scalablytyped.runtime.StringDictionary[angularLib.angularMod.Global.Function]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InboundMessageBase extends MessageBase {
   var CcFull: js.Array[ExpandedEmail]
   var Date: java.lang.String

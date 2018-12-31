@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActionCodeSettings extends js.Object {
   var android: js.UndefOr[atFirebaseAuthDashTypesLib.Anon_InstallApp] = js.undefined
   var dynamicLinkDomain: js.UndefOr[java.lang.String] = js.undefined

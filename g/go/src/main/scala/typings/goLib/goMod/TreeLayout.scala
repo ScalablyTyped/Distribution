@@ -6,16 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * This layout positions nodes in a tree-like arrangement.
-    */
+  * This layout positions nodes in a tree-like arrangement.
+  */
 @JSImport("go", "TreeLayout")
 @js.native
+/**
+  * Constructs a TreeLayout with no Layout.network and with no owning Layout.diagram.
+  */
 class TreeLayout ()
   extends goLib.goMod.goNs.TreeLayout
 
 /**
-    * This layout positions nodes in a tree-like arrangement.
-    */
+  * This layout positions nodes in a tree-like arrangement.
+  */
 @JSImport("go", "TreeLayout")
 @js.native
 object TreeLayout extends js.Object {

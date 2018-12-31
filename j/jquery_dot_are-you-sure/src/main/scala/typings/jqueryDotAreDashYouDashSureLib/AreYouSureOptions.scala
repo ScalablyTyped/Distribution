@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**Options available to control dirty form checking*/
-
 trait AreYouSureOptions extends js.Object {
   /**Callback when form is found to be dirty - allows control of submit/reset buttons etc*/
   var change: js.UndefOr[js.Function] = js.undefined

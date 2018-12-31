@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PublishCompositeConfig4[InLevel1, InLevel2, InLevel3, InLevel4, OutLevel] extends js.Object {
   var children: js.UndefOr[js.Array[PublishCompositeConfigN]] = js.undefined
   var collectionName: js.UndefOr[java.lang.String] = js.undefined

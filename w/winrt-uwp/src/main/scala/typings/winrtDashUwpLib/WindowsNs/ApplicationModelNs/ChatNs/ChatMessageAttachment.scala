@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class ChatMessageAttachment protected () extends js.Object {
   /**
-                   * Initializes a new instance of the ChatMessageAttachment class.
-                   * @param mimeType The MIME type of the attachment.
-                   * @param dataStreamReference A stream containing the attachment data.
-                   */
+    * Initializes a new instance of the ChatMessageAttachment class.
+    * @param mimeType The MIME type of the attachment.
+    * @param dataStreamReference A stream containing the attachment data.
+    */
   def this(mimeType: java.lang.String, dataStreamReference: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStreamReference) = this()
   /** Gets or sets a stream reference for a message attachment. */
   var dataStreamReference: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStreamReference = js.native

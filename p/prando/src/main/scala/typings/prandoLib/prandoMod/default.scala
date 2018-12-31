@@ -7,18 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("prando", JSImport.Default)
 @js.native
+/**
+  * Generate a new Prando pseudo-random number generator.
+  *
+  * @param seed - A number or string seed that determines which pseudo-random number sequence will be created. Defaults to current time.
+  */
 class default () extends Prando {
-  /**
-       * Generate a new Prando pseudo-random number generator.
-       *
-       * @param seed - A number or string seed that determines which pseudo-random number sequence will be created. Defaults to current time.
-       */
   def this(seed: java.lang.String) = this()
-  /**
-       * Generate a new Prando pseudo-random number generator.
-       *
-       * @param seed - A number or string seed that determines which pseudo-random number sequence will be created. Defaults to current time.
-       */
   def this(seed: scala.Double) = this()
 }
 

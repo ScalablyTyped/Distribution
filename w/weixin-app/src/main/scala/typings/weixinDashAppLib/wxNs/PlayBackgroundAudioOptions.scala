@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlayBackgroundAudioOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 封面URL */

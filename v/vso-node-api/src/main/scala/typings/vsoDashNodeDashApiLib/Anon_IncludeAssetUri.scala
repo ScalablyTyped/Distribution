@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IncludeAssetUri extends js.Object {
   var allAttributes: scala.Double
   var excludeNonValidated: scala.Double

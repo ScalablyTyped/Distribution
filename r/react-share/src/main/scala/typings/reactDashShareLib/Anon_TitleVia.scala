@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TitleVia extends js.Object {
   var hashtags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Title of the shared page */

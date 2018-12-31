@@ -29,43 +29,43 @@ abstract class StorageFileQueryResult () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[IStorageQueryResultBase, _]
   ): scala.Unit = js.native
   /**
-                   * Modifies query results based on new QueryOptions .
-                   * @param newQueryOptions The new query options.
-                   */
+    * Modifies query results based on new QueryOptions .
+    * @param newQueryOptions The new query options.
+    */
   def applyNewQueryOptions(newQueryOptions: QueryOptions): scala.Unit = js.native
   /**
-                   * Retrieves the index of the file from the query results that most closely matches the specified property value (or file, if used with FileActivatedEventArgs.NeighboringFilesQuery ). The property that is matched is determined by the first SortEntry of the QueryOptions.SortOrder list.
-                   * @param value The property value to match when searching the query results. The property to that is used to match this value is the property in the first SortEntry of the QueryOptions.SortOrder list.
-                   * @return When this method completes successfully, it returns the index of the matched file in the query results or the index of the file in the FileActivatedEventArgs.NeighboringFilesQuery . In the latter case, the file is expected to be sourced from FileActivatedEventArgs.Files .
-                   */
+    * Retrieves the index of the file from the query results that most closely matches the specified property value (or file, if used with FileActivatedEventArgs.NeighboringFilesQuery ). The property that is matched is determined by the first SortEntry of the QueryOptions.SortOrder list.
+    * @param value The property value to match when searching the query results. The property to that is used to match this value is the property in the first SortEntry of the QueryOptions.SortOrder list.
+    * @return When this method completes successfully, it returns the index of the matched file in the query results or the index of the file in the FileActivatedEventArgs.NeighboringFilesQuery . In the latter case, the file is expected to be sourced from FileActivatedEventArgs.Files .
+    */
   def findStartIndexAsync(value: js.Any): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Double] = js.native
   /**
-                   * Retrieves the query options used to determine query results.
-                   * @return The query options.
-                   */
+    * Retrieves the query options used to determine query results.
+    * @return The query options.
+    */
   def getCurrentQueryOptions(): QueryOptions = js.native
   /**
-                   * Retrieves a list of all the files in the query result set.
-                   * @return When this method completes successfully, it returns a list (type IVectorView ) of files that are represented by storageFile objects.
-                   */
+    * Retrieves a list of all the files in the query result set.
+    * @return When this method completes successfully, it returns a list (type IVectorView ) of files that are represented by storageFile objects.
+    */
   def getFilesAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
   /**
-                   * Retrieves a list of files in a specified range.
-                   * @param startIndex The zero-based index of the first file to retrieve. This parameter is 0 by default.
-                   * @param maxNumberOfItems The maximum number of files to retrieve. Use -1 to retrieve all files. If the range contains fewer files than the max number, all files in the range are returned.
-                   * @return When this method completes successfully, it returns a list (type IVectorView ) of files that are represented by storageFile objects.
-                   */
+    * Retrieves a list of files in a specified range.
+    * @param startIndex The zero-based index of the first file to retrieve. This parameter is 0 by default.
+    * @param maxNumberOfItems The maximum number of files to retrieve. Use -1 to retrieve all files. If the range contains fewer files than the max number, all files in the range are returned.
+    * @return When this method completes successfully, it returns a list (type IVectorView ) of files that are represented by storageFile objects.
+    */
   def getFilesAsync(startIndex: scala.Double, maxNumberOfItems: scala.Double): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
   /**
-                   * Retrieves the number of files in the set of query results.
-                   * @return When this method completes successfully, it returns the number of files in the location that match the query.
-                   */
+    * Retrieves the number of files in the set of query results.
+    * @return When this method completes successfully, it returns the number of files in the location that match the query.
+    */
   def getItemCountAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Double] = js.native
   /**
-                   * Gets matching file properties with corresponding text ranges.
-                   * @param file The file to query for properties.
-                   * @return The matched properties and corresponding text ranges.
-                   */
+    * Gets matching file properties with corresponding text ranges.
+    * @param file The file to query for properties.
+    * @return The matched properties and corresponding text ranges.
+    */
   def getMatchingPropertiesWithRanges(file: winrtDashUwpLib.WindowsNs.StorageNs.StorageFile): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IMap[
     java.lang.String, 
     winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILookup[TKey, TElement] extends js.Object {
   def contains(key: TKey): scala.Boolean
   def count(): scala.Double

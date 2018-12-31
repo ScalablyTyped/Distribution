@@ -12,14 +12,10 @@ trait LodashSortBy extends js.Object {
   ): js.Array[T] = js.native
   def apply[T /* <: js.Object */](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[
-      lodashLib.lodashMod.underscoreNs.ValueIteratee[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-      ]
+      lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
     ],
     collection: T
-  ): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def apply[T](
     iteratees: lodashLib.lodashMod.underscoreNs.Many[lodashLib.lodashMod.underscoreNs.ValueIteratee[T]],
     collection: lodashLib.lodashMod.underscoreNs.List[T]

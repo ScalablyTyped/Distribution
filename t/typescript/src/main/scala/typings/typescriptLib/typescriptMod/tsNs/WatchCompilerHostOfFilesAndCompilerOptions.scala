@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Host to create watch with root files and options
-     */
+  * Host to create watch with root files and options
+  */
 @js.native
 trait WatchCompilerHostOfFilesAndCompilerOptions[T /* <: BuilderProgram */] extends WatchCompilerHost[T] {
   /** Compiler options */

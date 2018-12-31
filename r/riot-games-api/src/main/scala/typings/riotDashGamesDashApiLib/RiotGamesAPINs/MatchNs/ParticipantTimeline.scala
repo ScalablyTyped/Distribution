@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParticipantTimeline extends js.Object {
   var ancientGolemAssistsPerMinCounts: ParticipantTimelineData
   var ancientGolemKillsPerMinCounts: ParticipantTimelineData

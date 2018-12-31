@@ -12,8 +12,8 @@ sealed trait EventTypeQueryFlags extends js.Object
 @js.native
 object EventTypeQueryFlags extends js.Object {
   /**
-       * IncludeFields will include all fields and their types
-       */
+    * IncludeFields will include all fields and their types
+    */
   @js.native
   sealed trait IncludeFields
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.EventTypeQueryFlags

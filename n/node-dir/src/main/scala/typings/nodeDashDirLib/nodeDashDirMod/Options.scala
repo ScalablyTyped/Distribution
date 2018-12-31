@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   // control if done function called on error (defaults to true)
   var doneOnErr: js.UndefOr[scala.Boolean] = js.undefined

@@ -21,9 +21,9 @@ abstract class UsbInterruptInPipe () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[UsbInterruptInPipe, UsbInterruptInEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Starts an asynchronous operation to clear a stall condition (endpoint halt) on the USB interrupt IN endpoint that is associated with the pipe.
-                   * @return An IAsyncAction object that is used to control the asynchronous operation.
-                   */
+    * Starts an asynchronous operation to clear a stall condition (endpoint halt) on the USB interrupt IN endpoint that is associated with the pipe.
+    * @return An IAsyncAction object that is used to control the asynchronous operation.
+    */
   def clearStallAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /** Raised when the interrupt pipe receives data from the interrupt IN endpoint. */
   def ondatareceived(ev: UsbInterruptInEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[UsbInterruptInPipe]): scala.Unit = js.native

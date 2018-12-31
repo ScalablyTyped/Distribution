@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Identifier extends BaseNode {
   var decorators: js.Array[Decorator] | scala.Null
   var name: java.lang.String

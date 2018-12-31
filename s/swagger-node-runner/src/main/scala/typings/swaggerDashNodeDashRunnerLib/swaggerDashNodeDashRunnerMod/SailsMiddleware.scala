@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SailsMiddleware extends Middleware {
   /** Express style middleware */
   def chain(): js.Function3[

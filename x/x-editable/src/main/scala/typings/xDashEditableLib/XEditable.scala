@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait XEditable extends js.Object {
   var options: XEditableOptions
   def activate(): scala.Unit

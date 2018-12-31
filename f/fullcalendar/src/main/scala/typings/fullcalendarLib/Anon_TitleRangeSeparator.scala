@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TitleRangeSeparator extends js.Object {
   var agendaEventMinHeight: scala.Double
   var allDayText: java.lang.String

@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PatternIndexPathNumber extends js.Object {
   /**
-                       * File path
-                       */
+    * File path
+    */
   var path: java.lang.String
   /**
-                       * Pattern index
-                       */
+    * Pattern index
+    */
   var patternIndex: scala.Double
 }
 

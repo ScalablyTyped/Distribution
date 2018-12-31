@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SteamUser extends js.Object {
   var _json: steamDashLoginLib.Anon_Primaryclanid
   var avatar: steamDashLoginLib.Anon_Medium

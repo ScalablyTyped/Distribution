@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TwixFormatOptions extends js.Object {
   var allDay: js.UndefOr[js.Any] = js.undefined
   var dayFormat: js.UndefOr[java.lang.String] = js.undefined

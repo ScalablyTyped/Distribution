@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PatternProps extends js.Object {
   var height: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
   var id: java.lang.String

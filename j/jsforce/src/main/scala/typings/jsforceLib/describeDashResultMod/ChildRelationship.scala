@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChildRelationship extends js.Object {
   var cascadeDelete: scala.Boolean
   var childSObject: java.lang.String

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class ReflectiveKey protected () extends js.Object {
   /**
-       * Private
-       */
+    * Private
+    */
   def this(token: js.Object, id: scala.Double) = this()
   val displayName: java.lang.String = js.native
   var id: scala.Double = js.native
@@ -21,12 +21,12 @@ class ReflectiveKey protected () extends js.Object {
 @js.native
 object ReflectiveKey extends js.Object {
   /**
-       * @returns the number of keys registered in the system.
-       */
+    * @returns the number of keys registered in the system.
+    */
   val numberOfKeys: scala.Double = js.native
   /**
-       * Retrieves a `Key` for a token.
-       */
+    * Retrieves a `Key` for a token.
+    */
   def get(token: js.Object): atAngularCoreLib.srcDiReflectiveUnderscoreKeyMod.ReflectiveKey = js.native
 }
 

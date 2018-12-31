@@ -6,46 +6,26 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Class used to manage multiple sprites on the same spritesheet
-     * @see http://doc.babylonjs.com/babylon101/sprites
-     */
+  * Class used to manage multiple sprites on the same spritesheet
+  * @see http://doc.babylonjs.com/babylon101/sprites
+  */
 @JSGlobal("BABYLON.SpriteManager")
 @js.native
 class SpriteManager protected () extends ISpriteManager {
   /**
-           * Creates a new sprite manager
-           * @param name defines the manager's name
-           * @param imgUrl defines the sprite sheet url
-           * @param capacity defines the maximum allowed number of sprites
-           * @param cellSize defines the size of a sprite cell
-           * @param scene defines the hosting scene
-           * @param epsilon defines the epsilon value to align texture (0.01 by default)
-           * @param samplingMode defines the smapling mode to use with spritesheet
-           */
+    * Creates a new sprite manager
+    * @param name defines the manager's name
+    * @param imgUrl defines the sprite sheet url
+    * @param capacity defines the maximum allowed number of sprites
+    * @param cellSize defines the size of a sprite cell
+    * @param scene defines the hosting scene
+    * @param epsilon defines the epsilon value to align texture (0.01 by default)
+    * @param samplingMode defines the smapling mode to use with spritesheet
+    */
   def this(/** defines the manager's name */
   name: java.lang.String, imgUrl: java.lang.String, capacity: scala.Double, cellSize: js.Any, scene: Scene) = this()
-  /**
-           * Creates a new sprite manager
-           * @param name defines the manager's name
-           * @param imgUrl defines the sprite sheet url
-           * @param capacity defines the maximum allowed number of sprites
-           * @param cellSize defines the size of a sprite cell
-           * @param scene defines the hosting scene
-           * @param epsilon defines the epsilon value to align texture (0.01 by default)
-           * @param samplingMode defines the smapling mode to use with spritesheet
-           */
   def this(/** defines the manager's name */
   name: java.lang.String, imgUrl: java.lang.String, capacity: scala.Double, cellSize: js.Any, scene: Scene, epsilon: scala.Double) = this()
-  /**
-           * Creates a new sprite manager
-           * @param name defines the manager's name
-           * @param imgUrl defines the sprite sheet url
-           * @param capacity defines the maximum allowed number of sprites
-           * @param cellSize defines the size of a sprite cell
-           * @param scene defines the hosting scene
-           * @param epsilon defines the epsilon value to align texture (0.01 by default)
-           * @param samplingMode defines the smapling mode to use with spritesheet
-           */
   def this(/** defines the manager's name */
   name: java.lang.String, imgUrl: java.lang.String, capacity: scala.Double, cellSize: js.Any, scene: Scene, epsilon: scala.Double, samplingMode: scala.Double) = this()
   var _appendSpriteVertex: js.Any = js.native
@@ -69,21 +49,21 @@ class SpriteManager protected () extends ISpriteManager {
   /** defines the manager's name */
   var name: java.lang.String = js.native
   /**
-          * An event triggered when the manager is disposed.
-          */
+    * An event triggered when the manager is disposed.
+    */
   var onDisposeObservable: Observable[SpriteManager] = js.native
   /**
-           * Gets or sets the spritesheet texture
-           */
+    * Gets or sets the spritesheet texture
+    */
   var texture: Texture = js.native
   /**
-           * Releases all held resources
-           */
+    * Releases all held resources
+    */
   /* CompleteClass */
   override def dispose(): scala.Unit = js.native
   /**
-           * Callback called when the manager is disposed
-           */
+    * Callback called when the manager is disposed
+    */
   def onDispose(): scala.Unit = js.native
 }
 

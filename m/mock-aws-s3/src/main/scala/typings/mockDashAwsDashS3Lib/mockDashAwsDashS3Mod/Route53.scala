@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "Route53")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class Route53 ()
   extends awsDashSdkLib.awsDashSdkMod.Route53 {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsRoute53Mod.Route53Ns.ClientConfiguration) = this()
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaginationArrowProps[T]
   extends reactLib.reactMod.ReactNs.Props[T] {
   var direction: js.UndefOr[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ID3PieChart extends js.Object {
   def closeSegment(index: scala.Unit): scala.Unit
   def destroy(): scala.Unit

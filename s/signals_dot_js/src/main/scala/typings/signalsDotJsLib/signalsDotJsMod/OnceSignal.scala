@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation._
 class OnceSignal protected ()
   extends signalsDotJsLib.libOrgOsflashSignalsOnceSignalMod.OnceSignal {
   /**
-       * Creates a Signal instance to dispatch value objects.
-       * @param    valueClasses Any number of class references that enable type checks in dispatch().
-       * For example, new Signal(String, uint)
-       * would allow: signal.dispatch("the Answer", 42)
-       * but not: signal.dispatch(true, 42.5)
-       * nor: signal.dispatch()
-       *
-       * NOTE: In AS3, subclasses cannot call super.apply(null, valueClasses),
-       * but this constructor has logic to support super(valueClasses).
-       */
+    * Creates a Signal instance to dispatch value objects.
+    * @param    valueClasses Any number of class references that enable type checks in dispatch().
+    * For example, new Signal(String, uint)
+    * would allow: signal.dispatch("the Answer", 42)
+    * but not: signal.dispatch(true, 42.5)
+    * nor: signal.dispatch()
+    *
+    * NOTE: In AS3, subclasses cannot call super.apply(null, valueClasses),
+    * but this constructor has logic to support super(valueClasses).
+    */
   def this(valueClasses: js.Any*) = this()
 }
 

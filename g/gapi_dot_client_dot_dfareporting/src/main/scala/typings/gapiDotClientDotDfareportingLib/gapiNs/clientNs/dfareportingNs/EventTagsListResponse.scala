@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventTagsListResponse extends js.Object {
   /** Event tag collection. */
   var eventTags: js.UndefOr[js.Array[EventTag]] = js.undefined

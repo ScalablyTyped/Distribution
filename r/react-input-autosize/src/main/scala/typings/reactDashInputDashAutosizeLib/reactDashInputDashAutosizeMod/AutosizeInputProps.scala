@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AutosizeInputProps
   extends reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement]
      with reactLib.reactMod.ReactNs.ClassAttributes[reactLib.HTMLInputElement] {

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distSdkInternalElementsMod.IElement because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+/* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distSdkInternalElementsMod.IElement because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
 @JSImport("mendixmodelsdk/dist/sdk/internal/elements", "Element")
 @js.native
 abstract class Element protected () extends AbstractElement {
@@ -16,16 +16,16 @@ abstract class Element protected () extends AbstractElement {
   @JSName("unit")
   val unit_Element: mendixmodelsdkLib.distSdkInternalUnitsMod.ModelUnit = js.native
   /**
-       * Creates a deep copy of this element and its children.
-       */
+    * Creates a deep copy of this element and its children.
+    */
   def deepCopy(targetModel: mendixmodelsdkLib.distSdkInternalAbstractDashModelMod.IAbstractModel): this.type = js.native
   /**
-       * Creates a deep copy of this element and its children. Also returns a map from original to new IDs.
-       */
+    * Creates a deep copy of this element and its children. Also returns a map from original to new IDs.
+    */
   def deepCopyWithIdMap(targetModel: mendixmodelsdkLib.distSdkInternalAbstractDashModelMod.IAbstractModel): mendixmodelsdkLib.Anon_Copy = js.native
   /**
-       * Detaches this element from the model, so that it can be attached in a different place.
-       */
+    * Detaches this element from the model, so that it can be attached in a different place.
+    */
   def detach(): this.type = js.native
 }
 

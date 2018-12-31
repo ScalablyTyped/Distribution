@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Panel[T] extends js.Object {
   /** Whether or not the Panel is visible. */
   val visible: scala.Boolean

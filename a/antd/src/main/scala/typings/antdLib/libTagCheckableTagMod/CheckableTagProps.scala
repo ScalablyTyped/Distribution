@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CheckableTagProps extends js.Object {
   var checked: scala.Boolean
   var className: js.UndefOr[java.lang.String] = js.undefined

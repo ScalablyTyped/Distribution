@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * The Item object is a container for an item on an imaging device object. See the Items property on the Device or Item object for details on accessing
-     * Item objects.
-     */
+  * The Item object is a container for an item on an imaging device object. See the Items property on the Device or Item object for details on accessing
+  * Item objects.
+  */
 @JSGlobal("WIA.Item")
 @js.native
 class Item protected () extends js.Object {
@@ -38,23 +38,16 @@ class Item protected () extends js.Object {
   /** Returns the specified item in the collection by position */
   /** A collection of all child items for this item */
   def Items(Index: scala.Double): Item = js.native
-  /** Returns the specified item in the collection either by position or name. */
-  /** A collection of all properties for this item */
   def Properties(Index: java.lang.String): Property = js.native
   /** Returns the specified item in the collection either by position or name. */
   /** A collection of all properties for this item */
   def Properties(Index: scala.Double): Property = js.native
   /**
-           * Returns an ImageFile object, in this version, in the format specified in FormatID if supported, otherwise using the preferred format for this imaging
-           * device. Future versions may return a collection of ImageFile objects.
-           * @param string [FormatID='{00000000-0000-0000-0000-000000000000}']
-           */
+    * Returns an ImageFile object, in this version, in the format specified in FormatID if supported, otherwise using the preferred format for this imaging
+    * device. Future versions may return a collection of ImageFile objects.
+    * @param string [FormatID='{00000000-0000-0000-0000-000000000000}']
+    */
   def Transfer(): ImageFile = js.native
-  /**
-           * Returns an ImageFile object, in this version, in the format specified in FormatID if supported, otherwise using the preferred format for this imaging
-           * device. Future versions may return a collection of ImageFile objects.
-           * @param string [FormatID='{00000000-0000-0000-0000-000000000000}']
-           */
   def Transfer(FormatID: java.lang.String): ImageFile = js.native
 }
 

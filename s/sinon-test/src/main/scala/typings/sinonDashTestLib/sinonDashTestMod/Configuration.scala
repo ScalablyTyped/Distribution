@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Configuration extends js.Object {
   var injectInto: js.UndefOr[js.Any] = js.undefined
   var injectIntoThis: js.UndefOr[scala.Boolean] = js.undefined

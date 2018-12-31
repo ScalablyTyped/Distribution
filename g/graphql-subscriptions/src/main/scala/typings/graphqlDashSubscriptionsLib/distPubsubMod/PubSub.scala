@@ -13,6 +13,6 @@ class PubSub ()
   var ee: nodeLib.eventsMod.EventEmitter = js.native
   var subIdCounter: js.Any = js.native
   var subscriptions: js.Any = js.native
-  def subscribe(triggerName: java.lang.String, onMessage: js.Function1[/* repeated */js.Any, scala.Unit]): js.Promise[scala.Double] = js.native
+  def subscribe(triggerName: java.lang.String, onMessage: js.Function1[/* repeated */ js.Any, scala.Unit]): js.Promise[scala.Double] = js.native
 }
 

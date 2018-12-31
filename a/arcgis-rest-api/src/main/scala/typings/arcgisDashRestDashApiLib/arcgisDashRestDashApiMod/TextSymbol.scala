@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextSymbol extends MarkerSymbol {
   var backgroundColor: js.UndefOr[Color] = js.undefined
    // <size>;

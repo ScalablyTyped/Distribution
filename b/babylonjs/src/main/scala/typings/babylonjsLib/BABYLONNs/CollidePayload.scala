@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** @hidden */
-
 trait CollidePayload extends js.Object {
   var collider: SerializedColliderToWorker
   var collisionId: scala.Double

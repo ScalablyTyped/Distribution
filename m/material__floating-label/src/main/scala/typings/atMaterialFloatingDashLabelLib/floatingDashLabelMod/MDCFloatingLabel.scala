@@ -13,17 +13,17 @@ class MDCFloatingLabel ()
       atMaterialFloatingDashLabelLib.foundationMod.default
     ] {
   /**
-       * Styles label to float/dock.
-       * @param shouldFloat styles the label to float by adding float class
-       * if true, otherwise docks the label by removing the float class.
-       */
+    * Styles label to float/dock.
+    * @param shouldFloat styles the label to float by adding float class
+    * if true, otherwise docks the label by removing the float class.
+    */
   def float(shouldFloat: scala.Boolean): scala.Unit = js.native
   def getWidth(): scala.Double = js.native
   /**
-       * Styles the label to produce the label shake for errors.
-       * @param  shouldShake styles the label to shake by adding shake class
-       * if true, otherwise will stop shaking by removing shake class.
-       */
+    * Styles the label to produce the label shake for errors.
+    * @param  shouldShake styles the label to shake by adding shake class
+    * if true, otherwise will stop shaking by removing shake class.
+    */
   def shake(shouldShake: scala.Boolean): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISurface
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Method] Adds a Sprite to the surface

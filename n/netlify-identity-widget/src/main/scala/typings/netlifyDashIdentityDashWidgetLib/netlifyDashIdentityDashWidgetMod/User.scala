@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait User extends js.Object {
   var api: netlifyDashIdentityDashWidgetLib.Anon_DefaultHeaders
   var app_metadata: netlifyDashIdentityDashWidgetLib.Anon_Provider

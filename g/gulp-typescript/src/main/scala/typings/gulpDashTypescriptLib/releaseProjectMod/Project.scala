@@ -13,7 +13,7 @@ trait Project extends js.Object {
   val projectDirectory: java.lang.String = js.native
   val projectReferences: js.UndefOr[js.Array[typescriptLib.typescriptMod.tsNs.ProjectReference]] = js.native
   val rawConfig: js.Any = js.native
-  val typescript: js.UndefOr[js.Any] = js.native
+  val typescript: js.UndefOr[gulpDashTypescriptLib.Anon_CreateFunctionExpression] = js.native
   def apply(): ICompileStream = js.native
   def apply(reporter: gulpDashTypescriptLib.releaseReporterMod.Reporter): ICompileStream = js.native
   def src(`this`: Project): nodeLib.NodeJSNs.ReadWriteStream = js.native

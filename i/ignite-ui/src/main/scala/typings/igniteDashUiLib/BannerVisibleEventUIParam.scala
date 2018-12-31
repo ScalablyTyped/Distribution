@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BannerVisibleEventUIParam extends js.Object {
   /**
   	 * Get the banner object from the banners array.

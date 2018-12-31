@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StorageOptions extends js.Object {
   var autoSchema: js.UndefOr[scala.Boolean] = js.undefined
   var isSerial: js.UndefOr[scala.Boolean] = js.undefined

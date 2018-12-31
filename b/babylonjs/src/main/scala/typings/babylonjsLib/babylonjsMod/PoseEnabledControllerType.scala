@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * Defines the types of pose enabled controllers that are supported
-    */
+  * Defines the types of pose enabled controllers that are supported
+  */
 @JSImport("babylonjs", "PoseEnabledControllerType")
 @js.native
 object PoseEnabledControllerType extends js.Object {

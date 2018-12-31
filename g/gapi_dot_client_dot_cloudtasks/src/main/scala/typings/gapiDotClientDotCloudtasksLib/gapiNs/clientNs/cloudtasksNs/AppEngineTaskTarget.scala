@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AppEngineTaskTarget extends js.Object {
   /** Deprecated. Use AppEngineHttpRequest.app_engine_routing. */
   var appEngineRouting: js.UndefOr[AppEngineRouting] = js.undefined

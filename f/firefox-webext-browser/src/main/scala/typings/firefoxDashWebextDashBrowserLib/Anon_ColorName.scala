@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ColorName extends js.Object {
   /** The color of the contextual identity. */
   var color: js.UndefOr[java.lang.String] = js.undefined

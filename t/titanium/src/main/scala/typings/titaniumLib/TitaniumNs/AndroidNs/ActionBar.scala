@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 		 * An action bar is a window feature that identifies the application and user location,
 		 * and provides user actions and navigation modes.
 		 */
-
 trait ActionBar
   extends titaniumLib.TitaniumNs.Proxy {
   /**

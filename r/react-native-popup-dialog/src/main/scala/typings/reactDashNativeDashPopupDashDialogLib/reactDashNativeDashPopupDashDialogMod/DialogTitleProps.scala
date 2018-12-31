@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DialogTitleProps extends js.Object {
   var haveTitleBar: js.UndefOr[scala.Boolean] = js.undefined
   var title: java.lang.String

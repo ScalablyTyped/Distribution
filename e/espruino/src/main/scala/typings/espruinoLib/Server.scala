@@ -13,22 +13,22 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Server
   extends /**
-     * 
-     * @return  
-     */
+  * 
+  * @return  
+  */
 org.scalablytyped.runtime.Instantiable0[Server] {
   /**
-       * <p>Stop listening for new connections</p>
-       * 
-       * @url http://www.espruino.com/Reference#l_Server_close
-       */
+    * <p>Stop listening for new connections</p>
+    * 
+    * @url http://www.espruino.com/Reference#l_Server_close
+    */
   def close(): scala.Unit = js.native
   /**
-       * <p>Start listening for new connections on the given port</p>
-       * 
-       * @param port 
-       * @url http://www.espruino.com/Reference#l_Server_listen
-       */
+    * <p>Start listening for new connections on the given port</p>
+    * 
+    * @param port 
+    * @url http://www.espruino.com/Reference#l_Server_listen
+    */
   def listen(port: scala.Double): scala.Unit = js.native
 }
 

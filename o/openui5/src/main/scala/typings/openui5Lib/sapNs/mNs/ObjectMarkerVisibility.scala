@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ObjectMarkerVisibility extends js.Object
 
 /**
-     * Predefined visibility for ObjectMarker.
-    */
+  * Predefined visibility for ObjectMarker.
+  */
 @JSGlobal("sap.m.ObjectMarkerVisibility")
 @js.native
 object ObjectMarkerVisibility extends js.Object {

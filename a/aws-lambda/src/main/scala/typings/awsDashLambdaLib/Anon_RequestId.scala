@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RequestId extends js.Object {
   var distributionDomainName: java.lang.String
   var distributionId: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChangingKeyNames extends js.Object {
   var attributesKey: js.UndefOr[java.lang.String] = js.undefined
   var cdataKey: js.UndefOr[java.lang.String] = js.undefined

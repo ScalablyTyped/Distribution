@@ -44,7 +44,6 @@ class Client ()
   def mergeContext(ctx: js.Any): this.type = js.native
    // todo: part of public API?
   def process(eventId: java.lang.String, kwargs: js.Any): scala.Unit = js.native
-   // todo: part of public API?
   def process(eventId: java.lang.String, kwargs: js.Any, cb: js.Function0[scala.Unit]): scala.Unit = js.native
   def process(kwargs: js.Any): scala.Unit = js.native
   def process(kwargs: js.Any, cb: js.Function0[scala.Unit]): scala.Unit = js.native

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Optional parameter for [setContentInsets](Titanium.UI.TableView.setContentInsets) method.
- */
-
+  * Optional parameter for [setContentInsets](Titanium.UI.TableView.setContentInsets) method.
+  */
 trait TableViewContentInsetOption extends js.Object {
   /**
   	 * Determines whether the table view's content inset change is animated.

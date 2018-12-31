@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Request extends js.Object {
   var config: axiosLib.axiosMod.AxiosRequestConfig
   var headers: js.Any
@@ -14,17 +13,17 @@ trait Request extends js.Object {
   var url: java.lang.String
   var withCredentials: scala.Boolean
   /**
-       * Respond to this request with a specified result
-       *
-       * @param res The data representing the result of the request
-       * @return A Promise that resolves once the response is ready
-       */
+    * Respond to this request with a specified result
+    *
+    * @param res The data representing the result of the request
+    * @return A Promise that resolves once the response is ready
+    */
   def respondWith(res: Item): js.Promise[Response]
   /**
-       * Respond to this request with a timeout result
-       *
-       * @return A Promise that rejects with a timeout result
-       */
+    * Respond to this request with a timeout result
+    *
+    * @return A Promise that rejects with a timeout result
+    */
   def respondWithTimeout(): js.Promise[Response]
 }
 

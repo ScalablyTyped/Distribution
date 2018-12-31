@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListDomainMappingsResponse extends js.Object {
   /** The domain mappings for the application. */
   var domainMappings: js.UndefOr[js.Array[DomainMapping]] = js.undefined

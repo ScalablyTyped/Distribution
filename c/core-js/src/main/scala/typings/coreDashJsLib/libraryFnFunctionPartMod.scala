@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/function/part", JSImport.Namespace)
 @js.native
 object libraryFnFunctionPartMod
-  extends org.scalablytyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[js.Function2[/* target */ Function, /* repeated */ js.Any, js.Any]]
 

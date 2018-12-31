@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AudioInfo extends js.Object {
   var bit_rate: java.lang.String
   var channels: scala.Double

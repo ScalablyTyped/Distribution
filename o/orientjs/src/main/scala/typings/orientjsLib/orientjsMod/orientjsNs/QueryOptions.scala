@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryOptions extends js.Object {
   var `class`: js.UndefOr[java.lang.String] = js.undefined
   var fetchPlan: js.UndefOr[js.Any] = js.undefined

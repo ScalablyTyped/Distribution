@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 			 * An action the user selects in response to an interactive notification.
 			 */
-
 trait UserNotificationAction
   extends titaniumLib.TitaniumNs.Proxy {
   /**

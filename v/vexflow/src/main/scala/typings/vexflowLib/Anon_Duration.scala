@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Duration extends js.Object {
   var dots: js.UndefOr[scala.Double] = js.undefined
   var duration: java.lang.String

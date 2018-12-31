@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Hidden extends js.Object {
   def addStyleDependentName(styleName: java.lang.String): Hidden
   def addStyleName(styleName: java.lang.String): Hidden

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait jsxVisitors[V] extends js.Object {
   var JSXAttribute: js.UndefOr[V] = js.undefined
   var JSXClosingElement: js.UndefOr[V] = js.undefined

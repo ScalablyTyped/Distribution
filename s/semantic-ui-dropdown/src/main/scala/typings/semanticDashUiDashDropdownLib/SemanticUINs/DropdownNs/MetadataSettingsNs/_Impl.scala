@@ -5,27 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default 'defaultText'
-                   */
+    * @default 'defaultText'
+    */
   var defaultText: java.lang.String
   /**
-                   * @default 'defaultValue'
-                   */
+    * @default 'defaultValue'
+    */
   var defaultValue: java.lang.String
   /**
-                   * @default 'placeholderText'
-                   */
+    * @default 'placeholderText'
+    */
   var placeholderText: java.lang.String
   /**
-                   * @default 'text'
-                   */
+    * @default 'text'
+    */
   var text: java.lang.String
   /**
-                   * @default 'value'
-                   */
+    * @default 'value'
+    */
   var value: java.lang.String
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IResponse extends js.Object {
   var bodySize: scala.Double
   var contentType: java.lang.String

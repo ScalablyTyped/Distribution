@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MessagePropertyHeaders
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var `x-death`: js.UndefOr[js.Array[XDeath]] = js.undefined

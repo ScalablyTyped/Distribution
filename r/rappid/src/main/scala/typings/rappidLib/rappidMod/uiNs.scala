@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("rappid", "ui")
 @js.native
 object uiNs extends js.Object {
-  
   trait Handle extends js.Object {
     var icon: java.lang.String
     var name: java.lang.String

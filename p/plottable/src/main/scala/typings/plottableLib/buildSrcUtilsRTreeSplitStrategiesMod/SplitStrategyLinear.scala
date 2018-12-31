@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class SplitStrategyLinear () extends IRTreeSplitStrategy {
   /**
-       * Split the next entry. Choose the entry that expands its parent node's
-       * area the least.
-       */
+    * Split the next entry. Choose the entry that expands its parent node's
+    * area the least.
+    */
   /* private */ def addNext[T](entries: js.Any, nodes: js.Any): js.Any = js.native
   /**
-       * Choose the two farthest-apart entries to begin the split.
-       */
+    * Choose the two farthest-apart entries to begin the split.
+    */
   /* private */ def chooseFirstSplit[T](entries: js.Any, nodes: js.Any): js.Any = js.native
   /* CompleteClass */
   override def split[T](entries: js.Array[plottableLib.buildSrcUtilsRTreeMod.RTreeNode[T]], nodes: NodePair[T]): scala.Unit = js.native

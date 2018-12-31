@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Instantiates a new StaleWhileRevalidate strategy
- */
+  * Instantiates a new StaleWhileRevalidate strategy
+  */
 @js.native
 trait IStaleWhileRevalidateConstructor
   extends org.scalablytyped.runtime.Instantiable0[StaleWhileRevalidate]

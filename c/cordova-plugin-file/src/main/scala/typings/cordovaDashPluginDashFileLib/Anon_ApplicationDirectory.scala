@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ApplicationDirectory extends js.Object {
   /* Read-only directory where the application is installed. */
   var applicationDirectory: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CityStateCode extends js.Object {
   var city: java.lang.String
   var country: java.lang.String

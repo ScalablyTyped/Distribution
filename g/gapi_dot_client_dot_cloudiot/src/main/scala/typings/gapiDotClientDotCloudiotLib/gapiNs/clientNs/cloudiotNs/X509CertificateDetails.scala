@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait X509CertificateDetails extends js.Object {
   /** The time the certificate becomes invalid. */
   var expiryTime: js.UndefOr[java.lang.String] = js.undefined

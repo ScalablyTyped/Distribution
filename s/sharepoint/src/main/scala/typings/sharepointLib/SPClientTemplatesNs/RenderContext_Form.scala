@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RenderContext_Form extends RenderContext {
   var CSRCustomLayout: js.UndefOr[scala.Boolean] = js.undefined
   var CurrentItem: Item

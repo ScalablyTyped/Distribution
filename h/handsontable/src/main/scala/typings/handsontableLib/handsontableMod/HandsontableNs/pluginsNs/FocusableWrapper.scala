@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FocusableWrapper extends js.Object {
   var eventManager: EventManager
   var listenersCount: stdLib.WeakSet[stdLib.HTMLElement]

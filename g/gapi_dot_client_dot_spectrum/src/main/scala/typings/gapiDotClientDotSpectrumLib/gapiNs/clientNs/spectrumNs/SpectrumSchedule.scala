@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpectrumSchedule extends js.Object {
   /** The event time expresses when the spectrum profile is valid. It will always be present. */
   var eventTime: js.UndefOr[EventTime] = js.undefined

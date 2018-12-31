@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Query the add-on's environment and access arguments passed to it
- */
+  * Query the add-on's environment and access arguments passed to it
+  */
 @JSImport("sdk/system", JSImport.Namespace)
 @js.native
 object systemMod extends js.Object {

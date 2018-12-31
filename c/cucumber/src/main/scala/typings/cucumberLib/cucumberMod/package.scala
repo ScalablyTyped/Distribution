@@ -18,6 +18,6 @@ package object cucumberMod {
     /* callback */ js.UndefOr[CallbackStepDefinition], 
     scala.Unit
   ]
-  type StepDefinitionCode = js.ThisFunction1[/* this */ World, /* repeated */js.Any, js.Any]
+  type StepDefinitionCode = js.ThisFunction1[/* this */ World, /* repeated */ js.Any, js.Any]
   type SupportCodeConsumer = js.Function1[/* stepDefinitions */ StepDefinitions with Hooks, scala.Unit]
 }

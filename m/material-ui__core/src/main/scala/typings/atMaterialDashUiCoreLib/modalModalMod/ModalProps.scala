@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick, @material-ui/core.@material-ui/core.StandardProps) */ 
-trait ModalProps
+- Lifted 3 members from Set(std.Pick<react.react.HtmlHTMLAttributes<react.HTMLDivElement>, std.Exclude<keyof react.react.HtmlHTMLAttributes<react.HTMLDivElement>, 'classes' | never>>, @material-ui/core.@material-ui/core.StandardProps<react.react.HtmlHTMLAttributes<react.HTMLDivElement>, @material-ui/core.@material-ui/core/Modal/Modal.ModalClassKey, never>) */ trait ModalProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ModalClassKey] {
   var BackdropComponent: js.UndefOr[
     reactLib.reactMod.ReactNs.ReactType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps]

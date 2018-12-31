@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ToolbarStyle extends js.Object {
   var centerElementContainer: js.UndefOr[ViewStyle] = js.undefined
   var container: js.UndefOr[ViewStyle] = js.undefined

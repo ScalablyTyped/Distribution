@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MobileapppanelsResource extends js.Object {
   /** Retrieves a MobileAppPanel that is available to the authenticated user. */
   def get(request: gapiDotClientDotSurveysLib.Anon_PanelId): gapiDotClientLib.gapiNs.clientNs.Request[MobileAppPanel]

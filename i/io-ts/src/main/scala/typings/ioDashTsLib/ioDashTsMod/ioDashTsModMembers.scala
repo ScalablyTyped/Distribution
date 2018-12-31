@@ -30,22 +30,14 @@ object ioDashTsModMembers extends js.Object {
   def appendContext(c: Context, key: java.lang.String, `type`: Decoder[_, _]): Context = js.native
   def array[RT /* <: Mixed */](`type`: RT): ArrayType[
     RT, 
-    fpDashTsLib.libArrayMod.Global.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_A))) */js.Any
-    ], 
-    fpDashTsLib.libArrayMod.Global.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_O))) */js.Any
-    ], 
+    fpDashTsLib.libArrayMod.Global.Array[/* import warning: ImportType.apply Failed type conversion: RT['_A'] */ js.Any], 
+    fpDashTsLib.libArrayMod.Global.Array[/* import warning: ImportType.apply Failed type conversion: RT['_O'] */ js.Any], 
     _
   ] = js.native
   def array[RT /* <: Mixed */](`type`: RT, name: java.lang.String): ArrayType[
     RT, 
-    fpDashTsLib.libArrayMod.Global.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_A))) */js.Any
-    ], 
-    fpDashTsLib.libArrayMod.Global.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_O))) */js.Any
-    ], 
+    fpDashTsLib.libArrayMod.Global.Array[/* import warning: ImportType.apply Failed type conversion: RT['_A'] */ js.Any], 
+    fpDashTsLib.libArrayMod.Global.Array[/* import warning: ImportType.apply Failed type conversion: RT['_O'] */ js.Any], 
     _
   ] = js.native
   def clean[A, O, I](`type`: Type[A, O, I]): Type[A, O, I] = js.native
@@ -113,7 +105,7 @@ object ioDashTsModMembers extends js.Object {
     Compact[OutputOf[A] with OutputOf[B] with OutputOf[C] with OutputOf[D] with OutputOf[E]], 
     mixed
   ] = js.native
-  def isTagged[Tag /* <: java.lang.String */](tag: Tag): js.Function1[/* type */ Mixed, /* is Tagged */scala.Boolean] = js.native
+  def isTagged[Tag /* <: java.lang.String */](tag: Tag): js.Function1[/* type */ Mixed, /* is io-ts.io-ts.Tagged<Tag, any, any> */ scala.Boolean] = js.native
   def keyof[D /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](keys: D): KeyofType[D] = js.native
   def keyof[D /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](keys: D, name: java.lang.String): KeyofType[D] = js.native
   def literal[V /* <: java.lang.String | scala.Double | scala.Boolean */](value: V): LiteralType[V] = js.native
@@ -122,67 +114,49 @@ object ioDashTsModMembers extends js.Object {
   def partial[P /* <: Props */](props: P, name: java.lang.String): PartialType[P, TypeOfPartialProps[P], OutputOfPartialProps[P], _] = js.native
   def readonly[RT /* <: Mixed */](`type`: RT): ReadonlyType[
     RT, 
-    stdLib.Readonly[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_A))) */js.Any
-    ], 
-    stdLib.Readonly[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_O))) */js.Any
-    ], 
+    stdLib.Readonly[/* import warning: ImportType.apply Failed type conversion: RT['_A'] */ js.Any], 
+    stdLib.Readonly[/* import warning: ImportType.apply Failed type conversion: RT['_O'] */ js.Any], 
     _
   ] = js.native
   def readonly[RT /* <: Mixed */](`type`: RT, name: java.lang.String): ReadonlyType[
     RT, 
-    stdLib.Readonly[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_A))) */js.Any
-    ], 
-    stdLib.Readonly[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_O))) */js.Any
-    ], 
+    stdLib.Readonly[/* import warning: ImportType.apply Failed type conversion: RT['_A'] */ js.Any], 
+    stdLib.Readonly[/* import warning: ImportType.apply Failed type conversion: RT['_O'] */ js.Any], 
     _
   ] = js.native
   def readonlyArray[RT /* <: Mixed */](`type`: RT): ReadonlyArrayType[
     RT, 
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_A))) */js.Any
-    ], 
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_O))) */js.Any
-    ], 
+    js.Array[/* import warning: ImportType.apply Failed type conversion: RT['_A'] */ js.Any], 
+    js.Array[/* import warning: ImportType.apply Failed type conversion: RT['_O'] */ js.Any], 
     _
   ] = js.native
   def readonlyArray[RT /* <: Mixed */](`type`: RT, name: java.lang.String): ReadonlyArrayType[
     RT, 
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_A))) */js.Any
-    ], 
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_O))) */js.Any
-    ], 
+    js.Array[/* import warning: ImportType.apply Failed type conversion: RT['_A'] */ js.Any], 
+    js.Array[/* import warning: ImportType.apply Failed type conversion: RT['_O'] */ js.Any], 
     _
   ] = js.native
   def recursion[A, O, I, RT /* <: Type[A, O, I] */](name: java.lang.String, definition: js.Function1[/* self */ RT, RT]): RecursiveType[RT, A, O, I] = js.native
-  def refinement[RT /* <: Any */](
+  @JSName("refinement")
+  def refinement__A[RT /* <: Any */](
     `type`: RT,
-    predicate: fpDashTsLib.libFunctionMod.Predicate[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_A))) */js.Any
-    ]
+    predicate: fpDashTsLib.libFunctionMod.Predicate[/* import warning: ImportType.apply Failed type conversion: RT['_A'] */ js.Any]
   ): RefinementType[
     RT, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_A))) */js.Any, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_O))) */js.Any, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_I))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: RT['_A'] */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: RT['_O'] */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: RT['_I'] */ js.Any
   ] = js.native
-  def refinement[RT /* <: Any */](
+  @JSName("refinement")
+  def refinement__A[RT /* <: Any */](
     `type`: RT,
-    predicate: fpDashTsLib.libFunctionMod.Predicate[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_A))) */js.Any
-    ],
+    predicate: fpDashTsLib.libFunctionMod.Predicate[/* import warning: ImportType.apply Failed type conversion: RT['_A'] */ js.Any],
     name: java.lang.String
   ): RefinementType[
     RT, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_A))) */js.Any, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_O))) */js.Any, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RT))),List()),Left(TsIdentSimple(_I))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: RT['_A'] */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: RT['_O'] */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: RT['_I'] */ js.Any
   ] = js.native
   def strict[P /* <: Props */](props: P): StrictType[P, TypeOfProps[P], OutputOfProps[P], _] = js.native
   def strict[P /* <: Props */](props: P, name: java.lang.String): StrictType[P, TypeOfProps[P], OutputOfProps[P], _] = js.native
@@ -190,15 +164,15 @@ object ioDashTsModMembers extends js.Object {
   def taggedUnion[Tag /* <: java.lang.String */, RTS /* <: fpDashTsLib.libArrayMod.Global.Array[Tagged[Tag, _, _]] */](tag: Tag, types: RTS): TaggedUnionType[
     Tag, 
     RTS, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(number))),Left(TsIdentSimple(_A))) */js.Any, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(number))),Left(TsIdentSimple(_O))) */js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: RTS[number]['_A'] */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: RTS[number]['_O'] */ js.Any, 
     _
   ] = js.native
   def taggedUnion[Tag /* <: java.lang.String */, RTS /* <: fpDashTsLib.libArrayMod.Global.Array[Tagged[Tag, _, _]] */](tag: Tag, types: RTS, name: java.lang.String): TaggedUnionType[
     Tag, 
     RTS, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(number))),Left(TsIdentSimple(_A))) */js.Any, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(number))),Left(TsIdentSimple(_O))) */js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: RTS[number]['_A'] */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: RTS[number]['_O'] */ js.Any, 
     _
   ] = js.native
   def tuple[A /* <: Mixed */](types: js.Array[A]): TupleType[js.Array[A], js.Array[TypeOf[A]], js.Array[OutputOf[A]], mixed] = js.native
@@ -255,14 +229,14 @@ object ioDashTsModMembers extends js.Object {
   def `type`[P /* <: Props */](props: P, name: java.lang.String): InterfaceType[P, TypeOfProps[P], OutputOfProps[P], _] = js.native
   def union[RTS /* <: fpDashTsLib.libArrayMod.Global.Array[Mixed] */](types: RTS): UnionType[
     RTS, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(number))),Left(TsIdentSimple(_A))) */js.Any, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(number))),Left(TsIdentSimple(_O))) */js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: RTS[number]['_A'] */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: RTS[number]['_O'] */ js.Any, 
     _
   ] = js.native
   def union[RTS /* <: fpDashTsLib.libArrayMod.Global.Array[Mixed] */](types: RTS, name: java.lang.String): UnionType[
     RTS, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(number))),Left(TsIdentSimple(_A))) */js.Any, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(RTS))),List()),Left(TsIdentSimple(number))),Left(TsIdentSimple(_O))) */js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: RTS[number]['_A'] */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: RTS[number]['_O'] */ js.Any, 
     _
   ] = js.native
 }

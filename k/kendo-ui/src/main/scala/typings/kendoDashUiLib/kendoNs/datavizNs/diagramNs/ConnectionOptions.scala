@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectionOptions extends js.Object {
   var content: js.UndefOr[ConnectionContent] = js.undefined
   var endCap: js.UndefOr[java.lang.String | ConnectionEndCap] = js.undefined

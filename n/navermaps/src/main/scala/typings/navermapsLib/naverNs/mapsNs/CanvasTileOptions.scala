@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CanvasTileOptions extends js.Object {
   var imageData: js.UndefOr[stdLib.ImageData] = js.undefined
   var offset: js.UndefOr[Point] = js.undefined

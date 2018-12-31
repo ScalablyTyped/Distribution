@@ -16,6 +16,6 @@ object microrouterModMembers extends js.Object {
   val post: RouteHandler = js.native
   val put: RouteHandler = js.native
   def router(routes: microLib.microMod.RequestHandler*): microLib.microMod.RequestHandler = js.native
-  def withNamespace(namespace: java.lang.String): js.Function1[/* repeated */microLib.microMod.RequestHandler, microLib.microMod.RequestHandler] = js.native
+  def withNamespace(namespace: java.lang.String): js.Function1[/* repeated */ microLib.microMod.RequestHandler, microLib.microMod.RequestHandler] = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SavedReport extends js.Object {
   /** Unique identifier of this saved report. */
   var id: js.UndefOr[java.lang.String] = js.undefined

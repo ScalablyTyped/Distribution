@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ErrorExistsAndShouldBeVisible extends js.Object {
   /**
   			 * This is set by angular-formly. This is a boolean indicating whether an error message should be shown. Because

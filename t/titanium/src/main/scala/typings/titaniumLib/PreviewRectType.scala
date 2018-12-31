@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Simple object for describing the preview image rectangle. This will be undefined when custom camera overlay is not used.
- */
-
+  * Simple object for describing the preview image rectangle. This will be undefined when custom camera overlay is not used.
+  */
 trait PreviewRectType extends js.Object {
   /**
   	 * Height preview image, in pixels.

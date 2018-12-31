@@ -16,8 +16,8 @@ class PivotPager protected () extends Widget {
   @JSName("model")
   var model_PivotPager: ejDotWebDotAllLib.ejNs.PivotPagerNs.Model = js.native
   /** This function initializes the page counts and page numbers for the PivotPager.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def initPagerProperties(): scala.Unit = js.native
 }
 

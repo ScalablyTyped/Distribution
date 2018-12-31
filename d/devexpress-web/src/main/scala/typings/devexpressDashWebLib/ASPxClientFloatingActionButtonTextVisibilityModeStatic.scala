@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ASPxClientFloatingActionButtonTextVisibilityModeStatic extends js.Object {
   var Always: java.lang.String
   var Hidden: java.lang.String

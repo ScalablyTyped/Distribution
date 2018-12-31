@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IElement extends IAbstractElement {
   /** [Method] Sets up event handlers to add and remove a css class when the mouse is down and then up on this element a click effe
   		* @param className String The class to add

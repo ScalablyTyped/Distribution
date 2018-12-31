@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IssueData extends js.Object {
   var failures: js.UndefOr[scala.Double] = js.undefined
   var messages: js.Array[java.lang.String]

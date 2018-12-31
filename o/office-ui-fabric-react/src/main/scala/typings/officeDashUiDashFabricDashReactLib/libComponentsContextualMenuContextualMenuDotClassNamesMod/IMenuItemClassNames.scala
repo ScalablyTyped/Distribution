@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMenuItemClassNames extends js.Object {
   var checkmarkIcon: java.lang.String
   var divider: java.lang.String

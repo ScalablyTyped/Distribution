@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IColorClassNames extends js.Object {
   var black: java.lang.String
   var blackBackground: java.lang.String

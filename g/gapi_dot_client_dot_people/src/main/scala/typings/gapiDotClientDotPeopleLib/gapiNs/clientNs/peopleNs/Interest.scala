@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Interest extends js.Object {
   /** Metadata about the interest. */
   var metadata: js.UndefOr[FieldMetadata] = js.undefined

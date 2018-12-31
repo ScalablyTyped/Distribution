@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGeoXmlSummaryMetadata extends js.Object {
   /** The bounds of all the shapes and layers in the XML document. */
   var bounds: js.UndefOr[LocationRect] = js.undefined

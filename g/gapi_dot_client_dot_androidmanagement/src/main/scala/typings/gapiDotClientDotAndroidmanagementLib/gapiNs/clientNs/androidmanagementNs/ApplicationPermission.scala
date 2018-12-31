@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ApplicationPermission extends js.Object {
   /** A longer description of the permission, giving more details of what it affects. Localized. */
   var description: js.UndefOr[java.lang.String] = js.undefined

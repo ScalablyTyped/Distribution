@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Size extends js.Object {
   /** Height of this size. Acceptable values are 0 to 32767, inclusive. */
   var height: js.UndefOr[scala.Double] = js.undefined

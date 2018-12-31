@@ -13,6 +13,6 @@ class Breadcrumb ()
 @JSImport("react-bootstrap/lib", "Breadcrumb")
 @js.native
 object Breadcrumb extends js.Object {
-  var Item: js.Any = js.native
+  var Item: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libBreadcrumbItemMod.namespaced] = js.native
 }
 

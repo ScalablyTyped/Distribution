@@ -32,21 +32,21 @@ trait Client[T] extends js.Object {
   def $$_PClient[P](selector: java.lang.String): Client[P] = js.native
   @JSName("$")
   def $_PClient[P](selector: java.lang.String): Client[P] = js.native
-  def addCommand(commandName: java.lang.String, customMethod: js.Function1[/* repeated */js.Any, scala.Unit]): Client[scala.Unit] with js.UndefOr[scala.Nothing] = js.native
+  def addCommand(commandName: java.lang.String, customMethod: js.Function1[/* repeated */ js.Any, scala.Unit]): Client[scala.Unit] with js.UndefOr[scala.Nothing] = js.native
   def addCommand(
     commandName: java.lang.String,
-    customMethod: js.Function1[/* repeated */js.Any, scala.Unit],
+    customMethod: js.Function1[/* repeated */ js.Any, scala.Unit],
     overwrite: scala.Boolean
   ): Client[scala.Unit] with js.UndefOr[scala.Nothing] = js.native
   @JSName("addCommand")
-  def addCommand_PClient[P](commandName: java.lang.String, customMethod: js.Function1[/* repeated */js.Any, scala.Unit]): Client[P] = js.native
+  def addCommand_PClient[P](commandName: java.lang.String, customMethod: js.Function1[/* repeated */ js.Any, scala.Unit]): Client[P] = js.native
   @JSName("addCommand")
   def addCommand_PClient[P](
     commandName: java.lang.String,
-    customMethod: js.Function1[/* repeated */js.Any, scala.Unit],
+    customMethod: js.Function1[/* repeated */ js.Any, scala.Unit],
     overwrite: scala.Boolean
   ): Client[P] = js.native
-  def addListener(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): Client[T] = js.native
+  def addListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): Client[T] = js.native
   def addValue(selector: java.lang.String, value: java.lang.String): Client[RawResult[scala.Null]] with RawResult[scala.Null] = js.native
   def addValue(selector: java.lang.String, value: scala.Double): Client[RawResult[scala.Null]] with RawResult[scala.Null] = js.native
   def addValue(value: java.lang.String): Client[RawResult[scala.Null]] with RawResult[scala.Null] = js.native
@@ -82,47 +82,35 @@ trait Client[T] extends js.Object {
   def background(seconds: scala.Double): Client[T] = js.native
   /** @deprecated in favour of Actions.pointerDown */
   def buttonDown(): Client[RawResult[scala.Null]] with RawResult[scala.Null] with scala.Nothing = js.native
-  /** @deprecated in favour of Actions.pointerDown */
   def buttonDown(button: java.lang.String): Client[RawResult[scala.Null]] with RawResult[scala.Null] with scala.Nothing = js.native
-  /** @deprecated in favour of Actions.pointerDown */
   def buttonDown(button: Button): Client[RawResult[scala.Null]] with RawResult[scala.Null] with scala.Nothing = js.native
   /** @deprecated in favour of Actions.pointerDown */
   @JSName("buttonDown")
   def buttonDown_PClient[P](): Client[P] = js.native
-  /** @deprecated in favour of Actions.pointerDown */
   @JSName("buttonDown")
   def buttonDown_PClient[P](button: java.lang.String): Client[P] = js.native
-  /** @deprecated in favour of Actions.pointerDown */
   @JSName("buttonDown")
   def buttonDown_PClient[P](button: Button): Client[P] = js.native
   /** @deprecated in favour of Actions.pointerDown */
   def buttonPress(): Client[RawResult[scala.Null]] with RawResult[scala.Null] with scala.Nothing = js.native
-  /** @deprecated in favour of Actions.pointerDown */
   def buttonPress(button: java.lang.String): Client[RawResult[scala.Null]] with RawResult[scala.Null] with scala.Nothing = js.native
-  /** @deprecated in favour of Actions.pointerDown */
   def buttonPress(button: Button): Client[RawResult[scala.Null]] with RawResult[scala.Null] with scala.Nothing = js.native
   /** @deprecated in favour of Actions.pointerDown */
   @JSName("buttonPress")
   def buttonPress_PClient[P](): Client[P] = js.native
-  /** @deprecated in favour of Actions.pointerDown */
   @JSName("buttonPress")
   def buttonPress_PClient[P](button: java.lang.String): Client[P] = js.native
-  /** @deprecated in favour of Actions.pointerDown */
   @JSName("buttonPress")
   def buttonPress_PClient[P](button: Button): Client[P] = js.native
   /** @deprecated in favour of Actions.pointerUp */
   def buttonUp(): Client[RawResult[scala.Null]] with RawResult[scala.Null] = js.native
-  /** @deprecated in favour of Actions.pointerUp */
   def buttonUp(button: java.lang.String): Client[RawResult[scala.Null]] with RawResult[scala.Null] = js.native
-  /** @deprecated in favour of Actions.pointerUp */
   def buttonUp(button: Button): Client[RawResult[scala.Null]] with RawResult[scala.Null] = js.native
   /** @deprecated in favour of Actions.pointerUp */
   @JSName("buttonUp")
   def buttonUp_PClient[P](): Client[P] = js.native
-  /** @deprecated in favour of Actions.pointerUp */
   @JSName("buttonUp")
   def buttonUp_PClient[P](button: java.lang.String): Client[P] = js.native
-  /** @deprecated in favour of Actions.pointerUp */
   @JSName("buttonUp")
   def buttonUp_PClient[P](button: Button): Client[P] = js.native
   def call[P](callback: js.Function0[scala.Unit]): Client[P] with js.Any = js.native
@@ -264,15 +252,15 @@ trait Client[T] extends js.Object {
   @JSName("end")
   def end_P[P](): Client[P] = js.native
   def execute(script: java.lang.String, args: js.Any*): Client[RawResult[_]] with RawResult[_] = js.native
-  def execute(script: js.Function1[/* repeated */js.Any, scala.Unit], args: js.Any*): Client[RawResult[_]] with RawResult[_] = js.native
+  def execute(script: js.Function1[/* repeated */ js.Any, scala.Unit], args: js.Any*): Client[RawResult[_]] with RawResult[_] = js.native
   def executeAsync(script: java.lang.String, args: js.Any*): Client[RawResult[_]] with RawResult[_] = js.native
-  def executeAsync(script: js.Function1[/* repeated */js.Any, scala.Unit], args: js.Any*): Client[RawResult[_]] with RawResult[_] = js.native
+  def executeAsync(script: js.Function1[/* repeated */ js.Any, scala.Unit], args: js.Any*): Client[RawResult[_]] with RawResult[_] = js.native
   /** @deprecated */
   def file(date: java.lang.String): Client[RawResult[scala.Null]] with scala.Nothing = js.native
   /** @deprecated */
   @JSName("file")
   def file_P[P](date: java.lang.String): Client[P] with scala.Nothing = js.native
-  def `finally`(callback: js.Function1[/* repeated */js.Any, scala.Unit]): Client[T] = js.native
+  def `finally`(callback: js.Function1[/* repeated */ js.Any, scala.Unit]): Client[T] = js.native
   def forward(): Client[RawResult[scala.Null]] with RawResult[scala.Null] = js.native
   @JSName("forward")
   def forward_PClient[P](): Client[P] = js.native
@@ -480,12 +468,10 @@ trait Client[T] extends js.Object {
   def isVisible_PClient[P](selector: java.lang.String): Client[P] = js.native
   /** @deprecated in favour of Actions.keyDown */
   def keys(value: java.lang.String): Client[RawResult[scala.Null]] with RawResult[scala.Null] with Client[scala.Unit] = js.native
-  /** @deprecated in favour of Actions.keyDown */
   def keys(value: js.Array[java.lang.String]): Client[RawResult[scala.Null]] with RawResult[scala.Null] with Client[scala.Unit] = js.native
   /** @deprecated in favour of Actions.keyDown */
   @JSName("keys")
   def keys_PClient[P](value: java.lang.String): Client[P] = js.native
-  /** @deprecated in favour of Actions.keyDown */
   @JSName("keys")
   def keys_PClient[P](value: js.Array[java.lang.String]): Client[P] = js.native
   def launch(): Client[T] = js.native
@@ -512,9 +498,7 @@ trait Client[T] extends js.Object {
   def localStorage(): Client[RawResult[js.Array[StorageItems]]] with RawResult[js.Array[StorageItems]] = js.native
   /** @deprecated */
   def localStorage(method: Method): Client[RawResult[js.Array[StorageItems]]] with RawResult[js.Array[StorageItems]] with scala.Nothing = js.native
-  /** @deprecated */
   def localStorage(method: Method, key: java.lang.String): Client[RawResult[js.Array[StorageItems]]] with RawResult[js.Array[StorageItems]] with scala.Nothing = js.native
-  /** @deprecated */
   def localStorage[P](method: Method, key: StorageItems): Client[P] = js.native
   /** @deprecated */
   def localStorageSize(): Client[RawResult[scala.Double]] with RawResult[scala.Double] with scala.Nothing = js.native
@@ -527,7 +511,6 @@ trait Client[T] extends js.Object {
   /** @deprecated */
   @JSName("localStorage")
   def localStorage_PClient[P](method: Method): Client[P] = js.native
-  /** @deprecated */
   @JSName("localStorage")
   def localStorage_PClient[P](method: Method, key: java.lang.String): Client[P] = js.native
   /** @deprecated in favour of elementIdRect */
@@ -595,8 +578,8 @@ trait Client[T] extends js.Object {
   def newWindow(url: java.lang.String, windowName: java.lang.String, windowFeatures: java.lang.String): Client[RawResult[scala.Null]] with RawResult[scala.Null] = js.native
   @JSName("newWindow")
   def newWindow_PClient[P](url: java.lang.String, windowName: java.lang.String, windowFeatures: java.lang.String): Client[P] = js.native
-  def on(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): Client[T] = js.native
-  def once(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): Client[T] = js.native
+  def on(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): Client[T] = js.native
+  def once(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): Client[T] = js.native
   def openNotifications(): Client[T] = js.native
   def orientation(): webdriverioLib.webdriverioLibStrings.landscape | webdriverioLib.webdriverioLibStrings.portrait = js.native
   @JSName("orientation")
@@ -622,7 +605,7 @@ trait Client[T] extends js.Object {
   def removeAllListeners(): Client[T] = js.native
   def removeAllListeners(event: java.lang.String): Client[T] = js.native
   def removeApp(bundleId: java.lang.String): Client[T] = js.native
-  def removeListener(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): Client[T] = js.native
+  def removeListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): Client[T] = js.native
   def reset(): Client[T] = js.native
   def rightClick(): Client[RawResult[scala.Null]] with RawResult[scala.Null] = js.native
   def rightClick(selector: java.lang.String): Client[RawResult[scala.Null]] with RawResult[scala.Null] = js.native
@@ -713,7 +696,7 @@ trait Client[T] extends js.Object {
     selectors: java.lang.String,
     script: js.Function2[
       /* elements */ stdLib.HTMLElement | js.Array[stdLib.HTMLElement], 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       P
     ],
     args: js.Any*
@@ -722,7 +705,7 @@ trait Client[T] extends js.Object {
     selectors: js.Array[java.lang.String],
     script: js.Function2[
       /* elements */ stdLib.HTMLElement | js.Array[stdLib.HTMLElement], 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       P
     ],
     args: js.Any*
@@ -731,7 +714,7 @@ trait Client[T] extends js.Object {
     selectors: java.lang.String,
     script: js.Function2[
       /* elements */ stdLib.HTMLElement | js.Array[stdLib.HTMLElement], 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       P
     ],
     args: js.Any*
@@ -740,7 +723,7 @@ trait Client[T] extends js.Object {
     selectors: js.Array[java.lang.String],
     script: js.Function2[
       /* elements */ stdLib.HTMLElement | js.Array[stdLib.HTMLElement], 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       P
     ],
     args: js.Any*
@@ -1132,9 +1115,7 @@ trait Client[T] extends js.Object {
   def windowHandlePosition(): Client[RawResult[Position]] with RawResult[Position] with scala.Nothing = js.native
   /** @deprecated in favour of /session/{session id}/window/rect */
   def windowHandlePosition(position: Position): Client[RawResult[Position]] with RawResult[Position] with scala.Nothing = js.native
-  /** @deprecated in favour of /session/{session id}/window/rect */
   def windowHandlePosition(windowHandle: java.lang.String): Client[RawResult[Position]] with RawResult[Position] with scala.Nothing = js.native
-  /** @deprecated in favour of /session/{session id}/window/rect */
   def windowHandlePosition(windowHandle: java.lang.String, position: Position): Client[RawResult[Position]] with RawResult[Position] with scala.Nothing = js.native
   /** @deprecated in favour of /session/{session id}/window/rect */
   @JSName("windowHandlePosition")
@@ -1142,30 +1123,23 @@ trait Client[T] extends js.Object {
   /** @deprecated in favour of /session/{session id}/window/rect */
   @JSName("windowHandlePosition")
   def windowHandlePosition_PClient[P](position: Position): Client[P] = js.native
-  /** @deprecated in favour of /session/{session id}/window/rect */
   @JSName("windowHandlePosition")
   def windowHandlePosition_PClient[P](windowHandle: java.lang.String): Client[P] = js.native
-  /** @deprecated in favour of /session/{session id}/window/rect */
   @JSName("windowHandlePosition")
   def windowHandlePosition_PClient[P](windowHandle: java.lang.String, position: Position): Client[P] = js.native
   /** @deprecated in favour of /session/{session id}/window/rect */
   def windowHandleSize(): Client[RawResult[Size]] with RawResult[Size] with scala.Nothing = js.native
   /** @deprecated in favour of /session/{session id}/window/rect */
   def windowHandleSize(dimension: Size): Client[RawResult[Size]] with RawResult[Size] with scala.Nothing = js.native
-  /** @deprecated in favour of /session/{session id}/window/rect */
   def windowHandleSize(windowHandle: java.lang.String): Client[RawResult[Size]] with RawResult[Size] with scala.Nothing = js.native
-  /** @deprecated in favour of /session/{session id}/window/rect */
   def windowHandleSize(windowHandle: java.lang.String, dimension: Size): Client[RawResult[Size]] with RawResult[Size] with scala.Nothing = js.native
   /** @deprecated in favour of /session/{session id}/window/rect */
   @JSName("windowHandleSize")
   def windowHandleSize_PClient[P](): Client[P] = js.native
-  /** @deprecated in favour of /session/{session id}/window/rect */
   @JSName("windowHandleSize")
   def windowHandleSize_PClient[P](dimension: Size): Client[P] = js.native
-  /** @deprecated in favour of /session/{session id}/window/rect */
   @JSName("windowHandleSize")
   def windowHandleSize_PClient[P](windowHandle: java.lang.String): Client[P] = js.native
-  /** @deprecated in favour of /session/{session id}/window/rect */
   @JSName("windowHandleSize")
   def windowHandleSize_PClient[P](windowHandle: java.lang.String, dimension: Size): Client[P] = js.native
   @JSName("windowHandle")

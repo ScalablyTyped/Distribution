@@ -12,29 +12,29 @@ sealed trait SignInStatus extends js.Object
 @js.native
 object SignInStatus extends js.Object {
   /**
-       * Cancelled or dismissed account linking.
-       */
+    * Cancelled or dismissed account linking.
+    */
   @js.native
   sealed trait CANCELLED
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.SignInStatus
   
   /**
-       * System or network error.
-       */
+    * System or network error.
+    */
   @js.native
   sealed trait ERROR
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.SignInStatus
   
   /**
-       * User successfully completed the account linking.
-       */
+    * User successfully completed the account linking.
+    */
   @js.native
   sealed trait OK
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.SignInStatus
   
   /**
-       * Unknown status.
-       */
+    * Unknown status.
+    */
   @js.native
   sealed trait UNSPECIFIED
     extends actionsDashOnDashGoogleLib.assistantDashAppMod.SignInStatus

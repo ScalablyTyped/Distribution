@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConditionalFormatRule extends js.Object {
   def copy(): ConditionalFormatRuleBuilder
   def getBooleanCondition(): BooleanCondition

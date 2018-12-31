@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResponseFailure extends js.Object {
   var device: java.lang.String
   var error: js.UndefOr[nodeLib.Error] = js.undefined

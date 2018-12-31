@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StatsLike extends js.Object {
   var ctime: stdLib.Date
   var ino: scala.Double

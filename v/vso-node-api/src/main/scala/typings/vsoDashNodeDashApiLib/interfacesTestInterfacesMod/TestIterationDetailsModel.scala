@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestIterationDetailsModel extends js.Object {
   var actionResults: js.Array[TestActionResultModel]
   var attachments: js.Array[TestCaseResultAttachmentModel]

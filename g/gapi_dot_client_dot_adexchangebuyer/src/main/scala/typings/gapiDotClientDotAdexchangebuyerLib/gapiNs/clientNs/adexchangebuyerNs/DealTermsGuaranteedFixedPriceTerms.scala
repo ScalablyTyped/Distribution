@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DealTermsGuaranteedFixedPriceTerms extends js.Object {
   /** External billing info for this Deal. This field is relevant when external billing info such as price has a different currency code than DFP/AdX. */
   var billingInfo: js.UndefOr[DealTermsGuaranteedFixedPriceTermsBillingInfo] = js.undefined

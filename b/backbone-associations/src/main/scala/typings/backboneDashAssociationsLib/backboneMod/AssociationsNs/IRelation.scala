@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRelation extends js.Object {
   /** Determines the type of collection used. If used, the relatedModel property is ignored */
   var collectionType: js.UndefOr[
@@ -16,7 +15,7 @@ trait IRelation extends js.Object {
   /** The key for this relationship on this model */
   var key: java.lang.String
   /** A transformation function to convert the value before it is assigned to the key on the relatedModel */
-  var map: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var map: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   /** The type of model for this relationship */
   var relatedModel: java.lang.String | org.scalablytyped.runtime.Instantiable0[AssociatedModel]
   /** Specify remoteKey to serialize the key to a different key name in toJSON() calls. Useful in ROR nested-attributes like scenarios. */

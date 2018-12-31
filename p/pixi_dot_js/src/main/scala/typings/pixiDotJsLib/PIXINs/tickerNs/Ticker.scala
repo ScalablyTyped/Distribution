@@ -41,9 +41,7 @@ class Ticker () extends js.Object {
   def destroy(): scala.Unit = js.native
   //tslint:disable-next-line:ban-types forbidden-types
   def remove(fn: js.Function): Ticker = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def remove(fn: js.Function, context: js.Any): Ticker = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def remove(fn: js.Function, context: js.Any, priority: scala.Double): Ticker = js.native
   def start(): scala.Unit = js.native
   def stop(): scala.Unit = js.native

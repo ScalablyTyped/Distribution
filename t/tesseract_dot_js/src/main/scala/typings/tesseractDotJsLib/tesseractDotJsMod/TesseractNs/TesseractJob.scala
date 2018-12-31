@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TesseractJob extends js.Object {
   var error: js.UndefOr[js.Function1[/* error */ nodeLib.Error, TesseractJob]] = js.undefined
   def `catch`(callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): TesseractJob

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* commands types */
-
 trait Command extends js.Object {
   /** The Extension Command description */
   var description: js.UndefOr[java.lang.String] = js.undefined

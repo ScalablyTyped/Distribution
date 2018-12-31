@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ShowHeightReference extends js.Object {
   var color: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Color] = js.undefined
   var disableDepthTestDistance: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined

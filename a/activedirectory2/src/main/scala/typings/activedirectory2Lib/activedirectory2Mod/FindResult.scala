@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FindResult extends js.Object {
   var groups: js.Array[js.Object]
   var other: js.Array[js.Object]

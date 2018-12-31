@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PushNotificationOptions extends js.Object {
   var onNotification: js.UndefOr[js.Function1[/* notification */ PushNotification, scala.Unit]] = js.undefined
   var onRegister: js.UndefOr[

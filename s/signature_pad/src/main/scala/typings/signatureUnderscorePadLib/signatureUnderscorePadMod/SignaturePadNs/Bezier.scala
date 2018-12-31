@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Bezier extends js.Object {
   var control1: CurveControl
   var control2: CurveControl

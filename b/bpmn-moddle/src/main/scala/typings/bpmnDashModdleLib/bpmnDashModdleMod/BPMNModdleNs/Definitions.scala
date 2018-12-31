@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Definitions extends BaseElement {
   var diagrams: BPMNDiagram
   var er: java.lang.String

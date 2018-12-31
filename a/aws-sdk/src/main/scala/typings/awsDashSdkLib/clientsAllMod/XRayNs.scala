@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object XRayNs extends js.Object {
   @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class Types ()
     extends awsDashSdkLib.clientsXrayMod.Types {
-    /**
-       * Constructs a service object. This object has one method for each API operation.
-       */
     def this(options: awsDashSdkLib.clientsXrayMod.XRayNs.ClientConfiguration) = this()
   }
   

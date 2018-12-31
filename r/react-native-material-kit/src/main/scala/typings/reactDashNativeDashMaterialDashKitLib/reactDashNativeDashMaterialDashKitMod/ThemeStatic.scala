@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThemeStatic extends js.Object {
   var accentColor: js.UndefOr[java.lang.String] = js.undefined
   var accentColorRGB: js.UndefOr[java.lang.String] = js.undefined

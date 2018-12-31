@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object AthenaNs extends js.Object {
   @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class Types ()
     extends awsDashSdkLib.clientsAthenaMod.Types {
-    /**
-       * Constructs a service object. This object has one method for each API operation.
-       */
     def this(options: awsDashSdkLib.clientsAthenaMod.AthenaNs.ClientConfiguration) = this()
   }
   

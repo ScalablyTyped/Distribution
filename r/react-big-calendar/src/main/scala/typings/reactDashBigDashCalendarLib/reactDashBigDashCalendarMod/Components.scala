@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Components extends js.Object {
   var agenda: js.UndefOr[reactDashBigDashCalendarLib.Anon_Date] = js.undefined
   var dateCellWrapper: js.UndefOr[
@@ -20,8 +19,8 @@ trait Components extends js.Object {
   ] = js.undefined
   var eventWrapper: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[EventWrapperProps[Event]]] = js.undefined
   /**
-       * component used as a header for each column in the TimeGridHeader
-       */
+    * component used as a header for each column in the TimeGridHeader
+    */
   var header: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[HeaderProps]] = js.undefined
   var month: js.UndefOr[reactDashBigDashCalendarLib.Anon_DateHeader] = js.undefined
   var toolbar: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[ToolbarProps]] = js.undefined

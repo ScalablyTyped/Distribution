@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IResizer
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Config Option] (Ext.Element/Ext.util.Region) */

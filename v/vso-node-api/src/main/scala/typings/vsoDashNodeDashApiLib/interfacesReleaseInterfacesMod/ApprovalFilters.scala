@@ -12,36 +12,36 @@ sealed trait ApprovalFilters extends js.Object
 @js.native
 object ApprovalFilters extends js.Object {
   /**
-       * All approval steps and approval snapshots
-       */
+    * All approval steps and approval snapshots
+    */
   @js.native
   sealed trait All
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.ApprovalFilters
   
   /**
-       * No approval steps, but approval snapshots (Use with either ManualApprovals or AutomatedApprovals for approval steps)
-       */
+    * No approval steps, but approval snapshots (Use with either ManualApprovals or AutomatedApprovals for approval steps)
+    */
   @js.native
   sealed trait ApprovalSnapshots
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.ApprovalFilters
   
   /**
-       * Automated approval steps but no approval snapshots (Use with ApprovalSnapshots for snapshots)
-       */
+    * Automated approval steps but no approval snapshots (Use with ApprovalSnapshots for snapshots)
+    */
   @js.native
   sealed trait AutomatedApprovals
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.ApprovalFilters
   
   /**
-       * Manual approval steps but no approval snapshots (Use with ApprovalSnapshots for snapshots)
-       */
+    * Manual approval steps but no approval snapshots (Use with ApprovalSnapshots for snapshots)
+    */
   @js.native
   sealed trait ManualApprovals
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.ApprovalFilters
   
   /**
-       * No approvals or approval snapshots
-       */
+    * No approvals or approval snapshots
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.ApprovalFilters

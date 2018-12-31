@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object qUnitTestHarnessNs extends js.Object {
   /**
-             * Dynamically generates and executes QUnit tests
-             * @param args the arguments to the function
-            */
+    * Dynamically generates and executes QUnit tests
+    * @param args the arguments to the function
+    */
   def test(args: js.Any): scala.Unit = js.native
 }
 

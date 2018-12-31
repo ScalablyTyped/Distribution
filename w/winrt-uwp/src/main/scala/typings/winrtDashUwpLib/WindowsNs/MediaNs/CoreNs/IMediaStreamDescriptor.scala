@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Defines a media stream. */
-
 trait IMediaStreamDescriptor extends js.Object {
   /** Specifies whether the stream is currently in use by the MediaStreamSource . */
   var isSelected: scala.Boolean

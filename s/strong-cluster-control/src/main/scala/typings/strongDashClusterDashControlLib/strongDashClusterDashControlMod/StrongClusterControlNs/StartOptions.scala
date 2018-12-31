@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StartOptions extends js.Object {
   var env: js.UndefOr[js.Object] = js.undefined
   var shutdownTimeout: js.UndefOr[scala.Double] = js.undefined

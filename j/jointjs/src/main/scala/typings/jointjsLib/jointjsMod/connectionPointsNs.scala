@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("jointjs", "connectionPoints")
 @js.native
 object connectionPointsNs extends js.Object {
-  
   trait BoundaryConnectionPointArguments extends StrokeConnectionPointArguments {
     var extrapolate: js.UndefOr[scala.Boolean] = js.undefined
     var insideout: js.UndefOr[scala.Boolean] = js.undefined
@@ -16,7 +15,6 @@ object connectionPointsNs extends js.Object {
     var selector: js.UndefOr[(js.Array[java.lang.String | scala.Double]) | java.lang.String] = js.undefined
     var sticky: js.UndefOr[scala.Boolean] = js.undefined
   }
-  
   
   trait ConnectionPointArgumentsMap
     extends /* key */ org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[js.Any]] {
@@ -26,17 +24,16 @@ object connectionPointsNs extends js.Object {
     var rectangle: StrokeConnectionPointArguments
   }
   
-  
   trait DefaultConnectionPointArguments extends js.Object {
     var offset: js.UndefOr[scala.Double] = js.undefined
   }
   
-  
   trait GenericConnectionPointJSON[K /* <: ConnectionPointType */] extends js.Object {
-    var args: js.UndefOr[js.Any] = js.undefined
+    var args: /* import warning: ImportType.apply Failed type conversion: jointjs.jointjs.connectionPoints.ConnectionPointArgumentsMap[K] */ js.UndefOr[
+        /* import warning: ImportType.apply Failed type conversion: jointjs.jointjs.connectionPoints.ConnectionPointArgumentsMap[K] */ js.Any
+      ] = js.undefined
     var name: K
   }
-  
   
   trait StrokeConnectionPointArguments extends DefaultConnectionPointArguments {
     var stroke: js.UndefOr[scala.Boolean] = js.undefined
@@ -54,9 +51,9 @@ object connectionPointsNs extends js.Object {
     /* endPathSegmentLine */ jointjsLib.jointjsMod.gNs.Line, 
     /* endView */ jointjsLib.jointjsMod.diaNs.CellView, 
     /* endMagnet */ stdLib.SVGElement, 
-    /* opt */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: jointjs.jointjs.connectionPoints.ConnectionPointArgumentsMap[K] */ /* opt */ js.Any, 
     jointjsLib.jointjsMod.gNs.Point
   ]
-  type GenericConnectionPointArguments[K /* <: ConnectionPointType */] = js.Any
+  type GenericConnectionPointArguments[K /* <: ConnectionPointType */] = /* import warning: ImportType.apply Failed type conversion: jointjs.jointjs.connectionPoints.ConnectionPointArgumentsMap[K] */ js.Any
 }
 

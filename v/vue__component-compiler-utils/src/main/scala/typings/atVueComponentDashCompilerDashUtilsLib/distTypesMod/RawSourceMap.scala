@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RawSourceMap extends StartOfSourceMap {
   var mappings: java.lang.String
   var names: js.Array[java.lang.String]

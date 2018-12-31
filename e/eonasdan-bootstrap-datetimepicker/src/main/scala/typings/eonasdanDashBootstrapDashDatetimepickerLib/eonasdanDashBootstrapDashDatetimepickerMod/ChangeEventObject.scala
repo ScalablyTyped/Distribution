@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait ChangeEventObject
   extends jqueryLib.JQueryEventObject {
   /**
-       * Date the picker changed to. Type: moment object (clone)
-       */
+    * Date the picker changed to. Type: moment object (clone)
+    */
   var date: momentLib.momentMod.momentNs.Moment = js.native
   /**
-       * Previous date. Type: moment object (clone) or false in the event of a null
-       */
+    * Previous date. Type: moment object (clone) or false in the event of a null
+    */
   var oldDate: momentLib.momentMod.momentNs.Moment | scala.Boolean = js.native
 }
 

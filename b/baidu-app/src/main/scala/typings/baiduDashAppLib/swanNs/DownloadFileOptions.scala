@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DownloadFileOptions
   extends BaseOptions[js.Any, js.Any] {
   /** HTTP 请求 Header */

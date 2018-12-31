@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StandardErrorAppender extends js.Object {
   // (defaults to colouredLayout)
   var layout: js.UndefOr[Layout] = js.undefined

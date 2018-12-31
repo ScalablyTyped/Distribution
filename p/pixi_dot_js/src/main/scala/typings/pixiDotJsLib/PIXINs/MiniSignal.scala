@@ -12,7 +12,6 @@ class MiniSignal () extends js.Object {
   var _tail: MiniSignalBinding = js.native
   //tslint:disable-next-line:ban-types forbidden-types
   def add(fn: js.Function): js.Any = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def add(fn: js.Function, thisArg: js.Any): js.Any = js.native
   def detach(node: MiniSignalBinding): MiniSignal = js.native
   def detachAll(): MiniSignal = js.native
@@ -28,7 +27,6 @@ class MiniSignal () extends js.Object {
   def has(node: MiniSignalBinding): scala.Boolean = js.native
   //tslint:disable-next-line:ban-types forbidden-types
   def once(fn: js.Function): js.Any = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def once(fn: js.Function, thisArg: js.Any): js.Any = js.native
 }
 

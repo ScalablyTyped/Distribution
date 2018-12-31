@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Volumes extends js.Object {
   /** A list of volumes. */
   var items: js.UndefOr[js.Array[Volume]] = js.undefined

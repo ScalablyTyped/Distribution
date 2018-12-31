@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TooltipOptions extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var delay: js.UndefOr[scala.Double] = js.undefined

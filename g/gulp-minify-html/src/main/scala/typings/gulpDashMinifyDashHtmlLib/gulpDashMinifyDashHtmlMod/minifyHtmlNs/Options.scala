@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Options from https://github.com/Swaagie/minimize#options
-
 trait Options extends js.Object {
   // Do not strip CDATA from scripts
   var cdata: js.UndefOr[scala.Boolean] = js.undefined

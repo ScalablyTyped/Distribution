@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait INotificationOptions extends js.Object {
   var badge: js.UndefOr[java.lang.String] = js.undefined
   var body: js.UndefOr[java.lang.String] = js.undefined

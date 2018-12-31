@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILegend extends js.Object {
   var align: scala.Double
   var bounds: IRectangle

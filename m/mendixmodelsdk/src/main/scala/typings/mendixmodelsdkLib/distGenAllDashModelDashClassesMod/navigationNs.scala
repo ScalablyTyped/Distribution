@@ -19,8 +19,8 @@ object navigationNs extends js.Object {
   }
   
   /**
-       * Interfaces and instance classes for types from the Mendix sub meta model `Navigation`.
-       */
+    * Interfaces and instance classes for types from the Mendix sub meta model `Navigation`.
+    */
   @js.native
   abstract class HomePageBase protected ()
     extends mendixmodelsdkLib.distGenNavigationMod.navigationNs.HomePageBase {
@@ -28,8 +28,8 @@ object navigationNs extends js.Object {
   }
   
   /**
-       * In version 7.22.0: introduced
-       */
+    * In version 7.22.0: introduced
+    */
   @js.native
   class NativeNavigationProfile protected ()
     extends mendixmodelsdkLib.distGenNavigationMod.navigationNs.NativeNavigationProfile {
@@ -37,8 +37,8 @@ object navigationNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/navigation relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/navigation relevant section in reference guide}
+    */
   @js.native
   class NavigationDocument protected ()
     extends mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationDocument {
@@ -46,8 +46,8 @@ object navigationNs extends js.Object {
   }
   
   /**
-       * In version 7.2.0: added public
-       */
+    * In version 7.2.0: added public
+    */
   @js.native
   class NavigationProfile protected ()
     extends mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile {
@@ -61,10 +61,10 @@ object navigationNs extends js.Object {
   }
   
   /**
-       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-       *
-       * In version 7.22.0: introduced
-       */
+    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+    *
+    * In version 7.22.0: introduced
+    */
   @js.native
   class OfflineEntityConfig protected ()
     extends mendixmodelsdkLib.distGenNavigationMod.navigationNs.OfflineEntityConfig {
@@ -97,22 +97,22 @@ object navigationNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenNavigationMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new HomePage instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new HomePage instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenNavigationMod.navigationNs.HomePage = js.native
     /**
-             * Creates and returns a new HomePage instance in the SDK and on the server.
-             * The new HomePage will be automatically stored in the 'homePage' property
-             * of the parent NavigationProfile element passed as argument.
-             */
+      * Creates and returns a new HomePage instance in the SDK and on the server.
+      * The new HomePage will be automatically stored in the 'homePage' property
+      * of the parent NavigationProfile element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile): mendixmodelsdkLib.distGenNavigationMod.navigationNs.HomePage = js.native
   }
   
   /**
-       * Interfaces and instance classes for types from the Mendix sub meta model `Navigation`.
-       */
+    * Interfaces and instance classes for types from the Mendix sub meta model `Navigation`.
+    */
   @js.native
   object HomePageBase extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -120,145 +120,145 @@ object navigationNs extends js.Object {
   }
   
   /**
-       * In version 7.22.0: introduced
-       */
+    * In version 7.22.0: introduced
+    */
   @js.native
   object NativeNavigationProfile extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenNavigationMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new NativeNavigationProfile instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new NativeNavigationProfile instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NativeNavigationProfile = js.native
     /**
-             * Creates and returns a new NativeNavigationProfile instance in the SDK and on the server.
-             * The new NativeNavigationProfile will be automatically stored in the 'profiles' property
-             * of the parent NavigationDocument element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.22.0 and higher
-             */
+      * Creates and returns a new NativeNavigationProfile instance in the SDK and on the server.
+      * The new NativeNavigationProfile will be automatically stored in the 'profiles' property
+      * of the parent NavigationDocument element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.22.0 and higher
+      */
     def createIn(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationDocument): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NativeNavigationProfile = js.native
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/navigation relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/navigation relevant section in reference guide}
+    */
   @js.native
   object NavigationDocument extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenNavigationMod.StructureVersionInfo = js.native
     /**
-             * Creates a new NavigationDocument unit in the SDK and on the server.
-             * Expects one argument, the projects.IProject in which this unit is contained.
-             */
+      * Creates a new NavigationDocument unit in the SDK and on the server.
+      * Expects one argument, the projects.IProject in which this unit is contained.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationDocument = js.native
   }
   
   /**
-       * In version 7.2.0: added public
-       */
+    * In version 7.2.0: added public
+    */
   @js.native
   object NavigationProfile extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenNavigationMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new NavigationProfile instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new NavigationProfile instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile = js.native
     /**
-             * Creates and returns a new NavigationProfile instance in the SDK and on the server.
-             * The new NavigationProfile will be automatically stored in the 'profiles' property
-             * of the parent NavigationDocument element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.2.0 and higher
-             */
+      * Creates and returns a new NavigationProfile instance in the SDK and on the server.
+      * The new NavigationProfile will be automatically stored in the 'profiles' property
+      * of the parent NavigationDocument element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.2.0 and higher
+      */
     def createIn(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationDocument): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile = js.native
     /**
-             * Creates and returns a new NavigationProfile instance in the SDK and on the server.
-             * The new NavigationProfile will be automatically stored in the 'desktopProfile' property
-             * of the parent NavigationDocument element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.1.0
-             */
+      * Creates and returns a new NavigationProfile instance in the SDK and on the server.
+      * The new NavigationProfile will be automatically stored in the 'desktopProfile' property
+      * of the parent NavigationDocument element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.1.0
+      */
     def createInNavigationDocumentUnderDesktopProfile(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationDocument): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile = js.native
     /**
-             * Creates and returns a new NavigationProfile instance in the SDK and on the server.
-             * The new NavigationProfile will be automatically stored in the 'hybridPhoneProfile' property
-             * of the parent NavigationDocument element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.0.2 to 7.1.0
-             */
+      * Creates and returns a new NavigationProfile instance in the SDK and on the server.
+      * The new NavigationProfile will be automatically stored in the 'hybridPhoneProfile' property
+      * of the parent NavigationDocument element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.0.2 to 7.1.0
+      */
     def createInNavigationDocumentUnderHybridPhoneProfile(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationDocument): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile = js.native
     /**
-             * Creates and returns a new NavigationProfile instance in the SDK and on the server.
-             * The new NavigationProfile will be automatically stored in the 'hybridPhoneProfile6' property
-             * of the parent NavigationDocument element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.10.4 to 6.10.4
-             */
+      * Creates and returns a new NavigationProfile instance in the SDK and on the server.
+      * The new NavigationProfile will be automatically stored in the 'hybridPhoneProfile6' property
+      * of the parent NavigationDocument element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.10.4 to 6.10.4
+      */
     def createInNavigationDocumentUnderHybridPhoneProfile6(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationDocument): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile = js.native
     /**
-             * Creates and returns a new NavigationProfile instance in the SDK and on the server.
-             * The new NavigationProfile will be automatically stored in the 'hybridTabletProfile' property
-             * of the parent NavigationDocument element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.0.2 to 7.1.0
-             */
+      * Creates and returns a new NavigationProfile instance in the SDK and on the server.
+      * The new NavigationProfile will be automatically stored in the 'hybridTabletProfile' property
+      * of the parent NavigationDocument element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.0.2 to 7.1.0
+      */
     def createInNavigationDocumentUnderHybridTabletProfile(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationDocument): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile = js.native
     /**
-             * Creates and returns a new NavigationProfile instance in the SDK and on the server.
-             * The new NavigationProfile will be automatically stored in the 'hybridTabletProfile6' property
-             * of the parent NavigationDocument element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.10.4 to 6.10.4
-             */
+      * Creates and returns a new NavigationProfile instance in the SDK and on the server.
+      * The new NavigationProfile will be automatically stored in the 'hybridTabletProfile6' property
+      * of the parent NavigationDocument element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.10.4 to 6.10.4
+      */
     def createInNavigationDocumentUnderHybridTabletProfile6(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationDocument): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile = js.native
     /**
-             * Creates and returns a new NavigationProfile instance in the SDK and on the server.
-             * The new NavigationProfile will be automatically stored in the 'offlinePhoneProfile' property
-             * of the parent NavigationDocument element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.0.1
-             */
+      * Creates and returns a new NavigationProfile instance in the SDK and on the server.
+      * The new NavigationProfile will be automatically stored in the 'offlinePhoneProfile' property
+      * of the parent NavigationDocument element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.0.1
+      */
     def createInNavigationDocumentUnderOfflinePhoneProfile(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationDocument): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile = js.native
     /**
-             * Creates and returns a new NavigationProfile instance in the SDK and on the server.
-             * The new NavigationProfile will be automatically stored in the 'phoneProfile' property
-             * of the parent NavigationDocument element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.1.0
-             */
+      * Creates and returns a new NavigationProfile instance in the SDK and on the server.
+      * The new NavigationProfile will be automatically stored in the 'phoneProfile' property
+      * of the parent NavigationDocument element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.1.0
+      */
     def createInNavigationDocumentUnderPhoneProfile(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationDocument): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile = js.native
     /**
-             * Creates and returns a new NavigationProfile instance in the SDK and on the server.
-             * The new NavigationProfile will be automatically stored in the 'profiles' property
-             * of the parent NavigationDocument element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.2.0 and higher
-             */
+      * Creates and returns a new NavigationProfile instance in the SDK and on the server.
+      * The new NavigationProfile will be automatically stored in the 'profiles' property
+      * of the parent NavigationDocument element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.2.0 and higher
+      */
     def createInNavigationDocumentUnderProfiles(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationDocument): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile = js.native
     /**
-             * Creates and returns a new NavigationProfile instance in the SDK and on the server.
-             * The new NavigationProfile will be automatically stored in the 'tabletProfile' property
-             * of the parent NavigationDocument element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  6.0.0 to 7.1.0
-             */
+      * Creates and returns a new NavigationProfile instance in the SDK and on the server.
+      * The new NavigationProfile will be automatically stored in the 'tabletProfile' property
+      * of the parent NavigationDocument element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  6.0.0 to 7.1.0
+      */
     def createInNavigationDocumentUnderTabletProfile(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationDocument): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile = js.native
   }
   
@@ -269,28 +269,28 @@ object navigationNs extends js.Object {
   }
   
   /**
-       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-       *
-       * In version 7.22.0: introduced
-       */
+    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
+    *
+    * In version 7.22.0: introduced
+    */
   @js.native
   object OfflineEntityConfig extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenNavigationMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new OfflineEntityConfig instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new OfflineEntityConfig instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenNavigationMod.navigationNs.OfflineEntityConfig = js.native
     /**
-             * Creates and returns a new OfflineEntityConfig instance in the SDK and on the server.
-             * The new OfflineEntityConfig will be automatically stored in the 'offlineEntityConfigs' property
-             * of the parent NavigationProfile element passed as argument.
-             *
-             * Warning! Can only be used on models with the following Mendix meta model versions:
-             *  7.22.0 and higher
-             */
+      * Creates and returns a new OfflineEntityConfig instance in the SDK and on the server.
+      * The new OfflineEntityConfig will be automatically stored in the 'offlineEntityConfigs' property
+      * of the parent NavigationProfile element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.22.0 and higher
+      */
     def createIn(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile): mendixmodelsdkLib.distGenNavigationMod.navigationNs.OfflineEntityConfig = js.native
   }
   
@@ -325,16 +325,16 @@ object navigationNs extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenNavigationMod.StructureVersionInfo = js.native
     /**
-             * Creates and returns a new RoleBasedHomePage instance in the SDK and on the server.
-             * Expects one argument: the IModel object the instance will "live on".
-             * After creation, assign or add this instance to a property that accepts this kind of objects.
-             */
+      * Creates and returns a new RoleBasedHomePage instance in the SDK and on the server.
+      * Expects one argument: the IModel object the instance will "live on".
+      * After creation, assign or add this instance to a property that accepts this kind of objects.
+      */
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenNavigationMod.navigationNs.RoleBasedHomePage = js.native
     /**
-             * Creates and returns a new RoleBasedHomePage instance in the SDK and on the server.
-             * The new RoleBasedHomePage will be automatically stored in the 'roleBasedHomePages' property
-             * of the parent NavigationProfile element passed as argument.
-             */
+      * Creates and returns a new RoleBasedHomePage instance in the SDK and on the server.
+      * The new RoleBasedHomePage will be automatically stored in the 'roleBasedHomePages' property
+      * of the parent NavigationProfile element passed as argument.
+      */
     def createIn(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile): mendixmodelsdkLib.distGenNavigationMod.navigationNs.RoleBasedHomePage = js.native
   }
   

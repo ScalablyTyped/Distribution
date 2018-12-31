@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 sealed trait ChartMapProjectionType extends js.Object
 
 /**
-     *
-     * Represents the region projection type of chart series layout, only applicable in RegionMap chart.
-     *
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  *
+  * Represents the region projection type of chart series layout, only applicable in RegionMap chart.
+  *
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.ChartMapProjectionType")
 @js.native
 object ChartMapProjectionType extends js.Object {

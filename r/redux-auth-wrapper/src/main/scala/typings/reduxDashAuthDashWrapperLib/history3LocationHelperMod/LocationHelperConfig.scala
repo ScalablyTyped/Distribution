@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocationHelperConfig[Props] extends js.Object {
   var locationSelector: js.UndefOr[
     js.Function1[

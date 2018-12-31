@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TagData extends js.Object {
   /** Ad associated with this placement tag. Applicable only when format is PLACEMENT_TAG_TRACKING. */
   var adId: js.UndefOr[java.lang.String] = js.undefined

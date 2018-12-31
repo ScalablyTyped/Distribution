@@ -31,41 +31,11 @@ object fsDashExtraDashPModMembers extends js.Object {
   def copyFile(src: java.lang.String, dest: java.lang.String): js.Promise[scala.Unit] = js.native
   def createFile(file: java.lang.String): js.Promise[scala.Unit] = js.native
   def createFileSync(file: java.lang.String): scala.Unit = js.native
-  /**
-       * Returns a new `ReadStream` object.
-       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-       * URL support is _experimental_.
-       */
   def createReadStream(path: nodeLib.fsMod.PathLike): nodeLib.fsMod.ReadStream = js.native
-  /**
-       * Returns a new `ReadStream` object.
-       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-       * URL support is _experimental_.
-       */
   def createReadStream(path: nodeLib.fsMod.PathLike, options: java.lang.String): nodeLib.fsMod.ReadStream = js.native
-  /**
-       * Returns a new `ReadStream` object.
-       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-       * URL support is _experimental_.
-       */
   def createReadStream(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_AutoClose): nodeLib.fsMod.ReadStream = js.native
-  /**
-       * Returns a new `WriteStream` object.
-       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-       * URL support is _experimental_.
-       */
   def createWriteStream(path: nodeLib.fsMod.PathLike): nodeLib.fsMod.WriteStream = js.native
-  /**
-       * Returns a new `WriteStream` object.
-       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-       * URL support is _experimental_.
-       */
   def createWriteStream(path: nodeLib.fsMod.PathLike, options: java.lang.String): nodeLib.fsMod.WriteStream = js.native
-  /**
-       * Returns a new `WriteStream` object.
-       * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
-       * URL support is _experimental_.
-       */
   def createWriteStream(path: nodeLib.fsMod.PathLike, options: nodeLib.Anon_AutoCloseFlags): nodeLib.fsMod.WriteStream = js.native
   def deleteFile(path: java.lang.String): js.Promise[_] = js.native
   def deleteFile(path: java.lang.String, ignoreIfNotExists: scala.Boolean): js.Promise[_] = js.native

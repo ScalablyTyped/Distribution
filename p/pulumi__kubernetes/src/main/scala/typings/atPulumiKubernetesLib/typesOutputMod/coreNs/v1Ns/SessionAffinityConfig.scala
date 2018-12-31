@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * SessionAffinityConfig represents the configurations of session affinity.
-         */
-
+  * SessionAffinityConfig represents the configurations of session affinity.
+  */
 trait SessionAffinityConfig extends js.Object {
   /**
-               * clientIP contains the configurations of Client IP based session affinity.
-               */
+    * clientIP contains the configurations of Client IP based session affinity.
+    */
   val clientIP: ClientIPConfig
 }
 

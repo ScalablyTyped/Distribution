@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestStatus extends js.Object {
   var completeTime: java.lang.String
   var elapsed: scala.Double

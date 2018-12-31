@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BasicDataStatsDto extends js.Object {
   var FlatArmorMod: scala.Double
   var FlatAttackSpeedMod: scala.Double

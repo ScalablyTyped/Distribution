@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BlobClientParamters extends js.Object {
   var logger: webgmeLib.GlobalNs.GmeLogger
 }

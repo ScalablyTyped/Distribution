@@ -19,7 +19,7 @@ class Default protected () extends js.Object {
   var otherSources: js.Any = js.native
   var stickySource: js.Any = js.native
   var stopListeningTo: js.Function2[/* other */ js.Any, /* eventName */ js.UndefOr[js.Any], _] = js.native
-  var trigger: js.Function2[/* types */ js.Any, /* repeated */js.Any, _] = js.native
+  var trigger: js.Function2[/* types */ js.Any, /* repeated */ js.Any, _] = js.native
   var triggerWith: js.Function3[/* types */ js.Any, /* context */ js.Any, /* args */ js.Any, _] = js.native
   def addEventDef(eventDef: js.Any, isSticky: js.Any): scala.Unit = js.native
   def addSource(eventSource: js.Any): scala.Unit = js.native

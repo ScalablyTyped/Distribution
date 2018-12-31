@@ -19,8 +19,8 @@ class Success[L, A] protected () extends js.Object {
   def getOrElse(a: A): A = js.native
   def getOrElseL(f: js.Function1[/* l */ L, A]): A = js.native
   def inspect(): java.lang.String = js.native
-  def isFailure(): /* is Failure */scala.Boolean = js.native
-  def isSuccess(): /* is Success */scala.Boolean = js.native
+  def isFailure(): /* is fp-ts.fp-ts/lib/Validation.Failure<L, A> */ scala.Boolean = js.native
+  def isSuccess(): /* is fp-ts.fp-ts/lib/Validation.Success<L, A> */ scala.Boolean = js.native
   def map[B](f: js.Function1[/* a */ A, B]): Validation[L, B] = js.native
   def mapFailure[M](f: js.Function1[/* l */ L, M]): Validation[M, A] = js.native
   def reduce[B](b: B, f: js.Function2[/* b */ B, /* a */ A, B]): B = js.native

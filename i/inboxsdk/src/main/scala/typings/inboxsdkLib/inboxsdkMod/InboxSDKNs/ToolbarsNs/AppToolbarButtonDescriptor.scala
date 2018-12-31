@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AppToolbarButtonDescriptor extends js.Object {
   var arrowColor: js.UndefOr[java.lang.String] = js.undefined
   var iconClass: js.UndefOr[java.lang.String] = js.undefined

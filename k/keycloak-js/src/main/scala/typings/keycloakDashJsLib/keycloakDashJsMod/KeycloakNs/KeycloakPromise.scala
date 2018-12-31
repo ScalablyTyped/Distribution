@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeycloakPromise[TSuccess, TError] extends js.Object {
   /**
   		 * Function to call if the promised action throws an error.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DownloadProgressCallbackResult extends js.Object {
   // The number of bytes written to the file so far
   var bytesWritten: scala.Double

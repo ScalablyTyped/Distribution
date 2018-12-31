@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DateUtils extends js.Object {
   def addDayToRange(day: stdLib.Date, range: reactDashDayDashPickerLib.typesCommonMod.RangeModifier): reactDashDayDashPickerLib.typesCommonMod.RangeModifier
   def addMonths(d: stdLib.Date, n: scala.Double): stdLib.Date

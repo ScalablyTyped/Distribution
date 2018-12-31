@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PrecompileOptions extends js.Object {
   var asFunction: js.UndefOr[scala.Boolean] = js.undefined
   var env: js.UndefOr[Environment] = js.undefined

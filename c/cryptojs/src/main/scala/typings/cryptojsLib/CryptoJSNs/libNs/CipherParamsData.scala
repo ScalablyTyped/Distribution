@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CipherParamsData extends js.Object {
   var algorithm: js.UndefOr[Cipher] = js.undefined
   var blockSize: js.UndefOr[scala.Double] = js.undefined

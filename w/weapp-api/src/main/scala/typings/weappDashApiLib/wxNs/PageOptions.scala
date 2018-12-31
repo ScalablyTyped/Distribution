@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PageOptions
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /** 页面的初始数据 */

@@ -17,7 +17,7 @@ class FollowedItem ()
   /** Provides information about the application that opens a followed document. */
   def get_fileTypeProgid(): java.lang.String = js.native
   /** Specifies additional information about the followed item.
-                  The server stores the data so that it can return it to the client. */
+    The server stores the data so that it can return it to the client. */
   def get_flags(): java.lang.String = js.native
   /** Indicates whether the followed site has a feed. */
   def get_hasFeed(): scala.Boolean = js.native
@@ -30,7 +30,7 @@ class FollowedItem ()
   /** Specifies the type of this item. */
   def get_itemType(): FollowedItemType = js.native
   /** The ListId property specifies the list identification (GUID) for this item in the Content database if this item is a list or the list identification for its parent list.
-                  If the ItemType is Document, this property is specified, but if the ItemType is Site, then this property is not specified. */
+    If the ItemType is Document, this property is specified, but if the ItemType is Site, then this property is not specified. */
   def get_listId(): java.lang.String = js.native
   /** Specifies the URL of this item's parent list or web. */
   def get_parentUrl(): java.lang.String = js.native
@@ -39,8 +39,8 @@ class FollowedItem ()
   /** Specifies the site identification (GUID) in the Content database for this item if this item is a site, or for its parent site if this item is not a site. */
   def get_siteId(): java.lang.String = js.native
   /** Specifies the subtype of this item.
-                  If the ItemType is Site, the Subtype specifies the web template identification.
-                  If the ItemType is Document, the Subtype has a value of 1. */
+    If the ItemType is Site, the Subtype specifies the web template identification.
+    If the ItemType is Document, the Subtype has a value of 1. */
   def get_subtype(): scala.Double = js.native
   /** Specifies the item of this item */
   def get_title(): java.lang.String = js.native
@@ -57,7 +57,7 @@ class FollowedItem ()
   /** Provides information about the application that opens a followed document. */
   def set_fileTypeProgid(value: java.lang.String): java.lang.String = js.native
   /** Specifies additional information about the followed item.
-                  The server stores the data so that it can return it to the client. */
+    The server stores the data so that it can return it to the client. */
   def set_flags(value: java.lang.String): java.lang.String = js.native
   /** Indicates whether the followed site has a feed. */
   def set_hasFeed(value: scala.Boolean): scala.Boolean = js.native
@@ -70,7 +70,7 @@ class FollowedItem ()
   /** Specifies the type of this item. */
   def set_itemType(value: FollowedItemType): FollowedItemType = js.native
   /** The ListId property specifies the list identification (GUID) for this item in the Content database if this item is a list or the list identification for its parent list.
-                  If the ItemType is Document, this property is specified, but if the ItemType is Site, then this property is not specified. */
+    If the ItemType is Document, this property is specified, but if the ItemType is Site, then this property is not specified. */
   def set_listId(value: java.lang.String): java.lang.String = js.native
   /** Specifies the URL of this item's parent list or web. */
   def set_parentUrl(value: java.lang.String): java.lang.String = js.native
@@ -79,8 +79,8 @@ class FollowedItem ()
   /** Specifies the site identification (GUID) in the Content database for this item if this item is a site, or for its parent site if this item is not a site. */
   def set_siteId(value: java.lang.String): java.lang.String = js.native
   /** Specifies the subtype of this item.
-                  If the ItemType is Site, the Subtype specifies the web template identification.
-                  If the ItemType is Document, the Subtype has a value of 1. */
+    If the ItemType is Site, the Subtype specifies the web template identification.
+    If the ItemType is Document, the Subtype has a value of 1. */
   def set_subtype(value: scala.Double): scala.Double = js.native
   /** Specifies the item of this item */
   def set_title(value: java.lang.String): java.lang.String = js.native

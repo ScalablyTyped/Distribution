@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line: interface-name
-
 trait IRecord extends js.Object {
   /** True if this is an entry row */
   var bIsNewRow: scala.Boolean
@@ -24,7 +23,7 @@ trait IRecord extends js.Object {
   /** returns true if localized text value for the specified field is available */
   def HasLocalizedValue(fieldKey: java.lang.String): scala.Boolean
   /** Removes value of the specified field.
-                  Does not refresh the view. */
+    Does not refresh the view. */
   def RemoveFieldValue(fieldKey: java.lang.String): scala.Unit
   def SetProp(fieldKey: java.lang.String, prop: IPropertyBase): scala.Unit
   /** returns recordKey */

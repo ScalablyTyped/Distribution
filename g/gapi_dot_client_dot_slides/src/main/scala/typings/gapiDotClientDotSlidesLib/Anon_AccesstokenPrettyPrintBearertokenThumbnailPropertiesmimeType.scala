@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPrettyPrintBearertokenThumbnailPropertiesmimeType extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -35,17 +34,17 @@ trait Anon_AccesstokenPrettyPrintBearertokenThumbnailPropertiesmimeType extends 
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The optional mime type of the thumbnail image.
-                   *
-                   * If you don't specify the mime type, the default mime type will be PNG.
-                   */
+    * The optional mime type of the thumbnail image.
+    *
+    * If you don't specify the mime type, the default mime type will be PNG.
+    */
   var `thumbnailProperties.mimeType`: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The optional thumbnail image size.
-                   *
-                   * If you don't specify the size, the server chooses a default size of the
-                   * image.
-                   */
+    * The optional thumbnail image size.
+    *
+    * If you don't specify the size, the server chooses a default size of the
+    * image.
+    */
   var `thumbnailProperties.thumbnailSize`: js.UndefOr[java.lang.String] = js.undefined
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HighlightOptions extends js.Object {
   var alternateField: js.UndefOr[java.lang.String] = js.undefined
   var fl: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IArchiveOldVersionsJob extends js.Object {
   var AtLeastNDaysOlder: scala.Double
   var AtLeastNVersionsOlder: scala.Double

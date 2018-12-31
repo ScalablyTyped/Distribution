@@ -5,54 +5,53 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BuildDefinition extends BuildDefinitionReference {
   /**
-       * Indicates whether badges are enabled for this definition.
-       */
+    * Indicates whether badges are enabled for this definition.
+    */
   var badgeEnabled: scala.Boolean
   /**
-       * The build number format.
-       */
+    * The build number format.
+    */
   var buildNumberFormat: java.lang.String
   /**
-       * A save-time comment for the definition.
-       */
+    * A save-time comment for the definition.
+    */
   var comment: java.lang.String
   var demands: js.Array[_]
   /**
-       * The description.
-       */
+    * The description.
+    */
   var description: java.lang.String
   /**
-       * The drop location for the definition.
-       */
+    * The drop location for the definition.
+    */
   var dropLocation: java.lang.String
   /**
-       * The job authorization scope for builds queued against this definition.
-       */
+    * The job authorization scope for builds queued against this definition.
+    */
   var jobAuthorizationScope: BuildAuthorizationScope
   /**
-       * The job cancel timeout (in minutes) for builds cancelled by user for this definition.
-       */
+    * The job cancel timeout (in minutes) for builds cancelled by user for this definition.
+    */
   var jobCancelTimeoutInMinutes: scala.Double
   /**
-       * The job execution timeout (in minutes) for builds queued against this definition.
-       */
+    * The job execution timeout (in minutes) for builds queued against this definition.
+    */
   var jobTimeoutInMinutes: scala.Double
   var options: js.Array[BuildOption]
   /**
-       * The build process.
-       */
+    * The build process.
+    */
   var process: BuildProcess
   /**
-       * The process parameters for this definition.
-       */
+    * The process parameters for this definition.
+    */
   var processParameters: vsoDashNodeDashApiLib.interfacesDistributedTaskCommonInterfacesMod.ProcessParameters
   var properties: js.Any
   /**
-       * The repository.
-       */
+    * The repository.
+    */
   var repository: BuildRepository
   var retentionRules: js.Array[RetentionPolicy]
   var tags: js.Array[java.lang.String]

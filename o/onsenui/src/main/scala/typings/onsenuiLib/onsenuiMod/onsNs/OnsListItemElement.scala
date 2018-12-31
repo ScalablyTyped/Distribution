@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait OnsListItemElement
   extends stdLib.HTMLElement {
   /**
-       * @description Hide the expandable content if element is expandable
-       */
+    * @description Hide the expandable content if element is expandable
+    */
   def hideExpansion(): scala.Unit = js.native
   /**
-       * @description Show the expandable content if element is expandable
-       */
+    * @description Show the expandable content if element is expandable
+    */
   def showExpansion(): scala.Unit = js.native
 }
 

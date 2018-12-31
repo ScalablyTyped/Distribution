@@ -10,11 +10,8 @@ import scala.scalajs.js.annotation._
 class Pair protected () extends js.Object {
   /** Creates a new Pair with the specified field name/value pairing */
   def this(fieldName: java.lang.String, value: java.lang.String) = this()
-  /** Creates a new Pair with the specified field name/value pairing */
   def this(fieldName: java.lang.String, value: scala.Boolean) = this()
-  /** Creates a new Pair with the specified field name/value pairing */
   def this(fieldName: java.lang.String, value: scala.Double) = this()
-  /** Creates a new Pair with the specified field name/value pairing */
   def this(fieldName: java.lang.String, value: stdLib.Date) = this()
   /** The field name to which the value is applied. */
   var fieldName: java.lang.String = js.native

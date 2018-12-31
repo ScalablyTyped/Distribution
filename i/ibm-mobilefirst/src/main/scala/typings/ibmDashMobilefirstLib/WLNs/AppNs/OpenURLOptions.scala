@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OpenURLOptions extends js.Object {
   var directories: js.UndefOr[scala.Double] = js.undefined
   var location: js.UndefOr[scala.Double] = js.undefined

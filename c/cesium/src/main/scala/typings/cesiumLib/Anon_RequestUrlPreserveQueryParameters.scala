@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RequestUrlPreserveQueryParameters extends js.Object {
   var headers: js.UndefOr[js.Any] = js.undefined
   var preserveQueryParameters: js.UndefOr[scala.Boolean] = js.undefined

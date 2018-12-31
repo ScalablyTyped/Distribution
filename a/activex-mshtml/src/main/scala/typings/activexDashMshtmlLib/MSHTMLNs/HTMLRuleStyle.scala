@@ -338,7 +338,6 @@ trait HTMLRuleStyle extends js.Object {
   def apply(index: scala.Double): java.lang.String = js.native
   /** @param lFlags [lFlags=0] */
   def getAttribute(strAttributeName: java.lang.String): js.Any = js.native
-  /** @param lFlags [lFlags=0] */
   def getAttribute(strAttributeName: java.lang.String, lFlags: scala.Double): js.Any = js.native
   def getPropertyPriority(bstrPropertyName: java.lang.String): java.lang.String = js.native
   def getPropertyValue(bstrPropertyName: java.lang.String): java.lang.String = js.native
@@ -347,16 +346,13 @@ trait HTMLRuleStyle extends js.Object {
   def msPutPropertyEnabled(name: java.lang.String, b: scala.Boolean): scala.Unit = js.native
   /** @param lFlags [lFlags=1] */
   def removeAttribute(strAttributeName: java.lang.String): scala.Boolean = js.native
-  /** @param lFlags [lFlags=1] */
   def removeAttribute(strAttributeName: java.lang.String, lFlags: scala.Double): scala.Boolean = js.native
   def removeProperty(bstrPropertyName: java.lang.String): java.lang.String = js.native
   /** @param lFlags [lFlags=1] */
   def setAttribute(strAttributeName: java.lang.String, AttributeValue: js.Any): scala.Unit = js.native
-  /** @param lFlags [lFlags=1] */
   def setAttribute(strAttributeName: java.lang.String, AttributeValue: js.Any, lFlags: scala.Double): scala.Unit = js.native
   /** @param pvarPropertyPriority [pvarPropertyPriority=''] */
   def setProperty(bstrPropertyName: java.lang.String, pvarPropertyValue: js.Any): scala.Unit = js.native
-  /** @param pvarPropertyPriority [pvarPropertyPriority=''] */
   def setProperty(bstrPropertyName: java.lang.String, pvarPropertyValue: js.Any, pvarPropertyPriority: js.Any): scala.Unit = js.native
 }
 

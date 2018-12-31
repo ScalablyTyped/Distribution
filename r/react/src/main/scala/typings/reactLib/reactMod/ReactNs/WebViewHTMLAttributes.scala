@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebViewHTMLAttributes[T] extends HTMLAttributes[T] {
   var allowFullScreen: js.UndefOr[scala.Boolean] = js.undefined
   var allowpopups: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Typography extends js.Object {
   var fontStyleButtonFontSize: scala.Double
   // font weight

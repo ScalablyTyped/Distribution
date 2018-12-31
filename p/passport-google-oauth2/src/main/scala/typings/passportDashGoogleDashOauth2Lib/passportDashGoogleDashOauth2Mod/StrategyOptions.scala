@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrategyOptions extends js.Object {
   var callbackURL: java.lang.String
   var clientID: java.lang.String

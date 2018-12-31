@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SelectedImageryProviderViewModel extends js.Object {
   var globe: cesiumLib.cesiumMod.CesiumNs.Globe
   var imageryProviderViewModels: js.UndefOr[js.Array[cesiumLib.cesiumMod.CesiumNs.ProviderViewModel]] = js.undefined

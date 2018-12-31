@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var badrequest: js.UndefOr[expressLib.expressMod.eNs.Handler] = js.undefined
   var debug: js.UndefOr[

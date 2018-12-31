@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GraphQLFieldConfig[TSource, TContext, TArgs] extends js.Object {
   var args: js.UndefOr[GraphQLFieldConfigArgumentMap] = js.undefined
   var astNode: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.languageAstMod.FieldDefinitionNode]] = js.undefined

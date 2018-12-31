@@ -30,23 +30,16 @@ class Workspace protected () extends js.Object {
   def Close(): scala.Unit = js.native
   /** @param Options [Options=0] */
   def CommitTrans(): scala.Unit = js.native
-  /** @param Options [Options=0] */
   def CommitTrans(Options: scala.Double): scala.Unit = js.native
   def Connections(Item: java.lang.String): Connection = js.native
   def Connections(Item: scala.Double): Connection = js.native
   /**
-           * @param Connect  Specify one of the following:
-           * *  the locale, using one of the language constants
-           * * the password, in the form `;pwd=MyNewPassword'`
-           * * both the constant and a password, e.g. `dbLangGreek + ';pwd=MyNewPassword'`
-           */
+    * @param Connect  Specify one of the following:
+    * *  the locale, using one of the language constants
+    * * the password, in the form `;pwd=MyNewPassword'`
+    * * both the constant and a password, e.g. `dbLangGreek + ';pwd=MyNewPassword'`
+    */
   def CreateDatabase(Name: java.lang.String, Connect: java.lang.String): Database = js.native
-  /**
-           * @param Connect  Specify one of the following:
-           * *  the locale, using one of the language constants
-           * * the password, in the form `;pwd=MyNewPassword'`
-           * * both the constant and a password, e.g. `dbLangGreek + ';pwd=MyNewPassword'`
-           */
   def CreateDatabase(Name: java.lang.String, Connect: java.lang.String, Option: DatabaseTypeEnum): Database = js.native
   def CreateGroup(): Group = js.native
   def CreateGroup(Name: java.lang.String): Group = js.native
@@ -60,37 +53,19 @@ class Workspace protected () extends js.Object {
   def Groups(Item: java.lang.String): Group = js.native
   def Groups(Item: scala.Double): Group = js.native
   /**
-           * @param Connect ODBC connection string; prepend with `ODBC;`
-           */
+    * @param Connect ODBC connection string; prepend with `ODBC;`
+    */
   def OpenConnection(Name: java.lang.String): Connection = js.native
-  /**
-           * @param Connect ODBC connection string; prepend with `ODBC;`
-           */
   def OpenConnection(Name: java.lang.String, Options: DriverPromptEnum): Connection = js.native
-  /**
-           * @param Connect ODBC connection string; prepend with `ODBC;`
-           */
   def OpenConnection(Name: java.lang.String, Options: DriverPromptEnum, ReadOnly: scala.Boolean): Connection = js.native
-  /**
-           * @param Connect ODBC connection string; prepend with `ODBC;`
-           */
   def OpenConnection(
     Name: java.lang.String,
     Options: DriverPromptEnum,
     ReadOnly: scala.Boolean,
     Connect: java.lang.String
   ): Connection = js.native
-  /**
-           * @param Connect ODBC connection string; prepend with `ODBC;`
-           */
   def OpenConnection(Name: java.lang.String, Options: RecordsetOptionEnum): Connection = js.native
-  /**
-           * @param Connect ODBC connection string; prepend with `ODBC;`
-           */
   def OpenConnection(Name: java.lang.String, Options: RecordsetOptionEnum, ReadOnly: scala.Boolean): Connection = js.native
-  /**
-           * @param Connect ODBC connection string; prepend with `ODBC;`
-           */
   def OpenConnection(
     Name: java.lang.String,
     Options: RecordsetOptionEnum,

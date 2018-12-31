@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JsonRpcClientOptions
   extends jqueryLib.JQueryNs.AjaxSettings[js.Any] {
   var ajaxUrl: java.lang.String

@@ -17,9 +17,6 @@ trait IUtilDomMisc extends js.Object {
   	 * Takes id and returns an element with that id (if one exists in a document)
   	 */
   def getById(id: java.lang.String): stdLib.HTMLElement = js.native
-  /**
-  	 * Takes id and returns an element with that id (if one exists in a document)
-  	 */
   def getById(id: stdLib.HTMLElement): stdLib.HTMLElement = js.native
   /**
   	 * Returns offset for a given element
@@ -51,12 +48,6 @@ trait IUtilDomMisc extends js.Object {
   	 * @return Newly created element
   	 */
   def makeElement(tagName: java.lang.String): stdLib.HTMLElement = js.native
-  /**
-  	 * Creates specified element with specified attributes
-  	 * @param tagName Type of an element to create
-  	 * @param [attributes] Attributes to set on an element
-  	 * @return Newly created element
-  	 */
   def makeElement(tagName: java.lang.String, attributes: js.Any): stdLib.HTMLElement = js.native
   /**
   	 * Makes element selectable
@@ -72,19 +63,7 @@ trait IUtilDomMisc extends js.Object {
   	 * Converts an array-like object (e.g. arguments or NodeList) to an array
   	 */
   def toArray(arrayLike: js.Any): js.Array[_] = js.native
-  /**
-  	 * Wraps element with another element
-  	 * @param element Element to wrap
-  	 * @param wrapper Element to wrap with
-  	 * @param [attributes] Attributes to set on a wrapper
-  	 */
   def wrapElement(element: stdLib.HTMLElement, wrapper: java.lang.String): stdLib.HTMLElement = js.native
-  /**
-  	 * Wraps element with another element
-  	 * @param element Element to wrap
-  	 * @param wrapper Element to wrap with
-  	 * @param [attributes] Attributes to set on a wrapper
-  	 */
   def wrapElement(element: stdLib.HTMLElement, wrapper: java.lang.String, attributes: js.Any): stdLib.HTMLElement = js.native
   /**
   	 * Wraps element with another element
@@ -93,12 +72,6 @@ trait IUtilDomMisc extends js.Object {
   	 * @param [attributes] Attributes to set on a wrapper
   	 */
   def wrapElement(element: stdLib.HTMLElement, wrapper: stdLib.HTMLElement): stdLib.HTMLElement = js.native
-  /**
-  	 * Wraps element with another element
-  	 * @param element Element to wrap
-  	 * @param wrapper Element to wrap with
-  	 * @param [attributes] Attributes to set on a wrapper
-  	 */
   def wrapElement(element: stdLib.HTMLElement, wrapper: stdLib.HTMLElement, attributes: js.Any): stdLib.HTMLElement = js.native
 }
 

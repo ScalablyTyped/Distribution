@@ -28,9 +28,9 @@ abstract class DataReaderLoadOperation () extends js.Object {
     asyncStatus: winrtDashUwpLib.WindowsNs.FoundationNs.AsyncStatus
   ): scala.Unit = js.native
   /**
-                   * Returns the result of the data load operation.
-                   * @return The result of the operation.
-                   */
+    * Returns the result of the data load operation.
+    * @return The result of the operation.
+    */
   def getResults(): scala.Double = js.native
 }
 

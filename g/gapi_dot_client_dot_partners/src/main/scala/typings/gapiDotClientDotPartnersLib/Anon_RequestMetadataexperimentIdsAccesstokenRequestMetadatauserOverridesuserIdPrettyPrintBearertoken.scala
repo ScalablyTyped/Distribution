@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RequestMetadataexperimentIdsAccesstokenRequestMetadatauserOverridesuserIdPrettyPrintBearertoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -37,16 +36,16 @@ trait Anon_RequestMetadataexperimentIdsAccesstokenRequestMetadatauserOverridesus
   /** Google Partners session ID. */
   var `requestMetadata.partnersSessionId`: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Identifier to indicate where the traffic comes from.
-                   * An identifier has multiple letters created by a team which redirected the
-                   * traffic to us.
-                   */
+    * Identifier to indicate where the traffic comes from.
+    * An identifier has multiple letters created by a team which redirected the
+    * traffic to us.
+    */
   var `requestMetadata.trafficSource.trafficSourceId`: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Second level identifier to indicate where the traffic comes from.
-                   * An identifier has multiple letters created by a team which redirected the
-                   * traffic to us.
-                   */
+    * Second level identifier to indicate where the traffic comes from.
+    * An identifier has multiple letters created by a team which redirected the
+    * traffic to us.
+    */
   var `requestMetadata.trafficSource.trafficSubId`: js.UndefOr[java.lang.String] = js.undefined
   /** IP address to use instead of the user's geo-located IP address. */
   var `requestMetadata.userOverrides.ipAddress`: js.UndefOr[java.lang.String] = js.undefined
@@ -57,9 +56,9 @@ trait Anon_RequestMetadataexperimentIdsAccesstokenRequestMetadatauserOverridesus
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Identifier of the user. Can be set to <code>me</code> to mean the currently
-                   * authenticated user.
-                   */
+    * Identifier of the user. Can be set to <code>me</code> to mean the currently
+    * authenticated user.
+    */
   var userId: java.lang.String
   /** Specifies what parts of the user information to return. */
   var userView: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ButtonProps extends js.Object {
   /** The base styling to apply to the button. */
   val appearance: js.UndefOr[ButtonAppearances] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JadeOptions extends js.Object {
   var basedir: js.UndefOr[java.lang.String] = js.undefined
   var cache: js.UndefOr[scala.Boolean] = js.undefined

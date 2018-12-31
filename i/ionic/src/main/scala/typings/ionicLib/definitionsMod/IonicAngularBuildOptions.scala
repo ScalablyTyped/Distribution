@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IonicAngularBuildOptions
   extends BuildOptions[ionicLib.ionicLibStrings.`ionic-angular`] {
   var aot: scala.Boolean

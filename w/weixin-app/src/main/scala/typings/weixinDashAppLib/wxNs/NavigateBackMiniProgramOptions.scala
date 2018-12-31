@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigateBackMiniProgramOptions
   extends BaseOptions[js.Any, js.Any] {
   var extraData: js.UndefOr[js.Any] = js.undefined

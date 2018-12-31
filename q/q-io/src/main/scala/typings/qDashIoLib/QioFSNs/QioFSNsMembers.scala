@@ -63,7 +63,7 @@ object QioFSNsMembers extends js.Object {
   def remove(path: java.lang.String): qLib.qMod.QNs.Promise[scala.Unit] = js.native
   def removeTree(path: java.lang.String): qLib.qMod.QNs.Promise[scala.Unit] = js.native
   def rename(source: java.lang.String, target: java.lang.String): qLib.qMod.QNs.Promise[scala.Unit] = js.native
-  def reroot(path: java.lang.String): js.Object = js.native
+  def reroot(path: java.lang.String): js.Any = js.native
   def resolve(path: java.lang.String*): java.lang.String = js.native
   def resolve(paths: js.Array[java.lang.String]): java.lang.String = js.native
   def root(path: java.lang.String): java.lang.String = js.native

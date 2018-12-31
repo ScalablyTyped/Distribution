@@ -209,8 +209,8 @@ object libUtilitiesModMembers extends js.Object {
     ]
   ): js.UndefOr[js.Array[js.UndefOr[T]]] = js.native
   def memoize[T /* <: js.Function */](target: js.Any, key: java.lang.String, descriptor: stdLib.TypedPropertyDescriptor[T]): atUifabricUtilitiesLib.Anon_Get[T] = js.native
-  def memoizeFunction[T /* <: js.Function1[/* repeated */js.Any, RET_TYPE] */, RET_TYPE](cb: T): T = js.native
-  def memoizeFunction[T /* <: js.Function1[/* repeated */js.Any, RET_TYPE] */, RET_TYPE](cb: T, maxCacheSize: scala.Double): T = js.native
+  def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RET_TYPE] */, RET_TYPE](cb: T): T = js.native
+  def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RET_TYPE] */, RET_TYPE](cb: T, maxCacheSize: scala.Double): T = js.native
   def merge[T](
     target: stdLib.Partial[T],
     args: (js.UndefOr[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GlyphOptions extends js.Object {
   var advanceWidth: js.UndefOr[scala.Double] = js.undefined
   var font: js.UndefOr[Font] = js.undefined

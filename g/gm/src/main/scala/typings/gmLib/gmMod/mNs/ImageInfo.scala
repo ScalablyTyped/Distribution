@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageInfo extends js.Object {
   var `Background Color`: java.lang.String
   var `Border Color`: java.lang.String

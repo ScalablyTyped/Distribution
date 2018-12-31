@@ -6,50 +6,50 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * This class encapsulates the Geocoding REST API in a service stub with calls to its various resources implemented.
-         */
+  * This class encapsulates the Geocoding REST API in a service stub with calls to its various resources implemented.
+  */
 @JSGlobal("H.service.GeocodingService")
 @js.native
+/**
+  * Constructor
+  * @param opt_options {H.service.GeocodingService.Options=}
+  */
 class GeocodingService () extends AbstractRestService {
-  /**
-               * Constructor
-               * @param opt_options {H.service.GeocodingService.Options=}
-               */
   def this(opt_options: heremapsLib.HNs.serviceNs.GeocodingServiceNs.Options) = this()
   /**
-               * This method sends a reverse geocoding request to Geocoder REST API and calls the onResult callback function once the service response was received - providing a H.service.ServiceResult
-               * object - or the onError callback if a communication error occured.
-               * @param geoodingParams {H.service.ServiceParameters} - the service parameters to be sent with the geocoding request.
-               * @param onResult {function(H.service.ServiceResult)} - this function will be called once the Geocoder REST API provides a response to the request.
-               * @param onError {function(Error)} - this function will be called if a communication error occurs during the JSON-P request
-               * @returns {H.service.JsonpRequestHandle}
-               */
+    * This method sends a reverse geocoding request to Geocoder REST API and calls the onResult callback function once the service response was received - providing a H.service.ServiceResult
+    * object - or the onError callback if a communication error occured.
+    * @param geoodingParams {H.service.ServiceParameters} - the service parameters to be sent with the geocoding request.
+    * @param onResult {function(H.service.ServiceResult)} - this function will be called once the Geocoder REST API provides a response to the request.
+    * @param onError {function(Error)} - this function will be called if a communication error occurs during the JSON-P request
+    * @returns {H.service.JsonpRequestHandle}
+    */
   def geocode(
     geoodingParams: ServiceParameters,
     onResult: js.Function1[/* result */ ServiceResult, scala.Unit],
     onError: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): JsonpRequestHandle = js.native
   /**
-               * This method sends a reverse geocoding request to Geocoder REST API and calls the onResult callback function once the service response was received - providing a H.service.ServiceResult
-               * object - or the onError callback if a communication error occured.
-               * @param reverseGeocodingParams {H.service.ServiceParameters} - the service parameters to be sent with the reverse geocoding request
-               * @param onResult {function(H.service.ServiceResult)} - this function will be called once the Geocoder REST API provides a response to the request.
-               * @param onError {function(Error)} - this function will be called if a communication error occurs during the JSON-P request
-               * @returns {H.service.JsonpRequestHandle}
-               */
+    * This method sends a reverse geocoding request to Geocoder REST API and calls the onResult callback function once the service response was received - providing a H.service.ServiceResult
+    * object - or the onError callback if a communication error occured.
+    * @param reverseGeocodingParams {H.service.ServiceParameters} - the service parameters to be sent with the reverse geocoding request
+    * @param onResult {function(H.service.ServiceResult)} - this function will be called once the Geocoder REST API provides a response to the request.
+    * @param onError {function(Error)} - this function will be called if a communication error occurs during the JSON-P request
+    * @returns {H.service.JsonpRequestHandle}
+    */
   def reverseGeocode(
     reverseGeocodingParams: ServiceParameters,
     onResult: js.Function1[/* result */ ServiceResult, scala.Unit],
     onError: js.Function1[/* error */ stdLib.Error, scala.Unit]
   ): JsonpRequestHandle = js.native
   /**
-               * This method sends a landmark search request to Geocoder REST API and calls the onResult callback function once the service response was received - providing a H.service.ServiceResult
-               * object - or the onError callback if a communication error occured.
-               * @param searchParams {H.service.ServiceParameters} - the service parameters to be sent with the reverse geocoding request
-               * @param onResult {function(H.service.ServiceResult)} - this function will be called once the Geocoder REST API provides a response to the request.
-               * @param onError {function(Error)} - this function will be called if a communication error occurs during the JSON-P request
-               * @returns {H.service.JsonpRequestHandle}
-               */
+    * This method sends a landmark search request to Geocoder REST API and calls the onResult callback function once the service response was received - providing a H.service.ServiceResult
+    * object - or the onError callback if a communication error occured.
+    * @param searchParams {H.service.ServiceParameters} - the service parameters to be sent with the reverse geocoding request
+    * @param onResult {function(H.service.ServiceResult)} - this function will be called once the Geocoder REST API provides a response to the request.
+    * @param onError {function(Error)} - this function will be called if a communication error occurs during the JSON-P request
+    * @returns {H.service.JsonpRequestHandle}
+    */
   def search(
     searchParams: ServiceParameters,
     onResult: js.Function1[/* result */ ServiceResult, scala.Unit],

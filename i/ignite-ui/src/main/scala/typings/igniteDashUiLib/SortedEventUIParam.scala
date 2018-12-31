@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SortedEventUIParam extends js.Object {
   /**
   	 * Gets an array of the tuple indices and sort directions that were actually applied to the table view.

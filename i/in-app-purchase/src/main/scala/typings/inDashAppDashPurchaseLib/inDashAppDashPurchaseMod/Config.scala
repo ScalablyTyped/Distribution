@@ -5,12 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Config extends js.Object {
   /* Configurations for Amazon Store */
   var amazonAPIVersion: js.UndefOr[scala.Double] = js.undefined
   /* Configurations for Apple */
-  
   // this comes from iTunes Connect (You need this to valiate subscriptions)
   var applePassword: js.UndefOr[java.lang.String] = js.undefined
   // optional, for Google Play subscriptions

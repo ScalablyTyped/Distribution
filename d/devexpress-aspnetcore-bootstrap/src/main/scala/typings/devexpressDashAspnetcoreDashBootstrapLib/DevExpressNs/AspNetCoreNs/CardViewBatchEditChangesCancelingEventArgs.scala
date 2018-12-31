@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CardViewBatchEditChangesCancelingEventArgs extends CancelEventArgs {
   val deletedValues: js.Any
   val insertedValues: js.Any

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CurrentDragComponentInfo extends js.Object {
   var comboInfo: js.UndefOr[gaeaDashModelLib.Anon_Source] = js.undefined
   // 开始拖拽在父级中的位置

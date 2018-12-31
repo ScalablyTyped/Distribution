@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigationBarProps extends js.Object {
   var leftButton: js.UndefOr[NavigationBarButton | reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null] = js.undefined
   var rightButton: js.UndefOr[NavigationBarButton | reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null] = js.undefined

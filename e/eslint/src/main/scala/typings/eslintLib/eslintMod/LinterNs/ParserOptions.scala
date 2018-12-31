@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParserOptions
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var ecmaFeatures: js.UndefOr[eslintLib.Anon_Key] = js.undefined

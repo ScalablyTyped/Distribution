@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TraceurOptions extends js.Object {
   var arrayComprehension: js.UndefOr[scala.Boolean] = js.undefined
   var asyncFunctions: js.UndefOr[scala.Boolean] = js.undefined

@@ -41,11 +41,11 @@ trait Server
   ): scala.Unit = js.native
   def on(
     event: java.lang.String,
-    listener: js.ThisFunction1[/* this */ wsLib.wsMod.WebSocket, /* repeated */js.Any, scala.Unit]
+    listener: js.ThisFunction1[/* this */ wsLib.wsMod.WebSocket, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
   def on(
     event: js.Symbol,
-    listener: js.ThisFunction1[/* this */ wsLib.wsMod.WebSocket, /* repeated */js.Any, scala.Unit]
+    listener: js.ThisFunction1[/* this */ wsLib.wsMod.WebSocket, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
   // Events
   @JSName("on")

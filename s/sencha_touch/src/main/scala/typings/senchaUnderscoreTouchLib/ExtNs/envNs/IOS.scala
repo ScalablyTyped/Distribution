@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOS
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] A hybrid property can be either accessed as a method call i e  if Ext os is Android

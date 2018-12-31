@@ -20,32 +20,32 @@ abstract class AudioSubmixNode () extends js.Object {
   /** Gets or sets the outgoing gain for the audio submix node. */
   var outgoingGain: scala.Double = js.native
   /**
-                   * Adds an outgoing connection to the audio submix node.
-                   * @param destination The destination node for the connection.
-                   */
+    * Adds an outgoing connection to the audio submix node.
+    * @param destination The destination node for the connection.
+    */
   def addOutgoingConnection(destination: IAudioNode): scala.Unit = js.native
   /**
-                   * Adds an outgoing connection with gain to the audio submix node.
-                   * @param destination The destination node for the connection.
-                   * @param gain A value indicating the gain associated with the connection.
-                   */
+    * Adds an outgoing connection with gain to the audio submix node.
+    * @param destination The destination node for the connection.
+    * @param gain A value indicating the gain associated with the connection.
+    */
   def addOutgoingConnection(destination: IAudioNode, gain: scala.Double): scala.Unit = js.native
   /** Closes the audio submix node. */
   def close(): scala.Unit = js.native
   /**
-                   * Disables all effects in the EffectDefinitions list with the specified effect definition.
-                   * @param definition The effect definition of the effects to disable.
-                   */
+    * Disables all effects in the EffectDefinitions list with the specified effect definition.
+    * @param definition The effect definition of the effects to disable.
+    */
   def disableEffectsByDefinition(definition: winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition): scala.Unit = js.native
   /**
-                   * Enables all effects in the EffectDefinitions list with the specified effect definition.
-                   * @param definition The effect definition of the effects to enable.
-                   */
+    * Enables all effects in the EffectDefinitions list with the specified effect definition.
+    * @param definition The effect definition of the effects to enable.
+    */
   def enableEffectsByDefinition(definition: winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition): scala.Unit = js.native
   /**
-                   * Removes an outgoing connection from the audio submix node.
-                   * @param destination The destination for the outgoing connection.
-                   */
+    * Removes an outgoing connection from the audio submix node.
+    * @param destination The destination for the outgoing connection.
+    */
   def removeOutgoingConnection(destination: IAudioNode): scala.Unit = js.native
   /** Resets the audio submix node. */
   def reset(): scala.Unit = js.native

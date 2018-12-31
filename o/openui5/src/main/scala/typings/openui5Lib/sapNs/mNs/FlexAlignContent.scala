@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait FlexAlignContent extends js.Object
 
 /**
-     * Available options for the layout of container lines along the cross axis of the flexbox layout.
-     * <b>Note:</b> This property has no effect in Internet Explorer 10.
-    */
+  * Available options for the layout of container lines along the cross axis of the flexbox layout.
+  * <b>Note:</b> This property has no effect in Internet Explorer 10.
+  */
 @JSGlobal("sap.m.FlexAlignContent")
 @js.native
 object FlexAlignContent extends js.Object {

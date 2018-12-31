@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeclarationReflectionContainer[T] extends js.Object {
   var extendedBy: js.UndefOr[js.Array[TypeObject]] = js.undefined
   var extendedTypes: js.UndefOr[js.Array[TypeObject]] = js.undefined

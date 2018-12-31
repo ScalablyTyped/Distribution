@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseStatement extends js.Object {
   var Condition: js.UndefOr[ConditionBlock] = js.undefined
   var Effect: java.lang.String

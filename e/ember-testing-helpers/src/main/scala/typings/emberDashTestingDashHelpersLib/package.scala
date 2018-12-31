@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 package object emberDashTestingDashHelpersLib {
   type KeyEventType = emberDashTestingDashHelpersLib.emberDashTestingDashHelpersLibStrings.keydown | emberDashTestingDashHelpersLib.emberDashTestingDashHelpersLibStrings.keyup | emberDashTestingDashHelpersLib.emberDashTestingDashHelpersLibStrings.keypress
-  type WaitResult[T] = js.Any
+  type WaitResult[T] = /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify RSVP.Promise<T> */ js.Any
 }

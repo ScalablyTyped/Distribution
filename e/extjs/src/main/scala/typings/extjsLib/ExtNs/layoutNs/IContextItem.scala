@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IContextItem
   extends extjsLib.ExtNs.IBase {
   /** [Method] Queue the addition of a class name or array of class names to this ContextItem s target when next flushed

@@ -23,16 +23,16 @@ trait Channel
   /** The channel type, usually "session". */
   var `type`: js.UndefOr[java.lang.String] = js.native
   /**
-       * Closes the channel on both sides.
-       *
-       * Returns false if you should wait for the continue event before sending any more traffic.
-       */
+    * Closes the channel on both sides.
+    *
+    * Returns false if you should wait for the continue event before sending any more traffic.
+    */
   def close(): scala.Boolean = js.native
   /**
-       * Sends EOF to the remote side.
-       *
-       * Returns false if you should wait for the continue event before sending any more traffic.
-       */
+    * Sends EOF to the remote side.
+    *
+    * Returns false if you should wait for the continue event before sending any more traffic.
+    */
   def eof(): scala.Boolean = js.native
 }
 

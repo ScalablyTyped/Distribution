@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ManagedProperty extends js.Object {
   /** The default value of the properties. BUNDLE_ARRAY properties never have a default value. */
   var defaultValue: js.UndefOr[js.Any] = js.undefined

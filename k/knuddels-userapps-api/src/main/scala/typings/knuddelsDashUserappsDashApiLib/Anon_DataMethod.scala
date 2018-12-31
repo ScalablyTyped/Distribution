@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DataMethod extends js.Object {
   var data: js.UndefOr[knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.Json] = js.undefined
   var method: js.UndefOr[

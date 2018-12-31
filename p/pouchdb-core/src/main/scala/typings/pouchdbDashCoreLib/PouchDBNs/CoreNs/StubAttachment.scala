@@ -6,25 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Stub attachments are returned by PouchDB by default (attachments option set to false)
-         */
-
+  * Stub attachments are returned by PouchDB by default (attachments option set to false)
+  */
 trait StubAttachment extends js.Object {
   /**
-               * Mime type of the attachment
-               */
+    * Mime type of the attachment
+    */
   var content_type: java.lang.String
   /**
-               * Database digest of the attachment
-               */
+    * Database digest of the attachment
+    */
   var digest: java.lang.String
   /**
-               * Length of the attachment
-               */
+    * Length of the attachment
+    */
   var length: scala.Double
   /**
-               * Attachment is a stub
-               */
+    * Attachment is a stub
+    */
   var stub: pouchdbDashCoreLib.pouchdbDashCoreLibNumbers.`true`
 }
 

@@ -7,23 +7,23 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Electron.BrowserView")
 @js.native
+// Docs: http://electronjs.org/docs/api/browser-view
 class BrowserView () extends EventEmitter {
-  // Docs: http://electronjs.org/docs/api/browser-view
   def this(options: BrowserViewConstructorOptions) = this()
   var id: scala.Double = js.native
   var webContents: WebContents = js.native
   /**
-       * Force closing the view, the unload and beforeunload events won't be emitted for
-       * the web page. After you're done with a view, call this function in order to free
-       * memory and other resources as soon as possible.
-       */
+    * Force closing the view, the unload and beforeunload events won't be emitted for
+    * the web page. After you're done with a view, call this function in order to free
+    * memory and other resources as soon as possible.
+    */
   def destroy(): scala.Unit = js.native
   def isDestroyed(): scala.Boolean = js.native
   def setAutoResize(options: AutoResizeOptions): scala.Unit = js.native
   def setBackgroundColor(color: java.lang.String): scala.Unit = js.native
   /**
-       * Resizes and moves the view to the supplied bounds relative to the window.
-       */
+    * Resizes and moves the view to the supplied bounds relative to the window.
+    */
   def setBounds(bounds: Rectangle): scala.Unit = js.native
 }
 

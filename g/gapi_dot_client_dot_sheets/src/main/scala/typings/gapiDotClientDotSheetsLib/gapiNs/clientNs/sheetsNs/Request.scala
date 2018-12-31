@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Request extends js.Object {
   /** Adds a new banded range */
   var addBanding: js.UndefOr[AddBandingRequest] = js.undefined
@@ -28,9 +27,9 @@ trait Request extends js.Object {
   /** Automatically fills in more data based on existing data. */
   var autoFill: js.UndefOr[AutoFillRequest] = js.undefined
   /**
-               * Automatically resizes one or more dimensions based on the contents
-               * of the cells in that dimension.
-               */
+    * Automatically resizes one or more dimensions based on the contents
+    * of the cells in that dimension.
+    */
   var autoResizeDimensions: js.UndefOr[AutoResizeDimensionsRequest] = js.undefined
   /** Clears the basic filter on a sheet. */
   var clearBasicFilter: js.UndefOr[ClearBasicFilterRequest] = js.undefined

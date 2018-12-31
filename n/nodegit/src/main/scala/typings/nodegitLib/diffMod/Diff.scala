@@ -14,10 +14,10 @@ class Diff () extends js.Object {
   def merge(from: Diff): js.Promise[scala.Double] = js.native
   def numDeltas(): scala.Double = js.native
   /**
-       * Retrieve patches in this difflist
-       *
-       *
-       */
+    * Retrieve patches in this difflist
+    *
+    *
+    */
   def patches(): js.Promise[js.Array[nodegitLib.convenientDashPatchMod.ConvenientPatch]] = js.native
   def toBuf(format: nodegitLib.diffMod.DiffNs.FORMAT): js.Promise[nodegitLib.bufMod.Buf] = js.native
 }
@@ -26,10 +26,10 @@ class Diff () extends js.Object {
 @js.native
 object Diff extends js.Object {
   /**
-       * Directly run a diff between a blob and a buffer.
-       *
-       *
-       */
+    * Directly run a diff between a blob and a buffer.
+    *
+    *
+    */
   def blobToBuffer(
     oldBlob: nodegitLib.blobMod.Blob,
     oldAsPath: java.lang.String,

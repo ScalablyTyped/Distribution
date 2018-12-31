@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** https://googleapis.github.io/gax-nodejs/global.html#CallOptions */
-
 trait CallOptions extends js.Object {
   var autoPaginate: js.UndefOr[scala.Boolean] = js.undefined
   var isBundling: js.UndefOr[scala.Boolean] = js.undefined

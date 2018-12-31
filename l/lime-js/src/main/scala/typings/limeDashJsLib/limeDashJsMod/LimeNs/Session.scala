@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Session extends Envelope {
   var authentication: js.UndefOr[js.Any] = js.undefined
   var compression: js.UndefOr[java.lang.String] = js.undefined

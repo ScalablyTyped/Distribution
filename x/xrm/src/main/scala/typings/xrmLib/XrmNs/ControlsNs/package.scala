@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 package object ControlsNs {
   /**
-           * Control type for formContext.ui.quickForms.getControlType().
-           */
+    * Control type for formContext.ui.quickForms.getControlType().
+    */
   type ControlQuickFormType = xrmLib.xrmLibStrings.quickform
   /**
-           * Control types for {@link Controls.Control.getControlType Controls.Control.getControlType()}.
-           * @see {@link XrmEnum.StandardControlType}
-           */
+    * Control types for {@link Controls.Control.getControlType Controls.Control.getControlType()}.
+    * @see {@link XrmEnum.StandardControlType}
+    */
   type ControlType = xrmLib.xrmLibStrings.standard | xrmLib.xrmLibStrings.iframe | xrmLib.xrmLibStrings.lookup | xrmLib.xrmLibStrings.optionset | xrmLib.xrmLibStrings.subgrid | xrmLib.xrmLibStrings.webresource | xrmLib.xrmLibStrings.notes | xrmLib.xrmLibStrings.timercontrol | xrmLib.xrmLibStrings.kbsearch | xrmLib.xrmLibStrings.timelinewall | ControlQuickFormType
   /**
-           * Constants to use with the addNotification method of form controls
-           */
+    * Constants to use with the addNotification method of form controls
+    */
   type NotificationLevel = xrmLib.xrmLibStrings.ERROR | xrmLib.xrmLibStrings.RECOMMENDATION
 }

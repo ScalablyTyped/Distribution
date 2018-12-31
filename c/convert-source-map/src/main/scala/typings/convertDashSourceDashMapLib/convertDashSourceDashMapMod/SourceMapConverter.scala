@@ -18,22 +18,15 @@ trait SourceMapConverter extends js.Object {
   /** Converts source map to base64 encoded json string */
   def toBase64(): java.lang.String = js.native
   /**
-       * Converts source map to an inline comment that can be appended to the source-file.
-       * By default, the comment is formatted like: //# sourceMappingURL=..., which you would normally see in a JS source file.
-       * When options.multiline == true, the comment is formatted like: / *# sourceMappingURL=... *\/, which you would find in a CSS source file
-       */
+    * Converts source map to an inline comment that can be appended to the source-file.
+    * By default, the comment is formatted like: //# sourceMappingURL=..., which you would normally see in a JS source file.
+    * When options.multiline == true, the comment is formatted like: / *# sourceMappingURL=... *\/, which you would find in a CSS source file
+    */
   def toComment(): java.lang.String = js.native
-  /**
-       * Converts source map to an inline comment that can be appended to the source-file.
-       * By default, the comment is formatted like: //# sourceMappingURL=..., which you would normally see in a JS source file.
-       * When options.multiline == true, the comment is formatted like: / *# sourceMappingURL=... *\/, which you would find in a CSS source file
-       */
   def toComment(options: convertDashSourceDashMapLib.Anon_Multiline): java.lang.String = js.native
   /** Converts source map to json string. If space is given (optional), this will be passed to JSON.stringify when the JSON string is generated */
   def toJSON(): java.lang.String = js.native
-  /** Converts source map to json string. If space is given (optional), this will be passed to JSON.stringify when the JSON string is generated */
   def toJSON(space: java.lang.String): java.lang.String = js.native
-  /** Converts source map to json string. If space is given (optional), this will be passed to JSON.stringify when the JSON string is generated */
   def toJSON(space: scala.Double): java.lang.String = js.native
   /** Returns a copy of the underlying source map */
   def toObject(): js.Any = js.native

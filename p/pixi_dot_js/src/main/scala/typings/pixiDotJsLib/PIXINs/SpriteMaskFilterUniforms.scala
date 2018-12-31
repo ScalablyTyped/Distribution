@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpriteMaskFilterUniforms extends js.Object {
   var alpha: scala.Double
   var mask: Texture

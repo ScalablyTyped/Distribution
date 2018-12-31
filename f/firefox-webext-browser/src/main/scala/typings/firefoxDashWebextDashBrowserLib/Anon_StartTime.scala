@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_StartTime extends js.Object {
   var canResume: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.downloadsNs.BooleanDelta] = js.undefined
   /** Describes a change in a DownloadItem's `danger`. */

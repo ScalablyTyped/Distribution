@@ -5,31 +5,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IContextualMenuStyles extends js.Object {
   /**
-       * Style for the container which parents all menu items.
-       */
+    * Style for the container which parents all menu items.
+    */
   var container: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   /**
-       * Styles for the header item of a ContextualMenu
-       */
+    * Styles for the header item of a ContextualMenu
+    */
   var header: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   /**
-       * Styles for the list that contains all menuItems.
-       */
+    * Styles for the list that contains all menuItems.
+    */
   var list: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   /**
-       * Base styles for the root element of all ContextualMenus.
-       */
+    * Base styles for the root element of all ContextualMenus.
+    */
   var root: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   /**
-       * SubComponent styles.
-       */
+    * SubComponent styles.
+    */
   var subComponentStyles: IContextualMenuSubComponentStyles
   /**
-       * Style override for the contextual menu title.
-       */
+    * Style override for the contextual menu title.
+    */
   var title: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
 }
 

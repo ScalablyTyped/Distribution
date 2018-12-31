@@ -55,7 +55,7 @@ package object relayDashRuntimeMod {
     scala.Unit
   ]
   type RelayMutationTransactionCommitSuccessCallback = js.Function1[/* response */ org.scalablytyped.runtime.StringDictionary[js.Any], scala.Unit]
-  type RelayQL = js.Function2[/* strings */ js.Array[java.lang.String], /* repeated */js.Any, RelayConcreteNode]
+  type RelayQL = js.Function2[/* strings */ js.Array[java.lang.String], /* repeated */ js.Any, RelayConcreteNode]
   type RelayQueryRequest = js.Any
   type RelayResponsePayload = js.Any
   type RequestNode = ConcreteRequest | ConcreteBatchRequest

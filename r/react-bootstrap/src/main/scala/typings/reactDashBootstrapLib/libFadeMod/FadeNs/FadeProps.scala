@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FadeProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libFadeMod.Fade]
      with reactDashBootstrapLib.reactDashBootstrapMod.TransitionCallbacks {

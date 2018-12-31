@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaymentDetailsModifier extends js.Object {
   var additionalDisplayItems: js.UndefOr[js.Array[PaymentItem]] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined

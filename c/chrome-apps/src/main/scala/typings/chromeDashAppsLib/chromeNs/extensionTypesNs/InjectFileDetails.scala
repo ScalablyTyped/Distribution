@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InjectFileDetails
   extends chromeDashAppsLib.chromeNs.extensionTypesNs.underscoreInternalUnderscoreNs.InjectDetailsBase {
   /** JavaScript or CSS file to inject. */

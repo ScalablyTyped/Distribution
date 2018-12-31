@@ -15,10 +15,10 @@ abstract class ComponentRenewal () extends js.Object
 @js.native
 object ComponentRenewal extends js.Object {
   /**
-                   * Initiates updating of critical content protection components after prompting the user.
-                   * @param information Revocation and renewal information.
-                   * @return An object that is used to control the asynchronous operation.
-                   */
+    * Initiates updating of critical content protection components after prompting the user.
+    * @param information Revocation and renewal information.
+    * @return An object that is used to control the asynchronous operation.
+    */
   def renewSystemComponentsAsync(information: winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.RevocationAndRenewalInformation): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.RenewalStatus, scala.Double] = js.native
 }
 

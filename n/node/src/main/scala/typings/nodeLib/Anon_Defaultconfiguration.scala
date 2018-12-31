@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Defaultconfiguration extends js.Object {
   var cflags: js.Array[_]
   var default_configuration: java.lang.String

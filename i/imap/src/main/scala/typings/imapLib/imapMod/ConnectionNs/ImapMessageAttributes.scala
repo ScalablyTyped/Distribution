@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImapMessageAttributes extends js.Object {
   /** The internal server date for the message. */
   var date: stdLib.Date

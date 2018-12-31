@@ -11,27 +11,17 @@ class ErrorsCollection protected () extends js.Object {
   val Count: scala.Double = js.native
   var `InfoPath.ErrorsCollection_typekey`: ErrorsCollection = js.native
   /**
-           * @param string [bstrDetailedErrorMessage='']
-           * @param number [lErrorCode=0]
-           * @param string [bstrType='modeless']
-           */
+    * @param string [bstrDetailedErrorMessage='']
+    * @param number [lErrorCode=0]
+    * @param string [bstrType='modeless']
+    */
   def Add(varNode: js.Any, bstrConditionName: java.lang.String, bstrShortErrorMessage: java.lang.String): activexDashAdodbLib.ADODBNs.Error = js.native
-  /**
-           * @param string [bstrDetailedErrorMessage='']
-           * @param number [lErrorCode=0]
-           * @param string [bstrType='modeless']
-           */
   def Add(
     varNode: js.Any,
     bstrConditionName: java.lang.String,
     bstrShortErrorMessage: java.lang.String,
     bstrDetailedErrorMessage: java.lang.String
   ): activexDashAdodbLib.ADODBNs.Error = js.native
-  /**
-           * @param string [bstrDetailedErrorMessage='']
-           * @param number [lErrorCode=0]
-           * @param string [bstrType='modeless']
-           */
   def Add(
     varNode: js.Any,
     bstrConditionName: java.lang.String,
@@ -39,11 +29,6 @@ class ErrorsCollection protected () extends js.Object {
     bstrDetailedErrorMessage: java.lang.String,
     lErrorCode: scala.Double
   ): activexDashAdodbLib.ADODBNs.Error = js.native
-  /**
-           * @param string [bstrDetailedErrorMessage='']
-           * @param number [lErrorCode=0]
-           * @param string [bstrType='modeless']
-           */
   def Add(
     varNode: js.Any,
     bstrConditionName: java.lang.String,

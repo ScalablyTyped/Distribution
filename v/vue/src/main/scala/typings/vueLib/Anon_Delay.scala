@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Delay[Data, Methods, Computed, Props] extends js.Object {
   var component: vueLib.typesOptionsMod.AsyncComponentPromise[Data, Methods, Computed, Props]
   var delay: js.UndefOr[scala.Double] = js.undefined

@@ -21,11 +21,11 @@ abstract class VideoStabilizationEffect () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[VideoStabilizationEffect, VideoStabilizationEffectEnabledChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Gets the recommended video stream configuration for video stabilization, given the specified video device controller and encoding properties.
-                   * @param controller The video device controller.
-                   * @param desiredProperties The encoding properties.
-                   * @return An object representing the optimal video stream configuration for video stabilization.
-                   */
+    * Gets the recommended video stream configuration for video stabilization, given the specified video device controller and encoding properties.
+    * @param controller The video device controller.
+    * @param desiredProperties The encoding properties.
+    * @return An object representing the optimal video stream configuration for video stabilization.
+    */
   def getRecommendedStreamConfiguration(
     controller: winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.VideoDeviceController,
     desiredProperties: winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.VideoEncodingProperties
@@ -41,9 +41,9 @@ abstract class VideoStabilizationEffect () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[VideoStabilizationEffect, VideoStabilizationEffectEnabledChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Sets properties on the IMediaExtension .
-                   * @param configuration The property set.
-                   */
+    * Sets properties on the IMediaExtension .
+    * @param configuration The property set.
+    */
   def setProperties(configuration: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet): scala.Unit = js.native
 }
 

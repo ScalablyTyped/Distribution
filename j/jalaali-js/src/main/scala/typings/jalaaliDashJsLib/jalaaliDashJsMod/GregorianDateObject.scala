@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GregorianDateObject extends js.Object {
   /** Gregorian day */
   var gd: scala.Double

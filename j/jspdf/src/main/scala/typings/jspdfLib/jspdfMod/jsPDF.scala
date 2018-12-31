@@ -24,24 +24,23 @@ trait jsPDF extends js.Object {
   def addFont(postScriptName: java.lang.String, fontName: java.lang.String, fontStyle: java.lang.String): java.lang.String = js.native
   def addHTML(element: js.Any, callback: js.Function): jsPDF = js.native
   /**
-           * jsPDF plugins below:
-           *
-           *  - AddHTML
-           *  - AddImage
-           *  - Annotations
-           *  - AutoPrint
-           *  - Canvas
-           *  - Cell
-           *  - Context2D
-           *  - FromHTML
-           *  - JavaScript
-           *  - PNG
-           *  - split_text_to_size
-           *  - SVG
-           *  - total_pages
-           *  - vfs
-           */
-  
+    * jsPDF plugins below:
+    *
+    *  - AddHTML
+    *  - AddImage
+    *  - Annotations
+    *  - AutoPrint
+    *  - Canvas
+    *  - Cell
+    *  - Context2D
+    *  - FromHTML
+    *  - JavaScript
+    *  - PNG
+    *  - split_text_to_size
+    *  - SVG
+    *  - total_pages
+    *  - vfs
+    */
   // jsPDF plugin: addHTML
   def addHTML(element: js.Any, x: scala.Double, y: scala.Double, options: js.Any, callback: js.Function): jsPDF = js.native
   def addImage(
@@ -78,9 +77,7 @@ trait jsPDF extends js.Object {
   def addPage_portrait(format: js.Array[scala.Double], orientation: jspdfLib.jspdfLibStrings.portrait): jsPDF = js.native
   // jsPDF plugin: SVG
   def addSVG(svgtext: java.lang.String, x: scala.Double, y: scala.Double): jsPDF = js.native
-  // jsPDF plugin: SVG
   def addSVG(svgtext: java.lang.String, x: scala.Double, y: scala.Double, w: scala.Double): jsPDF = js.native
-  // jsPDF plugin: SVG
   def addSVG(svgtext: java.lang.String, x: scala.Double, y: scala.Double, w: scala.Double, h: scala.Double): jsPDF = js.native
   def arrayBufferToBase64(arrayBuffer: stdLib.ArrayBuffer): java.lang.String = js.native
   def arrayBufferToBinaryString(buffer: js.Any): java.lang.String = js.native
@@ -181,11 +178,8 @@ trait jsPDF extends js.Object {
   def extractInfoFromBase64DataURI(dataURI: java.lang.String): js.Array[_] = js.native
   // jsPDF plugin: fromHTML
   def fromHTML(HTML: java.lang.String, x: scala.Double, y: scala.Double): jsPDF = js.native
-  // jsPDF plugin: fromHTML
   def fromHTML(HTML: java.lang.String, x: scala.Double, y: scala.Double, settings: js.Any): jsPDF = js.native
-  // jsPDF plugin: fromHTML
   def fromHTML(HTML: java.lang.String, x: scala.Double, y: scala.Double, settings: js.Any, callback: js.Function): jsPDF = js.native
-  // jsPDF plugin: fromHTML
   def fromHTML(
     HTML: java.lang.String,
     x: scala.Double,
@@ -194,11 +188,8 @@ trait jsPDF extends js.Object {
     callback: js.Function,
     margins: js.Any
   ): jsPDF = js.native
-  // jsPDF plugin: fromHTML
   def fromHTML(HTML: stdLib.HTMLElement, x: scala.Double, y: scala.Double): jsPDF = js.native
-  // jsPDF plugin: fromHTML
   def fromHTML(HTML: stdLib.HTMLElement, x: scala.Double, y: scala.Double, settings: js.Any): jsPDF = js.native
-  // jsPDF plugin: fromHTML
   def fromHTML(
     HTML: stdLib.HTMLElement,
     x: scala.Double,
@@ -206,7 +197,6 @@ trait jsPDF extends js.Object {
     settings: js.Any,
     callback: js.Function
   ): jsPDF = js.native
-  // jsPDF plugin: fromHTML
   def fromHTML(
     HTML: stdLib.HTMLElement,
     x: scala.Double,
@@ -217,7 +207,6 @@ trait jsPDF extends js.Object {
   ): jsPDF = js.native
   // jsPDF plugin: split_text_to_size
   def getCharWidthsArray(text: java.lang.String): js.Array[_] = js.native
-  // jsPDF plugin: split_text_to_size
   def getCharWidthsArray(text: java.lang.String, options: js.Any): js.Array[_] = js.native
   def getFileFromVFS(filename: java.lang.String): java.lang.String = js.native
   def getFontList(): js.Any = js.native

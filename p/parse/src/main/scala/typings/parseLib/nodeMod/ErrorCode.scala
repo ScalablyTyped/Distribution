@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /*
-     * We need to inline the codes in order to make compilation work without this type definition as dependency.
-     */
+  * We need to inline the codes in order to make compilation work without this type definition as dependency.
+  */
 @JSImport("parse/node", "ErrorCode")
 @js.native
 object ErrorCode extends js.Object {

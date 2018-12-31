@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JasmineJQueryEvents extends js.Object {
   def args(selector: java.lang.String, eventName: java.lang.String): js.Any
   def cleanUp(): scala.Unit

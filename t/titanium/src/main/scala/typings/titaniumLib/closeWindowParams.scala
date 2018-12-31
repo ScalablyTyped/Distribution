@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Dictionary of options for the <Titanium.UI.Window.close> method.
- */
-
+  * Dictionary of options for the <Titanium.UI.Window.close> method.
+  */
 trait closeWindowParams extends js.Object {
   /**
   	 * Animation resource to use for the incoming activity.

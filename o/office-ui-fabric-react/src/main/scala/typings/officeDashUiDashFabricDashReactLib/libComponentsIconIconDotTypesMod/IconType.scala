@@ -12,31 +12,31 @@ sealed trait IconType extends js.Object
 @js.native
 object IconType extends js.Object {
   /**
-       * Deprecated, use `default`.
-       * @deprecated Use `default`.
-       */
+    * Deprecated, use `default`.
+    * @deprecated Use `default`.
+    */
   @js.native
   sealed trait Default
     extends officeDashUiDashFabricDashReactLib.libComponentsIconIconDotTypesMod.IconType
   
   /**
-       * Deprecated, use `image`.
-       * @deprecated Use `image`.
-       */
+    * Deprecated, use `image`.
+    * @deprecated Use `image`.
+    */
   @js.native
   sealed trait Image
     extends officeDashUiDashFabricDashReactLib.libComponentsIconIconDotTypesMod.IconType
   
   /**
-       * Render using the fabric icon font.
-       */
+    * Render using the fabric icon font.
+    */
   @js.native
   sealed trait default
     extends officeDashUiDashFabricDashReactLib.libComponentsIconIconDotTypesMod.IconType
   
   /**
-       * Render using an image, where imageProps would be used.
-       */
+    * Render using an image, where imageProps would be used.
+    */
   @js.native
   sealed trait image
     extends officeDashUiDashFabricDashReactLib.libComponentsIconIconDotTypesMod.IconType

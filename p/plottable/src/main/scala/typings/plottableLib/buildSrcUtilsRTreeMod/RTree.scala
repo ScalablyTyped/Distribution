@@ -22,32 +22,32 @@ class RTree[T] () extends js.Object {
   def intersectY(bounds: RTreeBounds): js.Array[T] = js.native
   def locate(xy: plottableLib.buildSrcCoreInterfacesMod.Point): js.Array[T] = js.native
   /**
-       * Returns an array of `T` values that are the "nearest" to the query point.
-       *
-       * Nearness is measured as the absolute distance from the query point to the
-       * nearest edge of the node bounds. If the node bounds contains the query
-       * point, the distance is 0.
-       */
+    * Returns an array of `T` values that are the "nearest" to the query point.
+    *
+    * Nearness is measured as the absolute distance from the query point to the
+    * nearest edge of the node bounds. If the node bounds contains the query
+    * point, the distance is 0.
+    */
   def locateNearest(xy: plottableLib.buildSrcCoreInterfacesMod.Point): js.Array[T] = js.native
   /**
-       * Returns an array of `T` values that are the "nearest" to the query point.
-       *
-       * Nearness is measured as the 1-dimensional absolute distance from the
-       * query's x point to the nearest edge of the node bounds. If the node
-       * bounds contains the query point, the distance is 0.
-       *
-       * The results are sorted by y-coordinate nearness.
-       */
+    * Returns an array of `T` values that are the "nearest" to the query point.
+    *
+    * Nearness is measured as the 1-dimensional absolute distance from the
+    * query's x point to the nearest edge of the node bounds. If the node
+    * bounds contains the query point, the distance is 0.
+    *
+    * The results are sorted by y-coordinate nearness.
+    */
   def locateNearestX(xy: plottableLib.buildSrcCoreInterfacesMod.Point): js.Array[T] = js.native
   /**
-       * Returns an array of `T` values that are the "nearest" to the query point.
-       *
-       * Nearness is measured as the 1-dimensional absolute distance from the
-       * query's y point to the nearest edge of the node bounds. If the node
-       * bounds contains the query point, the distance is 0.
-       *
-       * The results are sorted by x-coordinate nearness.
-       */
+    * Returns an array of `T` values that are the "nearest" to the query point.
+    *
+    * Nearness is measured as the 1-dimensional absolute distance from the
+    * query's y point to the nearest edge of the node bounds. If the node
+    * bounds contains the query point, the distance is 0.
+    *
+    * The results are sorted by x-coordinate nearness.
+    */
   def locateNearestY(xy: plottableLib.buildSrcCoreInterfacesMod.Point): js.Array[T] = js.native
   def query(predicate: js.Function1[/* b */ RTreeBounds, scala.Boolean]): js.Array[T] = js.native
   def queryNodes(predicate: js.Function1[/* b */ RTreeNode[T], QueryPredicateResult]): js.Array[RTreeNode[T]] = js.native

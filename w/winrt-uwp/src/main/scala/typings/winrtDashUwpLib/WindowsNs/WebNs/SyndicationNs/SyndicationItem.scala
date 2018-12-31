@@ -8,13 +8,14 @@ import scala.scalajs.js.annotation._
 /** Represents an item in the feed. This class encapsulates information in the /rss/channel/item element in RSS 2.0 or the atom:entry element in Atom 1.0. */
 @JSGlobal("Windows.Web.Syndication.SyndicationItem")
 @js.native
+/** Creates a new SyndicationItem object. */
 class SyndicationItem () extends js.Object {
   /**
-                   * Creates a new SyndicationItem object with a title, content, and URI.
-                   * @param title Title of the new item.
-                   * @param content The content for this feed item.
-                   * @param uri The URI associated with this item.
-                   */
+    * Creates a new SyndicationItem object with a title, content, and URI.
+    * @param title Title of the new item.
+    * @param content The content for this feed item.
+    * @param uri The URI associated with this item.
+    */
   def this(title: java.lang.String, content: SyndicationContent, uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri) = this()
   /** Gets the list of custom attributes of the element. */
   var attributeExtensions: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[SyndicationAttribute] = js.native
@@ -65,20 +66,20 @@ class SyndicationItem () extends js.Object {
   /** Gets or sets the title of the item. */
   var title: ISyndicationText = js.native
   /**
-                   * Generates the DOM object that represents this element, all the attributes and child elements including foreign markups. The only formats accepted by this method are Atom 1.0 and RSS 2.0.
-                   * @param format The format of the data.
-                   * @return The DOM object that represents this element, and all the attributes and child elements, including foreign markups.
-                   */
+    * Generates the DOM object that represents this element, all the attributes and child elements including foreign markups. The only formats accepted by this method are Atom 1.0 and RSS 2.0.
+    * @param format The format of the data.
+    * @return The DOM object that represents this element, and all the attributes and child elements, including foreign markups.
+    */
   def getXmlDocument(format: SyndicationFormat): winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument = js.native
   /**
-                   * Initializes the object from the given feed string, which can be in either RSS 2.0 or Atom 1.0 format.
-                   * @param item The feed string, which can be in either RSS 2.0 or Atom 1.0 format.
-                   */
+    * Initializes the object from the given feed string, which can be in either RSS 2.0 or Atom 1.0 format.
+    * @param item The feed string, which can be in either RSS 2.0 or Atom 1.0 format.
+    */
   def load(item: java.lang.String): scala.Unit = js.native
   /**
-                   * Initializes the object from the given DOM object, which can contain XML content in either RSS 2.0 or Atom 1.0 format.
-                   * @param itemDocument The DOM object, which can contain XML content in either RSS 2.0 or Atom 1.0 format.
-                   */
+    * Initializes the object from the given DOM object, which can contain XML content in either RSS 2.0 or Atom 1.0 format.
+    * @param itemDocument The DOM object, which can contain XML content in either RSS 2.0 or Atom 1.0 format.
+    */
   def loadFromXml(itemDocument: winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument): scala.Unit = js.native
 }
 

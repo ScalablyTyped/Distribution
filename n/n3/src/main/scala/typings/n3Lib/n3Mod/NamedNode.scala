@@ -12,21 +12,21 @@ class NamedNode protected ()
   def this(iri: java.lang.String) = this()
   val id: java.lang.String = js.native
   /**
-       * Contains the constant "NamedNode".
-       */
+    * Contains the constant "NamedNode".
+    */
   /* CompleteClass */
   override var termType: rdfDashJsLib.rdfDashJsLibStrings.NamedNode = js.native
   @JSName("termType")
   val termType_NamedNode: n3Lib.n3LibStrings.NamedNode = js.native
   /**
-       * The IRI of the named node (example: `http://example.org/resource`)
-       */
+    * The IRI of the named node (example: `http://example.org/resource`)
+    */
   /* CompleteClass */
   override var value: java.lang.String = js.native
   /**
-       * @param other The term to compare with.
-       * @return True if and only if other has termType "NamedNode" and the same `value`.
-       */
+    * @param other The term to compare with.
+    * @return True if and only if other has termType "NamedNode" and the same `value`.
+    */
   /* CompleteClass */
   override def equals(other: rdfDashJsLib.rdfDashJsMod.Term): scala.Boolean = js.native
   def toJSON(): js.Object = js.native

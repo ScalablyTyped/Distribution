@@ -29,12 +29,19 @@
 // See docs https://codemirror.net/doc/manual.html#addon_show-hint
 // Type definitions for CodeMirror
 // Project: https://github.com/marijnh/CodeMirror
+// Definitions by: Nikolaj Kappler <https://github.com/nkappler>
+// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// See docs https://codemirror.net/doc/manual.html#addon_tern and https://codemirror.net/addon/tern/tern.js (comments in the beginning of the file)
+// Docs for tern itself might also be helpful: http://ternjs.net/doc/manual.html
+// Type definitions for CodeMirror
+// Project: https://github.com/marijnh/CodeMirror
 // Definitions by: mihailik <https://github.com/mihailik>
 //                 nrbernard <https://github.com/nrbernard>
 //                 Pr1st0n <https://github.com/Pr1st0n>
 //                 rileymiller <https://github.com/rileymiller>
 //                 toddself <https://github.com/toddself>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.8
 // Type definitions for CodeMirror
 // Project: https://github.com/marijnh/CodeMirror
 // Definitions by: jacqt <https://github.com/jacqt>

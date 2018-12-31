@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccessDescription extends js.Object {
   var accessLocation: default
   var accessMethod: java.lang.String

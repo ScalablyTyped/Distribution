@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClustersResource extends js.Object {
   /** Creates a cluster in a project. */
   def create(request: gapiDotClientDotDataprocLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Operation]

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class GattCharacteristicNotificationTrigger protected () extends js.Object {
   /**
-                   * Initializes a new instance of the GattCharacteristicNotificationTrigger class.
-                   * @param characteristic The GATT characteristic for which value change notifications are desired.
-                   */
+    * Initializes a new instance of the GattCharacteristicNotificationTrigger class.
+    * @param characteristic The GATT characteristic for which value change notifications are desired.
+    */
   def this(characteristic: winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.GenericAttributeProfileNs.GattCharacteristic) = this()
   /** Gets the GATT characteristic for which value change notifications are desired. */
   var characteristic: winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.GenericAttributeProfileNs.GattCharacteristic = js.native

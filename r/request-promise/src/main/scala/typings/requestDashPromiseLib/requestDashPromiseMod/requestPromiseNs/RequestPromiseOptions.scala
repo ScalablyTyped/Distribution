@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestPromiseOptions
   extends requestLib.requestMod.requestNs.CoreOptions {
   var resolveWithFullResponse: js.UndefOr[scala.Boolean] = js.undefined

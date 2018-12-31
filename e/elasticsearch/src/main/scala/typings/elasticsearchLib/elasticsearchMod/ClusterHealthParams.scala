@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClusterHealthParams extends GenericParams {
   var index: js.UndefOr[NameList] = js.undefined
   var level: js.UndefOr[

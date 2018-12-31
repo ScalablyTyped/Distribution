@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HandleFieldPayload extends js.Object {
   // The arguments that were fetched.
   var args: Variables

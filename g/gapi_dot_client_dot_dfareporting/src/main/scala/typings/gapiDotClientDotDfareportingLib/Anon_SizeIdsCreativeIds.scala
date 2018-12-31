@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SizeIdsCreativeIds extends js.Object {
   /** Select only active ads. */
   var active: js.UndefOr[scala.Boolean] = js.undefined
@@ -20,19 +19,19 @@ trait Anon_SizeIdsCreativeIds extends js.Object {
   /** Select only ads with these campaign IDs. */
   var campaignIds: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Select default ads with the specified compatibility. Applicable when type is AD_SERVING_DEFAULT_AD. DISPLAY and DISPLAY_INTERSTITIAL refer to rendering
-                   * either on desktop or on mobile devices for regular or interstitial ads, respectively. APP and APP_INTERSTITIAL are for rendering in mobile apps.
-                   * IN_STREAM_VIDEO refers to rendering an in-stream video ads developed with the VAST standard.
-                   */
+    * Select default ads with the specified compatibility. Applicable when type is AD_SERVING_DEFAULT_AD. DISPLAY and DISPLAY_INTERSTITIAL refer to rendering
+    * either on desktop or on mobile devices for regular or interstitial ads, respectively. APP and APP_INTERSTITIAL are for rendering in mobile apps.
+    * IN_STREAM_VIDEO refers to rendering an in-stream video ads developed with the VAST standard.
+    */
   var compatibility: js.UndefOr[java.lang.String] = js.undefined
   /** Select only ads with these creative IDs assigned. */
   var creativeIds: js.UndefOr[java.lang.String] = js.undefined
   /** Select only ads with these creative optimization configuration IDs. */
   var creativeOptimizationConfigurationIds: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Select only dynamic click trackers. Applicable when type is AD_SERVING_CLICK_TRACKER. If true, select dynamic click trackers. If false, select static
-                   * click trackers. Leave unset to select both.
-                   */
+    * Select only dynamic click trackers. Applicable when type is AD_SERVING_CLICK_TRACKER. If true, select dynamic click trackers. If false, select static
+    * click trackers. Leave unset to select both.
+    */
   var dynamicClickTracker: js.UndefOr[scala.Boolean] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
@@ -57,17 +56,17 @@ trait Anon_SizeIdsCreativeIds extends js.Object {
   /** User profile ID associated with this request. */
   var profileId: java.lang.String
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** Select only ads whose list targeting expression use these remarketing list IDs. */
   var remarketingListIds: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Allows searching for objects by name or ID. Wildcards (&#42;) are allowed. For example, "ad&#42;2015" will return objects with names like "ad June 2015", "ad
-                   * April 2015", or simply "ad 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a
-                   * search string of "ad" will match objects with name "my ad", "ad 2015", or simply "ad".
-                   */
+    * Allows searching for objects by name or ID. Wildcards (&#42;) are allowed. For example, "ad&#42;2015" will return objects with names like "ad June 2015", "ad
+    * April 2015", or simply "ad 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For example, a
+    * search string of "ad" will match objects with name "my ad", "ad 2015", or simply "ad".
+    */
   var searchString: js.UndefOr[java.lang.String] = js.undefined
   /** Select only ads with these size IDs. */
   var sizeIds: js.UndefOr[java.lang.String] = js.undefined

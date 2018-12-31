@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapType extends js.Object {
   var maxZoom: scala.Double
   var minZoom: scala.Double

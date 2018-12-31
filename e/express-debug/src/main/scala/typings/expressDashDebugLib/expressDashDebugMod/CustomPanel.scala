@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomPanel extends js.Object {
   @JSName("finalize")
   var finalize_FCustomPanel: js.UndefOr[js.Function1[/* req */ expressLib.expressMod.eNs.Request, scala.Unit]] = js.undefined

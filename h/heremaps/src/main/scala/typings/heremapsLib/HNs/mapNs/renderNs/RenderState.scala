@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait RenderState extends js.Object
 
 /**
-             * The rendering states of the layer.
-             */
+  * The rendering states of the layer.
+  */
 @JSGlobal("H.map.render.RenderState")
 @js.native
 object RenderState extends js.Object {
@@ -25,9 +25,9 @@ object RenderState extends js.Object {
     extends heremapsLib.HNs.mapNs.renderNs.RenderState
   
   /**
-                   * Data loading/processing is still in progress, but there is nothing to render. In this state rendering engine might go to sleep mode after
-                   * certain amount of time to prevent draining of battery on the user device.
-                   */
+    * Data loading/processing is still in progress, but there is nothing to render. In this state rendering engine might go to sleep mode after
+    * certain amount of time to prevent draining of battery on the user device.
+    */
   @js.native
   sealed trait PENDING
     extends heremapsLib.HNs.mapNs.renderNs.RenderState

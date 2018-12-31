@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StyleFixtures extends js.Object {
   var fixturesPath: java.lang.String
   def appendLoad(uls: java.lang.String*): scala.Unit

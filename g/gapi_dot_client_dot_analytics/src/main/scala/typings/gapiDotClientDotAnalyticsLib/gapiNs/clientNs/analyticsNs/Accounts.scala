@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Accounts extends js.Object {
   /** A list of accounts. */
   var items: js.UndefOr[js.Array[Account]] = js.undefined
   /**
-               * The maximum number of entries the response can contain, regardless of the actual number of entries returned. Its value ranges from 1 to 1000 with a
-               * value of 1000 by default, or otherwise specified by the max-results query parameter.
-               */
+    * The maximum number of entries the response can contain, regardless of the actual number of entries returned. Its value ranges from 1 to 1000 with a
+    * value of 1000 by default, or otherwise specified by the max-results query parameter.
+    */
   var itemsPerPage: js.UndefOr[scala.Double] = js.undefined
   /** Collection type. */
   var kind: js.UndefOr[java.lang.String] = js.undefined

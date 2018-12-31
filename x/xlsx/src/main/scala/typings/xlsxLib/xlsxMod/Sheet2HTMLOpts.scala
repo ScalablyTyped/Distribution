@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Sheet2HTMLOpts extends js.Object {
   /** Add contenteditable to every cell */
   var editable: js.UndefOr[scala.Boolean] = js.undefined

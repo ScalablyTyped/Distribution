@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line:strict-export-declare-modifiers
-
 trait NavigationTabScreenOptionsBase extends js.Object {
   var tabBarIcon: js.UndefOr[
     reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[

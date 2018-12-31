@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReleaseDefinitionGatesOptions extends js.Object {
   var isEnabled: scala.Boolean
   var samplingInterval: scala.Double

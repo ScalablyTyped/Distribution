@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Themeframe extends js.Object {
   var additional_backgrounds: js.UndefOr[
     js.Array[

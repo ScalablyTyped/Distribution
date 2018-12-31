@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgGridUpdatingLocale
   extends /**
 	 * Option for IgGridUpdatingLocale

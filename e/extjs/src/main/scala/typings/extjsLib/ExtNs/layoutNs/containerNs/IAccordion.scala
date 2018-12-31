@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAccordion extends IVBox {
   /** [Config Option] (Boolean) */
   var activeOnTop: js.UndefOr[scala.Boolean] = js.undefined

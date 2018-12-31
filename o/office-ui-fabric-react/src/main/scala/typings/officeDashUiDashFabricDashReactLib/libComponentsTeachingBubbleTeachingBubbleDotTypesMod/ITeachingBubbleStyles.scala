@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITeachingBubbleStyles extends js.Object {
   var body: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   var bodyContent: atUifabricMergeDashStylesLib.libIStyleMod.IStyle

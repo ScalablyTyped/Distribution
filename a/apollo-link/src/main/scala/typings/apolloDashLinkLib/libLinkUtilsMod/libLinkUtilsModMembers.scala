@@ -8,10 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("apollo-link/lib/linkUtils", JSImport.Namespace)
 @js.native
 object libLinkUtilsModMembers extends js.Object {
-  val makePromise: js.Function1[
-    /* observable */ zenDashObservableDashTsLib.libZenObservableMod.Observable[js.Any], 
-    js.Promise[js.Any]
-  ] = js.native
+  val makePromise: apolloDashLinkLib.Anon_Observable = js.native
   def createOperation(starting: js.Any, operation: apolloDashLinkLib.libTypesMod.GraphQLRequest): apolloDashLinkLib.libTypesMod.Operation = js.native
   def fromError[T](errorValue: js.Any): zenDashObservableDashTsLib.libZenObservableMod.Observable[T] = js.native
   def fromPromise[T](promise: js.Promise[T]): zenDashObservableDashTsLib.libZenObservableMod.Observable[T] = js.native

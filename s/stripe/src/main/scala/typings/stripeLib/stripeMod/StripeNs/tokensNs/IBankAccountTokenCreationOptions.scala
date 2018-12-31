@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBankAccountTokenCreationOptions extends ITokenCreationOptionsBase {
   /**
-               * The card this token will represent. If you also pass in a customer,
-               * the card must be the ID of a card belonging to the customer.
-               * Otherwise, if you do not pass a customer, a object containing a
-               * user's credit card details, with the options described below.
-               */
+    * The card this token will represent. If you also pass in a customer,
+    * the card must be the ID of a card belonging to the customer.
+    * Otherwise, if you do not pass a customer, a object containing a
+    * user's credit card details, with the options described below.
+    */
   var bank_account: stripeLib.stripeMod.StripeNs.bankAccountsNs.ISourceCreationOptions
 }
 

@@ -70,7 +70,7 @@ trait Anon_Find extends js.Object {
   def includes[T](array: stdLib.ArrayLike[T], value: T, fromIndex: scala.Double): scala.Boolean = js.native
   def indexOf[T](array: stdLib.ArrayLike[T], searchElement: T): scala.Double = js.native
   def indexOf[T](array: stdLib.ArrayLike[T], searchElement: T, fromIndex: scala.Double): scala.Double = js.native
-  def isArray(arg: js.Any): /* is Array */scala.Boolean = js.native
+  def isArray(arg: js.Any): /* is core-js.Array<any> */ scala.Boolean = js.native
   def join[T](array: stdLib.ArrayLike[T]): java.lang.String = js.native
   def join[T](array: stdLib.ArrayLike[T], separator: java.lang.String): java.lang.String = js.native
   def keys[T](array: stdLib.ArrayLike[T]): nodeLib.IterableIterator[scala.Double] = js.native

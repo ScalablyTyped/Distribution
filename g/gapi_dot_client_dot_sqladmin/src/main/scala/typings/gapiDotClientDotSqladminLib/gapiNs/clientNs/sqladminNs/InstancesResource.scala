@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InstancesResource extends js.Object {
   /** Creates a Cloud SQL instance as a clone of the source instance. The API is not ready for Second Generation instances yet. */
   def clone(request: gapiDotClientDotSqladminLib.Anon_Project): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
@@ -24,16 +23,16 @@ trait InstancesResource extends js.Object {
   /** Lists instances under a given project in the alphabetical order of the instance name. */
   def list(request: gapiDotClientDotSqladminLib.Anon_ProjectMaxResults): gapiDotClientLib.gapiNs.clientNs.Request[InstancesListResponse]
   /**
-               * Updates settings of a Cloud SQL instance. Caution: This is not a partial update, so you must include values for all the settings that you want to
-               * retain. For partial updates, use patch.. This method supports patch semantics.
-               */
+    * Updates settings of a Cloud SQL instance. Caution: This is not a partial update, so you must include values for all the settings that you want to
+    * retain. For partial updates, use patch.. This method supports patch semantics.
+    */
   def patch(request: gapiDotClientDotSqladminLib.Anon_Project): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /** Promotes the read replica instance to be a stand-alone Cloud SQL instance. */
   def promoteReplica(request: gapiDotClientDotSqladminLib.Anon_Project): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
-               * Deletes all client certificates and generates a new server SSL certificate for the instance. The changes will not take effect until the instance is
-               * restarted. Existing instances without a server certificate will need to call this once to set a server certificate.
-               */
+    * Deletes all client certificates and generates a new server SSL certificate for the instance. The changes will not take effect until the instance is
+    * restarted. Existing instances without a server certificate will need to call this once to set a server certificate.
+    */
   def resetSslConfig(request: gapiDotClientDotSqladminLib.Anon_Project): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /** Restarts a Cloud SQL instance. */
   def restart(request: gapiDotClientDotSqladminLib.Anon_Project): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
@@ -46,9 +45,9 @@ trait InstancesResource extends js.Object {
   /** Truncate MySQL general and slow query log tables */
   def truncateLog(request: gapiDotClientDotSqladminLib.Anon_Project): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
-               * Updates settings of a Cloud SQL instance. Caution: This is not a partial update, so you must include values for all the settings that you want to
-               * retain. For partial updates, use patch.
-               */
+    * Updates settings of a Cloud SQL instance. Caution: This is not a partial update, so you must include values for all the settings that you want to
+    * retain. For partial updates, use patch.
+    */
   def update(request: gapiDotClientDotSqladminLib.Anon_Project): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 

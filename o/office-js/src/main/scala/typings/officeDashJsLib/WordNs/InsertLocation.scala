@@ -9,55 +9,55 @@ import scala.scalajs.js.annotation._
 sealed trait InsertLocation extends js.Object
 
 /**
-     *
-     * The insertion location types
-     *
-     * [Api set: WordApi]
-     */
+  *
+  * The insertion location types
+  *
+  * [Api set: WordApi]
+  */
 @JSGlobal("Word.InsertLocation")
 @js.native
 object InsertLocation extends js.Object {
   /**
-           *
-           * Add content after the contents of the calling object.
-           *
-           */
+    *
+    * Add content after the contents of the calling object.
+    *
+    */
   @js.native
   sealed trait after
     extends officeDashJsLib.WordNs.InsertLocation
   
   /**
-           *
-           * Add content before the contents of the calling object.
-           *
-           */
+    *
+    * Add content before the contents of the calling object.
+    *
+    */
   @js.native
   sealed trait before
     extends officeDashJsLib.WordNs.InsertLocation
   
   /**
-           *
-           * Append content to the contents of the calling object.
-           *
-           */
+    *
+    * Append content to the contents of the calling object.
+    *
+    */
   @js.native
   sealed trait end
     extends officeDashJsLib.WordNs.InsertLocation
   
   /**
-           *
-           * Replace the contents of the current object.
-           *
-           */
+    *
+    * Replace the contents of the current object.
+    *
+    */
   @js.native
   sealed trait replace
     extends officeDashJsLib.WordNs.InsertLocation
   
   /**
-           *
-           * Prepend content to the contents of the calling object.
-           *
-           */
+    *
+    * Prepend content to the contents of the calling object.
+    *
+    */
   @js.native
   sealed trait start
     extends officeDashJsLib.WordNs.InsertLocation

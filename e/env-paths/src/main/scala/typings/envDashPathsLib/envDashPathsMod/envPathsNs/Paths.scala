@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Paths extends js.Object {
   val cache: java.lang.String
   val config: java.lang.String

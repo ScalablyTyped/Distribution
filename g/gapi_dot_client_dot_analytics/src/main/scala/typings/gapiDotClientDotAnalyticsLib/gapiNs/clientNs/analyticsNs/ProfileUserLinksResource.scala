@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProfileUserLinksResource extends js.Object {
   /** Removes a user from the given view (profile). */
   def delete(request: gapiDotClientDotAnalyticsLib.Anon_ProfileIdLinkId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

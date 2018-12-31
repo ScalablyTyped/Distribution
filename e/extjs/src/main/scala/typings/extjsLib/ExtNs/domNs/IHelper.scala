@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHelper extends IAbstractHelper {
   /** [Method] Creates new DOM element s without inserting them to the document
   		* @param o Object/String The DOM object spec (and children) or raw HTML blob

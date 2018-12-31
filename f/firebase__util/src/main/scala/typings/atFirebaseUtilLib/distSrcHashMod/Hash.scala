@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class Hash () extends js.Object {
   /**
-       * The block size for the hasher.
-       * @type {number}
-       */
+    * The block size for the hasher.
+    * @type {number}
+    */
   var blockSize: scala.Double = js.native
 }
 

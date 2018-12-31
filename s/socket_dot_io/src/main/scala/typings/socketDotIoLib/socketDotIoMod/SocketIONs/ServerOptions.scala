@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * Options to pass to our server when creating it
 	 */
-
 trait ServerOptions extends js.Object {
   /**
   		 * The adapter to use for handling rooms. NOTE: this should be a class,

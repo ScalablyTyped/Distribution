@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // API: http://vitaly-t.github.io/spex/errors.BatchError.html
-
 trait IBatchError
   extends stdLib.Error {
   // extended properties:

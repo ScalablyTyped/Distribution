@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRevealOptions extends js.Object {
   var animationIn: js.UndefOr[java.lang.String] = js.undefined
   var animationOut: js.UndefOr[java.lang.String] = js.undefined

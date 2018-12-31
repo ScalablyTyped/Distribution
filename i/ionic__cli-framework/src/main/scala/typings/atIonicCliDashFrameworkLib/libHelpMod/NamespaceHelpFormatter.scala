@@ -15,12 +15,12 @@ abstract class NamespaceHelpFormatter[C /* <: atIonicCliDashFrameworkLib.definit
   val location: atIonicCliDashFrameworkLib.definitionsMod.NamespaceLocateResult[C, N, M, I, O] = js.native
   val namespace: N = js.native
   /**
-       * Given command metadata, decide whether to keep or discard the command that
-       * the metadata represents.
-       *
-       * @param meta: The metadata of the command.
-       * @return `true` to keep, `false` to discard
-       */
+    * Given command metadata, decide whether to keep or discard the command that
+    * the metadata represents.
+    *
+    * @param meta: The metadata of the command.
+    * @return `true` to keep, `false` to discard
+    */
   def filterCommandCallback(meta: atIonicCliDashFrameworkLib.definitionsMod.HydratedCommandMetadata[C, N, M, I, O]): js.Promise[scala.Boolean] = js.native
   def getNamespaceFullName(): js.Promise[java.lang.String] = js.native
   def getNamespaceMetadata(): js.Promise[atIonicCliDashFrameworkLib.definitionsMod.NamespaceMetadata] = js.native

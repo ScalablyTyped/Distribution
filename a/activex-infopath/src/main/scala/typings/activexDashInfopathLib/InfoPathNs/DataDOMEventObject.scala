@@ -21,27 +21,17 @@ class DataDOMEventObject protected () extends js.Object {
   val Source: activexDashMsxml2Lib.MSXML2Ns.IXMLDOMNode = js.native
   val XDocument: _XDocument = js.native
   /**
-           * @param string [bstrDetailedErrorMessage='']
-           * @param number [lErrorCode=0]
-           * @param string [bstrType='modeless']
-           */
+    * @param string [bstrDetailedErrorMessage='']
+    * @param number [lErrorCode=0]
+    * @param string [bstrType='modeless']
+    */
   def ReportError(varNode: js.Any, bstrShortErrorMessage: java.lang.String, fSiteIndependent: scala.Boolean): ErrorObject = js.native
-  /**
-           * @param string [bstrDetailedErrorMessage='']
-           * @param number [lErrorCode=0]
-           * @param string [bstrType='modeless']
-           */
   def ReportError(
     varNode: js.Any,
     bstrShortErrorMessage: java.lang.String,
     fSiteIndependent: scala.Boolean,
     bstrDetailedErrorMessage: java.lang.String
   ): ErrorObject = js.native
-  /**
-           * @param string [bstrDetailedErrorMessage='']
-           * @param number [lErrorCode=0]
-           * @param string [bstrType='modeless']
-           */
   def ReportError(
     varNode: js.Any,
     bstrShortErrorMessage: java.lang.String,
@@ -49,11 +39,6 @@ class DataDOMEventObject protected () extends js.Object {
     bstrDetailedErrorMessage: java.lang.String,
     lErrorCode: scala.Double
   ): ErrorObject = js.native
-  /**
-           * @param string [bstrDetailedErrorMessage='']
-           * @param number [lErrorCode=0]
-           * @param string [bstrType='modeless']
-           */
   def ReportError(
     varNode: js.Any,
     bstrShortErrorMessage: java.lang.String,

@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class Message protected () extends js.Object {
   /**
-       * @param nodes message AST
-       * @param placeholders maps placeholder names to static content
-       * @param placeholderToMessage maps placeholder names to messages (used for nested ICU messages)
-       * @param meaning
-       * @param description
-       * @param id
-       */
+    * @param nodes message AST
+    * @param placeholders maps placeholder names to static content
+    * @param placeholderToMessage maps placeholder names to messages (used for nested ICU messages)
+    * @param meaning
+    * @param description
+    * @param id
+    */
   def this(nodes: js.Array[Node], placeholders: org.scalablytyped.runtime.StringDictionary[java.lang.String], placeholderToMessage: org.scalablytyped.runtime.StringDictionary[Message], meaning: java.lang.String, description: java.lang.String, id: java.lang.String) = this()
   var description: java.lang.String = js.native
   var id: java.lang.String = js.native

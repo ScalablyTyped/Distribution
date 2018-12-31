@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PolylineOptions extends js.Object {
   var endCap: js.UndefOr[java.lang.String | PolylineEndCap] = js.undefined
   var fill: js.UndefOr[java.lang.String | PolylineFill] = js.undefined

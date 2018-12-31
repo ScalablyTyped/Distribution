@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnMovingEventUIParam extends js.Object {
   /**
   	 * Gets the column index of the column that was being moved.

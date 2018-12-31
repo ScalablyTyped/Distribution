@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ParentAccesstoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -25,9 +24,9 @@ trait Anon_ParentAccesstoken extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The name of the database this index will apply to. For example:
-                   * `projects/{project_id}/databases/{database_id}`
-                   */
+    * The name of the database this index will apply to. For example:
+    * `projects/{project_id}/databases/{database_id}`
+    */
   var parent: java.lang.String
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

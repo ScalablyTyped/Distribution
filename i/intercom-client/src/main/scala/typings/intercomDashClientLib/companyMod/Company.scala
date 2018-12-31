@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Company extends js.Object {
   val app_id: js.UndefOr[java.lang.String] = js.undefined
   var company_id: js.UndefOr[java.lang.String] = js.undefined

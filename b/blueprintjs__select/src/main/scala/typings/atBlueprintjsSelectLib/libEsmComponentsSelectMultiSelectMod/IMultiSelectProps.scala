@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 trait IMultiSelectProps[T]
   extends atBlueprintjsSelectLib.libEsmCommonListItemsPropsMod.IListItemsProps[T] {
   /**
-       * Whether the popover opens on key down or when `TagInput` is focused.
-       * @default false
-       */
+    * Whether the popover opens on key down or when `TagInput` is focused.
+    * @default false
+    */
   var openOnKeyDown: js.UndefOr[scala.Boolean] = js.native
   /**
-       * Input placeholder text. Shorthand for `tagInputProps.placeholder`.
-       * @default "Search..."
-       */
+    * Input placeholder text. Shorthand for `tagInputProps.placeholder`.
+    * @default "Search..."
+    */
   var placeholder: js.UndefOr[java.lang.String] = js.native
   /** Props to spread to `Popover`. Note that `content` cannot be changed. */
   var popoverProps: js.UndefOr[

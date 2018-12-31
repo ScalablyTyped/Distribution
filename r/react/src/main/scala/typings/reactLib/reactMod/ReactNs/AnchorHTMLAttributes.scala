@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnchorHTMLAttributes[T] extends HTMLAttributes[T] {
   var download: js.UndefOr[js.Any] = js.undefined
   var href: js.UndefOr[java.lang.String] = js.undefined

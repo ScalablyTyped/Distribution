@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TagCloudProps
   extends reactLib.reactMod.ReactNs.Props[scala.Unit] {
   var className: js.UndefOr[java.lang.String] = js.undefined

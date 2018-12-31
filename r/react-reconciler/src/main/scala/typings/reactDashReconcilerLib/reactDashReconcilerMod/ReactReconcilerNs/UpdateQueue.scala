@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateQueue[State] extends js.Object {
   var baseState: State
   var firstCapturedEffect: Update[State] | scala.Null

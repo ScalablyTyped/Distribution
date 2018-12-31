@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPeoplePickerItemSuggestionStyles extends js.Object {
   /** Refers to the element wrapping the Persona of the suggested PeoplePicker item. */
   var personaWrapper: atUifabricMergeDashStylesLib.libIStyleMod.IStyle

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An instance of the HttpError class. */
-
 trait HttpError
   extends stdLib.Error {
   var code: java.lang.String

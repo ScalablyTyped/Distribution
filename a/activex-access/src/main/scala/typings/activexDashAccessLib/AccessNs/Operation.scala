@@ -15,7 +15,6 @@ class Operation protected () extends js.Object {
   val WSParameters_Original: WSParameters = js.native
   /** @param bstrParameters [bstrParameters=''] */
   def Execute(): js.Any = js.native
-  /** @param bstrParameters [bstrParameters=''] */
   def Execute(bstrParameters: java.lang.String): js.Any = js.native
   def IsMemberSafe(dispid: scala.Double): scala.Boolean = js.native
   def WSParameters(Index: java.lang.String): WSParameter = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CFB$Container extends js.Object {
   /* Array of entries in the same order as FullPaths */
   var FileIndex: js.Array[CFB$Entry]

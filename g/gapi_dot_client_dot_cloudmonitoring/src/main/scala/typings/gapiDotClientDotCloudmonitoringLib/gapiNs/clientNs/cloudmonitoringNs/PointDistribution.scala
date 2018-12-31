@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PointDistribution extends js.Object {
   /** The finite buckets. */
   var buckets: js.UndefOr[js.Array[PointDistributionBucket]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LogicalExpression extends BaseNode {
   var left: Expression
   var operator: atBabelTypesLib.atBabelTypesLibStrings.`||` | atBabelTypesLib.atBabelTypesLibStrings.`&&` | atBabelTypesLib.atBabelTypesLibStrings.`??`

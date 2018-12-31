@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GroupExpandedEventUIParam extends js.Object {
   /**
   	 * Gets a reference to the jQuery object for the column being expanded (th).

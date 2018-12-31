@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListGridType extends js.Object {
   var column: js.UndefOr[ColumnCount] = js.undefined
   var gutter: js.UndefOr[scala.Double] = js.undefined

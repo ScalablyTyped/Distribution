@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAddOrientation extends js.Object {
   def day(): datejsLib.Date
   def days(): datejsLib.Date

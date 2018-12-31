@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILockScreenStatics extends js.Object {
   var originalImageFile: winrtLib.WindowsNs.FoundationNs.Uri
   def getImageStream(): winrtLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream

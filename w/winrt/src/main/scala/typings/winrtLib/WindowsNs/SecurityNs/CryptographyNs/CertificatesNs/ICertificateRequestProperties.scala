@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICertificateRequestProperties extends js.Object {
   var exportable: ExportOption
   var friendlyName: java.lang.String

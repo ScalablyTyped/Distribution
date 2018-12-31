@@ -16,11 +16,9 @@ class IHTMLTableSection protected () extends js.Object {
   var vAlign: java.lang.String = js.native
   /** @param index [index=-1] */
   def deleteRow(): scala.Unit = js.native
-  /** @param index [index=-1] */
   def deleteRow(index: scala.Double): scala.Unit = js.native
   /** @param index [index=-1] */
   def insertRow(): js.Any = js.native
-  /** @param index [index=-1] */
   def insertRow(index: scala.Double): js.Any = js.native
   def rows(): js.Any = js.native
   def rows(name: js.Any): js.Any = js.native

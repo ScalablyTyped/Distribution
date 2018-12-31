@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NumberValue extends js.Object {
   def array(value: js.Any): scala.Boolean
   def boolean(value: js.Any): scala.Boolean

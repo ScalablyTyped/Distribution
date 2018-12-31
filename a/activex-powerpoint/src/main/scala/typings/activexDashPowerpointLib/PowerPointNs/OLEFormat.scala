@@ -18,7 +18,6 @@ class OLEFormat protected () extends js.Object {
   def Activate(): scala.Unit = js.native
   /** @param number [Index=0] */
   def DoVerb(): scala.Unit = js.native
-  /** @param number [Index=0] */
   def DoVerb(Index: scala.Double): scala.Unit = js.native
 }
 

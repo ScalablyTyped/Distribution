@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserRolePermission extends js.Object {
   /** Levels of availability for a user role permission. */
   var availability: js.UndefOr[java.lang.String] = js.undefined

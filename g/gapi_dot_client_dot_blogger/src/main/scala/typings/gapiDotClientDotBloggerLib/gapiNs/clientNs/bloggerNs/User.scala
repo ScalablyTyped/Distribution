@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait User extends js.Object {
   /** Profile summary information. */
   var about: js.UndefOr[java.lang.String] = js.undefined

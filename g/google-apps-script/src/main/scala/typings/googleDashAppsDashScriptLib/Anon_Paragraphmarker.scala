@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Paragraphmarker extends js.Object {
   // A TextElement representing a spot in the text that is dynamically
   // replaced with content that can change over time.

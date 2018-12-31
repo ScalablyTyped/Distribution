@@ -29,13 +29,13 @@ class MediaFormat protected () extends js.Object {
   val VideoFrameRate: scala.Double = js.native
   var Volume: scala.Double = js.native
   /**
-           * @param boolean [Trim=false]
-           * @param number [SampleHeight=768]
-           * @param number [SampleWidth=1280]
-           * @param number [VideoFrameRate=24]
-           * @param number [AudioSamplingRate=48000]
-           * @param number [VideoBitRate=7000000]
-           */
+    * @param boolean [Trim=false]
+    * @param number [SampleHeight=768]
+    * @param number [SampleWidth=1280]
+    * @param number [VideoFrameRate=24]
+    * @param number [AudioSamplingRate=48000]
+    * @param number [VideoBitRate=7000000]
+    */
   def Resample(
     Trim: js.UndefOr[scala.Boolean],
     SampleHeight: js.UndefOr[scala.Double],
@@ -46,7 +46,6 @@ class MediaFormat protected () extends js.Object {
   ): scala.Unit = js.native
   /** @param PowerPoint.PpResampleMediaProfile [profile=2] */
   def ResampleFromProfile(): scala.Unit = js.native
-  /** @param PowerPoint.PpResampleMediaProfile [profile=2] */
   def ResampleFromProfile(profile: PpResampleMediaProfile): scala.Unit = js.native
   def SetDisplayPicture(Position: scala.Double): scala.Unit = js.native
   def SetDisplayPictureFromFile(FilePath: java.lang.String): scala.Unit = js.native

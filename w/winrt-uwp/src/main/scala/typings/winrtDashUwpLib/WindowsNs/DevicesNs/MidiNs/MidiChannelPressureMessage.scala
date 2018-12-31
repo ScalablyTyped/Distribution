@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class MidiChannelPressureMessage protected () extends js.Object {
   /**
-                   * Creates a new MidiChannelPressureMessage object.
-                   * @param channel The channel from 0-15 that this message applies to.
-                   * @param pressure The pressure from 0-127.
-                   */
+    * Creates a new MidiChannelPressureMessage object.
+    * @param channel The channel from 0-15 that this message applies to.
+    * @param pressure The pressure from 0-127.
+    */
   def this(channel: scala.Double, pressure: scala.Double) = this()
   /** Gets the channel from 0-15 that this message applies to. */
   var channel: scala.Double = js.native

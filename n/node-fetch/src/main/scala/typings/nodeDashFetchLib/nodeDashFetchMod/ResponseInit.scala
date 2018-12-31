@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResponseInit extends js.Object {
   var headers: js.UndefOr[HeaderInit] = js.undefined
   var status: scala.Double

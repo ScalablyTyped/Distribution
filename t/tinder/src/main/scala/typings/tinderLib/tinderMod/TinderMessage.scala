@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TinderMessage extends js.Object {
   var _id: java.lang.String
   var created_date: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReaderT1[M /* <: fpDashTsLib.libHKTMod.URIS */] extends js.Object {
   def ap[E, A, B](
     fab: js.Function1[/* e */ E, fpDashTsLib.libHKTMod.Type[M, js.Function1[/* a */ A, B]]],

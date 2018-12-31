@@ -5,27 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default '.category'
-                   */
+    * @default '.category'
+    */
   var category: java.lang.String
   /**
-                   * @default '.prompt'
-                   */
+    * @default '.prompt'
+    */
   var prompt: java.lang.String
   /**
-                   * @default '.result'
-                   */
+    * @default '.result'
+    */
   var result: java.lang.String
   /**
-                   * @default '.results'
-                   */
+    * @default '.results'
+    */
   var results: java.lang.String
   /**
-                   * @default '.search.button'
-                   */
+    * @default '.search.button'
+    */
   var searchButton: java.lang.String
 }
 

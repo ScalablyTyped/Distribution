@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServiceEndpointAuthenticationScheme extends js.Object {
   var authorizationHeaders: js.Array[AuthorizationHeader]
   var displayName: java.lang.String

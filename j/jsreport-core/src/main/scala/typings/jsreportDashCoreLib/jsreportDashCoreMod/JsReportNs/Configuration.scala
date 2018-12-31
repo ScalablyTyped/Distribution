@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Configuration extends js.Object {
   var autoTempCleanup: scala.Boolean
   var dataDirectory: java.lang.String

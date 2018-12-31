@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAxisLabels extends js.Object {
   var alternate: scala.Boolean
   var chart: IChart

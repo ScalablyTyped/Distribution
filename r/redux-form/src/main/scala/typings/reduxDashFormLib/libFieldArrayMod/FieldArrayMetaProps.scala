@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FieldArrayMetaProps extends js.Object {
   var dirty: scala.Boolean
   var error: js.UndefOr[js.Any] = js.undefined

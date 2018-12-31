@@ -9,84 +9,84 @@ import scala.scalajs.js.annotation._
 sealed trait Days extends js.Object
 
 /**
-         * Specifies the day of week or type of day.
-         *
-         * [Api set: Mailbox 1.7]
-         *
-         * @remarks
-         * <table><tr><td>
-         * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
-         * </td><td>Compose or read</td></tr></table>
-         */
+  * Specifies the day of week or type of day.
+  *
+  * [Api set: Mailbox 1.7]
+  *
+  * @remarks
+  * <table><tr><td>
+  * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
+  * </td><td>Compose or read</td></tr></table>
+  */
 @JSGlobal("Office.MailboxEnums.Days")
 @js.native
 object Days extends js.Object {
   /**
-               * Day of week.
-               */
+    * Day of week.
+    */
   @js.native
   sealed trait Day
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Days
   
   /**
-               * Friday
-               */
+    * Friday
+    */
   @js.native
   sealed trait Fri
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Days
   
   /**
-               * Monday
-               */
+    * Monday
+    */
   @js.native
   sealed trait Mon
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Days
   
   /**
-               * Saturday
-               */
+    * Saturday
+    */
   @js.native
   sealed trait Sat
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Days
   
   /**
-               * Sunday
-               */
+    * Sunday
+    */
   @js.native
   sealed trait Sun
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Days
   
   /**
-               * Thursday
-               */
+    * Thursday
+    */
   @js.native
   sealed trait Thu
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Days
   
   /**
-               * Tuesday
-               */
+    * Tuesday
+    */
   @js.native
   sealed trait Tue
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Days
   
   /**
-               * Wednesday
-               */
+    * Wednesday
+    */
   @js.native
   sealed trait Wed
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Days
   
   /**
-               * Week day (excludes weekend days): 'Mon', 'Tue', 'Wed', 'Thu', and 'Fri'.
-               */
+    * Week day (excludes weekend days): 'Mon', 'Tue', 'Wed', 'Thu', and 'Fri'.
+    */
   @js.native
   sealed trait Weekday
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Days
   
   /**
-               * Weekend day: 'Sat' and 'Sun'.
-               */
+    * Weekend day: 'Sat' and 'Sun'.
+    */
   @js.native
   sealed trait WeekendDay
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.Days

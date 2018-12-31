@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object esprimaDashWalkMod extends js.Object {
   /**
-   * Walk the provided AST; fn is called once for each node with a `type`
-   * @param {ESTree.Program} ast program to walk
-   * @param {function} fn function invoked for each node with type
-   */
+    * Walk the provided AST; fn is called once for each node with a `type`
+    * @param {ESTree.Program} ast program to walk
+    * @param {function} fn function invoked for each node with type
+    */
   def apply(
     ast: estreeLib.estreeMod.Program,
     fn: js.Function1[/* node */ estreeLib.estreeMod.Node, scala.Unit]

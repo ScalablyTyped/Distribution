@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CounterStyle extends js.Object {
   var additiveSymbols: js.UndefOr[java.lang.String] = js.undefined
   var fallback: js.UndefOr[java.lang.String] = js.undefined

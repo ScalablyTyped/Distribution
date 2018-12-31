@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RemoteStreamStats extends js.Object {
   var audioReceiveBytes: java.lang.String
   var audioReceivePackets: java.lang.String

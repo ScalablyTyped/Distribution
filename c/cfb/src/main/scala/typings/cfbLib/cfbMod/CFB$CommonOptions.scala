@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CFB$CommonOptions extends js.Object {
   /** If true, throw errors when features are not understood */
   var WTF: js.UndefOr[scala.Boolean] = js.undefined

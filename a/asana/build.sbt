@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "asana"
-version := "0.14.0-dt-20180712Z-936759"
+version := "0.14.0-dt-20180712Z-8123c3"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-8f594d",
-  "org.scalablytyped" %%% "std" % "3.2.2-669a73")
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-03fd26",
+  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

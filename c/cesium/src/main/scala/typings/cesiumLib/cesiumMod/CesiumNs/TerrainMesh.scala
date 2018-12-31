@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TerrainMesh extends js.Object {
   var boundingSphere3D: BoundingSphere
   var center: Cartesian3

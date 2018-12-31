@@ -52,11 +52,6 @@ class Logger () extends js.Object {
   	 * determines whether the group starts off expanded (the default is true). Groups may be nested.
   	 */
   def group(name: java.lang.String): scala.Unit = js.native
-  /**
-  	 * Starts a new group of log messages. In appenders that support grouping (currently PopUpAppender and InPageAppender),
-  	 * a group appears as an expandable section in the console, labelled with the name specified. Specifying initiallyExpanded
-  	 * determines whether the group starts off expanded (the default is true). Groups may be nested.
-  	 */
   def group(name: java.lang.String, initiallyExpanded: scala.Boolean): scala.Unit = js.native
   /**
   	 * Ends the current group. If there is no group then this function has no effect.
@@ -123,11 +118,6 @@ class Logger () extends js.Object {
   	 * defaults to INFO.
   	 */
   def time(name: java.lang.String): scala.Unit = js.native
-  /**
-  	 * Starts a timer with name name. When the timer is ended with a call to timeEnd using the same name, the amount of time
-  	 * that has elapsed in milliseconds since the timer was started is logged at level level. If not level is supplied, the level
-  	 * defaults to INFO.
-  	 */
   def time(name: java.lang.String, level: Level): scala.Unit = js.native
   /**
   	 * Ends the timer with name name and logs the time elapsed.

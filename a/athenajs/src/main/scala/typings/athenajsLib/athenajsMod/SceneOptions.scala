@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SceneOptions extends js.Object {
   var hudScene: js.UndefOr[Scene] = js.undefined
   var layers: js.UndefOr[scala.Double] = js.undefined

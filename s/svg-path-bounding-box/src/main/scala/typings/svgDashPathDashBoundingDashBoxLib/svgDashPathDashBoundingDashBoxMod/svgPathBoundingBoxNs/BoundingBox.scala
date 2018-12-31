@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * pass in initial points if you want
-     * @see https://github.com/gabelerner/canvg/blob/860e418aca67b9a41e858a223d74d375793ec364/canvg.js#L449
-     */
-
+  * pass in initial points if you want
+  * @see https://github.com/gabelerner/canvg/blob/860e418aca67b9a41e858a223d74d375793ec364/canvg.js#L449
+  */
 trait BoundingBox extends js.Object {
   var x1: scala.Double
   var x2: scala.Double

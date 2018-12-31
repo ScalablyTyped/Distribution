@@ -18,9 +18,9 @@ abstract class UIViewSettings () extends js.Object {
 @js.native
 object UIViewSettings extends js.Object {
   /**
-                   * Gets the UI states and behaviors associated with the device mode (Tablet or Desktop) for the active app.
-                   * @return A UIViewSettings instance that can be used to get and set view settings properties.
-                   */
+    * Gets the UI states and behaviors associated with the device mode (Tablet or Desktop) for the active app.
+    * @return A UIViewSettings instance that can be used to get and set view settings properties.
+    */
   def getForCurrentView(): winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.UIViewSettings = js.native
 }
 

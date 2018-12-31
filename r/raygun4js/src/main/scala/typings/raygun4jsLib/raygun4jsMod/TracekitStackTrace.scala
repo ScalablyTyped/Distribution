@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TracekitStackTrace extends js.Object {
   var message: java.lang.String
   var mode: java.lang.String

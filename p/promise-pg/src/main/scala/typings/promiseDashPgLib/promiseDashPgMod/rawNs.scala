@@ -33,11 +33,11 @@ object rawNs extends js.Object {
     extends pgLib.pgMod.Events
   
   @js.native
+  // `new Pool('pg://user@localhost/mydb')` is not allowed.
+  // But it passes type check because of issue:
+  // https://github.com/Microsoft/TypeScript/issues/7485
   class Pool ()
     extends pgLib.pgMod.Pool {
-    // `new Pool('pg://user@localhost/mydb')` is not allowed.
-    // But it passes type check because of issue:
-    // https://github.com/Microsoft/TypeScript/issues/7485
     def this(config: pgLib.pgMod.PoolConfig) = this()
   }
   
@@ -46,7 +46,7 @@ object rawNs extends js.Object {
     extends pgLib.pgMod.Query
   
   val defaults: pgLib.pgMod.Defaults with pgLib.pgMod.ClientConfig = js.native
-  val native: js.Any | scala.Null = js.native
-  val types: js.Any = js.native
+  val native: pgLib.Anon_Defaults | scala.Null = js.native
+  val types: pgLib.Anon_GetTypeParser = js.native
 }
 

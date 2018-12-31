@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StatsDConfig extends js.Object {
   var cacheDns: js.UndefOr[scala.Boolean] = js.undefined
   var global_tags: js.UndefOr[js.Array[java.lang.String]] = js.undefined

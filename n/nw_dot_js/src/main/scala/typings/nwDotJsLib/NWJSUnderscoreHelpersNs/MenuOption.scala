@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Object that contains options to use while creation of nw.Menu. example: new nw.Menu(MenuOption)
-     */
-
+  * Object that contains options to use while creation of nw.Menu. example: new nw.Menu(MenuOption)
+  */
 trait MenuOption extends js.Object {
   /**
-           * {string} (Optional) two types are accepted by this method: "menubar" or "contextmenu". The value is set to "contextmenu" by default.
-           */
+    * {string} (Optional) two types are accepted by this method: "menubar" or "contextmenu". The value is set to "contextmenu" by default.
+    */
   var `type`: java.lang.String
 }
 

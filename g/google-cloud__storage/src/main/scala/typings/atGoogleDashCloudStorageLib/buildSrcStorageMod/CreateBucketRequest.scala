@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateBucketRequest extends js.Object {
   var coldline: js.UndefOr[scala.Boolean] = js.undefined
   var dra: js.UndefOr[scala.Boolean] = js.undefined
+  var location: js.UndefOr[java.lang.String] = js.undefined
   var multiRegional: js.UndefOr[scala.Boolean] = js.undefined
   var nearline: js.UndefOr[scala.Boolean] = js.undefined
   var regional: js.UndefOr[scala.Boolean] = js.undefined

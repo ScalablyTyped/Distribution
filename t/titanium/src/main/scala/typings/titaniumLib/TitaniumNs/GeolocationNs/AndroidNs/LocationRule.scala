@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 			 * A location rule to filter the results returned by location providers.
 			 */
-
 trait LocationRule
   extends titaniumLib.TitaniumNs.Proxy {
   /**

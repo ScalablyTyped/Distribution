@@ -8,227 +8,46 @@ import scala.scalajs.js.annotation._
 @JSImport("adone/async", JSImport.Namespace)
 @js.native
 object asyncModMembers extends js.Object {
-  val all: js.Function3[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* iterator */ asyncLib.asyncMod.AsyncBooleanIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncBooleanResultCallback[js.Any]], 
-    scala.Unit
-  ] = js.native
-  val allLimit: js.Function4[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* limit */ scala.Double, 
-    /* iterator */ asyncLib.asyncMod.AsyncBooleanIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncBooleanResultCallback[js.Any]], 
-    scala.Unit
-  ] = js.native
-  val allSeries: js.Function3[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* iterator */ asyncLib.asyncMod.AsyncBooleanIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncBooleanResultCallback[js.Any]], 
-    scala.Unit
-  ] = js.native
-  val any: js.Function3[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* iterator */ asyncLib.asyncMod.AsyncBooleanIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncBooleanResultCallback[js.Any]], 
-    scala.Unit
-  ] = js.native
-  val anyLimit: js.Function4[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* limit */ scala.Double, 
-    /* iterator */ asyncLib.asyncMod.AsyncBooleanIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncBooleanResultCallback[js.Any]], 
-    scala.Unit
-  ] = js.native
-  val anySeries: js.Any = js.native
-  val concatSeries: js.Function3[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* iterator */ asyncLib.asyncMod.AsyncResultIterator[js.Any, js.Array[js.Any], js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncResultArrayCallback[js.Any, js.Any]], 
-    scala.Unit
-  ] = js.native
-  val detectSeries: js.Function3[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* iterator */ asyncLib.asyncMod.AsyncBooleanIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncResultCallback[js.Any, js.Any]], 
-    scala.Unit
-  ] = js.native
-  val eachOf: js.Function3[
-    /* obj */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* iterator */ asyncLib.asyncMod.AsyncForEachOfIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.ErrorCallback[js.Any]], 
-    scala.Unit
-  ] = js.native
-  val eachOfLimit: js.Function4[
-    /* obj */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* limit */ scala.Double, 
-    /* iterator */ asyncLib.asyncMod.AsyncForEachOfIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.ErrorCallback[js.Any]], 
-    scala.Unit
-  ] = js.native
-  val eachOfSeries: js.Function3[
-    /* obj */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* iterator */ asyncLib.asyncMod.AsyncForEachOfIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.ErrorCallback[js.Any]], 
-    scala.Unit
-  ] = js.native
-  val eachSeries: js.Function3[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* iterator */ asyncLib.asyncMod.AsyncIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.ErrorCallback[js.Any]], 
-    scala.Unit
-  ] = js.native
-  val everySeries: js.Function3[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* iterator */ asyncLib.asyncMod.AsyncBooleanIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncBooleanResultCallback[js.Any]], 
-    scala.Unit
-  ] = js.native
-  val filterSeries: js.Function3[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* iterator */ asyncLib.asyncMod.AsyncBooleanIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncResultArrayCallback[js.Any, js.Any]], 
-    scala.Unit
-  ] = js.native
-  val find: js.Function3[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* iterator */ asyncLib.asyncMod.AsyncBooleanIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncResultCallback[js.Any, js.Any]], 
-    scala.Unit
-  ] = js.native
-  val findLimit: js.Function4[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* limit */ scala.Double, 
-    /* iterator */ asyncLib.asyncMod.AsyncBooleanIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncResultCallback[js.Any, js.Any]], 
-    scala.Unit
-  ] = js.native
-  val findSeries: js.Function3[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* iterator */ asyncLib.asyncMod.AsyncBooleanIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncResultCallback[js.Any, js.Any]], 
-    scala.Unit
-  ] = js.native
-  val foldl: js.Function4[
-    /* arr */ js.Array[js.Any] | stdLib.IterableIterator[js.Any], 
-    /* memo */ js.Any, 
-    /* iterator */ asyncLib.asyncMod.AsyncMemoIterator[js.Any, js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncResultCallback[js.Any, js.Any]], 
-    scala.Unit
-  ] = js.native
-  val foldr: js.Function4[
-    /* arr */ js.Array[js.Any] | stdLib.IterableIterator[js.Any], 
-    /* memo */ js.Any, 
-    /* iterator */ asyncLib.asyncMod.AsyncMemoIterator[js.Any, js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncResultCallback[js.Any, js.Any]], 
-    scala.Unit
-  ] = js.native
-  val forEach: js.Function3[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* iterator */ asyncLib.asyncMod.AsyncIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.ErrorCallback[js.Any]], 
-    scala.Unit
-  ] = js.native
-  val forEachLimit: js.Function4[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* limit */ scala.Double, 
-    /* iterator */ asyncLib.asyncMod.AsyncIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.ErrorCallback[js.Any]], 
-    scala.Unit
-  ] = js.native
-  val forEachOfSeries: js.Function3[
-    /* obj */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* iterator */ asyncLib.asyncMod.AsyncForEachOfIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.ErrorCallback[js.Any]], 
-    scala.Unit
-  ] = js.native
-  val forEachSeries: js.Function3[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* iterator */ asyncLib.asyncMod.AsyncIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.ErrorCallback[js.Any]], 
-    scala.Unit
-  ] = js.native
-  val inject: js.Function4[
-    /* arr */ js.Array[js.Any] | stdLib.IterableIterator[js.Any], 
-    /* memo */ js.Any, 
-    /* iterator */ asyncLib.asyncMod.AsyncMemoIterator[js.Any, js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncResultCallback[js.Any, js.Any]], 
-    scala.Unit
-  ] = js.native
-  val mapSeries: js.Function3[
-    /* arr */ asyncLib.asyncMod.Dictionary[js.Any], 
-    /* iterator */ asyncLib.asyncMod.AsyncResultIterator[js.Any, js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncResultArrayCallback[js.Any, js.Any]], 
-    scala.Unit
-  ] = js.native
-  val mapValuesSeries: js.Function3[
-    /* obj */ asyncLib.asyncMod.Dictionary[js.Any], 
-    /* iteratee */ js.Function3[
-      /* value */ js.Any, 
-      /* key */ java.lang.String, 
-      /* callback */ asyncLib.asyncMod.AsyncResultCallback[js.Any, js.Any], 
-      scala.Unit
-    ], 
-    /* callback */ asyncLib.asyncMod.AsyncResultObjectCallback[js.Any, js.Any], 
-    scala.Unit
-  ] = js.native
-  val reduceRight: js.Function4[
-    /* arr */ js.Array[js.Any] | stdLib.IterableIterator[js.Any], 
-    /* memo */ js.Any, 
-    /* iterator */ asyncLib.asyncMod.AsyncMemoIterator[js.Any, js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncResultCallback[js.Any, js.Any]], 
-    scala.Unit
-  ] = js.native
-  val reject: js.Function3[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* iterator */ asyncLib.asyncMod.AsyncBooleanIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncResultArrayCallback[js.Any, js.Any]], 
-    scala.Unit
-  ] = js.native
-  val rejectLimit: js.Function4[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* limit */ scala.Double, 
-    /* iterator */ asyncLib.asyncMod.AsyncBooleanIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncResultArrayCallback[js.Any, js.Any]], 
-    scala.Unit
-  ] = js.native
-  val rejectSeries: js.Function3[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* iterator */ asyncLib.asyncMod.AsyncBooleanIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncResultArrayCallback[js.Any, js.Any]], 
-    scala.Unit
-  ] = js.native
-  val select: js.Function3[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* iterator */ asyncLib.asyncMod.AsyncBooleanIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncResultArrayCallback[js.Any, js.Any]], 
-    scala.Unit
-  ] = js.native
-  val selectLimit: js.Function4[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* limit */ scala.Double, 
-    /* iterator */ asyncLib.asyncMod.AsyncBooleanIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncResultArrayCallback[js.Any, js.Any]], 
-    scala.Unit
-  ] = js.native
-  val selectSeries: js.Function3[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* iterator */ asyncLib.asyncMod.AsyncBooleanIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncResultArrayCallback[js.Any, js.Any]], 
-    scala.Unit
-  ] = js.native
-  val setImmediate: js.Function2[/* callback */ js.Function, /* repeated */js.Any, scala.Unit] = js.native
-  val someSeries: js.Function3[
-    /* arr */ asyncLib.asyncMod.IterableCollection[js.Any], 
-    /* iterator */ asyncLib.asyncMod.AsyncBooleanIterator[js.Any, js.Any], 
-    /* callback */ js.UndefOr[asyncLib.asyncMod.AsyncBooleanResultCallback[js.Any]], 
-    scala.Unit
-  ] = js.native
+  val all: asyncLib.Anon_ArrIteratorCallback = js.native
+  val allLimit: asyncLib.Anon_ArrLimit = js.native
+  val allSeries: asyncLib.Anon_ArrIteratorCallback = js.native
+  val any: asyncLib.Anon_ArrIteratorCallback = js.native
+  val anyLimit: asyncLib.Anon_ArrLimit = js.native
+  val anySeries: asyncLib.Anon_ArrIteratorCallback = js.native
+  val concatSeries: asyncLib.Anon_ArrIteratorCallbackT = js.native
+  val detectSeries: asyncLib.Anon_ArrIterator = js.native
+  val eachOf: asyncLib.Anon_Obj = js.native
+  val eachOfLimit: asyncLib.Anon_ObjLimit = js.native
+  val eachOfSeries: asyncLib.Anon_Obj = js.native
+  val eachSeries: asyncLib.Anon_ArrIteratorCallbackTE = js.native
+  val everySeries: asyncLib.Anon_ArrIteratorCallback = js.native
+  val filterSeries: asyncLib.Anon_Arr = js.native
+  val find: asyncLib.Anon_ArrIterator = js.native
+  val findLimit: asyncLib.Anon_ArrLimitIteratorCallback = js.native
+  val findSeries: asyncLib.Anon_ArrIterator = js.native
+  val foldl: asyncLib.Anon_ArrMemo = js.native
+  val foldr: asyncLib.Anon_ArrMemo = js.native
+  val forEach: asyncLib.Anon_ArrIteratorCallbackTE = js.native
+  val forEachLimit: asyncLib.Anon_ArrLimitIterator = js.native
+  val forEachOfSeries: asyncLib.Anon_Obj = js.native
+  val forEachSeries: asyncLib.Anon_ArrIteratorCallbackTE = js.native
+  val inject: asyncLib.Anon_ArrMemo = js.native
+  val mapSeries: asyncLib.Anon_ArrIteratorCallbackTR = js.native
+  val mapValuesSeries: asyncLib.Anon_ObjIteratee = js.native
+  val reduceRight: asyncLib.Anon_ArrMemo = js.native
+  val reject: asyncLib.Anon_Arr = js.native
+  val rejectLimit: asyncLib.Anon_ArrLimitIteratorCallbackT = js.native
+  val rejectSeries: asyncLib.Anon_Arr = js.native
+  val select: asyncLib.Anon_Arr = js.native
+  val selectLimit: asyncLib.Anon_ArrLimitIteratorCallbackT = js.native
+  val selectSeries: asyncLib.Anon_Arr = js.native
+  val setImmediate: js.Function2[/* callback */ js.Function, /* repeated */ js.Any, scala.Unit] = js.native
+  val someSeries: asyncLib.Anon_ArrIteratorCallback = js.native
   @JSName("apply")
   def apply[E](fn: js.Function, args: js.Any*): asyncLib.asyncMod.AsyncFunction[_, E] = js.native
   def applyEach(fns: js.Array[js.Function], argsAndCallback: js.Any*): scala.Unit = js.native
   def applyEachSeries(fns: js.Array[js.Function], argsAndCallback: js.Any*): scala.Unit = js.native
-  def asyncify(fn: js.Function): js.Function1[/* repeated */js.Any, _] = js.native
+  def asyncify(fn: js.Function): js.Function1[/* repeated */ js.Any, _] = js.native
   def auto[R /* <: asyncLib.asyncMod.Dictionary[_] */, E](tasks: asyncLib.asyncMod.AsyncAutoTasks[R, E]): scala.Unit = js.native
   def auto[R /* <: asyncLib.asyncMod.Dictionary[_] */, E](
     tasks: asyncLib.asyncMod.AsyncAutoTasks[R, E],
@@ -307,12 +126,12 @@ object asyncModMembers extends js.Object {
   ): scala.Unit = js.native
   def doUntil[T, E](
     fn: asyncLib.asyncMod.AsyncFunctionEx[T, E],
-    test: js.Function1[/* repeated */T, scala.Boolean],
+    test: js.Function1[/* repeated */ T, scala.Boolean],
     callback: asyncLib.asyncMod.ErrorCallback[E]
   ): scala.Unit = js.native
   def doWhilst[T, E](
     fn: asyncLib.asyncMod.AsyncFunctionEx[T, E],
-    test: js.Function1[/* repeated */T, scala.Boolean],
+    test: js.Function1[/* repeated */ T, scala.Boolean],
     callback: asyncLib.asyncMod.ErrorCallback[E]
   ): scala.Unit = js.native
   def during[E](
@@ -337,7 +156,7 @@ object asyncModMembers extends js.Object {
     iterator: asyncLib.asyncMod.AsyncIterator[T, E],
     callback: asyncLib.asyncMod.ErrorCallback[E]
   ): scala.Unit = js.native
-  def ensureAsync(fn: js.Function1[/* repeated */js.Any, scala.Unit]): js.Function = js.native
+  def ensureAsync(fn: js.Function1[/* repeated */ js.Any, scala.Unit]): js.Function = js.native
   def every[T, E](
     arr: asyncLib.asyncMod.IterableCollection[T],
     iterator: asyncLib.asyncMod.AsyncBooleanIterator[T, E]

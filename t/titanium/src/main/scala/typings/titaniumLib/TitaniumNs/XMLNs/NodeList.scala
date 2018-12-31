@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * A list of <Titanium.XML.Node> objects. Implements the [DOM Level 2 API](https://www.w3.org/TR/DOM-Level-2-Core/core.html#ID-536297177) on Android and iOS.
 		 */
-
 trait NodeList
   extends titaniumLib.TitaniumNs.Proxy {
   /**

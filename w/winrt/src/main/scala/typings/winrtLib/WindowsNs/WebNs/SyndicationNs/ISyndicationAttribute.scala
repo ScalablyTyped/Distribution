@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISyndicationAttribute extends js.Object {
   var name: java.lang.String
   var namespace: java.lang.String

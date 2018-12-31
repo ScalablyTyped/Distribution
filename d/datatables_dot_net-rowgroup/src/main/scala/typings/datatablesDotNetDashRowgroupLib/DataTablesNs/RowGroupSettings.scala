@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * RowGroup extension options
 	 */
-
 trait RowGroupSettings extends js.Object {
   /**
   		 * Set the class name to be used for the grouping rows

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Bordered extends js.Object {
   var bordered: js.UndefOr[scala.Boolean] = js.undefined
   var borderless: js.UndefOr[scala.Boolean] = js.undefined

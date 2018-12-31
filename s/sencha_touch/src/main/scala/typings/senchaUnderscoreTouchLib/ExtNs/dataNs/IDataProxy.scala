@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDataProxy
   extends senchaUnderscoreTouchLib.ExtNs.IEvented {
   /** [Method] Performs a batch of Operations in the order specified by batchOrder

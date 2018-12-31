@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IXTemplateCompiler extends IXTemplateParser {
   /** [Method] This method is called to process lt tpl case action gt
   		* @param action Object

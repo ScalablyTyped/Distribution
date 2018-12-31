@@ -27,20 +27,20 @@ abstract class AdvancedPhotoCapture () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[AdvancedPhotoCapture, OptionalReferencePhotoCapturedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Asynchronously performs an advanced photo capture.
-                   * @return An asynchronous operation that returns an AdvancedCapturedPhoto upon successful completion.
-                   */
+    * Asynchronously performs an advanced photo capture.
+    * @return An asynchronous operation that returns an AdvancedCapturedPhoto upon successful completion.
+    */
   def captureAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[AdvancedCapturedPhoto] = js.native
   /**
-                   * Asynchronously performs an advanced photo capture passing the provided app-defined context object to the result of the operation.
-                   * @param context An app-defined context object that passes context information to the result of the operation.
-                   * @return An asynchronous operation that returns an AdvancedCapturedPhoto upon successful completion.
-                   */
+    * Asynchronously performs an advanced photo capture passing the provided app-defined context object to the result of the operation.
+    * @param context An app-defined context object that passes context information to the result of the operation.
+    * @return An asynchronous operation that returns an AdvancedCapturedPhoto upon successful completion.
+    */
   def captureAsync(context: js.Any): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[AdvancedCapturedPhoto] = js.native
   /**
-                   * Asynchronously releases the AdvancedPhotoCapture object and resources used by the advanced photo capture operation.
-                   * @return An asynchronous action.
-                   */
+    * Asynchronously releases the AdvancedPhotoCapture object and resources used by the advanced photo capture operation.
+    * @return An asynchronous action.
+    */
   def finishAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /** Occurs when all of the frames required for the advanced photo capture have been captured. */
   def onallphotoscaptured(ev: js.Any with winrtDashUwpLib.WindowsNs.WinRTEvent[AdvancedPhotoCapture]): scala.Unit = js.native

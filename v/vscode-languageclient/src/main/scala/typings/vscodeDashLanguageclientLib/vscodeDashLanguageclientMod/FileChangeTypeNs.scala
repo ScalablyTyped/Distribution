@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object FileChangeTypeNs extends js.Object {
   /**
-       * The file got changed.
-       */
+    * The file got changed.
+    */
   val Changed: /* 2 */ scala.Double = js.native
   /**
-       * The file got created.
-       */
+    * The file got created.
+    */
   val Created: /* 1 */ scala.Double = js.native
   /**
-       * The file got deleted.
-       */
+    * The file got deleted.
+    */
   val Deleted: /* 3 */ scala.Double = js.native
 }
 

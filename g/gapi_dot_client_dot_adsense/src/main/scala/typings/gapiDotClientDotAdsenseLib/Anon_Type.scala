@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Type extends js.Object {
   /** The position of the ads relative to the feed entries. */
   var adPosition: js.UndefOr[java.lang.String] = js.undefined

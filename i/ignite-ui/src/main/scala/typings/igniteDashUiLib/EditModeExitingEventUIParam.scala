@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditModeExitingEventUIParam extends js.Object {
   /**
   	 * Get or set a boolean indicating whether the changes will be made to the cell's value when edit mode ends.

@@ -30,9 +30,9 @@ abstract class MobileBroadbandNetwork () extends js.Object {
   /** Gets a list of all UICC apps available on the SIM card that can be used for registration on a mobile network. This list includes UICC apps that are not currently used for registration, but could potentially could be used for registration. */
   var registrationUiccApps: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[MobileBroadbandUiccApp] = js.native
   /**
-                   * Asynchronously retrieves a value indicating whether this network currently supports voice calls.
-                   * @return An asynchronous retrieval operation. On successful completion, contains a value indicating whether the network supports voice calls (if true) or not.
-                   */
+    * Asynchronously retrieves a value indicating whether this network currently supports voice calls.
+    * @return An asynchronous retrieval operation. On successful completion, contains a value indicating whether the network supports voice calls (if true) or not.
+    */
   def getVoiceCallSupportAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
   /** Displays the connect UI for a specific mobile network. */
   def showConnectionUI(): scala.Unit = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IServerOptions extends js.Object {
   var clientTracking: js.UndefOr[scala.Boolean] = js.undefined
   var disableHixie: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISearchBox extends js.Object {
   /**
-       * Sets focus inside the search input box.
-       */
+    * Sets focus inside the search input box.
+    */
   def focus(): scala.Unit
   /**
-       * Returns whether or not the SearchBox has focus
-       */
+    * Returns whether or not the SearchBox has focus
+    */
   def hasFocus(): scala.Boolean
 }
 

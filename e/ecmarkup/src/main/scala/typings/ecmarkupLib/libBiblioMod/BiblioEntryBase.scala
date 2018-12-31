@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BiblioEntryBase extends js.Object {
   var aoid: js.UndefOr[java.lang.String] = js.undefined
   var caption: js.UndefOr[java.lang.String] = js.undefined

@@ -1068,329 +1068,206 @@ object UINsMembers extends js.Object {
   		 * Creates and returns an instance of <Titanium.UI.2DMatrix>.
   		 */
   def create2DMatrix(): Matrix2D = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.2DMatrix>.
-  		 */
   def create2DMatrix(parameters: titaniumLib.MatrixCreationDict): Matrix2D = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.3DMatrix>.
   		 */
   def create3DMatrix(): Matrix3D = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.3DMatrix>.
-  		 */
   def create3DMatrix(parameters: js.Any): Matrix3D = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.ActivityIndicator>.
   		 */
   def createActivityIndicator(): ActivityIndicator = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.ActivityIndicator>.
-  		 */
   def createActivityIndicator(parameters: js.Any): ActivityIndicator = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.AlertDialog>.
   		 */
   def createAlertDialog(): AlertDialog = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.AlertDialog>.
-  		 */
   def createAlertDialog(parameters: js.Any): AlertDialog = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.Animation>.
   		 */
   def createAnimation(): Animation = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.Animation>.
-  		 */
   def createAnimation(parameters: js.Any): Animation = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.AttributedString>.
   		 */
   def createAttributedString(): AttributedString = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.AttributedString>.
-  		 */
   def createAttributedString(parameters: js.Any): AttributedString = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.Button>.
   		 */
   def createButton(): Button = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.Button>.
-  		 */
   def createButton(parameters: js.Any): Button = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.ButtonBar>.
   		 */
   def createButtonBar(): ButtonBar = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.ButtonBar>.
-  		 */
   def createButtonBar(parameters: js.Any): ButtonBar = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.CoverFlowView>.
   		 */
   def createCoverFlowView(): CoverFlowView = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.CoverFlowView>.
-  		 */
   def createCoverFlowView(parameters: js.Any): CoverFlowView = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.DashboardItem>.
   		 */
   def createDashboardItem(): DashboardItem = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.DashboardItem>.
-  		 */
   def createDashboardItem(parameters: js.Any): DashboardItem = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.DashboardView>.
   		 */
   def createDashboardView(): DashboardView = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.DashboardView>.
-  		 */
   def createDashboardView(parameters: js.Any): DashboardView = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.EmailDialog>.
   		 */
   def createEmailDialog(): EmailDialog = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.EmailDialog>.
-  		 */
   def createEmailDialog(parameters: js.Any): EmailDialog = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.ImageView>.
   		 */
   def createImageView(): ImageView = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.ImageView>.
-  		 */
   def createImageView(parameters: js.Any): ImageView = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.Label>.
   		 */
   def createLabel(): Label = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.Label>.
-  		 */
   def createLabel(parameters: js.Any): Label = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.ListSection>.
   		 */
   def createListSection(): ListSection = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.ListSection>.
-  		 */
   def createListSection(parameters: js.Any): ListSection = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.ListView>.
   		 */
   def createListView(): ListView = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.ListView>.
-  		 */
   def createListView(parameters: js.Any): ListView = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.MaskedImage>.
   		 */
   def createMaskedImage(): MaskedImage = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.MaskedImage>.
-  		 */
   def createMaskedImage(parameters: js.Any): MaskedImage = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.Notification>.
   		 */
   def createNotification(): Notification = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.Notification>.
-  		 */
   def createNotification(parameters: js.Any): Notification = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.OptionDialog>.
   		 */
   def createOptionDialog(): OptionDialog = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.OptionDialog>.
-  		 */
   def createOptionDialog(parameters: js.Any): OptionDialog = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.Picker>.
   		 */
   def createPicker(): Picker = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.Picker>.
-  		 */
   def createPicker(parameters: js.Any): Picker = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.PickerColumn>.
   		 */
   def createPickerColumn(): PickerColumn = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.PickerColumn>.
-  		 */
   def createPickerColumn(parameters: js.Any): PickerColumn = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.PickerRow>.
   		 */
   def createPickerRow(): PickerRow = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.PickerRow>.
-  		 */
   def createPickerRow(parameters: js.Any): PickerRow = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.ProgressBar>.
   		 */
   def createProgressBar(): ProgressBar = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.ProgressBar>.
-  		 */
   def createProgressBar(parameters: js.Any): ProgressBar = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.RefreshControl>.
   		 */
   def createRefreshControl(): RefreshControl = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.RefreshControl>.
-  		 */
   def createRefreshControl(parameters: js.Any): RefreshControl = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.ScrollView>.
   		 */
   def createScrollView(): ScrollView = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.ScrollView>.
-  		 */
   def createScrollView(parameters: js.Any): ScrollView = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.ScrollableView>.
   		 */
   def createScrollableView(): ScrollableView = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.ScrollableView>.
-  		 */
   def createScrollableView(parameters: js.Any): ScrollableView = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.SearchBar>.
   		 */
   def createSearchBar(): SearchBar = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.SearchBar>.
-  		 */
   def createSearchBar(parameters: js.Any): SearchBar = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.Slider>.
   		 */
   def createSlider(): Slider = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.Slider>.
-  		 */
   def createSlider(parameters: js.Any): Slider = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.Switch>.
   		 */
   def createSwitch(): Switch = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.Switch>.
-  		 */
   def createSwitch(parameters: js.Any): Switch = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.Tab>.
   		 */
   def createTab(): Tab = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.Tab>.
-  		 */
   def createTab(parameters: js.Any): Tab = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.TabGroup>.
   		 */
   def createTabGroup(): TabGroup = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.TabGroup>.
-  		 */
   def createTabGroup(parameters: js.Any): TabGroup = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.TabbedBar>.
   		 */
   def createTabbedBar(): TabbedBar = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.TabbedBar>.
-  		 */
   def createTabbedBar(parameters: js.Any): TabbedBar = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.TableView>.
   		 */
   def createTableView(): TableView = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.TableView>.
-  		 */
   def createTableView(parameters: js.Any): TableView = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.TableViewRow>.
   		 */
   def createTableViewRow(): TableViewRow = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.TableViewRow>.
-  		 */
   def createTableViewRow(parameters: js.Any): TableViewRow = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.TableViewSection>.
   		 */
   def createTableViewSection(): TableViewSection = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.TableViewSection>.
-  		 */
   def createTableViewSection(parameters: js.Any): TableViewSection = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.TextArea>.
   		 */
   def createTextArea(): TextArea = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.TextArea>.
-  		 */
   def createTextArea(parameters: js.Any): TextArea = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.TextField>.
   		 */
   def createTextField(): TextField = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.TextField>.
-  		 */
   def createTextField(parameters: js.Any): TextField = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.Toolbar>.
   		 */
   def createToolbar(): Toolbar = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.Toolbar>.
-  		 */
   def createToolbar(parameters: js.Any): Toolbar = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.View>.
   		 */
   def createView(): View = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.View>.
-  		 */
   def createView(parameters: js.Any): View = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.WebView>.
   		 */
   def createWebView(): WebView = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.WebView>.
-  		 */
   def createWebView(parameters: js.Any): WebView = js.native
   /**
   		 * Creates and returns an instance of <Titanium.UI.Window>.
   		 */
   def createWindow(): Window = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.UI.Window>.
-  		 */
   def createWindow(parameters: js.Any): Window = js.native
   /**
   		 * Fires a synthesized event to any registered listeners.

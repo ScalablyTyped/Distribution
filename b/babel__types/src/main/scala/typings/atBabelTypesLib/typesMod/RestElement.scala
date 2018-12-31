@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RestElement extends BaseNode {
   var argument: LVal
   var decorators: js.Array[Decorator] | scala.Null

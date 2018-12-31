@@ -19,7 +19,6 @@ trait IHTMLAreasCollection extends js.Object {
   def item(name: js.Any, index: js.Any): js.Any = js.native
   /** @param index [index=-1] */
   def remove(): scala.Unit = js.native
-  /** @param index [index=-1] */
   def remove(index: scala.Double): scala.Unit = js.native
   def tags(tagName: js.Any): js.Any = js.native
 }

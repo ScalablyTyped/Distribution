@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConfigShorthands extends js.Object {
   var `?`: js.Array[_]
   var B: js.Array[_]

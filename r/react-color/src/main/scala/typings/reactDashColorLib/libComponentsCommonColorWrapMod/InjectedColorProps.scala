@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InjectedColorProps extends js.Object {
   var hex: js.UndefOr[java.lang.String] = js.undefined
   var hsl: js.UndefOr[reactDashColorLib.reactDashColorMod.HSLColor] = js.undefined

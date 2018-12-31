@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilterAction extends js.Object {
   /** List of labels to add to the message. */
   var addLabelIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined

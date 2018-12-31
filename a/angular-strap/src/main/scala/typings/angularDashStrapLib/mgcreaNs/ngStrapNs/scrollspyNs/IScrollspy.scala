@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IScrollspy extends js.Object {
   def activate(index: scala.Double): scala.Unit
   def checkOffsets(): scala.Unit

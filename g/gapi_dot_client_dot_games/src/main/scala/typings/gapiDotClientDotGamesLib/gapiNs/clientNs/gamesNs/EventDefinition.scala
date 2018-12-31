@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventDefinition extends js.Object {
   /** A list of events that are a child of this event. */
   var childEvents: js.UndefOr[js.Array[EventChild]] = js.undefined
@@ -22,11 +21,11 @@ trait EventDefinition extends js.Object {
   /** Uniquely identifies the type of this resource. Value is always the fixed string games#eventDefinition. */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The visibility of event being tracked in this definition.
-               * Possible values are:
-               * - "REVEALED": This event should be visible to all users.
-               * - "HIDDEN": This event should only be shown to users that have recorded this event at least once.
-               */
+    * The visibility of event being tracked in this definition.
+    * Possible values are:
+    * - "REVEALED": This event should be visible to all users.
+    * - "HIDDEN": This event should only be shown to users that have recorded this event at least once.
+    */
   var visibility: js.UndefOr[java.lang.String] = js.undefined
 }
 

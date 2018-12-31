@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISplitButton
   extends extjsLib.ExtNs.buttonNs.IButton {
   /** [Config Option] (Function) */

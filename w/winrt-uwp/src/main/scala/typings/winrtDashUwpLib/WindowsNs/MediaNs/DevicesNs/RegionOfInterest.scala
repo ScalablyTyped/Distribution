@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a region of interest which is a rectangular region on the image which is used for functions such as focus and exposure. */
 @JSGlobal("Windows.Media.Devices.RegionOfInterest")
 @js.native
+/** Creates a new instance of the RegionOfInterest control. */
 class RegionOfInterest () extends js.Object {
   /** Gets or sets a value that specifies if auto exposure is enabled. */
   var autoExposureEnabled: scala.Boolean = js.native

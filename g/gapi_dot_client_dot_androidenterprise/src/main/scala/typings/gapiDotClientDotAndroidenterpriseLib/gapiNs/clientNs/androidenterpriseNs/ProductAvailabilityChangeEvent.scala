@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProductAvailabilityChangeEvent extends js.Object {
   /** The new state of the product. This field will always be present. */
   var availabilityStatus: js.UndefOr[java.lang.String] = js.undefined

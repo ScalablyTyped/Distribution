@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LeaderboardEntry extends js.Object {
   /** The localized string for the numerical value of this score. */
   var formattedScore: js.UndefOr[java.lang.String] = js.undefined
@@ -22,12 +21,12 @@ trait LeaderboardEntry extends js.Object {
   /** The numerical value of this score. */
   var scoreValue: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The time span of this high score.
-               * Possible values are:
-               * - "ALL_TIME" - The score is an all-time high score.
-               * - "WEEKLY" - The score is a weekly high score.
-               * - "DAILY" - The score is a daily high score.
-               */
+    * The time span of this high score.
+    * Possible values are:
+    * - "ALL_TIME" - The score is an all-time high score.
+    * - "WEEKLY" - The score is a weekly high score.
+    * - "DAILY" - The score is a daily high score.
+    */
   var timeSpan: js.UndefOr[java.lang.String] = js.undefined
   /** The timestamp at which this score was recorded, in milliseconds since the epoch in UTC. */
   var writeTimestampMillis: js.UndefOr[java.lang.String] = js.undefined

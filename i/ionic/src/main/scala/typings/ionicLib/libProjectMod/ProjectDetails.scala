@@ -22,11 +22,11 @@ class ProjectDetails protected () extends js.Object {
   def processResult(result: ProjectDetailsResult): scala.Unit = js.native
   def readConfig(p: java.lang.String): js.Promise[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   /**
-       * Gather project details from specified configuration.
-       *
-       * This method will always resolve with a result object, with an array of
-       * errors. Use `processResult()` to log warnings & errors.
-       */
+    * Gather project details from specified configuration.
+    *
+    * This method will always resolve with a result object, with an array of
+    * errors. Use `processResult()` to log warnings & errors.
+    */
   def result(): js.Promise[ProjectDetailsResult] = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MemoryInfo extends js.Object {
   /** The amount of available capacity, in bytes. */
   var availableCapacity: chromeDashAppsLib.chromeNs.double

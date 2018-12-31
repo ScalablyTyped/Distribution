@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DownloadFileOptions extends js.Object {
   // iOS only
   var background: js.UndefOr[scala.Boolean] = js.undefined

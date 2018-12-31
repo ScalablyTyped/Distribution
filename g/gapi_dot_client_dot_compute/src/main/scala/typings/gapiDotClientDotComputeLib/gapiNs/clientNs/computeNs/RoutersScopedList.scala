@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RoutersScopedList extends js.Object {
   /** List of routers contained in this scope. */
   var routers: js.UndefOr[js.Array[Router]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NgModule extends js.Object {
   var bootstrap: js.UndefOr[js.Array[Type | js.Array[_]]] = js.undefined
   var declarations: js.UndefOr[js.Array[Type | js.Array[_]]] = js.undefined

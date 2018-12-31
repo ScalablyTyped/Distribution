@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransferProps extends js.Object {
   var body: js.UndefOr[
     js.Function1[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait dtdDefinition
   extends /* outerTagName */ org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[ckeditorLib.ckeditorLibNumbers.`1`]] {
   @JSName("$block")

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgPieChartLegend
   extends /**
 	 * Option for IgPieChartLegend

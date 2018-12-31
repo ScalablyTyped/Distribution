@@ -22,8 +22,8 @@ abstract class AppCaptureAlternateShortcutKeys () extends js.Object {
   /** Gets or sets the toggle game bar shortcut key modifiers. */
   var toggleGameBarKeyModifiers: winrtDashUwpLib.WindowsNs.SystemNs.VirtualKeyModifiers = js.native
   var toggleMicrophoneCaptureKey: js.Any = js.native
-   /* unmapped type */var toggleMicrophoneCaptureKeyModifiers: js.Any = js.native
-   /* unmapped type *//** Gets or sets the toggle recording indicator shortcut key. */
+   /* unmapped type */ var toggleMicrophoneCaptureKeyModifiers: js.Any = js.native
+   /* unmapped type */ /** Gets or sets the toggle recording indicator shortcut key. */
   var toggleRecordingIndicatorKey: winrtDashUwpLib.WindowsNs.SystemNs.VirtualKey = js.native
   /** Gets or sets the toggle recording indicator shortcut key modifiers. */
   var toggleRecordingIndicatorKeyModifiers: winrtDashUwpLib.WindowsNs.SystemNs.VirtualKeyModifiers = js.native

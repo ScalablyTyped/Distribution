@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // API: http://vitaly-t.github.io/spex/errors.SequenceError.html
-
 trait ISequenceError
   extends stdLib.Error {
   var dest: js.Any

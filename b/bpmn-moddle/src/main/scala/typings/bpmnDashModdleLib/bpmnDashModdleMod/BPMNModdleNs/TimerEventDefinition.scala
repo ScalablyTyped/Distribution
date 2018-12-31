@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimerEventDefinition extends BaseElement {
   var timeCycle: Expression
   var timeDate: Expression

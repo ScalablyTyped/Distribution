@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SourceLocation extends js.Object {
   /** Line inside the file. The first line in the file has the value `1`. */
   var line: js.UndefOr[scala.Double] = js.undefined

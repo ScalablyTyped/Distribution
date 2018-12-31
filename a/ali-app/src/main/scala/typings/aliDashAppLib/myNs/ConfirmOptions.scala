@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConfirmOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 确认按钮文字，默认‘取消’ */

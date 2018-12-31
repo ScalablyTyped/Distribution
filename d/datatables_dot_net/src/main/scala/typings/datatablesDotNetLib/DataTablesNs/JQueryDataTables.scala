@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 trait JQueryDataTables
   extends datatablesDotNetLib.JQuery {
   /**
-           * Returns DataTables API instance
-           * Usage:
-           * $( selector ).dataTable().api();
-           */
+    * Returns DataTables API instance
+    * Usage:
+    * $( selector ).dataTable().api();
+    */
   def api(): Api = js.native
 }
 

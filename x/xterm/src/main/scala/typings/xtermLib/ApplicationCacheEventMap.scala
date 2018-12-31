@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ApplicationCacheEventMap extends js.Object {
   var cached: Event
   var checking: Event

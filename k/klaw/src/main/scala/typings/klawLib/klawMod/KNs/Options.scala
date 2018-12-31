@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options
   extends nodeLib.streamMod.internalNs.ReadableOptions {
   var depthLimit: js.UndefOr[scala.Double] = js.undefined

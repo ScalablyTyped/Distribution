@@ -16,10 +16,18 @@ trait SkipOnlyExperiment extends js.Object {
   /** Only execute this test suite */
   def only(desc: java.lang.String, cb: labLib.EmptyCallback): js.Object = js.native
   /** Only execute this test suite */
-  def only(desc: java.lang.String, options: js.Any, cb: labLib.EmptyCallback): js.Object = js.native
+  def only(
+    desc: java.lang.String,
+    options: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ExperimentOptions */ js.Any,
+    cb: labLib.EmptyCallback
+  ): js.Object = js.native
   /** Skip this test suite */
   def skip(desc: java.lang.String, cb: labLib.EmptyCallback): js.Object = js.native
   /** Skip this test suite */
-  def skip(desc: java.lang.String, options: js.Any, cb: labLib.EmptyCallback): js.Object = js.native
+  def skip(
+    desc: java.lang.String,
+    options: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ExperimentOptions */ js.Any,
+    cb: labLib.EmptyCallback
+  ): js.Object = js.native
 }
 

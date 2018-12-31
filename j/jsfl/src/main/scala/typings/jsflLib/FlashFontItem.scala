@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlashFontItem extends js.Object {
   // Specifies whether the Font item is bitmapped.
   var bitmap: scala.Boolean

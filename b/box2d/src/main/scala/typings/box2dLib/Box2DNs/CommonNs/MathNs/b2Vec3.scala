@@ -7,27 +7,15 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Common.Math.b2Vec3")
 @js.native
+/**
+		* Construct using coordinates x,y,z.
+		* @param x x value, default = 0.
+		* @param y y value, default = 0.
+		* @param z z value, default = 0.
+		**/
 class b2Vec3 () extends js.Object {
-  /**
-  		* Construct using coordinates x,y,z.
-  		* @param x x value, default = 0.
-  		* @param y y value, default = 0.
-  		* @param z z value, default = 0.
-  		**/
   def this(x: scala.Double) = this()
-  /**
-  		* Construct using coordinates x,y,z.
-  		* @param x x value, default = 0.
-  		* @param y y value, default = 0.
-  		* @param z z value, default = 0.
-  		**/
   def this(x: scala.Double, y: scala.Double) = this()
-  /**
-  		* Construct using coordinates x,y,z.
-  		* @param x x value, default = 0.
-  		* @param y y value, default = 0.
-  		* @param z z value, default = 0.
-  		**/
   def this(x: scala.Double, y: scala.Double, z: scala.Double) = this()
   /**
   		* x value.
@@ -72,26 +60,8 @@ class b2Vec3 () extends js.Object {
   		* @param z z value, default is 0.
   		**/
   def Set(): scala.Unit = js.native
-  /**
-  		* Sets the vector 3.
-  		* @param x x value, default is 0.
-  		* @param y y value, default is 0.
-  		* @param z z value, default is 0.
-  		**/
   def Set(x: scala.Double): scala.Unit = js.native
-  /**
-  		* Sets the vector 3.
-  		* @param x x value, default is 0.
-  		* @param y y value, default is 0.
-  		* @param z z value, default is 0.
-  		**/
   def Set(x: scala.Double, y: scala.Double): scala.Unit = js.native
-  /**
-  		* Sets the vector 3.
-  		* @param x x value, default is 0.
-  		* @param y y value, default is 0.
-  		* @param z z value, default is 0.
-  		**/
   def Set(x: scala.Double, y: scala.Double, z: scala.Double): scala.Unit = js.native
   /**
   		* Sets the vector 3 from a vector 3.

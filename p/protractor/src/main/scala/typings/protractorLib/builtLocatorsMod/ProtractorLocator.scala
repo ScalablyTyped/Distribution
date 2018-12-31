@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProtractorLocator extends js.Object {
   var column: js.UndefOr[js.Function1[/* index */ java.lang.String, Locator]] = js.undefined
   var row: js.UndefOr[js.Function1[/* index */ scala.Double, Locator]] = js.undefined

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Options that can be used when creating a new pseudo-terminal. */
-
 trait TerminalOptions extends js.Object {
   var cols: js.UndefOr[scala.Double] = js.undefined
   var cwd: js.UndefOr[java.lang.String] = js.undefined

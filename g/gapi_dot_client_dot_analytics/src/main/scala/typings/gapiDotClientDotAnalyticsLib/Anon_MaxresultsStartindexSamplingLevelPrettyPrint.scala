@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MaxresultsStartindexSamplingLevelPrettyPrint extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
   /** A comma-separated list of Analytics dimensions. E.g., 'ga:browser,ga:city'. */
   var dimensions: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * End date for fetching Analytics data. Request can should specify an end date formatted as YYYY-MM-DD, or as a relative date (e.g., today, yesterday, or
-                   * 7daysAgo). The default value is yesterday.
-                   */
+    * End date for fetching Analytics data. Request can should specify an end date formatted as YYYY-MM-DD, or as a relative date (e.g., today, yesterday, or
+    * 7daysAgo). The default value is yesterday.
+    */
   var `end-date`: java.lang.String
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
@@ -37,9 +36,9 @@ trait Anon_MaxresultsStartindexSamplingLevelPrettyPrint extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** The desired sampling level. */
   var samplingLevel: js.UndefOr[java.lang.String] = js.undefined
@@ -48,9 +47,9 @@ trait Anon_MaxresultsStartindexSamplingLevelPrettyPrint extends js.Object {
   /** A comma-separated list of dimensions or metrics that determine the sort order for Analytics data. */
   var sort: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Start date for fetching Analytics data. Requests can specify a start date formatted as YYYY-MM-DD, or as a relative date (e.g., today, yesterday, or
-                   * 7daysAgo). The default value is 7daysAgo.
-                   */
+    * Start date for fetching Analytics data. Requests can specify a start date formatted as YYYY-MM-DD, or as a relative date (e.g., today, yesterday, or
+    * 7daysAgo). The default value is 7daysAgo.
+    */
   var `start-date`: java.lang.String
   /** An index of the first entity to retrieve. Use this parameter as a pagination mechanism along with the max-results parameter. */
   var `start-index`: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FieldApi extends js.Object {
   def getError(): FormError
   def getFieldName(): java.lang.String

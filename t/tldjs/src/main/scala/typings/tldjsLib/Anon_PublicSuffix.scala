@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PublicSuffix extends js.Object {
   var domain: stdLib.ReturnType[js.Function1[/* host */ java.lang.String, java.lang.String | scala.Null]]
   var hostname: stdLib.ReturnType[js.Function1[/* host */ java.lang.String, java.lang.String | scala.Null]]

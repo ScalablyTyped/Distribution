@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeviceRotationRate extends js.Object {
   val alpha: scala.Double | scala.Null
   val beta: scala.Double | scala.Null

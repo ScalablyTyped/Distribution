@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnalyticsParameter extends js.Object {
   var default: js.UndefOr[java.lang.String] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined

@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 trait RevealStatic extends js.Object {
   // States
   def addEventListener(`type`: java.lang.String, listener: js.Function1[/* event */ js.Any, scala.Unit]): scala.Unit = js.native
-  // States
   def addEventListener(
     `type`: java.lang.String,
     listener: js.Function1[/* event */ js.Any, scala.Unit],
@@ -31,7 +30,6 @@ trait RevealStatic extends js.Object {
   def getSlide(x: scala.Double, y: scala.Double): stdLib.Element = js.native
   // Returns the speaker notes for the current slide
   def getSlideNotes(): java.lang.String = js.native
-  // Returns the speaker notes for the current slide
   def getSlideNotes(slide: stdLib.Element): java.lang.String = js.native
   def getState(): js.Any = js.native
   def getTotalSlides(): scala.Double = js.native
@@ -62,11 +60,8 @@ trait RevealStatic extends js.Object {
   def shuffle(): scala.Unit = js.native
   // Navigation
   def slide(indexh: scala.Double): scala.Unit = js.native
-  // Navigation
   def slide(indexh: scala.Double, indexv: scala.Double): scala.Unit = js.native
-  // Navigation
   def slide(indexh: scala.Double, indexv: scala.Double, f: scala.Double): scala.Unit = js.native
-  // Navigation
   def slide(indexh: scala.Double, indexv: scala.Double, f: scala.Double, o: scala.Double): scala.Unit = js.native
   // update slides after dynamic changes
   def sync(): scala.Unit = js.native
@@ -74,7 +69,6 @@ trait RevealStatic extends js.Object {
   def toggleAutoSlide(`override`: scala.Boolean): scala.Unit = js.native
   // Toogle presentation states
   def toggleOverview(): scala.Unit = js.native
-  // Toogle presentation states
   def toggleOverview(`override`: scala.Boolean): scala.Unit = js.native
   def togglePause(): scala.Unit = js.native
   def togglePause(`override`: scala.Boolean): scala.Unit = js.native

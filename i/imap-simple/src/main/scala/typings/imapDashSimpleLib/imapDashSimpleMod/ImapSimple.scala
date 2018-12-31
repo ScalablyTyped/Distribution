@@ -24,21 +24,18 @@ class ImapSimple protected ()
     callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def addFlags(source: java.lang.String, flag: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
-  /** Adds the provided flag(s) to the specified message(s). uid is the uid of the message you want to add the flag to or an array of uids. flag is either a string or array of strings indicating the flags to add. */
   def addFlags(
     source: java.lang.String,
     flag: js.Array[java.lang.String],
     callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def addFlags(source: js.Array[java.lang.String], flag: java.lang.String): js.Promise[scala.Unit] = js.native
-  /** Adds the provided flag(s) to the specified message(s). uid is the uid of the message you want to add the flag to or an array of uids. flag is either a string or array of strings indicating the flags to add. */
   def addFlags(
     source: js.Array[java.lang.String],
     flag: java.lang.String,
     callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def addFlags(source: js.Array[java.lang.String], flag: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
-  /** Adds the provided flag(s) to the specified message(s). uid is the uid of the message you want to add the flag to or an array of uids. flag is either a string or array of strings indicating the flags to add. */
   def addFlags(
     source: js.Array[java.lang.String],
     flag: js.Array[java.lang.String],
@@ -52,21 +49,18 @@ class ImapSimple protected ()
     callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def addMessageLabel(source: java.lang.String, label: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
-  /** Adds the provided label(s) to the specified message(s). source corresponds to a node-imap MessageSource which specifies the messages to be moved. label is either a string or array of strings indicating the labels to add. When completed, either calls the provided callback with signature (err), or resolves the returned promise. */
   def addMessageLabel(
     source: java.lang.String,
     label: js.Array[java.lang.String],
     callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def addMessageLabel(source: js.Array[java.lang.String], label: java.lang.String): js.Promise[scala.Unit] = js.native
-  /** Adds the provided label(s) to the specified message(s). source corresponds to a node-imap MessageSource which specifies the messages to be moved. label is either a string or array of strings indicating the labels to add. When completed, either calls the provided callback with signature (err), or resolves the returned promise. */
   def addMessageLabel(
     source: js.Array[java.lang.String],
     label: java.lang.String,
     callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def addMessageLabel(source: js.Array[java.lang.String], label: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
-  /** Adds the provided label(s) to the specified message(s). source corresponds to a node-imap MessageSource which specifies the messages to be moved. label is either a string or array of strings indicating the labels to add. When completed, either calls the provided callback with signature (err), or resolves the returned promise. */
   def addMessageLabel(
     source: js.Array[java.lang.String],
     label: js.Array[java.lang.String],
@@ -93,21 +87,18 @@ class ImapSimple protected ()
     callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def delFlags(uid: java.lang.String, flag: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
-  /** Removes the provided flag(s) from the specified message(s). uid is the uid of the message you want to remove the flag from or an array of uids. flag is either a string or array of strings indicating the flags to remove. */
   def delFlags(
     uid: java.lang.String,
     flag: js.Array[java.lang.String],
     callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def delFlags(uid: js.Array[java.lang.String], flag: java.lang.String): js.Promise[scala.Unit] = js.native
-  /** Removes the provided flag(s) from the specified message(s). uid is the uid of the message you want to remove the flag from or an array of uids. flag is either a string or array of strings indicating the flags to remove. */
   def delFlags(
     uid: js.Array[java.lang.String],
     flag: java.lang.String,
     callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def delFlags(uid: js.Array[java.lang.String], flag: js.Array[java.lang.String]): js.Promise[scala.Unit] = js.native
-  /** Removes the provided flag(s) from the specified message(s). uid is the uid of the message you want to remove the flag from or an array of uids. flag is either a string or array of strings indicating the flags to remove. */
   def delFlags(
     uid: js.Array[java.lang.String],
     flag: js.Array[java.lang.String],
@@ -139,7 +130,6 @@ class ImapSimple protected ()
     callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
   ): scala.Unit = js.native
   def moveMessage(source: js.Array[java.lang.String], boxName: java.lang.String): js.Promise[scala.Unit] = js.native
-  /** Moves the specified message(s) in the currently open mailbox to another mailbox. source corresponds to a node-imap MessageSource which specifies the messages to be moved. When completed, either calls the provided callback with signature (err), or resolves the returned promise. */
   def moveMessage(
     source: js.Array[java.lang.String],
     boxName: java.lang.String,

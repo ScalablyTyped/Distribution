@@ -13,12 +13,12 @@ trait LocalIdentificationBlock
   var tagClass: scala.Double = js.native
   var tagNumber: scala.Double = js.native
   /**
-           * Convertion for the block to JSON object
-           * 
-           * @returns {JsonLocalBaseBlock}
-           * 
-           * @memberOf LocalBaseBlock
-           */
+    * Convertion for the block to JSON object
+    * 
+    * @returns {JsonLocalBaseBlock}
+    * 
+    * @memberOf LocalBaseBlock
+    */
   /* InferMemberOverrides */
   override def toJSON(): JsonLocalBaseBlock with js.Any = js.native
 }

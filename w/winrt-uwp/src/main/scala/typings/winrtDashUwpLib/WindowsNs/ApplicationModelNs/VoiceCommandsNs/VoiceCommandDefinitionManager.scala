@@ -20,10 +20,10 @@ object VoiceCommandDefinitionManager extends js.Object {
     winrtDashUwpLib.WindowsNs.ApplicationModelNs.VoiceCommandsNs.VoiceCommandDefinition
   ] = js.native
   /**
-                   * Installs the CommandSet elements in a Voice Command Definition (VCD) file.
-                   * @param file An object representing a VCD file.
-                   * @return An asynchronous handler called when the operation is complete.
-                   */
+    * Installs the CommandSet elements in a Voice Command Definition (VCD) file.
+    * @param file An object representing a VCD file.
+    * @return An asynchronous handler called when the operation is complete.
+    */
   def installCommandDefinitionsFromStorageFileAsync(file: winrtDashUwpLib.WindowsNs.StorageNs.StorageFile): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

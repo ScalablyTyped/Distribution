@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_InvalidArg extends js.Object {
   var BadSignature: java.lang.String
   var FileCorrupt: java.lang.String

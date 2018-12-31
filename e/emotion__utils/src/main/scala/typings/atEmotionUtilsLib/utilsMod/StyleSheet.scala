@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StyleSheet extends js.Object {
   var container: stdLib.HTMLElement
   var key: java.lang.String

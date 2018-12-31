@@ -9,14 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object strongDashErrorDashHandlerModMembers extends js.Object {
   /***
-   * Create a new strong error middleware funciton using the given options.
-   * @param options
-   */
+    * Create a new strong error middleware funciton using the given options.
+    * @param options
+    */
   def apply(): expressLib.expressMod.eNs.RequestHandler = js.native
-  /***
-   * Create a new strong error middleware funciton using the given options.
-   * @param options
-   */
   def apply(options: strongDashErrorDashHandlerLib.strongDashErrorDashHandlerMod.StrongErrorHandlerNs.options): expressLib.expressMod.eNs.RequestHandler = js.native
 }
 

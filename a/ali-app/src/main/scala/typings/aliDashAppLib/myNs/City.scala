@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion
 //#region 选择城市 https://docs.alipay.com/mini/api/ui-city
-
 trait City extends js.Object {
   	// 城市名
   var adCode: java.lang.String

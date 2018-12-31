@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RealOptions extends js.Object {
   /** @default true */
   var pure: js.UndefOr[scala.Boolean] = js.undefined

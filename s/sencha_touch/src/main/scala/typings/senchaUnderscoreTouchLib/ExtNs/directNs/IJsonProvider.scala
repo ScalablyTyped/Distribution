@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IJsonProvider extends IProvider {
   /** [Method] Create an event from a response object
   		* @param response Object The XHR response object.

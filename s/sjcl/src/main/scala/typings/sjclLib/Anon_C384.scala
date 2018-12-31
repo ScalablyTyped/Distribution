@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_C384 extends js.Object {
   var c192: sjclLib.sjclMod.sjclNs.SjclEllipticalCurve
   var c224: sjclLib.sjclMod.sjclNs.SjclEllipticalCurve

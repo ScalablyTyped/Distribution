@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDefault extends IAbstract {
   /** [Config Option] (Ext.fx.layout.Card) */
   var animation: js.UndefOr[senchaUnderscoreTouchLib.ExtNs.fxNs.layoutNs.ICard] = js.undefined

@@ -6,9 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /*=============================基础接口================================*/
-
 /*=============================图像接口================================*/
-
 trait IchooseImage extends BaseParams {
   /** 最多可以选择的图片张数，默认9 */
   var count: js.UndefOr[scala.Double] = js.undefined

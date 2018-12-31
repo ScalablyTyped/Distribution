@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * This layout positions nodes in a circular arrangement.
-     * This layout makes use of a LayoutNetwork of
-     * CircularVertexes and CircularEdges that normally
-     * correspond to the Nodes and Links of the Diagram.
-     */
+  * This layout positions nodes in a circular arrangement.
+  * This layout makes use of a LayoutNetwork of
+  * CircularVertexes and CircularEdges that normally
+  * correspond to the Nodes and Links of the Diagram.
+  */
 @js.native
 trait CircularLayout extends Layout {
   /**Returns the coordinates of the center of the laid-out ellipse.*/
@@ -40,12 +40,12 @@ trait CircularLayout extends Layout {
   /**Gets or sets the absolute angle (in degrees) between the first and last node.*/
   var sweepAngle: scala.Double = js.native
   /**
-          * Commit the position and routing of all edge links.
-          */
+    * Commit the position and routing of all edge links.
+    */
   def commitLinks(): scala.Unit = js.native
   /**
-          * Commit the position of all vertex nodes.
-          */
+    * Commit the position of all vertex nodes.
+    */
   def commitNodes(): scala.Unit = js.native
   /**Gets or sets the comparer which sorts the data when .sorting is set to CircularLayout.Ascending or CircularLayout.Descending.*/
   def comparer(a: CircularVertex, b: CircularVertex): scala.Double = js.native

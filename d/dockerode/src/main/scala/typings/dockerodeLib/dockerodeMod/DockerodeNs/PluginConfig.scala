@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PluginConfig extends js.Object {
   var Args: Args
   var Description: java.lang.String

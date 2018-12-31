@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FontInfo extends js.Object {
   var aa: scala.Double
   var bold: scala.Double

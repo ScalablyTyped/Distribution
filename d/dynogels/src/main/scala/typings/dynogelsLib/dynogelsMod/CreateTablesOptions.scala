@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateTablesOptions extends js.Object {
   var readCapacity: js.UndefOr[scala.Double] = js.undefined
   var streamSpecification: js.UndefOr[dynogelsLib.Anon_StreamEnabled] = js.undefined

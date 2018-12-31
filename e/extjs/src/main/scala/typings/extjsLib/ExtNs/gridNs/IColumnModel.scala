@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IColumnModel
   extends extjsLib.ExtNs.IBase {
   /** [Method] Get a leaf level header by index regardless of what the nesting structure is

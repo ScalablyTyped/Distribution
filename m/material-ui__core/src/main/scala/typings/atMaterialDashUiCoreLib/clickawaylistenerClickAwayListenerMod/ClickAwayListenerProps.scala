@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClickAwayListenerProps extends js.Object {
   var children: reactLib.reactMod.ReactNs.ReactNode
   var mouseEvent: js.UndefOr[

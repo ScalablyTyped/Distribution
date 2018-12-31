@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MangleOptions extends js.Object {
   /** Pass true to mangle names visible in scopes where `eval` or with are used. */
   var eval: js.UndefOr[scala.Boolean] = js.undefined

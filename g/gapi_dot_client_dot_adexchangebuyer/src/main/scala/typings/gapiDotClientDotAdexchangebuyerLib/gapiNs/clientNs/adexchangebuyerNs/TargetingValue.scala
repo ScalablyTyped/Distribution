@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TargetingValue extends js.Object {
   /** The creative size value to exclude/include. */
   var creativeSizeValue: js.UndefOr[TargetingValueCreativeSize] = js.undefined

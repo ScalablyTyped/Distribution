@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICalendarCell extends js.Object {
   var badgeTotal: scala.Double
   var date: momentLib.momentMod.momentNs.Moment

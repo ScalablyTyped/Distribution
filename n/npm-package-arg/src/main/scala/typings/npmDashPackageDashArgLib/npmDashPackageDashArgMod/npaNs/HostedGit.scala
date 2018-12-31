@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HostedGit extends js.Object {
   var domain: java.lang.String
   var project: java.lang.String

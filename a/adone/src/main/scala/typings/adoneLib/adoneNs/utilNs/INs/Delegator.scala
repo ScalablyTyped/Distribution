@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Delegator extends js.Object {
   def access(name: java.lang.String): Delegator
   def getter(name: java.lang.String): Delegator

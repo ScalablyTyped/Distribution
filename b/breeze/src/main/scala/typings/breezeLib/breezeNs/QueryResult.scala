@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryResult extends js.Object {
   /** EntityManager that executed the query */
   var entityManager: js.UndefOr[EntityManager] = js.undefined

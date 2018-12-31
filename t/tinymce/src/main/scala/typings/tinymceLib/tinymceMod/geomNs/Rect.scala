@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Rect extends js.Object {
   def clamp(rect: Rect, clampRect: Rect, fixedSize: scala.Boolean): Rect
   def create(x: scala.Double, y: scala.Double, w: scala.Double, h: scala.Double): Rect

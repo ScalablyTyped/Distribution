@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** The basic information to describe a geographic position. */
-
 trait BasicGeoposition extends js.Object {
   /** The altitude of the geographic position in meters. */
   var altitude: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Entry extends js.Object {
   var attachKey: java.lang.String
   var data: js.Any

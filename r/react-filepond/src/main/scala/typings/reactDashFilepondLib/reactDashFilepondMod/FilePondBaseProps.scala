@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilePondBaseProps extends js.Object {
   var acceptedFileTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var allowBrowse: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPropertyValue extends js.Object {
   var isNumericScalar: scala.Boolean
   var `type`: PropertyType

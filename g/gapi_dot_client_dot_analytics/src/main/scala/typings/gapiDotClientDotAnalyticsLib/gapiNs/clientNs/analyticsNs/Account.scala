@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Account extends js.Object {
   /** Child link for an account entry. Points to the list of web properties for this account. */
   var childLink: js.UndefOr[gapiDotClientDotAnalyticsLib.Anon_Type] = js.undefined

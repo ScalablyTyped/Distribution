@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OptionsBase extends js.Object {
                  // a store used to cache and share view models.
   var factory: js.UndefOr[Factory] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStreamSocketInformation extends js.Object {
   var bandwidthStatistics: BandwidthStatistics
   var localAddress: winrtLib.WindowsNs.NetworkingNs.HostName

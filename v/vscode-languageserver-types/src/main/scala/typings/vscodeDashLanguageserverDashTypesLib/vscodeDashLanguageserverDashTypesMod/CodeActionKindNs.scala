@@ -9,58 +9,58 @@ import scala.scalajs.js.annotation._
 @js.native
 object CodeActionKindNs extends js.Object {
   /**
-       * Base kind for quickfix actions: 'quickfix'
-       */
+    * Base kind for quickfix actions: 'quickfix'
+    */
   val QuickFix: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CodeActionKind = js.native
   /**
-       * Base kind for refactoring actions: 'refactor'
-       */
+    * Base kind for refactoring actions: 'refactor'
+    */
   val Refactor: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CodeActionKind = js.native
   /**
-       * Base kind for refactoring extraction actions: 'refactor.extract'
-       *
-       * Example extract actions:
-       *
-       * - Extract method
-       * - Extract function
-       * - Extract variable
-       * - Extract interface from class
-       * - ...
-       */
+    * Base kind for refactoring extraction actions: 'refactor.extract'
+    *
+    * Example extract actions:
+    *
+    * - Extract method
+    * - Extract function
+    * - Extract variable
+    * - Extract interface from class
+    * - ...
+    */
   val RefactorExtract: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CodeActionKind = js.native
   /**
-       * Base kind for refactoring inline actions: 'refactor.inline'
-       *
-       * Example inline actions:
-       *
-       * - Inline function
-       * - Inline variable
-       * - Inline constant
-       * - ...
-       */
+    * Base kind for refactoring inline actions: 'refactor.inline'
+    *
+    * Example inline actions:
+    *
+    * - Inline function
+    * - Inline variable
+    * - Inline constant
+    * - ...
+    */
   val RefactorInline: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CodeActionKind = js.native
   /**
-       * Base kind for refactoring rewrite actions: 'refactor.rewrite'
-       *
-       * Example rewrite actions:
-       *
-       * - Convert JavaScript function to class
-       * - Add or remove parameter
-       * - Encapsulate field
-       * - Make method static
-       * - Move method to base class
-       * - ...
-       */
+    * Base kind for refactoring rewrite actions: 'refactor.rewrite'
+    *
+    * Example rewrite actions:
+    *
+    * - Convert JavaScript function to class
+    * - Add or remove parameter
+    * - Encapsulate field
+    * - Make method static
+    * - Move method to base class
+    * - ...
+    */
   val RefactorRewrite: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CodeActionKind = js.native
   /**
-       * Base kind for source actions: `source`
-       *
-       * Source code actions apply to the entire file.
-       */
+    * Base kind for source actions: `source`
+    *
+    * Source code actions apply to the entire file.
+    */
   val Source: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CodeActionKind = js.native
   /**
-       * Base kind for an organize imports source action: `source.organizeImports`
-       */
+    * Base kind for an organize imports source action: `source.organizeImports`
+    */
   val SourceOrganizeImports: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CodeActionKind = js.native
 }
 

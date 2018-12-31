@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Place extends js.Object {
   /** The physical address of the place. */
   var address: js.UndefOr[gapiDotClientDotPlusLib.Anon_Formatted] = js.undefined

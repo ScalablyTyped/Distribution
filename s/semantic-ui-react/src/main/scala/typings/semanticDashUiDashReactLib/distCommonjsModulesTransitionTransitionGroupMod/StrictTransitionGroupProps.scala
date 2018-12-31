@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictTransitionGroupProps extends js.Object {
   /** Named animation event to used. Must be defined in CSS. */
   var animation: js.UndefOr[semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticTRANSITIONS] = js.undefined

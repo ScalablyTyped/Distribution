@@ -72,7 +72,6 @@ class EntityManager () extends js.Object {
   def fetchEntityByKey(entityKey: EntityKey): js.Promise[EntityByKeyResult] = js.native
    // string | Object
   def fetchEntityByKey(typeName: java.lang.String, keyValue: js.Any): js.Promise[EntityByKeyResult] = js.native
-   // string | Object
   def fetchEntityByKey(typeName: java.lang.String, keyValue: js.Any, checkLocalCacheFirst: scala.Boolean): js.Promise[EntityByKeyResult] = js.native
   def fetchEntityByKey(typeName: java.lang.String, keyValues: js.Array[_]): js.Promise[EntityByKeyResult] = js.native
   def fetchEntityByKey(typeName: java.lang.String, keyValues: js.Array[_], checkLocalCacheFirst: scala.Boolean): js.Promise[EntityByKeyResult] = js.native

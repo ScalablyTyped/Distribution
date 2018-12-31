@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** see http://iamceege.github.io/tooltipster/#positioning */
-
 trait ITooltipPosition extends js.Object {
   /** determines the position of the tooltip and are relative to the viewport */
   var coord: tooltipsterLib.Anon_Top

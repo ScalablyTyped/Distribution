@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TOPRIGHT extends js.Object {
   var BELOW: reactDashMdLib.reactDashMdLibStrings.below
   var BOTTOM_LEFT: reactDashMdLib.reactDashMdLibStrings.bl

@@ -32,7 +32,6 @@ trait DateConstructor extends js.Object {
   def december(): Date = js.native
   /** Compares the first Date object to the second Date object and returns true if they are equal. */
   def equals(date1: Date): scala.Boolean = js.native
-  /** Compares the first Date object to the second Date object and returns true if they are equal. */
   def equals(date1: Date, date2: Date): scala.Boolean = js.native
   def feb(): Date = js.native
   def february(): Date = js.native
@@ -50,9 +49,7 @@ trait DateConstructor extends js.Object {
   def getTimezoneAbbreviation(timezoneOffset: scala.Double, isDayLightSavingsTime: scala.Boolean): java.lang.String = js.native
   /** Gets the timezone offset if given a culture-specific string which is a valid full or abbreviated timezone name and a boolean indicating whether daylight savings time is in effect. */
   def getTimezoneOffset(): scala.Double = js.native
-  /** Gets the timezone offset if given a culture-specific string which is a valid full or abbreviated timezone name and a boolean indicating whether daylight savings time is in effect. */
   def getTimezoneOffset(timezoneAbbreviation: java.lang.String): scala.Double = js.native
-  /** Gets the timezone offset if given a culture-specific string which is a valid full or abbreviated timezone name and a boolean indicating whether daylight savings time is in effect. */
   def getTimezoneOffset(timezoneAbbreviation: java.lang.String, isDayLightSavingsTime: scala.Boolean): scala.Double = js.native
   /** Returns true if the given year is a leap year, false otherwise. */
   def isLeapYear(year: scala.Double): scala.Boolean = js.native

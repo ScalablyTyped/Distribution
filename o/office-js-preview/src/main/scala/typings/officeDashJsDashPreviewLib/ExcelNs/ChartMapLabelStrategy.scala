@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 sealed trait ChartMapLabelStrategy extends js.Object
 
 /**
-     *
-     * Represents the region label strategy of chart series layout, only applicable in RegionMap chart.
-     *
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  *
+  * Represents the region label strategy of chart series layout, only applicable in RegionMap chart.
+  *
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.ChartMapLabelStrategy")
 @js.native
 object ChartMapLabelStrategy extends js.Object {

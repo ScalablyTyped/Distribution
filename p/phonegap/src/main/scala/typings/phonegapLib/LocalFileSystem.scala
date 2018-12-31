@@ -7,11 +7,9 @@ import scala.scalajs.js.annotation._
 
 /*
 interface LocalFileSystem {
-    requestFileSystem: Function;
-    resolveLocalFileSystemURI: Function;
+  requestFileSystem: Function;
+  resolveLocalFileSystemURI: Function;
 }*/
-
-
 trait LocalFileSystem extends js.Object {
   var PERSISTENT: scala.Double
   var TEMPORARY: scala.Double

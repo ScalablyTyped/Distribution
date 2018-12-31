@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadResult extends js.Object {
   // The HTTP response body
   var body: java.lang.String

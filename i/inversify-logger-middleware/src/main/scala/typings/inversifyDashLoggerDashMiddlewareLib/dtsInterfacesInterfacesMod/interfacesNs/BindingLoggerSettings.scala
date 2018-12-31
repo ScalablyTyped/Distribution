@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BindingLoggerSettings extends js.Object {
   var activated: js.UndefOr[scala.Boolean] = js.undefined
   var cache: js.UndefOr[scala.Boolean] = js.undefined

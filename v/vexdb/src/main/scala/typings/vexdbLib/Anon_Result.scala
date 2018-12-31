@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Result[T] extends js.Object {
   var result: js.Array[T]
   var size: scala.Double

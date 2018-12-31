@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TokenResult extends js.Object {
   /**
-       * There was an error. This includes client-side validation errors.
-       */
+    * There was an error. This includes client-side validation errors.
+    */
   var error: js.UndefOr[stripejsLib.stripejsMod.StripeError] = js.undefined
   /**
-       * The generated string that can be used for communication with the backend
-       */
+    * The generated string that can be used for communication with the backend
+    */
   var token: js.UndefOr[Token] = js.undefined
 }
 

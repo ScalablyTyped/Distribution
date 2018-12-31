@@ -6,21 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * NxAttrDimDef...
-     */
-
+  * NxAttrDimDef...
+  */
 trait INxAttrDimDef extends js.Object {
   /**
-           * Expression or field name.
-           */
+    * Expression or field name.
+    */
   var qDef: java.lang.String
   /**
-           * LibraryId for dimension.
-           */
+    * LibraryId for dimension.
+    */
   var qLibraryId: java.lang.String
   /**
-           * Sorting
-           */
+    * Sorting
+    */
   var qSortBy: ISortCriteria
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Message extends js.Object {
   var author: java.lang.String
   var content: java.lang.String

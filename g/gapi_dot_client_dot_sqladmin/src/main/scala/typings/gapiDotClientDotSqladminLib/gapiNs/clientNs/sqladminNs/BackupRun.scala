@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BackupRun extends js.Object {
   /** The description of this run, only applicable to on-demand backups. */
   var description: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IActionCreateAssignment extends js.Object {
   var AssignedTo: IUserOrUserGroupIDExs
   var Deadline: scala.Boolean

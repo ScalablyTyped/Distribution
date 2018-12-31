@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClientSideLoggingObject extends js.Object {
   		// The variable to send the log message through as.
   var client_info: js.UndefOr[ClientSideLoggingClientInfoObject] = js.undefined

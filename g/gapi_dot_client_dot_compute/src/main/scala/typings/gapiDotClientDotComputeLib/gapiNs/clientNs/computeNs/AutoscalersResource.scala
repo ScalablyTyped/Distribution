@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AutoscalersResource extends js.Object {
   /** Retrieves an aggregated list of autoscalers. */
   def aggregatedList(request: gapiDotClientDotComputeLib.Anon_Project): gapiDotClientLib.gapiNs.clientNs.Request[AutoscalerAggregatedList]
@@ -18,9 +17,9 @@ trait AutoscalersResource extends js.Object {
   /** Retrieves a list of autoscalers contained within the specified zone. */
   def list(request: gapiDotClientDotComputeLib.Anon_ProjectMaxResults): gapiDotClientLib.gapiNs.clientNs.Request[AutoscalerList]
   /**
-               * Updates an autoscaler in the specified project using the data included in the request. This method supports PATCH semantics and uses the JSON merge
-               * patch format and processing rules.
-               */
+    * Updates an autoscaler in the specified project using the data included in the request. This method supports PATCH semantics and uses the JSON merge
+    * patch format and processing rules.
+    */
   def patch(request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintAutoscalerQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /** Updates an autoscaler in the specified project using the data included in the request. */
   def update(request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintAutoscalerQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[Operation]

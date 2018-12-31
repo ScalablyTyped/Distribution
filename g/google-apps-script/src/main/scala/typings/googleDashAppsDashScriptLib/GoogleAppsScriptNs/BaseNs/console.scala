@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait console extends js.Object {
   def error(formatOrObject: js.Object, values: js.Object*): scala.Unit
   def info(formatOrObject: js.Object, values: js.Object*): scala.Unit

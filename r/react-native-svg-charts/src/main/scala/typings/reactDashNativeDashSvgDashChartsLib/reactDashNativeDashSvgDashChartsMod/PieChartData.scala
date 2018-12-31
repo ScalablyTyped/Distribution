@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PieChartData extends js.Object {
   var arc: js.UndefOr[reactDashNativeDashSvgDashChartsLib.Anon_OuterRadius] = js.undefined
   var key: java.lang.String | scala.Double

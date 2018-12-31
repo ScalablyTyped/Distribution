@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ToggleButton extends js.Object {
   def addBlurHandler(handler: Handler): ToggleButton
   def addClickHandler(handler: Handler): ToggleButton

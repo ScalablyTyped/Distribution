@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IJsonReader
   extends extjsLib.ExtNs.dataNs.readerNs.IReader {
   /** [Property] (Object) */

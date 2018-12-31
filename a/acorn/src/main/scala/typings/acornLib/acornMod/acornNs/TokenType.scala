@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TokenType extends js.Object {
   var beforeExpr: scala.Boolean
   var binop: scala.Double

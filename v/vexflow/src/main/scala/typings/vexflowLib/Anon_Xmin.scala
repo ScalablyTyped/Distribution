@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Xmin extends js.Object {
   var ha: scala.Double
   var o: js.Array[java.lang.String]

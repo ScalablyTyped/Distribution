@@ -11,7 +11,7 @@ class MethodStubSetter[T, ResolveType, RejectType] protected () extends js.Objec
   def this(methodToStub: tsDashMockitoLib.libMethodToStubMod.MethodToStub) = this()
   var groupIndex: js.Any = js.native
   var methodToStub: js.Any = js.native
-  def thenCall(func: js.Function1[/* repeated */js.Any, _]): this.type = js.native
+  def thenCall(func: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
   def thenReject(rest: RejectType*): this.type = js.native
   def thenResolve(rest: ResolveType*): this.type = js.native
   def thenReturn(rest: T*): this.type = js.native

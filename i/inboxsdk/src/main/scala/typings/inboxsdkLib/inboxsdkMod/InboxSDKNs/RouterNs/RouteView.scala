@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RouteView extends js.Object {
   var destroyed: scala.Boolean
   def getParams(): RouteParams

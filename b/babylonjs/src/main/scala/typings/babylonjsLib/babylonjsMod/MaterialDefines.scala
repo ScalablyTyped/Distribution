@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Manages the defines for the Material
-     */
+  * Manages the defines for the Material
+  */
 @JSImport("babylonjs", "MaterialDefines")
 @js.native
 class MaterialDefines ()

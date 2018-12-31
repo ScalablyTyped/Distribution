@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MessageChannel extends js.Object {
   val port1: MessagePort
   val port2: MessagePort

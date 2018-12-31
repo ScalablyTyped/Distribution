@@ -6,21 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Processing comments or additional requirements
-     */
-
+  * Processing comments or additional requirements
+  */
 trait ProcessResponseProcessNote extends BackboneElement {
   /**
-           * Contains extended information for property 'text'.
-           */
+    * Contains extended information for property 'text'.
+    */
   var _text: js.UndefOr[Element] = js.undefined
   /**
-           * Comment on the processing
-           */
+    * Comment on the processing
+    */
   var text: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * display | print | printoper
-           */
+    * display | print | printoper
+    */
   var `type`: js.UndefOr[CodeableConcept] = js.undefined
 }
 

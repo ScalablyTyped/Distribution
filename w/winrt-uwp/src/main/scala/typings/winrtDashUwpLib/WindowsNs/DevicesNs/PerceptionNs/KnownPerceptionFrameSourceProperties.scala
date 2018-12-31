@@ -15,7 +15,7 @@ abstract class KnownPerceptionFrameSourceProperties () extends js.Object
 @js.native
 object KnownPerceptionFrameSourceProperties extends js.Object {
   var deviceId: js.Any = js.native
-   /* unmapped type *//** Gets a string key used to look up a string property with the device, model, version string for the physical sensor device this frame source represents. */
+   /* unmapped type */ /** Gets a string key used to look up a string property with the device, model, version string for the physical sensor device this frame source represents. */
   var deviceModelVersion: java.lang.String = js.native
   /** Gets a string key used to look up an enumeration property indicating the physical location of the sensor on the Windows device. */
   var enclosureLocation: java.lang.String = js.native

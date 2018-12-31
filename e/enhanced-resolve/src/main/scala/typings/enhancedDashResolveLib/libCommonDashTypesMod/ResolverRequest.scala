@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResolverRequest extends js.Object {
   var __innerRequest: js.UndefOr[java.lang.String] = js.undefined
   var __innerRequest_relativePath: js.UndefOr[java.lang.String] = js.undefined

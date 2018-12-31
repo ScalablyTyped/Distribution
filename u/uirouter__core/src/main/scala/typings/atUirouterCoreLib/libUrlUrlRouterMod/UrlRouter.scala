@@ -18,129 +18,63 @@ class UrlRouter protected () extends js.Object {
   var urlRuleFactory: atUirouterCoreLib.libUrlUrlRuleMod.UrlRuleFactory = js.native
   /** @deprecated use [[UrlService.deferIntercept]]*/
   def deferIntercept(): scala.Unit = js.native
-  /** @deprecated use [[UrlService.deferIntercept]]*/
   def deferIntercept(defer: scala.Boolean): scala.Unit = js.native
   /**
-       * Builds and returns a URL with interpolated parameters
-       *
-       * #### Example:
-       * ```js
-       * matcher = $umf.compile("/about/:person");
-       * params = { person: "bob" };
-       * $bob = $urlRouter.href(matcher, params);
-       * // $bob == "/about/bob";
-       * ```
-       *
-       * @param urlMatcher The [[UrlMatcher]] object which is used as the template of the URL to generate.
-       * @param params An object of parameter values to fill the matcher's required parameters.
-       * @param options Options object. The options are:
-       *
-       * - **`absolute`** - {boolean=false},  If true will generate an absolute url, e.g. "http://www.example.com/fullurl".
-       *
-       * @returns Returns the fully compiled URL, or `null` if `params` fail validation against `urlMatcher`
-       */
+    * Builds and returns a URL with interpolated parameters
+    *
+    * #### Example:
+    * ```js
+    * matcher = $umf.compile("/about/:person");
+    * params = { person: "bob" };
+    * $bob = $urlRouter.href(matcher, params);
+    * // $bob == "/about/bob";
+    * ```
+    *
+    * @param urlMatcher The [[UrlMatcher]] object which is used as the template of the URL to generate.
+    * @param params An object of parameter values to fill the matcher's required parameters.
+    * @param options Options object. The options are:
+    *
+    * - **`absolute`** - {boolean=false},  If true will generate an absolute url, e.g. "http://www.example.com/fullurl".
+    *
+    * @returns Returns the fully compiled URL, or `null` if `params` fail validation against `urlMatcher`
+    */
   def href(urlMatcher: atUirouterCoreLib.libUrlUrlMatcherMod.UrlMatcher): java.lang.String = js.native
-  /**
-       * Builds and returns a URL with interpolated parameters
-       *
-       * #### Example:
-       * ```js
-       * matcher = $umf.compile("/about/:person");
-       * params = { person: "bob" };
-       * $bob = $urlRouter.href(matcher, params);
-       * // $bob == "/about/bob";
-       * ```
-       *
-       * @param urlMatcher The [[UrlMatcher]] object which is used as the template of the URL to generate.
-       * @param params An object of parameter values to fill the matcher's required parameters.
-       * @param options Options object. The options are:
-       *
-       * - **`absolute`** - {boolean=false},  If true will generate an absolute url, e.g. "http://www.example.com/fullurl".
-       *
-       * @returns Returns the fully compiled URL, or `null` if `params` fail validation against `urlMatcher`
-       */
   def href(urlMatcher: atUirouterCoreLib.libUrlUrlMatcherMod.UrlMatcher, params: js.Any): java.lang.String = js.native
-  /**
-       * Builds and returns a URL with interpolated parameters
-       *
-       * #### Example:
-       * ```js
-       * matcher = $umf.compile("/about/:person");
-       * params = { person: "bob" };
-       * $bob = $urlRouter.href(matcher, params);
-       * // $bob == "/about/bob";
-       * ```
-       *
-       * @param urlMatcher The [[UrlMatcher]] object which is used as the template of the URL to generate.
-       * @param params An object of parameter values to fill the matcher's required parameters.
-       * @param options Options object. The options are:
-       *
-       * - **`absolute`** - {boolean=false},  If true will generate an absolute url, e.g. "http://www.example.com/fullurl".
-       *
-       * @returns Returns the fully compiled URL, or `null` if `params` fail validation against `urlMatcher`
-       */
   def href(
     urlMatcher: atUirouterCoreLib.libUrlUrlMatcherMod.UrlMatcher,
     params: js.Any,
     options: atUirouterCoreLib.Anon_Absolute
   ): java.lang.String = js.native
-  /** @deprecated use [[UrlRules.initial]]*/
   def initial(handler: atUirouterCoreLib.libStateInterfaceMod.TargetStateDef): scala.Unit = js.native
-  /** @deprecated use [[UrlRules.initial]]*/
   def initial(handler: atUirouterCoreLib.libStateMod.TargetState): scala.Unit = js.native
-  /** @deprecated use [[UrlRules.initial]]*/
   def initial(handler: atUirouterCoreLib.libUrlInterfaceMod.UrlRuleHandlerFn): scala.Unit = js.native
   /** @deprecated use [[UrlRules.initial]]*/
   def initial(handler: java.lang.String): scala.Unit = js.native
   /** @deprecated use [[UrlService.listen]]*/
   def listen(): js.Function = js.native
-  /** @deprecated use [[UrlService.listen]]*/
   def listen(enabled: scala.Boolean): js.Function = js.native
   /** @deprecated use [[UrlService.match]]*/
   def `match`(urlParts: atUirouterCoreLib.libUrlInterfaceMod.UrlParts): atUirouterCoreLib.libUrlInterfaceMod.MatchResult = js.native
-  /** @deprecated use [[UrlRules.otherwise]]*/
   def otherwise(handler: atUirouterCoreLib.libStateInterfaceMod.TargetStateDef): scala.Unit = js.native
-  /** @deprecated use [[UrlRules.otherwise]]*/
   def otherwise(handler: atUirouterCoreLib.libStateMod.TargetState): scala.Unit = js.native
-  /** @deprecated use [[UrlRules.otherwise]]*/
   def otherwise(handler: atUirouterCoreLib.libUrlInterfaceMod.UrlRuleHandlerFn): scala.Unit = js.native
   /** @deprecated use [[UrlRules.otherwise]]*/
   def otherwise(handler: java.lang.String): scala.Unit = js.native
   /**
-       * Internal API.
-       *
-       * Pushes a new location to the browser history.
-       *
-       * @internalapi
-       * @param urlMatcher
-       * @param params
-       * @param options
-       */
+    * Internal API.
+    *
+    * Pushes a new location to the browser history.
+    *
+    * @internalapi
+    * @param urlMatcher
+    * @param params
+    * @param options
+    */
   def push(urlMatcher: atUirouterCoreLib.libUrlUrlMatcherMod.UrlMatcher): scala.Unit = js.native
-  /**
-       * Internal API.
-       *
-       * Pushes a new location to the browser history.
-       *
-       * @internalapi
-       * @param urlMatcher
-       * @param params
-       * @param options
-       */
   def push(
     urlMatcher: atUirouterCoreLib.libUrlUrlMatcherMod.UrlMatcher,
     params: atUirouterCoreLib.libParamsInterfaceMod.RawParams
   ): scala.Unit = js.native
-  /**
-       * Internal API.
-       *
-       * Pushes a new location to the browser history.
-       *
-       * @internalapi
-       * @param urlMatcher
-       * @param params
-       * @param options
-       */
   def push(
     urlMatcher: atUirouterCoreLib.libUrlUrlMatcherMod.UrlMatcher,
     params: atUirouterCoreLib.libParamsInterfaceMod.RawParams,
@@ -154,7 +88,6 @@ class UrlRouter protected () extends js.Object {
   def rules(): js.Array[atUirouterCoreLib.libUrlInterfaceMod.UrlRule] = js.native
   /** @deprecated use [[UrlRules.sort]]*/
   def sort(): scala.Unit = js.native
-  /** @deprecated use [[UrlRules.sort]]*/
   def sort(
     compareFn: js.Function2[
       /* a */ atUirouterCoreLib.libUrlInterfaceMod.UrlRule, 
@@ -164,40 +97,29 @@ class UrlRouter protected () extends js.Object {
   ): scala.Unit = js.native
   /** @deprecated use [[UrlService.sync]]*/
   def sync(): scala.Unit = js.native
-  /** @deprecated use [[UrlService.sync]]*/
   def sync(evt: js.Any): scala.Unit = js.native
   /**
-       * Internal API.
-       * @internalapi
-       */
+    * Internal API.
+    * @internalapi
+    */
   def update(): scala.Unit = js.native
-  /**
-       * Internal API.
-       * @internalapi
-       */
   def update(read: scala.Boolean): scala.Unit = js.native
-  /** @deprecated use [[UrlRules.when]]*/
   def when(
     matcher: atUirouterCoreLib.libUrlUrlMatcherMod.UrlMatcher,
     handler: atUirouterCoreLib.libUrlInterfaceMod.UrlRuleHandlerFn
   ): atUirouterCoreLib.libUrlInterfaceMod.UrlRule = js.native
-  /** @deprecated use [[UrlRules.when]]*/
   def when(
     matcher: atUirouterCoreLib.libUrlUrlMatcherMod.UrlMatcher,
     handler: atUirouterCoreLib.libUrlInterfaceMod.UrlRuleHandlerFn,
     options: atUirouterCoreLib.Anon_Priority
   ): atUirouterCoreLib.libUrlInterfaceMod.UrlRule = js.native
-  /** @deprecated use [[UrlRules.when]]*/
   def when(matcher: atUirouterCoreLib.libUrlUrlMatcherMod.UrlMatcher, handler: java.lang.String): atUirouterCoreLib.libUrlInterfaceMod.UrlRule = js.native
-  /** @deprecated use [[UrlRules.when]]*/
   def when(
     matcher: atUirouterCoreLib.libUrlUrlMatcherMod.UrlMatcher,
     handler: java.lang.String,
     options: atUirouterCoreLib.Anon_Priority
   ): atUirouterCoreLib.libUrlInterfaceMod.UrlRule = js.native
-  /** @deprecated use [[UrlRules.when]]*/
   def when(matcher: java.lang.String, handler: atUirouterCoreLib.libUrlInterfaceMod.UrlRuleHandlerFn): atUirouterCoreLib.libUrlInterfaceMod.UrlRule = js.native
-  /** @deprecated use [[UrlRules.when]]*/
   def when(
     matcher: java.lang.String,
     handler: atUirouterCoreLib.libUrlInterfaceMod.UrlRuleHandlerFn,
@@ -205,19 +127,14 @@ class UrlRouter protected () extends js.Object {
   ): atUirouterCoreLib.libUrlInterfaceMod.UrlRule = js.native
   /** @deprecated use [[UrlRules.when]]*/
   def when(matcher: java.lang.String, handler: java.lang.String): atUirouterCoreLib.libUrlInterfaceMod.UrlRule = js.native
-  /** @deprecated use [[UrlRules.when]]*/
   def when(matcher: java.lang.String, handler: java.lang.String, options: atUirouterCoreLib.Anon_Priority): atUirouterCoreLib.libUrlInterfaceMod.UrlRule = js.native
-  /** @deprecated use [[UrlRules.when]]*/
   def when(matcher: stdLib.RegExp, handler: atUirouterCoreLib.libUrlInterfaceMod.UrlRuleHandlerFn): atUirouterCoreLib.libUrlInterfaceMod.UrlRule = js.native
-  /** @deprecated use [[UrlRules.when]]*/
   def when(
     matcher: stdLib.RegExp,
     handler: atUirouterCoreLib.libUrlInterfaceMod.UrlRuleHandlerFn,
     options: atUirouterCoreLib.Anon_Priority
   ): atUirouterCoreLib.libUrlInterfaceMod.UrlRule = js.native
-  /** @deprecated use [[UrlRules.when]]*/
   def when(matcher: stdLib.RegExp, handler: java.lang.String): atUirouterCoreLib.libUrlInterfaceMod.UrlRule = js.native
-  /** @deprecated use [[UrlRules.when]]*/
   def when(matcher: stdLib.RegExp, handler: java.lang.String, options: atUirouterCoreLib.Anon_Priority): atUirouterCoreLib.libUrlInterfaceMod.UrlRule = js.native
 }
 

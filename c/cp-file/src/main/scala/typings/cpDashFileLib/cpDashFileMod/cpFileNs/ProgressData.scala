@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProgressData extends js.Object {
   var dest: java.lang.String
   var percent: scala.Double

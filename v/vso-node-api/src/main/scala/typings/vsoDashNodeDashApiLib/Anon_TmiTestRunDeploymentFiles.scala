@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TmiTestRunDeploymentFiles extends js.Object {
   var afnStrip: scala.Double
   var bugFilingData: scala.Double

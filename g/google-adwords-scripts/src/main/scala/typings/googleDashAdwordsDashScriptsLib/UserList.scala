@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // User Lists
-
 trait UserList extends js.Object {
   def close(): scala.Unit
   def excludedAdGroups(): AdWordsSelector[AdGroup]

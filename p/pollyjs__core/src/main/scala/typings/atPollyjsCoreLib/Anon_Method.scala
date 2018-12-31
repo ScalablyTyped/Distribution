@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Method extends js.Object {
   var body: js.UndefOr[scala.Boolean | (atPollyjsCoreLib.coreMod.MatchBy[_, _])] = js.undefined
   var headers: js.UndefOr[

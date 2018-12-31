@@ -9,42 +9,42 @@ import scala.scalajs.js.annotation._
 sealed trait RecipientType extends js.Object
 
 /**
-         * Specifies the type of recipient for an appointment.
-         *
-         * [Api set: Mailbox 1.1]
-         *
-         * @remarks
-         * <table><tr><td>
-         * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
-         * </td><td>Compose or read</td></tr></table>
-         */
+  * Specifies the type of recipient for an appointment.
+  *
+  * [Api set: Mailbox 1.1]
+  *
+  * @remarks
+  * <table><tr><td>
+  * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
+  * </td><td>Compose or read</td></tr></table>
+  */
 @JSGlobal("Office.MailboxEnums.RecipientType")
 @js.native
 object RecipientType extends js.Object {
   /**
-               * Specifies that the recipient is a distribution list containing a list of email addresses.
-               */
+    * Specifies that the recipient is a distribution list containing a list of email addresses.
+    */
   @js.native
   sealed trait DistributionList
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.RecipientType
   
   /**
-               * Specifies that the recipient is an SMTP email address that is not on the Exchange server.
-               */
+    * Specifies that the recipient is an SMTP email address that is not on the Exchange server.
+    */
   @js.native
   sealed trait ExternalUser
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.RecipientType
   
   /**
-               * Specifies that the recipient is not one of the other recipient types.
-               */
+    * Specifies that the recipient is not one of the other recipient types.
+    */
   @js.native
   sealed trait Other
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.RecipientType
   
   /**
-               * Specifies that the recipient is an SMTP email address that is on the Exchange server.
-               */
+    * Specifies that the recipient is an SMTP email address that is on the Exchange server.
+    */
   @js.native
   sealed trait User
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.RecipientType

@@ -12,29 +12,29 @@ sealed trait SubscriptionQueryFlags extends js.Object
 @js.native
 object SubscriptionQueryFlags extends js.Object {
   /**
-       * For a subscription the caller does not have permission to view, return basic (non-confidential) information.
-       */
+    * For a subscription the caller does not have permission to view, return basic (non-confidential) information.
+    */
   @js.native
   sealed trait AlwaysReturnBasicInformation
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionQueryFlags
   
   /**
-       * Include subscriptions marked for deletion.
-       */
+    * Include subscriptions marked for deletion.
+    */
   @js.native
   sealed trait IncludeDeletedSubscriptions
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionQueryFlags
   
   /**
-       * Include the full filter details with each subscription.
-       */
+    * Include the full filter details with each subscription.
+    */
   @js.native
   sealed trait IncludeFilterDetails
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionQueryFlags
   
   /**
-       * Include subscriptions with invalid subscribers.
-       */
+    * Include subscriptions with invalid subscribers.
+    */
   @js.native
   sealed trait IncludeInvalidSubscriptions
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriptionQueryFlags

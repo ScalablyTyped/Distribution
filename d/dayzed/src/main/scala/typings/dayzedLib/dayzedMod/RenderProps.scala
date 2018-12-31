@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RenderProps extends js.Object {
   var calendars: js.Array[Calendar]
   def getBackProps(data: dayzedLib.Anon_Offset): stdLib.Record[java.lang.String, _]

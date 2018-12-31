@@ -14,12 +14,12 @@ class LayerBase protected ()
     ] {
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsLayerLayerDotTypesMod.ILayerProps) = this()
   /**
-       * Helper to stop events from bubbling up out of Layer.
-       */
+    * Helper to stop events from bubbling up out of Layer.
+    */
   var _filterEvent: js.Any = js.native
   /**
-       * rootElement wrapper for setting virtual parent as soon as root element ref is available.
-       */
+    * rootElement wrapper for setting virtual parent as soon as root element ref is available.
+    */
   var _handleRootElementRef: js.Any = js.native
   var _host: js.Any = js.native
   var _layerElement: js.Any = js.native

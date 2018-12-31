@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SNSMessage extends js.Object {
   var Message: java.lang.String
   var MessageAttributes: SNSMessageAttributes

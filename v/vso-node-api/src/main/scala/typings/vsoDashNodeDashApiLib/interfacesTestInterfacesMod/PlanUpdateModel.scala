@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlanUpdateModel extends js.Object {
   var area: ShallowReference
   var automatedTestEnvironment: TestEnvironment

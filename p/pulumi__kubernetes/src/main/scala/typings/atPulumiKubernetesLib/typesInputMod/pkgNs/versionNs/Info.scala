@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Info contains versioning information. how we'll want to distribute that information.
-         */
-
+  * Info contains versioning information. how we'll want to distribute that information.
+  */
 trait Info extends js.Object {
   var buildDate: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
   var compiler: atPulumiPulumiLib.resourceMod.Input[java.lang.String]

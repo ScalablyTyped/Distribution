@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GitRepositoryStats extends js.Object {
   var activePullRequestsCount: scala.Double
   var branchesCount: scala.Double

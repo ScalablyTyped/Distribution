@@ -262,49 +262,21 @@ class Document protected () extends js.Object {
   def CheckConsistency(): scala.Unit = js.native
   def CheckGrammar(): scala.Unit = js.native
   /**
-           * @param boolean [SaveChanges=true]
-           * @param boolean [MakePublic=false]
-           */
+    * @param boolean [SaveChanges=true]
+    * @param boolean [MakePublic=false]
+    */
   def CheckIn(): scala.Unit = js.native
-  /**
-           * @param boolean [SaveChanges=true]
-           * @param boolean [MakePublic=false]
-           */
   def CheckIn(SaveChanges: scala.Boolean): scala.Unit = js.native
-  /**
-           * @param boolean [SaveChanges=true]
-           * @param boolean [MakePublic=false]
-           */
   def CheckIn(SaveChanges: scala.Boolean, Comments: js.Any): scala.Unit = js.native
-  /**
-           * @param boolean [SaveChanges=true]
-           * @param boolean [MakePublic=false]
-           */
   def CheckIn(SaveChanges: scala.Boolean, Comments: js.Any, MakePublic: scala.Boolean): scala.Unit = js.native
   /**
-           * @param boolean [SaveChanges=true]
-           * @param boolean [MakePublic=false]
-           */
+    * @param boolean [SaveChanges=true]
+    * @param boolean [MakePublic=false]
+    */
   def CheckInWithVersion(): scala.Unit = js.native
-  /**
-           * @param boolean [SaveChanges=true]
-           * @param boolean [MakePublic=false]
-           */
   def CheckInWithVersion(SaveChanges: scala.Boolean): scala.Unit = js.native
-  /**
-           * @param boolean [SaveChanges=true]
-           * @param boolean [MakePublic=false]
-           */
   def CheckInWithVersion(SaveChanges: scala.Boolean, Comments: js.Any): scala.Unit = js.native
-  /**
-           * @param boolean [SaveChanges=true]
-           * @param boolean [MakePublic=false]
-           */
   def CheckInWithVersion(SaveChanges: scala.Boolean, Comments: js.Any, MakePublic: scala.Boolean): scala.Unit = js.native
-  /**
-           * @param boolean [SaveChanges=true]
-           * @param boolean [MakePublic=false]
-           */
   def CheckInWithVersion(SaveChanges: scala.Boolean, Comments: js.Any, MakePublic: scala.Boolean, VersionType: js.Any): scala.Unit = js.native
   def CheckNewSmartTags(): scala.Unit = js.native
   def CheckSpelling(
@@ -425,19 +397,19 @@ class Document protected () extends js.Object {
   def EditionOptions(Type: WdEditionType, Option: WdEditionOption, Name: java.lang.String, Format: js.Any): scala.Unit = js.native
   def EndReview(): scala.Unit = js.native
   /**
-           * @param boolean [OpenAfterExport=false]
-           * @param Word.WdExportOptimizeFor [OptimizeFor=0]
-           * @param Word.WdExportRange [Range=0]
-           * @param number [From=1]
-           * @param number [To=1]
-           * @param Word.WdExportItem [Item=0]
-           * @param boolean [IncludeDocProps=false]
-           * @param boolean [KeepIRM=true]
-           * @param Word.WdExportCreateBookmarks [CreateBookmarks=0]
-           * @param boolean [DocStructureTags=true]
-           * @param boolean [BitmapMissingFonts=true]
-           * @param boolean [UseISO19005_1=false]
-           */
+    * @param boolean [OpenAfterExport=false]
+    * @param Word.WdExportOptimizeFor [OptimizeFor=0]
+    * @param Word.WdExportRange [Range=0]
+    * @param number [From=1]
+    * @param number [To=1]
+    * @param Word.WdExportItem [Item=0]
+    * @param boolean [IncludeDocProps=false]
+    * @param boolean [KeepIRM=true]
+    * @param Word.WdExportCreateBookmarks [CreateBookmarks=0]
+    * @param boolean [DocStructureTags=true]
+    * @param boolean [BitmapMissingFonts=true]
+    * @param boolean [UseISO19005_1=false]
+    */
   def ExportAsFixedFormat(
     OutputFileName: java.lang.String,
     ExportFormat: WdExportFormat,
@@ -658,38 +630,22 @@ class Document protected () extends js.Object {
   def SelectContentControlsByTitle(Title: java.lang.String): ContentControls = js.native
   def SelectLinkedControls(Node: activexDashOfficeLib.OfficeNs.CustomXMLNode): ContentControls = js.native
   /**
-           * @param string [PrefixMapping='']
-           * @param boolean [FastSearchSkippingTextNodes=true]
-           */
+    * @param string [PrefixMapping='']
+    * @param boolean [FastSearchSkippingTextNodes=true]
+    */
   def SelectNodes(XPath: java.lang.String): XMLNodes = js.native
-  /**
-           * @param string [PrefixMapping='']
-           * @param boolean [FastSearchSkippingTextNodes=true]
-           */
   def SelectNodes(XPath: java.lang.String, PrefixMapping: java.lang.String): XMLNodes = js.native
-  /**
-           * @param string [PrefixMapping='']
-           * @param boolean [FastSearchSkippingTextNodes=true]
-           */
   def SelectNodes(
     XPath: java.lang.String,
     PrefixMapping: java.lang.String,
     FastSearchSkippingTextNodes: scala.Boolean
   ): XMLNodes = js.native
   /**
-           * @param string [PrefixMapping='']
-           * @param boolean [FastSearchSkippingTextNodes=true]
-           */
+    * @param string [PrefixMapping='']
+    * @param boolean [FastSearchSkippingTextNodes=true]
+    */
   def SelectSingleNode(XPath: java.lang.String): XMLNode = js.native
-  /**
-           * @param string [PrefixMapping='']
-           * @param boolean [FastSearchSkippingTextNodes=true]
-           */
   def SelectSingleNode(XPath: java.lang.String, PrefixMapping: java.lang.String): XMLNode = js.native
-  /**
-           * @param string [PrefixMapping='']
-           * @param boolean [FastSearchSkippingTextNodes=true]
-           */
   def SelectSingleNode(
     XPath: java.lang.String,
     PrefixMapping: java.lang.String,
@@ -697,7 +653,6 @@ class Document protected () extends js.Object {
   ): XMLNode = js.native
   /** @param Office.CustomXMLPart [Stream=0] */
   def SelectUnlinkedControls(): ContentControls = js.native
-  /** @param Office.CustomXMLPart [Stream=0] */
   def SelectUnlinkedControls(Stream: activexDashOfficeLib.OfficeNs.CustomXMLPart): ContentControls = js.native
   def SendFax(Address: java.lang.String): scala.Unit = js.native
   def SendFax(Address: java.lang.String, Subject: js.Any): scala.Unit = js.native
@@ -734,7 +689,6 @@ class Document protected () extends js.Object {
   def ToggleFormsDesign(): scala.Unit = js.native
   /** @param boolean [DataOnly=true] */
   def TransformDocument(Path: java.lang.String): scala.Unit = js.native
-  /** @param boolean [DataOnly=true] */
   def TransformDocument(Path: java.lang.String, DataOnly: scala.Boolean): scala.Unit = js.native
   def Undo(): scala.Boolean = js.native
   def Undo(Times: js.Any): scala.Boolean = js.native

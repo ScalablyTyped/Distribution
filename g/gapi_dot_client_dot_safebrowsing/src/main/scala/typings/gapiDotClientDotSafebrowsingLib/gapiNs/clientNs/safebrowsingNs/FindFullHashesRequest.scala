@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FindFullHashesRequest extends js.Object {
   /**
-               * Client metadata associated with callers of higher-level APIs built on top
-               * of the client's implementation.
-               */
+    * Client metadata associated with callers of higher-level APIs built on top
+    * of the client's implementation.
+    */
   var apiClient: js.UndefOr[ClientInfo] = js.undefined
   /** The client metadata. */
   var client: js.UndefOr[ClientInfo] = js.undefined

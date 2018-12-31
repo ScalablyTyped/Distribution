@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Parameters extends js.Object {
   /** Filters used to match traffic data in your report. */
   var filters: js.UndefOr[js.Array[FilterPair]] = js.undefined

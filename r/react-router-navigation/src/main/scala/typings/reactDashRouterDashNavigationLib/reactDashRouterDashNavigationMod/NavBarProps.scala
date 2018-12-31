@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavBarProps extends js.Object {
   var backButtonTintColor: js.UndefOr[java.lang.String] = js.undefined
   var backButtonTitle: js.UndefOr[java.lang.String] = js.undefined

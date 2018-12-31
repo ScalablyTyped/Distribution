@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents the information associated with a meeting. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMeetingInfo")
 @js.native
+/** Initializes a new instance of the EmailMeetingInfo class. */
 class EmailMeetingInfo () extends js.Object {
   /** Gets or sets a Boolean value indicating whether the proposal of a new time is allowed. */
   var allowNewTimeProposal: scala.Boolean = js.native

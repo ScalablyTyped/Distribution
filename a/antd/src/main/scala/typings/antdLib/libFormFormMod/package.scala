@@ -13,7 +13,7 @@ package object libFormFormMod {
       reactLib.reactMod.ReactNs.ComponentState
     ]
   ]
-  type FormCreateOptionMessagesCallback = js.Function1[/* repeated */js.Any, java.lang.String]
-  type FormLayout = /* import warning: Failed type conversion: TsTypeLookup(TsTypeTuple(List(TsTypeLiteral(TsLiteralString(horizontal)), TsTypeLiteral(TsLiteralString(inline)), TsTypeLiteral(TsLiteralString(vertical)))),Left(TsIdentSimple(number))) */js.Any
+  type FormCreateOptionMessagesCallback = js.Function1[/* repeated */ js.Any, java.lang.String]
+  type FormLayout = /* import warning: ImportType.apply Failed type conversion: ['horizontal', 'inline', 'vertical'][number] */ js.Any
   type ValidateCallback = js.Function2[/* errors */ js.Any, /* values */ js.Any, scala.Unit]
 }

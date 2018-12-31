@@ -16,10 +16,10 @@ abstract class DriverProvider protected ()
 @js.native
 object DriverProvider extends js.Object {
   /**
-       * Quits an array of drivers and returns a q promise instead of a webdriver one
-       *
-       * @param drivers {webdriver.WebDriver[]} The webdriver instances
-       */
+    * Quits an array of drivers and returns a q promise instead of a webdriver one
+    *
+    * @param drivers {webdriver.WebDriver[]} The webdriver instances
+    */
   def quitDrivers(
     provider: protractorLib.builtDriverProvidersDriverProviderMod.DriverProvider,
     drivers: js.Array[seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver]

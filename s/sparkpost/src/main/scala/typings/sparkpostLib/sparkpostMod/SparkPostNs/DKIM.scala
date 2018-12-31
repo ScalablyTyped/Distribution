@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DKIM extends js.Object {
   /** Header fields to be included in the DKIM signature. This field is currently ignored. */
   var headers: js.UndefOr[java.lang.String] = js.undefined

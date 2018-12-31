@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaymentRequestButtonStyleOptions extends js.Object {
   var height: java.lang.String
   var theme: stripeDashV3Lib.stripeDashV3LibStrings.dark | stripeDashV3Lib.stripeDashV3LibStrings.light | stripeDashV3Lib.stripeDashV3LibStrings.`light-outline`

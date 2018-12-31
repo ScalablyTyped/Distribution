@@ -30,7 +30,6 @@ class Mocha () extends js.Object {
   def reporter(reporter: js.Function2[/* runner */ jqueryDotAjaxfileLib.MochaNs.IRunner, /* options */ js.Any, _]): Mocha = js.native
   /** Runs tests and invokes `onComplete()` when finished. */
   def run(): jqueryDotAjaxfileLib.MochaNs.IRunner = js.native
-  /** Runs tests and invokes `onComplete()` when finished. */
   def run(onComplete: js.Function1[/* failures */ scala.Double, scala.Unit]): jqueryDotAjaxfileLib.MochaNs.IRunner = js.native
   /** Setup mocha with the given options. */
   def setup(options: MochaSetupOptions): Mocha = js.native

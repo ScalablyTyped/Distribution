@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITaskPane extends js.Object {
   val Available: scala.Boolean
   val Events: ITaskPaneEvents

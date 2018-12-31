@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VpnTunnelsResource extends js.Object {
   /** Retrieves an aggregated list of VPN tunnels. */
   def aggregatedList(request: gapiDotClientDotComputeLib.Anon_Project): gapiDotClientLib.gapiNs.clientNs.Request[VpnTunnelAggregatedList]

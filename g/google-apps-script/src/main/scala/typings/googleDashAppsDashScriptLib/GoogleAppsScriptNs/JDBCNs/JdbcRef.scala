@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JdbcRef extends js.Object {
   def getBaseTypeName(): java.lang.String
   def getObject(): js.Object

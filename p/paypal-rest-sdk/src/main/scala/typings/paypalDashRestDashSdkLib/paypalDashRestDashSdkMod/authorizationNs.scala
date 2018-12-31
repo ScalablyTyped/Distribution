@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("paypal-rest-sdk", "authorization")
 @js.native
 object authorizationNs extends js.Object {
-  
   trait CaptureRequest extends js.Object {
     var amount: js.UndefOr[paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Amount] = js.undefined
     var invoice_number: js.UndefOr[java.lang.String] = js.undefined

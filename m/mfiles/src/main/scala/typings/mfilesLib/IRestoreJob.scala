@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRestoreJob extends js.Object {
   var BackupFileDifferential: java.lang.String
   var BackupFileFull: java.lang.String

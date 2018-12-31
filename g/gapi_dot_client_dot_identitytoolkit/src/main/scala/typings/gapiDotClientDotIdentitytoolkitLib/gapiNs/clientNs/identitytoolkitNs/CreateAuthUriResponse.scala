@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateAuthUriResponse extends js.Object {
   /** all providers the user has once used to do federated login */
   var allProviders: js.UndefOr[js.Array[java.lang.String]] = js.undefined

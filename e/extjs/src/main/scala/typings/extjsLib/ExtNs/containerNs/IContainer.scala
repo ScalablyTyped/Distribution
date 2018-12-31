@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IContainer extends IAbstractContainer {
   /** [Config Option] (Number/Object) */
   var anchorSize: js.UndefOr[js.Any] = js.undefined

@@ -17,9 +17,7 @@ trait Stats extends js.Object {
   def hasWarnings(): scala.Boolean = js.native
   /** Returns compilation information as a JSON object. */
   def toJson(): js.Any = js.native
-  /** Returns compilation information as a JSON object. */
   def toJson(options: webpackLib.webpackMod.webpackNs.StatsNs.ToJsonOptions): js.Any = js.native
-  /** Returns a formatted string of the compilation information (similar to CLI output). */
   def toString(options: webpackLib.webpackMod.webpackNs.StatsNs.ToStringOptions): java.lang.String = js.native
 }
 

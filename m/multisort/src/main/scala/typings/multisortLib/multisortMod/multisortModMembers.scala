@@ -12,10 +12,10 @@ object multisortModMembers extends js.Object {
     criterions: multisortLib.multisortMod.multisortNs.Criterion[T] | js.Array[multisortLib.multisortMod.multisortNs.Criterion[T]]
   ): multisortLib.multisortMod.multisortNs.SortFunction[T] = js.native
   /**
-   * Sorts given array by given criterions.
-   * @param toSort Array to sort.
-   * @param sortings Sort criterions.
-   */
+    * Sorts given array by given criterions.
+    * @param toSort Array to sort.
+    * @param sortings Sort criterions.
+    */
   def apply[T](
     toSort: js.Array[T],
     criterions: multisortLib.multisortMod.multisortNs.Criterion[T] | js.Array[multisortLib.multisortMod.multisortNs.Criterion[T]]

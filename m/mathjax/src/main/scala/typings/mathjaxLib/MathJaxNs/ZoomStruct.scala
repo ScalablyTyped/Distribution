@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ZoomStruct extends js.Object {
   /*The vertical offset from the top of the span to the baseline of the mathematics*/
   var Y: scala.Double

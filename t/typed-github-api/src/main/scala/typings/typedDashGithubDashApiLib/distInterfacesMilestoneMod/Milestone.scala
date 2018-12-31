@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Milestone extends js.Object {
   var closed: js.UndefOr[momentLib.momentMod.momentNs.Moment] = js.undefined
   var closedIssueCount: scala.Double

@@ -6,45 +6,44 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * the Fragment object contains fragment related info
-     */
-
+  * the Fragment object contains fragment related info
+  */
 trait Fragment extends js.Object {
   /**
-           * continuity count
-           */
+    * continuity count
+    */
   var cc: scala.Double
   /**
-           * fragment duration
-           */
+    * fragment duration
+    */
   var duration: scala.Double
   /**
-           * fragment level identifier
-           */
+    * fragment level identifier
+    */
   var level: scala.Double
   /**
-           * stream start date and time
-           */
+    * stream start date and time
+    */
   var programDateTime: stdLib.Date
   /**
-           * fragment sequence number
-           */
+    * fragment sequence number
+    */
   var sn: scala.Double
   /**
-           * fragment start offset
-           */
+    * fragment start offset
+    */
   var start: scala.Double
   /**
-           * list of tags associated with the fragment
-           */
+    * list of tags associated with the fragment
+    */
   var tagList: js.Array[js.Array[java.lang.String]]
   /**
-           * fragment title
-           */
+    * fragment title
+    */
   var title: java.lang.String
   /**
-           * fragment url
-           */
+    * fragment url
+    */
   var url: java.lang.String
 }
 

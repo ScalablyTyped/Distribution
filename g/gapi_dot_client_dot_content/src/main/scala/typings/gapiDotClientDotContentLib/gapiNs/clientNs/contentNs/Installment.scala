@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Installment extends js.Object {
   /** The amount the buyer has to pay per month. */
   var amount: js.UndefOr[Price] = js.undefined

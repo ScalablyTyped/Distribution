@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait FieldType extends js.Object
 
 /**
-     * Enum is used in aiDataContract to describe how fields are serialized.
-     * For instance: (Fieldtype.Required | FieldType.Array) will mark the field as required and indicate it's an array
-     */
+  * Enum is used in aiDataContract to describe how fields are serialized.
+  * For instance: (Fieldtype.Required | FieldType.Array) will mark the field as required and indicate it's an array
+  */
 @JSGlobal("Microsoft.ApplicationInsights.FieldType")
 @js.native
 object FieldType extends js.Object {

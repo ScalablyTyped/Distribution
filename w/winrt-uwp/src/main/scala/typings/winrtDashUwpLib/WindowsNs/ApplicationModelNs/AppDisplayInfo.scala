@@ -14,10 +14,10 @@ abstract class AppDisplayInfo () extends js.Object {
   /** Gets the application's display name. */
   var displayName: java.lang.String = js.native
   /**
-               * Get the application's logo.
-               * @param size The size of the rectangle in which the logo must fit.
-               * @return The largest logo in your Package.appxmanifest file that will fit in the specified Size.
-               */
+    * Get the application's logo.
+    * @param size The size of the rectangle in which the logo must fit.
+    * @return The largest logo in your Package.appxmanifest file that will fit in the specified Size.
+    */
   def getLogo(size: winrtDashUwpLib.WindowsNs.FoundationNs.Size): winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.RandomAccessStreamReference = js.native
 }
 

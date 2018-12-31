@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateBordersRequest extends js.Object {
   /** The border to put at the bottom of the range. */
   var bottom: js.UndefOr[Border] = js.undefined

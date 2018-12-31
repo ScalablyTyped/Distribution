@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Handler[T /* <: Request */] extends js.Object {
   var attributes: js.Any
   var context: js.Any

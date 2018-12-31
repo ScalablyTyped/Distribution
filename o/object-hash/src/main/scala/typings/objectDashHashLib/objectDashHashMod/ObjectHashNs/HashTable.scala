@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HashTable extends js.Object {
   def add(values: js.Any*): HashTable
   def getCount(key: java.lang.String): scala.Double

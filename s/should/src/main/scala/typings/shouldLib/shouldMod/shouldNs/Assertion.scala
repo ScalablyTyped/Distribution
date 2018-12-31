@@ -72,7 +72,6 @@ trait Assertion extends js.Object {
   def endWith(postfix: java.lang.String, description: java.lang.String): this.type = js.native
   // eql
   def eql(obj: js.Any): this.type = js.native
-  // eql
   def eql(obj: js.Any, description: java.lang.String): this.type = js.native
   def eqls(obj: js.Any): this.type = js.native
   def eqls(obj: js.Any, description: java.lang.String): this.type = js.native
@@ -111,20 +110,15 @@ trait Assertion extends js.Object {
   def lessThan(value: scala.Double, description: java.lang.String): this.type = js.native
   def lessThanOrEqual(value: scala.Double): this.type = js.native
   def lessThanOrEqual(value: scala.Double, description: java.lang.String): this.type = js.native
-  // match
   def `match`(obj: js.Function2[/* value */ js.Any, /* key */ js.Any, scala.Boolean | scala.Unit]): this.type = js.native
-  // match
   def `match`(
     obj: js.Function2[/* value */ js.Any, /* key */ js.Any, scala.Boolean | scala.Unit],
     description: java.lang.String
   ): this.type = js.native
-  // match
   def `match`(obj: js.Object): this.type = js.native
-  // match
   def `match`(obj: js.Object, description: java.lang.String): this.type = js.native
   // match
   def `match`(obj: stdLib.RegExp): this.type = js.native
-  // match
   def `match`(obj: stdLib.RegExp, description: java.lang.String): this.type = js.native
   def matchAny(obj: js.Function2[/* value */ js.Any, /* key */ js.Any, scala.Boolean | scala.Unit]): this.type = js.native
   def matchAny(
@@ -190,7 +184,6 @@ trait Assertion extends js.Object {
   def size(value: scala.Double): this.type = js.native
   //string
   def startWith(prefix: java.lang.String): this.type = js.native
-  //string
   def startWith(prefix: java.lang.String, description: java.lang.String): this.type = js.native
   //error
   def `throw`(): this.type = js.native
@@ -212,7 +205,6 @@ trait Assertion extends js.Object {
   def throwError(properties: js.Object): this.type = js.native
   // bool
   def `true`(): this.type = js.native
-  // bool
   def `true`(message: java.lang.String): this.type = js.native
   def `type`(typeName: java.lang.String): this.type = js.native
   def `type`(typeName: java.lang.String, description: java.lang.String): this.type = js.native

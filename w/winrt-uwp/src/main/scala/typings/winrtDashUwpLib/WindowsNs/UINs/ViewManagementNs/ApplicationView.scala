@@ -22,7 +22,7 @@ abstract class ApplicationView () extends js.Object {
   /** Gets whether the window (app view) fills the entire screen. */
   var isFullScreen: scala.Boolean = js.native
   var isFullScreenMode: js.Any = js.native
-   /* unmapped type *//** Gets whether the window (app view) is on the Windows lock screen. */
+   /* unmapped type */ /** Gets whether the window (app view) is on the Windows lock screen. */
   var isOnLockScreen: scala.Boolean = js.native
   /** Gets or sets whether screen capture is enabled for the window (app view). */
   var isScreenCaptureEnabled: scala.Boolean = js.native
@@ -73,28 +73,28 @@ abstract class ApplicationView () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[ApplicationView, _]
   ): scala.Unit = js.native
   /**
-                   * Sets a value indicating the bounds used by the framework to lay out the contents of the window (app view).
-                   * @param boundsMode The bounds that the framework should use to lay out the contents of the window (app view).
-                   * @return true to confirm that the change to DesiredBoundsMode was successful; otherwise, false.
-                   */
+    * Sets a value indicating the bounds used by the framework to lay out the contents of the window (app view).
+    * @param boundsMode The bounds that the framework should use to lay out the contents of the window (app view).
+    * @return true to confirm that the change to DesiredBoundsMode was successful; otherwise, false.
+    */
   def setDesiredBoundsMode(boundsMode: ApplicationViewBoundsMode): scala.Boolean = js.native
   /**
-                   * Sets the smallest size, in effective pixels, allowed for the app window.
-                   * @param minSize The smallest size allowed for the app window, or a Size whose height and width are both zero to use the system default minimum size.
-                   */
+    * Sets the smallest size, in effective pixels, allowed for the app window.
+    * @param minSize The smallest size allowed for the app window, or a Size whose height and width are both zero to use the system default minimum size.
+    */
   def setPreferredMinSize(minSize: winrtDashUwpLib.WindowsNs.FoundationNs.Size): scala.Unit = js.native
   /** Shows system UI elements, like the title bar, over a full-screen app. */
   def showStandardSystemOverlays(): scala.Unit = js.native
   /**
-                   * Attempts to place the app in full-screen mode.
-                   * @return true if the app is placed in full-screen mode; otherwise, false.
-                   */
+    * Attempts to place the app in full-screen mode.
+    * @return true if the app is placed in full-screen mode; otherwise, false.
+    */
   def tryEnterFullScreenMode(): scala.Boolean = js.native
   /**
-                   * Attempts to change the size of the view to the specified size.
-                   * @param value The new size of the view.
-                   * @return true if the view is resized; otherwise, false.
-                   */
+    * Attempts to change the size of the view to the specified size.
+    * @param value The new size of the view.
+    * @return true if the view is resized; otherwise, false.
+    */
   def tryResizeView(value: winrtDashUwpLib.WindowsNs.FoundationNs.Size): scala.Boolean = js.native
 }
 
@@ -109,17 +109,17 @@ object ApplicationView extends js.Object {
   /** Indicates whether the app terminates when the last window is closed. */
   var terminateAppOnFinalViewClose: scala.Boolean = js.native
   var tryUnsnapToFullscreen: js.Any = js.native
-   /* unmapped type *//** Gets the state of the current window (app view). */
+   /* unmapped type */ /** Gets the state of the current window (app view). */
   var value: winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.ApplicationViewState = js.native
   /**
-                   * Gets the view state and behavior settings of the active application.
-                   * @return An ApplicationView instance that can be used to get and set app display properties.
-                   */
+    * Gets the view state and behavior settings of the active application.
+    * @return An ApplicationView instance that can be used to get and set app display properties.
+    */
   def getForCurrentView(): winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.ApplicationView = js.native
   /**
-                   * Attempts to unsnap a previously snapped app. This call will only succeed when the app is running in the foreground.
-                   * @return true if the app has been successfully unsnapped; false if the unsnap attempt failed.
-                   */
+    * Attempts to unsnap a previously snapped app. This call will only succeed when the app is running in the foreground.
+    * @return true if the app has been successfully unsnapped; false if the unsnap attempt failed.
+    */
   def tryUnsnap(): scala.Boolean = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InfoWindowOptions extends js.Object {
   var enableAutoPan: js.UndefOr[scala.Boolean] = js.undefined
   var enableCloseOnClick: js.UndefOr[scala.Boolean] = js.undefined

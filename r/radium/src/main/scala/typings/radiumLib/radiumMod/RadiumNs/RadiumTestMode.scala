@@ -7,21 +7,20 @@ import scala.scalajs.js.annotation._
 
 // Radium 0.17 Test mode
 /**
-     * Used to control internal Radium state and behavior during tests. It is only available in non-production builds.
-     */
-
+  * Used to control internal Radium state and behavior during tests. It is only available in non-production builds.
+  */
 trait RadiumTestMode extends js.Object {
   /**
-           * Clears the global Radium state, currently only the cache of media query listeners.
-           */
+    * Clears the global Radium state, currently only the cache of media query listeners.
+    */
   def clearState(): scala.Unit
   /**
-           * Disables "test mode"
-           */
+    * Disables "test mode"
+    */
   def disable(): scala.Unit
   /**
-           * Enables "test mode", which doesn’t throw or warn as much. Currently it just doesn’t throw when using addCSS without StyleRoot.
-           */
+    * Enables "test mode", which doesn’t throw or warn as much. Currently it just doesn’t throw when using addCSS without StyleRoot.
+    */
   def enable(): scala.Unit
 }
 

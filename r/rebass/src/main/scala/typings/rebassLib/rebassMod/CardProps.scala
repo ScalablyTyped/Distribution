@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CardProps extends BoxProps {
   var backgroundImage: js.UndefOr[java.lang.String] = js.undefined
   var backgroundPosition: js.UndefOr[java.lang.String] = js.undefined

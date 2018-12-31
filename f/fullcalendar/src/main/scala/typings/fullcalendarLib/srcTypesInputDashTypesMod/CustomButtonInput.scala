@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomButtonInput extends js.Object {
   var bootstrapFontAwesome: js.UndefOr[java.lang.String] = js.undefined
   var bootstrapGlyphicon: js.UndefOr[java.lang.String] = js.undefined

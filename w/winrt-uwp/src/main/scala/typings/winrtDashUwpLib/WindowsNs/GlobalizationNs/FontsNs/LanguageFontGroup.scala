@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class LanguageFontGroup protected () extends js.Object {
   /**
-                   * Creates a LanguageFontGroup object for a given language or script.
-                   * @param languageTag A BCP-47 language tag, or an ISO 15924 script identifier.
-                   */
+    * Creates a LanguageFontGroup object for a given language or script.
+    * @param languageTag A BCP-47 language tag, or an ISO 15924 script identifier.
+    */
   def this(languageTag: java.lang.String) = this()
   /** Gets a font that is recommended as an additional option for use in documents beyond the recommendations provided by DocumentHeadingFont , ModernDocumentFont and TraditionalDocumentFont . */
   var documentAlternate1Font: LanguageFont = js.native

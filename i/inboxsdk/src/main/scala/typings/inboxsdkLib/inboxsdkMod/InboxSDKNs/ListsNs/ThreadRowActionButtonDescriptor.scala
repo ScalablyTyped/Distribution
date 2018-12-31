@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThreadRowActionButtonDescriptor extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var onClick: js.UndefOr[js.Function1[/* event */ js.Any, scala.Unit]] = js.undefined

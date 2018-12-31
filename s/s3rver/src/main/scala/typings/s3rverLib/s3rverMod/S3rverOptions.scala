@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait S3rverOptions extends js.Object {
   var directory: java.lang.String
   var errorDocument: js.UndefOr[java.lang.String] = js.undefined

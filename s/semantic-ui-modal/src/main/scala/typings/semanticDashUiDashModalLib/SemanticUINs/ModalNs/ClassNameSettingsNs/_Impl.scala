@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default 'active'
-                   */
+    * @default 'active'
+    */
   var active: java.lang.String
   /**
-                   * @default 'scrolling'
-                   */
+    * @default 'scrolling'
+    */
   var scrolling: java.lang.String
 }
 

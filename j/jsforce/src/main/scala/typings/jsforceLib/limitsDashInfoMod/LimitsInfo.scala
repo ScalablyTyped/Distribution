@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LimitsInfo extends js.Object {
   var ConcurrentAsyncGetReportInstances: Limit
   var ConcurrentSyncReportRuns: Limit

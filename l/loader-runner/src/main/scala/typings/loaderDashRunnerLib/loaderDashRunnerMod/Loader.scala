@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Loader extends js.Object {
   var data: js.Any
   var normal: scala.Null | (js.Function1[/* request */ java.lang.String, java.lang.String])

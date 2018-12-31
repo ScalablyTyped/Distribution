@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion
 //#region 交互反馈 https://docs.alipay.com/mini/api/ui-feedback
-
 trait AlertOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 按钮文字，默认确定 */

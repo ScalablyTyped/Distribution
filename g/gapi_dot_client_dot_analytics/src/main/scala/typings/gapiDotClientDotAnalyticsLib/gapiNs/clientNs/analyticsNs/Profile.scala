@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Profile extends js.Object {
   /** Account ID to which this view (profile) belongs. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined
@@ -16,10 +15,10 @@ trait Profile extends js.Object {
   /** Time this view (profile) was created. */
   var created: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The currency type associated with this view (profile), defaults to USD. The supported values are:
-               * USD, JPY, EUR, GBP, AUD, KRW, BRL, CNY, DKK, RUB, SEK, NOK, PLN, TRY, TWD, HKD, THB, IDR, ARS, MXN, VND, PHP, INR, CHF, CAD, CZK, NZD, HUF, BGN, LTL,
-               * ZAR, UAH, AED, BOB, CLP, COP, EGP, HRK, ILS, MAD, MYR, PEN, PKR, RON, RSD, SAR, SGD, VEF, LVL
-               */
+    * The currency type associated with this view (profile), defaults to USD. The supported values are:
+    * USD, JPY, EUR, GBP, AUD, KRW, BRL, CNY, DKK, RUB, SEK, NOK, PLN, TRY, TWD, HKD, THB, IDR, ARS, MXN, VND, PHP, INR, CHF, CAD, CZK, NZD, HUF, BGN, LTL,
+    * ZAR, UAH, AED, BOB, CLP, COP, EGP, HRK, ILS, MAD, MYR, PEN, PKR, RON, RSD, SAR, SGD, VEF, LVL
+    */
   var currency: js.UndefOr[java.lang.String] = js.undefined
   /** Default page for this view (profile). */
   var defaultPage: js.UndefOr[java.lang.String] = js.undefined

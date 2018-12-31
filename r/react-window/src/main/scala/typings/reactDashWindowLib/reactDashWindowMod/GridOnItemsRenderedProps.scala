@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridOnItemsRenderedProps extends js.Object {
   var overscanColumnStartIndex: scala.Double
   var overscanColumnStopIndex: scala.Double

@@ -25,11 +25,9 @@ class IHTMLStyleSheet protected () extends js.Object {
   val `type`: java.lang.String = js.native
   /** @param lIndex [lIndex=-1] */
   def addImport(bstrURL: java.lang.String): scala.Double = js.native
-  /** @param lIndex [lIndex=-1] */
   def addImport(bstrURL: java.lang.String, lIndex: scala.Double): scala.Double = js.native
   /** @param lIndex [lIndex=-1] */
   def addRule(bstrSelector: java.lang.String, bstrStyle: java.lang.String): scala.Double = js.native
-  /** @param lIndex [lIndex=-1] */
   def addRule(bstrSelector: java.lang.String, bstrStyle: java.lang.String, lIndex: scala.Double): scala.Double = js.native
   def imports(pvarIndex: js.Any): js.Any = js.native
   def removeImport(lIndex: scala.Double): scala.Unit = js.native

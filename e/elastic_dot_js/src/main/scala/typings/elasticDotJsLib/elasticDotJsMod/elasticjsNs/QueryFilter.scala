@@ -5,31 +5,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryFilter extends Filter {
   /*
-       The type of ejs object.  For internal use only.
-       */
+    The type of ejs object.  For internal use only.
+    */
   def _type(): java.lang.String
   /*
-       Enable or disable caching of the filter
-       */
+    Enable or disable caching of the filter
+    */
   def cache(trueFalse: scala.Boolean): QueryFilter
   /*
-       Sets the cache key.
-       */
+    Sets the cache key.
+    */
   def cacheKey(key: java.lang.String): QueryFilter
   /*
-       Sets the filter name.
-       */
+    Sets the filter name.
+    */
   def name(name: java.lang.String): QueryFilter
   /*
-       Sets the query
-       */
+    Sets the query
+    */
   def query(q: js.Object): QueryFilter
   /*
-       Returns the filter object.
-       */
+    Returns the filter object.
+    */
   def toJSON(): QueryFilter
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditorOptions extends js.Object {
   var change: js.UndefOr[js.Function1[/* e */ EditorEvent, scala.Unit]] = js.undefined
   var deserialization: js.UndefOr[EditorDeserialization] = js.undefined

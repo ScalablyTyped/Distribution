@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AssociationSession extends js.Object {
   /** Hosted account id of the associated publisher after association. Present if status is ACCEPTED. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined

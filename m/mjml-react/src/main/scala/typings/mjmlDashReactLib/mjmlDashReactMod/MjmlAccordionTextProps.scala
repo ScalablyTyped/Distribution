@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MjmlAccordionTextProps extends js.Object {
   var backgroundColor: js.UndefOr[csstypeLib.csstypeMod.BackgroundColorProperty] = js.undefined
   var color: js.UndefOr[csstypeLib.csstypeMod.ColorProperty] = js.undefined

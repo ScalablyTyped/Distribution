@@ -12,15 +12,15 @@ sealed trait ExtensionVersionFlags extends js.Object
 @js.native
 object ExtensionVersionFlags extends js.Object {
   /**
-       * No flags exist for this version.
-       */
+    * No flags exist for this version.
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ExtensionVersionFlags
   
   /**
-       * The Validated flag for a version means the extension version has passed validation and can be used..
-       */
+    * The Validated flag for a version means the extension version has passed validation and can be used..
+    */
   @js.native
   sealed trait Validated
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.ExtensionVersionFlags

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GPXOptions extends js.Object {
   var async: js.UndefOr[scala.Boolean] = js.undefined
   var gpx_options: js.UndefOr[leafletDashGpxLib.Anon_ParseElements] = js.undefined

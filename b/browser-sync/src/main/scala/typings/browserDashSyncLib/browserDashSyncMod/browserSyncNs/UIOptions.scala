@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UIOptions extends js.Object {
   /** set the default port */
   var port: js.UndefOr[scala.Double] = js.undefined

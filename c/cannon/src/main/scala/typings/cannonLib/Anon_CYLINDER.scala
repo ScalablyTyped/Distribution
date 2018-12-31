@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CYLINDER extends js.Object {
   var BOX: scala.Double
   var COMPOUND: scala.Double

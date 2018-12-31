@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseViewportProps extends js.Object {
   var height: scala.Double
   var latitude: scala.Double

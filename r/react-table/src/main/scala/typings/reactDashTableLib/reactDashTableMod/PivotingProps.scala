@@ -10,10 +10,10 @@ trait PivotingProps extends js.Object {
   /** Default: _aggregated */
   var aggregatedKey: java.lang.String = js.native
   /**
-       * Default: {} - Pivoting State Overrides (see Fully Controlled Component section)
-       * @example { 4: true }
-       * @example { 5: { 9: true }, 10: true }
-       */
+    * Default: {} - Pivoting State Overrides (see Fully Controlled Component section)
+    * @example { 4: true }
+    * @example { 5: { 9: true }, 10: true }
+    */
   var expandedRows: ExpandedRows = js.native
   /** Default: _groupedByPivot */
   var groupedByPivotKey: java.lang.String = js.native
@@ -38,7 +38,6 @@ trait PivotingProps extends js.Object {
   var subRowsKey: java.lang.String = js.native
   /** Default: ??? - Pivoting State Callbacks */
   def onExpandRow(): scala.Unit = js.native
-  /** Default: ??? - Pivoting State Callbacks */
   def onExpandRow(value: js.Any): scala.Unit = js.native
 }
 

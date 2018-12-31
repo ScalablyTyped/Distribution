@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IComparison
   extends /* item */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var __count: js.UndefOr[scala.Double] = js.undefined

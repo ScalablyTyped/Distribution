@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenStartTimeLocationPageSize extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -19,9 +18,9 @@ trait Anon_AccesstokenStartTimeLocationPageSize extends js.Object {
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Return only messages with timestamps < end_time. The default is now
-                   * (i.e. return up to the latest messages available).
-                   */
+    * Return only messages with timestamps < end_time. The default is now
+    * (i.e. return up to the latest messages available).
+    */
   var endTime: js.UndefOr[java.lang.String] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
@@ -36,16 +35,16 @@ trait Anon_AccesstokenStartTimeLocationPageSize extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * If specified, determines the maximum number of messages to
-                   * return.  If unspecified, the service may choose an appropriate
-                   * default, or may return an arbitrarily large number of results.
-                   */
+    * If specified, determines the maximum number of messages to
+    * return.  If unspecified, the service may choose an appropriate
+    * default, or may return an arbitrarily large number of results.
+    */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * If supplied, this should be the value of next_page_token returned
-                   * by an earlier call. This will cause the next page of results to
-                   * be returned.
-                   */
+    * If supplied, this should be the value of next_page_token returned
+    * by an earlier call. This will cause the next page of results to
+    * be returned.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined
@@ -56,9 +55,9 @@ trait Anon_AccesstokenStartTimeLocationPageSize extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * If specified, return only messages with timestamps >= start_time.
-                   * The default is the job creation time (i.e. beginning of messages).
-                   */
+    * If specified, return only messages with timestamps >= start_time.
+    * The default is the job creation time (i.e. beginning of messages).
+    */
   var startTime: js.UndefOr[java.lang.String] = js.undefined
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VideoData extends js.Object {
   /** 选定视频的时间长度 */
   var duration: scala.Double

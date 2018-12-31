@@ -30,15 +30,6 @@ trait IgDialogMethods extends js.Object {
   	 * @param e Browser event: internal use only.
   	 */
   def close(): js.Object = js.native
-  /**
-  	 * Closes the dialog if it is opened.
-  	 * Notes:
-  	 * 1. If the state of the dialog changes, then stateChanging and stateChanged events are raised.
-  	 * 2. That method does not change minimized or maximized state of the dialog.
-  	 * It means that method "open" will open the dialog and keep previous minimized or maximized state.
-  	 *
-  	 * @param e Browser event: internal use only.
-  	 */
   def close(e: js.Object): js.Object = js.native
   /**
   	 * Retrieves the igDialog content container or sets its content to be the new content provided.
@@ -46,11 +37,6 @@ trait IgDialogMethods extends js.Object {
   	 * @param newContent The new html content provided as a string. If the parameter is provided then the method acts as a setter.
   	 */
   def content(): js.Object = js.native
-  /**
-  	 * Retrieves the igDialog content container or sets its content to be the new content provided.
-  	 *
-  	 * @param newContent The new html content provided as a string. If the parameter is provided then the method acts as a setter.
-  	 */
   def content(newContent: java.lang.String): js.Object = js.native
   /**
   	 * Destroys the igDialog and moves the target element to its original parent.
@@ -84,11 +70,6 @@ trait IgDialogMethods extends js.Object {
   	 * @param e Original event of browser.
   	 */
   def moveToTop(): js.Object = js.native
-  /**
-  	 * Moves a not modal dialog to the top.
-  	 *
-  	 * @param e Original event of browser.
-  	 */
   def moveToTop(e: js.Object): js.Object = js.native
   /**
   	 * Opens the dialog if it is closed. Notes:
@@ -117,12 +98,6 @@ trait IgDialogMethods extends js.Object {
   	 * @param state New state.
   	 */
   def state(): java.lang.String = js.native
-  /**
-  	 * Gets/Sets the state of the editor.
-  	 * Note: If the state of the dialog changes, then stateChanging and stateChanged events are raised.
-  	 *
-  	 * @param state New state.
-  	 */
   def state(state: java.lang.String): java.lang.String = js.native
   /**
   	 * Unpins the dialog if it is pinned.

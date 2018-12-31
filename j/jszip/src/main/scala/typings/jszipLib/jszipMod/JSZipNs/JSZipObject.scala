@@ -17,19 +17,17 @@ trait JSZipObject extends js.Object {
   /** The UNIX permissions of the file, if any. */
   var unixPermissions: scala.Double | java.lang.String | scala.Null = js.native
   /**
-           * Prepare the content in the asked type.
-           * @param type the type of the result.
-           * @param onUpdate a function to call on each internal update.
-           * @return Promise the promise of the result.
-           */
-  def async[T /* <: OutputType */](`type`: T): js.Promise[_] = js.native
-  /**
-           * Prepare the content in the asked type.
-           * @param type the type of the result.
-           * @param onUpdate a function to call on each internal update.
-           * @return Promise the promise of the result.
-           */
-  def async[T /* <: OutputType */](`type`: T, onUpdate: jszipLib.OnUpdateCallback): js.Promise[_] = js.native
+    * Prepare the content in the asked type.
+    * @param type the type of the result.
+    * @param onUpdate a function to call on each internal update.
+    * @return Promise the promise of the result.
+    */
+  def async[T /* <: OutputType */](`type`: T): js.Promise[
+    /* import warning: ImportType.apply Failed type conversion: jszip.jszip.OutputByType[T] */ js.Any
+  ] = js.native
+  def async[T /* <: OutputType */](`type`: T, onUpdate: jszipLib.OnUpdateCallback): js.Promise[
+    /* import warning: ImportType.apply Failed type conversion: jszip.jszip.OutputByType[T] */ js.Any
+  ] = js.native
   def nodeStream(): nodeLib.NodeJSNs.ReadableStream = js.native
   @JSName("nodeStream")
   def nodeStream_nodestream(`type`: jszipLib.jszipLibStrings.nodestream): nodeLib.NodeJSNs.ReadableStream = js.native

@@ -9,24 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class Code protected () extends js.Object {
   /**
-       * @param code A string or function.
-       * @param scope An optional scope for the function.
-       */
+    * @param code A string or function.
+    * @param scope An optional scope for the function.
+    */
   def this(code: java.lang.String) = this()
-  /**
-       * @param code A string or function.
-       * @param scope An optional scope for the function.
-       */
   def this(code: js.Function) = this()
-  /**
-       * @param code A string or function.
-       * @param scope An optional scope for the function.
-       */
   def this(code: java.lang.String, scope: js.Any) = this()
-  /**
-       * @param code A string or function.
-       * @param scope An optional scope for the function.
-       */
   def this(code: js.Function, scope: js.Any) = this()
   val code: java.lang.String | js.Function = js.native
   val scope: js.UndefOr[js.Any] = js.native

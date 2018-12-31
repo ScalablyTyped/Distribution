@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextMetrics extends js.Object {
   val actualBoundingBoxAscent: scala.Double
   val actualBoundingBoxDescent: scala.Double
@@ -18,8 +17,8 @@ trait TextMetrics extends js.Object {
   val fontBoundingBoxDescent: scala.Double
   val hangingBaseline: scala.Double
   /**
-       * Returns the measurement described below.
-       */
+    * Returns the measurement described below.
+    */
   val ideographicBaseline: scala.Double
   val width: scala.Double
 }

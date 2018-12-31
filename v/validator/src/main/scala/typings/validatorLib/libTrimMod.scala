@@ -8,5 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("validator/lib/trim", JSImport.Namespace)
 @js.native
 object libTrimMod
-  extends org.scalablytyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[
+      js.Function2[
+        /* input */ java.lang.String, 
+        /* chars */ js.UndefOr[java.lang.String], 
+        java.lang.String
+      ]
+    ]
 

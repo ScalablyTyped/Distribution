@@ -5,35 +5,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrderShipment extends js.Object {
   /**
-               * The carrier handling the shipment.
-               *
-               * Acceptable values are:
-               * - "gsx"
-               * - "ups"
-               * - "united parcel service"
-               * - "usps"
-               * - "united states postal service"
-               * - "fedex"
-               * - "dhl"
-               * - "ecourier"
-               * - "cxt"
-               * - "google"
-               * - "on trac"
-               * - "ontrac"
-               * - "on-trac"
-               * - "on_trac"
-               * - "delvic"
-               * - "dynamex"
-               * - "lasership"
-               * - "smartpost"
-               * - "fedex smartpost"
-               * - "mpx"
-               * - "uds"
-               * - "united delivery service"
-               */
+    * The carrier handling the shipment.
+    *
+    * Acceptable values are:
+    * - "gsx"
+    * - "ups"
+    * - "united parcel service"
+    * - "usps"
+    * - "united states postal service"
+    * - "fedex"
+    * - "dhl"
+    * - "ecourier"
+    * - "cxt"
+    * - "google"
+    * - "on trac"
+    * - "ontrac"
+    * - "on-trac"
+    * - "on_trac"
+    * - "delvic"
+    * - "dynamex"
+    * - "lasership"
+    * - "smartpost"
+    * - "fedex smartpost"
+    * - "mpx"
+    * - "uds"
+    * - "united delivery service"
+    */
   var carrier: js.UndefOr[java.lang.String] = js.undefined
   /** Date on which the shipment has been created, in ISO 8601 format. */
   var creationDate: js.UndefOr[java.lang.String] = js.undefined

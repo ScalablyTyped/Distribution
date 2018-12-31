@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Touch extends js.Object {
   val altitudeAngle: scala.Double
   val azimuthAngle: scala.Double

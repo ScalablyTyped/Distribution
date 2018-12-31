@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class SpanOrQuery protected ()
   extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.SpanOrQuery {
   /*
-       Matches the union of its span clauses.
-       */
+    Matches the union of its span clauses.
+    */
   def this(clauses: js.Object) = this()
 }
 

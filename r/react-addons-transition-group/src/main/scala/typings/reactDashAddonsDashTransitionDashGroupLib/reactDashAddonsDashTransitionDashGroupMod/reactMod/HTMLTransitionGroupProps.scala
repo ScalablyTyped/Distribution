@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HTMLTransitionGroupProps[T]
   extends reactLib.reactMod.ReactNs.HTMLAttributes[T] {
   var childFactory: js.UndefOr[

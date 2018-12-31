@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait Design extends js.Object
 
 /**
-       * Font design for texts
-      */
+  * Font design for texts
+  */
 @JSGlobal("sap.ui.core.Design")
 @js.native
 object Design extends js.Object {

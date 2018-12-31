@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MakeColorOption extends js.Object {
   var base_color: js.UndefOr[java.lang.String] = js.undefined
   var colors_returned: js.UndefOr[scala.Double] = js.undefined

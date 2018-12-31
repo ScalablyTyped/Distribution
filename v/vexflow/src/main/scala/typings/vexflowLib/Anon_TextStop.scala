@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TextStop extends js.Object {
   var position: js.UndefOr[vexflowLib.VexNs.FlowNs.TextBracketNs.Positions] = js.undefined
   var start: vexflowLib.VexNs.FlowNs.Note

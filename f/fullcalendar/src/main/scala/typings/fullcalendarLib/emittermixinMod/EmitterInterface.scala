@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EmitterInterface extends js.Object {
   def hasHandlers(`type`: js.Any): js.Any
   def off(types: js.Any, handler: js.Any): js.Any

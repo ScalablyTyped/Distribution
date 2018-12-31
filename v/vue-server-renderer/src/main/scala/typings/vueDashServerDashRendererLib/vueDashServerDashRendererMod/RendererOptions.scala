@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RendererOptions extends js.Object {
   var cache: js.UndefOr[RenderCache] = js.undefined
   var directives: js.UndefOr[

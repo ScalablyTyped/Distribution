@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GroupOptions extends js.Object {
   var cache: js.UndefOr[scala.Double] = js.undefined
   var field: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined

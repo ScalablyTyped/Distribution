@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class BitmapPropertiesView () extends js.Object {
   /**
-                   * Asynchronously retrieves one or more bitmap properties.
-                   * @param propertiesToRetrieve A collection of strings representing the property keys or queries that are being requested. Valid strings include Windows properties and Windows Imaging Component metadata queries.
-                   * @return Object that manages the asynchronous retrieval of the bitmap properties.
-                   */
+    * Asynchronously retrieves one or more bitmap properties.
+    * @param propertiesToRetrieve A collection of strings representing the property keys or queries that are being requested. Valid strings include Windows properties and Windows Imaging Component metadata queries.
+    * @return Object that manages the asynchronous retrieval of the bitmap properties.
+    */
   def getPropertiesAsync(
     propertiesToRetrieve: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String]
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[BitmapPropertySet] = js.native

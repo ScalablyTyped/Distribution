@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVexOptions extends js.Object {
   var afterClose: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var afterOpen: js.UndefOr[js.Function1[/* vexContent */ jqueryLib.JQuery[stdLib.HTMLElement], scala.Unit]] = js.undefined

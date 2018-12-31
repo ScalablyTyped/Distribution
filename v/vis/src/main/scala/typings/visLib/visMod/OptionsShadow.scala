@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OptionsShadow extends js.Object {
   var color: java.lang.String
   var enabled: scala.Boolean

@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class MediaInfo protected () extends js.Object {
   /**
-           * @param {string} contentId
-           * @param {string} contentType
-           * @constructor
-           * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.MediaInfo
-           */
+    * @param {string} contentId
+    * @param {string} contentType
+    * @constructor
+    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.MediaInfo
+    */
   def this(contentId: java.lang.String, contentType: java.lang.String) = this()
   var contentId: java.lang.String = js.native
   var contentType: java.lang.String = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FastClickObject extends js.Object {
   var lastTouchIdentifier: scala.Double
   var layer: stdLib.Element

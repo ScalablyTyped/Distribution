@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait State extends js.Object
 
 /**
-                 * The state types of the H.service.venues.Service. Possible states are:
-                 */
+  * The state types of the H.service.venues.Service. Possible states are:
+  */
 @JSGlobal("H.service.venues.Service.State")
 @js.native
 object State extends js.Object {

@@ -22,8 +22,8 @@ abstract class Structure protected () extends IStructure {
   /* CompleteClass */
   override var structureTypeName: java.lang.String = js.native
   /**
-       * Unit that owns/contains this thing.
-       */
+    * Unit that owns/contains this thing.
+    */
   /* CompleteClass */
   override var unit: mendixmodelsdkLib.distSdkInternalUnitsMod.IAbstractUnit = js.native
   /* CompleteClass */
@@ -31,15 +31,15 @@ abstract class Structure protected () extends IStructure {
     mendixmodelsdkLib.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty[_, _]
   ] = js.native
   /**
-       * Deletes a model from the model.
-       * This will automatically remove the item from its model parent,
-       * and update incoming references and send server changes.
-       */
+    * Deletes a model from the model.
+    * This will automatically remove the item from its model parent,
+    * and update incoming references and send server changes.
+    */
   def delete(): scala.Unit = js.native
   /* protected */ def getContainerAs[T /* <: mendixmodelsdkLib.distSdkInternalStructuresMod.aliasesNs.IContainer */](containerType: js.Any): T = js.native
   /**
-       * Returns all properties when this structure is loaded, otherwise just the public properties.
-       */
+    * Returns all properties when this structure is loaded, otherwise just the public properties.
+    */
   /* CompleteClass */
   override def loadedProperties(): js.Array[
     mendixmodelsdkLib.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty[_, _]
@@ -49,27 +49,27 @@ abstract class Structure protected () extends IStructure {
     mendixmodelsdkLib.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty[_, _]
   ] = js.native
   /**
-       * Renders the structure as plain JSON (without observables magic).
-       * This is intended for debugging and development convenience.
-       * Note that the resulting object is not of the interface type corresponding to this structure.
-       */
+    * Renders the structure as plain JSON (without observables magic).
+    * This is intended for debugging and development convenience.
+    * Note that the resulting object is not of the interface type corresponding to this structure.
+    */
   /* CompleteClass */
   override def toJSON(): js.Object = js.native
   /**
-       * Traverses this structure by calling the provided visitor function
-       * on itself and all the structures contained (as part) by it,
-       * in depth-first order, and it returns synchronously after that.
-       */
+    * Traverses this structure by calling the provided visitor function
+    * on itself and all the structures contained (as part) by it,
+    * in depth-first order, and it returns synchronously after that.
+    */
   /* CompleteClass */
   override def traverse(visit: js.Function1[/* structure */ this.type, scala.Unit]): scala.Unit = js.native
   /**
-       * Traverses this structure, returning immediately when `visit` returns something other than `null`.
-       */
+    * Traverses this structure, returning immediately when `visit` returns something other than `null`.
+    */
   /* CompleteClass */
   override def traverseFind[T](visit: js.Function1[/* structure */ this.type, T]): T | scala.Null = js.native
   /**
-       * Traverses this structure, only visiting children contained in public properties.
-       */
+    * Traverses this structure, only visiting children contained in public properties.
+    */
   /* CompleteClass */
   override def traversePublicParts(visit: js.Function1[/* structure */ this.type, scala.Unit]): scala.Unit = js.native
 }

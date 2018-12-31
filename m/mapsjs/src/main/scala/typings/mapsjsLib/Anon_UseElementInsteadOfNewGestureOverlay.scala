@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_UseElementInsteadOfNewGestureOverlay extends js.Object {
   var downAction: js.UndefOr[js.Function1[/* downPoint */ mapsjsLib.mapsjsMod.point, _]] = js.undefined
   var dragEnabled: scala.Boolean

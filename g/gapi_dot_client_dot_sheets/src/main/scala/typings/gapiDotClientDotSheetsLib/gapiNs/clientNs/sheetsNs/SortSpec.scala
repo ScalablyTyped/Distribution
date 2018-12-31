@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SortSpec extends js.Object {
   /** The dimension the sort should be applied to. */
   var dimensionIndex: js.UndefOr[scala.Double] = js.undefined

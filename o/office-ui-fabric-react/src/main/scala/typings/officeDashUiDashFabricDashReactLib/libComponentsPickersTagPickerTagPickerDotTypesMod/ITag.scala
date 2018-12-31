@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITag extends js.Object {
   /** Unique key for the item. */
   var key: java.lang.String

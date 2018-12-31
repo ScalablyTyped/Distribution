@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParseOptions extends js.Object {
   var ignoreUndefinedEntities: js.UndefOr[scala.Boolean] = js.undefined
   var preserveCdata: js.UndefOr[scala.Boolean] = js.undefined

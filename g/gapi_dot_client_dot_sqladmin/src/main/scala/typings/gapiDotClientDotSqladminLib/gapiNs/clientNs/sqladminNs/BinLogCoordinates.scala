@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BinLogCoordinates extends js.Object {
   /** Name of the binary log file for a Cloud SQL instance. */
   var binLogFileName: js.UndefOr[java.lang.String] = js.undefined

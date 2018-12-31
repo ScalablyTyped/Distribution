@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Renderer extends js.Object {
   var container: stdLib.HTMLElement
   def refresh(): Sigma

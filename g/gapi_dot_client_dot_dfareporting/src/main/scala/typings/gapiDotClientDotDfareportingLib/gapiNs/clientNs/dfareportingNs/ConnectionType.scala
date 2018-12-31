@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectionType extends js.Object {
   /** ID of this connection type. */
   var id: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilteringEventUIParam extends js.Object {
   /**
   	 * Used to obtain reference to array which contains expressions supported by [$.ig.DataSource](ig.datasource).

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SearchShardsResponseShard extends js.Object {
   var allocation_id: elasticsearchLib.Anon_Id
   var index: java.lang.String

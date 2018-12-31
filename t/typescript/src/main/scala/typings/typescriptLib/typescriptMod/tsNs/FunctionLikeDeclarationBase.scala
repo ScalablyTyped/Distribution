@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Several node kinds share function-like features such as a signature,
-     * a name, and a body. These nodes should extend FunctionLikeDeclarationBase.
-     * Examples:
-     * - FunctionDeclaration
-     * - MethodDeclaration
-     * - AccessorDeclaration
-     */
+  * Several node kinds share function-like features such as a signature,
+  * a name, and a body. These nodes should extend FunctionLikeDeclarationBase.
+  * Examples:
+  * - FunctionDeclaration
+  * - MethodDeclaration
+  * - AccessorDeclaration
+  */
 @js.native
 trait FunctionLikeDeclarationBase extends SignatureDeclarationBase {
   var _functionLikeDeclarationBrand: js.Any = js.native

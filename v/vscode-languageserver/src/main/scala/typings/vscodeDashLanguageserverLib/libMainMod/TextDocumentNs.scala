@@ -15,11 +15,11 @@ object TextDocumentNs extends js.Object {
     ]
   ): java.lang.String = js.native
   /**
-       * Creates a new ITextDocument literal from the given uri and content.
-       * @param uri The document's uri.
-       * @param languageId  The document's language Id.
-       * @param content The document's content.
-       */
+    * Creates a new ITextDocument literal from the given uri and content.
+    * @param uri The document's uri.
+    * @param languageId  The document's language Id.
+    * @param content The document's content.
+    */
   def create(
     uri: java.lang.String,
     languageId: java.lang.String,
@@ -27,8 +27,8 @@ object TextDocumentNs extends js.Object {
     content: java.lang.String
   ): vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocument = js.native
   /**
-       * Checks whether the given literal conforms to the [ITextDocument](#ITextDocument) interface.
-       */
-  def is(value: js.Any): /* is TextDocument */scala.Boolean = js.native
+    * Checks whether the given literal conforms to the [ITextDocument](#ITextDocument) interface.
+    */
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.TextDocument */ scala.Boolean = js.native
 }
 

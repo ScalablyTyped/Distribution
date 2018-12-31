@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PrefixClsHrefSeparator extends js.Object {
   var href: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
   var prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]

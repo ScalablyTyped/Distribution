@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AssignmentProperty extends Property {
   @JSName("kind")
   var kind_AssignmentProperty: estreeLib.estreeLibStrings.init

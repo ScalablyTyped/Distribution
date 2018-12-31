@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILayout
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Config Option] (Ext.chart.axis.Axis) */

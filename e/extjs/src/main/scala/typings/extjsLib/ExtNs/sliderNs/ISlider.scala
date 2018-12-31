@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISlider extends IMulti {
   /** [Method] Programmatically sets the value of the Slider
   		* @param value Number The value to set the slider to. (This will be constrained within minValue and maxValue)

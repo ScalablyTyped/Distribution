@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PropertyNameStatic
   extends /* propertyName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var `abstract`: js.UndefOr[scala.Boolean] = js.undefined

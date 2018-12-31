@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HTMLAttributes
   extends preactLib.preactMod.preactNs.ClassAttributes[js.Any]
      with DOMAttributes {

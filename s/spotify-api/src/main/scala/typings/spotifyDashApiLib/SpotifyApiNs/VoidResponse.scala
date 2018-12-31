@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation._
 //
 // Generic interfaces for re-use:
 /**
-     * Void Response
-     */
-
+  * Void Response
+  */
 trait VoidResponse extends js.Object
 

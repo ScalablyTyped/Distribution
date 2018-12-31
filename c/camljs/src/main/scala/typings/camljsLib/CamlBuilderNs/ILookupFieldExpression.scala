@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILookupFieldExpression extends js.Object {
   /** Specifies that lookup id value will be used. */
   def Id(): INumberFieldExpression

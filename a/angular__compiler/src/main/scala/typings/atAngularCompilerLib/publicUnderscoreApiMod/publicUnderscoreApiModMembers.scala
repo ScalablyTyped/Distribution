@@ -87,7 +87,7 @@ object publicUnderscoreApiModMembers extends js.Object {
   def identifierModuleUrl(compileIdentifier: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileIdentifierMetadata): java.lang.String = js.native
   def identifierName(): java.lang.String | scala.Null = js.native
   def identifierName(compileIdentifier: atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileIdentifierMetadata): java.lang.String | scala.Null = js.native
-  def isFormattedError(error: stdLib.Error): /* is FormattedError */scala.Boolean = js.native
+  def isFormattedError(error: stdLib.Error): /* is @angular/compiler.@angular/compiler/src/aot/formatted_error.FormattedError */ scala.Boolean = js.native
   def isIdentifier(input: java.lang.String): scala.Boolean = js.native
   def isLoweredSymbol(name: java.lang.String): scala.Boolean = js.native
   def isNgContainer(tagName: java.lang.String): scala.Boolean = js.native

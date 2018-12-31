@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateServer extends js.Object {
   var BounceHookUrl: js.UndefOr[java.lang.String] = js.undefined
   var Color: js.UndefOr[java.lang.String] = js.undefined

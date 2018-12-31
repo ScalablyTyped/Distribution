@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EnrollmentTokensResource extends js.Object {
   /** Creates an enrollment token for a given enterprise. */
   def create(request: gapiDotClientDotAndroidmanagementLib.Anon_Parent): gapiDotClientLib.gapiNs.clientNs.Request[EnrollmentToken]

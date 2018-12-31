@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LineColor extends js.Object {
   var controlledAxis: js.UndefOr[Anon_Next] = js.undefined
   var cursor: js.UndefOr[java.lang.String] = js.undefined

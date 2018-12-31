@@ -5,20 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Url extends js.Object {
   /**
-       * contentType affects the value read from document.contentType, and how the document is parsed: as HTML or as XML.
-       * Values that are not "text/html" or an XML mime type will throw. It will default to "application/xhtml+xml" if
-       * the given filename ends in .xhtml or .xml; otherwise it will continue to default to "text/html".
-       */
+    * contentType affects the value read from document.contentType, and how the document is parsed: as HTML or as XML.
+    * Values that are not "text/html" or an XML mime type will throw. It will default to "application/xhtml+xml" if
+    * the given filename ends in .xhtml or .xml; otherwise it will continue to default to "text/html".
+    */
   var contentType: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * url sets the value returned by window.location, document.URL, and document.documentURI,
-       * and affects things like resolution of relative URLs within the document
-       * and the same-origin restrictions and referrer used while fetching subresources.
-       * It will default to a file URL corresponding to the given filename, instead of to "about:blank".
-       */
+    * url sets the value returned by window.location, document.URL, and document.documentURI,
+    * and affects things like resolution of relative URLs within the document
+    * and the same-origin restrictions and referrer used while fetching subresources.
+    * It will default to a file URL corresponding to the given filename, instead of to "about:blank".
+    */
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHighlight extends IModifier {
   /** [Config Option] (Boolean) */
   var enabled: js.UndefOr[scala.Boolean] = js.undefined

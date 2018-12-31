@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait INetworkOperatorNotificationEventDetails extends js.Object {
   var encodingType: scala.Double
   var message: java.lang.String

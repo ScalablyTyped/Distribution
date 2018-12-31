@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListAuthorizedDomainsResponse extends js.Object {
   /** The authorized domains belonging to the user. */
   var domains: js.UndefOr[js.Array[AuthorizedDomain]] = js.undefined

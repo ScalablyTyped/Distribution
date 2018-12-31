@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RangeElement extends js.Object {
   def getElement(): Element
   def getEndOffsetInclusive(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer

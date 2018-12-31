@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseFieldArrayProps[P] extends js.Object {
   var component: reactLib.reactMod.ReactNs.ComponentType[P]
   var name: java.lang.String

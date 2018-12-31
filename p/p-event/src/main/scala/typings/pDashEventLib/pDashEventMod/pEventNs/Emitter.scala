@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Emitter[T, TRest] extends js.Object {
   var addEventListener: js.UndefOr[pDashEventLib.AddRmListenerFn[T, TRest]] = js.undefined
   var addListener: js.UndefOr[pDashEventLib.AddRmListenerFn[T, TRest]] = js.undefined

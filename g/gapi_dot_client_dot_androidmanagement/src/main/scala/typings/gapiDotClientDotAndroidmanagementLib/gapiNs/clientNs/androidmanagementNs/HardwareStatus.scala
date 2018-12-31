@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HardwareStatus extends js.Object {
   /** Current battery temperatures in Celsius for each battery on the device. */
   var batteryTemperatures: js.UndefOr[js.Array[scala.Double]] = js.undefined
   /** Current CPU temperatures in Celsius for each CPU on the device. */
   var cpuTemperatures: js.UndefOr[js.Array[scala.Double]] = js.undefined
   /**
-               * CPU usages in percentage for each core available on the device. Usage is 0 for each unplugged core. Empty array implies that CPU usage is not supported
-               * in the system.
-               */
+    * CPU usages in percentage for each core available on the device. Usage is 0 for each unplugged core. Empty array implies that CPU usage is not supported
+    * in the system.
+    */
   var cpuUsages: js.UndefOr[js.Array[scala.Double]] = js.undefined
   /** The time the measurements were taken. */
   var createTime: js.UndefOr[java.lang.String] = js.undefined

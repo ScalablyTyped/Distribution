@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Attributor extends js.Object {
   var attrName: java.lang.String
   var keyName: java.lang.String

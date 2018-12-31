@@ -69,8 +69,6 @@ trait INgModelController extends js.Object {
   // types do work and it's common to use them.
   @JSName("$setViewValue")
   def $setViewValue(value: js.Any): scala.Unit = js.native
-  // Documentation states viewValue and modelValue to be a string but other
-  // types do work and it's common to use them.
   @JSName("$setViewValue")
   def $setViewValue(value: js.Any, trigger: java.lang.String): scala.Unit = js.native
   @JSName("$validate")

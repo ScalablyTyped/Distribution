@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BitArray extends js.Object {
   var bits: stdLib.Uint32Array
   var length: scala.Double

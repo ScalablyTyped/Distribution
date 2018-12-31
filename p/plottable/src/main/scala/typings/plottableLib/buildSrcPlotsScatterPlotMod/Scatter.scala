@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("plottable/build/src/plots/scatterPlot", "Scatter")
 @js.native
+/**
+  * A Scatter Plot draws a symbol at each data point.
+  *
+  * @constructor
+  */
 class Scatter[X, Y] ()
   extends plottableLib.buildSrcPlotsXyPlotMod.XYPlot[X, Y] {
   var _labelConfig: js.Any = js.native
@@ -25,69 +30,55 @@ class Scatter[X, Y] ()
   /* protected */ def _entityBounds(entity: ILightweightScatterPlotEntity): plottableLib.Anon_YX = js.native
   /* protected */ def _entityVisibleOnPlot(entity: ILightweightScatterPlotEntity, bounds: plottableLib.buildSrcCoreInterfacesMod.Bounds): scala.Boolean = js.native
   /**
-        * Get whether bar labels are enabled.
-        *
-        * @returns {boolean} Whether bars should display labels or not.
-        */
+    * Get whether bar labels are enabled.
+    *
+    * @returns {boolean} Whether bars should display labels or not.
+    */
   def labelsEnabled(): scala.Boolean = js.native
   /**
-       * Sets whether labels are enabled.
-       *
-       * @param {boolean} labelsEnabled
-       * @returns {Scatter} The calling SCATTER Plot.
-       */
+    * Sets whether labels are enabled.
+    *
+    * @param {boolean} labelsEnabled
+    * @returns {Scatter} The calling SCATTER Plot.
+    */
   def labelsEnabled(enabled: scala.Boolean): this.type = js.native
-  /**
-       * Sets the size property to a constant number or the result of an Accessor<number>.
-       *
-       * @param {number|Accessor<number>} size
-       * @returns {Plots.Scatter} The calling Scatter Plot.
-       */
   def size(size: plottableLib.buildSrcCoreInterfacesMod.IAccessor[scala.Double]): this.type = js.native
   /**
-       * Sets the size property to a constant number or the result of an Accessor<number>.
-       *
-       * @param {number|Accessor<number>} size
-       * @returns {Plots.Scatter} The calling Scatter Plot.
-       */
+    * Sets the size property to a constant number or the result of an Accessor<number>.
+    *
+    * @param {number|Accessor<number>} size
+    * @returns {Plots.Scatter} The calling Scatter Plot.
+    */
   def size(size: scala.Double): this.type = js.native
   /**
-       * Gets the AccessorScaleBinding for the size property of the plot.
-       * The size property corresponds to the area of the symbol.
-       */
+    * Gets the AccessorScaleBinding for the size property of the plot.
+    * The size property corresponds to the area of the symbol.
+    */
   def size[S](): plottableLib.buildSrcPlotsCommonsMod.ITransformableAccessorScaleBinding[S, scala.Double] = js.native
   /**
-       * Sets the size property to a scaled constant value or scaled result of an Accessor.
-       * The provided Scale will account for the values when autoDomain()-ing.
-       *
-       * @param {S|Accessor<S>} sectorValue
-       * @param {Scale<S, number>} scale
-       * @returns {Plots.Scatter} The calling Scatter Plot.
-       */
+    * Sets the size property to a scaled constant value or scaled result of an Accessor.
+    * The provided Scale will account for the values when autoDomain()-ing.
+    *
+    * @param {S|Accessor<S>} sectorValue
+    * @param {Scale<S, number>} scale
+    * @returns {Plots.Scatter} The calling Scatter Plot.
+    */
   def size[S](size: S, scale: plottableLib.buildSrcScalesScaleMod.Scale[S, scala.Double]): this.type = js.native
-  /**
-       * Sets the size property to a scaled constant value or scaled result of an Accessor.
-       * The provided Scale will account for the values when autoDomain()-ing.
-       *
-       * @param {S|Accessor<S>} sectorValue
-       * @param {Scale<S, number>} scale
-       * @returns {Plots.Scatter} The calling Scatter Plot.
-       */
   def size[S](
     size: plottableLib.buildSrcCoreInterfacesMod.IAccessor[S],
     scale: plottableLib.buildSrcScalesScaleMod.Scale[S, scala.Double]
   ): this.type = js.native
   /**
-       * Gets the AccessorScaleBinding for the symbol property of the plot.
-       * The symbol property corresponds to how the symbol will be drawn.
-       */
+    * Gets the AccessorScaleBinding for the symbol property of the plot.
+    * The symbol property corresponds to how the symbol will be drawn.
+    */
   def symbol(): plottableLib.buildSrcPlotsCommonsMod.IAccessorScaleBinding[_, _] = js.native
   /**
-       * Sets the symbol property to an Accessor<SymbolFactory>.
-       *
-       * @param {Accessor<SymbolFactory>} symbol
-       * @returns {Plots.Scatter} The calling Scatter Plot.
-       */
+    * Sets the symbol property to an Accessor<SymbolFactory>.
+    *
+    * @param {Accessor<SymbolFactory>} symbol
+    * @returns {Plots.Scatter} The calling Scatter Plot.
+    */
   def symbol(
     symbol: plottableLib.buildSrcCoreInterfacesMod.IAccessor[plottableLib.buildSrcCoreSymbolFactoriesMod.SymbolFactory]
   ): this.type = js.native

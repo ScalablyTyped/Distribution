@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OverviewMapOptions extends js.Object {
   var collapseLabel: js.UndefOr[java.lang.String | stdLib.Node] = js.undefined
   var collapsed: js.UndefOr[scala.Boolean] = js.undefined

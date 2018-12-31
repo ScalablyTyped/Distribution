@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DateTimePickerOptions extends js.Object {
   var ARIATemplate: js.UndefOr[java.lang.String] = js.undefined
   var animation: js.UndefOr[scala.Boolean | DateTimePickerAnimation] = js.undefined

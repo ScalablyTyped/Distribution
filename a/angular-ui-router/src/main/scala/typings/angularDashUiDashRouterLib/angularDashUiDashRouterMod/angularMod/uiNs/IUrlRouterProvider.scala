@@ -9,20 +9,13 @@ import scala.scalajs.js.annotation._
 trait IUrlRouterProvider
   extends angularLib.angularMod.angularNs.IServiceProvider {
   /**
-               * Disables (or enables) deferring location change interception.
-               *
-               * If you wish to customize the behavior of syncing the URL (for example, if you wish to defer a transition but maintain the current URL), call this method at configuration time. Then, at run time, call $urlRouter.listen() after you have configured your own $locationChangeSuccess event handler.
-               *
-               * @param {boolean} defer Indicates whether to defer location change interception. Passing no parameter is equivalent to true.
-               */
+    * Disables (or enables) deferring location change interception.
+    *
+    * If you wish to customize the behavior of syncing the URL (for example, if you wish to defer a transition but maintain the current URL), call this method at configuration time. Then, at run time, call $urlRouter.listen() after you have configured your own $locationChangeSuccess event handler.
+    *
+    * @param {boolean} defer Indicates whether to defer location change interception. Passing no parameter is equivalent to true.
+    */
   def deferIntercept(): scala.Unit = js.native
-  /**
-               * Disables (or enables) deferring location change interception.
-               *
-               * If you wish to customize the behavior of syncing the URL (for example, if you wish to defer a transition but maintain the current URL), call this method at configuration time. Then, at run time, call $urlRouter.listen() after you have configured your own $locationChangeSuccess event handler.
-               *
-               * @param {boolean} defer Indicates whether to defer location change interception. Passing no parameter is equivalent to true.
-               */
   def deferIntercept(defer: scala.Boolean): scala.Unit = js.native
   def otherwise(handler: angularLib.angularMod.Global.Function): IUrlRouterProvider = js.native
   def otherwise(handler: js.Array[_]): IUrlRouterProvider = js.native

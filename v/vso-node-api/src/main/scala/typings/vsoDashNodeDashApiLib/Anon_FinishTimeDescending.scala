@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FinishTimeDescending extends js.Object {
   var finishTimeAscending: scala.Double
   var finishTimeDescending: scala.Double

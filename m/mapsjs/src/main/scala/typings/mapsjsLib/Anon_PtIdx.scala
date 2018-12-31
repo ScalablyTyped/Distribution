@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PtIdx extends js.Object {
   var distance: scala.Double
   var pt: mapsjsLib.mapsjsMod.point

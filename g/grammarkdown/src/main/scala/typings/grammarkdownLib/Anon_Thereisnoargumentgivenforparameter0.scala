@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Thereisnoargumentgivenforparameter0 extends js.Object {
   var Argument_0_cannot_be_specified_multiple_times: Anon_Code
   var `Cannot_find_name_0_`: Anon_Code

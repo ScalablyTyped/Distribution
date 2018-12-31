@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Relyingparty extends js.Object {
   /** whether or not to install the android app on the device where the link is opened */
   var androidInstallApp: js.UndefOr[scala.Boolean] = js.undefined

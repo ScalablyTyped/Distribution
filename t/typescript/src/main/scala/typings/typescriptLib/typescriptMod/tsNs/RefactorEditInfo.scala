@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * A set of edits to make in response to a refactor action, plus an optional
-     * location where renaming should be invoked from
-     */
-
+  * A set of edits to make in response to a refactor action, plus an optional
+  * location where renaming should be invoked from
+  */
 trait RefactorEditInfo extends js.Object {
   var commands: js.UndefOr[js.Array[CodeActionCommand]] = js.undefined
   var edits: js.Array[FileTextChanges]

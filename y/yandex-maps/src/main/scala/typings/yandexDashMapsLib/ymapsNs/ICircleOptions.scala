@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICircleOptions extends js.Object {
   var circleOverlay: js.UndefOr[
     java.lang.String | (js.Function3[

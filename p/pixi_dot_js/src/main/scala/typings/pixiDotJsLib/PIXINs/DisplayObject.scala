@@ -97,11 +97,7 @@ class DisplayObject ()
   // end extras.getChildByName
   // begin extras.getGlobalPosition
   def getGlobalPosition(): Point = js.native
-  // end extras.getChildByName
-  // begin extras.getGlobalPosition
   def getGlobalPosition(point: Point): Point = js.native
-  // end extras.getChildByName
-  // begin extras.getGlobalPosition
   def getGlobalPosition(point: Point, skipUpdate: scala.Boolean): Point = js.native
   def getLocalBounds(): Rectangle = js.native
   def getLocalBounds(rect: Rectangle): Rectangle = js.native
@@ -160,25 +156,19 @@ class DisplayObject ()
   ): DisplayObject = js.native
   //creates and returns a new point
   def toGlobal(position: PointLike): Point = js.native
-  //modifies the x and y of the passed point and returns it
   def toGlobal[T /* <: PointLike */](position: PointLike, point: T): T = js.native
-  //modifies the x and y of the passed point and returns it
   def toGlobal[T /* <: PointLike */](position: PointLike, point: T, skipUpdate: scala.Boolean): T = js.native
   //modifies the x and y of the passed point and returns it
   @JSName("toGlobal")
   def toGlobal_TPointLikeT[T /* <: PointLike */](position: PointLike): T = js.native
   //creates and returns a new point
   def toLocal(position: PointLike): Point = js.native
-  //creates and returns a new point
   def toLocal(position: PointLike, from: DisplayObject): Point = js.native
-  //modifies the x and y of the passed point and returns it
   def toLocal[T /* <: PointLike */](position: PointLike, from: DisplayObject, point: T): T = js.native
-  //modifies the x and y of the passed point and returns it
   def toLocal[T /* <: PointLike */](position: PointLike, from: DisplayObject, point: T, skipUpdate: scala.Boolean): T = js.native
   //modifies the x and y of the passed point and returns it
   @JSName("toLocal")
   def toLocal_TPointLikeT[T /* <: PointLike */](position: PointLike): T = js.native
-  //modifies the x and y of the passed point and returns it
   @JSName("toLocal")
   def toLocal_TPointLikeT[T /* <: PointLike */](position: PointLike, from: DisplayObject): T = js.native
   def updateTransform(): scala.Unit = js.native

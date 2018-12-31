@@ -22,7 +22,12 @@ class namespaced () extends VError {
 @JSImport("verror", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {
-  var VError: verrorLib.Anon_SError = js.native
+  var VError: verrorLib.Anon_SError with (org.scalablytyped.runtime.Instantiable3[
+    /* options */ verrorLib.verrorMod.VErrorNs.Options | stdLib.Error, 
+    /* message */ java.lang.String, 
+    /* params (repeated) */ js.Any, 
+    verrorLib.verrorMod.VError
+  ]) = js.native
   def cause(err: stdLib.Error): stdLib.Error | scala.Null = js.native
   def errorForEach(err: stdLib.Error, func: js.Function1[/* err */ stdLib.Error, scala.Unit]): scala.Unit = js.native
   def errorFromList[T /* <: stdLib.Error */](errors: js.Array[T]): scala.Null | T | verrorLib.verrorMod.VErrorNs.MultiError = js.native

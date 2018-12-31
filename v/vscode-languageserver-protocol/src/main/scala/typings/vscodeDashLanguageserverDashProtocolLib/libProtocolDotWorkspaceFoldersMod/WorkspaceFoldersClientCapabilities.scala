@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkspaceFoldersClientCapabilities extends js.Object {
   /**
-       * The workspace client capabilities
-       */
+    * The workspace client capabilities
+    */
   var workspace: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_WorkspaceFolders] = js.undefined
 }
 

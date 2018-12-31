@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Number extends js.Object {
   var any: skatejsLib.typesMod.PropOptions[_] with stdLib.PropertyDecorator
   var array: skatejsLib.typesMod.PropOptions[js.Array[_]] with stdLib.PropertyDecorator

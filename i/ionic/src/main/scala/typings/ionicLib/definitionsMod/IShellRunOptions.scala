@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IShellRunOptions extends IShellOutputOptions {
   var killOnExit: js.UndefOr[scala.Boolean] = js.undefined
   var stream: js.UndefOr[nodeLib.NodeJSNs.WritableStream] = js.undefined

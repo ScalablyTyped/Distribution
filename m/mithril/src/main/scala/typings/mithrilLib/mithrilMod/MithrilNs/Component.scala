@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 	 * Any Javascript object that has a view method can be used as a Mithril component.
 	 * Components can be consumed via the m() utility.
 	 */
-
 trait Component[Attrs, State /* <: Lifecycle[Attrs, State] */] extends Lifecycle[Attrs, State] {
   /** Creates a view out of virtual elements. */
   def view(`this`: State, vnode: Vnode[Attrs, State]): Children | scala.Null | scala.Unit

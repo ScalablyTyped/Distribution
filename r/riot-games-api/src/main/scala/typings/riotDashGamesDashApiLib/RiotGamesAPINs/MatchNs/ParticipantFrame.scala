@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParticipantFrame extends js.Object {
   var currentGold: scala.Double
   var dominionScore: scala.Double

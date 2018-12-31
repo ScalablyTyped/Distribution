@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options[Result, RemoteResult] extends js.Object {
   var ajax: js.UndefOr[AjaxOptions[Result, RemoteResult]] = js.undefined
   var allowClear: js.UndefOr[scala.Boolean] = js.undefined

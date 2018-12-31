@@ -12,7 +12,7 @@ object libraryFnSetDashIntervalMod
       js.Function3[
         /* handler */ js.Any, 
         /* timeout */ js.UndefOr[js.Any], 
-        /* repeated */js.Any, 
+        /* repeated */ js.Any, 
         scala.Double
       ]
     ]

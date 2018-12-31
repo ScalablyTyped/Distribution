@@ -331,7 +331,6 @@ trait State extends js.Object {
   def stereo(): State = js.native
   // Commands
   def stream(): nodeLib.streamMod.PassThrough = js.native
-  // Commands
   def stream(callback: WriteCallback): nodeLib.streamMod.PassThrough = js.native
   def stream(format: java.lang.String): nodeLib.streamMod.PassThrough = js.native
   def stream(format: java.lang.String, callback: WriteCallback): nodeLib.streamMod.PassThrough = js.native

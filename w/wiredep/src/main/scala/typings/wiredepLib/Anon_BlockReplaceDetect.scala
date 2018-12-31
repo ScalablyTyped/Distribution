@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BlockReplaceDetect extends js.Object {
   /**
-           *  match the beginning-to-end of a bower block in this type of file
-           */
+    *  match the beginning-to-end of a bower block in this type of file
+    */
   var block: stdLib.RegExp
   var detect: Anon_TypeOfBowerFileRegExp
   var replace: Anon_TypeOfBowerFile

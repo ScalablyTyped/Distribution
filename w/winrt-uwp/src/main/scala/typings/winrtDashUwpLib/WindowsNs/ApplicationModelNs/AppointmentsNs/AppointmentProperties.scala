@@ -27,7 +27,7 @@ object AppointmentProperties extends js.Object {
   /** Gets the name of the Details property. */
   var details: java.lang.String = js.native
   var detailsKind: js.Any = js.native
-   /* unmapped type *//** Gets the name of the Duration property. */
+   /* unmapped type */ /** Gets the name of the Duration property. */
   var duration: java.lang.String = js.native
   /** Gets the name of the HasInvitees property. */
   var hasInvitees: java.lang.String = js.native
@@ -52,7 +52,7 @@ object AppointmentProperties extends js.Object {
   /** Gets the name of the Reminder property. */
   var reminder: java.lang.String = js.native
   var remoteChangeNumber: js.Any = js.native
-   /* unmapped type *//** Gets the name of the ReplyTime property. */
+   /* unmapped type */ /** Gets the name of the ReplyTime property. */
   var replyTime: java.lang.String = js.native
   /** Gets the name of the Sensitivity property. */
   var sensitivity: java.lang.String = js.native

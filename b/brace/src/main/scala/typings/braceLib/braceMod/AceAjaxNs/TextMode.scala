@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextMode extends js.Object {
   def autoOutdent(state: js.Any, doc: js.Any, row: js.Any): scala.Unit
   def checkOutdent(state: js.Any, line: js.Any, input: js.Any): scala.Boolean

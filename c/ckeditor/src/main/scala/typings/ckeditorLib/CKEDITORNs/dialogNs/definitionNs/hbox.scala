@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait hbox extends uiElement {
   var children: js.UndefOr[js.Array[ckeditorLib.CKEDITORNs.uiNs.dialogNs.uiElement]] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ShowHeight extends js.Object {
   var asynchronous: js.UndefOr[scala.Boolean] = js.undefined
   var debugShowBoundingVolume: js.UndefOr[scala.Boolean] = js.undefined

@@ -29,10 +29,10 @@ trait ArrayType[T]
   def apply(data: nodeLib.Buffer, length: scala.Double): refDashArrayDashDiLib.Anon_I[T] = js.native
   def apply(length: scala.Double): refDashArrayDashDiLib.Anon_I[T] = js.native
   /**
-       * Accepts a Buffer instance that should be an already-populated with data
-       * for the ArrayType. The "length" of the Array is determined by searching
-       * through the buffer's contents until an aligned NULL pointer is encountered.
-       */
+    * Accepts a Buffer instance that should be an already-populated with data
+    * for the ArrayType. The "length" of the Array is determined by searching
+    * through the buffer's contents until an aligned NULL pointer is encountered.
+    */
   def untilZeros(buffer: nodeLib.Buffer): refDashArrayDashDiLib.Anon_I[T] = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICellEditing extends IEditing {
   /** [Method] Starts editing by position row column
   		* @param position Object A position with keys of row and column.

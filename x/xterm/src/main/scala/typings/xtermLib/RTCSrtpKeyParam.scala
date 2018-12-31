@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RTCSrtpKeyParam extends js.Object {
   var keyMethod: js.UndefOr[java.lang.String] = js.undefined
   var keySalt: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GraphQLSubscriptionConfig extends js.Object {
   var configs: js.UndefOr[js.Array[RelayMutationConfig]] = js.undefined
   var onCompleted: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

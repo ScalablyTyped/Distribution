@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DispatcherError extends js.Object {
   var message: java.lang.String
   var meta: dispatchrLib.Anon_Error

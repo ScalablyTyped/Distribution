@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SourceMap extends js.Object {
   var file: js.UndefOr[java.lang.String] = js.undefined
   var mappings: java.lang.String

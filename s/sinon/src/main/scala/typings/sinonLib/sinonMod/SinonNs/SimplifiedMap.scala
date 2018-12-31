@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SimplifiedMap extends SimplifiedSet {
   def get(key: js.Any): js.Any
 }

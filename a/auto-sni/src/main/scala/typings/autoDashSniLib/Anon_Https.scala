@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Https extends js.Object {
   var http: js.UndefOr[scala.Double] = js.undefined
   var https: js.UndefOr[scala.Double] = js.undefined

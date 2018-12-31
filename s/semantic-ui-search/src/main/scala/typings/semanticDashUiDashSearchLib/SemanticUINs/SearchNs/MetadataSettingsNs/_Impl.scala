@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default 'cache'
-                   */
+    * @default 'cache'
+    */
   var cache: java.lang.String
   /**
-                   * @default 'results'
-                   */
+    * @default 'results'
+    */
   var results: java.lang.String
 }
 

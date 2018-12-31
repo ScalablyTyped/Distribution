@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait State extends js.Object
 
 /**
-             * The state types of an Icon
-             */
+  * The state types of an Icon
+  */
 @JSGlobal("H.map.Icon.State")
 @js.native
 object State extends js.Object {

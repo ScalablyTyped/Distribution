@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait carClassifyResponse extends js.Object {
   var location_result: baiduDashAppLib.Anon_Top
   var log_id: scala.Double

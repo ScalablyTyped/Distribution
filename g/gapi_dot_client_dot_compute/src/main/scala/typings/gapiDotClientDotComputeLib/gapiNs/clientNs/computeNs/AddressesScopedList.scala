@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AddressesScopedList extends js.Object {
   /** [Output Only] List of addresses contained in this scope. */
   var addresses: js.UndefOr[js.Array[Address]] = js.undefined

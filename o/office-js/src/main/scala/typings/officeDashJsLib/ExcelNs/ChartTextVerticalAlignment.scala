@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 sealed trait ChartTextVerticalAlignment extends js.Object
 
 /**
-     *
-     * Represents the vertical alignment for the specified object.
-     *
-     * [Api set: ExcelApi 1.7]
-     */
+  *
+  * Represents the vertical alignment for the specified object.
+  *
+  * [Api set: ExcelApi 1.7]
+  */
 @JSGlobal("Excel.ChartTextVerticalAlignment")
 @js.native
 object ChartTextVerticalAlignment extends js.Object {

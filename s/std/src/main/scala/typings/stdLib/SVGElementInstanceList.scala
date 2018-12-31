@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGElementInstanceList extends js.Object {
   /** @deprecated */
   val length: scala.Double

@@ -182,7 +182,6 @@ class Workbook protected () extends js.Object {
   def ChangeFileAccess(Mode: XlFileAccess, WritePassword: java.lang.String, Notify: scala.Boolean): scala.Unit = js.native
   /** @param Type [Type=1] */
   def ChangeLink(Name: java.lang.String, NewName: java.lang.String): scala.Unit = js.native
-  /** @param Type [Type=1] */
   def ChangeLink(Name: java.lang.String, NewName: java.lang.String, Type: XlLinkType): scala.Unit = js.native
   def Charts(Indexes: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): Sheets[Chart] = js.native
   def Charts(Index: java.lang.String): Chart = js.native
@@ -421,16 +420,11 @@ class Workbook protected () extends js.Object {
   def SendMail(Recipients: java.lang.String, Subject: java.lang.String): scala.Unit = js.native
   def SendMail(Recipients: java.lang.String, Subject: java.lang.String, ReturnReceipt: scala.Boolean): scala.Unit = js.native
   /**
-           * Macintosh only
-           *
-           * @param Priority [Priority=-4143]
-           */
+    * Macintosh only
+    *
+    * @param Priority [Priority=-4143]
+    */
   def SendMailer(FileFormat: js.Any): scala.Unit = js.native
-  /**
-           * Macintosh only
-           *
-           * @param Priority [Priority=-4143]
-           */
   def SendMailer(FileFormat: js.Any, Priority: XlPriority): scala.Unit = js.native
   def ServerPolicy(Index: java.lang.String): activexDashOfficeLib.OfficeNs.PolicyItem = js.native
   def ServerPolicy(Index: scala.Double): activexDashOfficeLib.OfficeNs.PolicyItem = js.native

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait PaperType extends js.Object
 
 /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.PaperType")
 @js.native
 object PaperType extends js.Object {

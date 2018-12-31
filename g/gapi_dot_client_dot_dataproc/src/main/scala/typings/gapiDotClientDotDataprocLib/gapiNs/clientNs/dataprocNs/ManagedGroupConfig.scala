@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ManagedGroupConfig extends js.Object {
   /** Output-only. The name of the Instance Group Manager for this group. */
   var instanceGroupManagerName: js.UndefOr[java.lang.String] = js.undefined

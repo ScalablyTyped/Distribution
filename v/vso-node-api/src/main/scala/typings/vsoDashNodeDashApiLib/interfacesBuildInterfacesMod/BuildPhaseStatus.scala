@@ -12,22 +12,22 @@ sealed trait BuildPhaseStatus extends js.Object
 @js.native
 object BuildPhaseStatus extends js.Object {
   /**
-       * The build phase completed unsuccessfully.
-       */
+    * The build phase completed unsuccessfully.
+    */
   @js.native
   sealed trait Failed
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildPhaseStatus
   
   /**
-       * The build phase completed successfully.
-       */
+    * The build phase completed successfully.
+    */
   @js.native
   sealed trait Succeeded
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildPhaseStatus
   
   /**
-       * The state is not known.
-       */
+    * The state is not known.
+    */
   @js.native
   sealed trait Unknown
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildPhaseStatus

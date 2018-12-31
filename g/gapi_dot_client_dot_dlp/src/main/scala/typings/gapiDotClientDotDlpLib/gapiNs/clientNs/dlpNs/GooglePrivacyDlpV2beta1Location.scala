@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GooglePrivacyDlpV2beta1Location extends js.Object {
   /** Zero-based byte offsets within a content item. */
   var byteRange: js.UndefOr[GooglePrivacyDlpV2beta1Range] = js.undefined
   /**
-               * Character offsets within a content item, included when content type
-               * is a text. Default charset assumed to be UTF-8.
-               */
+    * Character offsets within a content item, included when content type
+    * is a text. Default charset assumed to be UTF-8.
+    */
   var codepointRange: js.UndefOr[GooglePrivacyDlpV2beta1Range] = js.undefined
   /** Field id of the field containing the finding. */
   var fieldId: js.UndefOr[GooglePrivacyDlpV2beta1FieldId] = js.undefined

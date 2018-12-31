@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ViewportQuad extends js.Object {
   var material: Material
   var rectangle: BoundingRectangle

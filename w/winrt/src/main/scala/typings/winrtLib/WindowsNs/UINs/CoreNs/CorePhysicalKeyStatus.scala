@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CorePhysicalKeyStatus extends js.Object {
   var isExtendedKey: scala.Boolean
   var isKeyReleased: scala.Boolean

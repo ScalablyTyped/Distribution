@@ -20,20 +20,12 @@ trait StyleSheet[RuleName /* <: java.lang.String */] extends js.Object {
   	 * Will insert a rule also after the stylesheet has been rendered first time.
   	 */
   def addRule(style: jssLib.cssMod.Style): Rule = js.native
-  /**
-  	 * Add a rule to the current stylesheet.
-  	 * Will insert a rule also after the stylesheet has been rendered first time.
-  	 */
   def addRule(style: jssLib.cssMod.Style, options: stdLib.Partial[RuleOptions]): Rule = js.native
   /**
   	 * Create and add rules.
   	 * Will render also after Style Sheet was rendered the first time.
   	 */
   def addRules(styles: stdLib.Partial[Styles[RuleName]]): js.Array[Rule] = js.native
-  /**
-  	 * Create and add rules.
-  	 * Will render also after Style Sheet was rendered the first time.
-  	 */
   def addRules(styles: stdLib.Partial[Styles[RuleName]], options: stdLib.Partial[RuleOptions]): js.Array[Rule] = js.native
   /**
   	 * Attach renderable to the render tree.
@@ -56,17 +48,11 @@ trait StyleSheet[RuleName /* <: java.lang.String */] extends js.Object {
   	 * Get index of a rule.
   	 */
   def indexOf(rule: Rule): scala.Double = js.native
-  /**
-  	 * Convert rules to a CSS string.
-  	 */
   def toString(options: ToCssOptions): java.lang.String = js.native
   /**
   	 * Update the function values with a new data.
   	 */
   def update(): this.type = js.native
-  /**
-  	 * Update the function values with a new data.
-  	 */
   def update(data: js.Object): this.type = js.native
   def update(name: RuleName, data: js.Object): this.type = js.native
 }

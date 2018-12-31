@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MorphTargetOptions extends js.Object {
   var aabb: js.UndefOr[BoundingBox] = js.undefined
   var deltaNormals: js.UndefOr[js.Array[scala.Double]] = js.undefined

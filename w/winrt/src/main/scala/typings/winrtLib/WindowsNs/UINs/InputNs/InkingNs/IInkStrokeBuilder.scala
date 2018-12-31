@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IInkStrokeBuilder extends js.Object {
   def appendToStroke(pointerPoint: winrtLib.WindowsNs.UINs.InputNs.PointerPoint): winrtLib.WindowsNs.UINs.InputNs.PointerPoint
   def beginStroke(pointerPoint: winrtLib.WindowsNs.UINs.InputNs.PointerPoint): scala.Unit

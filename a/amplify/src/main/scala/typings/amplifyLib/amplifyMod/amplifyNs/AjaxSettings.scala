@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AjaxSettings
   extends jqueryLib.JQueryNs.AjaxSettings[js.Any] {
   @JSName("cache")

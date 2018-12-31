@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IInstallResult extends js.Object {
   /**
   	 * List of entries supplied for precaching that were already precached.

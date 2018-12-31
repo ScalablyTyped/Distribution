@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataSourceTransport extends js.Object {
   var create: js.UndefOr[
     DataSourceTransportCreate | (js.Function1[/* options */ DataSourceTransportOptions, scala.Unit])

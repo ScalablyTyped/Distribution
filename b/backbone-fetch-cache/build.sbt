@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "backbone-fetch-cache"
-version := "1.4.0-dt-20181121Z-fddb73"
+version := "1.4.0-dt-20181121Z-5846ff"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "backbone" % "1.3.3-dt-20181124Z-93edff",
-  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181219Z-c4ac04",
-  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-3a6abd",
-  "org.scalablytyped" %%% "std" % "3.2.2-669a73",
-  "org.scalablytyped" %%% "underscore" % "1.8-dt-20180808Z-09fcd3")
+  "org.scalablytyped" %%% "backbone" % "1.3.3-dt-20181124Z-29f925",
+  "org.scalablytyped" %%% "jquery" % "3.3-dt-20181219Z-1d3df4",
+  "org.scalablytyped" %%% "sizzle" % "2.3-dt-20181006Z-f7ab30",
+  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff",
+  "org.scalablytyped" %%% "underscore" % "1.8-dt-20180808Z-bb2884")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

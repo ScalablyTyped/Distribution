@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConfigOptions extends js.Object {
   var epsilon: js.UndefOr[scala.Double] = js.undefined
   var matrix: js.UndefOr[java.lang.String] = js.undefined

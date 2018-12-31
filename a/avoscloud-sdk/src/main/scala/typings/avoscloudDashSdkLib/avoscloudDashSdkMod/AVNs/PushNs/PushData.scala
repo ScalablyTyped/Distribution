@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PushData extends js.Object {
   var alert: js.UndefOr[java.lang.String] = js.undefined
   var badge: js.UndefOr[java.lang.String] = js.undefined

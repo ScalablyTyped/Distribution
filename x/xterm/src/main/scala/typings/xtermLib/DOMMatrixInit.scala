@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DOMMatrixInit extends DOMMatrix2DInit {
   var is2D: js.UndefOr[scala.Boolean] = js.undefined
   var m13: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ParentEffectId extends js.Object {
   var effect: reduxDashSagaLib.effectsMod.Effect
   var effectId: scala.Double

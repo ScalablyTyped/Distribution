@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   /** The root directory of all absolute inclusion. */
   var basedir: js.UndefOr[java.lang.String] = js.undefined

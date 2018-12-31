@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PreProcessedFileInfo extends js.Object {
   var ambientExternalModules: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var importedFiles: js.Array[FileReference]

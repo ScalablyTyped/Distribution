@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Represents a Depth Sorted Particle in the solid particle system.
-     */
+  * Represents a Depth Sorted Particle in the solid particle system.
+  */
 @JSImport("babylonjs", "DepthSortedParticle")
 @js.native
 class DepthSortedParticle ()

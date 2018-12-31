@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Initialized extends js.Object {
   var all: js.Array[_]
   var cancelTopModal: js.Function0[scala.Unit]

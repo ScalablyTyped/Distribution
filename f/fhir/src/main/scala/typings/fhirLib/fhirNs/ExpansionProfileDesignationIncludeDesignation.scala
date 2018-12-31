@@ -6,21 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * The designation to be included
-     */
-
+  * The designation to be included
+  */
 trait ExpansionProfileDesignationIncludeDesignation extends BackboneElement {
   /**
-           * Contains extended information for property 'language'.
-           */
+    * Contains extended information for property 'language'.
+    */
   var _language: js.UndefOr[Element] = js.undefined
   /**
-           * Human language of the designation to be included
-           */
+    * Human language of the designation to be included
+    */
   var language: js.UndefOr[code] = js.undefined
   /**
-           * What kind of Designation to include
-           */
+    * What kind of Designation to include
+    */
   var use: js.UndefOr[Coding] = js.undefined
 }
 

@@ -21,7 +21,7 @@ trait NamespacedMappers extends js.Object {
       java.lang.String | (js.ThisFunction2[
         /* this */ vueLib.typesVueMod.VueConstructor[vueLib.typesVueMod.Vue], 
         /* fn */ vuexLib.typesMod.Dispatch, 
-        /* repeated */_, 
+        /* repeated */ _, 
         _
       ])
     ]
@@ -34,7 +34,7 @@ trait NamespacedMappers extends js.Object {
       java.lang.String | (js.ThisFunction2[
         /* this */ vueLib.typesVueMod.VueConstructor[vueLib.typesVueMod.Vue], 
         /* fn */ vuexLib.typesMod.Commit, 
-        /* repeated */_, 
+        /* repeated */ _, 
         _
       ])
     ]

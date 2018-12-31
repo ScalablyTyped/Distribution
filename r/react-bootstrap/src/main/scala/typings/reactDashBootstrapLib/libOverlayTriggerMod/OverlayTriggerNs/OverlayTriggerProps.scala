@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OverlayTriggerProps
   extends reactLib.reactMod.ReactNs.Props[reactDashBootstrapLib.libOverlayTriggerMod.OverlayTrigger] {
    // TODO: Add more specific type

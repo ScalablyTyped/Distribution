@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BuildOption extends js.Object {
   /**
-       * A reference to the build option.
-       */
+    * A reference to the build option.
+    */
   var definition: BuildOptionDefinitionReference
   /**
-       * Indicates whether the behavior is enabled.
-       */
+    * Indicates whether the behavior is enabled.
+    */
   var enabled: scala.Boolean
   var inputs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }

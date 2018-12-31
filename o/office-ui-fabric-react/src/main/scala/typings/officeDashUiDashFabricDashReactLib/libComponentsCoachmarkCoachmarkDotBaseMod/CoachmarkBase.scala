@@ -18,9 +18,9 @@ class CoachmarkBase protected ()
   val _beakDirection: js.Any = js.native
   var _childrenContainer: js.Any = js.native
   /**
-       * The cached HTMLElement reference to the Entity Inner Host
-       * element.
-       */
+    * The cached HTMLElement reference to the Entity Inner Host
+    * element.
+    */
   var _entityHost: js.Any = js.native
   var _entityInnerHostElement: js.Any = js.native
   var _onFocusHandler: js.Any = js.native
@@ -30,9 +30,9 @@ class CoachmarkBase protected ()
   var _positioningContainer: js.Any = js.native
   var _setBeakPosition: js.Any = js.native
   /**
-       * The target element the mouse would be in
-       * proximity to
-       */
+    * The target element the mouse would be in
+    * proximity to
+    */
   var _targetElementRect: js.Any = js.native
   var _translateAnimationContainer: js.Any = js.native
   /* private */ def _addListeners(): js.Any = js.native

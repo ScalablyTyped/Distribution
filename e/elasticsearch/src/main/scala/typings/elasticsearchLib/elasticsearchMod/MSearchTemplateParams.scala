@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MSearchTemplateParams extends GenericParams {
   var index: js.UndefOr[NameList] = js.undefined
   var search_type: js.UndefOr[

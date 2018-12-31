@@ -6,21 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Details by insurance coverage
-     */
-
+  * Details by insurance coverage
+  */
 trait EligibilityResponseInsurance extends BackboneElement {
   /**
-           * Benefits by Category
-           */
+    * Benefits by Category
+    */
   var benefitBalance: js.UndefOr[js.Array[EligibilityResponseInsuranceBenefitBalance]] = js.undefined
   /**
-           * Contract details
-           */
+    * Contract details
+    */
   var contract: js.UndefOr[Reference] = js.undefined
   /**
-           * Updated Coverage details
-           */
+    * Updated Coverage details
+    */
   var coverage: js.UndefOr[Reference] = js.undefined
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThreeTrianglesSet
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] {
   var greenUpTriangle: Icon

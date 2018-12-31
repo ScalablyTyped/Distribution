@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommitmentsScopedList extends js.Object {
   /** [Output Only] List of commitments contained in this scope. */
   var commitments: js.UndefOr[js.Array[Commitment]] = js.undefined

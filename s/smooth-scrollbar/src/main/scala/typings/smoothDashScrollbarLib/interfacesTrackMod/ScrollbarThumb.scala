@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScrollbarThumb extends js.Object {
   var displaySize: scala.Double
   val element: stdLib.HTMLElement

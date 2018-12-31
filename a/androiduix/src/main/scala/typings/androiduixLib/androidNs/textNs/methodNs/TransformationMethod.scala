@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransformationMethod extends js.Object {
   def getTransformation(source: java.lang.String, view: androiduixLib.androidNs.viewNs.View): java.lang.String
   def onFocusChanged(

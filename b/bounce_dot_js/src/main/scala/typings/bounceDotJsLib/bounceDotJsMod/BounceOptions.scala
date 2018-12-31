@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BounceOptions[T] extends js.Object {
   var bounces: js.UndefOr[scala.Double] = js.undefined
   var delay: js.UndefOr[scala.Double] = js.undefined

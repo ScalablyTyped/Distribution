@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MockjsValidRsItem extends js.Object {
   var action: S
   var actual: S

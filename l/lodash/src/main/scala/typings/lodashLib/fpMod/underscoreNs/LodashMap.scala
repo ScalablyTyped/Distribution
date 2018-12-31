@@ -30,22 +30,14 @@ trait LodashMap extends js.Object {
     iteratee: lodashLib.lodashMod.underscoreNs.`__`,
     collection: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]
   ): LodashMap4x2[T] = js.native
-  def apply[T, K /* <: java.lang.String */](iteratee: K): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-  ] = js.native
-  def apply[T, K /* <: java.lang.String */](iteratee: K, collection: lodashLib.lodashMod.underscoreNs.Dictionary[T]): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-  ] = js.native
-  def apply[T, K /* <: java.lang.String */](iteratee: K, collection: lodashLib.lodashMod.underscoreNs.List[T]): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-  ] = js.native
-  def apply[T, K /* <: java.lang.String */](iteratee: K, collection: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-  ] = js.native
+  def apply[T, K /* <: java.lang.String */](iteratee: K): js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
+  def apply[T, K /* <: java.lang.String */](iteratee: K, collection: lodashLib.lodashMod.underscoreNs.Dictionary[T]): js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
+  def apply[T, K /* <: java.lang.String */](iteratee: K, collection: lodashLib.lodashMod.underscoreNs.List[T]): js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
+  def apply[T, K /* <: java.lang.String */](iteratee: K, collection: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
   def apply[T, TResult](iteratee: js.Function1[/* value */ T, TResult]): js.Array[TResult] = js.native
   def apply[T /* <: js.Object */, TResult](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       TResult
     ],
     collection: T

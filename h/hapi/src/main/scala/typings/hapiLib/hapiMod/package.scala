@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object hapiMod {
   type CachePolicyOptions[T] = catboxLib.catboxMod.PolicyOptionVariants[T] with hapiLib.Anon_Cache
   type DecorateName = java.lang.String | js.Symbol
-  type DecorationMethod[T] = js.ThisFunction1[/* this */ T, /* repeated */js.Any, js.Any]
+  type DecorationMethod[T] = js.ThisFunction1[/* this */ T, /* repeated */ js.Any, js.Any]
   type Dependencies = java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[java.lang.String]
   type LogEventHandler = js.Function2[
     /* event */ LogEvent, 
@@ -54,7 +54,7 @@ package object hapiMod {
   type ServerEventsApplication = java.lang.String | ServerEventsApplicationObject | podiumLib.podiumMod.Podium
   type ServerExtPointFunction = js.Function1[/* server */ Server, scala.Unit]
   type ServerExtType = hapiLib.hapiLibStrings.onPreStart | hapiLib.hapiLibStrings.onPostStart | hapiLib.hapiLibStrings.onPreStop | hapiLib.hapiLibStrings.onPostStop
-  type ServerMethod = js.Function1[/* repeated */js.Any, js.Promise[js.Any]]
+  type ServerMethod = js.Function1[/* repeated */ js.Any, js.Promise[js.Any]]
   type ServerRequestExtType = RouteRequestExtType | hapiLib.hapiLibStrings.onRequest
   type StartEventHandler = js.Function0[scala.Unit]
   type StopEventHandler = js.Function0[scala.Unit]

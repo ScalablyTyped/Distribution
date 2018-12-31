@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PinState extends js.Object {
   var analogChannel: scala.Double
   var mode: scala.Double

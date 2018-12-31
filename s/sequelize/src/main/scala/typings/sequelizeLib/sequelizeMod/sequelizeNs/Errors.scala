@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Sequelize provides a host of custom error classes, to allow you to do easier debugging. All of these errors
-     * are exposed on the sequelize object and the sequelize constructor. All sequelize errors inherit from the
-     * base JS error object.
-     */
-
+  * Sequelize provides a host of custom error classes, to allow you to do easier debugging. All of these errors
+  * are exposed on the sequelize object and the sequelize constructor. All sequelize errors inherit from the
+  * base JS error object.
+  */
 trait Errors extends js.Object {
   var AccessDeniedError: AccessDeniedError
   var ConnectionError: ConnectionError

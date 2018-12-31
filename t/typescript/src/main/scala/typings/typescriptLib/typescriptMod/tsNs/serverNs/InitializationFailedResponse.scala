@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InitializationFailedResponse extends TypingInstallerResponse {
   @JSName("kind")
   val kind_InitializationFailedResponse: EventInitializationFailed

@@ -11,53 +11,40 @@ class DraftOrders protected ()
   extends shopifyDashPrimeLib.distInfrastructureMod.BaseService {
   def this(shopDomain: java.lang.String, accessToken: java.lang.String) = this()
   /**
-       * Completes the draft order, transitioning it to a full order.
-       */
+    * Completes the draft order, transitioning it to a full order.
+    */
   def complete(id: scala.Double): js.Promise[shopifyDashPrimeLib.distModelsDraftUnderscoreOrderMod.DraftOrder] = js.native
-  /**
-       * Completes the draft order, transitioning it to a full order.
-       */
   def complete(id: scala.Double, paymentPending: scala.Boolean): js.Promise[shopifyDashPrimeLib.distModelsDraftUnderscoreOrderMod.DraftOrder] = js.native
   /**
-       * Counts the draft orders on the shop.
-       */
+    * Counts the draft orders on the shop.
+    */
   def count(): js.Promise[scala.Double] = js.native
-  /**
-       * Counts the draft orders on the shop.
-       */
   def count(options: js.Any): js.Promise[scala.Double] = js.native
   /**
-       * Creates a new draft order.
-       */
+    * Creates a new draft order.
+    */
   def create(order: stdLib.Partial[shopifyDashPrimeLib.distModelsDraftUnderscoreOrderMod.DraftOrder]): js.Promise[shopifyDashPrimeLib.distModelsDraftUnderscoreOrderMod.DraftOrder] = js.native
-  /**
-       * Creates a new draft order.
-       */
   def create(
     order: stdLib.Partial[shopifyDashPrimeLib.distModelsDraftUnderscoreOrderMod.DraftOrder],
     useCustomerDefaultAddress: scala.Boolean
   ): js.Promise[shopifyDashPrimeLib.distModelsDraftUnderscoreOrderMod.DraftOrder] = js.native
   /**
-       * Deletes the draft order with the given id.
-       */
+    * Deletes the draft order with the given id.
+    */
   def delete(id: scala.Double): js.Promise[scala.Unit] = js.native
   /**
-       * Retrieves the draft order with the given id.
-       */
+    * Retrieves the draft order with the given id.
+    */
   def get(id: scala.Double): js.Promise[shopifyDashPrimeLib.distModelsDraftUnderscoreOrderMod.DraftOrder] = js.native
   /**
-       * Gets a list of up to 250 of the shop's draft orders.
-       * @param options Options for filtering the results.
-       */
+    * Gets a list of up to 250 of the shop's draft orders.
+    * @param options Options for filtering the results.
+    */
   def list(): js.Promise[js.Array[shopifyDashPrimeLib.distModelsDraftUnderscoreOrderMod.DraftOrder]] = js.native
-  /**
-       * Gets a list of up to 250 of the shop's draft orders.
-       * @param options Options for filtering the results.
-       */
   def list(options: shopifyDashPrimeLib.distOptionsBaseMod.ListOptions): js.Promise[js.Array[shopifyDashPrimeLib.distModelsDraftUnderscoreOrderMod.DraftOrder]] = js.native
   /**
-       * Updates the draft order with the given id.
-       */
+    * Updates the draft order with the given id.
+    */
   def update(
     id: scala.Double,
     order: stdLib.Partial[shopifyDashPrimeLib.distModelsDraftUnderscoreOrderMod.DraftOrder]

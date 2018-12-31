@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IObjectWindowResult extends js.Object {
   val AccessControlList: IAccessControlList
   val ObjVer: IObjVer

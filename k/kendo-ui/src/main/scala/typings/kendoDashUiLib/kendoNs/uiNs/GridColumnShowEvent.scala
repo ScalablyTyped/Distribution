@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridColumnShowEvent extends GridEvent {
   var column: js.UndefOr[js.Any] = js.undefined
 }

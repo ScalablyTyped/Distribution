@@ -14,27 +14,21 @@ class Tabs ()
 @js.native
 object Tabs extends js.Object {
   /**
-           * Get Instance
-           */
+    * Get Instance
+    */
   def getInstance(elem: stdLib.Element): materializeDashCssLib.MNs.Tabs = js.native
   /**
-           * Init Tabses
-           */
+    * Init Tabses
+    */
   def init(els: materializeDashCssLib.MElements): js.Array[materializeDashCssLib.MNs.Tabs] = js.native
-  /**
-           * Init Tabses
-           */
   def init(
     els: materializeDashCssLib.MElements,
     options: stdLib.Partial[materializeDashCssLib.MNs.TabsOptions]
   ): js.Array[materializeDashCssLib.MNs.Tabs] = js.native
   /**
-           * Init Tabs
-           */
+    * Init Tabs
+    */
   def init(els: stdLib.Element): materializeDashCssLib.MNs.Tabs = js.native
-  /**
-           * Init Tabs
-           */
   def init(els: stdLib.Element, options: stdLib.Partial[materializeDashCssLib.MNs.TabsOptions]): materializeDashCssLib.MNs.Tabs = js.native
 }
 

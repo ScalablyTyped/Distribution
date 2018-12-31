@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISheet extends IPanel {
   /** [Config Option] (String) */
   var enter: js.UndefOr[java.lang.String] = js.undefined

@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait MetadataFactory[T] extends js.Object {
   var ngMetadataName: java.lang.String = js.native
   def apply(args: js.Any*): T = js.native
-  def isTypeOf(obj: js.Any): /* is T */scala.Boolean = js.native
+  def isTypeOf(obj: js.Any): /* is T */ scala.Boolean = js.native
 }
 

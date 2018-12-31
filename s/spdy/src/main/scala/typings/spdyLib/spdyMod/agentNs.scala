@@ -12,7 +12,6 @@ object agentNs extends js.Object {
   class Agent ()
     extends nodeLib.httpsMod.Agent
   
-  
   trait AgentOptions
     extends nodeLib.httpsMod.AgentOptions {
     var spdy: js.UndefOr[spdyLib.Anon_ProtocolsSsl] = js.undefined

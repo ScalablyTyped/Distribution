@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DPlayerDanmaku extends js.Object {
   var addition: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var api: java.lang.String

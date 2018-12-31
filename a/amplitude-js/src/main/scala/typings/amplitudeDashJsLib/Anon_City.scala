@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_City extends js.Object {
   var city: js.UndefOr[scala.Boolean] = js.undefined
   var country: js.UndefOr[scala.Boolean] = js.undefined

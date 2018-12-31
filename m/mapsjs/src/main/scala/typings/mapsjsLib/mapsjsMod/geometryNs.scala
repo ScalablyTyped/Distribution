@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 object geometryNs extends js.Object {
   /**
   	  * A polyline object which is a closed path geometry with one or more paths.
-        * @class polygon
-        */
+    * @class polygon
+    */
   @js.native
   class polygon protected ()
     extends mapsjsLib.mapsjsMod.geometry {
@@ -24,13 +24,6 @@ object geometryNs extends js.Object {
     		 * @returns {number} Area in square meters of the ring.
     		 */
     def getActualArea(): scala.Double = js.native
-    /**
-    		 * Calculates area of a ring in a polygon by index according 
-    		 * to the actual area. If no index is provided, uses the last ring
-    		 * in the polygon's ring collection.
-    		 * @param {number} [idx] Index of the ring for which to compute the area.
-    		 * @returns {number} Area in square meters of the ring.
-    		 */
     def getActualArea(idx: scala.Double): scala.Double = js.native
     /**
     		 * Calculates perimeter of a ring in a polygon by index according 
@@ -40,13 +33,6 @@ object geometryNs extends js.Object {
     		 * @returns {number} Length in meters of the perimeter of the ring.
     		 */
     def getActualPerimeter(): scala.Double = js.native
-    /**
-    		 * Calculates perimeter of a ring in a polygon by index according 
-    		 * to actual distance. If no index is provided, uses the last ring
-    		 * in the polygon's ring collection.
-    		 * @param {number} [idx] Index of the ring for which to compute the perimeter.
-    		 * @returns {number} Length in meters of the perimeter of the ring.
-    		 */
     def getActualPerimeter(idx: scala.Double): scala.Double = js.native
     /**
     		 * Gets the underlying geometry of the polygon.
@@ -114,8 +100,8 @@ object geometryNs extends js.Object {
   
   /**
   	 * A polyline object which is an open path geometry with one or more paths.
-       * @class polyline
-       */
+    * @class polyline
+    */
   @js.native
   class polyline protected ()
     extends mapsjsLib.mapsjsMod.geometry {
@@ -128,13 +114,6 @@ object geometryNs extends js.Object {
     		 * @returns {number} Distance in meters of the line.
     		 */
     def getActualDistance(): scala.Double = js.native
-    /**
-    		 * Calculates distance of a line in a polyline by index according 
-    		 * to actual distance. If no index is provided, uses the last line 
-    		 * in the polyline's set collection.
-    		 * @param {number} [idx] Index of the line for which to compute the distance.
-    		 * @returns {number} Distance in meters of the line.
-    		 */
     def getActualDistance(idx: scala.Double): scala.Double = js.native
     /**
     		 * Gets the underlying geometry of the polyline.

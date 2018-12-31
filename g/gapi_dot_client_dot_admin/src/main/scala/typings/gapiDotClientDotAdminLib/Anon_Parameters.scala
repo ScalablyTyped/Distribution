@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Parameters extends js.Object {
   /** Name of event. */
   var name: js.UndefOr[java.lang.String] = js.undefined

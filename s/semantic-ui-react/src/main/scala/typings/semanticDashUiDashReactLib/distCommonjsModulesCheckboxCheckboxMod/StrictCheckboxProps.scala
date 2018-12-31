@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictCheckboxProps extends js.Object {
   /** An element type to render as (string or function). */
   var as: js.UndefOr[js.Any] = js.undefined
@@ -32,11 +31,11 @@ trait StrictCheckboxProps extends js.Object {
   /** The HTML input name. */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
-     * Called when the user attempts to change the checked state.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props and proposed checked/indeterminate state.
-     */
+    * Called when the user attempts to change the checked state.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props and proposed checked/indeterminate state.
+    */
   var onChange: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLInputElement], 
@@ -45,11 +44,11 @@ trait StrictCheckboxProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called when the checkbox or label is clicked.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props and current checked/indeterminate state.
-     */
+    * Called when the checkbox or label is clicked.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props and current checked/indeterminate state.
+    */
   var onClick: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement, reactLib.NativeMouseEvent], 
@@ -58,11 +57,11 @@ trait StrictCheckboxProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called when the user presses down on the mouse.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props and current checked/indeterminate state.
-     */
+    * Called when the user presses down on the mouse.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props and current checked/indeterminate state.
+    */
   var onMouseDown: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement, reactLib.NativeMouseEvent], 
@@ -71,11 +70,11 @@ trait StrictCheckboxProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called when the user releases the mouse.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props and current checked/indeterminate state.
-     */
+    * Called when the user releases the mouse.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props and current checked/indeterminate state.
+    */
   var onMouseUp: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLInputElement, reactLib.NativeMouseEvent], 

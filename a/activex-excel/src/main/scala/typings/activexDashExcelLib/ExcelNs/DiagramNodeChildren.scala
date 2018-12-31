@@ -15,19 +15,11 @@ trait DiagramNodeChildren extends js.Object {
   val Parent: js.Any = js.native
   def apply(Index: js.Any): DiagramNode = js.native
   /**
-           * @param Index [Index=-1]
-           * @param nodeType [nodeType=1]
-           */
+    * @param Index [Index=-1]
+    * @param nodeType [nodeType=1]
+    */
   def AddNode(): DiagramNode = js.native
-  /**
-           * @param Index [Index=-1]
-           * @param nodeType [nodeType=1]
-           */
   def AddNode(Index: js.Any): DiagramNode = js.native
-  /**
-           * @param Index [Index=-1]
-           * @param nodeType [nodeType=1]
-           */
   def AddNode(Index: js.Any, nodeType: activexDashOfficeLib.OfficeNs.MsoDiagramNodeType): DiagramNode = js.native
   def Item(Index: js.Any): DiagramNode = js.native
   def SelectAll(): scala.Unit = js.native

@@ -5,86 +5,85 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaginationProps extends js.Object {
   /**
-       * Currently focused dot
-       */
+    * Currently focused dot
+    */
   var activeDotIndex: scala.Double
   /**
-       * Opacity of the dot when tapped. The prop has no effect if tappableDots hasn't been set to true
-       */
+    * Opacity of the dot when tapped. The prop has no effect if tappableDots hasn't been set to true
+    */
   var activeOpacity: js.UndefOr[scala.Double] = js.undefined
   /**
-       * Reference to the Carousel component to which pagination is linked.
-       * Needed only when setting tappableDots to true
-       */
+    * Reference to the Carousel component to which pagination is linked.
+    * Needed only when setting tappableDots to true
+    */
   var carouselRef: js.UndefOr[
     reactLib.reactMod.Component[reactDashNativeLib.reactDashNativeMod.FlatListProps[_], js.Object, _]
   ] = js.undefined
   /**
-       * Style for dots' container that will be merged with the default one
-       */
+    * Style for dots' container that will be merged with the default one
+    */
   var containerStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
   /**
-       * Background color of the active dot.
-       * Use this if you want to animate the change between active and inactive colors,
-       * and always in conjunction with inactiveDotColor
-       */
+    * Background color of the active dot.
+    * Use this if you want to animate the change between active and inactive colors,
+    * and always in conjunction with inactiveDotColor
+    */
   var dotColor: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Style of each dot's container.
-       * Use this if you need to specify styles that wouldn't have any effect when defined with dotStyle (such as flex)
-       */
+    * Style of each dot's container.
+    * Use this if you need to specify styles that wouldn't have any effect when defined with dotStyle (such as flex)
+    */
   var dotContainerStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
   /**
-       * Optional custom active dot element that will replace the default one.
-       * The element will receive a prop active set to true as well as a prop index
-       */
+    * Optional custom active dot element that will replace the default one.
+    * The element will receive a prop active set to true as well as a prop index
+    */
   var dotElement: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-       * Dots' style that will be merged with the default one
-       */
+    * Dots' style that will be merged with the default one
+    */
   var dotStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
   /**
-       * Number of dots to display
-       */
+    * Number of dots to display
+    */
   var dotsLength: scala.Double
   /**
-       * Background color of the inactive dots.
-       * Use this if you want to animate the change between active and inactive colors, and always in conjunction with dotColor
-       */
+    * Background color of the inactive dots.
+    * Use this if you want to animate the change between active and inactive colors, and always in conjunction with dotColor
+    */
   var inactiveDotColor: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Optional custom inactive dot element that will replace the default one.
-       * The element will receive a prop active set to false as well as a prop index
-       */
+    * Optional custom inactive dot element that will replace the default one.
+    * The element will receive a prop active set to false as well as a prop index
+    */
   var inactiveDotElement: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-       * Value of the opacity effect applied to inactive dots
-       */
+    * Value of the opacity effect applied to inactive dots
+    */
   var inactiveDotOpacity: js.UndefOr[scala.Double] = js.undefined
   /**
-       * Value of the 'scale' transform applied to inactive dots
-       */
+    * Value of the 'scale' transform applied to inactive dots
+    */
   var inactiveDotScale: js.UndefOr[scala.Double] = js.undefined
   /**
-       * Dots' style that will be applied to inactive elements
-       */
+    * Dots' style that will be applied to inactive elements
+    */
   var inactiveDotStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
   /**
-       * Function that gives you complete control over pagination's rendering.
-       * It will receive three parameters : (activeIndex, total, context).
-       * This can be especially useful in order to replace dots with numbers
-       */
+    * Function that gives you complete control over pagination's rendering.
+    * It will receive three parameters : (activeIndex, total, context).
+    * This can be especially useful in order to replace dots with numbers
+    */
   var renderDots: js.UndefOr[
     js.Function3[
       /* activeIndex */ scala.Double, 
@@ -94,13 +93,13 @@ trait PaginationProps extends js.Object {
     ]
   ] = js.undefined
   /**
-       * Make default dots tappable, e.g. your carousel will slide to the corresponding item.
-       * Note that carouselRef must be specified for this to work
-       */
+    * Make default dots tappable, e.g. your carousel will slide to the corresponding item.
+    * Note that carouselRef must be specified for this to work
+    */
   var tappableDots: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Whether to layout dots vertically or horizontally
-       */
+    * Whether to layout dots vertically or horizontally
+    */
   var vertical: js.UndefOr[scala.Boolean] = js.undefined
 }
 

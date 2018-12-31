@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChangedIdentities extends js.Object {
   /**
-       * Changed Identities
-       */
+    * Changed Identities
+    */
   var identities: js.Array[Identity]
   /**
-       * Last Identity SequenceId
-       */
+    * Last Identity SequenceId
+    */
   var sequenceContext: ChangedIdentitiesContext
 }
 

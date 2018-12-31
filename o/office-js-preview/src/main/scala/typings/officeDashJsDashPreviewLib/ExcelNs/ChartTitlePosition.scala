@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 sealed trait ChartTitlePosition extends js.Object
 
 /**
-     *
-     * Represents the position of chart title.
-     *
-     * [Api set: ExcelApi 1.7]
-     */
+  *
+  * Represents the position of chart title.
+  *
+  * [Api set: ExcelApi 1.7]
+  */
 @JSGlobal("Excel.ChartTitlePosition")
 @js.native
 object ChartTitlePosition extends js.Object {

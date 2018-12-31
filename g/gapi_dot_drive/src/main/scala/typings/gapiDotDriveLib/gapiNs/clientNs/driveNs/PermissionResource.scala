@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PermissionResource extends js.Object {
   var additionalRoles: js.Array[java.lang.String]
   var authKey: java.lang.String

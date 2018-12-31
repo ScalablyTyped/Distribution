@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFileClass extends js.Object {
   var DisplayName: java.lang.String
   val DotAndExtension: java.lang.String

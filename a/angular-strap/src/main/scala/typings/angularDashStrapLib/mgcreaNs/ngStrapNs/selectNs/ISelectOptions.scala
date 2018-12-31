@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISelectOptions extends js.Object {
   var allNoneButtons: js.UndefOr[scala.Boolean] = js.undefined
   var allText: js.UndefOr[java.lang.String] = js.undefined

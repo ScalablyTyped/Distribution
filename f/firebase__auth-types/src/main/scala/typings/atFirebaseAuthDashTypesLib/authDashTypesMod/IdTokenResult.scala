@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IdTokenResult extends js.Object {
   var authTime: java.lang.String
   var claims: org.scalablytyped.runtime.StringDictionary[js.Any]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IdParamName[ClientIdName /* <: java.lang.String */] extends js.Object {
   /** Service registered client id. Required. */
   var id: java.lang.String

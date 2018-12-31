@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KnockoutValidationRuleDefinitions
   extends /* ruleName */ org.scalablytyped.runtime.StringDictionary[KnockoutValidationRuleDefinition | KnockoutValidationAsyncRuleDefinition] {
   var date: KnockoutValidationRuleDefinition

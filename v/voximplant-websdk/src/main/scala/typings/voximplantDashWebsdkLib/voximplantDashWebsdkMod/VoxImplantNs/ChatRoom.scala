@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	*	Chat room
 	*/
-
 trait ChatRoom extends js.Object {
   /**
   		* Chat room id

@@ -13,15 +13,17 @@ object libCommonCommonModMembers extends js.Object {
   val extend: atUirouterCoreLib.Anon_Target = js.native
   val forEach: js.Any = js.native
   val fromJson: js.Any = js.native
-  val inArray: js.Function1[/* array */ js.Array[js.Any], js.Function1[/* obj */ js.Any, scala.Boolean]] = js.native
+  val inArray: atUirouterCoreLib.Anon_ArrayObj = js.native
   var mapObj: js.Function3[
     /* collection */ org.scalablytyped.runtime.StringDictionary[js.Any], 
     /* callback */ Mapper[js.Any, js.Any], 
-    /* target */ js.UndefOr[js.Any], 
+    /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof collection */ /* target */ js.UndefOr[
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof collection */ js.Any
+    ], 
     org.scalablytyped.runtime.StringDictionary[js.Any]
   ] = js.native
-  val pushTo: js.Function1[/* arr */ js.Array[js.Any], js.Function1[/* val */ js.Any, js.Any]] = js.native
-  val removeFrom: js.Function1[/* array */ js.Array[js.Any], js.Function1[/* obj */ js.Any, js.Array[js.Any]]] = js.native
+  val pushTo: atUirouterCoreLib.Anon_Arr = js.native
+  val removeFrom: atUirouterCoreLib.Anon_Array = js.native
   val root: js.Any = js.native
   val toJson: js.Any = js.native
   def _extend(toObj: Obj, fromObjs: Obj*): js.Any = js.native
@@ -75,9 +77,17 @@ object libCommonCommonModMembers extends js.Object {
   def inherit(parent: Obj): js.Any = js.native
   def inherit(parent: Obj, extra: Obj): js.Any = js.native
   def map[T, U](collection: js.Array[T], callback: Mapper[T, U]): js.Array[U] = js.native
-  def map[T, U](collection: js.Array[T], callback: Mapper[T, U], target: js.Any): js.Array[U] = js.native
+  def map[T, U](
+    collection: js.Array[T],
+    callback: Mapper[T, U],
+    target: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof collection */ js.Any
+  ): js.Array[U] = js.native
   def map[T, U](collection: org.scalablytyped.runtime.StringDictionary[T], callback: Mapper[T, U]): org.scalablytyped.runtime.StringDictionary[U] = js.native
-  def map[T, U](collection: org.scalablytyped.runtime.StringDictionary[T], callback: Mapper[T, U], target: js.Any): org.scalablytyped.runtime.StringDictionary[U] = js.native
+  def map[T, U](
+    collection: org.scalablytyped.runtime.StringDictionary[T],
+    callback: Mapper[T, U],
+    target: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof collection */ js.Any
+  ): org.scalablytyped.runtime.StringDictionary[U] = js.native
   def mergeR(memo: Obj, item: Obj): Obj = js.native
   def noop(): js.Any = js.native
   def omit(obj: Obj, propNames: js.Array[java.lang.String]): Obj = js.native

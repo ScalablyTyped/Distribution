@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMacAlgorithmProvider extends js.Object {
   var algorithmName: java.lang.String
   var macLength: scala.Double

@@ -6,12 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * {@link http://gruntjs.com/configuring-tasks}
-         *
-         * A TaskConfig can be either be a full config or a compacted files config.
-         * @see ITaskCompactOptions
-         */
-
+  * {@link http://gruntjs.com/configuring-tasks}
+  *
+  * A TaskConfig can be either be a full config or a compacted files config.
+  * @see ITaskCompactOptions
+  */
 trait ITaskOptions extends js.Object {
   // files?: grunt.file.IFilesArray
   // files?: grunt.file.IFilesMap

@@ -14,14 +14,14 @@ abstract class MobileBroadbandDeviceService () extends js.Object {
   /** Gets a list of supported device service commands for the mobile broadband device service. */
   var supportedCommands: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[scala.Double] = js.native
   /**
-                   * Opens a new MobileBroadbandDeviceServiceCommandSession for the mobile broadband device service.
-                   * @return A new command session for the mobile broadband device service.
-                   */
+    * Opens a new MobileBroadbandDeviceServiceCommandSession for the mobile broadband device service.
+    * @return A new command session for the mobile broadband device service.
+    */
   def openCommandSession(): MobileBroadbandDeviceServiceCommandSession = js.native
   /**
-                   * Opens a new MobileBroadbandDeviceServiceDataSession for the mobile broadband device service.
-                   * @return A new data session for the Mobile Broadband device service.
-                   */
+    * Opens a new MobileBroadbandDeviceServiceDataSession for the mobile broadband device service.
+    * @return A new data session for the Mobile Broadband device service.
+    */
   def openDataSession(): MobileBroadbandDeviceServiceDataSession = js.native
 }
 

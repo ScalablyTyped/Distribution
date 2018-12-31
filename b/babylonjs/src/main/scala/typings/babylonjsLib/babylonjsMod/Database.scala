@@ -6,33 +6,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Class used to enable access to IndexedDB
-     * @see @https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API
-     */
+  * Class used to enable access to IndexedDB
+  * @see @https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API
+  */
 @JSImport("babylonjs", "Database")
 @js.native
 class Database protected ()
   extends babylonjsLib.BABYLONNs.Database {
   /**
-           * Creates a new Database
-           * @param urlToScene defines the url to load the scene
-           * @param callbackManifestChecked defines the callback to use when manifest is checked
-           * @param disableManifestCheck defines a boolean indicating that we want to skip the manifest validation (it will be considered validated and up to date)
-           */
+    * Creates a new Database
+    * @param urlToScene defines the url to load the scene
+    * @param callbackManifestChecked defines the callback to use when manifest is checked
+    * @param disableManifestCheck defines a boolean indicating that we want to skip the manifest validation (it will be considered validated and up to date)
+    */
   def this(urlToScene: java.lang.String, callbackManifestChecked: js.Function1[/* checked */ scala.Boolean, _]) = this()
-  /**
-           * Creates a new Database
-           * @param urlToScene defines the url to load the scene
-           * @param callbackManifestChecked defines the callback to use when manifest is checked
-           * @param disableManifestCheck defines a boolean indicating that we want to skip the manifest validation (it will be considered validated and up to date)
-           */
   def this(urlToScene: java.lang.String, callbackManifestChecked: js.Function1[/* checked */ scala.Boolean, _], disableManifestCheck: scala.Boolean) = this()
 }
 
 /**
-     * Class used to enable access to IndexedDB
-     * @see @https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API
-     */
+  * Class used to enable access to IndexedDB
+  * @see @https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API
+  */
 @JSImport("babylonjs", "Database")
 @js.native
 object Database extends js.Object {

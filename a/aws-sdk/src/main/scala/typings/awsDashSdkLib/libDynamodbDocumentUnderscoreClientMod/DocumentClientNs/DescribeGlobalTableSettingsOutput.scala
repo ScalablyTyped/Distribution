@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DescribeGlobalTableSettingsOutput extends js.Object {
   /**
-       * The name of the global table.
-       */
+    * The name of the global table.
+    */
   var GlobalTableName: js.UndefOr[TableName] = js.undefined
   /**
-       * The region specific settings for the global table.
-       */
+    * The region specific settings for the global table.
+    */
   var ReplicaSettings: js.UndefOr[ReplicaSettingsDescriptionList] = js.undefined
 }
 

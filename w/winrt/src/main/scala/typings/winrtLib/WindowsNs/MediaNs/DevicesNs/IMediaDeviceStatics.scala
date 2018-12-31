@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMediaDeviceStatics extends js.Object {
   var ondefaultaudiocapturedevicechanged: js.Any
   var ondefaultaudiorenderdevicechanged: js.Any

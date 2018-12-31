@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("virtual-dom/vnode/is-widget", JSImport.Namespace)
 @js.native
 object vnodeIsDashWidgetMod extends js.Object {
-  def apply(vTree: virtualDashDomLib.VirtualDOMNs.VTree): /* is Widget */scala.Boolean = js.native
+  def apply(vTree: virtualDashDomLib.VirtualDOMNs.VTree): /* is virtual-dom.VirtualDOM.Widget */ scala.Boolean = js.native
 }
 

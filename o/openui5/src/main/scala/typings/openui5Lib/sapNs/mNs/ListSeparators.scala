@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ListSeparators extends js.Object
 
 /**
-     * Defines which separator style will be applied for the items.
-    */
+  * Defines which separator style will be applied for the items.
+  */
 @JSGlobal("sap.m.ListSeparators")
 @js.native
 object ListSeparators extends js.Object {

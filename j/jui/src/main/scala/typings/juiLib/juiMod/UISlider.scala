@@ -10,24 +10,24 @@ trait UISlider extends js.Object {
   def apply(selector: js.Any): this.type = js.native
   def apply(selector: js.Any, options: juiLib.Anon_FormatStep): this.type = js.native
   /**
-       * get FromHandle's value
-       *
-       * @return value
-       */
+    * get FromHandle's value
+    *
+    * @return value
+    */
   def getFromValue(): scala.Double = js.native
   /**
-       * get ToHandle's value
-       *
-       * @return value
-       */
+    * get ToHandle's value
+    *
+    * @return value
+    */
   def getToValue(): scala.Double = js.native
   /**
-       * set FromHandle's value
-       */
+    * set FromHandle's value
+    */
   def setFromValue(value: scala.Double): scala.Unit = js.native
   /**
-       * set ToHandle's value
-       */
+    * set ToHandle's value
+    */
   def setToValue(value: scala.Double): scala.Unit = js.native
 }
 

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents device settings for app sync relationships. */
 @JSGlobal("Windows.ApplicationModel.UserDataAccounts.SystemAccess.DeviceAccountConfiguration")
 @js.native
+/** Initializes a new instance of the DeviceAccountConfiguration class. */
 class DeviceAccountConfiguration () extends js.Object {
   /** Gets or sets the name that identifies the device account. */
   var accountName: java.lang.String = js.native

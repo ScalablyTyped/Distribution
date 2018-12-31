@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebBrowser_V1_NewWindow_Parameter extends js.Object {
   val Flags: scala.Double
   val Headers: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RemarketingAudienceResource extends js.Object {
   /** Delete a remarketing audience. */
   def delete(request: gapiDotClientDotAnalyticsLib.Anon_RemarketingAudienceId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

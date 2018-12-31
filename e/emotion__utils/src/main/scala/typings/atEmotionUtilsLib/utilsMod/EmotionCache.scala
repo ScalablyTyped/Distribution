@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EmotionCache extends js.Object {
   var compat: js.UndefOr[atEmotionUtilsLib.atEmotionUtilsLibNumbers.`true`] = js.undefined
   var inserted: org.scalablytyped.runtime.StringDictionary[java.lang.String | atEmotionUtilsLib.atEmotionUtilsLibNumbers.`true`]

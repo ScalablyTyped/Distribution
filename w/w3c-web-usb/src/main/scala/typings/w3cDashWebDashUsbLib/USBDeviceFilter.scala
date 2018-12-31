@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait USBDeviceFilter extends js.Object {
   var classCode: js.UndefOr[scala.Double] = js.undefined
   var productId: js.UndefOr[scala.Double] = js.undefined

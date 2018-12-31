@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Lifecycle[Attrs, State]
   extends /** WORKAROUND: TypeScript 2.4 does not allow extending an interface with all-optional properties. */
 /* _ */ org.scalablytyped.runtime.NumberDictionary[js.Any] {

@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TeamProjectCollectionReference extends js.Object {
   /**
-       * Collection Id.
-       */
+    * Collection Id.
+    */
   var id: java.lang.String
   /**
-       * Collection Name.
-       */
+    * Collection Name.
+    */
   var name: java.lang.String
   /**
-       * Collection REST Url.
-       */
+    * Collection REST Url.
+    */
   var url: java.lang.String
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Numeric extends js.Object {
   var dataType: java.lang.String
   var editor: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Numeric

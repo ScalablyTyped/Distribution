@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditorPasteEvent extends EditorEvent {
   var html: js.UndefOr[js.Any] = js.undefined
 }

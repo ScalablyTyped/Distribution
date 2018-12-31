@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IItem
   extends senchaUnderscoreTouchLib.ExtNs.IDecorator {
   /** [Method] Returns the value of translatable

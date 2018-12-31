@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AsyncOpts extends Opts {
   /** function to asynchronously test whether a file exists */
   var isFile: js.UndefOr[

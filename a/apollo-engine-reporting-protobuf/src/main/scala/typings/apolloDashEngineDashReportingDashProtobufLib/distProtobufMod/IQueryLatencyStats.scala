@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IQueryLatencyStats extends js.Object {
   /** QueryLatencyStats cacheHits */
   var cacheHits: js.UndefOr[scala.Double | scala.Null] = js.undefined

@@ -200,41 +200,26 @@ trait TableView extends View {
   			 * Appends a single row or an array of rows to the end of the table.
   			 */
   def appendRow(row: js.Any): scala.Unit = js.native
-  /**
-  			 * Appends a single row or an array of rows to the end of the table.
-  			 */
   def appendRow(row: js.Any, animation: titaniumLib.TableViewAnimationProperties): scala.Unit = js.native
   /**
   			 * Appends a single section or an array of sections to the end of the table.
   			 */
   def appendSection(section: js.Any): scala.Unit = js.native
-  /**
-  			 * Appends a single section or an array of sections to the end of the table.
-  			 */
   def appendSection(section: js.Any, animation: titaniumLib.TableViewAnimationProperties): scala.Unit = js.native
   /**
   			 * Deletes an existing row.
   			 */
   def deleteRow(row: scala.Double): scala.Unit = js.native
-  /**
-  			 * Deletes an existing row.
-  			 */
   def deleteRow(row: scala.Double, animation: titaniumLib.TableViewAnimationProperties): scala.Unit = js.native
   /**
   			 * Deletes an existing row.
   			 */
   def deleteRow(row: TableViewRow): scala.Unit = js.native
-  /**
-  			 * Deletes an existing row.
-  			 */
   def deleteRow(row: TableViewRow, animation: titaniumLib.TableViewAnimationProperties): scala.Unit = js.native
   /**
   			 * Deletes an existing section.
   			 */
   def deleteSection(section: scala.Double): scala.Unit = js.native
-  /**
-  			 * Deletes an existing section.
-  			 */
   def deleteSection(section: scala.Double, animation: titaniumLib.TableViewAnimationProperties): scala.Unit = js.native
   /**
   			 * Programmatically deselects a row.
@@ -424,51 +409,32 @@ trait TableView extends View {
   			 * Inserts a row after another row.
   			 */
   def insertRowAfter(index: scala.Double, row: js.Any): scala.Unit = js.native
-  /**
-  			 * Inserts a row after another row.
-  			 */
   def insertRowAfter(index: scala.Double, row: js.Any, animation: titaniumLib.TableViewAnimationProperties): scala.Unit = js.native
   /**
   			 * Inserts a row before another row.
   			 */
   def insertRowBefore(index: scala.Double, row: js.Any): scala.Unit = js.native
-  /**
-  			 * Inserts a row before another row.
-  			 */
   def insertRowBefore(index: scala.Double, row: js.Any, animation: titaniumLib.TableViewAnimationProperties): scala.Unit = js.native
   /**
   			 * Inserts a section after another section.
   			 */
   def insertSectionAfter(index: scala.Double, section: js.Any): scala.Unit = js.native
-  /**
-  			 * Inserts a section after another section.
-  			 */
   def insertSectionAfter(index: scala.Double, section: js.Any, animation: titaniumLib.TableViewAnimationProperties): scala.Unit = js.native
   /**
   			 * Inserts a section before another section.
   			 */
   def insertSectionBefore(index: scala.Double, section: js.Any): scala.Unit = js.native
-  /**
-  			 * Inserts a section before another section.
-  			 */
   def insertSectionBefore(index: scala.Double, section: js.Any, animation: titaniumLib.TableViewAnimationProperties): scala.Unit = js.native
   /**
   			 * Scrolls the table view to ensure that the specified row is on screen.
   			 */
   def scrollToIndex(index: scala.Double): scala.Unit = js.native
-  /**
-  			 * Scrolls the table view to ensure that the specified row is on screen.
-  			 */
   def scrollToIndex(index: scala.Double, animation: titaniumLib.TableViewAnimationProperties): scala.Unit = js.native
   /**
   			 * Scrolls the table to a specific top position where 0 is the topmost y position in the
   			 * table view.
   			 */
   def scrollToTop(top: scala.Double): scala.Unit = js.native
-  /**
-  			 * Scrolls the table to a specific top position where 0 is the topmost y position in the
-  			 * table view.
-  			 */
   def scrollToTop(top: scala.Double, animation: titaniumLib.TableViewAnimationProperties): scala.Unit = js.native
   /**
   			 * Programmatically selects a row. In Android, it sets the currently selected item. If in touch mode,
@@ -488,9 +454,6 @@ trait TableView extends View {
   			 * Sets this tableview's content insets.
   			 */
   def setContentInsets(edgeInsets: titaniumLib.TableViewEdgeInsets): scala.Unit = js.native
-  /**
-  			 * Sets this tableview's content insets.
-  			 */
   def setContentInsets(edgeInsets: titaniumLib.TableViewEdgeInsets, animated: titaniumLib.TableViewContentInsetOption): scala.Unit = js.native
   /**
   			 * Sets the value of the content offset of the table view without animation by default.

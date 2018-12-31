@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SigmaConfigs extends js.Object {
   var container: js.UndefOr[stdLib.Element] = js.undefined
   var graph: js.UndefOr[GraphData] = js.undefined

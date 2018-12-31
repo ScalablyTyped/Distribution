@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChooserFile extends js.Object {
   // Size of the file in bytes.
   var bytes: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReCAPTCHAProps extends js.Object {
   /**
   	 * Optional. The badge location for g-recaptcha with size of "invisible".

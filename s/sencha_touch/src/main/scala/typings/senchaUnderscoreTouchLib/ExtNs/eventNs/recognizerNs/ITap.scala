@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITap extends IRecognizer {
   /** [Method] Returns the value of moveDistance
   		* @returns Number

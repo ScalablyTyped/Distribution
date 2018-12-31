@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextEditorComponent extends js.Object {
   def pixelPositionForMouseEvent(event: atomLib.Anon_ClientY): PixelPosition
   /** Does not clip screenPosition, unlike similar method on TextEditorElement */

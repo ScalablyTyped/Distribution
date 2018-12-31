@@ -13,18 +13,14 @@ trait CollectionBase[T /* <: Model[_] */] extends Events[T] {
   def add(models: js.Array[org.scalablytyped.runtime.StringDictionary[_] | T], options: CollectionAddOptions): Collection[T] = js.native
   // lodash methods
   def all(): scala.Boolean = js.native
-  // lodash methods
   def all(
     predicate: (lodashLib.lodashMod.underscoreNs.DictionaryIterator[T, scala.Boolean]) | (lodashLib.lodashMod.underscoreNs.ListIterator[T, scala.Boolean])
   ): scala.Boolean = js.native
-  // lodash methods
   def all(
     predicate: (lodashLib.lodashMod.underscoreNs.DictionaryIterator[T, scala.Boolean]) | (lodashLib.lodashMod.underscoreNs.ListIterator[T, scala.Boolean]),
     thisArg: js.Any
   ): scala.Boolean = js.native
-  // lodash methods
   def all(predicate: java.lang.String): scala.Boolean = js.native
-  // lodash methods
   def all(predicate: java.lang.String, thisArg: js.Any): scala.Boolean = js.native
   def all[R /* <: js.Object */](predicate: R): scala.Boolean = js.native
   @JSName("all")
@@ -204,22 +200,14 @@ trait CollectionBase[T /* <: Model[_] */] extends Events[T] {
   // See https://github.com/DefinitelyTyped/DefinitelyTyped/blob/1ec3d51/lodash/lodash-3.10.d.ts#L7119
   // See https://github.com/Microsoft/TypeScript/blob/v1.8.10/lib/lib.core.es7.d.ts#L1122
   def map[U](): js.Array[U] = js.native
-  // See https://github.com/DefinitelyTyped/DefinitelyTyped/blob/1ec3d51/lodash/lodash-3.10.d.ts#L7119
-  // See https://github.com/Microsoft/TypeScript/blob/v1.8.10/lib/lib.core.es7.d.ts#L1122
   def map[U](
     predicate: (lodashLib.lodashMod.underscoreNs.DictionaryIterator[T, U]) | (lodashLib.lodashMod.underscoreNs.ListIterator[T, U])
   ): js.Array[U] = js.native
-  // See https://github.com/DefinitelyTyped/DefinitelyTyped/blob/1ec3d51/lodash/lodash-3.10.d.ts#L7119
-  // See https://github.com/Microsoft/TypeScript/blob/v1.8.10/lib/lib.core.es7.d.ts#L1122
   def map[U](
     predicate: (lodashLib.lodashMod.underscoreNs.DictionaryIterator[T, U]) | (lodashLib.lodashMod.underscoreNs.ListIterator[T, U]),
     thisArg: js.Any
   ): js.Array[U] = js.native
-  // See https://github.com/DefinitelyTyped/DefinitelyTyped/blob/1ec3d51/lodash/lodash-3.10.d.ts#L7119
-  // See https://github.com/Microsoft/TypeScript/blob/v1.8.10/lib/lib.core.es7.d.ts#L1122
   def map[U](predicate: java.lang.String): js.Array[U] = js.native
-  // See https://github.com/DefinitelyTyped/DefinitelyTyped/blob/1ec3d51/lodash/lodash-3.10.d.ts#L7119
-  // See https://github.com/Microsoft/TypeScript/blob/v1.8.10/lib/lib.core.es7.d.ts#L1122
   def map[U](predicate: java.lang.String, thisArg: js.Any): js.Array[U] = js.native
   def max(): T = js.native
   def max(predicate: java.lang.String): T = js.native

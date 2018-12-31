@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Styles extends js.Object {
   var bmBurgerBars: stdLib.Partial[stdLib.CSSStyleDeclaration]
   var bmBurgerButton: stdLib.Partial[stdLib.CSSStyleDeclaration]

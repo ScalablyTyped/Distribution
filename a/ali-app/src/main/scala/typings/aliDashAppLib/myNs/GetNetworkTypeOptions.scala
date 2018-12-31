@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion
 //#region 网络状态 https://docs.alipay.com/mini/api/network-status
-
 trait GetNetworkTypeOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")

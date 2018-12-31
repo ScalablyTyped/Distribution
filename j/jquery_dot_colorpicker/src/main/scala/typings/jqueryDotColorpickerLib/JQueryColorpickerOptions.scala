@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JQueryColorpickerOptions extends js.Object {
   var alpha: js.UndefOr[scala.Boolean] = js.undefined
   var altAlpha: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SourcePosition extends js.Object {
   // Column number starts with 0.
   var column: scala.Double

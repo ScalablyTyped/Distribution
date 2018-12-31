@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SubscriptionContentDetails extends js.Object {
   /** The type of activity this subscription is for (only uploads, everything). */
   var activityType: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SPFRecord extends js.Object {
   var SPFHost: java.lang.String
   var SPFTextValue: java.lang.String

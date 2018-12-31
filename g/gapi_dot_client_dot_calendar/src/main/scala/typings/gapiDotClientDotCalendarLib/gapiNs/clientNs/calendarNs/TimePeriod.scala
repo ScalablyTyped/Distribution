@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimePeriod extends js.Object {
   /** The (exclusive) end of the time period. */
   var end: js.UndefOr[java.lang.String] = js.undefined

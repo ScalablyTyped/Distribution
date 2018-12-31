@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFeature extends js.Object {
   /** [Property] (String) */
   var abstractsummary: js.UndefOr[java.lang.String] = js.undefined

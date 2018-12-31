@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait AreaClickEvent
   extends stdLib.Event {
   /**
-           * A pointer to the nearest point on the graph
-           */
+    * A pointer to the nearest point on the graph
+    */
   var point: PointObject = js.native
 }
 

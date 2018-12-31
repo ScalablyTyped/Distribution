@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait jQRangeSliderScale extends js.Object {
   var first: js.UndefOr[js.Function2[/* min */ scala.Double, /* max */ scala.Double, scala.Double]] = js.undefined
    // 'true' to stop scale generating ticks from a given value

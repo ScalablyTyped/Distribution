@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReactInfiniteCalendarProps extends js.Object {
   var Component: js.UndefOr[CalendarClass] = js.undefined
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined

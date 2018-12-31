@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object zeroclipboardLibMembers extends js.Object {
   /**
-   * [ZeroClipboard description]
-   * @type {ZC.ZeroClipboardStatic}
-   */
+    * [ZeroClipboard description]
+    * @type {ZC.ZeroClipboardStatic}
+    */
   var ZeroClipboard: zeroclipboardLib.ZCNs.ZeroClipboardStatic = js.native
 }
 

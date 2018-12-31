@@ -12,6 +12,6 @@ object WebdriverIONsMembers extends js.Object {
   def multiremote(options: MultiRemoteOptions): Client[scala.Unit] = js.native
   def remote(): Client[scala.Unit] = js.native
   def remote(options: Options): Client[scala.Unit] = js.native
-  def remote(options: Options, modifier: js.Function1[/* repeated */js.Any, _]): Client[scala.Unit] = js.native
+  def remote(options: Options, modifier: js.Function1[/* repeated */ js.Any, _]): Client[scala.Unit] = js.native
 }
 

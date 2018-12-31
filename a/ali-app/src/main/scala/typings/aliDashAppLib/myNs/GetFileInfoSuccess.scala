@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetFileInfoSuccess extends js.Object {
   /** 摘要结果 */
   var digest: java.lang.String

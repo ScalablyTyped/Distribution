@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ComputeEngine extends js.Object {
   /** The names of the disks that were created for this pipeline. */
   var diskNames: js.UndefOr[js.Array[java.lang.String]] = js.undefined

@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation._
 //
 //  https://github.com/sequelize/sequelize/blob/v3.4.1/lib/query-types.js
 //
-
 trait QueryTypes extends js.Object {
    // 'BULKUPDATE'
   var BULKDELETE: java.lang.String

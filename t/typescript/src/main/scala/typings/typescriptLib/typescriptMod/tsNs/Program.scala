@@ -8,75 +8,25 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Program extends ScriptReferenceHost {
   /**
-           * Emits the JavaScript and declaration files.  If targetSourceFile is not specified, then
-           * the JavaScript and declaration files will be produced for all the files in this program.
-           * If targetSourceFile is specified, then only the JavaScript and declaration for that
-           * specific file will be generated.
-           *
-           * If writeFile is not specified then the writeFile callback from the compiler host will be
-           * used for writing the JavaScript and declaration files.  Otherwise, the writeFile parameter
-           * will be invoked when writing the JavaScript and declaration files.
-           */
+    * Emits the JavaScript and declaration files.  If targetSourceFile is not specified, then
+    * the JavaScript and declaration files will be produced for all the files in this program.
+    * If targetSourceFile is specified, then only the JavaScript and declaration for that
+    * specific file will be generated.
+    *
+    * If writeFile is not specified then the writeFile callback from the compiler host will be
+    * used for writing the JavaScript and declaration files.  Otherwise, the writeFile parameter
+    * will be invoked when writing the JavaScript and declaration files.
+    */
   def emit(): EmitResult = js.native
-  /**
-           * Emits the JavaScript and declaration files.  If targetSourceFile is not specified, then
-           * the JavaScript and declaration files will be produced for all the files in this program.
-           * If targetSourceFile is specified, then only the JavaScript and declaration for that
-           * specific file will be generated.
-           *
-           * If writeFile is not specified then the writeFile callback from the compiler host will be
-           * used for writing the JavaScript and declaration files.  Otherwise, the writeFile parameter
-           * will be invoked when writing the JavaScript and declaration files.
-           */
   def emit(targetSourceFile: SourceFile): EmitResult = js.native
-  /**
-           * Emits the JavaScript and declaration files.  If targetSourceFile is not specified, then
-           * the JavaScript and declaration files will be produced for all the files in this program.
-           * If targetSourceFile is specified, then only the JavaScript and declaration for that
-           * specific file will be generated.
-           *
-           * If writeFile is not specified then the writeFile callback from the compiler host will be
-           * used for writing the JavaScript and declaration files.  Otherwise, the writeFile parameter
-           * will be invoked when writing the JavaScript and declaration files.
-           */
   def emit(targetSourceFile: SourceFile, writeFile: WriteFileCallback): EmitResult = js.native
-  /**
-           * Emits the JavaScript and declaration files.  If targetSourceFile is not specified, then
-           * the JavaScript and declaration files will be produced for all the files in this program.
-           * If targetSourceFile is specified, then only the JavaScript and declaration for that
-           * specific file will be generated.
-           *
-           * If writeFile is not specified then the writeFile callback from the compiler host will be
-           * used for writing the JavaScript and declaration files.  Otherwise, the writeFile parameter
-           * will be invoked when writing the JavaScript and declaration files.
-           */
   def emit(targetSourceFile: SourceFile, writeFile: WriteFileCallback, cancellationToken: CancellationToken): EmitResult = js.native
-  /**
-           * Emits the JavaScript and declaration files.  If targetSourceFile is not specified, then
-           * the JavaScript and declaration files will be produced for all the files in this program.
-           * If targetSourceFile is specified, then only the JavaScript and declaration for that
-           * specific file will be generated.
-           *
-           * If writeFile is not specified then the writeFile callback from the compiler host will be
-           * used for writing the JavaScript and declaration files.  Otherwise, the writeFile parameter
-           * will be invoked when writing the JavaScript and declaration files.
-           */
   def emit(
     targetSourceFile: SourceFile,
     writeFile: WriteFileCallback,
     cancellationToken: CancellationToken,
     emitOnlyDtsFiles: scala.Boolean
   ): EmitResult = js.native
-  /**
-           * Emits the JavaScript and declaration files.  If targetSourceFile is not specified, then
-           * the JavaScript and declaration files will be produced for all the files in this program.
-           * If targetSourceFile is specified, then only the JavaScript and declaration for that
-           * specific file will be generated.
-           *
-           * If writeFile is not specified then the writeFile callback from the compiler host will be
-           * used for writing the JavaScript and declaration files.  Otherwise, the writeFile parameter
-           * will be invoked when writing the JavaScript and declaration files.
-           */
   def emit(
     targetSourceFile: SourceFile,
     writeFile: WriteFileCallback,
@@ -95,25 +45,23 @@ trait Program extends ScriptReferenceHost {
   def getProjectReferences(): js.UndefOr[js.Array[ProjectReference]] = js.native
   def getResolvedProjectReferences(): js.UndefOr[js.Array[js.UndefOr[ResolvedProjectReference]]] = js.native
   /**
-           * Get a list of root file names that were passed to a 'createProgram'
-           */
+    * Get a list of root file names that were passed to a 'createProgram'
+    */
   def getRootFileNames(): js.Array[java.lang.String] = js.native
   /** The first time this is called, it will return global diagnostics (no location). */
   def getSemanticDiagnostics(): js.Array[Diagnostic] = js.native
-  /** The first time this is called, it will return global diagnostics (no location). */
   def getSemanticDiagnostics(sourceFile: SourceFile): js.Array[Diagnostic] = js.native
-  /** The first time this is called, it will return global diagnostics (no location). */
   def getSemanticDiagnostics(sourceFile: SourceFile, cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
   /**
-           * Get a list of files in the program
-           */
+    * Get a list of files in the program
+    */
   def getSourceFiles(): js.Array[SourceFile] = js.native
   def getSyntacticDiagnostics(): js.Array[DiagnosticWithLocation] = js.native
   def getSyntacticDiagnostics(sourceFile: SourceFile): js.Array[DiagnosticWithLocation] = js.native
   def getSyntacticDiagnostics(sourceFile: SourceFile, cancellationToken: CancellationToken): js.Array[DiagnosticWithLocation] = js.native
   /**
-           * Gets a type checker that can be used to semantically analyze source files in the program.
-           */
+    * Gets a type checker that can be used to semantically analyze source files in the program.
+    */
   def getTypeChecker(): TypeChecker = js.native
   def isSourceFileDefaultLibrary(file: SourceFile): scala.Boolean = js.native
   def isSourceFileFromExternalLibrary(file: SourceFile): scala.Boolean = js.native

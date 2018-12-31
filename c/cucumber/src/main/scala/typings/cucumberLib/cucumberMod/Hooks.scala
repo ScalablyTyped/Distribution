@@ -21,7 +21,6 @@ trait Hooks extends js.Object {
   def BeforeAll(options: java.lang.String, code: GlobalHookCode): scala.Unit = js.native
   def defineParameterType(transform: Transform): scala.Unit = js.native
   def setDefaultTimeout(time: scala.Double): scala.Unit = js.native
-  // tslint:disable-next-line ban-types
   def setWorldConstructor(world: js.Object): scala.Unit = js.native
   // tslint:disable-next-line ban-types
   def setWorldConstructor(world: js.ThisFunction1[/* this */ World, /* init */ cucumberLib.Anon_Parameters, scala.Unit]): scala.Unit = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectionOptions extends PartialOAuth2Options {
   var accessToken: js.UndefOr[java.lang.String] = js.undefined
   var callOptions: js.UndefOr[js.Object] = js.undefined

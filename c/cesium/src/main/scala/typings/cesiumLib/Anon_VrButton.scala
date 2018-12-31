@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_VrButton extends js.Object {
   var animation: js.UndefOr[scala.Boolean] = js.undefined
   var automaticallyTrackDataSourceClocks: js.UndefOr[scala.Boolean] = js.undefined

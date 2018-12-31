@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SubscriptionsResource extends js.Object {
   /** Deletes a subscription. */
   def delete(request: gapiDotClientDotYoutubeLib.Anon_PrettyPrintQuotaUserKeyUserIpOauthtokenId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

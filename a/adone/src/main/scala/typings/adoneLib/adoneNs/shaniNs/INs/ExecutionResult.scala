@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExecutionResult extends js.Object {
   /**
-                   * Elapsed time in milliseconds
-                   */
+    * Elapsed time in milliseconds
+    */
   var elapsed: scala.Double
   /**
-                   * Resulting error
-                   */
+    * Resulting error
+    */
   var err: js.Any
 }
 

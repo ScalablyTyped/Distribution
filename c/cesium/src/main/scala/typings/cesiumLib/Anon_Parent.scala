@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Parent extends js.Object {
   var availability: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.TimeIntervalCollection] = js.undefined
   var billboard: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.BillboardGraphics] = js.undefined

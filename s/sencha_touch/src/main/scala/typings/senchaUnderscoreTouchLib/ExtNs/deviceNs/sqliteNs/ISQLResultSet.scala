@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISQLResultSet
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Returns the row ID of the last row that the SQL statement inserted into the database if the statement inserted any r

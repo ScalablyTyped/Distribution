@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TEMPORARY extends js.Object {
   var CLIPPED: reactDashMdLib.reactDashMdLibStrings.clipped
   var FLOATING: reactDashMdLib.reactDashMdLibStrings.floating

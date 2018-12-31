@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EmotionTheming[Theme] extends js.Object {
   def ThemeProvider(props: ThemeProviderProps[Theme]): reactLib.reactMod.ReactNs.ReactElement[_]
   def withTheme[C /* <: reactLib.reactMod.ReactNs.ComponentType[_] */](component: C): reactLib.reactMod.ReactNs.SFC[

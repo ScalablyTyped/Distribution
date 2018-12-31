@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAjax extends IServer {
   /** [Property] (Object) */
   var actionMethods: js.UndefOr[js.Any] = js.undefined

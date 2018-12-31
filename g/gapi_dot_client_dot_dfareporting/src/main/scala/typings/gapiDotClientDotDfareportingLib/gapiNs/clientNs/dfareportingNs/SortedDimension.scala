@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SortedDimension extends js.Object {
   /** The kind of resource this is, in this case dfareporting#sortedDimension. */
   var kind: js.UndefOr[java.lang.String] = js.undefined

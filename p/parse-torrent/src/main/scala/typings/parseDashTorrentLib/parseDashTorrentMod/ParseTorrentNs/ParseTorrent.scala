@@ -7,7 +7,11 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ParseTorrent extends js.Object {
-  var toMagnetURI: js.Any = js.native
+  @JSName("toMagnetURI")
+  var toMagnetURI_Original: js.Function1[
+    /* parsed */ magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance, 
+    java.lang.String
+  ] = js.native
   @JSName("toTorrentFile")
   var toTorrentFile_Original: js.Function1[
     /* parsed */ parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance, 
@@ -40,6 +44,7 @@ trait ParseTorrent extends js.Object {
     torrent: stdLib.Blob,
     cb: js.Function2[/* err */ nodeLib.Error, /* torrent */ js.UndefOr[Instance], scala.Unit]
   ): scala.Unit = js.native
+  def toMagnetURI(parsed: magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance): java.lang.String = js.native
   def toTorrentFile(parsed: parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance): nodeLib.Buffer = js.native
 }
 

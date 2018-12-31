@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Campaign extends js.Object {
   /** Account ID of this campaign. This is a read-only field that can be left blank. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined
@@ -38,10 +37,10 @@ trait Campaign extends js.Object {
   /** Click-through event tag ID override properties for this campaign. */
   var defaultClickThroughEventTagProperties: js.UndefOr[DefaultClickThroughEventTagProperties] = js.undefined
   /**
-               * Date on which the campaign will stop running. On insert, the end date must be today or a future date. The end date must be later than or be the same as
-               * the start date. If, for example, you set 6/25/2015 as both the start and end dates, the effective campaign run date is just that day only, 6/25/2015.
-               * The hours, minutes, and seconds of the end date should not be set, as doing so will result in an error. This is a required field.
-               */
+    * Date on which the campaign will stop running. On insert, the end date must be today or a future date. The end date must be later than or be the same as
+    * the start date. If, for example, you set 6/25/2015 as both the start and end dates, the effective campaign run date is just that day only, 6/25/2015.
+    * The hours, minutes, and seconds of the end date should not be set, as doing so will result in an error. This is a required field.
+    */
   var endDate: js.UndefOr[java.lang.String] = js.undefined
   /** Overrides that can be used to activate or deactivate advertiser event tags. */
   var eventTagOverrides: js.UndefOr[js.Array[EventTagOverride]] = js.undefined
@@ -62,9 +61,9 @@ trait Campaign extends js.Object {
   /** Whether Nielsen reports are enabled for this campaign. */
   var nielsenOcrEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               * Date on which the campaign starts running. The start date can be any date. The hours, minutes, and seconds of the start date should not be set, as
-               * doing so will result in an error. This is a required field.
-               */
+    * Date on which the campaign starts running. The start date can be any date. The hours, minutes, and seconds of the start date should not be set, as
+    * doing so will result in an error. This is a required field.
+    */
   var startDate: js.UndefOr[java.lang.String] = js.undefined
   /** Subaccount ID of this campaign. This is a read-only field that can be left blank. */
   var subaccountId: js.UndefOr[java.lang.String] = js.undefined

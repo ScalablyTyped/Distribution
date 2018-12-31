@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TweenProps extends js.Object {
   var bounce: js.UndefOr[scala.Boolean] = js.undefined
   var ignoreGlobalPause: js.UndefOr[scala.Boolean] = js.undefined

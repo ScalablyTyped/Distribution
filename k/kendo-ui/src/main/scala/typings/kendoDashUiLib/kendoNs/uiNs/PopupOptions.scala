@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PopupOptions extends js.Object {
   var activate: js.UndefOr[js.Function1[/* e */ PopupActivateEvent, scala.Unit]] = js.undefined
   var adjustSize: js.UndefOr[js.Any] = js.undefined

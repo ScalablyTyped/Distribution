@@ -9,18 +9,18 @@ import scala.scalajs.js.annotation._
 @js.native
 class CognitoRefreshToken protected () extends js.Object {
   /**
-       * Constructs a new CognitoRefreshToken object
-       * @param RefreshToken The JWT refresh token.
-       */
+    * Constructs a new CognitoRefreshToken object
+    * @param RefreshToken The JWT refresh token.
+    */
   def this(RefreshToken: java.lang.String) = this()
   /**
-       * @returns the record's token.
-       */
+    * @returns the record's token.
+    */
   def getToken(): java.lang.String = js.native
   /**
-       * Sets new value for refresh token.
-       * @param refreshToken The JWT refresh token.
-       */
+    * Sets new value for refresh token.
+    * @param refreshToken The JWT refresh token.
+    */
   def setToken(refreshToken: java.lang.String): scala.Unit = js.native
 }
 

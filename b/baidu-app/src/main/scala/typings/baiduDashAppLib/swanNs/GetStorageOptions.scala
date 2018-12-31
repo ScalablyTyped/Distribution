@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetStorageOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 本地缓存中的指定的 key */

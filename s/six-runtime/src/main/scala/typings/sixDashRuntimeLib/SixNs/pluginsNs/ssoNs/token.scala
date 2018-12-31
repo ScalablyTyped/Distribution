@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait token extends js.Object {
   var expiredTime: scala.Double
   var httpOnly: scala.Boolean

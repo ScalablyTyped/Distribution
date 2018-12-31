@@ -28,21 +28,7 @@ trait IgTreeGridFilteringMethods extends js.Object {
   	 * @param addedFromAdvanced
   	 */
   def filter(expressions: js.Array[_]): scala.Unit = js.native
-  /**
-  	 * Applies filtering programmatically and updates the UI by default.
-  	 *
-  	 * @param expressions An array of filtering expressions, each one having the format {fieldName: , expr: , cond: , logic: } where  fieldName is the key of the column, expr is the actual expression string with which we would like to filter, logic is 'AND' or 'OR', and cond is one of the following strings: "equals", "doesNotEqual", "contains", "doesNotContain", "greaterThan", "lessThan", "greaterThanOrEqualTo", "lessThanOrEqualTo", "true", "false", "null", "notNull", "empty", "notEmpty", "startsWith", "endsWith", "today", "yesterday", "on", "notOn", "thisMonth", "lastMonth", "nextMonth", "before", "after", "thisYear", "lastYear", "nextYear". The difference between the empty and null filtering conditions is that empty includes null, NaN, and undefined, as well as the empty string.
-  	 * @param updateUI specifies whether the filter row should be also updated once the grid is filtered
-  	 * @param addedFromAdvanced
-  	 */
   def filter(expressions: js.Array[_], updateUI: scala.Boolean): scala.Unit = js.native
-  /**
-  	 * Applies filtering programmatically and updates the UI by default.
-  	 *
-  	 * @param expressions An array of filtering expressions, each one having the format {fieldName: , expr: , cond: , logic: } where  fieldName is the key of the column, expr is the actual expression string with which we would like to filter, logic is 'AND' or 'OR', and cond is one of the following strings: "equals", "doesNotEqual", "contains", "doesNotContain", "greaterThan", "lessThan", "greaterThanOrEqualTo", "lessThanOrEqualTo", "true", "false", "null", "notNull", "empty", "notEmpty", "startsWith", "endsWith", "today", "yesterday", "on", "notOn", "thisMonth", "lastMonth", "nextMonth", "before", "after", "thisYear", "lastYear", "nextYear". The difference between the empty and null filtering conditions is that empty includes null, NaN, and undefined, as well as the empty string.
-  	 * @param updateUI specifies whether the filter row should be also updated once the grid is filtered
-  	 * @param addedFromAdvanced
-  	 */
   def filter(expressions: js.Array[_], updateUI: scala.Boolean, addedFromAdvanced: scala.Boolean): scala.Unit = js.native
   /**
   	 * Returns the count of data records that match filtering conditions

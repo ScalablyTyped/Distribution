@@ -16,58 +16,30 @@ class Tooltip protected () extends Widget {
   @JSName("model")
   var model_Tooltip: ejDotWebDotAllLib.ejNs.TooltipNs.Model = js.native
   /** Disables the Tooltip control.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def disable(): scala.Unit = js.native
   /** Enables the Tooltip control.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def enable(): scala.Unit = js.native
   /** Hide the Tooltip popup.
-           * @param {string}  optional Determines the type of effect that takes place when hiding the tooltip.
-           * @param {() => void}  optional custom effect takes place when hiding the tooltip.
-           * @returns {void}
-           */
+    * @param {string}  optional Determines the type of effect that takes place when hiding the tooltip.
+    * @param {() => void}  optional custom effect takes place when hiding the tooltip.
+    * @returns {void}
+    */
   def hide(): scala.Unit = js.native
-  /** Hide the Tooltip popup.
-           * @param {string}  optional Determines the type of effect that takes place when hiding the tooltip.
-           * @param {() => void}  optional custom effect takes place when hiding the tooltip.
-           * @returns {void}
-           */
   def hide(effect: java.lang.String): scala.Unit = js.native
-  /** Hide the Tooltip popup.
-           * @param {string}  optional Determines the type of effect that takes place when hiding the tooltip.
-           * @param {() => void}  optional custom effect takes place when hiding the tooltip.
-           * @returns {void}
-           */
   def hide(effect: java.lang.String, func: js.Function0[scala.Unit]): scala.Unit = js.native
   /** Shows the Tooltip popup for the given target element with the specified effect.
-           * @param {string} optional Determines the type of effect that takes place when showing the tooltip.
-           * @param {() => void} optional custom effect takes place when showing the tooltip.
-           * @param {JQuery} optional Tooltip will be shown for the given element
-           * @returns {void}
-           */
+    * @param {string} optional Determines the type of effect that takes place when showing the tooltip.
+    * @param {() => void} optional custom effect takes place when showing the tooltip.
+    * @param {JQuery} optional Tooltip will be shown for the given element
+    * @returns {void}
+    */
   def show(): scala.Unit = js.native
-  /** Shows the Tooltip popup for the given target element with the specified effect.
-           * @param {string} optional Determines the type of effect that takes place when showing the tooltip.
-           * @param {() => void} optional custom effect takes place when showing the tooltip.
-           * @param {JQuery} optional Tooltip will be shown for the given element
-           * @returns {void}
-           */
   def show(effect: java.lang.String): scala.Unit = js.native
-  /** Shows the Tooltip popup for the given target element with the specified effect.
-           * @param {string} optional Determines the type of effect that takes place when showing the tooltip.
-           * @param {() => void} optional custom effect takes place when showing the tooltip.
-           * @param {JQuery} optional Tooltip will be shown for the given element
-           * @returns {void}
-           */
   def show(effect: java.lang.String, func: js.Function0[scala.Unit]): scala.Unit = js.native
-  /** Shows the Tooltip popup for the given target element with the specified effect.
-           * @param {string} optional Determines the type of effect that takes place when showing the tooltip.
-           * @param {() => void} optional custom effect takes place when showing the tooltip.
-           * @param {JQuery} optional Tooltip will be shown for the given element
-           * @returns {void}
-           */
   def show(effect: java.lang.String, func: js.Function0[scala.Unit], target: ejDotWebDotAllLib.JQuery): scala.Unit = js.native
 }
 

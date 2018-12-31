@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OptionsScaling extends js.Object {
   var customScalingFunction: js.UndefOr[
     js.Function4[

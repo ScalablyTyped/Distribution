@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaymentPortalPost extends js.Object {
   /** The HTTP method to use for the payment portal. */
   var Method: chromeDashAppsLib.chromeDashAppsLibStrings.POST

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnGroupHeaderProps extends js.Object {
   /* supplied from the groupHeaderHeight */
   var height: scala.Double

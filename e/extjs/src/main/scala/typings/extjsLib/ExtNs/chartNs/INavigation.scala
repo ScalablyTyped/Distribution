@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait INavigation
   extends extjsLib.ExtNs.IBase {
   /** [Method] Restores the zoom to the original value  */

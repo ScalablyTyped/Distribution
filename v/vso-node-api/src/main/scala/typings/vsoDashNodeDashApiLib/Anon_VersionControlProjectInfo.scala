@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_VersionControlProjectInfo extends js.Object {
   var Change: js.Any
   var GitRepository: js.Any

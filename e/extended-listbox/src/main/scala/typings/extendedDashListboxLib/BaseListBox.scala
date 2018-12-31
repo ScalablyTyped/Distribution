@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait BaseListBox extends js.Object {
-  /** Adds a new item to the list */
   def addItem(item: ListBoxItem): java.lang.String = js.native
   /** Adds a new item to the list */
   def addItem(item: java.lang.String): java.lang.String = js.native

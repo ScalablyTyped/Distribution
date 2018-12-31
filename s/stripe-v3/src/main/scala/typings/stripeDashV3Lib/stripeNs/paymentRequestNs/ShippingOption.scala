@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShippingOption extends js.Object {
   var amount: scala.Double
   var detail: js.UndefOr[java.lang.String] = js.undefined

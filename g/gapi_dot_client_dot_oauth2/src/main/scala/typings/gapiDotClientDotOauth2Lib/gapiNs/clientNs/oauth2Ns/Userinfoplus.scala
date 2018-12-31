@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Userinfoplus extends js.Object {
   /** The user's email address. */
   var email: js.UndefOr[java.lang.String] = js.undefined

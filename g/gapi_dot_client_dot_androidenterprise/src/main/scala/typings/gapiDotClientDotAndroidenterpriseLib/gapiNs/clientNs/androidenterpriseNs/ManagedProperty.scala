@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ManagedProperty extends js.Object {
   /** The unique key that identifies the property. */
   var key: js.UndefOr[java.lang.String] = js.undefined

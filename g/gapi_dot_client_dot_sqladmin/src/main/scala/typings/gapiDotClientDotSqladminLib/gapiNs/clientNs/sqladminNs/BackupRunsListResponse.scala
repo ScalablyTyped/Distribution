@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BackupRunsListResponse extends js.Object {
   /** A list of backup runs in reverse chronological order of the enqueued time. */
   var items: js.UndefOr[js.Array[BackupRun]] = js.undefined

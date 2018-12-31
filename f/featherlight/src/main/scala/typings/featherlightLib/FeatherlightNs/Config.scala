@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Config extends js.Object {
   var afterClose: js.UndefOr[js.Function1[/* event */ jqueryLib.JQueryEventObject, _]] = js.undefined
   var afterContent: js.UndefOr[js.Function1[/* event */ jqueryLib.JQueryEventObject, _]] = js.undefined

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * 蓝牙设备信息
 	 */
-
 trait BluetoothDevice extends js.Object {
   /**
   		 * 设备信号强度

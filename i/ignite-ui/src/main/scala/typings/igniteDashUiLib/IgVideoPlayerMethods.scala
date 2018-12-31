@@ -76,11 +76,6 @@ trait IgVideoPlayerMethods extends js.Object {
   	 * @param scaleFactor Specify scale factor between 0 and 1.
   	 */
   def screenshot(): js.Object = js.native
-  /**
-  	 * Get a screenshot of the current video frame. It returns a canvas object that you can position and show on the page. This depends on the browser support for canvas.
-  	 *
-  	 * @param scaleFactor Specify scale factor between 0 and 1.
-  	 */
   def screenshot(scaleFactor: scala.Double): js.Object = js.native
   /**
   	 * Get whether the player is seeking to find the new playback position specified.

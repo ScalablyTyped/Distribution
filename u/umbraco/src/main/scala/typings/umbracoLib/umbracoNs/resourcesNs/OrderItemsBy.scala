@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait OrderItemsBy extends js.Object
 
 /**
-     * Property to order items by, default: `SortOrder`
-     */
+  * Property to order items by, default: `SortOrder`
+  */
 @JSGlobal("umbraco.resources.OrderItemsBy")
 @js.native
 object OrderItemsBy extends js.Object {

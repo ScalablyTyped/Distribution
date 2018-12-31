@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Alias extends Node {
   /** contain the anchor without the * prefix */
   @JSName("rawValue")

@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class WalletItemCustomProperty protected () extends js.Object {
   /**
-                   * Initializes a new instance of the WalletItemCustomProperty class.
-                   * @param name The custom property label. Sets the initial Name value.
-                   * @param value The value of the property. Sets the initial Value value.
-                   */
+    * Initializes a new instance of the WalletItemCustomProperty class.
+    * @param name The custom property label. Sets the initial Name value.
+    * @param value The value of the property. Sets the initial Value value.
+    */
   def this(name: java.lang.String, value: java.lang.String) = this()
   /** Gets or sets whether this WalletItemCustomProperty is entity-extracted and actionable upon display. */
   var autoDetectLinks: scala.Boolean = js.native

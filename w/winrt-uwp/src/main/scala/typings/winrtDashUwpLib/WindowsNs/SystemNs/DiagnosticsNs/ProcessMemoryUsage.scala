@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ProcessMemoryUsage () extends js.Object {
   /**
-                   * Gets the ProcessMemoryUsageReport for the process.
-                   * @return The ProcessMemoryUsageReport for the process.
-                   */
+    * Gets the ProcessMemoryUsageReport for the process.
+    * @return The ProcessMemoryUsageReport for the process.
+    */
   def getReport(): ProcessMemoryUsageReport = js.native
 }
 

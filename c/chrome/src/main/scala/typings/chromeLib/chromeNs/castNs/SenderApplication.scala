@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class SenderApplication protected () extends js.Object {
   /**
-           * @param {!chrome.cast.SenderPlatform} platform
-           * @constructor
-           * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.SenderApplication
-           */
+    * @param {!chrome.cast.SenderPlatform} platform
+    * @constructor
+    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.SenderApplication
+    */
   def this(platform: SenderPlatform) = this()
   var packageId: js.UndefOr[java.lang.String] = js.native
   var platform: SenderPlatform = js.native

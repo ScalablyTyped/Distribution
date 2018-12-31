@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectionStrategy extends js.Object {
   var cancelUndispatched: js.UndefOr[
     js.Function2[

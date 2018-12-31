@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChaiStatic extends js.Object {
   var AssertionError: org.scalablytyped.runtime.Instantiable3[
     /* message */ java.lang.String, 
@@ -19,8 +18,8 @@ trait ChaiStatic extends js.Object {
   var version: java.lang.String
   def should(): Should
   /**
-           * Provides a way to extend the internals of Chai
-           */
+    * Provides a way to extend the internals of Chai
+    */
   def use(fn: js.Function2[/* chai */ js.Any, /* utils */ js.Any, scala.Unit]): ChaiStatic
 }
 

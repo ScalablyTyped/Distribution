@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseForXStatement extends BaseNode {
   var body: Statement
   var left: VariableDeclaration | Pattern

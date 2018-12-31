@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object AmplifyNs extends js.Object {
   @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class Types ()
     extends awsDashSdkLib.awsDashSdkMod.AmplifyNs.Types {
-    /**
-       * Constructs a service object. This object has one method for each API operation.
-       */
     def this(options: awsDashSdkLib.clientsAmplifyMod.AmplifyNs.ClientConfiguration) = this()
   }
   

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Range[T] extends js.Object {
   var end: js.UndefOr[T] = js.undefined
   var gt: js.UndefOr[T] = js.undefined

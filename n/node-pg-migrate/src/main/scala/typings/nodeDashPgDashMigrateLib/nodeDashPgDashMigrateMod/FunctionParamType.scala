@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FunctionParamType extends js.Object {
   var default: js.UndefOr[Value] = js.undefined
   var mode: js.UndefOr[

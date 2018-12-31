@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFlashComponent extends IComponent {
   /** [Property] (String) */
   var EXPRESS_INSTALL_URL: js.UndefOr[java.lang.String] = js.undefined

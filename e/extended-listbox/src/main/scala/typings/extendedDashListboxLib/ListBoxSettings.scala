@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListBoxSettings extends js.Object {
   /** function which returns a array of items */
   var getItems: js.UndefOr[js.Function0[js.Array[java.lang.String | ListBoxItem]]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var cache: js.UndefOr[stdLib.RequestCache] = js.undefined
   var credentials: js.UndefOr[stdLib.RequestCredentials] = js.undefined

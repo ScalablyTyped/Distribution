@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConfigItem extends js.Object {
   // a detailed description fo the item
   var description: java.lang.String

@@ -12,8 +12,8 @@ trait JQuery extends js.Object {
   def nag(): JQuery = js.native
   def nag(settings: semanticDashUiDashNagLib.SemanticUINs.NagSettings): JQuery = js.native
   /**
-           * Clears cookie so nag shows again
-           */
+    * Clears cookie so nag shows again
+    */
   @JSName("nag")
   def nag_clear(behavior: semanticDashUiDashNagLib.semanticDashUiDashNagLibStrings.clear): JQuery = js.native
   @JSName("nag")
@@ -26,9 +26,13 @@ trait JQuery extends js.Object {
     value: semanticDashUiDashNagLib.SemanticUINs.NagSettings
   ): JQuery = js.native
   @JSName("nag")
-  def nag_setting[K /* <: java.lang.String */](behavior: semanticDashUiDashNagLib.semanticDashUiDashNagLibStrings.setting, name: K): js.Any = js.native
+  def nag_setting[K /* <: java.lang.String */](behavior: semanticDashUiDashNagLib.semanticDashUiDashNagLibStrings.setting, name: K): /* import warning: ImportType.apply Failed type conversion: semantic-ui-nag.SemanticUI.NagSettings._Impl[K] */ js.Any = js.native
   @JSName("nag")
-  def nag_setting[K /* <: java.lang.String */](behavior: semanticDashUiDashNagLib.semanticDashUiDashNagLibStrings.setting, name: K, value: js.Any): JQuery = js.native
+  def nag_setting[K /* <: java.lang.String */](
+    behavior: semanticDashUiDashNagLib.semanticDashUiDashNagLibStrings.setting,
+    name: K,
+    value: /* import warning: ImportType.apply Failed type conversion: semantic-ui-nag.SemanticUI.NagSettings._Impl[K] */ js.Any
+  ): JQuery = js.native
   @JSName("nag")
   def nag_show(behavior: semanticDashUiDashNagLib.semanticDashUiDashNagLibStrings.show): JQuery = js.native
 }

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Person extends js.Object {
   var BraggingRights: js.UndefOr[js.Array[BraggingRights]] = js.undefined
   var addresses: js.UndefOr[js.Array[Address]] = js.undefined

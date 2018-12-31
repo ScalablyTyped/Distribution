@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FieldDescriptorProto")
 @js.native
 object FieldDescriptorProtoNs extends js.Object {
-  
   trait AsObject extends js.Object {
     var defaultValue: js.UndefOr[java.lang.String] = js.undefined
     var extendee: js.UndefOr[java.lang.String] = js.undefined

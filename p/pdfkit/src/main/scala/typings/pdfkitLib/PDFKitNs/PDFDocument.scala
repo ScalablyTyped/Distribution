@@ -17,24 +17,24 @@ trait PDFDocument
      with org.scalablytyped.runtime.Instantiable0[PDFDocument]
      with org.scalablytyped.runtime.Instantiable1[/* options */ PDFDocumentOptions, PDFDocument] {
   /**
-          * Wheter streams should be compressed
-          */
+    * Wheter streams should be compressed
+    */
   var compress: scala.Boolean = js.native
   /**
-          * PDF document Metadata
-          */
+    * PDF document Metadata
+    */
   var info: DocumentInfo = js.native
   /**
-          * Options for the document
-          */
+    * Options for the document
+    */
   var options: PDFDocumentOptions = js.native
   /**
-          * Represent the current page.
-          */
+    * Represent the current page.
+    */
   var page: PDFPage = js.native
   /**
-          * PDF Version
-          */
+    * PDF Version
+    */
   var version: scala.Double = js.native
   var x: scala.Double = js.native
   var y: scala.Double = js.native
@@ -45,15 +45,15 @@ trait PDFDocument
   def end(): scala.Unit = js.native
   def flushPages(): scala.Unit = js.native
   /**
-          * Deprecated. Throws exception
-          */
+    * Deprecated. Throws exception
+    */
   def output(fn: js.Any): scala.Unit = js.native
   def ref(data: js.Object): PDFKitReference = js.native
   def switchToPage(): PDFPage = js.native
   def switchToPage(n: scala.Double): PDFPage = js.native
   /**
-          * Deprecated
-          */
+    * Deprecated
+    */
   def write(fileName: java.lang.String, fn: js.Any): scala.Unit = js.native
 }
 

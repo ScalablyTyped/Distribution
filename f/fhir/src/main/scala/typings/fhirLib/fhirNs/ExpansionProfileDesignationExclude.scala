@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Designations to be excluded
-     */
-
+  * Designations to be excluded
+  */
 trait ExpansionProfileDesignationExclude extends BackboneElement {
   /**
-           * The designation to be excluded
-           */
+    * The designation to be excluded
+    */
   var designation: js.UndefOr[js.Array[ExpansionProfileDesignationExcludeDesignation]] = js.undefined
 }
 

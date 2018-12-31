@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PluginMap extends js.Object {
   var constructors: org.scalablytyped.runtime.StringDictionary[
     org.scalablytyped.runtime.Instantiable2[

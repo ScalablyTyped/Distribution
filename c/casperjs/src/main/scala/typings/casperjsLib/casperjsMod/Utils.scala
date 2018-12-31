@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Utils extends js.Object {
   def betterTypeOf(input: js.Any): js.Any
   def dump(value: js.Any): js.Any

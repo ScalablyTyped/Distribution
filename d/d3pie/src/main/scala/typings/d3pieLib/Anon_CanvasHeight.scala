@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CanvasHeight extends js.Object {
   var canvasHeight: js.UndefOr[scala.Double] = js.undefined
   var canvasWidth: js.UndefOr[scala.Double] = js.undefined

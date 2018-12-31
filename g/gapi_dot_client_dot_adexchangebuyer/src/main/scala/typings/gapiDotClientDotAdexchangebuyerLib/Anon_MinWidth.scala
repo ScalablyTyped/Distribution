@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MinWidth extends js.Object {
   /** The type of aspect ratio. Leave this field blank to match all aspect ratios. */
   var aspectRatio: js.UndefOr[java.lang.String] = js.undefined

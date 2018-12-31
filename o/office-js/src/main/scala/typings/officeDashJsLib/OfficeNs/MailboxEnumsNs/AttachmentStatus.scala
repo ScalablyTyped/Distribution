@@ -9,30 +9,30 @@ import scala.scalajs.js.annotation._
 sealed trait AttachmentStatus extends js.Object
 
 /**
-         * Specifies whether an attachment was added to or removed from an item.
-         * 
-         * [Api set: Mailbox Preview]
-         * 
-         * @remarks
-         * <table><tr><td>
-         * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
-         * </td><td>Compose or read</td></tr></table>
-         * 
-         * @beta
-         */
+  * Specifies whether an attachment was added to or removed from an item.
+  * 
+  * [Api set: Mailbox Preview]
+  * 
+  * @remarks
+  * <table><tr><td>
+  * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
+  * </td><td>Compose or read</td></tr></table>
+  * 
+  * @beta
+  */
 @JSGlobal("Office.MailboxEnums.AttachmentStatus")
 @js.native
 object AttachmentStatus extends js.Object {
   /**
-               * An attachment was added to the item.
-               */
+    * An attachment was added to the item.
+    */
   @js.native
   sealed trait Added
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.AttachmentStatus
   
   /**
-               * An attachment was removed from the item.
-               */
+    * An attachment was removed from the item.
+    */
   @js.native
   sealed trait Removed
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.AttachmentStatus

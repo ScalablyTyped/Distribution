@@ -15,7 +15,9 @@ package object glDashReactMod {
     /* mapRenderableContent */ js.Any, 
     /* requestFrame */ js.Function1[/* callback */ js.Function1[/* time */ scala.Double, scala.Unit], scala.Double], 
     /* cancelFrame */ js.Function1[/* id */ scala.Double, scala.Unit], 
-    Surface[js.Any]
+    Surface[
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GLView */ js.Any
+    ]
   ]
   type listSurfaces = js.Function0[js.Array[Surface[js.Any]]]
 }

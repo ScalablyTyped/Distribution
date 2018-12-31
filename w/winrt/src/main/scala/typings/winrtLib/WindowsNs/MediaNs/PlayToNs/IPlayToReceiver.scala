@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPlayToReceiver extends js.Object {
   var friendlyName: java.lang.String
   var oncurrenttimechangerequested: js.Any

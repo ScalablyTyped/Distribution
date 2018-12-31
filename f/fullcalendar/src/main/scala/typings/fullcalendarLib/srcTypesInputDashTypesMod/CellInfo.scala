@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CellInfo extends js.Object {
   var date: momentLib.momentMod.momentNs.Moment
   var dayEl: fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery

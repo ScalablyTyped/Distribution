@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PgwModalOption extends js.Object {
   var ajaxOptions: js.UndefOr[js.Any] = js.undefined
   var angular: js.UndefOr[scala.Boolean] = js.undefined

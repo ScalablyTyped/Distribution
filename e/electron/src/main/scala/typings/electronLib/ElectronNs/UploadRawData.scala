@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadRawData extends js.Object {
   // Docs: http://electronjs.org/docs/api/structures/upload-raw-data
   /**
-       * Data to be uploaded.
-       */
+    * Data to be uploaded.
+    */
   var bytes: nodeLib.Buffer
   /**
-       * rawData.
-       */
+    * rawData.
+    */
   var `type`: java.lang.String
 }
 

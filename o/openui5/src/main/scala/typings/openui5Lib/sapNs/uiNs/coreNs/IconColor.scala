@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait IconColor extends js.Object
 
 /**
-       * Semantic Colors of an icon.
-      */
+  * Semantic Colors of an icon.
+  */
 @JSGlobal("sap.ui.core.IconColor")
 @js.native
 object IconColor extends js.Object {

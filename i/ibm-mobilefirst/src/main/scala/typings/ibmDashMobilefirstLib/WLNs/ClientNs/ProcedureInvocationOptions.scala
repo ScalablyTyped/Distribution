@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProcedureInvocationOptions
   extends ibmDashMobilefirstLib.WLNs.Options {
   var timeout: scala.Double

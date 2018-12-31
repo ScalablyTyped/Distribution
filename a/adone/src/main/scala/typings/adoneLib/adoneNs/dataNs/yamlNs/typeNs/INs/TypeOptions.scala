@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TypeOptions[T] extends js.Object {
   var construct: js.UndefOr[js.Function1[/* data */ java.lang.String, T]] = js.undefined
   var defaultStyle: js.UndefOr[java.lang.String] = js.undefined

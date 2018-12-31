@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TouchOptions extends js.Object {
   var doubleTapTimeout: js.UndefOr[scala.Double] = js.undefined
   var doubletap: js.UndefOr[js.Function1[/* e */ TouchDoubletapEvent, scala.Unit]] = js.undefined

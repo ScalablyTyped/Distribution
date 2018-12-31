@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPConfigProperties[M /* <: ManagedObject */, B, S, SL, L] extends js.Object {
   /** Gateway address used for the IP configuration. */
   var Gateway: js.UndefOr[S] = js.undefined

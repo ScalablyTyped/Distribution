@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnchorDefaultProps extends AnchorProps {
   @JSName("affix")
   var affix_AnchorDefaultProps: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Request extends js.Object {
   var async: js.UndefOr[scala.Boolean] = js.undefined
   var attachHeadersAsQueryString: js.UndefOr[scala.Boolean] = js.undefined

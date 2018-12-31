@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ArchiverError
   extends nodeLib.Error {
   var code: java.lang.String

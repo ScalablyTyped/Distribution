@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WiiuGamePad extends js.Object {
   var accX: scala.Double
   var accY: scala.Double

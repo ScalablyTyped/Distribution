@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WindowLoadSettings extends js.Object {
   val appVersion: java.lang.String
   val atomHome: java.lang.String

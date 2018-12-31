@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Executable[T] extends js.Object {
   def all(): bluebirdLib.bluebirdMod.namespaced[js.Array[T]]
   def allWithin(tx: DatabaseConnection): bluebirdLib.bluebirdMod.namespaced[js.Array[T]]

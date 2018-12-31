@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IApplication extends IController {
   /** [Config Option] (String) */
   var appFolder: js.UndefOr[java.lang.String] = js.undefined

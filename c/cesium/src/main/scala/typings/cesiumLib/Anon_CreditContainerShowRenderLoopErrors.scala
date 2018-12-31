@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CreditContainerShowRenderLoopErrors extends js.Object {
   var clock: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Clock] = js.undefined
   var contextOptions: js.UndefOr[js.Any] = js.undefined

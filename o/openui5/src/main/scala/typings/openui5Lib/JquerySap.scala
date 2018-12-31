@@ -12,9 +12,7 @@ trait JquerySap extends js.Object {
   def addUrlWhitelist(protocol: js.Any, host: js.Any, port: js.Any, path: js.Any): scala.Unit = js.native
   // Calculate delta of old list and new list This implements the algorithm described in "A Technique for Isolating Differences Between Files" (Commun. 
   def arrayDiff(aOld: js.Any, aNew: js.Any): scala.Unit = js.native
-  // Calculate delta of old list and new list This implements the algorithm described in "A Technique for Isolating Differences Between Files" (Commun. 
   def arrayDiff(aOld: js.Any, aNew: js.Any, fnCompare: js.Any): scala.Unit = js.native
-  // Calculate delta of old list and new list This implements the algorithm described in "A Technique for Isolating Differences Between Files" (Commun. 
   def arrayDiff(aOld: js.Any, aNew: js.Any, fnCompare: js.Any, bUniqueEntries: js.Any): scala.Unit = js.native
   // A simple assertion mechanism that logs a message when a given condition is not met. 
   def assert(bResult: js.Any, sMessage: js.Any): scala.Unit = js.native
@@ -38,11 +36,9 @@ trait JquerySap extends js.Object {
   def containsOrEquals(oDomRefContainer: js.Any, oDomRefChild: js.Any): scala.Unit = js.native
   // Declares a module as existing. 
   def declare(sModuleName: js.Any): scala.Unit = js.native
-  // Declares a module as existing. 
   def declare(sModuleName: js.Any, bCreateNamespace: js.Any): scala.Unit = js.native
   // Calls a method after a given delay and returns an id for this timer 
   def delayedCall(iDelay: js.Any, oObject: js.Any, method: js.Any): scala.Unit = js.native
-  // Calls a method after a given delay and returns an id for this timer 
   def delayedCall(iDelay: js.Any, oObject: js.Any, method: js.Any, aParameters: js.Any): scala.Unit = js.native
   // For the given scroll position measured from the "beginning" of a container (the right edge in RTL mode) this method returns the scrollLeft value as understood by the current browser in RTL mode. 
   def denormalizeScrollBeginRTL(iNormalizedScrollBegin: js.Any, oDomRef: js.Any): scala.Unit = js.native
@@ -52,7 +48,6 @@ trait JquerySap extends js.Object {
   def disableTouchToMouseHandling(): scala.Unit = js.native
   // Shortcut for document.getElementById(), including a bug fix for older IE versions. 
   def domById(sId: js.Any): scala.Unit = js.native
-  // Shortcut for document.getElementById(), including a bug fix for older IE versions. 
   def domById(sId: js.Any, oWindow: js.Any): scala.Unit = js.native
   // Encode the string for inclusion into CSS string literals or identifiers 
   def encodeCSS(sString: js.Any): scala.Unit = js.native
@@ -72,9 +67,7 @@ trait JquerySap extends js.Object {
   def endsWithIgnoreCase(sString: js.Any, sEndString: js.Any): scala.Unit = js.native
   // Compares the two given values for equality, especially takes care not to compare arrays and objects by reference: any, but compares their content. 
   def equal(a: js.Any, b: js.Any): scala.Unit = js.native
-  // Compares the two given values for equality, especially takes care not to compare arrays and objects by reference: any, but compares their content. 
   def equal(a: js.Any, b: js.Any, maxDepth: js.Any): scala.Unit = js.native
-  // Compares the two given values for equality, especially takes care not to compare arrays and objects by reference: any, but compares their content. 
   def equal(a: js.Any, b: js.Any, maxDepth: js.Any, contains: js.Any): scala.Unit = js.native
   // This function escapes the reserved letters in Regular Expression 
   def escapeRegExp(sString: js.Any): scala.Unit = js.native
@@ -84,7 +77,6 @@ trait JquerySap extends js.Object {
   def focus(oDomRef: js.Any): scala.Unit = js.native
   // Creates a string from a pattern by replacing placeholders with concrete values. 
   def formatMessage(sPattern: js.Any): scala.Unit = js.native
-  // Creates a string from a pattern by replacing placeholders with concrete values. 
   def formatMessage(sPattern: js.Any, aValues: js.Any): scala.Unit = js.native
   // Returns the names of all declared modules. 
   def getAllDeclaredModules(): scala.Unit = js.native
@@ -92,9 +84,7 @@ trait JquerySap extends js.Object {
   def getModulePath(sModuleName: js.Any, sSuffix: js.Any): scala.Unit = js.native
   // Returns a JavaScript object which is identified by a sequence of names. 
   def getObject(sName: js.Any): scala.Unit = js.native
-  // Returns a JavaScript object which is identified by a sequence of names. 
   def getObject(sName: js.Any, iNoCreates: js.Any): scala.Unit = js.native
-  // Returns a JavaScript object which is identified by a sequence of names. 
   def getObject(sName: js.Any, iNoCreates: js.Any, oContext: js.Any): scala.Unit = js.native
   // Determines the URL for a resource given its unified resource name. 
   def getResourcePath(sResourceName: js.Any): scala.Unit = js.native
@@ -110,31 +100,22 @@ trait JquerySap extends js.Object {
   def hyphen(sString: js.Any): scala.Unit = js.native
   // Includes the script (via <script>-tag) into the head for the specified sUrl and optional sId. 
   def includeScript(sUrl: js.Any): scala.Unit = js.native
-  // Includes the script (via <script>-tag) into the head for the specified sUrl and optional sId. 
   def includeScript(sUrl: js.Any, sId: js.Any): scala.Unit = js.native
-  // Includes the script (via <script>-tag) into the head for the specified sUrl and optional sId. 
   def includeScript(sUrl: js.Any, sId: js.Any, fnLoadCallback: js.Any): scala.Unit = js.native
-  // Includes the script (via <script>-tag) into the head for the specified sUrl and optional sId. 
   def includeScript(sUrl: js.Any, sId: js.Any, fnLoadCallback: js.Any, fnErrorCallback: js.Any): scala.Unit = js.native
   // Includes the specified stylesheet via a <link>-tag in the head of the current document. 
   def includeStyleSheet(sUrl: js.Any): scala.Unit = js.native
-  // Includes the specified stylesheet via a <link>-tag in the head of the current document. 
   def includeStyleSheet(sUrl: js.Any, sId: js.Any): scala.Unit = js.native
-  // Includes the specified stylesheet via a <link>-tag in the head of the current document. 
   def includeStyleSheet(sUrl: js.Any, sId: js.Any, fnLoadCallback: js.Any): scala.Unit = js.native
-  // Includes the specified stylesheet via a <link>-tag in the head of the current document. 
   def includeStyleSheet(sUrl: js.Any, sId: js.Any, fnLoadCallback: js.Any, fnErrorCallback: js.Any): scala.Unit = js.native
   // Does some basic modifications to the HTML page that make it more suitable for mobile apps. 
   def initMobile(): scala.Unit = js.native
-  // Does some basic modifications to the HTML page that make it more suitable for mobile apps. 
   def initMobile(options: js.Any): scala.Unit = js.native
   // Calls a method after a given interval and returns an id for this interval. 
   def intervalCall(iInterval: js.Any, oObject: js.Any, method: js.Any): scala.Unit = js.native
-  // Calls a method after a given interval and returns an id for this interval. 
   def intervalCall(iInterval: js.Any, oObject: js.Any, method: js.Any, aParameters: js.Any): scala.Unit = js.native
   // Check whether a given module has been loaded / declared already. 
   def isDeclared(sModuleName: js.Any): scala.Unit = js.native
-  // Check whether a given module has been loaded / declared already. 
   def isDeclared(sModuleName: js.Any, bIncludePreloaded: js.Any): scala.Unit = js.native
   // Returns a new object which has the given oPrototype as its prototype. 
   def newObject(oPrototype: js.Any): scala.Unit = js.native
@@ -148,7 +129,6 @@ trait JquerySap extends js.Object {
   def parseXML(sXMLText: js.Any): scala.Unit = js.native
   // Creates and returns a new instance of jQuery.sap.util.Properties. 
   def properties(): scala.Unit = js.native
-  // Creates and returns a new instance of jQuery.sap.util.Properties. 
   def properties(mParams: js.Any): scala.Unit = js.native
   // Registers an URL prefix for a module name prefix. 
   def registerModulePath(sModuleName: js.Any, vUrlPrefix: js.Any): scala.Unit = js.native
@@ -160,13 +140,10 @@ trait JquerySap extends js.Object {
   def require(vModuleName: js.Any): scala.Unit = js.native
   // Creates and returns a new instance of jQuery.sap.util.ResourceBundle using the given URL and locale to determine what to load. 
   def resources(): scala.Unit = js.native
-  // Creates and returns a new instance of jQuery.sap.util.ResourceBundle using the given URL and locale to determine what to load. 
   def resources(mParams: js.Any): scala.Unit = js.native
   // Returns the size (width of the vertical / height of the horizontal) native browser scrollbars. 
   def scrollbarSize(): scala.Unit = js.native
-  // Returns the size (width of the vertical / height of the horizontal) native browser scrollbars. 
   def scrollbarSize(sClasses: js.Any): scala.Unit = js.native
-  // Returns the size (width of the vertical / height of the horizontal) native browser scrollbars. 
   def scrollbarSize(sClasses: js.Any, bForce: js.Any): scala.Unit = js.native
   // Serializes the specified XML document into a string representation. 
   def serializeXML(oXMLDocument: js.Any): scala.Unit = js.native
@@ -176,7 +153,6 @@ trait JquerySap extends js.Object {
   def setMobileWebAppCapable(bValue: js.Any): scala.Unit = js.native
   // Sets an object property to a given value, where the property is identified by a sequence of names (path: any). 
   def setObject(sName: js.Any, vValue: js.Any): scala.Unit = js.native
-  // Sets an object property to a given value, where the property is identified by a sequence of names (path: any). 
   def setObject(sName: js.Any, vValue: js.Any, oContext: js.Any): scala.Unit = js.native
   // Convenience wrapper around jQuery.ajax() that avoids the need for callback functions when synchronous calls are made. 
   def sjax(oOrigSettings: js.Any): scala.Unit = js.native
@@ -186,19 +162,15 @@ trait JquerySap extends js.Object {
   def startsWithIgnoreCase(sString: js.Any, sStartString: js.Any): scala.Unit = js.native
   // Convenience wrapper for jQuery.sap.sjax that enforeces the Http method GET and defaults the data type of the result to 'text'. 
   def syncGet(sUrl: js.Any, data: js.Any): scala.Unit = js.native
-  // Convenience wrapper for jQuery.sap.sjax that enforeces the Http method GET and defaults the data type of the result to 'text'. 
   def syncGet(sUrl: js.Any, data: js.Any, sDataType: js.Any): scala.Unit = js.native
   // Convenience wrapper for jQuery.sap.sjax that enforces the Http method GET and the data type 'json'. 
   def syncGetJSON(sUrl: js.Any, data: js.Any): scala.Unit = js.native
-  // Convenience wrapper for jQuery.sap.sjax that enforces the Http method GET and the data type 'json'. 
   def syncGetJSON(sUrl: js.Any, data: js.Any, fallback: js.Any): scala.Unit = js.native
   // Convenience wrapper for jQuery.sap.sjax that enforces the Http method GET and the data type 'text'. 
   def syncGetText(sUrl: js.Any, data: js.Any): scala.Unit = js.native
-  // Convenience wrapper for jQuery.sap.sjax that enforces the Http method GET and the data type 'text'. 
   def syncGetText(sUrl: js.Any, data: js.Any, fallback: js.Any): scala.Unit = js.native
   // Convenience wrapper for jQuery.sap.sjax that enforces the Http method POST and defaults the data type of the result to 'text'. 
   def syncPost(sUrl: js.Any, data: js.Any): scala.Unit = js.native
-  // Convenience wrapper for jQuery.sap.sjax that enforces the Http method POST and defaults the data type of the result to 'text'. 
   def syncPost(sUrl: js.Any, data: js.Any, sDataType: js.Any): scala.Unit = js.native
   // Search ancestors of the given source DOM element for the specified CSS class name. 
   def syncStyleClass(sStyleClass: js.Any, vSource: js.Any, vDestination: js.Any): scala.Unit = js.native

@@ -16,19 +16,15 @@ class JSONPConnection ()
   var _script: js.Any = js.native
   var baseResponseOptions: js.UndefOr[js.Any] = js.native
   /**
-       * An observable that completes with the response, when the request is finished.
-       */
+    * An observable that completes with the response, when the request is finished.
+    */
   @JSName("response")
   var response_JSONPConnection: rxjsLib.rxjsMod.Observable[atAngularHttpLib.srcStaticUnderscoreResponseMod.Response] = js.native
   /**
-       * Callback called when the JSONP request completes, to notify the application
-       * of the new data.
-       */
+    * Callback called when the JSONP request completes, to notify the application
+    * of the new data.
+    */
   def finished(): scala.Unit = js.native
-  /**
-       * Callback called when the JSONP request completes, to notify the application
-       * of the new data.
-       */
   def finished(data: js.Any): scala.Unit = js.native
 }
 

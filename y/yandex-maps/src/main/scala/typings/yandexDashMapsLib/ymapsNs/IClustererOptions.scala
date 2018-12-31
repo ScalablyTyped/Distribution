@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IClustererOptions extends js.Object {
   var gridSize: js.UndefOr[scala.Double] = js.undefined
   var groupByCoordinates: js.UndefOr[scala.Boolean] = js.undefined

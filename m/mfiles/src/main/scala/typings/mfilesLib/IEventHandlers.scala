@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEventHandlers extends js.Object {
   val Count: scala.Double
   def Add(Index: scala.Double, EventHandler: IEventHandler): scala.Unit

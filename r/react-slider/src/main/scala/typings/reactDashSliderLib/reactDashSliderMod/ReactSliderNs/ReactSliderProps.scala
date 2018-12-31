@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReactSliderProps extends js.Object {
   var barClassName: js.UndefOr[java.lang.String] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined

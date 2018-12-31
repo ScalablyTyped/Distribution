@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IWrappingResult extends js.Object {
   var noBrokeWords: scala.Double
   var noLines: scala.Double

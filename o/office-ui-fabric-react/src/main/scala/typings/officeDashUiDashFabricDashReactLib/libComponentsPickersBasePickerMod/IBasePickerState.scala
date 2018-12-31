@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBasePickerState extends js.Object {
   var isFocused: js.UndefOr[scala.Boolean] = js.undefined
   var isMostRecentlyUsedVisible: js.UndefOr[scala.Boolean] = js.undefined

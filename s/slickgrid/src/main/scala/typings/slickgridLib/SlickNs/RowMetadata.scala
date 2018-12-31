@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RowMetadata[T] extends js.Object {
   /**
   		 * Metadata related to individual columns
   		 */
-  var columns: /* import warning: Failed type conversion: TsTypeObject(List(TsMemberIndex(Comments(1),false,Default,IndexingDict(TsIdentSimple(index),TsTypeRef(TsQIdent(List(TsIdentSimple(string))),List())),false,TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(slickgrid), TsIdentNamespace(Slick), TsIdentSimple(ColumnMetadata))),List(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))), TsMemberIndex(Comments(1),false,Default,IndexingDict(TsIdentSimple(index),TsTypeRef(TsQIdent(List(TsIdentSimple(number))),List())),false,TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(slickgrid), TsIdentNamespace(Slick), TsIdentSimple(ColumnMetadata))),List(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))))) */js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeObject(List(TsMemberIndex(Comments(1),false,Default,IndexingDict(TsIdentSimple(index),TsTypeRef(TsQIdent(List(TsIdentSimple(string))),List())),false,TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(slickgrid), TsIdentNamespace(Slick), TsIdentSimple(ColumnMetadata))),List(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))), TsMemberIndex(Comments(1),false,Default,IndexingDict(TsIdentSimple(index),TsTypeRef(TsQIdent(List(TsIdentSimple(number))),List())),false,TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(slickgrid), TsIdentNamespace(Slick), TsIdentSimple(ColumnMetadata))),List(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))))) */js.Any
+  var columns: /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.Any
   ] = js.undefined
   /**
   		 * One or more (space-separated) CSS classes to be added to the entire row.

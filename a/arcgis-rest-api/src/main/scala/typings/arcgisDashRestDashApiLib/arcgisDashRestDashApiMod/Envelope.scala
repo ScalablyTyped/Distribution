@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Envelope extends Geometry {
   var mmax: js.UndefOr[scala.Double] = js.undefined
   var mmin: js.UndefOr[scala.Double] = js.undefined

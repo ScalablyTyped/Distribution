@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITagItemStyles extends js.Object {
   /** Refers to the cancel action button on a picked TagItem. */
   var close: atUifabricMergeDashStylesLib.libIStyleMod.IStyle

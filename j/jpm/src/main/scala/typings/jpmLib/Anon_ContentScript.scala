@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ContentScript extends js.Object {
   var allow: js.UndefOr[Anon_Script] = js.undefined
   var contentScript: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined

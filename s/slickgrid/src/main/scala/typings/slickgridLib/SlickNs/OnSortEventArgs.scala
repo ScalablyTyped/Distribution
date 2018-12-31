@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnSortEventArgs[T /* <: SlickData */] extends GridEventArgs[T] {
   var multiColumnSort: scala.Boolean
   var sortAsc: scala.Boolean

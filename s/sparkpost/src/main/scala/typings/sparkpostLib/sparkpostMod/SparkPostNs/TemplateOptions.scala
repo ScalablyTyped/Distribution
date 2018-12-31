@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TemplateOptions extends js.Object {
   /** Enable or disable click tracking */
   var click_tracking: scala.Boolean

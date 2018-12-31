@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRect extends IPath {
   /** [Config Option] (Number) */
   var height: js.UndefOr[scala.Double] = js.undefined

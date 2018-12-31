@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 // Power
 ////////////////////
 /**
- * Use the chrome.power API to override the system's power management features.
- * Permissions:  "power"
- * @since Chrome 27.
- */
+  * Use the chrome.power API to override the system's power management features.
+  * Permissions:  "power"
+  * @since Chrome 27.
+  */
 @JSGlobal("chrome.power")
 @js.native
 object powerNs extends js.Object {

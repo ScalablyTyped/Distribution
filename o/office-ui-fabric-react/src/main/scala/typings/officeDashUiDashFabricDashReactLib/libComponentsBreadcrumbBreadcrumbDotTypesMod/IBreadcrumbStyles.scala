@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBreadcrumbStyles extends js.Object {
   var chevron: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   var item: atUifabricMergeDashStylesLib.libIStyleMod.IStyle

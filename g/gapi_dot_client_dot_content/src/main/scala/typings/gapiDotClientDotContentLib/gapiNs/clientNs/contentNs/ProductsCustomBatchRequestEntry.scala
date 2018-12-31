@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProductsCustomBatchRequestEntry extends js.Object {
   /** An entry ID, unique within the batch request. */
   var batchId: js.UndefOr[scala.Double] = js.undefined

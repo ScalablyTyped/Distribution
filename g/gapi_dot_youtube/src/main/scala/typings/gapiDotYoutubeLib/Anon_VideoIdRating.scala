@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_VideoIdRating extends js.Object {
   /**
-           * The rating that the authorized user gave to the video.
-           */
+    * The rating that the authorized user gave to the video.
+    */
   var rating: java.lang.String
   /**
-           * The ID that YouTube uses to uniquely identify the video.
-           */
+    * The ID that YouTube uses to uniquely identify the video.
+    */
   var videoId: java.lang.String
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICustomSlider extends ICustomControl {
   var component: qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.slider
   var defaultValue: scala.Double

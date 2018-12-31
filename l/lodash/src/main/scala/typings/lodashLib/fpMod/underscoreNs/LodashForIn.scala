@@ -10,7 +10,7 @@ trait LodashForIn extends js.Object {
   def apply[T](iteratee: js.Function1[/* value */ T, _]): LodashForIn1x1[T] = js.native
   def apply[T](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ],
     `object`: T

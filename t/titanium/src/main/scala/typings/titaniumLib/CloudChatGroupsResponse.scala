@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Argument passed to the callback when a request finishes successfully or erroneously.
- */
-
+  * Argument passed to the callback when a request finishes successfully or erroneously.
+  */
 trait CloudChatGroupsResponse extends js.Object {
   /**
   	 * Set of `chat_groups` objects, if any exist.

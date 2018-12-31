@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SegmentFilterClause extends js.Object {
   /** Dimension Filter for the segment definition. */
   var dimensionFilter: js.UndefOr[SegmentDimensionFilter] = js.undefined

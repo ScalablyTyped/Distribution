@@ -46,14 +46,14 @@ abstract class InputPane () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[InputPane, InputPaneVisibilityEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Hides the InputPane if it is showing.
-                   * @return true if the InputPane was hidden successfully; otherwise false.
-                   */
+    * Hides the InputPane if it is showing.
+    * @return true if the InputPane was hidden successfully; otherwise false.
+    */
   def tryHide(): scala.Boolean = js.native
   /**
-                   * Shows the InputPane if it is hidden.
-                   * @return true if the InputPane was shown successfully; otherwise false.
-                   */
+    * Shows the InputPane if it is hidden.
+    * @return true if the InputPane was shown successfully; otherwise false.
+    */
   def tryShow(): scala.Boolean = js.native
 }
 
@@ -62,9 +62,9 @@ abstract class InputPane () extends js.Object {
 @js.native
 object InputPane extends js.Object {
   /**
-                   * Gets the InputPane object associated with the application window that is currently visible.
-                   * @return The input pane.
-                   */
+    * Gets the InputPane object associated with the application window that is currently visible.
+    * @return The input pane.
+    */
   def getForCurrentView(): winrtDashUwpLib.WindowsNs.UINs.ViewManagementNs.InputPane = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BootstrapButtonEventMap extends ControlEventMap {
   var checkedChanged: ProcessingModeEventArgs
   var click: ButtonClickEventArgs

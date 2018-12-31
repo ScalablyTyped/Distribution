@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait filterRulesDefinition extends js.Object {
   var attributeNames: js.UndefOr[js.Any] = js.undefined
   var attributes: js.UndefOr[js.Any] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PopoverOptions extends js.Object {
   var animation: js.UndefOr[scala.Boolean] = js.undefined
   var container: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined

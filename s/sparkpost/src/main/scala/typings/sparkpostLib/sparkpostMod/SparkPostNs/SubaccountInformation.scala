@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SubaccountInformation extends js.Object {
   var compliance_status: java.lang.String
   /** ID of subaccount */

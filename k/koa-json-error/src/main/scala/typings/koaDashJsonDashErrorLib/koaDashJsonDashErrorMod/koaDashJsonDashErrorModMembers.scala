@@ -9,12 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object koaDashJsonDashErrorModMembers extends js.Object {
   /**
-   * Error handler for pure Koa 2.0.0+ JSON apps
-   */
+    * Error handler for pure Koa 2.0.0+ JSON apps
+    */
   def apply(): koaLib.koaMod.ApplicationNs.Middleware = js.native
-  /**
-   * Error handler for pure Koa 2.0.0+ JSON apps
-   */
   def apply(options: JSONErrorOptions): koaLib.koaMod.ApplicationNs.Middleware = js.native
 }
 

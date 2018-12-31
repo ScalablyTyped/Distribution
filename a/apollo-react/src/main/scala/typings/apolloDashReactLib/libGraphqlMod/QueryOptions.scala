@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryOptions extends js.Object {
   var forceFetch: js.UndefOr[scala.Boolean] = js.undefined
   var fragments: js.UndefOr[

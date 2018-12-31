@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JobRequestMessage extends js.Object {
   var environment: JobEnvironment
   var jobId: java.lang.String

@@ -5,35 +5,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Verify extends js.Object {
   var anyFunction: js.Function0[_]
   var anyNumber: js.Function0[_]
-  var anyOfClass: js.Function1[/* expectedClass */ Anon_Args[_], _]
+  var anyOfClass: Anon_ExpectedClass
   var anyString: js.Function0[_]
   var anything: js.Function0[_]
   var between: js.Function2[/* min */ scala.Double, /* max */ scala.Double, _]
-  var capture: js.Function1[
-    /* method */ js.Function1[/* a */ js.Any, _], 
-    tsDashMockitoLib.libCaptureArgCaptorMod.ArgCaptor1[_]
-  ]
+  var capture: Anon_MethodA
   var deepEqual: js.Function1[/* expectedValue */ js.Any, _]
-  var instance: js.Function1[/* mockedValue */ js.Any, _]
+  var instance: Anon_MockedValue
   var `match`: js.Function1[/* expectedValue */ stdLib.RegExp | java.lang.String, _]
-  var mock: js.Function1[/* clazz */ Anon_Args[_] | (js.Function with js.Object), _]
+  var mock: Anon_Clazz
   var notNull: js.Function0[_]
   var objectContaining: js.Function1[/* expectedValue */ js.Object, _]
-  var reset: js.Function1[/* mockedValue */ js.Any, scala.Unit]
-  var resetCalls: js.Function1[/* mockedValue */ js.Any, scala.Unit]
-  var spy: js.Function1[/* instanceToSpy */ js.Any, _]
+  var reset: Anon_MockedValueT
+  var resetCalls: Anon_MockedValueT
+  var spy: Anon_InstanceToSpy
   var strictEqual: js.Function1[/* expectedValue */ js.Any, _]
-  var verify: js.Function1[
-    /* method */ js.Any, 
-    tsDashMockitoLib.libMethodStubVerificatorMod.MethodStubVerificator[_]
-  ]
-  var when: js.Function1[
-    /* method */ js.Any, 
-    tsDashMockitoLib.libMethodStubSetterMod.MethodStubSetter[_, scala.Unit, scala.Unit]
-  ]
+  var verify: Anon_Method
+  var when: Anon_MethodT
 }
 

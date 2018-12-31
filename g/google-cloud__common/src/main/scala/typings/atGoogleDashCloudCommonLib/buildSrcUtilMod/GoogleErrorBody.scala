@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GoogleErrorBody extends js.Object {
   var code: scala.Double
   var errors: js.UndefOr[js.Array[GoogleInnerError]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocaleSettings extends js.Object {
   var clear: java.lang.String
   var dayNames: js.Array[java.lang.String]

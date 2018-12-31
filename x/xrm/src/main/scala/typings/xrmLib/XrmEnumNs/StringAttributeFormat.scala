@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait StringAttributeFormat extends js.Object
 
 /**
-     * Constant Enum: String attribute formats for Attributes.Attribute.getFormat(), used by {@link Attributes.StringAttribute StringAttribute}.
-     * @see {@link Xrm.Attributes.StringAttributeFormat}
-     */
+  * Constant Enum: String attribute formats for Attributes.Attribute.getFormat(), used by {@link Attributes.StringAttribute StringAttribute}.
+  * @see {@link Xrm.Attributes.StringAttributeFormat}
+  */
 @JSGlobal("XrmEnum.StringAttributeFormat")
 @js.native
 object StringAttributeFormat extends js.Object {

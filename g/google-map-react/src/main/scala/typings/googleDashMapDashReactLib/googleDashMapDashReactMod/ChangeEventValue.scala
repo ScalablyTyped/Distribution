@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChangeEventValue extends js.Object {
   var bounds: Bounds
   var center: Coords

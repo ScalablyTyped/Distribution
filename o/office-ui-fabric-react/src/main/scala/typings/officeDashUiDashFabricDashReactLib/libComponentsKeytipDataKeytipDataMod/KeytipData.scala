@@ -15,16 +15,11 @@ class KeytipData ()
   var _keytipManager: js.Any = js.native
   var _uniqueId: js.Any = js.native
   /**
-       * Gets the aria- and data- attributes to attach to the component
-       * @param keytipProps
-       * @param describedByPrepend
-       */
+    * Gets the aria- and data- attributes to attach to the component
+    * @param keytipProps
+    * @param describedByPrepend
+    */
   /* private */ def _getKtpAttrs(keytipProps: js.Any): js.Any = js.native
-  /**
-       * Gets the aria- and data- attributes to attach to the component
-       * @param keytipProps
-       * @param describedByPrepend
-       */
   /* private */ def _getKtpAttrs(keytipProps: js.Any, describedByPrepend: js.Any): js.Any = js.native
   /* private */ def _getKtpProps(): js.Any = js.native
   @JSName("componentDidMount")

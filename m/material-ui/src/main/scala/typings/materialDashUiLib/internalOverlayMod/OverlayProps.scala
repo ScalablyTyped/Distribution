@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OverlayProps
   extends reactLib.reactMod.ReactNs.Props[Overlay] {
   var autoLockScrolling: js.UndefOr[scala.Boolean] = js.undefined

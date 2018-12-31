@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DisksScopedList extends js.Object {
   /** [Output Only] List of disks contained in this scope. */
   var disks: js.UndefOr[js.Array[Disk]] = js.undefined

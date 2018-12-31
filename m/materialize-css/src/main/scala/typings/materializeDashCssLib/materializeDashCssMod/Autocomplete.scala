@@ -14,27 +14,21 @@ class Autocomplete ()
 @js.native
 object Autocomplete extends js.Object {
   /**
-           * Get Instance
-           */
+    * Get Instance
+    */
   def getInstance(elem: stdLib.Element): materializeDashCssLib.MNs.Autocomplete = js.native
   /**
-           * Init autocompletes
-           */
+    * Init autocompletes
+    */
   def init(els: materializeDashCssLib.MElements): js.Array[materializeDashCssLib.MNs.Autocomplete] = js.native
-  /**
-           * Init autocompletes
-           */
   def init(
     els: materializeDashCssLib.MElements,
     options: stdLib.Partial[materializeDashCssLib.MNs.AutocompleteOptions]
   ): js.Array[materializeDashCssLib.MNs.Autocomplete] = js.native
   /**
-           * Init autocomplete
-           */
+    * Init autocomplete
+    */
   def init(els: stdLib.Element): materializeDashCssLib.MNs.Autocomplete = js.native
-  /**
-           * Init autocomplete
-           */
   def init(els: stdLib.Element, options: stdLib.Partial[materializeDashCssLib.MNs.AutocompleteOptions]): materializeDashCssLib.MNs.Autocomplete = js.native
 }
 

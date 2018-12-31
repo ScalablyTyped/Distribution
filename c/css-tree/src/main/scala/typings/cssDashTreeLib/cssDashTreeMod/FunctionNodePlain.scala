@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FunctionNodePlain extends CssNodeCommon {
   var children: js.Array[CssNodePlain]
   var name: java.lang.String

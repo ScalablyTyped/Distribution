@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_WithoutSelection extends js.Object {
   var convertMarkers: js.UndefOr[scala.Boolean] = js.undefined
   var rootName: js.UndefOr[java.lang.String] = js.undefined

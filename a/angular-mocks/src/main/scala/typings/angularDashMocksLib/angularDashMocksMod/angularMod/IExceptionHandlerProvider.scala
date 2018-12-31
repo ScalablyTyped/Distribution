@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 // see https://docs.angularjs.org/api/ngMock/service/$exceptionHandler
 // see https://docs.angularjs.org/api/ngMock/provider/$exceptionHandlerProvider
 ///////////////////////////////////////////////////////////////////////////
-
 trait IExceptionHandlerProvider
   extends angularLib.angularMod.angularNs.IServiceProvider {
   def mode(mode: java.lang.String): scala.Unit

@@ -23,8 +23,14 @@ abstract class ApolloCache[TSerialized] ()
   def transformForLink(document: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.DocumentNode = js.native
   def watch(watch: apolloDashCacheLib.libTypesCacheMod.CacheNs.WatchOptions): js.Function0[scala.Unit] = js.native
   def write[TResult, TVariables](write: apolloDashCacheLib.libTypesCacheMod.CacheNs.WriteOptions[TResult, TVariables]): scala.Unit = js.native
-  def writeData[TData](hasIdData: js.Any): scala.Unit = js.native
-  def writeFragment[TData, TVariables](options: js.Any): scala.Unit = js.native
-  def writeQuery[TData, TVariables](options: js.Any): scala.Unit = js.native
+  def writeData[TData](
+    hasIdData: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Cache.WriteDataOptions<TData> */ js.Any
+  ): scala.Unit = js.native
+  def writeFragment[TData, TVariables](
+    options: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Cache.WriteFragmentOptions<TData, TVariables> */ js.Any
+  ): scala.Unit = js.native
+  def writeQuery[TData, TVariables](
+    options: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Cache.WriteQueryOptions<TData, TVariables> */ js.Any
+  ): scala.Unit = js.native
 }
 

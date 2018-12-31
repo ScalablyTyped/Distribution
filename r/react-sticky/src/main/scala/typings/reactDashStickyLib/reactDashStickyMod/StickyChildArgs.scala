@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StickyChildArgs extends js.Object {
   var calculatedHeight: scala.Double
   var distanceFromBottom: scala.Double

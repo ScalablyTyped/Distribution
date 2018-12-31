@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 trait HandlerResult
   extends js.Function {
   /**
-       * Transport Service
-       */
+    * Transport Service
+    */
   var Service: js.Any = js.native
   /**
-       * default Service
-       */
+    * default Service
+    */
   var service: js.Any = js.native
   /**
-       * initialize service
-       */
+    * initialize service
+    */
   def apply(): scala.Unit = js.native
 }
 

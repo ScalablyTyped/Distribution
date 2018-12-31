@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GitRefUpdate extends js.Object {
   var isLocked: scala.Boolean
   var name: java.lang.String

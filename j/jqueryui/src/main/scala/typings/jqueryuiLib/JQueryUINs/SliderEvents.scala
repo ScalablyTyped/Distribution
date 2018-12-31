@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SliderEvents extends js.Object {
   var change: js.UndefOr[SliderEvent] = js.undefined
   var create: js.UndefOr[SliderEvent] = js.undefined

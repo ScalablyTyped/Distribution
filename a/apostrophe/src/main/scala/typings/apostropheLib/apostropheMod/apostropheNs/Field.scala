@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Field extends js.Object {
   var choices: js.UndefOr[js.Array[SelectChoice]] = js.undefined
   var help: js.UndefOr[java.lang.String] = js.undefined

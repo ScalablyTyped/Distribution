@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   /** An array of alignment types for each column, default ['l','l',...]. */
   var align: js.UndefOr[

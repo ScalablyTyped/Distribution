@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkItemBehavior extends js.Object {
   var `abstract`: scala.Boolean
   var color: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PromptOptions extends js.Object {
   var beforePrompt: js.UndefOr[js.Function] = js.undefined
   var onEndPrompt: js.UndefOr[js.Function] = js.undefined

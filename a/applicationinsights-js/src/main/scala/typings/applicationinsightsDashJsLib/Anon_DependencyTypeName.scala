@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DependencyTypeName extends js.Object {
   var async: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType
   var commandName: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType

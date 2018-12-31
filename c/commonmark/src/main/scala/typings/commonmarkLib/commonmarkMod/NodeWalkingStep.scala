@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodeWalkingStep extends js.Object {
   /**
-       * a boolean, which is true when we enter a Node from a parent or sibling, and false when we reenter it from a child
-       */
+    * a boolean, which is true when we enter a Node from a parent or sibling, and false when we reenter it from a child
+    */
   var entering: scala.Boolean
   /**
-       * The node belonging to this step
-       */
+    * The node belonging to this step
+    */
   var node: Node
 }
 

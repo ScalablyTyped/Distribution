@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	*	Participant info
 	*/
-
 trait ParticipantInfo extends js.Object {
   /**
   		* The participant's affiliation with the room

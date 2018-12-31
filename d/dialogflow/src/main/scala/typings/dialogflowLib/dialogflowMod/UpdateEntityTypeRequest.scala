@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateEntityTypeRequest extends js.Object {
   var entityType: EntityType
   var languageCode: js.UndefOr[java.lang.String] = js.undefined

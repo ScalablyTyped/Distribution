@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IntrinsicElements extends js.Object {
   var `blessed-bigtext`: js.Any
   var `blessed-box`: js.Any

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Ad Param
-
 trait AdParam extends AdWordsEntity {
   def getAdGroup(): AdGroup
   def getInde(): scala.Double

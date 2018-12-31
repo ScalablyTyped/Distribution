@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MenuShareQQ extends ShareTimelineConfig {
   /**
-           * 分享描述
-           */
+    * 分享描述
+    */
   var desc: java.lang.String
 }
 

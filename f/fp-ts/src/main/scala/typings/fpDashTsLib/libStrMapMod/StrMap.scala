@@ -14,56 +14,56 @@ class StrMap[A] protected () extends js.Object {
   val value: org.scalablytyped.runtime.StringDictionary[A] = js.native
   def filter(p: fpDashTsLib.libFunctionMod.Predicate[A]): StrMap[A] = js.native
   /**
-       * @since 1.12.0
-       */
+    * @since 1.12.0
+    */
   def filterMap[B](f: js.Function1[/* a */ A, fpDashTsLib.libOptionMod.Option[B]]): StrMap[B] = js.native
   /**
-       * @since 1.12.0
-       */
+    * @since 1.12.0
+    */
   def filterMapWithIndex[B](f: js.Function2[/* i */ java.lang.String, /* a */ A, fpDashTsLib.libOptionMod.Option[B]]): StrMap[B] = js.native
   /**
-       * @since 1.12.0
-       */
+    * @since 1.12.0
+    */
   def filterWithIndex(p: js.Function2[/* i */ java.lang.String, /* a */ A, scala.Boolean]): StrMap[A] = js.native
   /**
-       * @since 1.4.0
-       */
+    * @since 1.4.0
+    */
   @JSName("filter")
   def filter_BA[B /* <: A */](p: fpDashTsLib.libFunctionMod.Refinement[A, B]): StrMap[B] = js.native
   /**
-       * @since 1.12.0
-       */
+    * @since 1.12.0
+    */
   def foldr[B](b: B, f: js.Function2[/* a */ A, /* b */ B, B]): B = js.native
   /**
-       * @since 1.12.0
-       */
+    * @since 1.12.0
+    */
   def foldrWithKey[B](b: B, f: js.Function3[/* k */ java.lang.String, /* a */ A, /* b */ B, B]): B = js.native
   def map[B](f: js.Function1[/* a */ A, B]): StrMap[B] = js.native
   def mapWithKey[B](f: js.Function2[/* k */ java.lang.String, /* a */ A, B]): StrMap[B] = js.native
   /**
-       * @since 1.12.0
-       */
+    * @since 1.12.0
+    */
   def partition(p: fpDashTsLib.libFunctionMod.Predicate[A]): fpDashTsLib.libCompactableMod.Separated[StrMap[A], StrMap[A]] = js.native
   /**
-       * @since 1.12.0
-       */
+    * @since 1.12.0
+    */
   def partitionMap[RL, RR](f: js.Function1[/* a */ A, fpDashTsLib.libEitherMod.Either[RL, RR]]): fpDashTsLib.libCompactableMod.Separated[StrMap[RL], StrMap[RR]] = js.native
   /**
-       * @since 1.12.0
-       */
+    * @since 1.12.0
+    */
   def partitionMapWithIndex[RL, RR](f: js.Function2[/* i */ java.lang.String, /* a */ A, fpDashTsLib.libEitherMod.Either[RL, RR]]): fpDashTsLib.libCompactableMod.Separated[StrMap[RL], StrMap[RR]] = js.native
   /**
-       * @since 1.12.0
-       */
+    * @since 1.12.0
+    */
   def partitionWithIndex(p: js.Function2[/* i */ java.lang.String, /* a */ A, scala.Boolean]): fpDashTsLib.libCompactableMod.Separated[StrMap[A], StrMap[A]] = js.native
   def reduce[B](b: B, f: js.Function2[/* b */ B, /* a */ A, B]): B = js.native
   /**
-       * @since 1.12.0
-       */
+    * @since 1.12.0
+    */
   def reduceWithKey[B](b: B, f: js.Function3[/* k */ java.lang.String, /* b */ B, /* a */ A, B]): B = js.native
   /**
-       * @since 1.12.0
-       */
+    * @since 1.12.0
+    */
   def separate[RL, RR](`this`: StrMap[fpDashTsLib.libEitherMod.Either[RL, RR]]): fpDashTsLib.libCompactableMod.Separated[StrMap[RL], StrMap[RR]] = js.native
 }
 

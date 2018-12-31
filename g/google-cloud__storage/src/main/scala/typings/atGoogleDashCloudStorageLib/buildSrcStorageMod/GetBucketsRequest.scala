@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetBucketsRequest extends js.Object {
   var autoPaginate: js.UndefOr[scala.Boolean] = js.undefined
   var maxApiCalls: js.UndefOr[scala.Double] = js.undefined

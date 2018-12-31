@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateRelayWebhook extends js.Object {
   /** Authentication token to present in the X-MessageSystems-Webhook-Token header of POST requests to target */
   var auth_token: js.UndefOr[java.lang.String] = js.undefined

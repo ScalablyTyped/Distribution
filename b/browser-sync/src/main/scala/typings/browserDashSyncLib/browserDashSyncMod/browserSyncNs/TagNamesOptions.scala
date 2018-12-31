@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TagNamesOptions extends js.Object {
   var css: js.UndefOr[java.lang.String] = js.undefined
   var gif: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AppUser extends js.Object {
   var URI: java.lang.String
   var systemKey: java.lang.String

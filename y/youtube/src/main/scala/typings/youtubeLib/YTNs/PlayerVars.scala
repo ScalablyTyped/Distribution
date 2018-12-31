@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlayerVars extends js.Object {
   /**
   		 * Whether to autohide video controls (by default, HideProgressBar).

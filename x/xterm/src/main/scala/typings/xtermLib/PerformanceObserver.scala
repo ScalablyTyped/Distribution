@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PerformanceObserver extends js.Object {
   def disconnect(): scala.Unit
   def observe(options: PerformanceObserverInit): scala.Unit

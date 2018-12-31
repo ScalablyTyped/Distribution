@@ -8,14 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "Facebook")
 @js.native
 object FacebookNs extends js.Object {
-  
   trait Options extends js.Object {
     var behavior: js.UndefOr[
         expoLib.expoLibStrings.web | expoLib.expoLibStrings.native | expoLib.expoLibStrings.browser | expoLib.expoLibStrings.system
       ] = js.undefined
     var permissions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   }
-  
   
   trait Response extends js.Object {
     var expires: js.UndefOr[scala.Double] = js.undefined

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class PhoneCallHistoryEntryReader () extends js.Object {
   /**
-                   * Returns a list of the PhoneCallHistoryEntry objects.
-                   * @return An asynchronous operation that returns an IVectorView upon successful completion.
-                   */
+    * Returns a list of the PhoneCallHistoryEntry objects.
+    * @return An asynchronous operation that returns an IVectorView upon successful completion.
+    */
   def readBatchAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
 }
 

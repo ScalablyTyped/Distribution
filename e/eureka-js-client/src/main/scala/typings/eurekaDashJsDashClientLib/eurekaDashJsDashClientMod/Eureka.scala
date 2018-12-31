@@ -17,8 +17,8 @@ class Eureka protected () extends js.Object {
     eurekaDashJsDashClientLib.eurekaDashJsDashClientMod.EurekaClientNs.EurekaInstanceConfig
   ] = js.native
   def start(): scala.Unit = js.native
-  def start(cb: js.Function2[/* err */ stdLib.Error, /* repeated */js.Any, scala.Unit]): scala.Unit = js.native
+  def start(cb: js.Function2[/* err */ stdLib.Error, /* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
   def stop(): scala.Unit = js.native
-  def stop(cb: js.Function2[/* err */ stdLib.Error, /* repeated */js.Any, scala.Unit]): scala.Unit = js.native
+  def stop(cb: js.Function2[/* err */ stdLib.Error, /* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
 }
 

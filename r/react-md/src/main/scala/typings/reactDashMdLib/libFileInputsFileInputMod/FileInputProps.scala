@@ -18,12 +18,12 @@ trait FileInputProps
   var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.native
   var iconBefore: js.UndefOr[scala.Boolean] = js.native
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var iconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.native
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var iconClassName: js.UndefOr[java.lang.String] = js.native
   var id: reactDashMdLib.libMod.IdPropType = js.native
   var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.native

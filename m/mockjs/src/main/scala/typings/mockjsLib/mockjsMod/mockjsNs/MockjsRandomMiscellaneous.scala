@@ -15,7 +15,6 @@ trait MockjsRandomMiscellaneous extends js.Object {
   def id(): S = js.native
   // Random.increment
   def increment(): N = js.native
-  // Random.increment
   def increment(step: N): N = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SinglePickerProps extends js.Object {
   var defaultPickerValue: js.UndefOr[momentLib.momentMod.momentNs.Moment] = js.undefined
   var defaultValue: js.UndefOr[momentLib.momentMod.momentNs.Moment] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HandleStyles extends js.Object {
   var bottom: js.UndefOr[reactDashRndLib.CSSProperties] = js.undefined
   var bottomLeft: js.UndefOr[reactDashRndLib.CSSProperties] = js.undefined

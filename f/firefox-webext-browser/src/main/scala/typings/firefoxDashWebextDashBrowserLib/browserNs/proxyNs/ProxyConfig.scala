@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 /* proxy types */
 /** An object which describes proxy settings. */
-
 trait ProxyConfig extends js.Object {
   /** A URL to use to configure the proxy. */
   var autoConfigUrl: js.UndefOr[java.lang.String] = js.undefined

@@ -7,19 +7,19 @@ import scala.scalajs.js.annotation._
 
 @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client")
 @js.native
+/**
+  * Handles OAuth2 flow for Google APIs.
+  *
+  * @param clientId The authentication client ID.
+  * @param clientSecret The authentication client secret.
+  * @param redirectUri The URI to redirect to after completing the auth
+  * request.
+  * @param opts optional options for overriding the given parameters.
+  * @constructor
+  */
 class OAuth2Client ()
   extends googleDashAuthDashLibraryLib.buildSrcAuthAuthclientMod.AuthClient {
   def this(clientId: java.lang.String) = this()
-  /**
-       * Handles OAuth2 flow for Google APIs.
-       *
-       * @param clientId The authentication client ID.
-       * @param clientSecret The authentication client secret.
-       * @param redirectUri The URI to redirect to after completing the auth
-       * request.
-       * @param opts optional options for overriding the given parameters.
-       * @constructor
-       */
   def this(options: OAuth2ClientOptions) = this()
   def this(clientId: java.lang.String, clientSecret: java.lang.String) = this()
   def this(clientId: java.lang.String, clientSecret: java.lang.String, redirectUri: java.lang.String) = this()
@@ -38,127 +38,101 @@ class OAuth2Client ()
   var revokeCredentialsAsync: js.Any = js.native
   var verifyIdTokenAsync: js.Any = js.native
   /**
-       * This is a utils method to decode a base64 string
-       * @param b64String The string to base64 decode
-       * @return The decoded string
-       */
+    * This is a utils method to decode a base64 string
+    * @param b64String The string to base64 decode
+    * @return The decoded string
+    */
   def decodeBase64(b64String: java.lang.String): java.lang.String = js.native
   /**
-       * Generates URL for consent page landing.
-       * @param opts Options.
-       * @return URL to consent page.
-       */
+    * Generates URL for consent page landing.
+    * @param opts Options.
+    * @return URL to consent page.
+    */
   def generateAuthUrl(): java.lang.String = js.native
-  /**
-       * Generates URL for consent page landing.
-       * @param opts Options.
-       * @return URL to consent page.
-       */
   def generateAuthUrl(opts: GenerateAuthUrlOpts): java.lang.String = js.native
   /**
-       * Convenience method to automatically generate a code_verifier, and it's
-       * resulting SHA256. If used, this must be paired with a S256
-       * code_challenge_method.
-       */
+    * Convenience method to automatically generate a code_verifier, and it's
+    * resulting SHA256. If used, this must be paired with a S256
+    * code_challenge_method.
+    */
   def generateCodeVerifier(): googleDashAuthDashLibraryLib.Anon_CodeChallenge = js.native
   /**
-       * Get a non-expired access token, after refreshing if necessary
-       *
-       * @param callback Callback to call with the access token
-       */
+    * Get a non-expired access token, after refreshing if necessary
+    *
+    * @param callback Callback to call with the access token
+    */
   def getAccessToken(): js.Promise[GetAccessTokenResponse] = js.native
   def getAccessToken(callback: GetAccessTokenCallback): scala.Unit = js.native
   /**
-       * Gets federated sign-on certificates to use for verifying identity tokens.
-       * Returns certs as array structure, where keys are key ids, and values
-       * are PEM encoded certificates.
-       * @param callback Callback supplying the certificates
-       */
+    * Gets federated sign-on certificates to use for verifying identity tokens.
+    * Returns certs as array structure, where keys are key ids, and values
+    * are PEM encoded certificates.
+    * @param callback Callback supplying the certificates
+    */
   def getFederatedSignonCerts(): js.Promise[FederatedSignonCertsResponse] = js.native
   def getFederatedSignonCerts(callback: GetFederatedSignonCertsCallback): scala.Unit = js.native
   def getFederatedSignonCertsAsync(): js.Promise[FederatedSignonCertsResponse] = js.native
   /**
-       * The main authentication interface.  It takes an optional url which when
-       * present is the endpoint being accessed, and returns a Promise which
-       * resolves with authorization header fields.
-       *
-       * In OAuth2Client, the result has the form:
-       * { Authorization: 'Bearer <access_token_value>' }
-       * @param url The optional url being authorized
-       */
+    * The main authentication interface.  It takes an optional url which when
+    * present is the endpoint being accessed, and returns a Promise which
+    * resolves with authorization header fields.
+    *
+    * In OAuth2Client, the result has the form:
+    * { Authorization: 'Bearer <access_token_value>' }
+    * @param url The optional url being authorized
+    */
   def getRequestHeaders(): js.Promise[Headers] = js.native
-  /**
-       * The main authentication interface.  It takes an optional url which when
-       * present is the endpoint being accessed, and returns a Promise which
-       * resolves with authorization header fields.
-       *
-       * In OAuth2Client, the result has the form:
-       * { Authorization: 'Bearer <access_token_value>' }
-       * @param url The optional url being authorized
-       */
   def getRequestHeaders(url: java.lang.String): js.Promise[Headers] = js.native
   /**
-       * Obtain the set of headers required to authenticate a request.
-       *
-       * @deprecated Use getRequestHeaders instead.
-       * @param url the Uri being authorized
-       * @param callback the func described above
-       */
+    * Obtain the set of headers required to authenticate a request.
+    *
+    * @deprecated Use getRequestHeaders instead.
+    * @param url the Uri being authorized
+    * @param callback the func described above
+    */
   def getRequestMetadata(): js.Promise[RequestMetadataResponse] = js.native
-  /**
-       * Obtain the set of headers required to authenticate a request.
-       *
-       * @deprecated Use getRequestHeaders instead.
-       * @param url the Uri being authorized
-       * @param callback the func described above
-       */
   def getRequestMetadata(url: java.lang.String): js.Promise[RequestMetadataResponse] = js.native
   def getRequestMetadata(url: java.lang.String, callback: RequestMetadataCallback): scala.Unit = js.native
   def getRequestMetadata(url: scala.Null, callback: RequestMetadataCallback): scala.Unit = js.native
   /* protected */ def getRequestMetadataAsync(): js.Promise[RequestMetadataResponse] = js.native
   /* protected */ def getRequestMetadataAsync(url: java.lang.String): js.Promise[RequestMetadataResponse] = js.native
   /**
-       * Gets the access token for the given code.
-       * @param code The authorization code.
-       * @param callback Optional callback fn.
-       */
+    * Gets the access token for the given code.
+    * @param code The authorization code.
+    * @param callback Optional callback fn.
+    */
   def getToken(code: java.lang.String): js.Promise[GetTokenResponse] = js.native
   def getToken(code: java.lang.String, callback: GetTokenCallback): scala.Unit = js.native
   def getToken(options: GetTokenOptions): js.Promise[GetTokenResponse] = js.native
   def getToken(options: GetTokenOptions, callback: GetTokenCallback): scala.Unit = js.native
   /**
-       * Obtains information about the provisioned access token.  Especially useful
-       * if you want to check the scopes that were provisioned to a given token.
-       *
-       * @param accessToken Required.  The Access Token for which you want to get
-       * user info.
-       */
+    * Obtains information about the provisioned access token.  Especially useful
+    * if you want to check the scopes that were provisioned to a given token.
+    *
+    * @param accessToken Required.  The Access Token for which you want to get
+    * user info.
+    */
   def getTokenInfo(accessToken: java.lang.String): js.Promise[TokenInfo] = js.native
   /**
-       * Returns true if a token is expired or will expire within
-       * eagerRefreshThresholdMillismilliseconds.
-       * If there is no expiry time, assumes the token is not expired or expiring.
-       */
+    * Returns true if a token is expired or will expire within
+    * eagerRefreshThresholdMillismilliseconds.
+    * If there is no expiry time, assumes the token is not expired or expiring.
+    */
   /* protected */ def isTokenExpiring(): scala.Boolean = js.native
   /**
-       * Retrieves the access token using refresh token
-       *
-       * @deprecated use getRequestHeaders instead.
-       * @param callback callback
-       */
+    * Retrieves the access token using refresh token
+    *
+    * @deprecated use getRequestHeaders instead.
+    * @param callback callback
+    */
   def refreshAccessToken(): js.Promise[RefreshAccessTokenResponse] = js.native
   def refreshAccessToken(callback: RefreshAccessTokenCallback): scala.Unit = js.native
   /**
-       * Refreshes the access token.
-       * @param refresh_token Existing refresh token.
-       * @private
-       */
+    * Refreshes the access token.
+    * @param refresh_token Existing refresh token.
+    * @private
+    */
   /* protected */ def refreshToken(): js.Promise[GetTokenResponse] = js.native
-  /**
-       * Refreshes the access token.
-       * @param refresh_token Existing refresh token.
-       * @private
-       */
   /* protected */ def refreshToken(refreshToken: java.lang.String): js.Promise[GetTokenResponse] = js.native
   /* protected */ def refreshTokenNoCache(): js.Promise[GetTokenResponse] = js.native
   /* protected */ def refreshTokenNoCache(refreshToken: java.lang.String): js.Promise[GetTokenResponse] = js.native
@@ -169,28 +143,28 @@ class OAuth2Client ()
   /* protected */ def requestAsync[T](opts: axiosLib.axiosMod.AxiosRequestConfig): js.Promise[axiosLib.axiosMod.AxiosResponse[T]] = js.native
   /* protected */ def requestAsync[T](opts: axiosLib.axiosMod.AxiosRequestConfig, retry: scala.Boolean): js.Promise[axiosLib.axiosMod.AxiosResponse[T]] = js.native
   /**
-       * Revokes access token and clears the credentials object
-       * @param callback callback
-       */
+    * Revokes access token and clears the credentials object
+    * @param callback callback
+    */
   def revokeCredentials(): axiosLib.axiosMod.AxiosPromise[RevokeCredentialsResult] = js.native
   def revokeCredentials(
     callback: googleDashAuthDashLibraryLib.buildSrcTransportersMod.BodyResponseCallback[RevokeCredentialsResult]
   ): scala.Unit = js.native
   /**
-       * Revokes the access given to token.
-       * @param token The existing token to be revoked.
-       * @param callback Optional callback fn.
-       */
+    * Revokes the access given to token.
+    * @param token The existing token to be revoked.
+    * @param callback Optional callback fn.
+    */
   def revokeToken(token: java.lang.String): axiosLib.axiosMod.AxiosPromise[RevokeCredentialsResult] = js.native
   def revokeToken(
     token: java.lang.String,
     callback: googleDashAuthDashLibraryLib.buildSrcTransportersMod.BodyResponseCallback[RevokeCredentialsResult]
   ): scala.Unit = js.native
   /**
-       * Verify id token is token by checking the certs and audience
-       * @param options that contains all options.
-       * @param callback Callback supplying GoogleLogin if successful
-       */
+    * Verify id token is token by checking the certs and audience
+    * @param options that contains all options.
+    * @param callback Callback supplying GoogleLogin if successful
+    */
   def verifyIdToken(options: VerifyIdTokenOptions): js.Promise[googleDashAuthDashLibraryLib.buildSrcAuthLoginticketMod.LoginTicket] = js.native
   def verifyIdToken(
     options: VerifyIdTokenOptions,
@@ -201,42 +175,22 @@ class OAuth2Client ()
     ]
   ): scala.Unit = js.native
   /**
-       * Verify the id token is signed with the correct certificate
-       * and is from the correct audience.
-       * @param jwt The jwt to verify (The ID Token in this case).
-       * @param certs The array of certs to test the jwt against.
-       * @param requiredAudience The audience to test the jwt against.
-       * @param issuers The allowed issuers of the jwt (Optional).
-       * @param maxExpiry The max expiry the certificate can be (Optional).
-       * @return Returns a LoginTicket on verification.
-       */
+    * Verify the id token is signed with the correct certificate
+    * and is from the correct audience.
+    * @param jwt The jwt to verify (The ID Token in this case).
+    * @param certs The array of certs to test the jwt against.
+    * @param requiredAudience The audience to test the jwt against.
+    * @param issuers The allowed issuers of the jwt (Optional).
+    * @param maxExpiry The max expiry the certificate can be (Optional).
+    * @return Returns a LoginTicket on verification.
+    */
   def verifySignedJwtWithCerts(jwt: java.lang.String, certs: Certificates, requiredAudience: java.lang.String): googleDashAuthDashLibraryLib.buildSrcAuthLoginticketMod.LoginTicket = js.native
-  /**
-       * Verify the id token is signed with the correct certificate
-       * and is from the correct audience.
-       * @param jwt The jwt to verify (The ID Token in this case).
-       * @param certs The array of certs to test the jwt against.
-       * @param requiredAudience The audience to test the jwt against.
-       * @param issuers The allowed issuers of the jwt (Optional).
-       * @param maxExpiry The max expiry the certificate can be (Optional).
-       * @return Returns a LoginTicket on verification.
-       */
   def verifySignedJwtWithCerts(
     jwt: java.lang.String,
     certs: Certificates,
     requiredAudience: java.lang.String,
     issuers: js.Array[java.lang.String]
   ): googleDashAuthDashLibraryLib.buildSrcAuthLoginticketMod.LoginTicket = js.native
-  /**
-       * Verify the id token is signed with the correct certificate
-       * and is from the correct audience.
-       * @param jwt The jwt to verify (The ID Token in this case).
-       * @param certs The array of certs to test the jwt against.
-       * @param requiredAudience The audience to test the jwt against.
-       * @param issuers The allowed issuers of the jwt (Optional).
-       * @param maxExpiry The max expiry the certificate can be (Optional).
-       * @return Returns a LoginTicket on verification.
-       */
   def verifySignedJwtWithCerts(
     jwt: java.lang.String,
     certs: Certificates,
@@ -244,43 +198,13 @@ class OAuth2Client ()
     issuers: js.Array[java.lang.String],
     maxExpiry: scala.Double
   ): googleDashAuthDashLibraryLib.buildSrcAuthLoginticketMod.LoginTicket = js.native
-  /**
-       * Verify the id token is signed with the correct certificate
-       * and is from the correct audience.
-       * @param jwt The jwt to verify (The ID Token in this case).
-       * @param certs The array of certs to test the jwt against.
-       * @param requiredAudience The audience to test the jwt against.
-       * @param issuers The allowed issuers of the jwt (Optional).
-       * @param maxExpiry The max expiry the certificate can be (Optional).
-       * @return Returns a LoginTicket on verification.
-       */
   def verifySignedJwtWithCerts(jwt: java.lang.String, certs: Certificates, requiredAudience: js.Array[java.lang.String]): googleDashAuthDashLibraryLib.buildSrcAuthLoginticketMod.LoginTicket = js.native
-  /**
-       * Verify the id token is signed with the correct certificate
-       * and is from the correct audience.
-       * @param jwt The jwt to verify (The ID Token in this case).
-       * @param certs The array of certs to test the jwt against.
-       * @param requiredAudience The audience to test the jwt against.
-       * @param issuers The allowed issuers of the jwt (Optional).
-       * @param maxExpiry The max expiry the certificate can be (Optional).
-       * @return Returns a LoginTicket on verification.
-       */
   def verifySignedJwtWithCerts(
     jwt: java.lang.String,
     certs: Certificates,
     requiredAudience: js.Array[java.lang.String],
     issuers: js.Array[java.lang.String]
   ): googleDashAuthDashLibraryLib.buildSrcAuthLoginticketMod.LoginTicket = js.native
-  /**
-       * Verify the id token is signed with the correct certificate
-       * and is from the correct audience.
-       * @param jwt The jwt to verify (The ID Token in this case).
-       * @param certs The array of certs to test the jwt against.
-       * @param requiredAudience The audience to test the jwt against.
-       * @param issuers The allowed issuers of the jwt (Optional).
-       * @param maxExpiry The max expiry the certificate can be (Optional).
-       * @return Returns a LoginTicket on verification.
-       */
   def verifySignedJwtWithCerts(
     jwt: java.lang.String,
     certs: Certificates,
@@ -294,33 +218,33 @@ class OAuth2Client ()
 @js.native
 object OAuth2Client extends js.Object {
   /**
-       * Clock skew - five minutes in seconds
-       */
+    * Clock skew - five minutes in seconds
+    */
   val `CLOCK_SKEW_SECS_`: js.Any = js.native
   /**
-       * The base URL for auth endpoints.
-       */
+    * The base URL for auth endpoints.
+    */
   val `GOOGLE_OAUTH2_AUTH_BASE_URL_`: js.Any = js.native
   /**
-       * Google Sign on certificates.
-       */
+    * Google Sign on certificates.
+    */
   val `GOOGLE_OAUTH2_FEDERATED_SIGNON_CERTS_URL_`: js.Any = js.native
   /**
-       * The base endpoint to revoke tokens.
-       */
+    * The base endpoint to revoke tokens.
+    */
   val `GOOGLE_OAUTH2_REVOKE_URL_`: js.Any = js.native
   /**
-       * The base endpoint for token retrieval.
-       */
+    * The base endpoint for token retrieval.
+    */
   val `GOOGLE_OAUTH2_TOKEN_URL_`: js.Any = js.native
   val GOOGLE_TOKEN_INFO_URL: /* https://oauth2.googleapis.com/tokeninfo */ java.lang.String = js.native
   /**
-       * The allowed oauth token issuers.
-       */
+    * The allowed oauth token issuers.
+    */
   val `ISSUERS_`: js.Any = js.native
   /**
-       * Max Token Lifetime is one day in seconds
-       */
+    * Max Token Lifetime is one day in seconds
+    */
   val `MAX_TOKEN_LIFETIME_SECS_`: js.Any = js.native
 }
 

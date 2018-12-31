@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * A media object from the camera or photo gallery.
- */
-
+  * A media object from the camera or photo gallery.
+  */
 trait CameraMediaItemType extends js.Object {
   /**
   	 * Error code. Returns 0.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResourceView extends js.Object {
   /** The creation time of the resource view. */
   var creationTimestamp: js.UndefOr[java.lang.String] = js.undefined

@@ -5,5 +5,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object expressDashSanitizedLib {
-  type e = js.Function0[js.Function3[/* req */ js.Any, /* res */ js.Any, /* next */ js.Any, scala.Unit]]
+  type e = js.Function0[
+    js.Function3[
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify express.Request */ /* req */ js.Any, 
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify express.Response */ /* res */ js.Any, 
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify express.NextFunction */ /* next */ js.Any, 
+      scala.Unit
+    ]
+  ]
 }

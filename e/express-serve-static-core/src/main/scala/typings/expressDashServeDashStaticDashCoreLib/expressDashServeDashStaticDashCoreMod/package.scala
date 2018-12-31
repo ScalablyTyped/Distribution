@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object expressDashServeDashStaticDashCoreMod {
-  type ApplicationRequestHandler[T] = IRouterHandler[T] with IRouterMatcher[T] with (js.Function1[/* repeated */RequestHandlerParams, T])
+  type ApplicationRequestHandler[T] = IRouterHandler[T] with IRouterMatcher[T] with (js.Function1[/* repeated */ RequestHandlerParams, T])
   type Errback = js.Function1[/* err */ nodeLib.Error, scala.Unit]
   type ErrorRequestHandler = js.Function4[/* err */ js.Any, /* req */ Request, /* res */ Response, /* next */ NextFunction, js.Any]
   type Handler = RequestHandler

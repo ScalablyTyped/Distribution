@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModuleCoverage extends js.Object {
   var blockCount: scala.Double
   var blockData: js.Array[scala.Double]

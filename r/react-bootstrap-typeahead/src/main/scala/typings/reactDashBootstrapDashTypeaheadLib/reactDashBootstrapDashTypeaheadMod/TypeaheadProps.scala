@@ -5,21 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TypeaheadProps[T] extends js.Object {
   /* For localized accessibility: Should return a string indicating the number of results for screen readers. Receives the current results. */
   var a11yNumResults: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /* For localized accessibility: Should return a string indicating the number of selections for screen readers. Receives the current selections. */
   var a11yNumSelected: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /* Specify menu alignment. The default value is justify, which makes the menu as wide as the input and truncates long values.
-         Specifying left or right will align the menu to that side and the width will be determined by the length of menu item values. */
+    Specifying left or right will align the menu to that side and the width will be determined by the length of menu item values. */
   var align: js.UndefOr[
     reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.justify | reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.left | reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.right
   ] = js.undefined
   /* Allows the creation of new selections on the fly. Any new items will be added to the list of selections,
-         but not the list of original options unless handled as such by Typeahead's parent.
-         The newly added item will always be returned as an object even if the other options are simply strings,
-         so be sure your onChange callback can handle this. */
+    but not the list of original options unless handled as such by Typeahead's parent.
+    The newly added item will always be returned as an object even if the other options are simply strings,
+    so be sure your onChange callback can handle this. */
   var allowNew: js.UndefOr[scala.Boolean] = js.undefined
   /* Autofocus the input when the component initially mounts. */
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
@@ -42,14 +41,14 @@ trait TypeaheadProps[T] extends js.Object {
   /* Specify whether the menu should appear above the input. */
   var dropup: js.UndefOr[scala.Boolean] = js.undefined
   /* Message displayed in the menu when there are no valid results.
-         Passing a falsy value will hide the menu if no matches are found. */
+    Passing a falsy value will hide the menu if no matches are found. */
   var emptyLabel: js.UndefOr[java.lang.String] = js.undefined
   /* Either an array of fields in option to search, or a custom filtering callback. */
   var filterBy: js.UndefOr[
     js.Array[java.lang.String] | (js.Function2[/* option */ T | java.lang.String, /* props */ TypeaheadFilterbyProps, scala.Boolean])
   ] = js.undefined
   /* Highlights the menu item if there is only one result and allows selecting that item by hitting enter.
-         Does not work with allowNew. */
+    Does not work with allowNew. */
   var highlightOnlyResult: js.UndefOr[scala.Boolean] = js.undefined
   /* Whether the filter should ignore accents and other diacritical marks. */
   var ignoreDiacritics: js.UndefOr[scala.Boolean] = js.undefined
@@ -68,7 +67,7 @@ trait TypeaheadProps[T] extends js.Object {
   /* Maximum height of the dropdown menu. */
   var maxHeight: js.UndefOr[java.lang.String] = js.undefined
   /* Maximum number of results to display by default. Mostly done for performance reasons
-         so as not to render too many DOM nodes in the case of large data sets. */
+    so as not to render too many DOM nodes in the case of large data sets. */
   var maxResults: js.UndefOr[scala.Double] = js.undefined
   /* Number of input characters that must be entered before showing results. */
   var minLength: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InteractiveButtonCall[T] extends js.Object {
   var headers: InteractiveButtonHttpHeaders
   var params: T

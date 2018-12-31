@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Instantiates a new CacheFirst strategy
- */
+  * Instantiates a new CacheFirst strategy
+  */
 @js.native
 trait ICacheFirstConstructor
   extends org.scalablytyped.runtime.Instantiable0[CacheFirst]

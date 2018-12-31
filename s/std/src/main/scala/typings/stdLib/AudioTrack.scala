@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AudioTrack extends js.Object {
   var enabled: scala.Boolean
   val id: java.lang.String

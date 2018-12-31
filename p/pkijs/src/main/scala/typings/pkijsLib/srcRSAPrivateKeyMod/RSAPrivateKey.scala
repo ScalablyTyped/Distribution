@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RSAPrivateKey extends js.Object {
   var coefficient: asn1jsLib.asn1jsMod.Integer
   var exponent1: asn1jsLib.asn1jsMod.Integer
@@ -18,9 +17,9 @@ trait RSAPrivateKey extends js.Object {
   var publicExponent: asn1jsLib.asn1jsMod.Integer
   var version: scala.Double
   /**
-           * Convert JSON value into current object
-           * @param {JsonWebKey} json
-           */
+    * Convert JSON value into current object
+    * @param {JsonWebKey} json
+    */
   def fromJSON(json: stdLib.JsonWebKey): scala.Unit
   def fromSchema(schema: js.Any): scala.Unit
   def toJSON(): js.Any

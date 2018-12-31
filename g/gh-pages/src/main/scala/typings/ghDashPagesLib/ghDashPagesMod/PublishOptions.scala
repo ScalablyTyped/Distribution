@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PublishOptions extends js.Object {
   var add: js.UndefOr[scala.Boolean] = js.undefined
   var branch: js.UndefOr[java.lang.String] = js.undefined

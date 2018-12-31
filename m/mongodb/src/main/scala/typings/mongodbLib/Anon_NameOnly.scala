@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NameOnly extends js.Object {
   var batchSize: js.UndefOr[scala.Double] = js.undefined
   var nameOnly: js.UndefOr[scala.Boolean] = js.undefined

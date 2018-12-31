@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RavenOptions extends js.Object {
   /**
-       * By default, Raven.js attempts to suppress duplicate captured errors and messages that occur back-to-back.
-       * Such events are often triggered by rogue code (e.g. from a `setInterval` callback in a browser extension),
-       * are not actionable, and eat up your event quota.
-       */
+    * By default, Raven.js attempts to suppress duplicate captured errors and messages that occur back-to-back.
+    * Such events are often triggered by rogue code (e.g. from a `setInterval` callback in a browser extension),
+    * are not actionable, and eat up your event quota.
+    */
   var allowDuplicates: js.UndefOr[scala.Boolean] = js.undefined
   /** Allow use of private/secretKey. */
   var allowSecretKey: js.UndefOr[scala.Boolean] = js.undefined
@@ -24,8 +23,8 @@ trait RavenOptions extends js.Object {
   /** A function which allows mutation of the data payload right before being sent to Sentry */
   var dataCallback: js.UndefOr[js.Function1[/* data */ js.Any, _]] = js.undefined
   /**
-       * If set to true, Raven.js outputs some light debugging information onto the console.
-       */
+    * If set to true, Raven.js outputs some light debugging information onto the console.
+    */
   var debug: js.UndefOr[scala.Boolean] = js.undefined
   /** The environment of the application you are monitoring with Sentry */
   var environment: js.UndefOr[java.lang.String] = js.undefined
@@ -57,8 +56,8 @@ trait RavenOptions extends js.Object {
   /** The release version of the application you are monitoring with Sentry */
   var release: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * A sampling rate to apply to events. A value of 0.0 will send no events, and a value of 1.0 will send all events (default).
-       */
+    * A sampling rate to apply to events. A value of 0.0 will send no events, and a value of 1.0 will send all events (default).
+    */
   var sampleRate: js.UndefOr[scala.Double] = js.undefined
   /** An array of strings representing keys that should be scrubbed from the payload sent to Sentry */
   var sanitizeKeys: js.UndefOr[js.Array[stdLib.RegExp | java.lang.String]] = js.undefined

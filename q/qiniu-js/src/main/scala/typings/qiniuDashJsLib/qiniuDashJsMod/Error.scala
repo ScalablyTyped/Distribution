@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Error extends js.Object {
   var code: scala.Double
   	// 错误信息，包含错误码，当后端返回提示信息时也会有相应的错误信息。

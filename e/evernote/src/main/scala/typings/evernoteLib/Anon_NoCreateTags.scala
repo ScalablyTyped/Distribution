@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NoCreateTags extends js.Object {
   var expungeWhichSharedNotebookRestrictions: js.UndefOr[evernoteLib.evernoteMod.EvernoteNs.SharedNotebookInstanceRestrictions] = js.undefined
   var noCreateNotes: js.UndefOr[scala.Boolean] = js.undefined

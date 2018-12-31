@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditValidatorObject extends js.Object {
   /**
   	 * Boolean flag indicating whether the cell value is valid.

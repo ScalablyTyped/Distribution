@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEasClientSecurityPolicy extends js.Object {
   var disallowConvenienceLogon: scala.Boolean
   var maxInactivityTimeLock: scala.Double

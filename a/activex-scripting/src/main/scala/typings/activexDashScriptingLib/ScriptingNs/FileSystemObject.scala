@@ -16,64 +16,38 @@ class FileSystemObject protected () extends js.Object {
   /** Generate a path from an existing path and a name */
   def BuildPath(Path: java.lang.String, Name: java.lang.String): java.lang.String = js.native
   /**
-           * Copy a file
-           * @param boolean [OverWriteFiles=true]
-           */
+    * Copy a file
+    * @param boolean [OverWriteFiles=true]
+    */
   def CopyFile(Source: java.lang.String, Destination: java.lang.String): scala.Unit = js.native
-  /**
-           * Copy a file
-           * @param boolean [OverWriteFiles=true]
-           */
   def CopyFile(Source: java.lang.String, Destination: java.lang.String, OverWriteFiles: scala.Boolean): scala.Unit = js.native
   /**
-           * Copy a folder
-           * @param boolean [OverWriteFiles=true]
-           */
+    * Copy a folder
+    * @param boolean [OverWriteFiles=true]
+    */
   def CopyFolder(Source: java.lang.String, Destination: java.lang.String): scala.Unit = js.native
-  /**
-           * Copy a folder
-           * @param boolean [OverWriteFiles=true]
-           */
   def CopyFolder(Source: java.lang.String, Destination: java.lang.String, OverWriteFiles: scala.Boolean): scala.Unit = js.native
   /** Create a folder */
   def CreateFolder(Path: java.lang.String): Folder = js.native
   /**
-           * Create a file as a TextStream
-           * @param boolean [Overwrite=true]
-           * @param boolean [Unicode=false]
-           */
+    * Create a file as a TextStream
+    * @param boolean [Overwrite=true]
+    * @param boolean [Unicode=false]
+    */
   def CreateTextFile(FileName: java.lang.String): TextStream = js.native
-  /**
-           * Create a file as a TextStream
-           * @param boolean [Overwrite=true]
-           * @param boolean [Unicode=false]
-           */
   def CreateTextFile(FileName: java.lang.String, Overwrite: scala.Boolean): TextStream = js.native
-  /**
-           * Create a file as a TextStream
-           * @param boolean [Overwrite=true]
-           * @param boolean [Unicode=false]
-           */
   def CreateTextFile(FileName: java.lang.String, Overwrite: scala.Boolean, Unicode: scala.Boolean): TextStream = js.native
   /**
-           * Delete a file
-           * @param boolean [Force=false] Pass `true` to also delete files with the read-only attribute set
-           */
+    * Delete a file
+    * @param boolean [Force=false] Pass `true` to also delete files with the read-only attribute set
+    */
   def DeleteFile(FileSpec: java.lang.String): scala.Unit = js.native
-  /**
-           * Delete a file
-           * @param boolean [Force=false] Pass `true` to also delete files with the read-only attribute set
-           */
   def DeleteFile(FileSpec: java.lang.String, Force: scala.Boolean): scala.Unit = js.native
   /**
-           * Delete a folder
-           * @param boolean [Force=false] Pass `true` to also delete folders with the read-only attribute set
-           */
+    * Delete a folder
+    * @param boolean [Force=false] Pass `true` to also delete folders with the read-only attribute set
+    */
   def DeleteFolder(FolderSpec: java.lang.String): scala.Unit = js.native
-  /**
-           * Delete a folder
-           * @param boolean [Force=false] Pass `true` to also delete folders with the read-only attribute set
-           */
   def DeleteFolder(FolderSpec: java.lang.String, Force: scala.Boolean): scala.Unit = js.native
   /** Check if a drive or a share exists */
   def DriveExists(DriveSpec: java.lang.String): scala.Boolean = js.native
@@ -107,14 +81,10 @@ class FileSystemObject protected () extends js.Object {
   /** Get location of various system folders */
   def GetSpecialFolder(SpecialFolder: SpecialFolderConst): Folder = js.native
   /**
-           * Retrieve the standard input, output or error stream
-           * @param boolean [Unicode=false]
-           */
+    * Retrieve the standard input, output or error stream
+    * @param boolean [Unicode=false]
+    */
   def GetStandardStream(StandardStreamType: StandardStreamTypes): TextStream = js.native
-  /**
-           * Retrieve the standard input, output or error stream
-           * @param boolean [Unicode=false]
-           */
   def GetStandardStream(StandardStreamType: StandardStreamTypes, Unicode: scala.Boolean): TextStream = js.native
   /** Generate name that can be used to name a temporary file */
   def GetTempName(): java.lang.String = js.native
@@ -123,32 +93,14 @@ class FileSystemObject protected () extends js.Object {
   /** Move a folder */
   def MoveFolder(Source: java.lang.String, Destination: java.lang.String): scala.Unit = js.native
   /**
-           * Open a file as a TextStream
-           * @param Scripting.IOMode [IOMode=1]
-           * @param boolean [Create=false]
-           * @param Scripting.Tristate [Format=0] **TristateTrue** opens the file as Unicode; **TristateFalse** opens the file as ASCII;  **TristateUseDefault** opens the file with  the system default
-           */
+    * Open a file as a TextStream
+    * @param Scripting.IOMode [IOMode=1]
+    * @param boolean [Create=false]
+    * @param Scripting.Tristate [Format=0] **TristateTrue** opens the file as Unicode; **TristateFalse** opens the file as ASCII;  **TristateUseDefault** opens the file with  the system default
+    */
   def OpenTextFile(FileName: java.lang.String): TextStream = js.native
-  /**
-           * Open a file as a TextStream
-           * @param Scripting.IOMode [IOMode=1]
-           * @param boolean [Create=false]
-           * @param Scripting.Tristate [Format=0] **TristateTrue** opens the file as Unicode; **TristateFalse** opens the file as ASCII;  **TristateUseDefault** opens the file with  the system default
-           */
   def OpenTextFile(FileName: java.lang.String, IOMode: IOMode): TextStream = js.native
-  /**
-           * Open a file as a TextStream
-           * @param Scripting.IOMode [IOMode=1]
-           * @param boolean [Create=false]
-           * @param Scripting.Tristate [Format=0] **TristateTrue** opens the file as Unicode; **TristateFalse** opens the file as ASCII;  **TristateUseDefault** opens the file with  the system default
-           */
   def OpenTextFile(FileName: java.lang.String, IOMode: IOMode, Create: scala.Boolean): TextStream = js.native
-  /**
-           * Open a file as a TextStream
-           * @param Scripting.IOMode [IOMode=1]
-           * @param boolean [Create=false]
-           * @param Scripting.Tristate [Format=0] **TristateTrue** opens the file as Unicode; **TristateFalse** opens the file as ASCII;  **TristateUseDefault** opens the file with  the system default
-           */
   def OpenTextFile(FileName: java.lang.String, IOMode: IOMode, Create: scala.Boolean, Format: Tristate): TextStream = js.native
 }
 

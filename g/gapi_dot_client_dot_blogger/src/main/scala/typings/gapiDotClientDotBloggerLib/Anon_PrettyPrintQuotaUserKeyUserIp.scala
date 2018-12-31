@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PrettyPrintQuotaUserKeyUserIp extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -22,14 +21,14 @@ trait Anon_PrettyPrintQuotaUserKeyUserIp extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Optional date and time to schedule the publishing of the Blog. If no publishDate parameter is given, the post is either published at the a previously
-                   * saved schedule date (if present), or the current time. If a future date is given, the post will be scheduled to be published.
-                   */
+    * Optional date and time to schedule the publishing of the Blog. If no publishDate parameter is given, the post is either published at the a previously
+    * saved schedule date (if present), or the current time. If a future date is given, the post will be scheduled to be published.
+    */
   var publishDate: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[java.lang.String] = js.undefined

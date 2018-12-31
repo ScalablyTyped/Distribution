@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScreenSpaceCameraController extends js.Object {
   var bounceAnimationTime: scala.Double
   var enableCollisionDetection: scala.Boolean

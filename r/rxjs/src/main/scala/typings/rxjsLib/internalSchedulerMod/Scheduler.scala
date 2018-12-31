@@ -34,10 +34,10 @@ class Scheduler protected ()
 @js.native
 object Scheduler extends js.Object {
   /**
-       * Note: the extra arrow function wrapper is to make testing by overriding
-       * Date.now easier.
-       * @nocollapse
-       */
+    * Note: the extra arrow function wrapper is to make testing by overriding
+    * Date.now easier.
+    * @nocollapse
+    */
   def now(): scala.Double = js.native
 }
 

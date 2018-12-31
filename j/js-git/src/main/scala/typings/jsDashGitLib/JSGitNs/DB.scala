@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DB extends js.Object {
   /**
   		 * This is for when the user wants to delete or otherwise reclaim your database's resources.

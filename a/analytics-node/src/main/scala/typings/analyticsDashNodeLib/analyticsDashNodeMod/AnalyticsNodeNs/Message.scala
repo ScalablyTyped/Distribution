@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Message extends js.Object {
   var _metadata: analyticsDashNodeLib.Anon_KeyNodeVersion
   var anonymousId: js.UndefOr[java.lang.String | scala.Double] = js.undefined

@@ -33,10 +33,10 @@ object FileOperationFlag extends js.Object {
     extends activexDashShellLib.Shell32Ns.FileOperationFlag
   
   /**
-           * Do not copy the security attributes of the file.
-           *
-           * _[Version 4.7.1](https://msdn.microsoft.com/en-us/library/windows/desktop/bb776779.aspx)_
-           */
+    * Do not copy the security attributes of the file.
+    *
+    * _[Version 4.7.1](https://msdn.microsoft.com/en-us/library/windows/desktop/bb776779.aspx)_
+    */
   @js.native
   sealed trait FOF_NOCOPYSECURITYATTRIBS
     extends activexDashShellLib.Shell32Ns.FileOperationFlag
@@ -52,10 +52,10 @@ object FileOperationFlag extends js.Object {
     extends activexDashShellLib.Shell32Ns.FileOperationFlag
   
   /**
-           * Do not copy connected files as a group. Only copy the specified files.
-           *
-           * _[Version 5.0](https://msdn.microsoft.com/en-us/library/windows/desktop/bb776779.aspx)_
-           */
+    * Do not copy connected files as a group. Only copy the specified files.
+    *
+    * _[Version 5.0](https://msdn.microsoft.com/en-us/library/windows/desktop/bb776779.aspx)_
+    */
   @js.native
   sealed trait FOF_NO_CONNECTED_ELEMENTS
     extends activexDashShellLib.Shell32Ns.FileOperationFlag

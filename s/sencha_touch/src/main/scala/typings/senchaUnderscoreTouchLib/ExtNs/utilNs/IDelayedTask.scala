@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDelayedTask
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Cancel the last queued timeout */

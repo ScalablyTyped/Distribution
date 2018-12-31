@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPageSizePrettyPrintBearertoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -21,11 +20,11 @@ trait Anon_AccesstokenPageSizePrettyPrintBearertoken extends js.Object {
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The ID of the creative status for which to retrieve a breakdown by detail.
-                   * See
-                   * [creative-status-codes](https://developers.google.com/ad-exchange/rtb/downloads/creative-status-codes).
-                   * Details are only available for statuses 10, 14, 15, 17, 18, 19, 86, and 87.
-                   */
+    * The ID of the creative status for which to retrieve a breakdown by detail.
+    * See
+    * [creative-status-codes](https://developers.google.com/ad-exchange/rtb/downloads/creative-status-codes).
+    * Details are only available for statuses 10, 14, 15, 17, 18, 19, 86, and 87.
+    */
   var creativeStatusId: scala.Double
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
@@ -36,18 +35,18 @@ trait Anon_AccesstokenPageSizePrettyPrintBearertoken extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Requested page size. The server may return fewer results than requested.
-                   * If unspecified, the server will pick an appropriate default.
-                   */
+    * Requested page size. The server may return fewer results than requested.
+    * If unspecified, the server will pick an appropriate default.
+    */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * A token identifying a page of results the server should return.
-                   * Typically, this is the value of
-                   * ListCreativeStatusBreakdownByDetailResponse.nextPageToken
-                   * returned from the previous call to the
-                   * accounts.filterSets.filteredBids.details.list
-                   * method.
-                   */
+    * A token identifying a page of results the server should return.
+    * Typically, this is the value of
+    * ListCreativeStatusBreakdownByDetailResponse.nextPageToken
+    * returned from the previous call to the
+    * accounts.filterSets.filteredBids.details.list
+    * method.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

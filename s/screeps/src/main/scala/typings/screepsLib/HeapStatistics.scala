@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HeapStatistics extends js.Object {
   var does_zap_garbage: screepsLib.screepsLibNumbers.`0` | screepsLib.screepsLibNumbers.`1`
   var externally_allocated_size: scala.Double

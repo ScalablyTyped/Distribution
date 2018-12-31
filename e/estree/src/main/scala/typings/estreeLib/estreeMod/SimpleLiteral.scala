@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SimpleLiteral extends BaseNode {
   var raw: js.UndefOr[java.lang.String] = js.undefined
   @JSName("type")

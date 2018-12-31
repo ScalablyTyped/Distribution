@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Pubkey extends js.Object {
   var address: java.lang.String
   var hash: nodeLib.Buffer

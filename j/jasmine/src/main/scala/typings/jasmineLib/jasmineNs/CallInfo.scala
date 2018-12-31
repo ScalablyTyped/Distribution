@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CallInfo extends js.Object {
   /** All arguments passed to the call */
   var args: js.Array[_]

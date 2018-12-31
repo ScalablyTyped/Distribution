@@ -12,9 +12,9 @@ sealed trait PowerSourceType extends js.Object
 @js.native
 object PowerSourceType extends js.Object {
   /**
-               * Dedicated charger. Typically single-purpose and non-USB
-               * (e.g. barrel jack plugs)
-               */
+    * Dedicated charger. Typically single-purpose and non-USB
+    * (e.g. barrel jack plugs)
+    */
   @js.native
   sealed trait mains
     extends chromeDashAppsLib.chromeNs.systemNs.powerSourceNs.PowerSourceType
@@ -25,9 +25,9 @@ object PowerSourceType extends js.Object {
     extends chromeDashAppsLib.chromeNs.systemNs.powerSourceNs.PowerSourceType
   
   /**
-               * USB charger, including both low-power Type-A chargers and high-power
-               * Type-C chargers using USB Power Delivery.
-               */
+    * USB charger, including both low-power Type-A chargers and high-power
+    * Type-C chargers using USB Power Delivery.
+    */
   @js.native
   sealed trait usb
     extends chromeDashAppsLib.chromeNs.systemNs.powerSourceNs.PowerSourceType

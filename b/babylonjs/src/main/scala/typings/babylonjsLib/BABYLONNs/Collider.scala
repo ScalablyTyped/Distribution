@@ -40,19 +40,19 @@ class Collider () extends js.Object {
   /** @hidden */
   var _velocityWorldLength: scala.Double = js.native
   /**
-           * Define last collided mesh
-           */
+    * Define last collided mesh
+    */
   var collidedMesh: Nullable[AbstractMesh] = js.native
   /** Define if a collision was found */
   var collisionFound: scala.Boolean = js.native
   var collisionMask: scala.Double = js.native
   /**
-           * Define last intersection point in local space
-           */
+    * Define last intersection point in local space
+    */
   var intersectionPoint: Vector3 = js.native
   /**
-           * Gets the plane normal used to compute the sliding response (in local space)
-           */
+    * Gets the plane normal used to compute the sliding response (in local space)
+    */
   val slidePlaneNormal: Vector3 = js.native
   /** @hidden */
   def _canDoCollision(sphereCenter: Vector3, sphereRadius: scala.Double, vecMin: Vector3, vecMax: Vector3): scala.Boolean = js.native

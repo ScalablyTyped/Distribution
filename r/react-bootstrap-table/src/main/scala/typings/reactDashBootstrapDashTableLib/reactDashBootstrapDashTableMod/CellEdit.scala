@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CellEdit[TRow /* <: js.Object */] extends js.Object {
   /**
   	 * Accept a custom callback function, after cell saving, this function will be called.
@@ -19,7 +18,7 @@ trait CellEdit[TRow /* <: js.Object */] extends js.Object {
     js.Function4[
       /* row */ TRow, 
       /* cellName */ java.lang.String, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TRow))),List()),Left(TsIdentSimple(K))) *//* cellValue */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, 
       /* props */ reactDashBootstrapDashTableLib.Anon_RowIndex, 
       scala.Unit
     ]
@@ -41,7 +40,7 @@ trait CellEdit[TRow /* <: js.Object */] extends js.Object {
     js.Function5[
       /* row */ TRow, 
       /* cellName */ java.lang.String, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TRow))),List()),Left(TsIdentSimple(K))) *//* cellValue */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ /* cellValue */ js.Any, 
       /* done */ js.Function1[/* isValid */ scala.Boolean, scala.Unit], 
       /* props */ reactDashBootstrapDashTableLib.Anon_RowIndex, 
       scala.Boolean | reactDashBootstrapDashTableLib.reactDashBootstrapDashTableLibNumbers.`1`

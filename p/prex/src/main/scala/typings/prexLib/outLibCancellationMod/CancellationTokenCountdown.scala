@@ -16,20 +16,20 @@ class CancellationTokenCountdown () extends js.Object {
   var _signaledCount: js.Any = js.native
   var _source: js.Any = js.native
   /**
-       * Gets the number of tokens added to the countdown.
-       */
+    * Gets the number of tokens added to the countdown.
+    */
   val addedCount: scala.Double = js.native
   /**
-       * Gets the number of tokens that have not yet been canceled.
-       */
+    * Gets the number of tokens that have not yet been canceled.
+    */
   val remainingCount: scala.Double = js.native
   /**
-       * Gets the CancellationToken for the countdown.
-       */
+    * Gets the CancellationToken for the countdown.
+    */
   val token: CancellationToken = js.native
   /**
-       * Adds a CancellationToken to the countdown.
-       */
+    * Adds a CancellationToken to the countdown.
+    */
   def add(token: CancellationToken): this.type = js.native
 }
 

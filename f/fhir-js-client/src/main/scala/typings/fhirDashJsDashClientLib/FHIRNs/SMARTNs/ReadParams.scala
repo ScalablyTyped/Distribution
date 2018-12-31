@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Parameter to be passed to the read API method
-         */
-
+  * Parameter to be passed to the read API method
+  */
 trait ReadParams extends js.Object {
   /**
-               * ID of the FHIR resource
-               */
+    * ID of the FHIR resource
+    */
   var id: java.lang.String
   /**
-               * Type of the FHIR resource
-               */
+    * Type of the FHIR resource
+    */
   var `type`: java.lang.String
 }
 

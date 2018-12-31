@@ -16,9 +16,6 @@ trait Datetimepicker extends js.Object {
   	 * JQuery plugin function.
   	 */
   def apply(): bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerMod.Global.JQuery = js.native
-  /**
-  	 * JQuery plugin function.
-  	 */
   def apply(options: DatetimepickerOptions): bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerMod.Global.JQuery = js.native
   ////////////////////////////////////////////////////////////////////////////////////////////////////
   //// Below are the getters/setters for the properties of the 'options(): DatetimepickerOptions' ////
@@ -39,16 +36,6 @@ trait Datetimepicker extends js.Object {
   def collapse(value: scala.Boolean): scala.Unit = js.native
   /** Returns the component's model current date, a moment object or null if not set. */
   def date(): momentLib.momentMod.momentNs.Moment = js.native
-  /**
-  	 * Takes string, Date, moment, null parameter and sets the components model current moment to it.
-  	 * Passing a null value unsets the components model current moment.
-  	 * Parsing of the newDate parameter is made using moment library with the options.format and options.useStrict components configuration.
-  	 * Throws:
-  	 * - TypeError - in case the newDate cannot be parsed
-  	 *
-  	 * Emits:
-  	 * - dp.change - In case newDate is different from current moment
-  	 */
   def date(date: java.lang.String): scala.Unit = js.native
   /**
   	 * Takes string, Date, moment, null parameter and sets the components model current moment to it.
@@ -61,27 +48,7 @@ trait Datetimepicker extends js.Object {
   	 * - dp.change - In case newDate is different from current moment
   	 */
   def date(date: momentLib.momentMod.momentNs.Moment): scala.Unit = js.native
-  /**
-  	 * Takes string, Date, moment, null parameter and sets the components model current moment to it.
-  	 * Passing a null value unsets the components model current moment.
-  	 * Parsing of the newDate parameter is made using moment library with the options.format and options.useStrict components configuration.
-  	 * Throws:
-  	 * - TypeError - in case the newDate cannot be parsed
-  	 *
-  	 * Emits:
-  	 * - dp.change - In case newDate is different from current moment
-  	 */
   def date(date: stdLib.Date): scala.Unit = js.native
-  /**
-  	 * Takes string, Date, moment, null parameter and sets the components model current moment to it.
-  	 * Passing a null value unsets the components model current moment.
-  	 * Parsing of the newDate parameter is made using moment library with the options.format and options.useStrict components configuration.
-  	 * Throws:
-  	 * - TypeError - in case the newDate cannot be parsed
-  	 *
-  	 * Emits:
-  	 * - dp.change - In case newDate is different from current moment
-  	 */
   @JSName("date")
   def date_Unit(): scala.Unit = js.native
   /** Returns the options.dayViewHeaderFormat option. */
@@ -111,29 +78,8 @@ trait Datetimepicker extends js.Object {
   	 * - TypeError - if the provided date cannot be parsed by momentjs
   	 */
   def defaultDate(date: java.lang.String): scala.Unit = js.native
-  /**
-  	 * Will set the picker's inital date.
-  	 * If a boolean:false value is passed the options.defaultDate parameter is cleared.
-  	 * Throws:
-  	 * - TypeError - if the provided date doesn't pass validation, including disabledDates, enabledDates, minDate, maxDate, and daysOfWeekDisabled
-  	 * - TypeError - if the provided date cannot be parsed by momentjs
-  	 */
   def defaultDate(date: momentLib.momentMod.momentNs.Moment): scala.Unit = js.native
-  /**
-  	 * Will set the picker's inital date.
-  	 * If a boolean:false value is passed the options.defaultDate parameter is cleared.
-  	 * Throws:
-  	 * - TypeError - if the provided date doesn't pass validation, including disabledDates, enabledDates, minDate, maxDate, and daysOfWeekDisabled
-  	 * - TypeError - if the provided date cannot be parsed by momentjs
-  	 */
   def defaultDate(date: scala.Boolean): scala.Unit = js.native
-  /**
-  	 * Will set the picker's inital date.
-  	 * If a boolean:false value is passed the options.defaultDate parameter is cleared.
-  	 * Throws:
-  	 * - TypeError - if the provided date doesn't pass validation, including disabledDates, enabledDates, minDate, maxDate, and daysOfWeekDisabled
-  	 * - TypeError - if the provided date cannot be parsed by momentjs
-  	 */
   def defaultDate(date: stdLib.Date): scala.Unit = js.native
   /** Destroys the widget and removes all attached event listeners */
   def destroy(): scala.Unit = js.native
@@ -148,12 +94,6 @@ trait Datetimepicker extends js.Object {
   	 * NOTES: probably should be: disabledDates(): boolean | Array<moment.Moment>; see: DatetimepickerOptions
   	 */
   def disabledDates(): scala.Boolean | js.Any = js.native
-  /**
-  	 * Takes an array of values and disallows the user to select those days.
-  	 * Setting this takes precedence over options.minDate, options.maxDate configuration.
-  	 * Also calling this function removes the configuration of options.enabledDates if such exist.
-  	 * Note: These values are matched with Day granularity.
-  	 */
   def disabledDates(dates: js.Array[java.lang.String | stdLib.Date | momentLib.momentMod.momentNs.Moment]): scala.Unit = js.native
   /**
   	 * Takes an array of values and disallows the user to select those days.
@@ -167,10 +107,6 @@ trait Datetimepicker extends js.Object {
   	 * NOTES: probably should be: disabledHours(): boolean | number[]; see: DatetimepickerOptions
   	 */
   def disabledHours(): scala.Boolean | js.Any = js.native
-  /**
-  	 * Must be in 24 hour format. Will disallow hour selections (much like disabledTimeIntervals) but will affect all days.
-  	 * Like en/disabledDates, the en/disabledHours options are mutually exclusive and will reset one of the options back to false.
-  	 */
   def disabledHours(value: js.Array[scala.Double]): scala.Unit = js.native
   /**
   	 * Must be in 24 hour format. Will disallow hour selections (much like disabledTimeIntervals) but will affect all days.
@@ -184,10 +120,6 @@ trait Datetimepicker extends js.Object {
   	 * https://github.com/Eonasdan/bootstrap-datetimepicker/issues/1498
   	 */
   def disabledTimeIntervals(): scala.Boolean | js.Array[js.Array[momentLib.momentMod.momentNs.Moment]] = js.native
-  /**
-  	 * Disables time selection between the given moments
-  	 * eg: [[moment({ h: 0 }), moment({ h: 8 })], [moment({ h: 18 }), moment({ h: 24 })]]
-  	 */
   def disabledTimeIntervals(value: js.Array[js.Array[momentLib.momentMod.momentNs.Moment]]): scala.Unit = js.native
   /**
   	 * Disables time selection between the given moments
@@ -201,12 +133,6 @@ trait Datetimepicker extends js.Object {
   	 * NOTES: probably should be: enabledDates(): boolean | Array<moment.Moment>; see: DatetimepickerOptions
   	 */
   def enabledDates(): scala.Boolean | js.Any = js.native
-  /**
-  	 * Takes an array of values and allows the user to select only from those days.
-  	 * Setting this takes precedence over options.minDate, options.maxDate configuration.
-  	 * Also calling this function removes the configuration of options.disabledDates if such exist.
-  	 * Note: These values are matched with Day granularity.
-  	 */
   def enabledDates(dates: js.Array[java.lang.String | stdLib.Date | momentLib.momentMod.momentNs.Moment]): scala.Unit = js.native
   /**
   	 * Takes an array of values and allows the user to select only from those days.
@@ -220,10 +146,6 @@ trait Datetimepicker extends js.Object {
   	 * NOTES: probably should be: enabledHours(): boolean | number[]; see: DatetimepickerOptions
   	 */
   def enabledHours(): scala.Boolean | js.Any = js.native
-  /**
-  	 * Must be in 24 hour format. Will allow hour selections (much like enabledTimeIntervals) but will affect all days.
-  	 * Like en/disabledDates, the en/disabledHours options are mutually exclusive and will reset one of the options back to false.
-  	 */
   def enabledHours(value: js.Array[scala.Double]): scala.Unit = js.native
   /**
   	 * Must be in 24 hour format. Will allow hour selections (much like enabledTimeIntervals) but will affect all days.
@@ -232,7 +154,6 @@ trait Datetimepicker extends js.Object {
   def enabledHours(value: scala.Boolean): scala.Unit = js.native
   /** Returns a boolean or array with the options.extraFormats option configuration */
   def extraFormats(): scala.Boolean | (js.Array[java.lang.String | momentLib.momentMod.momentNs.MomentBuiltinFormat]) = js.native
-  /** Takes an array of valid input moment format options, or boolean:false */
   def extraFormats(formats: js.Array[java.lang.String | momentLib.momentMod.momentNs.MomentBuiltinFormat]): scala.Unit = js.native
   /** Takes an array of valid input moment format options, or boolean:false */
   def extraFormats(formats: scala.Boolean): scala.Unit = js.native
@@ -242,23 +163,7 @@ trait Datetimepicker extends js.Object {
   def focusOnShow(value: scala.Boolean): scala.Unit = js.native
   /** Returns the component's options.format string */
   def format(): scala.Boolean | java.lang.String | momentLib.momentMod.momentNs.MomentBuiltinFormat = js.native
-  /**
-  	 * Takes a moment.js format string and sets the components options.format.
-  	 * This is used for displaying and also for parsing input strings either from the input element the component is attached to or the date() function.
-  	 * The parameter can also be a boolean:false in which case the format is set to the locale's L LT.
-  	 * Note: this is also used to determine if the TimePicker sub component will display the hours in 12 or 24 format. (if "a" or "h" exists in the passed string then a 12 hour mode is set)
-  	 * Throws:
-  	 * - TypeError - if format is boolean:true
-  	 */
   def format(format: java.lang.String): scala.Unit = js.native
-  /**
-  	 * Takes a moment.js format string and sets the components options.format.
-  	 * This is used for displaying and also for parsing input strings either from the input element the component is attached to or the date() function.
-  	 * The parameter can also be a boolean:false in which case the format is set to the locale's L LT.
-  	 * Note: this is also used to determine if the TimePicker sub component will display the hours in 12 or 24 format. (if "a" or "h" exists in the passed string then a 12 hour mode is set)
-  	 * Throws:
-  	 * - TypeError - if format is boolean:true
-  	 */
   def format(format: momentLib.momentMod.momentNs.MomentBuiltinFormat): scala.Unit = js.native
   /**
   	 * Takes a moment.js format string and sets the components options.format.
@@ -311,18 +216,6 @@ trait Datetimepicker extends js.Object {
   def locale(newLocale: java.lang.String): scala.Unit = js.native
   /** Returns the currently set moment of the options.maxDate or false if not set */
   def maxDate(): momentLib.momentMod.momentNs.Moment | scala.Boolean = js.native
-  /**
-  	 * Takes a parameter and disallows the user to select a moment that is after that moment.
-  	 * If a boolean:false value is passed options.maxDate is cleared and there is no restriction to the maximum moment the user can select.
-  	 * Note: If the parameter is before the currently selected moment the currently selected moment changes to maxDate
-  	 * Throws:
-  	 * - TypeError - if the parameter cannot be parsed using the options.format and options.useStrict configuration settings
-  	 * - TypeError - if the parameter is before options.minDate
-  	 *
-  	 * Emits:
-  	 * - dp.change - if the new maxDate is after currently selected moment
-  	 * - dp.error - if the new maxDate is after currently selected moment
-  	 */
   def maxDate(date: java.lang.String): scala.Unit = js.native
   /**
   	 * Takes a parameter and disallows the user to select a moment that is after that moment.
@@ -337,46 +230,10 @@ trait Datetimepicker extends js.Object {
   	 * - dp.error - if the new maxDate is after currently selected moment
   	 */
   def maxDate(date: momentLib.momentMod.momentNs.Moment): scala.Unit = js.native
-  /**
-  	 * Takes a parameter and disallows the user to select a moment that is after that moment.
-  	 * If a boolean:false value is passed options.maxDate is cleared and there is no restriction to the maximum moment the user can select.
-  	 * Note: If the parameter is before the currently selected moment the currently selected moment changes to maxDate
-  	 * Throws:
-  	 * - TypeError - if the parameter cannot be parsed using the options.format and options.useStrict configuration settings
-  	 * - TypeError - if the parameter is before options.minDate
-  	 *
-  	 * Emits:
-  	 * - dp.change - if the new maxDate is after currently selected moment
-  	 * - dp.error - if the new maxDate is after currently selected moment
-  	 */
   def maxDate(date: scala.Boolean): scala.Unit = js.native
-  /**
-  	 * Takes a parameter and disallows the user to select a moment that is after that moment.
-  	 * If a boolean:false value is passed options.maxDate is cleared and there is no restriction to the maximum moment the user can select.
-  	 * Note: If the parameter is before the currently selected moment the currently selected moment changes to maxDate
-  	 * Throws:
-  	 * - TypeError - if the parameter cannot be parsed using the options.format and options.useStrict configuration settings
-  	 * - TypeError - if the parameter is before options.minDate
-  	 *
-  	 * Emits:
-  	 * - dp.change - if the new maxDate is after currently selected moment
-  	 * - dp.error - if the new maxDate is after currently selected moment
-  	 */
   def maxDate(date: stdLib.Date): scala.Unit = js.native
   /** Returns the currently set moment of the options.minDate or false if not set */
   def minDate(): momentLib.momentMod.momentNs.Moment | scala.Boolean = js.native
-  /**
-  	 * Takes a parameter and disallows the user to select a moment that is before that moment.
-  	 * If a boolean:false value is passed the options.minDate parameter is cleared and there is no restriction to the miminum moment the user can select.
-  	 * Note: If the parameter is after the currently selected moment the currently selected moment changes to minDate parameter
-  	 * Throws:
-  	 * - TypeError - if the parameter cannot be parsed using the options.format and options.useStrict configuration settings
-  	 * - TypeError - if the parameter is after options.maxDate
-  	 *
-  	 * Emits:
-  	 * - dp.change - if the new minDate is after currently selected moment
-  	 * - dp.error - if the new minDate is after currently selected moment
-  	 */
   def minDate(date: java.lang.String): scala.Unit = js.native
   /**
   	 * Takes a parameter and disallows the user to select a moment that is before that moment.
@@ -391,31 +248,7 @@ trait Datetimepicker extends js.Object {
   	 * - dp.error - if the new minDate is after currently selected moment
   	 */
   def minDate(date: momentLib.momentMod.momentNs.Moment): scala.Unit = js.native
-  /**
-  	 * Takes a parameter and disallows the user to select a moment that is before that moment.
-  	 * If a boolean:false value is passed the options.minDate parameter is cleared and there is no restriction to the miminum moment the user can select.
-  	 * Note: If the parameter is after the currently selected moment the currently selected moment changes to minDate parameter
-  	 * Throws:
-  	 * - TypeError - if the parameter cannot be parsed using the options.format and options.useStrict configuration settings
-  	 * - TypeError - if the parameter is after options.maxDate
-  	 *
-  	 * Emits:
-  	 * - dp.change - if the new minDate is after currently selected moment
-  	 * - dp.error - if the new minDate is after currently selected moment
-  	 */
   def minDate(date: scala.Boolean): scala.Unit = js.native
-  /**
-  	 * Takes a parameter and disallows the user to select a moment that is before that moment.
-  	 * If a boolean:false value is passed the options.minDate parameter is cleared and there is no restriction to the miminum moment the user can select.
-  	 * Note: If the parameter is after the currently selected moment the currently selected moment changes to minDate parameter
-  	 * Throws:
-  	 * - TypeError - if the parameter cannot be parsed using the options.format and options.useStrict configuration settings
-  	 * - TypeError - if the parameter is after options.maxDate
-  	 *
-  	 * Emits:
-  	 * - dp.change - if the new minDate is after currently selected moment
-  	 * - dp.error - if the new minDate is after currently selected moment
-  	 */
   def minDate(date: stdLib.Date): scala.Unit = js.native
   /**
   	 * Returns the components current options object.
@@ -466,11 +299,6 @@ trait Datetimepicker extends js.Object {
   	 * - TypeError - if tooltips parameter is not a string or null
   	 */
   def timeZone(timeZone: java.lang.String): scala.Unit = js.native
-  /**
-  	 * Takes a null or a string of a valid timezone.
-  	 * Throws:
-  	 * - TypeError - if tooltips parameter is not a string or null
-  	 */
   @JSName("timeZone")
   def timeZone_Unit(): scala.Unit = js.native
   /**
@@ -500,16 +328,6 @@ trait Datetimepicker extends js.Object {
   def tooltips(value: Tooltips): scala.Unit = js.native
   /** Returns the options.useCurrent option configuration */
   def useCurrent(): scala.Boolean | java.lang.String = js.native
-  /**
-  	 * Takes a boolean or string.
-  	 * If a boolean true is passed and the components model moment is not set (either through setDate or through a valid value on the input element the component is attached to)
-  	 * then the first time the user opens the datetimepicker widget the value is initialized to the current moment of the action.
-  	 * If a false boolean is passed then no initialization happens on the input element.
-  	 * You can select the granularity on the initialized moment by passing one of the following strings ("year", "month", "day", "hour", "minute") in the variable.
-  	 * If for example you pass "day" to the useCurrent function and the input field is empty the first time the user opens the datetimepicker widget the input text will be
-  	 * initialized to the current datetime with day granularity (ie if currentTime = 2014-08-10 13:32:33 the input value will be initialized to 2014-08-10 00:00:00)
-  	 * Note: If the options.defaultDate is set or the input element the component is attached to has already a value that takes precedence and the functionality of useCurrent is not triggered!
-  	 */
   def useCurrent(value: java.lang.String): scala.Unit = js.native
   /**
   	 * Takes a boolean or string.
@@ -530,11 +348,8 @@ trait Datetimepicker extends js.Object {
   def viewDate(): scala.Boolean | momentLib.momentMod.momentNs.Moment = js.native
   /** This will change the viewDate without changing or setting the selected date. */
   def viewDate(value: java.lang.String): scala.Unit = js.native
-  /** This will change the viewDate without changing or setting the selected date. */
   def viewDate(value: momentLib.momentMod.momentNs.Moment): scala.Unit = js.native
-  /** This will change the viewDate without changing or setting the selected date. */
   def viewDate(value: scala.Boolean): scala.Unit = js.native
-  /** This will change the viewDate without changing or setting the selected date. */
   def viewDate(value: stdLib.Date): scala.Unit = js.native
   /** Returns the options.viewMode. */
   def viewMode(): java.lang.String = js.native
@@ -546,11 +361,9 @@ trait Datetimepicker extends js.Object {
   def viewMode(value: java.lang.String): scala.Unit = js.native
   /** Returns a $(element) variable with the currently set options.widgetParent option. */
   def widgetParent(): java.lang.String | bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerMod.Global.JQuery | scala.Null = js.native
-  /** Takes a string or $(element) value. */
   def widgetParent(widgetParent: bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerMod.Global.JQuery): scala.Unit = js.native
   /** Takes a string or $(element) value. */
   def widgetParent(widgetParent: java.lang.String): scala.Unit = js.native
-  /** Takes a string or $(element) value. */
   @JSName("widgetParent")
   def widgetParent_Unit(): scala.Unit = js.native
   /** Returns the options.widgetPositioning object */

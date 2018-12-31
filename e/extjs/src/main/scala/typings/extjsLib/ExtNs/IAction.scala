@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAction extends IBase {
   /** [Method] Disables all components configured by this Action  */
   var disable: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
@@ -23,7 +22,7 @@ trait IAction extends IBase {
   /** [Method] Executes this Action manually using the handler function specified in the original config object or the handler funct
   		* @param args Object... Variable number of arguments passed to the handler function
   		*/
-  var execute: js.UndefOr[js.Function1[/* repeated */js.Any, scala.Unit]] = js.undefined
+  var execute: js.UndefOr[js.Function1[/* repeated */ js.Any, scala.Unit]] = js.undefined
   /** [Method] Gets the icon CSS class currently used by all components configured by this Action  */
   var getIconCls: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Method] Gets the text currently displayed by all components configured by this Action  */

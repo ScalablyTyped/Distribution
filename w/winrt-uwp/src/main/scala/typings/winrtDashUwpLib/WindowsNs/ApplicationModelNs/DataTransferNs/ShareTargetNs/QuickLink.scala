@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents shortcuts that help users share content with the apps they use most. */
 @JSGlobal("Windows.ApplicationModel.DataTransfer.ShareTarget.QuickLink")
 @js.native
+/** Creates a new instance of a QuickLink object. */
 class QuickLink () extends js.Object {
   /** Specifies an ID for the QuickLink. Your app receives this ID when the user selects its QuickLink. You can use this ID to further customize the sharing process for the user. */
   var id: java.lang.String = js.native

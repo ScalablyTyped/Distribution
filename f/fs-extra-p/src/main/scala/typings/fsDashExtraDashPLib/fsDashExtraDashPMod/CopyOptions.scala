@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CopyOptions extends js.Object {
   var dereference: js.UndefOr[scala.Boolean] = js.undefined
   var filter: js.UndefOr[

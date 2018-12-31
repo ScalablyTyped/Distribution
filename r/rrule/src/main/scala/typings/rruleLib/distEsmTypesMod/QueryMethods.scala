@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryMethods extends js.Object {
   def after(date: stdLib.Date, inc: scala.Boolean): stdLib.Date
   def all(): js.Array[stdLib.Date]

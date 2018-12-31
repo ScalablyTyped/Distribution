@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Card extends js.Object {
   var code: cardDashValidatorLib.Anon_Size
   var gaps: js.Array[scala.Double]

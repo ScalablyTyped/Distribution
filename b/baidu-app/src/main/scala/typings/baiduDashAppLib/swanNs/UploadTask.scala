@@ -17,10 +17,6 @@ trait UploadTask extends js.Object {
   		 * @version 1.4.0
   		 */
   def onProgressUpdate(): scala.Unit = js.native
-  /**
-  		 * 监听上传进度变化
-  		 * @version 1.4.0
-  		 */
   def onProgressUpdate(callback: js.Function1[/* res */ baiduDashAppLib.Anon_TotalBytesSent, scala.Unit]): scala.Unit = js.native
 }
 

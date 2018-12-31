@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDragSource extends IDDProxy {
   /** [Method] An empty function by default but provided so that you can perform a custom action after a valid drag drop has occurr
   		* @param target Ext.dd.DragDrop The drop target

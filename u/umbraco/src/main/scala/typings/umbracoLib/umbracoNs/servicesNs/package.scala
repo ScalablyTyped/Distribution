@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object servicesNs {
   /**
-       * Search media
-       */
+    * Search media
+    */
   type ISearchMedia = ISearchContent
 }

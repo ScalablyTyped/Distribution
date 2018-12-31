@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ConsistencyTokenPrettyPrintScore extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -24,20 +23,20 @@ trait Anon_ConsistencyTokenPrettyPrintScore extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The score you're submitting. The submitted score is ignored if it is worse than a previously submitted score, where worse depends on the leaderboard
-                   * sort order. The meaning of the score value depends on the leaderboard format type. For fixed-point, the score represents the raw value. For time, the
-                   * score represents elapsed time in milliseconds. For currency, the score represents a value in micro units.
-                   */
+    * The score you're submitting. The submitted score is ignored if it is worse than a previously submitted score, where worse depends on the leaderboard
+    * sort order. The meaning of the score value depends on the leaderboard format type. For fixed-point, the score represents the raw value. For time, the
+    * score represents elapsed time in milliseconds. For currency, the score represents a value in micro units.
+    */
   var score: java.lang.String
   /**
-                   * Additional information about the score you're submitting. Values must contain no more than 64 URI-safe characters as defined by section 2.3 of RFC
-                   * 3986.
-                   */
+    * Additional information about the score you're submitting. Values must contain no more than 64 URI-safe characters as defined by section 2.3 of RFC
+    * 3986.
+    */
   var scoreTag: js.UndefOr[java.lang.String] = js.undefined
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Application extends js.Object {
   /** The set of managed properties available to be pre-configured for the application. */
   var managedProperties: js.UndefOr[js.Array[ManagedProperty]] = js.undefined

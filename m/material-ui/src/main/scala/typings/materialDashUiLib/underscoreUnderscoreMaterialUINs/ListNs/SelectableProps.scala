@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectableProps extends js.Object {
   var onChange: js.UndefOr[
     js.Function2[

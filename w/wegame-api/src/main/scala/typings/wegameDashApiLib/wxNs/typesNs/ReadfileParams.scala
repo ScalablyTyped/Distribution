@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReadfileParams extends js.Object {
   var complete: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var encoding: js.UndefOr[FileContentEncoding] = js.undefined

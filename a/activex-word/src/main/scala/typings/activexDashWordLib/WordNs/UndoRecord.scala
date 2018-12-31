@@ -18,7 +18,6 @@ class UndoRecord protected () extends js.Object {
   def EndCustomRecord(): scala.Unit = js.native
   /** @param string [Name=''] */
   def StartCustomRecord(): scala.Unit = js.native
-  /** @param string [Name=''] */
   def StartCustomRecord(Name: java.lang.String): scala.Unit = js.native
 }
 

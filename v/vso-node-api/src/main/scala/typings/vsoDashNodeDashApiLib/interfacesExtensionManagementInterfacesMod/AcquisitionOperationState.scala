@@ -12,22 +12,22 @@ sealed trait AcquisitionOperationState extends js.Object
 @js.native
 object AcquisitionOperationState extends js.Object {
   /**
-       * Allowed to use this AcquisitionOperation
-       */
+    * Allowed to use this AcquisitionOperation
+    */
   @js.native
   sealed trait Allow
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.AcquisitionOperationState
   
   /**
-       * Operation has already been completed and is no longer available
-       */
+    * Operation has already been completed and is no longer available
+    */
   @js.native
   sealed trait Completed
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.AcquisitionOperationState
   
   /**
-       * Not allowed to use this AcquisitionOperation
-       */
+    * Not allowed to use this AcquisitionOperation
+    */
   @js.native
   sealed trait Disallow
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.AcquisitionOperationState

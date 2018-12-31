@@ -21,7 +21,6 @@ trait JQuery[TElement] extends js.Object {
   // TODO: events "change" and "change.select2"
   @JSName("on")
   def `on_select2:closing`(events: select2Lib.select2LibStrings.`select2:closing`): this.type = js.native
-  // TODO: events "change" and "change.select2"
   @JSName("on")
   def `on_select2:closing`(
     events: select2Lib.select2LibStrings.`select2:closing`,

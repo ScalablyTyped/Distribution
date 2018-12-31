@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISharedLinkInfo extends js.Object {
   val AccessKey: java.lang.String
   val CreatedByUser: scala.Double

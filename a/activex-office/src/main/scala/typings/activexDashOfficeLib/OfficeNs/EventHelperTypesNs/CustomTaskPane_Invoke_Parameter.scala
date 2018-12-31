@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomTaskPane_Invoke_Parameter extends js.Object {
   val dispidMember: scala.Double
   val lcid: scala.Double

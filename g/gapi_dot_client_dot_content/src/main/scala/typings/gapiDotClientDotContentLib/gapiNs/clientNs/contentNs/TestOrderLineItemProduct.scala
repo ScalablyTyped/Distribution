@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestOrderLineItemProduct extends js.Object {
   /** Brand of the item. */
   var brand: js.UndefOr[java.lang.String] = js.undefined

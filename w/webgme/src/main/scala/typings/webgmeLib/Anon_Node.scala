@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Node extends js.Object {
   /** the members of the set of the node in question. */
   var members: js.UndefOr[js.Array[webgmeLib.CoreNs.Node]] = js.undefined

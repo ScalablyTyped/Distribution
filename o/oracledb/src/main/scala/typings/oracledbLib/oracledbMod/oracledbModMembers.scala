@@ -216,11 +216,6 @@ object oracledbModMembers extends js.Object {
   	 * @returns The connection pool or throws an error if it was not found.
   	 */
   def getPool(): oracledbLib.oracledbMod.oracledbNs.IConnectionPool = js.native
-  /**
-  	 * Retrieves a connection pool from cache. If it does not exists, an error will be thrown.
-  	 * @param {string} alias The index of the cache for the pool. If none is passed, it will use the default one.
-  	 * @returns The connection pool or throws an error if it was not found.
-  	 */
   def getPool(poolAlias: java.lang.String): oracledbLib.oracledbMod.oracledbNs.IConnectionPool = js.native
   /**
   	 * Do not use this method - used internally by node-oracledb.

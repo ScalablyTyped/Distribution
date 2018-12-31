@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartComponentProps extends js.Object {
   var data: ChartData[chartDotJsLib.chartDotJsMod.ChartNs.ChartData]
   var datasetKeyProvider: js.UndefOr[js.Function1[/* any */ js.Any, _]] = js.undefined

@@ -12,43 +12,43 @@ sealed trait GitStatusState extends js.Object
 @js.native
 object GitStatusState extends js.Object {
   /**
-       * Status with an error.
-       */
+    * Status with an error.
+    */
   @js.native
   sealed trait Error
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitStatusState
   
   /**
-       * Status failed.
-       */
+    * Status failed.
+    */
   @js.native
   sealed trait Failed
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitStatusState
   
   /**
-       * Status is not applicable to the target object.
-       */
+    * Status is not applicable to the target object.
+    */
   @js.native
   sealed trait NotApplicable
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitStatusState
   
   /**
-       * Status state not set. Default state.
-       */
+    * Status state not set. Default state.
+    */
   @js.native
   sealed trait NotSet
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitStatusState
   
   /**
-       * Status pending.
-       */
+    * Status pending.
+    */
   @js.native
   sealed trait Pending
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitStatusState
   
   /**
-       * Status succeeded.
-       */
+    * Status succeeded.
+    */
   @js.native
   sealed trait Succeeded
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitStatusState

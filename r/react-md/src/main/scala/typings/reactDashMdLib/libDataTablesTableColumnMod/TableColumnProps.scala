@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableColumnProps
   extends reactDashMdLib.libMod.Props
      with reactDashMdLib.libTooltipsInjectTooltipMod.InjectedTooltipProps {
@@ -27,12 +26,12 @@ trait TableColumnProps
   var sortIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var sortIconBefore: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var sortIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var sortIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var sorted: js.UndefOr[scala.Boolean] = js.undefined
 }

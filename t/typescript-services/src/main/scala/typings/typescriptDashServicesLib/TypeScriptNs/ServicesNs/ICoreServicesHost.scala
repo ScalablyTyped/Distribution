@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICoreServicesHost extends js.Object {
   var logger: typescriptDashServicesLib.TypeScriptNs.ILogger
 }

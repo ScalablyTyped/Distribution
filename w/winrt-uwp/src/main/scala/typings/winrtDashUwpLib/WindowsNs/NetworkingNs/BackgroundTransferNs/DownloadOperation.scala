@@ -28,29 +28,29 @@ abstract class DownloadOperation () extends js.Object {
   /** Gets the group that this download operation belongs to. */
   var transferGroup: BackgroundTransferGroup = js.native
   /**
-                   * Returns an asynchronous operation that can be used to monitor progress and completion of the attached download. Calling this method allows an app to attach download operations that were started in a previous app instance.
-                   * @return Download operation with callback.
-                   */
+    * Returns an asynchronous operation that can be used to monitor progress and completion of the attached download. Calling this method allows an app to attach download operations that were started in a previous app instance.
+    * @return Download operation with callback.
+    */
   def attachAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[DownloadOperation, DownloadOperation] = js.native
   /**
-                   * Gets the response information.
-                   * @return Contains the data returned by a server response.
-                   */
+    * Gets the response information.
+    * @return Contains the data returned by a server response.
+    */
   def getResponseInformation(): ResponseInformation = js.native
   /**
-                   * Gets the partially downloaded response at the specified position.
-                   * @param position The position at which to start reading.
-                   * @return The result stream.
-                   */
+    * Gets the partially downloaded response at the specified position.
+    * @param position The position at which to start reading.
+    * @return The result stream.
+    */
   def getResultStreamAt(position: scala.Double): winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IInputStream = js.native
   /** Pauses a download operation. */
   def pause(): scala.Unit = js.native
   /** Resumes a paused download operation. */
   def resume(): scala.Unit = js.native
   /**
-                   * Starts an asynchronous download operation.
-                   * @return An asynchronous download operation that includes progress updates.
-                   */
+    * Starts an asynchronous download operation.
+    * @return An asynchronous download operation that includes progress updates.
+    */
   def startAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[DownloadOperation, DownloadOperation] = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Transports extends js.Object {
   var foreverFrame: Transport
   var longPolling: Transport

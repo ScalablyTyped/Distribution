@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Spec extends js.Object {
   var handler: Handler
   var method: java.lang.String | js.Array[java.lang.String]

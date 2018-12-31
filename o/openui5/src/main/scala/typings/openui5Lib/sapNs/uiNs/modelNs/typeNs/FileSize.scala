@@ -10,18 +10,12 @@ import scala.scalajs.js.annotation._
 class FileSize protected ()
   extends openui5Lib.sapNs.uiNs.modelNs.SimpleType {
   /**
-             * Constructor for a FileSize type.
-             * @param oFormatOptions formatting options. Supports the same options as {@link
-             * sap.ui.core.format.FileSizeFormat.getInstance FileSizeFormat.getInstance}
-             * @param oConstraints value constraints.
-            */
+    * Constructor for a FileSize type.
+    * @param oFormatOptions formatting options. Supports the same options as {@link
+    * sap.ui.core.format.FileSizeFormat.getInstance FileSizeFormat.getInstance}
+    * @param oConstraints value constraints.
+    */
   def this(oFormatOptions: js.Any) = this()
-  /**
-             * Constructor for a FileSize type.
-             * @param oFormatOptions formatting options. Supports the same options as {@link
-             * sap.ui.core.format.FileSizeFormat.getInstance FileSizeFormat.getInstance}
-             * @param oConstraints value constraints.
-            */
   def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
 }
 

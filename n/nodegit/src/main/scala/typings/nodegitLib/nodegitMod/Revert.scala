@@ -14,17 +14,14 @@ class Revert ()
 @js.native
 object Revert extends js.Object {
   /**
-       * Reverts the given commit against the given "our" commit, producing an index that reflects the result of the revert.
-       */
+    * Reverts the given commit against the given "our" commit, producing an index that reflects the result of the revert.
+    */
   def commit(
     repo: nodegitLib.repositoryMod.Repository,
     revertCommit: nodegitLib.commitMod.Commit,
     ourCommit: nodegitLib.commitMod.Commit,
     mainline: scala.Double
   ): js.Promise[nodegitLib.nodegitMod.Index] = js.native
-  /**
-       * Reverts the given commit against the given "our" commit, producing an index that reflects the result of the revert.
-       */
   def commit(
     repo: nodegitLib.repositoryMod.Repository,
     revertCommit: nodegitLib.commitMod.Commit,

@@ -27,12 +27,12 @@ trait Duration extends js.Object {
   def humanize(withSuffix: scala.Boolean): java.lang.String = js.native
   def isValid(): scala.Boolean = js.native
   /**
-       * @deprecated since version 2.8.0
-       */
+    * @deprecated since version 2.8.0
+    */
   def lang(): Locale = js.native
   /**
-       * @deprecated since version 2.8.0
-       */
+    * @deprecated since version 2.8.0
+    */
   def lang(locale: LocaleSpecifier): Moment = js.native
   def locale(): java.lang.String = js.native
   def locale(locale: LocaleSpecifier): Duration = js.native
@@ -46,8 +46,8 @@ trait Duration extends js.Object {
   def subtract(inp: DurationInputArg1, unit: DurationInputArg2): Duration = js.native
   def toISOString(): java.lang.String = js.native
   /**
-       * @deprecated
-       */
+    * @deprecated
+    */
   def toIsoString(): java.lang.String = js.native
   def toJSON(): java.lang.String = js.native
   def weeks(): scala.Double = js.native

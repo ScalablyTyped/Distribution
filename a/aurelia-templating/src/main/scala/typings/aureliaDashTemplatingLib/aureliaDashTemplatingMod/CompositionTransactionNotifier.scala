@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class CompositionTransactionNotifier () extends js.Object {
   def this(owner: js.Any) = this()
   /**
-      * Notifies the owning transaction that its work is done.
-      */
+    * Notifies the owning transaction that its work is done.
+    */
   def done(): scala.Unit = js.native
 }
 

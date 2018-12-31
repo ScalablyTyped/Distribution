@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 //#region iBeacon https://docs.alipay.com/mini/api/yqleyc
-
 trait StartBeaconDiscoveryOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnRatingBarChangeListener extends js.Object {
   def onRatingChanged(
     ratingBar: androiduixLib.androidNs.widgetNs.RatingBar,

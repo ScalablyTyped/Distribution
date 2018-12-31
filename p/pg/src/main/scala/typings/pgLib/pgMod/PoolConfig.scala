@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PoolConfig extends ClientConfig {
   var Promise: js.UndefOr[stdLib.PromiseConstructorLike] = js.undefined
   var application_name: js.UndefOr[java.lang.String] = js.undefined

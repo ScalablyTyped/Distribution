@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Getaccessorcannothaveparameters extends js.Object {
   var A_class_may_only_extend_another_class: java.lang.String
   var A_class_may_only_implement_another_class_or_interface: java.lang.String

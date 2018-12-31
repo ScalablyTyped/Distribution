@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Beacon extends js.Object {
   /** iBeacon 设备的距离 */
   var accuracy: scala.Double

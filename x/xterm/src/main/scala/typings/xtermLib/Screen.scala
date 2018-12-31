@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Screen extends js.Object {
   val availHeight: scala.Double
   val availWidth: scala.Double

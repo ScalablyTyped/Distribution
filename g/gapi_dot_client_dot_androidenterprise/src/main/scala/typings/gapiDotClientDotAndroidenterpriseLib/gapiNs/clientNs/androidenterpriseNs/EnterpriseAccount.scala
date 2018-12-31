@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EnterpriseAccount extends js.Object {
   /** The email address of the service account. */
   var accountEmail: js.UndefOr[java.lang.String] = js.undefined

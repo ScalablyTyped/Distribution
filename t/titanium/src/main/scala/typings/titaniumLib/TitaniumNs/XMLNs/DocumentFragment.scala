@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * A lightweight document object used as a container for a group of nodes.
 		 */
-
 trait DocumentFragment
   extends titaniumLib.TitaniumNs.Proxy {
   /**

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileDescriptor extends js.Object {
   /** Only available is isChunk is true. */
   var chunk: js.UndefOr[Chunk] = js.undefined

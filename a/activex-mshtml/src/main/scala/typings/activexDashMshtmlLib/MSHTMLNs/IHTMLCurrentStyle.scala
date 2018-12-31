@@ -101,7 +101,6 @@ class IHTMLCurrentStyle protected () extends js.Object {
   val zIndex: js.Any = js.native
   /** @param lFlags [lFlags=0] */
   def getAttribute(strAttributeName: java.lang.String): js.Any = js.native
-  /** @param lFlags [lFlags=0] */
   def getAttribute(strAttributeName: java.lang.String, lFlags: scala.Double): js.Any = js.native
 }
 

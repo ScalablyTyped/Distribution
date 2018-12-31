@@ -34,7 +34,6 @@ class SMTPServer ()
   def listen(handle: js.Any): nodeLib.netMod.Server = js.native
   def listen(handle: js.Any, backlog: scala.Double): nodeLib.netMod.Server = js.native
   def listen(handle: js.Any, backlog: scala.Double, listeningListener: js.Function0[scala.Unit]): nodeLib.netMod.Server = js.native
-   // tslint:disable-line unified-signatures
   def listen(handle: js.Any, listeningListener: js.Function0[scala.Unit]): nodeLib.netMod.Server = js.native
   def listen(options: nodeLib.netMod.ListenOptions): nodeLib.netMod.Server = js.native
   def listen(options: nodeLib.netMod.ListenOptions, listeningListener: js.Function0[scala.Unit]): nodeLib.netMod.Server = js.native
@@ -42,15 +41,11 @@ class SMTPServer ()
   def listen(path: java.lang.String, backlog: scala.Double): nodeLib.netMod.Server = js.native
   def listen(path: java.lang.String, backlog: scala.Double, listeningListener: js.Function0[scala.Unit]): nodeLib.netMod.Server = js.native
   def listen(path: java.lang.String, listeningListener: js.Function0[scala.Unit]): scala.Unit = js.native
-  /** Start listening on selected port and interface */
   def listen(port: scala.Double): nodeLib.netMod.Server = js.native
   def listen(port: scala.Double, backlog: scala.Double): nodeLib.netMod.Server = js.native
   def listen(port: scala.Double, backlog: scala.Double, listeningListener: js.Function0[scala.Unit]): nodeLib.netMod.Server = js.native
-  /** Start listening on selected port and interface */
   def listen(port: scala.Double, hostname: java.lang.String): nodeLib.netMod.Server = js.native
-  /** Start listening on selected port and interface */
   def listen(port: scala.Double, hostname: java.lang.String, backlog: scala.Double): nodeLib.netMod.Server = js.native
-  /** Start listening on selected port and interface */
   def listen(
     port: scala.Double,
     hostname: java.lang.String,
@@ -58,7 +53,6 @@ class SMTPServer ()
     listeningListener: js.Function0[scala.Unit]
   ): nodeLib.netMod.Server = js.native
   def listen(port: scala.Double, hostname: java.lang.String, listeningListener: js.Function0[scala.Unit]): nodeLib.netMod.Server = js.native
-   // tslint:disable-line unified-signatures
   def listen(port: scala.Double, listeningListener: js.Function0[scala.Unit]): nodeLib.netMod.Server = js.native
   @JSName("listen")
   def listen_Unit(path: java.lang.String): scala.Unit = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITransitionEvent extends js.Object {
   var changed: scala.Boolean
   var context: js.Object

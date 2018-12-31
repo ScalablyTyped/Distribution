@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Response[R] extends js.Object {
   var `match`: stdLib.RegExpMatchArray
   var message: Message

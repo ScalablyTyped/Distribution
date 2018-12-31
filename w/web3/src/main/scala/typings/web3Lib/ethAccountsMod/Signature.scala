@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Signature extends js.Object {
   var messageHash: java.lang.String
   var r: java.lang.String

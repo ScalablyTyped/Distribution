@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JobsResource extends js.Object {
   var reports: ReportsResource
   /** Creates a job and returns it. */

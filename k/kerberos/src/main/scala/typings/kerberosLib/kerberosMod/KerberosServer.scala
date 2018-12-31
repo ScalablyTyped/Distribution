@@ -9,28 +9,28 @@ import scala.scalajs.js.annotation._
 @js.native
 class KerberosServer () extends js.Object {
   /**
-       * @description Indicates that authentication has successfully completed or not
-       */
+    * @description Indicates that authentication has successfully completed or not
+    */
   var contextComplete: scala.Boolean = js.native
   /**
-       * @description The last response received during authentication steps
-       */
+    * @description The last response received during authentication steps
+    */
   var response: java.lang.String = js.native
   /**
-       * @description The target used for authentication
-       */
+    * @description The target used for authentication
+    */
   var targetName: java.lang.String = js.native
   /**
-       * @description  The username used for authentication
-       */
+    * @description  The username used for authentication
+    */
   var username: java.lang.String = js.native
   /**
-       * Processes a single kerberos server-side step using the supplied client data.
-       *
-       * @param challenge A string containing the base64-encoded client data
-       * @param callback
-       * @return returns Promise if no callback passed
-       */
+    * Processes a single kerberos server-side step using the supplied client data.
+    *
+    * @param challenge A string containing the base64-encoded client data
+    * @param callback
+    * @return returns Promise if no callback passed
+    */
   def step(challenge: java.lang.String): js.Promise[java.lang.String] = js.native
   def step(
     challenge: java.lang.String,

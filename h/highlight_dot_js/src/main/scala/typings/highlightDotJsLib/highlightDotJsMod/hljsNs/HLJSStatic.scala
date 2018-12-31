@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HLJSStatic extends js.Object {
   var APOS_STRING_MODE: IMode
   // Common modes

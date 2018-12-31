@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpeechRecognitionEventMap extends js.Object {
   var audioend: Event
   var audiostart: Event

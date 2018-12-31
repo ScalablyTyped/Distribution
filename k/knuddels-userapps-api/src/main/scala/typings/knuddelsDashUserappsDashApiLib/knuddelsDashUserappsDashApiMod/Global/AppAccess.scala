@@ -16,10 +16,6 @@ class AppAccess () extends js.Object {
   		 * @since AppServer 82904
   		 */
   def getAllRunningAppsInChannel(): js.Array[AppInstance] = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/AppAccess.html#method_getAllRunningAppsInChannel
-  		 * @since AppServer 82904
-  		 */
   def getAllRunningAppsInChannel(includeSelf: scala.Boolean): js.Array[AppInstance] = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/AppAccess.html#method_getOwnInstance

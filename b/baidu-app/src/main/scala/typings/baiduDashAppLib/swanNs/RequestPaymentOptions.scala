@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestPaymentOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 随机字符串，长度为32个字符以下。 */

@@ -12,8 +12,8 @@ sealed trait PersonaInitialsColor extends js.Object
 @js.native
 object PersonaInitialsColor extends js.Object {
   /**
-       * Black is a color that can result in offensive persona coins with some initials combinations, so it can only be set with overrides
-       */
+    * Black is a color that can result in offensive persona coins with some initials combinations, so it can only be set with overrides
+    */
   @js.native
   sealed trait black
     extends officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaInitialsColor
@@ -67,8 +67,8 @@ object PersonaInitialsColor extends js.Object {
     extends officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaInitialsColor
   
   /**
-       * Red is a color that often has a special meaning, so it is considered a reserved color and can only be set with overrides
-       */
+    * Red is a color that often has a special meaning, so it is considered a reserved color and can only be set with overrides
+    */
   @js.native
   sealed trait red
     extends officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaInitialsColor
@@ -78,9 +78,9 @@ object PersonaInitialsColor extends js.Object {
     extends officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaInitialsColor
   
   /**
-       * Transparent is not intended to be used with typical initials due to accessibility issues.
-       * Its primary use is for overflow buttons, so it is considered a reserved color and can only be set with overrides.
-       */
+    * Transparent is not intended to be used with typical initials due to accessibility issues.
+    * Its primary use is for overflow buttons, so it is considered a reserved color and can only be set with overrides.
+    */
   @js.native
   sealed trait transparent
     extends officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaInitialsColor

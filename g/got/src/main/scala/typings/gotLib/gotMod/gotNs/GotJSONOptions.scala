@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GotJSONOptions
   extends GotOptions[java.lang.String | scala.Null] {
   // Body must be an object or array. See https://github.com/sindresorhus/got/issues/511

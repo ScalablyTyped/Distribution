@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGeoCoordinates extends js.Object {
   var accuracy: js.UndefOr[scala.Double] = js.undefined
   var altitude: js.UndefOr[scala.Double] = js.undefined

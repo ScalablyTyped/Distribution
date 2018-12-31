@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompressOptions extends js.Object {
   /** Replace `arguments[index]` with function parameter name whenever possible. */
   var arguments: js.UndefOr[scala.Boolean] = js.undefined
@@ -20,10 +19,10 @@ trait CompressOptions extends js.Object {
   /** Remove unreachable code */
   var dead_code: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Pass `true` to discard calls to console.* functions.
-       * If you wish to drop a specific function call such as `console.info` and/or retain side effects from function
-       * arguments after dropping the function call then use `pure_funcs` instead.
-       */
+    * Pass `true` to discard calls to console.* functions.
+    * If you wish to drop a specific function call such as `console.info` and/or retain side effects from function
+    * arguments after dropping the function call then use `pure_funcs` instead.
+    */
   var drop_console: js.UndefOr[scala.Boolean] = js.undefined
   /** Remove `debugger;` statements */
   var drop_debugger: js.UndefOr[scala.Boolean] = js.undefined
@@ -35,24 +34,24 @@ trait CompressOptions extends js.Object {
   /** hoist function declarations */
   var hoist_funs: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Hoist properties from constant object and array literals into regular variables subject to a set of constraints.
-       * For example: `var o={p:1, q:2}; f(o.p, o.q);` is converted to `f(1, 2);`. Note: `hoist_props` works best with mangle enabled,
-       * the compress option passes set to 2 or higher, and the compress option toplevel enabled.
-       */
+    * Hoist properties from constant object and array literals into regular variables subject to a set of constraints.
+    * For example: `var o={p:1, q:2}; f(o.p, o.q);` is converted to `f(1, 2);`. Note: `hoist_props` works best with mangle enabled,
+    * the compress option passes set to 2 or higher, and the compress option toplevel enabled.
+    */
   var hoist_props: js.UndefOr[scala.Boolean] = js.undefined
   /** Hoist var declarations (this is `false` by default because it seems to increase the size of the output in general) */
   var hoist_vars: js.UndefOr[scala.Boolean] = js.undefined
   /** Optimizations for if/return and if/continue */
   var if_return: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Inline calls to function with simple/return statement
-       * - false -- same as `Disabled`
-       * - `Disabled` -- disabled inlining
-       * - `SimpleFunctions` -- inline simple functions
-       * - `WithArguments` -- inline functions with arguments
-       * - `WithArgumentsAndVariables` -- inline functions with arguments and variables
-       * - true -- same as `WithArgumentsAndVariables`
-       */
+    * Inline calls to function with simple/return statement
+    * - false -- same as `Disabled`
+    * - `Disabled` -- disabled inlining
+    * - `SimpleFunctions` -- inline simple functions
+    * - `WithArguments` -- inline functions with arguments
+    * - `WithArgumentsAndVariables` -- inline functions with arguments and variables
+    * - true -- same as `WithArgumentsAndVariables`
+    */
   var `inline`: js.UndefOr[scala.Boolean | InlineFunctions] = js.undefined
   /** join consecutive `var` statements */
   var join_vars: js.UndefOr[scala.Boolean] = js.undefined
@@ -71,21 +70,21 @@ trait CompressOptions extends js.Object {
   /** Rewrite property access using the dot notation, for example `foo["bar"]` to `foo.bar` */
   var properties: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * An array of names and UglifyJS will assume that those functions do not produce side effects.
-       * DANGER: will not check if the name is redefined in scope.
-       * An example case here, for instance `var q = Math.floor(a/b)`.
-       * If variable q is not used elsewhere, UglifyJS will drop it, but will still keep the `Math.floor(a/b)`,
-       * not knowing what it does. You can pass `pure_funcs: [ 'Math.floor' ]` to let it know that this function
-       * won't produce any side effect, in which case the whole statement would get discarded. The current
-       * implementation adds some overhead (compression will be slower).
-       */
+    * An array of names and UglifyJS will assume that those functions do not produce side effects.
+    * DANGER: will not check if the name is redefined in scope.
+    * An example case here, for instance `var q = Math.floor(a/b)`.
+    * If variable q is not used elsewhere, UglifyJS will drop it, but will still keep the `Math.floor(a/b)`,
+    * not knowing what it does. You can pass `pure_funcs: [ 'Math.floor' ]` to let it know that this function
+    * won't produce any side effect, in which case the whole statement would get discarded. The current
+    * implementation adds some overhead (compression will be slower).
+    */
   var pure_funcs: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var pure_getters: js.UndefOr[scala.Boolean | uglifyDashJsLib.uglifyDashJsLibStrings.strict] = js.undefined
   /**
-       * Allows single-use functions to be inlined as function expressions when permissible allowing further optimization.
-       * Enabled by default. Option depends on reduce_vars being enabled. Some code runs faster in the Chrome V8 engine if
-       * this option is disabled. Does not negatively impact other major browsers.
-       */
+    * Allows single-use functions to be inlined as function expressions when permissible allowing further optimization.
+    * Enabled by default. Option depends on reduce_vars being enabled. Some code runs faster in the Chrome V8 engine if
+    * this option is disabled. Does not negatively impact other major browsers.
+    */
   var reduce_funcs: js.UndefOr[scala.Boolean] = js.undefined
   /** Improve optimization on variables assigned with and used as constant values. */
   var reduce_vars: js.UndefOr[scala.Boolean] = js.undefined

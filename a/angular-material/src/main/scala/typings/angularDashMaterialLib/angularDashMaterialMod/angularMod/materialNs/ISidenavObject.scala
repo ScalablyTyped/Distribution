@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISidenavObject extends js.Object {
   def close(): angularLib.angularMod.angularNs.IPromise[scala.Unit]
   def isLockedOpen(): scala.Boolean

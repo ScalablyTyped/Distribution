@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FontOptions extends js.Object {
   var baseline: scala.Double
   var codeTagCount: scala.Double | scala.Null

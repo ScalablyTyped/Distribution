@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Hooks extends js.Object {
   var extraEnhancers: js.UndefOr[js.Array[reduxLib.reduxMod.StoreEnhancer[_, js.Object]]] = js.undefined
   var extraReducers: js.UndefOr[reduxLib.reduxMod.ReducersMapObject[_, reduxLib.reduxMod.Action[_]]] = js.undefined

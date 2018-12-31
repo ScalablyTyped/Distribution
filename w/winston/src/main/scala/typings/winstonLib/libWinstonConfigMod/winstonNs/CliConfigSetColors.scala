@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CliConfigSetColors extends AbstractConfigSetColors {
   var data: java.lang.String | js.Array[java.lang.String]
   var debug: java.lang.String | js.Array[java.lang.String]

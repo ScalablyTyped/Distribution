@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Connection extends js.Object {
   var CELL_2G: scala.Double
   var CELL_3G: scala.Double

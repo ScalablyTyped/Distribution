@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NAVHIDDEN extends js.Object {
   // Show only documents owned by the user when showing items from Google Drive.
   var MINE_ONLY: java.lang.String

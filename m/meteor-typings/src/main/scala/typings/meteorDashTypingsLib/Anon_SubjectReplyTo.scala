@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SubjectReplyTo extends js.Object {
   var attachments: js.UndefOr[js.Array[js.Object]] = js.undefined
   var bcc: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined

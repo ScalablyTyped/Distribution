@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait FormNotificationLevel extends js.Object
 
 /**
-     * Constant Enum: Form Notification Levels for {@link Ui.setFormNotification formContext.ui.setFormNotification()}.
-     * @see {@link Xrm.FormNotificationLevel}
-     */
+  * Constant Enum: Form Notification Levels for {@link Ui.setFormNotification formContext.ui.setFormNotification()}.
+  * @see {@link Xrm.FormNotificationLevel}
+  */
 @JSGlobal("XrmEnum.FormNotificationLevel")
 @js.native
 object FormNotificationLevel extends js.Object {

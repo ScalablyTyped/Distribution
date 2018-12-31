@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EndDateMaxResultsPrettyPrintFetchImages extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -14,9 +13,9 @@ trait Anon_EndDateMaxResultsPrettyPrintFetchImages extends js.Object {
   /** Latest post date to fetch, a date-time with RFC 3339 formatting. */
   var endDate: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Whether the body content of posts is included (default: true). This should be set to false when the post bodies are not required, to help minimize
-                   * traffic.
-                   */
+    * Whether the body content of posts is included (default: true). This should be set to false when the post bodies are not required, to help minimize
+    * traffic.
+    */
   var fetchBodies: js.UndefOr[scala.Boolean] = js.undefined
   /** Whether image URL metadata for each post is included. */
   var fetchImages: js.UndefOr[scala.Boolean] = js.undefined
@@ -37,9 +36,9 @@ trait Anon_EndDateMaxResultsPrettyPrintFetchImages extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** Earliest post date to fetch, a date-time with RFC 3339 formatting. */
   var startDate: js.UndefOr[java.lang.String] = js.undefined

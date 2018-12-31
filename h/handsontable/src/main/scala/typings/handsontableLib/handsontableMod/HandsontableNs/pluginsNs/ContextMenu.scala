@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContextMenu extends Base {
   var commandExecutor: CommandExecutor
   var eventManager: EventManager

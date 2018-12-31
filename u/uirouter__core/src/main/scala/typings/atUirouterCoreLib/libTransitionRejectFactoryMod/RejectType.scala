@@ -12,52 +12,52 @@ sealed trait RejectType extends js.Object
 @js.native
 object RejectType extends js.Object {
   /**
-       * The transition was aborted
-       *
-       * The transition was aborted by a hook which returned `false`
-       */
+    * The transition was aborted
+    *
+    * The transition was aborted by a hook which returned `false`
+    */
   @js.native
   sealed trait ABORTED
     extends atUirouterCoreLib.libTransitionRejectFactoryMod.RejectType
   
   /**
-       * The transition errored.
-       *
-       * This generally means a hook threw an error or returned a rejected promise
-       */
+    * The transition errored.
+    *
+    * This generally means a hook threw an error or returned a rejected promise
+    */
   @js.native
   sealed trait ERROR
     extends atUirouterCoreLib.libTransitionRejectFactoryMod.RejectType
   
   /**
-       * The transition was ignored
-       *
-       * The transition was ignored because it would have no effect.
-       *
-       * Either:
-       *
-       * - The transition is targeting the current state and parameter values
-       * - The transition is targeting the same state and parameter values as the currently running transition.
-       */
+    * The transition was ignored
+    *
+    * The transition was ignored because it would have no effect.
+    *
+    * Either:
+    *
+    * - The transition is targeting the current state and parameter values
+    * - The transition is targeting the same state and parameter values as the currently running transition.
+    */
   @js.native
   sealed trait IGNORED
     extends atUirouterCoreLib.libTransitionRejectFactoryMod.RejectType
   
   /**
-       * The transition was invalid
-       *
-       * The transition was never started because it was invalid
-       */
+    * The transition was invalid
+    *
+    * The transition was never started because it was invalid
+    */
   @js.native
   sealed trait INVALID
     extends atUirouterCoreLib.libTransitionRejectFactoryMod.RejectType
   
   /**
-       * A new transition superseded this one.
-       *
-       * While this transition was running, a new transition started.
-       * This transition is cancelled because it was superseded by new transition.
-       */
+    * A new transition superseded this one.
+    *
+    * While this transition was running, a new transition started.
+    * This transition is cancelled because it was superseded by new transition.
+    */
   @js.native
   sealed trait SUPERSEDED
     extends atUirouterCoreLib.libTransitionRejectFactoryMod.RejectType

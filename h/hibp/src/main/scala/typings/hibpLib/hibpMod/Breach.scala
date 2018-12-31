@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Breach extends js.Object {
   var AddedDate: java.lang.String
   var BreachDate: java.lang.String

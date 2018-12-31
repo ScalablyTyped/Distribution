@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStrategyOptions extends js.Object {
   var passReqToCallback: js.UndefOr[passportDashLocalLib.passportDashLocalLibNumbers.`false`] = js.undefined
   var passwordField: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Lookup[TKey, TValue] extends js.Object {
   def get(key: TKey): Enumerable[TValue]
   def has(key: TKey): scala.Boolean

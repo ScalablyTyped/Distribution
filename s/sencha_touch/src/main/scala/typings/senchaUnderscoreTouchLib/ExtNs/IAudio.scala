@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAudio extends IMedia {
   /** [Method] Returns the value of cls
   		* @returns String

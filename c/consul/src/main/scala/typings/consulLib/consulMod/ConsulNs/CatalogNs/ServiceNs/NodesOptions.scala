@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodesOptions
   extends consulLib.consulMod.ConsulNs.CommonOptions {
   var service: java.lang.String

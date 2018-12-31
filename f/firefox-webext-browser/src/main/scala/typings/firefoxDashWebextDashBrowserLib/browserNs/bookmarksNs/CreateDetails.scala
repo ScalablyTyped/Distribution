@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Object passed to the create() function. */
-
 trait CreateDetails extends js.Object {
   var index: js.UndefOr[scala.Double] = js.undefined
   /** Defaults to the Other Bookmarks folder. */

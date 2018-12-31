@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Web[T] extends js.Object {
   var calls: js.Array[WebCall[T]]
   def addResponse(opts: WebOptions[T]): scala.Unit

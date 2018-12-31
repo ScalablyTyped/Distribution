@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * @hidden
-     **/
+  * @hidden
+  **/
 @JSImport("babylonjs", "_CreationDataStorage")
 @js.native
 class _CreationDataStorage ()

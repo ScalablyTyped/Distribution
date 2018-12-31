@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("wink-tokenizer", JSImport.Namespace)
 @js.native
+/**
+	 * create a tokenizer instance
+	 */
 class namespaced () extends Tokenizer {
   /**
   	 * Defines the configuration in terms of the types of token that will be extracted by tokenize() method.

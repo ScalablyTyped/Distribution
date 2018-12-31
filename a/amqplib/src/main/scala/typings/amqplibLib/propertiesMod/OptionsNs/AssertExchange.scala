@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AssertExchange extends js.Object {
   var alternateExchange: js.UndefOr[java.lang.String] = js.undefined
   var arguments: js.UndefOr[js.Any] = js.undefined

@@ -10,22 +10,22 @@ import scala.scalajs.js.annotation._
 object geckoProfilerNsMembers extends js.Object {
   /* geckoProfiler events */
   /**
-       * Fires when the profiler starts/stops running.
-       * @param isRunning Whether the profiler is running or not. Pausing the profiler will not affect this value.
-       */
+    * Fires when the profiler starts/stops running.
+    * @param isRunning Whether the profiler is running or not. Pausing the profiler will not affect this value.
+    */
   val onRunning: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* isRunning */ scala.Boolean, scala.Unit]] = js.native
   /** Gathers the profile data from the current profiling session. */
   def getProfile(): js.Promise[_] = js.native
   /**
-       * Gathers the profile data from the current profiling session. The returned promise resolves to an array buffer
-       * that contains a JSON string.
-       */
+    * Gathers the profile data from the current profiling session. The returned promise resolves to an array buffer
+    * that contains a JSON string.
+    */
   def getProfileAsArrayBuffer(): js.Promise[_] = js.native
   /**
-       * Gets the debug symbols for a particular library.
-       * @param debugName The name of the library's debug file. For example, 'xul.pdb
-       * @param breakpadId The Breakpad ID of the library
-       */
+    * Gets the debug symbols for a particular library.
+    * @param debugName The name of the library's debug file. For example, 'xul.pdb
+    * @param breakpadId The Breakpad ID of the library
+    */
   def getSymbols(debugName: java.lang.String, breakpadId: java.lang.String): js.Promise[_] = js.native
   /** Pauses the profiler, keeping any profile data that is already written. */
   def pause(): js.Promise[_] = js.native

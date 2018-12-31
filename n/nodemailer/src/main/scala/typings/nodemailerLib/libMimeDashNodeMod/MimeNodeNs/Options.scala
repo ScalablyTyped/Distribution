@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   /** shared part of the unique multipart boundary */
   var baseBoundary: js.UndefOr[java.lang.String] = js.undefined

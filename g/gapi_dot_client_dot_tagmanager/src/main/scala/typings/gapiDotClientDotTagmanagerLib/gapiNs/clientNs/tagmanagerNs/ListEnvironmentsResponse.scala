@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListEnvironmentsResponse extends js.Object {
   /** All Environments of a GTM Container. */
   var environment: js.UndefOr[js.Array[Environment]] = js.undefined

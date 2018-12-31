@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMetadataStructureSelector extends js.Object {
   var Flags: mfilesLib.MFilesNs.MFMetadataStructureSelectorFlags
   var ID: java.lang.String

@@ -40,7 +40,6 @@ class DisplayObject ()
   var y: scala.Double = js.native
   // methods
   def cache(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double): scala.Unit = js.native
-  // methods
   def cache(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double, scale: scala.Double): scala.Unit = js.native
   def draw(ctx: stdLib.CanvasRenderingContext2D): scala.Boolean = js.native
   def draw(ctx: stdLib.CanvasRenderingContext2D, ignoreCache: scala.Boolean): scala.Boolean = js.native
@@ -53,8 +52,8 @@ class DisplayObject ()
   def getMatrix(): Matrix2D = js.native
   def getMatrix(matrix: Matrix2D): Matrix2D = js.native
   /**
-           * @deprecated
-           */
+    * @deprecated
+    */
   def getStage(): Stage = js.native
   def getTransformedBounds(): Rectangle = js.native
   def globalToLocal(x: scala.Double, y: scala.Double): Point = js.native

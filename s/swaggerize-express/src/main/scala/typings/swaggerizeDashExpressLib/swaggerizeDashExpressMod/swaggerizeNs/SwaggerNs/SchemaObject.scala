@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SchemaObject
   extends swaggerizeDashExpressLib.swaggerizeDashExpressMod.IJsonSchema
      with /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {

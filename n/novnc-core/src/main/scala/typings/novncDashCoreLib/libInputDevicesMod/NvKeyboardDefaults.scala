@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NvKeyboardDefaults extends js.Object {
   var focused: js.UndefOr[scala.Boolean] = js.undefined
   var onKeyPress: js.UndefOr[

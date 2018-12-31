@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait S3EventRecord extends js.Object {
   var awsRegion: java.lang.String
   var eventName: java.lang.String

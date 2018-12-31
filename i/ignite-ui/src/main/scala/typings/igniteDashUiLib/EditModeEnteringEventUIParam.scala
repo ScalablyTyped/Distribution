@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditModeEnteringEventUIParam extends js.Object {
   /**
   	 * Gets the cell for which the control is going into edit mode.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AfterPackContext extends js.Object {
   val appOutDir: java.lang.String
   val arch: builderDashUtilLib.outArchMod.Arch

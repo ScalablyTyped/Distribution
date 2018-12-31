@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGeoposition extends js.Object {
   var civicAddress: CivicAddress
   var coordinate: Geocoordinate

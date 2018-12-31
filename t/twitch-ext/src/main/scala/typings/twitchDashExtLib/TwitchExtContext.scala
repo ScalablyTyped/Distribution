@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * The result object as passed to the onContext callback.
- *
- * @see TwitchExt.onContext
- */
-
+  * The result object as passed to the onContext callback.
+  *
+  * @see TwitchExt.onContext
+  */
 trait TwitchExtContext extends js.Object {
   /**
   	 * If true, player controls are visible (e.g., due to mouseover).

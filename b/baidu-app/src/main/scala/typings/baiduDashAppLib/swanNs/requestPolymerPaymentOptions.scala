@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 	 * 百度收银台。
 	 * @version 1.8.5
 	 */
-
 trait requestPolymerPaymentOptions
   extends BaseOptions[js.Any, js.Any] {
    // 订单信息

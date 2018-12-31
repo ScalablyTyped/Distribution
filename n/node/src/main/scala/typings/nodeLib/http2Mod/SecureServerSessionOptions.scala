@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SecureServerSessionOptions
   extends nodeLib.tlsMod.TlsOptions
      with SessionOptions

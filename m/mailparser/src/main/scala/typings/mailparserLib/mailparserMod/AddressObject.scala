@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Address object.
- */
-
+  * Address object.
+  */
 trait AddressObject extends js.Object {
   /**
   	 * A formatted address string for HTML context.

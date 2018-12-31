@@ -33,14 +33,14 @@ abstract class PrintManager () extends js.Object {
 @js.native
 object PrintManager extends js.Object {
   /**
-                   * Retrieves the PrintManager object associated with the current window.
-                   * @return The PrintManager object.
-                   */
+    * Retrieves the PrintManager object associated with the current window.
+    * @return The PrintManager object.
+    */
   def getForCurrentView(): winrtDashUwpLib.WindowsNs.GraphicsNs.PrintingNs.PrintManager = js.native
   /**
-                   * Programmatically initiates the user interface for printing content.
-                   * @return A Boolean value to indicate a TRUE for success or a FALSE for a failure.
-                   */
+    * Programmatically initiates the user interface for printing content.
+    * @return A Boolean value to indicate a TRUE for success or a FALSE for a failure.
+    */
   def showPrintUIAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
 }
 

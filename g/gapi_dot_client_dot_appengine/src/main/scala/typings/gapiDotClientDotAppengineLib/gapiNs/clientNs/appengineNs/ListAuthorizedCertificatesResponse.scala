@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListAuthorizedCertificatesResponse extends js.Object {
   /** The SSL certificates the user is authorized to administer. */
   var certificates: js.UndefOr[js.Array[AuthorizedCertificate]] = js.undefined

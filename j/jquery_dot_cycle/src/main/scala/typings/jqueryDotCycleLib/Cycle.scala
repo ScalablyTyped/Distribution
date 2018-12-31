@@ -17,14 +17,12 @@ trait Cycle extends js.Object {
   def apply(options: CycleOptions): JQuery = js.native
    // the actual fn for effecting a transition
   def commonReset(currSlideElement: stdLib.Element, nextSlideElement: stdLib.Element, options: CycleOptions): scala.Unit = js.native
-   // the actual fn for effecting a transition
   def commonReset(
     currSlideElement: stdLib.Element,
     nextSlideElement: stdLib.Element,
     options: CycleOptions,
     w: scala.Boolean
   ): scala.Unit = js.native
-   // the actual fn for effecting a transition
   def commonReset(
     currSlideElement: stdLib.Element,
     nextSlideElement: stdLib.Element,
@@ -32,7 +30,6 @@ trait Cycle extends js.Object {
     w: scala.Boolean,
     h: scala.Boolean
   ): scala.Unit = js.native
-   // the actual fn for effecting a transition
   def commonReset(
     currSlideElement: stdLib.Element,
     nextSlideElement: stdLib.Element,
@@ -57,7 +54,6 @@ trait Cycle extends js.Object {
     afterCalback: js.Function,
     forwardFlag: scala.Boolean
   ): scala.Unit = js.native
-                                                                   // transition definitions - only fade is defined here, transition pack defines the rest
   def custom(
     currSlideElement: stdLib.Element,
     nextSlideElement: stdLib.Element,
@@ -68,17 +64,14 @@ trait Cycle extends js.Object {
   ): scala.Unit = js.native
                                  // reset common props before the next transition
   def hopsFromLast(options: CycleOptions): scala.Double = js.native
-                                 // reset common props before the next transition
   def hopsFromLast(options: CycleOptions, forwardFlag: scala.Boolean): scala.Double = js.native
   // expose next/prev function, caller must pass in state
   def next(): scala.Unit = js.native
-  // expose next/prev function, caller must pass in state
   def next(options: CycleOptions): scala.Unit = js.native
   def prev(): scala.Unit = js.native
   def prev(options: CycleOptions): scala.Unit = js.native
                                                                                     // invoked after transition
   def resetState(options: CycleOptions): scala.Unit = js.native
-                                                                                    // invoked after transition
   def resetState(options: CycleOptions, fx: java.lang.String): scala.Unit = js.native
   def updateActivePagerLink(pager: js.Any, currSlide: scala.Double, clsName: java.lang.String): scala.Unit = js.native
   def ver(): java.lang.String = js.native

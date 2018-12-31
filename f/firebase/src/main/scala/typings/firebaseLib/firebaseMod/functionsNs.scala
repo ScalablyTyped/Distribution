@@ -14,11 +14,9 @@ object functionsNs extends js.Object {
     def useFunctionsEmulator(url: java.lang.String): scala.Unit = js.native
   }
   
-  
   trait HttpsCallableResult extends js.Object {
     val data: js.Any
   }
-  
   
   trait HttpsError
     extends nodeLib.Error {

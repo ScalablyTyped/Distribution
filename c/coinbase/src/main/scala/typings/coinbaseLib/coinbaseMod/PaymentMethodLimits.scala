@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaymentMethodLimits extends js.Object {
   var buy: js.Array[PaymentMethodLimit]
   var deposit: js.Array[PaymentMethodLimit]

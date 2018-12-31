@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IToolTip extends IAnnotation {
   var animated: scala.Double
   var autoHide: scala.Boolean

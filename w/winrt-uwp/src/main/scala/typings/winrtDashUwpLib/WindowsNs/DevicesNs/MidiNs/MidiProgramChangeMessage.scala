@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class MidiProgramChangeMessage protected () extends js.Object {
   /**
-                   * Creates a new MidiProgramChangeMessage object.
-                   * @param channel The channel from 0-15 that this message applies to.
-                   * @param program The program to change from 0-127.
-                   */
+    * Creates a new MidiProgramChangeMessage object.
+    * @param channel The channel from 0-15 that this message applies to.
+    * @param program The program to change from 0-127.
+    */
   def this(channel: scala.Double, program: scala.Double) = this()
   /** Gets the channel from 0-15 that this message applies to. */
   var channel: scala.Double = js.native

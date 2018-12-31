@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventWrapperProps[T /* <: Event */] extends js.Object {
   var accessors: reactDashBigDashCalendarLib.Anon_Tooltip[T]
   var className: java.lang.String

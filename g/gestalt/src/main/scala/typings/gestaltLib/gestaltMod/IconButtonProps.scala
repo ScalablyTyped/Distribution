@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IconButtonProps extends js.Object {
   var accessibilityExpanded: js.UndefOr[scala.Boolean] = js.undefined
   var accessibilityHaspopup: js.UndefOr[scala.Boolean] = js.undefined

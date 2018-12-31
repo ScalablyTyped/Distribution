@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Parsed mail object.
- */
-
+  * Parsed mail object.
+  */
 trait ParsedMail extends js.Object {
   /**
   	 * An array of attachments.

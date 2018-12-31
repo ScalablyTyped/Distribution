@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RoomRole extends js.Object {
   var BOUNCER: scala.Double
   var COHOST: scala.Double

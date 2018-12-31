@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SingleQuotes extends js.Object {
   var filter: js.UndefOr[
     js.Function2[/* o */ js.Any, /* prop */ java.lang.String | js.Symbol, scala.Boolean]

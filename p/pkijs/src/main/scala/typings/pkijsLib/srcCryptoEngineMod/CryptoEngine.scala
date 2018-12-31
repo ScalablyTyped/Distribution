@@ -11,15 +11,15 @@ trait CryptoEngine
   var crypto: stdLib.SubtleCrypto = js.native
   var name: java.lang.String = js.native
   /**
-           * Convert WebCrypto keys between different export formats
-           * @param {string} inputFormat
-           * @param {string} outputFormat
-           * @param {ArrayBuffer|JsonWebKey} keyData
-           * @param {Algorithm} algorithm
-           * @param {boolean} extractable
-           * @param {Array} keyUsages
-           * @returns {Promise}
-           */
+    * Convert WebCrypto keys between different export formats
+    * @param {string} inputFormat
+    * @param {string} outputFormat
+    * @param {ArrayBuffer|JsonWebKey} keyData
+    * @param {Algorithm} algorithm
+    * @param {boolean} extractable
+    * @param {Array} keyUsages
+    * @returns {Promise}
+    */
   def convert(
     inputFormat: java.lang.String,
     outputFormat: java.lang.String,
@@ -28,16 +28,6 @@ trait CryptoEngine
     extractable: scala.Boolean,
     keyUsages: js.Array[java.lang.String]
   ): js.Thenable[stdLib.BufferSource | stdLib.JsonWebKey] = js.native
-  /**
-           * Convert WebCrypto keys between different export formats
-           * @param {string} inputFormat
-           * @param {string} outputFormat
-           * @param {ArrayBuffer|JsonWebKey} keyData
-           * @param {Algorithm} algorithm
-           * @param {boolean} extractable
-           * @param {Array} keyUsages
-           * @returns {Promise}
-           */
   def convert(
     inputFormat: java.lang.String,
     outputFormat: java.lang.String,

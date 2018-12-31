@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Func extends js.Object {
   // with any function without selector
-  def apply[TResult](func: js.Function): js.Function1[/* repeated */js.Any, rxDashLiteLib.RxNs.Observable[TResult]] = js.native
+  def apply[TResult](func: js.Function): js.Function1[/* repeated */ js.Any, rxDashLiteLib.RxNs.Observable[TResult]] = js.native
   // with single result callback without selector
   // with any callback without selector
   def apply[TResult](
@@ -17,8 +17,6 @@ trait Anon_Func extends js.Object {
       _
     ]
   ): js.Function0[rxDashLiteLib.RxNs.Observable[TResult]] = js.native
-  // with single result callback without selector
-  // with any callback without selector
   def apply[TResult](
     func: js.Function1[
       (/* callback */ js.Function) | (/* callback */ js.Function1[/* result */ TResult, _]), 
@@ -26,8 +24,7 @@ trait Anon_Func extends js.Object {
     ],
     context: js.Any
   ): js.Function0[rxDashLiteLib.RxNs.Observable[TResult]] = js.native
-  // with any function without selector
-  def apply[TResult](func: js.Function, context: js.Any): js.Function1[/* repeated */js.Any, rxDashLiteLib.RxNs.Observable[TResult]] = js.native
+  def apply[TResult](func: js.Function, context: js.Any): js.Function1[/* repeated */ js.Any, rxDashLiteLib.RxNs.Observable[TResult]] = js.native
   // with any callback with selector
   def apply[TCallbackResult, TResult](
     func: js.Function1[/* callback */ js.Function, _],
@@ -54,7 +51,7 @@ trait Anon_Func extends js.Object {
     func: js.Function,
     context: js.Any,
     selector: js.Function1[/* args */ js.Array[TCallbackResult], TResult]
-  ): js.Function1[/* repeated */js.Any, rxDashLiteLib.RxNs.Observable[TResult]] = js.native
+  ): js.Function1[/* repeated */ js.Any, rxDashLiteLib.RxNs.Observable[TResult]] = js.native
   def apply[T1, TCallbackResult, TResult](
     func: js.Function2[/* arg1 */ T1, /* callback */ js.Function, _],
     context: js.Any,

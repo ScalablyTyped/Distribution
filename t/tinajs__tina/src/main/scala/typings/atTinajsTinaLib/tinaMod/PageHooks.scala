@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PageHooks extends js.Object {
   def beforeLoad(`this`: Page): scala.Unit
   def onHide(`this`: Page): scala.Unit

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnDragEndData extends js.Object {
   var event: reactLib.Event
   var node: InternalTreeNode

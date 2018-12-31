@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IterableChangeRecord[V] extends js.Object {
   /** Current index of the item in `Iterable` or null if removed. */
   val currentIndex: scala.Double | scala.Null

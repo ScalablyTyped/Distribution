@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DurationInputObject extends MomentInputObject {
   var Q: js.UndefOr[scala.Double] = js.undefined
   var quarter: js.UndefOr[scala.Double] = js.undefined

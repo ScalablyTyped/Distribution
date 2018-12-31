@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(senchaUnderscoreTouchLib.ExtNs.chartNs.IMarkerHolder because Would inherit conflicting mutable fields List(statics, uses, mixins, config, extend, inheritableStatics, alias, platformConfig, alternateClassName, singleton, callSuper, self, getInitialConfig, callParent, destroy, callOverridden, initConfig))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(senchaUnderscoreTouchLib.ExtNs.chartNs.IMarkerHolder because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, destroy, extend, getInitialConfig, inheritableStatics, initConfig, mixins, platformConfig, self, singleton, statics, uses))*/
 trait IPieSlice
   extends senchaUnderscoreTouchLib.ExtNs.drawNs.spriteNs.ISector {
   /** [Method]

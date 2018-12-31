@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait defaultOptions extends js.Object {
   var hashMethod: java.lang.String
   var keyLength: scala.Double

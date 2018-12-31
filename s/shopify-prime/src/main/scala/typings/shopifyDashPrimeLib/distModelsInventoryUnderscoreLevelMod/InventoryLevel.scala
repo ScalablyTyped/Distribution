@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InventoryLevel
   extends shopifyDashPrimeLib.distModelsBaseMod.ShopifyObject {
   var available: js.UndefOr[scala.Double] = js.undefined

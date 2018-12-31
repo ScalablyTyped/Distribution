@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RedisOptions
   extends redisLib.redisMod.ClientOpts {
   var client: js.UndefOr[js.Any] = js.undefined

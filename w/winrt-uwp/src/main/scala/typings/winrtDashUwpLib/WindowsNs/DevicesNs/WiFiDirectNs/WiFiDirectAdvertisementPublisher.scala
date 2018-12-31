@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** An object to publish Wi-Fi Direct advertisements. */
 @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectAdvertisementPublisher")
 @js.native
+/** Creates a new WiFiDirectAdvertisementPublisher object. */
 class WiFiDirectAdvertisementPublisher () extends js.Object {
   /** Gets the Wi-Fi Direct advertisement to publish. */
   var advertisement: WiFiDirectAdvertisement = js.native

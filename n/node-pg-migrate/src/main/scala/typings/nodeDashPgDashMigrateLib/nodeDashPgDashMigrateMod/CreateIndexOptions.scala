@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateIndexOptions extends js.Object {
   var concurrently: js.UndefOr[scala.Boolean] = js.undefined
   var method: js.UndefOr[

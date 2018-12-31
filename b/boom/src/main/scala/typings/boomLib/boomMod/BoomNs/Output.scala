@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Output extends js.Object {
   /**
-           * headers - an object containing any HTTP headers where each key is a header name and
-           * value is the header content. (Limited value type to string
-           * https://github.com/hapijs/boom/issues/151 )
-           */
+    * headers - an object containing any HTTP headers where each key is a header name and
+    * value is the header content. (Limited value type to string
+    * https://github.com/hapijs/boom/issues/151 )
+    */
   var headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   /**
-           * payload - the formatted object used as the response payload (stringified).
-           * Can be directly manipulated but any changes will be lost if reformat() is called.
-           * Any content allowed and by default includes the following content:
-           */
+    * payload - the formatted object used as the response payload (stringified).
+    * Can be directly manipulated but any changes will be lost if reformat() is called.
+    * Any content allowed and by default includes the following content:
+    */
   var payload: Payload
   /** statusCode - the HTTP status code (typically 4xx or 5xx). */
   var statusCode: scala.Double

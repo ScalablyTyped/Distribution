@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OktaVueOptions extends js.Object {
   var client_id: java.lang.String
   var issuer: java.lang.String

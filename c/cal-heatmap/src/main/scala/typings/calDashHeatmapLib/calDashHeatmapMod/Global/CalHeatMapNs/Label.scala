@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Position and alignment of the domain label. */
-
 trait Label extends js.Object {
   /**
   			 * Horizontal align of the domain. Default: "center"

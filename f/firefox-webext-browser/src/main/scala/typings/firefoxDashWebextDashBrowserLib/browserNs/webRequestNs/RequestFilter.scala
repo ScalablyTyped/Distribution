@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An object describing filters to apply to webRequest events. */
-
 trait RequestFilter extends js.Object {
   var tabId: js.UndefOr[scala.Double] = js.undefined
   /** A list of request types. Requests that cannot match any of the types will be filtered out. */

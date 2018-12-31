@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnEnd extends js.Object {
   var onEnd: js.UndefOr[
     js.Function2[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MDCSnackbarAdapter extends js.Object {
   def addClass(className: java.lang.String): scala.Unit
   def deregisterActionClickHandler(handler: stdLib.EventListener): scala.Unit

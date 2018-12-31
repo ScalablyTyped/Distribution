@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Specifies a bounding rectangle. */
-
 trait BitmapBounds extends js.Object {
   /** The Height, in pixels, of the bounding box */
   var height: scala.Double

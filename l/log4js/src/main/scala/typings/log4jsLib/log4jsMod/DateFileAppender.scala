@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DateFileAppender extends js.Object {
   // include the pattern in the name of the current log file as well as the backups.(default false)
   var alwaysIncludePattern: js.UndefOr[scala.Boolean] = js.undefined

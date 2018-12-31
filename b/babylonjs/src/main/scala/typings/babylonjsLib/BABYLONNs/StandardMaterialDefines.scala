@@ -50,14 +50,14 @@ class StandardMaterialDefines ()
   var INSTANCES: scala.Boolean = js.native
   var INVERTCUBICMAP: scala.Boolean = js.native
   /**
-           * If the reflection texture on this material is in linear color space
-           * @hidden
-           */
+    * If the reflection texture on this material is in linear color space
+    * @hidden
+    */
   var IS_REFLECTION_LINEAR: scala.Boolean = js.native
   /**
-           * If the refraction texture on this material is in linear color space
-           * @hidden
-           */
+    * If the refraction texture on this material is in linear color space
+    * @hidden
+    */
   var IS_REFRACTION_LINEAR: scala.Boolean = js.native
   var LIGHTMAP: scala.Boolean = js.native
   var LIGHTMAPDIRECTUV: scala.Double = js.native

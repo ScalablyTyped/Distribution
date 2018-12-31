@@ -8,9 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("tinymce", "ui")
 @js.native
 object uiNs extends js.Object {
-  
   trait Collection extends js.Object
-  
   
   trait Container extends js.Object {
     def add(items: js.Any): Collection
@@ -28,11 +26,9 @@ object uiNs extends js.Object {
     def tooltip(): Control = js.native
   }
   
-  
   trait ControlSettings extends js.Object {
     var menu: Menu
   }
-  
   
   trait Factory extends js.Object {
     def create(settings: js.Any): Control
@@ -47,7 +43,6 @@ object uiNs extends js.Object {
   trait Menu
     extends FloatPanel
        with Container
-  
   
   trait Moveable extends js.Object {
     def moveRel(elm: stdLib.Node, rel: java.lang.String): Control

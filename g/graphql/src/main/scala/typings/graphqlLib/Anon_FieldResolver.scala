@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FieldResolver extends js.Object {
   var contextValue: js.UndefOr[js.Any] = js.undefined
   var document: graphqlLib.languageAstMod.DocumentNode

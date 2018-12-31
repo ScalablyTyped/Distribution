@@ -40,25 +40,25 @@ object srcCoreUnderscorePrivateUnderscoreExportModMembers extends js.Object {
     changeDetectionStrategy: atAngularCoreLib.srcChangeUnderscoreDetectionConstantsMod.ChangeDetectionStrategy
   ): scala.Boolean = js.native
   def ɵisListLikeIterable(obj: js.Any): scala.Boolean = js.native
-  def ɵisObservable(obj: js.Any): /* is Observable */scala.Boolean = js.native
-  def ɵisObservable(obj: rxjsLib.rxjsMod.Observable[_]): /* is Observable */scala.Boolean = js.native
-  def ɵisPromise(obj: js.Any): /* is Promise */scala.Boolean = js.native
+  def ɵisObservable(obj: js.Any): /* is rxjs.rxjs.Observable<any> */ scala.Boolean = js.native
+  def ɵisObservable(obj: rxjsLib.rxjsMod.Observable[_]): /* is rxjs.rxjs.Observable<any> */ scala.Boolean = js.native
+  def ɵisPromise(obj: js.Any): /* is std.Promise<any> */ scala.Boolean = js.native
   def ɵlooseIdentical(a: js.Any, b: js.Any): scala.Boolean = js.native
   def ɵmakeDecorator[T](name: java.lang.String): atAngularCoreLib.Anon_Args = js.native
-  def ɵmakeDecorator[T](name: java.lang.String, props: js.Function1[/* repeated */js.Any, _]): atAngularCoreLib.Anon_Args = js.native
-  def ɵmakeDecorator[T](name: java.lang.String, props: js.Function1[/* repeated */js.Any, _], parentClass: js.Any): atAngularCoreLib.Anon_Args = js.native
+  def ɵmakeDecorator[T](name: java.lang.String, props: js.Function1[/* repeated */ js.Any, _]): atAngularCoreLib.Anon_Args = js.native
+  def ɵmakeDecorator[T](name: java.lang.String, props: js.Function1[/* repeated */ js.Any, _], parentClass: js.Any): atAngularCoreLib.Anon_Args = js.native
   def ɵmakeDecorator[T](
     name: java.lang.String,
-    props: js.Function1[/* repeated */js.Any, _],
+    props: js.Function1[/* repeated */ js.Any, _],
     parentClass: js.Any,
     additionalProcessing: js.Function1[/* type */ atAngularCoreLib.srcTypeMod.Type[T], scala.Unit]
   ): atAngularCoreLib.Anon_Args = js.native
   def ɵmakeDecorator[T](
     name: java.lang.String,
-    props: js.Function1[/* repeated */js.Any, _],
+    props: js.Function1[/* repeated */ js.Any, _],
     parentClass: js.Any,
     additionalProcessing: js.Function1[/* type */ atAngularCoreLib.srcTypeMod.Type[T], scala.Unit],
-    typeFn: js.Function2[/* type */ atAngularCoreLib.srcTypeMod.Type[T], /* repeated */js.Any, scala.Unit]
+    typeFn: js.Function2[/* type */ atAngularCoreLib.srcTypeMod.Type[T], /* repeated */ js.Any, scala.Unit]
   ): atAngularCoreLib.Anon_Args = js.native
   def ɵoverrideComponentView(
     comp: atAngularCoreLib.srcTypeMod.Type[_],

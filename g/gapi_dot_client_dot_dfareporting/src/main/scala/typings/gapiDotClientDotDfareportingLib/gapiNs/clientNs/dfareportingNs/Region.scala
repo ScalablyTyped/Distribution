@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Region extends js.Object {
   /** Country code of the country to which this region belongs. */
   var countryCode: js.UndefOr[java.lang.String] = js.undefined

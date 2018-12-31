@@ -6,19 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * boom provides a set of utilities for returning HTTP errors. Each utility returns a Boom error response object (instance of Error) which includes the following properties:
- * @see {@link https://github.com/hapijs/boom#boom}
- */
+  * boom provides a set of utilities for returning HTTP errors. Each utility returns a Boom error response object (instance of Error) which includes the following properties:
+  * @see {@link https://github.com/hapijs/boom#boom}
+  */
 @JSImport("boom", JSImport.Namespace)
 @js.native
+/** Creates a new Boom object using the provided message and then calling boomify() to decorate the error with the Boom properties. */
 class namespaced[Data] () extends Boom[Data] {
-  /** Creates a new Boom object using the provided message and then calling boomify() to decorate the error with the Boom properties. */
   def this(message: java.lang.String) = this()
-  /** Creates a new Boom object using the provided message and then calling boomify() to decorate the error with the Boom properties. */
   def this(message: stdLib.Error) = this()
-  /** Creates a new Boom object using the provided message and then calling boomify() to decorate the error with the Boom properties. */
   def this(message: java.lang.String, options: boomLib.boomMod.BoomNs.Options[Data]) = this()
-  /** Creates a new Boom object using the provided message and then calling boomify() to decorate the error with the Boom properties. */
   def this(message: stdLib.Error, options: boomLib.boomMod.BoomNs.Options[Data]) = this()
   /** https://github.com/hapijs/boom#createstatuscode-message-data and https://github.com/hapijs/boom/blob/v4.3.0/lib/index.js#L99 */
   /* CompleteClass */

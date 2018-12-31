@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SchedulerEventData extends js.Object {
   var description: js.UndefOr[java.lang.String] = js.undefined
   var end: js.UndefOr[stdLib.Date] = js.undefined

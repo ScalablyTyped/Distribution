@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HttpsError
   extends nodeLib.Error {
   val code: ErrorStatus

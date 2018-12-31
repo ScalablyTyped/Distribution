@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StartEvent extends CatchEvent {
   /**
-           * @default true
-           */
+    * @default true
+    */
   var isInterrupting: scala.Boolean
 }
 

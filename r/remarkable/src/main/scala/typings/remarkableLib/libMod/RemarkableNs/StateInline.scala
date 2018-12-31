@@ -5,24 +5,23 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StateInline extends js.Object {
   var env: Env
   /** Set true when seek link label */
   var isInLabel: scala.Boolean
   /**
-         * Track unpaired `[` for link labels.
-         */
+    * Track unpaired `[` for link labels.
+    */
   var labelUnmatchedScopes: scala.Double
   var level: scala.Double
   /**
-         * Temporary storage for link url.
-         */
+    * Temporary storage for link url.
+    */
   var linkContent: java.lang.String
   /**
-         * Increment for each nesting link.
-         * Used to prevent nesting in definitions.
-         */
+    * Increment for each nesting link.
+    * Used to prevent nesting in definitions.
+    */
   var linkLevel: scala.Double
   var parser: remarkableLib.libMod.ParserInline
   var pending: java.lang.String

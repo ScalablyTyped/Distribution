@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class MessageRecipientMode protected () extends js.Object {
   /**
-               * Creates a new MessageRecipientMode instance.
-               * @param {number} mode   One of the costants contained in this class, describing the recipient mode.
-               * @param {any}    target The moderator/administrator message recipient/s, according to the selected recipient mode.
-               */
+    * Creates a new MessageRecipientMode instance.
+    * @param {number} mode   One of the costants contained in this class, describing the recipient mode.
+    * @param {any}    target The moderator/administrator message recipient/s, according to the selected recipient mode.
+    */
   def this(mode: scala.Double, target: js.Any) = this()
   /** @type {number} Returns the selected recipient mode. */
   var mode: scala.Double = js.native

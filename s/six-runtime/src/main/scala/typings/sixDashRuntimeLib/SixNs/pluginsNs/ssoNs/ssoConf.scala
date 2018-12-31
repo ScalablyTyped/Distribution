@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ssoConf extends js.Object {
   var enableCache: scala.Boolean
   var hasLoginCacheMaxAge: scala.Double

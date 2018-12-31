@@ -15,34 +15,29 @@ trait RRuleSet
   var _tzid: js.UndefOr[js.Any] = js.native
   var rdatesToString: js.Any = js.native
   /**
-       * Adds an EXDATE to the set
-       *
-       * @param {Date}
-       */
+    * Adds an EXDATE to the set
+    *
+    * @param {Date}
+    */
   def exdate(date: stdLib.Date): scala.Unit = js.native
   /**
-       * Adds an EXRULE to the set
-       *
-       * @param {RRule}
-       */
+    * Adds an EXRULE to the set
+    *
+    * @param {RRule}
+    */
   def exrule(rrule: rruleLib.distEsmRruleMod.default): scala.Unit = js.native
   /**
-       * Adds an RDate to the set
-       *
-       * @param {Date}
-       */
+    * Adds an RDate to the set
+    *
+    * @param {Date}
+    */
   def rdate(date: stdLib.Date): scala.Unit = js.native
-  /**
-       * Adds an RRule to the set
-       *
-       * @param {RRule}
-       */
   def rrule(rrule: java.lang.String): scala.Unit = js.native
   /**
-       * Adds an RRule to the set
-       *
-       * @param {RRule}
-       */
+    * Adds an RRule to the set
+    *
+    * @param {RRule}
+    */
   def rrule(rrule: rruleLib.distEsmRruleMod.default): scala.Unit = js.native
   def tzid(): js.UndefOr[java.lang.String] = js.native
   def tzid(tzid: java.lang.String): js.UndefOr[java.lang.String] = js.native

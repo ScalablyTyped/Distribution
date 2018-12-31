@@ -26,12 +26,6 @@ org.scalablytyped.runtime.Instantiable0[Runtime] {
   		 * @param authToken - Authorization token
   		 */
   def connect(server: java.lang.String): scala.Unit = js.native
-  /**
-  		 * Connect the runtime to the server. If the runtime is already connected an exception is thrown
-  		 *
-  		 * @param srv - Vortex Web server WebSocket URL
-  		 * @param authToken - Authorization token
-  		 */
   def connect(server: java.lang.String, authToken: java.lang.String): scala.Unit = js.native
   /**
   		 * Disconnects, withouth closing, a `Runtime`. Notice that upon re-connection all existing

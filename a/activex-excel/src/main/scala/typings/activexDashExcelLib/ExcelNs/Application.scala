@@ -232,12 +232,12 @@ class Application protected () extends js.Object {
   var StandardFontSize: scala.Double = js.native
   val StartupPath: java.lang.String = js.native
   /**
-           * Get or set the text of the status bar
-           *
-           * Returns `false` if Microsoft Excel has control of the status bar.
-           *
-           * To restore the default status bar text, set the property to False ; this works even if the status bar is hidden.
-           */
+    * Get or set the text of the status bar
+    *
+    * Returns `false` if Microsoft Excel has control of the status bar.
+    *
+    * To restore the default status bar text, set the property to False ; this works even if the status bar is hidden.
+    */
   var StatusBar: java.lang.String | activexDashExcelLib.activexDashExcelLibNumbers.`false` = js.native
   val TemplatesPath: java.lang.String = js.native
   @JSName("ThisCell")
@@ -460,13 +460,9 @@ class Application protected () extends js.Object {
   def GetCustomListNum(ListArray: activexDashInteropLib.SafeArray[java.lang.String]): scala.Double = js.native
   /** @param ButtonText Macintosh only */
   def GetOpenFilename(): java.lang.String = js.native
-  /** @param ButtonText Macintosh only */
   def GetOpenFilename(FileFilter: java.lang.String): java.lang.String = js.native
-  /** @param ButtonText Macintosh only */
   def GetOpenFilename(FileFilter: java.lang.String, FilterIndex: scala.Double): java.lang.String = js.native
-  /** @param ButtonText Macintosh only */
   def GetOpenFilename(FileFilter: java.lang.String, FilterIndex: scala.Double, Title: java.lang.String): java.lang.String = js.native
-  /** @param ButtonText Macintosh only */
   def GetOpenFilename(
     FileFilter: java.lang.String,
     FilterIndex: scala.Double,
@@ -482,7 +478,6 @@ class Application protected () extends js.Object {
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
   ): activexDashInteropLib.SafeArray[java.lang.String] = js.native
-  /** @param ButtonText Macintosh only */
   def GetOpenFilename(
     FileFilter: java.lang.String,
     FilterIndex: scala.Double,
@@ -490,7 +485,6 @@ class Application protected () extends js.Object {
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
   ): activexDashInteropLib.SafeArray[java.lang.String] = js.native
-  /** @param ButtonText Macintosh only */
   def GetOpenFilename(
     FileFilter: java.lang.String,
     FilterIndex: scala.Null,
@@ -498,7 +492,6 @@ class Application protected () extends js.Object {
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
   ): activexDashInteropLib.SafeArray[java.lang.String] = js.native
-  /** @param ButtonText Macintosh only */
   def GetOpenFilename(
     FileFilter: java.lang.String,
     FilterIndex: scala.Null,
@@ -506,7 +499,6 @@ class Application protected () extends js.Object {
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
   ): activexDashInteropLib.SafeArray[java.lang.String] = js.native
-  /** @param ButtonText Macintosh only */
   def GetOpenFilename(
     FileFilter: scala.Null,
     FilterIndex: scala.Double,
@@ -514,7 +506,6 @@ class Application protected () extends js.Object {
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
   ): activexDashInteropLib.SafeArray[java.lang.String] = js.native
-  /** @param ButtonText Macintosh only */
   def GetOpenFilename(
     FileFilter: scala.Null,
     FilterIndex: scala.Double,
@@ -522,7 +513,6 @@ class Application protected () extends js.Object {
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
   ): activexDashInteropLib.SafeArray[java.lang.String] = js.native
-  /** @param ButtonText Macintosh only */
   def GetOpenFilename(
     FileFilter: scala.Null,
     FilterIndex: scala.Null,
@@ -530,7 +520,6 @@ class Application protected () extends js.Object {
     ButtonText: scala.Null,
     MultiSelect: activexDashExcelLib.activexDashExcelLibNumbers.`true`
   ): activexDashInteropLib.SafeArray[java.lang.String] = js.native
-  /** @param ButtonText Macintosh only */
   def GetOpenFilename(
     FileFilter: scala.Null,
     FilterIndex: scala.Null,
@@ -542,13 +531,9 @@ class Application protected () extends js.Object {
   def GetPhonetic(Text: java.lang.String): java.lang.String = js.native
   /** @param ButtonText Macintosh only */
   def GetSaveAsFilename(): java.lang.String = js.native
-  /** @param ButtonText Macintosh only */
   def GetSaveAsFilename(InitialFilename: java.lang.String): java.lang.String = js.native
-  /** @param ButtonText Macintosh only */
   def GetSaveAsFilename(InitialFilename: java.lang.String, FileFilter: java.lang.String): java.lang.String = js.native
-  /** @param ButtonText Macintosh only */
   def GetSaveAsFilename(InitialFilename: java.lang.String, FileFilter: java.lang.String, FilterIndex: scala.Double): java.lang.String = js.native
-  /** @param ButtonText Macintosh only */
   def GetSaveAsFilename(
     InitialFilename: java.lang.String,
     FileFilter: java.lang.String,
@@ -713,7 +698,6 @@ class Application protected () extends js.Object {
   def Save(Filename: js.Any): scala.Unit = js.native
   /** @deprecated */
   def SaveWorkspace(): scala.Unit = js.native
-  /** @deprecated */
   def SaveWorkspace(Filename: js.Any): scala.Unit = js.native
   def SendKeys(Keys: java.lang.String): scala.Unit = js.native
   def SendKeys(Keys: java.lang.String, Wait: scala.Boolean): scala.Unit = js.native
@@ -774,12 +758,9 @@ class Application protected () extends js.Object {
   def UsedObjects(Index: java.lang.String): js.Any = js.native
   def UsedObjects(Index: scala.Double): js.Any = js.native
   /**
-           * @param Volatile [Volatile=true]
-           */
+    * @param Volatile [Volatile=true]
+    */
   def Volatile(): scala.Unit = js.native
-  /**
-           * @param Volatile [Volatile=true]
-           */
   def Volatile(Volatile: scala.Boolean): scala.Unit = js.native
   def Wait(Time: js.Any): scala.Boolean = js.native
   def Watches(Index: java.lang.String): Watch = js.native

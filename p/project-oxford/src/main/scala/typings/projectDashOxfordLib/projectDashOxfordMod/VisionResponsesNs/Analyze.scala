@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Analyze extends js.Object {
   var adult: projectDashOxfordLib.Anon_IsAdultContent
   var categories: js.Array[projectDashOxfordLib.Anon_Name]

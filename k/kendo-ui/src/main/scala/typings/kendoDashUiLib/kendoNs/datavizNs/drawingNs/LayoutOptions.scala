@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LayoutOptions extends js.Object {
   var alignContent: js.UndefOr[java.lang.String] = js.undefined
   var alignItems: js.UndefOr[java.lang.String] = js.undefined

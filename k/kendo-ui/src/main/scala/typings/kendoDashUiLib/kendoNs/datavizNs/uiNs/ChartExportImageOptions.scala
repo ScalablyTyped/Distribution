@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartExportImageOptions extends js.Object {
   var cors: js.UndefOr[java.lang.String] = js.undefined
   var height: js.UndefOr[java.lang.String] = js.undefined

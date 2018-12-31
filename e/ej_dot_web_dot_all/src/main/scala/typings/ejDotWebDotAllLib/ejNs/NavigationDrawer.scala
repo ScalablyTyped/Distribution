@@ -16,20 +16,20 @@ class NavigationDrawer protected () extends Widget {
   @JSName("model")
   var model_NavigationDrawer: ejDotWebDotAllLib.ejNs.NavigationDrawerNs.Model = js.native
   /** To close the navigation drawer control
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def close(): scala.Unit = js.native
   /** To load AJAX content into NavigationDrawer container.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def loadContent(): scala.Unit = js.native
   /** To open the navigation drawer control
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def open(): scala.Unit = js.native
   /** To Toggle the navigation drawer control
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def toggle(): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FontObject extends js.Object {
   var fontFamily: js.UndefOr[java.lang.String] = js.undefined
   var fontSize: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined

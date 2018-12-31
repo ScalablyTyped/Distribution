@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReleaseEnvironmentCompletedEvent extends js.Object {
   var createdByName: java.lang.String
   var definitionId: scala.Double

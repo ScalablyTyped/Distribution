@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * 用于检测和识别图片中的植物信息
 		 */
-
 trait plantClassifyOptions
   extends baiduDashAppLib.swanNs.BaseOptions[js.Any, js.Any] {
   var image: java.lang.String

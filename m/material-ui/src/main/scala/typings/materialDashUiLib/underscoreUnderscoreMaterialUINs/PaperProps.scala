@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveMultipleInheritance: Dropped parents List(reactLib.reactMod.ReactNs.Props because Would inherit conflicting mutable fields List(children))*/
-
 trait PaperProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[js.Object] {
   var circle: js.UndefOr[scala.Boolean] = js.undefined

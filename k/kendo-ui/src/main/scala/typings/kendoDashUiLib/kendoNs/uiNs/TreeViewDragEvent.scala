@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TreeViewDragEvent extends TreeViewEvent {
   var dropTarget: js.UndefOr[stdLib.Element] = js.undefined
   var pageX: js.UndefOr[scala.Double] = js.undefined

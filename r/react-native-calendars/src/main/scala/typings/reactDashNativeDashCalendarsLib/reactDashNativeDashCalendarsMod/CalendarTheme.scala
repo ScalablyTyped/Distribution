@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CalendarTheme extends js.Object {
   var arrowColor: js.UndefOr[java.lang.String] = js.undefined
   var backgroundColor: js.UndefOr[java.lang.String] = js.undefined

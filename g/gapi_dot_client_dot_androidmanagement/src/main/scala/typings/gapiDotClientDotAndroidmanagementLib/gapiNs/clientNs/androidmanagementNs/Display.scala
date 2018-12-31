@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Display extends js.Object {
   /** Display density expressed as dots-per-inch. */
   var density: js.UndefOr[scala.Double] = js.undefined

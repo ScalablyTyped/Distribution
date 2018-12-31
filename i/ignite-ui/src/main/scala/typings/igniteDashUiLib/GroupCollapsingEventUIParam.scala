@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GroupCollapsingEventUIParam extends js.Object {
   /**
   	 * Gets the column object for the current group that is collapsing.

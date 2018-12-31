@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextStyle extends Style {
   var color: js.UndefOr[Color] = js.undefined
   var fontFamily: js.UndefOr[java.lang.String] = js.undefined

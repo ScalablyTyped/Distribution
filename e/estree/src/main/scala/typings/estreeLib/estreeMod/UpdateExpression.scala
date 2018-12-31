@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateExpression extends BaseNode {
   var argument: estreeLib.Expression
   var operator: UpdateOperator

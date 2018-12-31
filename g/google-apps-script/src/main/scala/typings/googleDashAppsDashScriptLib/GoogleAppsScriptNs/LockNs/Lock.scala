@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Lock extends js.Object {
   def hasLock(): scala.Boolean
   def releaseLock(): scala.Unit

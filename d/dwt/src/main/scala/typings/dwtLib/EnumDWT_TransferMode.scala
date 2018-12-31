@@ -23,8 +23,8 @@ object EnumDWT_TransferMode extends js.Object {
     extends dwtLib.EnumDWT_TransferMode
   
   /** Native transfers require the data to be transferred to a single large block of RAM. Therefore,
-       *  they always face the risk of having an inadequate amount of RAM available to perform the transfer successfully.
-       */
+    *  they always face the risk of having an inadequate amount of RAM available to perform the transfer successfully.
+    */
   @js.native
   sealed trait TWSX_NATIVE
     extends dwtLib.EnumDWT_TransferMode

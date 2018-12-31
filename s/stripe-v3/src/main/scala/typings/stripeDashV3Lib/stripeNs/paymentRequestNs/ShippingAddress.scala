@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShippingAddress extends js.Object {
   var addressLine: js.Array[java.lang.String]
   var city: java.lang.String

@@ -15,8 +15,8 @@ class Quill protected () extends EventEmitter {
   var clipboard: ClipboardStatic = js.native
   var keyboard: KeyboardStatic = js.native
   /**
-       * @private Internal API
-       */
+    * @private Internal API
+    */
   var root: stdLib.HTMLDivElement = js.native
   var scroll: parchmentLib.distSrcBlotAbstractBlotMod.Blot = js.native
   def addContainer(classNameOrDomNode: java.lang.String): js.Any = js.native
@@ -101,25 +101,22 @@ class Quill protected () extends EventEmitter {
   def insertText(index: scala.Double, text: java.lang.String, formats: StringMap, source: Sources): js.Any = js.native
   def insertText(index: scala.Double, text: java.lang.String, source: Sources): js.Any = js.native
   /**
-       * @deprecated Remove in 2.0. Use clipboard.dangerouslyPasteHTML(html: string, source: Sources): void;
-       */
+    * @deprecated Remove in 2.0. Use clipboard.dangerouslyPasteHTML(html: string, source: Sources): void;
+    */
   def pasteHTML(html: java.lang.String): java.lang.String = js.native
-  /**
-       * @deprecated Remove in 2.0. Use clipboard.dangerouslyPasteHTML(html: string, source: Sources): void;
-       */
   def pasteHTML(html: java.lang.String, source: Sources): java.lang.String = js.native
   /**
-       * @deprecated Remove in 2.0. Use clipboard.dangerouslyPasteHTML(index: number, html: string, source: Sources)
-       */
+    * @deprecated Remove in 2.0. Use clipboard.dangerouslyPasteHTML(index: number, html: string, source: Sources)
+    */
   def pasteHTML(index: scala.Double, html: java.lang.String): java.lang.String = js.native
-  /**
-       * @deprecated Remove in 2.0. Use clipboard.dangerouslyPasteHTML(index: number, html: string, source: Sources)
-       */
   def pasteHTML(index: scala.Double, html: java.lang.String, source: Sources): java.lang.String = js.native
   def removeFormat(index: scala.Double, length: scala.Double): js.Any = js.native
   def removeFormat(index: scala.Double, length: scala.Double, source: Sources): js.Any = js.native
-  def setContents(delta: js.Any): js.Any = js.native
-  def setContents(delta: js.Any, source: Sources): js.Any = js.native
+  def setContents(delta: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Delta */ js.Any): js.Any = js.native
+  def setContents(
+    delta: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Delta */ js.Any,
+    source: Sources
+  ): js.Any = js.native
   def setSelection(index: scala.Double, length: scala.Double): scala.Unit = js.native
   def setSelection(index: scala.Double, length: scala.Double, source: Sources): scala.Unit = js.native
   def setSelection(range: RangeStatic): scala.Unit = js.native
@@ -128,8 +125,11 @@ class Quill protected () extends EventEmitter {
   def setText(text: java.lang.String, source: Sources): js.Any = js.native
   def update(): scala.Unit = js.native
   def update(source: Sources): scala.Unit = js.native
-  def updateContents(delta: js.Any): js.Any = js.native
-  def updateContents(delta: js.Any, source: Sources): js.Any = js.native
+  def updateContents(delta: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Delta */ js.Any): js.Any = js.native
+  def updateContents(
+    delta: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Delta */ js.Any,
+    source: Sources
+  ): js.Any = js.native
 }
 
 @JSImport("quill", "Quill")
@@ -137,7 +137,6 @@ class Quill protected () extends EventEmitter {
 object Quill extends js.Object {
   // static methods: debug, import, register, find
   def debug(level: java.lang.String): scala.Unit = js.native
-  // static methods: debug, import, register, find
   def debug(level: scala.Boolean): scala.Unit = js.native
   def find(domNode: stdLib.Node): quillLib.quillMod.Quill | js.Any = js.native
   def find(domNode: stdLib.Node, bubble: scala.Boolean): quillLib.quillMod.Quill | js.Any = js.native

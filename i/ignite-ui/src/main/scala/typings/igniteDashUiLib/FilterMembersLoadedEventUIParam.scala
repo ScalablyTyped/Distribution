@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilterMembersLoadedEventUIParam extends js.Object {
   /**
   	 * A collection with the newly loaded filter members.

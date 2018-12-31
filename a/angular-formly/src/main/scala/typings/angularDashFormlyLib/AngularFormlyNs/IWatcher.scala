@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation._
 	 *
 	 * see http://docs.angular-formly.com/docs/field-configuration-object#watcher-objectarray-of-watches
 	 */
-
 trait IWatcher extends js.Object {
   var deep: js.UndefOr[scala.Boolean] = js.undefined
    //Defaults to false

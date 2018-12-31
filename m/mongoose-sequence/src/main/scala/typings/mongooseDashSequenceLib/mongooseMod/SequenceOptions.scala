@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SequenceOptions extends js.Object {
               // If true, the counter will not be incremented on saving a new document. Default to false
   var collection_name: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilledTextFieldProps extends BaseTextFieldProps {
   var InputProps: js.UndefOr[
     stdLib.Partial[atMaterialDashUiCoreLib.filledinputFilledInputMod.FilledInputProps]

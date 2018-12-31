@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KnockoutBindingHandlers
   extends /* bindingHandler */ org.scalablytyped.runtime.StringDictionary[KnockoutBindingHandler] {
   var attr: KnockoutBindingHandler

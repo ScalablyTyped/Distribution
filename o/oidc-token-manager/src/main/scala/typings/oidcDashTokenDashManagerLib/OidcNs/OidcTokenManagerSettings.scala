@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OidcTokenManagerSettings extends js.Object {
   var authority: js.UndefOr[java.lang.String] = js.undefined
   var authorization_endpoint: js.UndefOr[java.lang.String] = js.undefined

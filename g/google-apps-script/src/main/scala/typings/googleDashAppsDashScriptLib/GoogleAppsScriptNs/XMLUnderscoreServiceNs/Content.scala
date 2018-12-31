@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Content extends js.Object {
   def asCdata(): Cdata
   def asComment(): Comment

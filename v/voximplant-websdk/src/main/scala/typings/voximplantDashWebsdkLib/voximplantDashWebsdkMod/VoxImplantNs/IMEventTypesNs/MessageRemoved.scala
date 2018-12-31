@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when instant message was removed by user
 		*/
-
 trait MessageRemoved extends js.Object {
   /**
   			*	User id (of the user who sent the message)

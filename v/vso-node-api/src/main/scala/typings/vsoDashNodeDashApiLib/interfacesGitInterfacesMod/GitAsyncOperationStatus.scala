@@ -12,36 +12,36 @@ sealed trait GitAsyncOperationStatus extends js.Object
 @js.native
 object GitAsyncOperationStatus extends js.Object {
   /**
-       * The operation has been abandoned.
-       */
+    * The operation has been abandoned.
+    */
   @js.native
   sealed trait Abandoned
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitAsyncOperationStatus
   
   /**
-       * The operation has completed.
-       */
+    * The operation has completed.
+    */
   @js.native
   sealed trait Completed
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitAsyncOperationStatus
   
   /**
-       * The operation has failed. Check for an error message.
-       */
+    * The operation has failed. Check for an error message.
+    */
   @js.native
   sealed trait Failed
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitAsyncOperationStatus
   
   /**
-       * The operation is currently in progress.
-       */
+    * The operation is currently in progress.
+    */
   @js.native
   sealed trait InProgress
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitAsyncOperationStatus
   
   /**
-       * The operation is waiting in a queue and has not yet started.
-       */
+    * The operation is waiting in a queue and has not yet started.
+    */
   @js.native
   sealed trait Queued
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitAsyncOperationStatus

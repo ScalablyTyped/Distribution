@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICredentialPickerResults extends js.Object {
   var credential: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer
   var credentialDomainName: java.lang.String

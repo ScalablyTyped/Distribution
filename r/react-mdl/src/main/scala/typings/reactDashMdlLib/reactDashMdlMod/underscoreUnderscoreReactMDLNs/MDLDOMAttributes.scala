@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // DOMAttributes (minus 'onClick', 'onChange')
-
 trait MDLDOMAttributes[T] extends js.Object {
   // DOMAttributes (minus onClick)
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined

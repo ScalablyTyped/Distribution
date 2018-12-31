@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMapElements extends js.Object {
   /** Admin1, state, province, etc. */
   var adminDistrict: js.UndefOr[IBorderedMapElementStyle] = js.undefined

@@ -14,15 +14,13 @@ object LNs extends js.Object {
     //////////////////////////////////////////////////////////////////////
     //////////////////////////////// CONTROLS ////////////////////////////
     //////////////////////////////////////////////////////////////////////
-    
     trait ControlOptions
       extends leafletLib.leafletMod.ControlOptions {
       var sanitizer: js.UndefOr[js.Function1[/* template */ java.lang.String, java.lang.String]] = js.undefined
     }
     
     /* RemoveDifficultInheritance: 
-    - Dropped any */ 
-    trait FeatureLayer extends js.Object {
+    - Dropped any */ trait FeatureLayer extends js.Object {
       /**
       			 * Gets the filter function for this data layer.
       			 */
@@ -53,12 +51,10 @@ object LNs extends js.Object {
       def setGeoJSON(geojson: js.Any): FeatureLayer
     }
     
-    
     trait FeatureLayerOptions extends js.Object {
       var filter: js.UndefOr[FilterFunction] = js.undefined
       var sanitizer: js.UndefOr[js.Function1[/* template */ java.lang.String, java.lang.String]] = js.undefined
     }
-    
     
     trait Geocoder extends js.Object {
       def getURL(): java.lang.String
@@ -75,7 +71,6 @@ object LNs extends js.Object {
       def setTileJSON(tilejson: js.Any): js.Any
       def setURL(url: java.lang.String): js.Any
     }
-    
     
     trait GeocoderControl extends js.Object {
       def getURL(): java.lang.String
@@ -98,15 +93,13 @@ object LNs extends js.Object {
       def setURL(url: java.lang.String): js.Any
     }
     
-    
     trait GeocoderControlOptions
       extends leafletLib.leafletMod.ControlOptions {
       var keepOpen: js.UndefOr[scala.Boolean] = js.undefined
     }
     
     /* RemoveDifficultInheritance: 
-    - Dropped any */ 
-    trait GridControl extends js.Object {
+    - Dropped any */ trait GridControl extends js.Object {
       /**
       			 * If a tooltip is currently shown by the gridControl, hide and close it.
       			 */
@@ -118,7 +111,6 @@ object LNs extends js.Object {
       			 */
       def setTemplate(template: java.lang.String): js.Any
     }
-    
     
     trait GridControlOptions extends ControlOptions {
       var follow: js.UndefOr[scala.Boolean] = js.undefined
@@ -135,7 +127,10 @@ object LNs extends js.Object {
       /**
       			 * Load data for a given latitude, longitude point on the map, and call the callback function with that data, if any.
       			 */
-      def getData(latlng: js.Any, callback: js.Function): js.Any = js.native
+      def getData(
+        latlng: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify LatLng */ js.Any,
+        callback: js.Function
+      ): js.Any = js.native
       /**
       			 * Returns this layer's TileJSON object which determines its tile source, zoom bounds and other metadata.
       			 */
@@ -144,17 +139,13 @@ object LNs extends js.Object {
       			 * Bind an event handler to a given event on this L.mapbox.gridLayer instance. GridLayers expose a number of useful events that give you access to UTFGrid data as the user interacts with the map.
       			 */
       def on(event: java.lang.String, handler: js.Function): js.Any = js.native
-      /**
-      			 * Bind an event handler to a given event on this L.mapbox.gridLayer instance. GridLayers expose a number of useful events that give you access to UTFGrid data as the user interacts with the map.
-      			 */
       def on(event: java.lang.String, handler: js.Function, context: js.Any): js.Any = js.native
       def onAdd(map: Map): js.Any = js.native
       def onRemove(): js.Any = js.native
     }
     
     /* RemoveDifficultInheritance: 
-    - Dropped any */ 
-    trait InfoControl extends js.Object {
+    - Dropped any */ trait InfoControl extends js.Object {
       /**
       			 * Adds an info string to infoControl.
       			 */
@@ -168,8 +159,7 @@ object LNs extends js.Object {
     }
     
     /* RemoveDifficultInheritance: 
-    - Dropped any */ 
-    trait LegendControl extends js.Object {
+    - Dropped any */ trait LegendControl extends js.Object {
       /**
       			 * Adds a legend to the legendControl.
       			 */
@@ -195,8 +185,7 @@ object LNs extends js.Object {
     }
     
     /* RemoveDifficultInheritance: 
-    - Dropped any */ 
-    trait MapOptions extends js.Object {
+    - Dropped any */ trait MapOptions extends js.Object {
       var featureLayer: js.UndefOr[FeatureLayerOptions] = js.undefined
       var gridLayer: js.UndefOr[js.Any] = js.undefined
       var infoControl: js.UndefOr[ControlOptions] = js.undefined
@@ -206,16 +195,13 @@ object LNs extends js.Object {
     }
     
     /* RemoveDifficultInheritance: 
-    - Dropped any */ 
-    trait ShareControl extends js.Object {
+    - Dropped any */ trait ShareControl extends js.Object {
       def onAdd(map: Map): js.Any
     }
-    
     
     trait ShareControlOptions extends ControlOptions {
       var url: js.UndefOr[java.lang.String] = js.undefined
     }
-    
     
     trait StyleLayerOptions
       extends leafletLib.leafletMod.TileLayerOptions {
@@ -235,7 +221,6 @@ object LNs extends js.Object {
       def setFormat(format: java.lang.String): TileLayer = js.native
     }
     
-    
     trait TileLayerOptions
       extends leafletLib.leafletMod.TileLayerOptions {
       var retinaVersion: js.UndefOr[java.lang.String] = js.undefined
@@ -253,17 +238,7 @@ object LNs extends js.Object {
     		 * L.mapbox.featureLayer provides an easy way to integrate GeoJSON from Mapbox and elsewhere into your map.
     		 */
     def featureLayer(): FeatureLayer = js.native
-    // FeatureLayer
-    //////////////////////////////////////////////////////////////////////
-    /**
-    		 * L.mapbox.featureLayer provides an easy way to integrate GeoJSON from Mapbox and elsewhere into your map.
-    		 */
     def featureLayer(idOrGeoJson: js.Any): FeatureLayer = js.native
-    // FeatureLayer
-    //////////////////////////////////////////////////////////////////////
-    /**
-    		 * L.mapbox.featureLayer provides an easy way to integrate GeoJSON from Mapbox and elsewhere into your map.
-    		 */
     def featureLayer(idOrGeoJson: js.Any, options: FeatureLayerOptions): FeatureLayer = js.native
     //////////////////////////////////////////////////////////////////////
     ////////////////////////////// GEOCODING /////////////////////////////
@@ -280,11 +255,6 @@ object LNs extends js.Object {
     		 * Adds geocoder functionality as well as a UI element to a map. This uses the Mapbox Geocoding API.
     		 */
     def geocoderControl(id: java.lang.String): GeocoderControl = js.native
-    // GeocoderControl
-    //////////////////////////////////////////////////////////////////////
-    /**
-    		 * Adds geocoder functionality as well as a UI element to a map. This uses the Mapbox Geocoding API.
-    		 */
     def geocoderControl(id: java.lang.String, options: GeocoderControlOptions): GeocoderControl = js.native
     // GridControl
     //////////////////////////////////////////////////////////////////////
@@ -293,12 +263,6 @@ object LNs extends js.Object {
     		 * the powerful tooltips & regions system in TileMill. Under the hood, it's powered by the open UTFGrid specification.
     		 */
     def gridControl(layer: java.lang.String): GridControl = js.native
-    // GridControl
-    //////////////////////////////////////////////////////////////////////
-    /**
-    		 * Interaction is what we call interactive parts of maps that are created with
-    		 * the powerful tooltips & regions system in TileMill. Under the hood, it's powered by the open UTFGrid specification.
-    		 */
     def gridControl(layer: java.lang.String, options: GridControlOptions): GridControl = js.native
     // GridLayer
     //////////////////////////////////////////////////////////////////////
@@ -312,11 +276,6 @@ object LNs extends js.Object {
     		 * A map control that shows a toggleable info container. If set, attribution is auto-detected from active layers and added to the info container.
     		 */
     def infoControl(): InfoControl = js.native
-    // InfoControl
-    //////////////////////////////////////////////////////////////////////
-    /**
-    		 * A map control that shows a toggleable info container. If set, attribution is auto-detected from active layers and added to the info container.
-    		 */
     def infoControl(options: ControlOptions): InfoControl = js.native
     // LegendControl
     //////////////////////////////////////////////////////////////////////
@@ -325,28 +284,13 @@ object LNs extends js.Object {
     		 * Legends are auto-detected from active layers.
     		 */
     def legendControl(): LegendControl = js.native
-    // LegendControl
-    //////////////////////////////////////////////////////////////////////
-    /**
-    		 * A map control that shows legends added to maps in Mapbox.
-    		 * Legends are auto-detected from active layers.
-    		 */
     def legendControl(options: ControlOptions): LegendControl = js.native
     /**
     		 * Create and automatically configure a map with layers, markers, and interactivity.
     		 */
     def map(element: java.lang.String, idOrTileJson: js.Any): Map = js.native
-    /**
-    		 * Create and automatically configure a map with layers, markers, and interactivity.
-    		 */
     def map(element: java.lang.String, idOrTileJson: js.Any, options: MapOptions): Map = js.native
-    /**
-    		 * Create and automatically configure a map with layers, markers, and interactivity.
-    		 */
     def map(element: stdLib.Element, idOrTileJson: js.Any): Map = js.native
-    /**
-    		 * Create and automatically configure a map with layers, markers, and interactivity.
-    		 */
     def map(element: stdLib.Element, idOrTileJson: js.Any, options: MapOptions): Map = js.native
     //////////////////////////////////////////////////////////////////////
     /////////////////////////////// UTILITY //////////////////////////////
@@ -361,31 +305,18 @@ object LNs extends js.Object {
     		 * Adds a "Share" button to the map, which can be used to share the map to Twitter or Facebook, or generate HTML for a map embed.
     		 */
     def shareControl(id: java.lang.String): ShareControl = js.native
-    // ShareControl
-    //////////////////////////////////////////////////////////////////////
-    /**
-    		 * Adds a "Share" button to the map, which can be used to share the map to Twitter or Facebook, or generate HTML for a map embed.
-    		 */
     def shareControl(id: java.lang.String, options: ShareControlOptions): ShareControl = js.native
     // StyleLayer
     //////////////////////////////////////////////////////////////////////
     /**
-             * L.mapbox.styleLayer provides a way to integrate styles created with Mapbox Studio into your map.
-             */
+      * L.mapbox.styleLayer provides a way to integrate styles created with Mapbox Studio into your map.
+      */
     def styleLayer(url: java.lang.String): StyleLayer = js.native
-    // StyleLayer
-    //////////////////////////////////////////////////////////////////////
-    /**
-             * L.mapbox.styleLayer provides a way to integrate styles created with Mapbox Studio into your map.
-             */
     def styleLayer(url: java.lang.String, options: StyleLayerOptions): StyleLayer = js.native
     /**
     		 * A mustache template rendering function, as used by the templating feature provided by L.mapbox.gridControl.
     		 */
     def template(template: java.lang.String): java.lang.String = js.native
-    /**
-    		 * A mustache template rendering function, as used by the templating feature provided by L.mapbox.gridControl.
-    		 */
     def template(template: java.lang.String, data: js.Any): java.lang.String = js.native
     //////////////////////////////////////////////////////////////////////
     /////////////////////////////// LAYERS ///////////////////////////////
@@ -396,14 +327,6 @@ object LNs extends js.Object {
     		 * You can add a tiled layer to your map with L.mapbox.tileLayer(), a simple interface to layers from Mapbox and elsewhere.
     		 */
     def tileLayer(idOrTileJson: java.lang.String): TileLayer = js.native
-    //////////////////////////////////////////////////////////////////////
-    /////////////////////////////// LAYERS ///////////////////////////////
-    //////////////////////////////////////////////////////////////////////
-    // TileLayer
-    //////////////////////////////////////////////////////////////////////
-    /**
-    		 * You can add a tiled layer to your map with L.mapbox.tileLayer(), a simple interface to layers from Mapbox and elsewhere.
-    		 */
     def tileLayer(idOrTileJson: java.lang.String, options: TileLayerOptions): TileLayer = js.native
     //////////////////////////////////////////////////////////////////////
     ///////////////////////////// CONFIGURATION //////////////////////////

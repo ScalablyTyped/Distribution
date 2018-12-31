@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IResultCommand extends ICommand {
   /**
   		 * Is executed when the executed method ends with an error. Can receive the error throw by the execute method.

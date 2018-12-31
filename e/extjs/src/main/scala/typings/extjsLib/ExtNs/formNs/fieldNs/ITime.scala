@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITime extends IComboBox {
   /** [Config Option] (String) */
   var altFormats: js.UndefOr[java.lang.String] = js.undefined

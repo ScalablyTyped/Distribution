@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGrouper extends ISorter {
   /** [Method] Returns the value of groupFn
   		* @returns Function

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PoolOptions extends js.Object {
   var autoCleanIdle: js.UndefOr[scala.Boolean] = js.undefined
   var connectTimeout: js.UndefOr[scala.Double] = js.undefined

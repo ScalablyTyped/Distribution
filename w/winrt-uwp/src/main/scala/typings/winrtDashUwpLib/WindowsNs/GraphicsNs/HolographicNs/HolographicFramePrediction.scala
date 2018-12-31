@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class HolographicFramePrediction () extends js.Object {
   var cameraPoses: js.Any = js.native
-   /* unmapped type */var timestamp: js.Any = js.native
+   /* unmapped type */ var timestamp: js.Any = js.native
 }
 

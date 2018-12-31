@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDataBinMetrics extends js.Object {
   /* The average value of the aggregation property of the pushpins in a data bin. */
   var average: js.UndefOr[scala.Double] = js.undefined

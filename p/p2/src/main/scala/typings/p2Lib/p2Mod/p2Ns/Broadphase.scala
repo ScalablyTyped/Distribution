@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Broadphase extends js.Object {
   var boundingVolumeType: scala.Double
   var result: js.Array[Body]

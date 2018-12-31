@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Payments extends js.Object {
   /** The list of Payments for the account. One or both of a) the account's most recent payment; and b) the account's upcoming payment. */
   var items: js.UndefOr[js.Array[Payment]] = js.undefined

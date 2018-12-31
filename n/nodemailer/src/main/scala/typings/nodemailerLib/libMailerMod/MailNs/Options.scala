@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   /** An array of alternative text contents (in addition to text and html parts) */
   var alternatives: js.UndefOr[js.Array[Attachment]] = js.undefined

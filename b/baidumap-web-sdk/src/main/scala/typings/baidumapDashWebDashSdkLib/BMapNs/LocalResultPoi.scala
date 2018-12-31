@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocalResultPoi extends js.Object {
   var address: java.lang.String
   var city: java.lang.String

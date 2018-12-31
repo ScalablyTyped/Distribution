@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IClassList
   extends extjsLib.ExtNs.IBase {
   /** [Method] Adds a single class to the class list

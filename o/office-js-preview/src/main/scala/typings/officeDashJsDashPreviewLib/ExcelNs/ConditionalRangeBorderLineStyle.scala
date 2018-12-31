@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ConditionalRangeBorderLineStyle extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.6]
-     */
+  * [Api set: ExcelApi 1.6]
+  */
 @JSGlobal("Excel.ConditionalRangeBorderLineStyle")
 @js.native
 object ConditionalRangeBorderLineStyle extends js.Object {

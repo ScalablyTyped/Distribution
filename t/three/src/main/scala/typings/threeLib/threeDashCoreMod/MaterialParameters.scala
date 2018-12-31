@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MaterialParameters extends js.Object {
   var alphaTest: js.UndefOr[scala.Double] = js.undefined
   var blendDst: js.UndefOr[BlendingDstFactor] = js.undefined

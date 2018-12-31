@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SessionOptions extends js.Object {
   var createConnection: js.UndefOr[js.Function1[/* option */ SessionOptions, nodeLib.streamMod.Duplex]] = js.undefined
   var maxDeflateDynamicTableSize: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(fabricLib.fabricDashImplMod.IImageOptions because Would inherit conflicting mutable fields List(cornerColor, transparentCorners, lockScalingX, shadow, hasControls, backgroundColor, name, includeDefaultValues, hasRotatingPoint, cornerSize, perPixelTargetFind, originX, scaleY, aCoords, lockMovementY, visible, transformMatrix, centeredRotation, angle, evented, stroke, strokeDashArray, data, left, height, centeredScaling, strokeLineCap, hoverCursor, skewX, strokeMiterLimit, lockUniScaling, borderDashArray, selectable, strokeLineJoin, skewY, objectCaching, cornerStrokeColor, flipX, fill, cornerDashArray, rotatingPointOffset, borderScaleFactor, opacity, globalCompositeOperation, padding, `type`, cornerStyle, lockScalingFlip, hasBorders, width, top, lockMovementX, lockRotation, clipTo, strokeWidth, flipY, originY, borderColor, scaleX, lockScalingY, borderOpacityWhenMoving, fillRule, minScaleLimit))*/
+/* RemoveMultipleInheritance: Dropped parents List(fabricLib.fabricDashImplMod.IImageOptions because Would inherit conflicting mutable fields List(aCoords, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, centeredRotation, centeredScaling, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, evented, fill, fillRule, flipX, flipY, globalCompositeOperation, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockUniScaling, minScaleLimit, name, objectCaching, opacity, originX, originY, padding, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, shadow, skewX, skewY, stroke, strokeDashArray, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeWidth, top, transformMatrix, transparentCorners, `type`, visible, width))*/
 @JSImport("fabric/fabric-impl", "Image")
 @js.native
 class Image protected () extends Object {
@@ -20,17 +20,7 @@ class Image protected () extends Object {
   	 * @param callback Callback is invoked when all filters have been applied and new image is generated
   	 */
   def applyFilters(callback: js.Function): scala.Unit = js.native
-  /**
-  	 * Returns a clone of an instance
-  	 * @param callback Callback is invoked with a clone as a first argument
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 */
   def clone(callback: js.Function): scala.Unit = js.native
-  /**
-  	 * Returns a clone of an instance
-  	 * @param callback Callback is invoked with a clone as a first argument
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 */
   def clone(callback: js.Function, propertiesToInclude: js.Array[java.lang.String]): scala.Unit = js.native
   /**
   	 * Returns image element which this instance if based on
@@ -71,19 +61,7 @@ class Image protected () extends Object {
   	 * @param [options] Options object
   	 */
   def setSrc(src: java.lang.String): Image = js.native
-  /**
-  	 * Sets source of an image
-  	 * @param src Source string (URL)
-  	 * @param [callback] Callback is invoked when image has been loaded (and all filters have been applied)
-  	 * @param [options] Options object
-  	 */
   def setSrc(src: java.lang.String, callback: js.Function): Image = js.native
-  /**
-  	 * Sets source of an image
-  	 * @param src Source string (URL)
-  	 * @param [callback] Callback is invoked when image has been loaded (and all filters have been applied)
-  	 * @param [options] Options object
-  	 */
   def setSrc(src: java.lang.String, callback: js.Function, options: IImageOptions): Image = js.native
   /**
   	 * Returns SVG representation of an instance
@@ -91,11 +69,6 @@ class Image protected () extends Object {
   	 * @return svg representation of an instance
   	 */
   def toSVG(): java.lang.String = js.native
-  /**
-  	 * Returns SVG representation of an instance
-  	 * @param [reviver] Method for further parsing of svg representation.
-  	 * @return svg representation of an instance
-  	 */
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
@@ -114,12 +87,6 @@ object Image extends js.Object {
   	 * @param [options] Options object
   	 */
   def fromElement(element: stdLib.SVGElement, callback: js.Function1[/* image */ this.type, scala.Unit]): scala.Unit = js.native
-  /**
-  	 * Returns Image instance from an SVG element
-  	 * @param element Element to parse
-  	 * @param callback Callback to execute when fabric.Image object is created
-  	 * @param [options] Options object
-  	 */
   def fromElement(
     element: stdLib.SVGElement,
     callback: js.Function1[/* image */ this.type, scala.Unit],
@@ -138,19 +105,7 @@ object Image extends js.Object {
   	 * @param [imgOptions] Options object
   	 */
   def fromURL(url: java.lang.String): fabricLib.fabricDashImplMod.Image = js.native
-  /**
-  	 * Creates an instance of fabric.Image from an URL string
-  	 * @param url URL to create an image from
-  	 * @param [callback] Callback to invoke when image is created (newly created image is passed as a first argument)
-  	 * @param [imgOptions] Options object
-  	 */
   def fromURL(url: java.lang.String, callback: js.Function1[/* image */ this.type, scala.Unit]): fabricLib.fabricDashImplMod.Image = js.native
-  /**
-  	 * Creates an instance of fabric.Image from an URL string
-  	 * @param url URL to create an image from
-  	 * @param [callback] Callback to invoke when image is created (newly created image is passed as a first argument)
-  	 * @param [imgOptions] Options object
-  	 */
   def fromURL(
     url: java.lang.String,
     callback: js.Function1[/* image */ this.type, scala.Unit],

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOptions extends js.Object {
   var arrayFormat: js.UndefOr[arrayFormat] = js.undefined
   var booleanFormat: js.UndefOr[booleanFormat] = js.undefined

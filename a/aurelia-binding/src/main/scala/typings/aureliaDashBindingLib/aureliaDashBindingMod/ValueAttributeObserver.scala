@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class ValueAttributeObserver protected () extends InternalPropertyObserver {
   def this(element: stdLib.Element, propertyName: java.lang.String, handler: EventSubscriber) = this()
   /**
-     * Handle underlying checkbox element change events
-     */
+    * Handle underlying checkbox element change events
+    */
   def handleEvent(): js.Any = js.native
 }
 

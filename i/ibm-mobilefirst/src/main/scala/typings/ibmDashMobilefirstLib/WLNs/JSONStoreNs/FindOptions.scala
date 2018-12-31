@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FindOptions extends BasicFindOptions {
   var exact: js.UndefOr[scala.Boolean] = js.undefined
   var limit: js.UndefOr[scala.Double] = js.undefined

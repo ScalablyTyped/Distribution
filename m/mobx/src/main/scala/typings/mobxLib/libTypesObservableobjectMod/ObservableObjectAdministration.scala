@@ -45,16 +45,11 @@ class ObservableObjectAdministration protected ()
   override def intercept(handler: mobxLib.libTypesInterceptDashUtilsMod.IInterceptor[IObjectWillChange]): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def notifyPropertyAddition(key: java.lang.String, newValue: js.Any): scala.Unit = js.native
   /**
-       * Observes this object. Triggers for the events 'add', 'update' and 'delete'.
-       * See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/observe
-       * for callback details
-       */
+    * Observes this object. Triggers for the events 'add', 'update' and 'delete'.
+    * See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/observe
+    * for callback details
+    */
   def observe(callback: js.Function1[/* changes */ IObjectDidChange, scala.Unit]): mobxLib.libUtilsUtilsMod.Lambda = js.native
-  /**
-       * Observes this object. Triggers for the events 'add', 'update' and 'delete'.
-       * See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/observe
-       * for callback details
-       */
   def observe(callback: js.Function1[/* changes */ IObjectDidChange, scala.Unit], fireImmediately: scala.Boolean): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def read(key: java.lang.String): js.Any = js.native
   def remove(key: java.lang.String): scala.Unit = js.native

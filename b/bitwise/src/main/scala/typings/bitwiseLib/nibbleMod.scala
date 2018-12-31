@@ -15,6 +15,13 @@ object nibbleMod extends js.Object {
     bitwiseLib.typesMod.Bit, 
     bitwiseLib.typesMod.Bit
   ] = js.native
-  def write(nibble: js.Tuple4[_, _, _, _]): bitwiseLib.typesMod.UInt4 = js.native
+  def write(
+    nibble: js.Tuple4[
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _, 
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _, 
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _, 
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _
+    ]
+  ): bitwiseLib.typesMod.UInt4 = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AllLookAtTypes extends js.Object {
   var constructionSite: ConstructionSite[BuildableStructureConstant]
   var creep: Creep

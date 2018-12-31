@@ -25,7 +25,6 @@ class AbstractTween ()
   def addLabel(label: java.lang.String, position: scala.Double): scala.Unit = js.native
   // methods
   def advance(delta: scala.Double): scala.Unit = js.native
-  // methods
   def advance(delta: scala.Double, ignoreActions: scala.Boolean): scala.Unit = js.native
   def calculatePosition(rawPosition: scala.Double): scala.Unit = js.native
   def getLabels(): js.Array[java.lang.String] = js.native

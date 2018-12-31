@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAnchor extends IAuto {
   /** [Config Option] (String) */
   var anchor: js.UndefOr[java.lang.String] = js.undefined

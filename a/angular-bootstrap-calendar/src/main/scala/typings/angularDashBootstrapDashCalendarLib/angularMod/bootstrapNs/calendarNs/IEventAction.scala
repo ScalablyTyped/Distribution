@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEventAction extends js.Object {
   /**
   	         * CSS class to be added to the action element

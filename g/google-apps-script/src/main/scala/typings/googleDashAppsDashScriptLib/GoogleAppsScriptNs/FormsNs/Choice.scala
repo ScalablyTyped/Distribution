@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Choice extends js.Object {
   def getGotoPage(): PageBreakItem
   def getPageNavigationType(): PageNavigationType

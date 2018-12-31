@@ -78,9 +78,9 @@ object iterallMod extends js.Object {
   def getIterator[TValue](iterable: stdLib.Iterable[TValue]): stdLib.Iterator[TValue] = js.native
   def getIteratorMethod(iterable: js.Any): scala.Unit | js.Function0[stdLib.Iterator[_]] = js.native
   def getIteratorMethod[TValue](iterable: stdLib.Iterable[TValue]): js.Function0[stdLib.Iterator[TValue]] = js.native
-  def isArrayLike(obj: js.Any): /* is Anon_Length */scala.Boolean = js.native
-  def isAsyncIterable(obj: js.Any): /* is AsyncIterable */scala.Boolean = js.native
+  def isArrayLike(obj: js.Any): /* is iterall.Anon_Length */ scala.Boolean = js.native
+  def isAsyncIterable(obj: js.Any): /* is std.AsyncIterable<any> */ scala.Boolean = js.native
   def isCollection(obj: js.Any): scala.Boolean = js.native
-  def isIterable(obj: js.Any): /* is Iterable */scala.Boolean = js.native
+  def isIterable(obj: js.Any): /* is std.Iterable<any> */ scala.Boolean = js.native
 }
 

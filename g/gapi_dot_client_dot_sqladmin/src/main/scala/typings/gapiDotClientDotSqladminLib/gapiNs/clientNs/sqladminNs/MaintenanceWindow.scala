@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MaintenanceWindow extends js.Object {
   /** day of week (1-7), starting on Monday. */
   var day: js.UndefOr[scala.Double] = js.undefined

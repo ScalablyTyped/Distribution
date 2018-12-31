@@ -23,8 +23,8 @@ package object mapsNs {
   type LatLngLiteral = PointLiteral | LatLngObjectLiteral
   type MapTypeId = java.lang.String
   /**
-     * Types
-     */
+    * Types
+    */
   type PointArrayLiteral = js.Tuple2[scala.Double, scala.Double]
   type PointBoundsArrayLiteral = js.Tuple4[scala.Double, scala.Double, scala.Double, scala.Double]
   type PointBoundsLiteral = PointBoundsArrayLiteral | PointBoundsObjectLiteral

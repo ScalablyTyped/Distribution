@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "KinesisVideo")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class KinesisVideo ()
   extends awsDashSdkLib.awsDashSdkMod.KinesisVideo {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsKinesisvideoMod.KinesisVideoNs.ClientConfiguration) = this()
 }
 

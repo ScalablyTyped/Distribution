@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Fragment extends js.Object {
   var raw: java.lang.String
   var text: java.lang.String

@@ -26,34 +26,34 @@ abstract class UserDataAccount () extends js.Object {
   /** Gets or sets a user name associated with the UserDataAccount that is suitable for displaying. */
   var userDisplayName: java.lang.String = js.native
   /**
-                   * Asynchronously deletes all the contact, calendar and email data associated with the account.
-                   * @return An async action indicating success or failure.
-                   */
+    * Asynchronously deletes all the contact, calendar and email data associated with the account.
+    * @return An async action indicating success or failure.
+    */
   def deleteAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Returns a collection of AppointmentCalendar instances associated with the UserDataAccount .
-                   * @return A collection of AppointmentCalendar instances associated with the UserDataAccount .
-                   */
+    * Returns a collection of AppointmentCalendar instances associated with the UserDataAccount .
+    * @return A collection of AppointmentCalendar instances associated with the UserDataAccount .
+    */
   def findAppointmentCalendarsAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
   /**
-                   * Returns a collection of ContactAnnotationList instances associated with the UserDataAccount .
-                   * @return A collection of ContactAnnotationList instances associated with the UserDataAccount .
-                   */
+    * Returns a collection of ContactAnnotationList instances associated with the UserDataAccount .
+    * @return A collection of ContactAnnotationList instances associated with the UserDataAccount .
+    */
   def findContactAnnotationListsAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
   /**
-                   * Returns a collection of ContactList instances associated with the UserDataAccount .
-                   * @return A collection of ContactList instances associated with the UserDataAccount .
-                   */
+    * Returns a collection of ContactList instances associated with the UserDataAccount .
+    * @return A collection of ContactList instances associated with the UserDataAccount .
+    */
   def findContactListsAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
   /**
-                   * Returns a collection of EmailMailbox instances associated with the UserDataAccount .
-                   * @return A collection of EmailMailbox instances associated with the UserDataAccount .
-                   */
+    * Returns a collection of EmailMailbox instances associated with the UserDataAccount .
+    * @return A collection of EmailMailbox instances associated with the UserDataAccount .
+    */
   def findEmailMailboxesAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
   /**
-                   * Asynchronously persists the UserDataAccount to the database.
-                   * @return Async action that indicates completion of the save operation.
-                   */
+    * Asynchronously persists the UserDataAccount to the database.
+    * @return Async action that indicates completion of the save operation.
+    */
   def saveAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

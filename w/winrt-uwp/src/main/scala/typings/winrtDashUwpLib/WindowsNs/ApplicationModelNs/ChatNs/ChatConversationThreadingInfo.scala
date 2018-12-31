@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Provides threading info for a ChatConversation . */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatConversationThreadingInfo")
 @js.native
+/** Initializes a new instance of the ChatConversationThreadingInfo class. */
 class ChatConversationThreadingInfo () extends js.Object {
   /** Gets or sets the Contact.Id for the remote participant. */
   var contactId: java.lang.String = js.native

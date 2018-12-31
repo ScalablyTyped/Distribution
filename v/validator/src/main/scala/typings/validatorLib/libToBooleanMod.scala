@@ -8,5 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("validator/lib/toBoolean", JSImport.Namespace)
 @js.native
 object libToBooleanMod
-  extends org.scalablytyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[
+      js.Function2[/* input */ java.lang.String, /* strict */ js.UndefOr[scala.Boolean], scala.Boolean]
+    ]
 

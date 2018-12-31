@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccordionGroupCancelEventArgs extends ProcessingModeCancelEventArgs {
   val group: BootstrapAccordionGroup
 }

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParagraphTextItem extends js.Object {
   def clearValidation(): ParagraphTextItem
   def createResponse(response: java.lang.String): ItemResponse

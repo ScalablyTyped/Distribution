@@ -37,188 +37,111 @@ class Socket () extends js.Object {
   var zap_domain: js.Any = js.native
   def backlog(): js.Any = js.native
   /**
-       * Async bind.
-       *
-       * Emits the "bind" event.
-       *
-       * @param addr Socket address
-       * @param cb Bind callback
-       */
+    * Async bind.
+    *
+    * Emits the "bind" event.
+    *
+    * @param addr Socket address
+    * @param cb Bind callback
+    */
   def bind(addr: java.lang.String): Socket = js.native
-  /**
-       * Async bind.
-       *
-       * Emits the "bind" event.
-       *
-       * @param addr Socket address
-       * @param cb Bind callback
-       */
   def bind(addr: java.lang.String, callback: js.Function1[/* error */ java.lang.String, scala.Unit]): Socket = js.native
   /**
-       * Sync bind.
-       *
-       * @param addr Socket address
-       */
+    * Sync bind.
+    *
+    * @param addr Socket address
+    */
   def bindSync(addr: java.lang.String): Socket = js.native
   /**
-       * Close the socket.
-       *
-       */
+    * Close the socket.
+    *
+    */
   def close(): Socket = js.native
   /**
-       * Connect to `addr`.
-       *
-       * @param addr Connection address
-       */
+    * Connect to `addr`.
+    *
+    * @param addr Connection address
+    */
   def connect(addr: java.lang.String): Socket = js.native
   /**
-       * Disconnect from `addr`.
-       *
-       * @param addr The address
-       */
+    * Disconnect from `addr`.
+    *
+    * @param addr The address
+    */
   def disconnect(addr: java.lang.String): Socket = js.native
-  /**
-       * Get socket `opt`.
-       *
-       * @param opt Option number
-       */
   def getsocketopt(opt: java.lang.String): js.Any = js.native
   /**
-       * Get socket `opt`.
-       *
-       * @param opt Option number
-       */
+    * Get socket `opt`.
+    *
+    * @param opt Option number
+    */
   def getsocketopt(opt: scala.Double): js.Any = js.native
   /**
-       * Enable monitoring of a Socket. This enables the following additional events:
-       * 'connect', 'connect_delay', 'connect_retry', 'listen', 'bind_error',
-       * 'accept', 'accept_error', 'close', 'close_error', 'disconnect'.
-       * Each event receives the parameters: (eventValue, eventEndpointAddrress, error)
-       *
-       * @param timer interval in ms > 0 or Undefined for default
-       * @param numOfEvents The maximum number of events to read on each interval, default is 1, use 0 for reading all events
-       * @return for chaining
-       */
+    * Enable monitoring of a Socket. This enables the following additional events:
+    * 'connect', 'connect_delay', 'connect_retry', 'listen', 'bind_error',
+    * 'accept', 'accept_error', 'close', 'close_error', 'disconnect'.
+    * Each event receives the parameters: (eventValue, eventEndpointAddrress, error)
+    *
+    * @param timer interval in ms > 0 or Undefined for default
+    * @param numOfEvents The maximum number of events to read on each interval, default is 1, use 0 for reading all events
+    * @return for chaining
+    */
   def monitor(): Socket = js.native
-  /**
-       * Enable monitoring of a Socket. This enables the following additional events:
-       * 'connect', 'connect_delay', 'connect_retry', 'listen', 'bind_error',
-       * 'accept', 'accept_error', 'close', 'close_error', 'disconnect'.
-       * Each event receives the parameters: (eventValue, eventEndpointAddrress, error)
-       *
-       * @param timer interval in ms > 0 or Undefined for default
-       * @param numOfEvents The maximum number of events to read on each interval, default is 1, use 0 for reading all events
-       * @return for chaining
-       */
   def monitor(interval: scala.Double): Socket = js.native
-  /**
-       * Enable monitoring of a Socket. This enables the following additional events:
-       * 'connect', 'connect_delay', 'connect_retry', 'listen', 'bind_error',
-       * 'accept', 'accept_error', 'close', 'close_error', 'disconnect'.
-       * Each event receives the parameters: (eventValue, eventEndpointAddrress, error)
-       *
-       * @param timer interval in ms > 0 or Undefined for default
-       * @param numOfEvents The maximum number of events to read on each interval, default is 1, use 0 for reading all events
-       * @return for chaining
-       */
   def monitor(interval: scala.Double, numOfEvents: scala.Double): Socket = js.native
   /**
-       * Socket event - 'message'
-       */
-  def on(eventName: java.lang.String, callback: js.Function1[/* repeated */nodeLib.Buffer, scala.Unit]): scala.Unit = js.native
+    * Socket event - 'message'
+    */
+  def on(eventName: java.lang.String, callback: js.Function1[/* repeated */ nodeLib.Buffer, scala.Unit]): scala.Unit = js.native
   def pause(): scala.Unit = js.native
   def resume(): scala.Unit = js.native
   /**
-       * Send the given `msg`.
-       *
-       * @param msg The message
-       * @param flags Message flags
-       */
+    * Send the given `msg`.
+    *
+    * @param msg The message
+    * @param flags Message flags
+    */
   def send(msg: java.lang.String): Socket = js.native
-  /**
-       * Send the given `msg`.
-       *
-       * @param msg The message
-       * @param flags Message flags
-       */
   def send(msg: java.lang.String, flags: scala.Double): Socket = js.native
-  /**
-       * Send the given `msg`.
-       *
-       * @param msg The message
-       * @param flags Message flags
-       */
   def send(msg: js.Array[_]): Socket = js.native
-  /**
-       * Send the given `msg`.
-       *
-       * @param msg The message
-       * @param flags Message flags
-       */
   def send(msg: js.Array[_], flags: scala.Double): Socket = js.native
-  /**
-       * Send the given `msg`.
-       *
-       * @param msg The message
-       * @param flags Message flags
-       */
   def send(msg: nodeLib.Buffer): Socket = js.native
-  /**
-       * Send the given `msg`.
-       *
-       * @param msg The message
-       * @param flags Message flags
-       */
   def send(msg: nodeLib.Buffer, flags: scala.Double): Socket = js.native
-  /**
-       * Set `opt` to `val`.
-       *
-       * @param opt Option
-       * @param val Value
-       */
   def setsocketopt(opt: java.lang.String, `val`: js.Any): Socket = js.native
   /**
-       * Set `opt` to `val`.
-       *
-       * @param opt Option
-       * @param val Value
-       */
+    * Set `opt` to `val`.
+    *
+    * @param opt Option
+    * @param val Value
+    */
   def setsocketopt(opt: scala.Double, `val`: js.Any): Socket = js.native
   /**
-       * Subscribe with the given `filter`.
-       *
-       * @param filter The filter
-       */
+    * Subscribe with the given `filter`.
+    *
+    * @param filter The filter
+    */
   def subscribe(filter: java.lang.String): Socket = js.native
   /**
-       * Async unbind.
-       *
-       * Emits the "unbind" event.
-       *
-       * @param addr Socket address
-       * @param cb Unind callback
-       */
+    * Async unbind.
+    *
+    * Emits the "unbind" event.
+    *
+    * @param addr Socket address
+    * @param cb Unind callback
+    */
   def unbind(addr: java.lang.String): Socket = js.native
-  /**
-       * Async unbind.
-       *
-       * Emits the "unbind" event.
-       *
-       * @param addr Socket address
-       * @param cb Unind callback
-       */
   def unbind(addr: java.lang.String, callback: js.Function1[/* error */ java.lang.String, scala.Unit]): Socket = js.native
   /**
-       * Sync unbind.
-       *
-       * @param addr Socket address
-       */
+    * Sync unbind.
+    *
+    * @param addr Socket address
+    */
   def unbindSync(addr: java.lang.String): Socket = js.native
   /**
-       * Unsubscribe with the given `filter`.
-       *
-       * @param filter The filter
-       */
+    * Unsubscribe with the given `filter`.
+    *
+    * @param filter The filter
+    */
   def unsubscribe(filter: java.lang.String): Socket = js.native
 }
 

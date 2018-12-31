@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnDefinition extends js.Object {
   var column: java.lang.String | scala.Null
   var database: java.lang.String | scala.Null

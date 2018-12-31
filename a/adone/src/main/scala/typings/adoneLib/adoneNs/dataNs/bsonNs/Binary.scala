@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * Represents a BSON Binary type
-             */
+  * Represents a BSON Binary type
+  */
 @JSGlobal("adone.data.bson.Binary")
 @js.native
 class Binary protected ()
@@ -21,48 +21,36 @@ class Binary protected ()
   @JSName("_bsontype")
   var _bsontype_Binary: adoneLib.adoneLibStrings.binary = js.native
   /**
-                   * Returns the length of the binary
-                   */
+    * Returns the length of the binary
+    */
   def length(): scala.Double = js.native
   /**
-                   * Updates this binary with `byte`
-                   */
+    * Updates this binary with `byte`
+    */
   def put(byte: scala.Double): scala.Unit = js.native
   /**
-                   * Reads length bytes starting at position
-                   */
+    * Reads length bytes starting at position
+    */
   def read(position: scala.Double): scala.Unit = js.native
-  /**
-                   * Reads length bytes starting at position
-                   */
   def read(position: scala.Double, length: scala.Double): scala.Unit = js.native
   def toJSON(): java.lang.String = js.native
   def value(): java.lang.String = js.native
   /**
-                   * Returns the value of this binary as a string or buffer
-                   */
+    * Returns the value of this binary as a string or buffer
+    */
   def value(asRaw: adoneLib.adoneLibNumbers.`true`): nodeLib.Buffer = js.native
   /**
-                   * Writes a buffer or string to the binary
-                   */
+    * Writes a buffer or string to the binary
+    */
   def write(string: java.lang.String): scala.Unit = js.native
-  /**
-                   * Writes a buffer or string to the binary
-                   */
   def write(string: java.lang.String, offset: scala.Double): scala.Unit = js.native
-  /**
-                   * Writes a buffer or string to the binary
-                   */
   def write(string: nodeLib.Buffer): scala.Unit = js.native
-  /**
-                   * Writes a buffer or string to the binary
-                   */
   def write(string: nodeLib.Buffer, offset: scala.Double): scala.Unit = js.native
 }
 
 /**
-             * Represents a BSON Binary type
-             */
+  * Represents a BSON Binary type
+  */
 @JSGlobal("adone.data.bson.Binary")
 @js.native
 object Binary extends js.Object {

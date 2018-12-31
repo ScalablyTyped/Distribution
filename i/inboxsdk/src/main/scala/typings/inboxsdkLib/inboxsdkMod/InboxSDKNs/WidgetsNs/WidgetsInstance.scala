@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WidgetsInstance extends js.Object {
   def showDrawerView(options: DrawerOptions): DrawerView
   def showModalView(options: ModalOptions): ModalView

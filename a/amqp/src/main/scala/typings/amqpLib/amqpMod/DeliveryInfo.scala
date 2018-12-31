@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeliveryInfo extends js.Object {
   var consumerTag: java.lang.String
   var contentType: java.lang.String

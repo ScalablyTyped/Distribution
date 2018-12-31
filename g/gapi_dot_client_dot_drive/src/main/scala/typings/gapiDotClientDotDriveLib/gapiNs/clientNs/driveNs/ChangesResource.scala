@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChangesResource extends js.Object {
   /** Gets the starting pageToken for listing future changes. */
   def getStartPageToken(request: gapiDotClientDotDriveLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[StartPageToken]

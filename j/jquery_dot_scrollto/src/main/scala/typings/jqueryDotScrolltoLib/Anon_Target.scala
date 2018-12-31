@@ -8,52 +8,24 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Target extends js.Object {
   /**
-          * Scroll window
-          *
-          * @param target Where to scroll the matched elements.
-          * @param duration The OVERALL length of the animation
-          * @param settings Set of settings.
-          */
+    * Scroll window
+    *
+    * @param target Where to scroll the matched elements.
+    * @param duration The OVERALL length of the animation
+    * @param settings Set of settings.
+    */
   def apply(target: js.Any): JQuery = js.native
-  /**
-          * Scroll window
-          *
-          * @param target Where to scroll the matched elements.
-          * @param duration The OVERALL length of the animation
-          * @param settings Set of settings.
-          */
   def apply(target: js.Any, duration: scala.Double): JQuery = js.native
-  /**
-          * Scroll window
-          *
-          * @param target Where to scroll the matched elements.
-          * @param duration The OVERALL length of the animation
-          * @param onAfter The onAfter callback.
-          */
   def apply(target: js.Any, duration: scala.Double, onAfter: js.Function): JQuery = js.native
-  /**
-          * Scroll window
-          *
-          * @param target Where to scroll the matched elements.
-          * @param duration The OVERALL length of the animation
-          * @param settings Set of settings.
-          */
   def apply(target: js.Any, duration: scala.Double, settings: ScrollToOptions): JQuery = js.native
   /**
-          * Scroll window
-          *
-          * @param target Where to scroll the matched elements.
-          * @param settings Set of settings.
-          * @param onAfter The onAfter callback.
-          */
+    * Scroll window
+    *
+    * @param target Where to scroll the matched elements.
+    * @param settings Set of settings.
+    * @param onAfter The onAfter callback.
+    */
   def apply(target: js.Any, settings: ScrollToOptions): JQuery = js.native
-  /**
-          * Scroll window
-          *
-          * @param target Where to scroll the matched elements.
-          * @param settings Set of settings.
-          * @param onAfter The onAfter callback.
-          */
   def apply(target: js.Any, settings: ScrollToOptions, onAfter: js.Function): JQuery = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDetailsColumnStyles extends js.Object {
   var accessibleLabel: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   var borderAfterDropping: atUifabricMergeDashStylesLib.libIStyleMod.IStyle

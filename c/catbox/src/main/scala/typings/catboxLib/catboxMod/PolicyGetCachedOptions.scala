@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PolicyGetCachedOptions[T] extends js.Object {
   /** isStale - true if the item is stale. */
   var isStale: scala.Boolean

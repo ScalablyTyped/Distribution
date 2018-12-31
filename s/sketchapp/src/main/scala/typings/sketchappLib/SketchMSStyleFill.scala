@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSStyleFill extends js.Object {
   var _class: sketchappLib.sketchappLibStrings.styleFill
   var color: SketchMSColor

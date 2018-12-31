@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Argument passed to the callback each time the
- * [pump](Titanium.Stream.pump) operation has new data to deliver.
- */
-
+  * Argument passed to the callback each time the
+  * [pump](Titanium.Stream.pump) operation has new data to deliver.
+  */
 trait PumpCallbackArgs extends js.Object {
   /**
   	 * Buffer object holding the data currently being pumped to the handler method.

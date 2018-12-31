@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PushOptions
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var callbacks: js.UndefOr[nodegitLib.remoteDashCallbacksMod.RemoteCallbacks] = js.undefined

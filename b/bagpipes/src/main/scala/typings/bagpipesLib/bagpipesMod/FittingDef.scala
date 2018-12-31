@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FittingDef
   extends // allow other config settings
 /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] {
@@ -18,13 +17,13 @@ trait FittingDef
   /** The name of the context key to which the output value is assigned */
   var output: js.UndefOr[js.Any] = js.undefined
   /**
-       * If type is omitted (as it must be for in-line usage), Bagpipes will
-       * first check the user fittings then the system fittings for the name and
-       * use the first fitting found.
-       *
-       * Thus be aware that if you define a fitting with the same name as a
-       * system one, your fitting will override it.
-       */
+    * If type is omitted (as it must be for in-line usage), Bagpipes will
+    * first check the user fittings then the system fittings for the name and
+    * use the first fitting found.
+    *
+    * Thus be aware that if you define a fitting with the same name as a
+    * system one, your fitting will override it.
+    */
   var `type`: js.UndefOr[FittingType] = js.undefined
 }
 

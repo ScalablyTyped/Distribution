@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ValidateResponse extends js.Object {
   var address: java.lang.String
   var did_you_mean: java.lang.String | scala.Null

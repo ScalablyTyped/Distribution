@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditRowEndedEventUIParam extends js.Object {
   /**
   	 * Gets the old value for the column with the specified key.

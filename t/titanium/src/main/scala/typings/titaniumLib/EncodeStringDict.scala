@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Named parameters for <Titanium.Codec.encodeString>.
- */
-
+  * Named parameters for <Titanium.Codec.encodeString>.
+  */
 trait EncodeStringDict extends js.Object {
   /**
   	 * Character encoding to use when encoding this string to bytes.

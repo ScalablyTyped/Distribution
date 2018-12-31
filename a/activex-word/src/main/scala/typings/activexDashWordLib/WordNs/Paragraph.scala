@@ -63,16 +63,16 @@ class Paragraph protected () extends js.Object {
   def IndentFirstLineCharWidth(Count: scala.Double): scala.Unit = js.native
   def JoinList(): scala.Unit = js.native
   /**
-           * @param number [Level1=0]
-           * @param number [Level2=0]
-           * @param number [Level3=0]
-           * @param number [Level4=0]
-           * @param number [Level5=0]
-           * @param number [Level6=0]
-           * @param number [Level7=0]
-           * @param number [Level8=0]
-           * @param number [Level9=0]
-           */
+    * @param number [Level1=0]
+    * @param number [Level2=0]
+    * @param number [Level3=0]
+    * @param number [Level4=0]
+    * @param number [Level5=0]
+    * @param number [Level6=0]
+    * @param number [Level7=0]
+    * @param number [Level8=0]
+    * @param number [Level9=0]
+    */
   def ListAdvanceTo(
     Level1: js.UndefOr[scala.Double],
     Level2: js.UndefOr[scala.Double],

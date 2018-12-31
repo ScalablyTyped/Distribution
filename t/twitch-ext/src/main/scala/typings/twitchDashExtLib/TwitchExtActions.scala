@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Twitch actions add first-party Twitch functionality to extensions.
- *
- * @see TwitchExt.actions
- */
-
+  * Twitch actions add first-party Twitch functionality to extensions.
+  *
+  * @see TwitchExt.actions
+  */
 trait TwitchExtActions extends js.Object {
   /**
   	 * This function prompts users to follow the specified channel, with a dialog controlled by Twitch.

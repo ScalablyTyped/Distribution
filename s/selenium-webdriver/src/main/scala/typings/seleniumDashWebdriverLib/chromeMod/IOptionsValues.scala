@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOptionsValues extends js.Object {
   var args: js.Array[java.lang.String]
   var binary: js.UndefOr[java.lang.String] = js.undefined

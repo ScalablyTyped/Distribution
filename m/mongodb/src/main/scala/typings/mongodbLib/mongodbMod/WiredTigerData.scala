@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WiredTigerData extends js.Object {
   var LSM: mongodbLib.Anon_Bloomfilterpagesevictedfromcache
   var `block-manager`: mongodbLib.Anon_Blocksfreed

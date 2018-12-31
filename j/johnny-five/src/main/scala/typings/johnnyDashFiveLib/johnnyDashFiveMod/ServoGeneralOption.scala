@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServoGeneralOption extends js.Object {
   var center: js.UndefOr[scala.Boolean] = js.undefined
   var controller: js.UndefOr[java.lang.String] = js.undefined

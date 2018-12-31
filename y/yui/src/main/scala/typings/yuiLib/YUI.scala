@@ -45,16 +45,13 @@ trait YUI extends js.Object {
   ): js.Any = js.native
   //Function|Object|YUI
   def mix(receiver: js.Function, supplier: js.Object): js.Any = js.native
-  //Function|Object|YUI
   def mix(receiver: js.Function, supplier: js.Object, overwrite: scala.Boolean): js.Any = js.native
-  //Function|Object|YUI
   def mix(
     receiver: js.Function,
     supplier: js.Object,
     overwrite: scala.Boolean,
     whitelist: js.Array[java.lang.String]
   ): js.Any = js.native
-  //Function|Object|YUI
   def mix(
     receiver: js.Function,
     supplier: js.Object,
@@ -62,7 +59,6 @@ trait YUI extends js.Object {
     whitelist: js.Array[java.lang.String],
     mode: scala.Double
   ): js.Any = js.native
-  //Function|Object|YUI
   def mix(
     receiver: js.Function,
     supplier: js.Object,
@@ -73,16 +69,13 @@ trait YUI extends js.Object {
   ): js.Any = js.native
   //Function|Object|YUI
   def mix(receiver: js.Object, supplier: js.Function): js.Any = js.native
-  //Function|Object|YUI
   def mix(receiver: js.Object, supplier: js.Function, overwrite: scala.Boolean): js.Any = js.native
-  //Function|Object|YUI
   def mix(
     receiver: js.Object,
     supplier: js.Function,
     overwrite: scala.Boolean,
     whitelist: js.Array[java.lang.String]
   ): js.Any = js.native
-  //Function|Object|YUI
   def mix(
     receiver: js.Object,
     supplier: js.Function,
@@ -90,7 +83,6 @@ trait YUI extends js.Object {
     whitelist: js.Array[java.lang.String],
     mode: scala.Double
   ): js.Any = js.native
-  //Function|Object|YUI
   def mix(
     receiver: js.Object,
     supplier: js.Function,
@@ -101,16 +93,13 @@ trait YUI extends js.Object {
   ): js.Any = js.native
   //Function|Object|YUI
   def mix(receiver: js.Object, supplier: js.Object): js.Any = js.native
-  //Function|Object|YUI
   def mix(receiver: js.Object, supplier: js.Object, overwrite: scala.Boolean): js.Any = js.native
-  //Function|Object|YUI
   def mix(
     receiver: js.Object,
     supplier: js.Object,
     overwrite: scala.Boolean,
     whitelist: js.Array[java.lang.String]
   ): js.Any = js.native
-  //Function|Object|YUI
   def mix(
     receiver: js.Object,
     supplier: js.Object,
@@ -118,7 +107,6 @@ trait YUI extends js.Object {
     whitelist: js.Array[java.lang.String],
     mode: scala.Double
   ): js.Any = js.native
-  //Function|Object|YUI
   def mix(
     receiver: js.Object,
     supplier: js.Object,

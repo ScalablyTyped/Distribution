@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAccordionLayout
   extends extjsLib.ExtNs.layoutNs.containerNs.IVBox {
   /** [Config Option] (Boolean) */

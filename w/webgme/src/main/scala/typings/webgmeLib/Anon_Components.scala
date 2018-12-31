@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Components extends js.Object {
   /**
-               * Routing path (keys) from origin and file-path 
-               * (values) to custom REST components.
-               * Use the RestRouterGenerator plugin to generate 
-               * a template router (see the generated file for more info).
-               *   config.rest.components = {};
-               */
+    * Routing path (keys) from origin and file-path 
+    * (values) to custom REST components.
+    * Use the RestRouterGenerator plugin to generate 
+    * a template router (see the generated file for more info).
+    *   config.rest.components = {};
+    */
   var components: js.Any
 }
 

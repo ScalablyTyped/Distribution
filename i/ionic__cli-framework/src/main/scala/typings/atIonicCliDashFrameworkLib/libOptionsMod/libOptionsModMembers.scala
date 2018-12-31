@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@ionic/cli-framework/lib/options", JSImport.Namespace)
 @js.native
 object libOptionsModMembers extends js.Object {
-  val parseArgs: js.Any = js.native
+  val parseArgs: atIonicCliDashFrameworkLib.Anon_Args = js.native
   def filterCommandLineOptions[O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](options: js.Array[O], parsedArgs: atIonicCliDashFrameworkLib.definitionsMod.CommandLineOptions): atIonicCliDashFrameworkLib.definitionsMod.CommandLineOptions = js.native
   def filterCommandLineOptions[O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */](
     options: js.Array[O],

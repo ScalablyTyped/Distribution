@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAutomaticValue extends js.Object {
   var ANSIncrement: scala.Double
   var ANVCode: java.lang.String

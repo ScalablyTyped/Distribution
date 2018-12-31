@@ -15,7 +15,6 @@ trait VBComponents extends js.Object {
   def AddCustom(ProgId: java.lang.String): VBComponent = js.native
   /** @param index [index=0] */
   def AddMTDesigner(): VBComponent = js.native
-  /** @param index [index=0] */
   def AddMTDesigner(index: scala.Double): VBComponent = js.native
   def Import(FileName: java.lang.String): VBComponent = js.native
   def Item(index: js.Any): VBComponent = js.native

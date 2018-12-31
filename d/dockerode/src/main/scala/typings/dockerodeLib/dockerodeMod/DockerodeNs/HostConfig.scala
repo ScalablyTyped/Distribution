@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HostConfig extends js.Object {
   var AutoRemove: scala.Boolean
   var Binds: js.Array[java.lang.String]

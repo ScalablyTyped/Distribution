@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodeResult extends js.Object {
   var all: js.Array[CheckResult]
   var any: js.Array[CheckResult]

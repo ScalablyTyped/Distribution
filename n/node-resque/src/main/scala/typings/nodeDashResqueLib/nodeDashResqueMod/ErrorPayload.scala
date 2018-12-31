@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ErrorPayload extends js.Object {
   var backtrace: js.Array[java.lang.String]
   var error: java.lang.String

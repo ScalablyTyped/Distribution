@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Destroy extends js.Object {
   var destroy: js.Function0[scala.Unit]
   var write: js.Function5[

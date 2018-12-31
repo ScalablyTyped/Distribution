@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Macos extends js.Object {
   var development: scala.Boolean
   var linux: scala.Boolean

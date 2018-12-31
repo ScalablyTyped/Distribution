@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Pet extends js.Object {
   var age: java.lang.String
   var animal: java.lang.String

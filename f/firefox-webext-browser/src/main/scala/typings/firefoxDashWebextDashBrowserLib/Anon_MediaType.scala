@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MediaType extends js.Object {
   /** A list of all contexts that apply to the menu. */
   var contexts: js.Array[firefoxDashWebextDashBrowserLib.browserNs.contextMenusNs.ContextType]

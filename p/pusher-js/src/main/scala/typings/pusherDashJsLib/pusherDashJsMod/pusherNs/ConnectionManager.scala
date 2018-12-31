@@ -21,22 +21,22 @@ trait ConnectionManager extends EventsDispatcher {
   var state: java.lang.String = js.native
   var timeline: js.Any = js.native
   /**
-           * Establishes a connection to Pusher.
-           *
-           * Does nothing when connection is already established. See top-level doc
-           * to find events emitted on connection attempts.
-           */
+    * Establishes a connection to Pusher.
+    *
+    * Does nothing when connection is already established. See top-level doc
+    * to find events emitted on connection attempts.
+    */
   def connect(): scala.Unit = js.native
   /** Closes the connection. */
   def disconnect(): scala.Unit = js.native
   def isEncrypted(): scala.Boolean = js.native
   /**
-           * Sends raw data.
-           */
+    * Sends raw data.
+    */
   def send(data: java.lang.String): scala.Boolean = js.native
   /**
-           * Sends an event.
-           */
+    * Sends an event.
+    */
   def send_event(name: java.lang.String, data: java.lang.String, channel: java.lang.String): scala.Boolean = js.native
 }
 

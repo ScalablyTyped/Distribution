@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaHTMLAttributes[T] extends HTMLAttributes[T] {
   var autoPlay: js.UndefOr[scala.Boolean] = js.undefined
   var controls: js.UndefOr[scala.Boolean] = js.undefined

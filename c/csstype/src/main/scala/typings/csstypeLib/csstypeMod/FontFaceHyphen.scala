@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FontFaceHyphen extends js.Object {
   var `-moz-font-feature-settings`: js.UndefOr[csstypeLib.FontFaceFontFeatureSettingsProperty] = js.undefined
   var `font-display`: js.UndefOr[csstypeLib.FontFaceFontDisplayProperty] = js.undefined

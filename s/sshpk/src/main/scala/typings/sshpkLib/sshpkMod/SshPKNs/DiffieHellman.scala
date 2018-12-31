@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiffieHellman extends js.Object {
   def computeSecret(otherpk: PrivateKey): nodeLib.Buffer
   def generateKey(): PrivateKey

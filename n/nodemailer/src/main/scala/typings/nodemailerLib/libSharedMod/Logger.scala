@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Logger extends js.Object {
   def debug(params: js.Any*): scala.Unit
   def error(params: js.Any*): scala.Unit

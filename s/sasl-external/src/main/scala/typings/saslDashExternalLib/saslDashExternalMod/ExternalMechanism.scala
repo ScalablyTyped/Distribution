@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExternalMechanism
   extends saslmechanismsLib.saslmechanismsMod.FactoryNs.Mechanism {
   var clientFirst: saslDashExternalLib.saslDashExternalLibNumbers.`true`

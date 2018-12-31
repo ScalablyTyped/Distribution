@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ElementProps
   extends stripeDashV3Lib.stripeNs.elementsNs.ElementsOptions {
   var className: js.UndefOr[java.lang.String] = js.undefined

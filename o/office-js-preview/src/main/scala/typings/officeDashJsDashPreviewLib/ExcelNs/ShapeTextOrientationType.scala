@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait ShapeTextOrientationType extends js.Object
 
 /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.ShapeTextOrientationType")
 @js.native
 object ShapeTextOrientationType extends js.Object {

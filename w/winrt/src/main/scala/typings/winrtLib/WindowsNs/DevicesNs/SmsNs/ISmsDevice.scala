@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISmsDevice extends js.Object {
   var accountPhoneNumber: java.lang.String
   var cellularClass: CellularClass

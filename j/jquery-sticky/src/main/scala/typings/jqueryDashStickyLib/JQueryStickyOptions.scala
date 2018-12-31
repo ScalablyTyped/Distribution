@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JQueryStickyOptions extends js.Object {
   /**
   	 * Pixels between the page bottom and the element's bottom.

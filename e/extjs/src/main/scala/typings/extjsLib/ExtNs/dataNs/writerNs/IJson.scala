@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IJson extends IWriter {
   /** [Config Option] (Boolean) */
   var allowSingle: js.UndefOr[scala.Boolean] = js.undefined

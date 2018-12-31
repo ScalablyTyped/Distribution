@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VerifyCustomTokenResponse extends js.Object {
   /** If idToken is STS id token, then this field will be expiration time of STS id token in seconds. */
   var expiresIn: js.UndefOr[java.lang.String] = js.undefined

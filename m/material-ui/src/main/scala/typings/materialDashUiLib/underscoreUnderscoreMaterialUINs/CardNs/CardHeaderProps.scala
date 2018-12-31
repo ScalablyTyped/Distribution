@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CardHeaderProps extends js.Object {
   var actAsExpander: js.UndefOr[scala.Boolean] = js.undefined
   var avatar: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined

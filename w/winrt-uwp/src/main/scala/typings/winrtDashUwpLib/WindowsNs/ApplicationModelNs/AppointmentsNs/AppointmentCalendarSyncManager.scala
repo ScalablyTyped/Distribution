@@ -33,9 +33,9 @@ abstract class AppointmentCalendarSyncManager () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[AppointmentCalendarSyncManager, _]
   ): scala.Unit = js.native
   /**
-                   * Initiates a sync operation on the AppointmentCalendar .
-                   * @return A Boolean value indicating if the sync was successfully initiated.
-                   */
+    * Initiates a sync operation on the AppointmentCalendar .
+    * @return A Boolean value indicating if the sync was successfully initiated.
+    */
   def syncAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
 }
 

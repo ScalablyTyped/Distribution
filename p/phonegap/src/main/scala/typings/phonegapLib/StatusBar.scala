@@ -6,17 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Defined in lib.d.ts
-
 interface LocalStorage {
-    key;
-    getItem;
-    setItem;
-    removeItem;
-    clear;
+  key;
+  getItem;
+  setItem;
+  removeItem;
+  clear;
 }
 */
-
-
 trait StatusBar extends js.Object {
   var isVisible: scala.Boolean
   def backgroundColorByHexString(hexString: java.lang.String): scala.Unit

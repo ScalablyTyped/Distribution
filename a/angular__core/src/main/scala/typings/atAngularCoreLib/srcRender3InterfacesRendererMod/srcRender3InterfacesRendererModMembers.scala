@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object srcRender3InterfacesRendererModMembers extends js.Object {
   val domRendererFactory3: RendererFactory3 = js.native
   val unusedValueExportToPlacateAjd: /* 1 */ scala.Double = js.native
-  def isProceduralRenderer(renderer: ObjectOrientedRenderer3): /* is ProceduralRenderer3 */scala.Boolean = js.native
-  def isProceduralRenderer(renderer: ProceduralRenderer3): /* is ProceduralRenderer3 */scala.Boolean = js.native
+  def isProceduralRenderer(renderer: ObjectOrientedRenderer3): /* is @angular/core.@angular/core/src/render3/interfaces/renderer.ProceduralRenderer3 */ scala.Boolean = js.native
+  def isProceduralRenderer(renderer: ProceduralRenderer3): /* is @angular/core.@angular/core/src/render3/interfaces/renderer.ProceduralRenderer3 */ scala.Boolean = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SitemapConfig extends js.Object {
   var cacheTime: js.UndefOr[scala.Double] = js.undefined
   var childrens: js.UndefOr[js.Array[Sitemap]] = js.undefined

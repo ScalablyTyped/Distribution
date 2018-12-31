@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Line extends js.Object {
   var accidental: java.lang.String
   var code: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VoidedPurchase extends js.Object {
   /** This kind represents a voided purchase object in the androidpublisher service. */
   var kind: js.UndefOr[java.lang.String] = js.undefined

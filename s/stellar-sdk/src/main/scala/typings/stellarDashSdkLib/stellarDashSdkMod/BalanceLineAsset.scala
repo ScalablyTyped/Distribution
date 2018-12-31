@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BalanceLineAsset extends js.Object {
   var asset_code: java.lang.String
   var asset_issuer: java.lang.String

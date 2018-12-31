@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TimescaleTier extends js.Object {
   var Cell: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.Cell
   var GridPane: sharepointLib.SPNs.JsGridNs.IStyleTypeNs.GridPane

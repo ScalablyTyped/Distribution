@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 /* events types */
 /** Description of a declarative rule for handling events. */
-
 trait Rule extends js.Object {
   /** List of actions that are triggered if one of the condtions is fulfilled. */
   var actions: js.Array[_]

@@ -9,36 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class JoinRoomRequest protected () extends js.Object {
   /**
-                   * Creates a new JoinRoomRequest instance.
-                   * @param {any}     room          The id or the name of the Room to be joined.
-                   * @param {string}  [password]      The password of the Room, in case it is password protected.
-                   * @param {number}  [roomIdToLeave] The id of a previously joined Room that the user should leave when joining the new Room. By default, the last joined Room is left; if a negative number is passed, no previous Room is left.
-                   * @param {boolean} [asSpect=false]       true to join the Room as a spectator (in Game Rooms only).
-                   */
+    * Creates a new JoinRoomRequest instance.
+    * @param {any}     room          The id or the name of the Room to be joined.
+    * @param {string}  [password]      The password of the Room, in case it is password protected.
+    * @param {number}  [roomIdToLeave] The id of a previously joined Room that the user should leave when joining the new Room. By default, the last joined Room is left; if a negative number is passed, no previous Room is left.
+    * @param {boolean} [asSpect=false]       true to join the Room as a spectator (in Game Rooms only).
+    */
   def this(room: js.Any) = this()
-  /**
-                   * Creates a new JoinRoomRequest instance.
-                   * @param {any}     room          The id or the name of the Room to be joined.
-                   * @param {string}  [password]      The password of the Room, in case it is password protected.
-                   * @param {number}  [roomIdToLeave] The id of a previously joined Room that the user should leave when joining the new Room. By default, the last joined Room is left; if a negative number is passed, no previous Room is left.
-                   * @param {boolean} [asSpect=false]       true to join the Room as a spectator (in Game Rooms only).
-                   */
   def this(room: js.Any, password: java.lang.String) = this()
-  /**
-                   * Creates a new JoinRoomRequest instance.
-                   * @param {any}     room          The id or the name of the Room to be joined.
-                   * @param {string}  [password]      The password of the Room, in case it is password protected.
-                   * @param {number}  [roomIdToLeave] The id of a previously joined Room that the user should leave when joining the new Room. By default, the last joined Room is left; if a negative number is passed, no previous Room is left.
-                   * @param {boolean} [asSpect=false]       true to join the Room as a spectator (in Game Rooms only).
-                   */
   def this(room: js.Any, password: java.lang.String, roomIdToLeave: scala.Double) = this()
-  /**
-                   * Creates a new JoinRoomRequest instance.
-                   * @param {any}     room          The id or the name of the Room to be joined.
-                   * @param {string}  [password]      The password of the Room, in case it is password protected.
-                   * @param {number}  [roomIdToLeave] The id of a previously joined Room that the user should leave when joining the new Room. By default, the last joined Room is left; if a negative number is passed, no previous Room is left.
-                   * @param {boolean} [asSpect=false]       true to join the Room as a spectator (in Game Rooms only).
-                   */
   def this(room: js.Any, password: java.lang.String, roomIdToLeave: scala.Double, asSpect: scala.Boolean) = this()
 }
 

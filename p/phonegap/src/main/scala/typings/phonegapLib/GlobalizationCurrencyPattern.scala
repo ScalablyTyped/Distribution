@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GlobalizationCurrencyPattern extends js.Object {
   var code: java.lang.String
   var decimal: java.lang.String

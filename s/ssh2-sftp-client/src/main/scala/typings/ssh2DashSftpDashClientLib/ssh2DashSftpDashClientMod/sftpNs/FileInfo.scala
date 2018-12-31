@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileInfo extends js.Object {
   var accessTime: scala.Double
   var group: scala.Double

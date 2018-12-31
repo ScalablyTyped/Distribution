@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EndTransformDuration extends js.Object {
   var cancel: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.CameraNs.FlightCancelledCallback] = js.undefined
   var complete: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.CameraNs.FlightCompleteCallback] = js.undefined

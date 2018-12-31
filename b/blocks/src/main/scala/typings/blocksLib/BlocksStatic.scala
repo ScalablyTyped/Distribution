@@ -57,13 +57,6 @@ trait BlocksStatic extends js.Object {
     collection: js.Any,
     callback: js.Function3[/* value */ js.Any, /* index */ js.Any, /* collection */ js.Any, scala.Unit]
   ): scala.Unit = js.native
-  /**
-  	 * Iterates over the collection
-  	 * 
-  	 * @param collection The array or object to iterate over
-  	 * @param callback The callback that will be executed for each element in the collection
-  	 * @param thisArg Optional this context for the callback
-  	 */
   def each(
     collection: js.Any,
     callback: js.Function3[/* value */ js.Any, /* index */ js.Any, /* collection */ js.Any, scala.Unit],
@@ -80,13 +73,6 @@ trait BlocksStatic extends js.Object {
     collection: js.Any,
     callback: js.Function3[/* value */ js.Any, /* index */ js.Any, /* collection */ js.Any, scala.Unit]
   ): scala.Unit = js.native
-  /**
-  	 * Iterates over the collection from end to start
-  	 * 
-  	 * @param collection The array or object to iterate over
-  	 * @param callback The callback that will be executed for each element in the collection
-  	 * @param thisArg Optional this context for the callback
-  	 */
   def eachRight(
     collection: js.Any,
     callback: js.Function3[/* value */ js.Any, /* index */ js.Any, /* collection */ js.Any, scala.Unit],
@@ -145,7 +131,7 @@ trait BlocksStatic extends js.Object {
   	 */
   def isElement(value: js.Any): scala.Boolean = js.native
   /**
-     	 * Determines if the specified value is a HTML elements collection.
+    	 * Determines if the specified value is a HTML elements collection.
   	 * Returns whether the value is elements collection.
   	 * 
   	 * @param value The value to check if it is elements collection

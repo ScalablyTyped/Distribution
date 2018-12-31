@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OtherRevocationInfoFormat extends js.Object {
   var otherRevInfo: js.Any
   var otherRevInfoFormat: java.lang.String

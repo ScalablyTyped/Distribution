@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AssetRecord extends Record {
   var amount: java.lang.String
   var asset_code: java.lang.String

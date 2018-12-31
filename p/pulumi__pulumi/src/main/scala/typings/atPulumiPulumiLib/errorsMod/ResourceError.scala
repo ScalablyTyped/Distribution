@@ -21,9 +21,9 @@ class ResourceError protected ()
 @js.native
 object ResourceError extends js.Object {
   /**
-       * Returns true if the given object is an instance of a ResourceError.  This is designed to work even when
-       * multiple copies of the Pulumi SDK have been loaded into the same process.
-       */
-  def isInstance(obj: js.Any): /* is ResourceError */scala.Boolean = js.native
+    * Returns true if the given object is an instance of a ResourceError.  This is designed to work even when
+    * multiple copies of the Pulumi SDK have been loaded into the same process.
+    */
+  def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/errors.ResourceError */ scala.Boolean = js.native
 }
 

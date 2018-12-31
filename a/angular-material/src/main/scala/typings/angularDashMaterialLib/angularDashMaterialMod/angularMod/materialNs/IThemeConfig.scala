@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IThemeConfig extends js.Object {
   var alwaysWatchTheme: scala.Boolean
   var defaultTheme: java.lang.String

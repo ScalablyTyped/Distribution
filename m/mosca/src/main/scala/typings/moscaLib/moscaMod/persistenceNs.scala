@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("mosca", "persistence")
 @js.native
 object persistenceNs extends js.Object {
-  
   trait Persistence extends js.Object {
     def wire(server: moscaLib.moscaMod.Server): scala.Unit
   }

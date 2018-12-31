@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SupportLanguage extends js.Object {
   var aceMode: java.lang.String
   var aliases: js.UndefOr[js.Array[java.lang.String]] = js.undefined

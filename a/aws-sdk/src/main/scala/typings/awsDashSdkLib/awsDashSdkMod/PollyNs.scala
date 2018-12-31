@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 @js.native
 object PollyNs extends js.Object {
   @js.native
+  /**
+    * Creates a presigner object with a set of configuration options.
+    */
   class Presigner ()
     extends awsDashSdkLib.clientsAllMod.PollyNs.Presigner {
-    /**
-       * Creates a presigner object with a set of configuration options.
-       */
     def this(options: awsDashSdkLib.libPollyPresignerMod.PresignerNs.PresignerOptions) = this()
   }
   
   @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class Types ()
     extends awsDashSdkLib.clientsAllMod.PollyNs.Types {
-    /**
-       * Constructs a service object. This object has one method for each API operation.
-       */
     def this(options: awsDashSdkLib.clientsPollyMod.PollyNs.ClientConfiguration) = this()
   }
   
@@ -31,11 +31,11 @@ object PollyNs extends js.Object {
   @js.native
   object PollyNs extends js.Object {
     @js.native
+    /**
+      * Creates a presigner object with a set of configuration options.
+      */
     class Presigner ()
       extends awsDashSdkLib.clientsAllMod.PollyNs.PollyNs.Presigner {
-      /**
-         * Creates a presigner object with a set of configuration options.
-         */
       def this(options: awsDashSdkLib.libPollyPresignerMod.PresignerNs.PresignerOptions) = this()
     }
     

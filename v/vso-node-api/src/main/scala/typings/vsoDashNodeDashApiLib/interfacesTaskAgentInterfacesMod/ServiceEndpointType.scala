@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServiceEndpointType extends js.Object {
   var authenticationSchemes: js.Array[ServiceEndpointAuthenticationScheme]
   var dataSources: js.Array[DataSource]

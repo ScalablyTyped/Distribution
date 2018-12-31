@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Collision.Shapes.b2EdgeChainDef")
 @js.native
+/**
+		* Creates a new edge chain def.
+		**/
 class b2EdgeChainDef () extends js.Object {
   /**
   		* Whether to create an extra edge between the first and last vertices.

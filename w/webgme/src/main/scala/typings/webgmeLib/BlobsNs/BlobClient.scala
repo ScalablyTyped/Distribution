@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class BlobClient protected () extends js.Object {
   /**
-           * @param paramters
-           */
+    * @param paramters
+    */
   def this(parameters: BlobClientParamters) = this()
   /**
-           * Retrieves the Artifact from the blob storage.
-           * @param metadataHash hash associated with the artifact.
-           * @return resolved with Artifact artifact.
-           */
+    * Retrieves the Artifact from the blob storage.
+    * @param metadataHash hash associated with the artifact.
+    * @return resolved with Artifact artifact.
+    */
   @JSName("getArtifact")
   var getArtifact_Original: webgmeLib.Anon_MetadataHash = js.native
   @JSName("getMetadata")
@@ -38,23 +38,23 @@ class BlobClient protected () extends js.Object {
   @JSName("saveAllArtifacts")
   var saveAllArtifacts_Original: webgmeLib.Anon_Callback = js.native
   /**
-           * Creates a new artifact 
-           * and adds it to array of artifacts of the instance.
-           * @param name name of artifact.
-           * @return the created artifact.
-           */
+    * Creates a new artifact 
+    * and adds it to array of artifacts of the instance.
+    * @param name name of artifact.
+    * @return the created artifact.
+    */
   def createArtifact(name: webgmeLib.GmeCommonNs.Name): webgmeLib.GmeClassesNs.Artifact = js.native
   /**
-           * Retrieves the Artifact from the blob storage.
-           * @param metadataHash hash associated with the artifact.
-           * @return resolved with Artifact artifact.
-           */
+    * Retrieves the Artifact from the blob storage.
+    * @param metadataHash hash associated with the artifact.
+    * @return resolved with Artifact artifact.
+    */
   def getArtifact(metadataHash: webgmeLib.GmeCommonNs.MetadataHash): js.Promise[webgmeLib.GmeClassesNs.Artifact] = js.native
   /**
-           * Retrieves the Artifact from the blob storage.
-           * @param metadataHash hash associated with the artifact.
-           * @return resolved with Artifact artifact.
-           */
+    * Retrieves the Artifact from the blob storage.
+    * @param metadataHash hash associated with the artifact.
+    * @return resolved with Artifact artifact.
+    */
   def getArtifact(
     metadataHash: webgmeLib.GmeCommonNs.MetadataHash,
     callback: webgmeLib.GmeCommonNs.ResultCallback[webgmeLib.GmeClassesNs.Artifact]

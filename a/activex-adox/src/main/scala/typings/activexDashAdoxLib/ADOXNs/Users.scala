@@ -12,11 +12,8 @@ trait Users extends js.Object {
   def apply(Item: scala.Double): User = js.native
   /** @param Password [Password=''] */
   def Append(Item: User): scala.Unit = js.native
-  /** @param Password [Password=''] */
   def Append(Item: User, Password: java.lang.String): scala.Unit = js.native
-  /** @param Password [Password=''] */
   def Append(Item: java.lang.String): scala.Unit = js.native
-  /** @param Password [Password=''] */
   def Append(Item: java.lang.String, Password: java.lang.String): scala.Unit = js.native
   def Delete(Item: java.lang.String): scala.Unit = js.native
   def Delete(Item: scala.Double): scala.Unit = js.native

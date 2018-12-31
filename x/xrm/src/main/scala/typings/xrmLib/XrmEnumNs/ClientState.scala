@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait ClientState extends js.Object
 
 /**
-     * Constant Enum: Client States for {@link ClientContext.getClientState clientContext.getClientState()}.
-     * @see {@link Xrm.ClientState}
-     */
+  * Constant Enum: Client States for {@link ClientContext.getClientState clientContext.getClientState()}.
+  * @see {@link Xrm.ClientState}
+  */
 @JSGlobal("XrmEnum.ClientState")
 @js.native
 object ClientState extends js.Object {

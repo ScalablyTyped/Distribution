@@ -13,6 +13,6 @@ object libTypesObservableobjectModMembers extends js.Object {
   def asObservableObject(target: js.Any, name: java.lang.String, defaultEnhancer: mobxLib.libTypesModifiersMod.IEnhancer[_]): ObservableObjectAdministration = js.native
   def generateComputedPropConfig(propName: js.Any): js.Any = js.native
   def generateObservablePropConfig(propName: js.Any): js.Any = js.native
-  def isObservableObject(thing: js.Any): /* is IObservableObject */scala.Boolean = js.native
+  def isObservableObject(thing: js.Any): /* is mobx.mobx/lib/types/observableobject.IObservableObject */ scala.Boolean = js.native
 }
 

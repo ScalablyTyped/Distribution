@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SvgProperties[TLength] extends js.Object {
   var alignmentBaseline: js.UndefOr[AlignmentBaselineProperty] = js.undefined
   var baselineShift: js.UndefOr[BaselineShiftProperty[TLength]] = js.undefined

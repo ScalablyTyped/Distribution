@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommandModule[T, U] extends js.Object {
   var aliases: js.UndefOr[js.Array[java.lang.String] | java.lang.String] = js.undefined
   var builder: js.UndefOr[CommandBuilder[T, U]] = js.undefined

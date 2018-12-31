@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Instance extends js.Object {
   /** URI which shows where a user can acquire this instance. */
   var acquisitionUri: js.UndefOr[java.lang.String] = js.undefined
@@ -18,12 +17,12 @@ trait Instance extends js.Object {
   /** Localized display name. */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The platform type.
-               * Possible values are:
-               * - "ANDROID" - Instance is for Android.
-               * - "IOS" - Instance is for iOS
-               * - "WEB_APP" - Instance is for Web App.
-               */
+    * The platform type.
+    * Possible values are:
+    * - "ANDROID" - Instance is for Android.
+    * - "IOS" - Instance is for iOS
+    * - "WEB_APP" - Instance is for Web App.
+    */
   var platformType: js.UndefOr[java.lang.String] = js.undefined
   /** Flag to show if this game instance supports realtime play. */
   var realtimePlay: js.UndefOr[scala.Boolean] = js.undefined

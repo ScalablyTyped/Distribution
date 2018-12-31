@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShareOpenGraphDialogParams extends DialogParams {
   var action_properties: org.scalablytyped.runtime.StringDictionary[js.Any]
   var action_type: java.lang.String

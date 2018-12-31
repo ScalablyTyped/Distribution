@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ButtonOptions extends js.Object {
   var corners: js.UndefOr[scala.Boolean] = js.undefined
   var icon: js.UndefOr[java.lang.String] = js.undefined

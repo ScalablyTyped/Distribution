@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HitPayload extends js.Object {
   var customDimensions: js.UndefOr[
     reactDashNativeDashGoogleDashAnalyticsDashBridgeLib.distModelsCustomMod.CustomDimensionsByIndex | reactDashNativeDashGoogleDashAnalyticsDashBridgeLib.distModelsCustomMod.CustomDimensionsByField

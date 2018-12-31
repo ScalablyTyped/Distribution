@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Features[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace] extends js.Object {
   var __brand: vscodeDashLanguageserverLib.vscodeDashLanguageserverLibStrings.features
   var client: js.UndefOr[ClientFeature[PClient]] = js.undefined

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Dynamics.Joints.b2GearJointDef")
 @js.native
+/**
+		* Constructor.
+		**/
 class b2GearJointDef () extends b2JointDef {
   /**
   		* The first revolute/prismatic joint attached to the gear joint.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISvgContext
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Adds points to the subpath such that the arc described by the circumference of the circle described by the arguments

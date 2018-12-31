@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CameraOptions extends js.Object {
   /** If zooming, the zoom center (defaults to map center) */
   var around: js.UndefOr[LngLatLike] = js.undefined

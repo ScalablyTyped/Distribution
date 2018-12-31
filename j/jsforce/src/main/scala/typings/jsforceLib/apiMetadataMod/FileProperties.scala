@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileProperties extends js.Object {
   var createdById: java.lang.String
   var createdByName: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BrowserInfo extends js.Object {
   var bot: js.UndefOr[detectDashBrowserLib.detectDashBrowserLibNumbers.`true`] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined

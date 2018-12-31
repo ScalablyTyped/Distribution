@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "EKS")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class EKS ()
   extends awsDashSdkLib.awsDashSdkMod.EKS {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsEksMod.EKSNs.ClientConfiguration) = this()
 }
 

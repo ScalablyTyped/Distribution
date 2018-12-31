@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Value extends js.Object {
   var SVGHeight: scala.Double
   var SVGWidth: scala.Double

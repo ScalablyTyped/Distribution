@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object anyDashDbDashTransactionModMembers extends js.Object {
   /**
-   * Start a transaction
-   */
+    * Start a transaction
+    */
   def apply(q: anyDashDbLib.anyDashDbMod.Queryable): anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.Transaction = js.native
   def apply(q: anyDashDbLib.anyDashDbMod.Queryable, beginStatement: java.lang.String): anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.Transaction = js.native
   def apply(
@@ -30,9 +30,6 @@ object anyDashDbDashTransactionModMembers extends js.Object {
       scala.Unit
     ]
   ): anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.Transaction = js.native
-  /**
-   * Start a transaction
-   */
   def apply(
     q: anyDashDbLib.anyDashDbMod.Queryable,
     options: anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.TransactionOptions
@@ -52,9 +49,6 @@ object anyDashDbDashTransactionModMembers extends js.Object {
       scala.Unit
     ]
   ): anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.Transaction = js.native
-  /**
-   * Start a transaction
-   */
   def apply(
     q: anyDashDbLib.anyDashDbMod.Queryable,
     options: anyDashDbDashTransactionLib.anyDashDbDashTransactionMod.beginNs.TransactionOptions,

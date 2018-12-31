@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AsObject extends js.Object {
   var methodsList: js.Array[googleDashProtobufLib.googleProtobufApiUnderscorePbMod.MethodNs.AsObject]
   var mixinsList: js.Array[googleDashProtobufLib.googleProtobufApiUnderscorePbMod.MixinNs.AsObject]

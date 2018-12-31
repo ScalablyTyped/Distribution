@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UnderlyingSink[W] extends js.Object {
   var abort: js.UndefOr[WritableStreamErrorCallback] = js.undefined
   var close: js.UndefOr[WritableStreamDefaultControllerCloseCallback] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnimatableProperties[S /* <: js.Object */] extends js.Object {
   var animation: js.UndefOr[reactDashNativeDashAnimatableLib.Animation | java.lang.String] = js.undefined
   var delay: js.UndefOr[scala.Double] = js.undefined

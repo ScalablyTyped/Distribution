@@ -13,9 +13,9 @@ class Pipe () extends js.Object {
   /** add a new `Fitting` (piece) to the pipe (aka. pipeline) */
   def fit(pipe: Fitting): Pipe = js.native
   /**
-       * Send something down the pipe (aka. pipeline)! Any number of arguments
-       * can be sent, but often there's just a single `context` object.
-       */
+    * Send something down the pipe (aka. pipeline)! Any number of arguments
+    * can be sent, but often there's just a single `context` object.
+    */
   def flow(args: js.Any*): Pipe = js.native
   /** Redirect the flow to another pipe (aka. pipeline). */
   def siphon(options: PipeworksOptions, pipe: Fitting): Pipe = js.native

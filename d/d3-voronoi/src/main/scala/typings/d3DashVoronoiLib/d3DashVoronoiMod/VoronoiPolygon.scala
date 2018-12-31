@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait VoronoiPolygon[T]
   extends stdLib.Array[js.Tuple2[scala.Double, scala.Double]] {
   /**
-       * The input data corresponding to this Voronoi polygon.
-       */
+    * The input data corresponding to this Voronoi polygon.
+    */
   var data: T = js.native
 }
 

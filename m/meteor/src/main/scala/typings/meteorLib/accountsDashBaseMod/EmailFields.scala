@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EmailFields extends js.Object {
   var from: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   var html: js.UndefOr[

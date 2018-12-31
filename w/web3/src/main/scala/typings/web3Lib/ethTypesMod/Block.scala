@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Block extends BlockHeader {
   var difficulty: scala.Double
   var size: scala.Double

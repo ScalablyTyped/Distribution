@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object mongooseDashAutoDashIncrementMod extends js.Object {
   /**
-   * Initialize plugin by creating counter collection in database.
-   */
+    * Initialize plugin by creating counter collection in database.
+    */
   def initialize(connection: mongooseLib.mongooseMod.Connection): scala.Unit = js.native
   /**
-   * The function to use when invoking the plugin on a custom schema.
-   */
+    * The function to use when invoking the plugin on a custom schema.
+    */
   def plugin(schema: mongooseLib.mongooseMod.Schema, options: js.Object): scala.Unit = js.native
 }
 

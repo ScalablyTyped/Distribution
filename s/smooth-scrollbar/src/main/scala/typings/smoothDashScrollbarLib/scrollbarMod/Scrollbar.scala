@@ -17,28 +17,28 @@ class Scrollbar protected ()
   var _plugins: js.Any = js.native
   var _renderID: js.Any = js.native
   /**
-       * Container bounding rect
-       */
+    * Container bounding rect
+    */
   @JSName("bounding")
   var bounding_Scrollbar: smoothDashScrollbarLib.Anon_Bottom = js.native
   /**
-       * Max-allowed scrolling offsets
-       */
+    * Max-allowed scrolling offsets
+    */
   @JSName("limit")
   var limit_Scrollbar: smoothDashScrollbarLib.Anon_Y = js.native
   /**
-       * Current scrolling offsets
-       */
+    * Current scrolling offsets
+    */
   @JSName("offset")
   var offset_Scrollbar: smoothDashScrollbarLib.Anon_Y = js.native
   /**
-       * Options for current scrollbar instancs
-       */
+    * Options for current scrollbar instancs
+    */
   @JSName("options")
   val options_Scrollbar: smoothDashScrollbarLib.optionsMod.Options = js.native
   /**
-       * Parent scrollbar
-       */
+    * Parent scrollbar
+    */
   @JSName("parent")
   val parent_Scrollbar: Scrollbar | scala.Null = js.native
   @JSName("track")

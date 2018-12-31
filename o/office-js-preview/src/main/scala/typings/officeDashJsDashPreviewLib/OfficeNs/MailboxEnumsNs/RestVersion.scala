@@ -9,35 +9,35 @@ import scala.scalajs.js.annotation._
 sealed trait RestVersion extends js.Object
 
 /**
-         * Specifies the version of the REST API that corresponds to a REST-formatted item ID.
-         *
-         * [Api set: Mailbox 1.3]
-         *
-         * @remarks
-         * <table><tr><td>
-         * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
-         * </td><td>Compose or read</td></tr></table>
-         */
+  * Specifies the version of the REST API that corresponds to a REST-formatted item ID.
+  *
+  * [Api set: Mailbox 1.3]
+  *
+  * @remarks
+  * <table><tr><td>
+  * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
+  * </td><td>Compose or read</td></tr></table>
+  */
 @JSGlobal("Office.MailboxEnums.RestVersion")
 @js.native
 object RestVersion extends js.Object {
   /**
-               * Beta.
-               */
+    * Beta.
+    */
   @js.native
   sealed trait Beta
     extends officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.RestVersion
   
   /**
-               * Version 1.0.
-               */
+    * Version 1.0.
+    */
   @js.native
   sealed trait v1_0
     extends officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.RestVersion
   
   /**
-               * Version 2.0.
-               */
+    * Version 2.0.
+    */
   @js.native
   sealed trait v2_0
     extends officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.RestVersion

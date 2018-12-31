@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryOptions extends js.Object {
   var autoPage: js.UndefOr[scala.Boolean] = js.undefined
   var captureStackTrace: js.UndefOr[scala.Boolean] = js.undefined

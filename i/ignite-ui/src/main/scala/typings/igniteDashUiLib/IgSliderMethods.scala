@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgSliderMethods extends js.Object {
   def clearBookmarks(): scala.Unit
   def destroy(): scala.Unit

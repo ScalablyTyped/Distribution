@@ -18,15 +18,15 @@ abstract class Print3DDevice () extends js.Object {
 @js.native
 object Print3DDevice extends js.Object {
   /**
-                   * Creates a Print3DDevice object that represents a 3D printer connected to the device.
-                   * @param deviceId The device ID of the 3D printer.
-                   * @return A Print3DDevice object that corresponds to the specified 3D printer.
-                   */
+    * Creates a Print3DDevice object that represents a 3D printer connected to the device.
+    * @param deviceId The device ID of the 3D printer.
+    * @return A Print3DDevice object that corresponds to the specified 3D printer.
+    */
   def fromIdAsync(deviceId: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.DevicesNs.PrintersNs.Print3DDevice] = js.native
   /**
-                   * Gets an Advanced Query Syntax (AQS) string that can be used to find all 3D printers that are connected to the device.
-                   * @return An AQS string that can be used to find all 3D printers connected to the device.
-                   */
+    * Gets an Advanced Query Syntax (AQS) string that can be used to find all 3D printers that are connected to the device.
+    * @return An AQS string that can be used to find all 3D printers connected to the device.
+    */
   def getDeviceSelector(): java.lang.String = js.native
 }
 

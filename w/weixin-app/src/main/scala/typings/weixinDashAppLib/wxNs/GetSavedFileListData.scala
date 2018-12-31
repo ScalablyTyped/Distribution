@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetSavedFileListData extends js.Object {
   /**
   		 * 接口调用结果

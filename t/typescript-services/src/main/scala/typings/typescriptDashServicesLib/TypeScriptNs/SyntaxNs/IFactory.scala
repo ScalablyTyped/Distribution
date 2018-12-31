@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFactory extends js.Object {
   def argumentList(
     typeArgumentList: typescriptDashServicesLib.TypeScriptNs.TypeArgumentListSyntax,

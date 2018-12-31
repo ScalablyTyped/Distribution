@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnKeyListener extends js.Object {
   def onKey(
     v: androiduixLib.androidNs.viewNs.View,

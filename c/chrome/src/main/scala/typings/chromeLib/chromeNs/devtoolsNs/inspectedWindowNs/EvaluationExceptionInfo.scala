@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EvaluationExceptionInfo extends js.Object {
   /** Set if the error occurred on the DevTools side before the expression is evaluated. */
   var code: java.lang.String

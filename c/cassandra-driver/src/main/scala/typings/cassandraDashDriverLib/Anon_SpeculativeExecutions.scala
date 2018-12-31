@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SpeculativeExecutions extends js.Object {
   var achievedConsistency: cassandraDashDriverLib.cassandraDashDriverMod.typesNs.consistencies
   var customPayload: js.Any

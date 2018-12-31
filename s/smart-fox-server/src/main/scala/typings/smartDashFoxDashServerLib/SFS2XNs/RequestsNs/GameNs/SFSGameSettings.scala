@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class SFSGameSettings protected ()
   extends smartDashFoxDashServerLib.SFS2XNs.RequestsNs.RoomSettings {
   /**
-                   * Creates a new SFSGameSettings instance.
-                   * @param {string} name The name of the Game Room to be created.
-                   */
+    * Creates a new SFSGameSettings instance.
+    * @param {string} name The name of the Game Room to be created.
+    */
   def this(name: java.lang.String) = this()
   /** @type {number} In private games, defines the number of seconds that users have to reply to the invitation to join a game. The suggested range is 10 to 40 seconds. */
   var invitationExpiryTime: scala.Double = js.native

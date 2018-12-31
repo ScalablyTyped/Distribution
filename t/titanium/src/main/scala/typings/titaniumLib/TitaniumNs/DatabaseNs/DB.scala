@@ -38,17 +38,8 @@ trait DB
   			 * Executes an SQL statement against the database and returns a `ResultSet`.
   			 */
   def execute(sql: java.lang.String): ResultSet = js.native
-  /**
-  			 * Executes an SQL statement against the database and returns a `ResultSet`.
-  			 */
   def execute(sql: java.lang.String, vararg: java.lang.String): ResultSet = js.native
-  /**
-  			 * Executes an SQL statement against the database and returns a `ResultSet`.
-  			 */
   def execute(sql: java.lang.String, vararg: js.Any): ResultSet = js.native
-  /**
-  			 * Executes an SQL statement against the database and returns a `ResultSet`.
-  			 */
   def execute(sql: java.lang.String, vararg: js.Array[_ | java.lang.String]): ResultSet = js.native
   /**
   			 * Gets the value of the <Titanium.Database.DB.file> property.

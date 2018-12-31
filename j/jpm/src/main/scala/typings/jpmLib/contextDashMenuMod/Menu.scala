@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Menu extends js.Object {
   var contentScript: java.lang.String | js.Array[java.lang.String]
   var contentScriptFile: java.lang.String | js.Array[java.lang.String]

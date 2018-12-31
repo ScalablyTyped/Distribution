@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocaleFormats extends js.Object {
   var D: js.UndefOr[java.lang.String] = js.undefined
   var F: js.UndefOr[java.lang.String] = js.undefined

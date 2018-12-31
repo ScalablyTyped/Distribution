@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 6 members from Set(std.Partial) */ @js.native
+- Lifted 6 members from Set(std.Partial<react-table.react-table.ControlledStateCallbackProps>, std.Partial<react-table.react-table.ControlledStateOverrideProps>, std.Partial<react-table.react-table.ComponentDecoratorProps>, std.Partial<react-table.react-table.PivotingProps>, std.Partial<react-table.react-table.TextProps>, std.Partial<react-table.react-table.ComponentProps>) */ @js.native
 trait TableProps[D, ResolvedData] extends js.Object {
   /**
-       * Default: string
-       * Adding a -striped className to ReactTable will slightly color odd numbered rows for legibility
-       * Adding a -highlight className to ReactTable will highlight any row as you hover over it
-       */
+    * Default: string
+    * Adding a -striped className to ReactTable will slightly color odd numbered rows for legibility
+    * Adding a -highlight className to ReactTable will highlight any row as you hover over it
+    */
   var className: java.lang.String = js.native
   /** Default: true */
   var collapseOnDataChange: scala.Boolean = js.native
@@ -59,10 +59,10 @@ trait TableProps[D, ResolvedData] extends js.Object {
   /** Default: false */
   var manual: scala.Boolean = js.native
   /**
-       * Default: undefined
-       * Otherwise take value from 'pageSize' if defined
-       * @TODO: add minRows to react-table defaultProps even if undefined
-       */
+    * Default: undefined
+    * Otherwise take value from 'pageSize' if defined
+    * @TODO: add minRows to react-table defaultProps even if undefined
+    */
   var minRows: js.UndefOr[scala.Double] = js.native
   /** Default: true */
   var multiSort: scala.Boolean = js.native
@@ -106,7 +106,6 @@ trait TableProps[D, ResolvedData] extends js.Object {
   def defaultSortMethod(a: js.Any, b: js.Any, desc: js.Any): scala.Double = js.native
   /** On change. */
   def onChange(): scala.Unit = js.native
-  /** On change. */
   def onChange(value: js.Any): scala.Unit = js.native
   /** Server-side callbacks */
   def onFetchData(state: js.Any, instance: js.Any): scala.Unit = js.native

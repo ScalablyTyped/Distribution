@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileResult extends Result {
   @JSName("fetchSpec")
   var fetchSpec_FileResult: scala.Null | java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISignaturePromptInfoMetadataBased extends js.Object {
   var IsReferencedBySignatureObject: scala.Boolean
   var MeaningPropertyID: scala.Double

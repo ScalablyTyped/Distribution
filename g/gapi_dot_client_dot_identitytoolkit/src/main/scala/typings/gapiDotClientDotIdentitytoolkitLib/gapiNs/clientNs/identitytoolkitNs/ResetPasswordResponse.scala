@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResetPasswordResponse extends js.Object {
   /** The user's email. If the out-of-band code is for email recovery, the user's original email. */
   var email: js.UndefOr[java.lang.String] = js.undefined

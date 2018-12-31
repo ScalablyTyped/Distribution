@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * The base type for all Titanium events.
 	 */
-
 trait Event extends js.Object {
   /**
   		 * True if the event will try to bubble up if possible.

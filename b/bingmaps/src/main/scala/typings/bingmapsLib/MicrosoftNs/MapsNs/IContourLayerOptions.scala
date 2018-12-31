@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** 
-     * The contour layer options
-     */
-
+  * The contour layer options
+  */
 trait IContourLayerOptions extends js.Object {
   /** A callback function which defines the color of the contour line fill. */
   var colorCallback: js.UndefOr[

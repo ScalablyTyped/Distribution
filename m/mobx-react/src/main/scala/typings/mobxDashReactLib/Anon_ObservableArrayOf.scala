@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ObservableArrayOf extends js.Object {
   var arrayOrObservableArray: reactLib.reactMod.ReactNs.Requireable[_]
   var arrayOrObservableArrayOf: js.Function1[

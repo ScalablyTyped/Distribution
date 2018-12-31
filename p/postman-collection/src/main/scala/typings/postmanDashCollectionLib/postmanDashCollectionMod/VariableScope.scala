@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(postmanDashCollectionLib.postmanDashCollectionMod.VariableScopeDefinition because Would inherit conflicting mutable fields List(description, name, disabled, id))*/
+/* RemoveMultipleInheritance: Dropped parents List(postmanDashCollectionLib.postmanDashCollectionMod.VariableScopeDefinition because Would inherit conflicting mutable fields List(description, disabled, id, name))*/
 @JSImport("postman-collection", "VariableScope")
 @js.native
 class VariableScope protected () extends Property[VariableScopeDefinition] {

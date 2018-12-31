@@ -9,87 +9,75 @@ import scala.scalajs.js.annotation._
 @js.native
 class DocumentReference protected () extends js.Object {
   /**
-     * The `Firestore` for the Firestore database (useful for performing
-     * transactions, etc.).
-     */
+    * The `Firestore` for the Firestore database (useful for performing
+    * transactions, etc.).
+    */
   val firestore: FirebaseFirestore = js.native
   /** The identifier of the document within its collection. */
   val id: java.lang.String = js.native
   /**
-     * A reference to the Collection to which this DocumentReference belongs.
-     */
+    * A reference to the Collection to which this DocumentReference belongs.
+    */
   val parent: CollectionReference = js.native
   /**
-     * A string representing the path of the referenced document (relative
-     * to the root of the database).
-     */
+    * A string representing the path of the referenced document (relative
+    * to the root of the database).
+    */
   val path: java.lang.String = js.native
   /**
-     * Gets a `CollectionReference` instance that refers to the collection at
-     * the specified path.
-     *
-     * @param collectionPath A slash-separated path to a collection.
-     * @return The `CollectionReference` instance.
-     */
+    * Gets a `CollectionReference` instance that refers to the collection at
+    * the specified path.
+    *
+    * @param collectionPath A slash-separated path to a collection.
+    * @return The `CollectionReference` instance.
+    */
   def collection(collectionPath: java.lang.String): CollectionReference = js.native
   /**
-     * Deletes the document referred to by this `DocumentReference`.
-     *
-     * @return A Promise resolved once the document has been successfully
-     * deleted from the backend (Note that it won't resolve while you're
-     * offline).
-     */
+    * Deletes the document referred to by this `DocumentReference`.
+    *
+    * @return A Promise resolved once the document has been successfully
+    * deleted from the backend (Note that it won't resolve while you're
+    * offline).
+    */
   def delete(): js.Promise[scala.Unit] = js.native
   /**
-     * Reads the document referred to by this `DocumentReference`.
-     *
-     * Note: By default, get() attempts to provide up-to-date data when possible
-     * by waiting for data from the server, but it may return cached data or fail
-     * if you are offline and the server cannot be reached. This behavior can be
-     * altered via the `GetOptions` parameter.
-     *
-     * @param options An object to configure the get behavior.
-     * @return A Promise resolved with a DocumentSnapshot containing the
-     * current document contents.
-     */
+    * Reads the document referred to by this `DocumentReference`.
+    *
+    * Note: By default, get() attempts to provide up-to-date data when possible
+    * by waiting for data from the server, but it may return cached data or fail
+    * if you are offline and the server cannot be reached. This behavior can be
+    * altered via the `GetOptions` parameter.
+    *
+    * @param options An object to configure the get behavior.
+    * @return A Promise resolved with a DocumentSnapshot containing the
+    * current document contents.
+    */
   def get(): js.Promise[DocumentSnapshot] = js.native
-  /**
-     * Reads the document referred to by this `DocumentReference`.
-     *
-     * Note: By default, get() attempts to provide up-to-date data when possible
-     * by waiting for data from the server, but it may return cached data or fail
-     * if you are offline and the server cannot be reached. This behavior can be
-     * altered via the `GetOptions` parameter.
-     *
-     * @param options An object to configure the get behavior.
-     * @return A Promise resolved with a DocumentSnapshot containing the
-     * current document contents.
-     */
   def get(options: GetOptions): js.Promise[DocumentSnapshot] = js.native
   /**
-     * Returns true if this `DocumentReference` is equal to the provided one.
-     *
-     * @param other The `DocumentReference` to compare against.
-     * @return true if this `DocumentReference` is equal to the provided one.
-     */
+    * Returns true if this `DocumentReference` is equal to the provided one.
+    *
+    * @param other The `DocumentReference` to compare against.
+    * @return true if this `DocumentReference` is equal to the provided one.
+    */
   def isEqual(other: DocumentReference): scala.Boolean = js.native
   /**
-     * Attaches a listener for DocumentSnapshot events. You may either pass
-     * individual `onNext` and `onError` callbacks or pass a single observer
-     * object with `next` and `error` callbacks.
-     *
-     * NOTE: Although an `onCompletion` callback can be provided, it will
-     * never be called because the snapshot stream is never-ending.
-     *
-     * @param options Options controlling the listen behavior.
-     * @param onNext A callback to be called every time a new `DocumentSnapshot`
-     * is available.
-     * @param onError A callback to be called if the listen fails or is
-     * cancelled. No further callbacks will occur.
-     * @param observer A single object containing `next` and `error` callbacks.
-     * @return An unsubscribe function that can be called to cancel
-     * the snapshot listener.
-     */
+    * Attaches a listener for DocumentSnapshot events. You may either pass
+    * individual `onNext` and `onError` callbacks or pass a single observer
+    * object with `next` and `error` callbacks.
+    *
+    * NOTE: Although an `onCompletion` callback can be provided, it will
+    * never be called because the snapshot stream is never-ending.
+    *
+    * @param options Options controlling the listen behavior.
+    * @param onNext A callback to be called every time a new `DocumentSnapshot`
+    * is available.
+    * @param onError A callback to be called if the listen fails or is
+    * cancelled. No further callbacks will occur.
+    * @param observer A single object containing `next` and `error` callbacks.
+    * @return An unsubscribe function that can be called to cancel
+    * the snapshot listener.
+    */
   def onSnapshot(observer: atFirebaseFirestoreDashTypesLib.Anon_Next): js.Function0[scala.Unit] = js.native
   def onSnapshot(onNext: js.Function1[/* snapshot */ DocumentSnapshot, scala.Unit]): js.Function0[scala.Unit] = js.native
   def onSnapshot(
@@ -115,65 +103,42 @@ class DocumentReference protected () extends js.Object {
     onCompletion: js.Function0[scala.Unit]
   ): js.Function0[scala.Unit] = js.native
   /**
-     * Writes to the document referred to by this `DocumentReference`. If the
-     * document does not yet exist, it will be created. If you pass
-     * `SetOptions`, the provided data can be merged into an existing document.
-     *
-     * @param data A map of the fields and values for the document.
-     * @param options An object to configure the set behavior.
-     * @return A Promise resolved once the data has been successfully written
-     * to the backend (Note that it won't resolve while you're offline).
-     */
+    * Writes to the document referred to by this `DocumentReference`. If the
+    * document does not yet exist, it will be created. If you pass
+    * `SetOptions`, the provided data can be merged into an existing document.
+    *
+    * @param data A map of the fields and values for the document.
+    * @param options An object to configure the set behavior.
+    * @return A Promise resolved once the data has been successfully written
+    * to the backend (Note that it won't resolve while you're offline).
+    */
   def set(data: DocumentData): js.Promise[scala.Unit] = js.native
-  /**
-     * Writes to the document referred to by this `DocumentReference`. If the
-     * document does not yet exist, it will be created. If you pass
-     * `SetOptions`, the provided data can be merged into an existing document.
-     *
-     * @param data A map of the fields and values for the document.
-     * @param options An object to configure the set behavior.
-     * @return A Promise resolved once the data has been successfully written
-     * to the backend (Note that it won't resolve while you're offline).
-     */
   def set(data: DocumentData, options: SetOptions): js.Promise[scala.Unit] = js.native
   /**
-     * Updates fields in the document referred to by this `DocumentReference`.
-     * The update will fail if applied to a document that does not exist.
-     *
-     * @param data An object containing the fields and values with which to
-     * update the document. Fields can contain dots to reference nested fields
-     * within the document.
-     * @return A Promise resolved once the data has been successfully written
-     * to the backend (Note that it won't resolve while you're offline).
-     */
+    * Updates fields in the document referred to by this `DocumentReference`.
+    * The update will fail if applied to a document that does not exist.
+    *
+    * @param data An object containing the fields and values with which to
+    * update the document. Fields can contain dots to reference nested fields
+    * within the document.
+    * @return A Promise resolved once the data has been successfully written
+    * to the backend (Note that it won't resolve while you're offline).
+    */
   def update(data: UpdateData): js.Promise[scala.Unit] = js.native
-  /**
-     * Updates fields in the document referred to by this `DocumentReference`.
-     * The update will fail if applied to a document that does not exist.
-     *
-     * Nested fields can be updated by providing dot-separated field path
-     * strings or by providing FieldPath objects.
-     *
-     * @param field The first field to update.
-     * @param value The first value.
-     * @param moreFieldsAndValues Additional key value pairs.
-     * @return A Promise resolved once the data has been successfully written
-     * to the backend (Note that it won't resolve while you're offline).
-     */
   def update(field: FieldPath, value: js.Any, moreFieldsAndValues: js.Any*): js.Promise[scala.Unit] = js.native
   /**
-     * Updates fields in the document referred to by this `DocumentReference`.
-     * The update will fail if applied to a document that does not exist.
-     *
-     * Nested fields can be updated by providing dot-separated field path
-     * strings or by providing FieldPath objects.
-     *
-     * @param field The first field to update.
-     * @param value The first value.
-     * @param moreFieldsAndValues Additional key value pairs.
-     * @return A Promise resolved once the data has been successfully written
-     * to the backend (Note that it won't resolve while you're offline).
-     */
+    * Updates fields in the document referred to by this `DocumentReference`.
+    * The update will fail if applied to a document that does not exist.
+    *
+    * Nested fields can be updated by providing dot-separated field path
+    * strings or by providing FieldPath objects.
+    *
+    * @param field The first field to update.
+    * @param value The first value.
+    * @param moreFieldsAndValues Additional key value pairs.
+    * @return A Promise resolved once the data has been successfully written
+    * to the backend (Note that it won't resolve while you're offline).
+    */
   def update(field: java.lang.String, value: js.Any, moreFieldsAndValues: js.Any*): js.Promise[scala.Unit] = js.native
 }
 

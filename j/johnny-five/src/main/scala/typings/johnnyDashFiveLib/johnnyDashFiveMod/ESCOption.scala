@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ESCOption extends js.Object {
   var controller: js.UndefOr[java.lang.String] = js.undefined
   var device: js.UndefOr[java.lang.String] = js.undefined

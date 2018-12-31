@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class HttpMediaTypeHeaderValue protected () extends js.Object {
   /**
-                       * Initializes a new instance of the HttpMediaTypeHeaderValue class.
-                       * @param mediaType The media-type of the entity-body used in the Content-Type HTTP header.
-                       */
+    * Initializes a new instance of the HttpMediaTypeHeaderValue class.
+    * @param mediaType The media-type of the entity-body used in the Content-Type HTTP header.
+    */
   def this(mediaType: java.lang.String) = this()
   /** Gets or sets the character set of the entity-body used in the Content-Type HTTP header. */
   var charSet: java.lang.String = js.native
@@ -27,15 +27,15 @@ class HttpMediaTypeHeaderValue protected () extends js.Object {
 @js.native
 object HttpMediaTypeHeaderValue extends js.Object {
   /**
-                       * Converts a string to an HttpMediaTypeHeaderValue instance.
-                       * @param input A string that represents the media-type and character set information used in the Content-Type HTTP header.
-                       * @return An HttpMediaTypeHeaderValue instance.
-                       */
+    * Converts a string to an HttpMediaTypeHeaderValue instance.
+    * @param input A string that represents the media-type and character set information used in the Content-Type HTTP header.
+    * @return An HttpMediaTypeHeaderValue instance.
+    */
   def parse(input: java.lang.String): winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpMediaTypeHeaderValue = js.native
   /**
-                       * Determines whether a string is valid HttpMediaTypeHeaderValue information.
-                       * @param input The string to validate.
-                       */
+    * Determines whether a string is valid HttpMediaTypeHeaderValue information.
+    * @param input The string to validate.
+    */
   def tryParse(input: java.lang.String): winrtDashUwpLib.Anon_MediaTypeHeaderValue = js.native
 }
 

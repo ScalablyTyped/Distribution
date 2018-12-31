@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILayer extends IElement {
   /** [Config Option] (String) */
   var cls: js.UndefOr[java.lang.String] = js.undefined

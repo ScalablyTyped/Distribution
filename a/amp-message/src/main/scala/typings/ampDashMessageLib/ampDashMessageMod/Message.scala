@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Message extends js.Object {
   def inspect(): java.lang.String
   def pop(): js.UndefOr[nodeLib.Buffer]

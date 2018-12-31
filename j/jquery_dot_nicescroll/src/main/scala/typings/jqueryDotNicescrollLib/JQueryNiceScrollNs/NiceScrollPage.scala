@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NiceScrollPage extends js.Object {
   var h: scala.Double
   var height: scala.Double

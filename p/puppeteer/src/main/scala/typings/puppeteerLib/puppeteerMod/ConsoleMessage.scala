@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConsoleMessage extends js.Object {
   /** The message arguments. */
   def args(): js.Array[JSHandle]

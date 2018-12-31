@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ValidationContext extends js.Object {
   def getArgument(): GraphQLArgument
   def getDirective(): GraphQLDirective

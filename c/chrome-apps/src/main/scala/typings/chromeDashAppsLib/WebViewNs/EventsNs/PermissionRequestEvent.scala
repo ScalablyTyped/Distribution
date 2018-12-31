@@ -6,18 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @requires `Permissions:` `audioCapture` and/or `videoCapture`
-         * @description
-         *
-         * Fired when the guest page needs to request special permission from the embedder.
-         *
-         * The following example code will grant the guest page access to the `webkitGetUserMedia` API.
-         * Note that an app using this example code must itself specify `audioCapture` and/or `videoCapture`
-         * manifest permissions:
-         *
-         * @example
-         * webview.addEventListener('permissionrequest', (e) => { if (e.permission === 'media') e.request.allow(); });
-         */
+  * @requires `Permissions:` `audioCapture` and/or `videoCapture`
+  * @description
+  *
+  * Fired when the guest page needs to request special permission from the embedder.
+  *
+  * The following example code will grant the guest page access to the `webkitGetUserMedia` API.
+  * Note that an app using this example code must itself specify `audioCapture` and/or `videoCapture`
+  * manifest permissions:
+  *
+  * @example
+  * webview.addEventListener('permissionrequest', (e) => { if (e.permission === 'media') e.request.allow(); });
+  */
 @js.native
 trait PermissionRequestEvent
   extends stdLib.Event {

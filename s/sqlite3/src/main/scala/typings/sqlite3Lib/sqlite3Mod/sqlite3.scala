@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait sqlite3 extends js.Object {
   var Database: org.scalablytyped.runtime.Instantiable2[
     /* filename */ java.lang.String, 

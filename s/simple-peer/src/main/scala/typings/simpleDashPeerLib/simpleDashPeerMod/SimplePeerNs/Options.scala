@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
    // custom offer constraints (used by createOffer method)
   var answerConstraints: js.UndefOr[js.Object] = js.undefined

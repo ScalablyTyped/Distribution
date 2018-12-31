@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DockerContainerMountData extends js.Object {
   var Destination: java.lang.String
   var Mode: java.lang.String

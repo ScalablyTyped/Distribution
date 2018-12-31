@@ -15,10 +15,10 @@ abstract class PlayReadyContentResolver () extends js.Object
 @js.native
 object PlayReadyContentResolver extends js.Object {
   /**
-                       * Proactively initiates the service request chain for a given content header.
-                       * @param contentHeader Content header for the content the app wants to resolve all necessary service request operations.
-                       * @return The first service request operation required to resolve the content.
-                       */
+    * Proactively initiates the service request chain for a given content header.
+    * @param contentHeader Content header for the content the app wants to resolve all necessary service request operations.
+    * @return The first service request operation required to resolve the content.
+    */
   def serviceRequest(contentHeader: winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.PlayReadyContentHeader): winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.IPlayReadyServiceRequest = js.native
 }
 

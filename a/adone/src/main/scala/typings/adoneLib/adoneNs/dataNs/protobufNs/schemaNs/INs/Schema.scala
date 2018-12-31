@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Schema extends js.Object {
   var enums: js.Array[Enum]
   var `extends`: js.Array[Extend]

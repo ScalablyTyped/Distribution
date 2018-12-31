@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OAuthClientOptions extends BaseClientOptions {
   var clientSecret: js.UndefOr[java.lang.String] = js.undefined
 }

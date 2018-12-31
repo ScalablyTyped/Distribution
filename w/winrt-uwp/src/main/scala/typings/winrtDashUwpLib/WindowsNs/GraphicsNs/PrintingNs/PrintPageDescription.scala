@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the data that describes a document page. */
-
 trait PrintPageDescription extends js.Object {
   /** The resolution in dots per inch (DPI) for the X dimension of the page. */
   var dpiX: scala.Double

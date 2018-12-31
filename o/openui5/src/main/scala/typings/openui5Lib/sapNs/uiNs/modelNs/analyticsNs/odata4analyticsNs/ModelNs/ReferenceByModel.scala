@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ReferenceByModel protected () extends js.Object {
   /**
-                 * Create a reference to an OData model already loaded elsewhere with the helpof SAP UI5.
-                 * @param oModel holding the OData model.
-                */
+    * Create a reference to an OData model already loaded elsewhere with the helpof SAP UI5.
+    * @param oModel holding the OData model.
+    */
   def this(oModel: js.Any) = this()
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OtherError extends js.Object {
   var invalidPath: scala.Double
   var mergeContentNotFound: scala.Double

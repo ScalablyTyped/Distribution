@@ -8,12 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "FaceDetector")
 @js.native
 object FaceDetectorNs extends js.Object {
-  
   trait DetectFaceResult extends js.Object {
     var faces: js.Array[expoLib.expoMod.FaceFeature]
     var image: expoLib.Anon_Uri
   }
-  
   
   trait DetectionOptions extends js.Object {
     var detectLandmarks: js.UndefOr[java.lang.String] = js.undefined
@@ -21,19 +19,16 @@ object FaceDetectorNs extends js.Object {
     var runClassifications: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait Mode extends js.Object {
     var accurate: expoLib.expoLibStrings.accurate
     var fast: expoLib.expoLibStrings.fast
   }
-  
   
   trait _Constants extends js.Object {
     var Classifications: Classifications
     var Landmarks: Landmarks
     var Mode: Mode
   }
-  
   
   trait _Shared extends js.Object {
     var all: expoLib.expoLibStrings.all

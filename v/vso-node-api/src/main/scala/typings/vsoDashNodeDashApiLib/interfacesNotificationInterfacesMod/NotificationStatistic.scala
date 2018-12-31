@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NotificationStatistic extends js.Object {
   var date: stdLib.Date
   var hitCount: scala.Double

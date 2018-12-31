@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * An audio player object used for streaming audio to the device, and low-level control of the audio playback.
 		 */
-
 trait AudioPlayer
   extends titaniumLib.TitaniumNs.Proxy {
   /**

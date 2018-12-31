@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RouterOptions extends js.Object {
   var ignoreTrailingSlash: js.UndefOr[scala.Boolean] = js.undefined
   var log: js.UndefOr[bunyanLib.bunyanMod.namespaced] = js.undefined

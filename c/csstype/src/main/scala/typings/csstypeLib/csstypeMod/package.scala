@@ -246,7 +246,7 @@ package object csstypeMod {
   type MinWidthProperty[TLength] = Globals | TLength | csstypeLib.csstypeLibStrings.auto | csstypeLib.csstypeLibStrings.`fill-available` | csstypeLib.csstypeLibStrings.`fit-content` | csstypeLib.csstypeLibStrings.`max-content` | csstypeLib.csstypeLibStrings.`min-content` | java.lang.String
   type MixBlendModeProperty = Globals | csstypeLib.BlendMode
   type MotionPathProperty = Globals | csstypeLib.csstypeLibStrings.none | java.lang.String
-  type MozAppearanceProperty = /* LimitUnionLength: was union type with length 111 */js.Any
+  type MozAppearanceProperty = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 111 */ js.Any
   type MozBindingProperty = Globals | csstypeLib.csstypeLibStrings.none | java.lang.String
   type MozBorderBottomColorsProperty = Globals | csstypeLib.Color | csstypeLib.csstypeLibStrings.none | java.lang.String
   type MozBorderLeftColorsProperty = Globals | csstypeLib.Color | csstypeLib.csstypeLibStrings.none | java.lang.String
@@ -388,7 +388,7 @@ package object csstypeMod {
   type ShapeMarginProperty[TLength] = Globals | TLength | java.lang.String
   type ShapeOutsideProperty = Globals | csstypeLib.Box | csstypeLib.csstypeLibStrings.`margin-box` | csstypeLib.csstypeLibStrings.none | java.lang.String
   type ShapeRenderingProperty = Globals | csstypeLib.csstypeLibStrings.auto | csstypeLib.csstypeLibStrings.crispEdges | csstypeLib.csstypeLibStrings.geometricPrecision | csstypeLib.csstypeLibStrings.optimizeSpeed
-  type SimplePseudos = /* LimitUnionLength: was union type with length 88 */java.lang.String
+  type SimplePseudos = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 88 */ java.lang.String
   type StopColorProperty = Globals | csstypeLib.Color | csstypeLib.csstypeLibStrings.currentColor
   type StrokeDasharrayProperty[TLength] = Globals | csstypeLib.Dasharray[TLength] | csstypeLib.csstypeLibStrings.none
   type StrokeDashoffsetProperty[TLength] = Globals | TLength | java.lang.String

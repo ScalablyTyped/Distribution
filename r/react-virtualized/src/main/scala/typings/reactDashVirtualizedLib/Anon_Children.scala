@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Children extends js.Object {
   var `aria-label`: reactLib.reactMod.ReactNs.Requireable[java.lang.String]
   var autoHeight: reactLib.reactMod.ReactNs.Requireable[scala.Boolean]

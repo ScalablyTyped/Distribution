@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Bounded[A]
   extends fpDashTsLib.libOrdMod.Ord[A] {
   val bottom: A

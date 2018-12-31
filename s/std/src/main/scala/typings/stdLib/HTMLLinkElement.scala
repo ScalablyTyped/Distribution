@@ -11,45 +11,45 @@ trait HTMLLinkElement
      with LinkStyle {
   var as: java.lang.String = js.native
   /**
-       * Sets or retrieves the character set used to encode the object.
-       */
+    * Sets or retrieves the character set used to encode the object.
+    */
   /** @deprecated */
   var charset: java.lang.String = js.native
   var crossOrigin: java.lang.String | scala.Null = js.native
   var disabled: scala.Boolean = js.native
   /**
-       * Sets or retrieves a destination URL or an anchor point.
-       */
+    * Sets or retrieves a destination URL or an anchor point.
+    */
   var href: java.lang.String = js.native
   /**
-       * Sets or retrieves the language code of the object.
-       */
+    * Sets or retrieves the language code of the object.
+    */
   var hreflang: java.lang.String = js.native
   var integrity: java.lang.String = js.native
   /**
-       * Sets or retrieves the media type.
-       */
+    * Sets or retrieves the media type.
+    */
   var media: java.lang.String = js.native
   var referrerPolicy: java.lang.String = js.native
   /**
-       * Sets or retrieves the relationship between the object and the destination of the link.
-       */
+    * Sets or retrieves the relationship between the object and the destination of the link.
+    */
   var rel: java.lang.String = js.native
   val relList: DOMTokenList = js.native
   /**
-       * Sets or retrieves the relationship between the object and the destination of the link.
-       */
+    * Sets or retrieves the relationship between the object and the destination of the link.
+    */
   /** @deprecated */
   var rev: java.lang.String = js.native
   val sizes: DOMTokenList = js.native
   /**
-       * Sets or retrieves the window or frame at which to target content.
-       */
+    * Sets or retrieves the window or frame at which to target content.
+    */
   /** @deprecated */
   var target: java.lang.String = js.native
   /**
-       * Sets or retrieves the MIME type of the object.
-       */
+    * Sets or retrieves the MIME type of the object.
+    */
   var `type`: java.lang.String = js.native
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): scala.Unit = js.native

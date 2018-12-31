@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableRowSelection[T] extends js.Object {
   var columnTitle: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var columnWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined

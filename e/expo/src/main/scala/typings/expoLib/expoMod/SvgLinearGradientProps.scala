@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SvgLinearGradientProps extends SvgCommonProps {
   var x1: scala.Double | java.lang.String
   var x2: scala.Double | java.lang.String

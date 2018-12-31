@@ -11,7 +11,6 @@ class Verifier protected () extends js.Object {
   def this(app: atFeathersjsFeathersLib.feathersMod.Application[_], options: js.Any) = this()
    // updates an existing entity
   def _createEntity(data: atFeathersjsAuthenticationDashOauth2Lib.Anon_Profile): js.Promise[_] = js.native
-   // creates an entity if they didn't exist already
   def _normalizeResult[T](results: atFeathersjsFeathersLib.feathersMod.Paginated[T]): js.Promise[T] = js.native
    // creates an entity if they didn't exist already
   def _normalizeResult[T](results: js.Array[T]): js.Promise[T] = js.native

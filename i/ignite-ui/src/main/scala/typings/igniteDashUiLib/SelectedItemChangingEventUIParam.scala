@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectedItemChangingEventUIParam extends js.Object {
   /**
   	 * Used to stop the selected item from changing.

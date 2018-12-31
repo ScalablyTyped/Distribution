@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WindowState extends js.Object {
   /*
   		 * The saved heigth of loaded state.

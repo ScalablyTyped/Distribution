@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // bounces
-
 trait Bounce extends js.Object {
   var BouncedAt: java.lang.String
   var CanActivate: scala.Boolean

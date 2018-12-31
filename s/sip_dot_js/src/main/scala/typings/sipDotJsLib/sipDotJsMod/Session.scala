@@ -96,25 +96,21 @@ trait Session extends js.Object {
     name: sipDotJsLib.sipDotJsLibStrings.referAccepted,
     callback: js.Function1[/* ClientContext */ ClientContext, scala.Unit]
   ): scala.Unit = js.native
-  /*    these come from the ClientContext that is on the session somehow */
   @JSName("on")
   def on_referProgress(
     name: sipDotJsLib.sipDotJsLibStrings.referProgress,
     callback: js.Function1[/* ClientContext */ ClientContext, scala.Unit]
   ): scala.Unit = js.native
-  /*    these come from the ClientContext that is on the session somehow */
   @JSName("on")
   def on_referRejected(
     name: sipDotJsLib.sipDotJsLibStrings.referRejected,
     callback: js.Function1[/* ClientContext */ ClientContext, scala.Unit]
   ): scala.Unit = js.native
-  /*    these come from the ClientContext that is on the session somehow */
   @JSName("on")
   def on_referRequestAccepted(
     name: sipDotJsLib.sipDotJsLibStrings.referRequestAccepted,
     callback: js.Function1[/* ClientContext */ ClientContext, scala.Unit]
   ): scala.Unit = js.native
-  /*    these come from the ClientContext that is on the session somehow */
   @JSName("on")
   def on_referRequestRejected(
     name: sipDotJsLib.sipDotJsLibStrings.referRequestRejected,

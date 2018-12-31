@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SharedDropdownMenuProps
   extends reactDashMdLib.libMenusMenuMod.BaseMenuProps {
   var cascading: js.UndefOr[scala.Boolean] = js.undefined

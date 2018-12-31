@@ -21,7 +21,6 @@ trait Test extends js.Object {
   def equal(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
   //assertion wrappers
   def equals(actual: js.Any, expected: js.Any): scala.Unit = js.native
-  //assertion wrappers
   def equals(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
   def expect(num: scala.Double): scala.Unit = js.native
   //assersions from node assert module

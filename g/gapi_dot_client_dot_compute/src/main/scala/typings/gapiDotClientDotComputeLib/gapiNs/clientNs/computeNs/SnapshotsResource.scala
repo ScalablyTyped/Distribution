@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SnapshotsResource extends js.Object {
   /**
-               * Deletes the specified Snapshot resource. Keep in mind that deleting a single snapshot might not necessarily delete all the data on that snapshot. If
-               * any data on the snapshot that is marked for deletion is needed for subsequent snapshots, the data will be moved to the next corresponding snapshot.
-               *
-               * For more information, see Deleting snaphots.
-               */
+    * Deletes the specified Snapshot resource. Keep in mind that deleting a single snapshot might not necessarily delete all the data on that snapshot. If
+    * any data on the snapshot that is marked for deletion is needed for subsequent snapshots, the data will be moved to the next corresponding snapshot.
+    *
+    * For more information, see Deleting snaphots.
+    */
   def delete(request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintQuotaUserKeyUserIpOauthtokenSnapshotAlt): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /** Returns the specified Snapshot resource. Get a list of available snapshots by making a list() request. */
   def get(request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintQuotaUserKeyUserIpOauthtokenSnapshot): gapiDotClientLib.gapiNs.clientNs.Request[Snapshot]

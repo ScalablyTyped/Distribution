@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Narrowphase extends js.Object {
   var contactEquations: js.Array[ContactEquation]
   var contactSkinSize: scala.Double

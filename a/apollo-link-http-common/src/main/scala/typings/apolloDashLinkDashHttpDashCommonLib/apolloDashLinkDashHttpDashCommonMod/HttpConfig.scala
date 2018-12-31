@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HttpConfig extends js.Object {
   var credentials: js.UndefOr[js.Any] = js.undefined
   var headers: js.UndefOr[js.Any] = js.undefined

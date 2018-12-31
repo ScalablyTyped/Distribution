@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapOptions extends js.Object {
   // Any options from https://developers.google.com/maps/documentation/javascript/reference/3/#MapOptions
   // excluding 'zoom' and 'center' which get set via props.

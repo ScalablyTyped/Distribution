@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TiffOptions extends OutputOptions {
   /** Compression options: lzw, deflate, jpeg, ccittfax4 (optional, default 'jpeg') */
   var compression: js.UndefOr[java.lang.String] = js.undefined

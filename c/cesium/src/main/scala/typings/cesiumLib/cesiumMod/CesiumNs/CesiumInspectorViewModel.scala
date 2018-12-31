@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CesiumInspectorViewModel extends js.Object {
   var doFilterPrimitive: Command
   var doFilterTile: Command

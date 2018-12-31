@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InstanceGroupManager extends js.Object {
   /**
-               * The base instance name to use for instances in this group. The value must be 1-58 characters long. Instances are named by appending a hyphen and a
-               * random four-character string to the base instance name. The base instance name must comply with RFC1035.
-               */
+    * The base instance name to use for instances in this group. The value must be 1-58 characters long. Instances are named by appending a hyphen and a
+    * random four-character string to the base instance name. The base instance name must comply with RFC1035.
+    */
   var baseInstanceName: js.UndefOr[java.lang.String] = js.undefined
   /** [Output Only] The creation timestamp for this managed instance group in RFC3339 text format. */
   var creationTimestamp: js.UndefOr[java.lang.String] = js.undefined
@@ -25,9 +24,9 @@ trait InstanceGroupManager extends js.Object {
   /** [Output Only] The URL of the Instance Group resource. */
   var instanceGroup: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The URL of the instance template that is specified for this managed instance group. The group uses this template to create all new instances in the
-               * managed instance group.
-               */
+    * The URL of the instance template that is specified for this managed instance group. The group uses this template to create all new instances in the
+    * managed instance group.
+    */
   var instanceTemplate: js.UndefOr[java.lang.String] = js.undefined
   /** [Output Only] The resource type, which is always compute#instanceGroupManager for managed instance groups. */
   var kind: js.UndefOr[java.lang.String] = js.undefined
@@ -40,14 +39,14 @@ trait InstanceGroupManager extends js.Object {
   /** [Output Only] The URL for this managed instance group. The server defines this URL. */
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The URLs for all TargetPool resources to which instances in the instanceGroup field are added. The target pools automatically apply to all of the
-               * instances in the managed instance group.
-               */
+    * The URLs for all TargetPool resources to which instances in the instanceGroup field are added. The target pools automatically apply to all of the
+    * instances in the managed instance group.
+    */
   var targetPools: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-               * The target number of running instances for this managed instance group. Deleting or abandoning instances reduces this number. Resizing the group
-               * changes this number.
-               */
+    * The target number of running instances for this managed instance group. Deleting or abandoning instances reduces this number. Resizing the group
+    * changes this number.
+    */
   var targetSize: js.UndefOr[scala.Double] = js.undefined
   /** [Output Only] The URL of the zone where the managed instance group is located (for zonal resources). */
   var zone: js.UndefOr[java.lang.String] = js.undefined

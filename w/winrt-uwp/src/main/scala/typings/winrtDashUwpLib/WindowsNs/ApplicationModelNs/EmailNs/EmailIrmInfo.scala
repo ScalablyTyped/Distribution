@@ -8,12 +8,13 @@ import scala.scalajs.js.annotation._
 /** Represents email information rights management (IRM) info. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailIrmInfo")
 @js.native
+/** Initializes a new instance of the EmailIrmInfo class. */
 class EmailIrmInfo () extends js.Object {
   /**
-                   * Initializes a new instance of the EmailIrmInfo class using the specified IRM expiration time and template.
-                   * @param expiration The time when the information rights management (IRM) permissions expire.
-                   * @param irmTemplate The IRM template to apply to the message.
-                   */
+    * Initializes a new instance of the EmailIrmInfo class using the specified IRM expiration time and template.
+    * @param expiration The time when the information rights management (IRM) permissions expire.
+    * @param irmTemplate The IRM template to apply to the message.
+    */
   def this(expiration: stdLib.Date, irmTemplate: EmailIrmTemplate) = this()
   /** Gets or sets a Boolean value that indicates if an email message is allowed to be edited. */
   var canEdit: scala.Boolean = js.native

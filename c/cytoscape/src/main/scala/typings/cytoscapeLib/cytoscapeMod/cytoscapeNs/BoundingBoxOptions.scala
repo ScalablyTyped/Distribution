@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BoundingBoxOptions extends js.Object {
   /** A boolean indicating whether to include edges in the bounding box (default true). */
   var includeEdges: js.UndefOr[scala.Boolean] = js.undefined

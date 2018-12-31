@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDomUtilityService extends js.Object {
   var LetterW: scala.Double
   var ScrollH: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServiceTokenProviderConfiguration extends js.Object {
   var audience: java.lang.String
   var clientId: java.lang.String

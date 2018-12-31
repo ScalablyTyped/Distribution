@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OtherRecipientInfo extends js.Object {
   var oriType: java.lang.String
   var oriValue: js.Any

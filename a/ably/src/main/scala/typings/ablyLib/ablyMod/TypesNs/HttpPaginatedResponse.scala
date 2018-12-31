@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HttpPaginatedResponse
   extends PaginatedResult[js.Any] {
   var errorCode: scala.Double

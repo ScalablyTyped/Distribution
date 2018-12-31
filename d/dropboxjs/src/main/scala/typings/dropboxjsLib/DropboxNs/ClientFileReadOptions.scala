@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClientFileReadOptions extends js.Object {
   var arrayBuffer: js.UndefOr[scala.Boolean] = js.undefined
   var binary: js.UndefOr[scala.Boolean] = js.undefined

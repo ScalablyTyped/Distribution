@@ -29,10 +29,6 @@ trait DataFormatter extends js.Object {
   	 * @param locale
   	 */
   def setLocale(locale: java.lang.String): scala.Unit = js.native
-  /**
-  	 * Sets UTC offset for dates
-  	 * @param offset in minutes
-  	 */
   def setUTCOffset(): scala.Unit = js.native
   /**
   	 * Sets UTC offset for dates

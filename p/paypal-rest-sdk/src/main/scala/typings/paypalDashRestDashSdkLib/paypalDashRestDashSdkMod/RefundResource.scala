@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RefundResource extends Resource {
   val capture_id: js.UndefOr[java.lang.String] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined

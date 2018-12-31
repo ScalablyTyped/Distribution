@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserProfileList extends js.Object {
   /** The eTag of this response for caching purposes. */
   var etag: js.UndefOr[java.lang.String] = js.undefined

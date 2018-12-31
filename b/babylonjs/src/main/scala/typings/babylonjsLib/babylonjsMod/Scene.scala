@@ -6,24 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Represents a scene to be rendered by the engine.
-     * @see http://doc.babylonjs.com/features/scene
-     */
+  * Represents a scene to be rendered by the engine.
+  * @see http://doc.babylonjs.com/features/scene
+  */
 @JSImport("babylonjs", "Scene")
 @js.native
 class Scene protected ()
   extends babylonjsLib.BABYLONNs.Scene {
   /**
-           * Creates a new Scene
-           * @param engine defines the engine to use to render this scene
-           */
+    * Creates a new Scene
+    * @param engine defines the engine to use to render this scene
+    */
   def this(engine: babylonjsLib.BABYLONNs.Engine) = this()
 }
 
 /**
-     * Represents a scene to be rendered by the engine.
-     * @see http://doc.babylonjs.com/features/scene
-     */
+  * Represents a scene to be rendered by the engine.
+  * @see http://doc.babylonjs.com/features/scene
+  */
 @JSImport("babylonjs", "Scene")
 @js.native
 object Scene extends js.Object {
@@ -44,14 +44,14 @@ object Scene extends js.Object {
   /** Time in milliseconds to wait to raise long press events if button is still pressed */
   var LongPressDelay: scala.Double = js.native
   /**
-           * Gets or sets the maximum deltatime when deterministic lock step is enabled
-           * @see http://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
-           */
+    * Gets or sets the maximum deltatime when deterministic lock step is enabled
+    * @see http://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
+    */
   var MaxDeltaTime: scala.Double = js.native
   /**
-           * Gets or sets the minimum deltatime when deterministic lock step is enabled
-           * @see http://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
-           */
+    * Gets or sets the minimum deltatime when deterministic lock step is enabled
+    * @see http://doc.babylonjs.com/babylon101/animations#deterministic-lockstep
+    */
   var MinDeltaTime: scala.Double = js.native
   var _uniqueIdCounter: js.Any = js.native
 }

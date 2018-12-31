@@ -45,7 +45,7 @@ object modelNs extends js.Object {
     def getChildren(): stdLib.Iterable[Node] = js.native
     def getNodeByPath(relativePath: js.Array[scala.Double]): Node | DocumentFragment = js.native
     def getPath(): js.Array[scala.Double] = js.native
-     /*TS3.0: []*/def is(`type`: java.lang.String): scala.Boolean = js.native
+     /*TS3.0: []*/ def is(`type`: java.lang.String): scala.Boolean = js.native
     def offsetToIndex(offset: scala.Double): scala.Double = js.native
     def toJSON(): js.Object = js.native
   }
@@ -185,15 +185,15 @@ object modelNs extends js.Object {
     def isAfter(node: Node): scala.Boolean = js.native
     def isBefore(node: Node): scala.Boolean = js.native
     @JSName("is")
-    def is_documentFragment(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.documentFragment): /* is DocumentFragment */scala.Boolean = js.native
+    def is_documentFragment(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.documentFragment): /* is @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine.model.DocumentFragment */ scala.Boolean = js.native
     @JSName("is")
-    def is_element(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.element): /* is Element */scala.Boolean = js.native
+    def is_element(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.element): /* is @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine.model.Element */ scala.Boolean = js.native
     @JSName("is")
-    def is_rootElement(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.rootElement): /* is RootElement */scala.Boolean = js.native
+    def is_rootElement(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.rootElement): /* is @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine.model.RootElement */ scala.Boolean = js.native
     @JSName("is")
-    def is_text(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.text): /* is Text */scala.Boolean = js.native
+    def is_text(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.text): /* is @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine.model.Text */ scala.Boolean = js.native
     @JSName("is")
-    def is_textProxy(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.textProxy): /* is TextProxy */scala.Boolean = js.native
+    def is_textProxy(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.textProxy): /* is @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine.model.TextProxy */ scala.Boolean = js.native
     def toJSON(): js.Object = js.native
   }
   
@@ -294,7 +294,6 @@ object modelNs extends js.Object {
   @js.native
   class Schema () extends js.Object
   
-  
   trait SchemaCompiledItemDefinition extends js.Object {
     var allowAttributes: java.lang.String | js.Array[java.lang.String]
     var allowIn: java.lang.String | js.Array[java.lang.String]
@@ -307,13 +306,11 @@ object modelNs extends js.Object {
   @js.native
   class SchemaContext () extends js.Object
   
-  
   trait SchemaContextItem extends js.Object {
     var getAttributeKeys: stdLib.Iterable[java.lang.String]
     var name: java.lang.String
     def getAttribute(key: java.lang.String): java.lang.String
   }
-  
   
   trait SchemaItemDefinition extends js.Object {
     var allowAttributes: java.lang.String | js.Array[java.lang.String]
@@ -366,7 +363,7 @@ object modelNs extends js.Object {
     def hasAttribute(key: java.lang.String): scala.Boolean = js.native
     def is(`type`: java.lang.String): scala.Boolean = js.native
     @JSName("is")
-    def is_textProxy(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.textProxy): /* is TextProxy */scala.Boolean = js.native
+    def is_textProxy(`type`: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.textProxy): /* is @ckeditor/ckeditor5-engine.@ckeditor/ckeditor5-engine.model.TextProxy */ scala.Boolean = js.native
   }
   
   // engine/model/treewalker
@@ -386,7 +383,6 @@ object modelNs extends js.Object {
     def next(): TreeWalkerValue = js.native
     def skip(skip: js.Function1[/* t */ TreeWalkerValue, scala.Boolean]): scala.Unit = js.native
   }
-  
   
   trait TreeWalkerValue extends js.Object {
     var item: Item

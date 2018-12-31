@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICheckColumn extends IColumn {
   /** [Method] Disables this CheckColumn
   		* @param silent Boolean

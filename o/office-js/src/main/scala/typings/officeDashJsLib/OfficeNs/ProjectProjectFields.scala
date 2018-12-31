@@ -9,47 +9,47 @@ import scala.scalajs.js.annotation._
 sealed trait ProjectProjectFields extends js.Object
 
 /**
-     * Specifies the project fields that are available as a parameter for the {@link Office.Document | Document}.getProjectFieldAsync method.
-     *
-     * @remarks
-     * 
-     * A ProjectProjectFields constant can be used as a parameter of the {@link Office.Document | Document}.getProjectFieldAsync method.
-     * 
-     * **Support details**
-     * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
-     * An empty cell indicates that the Office host application doesn't support this enumeration.
-     * 
-     * For more information about Office host application and server requirements, see 
-     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-     * 
-     * *Supported hosts, by platform*
-     *  <table>
-     *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th></tr>
-     *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                            </td></tr>
-     *  </table>
-     */
+  * Specifies the project fields that are available as a parameter for the {@link Office.Document | Document}.getProjectFieldAsync method.
+  *
+  * @remarks
+  * 
+  * A ProjectProjectFields constant can be used as a parameter of the {@link Office.Document | Document}.getProjectFieldAsync method.
+  * 
+  * **Support details**
+  * 
+  * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+  * An empty cell indicates that the Office host application doesn't support this enumeration.
+  * 
+  * For more information about Office host application and server requirements, see 
+  * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+  * 
+  * *Supported hosts, by platform*
+  *  <table>
+  *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th></tr>
+  *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                            </td></tr>
+  *  </table>
+  */
 @JSGlobal("Office.ProjectProjectFields")
 @js.native
 object ProjectProjectFields extends js.Object {
   /**
-           * The number of digits after the decimal for the currency.
-           */
+    * The number of digits after the decimal for the currency.
+    */
   @js.native
   sealed trait CurrencyDigits
     extends officeDashJsLib.OfficeNs.ProjectProjectFields
   
   /**
-           * The currency symbol.
-           */
+    * The currency symbol.
+    */
   @js.native
   sealed trait CurrencySymbol
     extends officeDashJsLib.OfficeNs.ProjectProjectFields
   
   /**
-           * The placement of the currency symbol: Not specified = -1; Before the value with no space ($0) = 0; After the value with no space (0$) = 1; 
-           * Before the value with a space ($ 0) = 2; After the value with a space (0 $) = 3.
-           */
+    * The placement of the currency symbol: Not specified = -1; Before the value with no space ($0) = 0; After the value with no space (0$) = 1; 
+    * Before the value with a space ($ 0) = 2; After the value with a space (0 $) = 3.
+    */
   @js.native
   sealed trait CurrencySymbolPosition
     extends officeDashJsLib.OfficeNs.ProjectProjectFields
@@ -59,64 +59,64 @@ object ProjectProjectFields extends js.Object {
     extends officeDashJsLib.OfficeNs.ProjectProjectFields
   
   /**
-           * The project finish date.
-           */
+    * The project finish date.
+    */
   @js.native
   sealed trait Finish
     extends officeDashJsLib.OfficeNs.ProjectProjectFields
   
   /**
-           * The GUID of the project.
-           */
+    * The GUID of the project.
+    */
   @js.native
   sealed trait GUID
     extends officeDashJsLib.OfficeNs.ProjectProjectFields
   
   /**
-           * The Project Web App URL, for projects that are stored in Project Server.
-           */
+    * The Project Web App URL, for projects that are stored in Project Server.
+    */
   @js.native
   sealed trait ProjectServerUrl
     extends officeDashJsLib.OfficeNs.ProjectProjectFields
   
   /**
-           * Specifies whether the project is read-only.
-           */
+    * Specifies whether the project is read-only.
+    */
   @js.native
   sealed trait ReadOnly
     extends officeDashJsLib.OfficeNs.ProjectProjectFields
   
   /**
-           * The project start date.
-           */
+    * The project start date.
+    */
   @js.native
   sealed trait Start
     extends officeDashJsLib.OfficeNs.ProjectProjectFields
   
   /**
-           * The project version.
-           */
+    * The project version.
+    */
   @js.native
   sealed trait VERSION
     extends officeDashJsLib.OfficeNs.ProjectProjectFields
   
   /**
-           * The name of the SharePoint list, for projects that are synchronized with a tasks list.
-           */
+    * The name of the SharePoint list, for projects that are synchronized with a tasks list.
+    */
   @js.native
   sealed trait WSSList
     extends officeDashJsLib.OfficeNs.ProjectProjectFields
   
   /**
-           * The SharePoint URL, for projects that are synchronized with a SharePoint list.
-           */
+    * The SharePoint URL, for projects that are synchronized with a SharePoint list.
+    */
   @js.native
   sealed trait WSSUrl
     extends officeDashJsLib.OfficeNs.ProjectProjectFields
   
   /**
-           * The work units of the project, such as days or hours.
-           */
+    * The work units of the project, such as days or hours.
+    */
   @js.native
   sealed trait WorkUnits
     extends officeDashJsLib.OfficeNs.ProjectProjectFields

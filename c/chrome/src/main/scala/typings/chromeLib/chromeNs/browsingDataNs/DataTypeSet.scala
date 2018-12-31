@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataTypeSet extends js.Object {
   /** Optional. Websites' appcaches.  */
   var appcache: js.UndefOr[scala.Boolean] = js.undefined
@@ -32,10 +31,10 @@ trait DataTypeSet extends js.Object {
   /** Optional. Server-bound certificates.  */
   var serverBoundCertificates: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * Optional.
-            * Since Chrome 39.
-           * Service Workers.
-           */
+    * Optional.
+    * Since Chrome 39.
+    * Service Workers.
+    */
   var serviceWorkers: js.UndefOr[scala.Boolean] = js.undefined
   /** Optional. Websites' WebSQL data.  */
   var webSQL: js.UndefOr[scala.Boolean] = js.undefined

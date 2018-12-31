@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommitTextParameters extends js.Object {
   /** ID of the context where the text will be committed */
   var contextID: scala.Double

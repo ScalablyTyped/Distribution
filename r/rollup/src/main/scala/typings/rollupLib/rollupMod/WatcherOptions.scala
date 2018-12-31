@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WatcherOptions extends js.Object {
   var chokidar: js.UndefOr[scala.Boolean | WatchOptions] = js.undefined
   var clearScreen: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataSourceSchema extends js.Object {
   var aggregates: js.UndefOr[js.Any] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined

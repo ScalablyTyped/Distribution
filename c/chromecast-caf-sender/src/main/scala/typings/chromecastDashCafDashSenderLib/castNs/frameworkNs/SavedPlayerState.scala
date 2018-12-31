@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SavedPlayerState extends js.Object {
   var currentTime: scala.Double
   var isPaused: scala.Boolean

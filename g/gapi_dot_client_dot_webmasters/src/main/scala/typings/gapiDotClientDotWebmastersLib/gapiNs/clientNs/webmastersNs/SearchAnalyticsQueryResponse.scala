@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SearchAnalyticsQueryResponse extends js.Object {
   /** How the results were aggregated. */
   var responseAggregationType: js.UndefOr[java.lang.String] = js.undefined

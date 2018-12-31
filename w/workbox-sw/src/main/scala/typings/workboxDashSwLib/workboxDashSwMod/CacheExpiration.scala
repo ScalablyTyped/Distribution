@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * The CacheExpiration class allows you define an expiration and / or limit on the number of responses stored in a Cache.
- */
-
+  * The CacheExpiration class allows you define an expiration and / or limit on the number of responses stored in a Cache.
+  */
 trait CacheExpiration extends js.Object {
   /**
   	 * Expires entries for the given cache and given criteria.

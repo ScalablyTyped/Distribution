@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DOMException extends js.Object {
   val ABORT_ERR: scala.Double
   val DATA_CLONE_ERR: scala.Double

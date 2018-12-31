@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateGlobalTableOutput extends js.Object {
   /**
-       * Contains the details of the global table.
-       */
+    * Contains the details of the global table.
+    */
   var GlobalTableDescription: js.UndefOr[GlobalTableDescription] = js.undefined
 }
 

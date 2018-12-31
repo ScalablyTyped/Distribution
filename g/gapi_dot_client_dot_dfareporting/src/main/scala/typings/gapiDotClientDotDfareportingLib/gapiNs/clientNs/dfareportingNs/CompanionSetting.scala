@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompanionSetting extends js.Object {
   /** Whether companions are disabled for this placement. */
   var companionsDisabled: js.UndefOr[scala.Boolean] = js.undefined

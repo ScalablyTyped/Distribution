@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class MidiNoteOnMessage protected () extends js.Object {
   /**
-                   * Creates a new MidiNoteOnMessage object.
-                   * @param channel The channel from 0-15 that this message applies to.
-                   * @param note The note which is specified as a value from 0-127.
-                   * @param velocity The velocity which is specified as a value from 0-127.
-                   */
+    * Creates a new MidiNoteOnMessage object.
+    * @param channel The channel from 0-15 that this message applies to.
+    * @param note The note which is specified as a value from 0-127.
+    * @param velocity The velocity which is specified as a value from 0-127.
+    */
   def this(channel: scala.Double, note: scala.Double, velocity: scala.Double) = this()
   /** Gets the channel from 0-15 that this message applies to. */
   var channel: scala.Double = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RgbColor extends js.Object {
   // The blue component of the color, from 0.0 to 1.0.
   var blue: scala.Double

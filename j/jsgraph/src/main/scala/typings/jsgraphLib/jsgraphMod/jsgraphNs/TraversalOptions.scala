@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TraversalOptions extends js.Object {
   var allowEmptyStartVector: scala.Boolean
   var signalStart: scala.Boolean

@@ -15,7 +15,7 @@ object testingMod extends js.Object {
   def before(fn: js.Function): scala.Unit = js.native
   def beforeEach(fn: js.Function): scala.Unit = js.native
   def controlFlow(): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.ControlFlow = js.native
-  def ignore(predicateFn: js.Function0[scala.Boolean]): js.Any = js.native
+  def ignore(predicateFn: js.Function0[scala.Boolean]): seleniumDashWebdriverLib.Anon_AfterEach = js.native
   def xdescribe(name: java.lang.String, fn: js.Function): scala.Unit = js.native
   def xit(name: java.lang.String, fn: js.Function): scala.Unit = js.native
 }

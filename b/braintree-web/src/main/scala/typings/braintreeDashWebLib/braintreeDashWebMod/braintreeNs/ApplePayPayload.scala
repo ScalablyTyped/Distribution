@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ApplePayPayload extends js.Object {
   var displayName: java.lang.String
   var domainName: java.lang.String

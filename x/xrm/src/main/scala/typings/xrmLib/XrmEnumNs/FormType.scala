@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait FormType extends js.Object
 
 /**
-     * Enumeration of entity form states/types.
-     */
+  * Enumeration of entity form states/types.
+  */
 @JSGlobal("XrmEnum.FormType")
 @js.native
 object FormType extends js.Object {
@@ -27,8 +27,8 @@ object FormType extends js.Object {
     extends xrmLib.XrmEnumNs.FormType
   
   /**
-           * @deprecated QuickCreate has been deprecated
-           */
+    * @deprecated QuickCreate has been deprecated
+    */
   @js.native
   sealed trait QuickCreate
     extends xrmLib.XrmEnumNs.FormType
@@ -38,8 +38,8 @@ object FormType extends js.Object {
     extends xrmLib.XrmEnumNs.FormType
   
   /**
-           * @deprecated ReadOptimized has been deprecated.
-           */
+    * @deprecated ReadOptimized has been deprecated.
+    */
   @js.native
   sealed trait ReadOptimized
     extends xrmLib.XrmEnumNs.FormType

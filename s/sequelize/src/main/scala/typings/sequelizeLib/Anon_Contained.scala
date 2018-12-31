@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Contained extends js.Object {
   var `!..`: js.Tuple2[scala.Double, scala.Double]
   @JSName("$between")

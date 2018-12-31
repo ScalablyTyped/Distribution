@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var apiKey: js.UndefOr[java.lang.String] = js.undefined
   var appCode: js.UndefOr[java.lang.String] = js.undefined

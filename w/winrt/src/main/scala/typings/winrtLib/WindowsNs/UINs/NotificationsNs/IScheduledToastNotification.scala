@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IScheduledToastNotification extends js.Object {
   var content: winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument
   var deliveryTime: stdLib.Date

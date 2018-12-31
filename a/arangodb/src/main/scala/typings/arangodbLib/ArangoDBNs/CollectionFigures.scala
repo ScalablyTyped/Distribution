@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CollectionFigures extends js.Object {
   var alive: arangodbLib.Anon_CountSize
   var attributes: arangodbLib.Anon_CountSize

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Injectable extends js.Object {
   var deps: js.UndefOr[js.Array[Type | js.Array[_]]] = js.undefined
   var providedIn: js.UndefOr[Type | atAngularCompilerLib.atAngularCompilerLibStrings.root | js.Any] = js.undefined

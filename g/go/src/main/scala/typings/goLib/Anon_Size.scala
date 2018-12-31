@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Size extends js.Object {
   var background: js.UndefOr[goLib.goMod.goNs.BrushLike] = js.undefined
   var document: js.UndefOr[stdLib.Document] = js.undefined

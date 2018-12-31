@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait XmlService extends js.Object {
-  var ContentTypes: js.Any = js.native
+  var ContentTypes: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.XML_Service.ContentType */ js.Any = js.native
   def createCdata(text: java.lang.String): Cdata = js.native
   def createComment(text: java.lang.String): Comment = js.native
   def createDocType(elementName: java.lang.String): DocType = js.native

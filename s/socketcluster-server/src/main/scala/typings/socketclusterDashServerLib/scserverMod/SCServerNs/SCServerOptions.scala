@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SCServerOptions
   extends /* additionalOptions */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   // In milliseconds, the timeout for calling res(err, data) when

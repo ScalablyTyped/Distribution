@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CornerBit
   extends atMaterialBaseLib.foundationMod.MDCNumbers {
   var BOTTOM: atMaterialMenuLib.atMaterialMenuLibNumbers.`1`

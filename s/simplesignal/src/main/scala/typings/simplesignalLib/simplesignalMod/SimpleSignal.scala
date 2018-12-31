@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SimpleSignal[F /* <: js.Function */] extends js.Object {
   var functions: js.Any
   val numItems: scala.Double

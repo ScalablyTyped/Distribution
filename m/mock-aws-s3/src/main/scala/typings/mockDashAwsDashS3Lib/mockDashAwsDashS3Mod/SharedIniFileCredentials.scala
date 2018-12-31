@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "SharedIniFileCredentials")
 @js.native
+/**
+  * Creates a new SharedIniFileCredentials object.
+  */
 class SharedIniFileCredentials ()
   extends awsDashSdkLib.awsDashSdkMod.SharedIniFileCredentials {
-  /**
-       * Creates a new SharedIniFileCredentials object.
-       */
   def this(options: awsDashSdkLib.libCredentialsSharedUnderscoreIniUnderscoreFileUnderscoreCredentialsMod.SharedIniFileCredentialsOptions) = this()
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WeakMap[K /* <: js.Object */, V] extends js.Object {
   def delete(key: K): scala.Boolean
   def get(key: K): js.UndefOr[V]

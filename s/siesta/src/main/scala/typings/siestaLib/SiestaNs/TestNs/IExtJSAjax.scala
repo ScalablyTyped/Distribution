@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @mixin
-         */
+  * @mixin
+  */
 @js.native
 trait IExtJSAjax extends js.Object {
   def ajaxRequestAndThen(url: java.lang.String, callback: js.Function, scope: js.Any): scala.Unit = js.native

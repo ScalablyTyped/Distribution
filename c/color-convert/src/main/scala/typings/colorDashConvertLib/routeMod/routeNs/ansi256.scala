@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ansi256 extends js.Object {
   def ansi16(from: colorDashConvertLib.conversionsMod.ANSI256): colorDashConvertLib.conversionsMod.ANSI16
   def apple(from: colorDashConvertLib.conversionsMod.ANSI256): colorDashConvertLib.conversionsMod.APPLE

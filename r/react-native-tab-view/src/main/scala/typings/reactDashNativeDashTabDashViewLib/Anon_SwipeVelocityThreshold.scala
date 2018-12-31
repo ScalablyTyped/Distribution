@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SwipeVelocityThreshold extends js.Object {
   var configureTransition: js.Function0[
     reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewMod.DefaultTransitionSpec

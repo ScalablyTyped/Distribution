@@ -30,7 +30,6 @@ trait Sheets[TSheet] extends js.Object {
   def Delete(): scala.Unit = js.native
   /** @param Type [Type=-4104] */
   def FillAcrossSheets(Range: Range): scala.Unit = js.native
-  /** @param Type [Type=-4104] */
   def FillAcrossSheets(Range: Range, Type: XlFillWith): scala.Unit = js.native
   def HPageBreaks(Index: scala.Double): HPageBreak = js.native
   def Item(Indexes: activexDashInteropLib.SafeArray[java.lang.String | scala.Double]): Sheets[TSheet] = js.native

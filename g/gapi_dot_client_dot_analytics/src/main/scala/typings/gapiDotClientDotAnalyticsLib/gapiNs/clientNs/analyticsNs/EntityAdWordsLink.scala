@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EntityAdWordsLink extends js.Object {
   /** A list of AdWords client accounts. These cannot be MCC accounts. This field is required when creating an AdWords link. It cannot be empty. */
   var adWordsAccounts: js.UndefOr[js.Array[AdWordsAccount]] = js.undefined

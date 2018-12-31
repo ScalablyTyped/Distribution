@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_P521 extends js.Object {
   var p127: sjclLib.sjclMod.sjclNs.PseudoMersennePrimeStatic
   // NIST primes

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGLength extends js.Object {
   val SVG_LENGTHTYPE_CM: scala.Double
   val SVG_LENGTHTYPE_EMS: scala.Double

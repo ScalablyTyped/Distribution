@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccountStatusDataQualityIssue extends js.Object {
   /** Country for which this issue is reported. */
   var country: js.UndefOr[java.lang.String] = js.undefined

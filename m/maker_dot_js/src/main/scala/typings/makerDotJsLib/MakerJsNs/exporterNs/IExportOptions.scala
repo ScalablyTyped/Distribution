@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * @private
-     */
-
+  * @private
+  */
 trait IExportOptions extends js.Object {
   /**
-           * Unit system to embed in exported file.
-           */
+    * Unit system to embed in exported file.
+    */
   var units: js.UndefOr[java.lang.String] = js.undefined
 }
 

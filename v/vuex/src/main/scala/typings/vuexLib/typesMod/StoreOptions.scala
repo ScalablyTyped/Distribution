@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StoreOptions[S] extends js.Object {
   var actions: js.UndefOr[ActionTree[S, S]] = js.undefined
   var getters: js.UndefOr[GetterTree[S, S]] = js.undefined

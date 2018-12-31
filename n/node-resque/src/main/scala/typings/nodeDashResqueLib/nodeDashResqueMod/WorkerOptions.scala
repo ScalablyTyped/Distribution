@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkerOptions extends js.Object {
   var connection: js.UndefOr[ConnectionOptions] = js.undefined
   var looping: js.UndefOr[scala.Boolean] = js.undefined

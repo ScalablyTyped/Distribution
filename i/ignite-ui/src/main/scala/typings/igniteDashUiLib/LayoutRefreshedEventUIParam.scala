@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LayoutRefreshedEventUIParam extends js.Object {
   /**
   	 * Used to get a reference to the splitter instance.

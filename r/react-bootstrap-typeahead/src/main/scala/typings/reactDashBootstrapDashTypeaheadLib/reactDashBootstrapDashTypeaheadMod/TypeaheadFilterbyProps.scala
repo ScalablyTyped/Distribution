@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TypeaheadFilterbyProps extends js.Object {
   var caseSensitive: scala.Boolean
   var filterBy: js.Array[java.lang.String]

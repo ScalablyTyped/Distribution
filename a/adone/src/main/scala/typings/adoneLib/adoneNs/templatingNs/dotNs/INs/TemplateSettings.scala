@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TemplateSettings extends js.Object {
   var append: scala.Boolean
   var conditional: stdLib.RegExp

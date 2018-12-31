@@ -28,9 +28,7 @@ trait ColorMixin[T] extends js.Object {
   def colorDomain(t: js.Array[_]): js.Array[_] = js.native
   // http://dc-js.github.io/dc.js/docs/html/dc.colorMixin.html
   def colors(): js.Array[java.lang.String] | (Scale[java.lang.String | d3DashColorLib.d3DashColorMod.Color]) | java.lang.String = js.native
-  // http://dc-js.github.io/dc.js/docs/html/dc.colorMixin.html
   def colors(t: Scale[java.lang.String | d3DashColorLib.d3DashColorMod.Color]): js.Array[java.lang.String] | (Scale[java.lang.String | d3DashColorLib.d3DashColorMod.Color]) | java.lang.String = js.native
-  // http://dc-js.github.io/dc.js/docs/html/dc.colorMixin.html
   def colors(t: java.lang.String): js.Array[java.lang.String] | (Scale[java.lang.String | d3DashColorLib.d3DashColorMod.Color]) | java.lang.String = js.native
   // http://dc-js.github.io/dc.js/docs/html/dc.colorMixin.html
   def colors(t: js.Array[java.lang.String]): js.Array[java.lang.String] | (Scale[java.lang.String | d3DashColorLib.d3DashColorMod.Color]) | java.lang.String = js.native

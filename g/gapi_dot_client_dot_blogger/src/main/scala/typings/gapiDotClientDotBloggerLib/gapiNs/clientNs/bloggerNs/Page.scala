@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Page extends js.Object {
   /** The author of this Page. */
   var author: js.UndefOr[gapiDotClientDotBloggerLib.Anon_DisplayName] = js.undefined

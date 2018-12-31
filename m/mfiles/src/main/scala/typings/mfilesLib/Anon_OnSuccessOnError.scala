@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnSuccessOnError extends js.Object {
   var Finally: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var OnError: js.UndefOr[

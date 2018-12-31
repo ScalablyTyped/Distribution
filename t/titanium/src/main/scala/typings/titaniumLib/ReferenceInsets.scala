@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Dictionary to specify edge insets for <Titanium.UI.iOS.CollisionBehavior.referenceInsets>.
- */
-
+  * Dictionary to specify edge insets for <Titanium.UI.iOS.CollisionBehavior.referenceInsets>.
+  */
 trait ReferenceInsets extends js.Object {
   /**
   	 * Bottom inset.

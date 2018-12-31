@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ButtonGroupOptions extends js.Object {
   var enable: js.UndefOr[scala.Boolean] = js.undefined
   var index: js.UndefOr[scala.Double] = js.undefined

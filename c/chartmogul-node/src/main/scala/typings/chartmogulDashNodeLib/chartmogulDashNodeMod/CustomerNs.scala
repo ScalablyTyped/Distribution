@@ -8,14 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("chartmogul-node", "Customer")
 @js.native
 object CustomerNs extends js.Object {
-  
   trait Attributes extends js.Object {
     var clearbit: js.UndefOr[chartmogulDashNodeLib.commonMod.Map] = js.undefined
     var custom: js.UndefOr[chartmogulDashNodeLib.commonMod.Map] = js.undefined
     var stripe: js.UndefOr[chartmogulDashNodeLib.commonMod.Map] = js.undefined
     var tags: js.UndefOr[chartmogulDashNodeLib.commonMod.Strings] = js.undefined
   }
-  
   
   trait Customer extends js.Object {
     var address: js.UndefOr[chartmogulDashNodeLib.Anon_City] = js.undefined
@@ -41,7 +39,6 @@ object CustomerNs extends js.Object {
     var zip: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait ListCustomersParams
     extends chartmogulDashNodeLib.commonMod.CursorParams {
     var data_source_uuid: js.UndefOr[java.lang.String] = js.undefined
@@ -50,24 +47,20 @@ object CustomerNs extends js.Object {
     var system: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait MergeCustomersParams extends js.Object {
     var from: MergeID
     var into: MergeID
   }
-  
   
   trait MergeID extends js.Object {
     var customer_uuid: js.UndefOr[java.lang.String] = js.undefined
     var external_id: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait NewAttributes extends js.Object {
     var custom: js.UndefOr[js.Array[NewCustomAttributes]] = js.undefined
     var tags: js.UndefOr[chartmogulDashNodeLib.commonMod.Strings] = js.undefined
   }
-  
   
   trait NewCustomAttributes extends js.Object {
     var key: java.lang.String
@@ -75,7 +68,6 @@ object CustomerNs extends js.Object {
     var `type`: js.UndefOr[java.lang.String] = js.undefined
     var value: js.Any
   }
-  
   
   trait NewCustomer extends js.Object {
     var attributes: js.UndefOr[NewAttributes] = js.undefined
@@ -92,12 +84,10 @@ object CustomerNs extends js.Object {
     var zip: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait SearchCustomersParams
     extends chartmogulDashNodeLib.commonMod.CursorParams {
     var email: java.lang.String
   }
-  
   
   trait UpdateCustomer extends js.Object {
     var attributes: js.UndefOr[NewAttributes] = js.undefined

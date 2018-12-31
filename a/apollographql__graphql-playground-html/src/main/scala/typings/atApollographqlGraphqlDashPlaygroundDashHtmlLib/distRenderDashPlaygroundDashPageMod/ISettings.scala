@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISettings extends js.Object {
   var `editor.fontFamily`: java.lang.String
   var `editor.fontSize`: scala.Double

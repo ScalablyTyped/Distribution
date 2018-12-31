@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion
 //#region 客户端获取会员信息 https://docs.alipay.com/mini/api/userinfo
-
 trait GetAuthUserInfoOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")

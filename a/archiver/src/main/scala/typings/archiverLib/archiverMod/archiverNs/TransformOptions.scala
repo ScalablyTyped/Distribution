@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransformOptions extends js.Object {
   var allowHalfOpen: js.UndefOr[scala.Boolean] = js.undefined
   var decodeStrings: js.UndefOr[scala.Boolean] = js.undefined

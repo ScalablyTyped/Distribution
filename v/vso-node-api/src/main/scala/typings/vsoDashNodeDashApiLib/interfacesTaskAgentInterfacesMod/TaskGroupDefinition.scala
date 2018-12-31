@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TaskGroupDefinition extends js.Object {
   var displayName: java.lang.String
   var isExpanded: scala.Boolean

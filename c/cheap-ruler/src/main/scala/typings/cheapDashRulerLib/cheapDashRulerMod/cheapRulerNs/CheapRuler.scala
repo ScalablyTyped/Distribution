@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CheapRuler extends js.Object {
   def along(line: Line, dist: scala.Double): Point
   def area(polygon: Polygon): scala.Double

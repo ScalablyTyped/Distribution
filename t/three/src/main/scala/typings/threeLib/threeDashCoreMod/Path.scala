@@ -55,8 +55,8 @@ class Path () extends CurvePath[Vector2] {
     aRotation: scala.Double
   ): scala.Unit = js.native
   /**
-       * @deprecated Use {@link Path#setFromPoints .setFromPoints()} instead.
-       */
+    * @deprecated Use {@link Path#setFromPoints .setFromPoints()} instead.
+    */
   def fromPoints(vectors: js.Array[Vector2]): scala.Unit = js.native
   def lineTo(x: scala.Double, y: scala.Double): scala.Unit = js.native
   def moveTo(x: scala.Double, y: scala.Double): scala.Unit = js.native

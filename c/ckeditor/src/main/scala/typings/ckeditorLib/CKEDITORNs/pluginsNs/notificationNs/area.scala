@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait area extends js.Object {
   val editor: ckeditorLib.CKEDITORNs.editor
   val element: ckeditorLib.CKEDITORNs.domNs.element

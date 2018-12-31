@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait axisOptions extends js.Object {
   var alignTicksWithAxis: js.UndefOr[scala.Double] = js.undefined
   var autoscaleMargin: js.UndefOr[scala.Double] = js.undefined

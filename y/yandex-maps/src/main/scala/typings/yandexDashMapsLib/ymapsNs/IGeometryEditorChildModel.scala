@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGeometryEditorChildModel extends IGeometryEditorModel {
   var editor: IGeometryEditor
   var geometry: IBaseGeometry

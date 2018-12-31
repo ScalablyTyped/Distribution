@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSStyleReflection extends js.Object {
   var _class: sketchappLib.sketchappLibStrings.styleReflection
   var distance: scala.Double

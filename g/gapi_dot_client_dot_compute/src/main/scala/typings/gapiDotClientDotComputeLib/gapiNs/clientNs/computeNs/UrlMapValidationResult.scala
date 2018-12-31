@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UrlMapValidationResult extends js.Object {
   var loadErrors: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Whether the given UrlMap can be successfully loaded. If false, 'loadErrors' indicates the reasons. */

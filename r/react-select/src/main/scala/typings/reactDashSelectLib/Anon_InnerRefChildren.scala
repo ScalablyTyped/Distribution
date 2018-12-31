@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_InnerRefChildren extends js.Object {
   /** The children to be rendered. */
   var children: reactLib.reactMod.ReactNs.ReactNode
@@ -18,7 +17,7 @@ trait Anon_InnerRefChildren extends js.Object {
   /* Text to be displayed representing the option. */
   var label: java.lang.String
   /* Type is used by the menu to determine whether this is an option or a group.
-      In the case of option this is always `option`. */
+    In the case of option this is always `option`. */
   var `type`: reactDashSelectLib.reactDashSelectLibStrings.option
 }
 

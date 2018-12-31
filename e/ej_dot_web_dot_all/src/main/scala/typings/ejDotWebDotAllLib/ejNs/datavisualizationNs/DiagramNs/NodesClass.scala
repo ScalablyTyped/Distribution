@@ -5,18 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodesClass extends js.Object {
   /** Defines the collection of attributes
-               * @Default {[]}
-               */
+    * @Default {[]}
+    */
   var attributes: js.UndefOr[js.Array[NodesClassAttribute]] = js.undefined
   /** Defines the collection of methods of a Class.
-               * @Default {[]}
-               */
+    * @Default {[]}
+    */
   var methods: js.UndefOr[js.Array[NodesClassMethod]] = js.undefined
   /** Sets the name of class.
-               */
+    */
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 

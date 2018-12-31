@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JQueryStatic extends js.Object {
   /** block user activity for the page */
   var blockUI: js.UndefOr[JQBlockUIStatic] = js.undefined

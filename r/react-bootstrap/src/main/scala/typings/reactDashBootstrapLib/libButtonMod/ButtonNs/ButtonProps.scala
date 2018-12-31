@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ButtonProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libButtonMod.Button] {
   var active: js.UndefOr[scala.Boolean] = js.undefined

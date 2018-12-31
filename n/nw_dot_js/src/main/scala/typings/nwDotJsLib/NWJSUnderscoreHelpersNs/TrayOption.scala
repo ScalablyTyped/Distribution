@@ -6,33 +6,32 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     *  Option for tray that contains initial settings for the Tray.
-     */
-
+  *  Option for tray that contains initial settings for the Tray.
+  */
 trait TrayOption extends js.Object {
   /**
-           * {string} alternate
-           */
+    * {string} alternate
+    */
   var alticon: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * {string} icon
-           */
+    * {string} icon
+    */
   var icon: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * {boolean} whether icons are templates
-           */
+    * {boolean} whether icons are templates
+    */
   var iconsAreTemplates: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * {Menu} popup menu
-           */
+    * {Menu} popup menu
+    */
   var menu: js.UndefOr[nwDotJsLib.nwNs.Menu] = js.undefined
   /**
-           * {string} title
-           */
+    * {string} title
+    */
   var title: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * {string} tooltip
-           */
+    * {string} tooltip
+    */
   var tooltip: js.UndefOr[java.lang.String] = js.undefined
 }
 

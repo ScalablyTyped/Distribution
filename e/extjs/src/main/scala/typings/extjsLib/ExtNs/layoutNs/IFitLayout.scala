@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFitLayout
   extends extjsLib.ExtNs.layoutNs.containerNs.IContainer {
   /** [Method] Called to perform the calculations for this layout

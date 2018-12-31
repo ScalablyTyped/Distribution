@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICoreWindowStatic extends js.Object {
   def getForCurrentThread(): CoreWindow
 }

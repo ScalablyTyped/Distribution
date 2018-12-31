@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RunContextSettings extends js.Object {
   /**
   	 * Namespace (only used if Generator is a constructor)

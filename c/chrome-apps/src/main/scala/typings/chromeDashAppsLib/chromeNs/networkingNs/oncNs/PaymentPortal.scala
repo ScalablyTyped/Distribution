@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaymentPortal extends js.Object {
   /** The HTTP method to use for the payment portal. */
   var Method: java.lang.String

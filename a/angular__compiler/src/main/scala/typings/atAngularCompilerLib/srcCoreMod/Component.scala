@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Component extends Directive {
   var animations: js.UndefOr[js.Array[_]] = js.undefined
   var changeDetection: js.UndefOr[ChangeDetectionStrategy] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StatOptions extends js.Object {
   var contentHash: java.lang.String
   var deleted: scala.Boolean

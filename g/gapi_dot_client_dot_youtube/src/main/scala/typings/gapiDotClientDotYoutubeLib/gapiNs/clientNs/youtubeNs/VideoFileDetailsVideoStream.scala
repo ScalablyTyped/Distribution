@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VideoFileDetailsVideoStream extends js.Object {
   /** The video content's display aspect ratio, which specifies the aspect ratio in which the video should be displayed. */
   var aspectRatio: js.UndefOr[scala.Double] = js.undefined

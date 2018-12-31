@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DynamicLinkWarning extends js.Object {
   /** The warning code. */
   var warningCode: js.UndefOr[java.lang.String] = js.undefined

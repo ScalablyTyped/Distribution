@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITextOptions extends IObjectOptions {
   /**
-       * Character spacing
-       */
+    * Character spacing
+    */
   var charSpacing: js.UndefOr[scala.Double] = js.undefined
   /**
   	 * Font family
@@ -32,16 +31,16 @@ trait ITextOptions extends IObjectOptions {
   	 */
   var lineHeight: js.UndefOr[scala.Double] = js.undefined
   /**
-       * Text decoration linethrough.
-       * @type Boolean
-       * @default
-       */
+    * Text decoration linethrough.
+    * @type Boolean
+    * @default
+    */
   var linethrough: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Text decoration overline.
-       * @type Boolean
-       * @default
-       */
+    * Text decoration overline.
+    * @type Boolean
+    * @default
+    */
   var overline: js.UndefOr[scala.Boolean] = js.undefined
   var path: js.UndefOr[java.lang.String] = js.undefined
   var text: js.UndefOr[java.lang.String] = js.undefined
@@ -55,14 +54,14 @@ trait ITextOptions extends IObjectOptions {
   var textBackgroundColor: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Text decoration Possible values?: "", "underline", "overline" or "line-through".
-       * Feels like this has been deprecated in favor of underline, overline, linethrough props
+    * Feels like this has been deprecated in favor of underline, overline, linethrough props
   	 */
   var textDecoration: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Text decoration underline.
-       * @type Boolean
-       * @default
-       */
+    * Text decoration underline.
+    * @type Boolean
+    * @default
+    */
   var underline: js.UndefOr[scala.Boolean] = js.undefined
   var useNative: js.UndefOr[scala.Boolean] = js.undefined
 }

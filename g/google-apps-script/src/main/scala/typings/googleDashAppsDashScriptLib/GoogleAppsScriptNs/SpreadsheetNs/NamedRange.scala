@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NamedRange extends js.Object {
   def getName(): java.lang.String
   def getRange(): Range

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FancyboxCallback extends js.Object {
   var afterClose: js.UndefOr[js.Function] = js.undefined
   var afterLoad: js.UndefOr[js.Function] = js.undefined

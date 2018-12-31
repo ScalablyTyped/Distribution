@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MockReq extends js.Object {
   var accepts: sinonLib.sinonMod.SinonNs.SinonStub
   var acceptsCharsets: sinonLib.sinonMod.SinonNs.SinonStub

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParamName extends js.Object {
   var asterisk: scala.Boolean
   var delimiter: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PatternGroupSize extends js.Object {
   var `,`: java.lang.String
   var `.`: java.lang.String

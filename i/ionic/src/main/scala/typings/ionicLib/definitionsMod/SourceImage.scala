@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SourceImage extends js.Object {
   var cachedId: js.UndefOr[java.lang.String] = js.undefined
   var ext: java.lang.String

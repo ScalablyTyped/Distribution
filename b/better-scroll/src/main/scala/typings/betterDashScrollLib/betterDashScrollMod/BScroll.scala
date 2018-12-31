@@ -34,7 +34,7 @@ trait BScroll extends js.Object {
   def next(time: scala.Double, easing: js.Object): scala.Unit = js.native
   def off(
     `type`: betterDashScrollLib.betterDashScrollLibStrings.beforeScrollStart | betterDashScrollLib.betterDashScrollLibStrings.scrollStart | betterDashScrollLib.betterDashScrollLibStrings.scroll | betterDashScrollLib.betterDashScrollLibStrings.scrollCancel | betterDashScrollLib.betterDashScrollLibStrings.scrollEnd | betterDashScrollLib.betterDashScrollLibStrings.touchEnd | betterDashScrollLib.betterDashScrollLibStrings.flick | betterDashScrollLib.betterDashScrollLibStrings.refresh | betterDashScrollLib.betterDashScrollLibStrings.destroy | betterDashScrollLib.betterDashScrollLibStrings.pullingDown | betterDashScrollLib.betterDashScrollLibStrings.pullingUp,
-    fn: js.Function1[/* repeated */js.Any, scala.Unit]
+    fn: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   @JSName("on")
   def on_beforeScrollStart(`type`: betterDashScrollLib.betterDashScrollLibStrings.beforeScrollStart, fn: js.Function0[_]): scala.Unit = js.native

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object revDashHashMod extends js.Object {
   /**
-   * Create a hash for file revving
-   * @param input Data to create a hash from.
-   */
+    * Create a hash for file revving
+    * @param input Data to create a hash from.
+    */
   def apply(input: nodeLib.Buffer | java.lang.String): java.lang.String = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestAccess extends js.Object {
   /** A concurrent access response. */
   var concurrentAccess: js.UndefOr[ConcurrentAccessRestriction] = js.undefined

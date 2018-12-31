@@ -9,17 +9,11 @@ import scala.scalajs.js.annotation._
 trait LodashPartition extends js.Object {
   def apply[T](callback: lodashLib.lodashMod.underscoreNs.ValueIteratee[T]): js.Tuple2[js.Array[T], js.Array[T]] = js.native
   def apply[T /* <: js.Object */](
-    callback: lodashLib.lodashMod.underscoreNs.ValueIteratee[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ],
+    callback: lodashLib.lodashMod.underscoreNs.ValueIteratee[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any],
     collection: T
   ): js.Tuple2[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ], 
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any], 
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any]
   ] = js.native
   def apply[T](
     callback: lodashLib.lodashMod.underscoreNs.ValueIteratee[T],

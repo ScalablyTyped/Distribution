@@ -8,14 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("rx-dom/rx", "DOM")
 @js.native
 object DOMNs extends js.Object {
-  
   trait AjaxErrorResponse extends js.Object {
     var originalEvent: stdLib.Event
     var status: scala.Double
     var `type`: java.lang.String
     var xhr: stdLib.XMLHttpRequest
   }
-  
   
   trait AjaxSettings extends js.Object {
     var async: js.UndefOr[scala.Boolean] = js.undefined
@@ -32,7 +30,6 @@ object DOMNs extends js.Object {
     var user: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait AjaxSuccessResponse extends js.Object {
     var originalEvent: stdLib.Event
     var response: js.Any
@@ -41,20 +38,17 @@ object DOMNs extends js.Object {
     var xhr: stdLib.XMLHttpRequest
   }
   
-  
   trait GeolocationOptions extends js.Object {
     var enableHighAccuracy: js.UndefOr[scala.Boolean] = js.undefined
     var maximumAge: js.UndefOr[scala.Double] = js.undefined
     var timeout: js.UndefOr[scala.Double] = js.undefined
   }
   
-  
   trait JsonpErrorResponse extends js.Object {
     var originalEvent: stdLib.Event
     var status: scala.Double
     var `type`: java.lang.String
   }
-  
   
   trait JsonpSettings extends js.Object {
     var async: js.UndefOr[scala.Boolean] = js.undefined
@@ -63,7 +57,6 @@ object DOMNs extends js.Object {
     var url: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait JsonpSuccessResponse extends js.Object {
     var originalEvent: stdLib.Event
     var response: js.Any
@@ -71,15 +64,12 @@ object DOMNs extends js.Object {
     var status: scala.Double
   }
   
-  // Ajax
   def ajax(settingsOrUrl: java.lang.String): rxDashLiteDashAggregatesLib.RxNs.Observable[AjaxSuccessResponse] = js.native
   // Ajax
   def ajax(settingsOrUrl: AjaxSettings): rxDashLiteDashAggregatesLib.RxNs.Observable[AjaxSuccessResponse] = js.native
   // Event Shortcuts
   def blur(element: stdLib.Element): rxDashLiteDashAggregatesLib.RxNs.Observable[stdLib.FocusEvent] = js.native
-  // Event Shortcuts
   def blur(element: stdLib.Element, selector: js.Function): rxDashLiteDashAggregatesLib.RxNs.Observable[stdLib.FocusEvent] = js.native
-  // Event Shortcuts
   def blur(element: stdLib.Element, selector: js.Function, useCapture: scala.Boolean): rxDashLiteDashAggregatesLib.RxNs.Observable[stdLib.FocusEvent] = js.native
   def change(element: stdLib.Element): rxDashLiteDashAggregatesLib.RxNs.Observable[stdLib.Event] = js.native
   def change(element: stdLib.Element, selector: js.Function): rxDashLiteDashAggregatesLib.RxNs.Observable[stdLib.Event] = js.native
@@ -106,25 +96,20 @@ object DOMNs extends js.Object {
   def focusout(element: stdLib.Element, selector: js.Function, useCapture: scala.Boolean): rxDashLiteDashAggregatesLib.RxNs.Observable[stdLib.MouseEvent] = js.native
   // Events
   def fromEvent[T](element: js.Any, eventName: java.lang.String): rxDashLiteDashAggregatesLib.RxNs.Observable[T] = js.native
-  // Events
   def fromEvent[T](element: js.Any, eventName: java.lang.String, selector: js.Function): rxDashLiteDashAggregatesLib.RxNs.Observable[T] = js.native
-  // Events
   def fromEvent[T](element: js.Any, eventName: java.lang.String, selector: js.Function, useCapture: scala.Boolean): rxDashLiteDashAggregatesLib.RxNs.Observable[T] = js.native
   // Server-Sent Events
   def fromEventSource[T](url: java.lang.String): rxDashLiteDashAggregatesLib.RxNs.Observable[T] = js.native
-  // Server-Sent Events
   def fromEventSource[T](url: java.lang.String, openObservable: rxDashCoreLib.RxNs.Observer[T]): rxDashLiteDashAggregatesLib.RxNs.Observable[T] = js.native
   // Mutation Observers
   def fromMutationObserver(target: stdLib.Node, options: stdLib.MutationObserverInit): rxDashLiteDashAggregatesLib.RxNs.Observable[stdLib.MutationEvent] = js.native
   // Web Sockets
   def fromWebSocket(url: java.lang.String, protocol: java.lang.String): rxDashCoreDashBindingLib.RxNs.Subject[stdLib.MessageEvent] = js.native
-  // Web Sockets
   def fromWebSocket(
     url: java.lang.String,
     protocol: java.lang.String,
     openObserver: rxDashCoreLib.RxNs.Observer[stdLib.Event]
   ): rxDashCoreDashBindingLib.RxNs.Subject[stdLib.MessageEvent] = js.native
-  // Web Sockets
   def fromWebSocket(
     url: java.lang.String,
     protocol: java.lang.String,
@@ -172,9 +157,7 @@ object DOMNs extends js.Object {
   def mouseup(element: stdLib.Element, selector: js.Function, useCapture: scala.Boolean): rxDashLiteDashAggregatesLib.RxNs.Observable[stdLib.MouseEvent] = js.native
   // Pointer Events
   def pointerdown(element: stdLib.Element): rxDashLiteDashAggregatesLib.RxNs.Observable[stdLib.PointerEvent] = js.native
-  // Pointer Events
   def pointerdown(element: stdLib.Element, selector: js.Function): rxDashLiteDashAggregatesLib.RxNs.Observable[stdLib.PointerEvent] = js.native
-  // Pointer Events
   def pointerdown(element: stdLib.Element, selector: js.Function, useCapture: scala.Boolean): rxDashLiteDashAggregatesLib.RxNs.Observable[stdLib.PointerEvent] = js.native
   def pointerenter(element: stdLib.Element): rxDashLiteDashAggregatesLib.RxNs.Observable[stdLib.PointerEvent] = js.native
   def pointerenter(element: stdLib.Element, selector: js.Function): rxDashLiteDashAggregatesLib.RxNs.Observable[stdLib.PointerEvent] = js.native
@@ -210,9 +193,7 @@ object DOMNs extends js.Object {
   def submit(element: stdLib.Element, selector: js.Function, useCapture: scala.Boolean): rxDashLiteDashAggregatesLib.RxNs.Observable[stdLib.Event] = js.native
   // Touch Events
   def touchcancel(element: stdLib.Element): rxDashLiteDashAggregatesLib.RxNs.Observable[stdLib.TouchEvent] = js.native
-  // Touch Events
   def touchcancel(element: stdLib.Element, selector: js.Function): rxDashLiteDashAggregatesLib.RxNs.Observable[stdLib.TouchEvent] = js.native
-  // Touch Events
   def touchcancel(element: stdLib.Element, selector: js.Function, useCapture: scala.Boolean): rxDashLiteDashAggregatesLib.RxNs.Observable[stdLib.TouchEvent] = js.native
   def touchend(element: stdLib.Element): rxDashLiteDashAggregatesLib.RxNs.Observable[stdLib.TouchEvent] = js.native
   def touchend(element: stdLib.Element, selector: js.Function): rxDashLiteDashAggregatesLib.RxNs.Observable[stdLib.TouchEvent] = js.native

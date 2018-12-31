@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PostalAddress extends js.Object {
   var addressLines: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var administrativeAreaName: js.UndefOr[java.lang.String] = js.undefined

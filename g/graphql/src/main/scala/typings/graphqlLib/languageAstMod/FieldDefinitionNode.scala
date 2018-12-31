@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FieldDefinitionNode extends js.Object {
   val arguments: js.UndefOr[js.Array[InputValueDefinitionNode]] = js.undefined
   val description: js.UndefOr[StringValueNode] = js.undefined

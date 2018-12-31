@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Position extends js.Object {
   def getElement(): Element
   def getOffset(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer

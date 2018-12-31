@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Button extends js.Object {
   def setAuthorizationAction(action: AuthorizationAction): Button
   def setComposeAction(action: Action, composedEmailType: ComposedEmailType): Button

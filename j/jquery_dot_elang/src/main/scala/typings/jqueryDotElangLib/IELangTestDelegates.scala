@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IELangTestDelegates extends js.Object {
   var rdoModeClickHandler: js.Function
   var rdoModeHandler: js.Function

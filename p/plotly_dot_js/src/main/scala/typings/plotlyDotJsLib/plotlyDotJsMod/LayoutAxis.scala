@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LayoutAxis extends Axis {
   var anchor: plotlyDotJsLib.plotlyDotJsLibStrings.free | AxisName
   var automargin: scala.Boolean

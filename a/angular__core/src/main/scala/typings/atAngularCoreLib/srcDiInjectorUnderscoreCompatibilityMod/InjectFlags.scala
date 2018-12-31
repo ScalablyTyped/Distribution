@@ -16,9 +16,9 @@ object InjectFlags extends js.Object {
     extends atAngularCoreLib.srcDiInjectorUnderscoreCompatibilityMod.InjectFlags
   
   /**
-       * Specifies that an injector should retrieve a dependency from any injector until reaching the
-       * host element of the current component. (Only used with Element Injector)
-       */
+    * Specifies that an injector should retrieve a dependency from any injector until reaching the
+    * host element of the current component. (Only used with Element Injector)
+    */
   @js.native
   sealed trait Host
     extends atAngularCoreLib.srcDiInjectorUnderscoreCompatibilityMod.InjectFlags

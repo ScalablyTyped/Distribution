@@ -20,10 +20,6 @@ trait WebCLCommandQueue extends js.Object {
     dstOffset: scala.Double,
     numBytes: scala.Double
   ): scala.Unit = js.native
-  ////////////////////////////////////////////////////////////////////////////
-  //
-  // Copying: Buffer <-> Buffer, Image <-> Image, Buffer <-> Image
-  //
   def enqueueCopyBuffer(
     srcBuffer: WebCLBuffer,
     dstBuffer: WebCLBuffer,
@@ -32,10 +28,6 @@ trait WebCLCommandQueue extends js.Object {
     numBytes: scala.Double,
     eventWaitList: js.Array[WebCLEvent]
   ): scala.Unit = js.native
-  ////////////////////////////////////////////////////////////////////////////
-  //
-  // Copying: Buffer <-> Buffer, Image <-> Image, Buffer <-> Image
-  //
   def enqueueCopyBuffer(
     srcBuffer: WebCLBuffer,
     dstBuffer: WebCLBuffer,
@@ -168,10 +160,6 @@ trait WebCLCommandQueue extends js.Object {
     globalWorkOffset: js.Array[scala.Double],
     globalWorkSize: js.Array[scala.Double]
   ): scala.Unit = js.native
-  ////////////////////////////////////////////////////////////////////////////
-  //
-  // Executing kernels
-  //
   def enqueueNDRangeKernel(
     kernel: WebCLKernel,
     workDim: scala.Double,
@@ -179,10 +167,6 @@ trait WebCLCommandQueue extends js.Object {
     globalWorkSize: js.Array[scala.Double],
     localWorkSize: js.Array[scala.Double]
   ): scala.Unit = js.native
-  ////////////////////////////////////////////////////////////////////////////
-  //
-  // Executing kernels
-  //
   def enqueueNDRangeKernel(
     kernel: WebCLKernel,
     workDim: scala.Double,
@@ -191,10 +175,6 @@ trait WebCLCommandQueue extends js.Object {
     localWorkSize: js.Array[scala.Double],
     eventWaitList: js.Array[WebCLEvent]
   ): scala.Unit = js.native
-  ////////////////////////////////////////////////////////////////////////////
-  //
-  // Executing kernels
-  //
   def enqueueNDRangeKernel(
     kernel: WebCLKernel,
     workDim: scala.Double,
@@ -215,10 +195,6 @@ trait WebCLCommandQueue extends js.Object {
     numBytes: scala.Double,
     hostPtr: stdLib.ArrayBufferView
   ): scala.Unit = js.native
-  ////////////////////////////////////////////////////////////////////////////
-  //
-  // Reading: Buffer -> Host, Image -> Host
-  //
   def enqueueReadBuffer(
     buffer: WebCLBuffer,
     blockingRead: scala.Boolean,
@@ -227,10 +203,6 @@ trait WebCLCommandQueue extends js.Object {
     hostPtr: stdLib.ArrayBufferView,
     eventWaitList: js.Array[WebCLEvent]
   ): scala.Unit = js.native
-  ////////////////////////////////////////////////////////////////////////////
-  //
-  // Reading: Buffer -> Host, Image -> Host
-  //
   def enqueueReadBuffer(
     buffer: WebCLBuffer,
     blockingRead: scala.Boolean,
@@ -318,10 +290,6 @@ trait WebCLCommandQueue extends js.Object {
     numBytes: scala.Double,
     hostPtr: stdLib.ArrayBufferView
   ): scala.Unit = js.native
-  ////////////////////////////////////////////////////////////////////////////
-  //
-  // Writing: Host -> Buffer, Host -> Image
-  //
   def enqueueWriteBuffer(
     buffer: WebCLBuffer,
     blockingWrite: scala.Boolean,
@@ -330,10 +298,6 @@ trait WebCLCommandQueue extends js.Object {
     hostPtr: stdLib.ArrayBufferView,
     eventWaitList: js.Array[WebCLEvent]
   ): scala.Unit = js.native
-  ////////////////////////////////////////////////////////////////////////////
-  //
-  // Writing: Host -> Buffer, Host -> Image
-  //
   def enqueueWriteBuffer(
     buffer: WebCLBuffer,
     blockingWrite: scala.Boolean,

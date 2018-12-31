@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PopupDialogProps extends js.Object {
   var actions: js.UndefOr[js.Array[_]] = js.undefined
   var animationDuration: js.UndefOr[scala.Double] = js.undefined

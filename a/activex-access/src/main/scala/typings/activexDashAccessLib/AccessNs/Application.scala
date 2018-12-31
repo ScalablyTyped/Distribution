@@ -88,7 +88,6 @@ class Application protected () extends js.Object {
   def CommandBars(Index: scala.Double): activexDashOfficeLib.OfficeNs.CommandBar = js.native
   /** @param LogFile [LogFile=false] */
   def CompactRepair(SourceFile: java.lang.String, DestinationFile: java.lang.String): scala.Boolean = js.native
-  /** @param LogFile [LogFile=false] */
   def CompactRepair(SourceFile: java.lang.String, DestinationFile: java.lang.String, LogFile: scala.Boolean): scala.Boolean = js.native
   def ConvertAccessProject(
     SourceFilename: java.lang.String,
@@ -146,7 +145,6 @@ class Application protected () extends js.Object {
   ): Control = js.native
   /** @param CreateNewFile [CreateNewFile=true] */
   def CreateDataAccessPage(FileName: java.lang.String): DataAccessPage = js.native
-  /** @param CreateNewFile [CreateNewFile=true] */
   def CreateDataAccessPage(FileName: java.lang.String, CreateNewFile: scala.Boolean): DataAccessPage = js.native
   def CreateForm(): Form = js.native
   def CreateForm(Database: java.lang.String): Form = js.native
@@ -158,57 +156,22 @@ class Application protected () extends js.Object {
     Footer: scala.Double
   ): scala.Double = js.native
   /**
-           * @param Path [Path=' ']
-           * @param Name [Name=' ']
-           * @param Company [Company=' ']
-           * @param WorkgroupID [WorkgroupID=' ']
-           * @param Replace [Replace=false]
-           */
+    * @param Path [Path=' ']
+    * @param Name [Name=' ']
+    * @param Company [Company=' ']
+    * @param WorkgroupID [WorkgroupID=' ']
+    * @param Replace [Replace=false]
+    */
   def CreateNewWorkgroupFile(): scala.Unit = js.native
-  /**
-           * @param Path [Path=' ']
-           * @param Name [Name=' ']
-           * @param Company [Company=' ']
-           * @param WorkgroupID [WorkgroupID=' ']
-           * @param Replace [Replace=false]
-           */
   def CreateNewWorkgroupFile(Path: java.lang.String): scala.Unit = js.native
-  /**
-           * @param Path [Path=' ']
-           * @param Name [Name=' ']
-           * @param Company [Company=' ']
-           * @param WorkgroupID [WorkgroupID=' ']
-           * @param Replace [Replace=false]
-           */
   def CreateNewWorkgroupFile(Path: java.lang.String, Name: java.lang.String): scala.Unit = js.native
-  /**
-           * @param Path [Path=' ']
-           * @param Name [Name=' ']
-           * @param Company [Company=' ']
-           * @param WorkgroupID [WorkgroupID=' ']
-           * @param Replace [Replace=false]
-           */
   def CreateNewWorkgroupFile(Path: java.lang.String, Name: java.lang.String, Company: java.lang.String): scala.Unit = js.native
-  /**
-           * @param Path [Path=' ']
-           * @param Name [Name=' ']
-           * @param Company [Company=' ']
-           * @param WorkgroupID [WorkgroupID=' ']
-           * @param Replace [Replace=false]
-           */
   def CreateNewWorkgroupFile(
     Path: java.lang.String,
     Name: java.lang.String,
     Company: java.lang.String,
     WorkgroupID: java.lang.String
   ): scala.Unit = js.native
-  /**
-           * @param Path [Path=' ']
-           * @param Name [Name=' ']
-           * @param Company [Company=' ']
-           * @param WorkgroupID [WorkgroupID=' ']
-           * @param Replace [Replace=false]
-           */
   def CreateNewWorkgroupFile(
     Path: java.lang.String,
     Name: java.lang.String,
@@ -307,7 +270,6 @@ class Application protected () extends js.Object {
   def DirtyObject(ObjectType: AcObjectType, ObjectName: java.lang.String): scala.Unit = js.native
   /** @param bstrStatusBarText [bstrStatusBarText=''] */
   def Echo(EchoOn: scala.Double): scala.Unit = js.native
-  /** @param bstrStatusBarText [bstrStatusBarText=''] */
   def Echo(EchoOn: scala.Double, bstrStatusBarText: java.lang.String): scala.Unit = js.native
   def EuroConvert(Number: scala.Double, SourceCurrency: java.lang.String, TargetCurrency: java.lang.String): scala.Double = js.native
   def EuroConvert(
@@ -325,21 +287,16 @@ class Application protected () extends js.Object {
   ): scala.Double = js.native
   def Eval(StringExpr: java.lang.String): js.Any = js.native
   /**
-           * @param SelectedRecords [SelectedRecords=false]
-           * @param FromPage [FromPage=1]
-           * @param ToPage [ToPage=-1]
-           */
+    * @param SelectedRecords [SelectedRecords=false]
+    * @param FromPage [FromPage=1]
+    * @param ToPage [ToPage=-1]
+    */
   def ExportCustomFixedFormat(
     ExternalExporter: js.Any,
     OutputFileName: java.lang.String,
     ObjectName: java.lang.String,
     ObjectType: AcOutputObjectType
   ): scala.Unit = js.native
-  /**
-           * @param SelectedRecords [SelectedRecords=false]
-           * @param FromPage [FromPage=1]
-           * @param ToPage [ToPage=-1]
-           */
   def ExportCustomFixedFormat(
     ExternalExporter: js.Any,
     OutputFileName: java.lang.String,
@@ -347,11 +304,6 @@ class Application protected () extends js.Object {
     ObjectType: AcOutputObjectType,
     SelectedRecords: scala.Boolean
   ): scala.Unit = js.native
-  /**
-           * @param SelectedRecords [SelectedRecords=false]
-           * @param FromPage [FromPage=1]
-           * @param ToPage [ToPage=-1]
-           */
   def ExportCustomFixedFormat(
     ExternalExporter: js.Any,
     OutputFileName: java.lang.String,
@@ -360,11 +312,6 @@ class Application protected () extends js.Object {
     SelectedRecords: scala.Boolean,
     FromPage: scala.Double
   ): scala.Unit = js.native
-  /**
-           * @param SelectedRecords [SelectedRecords=false]
-           * @param FromPage [FromPage=1]
-           * @param ToPage [ToPage=-1]
-           */
   def ExportCustomFixedFormat(
     ExternalExporter: js.Any,
     OutputFileName: java.lang.String,
@@ -376,14 +323,14 @@ class Application protected () extends js.Object {
   ): scala.Unit = js.native
   def ExportNavigationPane(Path: java.lang.String): scala.Unit = js.native
   /**
-           * @param DataTarget [DataTarget='']
-           * @param SchemaTarget [SchemaTarget='']
-           * @param PresentationTarget [PresentationTarget='']
-           * @param ImageTarget [ImageTarget='']
-           * @param Encoding [Encoding=0]
-           * @param OtherFlags [OtherFlags=0]
-           * @param WhereCondition [WhereCondition='']
-           */
+    * @param DataTarget [DataTarget='']
+    * @param SchemaTarget [SchemaTarget='']
+    * @param PresentationTarget [PresentationTarget='']
+    * @param ImageTarget [ImageTarget='']
+    * @param Encoding [Encoding=0]
+    * @param OtherFlags [OtherFlags=0]
+    * @param WhereCondition [WhereCondition='']
+    */
   def ExportXML(
     ObjectType: AcExportXMLObjectType,
     DataSource: java.lang.String,
@@ -397,13 +344,13 @@ class Application protected () extends js.Object {
     AdditionalData: js.UndefOr[AdditionalData]
   ): scala.Unit = js.native
   /**
-           * @param DataTarget [DataTarget='']
-           * @param SchemaTarget [SchemaTarget='']
-           * @param PresentationTarget [PresentationTarget='']
-           * @param ImageTarget [ImageTarget='']
-           * @param Encoding [Encoding=0]
-           * @param OtherFlags [OtherFlags=0]
-           */
+    * @param DataTarget [DataTarget='']
+    * @param SchemaTarget [SchemaTarget='']
+    * @param PresentationTarget [PresentationTarget='']
+    * @param ImageTarget [ImageTarget='']
+    * @param Encoding [Encoding=0]
+    * @param OtherFlags [OtherFlags=0]
+    */
   def ExportXMLOld(
     ObjectType: AcExportXMLObjectType,
     DataSource: java.lang.String,
@@ -416,12 +363,12 @@ class Application protected () extends js.Object {
   ): scala.Unit = js.native
   def FileDialog(dialogType: activexDashOfficeLib.OfficeNs.MsoFileDialogType): activexDashOfficeLib.OfficeNs.FileDialog = js.native
   /**
-           * @param SubAddress [SubAddress='']
-           * @param NewWindow [NewWindow=false]
-           * @param AddHistory [AddHistory=true]
-           * @param Method [Method=0]
-           * @param HeaderInfo [HeaderInfo='']
-           */
+    * @param SubAddress [SubAddress='']
+    * @param NewWindow [NewWindow=false]
+    * @param AddHistory [AddHistory=true]
+    * @param Method [Method=0]
+    * @param HeaderInfo [HeaderInfo='']
+    */
   def FollowHyperlink(
     Address: java.lang.String,
     SubAddress: js.UndefOr[java.lang.String],
@@ -436,25 +383,22 @@ class Application protected () extends js.Object {
   def GUIDFromString(String: java.lang.String): ByteArray = js.native
   def GetHiddenAttribute(ObjectType: AcObjectType, ObjectName: java.lang.String): scala.Boolean = js.native
   /**
-           * Returns different types of values based on how the options are set:
-           * * If by selecting / clearing a checkbox, returns `boolean`
-           * * If by typing a string or numeric value, returns `string` or `number`
-           * * If by choosing from a list, will return the 0-based index of the selected item
-           */
+    * Returns different types of values based on how the options are set:
+    * * If by selecting / clearing a checkbox, returns `boolean`
+    * * If by typing a string or numeric value, returns `string` or `number`
+    * * If by choosing from a list, will return the 0-based index of the selected item
+    */
   def GetOption(OptionName: java.lang.String): scala.Boolean | java.lang.String | scala.Double = js.native
   def HtmlEncode(PlainText: java.lang.String): java.lang.String = js.native
   def HtmlEncode(PlainText: java.lang.String, Length: scala.Double): java.lang.String = js.native
   /** @param Part [Part=0] */
   def HyperlinkPart(Hyperlink: js.Any): java.lang.String = js.native
-  /** @param Part [Part=0] */
   def HyperlinkPart(Hyperlink: js.Any, Part: AcHyperlinkPart): java.lang.String = js.native
   /** @param fAppendOnly [fAppendOnly=false] */
   def ImportNavigationPane(Path: java.lang.String): scala.Unit = js.native
-  /** @param fAppendOnly [fAppendOnly=false] */
   def ImportNavigationPane(Path: java.lang.String, fAppendOnly: scala.Boolean): scala.Unit = js.native
   /** @param ImportOptions [ImportOptions=1] */
   def ImportXML(DataSource: java.lang.String): scala.Unit = js.native
-  /** @param ImportOptions [ImportOptions=1] */
   def ImportXML(DataSource: java.lang.String, ImportOptions: AcImportXMLOption): scala.Unit = js.native
   def InsertText(Text: java.lang.String, ModuleName: java.lang.String): scala.Unit = js.native
   def InstantiateTemplate(Path: java.lang.String): scala.Unit = js.native
@@ -471,39 +415,19 @@ class Application protected () extends js.Object {
   def NewAccessProject(filepath: java.lang.String): scala.Unit = js.native
   def NewAccessProject(filepath: java.lang.String, Connect: java.lang.String): scala.Unit = js.native
   /**
-           * @param FileFormat [FileFormat=0]
-           * @param SiteAddress [SiteAddress='']
-           * @param ListID [ListID='']
-           */
+    * @param FileFormat [FileFormat=0]
+    * @param SiteAddress [SiteAddress='']
+    * @param ListID [ListID='']
+    */
   def NewCurrentDatabase(filepath: java.lang.String): scala.Unit = js.native
-  /**
-           * @param FileFormat [FileFormat=0]
-           * @param SiteAddress [SiteAddress='']
-           * @param ListID [ListID='']
-           */
   def NewCurrentDatabase(filepath: java.lang.String, FileFormat: AcNewDatabaseFormat): scala.Unit = js.native
-  /**
-           * @param FileFormat [FileFormat=0]
-           * @param SiteAddress [SiteAddress='']
-           * @param ListID [ListID='']
-           */
   def NewCurrentDatabase(filepath: java.lang.String, FileFormat: AcNewDatabaseFormat, Template: java.lang.String): scala.Unit = js.native
-  /**
-           * @param FileFormat [FileFormat=0]
-           * @param SiteAddress [SiteAddress='']
-           * @param ListID [ListID='']
-           */
   def NewCurrentDatabase(
     filepath: java.lang.String,
     FileFormat: AcNewDatabaseFormat,
     Template: java.lang.String,
     SiteAddress: java.lang.String
   ): scala.Unit = js.native
-  /**
-           * @param FileFormat [FileFormat=0]
-           * @param SiteAddress [SiteAddress='']
-           * @param ListID [ListID='']
-           */
   def NewCurrentDatabase(
     filepath: java.lang.String,
     FileFormat: AcNewDatabaseFormat,
@@ -516,26 +440,16 @@ class Application protected () extends js.Object {
   def Nz(Value: js.Any, ValueIfNull: js.Any): js.Any = js.native
   /** @param Exclusive [Exclusive=false] */
   def OpenAccessProject(filepath: java.lang.String): scala.Unit = js.native
-  /** @param Exclusive [Exclusive=false] */
   def OpenAccessProject(filepath: java.lang.String, Exclusive: scala.Boolean): scala.Unit = js.native
   /**
-           * @param Exclusive [Exclusive=false]
-           * @param bstrPassword [bstrPassword='']
-           */
+    * @param Exclusive [Exclusive=false]
+    * @param bstrPassword [bstrPassword='']
+    */
   def OpenCurrentDatabase(filepath: java.lang.String): scala.Unit = js.native
-  /**
-           * @param Exclusive [Exclusive=false]
-           * @param bstrPassword [bstrPassword='']
-           */
   def OpenCurrentDatabase(filepath: java.lang.String, Exclusive: scala.Boolean): scala.Unit = js.native
-  /**
-           * @param Exclusive [Exclusive=false]
-           * @param bstrPassword [bstrPassword='']
-           */
   def OpenCurrentDatabase(filepath: java.lang.String, Exclusive: scala.Boolean, bstrPassword: java.lang.String): scala.Unit = js.native
   /** @param Exclusive [Exclusive=false] */
   def OpenCurrentDatabaseOld(filepath: java.lang.String): scala.Unit = js.native
-  /** @param Exclusive [Exclusive=false] */
   def OpenCurrentDatabaseOld(filepath: java.lang.String, Exclusive: scala.Boolean): scala.Unit = js.native
   def PlainText(RichText: java.lang.String): java.lang.String = js.native
   def PlainText(RichText: java.lang.String, Length: scala.Double): java.lang.String = js.native
@@ -543,7 +457,6 @@ class Application protected () extends js.Object {
   def Printers(Index: scala.Double): Printer = js.native
   /** @param Option [Option=1] */
   def Quit(): scala.Unit = js.native
-  /** @param Option [Option=1] */
   def Quit(Option: AcQuitOption): scala.Unit = js.native
   def References(var_0: java.lang.String): Reference = js.native
   def References(var_0: scala.Double): Reference = js.native
@@ -611,26 +524,14 @@ class Application protected () extends js.Object {
   def SaveAsText(ObjectType: AcObjectType, ObjectName: java.lang.String, FileName: java.lang.String): scala.Unit = js.native
   def SetDefaultWorkgroupFile(Path: java.lang.String): scala.Unit = js.native
   def SetHiddenAttribute(ObjectType: AcObjectType, ObjectName: java.lang.String, fHidden: scala.Boolean): scala.Unit = js.native
-  /**
-           * Pass different types of values based on how the option is set in the UI
-           * * If by selecting / clearing a checkbox, pass a `boolean`
-           * * If by typing a string or numeric value, pass a `string` or `number`
-           * * If by choosing from a list, pass the 0-based index of the tiem to select
-           */
   def SetOption(OptionName: java.lang.String, Setting: java.lang.String): scala.Unit = js.native
   /**
-           * Pass different types of values based on how the option is set in the UI
-           * * If by selecting / clearing a checkbox, pass a `boolean`
-           * * If by typing a string or numeric value, pass a `string` or `number`
-           * * If by choosing from a list, pass the 0-based index of the tiem to select
-           */
+    * Pass different types of values based on how the option is set in the UI
+    * * If by selecting / clearing a checkbox, pass a `boolean`
+    * * If by typing a string or numeric value, pass a `string` or `number`
+    * * If by choosing from a list, pass the 0-based index of the tiem to select
+    */
   def SetOption(OptionName: java.lang.String, Setting: scala.Boolean): scala.Unit = js.native
-  /**
-           * Pass different types of values based on how the option is set in the UI
-           * * If by selecting / clearing a checkbox, pass a `boolean`
-           * * If by typing a string or numeric value, pass a `string` or `number`
-           * * If by choosing from a list, pass the 0-based index of the tiem to select
-           */
   def SetOption(OptionName: java.lang.String, Setting: scala.Double): scala.Unit = js.native
   def SetUndoRecording(yesno: scala.Double): scala.Unit = js.native
   def StringFromGUID(Guid: ByteArray): java.lang.String = js.native
@@ -642,24 +543,16 @@ class Application protected () extends js.Object {
   def TempVars(Index: java.lang.String): TempVar = js.native
   def TempVars(Index: scala.Double): TempVar = js.native
   /**
-           * @param WellFormedXMLOutput [WellFormedXMLOutput=false]
-           * @param ScriptOption [ScriptOption=1]
-           */
+    * @param WellFormedXMLOutput [WellFormedXMLOutput=false]
+    * @param ScriptOption [ScriptOption=1]
+    */
   def TransformXML(DataSource: java.lang.String, TransformSource: java.lang.String, OutputTarget: java.lang.String): scala.Unit = js.native
-  /**
-           * @param WellFormedXMLOutput [WellFormedXMLOutput=false]
-           * @param ScriptOption [ScriptOption=1]
-           */
   def TransformXML(
     DataSource: java.lang.String,
     TransformSource: java.lang.String,
     OutputTarget: java.lang.String,
     WellFormedXMLOutput: scala.Boolean
   ): scala.Unit = js.native
-  /**
-           * @param WellFormedXMLOutput [WellFormedXMLOutput=false]
-           * @param ScriptOption [ScriptOption=1]
-           */
   def TransformXML(
     DataSource: java.lang.String,
     TransformSource: java.lang.String,

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEntry
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Works the same way as moveTo but copies the entry

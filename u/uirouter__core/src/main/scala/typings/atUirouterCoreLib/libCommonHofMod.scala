@@ -20,7 +20,7 @@ object libCommonHofMod extends js.Object {
   def eq(comp: js.Any): atUirouterCoreLib.libCommonCommonMod.Predicate[_] = js.native
   def invoke(fnName: java.lang.String): js.Function = js.native
   def invoke(fnName: java.lang.String, args: js.Array[_]): js.Function = js.native
-  def is[T](ctor: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]): js.Function1[/* obj */ js.Any, /* is T */scala.Boolean] = js.native
+  def is[T](ctor: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T]): js.Function1[/* obj */ js.Any, /* is T */ scala.Boolean] = js.native
   def not(fn: atUirouterCoreLib.libCommonCommonMod.Predicate[_]): atUirouterCoreLib.libCommonCommonMod.Predicate[_] = js.native
   def or(
     fn1: atUirouterCoreLib.libCommonCommonMod.Predicate[_],

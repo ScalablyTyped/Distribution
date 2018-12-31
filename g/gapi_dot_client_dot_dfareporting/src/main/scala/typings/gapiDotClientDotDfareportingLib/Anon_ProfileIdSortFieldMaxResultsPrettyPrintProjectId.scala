@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ProfileIdSortFieldMaxResultsPrettyPrintProjectId extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -28,15 +27,15 @@ trait Anon_ProfileIdSortFieldMaxResultsPrettyPrintProjectId extends js.Object {
   /** Project ID for orders. */
   var projectId: java.lang.String
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Allows searching for orders by name or ID. Wildcards (&#42;) are allowed. For example, "order&#42;2015" will return orders with names like "order June 2015",
-                   * "order April 2015", or simply "order 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For
-                   * example, a search string of "order" will match orders with name "my order", "order 2015", or simply "order".
-                   */
+    * Allows searching for orders by name or ID. Wildcards (&#42;) are allowed. For example, "order&#42;2015" will return orders with names like "order June 2015",
+    * "order April 2015", or simply "order 2015". Most of the searches also add wildcards implicitly at the start and the end of the search string. For
+    * example, a search string of "order" will match orders with name "my order", "order 2015", or simply "order".
+    */
   var searchString: js.UndefOr[java.lang.String] = js.undefined
   /** Select only orders that are associated with these site IDs. */
   var siteId: js.UndefOr[java.lang.String] = js.undefined

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // The kinds of links.
-
 trait LinkKind extends js.Object {
   // If set, indicates this is a link to the specific page in this
   // presentation with this ID. A page with this ID may not exist.

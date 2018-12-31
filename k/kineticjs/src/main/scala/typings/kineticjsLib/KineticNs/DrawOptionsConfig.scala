@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DrawOptionsConfig extends js.Object {
   var fill: js.UndefOr[java.lang.String] = js.undefined
   var lineJoin: js.UndefOr[java.lang.String] = js.undefined

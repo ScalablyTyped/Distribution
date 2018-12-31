@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
-trait GetFileOptions
-  extends atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.GetConfig {
+/* RemoveDifficultInheritance: 
+- Dropped any */ trait GetFileOptions extends js.Object {
   var userProject: js.UndefOr[java.lang.String] = js.undefined
 }
 

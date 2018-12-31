@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("cassandra-driver", "auth")
 @js.native
 object authNs extends js.Object {
-  
   trait AuthProvider extends js.Object {
     def newAuthenticator(endpoint: java.lang.String, name: java.lang.String): scala.Unit
   }
@@ -24,7 +23,6 @@ object authNs extends js.Object {
   @js.native
   trait AuthenticatorStatic
     extends org.scalablytyped.runtime.Instantiable0[Authenticator]
-  
   
   trait PlainTextAuthProvider extends AuthProvider
   

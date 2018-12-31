@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISliderStyles extends js.Object {
   var activeSection: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   var container: atUifabricMergeDashStylesLib.libIStyleMod.IStyle

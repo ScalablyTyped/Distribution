@@ -9,22 +9,22 @@ import scala.scalajs.js.annotation._
 trait MIDIAccess
   extends stdLib.EventTarget {
   /**
-       * The MIDI input ports available to the system.
-       */
+    * The MIDI input ports available to the system.
+    */
   var inputs: MIDIInputMap = js.native
   /**
-       * The MIDI output ports available to the system.
-       */
+    * The MIDI output ports available to the system.
+    */
   var outputs: MIDIOutputMap = js.native
   /**
-       * This attribute informs the user whether system exclusive support is enabled on
-       * this MIDIAccess.
-       */
+    * This attribute informs the user whether system exclusive support is enabled on
+    * this MIDIAccess.
+    */
   var sysexEnabled: scala.Boolean = js.native
   /**
-       * The handler called when a new port is connected or an existing port changes the
-       * state attribute.
-       */
+    * The handler called when a new port is connected or an existing port changes the
+    * state attribute.
+    */
   def onstatechange(e: MIDIConnectionEvent): scala.Unit = js.native
 }
 

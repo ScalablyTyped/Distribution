@@ -15,17 +15,17 @@ trait LodashFlowRight extends js.Object {
     f3: js.Function1[/* a */ js.Any, _],
     f2: js.Function1[/* a */ js.Any, _],
     f1: js.Function0[_],
-    funcs: (lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */_, _]])*
-  ): js.Function1[/* repeated */js.Any, _] = js.native
-  def apply(funcs: js.Array[lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */_, _]]]): js.Function1[/* repeated */js.Any, _] = js.native
+    funcs: (lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ _, _]])*
+  ): js.Function1[/* repeated */ js.Any, _] = js.native
+  def apply(funcs: js.Array[lodashLib.lodashMod.underscoreNs.Many[js.Function1[/* repeated */ _, _]]]): js.Function1[/* repeated */ js.Any, _] = js.native
   def apply[R2, R1](f2: js.Function1[/* a */ R1, R2], f1: js.Function0[R1]): js.Function0[R2] = js.native
-  def apply[R2, R1](f2: js.Function1[/* a */ R1, R2], f1: js.Function1[/* repeated */js.Any, R1]): js.Function1[/* repeated */js.Any, R2] = js.native
+  def apply[R2, R1](f2: js.Function1[/* a */ R1, R2], f1: js.Function1[/* repeated */ js.Any, R1]): js.Function1[/* repeated */ js.Any, R2] = js.native
   def apply[R3, R2, R1](f3: js.Function1[/* a */ R2, R3], f2: js.Function1[/* a */ R1, R2], f1: js.Function0[R1]): js.Function0[R3] = js.native
   def apply[R3, R2, R1](
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
-    f1: js.Function1[/* repeated */js.Any, R1]
-  ): js.Function1[/* repeated */js.Any, R3] = js.native
+    f1: js.Function1[/* repeated */ js.Any, R1]
+  ): js.Function1[/* repeated */ js.Any, R3] = js.native
   def apply[A1, A2, R2, R1](f2: js.Function1[/* a */ R1, R2], f1: js.Function2[/* a1 */ A1, /* a2 */ A2, R1]): js.Function2[/* a1 */ A1, /* a2 */ A2, R2] = js.native
   def apply[R4, R3, R2, R1](
     f4: js.Function1[/* a */ R3, R4],
@@ -37,8 +37,8 @@ trait LodashFlowRight extends js.Object {
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
-    f1: js.Function1[/* repeated */js.Any, R1]
-  ): js.Function1[/* repeated */js.Any, R4] = js.native
+    f1: js.Function1[/* repeated */ js.Any, R1]
+  ): js.Function1[/* repeated */ js.Any, R4] = js.native
   def apply[A1, A2, A3, R2, R1](f2: js.Function1[/* a */ R1, R2], f1: js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, R1]): js.Function3[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, R2] = js.native
   def apply[A1, A2, R3, R2, R1](
     f3: js.Function1[/* a */ R2, R3],
@@ -57,8 +57,8 @@ trait LodashFlowRight extends js.Object {
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
-    f1: js.Function1[/* repeated */js.Any, R1]
-  ): js.Function1[/* repeated */js.Any, R5] = js.native
+    f1: js.Function1[/* repeated */ js.Any, R1]
+  ): js.Function1[/* repeated */ js.Any, R5] = js.native
   def apply[A1, A2, A3, A4, R2, R1](
     f2: js.Function1[/* a */ R1, R2],
     f1: js.Function4[/* a1 */ A1, /* a2 */ A2, /* a3 */ A3, /* a4 */ A4, R1]
@@ -88,8 +88,8 @@ trait LodashFlowRight extends js.Object {
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
-    f1: js.Function1[/* repeated */js.Any, R1]
-  ): js.Function1[/* repeated */js.Any, R6] = js.native
+    f1: js.Function1[/* repeated */ js.Any, R1]
+  ): js.Function1[/* repeated */ js.Any, R6] = js.native
   def apply[A1, A2, A3, A4, R3, R2, R1](
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
@@ -124,8 +124,8 @@ trait LodashFlowRight extends js.Object {
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],
     f2: js.Function1[/* a */ R1, R2],
-    f1: js.Function1[/* repeated */js.Any, R1]
-  ): js.Function1[/* repeated */js.Any, R7] = js.native
+    f1: js.Function1[/* repeated */ js.Any, R1]
+  ): js.Function1[/* repeated */ js.Any, R7] = js.native
   def apply[A1, A2, A3, A4, R4, R3, R2, R1](
     f4: js.Function1[/* a */ R3, R4],
     f3: js.Function1[/* a */ R2, R3],

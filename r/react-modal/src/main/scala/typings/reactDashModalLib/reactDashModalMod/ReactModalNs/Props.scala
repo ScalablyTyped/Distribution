@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Props extends js.Object {
   /* Set this to properly hide your application from assistive screenreaders and other assistive technologies while the modal is open. */
   var appElement: js.UndefOr[reactLib.HTMLElement | js.Object] = js.undefined

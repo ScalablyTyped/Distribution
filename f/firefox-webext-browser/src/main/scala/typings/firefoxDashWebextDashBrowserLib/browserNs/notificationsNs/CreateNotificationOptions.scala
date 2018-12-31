@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateNotificationOptions extends js.Object {
   /** A URL to the app icon mask. */
   var appIconMaskUrl: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Text and icons for up to two notification action buttons.
-           * @deprecated Unsupported on Firefox at this time.
-           */
+    * Text and icons for up to two notification action buttons.
+    * @deprecated Unsupported on Firefox at this time.
+    */
   var buttons: js.UndefOr[js.Array[firefoxDashWebextDashBrowserLib.Anon_TitleIconUrl]] = js.undefined
   /** Alternate notification content with a lower-weight font. */
   var contextMessage: js.UndefOr[java.lang.String] = js.undefined
@@ -23,8 +22,8 @@ trait CreateNotificationOptions extends js.Object {
   /** A URL to the image thumbnail for image-type notifications. */
   var imageUrl: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Whether to show UI indicating that the app will visibly respond to clicks on the body of a notification.
-           */
+    * Whether to show UI indicating that the app will visibly respond to clicks on the body of a notification.
+    */
   var isClickable: js.UndefOr[scala.Boolean] = js.undefined
   /** Items for multi-item notifications. */
   var items: js.UndefOr[js.Array[NotificationItem]] = js.undefined

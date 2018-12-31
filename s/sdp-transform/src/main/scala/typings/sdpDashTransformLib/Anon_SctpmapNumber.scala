@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SctpmapNumber extends js.Object {
   var app: java.lang.String
   var maxMessageSize: scala.Double

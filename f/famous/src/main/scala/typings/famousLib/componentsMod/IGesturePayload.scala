@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGesturePayload extends js.Object {
   var center: famousLib.mathMod.Vec2
   var centerDelta: famousLib.mathMod.Vec2

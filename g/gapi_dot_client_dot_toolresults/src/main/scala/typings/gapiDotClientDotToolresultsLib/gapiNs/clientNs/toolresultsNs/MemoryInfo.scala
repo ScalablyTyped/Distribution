@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MemoryInfo extends js.Object {
   /** Maximum memory that can be allocated to the process in KiB */
   var memoryCapInKibibyte: js.UndefOr[java.lang.String] = js.undefined

@@ -12,29 +12,29 @@ sealed trait OnType extends js.Object
 @js.native
 object OnType extends js.Object {
   /**
-       * Day-of-month number
-       */
+    * Day-of-month number
+    */
   @js.native
   sealed trait DayNum
     extends timezonecompleteLib.distLibTzDashDatabaseMod.OnType
   
   /**
-       * e.g. "Sun>=8"
-       */
+    * e.g. "Sun>=8"
+    */
   @js.native
   sealed trait GreqX
     extends timezonecompleteLib.distLibTzDashDatabaseMod.OnType
   
   /**
-       * "lastSun" or "lastWed" etc
-       */
+    * "lastSun" or "lastWed" etc
+    */
   @js.native
   sealed trait LastX
     extends timezonecompleteLib.distLibTzDashDatabaseMod.OnType
   
   /**
-       * e.g. "Sun<=8"
-       */
+    * e.g. "Sun<=8"
+    */
   @js.native
   sealed trait LeqX
     extends timezonecompleteLib.distLibTzDashDatabaseMod.OnType

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RunMobileFriendlyTestResponse extends js.Object {
   /** Test verdict, whether the page is mobile friendly or not. */
   var mobileFriendliness: js.UndefOr[java.lang.String] = js.undefined

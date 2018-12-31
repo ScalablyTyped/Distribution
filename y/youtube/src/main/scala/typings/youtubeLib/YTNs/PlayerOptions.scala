@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlayerOptions extends js.Object {
   /**
   		 * Handlers for events fired by the player.

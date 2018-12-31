@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ThreeColumnLayoutType extends js.Object
 
 /**
-     * Types of three-column layout for the sap.m.FlexibleColumnLayout control
-    */
+  * Types of three-column layout for the sap.m.FlexibleColumnLayout control
+  */
 @JSGlobal("sap.m.ThreeColumnLayoutType")
 @js.native
 object ThreeColumnLayoutType extends js.Object {

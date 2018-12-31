@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridLineOptions extends js.Object {
   var borderDash: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var borderDashOffset: js.UndefOr[scala.Double] = js.undefined

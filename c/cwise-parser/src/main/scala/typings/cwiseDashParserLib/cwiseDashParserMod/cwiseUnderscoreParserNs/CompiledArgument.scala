@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompiledArgument extends js.Object {
   var count: scala.Double
   var lvalue: scala.Boolean

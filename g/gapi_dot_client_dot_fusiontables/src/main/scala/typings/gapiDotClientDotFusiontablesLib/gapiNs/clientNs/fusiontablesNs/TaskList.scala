@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TaskList extends js.Object {
   /** List of all requested tasks. */
   var items: js.UndefOr[js.Array[Task]] = js.undefined

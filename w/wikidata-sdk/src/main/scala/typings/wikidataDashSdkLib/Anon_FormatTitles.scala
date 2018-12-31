@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FormatTitles extends js.Object {
   var format: js.UndefOr[wikidataDashSdkLib.defTypeFormatMod.UrlResultFormat] = js.undefined
   var languages: js.UndefOr[

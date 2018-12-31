@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Visitor[S] extends VisitNodeObject[Node] {
   var AnyTypeAnnotation: js.UndefOr[VisitNode[S, babelDashTypesLib.babelDashTypesMod.AnyTypeAnnotation]] = js.undefined
   var ArrayExpression: js.UndefOr[VisitNode[S, babelDashTypesLib.babelDashTypesMod.ArrayExpression]] = js.undefined

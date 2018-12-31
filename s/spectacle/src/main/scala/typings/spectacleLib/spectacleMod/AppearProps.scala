@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AppearProps extends js.Object {
   var easing: js.UndefOr[easeType] = js.undefined
   var endValue: js.UndefOr[js.Object] = js.undefined

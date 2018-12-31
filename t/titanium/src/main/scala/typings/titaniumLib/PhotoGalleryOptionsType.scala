@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Simple object for specifying options to
- * [openPhotoGallery](Titanium.Media.openPhotoGallery).
- */
-
+  * Simple object for specifying options to
+  * [openPhotoGallery](Titanium.Media.openPhotoGallery).
+  */
 trait PhotoGalleryOptionsType extends js.Object {
   /**
   	 * Specifies if the media should be editable after capture/selection.

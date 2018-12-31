@@ -19,9 +19,6 @@ trait Assertion extends js.Object {
   // same type or a more general type, so don't need to be re-declared even though
   // the implementation is different
   def descendant(element: java.lang.String): Assertion = js.native
-  // exist, length, and contain are already defined in @types/chai and have the
-  // same type or a more general type, so don't need to be re-declared even though
-  // the implementation is different
   def descendant(element: stdLib.HTMLElement): Assertion = js.native
   def descendants(selector: java.lang.String): Assertion = js.native
   def html(html: java.lang.String): Assertion = js.native

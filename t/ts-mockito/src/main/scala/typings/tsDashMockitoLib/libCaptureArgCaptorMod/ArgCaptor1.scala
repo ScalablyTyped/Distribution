@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ArgCaptor1[T] extends js.Object {
   def beforeLast(): js.Array[T]
   def byCallIndex(index: scala.Double): js.Array[T]

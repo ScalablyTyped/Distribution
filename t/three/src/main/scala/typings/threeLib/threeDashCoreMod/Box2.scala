@@ -18,8 +18,8 @@ class Box2 () extends js.Object {
   def copy(box: this.type): this.type = js.native
   def distanceToPoint(point: Vector2): scala.Double = js.native
   /**
-       * @deprecated Use {@link Box2#isEmpty .isEmpty()} instead.
-       */
+    * @deprecated Use {@link Box2#isEmpty .isEmpty()} instead.
+    */
   def empty(): js.Any = js.native
   def equals(box: Box2): scala.Boolean = js.native
   def expandByPoint(point: Vector2): Box2 = js.native
@@ -32,8 +32,8 @@ class Box2 () extends js.Object {
   def intersectsBox(box: Box2): scala.Boolean = js.native
   def isEmpty(): scala.Boolean = js.native
   /**
-       * @deprecated Use {@link Box2#intersectsBox .intersectsBox()} instead.
-       */
+    * @deprecated Use {@link Box2#intersectsBox .intersectsBox()} instead.
+    */
   def isIntersectionBox(b: js.Any): js.Any = js.native
   def makeEmpty(): Box2 = js.native
   def set(min: Vector2, max: Vector2): Box2 = js.native

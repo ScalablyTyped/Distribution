@@ -220,8 +220,8 @@ object KeyCode extends js.Object {
     extends monacoDashEditorLib.monacoDashEditorMod.KeyCode
   
   /**
-       * Cover all key codes when IME is processing input.
-       */
+    * Cover all key codes when IME is processing input.
+    */
   @js.native
   sealed trait KEY_IN_COMPOSITION
     extends monacoDashEditorLib.monacoDashEditorMod.KeyCode
@@ -299,9 +299,9 @@ object KeyCode extends js.Object {
     extends monacoDashEditorLib.monacoDashEditorMod.KeyCode
   
   /**
-       * Placed last to cover the length of the enum.
-       * Please do not depend on this value!
-       */
+    * Placed last to cover the length of the enum.
+    * Please do not depend on this value!
+    */
   @js.native
   sealed trait MAX_VALUE
     extends monacoDashEditorLib.monacoDashEditorMod.KeyCode
@@ -379,15 +379,15 @@ object KeyCode extends js.Object {
     extends monacoDashEditorLib.monacoDashEditorMod.KeyCode
   
   /**
-       * Either the angle bracket key or the backslash key on the RT 102-key keyboard.
-       */
+    * Either the angle bracket key or the backslash key on the RT 102-key keyboard.
+    */
   @js.native
   sealed trait OEM_102
     extends monacoDashEditorLib.monacoDashEditorMod.KeyCode
   
   /**
-       * Used for miscellaneous characters; it can vary by keyboard.
-       */
+    * Used for miscellaneous characters; it can vary by keyboard.
+    */
   @js.native
   sealed trait OEM_8
     extends monacoDashEditorLib.monacoDashEditorMod.KeyCode
@@ -425,96 +425,96 @@ object KeyCode extends js.Object {
     extends monacoDashEditorLib.monacoDashEditorMod.KeyCode
   
   /**
-       * Used for miscellaneous characters; it can vary by keyboard.
-       * For the US standard keyboard, the '\|' key
-       */
+    * Used for miscellaneous characters; it can vary by keyboard.
+    * For the US standard keyboard, the '\|' key
+    */
   @js.native
   sealed trait US_BACKSLASH
     extends monacoDashEditorLib.monacoDashEditorMod.KeyCode
   
   /**
-       * Used for miscellaneous characters; it can vary by keyboard.
-       * For the US standard keyboard, the '`~' key
-       */
+    * Used for miscellaneous characters; it can vary by keyboard.
+    * For the US standard keyboard, the '`~' key
+    */
   @js.native
   sealed trait US_BACKTICK
     extends monacoDashEditorLib.monacoDashEditorMod.KeyCode
   
   /**
-       * Used for miscellaneous characters; it can vary by keyboard.
-       * For the US standard keyboard, the ']}' key
-       */
+    * Used for miscellaneous characters; it can vary by keyboard.
+    * For the US standard keyboard, the ']}' key
+    */
   @js.native
   sealed trait US_CLOSE_SQUARE_BRACKET
     extends monacoDashEditorLib.monacoDashEditorMod.KeyCode
   
   /**
-       * For any country/region, the ',' key
-       * For the US standard keyboard, the ',<' key
-       */
+    * For any country/region, the ',' key
+    * For the US standard keyboard, the ',<' key
+    */
   @js.native
   sealed trait US_COMMA
     extends monacoDashEditorLib.monacoDashEditorMod.KeyCode
   
   /**
-       * For any country/region, the '.' key
-       * For the US standard keyboard, the '.>' key
-       */
+    * For any country/region, the '.' key
+    * For the US standard keyboard, the '.>' key
+    */
   @js.native
   sealed trait US_DOT
     extends monacoDashEditorLib.monacoDashEditorMod.KeyCode
   
   /**
-       * For any country/region, the '+' key
-       * For the US standard keyboard, the '=+' key
-       */
+    * For any country/region, the '+' key
+    * For the US standard keyboard, the '=+' key
+    */
   @js.native
   sealed trait US_EQUAL
     extends monacoDashEditorLib.monacoDashEditorMod.KeyCode
   
   /**
-       * For any country/region, the '-' key
-       * For the US standard keyboard, the '-_' key
-       */
+    * For any country/region, the '-' key
+    * For the US standard keyboard, the '-_' key
+    */
   @js.native
   sealed trait US_MINUS
     extends monacoDashEditorLib.monacoDashEditorMod.KeyCode
   
   /**
-       * Used for miscellaneous characters; it can vary by keyboard.
-       * For the US standard keyboard, the '[{' key
-       */
+    * Used for miscellaneous characters; it can vary by keyboard.
+    * For the US standard keyboard, the '[{' key
+    */
   @js.native
   sealed trait US_OPEN_SQUARE_BRACKET
     extends monacoDashEditorLib.monacoDashEditorMod.KeyCode
   
   /**
-       * Used for miscellaneous characters; it can vary by keyboard.
-       * For the US standard keyboard, the ''"' key
-       */
+    * Used for miscellaneous characters; it can vary by keyboard.
+    * For the US standard keyboard, the ''"' key
+    */
   @js.native
   sealed trait US_QUOTE
     extends monacoDashEditorLib.monacoDashEditorMod.KeyCode
   
   /**
-       * Used for miscellaneous characters; it can vary by keyboard.
-       * For the US standard keyboard, the ';:' key
-       */
+    * Used for miscellaneous characters; it can vary by keyboard.
+    * For the US standard keyboard, the ';:' key
+    */
   @js.native
   sealed trait US_SEMICOLON
     extends monacoDashEditorLib.monacoDashEditorMod.KeyCode
   
   /**
-       * Used for miscellaneous characters; it can vary by keyboard.
-       * For the US standard keyboard, the '/?' key
-       */
+    * Used for miscellaneous characters; it can vary by keyboard.
+    * For the US standard keyboard, the '/?' key
+    */
   @js.native
   sealed trait US_SLASH
     extends monacoDashEditorLib.monacoDashEditorMod.KeyCode
   
   /**
-       * Placed first to cover the 0 value of the enum.
-       */
+    * Placed first to cover the 0 value of the enum.
+    */
   @js.native
   sealed trait Unknown
     extends monacoDashEditorLib.monacoDashEditorMod.KeyCode

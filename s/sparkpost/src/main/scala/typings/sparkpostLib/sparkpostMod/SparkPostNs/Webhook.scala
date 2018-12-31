@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Webhook extends js.Object {
   /**
-           * Reserved for future use
-           *
-           * @default {true}
-           */
+    * Reserved for future use
+    *
+    * @default {true}
+    */
   var active: js.UndefOr[scala.Boolean] = js.undefined
   /** Object containing credentials needed to make authorized POST requests to target */
   var auth_credentials: js.UndefOr[js.Any] = js.undefined

@@ -15,9 +15,6 @@ class AppInstance () extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/AppInstance.html#method_getAllInstances
   		 */
   def getAllInstances(): js.Array[AppInstance] = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/AppInstance.html#method_getAllInstances
-  		 */
   def getAllInstances(includeSelf: scala.Boolean): js.Array[AppInstance] = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/AppInstance.html#method_getAppInfo

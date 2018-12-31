@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WFSWriteGetFeatureOptions extends js.Object {
   var bbox: js.UndefOr[openlayersLib.openlayersMod.Extent] = js.undefined
   var count: js.UndefOr[scala.Double] = js.undefined

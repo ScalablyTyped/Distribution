@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "SecureStore")
 @js.native
 object SecureStoreNs extends js.Object {
-  
   trait SecureStoreOptions extends js.Object {
     var keychainAccessible: js.UndefOr[scala.Double] = js.undefined
     var keychainService: js.UndefOr[java.lang.String] = js.undefined

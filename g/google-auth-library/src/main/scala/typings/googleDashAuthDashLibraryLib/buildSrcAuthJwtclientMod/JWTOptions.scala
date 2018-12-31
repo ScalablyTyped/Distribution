@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JWTOptions
   extends googleDashAuthDashLibraryLib.buildSrcAuthOauth2clientMod.RefreshOptions {
   var additionalClaims: js.UndefOr[js.Object] = js.undefined

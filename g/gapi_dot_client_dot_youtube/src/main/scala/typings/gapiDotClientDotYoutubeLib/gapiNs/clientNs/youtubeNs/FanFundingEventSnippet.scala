@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FanFundingEventSnippet extends js.Object {
   /** The amount of funding in micros of fund_currency. e.g., 1 is represented */
   var amountMicros: js.UndefOr[java.lang.String] = js.undefined

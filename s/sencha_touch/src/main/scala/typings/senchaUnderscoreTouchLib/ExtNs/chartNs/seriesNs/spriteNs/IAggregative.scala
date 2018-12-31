@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAggregative extends ICartesian {
   /** [Config Option] (Object) */
   var dataClose: js.UndefOr[js.Any] = js.undefined

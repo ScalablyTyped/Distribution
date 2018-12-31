@@ -20,13 +20,12 @@ class CodeModule protected () extends js.Object {
   def CreateEventProc(EventName: java.lang.String, ObjectName: java.lang.String): scala.Double = js.native
   /** @param Count [Count=1] */
   def DeleteLines(StartLine: scala.Double): scala.Unit = js.native
-  /** @param Count [Count=1] */
   def DeleteLines(StartLine: scala.Double, Count: scala.Double): scala.Unit = js.native
   /**
-           * @param WholeWord [WholeWord=false]
-           * @param MatchCase [MatchCase=false]
-           * @param PatternSearch [PatternSearch=false]
-           */
+    * @param WholeWord [WholeWord=false]
+    * @param MatchCase [MatchCase=false]
+    * @param PatternSearch [PatternSearch=false]
+    */
   def Find(
     Target: java.lang.String,
     StartLine: scala.Double,
@@ -34,11 +33,6 @@ class CodeModule protected () extends js.Object {
     EndLine: scala.Double,
     EndColumn: scala.Double
   ): scala.Boolean = js.native
-  /**
-           * @param WholeWord [WholeWord=false]
-           * @param MatchCase [MatchCase=false]
-           * @param PatternSearch [PatternSearch=false]
-           */
   def Find(
     Target: java.lang.String,
     StartLine: scala.Double,
@@ -47,11 +41,6 @@ class CodeModule protected () extends js.Object {
     EndColumn: scala.Double,
     WholeWord: scala.Boolean
   ): scala.Boolean = js.native
-  /**
-           * @param WholeWord [WholeWord=false]
-           * @param MatchCase [MatchCase=false]
-           * @param PatternSearch [PatternSearch=false]
-           */
   def Find(
     Target: java.lang.String,
     StartLine: scala.Double,
@@ -61,11 +50,6 @@ class CodeModule protected () extends js.Object {
     WholeWord: scala.Boolean,
     MatchCase: scala.Boolean
   ): scala.Boolean = js.native
-  /**
-           * @param WholeWord [WholeWord=false]
-           * @param MatchCase [MatchCase=false]
-           * @param PatternSearch [PatternSearch=false]
-           */
   def Find(
     Target: java.lang.String,
     StartLine: scala.Double,

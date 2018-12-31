@@ -34,9 +34,9 @@ class FocusTrapZone ()
   @JSName("componentWillUnmount")
   def componentWillUnmount_MFocusTrapZone(): scala.Unit = js.native
   /**
-       * Sets focus to a descendant in the Trap Zone.
-       * See firstFocusableSelector and focusPreviouslyFocusedInnerElement for details.
-       */
+    * Sets focus to a descendant in the Trap Zone.
+    * See firstFocusableSelector and focusPreviouslyFocusedInnerElement for details.
+    */
   /* CompleteClass */
   override def focus(): scala.Unit = js.native
 }

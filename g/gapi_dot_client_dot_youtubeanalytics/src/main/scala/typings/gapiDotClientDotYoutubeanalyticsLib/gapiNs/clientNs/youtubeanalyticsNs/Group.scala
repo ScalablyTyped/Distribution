@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Group extends js.Object {
   var contentDetails: js.UndefOr[gapiDotClientDotYoutubeanalyticsLib.Anon_ItemCount] = js.undefined
   var etag: js.UndefOr[java.lang.String] = js.undefined

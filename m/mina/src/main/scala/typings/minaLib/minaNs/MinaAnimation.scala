@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MinaAnimation extends js.Object {
   var id: java.lang.String
   def duration(): scala.Double

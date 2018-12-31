@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MappingDetails extends js.Object {
   /**
-       * The local path.
-       */
+    * The local path.
+    */
   var localPath: java.lang.String
   /**
-       * The mapping type.
-       */
+    * The mapping type.
+    */
   var mappingType: java.lang.String
   /**
-       * The server path.
-       */
+    * The server path.
+    */
   var serverPath: java.lang.String
 }
 

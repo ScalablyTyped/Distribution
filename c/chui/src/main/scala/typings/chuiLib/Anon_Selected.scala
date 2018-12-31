@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Selected extends js.Object {
   var icons: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined

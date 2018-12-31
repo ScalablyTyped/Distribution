@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISQLResultSetRowList
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Returns the number of rows returned by the SQL statement

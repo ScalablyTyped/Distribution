@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FeatureDetects extends js.Object {
   var adownload: scala.Boolean
   // Documented

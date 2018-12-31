@@ -13,7 +13,7 @@ object typeDirectivesModMembers extends js.Object {
   val GraphQLIncludeDirective: GraphQLDirective = js.native
   val GraphQLSkipDirective: GraphQLDirective = js.native
   val specifiedDirectives: js.Array[GraphQLDirective] = js.native
-  def isDirective(directive: js.Any): /* is GraphQLDirective */scala.Boolean = js.native
+  def isDirective(directive: js.Any): /* is graphql.graphql/type/directives.GraphQLDirective */ scala.Boolean = js.native
   def isSpecifiedDirective(directive: GraphQLDirective): scala.Boolean = js.native
 }
 

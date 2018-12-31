@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictInputProps extends js.Object {
   /** An Input can be formatted to alert the user to an action they may perform. */
   var action: js.UndefOr[js.Any | scala.Boolean] = js.undefined
@@ -48,11 +47,11 @@ trait StrictInputProps extends js.Object {
   /** An Icon Input field can show that it is currently loading data. */
   var loading: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * Called on change.
-     *
-     * @param {ChangeEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props and a proposed value.
-     */
+    * Called on change.
+    *
+    * @param {ChangeEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props and a proposed value.
+    */
   var onChange: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement], 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CarouselOptions extends js.Object {
   var interval: js.UndefOr[scala.Double] = js.undefined
   var keyboard: js.UndefOr[scala.Boolean] = js.undefined

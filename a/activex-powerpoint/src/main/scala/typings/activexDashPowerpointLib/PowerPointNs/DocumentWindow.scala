@@ -33,39 +33,15 @@ class DocumentWindow protected () extends js.Object {
   def FitToPage(): scala.Unit = js.native
   def IsSectionExpanded(sectionIndex: scala.Double): scala.Boolean = js.native
   /**
-           * @param number [Down=1]
-           * @param number [Up=0]
-           * @param number [ToRight=0]
-           * @param number [ToLeft=0]
-           */
+    * @param number [Down=1]
+    * @param number [Up=0]
+    * @param number [ToRight=0]
+    * @param number [ToLeft=0]
+    */
   def LargeScroll(): scala.Unit = js.native
-  /**
-           * @param number [Down=1]
-           * @param number [Up=0]
-           * @param number [ToRight=0]
-           * @param number [ToLeft=0]
-           */
   def LargeScroll(Down: scala.Double): scala.Unit = js.native
-  /**
-           * @param number [Down=1]
-           * @param number [Up=0]
-           * @param number [ToRight=0]
-           * @param number [ToLeft=0]
-           */
   def LargeScroll(Down: scala.Double, Up: scala.Double): scala.Unit = js.native
-  /**
-           * @param number [Down=1]
-           * @param number [Up=0]
-           * @param number [ToRight=0]
-           * @param number [ToLeft=0]
-           */
   def LargeScroll(Down: scala.Double, Up: scala.Double, ToRight: scala.Double): scala.Unit = js.native
-  /**
-           * @param number [Down=1]
-           * @param number [Up=0]
-           * @param number [ToRight=0]
-           * @param number [ToLeft=0]
-           */
   def LargeScroll(Down: scala.Double, Up: scala.Double, ToRight: scala.Double, ToLeft: scala.Double): scala.Unit = js.native
   def NewWindow(): DocumentWindow = js.native
   def PointsToScreenPixelsX(Points: scala.Double): scala.Double = js.native
@@ -73,7 +49,6 @@ class DocumentWindow protected () extends js.Object {
   def RangeFromPoint(X: scala.Double, Y: scala.Double): js.Any = js.native
   /** @param Office.MsoTriState [Start=-1] */
   def ScrollIntoView(Left: scala.Double, Top: scala.Double, Width: scala.Double, Height: scala.Double): scala.Unit = js.native
-  /** @param Office.MsoTriState [Start=-1] */
   def ScrollIntoView(
     Left: scala.Double,
     Top: scala.Double,
@@ -82,39 +57,15 @@ class DocumentWindow protected () extends js.Object {
     Start: activexDashOfficeLib.OfficeNs.MsoTriState
   ): scala.Unit = js.native
   /**
-           * @param number [Down=1]
-           * @param number [Up=0]
-           * @param number [ToRight=0]
-           * @param number [ToLeft=0]
-           */
+    * @param number [Down=1]
+    * @param number [Up=0]
+    * @param number [ToRight=0]
+    * @param number [ToLeft=0]
+    */
   def SmallScroll(): scala.Unit = js.native
-  /**
-           * @param number [Down=1]
-           * @param number [Up=0]
-           * @param number [ToRight=0]
-           * @param number [ToLeft=0]
-           */
   def SmallScroll(Down: scala.Double): scala.Unit = js.native
-  /**
-           * @param number [Down=1]
-           * @param number [Up=0]
-           * @param number [ToRight=0]
-           * @param number [ToLeft=0]
-           */
   def SmallScroll(Down: scala.Double, Up: scala.Double): scala.Unit = js.native
-  /**
-           * @param number [Down=1]
-           * @param number [Up=0]
-           * @param number [ToRight=0]
-           * @param number [ToLeft=0]
-           */
   def SmallScroll(Down: scala.Double, Up: scala.Double, ToRight: scala.Double): scala.Unit = js.native
-  /**
-           * @param number [Down=1]
-           * @param number [Up=0]
-           * @param number [ToRight=0]
-           * @param number [ToLeft=0]
-           */
   def SmallScroll(Down: scala.Double, Up: scala.Double, ToRight: scala.Double, ToLeft: scala.Double): scala.Unit = js.native
 }
 

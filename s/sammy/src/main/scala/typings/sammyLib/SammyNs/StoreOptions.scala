@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StoreOptions extends js.Object {
   var cookie: js.UndefOr[js.Any] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ComponentOptionsProperties[Props /* <: java.lang.String */, Data, Methods] extends js.Object {
   var data: js.UndefOr[Data] = js.undefined
   var el: js.UndefOr[java.lang.String | stdLib.HTMLElement] = js.undefined

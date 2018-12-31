@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeviceMotionProps extends js.Object {
   var acceleration: stdLib.DeviceAcceleration | scala.Null
   var accelerationIncludingGravity: stdLib.DeviceAcceleration | scala.Null

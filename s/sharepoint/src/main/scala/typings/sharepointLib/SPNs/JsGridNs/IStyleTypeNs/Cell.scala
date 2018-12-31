@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Cell
   extends sharepointLib.SPNs.JsGridNs.IStyleType {
   /** -> CSS background-color */

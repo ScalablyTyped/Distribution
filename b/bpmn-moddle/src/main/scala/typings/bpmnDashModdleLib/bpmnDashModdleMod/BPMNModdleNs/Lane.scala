@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Lane extends BaseElement {
   var childLaneSet: LaneSet
   var flowNodeRef: js.Array[FlowNode]

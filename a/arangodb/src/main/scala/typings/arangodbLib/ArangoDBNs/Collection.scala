@@ -20,7 +20,6 @@ trait Collection[T /* <: js.Object */] extends js.Object {
   def document(selectors: js.Array[java.lang.String | DocumentLike]): js.Array[Document[T]] = js.native
   def drop(): scala.Unit = js.native
   def drop(options: arangodbLib.Anon_IsSystem): scala.Unit = js.native
-  // Indexes
   def dropIndex(index: IndexLike): scala.Boolean = js.native
   // Indexes
   def dropIndex(index: java.lang.String): scala.Boolean = js.native

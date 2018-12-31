@@ -317,41 +317,26 @@ object iOSNsMembers extends js.Object {
   			 * Creates and returns an instance of <Titanium.App.iOS.SearchQuery>.
   			 */
   def createSearchQuery(): SearchQuery = js.native
-  /**
-  			 * Creates and returns an instance of <Titanium.App.iOS.SearchQuery>.
-  			 */
   def createSearchQuery(parameters: js.Any): SearchQuery = js.native
   /**
   			 * Creates and returns an instance of <Titanium.App.iOS.SearchableIndex>.
   			 */
   def createSearchableIndex(): SearchableIndex = js.native
-  /**
-  			 * Creates and returns an instance of <Titanium.App.iOS.SearchableIndex>.
-  			 */
   def createSearchableIndex(parameters: js.Any): SearchableIndex = js.native
   /**
   			 * Creates and returns an instance of <Titanium.App.iOS.SearchableItem>.
   			 */
   def createSearchableItem(): SearchableItem = js.native
-  /**
-  			 * Creates and returns an instance of <Titanium.App.iOS.SearchableItem>.
-  			 */
   def createSearchableItem(parameters: js.Any): SearchableItem = js.native
   /**
   			 * Creates and returns an instance of <Titanium.App.iOS.SearchableItemAttributeSet>.
   			 */
   def createSearchableItemAttributeSet(): SearchableItemAttributeSet = js.native
-  /**
-  			 * Creates and returns an instance of <Titanium.App.iOS.SearchableItemAttributeSet>.
-  			 */
   def createSearchableItemAttributeSet(parameters: js.Any): SearchableItemAttributeSet = js.native
   /**
   			 * Creates and returns an instance of <Titanium.App.iOS.UserActivity>.
   			 */
   def createUserActivity(): UserActivity = js.native
-  /**
-  			 * Creates and returns an instance of <Titanium.App.iOS.UserActivity>.
-  			 */
   def createUserActivity(parameters: js.Any): UserActivity = js.native
   /**
   			 * Creates and returns an instance of Titanium.App.iOS.UserDefaults.
@@ -361,17 +346,11 @@ object iOSNsMembers extends js.Object {
   			 * Creates and returns an instance of <Titanium.App.iOS.UserNotificationAction>.
   			 */
   def createUserNotificationAction(): UserNotificationAction = js.native
-  /**
-  			 * Creates and returns an instance of <Titanium.App.iOS.UserNotificationAction>.
-  			 */
   def createUserNotificationAction(parameters: js.Any): UserNotificationAction = js.native
   /**
   			 * Creates and returns an instance of <Titanium.App.iOS.UserNotificationCategory>.
   			 */
   def createUserNotificationCategory(): UserNotificationCategory = js.native
-  /**
-  			 * Creates and returns an instance of <Titanium.App.iOS.UserNotificationCategory>.
-  			 */
   def createUserNotificationCategory(parameters: js.Any): UserNotificationCategory = js.native
   /**
   			 * Marks the end of the app execution after initiating the download operation. Available only on iOS 7 and later.

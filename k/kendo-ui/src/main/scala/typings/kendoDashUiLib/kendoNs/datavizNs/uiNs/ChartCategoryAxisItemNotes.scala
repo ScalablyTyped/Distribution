@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartCategoryAxisItemNotes extends js.Object {
   var data: js.UndefOr[js.Array[ChartCategoryAxisItemNotesDataItem]] = js.undefined
   var icon: js.UndefOr[ChartCategoryAxisItemNotesIcon] = js.undefined

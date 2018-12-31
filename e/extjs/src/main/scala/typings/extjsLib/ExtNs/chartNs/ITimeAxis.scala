@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITimeAxis
   extends extjsLib.ExtNs.chartNs.axisNs.INumeric {
   /** [Config Option] (String/Boolean) */

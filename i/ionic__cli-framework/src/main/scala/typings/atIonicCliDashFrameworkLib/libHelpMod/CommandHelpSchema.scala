@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommandHelpSchema extends js.Object {
   val aliases: js.Array[java.lang.String]
   val description: java.lang.String

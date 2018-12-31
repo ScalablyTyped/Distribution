@@ -13,14 +13,10 @@ trait Filters extends js.Object {
   /** Returns the specified item in the collection by position or FilterID */
   def apply(Index: scala.Double): Filter = js.native
   /**
-           * Appends/Inserts a new Filter of the specified FilterID into a Filter collection
-           * @param number [Index=0]
-           */
+    * Appends/Inserts a new Filter of the specified FilterID into a Filter collection
+    * @param number [Index=0]
+    */
   def Add(FilterID: java.lang.String): scala.Unit = js.native
-  /**
-           * Appends/Inserts a new Filter of the specified FilterID into a Filter collection
-           * @param number [Index=0]
-           */
   def Add(FilterID: java.lang.String, Index: scala.Double): scala.Unit = js.native
   /** Returns the specified item in the collection by position or FilterID */
   def Item(Index: scala.Double): Filter = js.native

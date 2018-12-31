@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MSGraphicsTrust extends js.Object {
   val constrictionActive: scala.Boolean
   val status: java.lang.String

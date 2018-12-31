@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DurationItem extends js.Object {
   def createResponse(
     hours: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,

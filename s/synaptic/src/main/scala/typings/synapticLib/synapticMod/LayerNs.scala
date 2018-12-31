@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object LayerNs extends js.Object {
   /**
-       * Represents a connection from one layer to another, and keeps track of its weight and gain.
-       */
+    * Represents a connection from one layer to another, and keeps track of its weight and gain.
+    */
   @js.native
   class LayerConnection () extends js.Object {
     var ID: scala.Double = js.native
@@ -23,7 +23,6 @@ object LayerNs extends js.Object {
     var to: js.Any = js.native
     var `type`: js.Any = js.native
   }
-  
   
   trait Options extends js.Object {
     var bias: js.UndefOr[scala.Double] = js.undefined
@@ -39,35 +38,35 @@ object LayerNs extends js.Object {
   
   var connection: org.scalablytyped.runtime.Instantiable0[LayerConnection] = js.native
   /**
-       * Represents a connection from one layer to another, and keeps track of its weight and gain.
-       */
+    * Represents a connection from one layer to another, and keeps track of its weight and gain.
+    */
   @js.native
   object LayerConnection extends js.Object {
     def uid(): scala.Double = js.native
   }
   
   /**
-       * Types of connections.
-       */
+    * Types of connections.
+    */
   @js.native
   object connectionType extends js.Object {
     /**
-             * It connects every neuron from layer A, to every neuron in layer B.
-             */
+      * It connects every neuron from layer A, to every neuron in layer B.
+      */
     @js.native
     sealed trait ALL_TO_ALL
       extends synapticLib.synapticMod.LayerNs.connectionType
     
     /**
-             * Useful only in self-connections. It connects every neuron from a layer to all the other neurons in that same layer, except with itself. If this connectionType is used in a connection between different layers, it produces the same result as ALL_TO_ALL.
-             */
+      * Useful only in self-connections. It connects every neuron from a layer to all the other neurons in that same layer, except with itself. If this connectionType is used in a connection between different layers, it produces the same result as ALL_TO_ALL.
+      */
     @js.native
     sealed trait ALL_TO_ELSE
       extends synapticLib.synapticMod.LayerNs.connectionType
     
     /**
-             * It connects each neuron from layer A, to one neuron in layer B. Both layers must be the same size in order to work.
-             */
+      * It connects each neuron from layer A, to one neuron in layer B. Both layers must be the same size in order to work.
+      */
     @js.native
     sealed trait ONE_TO_ONE
       extends synapticLib.synapticMod.LayerNs.connectionType
@@ -80,27 +79,27 @@ object LayerNs extends js.Object {
   }
   
   /**
-       * Types of gates.
-       */
+    * Types of gates.
+    */
   @js.native
   object gateType extends js.Object {
     /**
-             * If layer C is gating connections between layer A and B, all the neurons from C gate all the input connections to B.
-             */
+      * If layer C is gating connections between layer A and B, all the neurons from C gate all the input connections to B.
+      */
     @js.native
     sealed trait INPUT
       extends synapticLib.synapticMod.LayerNs.gateType
     
     /**
-             * If layer C is gating connections between layer A and B, each neuron from C gates one connection from A to B. This is useful for gating self-connected layers. To use this kind of gateType, A, B and C must be the same size.
-             */
+      * If layer C is gating connections between layer A and B, each neuron from C gates one connection from A to B. This is useful for gating self-connected layers. To use this kind of gateType, A, B and C must be the same size.
+      */
     @js.native
     sealed trait ONE_TO_ONE
       extends synapticLib.synapticMod.LayerNs.gateType
     
     /**
-             * If layer C is gating connections between layer A and B, all the neurons from C gate all the output connections from A.
-             */
+      * If layer C is gating connections between layer A and B, all the neurons from C gate all the output connections from A.
+      */
     @js.native
     sealed trait OUTPUT
       extends synapticLib.synapticMod.LayerNs.gateType

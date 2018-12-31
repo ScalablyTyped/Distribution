@@ -6,33 +6,32 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     *
-     * Represents a cell value conditional format rule.
-     *
-     * [Api set: ExcelApi 1.6]
-     */
-
+  *
+  * Represents a cell value conditional format rule.
+  *
+  * [Api set: ExcelApi 1.6]
+  */
 trait ConditionalCellValueRule extends js.Object {
   /**
-           *
-           * The formula, if required, to evaluate the conditional format rule on.
-           *
-           * [Api set: ExcelApi 1.6]
-           */
+    *
+    * The formula, if required, to evaluate the conditional format rule on.
+    *
+    * [Api set: ExcelApi 1.6]
+    */
   var formula1: java.lang.String
   /**
-           *
-           * The formula, if required, to evaluate the conditional format rule on.
-           *
-           * [Api set: ExcelApi 1.6]
-           */
+    *
+    * The formula, if required, to evaluate the conditional format rule on.
+    *
+    * [Api set: ExcelApi 1.6]
+    */
   var formula2: js.UndefOr[java.lang.String] = js.undefined
   /**
-           *
-           * The operator of the text conditional format.
-           *
-           * [Api set: ExcelApi 1.6]
-           */
+    *
+    * The operator of the text conditional format.
+    *
+    * [Api set: ExcelApi 1.6]
+    */
   var operator: ConditionalCellValueOperator | officeDashJsLib.officeDashJsLibStrings.Invalid | officeDashJsLib.officeDashJsLibStrings.Between | officeDashJsLib.officeDashJsLibStrings.NotBetween | officeDashJsLib.officeDashJsLibStrings.EqualTo | officeDashJsLib.officeDashJsLibStrings.NotEqualTo | officeDashJsLib.officeDashJsLibStrings.GreaterThan | officeDashJsLib.officeDashJsLibStrings.LessThan | officeDashJsLib.officeDashJsLibStrings.GreaterThanOrEqual | officeDashJsLib.officeDashJsLibStrings.LessThanOrEqual
 }
 

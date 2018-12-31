@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserInfo extends js.Object {
   /** User creation timestamp. */
   var createdAt: js.UndefOr[java.lang.String] = js.undefined

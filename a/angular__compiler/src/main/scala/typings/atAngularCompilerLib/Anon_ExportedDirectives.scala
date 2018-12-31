@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ExportedDirectives extends js.Object {
   var bootstrapComponents: js.Array[atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileIdentifierMetadata]
   var declaredDirectives: js.Array[atAngularCompilerLib.srcCompileUnderscoreMetadataMod.CompileIdentifierMetadata]

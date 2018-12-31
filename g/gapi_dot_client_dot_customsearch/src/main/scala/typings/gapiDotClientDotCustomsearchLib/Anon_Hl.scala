@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Hl extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -58,25 +57,25 @@ trait Anon_Hl extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Provides additional search terms to check for in a document, where each document in the search results must contain at least one of the additional
-                   * search terms
-                   */
+    * Provides additional search terms to check for in a document, where each document in the search results must contain at least one of the additional
+    * search terms
+    */
   var orTerms: js.UndefOr[java.lang.String] = js.undefined
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /** Query */
   var q: java.lang.String
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** Specifies that all search results should be pages that are related to the specified URL */
   var relatedSite: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Filters based on licensing. Supported values include: cc_publicdomain, cc_attribute, cc_sharealike, cc_noncommercial, cc_nonderived and combinations of
-                   * these.
-                   */
+    * Filters based on licensing. Supported values include: cc_publicdomain, cc_attribute, cc_sharealike, cc_noncommercial, cc_nonderived and combinations of
+    * these.
+    */
   var rights: js.UndefOr[java.lang.String] = js.undefined
   /** Search safety level */
   var safe: js.UndefOr[java.lang.String] = js.undefined

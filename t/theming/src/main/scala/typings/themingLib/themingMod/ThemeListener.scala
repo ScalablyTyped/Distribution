@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThemeListener[C /* <: java.lang.String */] extends js.Object {
   var contextTypes: reactLib.reactMod.ReactNs.ValidationMap[C]
   def initial(context: ContextWithTheme[C]): Theme

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // https://www.w3.org/TR/webrtc/#idl-def-rtcrtptransceiver
-
 trait RTCRtpTransceiver extends js.Object {
   var direction: stdLib.RTCRtpTransceiverDirection
   val mid: java.lang.String | scala.Null

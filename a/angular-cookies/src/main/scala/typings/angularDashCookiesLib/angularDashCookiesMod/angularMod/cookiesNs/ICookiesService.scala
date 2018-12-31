@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * CookieService
-         * see http://docs.angularjs.org/api/ngCookies.$cookies
-         */
+  * CookieService
+  * see http://docs.angularjs.org/api/ngCookies.$cookies
+  */
 /**
-         * CookieStoreService
-         * see http://docs.angularjs.org/api/ngCookies.$cookieStore
-         */
+  * CookieStoreService
+  * see http://docs.angularjs.org/api/ngCookies.$cookieStore
+  */
 @js.native
 trait ICookiesService
   extends /* index */ org.scalablytyped.runtime.StringDictionary[js.Any] {

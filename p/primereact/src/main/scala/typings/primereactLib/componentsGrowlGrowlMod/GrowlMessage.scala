@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GrowlMessage extends js.Object {
   var closable: js.UndefOr[scala.Boolean] = js.undefined
   var detail: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined

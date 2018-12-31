@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConstructorOptions extends js.Object {
   var autoBreadcrumbs: js.UndefOr[scala.Boolean | org.scalablytyped.runtime.StringDictionary[scala.Boolean]] = js.undefined
   var captureUnhandledRejections: js.UndefOr[scala.Boolean] = js.undefined

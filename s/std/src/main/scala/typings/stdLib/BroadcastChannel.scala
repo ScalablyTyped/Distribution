@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BroadcastChannel extends EventTarget {
   /**
-       * Returns the channel name (as passed to the constructor).
-       */
+    * Returns the channel name (as passed to the constructor).
+    */
   val name: java.lang.String = js.native
   var onmessage: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]) | scala.Null = js.native
   var onmessageerror: (js.ThisFunction1[/* this */ this.type, /* ev */ MessageEvent, _]) | scala.Null = js.native
@@ -48,12 +48,12 @@ trait BroadcastChannel extends EventTarget {
     options: AddEventListenerOptions
   ): scala.Unit = js.native
   /**
-       * Closes the BroadcastChannel object, opening it up to garbage collection.
-       */
+    * Closes the BroadcastChannel object, opening it up to garbage collection.
+    */
   def close(): scala.Unit = js.native
   /**
-       * Sends the given message to other BroadcastChannel objects set up for this channel. Messages can be structured objects, e.g. nested objects and arrays.
-       */
+    * Sends the given message to other BroadcastChannel objects set up for this channel. Messages can be structured objects, e.g. nested objects and arrays.
+    */
   def postMessage(message: js.Any): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_message(

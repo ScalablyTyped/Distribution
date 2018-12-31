@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HttpTransportOptions
   extends winstonDashTransportLib.winstonDashTransportMod.TransportStreamNs.TransportStreamOptions {
   var agent: js.UndefOr[nodeLib.httpMod.Agent] = js.undefined

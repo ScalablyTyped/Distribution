@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RangeSelectorOptions extends js.Object {
   var allButtonsEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var buttonSpacing: js.UndefOr[scala.Double] = js.undefined

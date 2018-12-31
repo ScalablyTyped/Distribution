@@ -9,23 +9,27 @@ import scala.scalajs.js.annotation._
 @js.native
 object ComponentsNs extends js.Object {
   @js.native
+  /**
+    * @constructor
+    * @param {string} [text]
+    * @param {number} [angle] One of -90/0/90. 0 is horizontal.
+    */
   class AxisLabel ()
     extends plottableLib.buildSrcComponentsMod.AxisLabel {
-    /**
-         * @constructor
-         * @param {string} [text]
-         * @param {number} [angle] One of -90/0/90. 0 is horizontal.
-         */
     def this(text: java.lang.String) = this()
-    /**
-         * @constructor
-         * @param {string} [text]
-         * @param {number} [angle] One of -90/0/90. 0 is horizontal.
-         */
     def this(text: java.lang.String, angle: scala.Double) = this()
   }
   
   @js.native
+  /**
+    * Constructs a DragBoxLayer.
+    *
+    * A DragBoxLayer is a SelectionBoxLayer with a built-in Drag Interaction.
+    * A drag gesture will set the Bounds of the box.
+    * If resizing is enabled using resizable(true), the edges of box can be repositioned.
+    *
+    * @constructor
+    */
   class DragBoxLayer ()
     extends plottableLib.buildSrcComponentsMod.DragBoxLayer
   
@@ -38,38 +42,28 @@ object ComponentsNs extends js.Object {
   @js.native
   class Gridlines ()
     extends plottableLib.buildSrcComponentsMod.Gridlines {
-    /**
-         * @constructor
-         * @param {Scale} xScale The scale to base the x gridlines on. Pass null if no gridlines are desired.
-         * @param {Scale} yScale The scale to base the y gridlines on. Pass null if no gridlines are desired.
-         */
     def this(xScale: plottableLib.buildSrcScalesScaleMod.Scale[_, _]) = this()
     /**
-         * @constructor
-         * @param {Scale} xScale The scale to base the x gridlines on. Pass null if no gridlines are desired.
-         * @param {Scale} yScale The scale to base the y gridlines on. Pass null if no gridlines are desired.
-         */
+      * @constructor
+      * @param {Scale} xScale The scale to base the x gridlines on. Pass null if no gridlines are desired.
+      * @param {Scale} yScale The scale to base the y gridlines on. Pass null if no gridlines are desired.
+      */
     def this(xScale: plottableLib.buildSrcScalesScaleMod.Scale[_, _], yScale: plottableLib.buildSrcScalesScaleMod.Scale[_, _]) = this()
-    /**
-         * @constructor
-         * @param {Scale} xScale The scale to base the x gridlines on. Pass null if no gridlines are desired.
-         * @param {Scale} yScale The scale to base the y gridlines on. Pass null if no gridlines are desired.
-         */
     def this(xScale: scala.Null, yScale: plottableLib.buildSrcScalesScaleMod.Scale[_, _]) = this()
   }
   
   @js.native
+  /**
+    * Constructs a Group.
+    *
+    * A Group contains Components that will be rendered on top of each other.
+    * Components added later will be rendered above Components already in the Group.
+    *
+    * @constructor
+    * @param {Component[]} [components=[]] Components to be added to the Group.
+    */
   class Group ()
     extends plottableLib.buildSrcComponentsMod.Group {
-    /**
-         * Constructs a Group.
-         *
-         * A Group contains Components that will be rendered on top of each other.
-         * Components added later will be rendered above Components already in the Group.
-         *
-         * @constructor
-         * @param {Component[]} [components=[]] Components to be added to the Group.
-         */
     def this(components: js.Array[plottableLib.buildSrcComponentsComponentMod.Component]) = this()
   }
   
@@ -83,36 +77,29 @@ object ComponentsNs extends js.Object {
   class InterpolatedColorLegend protected ()
     extends plottableLib.buildSrcComponentsMod.InterpolatedColorLegend {
     /**
-         * Creates an InterpolatedColorLegend.
-         *
-         * The InterpolatedColorLegend consists of a sequence of swatches that show the
-         * associated InterpolatedColor Scale sampled at various points.
-         * Two labels show the maximum and minimum values of the InterpolatedColor Scale.
-         *
-         * @constructor
-         * @param {Scales.InterpolatedColor} interpolatedColorScale
-         */
+      * Creates an InterpolatedColorLegend.
+      *
+      * The InterpolatedColorLegend consists of a sequence of swatches that show the
+      * associated InterpolatedColor Scale sampled at various points.
+      * Two labels show the maximum and minimum values of the InterpolatedColor Scale.
+      *
+      * @constructor
+      * @param {Scales.InterpolatedColor} interpolatedColorScale
+      */
     def this(interpolatedColorScale: plottableLib.buildSrcScalesMod.InterpolatedColor) = this()
   }
   
   @js.native
+  /**
+    * A Label is a Component that displays a single line of text.
+    *
+    * @constructor
+    * @param {string} [displayText=""] The text of the Label.
+    * @param {number} [angle=0] The angle of the Label in degrees (-90/0/90). 0 is horizontal.
+    */
   class Label ()
     extends plottableLib.buildSrcComponentsMod.Label {
-    /**
-         * A Label is a Component that displays a single line of text.
-         *
-         * @constructor
-         * @param {string} [displayText=""] The text of the Label.
-         * @param {number} [angle=0] The angle of the Label in degrees (-90/0/90). 0 is horizontal.
-         */
     def this(displayText: java.lang.String) = this()
-    /**
-         * A Label is a Component that displays a single line of text.
-         *
-         * @constructor
-         * @param {string} [displayText=""] The text of the Label.
-         * @param {number} [angle=0] The angle of the Label in degrees (-90/0/90). 0 is horizontal.
-         */
     def this(displayText: java.lang.String, angle: scala.Double) = this()
   }
   
@@ -120,11 +107,11 @@ object ComponentsNs extends js.Object {
   class Legend protected ()
     extends plottableLib.buildSrcComponentsMod.Legend {
     /**
-         * The Legend consists of a series of entries, each with a color and label taken from the Color Scale.
-         *
-         * @constructor
-         * @param {Scale.Color} scale
-         */
+      * The Legend consists of a series of entries, each with a color and label taken from the Color Scale.
+      *
+      * @constructor
+      * @param {Scale.Color} scale
+      */
     def this(colorScale: plottableLib.buildSrcScalesMod.Color) = this()
   }
   
@@ -137,39 +124,34 @@ object ComponentsNs extends js.Object {
     extends plottableLib.buildSrcComponentsMod.SelectionBoxLayer
   
   @js.native
+  /**
+    * A Table combines Components in the form of a grid. A
+    * common case is combining a y-axis, x-axis, and the plotted data via
+    * ```typescript
+    * new Table([[yAxis, plot],
+    *            [null,  xAxis]]);
+    * ```
+    *
+    * @constructor
+    * @param {(Component|null|undefined)[][]} [rows=[]] A 2-D array of Components to be added to the Table.
+    *   null can be used if a cell is empty.
+    */
   class Table ()
     extends plottableLib.buildSrcComponentsMod.Table {
-    /**
-         * A Table combines Components in the form of a grid. A
-         * common case is combining a y-axis, x-axis, and the plotted data via
-         * ```typescript
-         * new Table([[yAxis, plot],
-         *            [null,  xAxis]]);
-         * ```
-         *
-         * @constructor
-         * @param {(Component|null|undefined)[][]} [rows=[]] A 2-D array of Components to be added to the Table.
-         *   null can be used if a cell is empty.
-         */
     def this(rows: js.Array[
           js.Array[js.UndefOr[plottableLib.buildSrcComponentsComponentMod.Component | scala.Null]]
         ]) = this()
   }
   
   @js.native
+  /**
+    * @constructor
+    * @param {string} [text]
+    * @param {number} [angle] One of -90/0/90. 0 is horizontal.
+    */
   class TitleLabel ()
     extends plottableLib.buildSrcComponentsMod.TitleLabel {
-    /**
-         * @constructor
-         * @param {string} [text]
-         * @param {number} [angle] One of -90/0/90. 0 is horizontal.
-         */
     def this(text: java.lang.String) = this()
-    /**
-         * @constructor
-         * @param {string} [text]
-         * @param {number} [angle] One of -90/0/90. 0 is horizontal.
-         */
     def this(text: java.lang.String, angle: scala.Double) = this()
   }
   
@@ -178,10 +160,22 @@ object ComponentsNs extends js.Object {
     extends plottableLib.buildSrcComponentsMod.WrappedLabel
   
   @js.native
+  /**
+    * An XDragBoxLayer is a DragBoxLayer whose size can only be set in the X-direction.
+    * The y-values of the bounds() are always set to 0 and the height() of the XDragBoxLayer.
+    *
+    * @constructor
+    */
   class XDragBoxLayer ()
     extends plottableLib.buildSrcComponentsMod.XDragBoxLayer
   
   @js.native
+  /**
+    * A YDragBoxLayer is a DragBoxLayer whose size can only be set in the Y-direction.
+    * The x-values of the bounds() are always set to 0 and the width() of the YDragBoxLayer.
+    *
+    * @constructor
+    */
   class YDragBoxLayer ()
     extends plottableLib.buildSrcComponentsMod.YDragBoxLayer
   
@@ -199,8 +193,8 @@ object ComponentsNs extends js.Object {
   @js.native
   object InterpolatedColorLegend extends js.Object {
     /**
-         * The css class applied to the legend labels.
-         */
+      * The css class applied to the legend labels.
+      */
     var LEGEND_LABEL_CLASS: java.lang.String = js.native
     var _DEFAULT_NUM_SWATCHES: js.Any = js.native
     /* private */ def _ensureOrientation(orientation: js.Any): js.Any = js.native
@@ -209,16 +203,16 @@ object ComponentsNs extends js.Object {
   @js.native
   object Legend extends js.Object {
     /**
-         * The css class applied to each legend entry
-         */
+      * The css class applied to each legend entry
+      */
     var LEGEND_ENTRY_CLASS: java.lang.String = js.native
     /**
-         * The css class applied to each legend row
-         */
+      * The css class applied to each legend row
+      */
     var LEGEND_ROW_CLASS: java.lang.String = js.native
     /**
-         * The css class applied to each legend symbol
-         */
+      * The css class applied to each legend symbol
+      */
     var LEGEND_SYMBOL_CLASS: java.lang.String = js.native
   }
   

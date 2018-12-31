@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateWorkspaceProposalRequest extends js.Object {
   /** When provided, this fingerprint must match the fingerprint of the proposal in storage. */
   var fingerprint: js.UndefOr[java.lang.String] = js.undefined

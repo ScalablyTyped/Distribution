@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMapState extends js.Object {
   var behaviors: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var bounds: js.UndefOr[js.Array[js.Array[scala.Double]]] = js.undefined

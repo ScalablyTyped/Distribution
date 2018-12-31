@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EurekaInstanceConfig extends js.Object {
   var actionType: js.UndefOr[ActionType] = js.undefined
   var app: java.lang.String

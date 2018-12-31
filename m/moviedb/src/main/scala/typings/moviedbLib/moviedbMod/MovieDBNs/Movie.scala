@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Movie extends js.Object {
   var adult: scala.Boolean
   var backdrop_path: java.lang.String

@@ -14,9 +14,9 @@ abstract class SearchSuggestionsRequest () extends js.Object {
   /** The suggestions to display in the search pane or in-app search box for the current query. Apps provide suggestions to display by appending them to this SearchSuggestionCollection object. */
   var searchSuggestionCollection: SearchSuggestionCollection = js.native
   /**
-                   * Gets an object that lets an app respond to a request for suggestions asynchronously.
-                   * @return An object that lets an app signal when it has fulfilled the request for search suggestions.
-                   */
+    * Gets an object that lets an app respond to a request for suggestions asynchronously.
+    * @return An object that lets an app signal when it has fulfilled the request for search suggestions.
+    */
   def getDeferral(): SearchSuggestionsRequestDeferral = js.native
 }
 

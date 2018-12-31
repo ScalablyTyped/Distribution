@@ -17,14 +17,14 @@ trait Readable
   def _destroy(error: scala.Null, callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
   def _read(size: scala.Double): scala.Unit = js.native
   /**
-               * Event emitter
-               * The defined events on documents including:
-               * 1. close
-               * 2. data
-               * 3. end
-               * 4. readable
-               * 5. error
-               */
+    * Event emitter
+    * The defined events on documents including:
+    * 1. close
+    * 2. data
+    * 3. end
+    * 4. readable
+    * 5. error
+    */
   @JSName("addListener")
   def addListener_close(event: nodeLib.nodeLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("addListener")

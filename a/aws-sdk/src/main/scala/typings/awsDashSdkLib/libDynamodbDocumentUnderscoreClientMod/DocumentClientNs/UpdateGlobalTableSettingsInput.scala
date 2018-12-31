@@ -5,31 +5,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateGlobalTableSettingsInput extends js.Object {
   /**
-       * The billing mode of the global table. If GlobalTableBillingMode is not specified, the global table defaults to PROVISIONED capacity billing mode.
-       */
+    * The billing mode of the global table. If GlobalTableBillingMode is not specified, the global table defaults to PROVISIONED capacity billing mode.
+    */
   var GlobalTableBillingMode: js.UndefOr[BillingMode] = js.undefined
   /**
-       * Represents the settings of a global secondary index for a global table that will be modified.
-       */
+    * Represents the settings of a global secondary index for a global table that will be modified.
+    */
   var GlobalTableGlobalSecondaryIndexSettingsUpdate: js.UndefOr[GlobalTableGlobalSecondaryIndexSettingsUpdateList] = js.undefined
   /**
-       * The name of the global table
-       */
+    * The name of the global table
+    */
   var GlobalTableName: TableName
   /**
-       * AutoScaling settings for managing provisioned write capacity for the global table.
-       */
+    * AutoScaling settings for managing provisioned write capacity for the global table.
+    */
   var GlobalTableProvisionedWriteCapacityAutoScalingSettingsUpdate: js.UndefOr[AutoScalingSettingsUpdate] = js.undefined
   /**
-       * The maximum number of writes consumed per second before DynamoDB returns a ThrottlingException. 
-       */
+    * The maximum number of writes consumed per second before DynamoDB returns a ThrottlingException. 
+    */
   var GlobalTableProvisionedWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
   /**
-       * Represents the settings for a global table in a region that will be modified.
-       */
+    * Represents the settings for a global table in a region that will be modified.
+    */
   var ReplicaSettingsUpdate: js.UndefOr[ReplicaSettingsUpdateList] = js.undefined
 }
 

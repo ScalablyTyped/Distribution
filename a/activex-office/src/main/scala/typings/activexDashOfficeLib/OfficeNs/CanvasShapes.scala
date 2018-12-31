@@ -38,9 +38,9 @@ trait CanvasShapes extends js.Object {
   ): Shape = js.native
   def AddLine(BeginX: scala.Double, BeginY: scala.Double, EndX: scala.Double, EndY: scala.Double): Shape = js.native
   /**
-           * @param Width [Width=-1]
-           * @param Height [Height=-1]
-           */
+    * @param Width [Width=-1]
+    * @param Height [Height=-1]
+    */
   def AddPicture(
     FileName: java.lang.String,
     LinkToFile: MsoTriState,
@@ -48,10 +48,6 @@ trait CanvasShapes extends js.Object {
     Left: scala.Double,
     Top: scala.Double
   ): Shape = js.native
-  /**
-           * @param Width [Width=-1]
-           * @param Height [Height=-1]
-           */
   def AddPicture(
     FileName: java.lang.String,
     LinkToFile: MsoTriState,
@@ -60,10 +56,6 @@ trait CanvasShapes extends js.Object {
     Top: scala.Double,
     Width: scala.Double
   ): Shape = js.native
-  /**
-           * @param Width [Width=-1]
-           * @param Height [Height=-1]
-           */
   def AddPicture(
     FileName: java.lang.String,
     LinkToFile: MsoTriState,

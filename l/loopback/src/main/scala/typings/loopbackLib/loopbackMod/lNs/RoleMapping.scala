@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-       * The `RoleMapping` model extends from the built in `loopback.Model` type.
-       * @property {string} id Generated ID.
-       * @property {string} name Name of the role.
-       * @property {string} Description Text description.
-       * @class RoleMapping
-       * @inherits {PersistedModel}
-       */
+  * The `RoleMapping` model extends from the built in `loopback.Model` type.
+  * @property {string} id Generated ID.
+  * @property {string} name Name of the role.
+  * @property {string} Description Text description.
+  * @class RoleMapping
+  * @inherits {PersistedModel}
+  */
 @js.native
 trait RoleMapping extends PersistedModel {
   /** Description Text description. */
@@ -22,25 +22,25 @@ trait RoleMapping extends PersistedModel {
   /** Name of the role. */
   var name: java.lang.String = js.native
   /**
-               * Get the application principal
-               * @callback {() => void} callback
-               * @param {Error} err
-               * @param {Application} application
-               */
+    * Get the application principal
+    * @callback {() => void} callback
+    * @param {Error} err
+    * @param {Application} application
+    */
   def application(callback: js.Function2[/* err */ nodeLib.Error, /* application */ Application, scala.Unit]): scala.Unit = js.native
   /**
-               * Get the child role principal
-               * @callback {() => void} callback
-               * @param {Error} err
-               * @param {User} childUser
-               */
+    * Get the child role principal
+    * @callback {() => void} callback
+    * @param {Error} err
+    * @param {User} childUser
+    */
   def childRole(callback: js.Function2[/* err */ nodeLib.Error, /* childUser */ User, scala.Unit]): scala.Unit = js.native
   /**
-               * Get the user principal
-               * @callback {() => void} callback
-               * @param {Error} err
-               * @param {User} user
-               */
+    * Get the user principal
+    * @callback {() => void} callback
+    * @param {Error} err
+    * @param {User} user
+    */
   def user(callback: js.Function2[/* err */ nodeLib.Error, /* user */ User, scala.Unit]): scala.Unit = js.native
 }
 

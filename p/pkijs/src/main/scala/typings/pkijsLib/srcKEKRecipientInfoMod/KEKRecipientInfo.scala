@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KEKRecipientInfo extends js.Object {
   var encryptedKey: asn1jsLib.asn1jsMod.OctetString
   var kekid: pkijsLib.srcKEKIdentifierMod.default

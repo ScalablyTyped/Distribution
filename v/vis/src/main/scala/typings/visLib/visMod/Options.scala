@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var autoResize: js.UndefOr[scala.Boolean] = js.undefined
   var clickToUse: js.UndefOr[scala.Boolean] = js.undefined

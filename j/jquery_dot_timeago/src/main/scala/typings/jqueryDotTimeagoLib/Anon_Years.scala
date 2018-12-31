@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Years extends js.Object {
   var day: js.UndefOr[js.Any] = js.undefined
   var days: js.UndefOr[js.Any] = js.undefined

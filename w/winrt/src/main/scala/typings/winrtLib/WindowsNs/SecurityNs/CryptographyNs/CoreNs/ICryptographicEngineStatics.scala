@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICryptographicEngineStatics extends js.Object {
   def decrypt(
     key: CryptographicKey,

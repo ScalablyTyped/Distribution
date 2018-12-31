@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISearchSuggestionCollection extends js.Object {
   var size: scala.Double
   def appendQuerySuggestion(text: java.lang.String): scala.Unit

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridCoordinate extends js.Object {
   /** The column index of the coordinate. */
   var columnIndex: js.UndefOr[scala.Double] = js.undefined

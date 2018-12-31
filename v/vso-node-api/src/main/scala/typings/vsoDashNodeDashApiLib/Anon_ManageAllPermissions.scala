@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ManageAllPermissions extends js.Object {
   var allPermissions: scala.Double
   var delete: scala.Double

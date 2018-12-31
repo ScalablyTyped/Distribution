@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Enabled extends js.Object {
   var clusterBillboards: js.UndefOr[scala.Boolean] = js.undefined
   var clusterLabels: js.UndefOr[scala.Boolean] = js.undefined

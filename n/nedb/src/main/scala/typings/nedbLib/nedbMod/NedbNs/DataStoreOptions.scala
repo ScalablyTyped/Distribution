@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataStoreOptions extends js.Object {
   // (optional): hook you can use to transform data after it was serialized and before it is written to disk.
   // Can be used for example to encrypt data before writing database to disk.

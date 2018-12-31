@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScreenshotsConfig extends js.Object {
   var count: js.UndefOr[scala.Double] = js.undefined
   var fastSeek: js.UndefOr[scala.Boolean] = js.undefined

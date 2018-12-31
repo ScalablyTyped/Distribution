@@ -6,25 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Members of the team
-     */
-
+  * Members of the team
+  */
 trait CareTeamParticipant extends BackboneElement {
   /**
-           * Who is involved
-           */
+    * Who is involved
+    */
   var member: js.UndefOr[Reference] = js.undefined
   /**
-           * Organization of the practitioner
-           */
+    * Organization of the practitioner
+    */
   var onBehalfOf: js.UndefOr[Reference] = js.undefined
   /**
-           * Time period of participant
-           */
+    * Time period of participant
+    */
   var period: js.UndefOr[Period] = js.undefined
   /**
-           * Type of involvement
-           */
+    * Type of involvement
+    */
   var role: js.UndefOr[CodeableConcept] = js.undefined
 }
 

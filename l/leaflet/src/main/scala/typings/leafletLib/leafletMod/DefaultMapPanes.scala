@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DefaultMapPanes extends js.Object {
   var mapPane: stdLib.HTMLElement
   var markerPane: stdLib.HTMLElement

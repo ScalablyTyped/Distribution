@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Ios extends js.Object {
   var android: scala.Boolean
   var bb10: scala.Boolean

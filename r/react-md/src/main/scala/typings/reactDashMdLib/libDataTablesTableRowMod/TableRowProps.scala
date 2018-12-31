@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableRowProps
   extends reactDashMdLib.libMod.Props {
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var autoAdjust: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[
     js.Array[reactLib.reactMod.ReactNs.ReactElement[_]] | reactLib.reactMod.ReactNs.ReactElement[_] | reactLib.reactMod.ReactNs.ReactNode

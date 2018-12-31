@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DetectedBreak extends js.Object {
   /** True if break prepends the element. */
   var isPrefix: js.UndefOr[scala.Boolean] = js.undefined

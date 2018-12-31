@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Align extends js.Object {
   var align: reactDashVirtualizedLib.reactDashVirtualizedLibStrings.auto | reactDashVirtualizedLib.reactDashVirtualizedLibStrings.start | reactDashVirtualizedLib.reactDashVirtualizedLibStrings.end | reactDashVirtualizedLib.reactDashVirtualizedLibStrings.center
   var cellIndex: scala.Double

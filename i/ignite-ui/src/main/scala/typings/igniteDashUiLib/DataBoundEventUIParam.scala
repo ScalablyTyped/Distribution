@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataBoundEventUIParam extends js.Object {
   /**
   	 * Used to obtain reference to array actual data which is displayed by chart.

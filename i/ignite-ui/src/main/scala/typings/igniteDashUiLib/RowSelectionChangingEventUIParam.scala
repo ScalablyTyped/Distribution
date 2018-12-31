@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RowSelectionChangingEventUIParam extends js.Object {
   /**
   	 * Gets the end index for a range row selection.

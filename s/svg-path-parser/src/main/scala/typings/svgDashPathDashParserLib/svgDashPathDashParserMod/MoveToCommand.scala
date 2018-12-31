@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MoveToCommand extends js.Object {
   var code: svgDashPathDashParserLib.svgDashPathDashParserLibStrings.m | svgDashPathDashParserLib.svgDashPathDashParserLibStrings.M
   var command: svgDashPathDashParserLib.svgDashPathDashParserLibStrings.moveto

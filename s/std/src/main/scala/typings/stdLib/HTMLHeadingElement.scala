@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait HTMLHeadingElement extends HTMLElement {
   /**
-       * Sets or retrieves a value that indicates the table alignment.
-       */
+    * Sets or retrieves a value that indicates the table alignment.
+    */
   /** @deprecated */
   var align: java.lang.String = js.native
 }

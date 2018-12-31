@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FunctionDeclaration extends BaseFunction {
   @JSName("body")
   var body_FunctionDeclaration: BlockStatement

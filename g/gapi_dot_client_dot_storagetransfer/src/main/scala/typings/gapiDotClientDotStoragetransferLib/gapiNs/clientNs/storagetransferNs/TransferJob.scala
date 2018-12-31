@@ -5,39 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransferJob extends js.Object {
   /** This field cannot be changed by user requests. */
   var creationTime: js.UndefOr[java.lang.String] = js.undefined
   /** This field cannot be changed by user requests. */
   var deletionTime: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * A description provided by the user for the job. Its max length is 1024
-               * bytes when Unicode-encoded.
-               */
+    * A description provided by the user for the job. Its max length is 1024
+    * bytes when Unicode-encoded.
+    */
   var description: js.UndefOr[java.lang.String] = js.undefined
   /** This field cannot be changed by user requests. */
   var lastModificationTime: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * A globally unique name assigned by Storage Transfer Service when the
-               * job is created. This field should be left empty in requests to create a new
-               * transfer job; otherwise, the requests result in an `INVALID_ARGUMENT`
-               * error.
-               */
+    * A globally unique name assigned by Storage Transfer Service when the
+    * job is created. This field should be left empty in requests to create a new
+    * transfer job; otherwise, the requests result in an `INVALID_ARGUMENT`
+    * error.
+    */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /** The ID of the Google Cloud Platform Console project that owns the job. */
   var projectId: js.UndefOr[java.lang.String] = js.undefined
   /** Schedule specification. */
   var schedule: js.UndefOr[Schedule] = js.undefined
   /**
-               * Status of the job. This value MUST be specified for
-               * `CreateTransferJobRequests`.
-               *
-               * NOTE: The effect of the new job status takes place during a subsequent job
-               * run. For example, if you change the job status from `ENABLED` to
-               * `DISABLED`, and an operation spawned by the transfer is running, the status
-               * change would not affect the current operation.
-               */
+    * Status of the job. This value MUST be specified for
+    * `CreateTransferJobRequests`.
+    *
+    * NOTE: The effect of the new job status takes place during a subsequent job
+    * run. For example, if you change the job status from `ENABLED` to
+    * `DISABLED`, and an operation spawned by the transfer is running, the status
+    * change would not affect the current operation.
+    */
   var status: js.UndefOr[java.lang.String] = js.undefined
   /** Transfer specification. */
   var transferSpec: js.UndefOr[TransferSpec] = js.undefined

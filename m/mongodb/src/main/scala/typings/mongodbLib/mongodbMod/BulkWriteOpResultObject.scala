@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BulkWriteOpResultObject extends js.Object {
   var deletedCount: js.UndefOr[scala.Double] = js.undefined
   var insertedCount: js.UndefOr[scala.Double] = js.undefined

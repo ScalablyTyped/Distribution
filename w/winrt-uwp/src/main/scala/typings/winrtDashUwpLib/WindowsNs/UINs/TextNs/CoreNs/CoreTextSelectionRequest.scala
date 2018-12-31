@@ -14,9 +14,9 @@ abstract class CoreTextSelectionRequest () extends js.Object {
   /** Gets or sets the selection range that the text input server is requesting. The application should set the current range of selection before returning from the event handler. */
   var selection: CoreTextRange = js.native
   /**
-                       * Requests that the selection request operation be delayed. Call this method if your text input control is hosted on a worker thread rather than on the UI thread.
-                       * @return A Deferral object.
-                       */
+    * Requests that the selection request operation be delayed. Call this method if your text input control is hosted on a worker thread rather than on the UI thread.
+    * @return A Deferral object.
+    */
   def getDeferral(): winrtDashUwpLib.WindowsNs.FoundationNs.Deferral = js.native
 }
 

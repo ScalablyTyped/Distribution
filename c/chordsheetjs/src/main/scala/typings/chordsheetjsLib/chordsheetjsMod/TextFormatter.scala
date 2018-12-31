@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class TextFormatter () extends js.Object {
   def chordLyricsPairLength(chordLyricsPair: ChordLyricsPair): scala.Double = js.native
   /**
-       * Formats a song into a plain text chord sheet
-       * @param song The song to be formatted
-       */
+    * Formats a song into a plain text chord sheet
+    * @param song The song to be formatted
+    */
   def format(song: Song): java.lang.String = js.native
   def formatHeader(header: SongHeader): java.lang.String = js.native
   def formatItemBottom(item: ChordLyricsPair): java.lang.String = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FBSDKEvents extends js.Object {
   /* This method allows you to subscribe to a range of events, and define callback functions for when they fire. */
   def subscribe(event: java.lang.String, callback: js.Function1[/* fbResponseObject */ js.Object, _]): scala.Unit

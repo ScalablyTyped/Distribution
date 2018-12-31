@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccountStatus extends js.Object {
   /** The ID of the account for which the status is reported. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined

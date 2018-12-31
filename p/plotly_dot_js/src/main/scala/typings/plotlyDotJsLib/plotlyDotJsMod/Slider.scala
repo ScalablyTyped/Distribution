@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Slider extends js.Object {
   /**
   	 * Determines which button (by index starting from 0) is

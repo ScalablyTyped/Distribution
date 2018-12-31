@@ -9,23 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object uglifycssModMembers extends js.Object {
   /**
-           * Uglify one or more files
-           */
+    * Uglify one or more files
+    */
   def processFiles(filenames: js.Array[java.lang.String]): java.lang.String = js.native
-  /**
-           * Uglify one or more files
-           */
   def processFiles(
     filenames: js.Array[java.lang.String],
     options: uglifycssLib.uglifycssMod.UglifyCSSNs.UglifyCSSOptions
   ): java.lang.String = js.native
   /**
-           * Uglify a string
-           */
+    * Uglify a string
+    */
   def processString(content: java.lang.String): java.lang.String = js.native
-  /**
-           * Uglify a string
-           */
   def processString(content: java.lang.String, options: uglifycssLib.uglifycssMod.UglifyCSSNs.UglifyCSSOptions): java.lang.String = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IResizeTracker
   extends extjsLib.ExtNs.ddNs.IDragTracker {
   /** [Method] Create a proxy for this resizer

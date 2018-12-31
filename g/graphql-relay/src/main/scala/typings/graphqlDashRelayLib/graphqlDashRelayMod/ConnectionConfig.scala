@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectionConfig extends js.Object {
   var connectionFields: js.UndefOr[
     (graphqlLib.typeDefinitionMod.Thunk[graphqlLib.typeDefinitionMod.GraphQLFieldConfigMap[_, _]]) | scala.Null

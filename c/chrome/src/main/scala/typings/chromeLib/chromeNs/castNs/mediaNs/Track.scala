@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Track protected () extends js.Object {
   /**
-           * @param {number} trackId
-           * @param {!chrome.cast.media.TrackType} trackType
-           * @constructor
-           * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.Track
-           */
+    * @param {number} trackId
+    * @param {!chrome.cast.media.TrackType} trackType
+    * @constructor
+    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.Track
+    */
   def this(trackId: scala.Double, trackType: TrackType) = this()
   var customData: js.Object = js.native
   var language: java.lang.String = js.native

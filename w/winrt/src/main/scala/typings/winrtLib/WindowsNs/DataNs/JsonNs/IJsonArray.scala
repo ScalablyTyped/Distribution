@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IJsonArray extends IJsonValue {
   def getArrayAt(index: scala.Double): JsonArray
   def getBooleanAt(index: scala.Double): scala.Boolean

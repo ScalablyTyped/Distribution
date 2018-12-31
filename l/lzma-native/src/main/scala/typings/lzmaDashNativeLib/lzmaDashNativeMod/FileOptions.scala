@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileOptions extends js.Object {
   var fileSize: scala.Double
   var memlimit: js.UndefOr[scala.Double] = js.undefined

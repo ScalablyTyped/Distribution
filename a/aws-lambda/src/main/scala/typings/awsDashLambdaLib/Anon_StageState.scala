@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_StageState extends js.Object {
   var `execution-id`: java.lang.String
   var pipeline: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Queue extends js.Object {
   val length: scala.Double
   def clear(): scala.Unit

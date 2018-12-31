@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var callbackParams: js.UndefOr[js.Array[_]] = js.undefined
   var intersectionPercentage: js.UndefOr[scala.Double] = js.undefined

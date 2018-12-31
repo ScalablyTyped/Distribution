@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait i18nOptions extends js.Object {
   var close: js.UndefOr[java.lang.String] = js.undefined
   var defaultLocale: js.UndefOr[java.lang.String] = js.undefined

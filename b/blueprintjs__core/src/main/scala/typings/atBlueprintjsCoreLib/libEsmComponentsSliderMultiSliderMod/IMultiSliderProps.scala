@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMultiSliderProps extends ISliderBaseProps {
   /** Default intent of a track segment, used only if no handle specifies `intentBefore/After`. */
   var defaultTrackIntent: js.UndefOr[atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Country extends js.Object {
   /** The user's country setting. */
   var country: js.UndefOr[java.lang.String] = js.undefined

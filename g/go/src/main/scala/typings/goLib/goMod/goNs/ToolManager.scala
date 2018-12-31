@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * This special Tool is responsible for managing all of the Diagram's
-    * mode-less tools.
-    */
+  * This special Tool is responsible for managing all of the Diagram's
+  * mode-less tools.
+  */
 @js.native
 trait ToolManager extends Tool {
   /**Gets or sets the mode-less ActionTool, normally one of the .mouseDownTools.*/
@@ -54,44 +54,44 @@ trait ToolManager extends Tool {
   /**Gets or sets the mode-less TextEditingTool, normally one of the .mouseUpTools.*/
   var textEditingTool: TextEditingTool = js.native
   /**
-          * Implement the standard behavior for mouse hover and mouse hold events, called by .doWaitAfter when the mouse has not moved for a period of time.
-          */
+    * Implement the standard behavior for mouse hover and mouse hold events, called by .doWaitAfter when the mouse has not moved for a period of time.
+    */
   def doMouseHover(): scala.Unit = js.native
   /**
-          * Implement the standard behavior for tooltips, called by .doWaitAfter when the mouse has not moved for a period of time.
-          */
+    * Implement the standard behavior for tooltips, called by .doWaitAfter when the mouse has not moved for a period of time.
+    */
   def doToolTip(): scala.Unit = js.native
   /**
-          * Find a mouse tool of a given name.
-          * @param {string} name
-          */
+    * Find a mouse tool of a given name.
+    * @param {string} name
+    */
   def findTool(name: java.lang.String): Tool = js.native
   /**
-          * Hide any tooltip.
-          */
+    * Hide any tooltip.
+    */
   def hideToolTip(): scala.Unit = js.native
   /**
-          * Initialize the three mouse tool lists with instances of the standard tools.
-          */
+    * Initialize the three mouse tool lists with instances of the standard tools.
+    */
   def initializeStandardTools(): scala.Unit = js.native
   /**
-          * This is called by .showToolTip to position the part within the viewport.
-          * @param {Adornment} tooltip
-          * @param {GraphObject} obj The GraphObject getting the tooltip.
-          */
+    * This is called by .showToolTip to position the part within the viewport.
+    * @param {Adornment} tooltip
+    * @param {GraphObject} obj The GraphObject getting the tooltip.
+    */
   def positionToolTip(tooltip: Adornment, obj: GraphObject): scala.Unit = js.native
   /**
-          * Replace a mouse tool of a given name with a new tool.
-          * @param {string} name the type of tool, such as "Dragging" or "ClickSelecting".
-          * @param {Tool} newtool If null, any tool that the search finds will just be removed
-          * from the list in which it was found.
-          */
+    * Replace a mouse tool of a given name with a new tool.
+    * @param {string} name the type of tool, such as "Dragging" or "ClickSelecting".
+    * @param {Tool} newtool If null, any tool that the search finds will just be removed
+    * from the list in which it was found.
+    */
   def replaceTool(name: java.lang.String, newtool: Tool): Tool = js.native
   /**
-          * Show a tooltip Adornment.
-          * @param {Adornment} tooltip
-          * @param {GraphObject} obj The GraphObject getting the tooltip; this is null if the tooltip is being shown for the diagram background.
-          */
+    * Show a tooltip Adornment.
+    * @param {Adornment} tooltip
+    * @param {GraphObject} obj The GraphObject getting the tooltip; this is null if the tooltip is being shown for the diagram background.
+    */
   def showToolTip(tooltip: Adornment, obj: GraphObject): scala.Unit = js.native
 }
 

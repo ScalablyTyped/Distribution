@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait formatters_info extends js.Object {
   var i: js.UndefOr[java.lang.String] = js.undefined
   var u: js.UndefOr[java.lang.String] = js.undefined

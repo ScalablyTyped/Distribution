@@ -19,7 +19,6 @@ class default protected () extends Quill {
 object default extends js.Object {
   // static methods: debug, import, register, find
   def debug(level: java.lang.String): scala.Unit = js.native
-  // static methods: debug, import, register, find
   def debug(level: scala.Boolean): scala.Unit = js.native
   def find(domNode: stdLib.Node): quillLib.quillMod.Quill | js.Any = js.native
   def find(domNode: stdLib.Node, bubble: scala.Boolean): quillLib.quillMod.Quill | js.Any = js.native

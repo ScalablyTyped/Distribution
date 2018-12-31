@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LinearClosed extends js.Object {
   var basis: plottableLib.plottableLibStrings.basis
   var basisClosed: plottableLib.plottableLibStrings.basisClosed

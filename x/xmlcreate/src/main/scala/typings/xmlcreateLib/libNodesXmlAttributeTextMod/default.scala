@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class default protected () extends XmlAttributeText {
   /**
-       * Initializes a new instance of the {@link XmlAttributeText} class.
-       *
-       * @param text Text.
-       */
+    * Initializes a new instance of the {@link XmlAttributeText} class.
+    *
+    * @param text Text.
+    */
   def this(text: java.lang.String) = this()
 }
 

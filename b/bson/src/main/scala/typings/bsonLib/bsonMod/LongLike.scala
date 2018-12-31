@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Base class for Long and Timestamp.
- * In original js-node@1.0.x code 'Timestamp' is a 100% copy-paste of 'Long'
- * with 'Long' replaced by 'Timestamp' (changed to inheritance in js-node@2.0.0)
- */
+  * Base class for Long and Timestamp.
+  * In original js-node@1.0.x code 'Timestamp' is a 100% copy-paste of 'Long'
+  * with 'Long' replaced by 'Timestamp' (changed to inheritance in js-node@2.0.0)
+  */
 @js.native
 trait LongLike[T] extends js.Object {
   /** Returns the sum of `this` and the `other`. */
@@ -17,9 +17,9 @@ trait LongLike[T] extends js.Object {
   /** Returns the bitwise-AND of `this` and the `other`. */
   def and(other: T): T = js.native
   /**
-       * Compares `this` with the given `other`.
-       * @returns 0 if they are the same, 1 if the this is greater, and -1 if the given one is greater.
-       */
+    * Compares `this` with the given `other`.
+    * @returns 0 if they are the same, 1 if the this is greater, and -1 if the given one is greater.
+    */
   def compare(other: T): scala.Double = js.native
   /** Returns `this` divided by the given `other`. */
   def div(other: T): T = js.native
@@ -58,19 +58,19 @@ trait LongLike[T] extends js.Object {
   /** Returns the bitwise-OR of `this` and the given `other`. */
   def or(other: T): T = js.native
   /**
-       * Returns `this` with bits shifted to the left by the given amount.
-       * @param numBits The number of bits by which to shift.
-       */
+    * Returns `this` with bits shifted to the left by the given amount.
+    * @param numBits The number of bits by which to shift.
+    */
   def shiftLeft(numBits: scala.Double): T = js.native
   /**
-       * Returns `this` with bits shifted to the right by the given amount.
-       * @param numBits The number of bits by which to shift.
-       */
+    * Returns `this` with bits shifted to the right by the given amount.
+    * @param numBits The number of bits by which to shift.
+    */
   def shiftRight(numBits: scala.Double): T = js.native
   /**
-       * Returns `this` with bits shifted to the right by the given amount, with the new top bits matching the current sign bit.
-       * @param numBits The number of bits by which to shift.
-       */
+    * Returns `this` with bits shifted to the right by the given amount, with the new top bits matching the current sign bit.
+    * @param numBits The number of bits by which to shift.
+    */
   def shiftRightUnsigned(numBits: scala.Double): T = js.native
   /** Returns the difference of `this` and the given `other`. */
   def subtract(other: T): T = js.native
@@ -80,10 +80,6 @@ trait LongLike[T] extends js.Object {
   def toJSON(): java.lang.String = js.native
   /** Returns closest floating-point representation to `this` value */
   def toNumber(): scala.Double = js.native
-  /**
-       * Return as a string
-       * @param radix the radix in which the text should be written. {default:10}
-       */
   def toString(radix: scala.Double): java.lang.String = js.native
   /** Returns the bitwise-XOR of `this` and the given `other`. */
   def xor(other: T): T = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KikPickUsersOptions extends js.Object {
   var filterSelf: js.UndefOr[scala.Boolean] = js.undefined
   var filtered: js.UndefOr[js.Array[java.lang.String]] = js.undefined

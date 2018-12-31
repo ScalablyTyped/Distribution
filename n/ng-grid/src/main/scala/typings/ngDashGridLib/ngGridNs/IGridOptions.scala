@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGridOptions extends js.Object {
   /** Callback for when you want to validate something after selection. */
   var afterSelectionChange: js.UndefOr[
@@ -14,11 +13,11 @@ trait IGridOptions extends js.Object {
   /** Define an aggregate template to customize the rows when grouped. See github wiki for more details. */
   var aggregateTemplate: js.UndefOr[java.lang.String] = js.undefined
   /** Callback if you want to inspect something before selection,
-          return false if you want to cancel the selection. return true otherwise.
-          If you need to wait for an async call to proceed with selection you can
-          use rowItem.changeSelection(event) method after returning false initially.
-          Note: when shift+ Selecting multiple items in the grid this will only get called
-          once and the rowItem will be an array of items that are queued to be selected. */
+    return false if you want to cancel the selection. return true otherwise.
+    If you need to wait for an async call to proceed with selection you can
+    use rowItem.changeSelection(event) method after returning false initially.
+    Note: when shift+ Selecting multiple items in the grid this will only get called
+    once and the rowItem will be an array of items that are queued to be selected. */
   var beforeSelectionChange: js.UndefOr[
     js.Function2[/* rowItem */ js.UndefOr[IRow], /* event */ js.UndefOr[js.Any], scala.Boolean]
   ] = js.undefined
@@ -29,8 +28,8 @@ trait IGridOptions extends js.Object {
   /** definitions of columns as an array [], if not defined columns are auto-generated. See github wiki for more details. */
   var columnDefs: js.UndefOr[js.Array[IColumnDef]] = js.undefined
   /** Data being displayed in the grid. This can be either a string of object ID or object reference.
-              Using string is preferred, as this turns on change tracking in ng-grid
-          */
+    Using string is preferred, as this turns on change tracking in ng-grid
+    */
   var data: js.UndefOr[js.Any] = js.undefined
   /** Data updated callback, fires every time the data is modified from outside the grid. */
   var dataUpdated: js.UndefOr[angularLib.angularMod.Global.Function] = js.undefined
@@ -59,9 +58,9 @@ trait IGridOptions extends js.Object {
   /**  string list of properties to exclude when auto-generating columns. */
   var excludeProperties: js.UndefOr[js.Any] = js.undefined
   /** filterOptions -
-          filterText: The text bound to the built-in search box.
-          useExternalFilter: Bypass internal filtering if you want to roll your own filtering mechanism but want to use builtin search box.
-          */
+    filterText: The text bound to the built-in search box.
+    useExternalFilter: Bypass internal filtering if you want to roll your own filtering mechanism but want to use builtin search box.
+    */
   var filterOptions: js.UndefOr[IFilterOptions] = js.undefined
   /** Defining the height of the footer in pixels. */
   var footerRowHeight: js.UndefOr[scala.Double] = js.undefined
@@ -74,14 +73,14 @@ trait IGridOptions extends js.Object {
   /** i18n language support. choose from the installed or included languages, en, fr, sp, etc...*/
   var i18n: js.UndefOr[java.lang.String] = js.undefined
   /** Enables the use of jquery UI reaggable/droppable plugin. requires jqueryUI to work if enabled.
-          Useful if you want drag + drop but your users insist on crappy browsers. */
+    Useful if you want drag + drop but your users insist on crappy browsers. */
   var jqueryUIDraggable: js.UndefOr[scala.Boolean] = js.undefined
   /** Enable the use jqueryUIThemes */
   var jqueryUITheme: js.UndefOr[scala.Boolean] = js.undefined
   /** Prevent unselections when in single selection mode. */
   var keepLastSelected: js.UndefOr[scala.Boolean] = js.undefined
   /** Maintains the column widths while resizing.
-          Defaults to true when using *'s or undefined widths. Can be ovverriden by setting to false. */
+    Defaults to true when using *'s or undefined widths. Can be ovverriden by setting to false. */
   var maintainColumnRatios: js.UndefOr[scala.Boolean] = js.undefined
   /** Set this to false if you only want one item selected at a time */
   var multiSelect: js.UndefOr[scala.Boolean] = js.undefined
@@ -102,10 +101,10 @@ trait IGridOptions extends js.Object {
   /** all of the items selected in the grid. In single select mode there will only be one item in the array. */
   var selectedItems: js.UndefOr[js.Array[_]] = js.undefined
   /** Enables menu to choose which columns to display and group by.
-          If both showColumnMenu and showFilter are false the menu button will not display.*/
+    If both showColumnMenu and showFilter are false the menu button will not display.*/
   var showColumnMenu: js.UndefOr[scala.Boolean] = js.undefined
   /** Enables display of the filterbox in the column menu.
-          If both showColumnMenu and showFilter are false the menu button will not display.*/
+    If both showColumnMenu and showFilter are false the menu button will not display.*/
   var showFilter: js.UndefOr[scala.Boolean] = js.undefined
   /** Show or hide the footer alltogether the footer is enabled by default */
   var showFooter: js.UndefOr[scala.Boolean] = js.undefined
@@ -114,13 +113,13 @@ trait IGridOptions extends js.Object {
   /** Row selection check boxes appear as the first column. */
   var showSelectionCheckbox: js.UndefOr[scala.Boolean] = js.undefined
   /** Define a sortInfo object to specify a default sorting state.
-          You can also observe this variable to utilize server-side sorting (see useExternalSorting).
-          Syntax is sortinfo: { fields: ['fieldName1',' fieldName2'], direction: 'ASC'/'asc' || 'desc'/'DESC'}*/
+    You can also observe this variable to utilize server-side sorting (see useExternalSorting).
+    Syntax is sortinfo: { fields: ['fieldName1',' fieldName2'], direction: 'ASC'/'asc' || 'desc'/'DESC'}*/
   var sortInfo: js.UndefOr[js.Any] = js.undefined
   /** Set the tab index of the Vieport. */
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
   /** Prevents the internal sorting from executing.
-          The sortInfo object will be updated with the sorting information so you can handle sorting (see sortInfo)*/
+    The sortInfo object will be updated with the sorting information so you can handle sorting (see sortInfo)*/
   var useExternalSorting: js.UndefOr[scala.Boolean] = js.undefined
   /** the threshold in rows to force virtualization on  */
   var virtualizationThreshold: js.UndefOr[scala.Double] = js.undefined

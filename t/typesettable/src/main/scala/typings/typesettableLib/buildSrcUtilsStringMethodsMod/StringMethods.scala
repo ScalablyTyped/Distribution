@@ -13,8 +13,8 @@ class StringMethods () extends js.Object
 @js.native
 object StringMethods extends js.Object {
   /**
-       * Treat all sequences of consecutive spaces as a single " ".
-       */
+    * Treat all sequences of consecutive spaces as a single " ".
+    */
   def combineWhitespace(str: java.lang.String): java.lang.String = js.native
   def isNotEmptyString(str: java.lang.String): scala.Boolean = js.native
   def trimEnd(str: java.lang.String): java.lang.String = js.native

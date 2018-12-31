@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISession extends js.Object {
   def getUser(): ionicLib.Anon_Id
   def getUserToken(): java.lang.String

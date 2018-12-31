@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AutocompleteParams extends js.Object {
   var debounceDelay: js.UndefOr[scala.Double | scala.Boolean] = js.undefined
   var displayProperty: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined

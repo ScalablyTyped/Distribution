@@ -7,19 +7,14 @@ import scala.scalajs.js.annotation._
 
 @JSImport("plottable/build/src/components", "AxisLabel")
 @js.native
+/**
+  * @constructor
+  * @param {string} [text]
+  * @param {number} [angle] One of -90/0/90. 0 is horizontal.
+  */
 class AxisLabel ()
   extends plottableLib.buildSrcComponentsLabelMod.AxisLabel {
-  /**
-       * @constructor
-       * @param {string} [text]
-       * @param {number} [angle] One of -90/0/90. 0 is horizontal.
-       */
   def this(text: java.lang.String) = this()
-  /**
-       * @constructor
-       * @param {string} [text]
-       * @param {number} [angle] One of -90/0/90. 0 is horizontal.
-       */
   def this(text: java.lang.String, angle: scala.Double) = this()
 }
 

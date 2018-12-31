@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TraitsRecord extends js.Object {
   val autonomous_system_number: js.UndefOr[scala.Double] = js.undefined
   val autonomous_system_organization: js.UndefOr[java.lang.String] = js.undefined

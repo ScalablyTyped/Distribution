@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InnerAudioContext extends js.Object {
   /** 是否自动开始播放，默认 false */
   var autoplay: scala.Boolean

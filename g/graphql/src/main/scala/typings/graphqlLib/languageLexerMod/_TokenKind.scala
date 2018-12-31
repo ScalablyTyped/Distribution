@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // @internal
-
 trait _TokenKind extends js.Object {
   var AMP: graphqlLib.graphqlLibStrings.`&`
   var AT: graphqlLib.graphqlLibStrings.`@`

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ApplicationOptions extends js.Object {
   var assetPrefix: js.UndefOr[java.lang.String] = js.undefined
   var gamepads: js.UndefOr[GamePads] = js.undefined

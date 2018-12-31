@@ -2,7 +2,7 @@
 [info ] Phase1ReadTypescript.scala:158 Preprocessing TsHelperFile(InFile(/home/tso/tmp/tso-cache/DefinitelyTyped/types/nvd3/index.d.ts),FromFolder(InFolder(/home/tso/tmp/tso-cache/DefinitelyTyped/types/nvd3),TsIdentLibrarySimple(nvd3)),TsIdentModule(None,List(nvd3))) [id => nvd3, phase => typescript] 
 [info ] InferredDefaultModule.scala:39 Inferred module TsIdentModule(None,List(nvd3)) [id => nvd3, phase => typescript] 
 [warn ] Phase1ReadTypescript.scala:196 Processing TsIdentLibrarySimple(nvd3) [id => nvd3, phase => typescript] 
-[warn ] QualifyReferences.scala:46 Couldn't qualify TsTypeRef(TsQIdent(List(TsIdentSimple(d3), TsIdentSimple(svg), TsIdentSimple(Axis))),List()), defaulting to any [id => nvd3, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(nvd3) / TsDeclNamespace(nv) / TsDeclInterface(Nvd3Axis) / TsTypeRef())] 
+[warn ] QualifyReferences.scala:57 Couldn't qualify d3.svg.Axis [id => nvd3, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(nvd3) / TsDeclNamespace(nv) / TsDeclInterface(Nvd3Axis) / TsTypeRef())] 
 [error] PhaseRes.scala:76 Caught exception: Type parameter not provided [id => nvd3, phase => typescript] java.lang.RuntimeException: Type parameter not provided
 	at scala.sys.package$.error(package.scala:30)
 	at com.olvind.tso.ts.FillInTParams$.$anonfun$rewriter$2(FillInTParams.scala:34)
@@ -164,7 +164,7 @@
 	at scala.collection.parallel.Task.tryLeaf(Tasks.scala:56)
 	at scala.collection.parallel.Task.tryLeaf$(Tasks.scala:50)
 	at scala.collection.parallel.ParIterableLike$Map.tryLeaf(ParIterableLike.scala:1053)
-	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.internal(Tasks.scala:170)
+	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.internal(Tasks.scala:160)
 	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.internal$(Tasks.scala:157)
 	at scala.collection.parallel.AdaptiveWorkStealingForkJoinTasks$WrappedTask.internal(Tasks.scala:440)
 	at scala.collection.parallel.AdaptiveWorkStealingTasks$WrappedTask.compute(Tasks.scala:150)

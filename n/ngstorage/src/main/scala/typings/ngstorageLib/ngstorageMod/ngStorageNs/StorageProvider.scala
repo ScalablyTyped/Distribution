@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StorageProvider
   extends angularLib.angularMod.angularNs.IServiceProvider {
   def get[T](key: java.lang.String): T | scala.Boolean

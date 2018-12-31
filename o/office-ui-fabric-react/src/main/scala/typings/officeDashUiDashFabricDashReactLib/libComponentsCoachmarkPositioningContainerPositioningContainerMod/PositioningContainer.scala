@@ -16,26 +16,26 @@ class PositioningContainer protected ()
   var _contentHost: js.Any = js.native
   var _didSetInitialFocus: js.Any = js.native
   /**
-       * The maximum height the PositioningContainer can grow to
-       * without going being the window or target bounds
-       */
+    * The maximum height the PositioningContainer can grow to
+    * without going being the window or target bounds
+    */
   var _maxHeight: js.Any = js.native
   var _positionAttempts: js.Any = js.native
   /**
-       * The primary positioned div.
-       */
+    * The primary positioned div.
+    */
   var _positionedHost: js.Any = js.native
   /**
-       * The bounds used when determing if and where the
-       * PositioningContainer should be placed.
-       */
+    * The bounds used when determing if and where the
+    * PositioningContainer should be placed.
+    */
   var _positioningBounds: js.Any = js.native
   var _setHeightOffsetTimer: js.Any = js.native
   var _target: js.Any = js.native
   /**
-       * Stores an instance of Window, used to check
-       * for server side rendering and if focus was lost.
-       */
+    * Stores an instance of Window, used to check
+    * for server side rendering and if focus was lost.
+    */
   var _targetWindow: js.Any = js.native
   /* private */ def _arePositionsEqual(positions: js.Any, newPosition: js.Any): js.Any = js.native
   /* private */ def _comparePositions(oldPositions: js.Any, newPositions: js.Any): js.Any = js.native
@@ -43,16 +43,16 @@ class PositioningContainer protected ()
   /* protected */ def _dismissOnScroll(ev: reactLib.Event): scala.Unit = js.native
   /* private */ def _getBounds(): js.Any = js.native
   /**
-       * Return the maximum height the container can grow to
-       * without going out of the specified bounds
-       */
+    * Return the maximum height the container can grow to
+    * without going out of the specified bounds
+    */
   /* private */ def _getMaxHeight(): js.Any = js.native
   /* private */ def _getTarget(): js.Any = js.native
   /* private */ def _getTarget(props: js.Any): js.Any = js.native
   /* protected */ def _onComponentDidMount(): scala.Unit = js.native
   /**
-       * Animates the height if finalHeight was given.
-       */
+    * Animates the height if finalHeight was given.
+    */
   /* private */ def _setHeightOffsetEveryFrame(): js.Any = js.native
   /* protected */ def _setInitialFocus(): scala.Unit = js.native
   /* private */ def _setTargetWindowAndElement(target: js.Any): js.Any = js.native
@@ -69,24 +69,12 @@ class PositioningContainer protected ()
     newProps: officeDashUiDashFabricDashReactLib.libComponentsCoachmarkPositioningContainerPositioningContainerDotTypesMod.IPositioningContainerProps
   ): scala.Unit = js.native
   /**
-       * Deprecated, use `onResize` instead.
-       * @deprecated Use `onResize` instead.
-       */
+    * Deprecated, use `onResize` instead.
+    * @deprecated Use `onResize` instead.
+    */
   def dismiss(): scala.Unit = js.native
-  /**
-       * Deprecated, use `onResize` instead.
-       * @deprecated Use `onResize` instead.
-       */
   def dismiss(ev: reactLib.Event): scala.Unit = js.native
-  /**
-       * Deprecated, use `onResize` instead.
-       * @deprecated Use `onResize` instead.
-       */
   def dismiss(ev: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLElement]): scala.Unit = js.native
-  /**
-       * Deprecated, use `onResize` instead.
-       * @deprecated Use `onResize` instead.
-       */
   def dismiss(ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
   def onResize(): scala.Unit = js.native
   def onResize(ev: reactLib.Event): scala.Unit = js.native

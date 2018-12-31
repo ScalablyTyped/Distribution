@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MenuItemProps
   extends materialDashUiLib.underscoreUnderscoreMaterialUINs.ListNs.ListItemProps {
   // <ListItem/> is the element that get the 'other' properties

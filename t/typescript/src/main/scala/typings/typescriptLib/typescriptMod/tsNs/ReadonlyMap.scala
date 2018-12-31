@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** ES6 Map interface, only read methods included. */
-
 trait ReadonlyMap[T] extends js.Object {
   val size: scala.Double
   def entries(): Iterator[js.Tuple2[java.lang.String, T]]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActivityLifecycleCallbacks extends js.Object {
   def onActivityCreated(
     activity: androiduixLib.androidNs.appNs.Activity,

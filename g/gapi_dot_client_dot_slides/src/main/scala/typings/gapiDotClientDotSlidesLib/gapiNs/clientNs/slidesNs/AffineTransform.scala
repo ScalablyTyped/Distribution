@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AffineTransform extends js.Object {
   /** The X coordinate scaling element. */
   var scaleX: js.UndefOr[scala.Double] = js.undefined

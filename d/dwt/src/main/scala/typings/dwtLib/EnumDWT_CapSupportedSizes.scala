@@ -18,8 +18,8 @@ object EnumDWT_CapSupportedSizes extends js.Object {
     extends dwtLib.EnumDWT_CapSupportedSizes
   
   /** Added 1.8
-       *  17
-       */
+    *  17
+    */
   @js.native
   sealed trait TWSS_4A0
     extends dwtLib.EnumDWT_CapSupportedSizes
@@ -60,8 +60,8 @@ object EnumDWT_CapSupportedSizes extends js.Object {
     extends dwtLib.EnumDWT_CapSupportedSizes
   
   /** Added 1.5
-       *  5
-       */
+    *  5
+    */
   @js.native
   sealed trait TWSS_A5
     extends dwtLib.EnumDWT_CapSupportedSizes
@@ -292,8 +292,8 @@ object EnumDWT_CapSupportedSizes extends js.Object {
     extends dwtLib.EnumDWT_CapSupportedSizes
   
   /** Added 1.7
-       *  9
-       */
+    *  9
+    */
   @js.native
   sealed trait TWSS_USLEDGER
     extends dwtLib.EnumDWT_CapSupportedSizes

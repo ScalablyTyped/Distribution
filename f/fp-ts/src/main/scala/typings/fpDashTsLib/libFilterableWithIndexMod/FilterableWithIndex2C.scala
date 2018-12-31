@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilterableWithIndex2C[F /* <: fpDashTsLib.libHKTMod.URIS2 */, I, L]
   extends fpDashTsLib.libFilterableMod.Filterable2C[F, L]
      with fpDashTsLib.libFunctorWithIndexMod.FunctorWithIndex2C[F, I, L] {

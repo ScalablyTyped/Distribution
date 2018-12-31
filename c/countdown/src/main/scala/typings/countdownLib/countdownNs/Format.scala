@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Format extends js.Object {
   var delim: js.UndefOr[java.lang.String] = js.undefined
   var empty: js.UndefOr[java.lang.String] = js.undefined

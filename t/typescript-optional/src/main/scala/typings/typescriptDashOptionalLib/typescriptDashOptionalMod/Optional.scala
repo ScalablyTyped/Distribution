@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Optional[T] extends js.Object {
   val isEmpty: scala.Boolean
   val isPresent: scala.Boolean

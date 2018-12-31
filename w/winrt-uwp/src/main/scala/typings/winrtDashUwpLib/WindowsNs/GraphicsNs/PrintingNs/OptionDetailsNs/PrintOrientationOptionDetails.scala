@@ -22,10 +22,10 @@ abstract class PrintOrientationOptionDetails () extends js.Object {
   /** Gets or sets the enumerated value of the print media type option. */
   var value: js.Any = js.native
   /**
-                       * Sets the value for the print orientation option.
-                       * @param value Value for the print orientation option.
-                       * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
-                       */
+    * Sets the value for the print orientation option.
+    * @param value Value for the print orientation option.
+    * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
+    */
   def trySetValue(value: js.Any): scala.Boolean = js.native
 }
 

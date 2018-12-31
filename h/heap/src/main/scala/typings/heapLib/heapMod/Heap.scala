@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Heap[T] extends js.Object {
   def copy(): Heap[T]
   // Determine whether the heap is empty.

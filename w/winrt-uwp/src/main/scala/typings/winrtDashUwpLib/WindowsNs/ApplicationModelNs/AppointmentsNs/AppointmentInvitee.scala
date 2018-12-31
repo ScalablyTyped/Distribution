@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a participant of an appointment in a calendar. */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentInvitee")
 @js.native
+/** Initializes a new instance of the AppointmentInvitee class. */
 class AppointmentInvitee () extends js.Object {
   /** Gets or sets a string that communicates the address of a participant of an appointment. The address is inherited from IAppointmentParticipant and is a Simple Mail Transfer Protocol (SMTP) e-mail address. It is also of type String and between 1 and 321 characters in length (non-empty). */
   var address: java.lang.String = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SignerInfo extends js.Object {
   var digestAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default
   var sid: js.Any

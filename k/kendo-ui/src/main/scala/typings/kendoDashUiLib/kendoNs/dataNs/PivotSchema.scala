@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PivotSchema extends DataSourceSchema {
   var axes: js.UndefOr[js.Any] = js.undefined
   var catalogs: js.UndefOr[js.Any] = js.undefined

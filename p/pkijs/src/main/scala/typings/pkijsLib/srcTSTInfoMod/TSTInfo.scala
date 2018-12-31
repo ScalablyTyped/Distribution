@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TSTInfo extends js.Object {
   var accuracy: js.UndefOr[pkijsLib.srcAccuracyMod.default] = js.undefined
   var extensions: js.UndefOr[js.Array[pkijsLib.srcExtensionMod.default]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ZoneViewsListResourcesResponse extends js.Object {
   /** The formatted JSON that is requested by the user. */
   var items: js.UndefOr[js.Array[ListResourceResponseItem]] = js.undefined

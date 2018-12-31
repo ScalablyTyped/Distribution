@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MotorOption extends js.Object {
   var address: js.UndefOr[scala.Double] = js.undefined
   var bits: js.UndefOr[js.Any] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StorelayoutclustersResource extends js.Object {
   /** Deletes a cluster. */
   def delete(request: gapiDotClientDotAndroidenterpriseLib.Anon_EnterpriseIdPrettyPrintQuotaUserKeyPageIdUserIp): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

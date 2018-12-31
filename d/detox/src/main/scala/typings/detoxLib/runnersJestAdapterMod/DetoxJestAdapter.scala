@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DetoxJestAdapter extends js.Object {
   var detox: detoxLib.detoxMod.Global.DetoxNs.Detox
   def afterAll(): js.Promise[scala.Unit]

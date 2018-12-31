@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_UrlDescription extends js.Object {
   /** Potential name of the thumbnail. */
   var description: js.UndefOr[java.lang.String] = js.undefined

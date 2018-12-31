@@ -18,6 +18,6 @@ trait Function
   /** Get a `ForeignFunction` of this function type. */
   def toFunction(buf: ffiLib.Buffer): ForeignFunction = js.native
   /** Get a `Callback` pointer of this function type. */
-  def toPointer(fn: js.Function1[/* repeated */js.Any, _]): ffiLib.Buffer = js.native
+  def toPointer(fn: js.Function1[/* repeated */ js.Any, _]): ffiLib.Buffer = js.native
 }
 

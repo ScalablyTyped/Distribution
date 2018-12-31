@@ -6,6 +6,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Dropped TsTypeTuple() */ 
-trait TreeNode extends js.Object
+- Dropped [string, std.Array<any>, std.Array<idyll-compiler.idyll-compiler.Node>] */ trait TreeNode extends js.Object
 

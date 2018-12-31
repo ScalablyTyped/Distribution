@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MongoInstanceDataT extends js.Object {
   var childProcess: nodeLib.childUnderscoreProcessMod.ChildProcess
   var dbName: java.lang.String

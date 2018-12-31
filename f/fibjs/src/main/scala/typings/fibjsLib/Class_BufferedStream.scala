@@ -57,15 +57,6 @@ class Class_BufferedStream protected () extends Class_Stream {
   	 * @async
   	 */
   def readLine(): java.lang.String = js.native
-  /**
-  	 * 
-  	 * @brief 读取一行文本，行结尾标识基于 EOL 属性的设置，缺省时，posix:\"\\n\"；windows:\"\\r\\n\"
-  	 * @param maxlen 指定此次读取的最大字符串，以 utf8 编码字节数为准，缺省不限制字符数
-  	 * @return 返回读取的文本字符串，若无数据可读，或者连接中断，则返回 null
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def readLine(maxlen: scala.Double): java.lang.String = js.native
   /**
   	 * 
@@ -77,15 +68,6 @@ class Class_BufferedStream protected () extends Class_Stream {
   	 * 
   	 */
   def readLines(): js.Array[_] = js.native
-  /**
-  	 * 
-  	 * @brief 以数组方式读取一组文本行，行结尾标识基于 EOL 属性的设置，缺省时，posix:\"\\n\"；windows:\"\\r\\n\"
-  	 * @param maxlines 指定此次读取的最大行数，缺省读取全部文本行
-  	 * @return 返回读取的文本行数组，若无数据可读，或者连接中断，空数组
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def readLines(maxlines: scala.Double): js.Array[_] = js.native
   /**
   	 * 
@@ -108,16 +90,6 @@ class Class_BufferedStream protected () extends Class_Stream {
   	 * @async
   	 */
   def readUntil(mk: java.lang.String): java.lang.String = js.native
-  /**
-  	 * 
-  	 * @brief 读取一个文本字符串，以指定的字节为结尾
-  	 * @param mk 指定结尾的字符串
-  	 * @param maxlen 指定此次读取的最大字符串，以 utf8 编码字节数为准，缺省不限制字符数
-  	 * @return 返回读取的文本字符串，若无数据可读，或者连接中断，则返回 null
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def readUntil(mk: java.lang.String, maxlen: scala.Double): java.lang.String = js.native
   /**
   	 * 

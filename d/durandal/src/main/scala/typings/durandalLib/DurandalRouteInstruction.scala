@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DurandalRouteInstruction extends js.Object {
   var config: DurandalRouteConfiguration
   var fragment: java.lang.String

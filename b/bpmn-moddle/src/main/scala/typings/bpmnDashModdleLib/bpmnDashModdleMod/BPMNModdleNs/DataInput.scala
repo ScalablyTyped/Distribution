@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataInput extends ItemAwareElement {
   var inputSetRef: InputSet
   var inputSetWithOptional: InputSet

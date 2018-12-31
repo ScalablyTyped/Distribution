@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Documentation extends BaseElement {
   var text: java.lang.String
   /**
-           * @default "text/plain"
-           */
+    * @default "text/plain"
+    */
   var textFormat: java.lang.String
 }
 

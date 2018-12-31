@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FieldInfo extends js.Object {
   var catalog: java.lang.String
   var charsetNr: scala.Double

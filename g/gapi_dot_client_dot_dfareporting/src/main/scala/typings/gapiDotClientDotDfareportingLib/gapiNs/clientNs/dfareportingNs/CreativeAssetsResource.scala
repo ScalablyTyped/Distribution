@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreativeAssetsResource extends js.Object {
   /** Inserts a new creative asset. */
   def insert(

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DateCreateOptions extends js.Object {
   @JSName("clone")
   var clone_FDateCreateOptions: js.UndefOr[scala.Boolean] = js.undefined

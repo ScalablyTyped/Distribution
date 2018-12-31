@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictMenuItemProps extends js.Object {
   /** A menu item can be active. */
   var active: js.UndefOr[scala.Boolean] = js.undefined
@@ -38,12 +37,12 @@ trait StrictMenuItemProps extends js.Object {
   /** Internal name of the MenuItem. */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
-     * Called on click. When passed, the component will render as an `a`
-     * tag by default instead of a `div`.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called on click. When passed, the component will render as an `a`
+    * tag by default instead of a `div`.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onClick: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 

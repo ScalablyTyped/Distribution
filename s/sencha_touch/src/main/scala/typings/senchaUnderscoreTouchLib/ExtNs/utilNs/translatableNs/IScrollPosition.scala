@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IScrollPosition extends IDom {
   /** [Method] Returns the value of useWrapper
   		* @returns Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActionSheetIOSOptions extends js.Object {
   var cancelButtonIndex: js.UndefOr[scala.Double] = js.undefined
   var destructiveButtonIndex: js.UndefOr[scala.Double] = js.undefined

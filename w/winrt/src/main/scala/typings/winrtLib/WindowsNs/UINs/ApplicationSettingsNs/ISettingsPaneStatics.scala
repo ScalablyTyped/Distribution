@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISettingsPaneStatics extends js.Object {
   var edge: SettingsEdgeLocation
   def getForCurrentView(): SettingsPane

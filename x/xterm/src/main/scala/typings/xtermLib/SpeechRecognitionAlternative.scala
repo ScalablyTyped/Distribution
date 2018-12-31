@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpeechRecognitionAlternative extends js.Object {
   val confidence: scala.Double
   val transcript: java.lang.String

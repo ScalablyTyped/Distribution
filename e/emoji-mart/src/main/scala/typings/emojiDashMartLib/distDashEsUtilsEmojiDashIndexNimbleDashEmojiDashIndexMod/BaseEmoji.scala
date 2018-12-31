@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseEmoji extends js.Object {
   var colons: java.lang.String
   /** Reverse mapping to keyof emoticons */

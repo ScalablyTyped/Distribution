@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestSpecification extends js.Object {
   /** An Android instrumentation test. */
   var androidInstrumentationTest: js.UndefOr[AndroidInstrumentationTest] = js.undefined
@@ -14,31 +13,31 @@ trait TestSpecification extends js.Object {
   /** An Android Application with a Test Loop */
   var androidTestLoop: js.UndefOr[AndroidTestLoop] = js.undefined
   /**
-               * Enables automatic Google account login.
-               * If set, the service will automatically generate a Google test account and
-               * add it to the device, before executing the test. Note that test accounts
-               * might be reused.
-               * Many applications show their full set of functionalities when an account is
-               * present on the device. Logging into the device with these generated
-               * accounts allows testing more functionalities.
-               * Default is false.
-               * Optional
-               */
+    * Enables automatic Google account login.
+    * If set, the service will automatically generate a Google test account and
+    * add it to the device, before executing the test. Note that test accounts
+    * might be reused.
+    * Many applications show their full set of functionalities when an account is
+    * present on the device. Logging into the device with these generated
+    * accounts allows testing more functionalities.
+    * Default is false.
+    * Optional
+    */
   var autoGoogleLogin: js.UndefOr[scala.Boolean] = js.undefined
   /** Disables performance metrics recording; may reduce test latency. */
   var disablePerformanceMetrics: js.UndefOr[scala.Boolean] = js.undefined
   /** Disables video recording; may reduce test latency. */
   var disableVideoRecording: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               * Test setup requirements e.g. files to install, bootstrap scripts
-               * Optional
-               */
+    * Test setup requirements e.g. files to install, bootstrap scripts
+    * Optional
+    */
   var testSetup: js.UndefOr[TestSetup] = js.undefined
   /**
-               * Max time a test execution is allowed to run before it is
-               * automatically cancelled.
-               * Optional, default is 5 min.
-               */
+    * Max time a test execution is allowed to run before it is
+    * automatically cancelled.
+    * Optional, default is 5 min.
+    */
   var testTimeout: js.UndefOr[java.lang.String] = js.undefined
 }
 

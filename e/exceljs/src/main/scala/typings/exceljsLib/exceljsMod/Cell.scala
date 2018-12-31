@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Cell extends Style {
   /**
   	 * Cells can define what values are valid or not and provide

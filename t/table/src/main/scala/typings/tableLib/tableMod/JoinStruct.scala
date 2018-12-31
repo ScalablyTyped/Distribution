@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JoinStruct extends js.Object {
   var bodyJoin: js.UndefOr[java.lang.String] = js.undefined
   var bodyLeft: js.UndefOr[java.lang.String] = js.undefined

@@ -130,19 +130,16 @@ object OptionNs extends js.Object {
   @JSName("Group")
   @js.native
   object GroupNs extends js.Object {
-    
     trait GetGroupsParams extends js.Object {
       var count: js.UndefOr[scala.Double] = js.undefined
       var offset: js.UndefOr[scala.Double] = js.undefined
       var order: js.UndefOr[backlogDashJsLib.backlogDashJsMod.OptionNs.Order] = js.undefined
     }
     
-    
     trait PatchGroupParams extends js.Object {
       var members: js.UndefOr[js.Array[java.lang.String]] = js.undefined
       var name: js.UndefOr[java.lang.String] = js.undefined
     }
-    
     
     trait PostGroupsParams extends js.Object {
       var members: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -154,14 +151,12 @@ object OptionNs extends js.Object {
   @JSName("Issue")
   @js.native
   object IssueNs extends js.Object {
-    
     trait GetIssueCommentsParams extends js.Object {
       var count: js.UndefOr[scala.Double] = js.undefined
       var maxId: js.UndefOr[scala.Double] = js.undefined
       var minId: js.UndefOr[scala.Double] = js.undefined
       var order: js.UndefOr[backlogDashJsLib.backlogDashJsMod.OptionNs.Order] = js.undefined
     }
-    
     
     trait GetIssuesParams
       extends /* customField_ */ org.scalablytyped.runtime.StringDictionary[js.Any] {
@@ -195,11 +190,9 @@ object OptionNs extends js.Object {
       var versionId: js.UndefOr[js.Array[scala.Double]] = js.undefined
     }
     
-    
     trait IssueCommentNotifications extends js.Object {
       var notifiedUserId: js.Array[scala.Double]
     }
-    
     
     trait LinkIssueSharedFilesParams extends js.Object {
       var fileId: js.Array[scala.Double]
@@ -208,11 +201,9 @@ object OptionNs extends js.Object {
     @js.native
     sealed trait ParentChildType extends js.Object
     
-    
     trait PatchIssueCommentParams extends js.Object {
       var content: java.lang.String
     }
-    
     
     trait PatchIssueParams
       extends /* customField_ */ org.scalablytyped.runtime.StringDictionary[js.Any] {
@@ -236,13 +227,11 @@ object OptionNs extends js.Object {
       var versionId: js.UndefOr[js.Array[scala.Double]] = js.undefined
     }
     
-    
     trait PostIssueCommentsParams extends js.Object {
       var attachmentId: js.UndefOr[js.Array[scala.Double]] = js.undefined
       var content: java.lang.String
       var notifiedUserId: js.UndefOr[js.Array[scala.Double]] = js.undefined
     }
-    
     
     trait PostIssueParams
       extends /* customField_ */ org.scalablytyped.runtime.StringDictionary[js.Any] {
@@ -303,12 +292,10 @@ object OptionNs extends js.Object {
   @JSName("Notification")
   @js.native
   object NotificationNs extends js.Object {
-    
     trait GetNotificationsCountParams extends js.Object {
       var alreadyRead: scala.Boolean
       var resourceAlreadyRead: scala.Boolean
     }
-    
     
     trait GetNotificationsParams extends js.Object {
       var count: js.UndefOr[scala.Double] = js.undefined
@@ -322,7 +309,6 @@ object OptionNs extends js.Object {
   @JSName("OAuth2")
   @js.native
   object OAuth2Ns extends js.Object {
-    
     trait Credentials extends js.Object {
       var clientId: java.lang.String
       var clientSecret: java.lang.String
@@ -333,16 +319,13 @@ object OptionNs extends js.Object {
   @JSName("Project")
   @js.native
   object ProjectNs extends js.Object {
-    
     trait DeleteIssueTypeParams extends js.Object {
       var substituteIssueTypeId: scala.Double
     }
     
-    
     trait DeleteProjectAdministrators extends js.Object {
       var userId: scala.Double
     }
-    
     
     trait DeleteProjectUsersParams extends js.Object {
       var userId: scala.Double
@@ -351,12 +334,10 @@ object OptionNs extends js.Object {
     @js.native
     sealed trait FieldType extends js.Object
     
-    
     trait GetProjectsParams extends js.Object {
       var all: js.UndefOr[scala.Boolean] = js.undefined
       var archived: js.UndefOr[scala.Boolean] = js.undefined
     }
-    
     
     trait GetSharedFilesParams extends js.Object {
       var count: js.UndefOr[scala.Double] = js.undefined
@@ -364,16 +345,13 @@ object OptionNs extends js.Object {
       var order: js.UndefOr[backlogDashJsLib.backlogDashJsMod.OptionNs.Order] = js.undefined
     }
     
-    
     trait PatchCategoriesParams extends js.Object {
       var name: java.lang.String
     }
     
-    
     trait PatchCustomFieldItemParams extends js.Object {
       var name: java.lang.String
     }
-    
     
     trait PatchCustomFieldParams extends js.Object {
       var applicableIssueTypes: js.UndefOr[js.Array[scala.Double]] = js.undefined
@@ -381,7 +359,6 @@ object OptionNs extends js.Object {
       var name: js.UndefOr[java.lang.String] = js.undefined
       var required: js.UndefOr[scala.Boolean] = js.undefined
     }
-    
     
     trait PatchCustomFieldWithDateParams extends PatchCustomFieldParams {
       var initialDate: js.UndefOr[java.lang.String] = js.undefined
@@ -391,13 +368,11 @@ object OptionNs extends js.Object {
       var min: js.UndefOr[java.lang.String] = js.undefined
     }
     
-    
     trait PatchCustomFieldWithListParams extends PatchCustomFieldParams {
       var allowAddItem: js.UndefOr[scala.Boolean] = js.undefined
       var allowInput: js.UndefOr[scala.Boolean] = js.undefined
       var items: js.UndefOr[js.Array[java.lang.String]] = js.undefined
     }
-    
     
     trait PatchCustomFieldWithNumericParams extends PatchCustomFieldParams {
       var initialValue: js.UndefOr[scala.Double] = js.undefined
@@ -406,12 +381,10 @@ object OptionNs extends js.Object {
       var unit: js.UndefOr[java.lang.String] = js.undefined
     }
     
-    
     trait PatchIssueTypeParams extends js.Object {
       var color: js.UndefOr[IssueTypeColor] = js.undefined
       var name: js.UndefOr[java.lang.String] = js.undefined
     }
-    
     
     trait PatchProjectParams extends js.Object {
       var archived: js.UndefOr[scala.Boolean] = js.undefined
@@ -423,7 +396,6 @@ object OptionNs extends js.Object {
       var textFormattingRule: js.UndefOr[TextFormattingRule] = js.undefined
     }
     
-    
     trait PatchVersionsParams extends js.Object {
       var archived: js.UndefOr[scala.Boolean] = js.undefined
       var description: js.UndefOr[java.lang.String] = js.undefined
@@ -431,7 +403,6 @@ object OptionNs extends js.Object {
       var releaseDueDate: js.UndefOr[java.lang.String] = js.undefined
       var startDate: js.UndefOr[java.lang.String] = js.undefined
     }
-    
     
     trait PatchWebhookParams extends js.Object {
       var activityTypeIds: js.UndefOr[js.Array[scala.Double]] = js.undefined
@@ -441,16 +412,13 @@ object OptionNs extends js.Object {
       var name: js.UndefOr[java.lang.String] = js.undefined
     }
     
-    
     trait PostCategoriesParams extends js.Object {
       var name: java.lang.String
     }
     
-    
     trait PostCustomFieldItemParams extends js.Object {
       var name: java.lang.String
     }
-    
     
     trait PostCustomFieldParams extends js.Object {
       var applicableIssueTypes: js.UndefOr[js.Array[scala.Double]] = js.undefined
@@ -460,7 +428,6 @@ object OptionNs extends js.Object {
       var typeId: FieldType
     }
     
-    
     trait PostCustomFieldWithDateParams extends PostCustomFieldParams {
       var initialDate: js.UndefOr[java.lang.String] = js.undefined
       var initialShift: js.UndefOr[scala.Double] = js.undefined
@@ -469,13 +436,11 @@ object OptionNs extends js.Object {
       var min: js.UndefOr[java.lang.String] = js.undefined
     }
     
-    
     trait PostCustomFieldWithListParams extends PostCustomFieldParams {
       var allowAddItem: js.UndefOr[scala.Boolean] = js.undefined
       var allowInput: js.UndefOr[scala.Boolean] = js.undefined
       var items: js.UndefOr[js.Array[java.lang.String]] = js.undefined
     }
-    
     
     trait PostCustomFieldWithNumericParams extends PostCustomFieldParams {
       var initialValue: js.UndefOr[scala.Double] = js.undefined
@@ -484,17 +449,14 @@ object OptionNs extends js.Object {
       var unit: js.UndefOr[java.lang.String] = js.undefined
     }
     
-    
     trait PostIssueTypeParams extends js.Object {
       var color: IssueTypeColor
       var name: java.lang.String
     }
     
-    
     trait PostProjectAdministrators extends js.Object {
       var userId: scala.Double
     }
-    
     
     trait PostProjectParams extends js.Object {
       var chartEnabled: scala.Boolean
@@ -505,7 +467,6 @@ object OptionNs extends js.Object {
       var textFormattingRule: TextFormattingRule
     }
     
-    
     trait PostStarParams extends js.Object {
       var commentId: js.UndefOr[scala.Double] = js.undefined
       var issueId: js.UndefOr[scala.Double] = js.undefined
@@ -514,14 +475,12 @@ object OptionNs extends js.Object {
       var wikiId: js.UndefOr[scala.Double] = js.undefined
     }
     
-    
     trait PostVersionsParams extends js.Object {
       var description: java.lang.String
       var name: java.lang.String
       var releaseDueDate: java.lang.String
       var startDate: java.lang.String
     }
-    
     
     trait PostWebhookParams extends js.Object {
       var activityTypeIds: js.UndefOr[js.Array[scala.Double]] = js.undefined
@@ -584,14 +543,12 @@ object OptionNs extends js.Object {
   @JSName("PullRequest")
   @js.native
   object PullRequestNs extends js.Object {
-    
     trait GetPullRequestCommentsParams extends js.Object {
       var count: js.UndefOr[scala.Double] = js.undefined
       var maxId: js.UndefOr[scala.Double] = js.undefined
       var minId: js.UndefOr[scala.Double] = js.undefined
       var order: js.UndefOr[backlogDashJsLib.backlogDashJsMod.OptionNs.Order] = js.undefined
     }
-    
     
     trait GetPullRequestsParams extends js.Object {
       var assigneeId: js.UndefOr[js.Array[scala.Double]] = js.undefined
@@ -602,11 +559,9 @@ object OptionNs extends js.Object {
       var statusId: js.UndefOr[js.Array[scala.Double]] = js.undefined
     }
     
-    
     trait PatchPullRequestCommentsParams extends js.Object {
       var content: java.lang.String
     }
-    
     
     trait PatchPullRequestParams extends js.Object {
       var assigneeId: js.UndefOr[scala.Double] = js.undefined
@@ -617,12 +572,10 @@ object OptionNs extends js.Object {
       var summary: js.UndefOr[java.lang.String] = js.undefined
     }
     
-    
     trait PostPullRequestCommentsParams extends js.Object {
       var content: java.lang.String
       var notifiedUserId: js.UndefOr[js.Array[scala.Double]] = js.undefined
     }
-    
     
     trait PostPullRequestParams extends js.Object {
       var assigneeId: js.UndefOr[scala.Double] = js.undefined
@@ -640,7 +593,6 @@ object OptionNs extends js.Object {
   @JSName("Space")
   @js.native
   object SpaceNs extends js.Object {
-    
     trait GetActivitiesParams extends js.Object {
       var activityTypeId: js.UndefOr[js.Array[backlogDashJsLib.backlogDashJsMod.OptionNs.ActivityType]] = js.undefined
       var count: js.UndefOr[scala.Double] = js.undefined
@@ -648,7 +600,6 @@ object OptionNs extends js.Object {
       var minId: js.UndefOr[scala.Double] = js.undefined
       var order: js.UndefOr[backlogDashJsLib.backlogDashJsMod.OptionNs.Order] = js.undefined
     }
-    
     
     trait PutSpaceNotificationParams extends js.Object {
       var content: java.lang.String
@@ -659,13 +610,11 @@ object OptionNs extends js.Object {
   @JSName("User")
   @js.native
   object UserNs extends js.Object {
-    
     trait GetRecentlyViewedParams extends js.Object {
       var count: js.UndefOr[scala.Double] = js.undefined
       var offset: js.UndefOr[scala.Double] = js.undefined
       var order: js.UndefOr[backlogDashJsLib.backlogDashJsMod.OptionNs.Order] = js.undefined
     }
-    
     
     trait GetUserActivitiesParams extends js.Object {
       var activityTypeId: js.UndefOr[js.Array[backlogDashJsLib.backlogDashJsMod.OptionNs.ActivityType]] = js.undefined
@@ -675,12 +624,10 @@ object OptionNs extends js.Object {
       var order: js.UndefOr[backlogDashJsLib.backlogDashJsMod.OptionNs.Order] = js.undefined
     }
     
-    
     trait GetUserStarsCountParams extends js.Object {
       var since: js.UndefOr[java.lang.String] = js.undefined
       var until: js.UndefOr[java.lang.String] = js.undefined
     }
-    
     
     trait GetUserStarsParams extends js.Object {
       var count: js.UndefOr[scala.Double] = js.undefined
@@ -689,14 +636,12 @@ object OptionNs extends js.Object {
       var order: js.UndefOr[backlogDashJsLib.backlogDashJsMod.OptionNs.Order] = js.undefined
     }
     
-    
     trait PatchUserParams extends js.Object {
       var mailAddress: js.UndefOr[java.lang.String] = js.undefined
       var name: js.UndefOr[java.lang.String] = js.undefined
       var password: js.UndefOr[java.lang.String] = js.undefined
       var roleType: js.UndefOr[RoleType] = js.undefined
     }
-    
     
     trait PostUserParams extends js.Object {
       var mailAddress: java.lang.String
@@ -750,7 +695,6 @@ object OptionNs extends js.Object {
   @JSName("Wiki")
   @js.native
   object WikiNs extends js.Object {
-    
     trait GetWikisHistoryParams extends js.Object {
       var count: js.UndefOr[scala.Double] = js.undefined
       var maxId: js.UndefOr[scala.Double] = js.undefined
@@ -758,13 +702,11 @@ object OptionNs extends js.Object {
       var order: js.UndefOr[backlogDashJsLib.backlogDashJsMod.OptionNs.Order] = js.undefined
     }
     
-    
     trait PatchWikiParams extends js.Object {
       var content: js.UndefOr[java.lang.String] = js.undefined
       var mailNotify: js.UndefOr[scala.Boolean] = js.undefined
       var name: js.UndefOr[java.lang.String] = js.undefined
     }
-    
     
     trait PostWikiParams extends js.Object {
       var content: java.lang.String

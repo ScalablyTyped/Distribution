@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait feedEntry extends js.Object {
   var categories: js.Array[java.lang.String]
   var content: java.lang.String

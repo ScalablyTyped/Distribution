@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class CssSelector () extends js.Object {
   /**
-       * The selectors are encoded in pairs where:
-       * - even locations are attribute names
-       * - odd locations are attribute values.
-       *
-       * Example:
-       * Selector: `[key1=value1][key2]` would parse to:
-       * ```
-       * ['key1', 'value1', 'key2', '']
-       * ```
-       */
+    * The selectors are encoded in pairs where:
+    * - even locations are attribute names
+    * - odd locations are attribute values.
+    *
+    * Example:
+    * Selector: `[key1=value1][key2]` would parse to:
+    * ```
+    * ['key1', 'value1', 'key2', '']
+    * ```
+    */
   var attrs: js.Array[java.lang.String] = js.native
   var classNames: js.Array[java.lang.String] = js.native
   var element: java.lang.String | scala.Null = js.native

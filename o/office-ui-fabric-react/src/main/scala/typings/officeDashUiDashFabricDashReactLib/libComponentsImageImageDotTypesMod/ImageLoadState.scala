@@ -12,32 +12,32 @@ sealed trait ImageLoadState extends js.Object
 @js.native
 object ImageLoadState extends js.Object {
   /**
-       * An error has been encountered while loading the image.
-       */
+    * An error has been encountered while loading the image.
+    */
   @js.native
   sealed trait error
     extends officeDashUiDashFabricDashReactLib.libComponentsImageImageDotTypesMod.ImageLoadState
   
   /**
-       * Deprecated at v1.3.6, to replace the src in case of errors, use `onLoadingStateChange` instead
-       * and rerender the Image with a difference src.
-       * @deprecated Use `onLoadingStateChange` instead
-       * and rerender the Image with a difference src.
-       */
+    * Deprecated at v1.3.6, to replace the src in case of errors, use `onLoadingStateChange` instead
+    * and rerender the Image with a difference src.
+    * @deprecated Use `onLoadingStateChange` instead
+    * and rerender the Image with a difference src.
+    */
   @js.native
   sealed trait errorLoaded
     extends officeDashUiDashFabricDashReactLib.libComponentsImageImageDotTypesMod.ImageLoadState
   
   /**
-       * The image has been loaded successfully.
-       */
+    * The image has been loaded successfully.
+    */
   @js.native
   sealed trait loaded
     extends officeDashUiDashFabricDashReactLib.libComponentsImageImageDotTypesMod.ImageLoadState
   
   /**
-       * The image has not yet been loaded, and there is no error yet.
-       */
+    * The image has not yet been loaded, and there is no error yet.
+    */
   @js.native
   sealed trait notLoaded
     extends officeDashUiDashFabricDashReactLib.libComponentsImageImageDotTypesMod.ImageLoadState

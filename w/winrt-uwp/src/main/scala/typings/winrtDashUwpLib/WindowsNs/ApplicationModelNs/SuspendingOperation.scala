@@ -12,9 +12,9 @@ abstract class SuspendingOperation () extends js.Object {
   /** Gets the time remaining before a delayed app suspending operation continues. */
   var deadline: stdLib.Date = js.native
   /**
-               * Requests that the app suspending operation be delayed.
-               * @return The suspension deferral.
-               */
+    * Requests that the app suspending operation be delayed.
+    * @return The suspension deferral.
+    */
   def getDeferral(): SuspendingDeferral = js.native
 }
 

@@ -8,9 +8,10 @@ import scala.scalajs.js.annotation._
 /** Represents when and how often an appointment occurs. */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentRecurrence")
 @js.native
+/** Initializes a new instance of the AppointmentRecurrence class. */
 class AppointmentRecurrence () extends js.Object {
   var calendarIdentifier: js.Any = js.native
-   /* unmapped type *//** Gets or sets the day on which an appointment occurs. Day is of type UInt32 , has a default value of 1, and can be a value from 1 to 31. */
+   /* unmapped type */ /** Gets or sets the day on which an appointment occurs. Day is of type UInt32 , has a default value of 1, and can be a value from 1 to 31. */
   var day: scala.Double = js.native
   /** Gets or sets a combination of AppointmentDaysOfWeek -typed values for all the days of the week on which an appointment occurs. */
   var daysOfWeek: AppointmentDaysOfWeek = js.native

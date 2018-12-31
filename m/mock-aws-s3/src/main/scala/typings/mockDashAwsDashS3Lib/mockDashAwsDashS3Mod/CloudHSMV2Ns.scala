@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object CloudHSMV2Ns extends js.Object {
   @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class Types ()
     extends awsDashSdkLib.awsDashSdkMod.CloudHSMV2Ns.Types {
-    /**
-       * Constructs a service object. This object has one method for each API operation.
-       */
     def this(options: awsDashSdkLib.clientsCloudhsmv2Mod.CloudHSMV2Ns.ClientConfiguration) = this()
   }
   

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatePickerProps extends js.Object {
   var autoFocus: js.UndefOr[scala.Boolean] = js.undefined
   var calendarContainer: js.UndefOr[js.Any] = js.undefined

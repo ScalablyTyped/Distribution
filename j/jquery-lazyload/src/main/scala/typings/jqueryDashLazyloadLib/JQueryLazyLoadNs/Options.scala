@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var appear: js.UndefOr[
     (js.Function2[/* elementsLeft */ scala.Double, /* options */ this.type, scala.Unit]) | scala.Null

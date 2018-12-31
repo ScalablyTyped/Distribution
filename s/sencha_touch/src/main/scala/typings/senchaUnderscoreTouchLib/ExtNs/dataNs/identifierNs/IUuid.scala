@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IUuid extends ISimple {
   /** [Method] Returns the value of id
   		* @returns Object

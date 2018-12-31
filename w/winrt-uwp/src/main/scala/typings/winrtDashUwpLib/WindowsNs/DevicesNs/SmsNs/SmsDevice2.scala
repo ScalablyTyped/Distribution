@@ -31,10 +31,10 @@ abstract class SmsDevice2 () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[SmsDevice2, _]
   ): scala.Unit = js.native
   /**
-                   * Estimates the transmitted message length of the specified text message. The estimate can be useful to clients that want to give an indication of how many messages will be sent on the network to carry the text of the full message.
-                   * @param message A reference to the SMS text message to measure.
-                   * @return A reference to an SmsEncodedLength structure that is populated with the length information.
-                   */
+    * Estimates the transmitted message length of the specified text message. The estimate can be useful to clients that want to give an indication of how many messages will be sent on the network to carry the text of the full message.
+    * @param message A reference to the SMS text message to measure.
+    * @return A reference to an SmsEncodedLength structure that is populated with the length information.
+    */
   def calculateLength(message: ISmsMessageBase): SmsEncodedLength = js.native
   /** Sets an event handler to be called when the status of the SMS device changes. */
   def ondevicestatuschanged(ev: js.Any with winrtDashUwpLib.WindowsNs.WinRTEvent[SmsDevice2]): scala.Unit = js.native
@@ -45,10 +45,10 @@ abstract class SmsDevice2 () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[SmsDevice2, _]
   ): scala.Unit = js.native
   /**
-                   * Asynchronously sends a message using the SMS device. The method is asynchronous because the send operation might not occur instantaneously. The message operation object is returned immediately.
-                   * @param message A reference to an object that implements the ISmsMessageBase interface. The message can be in text or binary format.
-                   * @return The message operation object.
-                   */
+    * Asynchronously sends a message using the SMS device. The method is asynchronous because the send operation might not occur instantaneously. The message operation object is returned immediately.
+    * @param message A reference to an object that implements the ISmsMessageBase interface. The message can be in text or binary format.
+    * @return The message operation object.
+    */
   def sendMessageAndGetResultAsync(message: ISmsMessageBase): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[SmsSendMessageResult] = js.native
 }
 
@@ -57,26 +57,26 @@ abstract class SmsDevice2 () extends js.Object {
 @js.native
 object SmsDevice2 extends js.Object {
   /**
-                   * Creates an instance of SmsDevice2 for a device that received an SMS message.
-                   * @param deviceId A string representation of the device ID of the device that received an SMS message.
-                   * @return An instance of SmsDevice2 initialized for the device with the given ID.
-                   */
+    * Creates an instance of SmsDevice2 for a device that received an SMS message.
+    * @param deviceId A string representation of the device ID of the device that received an SMS message.
+    * @return An instance of SmsDevice2 initialized for the device with the given ID.
+    */
   def fromId(deviceId: java.lang.String): winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsDevice2 = js.native
   /**
-                   * Creates an instance of SmsDevice2 for a device, given the device ID of the parent device.
-                   * @param parentDeviceId The device ID of the parent device.
-                   * @return An instance of SmsDevice2 initialized for the device with the given parent ID.
-                   */
+    * Creates an instance of SmsDevice2 for a device, given the device ID of the parent device.
+    * @param parentDeviceId The device ID of the parent device.
+    * @return An instance of SmsDevice2 initialized for the device with the given parent ID.
+    */
   def fromParentId(parentDeviceId: java.lang.String): winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsDevice2 = js.native
   /**
-                   * Creates an instance of SmsDevice2 associated with the default SMS device.
-                   * @return An instance of SmsDevice2 initialized for the default SMS device.
-                   */
+    * Creates an instance of SmsDevice2 associated with the default SMS device.
+    * @return An instance of SmsDevice2 initialized for the default SMS device.
+    */
   def getDefault(): winrtDashUwpLib.WindowsNs.DevicesNs.SmsNs.SmsDevice2 = js.native
   /**
-                   * Retrieves the class selection string that can be used to enumerate SMS devices.
-                   * @return A reference to an Advanced Query Syntax (AQS) string that identifies an SMS device.
-                   */
+    * Retrieves the class selection string that can be used to enumerate SMS devices.
+    * @return A reference to an Advanced Query Syntax (AQS) string that identifies an SMS device.
+    */
   def getDeviceSelector(): java.lang.String = js.native
 }
 

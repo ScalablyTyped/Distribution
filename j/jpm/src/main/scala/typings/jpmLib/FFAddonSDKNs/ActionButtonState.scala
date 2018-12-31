@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActionButtonState extends js.Object {
   var badge: java.lang.String | scala.Double
   var badgeColor: java.lang.String

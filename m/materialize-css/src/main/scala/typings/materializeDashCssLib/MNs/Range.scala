@@ -14,24 +14,18 @@ class Range ()
 @js.native
 object Range extends js.Object {
   /**
-           * Get Instance
-           */
+    * Get Instance
+    */
   def getInstance(elem: stdLib.Element): materializeDashCssLib.MNs.Range = js.native
   /**
-           * Init Ranges
-           */
+    * Init Ranges
+    */
   def init(els: materializeDashCssLib.MElements): js.Array[materializeDashCssLib.MNs.Range] = js.native
-  /**
-           * Init Ranges
-           */
   def init(els: materializeDashCssLib.MElements, options: stdLib.Partial[js.UndefOr[scala.Nothing]]): js.Array[materializeDashCssLib.MNs.Range] = js.native
   /**
-           * Init Range
-           */
+    * Init Range
+    */
   def init(els: stdLib.Element): materializeDashCssLib.MNs.Range = js.native
-  /**
-           * Init Range
-           */
   def init(els: stdLib.Element, options: stdLib.Partial[js.UndefOr[scala.Nothing]]): materializeDashCssLib.MNs.Range = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Font extends TypeDerived {
   var isBold: scala.Boolean
   var isItalic: scala.Boolean

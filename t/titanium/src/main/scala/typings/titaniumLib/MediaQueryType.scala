@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * A specifier for a media library query. By default, filters perform an exact match.
- */
-
+  * A specifier for a media library query. By default, filters perform an exact match.
+  */
 trait MediaQueryType extends js.Object {
   /**
   	 * The album artist to filter on. Value should be a String.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TaskInputDefinitionBase extends js.Object {
   var defaultValue: java.lang.String
   var groupName: java.lang.String

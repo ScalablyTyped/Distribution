@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReportResult extends js.Object {
   var browser: Anon_Name
   var cookies: scala.Boolean

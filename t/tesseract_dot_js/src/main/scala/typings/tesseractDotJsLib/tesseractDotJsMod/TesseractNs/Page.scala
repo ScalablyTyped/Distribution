@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Page extends js.Object {
   var blocks: js.Array[Block]
   var confidence: scala.Double

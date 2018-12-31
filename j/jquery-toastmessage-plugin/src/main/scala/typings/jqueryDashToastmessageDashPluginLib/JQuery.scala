@@ -22,7 +22,6 @@ trait JQuery extends js.Object {
     command: jqueryDashToastmessageDashPluginLib.jqueryDashToastmessageDashPluginLibStrings.removeToast,
     toast: JQuery
   ): scala.Unit = js.native
-  /** removes the specified toast and returns it */
   @JSName("toastmessage")
   def toastmessage_removeToast(
     command: jqueryDashToastmessageDashPluginLib.jqueryDashToastmessageDashPluginLibStrings.removeToast,

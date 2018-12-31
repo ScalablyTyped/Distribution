@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PGDOWN extends js.Object {
   var DOWN: scala.Double
   var LEFT: scala.Double

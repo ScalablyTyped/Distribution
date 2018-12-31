@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DescribeMetadataResult extends js.Object {
   var metadataObjects: js.Array[MetadataObject]
   var organizationNamespace: java.lang.String

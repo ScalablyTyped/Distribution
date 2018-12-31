@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Basic column props */
-
 trait Basics extends js.Object {
   /** Used to render aggregated cells. Defaults to a comma separated list of values. */
   var Aggregated: reactDashTableLib.reactDashTableMod.TableCellRenderer

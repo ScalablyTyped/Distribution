@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UriComponents extends js.Object {
   var authority: java.lang.String
   var fragment: java.lang.String

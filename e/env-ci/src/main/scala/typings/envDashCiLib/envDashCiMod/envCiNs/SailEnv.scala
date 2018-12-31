@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SailEnv extends CiEnvBase {
   var branch: js.UndefOr[java.lang.String] = js.undefined
   var commit: java.lang.String

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "Contacts")
 @js.native
 object ContactsNs extends js.Object {
-  
   trait Address extends js.Object {
     var city: java.lang.String
     var country: java.lang.String
@@ -24,9 +23,8 @@ object ContactsNs extends js.Object {
   
   // Types
   /**
-       * A set of fields that define information about a single entity.
-       */
-  
+    * A set of fields that define information about a single entity.
+    */
   trait Contact extends js.Object {
     var addresses: js.UndefOr[js.Array[Address]] = js.undefined
     var birthday: js.UndefOr[ContactDate] = js.undefined
@@ -49,8 +47,8 @@ object ContactsNs extends js.Object {
     var nameSuffix: js.UndefOr[java.lang.String] = js.undefined
     var nickname: js.UndefOr[java.lang.String] = js.undefined
     /**
-             * iOS only
-             */
+      * iOS only
+      */
     var nonGregorianBirthday: js.UndefOr[ContactDate] = js.undefined
     var note: js.UndefOr[java.lang.String] = js.undefined
     var phoneNumbers: js.UndefOr[js.Array[PhoneNumber]] = js.undefined
@@ -60,12 +58,11 @@ object ContactsNs extends js.Object {
     var rawImage: js.UndefOr[Image] = js.undefined
     var relationships: js.UndefOr[js.Array[Relationship]] = js.undefined
     /**
-             * iOS only
-             */
+      * iOS only
+      */
     var socialProfiles: js.UndefOr[js.Array[SocialProfile]] = js.undefined
     var urlAddresses: js.UndefOr[js.Array[UrlAddress]] = js.undefined
   }
-  
   
   trait ContactDate extends js.Object {
     var day: scala.Double
@@ -77,9 +74,8 @@ object ContactsNs extends js.Object {
   }
   
   /**
-       * Used to query contacts from the user's device
-       */
-  
+    * Used to query contacts from the user's device
+    */
   trait ContactQuery extends js.Object {
     /** iOS Only */
     var containerID: js.UndefOr[java.lang.String] = js.undefined
@@ -97,40 +93,36 @@ object ContactsNs extends js.Object {
     var sort: js.UndefOr[SortType] = js.undefined
   }
   
-  
   trait ContactResponse extends js.Object {
     var data: js.Array[Contact]
     /**
-             * This will be true if there are more contacts to retrieve beyond what is returned
-             */
+      * This will be true if there are more contacts to retrieve beyond what is returned
+      */
     var hasNextPage: scala.Boolean
     /**
-             * `true` if there are previous contacts that weren't retrieved due to `pageOffset`
-             */
+      * `true` if there are previous contacts that weren't retrieved due to `pageOffset`
+      */
     var hasPreviousPage: scala.Boolean
   }
   
   /**
-       * A parent to contacts and groups.
-       * iOS Only
-       */
-  
+    * A parent to contacts and groups.
+    * iOS Only
+    */
   trait Container extends js.Object {
     var id: java.lang.String
     var name: java.lang.String
   }
   
   /**
-       * Used to query native contact containers.
-       * iOS Only
-       */
-  
+    * Used to query native contact containers.
+    * iOS Only
+    */
   trait ContainerQuery extends js.Object {
     var contactId: js.UndefOr[java.lang.String] = js.undefined
     var containerId: js.UndefOr[java.lang.String] = js.undefined
     var groupId: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait Email extends js.Object {
     var email: java.lang.String
@@ -140,9 +132,8 @@ object ContactsNs extends js.Object {
   }
   
   /**
-       * Denotes the functionality of a native contact form
-       */
-  
+    * Denotes the functionality of a native contact form
+    */
   trait FormOptions extends js.Object {
     var allowsActions: js.UndefOr[scala.Boolean] = js.undefined
     var allowsEditing: js.UndefOr[scala.Boolean] = js.undefined
@@ -157,20 +148,18 @@ object ContactsNs extends js.Object {
   }
   
   /**
-       * A parent to contacts. A contact can belong to multiple groups.
-       * iOS Only
-       */
-  
+    * A parent to contacts. A contact can belong to multiple groups.
+    * iOS Only
+    */
   trait Group extends js.Object {
     var id: java.lang.String
     var name: java.lang.String
   }
   
   /**
-       * Used to query native contact groups.
-       * iOS Only
-       */
-  
+    * Used to query native contact groups.
+    * iOS Only
+    */
   trait GroupQuery extends js.Object {
     var containerId: js.UndefOr[java.lang.String] = js.undefined
     var groupId: js.UndefOr[java.lang.String] = js.undefined
@@ -178,28 +167,26 @@ object ContactsNs extends js.Object {
   }
   
   /**
-       * Information regarding thumbnail images
-       */
-  
+    * Information regarding thumbnail images
+    */
   trait Image extends js.Object {
     /**
-             * Avoid using Base 64 in React Native
-             * iOS only
-             */
+      * Avoid using Base 64 in React Native
+      * iOS only
+      */
     var base64: js.UndefOr[java.lang.String] = js.undefined
     /**
-             * iOS only
-             * In Android you can get dimensions using `ReactNative.Image.getSize`
-             */
+      * iOS only
+      * In Android you can get dimensions using `ReactNative.Image.getSize`
+      */
     var height: js.UndefOr[scala.Double] = js.undefined
     var uri: java.lang.String
     /**
-             * iOS only
-             * In Android you can get dimensions using `ReactNative.Image.getSize`
-             */
+      * iOS only
+      * In Android you can get dimensions using `ReactNative.Image.getSize`
+      */
     var width: js.UndefOr[scala.Double] = js.undefined
   }
-  
   
   trait InstantMessageAddress extends js.Object {
     var id: java.lang.String
@@ -208,7 +195,6 @@ object ContactsNs extends js.Object {
     var service: java.lang.String
     var username: java.lang.String
   }
-  
   
   trait PhoneNumber extends js.Object {
     var countryCode: java.lang.String
@@ -219,7 +205,6 @@ object ContactsNs extends js.Object {
     var number: java.lang.String
   }
   
-  
   trait Relationship extends js.Object {
     var id: java.lang.String
     var label: java.lang.String
@@ -227,9 +212,8 @@ object ContactsNs extends js.Object {
   }
   
   /**
-       * iOS only
-       */
-  
+    * iOS only
+    */
   trait SocialProfile extends js.Object {
     var id: java.lang.String
     var label: java.lang.String
@@ -240,7 +224,6 @@ object ContactsNs extends js.Object {
     var username: java.lang.String
   }
   
-  
   trait UrlAddress extends js.Object {
     var id: java.lang.String
     var label: java.lang.String
@@ -249,116 +232,90 @@ object ContactsNs extends js.Object {
   
   // iOS Only - temporary
   /**
-       * Creates a new contact and adds it to the system.
-       * iOS Only - temporary
-       */
+    * Creates a new contact and adds it to the system.
+    * iOS Only - temporary
+    */
   def addContactAsync(contact: Contact): js.Promise[java.lang.String] = js.native
-  // iOS Only - temporary
-  /**
-       * Creates a new contact and adds it to the system.
-       * iOS Only - temporary
-       */
   def addContactAsync(contact: Contact, containerId: java.lang.String): js.Promise[java.lang.String] = js.native
   /**
-       * Add a contact as a member to a group. A contact can be a member of multiple groups.
-       * iOS Only
-       */
+    * Add a contact as a member to a group. A contact can be a member of multiple groups.
+    * iOS Only
+    */
   def addExistingContactToGroupAsync(contactId: java.lang.String, groupId: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       * Add a group to a container.
-       * iOS Only
-       */
+    * Add a group to a container.
+    * iOS Only
+    */
   def addExistingGroupToContainerAsync(groupId: java.lang.String, containerId: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       * Create a group with a name, and add it to a container. If the container is undefined, the default container will be targeted.
-       * iOS Only
-       */
+    * Create a group with a name, and add it to a container. If the container is undefined, the default container will be targeted.
+    * iOS Only
+    */
   def createGroupAsync(groupName: java.lang.String): js.Promise[java.lang.String] = js.native
-  /**
-       * Create a group with a name, and add it to a container. If the container is undefined, the default container will be targeted.
-       * iOS Only
-       */
   def createGroupAsync(groupName: java.lang.String, containerId: java.lang.String): js.Promise[java.lang.String] = js.native
   /**
-       * Returns a contact matching the input id. Used for gathering precise data about a contact.
-       */
+    * Returns a contact matching the input id. Used for gathering precise data about a contact.
+    */
   def getContactByIdAsync(contactId: java.lang.String): js.Promise[Contact] = js.native
-  /**
-       * Returns a contact matching the input id. Used for gathering precise data about a contact.
-       */
   def getContactByIdAsync(contactId: java.lang.String, fields: js.Array[Field]): js.Promise[Contact] = js.native
   // Methods
   /**
-       * Return a list of contacts that fit a given criteria. You can get all of the contacts by passing no criteria.
-       */
+    * Return a list of contacts that fit a given criteria. You can get all of the contacts by passing no criteria.
+    */
   def getContactsAsync(): js.Promise[ContactResponse] = js.native
-  // Methods
-  /**
-       * Return a list of contacts that fit a given criteria. You can get all of the contacts by passing no criteria.
-       */
   def getContactsAsync(contactQuery: ContactQuery): js.Promise[ContactResponse] = js.native
   /**
-       * Query a list of system containers.
-       * iOS Only
-       */
+    * Query a list of system containers.
+    * iOS Only
+    */
   def getContainersAsync(containerQuery: ContainerQuery): js.Promise[js.Array[Container]] = js.native
   /**
-       * Get the default container's ID.
-       * iOS Only
-       */
+    * Get the default container's ID.
+    * iOS Only
+    */
   def getDefaultContainerIdAsync(): js.Promise[java.lang.String] = js.native
   /**
-       * Query and return a list of system groups.
-       * iOS Only
-       */
+    * Query and return a list of system groups.
+    * iOS Only
+    */
   def getGroupsAsync(query: GroupQuery): js.Promise[js.Array[Group]] = js.native
   // iOS Only
   /**
-       * Present a native form for manipulating contacts.
-       * iOS Only
-       */
+    * Present a native form for manipulating contacts.
+    * iOS Only
+    */
   def presentFormAsync(contactId: java.lang.String): js.Promise[scala.Unit] = js.native
-  // iOS Only
-  /**
-       * Present a native form for manipulating contacts.
-       * iOS Only
-       */
   def presentFormAsync(contactId: java.lang.String, contact: Contact): js.Promise[scala.Unit] = js.native
-  // iOS Only
-  /**
-       * Present a native form for manipulating contacts.
-       * iOS Only
-       */
   def presentFormAsync(contactId: java.lang.String, contact: Contact, formOptions: FormOptions): js.Promise[scala.Unit] = js.native
   /**
-       * Delete a contact from the system.
-       * iOS Only - temporary
-       */
+    * Delete a contact from the system.
+    * iOS Only - temporary
+    */
   def removeContactAsync(contactId: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       * Remove a contact's membership from a given group. This will not delete the contact.
-       * iOS Only
-       */
+    * Remove a contact's membership from a given group. This will not delete the contact.
+    * iOS Only
+    */
   def removeContactFromGroupAsync(contactId: java.lang.String, groupId: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       * Delete a group from the device.
-       * iOS Only
-       */
+    * Delete a group from the device.
+    * iOS Only
+    */
   def removeGroupAsync(groupId: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       * Mutate the information of an existing contact.
-       * iOS Only - temporary
-       */
+    * Mutate the information of an existing contact.
+    * iOS Only - temporary
+    */
   def updateContactAsync(contact: Contact): js.Promise[java.lang.String] = js.native
   /**
-       * Change the name of an existing group.
-       * iOS Only
-       */
+    * Change the name of an existing group.
+    * iOS Only
+    */
   def updateGroupNameAsync(groupName: java.lang.String, groupId: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       * Query a set of contacts and write them to a local uri that can be used for sharing with `ReactNative.Share`.
-       * iOS Only - temporary
-       */
+    * Query a set of contacts and write them to a local uri that can be used for sharing with `ReactNative.Share`.
+    * iOS Only - temporary
+    */
   def writeContactToFileAsync(contactQuery: ContactQuery): js.Promise[java.lang.String] = js.native
   @JSName("CalendarFormats")
   @js.native
@@ -374,8 +331,8 @@ object ContactsNs extends js.Object {
   }
   
   /**
-       * iOS Only
-       */
+    * iOS Only
+    */
   @JSName("ContactTypes")
   @js.native
   object ContactTypesNs extends js.Object {
@@ -386,8 +343,8 @@ object ContactsNs extends js.Object {
   }
   
   /**
-       * iOS Only
-       */
+    * iOS Only
+    */
   @JSName("ContainerTypes")
   @js.native
   object ContainerTypesNs extends js.Object {

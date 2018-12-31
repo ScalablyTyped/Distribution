@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_VerificationCode extends js.Object {
   /** the connection name */
   var connection: java.lang.String

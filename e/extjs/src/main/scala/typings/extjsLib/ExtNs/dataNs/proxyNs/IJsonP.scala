@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IJsonP extends IServer {
   /** [Method] Aborts the current server request if one is currently running */
   var abort: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

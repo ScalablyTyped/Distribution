@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDirect extends IServer {
   /** [Method] inherit docs
   		* @returns String The url

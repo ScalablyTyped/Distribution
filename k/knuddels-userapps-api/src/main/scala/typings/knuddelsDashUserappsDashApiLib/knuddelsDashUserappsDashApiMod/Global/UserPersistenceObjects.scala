@@ -28,10 +28,6 @@ object UserPersistenceObjects extends js.Object {
   		 * @since AppServer 82483
   		 */
   def getAllKeys(): js.Array[java.lang.String] = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceObjects.html#method_getAllKeys
-  		 * @since AppServer 82483
-  		 */
   def getAllKeys(filterKey: java.lang.String): js.Array[java.lang.String] = js.native
 }
 

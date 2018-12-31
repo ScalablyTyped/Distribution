@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Notification args
-     */
-
+  * Notification args
+  */
 trait INotificationArgs extends js.Object {
   var header: java.lang.String
   var message: java.lang.String

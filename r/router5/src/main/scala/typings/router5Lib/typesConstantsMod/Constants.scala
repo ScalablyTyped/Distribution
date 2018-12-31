@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Constants extends js.Object {
   var ROUTER_START: java.lang.String
   var ROUTER_STOP: java.lang.String

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Print Job */
-
 trait PrintJob extends js.Object {
   /**
   		 * Gets a status of the print job

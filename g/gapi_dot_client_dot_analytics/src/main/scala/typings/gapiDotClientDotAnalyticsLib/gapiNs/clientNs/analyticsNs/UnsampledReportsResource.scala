@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UnsampledReportsResource extends js.Object {
   /** Deletes an unsampled report. */
   def delete(request: gapiDotClientDotAnalyticsLib.Anon_UnsampledReportId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

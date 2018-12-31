@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CropProperties extends js.Object {
   // The rotation angle of the crop window around its center, in radians.
   // Rotation angle is applied after the offset.

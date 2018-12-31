@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BookmarkMoveInfo extends js.Object {
   var index: scala.Double
   var oldIndex: scala.Double

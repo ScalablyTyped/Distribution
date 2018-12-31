@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDirectionsRenderOptions extends js.Object {
   /** A boolean indicating whether to automatically set the map view to the best map view of the calculated route. Default: true */
   var autoUpdateMapView: js.UndefOr[scala.Boolean] = js.undefined
@@ -16,9 +15,9 @@ trait IDirectionsRenderOptions extends js.Object {
   /** A boolean indicating whether to display direction hints that describe when a direction step was missed. Default: true */
   var displayPostItineraryItemHints: js.UndefOr[scala.Boolean] = js.undefined
   /**
-          * A boolean indicating whether to display direction hints that describe what to look for before you come to the next
-          * direction step. The default value is true.
-          */
+    * A boolean indicating whether to display direction hints that describe what to look for before you come to the next
+    * direction step. The default value is true.
+    */
   var displayPreItineraryItemHints: js.UndefOr[scala.Boolean] = js.undefined
   /** A boolean indicating whether to display the route selector control. Default: true */
   var displayRouteSelector: js.UndefOr[scala.Boolean] = js.undefined

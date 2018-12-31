@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DynamicGeometryUpdater extends js.Object {
   def destroy(): scala.Unit
   def isDestroyed(): scala.Boolean

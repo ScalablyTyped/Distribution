@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Dictionary describing the arguments passed to the application on startup.
- * Use the [getArguments](Titanium.App.getArguments) method to retrieve the launch options.
- */
-
+  * Dictionary describing the arguments passed to the application on startup.
+  * Use the [getArguments](Titanium.App.getArguments) method to retrieve the launch options.
+  */
 trait launchOptions extends js.Object {
   /**
   	 * If set to `true`, this key indicates that the application was launched in response to an

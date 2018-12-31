@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Props extends js.Object {
   var background: js.UndefOr[scala.Boolean] = js.undefined
   var backgroundPadding: js.UndefOr[scala.Double] = js.undefined

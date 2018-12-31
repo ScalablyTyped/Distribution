@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Open, manipulate, and access tabs, and receive tab events
- */
+  * Open, manipulate, and access tabs, and receive tab events
+  */
 @JSImport("sdk/tabs", JSImport.Namespace)
 @js.native
 object tabsMod extends js.Object {

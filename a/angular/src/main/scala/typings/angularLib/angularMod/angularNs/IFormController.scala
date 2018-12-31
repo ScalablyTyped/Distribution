@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * form.FormController - type in module ng
-     * see https://docs.angularjs.org/api/ng/type/form.FormController
-     */
+  * form.FormController - type in module ng
+  * see https://docs.angularjs.org/api/ng/type/form.FormController
+  */
 @js.native
 trait IFormController
   extends /**
-         * Indexer which should return ng.INgModelController for most properties but cannot because of "All named properties must be assignable to string indexer type" constraint - see https://github.com/Microsoft/TypeScript/issues/272
-         */
+  * Indexer which should return ng.INgModelController for most properties but cannot because of "All named properties must be assignable to string indexer type" constraint - see https://github.com/Microsoft/TypeScript/issues/272
+  */
 /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   @JSName("$dirty")
   var $dirty: scala.Boolean = js.native

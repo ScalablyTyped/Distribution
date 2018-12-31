@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JSONEditorActionParams extends js.Object {
   @JSName("clone")
   var clone_FJSONEditorActionParams: js.UndefOr[JSONEditorNode] = js.undefined

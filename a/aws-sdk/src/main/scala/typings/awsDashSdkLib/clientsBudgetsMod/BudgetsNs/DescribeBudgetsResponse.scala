@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DescribeBudgetsResponse extends js.Object {
   /**
-       * A list of budgets.
-       */
+    * A list of budgets.
+    */
   var Budgets: js.UndefOr[Budgets] = js.undefined
   /**
-       * The pagination token in the service response that indicates the next set of results that you can retrieve.
-       */
+    * The pagination token in the service response that indicates the next set of results that you can retrieve.
+    */
   var NextToken: js.UndefOr[GenericString] = js.undefined
 }
 

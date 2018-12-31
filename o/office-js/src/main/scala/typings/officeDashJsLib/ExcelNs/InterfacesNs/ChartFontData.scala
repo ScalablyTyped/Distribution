@@ -6,49 +6,48 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An interface describing the data returned by calling "chartFont.toJSON()". */
-
 trait ChartFontData extends js.Object {
   /**
-               *
-               * Represents the bold status of font.
-               *
-               * [Api set: ExcelApi 1.1]
-               */
+    *
+    * Represents the bold status of font.
+    *
+    * [Api set: ExcelApi 1.1]
+    */
   var bold: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               *
-               * HTML color code representation of the text color. E.g. #FF0000 represents Red.
-               *
-               * [Api set: ExcelApi 1.1]
-               */
+    *
+    * HTML color code representation of the text color. E.g. #FF0000 represents Red.
+    *
+    * [Api set: ExcelApi 1.1]
+    */
   var color: js.UndefOr[java.lang.String] = js.undefined
   /**
-               *
-               * Represents the italic status of the font.
-               *
-               * [Api set: ExcelApi 1.1]
-               */
+    *
+    * Represents the italic status of the font.
+    *
+    * [Api set: ExcelApi 1.1]
+    */
   var italic: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               *
-               * Font name (e.g. "Calibri")
-               *
-               * [Api set: ExcelApi 1.1]
-               */
+    *
+    * Font name (e.g. "Calibri")
+    *
+    * [Api set: ExcelApi 1.1]
+    */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
-               *
-               * Size of the font (e.g. 11)
-               *
-               * [Api set: ExcelApi 1.1]
-               */
+    *
+    * Size of the font (e.g. 11)
+    *
+    * [Api set: ExcelApi 1.1]
+    */
   var size: js.UndefOr[scala.Double] = js.undefined
   /**
-               *
-               * Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.
-               *
-               * [Api set: ExcelApi 1.1]
-               */
+    *
+    * Type of underline applied to the font. See Excel.ChartUnderlineStyle for details.
+    *
+    * [Api set: ExcelApi 1.1]
+    */
   var underline: js.UndefOr[
     officeDashJsLib.ExcelNs.ChartUnderlineStyle | officeDashJsLib.officeDashJsLibStrings.None | officeDashJsLib.officeDashJsLibStrings.Single
   ] = js.undefined

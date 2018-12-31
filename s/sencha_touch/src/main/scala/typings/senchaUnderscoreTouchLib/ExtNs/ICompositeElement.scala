@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICompositeElement
   extends senchaUnderscoreTouchLib.ExtNs.domNs.ICompositeElementLite {
   /** [Method] fixes scope with flyweight

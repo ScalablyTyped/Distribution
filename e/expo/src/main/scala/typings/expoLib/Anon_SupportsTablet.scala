@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SupportsTablet extends js.Object {
   var buildNumber: js.UndefOr[java.lang.String] = js.undefined
   var bundleIdentifier: js.UndefOr[java.lang.String] = js.undefined

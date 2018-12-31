@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageUploadResponse extends js.Object {
   var Error: java.lang.String
   var Height: scala.Double

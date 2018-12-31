@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("chrome.cast.media.TextTrackStyle")
 @js.native
+/**
+  * @constructor
+  * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.media.TextTrackStyle
+  */
 class TextTrackStyle () extends js.Object {
   var backgroundColor: java.lang.String = js.native
   var customData: js.Object = js.native

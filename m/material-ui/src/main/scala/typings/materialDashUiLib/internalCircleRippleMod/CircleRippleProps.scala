@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CircleRippleProps
   extends reactLib.reactMod.ReactNs.Props[CircleRipple] {
   var aborted: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Camera extends js.Object {
   var camera: cesiumLib.cesiumMod.CesiumNs.Camera
   var canvas: stdLib.HTMLCanvasElement

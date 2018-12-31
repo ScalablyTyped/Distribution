@@ -15,19 +15,19 @@ class ColorPickerGridCellBase ()
     ] {
   var _classNames: js.Any = js.native
   /**
-       * Method to override the getClassNames func in a button.
-       */
+    * Method to override the getClassNames func in a button.
+    */
   var _getClassNames: js.Any = js.native
   /**
-       * Render the core of a color cell
-       * @returns - Element representing the core of the item
-       */
+    * Render the core of a color cell
+    * @returns - Element representing the core of the item
+    */
   var _onRenderColorOption: js.Any = js.native
   /**
-       * Validate if the cell's color is white or not to apply whiteCell style
-       * @param inputColor - The color of the current cell
-       * @returns - Whether the cell's color is white or not.
-       */
+    * Validate if the cell's color is white or not to apply whiteCell style
+    * @param inputColor - The color of the current cell
+    * @returns - Whether the cell's color is white or not.
+    */
   /* private */ def _isWhiteCell(inputColor: js.Any): js.Any = js.native
 }
 

@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Configures how to poll for an element.
- */
-
+  * Configures how to poll for an element.
+  */
 trait ExpectTimingActions extends js.Object {
   /**
-       * An interval at which the pageFunction is executed. Defaults to "raf".
-       */
+    * An interval at which the pageFunction is executed. Defaults to "raf".
+    */
   var polling: js.UndefOr[expectDashPuppeteerLib.ExpectPolling] = js.undefined
   /**
-       * Maximum time to wait for in milliseconds. Defaults to 500.
-       */
+    * Maximum time to wait for in milliseconds. Defaults to 500.
+    */
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Ariahaspopup extends js.Object {
   var `aria-haspopup`: js.UndefOr[scala.Boolean] = js.undefined
   var caret: js.UndefOr[scala.Boolean] = js.undefined

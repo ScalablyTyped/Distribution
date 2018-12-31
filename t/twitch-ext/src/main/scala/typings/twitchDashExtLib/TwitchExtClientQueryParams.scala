@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * The extension window receives the following query parameters, which indicate
- * information about the extension environment that isn’t subject to change over
- * the frame’s life cycle.
- *
- * @see https://dev.twitch.tv/docs/extensions/reference/#client-query-parameters
- */
-
+  * The extension window receives the following query parameters, which indicate
+  * information about the extension environment that isn’t subject to change over
+  * the frame’s life cycle.
+  *
+  * @see https://dev.twitch.tv/docs/extensions/reference/#client-query-parameters
+  */
 trait TwitchExtClientQueryParams extends js.Object {
   /**
   	 * The type of the anchor in which the extension is activated.

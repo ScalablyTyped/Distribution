@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MeasurementsProperties extends js.Object {
   var measurements: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType
   var message: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.FieldType

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Instance extends js.Object {
   // collapse changes the size of element at index to 0.
   // Every element except the last is collapsed towards the front (left or top).

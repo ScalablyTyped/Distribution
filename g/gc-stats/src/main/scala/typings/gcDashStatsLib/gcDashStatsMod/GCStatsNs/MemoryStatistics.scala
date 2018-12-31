@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MemoryStatistics extends js.Object {
   var heapSizeLimit: scala.Double
   var mallocedMemory: scala.Double

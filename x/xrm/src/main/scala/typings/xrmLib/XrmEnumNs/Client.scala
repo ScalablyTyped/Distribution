@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait Client extends js.Object
 
 /**
-     * Constant Enum: Client Types for {@link ClientContext.getClient clientContext.getClient()}.
-     * @see {@link Xrm.Client}
-     */
+  * Constant Enum: Client Types for {@link ClientContext.getClient clientContext.getClient()}.
+  * @see {@link Xrm.Client}
+  */
 @JSGlobal("XrmEnum.Client")
 @js.native
 object Client extends js.Object {

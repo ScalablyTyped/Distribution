@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ChartTrendlineType extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.7]
-     */
+  * [Api set: ExcelApi 1.7]
+  */
 @JSGlobal("Excel.ChartTrendlineType")
 @js.native
 object ChartTrendlineType extends js.Object {

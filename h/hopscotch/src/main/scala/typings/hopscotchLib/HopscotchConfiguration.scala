@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HopscotchConfiguration extends js.Object {
   var arrowWidth: js.UndefOr[scala.Double] = js.undefined
   var bubbleWidth: js.UndefOr[scala.Double] = js.undefined

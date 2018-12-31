@@ -11,18 +11,18 @@ class Loader protected ()
   extends hlsDotJsLib.hlsDotJsMod.HlsNs.Loader {
   def this(config: hlsDotJsLib.hlsDotJsMod.HlsNs.LoaderConfig) = this()
   /**
-           * Abort any loading in progress.
-           */
+    * Abort any loading in progress.
+    */
   /* CompleteClass */
   override def abort(): scala.Unit = js.native
   /**
-           * Destroy loading context.
-           */
+    * Destroy loading context.
+    */
   /* CompleteClass */
   override def destroy(): scala.Unit = js.native
   /**
-           * Start retrieving content located at given URL (HTTP GET).
-           */
+    * Start retrieving content located at given URL (HTTP GET).
+    */
   /* CompleteClass */
   override def load(
     context: hlsDotJsLib.hlsDotJsMod.HlsNs.LoaderContext,

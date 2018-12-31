@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait item extends js.Object {
           // the point, e.g. [0, 2]
   var dataIndex: scala.Double

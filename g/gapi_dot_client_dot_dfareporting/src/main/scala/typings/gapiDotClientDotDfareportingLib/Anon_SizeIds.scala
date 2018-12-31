@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SizeIds extends js.Object {
   /** Select only active creatives. Leave blank to select active and inactive creatives. */
   var active: js.UndefOr[scala.Boolean] = js.undefined
@@ -38,17 +37,17 @@ trait Anon_SizeIds extends js.Object {
   /** User profile ID associated with this request. */
   var profileId: java.lang.String
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** Select only creatives with these rendering IDs. */
   var renderingIds: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Allows searching for objects by name or ID. Wildcards (&#42;) are allowed. For example, "creative&#42;2015" will return objects with names like "creative June
-                   * 2015", "creative April 2015", or simply "creative 2015". Most of the searches also add wildcards implicitly at the start and the end of the search
-                   * string. For example, a search string of "creative" will match objects with name "my creative", "creative 2015", or simply "creative".
-                   */
+    * Allows searching for objects by name or ID. Wildcards (&#42;) are allowed. For example, "creative&#42;2015" will return objects with names like "creative June
+    * 2015", "creative April 2015", or simply "creative 2015". Most of the searches also add wildcards implicitly at the start and the end of the search
+    * string. For example, a search string of "creative" will match objects with name "my creative", "creative 2015", or simply "creative".
+    */
   var searchString: js.UndefOr[java.lang.String] = js.undefined
   /** Select only creatives with these size IDs. */
   var sizeIds: js.UndefOr[java.lang.String] = js.undefined

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents IO control code. */
-
 trait IIOControlCode extends js.Object {
   /** The access mode. */
   var accessMode: IOControlAccessMode

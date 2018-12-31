@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MKProgressProperties
   extends reactDashNativeLib.reactDashNativeMod.ViewProps {
   var buffer: js.UndefOr[scala.Double] = js.undefined

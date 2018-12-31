@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommonMessagingProperties extends js.Object {
   var cleanSession: js.UndefOr[scala.Boolean] = js.undefined
   var hosts: js.UndefOr[java.lang.String] = js.undefined

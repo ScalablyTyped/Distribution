@@ -12,22 +12,22 @@ sealed trait FolderQueryOrder extends js.Object
 @js.native
 object FolderQueryOrder extends js.Object {
   /**
-       * Order by folder name and path ascending.
-       */
+    * Order by folder name and path ascending.
+    */
   @js.native
   sealed trait FolderAscending
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.FolderQueryOrder
   
   /**
-       * Order by folder name and path descending.
-       */
+    * Order by folder name and path descending.
+    */
   @js.native
   sealed trait FolderDescending
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.FolderQueryOrder
   
   /**
-       * No order
-       */
+    * No order
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.FolderQueryOrder

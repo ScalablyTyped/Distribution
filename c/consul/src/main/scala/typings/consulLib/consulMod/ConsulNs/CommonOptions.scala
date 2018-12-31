@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommonOptions extends js.Object {
   var consistent: js.UndefOr[scala.Boolean] = js.undefined
   var ctx: js.UndefOr[nodeLib.NodeJSNs.EventEmitter] = js.undefined

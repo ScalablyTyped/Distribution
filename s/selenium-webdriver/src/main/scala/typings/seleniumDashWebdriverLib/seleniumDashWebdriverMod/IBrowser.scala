@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBrowser extends js.Object {
   var ANDROID: java.lang.String
   var CHROME: java.lang.String

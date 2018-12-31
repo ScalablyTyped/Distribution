@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CollectionProperties extends js.Object {
   var indexBuckets: scala.Double
   var isSystem: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpinnerProps extends js.Object {
   var animation: js.UndefOr[
     reactDashNativeDashLoadingDashSpinnerDashOverlayLib.reactDashNativeDashLoadingDashSpinnerDashOverlayLibStrings.none | reactDashNativeDashLoadingDashSpinnerDashOverlayLib.reactDashNativeDashLoadingDashSpinnerDashOverlayLibStrings.slide | reactDashNativeDashLoadingDashSpinnerDashOverlayLib.reactDashNativeDashLoadingDashSpinnerDashOverlayLibStrings.fade

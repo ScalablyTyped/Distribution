@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Ref extends js.Object {
   /** Schema ID for the request schema. */
   @JSName("$ref")

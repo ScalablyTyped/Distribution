@@ -16,9 +16,9 @@ class DetailsHeaderBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsHeaderDotTypesMod.IDetailsHeaderBaseProps) = this()
   var _classNames: js.Any = js.native
   /**
-       * Based on the given cursor position, finds the nearest drop hint and updates the state to make it visible
-       *
-       */
+    * Based on the given cursor position, finds the nearest drop hint and updates the state to make it visible
+    *
+    */
   var _computeDropHintToBeShown: js.Any = js.native
   var _currentDropHintIndex: js.Any = js.native
   var _dragDropHelper: js.Any = js.native
@@ -33,26 +33,26 @@ class DetailsHeaderBase protected ()
   var _onRootMouseMove: js.Any = js.native
   var _onRootRef: js.Any = js.native
   /**
-       * Called when the select all toggle is clicked.
-       */
+    * Called when the select all toggle is clicked.
+    */
   var _onSelectAllClicked: js.Any = js.native
   var _onSizerBlur: js.Any = js.native
   /**
-       * mouse move event handler in the header
-       * it will set isSizing state to true when user clicked on the sizer and move the mouse.
-       *
-       * @private
-       * @param {React.MouseEvent} ev (mouse move event)
-       */
+    * mouse move event handler in the header
+    * it will set isSizing state to true when user clicked on the sizer and move the mouse.
+    *
+    * @private
+    * @param {React.MouseEvent} ev (mouse move event)
+    */
   var _onSizerMouseMove: js.Any = js.native
   /**
-       * mouse up event handler in the header
-       * clear the resize related state.
-       * This is to ensure we can catch double click event
-       *
-       * @private
-       * @param {React.MouseEvent} ev (mouse up event)
-       */
+    * mouse up event handler in the header
+    * clear the resize related state.
+    * This is to ensure we can catch double click event
+    *
+    * @private
+    * @param {React.MouseEvent} ev (mouse up event)
+    */
   var _onSizerMouseUp: js.Any = js.native
   var _renderColumnSizer: js.Any = js.native
   var _rootComponent: js.Any = js.native
@@ -62,8 +62,8 @@ class DetailsHeaderBase protected ()
   /* private */ def _isAfter(a: js.Any, b: js.Any): js.Any = js.native
   /* private */ def _isBefore(a: js.Any, b: js.Any): js.Any = js.native
   /**
-       * @returns whether or not the "Select All" checkbox column is hidden.
-       */
+    * @returns whether or not the "Select All" checkbox column is hidden.
+    */
   /* private */ def _isCheckboxColumnHidden(): js.Any = js.native
   /* private */ def _isEventOnHeader(event: js.Any): js.Any = js.native
   /* private */ def _isValidCurrentDropHintIndex(): js.Any = js.native
@@ -74,13 +74,13 @@ class DetailsHeaderBase protected ()
   /* private */ def _onDrop(item: js.Any, event: js.Any): js.Any = js.native
   /* private */ def _onSelectionChanged(): js.Any = js.native
   /**
-       * double click on the column sizer will auto ajust column width
-       * to fit the longest content among current rendered rows.
-       *
-       * @private
-       * @param {number} columnIndex (index of the column user double clicked)
-       * @param {React.MouseEvent} ev (mouse double click event)
-       */
+    * double click on the column sizer will auto ajust column width
+    * to fit the longest content among current rendered rows.
+    *
+    * @private
+    * @param {number} columnIndex (index of the column user double clicked)
+    * @param {React.MouseEvent} ev (mouse double click event)
+    */
   /* private */ def _onSizerDoubleClick(columnIndex: js.Any, ev: js.Any): js.Any = js.native
   /* private */ def _onToggleCollapseAll(): js.Any = js.native
   /* private */ def _renderColumnDivider(columnIndex: js.Any): js.Any = js.native

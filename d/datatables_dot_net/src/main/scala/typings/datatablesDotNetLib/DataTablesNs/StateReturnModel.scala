@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StateReturnModel extends js.Object {
   var columns: js.Array[StateReturnModelColumns]
   var length: scala.Double

@@ -9,37 +9,37 @@ import scala.scalajs.js.annotation._
 sealed trait OverlayVerticalAlignment extends js.Object
 
 /**
-     *
-     * Represents the Vertical Alignment of the Overlay relative to the shape.
-     *
-     * [Api set:  1.1]
-     */
+  *
+  * Represents the Vertical Alignment of the Overlay relative to the shape.
+  *
+  * [Api set:  1.1]
+  */
 @JSGlobal("Visio.OverlayVerticalAlignment")
 @js.native
 object OverlayVerticalAlignment extends js.Object {
   /**
-           *
-           * bottom
-           *
-           */
+    *
+    * bottom
+    *
+    */
   @js.native
   sealed trait bottom
     extends officeDashJsLib.VisioNs.OverlayVerticalAlignment
   
   /**
-           *
-           * middle
-           *
-           */
+    *
+    * middle
+    *
+    */
   @js.native
   sealed trait middle
     extends officeDashJsLib.VisioNs.OverlayVerticalAlignment
   
   /**
-           *
-           * top
-           *
-           */
+    *
+    * top
+    *
+    */
   @js.native
   sealed trait top
     extends officeDashJsLib.VisioNs.OverlayVerticalAlignment

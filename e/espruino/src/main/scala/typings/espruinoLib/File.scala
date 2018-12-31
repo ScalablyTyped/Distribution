@@ -15,53 +15,53 @@ import scala.scalajs.js.annotation._
 @js.native
 trait File
   extends /**
-     * 
-     * @return  
-     */
+  * 
+  * @return  
+  */
 org.scalablytyped.runtime.Instantiable0[File] {
   /**
-       * <p>Close an open file.</p>
-       * 
-       * @url http://www.espruino.com/Reference#l_File_close
-       */
+    * <p>Close an open file.</p>
+    * 
+    * @url http://www.espruino.com/Reference#l_File_close
+    */
   def close(): scala.Unit = js.native
   /**
-       * <p>Pipe this file to a stream (an object with a &#39;write&#39; method)</p>
-       * 
-       * @param destination 
-       * @param options 
-       * @url http://www.espruino.com/Reference#l_File_pipe
-       */
+    * <p>Pipe this file to a stream (an object with a &#39;write&#39; method)</p>
+    * 
+    * @param destination 
+    * @param options 
+    * @url http://www.espruino.com/Reference#l_File_pipe
+    */
   def pipe(destination: js.Any, options: js.Any): scala.Unit = js.native
   /**
-       * <p>Read data in a file in byte size chunks</p>
-       * 
-       * @param length 
-       * @return  
-       * @url http://www.espruino.com/Reference#l_File_read
-       */
+    * <p>Read data in a file in byte size chunks</p>
+    * 
+    * @param length 
+    * @return  
+    * @url http://www.espruino.com/Reference#l_File_read
+    */
   def read(length: scala.Double): js.Any = js.native
   /**
-       * <p>Seek to a certain position in the file</p>
-       * 
-       * @param nBytes 
-       * @url http://www.espruino.com/Reference#l_File_seek
-       */
+    * <p>Seek to a certain position in the file</p>
+    * 
+    * @param nBytes 
+    * @url http://www.espruino.com/Reference#l_File_seek
+    */
   def seek(nBytes: scala.Double): scala.Unit = js.native
   /**
-       * <p>Skip the specified number of bytes forward in the file</p>
-       * 
-       * @param nBytes 
-       * @url http://www.espruino.com/Reference#l_File_skip
-       */
+    * <p>Skip the specified number of bytes forward in the file</p>
+    * 
+    * @param nBytes 
+    * @url http://www.espruino.com/Reference#l_File_skip
+    */
   def skip(nBytes: scala.Double): scala.Unit = js.native
   /**
-       * <p>write data to a file</p>
-       * 
-       * @param buffer 
-       * @return  
-       * @url http://www.espruino.com/Reference#l_File_write
-       */
+    * <p>write data to a file</p>
+    * 
+    * @param buffer 
+    * @return  
+    * @url http://www.espruino.com/Reference#l_File_write
+    */
   def write(buffer: js.Any): scala.Double = js.native
 }
 

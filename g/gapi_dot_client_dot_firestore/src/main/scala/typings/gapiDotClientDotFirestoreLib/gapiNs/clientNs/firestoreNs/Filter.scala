@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Filter extends js.Object {
   /** A composite filter. */
   var compositeFilter: js.UndefOr[CompositeFilter] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Layoutproperties extends js.Object {
   // Layout specific properties. Only set if page_type = LAYOUT.
   var layout_properties: googleDashAppsDashScriptLib.GoogleAppsScriptNs.SlidesUnderscoreV1Ns.LayoutProperties

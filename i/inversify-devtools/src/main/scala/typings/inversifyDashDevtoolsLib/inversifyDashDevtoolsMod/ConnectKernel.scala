@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ConnectKernel
   extends js.Function {
-  def apply(kernel: js.Any): scala.Unit = js.native
+  def apply(
+    kernel: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify inversify.interfaces.Kernel */ js.Any
+  ): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StackFrame extends js.Object {
   def getColumnNumber(): scala.Double
   def getFileName(): java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_VertexShaderSourceFaceForwardFlatAboveGround extends js.Object {
   var aboveGround: js.UndefOr[scala.Boolean] = js.undefined
   var faceForward: js.UndefOr[scala.Boolean] = js.undefined

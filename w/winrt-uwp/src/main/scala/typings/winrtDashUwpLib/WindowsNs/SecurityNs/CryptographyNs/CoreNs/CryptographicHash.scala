@@ -10,14 +10,14 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class CryptographicHash () extends js.Object {
   /**
-                       * Appends a binary encoded string to the data stored in the CryptographicHash object.
-                       * @param data Data to append.
-                       */
+    * Appends a binary encoded string to the data stored in the CryptographicHash object.
+    * @param data Data to append.
+    */
   def append(data: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer): scala.Unit = js.native
   /**
-                       * Gets hashed data from the CryptographicHash object and resets the object.
-                       * @return Hashed data.
-                       */
+    * Gets hashed data from the CryptographicHash object and resets the object.
+    * @return Hashed data.
+    */
   def getValueAndReset(): winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer = js.native
 }
 

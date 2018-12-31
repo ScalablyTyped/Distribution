@@ -14,9 +14,7 @@ trait Database extends js.Object {
   def _create(name: java.lang.String, properties: CreateCollectionOptions): Collection[_] = js.native
   // Database
   def _createDatabase(name: java.lang.String): arangodbLib.arangodbLibNumbers.`true` = js.native
-  // Database
   def _createDatabase(name: java.lang.String, options: scala.Nothing): arangodbLib.arangodbLibNumbers.`true` = js.native
-  // Database
   def _createDatabase(name: java.lang.String, options: scala.Nothing, users: js.Array[DatabaseUser]): arangodbLib.arangodbLibNumbers.`true` = js.native
   def _createDocumentCollection(name: java.lang.String): Collection[_] = js.native
   def _createDocumentCollection(name: java.lang.String, properties: CreateCollectionOptions): Collection[_] = js.native
@@ -24,7 +22,6 @@ trait Database extends js.Object {
   def _createEdgeCollection(name: java.lang.String, properties: CreateCollectionOptions): Collection[_] = js.native
   // AQL
   def _createStatement(query: Query): Statement[_] = js.native
-  // AQL
   def _createStatement(query: java.lang.String): Statement[_] = js.native
   def _createView(name: java.lang.String, `type`: ViewType, properties: ArangoSearchViewPropertiesOptions): ArangoSearchView = js.native
   def _databases(): js.Array[java.lang.String] = js.native
@@ -45,7 +42,6 @@ trait Database extends js.Object {
   def _explain(query: java.lang.String): scala.Unit = js.native
   // Properties
   def _id(): java.lang.String = js.native
-  // Indexes
   def _index(index: IndexLike): Index[_] | scala.Null = js.native
   // Indexes
   def _index(index: java.lang.String): Index[_] | scala.Null = js.native

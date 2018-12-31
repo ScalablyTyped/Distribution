@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnalyticsSnapshot extends js.Object {
   /** Top browsers, e.g. "Chrome"; sorted by (descending) click counts. Only present if this data is available. */
   var browsers: js.UndefOr[js.Array[StringCount]] = js.undefined

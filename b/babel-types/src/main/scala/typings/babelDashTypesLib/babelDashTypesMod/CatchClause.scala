@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CatchClause extends Node {
   var body: BlockStatement
   var param: Identifier

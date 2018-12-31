@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents the settings for the automatic reply functionality of an email account. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMailboxAutoReplySettings")
 @js.native
+/** Initializes a new instance of an EmailMailboxAutoReplySettings object. */
 class EmailMailboxAutoReplySettings () extends js.Object {
   /** Represents the end time for the automated reply period. */
   var endTime: stdLib.Date = js.native

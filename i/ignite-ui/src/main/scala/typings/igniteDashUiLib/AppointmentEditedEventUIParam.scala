@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AppointmentEditedEventUIParam extends js.Object {
   /**
   	 * Gets a reference to the edited appointment.

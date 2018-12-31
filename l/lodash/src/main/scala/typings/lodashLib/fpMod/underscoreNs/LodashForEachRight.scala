@@ -12,7 +12,7 @@ trait LodashForEachRight extends js.Object {
   def apply(iteratee: lodashLib.lodashMod.underscoreNs.`__`, collection: java.lang.String): LodashForEachRight2x2 = js.native
   def apply[T /* <: js.Object */](
     iteratee: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       _
     ],
     collection: T

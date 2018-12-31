@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WindowEventHandlersEventMap extends js.Object {
   var afterprint: Event
   var beforeprint: Event

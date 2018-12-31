@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IText
   extends senchaUnderscoreTouchLib.ExtNs.fieldNs.IField {
   /** [Config Option] (Boolean) */

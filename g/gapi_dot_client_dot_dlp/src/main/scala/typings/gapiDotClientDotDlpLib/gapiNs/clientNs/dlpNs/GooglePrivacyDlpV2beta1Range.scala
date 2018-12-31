@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GooglePrivacyDlpV2beta1Range extends js.Object {
   /** Index of the last character of the range (exclusive). */
   var end: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHidden extends IBase {
   /** [Config Option] (Boolean) */
   var hideLabel: js.UndefOr[scala.Boolean] = js.undefined

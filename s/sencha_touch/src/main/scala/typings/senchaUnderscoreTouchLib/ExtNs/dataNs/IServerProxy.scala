@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IServerProxy
   extends senchaUnderscoreTouchLib.ExtNs.dataNs.proxyNs.IProxy {
   /** [Method] Optional callback function which can be used to clean up after a request has been completed

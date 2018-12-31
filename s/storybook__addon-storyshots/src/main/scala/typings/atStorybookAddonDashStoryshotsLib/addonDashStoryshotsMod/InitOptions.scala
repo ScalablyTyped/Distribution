@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InitOptions[Rendered] extends js.Object {
   var configPath: js.UndefOr[java.lang.String] = js.undefined
   var framework: js.UndefOr[java.lang.String] = js.undefined

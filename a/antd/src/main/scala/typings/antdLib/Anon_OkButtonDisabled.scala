@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OkButtonDisabled extends js.Object {
   var cancelButtonDisabled: scala.Boolean
   var confirmLoading: scala.Boolean

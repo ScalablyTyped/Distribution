@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NoIterationsExist extends js.Object {
   var backlogInError: scala.Double
   var doesntExistOrAccessDenied: scala.Double

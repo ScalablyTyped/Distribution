@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Audio Features Object
-     * https://developer.spotify.com/web-api/object-model/#audio-features-object
-     */
-
+  * Audio Features Object
+  * https://developer.spotify.com/web-api/object-model/#audio-features-object
+  */
 trait AudioFeaturesObject extends js.Object {
   var acousticness: scala.Double
   var analysis_url: java.lang.String

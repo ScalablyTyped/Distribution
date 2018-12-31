@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Neighbours extends js.Object {
   var e: java.lang.String
   var n: java.lang.String

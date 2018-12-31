@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 /* contextualIdentities types */
 /** Represents information about a contextual identity. */
-
 trait ContextualIdentity extends js.Object {
   /** The color name of the contextual identity. */
   var color: java.lang.String

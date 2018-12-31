@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkbookSheet extends js.Object {
   var columns: js.UndefOr[js.Array[WorkbookSheetColumn]] = js.undefined
   var filter: js.UndefOr[WorkbookSheetFilter] = js.undefined

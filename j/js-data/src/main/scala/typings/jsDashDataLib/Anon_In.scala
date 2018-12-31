@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_In extends js.Object {
   def `!=`(value: js.Any, predicate: js.Any): scala.Boolean
   def `!==`(value: js.Any, predicate: js.Any): scala.Boolean

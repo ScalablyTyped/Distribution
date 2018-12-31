@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DayPickerInputProps extends js.Object {
   var classNames: js.UndefOr[reactDashDayDashPickerLib.typesCommonMod.ClassNames] = js.undefined
   var clickUnselectsDay: js.UndefOr[scala.Boolean] = js.undefined

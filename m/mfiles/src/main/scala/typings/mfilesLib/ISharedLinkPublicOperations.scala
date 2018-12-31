@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISharedLinkPublicOperations extends js.Object {
   def DownloadSharedFileInBlocks_Begin(VaultGUID: java.lang.String, AccessKey: java.lang.String, AdditionalData: INamedValues): IFileDownloadSession
   def DownloadSharedFileInBlocks_Begin_32bit(VaultGUID: java.lang.String, AccessKey: java.lang.String, AdditionalData: INamedValues): IFileDownloadSession

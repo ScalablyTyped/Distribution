@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatetimepickerOptions extends js.Object {
   /**
   	 * If true, the picker will show on textbox focus and icon click when used in a button group

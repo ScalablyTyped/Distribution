@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GLViewDOMProps extends js.Object {
   var debug: js.UndefOr[scala.Double] = js.undefined
   var height: scala.Double

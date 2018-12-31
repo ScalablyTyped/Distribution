@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Cookies extends js.Object {
   var Accelerator: org.scalablytyped.runtime.Instantiable0[electronLib.ElectronNs.Accelerator]
   var BrowserView: org.scalablytyped.runtime.Instantiable1[

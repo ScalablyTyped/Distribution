@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Opera extends js.Object {
   var aurora: js.UndefOr[launchpadLib.launchpadMod.BrowserPlatformDetails] = js.undefined
   var canary: js.UndefOr[launchpadLib.launchpadMod.BrowserPlatformDetails] = js.undefined

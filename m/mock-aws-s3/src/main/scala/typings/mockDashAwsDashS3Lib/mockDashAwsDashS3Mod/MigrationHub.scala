@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "MigrationHub")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class MigrationHub ()
   extends awsDashSdkLib.awsDashSdkMod.MigrationHub {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsMigrationhubMod.MigrationHubNs.ClientConfiguration) = this()
 }
 

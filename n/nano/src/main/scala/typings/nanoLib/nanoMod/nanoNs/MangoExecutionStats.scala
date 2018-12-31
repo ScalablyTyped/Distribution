@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // http://docs.couchdb.org/en/latest/api/database/find.html#execution-statistics
-
 trait MangoExecutionStats extends js.Object {
   // Total execution time in milliseconds as measured by the database.
   var execution_time_ms: scala.Double

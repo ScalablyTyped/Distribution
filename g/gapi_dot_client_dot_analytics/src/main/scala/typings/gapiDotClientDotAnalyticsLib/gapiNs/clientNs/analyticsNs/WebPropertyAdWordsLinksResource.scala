@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebPropertyAdWordsLinksResource extends js.Object {
   /** Deletes a web property-AdWords link. */
   def delete(request: gapiDotClientDotAnalyticsLib.Anon_WebPropertyAdWordsLinkId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

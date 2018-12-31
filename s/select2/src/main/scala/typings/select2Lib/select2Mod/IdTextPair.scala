@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IdTextPair extends js.Object {
   var element: js.UndefOr[scala.Nothing] = js.undefined
   var id: java.lang.String

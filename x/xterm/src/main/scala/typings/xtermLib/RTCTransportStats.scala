@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RTCTransportStats extends RTCStats {
   var activeConnection: js.UndefOr[scala.Boolean] = js.undefined
   var bytesReceived: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NodeId extends js.Object {
   var entityType: js.UndefOr[breezeLib.breezeNs.EntityType] = js.undefined
   var ignore: js.UndefOr[scala.Boolean] = js.undefined

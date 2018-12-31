@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GeoHaystackSearchOptions extends js.Object {
   var limit: js.UndefOr[scala.Double] = js.undefined
   var maxDistance: js.UndefOr[scala.Double] = js.undefined

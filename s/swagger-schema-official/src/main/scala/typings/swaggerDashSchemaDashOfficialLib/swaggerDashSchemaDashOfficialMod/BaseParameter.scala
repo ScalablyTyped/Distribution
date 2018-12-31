@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseParameter extends js.Object {
   var description: js.UndefOr[java.lang.String] = js.undefined
   var in: java.lang.String

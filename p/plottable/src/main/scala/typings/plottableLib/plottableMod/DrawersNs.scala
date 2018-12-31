@@ -24,9 +24,9 @@ object DrawersNs extends js.Object {
   class CanvasDrawer protected ()
     extends plottableLib.buildSrcDrawersMod.CanvasDrawer {
     /**
-         * @param _context The context for a canvas that this drawer will draw to.
-         * @param _drawStep The draw step logic that actually draws.
-         */
+      * @param _context The context for a canvas that this drawer will draw to.
+      * @param _drawStep The draw step logic that actually draws.
+      */
     def this(_context: d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D, _drawStep: plottableLib.buildSrcDrawersCanvasDrawerMod.CanvasDrawStep) = this()
   }
   
@@ -38,12 +38,12 @@ object DrawersNs extends js.Object {
   class ProxyDrawer protected ()
     extends plottableLib.buildSrcDrawersMod.ProxyDrawer {
     /**
-         * A Drawer draws svg elements based on the input Dataset.
-         *
-         * @constructor
-         * @param _svgDrawerFactory A factory that will be invoked to create an SVGDrawer whenever useSVG is called
-         * @param _canvasDrawStep The DrawStep to be fed into a new CanvasDrawer whenever useCanvas is called
-         */
+      * A Drawer draws svg elements based on the input Dataset.
+      *
+      * @constructor
+      * @param _svgDrawerFactory A factory that will be invoked to create an SVGDrawer whenever useSVG is called
+      * @param _canvasDrawStep The DrawStep to be fed into a new CanvasDrawer whenever useCanvas is called
+      */
     def this(_svgDrawerFactory: js.Function0[plottableLib.buildSrcDrawersSvgDrawerMod.SVGDrawer], _canvasDrawerFactory: js.Function1[
           /* ctx */ d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D, 
           plottableLib.buildSrcDrawersCanvasDrawerMod.CanvasDrawer
@@ -66,10 +66,10 @@ object DrawersNs extends js.Object {
   class SVGDrawer protected ()
     extends plottableLib.buildSrcDrawersMod.SVGDrawer {
     /**
-         * @param svgElementName an HTML/SVG tag name to be created, one per datum.
-         * @param className CSS classes to be applied to the drawn primitives.
-         * @param applyDefaultAttributes
-         */
+      * @param svgElementName an HTML/SVG tag name to be created, one per datum.
+      * @param className CSS classes to be applied to the drawn primitives.
+      * @param applyDefaultAttributes
+      */
     def this(svgElementName: java.lang.String, className: java.lang.String) = this()
   }
   

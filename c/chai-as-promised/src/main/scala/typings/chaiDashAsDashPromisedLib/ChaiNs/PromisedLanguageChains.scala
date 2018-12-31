@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PromisedLanguageChains extends js.Object {
   var and: PromisedAssertion
   var at: PromisedAssertion

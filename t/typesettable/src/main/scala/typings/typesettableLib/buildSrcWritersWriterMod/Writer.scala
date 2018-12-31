@@ -17,19 +17,11 @@ class Writer protected () extends js.Object {
   def penFactory(newPenFactory: typesettableLib.buildSrcContextsMod.IPenFactoryContext[_]): Writer = js.native
   def wrapper(newWrapper: typesettableLib.buildSrcWrappersMod.Wrapper): Writer = js.native
   /**
-       * Writes the text into the container. If no container is specified, the pen's
-       * default container will be used.
-       */
+    * Writes the text into the container. If no container is specified, the pen's
+    * default container will be used.
+    */
   def write[T](text: java.lang.String, width: scala.Double, height: scala.Double): scala.Unit = js.native
-  /**
-       * Writes the text into the container. If no container is specified, the pen's
-       * default container will be used.
-       */
   def write[T](text: java.lang.String, width: scala.Double, height: scala.Double, options: IWriteOptions): scala.Unit = js.native
-  /**
-       * Writes the text into the container. If no container is specified, the pen's
-       * default container will be used.
-       */
   def write[T](
     text: java.lang.String,
     width: scala.Double,

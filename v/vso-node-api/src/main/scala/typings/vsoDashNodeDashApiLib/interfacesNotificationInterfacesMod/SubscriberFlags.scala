@@ -12,29 +12,29 @@ sealed trait SubscriberFlags extends js.Object
 @js.native
 object SubscriberFlags extends js.Object {
   /**
-       * Subscriber's delivery preferences could be updated
-       */
+    * Subscriber's delivery preferences could be updated
+    */
   @js.native
   sealed trait DeliveryPreferencesEditable
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriberFlags
   
   /**
-       * Subscriber is a group
-       */
+    * Subscriber is a group
+    */
   @js.native
   sealed trait IsGroup
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriberFlags
   
   /**
-       * Subscriber is a team
-       */
+    * Subscriber is a team
+    */
   @js.native
   sealed trait IsTeam
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriberFlags
   
   /**
-       * Subscriber is a user
-       */
+    * Subscriber is a user
+    */
   @js.native
   sealed trait IsUser
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriberFlags
@@ -44,22 +44,22 @@ object SubscriberFlags extends js.Object {
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriberFlags
   
   /**
-       * Subscriber's delivery preferences supports individual members delivery(group expansion)
-       */
+    * Subscriber's delivery preferences supports individual members delivery(group expansion)
+    */
   @js.native
   sealed trait SupportsEachMemberDelivery
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriberFlags
   
   /**
-       * Subscriber's delivery preferences supports no delivery
-       */
+    * Subscriber's delivery preferences supports no delivery
+    */
   @js.native
   sealed trait SupportsNoDelivery
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriberFlags
   
   /**
-       * Subscriber's delivery preferences supports email delivery
-       */
+    * Subscriber's delivery preferences supports email delivery
+    */
   @js.native
   sealed trait SupportsPreferredEmailAddressDelivery
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.SubscriberFlags

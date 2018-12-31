@@ -12,8 +12,8 @@ sealed trait ConstrainMode extends js.Object
 @js.native
 object ConstrainMode extends js.Object {
   /**
-       * If specified, constrains the list to the given layout space.
-       */
+    * If specified, constrains the list to the given layout space.
+    */
   @js.native
   sealed trait horizontalConstrained
     extends officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.ConstrainMode

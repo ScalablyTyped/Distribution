@@ -16,14 +16,14 @@ abstract class DatagramSocketMessageReceivedEventArgs () extends js.Object {
   /** Gets the UDP port number of the remote sender of the datagram received on the DatagramSocket . */
   var remotePort: java.lang.String = js.native
   /**
-                   * Gets a DataReader object to read incoming data received from the remote network destination on a DatagramSocket object.
-                   * @return A DataReader object to read incoming data received from the remote network destination on a DatagramSocket object.
-                   */
+    * Gets a DataReader object to read incoming data received from the remote network destination on a DatagramSocket object.
+    * @return A DataReader object to read incoming data received from the remote network destination on a DatagramSocket object.
+    */
   def getDataReader(): winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.DataReader = js.native
   /**
-                   * Gets an IInputStream object that represents a sequential stream of bytes to be read as a message from the remote network destination on a DatagramSocket object.
-                   * @return An IInputStream object that represents a sequential stream of bytes to be read as a message.
-                   */
+    * Gets an IInputStream object that represents a sequential stream of bytes to be read as a message from the remote network destination on a DatagramSocket object.
+    * @return An IInputStream object that represents a sequential stream of bytes to be read as a message.
+    */
   def getDataStream(): winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IInputStream = js.native
 }
 

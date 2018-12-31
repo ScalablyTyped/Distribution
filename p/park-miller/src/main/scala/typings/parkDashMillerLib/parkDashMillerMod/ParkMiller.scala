@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParkMiller extends js.Object {
   def boolean(): scala.Boolean
   def float(): scala.Double

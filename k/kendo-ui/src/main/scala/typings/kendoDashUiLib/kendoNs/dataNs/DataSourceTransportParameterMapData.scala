@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataSourceTransportParameterMapData extends js.Object {
   var aggregate: js.UndefOr[js.Array[DataSourceParameterMapDataAggregate]] = js.undefined
   var filter: js.UndefOr[DataSourceParameterMapDataFilter] = js.undefined

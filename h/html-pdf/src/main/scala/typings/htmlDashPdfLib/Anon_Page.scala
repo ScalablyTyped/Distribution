@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Page
   extends /* page */ org.scalablytyped.runtime.NumberDictionary[java.lang.String] {
   var default: js.UndefOr[java.lang.String] = js.undefined

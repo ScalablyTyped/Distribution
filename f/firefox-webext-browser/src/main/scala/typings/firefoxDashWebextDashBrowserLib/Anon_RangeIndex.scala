@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RangeIndex extends js.Object {
   /** Don't scroll to highlighted item. */
   var noScroll: js.UndefOr[scala.Boolean] = js.undefined

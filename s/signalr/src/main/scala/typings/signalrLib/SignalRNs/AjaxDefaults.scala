@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AjaxDefaults extends js.Object {
   var async: scala.Boolean
   var cache: scala.Boolean

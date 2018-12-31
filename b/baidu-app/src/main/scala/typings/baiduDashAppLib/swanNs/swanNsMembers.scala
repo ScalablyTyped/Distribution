@@ -111,9 +111,6 @@ object swanNsMembers extends js.Object {
   	 * 关闭WebSocket连接。
   	 */
   def closeSocket(): scala.Unit = js.native
-  /**
-  	 * 关闭WebSocket连接。
-  	 */
   def closeSocket(options: CloseSocketOptions): scala.Unit = js.native
   /**
   	 * 创建一个 WebSocket 连接；
@@ -129,12 +126,6 @@ object swanNsMembers extends js.Object {
   	 * @version 1.6.0
   	 */
   def connectWifi(): scala.Unit = js.native
-  /**
-  	 * 连接 Wi-Fi。
-  	 * 若已知 Wi-Fi 信息，可以直接利用该接口连接。
-  	 * 仅 Android 与 iOS 11 以上版本支持。
-  	 * @version 1.6.0
-  	 */
   def connectWifi(options: ConnectWiFiOptions): scala.Unit = js.native
   /**
   	 * 创建一个动画实例animation。调用实例的方法来描述动画。
@@ -143,12 +134,6 @@ object swanNsMembers extends js.Object {
   	 * 注意: export 方法每次调用后会清掉之前的动画操作
   	 */
   def createAnimation(): Animation = js.native
-  /**
-  	 * 创建一个动画实例animation。调用实例的方法来描述动画。
-  	 * 最后通过动画实例的export方法导出动画数据传递给组件的animation属性。
-  	 *
-  	 * 注意: export 方法每次调用后会清掉之前的动画操作
-  	 */
   def createAnimation(options: CreateAnimationOptions): Animation = js.native
   /**
   	 * 低功耗蓝牙接口
@@ -163,13 +148,6 @@ object swanNsMembers extends js.Object {
   	 * @version 1.6.0
   	 */
   def createCameraContext(): CameraContext = js.native
-  /**
-  	 * 创建并返回 camera 上下文 cameraContext 对象
-  	 * cameraContext 与页面的 camera 组件绑定
-  	 * 一个页面只能有一个camera，通过它可以操作对应的 <camera/> 组件。
-  	 * 在自定义组件下，第一个参数传入组件实例this，以操作组件内 <camera/> 组件
-  	 * @version 1.6.0
-  	 */
   def createCameraContext(instance: js.Any): CameraContext = js.native
   /**
   	 * 创建并返回绘图上下文context对象。
@@ -269,10 +247,6 @@ object swanNsMembers extends js.Object {
   	 * @version 1.6.0
   	 */
   def getConnectedWifi(): scala.Unit = js.native
-  /**
-  	 * 获取已连接中的 Wi-Fi 信息
-  	 * @version 1.6.0
-  	 */
   def getConnectedWifi(options: GetConnectedWifiOptions): scala.Unit = js.native
   def getEnvInfoSync(): EnvInfo = js.native
   /**
@@ -280,10 +254,6 @@ object swanNsMembers extends js.Object {
   	 * @version 1.1.0
   	 */
   def getExtConfig(): scala.Unit = js.native
-  /**
-  	 * 获取第三方平台自定义的数据字段。
-  	 * @version 1.1.0
-  	 */
   def getExtConfig(options: GetExtConfigOptions): scala.Unit = js.native
   /**
   	 * 获取第三方平台自定义的数据字段的同步接口。
@@ -303,9 +273,6 @@ object swanNsMembers extends js.Object {
   	 * 获取当前的地理位置、速度。
   	 */
   def getLocation(): scala.Unit = js.native
-  /**
-  	 * 获取当前的地理位置、速度。
-  	 */
   def getLocation(options: GetLocationOptions): scala.Unit = js.native
   // #region LogManager
   /**
@@ -338,10 +305,6 @@ object swanNsMembers extends js.Object {
   	 * @version 1.2.0
   	 */
   def getScreenBrightness(): scala.Unit = js.native
-  /**
-  	 * 获取屏幕亮度
-  	 * @version 1.2.0
-  	 */
   def getScreenBrightness(options: GetScreenBrightnessOptions): scala.Unit = js.native
   /**
   	 * 获取用户的当前设置。
@@ -354,10 +317,6 @@ object swanNsMembers extends js.Object {
   	 * @version 1.1.0
   	 */
   def getShareInfo(): scala.Unit = js.native
-  /**
-  	 * 获取转发详细信息
-  	 * @version 1.1.0
-  	 */
   def getShareInfo(options: GetShareInfoOptions): scala.Unit = js.native
   /**
   	 * 从本地缓存中异步获取指定 key 对应的内容。
@@ -395,13 +354,6 @@ object swanNsMembers extends js.Object {
   	 * @version 1.6.0
   	 */
   def getWifiList(): scala.Unit = js.native
-  /**
-  	 * 请求获取 Wi-Fi 列表
-  	 * 在 onGetWifiList 注册的回调中返回 wifiList 数据。
-  	 * iOS 将跳转到系统的 Wi-Fi 界面，Android 不会跳转。
-  	 * iOS 11.0 及 iOS 11.1 两个版本因系统问题，该方法失效。但在 iOS 11.2 中已修复。
-  	 * @version 1.6.0
-  	 */
   def getWifiList(options: BaseOptions[_, _]): scala.Unit = js.native
   /**
   	 * 收起键盘。
@@ -421,10 +373,6 @@ object swanNsMembers extends js.Object {
   	 * @version 1.1.0
   	 */
   def hideShareMenu(): scala.Unit = js.native
-  /**
-  	 * 隐藏分享按钮
-  	 * @version 1.1.0
-  	 */
   def hideShareMenu(options: ShareMenuOptions): scala.Unit = js.native
   /**
   	 * 隐藏 tabBar
@@ -459,9 +407,6 @@ object swanNsMembers extends js.Object {
   	 * 关闭当前页面，回退前一页面。
   	 */
   def navigateBack(): scala.Unit = js.native
-  /**
-  	 * 关闭当前页面，回退前一页面。
-  	 */
   def navigateBack(options: NavigateBackOptions): scala.Unit = js.native
   /**
   	 * 返回到上一个小程序，只有在当前小程序是被其他小程序打开时可以调用成功
@@ -530,20 +475,12 @@ object swanNsMembers extends js.Object {
   	 * @version 1.2.0
   	 */
   def onBeaconServiceChange(): scala.Unit = js.native
-  /**
-  	 * 监听 iBeacon 服务的状态变化
-  	 * @version 1.2.0
-  	 */
   def onBeaconServiceChange(callback: js.Function2[/* available */ scala.Boolean, /* discovering */ scala.Boolean, scala.Unit]): scala.Unit = js.native
   /**
   	 * 监听 iBeacon 设备的更新事件
   	 * @version 1.2.0
   	 */
   def onBeaconUpdate(): scala.Unit = js.native
-  /**
-  	 * 监听 iBeacon 设备的更新事件
-  	 * @version 1.2.0
-  	 */
   def onBeaconUpdate(callback: js.Function1[/* beacons */ js.Array[Beacon], scala.Unit]): scala.Unit = js.native
   /**
   	 * 监听蓝牙适配器状态变化事件
@@ -564,10 +501,6 @@ object swanNsMembers extends js.Object {
   	 * @version 1.6.0
   	 */
   def onGetWifiList(): scala.Unit = js.native
-  /**
-  	 * 监听在获取到 Wi-Fi 列表数据时的事件，在回调中将返回 wifiList。
-  	 * @version 1.6.0
-  	 */
   def onGetWifiList(callback: js.Function1[/* res */ GetWifiListOptions, scala.Unit]): scala.Unit = js.native
   // 内存
   def onMemoryWarning(callback: js.Function1[/* res */ baiduDashAppLib.Anon_Level, scala.Unit]): scala.Unit = js.native
@@ -592,20 +525,12 @@ object swanNsMembers extends js.Object {
   	 * @version 1.4.0
   	 */
   def onUserCaptureScreen(): scala.Unit = js.native
-  /**
-  	 * 监听用户主动截屏事件，用户使用系统截屏按键截屏时触发此事件
-  	 * @version 1.4.0
-  	 */
   def onUserCaptureScreen(callback: js.Function1[/* res */ js.Any, scala.Unit]): scala.Unit = js.native
   /**
   	 * 监听连接上 Wi-Fi 的事件。
   	 * @version 1.6.0
   	 */
   def onWifiConnected(): scala.Unit = js.native
-  /**
-  	 * 监听连接上 Wi-Fi 的事件。
-  	 * @version 1.6.0
-  	 */
   def onWifiConnected(callback: js.Function1[/* wifi */ WiFi, scala.Unit]): scala.Unit = js.native
   /**
   	 * 初始化蓝牙适配器
@@ -643,10 +568,6 @@ object swanNsMembers extends js.Object {
   	 * @deprecated 1.2.0
   	 */
   def pauseBackgroundAudio(): scala.Unit = js.native
-  /**
-  	 * 暂停播放音乐。
-  	 * @deprecated 1.2.0
-  	 */
   def pauseBackgroundAudio(options: PlayBackgroundAudioOptions): scala.Unit = js.native
   /**
   	 * 暂停正在播放的语音。
@@ -675,10 +596,6 @@ object swanNsMembers extends js.Object {
   	 * @version 1.1.0
   	 */
   def reLaunch(): scala.Unit = js.native
-  /**
-  	 * 关闭所有页面，打开到应用内的某个页面。
-  	 * @version 1.1.0
-  	 */
   def reLaunch(options: ReLaunchOptions): scala.Unit = js.native
   /**
   	 * 读取低功耗蓝牙设备的特征值的二进制数据值。
@@ -765,10 +682,6 @@ object swanNsMembers extends js.Object {
   	 * 判断方法是否存在。
   	 */
   def setDocumentTitle(): scala.Unit = js.native
-  /**
-  	 * 动态设置当前页面的标题。此方法为 web 版小程序专用方法，使用前需
-  	 * 判断方法是否存在。
-  	 */
   def setDocumentTitle(options: baiduDashAppLib.Anon_Title): scala.Unit = js.native
   def setEnableDebug(options: EnableDebugOptions): scala.Unit = js.native
   /**
@@ -777,31 +690,18 @@ object swanNsMembers extends js.Object {
   	 * @version 1.4.0
   	 */
   def setKeepScreenOn(): scala.Unit = js.native
-  /**
-  	 * 设置是否保持常亮状态。
-  	 * 仅在当前小程序生效，离开小程序后设置失效。
-  	 * @version 1.4.0
-  	 */
   def setKeepScreenOn(options: SetKeepScreenOnOptions): scala.Unit = js.native
   /**
   	 * 设置 web 版小程序 description meta 信息。此方法为 web 版小
   	 * 程序专用方法，使用前需判断方法是否存在。
   	 */
   def setMetaDescription(): scala.Unit = js.native
-  /**
-  	 * 设置 web 版小程序 description meta 信息。此方法为 web 版小
-  	 * 程序专用方法，使用前需判断方法是否存在。
-  	 */
   def setMetaDescription(content: MetaDescription): scala.Unit = js.native
   /**
   	 * 设置 web 版小程序 keywords meta 信息。此方法为 web 版小程序专
   	 * 用方法，使用前需判断方法是否存在。
   	 */
   def setMetaKeywords(): scala.Unit = js.native
-  /**
-  	 * 设置 web 版小程序 keywords meta 信息。此方法为 web 版小程序专
-  	 * 用方法，使用前需判断方法是否存在。
-  	 */
   def setMetaKeywords(content: MetaKeywords): scala.Unit = js.native
   /**
   	 * 设置导航颜色
@@ -856,14 +756,6 @@ object swanNsMembers extends js.Object {
   	 * @version 1.4.3
   	 */
   def setTopBarText(): scala.Unit = js.native
-  /**
-  	 * 动态设置置顶栏文字内容
-  	 * 只有当前小程序被置顶时能生效，如果当前小程序没有被置顶，也能调用成功，但是不会立即生效
-  	 * 只有在用户将这个小程序置顶后才换上设置的文字内容。
-  	 * 注意：调用成功后，需间隔 5s 才能再次调用此接口，如果在 5s 内再次调用此接口，会回调
-  	 * fail，errMsg："setTopBarText: fail invoke too frequently"
-  	 * @version 1.4.3
-  	 */
   def setTopBarText(options: SetTopBarTextOptions): scala.Unit = js.native
   /**
   	 * iOS特有接口 在 onGetWifiList 回调后，利用接口设置 wifiList 中 AP 的相关信息。
@@ -896,10 +788,6 @@ object swanNsMembers extends js.Object {
   	 *
   	 */
   def showShareMenu(): scala.Unit = js.native
-  /**
-  	 * 显示分享按钮
-  	 *
-  	 */
   def showShareMenu(options: ShareMenuOptions): scala.Unit = js.native
   /**
   	 * 显示 tabBar
@@ -932,11 +820,6 @@ object swanNsMembers extends js.Object {
   	 * @version 1.1.0
   	 */
   def startCompass(): scala.Unit = js.native
-  /**
-  	 * 开始监听罗盘数据。
-  	 * 微信客户端 6.5.6 版本开始支持
-  	 * @version 1.1.0
-  	 */
   def startCompass(options: CompassOptions): scala.Unit = js.native
   // 页面-----下拉刷新
   /**
@@ -944,11 +827,6 @@ object swanNsMembers extends js.Object {
   	 * @version 1.5.0
   	 */
   def startPullDownRefresh(): scala.Unit = js.native
-  // 页面-----下拉刷新
-  /**
-  	 * 开始下拉刷新，调用后触发下拉刷新动画，效果与用户手动下拉刷新一致
-  	 * @version 1.5.0
-  	 */
   def startPullDownRefresh(options: BaseOptions[_, _]): scala.Unit = js.native
   /**
   	 * 开始录音。当主动调用swan.stopRecord，
@@ -964,11 +842,6 @@ object swanNsMembers extends js.Object {
   	 * @version 1.6.0
   	 */
   def startWifi(): scala.Unit = js.native
-  // 设备-----Wi-Fi
-  /**
-  	 * 初始化 Wi-Fi 模块。
-  	 * @version 1.6.0
-  	 */
   def startWifi(options: BaseOptions[_, _]): scala.Unit = js.native
   /**
   	 * 停止监听加速度数据。
@@ -976,21 +849,12 @@ object swanNsMembers extends js.Object {
   	 * @version 1.1.0
   	 */
   def stopAccelerometer(): scala.Unit = js.native
-  /**
-  	 * 停止监听加速度数据。
-  	 * 微信客户端 6.5.6 版本开始支持
-  	 * @version 1.1.0
-  	 */
   def stopAccelerometer(options: AccelerometerOptions): scala.Unit = js.native
   /**
   	 * 停止播放音乐。
   	 * @deprecated 1.2.0
   	 */
   def stopBackgroundAudio(): scala.Unit = js.native
-  /**
-  	 * 停止播放音乐。
-  	 * @deprecated 1.2.0
-  	 */
   def stopBackgroundAudio(options: PlayBackgroundAudioOptions): scala.Unit = js.native
   /**
   	 * 停止搜索附近的iBeacon设备
@@ -1009,18 +873,11 @@ object swanNsMembers extends js.Object {
   	 * @version 1.5.0
   	 */
   def stopPullDownRefresh(): scala.Unit = js.native
-  /**
-  	 * 停止当前页面下拉刷新
-  	 * @version 1.5.0
-  	 */
   def stopPullDownRefresh(options: BaseOptions[_, _]): scala.Unit = js.native
   /**
   	 * 主动调用停止录音。
   	 */
   def stopRecord(): scala.Unit = js.native
-  /**
-  	 * 主动调用停止录音。
-  	 */
   def stopRecord(options: StopRecordAudioOptions): scala.Unit = js.native
   /**
   	 * 结束播放语音。
@@ -1032,10 +889,6 @@ object swanNsMembers extends js.Object {
   	 * @version 1.6.0
   	 */
   def stopWifi(): scala.Unit = js.native
-  /**
-  	 * 关闭 Wi-Fi 模块。
-  	 * @version 1.6.0
-  	 */
   def stopWifi(options: BaseOptions[_, _]): scala.Unit = js.native
   /**
   	 * 跳转到 tabBar 页面，并关闭其他所有非 tabBar 页面
@@ -1046,10 +899,6 @@ object swanNsMembers extends js.Object {
   	 * @version 1.2.0
   	 */
   def updateShareMenu(): scala.Unit = js.native
-  /**
-  	 * 更新转发属性
-  	 * @version 1.2.0
-  	 */
   def updateShareMenu(options: UpdateShareMenuOptions): scala.Unit = js.native
   /**
   	 * 将本地资源上传到开发者服务器。
@@ -1069,21 +918,12 @@ object swanNsMembers extends js.Object {
   	 * @version 1.2.0
   	 */
   def vibrateLong(): scala.Unit = js.native
-  // 设备-----震动
-  /**
-  	 * 使手机发生较长时间的振动（400ms）
-  	 * @version 1.2.0
-  	 */
   def vibrateLong(options: BaseOptions[_, _]): scala.Unit = js.native
   /**
   	 * 使手机发生较短时间的振动（15ms）
   	 * @version 1.2.0
   	 */
   def vibrateShort(): scala.Unit = js.native
-  /**
-  	 * 使手机发生较短时间的振动（15ms）
-  	 * @version 1.2.0
-  	 */
   def vibrateShort(options: BaseOptions[_, _]): scala.Unit = js.native
   /**
   	 * 向低功耗蓝牙设备特征值中写入二进制数据。

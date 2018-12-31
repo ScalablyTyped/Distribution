@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * see http://docs.angular-formly.com/docs/custom-templates#templates-scope
 	 */
-
 trait ITemplateScope extends js.Object {
   //Shortcut to options.formControl
   var fc: angularLib.angularMod.angularNs.IFormController | js.Array[angularLib.angularMod.angularNs.IFormController]

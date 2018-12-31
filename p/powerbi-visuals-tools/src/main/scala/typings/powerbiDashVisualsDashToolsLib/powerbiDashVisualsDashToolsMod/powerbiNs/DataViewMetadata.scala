@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataViewMetadata extends js.Object {
   var columns: js.Array[DataViewMetadataColumn]
   /** Describes the data reduction applied to this data set when limits are exceeded. */

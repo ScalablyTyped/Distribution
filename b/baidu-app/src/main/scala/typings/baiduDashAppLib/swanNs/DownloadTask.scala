@@ -17,10 +17,6 @@ trait DownloadTask extends js.Object {
   		 * @version 1.4.0
   		 */
   def onProgressUpdate(): scala.Unit = js.native
-  /**
-  		 * 监听下载进度变化
-  		 * @version 1.4.0
-  		 */
   def onProgressUpdate(callback: js.Function1[/* res */ baiduDashAppLib.Anon_Progress, scala.Unit]): scala.Unit = js.native
 }
 

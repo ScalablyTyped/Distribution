@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Tree State
-     */
-
+  * Tree State
+  */
 trait ITreeState extends js.Object {
   //The currently loaded root node reference - depending on the section loaded this could be a section root or a normal root.
   //We keep this reference so we can lookup nodes to interact with in the UI via the tree service

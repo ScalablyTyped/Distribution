@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SvgUseProps extends SvgCommonProps {
   var height: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var href: java.lang.String

@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation._
 sealed trait ContentType extends js.Object
 
 /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.ContentType")
 @js.native
 object ContentType extends js.Object {
   /**
-           *
-           * Indicates plain format type of the comment content.
-           *
-           */
+    *
+    * Indicates plain format type of the comment content.
+    *
+    */
   @js.native
   sealed trait plain
     extends officeDashJsDashPreviewLib.ExcelNs.ContentType

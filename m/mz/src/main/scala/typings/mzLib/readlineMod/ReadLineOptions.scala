@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReadLineOptions extends js.Object {
   var completer: js.UndefOr[Completer] = js.undefined
   var historySize: js.UndefOr[scala.Double] = js.undefined

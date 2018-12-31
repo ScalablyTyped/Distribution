@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RestoreBackupContext extends js.Object {
   /** The ID of the backup run to restore from. */
   var backupRunId: js.UndefOr[java.lang.String] = js.undefined

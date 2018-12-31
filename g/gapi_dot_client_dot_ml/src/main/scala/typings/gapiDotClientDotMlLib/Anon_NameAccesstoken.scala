@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NameAccesstoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -33,23 +32,23 @@ trait Anon_NameAccesstoken extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Required. Specifies the path, relative to `Version`, of the field to
-                   * update. Must be present and non-empty.
-                   *
-                   * For example, to change the description of a version to "foo", the
-                   * `update_mask` parameter would be specified as `description`, and the
-                   * `PATCH` request body would specify the new value, as follows:
-                   * {
-                   * "description": "foo"
-                   * }
-                   * In this example, the version is blindly overwritten since no etag is given.
-                   *
-                   * To adopt etag mechanism, include `etag` field in the mask, and include the
-                   * `etag` value in your version resource.
-                   *
-                   * Currently the only supported update masks are `description`, `labels`, and
-                   * `etag`.
-                   */
+    * Required. Specifies the path, relative to `Version`, of the field to
+    * update. Must be present and non-empty.
+    *
+    * For example, to change the description of a version to "foo", the
+    * `update_mask` parameter would be specified as `description`, and the
+    * `PATCH` request body would specify the new value, as follows:
+    * {
+    * "description": "foo"
+    * }
+    * In this example, the version is blindly overwritten since no etag is given.
+    *
+    * To adopt etag mechanism, include `etag` field in the mask, and include the
+    * `etag` value in your version resource.
+    *
+    * Currently the only supported update masks are `description`, `labels`, and
+    * `etag`.
+    */
   var updateMask: js.UndefOr[java.lang.String] = js.undefined
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

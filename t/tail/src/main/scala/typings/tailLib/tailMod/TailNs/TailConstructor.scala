@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation._
 trait TailConstructor
   extends /** Creates a new Tail object that starts watching the specified file immediately. */
 org.scalablytyped.runtime.Instantiable1[/* filename */ java.lang.String, Tail]
-     with /** Creates a new Tail object that starts watching the specified file immediately. */
-org.scalablytyped.runtime.Instantiable2[/* filename */ java.lang.String, /* options */ TailOptions, Tail]
+     with org.scalablytyped.runtime.Instantiable2[/* filename */ java.lang.String, /* options */ TailOptions, Tail]
 

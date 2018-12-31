@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SwitchOptions extends js.Object {
   var change: js.UndefOr[js.Function1[/* e */ SwitchChangeEvent, scala.Unit]] = js.undefined
   var checked: js.UndefOr[scala.Boolean] = js.undefined

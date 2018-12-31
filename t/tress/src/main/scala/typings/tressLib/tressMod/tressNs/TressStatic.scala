@@ -82,19 +82,7 @@ trait TressStatic extends js.Object {
   		 * Pauses the processing of jobs until resume() is called
   		 */
   def pause(): scala.Unit = js.native
-  /**
-  		 * Adds a new job to the queue.
-  		 * Instead of a single job, a jobs array can be submitted.
-  		 * Note, that if you pass callback as second argument,
-  		 * tress calls this callback once the worker has finished processing the job
-  		 */
   def push(job: js.Array[TressJobData]): scala.Unit = js.native
-  /**
-  		 * Adds a new job to the queue.
-  		 * Instead of a single job, a jobs array can be submitted.
-  		 * Note, that if you pass callback as second argument,
-  		 * tress calls this callback once the worker has finished processing the job
-  		 */
   def push(job: js.Array[TressJobData], done: TressJobCallback): scala.Unit = js.native
   /**
   		 * Adds a new job to the queue.
@@ -103,12 +91,6 @@ trait TressStatic extends js.Object {
   		 * tress calls this callback once the worker has finished processing the job
   		 */
   def push(job: TressJobData): scala.Unit = js.native
-  /**
-  		 * Adds a new job to the queue.
-  		 * Instead of a single job, a jobs array can be submitted.
-  		 * Note, that if you pass callback as second argument,
-  		 * tress calls this callback once the worker has finished processing the job
-  		 */
   def push(job: TressJobData, done: TressJobCallback): scala.Unit = js.native
   /**
   		 * Resumes the processing of queued jobs when the queue is paused
@@ -144,19 +126,7 @@ trait TressStatic extends js.Object {
   		 * A callback that is called when the number of running workers is less than the concurrency & buffer limits, and further jobs will not be queued
   		 */
   def unsaturated(): scala.Unit = js.native
-  /**
-  		 * Adds a new job to the front of the queue.
-  		 * Instead of a single job, a jobs array can be submitted.
-  		 * Note, that if you pass callback as second argument,
-  		 * tress calls this callback once the worker has finished processing the job
-  		 */
   def unshift(job: js.Array[TressJobData]): scala.Unit = js.native
-  /**
-  		 * Adds a new job to the front of the queue.
-  		 * Instead of a single job, a jobs array can be submitted.
-  		 * Note, that if you pass callback as second argument,
-  		 * tress calls this callback once the worker has finished processing the job
-  		 */
   def unshift(job: js.Array[TressJobData], done: TressJobCallback): scala.Unit = js.native
   /**
   		 * Adds a new job to the front of the queue.
@@ -165,12 +135,6 @@ trait TressStatic extends js.Object {
   		 * tress calls this callback once the worker has finished processing the job
   		 */
   def unshift(job: TressJobData): scala.Unit = js.native
-  /**
-  		 * Adds a new job to the front of the queue.
-  		 * Instead of a single job, a jobs array can be submitted.
-  		 * Note, that if you pass callback as second argument,
-  		 * tress calls this callback once the worker has finished processing the job
-  		 */
   def unshift(job: TressJobData, done: TressJobCallback): scala.Unit = js.native
   /**
   		 * Returns the array of items currently being processed

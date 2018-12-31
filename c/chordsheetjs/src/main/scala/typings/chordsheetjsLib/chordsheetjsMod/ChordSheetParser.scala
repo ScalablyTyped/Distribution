@@ -22,9 +22,9 @@ class ChordSheetParser protected () extends js.Object {
   def hasNextLine(): scala.Boolean = js.native
   def initialize(document: java.lang.String): scala.Unit = js.native
   /**
-       * Parses a chord sheet into a song
-       * @param chordSheet The ChordPro chord sheet
-       */
+    * Parses a chord sheet into a song
+    * @param chordSheet The ChordPro chord sheet
+    */
   def parse(chordSheet: java.lang.String): Song = js.native
   def parseLine(line: java.lang.String): scala.Unit = js.native
   def parseLyricsWithChords(chordsLine: java.lang.String, lyricsLine: java.lang.String): scala.Unit = js.native

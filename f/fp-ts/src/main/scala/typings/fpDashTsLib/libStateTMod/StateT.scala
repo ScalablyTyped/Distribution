@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StateT[M] extends js.Object {
   def ap[S, A, B](
     fab: js.Function1[/* s */ S, fpDashTsLib.libHKTMod.HKT[M, js.Tuple2[js.Function1[/* a */ A, B], S]]],

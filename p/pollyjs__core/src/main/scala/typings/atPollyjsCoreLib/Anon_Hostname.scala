@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Hostname extends js.Object {
   var hash: js.UndefOr[
     scala.Boolean | (atPollyjsCoreLib.coreMod.MatchBy[java.lang.String, java.lang.String])

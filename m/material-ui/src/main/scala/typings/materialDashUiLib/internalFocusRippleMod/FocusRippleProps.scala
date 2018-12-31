@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FocusRippleProps
   extends reactLib.reactMod.ReactNs.Props[FocusRipple] {
   var color: js.UndefOr[java.lang.String] = js.undefined

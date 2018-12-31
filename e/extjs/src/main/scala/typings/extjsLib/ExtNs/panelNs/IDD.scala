@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDD
   extends extjsLib.ExtNs.ddNs.IDragSource {
   /** [Method] Returns a reference to the actual element to drag

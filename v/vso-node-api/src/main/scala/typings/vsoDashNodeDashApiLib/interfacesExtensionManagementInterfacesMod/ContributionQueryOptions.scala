@@ -12,36 +12,36 @@ sealed trait ContributionQueryOptions extends js.Object
 @js.native
 object ContributionQueryOptions extends js.Object {
   /**
-       * Some callers may want the entire tree back without constraint evaluation being performed.
-       */
+    * Some callers may want the entire tree back without constraint evaluation being performed.
+    */
   @js.native
   sealed trait IgnoreConstraints
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ContributionQueryOptions
   
   /**
-       * Include the contribution being queried as well as all contributions that target them recursively.
-       */
+    * Include the contribution being queried as well as all contributions that target them recursively.
+    */
   @js.native
   sealed trait IncludeAll
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ContributionQueryOptions
   
   /**
-       * Include the contributions that directly target the contributions queried.
-       */
+    * Include the contributions that directly target the contributions queried.
+    */
   @js.native
   sealed trait IncludeChildren
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ContributionQueryOptions
   
   /**
-       * Include the direct contributions that have the ids queried.
-       */
+    * Include the direct contributions that have the ids queried.
+    */
   @js.native
   sealed trait IncludeSelf
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ContributionQueryOptions
   
   /**
-       * Include the contributions from the entire sub-tree targetting the contributions queried.
-       */
+    * Include the contributions from the entire sub-tree targetting the contributions queried.
+    */
   @js.native
   sealed trait IncludeSubTree
     extends vsoDashNodeDashApiLib.interfacesExtensionManagementInterfacesMod.ContributionQueryOptions

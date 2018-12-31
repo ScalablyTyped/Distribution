@@ -15,7 +15,7 @@ trait INamespace[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M,
   def getNamespaces(): js.Promise[INamespaceMap[C, N, M, I, O]] = js.native
   def groupCommandsByNamespace(commands: js.Array[HydratedCommandMetadata[C, N, M, I, O]]): js.Promise[
     js.Array[
-      (HydratedNamespaceMetadata[C, N, M, I, O]) with (atIonicCliDashFrameworkLib.Anon_Commands[I, C, M, N, O])
+      (HydratedNamespaceMetadata[C, N, M, I, O]) with (atIonicCliDashFrameworkLib.Anon_Commands[I, N, O, M, C])
     ]
   ] = js.native
   def locate(argv: js.Array[java.lang.String]): js.Promise[NamespaceLocateResult[C, N, M, I, O]] = js.native

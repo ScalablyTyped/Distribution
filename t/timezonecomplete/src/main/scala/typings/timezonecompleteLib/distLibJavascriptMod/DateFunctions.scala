@@ -12,15 +12,15 @@ sealed trait DateFunctions extends js.Object
 @js.native
 object DateFunctions extends js.Object {
   /**
-       * Use the Date.getFullYear(), Date.getMonth(), ... functions.
-       */
+    * Use the Date.getFullYear(), Date.getMonth(), ... functions.
+    */
   @js.native
   sealed trait Get
     extends timezonecompleteLib.distLibJavascriptMod.DateFunctions
   
   /**
-       * Use the Date.getUTCFullYear(), Date.getUTCMonth(), ... functions.
-       */
+    * Use the Date.getUTCFullYear(), Date.getUTCMonth(), ... functions.
+    */
   @js.native
   sealed trait GetUTC
     extends timezonecompleteLib.distLibJavascriptMod.DateFunctions

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TypeCastExpression extends Node {
   var expression: Expression
   var typeAnnotation: FlowTypeAnnotation

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AirportData extends js.Object {
   /** The city code an airport is located in. For example, for JFK airport, this is NYC. */
   var city: js.UndefOr[java.lang.String] = js.undefined

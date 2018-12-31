@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick) */ 
-trait ToggleButtonProps
+- Lifted 1 members from Set(std.Pick<@material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps, std.Exclude<keyof @material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps, 'classes' | 'component'>>) */ trait ToggleButtonProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ToggleButtonClassKey]
      with atMaterialDashUiCoreLib.Anon_ClassName {
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[ToggleButtonProps]] = js.undefined

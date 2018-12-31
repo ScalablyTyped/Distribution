@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AceEditorProps extends js.Object {
   var annotations: js.UndefOr[js.Array[Annotation]] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined

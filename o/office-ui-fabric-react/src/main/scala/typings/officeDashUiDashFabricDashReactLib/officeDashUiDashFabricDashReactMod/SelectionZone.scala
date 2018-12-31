@@ -14,6 +14,6 @@ class SelectionZone ()
 @JSImport("office-ui-fabric-react", "SelectionZone")
 @js.native
 object SelectionZone extends js.Object {
-  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_IsMultiSelectEnabled = js.native
+  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_IsMultiSelectEnabledSelectionMode = js.native
 }
 

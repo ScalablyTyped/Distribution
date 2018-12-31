@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SubnetInfo extends js.Object {
   var broadcastAddress: java.lang.String
   var firstAddress: java.lang.String

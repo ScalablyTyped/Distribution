@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * @class
-     *
-     * <p>A AV.User object is a local representation of a user persisted to the
-     * AV cloud. This class is a subclass of a AV.Object, and retains the
-     * same functionality of a AV.Object, but also extends it with various
-     * user specific methods, like authentication, signing up, and validation of
-     * uniqueness.</p>
-     */
+  * @class
+  *
+  * <p>A AV.User object is a local representation of a user persisted to the
+  * AV cloud. This class is a subclass of a AV.Object, and retains the
+  * same functionality of a AV.Object, but also extends it with various
+  * user specific methods, like authentication, signing up, and validation of
+  * uniqueness.</p>
+  */
 @js.native
 trait User extends Object {
   def authenticated(): scala.Boolean = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JQueryFormOptions
   extends jqueryLib.JQueryNs.AjaxSettings[js.Any] {
   var beforeSerialize: js.UndefOr[js.Function2[/* $form */ JQuery, /* options */ JQueryFormOptions, scala.Boolean]] = js.undefined

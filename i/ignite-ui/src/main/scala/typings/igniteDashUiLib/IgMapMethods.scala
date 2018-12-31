@@ -48,19 +48,7 @@ trait IgMapMethods extends js.Object {
   	 * @param height The height of the image.
   	 */
   def exportImage(): js.Object = js.native
-  /**
-  	 * Exports the map to a PNG image.
-  	 *
-  	 * @param width The width of the image.
-  	 * @param height The height of the image.
-  	 */
   def exportImage(width: js.Object): js.Object = js.native
-  /**
-  	 * Exports the map to a PNG image.
-  	 *
-  	 * @param width The width of the image.
-  	 * @param height The height of the image.
-  	 */
   def exportImage(width: js.Object, height: js.Object): js.Object = js.native
   /**
   	 * Exports visual data from the map to aid in unit testing

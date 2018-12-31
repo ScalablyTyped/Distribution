@@ -15,9 +15,6 @@ class ToplistAccess () extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/ToplistAccess.html#method_createOrUpdateToplist
   		 */
   def createOrUpdateToplist(userPersistenceNumberKey: java.lang.String, displayName: java.lang.String): Toplist = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/ToplistAccess.html#method_createOrUpdateToplist
-  		 */
   def createOrUpdateToplist(
     userPersistenceNumberKey: java.lang.String,
     displayName: java.lang.String,

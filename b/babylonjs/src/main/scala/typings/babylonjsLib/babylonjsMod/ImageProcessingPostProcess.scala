@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * ImageProcessingPostProcess
-     * @see https://doc.babylonjs.com/how_to/how_to_use_postprocesses#imageprocessing
-     */
+  * ImageProcessingPostProcess
+  * @see https://doc.babylonjs.com/how_to/how_to_use_postprocesses#imageprocessing
+  */
 @JSImport("babylonjs", "ImageProcessingPostProcess")
 @js.native
 class ImageProcessingPostProcess protected ()

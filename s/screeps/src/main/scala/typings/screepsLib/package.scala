@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 package object screepsLib {
   type ATTACK = screepsLib.screepsLibStrings.attack
   /**
-   * A discriminated union on Structure.type of all owned structure types
-   */
+    * A discriminated union on Structure.type of all owned structure types
+    */
   type AnyOwnedStructure = StructureController | StructureExtension | StructureExtractor | StructureKeeperLair | StructureLab | StructureLink | StructureNuker | StructureObserver | StructurePowerBank | StructurePowerSpawn | StructureRampart | StructureSpawn | StructureStorage | StructureTerminal | StructureTower
   /**
-   * A discriminated union on Structure.type of all structure types
-   */
+    * A discriminated union on Structure.type of all structure types
+    */
   type AnyStructure = AnyOwnedStructure | StructureContainer | StructurePortal | StructureRoad | StructureWall
   type BOTTOM = screepsLib.screepsLibNumbers.`5`
   type BOTTOM_LEFT = screepsLib.screepsLibNumbers.`6`
@@ -110,7 +110,10 @@ package object screepsLib {
   type FIND_SOURCES_ACTIVE = screepsLib.screepsLibNumbers.`104`
   type FIND_STRUCTURES = screepsLib.screepsLibNumbers.`107`
   type FIND_TOMBSTONES = screepsLib.screepsLibNumbers.`118`
-  type FilterFunction[T /* <: FindConstant */] = js.Function1[/* object */ js.Any, scala.Boolean]
+  type FilterFunction[T /* <: FindConstant */] = js.Function1[
+    /* import warning: ImportType.apply Failed type conversion: screeps.FindTypes[T] */ /* object */ js.Any, 
+    scala.Boolean
+  ]
   type FindConstant = FIND_EXIT_TOP | FIND_EXIT_RIGHT | FIND_EXIT_BOTTOM | FIND_EXIT_LEFT | FIND_EXIT | FIND_CREEPS | FIND_MY_CREEPS | FIND_HOSTILE_CREEPS | FIND_SOURCES_ACTIVE | FIND_SOURCES | FIND_DROPPED_RESOURCES | FIND_STRUCTURES | FIND_MY_STRUCTURES | FIND_HOSTILE_STRUCTURES | FIND_FLAGS | FIND_CONSTRUCTION_SITES | FIND_MY_SPAWNS | FIND_HOSTILE_SPAWNS | FIND_MY_CONSTRUCTION_SITES | FIND_HOSTILE_CONSTRUCTION_SITES | FIND_MINERALS | FIND_NUKES | FIND_TOMBSTONES
   type HEAL = screepsLib.screepsLibStrings.heal
   type LEFT = screepsLib.screepsLibNumbers.`7`
@@ -125,12 +128,12 @@ package object screepsLib {
   type LOOK_STRUCTURES = screepsLib.screepsLibStrings.structure
   type LOOK_TERRAIN = screepsLib.screepsLibStrings.terrain
   type LOOK_TOMBSTONES = screepsLib.screepsLibStrings.tombstone
-  type LookAtResult[K /* <: LookConstant */] = (stdLib.Pick[LookAtTypes, K]) with Anon_TypeK_747148486[K]
+  type LookAtResult[K /* <: LookConstant */] = (stdLib.Pick[LookAtTypes, K]) with Anon_TypeK_1348365900[K]
   type LookAtResultWithPos[K /* <: LookConstant */] = LookAtResult[K] with Anon_Y
   type LookAtTypes = stdLib.Partial[AllLookAtTypes]
   // Look Constants
   type LookConstant = LOOK_CREEPS | LOOK_ENERGY | LOOK_RESOURCES | LOOK_SOURCES | LOOK_MINERALS | LOOK_STRUCTURES | LOOK_FLAGS | LOOK_CONSTRUCTION_SITES | LOOK_NUKES | LOOK_TERRAIN | LOOK_TOMBSTONES
-  type LookForAtAreaResult[T, K /* <: java.lang.String */] = Anon_TypeK[K] with screepsLib.screepsLibStrings.LookForAtAreaResult with js.Any
+  type LookForAtAreaResult[T, K /* <: java.lang.String */] = Anon_TypeK[K, T]
   type LookForAtAreaResultArray[T, K /* <: java.lang.String */] = js.Array[LookForAtAreaResultWithPos[T, K]]
   type LookForAtAreaResultWithPos[T, K /* <: java.lang.String */] = (LookForAtAreaResult[T, K]) with Anon_Y
   type MOVE = screepsLib.screepsLibStrings.move
@@ -218,10 +221,9 @@ package object screepsLib {
   type TOP_RIGHT = screepsLib.screepsLibNumbers.`2`
   type TOUGH = screepsLib.screepsLibStrings.tough
   /*
-   * This file creates literal versions of many of the constants
-   * It should be kept in sync with constants.ts
-   */
-  
+    * This file creates literal versions of many of the constants
+    * It should be kept in sync with constants.ts
+    */
   // Extras
   type Terrain = screepsLib.screepsLibStrings.plain | screepsLib.screepsLibStrings.swamp | screepsLib.screepsLibStrings.wall
   type WORK = screepsLib.screepsLibStrings.work

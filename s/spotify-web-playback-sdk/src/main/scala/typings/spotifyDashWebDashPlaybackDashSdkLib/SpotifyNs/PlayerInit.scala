@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlayerInit extends js.Object {
   var name: java.lang.String
   var volume: js.UndefOr[scala.Double] = js.undefined

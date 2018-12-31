@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InappproductsBatchRequestEntry extends js.Object {
   var batchId: js.UndefOr[scala.Double] = js.undefined
   var inappproductsinsertrequest: js.UndefOr[InappproductsInsertRequest] = js.undefined

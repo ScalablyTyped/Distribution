@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Cache extends js.Object {
   var expires: scala.Double
   var lastSync: scala.Double

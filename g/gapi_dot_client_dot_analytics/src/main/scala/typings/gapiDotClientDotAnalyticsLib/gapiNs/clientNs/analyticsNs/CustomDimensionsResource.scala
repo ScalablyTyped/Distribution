@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomDimensionsResource extends js.Object {
   /** Get a custom dimension to which the user has access. */
   def get(request: gapiDotClientDotAnalyticsLib.Anon_CustomDimensionId): gapiDotClientLib.gapiNs.clientNs.Request[CustomDimension]

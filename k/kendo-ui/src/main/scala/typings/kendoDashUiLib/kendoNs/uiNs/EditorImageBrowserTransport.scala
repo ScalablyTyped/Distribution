@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditorImageBrowserTransport extends js.Object {
   var create: js.UndefOr[java.lang.String | EditorImageBrowserTransportCreate] = js.undefined
   var destroy: js.UndefOr[java.lang.String | EditorImageBrowserTransportDestroy] = js.undefined

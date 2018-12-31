@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * A toast notification.
 		 */
-
 trait Notification
   extends titaniumLib.TitaniumNs.Proxy {
   /**

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WindowOptions extends js.Object {
   var actions: js.UndefOr[js.Any] = js.undefined
   var activate: js.UndefOr[js.Function1[/* e */ WindowEvent, scala.Unit]] = js.undefined

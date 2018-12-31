@@ -10,18 +10,18 @@ import scala.scalajs.js.annotation._
 class namespaced protected () extends AutoLaunch {
   def this(options: AutoLaunchOptions) = this()
   /**
-     * Disables auto-launch at start up.
-     */
+    * Disables auto-launch at start up.
+    */
   /* CompleteClass */
   override def disable(): js.Promise[scala.Unit] = js.native
   /**
-     * Enables auto-launch at start up.
-     */
+    * Enables auto-launch at start up.
+    */
   /* CompleteClass */
   override def enable(): js.Promise[scala.Unit] = js.native
   /**
-     * Returns true if auto-launch is enabled.
-     */
+    * Returns true if auto-launch is enabled.
+    */
   /* CompleteClass */
   override def isEnabled(): js.Promise[scala.Boolean] = js.native
 }

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClusterOperationMetadata extends js.Object {
   /** Output-only. Name of the cluster for the operation. */
   var clusterName: js.UndefOr[java.lang.String] = js.undefined

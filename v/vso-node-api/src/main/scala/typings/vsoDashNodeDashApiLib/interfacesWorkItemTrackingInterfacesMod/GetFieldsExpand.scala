@@ -12,15 +12,15 @@ sealed trait GetFieldsExpand extends js.Object
 @js.native
 object GetFieldsExpand extends js.Object {
   /**
-       * Adds extension fields to the response.
-       */
+    * Adds extension fields to the response.
+    */
   @js.native
   sealed trait ExtensionFields
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.GetFieldsExpand
   
   /**
-       * Default behavior.
-       */
+    * Default behavior.
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.GetFieldsExpand

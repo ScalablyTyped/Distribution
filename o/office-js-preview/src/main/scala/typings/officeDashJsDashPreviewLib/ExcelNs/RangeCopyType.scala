@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait RangeCopyType extends js.Object
 
 /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.RangeCopyType")
 @js.native
 object RangeCopyType extends js.Object {

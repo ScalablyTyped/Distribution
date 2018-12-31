@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait SaveMode extends js.Object
 
 /**
-     * Enumeration of entity form save modes.
-     */
+  * Enumeration of entity form save modes.
+  */
 @JSGlobal("XrmEnum.SaveMode")
 @js.native
 object SaveMode extends js.Object {

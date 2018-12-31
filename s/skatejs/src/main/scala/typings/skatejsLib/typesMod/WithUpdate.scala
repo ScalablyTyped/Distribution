@@ -18,15 +18,15 @@ class WithUpdate[P, S] ()
   /* CompleteClass */
   override val isContentEditable: scala.Boolean = js.native
   /**
-       * Returns the first following sibling that
-       * is an element, and null otherwise.
-       */
+    * Returns the first following sibling that
+    * is an element, and null otherwise.
+    */
   /* CompleteClass */
   override val nextElementSibling: stdLib.Element | scala.Null = js.native
   /**
-       * Returns the first preceding sibling that
-       * is an element, and null otherwise.
-       */
+    * Returns the first preceding sibling that
+    * is an element, and null otherwise.
+    */
   /* CompleteClass */
   override val previousElementSibling: stdLib.Element | scala.Null = js.native
   // Special hack for own components type checking.
@@ -39,23 +39,17 @@ class WithUpdate[P, S] ()
   override val style: stdLib.CSSStyleDeclaration = js.native
   // Called to check whether or not the component should call updated(), much like React's shouldComponentUpdate().
   def shouldUpdate(): scala.Boolean = js.native
-  // Called to check whether or not the component should call updated(), much like React's shouldComponentUpdate().
   def shouldUpdate(props: P): scala.Boolean = js.native
-  // Called to check whether or not the component should call updated(), much like React's shouldComponentUpdate().
   def shouldUpdate(props: P, state: S): scala.Boolean = js.native
   // manually force update
   def triggerUpdate(): scala.Unit = js.native
   // Called if shouldUpdate returned true, much like React's componentWillUpdate()
   def updated(): scala.Unit = js.native
-  // Called if shouldUpdate returned true, much like React's componentWillUpdate()
   def updated(props: Mixed): scala.Unit = js.native
-  // Called if shouldUpdate returned true, much like React's componentWillUpdate()
   def updated(props: Mixed, state: Mixed): scala.Unit = js.native
   // Called when props have been set regardless of if they've changed. much like React's componentWillReceiveProps().
   def updating(): scala.Unit = js.native
-  // Called when props have been set regardless of if they've changed. much like React's componentWillReceiveProps().
   def updating(props: P): scala.Unit = js.native
-  // Called when props have been set regardless of if they've changed. much like React's componentWillReceiveProps().
   def updating(props: P, state: S): scala.Unit = js.native
 }
 

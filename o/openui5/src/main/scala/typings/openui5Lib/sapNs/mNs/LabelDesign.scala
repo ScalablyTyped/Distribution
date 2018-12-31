@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait LabelDesign extends js.Object
 
 /**
-     * Available label display modes.
-    */
+  * Available label display modes.
+  */
 @JSGlobal("sap.m.LabelDesign")
 @js.native
 object LabelDesign extends js.Object {

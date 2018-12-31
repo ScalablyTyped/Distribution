@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("gulp-typescript", "compile")
 @js.native
 object compileNs extends js.Object {
-  
   trait Settings
     extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
     var allowNonTsExtensions: js.UndefOr[scala.Boolean] = js.undefined
@@ -42,13 +41,12 @@ object compileNs extends js.Object {
     var sourceRoot: js.UndefOr[java.lang.String] = js.undefined
     var suppressImplicitAnyIndexErrors: js.UndefOr[scala.Boolean] = js.undefined
     var target: js.UndefOr[java.lang.String | typescriptLib.typescriptMod.tsNs.ScriptTarget] = js.undefined
-    var typescript: js.UndefOr[js.Any] = js.undefined
+    var typescript: js.UndefOr[gulpDashTypescriptLib.Anon_CreateFunctionExpression] = js.undefined
   }
   
   @JSName("reporter")
   @js.native
   object reporterNs extends js.Object {
-    
     trait CompilationResult extends js.Object {
       var declarationErrors: scala.Double
       var emitErrors: scala.Double
@@ -59,17 +57,16 @@ object compileNs extends js.Object {
       var semanticErrors: scala.Double
       var syntaxErrors: scala.Double
       /**
-           * Only used when using isolatedModules.
-           */
+        * Only used when using isolatedModules.
+        */
       var transpileErrors: scala.Double
     }
-    
     
     trait Reporter extends js.Object {
       var error: js.UndefOr[
             js.Function2[
               /* error */ gulpDashTypescriptLib.releaseReporterMod.TypeScriptError, 
-              /* typescript */ js.Any, 
+              /* typescript */ gulpDashTypescriptLib.Anon_CreateFunctionExpression, 
               scala.Unit
             ]
           ] = js.undefined
@@ -80,7 +77,6 @@ object compileNs extends js.Object {
             ]
           ] = js.undefined
     }
-    
     
     trait TypeScriptError
       extends nodeLib.Error {

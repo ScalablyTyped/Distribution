@@ -12,20 +12,20 @@ sealed trait AttributeMarker extends js.Object
 @js.native
 object AttributeMarker extends js.Object {
   /**
-       * Marker indicates that the following 3 values in the attributes array are:
-       * namespaceUri, attributeName, attributeValue
-       * in that order.
-       */
+    * Marker indicates that the following 3 values in the attributes array are:
+    * namespaceUri, attributeName, attributeValue
+    * in that order.
+    */
   @js.native
   sealed trait NamespaceURI
     extends atAngularCompilerLib.srcCoreMod.AttributeMarker
   
   /**
-       * This marker indicates that the following attribute names were extracted from bindings (ex.:
-       * [foo]="exp") and / or event handlers (ex. (bar)="doSth()").
-       * Taking the above bindings and outputs as an example an attributes array could look as follows:
-       * ['class', 'fade in', AttributeMarker.SelectOnly, 'foo', 'bar']
-       */
+    * This marker indicates that the following attribute names were extracted from bindings (ex.:
+    * [foo]="exp") and / or event handlers (ex. (bar)="doSth()").
+    * Taking the above bindings and outputs as an example an attributes array could look as follows:
+    * ['class', 'fade in', AttributeMarker.SelectOnly, 'foo', 'bar']
+    */
   @js.native
   sealed trait SelectOnly
     extends atAngularCompilerLib.srcCoreMod.AttributeMarker

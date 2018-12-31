@@ -21,7 +21,6 @@ class HTMLLocation protected () extends js.Object {
   def assign(bstr: java.lang.String): scala.Unit = js.native
   /** @param flag [flag=false] */
   def reload(): scala.Unit = js.native
-  /** @param flag [flag=false] */
   def reload(flag: scala.Boolean): scala.Unit = js.native
   def replace(bstr: java.lang.String): scala.Unit = js.native
 }

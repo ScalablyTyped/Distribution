@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPaperSizeOptions extends js.Object {
   var footer: js.UndefOr[phantomLib.Anon_HeightContents] = js.undefined
   var format: js.UndefOr[

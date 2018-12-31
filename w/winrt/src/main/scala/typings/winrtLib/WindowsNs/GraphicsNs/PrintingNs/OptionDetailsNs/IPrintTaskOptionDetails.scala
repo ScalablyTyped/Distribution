@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPrintTaskOptionDetails extends js.Object {
   var onbeginvalidation: js.Any
   var onoptionchanged: js.Any

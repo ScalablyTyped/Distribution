@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Handler extends js.Object {
   var onattribute: js.UndefOr[
     js.Function2[/* name */ java.lang.String, /* value */ java.lang.String, scala.Unit]

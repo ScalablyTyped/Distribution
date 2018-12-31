@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAnimatedFrameEventArgs extends js.Object {
   /** The animated tile layer that the frame belongs to. **/
   var animatedTileLayer: AnimatedTileLayer

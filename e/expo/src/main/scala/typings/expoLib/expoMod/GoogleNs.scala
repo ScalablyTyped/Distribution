@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "Google")
 @js.native
 object GoogleNs extends js.Object {
-  
   trait LogInConfig extends js.Object {
     var androidClientId: js.UndefOr[java.lang.String] = js.undefined
     var androidStandaloneAppClientId: js.UndefOr[java.lang.String] = js.undefined

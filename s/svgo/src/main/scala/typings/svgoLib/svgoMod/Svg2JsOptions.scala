@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Svg2JsOptions extends js.Object {
   /** @default true */
   var lowercase: js.UndefOr[scala.Boolean] = js.undefined

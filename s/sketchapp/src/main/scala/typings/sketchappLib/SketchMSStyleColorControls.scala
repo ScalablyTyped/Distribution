@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSStyleColorControls extends js.Object {
   var _class: sketchappLib.sketchappLibStrings.styleColorControls
   var brightness: scala.Double

@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * A command to toggle top borders for selected cells on/off.
- */
-
+  * A command to toggle top borders for selected cells on/off.
+  */
 trait ToggleTableCellTopBorderCommand extends CommandWithBooleanStateBase {
   /**
-       * Executes the ToggleTableCellTopBorderCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
-       */
+    * Executes the ToggleTableCellTopBorderCommand command by imitating the corresponding end-user action made in the RichEdit's UI.  May result in taking no action if the command's state does not allow command execution. Use the object's getState method to check the command state.
+    */
   def execute(): scala.Boolean
 }
 

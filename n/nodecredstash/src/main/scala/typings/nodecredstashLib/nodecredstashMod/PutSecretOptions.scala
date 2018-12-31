@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PutSecretOptions extends js.Object {
   var context: CredstashContext
   var digest: js.UndefOr[java.lang.String] = js.undefined

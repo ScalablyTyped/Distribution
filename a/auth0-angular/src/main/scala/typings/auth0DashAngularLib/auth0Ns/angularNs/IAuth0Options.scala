@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAuth0Options extends js.Object {
   /**
-          * Connection name
-          */
+    * Connection name
+    */
   var connection: js.UndefOr[java.lang.String] = js.undefined
   /**
-          * Email address
-          */
+    * Email address
+    */
   var email: js.UndefOr[java.lang.String] = js.undefined
   /**
-          * Username
-          */
+    * Username
+    */
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents the properties of a certificate request. */
 @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateRequestProperties")
 @js.native
+/** Creates and initializes a new instance of the CertificateRequestProperties . */
 class CertificateRequestProperties () extends js.Object {
   /** Gets or sets the CA exchange certificate that is used to encrypt a key attestation certificate request. */
   var attestationCredentialCertificate: Certificate = js.native

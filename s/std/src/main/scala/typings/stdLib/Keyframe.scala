@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Keyframe
   extends /* property */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Double | scala.Null]] {
   var composite: js.UndefOr[CompositeOperationOrAuto] = js.undefined

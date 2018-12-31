@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StepResultPayload extends EventPayload {
   var ambiguousStepDefinitions: js.Any
   var attachments: js.Array[_]

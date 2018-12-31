@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StateCore
   extends /** Return any for a yet untyped property */
 /* undocumented */ org.scalablytyped.runtime.StringDictionary[js.Any] {

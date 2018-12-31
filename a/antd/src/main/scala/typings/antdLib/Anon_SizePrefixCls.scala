@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SizePrefixCls extends js.Object {
   var percent: scala.Double
   var prefixCls: java.lang.String

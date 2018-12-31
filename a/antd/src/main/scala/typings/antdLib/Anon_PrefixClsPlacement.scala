@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PrefixClsPlacement extends js.Object {
   var mouseEnterDelay: scala.Double
   var mouseLeaveDelay: scala.Double

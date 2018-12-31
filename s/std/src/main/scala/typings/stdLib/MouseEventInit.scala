@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MouseEventInit extends EventModifierInit {
   var button: js.UndefOr[scala.Double] = js.undefined
   var buttons: js.UndefOr[scala.Double] = js.undefined

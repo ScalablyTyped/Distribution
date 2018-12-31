@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // http://docs.couchdb.org/en/latest/api/document/common.html#get--db-docid
-
 trait DocumentGetParams extends js.Object {
   // Includes encoding information in attachment stubs if the particular attachment is compressed. Default is
   // false.

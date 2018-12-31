@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * An object containing information about the HTTP response
-         */
-
+  * An object containing information about the HTTP response
+  */
 trait Response[T] extends js.Object {
   // The raw response string.
   var body: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BoxProps
   extends SpaceProps[rebassLib.BoxClass] {
   var bg: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseProps extends js.Object {
   var bgColor: js.UndefOr[java.lang.String] = js.undefined
   var bgDarken: js.UndefOr[scala.Double] = js.undefined

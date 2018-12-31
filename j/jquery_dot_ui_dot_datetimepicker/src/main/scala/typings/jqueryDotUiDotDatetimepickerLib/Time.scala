@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Time extends js.Object {
   var hour: js.UndefOr[scala.Double] = js.undefined
   var millisecond: js.UndefOr[scala.Double] = js.undefined

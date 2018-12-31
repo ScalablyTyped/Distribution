@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPicker extends ISheet {
   /** [Config Option] (String) */
   var activeCls: js.UndefOr[java.lang.String] = js.undefined

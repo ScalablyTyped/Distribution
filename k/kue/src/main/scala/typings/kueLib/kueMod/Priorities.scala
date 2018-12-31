@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Priorities extends js.Object {
   var critical: scala.Double
   var high: scala.Double

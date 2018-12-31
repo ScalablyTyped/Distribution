@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CtColormode extends js.Object {
   var bri: scala.Double
   var colormode: nodeDashHueDashApiLib.nodeDashHueDashApiMod.ColorMode

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Payment extends js.Object {
   val create_time: js.UndefOr[java.lang.String] = js.undefined
   var experience_profile_id: js.UndefOr[java.lang.String] = js.undefined

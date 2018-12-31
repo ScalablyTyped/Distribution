@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GenericCollection[T] extends js.Object {
   var elements: js.Array[T]
   def each(

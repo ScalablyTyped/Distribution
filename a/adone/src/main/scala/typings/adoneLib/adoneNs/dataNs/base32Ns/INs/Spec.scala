@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Spec extends js.Object {
   var alphabet: java.lang.String
-  var charmap: org.scalablytyped.runtime.StringDictionary[scala.Double]
+  var charmap: /* import warning: ImportType.apply Failed type conversion: {indexed, indexed} */ js.Any
 }
 

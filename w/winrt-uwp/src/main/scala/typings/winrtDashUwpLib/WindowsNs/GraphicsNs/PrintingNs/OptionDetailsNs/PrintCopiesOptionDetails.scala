@@ -24,10 +24,10 @@ abstract class PrintCopiesOptionDetails () extends js.Object {
   /** Gets or sets the number of copies for a print task. */
   var value: js.Any = js.native
   /**
-                       * Sets the value for the print copies option.
-                       * @param value Value for the print copies option.
-                       * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
-                       */
+    * Sets the value for the print copies option.
+    * @param value Value for the print copies option.
+    * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
+    */
   def trySetValue(value: js.Any): scala.Boolean = js.native
 }
 

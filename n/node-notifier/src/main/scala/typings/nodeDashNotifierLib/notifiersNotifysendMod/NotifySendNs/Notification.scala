@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Notification extends js.Object {
   /** Specifies the notification category */
   var category: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserProfile extends js.Object {
   /** The account ID to which this profile belongs. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined

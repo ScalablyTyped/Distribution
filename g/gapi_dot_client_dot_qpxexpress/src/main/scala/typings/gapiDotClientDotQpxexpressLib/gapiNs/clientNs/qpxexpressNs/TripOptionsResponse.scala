@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TripOptionsResponse extends js.Object {
   /** Informational data global to list of solutions. */
   var data: js.UndefOr[Data] = js.undefined

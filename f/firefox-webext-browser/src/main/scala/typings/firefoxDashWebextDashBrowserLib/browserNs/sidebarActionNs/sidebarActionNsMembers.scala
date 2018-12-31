@@ -19,14 +19,14 @@ object sidebarActionNsMembers extends js.Object {
   /** Opens the extension sidebar in the active window. */
   def open(): js.Promise[scala.Unit] = js.native
   /**
-       * Sets the icon for the sidebar action. The icon can be specified either as the path to an image file or as the
-       * pixel data from a canvas element, or as dictionary of either one of those. Either the **path** or the
-       * **imageData** property must be specified.
-       */
+    * Sets the icon for the sidebar action. The icon can be specified either as the path to an image file or as the
+    * pixel data from a canvas element, or as dictionary of either one of those. Either the **path** or the
+    * **imageData** property must be specified.
+    */
   def setIcon(details: firefoxDashWebextDashBrowserLib.Anon_WindowIdImageData): js.Promise[scala.Unit] = js.native
   /**
-       * Sets the url to the html document to be opened in the sidebar when the user clicks on the sidebar action's icon.
-       */
+    * Sets the url to the html document to be opened in the sidebar when the user clicks on the sidebar action's icon.
+    */
   def setPanel(details: firefoxDashWebextDashBrowserLib.Anon_WindowIdPanel): js.Promise[scala.Unit] = js.native
   /* sidebarAction functions */
   /** Sets the title of the sidebar action. This shows up in the tooltip. */

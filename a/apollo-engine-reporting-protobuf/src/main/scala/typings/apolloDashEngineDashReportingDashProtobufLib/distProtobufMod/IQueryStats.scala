@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IQueryStats extends js.Object {
   /** QueryStats perClientName */
   var perClientName: js.UndefOr[org.scalablytyped.runtime.StringDictionary[IClientNameStats] | scala.Null] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TriggerRequest extends js.Object {
   var headers: js.Any
   var installationId: js.UndefOr[nodeLib.String] = js.undefined

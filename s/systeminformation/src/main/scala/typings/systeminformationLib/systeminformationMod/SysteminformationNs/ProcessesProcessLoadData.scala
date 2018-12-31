@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProcessesProcessLoadData extends js.Object {
   var cpu: scala.Double
   var mem: scala.Double

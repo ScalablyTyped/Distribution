@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ApklistingsResource extends js.Object {
   /** Deletes the APK-specific localized listing for a specified APK and language code. */
   def delete(

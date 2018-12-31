@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 trait Anon_CallbackErr extends js.Object {
   /** Returns a value from the cache if it exists, otherwise calls Connection.describeGlobal */
   def apply(): jsforceLib.describeDashResultMod.DescribeGlobalResult = js.native
-  /** Returns a value from the cache if it exists, otherwise calls Connection.describeGlobal */
   def apply(
     callback: js.Function2[
       /* err */ nodeLib.Error, 

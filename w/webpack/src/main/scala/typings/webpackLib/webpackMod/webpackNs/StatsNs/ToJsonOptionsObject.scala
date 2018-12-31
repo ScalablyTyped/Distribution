@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ToJsonOptionsObject extends js.Object {
   /** fallback value for stats options when an option is not defined (has precedence over local webpack defaults) */
   var all: js.UndefOr[scala.Boolean] = js.undefined

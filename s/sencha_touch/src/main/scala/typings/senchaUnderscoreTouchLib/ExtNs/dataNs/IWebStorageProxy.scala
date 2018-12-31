@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IWebStorageProxy
   extends senchaUnderscoreTouchLib.ExtNs.dataNs.proxyNs.IClient {
   /** [Property] (Object) */

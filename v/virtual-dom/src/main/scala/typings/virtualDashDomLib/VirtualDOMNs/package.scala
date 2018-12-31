@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object VirtualDOMNs {
-  type EventHandler = js.Function1[/* repeated */js.Any, scala.Unit]
+  type EventHandler = js.Function1[/* repeated */ js.Any, scala.Unit]
   type PatchFn[T /* <: stdLib.Element */] = js.Function3[
     /* rootNode */ T, 
     /* patches */ js.Array[VPatch], 

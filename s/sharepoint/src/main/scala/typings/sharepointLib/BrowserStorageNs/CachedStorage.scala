@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Available only in SharePoint Online*/
-
 trait CachedStorage extends js.Object {
   var length: scala.Double
   def clead(): scala.Unit

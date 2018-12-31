@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AbstractRange extends js.Object {
   val collapsed: scala.Boolean
   val endContainer: Node

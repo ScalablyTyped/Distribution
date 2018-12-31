@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Validatable[TValue] extends js.Object {
   @JSName("$")
   var $: TValue

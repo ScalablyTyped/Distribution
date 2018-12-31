@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBroadcastCacheUpdateOptions extends js.Object {
   /**
   	 * A list of headers that will be used to determine whether the responses differ.

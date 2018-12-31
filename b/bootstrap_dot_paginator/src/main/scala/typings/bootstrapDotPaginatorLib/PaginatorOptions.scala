@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaginatorOptions extends js.Object {
   var alignment: js.UndefOr[java.lang.String] = js.undefined
   var bootstrapMajorVersion: js.UndefOr[scala.Double] = js.undefined

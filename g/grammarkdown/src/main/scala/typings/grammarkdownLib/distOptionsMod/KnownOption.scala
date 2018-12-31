@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KnownOption extends js.Object {
   var aliasFor: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var convert: js.UndefOr[

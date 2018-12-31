@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILineOptions extends IObjectOptions {
   /**
   	 * x value or first line edge

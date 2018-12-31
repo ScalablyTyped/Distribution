@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(reactDashMdLib.libTextFieldsTextFieldMod.SharedTextFieldProps because Would inherit conflicting mutable fields List(fullWidth, block))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(reactDashMdLib.libTextFieldsTextFieldMod.SharedTextFieldProps because Would inherit conflicting mutable fields List(block, fullWidth))*/
 trait EditDialogColumnProps
   extends reactDashMdLib.libHelpersLayoverMod.SharedLayoverProps
      with reactDashMdLib.libTooltipsInjectTooltipMod.InjectedTooltipProps {
@@ -24,26 +23,26 @@ trait EditDialogColumnProps
   var dialogId: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
   var dialogStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var enforceMinWidth: js.UndefOr[scala.Boolean] = js.undefined
   var header: js.UndefOr[scala.Boolean] = js.undefined
   var `inline`: js.UndefOr[scala.Boolean] = js.undefined
   var inlineIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var inlineIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var inlineIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var large: js.UndefOr[scala.Boolean] = js.undefined
   var layoverClassName: js.UndefOr[java.lang.String] = js.undefined
   var layoverStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var noIcon: js.UndefOr[scala.Boolean] = js.undefined
   var okLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var okOnOutsideClick: js.UndefOr[scala.Boolean] = js.undefined
@@ -78,16 +77,16 @@ trait EditDialogColumnProps
     ]
   ] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var scrollThreshold: js.UndefOr[scala.Double] = js.undefined
   var simplifiedDialog: js.UndefOr[scala.Boolean] = js.undefined
   var textFieldClassName: js.UndefOr[java.lang.String] = js.undefined
   var textFieldStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var transitionDuration: js.UndefOr[scala.Double] = js.undefined
   var visibleOnFocus: js.UndefOr[scala.Boolean] = js.undefined
 }

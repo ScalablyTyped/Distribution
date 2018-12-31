@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IArray extends IJson {
   /** [Method] Sets the value of successProperty
   		* @param successProperty Object The new value.

@@ -19,16 +19,6 @@ class Class_Service protected () extends Class_EventEmitter {
   	 * 
   	 */
   def this(name: java.lang.String, worker: js.Function) = this()
-  /**
-  	 * 
-  	 * @brief 系统服务管理对象构造函数
-  	 * @param name 服务名称
-  	 * @param worker 服务运行函数
-  	 * @param event 服务事件处理
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def this(name: java.lang.String, worker: js.Function, event: js.Object) = this()
   /**
   	 * class prop 
@@ -94,29 +84,7 @@ object Class_Service extends js.Object {
   	 * 
   	 */
   def install(name: java.lang.String, cmd: java.lang.String): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 安装服务到系统
-  	 * @param name 服务名称
-  	 * @param cmd 服务命令行
-  	 * @param displayName 服务显示名称
-  	 * @param description 服务描述信息
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def install(name: java.lang.String, cmd: java.lang.String, displayName: java.lang.String): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 安装服务到系统
-  	 * @param name 服务名称
-  	 * @param cmd 服务命令行
-  	 * @param displayName 服务显示名称
-  	 * @param description 服务描述信息
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def install(
     name: java.lang.String,
     cmd: java.lang.String,

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PartitionSecond extends js.Object {
   var cut: cytoscapeLib.cytoscapeMod.cytoscapeNs.EdgeCollection
   var partitionFirst: cytoscapeLib.cytoscapeMod.cytoscapeNs.NodeCollection

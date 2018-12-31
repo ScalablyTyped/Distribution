@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "PinpointSMSVoice")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class PinpointSMSVoice ()
   extends awsDashSdkLib.awsDashSdkMod.PinpointSMSVoice {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsPinpointsmsvoiceMod.PinpointSMSVoiceNs.ClientConfiguration) = this()
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IELangSearchDelegates extends js.Object {
   var langDirectionClickHandler: js.Function
   var langDirectionHandler: js.Function

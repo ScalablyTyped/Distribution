@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DynamoDBRecord extends js.Object {
   var awsRegion: js.UndefOr[java.lang.String] = js.undefined
   var dynamodb: js.UndefOr[StreamRecord] = js.undefined

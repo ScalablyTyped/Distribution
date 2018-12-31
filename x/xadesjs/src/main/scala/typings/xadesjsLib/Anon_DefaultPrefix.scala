@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DefaultPrefix extends js.Object {
   var AttributeNames: Anon_Id
   var DefaultPrefix: java.lang.String

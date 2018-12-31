@@ -12,8 +12,8 @@ class Revwalk () extends js.Object {
   def fileHistoryWalk(filePath: java.lang.String, maxCount: scala.Double): js.Promise[js.Array[_]] = js.native
   def getCommits(count: scala.Double): js.Promise[js.Array[nodegitLib.commitMod.Commit]] = js.native
   /**
-       * Walk the history grabbing commits until the checkFn called with the current commit returns false.
-       */
+    * Walk the history grabbing commits until the checkFn called with the current commit returns false.
+    */
   def getCommitsUntil(checkFn: js.Function): js.Promise[js.Array[_]] = js.native
   def hide(commitId: nodegitLib.oidMod.Oid): scala.Double = js.native
   def hideGlob(glob: java.lang.String): scala.Double = js.native
@@ -29,16 +29,13 @@ class Revwalk () extends js.Object {
   def reset(): scala.Unit = js.native
   def simplifyFirstParent(): scala.Unit = js.native
   /**
-       * Set the sort order for the revwalk. This function takes variable arguments like revwalk.sorting(NodeGit.RevWalk.Topological, NodeGit.RevWalk.Reverse).
-       */
+    * Set the sort order for the revwalk. This function takes variable arguments like revwalk.sorting(NodeGit.RevWalk.Topological, NodeGit.RevWalk.Reverse).
+    */
   def sorting(sort: scala.Double): scala.Unit = js.native
   /**
-       * Walk the history from the given oid. The callback is invoked for each commit; When the walk is over, the callback is invoked with (null, null).
-       */
+    * Walk the history from the given oid. The callback is invoked for each commit; When the walk is over, the callback is invoked with (null, null).
+    */
   def walk(oid: nodegitLib.oidMod.Oid): nodegitLib.commitMod.Commit = js.native
-  /**
-       * Walk the history from the given oid. The callback is invoked for each commit; When the walk is over, the callback is invoked with (null, null).
-       */
   def walk(oid: nodegitLib.oidMod.Oid, callback: js.Function): nodegitLib.commitMod.Commit = js.native
 }
 

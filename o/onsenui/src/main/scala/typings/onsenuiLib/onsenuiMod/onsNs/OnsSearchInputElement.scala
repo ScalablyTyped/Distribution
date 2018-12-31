@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait OnsSearchInputElement
   extends stdLib.HTMLElement {
   /**
-       * @description A boolean value that specifies whether the search input is disabled or not.
-       */
+    * @description A boolean value that specifies whether the search input is disabled or not.
+    */
   var disabled: scala.Boolean = js.native
   /**
-       * @description The current value of the search input.
-       */
+    * @description The current value of the search input.
+    */
   var value: java.lang.String = js.native
 }
 

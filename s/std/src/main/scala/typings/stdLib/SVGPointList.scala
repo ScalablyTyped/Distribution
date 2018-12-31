@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGPointList extends js.Object {
   val numberOfItems: scala.Double
   def appendItem(newItem: SVGPoint): SVGPoint

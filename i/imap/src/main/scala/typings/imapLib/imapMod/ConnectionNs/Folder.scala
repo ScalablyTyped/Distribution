@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Folder extends js.Object {
   /** mailbox attributes. An attribute of 'NOSELECT' indicates the mailbox cannot be opened */
   var attribs: js.Array[java.lang.String]

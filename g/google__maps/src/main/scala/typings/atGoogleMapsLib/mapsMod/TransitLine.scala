@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransitLine extends js.Object {
   /**
-       * is an array containing a single `TransitAgency` object.
-       * The `TransitAgency` object provides information about the operator of the line
-       */
+    * is an array containing a single `TransitAgency` object.
+    * The `TransitAgency` object provides information about the operator of the line
+    */
   var agencies: js.Array[TransitAgency]
   /** contains the color commonly used in signage for this transit line. The color will be specified as a hex string such as: #FF0033. */
   var color: java.lang.String

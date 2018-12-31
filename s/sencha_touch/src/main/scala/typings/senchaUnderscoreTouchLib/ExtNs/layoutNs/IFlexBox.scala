@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFlexBox extends IBox {
   /** [Method] Sets the flex of an item in this box layout
   		* @param item Ext.Component The item of this layout which you want to update the flex of.

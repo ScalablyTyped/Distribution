@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScrollToFixedOptions extends js.Object {
   var baseClassName: js.UndefOr[java.lang.String] = js.undefined
   var bottom: js.UndefOr[scala.Double] = js.undefined

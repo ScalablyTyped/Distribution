@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PolylineOptions extends js.Object {
   /**
   			 * Determines if line segments can cross.

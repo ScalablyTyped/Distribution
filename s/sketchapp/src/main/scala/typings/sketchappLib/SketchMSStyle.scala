@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSStyle extends js.Object {
   var _class: sketchappLib.sketchappLibStrings.style
   var blur: SketchMSStyleBlur

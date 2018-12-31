@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgGridAppendRowsOnDemandMethods extends js.Object {
   /**
   	 * Destroys the append rows on demand widget

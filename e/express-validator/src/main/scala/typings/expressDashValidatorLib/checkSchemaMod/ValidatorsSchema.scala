@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ValidatorsSchema extends js.Object {
   var contains: js.UndefOr[ValidatorSchemaOptions[_]] = js.undefined
   @JSName("equals")

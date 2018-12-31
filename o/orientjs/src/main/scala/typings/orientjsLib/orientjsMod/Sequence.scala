@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * The sequence constructor.
-     * @param config The configuration for the sequence
-     */
+  * The sequence constructor.
+  * @param config The configuration for the sequence
+  */
 @JSImport("orientjs", "Sequence")
 @js.native
 class Sequence ()

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ShapeType extends js.Object
 
 /**
-             * Enumeration represents possible shape types that HitArea can have.
-             */
+  * Enumeration represents possible shape types that HitArea can have.
+  */
 @JSGlobal("H.map.HitArea.ShapeType")
 @js.native
 object ShapeType extends js.Object {

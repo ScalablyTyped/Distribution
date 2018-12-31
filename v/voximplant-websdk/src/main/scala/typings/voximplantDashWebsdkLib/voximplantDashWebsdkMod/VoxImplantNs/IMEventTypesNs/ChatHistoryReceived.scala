@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when chat history received
 		*/
-
 trait ChatHistoryReceived extends js.Object {
   /**
   			* User id

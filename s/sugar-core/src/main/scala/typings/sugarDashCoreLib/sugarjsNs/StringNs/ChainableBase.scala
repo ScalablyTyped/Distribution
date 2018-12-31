@@ -55,12 +55,12 @@ trait ChainableBase[RawValue] extends js.Object {
   def replace(searchValue: java.lang.String, replaceValue: java.lang.String): sugarDashCoreLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def replace(
     searchValue: java.lang.String,
-    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
+    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): sugarDashCoreLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def replace(searchValue: stdLib.RegExp, replaceValue: java.lang.String): sugarDashCoreLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def replace(
     searchValue: stdLib.RegExp,
-    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */js.Any, java.lang.String]
+    replacer: js.Function2[/* substring */ java.lang.String, /* repeated */ js.Any, java.lang.String]
   ): sugarDashCoreLib.sugarjsNs.SugarDefaultChainable[java.lang.String] = js.native
   def search(regexp: java.lang.String): sugarDashCoreLib.sugarjsNs.SugarDefaultChainable[scala.Double] = js.native
   def search(regexp: stdLib.RegExp): sugarDashCoreLib.sugarjsNs.SugarDefaultChainable[scala.Double] = js.native

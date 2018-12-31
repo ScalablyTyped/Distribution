@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Windows.UI.Input.Spatial.SpatialPointerPose")
 @js.native
 abstract class SpatialPointerPose () extends js.Object {
-   /* unmapped type */var head: js.Any = js.native
-   /* unmapped type */var timestamp: js.Any = js.native
+   /* unmapped type */ var head: js.Any = js.native
+   /* unmapped type */ var timestamp: js.Any = js.native
 }
 
 @JSGlobal("Windows.UI.Input.Spatial.SpatialPointerPose")

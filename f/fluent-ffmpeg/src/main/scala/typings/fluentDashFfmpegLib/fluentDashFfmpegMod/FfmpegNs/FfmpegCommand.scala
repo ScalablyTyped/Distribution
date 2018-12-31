@@ -24,11 +24,8 @@ trait FfmpegCommand
   def addOptions(options: js.Array[java.lang.String]): FfmpegCommand = js.native
   // options/output
   def addOutput(target: java.lang.String): FfmpegCommand = js.native
-  // options/output
   def addOutput(target: java.lang.String, pipeopts: fluentDashFfmpegLib.Anon_End): FfmpegCommand = js.native
-  // options/output
   def addOutput(target: nodeLib.streamMod.Writable): FfmpegCommand = js.native
-  // options/output
   def addOutput(target: nodeLib.streamMod.Writable, pipeopts: fluentDashFfmpegLib.Anon_End): FfmpegCommand = js.native
   def addOutputOption(options: java.lang.String*): FfmpegCommand = js.native
   def addOutputOption(options: js.Array[java.lang.String]): FfmpegCommand = js.native
@@ -116,7 +113,6 @@ trait FfmpegCommand
   def map(spec: java.lang.String): FfmpegCommand = js.native
   // options/inputs
   def mergeAdd(source: java.lang.String): FfmpegCommand = js.native
-  // options/inputs
   def mergeAdd(source: nodeLib.streamMod.Readable): FfmpegCommand = js.native
   def mergeToFile(target: java.lang.String): FfmpegCommand = js.native
   def mergeToFile(target: java.lang.String, options: fluentDashFfmpegLib.Anon_End): FfmpegCommand = js.native
@@ -194,7 +190,6 @@ trait FfmpegCommand
   def thumbnails(config: scala.Double, folder: java.lang.String): FfmpegCommand = js.native
   def toFormat(format: java.lang.String): FfmpegCommand = js.native
   def updateFlvMetadata(): FfmpegCommand = js.native
-  // options/misc
   def usingPreset(proset: GetPreset): FfmpegCommand = js.native
   // options/misc
   def usingPreset(proset: java.lang.String): FfmpegCommand = js.native

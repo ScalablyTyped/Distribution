@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OtherTotalSpecProp extends js.Object {
   var qApplyEvenWhenPossiblyWrongResult: scala.Boolean
   var qForceBadValueKeeping: scala.Boolean

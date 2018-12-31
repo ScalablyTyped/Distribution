@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITool
   extends extjsLib.ExtNs.IComponent {
   /** [Config Option] (Function) */

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LineText extends js.Object {
   var leadingContextLines: js.Array[java.lang.String]
   var lineText: java.lang.String

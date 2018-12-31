@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IChoiceGroupOptionStyles extends js.Object {
   var choiceFieldWrapper: js.UndefOr[atUifabricMergeDashStylesLib.libIStyleMod.IStyle] = js.undefined
   var field: js.UndefOr[atUifabricMergeDashStylesLib.libIStyleMod.IStyle] = js.undefined

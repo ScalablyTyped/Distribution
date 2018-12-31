@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Basic Functions
-     * chayns.intercom
-     */
+  * Basic Functions
+  * chayns.intercom
+  */
 @JSGlobal("chayns.intercom")
 @js.native
 object intercomNs extends js.Object {

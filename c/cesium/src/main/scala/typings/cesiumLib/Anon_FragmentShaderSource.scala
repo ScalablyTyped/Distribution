@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FragmentShaderSource extends js.Object {
   var fragmentShaderSource: js.UndefOr[java.lang.String] = js.undefined
   var renderState: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.RenderState] = js.undefined

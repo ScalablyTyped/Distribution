@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InstanceWithNamedPorts extends js.Object {
   /** [Output Only] The URL of the instance. */
   var instance: js.UndefOr[java.lang.String] = js.undefined

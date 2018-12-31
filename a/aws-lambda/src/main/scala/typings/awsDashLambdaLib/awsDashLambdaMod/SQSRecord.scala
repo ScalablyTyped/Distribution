@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SQSRecord extends js.Object {
   var attributes: SQSRecordAttributes
   var awsRegion: java.lang.String

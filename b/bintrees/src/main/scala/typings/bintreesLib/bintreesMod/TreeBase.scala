@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TreeBase[T] extends js.Object {
   var size: scala.Double
   def clear(): scala.Unit

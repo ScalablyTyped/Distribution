@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SaleResource extends Resource {
   val billing_agreement_id: js.UndefOr[java.lang.String] = js.undefined
   val clearing_time: js.UndefOr[java.lang.String] = js.undefined

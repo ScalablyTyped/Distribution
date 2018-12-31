@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictLoaderProps extends js.Object {
   /** A loader can be active or visible. */
   var active: js.UndefOr[scala.Boolean] = js.undefined

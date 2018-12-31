@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Inprogress extends js.Object {
   var completed: scala.Double
   var failed: scala.Double

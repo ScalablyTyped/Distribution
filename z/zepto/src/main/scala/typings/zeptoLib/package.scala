@@ -36,5 +36,5 @@ package object zeptoLib {
     /* data */ js.Any, 
     scala.Unit
   ]
-  type ZeptoEventHandler = js.Function2[/* e */ stdLib.Event, /* repeated */js.Any, js.Any]
+  type ZeptoEventHandler = js.Function2[/* e */ stdLib.Event, /* repeated */ js.Any, js.Any]
 }

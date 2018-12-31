@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Additions extends js.Object {
   var additions: scala.Double
   var blob_url: java.lang.String

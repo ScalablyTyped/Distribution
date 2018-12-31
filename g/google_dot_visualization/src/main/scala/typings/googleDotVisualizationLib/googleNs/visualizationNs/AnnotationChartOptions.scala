@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnnotationChartOptions extends js.Object {
   var allValuesSuffix: js.UndefOr[java.lang.String] = js.undefined
   var allowHtml: js.UndefOr[scala.Boolean] = js.undefined

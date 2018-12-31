@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EntryMetadata extends js.Object {
   /** True if it is a directory. */
   var isDirectory: scala.Boolean

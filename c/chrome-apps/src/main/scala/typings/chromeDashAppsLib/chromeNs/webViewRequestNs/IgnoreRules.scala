@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Masks all rules that match the specified criteria.
-         */
+  * Masks all rules that match the specified criteria.
+  */
 @JSGlobal("chrome.webViewRequest.IgnoreRules")
 @js.native
 class IgnoreRules protected () extends js.Object {

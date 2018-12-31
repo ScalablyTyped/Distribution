@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResourceOptions extends js.Object {
   var actions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var associations: js.UndefOr[sequelizeLib.sequelizeMod.sequelizeNs.AssociationOptions] = js.undefined

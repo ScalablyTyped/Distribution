@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventNotificationConfig extends js.Object {
   /**
-               * A Cloud Pub/Sub topic name. For example,
-               * `projects/myProject/topics/deviceEvents`.
-               */
+    * A Cloud Pub/Sub topic name. For example,
+    * `projects/myProject/topics/deviceEvents`.
+    */
   var pubsubTopicName: js.UndefOr[java.lang.String] = js.undefined
 }
 

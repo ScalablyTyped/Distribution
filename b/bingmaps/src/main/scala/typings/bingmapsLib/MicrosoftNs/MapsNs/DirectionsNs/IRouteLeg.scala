@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRouteLeg extends js.Object {
   /** The end time of the route leg. This property only applies when the routeMode of the DirectionsRequestOptions is set to transit. */
   var endTime: stdLib.Date

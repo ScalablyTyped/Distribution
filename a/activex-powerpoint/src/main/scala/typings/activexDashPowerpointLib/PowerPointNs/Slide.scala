@@ -49,19 +49,11 @@ class Slide protected () extends js.Object {
   def Delete(): scala.Unit = js.native
   def Duplicate(): SlideRange = js.native
   /**
-           * @param number [ScaleWidth=0]
-           * @param number [ScaleHeight=0]
-           */
+    * @param number [ScaleWidth=0]
+    * @param number [ScaleHeight=0]
+    */
   def Export(FileName: java.lang.String, FilterName: java.lang.String): scala.Unit = js.native
-  /**
-           * @param number [ScaleWidth=0]
-           * @param number [ScaleHeight=0]
-           */
   def Export(FileName: java.lang.String, FilterName: java.lang.String, ScaleWidth: scala.Double): scala.Unit = js.native
-  /**
-           * @param number [ScaleWidth=0]
-           * @param number [ScaleHeight=0]
-           */
   def Export(
     FileName: java.lang.String,
     FilterName: java.lang.String,
@@ -71,19 +63,11 @@ class Slide protected () extends js.Object {
   def MoveTo(toPos: scala.Double): scala.Unit = js.native
   def MoveToSectionStart(toSection: scala.Double): scala.Unit = js.native
   /**
-           * @param boolean [Overwrite=false]
-           * @param boolean [UseSlideOrder=false]
-           */
+    * @param boolean [Overwrite=false]
+    * @param boolean [UseSlideOrder=false]
+    */
   def PublishSlides(SlideLibraryUrl: java.lang.String): scala.Unit = js.native
-  /**
-           * @param boolean [Overwrite=false]
-           * @param boolean [UseSlideOrder=false]
-           */
   def PublishSlides(SlideLibraryUrl: java.lang.String, Overwrite: scala.Boolean): scala.Unit = js.native
-  /**
-           * @param boolean [Overwrite=false]
-           * @param boolean [UseSlideOrder=false]
-           */
   def PublishSlides(SlideLibraryUrl: java.lang.String, Overwrite: scala.Boolean, UseSlideOrder: scala.Boolean): scala.Unit = js.native
   def Scripts(Index: js.Any): activexDashOfficeLib.OfficeNs.Script = js.native
   def Select(): scala.Unit = js.native

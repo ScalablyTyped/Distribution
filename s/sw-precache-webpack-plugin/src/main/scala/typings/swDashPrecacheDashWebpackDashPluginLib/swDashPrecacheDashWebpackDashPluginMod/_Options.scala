@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // workaround to override parent types
-
 trait _Options
   extends swDashPrecacheLib.swDashPrecacheMod.Options {
   @JSName("importScripts")

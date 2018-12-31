@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // To allow non-ES6 users the Set below
-
 trait Reporter extends js.Object {
   var getLastError: js.UndefOr[js.Function0[Maybe[stdLib.Error]]] = js.undefined
   var onRunComplete: js.UndefOr[

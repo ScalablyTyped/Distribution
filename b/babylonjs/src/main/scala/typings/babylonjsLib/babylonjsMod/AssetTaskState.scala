@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Defines the list of states available for a task inside a AssetsManager
-     */
+  * Defines the list of states available for a task inside a AssetsManager
+  */
 @JSImport("babylonjs", "AssetTaskState")
 @js.native
 object AssetTaskState extends js.Object {

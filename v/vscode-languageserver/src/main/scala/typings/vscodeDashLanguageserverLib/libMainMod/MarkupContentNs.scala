@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object MarkupContentNs extends js.Object {
   /**
-       * Checks whether the given value conforms to the [MarkupContent](#MarkupContent) interface.
-       */
-  def is(value: js.Any): /* is MarkupContent */scala.Boolean = js.native
+    * Checks whether the given value conforms to the [MarkupContent](#MarkupContent) interface.
+    */
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.MarkupContent */ scala.Boolean = js.native
 }
 

@@ -15,44 +15,20 @@ class Research protected () extends js.Object {
   var `Word.Research_typekey`: Research = js.native
   def IsResearchService(ServiceID: java.lang.String): scala.Boolean = js.native
   /**
-           * @param string [QueryString='']
-           * @param Word.WdLanguageID [QueryLanguage=0]
-           * @param boolean [UseSelection=false]
-           * @param boolean [LaunchQuery=true]
-           */
+    * @param string [QueryString='']
+    * @param Word.WdLanguageID [QueryLanguage=0]
+    * @param boolean [UseSelection=false]
+    * @param boolean [LaunchQuery=true]
+    */
   def Query(ServiceID: java.lang.String): js.Any = js.native
-  /**
-           * @param string [QueryString='']
-           * @param Word.WdLanguageID [QueryLanguage=0]
-           * @param boolean [UseSelection=false]
-           * @param boolean [LaunchQuery=true]
-           */
   def Query(ServiceID: java.lang.String, QueryString: java.lang.String): js.Any = js.native
-  /**
-           * @param string [QueryString='']
-           * @param Word.WdLanguageID [QueryLanguage=0]
-           * @param boolean [UseSelection=false]
-           * @param boolean [LaunchQuery=true]
-           */
   def Query(ServiceID: java.lang.String, QueryString: java.lang.String, QueryLanguage: WdLanguageID): js.Any = js.native
-  /**
-           * @param string [QueryString='']
-           * @param Word.WdLanguageID [QueryLanguage=0]
-           * @param boolean [UseSelection=false]
-           * @param boolean [LaunchQuery=true]
-           */
   def Query(
     ServiceID: java.lang.String,
     QueryString: java.lang.String,
     QueryLanguage: WdLanguageID,
     UseSelection: scala.Boolean
   ): js.Any = js.native
-  /**
-           * @param string [QueryString='']
-           * @param Word.WdLanguageID [QueryLanguage=0]
-           * @param boolean [UseSelection=false]
-           * @param boolean [LaunchQuery=true]
-           */
   def Query(
     ServiceID: java.lang.String,
     QueryString: java.lang.String,

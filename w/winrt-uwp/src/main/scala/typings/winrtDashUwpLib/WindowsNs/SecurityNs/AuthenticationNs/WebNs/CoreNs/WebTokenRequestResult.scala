@@ -16,9 +16,9 @@ abstract class WebTokenRequestResult () extends js.Object {
   /** Gets the status of the request. */
   var responseStatus: WebTokenRequestStatus = js.native
   /**
-                           * Invalidates the current cached WebTokenRequestResult . Use this method if an access denied error is returned when trying to use a token.
-                           * @return This method does not return an object or value.
-                           */
+    * Invalidates the current cached WebTokenRequestResult . Use this method if an access denied error is returned when trying to use a token.
+    * @return This method does not return an object or value.
+    */
   def invalidateCacheAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

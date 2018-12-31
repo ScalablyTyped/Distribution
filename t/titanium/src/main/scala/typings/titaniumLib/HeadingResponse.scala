@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Argument passed to the [getCurrentHeading](Titanium.Geolocation.getCurrentHeading) callback.
- */
-
+  * Argument passed to the [getCurrentHeading](Titanium.Geolocation.getCurrentHeading) callback.
+  */
 trait HeadingResponse extends js.Object {
   /**
   	 * Error code.

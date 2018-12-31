@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LanguageStatistics extends js.Object {
   var bytes: scala.Double
   var files: scala.Double

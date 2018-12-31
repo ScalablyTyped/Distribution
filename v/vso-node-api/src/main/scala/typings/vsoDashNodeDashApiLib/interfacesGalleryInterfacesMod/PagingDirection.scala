@@ -12,15 +12,15 @@ sealed trait PagingDirection extends js.Object
 @js.native
 object PagingDirection extends js.Object {
   /**
-       * Backward will return results from earlier in the resultset.
-       */
+    * Backward will return results from earlier in the resultset.
+    */
   @js.native
   sealed trait Backward
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.PagingDirection
   
   /**
-       * Forward will return results from later in the resultset.
-       */
+    * Forward will return results from later in the resultset.
+    */
   @js.native
   sealed trait Forward
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.PagingDirection

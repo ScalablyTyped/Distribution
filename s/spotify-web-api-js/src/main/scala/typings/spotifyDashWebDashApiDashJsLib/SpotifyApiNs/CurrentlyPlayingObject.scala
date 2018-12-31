@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CurrentlyPlayingObject extends js.Object {
   var context: ContextObject | scala.Null
   var device: UserDevice

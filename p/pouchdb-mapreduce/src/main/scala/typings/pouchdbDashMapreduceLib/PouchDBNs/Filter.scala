@@ -13,7 +13,6 @@ trait Filter[Content /* <: js.Object */, Reduction] extends js.Object {
   var reduce: js.UndefOr[(Reducer[Content, Reduction]) | BuiltInReducers | java.lang.String] = js.native
   // Assume that Content | Reduction is enough leverage in most cases to handle intermediate map emits
   def map(doc: Content): scala.Unit = js.native
-  // Assume that Content | Reduction is enough leverage in most cases to handle intermediate map emits
   def map(doc: Content, emit: js.Function2[/* key */ js.Any, /* value */ Content | Reduction, scala.Unit]): scala.Unit = js.native
 }
 

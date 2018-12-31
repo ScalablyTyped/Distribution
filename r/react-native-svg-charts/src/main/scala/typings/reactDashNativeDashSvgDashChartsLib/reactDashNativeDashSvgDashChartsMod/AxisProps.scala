@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AxisProps[T] extends js.Object {
   var data: js.Array[T]
   var formatLabel: js.UndefOr[

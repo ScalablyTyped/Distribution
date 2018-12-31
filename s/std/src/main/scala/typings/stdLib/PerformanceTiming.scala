@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PerformanceTiming extends js.Object {
   val connectEnd: scala.Double
   val connectStart: scala.Double

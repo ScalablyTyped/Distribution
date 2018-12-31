@@ -35,9 +35,9 @@ abstract class CachedFileUpdaterUI () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[CachedFileUpdaterUI, _]
   ): scala.Unit = js.native
   /**
-                   * Gets an object used to complete a file update request asynchronously.
-                   * @return The object that the app uses to indicate, asynchronously, that it has finished responding to a FileUpdateRequested event and that the Request is complete.
-                   */
+    * Gets an object used to complete a file update request asynchronously.
+    * @return The object that the app uses to indicate, asynchronously, that it has finished responding to a FileUpdateRequested event and that the Request is complete.
+    */
   def getDeferral(): FileUpdateRequestDeferral = js.native
   /** Fires when the Windows requests a file update. This event fires once for each requested update. */
   def onfileupdaterequested(ev: FileUpdateRequestedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[CachedFileUpdaterUI]): scala.Unit = js.native

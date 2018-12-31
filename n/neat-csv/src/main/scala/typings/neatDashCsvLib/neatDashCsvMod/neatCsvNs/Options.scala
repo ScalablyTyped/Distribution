@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** A configuration object to be passed to csv-parser. */
-
 trait Options extends js.Object {
   var escape: js.UndefOr[java.lang.String] = js.undefined
   var headers: js.UndefOr[js.Array[java.lang.String] | scala.Boolean] = js.undefined

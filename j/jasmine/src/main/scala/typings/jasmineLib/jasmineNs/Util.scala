@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Util extends js.Object {
   def argsToArray(args: js.Any): js.Any
   def extend(destination: js.Any, source: js.Any): js.Any

@@ -6,18 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * NxListObjectExpression...
-     */
-
+  * NxListObjectExpression...
+  */
 trait INxListObjectExpression extends js.Object {
   /**
-           * Gives information on the error.
-           * >> This parameter is optional.
-           */
+    * Gives information on the error.
+    * >> This parameter is optional.
+    */
   var qError: js.UndefOr[INxLayoutErrors] = js.undefined
   /**
-           * Value of the expression.
-           */
+    * Value of the expression.
+    */
   var qExpr: java.lang.String
 }
 

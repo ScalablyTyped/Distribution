@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Meta extends js.Object {
   @JSName("$filler")
   var $filler: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined

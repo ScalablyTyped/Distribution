@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class ComponentContext () extends js.Object {
   /**
-       * Proxy function to execute action
-       * @param action function that will be executed
-       * @param payload
-       * @param callback
-       */
+    * Proxy function to execute action
+    * @param action function that will be executed
+    * @param payload
+    * @param callback
+    */
   def executeAction(
     action: js.Function3[
       /* context */ ActionContext, 
@@ -22,12 +22,6 @@ class ComponentContext () extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /**
-       * Proxy function to execute action
-       * @param action function that will be executed
-       * @param payload
-       * @param callback
-       */
   def executeAction(
     action: js.Function3[
       /* context */ ActionContext, 
@@ -38,8 +32,8 @@ class ComponentContext () extends js.Object {
     payload: js.Any
   ): scala.Unit = js.native
   /**
-       * Getter for store from dispatcher
-       */
+    * Getter for store from dispatcher
+    */
   def getStore[T /* <: fluxibleLib.addonsBaseStoreMod.namespaced[js.Object] */](store: fluxibleLib.Anon_Dispatcher[T]): T = js.native
 }
 

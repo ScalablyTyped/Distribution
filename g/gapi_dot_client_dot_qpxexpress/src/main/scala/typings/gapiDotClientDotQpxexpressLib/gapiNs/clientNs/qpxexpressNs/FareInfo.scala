@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FareInfo extends js.Object {
   var basisCode: js.UndefOr[java.lang.String] = js.undefined
   /** The carrier of the aircraft or other vehicle commuting between two points. */

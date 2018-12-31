@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimelineOptions extends js.Object {
   var align: js.UndefOr[TimelineAlignType] = js.undefined
   var autoResize: js.UndefOr[scala.Boolean] = js.undefined

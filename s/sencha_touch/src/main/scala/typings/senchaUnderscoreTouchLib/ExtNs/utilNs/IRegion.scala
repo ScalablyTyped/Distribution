@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRegion
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Modifies the current region to be adjusted by offsets

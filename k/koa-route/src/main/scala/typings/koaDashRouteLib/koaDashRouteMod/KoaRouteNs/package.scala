@@ -11,7 +11,7 @@ package object KoaRouteNs {
   type Handler = js.ThisFunction2[
     /* this */ koaLib.koaMod.ApplicationNs.Context, 
     /* ctx */ koaLib.koaMod.ApplicationNs.Context, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     js.Any
   ]
   type Path = java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp])

@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion Functions
 //#region Interfaces
-
 trait IXHROptions extends js.Object {
   var customRequestInitializer: js.UndefOr[js.Function1[/* request */ stdLib.XMLHttpRequest, scala.Unit]] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined

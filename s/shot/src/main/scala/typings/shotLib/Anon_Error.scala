@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Error extends js.Object {
   /** whether the request will emit a close event. Defaults to undefined, meaning no close event will be emitted. */
   var close: js.UndefOr[scala.Boolean] = js.undefined

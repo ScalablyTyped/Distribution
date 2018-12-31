@@ -13,9 +13,9 @@ trait TextEditorElement
   def getComponent(): TextEditorComponent = js.native
   def getModel(): TextEditor = js.native
   /**
-     * Extended: Get a promise that resolves the next time the element's
-     * DOM is updated in any way.
-     */
+    * Extended: Get a promise that resolves the next time the element's
+    * DOM is updated in any way.
+    */
   def getNextUpdatePromise(): js.Promise[scala.Unit] = js.native
   def getScrollHeight(): scala.Double = js.native
   def getScrollLeft(): scala.Double = js.native

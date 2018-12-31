@@ -12,7 +12,10 @@ package object dekuLib {
     scala.Unit
   ]
   /**
-   * Thunk object passed to `element`
-   */
-  type Thunk = js.Any | (js.Function1[/* model */ js.Any, dekuLib.dekuMod.dekuNs.VirtualElement])
+    * Thunk object passed to `element`
+    */
+  type Thunk = (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Component */ js.Any) | (js.Function1[
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Model */ /* model */ js.Any, 
+    dekuLib.dekuMod.dekuNs.VirtualElement
+  ])
 }

@@ -24,10 +24,10 @@ trait Navigo extends js.Object {
   def off(location: java.lang.String, handler: navigoLib.RouteHandler): scala.Unit = js.native
   def on(location: java.lang.String, handler: navigoLib.RouteHandler): Navigo = js.native
   def on(location: java.lang.String, handler: navigoLib.RouteHandler, hooks: NavigoHooks): Navigo = js.native
-  def on(location: stdLib.RegExp, handler: js.Function1[/* repeated */java.lang.String, scala.Unit]): Navigo = js.native
+  def on(location: stdLib.RegExp, handler: js.Function1[/* repeated */ java.lang.String, scala.Unit]): Navigo = js.native
   def on(
     location: stdLib.RegExp,
-    handler: js.Function1[/* repeated */java.lang.String, scala.Unit],
+    handler: js.Function1[/* repeated */ java.lang.String, scala.Unit],
     hooks: NavigoHooks
   ): Navigo = js.native
   def on(rootHandler: navigoLib.RouteHandler): Navigo = js.native

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Some common format strings
-
 trait DateFormatMasks extends js.Object {
   var default: java.lang.String
   var fullDate: java.lang.String

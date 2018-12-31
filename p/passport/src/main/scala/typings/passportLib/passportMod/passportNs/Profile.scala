@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Profile extends js.Object {
   var displayName: java.lang.String
   var emails: js.UndefOr[js.Array[passportLib.Anon_Type]] = js.undefined

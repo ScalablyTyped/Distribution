@@ -27,7 +27,6 @@ class Select () extends Widget {
   var value: js.Any = js.native
    // string (maybe)
   def addChild(widget: Widget): scala.Unit = js.native
-   // string (maybe)
   def addChild(widget: Widget, layoutOptions: js.Any): scala.Unit = js.native
 }
 

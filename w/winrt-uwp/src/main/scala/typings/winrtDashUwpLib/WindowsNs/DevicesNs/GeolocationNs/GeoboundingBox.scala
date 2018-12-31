@@ -10,25 +10,25 @@ import scala.scalajs.js.annotation._
 @js.native
 class GeoboundingBox protected () extends js.Object {
   /**
-                   * Initializes a new instance of the GeoboundingBox class that has the specified corners.
-                   * @param northwestCorner The northwest corner to use for the new GeoboundingBox . For more info, see the NorthwestCorner property.
-                   * @param southeastCorner The southeast corner to use for the new GeoboundingBox . For more info, see the SoutheastCorner property.
-                   */
+    * Initializes a new instance of the GeoboundingBox class that has the specified corners.
+    * @param northwestCorner The northwest corner to use for the new GeoboundingBox . For more info, see the NorthwestCorner property.
+    * @param southeastCorner The southeast corner to use for the new GeoboundingBox . For more info, see the SoutheastCorner property.
+    */
   def this(northwestCorner: BasicGeoposition, southeastCorner: BasicGeoposition) = this()
   /**
-                   * Initializes a new instance of the GeoboundingBox class that has the specified corners and uses the specified altitude reference system.
-                   * @param northwestCorner The northwest corner to use for the new GeoboundingBox . For more info, see the NorthwestCorner property.
-                   * @param southeastCorner The southeast corner to use for the new GeoboundingBox . For more info, see the SoutheastCorner property.
-                   * @param altitudeReferenceSystem The altitude reference system to use for the new GeoboundingBox . For more info, see the AltitudeReferenceSystem property.
-                   */
+    * Initializes a new instance of the GeoboundingBox class that has the specified corners and uses the specified altitude reference system.
+    * @param northwestCorner The northwest corner to use for the new GeoboundingBox . For more info, see the NorthwestCorner property.
+    * @param southeastCorner The southeast corner to use for the new GeoboundingBox . For more info, see the SoutheastCorner property.
+    * @param altitudeReferenceSystem The altitude reference system to use for the new GeoboundingBox . For more info, see the AltitudeReferenceSystem property.
+    */
   def this(northwestCorner: BasicGeoposition, southeastCorner: BasicGeoposition, altitudeReferenceSystem: AltitudeReferenceSystem) = this()
   /**
-                   * Initializes a new instance of the GeoboundingBox class that has the specified corners and uses the specified altitude reference system and spatial reference ID (SRID).
-                   * @param northwestCorner The northwest corner to use for the new GeoboundingBox . For more info, see the NorthwestCorner property.
-                   * @param southeastCorner The southeast corner to use for the new GeoboundingBox . For more info, see the SoutheastCorner property.
-                   * @param altitudeReferenceSystem The altitude reference system to use for the new GeoboundingBox . For more info, see the AltitudeReferenceSystem property.
-                   * @param spatialReferenceId The spatial reference ID (SRID) to use for the new GeoboundingBox . For more info, see the SpatialReferenceId property.
-                   */
+    * Initializes a new instance of the GeoboundingBox class that has the specified corners and uses the specified altitude reference system and spatial reference ID (SRID).
+    * @param northwestCorner The northwest corner to use for the new GeoboundingBox . For more info, see the NorthwestCorner property.
+    * @param southeastCorner The southeast corner to use for the new GeoboundingBox . For more info, see the SoutheastCorner property.
+    * @param altitudeReferenceSystem The altitude reference system to use for the new GeoboundingBox . For more info, see the AltitudeReferenceSystem property.
+    * @param spatialReferenceId The spatial reference ID (SRID) to use for the new GeoboundingBox . For more info, see the SpatialReferenceId property.
+    */
   def this(northwestCorner: BasicGeoposition, southeastCorner: BasicGeoposition, altitudeReferenceSystem: AltitudeReferenceSystem, spatialReferenceId: scala.Double) = this()
   /** Gets the altitude reference system used by the GeoboundingBox . */
   var altitudeReferenceSystem: AltitudeReferenceSystem = js.native
@@ -53,30 +53,30 @@ class GeoboundingBox protected () extends js.Object {
 @js.native
 object GeoboundingBox extends js.Object {
   /**
-                   * Calculates a GeoboundingBox that contains the specified set of geographic positions.
-                   * @param positions A collection of geographic positions to include inside the GeoboundingBox .
-                   * @return The calculated rectangle that contains the specified set of geographic positions.
-                   */
+    * Calculates a GeoboundingBox that contains the specified set of geographic positions.
+    * @param positions A collection of geographic positions to include inside the GeoboundingBox .
+    * @return The calculated rectangle that contains the specified set of geographic positions.
+    */
   def tryCompute(
     positions: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.BasicGeoposition]
   ): winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.GeoboundingBox = js.native
   /**
-                   * Calculates a GeoboundingBox that contains the specified set of geographic positions and uses the specified altitude reference system.
-                   * @param positions A collection of geographic positions to include inside the GeoboundingBox .
-                   * @param altitudeRefSystem The altitude reference system to use for the GeoboundingBox . For more info, see the AltitudeReferenceSystem property.
-                   * @return The calculated rectangle that contains the specified set of geographic positions.
-                   */
+    * Calculates a GeoboundingBox that contains the specified set of geographic positions and uses the specified altitude reference system.
+    * @param positions A collection of geographic positions to include inside the GeoboundingBox .
+    * @param altitudeRefSystem The altitude reference system to use for the GeoboundingBox . For more info, see the AltitudeReferenceSystem property.
+    * @return The calculated rectangle that contains the specified set of geographic positions.
+    */
   def tryCompute(
     positions: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.BasicGeoposition],
     altitudeRefSystem: winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.AltitudeReferenceSystem
   ): winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.GeoboundingBox = js.native
   /**
-                   * Calculates a GeoboundingBox that contains the specified set of geographic positions and uses the specified altitude reference system and spatial reference ID (SRID).
-                   * @param positions A collection of geographic positions to include inside the GeoboundingBox .
-                   * @param altitudeRefSystem The altitude reference system to use for the GeoboundingBox . For more info, see the AltitudeReferenceSystem property.
-                   * @param spatialReferenceId The spatial reference ID (SRID) to use for the GeoboundingBox . For more info, see the SpatialReferenceId property.
-                   * @return The calculated rectangle that contains the specified set of geographic positions.
-                   */
+    * Calculates a GeoboundingBox that contains the specified set of geographic positions and uses the specified altitude reference system and spatial reference ID (SRID).
+    * @param positions A collection of geographic positions to include inside the GeoboundingBox .
+    * @param altitudeRefSystem The altitude reference system to use for the GeoboundingBox . For more info, see the AltitudeReferenceSystem property.
+    * @param spatialReferenceId The spatial reference ID (SRID) to use for the GeoboundingBox . For more info, see the SpatialReferenceId property.
+    * @return The calculated rectangle that contains the specified set of geographic positions.
+    */
   def tryCompute(
     positions: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.BasicGeoposition],
     altitudeRefSystem: winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.AltitudeReferenceSystem,

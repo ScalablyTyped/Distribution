@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 trait Router
   extends backboneLib.backboneMod.EventSignatures {
   /**
-          * Routes hash or a method returning the routes hash that maps URLs with parameters to methods on your Router.
-          * For assigning routes as object hash, do it like this: this.routes = <any>{ "route": callback, ... };
-          * That works only if you set it in the constructor or the initialize method.
-          **/
+    * Routes hash or a method returning the routes hash that maps URLs with parameters to methods on your Router.
+    * For assigning routes as object hash, do it like this: this.routes = <any>{ "route": callback, ... };
+    * That works only if you set it in the constructor or the initialize method.
+    **/
   var routes: RoutesHash | js.Any = js.native
   /* private */ def _bindRoutes(): scala.Unit = js.native
   /* private */ def _extractParameters(route: stdLib.RegExp, fragment: java.lang.String): js.Array[java.lang.String] = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IntegerMean extends js.Object {
   /** The number of values being aggregated. */
   var count: js.UndefOr[SplitInt64] = js.undefined

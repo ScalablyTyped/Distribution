@@ -18,22 +18,22 @@ abstract class RegionsOfInterestControl () extends js.Object {
   /** Gets the maximum number of regions of interest that can be specified. */
   var maxRegions: scala.Double = js.native
   /**
-                   * Asynchronously clears the regions of interests.
-                   * @return The object that is used to control the asynchronous operation.
-                   */
+    * Asynchronously clears the regions of interests.
+    * @return The object that is used to control the asynchronous operation.
+    */
   def clearRegionsAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Asynchronously sets the regions of interest.
-                   * @param regions The regions of interest.
-                   * @return The object that is used to control the asynchronous operation.
-                   */
+    * Asynchronously sets the regions of interest.
+    * @param regions The regions of interest.
+    * @return The object that is used to control the asynchronous operation.
+    */
   def setRegionsAsync(regions: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[RegionOfInterest]): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Asynchronously sets the regions of interest and specifies if the values should be locked.
-                   * @param regions The regions of interests.
-                   * @param lockValues Specifies if the values should be locked.
-                   * @return The object that is used to control the asynchronous operation.
-                   */
+    * Asynchronously sets the regions of interest and specifies if the values should be locked.
+    * @param regions The regions of interests.
+    * @param lockValues Specifies if the values should be locked.
+    * @return The object that is used to control the asynchronous operation.
+    */
   def setRegionsAsync(
     regions: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[RegionOfInterest],
     lockValues: scala.Boolean

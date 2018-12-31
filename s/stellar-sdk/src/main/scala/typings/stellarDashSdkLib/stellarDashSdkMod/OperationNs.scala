@@ -8,24 +8,20 @@ import scala.scalajs.js.annotation._
 @JSImport("stellar-sdk", "Operation")
 @js.native
 object OperationNs extends js.Object {
-  
   trait AccountMerge extends Operation {
     var destination: java.lang.String
   }
-  
   
   trait AccountMergeOptions extends js.Object {
     var destination: java.lang.String
     var source: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait AllowTrust extends Operation {
     var assetCode: java.lang.String
     var authorize: scala.Boolean
     var trustor: java.lang.String
   }
-  
   
   trait AllowTrustOptions extends js.Object {
     var assetCode: java.lang.String
@@ -37,30 +33,25 @@ object OperationNs extends js.Object {
   @js.native
   sealed trait AuthFlags extends js.Object
   
-  
   trait BumpSequence extends Operation {
     var bumpTo: java.lang.String
   }
-  
   
   trait BumpSequenceOptions extends js.Object {
     var bumpTo: java.lang.String
     var source: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait ChangeTrust extends Operation {
     var limit: java.lang.String | scala.Double
     var line: stellarDashSdkLib.stellarDashSdkMod.Asset
   }
-  
   
   trait ChangeTrustOptions extends js.Object {
     var asset: stellarDashSdkLib.stellarDashSdkMod.Asset
     var limit: js.UndefOr[java.lang.String] = js.undefined
     var source: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait CreateAccount extends Operation {
     var destination: java.lang.String
@@ -69,13 +60,11 @@ object OperationNs extends js.Object {
     var startingBalance: java.lang.String | scala.Double
   }
   
-  
   trait CreateAccountOptions extends js.Object {
     var destination: java.lang.String
     var source: js.UndefOr[java.lang.String] = js.undefined
     var startingBalance: java.lang.String
   }
-  
   
   trait CreatePassiveOffer extends Operation {
     var amount: java.lang.String | scala.Double
@@ -83,7 +72,6 @@ object OperationNs extends js.Object {
     var price: java.lang.String | scala.Double
     var selling: stellarDashSdkLib.stellarDashSdkMod.Asset
   }
-  
   
   trait CreatePassiveOfferOptions extends js.Object {
     var amount: java.lang.String
@@ -93,22 +81,18 @@ object OperationNs extends js.Object {
     var source: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait Inflation extends Operation
-  
   
   trait ManageData extends Operation {
     var name: java.lang.String
     var value: nodeLib.Buffer
   }
   
-  
   trait ManageDataOptions extends js.Object {
     var name: java.lang.String
     var source: js.UndefOr[java.lang.String] = js.undefined
     var value: java.lang.String | nodeLib.Buffer
   }
-  
   
   trait ManageOffer extends Operation {
     var amount: java.lang.String | scala.Double
@@ -118,17 +102,14 @@ object OperationNs extends js.Object {
     var selling: stellarDashSdkLib.stellarDashSdkMod.Asset
   }
   
-  
   trait ManageOfferOptions extends CreatePassiveOfferOptions {
     var offerId: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   }
-  
   
   trait Operation extends js.Object {
     var source: java.lang.String | scala.Null
     var `type`: stellarDashSdkLib.stellarDashSdkMod.OperationType
   }
-  
   
   trait PathPayment extends Operation {
     var destAmount: java.lang.String | scala.Double
@@ -138,7 +119,6 @@ object OperationNs extends js.Object {
     var sendAsset: stellarDashSdkLib.stellarDashSdkMod.Asset
     var sendMax: java.lang.String | scala.Double
   }
-  
   
   trait PathPaymentOptions extends js.Object {
     var destAmount: java.lang.String
@@ -150,13 +130,11 @@ object OperationNs extends js.Object {
     var source: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait Payment extends Operation {
     var amount: java.lang.String | scala.Double
     var asset: stellarDashSdkLib.stellarDashSdkMod.Asset
     var destination: java.lang.String
   }
-  
   
   trait PaymentOptions extends js.Object {
     var amount: java.lang.String
@@ -164,7 +142,6 @@ object OperationNs extends js.Object {
     var destination: java.lang.String
     var source: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait SetOptions extends Operation {
     var clearFlags: js.UndefOr[AuthFlags] = js.undefined
@@ -178,7 +155,6 @@ object OperationNs extends js.Object {
     var signer: js.UndefOr[Signer] = js.undefined
   }
   
-  
   trait SetOptionsOptions extends js.Object {
     var clearFlags: js.UndefOr[AuthFlags] = js.undefined
     var highThreshold: js.UndefOr[scala.Double | java.lang.String] = js.undefined
@@ -191,7 +167,6 @@ object OperationNs extends js.Object {
     var signer: js.UndefOr[Signer] = js.undefined
     var source: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait Signer extends js.Object {
     var ed25519PublicKey: js.UndefOr[java.lang.String] = js.undefined
@@ -214,10 +189,10 @@ object OperationNs extends js.Object {
   def payment(options: PaymentOptions): stellarDashSdkLib.stellarDashSdkMod.xdrNs.Operation[Payment] = js.native
   def setOptions(options: SetOptionsOptions): stellarDashSdkLib.stellarDashSdkMod.xdrNs.Operation[SetOptions] = js.native
   /*
-       * Required = 1 << 0
-       * Revocable = 1 << 1
-       * Immutable = 1 << 2
-       */
+    * Required = 1 << 0
+    * Revocable = 1 << 1
+    * Immutable = 1 << 2
+    */
   @js.native
   object AuthFlags extends js.Object {
     @js.native

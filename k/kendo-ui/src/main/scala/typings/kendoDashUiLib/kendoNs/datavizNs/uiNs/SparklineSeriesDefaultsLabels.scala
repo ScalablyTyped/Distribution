@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SparklineSeriesDefaultsLabels extends js.Object {
   var background: js.UndefOr[java.lang.String] = js.undefined
   var border: js.UndefOr[SparklineSeriesDefaultsLabelsBorder] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContactMaterial extends js.Object {
   var contactSkinSize: scala.Double
   var friction: scala.Double

@@ -34,15 +34,15 @@ class Result ()
   /* CompleteClass */
   override var scope: java.lang.String | scala.Null = js.native
   /**
-           * One of the following strings:
-           * * git - A git repo
-           * * tag - A tagged version, like "foo@latest"
-           * * version - A specific version number, like "foo@1.2.3"
-           * * range - A version range, like "foo@2.x"
-           * * file - A local .tar.gz, .tar or .tgz file.
-           * * directory - A local directory.
-           * * remote - An http url (presumably to a tgz)
-           */
+    * One of the following strings:
+    * * git - A git repo
+    * * tag - A tagged version, like "foo@latest"
+    * * version - A specific version number, like "foo@1.2.3"
+    * * range - A version range, like "foo@2.x"
+    * * file - A local .tar.gz, .tar or .tgz file.
+    * * directory - A local directory.
+    * * remote - An http url (presumably to a tgz)
+    */
   /* CompleteClass */
   override var `type`: npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.git | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.tag | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.version | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.range | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.file | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.directory | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.remote | npmDashPackageDashArgLib.npmDashPackageDashArgLibStrings.alias = js.native
 }

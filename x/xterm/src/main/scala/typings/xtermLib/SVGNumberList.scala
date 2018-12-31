@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGNumberList
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[SVGNumber] {
   val length: scala.Double

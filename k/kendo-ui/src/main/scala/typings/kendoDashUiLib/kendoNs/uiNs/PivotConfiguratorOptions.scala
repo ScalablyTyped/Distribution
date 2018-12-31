@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PivotConfiguratorOptions extends js.Object {
   var dataSource: js.UndefOr[js.Any | kendoDashUiLib.kendoNs.dataNs.PivotDataSource] = js.undefined
   var filterable: js.UndefOr[scala.Boolean] = js.undefined

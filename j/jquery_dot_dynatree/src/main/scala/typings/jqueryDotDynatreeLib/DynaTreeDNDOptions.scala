@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DynaTreeDNDOptions extends js.Object {
   var autoExpandMS: js.UndefOr[scala.Double] = js.undefined
    // Callback(sourceNode)

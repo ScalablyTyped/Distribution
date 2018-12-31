@@ -16,19 +16,11 @@ object Toaster extends js.Object {
   var defaultProps: atBlueprintjsCoreLib.libEsmComponentsToastToasterMod.IToasterProps = js.native
   var displayName: java.lang.String = js.native
   /**
-       * Create a new `Toaster` instance that can be shared around your application.
-       * The `Toaster` will be rendered into a new element appended to the given container.
-       */
+    * Create a new `Toaster` instance that can be shared around your application.
+    * The `Toaster` will be rendered into a new element appended to the given container.
+    */
   def create(): atBlueprintjsCoreLib.libEsmComponentsToastToasterMod.IToaster = js.native
-  /**
-       * Create a new `Toaster` instance that can be shared around your application.
-       * The `Toaster` will be rendered into a new element appended to the given container.
-       */
   def create(props: atBlueprintjsCoreLib.libEsmComponentsToastToasterMod.IToasterProps): atBlueprintjsCoreLib.libEsmComponentsToastToasterMod.IToaster = js.native
-  /**
-       * Create a new `Toaster` instance that can be shared around your application.
-       * The `Toaster` will be rendered into a new element appended to the given container.
-       */
   def create(
     props: atBlueprintjsCoreLib.libEsmComponentsToastToasterMod.IToasterProps,
     container: reactLib.HTMLElement

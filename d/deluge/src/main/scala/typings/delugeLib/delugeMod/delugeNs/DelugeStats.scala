@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DelugeStats extends js.Object {
   var dht_nodes: scala.Double
   var download_protocol_rate: scala.Double

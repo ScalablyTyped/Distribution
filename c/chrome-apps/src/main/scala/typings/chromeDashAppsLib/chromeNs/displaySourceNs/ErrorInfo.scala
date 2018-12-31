@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ErrorInfo extends js.Object {
   var description: js.UndefOr[java.lang.String] = js.undefined
   /** @see ErrorType */
@@ -14,7 +13,7 @@ trait ErrorInfo extends js.Object {
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(chrome-apps), TsIdentSimple(Anon_UNKNOWNERROR))),List()),Left(TsIdentSimple(K))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_UNKNOWNERROR[keyof chrome-apps.Anon_UNKNOWNERROR] */ js.Any
     ]
   ]
 }

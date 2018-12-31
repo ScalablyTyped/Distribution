@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PBES2Params extends js.Object {
   var encryptionScheme: pkijsLib.srcAlgorithmIdentifierMod.default
   var keyDerivationFunc: pkijsLib.srcAlgorithmIdentifierMod.default

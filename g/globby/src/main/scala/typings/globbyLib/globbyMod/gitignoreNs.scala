@@ -9,16 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object gitignoreNs extends js.Object {
   /**
-           * Returns a `(path: string) => boolean` indicating whether a given path is ignored via a `.gitignore` file.
-           *
-           * Takes the same options as `globby.gitignore`.
-           */
+    * Returns a `(path: string) => boolean` indicating whether a given path is ignored via a `.gitignore` file.
+    *
+    * Takes the same options as `globby.gitignore`.
+    */
   def sync(): js.Function1[/* path */ java.lang.String, scala.Boolean] = js.native
-  /**
-           * Returns a `(path: string) => boolean` indicating whether a given path is ignored via a `.gitignore` file.
-           *
-           * Takes the same options as `globby.gitignore`.
-           */
   def sync(options: globbyLib.Anon_Cwd): js.Function1[/* path */ java.lang.String, scala.Boolean] = js.native
 }
 

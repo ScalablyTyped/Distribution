@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ProjectPrettyPrintQuotaUserKeyUserIpOauthtokenAlt extends js.Object {
   /** Name of the address resource to return. */
   var address: java.lang.String
@@ -22,9 +21,9 @@ trait Anon_ProjectPrettyPrintQuotaUserKeyUserIpOauthtokenAlt extends js.Object {
   /** Project ID for this request. */
   var project: java.lang.String
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** Name of the region for this request. */
   var region: java.lang.String

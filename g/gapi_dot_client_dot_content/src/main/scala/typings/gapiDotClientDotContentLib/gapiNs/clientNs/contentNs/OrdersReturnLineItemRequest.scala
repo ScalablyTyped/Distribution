@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrdersReturnLineItemRequest extends js.Object {
   /** The ID of the line item to return. */
   var lineItemId: js.UndefOr[java.lang.String] = js.undefined

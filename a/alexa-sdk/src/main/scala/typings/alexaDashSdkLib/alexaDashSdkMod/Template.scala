@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Template extends js.Object {
   /**
-       * Visibility of the back button.
-       */
+    * Visibility of the back button.
+    */
   var backButton: js.UndefOr[TemplateBackButtonVisibility] = js.undefined
   var backgroundImage: js.UndefOr[Image] = js.undefined
   var image: js.UndefOr[Image] = js.undefined
@@ -17,8 +16,8 @@ trait Template extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
   var token: java.lang.String
   /**
-       * Template type.
-       */
+    * Template type.
+    */
   var `type`: TemplateType
 }
 

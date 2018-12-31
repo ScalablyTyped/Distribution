@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Instance extends js.Object {
   /** App Engine release this instance is running on.@OutputOnly */
   var appEngineRelease: js.UndefOr[java.lang.String] = js.undefined

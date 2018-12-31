@@ -75,9 +75,9 @@ abstract class PhotoImportFindItemsResult () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[PhotoImportFindItemsResult, PhotoImportSelectionChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Asynchronously imports the selected items from the source.
-                   * @return An asynchronous operation that returns a PhotoImportImportItemsResult on successful completion.
-                   */
+    * Asynchronously imports the selected items from the source.
+    * @return An asynchronous operation that returns a PhotoImportImportItemsResult on successful completion.
+    */
   def importItemsAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[PhotoImportImportItemsResult, PhotoImportProgress] = js.native
   /** Occurs when an item is imported. */
   def onitemimported(
@@ -101,16 +101,16 @@ abstract class PhotoImportFindItemsResult () extends js.Object {
   /** Selects all items found on the source to be included in the ImportItemsAsync operation. */
   def selectAll(): scala.Unit = js.native
   /**
-                   * Selects all new items found on the source to be included in the ImportItemsAsync operation.
-                   * @return An asynchronous operation.
-                   */
+    * Selects all new items found on the source to be included in the ImportItemsAsync operation.
+    * @return An asynchronous operation.
+    */
   def selectNewAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /** Deselects all items found on the source, preventing them from being included in the ImportItemsAsync operation. */
   def selectNone(): scala.Unit = js.native
   /**
-                   * Sets the photo import mode that determines which types of files are included in the ImportItemsAsync operation.
-                   * @param value The photo import mode.
-                   */
+    * Sets the photo import mode that determines which types of files are included in the ImportItemsAsync operation.
+    * @param value The photo import mode.
+    */
   def setImportMode(value: PhotoImportImportMode): scala.Unit = js.native
 }
 

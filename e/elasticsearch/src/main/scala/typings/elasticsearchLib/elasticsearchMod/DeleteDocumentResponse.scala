@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeleteDocumentResponse extends js.Object {
   var _id: java.lang.String
   var _index: java.lang.String

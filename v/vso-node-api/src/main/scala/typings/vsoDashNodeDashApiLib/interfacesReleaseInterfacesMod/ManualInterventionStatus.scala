@@ -12,36 +12,36 @@ sealed trait ManualInterventionStatus extends js.Object
 @js.native
 object ManualInterventionStatus extends js.Object {
   /**
-       * The manual intervention is approved.
-       */
+    * The manual intervention is approved.
+    */
   @js.native
   sealed trait Approved
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.ManualInterventionStatus
   
   /**
-       * The manual intervention is canceled.
-       */
+    * The manual intervention is canceled.
+    */
   @js.native
   sealed trait Canceled
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.ManualInterventionStatus
   
   /**
-       * The manual intervention is pending.
-       */
+    * The manual intervention is pending.
+    */
   @js.native
   sealed trait Pending
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.ManualInterventionStatus
   
   /**
-       * The manual intervention is rejected.
-       */
+    * The manual intervention is rejected.
+    */
   @js.native
   sealed trait Rejected
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.ManualInterventionStatus
   
   /**
-       * The manual intervention does not have the status set.
-       */
+    * The manual intervention does not have the status set.
+    */
   @js.native
   sealed trait Unknown
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.ManualInterventionStatus

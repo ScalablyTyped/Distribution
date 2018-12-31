@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SchedulerOptions extends js.Object {
   var add: js.UndefOr[js.Function1[/* e */ SchedulerAddEvent, scala.Unit]] = js.undefined
   var allDayEventTemplate: js.UndefOr[java.lang.String | js.Function] = js.undefined

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait IconSet extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.2]
-     */
+  * [Api set: ExcelApi 1.2]
+  */
 @JSGlobal("Excel.IconSet")
 @js.native
 object IconSet extends js.Object {

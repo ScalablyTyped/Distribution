@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait image extends js.Object {
   var etag: java.lang.String
   var format: java.lang.String

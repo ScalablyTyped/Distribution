@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Resources extends js.Object {
   /** Number of CPU cores needed. */
   var cpu: js.UndefOr[scala.Double] = js.undefined

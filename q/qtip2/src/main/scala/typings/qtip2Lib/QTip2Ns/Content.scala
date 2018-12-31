@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Content extends js.Object {
   var attr: js.UndefOr[java.lang.String] = js.undefined
   var button: js.UndefOr[java.lang.String | qtip2Lib.JQuery | scala.Boolean] = js.undefined

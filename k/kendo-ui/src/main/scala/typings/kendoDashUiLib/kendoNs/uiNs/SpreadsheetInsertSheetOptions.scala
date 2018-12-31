@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpreadsheetInsertSheetOptions extends js.Object {
   var columnWidth: js.UndefOr[scala.Double] = js.undefined
   var columns: js.UndefOr[scala.Double] = js.undefined

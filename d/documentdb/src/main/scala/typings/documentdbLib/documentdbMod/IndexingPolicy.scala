@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IndexingPolicy extends js.Object {
   /** Represents the paths to be excluded from indexing. */
   var ExcludedPaths: js.Array[ExcludedPath]

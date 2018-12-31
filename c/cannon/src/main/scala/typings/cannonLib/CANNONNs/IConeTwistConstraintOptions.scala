@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IConeTwistConstraintOptions extends js.Object {
   var axisA: js.UndefOr[Vec3] = js.undefined
   var axisB: js.UndefOr[Vec3] = js.undefined

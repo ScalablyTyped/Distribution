@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ApFilePath extends js.Object {
   /** 文件路径 */
   var apFilePath: java.lang.String

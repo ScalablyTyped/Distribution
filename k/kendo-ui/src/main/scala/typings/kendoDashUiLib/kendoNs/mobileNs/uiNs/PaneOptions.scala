@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaneOptions extends js.Object {
   var collapsible: js.UndefOr[scala.Boolean] = js.undefined
   var initial: js.UndefOr[java.lang.String] = js.undefined

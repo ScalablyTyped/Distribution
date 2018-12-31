@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IIndirectPropertyIDLevel extends js.Object {
   var ID: scala.Double
   var LevelType: mfilesLib.MFilesNs.MFIndirectPropertyIDLevelType

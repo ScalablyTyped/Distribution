@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OutputOptions extends js.Object {
   /** Force format output, otherwise attempt to use input format (optional, default true) */
   var force: js.UndefOr[scala.Boolean] = js.undefined

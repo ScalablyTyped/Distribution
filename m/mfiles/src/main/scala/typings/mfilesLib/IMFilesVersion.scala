@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMFilesVersion extends js.Object {
   var Build: scala.Double
   val Display: java.lang.String

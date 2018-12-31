@@ -47,12 +47,6 @@ trait IgNotifierMethods extends js.Object {
   	 * @param message Optional message to show, overrides defaults.
   	 */
   def notify(state: js.Object): scala.Unit = js.native
-  /**
-  	 * Triggers a notification with a certain state and optional message. The [notifyLevel](ui.ignotifier#options:notifyLevel) option determines if the notification will be displayed.
-  	 *
-  	 * @param state The state to show notification for.
-  	 * @param message Optional message to show, overrides defaults.
-  	 */
   def notify(state: js.Object, message: java.lang.String): scala.Unit = js.native
   /**
   	 * Sets the content for the popover container
@@ -73,19 +67,7 @@ trait IgNotifierMethods extends js.Object {
   	 * @param content The string to set for the popover to show.
   	 */
   def show(): scala.Unit = js.native
-  /**
-  	 * Shows the popover for the specified target
-  	 *
-  	 * @param trg The element to show popover for.
-  	 * @param content The string to set for the popover to show.
-  	 */
   def show(trg: stdLib.Element): scala.Unit = js.native
-  /**
-  	 * Shows the popover for the specified target
-  	 *
-  	 * @param trg The element to show popover for.
-  	 * @param content The string to set for the popover to show.
-  	 */
   def show(trg: stdLib.Element, content: java.lang.String): scala.Unit = js.native
   /**
   	 * Gets the popover current target

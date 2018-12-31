@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Cancel extends js.Object {
   def actionChannel(effect: reduxDashSagaLib.effectsMod.Effect): js.UndefOr[reduxDashSagaLib.effectsMod.ActionChannelEffectDescriptor]
   def all(effect: reduxDashSagaLib.effectsMod.Effect): js.UndefOr[reduxDashSagaLib.effectsMod.AllEffectDescriptor]

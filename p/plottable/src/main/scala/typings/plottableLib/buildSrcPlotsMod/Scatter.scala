@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("plottable/build/src/plots", "Scatter")
 @js.native
+/**
+  * A Scatter Plot draws a symbol at each data point.
+  *
+  * @constructor
+  */
 class Scatter[X, Y] ()
   extends plottableLib.buildSrcPlotsScatterPlotMod.Scatter[X, Y]
 

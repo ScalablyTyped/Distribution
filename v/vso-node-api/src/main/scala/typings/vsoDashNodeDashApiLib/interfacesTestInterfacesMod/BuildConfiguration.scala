@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BuildConfiguration extends js.Object {
   var branchName: java.lang.String
   var buildDefinitionId: scala.Double

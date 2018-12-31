@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPosition
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Double]] {
   var bottom: js.UndefOr[scala.Double] = js.undefined

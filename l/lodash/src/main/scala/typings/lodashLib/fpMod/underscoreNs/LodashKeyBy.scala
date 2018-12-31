@@ -12,13 +12,11 @@ trait LodashKeyBy extends js.Object {
   ): lodashLib.lodashMod.underscoreNs.Dictionary[T] = js.native
   def apply[T /* <: js.Object */](
     iteratee: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any, 
       lodashLib.lodashMod.underscoreNs.PropertyName
     ],
     collection: T
-  ): lodashLib.lodashMod.underscoreNs.Dictionary[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  ): lodashLib.lodashMod.underscoreNs.Dictionary[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def apply[T](
     iteratee: lodashLib.lodashMod.underscoreNs.ValueIterateeCustom[T, lodashLib.lodashMod.underscoreNs.PropertyName],
     collection: lodashLib.lodashMod.underscoreNs.List[T]

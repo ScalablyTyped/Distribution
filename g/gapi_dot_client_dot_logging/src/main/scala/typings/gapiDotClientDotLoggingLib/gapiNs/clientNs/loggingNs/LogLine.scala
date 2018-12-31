@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LogLine extends js.Object {
   /** App-provided log message. */
   var logMessage: js.UndefOr[java.lang.String] = js.undefined

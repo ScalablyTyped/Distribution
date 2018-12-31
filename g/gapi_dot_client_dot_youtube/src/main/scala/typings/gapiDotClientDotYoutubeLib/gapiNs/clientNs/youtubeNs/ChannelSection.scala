@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChannelSection extends js.Object {
   /** The contentDetails object contains details about the channel section content, such as a list of playlists or channels featured in the section. */
   var contentDetails: js.UndefOr[ChannelSectionContentDetails] = js.undefined

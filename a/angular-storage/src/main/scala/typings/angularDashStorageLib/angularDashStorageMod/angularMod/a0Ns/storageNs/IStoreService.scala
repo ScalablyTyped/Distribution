@@ -16,23 +16,7 @@ trait IStoreService extends INamespacedStoreService {
   			 * @returns {INamespacedStoreService}
   			 */
   def getNamespacedStore(namespace: java.lang.String): INamespacedStoreService = js.native
-  /**
-  			 * Returns a namespaced store
-  			 *
-  			 * @param {String} namespace - The namespace
-  			 * @param {String} storage - The name of the storage service. Defaults to local storage.
-  			 * @param {String} delimiter - The delimiter to use to separate the namespace and the keys.
-  			 * @returns {INamespacedStoreService}
-  			 */
   def getNamespacedStore(namespace: java.lang.String, storage: java.lang.String): INamespacedStoreService = js.native
-  /**
-  			 * Returns a namespaced store
-  			 *
-  			 * @param {String} namespace - The namespace
-  			 * @param {String} storage - The name of the storage service. Defaults to local storage.
-  			 * @param {String} delimiter - The delimiter to use to separate the namespace and the keys.
-  			 * @returns {INamespacedStoreService}
-  			 */
   def getNamespacedStore(namespace: java.lang.String, storage: java.lang.String, delimiter: java.lang.String): INamespacedStoreService = js.native
 }
 

@@ -6,12 +6,18 @@ import scala.scalajs.js.annotation._
 
 package object stampitLib {
   /** Any composable object (stamp or descriptor) */
-  type Composable = js.Any
+  type Composable = /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify stampit.Stamp */ js.Any
   /**
-   * Composer function
-   */
+    * Composer function
+    */
   type Composer = js.Function1[/* hasStampComposables */ Anon_Stamp, js.Any]
-  type Init = js.Function2[/* factoryArg */ js.Any, /* ctx */ js.UndefOr[js.Any], js.Any]
+  type Init = js.Function2[
+    /* factoryArg */ js.Any, 
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Context */ /* ctx */ js.UndefOr[
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Context */ js.Any
+    ], 
+    js.Any
+  ]
   /** Stampit Composable for main stampit() function */
-  type StampitComposable = js.Any
+  type StampitComposable = /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify stampit.Stamp */ js.Any
 }

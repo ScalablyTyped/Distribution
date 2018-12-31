@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartCategoryAxisItemAutoBaseUnitSteps extends js.Object {
   var days: js.UndefOr[js.Any] = js.undefined
   var hours: js.UndefOr[js.Any] = js.undefined

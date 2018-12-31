@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SubdivisionsRadiusXFlat extends js.Object {
   var backUVs: js.UndefOr[babylonjsLib.BABYLONNs.Vector4] = js.undefined
   var flat: js.UndefOr[scala.Boolean] = js.undefined

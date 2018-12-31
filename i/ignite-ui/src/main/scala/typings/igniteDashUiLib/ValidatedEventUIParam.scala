@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ValidatedEventUIParam extends js.Object {
   /**
   	 * Populated with options for the specific field in the collection or null.

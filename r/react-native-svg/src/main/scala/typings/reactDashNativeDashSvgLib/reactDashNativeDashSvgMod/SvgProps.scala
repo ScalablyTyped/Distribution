@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SvgProps
   extends reactDashNativeLib.reactDashNativeMod.ViewProps {
   var height: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined

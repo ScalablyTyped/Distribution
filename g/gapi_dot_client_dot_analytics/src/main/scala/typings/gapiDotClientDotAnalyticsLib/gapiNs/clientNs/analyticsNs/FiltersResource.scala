@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FiltersResource extends js.Object {
   /** Delete a filter. */
   def delete(

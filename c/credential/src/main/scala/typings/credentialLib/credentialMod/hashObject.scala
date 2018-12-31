@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait hashObject extends js.Object {
   var hash: java.lang.String
   var hashMethod: java.lang.String

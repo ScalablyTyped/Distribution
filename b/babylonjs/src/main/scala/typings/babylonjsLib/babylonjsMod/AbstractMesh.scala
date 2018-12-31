@@ -6,37 +6,32 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Class used to store all common mesh properties
-     */
+  * Class used to store all common mesh properties
+  */
 @JSImport("babylonjs", "AbstractMesh")
 @js.native
 class AbstractMesh protected ()
   extends babylonjsLib.BABYLONNs.AbstractMesh {
   /**
-           * Creates a new AbstractMesh
-           * @param name defines the name of the mesh
-           * @param scene defines the hosting scene
-           */
+    * Creates a new AbstractMesh
+    * @param name defines the name of the mesh
+    * @param scene defines the hosting scene
+    */
   def this(name: java.lang.String) = this()
-  /**
-           * Creates a new AbstractMesh
-           * @param name defines the name of the mesh
-           * @param scene defines the hosting scene
-           */
   def this(name: java.lang.String, scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene]) = this()
 }
 
 /**
-     * Class used to store all common mesh properties
-     */
+  * Class used to store all common mesh properties
+  */
 @JSImport("babylonjs", "AbstractMesh")
 @js.native
 object AbstractMesh extends js.Object {
   /** Billboard on all axes */
   val BILLBOARDMODE_ALL: scala.Double = js.native
   /**
-           * No billboard
-           */
+    * No billboard
+    */
   val BILLBOARDMODE_NONE: scala.Double = js.native
   /** Billboard on X axis */
   val BILLBOARDMODE_X: scala.Double = js.native

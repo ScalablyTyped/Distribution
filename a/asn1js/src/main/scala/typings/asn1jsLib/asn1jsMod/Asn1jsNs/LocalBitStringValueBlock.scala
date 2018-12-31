@@ -18,12 +18,12 @@ trait LocalBitStringValueBlock
   /* InferMemberOverrides */
   override def toBER(sizeOnly: scala.Boolean): stdLib.ArrayBuffer = js.native
   /**
-           * Convertion for the block to JSON object
-           * 
-           * @returns {JsonLocalBaseBlock}
-           * 
-           * @memberOf LocalBaseBlock
-           */
+    * Convertion for the block to JSON object
+    * 
+    * @returns {JsonLocalBaseBlock}
+    * 
+    * @memberOf LocalBaseBlock
+    */
   /* InferMemberOverrides */
   override def toJSON(): JsonLocalBaseBlock with js.Any = js.native
 }

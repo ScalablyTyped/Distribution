@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DefFloatObject extends js.Object {
   var enum: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined

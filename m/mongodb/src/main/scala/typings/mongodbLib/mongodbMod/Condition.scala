@@ -5,15 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Condition[T, P /* <: java.lang.String */]
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   @JSName("$and")
   var $and: js.UndefOr[
     js.Array[
-      (FilterQuery[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.Any
-      ]) | (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.Any)
+      (FilterQuery[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any]) | (/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any)
     ]
   ] = js.undefined
   @JSName("$bitsAllClear")
@@ -27,9 +24,7 @@ trait Condition[T, P /* <: java.lang.String */]
   @JSName("$elemMatch")
   var $elemMatch: js.UndefOr[js.Object] = js.undefined
   @JSName("$eq")
-  var $eq: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.Any
-  ] = js.undefined
+  var $eq: /* import warning: ImportType.apply Failed type conversion: T[P] */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = js.undefined
   @JSName("$expr")
   var $expr: js.UndefOr[js.Any] = js.undefined
   @JSName("$geoIntersects")
@@ -37,61 +32,43 @@ trait Condition[T, P /* <: java.lang.String */]
   @JSName("$geoWithin")
   var $geoWithin: js.UndefOr[js.Object] = js.undefined
   @JSName("$gt")
-  var $gt: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.Any
-  ] = js.undefined
+  var $gt: /* import warning: ImportType.apply Failed type conversion: T[P] */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = js.undefined
   @JSName("$gte")
-  var $gte: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.Any
-  ] = js.undefined
+  var $gte: /* import warning: ImportType.apply Failed type conversion: T[P] */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = js.undefined
   @JSName("$in")
   var $in: js.UndefOr[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any]
   ] = js.undefined
   @JSName("$jsonSchema")
   var $jsonSchema: js.UndefOr[js.Any] = js.undefined
   @JSName("$lt")
-  var $lt: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.Any
-  ] = js.undefined
+  var $lt: /* import warning: ImportType.apply Failed type conversion: T[P] */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = js.undefined
   @JSName("$lte")
-  var $lte: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.Any
-  ] = js.undefined
+  var $lte: /* import warning: ImportType.apply Failed type conversion: T[P] */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = js.undefined
   @JSName("$mod")
   var $mod: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.undefined
   @JSName("$ne")
-  var $ne: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.Any
-  ] = js.undefined
+  var $ne: /* import warning: ImportType.apply Failed type conversion: T[P] */ js.UndefOr[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any] = js.undefined
   @JSName("$near")
   var $near: js.UndefOr[js.Object] = js.undefined
   @JSName("$nearSphere")
   var $nearSphere: js.UndefOr[js.Object] = js.undefined
   @JSName("$nin")
   var $nin: js.UndefOr[
-    js.Array[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.Any
-    ]
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any]
   ] = js.undefined
   @JSName("$not")
   var $not: js.UndefOr[
     (js.Array[
-      (FilterQuery[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.Any
-      ]) | (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.Any)
-    ]) | (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.Any)
+      (FilterQuery[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any]) | (/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any)
+    ]) | (/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any)
   ] = js.undefined
   @JSName("$options")
   var $options: js.UndefOr[java.lang.String] = js.undefined
   @JSName("$or")
   var $or: js.UndefOr[
     js.Array[
-      (FilterQuery[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.Any
-      ]) | (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(P))) */js.Any)
+      (FilterQuery[/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any]) | (/* import warning: ImportType.apply Failed type conversion: T[P] */ js.Any)
     ]
   ] = js.undefined
   @JSName("$regex")

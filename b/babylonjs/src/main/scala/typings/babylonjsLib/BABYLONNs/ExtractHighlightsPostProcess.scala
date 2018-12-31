@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * The extract highlights post process sets all pixels to black except pixels above the specified luminance threshold. Used as the first step for a bloom effect.
-     */
+  * The extract highlights post process sets all pixels to black except pixels above the specified luminance threshold. Used as the first step for a bloom effect.
+  */
 @JSGlobal("BABYLON.ExtractHighlightsPostProcess")
 @js.native
 class ExtractHighlightsPostProcess protected () extends PostProcess {
@@ -26,13 +26,13 @@ class ExtractHighlightsPostProcess protected () extends PostProcess {
   /** @hidden */
   var _exposure: scala.Double = js.native
   /**
-           * Post process which has the input texture to be used when performing highlight extraction
-           * @hidden
-           */
+    * Post process which has the input texture to be used when performing highlight extraction
+    * @hidden
+    */
   var _inputPostProcess: Nullable[PostProcess] = js.native
   /**
-           * The luminance threshold, pixels below this value will be set to black.
-           */
+    * The luminance threshold, pixels below this value will be set to black.
+    */
   var threshold: scala.Double = js.native
 }
 

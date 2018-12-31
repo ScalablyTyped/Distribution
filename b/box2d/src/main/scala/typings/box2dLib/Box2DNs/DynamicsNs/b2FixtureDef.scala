@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Dynamics.b2FixtureDef")
 @js.native
+/**
+		* The constructor sets the default fixture definition values.
+		**/
 class b2FixtureDef () extends js.Object {
   /**
   		* The density, usually in kg/m^2.

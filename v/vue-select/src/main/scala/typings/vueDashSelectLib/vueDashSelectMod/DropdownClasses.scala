@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DropdownClasses extends js.Object {
   var disabled: scala.Boolean
   var loading: scala.Boolean

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "Font")
 @js.native
 object FontNs extends js.Object {
-  
   trait FontMap
     extends /* name */ org.scalablytyped.runtime.StringDictionary[expoLib.expoMod.RequireSource]
   

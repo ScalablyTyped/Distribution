@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Env extends js.Object {
   var android: scala.Boolean
   var ceFalse: scala.Boolean

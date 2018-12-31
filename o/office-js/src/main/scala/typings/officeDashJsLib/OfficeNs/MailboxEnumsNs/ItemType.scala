@@ -9,28 +9,28 @@ import scala.scalajs.js.annotation._
 sealed trait ItemType extends js.Object
 
 /**
-         * Specifies an item's type.
-         *
-         * [Api set: Mailbox 1.0]
-         *
-         * @remarks
-         * <table><tr><td>
-         * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
-         * </td><td>Compose or read</td></tr></table>
-         */
+  * Specifies an item's type.
+  *
+  * [Api set: Mailbox 1.0]
+  *
+  * @remarks
+  * <table><tr><td>
+  * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
+  * </td><td>Compose or read</td></tr></table>
+  */
 @JSGlobal("Office.MailboxEnums.ItemType")
 @js.native
 object ItemType extends js.Object {
   /**
-               * An appointment item.
-               */
+    * An appointment item.
+    */
   @js.native
   sealed trait Appointment
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.ItemType
   
   /**
-               * An email, meeting request, meeting response, or meeting cancellation.
-               */
+    * An email, meeting request, meeting response, or meeting cancellation.
+    */
   @js.native
   sealed trait Message
     extends officeDashJsLib.OfficeNs.MailboxEnumsNs.ItemType

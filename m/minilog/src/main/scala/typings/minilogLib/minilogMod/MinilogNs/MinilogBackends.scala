@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MinilogBackends extends js.Object {
   var array: js.Any
   var browser: js.Any

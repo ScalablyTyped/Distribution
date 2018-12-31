@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilterDropDownOkEventUIParam extends js.Object {
   /**
   	 * A reference to the drop down.

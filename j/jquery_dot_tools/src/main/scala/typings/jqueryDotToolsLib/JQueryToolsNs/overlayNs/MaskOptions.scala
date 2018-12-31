@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MaskOptions extends js.Object {
   /** CSS color string (i.e. hex value) */
   var color: js.UndefOr[java.lang.String] = js.undefined

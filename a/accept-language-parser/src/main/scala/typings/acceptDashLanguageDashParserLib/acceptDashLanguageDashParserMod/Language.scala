@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Language extends js.Object {
   var code: java.lang.String
   var quality: scala.Double

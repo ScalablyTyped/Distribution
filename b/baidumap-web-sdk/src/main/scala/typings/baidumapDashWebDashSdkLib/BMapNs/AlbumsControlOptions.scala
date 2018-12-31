@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AlbumsControlOptions extends js.Object {
   var anchor: js.UndefOr[ControlAnchor] = js.undefined
   var imageHeight: js.UndefOr[scala.Double] = js.undefined

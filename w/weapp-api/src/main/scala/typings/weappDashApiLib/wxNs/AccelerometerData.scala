@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccelerometerData extends js.Object {
   /** X 轴 */
   var x: scala.Double

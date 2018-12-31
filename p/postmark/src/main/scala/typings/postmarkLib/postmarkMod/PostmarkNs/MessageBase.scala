@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // messages
-
 trait MessageBase extends js.Object {
   var Attachments: js.Array[PostmarkAttachment]
   var Cc: java.lang.String

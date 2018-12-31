@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ConeOuterAngle extends js.Object {
   var coneInnerAngle: js.UndefOr[scala.Double] = js.undefined
   var coneOuterAngle: js.UndefOr[scala.Double] = js.undefined

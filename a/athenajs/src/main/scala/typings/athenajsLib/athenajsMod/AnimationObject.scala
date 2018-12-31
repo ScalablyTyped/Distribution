@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnimationObject extends js.Object {
   var frameDuration: js.UndefOr[scala.Double] = js.undefined
   var frames: js.Array[athenajsLib.Anon_Plane]

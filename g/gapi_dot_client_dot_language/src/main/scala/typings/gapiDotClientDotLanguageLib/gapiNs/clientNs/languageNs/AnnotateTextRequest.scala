@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnnotateTextRequest extends js.Object {
   /** Input document. */
   var document: js.UndefOr[Document] = js.undefined

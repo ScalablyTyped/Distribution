@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Stdio extends js.Object {
   var cwd: js.UndefOr[js.Object] = js.undefined
   var destination: js.UndefOr[js.Any] = js.undefined

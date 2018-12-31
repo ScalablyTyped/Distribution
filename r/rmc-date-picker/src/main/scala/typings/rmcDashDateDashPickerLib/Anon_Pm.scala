@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Pm extends js.Object {
   var am: java.lang.String
   var day: java.lang.String

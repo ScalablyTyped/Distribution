@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataBars extends js.Object {
   var axisColor: Fill
   var hideText: scala.Boolean

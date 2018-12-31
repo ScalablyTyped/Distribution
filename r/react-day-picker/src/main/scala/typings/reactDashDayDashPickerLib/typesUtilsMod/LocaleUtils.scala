@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocaleUtils extends js.Object {
   def formatDay(day: stdLib.Date, locale: java.lang.String): java.lang.String
   def formatMonthTitle(month: stdLib.Date, locale: java.lang.String): java.lang.String

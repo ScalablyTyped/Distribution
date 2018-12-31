@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapWheelEvent
   extends MapboxEvent[stdLib.WheelEvent] {
   var defaultPrevented: scala.Boolean

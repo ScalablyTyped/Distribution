@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LeagueEntryDto extends js.Object {
   var division: java.lang.String
   var isFreshBlood: scala.Boolean

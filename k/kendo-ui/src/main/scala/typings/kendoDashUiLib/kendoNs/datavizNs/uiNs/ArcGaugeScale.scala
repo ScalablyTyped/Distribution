@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ArcGaugeScale extends js.Object {
   var endAngle: js.UndefOr[scala.Double] = js.undefined
   var labels: js.UndefOr[ArcGaugeScaleLabels] = js.undefined

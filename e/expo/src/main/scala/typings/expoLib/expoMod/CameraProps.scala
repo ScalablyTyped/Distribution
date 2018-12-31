@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CameraProps
   extends reactDashNativeLib.reactDashNativeMod.ViewProps {
   var autoFocus: js.UndefOr[java.lang.String | scala.Double | scala.Boolean] = js.undefined

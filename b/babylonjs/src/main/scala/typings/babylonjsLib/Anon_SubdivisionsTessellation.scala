@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SubdivisionsTessellation extends js.Object {
   var arc: js.UndefOr[scala.Double] = js.undefined
   var backUVs: js.UndefOr[babylonjsLib.BABYLONNs.Vector4] = js.undefined

@@ -6,8 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* Primitives (first alphabetically, then by documentation order) */
-
-
 trait W2Item extends js.Object {
   var caption: js.UndefOr[java.lang.String] = js.undefined
   var checked: js.UndefOr[scala.Boolean] = js.undefined

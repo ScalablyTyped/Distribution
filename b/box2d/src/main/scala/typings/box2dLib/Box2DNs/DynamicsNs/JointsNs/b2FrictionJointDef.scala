@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Dynamics.Joints.b2FrictionJointDef")
 @js.native
+/**
+		* Constructor.
+		**/
 class b2FrictionJointDef () extends b2JointDef {
   /**
   		* The local anchor point relative to body1's origin.

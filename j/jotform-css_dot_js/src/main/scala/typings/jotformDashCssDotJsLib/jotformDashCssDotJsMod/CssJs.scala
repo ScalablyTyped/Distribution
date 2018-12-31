@@ -7,11 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait CssJs extends js.Object {
-  /**
-  	 * Given css string or objectArray, parses it and then for every selector,
-  	 * prepends this.cssPreviewNamespace to prevent css collision issues
-  	 * @returns object in which this css prepended
-  	 */
   def applyNamespacing(parsedCss: java.lang.String, prefix: java.lang.String): CssJs = js.native
   /**
   	 * Given css string or objectArray, parses it and then for every selector,
@@ -40,25 +35,16 @@ trait CssJs extends js.Object {
   	 * Finds styles that have given selector, compress them and returns them
   	 */
   def findBySelector(cssObject: CssJs, selector: java.lang.String): CssJs = js.native
-  /**
-  	 * Finds styles that have given selector, compress them and returns them
-  	 */
   def findBySelector(cssObject: CssJs, selector: java.lang.String, contains: scala.Boolean): CssJs = js.native
   /**
   	 * returns the rule having given directive
   	 */
   def findCorrespondingRule(rules: java.lang.String, directive: java.lang.String): java.lang.String | scala.Boolean = js.native
-  /**
-  	 * returns the rule having given directive
-  	 */
   def findCorrespondingRule(rules: java.lang.String, directive: java.lang.String, value: java.lang.String): java.lang.String | scala.Boolean = js.native
   /**
   	 * Computes string for ace editor using this.css or given cssBase optional parameter
   	 */
   def getCSSForEditor(parsedCss: CssJs): java.lang.String = js.native
-  /**
-  	 * Computes string for ace editor using this.css or given cssBase optional parameter
-  	 */
   def getCSSForEditor(parsedCss: CssJs, depth: scala.Double): java.lang.String = js.native
   /**
   	 * Given rules array, returns visually formatted css string to be used inside editor
@@ -72,13 +58,6 @@ trait CssJs extends js.Object {
   	 * resulting more priority in minimalObject's styles
   	 */
   def intelligentCSSPush(cssObject: CssJs, minimalObject: CssJs): scala.Unit = js.native
-  /**
-  	 * inserts new css objects into a bigger css object with same selectors grouped together
-  	 * @param cssObject array of bigger css object to be pushed into
-  	 * @param minimalObject single css object
-  	 * @param reverse reverse [optional] default is false, if given, cssObject will be reversly traversed
-  	 * resulting more priority in minimalObject's styles
-  	 */
   def intelligentCSSPush(cssObject: CssJs, minimalObject: CssJs, reverse: scala.Boolean): scala.Unit = js.native
   /**
   	 * @param cssObject target css object array
@@ -87,12 +66,6 @@ trait CssJs extends js.Object {
   	 * effectively giving priority to the styles in newArray
   	 */
   def intelligentMerge(cssObject: CssJs, newArray: CssJs): scala.Unit = js.native
-  /**
-  	 * @param cssObject target css object array
-  	 * @param newArray source array that will be pushed into cssObject parameter
-  	 * @param reverse [optional], if given true, first parameter will be traversed on reversed order
-  	 * effectively giving priority to the styles in newArray
-  	 */
   def intelligentMerge(cssObject: CssJs, newArray: CssJs, reverse: scala.Boolean): scala.Unit = js.native
   /**
   	 * Parses given css string, and returns css object

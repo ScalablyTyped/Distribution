@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimePickerOptions extends js.Object {
   var animation: js.UndefOr[scala.Boolean | TimePickerAnimation] = js.undefined
   var change: js.UndefOr[js.Function1[/* e */ TimePickerChangeEvent, scala.Unit]] = js.undefined

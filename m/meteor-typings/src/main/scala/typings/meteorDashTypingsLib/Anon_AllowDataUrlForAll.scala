@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AllowDataUrlForAll extends js.Object {
   def allowAllContentDataUrl(): scala.Unit
   def allowAllContentOrigin(): scala.Unit

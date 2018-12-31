@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CalendarSpec
   extends // any additional properties might be used with datetime.calendarFormat
 /* x */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[CalendarSpecVal]] {

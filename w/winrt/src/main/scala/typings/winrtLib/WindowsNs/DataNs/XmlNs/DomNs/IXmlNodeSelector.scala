@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IXmlNodeSelector extends js.Object {
   def selectNodes(xpath: java.lang.String): XmlNodeList
   def selectNodesNS(xpath: java.lang.String, namespaces: js.Any): XmlNodeList

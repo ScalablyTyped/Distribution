@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMarkers
   extends senchaUnderscoreTouchLib.ExtNs.drawNs.spriteNs.IInstancing {
   /** [Method] Clear the markers in the category

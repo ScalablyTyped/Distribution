@@ -14,8 +14,8 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
   var modelConstructor: js.Any = js.native
   def checkAccess(workingCopyId: java.lang.String, memberOpenId: java.lang.String): js.Promise[scala.Boolean] = js.native
   /**
-       * Returns whether the member specified to his/her OpenID has (been granted) access to this working copy.
-       */
+    * Returns whether the member specified to his/her OpenID has (been granted) access to this working copy.
+    */
   def checkAccess(
     workingCopyId: java.lang.String,
     memberOpenId: java.lang.String,
@@ -24,8 +24,8 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
   ): scala.Unit = js.native
   def commitToTeamServer(workingCopyId: java.lang.String, branchName: java.lang.String, message: java.lang.String): js.Promise[scala.Double] = js.native
   /**
-      * Commits the contents of the working copy with the given id to the team server
-      */
+    * Commits the contents of the working copy with the given id to the team server
+    */
   def commitToTeamServer(
     workingCopyId: java.lang.String,
     branchName: java.lang.String,
@@ -37,8 +37,8 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
     workingCopyParameters: mendixmodelsdkLib.distSdkConfigMod.configurationNs.ICreateWorkingCopyParameters
   ): js.Promise[IT] = js.native
   /**
-       * Create a new working copy on the model server, and reads it for immediate editing.
-       */
+    * Create a new working copy on the model server, and reads it for immediate editing.
+    */
   def createAndOpenWorkingCopy(
     workingCopyParameters: mendixmodelsdkLib.distSdkConfigMod.configurationNs.ICreateWorkingCopyParameters,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[IT],
@@ -48,8 +48,8 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
     workingCopyParameters: mendixmodelsdkLib.distSdkConfigMod.configurationNs.ICreateWorkingCopyParameters
   ): js.Promise[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IWorkingCopy] = js.native
   /**
-       * Create a new working copy on the model server.
-       */
+    * Create a new working copy on the model server.
+    */
   def createWorkingCopy(
     workingCopyParameters: mendixmodelsdkLib.distSdkConfigMod.configurationNs.ICreateWorkingCopyParameters,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IWorkingCopy],
@@ -59,8 +59,8 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
     workingCopyParameters: mendixmodelsdkLib.distSdkConfigMod.configurationNs.ICreateWorkingCopyFromTeamServerParameters
   ): js.Promise[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IWorkingCopy] = js.native
   /**
-       * Create a new working copy on the model server from a team server repository.
-       */
+    * Create a new working copy on the model server from a team server repository.
+    */
   def createWorkingCopyFromTeamServer(
     workingCopyParameters: mendixmodelsdkLib.distSdkConfigMod.configurationNs.ICreateWorkingCopyFromTeamServerParameters,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IWorkingCopy],
@@ -68,8 +68,8 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
   ): scala.Unit = js.native
   def deleteWorkingCopy(workingCopyId: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       * Deletes this working copy from the server, and the (SDK) client.
-       */
+    * Deletes this working copy from the server, and the (SDK) client.
+    */
   def deleteWorkingCopy(
     workingCopyId: java.lang.String,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.IVoidCallback,
@@ -77,8 +77,8 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
   ): scala.Unit = js.native
   def deleteWorkingCopyByProject(projectId: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       * Deletes the project-to-working copy mapping for given project ID.
-       */
+    * Deletes the project-to-working copy mapping for given project ID.
+    */
   def deleteWorkingCopyByProject(
     projectId: java.lang.String,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.IVoidCallback,
@@ -86,8 +86,8 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
   ): scala.Unit = js.native
   def exportModuleMpk(workingCopyId: java.lang.String, moduleId: java.lang.String, outFilePath: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       * Exports the module with the specified ID as MPK.
-       */
+    * Exports the module with the specified ID as MPK.
+    */
   def exportModuleMpk(
     workingCopyId: java.lang.String,
     moduleId: java.lang.String,
@@ -97,8 +97,8 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
   ): scala.Unit = js.native
   def exportMpk(workingCopyId: java.lang.String, outFilePath: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       * Exports this working copy as MPK.
-       */
+    * Exports this working copy as MPK.
+    */
   def exportMpk(
     workingCopyId: java.lang.String,
     outFilePath: java.lang.String,
@@ -119,8 +119,8 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
   ): scala.Unit = js.native
   def getAppUpdateStatus(workingCopyId: java.lang.String, jobId: java.lang.String): js.Promise[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IDeployJobStatus] = js.native
   /**
-       * Start deploy this working copy and create new job.
-       */
+    * Start deploy this working copy and create new job.
+    */
   def getAppUpdateStatus(
     workingCopyId: java.lang.String,
     jobId: java.lang.String,
@@ -131,8 +131,8 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
     js.Array[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IWorkingCopy]
   ] = js.native
   /**
-       * Retrieves an array of all working copies you are a member of.
-       */
+    * Retrieves an array of all working copies you are a member of.
+    */
   def getMyWorkingCopies(
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[
       js.Array[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IWorkingCopy]
@@ -141,8 +141,8 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
   ): scala.Unit = js.native
   def getWorkingCopyByProject(projectId: java.lang.String): js.Promise[java.lang.String] = js.native
   /**
-       * Retrieves the working copy id that the given project ID maps to.
-       */
+    * Retrieves the working copy id that the given project ID maps to.
+    */
   def getWorkingCopyByProject(
     projectId: java.lang.String,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[java.lang.String],
@@ -150,8 +150,8 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
   ): scala.Unit = js.native
   def grantAccess(workingCopyId: java.lang.String, memberOpenId: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       * Grants access to the member specified to his/her OpenID on this working copy.
-       */
+    * Grants access to the member specified to his/her OpenID on this working copy.
+    */
   def grantAccess(
     workingCopyId: java.lang.String,
     memberOpenId: java.lang.String,
@@ -160,8 +160,8 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
   ): scala.Unit = js.native
   def grantAccessByProject(projectId: java.lang.String, memberOpenId: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       * Grants access to the member specified to his/her OpenID to the default working copy of this project.
-       */
+    * Grants access to the member specified to his/her OpenID to the default working copy of this project.
+    */
   def grantAccessByProject(
     projectId: java.lang.String,
     memberOpenId: java.lang.String,
@@ -170,16 +170,16 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
   ): scala.Unit = js.native
   def loadWorkingCopyMetaData(workingCopyId: java.lang.String): js.Promise[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IWorkingCopy] = js.native
   /**
-       * Gets meta data of a working copy
-       */
+    * Gets meta data of a working copy
+    */
   def loadWorkingCopyMetaData(
     workingCopyId: java.lang.String,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IWorkingCopy],
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-       * Lock the working copy (will be locked for the currently authenticated openid)
-       */
+    * Lock the working copy (will be locked for the currently authenticated openid)
+    */
   def lockWorkingCopy(
     workingCopyId: java.lang.String,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[
@@ -217,8 +217,8 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
   ): scala.Unit = js.native
   def openWorkingCopy(workingCopyId: java.lang.String): js.Promise[IT] = js.native
   /**
-       * Reads a working copy on the model server so it can be edited.
-       */
+    * Reads a working copy on the model server so it can be edited.
+    */
   def openWorkingCopy(
     workingCopyId: java.lang.String,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[IT],
@@ -226,8 +226,8 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
   ): scala.Unit = js.native
   def revokeAccess(workingCopyId: java.lang.String, memberOpenId: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       * Revokes access of the member specified to his/her OpenID on this working copy.
-       */
+    * Revokes access of the member specified to his/her OpenID on this working copy.
+    */
   def revokeAccess(
     workingCopyId: java.lang.String,
     memberOpenId: java.lang.String,
@@ -236,8 +236,8 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
   ): scala.Unit = js.native
   def revokeAccessByProject(projectId: java.lang.String, memberOpenId: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       * Revokes access of the member specified to his/her OpenID to the default working copy of this project.
-       */
+    * Revokes access of the member specified to his/her OpenID to the default working copy of this project.
+    */
   def revokeAccessByProject(
     projectId: java.lang.String,
     memberOpenId: java.lang.String,
@@ -246,8 +246,8 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
   ): scala.Unit = js.native
   def startAppUpdate(workingCopyId: java.lang.String): js.Promise[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IDeployJobStatus] = js.native
   /**
-       * Start deploy this working copy and create new job.
-       */
+    * Start deploy this working copy and create new job.
+    */
   def startAppUpdate(
     workingCopyId: java.lang.String,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IDeployJobStatus],
@@ -255,10 +255,10 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
   ): scala.Unit = js.native
   def unlockWorkingCopy(workingCopyId: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       * Unlock the working copy (will be unlocked for the currently authenticated openid, will fail if it's locked by another openid).
-       *
-       * Provide a lockType to only unlock the working copy if it is locked with this specific type.
-       */
+    * Unlock the working copy (will be unlocked for the currently authenticated openid, will fail if it's locked by another openid).
+    *
+    * Provide a lockType to only unlock the working copy if it is locked with this specific type.
+    */
   def unlockWorkingCopy(
     workingCopyId: java.lang.String,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.IVoidCallback,
@@ -276,8 +276,8 @@ class ModelSdkClientImpl[IT /* <: mendixmodelsdkLib.distSdkInternalAbstractDashM
   ): scala.Unit = js.native
   def updateWorkingCopyByProject(projectId: java.lang.String, workingCopyId: java.lang.String): js.Promise[scala.Unit] = js.native
   /**
-       * Update the project-to-working copy mapping with the given data.
-       */
+    * Update the project-to-working copy mapping with the given data.
+    */
   def updateWorkingCopyByProject(
     projectId: java.lang.String,
     workingCopyId: java.lang.String,

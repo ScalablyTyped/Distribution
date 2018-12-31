@@ -12,35 +12,29 @@ class Reset () extends js.Object
 @JSImport("nodegit/reset", "Reset")
 @js.native
 object Reset extends js.Object {
-  /**
-       * Look up a refs's commit.
-       */
   def default(
     repo: nodegitLib.repositoryMod.Repository,
     target: nodegitLib.objectMod.Object,
     pathspecs: java.lang.String
   ): js.Promise[scala.Double] = js.native
-  /**
-       * Look up a refs's commit.
-       */
   def default(
     repo: nodegitLib.repositoryMod.Repository,
     target: nodegitLib.objectMod.Object,
     pathspecs: js.Array[java.lang.String]
   ): js.Promise[scala.Double] = js.native
   /**
-       * Look up a refs's commit.
-       */
+    * Look up a refs's commit.
+    */
   def default(
     repo: nodegitLib.repositoryMod.Repository,
     target: nodegitLib.objectMod.Object,
     pathspecs: nodegitLib.strDashArrayMod.Strarray
   ): js.Promise[scala.Double] = js.native
   /**
-       * Sets the current head to the specified commit oid and optionally resets the index and working tree to match.
-       * This behaves like reset but takes an annotated commit, which lets you specify which extended sha syntax string was specified by a user, allowing for more exact reflog messages.
-       * See the documentation for reset.
-       */
+    * Sets the current head to the specified commit oid and optionally resets the index and working tree to match.
+    * This behaves like reset but takes an annotated commit, which lets you specify which extended sha syntax string was specified by a user, allowing for more exact reflog messages.
+    * See the documentation for reset.
+    */
   def fromAnnotated(
     repo: nodegitLib.repositoryMod.Repository,
     commit: nodegitLib.annotatedDashCommitMod.AnnotatedCommit,
@@ -48,8 +42,8 @@ object Reset extends js.Object {
     checkoutOpts: nodegitLib.checkoutDashOptionsMod.CheckoutOptions
   ): scala.Double = js.native
   /**
-       * Look up a refs's commit.
-       */
+    * Look up a refs's commit.
+    */
   def reset(
     repo: nodegitLib.repositoryMod.Repository,
     target: nodegitLib.objectMod.Object,

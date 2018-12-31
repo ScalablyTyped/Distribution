@@ -19,19 +19,11 @@ class PickerDialog protected () extends js.Object {
   def Properties(Index: scala.Double): PickerProperty = js.native
   def Resolve(TokenText: java.lang.String, duplicateDlgMode: scala.Double): PickerResults = js.native
   /**
-           * @param IsMultiSelect [IsMultiSelect=true]
-           * @param ExistingResults [ExistingResults=0]
-           */
+    * @param IsMultiSelect [IsMultiSelect=true]
+    * @param ExistingResults [ExistingResults=0]
+    */
   def Show(): PickerResults = js.native
-  /**
-           * @param IsMultiSelect [IsMultiSelect=true]
-           * @param ExistingResults [ExistingResults=0]
-           */
   def Show(IsMultiSelect: scala.Boolean): PickerResults = js.native
-  /**
-           * @param IsMultiSelect [IsMultiSelect=true]
-           * @param ExistingResults [ExistingResults=0]
-           */
   def Show(IsMultiSelect: scala.Boolean, ExistingResults: PickerResults): PickerResults = js.native
 }
 

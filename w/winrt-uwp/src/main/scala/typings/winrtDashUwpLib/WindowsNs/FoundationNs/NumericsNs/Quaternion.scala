@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Describes a quaternion (an axis about which a rotation occurs and a rotation amount about that axis). */
-
 trait Quaternion extends js.Object {
   /** The w component that represents a rotation amount about the axis that is defined by the X, Y, and Z fields. */
   var w: scala.Double

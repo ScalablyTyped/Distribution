@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Precise extends js.Object {
   /**
-           * Returns the nanoseconds from `start()` to `stop()`
-           */
+    * Returns the nanoseconds from `start()` to `stop()`
+    */
   def diff(): scala.Double
   /**
-           * Starts a timer
-           */
+    * Starts a timer
+    */
   def start(): Precise
   /**
-           * Stops a timer
-           */
+    * Stops a timer
+    */
   def stop(): Precise
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOIDCStrategyOption
   extends passportDashAzureDashAdLib.commonMod.IBaseStrategyOption {
   var allowHttpForRedirectUrl: js.UndefOr[scala.Boolean] = js.undefined

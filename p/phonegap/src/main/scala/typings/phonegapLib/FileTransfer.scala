@@ -29,7 +29,6 @@ trait FileTransfer extends js.Object {
     successCallback: js.Function1[/* result */ FileUploadResult, scala.Unit],
     errorCallback: js.Function1[/* error */ FileError, scala.Unit]
   ): scala.Unit = js.native
-  //upload(filePath: string, server: string, successCallback: (metadata: Metadata) => void , errorCallback: (error: FileError) => void , options?: any): void;
   def upload(
     filePath: java.lang.String,
     server: java.lang.String,

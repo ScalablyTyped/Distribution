@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShadowMap extends js.Object {
   var darkness: scala.Double
   var enabled: scala.Boolean

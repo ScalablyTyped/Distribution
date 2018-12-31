@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PortalProps
   extends reactLib.reactMod.ReactNs.Props[js.Any] {
   @JSName("children")

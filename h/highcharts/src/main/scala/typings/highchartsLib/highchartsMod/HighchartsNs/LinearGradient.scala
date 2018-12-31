@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinearGradient extends js.Object {
   var x1: scala.Double
   var x2: scala.Double

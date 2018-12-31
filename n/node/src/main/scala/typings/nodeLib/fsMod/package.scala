@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 package object fsMod {
   type BinaryData = nodeLib.Buffer | stdLib.DataView | nodeLib.NodeJSNs.TypedArray
   /**
-       * Valid types for path values in "fs".
-       */
+    * Valid types for path values in "fs".
+    */
   type PathLike = java.lang.String | nodeLib.Buffer | nodeLib.urlMod.URL
   type WriteFileOptions = nodeLib.Anon_EncodingMode | java.lang.String | scala.Null
 }

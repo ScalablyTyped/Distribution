@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TinySliderProps extends js.Object {
   var onClick: js.UndefOr[
     js.Function3[

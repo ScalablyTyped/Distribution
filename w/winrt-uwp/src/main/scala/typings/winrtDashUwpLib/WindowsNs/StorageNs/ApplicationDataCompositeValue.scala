@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents related app settings that must be serialized and deserialized atomically. */
 @JSGlobal("Windows.Storage.ApplicationDataCompositeValue")
 @js.native
+/** Creates and initializes a new, initially empty, instance of the object. */
 class ApplicationDataCompositeValue () extends js.Object {
   /** Occurs when the map changes. */
   @JSName("onmapchanged")
@@ -23,33 +24,33 @@ class ApplicationDataCompositeValue () extends js.Object {
   /** Removes all application settings previously inserted into the composite value object, returning the object to its empty state. */
   def clear(): scala.Unit = js.native
   /**
-               * Retrieves an iterator to enumerate the settings in the composite value.
-               * @return The iterator.
-               */
+    * Retrieves an iterator to enumerate the settings in the composite value.
+    * @return The iterator.
+    */
   def first(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterator[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IKeyValuePair[_, _]] = js.native
   /**
-               * Returns a read-only snapshot of the contents of the composite value.
-               * @return The view of the composite value.
-               */
+    * Returns a read-only snapshot of the contents of the composite value.
+    * @return The view of the composite value.
+    */
   def getView(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, _] = js.native
   /**
-               * Determines whether there is an application setting with the specified key.
-               * @param key The key.
-               * @return True if the key is found; otherwise false.
-               */
+    * Determines whether there is an application setting with the specified key.
+    * @param key The key.
+    * @return True if the key is found; otherwise false.
+    */
   def hasKey(key: java.lang.String): scala.Boolean = js.native
   /**
-               * Creates or replaces an application setting.
-               * @param key The key of the setting to insert or replace.
-               * @param value The setting value.
-               * @return True if an item with the specified key is an existing item and was replaced; otherwise, false.
-               */
+    * Creates or replaces an application setting.
+    * @param key The key of the setting to insert or replace.
+    * @param value The setting value.
+    * @return True if an item with the specified key is an existing item and was replaced; otherwise, false.
+    */
   def insert(key: java.lang.String, value: js.Any): scala.Boolean = js.native
   /**
-               * Retrieves the specified application setting.
-               * @param key The key of the setting.
-               * @return The application setting.
-               */
+    * Retrieves the specified application setting.
+    * @param key The key of the setting.
+    * @return The application setting.
+    */
   def lookup(key: java.lang.String): js.Any = js.native
   /** Occurs when the map changes. */
   def onmapchanged(
@@ -58,10 +59,10 @@ class ApplicationDataCompositeValue () extends js.Object {
     ])
   ): scala.Unit = js.native
   /**
-               * Removes a specific item from the ApplicationDataCompositeValue .
-               * @param key The key of the item to remove.
-               * @return true if the item was removed, otherwise false.
-               */
+    * Removes a specific item from the ApplicationDataCompositeValue .
+    * @param key The key of the item to remove.
+    * @return true if the item was removed, otherwise false.
+    */
   def remove(key: java.lang.String): scala.Boolean = js.native
   def removeEventListener(`type`: java.lang.String, listener: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_]): scala.Unit = js.native
   @JSName("removeEventListener")
@@ -70,9 +71,9 @@ class ApplicationDataCompositeValue () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.MapChangedEventHandler[java.lang.String, _]
   ): scala.Unit = js.native
   /**
-               * Removes the value with the specified key.
-               * @param key The key of the value to remove.
-               */
+    * Removes the value with the specified key.
+    * @param key The key of the value to remove.
+    */
   @JSName("remove")
   def remove_Unit(key: java.lang.String): scala.Unit = js.native
 }

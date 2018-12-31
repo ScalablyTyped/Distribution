@@ -6,9 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * ===== ExpirationNamespace =====
- */
-
-
+  * ===== ExpirationNamespace =====
+  */
 trait ExpirationNamespace extends js.Object
 

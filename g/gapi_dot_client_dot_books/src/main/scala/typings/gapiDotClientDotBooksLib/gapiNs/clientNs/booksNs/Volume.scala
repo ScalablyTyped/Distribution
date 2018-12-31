@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Volume extends js.Object {
   /**
-               * Any information about a volume related to reading or obtaining that volume text. This information can depend on country (books may be public domain in
-               * one country but not in another, e.g.).
-               */
+    * Any information about a volume related to reading or obtaining that volume text. This information can depend on country (books may be public domain in
+    * one country but not in another, e.g.).
+    */
   var accessInfo: js.UndefOr[gapiDotClientDotBooksLib.Anon_Embeddable] = js.undefined
   /** Opaque identifier for a specific version of a volume resource. (In LITE projection) */
   var etag: js.UndefOr[java.lang.String] = js.undefined
@@ -23,9 +22,9 @@ trait Volume extends js.Object {
   /** Recommendation related information for this volume. */
   var recommendedInfo: js.UndefOr[gapiDotClientDotBooksLib.Anon_Explanation] = js.undefined
   /**
-               * Any information about a volume related to the eBookstore and/or purchaseability. This information can depend on the country where the request
-               * originates from (i.e. books may not be for sale in certain countries).
-               */
+    * Any information about a volume related to the eBookstore and/or purchaseability. This information can depend on the country where the request
+    * originates from (i.e. books may not be for sale in certain countries).
+    */
   var saleInfo: js.UndefOr[gapiDotClientDotBooksLib.Anon_IsEbook] = js.undefined
   /** Search result information related to this volume. */
   var searchInfo: js.UndefOr[gapiDotClientDotBooksLib.Anon_TextSnippet] = js.undefined

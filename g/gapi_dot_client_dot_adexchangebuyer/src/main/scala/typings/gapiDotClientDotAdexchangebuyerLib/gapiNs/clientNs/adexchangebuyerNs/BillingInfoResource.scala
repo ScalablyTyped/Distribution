@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BillingInfoResource extends js.Object {
   /** Returns the billing information for one account specified by account ID. */
   def get(request: gapiDotClientDotAdexchangebuyerLib.Anon_PrettyPrintAccountId): gapiDotClientLib.gapiNs.clientNs.Request[BillingInfo]

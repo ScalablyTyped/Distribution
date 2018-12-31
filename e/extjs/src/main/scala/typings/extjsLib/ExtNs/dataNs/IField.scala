@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IField
   extends extjsLib.ExtNs.IBase {
   /** [Config Option] (Function) */

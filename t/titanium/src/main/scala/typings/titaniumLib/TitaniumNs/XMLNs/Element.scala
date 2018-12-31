@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 		 * Represents an element in a DOM document, a <Titanium.XML.Node> defined by a start-tag and end-tag (or an empty tag). Elements may have [attributes](Titanium.XML.Attr) associated with them.
 		 * Implements the [DOM Level 2 API](https://www.w3.org/TR/DOM-Level-2-Core/core.html#ID-745549614) on Android and iOS with some non-standard extensions.
 		 */
-
 trait Element
   extends titaniumLib.TitaniumNs.Proxy {
   /**

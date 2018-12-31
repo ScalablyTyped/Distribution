@@ -31,7 +31,6 @@ trait ValidatorStatic extends js.Object {
   def extend[T /* <: js.Function */](name: java.lang.String, fn: T): scala.Unit = js.native
   // check if the string is a date that's after the specified date (defaults to now).
   def isAfter(str: java.lang.String): scala.Boolean = js.native
-  // check if the string is a date that's after the specified date (defaults to now).
   def isAfter(str: java.lang.String, date: java.lang.String): scala.Boolean = js.native
   // check if the string contains only letters (a-zA-Z). Locale is one of ['ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG',
   // 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-QA', 'ar-QM', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE',
@@ -39,11 +38,6 @@ trait ValidatorStatic extends js.Object {
   // 'es-ES', 'fr-FR', 'hu-HU', 'it-IT', 'nb-NO', 'nl-NL', 'nn-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ru-RU', 'sk-SK', 'sr-RS',
   // 'sr-RS@latin', 'sv-SE', 'tr-TR', 'uk-UA']) and defaults to en-US
   def isAlpha(str: java.lang.String): scala.Boolean = js.native
-  // check if the string contains only letters (a-zA-Z). Locale is one of ['ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG',
-  // 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-QA', 'ar-QM', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE',
-  // 'bg-BG', 'cs-CZ', 'da-DK', 'de-DE', 'el-GR', 'en-AU', 'en-GB', 'en-HK', 'en-IN', 'en-NZ', 'en-US', 'en-ZA', 'en-ZM',
-  // 'es-ES', 'fr-FR', 'hu-HU', 'it-IT', 'nb-NO', 'nl-NL', 'nn-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ru-RU', 'sk-SK', 'sr-RS',
-  // 'sr-RS@latin', 'sv-SE', 'tr-TR', 'uk-UA']) and defaults to en-US
   def isAlpha(str: java.lang.String, locale: AlphaLocale): scala.Boolean = js.native
   // check if the string contains only letters and numbers. Locale is one of ['ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG',
   // 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-QA', 'ar-QM', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE',
@@ -51,11 +45,6 @@ trait ValidatorStatic extends js.Object {
   // 'es-ES', 'fr-FR', 'hu-HU', 'it-IT', 'nb-NO', 'nl-NL', 'nn-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ru-RU', 'sk-SK', 'sr-RS',
   // 'sr-RS@latin', 'sv-SE', 'tr-TR', 'uk-UA']) and defaults to en-US
   def isAlphanumeric(str: java.lang.String): scala.Boolean = js.native
-  // check if the string contains only letters and numbers. Locale is one of ['ar', 'ar-AE', 'ar-BH', 'ar-DZ', 'ar-EG',
-  // 'ar-IQ', 'ar-JO', 'ar-KW', 'ar-LB', 'ar-LY', 'ar-MA', 'ar-QA', 'ar-QM', 'ar-SA', 'ar-SD', 'ar-SY', 'ar-TN', 'ar-YE',
-  // 'bg-BG', 'cs-CZ', 'da-DK', 'de-DE', 'el-GR', 'en-AU', 'en-GB', 'en-HK', 'en-IN', 'en-NZ', 'en-US', 'en-ZA', 'en-ZM',
-  // 'es-ES', 'fr-FR', 'hu-HU', 'it-IT', 'nb-NO', 'nl-NL', 'nn-NO', 'pl-PL', 'pt-BR', 'pt-PT', 'ru-RU', 'sk-SK', 'sr-RS',
-  // 'sr-RS@latin', 'sv-SE', 'tr-TR', 'uk-UA']) and defaults to en-US
   def isAlphanumeric(str: java.lang.String, locale: AlphanumericLocale): scala.Boolean = js.native
   // check if the string contains ASCII chars only.
   def isAscii(str: java.lang.String): scala.Boolean = js.native
@@ -63,7 +52,6 @@ trait ValidatorStatic extends js.Object {
   def isBase64(str: java.lang.String): scala.Boolean = js.native
   // check if the string is a date that's before the specified date.
   def isBefore(str: java.lang.String): scala.Boolean = js.native
-  // check if the string is a date that's before the specified date.
   def isBefore(str: java.lang.String, date: java.lang.String): scala.Boolean = js.native
   // check if a string is a boolean.
   def isBoolean(str: java.lang.String): scala.Boolean = js.native
@@ -75,31 +63,25 @@ trait ValidatorStatic extends js.Object {
   def isCreditCard(str: java.lang.String): scala.Boolean = js.native
   // check if the string is a valid currency amount.
   def isCurrency(str: java.lang.String): scala.Boolean = js.native
-  // check if the string is a valid currency amount.
   def isCurrency(str: java.lang.String, options: IsCurrencyOptions): scala.Boolean = js.native
   // check if the string is a data uri format (https://developer.mozilla.org/en-US/docs/Web/HTTP/data_URIs)
   def isDataURI(str: java.lang.String): scala.Boolean = js.native
   // check if the string represents a decimal number, such as 0.1, .3, 1.1, 1.00003, 4.0, etc.
   def isDecimal(str: java.lang.String): scala.Boolean = js.native
-  // check if the string represents a decimal number, such as 0.1, .3, 1.1, 1.00003, 4.0, etc.
   def isDecimal(str: java.lang.String, options: IsDecimalOptions): scala.Boolean = js.native
   // check if the string is a number that's divisible by another.
   def isDivisibleBy(str: java.lang.String, number: scala.Double): scala.Boolean = js.native
   // check if the string is an email.
   def isEmail(str: java.lang.String): scala.Boolean = js.native
-  // check if the string is an email.
   def isEmail(str: java.lang.String, options: IsEmailOptions): scala.Boolean = js.native
   // check if the string has a length of zero.
   def isEmpty(str: java.lang.String): scala.Boolean = js.native
-  // check if the string has a length of zero.
   def isEmpty(str: java.lang.String, options: IsEmptyOptions): scala.Boolean = js.native
   // check if the string is a fully qualified domain name (e.g. domain.com).
   def isFQDN(str: java.lang.String): scala.Boolean = js.native
-  // check if the string is a fully qualified domain name (e.g. domain.com).
   def isFQDN(str: java.lang.String, options: IsFQDNOptions): scala.Boolean = js.native
   // check if the string is a float.
   def isFloat(str: java.lang.String): scala.Boolean = js.native
-  // check if the string is a float.
   def isFloat(str: java.lang.String, options: IsFloatOptions): scala.Boolean = js.native
   // check if the string contains any full-width chars.
   def isFullWidth(str: java.lang.String): scala.Boolean = js.native
@@ -115,11 +97,9 @@ trait ValidatorStatic extends js.Object {
   def isHexadecimal(str: java.lang.String): scala.Boolean = js.native
   // check if the string is an IP (version 4 or 6).
   def isIP(str: java.lang.String): scala.Boolean = js.native
-  // check if the string is an IP (version 4 or 6).
   def isIP(str: java.lang.String, version: scala.Double): scala.Boolean = js.native
   // check if the string is an ISBN (version 10 or 13).
   def isISBN(str: java.lang.String): scala.Boolean = js.native
-  // check if the string is an ISBN (version 10 or 13).
   def isISBN(str: java.lang.String, version: scala.Double): scala.Boolean = js.native
   // check if the string is an ISIN (https://en.wikipedia.org/wiki/International_Securities_Identification_Number)
   // (stock/security identifier).
@@ -129,19 +109,16 @@ trait ValidatorStatic extends js.Object {
   def isISO31661Alpha2(str: java.lang.String): scala.Boolean = js.native
   // check if the string is a valid ISO 8601 (https://en.wikipedia.org/wiki/ISO_8601) date.
   def isISO8601(str: java.lang.String): scala.Boolean = js.native
-  // check if the string is a valid ISO 8601 (https://en.wikipedia.org/wiki/ISO_8601) date.
   def isISO8601(str: java.lang.String, options: IsISO8601Options): scala.Boolean = js.native
   // check if the string is a ISRC (https://en.wikipedia.org/wiki/International_Standard_Recording_Code).
   def isISRC(str: java.lang.String): scala.Boolean = js.native
   // check if the string is an ISSN (https://en.wikipedia.org/wiki/International_Standard_Serial_Number).
   def isISSN(str: java.lang.String): scala.Boolean = js.native
-  // check if the string is an ISSN (https://en.wikipedia.org/wiki/International_Standard_Serial_Number).
   def isISSN(str: java.lang.String, options: IsISSNOptions): scala.Boolean = js.native
   // check if the string is in a array of allowed values.
   def isIn(str: java.lang.String, values: js.Array[_]): scala.Boolean = js.native
   // check if the string is an integer.
   def isInt(str: java.lang.String): scala.Boolean = js.native
-  // check if the string is an integer.
   def isInt(str: java.lang.String, options: IsIntOptions): scala.Boolean = js.native
   // check if the string is valid JSON (note: uses JSON.parse).
   def isJSON(str: java.lang.String): scala.Boolean = js.native
@@ -168,13 +145,6 @@ trait ValidatorStatic extends js.Object {
   // 'ko-KR', 'lt-LT', 'ms-MY', 'nb-NO', 'nn-NO', 'pl-PL', 'pt-PT', 'ro-RO', 'ru-RU', 'sk-SK',
   // 'sr-RS', 'th-TH', 'tr-TR', 'uk-UA', 'vi-VN', 'zh-CN', 'zh-HK', 'zh-TW']).
   def isMobilePhone(str: java.lang.String, locale: MobilePhoneLocale): scala.Boolean = js.native
-  // check if the string is a mobile phone number, (locale is one of
-  // ['ar-AE', ar-DZ', 'ar-EG', 'ar-JO', 'ar-SA', 'ar-SY', 'be-BY', 'bg-BG', 'cs-CZ', 'de-DE',
-  // 'da-DK', 'el-GR', 'en-AU', 'en-GB', 'en-HK', 'en-IN', 'en-KE', 'en-NG', 'en-NZ', 'en-UG',
-  // 'en-RW', 'en-SG', 'en-TZ', 'en-PK', 'en-US', 'en-CA', 'en-ZA', 'en-ZM', 'es-ES', 'fa-IR',
-  // 'fi-FI', 'fo-FO', 'fr-FR', 'he-IL', 'hu-HU', 'id-ID', 'it-IT', 'ja-JP', 'kk-KZ', 'kl-GL',
-  // 'ko-KR', 'lt-LT', 'ms-MY', 'nb-NO', 'nn-NO', 'pl-PL', 'pt-PT', 'ro-RO', 'ru-RU', 'sk-SK',
-  // 'sr-RS', 'th-TH', 'tr-TR', 'uk-UA', 'vi-VN', 'zh-CN', 'zh-HK', 'zh-TW']).
   def isMobilePhone(str: java.lang.String, locale: MobilePhoneLocale, options: IsMobilePhoneOptions): scala.Boolean = js.native
   // check if the string is a valid hex-encoded representation of a MongoDB ObjectId
   // (http://docs.mongodb.org/manual/reference/object-id/).
@@ -183,7 +153,6 @@ trait ValidatorStatic extends js.Object {
   def isMultibyte(str: java.lang.String): scala.Boolean = js.native
   // check if the string contains only numbers.
   def isNumeric(str: java.lang.String): scala.Boolean = js.native
-  // check if the string contains only numbers.
   def isNumeric(str: java.lang.String, options: IsNumericOptions): scala.Boolean = js.native
   // check if the string is a valid port number.
   def isPort(str: java.lang.String): scala.Boolean = js.native
@@ -197,26 +166,18 @@ trait ValidatorStatic extends js.Object {
   def isSurrogatePair(str: java.lang.String): scala.Boolean = js.native
   // check if the string is an URL.
   def isURL(str: java.lang.String): scala.Boolean = js.native
-  // check if the string is an URL.
   def isURL(str: java.lang.String, options: IsURLOptions): scala.Boolean = js.native
   // check if the string is a UUID. Must be one of ['3', '4', '5', 'all'], default is all.
   def isUUID(str: java.lang.String): scala.Boolean = js.native
-  // check if the string is a UUID. Must be one of ['3', '4', '5', 'all'], default is all.
   def isUUID(str: java.lang.String, version: validatorLib.validatorLibNumbers.`3`): scala.Boolean = js.native
-  // check if the string is a UUID. Must be one of ['3', '4', '5', 'all'], default is all.
   def isUUID(str: java.lang.String, version: validatorLib.validatorLibNumbers.`4`): scala.Boolean = js.native
-  // check if the string is a UUID. Must be one of ['3', '4', '5', 'all'], default is all.
   def isUUID(str: java.lang.String, version: validatorLib.validatorLibNumbers.`5`): scala.Boolean = js.native
-  // check if the string is a UUID. Must be one of ['3', '4', '5', 'all'], default is all.
   @JSName("isUUID")
   def isUUID_3(str: java.lang.String, version: validatorLib.validatorLibStrings.`3`): scala.Boolean = js.native
-  // check if the string is a UUID. Must be one of ['3', '4', '5', 'all'], default is all.
   @JSName("isUUID")
   def isUUID_4(str: java.lang.String, version: validatorLib.validatorLibStrings.`4`): scala.Boolean = js.native
-  // check if the string is a UUID. Must be one of ['3', '4', '5', 'all'], default is all.
   @JSName("isUUID")
   def isUUID_5(str: java.lang.String, version: validatorLib.validatorLibStrings.`5`): scala.Boolean = js.native
-  // check if the string is a UUID. Must be one of ['3', '4', '5', 'all'], default is all.
   @JSName("isUUID")
   def isUUID_all(str: java.lang.String, version: validatorLib.validatorLibStrings.all): scala.Boolean = js.native
   // check if the string is uppercase.
@@ -225,39 +186,28 @@ trait ValidatorStatic extends js.Object {
   def isVariableWidth(str: java.lang.String): scala.Boolean = js.native
   // checks characters if they appear in the whitelist.
   def isWhitelisted(str: java.lang.String, chars: java.lang.String): scala.Boolean = js.native
-  // checks characters if they appear in the whitelist.
   def isWhitelisted(str: java.lang.String, chars: js.Array[java.lang.String]): scala.Boolean = js.native
   // trim characters from the left-side of the input.
   def ltrim(input: java.lang.String): java.lang.String = js.native
-  // trim characters from the left-side of the input.
   def ltrim(input: java.lang.String, chars: java.lang.String): java.lang.String = js.native
-  // check if string matches the pattern.
   def matches(str: java.lang.String, pattern: java.lang.String): scala.Boolean = js.native
-  // check if string matches the pattern.
   def matches(str: java.lang.String, pattern: java.lang.String, modifiers: java.lang.String): scala.Boolean = js.native
   // check if string matches the pattern.
   def matches(str: java.lang.String, pattern: stdLib.RegExp): scala.Boolean = js.native
-  // check if string matches the pattern.
   def matches(str: java.lang.String, pattern: stdLib.RegExp, modifiers: java.lang.String): scala.Boolean = js.native
   // canonicalize an email address.
   def normalizeEmail(email: java.lang.String): java.lang.String | validatorLib.validatorLibNumbers.`false` = js.native
-  // canonicalize an email address.
   def normalizeEmail(email: java.lang.String, options: NormalizeEmailOptions): java.lang.String | validatorLib.validatorLibNumbers.`false` = js.native
   // trim characters from the right-side of the input.
   def rtrim(input: java.lang.String): java.lang.String = js.native
-  // trim characters from the right-side of the input.
   def rtrim(input: java.lang.String, chars: java.lang.String): java.lang.String = js.native
   // remove characters with a numerical value < 32 and 127, mostly control characters. If keep_new_lines is true,
   // newline characters are preserved (\n and \r, hex 0xA and 0xD). Unicode-safe in JavaScript.
   def stripLow(input: java.lang.String): java.lang.String = js.native
-  // remove characters with a numerical value < 32 and 127, mostly control characters. If keep_new_lines is true,
-  // newline characters are preserved (\n and \r, hex 0xA and 0xD). Unicode-safe in JavaScript.
   def stripLow(input: java.lang.String, keep_new_lines: scala.Boolean): java.lang.String = js.native
   // convert the input to a boolean. Everything except for '0', 'false' and '' returns true. In strict mode only '1'
   // and 'true' return true.
   def toBoolean(input: java.lang.String): scala.Boolean = js.native
-  // convert the input to a boolean. Everything except for '0', 'false' and '' returns true. In strict mode only '1'
-  // and 'true' return true.
   def toBoolean(input: java.lang.String, strict: scala.Boolean): scala.Boolean = js.native
   // convert the input to a date, or null if the input is not a date.
   def toDate(input: java.lang.String): stdLib.Date = js.native
@@ -267,16 +217,12 @@ trait ValidatorStatic extends js.Object {
    // number or NaN
   // convert the input to an integer, or NaN if the input is not an integer.
   def toInt(input: java.lang.String): scala.Double = js.native
-   // number or NaN
-  // convert the input to an integer, or NaN if the input is not an integer.
   def toInt(input: java.lang.String, radix: scala.Double): scala.Double = js.native
   def toString(input: js.Any): java.lang.String = js.native
   def toString(input: js.Array[_]): java.lang.String = js.native
    // number or NaN
   // trim characters (whitespace by default) from both sides of the input.
   def trim(input: java.lang.String): java.lang.String = js.native
-   // number or NaN
-  // trim characters (whitespace by default) from both sides of the input.
   def trim(input: java.lang.String, chars: java.lang.String): java.lang.String = js.native
   // replaces HTML encoded entities with <, >, &, ', " and /.
   def unescape(input: java.lang.String): java.lang.String = js.native

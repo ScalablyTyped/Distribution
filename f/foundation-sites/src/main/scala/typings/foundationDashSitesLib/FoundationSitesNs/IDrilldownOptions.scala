@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDrilldownOptions extends js.Object {
   var backButton: js.UndefOr[java.lang.String] = js.undefined
   var closeOnClick: js.UndefOr[scala.Boolean] = js.undefined

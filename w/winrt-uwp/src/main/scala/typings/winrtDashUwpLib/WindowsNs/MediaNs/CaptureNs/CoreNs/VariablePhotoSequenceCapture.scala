@@ -27,9 +27,9 @@ abstract class VariablePhotoSequenceCapture () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[VariablePhotoSequenceCapture, _]
   ): scala.Unit = js.native
   /**
-                       * Asynchronously releases the VariablePhotoSequenceCapture object and resources used by the capture operation.
-                       * @return An asynchronous action.
-                       */
+    * Asynchronously releases the VariablePhotoSequenceCapture object and resources used by the capture operation.
+    * @return An asynchronous action.
+    */
   def finishAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /** Occurs when a frame of a variable photo sequence is captured. */
   def onphotocaptured(
@@ -49,19 +49,19 @@ abstract class VariablePhotoSequenceCapture () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[VariablePhotoSequenceCapture, _]
   ): scala.Unit = js.native
   /**
-                       * Starts the capturing of variable photo sequence frames.
-                       * @return An asynchronous action.
-                       */
+    * Starts the capturing of variable photo sequence frames.
+    * @return An asynchronous action.
+    */
   def startAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                       * Stops the capturing of variable photo sequence frames.
-                       * @return An asynchronous action.
-                       */
+    * Stops the capturing of variable photo sequence frames.
+    * @return An asynchronous action.
+    */
   def stopAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                       * Updates the frame control values of the variable photo sequence.
-                       * @return An asynchronous action.
-                       */
+    * Updates the frame control values of the variable photo sequence.
+    * @return An asynchronous action.
+    */
   def updateSettingsAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

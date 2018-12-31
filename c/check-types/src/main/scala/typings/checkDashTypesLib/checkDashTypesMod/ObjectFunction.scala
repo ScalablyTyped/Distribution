@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait ObjectFunction extends js.Object {
   // See in array explanation of this type
   var of: org.scalablytyped.runtime.StringDictionary[scala.Boolean] = js.native
-  def apply(a: js.Any): /* is object */scala.Boolean = js.native
+  def apply(a: js.Any): /* is object */ scala.Boolean = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeploymentInput extends BaseDeploymentInput {
   var artifactsDownloadInput: ArtifactsDownloadInput
   var demands: js.Array[_]

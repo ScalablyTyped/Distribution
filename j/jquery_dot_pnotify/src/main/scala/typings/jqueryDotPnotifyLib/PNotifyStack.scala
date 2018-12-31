@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PNotifyStack extends js.Object {
   var context: js.UndefOr[jqueryLib.JQuery[stdLib.HTMLElement]] = js.undefined
   var dir1: js.UndefOr[java.lang.String] = js.undefined

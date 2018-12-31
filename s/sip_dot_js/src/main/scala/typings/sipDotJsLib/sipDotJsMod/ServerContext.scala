@@ -11,13 +11,11 @@ class ServerContext () extends Context {
   def accept(): scala.Unit = js.native
   def accept(options: sipDotJsLib.sipDotJsMod.SessionNs.AcceptOptions): scala.Unit = js.native
   def on(name: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
-  // This exists on all Context, but I cant make it work right
   @JSName("on")
   def on_accepted(
     name: sipDotJsLib.sipDotJsLibStrings.accepted,
     callback: js.Function2[/* response */ IncomingMessage, /* cause */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
-  // This exists on all Context, but I cant make it work right
   @JSName("on")
   def on_failed(
     name: sipDotJsLib.sipDotJsLibStrings.failed,
@@ -64,7 +62,6 @@ class ServerContext () extends Context {
     name: sipDotJsLib.sipDotJsLibStrings.referRequestRejected,
     callback: js.Function1[/* ServerContext */ this.type, scala.Unit]
   ): scala.Unit = js.native
-  // This exists on all Context, but I cant make it work right
   @JSName("on")
   def on_rejected(
     name: sipDotJsLib.sipDotJsLibStrings.rejected,

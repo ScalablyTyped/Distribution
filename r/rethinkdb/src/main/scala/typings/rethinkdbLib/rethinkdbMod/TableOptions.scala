@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableOptions extends js.Object {
    // 'soft'
   var cache_size: js.UndefOr[scala.Double] = js.undefined

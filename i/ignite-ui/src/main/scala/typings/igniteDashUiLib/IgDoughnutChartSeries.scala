@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgDoughnutChartSeries
   extends /**
 	 * Option for IgDoughnutChartSeries

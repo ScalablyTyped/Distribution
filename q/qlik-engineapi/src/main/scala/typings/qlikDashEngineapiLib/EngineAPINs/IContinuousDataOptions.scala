@@ -6,25 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Container for the dynamic properties of an attribute expression.
-     */
-
+  * Container for the dynamic properties of an attribute expression.
+  */
 trait IContinuousDataOptions extends js.Object {
   /**
-           * End value.
-           */
+    * End value.
+    */
   var qEnd: scala.Double
   /**
-           * Maximum number of ticks.
-           */
+    * Maximum number of ticks.
+    */
   var qMaxNbrTicks: scala.Double
   /**
-           * Number of bins for binning.
-           */
+    * Number of bins for binning.
+    */
   var qNbrPoints: scala.Double
   /**
-           * Start value.
-           */
+    * Start value.
+    */
   var qStart: scala.Double
 }
 

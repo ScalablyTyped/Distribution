@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICachedFileUpdaterUI extends js.Object {
   var onfileupdaterequested: js.Any
   var onuirequested: js.Any

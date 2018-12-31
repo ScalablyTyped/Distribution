@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 class Mousewheel () extends js.Object {
   /**
-       * Whether the mousewheel control is enabled
-       */
+    * Whether the mousewheel control is enabled
+    */
   var enabled: scala.Boolean = js.native
   /**
-       * Disable mousewheel control
-       */
+    * Disable mousewheel control
+    */
   def disable(): scala.Unit = js.native
   // Methods
   /**
-       * Enable mousewheel control
-       */
+    * Enable mousewheel control
+    */
   def enable(): scala.Unit = js.native
 }
 

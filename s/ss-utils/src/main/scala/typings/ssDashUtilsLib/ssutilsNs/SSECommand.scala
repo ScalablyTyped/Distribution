@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SSECommand extends js.Object {
   var channels: java.lang.String
   var displayName: java.lang.String

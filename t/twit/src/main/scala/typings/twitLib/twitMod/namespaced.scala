@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced protected () extends Twit {
   /**
-       * @see https://github.com/ttezel/twit#var-t--new-twitconfig
-       */
+    * @see https://github.com/ttezel/twit#var-t--new-twitconfig
+    */
   def this(config: twitLib.twitMod.TwitNs.Options) = this()
 }
 

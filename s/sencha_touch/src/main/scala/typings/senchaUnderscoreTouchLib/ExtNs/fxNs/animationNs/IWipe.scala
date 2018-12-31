@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IWipe
   extends senchaUnderscoreTouchLib.ExtNs.fxNs.IAnimation {
   /** [Config Option] (String) */

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RegionOperationsResource extends js.Object {
   /** Deletes the specified region-specific Operations resource. */
   def delete(

@@ -10,9 +10,14 @@ import scala.scalajs.js.annotation._
 	* @brief Smtp对象
 	* @detail 
 	*/
-
 @JSGlobal("Class_Smtp")
 @js.native
+/**
+	 * 
+	 * @brief Smtp 对象构造函数
+	 * 
+	 * 
+	 */
 class Class_Smtp () extends Class__object {
   /**
   	 * class prop 
@@ -81,14 +86,6 @@ class Class_Smtp () extends Class__object {
   	 * @async
   	 */
   def hello(): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 发送 HELO 命令，服务器报错则抛出错误
-  	 * @param hostname 主机名，缺省为“localhost”
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def hello(hostname: java.lang.String): scala.Unit = js.native
   /**
   	 * 

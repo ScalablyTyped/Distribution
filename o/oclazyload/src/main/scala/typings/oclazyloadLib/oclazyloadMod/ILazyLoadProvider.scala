@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILazyLoadProvider extends js.Object {
   /**
-       * Configures the main service provider.
-       * @param config The configuration settings to use
-       */
+    * Configures the main service provider.
+    * @param config The configuration settings to use
+    */
   def config(config: IProviderConfig): scala.Unit
 }
 

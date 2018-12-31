@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Signatures extends js.Object {
   var AutoTypeObfuscationOptions: Anon_None
   var CipherId: Anon_Aes

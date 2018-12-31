@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Column extends js.Object {
   /**
   	 * Can be a string to set one row high header or an array to set multi-row high header

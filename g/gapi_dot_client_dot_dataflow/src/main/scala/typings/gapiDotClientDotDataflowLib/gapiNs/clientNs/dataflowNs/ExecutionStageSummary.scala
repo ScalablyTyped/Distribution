@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExecutionStageSummary extends js.Object {
   /** Collections produced and consumed by component transforms of this stage. */
   var componentSource: js.UndefOr[js.Array[ComponentSource]] = js.undefined

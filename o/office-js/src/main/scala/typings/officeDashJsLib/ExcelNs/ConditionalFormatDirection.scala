@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 sealed trait ConditionalFormatDirection extends js.Object
 
 /**
-     *
-     * Represents the direction for a selection.
-     *
-     * [Api set: ExcelApi 1.6]
-     */
+  *
+  * Represents the direction for a selection.
+  *
+  * [Api set: ExcelApi 1.6]
+  */
 @JSGlobal("Excel.ConditionalFormatDirection")
 @js.native
 object ConditionalFormatDirection extends js.Object {

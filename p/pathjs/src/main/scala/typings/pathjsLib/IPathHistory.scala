@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPathHistory extends js.Object {
   var initial: js.Any
   def listen(fallback: js.Any): scala.Unit

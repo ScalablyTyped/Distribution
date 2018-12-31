@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         *  Allows commands to be associated with keystrokes in a context-sensitive way.
-         *  In Atom, you can access a global instance of this object via `atom.keymaps`.
-         */
+  *  Allows commands to be associated with keystrokes in a context-sensitive way.
+  *  In Atom, you can access a global instance of this object via `atom.keymaps`.
+  */
 @js.native
 trait KeymapManager extends js.Object {
   var defaultTarget: stdLib.HTMLElement = js.native
@@ -18,7 +18,6 @@ trait KeymapManager extends js.Object {
     source: java.lang.String,
     bindings: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
   ): eventDashKitLib.eventDashKitMod.Disposable = js.native
-  /** Add sets of key bindings grouped by CSS selector. */
   def add(
     source: java.lang.String,
     bindings: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]],
@@ -37,8 +36,6 @@ trait KeymapManager extends js.Object {
     source: java.lang.String,
     bindings: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]]
   ): js.Array[KeyBinding] = js.native
-  // Adding and Removing Bindings
-  /** Construct KeyBindings from an object grouping them by CSS selector. */
   def build(
     source: java.lang.String,
     bindings: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String]],
@@ -50,29 +47,26 @@ trait KeymapManager extends js.Object {
   def destroy(): scala.Unit = js.native
   /** Get the key bindings for a given command and optional target. */
   def findKeyBindings(): js.Array[KeyBinding] = js.native
-  /** Get the key bindings for a given command and optional target. */
   def findKeyBindings(params: atomDashKeymapLib.Anon_Keystrokes): js.Array[KeyBinding] = js.native
   // Accessing Bindings
   /** Get all current key bindings. */
   def getKeyBindings(): js.Array[KeyBinding] = js.native
   /**
-               *  Get the number of milliseconds allowed before pending states caused by
-               *  partial matches of multi-keystroke bindings are terminated.
-               */
+    *  Get the number of milliseconds allowed before pending states caused by
+    *  partial matches of multi-keystroke bindings are terminated.
+    */
   def getPartialMatchTimeout(): scala.Double = js.native
   // Managing Keyboard Events
   /**
-               *  Dispatch a custom event associated with the matching key binding for the
-               *  given `KeyboardEvent` if one can be found.
-               */
+    *  Dispatch a custom event associated with the matching key binding for the
+    *  given `KeyboardEvent` if one can be found.
+    */
   def handleKeyboardEvent(event: stdLib.KeyboardEvent): scala.Unit = js.native
   /** Translates a keydown event to a keystroke string. */
   def keystrokeForKeyboardEvent(event: stdLib.KeyboardEvent): java.lang.String = js.native
   // Managing Keymap Files
   /** Load the key bindings from the given path. */
   def loadKeymap(bindingsPath: java.lang.String): scala.Unit = js.native
-  // Managing Keymap Files
-  /** Load the key bindings from the given path. */
   def loadKeymap(bindingsPath: java.lang.String, options: atomDashKeymapLib.Anon_Watch): scala.Unit = js.native
   /** Invoke the given callback when one or more keystrokes fail to match any bindings. */
   def onDidFailToMatchBinding(
@@ -90,9 +84,9 @@ trait KeymapManager extends js.Object {
   ): eventDashKitLib.eventDashKitMod.Disposable = js.native
   // Event Subscription
   /**
-               *  Invoke the given callback when one or more keystrokes completely match a
-               *  key binding.
-               */
+    *  Invoke the given callback when one or more keystrokes completely match a
+    *  key binding.
+    */
   def onDidMatchBinding(
     callback: js.Function1[
       /* event */ atomDashKeymapLib.atomDashKeymapMod.Global.AtomKeymapNs.EventsNs.FullKeybindingMatch, 
@@ -121,14 +115,10 @@ trait KeymapManager extends js.Object {
     ]
   ): eventDashKitLib.eventDashKitMod.Disposable = js.native
   /**
-               *  Cause the keymap to reload the key bindings file at the given path whenever
-               *  it changes.
-               */
+    *  Cause the keymap to reload the key bindings file at the given path whenever
+    *  it changes.
+    */
   def watchKeymap(filePath: java.lang.String): scala.Unit = js.native
-  /**
-               *  Cause the keymap to reload the key bindings file at the given path whenever
-               *  it changes.
-               */
   def watchKeymap(filePath: java.lang.String, options: atomDashKeymapLib.Anon_Priority): scala.Unit = js.native
 }
 

@@ -7,18 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("SAT.Vector")
 @js.native
+/**
+		 * @class Vector has two properties
+		 * @param {number} x The x-coordinate of the Vector.
+		 * @param {number} y The y-coordinate of the Vector.
+		 */
 class Vector () extends js.Object {
-  /**
-  		 * @class Vector has two properties
-  		 * @param {number} x The x-coordinate of the Vector.
-  		 * @param {number} y The y-coordinate of the Vector.
-  		 */
   def this(x: scala.Double) = this()
-  /**
-  		 * @class Vector has two properties
-  		 * @param {number} x The x-coordinate of the Vector.
-  		 * @param {number} y The y-coordinate of the Vector.
-  		 */
   def this(x: scala.Double, y: scala.Double) = this()
   var x: scala.Double = js.native
   var y: scala.Double = js.native

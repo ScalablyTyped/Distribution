@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgLoaderSettings extends js.Object {
   var autoDetectLocale: js.UndefOr[scala.Boolean] = js.undefined
   var cssPath: java.lang.String

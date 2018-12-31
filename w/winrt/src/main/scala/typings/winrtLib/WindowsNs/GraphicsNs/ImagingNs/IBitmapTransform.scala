@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBitmapTransform extends js.Object {
   var bounds: BitmapBounds
   var flip: BitmapFlip

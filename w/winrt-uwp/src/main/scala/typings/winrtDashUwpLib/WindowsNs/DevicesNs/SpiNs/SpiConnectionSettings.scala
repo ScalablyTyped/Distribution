@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class SpiConnectionSettings protected () extends js.Object {
   /**
-                   * Initializes new instance of SpiConnectionSettings .
-                   * @param chipSelectLine The chip select line on which the connection will be made.
-                   */
+    * Initializes new instance of SpiConnectionSettings .
+    * @param chipSelectLine The chip select line on which the connection will be made.
+    */
   def this(chipSelectLine: scala.Double) = this()
   /** Gets or sets the chip select line for the connection to the SPI device. */
   var chipSelectLine: scala.Double = js.native

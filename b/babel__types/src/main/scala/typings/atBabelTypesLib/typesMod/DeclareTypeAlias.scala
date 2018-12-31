@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeclareTypeAlias extends BaseNode {
   var id: Identifier
   var right: FlowType

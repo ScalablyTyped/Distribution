@@ -5,18 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictTextAreaProps extends js.Object {
   /** An element type to render as (string or function). */
   var as: js.UndefOr[js.Any] = js.undefined
   /** Indicates whether height of the textarea fits the content or not. */
   var autoHeight: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * Called on change.
-     *
-     * @param {SyntheticEvent} event - The React SyntheticEvent object
-     * @param {object} data - All props and the event value.
-     */
+    * Called on change.
+    *
+    * @param {SyntheticEvent} event - The React SyntheticEvent object
+    * @param {object} data - All props and the event value.
+    */
   var onChange: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLTextAreaElement], 
@@ -25,11 +24,11 @@ trait StrictTextAreaProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called on input.
-     *
-     * @param {SyntheticEvent} event - The React SyntheticEvent object
-     * @param {object} data - All props and the event value.
-     */
+    * Called on input.
+    *
+    * @param {SyntheticEvent} event - The React SyntheticEvent object
+    * @param {object} data - All props and the event value.
+    */
   var onInput: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLTextAreaElement], 

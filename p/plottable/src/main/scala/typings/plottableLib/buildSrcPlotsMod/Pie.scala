@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("plottable/build/src/plots", "Pie")
 @js.native
+/**
+  * @constructor
+  */
 class Pie ()
   extends plottableLib.buildSrcPlotsPiePlotMod.Pie
 

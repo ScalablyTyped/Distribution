@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadOptions extends js.Object {
   var chunkSize: js.UndefOr[scala.Double] = js.undefined
   var endpoint: java.lang.String

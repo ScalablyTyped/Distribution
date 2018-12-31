@@ -6,27 +6,26 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * PersistentVolumeClaimCondition contails details about state of pvc
-         */
-
+  * PersistentVolumeClaimCondition contails details about state of pvc
+  */
 trait PersistentVolumeClaimCondition extends js.Object {
   /**
-               * Last time we probed the condition.
-               */
+    * Last time we probed the condition.
+    */
   val lastProbeTime: java.lang.String
   /**
-               * Last time the condition transitioned from one status to another.
-               */
+    * Last time the condition transitioned from one status to another.
+    */
   val lastTransitionTime: java.lang.String
   /**
-               * Human-readable message indicating details about last transition.
-               */
+    * Human-readable message indicating details about last transition.
+    */
   val message: java.lang.String
   /**
-               * Unique, this should be a short, machine understandable string that gives the reason for
-               * condition's last transition. If it reports "ResizeStarted" that means the underlying
-               * persistent volume is being resized.
-               */
+    * Unique, this should be a short, machine understandable string that gives the reason for
+    * condition's last transition. If it reports "ResizeStarted" that means the underlying
+    * persistent volume is being resized.
+    */
   val reason: java.lang.String
   val status: java.lang.String
   val `type`: java.lang.String

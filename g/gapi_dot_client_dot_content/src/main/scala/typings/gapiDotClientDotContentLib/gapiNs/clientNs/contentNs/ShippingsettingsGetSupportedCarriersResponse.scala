@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShippingsettingsGetSupportedCarriersResponse extends js.Object {
   /** A list of supported carriers. May be empty. */
   var carriers: js.UndefOr[js.Array[CarriersCarrier]] = js.undefined

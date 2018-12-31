@@ -12,56 +12,32 @@ trait Database extends js.Object {
   var size: scala.Double = js.native
   var version: java.lang.String = js.native
   /**
-       * Starts new transaction.
-       * @param callback        Function, that will be called when transaction starts.
-       * @param errorCallback   Called, when Transaction fails.
-       * @param successCallback Called, when transaction committed.
-       */
+    * Starts new transaction.
+    * @param callback        Function, that will be called when transaction starts.
+    * @param errorCallback   Called, when Transaction fails.
+    * @param successCallback Called, when transaction committed.
+    */
   def readTransaction(callback: js.Function1[/* transaction */ SqlTransaction, scala.Unit]): scala.Unit = js.native
-  /**
-       * Starts new transaction.
-       * @param callback        Function, that will be called when transaction starts.
-       * @param errorCallback   Called, when Transaction fails.
-       * @param successCallback Called, when transaction committed.
-       */
   def readTransaction(
     callback: js.Function1[/* transaction */ SqlTransaction, scala.Unit],
     errorCallback: js.Function1[/* error */ SqlError, scala.Unit]
   ): scala.Unit = js.native
-  /**
-       * Starts new transaction.
-       * @param callback        Function, that will be called when transaction starts.
-       * @param errorCallback   Called, when Transaction fails.
-       * @param successCallback Called, when transaction committed.
-       */
   def readTransaction(
     callback: js.Function1[/* transaction */ SqlTransaction, scala.Unit],
     errorCallback: js.Function1[/* error */ SqlError, scala.Unit],
     successCallback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
   /**
-       * Starts new transaction.
-       * @param callback        Function, that will be called when transaction starts.
-       * @param errorCallback   Called, when Transaction fails.
-       * @param successCallback Called, when transaction committed.
-       */
+    * Starts new transaction.
+    * @param callback        Function, that will be called when transaction starts.
+    * @param errorCallback   Called, when Transaction fails.
+    * @param successCallback Called, when transaction committed.
+    */
   def transaction(callback: js.Function1[/* transaction */ SqlTransaction, scala.Unit]): scala.Unit = js.native
-  /**
-       * Starts new transaction.
-       * @param callback        Function, that will be called when transaction starts.
-       * @param errorCallback   Called, when Transaction fails.
-       * @param successCallback Called, when transaction committed.
-       */
   def transaction(
     callback: js.Function1[/* transaction */ SqlTransaction, scala.Unit],
     errorCallback: js.Function1[/* error */ SqlError, scala.Unit]
   ): scala.Unit = js.native
-  /**
-       * Starts new transaction.
-       * @param callback        Function, that will be called when transaction starts.
-       * @param errorCallback   Called, when Transaction fails.
-       * @param successCallback Called, when transaction committed.
-       */
   def transaction(
     callback: js.Function1[/* transaction */ SqlTransaction, scala.Unit],
     errorCallback: js.Function1[/* error */ SqlError, scala.Unit],

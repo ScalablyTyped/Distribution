@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserInfo extends js.Object {
   var displayableId: java.lang.String
   var familyName: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestParams extends js.Object {
   var body: js.UndefOr[java.lang.String] = js.undefined
   var method: java.lang.String

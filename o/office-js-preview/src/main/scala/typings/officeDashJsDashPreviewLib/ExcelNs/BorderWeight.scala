@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait BorderWeight extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.1]
-     */
+  * [Api set: ExcelApi 1.1]
+  */
 @JSGlobal("Excel.BorderWeight")
 @js.native
 object BorderWeight extends js.Object {

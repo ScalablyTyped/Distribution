@@ -14,16 +14,16 @@ object formatDashIoMod extends js.Object {
   @js.native
   object permissionsNs extends js.Object {
     /**
-         * Converts Unix-like permissions from symbolic to numeric notation.
-         * @param perm A string of Unix-like permission in symbolic notation.
-         * @returns A representation of the permissions in numeric notation.
-         */
+      * Converts Unix-like permissions from symbolic to numeric notation.
+      * @param perm A string of Unix-like permission in symbolic notation.
+      * @returns A representation of the permissions in numeric notation.
+      */
     def numeric(perm: java.lang.String): java.lang.String = js.native
     /**
-         * Converts Unix-like permissions from numeric to symbolic notation.
-         * @param perm A string of Unix-like permission in numeric notation.
-         * @returns A representation of the permissions in symbolic notation.
-         */
+      * Converts Unix-like permissions from numeric to symbolic notation.
+      * @param perm A string of Unix-like permission in numeric notation.
+      * @returns A representation of the permissions in symbolic notation.
+      */
     def symbolic(perm: java.lang.String): java.lang.String = js.native
   }
   

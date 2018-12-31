@@ -64,13 +64,6 @@ trait RunContext
   	 * @return run context instance
   	 */
   def inDir(dirPath: java.lang.String): this.type = js.native
-  /**
-  	 * Clean the provided directory, then change directory into it
-  	 * @param  dirPath - Directory path (relative to CWD). Prefer passing an absolute
-  	 *                            file path for predictable results
-  	 * @param [cb] - callback who'll receive the folder path as argument
-  	 * @return run context instance
-  	 */
   def inDir(dirPath: java.lang.String, cb: js.Function1[/* folderPath */ java.lang.String, scala.Unit]): this.type = js.native
   /**
   	 * Cleanup a temporary directy and change the CWD into it
@@ -92,10 +85,6 @@ trait RunContext
   	 * @param  args - command line arguments as Array or space separated string
   	 */
   def withArguments(args: java.lang.String): this.type = js.native
-  /**
-  	 * Provide arguments to the run context
-  	 * @param  args - command line arguments as Array or space separated string
-  	 */
   def withArguments(args: js.Array[java.lang.String]): this.type = js.native
   /**
   	 * Provide dependent generators

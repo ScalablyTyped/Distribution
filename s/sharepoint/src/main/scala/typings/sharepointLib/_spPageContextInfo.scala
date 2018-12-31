@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _spPageContextInfo extends js.Object {
    // -182
   var CorrelationId: java.lang.String

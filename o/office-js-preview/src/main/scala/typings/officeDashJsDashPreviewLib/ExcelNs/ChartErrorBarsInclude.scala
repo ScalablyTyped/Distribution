@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 sealed trait ChartErrorBarsInclude extends js.Object
 
 /**
-     *
-     * Represents which error-bar parts to include.
-     *
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  *
+  * Represents which error-bar parts to include.
+  *
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.ChartErrorBarsInclude")
 @js.native
 object ChartErrorBarsInclude extends js.Object {

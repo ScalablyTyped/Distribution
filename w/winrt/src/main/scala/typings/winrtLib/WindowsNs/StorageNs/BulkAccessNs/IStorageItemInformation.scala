@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStorageItemInformation extends js.Object {
   var basicProperties: winrtLib.WindowsNs.StorageNs.FilePropertiesNs.BasicProperties
   var documentProperties: winrtLib.WindowsNs.StorageNs.FilePropertiesNs.DocumentProperties

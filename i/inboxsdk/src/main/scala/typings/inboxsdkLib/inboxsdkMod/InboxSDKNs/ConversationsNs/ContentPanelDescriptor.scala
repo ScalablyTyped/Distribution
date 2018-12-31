@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContentPanelDescriptor extends js.Object {
   var appIconUrl: js.UndefOr[java.lang.String] = js.undefined
   var appName: js.UndefOr[java.lang.String] = js.undefined

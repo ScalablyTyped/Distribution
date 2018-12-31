@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * A class that is used to access all of the children of a many-to-many relationship.
-     * Each instance of AV.Relation is associated with a particular parent object and key.
-     */
-
+  * A class that is used to access all of the children of a many-to-many relationship.
+  * Each instance of AV.Relation is associated with a particular parent object and key.
+  */
 trait Relation extends BaseObject {
   var key: java.lang.String
   var parent: Object

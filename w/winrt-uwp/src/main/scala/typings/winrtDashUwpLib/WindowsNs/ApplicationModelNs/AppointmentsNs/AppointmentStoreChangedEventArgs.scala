@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class AppointmentStoreChangedEventArgs () extends js.Object {
   /**
-                   * Gets the deferral object for the StoreChanged event.
-                   * @return The deferral object for the StoreChanged event.
-                   */
+    * Gets the deferral object for the StoreChanged event.
+    * @return The deferral object for the StoreChanged event.
+    */
   def getDeferral(): AppointmentStoreChangedDeferral = js.native
 }
 

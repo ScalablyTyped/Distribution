@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Entrypoint extends js.Object {
   var AttachStderr: scala.Boolean
   var AttachStdin: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ParentAccesstoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -27,17 +26,17 @@ trait Anon_ParentAccesstoken extends js.Object {
   /** Page size. The default page size is the maximum value of 1000 results. */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * Pagination token, which can be used to request a specific page
-                   * of `ListDataSourcesRequest` list results. For multiple-page
-                   * results, `ListDataSourcesResponse` outputs
-                   * a `next_page` token, which can be used as the
-                   * `page_token` value to request the next page of list results.
-                   */
+    * Pagination token, which can be used to request a specific page
+    * of `ListDataSourcesRequest` list results. For multiple-page
+    * results, `ListDataSourcesResponse` outputs
+    * a `next_page` token, which can be used as the
+    * `page_token` value to request the next page of list results.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The BigQuery project id for which data sources should be returned.
-                   * Must be in the form: `projects/{project_id}`
-                   */
+    * The BigQuery project id for which data sources should be returned.
+    * Must be in the form: `projects/{project_id}`
+    */
   var parent: java.lang.String
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

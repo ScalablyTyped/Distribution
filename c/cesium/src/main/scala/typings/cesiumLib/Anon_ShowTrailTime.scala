@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ShowTrailTime extends js.Object {
   var distanceDisplayCondition: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
   var leadTime: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property | scala.Double] = js.undefined

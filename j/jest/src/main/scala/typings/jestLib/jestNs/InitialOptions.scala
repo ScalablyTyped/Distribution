@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InitialOptions extends js.Object {
   var automock: js.UndefOr[scala.Boolean] = js.undefined
   var bail: js.UndefOr[scala.Boolean] = js.undefined

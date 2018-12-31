@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModifyOptions extends js.Object {
   var condition: js.UndefOr[openlayersLib.openlayersMod.EventsConditionType] = js.undefined
   var deleteCondition: js.UndefOr[openlayersLib.openlayersMod.EventsConditionType] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait cacheConf extends js.Object {
   var cache: scala.Boolean
   var defer: scala.Boolean

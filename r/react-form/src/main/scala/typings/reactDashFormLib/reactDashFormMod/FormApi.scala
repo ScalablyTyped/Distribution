@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FormApi extends js.Object {
   var asyncValidations: scala.Double
   var errors: FormErrors

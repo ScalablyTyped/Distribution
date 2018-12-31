@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RESTResponseV2 extends js.Object {
   def getBody(): java.lang.String
   def getCookies(): servicenowLib.Anon_Get

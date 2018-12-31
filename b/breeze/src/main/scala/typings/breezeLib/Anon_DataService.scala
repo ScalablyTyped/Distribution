@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DataService extends js.Object {
   var dataService: breezeLib.breezeNs.DataService
   var getUrl: js.Function0[java.lang.String]

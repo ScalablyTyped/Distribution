@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestMessage extends Message {
   /**
-       * The request id.
-       */
+    * The request id.
+    */
   var id: scala.Double | java.lang.String
   /**
-       * The method to be invoked.
-       */
+    * The method to be invoked.
+    */
   var method: java.lang.String
   /**
-       * The method's params.
-       */
+    * The method's params.
+    */
   var params: js.UndefOr[js.Any] = js.undefined
 }
 

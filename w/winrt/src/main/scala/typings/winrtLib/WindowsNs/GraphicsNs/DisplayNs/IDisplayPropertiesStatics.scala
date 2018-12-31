@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDisplayPropertiesStatics extends js.Object {
   var autoRotationPreferences: DisplayOrientations
   var currentOrientation: DisplayOrientations

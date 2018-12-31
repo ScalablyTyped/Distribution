@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /////////////////////////////
 /// DOM APIs
 /////////////////////////////
-
 trait Account extends js.Object {
   var displayName: java.lang.String
   var id: java.lang.String

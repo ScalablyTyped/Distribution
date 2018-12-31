@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StyleFunction extends js.Object {
   var base: js.UndefOr[scala.Double] = js.undefined
   var colorSpace: js.UndefOr[

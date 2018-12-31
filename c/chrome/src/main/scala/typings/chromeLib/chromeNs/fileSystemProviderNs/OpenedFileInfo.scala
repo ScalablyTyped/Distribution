@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OpenedFileInfo extends js.Object {
   /** The path of the opened file. */
   var filePath: java.lang.String

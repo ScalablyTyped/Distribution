@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MovementMethod extends js.Object {
   def canSelectArbitrarily(): scala.Boolean
   def initialize(widget: androiduixLib.androidNs.widgetNs.TextView, text: androiduixLib.androidNs.textNs.Spannable): scala.Unit

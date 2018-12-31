@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FillColorArgb extends js.Object {
   var fillColorArgb: js.UndefOr[java.lang.String] = js.undefined
   var imageUrl: js.UndefOr[java.lang.String] = js.undefined

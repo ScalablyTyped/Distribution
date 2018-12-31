@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Field extends js.Object {
   var map: adoneLib.Anon_From | scala.Null
   var name: java.lang.String | scala.Null

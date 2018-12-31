@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WMSTileLayerProps
   extends leafletLib.leafletMod.WMSOptions
      with TileLayerEvents {

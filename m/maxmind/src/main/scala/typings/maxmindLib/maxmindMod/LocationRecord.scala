@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocationRecord extends js.Object {
   val accuracy_radius: scala.Double
   val average_income: js.UndefOr[scala.Double] = js.undefined

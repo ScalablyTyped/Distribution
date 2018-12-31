@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserPromptDisplayingEventUIParam extends js.Object {
   /**
   	 * Get a boolean indicating if the operation that triggered the prompt can be cancelled.

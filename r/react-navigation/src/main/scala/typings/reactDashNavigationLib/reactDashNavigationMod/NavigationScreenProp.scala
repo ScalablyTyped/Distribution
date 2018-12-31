@@ -35,15 +35,11 @@ trait NavigationScreenProp[S, P] extends js.Object {
   def dangerouslyGetParent(): js.UndefOr[NavigationScreenProp[S, NavigationParams]] = js.native
   def dismiss(): scala.Boolean = js.native
   def dispatch(action: NavigationAction): scala.Boolean = js.native
-  def getParam[T /* <: java.lang.String */](param: T): /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(P))),List()),Left(TsIdentSimple(T))) */js.Any = js.native
+  def getParam[T /* <: java.lang.String */](param: T): /* import warning: ImportType.apply Failed type conversion: P[T] */ js.Any = js.native
   def getParam[T /* <: java.lang.String */](
     param: T,
-    fallback: stdLib.NonNullable[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(P))),List()),Left(TsIdentSimple(T))) */js.Any
-    ]
-  ): stdLib.NonNullable[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(P))),List()),Left(TsIdentSimple(T))) */js.Any
-  ] = js.native
+    fallback: stdLib.NonNullable[/* import warning: ImportType.apply Failed type conversion: P[T] */ js.Any]
+  ): stdLib.NonNullable[/* import warning: ImportType.apply Failed type conversion: P[T] */ js.Any] = js.native
   def goBack(): scala.Boolean = js.native
   def goBack(routeKey: java.lang.String): scala.Boolean = js.native
   def isFocused(): scala.Boolean = js.native

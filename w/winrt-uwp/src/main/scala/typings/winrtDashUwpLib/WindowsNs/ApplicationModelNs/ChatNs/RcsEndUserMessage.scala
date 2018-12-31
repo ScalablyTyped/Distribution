@@ -20,17 +20,17 @@ abstract class RcsEndUserMessage () extends js.Object {
   /** Gets the ID of the transport where this message originated. */
   var transportId: java.lang.String = js.native
   /**
-                   * Asynchronously sends the user's selection back.
-                   * @param action Specifies the label of the action.
-                   * @return An async action indicating that the operation has completed.
-                   */
+    * Asynchronously sends the user's selection back.
+    * @param action Specifies the label of the action.
+    * @return An async action indicating that the operation has completed.
+    */
   def sendResponseAsync(action: RcsEndUserMessageAction): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Asynchronously sends the user's selection back with the specified PIN.
-                   * @param action Specifies the label of the action.
-                   * @param pin The PIN to send.
-                   * @return An async action indicating that the operation has completed.
-                   */
+    * Asynchronously sends the user's selection back with the specified PIN.
+    * @param action Specifies the label of the action.
+    * @param pin The PIN to send.
+    * @return An async action indicating that the operation has completed.
+    */
   def sendResponseWithPinAsync(action: RcsEndUserMessageAction, pin: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MDCIconToggleAdapter extends js.Object {
   def addClass(className: java.lang.String): scala.Unit
   def deregisterInteractionHandler(`type`: java.lang.String, handler: stdLib.EventListener): scala.Unit

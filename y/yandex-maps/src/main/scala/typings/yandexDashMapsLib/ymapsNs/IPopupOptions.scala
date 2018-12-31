@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPopupOptions extends js.Object {
   var closeTimeout: js.UndefOr[scala.Double] = js.undefined
   var interactivityModel: js.UndefOr[InteractivityModelKey] = js.undefined

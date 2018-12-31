@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 sealed trait ContentControlType extends js.Object
 
 /**
-     *
-     * Specifies supported content control types and subtypes.
-     *
-     * [Api set: WordApi]
-     */
+  *
+  * Specifies supported content control types and subtypes.
+  *
+  * [Api set: WordApi]
+  */
 @JSGlobal("Word.ContentControlType")
 @js.native
 object ContentControlType extends js.Object {
@@ -58,10 +58,10 @@ object ContentControlType extends js.Object {
     extends officeDashJsLib.WordNs.ContentControlType
   
   /**
-           *
-           * Identifies a rich text content control.
-           *
-           */
+    *
+    * Identifies a rich text content control.
+    *
+    */
   @js.native
   sealed trait richText
     extends officeDashJsLib.WordNs.ContentControlType
@@ -75,28 +75,28 @@ object ContentControlType extends js.Object {
     extends officeDashJsLib.WordNs.ContentControlType
   
   /**
-           *
-           * Contains a whole table.
-           *
-           */
+    *
+    * Contains a whole table.
+    *
+    */
   @js.native
   sealed trait richTextTable
     extends officeDashJsLib.WordNs.ContentControlType
   
   /**
-           *
-           * Contains a whole cell.
-           *
-           */
+    *
+    * Contains a whole cell.
+    *
+    */
   @js.native
   sealed trait richTextTableCell
     extends officeDashJsLib.WordNs.ContentControlType
   
   /**
-           *
-           * Contains a whole row.
-           *
-           */
+    *
+    * Contains a whole row.
+    *
+    */
   @js.native
   sealed trait richTextTableRow
     extends officeDashJsLib.WordNs.ContentControlType

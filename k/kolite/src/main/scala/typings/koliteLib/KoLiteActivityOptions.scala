@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Activity /////////////////////////////////////////////
-
 trait KoLiteActivityOptions extends js.Object {
   var align: js.UndefOr[java.lang.String] = js.undefined
   var color: js.UndefOr[js.Any] = js.undefined

@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/number/is-finite", JSImport.Namespace)
 @js.native
 object libraryFnNumberIsDashFiniteMod
-  extends org.scalablytyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[js.Function1[/* number */ scala.Double, scala.Boolean]]
 

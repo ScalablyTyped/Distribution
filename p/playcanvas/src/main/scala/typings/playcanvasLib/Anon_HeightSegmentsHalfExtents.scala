@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_HeightSegmentsHalfExtents extends js.Object {
   var halfExtents: playcanvasLib.pcNs.Vec3
   var heightSegments: scala.Double

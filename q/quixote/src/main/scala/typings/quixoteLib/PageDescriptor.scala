@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Page positions and sizes are available on QFrame.page().
-
 trait PageDescriptor extends js.Object {
   // The bottom of the page.
   var bottom: PositionDescriptor

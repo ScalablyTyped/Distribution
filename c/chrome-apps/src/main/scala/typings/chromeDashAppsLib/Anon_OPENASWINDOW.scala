@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OPENASWINDOW extends js.Object {
   var OPEN_AS_PINNED_TAB: chromeDashAppsLib.chromeDashAppsLibStrings.OPEN_AS_PINNED_TAB
   var OPEN_AS_REGULAR_TAB: chromeDashAppsLib.chromeDashAppsLibStrings.OPEN_AS_REGULAR_TAB

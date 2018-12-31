@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("amcharts/AmChart", JSImport.Default)
 @js.native
+/**
+  * used when constructing a chart with a theme
+  */
 class default () extends AmChart {
-  /**
-       * used when constructing a chart with a theme
-       */
   def this(theme: js.Any) = this()
 }
 

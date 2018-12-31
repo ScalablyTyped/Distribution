@@ -24,8 +24,8 @@ class ClientControl protected ()
   /** returns next unique identifier for nested controls */
   def get_nextUniqueId(): java.lang.String = js.native
   /** Gets the id of View display template that is used to render this control.
-            * Example: '~sitecollection/_catalogs/masterpage/Display Templates/Search/Control_SearchResults.js'
-            */
+    * Example: '~sitecollection/_catalogs/masterpage/Display Templates/Search/Control_SearchResults.js'
+    */
   def get_renderTemplateId(): java.lang.String = js.native
   def get_showDataErrors(): scala.Boolean = js.native
   def get_states(): js.Any = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProjectionPickerViewModel extends js.Object {
   var dropDownVisible: scala.Boolean
   var isOrthographicProjection: Command

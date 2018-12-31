@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ConditionalRangeBorderIndex extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.6]
-     */
+  * [Api set: ExcelApi 1.6]
+  */
 @JSGlobal("Excel.ConditionalRangeBorderIndex")
 @js.native
 object ConditionalRangeBorderIndex extends js.Object {

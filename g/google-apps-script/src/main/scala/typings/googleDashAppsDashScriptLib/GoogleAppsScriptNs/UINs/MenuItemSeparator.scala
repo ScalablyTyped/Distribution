@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MenuItemSeparator extends js.Object {
   def addStyleDependentName(styleName: java.lang.String): MenuItemSeparator
   def addStyleName(styleName: java.lang.String): MenuItemSeparator

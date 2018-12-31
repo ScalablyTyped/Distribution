@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PivotValue extends js.Object {
   def getDisplayType(): PivotValueDisplayType
   def getFormula(): java.lang.String

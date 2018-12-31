@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISessionPayload extends js.Object {
   var app: js.UndefOr[js.Object] = js.undefined
   var device: js.UndefOr[js.Object] = js.undefined

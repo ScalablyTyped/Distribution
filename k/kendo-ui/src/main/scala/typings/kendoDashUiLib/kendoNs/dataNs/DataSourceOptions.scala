@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataSourceOptions extends js.Object {
   var aggregate: js.UndefOr[js.Array[DataSourceAggregateItem]] = js.undefined
   var autoSync: js.UndefOr[scala.Boolean] = js.undefined

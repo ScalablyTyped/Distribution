@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectPropsWithoutI18n
   extends atLinguiMacroLib.renderMod.RenderProps
      with /* exact */ org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ReactNode] {

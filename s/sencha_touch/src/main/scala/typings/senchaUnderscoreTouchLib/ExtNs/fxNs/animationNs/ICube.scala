@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICube extends IAbstract {
   /** [Config Option] (String) */
   var direction: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CertificateSet extends js.Object {
   var certificates: js.Array[pkijsLib.srcCertificateMod.default]
   def fromSchema(schema: js.Any): scala.Unit

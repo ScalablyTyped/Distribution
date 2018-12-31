@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HeaderProps
   extends reactLib.reactMod.ReactNs.HTMLProps[js.Any] {
   var hideSpacer: js.UndefOr[scala.Boolean] = js.undefined

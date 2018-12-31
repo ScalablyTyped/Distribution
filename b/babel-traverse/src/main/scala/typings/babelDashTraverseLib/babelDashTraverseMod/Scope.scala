@@ -23,19 +23,15 @@ class Scope protected () extends js.Object {
   def dump(): scala.Unit = js.native
   /** Generate a unique identifier and add it to the current scope. */
   def generateDeclaredUidIdentifier(): babelDashTypesLib.babelDashTypesMod.Identifier = js.native
-  /** Generate a unique identifier and add it to the current scope. */
   def generateDeclaredUidIdentifier(name: java.lang.String): babelDashTypesLib.babelDashTypesMod.Identifier = js.native
   /** Generate a unique `_id1` binding. */
   def generateUid(): java.lang.String = js.native
-  /** Generate a unique `_id1` binding. */
   def generateUid(name: java.lang.String): java.lang.String = js.native
   /** Generate a unique identifier. */
   def generateUidIdentifier(): babelDashTypesLib.babelDashTypesMod.Identifier = js.native
-  /** Generate a unique identifier. */
   def generateUidIdentifier(name: java.lang.String): babelDashTypesLib.babelDashTypesMod.Identifier = js.native
   /** Generate a unique identifier based on a node. */
   def generateUidIdentifierBasedOnNode(parent: Node): babelDashTypesLib.babelDashTypesMod.Identifier = js.native
-  /** Generate a unique identifier based on a node. */
   def generateUidIdentifierBasedOnNode(parent: Node, defaultName: java.lang.String): babelDashTypesLib.babelDashTypesMod.Identifier = js.native
   /** Walks the scope tree and gathers **all** bindings. */
   def getAllBindings(kinds: java.lang.String*): js.Object = js.native
@@ -56,18 +52,17 @@ class Scope protected () extends js.Object {
   def isPure(node: Node): scala.Boolean = js.native
   def isPure(node: Node, constantsOnly: scala.Boolean): scala.Boolean = js.native
   /**
-       * Determine whether evaluating the specific input `node` is a consequenceless reference. ie.
-       * evaluating it wont result in potentially arbitrary code from being ran. The following are
-       * whitelisted and determined not to cause side effects:
-       *
-       *  - `this` expressions
-       *  - `super` expressions
-       *  - Bound identifiers
-       */
+    * Determine whether evaluating the specific input `node` is a consequenceless reference. ie.
+    * evaluating it wont result in potentially arbitrary code from being ran. The following are
+    * whitelisted and determined not to cause side effects:
+    *
+    *  - `this` expressions
+    *  - `super` expressions
+    *  - Bound identifiers
+    */
   def isStatic(node: Node): scala.Boolean = js.native
   /** Possibly generate a memoised identifier if it is not static and has consequences. */
   def maybeGenerateMemoised(node: Node): babelDashTypesLib.babelDashTypesMod.Identifier = js.native
-  /** Possibly generate a memoised identifier if it is not static and has consequences. */
   def maybeGenerateMemoised(node: Node, dontPush: scala.Boolean): babelDashTypesLib.babelDashTypesMod.Identifier = js.native
   /** Move a binding of `name` to another `scope`. */
   def moveBindingTo(name: java.lang.String, scope: Scope): scala.Unit = js.native
@@ -95,7 +90,6 @@ class Scope protected () extends js.Object {
   def traverse(node: js.Array[Node], opts: TraverseOptions[Node], state: js.Any): scala.Unit = js.native
   /** Traverse node with current scope and path. */
   def traverse[S](node: Node, opts: TraverseOptions[S], state: S): scala.Unit = js.native
-  /** Traverse node with current scope and path. */
   def traverse[S](node: js.Array[Node], opts: TraverseOptions[S], state: S): scala.Unit = js.native
 }
 

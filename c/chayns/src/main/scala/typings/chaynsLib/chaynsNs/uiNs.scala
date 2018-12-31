@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * chayns.ui
-     */
+  * chayns.ui
+  */
 @JSGlobal("chayns.ui")
 @js.native
 object uiNs extends js.Object {
   /**
-           * Media Functions
-           * chayns.ui.gallery
-           */
+    * Media Functions
+    * chayns.ui.gallery
+    */
   @JSName("gallery")
   @js.native
   object galleryNs extends js.Object {
@@ -26,9 +26,9 @@ object uiNs extends js.Object {
   }
   
   /**
-           * UI Functions
-           * chayns.ui.modeSwitch
-           */
+    * UI Functions
+    * chayns.ui.modeSwitch
+    */
   @JSName("modeSwitch")
   @js.native
   object modeSwitchNs extends js.Object {
@@ -42,8 +42,8 @@ object uiNs extends js.Object {
   }
   
   /**
-           * chayns.ui.slider
-           */
+    * chayns.ui.slider
+    */
   @JSName("slider")
   @js.native
   object sliderNs extends js.Object {
@@ -51,8 +51,8 @@ object uiNs extends js.Object {
   }
   
   /**
-           * chayns.ui.tooltip
-           */
+    * chayns.ui.tooltip
+    */
   @JSName("tooltip")
   @js.native
   object tooltipNs extends js.Object {

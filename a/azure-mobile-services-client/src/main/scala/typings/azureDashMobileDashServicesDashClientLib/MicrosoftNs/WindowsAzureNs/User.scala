@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // User object based on Microsoft Azure documentation: http://msdn.microsoft.com/en-us/library/windowsazure/jj554220.aspx
-
 trait User extends js.Object {
   // { [providerName: string]: { userId: string, accessToken: string, accessTokenSecret?: string }; };
   var accessTokens: js.Any

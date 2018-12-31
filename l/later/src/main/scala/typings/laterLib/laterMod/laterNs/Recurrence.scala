@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Recurrence
   extends /*
-         * Custom Time Periods and Modifiers
-         * For acces to custom time periods created as extension to the later static type
-         * and modifiers created on the later modifier static type.
-         */
+  * Custom Time Periods and Modifiers
+  * For acces to custom time periods created as extension to the later static type
+  * and modifiers created on the later modifier static type.
+  */
 /* timeperiodAndModifierName */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[js.Array[scala.Double]]] {
   /** Day of the month. */
   var D: js.UndefOr[js.Array[scala.Double]] = js.undefined

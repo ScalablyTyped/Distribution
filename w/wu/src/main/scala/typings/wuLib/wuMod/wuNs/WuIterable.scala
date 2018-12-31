@@ -17,15 +17,7 @@ trait WuIterable[T]
   // sed -r 's/^(\s+\w+)<T>/\1/' |
   // sed -r 's/^(\s+\w+)<T, /\1</'
   def asyncEach(fn: Consumer[_]): js.Any = js.native
-  // generated from section "copied to WuIterable" above via
-  // sed -r 's/(, )?iter: Iterable<\w+>//' |
-  // sed -r 's/^(\s+\w+)<T>/\1/' |
-  // sed -r 's/^(\s+\w+)<T, /\1</'
   def asyncEach(fn: Consumer[_], maxBlock: scala.Double): js.Any = js.native
-  // generated from section "copied to WuIterable" above via
-  // sed -r 's/(, )?iter: Iterable<\w+>//' |
-  // sed -r 's/^(\s+\w+)<T>/\1/' |
-  // sed -r 's/^(\s+\w+)<T, /\1</'
   def asyncEach(fn: Consumer[_], maxBlock: scala.Double, timeout: scala.Double): js.Any = js.native
   def chunk(n: scala.Double): WuIterable[js.Array[T]] = js.native
   def concatMap[U](fn: js.Function1[/* t */ T, stdLib.Iterable[U]]): WuIterable[U] = js.native
@@ -60,7 +52,7 @@ trait WuIterable[T]
   def slice(start: scala.Double): WuIterable[T] = js.native
   def slice(start: scala.Double, stop: scala.Double): WuIterable[T] = js.native
   def some(fn: Filter[T]): scala.Boolean = js.native
-  def spreadMap(fn: js.Function1[/* repeated */js.Any, T], iter: stdLib.Iterable[js.Array[_]]): WuIterable[T] = js.native
+  def spreadMap(fn: js.Function1[/* repeated */ js.Any, T], iter: stdLib.Iterable[js.Array[_]]): WuIterable[T] = js.native
   def take(n: scala.Double): WuIterable[T] = js.native
   def takeWhile(fn: Filter[T]): WuIterable[T] = js.native
   def tap(fn: Consumer[T]): WuIterable[T] = js.native

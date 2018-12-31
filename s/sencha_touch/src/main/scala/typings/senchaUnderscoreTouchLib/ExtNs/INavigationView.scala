@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait INavigationView extends IContainer {
   /** [Config Option] (String) */
   var defaultBackButtonText: js.UndefOr[java.lang.String] = js.undefined

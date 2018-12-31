@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FusionTablesPolygonOptions extends js.Object {
   var fillColor: js.UndefOr[java.lang.String] = js.undefined
   var fillOpacity: js.UndefOr[scala.Double] = js.undefined

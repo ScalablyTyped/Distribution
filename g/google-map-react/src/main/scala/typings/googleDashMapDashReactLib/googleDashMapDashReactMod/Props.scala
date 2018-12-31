@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Props extends js.Object {
   var bootstrapURLKeys: js.UndefOr[BootstrapURLKeys] = js.undefined
   var center: js.UndefOr[Coords] = js.undefined

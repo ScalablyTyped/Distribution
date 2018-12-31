@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RegionsResource extends js.Object {
   /** Returns the specified Region resource. Get a list of available regions by making a list() request. */
   def get(

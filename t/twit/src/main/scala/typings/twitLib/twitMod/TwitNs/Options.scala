@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends ConfigKeys {
   var app_only_auth: js.UndefOr[scala.Boolean] = js.undefined
   var strictSSL: js.UndefOr[scala.Boolean] = js.undefined

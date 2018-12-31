@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapLayerEventType extends js.Object {
   var click: MapLayerMouseEvent
   var contextmenu: MapLayerMouseEvent

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISpinner extends ITrigger {
   /** [Config Option] (Boolean) */
   var keyNavEnabled: js.UndefOr[scala.Boolean] = js.undefined

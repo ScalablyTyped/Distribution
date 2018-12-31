@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CategoryListResponse extends js.Object {
   /** The list of categories with usage data. */
   var items: js.UndefOr[js.Array[Category]] = js.undefined

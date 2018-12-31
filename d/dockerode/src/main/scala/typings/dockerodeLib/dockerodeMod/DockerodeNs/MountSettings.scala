@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MountSettings extends js.Object {
   var BindOptions: js.UndefOr[dockerodeLib.Anon_Propagation] = js.undefined
   var Consistency: js.UndefOr[MountConsistency] = js.undefined

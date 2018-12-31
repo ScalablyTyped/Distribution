@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Connection extends js.Object {
   def authenticate(data: js.Any, fn: js.Function1[/* result */ js.Any, scala.Unit]): Connection
   def bufferedSocketEmit(): scala.Unit

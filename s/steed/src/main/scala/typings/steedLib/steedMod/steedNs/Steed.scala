@@ -7,16 +7,30 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Steed extends js.Object {
-  var eachSeries: js.Any = js.native
-  var mapSeries: js.Any = js.native
+  @JSName("eachSeries")
+  var eachSeries_Original: steedLib.Anon_ArrIterator = js.native
+  @JSName("mapSeries")
+  var mapSeries_Original: steedLib.Anon_Arr = js.native
   def each[T, E](arr: js.Array[T], iterator: SteedIterator[T, E]): scala.Unit = js.native
   def each[T, E](arr: js.Array[T], iterator: SteedIterator[T, E], callback: ErrorCallback[E]): scala.Unit = js.native
   def each[T, E](arr: Dictionary[T], iterator: SteedIterator[T, E]): scala.Unit = js.native
   def each[T, E](arr: Dictionary[T], iterator: SteedIterator[T, E], callback: ErrorCallback[E]): scala.Unit = js.native
+  def eachSeries[T, E](arr: js.Array[T], iterator: SteedIterator[T, E]): scala.Unit = js.native
+  def eachSeries[T, E](arr: js.Array[T], iterator: SteedIterator[T, E], callback: ErrorCallback[E]): scala.Unit = js.native
+  def eachSeries[T, E](arr: Dictionary[T], iterator: SteedIterator[T, E]): scala.Unit = js.native
+  def eachSeries[T, E](arr: Dictionary[T], iterator: SteedIterator[T, E], callback: ErrorCallback[E]): scala.Unit = js.native
   def map[T, R, E](arr: js.Array[T], iterator: SteedResultIterator[T, R, E]): scala.Unit = js.native
   def map[T, R, E](arr: js.Array[T], iterator: SteedResultIterator[T, R, E], callback: SteedResultArrayCallback[R, E]): scala.Unit = js.native
   def map[T, R, E](arr: Dictionary[T], iterator: SteedResultIterator[T, R, E]): scala.Unit = js.native
   def map[T, R, E](
+    arr: Dictionary[T],
+    iterator: SteedResultIterator[T, R, E],
+    callback: SteedResultArrayCallback[R, E]
+  ): scala.Unit = js.native
+  def mapSeries[T, R, E](arr: js.Array[T], iterator: SteedResultIterator[T, R, E]): scala.Unit = js.native
+  def mapSeries[T, R, E](arr: js.Array[T], iterator: SteedResultIterator[T, R, E], callback: SteedResultArrayCallback[R, E]): scala.Unit = js.native
+  def mapSeries[T, R, E](arr: Dictionary[T], iterator: SteedResultIterator[T, R, E]): scala.Unit = js.native
+  def mapSeries[T, R, E](
     arr: Dictionary[T],
     iterator: SteedResultIterator[T, R, E],
     callback: SteedResultArrayCallback[R, E]

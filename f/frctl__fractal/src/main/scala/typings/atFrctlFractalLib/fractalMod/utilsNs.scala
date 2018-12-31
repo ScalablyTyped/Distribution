@@ -11,9 +11,9 @@ object utilsNs extends js.Object {
   def defaultsDeep[T](args: T*): T = js.native
   def escapeForRegexp(str: java.lang.String): java.lang.String = js.native
   def fileExistsSync(path: java.lang.String): scala.Boolean = js.native
-  def isPromise(value: js.Any): /* is PromiseLike */scala.Boolean = js.native
-  def isPromise[T](value: T): /* is PromiseLike */scala.Boolean = js.native
-  def isPromise[T](value: js.Thenable[T]): /* is PromiseLike */scala.Boolean = js.native
+  def isPromise(value: js.Any): /* is std.PromiseLike<any> */ scala.Boolean = js.native
+  def isPromise[T](value: T): /* is std.PromiseLike<T> */ scala.Boolean = js.native
+  def isPromise[T](value: js.Thenable[T]): /* is std.PromiseLike<T> */ scala.Boolean = js.native
   def lang(filePath: java.lang.String): atFrctlFractalLib.Anon_Color = js.native
   def md5(str: java.lang.String): java.lang.String = js.native
   def mergeProp(prop: js.Any, upstream: js.Any): js.Any = js.native

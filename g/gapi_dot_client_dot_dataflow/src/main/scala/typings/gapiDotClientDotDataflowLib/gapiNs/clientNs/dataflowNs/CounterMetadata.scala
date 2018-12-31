@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CounterMetadata extends js.Object {
   /** Human-readable description of the counter semantics. */
   var description: js.UndefOr[java.lang.String] = js.undefined

@@ -12,29 +12,29 @@ sealed trait RestApiResponseStatus extends js.Object
 @js.native
 object RestApiResponseStatus extends js.Object {
   /**
-       * The operation is completed.
-       */
+    * The operation is completed.
+    */
   @js.native
   sealed trait Completed
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.RestApiResponseStatus
   
   /**
-       * The operation is failed.
-       */
+    * The operation is failed.
+    */
   @js.native
   sealed trait Failed
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.RestApiResponseStatus
   
   /**
-       * The operation is in progress.
-       */
+    * The operation is in progress.
+    */
   @js.native
   sealed trait Inprogress
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.RestApiResponseStatus
   
   /**
-       * The operation is in skipped.
-       */
+    * The operation is in skipped.
+    */
   @js.native
   sealed trait Skipped
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.RestApiResponseStatus

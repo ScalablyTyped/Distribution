@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Ino extends js.Object {
   var atime: scala.Boolean
   var cksum: scala.Boolean

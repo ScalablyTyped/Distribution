@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InlineQueryResultLocationBase extends InlineQueryResultBase {
   var input_message_content: js.UndefOr[InputMessageContent] = js.undefined
   var latitude: scala.Double

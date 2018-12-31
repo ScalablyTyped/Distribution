@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DevicesResource extends js.Object {
   var configVersions: ConfigVersionsResource
   var states: StatesResource
@@ -18,10 +17,10 @@ trait DevicesResource extends js.Object {
   /** List devices in a device registry. */
   def list(request: gapiDotClientDotCloudiotLib.Anon_ParentAccesstokenPageSize): gapiDotClientLib.gapiNs.clientNs.Request[ListDevicesResponse]
   /**
-               * Modifies the configuration for the device, which is eventually sent from
-               * the Cloud IoT Core servers. Returns the modified configuration version and
-               * its metadata.
-               */
+    * Modifies the configuration for the device, which is eventually sent from
+    * the Cloud IoT Core servers. Returns the modified configuration version and
+    * its metadata.
+    */
   def modifyCloudToDeviceConfig(request: gapiDotClientDotCloudiotLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[DeviceConfig]
   /** Updates a device. */
   def patch(request: gapiDotClientDotCloudiotLib.Anon_NameAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Device]

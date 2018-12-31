@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShowSearchType extends js.Object {
   var filter: js.UndefOr[
     js.Function3[

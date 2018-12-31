@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileTransferError extends js.Object {
   var code: scala.Double
   var http_status: scala.Double

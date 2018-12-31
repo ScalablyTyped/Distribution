@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class Toast () extends ComponentBase[ToastOptions] {
   /**
-           * Describes the current pan state of the Toast.
-           */
+    * Describes the current pan state of the Toast.
+    */
   var panning: scala.Boolean = js.native
   /**
-           * The remaining amount of time in ms that the toast will stay before dismissal.
-           */
+    * The remaining amount of time in ms that the toast will stay before dismissal.
+    */
   var timeRemaining: scala.Double = js.native
   /**
-           * remove a specific toast
-           */
+    * remove a specific toast
+    */
   def dismiss(): scala.Unit = js.native
 }
 
@@ -26,12 +26,12 @@ class Toast () extends ComponentBase[ToastOptions] {
 @js.native
 object Toast extends js.Object {
   /**
-           * dismiss all toasts
-           */
+    * dismiss all toasts
+    */
   def dismissAll(): scala.Unit = js.native
   /**
-           * Get Instance
-           */
+    * Get Instance
+    */
   def getInstance(elem: stdLib.Element): materializeDashCssLib.MNs.Toast = js.native
 }
 

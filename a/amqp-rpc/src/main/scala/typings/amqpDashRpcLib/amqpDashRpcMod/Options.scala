@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var conn_options: js.UndefOr[js.Any] = js.undefined
   var connection: js.UndefOr[js.Any] = js.undefined

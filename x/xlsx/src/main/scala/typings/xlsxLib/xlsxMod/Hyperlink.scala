@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Hyperlink extends js.Object {
   /** Target of the link (HREF) */
   var Target: java.lang.String

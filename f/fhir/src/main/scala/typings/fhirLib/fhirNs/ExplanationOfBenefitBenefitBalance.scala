@@ -6,57 +6,56 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Balance by Benefit Category
-     */
-
+  * Balance by Benefit Category
+  */
 trait ExplanationOfBenefitBenefitBalance extends BackboneElement {
   /**
-           * Contains extended information for property 'description'.
-           */
+    * Contains extended information for property 'description'.
+    */
   var _description: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'excluded'.
-           */
+    * Contains extended information for property 'excluded'.
+    */
   var _excluded: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'name'.
-           */
+    * Contains extended information for property 'name'.
+    */
   var _name: js.UndefOr[Element] = js.undefined
   /**
-           * Type of services covered
-           */
+    * Type of services covered
+    */
   var category: CodeableConcept
   /**
-           * Description of the benefit or services covered
-           */
+    * Description of the benefit or services covered
+    */
   var description: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Excluded from the plan
-           */
+    * Excluded from the plan
+    */
   var excluded: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * Benefit Summary
-           */
+    * Benefit Summary
+    */
   var financial: js.UndefOr[js.Array[ExplanationOfBenefitBenefitBalanceFinancial]] = js.undefined
   /**
-           * Short name for the benefit
-           */
+    * Short name for the benefit
+    */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * In or out of network
-           */
+    * In or out of network
+    */
   var network: js.UndefOr[CodeableConcept] = js.undefined
   /**
-           * Detailed services covered within the type
-           */
+    * Detailed services covered within the type
+    */
   var subCategory: js.UndefOr[CodeableConcept] = js.undefined
   /**
-           * Annual or lifetime
-           */
+    * Annual or lifetime
+    */
   var term: js.UndefOr[CodeableConcept] = js.undefined
   /**
-           * Individual or family
-           */
+    * Individual or family
+    */
   var unit: js.UndefOr[CodeableConcept] = js.undefined
 }
 

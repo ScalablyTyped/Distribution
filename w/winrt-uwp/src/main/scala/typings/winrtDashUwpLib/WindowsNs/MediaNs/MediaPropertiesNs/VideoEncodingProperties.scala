@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Describes the format of a video stream. */
 @JSGlobal("Windows.Media.MediaProperties.VideoEncodingProperties")
 @js.native
+/** Creates a new instance of the VideoEncodingProperties class. */
 class VideoEncodingProperties () extends js.Object {
   /** Gets or sets the video bit rate. */
   var bitrate: scala.Double = js.native
@@ -28,14 +29,14 @@ class VideoEncodingProperties () extends js.Object {
   /** Gets or sets the video image width. */
   var width: scala.Double = js.native
   /**
-                   * Gets the media format user data.
-                   * @return Receives the media format data.
-                   */
+    * Gets the media format user data.
+    * @return Receives the media format data.
+    */
   def getFormatUserData(): js.Array[scala.Double] = js.native
   /**
-                   * Sets the media format user data.
-                   * @param value The media data to set.
-                   */
+    * Sets the media format user data.
+    * @param value The media data to set.
+    */
   def setFormatUserData(value: js.Array[scala.Double]): scala.Unit = js.native
 }
 
@@ -44,22 +45,22 @@ class VideoEncodingProperties () extends js.Object {
 @js.native
 object VideoEncodingProperties extends js.Object {
   /**
-                   * Creates an instance of VideoEncodingProperties for a H.263 video.
-                   * @return The video encoding properties.
-                   */
+    * Creates an instance of VideoEncodingProperties for a H.263 video.
+    * @return The video encoding properties.
+    */
   def createH264(): winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.VideoEncodingProperties = js.native
   /**
-                   * Creates an instance of VideoEncodingProperties for a MPEG-2 video.
-                   * @return The video encoding properties.
-                   */
+    * Creates an instance of VideoEncodingProperties for a MPEG-2 video.
+    * @return The video encoding properties.
+    */
   def createMpeg2(): winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.VideoEncodingProperties = js.native
   /**
-                   * Creates an instance of VideoEncodingProperties for a uncompressed video.
-                   * @param subtype The media subtype of the format.
-                   * @param width The video image width.
-                   * @param height The video image height.
-                   * @return The video encoding properties.
-                   */
+    * Creates an instance of VideoEncodingProperties for a uncompressed video.
+    * @param subtype The media subtype of the format.
+    * @param width The video image width.
+    * @param height The video image height.
+    * @return The video encoding properties.
+    */
   def createUncompressed(subtype: java.lang.String, width: scala.Double, height: scala.Double): winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.VideoEncodingProperties = js.native
 }
 

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @deprecated Use {@link Xrm.Controls.AddControlNotificationOptions} instead.
-         */
-
+  * @deprecated Use {@link Xrm.Controls.AddControlNotificationOptions} instead.
+  */
 trait AddControlNotificationOptions
   extends xrmLib.XrmNs.ControlsNs.AddControlNotificationOptions
 

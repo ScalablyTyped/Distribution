@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SessionsResource extends js.Object {
   /** Deletes a session specified by the given session ID. */
   def delete(request: gapiDotClientDotFitnessLib.Anon_PrettyPrintCurrentTimeMillis): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

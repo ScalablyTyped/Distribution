@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TSIndexSignature extends BaseNode {
   var parameters: js.Array[Identifier]
   var readonly: scala.Boolean | scala.Null

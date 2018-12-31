@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Height extends js.Object {
   /**
-                   * The gadget's display mode. Optional. Possible values are:
-                   * - "icon" - The gadget displays next to the event's title in the calendar view.
-                   * - "chip" - The gadget displays when the event is clicked.
-                   */
+    * The gadget's display mode. Optional. Possible values are:
+    * - "icon" - The gadget displays next to the event's title in the calendar view.
+    * - "chip" - The gadget displays when the event is clicked.
+    */
   var display: js.UndefOr[java.lang.String] = js.undefined
   /** The gadget's height in pixels. The height must be an integer greater than 0. Optional. */
   var height: js.UndefOr[scala.Double] = js.undefined

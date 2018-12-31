@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Arguments
   extends /** All remaining options */
 /* argName */ org.scalablytyped.runtime.StringDictionary[js.Any] {

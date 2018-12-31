@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BuildDefinitionTemplate3_2 extends js.Object {
   var canDelete: scala.Boolean
   var category: java.lang.String

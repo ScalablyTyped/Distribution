@@ -25,13 +25,13 @@ class View protected () extends js.Object {
   def GotoSlide(Index: scala.Double): scala.Unit = js.native
   def Paste(): scala.Unit = js.native
   /**
-           * @param PowerPoint.PpPasteDataType [DataType=0]
-           * @param Office.MsoTriState [DisplayAsIcon=0]
-           * @param string [IconFileName='']
-           * @param number [IconIndex=0]
-           * @param string [IconLabel='']
-           * @param Office.MsoTriState [Link=0]
-           */
+    * @param PowerPoint.PpPasteDataType [DataType=0]
+    * @param Office.MsoTriState [DisplayAsIcon=0]
+    * @param string [IconFileName='']
+    * @param number [IconIndex=0]
+    * @param string [IconLabel='']
+    * @param Office.MsoTriState [Link=0]
+    */
   def PasteSpecial(
     DataType: js.UndefOr[PpPasteDataType],
     DisplayAsIcon: js.UndefOr[activexDashOfficeLib.OfficeNs.MsoTriState],
@@ -42,52 +42,17 @@ class View protected () extends js.Object {
   ): scala.Unit = js.native
   def Player(ShapeId: js.Any): Player = js.native
   /**
-           * @param number [From=-1]
-           * @param number [To=-1]
-           * @param string [PrintToFile='']
-           * @param number [Copies=0]
-           * @param Office.MsoTriState [Collate=-99]
-           */
+    * @param number [From=-1]
+    * @param number [To=-1]
+    * @param string [PrintToFile='']
+    * @param number [Copies=0]
+    * @param Office.MsoTriState [Collate=-99]
+    */
   def PrintOut(): scala.Unit = js.native
-  /**
-           * @param number [From=-1]
-           * @param number [To=-1]
-           * @param string [PrintToFile='']
-           * @param number [Copies=0]
-           * @param Office.MsoTriState [Collate=-99]
-           */
   def PrintOut(From: scala.Double): scala.Unit = js.native
-  /**
-           * @param number [From=-1]
-           * @param number [To=-1]
-           * @param string [PrintToFile='']
-           * @param number [Copies=0]
-           * @param Office.MsoTriState [Collate=-99]
-           */
   def PrintOut(From: scala.Double, To: scala.Double): scala.Unit = js.native
-  /**
-           * @param number [From=-1]
-           * @param number [To=-1]
-           * @param string [PrintToFile='']
-           * @param number [Copies=0]
-           * @param Office.MsoTriState [Collate=-99]
-           */
   def PrintOut(From: scala.Double, To: scala.Double, PrintToFile: java.lang.String): scala.Unit = js.native
-  /**
-           * @param number [From=-1]
-           * @param number [To=-1]
-           * @param string [PrintToFile='']
-           * @param number [Copies=0]
-           * @param Office.MsoTriState [Collate=-99]
-           */
   def PrintOut(From: scala.Double, To: scala.Double, PrintToFile: java.lang.String, Copies: scala.Double): scala.Unit = js.native
-  /**
-           * @param number [From=-1]
-           * @param number [To=-1]
-           * @param string [PrintToFile='']
-           * @param number [Copies=0]
-           * @param Office.MsoTriState [Collate=-99]
-           */
   def PrintOut(
     From: scala.Double,
     To: scala.Double,

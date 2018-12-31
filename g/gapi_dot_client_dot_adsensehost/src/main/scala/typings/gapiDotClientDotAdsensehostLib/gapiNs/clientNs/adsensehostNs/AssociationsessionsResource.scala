@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AssociationsessionsResource extends js.Object {
   /** Create an association session for initiating an association with an AdSense user. */
   def start(request: gapiDotClientDotAdsensehostLib.Anon_WebsiteLocale): gapiDotClientLib.gapiNs.clientNs.Request[AssociationSession]

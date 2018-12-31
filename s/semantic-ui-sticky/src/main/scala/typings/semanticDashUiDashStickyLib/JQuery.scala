@@ -14,8 +14,8 @@ trait JQuery extends js.Object {
   @JSName("sticky")
   def sticky_destroy(behavior: semanticDashUiDashStickyLib.semanticDashUiDashStickyLibStrings.destroy): JQuery = js.native
   /**
-           * recalculates offsets
-           */
+    * recalculates offsets
+    */
   @JSName("sticky")
   def sticky_refresh(behavior: semanticDashUiDashStickyLib.semanticDashUiDashStickyLibStrings.refresh): JQuery = js.native
   @JSName("sticky")
@@ -24,12 +24,12 @@ trait JQuery extends js.Object {
     value: semanticDashUiDashStickyLib.SemanticUINs.StickySettings
   ): JQuery = js.native
   @JSName("sticky")
-  def sticky_setting[K /* <: java.lang.String */](behavior: semanticDashUiDashStickyLib.semanticDashUiDashStickyLibStrings.setting, name: K): js.Any = js.native
+  def sticky_setting[K /* <: java.lang.String */](behavior: semanticDashUiDashStickyLib.semanticDashUiDashStickyLibStrings.setting, name: K): /* import warning: ImportType.apply Failed type conversion: semantic-ui-sticky.SemanticUI.StickySettings._Impl[K] */ js.Any = js.native
   @JSName("sticky")
   def sticky_setting[K /* <: java.lang.String */](
     behavior: semanticDashUiDashStickyLib.semanticDashUiDashStickyLibStrings.setting,
     name: K,
-    value: js.Any
+    value: /* import warning: ImportType.apply Failed type conversion: semantic-ui-sticky.SemanticUI.StickySettings._Impl[K] */ js.Any
   ): JQuery = js.native
 }
 

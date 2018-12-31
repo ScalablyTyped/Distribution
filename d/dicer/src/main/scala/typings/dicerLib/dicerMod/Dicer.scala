@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 // tslint:disable:unified-signatures
 /**
- * A very fast streaming multipart parser for node.js.
- * Dicer is a WritableStream
- *
- * Dicer (special) events:
- * - on('finish', ()) - Emitted when all parts have been parsed and the Dicer instance has been ended.
- * - on('part', (stream: PartStream)) - Emitted when a new part has been found.
- * - on('preamble', (stream: PartStream)) - Emitted for preamble if you should happen to need it (can usually be ignored).
- * - on('trailer', (data: Buffer)) - Emitted when trailing data was found after the terminating boundary (as with the preamble, this can usually be ignored too).
- */
+  * A very fast streaming multipart parser for node.js.
+  * Dicer is a WritableStream
+  *
+  * Dicer (special) events:
+  * - on('finish', ()) - Emitted when all parts have been parsed and the Dicer instance has been ended.
+  * - on('part', (stream: PartStream)) - Emitted when a new part has been found.
+  * - on('preamble', (stream: PartStream)) - Emitted for preamble if you should happen to need it (can usually be ignored).
+  * - on('trailer', (data: Buffer)) - Emitted when trailing data was found after the terminating boundary (as with the preamble, this can usually be ignored too).
+  */
 @js.native
 trait Dicer
   extends nodeLib.streamMod.Writable {
@@ -218,11 +218,11 @@ trait Dicer
     listener: js.Function1[/* src */ nodeLib.streamMod.Readable, scala.Unit]
   ): this.type = js.native
   /**
-       * Sets the boundary to use for parsing and performs some initialization needed for parsing.
-       * You should only need to use this if you set headerFirst to true in the constructor and are parsing the boundary from the preamble header.
-       *
-       * @param boundary The boundary to use
-       */
+    * Sets the boundary to use for parsing and performs some initialization needed for parsing.
+    * You should only need to use this if you set headerFirst to true in the constructor and are parsing the boundary from the preamble header.
+    *
+    * @param boundary The boundary to use
+    */
   def setBoundary(boundary: java.lang.String): scala.Unit = js.native
 }
 

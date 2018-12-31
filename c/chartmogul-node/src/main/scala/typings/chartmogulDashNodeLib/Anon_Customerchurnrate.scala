@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Customerchurnrate extends js.Object {
   var arpa: scala.Double
   var arr: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KEKIdentifier extends js.Object {
   var date: js.UndefOr[asn1jsLib.asn1jsMod.GeneralizedTime] = js.undefined
   var keyIdentifier: asn1jsLib.asn1jsMod.OctetString

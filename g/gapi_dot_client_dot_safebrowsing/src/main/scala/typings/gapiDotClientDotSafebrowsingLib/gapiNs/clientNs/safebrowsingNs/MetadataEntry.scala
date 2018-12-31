@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MetadataEntry extends js.Object {
   /** The metadata entry key. For JSON requests, the key is base64-encoded. */
   var key: js.UndefOr[java.lang.String] = js.undefined

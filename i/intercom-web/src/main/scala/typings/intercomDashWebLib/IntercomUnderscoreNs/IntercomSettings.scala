@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IntercomSettings extends js.Object {
   var alignment: js.UndefOr[java.lang.String] = js.undefined
   var app_id: js.UndefOr[java.lang.String] = js.undefined

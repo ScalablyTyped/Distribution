@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents app content and properties that can be added to the ContentIndexer . */
 @JSGlobal("Windows.Storage.Search.IndexableContent")
 @js.native
+/** Initializes a new instance of the IndexableContent class. */
 class IndexableContent () extends js.Object {
   /** Gets or sets the identifier for the content properties in the IndexableContent object. Changes to the actual representation of the item in the index can be made using the ContentIndexer class. */
   var id: java.lang.String = js.native

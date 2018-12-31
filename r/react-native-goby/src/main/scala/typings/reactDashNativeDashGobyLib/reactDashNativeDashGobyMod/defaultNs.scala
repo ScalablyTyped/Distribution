@@ -9,100 +9,64 @@ import scala.scalajs.js.annotation._
 @js.native
 object defaultNs extends js.Object {
   /**
-       * Represents the default settings that will be used by the sync method if
-       * an update dialog is configured to be displayed.
-       */
+    * Represents the default settings that will be used by the sync method if
+    * an update dialog is configured to be displayed.
+    */
   var DEFAULT_UPDATE_DIALOG: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.UpdateDialog = js.native
   /**
-       * Allow Goby to restart the app.
-       */
+    * Allow Goby to restart the app.
+    */
   def allowRestart(): scala.Unit = js.native
   /**
-       * Asks the Goby service whether the configured app deployment has an update available.
-       *
-       * @param deploymentKey The deployment key to use to query the Goby server for an update.
-       */
+    * Asks the Goby service whether the configured app deployment has an update available.
+    *
+    * @param deploymentKey The deployment key to use to query the Goby server for an update.
+    */
   def checkForUpdate(): js.Promise[reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.RemotePackage] = js.native
-  /**
-       * Asks the Goby service whether the configured app deployment has an update available.
-       *
-       * @param deploymentKey The deployment key to use to query the Goby server for an update.
-       */
   def checkForUpdate(deploymentKey: java.lang.String): js.Promise[reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.RemotePackage] = js.native
   /**
-       * Forbid Goby to restart the app.
-       */
+    * Forbid Goby to restart the app.
+    */
   def disallowRestart(): scala.Unit = js.native
   /**
-       * Retrieves the metadata for an installed update (e.g. description, mandatory).
-       *
-       * @param updateState The state of the update you want to retrieve the metadata for. Defaults to UpdateState.RUNNING.
-       */
+    * Retrieves the metadata for an installed update (e.g. description, mandatory).
+    *
+    * @param updateState The state of the update you want to retrieve the metadata for. Defaults to UpdateState.RUNNING.
+    */
   def getUpdateMetadata(): js.Promise[reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.LocalPackage] = js.native
-  /**
-       * Retrieves the metadata for an installed update (e.g. description, mandatory).
-       *
-       * @param updateState The state of the update you want to retrieve the metadata for. Defaults to UpdateState.RUNNING.
-       */
   def getUpdateMetadata(updateState: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.UpdateState): js.Promise[reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.LocalPackage] = js.native
   /**
-       * Notifies the Goby runtime that an installed update is considered successful.
-       */
+    * Notifies the Goby runtime that an installed update is considered successful.
+    */
   def notifyAppReady(): js.Promise[reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.StatusReport] = js.native
   /**
-       * Immediately restarts the app.
-       *
-       * @param onlyIfUpdateIsPending Indicates whether you want the restart to no-op if there isn't currently a pending update.
-       */
+    * Immediately restarts the app.
+    *
+    * @param onlyIfUpdateIsPending Indicates whether you want the restart to no-op if there isn't currently a pending update.
+    */
   def restartApp(): scala.Unit = js.native
-  /**
-       * Immediately restarts the app.
-       *
-       * @param onlyIfUpdateIsPending Indicates whether you want the restart to no-op if there isn't currently a pending update.
-       */
   def restartApp(onlyIfUpdateIsPending: scala.Boolean): scala.Unit = js.native
   /**
-       * Allows checking for an update, downloading it and installing it, all with a single call.
-       *
-       * @param options Options used to configure the end-user update experience (e.g. show an prompt?, install the update immediately?).
-       * @param syncStatusChangedCallback An optional callback that allows tracking the status of the sync operation, as opposed to simply checking the resolved state via the returned Promise.
-       * @param downloadProgressCallback An optional callback that allows tracking the progress of an update while it is being downloaded.
-       */
+    * Allows checking for an update, downloading it and installing it, all with a single call.
+    *
+    * @param options Options used to configure the end-user update experience (e.g. show an prompt?, install the update immediately?).
+    * @param syncStatusChangedCallback An optional callback that allows tracking the status of the sync operation, as opposed to simply checking the resolved state via the returned Promise.
+    * @param downloadProgressCallback An optional callback that allows tracking the progress of an update while it is being downloaded.
+    */
   def sync(): js.Promise[reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus] = js.native
-  /**
-       * Allows checking for an update, downloading it and installing it, all with a single call.
-       *
-       * @param options Options used to configure the end-user update experience (e.g. show an prompt?, install the update immediately?).
-       * @param syncStatusChangedCallback An optional callback that allows tracking the status of the sync operation, as opposed to simply checking the resolved state via the returned Promise.
-       * @param downloadProgressCallback An optional callback that allows tracking the progress of an update while it is being downloaded.
-       */
   def sync(options: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.SyncOptions): js.Promise[reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus] = js.native
-  /**
-       * Allows checking for an update, downloading it and installing it, all with a single call.
-       *
-       * @param options Options used to configure the end-user update experience (e.g. show an prompt?, install the update immediately?).
-       * @param syncStatusChangedCallback An optional callback that allows tracking the status of the sync operation, as opposed to simply checking the resolved state via the returned Promise.
-       * @param downloadProgressCallback An optional callback that allows tracking the progress of an update while it is being downloaded.
-       */
   def sync(
     options: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.SyncOptions,
     syncStatusChangedCallback: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.SyncStatusChangedCallback
   ): js.Promise[reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus] = js.native
-  /**
-       * Allows checking for an update, downloading it and installing it, all with a single call.
-       *
-       * @param options Options used to configure the end-user update experience (e.g. show an prompt?, install the update immediately?).
-       * @param syncStatusChangedCallback An optional callback that allows tracking the status of the sync operation, as opposed to simply checking the resolved state via the returned Promise.
-       * @param downloadProgressCallback An optional callback that allows tracking the progress of an update while it is being downloaded.
-       */
   def sync(
     options: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.SyncOptions,
     syncStatusChangedCallback: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.SyncStatusChangedCallback,
     downloadProgressCallback: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.DownloadProgressCallback
   ): js.Promise[reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus] = js.native
   /**
-       * Indicates when you would like to check for (and install) updates from the Goby server.
-       */
+    * Indicates when you would like to check for (and install) updates from the Goby server.
+    */
   @js.native
   object CheckFrequency extends js.Object {
     val MANUAL: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.CheckFrequency.MANUAL with java.lang.String = js.native
@@ -115,8 +79,8 @@ object defaultNs extends js.Object {
   }
   
   /**
-       * Indicates the status of a deployment (after installing and restarting).
-       */
+    * Indicates the status of a deployment (after installing and restarting).
+    */
   @js.native
   object DeploymentStatus extends js.Object {
     val FAILED: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.DeploymentStatus.FAILED with java.lang.String = js.native
@@ -128,8 +92,8 @@ object defaultNs extends js.Object {
   }
   
   /**
-       * Indicates when you would like an installed update to actually be applied.
-       */
+    * Indicates when you would like an installed update to actually be applied.
+    */
   @js.native
   object InstallMode extends js.Object {
     val IMMEDIATE: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.InstallMode.IMMEDIATE with java.lang.String = js.native
@@ -142,8 +106,8 @@ object defaultNs extends js.Object {
   }
   
   /**
-       * Indicates the current status of a sync operation.
-       */
+    * Indicates the current status of a sync operation.
+    */
   @js.native
   object SyncStatus extends js.Object {
     val AWAITING_USER_ACTION: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.SyncStatus.AWAITING_USER_ACTION with java.lang.String = js.native
@@ -162,8 +126,8 @@ object defaultNs extends js.Object {
   }
   
   /**
-       * Indicates the state that an update is currently in.
-       */
+    * Indicates the state that an update is currently in.
+    */
   @js.native
   object UpdateState extends js.Object {
     val LATEST: reactDashNativeDashGobyLib.reactDashNativeDashGobyMod.GobyNs.UpdateState.LATEST with java.lang.String = js.native

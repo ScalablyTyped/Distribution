@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditorChange extends js.Object {
   /** Position (in the pre-change coordinate system) where the change started. */
   var from: Position

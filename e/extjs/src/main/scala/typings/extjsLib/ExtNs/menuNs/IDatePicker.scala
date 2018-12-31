@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDatePicker extends IMenu {
   /** [Config Option] (Boolean) */
   var hideOnClick: js.UndefOr[scala.Boolean] = js.undefined

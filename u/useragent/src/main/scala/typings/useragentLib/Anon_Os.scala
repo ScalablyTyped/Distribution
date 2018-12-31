@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Os extends js.Object {
   var device: js.UndefOr[java.lang.String] = js.undefined
   var family: java.lang.String

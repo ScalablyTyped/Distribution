@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContactProperties extends js.Object {
   /** An array of all the contact's addresses. */
   var addresses: js.UndefOr[js.Array[ContactAddress]] = js.undefined

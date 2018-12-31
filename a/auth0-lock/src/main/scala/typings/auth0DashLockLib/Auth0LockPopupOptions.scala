@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Auth0LockPopupOptions extends js.Object {
   var height: scala.Double
   var left: scala.Double

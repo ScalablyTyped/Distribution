@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapControllerOptions extends js.Object {
   var doubleClickZoom: js.UndefOr[scala.Boolean] = js.undefined
   var dragPan: js.UndefOr[scala.Boolean] = js.undefined

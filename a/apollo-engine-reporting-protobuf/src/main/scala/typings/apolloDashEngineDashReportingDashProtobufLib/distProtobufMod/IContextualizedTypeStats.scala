@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IContextualizedTypeStats extends js.Object {
   /** ContextualizedTypeStats context */
   var context: js.UndefOr[IStatsContext | scala.Null] = js.undefined

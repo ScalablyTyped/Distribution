@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPropertyAnimation extends js.Object {
   var control1: winrtLib.WindowsNs.FoundationNs.Point
   var control2: winrtLib.WindowsNs.FoundationNs.Point

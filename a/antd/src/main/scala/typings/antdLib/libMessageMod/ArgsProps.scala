@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ArgsProps extends js.Object {
   var content: reactLib.reactMod.ReactNs.ReactNode
   var duration: scala.Double | scala.Null

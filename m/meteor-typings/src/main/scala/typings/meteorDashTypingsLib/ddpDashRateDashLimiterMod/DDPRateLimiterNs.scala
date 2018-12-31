@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("meteor/ddp-rate-limiter", "DDPRateLimiter")
 @js.native
 object DDPRateLimiterNs extends js.Object {
-  
   trait Matcher extends js.Object {
     var clientAddress: js.UndefOr[
         java.lang.String | (js.Function1[/* clientAddress */ java.lang.String, scala.Boolean])

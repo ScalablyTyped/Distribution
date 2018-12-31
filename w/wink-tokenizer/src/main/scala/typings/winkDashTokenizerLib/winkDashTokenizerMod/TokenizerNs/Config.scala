@@ -14,7 +14,6 @@ import scala.scalajs.js.annotation._
 	 * Whatever tokens are created like this are tagged as alien
 	 * and z is the finger print code of this token type.
 	 */
-
 trait Config extends js.Object {
   /**
   		 * such as $ or £ symbols

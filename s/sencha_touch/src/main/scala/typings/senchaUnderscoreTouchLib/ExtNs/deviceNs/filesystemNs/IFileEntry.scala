@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFileEntry extends IEntry {
   /** [Method] Requests a File Handle from the Local File System
   		* @param config Object

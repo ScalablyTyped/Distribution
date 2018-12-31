@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrderingOptions extends js.Object {
   var direction: js.UndefOr[
     massiveLib.massiveLibStrings.ASC | massiveLib.massiveLibStrings.asc | massiveLib.massiveLibStrings.DESC | massiveLib.massiveLibStrings.desc

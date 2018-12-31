@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StoreLayoutClustersListResponse extends js.Object {
   /** A store cluster of an enterprise. */
   var cluster: js.UndefOr[js.Array[StoreCluster]] = js.undefined

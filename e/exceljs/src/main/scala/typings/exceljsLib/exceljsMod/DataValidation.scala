@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataValidation extends js.Object {
   var allowBlank: js.UndefOr[scala.Boolean] = js.undefined
   var error: js.UndefOr[java.lang.String] = js.undefined

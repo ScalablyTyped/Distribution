@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CasperOptions extends js.Object {
   var clientScripts: js.UndefOr[js.Array[_]] = js.undefined
   var exitOnError: js.UndefOr[scala.Boolean] = js.undefined

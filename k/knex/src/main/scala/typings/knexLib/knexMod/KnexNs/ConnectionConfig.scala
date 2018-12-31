@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectionConfig extends js.Object {
   var database: java.lang.String
   var debug: js.UndefOr[scala.Boolean] = js.undefined

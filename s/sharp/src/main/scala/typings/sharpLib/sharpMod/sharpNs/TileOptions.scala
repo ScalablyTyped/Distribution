@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TileOptions extends js.Object {
   /** Tile angle of rotation, must be a multiple of 90. (optional, default 0) */
   var angle: js.UndefOr[scala.Double] = js.undefined

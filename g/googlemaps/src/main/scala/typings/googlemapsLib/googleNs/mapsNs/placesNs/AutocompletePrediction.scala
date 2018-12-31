@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AutocompletePrediction extends js.Object {
   var description: java.lang.String
   var matched_substrings: js.Array[PredictionSubstring]

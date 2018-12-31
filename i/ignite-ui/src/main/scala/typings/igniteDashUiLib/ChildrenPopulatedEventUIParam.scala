@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChildrenPopulatedEventUIParam extends js.Object {
   /**
   	 * Gets the data ID of the row.

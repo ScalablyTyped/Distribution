@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TemplateMapping extends js.Object {
   var directory: java.lang.String
   var isLeaf: scala.Boolean

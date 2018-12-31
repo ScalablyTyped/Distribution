@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HistoryResource extends js.Object {
   /** Lists the Historical Offers for the current user (or user's entire company) */
   def list(

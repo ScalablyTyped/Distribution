@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This interface specifies base functionality for all SMS message types. */
-
 trait ISmsMessageBase extends js.Object {
   /** Gets the cellular class of the message. */
   var cellularClass: CellularClass

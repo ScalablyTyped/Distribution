@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TopicsIcon extends js.Object {
   /**
   			 * If true the app clears all pending notifications when it is closed. Default is true.

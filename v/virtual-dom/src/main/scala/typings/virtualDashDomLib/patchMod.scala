@@ -13,10 +13,6 @@ object patchMod extends js.Object {
     to preserve that type (though it will usually be just Element).
     */
   def apply[T /* <: stdLib.Element */](rootNode: T, patches: js.Array[virtualDashDomLib.VirtualDOMNs.VPatch]): T = js.native
-  /**
-    patch() usually just returns rootNode after doing stuff to it, so we want
-    to preserve that type (though it will usually be just Element).
-    */
   def apply[T /* <: stdLib.Element */](
     rootNode: T,
     patches: js.Array[virtualDashDomLib.VirtualDOMNs.VPatch],

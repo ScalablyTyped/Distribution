@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait BorderType extends js.Object
 
 /**
-     * [Api set: WordApi]
-     */
+  * [Api set: WordApi]
+  */
 @JSGlobal("Word.BorderType")
 @js.native
 object BorderType extends js.Object {

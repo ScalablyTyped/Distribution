@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EntityView extends js.Object {
   var boundingSphere: Entity
   var ellipsoid: Ellipsoid

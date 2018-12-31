@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // ________________________________________________________________________
-
 trait SjclEllipticCurveCryptography extends js.Object {
   var basicKey: SjclECCBasic
   var curve: SjclEllipticalCurveStatic

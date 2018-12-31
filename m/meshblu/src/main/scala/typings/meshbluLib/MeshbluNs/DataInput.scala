@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataInput extends js.Object {
   var online: scala.Boolean
   var uuid: java.lang.String

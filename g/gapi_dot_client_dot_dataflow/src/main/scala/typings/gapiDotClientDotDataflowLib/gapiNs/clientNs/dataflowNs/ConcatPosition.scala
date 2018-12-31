@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConcatPosition extends js.Object {
   /** Index of the inner source. */
   var index: js.UndefOr[scala.Double] = js.undefined

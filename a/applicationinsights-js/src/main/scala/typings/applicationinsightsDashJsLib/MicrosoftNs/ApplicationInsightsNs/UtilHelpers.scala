@@ -13,8 +13,8 @@ class UtilHelpers () extends js.Object
 @js.native
 object UtilHelpers extends js.Object {
   /**
-           * Generate a random ID string
-           */
+    * Generate a random ID string
+    */
   def newId(): java.lang.String = js.native
 }
 

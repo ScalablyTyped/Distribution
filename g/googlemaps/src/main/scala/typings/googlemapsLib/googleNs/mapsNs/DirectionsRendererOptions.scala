@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DirectionsRendererOptions extends js.Object {
   var directions: js.UndefOr[DirectionsResult] = js.undefined
   var draggable: js.UndefOr[scala.Boolean] = js.undefined

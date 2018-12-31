@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Profile.
-         */
-
+  * Profile.
+  */
 trait SamplingHeapProfile extends js.Object {
   var head: SamplingHeapProfileNode
 }

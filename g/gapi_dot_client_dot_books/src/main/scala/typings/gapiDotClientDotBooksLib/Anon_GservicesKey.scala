@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_GservicesKey extends js.Object {
   var artUrl: js.UndefOr[java.lang.String] = js.undefined
   var gservicesKey: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSMetadata extends js.Object {
   var app: java.lang.String
   var appVersion: java.lang.String

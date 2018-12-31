@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IToolbar extends IContainer {
   /** [Method] Returns the value of layout
   		* @returns Object/String

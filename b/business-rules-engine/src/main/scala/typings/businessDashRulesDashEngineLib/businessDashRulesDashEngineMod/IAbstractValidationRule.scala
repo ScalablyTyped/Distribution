@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAbstractValidationRule[T] extends js.Object {
   var Children: org.scalablytyped.runtime.StringDictionary[IAbstractValidationRule[_]]
   var Rules: org.scalablytyped.runtime.StringDictionary[IPropertyValidationRule[T]]

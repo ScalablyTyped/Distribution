@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Dynamics.Joints.b2RevoluteJointDef")
 @js.native
+/**
+		* Constructor.
+		**/
 class b2RevoluteJointDef () extends b2JointDef {
   /**
   		* A flag to enable joint limits.

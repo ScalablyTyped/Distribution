@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestContext extends js.Object {
   var options: ValidateOptions
   var parent: js.Any

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVml
   extends extjsLib.ExtNs.drawNs.ISurface {
   /** [Method] Sets the size of the surface

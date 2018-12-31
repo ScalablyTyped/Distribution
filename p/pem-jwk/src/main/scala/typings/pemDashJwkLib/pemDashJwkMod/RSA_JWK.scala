@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RSA_JWK extends js.Object {
   var d: js.UndefOr[java.lang.String] = js.undefined
   var dp: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SnackbarProps
   extends reactDashMdLib.libMod.Props {
   var autoFocusAction: js.UndefOr[scala.Boolean] = js.undefined

@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Class_HttpResponse")
 @js.native
+/**
+	 * 
+	 * @brief HttpResponse 构造函数，创建一个新的 HttpResponse 对象
+	 * 
+	 * 
+	 */
 class Class_HttpResponse () extends Class_HttpMessage {
   /**
   	 * class prop 
@@ -75,15 +81,6 @@ class Class_HttpResponse () extends Class_HttpMessage {
   	 * 
   	 */
   def writeHead(statusCode: scala.Double): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 设置响应消息的返回状态，返回消息，并添加响应头
-  	 * @param statusCode 指定响应消息的返回状态
-  	 * @param headers 指定响应消息添加的响应头
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def writeHead(statusCode: scala.Double, headers: js.Object): scala.Unit = js.native
   /**
   	 * 
@@ -96,16 +93,6 @@ class Class_HttpResponse () extends Class_HttpMessage {
   	 * 
   	 */
   def writeHead(statusCode: scala.Double, statusMessage: java.lang.String): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 设置响应消息的返回状态，返回消息，并添加响应头
-  	 * @param statusCode 指定响应消息的返回状态
-  	 * @param statusMessage 指定响应消息的返回消息
-  	 * @param headers 指定响应消息添加的响应头
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def writeHead(statusCode: scala.Double, statusMessage: java.lang.String, headers: js.Object): scala.Unit = js.native
 }
 

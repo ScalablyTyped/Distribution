@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnDescription[TRow /* <: js.Object */] extends js.Object {
   /**
   	 * Column text alignment setting

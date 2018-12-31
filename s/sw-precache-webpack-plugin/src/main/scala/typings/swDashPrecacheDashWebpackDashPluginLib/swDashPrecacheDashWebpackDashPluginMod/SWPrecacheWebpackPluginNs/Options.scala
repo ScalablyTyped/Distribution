@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options
   extends swDashPrecacheDashWebpackDashPluginLib.swDashPrecacheDashWebpackDashPluginMod._Options {
   var filename: js.UndefOr[java.lang.String] = js.undefined

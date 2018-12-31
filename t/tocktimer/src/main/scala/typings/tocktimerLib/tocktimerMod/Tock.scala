@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("tocktimer", "Tock")
 @js.native
+/**
+  * Create a Tock instance
+  */
 class Tock ()
   extends tocktimerLib.tocktimerMod.tNs.Tock {
-  /**
-           * Create a Tock instance
-           */
   def this(opts: tocktimerLib.tocktimerMod.tNs.TockOptions) = this()
 }
 

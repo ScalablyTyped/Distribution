@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NativeOptions extends js.Object {
   var autoSendLogs: js.UndefOr[scala.Boolean] = js.undefined
   var autoUpdateConfig: js.UndefOr[scala.Boolean] = js.undefined

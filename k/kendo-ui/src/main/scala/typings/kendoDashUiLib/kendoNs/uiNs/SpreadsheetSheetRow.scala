@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpreadsheetSheetRow extends js.Object {
   var cells: js.UndefOr[js.Array[SpreadsheetSheetRowCell]] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined

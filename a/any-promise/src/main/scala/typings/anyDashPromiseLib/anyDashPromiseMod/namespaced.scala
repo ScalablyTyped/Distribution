@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced[R] protected () extends Promise[R] {
   /**
-     * If you call resolve in the body of the callback passed to the constructor,
-     * your promise is fulfilled with result object passed to resolve.
-     * If you call reject your promise is rejected with the object passed to resolve.
-     * For consistency and debugging (eg stack traces), obj should be an instanceof Error.
-     * Any errors thrown in the constructor callback will be implicitly passed to reject().
-     */
+    * If you call resolve in the body of the callback passed to the constructor,
+    * your promise is fulfilled with result object passed to resolve.
+    * If you call reject your promise is rejected with the object passed to resolve.
+    * For consistency and debugging (eg stack traces), obj should be an instanceof Error.
+    * Any errors thrown in the constructor callback will be implicitly passed to reject().
+    */
   def this(callback: js.Function2[
       /* resolve */ js.Function1[
         /* value */ js.UndefOr[R | anyDashPromiseLib.anyDashPromiseMod.PromiseNs.Thenable[R]], 
@@ -106,10 +106,10 @@ object namespaced extends js.Object {
     ]
   ): anyDashPromiseLib.anyDashPromiseMod.Promise[js.Tuple9[T1, T2, T3, T4, T5, T6, T7, T8, T9]] = js.native
   /**
-     * Make a promise that fulfills when every item in the array fulfills, and rejects if (and when) any item rejects.
-     * the array passed to all can be a mixture of promise-like objects and other objects.
-     * The fulfillment value is an array (in order) of fulfillment values. The rejection value is the first rejection value.
-     */
+    * Make a promise that fulfills when every item in the array fulfills, and rejects if (and when) any item rejects.
+    * the array passed to all can be a mixture of promise-like objects and other objects.
+    * The fulfillment value is an array (in order) of fulfillment values. The rejection value is the first rejection value.
+    */
   def all[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
     values: js.Tuple10[
       T1 | anyDashPromiseLib.anyDashPromiseMod.PromiseNs.Thenable[T1], 
@@ -127,17 +127,17 @@ object namespaced extends js.Object {
   @JSName("all")
   def all_TAll[TAll](values: js.Array[TAll | anyDashPromiseLib.anyDashPromiseMod.PromiseNs.Thenable[TAll]]): anyDashPromiseLib.anyDashPromiseMod.Promise[js.Array[TAll]] = js.native
   /**
-     * Make a Promise that fulfills when any item fulfills, and rejects if any item rejects.
-     */
+    * Make a Promise that fulfills when any item fulfills, and rejects if any item rejects.
+    */
   def race[R](promises: js.Array[R | anyDashPromiseLib.anyDashPromiseMod.PromiseNs.Thenable[R]]): anyDashPromiseLib.anyDashPromiseMod.Promise[R] = js.native
   /**
-     * Make a promise that rejects to obj. For consistency and debugging (eg stack traces), obj should be an instanceof Error
-     */
+    * Make a promise that rejects to obj. For consistency and debugging (eg stack traces), obj should be an instanceof Error
+    */
   def reject[R](error: js.Any): anyDashPromiseLib.anyDashPromiseMod.Promise[R] = js.native
   /**
-     * Make a new promise from the thenable.
-     * A thenable is promise-like in as far as it has a "then" method.
-     */
+    * Make a new promise from the thenable.
+    * A thenable is promise-like in as far as it has a "then" method.
+    */
   def resolve(): anyDashPromiseLib.anyDashPromiseMod.Promise[scala.Unit] = js.native
   def resolve[R](value: R): anyDashPromiseLib.anyDashPromiseMod.Promise[R] = js.native
   def resolve[R](value: anyDashPromiseLib.anyDashPromiseMod.PromiseNs.Thenable[R]): anyDashPromiseLib.anyDashPromiseMod.Promise[R] = js.native

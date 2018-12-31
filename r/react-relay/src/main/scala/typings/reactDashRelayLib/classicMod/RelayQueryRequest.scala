@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RelayQueryRequest extends js.Object {
   def getDebugName(): java.lang.String
   def getID(): java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Matcher extends js.Object {
   var clientAddress: js.UndefOr[
     java.lang.String | (js.Function1[/* clientAddress */ java.lang.String, scala.Boolean])

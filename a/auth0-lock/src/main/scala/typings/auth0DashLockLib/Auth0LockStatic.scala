@@ -41,7 +41,7 @@ trait Auth0LockStatic
   ): scala.Unit = js.native
   def hide(): scala.Unit = js.native
   def logout(query: js.Any): scala.Unit = js.native
-  def on(event: java.lang.String, callback: js.Function1[/* repeated */js.Any, scala.Unit]): scala.Unit = js.native
+  def on(event: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
   @JSName("on")
   def on_authenticated(
     event: auth0DashLockLib.auth0DashLockLibStrings.authenticated,

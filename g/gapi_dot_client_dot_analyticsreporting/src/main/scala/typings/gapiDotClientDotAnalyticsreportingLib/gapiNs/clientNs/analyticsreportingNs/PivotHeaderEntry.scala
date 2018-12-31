@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PivotHeaderEntry extends js.Object {
   /** The name of the dimensions in the pivot response. */
   var dimensionNames: js.UndefOr[js.Array[java.lang.String]] = js.undefined

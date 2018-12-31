@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * GenericListLayout...
-     */
-
+  * GenericListLayout...
+  */
 trait IGenericListLayout extends IGenericBaseLayout {
   var qListObject: IListObject
 }

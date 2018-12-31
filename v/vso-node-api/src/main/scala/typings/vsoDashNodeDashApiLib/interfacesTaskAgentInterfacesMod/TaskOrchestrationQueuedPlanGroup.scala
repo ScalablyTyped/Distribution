@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TaskOrchestrationQueuedPlanGroup extends js.Object {
   var definition: TaskOrchestrationOwner
   var owner: TaskOrchestrationOwner

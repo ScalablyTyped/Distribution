@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HDNode extends js.Object {
   var chainCode: nodeLib.Buffer
   var privateKey: nodeLib.Buffer

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GroupOverride[T] extends js.Object {
   var background: js.UndefOr[T] = js.undefined
   var path: js.UndefOr[T] = js.undefined

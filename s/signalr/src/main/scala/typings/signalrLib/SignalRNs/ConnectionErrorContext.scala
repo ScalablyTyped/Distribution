@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectionErrorContext extends js.Object {
   var readyState: scala.Double
   var responseText: java.lang.String

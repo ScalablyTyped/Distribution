@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JobOptions extends js.Object {
   var backOff: js.UndefOr[(js.Function1[/* failureCount */ scala.Double, scala.Double]) | scala.Double] = js.undefined
   var delayUntil: js.UndefOr[scala.Double | stdLib.Date] = js.undefined

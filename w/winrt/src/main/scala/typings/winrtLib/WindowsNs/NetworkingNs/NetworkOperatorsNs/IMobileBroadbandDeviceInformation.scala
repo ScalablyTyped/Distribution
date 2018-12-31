@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMobileBroadbandDeviceInformation extends js.Object {
   var cellularClass: winrtLib.WindowsNs.DevicesNs.SmsNs.CellularClass
   var currentRadioState: MobileBroadbandRadioState

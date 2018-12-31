@@ -9,12 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object controlNs extends js.Object {
   /**
-           * Creates a Leaflet.Locate control
-           */
+    * Creates a Leaflet.Locate control
+    */
   def locate(): leafletDotLocatecontrolLib.leafletMod.ControlNs.Locate = js.native
-  /**
-           * Creates a Leaflet.Locate control
-           */
   def locate(options: leafletLib.leafletMod.LocateOptions): leafletDotLocatecontrolLib.leafletMod.ControlNs.Locate = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Read extends js.Object {
   var admin: scala.Double
   var createPublisher: scala.Double

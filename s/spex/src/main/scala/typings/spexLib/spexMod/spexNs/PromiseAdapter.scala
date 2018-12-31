@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 // PromiseAdapter class;
 // API: http://vitaly-t.github.io/spex/PromiseAdapter.html
-
 trait PromiseAdapter extends js.Object
 

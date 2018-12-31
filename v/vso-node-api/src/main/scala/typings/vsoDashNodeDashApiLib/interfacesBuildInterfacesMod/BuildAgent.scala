@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BuildAgent extends js.Object {
   var buildDirectory: java.lang.String
   var controller: XamlBuildControllerReference

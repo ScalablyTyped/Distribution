@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerOptions extends js.Object {
   /**
   		 * A function that receives a given handshake or upgrade request as its first parameter,

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShowOptions extends js.Object {
   var addCancelButtonWithLabel: js.UndefOr[java.lang.String] = js.undefined
   var addDestructiveButtonWithLabel: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkspaceScanOptions extends js.Object {
   /** The number of lines before the matched line to include in the results object. */
   var leadingContextLineCount: js.UndefOr[scala.Double] = js.undefined

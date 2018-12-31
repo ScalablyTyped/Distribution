@@ -13,7 +13,7 @@ package object typesMod {
   type MutationFunc[TData, TVariables] = reactDashApolloLib.mutationMod.MutationFn[TData, TVariables]
   type NamedProps[TProps, R] = TProps with reactDashApolloLib.Anon_OwnProps[R]
   type RefetchQueriesProviderFn = js.Function1[
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     js.Array[java.lang.String | apolloDashClientLib.coreTypesMod.PureQueryOptions]
   ]
 }

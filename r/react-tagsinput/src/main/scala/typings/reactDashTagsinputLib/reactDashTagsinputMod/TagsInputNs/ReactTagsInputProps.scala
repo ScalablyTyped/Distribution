@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReactTagsInputProps
   extends reactLib.reactMod.ReactNs.Props[reactDashTagsinputLib.reactDashTagsinputMod.TagsInput] {
   var addKeys: js.UndefOr[js.Array[scala.Double]] = js.undefined

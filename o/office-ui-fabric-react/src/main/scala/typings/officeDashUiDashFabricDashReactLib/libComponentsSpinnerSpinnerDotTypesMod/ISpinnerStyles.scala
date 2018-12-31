@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISpinnerStyles extends js.Object {
   /** Styles for the spinner circle animation. */
   var circle: js.UndefOr[atUifabricMergeDashStylesLib.libIStyleMod.IStyle] = js.undefined

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * Represents BSON RegExp type
-             */
+  * Represents BSON RegExp type
+  */
 @JSGlobal("adone.data.bson.BSONRegExp")
 @js.native
 class BSONRegExp protected ()

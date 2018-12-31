@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TemplateMetadata extends js.Object {
   /** Optional. A description of the template. */
   var description: js.UndefOr[java.lang.String] = js.undefined

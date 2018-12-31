@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NonceStr extends js.Object {
   var nonceStr: java.lang.String
   var `package`: java.lang.String

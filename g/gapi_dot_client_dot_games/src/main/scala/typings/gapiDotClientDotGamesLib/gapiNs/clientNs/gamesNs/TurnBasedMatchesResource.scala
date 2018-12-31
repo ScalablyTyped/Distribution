@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TurnBasedMatchesResource extends js.Object {
   /** Cancel a turn-based match. */
   def cancel(request: gapiDotClientDotGamesLib.Anon_ConsistencyTokenPrettyPrintQuotaUserKeyUserIpOauthtokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
@@ -18,9 +17,9 @@ trait TurnBasedMatchesResource extends js.Object {
   /** Dismiss a turn-based match from the match list. The match will no longer show up in the list and will not generate notifications. */
   def dismiss(request: gapiDotClientDotGamesLib.Anon_ConsistencyTokenPrettyPrintQuotaUserKeyUserIpOauthtokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
   /**
-               * Finish a turn-based match. Each player should make this call once, after all results are in. Only the player whose turn it is may make the first call
-               * to Finish, and can pass in the final match state.
-               */
+    * Finish a turn-based match. Each player should make this call once, after all results are in. Only the player whose turn it is may make the first call
+    * to Finish, and can pass in the final match state.
+    */
   def finish(
     request: gapiDotClientDotGamesLib.Anon_ConsistencyTokenPrettyPrintQuotaUserKeyUserIpOauthtokenLanguageAltFieldsMatchId
   ): gapiDotClientLib.gapiNs.clientNs.Request[TurnBasedMatch]
@@ -41,16 +40,16 @@ trait TurnBasedMatchesResource extends js.Object {
   /** Returns turn-based matches the player is or was involved in. */
   def list(request: gapiDotClientDotGamesLib.Anon_ConsistencyTokenMaxResultsPrettyPrintMaxCompletedMatches): gapiDotClientLib.gapiNs.clientNs.Request[TurnBasedMatchList]
   /**
-               * Create a rematch of a match that was previously completed, with the same participants. This can be called by only one player on a match still in their
-               * list; the player must have called Finish first. Returns the newly created match; it will be the caller's turn.
-               */
+    * Create a rematch of a match that was previously completed, with the same participants. This can be called by only one player on a match still in their
+    * list; the player must have called Finish first. Returns the newly created match; it will be the caller's turn.
+    */
   def rematch(
     request: gapiDotClientDotGamesLib.Anon_ConsistencyTokenPrettyPrintQuotaUserKeyUserIpOauthtokenLanguageAltFieldsRequestId
   ): gapiDotClientLib.gapiNs.clientNs.Request[TurnBasedMatchRematch]
   /**
-               * Returns turn-based matches the player is or was involved in that changed since the last sync call, with the least recent changes coming first. Matches
-               * that should be removed from the local cache will have a status of MATCH_DELETED.
-               */
+    * Returns turn-based matches the player is or was involved in that changed since the last sync call, with the least recent changes coming first. Matches
+    * that should be removed from the local cache will have a status of MATCH_DELETED.
+    */
   def sync(request: gapiDotClientDotGamesLib.Anon_ConsistencyTokenMaxResultsPrettyPrintMaxCompletedMatches): gapiDotClientLib.gapiNs.clientNs.Request[TurnBasedMatchSync]
   /** Commit the results of a player turn. */
   def takeTurn(

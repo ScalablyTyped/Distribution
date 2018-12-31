@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUser extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -25,10 +24,10 @@ trait Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUser extends js.Object 
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Required. IDs of the Photos. For HTTP
-                   * GET requests, the URL query parameter should be
-                   * `photoIds=<id1>&photoIds=<id2>&...`.
-                   */
+    * Required. IDs of the Photos. For HTTP
+    * GET requests, the URL query parameter should be
+    * `photoIds=<id1>&photoIds=<id2>&...`.
+    */
   var photoIds: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined
@@ -41,9 +40,9 @@ trait Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUser extends js.Object 
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Specifies if a download URL for the photo bytes should be returned in the
-                   * Photo response.
-                   */
+    * Specifies if a download URL for the photo bytes should be returned in the
+    * Photo response.
+    */
   var view: js.UndefOr[java.lang.String] = js.undefined
 }
 

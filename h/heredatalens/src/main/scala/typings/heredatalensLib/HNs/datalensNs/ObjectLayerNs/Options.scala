@@ -6,12 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Defines data processing and data-driven styling for ObjectLayer
-         * The initial step of rendering is to split the tile data by rows, where each row represents a bucket.
-         * By default this step is processed with ObjectLayer.defaultDataToRows. This behavior can be changed by defining the dataToRows callback.
-         * In the next step each row must be presented as a map object with the rowToMapObject callback. Data-driven styling can be provided with the rowToStyle callback.
-         */
-
+  * Defines data processing and data-driven styling for ObjectLayer
+  * The initial step of rendering is to split the tile data by rows, where each row represents a bucket.
+  * By default this step is processed with ObjectLayer.defaultDataToRows. This behavior can be changed by defining the dataToRows callback.
+  * In the next step each row must be presented as a map object with the rowToMapObject callback. Data-driven styling can be provided with the rowToStyle callback.
+  */
 trait Options extends js.Object {
   /** When present, client-side clustering is applied */
   var clustering: js.UndefOr[Clustering] = js.undefined
@@ -22,9 +21,9 @@ trait Options extends js.Object {
     js.Function1[/* data */ heredatalensLib.HNs.datalensNs.ServiceNs.Data, js.Array[Row]]
   ] = js.undefined
   /**
-               * Defines map object style and icon according to data row and zoom level.
-               * Also it can define different styles depending on the StyleState (eg hovered, selected).
-               */
+    * Defines map object style and icon according to data row and zoom level.
+    * Also it can define different styles depending on the StyleState (eg hovered, selected).
+    */
   var rowToStyle: js.UndefOr[
     js.Function3[
       /* row */ Row, 

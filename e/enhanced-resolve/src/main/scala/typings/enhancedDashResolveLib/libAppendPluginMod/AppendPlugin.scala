@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AppendPlugin extends js.Object {
   var appending: java.lang.String
   var source: java.lang.String

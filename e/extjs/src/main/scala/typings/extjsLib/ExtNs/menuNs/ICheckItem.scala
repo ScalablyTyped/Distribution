@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICheckItem extends IItem {
   /** [Config Option] (Boolean) */
   var checkChangeDisabled: js.UndefOr[scala.Boolean] = js.undefined

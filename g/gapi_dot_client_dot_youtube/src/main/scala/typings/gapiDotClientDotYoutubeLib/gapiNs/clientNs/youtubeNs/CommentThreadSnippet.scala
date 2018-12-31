@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommentThreadSnippet extends js.Object {
   /** Whether the current viewer of the thread can reply to it. This is viewer specific - other viewers may see a different value for this field. */
   var canReply: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               * The YouTube channel the comments in the thread refer to or the channel with the video the comments refer to. If video_id isn't set the comments refer
-               * to the channel itself.
-               */
+    * The YouTube channel the comments in the thread refer to or the channel with the video the comments refer to. If video_id isn't set the comments refer
+    * to the channel itself.
+    */
   var channelId: js.UndefOr[java.lang.String] = js.undefined
   /** Whether the thread (and therefore all its comments) is visible to all YouTube users. */
   var isPublic: js.UndefOr[scala.Boolean] = js.undefined

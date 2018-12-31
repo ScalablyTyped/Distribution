@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IsCollapsed extends js.Object {
   /** Whether the group is in compact mode or not */
   var compact: js.UndefOr[scala.Boolean] = js.undefined

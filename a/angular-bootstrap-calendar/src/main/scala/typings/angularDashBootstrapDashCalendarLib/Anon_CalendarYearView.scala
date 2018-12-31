@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CalendarYearView extends js.Object {
   var calendarDayView: java.lang.String
   var calendarHourList: java.lang.String

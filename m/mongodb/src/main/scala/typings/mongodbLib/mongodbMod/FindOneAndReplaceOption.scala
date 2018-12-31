@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FindOneAndReplaceOption extends CommonOptions {
   var maxTimeMS: js.UndefOr[scala.Double] = js.undefined
   var projection: js.UndefOr[js.Object] = js.undefined

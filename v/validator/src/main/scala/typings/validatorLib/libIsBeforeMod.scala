@@ -8,5 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("validator/lib/isBefore", JSImport.Namespace)
 @js.native
 object libIsBeforeMod
-  extends org.scalablytyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[
+      js.Function2[/* str */ java.lang.String, /* date */ js.UndefOr[java.lang.String], scala.Boolean]
+    ]
 

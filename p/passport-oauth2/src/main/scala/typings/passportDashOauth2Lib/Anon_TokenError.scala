@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TokenError extends js.Object {
   var AuthorizationError: org.scalablytyped.runtime.Instantiable4[
     /* message */ js.UndefOr[java.lang.String], 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadUploadEvent extends UploadEvent {
   var XMLHttpRequest: js.UndefOr[js.Any] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined

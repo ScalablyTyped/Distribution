@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SendOptions
   extends parseLib.ParseNs.UseMasterKeyOption {
   var error: js.UndefOr[js.Function1[/* error */ parseLib.ParseNs.Error, scala.Unit]] = js.undefined

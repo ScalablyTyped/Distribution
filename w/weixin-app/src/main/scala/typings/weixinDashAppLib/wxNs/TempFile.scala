@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TempFile extends js.Object {
   /** 本地文件路径 */
   var path: java.lang.String

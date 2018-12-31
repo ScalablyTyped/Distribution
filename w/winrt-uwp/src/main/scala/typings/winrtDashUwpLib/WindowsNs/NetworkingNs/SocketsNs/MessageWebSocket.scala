@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Supports network communication that allows reading and writing whole messages using a WebSocket. */
 @JSGlobal("Windows.Networking.Sockets.MessageWebSocket")
 @js.native
+/** Creates a new MessageWebSocket object. */
 class MessageWebSocket () extends js.Object {
   /** Gets socket control data on a MessageWebSocket object. */
   var control: MessageWebSocketControl = js.native
@@ -35,16 +36,16 @@ class MessageWebSocket () extends js.Object {
   /** Closes the MessageWebSocket object and sends an empty close frame to the server. */
   def close(): scala.Unit = js.native
   /**
-                   * Closes the MessageWebSocket object and indicates a reason for the closure.
-                   * @param code Status code indicating the reason for closure.
-                   * @param reason Optional UTF-8-encoded data with additional information about the closure.
-                   */
+    * Closes the MessageWebSocket object and indicates a reason for the closure.
+    * @param code Status code indicating the reason for closure.
+    * @param reason Optional UTF-8-encoded data with additional information about the closure.
+    */
   def close(code: scala.Double, reason: java.lang.String): scala.Unit = js.native
   /**
-                   * Starts an asynchronous operation to connect to a remote network destination on a MessageWebSocket object.
-                   * @param uri An absolute Uri for the server to connect to.
-                   * @return An asynchronous connect operation on a MessageWebSocket object.
-                   */
+    * Starts an asynchronous operation to connect to a remote network destination on a MessageWebSocket object.
+    * @param uri An absolute Uri for the server to connect to.
+    * @return An asynchronous connect operation on a MessageWebSocket object.
+    */
   def connectAsync(uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /** Occurs when a close frame is received on the MessageWebSocket object as part of the close handshake. */
   def onclosed(ev: WebSocketClosedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[IWebSocket]): scala.Unit = js.native
@@ -64,10 +65,10 @@ class MessageWebSocket () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[MessageWebSocket, MessageWebSocketMessageReceivedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Adds an HTTP request header to the HTTP request message used in the WebSocket protocol handshake by the MessageWebSocket object.
-                   * @param headerName The name of the request header.
-                   * @param headerValue The value of the request header.
-                   */
+    * Adds an HTTP request header to the HTTP request message used in the WebSocket protocol handshake by the MessageWebSocket object.
+    * @param headerName The name of the request header.
+    * @param headerValue The value of the request header.
+    */
   def setRequestHeader(headerName: java.lang.String, headerValue: java.lang.String): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Constants extends js.Object {
   val DB: scala.Double
   val DM: scala.Double

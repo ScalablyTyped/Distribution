@@ -15,16 +15,16 @@ abstract class HtmlFormatHelper () extends js.Object
 @js.native
 object HtmlFormatHelper extends js.Object {
   /**
-                   * Takes a string that represents HTML content and adds the necessary headers to ensure it is formatted correctly for share and Clipboard operations.
-                   * @param htmlFragment A string representing the HTML content.
-                   * @return A string representing the formatted HTML.
-                   */
+    * Takes a string that represents HTML content and adds the necessary headers to ensure it is formatted correctly for share and Clipboard operations.
+    * @param htmlFragment A string representing the HTML content.
+    * @return A string representing the formatted HTML.
+    */
   def createHtmlFormat(htmlFragment: java.lang.String): java.lang.String = js.native
   /**
-                   * Gets a string that represents an HTML fragment.
-                   * @param htmlFormat The formatted HTML.
-                   * @return An HTML fragment based on the formatted HTML.
-                   */
+    * Gets a string that represents an HTML fragment.
+    * @param htmlFormat The formatted HTML.
+    * @return An HTML fragment based on the formatted HTML.
+    */
   def getStaticFragment(htmlFormat: java.lang.String): java.lang.String = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParserError extends js.Object {
   var column: js.UndefOr[scala.Double] = js.undefined
   /** The value of options.source if passed to css.parse. Otherwise undefined. */

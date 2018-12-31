@@ -13,7 +13,6 @@ object mlDashLevenbergDashMarquardtModMembers extends js.Object {
     d: mlDashLevenbergDashMarquardtLib.mlDashLevenbergDashMarquardtMod.LMNs.Data,
     fn: mlDashLevenbergDashMarquardtLib.mlDashLevenbergDashMarquardtMod.LMNs.FittedFunction
   ): mlDashLevenbergDashMarquardtLib.mlDashLevenbergDashMarquardtMod.LMNs.Result = js.native
-  /** Implementation of the Levenberg-Marquardt curve fitting method. */
   def default(
     d: mlDashLevenbergDashMarquardtLib.mlDashLevenbergDashMarquardtMod.LMNs.Data,
     fn: mlDashLevenbergDashMarquardtLib.mlDashLevenbergDashMarquardtMod.LMNs.FittedFunction,

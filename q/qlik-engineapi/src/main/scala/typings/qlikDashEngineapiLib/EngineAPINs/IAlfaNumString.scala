@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * AlfaNumString...
-     */
-
+  * AlfaNumString...
+  */
 trait IAlfaNumString extends js.Object {
   /**
-           * Is set to true if the value is a numeric.
-           */
+    * Is set to true if the value is a numeric.
+    */
   var qIsNum: scala.Boolean
   /**
-           * Calculated value.
-           */
+    * Calculated value.
+    */
   var qString: java.lang.String
 }
 

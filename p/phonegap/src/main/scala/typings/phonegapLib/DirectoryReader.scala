@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DirectoryReader extends js.Object {
   def readEntries(
     successCallback: js.Function1[/* entries */ FileSystemEntry, scala.Unit],

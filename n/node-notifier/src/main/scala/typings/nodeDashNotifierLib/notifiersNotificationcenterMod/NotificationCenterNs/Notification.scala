@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Notification
   extends nodeDashNotifierLib.nodeDashNotifierMod.nodeNotifierNs.Notification {
   /** Attach image? (Absolute path) */

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Fail extends js.Object {
   var fail: js.UndefOr[scala.Double] = js.undefined
   var func: js.UndefOr[scala.Double] = js.undefined

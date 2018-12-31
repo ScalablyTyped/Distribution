@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FieldParameters extends js.Object {
   /** A list of options, used for multiple choice fields. */
   var choices: js.UndefOr[FieldObjectChoice | FieldArrayChoice] = js.undefined

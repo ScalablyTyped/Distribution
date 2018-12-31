@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SearchQueryRewriter extends js.Object {
   var term: java.lang.String
   def termReplacer(): java.lang.String | js.Promise[java.lang.String]

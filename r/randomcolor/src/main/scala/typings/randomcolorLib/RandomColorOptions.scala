@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RandomColorOptions extends js.Object {
   var alpha: js.UndefOr[scala.Double] = js.undefined
   var count: js.UndefOr[scala.Double] = js.undefined

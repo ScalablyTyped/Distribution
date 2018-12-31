@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FailureReply extends js.Object {
   var expected: js.Array[java.lang.String]
   var furthest: scala.Double

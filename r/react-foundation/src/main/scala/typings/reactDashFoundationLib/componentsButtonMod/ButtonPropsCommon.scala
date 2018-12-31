@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ButtonPropsCommon
   extends reactDashFoundationLib.utilsMod.FlexboxPropTypes {
   var isArrowOnly: js.UndefOr[scala.Boolean] = js.undefined

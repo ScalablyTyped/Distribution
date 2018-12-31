@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RouterBgpPeer extends js.Object {
   /**
-               * The priority of routes advertised to this BGP peer. In the case where there is more than one matching route of maximum length, the routes with lowest
-               * priority value win.
-               */
+    * The priority of routes advertised to this BGP peer. In the case where there is more than one matching route of maximum length, the routes with lowest
+    * priority value win.
+    */
   var advertisedRoutePriority: js.UndefOr[scala.Double] = js.undefined
   /** Name of the interface the BGP peer is associated with. */
   var interfaceName: js.UndefOr[java.lang.String] = js.undefined

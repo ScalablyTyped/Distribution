@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KosModel[T] extends js.Object {
   var asyncs: org.scalablytyped.runtime.StringDictionary[
     js.Function3[

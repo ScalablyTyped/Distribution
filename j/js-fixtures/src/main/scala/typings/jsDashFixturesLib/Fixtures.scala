@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Fixtures extends js.Object {
   var containerId: java.lang.String
   var path: java.lang.String

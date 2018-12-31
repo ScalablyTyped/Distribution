@@ -11,32 +11,29 @@ trait JID extends js.Object {
   var local: java.lang.String = js.native
   var resource: java.lang.String = js.native
   /**
-           * Convenience method to distinguish users
-           */
+    * Convenience method to distinguish users
+    */
   def bare(): JID = js.native
   /**
-           * Comparison function
-           */
+    * Comparison function
+    */
   def equals(other: JID): scala.Boolean = js.native
   def getDomain(): java.lang.String = js.native
   def getLocal(): java.lang.String = js.native
   def getLocal(unescape: scala.Boolean): java.lang.String = js.native
   def getResource(): java.lang.String = js.native
   /**
-           * http://xmpp.org/rfcs/rfc6122.html#addressing-domain
-           */
+    * http://xmpp.org/rfcs/rfc6122.html#addressing-domain
+    */
   def setDomain(value: java.lang.String): scala.Unit = js.native
   /**
-           * http://xmpp.org/rfcs/rfc6122.html#addressing-localpart
-           */
+    * http://xmpp.org/rfcs/rfc6122.html#addressing-localpart
+    */
   def setLocal(local: java.lang.String): scala.Unit = js.native
-  /**
-           * http://xmpp.org/rfcs/rfc6122.html#addressing-localpart
-           */
   def setLocal(local: java.lang.String, escape: scala.Boolean): scala.Unit = js.native
   /**
-           * http://xmpp.org/rfcs/rfc6122.html#addressing-resourcepart
-           */
+    * http://xmpp.org/rfcs/rfc6122.html#addressing-resourcepart
+    */
   def setResource(value: java.lang.String): scala.Unit = js.native
   def toString(unescape: scala.Boolean): java.lang.String = js.native
 }

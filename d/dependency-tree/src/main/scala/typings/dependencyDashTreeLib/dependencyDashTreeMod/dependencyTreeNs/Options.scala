@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var detective: js.UndefOr[js.Any] = js.undefined
   var directory: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CancelN extends js.Object {
   def cancel(n: scala.Double): js.Promise[scala.Unit]
   def item(n: scala.Double): js.Promise[_]

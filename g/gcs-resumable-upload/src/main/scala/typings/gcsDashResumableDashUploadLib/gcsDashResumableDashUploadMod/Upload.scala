@@ -34,8 +34,8 @@ class Upload protected ()
   var offsetStream: js.UndefOr[js.Any] = js.native
   var onChunk: js.Any = js.native
   /**
-       * @return {bool} is the request good?
-       */
+    * @return {bool} is the request good?
+    */
   var onResponse: js.Any = js.native
   var origin: js.UndefOr[java.lang.String] = js.native
   var predefinedAcl: js.UndefOr[

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * http://js.cytoscape.org/#layouts/circle
-     */
-
+  * http://js.cytoscape.org/#layouts/circle
+  */
 trait CircleLayoutOptions extends ShapedLayoutOptions {
   // whether the layout should go clockwise (true) or counterclockwise/anticlockwise (false)
   var clockwise: js.UndefOr[scala.Boolean] = js.undefined

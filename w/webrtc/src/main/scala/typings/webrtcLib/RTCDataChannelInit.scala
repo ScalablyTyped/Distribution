@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // https://www.w3.org/TR/webrtc/#idl-def-rtcdatachannelinit
-
 trait RTCDataChannelInit extends js.Object {
    // default = false
   var id: js.UndefOr[scala.Double] = js.undefined

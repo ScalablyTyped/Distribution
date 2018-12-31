@@ -12,22 +12,22 @@ sealed trait SortOrderType extends js.Object
 @js.native
 object SortOrderType extends js.Object {
   /**
-       * The results will be sorted in Ascending order
-       */
+    * The results will be sorted in Ascending order
+    */
   @js.native
   sealed trait Ascending
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.SortOrderType
   
   /**
-       * Results will be sorted in the default order as per the sorting type defined. The default varies for each type, e.g. for Relevance, default is Descnding, for Title default is Ascending etc.
-       */
+    * Results will be sorted in the default order as per the sorting type defined. The default varies for each type, e.g. for Relevance, default is Descnding, for Title default is Ascending etc.
+    */
   @js.native
   sealed trait Default
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.SortOrderType
   
   /**
-       * The results will be sorted in Descending order
-       */
+    * The results will be sorted in Descending order
+    */
   @js.native
   sealed trait Descending
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.SortOrderType

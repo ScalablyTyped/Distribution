@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 	* @brief 安全沙箱对象，用于管理一个独立的运行空间
 	* @detail  所有的代码都运行在自己的沙箱中，全局的 require 会调用当前沙箱加载模块，沙箱会通过 require 传递给加载的沙箱。下面的示例创建一个沙箱，限制只允许访问全局基础模块中的 assert 模块，并添加 a 和 b 两个定制模块：,```JavaScript,var vm = require('vm');,var sbox = new vm.SandBox({,  a: 100,,  b: 200,,  assert: require('assert'),});,,var mod_in_sbox = sbox.require('./path/to/mod');,```
 	*/
-
 @JSGlobal("Class_SandBox")
 @js.native
 class Class_SandBox protected () extends Class__object {
@@ -170,15 +169,6 @@ class Class_SandBox protected () extends Class__object {
   	 * 
   	 */
   def run(fname: java.lang.String): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 运行一个脚本
-  	 * @param fname 指定要运行的脚本路径，此路径与当前运行脚本无关，必须为绝对路径
-  	 * @param argv 指定要运行的参数，此参数可在脚本内使用 argv 获取
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def run(fname: java.lang.String, argv: js.Array[_]): scala.Unit = js.native
   /**
   	 * 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenProject extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -19,16 +18,16 @@ trait Anon_AccesstokenProject extends js.Object {
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The client version making the call.
-                   * Schema: `domain/type/version` (e.g., `google.com/intellij/v1`).
-                   */
+    * The client version making the call.
+    * Schema: `domain/type/version` (e.g., `google.com/intellij/v1`).
+    */
   var clientVersion: js.UndefOr[java.lang.String] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * When set to `true`, the result includes all debuggees. Otherwise, the
-                   * result includes only debuggees that are active.
-                   */
+    * When set to `true`, the result includes all debuggees. Otherwise, the
+    * result includes only debuggees that are active.
+    */
   var includeInactive: js.UndefOr[scala.Boolean] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined

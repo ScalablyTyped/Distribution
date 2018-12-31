@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnimationEndedEventUIParam extends js.Object {
   /**
   	 * Gets the name of the action, which triggered the animation.

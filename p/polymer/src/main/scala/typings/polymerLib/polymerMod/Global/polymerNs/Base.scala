@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Base
   extends CommonBase
      with /** Need to allow all properties for callback methods. */

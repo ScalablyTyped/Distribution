@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait gridOptions extends js.Object {
   var aboveData: js.UndefOr[scala.Boolean] = js.undefined
   var autoHighlight: js.UndefOr[scala.Boolean] = js.undefined

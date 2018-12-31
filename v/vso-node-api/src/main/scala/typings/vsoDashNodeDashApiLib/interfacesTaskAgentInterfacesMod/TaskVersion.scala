@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TaskVersion extends js.Object {
   var isTest: scala.Boolean
   var major: scala.Double

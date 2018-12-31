@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WEBGL_compressed_texture_astc extends js.Object {
   val COMPRESSED_RGBA_ASTC_10x10_KHR: GLenum
   val COMPRESSED_RGBA_ASTC_10x5_KHR: GLenum

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TOPRIGHT extends js.Object {
   var BOTTOM_CENTER: reactDashToastifyLib.reactDashToastifyLibStrings.`bottom-center`
   var BOTTOM_LEFT: reactDashToastifyLib.reactDashToastifyLibStrings.`bottom-left`

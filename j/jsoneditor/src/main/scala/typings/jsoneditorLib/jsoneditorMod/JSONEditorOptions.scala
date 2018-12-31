@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JSONEditorOptions extends js.Object {
   var ace: js.UndefOr[aceLib.AceAjaxNs.Ace] = js.undefined
   var ajv: js.UndefOr[js.Any] = js.undefined

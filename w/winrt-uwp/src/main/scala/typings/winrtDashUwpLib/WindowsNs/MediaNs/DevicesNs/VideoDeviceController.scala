@@ -72,48 +72,48 @@ abstract class VideoDeviceController () extends js.Object {
   /** Gets the ZoomControl associated with the VideoDeviceController . */
   var zoomControl: ZoomControl = js.native
   /**
-                   * Gets a list of the supported encoding properties for the video device.
-                   * @param mediaStreamType The type of media stream for which to get the properties.
-                   * @return A list of the supported encoding properties.
-                   */
+    * Gets a list of the supported encoding properties for the video device.
+    * @param mediaStreamType The type of media stream for which to get the properties.
+    * @return A list of the supported encoding properties.
+    */
   def getAvailableMediaStreamProperties(mediaStreamType: winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.MediaStreamType): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.IMediaEncodingProperties] = js.native
   /**
-                   * Gets a property on the camera. You can use this method to query properties that are specific to a particular camera.
-                   * @param propertyId The property identifier.
-                   * @return The property value.
-                   */
+    * Gets a property on the camera. You can use this method to query properties that are specific to a particular camera.
+    * @param propertyId The property identifier.
+    * @return The property value.
+    */
   def getDeviceProperty(propertyId: java.lang.String): js.Any = js.native
   /**
-                   * Gets the encoding properties for the specified media stream type for the video device.
-                   * @param mediaStreamType The type of media stream for which to get the properties.
-                   * @return The encoding properties.
-                   */
+    * Gets the encoding properties for the specified media stream type for the video device.
+    * @param mediaStreamType The type of media stream for which to get the properties.
+    * @return The encoding properties.
+    */
   def getMediaStreamProperties(mediaStreamType: winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.MediaStreamType): winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.IMediaEncodingProperties = js.native
   /**
-                   * Sets a property on the device. You can use this method to set properties that are specific to a particular device.
-                   * @param propertyId The property identifier.
-                   * @param propertyValue The new value of the property.
-                   */
+    * Sets a property on the device. You can use this method to set properties that are specific to a particular device.
+    * @param propertyId The property identifier.
+    * @param propertyValue The new value of the property.
+    */
   def setDeviceProperty(propertyId: java.lang.String, propertyValue: js.Any): scala.Unit = js.native
   /**
-                   * Sets the encoding properties asynchronously for the specified media stream type for the video device.
-                   * @param mediaStreamType The type of media stream for which to set the properties.
-                   * @param mediaEncodingProperties The encoding properties to set.
-                   * @return An IAsyncAction object that is used to control the asynchronous operation.
-                   */
+    * Sets the encoding properties asynchronously for the specified media stream type for the video device.
+    * @param mediaStreamType The type of media stream for which to set the properties.
+    * @param mediaEncodingProperties The encoding properties to set.
+    * @return An IAsyncAction object that is used to control the asynchronous operation.
+    */
   def setMediaStreamPropertiesAsync(
     mediaStreamType: winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.MediaStreamType,
     mediaEncodingProperties: winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.IMediaEncodingProperties
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Gets the local power line frequency.
-                   */
+    * Gets the local power line frequency.
+    */
   def tryGetPowerlineFrequency(): winrtDashUwpLib.Anon_Value = js.native
   /**
-                   * Sets the local power line frequency.
-                   * @param value The power line frequency.
-                   * @return Returns true if the method succeeded, or false otherwise.
-                   */
+    * Sets the local power line frequency.
+    * @param value The power line frequency.
+    * @return Returns true if the method succeeded, or false otherwise.
+    */
   def trySetPowerlineFrequency(value: winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.PowerlineFrequency): scala.Boolean = js.native
 }
 

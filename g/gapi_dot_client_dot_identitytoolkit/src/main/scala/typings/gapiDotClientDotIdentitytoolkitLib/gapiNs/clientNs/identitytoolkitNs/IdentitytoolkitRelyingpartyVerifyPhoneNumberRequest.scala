@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IdentitytoolkitRelyingpartyVerifyPhoneNumberRequest extends js.Object {
   var code: js.UndefOr[java.lang.String] = js.undefined
   var idToken: js.UndefOr[java.lang.String] = js.undefined

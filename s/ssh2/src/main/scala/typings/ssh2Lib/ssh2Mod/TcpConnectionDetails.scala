@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TcpConnectionDetails extends js.Object {
   /** The remote IP the connection was received on (given in earlier call to `forwardIn()`). */
   var destIP: java.lang.String

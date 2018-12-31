@@ -14,16 +14,16 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BluetoothRemoteGATTCharacteristic
   extends /**
-     * 
-     * @return  
-     */
+  * 
+  * @return  
+  */
 org.scalablytyped.runtime.Instantiable0[BluetoothRemoteGATTCharacteristic] {
   /**
-       * <p><strong>Note:</strong> This is only available on some devices</p>
-       * 
-       * @return  
-       * @url http://www.espruino.com/Reference#l_BluetoothRemoteGATTCharacteristic_stopNotifications
-       */
+    * <p><strong>Note:</strong> This is only available on some devices</p>
+    * 
+    * @return  
+    * @url http://www.espruino.com/Reference#l_BluetoothRemoteGATTCharacteristic_stopNotifications
+    */
   def stopNotifications(): js.Any = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Popper extends js.Object {
   var options: PopperOptions
   def destroy(): scala.Unit

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HoverComponentSpec extends js.Object {
   var height: scala.Double
   var hovering: scala.Boolean

@@ -15,12 +15,12 @@ class Environment () extends js.Object {
   def this(loader: scala.Null, opts: adoneLib.adoneNs.templatingNs.nunjucksNs.INs.EnvironmentOptions) = this()
   var options: adoneLib.Anon_Autoescape = js.native
   def addExtension(name: java.lang.String, ext: adoneLib.adoneNs.templatingNs.nunjucksNs.INs.Extension): scala.Unit = js.native
-  def addFilter(name: java.lang.String, func: js.Function1[/* repeated */js.Any, _]): scala.Unit = js.native
-  def addFilter(name: java.lang.String, func: js.Function1[/* repeated */js.Any, _], async: scala.Boolean): scala.Unit = js.native
+  def addFilter(name: java.lang.String, func: js.Function1[/* repeated */ js.Any, _]): scala.Unit = js.native
+  def addFilter(name: java.lang.String, func: js.Function1[/* repeated */ js.Any, _], async: scala.Boolean): scala.Unit = js.native
   def addGlobal(name: java.lang.String, value: js.Any): this.type = js.native
   def express(app: js.Object): scala.Unit = js.native
   def getExtension(name: java.lang.String): adoneLib.adoneNs.templatingNs.nunjucksNs.INs.Extension = js.native
-  def getFilter(name: java.lang.String): js.Function1[/* repeated */js.Any, _] = js.native
+  def getFilter(name: java.lang.String): js.Function1[/* repeated */ js.Any, _] = js.native
   def getTemplate(name: java.lang.String): scala.Unit = js.native
   def getTemplate(name: java.lang.String, eagerCompile: scala.Boolean): scala.Unit = js.native
   def getTemplate(

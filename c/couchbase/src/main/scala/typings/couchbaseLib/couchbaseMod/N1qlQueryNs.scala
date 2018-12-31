@@ -12,27 +12,27 @@ object N1qlQueryNs extends js.Object {
   sealed trait Consistency extends js.Object
   
   /**
-       * Enumeration for specifying N1QL consistency semantics.
-       */
+    * Enumeration for specifying N1QL consistency semantics.
+    */
   @js.native
   object Consistency extends js.Object {
     /**
-             * 	This is the default (for single-statement requests).
-             */
+      * 	This is the default (for single-statement requests).
+      */
     @js.native
     sealed trait NOT_BOUND
       extends couchbaseLib.couchbaseMod.N1qlQueryNs.Consistency
     
     /**
-             * This implements strong consistency per request.
-             */
+      * This implements strong consistency per request.
+      */
     @js.native
     sealed trait REQUEST_PLUS
       extends couchbaseLib.couchbaseMod.N1qlQueryNs.Consistency
     
     /**
-             * This implements strong consistency per statement.
-             */
+      * This implements strong consistency per statement.
+      */
     @js.native
     sealed trait STATEMENT_PLUS
       extends couchbaseLib.couchbaseMod.N1qlQueryNs.Consistency

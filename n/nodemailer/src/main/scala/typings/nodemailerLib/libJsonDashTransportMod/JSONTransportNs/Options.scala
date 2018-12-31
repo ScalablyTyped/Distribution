@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options
   extends nodemailerLib.libMailerMod.MailNs.Options
      with nodemailerLib.nodemailerMod.TransportOptions {

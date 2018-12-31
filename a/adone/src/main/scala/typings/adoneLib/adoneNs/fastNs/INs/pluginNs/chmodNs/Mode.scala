@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Mode extends js.Object {
   /**
-                       * Group properties
-                       */
+    * Group properties
+    */
   var group: js.UndefOr[Access] = js.undefined
   /**
-                       * Others properties
-                       */
+    * Others properties
+    */
   var others: js.UndefOr[Access] = js.undefined
   /**
-                       * Owner properties
-                       */
+    * Owner properties
+    */
   var owner: js.UndefOr[Access] = js.undefined
 }
 

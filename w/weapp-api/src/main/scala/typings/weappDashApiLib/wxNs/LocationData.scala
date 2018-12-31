@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocationData extends js.Object {
   /** 位置的精确度 */
   var accuracy: scala.Double

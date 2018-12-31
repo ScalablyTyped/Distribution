@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GoogleOAuth2Client extends js.Object {
   def getRequestMetadata(
     optUri: java.lang.String,

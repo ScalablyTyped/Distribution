@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * An audio recorder object used for recording audio from the device microphone.
 		 */
-
 trait AudioRecorder
   extends titaniumLib.TitaniumNs.Proxy {
   /**

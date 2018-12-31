@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatabaseInfo extends js.Object {
   /** Name of the database you gave when you called new PouchDB(), and also the unique identifier for the database. */
   var db_name: java.lang.String

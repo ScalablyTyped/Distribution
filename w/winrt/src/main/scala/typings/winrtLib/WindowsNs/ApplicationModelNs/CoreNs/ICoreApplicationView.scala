@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICoreApplicationView extends js.Object {
   var coreWindow: winrtLib.WindowsNs.UINs.CoreNs.CoreWindow
   var isHosted: scala.Boolean

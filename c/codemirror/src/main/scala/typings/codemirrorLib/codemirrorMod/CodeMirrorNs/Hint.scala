@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Interface used by showHint.js Codemirror add-on
-    When completions aren't simple strings, they should be objects with the following properties: */
-
+  When completions aren't simple strings, they should be objects with the following properties: */
 trait Hint extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var displayText: js.UndefOr[java.lang.String] = js.undefined

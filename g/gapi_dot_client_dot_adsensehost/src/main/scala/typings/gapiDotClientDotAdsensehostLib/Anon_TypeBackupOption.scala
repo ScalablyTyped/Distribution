@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TypeBackupOption extends js.Object {
   /** The backup option to be used in instances where no ad is available. */
   var backupOption: js.UndefOr[Anon_Type] = js.undefined

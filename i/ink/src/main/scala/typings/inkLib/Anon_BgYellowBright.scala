@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BgYellowBright extends js.Object {
   var bgBlack: js.UndefOr[scala.Boolean] = js.undefined
   var bgBlackBright: js.UndefOr[scala.Boolean] = js.undefined

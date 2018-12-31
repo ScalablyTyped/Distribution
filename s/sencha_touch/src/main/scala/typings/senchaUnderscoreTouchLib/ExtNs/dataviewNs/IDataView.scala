@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(senchaUnderscoreTouchLib.ExtNs.mixinNs.ISelectable because Would inherit conflicting mutable fields List(statics, uses, mixins, config, extend, inheritableStatics, alias, platformConfig, alternateClassName, singleton, callSuper, self, getInitialConfig, callParent, destroy, callOverridden, initConfig))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(senchaUnderscoreTouchLib.ExtNs.mixinNs.ISelectable because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, destroy, extend, getInitialConfig, inheritableStatics, initConfig, mixins, platformConfig, self, singleton, statics, uses))*/
 trait IDataView
   extends senchaUnderscoreTouchLib.ExtNs.IContainer {
   /** [Method] Binds a new Store to this DataView  */

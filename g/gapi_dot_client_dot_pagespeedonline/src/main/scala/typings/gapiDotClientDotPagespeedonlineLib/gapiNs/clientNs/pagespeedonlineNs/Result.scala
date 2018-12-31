@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Result extends js.Object {
   /** Localized PageSpeed results. Contains a ruleResults entry for each PageSpeed rule instantiated and run by the server. */
   var formattedResults: js.UndefOr[gapiDotClientDotPagespeedonlineLib.Anon_RuleResults] = js.undefined

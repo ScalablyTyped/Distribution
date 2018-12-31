@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEvent extends js.Object {
   /** Indicates whether the event is a bubbling event. */
   var bubbles: scala.Boolean
@@ -14,7 +13,7 @@ trait IEvent extends js.Object {
   /** The signal that dispatched the event. */
   var signal: signalsDotJsLib.libOrgOsflashSignalsIPrioritySignalMod.IPrioritySignal
   /** The object that originally dispatched the event.
-       *  When dispatched from an signal, the target is the object containing the signal. */
+    *  When dispatched from an signal, the target is the object containing the signal. */
   var target: js.Object
 }
 

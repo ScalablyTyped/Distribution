@@ -9,34 +9,34 @@ import scala.scalajs.js.annotation._
 sealed trait CalculationType extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.1]
-     */
+  * [Api set: ExcelApi 1.1]
+  */
 @JSGlobal("Excel.CalculationType")
 @js.native
 object CalculationType extends js.Object {
   /**
-           *
-           * This will mark all cells as dirty and then recalculate them.
-           *
-           */
+    *
+    * This will mark all cells as dirty and then recalculate them.
+    *
+    */
   @js.native
   sealed trait full
     extends officeDashJsDashPreviewLib.ExcelNs.CalculationType
   
   /**
-           *
-           * This will rebuild the full dependency chain, mark all cells as dirty and then recalculate them.
-           *
-           */
+    *
+    * This will rebuild the full dependency chain, mark all cells as dirty and then recalculate them.
+    *
+    */
   @js.native
   sealed trait fullRebuild
     extends officeDashJsDashPreviewLib.ExcelNs.CalculationType
   
   /**
-           *
-           * Recalculates all cells that Excel has marked as dirty, that is, dependents of volatile or changed data, and cells programmatically marked as dirty.
-           *
-           */
+    *
+    * Recalculates all cells that Excel has marked as dirty, that is, dependents of volatile or changed data, and cells programmatically marked as dirty.
+    *
+    */
   @js.native
   sealed trait recalculate
     extends officeDashJsDashPreviewLib.ExcelNs.CalculationType

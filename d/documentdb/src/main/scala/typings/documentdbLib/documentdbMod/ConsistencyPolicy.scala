@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConsistencyPolicy extends js.Object {
   var defaultConsistencyLevel: ConsistencyLevel
   var maxStalenessIntervalInSeconds: scala.Double

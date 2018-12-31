@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class PerceptionTimestamp () extends js.Object {
   var predictionAmount: js.Any = js.native
-   /* unmapped type */var targetTime: js.Any = js.native
+   /* unmapped type */ var targetTime: js.Any = js.native
 }
 

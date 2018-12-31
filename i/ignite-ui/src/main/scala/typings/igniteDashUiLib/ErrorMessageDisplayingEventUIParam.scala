@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ErrorMessageDisplayingEventUIParam extends js.Object {
   /**
   	 * Used to get or set the error message that is to be shown.

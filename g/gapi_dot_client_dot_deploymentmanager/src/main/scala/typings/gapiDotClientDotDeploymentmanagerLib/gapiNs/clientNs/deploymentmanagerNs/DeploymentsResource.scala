@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeploymentsResource extends js.Object {
   /** Cancels and removes the preview currently associated with the deployment. */
   def cancelPreview(request: gapiDotClientDotDeploymentmanagerLib.Anon_DeploymentProjectPrettyPrintQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[Operation]

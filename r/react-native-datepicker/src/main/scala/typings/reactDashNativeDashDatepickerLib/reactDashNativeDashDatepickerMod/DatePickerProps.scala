@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatePickerProps extends js.Object {
   var TouchableComponent: js.UndefOr[reactLib.reactMod.Component[js.Object, js.Object, _]] = js.undefined
   var androidMode: js.UndefOr[

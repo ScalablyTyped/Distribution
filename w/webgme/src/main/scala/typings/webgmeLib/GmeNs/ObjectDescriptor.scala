@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObjectDescriptor extends js.Object {
   var childrenIds: js.Array[java.lang.String]
   var childrenNum: scala.Double

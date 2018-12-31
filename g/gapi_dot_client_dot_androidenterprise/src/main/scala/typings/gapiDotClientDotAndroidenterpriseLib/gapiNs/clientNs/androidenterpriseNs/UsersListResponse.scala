@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UsersListResponse extends js.Object {
   /** Identifies what kind of resource this is. Value: the fixed string "androidenterprise#usersListResponse". */
   var kind: js.UndefOr[java.lang.String] = js.undefined

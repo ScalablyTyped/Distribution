@@ -16,50 +16,50 @@ class Autocomplete protected () extends Widget {
   @JSName("model")
   var model_Autocomplete: ejDotWebDotAllLib.ejNs.AutocompleteNs.Model = js.native
   /** Clears the text in the Autocomplete textbox.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def clearText(): scala.Unit = js.native
   /** Disables the autocomplete widget.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def disable(): scala.Unit = js.native
   /** Enables the autocomplete widget.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def enable(): scala.Unit = js.native
   /** Returns the current active text value in the Autocomplete suggestion list.
-           * @returns {string}
-           */
+    * @returns {string}
+    */
   def getActiveText(): java.lang.String = js.native
   /** Returns objects (data object) of all the selected items in the autocomplete textbox.
-           * @returns {any}
-           */
+    * @returns {any}
+    */
   def getSelectedItems(): js.Any = js.native
   /** Returns the current selected value from the Autocomplete textbox.
-           * @returns {string}
-           */
+    * @returns {string}
+    */
   def getValue(): java.lang.String = js.native
   /** Hides the Autocomplete suggestion list.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def hide(): scala.Unit = js.native
   /** Open up the autocomplete suggestion popup with all list items.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def open(): scala.Unit = js.native
   /** Search the entered text and show it in the suggestion list if available.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def search(): scala.Unit = js.native
   /** Sets the value of the Autocomplete textbox based on the given key value.
-           * @param {string} The key value of the specific suggestion item.
-           * @returns {void}
-           */
+    * @param {string} The key value of the specific suggestion item.
+    * @returns {void}
+    */
   def selectValueByKey(Key: java.lang.String): scala.Unit = js.native
   /** Sets the value of the Autocomplete textbox based on the given input text value.
-           * @param {string} The text (label) value of the specific suggestion item.
-           * @returns {void}
-           */
+    * @param {string} The text (label) value of the specific suggestion item.
+    * @returns {void}
+    */
   def selectValueByText(Text: java.lang.String): scala.Unit = js.native
 }
 

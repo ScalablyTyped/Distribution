@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AbideDefaults extends js.Object {
   var formErrorClass: java.lang.String
   var formErrorSelector: java.lang.String

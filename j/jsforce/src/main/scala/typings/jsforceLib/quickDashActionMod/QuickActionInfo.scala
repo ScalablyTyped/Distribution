@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QuickActionInfo extends js.Object {
   /** Label of the action */
   var label: java.lang.String

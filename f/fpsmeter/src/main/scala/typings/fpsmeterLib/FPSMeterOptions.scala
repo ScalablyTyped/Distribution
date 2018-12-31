@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FPSMeterOptions extends js.Object {
   			// Meter right offset.
   var bottom: js.UndefOr[java.lang.String] = js.undefined

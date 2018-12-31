@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GestureState extends js.Object {
   var dx: scala.Double
   var dy: scala.Double

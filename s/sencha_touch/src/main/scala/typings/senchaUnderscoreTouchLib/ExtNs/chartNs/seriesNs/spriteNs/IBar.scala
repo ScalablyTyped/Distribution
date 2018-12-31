@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBar extends IStackedCartesian {
   /** [Config Option] (Number) */
   var inGroupGapWidth: js.UndefOr[scala.Double] = js.undefined

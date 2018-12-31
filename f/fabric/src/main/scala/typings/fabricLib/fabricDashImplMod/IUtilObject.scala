@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IUtilObject extends js.Object {
   /**
   	 * Creates an empty object and copies all enumerable properties of another object to it

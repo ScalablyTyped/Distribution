@@ -16,9 +16,9 @@ class default () extends PrivateKeyInfo {
   /* CompleteClass */
   override var version: scala.Double = js.native
   /**
-           * Convert JSON value into current object
-           * @param {JsonWebKey} json
-           */
+    * Convert JSON value into current object
+    * @param {JsonWebKey} json
+    */
   /* CompleteClass */
   override def fromJSON(json: stdLib.JsonWebKey): scala.Unit = js.native
   /* CompleteClass */

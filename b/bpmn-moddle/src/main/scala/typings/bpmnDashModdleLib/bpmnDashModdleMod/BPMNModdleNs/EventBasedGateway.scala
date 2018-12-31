@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventBasedGateway extends Gateway {
   /**
-           * @default Exclusive
-           */
+    * @default Exclusive
+    */
   var eventGatewayType: EventBasedGatewayType
   var instantiate: scala.Boolean
 }

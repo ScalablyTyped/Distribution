@@ -18,9 +18,9 @@ class HttpClient ()
   def request(url: java.lang.String, options: RequestOptions, callback: Callback): scala.Unit = js.native
   def request(url: nodeLib.urlMod.URL, callback: Callback): scala.Unit = js.native
   def request(url: nodeLib.urlMod.URL, options: RequestOptions, callback: Callback): scala.Unit = js.native
-  def requestThunk(url: java.lang.String): js.Function1[/* callback */ js.Function1[/* repeated */js.Any, scala.Unit], scala.Unit] = js.native
-  def requestThunk(url: java.lang.String, options: RequestOptions): js.Function1[/* callback */ js.Function1[/* repeated */js.Any, scala.Unit], scala.Unit] = js.native
-  def requestThunk(url: nodeLib.urlMod.URL): js.Function1[/* callback */ js.Function1[/* repeated */js.Any, scala.Unit], scala.Unit] = js.native
-  def requestThunk(url: nodeLib.urlMod.URL, options: RequestOptions): js.Function1[/* callback */ js.Function1[/* repeated */js.Any, scala.Unit], scala.Unit] = js.native
+  def requestThunk(url: java.lang.String): js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], scala.Unit] = js.native
+  def requestThunk(url: java.lang.String, options: RequestOptions): js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], scala.Unit] = js.native
+  def requestThunk(url: nodeLib.urlMod.URL): js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], scala.Unit] = js.native
+  def requestThunk(url: nodeLib.urlMod.URL, options: RequestOptions): js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], scala.Unit] = js.native
 }
 

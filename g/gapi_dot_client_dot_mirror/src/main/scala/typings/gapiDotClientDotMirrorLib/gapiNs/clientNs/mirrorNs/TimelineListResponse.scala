@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimelineListResponse extends js.Object {
   /** Items in the timeline. */
   var items: js.UndefOr[js.Array[TimelineItem]] = js.undefined

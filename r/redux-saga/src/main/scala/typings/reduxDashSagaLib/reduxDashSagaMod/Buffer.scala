@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Buffer[T] extends js.Object {
   def flush(): scala.Unit
   def isEmpty(): scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait hasExtensions extends js.Object {
   def addCallout(calloutExtension: Callout): AdWordsOperation[Callout]
   def addMessage(messageExtension: Message): AdWordsOperation[Message]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JCanvasTextDef extends js.Object {
   var fillStyle: java.lang.String
   var fontFamily: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Name extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -21,10 +20,10 @@ trait Anon_Name extends js.Object {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * An optional list filter describing the members to be returned. The filter may reference the type, labels, and metadata of monitored resources that
-                   * comprise the group. For example, to return only resources representing Compute Engine VM instances, use this filter:
-                   * resource.type = "gce_instance"
-                   */
+    * An optional list filter describing the members to be returned. The filter may reference the type, labels, and metadata of monitored resources that
+    * comprise the group. For example, to return only resources representing Compute Engine VM instances, use this filter:
+    * resource.type = "gce_instance"
+    */
   var filter: js.UndefOr[java.lang.String] = js.undefined
   /** Required. The end of the time interval. */
   var `interval.endTime`: js.UndefOr[java.lang.String] = js.undefined
@@ -39,9 +38,9 @@ trait Anon_Name extends js.Object {
   /** A positive number that is the maximum number of results to return. */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * If this field is not empty then it must contain the nextPageToken value returned by a previous call to this method. Using this field causes the method
-                   * to return additional results from the previous method call.
-                   */
+    * If this field is not empty then it must contain the nextPageToken value returned by a previous call to this method. Using this field causes the method
+    * to return additional results from the previous method call.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

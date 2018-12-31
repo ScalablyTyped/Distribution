@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataSnapshot extends js.Object {
   var key: java.lang.String | scala.Null
   var ref: Reference

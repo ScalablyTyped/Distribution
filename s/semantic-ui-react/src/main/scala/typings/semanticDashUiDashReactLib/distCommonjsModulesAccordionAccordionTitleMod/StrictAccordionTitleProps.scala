@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictAccordionTitleProps extends js.Object {
   /** Whether or not the title is in the open state. */
   var active: js.UndefOr[scala.Boolean] = js.undefined
@@ -20,11 +19,11 @@ trait StrictAccordionTitleProps extends js.Object {
   /** AccordionTitle index inside Accordion. */
   var index: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   /**
-     * Called on click.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called on click.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onClick: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 

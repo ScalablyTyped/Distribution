@@ -22,16 +22,16 @@ abstract class ExposureControl () extends js.Object {
   /** Gets the exposure time. */
   var value: scala.Double = js.native
   /**
-                   * Asynchronously enables or disable auto exposure.
-                   * @param value Specifies whether or not to enable or disable auto exposure.
-                   * @return The object that is used to control the asynchronous operation.
-                   */
+    * Asynchronously enables or disable auto exposure.
+    * @param value Specifies whether or not to enable or disable auto exposure.
+    * @return The object that is used to control the asynchronous operation.
+    */
   def setAutoAsync(value: scala.Boolean): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Asynchronously sets the exposure time.
-                   * @param shutterDuration The exposure time to set the Value property to. The minimum and maximum values are specified by Min and Max .
-                   * @return The object that is used to control the asynchronous operation.
-                   */
+    * Asynchronously sets the exposure time.
+    * @param shutterDuration The exposure time to set the Value property to. The minimum and maximum values are specified by Min and Max .
+    * @return The object that is used to control the asynchronous operation.
+    */
   def setValueAsync(shutterDuration: scala.Double): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

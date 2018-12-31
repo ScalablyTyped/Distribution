@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Jimp
-  extends // Constructors
-org.scalablytyped.runtime.Instantiable2[
+  extends org.scalablytyped.runtime.Instantiable2[
       (/* data */ Bitmap) | (/* data */ nodeLib.Buffer) | (/* w */ scala.Double) | (/* image */ Jimp) | (/* path */ java.lang.String) | (/* urlOptions */ jimpLib.URLOptions), 
       (/* h */ scala.Double) | (/* cb */ jimpLib.ImageCallback[js.Any]), 
       Jimp
@@ -103,12 +102,12 @@ org.scalablytyped.runtime.Instantiable1[
   // Functions
   def appendConstructorOption[T /* <: coreDashJsLib.Array[_] */](
     name: java.lang.String,
-    test: js.Function1[/* repeated */T, scala.Boolean],
+    test: js.Function1[/* repeated */ T, scala.Boolean],
     run: js.ThisFunction3[
       /* this */ this.type, 
       /* resolve */ js.Function1[/* jimp */ this.type, _], 
       /* reject */ js.Function1[/* reason */ nodeLib.Error, _], 
-      /* repeated */T, 
+      /* repeated */ T, 
       _
     ]
   ): scala.Unit = js.native
@@ -148,11 +147,9 @@ org.scalablytyped.runtime.Instantiable1[
   ): this.type = js.native
   // Effect methods
   def blur(r: scala.Double): this.type = js.native
-  // Effect methods
   def blur(r: scala.Double, cb: jimpLib.ImageCallback[_]): this.type = js.native
   // Color methods
   def brightness(`val`: scala.Double): this.type = js.native
-  // Color methods
   def brightness(`val`: scala.Double, cb: jimpLib.ImageCallback[_]): this.type = js.native
   def clone(cb: jimpLib.ImageCallback[_]): this.type = js.native
   def cloneQuiet(): this.type = js.native
@@ -336,7 +333,6 @@ org.scalablytyped.runtime.Instantiable1[
   def posterize(n: scala.Double, cb: jimpLib.ImageCallback[_]): this.type = js.native
   // Text methods
   def print(font: Font, x: scala.Double, y: scala.Double, text: jimpLib.PrintableText): this.type = js.native
-  // Text methods
   def print(
     font: Font,
     x: scala.Double,
@@ -393,7 +389,6 @@ org.scalablytyped.runtime.Instantiable1[
   ): scala.Double = js.native
   // Shape methods
   def rotate(deg: scala.Double): this.type = js.native
-  // Shape methods
   def rotate(deg: scala.Double, cb: jimpLib.ImageCallback[_]): this.type = js.native
   def rotate(deg: scala.Double, mode: java.lang.String): this.type = js.native
   def rotate(deg: scala.Double, mode: java.lang.String, cb: jimpLib.ImageCallback[_]): this.type = js.native

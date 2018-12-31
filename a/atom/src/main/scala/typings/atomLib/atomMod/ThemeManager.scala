@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThemeManager extends js.Object {
   // Managing Enabled Themes
   /** Returns an Array of strings all the active theme names. */
@@ -22,9 +21,9 @@ trait ThemeManager extends js.Object {
   def getLoadedThemes(): js.UndefOr[js.Array[Package]]
   // Event Subscription
   /**
-       *  Invoke callback when style sheet changes associated with updating the
-       *  list of active themes have completed.
-       */
+    *  Invoke callback when style sheet changes associated with updating the
+    *  list of active themes have completed.
+    */
   def onDidChangeActiveThemes(callback: js.Function0[scala.Unit]): Disposable
 }
 

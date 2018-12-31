@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InitSettings extends js.Object {
   var above: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
   var compress: js.UndefOr[scala.Boolean] = js.undefined

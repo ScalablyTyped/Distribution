@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * NxHighlightRanges...
-     */
-
+  * NxHighlightRanges...
+  */
 trait INxHighlightRanges extends js.Object {
   /**
-           * Ranges of highlighted values
-           */
+    * Ranges of highlighted values
+    */
   var qRanges: js.Array[ICharRange]
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ReactiveSkip extends js.Object {
   var fields: js.UndefOr[js.Any] = js.undefined
   var reactive: js.UndefOr[scala.Boolean] = js.undefined

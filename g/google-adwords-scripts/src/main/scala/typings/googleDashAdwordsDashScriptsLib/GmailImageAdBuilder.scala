@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GmailImageAdBuilder[GmailImageAd] extends AdBuilder[GmailImageAdBuilder[GmailImageAd]] {
   def withAdvertiser(advertiser: java.lang.String): GmailImageAdBuilder[GmailImageAd]
   def withDescription(description: java.lang.String): GmailImageAdBuilder[GmailImageAd]

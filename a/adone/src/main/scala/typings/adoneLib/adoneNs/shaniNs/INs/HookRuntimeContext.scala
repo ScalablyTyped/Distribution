@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HookRuntimeContext
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**
-                   * Specify timeout for this hook
-                   */
+    * Specify timeout for this hook
+    */
   def timeout(ms: scala.Double): scala.Unit
 }
 

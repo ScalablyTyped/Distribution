@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictAccordionContentProps extends js.Object {
   /** Whether or not the content is visible. */
   var active: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVaultServerDataPushOperations extends js.Object {
   def CloneVaultForServerDataPush(ServerDataPushSink: IServerDataPushSink): IVault
   def SendCancel(RequestID: scala.Double): scala.Unit

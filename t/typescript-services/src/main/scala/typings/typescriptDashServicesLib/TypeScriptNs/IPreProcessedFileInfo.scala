@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPreProcessedFileInfo extends js.Object {
   var diagnostics: js.Array[Diagnostic]
   var importedFiles: js.Array[IFileReference]

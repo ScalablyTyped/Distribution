@@ -10,22 +10,22 @@ import scala.scalajs.js.annotation._
 @js.native
 class Geopoint protected () extends js.Object {
   /**
-                   * Create a geographic point object for the given position.
-                   * @param position Create a geographic point object for the given position.
-                   */
+    * Create a geographic point object for the given position.
+    * @param position Create a geographic point object for the given position.
+    */
   def this(position: BasicGeoposition) = this()
   /**
-                   * Create a geographic point object for the given position and altitude reference system.
-                   * @param position Create a geographic point object for the given position.
-                   * @param altitudeReferenceSystem The altitude reference system of the new point.
-                   */
+    * Create a geographic point object for the given position and altitude reference system.
+    * @param position Create a geographic point object for the given position.
+    * @param altitudeReferenceSystem The altitude reference system of the new point.
+    */
   def this(position: BasicGeoposition, altitudeReferenceSystem: AltitudeReferenceSystem) = this()
   /**
-                   * Create a geographic point object for the given position, altitude reference system, and spatial reference Id.
-                   * @param position Create a geographic point object for the given position.
-                   * @param altitudeReferenceSystem The altitude reference system of the new point.
-                   * @param spatialReferenceId The spatial reference Id of the new point.
-                   */
+    * Create a geographic point object for the given position, altitude reference system, and spatial reference Id.
+    * @param position Create a geographic point object for the given position.
+    * @param altitudeReferenceSystem The altitude reference system of the new point.
+    * @param spatialReferenceId The spatial reference Id of the new point.
+    */
   def this(position: BasicGeoposition, altitudeReferenceSystem: AltitudeReferenceSystem, spatialReferenceId: scala.Double) = this()
   /** The altitude reference system of the geographic point. */
   var altitudeReferenceSystem: AltitudeReferenceSystem = js.native

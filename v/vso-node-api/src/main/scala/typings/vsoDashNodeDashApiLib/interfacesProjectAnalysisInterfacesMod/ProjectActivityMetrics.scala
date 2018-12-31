@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProjectActivityMetrics extends js.Object {
   var authorsCount: scala.Double
   var codeChangesCount: scala.Double

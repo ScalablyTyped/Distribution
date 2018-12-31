@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ExtrudedHeightCenterStRotation extends js.Object {
   var center: cesiumLib.cesiumMod.CesiumNs.Cartesian3
   var ellipsoid: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Ellipsoid] = js.undefined

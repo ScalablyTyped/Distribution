@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Off extends js.Object {
   /**
-           * The rate (in milliseconds) at which animations fire.
-           */
+    * The rate (in milliseconds) at which animations fire.
+    */
   var interval: scala.Double
   /**
-           * Globally disable all animations.
-           */
+    * Globally disable all animations.
+    */
   var off: scala.Boolean
   var speeds: Anon_Fast
   var step: js.Any

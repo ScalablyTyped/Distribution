@@ -14,27 +14,21 @@ class Tooltip ()
 @js.native
 object Tooltip extends js.Object {
   /**
-           * Get Instance
-           */
+    * Get Instance
+    */
   def getInstance(elem: stdLib.Element): materializeDashCssLib.MNs.Tooltip = js.native
   /**
-           * Init Tooltips
-           */
+    * Init Tooltips
+    */
   def init(els: materializeDashCssLib.MElements): js.Array[materializeDashCssLib.MNs.Tooltip] = js.native
-  /**
-           * Init Tooltips
-           */
   def init(
     els: materializeDashCssLib.MElements,
     options: stdLib.Partial[materializeDashCssLib.MNs.TooltipOptions]
   ): js.Array[materializeDashCssLib.MNs.Tooltip] = js.native
   /**
-           * Init Tooltip
-           */
+    * Init Tooltip
+    */
   def init(els: stdLib.Element): materializeDashCssLib.MNs.Tooltip = js.native
-  /**
-           * Init Tooltip
-           */
   def init(els: stdLib.Element, options: stdLib.Partial[materializeDashCssLib.MNs.TooltipOptions]): materializeDashCssLib.MNs.Tooltip = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OutputFileSystem extends js.Object {
   def join(paths: java.lang.String*): java.lang.String
   def mkdir(

@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 class InterpolatedColorLegend protected ()
   extends plottableLib.buildSrcComponentsComponentMod.Component {
   /**
-       * Creates an InterpolatedColorLegend.
-       *
-       * The InterpolatedColorLegend consists of a sequence of swatches that show the
-       * associated InterpolatedColor Scale sampled at various points.
-       * Two labels show the maximum and minimum values of the InterpolatedColor Scale.
-       *
-       * @constructor
-       * @param {Scales.InterpolatedColor} interpolatedColorScale
-       */
+    * Creates an InterpolatedColorLegend.
+    *
+    * The InterpolatedColorLegend consists of a sequence of swatches that show the
+    * associated InterpolatedColor Scale sampled at various points.
+    * Two labels show the maximum and minimum values of the InterpolatedColor Scale.
+    *
+    * @constructor
+    * @param {Scales.InterpolatedColor} interpolatedColorScale
+    */
   def this(interpolatedColorScale: plottableLib.buildSrcScalesMod.InterpolatedColor) = this()
   var _expands: js.Any = js.native
   var _formatter: js.Any = js.native
@@ -37,39 +37,39 @@ class InterpolatedColorLegend protected ()
   /* private */ def _generateTicks(numSwatches: js.Any): js.Any = js.native
   /* private */ def _isVertical(): js.Any = js.native
   /**
-       * Gets whether the InterpolatedColorLegend expands to occupy all offered space in the long direction
-       */
+    * Gets whether the InterpolatedColorLegend expands to occupy all offered space in the long direction
+    */
   def expands(): scala.Boolean = js.native
   /**
-       * Sets whether the InterpolatedColorLegend expands to occupy all offered space in the long direction
-       *
-       * @param {expands} boolean
-       * @returns {InterpolatedColorLegend} The calling InterpolatedColorLegend.
-       */
+    * Sets whether the InterpolatedColorLegend expands to occupy all offered space in the long direction
+    *
+    * @param {expands} boolean
+    * @returns {InterpolatedColorLegend} The calling InterpolatedColorLegend.
+    */
   def expands(expands: scala.Boolean): this.type = js.native
   /**
-       * Gets the Formatter for the labels. The domain ticks will be passed through the formatter
-       * before being displayed.
-       */
+    * Gets the Formatter for the labels. The domain ticks will be passed through the formatter
+    * before being displayed.
+    */
   def formatter(): plottableLib.buildSrcCoreFormattersMod.Formatter = js.native
   /**
-       * Sets the Formatter for the labels. The domain ticks will be passed through the formatter
-       * before being displayed.
-       *
-       * @param {Formatter} formatter
-       * @returns {InterpolatedColorLegend} The calling InterpolatedColorLegend.
-       */
+    * Sets the Formatter for the labels. The domain ticks will be passed through the formatter
+    * before being displayed.
+    *
+    * @param {Formatter} formatter
+    * @returns {InterpolatedColorLegend} The calling InterpolatedColorLegend.
+    */
   def formatter(formatter: plottableLib.buildSrcCoreFormattersMod.Formatter): this.type = js.native
   /**
-       * Gets the orientation.
-       */
+    * Gets the orientation.
+    */
   def orientation(): java.lang.String = js.native
   /**
-       * Sets the orientation.
-       *
-       * @param {string} orientation One of "horizontal"/"left"/"right".
-       * @returns {InterpolatedColorLegend} The calling InterpolatedColorLegend.
-       */
+    * Sets the orientation.
+    *
+    * @param {string} orientation One of "horizontal"/"left"/"right".
+    * @returns {InterpolatedColorLegend} The calling InterpolatedColorLegend.
+    */
   def orientation(orientation: java.lang.String): this.type = js.native
 }
 
@@ -77,8 +77,8 @@ class InterpolatedColorLegend protected ()
 @js.native
 object InterpolatedColorLegend extends js.Object {
   /**
-       * The css class applied to the legend labels.
-       */
+    * The css class applied to the legend labels.
+    */
   var LEGEND_LABEL_CLASS: java.lang.String = js.native
   var _DEFAULT_NUM_SWATCHES: js.Any = js.native
   /* private */ def _ensureOrientation(orientation: js.Any): js.Any = js.native

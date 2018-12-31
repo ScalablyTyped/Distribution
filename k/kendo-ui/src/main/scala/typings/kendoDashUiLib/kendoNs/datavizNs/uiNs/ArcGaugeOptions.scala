@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ArcGaugeOptions extends js.Object {
   var color: js.UndefOr[java.lang.String] = js.undefined
   var colors: js.UndefOr[js.Array[ArcGaugeColor]] = js.undefined

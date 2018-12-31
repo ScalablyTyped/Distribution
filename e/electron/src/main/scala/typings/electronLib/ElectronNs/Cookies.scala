@@ -19,22 +19,22 @@ class Cookies () extends EventEmitter {
     ]
   ): this.type = js.native
   /**
-       * Writes any unwritten cookies data to disk.
-       */
+    * Writes any unwritten cookies data to disk.
+    */
   def flushStore(callback: js.Function): scala.Unit = js.native
   /**
-       * Sends a request to get all cookies matching filter, callback will be called with
-       * callback(error, cookies) on complete.
-       */
+    * Sends a request to get all cookies matching filter, callback will be called with
+    * callback(error, cookies) on complete.
+    */
   def get(
     filter: Filter,
     callback: js.Function2[/* error */ nodeLib.Error, /* cookies */ js.Array[Cookie], scala.Unit]
   ): scala.Unit = js.native
   // Docs: http://electronjs.org/docs/api/cookies
   /**
-       * Emitted when a cookie is changed because it was added, edited, removed, or
-       * expired.
-       */
+    * Emitted when a cookie is changed because it was added, edited, removed, or
+    * expired.
+    */
   def on(
     event: electronLib.electronLibStrings.changed,
     listener: js.Function4[
@@ -56,9 +56,9 @@ class Cookies () extends EventEmitter {
     ]
   ): this.type = js.native
   /**
-       * Removes the cookies matching url and name, callback will called with callback()
-       * on complete.
-       */
+    * Removes the cookies matching url and name, callback will called with callback()
+    * on complete.
+    */
   def remove(url: java.lang.String, name: java.lang.String, callback: js.Function): scala.Unit = js.native
   def removeListener(
     event: electronLib.electronLibStrings.changed,
@@ -71,9 +71,9 @@ class Cookies () extends EventEmitter {
     ]
   ): this.type = js.native
   /**
-       * Sets a cookie with details, callback will be called with callback(error) on
-       * complete.
-       */
+    * Sets a cookie with details, callback will be called with callback(error) on
+    * complete.
+    */
   def set(details: Details, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
 }
 

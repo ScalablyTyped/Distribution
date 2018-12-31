@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KnownPriceTransactionInfo extends BaseTransactionInfo {
   var totalPrice: java.lang.String
   @JSName("totalPriceStatus")

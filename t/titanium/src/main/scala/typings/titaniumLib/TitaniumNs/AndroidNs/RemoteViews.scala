@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * The Titanium binding of [Android RemoteViews](https://developer.android.com/reference/android/widget/RemoteViews.html).
 		 */
-
 trait RemoteViews
   extends titaniumLib.TitaniumNs.Proxy {
   /**

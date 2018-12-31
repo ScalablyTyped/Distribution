@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InboxSDKInstance extends js.Object {
   var ButterBar: inboxsdkLib.inboxsdkMod.InboxSDKNs.ButterBarNs.ButterBarInstance
   var Compose: inboxsdkLib.inboxsdkMod.InboxSDKNs.ComposeNs.ComposeInstance

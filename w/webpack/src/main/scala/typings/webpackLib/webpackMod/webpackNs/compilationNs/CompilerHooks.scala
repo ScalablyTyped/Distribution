@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompilerHooks extends js.Object {
   var additionalPass: tapableLib.tapableMod.AsyncSeriesHook[_, _, _]
   var afterCompile: tapableLib.tapableMod.AsyncSeriesHook[Compilation, _, _]

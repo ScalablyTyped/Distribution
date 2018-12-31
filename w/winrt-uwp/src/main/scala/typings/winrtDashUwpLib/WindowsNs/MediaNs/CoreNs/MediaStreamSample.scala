@@ -49,19 +49,19 @@ abstract class MediaStreamSample () extends js.Object {
 @js.native
 object MediaStreamSample extends js.Object {
   /**
-                   * Creates a MediaStreamSample from an IBuffer .
-                   * @param buffer The buffer that contains the media data used to create the MediaStreamSample .
-                   * @param timestamp The presentation time of this sample.
-                   * @return The sample created from the data in buffer.
-                   */
+    * Creates a MediaStreamSample from an IBuffer .
+    * @param buffer The buffer that contains the media data used to create the MediaStreamSample .
+    * @param timestamp The presentation time of this sample.
+    * @return The sample created from the data in buffer.
+    */
   def createFromBuffer(buffer: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer, timestamp: scala.Double): winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.MediaStreamSample = js.native
   /**
-                   * Asynchronously creates a MediaStreamSample from an IInputStream .
-                   * @param stream The stream that contains the media data used to create the MediaStreamSample .
-                   * @param count The length of the data in the sample. This is the number of bytes that will be read from stream.
-                   * @param timestamp The presentation time of this MediaStreamSample .
-                   * @return When this method completes, it returns the new file as a MediaStreamSample .
-                   */
+    * Asynchronously creates a MediaStreamSample from an IInputStream .
+    * @param stream The stream that contains the media data used to create the MediaStreamSample .
+    * @param count The length of the data in the sample. This is the number of bytes that will be read from stream.
+    * @param timestamp The presentation time of this MediaStreamSample .
+    * @return When this method completes, it returns the new file as a MediaStreamSample .
+    */
   def createFromStreamAsync(
     stream: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IInputStream,
     count: scala.Double,

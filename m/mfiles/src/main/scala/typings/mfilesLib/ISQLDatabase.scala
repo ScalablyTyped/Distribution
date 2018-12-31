@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISQLDatabase extends js.Object {
   var AdminUser: IImpersonation
   var BasicUser: IImpersonation

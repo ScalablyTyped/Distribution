@@ -89,7 +89,16 @@ package object reactLib {
   type NativeUIEvent = UIEvent
   type NativeWheelEvent = WheelEvent
   type PointerEvent = Event
-  type ReactManagedAttributes[C, P] = P | (Defaultize[P, js.Any]) | (MergePropTypes[P, js.Any]) | (Defaultize[MergePropTypes[P, js.Any], js.Any])
+  type ReactManagedAttributes[C, P] = P | (Defaultize[P, js.Any]) | (MergePropTypes[
+    P, 
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify PropTypes.InferProps<T> */ js.Any
+  ]) | (Defaultize[
+    MergePropTypes[
+      P, 
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify PropTypes.InferProps<T> */ js.Any
+    ], 
+    js.Any
+  ])
   type SVGCircleElement = SVGElement
   type SVGClipPathElement = SVGElement
   type SVGDefsElement = SVGElement

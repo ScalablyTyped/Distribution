@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Defines an audio node. */
-
 trait IAudioNode
   extends winrtDashUwpLib.WindowsNs.FoundationNs.IClosable {
   /** Gets or sets a value indicating if the audio node consumes input. */
@@ -18,14 +17,14 @@ trait IAudioNode
   /** Gets or sets the outgoing gain for the audio node. */
   var outgoingGain: scala.Double
   /**
-                   * Disables all effects in the EffectDefinitions list with the specified effect definition.
-                   * @param definition The effect definition of the effects to disable.
-                   */
+    * Disables all effects in the EffectDefinitions list with the specified effect definition.
+    * @param definition The effect definition of the effects to disable.
+    */
   def disableEffectsByDefinition(definition: winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition): scala.Unit
   /**
-                   * Enables all effects in the EffectDefinitions list with the specified effect definition.
-                   * @param definition The effect definition of the effects to enable.
-                   */
+    * Enables all effects in the EffectDefinitions list with the specified effect definition.
+    * @param definition The effect definition of the effects to enable.
+    */
   def enableEffectsByDefinition(definition: winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition): scala.Unit
   /** Resets the audio node. */
   def reset(): scala.Unit

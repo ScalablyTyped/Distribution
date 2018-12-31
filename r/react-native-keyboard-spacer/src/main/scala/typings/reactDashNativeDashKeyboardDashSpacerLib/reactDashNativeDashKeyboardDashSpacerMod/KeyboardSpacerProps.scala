@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeyboardSpacerProps extends js.Object {
   var onToggle: js.UndefOr[
     js.Function2[/* keyboardIsOpen */ scala.Boolean, /* keyboardSpace */ scala.Double, scala.Unit]

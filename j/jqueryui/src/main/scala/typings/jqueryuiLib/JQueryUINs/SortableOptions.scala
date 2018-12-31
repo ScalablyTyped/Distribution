@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Sortable //////////////////////////////////////////////////
-
 trait SortableOptions extends SortableEvents {
   var appendTo: js.UndefOr[js.Any] = js.undefined
    // jQuery, Element, Selector or string

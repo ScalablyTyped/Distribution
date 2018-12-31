@@ -24,11 +24,6 @@ trait Goal extends js.Object {
   		 * @param timeout (optional) - a timeout length for the goal's result
   		 */
   def send(): scala.Unit = js.native
-  /**
-  		 * Send the goal to the action server.
-  		 *
-  		 * @param timeout (optional) - a timeout length for the goal's result
-  		 */
   def send(timeout: scala.Double): scala.Unit = js.native
 }
 

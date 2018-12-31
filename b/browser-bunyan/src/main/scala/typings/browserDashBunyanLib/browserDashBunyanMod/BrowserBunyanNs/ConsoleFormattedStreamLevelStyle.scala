@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConsoleFormattedStreamLevelStyle extends js.Object {
   var debug: java.lang.String
   var error: java.lang.String

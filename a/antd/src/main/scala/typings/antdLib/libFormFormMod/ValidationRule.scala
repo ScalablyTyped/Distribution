@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ValidationRule extends js.Object {
   /** validate the value from a list of possible values */
   var enum: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined

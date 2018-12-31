@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Page extends js.Object {
   /** _non-standard_  */
   var _SpeedIndex: js.UndefOr[scala.Double | scala.Null] = js.undefined
@@ -165,18 +164,18 @@ trait Page extends js.Object {
   /**  A comment provided by the user or the application */
   var comment: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Unique identifier of a page within the `<log>` (HAR doc).
-       * Entries use it to refer the parent page.
-       */
+    * Unique identifier of a page within the `<log>` (HAR doc).
+    * Entries use it to refer the parent page.
+    */
   var id: java.lang.String
   /** Detailed timing info about page load */
   var pageTimings: PageTiming
   /**
-       * Date and time stamp for the beginning of the page load
-       *
-       * (ISO 8601 - `YYYY-MM-DDThh:mm:ss.sTZD`,
-       * e.g. `2009-07-24T19:20:30.45+01:00`).
-       */
+    * Date and time stamp for the beginning of the page load
+    *
+    * (ISO 8601 - `YYYY-MM-DDThh:mm:ss.sTZD`,
+    * e.g. `2009-07-24T19:20:30.45+01:00`).
+    */
   var startedDateTime: java.lang.String
   /** Page title. */
   var title: java.lang.String

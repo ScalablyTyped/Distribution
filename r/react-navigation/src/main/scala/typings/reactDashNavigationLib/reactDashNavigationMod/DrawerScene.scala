@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DrawerScene extends js.Object {
   var focused: scala.Boolean
   var index: scala.Double

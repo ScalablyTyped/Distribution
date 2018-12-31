@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Provides a set of utilities for using Parse with Facebook.
-     * @namespace
-     * Provides a set of utilities for using Parse with Facebook.
-     */
+  * Provides a set of utilities for using Parse with Facebook.
+  * @namespace
+  * Provides a set of utilities for using Parse with Facebook.
+  */
 @JSGlobal("Parse.FacebookUtils")
 @js.native
 object FacebookUtilsNs extends js.Object {

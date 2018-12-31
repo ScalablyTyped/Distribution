@@ -29,12 +29,12 @@ class SearchBoxBase protected ()
     newProps: officeDashUiDashFabricDashReactLib.libComponentsSearchBoxSearchBoxDotTypesMod.ISearchBoxProps
   ): scala.Unit = js.native
   /**
-       * Sets focus to the search box input field
-       */
+    * Sets focus to the search box input field
+    */
   def focus(): scala.Unit = js.native
   /**
-       * Returns whether or not the SearchBox has focus
-       */
+    * Returns whether or not the SearchBox has focus
+    */
   def hasFocus(): scala.Boolean = js.native
 }
 

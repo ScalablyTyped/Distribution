@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ErrorStream extends js.Object {
   var ci: js.UndefOr[scala.Boolean] = js.undefined
   var errorStream: js.UndefOr[nodeLib.streamMod.Writable] = js.undefined

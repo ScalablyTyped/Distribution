@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListSessionsResponse extends js.Object {
   /**
-               * If includeDeleted is set to true in the request, this list will contain sessions deleted with original end times that are within the startTime and
-               * endTime frame.
-               */
+    * If includeDeleted is set to true in the request, this list will contain sessions deleted with original end times that are within the startTime and
+    * endTime frame.
+    */
   var deletedSession: js.UndefOr[js.Array[Session]] = js.undefined
   /** Flag to indicate server has more data to transfer */
   var hasMoreData: js.UndefOr[scala.Boolean] = js.undefined

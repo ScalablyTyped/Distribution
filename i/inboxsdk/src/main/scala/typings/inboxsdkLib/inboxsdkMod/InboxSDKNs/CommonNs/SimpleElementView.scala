@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SimpleElementView extends js.Object {
   var destroyed: scala.Boolean
   var el: stdLib.HTMLElement

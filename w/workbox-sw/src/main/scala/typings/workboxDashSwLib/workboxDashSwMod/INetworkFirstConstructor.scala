@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Instantiates a new NetworkFirst strategy
- */
+  * Instantiates a new NetworkFirst strategy
+  */
 @js.native
 trait INetworkFirstConstructor
   extends org.scalablytyped.runtime.Instantiable0[NetworkFirst]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMonth
   extends extjsLib.ExtNs.IComponent {
   /** [Method] Modify the year display by passing an offset

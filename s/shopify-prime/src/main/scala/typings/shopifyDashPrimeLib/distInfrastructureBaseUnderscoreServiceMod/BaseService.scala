@@ -73,8 +73,8 @@ class BaseService protected () extends js.Object {
     payload: js.Object
   ): js.Promise[T] = js.native
   /**
-       * Joins URI paths into one single string, replacing bad slashes and ensuring the path doesn't end in /.json.
-       */
+    * Joins URI paths into one single string, replacing bad slashes and ensuring the path doesn't end in /.json.
+    */
   /* protected */ def joinUriPaths(paths: java.lang.String*): java.lang.String = js.native
 }
 

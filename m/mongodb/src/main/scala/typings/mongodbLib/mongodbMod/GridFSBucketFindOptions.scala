@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridFSBucketFindOptions extends js.Object {
   var batchSize: js.UndefOr[scala.Double] = js.undefined
   var limit: js.UndefOr[scala.Double] = js.undefined

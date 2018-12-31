@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ExtrudedHeightShowOutlineHeight extends js.Object {
   var cornerType: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
   var extrudedHeight: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined

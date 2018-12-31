@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KiiMqttEndpoint extends js.Object {
   var `X-MQTT-TTL`: scala.Double
   var host: java.lang.String

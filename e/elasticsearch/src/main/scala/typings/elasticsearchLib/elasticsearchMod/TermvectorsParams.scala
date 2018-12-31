@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TermvectorsParams extends GenericParams {
   var fieldStatistics: js.UndefOr[scala.Boolean] = js.undefined
   var fields: js.UndefOr[NameList] = js.undefined

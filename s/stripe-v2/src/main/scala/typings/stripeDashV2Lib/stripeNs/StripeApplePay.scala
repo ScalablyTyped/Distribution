@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StripeApplePay extends js.Object {
   def buildSession(
     data: StripeApplePayPaymentRequest,

@@ -22,11 +22,11 @@ trait Database extends js.Object {
   def defaultSafeIntegers(): this.type = js.native
   def defaultSafeIntegers(toggleState: scala.Boolean): this.type = js.native
   def exec(source: java.lang.String): this.type = js.native
-  def function(name: java.lang.String, cb: js.Function1[/* repeated */js.Any, _]): this.type = js.native
+  def function(name: java.lang.String, cb: js.Function1[/* repeated */ js.Any, _]): this.type = js.native
   def function(
     name: java.lang.String,
     options: betterDashSqlite3Lib.betterDashSqlite3Mod.DatabaseNs.RegistrationOptions,
-    cb: js.Function1[/* repeated */js.Any, _]
+    cb: js.Function1[/* repeated */ js.Any, _]
   ): this.type = js.native
   def loadExtension(path: java.lang.String): this.type = js.native
   def pragma(source: java.lang.String): js.Any = js.native
@@ -35,6 +35,6 @@ trait Database extends js.Object {
     options: betterDashSqlite3Lib.betterDashSqlite3Mod.DatabaseNs.PragmaOptions
   ): js.Any = js.native
   def prepare(source: java.lang.String): Statement = js.native
-  def transaction(fn: js.Function1[/* repeated */js.Any, _]): Transaction = js.native
+  def transaction(fn: js.Function1[/* repeated */ js.Any, _]): Transaction = js.native
 }
 

@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * BookmarkListDef
-     */
-
+  * BookmarkListDef
+  */
 trait IBookmarkListDef extends js.Object {
   /**
-           * Data typ JSON
-           */
+    * Data typ JSON
+    */
   var qData: js.Any
   /**
-           * Type of the list
-           */
+    * Type of the list
+    */
   var qType: qlikDashEngineapiLib.qlikDashEngineapiLibStrings.bookmark
 }
 

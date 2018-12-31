@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ElementsOptions extends js.Object {
   var classes: js.UndefOr[stripeDashV3Lib.Anon_Empty] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined

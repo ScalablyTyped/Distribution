@@ -14,12 +14,12 @@ object pDashDebounceModMembers extends js.Object {
     wait: scala.Double,
     options: pDashDebounceLib.pDashDebounceMod.pDebounceNs.Options
   ): js.Function0[js.Promise[R]] with pDashDebounceLib.Anon_Abort = js.native
-  def apply[R](fn: js.Function1[/* repeated */js.Any, js.Thenable[R] | R], wait: scala.Double): (js.Function1[/* repeated */js.Any, js.Promise[R]]) with pDashDebounceLib.Anon_Abort = js.native
+  def apply[R](fn: js.Function1[/* repeated */ js.Any, js.Thenable[R] | R], wait: scala.Double): (js.Function1[/* repeated */ js.Any, js.Promise[R]]) with pDashDebounceLib.Anon_Abort = js.native
   def apply[R](
-    fn: js.Function1[/* repeated */js.Any, js.Thenable[R] | R],
+    fn: js.Function1[/* repeated */ js.Any, js.Thenable[R] | R],
     wait: scala.Double,
     options: pDashDebounceLib.pDashDebounceMod.pDebounceNs.Options
-  ): (js.Function1[/* repeated */js.Any, js.Promise[R]]) with pDashDebounceLib.Anon_Abort = js.native
+  ): (js.Function1[/* repeated */ js.Any, js.Promise[R]]) with pDashDebounceLib.Anon_Abort = js.native
   def apply[R, T1, T2](fn: js.Function2[/* arg1 */ T1, /* arg2 */ T2, js.Thenable[R] | R], wait: scala.Double): (js.Function2[/* arg1 */ T1, /* arg2 */ T2, js.Promise[R]]) with pDashDebounceLib.Anon_Abort = js.native
   def apply[R, T1, T2](
     fn: js.Function2[/* arg1 */ T1, /* arg2 */ T2, js.Thenable[R] | R],

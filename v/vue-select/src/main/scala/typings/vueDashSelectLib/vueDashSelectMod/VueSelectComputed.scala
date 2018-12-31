@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VueSelectComputed extends js.Object {
   def clearSearchOnBlur(): scala.Boolean
   def dropdownClasses(): DropdownClasses

@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExtendOptions extends NewOptions {
   /**
-           * @deprecated
-           */
+    * @deprecated
+    */
   var beforeInit: js.UndefOr[js.Function1[/* options */ ExtendOptions, scala.Unit]] = js.undefined
   /**
-           * @deprecated
-           */
+    * @deprecated
+    */
   var init: js.UndefOr[js.Function1[/* options */ ExtendOptions, scala.Unit]] = js.undefined
   // Default false, inherit from Ractive.defaults
   var isolated: js.UndefOr[scala.Boolean] = js.undefined

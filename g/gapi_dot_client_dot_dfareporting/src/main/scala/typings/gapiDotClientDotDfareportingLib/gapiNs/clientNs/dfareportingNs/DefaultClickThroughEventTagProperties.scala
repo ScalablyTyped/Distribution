@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DefaultClickThroughEventTagProperties extends js.Object {
   /** ID of the click-through event tag to apply to all ads in this entity's scope. */
   var defaultClickThroughEventTagId: js.UndefOr[java.lang.String] = js.undefined

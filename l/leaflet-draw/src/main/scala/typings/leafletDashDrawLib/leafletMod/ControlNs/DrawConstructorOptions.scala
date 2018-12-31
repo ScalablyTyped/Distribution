@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DrawConstructorOptions extends js.Object {
   /**
   			 * The options used to configure the draw toolbar.

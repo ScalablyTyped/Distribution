@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IInvocator extends js.Object {
   //Allow/disallow auto-save functionality.
   var autosave: js.UndefOr[scala.Boolean] = js.undefined

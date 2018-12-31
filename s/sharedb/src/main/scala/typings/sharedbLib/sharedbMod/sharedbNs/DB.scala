@@ -18,7 +18,7 @@ trait DB extends js.Object {
     op: Op,
     snapshot: js.Any,
     options: js.Any,
-    callback: js.Function1[/* repeated */js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, _]
   ): scala.Unit = js.native
   def getCommittedOpVersion(
     collection: java.lang.String,
@@ -26,7 +26,7 @@ trait DB extends js.Object {
     snapshot: js.Any,
     op: js.Any,
     options: js.Any,
-    callback: js.Function1[/* repeated */js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, _]
   ): scala.Unit = js.native
   def getOps(
     collection: java.lang.String,
@@ -34,14 +34,14 @@ trait DB extends js.Object {
     from: scala.Double,
     to: scala.Double,
     options: js.Any,
-    callback: js.Function1[/* repeated */js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, _]
   ): scala.Unit = js.native
   def getOpsBulk(
     collection: java.lang.String,
     fromMap: js.Any,
     toMap: js.Any,
     options: js.Any,
-    callback: js.Function1[/* repeated */js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, _]
   ): scala.Unit = js.native
   def getOpsToSnapshot(
     collection: java.lang.String,
@@ -49,41 +49,41 @@ trait DB extends js.Object {
     from: scala.Double,
     snapshot: scala.Double,
     options: js.Any,
-    callback: js.Function1[/* repeated */js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, _]
   ): scala.Unit = js.native
   def getSnapshot(
     collection: java.lang.String,
     id: java.lang.String,
     fields: js.Any,
     options: js.Any,
-    callback: js.Function1[/* repeated */js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, _]
   ): scala.Unit = js.native
   def getSnapshotBulk(
     collection: java.lang.String,
     ids: java.lang.String,
     fields: js.Any,
     options: js.Any,
-    callback: js.Function1[/* repeated */js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, _]
   ): scala.Unit = js.native
   def query(
     collection: java.lang.String,
     query: Query,
     fields: js.Any,
     options: js.Any,
-    callback: js.Function1[/* repeated */js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, _]
   ): scala.Unit = js.native
   def queryPoll(
     collection: java.lang.String,
     query: Query,
     options: js.Any,
-    callback: js.Function1[/* repeated */js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, _]
   ): scala.Unit = js.native
   def queryPollDoc(
     collection: java.lang.String,
     id: java.lang.String,
     query: Query,
     options: js.Any,
-    callback: js.Function1[/* repeated */js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, _]
   ): scala.Unit = js.native
   def skipPoll(): scala.Boolean = js.native
 }

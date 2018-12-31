@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkingHoursMap extends js.Object {
   var `0`: js.Array[java.lang.String] | scala.Null
   var `1`: js.Array[java.lang.String] | scala.Null

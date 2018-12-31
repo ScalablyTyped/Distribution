@@ -13,8 +13,8 @@ trait ToBase extends Assertion {
   var include: Assertion = js.native
   var only: Only = js.native
   /**
-           * Checks if the obj exactly equals another.
-           */
+    * Checks if the obj exactly equals another.
+    */
   def be(obj: js.Any): Assertion = js.native
 }
 

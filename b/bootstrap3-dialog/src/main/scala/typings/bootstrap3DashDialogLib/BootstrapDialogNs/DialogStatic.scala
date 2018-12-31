@@ -11,7 +11,7 @@ trait DialogStatic extends js.Object {
   var BUTTONS_ORDER_OK_CANCEL: java.lang.String = js.native
   var BUTTON_SIZES: js.Any = js.native
   var DEFAULT_TEXTS: js.Any = js.native
-                   /** For text localization. */var ICON_SPINNER: java.lang.String = js.native
+                   /** For text localization. */ var ICON_SPINNER: java.lang.String = js.native
   var NAMESPACE: java.lang.String = js.native
   var SIZE_LARGE: java.lang.String = js.native
   var SIZE_NORMAL: java.lang.String = js.native

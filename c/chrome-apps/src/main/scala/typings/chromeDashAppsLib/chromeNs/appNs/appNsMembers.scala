@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object appNsMembers extends js.Object {
   /**
-           * @enum
-           * @internal
-           * @private
-           */
+    * @enum
+    * @internal
+    * @private
+    */
   val _State: chromeDashAppsLib.Anon_NORMAL = js.native
   val window: ChromeAppWindow = js.native
 }

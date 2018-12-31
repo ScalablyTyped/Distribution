@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ReflectionGroupSerializer ()
   extends typedocLib.distLibSerializationComponentsMod.SerializerComponent[typedocLib.distLibModelsReflectionGroupMod.ReflectionGroup] {
-  var serializeGroup: js.Any = js.native
+  var serializeGroup: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ReflectionGroupSerializer.serializeGroup */ js.Any = js.native
   @JSName("serializeGroupSymbol")
   var serializeGroupSymbol_ReflectionGroupSerializer: org.scalablytyped.runtime.Instantiable2[
     /* title */ java.lang.String, 

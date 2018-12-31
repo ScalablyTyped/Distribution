@@ -10,8 +10,8 @@ trait HTMLLIElement extends HTMLElement {
   /** @deprecated */
   var `type`: java.lang.String = js.native
   /**
-       * Sets or retrieves the value of a list item.
-       */
+    * Sets or retrieves the value of a list item.
+    */
   var value: scala.Double = js.native
 }
 

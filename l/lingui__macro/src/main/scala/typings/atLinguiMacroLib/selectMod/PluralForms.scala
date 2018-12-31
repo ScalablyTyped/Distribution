@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PluralForms
   extends /* exact */ org.scalablytyped.runtime.NumberDictionary[java.lang.String] {
   var few: js.UndefOr[java.lang.String] = js.undefined

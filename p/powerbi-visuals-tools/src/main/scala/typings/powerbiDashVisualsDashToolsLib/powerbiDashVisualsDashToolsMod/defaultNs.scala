@@ -134,8 +134,8 @@ object defaultNs extends js.Object {
   }
   
   /**
-       * Defines various events Visuals can notify the host on.
-       */
+    * Defines various events Visuals can notify the host on.
+    */
   @js.native
   object VisualEventType extends js.Object {
     /* 3 */ val Error: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.VisualEventType.Error with scala.Double = js.native
@@ -149,11 +149,11 @@ object defaultNs extends js.Object {
   }
   
   /**
-       * Defines actions to be taken by the visual in response to a selection.
-       *
-       * An undefined/null VisualInteractivityAction should be treated as Selection,
-       * as that is the default action.
-       */
+    * Defines actions to be taken by the visual in response to a selection.
+    *
+    * An undefined/null VisualInteractivityAction should be treated as Selection,
+    * as that is the default action.
+    */
   @js.native
   object VisualInteractivityAction extends js.Object {
     /* 1 */ val None: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.VisualInteractivityAction.None with scala.Double = js.native
@@ -185,10 +185,9 @@ object defaultNs extends js.Object {
       options: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.extensibilityNs.IVisualPluginOptions
     ): stdLib.ClassDecorator = js.native
     /**
-     * Change Log Version 1.11.0
-     * Added `selectionManager.registerOnSelectCallback()` method for Report Bookmarks support
-     */
-    
+      * Change Log Version 1.11.0
+      * Added `selectionManager.registerOnSelectCallback()` method for Report Bookmarks support
+      */
     @JSName("visual")
     @js.native
     object visualNs extends js.Object

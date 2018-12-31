@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait cssClasses
   extends atMaterialBaseLib.foundationMod.MDCStrings {
   var ACTIVE: atMaterialSliderLib.atMaterialSliderLibStrings.`mdc-slider--active`

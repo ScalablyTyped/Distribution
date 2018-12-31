@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadChangeParam extends js.Object {
   var event: js.UndefOr[antdLib.Anon_Percent] = js.undefined
   var file: UploadFile

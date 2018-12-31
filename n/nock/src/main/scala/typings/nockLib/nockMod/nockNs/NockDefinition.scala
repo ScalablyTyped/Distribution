@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NockDefinition extends js.Object {
   var body: js.UndefOr[java.lang.String | js.Any] = js.undefined
   var headers: js.UndefOr[HttpHeaders] = js.undefined

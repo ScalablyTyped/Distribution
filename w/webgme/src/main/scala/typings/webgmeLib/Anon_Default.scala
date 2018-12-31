@@ -5,18 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Default extends js.Object {
   /**
-                   * Array of base paths for the layouts.
-                   *  basePaths = ['../src/client/js/Layouts']
-                   * 
-                   * @type {string[]}
-                   */
+    * Array of base paths for the layouts.
+    *  basePaths = ['../src/client/js/Layouts']
+    * 
+    * @type {string[]}
+    */
   var basePaths: js.Array[java.lang.String]
   /**
-                   * default = 'DefaultLayout'
-                   */
+    * default = 'DefaultLayout'
+    */
   var default: java.lang.String
 }
 

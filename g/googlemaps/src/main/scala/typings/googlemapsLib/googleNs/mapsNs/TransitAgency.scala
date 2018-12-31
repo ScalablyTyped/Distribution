@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransitAgency extends js.Object {
   var name: java.lang.String
   var phone: java.lang.String

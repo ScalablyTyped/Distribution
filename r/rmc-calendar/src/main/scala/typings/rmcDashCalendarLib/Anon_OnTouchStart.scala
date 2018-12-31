@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnTouchStart extends js.Object {
   var onFinish: js.Function0[scala.Unit]
   var onTouchCancel: js.Function0[scala.Unit]

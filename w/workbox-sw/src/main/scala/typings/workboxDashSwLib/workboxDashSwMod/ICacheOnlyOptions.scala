@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * ===== CacheOnly strategy =====
- */
-
-
+  * ===== CacheOnly strategy =====
+  */
 trait ICacheOnlyOptions extends js.Object {
   /**
   	 * Cache name to store and retrieve requests. Defaults to cache names provided by workbox-core.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_StaleOldObjectId extends js.Object {
   var createBranchPermissionRequired: scala.Double
   var createTagPermissionRequired: scala.Double

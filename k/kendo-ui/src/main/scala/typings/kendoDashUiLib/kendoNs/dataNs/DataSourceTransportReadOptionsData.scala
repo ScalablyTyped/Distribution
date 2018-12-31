@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataSourceTransportReadOptionsData extends js.Object {
   var filter: js.UndefOr[DataSourceFilters] = js.undefined
   var group: js.UndefOr[js.Array[DataSourceGroupItem]] = js.undefined

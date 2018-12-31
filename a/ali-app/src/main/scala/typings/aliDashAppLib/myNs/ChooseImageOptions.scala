@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChooseImageOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 最大可选照片数，默认1张 */

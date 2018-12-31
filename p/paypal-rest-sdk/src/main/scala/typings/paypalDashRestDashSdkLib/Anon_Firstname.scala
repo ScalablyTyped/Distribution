@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Firstname extends js.Object {
   var address: paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Address
   var business_name: js.UndefOr[java.lang.String] = js.undefined

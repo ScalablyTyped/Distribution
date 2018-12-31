@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Sheet
   extends /**
-     * Indexing with a cell address string maps to a cell object
-     * Special keys start with '!'
-     */
+  * Indexing with a cell address string maps to a cell object
+  * Special keys start with '!'
+  */
 /* cell */ org.scalablytyped.runtime.StringDictionary[CellObject | SheetKeys | js.Any] {
   /** Page Margins */
   var `!margins`: js.UndefOr[MarginInfo] = js.undefined

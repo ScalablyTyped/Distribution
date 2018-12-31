@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains status information about the download operation. */
-
 trait BackgroundDownloadProgress extends js.Object {
   /** The total number of bytes received. This value does not include bytes received as response headers. */
   var bytesReceived: scala.Double

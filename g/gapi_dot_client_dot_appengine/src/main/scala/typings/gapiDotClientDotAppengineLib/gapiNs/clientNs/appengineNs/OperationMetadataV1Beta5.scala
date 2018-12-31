@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OperationMetadataV1Beta5 extends js.Object {
   /** Timestamp that this operation completed.@OutputOnly */
   var endTime: js.UndefOr[java.lang.String] = js.undefined

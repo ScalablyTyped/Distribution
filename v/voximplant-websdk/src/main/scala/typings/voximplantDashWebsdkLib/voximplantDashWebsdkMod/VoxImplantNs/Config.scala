@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	*	VoxImplant SDK Configuration
 	*/
-
 trait Config extends js.Object {
   /**
   		*	XSS protection for inbound instant messages that can contain HTML content

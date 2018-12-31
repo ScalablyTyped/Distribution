@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageInfo extends js.Object {
   							// 图片高度，单位：像素(px) 。
   var colorModel: java.lang.String

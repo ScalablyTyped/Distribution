@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiskLayoutData extends js.Object {
   var bytesPerSector: scala.Double
   var firmwareRevision: java.lang.String

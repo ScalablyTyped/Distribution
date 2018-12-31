@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Concord extends js.Object {
   var `[server] main`: java.lang.String
   var extensions: js.Array[java.lang.String]

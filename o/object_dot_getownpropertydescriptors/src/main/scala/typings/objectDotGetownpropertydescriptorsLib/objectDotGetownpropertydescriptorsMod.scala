@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object objectDotGetownpropertydescriptorsMod extends js.Object {
   def apply[T /* <: js.Object */](o: T): objectDotGetownpropertydescriptorsLib.objectDotGetownpropertydescriptorsLibStrings.namespaced with T with stdLib.PropertyDescriptorMap = js.native
-  def getPolyfill(): objectDotGetownpropertydescriptorsLib.Anon_Shim = js.native
-  def implementation(): objectDotGetownpropertydescriptorsLib.Anon_Shim = js.native
-  def shim(): objectDotGetownpropertydescriptorsLib.Anon_Shim = js.native
+  def getPolyfill(): objectDotGetownpropertydescriptorsLib.Anon_O = js.native
+  def implementation(): objectDotGetownpropertydescriptorsLib.Anon_O = js.native
+  def shim(): objectDotGetownpropertydescriptorsLib.Anon_O = js.native
 }
 

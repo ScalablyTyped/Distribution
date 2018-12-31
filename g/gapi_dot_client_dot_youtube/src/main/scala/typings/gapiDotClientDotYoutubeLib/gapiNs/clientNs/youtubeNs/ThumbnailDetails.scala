@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThumbnailDetails extends js.Object {
   /** The default image for this resource. */
   var default: js.UndefOr[Thumbnail] = js.undefined

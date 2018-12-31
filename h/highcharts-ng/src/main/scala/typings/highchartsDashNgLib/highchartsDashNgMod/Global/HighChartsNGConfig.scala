@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HighChartsNGConfig extends js.Object {
   //function (optional) - setup some logic for the chart
   var func: js.UndefOr[

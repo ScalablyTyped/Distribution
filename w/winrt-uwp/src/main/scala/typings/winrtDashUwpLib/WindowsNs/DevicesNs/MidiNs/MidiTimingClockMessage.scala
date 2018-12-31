@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a MIDI message that specifies a timing clock. */
 @JSGlobal("Windows.Devices.Midi.MidiTimingClockMessage")
 @js.native
+/** Creates a new MidiTimingClockMessage object. */
 class MidiTimingClockMessage () extends js.Object {
   /** Gets the array of bytes associated with the MIDI message, including status byte. */
   var rawData: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer = js.native

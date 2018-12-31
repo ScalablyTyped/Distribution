@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RangeSliderOptions extends js.Object {
   var change: js.UndefOr[js.Function1[/* e */ RangeSliderChangeEvent, scala.Unit]] = js.undefined
   var largeStep: js.UndefOr[scala.Double] = js.undefined

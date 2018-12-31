@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SnapshotVerifyRepositoryParams extends GenericParams {
   var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
   var repository: java.lang.String

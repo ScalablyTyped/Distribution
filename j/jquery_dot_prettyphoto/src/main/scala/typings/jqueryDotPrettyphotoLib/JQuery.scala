@@ -10,13 +10,13 @@ trait JQuery extends js.Object {
   @JSName("prettyPhoto")
   var prettyPhoto_Original: jqueryDotPrettyphotoLib.scaronUnderscorePrettyPhotoNs.moduleJQuery = js.native
   /**
-          * Initialises prettyPhoto
-          */
+    * Initialises prettyPhoto
+    */
   def prettyPhoto(): JQuery = js.native
   /**
-          * Initialises prettyPhoto specificying overrides for the defaults
-          * @param pp_settings custom prettyPhoto settings
-          */
+    * Initialises prettyPhoto specificying overrides for the defaults
+    * @param pp_settings custom prettyPhoto settings
+    */
   def prettyPhoto(pp_settings: jqueryDotPrettyphotoLib.scaronUnderscorePrettyPhotoNs.PrettyPhotoSettings): JQuery = js.native
 }
 

@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IfSourceMetagenerationMatchIfMetagenerationMatch extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Name of the bucket in which to store the new object. Overrides the provided object metadata's bucket value, if any.For information about how to URL
-                   * encode object names to be path safe, see Encoding URI Path Parts.
-                   */
+    * Name of the bucket in which to store the new object. Overrides the provided object metadata's bucket value, if any.For information about how to URL
+    * encode object names to be path safe, see Encoding URI Path Parts.
+    */
   var destinationBucket: java.lang.String
   /** Name of the new object. Required when the object metadata is not otherwise provided. Overrides the object metadata's name value, if any. */
   var destinationObject: java.lang.String
@@ -21,14 +20,14 @@ trait Anon_IfSourceMetagenerationMatchIfMetagenerationMatch extends js.Object {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Makes the operation conditional on whether the destination object's current generation matches the given value. Setting to 0 makes the operation
-                   * succeed only if there are no live versions of the object.
-                   */
+    * Makes the operation conditional on whether the destination object's current generation matches the given value. Setting to 0 makes the operation
+    * succeed only if there are no live versions of the object.
+    */
   var ifGenerationMatch: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Makes the operation conditional on whether the destination object's current generation does not match the given value. If no live object exists, the
-                   * precondition fails. Setting to 0 makes the operation succeed only if there is a live version of the object.
-                   */
+    * Makes the operation conditional on whether the destination object's current generation does not match the given value. If no live object exists, the
+    * precondition fails. Setting to 0 makes the operation succeed only if there is a live version of the object.
+    */
   var ifGenerationNotMatch: js.UndefOr[java.lang.String] = js.undefined
   /** Makes the operation conditional on whether the destination object's current metageneration matches the given value. */
   var ifMetagenerationMatch: js.UndefOr[java.lang.String] = js.undefined
@@ -51,9 +50,9 @@ trait Anon_IfSourceMetagenerationMatchIfMetagenerationMatch extends js.Object {
   /** Set of properties to return. Defaults to noAcl, unless the object resource specifies the acl property, when it defaults to full. */
   var projection: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** Name of the bucket in which to find the source object. */
   var sourceBucket: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodePopulatedEventUIParam extends js.Object {
   /**
   	 * Gets a reference to the bindings object for the level at which the populated node is located.

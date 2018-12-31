@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JQueryNotifyInstance extends js.Object {
   var element: JQuery
   var isOpen: scala.Boolean

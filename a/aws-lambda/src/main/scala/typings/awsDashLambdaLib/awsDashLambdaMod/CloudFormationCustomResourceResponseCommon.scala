@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CloudFormationCustomResourceResponseCommon extends js.Object {
   var Data: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var LogicalResourceId: java.lang.String

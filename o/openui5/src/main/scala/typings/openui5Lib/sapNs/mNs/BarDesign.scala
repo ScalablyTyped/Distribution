@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait BarDesign extends js.Object
 
 /**
-     * Types of the Bar design
-    */
+  * Types of the Bar design
+  */
 @JSGlobal("sap.m.BarDesign")
 @js.native
 object BarDesign extends js.Object {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PluginDefinition extends js.Object {
   var attributes: PluginDefinitionAttributes
   var options: js.Any

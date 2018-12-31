@@ -5,27 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CardTitleTheme extends js.Object {
   /**
-     * Class used for the root element.
-     */
+    * Class used for the root element.
+    */
   var cardTitle: js.UndefOr[java.lang.String] = js.undefined
   /**
-     * Added to the root element when the card has no avatar.
-     */
+    * Added to the root element when the card has no avatar.
+    */
   var large: js.UndefOr[java.lang.String] = js.undefined
   /**
-     * Added to the root element when the card has avatar.
-     */
+    * Added to the root element when the card has avatar.
+    */
   var small: js.UndefOr[java.lang.String] = js.undefined
   /**
-     * Added to the subtitle element.
-     */
+    * Added to the subtitle element.
+    */
   var subtitle: js.UndefOr[java.lang.String] = js.undefined
   /**
-     * Added to the title element.
-     */
+    * Added to the title element.
+    */
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -10,15 +10,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class CredentialCommand protected () extends js.Object {
   /**
-                   * Initializes a new instance of the CredentialCommand class with a PasswordCredential object.
-                   * @param passwordCredential The password credential.
-                   */
+    * Initializes a new instance of the CredentialCommand class with a PasswordCredential object.
+    * @param passwordCredential The password credential.
+    */
   def this(passwordCredential: winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.PasswordCredential) = this()
   /**
-                   * Initializes a new instance of the CredentialCommand class with a PasswordCredential object and a CredentialCommandCredentialDeletedHandler delegate.
-                   * @param passwordCredential The password credential.
-                   * @param deleted The delegate that handles credential deletion.
-                   */
+    * Initializes a new instance of the CredentialCommand class with a PasswordCredential object and a CredentialCommandCredentialDeletedHandler delegate.
+    * @param passwordCredential The password credential.
+    * @param deleted The delegate that handles credential deletion.
+    */
   def this(passwordCredential: winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.PasswordCredential, deleted: CredentialCommandCredentialDeletedHandler) = this()
   /** Gets the delegate that's invoked by the account settings pane when the user deletes a credential. */
   @JSName("credentialDeleted")

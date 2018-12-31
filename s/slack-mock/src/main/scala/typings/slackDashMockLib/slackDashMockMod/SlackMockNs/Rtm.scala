@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // RTM
-
 trait Rtm[T] extends js.Object {
   var calls: js.Array[RtmCall[T]]
   var clients: js.Array[wsLib.wsMod.namespaced]

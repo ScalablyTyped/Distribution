@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiagramShapeFillGradient extends js.Object {
   var center: js.UndefOr[js.Any] = js.undefined
   var end: js.UndefOr[js.Any] = js.undefined

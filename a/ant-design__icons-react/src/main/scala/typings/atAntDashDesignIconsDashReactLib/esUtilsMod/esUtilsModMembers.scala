@@ -20,7 +20,7 @@ object esUtilsModMembers extends js.Object {
     rootProps: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): js.Any = js.native
   def getSecondaryColor(primaryColor: java.lang.String): java.lang.String = js.native
-  def isIconDefinition(target: js.Any): /* is IconDefinition */scala.Boolean = js.native
+  def isIconDefinition(target: js.Any): /* is @ant-design/icons.@ant-design/icons/lib/types.IconDefinition */ scala.Boolean = js.native
   def log(message: java.lang.String): scala.Unit = js.native
   def normalizeAttrs(): Attrs = js.native
   def normalizeAttrs(attrs: Attrs): Attrs = js.native

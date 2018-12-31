@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LogRecord extends js.Object {
   var _logLevel: java.lang.String
   var _tags: js.Array[java.lang.String]

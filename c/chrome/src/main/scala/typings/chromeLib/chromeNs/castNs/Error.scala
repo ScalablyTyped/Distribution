@@ -9,28 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class Error protected () extends js.Object {
   /**
-           * @param {!chrome.cast.ErrorCode} code
-           * @param {string=} opt_description
-           * @param {Object=} opt_details
-           * @constructor
-           * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.Error
-           */
+    * @param {!chrome.cast.ErrorCode} code
+    * @param {string=} opt_description
+    * @param {Object=} opt_details
+    * @constructor
+    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.Error
+    */
   def this(code: ErrorCode) = this()
-  /**
-           * @param {!chrome.cast.ErrorCode} code
-           * @param {string=} opt_description
-           * @param {Object=} opt_details
-           * @constructor
-           * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.Error
-           */
   def this(code: ErrorCode, description: java.lang.String) = this()
-  /**
-           * @param {!chrome.cast.ErrorCode} code
-           * @param {string=} opt_description
-           * @param {Object=} opt_details
-           * @constructor
-           * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.Error
-           */
   def this(code: ErrorCode, description: java.lang.String, details: js.Object) = this()
   var code: ErrorCode = js.native
   var description: js.UndefOr[java.lang.String] = js.native

@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("plottable/build/src/scales", "InterpolatedColor")
 @js.native
+/**
+  * An InterpolatedColor Scale maps numbers to color hex values, expressed as strings.
+  *
+  * @param {string} [scaleType="linear"] One of "linear"/"log"/"sqrt"/"pow".
+  */
 class InterpolatedColor ()
   extends plottableLib.buildSrcScalesInterpolatedColorScaleMod.InterpolatedColor {
-  /**
-       * An InterpolatedColor Scale maps numbers to color hex values, expressed as strings.
-       *
-       * @param {string} [scaleType="linear"] One of "linear"/"log"/"sqrt"/"pow".
-       */
   def this(scaleType: java.lang.String) = this()
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   /** Appends custom plugins to the end of the PostCSS pipeline. */
   var append: js.UndefOr[js.Array[_]] = js.undefined

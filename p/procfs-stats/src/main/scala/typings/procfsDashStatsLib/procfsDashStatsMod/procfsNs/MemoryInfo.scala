@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MemoryInfo extends js.Object {
   var Active: java.lang.String
   var `Active(anon)`: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WMSOptions extends TileLayerOptions {
   var crs: js.UndefOr[CRS] = js.undefined
   var format: js.UndefOr[java.lang.String] = js.undefined

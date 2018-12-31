@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RegionCodeMine extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -24,41 +23,41 @@ trait Anon_RegionCodeMine extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken
-                   * properties identify other pages that could be retrieved.
-                   */
+    * The pageToken parameter identifies a specific page in the result set that should be returned. In an API response, the nextPageToken and prevPageToken
+    * properties identify other pages that could be retrieved.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The part parameter specifies a comma-separated list of one or more activity resource properties that the API response will include.
-                   *
-                   * If the parameter identifies a property that contains child properties, the child properties will be included in the response. For example, in an
-                   * activity resource, the snippet property contains other properties that identify the type of activity, a display title for the activity, and so forth.
-                   * If you set part=snippet, the API response will also contain all of those nested properties.
-                   */
+    * The part parameter specifies a comma-separated list of one or more activity resource properties that the API response will include.
+    *
+    * If the parameter identifies a property that contains child properties, the child properties will be included in the response. For example, in an
+    * activity resource, the snippet property contains other properties that identify the type of activity, a display title for the activity, and so forth.
+    * If you set part=snippet, the API response will also contain all of those nested properties.
+    */
   var part: java.lang.String
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * The publishedAfter parameter specifies the earliest date and time that an activity could have occurred for that activity to be included in the API
-                   * response. If the parameter value specifies a day, but not a time, then any activities that occurred that day will be included in the result set. The
-                   * value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
-                   */
+    * The publishedAfter parameter specifies the earliest date and time that an activity could have occurred for that activity to be included in the API
+    * response. If the parameter value specifies a day, but not a time, then any activities that occurred that day will be included in the result set. The
+    * value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
+    */
   var publishedAfter: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The publishedBefore parameter specifies the date and time before which an activity must have occurred for that activity to be included in the API
-                   * response. If the parameter value specifies a day, but not a time, then any activities that occurred that day will be excluded from the result set. The
-                   * value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
-                   */
+    * The publishedBefore parameter specifies the date and time before which an activity must have occurred for that activity to be included in the API
+    * response. If the parameter value specifies a day, but not a time, then any activities that occurred that day will be excluded from the result set. The
+    * value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
+    */
   var publishedBefore: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The regionCode parameter instructs the API to return results for the specified country. The parameter value is an ISO 3166-1 alpha-2 country code.
-                   * YouTube uses this value when the authorized user's previous activity on YouTube does not provide enough information to generate the activity feed.
-                   */
+    * The regionCode parameter instructs the API to return results for the specified country. The parameter value is an ISO 3166-1 alpha-2 country code.
+    * YouTube uses this value when the authorized user's previous activity on YouTube does not provide enough information to generate the activity feed.
+    */
   var regionCode: js.UndefOr[java.lang.String] = js.undefined
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[java.lang.String] = js.undefined

@@ -20,9 +20,7 @@ class FileSearchBand protected () extends js.Object {
   def SetFocus(): scala.Unit = js.native
   /** method SetSearchParameters */
   def SetSearchParameters(pbstrSearchID: java.lang.String, bNavToResults: scala.Boolean): scala.Unit = js.native
-  /** method SetSearchParameters */
   def SetSearchParameters(pbstrSearchID: java.lang.String, bNavToResults: scala.Boolean, pvarScope: js.Any): scala.Unit = js.native
-  /** method SetSearchParameters */
   def SetSearchParameters(
     pbstrSearchID: java.lang.String,
     bNavToResults: scala.Boolean,

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebResponseHeadersDetails extends WebResponseDetails {
   var method: java.lang.String
   /** Optional. The HTTP response headers that have been received with this response. */

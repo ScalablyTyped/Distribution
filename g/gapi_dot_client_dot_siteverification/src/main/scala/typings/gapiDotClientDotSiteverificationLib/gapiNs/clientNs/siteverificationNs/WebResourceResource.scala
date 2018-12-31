@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebResourceResource extends js.Object {
   /** Relinquish ownership of a website or domain. */
   def delete(request: gapiDotClientDotSiteverificationLib.Anon_PrettyPrintQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

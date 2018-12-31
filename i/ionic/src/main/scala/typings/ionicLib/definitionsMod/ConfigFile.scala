@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConfigFile extends js.Object {
   var `features.ssl-commands`: js.UndefOr[scala.Boolean] = js.undefined
   var `git.host`: js.UndefOr[java.lang.String] = js.undefined

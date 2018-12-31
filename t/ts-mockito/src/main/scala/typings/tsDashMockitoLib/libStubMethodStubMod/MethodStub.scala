@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MethodStub extends js.Object {
   def execute(args: js.Array[_]): scala.Unit
   def getGroupIndex(): scala.Double

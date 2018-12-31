@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClientOptions extends SsdpOptions {
   /** Bind sockets to each discovered interface explicitly instead of relying on the system. Might help with issues with multiple NICs. */
   var explicitSocketBind: js.UndefOr[scala.Boolean] = js.undefined

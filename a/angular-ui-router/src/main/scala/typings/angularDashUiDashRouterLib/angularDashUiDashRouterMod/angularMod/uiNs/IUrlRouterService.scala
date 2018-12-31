@@ -15,15 +15,15 @@ trait IUrlRouterService extends js.Object {
   def push(urlMatcher: IUrlMatcher, params: IStateParamsService): scala.Unit = js.native
   def push(urlMatcher: IUrlMatcher, params: IStateParamsService, options: IHrefOptions): scala.Unit = js.native
   /*
-               * Triggers an update; the same update that happens when the address bar
-               * url changes, aka $locationChangeSuccess.
-               *
-               * This method is useful when you need to use preventDefault() on the
-               * $locationChangeSuccess event, perform some custom logic (route protection,
-               * auth, config, redirection, etc) and then finally proceed with the transition
-               * by calling $urlRouter.sync().
-               *
-               */
+    * Triggers an update; the same update that happens when the address bar
+    * url changes, aka $locationChangeSuccess.
+    *
+    * This method is useful when you need to use preventDefault() on the
+    * $locationChangeSuccess event, perform some custom logic (route protection,
+    * auth, config, redirection, etc) and then finally proceed with the transition
+    * by calling $urlRouter.sync().
+    *
+    */
   def sync(): scala.Unit = js.native
   def update(): scala.Unit = js.native
   def update(read: scala.Boolean): scala.Unit = js.native

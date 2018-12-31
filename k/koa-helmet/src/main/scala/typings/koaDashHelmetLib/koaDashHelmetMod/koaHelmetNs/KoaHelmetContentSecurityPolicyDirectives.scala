@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KoaHelmetContentSecurityPolicyDirectives extends js.Object {
   var baseUri: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.undefined
   var childSrc: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.undefined

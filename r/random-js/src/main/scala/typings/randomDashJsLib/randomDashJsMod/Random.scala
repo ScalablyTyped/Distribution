@@ -20,9 +20,7 @@ trait Random extends js.Object {
   def integer(min: scala.Double, max: scala.Double): scala.Double = js.native
    // tslint:disable-line unified-signatures
   def pick[T](array: js.Array[T]): T = js.native
-   // tslint:disable-line unified-signatures
   def pick[T](array: js.Array[T], begin: scala.Double): T = js.native
-   // tslint:disable-line unified-signatures
   def pick[T](array: js.Array[T], begin: scala.Double, end: scala.Double): T = js.native
   def real(min: scala.Double, max: scala.Double): scala.Double = js.native
   def real(min: scala.Double, max: scala.Double, inclusive: scala.Boolean): scala.Double = js.native

@@ -50,9 +50,9 @@ abstract class DataTransferManager () extends js.Object {
 @js.native
 object DataTransferManager extends js.Object {
   /**
-                   * Returns the DataTransferManager object associated with the current window.
-                   * @return The DataTransferManager object associated with the current window.
-                   */
+    * Returns the DataTransferManager object associated with the current window.
+    * @return The DataTransferManager object associated with the current window.
+    */
   def getForCurrentView(): winrtDashUwpLib.WindowsNs.ApplicationModelNs.DataTransferNs.DataTransferManager = js.native
   /** Programmatically initiates the user interface for sharing content with another app. */
   def showShareUI(): scala.Unit = js.native

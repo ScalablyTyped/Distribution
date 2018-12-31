@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * AMD and CommonJS module `zeroclipboard`
- * @module
- */
+  * AMD and CommonJS module `zeroclipboard`
+  * @module
+  */
 @JSImport("zeroclipboard", JSImport.Namespace)
 @js.native
 object zeroclipboardMod

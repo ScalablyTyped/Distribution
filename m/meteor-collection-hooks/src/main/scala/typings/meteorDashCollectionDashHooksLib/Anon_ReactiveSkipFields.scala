@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ReactiveSkipFields extends js.Object {
   var fields: js.UndefOr[meteorDashTypingsLib.MongoNs.FieldSpecifier] = js.undefined
   var limit: js.UndefOr[scala.Double] = js.undefined

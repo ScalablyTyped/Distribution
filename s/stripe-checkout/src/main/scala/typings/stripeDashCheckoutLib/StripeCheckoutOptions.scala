@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StripeCheckoutOptions extends js.Object {
   var alipay: js.UndefOr[scala.Boolean | stripeDashCheckoutLib.stripeDashCheckoutLibStrings.auto] = js.undefined
   var alipayReusable: js.UndefOr[scala.Boolean] = js.undefined

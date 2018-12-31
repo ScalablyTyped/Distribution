@@ -12,29 +12,29 @@ sealed trait WorkItemTypeFieldsExpandLevel extends js.Object
 @js.native
 object WorkItemTypeFieldsExpandLevel extends js.Object {
   /**
-       * Includes allowed values and dependent fields of the field.
-       */
+    * Includes allowed values and dependent fields of the field.
+    */
   @js.native
   sealed trait All
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeFieldsExpandLevel
   
   /**
-       * Includes allowed values for the field.
-       */
+    * Includes allowed values for the field.
+    */
   @js.native
   sealed trait AllowedValues
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeFieldsExpandLevel
   
   /**
-       * Includes dependent fields of the field.
-       */
+    * Includes dependent fields of the field.
+    */
   @js.native
   sealed trait DependentFields
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeFieldsExpandLevel
   
   /**
-       * Includes only basic properties of the field.
-       */
+    * Includes only basic properties of the field.
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.WorkItemTypeFieldsExpandLevel

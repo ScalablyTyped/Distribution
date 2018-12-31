@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBackupJob extends js.Object {
   var BackupType: mfilesLib.MFilesNs.MFBackupType
   var FileSizeLimitInMB: scala.Double

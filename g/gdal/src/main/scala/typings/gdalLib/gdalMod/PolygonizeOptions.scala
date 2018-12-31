@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PolygonizeOptions extends js.Object {
   var connectedness: js.UndefOr[scala.Double] = js.undefined
   var dst: Layer

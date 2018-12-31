@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeclarationAttributes extends js.Object {
   var encoding: js.UndefOr[xmlDashJsLib.xmlDashJsLibStrings.`utf-8` | java.lang.String] = js.undefined
   var standalone: js.UndefOr[xmlDashJsLib.xmlDashJsLibStrings.yes | xmlDashJsLib.xmlDashJsLibStrings.no] = js.undefined

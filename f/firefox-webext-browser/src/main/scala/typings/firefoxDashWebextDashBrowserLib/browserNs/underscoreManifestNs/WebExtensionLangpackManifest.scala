@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a WebExtension language pack manifest.json file */
-
 trait WebExtensionLangpackManifest extends js.Object {
   var applications: js.UndefOr[firefoxDashWebextDashBrowserLib.Anon_Gecko] = js.undefined
   var author: js.UndefOr[java.lang.String] = js.undefined

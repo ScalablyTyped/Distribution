@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageBitmapOptions extends js.Object {
   var colorSpaceConversion: js.UndefOr[xtermLib.xtermLibStrings.none | xtermLib.xtermLibStrings.default] = js.undefined
   var imageOrientation: js.UndefOr[xtermLib.xtermLibStrings.none | xtermLib.xtermLibStrings.flipY] = js.undefined

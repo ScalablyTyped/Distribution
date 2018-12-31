@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 sealed trait SimplificationType extends js.Object
 
 /**
-     * The implemented types of simplification
-     * At the moment only Quadratic Error Decimation is implemented
-     * @see http://doc.babylonjs.com/how_to/in-browser_mesh_simplification
-     */
+  * The implemented types of simplification
+  * At the moment only Quadratic Error Decimation is implemented
+  * @see http://doc.babylonjs.com/how_to/in-browser_mesh_simplification
+  */
 @JSGlobal("BABYLON.SimplificationType")
 @js.native
 object SimplificationType extends js.Object {

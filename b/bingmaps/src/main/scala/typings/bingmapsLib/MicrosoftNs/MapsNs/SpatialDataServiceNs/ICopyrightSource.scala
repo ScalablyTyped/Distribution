@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICopyrightSource extends js.Object {
   /** The copyright string from the source. */
   var Copyright: java.lang.String

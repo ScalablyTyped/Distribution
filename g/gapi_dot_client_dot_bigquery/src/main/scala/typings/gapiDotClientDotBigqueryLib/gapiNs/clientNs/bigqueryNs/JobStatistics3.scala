@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JobStatistics3 extends js.Object {
   /**
-               * [Output-only] The number of bad records encountered. Note that if the job has failed because of more bad records encountered than the maximum allowed
-               * in the load job configuration, then this number can be less than the total number of bad records present in the input data.
-               */
+    * [Output-only] The number of bad records encountered. Note that if the job has failed because of more bad records encountered than the maximum allowed
+    * in the load job configuration, then this number can be less than the total number of bad records present in the input data.
+    */
   var badRecords: js.UndefOr[java.lang.String] = js.undefined
   /** [Output-only] Number of bytes of source data in a load job. */
   var inputFileBytes: js.UndefOr[java.lang.String] = js.undefined

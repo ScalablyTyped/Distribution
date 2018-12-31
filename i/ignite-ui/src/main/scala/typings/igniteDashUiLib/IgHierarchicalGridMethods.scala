@@ -41,13 +41,6 @@ trait IgHierarchicalGridMethods extends js.Object {
   	 * @param callback Specifies a custom function to be called when parent row is expanded(optional). Takes 2 arguments - first is hierarchical grid object, second is the row element that was collapsed
   	 */
   def collapse(id: stdLib.Element): scala.Unit = js.native
-  /**
-  	 * Collapses a parent row
-  	 * Note: This method is asynchronous which means that it returns immediately and any subsequent code will execute in parallel. This may lead to runtime errors. To avoid them put the subsequent code in the callback parameter provided by the method.
-  	 *
-  	 * @param id accepts a dom element, or a jquery wrapped dom element that should be a TR and should specify a parent row
-  	 * @param callback Specifies a custom function to be called when parent row is expanded(optional). Takes 2 arguments - first is hierarchical grid object, second is the row element that was collapsed
-  	 */
   def collapse(id: stdLib.Element, callback: js.Function): scala.Unit = js.native
   /**
   	 * Checks if a parent row is currently collapsed
@@ -75,13 +68,6 @@ trait IgHierarchicalGridMethods extends js.Object {
   	 * @param callback Specifies a custom function to be called when parent row is expanded(optional). Takes 2 arguments first is hierarchical grid object, second is the row element that was expanded
   	 */
   def expand(id: stdLib.Element): scala.Unit = js.native
-  /**
-  	 * Expands (toggles) a parent row
-  	 * Note: This method is asynchronous which means that it returns immediately and any subsequent code will execute in parallel. This may lead to runtime errors. To avoid them put the subsequent code in the callback parameter provided by the method.
-  	 *
-  	 * @param id accepts a dom element, or a jquery wrapped dom element that should be a TR and should specify a parent row
-  	 * @param callback Specifies a custom function to be called when parent row is expanded(optional). Takes 2 arguments first is hierarchical grid object, second is the row element that was expanded
-  	 */
   def expand(id: stdLib.Element, callback: js.Function): scala.Unit = js.native
   /**
   	 * Checks if a parent row is expanded or not
@@ -101,11 +87,6 @@ trait IgHierarchicalGridMethods extends js.Object {
   	 * @param rebind Whether to perform a rebind.
   	 */
   def rollback(): scala.Unit = js.native
-  /**
-  	 * Clears the transaction log (delegates to igDataSource). Note that this does not update the UI. In case the UI must be updated, set the second parameter "updateUI" to true, which will trigger a call to dataBind() to re-render the contents.
-  	 *
-  	 * @param rebind Whether to perform a rebind.
-  	 */
   def rollback(rebind: scala.Boolean): scala.Unit = js.native
   /**
   	 * Returns the element of the root grid (igGrid)
@@ -130,13 +111,6 @@ trait IgHierarchicalGridMethods extends js.Object {
   	 * @param callback Specifies a custom function to be called when parent row is toggled(optional). Takes 2 arguments - first is hierarchical grid object, second is the row element that was toggled
   	 */
   def toggle(element: stdLib.Element): scala.Unit = js.native
-  /**
-  	 * Expands or collapses (toggles) a parent row
-  	 * Note: This method is asynchronous which means that it returns immediately and any subsequent code will execute in parallel. This may lead to runtime errors. To avoid them put the subsequent code in the callback parameter provided by the method.
-  	 *
-  	 * @param element accepts a dom element, or a jquery wrapped dom element that should be a TR and should specify a parent row
-  	 * @param callback Specifies a custom function to be called when parent row is toggled(optional). Takes 2 arguments - first is hierarchical grid object, second is the row element that was toggled
-  	 */
   def toggle(element: stdLib.Element, callback: js.Function): scala.Unit = js.native
 }
 

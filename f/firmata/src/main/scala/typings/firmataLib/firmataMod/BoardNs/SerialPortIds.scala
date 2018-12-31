@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SerialPortIds extends js.Object {
   var DEFAULT: SERIAL_PORT_ID
   var HW_SERIAL0: SERIAL_PORT_ID

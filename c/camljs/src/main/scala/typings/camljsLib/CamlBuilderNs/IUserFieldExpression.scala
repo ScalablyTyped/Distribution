@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IUserFieldExpression extends js.Object {
   /** DEPRECATED. Please use IsIn* methods instead. This property will be removed in next release(!!) */
   var Membership: IMembership

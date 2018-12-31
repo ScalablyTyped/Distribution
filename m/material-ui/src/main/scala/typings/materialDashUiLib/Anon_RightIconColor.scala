@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RightIconColor extends js.Object {
   var leftIconColor: js.UndefOr[java.lang.String] = js.undefined
   var nestedLevelDepth: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IIdentifiable
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Retrieves the id of this component

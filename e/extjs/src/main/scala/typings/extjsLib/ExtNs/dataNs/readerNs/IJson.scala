@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IJson extends IReader {
   /** [Property] (Object) */
   var jsonData: js.UndefOr[js.Any] = js.undefined

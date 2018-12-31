@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class SpatialInteractionSourceLocation () extends js.Object {
   var position: js.Any = js.native
-   /* unmapped type */var velocity: js.Any = js.native
+   /* unmapped type */ var velocity: js.Any = js.native
 }
 

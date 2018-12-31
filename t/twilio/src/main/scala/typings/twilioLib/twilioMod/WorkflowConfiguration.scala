@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("twilio", "WorkflowConfiguration")
 @js.native
+ // Defined property mapped to task_routing.
 class WorkflowConfiguration ()
   extends twilioLib.twilioMod.twilioNs.WorkflowConfiguration {
-   // Defined property mapped to task_routing.
   def this(options: twilioLib.twilioMod.twilioNs.WorkflowConfigurationOptions) = this()
   /* CompleteClass */
   override var taskRouting: twilioLib.twilioMod.twilioNs.TaskRoutingConfiguration = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Auth0LockAuthOptions extends js.Object {
   var audience: js.UndefOr[java.lang.String] = js.undefined
   var params: js.UndefOr[Auth0LockAuthParamsOptions] = js.undefined

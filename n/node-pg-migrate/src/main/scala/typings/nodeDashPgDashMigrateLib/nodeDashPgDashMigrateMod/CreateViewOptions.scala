@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateViewOptions extends js.Object {
   var checkOption: js.UndefOr[
     nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.CASCADED | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.LOCAL

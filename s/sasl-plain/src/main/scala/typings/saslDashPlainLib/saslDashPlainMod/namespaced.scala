@@ -23,3 +23,9 @@ class namespaced () extends PlainMechanism {
   override def response(cred: saslDashPlainLib.saslDashPlainMod.PlainMechanismNs.Credentials): java.lang.String = js.native
 }
 
+@JSImport("sasl-plain", JSImport.Namespace)
+@js.native
+object namespaced extends js.Object {
+  var Mechanism: org.scalablytyped.runtime.Instantiable0[saslDashPlainLib.saslDashPlainMod.PlainMechanism] = js.native
+}
+

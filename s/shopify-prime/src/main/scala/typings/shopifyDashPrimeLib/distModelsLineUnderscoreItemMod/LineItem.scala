@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LineItem
   extends shopifyDashPrimeLib.distModelsBaseMod.ShopifyObject {
   var fulfillable_quantity: js.UndefOr[scala.Double] = js.undefined

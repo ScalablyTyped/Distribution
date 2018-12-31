@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait IBarHTMLTag extends js.Object
 
 /**
-     * Allowed tags for the implementation of the IBar interface.
-    */
+  * Allowed tags for the implementation of the IBar interface.
+  */
 @JSGlobal("sap.m.IBarHTMLTag")
 @js.native
 object IBarHTMLTag extends js.Object {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Props extends js.Object {
   var classForValue: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.undefined
   var endDate: js.UndefOr[java.lang.String | scala.Double | stdLib.Date] = js.undefined

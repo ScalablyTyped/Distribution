@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IScrollOptions extends js.Object {
   var HWCompositing: js.UndefOr[scala.Boolean] = js.undefined
   var bounce: js.UndefOr[scala.Boolean] = js.undefined

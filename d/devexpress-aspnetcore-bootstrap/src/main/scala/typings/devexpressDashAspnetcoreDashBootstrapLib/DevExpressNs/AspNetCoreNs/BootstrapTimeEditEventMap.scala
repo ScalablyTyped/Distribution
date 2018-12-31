@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BootstrapTimeEditEventMap extends BootstrapClientEditEventMap {
   var buttonClick: ButtonEditClickEventArgs
   var dateChanged: ProcessingModeEventArgs

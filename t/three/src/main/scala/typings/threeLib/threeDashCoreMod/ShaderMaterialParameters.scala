@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShaderMaterialParameters extends MaterialParameters {
   var clipping: js.UndefOr[scala.Boolean] = js.undefined
   var defines: js.UndefOr[js.Any] = js.undefined

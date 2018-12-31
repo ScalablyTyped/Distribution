@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * The protocol that the <Titanium.Network.HTTPClient.securityManager> must implement.
- */
-
+  * The protocol that the <Titanium.Network.HTTPClient.securityManager> must implement.
+  */
 trait SecurityManagerProtocol extends js.Object {
   /**
   	 * The <APSConnectionDelegate> for this connection.

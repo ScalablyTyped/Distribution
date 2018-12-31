@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RadialGaugePointerItem extends js.Object {
   var cap: js.UndefOr[RadialGaugePointerItemCap] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined

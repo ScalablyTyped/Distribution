@@ -39,21 +39,7 @@ trait IgTreeGridColumnFixingMethods extends js.Object {
   	 * @param after Specifies where the fixed column should be moved after or before the target column. This parameter is disregarded if there is no target column specified.
   	 */
   def fixColumn(colIdentifier: js.Object): js.Object = js.native
-  /**
-  	 * Fixes a column by specified column identifier - column index or column key.
-  	 *
-  	 * @param colIdentifier An identifier of the column to be fixed - column index or column key.
-  	 * @param target Key of the column where the fixed column should move to.
-  	 * @param after Specifies where the fixed column should be moved after or before the target column. This parameter is disregarded if there is no target column specified.
-  	 */
   def fixColumn(colIdentifier: js.Object, target: java.lang.String): js.Object = js.native
-  /**
-  	 * Fixes a column by specified column identifier - column index or column key.
-  	 *
-  	 * @param colIdentifier An identifier of the column to be fixed - column index or column key.
-  	 * @param target Key of the column where the fixed column should move to.
-  	 * @param after Specifies where the fixed column should be moved after or before the target column. This parameter is disregarded if there is no target column specified.
-  	 */
   def fixColumn(colIdentifier: js.Object, target: java.lang.String, after: scala.Boolean): js.Object = js.native
   /**
   	 * This function is deprecated - use function fixNonDataColumns.
@@ -71,29 +57,8 @@ trait IgTreeGridColumnFixingMethods extends js.Object {
   	 * @param includeHidden If set to true calculates width of the hidden fixed columns (their initial width before hiding).
   	 */
   def getWidthOfFixedColumns(): scala.Double = js.native
-  /**
-  	 * Calculates widths of the fixed columns.
-  	 *
-  	 * @param fCols Array of grid columns. If not set then the total width of the fixed columns are returned.
-  	 * @param excludeNonDataColumns If set to true do not calculate the width of non-data fixed columns (like the row selector row numbering column).
-  	 * @param includeHidden If set to true calculates width of the hidden fixed columns (their initial width before hiding).
-  	 */
   def getWidthOfFixedColumns(fCols: js.Array[_]): scala.Double = js.native
-  /**
-  	 * Calculates widths of the fixed columns.
-  	 *
-  	 * @param fCols Array of grid columns. If not set then the total width of the fixed columns are returned.
-  	 * @param excludeNonDataColumns If set to true do not calculate the width of non-data fixed columns (like the row selector row numbering column).
-  	 * @param includeHidden If set to true calculates width of the hidden fixed columns (their initial width before hiding).
-  	 */
   def getWidthOfFixedColumns(fCols: js.Array[_], excludeNonDataColumns: scala.Boolean): scala.Double = js.native
-  /**
-  	 * Calculates widths of the fixed columns.
-  	 *
-  	 * @param fCols Array of grid columns. If not set then the total width of the fixed columns are returned.
-  	 * @param excludeNonDataColumns If set to true do not calculate the width of non-data fixed columns (like the row selector row numbering column).
-  	 * @param includeHidden If set to true calculates width of the hidden fixed columns (their initial width before hiding).
-  	 */
   def getWidthOfFixedColumns(fCols: js.Array[_], excludeNonDataColumns: scala.Boolean, includeHidden: scala.Boolean): scala.Double = js.native
   /**
   	 * Returns whether the column with the specified key is a column group header, when the [multi-column headers](http://www.igniteui.com/help/iggrid-multicolumnheaders-landingpage) feature is used.
@@ -108,19 +73,7 @@ trait IgTreeGridColumnFixingMethods extends js.Object {
   	 * @param clearRowsHeights Clears row heigths for all visible rows.
   	 */
   def syncHeights(): scala.Unit = js.native
-  /**
-  	 * If the 'check' argument is set to true, checks whether the heights of fixed and unfixed tables are equal, if not sync them. Similar check is made for heights of table rows. If the clearRowsHeights argument is set to true, clears rows heights before syncing them.
-  	 *
-  	 * @param check If set to true, checks whether the heights of fixed and unfixed tables are equal, if not sync them. If this argument is set to false sync is performed regardless of the current heights.
-  	 * @param clearRowsHeights Clears row heigths for all visible rows.
-  	 */
   def syncHeights(check: scala.Boolean): scala.Unit = js.native
-  /**
-  	 * If the 'check' argument is set to true, checks whether the heights of fixed and unfixed tables are equal, if not sync them. Similar check is made for heights of table rows. If the clearRowsHeights argument is set to true, clears rows heights before syncing them.
-  	 *
-  	 * @param check If set to true, checks whether the heights of fixed and unfixed tables are equal, if not sync them. If this argument is set to false sync is performed regardless of the current heights.
-  	 * @param clearRowsHeights Clears row heigths for all visible rows.
-  	 */
   def syncHeights(check: scala.Boolean, clearRowsHeights: scala.Boolean): scala.Unit = js.native
   /**
   	 * Syncs rows heights between two collections of rows.
@@ -141,21 +94,7 @@ trait IgTreeGridColumnFixingMethods extends js.Object {
   	 * @param after Specifies where the unfixed column should be rendered after or before the target column. This parameter is disregarded if there is no target column specified.
   	 */
   def unfixColumn(colIdentifier: js.Object): js.Object = js.native
-  /**
-  	 * Unfixes a column by specified column identifier - column key or column index.
-  	 *
-  	 * @param colIdentifier An identifier of the column to be unfixed - column index or column key.
-  	 * @param target Key of the column where the unfixed column should move to.
-  	 * @param after Specifies where the unfixed column should be rendered after or before the target column. This parameter is disregarded if there is no target column specified.
-  	 */
   def unfixColumn(colIdentifier: js.Object, target: java.lang.String): js.Object = js.native
-  /**
-  	 * Unfixes a column by specified column identifier - column key or column index.
-  	 *
-  	 * @param colIdentifier An identifier of the column to be unfixed - column index or column key.
-  	 * @param target Key of the column where the unfixed column should move to.
-  	 * @param after Specifies where the unfixed column should be rendered after or before the target column. This parameter is disregarded if there is no target column specified.
-  	 */
   def unfixColumn(colIdentifier: js.Object, target: java.lang.String, after: scala.Boolean): js.Object = js.native
   /**
   	 * This function is deprecated - use function unfixNonDataColumns.

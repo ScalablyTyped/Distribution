@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MEDIUM extends js.Object {
   var HIGH: java.lang.String
   var LOW: java.lang.String

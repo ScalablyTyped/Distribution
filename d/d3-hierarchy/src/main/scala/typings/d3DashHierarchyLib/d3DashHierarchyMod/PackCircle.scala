@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PackCircle extends js.Object {
   /**
-       * The radius of the circle.
-       */
+    * The radius of the circle.
+    */
   var r: scala.Double
   /**
-       * The x-coordinate of the circle’s center.
-       */
+    * The x-coordinate of the circle’s center.
+    */
   var x: scala.Double
   /**
-       * The y-coordinate of the circle’s center.
-       */
+    * The y-coordinate of the circle’s center.
+    */
   var y: scala.Double
 }
 

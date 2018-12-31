@@ -12,15 +12,15 @@ sealed trait NormalizeOption extends js.Object
 @js.native
 object NormalizeOption extends js.Object {
   /**
-       * Normalize non-existing times by SUBTRACTING the DST offset
-       */
+    * Normalize non-existing times by SUBTRACTING the DST offset
+    */
   @js.native
   sealed trait Down
     extends timezonecompleteLib.distLibTzDashDatabaseMod.NormalizeOption
   
   /**
-       * Normalize non-existing times by ADDING the DST offset
-       */
+    * Normalize non-existing times by ADDING the DST offset
+    */
   @js.native
   sealed trait Up
     extends timezonecompleteLib.distLibTzDashDatabaseMod.NormalizeOption

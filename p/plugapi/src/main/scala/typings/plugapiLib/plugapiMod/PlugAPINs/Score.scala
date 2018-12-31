@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Score extends js.Object {
   var grabs: scala.Double
   var listeners: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParseMeta extends js.Object {
        // Line break sequence used
   var aborted: scala.Boolean

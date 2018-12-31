@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEventHandler extends js.Object {
   var Active: scala.Boolean
   var Description: java.lang.String

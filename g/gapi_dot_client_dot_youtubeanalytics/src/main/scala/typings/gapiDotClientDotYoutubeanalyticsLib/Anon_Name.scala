@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Name extends js.Object {
   /** The type of the column (DIMENSION or METRIC). */
   var columnType: js.UndefOr[java.lang.String] = js.undefined

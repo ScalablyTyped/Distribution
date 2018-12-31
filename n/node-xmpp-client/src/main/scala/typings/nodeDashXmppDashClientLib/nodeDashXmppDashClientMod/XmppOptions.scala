@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait XmppOptions extends js.Object {
    // Dictionary (optional) - TLS or SSL key and certificate credentials
   var actAs: js.UndefOr[java.lang.String] = js.undefined

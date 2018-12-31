@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableCellProperties extends js.Object {
   // The alignment of the content in the table cell. The default alignment
   // matches the alignment for newly created table cells in the Slides editor.

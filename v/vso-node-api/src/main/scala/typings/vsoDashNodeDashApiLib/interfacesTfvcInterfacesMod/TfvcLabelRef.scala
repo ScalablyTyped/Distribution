@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TfvcLabelRef extends js.Object {
   var _links: js.Any
   var description: java.lang.String

@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 trait IEnumType extends js.Object {
   /** Gets the members of the enumeration, limited to the validMembers, if appropriate. */
   def members(): js.Array[IEnumMember] = js.native
-  /** Gets the members of the enumeration, limited to the validMembers, if appropriate. */
   def members(validMembers: js.Array[EnumMemberValue]): js.Array[IEnumMember] = js.native
 }
 

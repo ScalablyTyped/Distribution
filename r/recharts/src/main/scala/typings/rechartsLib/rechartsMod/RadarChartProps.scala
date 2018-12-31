@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(rechartsLib.rechartsMod.CategoricalChartWrapper because Would inherit conflicting mutable fields List(onMouseLeave, onClick, onMouseUp, onMouseMove, onMouseEnter, onMouseDown))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(rechartsLib.rechartsMod.CategoricalChartWrapper because Would inherit conflicting mutable fields List(onClick, onMouseDown, onMouseEnter, onMouseLeave, onMouseMove, onMouseUp))*/
 trait RadarChartProps extends EventAttributes {
   var cx: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var cy: js.UndefOr[scala.Double | java.lang.String] = js.undefined

@@ -23,20 +23,17 @@ class FocusZone protected ()
   var _isInnerZone: js.Any = js.native
   var _onFocus: js.Any = js.native
   /**
-       * Handle the keystrokes.
-       */
+    * Handle the keystrokes.
+    */
   var _onKeyDown: js.Any = js.native
   var _onMouseDown: js.Any = js.native
   /** Used to allow us to move to next focusable element even when we're focusing on a input element when pressing tab */
   var _processingTabKey: js.Any = js.native
   var _root: js.Any = js.native
   /**
-       * Traverse to find first child zone.
-       */
+    * Traverse to find first child zone.
+    */
   /* private */ def _getFirstInnerZone(): js.Any = js.native
-  /**
-       * Traverse to find first child zone.
-       */
   /* private */ def _getFirstInnerZone(rootElement: js.Any): js.Any = js.native
   /* private */ def _getOwnerZone(): js.Any = js.native
   /* private */ def _getOwnerZone(element: js.Any): js.Any = js.native
@@ -51,8 +48,8 @@ class FocusZone protected ()
   /* private */ def _moveFocusRight(): js.Any = js.native
   /* private */ def _moveFocusUp(): js.Any = js.native
   /**
-       * Handle global tab presses so that we can patch tabindexes on the fly.
-       */
+    * Handle global tab presses so that we can patch tabindexes on the fly.
+    */
   /* private */ def _onKeyDownCapture(ev: js.Any): js.Any = js.native
   /* private */ def _setActiveElement(element: js.Any): js.Any = js.native
   /* private */ def _setActiveElement(element: js.Any, forceAlignemnt: js.Any): js.Any = js.native
@@ -63,8 +60,8 @@ class FocusZone protected ()
   /* private */ def _shouldInputLoseFocus(element: js.Any, isForward: js.Any): js.Any = js.native
   /* private */ def _shouldWrapFocus(element: js.Any, noWrapDataAttribute: js.Any): js.Any = js.native
   /**
-       * Walk up the dom try to find a focusable element.
-       */
+    * Walk up the dom try to find a focusable element.
+    */
   /* private */ def _tryInvokeClickForFocusable(target: js.Any): js.Any = js.native
   /* private */ def _updateTabIndexes(): js.Any = js.native
   /* private */ def _updateTabIndexes(element: js.Any): js.Any = js.native

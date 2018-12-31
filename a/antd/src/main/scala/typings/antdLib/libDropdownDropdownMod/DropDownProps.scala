@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DropDownProps extends js.Object {
   var align: js.UndefOr[js.Object] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Nested where Postgre Statement
-     */
-
+  * Nested where Postgre Statement
+  */
 trait WherePGStatement extends js.Object {
   @JSName("$all")
   var $all: js.Array[java.lang.String | scala.Double]

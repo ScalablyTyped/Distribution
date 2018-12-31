@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SortableOptions extends js.Object {
   var autoScroll: js.UndefOr[scala.Boolean] = js.undefined
   var axis: js.UndefOr[java.lang.String] = js.undefined

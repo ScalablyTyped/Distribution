@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILookup extends js.Object {
   var Deleted: scala.Boolean
   val DisplayID: java.lang.String

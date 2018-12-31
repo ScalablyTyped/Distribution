@@ -12,15 +12,15 @@ sealed trait WorkspaceMappingType extends js.Object
 @js.native
 object WorkspaceMappingType extends js.Object {
   /**
-       * The path is cloaked in the workspace.
-       */
+    * The path is cloaked in the workspace.
+    */
   @js.native
   sealed trait Cloak
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.WorkspaceMappingType
   
   /**
-       * The path is mapped in the workspace.
-       */
+    * The path is mapped in the workspace.
+    */
   @js.native
   sealed trait Map
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.WorkspaceMappingType

@@ -9,16 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object connectDashSlashesModMembers extends js.Object {
   /**
-   * @see https://github.com/avinoamr/connect-slashes#usage
-   */
+    * @see https://github.com/avinoamr/connect-slashes#usage
+    */
   def apply(): expressLib.expressMod.eNs.RequestHandler = js.native
-  /**
-   * @see https://github.com/avinoamr/connect-slashes#usage
-   */
   def apply(addTrailingSlashes: scala.Boolean): expressLib.expressMod.eNs.RequestHandler = js.native
-  /**
-   * @see https://github.com/avinoamr/connect-slashes#usage
-   */
   def apply(
     addTrailingSlashes: scala.Boolean,
     options: connectDashSlashesLib.connectDashSlashesMod.slashesNs.Options

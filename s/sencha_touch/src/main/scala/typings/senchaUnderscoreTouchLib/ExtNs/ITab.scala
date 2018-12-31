@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITab extends IButton {
   /** [Config Option] (Boolean) */
   var active: js.UndefOr[scala.Boolean] = js.undefined

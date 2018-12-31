@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait YAMLSemanticError
   extends stdLib.Error {
   @JSName("name")

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InstantExperiencesPreviewDialogParams extends DialogParams {
   var canvas_id: java.lang.String
   @JSName("display")

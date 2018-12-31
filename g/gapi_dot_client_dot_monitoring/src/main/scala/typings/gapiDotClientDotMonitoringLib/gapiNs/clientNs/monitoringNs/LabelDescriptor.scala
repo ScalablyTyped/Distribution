@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LabelDescriptor extends js.Object {
   /** A human-readable description for the label. */
   var description: js.UndefOr[java.lang.String] = js.undefined

@@ -14,15 +14,15 @@ class Fog protected () extends IFog {
   /* CompleteClass */
   override var color: Color = js.native
   /**
-       * The maximum distance at which fog stops being calculated and applied. Objects that are more than 'far' units away from the active camera won't be affected by fog.
-       * Default is 1000.
-       */
+    * The maximum distance at which fog stops being calculated and applied. Objects that are more than 'far' units away from the active camera won't be affected by fog.
+    * Default is 1000.
+    */
   var far: scala.Double = js.native
   /* CompleteClass */
   override var name: java.lang.String = js.native
   /**
-       * The minimum distance to start applying fog. Objects that are less than 'near' units from the active camera won't be affected by fog.
-       */
+    * The minimum distance to start applying fog. Objects that are less than 'near' units from the active camera won't be affected by fog.
+    */
   var near: scala.Double = js.native
   /* CompleteClass */
   override def toJSON(): js.Any = js.native

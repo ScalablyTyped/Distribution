@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CheckboxGroupAnonToggleOption extends js.Object {
   var checkboxGroup: Anon_ToggleOption
 }

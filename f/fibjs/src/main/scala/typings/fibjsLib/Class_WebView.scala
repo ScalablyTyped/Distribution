@@ -112,14 +112,6 @@ class Class_WebView () extends Class_EventEmitter {
   	 * @async
   	 */
   def print(): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 打印当前窗口文档
-  	 * @param mode 打印参数，0: 快速打印; 1: 标准打印; 2: 打印预览。缺省为 1
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def print(mode: scala.Double): scala.Unit = js.native
   /**
   	 * 

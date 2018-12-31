@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JwtHeader extends js.Object {
   var alg: java.lang.String
   var jku: js.UndefOr[java.lang.String] = js.undefined

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** The settings for cookies. */
-
 trait CookieConfig extends js.Object {
   /** The type of cookies to allow. */
   var behavior: js.UndefOr[_CookieConfigBehavior] = js.undefined

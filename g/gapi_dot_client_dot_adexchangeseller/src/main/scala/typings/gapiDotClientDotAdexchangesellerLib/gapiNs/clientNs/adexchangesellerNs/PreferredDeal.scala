@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PreferredDeal extends js.Object {
   /** The name of the advertiser this deal is for. */
   var advertiserName: js.UndefOr[java.lang.String] = js.undefined
@@ -16,9 +15,9 @@ trait PreferredDeal extends js.Object {
   /** Time when this deal stops being active in seconds since the epoch (GMT). If not set then this deal is valid until manually disabled by the publisher. */
   var endTime: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The fixed price for this preferred deal. In cpm micros of currency according to currencyCode. If set, then this preferred deal is eligible for the
-               * fixed price tier of buying (highest priority, pay exactly the configured fixed price).
-               */
+    * The fixed price for this preferred deal. In cpm micros of currency according to currencyCode. If set, then this preferred deal is eligible for the
+    * fixed price tier of buying (highest priority, pay exactly the configured fixed price).
+    */
   var fixedCpm: js.UndefOr[java.lang.String] = js.undefined
   /** Unique identifier of this preferred deal. */
   var id: js.UndefOr[java.lang.String] = js.undefined

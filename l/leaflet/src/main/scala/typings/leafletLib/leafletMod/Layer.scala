@@ -21,27 +21,17 @@ class Layer () extends Evented {
   def addTo(map: Map): this.type = js.native
   // Popup methods
   def bindPopup(content: js.Function1[/* layer */ this.type, Content]): this.type = js.native
-  // Popup methods
   def bindPopup(content: js.Function1[/* layer */ this.type, Content], options: PopupOptions): this.type = js.native
-  // Popup methods
   def bindPopup(content: Content): this.type = js.native
-  // Popup methods
   def bindPopup(content: Content, options: PopupOptions): this.type = js.native
-  // Popup methods
   def bindPopup(content: Popup): this.type = js.native
-  // Popup methods
   def bindPopup(content: Popup, options: PopupOptions): this.type = js.native
   // Tooltip methods
   def bindTooltip(content: js.Function1[/* layer */ this.type, Content]): this.type = js.native
-  // Tooltip methods
   def bindTooltip(content: js.Function1[/* layer */ this.type, Content], options: TooltipOptions): this.type = js.native
-  // Tooltip methods
   def bindTooltip(content: Content): this.type = js.native
-  // Tooltip methods
   def bindTooltip(content: Content, options: TooltipOptions): this.type = js.native
-  // Tooltip methods
   def bindTooltip(content: Tooltip): this.type = js.native
-  // Tooltip methods
   def bindTooltip(content: Tooltip, options: TooltipOptions): this.type = js.native
   def closePopup(): this.type = js.native
   def closeTooltip(): this.type = js.native

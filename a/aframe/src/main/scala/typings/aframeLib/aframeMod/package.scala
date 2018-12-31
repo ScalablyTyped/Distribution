@@ -16,6 +16,4 @@ package object aframeMod {
   type Schema[T /* <: js.Object */] = SinglePropertySchema[T] | MultiPropertySchema[T]
   type ShaderDefinition[T /* <: js.Object */] = T with stdLib.Partial[Shader]
   type SystemDefinition[T /* <: js.Object */] = T with stdLib.Partial[System[_]]
-  type ThreeLib = js.Any
-  type TweenLib = js.Any
 }

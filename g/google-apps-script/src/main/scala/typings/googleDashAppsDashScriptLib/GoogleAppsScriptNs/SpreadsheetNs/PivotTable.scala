@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PivotTable extends js.Object {
   def addCalculatedPivotValue(name: java.lang.String, formula: java.lang.String): PivotValue
   def addColumnGroup(sourceDataColumn: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): PivotGroup

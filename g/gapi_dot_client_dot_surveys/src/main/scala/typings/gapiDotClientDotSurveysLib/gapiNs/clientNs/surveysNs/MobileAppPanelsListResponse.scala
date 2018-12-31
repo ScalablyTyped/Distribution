@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MobileAppPanelsListResponse extends js.Object {
   var pageInfo: js.UndefOr[PageInfo] = js.undefined
   /** Unique request ID used for logging and debugging. Please include in any error reporting or troubleshooting requests. */

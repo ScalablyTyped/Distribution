@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SSEConnect extends SSECommand {
   var heartbeatIntervalMs: scala.Double
   var heartbeatUrl: java.lang.String

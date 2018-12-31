@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConstructorOptions extends js.Object {
   var baseApiUrl: js.UndefOr[java.lang.String] = js.undefined
   var filepath: js.UndefOr[scala.Boolean] = js.undefined

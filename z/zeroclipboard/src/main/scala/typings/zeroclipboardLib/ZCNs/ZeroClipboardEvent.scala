@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ZeroClipboardEvent extends js.Object {
   var client: js.UndefOr[ZeroClipboardClient] = js.undefined
   var currentTarget: stdLib.HTMLObjectElement

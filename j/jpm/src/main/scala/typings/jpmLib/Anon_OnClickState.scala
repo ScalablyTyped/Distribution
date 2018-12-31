@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnClickState extends js.Object {
   var badge: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var badgeColor: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InterfaceDeclaration extends Node {
   var body: ObjectTypeAnnotation
   var `extends`: js.Array[InterfaceExtends]

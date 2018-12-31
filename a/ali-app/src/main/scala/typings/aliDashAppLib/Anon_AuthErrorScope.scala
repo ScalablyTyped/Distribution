@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AuthErrorScope extends js.Object {
   var authCode: java.lang.String
   	// 授权码

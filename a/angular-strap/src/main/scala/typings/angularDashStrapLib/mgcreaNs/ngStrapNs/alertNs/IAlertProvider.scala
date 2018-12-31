@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAlertProvider extends js.Object {
   var defaults: IAlertOptions
 }

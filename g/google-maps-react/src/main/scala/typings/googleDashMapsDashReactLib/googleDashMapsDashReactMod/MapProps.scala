@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapProps
   extends googlemapsLib.googleNs.mapsNs.MapOptions {
   var bounds: js.UndefOr[

@@ -18,14 +18,14 @@ trait Decoders
     data: js.Any,
     status: java.lang.String,
     xhr: jqueryLib.JQueryXHR,
-    success: js.Function1[/* repeated */js.Any, scala.Unit]
+    success: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def jsSend(
     data: js.Any,
     status: java.lang.String,
     xhr: jqueryLib.JQueryXHR,
-    success: js.Function1[/* repeated */js.Any, scala.Unit],
-    error: js.Function1[/* repeated */js.Any, scala.Unit]
+    success: js.Function1[/* repeated */ js.Any, scala.Unit],
+    error: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): scala.Unit = js.native
 }
 

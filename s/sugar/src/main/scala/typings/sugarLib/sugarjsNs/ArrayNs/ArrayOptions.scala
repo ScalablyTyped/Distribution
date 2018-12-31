@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ArrayOptions extends js.Object {
   var sortCollate: js.UndefOr[js.Function] = js.undefined
   var sortEquivalents: js.UndefOr[js.Object] = js.undefined

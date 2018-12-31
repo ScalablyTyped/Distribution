@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class EmbeddedViewRef[C] () extends ViewRef {
   /**
-       * The context for this view, inherited from the anchor element.
-       */
+    * The context for this view, inherited from the anchor element.
+    */
   val context: C = js.native
   /**
-       * The root nodes for this embedded view.
-       */
+    * The root nodes for this embedded view.
+    */
   val rootNodes: js.Array[_] = js.native
 }
 

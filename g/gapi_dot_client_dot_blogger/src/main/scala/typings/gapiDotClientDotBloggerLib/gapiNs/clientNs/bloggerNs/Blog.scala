@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Blog extends js.Object {
   /** The JSON custom meta-data for the Blog */
   var customMetaData: js.UndefOr[java.lang.String] = js.undefined

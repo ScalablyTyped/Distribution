@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Topics extends js.Object {
   /**
   			 * If true|"true" the device shows an alert on receipt of notification.

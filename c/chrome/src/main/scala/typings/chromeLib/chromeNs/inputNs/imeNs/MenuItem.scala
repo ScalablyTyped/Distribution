@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MenuItem extends js.Object {
   /** Indicates this item should be drawn with a check. */
   var checked: js.UndefOr[scala.Boolean] = js.undefined

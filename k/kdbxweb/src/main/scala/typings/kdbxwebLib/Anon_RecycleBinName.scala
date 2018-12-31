@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RecycleBinName extends js.Object {
   var HistoryMaxItems: scala.Double
   var HistoryMaxSize: scala.Double

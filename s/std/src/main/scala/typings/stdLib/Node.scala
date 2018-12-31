@@ -26,115 +26,103 @@ trait Node extends EventTarget {
   val PROCESSING_INSTRUCTION_NODE: scala.Double = js.native
   val TEXT_NODE: scala.Double = js.native
   /**
-       * Returns node's node document's document base URL.
-       */
+    * Returns node's node document's document base URL.
+    */
   val baseURI: java.lang.String = js.native
   /**
-       * Returns the children.
-       */
+    * Returns the children.
+    */
   val childNodes: NodeListOf[ChildNode] = js.native
   /**
-       * Returns the first child.
-       */
+    * Returns the first child.
+    */
   val firstChild: ChildNode | scala.Null = js.native
   /**
-       * Returns true if node is connected and false otherwise.
-       */
+    * Returns true if node is connected and false otherwise.
+    */
   val isConnected: scala.Boolean = js.native
   /**
-       * Returns the last child.
-       */
+    * Returns the last child.
+    */
   val lastChild: ChildNode | scala.Null = js.native
   /** @deprecated */
   val namespaceURI: java.lang.String | scala.Null = js.native
   /**
-       * Returns the next sibling.
-       */
+    * Returns the next sibling.
+    */
   val nextSibling: Node | scala.Null = js.native
   /**
-       * Returns a string appropriate for the type of node, as
-       * follows:
-       * Element
-       * Its HTML-uppercased qualified name.
-       * Attr
-       * Its qualified name.
-       * Text
-       * "#text".
-       * CDATASection
-       * "#cdata-section".
-       * ProcessingInstruction
-       * Its target.
-       * Comment
-       * "#comment".
-       * Document
-       * "#document".
-       * DocumentType
-       * Its name.
-       * DocumentFragment
-       * "#document-fragment".
-       */
+    * Returns a string appropriate for the type of node, as
+    * follows:
+    * Element
+    * Its HTML-uppercased qualified name.
+    * Attr
+    * Its qualified name.
+    * Text
+    * "#text".
+    * CDATASection
+    * "#cdata-section".
+    * ProcessingInstruction
+    * Its target.
+    * Comment
+    * "#comment".
+    * Document
+    * "#document".
+    * DocumentType
+    * Its name.
+    * DocumentFragment
+    * "#document-fragment".
+    */
   val nodeName: java.lang.String = js.native
   val nodeType: scala.Double = js.native
   var nodeValue: java.lang.String | scala.Null = js.native
   /**
-       * Returns the node document.
-       * Returns null for documents.
-       */
+    * Returns the node document.
+    * Returns null for documents.
+    */
   val ownerDocument: Document | scala.Null = js.native
   /**
-       * Returns the parent element.
-       */
+    * Returns the parent element.
+    */
   val parentElement: HTMLElement | scala.Null = js.native
   /**
-       * Returns the parent.
-       */
+    * Returns the parent.
+    */
   val parentNode: Node with (ParentNode | scala.Null) = js.native
   /**
-       * Returns the previous sibling.
-       */
+    * Returns the previous sibling.
+    */
   val previousSibling: Node | scala.Null = js.native
   var textContent: java.lang.String | scala.Null = js.native
   def appendChild[T /* <: Node */](newChild: T): T = js.native
   /**
-       * Returns a copy of node. If deep is true, the copy also includes the node's descendants.
-       */
+    * Returns a copy of node. If deep is true, the copy also includes the node's descendants.
+    */
   def cloneNode(): Node = js.native
-  /**
-       * Returns a copy of node. If deep is true, the copy also includes the node's descendants.
-       */
   def cloneNode(deep: scala.Boolean): Node = js.native
   def compareDocumentPosition(other: Node): scala.Double = js.native
-  /**
-       * Returns true if other is an inclusive descendant of node, and false otherwise.
-       */
   def contains(): scala.Boolean = js.native
   /**
-       * Returns true if other is an inclusive descendant of node, and false otherwise.
-       */
+    * Returns true if other is an inclusive descendant of node, and false otherwise.
+    */
   def contains(other: Node): scala.Boolean = js.native
   /**
-       * Returns node's shadow-including root.
-       */
+    * Returns node's shadow-including root.
+    */
   def getRootNode(): Node = js.native
-  /**
-       * Returns node's shadow-including root.
-       */
   def getRootNode(options: GetRootNodeOptions): Node = js.native
   /**
-       * Returns whether node has children.
-       */
+    * Returns whether node has children.
+    */
   def hasChildNodes(): scala.Boolean = js.native
   def insertBefore[T /* <: Node */](newChild: T): T = js.native
   def insertBefore[T /* <: Node */](newChild: T, refChild: Node): T = js.native
   def isDefaultNamespace(): scala.Boolean = js.native
   def isDefaultNamespace(namespace: java.lang.String): scala.Boolean = js.native
-  /**
-       * Returns whether node and otherNode have the same properties.
-       */
   def isEqualNode(): scala.Boolean = js.native
   /**
-       * Returns whether node and otherNode have the same properties.
-       */
+    * Returns whether node and otherNode have the same properties.
+    */
   def isEqualNode(otherNode: Node): scala.Boolean = js.native
   def isSameNode(): scala.Boolean = js.native
   def isSameNode(otherNode: Node): scala.Boolean = js.native
@@ -143,8 +131,8 @@ trait Node extends EventTarget {
   def lookupPrefix(): java.lang.String | scala.Null = js.native
   def lookupPrefix(namespace: java.lang.String): java.lang.String | scala.Null = js.native
   /**
-       * Removes empty exclusive Text nodes and concatenates the data of remaining contiguous exclusive Text nodes into the first of their nodes.
-       */
+    * Removes empty exclusive Text nodes and concatenates the data of remaining contiguous exclusive Text nodes into the first of their nodes.
+    */
   def normalize(): scala.Unit = js.native
   def removeChild[T /* <: Node */](oldChild: T): T = js.native
   def replaceChild[T /* <: Node */](newChild: Node, oldChild: T): T = js.native

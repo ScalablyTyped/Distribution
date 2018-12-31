@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Chain extends js.Object {
   /** Prevents calling next multiple times */
   var onceNext: scala.Boolean

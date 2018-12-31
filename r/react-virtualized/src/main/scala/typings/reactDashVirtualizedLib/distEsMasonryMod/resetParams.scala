@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait resetParams extends js.Object {
   var columnCount: scala.Double
   var columnWidth: scala.Double

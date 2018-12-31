@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RuneListDto extends js.Object {
   var basic: BasicDataDto
   var data: js.Array[org.scalablytyped.runtime.StringDictionary[RuneDto]]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VideoItem extends js.Object {
   def duplicate(): VideoItem
   def getAlignment(): Alignment

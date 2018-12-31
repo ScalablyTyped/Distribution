@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SimplifyOption extends js.Object {
   // sitelinks
   var addUrl: js.UndefOr[scala.Boolean] = js.undefined

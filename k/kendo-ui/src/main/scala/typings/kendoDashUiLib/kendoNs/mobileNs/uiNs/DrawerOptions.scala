@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DrawerOptions extends js.Object {
   var afterHide: js.UndefOr[js.Function1[/* e */ DrawerAfterHideEvent, scala.Unit]] = js.undefined
   var beforeShow: js.UndefOr[js.Function1[/* e */ DrawerEvent, scala.Unit]] = js.undefined

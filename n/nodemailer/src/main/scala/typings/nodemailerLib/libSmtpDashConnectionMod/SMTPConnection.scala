@@ -80,7 +80,6 @@ trait SMTPConnection
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /** Authenticate user */
   def login(
     auth: nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.AuthenticationOAuth2,
     callback: js.Function1[
@@ -88,7 +87,6 @@ trait SMTPConnection
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /** Authenticate user */
   def login(
     auth: nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.Credentials,
     callback: js.Function1[
@@ -204,7 +202,6 @@ trait SMTPConnection
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /** Sends a message */
   def send(
     envelope: nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.Envelope,
     message: nodeLib.Buffer,
@@ -214,7 +211,6 @@ trait SMTPConnection
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /** Sends a message */
   def send(
     envelope: nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.Envelope,
     message: nodeLib.streamMod.Readable,

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CrossFilter[T] extends js.Object {
   def GroupAll(): GroupAll[T, T]
   def add(records: js.Array[T]): CrossFilter[T]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkSheet extends Sheet {
   /** AutoFilter info */
   var `!autofilter`: js.UndefOr[AutoFilterInfo] = js.undefined

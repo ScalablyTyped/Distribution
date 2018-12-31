@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPageSize extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -27,14 +26,14 @@ trait Anon_AccesstokenPageSize extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The number of holds to return in the response, between 0 and 100 inclusive.
-                   * Leaving this empty, or as 0, is the same as page_size = 100.
-                   */
+    * The number of holds to return in the response, between 0 and 100 inclusive.
+    * Leaving this empty, or as 0, is the same as page_size = 100.
+    */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * The pagination token as returned in the response.
-                   * An empty token means start from the beginning.
-                   */
+    * The pagination token as returned in the response.
+    * An empty token means start from the beginning.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

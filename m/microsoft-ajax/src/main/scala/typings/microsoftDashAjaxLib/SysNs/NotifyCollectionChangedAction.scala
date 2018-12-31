@@ -11,29 +11,29 @@ sealed trait NotifyCollectionChangedAction extends js.Object
 //#endregion
 //#region Enumerations
 /**
-    * Describes how a collection has changed.
-    * @see {@link http://msdn.microsoft.com/en-us/library/dd393774(v=vs.100).aspx}
-    */
+  * Describes how a collection has changed.
+  * @see {@link http://msdn.microsoft.com/en-us/library/dd393774(v=vs.100).aspx}
+  */
 @JSGlobal("Sys.NotifyCollectionChangedAction")
 @js.native
 object NotifyCollectionChangedAction extends js.Object {
   /**
-          * The integer 0, indicating the changed action to the collection is add.
-          */
+    * The integer 0, indicating the changed action to the collection is add.
+    */
   @js.native
   sealed trait add
     extends microsoftDashAjaxLib.SysNs.NotifyCollectionChangedAction
   
   /**
-          * The integer 1, indicating the changed action to the collection is remove.
-          */
+    * The integer 1, indicating the changed action to the collection is remove.
+    */
   @js.native
   sealed trait remove
     extends microsoftDashAjaxLib.SysNs.NotifyCollectionChangedAction
   
   /**
-          * The integer 2, indicating the changed action to the collection is reset.
-          */
+    * The integer 2, indicating the changed action to the collection is reset.
+    */
   @js.native
   sealed trait reset
     extends microsoftDashAjaxLib.SysNs.NotifyCollectionChangedAction

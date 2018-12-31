@@ -7,12 +7,11 @@ import scala.scalajs.js.annotation._
 
 // types
 /**
-     * Base interface for collections
-     * 
-     * @interface ICollection
-     * @template I
-     */
-
+  * Base interface for collections
+  * 
+  * @interface ICollection
+  * @template I
+  */
 trait ICollection[I] extends js.Object {
   val Count: scala.Double
   def Add(item: I): scala.Unit

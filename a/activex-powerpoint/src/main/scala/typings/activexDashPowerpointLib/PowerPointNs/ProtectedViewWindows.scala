@@ -14,19 +14,11 @@ class ProtectedViewWindows protected () extends js.Object {
   var `PowerPoint.ProtectedViewWindows_typekey`: ProtectedViewWindows = js.native
   def Item(Index: scala.Double): ProtectedViewWindow = js.native
   /**
-           * @param string [ReadPassword='']
-           * @param Office.MsoTriState [OpenAndRepair=0]
-           */
+    * @param string [ReadPassword='']
+    * @param Office.MsoTriState [OpenAndRepair=0]
+    */
   def Open(FileName: java.lang.String): ProtectedViewWindow = js.native
-  /**
-           * @param string [ReadPassword='']
-           * @param Office.MsoTriState [OpenAndRepair=0]
-           */
   def Open(FileName: java.lang.String, ReadPassword: java.lang.String): ProtectedViewWindow = js.native
-  /**
-           * @param string [ReadPassword='']
-           * @param Office.MsoTriState [OpenAndRepair=0]
-           */
   def Open(
     FileName: java.lang.String,
     ReadPassword: java.lang.String,

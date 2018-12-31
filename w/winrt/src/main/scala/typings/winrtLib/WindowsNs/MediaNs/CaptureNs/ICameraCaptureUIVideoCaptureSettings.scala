@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICameraCaptureUIVideoCaptureSettings extends js.Object {
   var allowTrimming: scala.Boolean
   var format: CameraCaptureUIVideoFormat

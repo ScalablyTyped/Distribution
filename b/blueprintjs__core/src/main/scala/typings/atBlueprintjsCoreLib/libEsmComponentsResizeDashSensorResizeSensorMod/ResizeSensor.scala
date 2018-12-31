@@ -18,16 +18,11 @@ class ResizeSensor ()
   @JSName("componentWillUnmount")
   def componentWillUnmount_MResizeSensor(): scala.Unit = js.native
   /**
-       * Observe the given element, if defined and different from the currently
-       * observed element. Pass `force` argument to skip element checks and always
-       * re-observe.
-       */
+    * Observe the given element, if defined and different from the currently
+    * observed element. Pass `force` argument to skip element checks and always
+    * re-observe.
+    */
   /* private */ def observeElement(element: js.Any): js.Any = js.native
-  /**
-       * Observe the given element, if defined and different from the currently
-       * observed element. Pass `force` argument to skip element checks and always
-       * re-observe.
-       */
   /* private */ def observeElement(element: js.Any, force: js.Any): js.Any = js.native
 }
 

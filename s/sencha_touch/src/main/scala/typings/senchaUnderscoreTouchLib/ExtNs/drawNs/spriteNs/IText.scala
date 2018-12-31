@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IText extends ISprite {
   /** [Config Option] (String) */
   var font: js.UndefOr[java.lang.String] = js.undefined

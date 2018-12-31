@@ -19,7 +19,7 @@ trait Socket extends js.Object {
   def isConnecting(): scala.Boolean = js.native
   def mightBeAboutToAutoConnect(): scala.Boolean = js.native
   def off(event: java.lang.String, cb: js.Function0[_]): Socket = js.native
-  def on(event: java.lang.String, cb: js.Function1[/* repeated */js.Any, _]): Socket = js.native
+  def on(event: java.lang.String, cb: js.Function1[/* repeated */ js.Any, _]): Socket = js.native
   @JSName("on")
   def on_connect(event: sailsDotIoDotJsLib.sailsDotIoDotJsLibStrings.connect, cb: js.Function0[_]): Socket = js.native
   @JSName("on")

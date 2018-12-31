@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JQBlockUIOptions extends js.Object {
   /** 
-       * allow body element to be stetched in ie6; this makes blocking look better
-       * on "short" pages.  disable if you wish to prevent changes to the body height 
-       */
+    * allow body element to be stetched in ie6; this makes blocking look better
+    * on "short" pages.  disable if you wish to prevent changes to the body height 
+    */
   var allowBodyStretch: js.UndefOr[scala.Boolean] = js.undefined
   /** z-index for the blocking overlay */
   var baseZ: js.UndefOr[scala.Double] = js.undefined
@@ -25,10 +24,10 @@ trait JQBlockUIOptions extends js.Object {
   /** be default blockUI will supress tab navigation from leaving blocking content(if bindEvents is true) */
   var constrainTabKey: js.UndefOr[scala.Boolean] = js.undefined
   /** 
-       * styles for the message when blocking; if you wish to disable 
-       * these and use an external stylesheet then do this in your code: 
-       * $.blockUI.defaults.css = {}; 
-       */
+    * styles for the message when blocking; if you wish to disable 
+    * these and use an external stylesheet then do this in your code: 
+    * $.blockUI.defaults.css = {}; 
+    */
   var css: js.UndefOr[js.Any] = js.undefined
   /** style to replace wait cursor before unblocking to correct issue of lingering wait cursor */
   var cursorReset: js.UndefOr[java.lang.String] = js.undefined
@@ -53,11 +52,11 @@ trait JQBlockUIOptions extends js.Object {
   /** callback method invoked when fadeIn has completed and blocking message is visible */
   var onBlock: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** 
-       * callback method invoked when unblocking has completed; the callback is 
-       * passed the element that has been unblocked (which is the window object for page 
-       * blocks) and the options that were passed to the unblock call: 
-       * onUnblock(element, options) 
-       */
+    * callback method invoked when unblocking has completed; the callback is 
+    * passed the element that has been unblocked (which is the window object for page 
+    * blocks) and the options that were passed to the unblock call: 
+    * onUnblock(element, options) 
+    */
   var onUnblock: js.UndefOr[js.Function2[/* element */ js.Any, /* options */ js.Any, scala.Unit]] = js.undefined
   /** styles for the overlay */
   var overlayCSS: js.UndefOr[js.Any] = js.undefined

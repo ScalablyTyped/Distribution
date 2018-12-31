@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object MediaLiveNs extends js.Object {
   @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class Types ()
     extends awsDashSdkLib.awsDashSdkMod.MediaLiveNs.Types {
-    /**
-       * Constructs a service object. This object has one method for each API operation.
-       */
     def this(options: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ClientConfiguration) = this()
   }
   

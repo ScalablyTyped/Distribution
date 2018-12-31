@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDoubleTap extends IRecognizer {
   /** [Method] Returns the value of maxDuration
   		* @returns Number

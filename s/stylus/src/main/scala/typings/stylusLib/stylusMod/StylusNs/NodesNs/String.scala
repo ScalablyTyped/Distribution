@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait String extends Node {
   var prefixed: scala.Boolean
   var quote: java.lang.String

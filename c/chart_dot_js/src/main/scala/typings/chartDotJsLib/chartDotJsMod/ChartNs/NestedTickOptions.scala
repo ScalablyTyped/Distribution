@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NestedTickOptions extends js.Object {
   var autoSkip: js.UndefOr[scala.Boolean] = js.undefined
   var autoSkipPadding: js.UndefOr[scala.Double] = js.undefined

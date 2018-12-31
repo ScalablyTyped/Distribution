@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NetworkPolicy extends js.Object {
   /** Whether network policy is enabled on the cluster. */
   var enabled: js.UndefOr[scala.Boolean] = js.undefined

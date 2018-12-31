@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class MidiSongSelectMessage protected () extends js.Object {
   /**
-                   * Creates a new MidiSongSelectMessage object.
-                   * @param song The song to select from 0-127.
-                   */
+    * Creates a new MidiSongSelectMessage object.
+    * @param song The song to select from 0-127.
+    */
   def this(song: scala.Double) = this()
   /** Gets the array of bytes associated with the MIDI message, including status byte. */
   var rawData: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer = js.native

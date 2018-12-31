@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ToolBarItemMenuButton extends js.Object {
   var attributes: js.UndefOr[js.Any] = js.undefined
   var enable: js.UndefOr[scala.Boolean] = js.undefined

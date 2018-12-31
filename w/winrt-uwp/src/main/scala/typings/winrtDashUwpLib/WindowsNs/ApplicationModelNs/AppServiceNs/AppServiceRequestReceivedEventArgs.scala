@@ -12,9 +12,9 @@ abstract class AppServiceRequestReceivedEventArgs () extends js.Object {
   /** Gets the request that was received from the app service. */
   var request: AppServiceRequest = js.native
   /**
-                   * Informs the system that the event handler might continue to perform work after the event handler returns.
-                   * @return The deferral.
-                   */
+    * Informs the system that the event handler might continue to perform work after the event handler returns.
+    * @return The deferral.
+    */
   def getDeferral(): AppServiceDeferral = js.native
 }
 

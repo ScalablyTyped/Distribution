@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DevicesListResponse extends js.Object {
   /** A managed device. */
   var device: js.UndefOr[js.Array[Device]] = js.undefined

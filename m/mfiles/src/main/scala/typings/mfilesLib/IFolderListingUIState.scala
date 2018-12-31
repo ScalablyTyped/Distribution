@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFolderListingUIState extends js.Object {
   var ColumnSortings: IFolderListingColumnSortings
   var Columns: IFolderListingColumns

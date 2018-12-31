@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains progress information for a data transfer operation. */
-
 trait TransferProgress extends js.Object {
   /** The number of bytes received. */
   var bytesRetrieved: scala.Double

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class UnsubscribeRoomGroupRequest protected () extends js.Object {
   /**
-                   * Creates a new UnsubscribeRoomGroupRequest instance.
-                   * @param {string} groupId The name of the Room Group to unsubscribe.
-                   */
+    * Creates a new UnsubscribeRoomGroupRequest instance.
+    * @param {string} groupId The name of the Room Group to unsubscribe.
+    */
   def this(groupId: java.lang.String) = this()
 }
 

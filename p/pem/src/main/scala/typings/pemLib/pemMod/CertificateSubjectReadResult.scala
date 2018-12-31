@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CertificateSubjectReadResult extends js.Object {
   var commonName: java.lang.String
   var country: java.lang.String

@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Variant of TS 2.2 {@link RequestInit} that permits a
- * {@link PasswordCredential} to be used in the {@code credentials} property.
- * All other properties are identical to {@link RequestInit}.
- */
-
+  * Variant of TS 2.2 {@link RequestInit} that permits a
+  * {@link PasswordCredential} to be used in the {@code credentials} property.
+  * All other properties are identical to {@link RequestInit}.
+  */
 trait CMRequestInit extends js.Object {
   var body: js.UndefOr[js.Any] = js.undefined
   var cache: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SolidFill extends js.Object {
   // The fraction of this `color` that should be applied to the pixel.
   // That is, the final pixel color is defined by the equation:

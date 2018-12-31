@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CFB$Entry extends js.Object {
   /** Class ID represented as hex string */
   var clsid: java.lang.String

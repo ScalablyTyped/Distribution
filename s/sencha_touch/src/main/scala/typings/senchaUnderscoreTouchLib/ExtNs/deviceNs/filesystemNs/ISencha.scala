@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISencha extends IAbstract {
   /** [Method] Requests a Ext device filesystem FileSystem instance
   		* @param config Object The object which contains the following config options:

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Attempts extends js.Object {
   var attempts: scala.Double
   var batch_id: java.lang.String

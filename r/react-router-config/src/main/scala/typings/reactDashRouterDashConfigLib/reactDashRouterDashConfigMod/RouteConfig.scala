@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RouteConfig extends js.Object {
   var component: js.UndefOr[
     reactLib.reactMod.ReactNs.ComponentType[RouteConfigComponentProps[_]] | reactLib.reactMod.ReactNs.ComponentType[js.Object]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISencha extends IAbstract {
   /** [Method] Opens a specified URL
   		* @param url Object

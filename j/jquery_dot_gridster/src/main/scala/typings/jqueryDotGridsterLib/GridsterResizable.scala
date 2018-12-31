@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridsterResizable extends js.Object {
   var axes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var enabled: js.UndefOr[scala.Boolean] = js.undefined

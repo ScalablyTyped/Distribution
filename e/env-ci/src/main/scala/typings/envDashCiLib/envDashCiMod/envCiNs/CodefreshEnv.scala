@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CodefreshEnv extends CiEnvBase {
   var branch: java.lang.String
   var build: java.lang.String

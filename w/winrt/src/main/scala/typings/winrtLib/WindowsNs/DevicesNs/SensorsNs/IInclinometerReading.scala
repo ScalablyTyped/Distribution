@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IInclinometerReading extends js.Object {
   var pitchDegrees: scala.Double
   var rollDegrees: scala.Double

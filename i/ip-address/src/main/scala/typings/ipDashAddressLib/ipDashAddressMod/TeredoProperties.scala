@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TeredoProperties extends js.Object {
   var client4: Address4
   var coneNat: scala.Boolean

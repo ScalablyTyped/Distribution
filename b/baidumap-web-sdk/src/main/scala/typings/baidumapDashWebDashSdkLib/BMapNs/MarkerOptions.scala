@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MarkerOptions extends js.Object {
   var draggingCursor: js.UndefOr[java.lang.String] = js.undefined
   var enableClicking: js.UndefOr[scala.Boolean] = js.undefined

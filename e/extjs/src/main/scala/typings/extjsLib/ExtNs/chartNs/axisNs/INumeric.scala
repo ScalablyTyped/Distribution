@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait INumeric extends IAxis {
   /** [Config Option] (Boolean) */
   var adjustMaximumByMajorUnit: js.UndefOr[scala.Boolean] = js.undefined

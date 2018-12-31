@@ -6,14 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * http://js.cytoscape.org/#eles.kruskal
-     * trivial so implemented in the function
-     */
-
+  * http://js.cytoscape.org/#eles.kruskal
+  * trivial so implemented in the function
+  */
 /**
-     * http://js.cytoscape.org/#eles.pageRank
-     */
-
+  * http://js.cytoscape.org/#eles.pageRank
+  */
 trait SearchPageRankOptions extends js.Object {
   /** Numeric parameter for the algorithm. */
   var dampingFactor: js.UndefOr[scala.Double] = js.undefined

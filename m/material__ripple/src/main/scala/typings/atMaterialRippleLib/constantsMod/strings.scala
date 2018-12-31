@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait strings
   extends atMaterialBaseLib.foundationMod.MDCStrings {
   var VAR_FG_SCALE: atMaterialRippleLib.atMaterialRippleLibStrings.`--mdc-ripple-fg-scale`

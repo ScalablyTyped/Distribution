@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextOutput extends js.Object {
   def append(addedContent: java.lang.String): TextOutput
   def clear(): TextOutput

@@ -14,9 +14,9 @@ class PaperScope ()
 @js.native
 object PaperScope extends js.Object {
   /**
-           * Retrieves a PaperScope object with the given scope id.
-           * @param id - scope id to retrieve
-           */
+    * Retrieves a PaperScope object with the given scope id.
+    * @param id - scope id to retrieve
+    */
   def get(id: java.lang.String): paperLib.paperNs.PaperScope = js.native
 }
 

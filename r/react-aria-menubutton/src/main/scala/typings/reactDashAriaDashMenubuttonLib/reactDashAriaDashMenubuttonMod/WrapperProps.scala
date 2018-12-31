@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WrapperProps[T /* <: reactLib.HTMLElement */]
   extends reactLib.reactMod.ReactNs.HTMLAttributes[T] {
   /**
@@ -32,8 +31,8 @@ trait WrapperProps[T /* <: reactLib.HTMLElement */]
       _
     ]
   ] = js.undefined
-  var tag: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(tagName))) */js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(tagName))) */js.Any
+  var tag: /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.Any
   ] = js.undefined
 }
 

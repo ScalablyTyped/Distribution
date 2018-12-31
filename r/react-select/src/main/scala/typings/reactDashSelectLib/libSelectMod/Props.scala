@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Props[OptionType] extends js.Object {
   /* Aria label (for assistive tech) */
   var `aria-label`: js.UndefOr[java.lang.String] = js.undefined
@@ -24,28 +23,23 @@ trait Props[OptionType] extends js.Object {
   /* classNamePrefix attribute used as a base for inner component classNames */
   var classNamePrefix: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   /*
-       If `true`, close the select menu when the user scrolls the document/body.
-  
-       If a function, takes a standard javascript `ScrollEvent` you return a boolean:
-  
-       `true` => The menu closes
-  
-       `false` => The menu stays open
-  
-       This is useful when you have a scrollable modal and want to portal the menu out,
-       but want to avoid graphical issues.
-     */
+    If `true`, close the select menu when the user scrolls the document/body.
+    If a function, takes a standard javascript `ScrollEvent` you return a boolean:
+    `true` => The menu closes
+    `false` => The menu stays open
+    This is useful when you have a scrollable modal and want to portal the menu out,
+    but want to avoid graphical issues.
+    */
   var closeMenuOnScroll: js.UndefOr[scala.Boolean | stdLib.EventListener] = js.undefined
   /* Close the select menu when the user selects an option */
   var closeMenuOnSelect: js.UndefOr[scala.Boolean] = js.undefined
   /*
-      This complex object includes all the compositional components that are used
-      in `react-select`. If you wish to overwrite a component, pass in an object
-      with the appropriate namespace.
-  
-      If you only wish to restyle a component, we recommend using the `styles` prop
-      instead. For a list of the components that can be passed in, and the shape
-      that will be passed to them, see [the components docs](/api#components)
+    This complex object includes all the compositional components that are used
+    in `react-select`. If you wish to overwrite a component, pass in an object
+    with the appropriate namespace.
+    If you only wish to restyle a component, we recommend using the `styles` prop
+    instead. For a list of the components that can be passed in, and the shape
+    that will be passed to them, see [the components docs](/api#components)
     */
   var components: js.UndefOr[reactDashSelectLib.libComponentsMod.SelectComponentsConfig[OptionType]] = js.undefined
   /* Whether the value of the select, e.g. SingleValue, should be displayed in the control. */
@@ -126,7 +120,7 @@ trait Props[OptionType] extends js.Object {
   /* Whether the menu is open */
   var menuIsOpen: js.UndefOr[scala.Boolean] = js.undefined
   /* Default placement of the menu in relation to the control. 'auto' will flip
-       when there isn't enough space below the control. */
+    when there isn't enough space below the control. */
   var menuPlacement: js.UndefOr[reactDashSelectLib.libTypesMod.MenuPlacement] = js.undefined
   /* Whether the menu should use a portal, and where it should attach */
   var menuPortalTarget: js.UndefOr[reactLib.HTMLElement | scala.Null] = js.undefined

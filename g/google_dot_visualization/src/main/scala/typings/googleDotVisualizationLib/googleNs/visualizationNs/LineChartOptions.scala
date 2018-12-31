@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LineChartOptions extends js.Object {
   var aggregationTarget: js.UndefOr[java.lang.String] = js.undefined
   var animation: js.UndefOr[TransitionAnimation] = js.undefined

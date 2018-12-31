@@ -12,15 +12,15 @@ sealed trait QueryResultType extends js.Object
 @js.native
 object QueryResultType extends js.Object {
   /**
-       * A list of work items (for flat queries).
-       */
+    * A list of work items (for flat queries).
+    */
   @js.native
   sealed trait WorkItem
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.QueryResultType
   
   /**
-       * A list of work item links (for OneHop and Tree queries).
-       */
+    * A list of work item links (for OneHop and Tree queries).
+    */
   @js.native
   sealed trait WorkItemLink
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.QueryResultType

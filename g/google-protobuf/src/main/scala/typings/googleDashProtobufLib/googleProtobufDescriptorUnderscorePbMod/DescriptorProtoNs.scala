@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto")
 @js.native
 object DescriptorProtoNs extends js.Object {
-  
   trait AsObject extends js.Object {
     var enumTypeList: js.Array[
         googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.EnumDescriptorProtoNs.AsObject
@@ -86,7 +85,6 @@ object DescriptorProtoNs extends js.Object {
   @JSName("ExtensionRange")
   @js.native
   object ExtensionRangeNs extends js.Object {
-    
     trait AsObject extends js.Object {
       var end: js.UndefOr[scala.Double] = js.undefined
       var start: js.UndefOr[scala.Double] = js.undefined
@@ -120,7 +118,6 @@ object DescriptorProtoNs extends js.Object {
   @JSName("ReservedRange")
   @js.native
   object ReservedRangeNs extends js.Object {
-    
     trait AsObject extends js.Object {
       var end: js.UndefOr[scala.Double] = js.undefined
       var start: js.UndefOr[scala.Double] = js.undefined

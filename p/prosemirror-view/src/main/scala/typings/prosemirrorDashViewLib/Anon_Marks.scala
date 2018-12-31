@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Marks extends js.Object {
   var key: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var marks: js.UndefOr[js.Array[prosemirrorDashModelLib.prosemirrorDashModelMod.Mark[_]] | scala.Null] = js.undefined

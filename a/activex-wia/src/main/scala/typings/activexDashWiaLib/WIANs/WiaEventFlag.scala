@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait WiaEventFlag extends js.Object
 
 /**
-     * A DeviceEvent's type is composed of bits from the WiaEventFlags enumeration. You can test a DeviceEvent's type by using the AND operation with
-     * DeviceEvent.Type and a member from the WiaEventFlags enumeration.
-     */
+  * A DeviceEvent's type is composed of bits from the WiaEventFlags enumeration. You can test a DeviceEvent's type by using the AND operation with
+  * DeviceEvent.Type and a member from the WiaEventFlags enumeration.
+  */
 @JSGlobal("WIA.WiaEventFlag")
 @js.native
 object WiaEventFlag extends js.Object {

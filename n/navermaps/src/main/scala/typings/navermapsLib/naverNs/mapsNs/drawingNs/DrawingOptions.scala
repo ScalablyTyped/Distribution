@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DrawingOptions extends js.Object {
   var arrowlineOptions: js.UndefOr[navermapsLib.naverNs.mapsNs.PolylineOptions] = js.undefined
   var controlPointOptions: js.UndefOr[controlPointOptions] = js.undefined

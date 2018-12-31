@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISegmentTree
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Returns the minimum range of data that fits the given range and step size

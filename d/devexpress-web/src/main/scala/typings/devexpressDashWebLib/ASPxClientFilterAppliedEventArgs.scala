@@ -6,14 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Provides data for the Applied event.
- */
-
+  * Provides data for the Applied event.
+  */
 trait ASPxClientFilterAppliedEventArgs extends ASPxClientEventArgs {
   /**
-       * Gets the filter expression currently being applied.
-       * Value: A string value that specifies the filter expression currently being applied.
-       */
+    * Gets the filter expression currently being applied.
+    * Value: A string value that specifies the filter expression currently being applied.
+    */
   var filterExpression: java.lang.String
 }
 

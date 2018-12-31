@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Updates the revocation data required by PlayReady. */
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyRevocationServiceRequest")
 @js.native
+/** Initializes a new instance of the PlayReadyRevocationServiceRequest class. */
 class PlayReadyRevocationServiceRequest () extends js.Object {
   /** Gets or sets the custom data of the request challenge. This property is not supported in this class. */
   var challengeCustomData: java.lang.String = js.native
@@ -20,25 +21,25 @@ class PlayReadyRevocationServiceRequest () extends js.Object {
   /** Gets or sets the URI used to perform a service request action. This property is not supported in this class. */
   var uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri = js.native
   /**
-                       * Begins an asynchronous service request operation.
-                       * @return The asynchronous service action.
-                       */
+    * Begins an asynchronous service request operation.
+    * @return The asynchronous service action.
+    */
   def beginServiceRequest(): winrtDashUwpLib.WindowsNs.FoundationNs.IAsyncAction = js.native
   /**
-                       * Begins the process of manually enabling. This method is not supported in this class.
-                       * @return This method always returns 0x80070032 (the request is not supported).
-                       */
+    * Begins the process of manually enabling. This method is not supported in this class.
+    * @return This method always returns 0x80070032 (the request is not supported).
+    */
   def generateManualEnablingChallenge(): PlayReadySoapMessage = js.native
   /**
-                       * Returns a new service request interface.
-                       * @return The new service request interface.
-                       */
+    * Returns a new service request interface.
+    * @return The new service request interface.
+    */
   def nextServiceRequest(): IPlayReadyServiceRequest = js.native
   /**
-                       * Process the raw binary result of a manual enabling challenge. This method is not supported in this class.
-                       * @param responseBytes The response result to be processed.
-                       * @return This method always returns 0x80070032 (the request is not supported).
-                       */
+    * Process the raw binary result of a manual enabling challenge. This method is not supported in this class.
+    * @param responseBytes The response result to be processed.
+    * @return This method always returns 0x80070032 (the request is not supported).
+    */
   def processManualEnablingResponse(responseBytes: js.Array[scala.Double]): winrtDashUwpLib.WindowsNs.WinRTError = js.native
 }
 

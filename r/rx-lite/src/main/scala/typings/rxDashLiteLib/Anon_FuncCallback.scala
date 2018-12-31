@@ -8,13 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_FuncCallback extends js.Object {
   // with any function without selector
-  def apply[T](func: js.Function): js.Function1[/* repeated */js.Any, rxDashLiteLib.RxNs.Observable[T]] = js.native
+  def apply[T](func: js.Function): js.Function1[/* repeated */ js.Any, rxDashLiteLib.RxNs.Observable[T]] = js.native
   // with any callback without selector
   def apply[TR](func: js.Function1[/* callback */ js.Function, _]): js.Function0[rxDashLiteLib.RxNs.Observable[TR]] = js.native
-  // with any callback without selector
   def apply[TR](func: js.Function1[/* callback */ js.Function, _], context: js.Any): js.Function0[rxDashLiteLib.RxNs.Observable[TR]] = js.native
-  // with any function without selector
-  def apply[T](func: js.Function, context: js.Any): js.Function1[/* repeated */js.Any, rxDashLiteLib.RxNs.Observable[T]] = js.native
+  def apply[T](func: js.Function, context: js.Any): js.Function1[/* repeated */ js.Any, rxDashLiteLib.RxNs.Observable[T]] = js.native
   // with any callback with selector
   def apply[TC, TR](
     func: js.Function1[/* callback */ js.Function, _],
@@ -24,7 +22,7 @@ trait Anon_FuncCallback extends js.Object {
   def apply[T1, TR](func: js.Function2[/* arg1 */ T1, /* callback */ js.Function, _]): js.Function1[/* arg1 */ T1, rxDashLiteLib.RxNs.Observable[TR]] = js.native
   def apply[T1, TR](func: js.Function2[/* arg1 */ T1, /* callback */ js.Function, _], context: js.Any): js.Function1[/* arg1 */ T1, rxDashLiteLib.RxNs.Observable[TR]] = js.native
   // with any function with selector
-  def apply[TC, T](func: js.Function, context: js.Any, selector: js.Function1[/* results */ js.Array[TC], T]): js.Function1[/* repeated */js.Any, rxDashLiteLib.RxNs.Observable[T]] = js.native
+  def apply[TC, T](func: js.Function, context: js.Any, selector: js.Function1[/* results */ js.Array[TC], T]): js.Function1[/* repeated */ js.Any, rxDashLiteLib.RxNs.Observable[T]] = js.native
   def apply[T1, TC, TR](
     func: js.Function2[/* arg1 */ T1, /* callback */ js.Function, _],
     context: js.Any,

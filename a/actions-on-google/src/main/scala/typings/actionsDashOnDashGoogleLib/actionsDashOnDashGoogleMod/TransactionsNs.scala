@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 object TransactionsNs extends js.Object {
   @js.native
+  /**
+    * Constructor for Cart.
+    *
+    * @param cartId Optional unique identifier for the cart.
+    */
   class Cart ()
     extends actionsDashOnDashGoogleLib.transactionsMod.Cart {
-    /**
-         * Constructor for Cart.
-         *
-         * @param cartId Optional unique identifier for the cart.
-         */
     def this(cartId: java.lang.String) = this()
   }
   
@@ -23,11 +23,11 @@ object TransactionsNs extends js.Object {
   class LineItem protected ()
     extends actionsDashOnDashGoogleLib.transactionsMod.LineItem {
     /**
-         * Constructor for LineItem.
-         *
-         * @param lineItemId Unique identifier for the item.
-         * @param name Name of the item.
-         */
+      * Constructor for LineItem.
+      *
+      * @param lineItemId Unique identifier for the item.
+      * @param name Name of the item.
+      */
     def this(lineItemId: java.lang.String, name: java.lang.String) = this()
   }
   
@@ -35,10 +35,10 @@ object TransactionsNs extends js.Object {
   class Order protected ()
     extends actionsDashOnDashGoogleLib.transactionsMod.Order {
     /**
-         * Constructor for Order.
-         *
-         * @param orderId Unique identifier for the order.
-         */
+      * Constructor for Order.
+      *
+      * @param orderId Unique identifier for the order.
+      */
     def this(orderId: java.lang.String) = this()
   }
   
@@ -46,12 +46,12 @@ object TransactionsNs extends js.Object {
   class OrderUpdate protected ()
     extends actionsDashOnDashGoogleLib.transactionsMod.OrderUpdate {
     /**
-         * Constructor for OrderUpdate.
-         *
-         * @param orderId Unique identifier of the order.
-         * @param isGoogleOrderId True if the order ID is provided by
-         *     Google. False if the order ID is app provided.
-         */
+      * Constructor for OrderUpdate.
+      *
+      * @param orderId Unique identifier of the order.
+      * @param isGoogleOrderId True if the order ID is provided by
+      *     Google. False if the order ID is app provided.
+      */
     def this(orderId: java.lang.String, isGoogleOrderId: scala.Boolean) = this()
   }
   
@@ -59,8 +59,8 @@ object TransactionsNs extends js.Object {
   @js.native
   object TransactionValuesNs extends js.Object {
     /**
-         * List of possible actions to take on the order.
-         */
+      * List of possible actions to take on the order.
+      */
     @js.native
     object ActionType extends js.Object {
       val CALL: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ActionType.CALL with java.lang.String = js.native
@@ -81,8 +81,8 @@ object TransactionsNs extends js.Object {
     }
     
     /**
-         * List of transaction card networks available when paying with Google.
-         */
+      * List of transaction card networks available when paying with Google.
+      */
     @js.native
     object CardNetwork extends js.Object {
       val AMEX: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.CardNetwork.AMEX with java.lang.String = js.native
@@ -98,8 +98,8 @@ object TransactionsNs extends js.Object {
     }
     
     /**
-         * List of possible order confirmation user decisions
-         */
+      * List of possible order confirmation user decisions
+      */
     @js.native
     object ConfirmationDecision extends js.Object {
       val ACCEPTED: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ConfirmationDecision.ACCEPTED with java.lang.String = js.native
@@ -114,8 +114,8 @@ object TransactionsNs extends js.Object {
     }
     
     /**
-         * List of customer information properties that can be requested.
-         */
+      * List of customer information properties that can be requested.
+      */
     @js.native
     object CustomerInfoProperties extends js.Object {
       val CUSTOMER_INFO_PROPERTY_UNSPECIFIED: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.CustomerInfoProperties.CUSTOMER_INFO_PROPERTY_UNSPECIFIED with java.lang.String = js.native
@@ -127,8 +127,8 @@ object TransactionsNs extends js.Object {
     }
     
     /**
-         * List of possible user decisions to give delivery address.
-         */
+      * List of possible user decisions to give delivery address.
+      */
     @js.native
     object DeliveryAddressDecision extends js.Object {
       val ACCEPTED: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.DeliveryAddressDecision.ACCEPTED with java.lang.String = js.native
@@ -141,8 +141,8 @@ object TransactionsNs extends js.Object {
     }
     
     /**
-         * List of possible user decisions to give delivery address.
-         */
+      * List of possible user decisions to give delivery address.
+      */
     @js.native
     object DeliveryAddressUserDecision extends js.Object {
       val ACCEPTED: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.DeliveryAddressUserDecision.ACCEPTED with java.lang.String = js.native
@@ -155,8 +155,8 @@ object TransactionsNs extends js.Object {
     }
     
     /**
-         * List of possible item types.
-         */
+      * List of possible item types.
+      */
     @js.native
     object ItemType extends js.Object {
       val DELIVERY: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ItemType.DELIVERY with java.lang.String = js.native
@@ -174,8 +174,8 @@ object TransactionsNs extends js.Object {
     }
     
     /**
-         * List of possible item types.
-         */
+      * List of possible item types.
+      */
     @js.native
     object LineItemType extends js.Object {
       val DELIVERY: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LineItemType.DELIVERY with java.lang.String = js.native
@@ -193,8 +193,8 @@ object TransactionsNs extends js.Object {
     }
     
     /**
-         * List of possible order location types.
-         */
+      * List of possible order location types.
+      */
     @js.native
     object LocationType extends js.Object {
       val BUSINESS: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.LocationType.BUSINESS with java.lang.String = js.native
@@ -210,8 +210,8 @@ object TransactionsNs extends js.Object {
     }
     
     /**
-         * List of possible actions to take on the order.
-         */
+      * List of possible actions to take on the order.
+      */
     @js.native
     object OrderAction extends js.Object {
       val CALL: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderAction.CALL with java.lang.String = js.native
@@ -232,8 +232,8 @@ object TransactionsNs extends js.Object {
     }
     
     /**
-         * List of possible order location types.
-         */
+      * List of possible order location types.
+      */
     @js.native
     object OrderLocationType extends js.Object {
       val BUSINESS: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderLocationType.BUSINESS with java.lang.String = js.native
@@ -249,8 +249,8 @@ object TransactionsNs extends js.Object {
     }
     
     /**
-         * List of possible order states.
-         */
+      * List of possible order states.
+      */
     @js.native
     object OrderState extends js.Object {
       val CANCELLED: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderState.CANCELLED with java.lang.String = js.native
@@ -267,8 +267,8 @@ object TransactionsNs extends js.Object {
     }
     
     /**
-         * List of possible order state objects.
-         */
+      * List of possible order state objects.
+      */
     @js.native
     object OrderStateInfo extends js.Object {
       val CANCELLATION: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.OrderStateInfo.CANCELLATION with java.lang.String = js.native
@@ -284,8 +284,8 @@ object TransactionsNs extends js.Object {
     }
     
     /**
-         * List of possible tokenization types for the payment method
-         */
+      * List of possible tokenization types for the payment method
+      */
     @js.native
     object PaymentMethodTokenizationType extends js.Object {
       val DIRECT: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentMethodTokenizationType.DIRECT with java.lang.String = js.native
@@ -298,8 +298,8 @@ object TransactionsNs extends js.Object {
     }
     
     /**
-         * List of possible item types.
-         */
+      * List of possible item types.
+      */
     @js.native
     object PaymentType extends js.Object {
       val BANK: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PaymentType.BANK with java.lang.String = js.native
@@ -315,8 +315,8 @@ object TransactionsNs extends js.Object {
     }
     
     /**
-         * List of price types.
-         */
+      * List of price types.
+      */
     @js.native
     object PriceType extends js.Object {
       val ACTUAL: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.PriceType.ACTUAL with java.lang.String = js.native
@@ -329,8 +329,8 @@ object TransactionsNs extends js.Object {
     }
     
     /**
-         * List of possible types of order rejection.
-         */
+      * List of possible types of order rejection.
+      */
     @js.native
     object ReasonType extends js.Object {
       val PAYMENT_DECLINED: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ReasonType.PAYMENT_DECLINED with java.lang.String = js.native
@@ -342,8 +342,8 @@ object TransactionsNs extends js.Object {
     }
     
     /**
-         * List of possible types of order rejection.
-         */
+      * List of possible types of order rejection.
+      */
     @js.native
     object RejectionType extends js.Object {
       val PAYMENT_DECLINED: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.RejectionType.PAYMENT_DECLINED with java.lang.String = js.native
@@ -355,8 +355,8 @@ object TransactionsNs extends js.Object {
     }
     
     /**
-         * List of possible order transaction requirements check result types.
-         */
+      * List of possible order transaction requirements check result types.
+      */
     @js.native
     object ResultType extends js.Object {
       val ASSISTANT_SURFACE_NOT_SUPPORTED: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ResultType.ASSISTANT_SURFACE_NOT_SUPPORTED with java.lang.String = js.native
@@ -371,8 +371,8 @@ object TransactionsNs extends js.Object {
     }
     
     /**
-         * List of possible order time types.
-         */
+      * List of possible order time types.
+      */
     @js.native
     object TimeType extends js.Object {
       val DELIVERY_DATE: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TimeType.DELIVERY_DATE with java.lang.String = js.native
@@ -386,8 +386,8 @@ object TransactionsNs extends js.Object {
     }
     
     /**
-         * List of possible order confirmation user decisions
-         */
+      * List of possible order confirmation user decisions
+      */
     @js.native
     object TransactionUserDecision extends js.Object {
       val ACCEPTED: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TransactionUserDecision.ACCEPTED with java.lang.String = js.native

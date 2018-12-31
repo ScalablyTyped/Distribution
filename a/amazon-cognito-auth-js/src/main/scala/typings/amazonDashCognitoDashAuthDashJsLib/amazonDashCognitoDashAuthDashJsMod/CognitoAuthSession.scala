@@ -9,60 +9,60 @@ import scala.scalajs.js.annotation._
 @js.native
 class CognitoAuthSession protected () extends js.Object {
   /**
-       * Constructs a new CognitoUserSession object
-       * @param sessionData The session's tokens, scopes, and state.
-       */
+    * Constructs a new CognitoUserSession object
+    * @param sessionData The session's tokens, scopes, and state.
+    */
   def this(sessionData: CognitoSessionData) = this()
   /**
-       * @returns the session's access token
-       */
+    * @returns the session's access token
+    */
   def getAccessToken(): CognitoAccessToken = js.native
   /**
-       *  @returns the session's Id token
-       */
+    *  @returns the session's Id token
+    */
   def getIdToken(): CognitoIdToken = js.native
   /**
-       * @returns the session's refresh token
-       */
+    * @returns the session's refresh token
+    */
   def getRefreshToken(): CognitoRefreshToken = js.native
   /**
-       * @returns the session's state
-       */
+    * @returns the session's state
+    */
   def getState(): java.lang.String = js.native
   /**
-       * @returns the session's token scopes
-       */
+    * @returns the session's token scopes
+    */
   def getTokenScopes(): CognitoTokenScopes = js.native
   /**
-       * Checks to see if the session is still valid based on session expiry information found
-       * in Access and Id Tokens and the current time
-       * @returns if the session is still valid
-       */
+    * Checks to see if the session is still valid based on session expiry information found
+    * in Access and Id Tokens and the current time
+    * @returns if the session is still valid
+    */
   def isValid(): scala.Boolean = js.native
   /**
-       * Set a new Access token
-       * @param AccessToken The session's access token.
-       */
+    * Set a new Access token
+    * @param AccessToken The session's access token.
+    */
   def setAccessToken(AccessToken: CognitoAccessToken): scala.Unit = js.native
   /**
-       * Set a new Id token
-       * @param IdToken The session's Id token.
-       */
+    * Set a new Id token
+    * @param IdToken The session's Id token.
+    */
   def setIdToken(IdToken: CognitoIdToken): scala.Unit = js.native
   /**
-       * Set a new Refresh token
-       * @param RefreshToken The session's refresh token.
-       */
+    * Set a new Refresh token
+    * @param RefreshToken The session's refresh token.
+    */
   def setRefreshToken(RefreshToken: CognitoRefreshToken): scala.Unit = js.native
   /**
-       * Set new state
-       * @param state The session's state.
-       */
+    * Set new state
+    * @param state The session's state.
+    */
   def setState(State: java.lang.String): scala.Unit = js.native
   /**
-       * Set new token scopes
-       * @param tokenScopes The session's token scopes.
-       */
+    * Set new token scopes
+    * @param tokenScopes The session's token scopes.
+    */
   def setTokenScopes(tokenScopes: CognitoTokenScopes): scala.Unit = js.native
 }
 

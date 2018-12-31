@@ -33,7 +33,7 @@ object coreNsMembers extends js.Object {
   def isFunction(o: js.Any): scala.Boolean = js.native
   def isGuid(o: js.Any): scala.Boolean = js.native
   def isNumeric(o: js.Any): scala.Boolean = js.native
-  def memoize(fn: js.Function1[/* repeated */js.Any, _]): js.Any = js.native
+  def memoize(fn: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
   def objectForEach(obj: js.Object, kvfn: js.Function2[/* key */ java.lang.String, /* value */ js.Any, scala.Unit]): scala.Unit = js.native
   def pluck(propertyName: java.lang.String): js.Function1[/* obj */ js.Object, _] = js.native
   def propEq(propertyName: java.lang.String, value: js.Any): js.Function1[/* obj */ js.Object, scala.Boolean] = js.native

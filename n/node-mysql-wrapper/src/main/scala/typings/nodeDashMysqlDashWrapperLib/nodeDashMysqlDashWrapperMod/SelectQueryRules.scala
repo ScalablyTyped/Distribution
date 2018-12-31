@@ -29,8 +29,8 @@ class SelectQueryRules () extends js.Object {
   def clearOrderBy(): SelectQueryRules = js.native
   def except(columns: java.lang.String*): SelectQueryRules = js.native
   /**
-       * Same as .except(...columns)
-       */
+    * Same as .except(...columns)
+    */
   def exclude(columns: java.lang.String*): SelectQueryRules = js.native
   def from(parentRule: SelectQueryRules): SelectQueryRules = js.native
   def groupBy(columnKey: java.lang.String): SelectQueryRules = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSStyleBorderOptions extends js.Object {
   var _class: sketchappLib.sketchappLibStrings.styleBorderOptions
   var dashPattern: js.Array[_]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PagerItemProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libPagerItemMod.PagerItem] {
   var eventKey: js.UndefOr[js.Any] = js.undefined

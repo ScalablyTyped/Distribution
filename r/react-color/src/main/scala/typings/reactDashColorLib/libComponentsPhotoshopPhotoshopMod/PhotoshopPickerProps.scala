@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PhotoshopPickerProps
   extends reactDashColorLib.reactDashColorMod.ColorPickerProps[PhotoshopPicker] {
   var header: js.UndefOr[java.lang.String] = js.undefined

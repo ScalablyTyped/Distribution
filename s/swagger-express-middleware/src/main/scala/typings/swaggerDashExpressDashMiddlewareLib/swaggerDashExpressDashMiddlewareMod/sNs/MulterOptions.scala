@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MulterOptions extends js.Object {
   /** The destination directory for the uploaded files. */
   var dest: js.UndefOr[java.lang.String] = js.undefined

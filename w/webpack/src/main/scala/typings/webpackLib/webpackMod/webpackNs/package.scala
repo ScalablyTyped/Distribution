@@ -8,13 +8,12 @@ import scala.scalajs.js.annotation._
 package object webpackNs {
   type AuxiliaryCommentObject = webpackLib.webpackLibStrings.AuxiliaryCommentObject with js.Any
   /**
-       * Plugins
-       */
-  
+    * Plugins
+    */
   type BannerPlugin = Plugin
   /**
-       * @deprecated Use RuleSetCondition instead
-       */
+    * @deprecated Use RuleSetCondition instead
+    */
   type Condition = RuleSetCondition
   type ContextReplacementPlugin = Plugin
   type DefinePlugin = Plugin
@@ -53,8 +52,8 @@ package object webpackNs {
   type ProgressPlugin = Plugin
   type ProvidePlugin = Plugin
   /**
-       * @deprecated Use RuleSetRule instead
-       */
+    * @deprecated Use RuleSetRule instead
+    */
   type Rule = RuleSetRule
   type RuleSetCondition = stdLib.RegExp | java.lang.String | (js.Function1[/* path */ java.lang.String, scala.Boolean]) | RuleSetConditions | webpackLib.Anon_Test
   type RuleSetQuery = java.lang.String | org.scalablytyped.runtime.StringDictionary[js.Any]

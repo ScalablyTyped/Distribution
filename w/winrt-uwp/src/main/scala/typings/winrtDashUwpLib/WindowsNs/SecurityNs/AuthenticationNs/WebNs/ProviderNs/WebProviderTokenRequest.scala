@@ -18,11 +18,11 @@ abstract class WebProviderTokenRequest () extends js.Object {
   /** Gets the web accounts for the request. */
   var webAccounts: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.WebAccount] = js.native
   /**
-                           * Gets a token binding key for the app asynchronously.
-                           * @param keyType The type of key to get.
-                           * @param target The target Uri.
-                           * @return When this method completes, it returns a cryptographic key.
-                           */
+    * Gets a token binding key for the app asynchronously.
+    * @param keyType The type of key to get.
+    * @param target The target Uri.
+    * @return When this method completes, it returns a cryptographic key.
+    */
   def getApplicationTokenBindingKeyAsync(
     keyType: winrtDashUwpLib.WindowsNs.SecurityNs.AuthenticationNs.WebNs.TokenBindingKeyType,
     target: winrtDashUwpLib.WindowsNs.FoundationNs.Uri

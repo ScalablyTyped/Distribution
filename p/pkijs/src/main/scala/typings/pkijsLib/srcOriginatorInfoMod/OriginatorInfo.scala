@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OriginatorInfo extends js.Object {
   var certs: pkijsLib.srcCertificateSetMod.default
   var crls: pkijsLib.srcRevocationInfoChoicesMod.default

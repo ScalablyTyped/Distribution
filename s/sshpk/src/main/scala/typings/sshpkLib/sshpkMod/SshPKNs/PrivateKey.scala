@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PrivateKey extends js.Object {
   def createSign(hashAlgo: java.lang.String): Signer
   def createVerify(hashAlgo: java.lang.String): Key

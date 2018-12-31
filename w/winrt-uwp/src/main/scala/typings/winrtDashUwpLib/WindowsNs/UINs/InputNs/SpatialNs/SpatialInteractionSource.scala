@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class SpatialInteractionSource () extends js.Object {
   var id: js.Any = js.native
-   /* unmapped type */var kind: js.Any = js.native
+   /* unmapped type */ var kind: js.Any = js.native
 }
 

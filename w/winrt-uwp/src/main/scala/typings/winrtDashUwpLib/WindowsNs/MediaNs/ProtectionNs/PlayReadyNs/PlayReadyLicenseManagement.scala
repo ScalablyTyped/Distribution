@@ -15,10 +15,10 @@ abstract class PlayReadyLicenseManagement () extends js.Object
 @js.native
 object PlayReadyLicenseManagement extends js.Object {
   /**
-                       * Deletes licenses that match the specified content header.
-                       * @param contentHeader Content header with a key identifier with which to match licenses.
-                       * @return The asynchronous operation performing the deletion.
-                       */
+    * Deletes licenses that match the specified content header.
+    * @param contentHeader Content header with a key identifier with which to match licenses.
+    * @return The asynchronous operation performing the deletion.
+    */
   def deleteLicenses(contentHeader: winrtDashUwpLib.WindowsNs.MediaNs.ProtectionNs.PlayReadyNs.PlayReadyContentHeader): winrtDashUwpLib.WindowsNs.FoundationNs.IAsyncAction = js.native
 }
 

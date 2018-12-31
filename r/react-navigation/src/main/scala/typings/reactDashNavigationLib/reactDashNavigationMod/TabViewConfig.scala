@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TabViewConfig extends js.Object {
   var animationEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var `lazy`: js.UndefOr[scala.Boolean] = js.undefined

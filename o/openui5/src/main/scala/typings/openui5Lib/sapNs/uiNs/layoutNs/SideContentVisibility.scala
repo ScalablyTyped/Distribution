@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait SideContentVisibility extends js.Object
 
 /**
-       * Types of the DynamicSideContent Visibility options
-      */
+  * Types of the DynamicSideContent Visibility options
+  */
 @JSGlobal("sap.ui.layout.SideContentVisibility")
 @js.native
 object SideContentVisibility extends js.Object {

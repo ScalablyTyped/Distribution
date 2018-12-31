@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDirective[TScope /* <: IScope */, TElement /* <: angularLib.JQLite */, TAttributes /* <: IAttributes */, TController /* <: IDirectiveController */] extends js.Object {
   /**
-           * Deprecation warning: although bindings for non-ES6 class controllers are currently bound to this before
-           * the controller constructor is called, this use is now deprecated. Please place initialization code that
-           * relies upon bindings inside a $onInit method on the controller, instead.
-           */
+    * Deprecation warning: although bindings for non-ES6 class controllers are currently bound to this before
+    * the controller constructor is called, this use is now deprecated. Please place initialization code that
+    * relies upon bindings inside a $onInit method on the controller, instead.
+    */
   var bindToController: js.UndefOr[scala.Boolean | org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   var compile: js.UndefOr[IDirectiveCompileFn[TScope, TElement, TAttributes, TController]] = js.undefined
   var controller: js.UndefOr[java.lang.String | Injectable[IControllerConstructor]] = js.undefined
@@ -22,8 +21,8 @@ trait IDirective[TScope /* <: IScope */, TElement /* <: angularLib.JQLite */, TA
   var multiElement: js.UndefOr[scala.Boolean] = js.undefined
   var priority: js.UndefOr[scala.Double] = js.undefined
   /**
-           * @deprecated
-           */
+    * @deprecated
+    */
   var replace: js.UndefOr[scala.Boolean] = js.undefined
   var require: js.UndefOr[
     java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[java.lang.String]

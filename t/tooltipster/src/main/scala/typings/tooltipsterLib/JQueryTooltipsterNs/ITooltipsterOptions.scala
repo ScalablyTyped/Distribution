@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITooltipsterOptions
   extends /**
 		 * Several plugins may have options of the same name. To resolve the conflict, wrap the options of plugins 

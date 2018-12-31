@@ -12,8 +12,8 @@ package object SelectorsNs {
     /* isXML */ scala.Boolean, 
     java.lang.String
   ]
-  type CreatePseudoFunction = js.Function1[/* repeated */js.Any, PseudoFunction]
-  type FilterFunction = js.Function2[/* element */ java.lang.String, /* repeated */java.lang.String, scala.Boolean]
+  type CreatePseudoFunction = js.Function1[/* repeated */ js.Any, PseudoFunction]
+  type FilterFunction = js.Function2[/* element */ java.lang.String, /* repeated */ java.lang.String, scala.Boolean]
   type FindFunction = js.Function3[
     /* match */ stdLib.RegExpMatchArray, 
     /* context */ stdLib.Element | stdLib.Document, 

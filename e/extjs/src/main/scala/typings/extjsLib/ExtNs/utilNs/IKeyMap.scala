@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IKeyMap
   extends extjsLib.ExtNs.IBase {
   /** [Method] Add a new binding to this KeyMap

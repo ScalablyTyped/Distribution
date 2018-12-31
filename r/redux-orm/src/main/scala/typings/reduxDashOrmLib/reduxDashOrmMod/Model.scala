@@ -31,7 +31,7 @@ object Model extends js.Object {
    // TODO
   val query: reduxDashOrmLib.reduxDashOrmMod.QuerySet[_, js.Object, js.Object] = js.native
   var querySetClass: org.scalablytyped.runtime.Instantiable3[
-    /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(redux-orm), TsIdentModule(None,List(redux-orm)), TsIdentSimple(Model)))) *//* modelClass */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: typeof redux-orm.redux-orm.Model */ /* modelClass */ js.Any, 
     /* clauses */ reduxDashOrmLib.reduxDashOrmMod.QuerySetClauses, 
     /* opts */ reduxDashOrmLib.reduxDashOrmMod.QuerySetOpts, 
     reduxDashOrmLib.reduxDashOrmMod.QuerySet[js.Object, js.Object, js.Object]

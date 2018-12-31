@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Tasks extends js.Object {
   /** ETag of the resource. */
   var etag: js.UndefOr[java.lang.String] = js.undefined

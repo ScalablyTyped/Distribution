@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SubmitButton extends js.Object {
   def addBlurHandler(handler: Handler): SubmitButton
   def addClickHandler(handler: Handler): SubmitButton

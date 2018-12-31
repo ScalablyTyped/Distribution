@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GanttPdf extends js.Object {
   var author: js.UndefOr[java.lang.String] = js.undefined
   var avoidLinks: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined

@@ -12,22 +12,22 @@ sealed trait AgentStatus extends js.Object
 @js.native
 object AgentStatus extends js.Object {
   /**
-       * Indicates that the build agent is currently available.
-       */
+    * Indicates that the build agent is currently available.
+    */
   @js.native
   sealed trait Available
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.AgentStatus
   
   /**
-       * Indicates that the build agent has taken itself offline.
-       */
+    * Indicates that the build agent has taken itself offline.
+    */
   @js.native
   sealed trait Offline
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.AgentStatus
   
   /**
-       * Indicates that the build agent cannot be contacted.
-       */
+    * Indicates that the build agent cannot be contacted.
+    */
   @js.native
   sealed trait Unavailable
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.AgentStatus

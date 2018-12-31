@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SyncAsyncFileSystemDecorator extends js.Object {
   var fs: enhancedDashResolveLib.libCommonDashTypesMod.AbstractInputFileSystem
   var readFile: js.UndefOr[

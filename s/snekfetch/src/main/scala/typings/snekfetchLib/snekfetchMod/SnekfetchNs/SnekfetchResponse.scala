@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SnekfetchResponse extends js.Object {
   var body: java.lang.String | js.Object | nodeLib.Buffer
   var headers: org.scalablytyped.runtime.StringDictionary[js.Any]

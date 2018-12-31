@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageProps extends js.Object {
   var alt: java.lang.String
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined

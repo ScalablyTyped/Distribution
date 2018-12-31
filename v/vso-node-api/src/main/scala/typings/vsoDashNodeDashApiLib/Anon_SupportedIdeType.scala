@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SupportedIdeType extends js.Object {
   var Attachment: js.Any
   var Change: js.Any

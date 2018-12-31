@@ -112,7 +112,6 @@ trait Element
   def opacity(o: scala.Double): this.type = js.native
   // Add HTMLElement for Doc inheritance
   def parent(): Parent | stdLib.HTMLElement = js.native
-  // Add HTMLElement for Doc inheritance
   def parent(`type`: ParentTypeAlias): Parent | stdLib.HTMLElement = js.native
   def parents(): js.Array[Parent] = js.native
   def point(): Point = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TypeSuccess extends js.Object {
   var event: expoLib.expoMod.HashMap
   var params: expoLib.expoMod.HashMap

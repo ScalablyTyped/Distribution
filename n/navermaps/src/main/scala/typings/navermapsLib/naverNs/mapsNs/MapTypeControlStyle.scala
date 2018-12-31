@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait MapTypeControlStyle extends js.Object
 
 /**
-   * Enums
-   */
+  * Enums
+  */
 @JSGlobal("naver.maps.MapTypeControlStyle")
 @js.native
 object MapTypeControlStyle extends js.Object {

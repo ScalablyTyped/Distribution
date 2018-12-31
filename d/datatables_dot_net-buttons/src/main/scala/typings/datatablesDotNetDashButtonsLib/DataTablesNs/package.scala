@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 package object DataTablesNs {
   /**
-       * A function that will be executed upon creation of the buttons.
-       */
+    * A function that will be executed upon creation of the buttons.
+    */
   type FunctionButtom = js.Function1[/* dt */ Api, ButtomSettingsCommon]
   type FunctionButtonAction = js.Function4[
     /* e */ js.Any, 

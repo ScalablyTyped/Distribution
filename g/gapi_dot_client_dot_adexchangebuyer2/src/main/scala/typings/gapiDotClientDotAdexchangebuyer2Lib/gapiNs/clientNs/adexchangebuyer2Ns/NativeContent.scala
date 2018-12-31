@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NativeContent extends js.Object {
   /** The name of the advertiser or sponsor, to be displayed in the ad creative. */
   var advertiserName: js.UndefOr[java.lang.String] = js.undefined

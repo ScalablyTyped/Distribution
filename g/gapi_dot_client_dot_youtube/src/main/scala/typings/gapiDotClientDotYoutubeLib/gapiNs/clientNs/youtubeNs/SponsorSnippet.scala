@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SponsorSnippet extends js.Object {
   /** The id of the channel being sponsored. */
   var channelId: js.UndefOr[java.lang.String] = js.undefined

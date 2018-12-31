@@ -17,8 +17,6 @@ class ServerResponse protected () extends OutgoingMessage {
   // https://github.com/nodejs/node/blob/master/test/parallel/test-http-write-callbacks.js#L53
   // no args in writeContinue callback
   def writeContinue(): scala.Unit = js.native
-  // https://github.com/nodejs/node/blob/master/test/parallel/test-http-write-callbacks.js#L53
-  // no args in writeContinue callback
   def writeContinue(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def writeHead(statusCode: scala.Double): scala.Unit = js.native
   def writeHead(statusCode: scala.Double, headers: OutgoingHttpHeaders): scala.Unit = js.native

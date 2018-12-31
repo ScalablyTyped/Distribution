@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ItemsReturnValue extends js.Object {
   var items: js.Array[winrtLib.WindowsNs.StorageNs.SearchNs.SortEntry]
   var returnValue: scala.Double

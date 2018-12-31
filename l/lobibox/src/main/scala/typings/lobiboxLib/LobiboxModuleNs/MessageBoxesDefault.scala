@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MessageBoxesDefault extends js.Object {
   var baseClass: js.UndefOr[java.lang.String] = js.undefined
   // when messagebox remove method is called but before it is actually hidden

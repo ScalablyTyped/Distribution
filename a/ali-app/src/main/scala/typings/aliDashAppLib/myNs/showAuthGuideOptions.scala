@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion
 //#region 权限引导 https://docs.alipay.com/mini/api/show-auth-guide
-
 trait showAuthGuideOptions
   extends BaseOptions[js.Any, js.Any] {
   /**

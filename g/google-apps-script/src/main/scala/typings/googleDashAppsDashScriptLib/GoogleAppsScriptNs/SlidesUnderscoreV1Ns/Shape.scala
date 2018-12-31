@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 // A PageElement kind representing a
 // generic shape that does not have a more specific classification.
-
 trait Shape extends js.Object {
   // Placeholders are shapes that are inherit from corresponding placeholders on
   // layouts and masters.

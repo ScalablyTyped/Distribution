@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("meteor/http", "HTTP")
 @js.native
 object HTTPNs extends js.Object {
-  
   trait HTTPRequest extends js.Object {
     var auth: js.UndefOr[java.lang.String] = js.undefined
     var content: js.UndefOr[java.lang.String] = js.undefined
@@ -20,7 +19,6 @@ object HTTPNs extends js.Object {
     var query: js.UndefOr[java.lang.String] = js.undefined
     var timeout: js.UndefOr[scala.Double] = js.undefined
   }
-  
   
   trait HTTPResponse extends js.Object {
     var content: js.UndefOr[java.lang.String] = js.undefined

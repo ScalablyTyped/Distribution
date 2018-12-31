@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BootstrapSelectOptions extends js.Object {
   var actionsBox: js.UndefOr[scala.Boolean] = js.undefined
   var container: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined

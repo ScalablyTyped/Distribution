@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RawArgument extends js.Object {
   var formattedKey: java.lang.String
   var option: KnownOption

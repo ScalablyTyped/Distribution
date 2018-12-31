@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccountUser extends js.Object {
   /** Whether user is an admin. */
   var admin: js.UndefOr[scala.Boolean] = js.undefined

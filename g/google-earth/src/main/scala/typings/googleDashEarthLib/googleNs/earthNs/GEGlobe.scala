@@ -9,13 +9,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class GEGlobe () extends KmlObject {
   /**
-       * The top-level features currently in the Earth instance.
-       */
+    * The top-level features currently in the Earth instance.
+    */
   def getFeatures(): GEFeatureContainer = js.native
   /**
-       * Returns the altitude for a given location on the globe.
-       * If the altitude data for the location has not yet been loaded, the return value is 0.
-       */
+    * Returns the altitude for a given location on the globe.
+    * If the altitude data for the location has not yet been loaded, the return value is 0.
+    */
   def getGroundAltitude(lat: scala.Double, lon: scala.Double): scala.Double = js.native
 }
 

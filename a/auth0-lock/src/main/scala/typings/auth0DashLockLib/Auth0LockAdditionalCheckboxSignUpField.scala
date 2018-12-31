@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Auth0LockAdditionalCheckboxSignUpField extends js.Object {
   var icon: js.UndefOr[java.lang.String] = js.undefined
   var name: java.lang.String

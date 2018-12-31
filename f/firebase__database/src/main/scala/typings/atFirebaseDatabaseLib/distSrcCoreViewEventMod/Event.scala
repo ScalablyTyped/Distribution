@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Event extends js.Object {
   /**
-       * @return {!function()}
-       */
+    * @return {!function()}
+    */
   def getEventRunner(): js.Function0[scala.Unit]
   /**
-       * @return {!string}
-       */
+    * @return {!string}
+    */
   def getEventType(): java.lang.String
   /**
-       * @return {!Path}
-       */
+    * @return {!Path}
+    */
   def getPath(): atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path
 }
 

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Encapsulates the identity of a data scope in a DataView. */
-
 trait DataViewScopeIdentity extends js.Object {
   /** Predicate expression that identifies the scope. */
   var expr: powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.dataNs.ISQExpr

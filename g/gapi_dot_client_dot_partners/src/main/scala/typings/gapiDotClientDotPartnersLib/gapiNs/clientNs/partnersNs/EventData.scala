@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventData extends js.Object {
   /** Data type. */
   var key: js.UndefOr[java.lang.String] = js.undefined

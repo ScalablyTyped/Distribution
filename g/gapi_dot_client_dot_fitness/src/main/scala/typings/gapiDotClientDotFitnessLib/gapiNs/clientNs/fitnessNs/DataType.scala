@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataType extends js.Object {
   /** A field represents one dimension of a data type. */
   var field: js.UndefOr[js.Array[DataTypeField]] = js.undefined

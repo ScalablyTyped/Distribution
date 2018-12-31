@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenCourseIdPrettyPrint extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -13,9 +12,9 @@ trait Anon_AccesstokenCourseIdPrettyPrint extends js.Object {
   /** OAuth access token. */
   var access_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Alias to delete.
-                   * This may not be the Classroom-assigned identifier.
-                   */
+    * Alias to delete.
+    * This may not be the Classroom-assigned identifier.
+    */
   var alias: java.lang.String
   /** Data format for response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -24,10 +23,10 @@ trait Anon_AccesstokenCourseIdPrettyPrint extends js.Object {
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Identifier of the course whose alias should be deleted.
-                   * This identifier can be either the Classroom-assigned identifier or an
-                   * alias.
-                   */
+    * Identifier of the course whose alias should be deleted.
+    * This identifier can be either the Classroom-assigned identifier or an
+    * alias.
+    */
   var courseId: java.lang.String
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined

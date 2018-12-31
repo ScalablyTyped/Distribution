@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GitConflictRename2to1 extends GitConflict {
   var resolution: GitResolutionPathConflict
   var sourceNewBlob: GitBlobRef

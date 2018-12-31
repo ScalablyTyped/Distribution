@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccountPermission extends js.Object {
   /**
-               * Account profiles associated with this account permission.
-               *
-               * Possible values are:
-               * - "ACCOUNT_PROFILE_BASIC"
-               * - "ACCOUNT_PROFILE_STANDARD"
-               */
+    * Account profiles associated with this account permission.
+    *
+    * Possible values are:
+    * - "ACCOUNT_PROFILE_BASIC"
+    * - "ACCOUNT_PROFILE_STANDARD"
+    */
   var accountProfiles: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** ID of this account permission. */
   var id: js.UndefOr[java.lang.String] = js.undefined

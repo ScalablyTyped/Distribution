@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Service extends js.Object {
   var methods: js.Array[RPCMethod]
   var name: java.lang.String

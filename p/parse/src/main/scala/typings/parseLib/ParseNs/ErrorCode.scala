@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ErrorCode extends js.Object
 
 /*
-     * We need to inline the codes in order to make compilation work without this type definition as dependency.
-     */
+  * We need to inline the codes in order to make compilation work without this type definition as dependency.
+  */
 @JSGlobal("Parse.ErrorCode")
 @js.native
 object ErrorCode extends js.Object {

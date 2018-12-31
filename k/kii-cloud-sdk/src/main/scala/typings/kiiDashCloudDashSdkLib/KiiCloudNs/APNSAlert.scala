@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait APNSAlert extends js.Object {
   var `action-loc-key`: java.lang.String
   var body: java.lang.String

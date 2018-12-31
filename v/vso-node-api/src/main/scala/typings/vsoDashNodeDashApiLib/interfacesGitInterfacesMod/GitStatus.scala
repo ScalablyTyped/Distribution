@@ -5,43 +5,42 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GitStatus extends js.Object {
   /**
-       * Reference links.
-       */
+    * Reference links.
+    */
   var _links: js.Any
   /**
-       * Context of the status.
-       */
+    * Context of the status.
+    */
   var context: GitStatusContext
   /**
-       * Identity that created the status.
-       */
+    * Identity that created the status.
+    */
   var createdBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
   /**
-       * Creation date and time of the status.
-       */
+    * Creation date and time of the status.
+    */
   var creationDate: stdLib.Date
   /**
-       * Status description. Typically describes current state of the status.
-       */
+    * Status description. Typically describes current state of the status.
+    */
   var description: java.lang.String
   /**
-       * Status identifier.
-       */
+    * Status identifier.
+    */
   var id: scala.Double
   /**
-       * State of the status.
-       */
+    * State of the status.
+    */
   var state: GitStatusState
   /**
-       * URL with status details.
-       */
+    * URL with status details.
+    */
   var targetUrl: java.lang.String
   /**
-       * Last update date and time of the status.
-       */
+    * Last update date and time of the status.
+    */
   var updatedDate: stdLib.Date
 }
 

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents an email message. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailMessage")
 @js.native
+/** Creates an instance of the EmailMessage class. */
 class EmailMessage () extends js.Object {
   /** Gets or sets a Boolean value indicating whether images may be embedded in the html encoded email message. */
   var allowInternetImages: scala.Boolean = js.native
@@ -80,16 +81,16 @@ class EmailMessage () extends js.Object {
   /** Gets the direct recipients of the email message. */
   var to: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[EmailRecipient] = js.native
   /**
-                   * Gets the requested email stream such as plain text or HTML.
-                   * @param type The kind of message body; plain text or HTML.
-                   * @return The selected body stream.
-                   */
+    * Gets the requested email stream such as plain text or HTML.
+    * @param type The kind of message body; plain text or HTML.
+    * @return The selected body stream.
+    */
   def getBodyStream(`type`: EmailMessageBodyKind): winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStreamReference = js.native
   /**
-                   * Sets the value of the specified body stream in an email message.
-                   * @param type Indicates which body stream, plain text or HTML.
-                   * @param stream The message for the specified body stream.
-                   */
+    * Sets the value of the specified body stream in an email message.
+    * @param type Indicates which body stream, plain text or HTML.
+    * @param stream The message for the specified body stream.
+    */
   def setBodyStream(
     `type`: EmailMessageBodyKind,
     stream: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStreamReference

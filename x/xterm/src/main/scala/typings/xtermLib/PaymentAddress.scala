@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaymentAddress extends js.Object {
   val addressLine: js.Array[java.lang.String]
   val city: java.lang.String

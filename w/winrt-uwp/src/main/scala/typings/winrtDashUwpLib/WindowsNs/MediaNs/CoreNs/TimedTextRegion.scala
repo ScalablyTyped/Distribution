@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Exposes properties for customizing the appearance of the rendering area of a TimedTextCue . */
 @JSGlobal("Windows.Media.Core.TimedTextRegion")
 @js.native
+/** Initializes a new instance of the TimedTextRegion class. */
 class TimedTextRegion () extends js.Object {
   /** Gets or sets the background color of the TimedTextRegion . */
   var background: winrtDashUwpLib.WindowsNs.UINs.Color = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Match extends js.Object {
   /** Inbound domain associated with this webhook. Required when protocol is “SMTP”. */
   var domain: js.UndefOr[java.lang.String] = js.undefined

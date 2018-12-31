@@ -89,11 +89,6 @@ trait Socket
   		 * @return This Socket
   		 */
   def disconnect(): Socket = js.native
-  /**
-  		 * Disconnects this Socket
-  		 * @param close If true, also closes the underlying connection
-  		 * @return This Socket
-  		 */
   def disconnect(close: scala.Boolean): Socket = js.native
   /**
   		 * @see to( room )
@@ -108,32 +103,8 @@ trait Socket
   		 * @return This Socket
   		 */
   def join(name: java.lang.String): Socket = js.native
-  /**
-  		 * Joins a room. You can join multiple rooms, and by default, on connection,
-  		 * you join a room with the same name as your ID
-  		 * @param name The name of the room that we want to join
-  		 * @param fn An optional callback to call when we've joined the room. It should
-  		 * take an optional parameter, err, of a possible error
-  		 * @return This Socket
-  		 */
   def join(name: java.lang.String, fn: js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit]): Socket = js.native
-  /**
-  		 * Joins a room. You can join multiple rooms, and by default, on connection,
-  		 * you join a room with the same name as your ID
-  		 * @param name The name of the room that we want to join
-  		 * @param fn An optional callback to call when we've joined the room. It should
-  		 * take an optional parameter, err, of a possible error
-  		 * @return This Socket
-  		 */
   def join(name: js.Array[java.lang.String]): Socket = js.native
-  /**
-  		 * Joins a room. You can join multiple rooms, and by default, on connection,
-  		 * you join a room with the same name as your ID
-  		 * @param name The name of the room that we want to join
-  		 * @param fn An optional callback to call when we've joined the room. It should
-  		 * take an optional parameter, err, of a possible error
-  		 * @return This Socket
-  		 */
   def join(name: js.Array[java.lang.String], fn: js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit]): Socket = js.native
   /**
   		 * Leaves a room
@@ -142,12 +113,6 @@ trait Socket
   		 * take on optional parameter, err, of a possible error
   		 */
   def leave(name: java.lang.String): Socket = js.native
-  /**
-  		 * Leaves a room
-  		 * @param name The name of the room to leave
-  		 * @param fn An optional callback to call when we've left the room. It should
-  		 * take on optional parameter, err, of a possible error
-  		 */
   def leave(name: java.lang.String, fn: js.Function): Socket = js.native
   /**
   		 * Leaves all the rooms that we've joined

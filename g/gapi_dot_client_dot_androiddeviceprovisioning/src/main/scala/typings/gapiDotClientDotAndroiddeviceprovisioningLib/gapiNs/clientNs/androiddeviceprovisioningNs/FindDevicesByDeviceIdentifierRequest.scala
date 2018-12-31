@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FindDevicesByDeviceIdentifierRequest extends js.Object {
   /** The device identifier to search. */
   var deviceIdentifier: js.UndefOr[DeviceIdentifier] = js.undefined

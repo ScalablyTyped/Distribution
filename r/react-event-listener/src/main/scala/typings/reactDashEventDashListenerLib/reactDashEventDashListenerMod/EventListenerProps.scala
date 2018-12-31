@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventListenerProps extends js.Object {
   var oNmsPointerUp: js.UndefOr[js.Function1[/* ev */ stdLib.MSPointerEvent, _]] = js.undefined
   var oNmsPointerUpCapture: js.UndefOr[js.Function1[/* ev */ stdLib.MSPointerEvent, _]] = js.undefined
@@ -205,8 +204,8 @@ trait EventListenerProps extends js.Object {
   var onWheel: js.UndefOr[js.Function1[/* ev */ reactLib.WheelEvent, _]] = js.undefined
   var onWheelCapture: js.UndefOr[js.Function1[/* ev */ reactLib.WheelEvent, _]] = js.undefined
   /**
-       * Target (window or document)
-       */
+    * Target (window or document)
+    */
   var target: stdLib.Window | reactLib.Document | java.lang.String
 }
 

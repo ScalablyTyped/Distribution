@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** 4.6 Errors and exceptions - asynchronous database API error
- */
+  */
 @JSGlobal("SQLError")
 @js.native
 class SQLError () extends js.Object {
@@ -16,7 +16,7 @@ class SQLError () extends js.Object {
 }
 
 /** 4.6 Errors and exceptions - asynchronous database API error
- */
+  */
 @JSGlobal("SQLError")
 @js.native
 object SQLError extends js.Object {

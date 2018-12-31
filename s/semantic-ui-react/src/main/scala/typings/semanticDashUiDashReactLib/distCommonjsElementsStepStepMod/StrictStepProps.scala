@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictStepProps extends js.Object {
   /** A step can be highlighted as active. */
   var active: js.UndefOr[scala.Boolean] = js.undefined
@@ -36,12 +35,12 @@ trait StrictStepProps extends js.Object {
   /** A step can be link. */
   var link: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * Called on click. When passed, the component will render as an `a`.
-     * tag by default instead of a `div`.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called on click. When passed, the component will render as an `a`.
+    * tag by default instead of a `div`.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onClick: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 

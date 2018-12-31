@@ -14,7 +14,6 @@ class AnimationBehaviors protected () extends js.Object {
   var `PowerPoint.AnimationBehaviors_typekey`: AnimationBehaviors = js.native
   /** @param number [Index=-1] */
   def Add(Type: MsoAnimType): AnimationBehavior = js.native
-  /** @param number [Index=-1] */
   def Add(Type: MsoAnimType, Index: scala.Double): AnimationBehavior = js.native
   def Item(Index: scala.Double): AnimationBehavior = js.native
 }

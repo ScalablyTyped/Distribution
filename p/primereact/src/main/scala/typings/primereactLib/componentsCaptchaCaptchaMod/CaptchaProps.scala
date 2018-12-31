@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CaptchaProps extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   var language: js.UndefOr[java.lang.String] = js.undefined

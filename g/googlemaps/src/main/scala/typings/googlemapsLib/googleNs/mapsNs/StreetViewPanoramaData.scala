@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StreetViewPanoramaData extends js.Object {
   var copyright: js.UndefOr[java.lang.String] = js.undefined
   var imageDate: js.UndefOr[java.lang.String] = js.undefined

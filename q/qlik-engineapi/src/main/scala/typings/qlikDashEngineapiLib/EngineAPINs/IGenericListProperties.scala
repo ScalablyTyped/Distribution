@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * GenericListProperties...
-     */
-
+  * GenericListProperties...
+  */
 trait IGenericListProperties extends IGenericProperties {
   var qListObjectDef: IListObjectDef
 }

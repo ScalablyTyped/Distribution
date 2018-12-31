@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveMultipleInheritance: Dropped parents List(jsflLib.FlashBitmapItem because Would inherit conflicting mutable fields List(compressionType, fileLastModifiedDate, originalCompressionType, sourceFileExists, sourceFilePath), jsflLib.FlashVideoItem because Would inherit conflicting mutable fields List(fileLastModifiedDate, sourceFileExists, sourceFilePath))*/
-
 trait FlashItem
   extends FlashSymbolItem
      with FlashFolderItem

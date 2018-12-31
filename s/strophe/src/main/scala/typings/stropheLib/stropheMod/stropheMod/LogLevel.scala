@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Constants: Log Level Constants
-     *  Logging level indicators.
-     *
-     *  LogLevel.DEBUG - Debug output
-     *  LogLevel.INFO - Informational output
-     *  LogLevel.WARN - Warnings
-     *  LogLevel.ERROR - Errors
-     *  LogLevel.FATAL - Fatal errors
-     */
+  *  Logging level indicators.
+  *
+  *  LogLevel.DEBUG - Debug output
+  *  LogLevel.INFO - Informational output
+  *  LogLevel.WARN - Warnings
+  *  LogLevel.ERROR - Errors
+  *  LogLevel.FATAL - Fatal errors
+  */
 @JSImport("Strophe", "LogLevel")
 @js.native
 object LogLevel extends js.Object {

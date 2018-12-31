@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait INumeric extends ISegmenter {
   /** [Method] Add step units to the value
   		* @param value Object

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Renderer extends js.Object {
   def blockquote(quote: java.lang.String): java.lang.String
   def br(): java.lang.String

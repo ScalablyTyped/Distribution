@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GeocoderRequest extends js.Object {
   var address: js.UndefOr[java.lang.String] = js.undefined
   var bounds: js.UndefOr[LatLngBounds | LatLngBoundsLiteral] = js.undefined

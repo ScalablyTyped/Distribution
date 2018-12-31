@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NodeValue extends js.Object {
   /** Type of an interaction on conversion path. Such as CLICK, IMPRESSION etc. */
   var interactionType: js.UndefOr[java.lang.String] = js.undefined

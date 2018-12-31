@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DirectionalHint12 extends js.Object {
   var beakWidth: scala.Double
   var directionalHint: officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibNumbers.`12`

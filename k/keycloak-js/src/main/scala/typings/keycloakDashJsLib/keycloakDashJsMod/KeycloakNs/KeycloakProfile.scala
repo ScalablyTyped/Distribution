@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeycloakProfile extends js.Object {
   var createdTimestamp: js.UndefOr[scala.Double] = js.undefined
   var email: js.UndefOr[java.lang.String] = js.undefined

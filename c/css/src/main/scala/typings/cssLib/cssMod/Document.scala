@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Document extends Node {
   /** The part following @document. */
   var document: js.UndefOr[java.lang.String] = js.undefined

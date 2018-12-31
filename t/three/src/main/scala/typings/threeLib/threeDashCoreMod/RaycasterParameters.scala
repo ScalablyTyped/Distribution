@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RaycasterParameters extends js.Object {
   var LOD: js.UndefOr[js.Any] = js.undefined
   var Line: js.UndefOr[js.Any] = js.undefined

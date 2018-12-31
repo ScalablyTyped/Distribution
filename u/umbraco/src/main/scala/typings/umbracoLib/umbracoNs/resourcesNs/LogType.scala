@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait LogType extends js.Object
 
 /**
-     * LogType
-     */
+  * LogType
+  */
 @JSGlobal("umbraco.resources.LogType")
 @js.native
 object LogType extends js.Object {

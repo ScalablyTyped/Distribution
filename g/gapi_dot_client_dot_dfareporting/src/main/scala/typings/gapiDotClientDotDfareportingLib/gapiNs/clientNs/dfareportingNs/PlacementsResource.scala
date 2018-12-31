@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlacementsResource extends js.Object {
   /** Generates tags for a placement. */
   def generatetags(request: gapiDotClientDotDfareportingLib.Anon_ProfileIdPrettyPrintQuotaUserKeyPlacementIds): gapiDotClientLib.gapiNs.clientNs.Request[PlacementsGenerateTagsResponse]

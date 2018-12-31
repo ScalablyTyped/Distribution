@@ -10,8 +10,6 @@ trait OutputStream extends js.Object {
   // If options.source_map is set, this will generate a source mapping between the given token (which should be an AST_Token-like {}) and the current line/col.
   // The name is optional; in most cases it will be inferred from the token.
   def add_mapping(token: AST_Node): scala.Unit = js.native
-  // If options.source_map is set, this will generate a source mapping between the given token (which should be an AST_Token-like {}) and the current line/col.
-  // The name is optional; in most cases it will be inferred from the token.
   def add_mapping(token: AST_Node, name: java.lang.String): scala.Unit = js.native
   // Returns the current column in the output (zero-based).
   def col(): scala.Double = js.native
@@ -29,9 +27,6 @@ trait OutputStream extends js.Object {
   // Optionally pass true to indent half the width (I'm using that for case and default lines in switch blocks.
   // If beautify is off, this function does nothing.
   def indent(): scala.Unit = js.native
-  // Insert one indentation string (usually 4 characters).
-  // Optionally pass true to indent half the width (I'm using that for case and default lines in switch blocks.
-  // If beautify is off, this function does nothing.
   def indent(half: scala.Boolean): scala.Unit = js.native
   // Return the current indentation width (not level; for example if we're in level 2 and indent_level is 4, this method would return 8.
   def indentation(): scala.Double = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TileMinimizedEventUIParam extends js.Object {
   /**
   	 * Used to get a reference to the tile manager the minimized tile belongs to.

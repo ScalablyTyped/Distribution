@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeyBinds extends js.Object {
   var `control down`: js.UndefOr[
     js.Function1[

@@ -12,7 +12,7 @@ package object jestNs {
   type CustomMatcher = js.ThisFunction2[
     /* this */ MatcherUtils, 
     /* received */ js.Any, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     CustomMatcherResult | js.Promise[CustomMatcherResult]
   ]
   type EmptyFunction = js.Function0[scala.Unit]
@@ -42,16 +42,16 @@ package object jestNs {
   type Maybe[T] = js.UndefOr[scala.Unit | scala.Null | T]
   type Milliseconds = scala.Double
   /**
-       * Wrap module with mock definitions
-       *
-       * @example
-       *
-       *  jest.mock("../api");
-       *  import { Api } from "../api";
-       *
-       *  const myApi: jest.Mocked<Api> = new Api() as any;
-       *  myApi.myApiMethod.mockImplementation(() => "test");
-       */
+    * Wrap module with mock definitions
+    *
+    * @example
+    *
+    *  jest.mock("../api");
+    *  import { Api } from "../api";
+    *
+    *  const myApi: jest.Mocked<Api> = new Api() as any;
+    *  myApi.myApiMethod.mockImplementation(() => "test");
+    */
   type Mocked[T] = jestLib.jestLibStrings.Mocked with T
   type ModuleMap = js.Any
   type ModuleMocker = js.Any

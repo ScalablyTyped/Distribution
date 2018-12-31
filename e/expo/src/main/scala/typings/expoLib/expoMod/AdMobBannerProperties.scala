@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AdMobBannerProperties
   extends reactDashNativeLib.reactDashNativeMod.ViewProps {
   var adUnitID: js.UndefOr[java.lang.String] = js.undefined

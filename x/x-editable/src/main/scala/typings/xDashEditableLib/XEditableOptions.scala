@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait XEditableOptions extends js.Object {
   var ajaxOptions: js.UndefOr[js.Any] = js.undefined
   var anim: js.UndefOr[java.lang.String] = js.undefined

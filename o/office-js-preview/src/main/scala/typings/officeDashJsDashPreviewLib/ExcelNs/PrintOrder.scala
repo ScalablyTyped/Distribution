@@ -9,26 +9,26 @@ import scala.scalajs.js.annotation._
 sealed trait PrintOrder extends js.Object
 
 /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.PrintOrder")
 @js.native
 object PrintOrder extends js.Object {
   /**
-           *
-           * Process down the rows before processing across pages or page fields to the right.
-           *
-           */
+    *
+    * Process down the rows before processing across pages or page fields to the right.
+    *
+    */
   @js.native
   sealed trait downThenOver
     extends officeDashJsDashPreviewLib.ExcelNs.PrintOrder
   
   /**
-           *
-           * Process across pages or page fields to the right before moving down the rows.
-           *
-           */
+    *
+    * Process across pages or page fields to the right before moving down the rows.
+    *
+    */
   @js.native
   sealed trait overThenDown
     extends officeDashJsDashPreviewLib.ExcelNs.PrintOrder

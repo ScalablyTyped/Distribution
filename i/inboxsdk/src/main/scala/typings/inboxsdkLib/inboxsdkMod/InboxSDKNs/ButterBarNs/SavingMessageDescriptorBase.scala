@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SavingMessageDescriptorBase extends MessageDescriptorBase {
   var confirmationText: js.UndefOr[java.lang.String] = js.undefined
   var confirmationTime: js.UndefOr[scala.Double] = js.undefined

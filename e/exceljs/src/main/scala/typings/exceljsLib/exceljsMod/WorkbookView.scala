@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkbookView extends js.Object {
   var activeTab: js.UndefOr[scala.Double] = js.undefined
   var firstSheet: js.UndefOr[scala.Double] = js.undefined

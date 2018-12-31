@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BootstrapSparklineEventMap extends ControlEventMap {
   var disposing: BootstrapChartEventArgsBase
   var drawn: BootstrapChartEventArgsBase

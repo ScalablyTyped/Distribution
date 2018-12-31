@@ -18,9 +18,9 @@ object BrowserNavConstants extends js.Object {
     extends activexDashShdocvwLib.SHDocVwNs.BrowserNavConstants
   
   /**
-           * Internet Explorer 8. Block cross-domain redirect requests. The navigation triggers the
-           * [**DWebBrowserEvents2::RedirectXDomainBlocked**](https://msdn.microsoft.com/en-us/library/dd565686(v=vs.85).aspx) event if blocked.
-           */
+    * Internet Explorer 8. Block cross-domain redirect requests. The navigation triggers the
+    * [**DWebBrowserEvents2::RedirectXDomainBlocked**](https://msdn.microsoft.com/en-us/library/dd565686(v=vs.85).aspx) event if blocked.
+    */
   @js.native
   sealed trait BlockRedirectsXDomain
     extends activexDashShdocvwLib.SHDocVwNs.BrowserNavConstants
@@ -36,17 +36,17 @@ object BrowserNavConstants extends js.Object {
     extends activexDashShdocvwLib.SHDocVwNs.BrowserNavConstants
   
   /**
-           * Internet Explorer 6 for Windows XP SP2 and later. If the navigation fails when a hyperlink is being followed, this constant specifies that the resource should then be bound to the
-           * moniker using the [**BINDF_HYPERLINK**](https://msdn.microsoft.com/en-us/library/ms775130(v=vs.85).aspx) flag.
-           */
+    * Internet Explorer 6 for Windows XP SP2 and later. If the navigation fails when a hyperlink is being followed, this constant specifies that the resource should then be bound to the
+    * moniker using the [**BINDF_HYPERLINK**](https://msdn.microsoft.com/en-us/library/ms775130(v=vs.85).aspx) flag.
+    */
   @js.native
   sealed trait Hyperlink
     extends activexDashShdocvwLib.SHDocVwNs.BrowserNavConstants
   
   /**
-           * Internet Explorer 7. Maintain state for dynamic navigation based on the filter string entered in the search band text box (wordwheel). Restore the wordwheel text when the navigation
-           * completes.
-           */
+    * Internet Explorer 7. Maintain state for dynamic navigation based on the filter string entered in the search band text box (wordwheel). Restore the wordwheel text when the navigation
+    * completes.
+    */
   @js.native
   sealed trait KeepWordWheelText
     extends activexDashShdocvwLib.SHDocVwNs.BrowserNavConstants
@@ -92,10 +92,10 @@ object BrowserNavConstants extends js.Object {
     extends activexDashShdocvwLib.SHDocVwNs.BrowserNavConstants
   
   /**
-           * Internet Explorer 8. Open the resource as a replacement for the current or target tab. The existing tab is closed while the new tab takes its place in the tab bar and replaces it in the
-           * tab group, if any. Browser history is copied forward to the new tab. On Windows Vista, this flag is implied if the navigation would cross integrity levels and **navOpenInNewTab**,
-           * **navOpenInBackgroundTab**, or **navOpenInNewWindow**> is not specified.
-           */
+    * Internet Explorer 8. Open the resource as a replacement for the current or target tab. The existing tab is closed while the new tab takes its place in the tab bar and replaces it in the
+    * tab group, if any. Browser history is copied forward to the new tab. On Windows Vista, this flag is implied if the navigation would cross integrity levels and **navOpenInNewTab**,
+    * **navOpenInBackgroundTab**, or **navOpenInNewWindow**> is not specified.
+    */
   @js.native
   sealed trait VirtualTab
     extends activexDashShdocvwLib.SHDocVwNs.BrowserNavConstants

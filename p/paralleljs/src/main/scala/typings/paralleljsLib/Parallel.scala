@@ -15,12 +15,6 @@ class Parallel[T] protected () extends js.Object {
   	* @param opts Some options for your job.
   	**/
   def this(data: T) = this()
-  /**
-  	* This is the constructor.  Use it to new up any parallel jobs.  The constructor takes an array of data you want to operate on.  This data will be held in memory until you finish your job, and can be accessed via the .data attribute of your job.
-  	* The object returned by the Parallel constructor is meant to be chained, so you can produce a chain of operations on the provided data.
-  	* @param data This is the data you wish to operate on.  Will often be an array, but the only restrictions are that your values are serializable as JSON.
-  	* @param opts Some options for your job.
-  	**/
   def this(data: T, opts: ParallelOptions) = this()
   /**
   	* Data
@@ -61,12 +55,6 @@ class Parallel[T] protected () extends js.Object {
   	* @return Parallel instance.
   	**/
   def `then`(success: js.Function1[/* data */ T, scala.Unit]): Parallel[T] = js.native
-  /**
-  	* The functions given to then are called after the last requested operation has finished.  success receives the resulting data object, while fail will receive an error object.
-  	* @param success A function that gets called upon successful completion.  Receives the wrapped data as an argument.
-  	* @param fail A function that gets called if the job fails.  The function is passed an error object.
-  	* @return Parallel instance.
-  	**/
   def `then`(
     success: js.Function1[/* data */ T, scala.Unit],
     fail: js.Function1[/* e */ stdLib.Error, scala.Unit]

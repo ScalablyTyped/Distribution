@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WindowOptions extends MessageBoxesOptions {
     // Override default option
   var autoload: js.UndefOr[scala.Boolean] = js.undefined

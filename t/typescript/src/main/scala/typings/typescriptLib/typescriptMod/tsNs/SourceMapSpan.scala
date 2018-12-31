@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SourceMapSpan extends js.Object {
   /** Column number in the .js file. */
   var emittedColumn: scala.Double

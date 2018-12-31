@@ -22,11 +22,11 @@ class envelope protected () extends js.Object {
   	 */
   def createFromBleed(bleed: scala.Double): envelope = js.native
   /**
-       * Creates a new envelope from this one plus x and y margins.
-       * @param {number} marginX The x margin.
-       * @param {number} marginY The y margin.
-       * @returns {envelope} A new envelope.
-       */
+    * Creates a new envelope from this one plus x and y margins.
+    * @param {number} marginX The x margin.
+    * @param {number} marginY The y margin.
+    * @returns {envelope} A new envelope.
+    */
   def createFromMargins(marginX: scala.Double, marginY: scala.Double): envelope = js.native
   /**
   	 * Equality comparer between this and another envelope.
@@ -75,9 +75,9 @@ class envelope protected () extends js.Object {
   	 */
   def getMaxY(): scala.Double = js.native
   /**
-       * Gets the minimum x coordinate of the envelope.
-       * @returns {number} The minimum x coordinate. 
-       */
+    * Gets the minimum x coordinate of the envelope.
+    * @returns {number} The minimum x coordinate. 
+    */
   def getMinX(): scala.Double = js.native
   /**
   	 * Gets the minimum y coordinate of the envelope
@@ -101,7 +101,7 @@ class envelope protected () extends js.Object {
   def getWidth(): scala.Double = js.native
   /**
   	 * Create a closed geometry from this envelope.
-       * @returns {geometry} A new closed path geometry.
+    * @returns {geometry} A new closed path geometry.
   	 */
   def toGeometry(): geometry = js.native
   /**

@@ -12,36 +12,36 @@ sealed trait ConnectOptions extends js.Object
 @js.native
 object ConnectOptions extends js.Object {
   /**
-       * This is only valid on the deployment host and when true. Will only return inherited definitions.
-       */
+    * This is only valid on the deployment host and when true. Will only return inherited definitions.
+    */
   @js.native
   sealed trait IncludeInheritedDefinitionsOnly
     extends vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.ConnectOptions
   
   /**
-       * Includes the last user access for this host.
-       */
+    * Includes the last user access for this host.
+    */
   @js.native
   sealed trait IncludeLastUserAccess
     extends vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.ConnectOptions
   
   /**
-       * When true will only return non inherited definitions. Only valid at non-deployment host.
-       */
+    * When true will only return non inherited definitions. Only valid at non-deployment host.
+    */
   @js.native
   sealed trait IncludeNonInheritedDefinitionsOnly
     extends vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.ConnectOptions
   
   /**
-       * Includes information about AccessMappings and ServiceDefinitions.
-       */
+    * Includes information about AccessMappings and ServiceDefinitions.
+    */
   @js.native
   sealed trait IncludeServices
     extends vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.ConnectOptions
   
   /**
-       * Retrieve no optional data.
-       */
+    * Retrieve no optional data.
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.ConnectOptions

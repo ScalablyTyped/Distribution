@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OmnitureSettings extends js.Object {
   /** Whether placement cost data will be sent to Omniture. This property can be enabled only if omnitureIntegrationEnabled is true. */
   var omnitureCostDataEnabled: js.UndefOr[scala.Boolean] = js.undefined

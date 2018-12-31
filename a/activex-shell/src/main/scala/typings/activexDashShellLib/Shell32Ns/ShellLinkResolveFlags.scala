@@ -18,9 +18,9 @@ object ShellLinkResolveFlags extends js.Object {
     extends activexDashShellLib.Shell32Ns.ShellLinkResolveFlags
   
   /**
-           * Disable distributed link tracking. By default, distributed link tracking tracks removable media across multiple devices based on the volume name.
-           * It also uses the UNC path to track remote file systems whose drive letter has changed. Setting this flag disables both types of tracking.
-           */
+    * Disable distributed link tracking. By default, distributed link tracking tracks removable media across multiple devices based on the volume name.
+    * It also uses the UNC path to track remote file systems whose drive letter has changed. Setting this flag disables both types of tracking.
+    */
   @js.native
   sealed trait NoLinkInfo
     extends activexDashShellLib.Shell32Ns.ShellLinkResolveFlags
@@ -36,9 +36,9 @@ object ShellLinkResolveFlags extends js.Object {
     extends activexDashShellLib.Shell32Ns.ShellLinkResolveFlags
   
   /**
-           * Do not display a dialog box if the link cannot be resolved. When this flag is set, the high-order word of _fFlags_ specifies a time-out duration, in milliseconds.
-           * The method returns if the link cannot be resolved within the time-out duration. If the high-order word is set to zero, the time-out duration defaults to 3000 milliseconds (3 seconds).
-           */
+    * Do not display a dialog box if the link cannot be resolved. When this flag is set, the high-order word of _fFlags_ specifies a time-out duration, in milliseconds.
+    * The method returns if the link cannot be resolved within the time-out duration. If the high-order word is set to zero, the time-out duration defaults to 3000 milliseconds (3 seconds).
+    */
   @js.native
   sealed trait NoUI
     extends activexDashShellLib.Shell32Ns.ShellLinkResolveFlags

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFnJQuery extends js.Object {
   def fnPlugin(
     context: jqueryLib.JQuery[stdLib.HTMLElement],

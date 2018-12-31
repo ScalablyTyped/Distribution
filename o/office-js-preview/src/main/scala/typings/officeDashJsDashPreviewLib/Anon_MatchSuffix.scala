@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MatchSuffix extends js.Object {
   var ignorePunct: js.UndefOr[scala.Boolean] = js.undefined
   var ignoreSpace: js.UndefOr[scala.Boolean] = js.undefined

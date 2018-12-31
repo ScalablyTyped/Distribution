@@ -18,7 +18,10 @@ object idyllDashAstMod extends js.Object {
   ): idyllDashCompilerLib.idyllDashCompilerMod.AST = js.native
   def createNode(
     name: java.lang.String,
-    props: stdLib.Record[java.lang.String, idyllDashCompilerLib.idyllDashCompilerMod.PropValue | _],
+    props: stdLib.Record[
+      java.lang.String, 
+      idyllDashCompilerLib.idyllDashCompilerMod.PropValue | (/* import warning: ImportType.apply Failed type conversion: idyll-compiler.idyll-compiler.PropValue[1] */ js.Any)
+    ],
     children: js.Array[idyllDashCompilerLib.idyllDashCompilerMod.Node]
   ): idyllDashCompilerLib.idyllDashCompilerMod.TreeNode = js.native
   def filterChildren(
@@ -62,14 +65,21 @@ object idyllDashAstMod extends js.Object {
   def removeProperty(node: idyllDashCompilerLib.idyllDashCompilerMod.Node, key: java.lang.String): idyllDashCompilerLib.idyllDashCompilerMod.Node = js.native
   def setProperties(
     node: idyllDashCompilerLib.idyllDashCompilerMod.Node,
-    properties: stdLib.Record[java.lang.String, idyllDashCompilerLib.idyllDashCompilerMod.PropValue | _]
+    properties: stdLib.Record[
+      java.lang.String, 
+      idyllDashCompilerLib.idyllDashCompilerMod.PropValue | (/* import warning: ImportType.apply Failed type conversion: idyll-compiler.idyll-compiler.PropValue[1] */ js.Any)
+    ]
   ): idyllDashCompilerLib.idyllDashCompilerMod.Node = js.native
   def setProperty(
     node: idyllDashCompilerLib.idyllDashCompilerMod.Node,
     key: java.lang.String,
     value: idyllDashCompilerLib.idyllDashCompilerMod.PropValue
   ): idyllDashCompilerLib.idyllDashCompilerMod.Node = js.native
-  def setProperty(node: idyllDashCompilerLib.idyllDashCompilerMod.Node, key: java.lang.String, value: js.Any): idyllDashCompilerLib.idyllDashCompilerMod.Node = js.native
+  def setProperty(
+    node: idyllDashCompilerLib.idyllDashCompilerMod.Node,
+    key: java.lang.String,
+    value: /* import warning: ImportType.apply Failed type conversion: idyll-compiler.idyll-compiler.PropValue[1] */ js.Any
+  ): idyllDashCompilerLib.idyllDashCompilerMod.Node = js.native
   def walkNodes(
     ast: idyllDashCompilerLib.idyllDashCompilerMod.AST,
     func: js.Function1[/* n */ idyllDashCompilerLib.idyllDashCompilerMod.Node, scala.Unit]

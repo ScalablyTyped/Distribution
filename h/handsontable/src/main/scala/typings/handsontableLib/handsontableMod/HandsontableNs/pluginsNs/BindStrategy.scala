@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BindStrategy extends js.Object {
   var strategy: java.lang.String | scala.Unit
   def clearMap(): scala.Unit

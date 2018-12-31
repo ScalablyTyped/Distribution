@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JSEscOptions extends js.Object {
   var `__inline1__`: js.UndefOr[scala.Boolean] = js.undefined
   var `__inline2__`: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SSHKey extends js.Object {
   var annotation: java.lang.String
   var created: java.lang.String

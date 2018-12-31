@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SeasonIds extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -21,9 +20,9 @@ trait Anon_SeasonIds extends js.Object {
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Filter StoreInfos that match (case-insensitive) any of the given country
-                   * codes, using the "ISO 3166-1 alpha-2" format (examples: "US", "us", "Us").
-                   */
+    * Filter StoreInfos that match (case-insensitive) any of the given country
+    * codes, using the "ISO 3166-1 alpha-2" format (examples: "US", "us", "Us").
+    */
   var countries: js.UndefOr[java.lang.String] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
@@ -32,9 +31,9 @@ trait Anon_SeasonIds extends js.Object {
   /** Filter StoreInfos that match any of the given `mid`s. */
   var mids: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Filter that matches StoreInfos with a `name` or `show_name`
-                   * that contains the given case-insensitive name.
-                   */
+    * Filter that matches StoreInfos with a `name` or `show_name`
+    * that contains the given case-insensitive name.
+    */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
@@ -59,10 +58,10 @@ trait Anon_SeasonIds extends js.Object {
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Filter StoreInfos that match a given `video_id`.
-                   * NOTE: this field is deprecated and will be removed on V2; `video_ids`
-                   * should be used instead.
-                   */
+    * Filter StoreInfos that match a given `video_id`.
+    * NOTE: this field is deprecated and will be removed on V2; `video_ids`
+    * should be used instead.
+    */
   var videoId: js.UndefOr[java.lang.String] = js.undefined
   /** Filter StoreInfos that match any of the given `video_id`s. */
   var videoIds: js.UndefOr[java.lang.String] = js.undefined

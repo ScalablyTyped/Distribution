@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Groups parameters used to configure received signal strength indicator (RSSI)-based filtering. */
 @JSGlobal("Windows.Devices.Bluetooth.BluetoothSignalStrengthFilter")
 @js.native
+/** Create a new BluetoothSignalStrengthFilter object. */
 class BluetoothSignalStrengthFilter () extends js.Object {
   /** The minimum received signal strength indicator (RSSI) value in dBm on which RSSI events will be propagated or considered in range if the previous events were considered out of range. */
   var inRangeThresholdInDBm: scala.Double = js.native

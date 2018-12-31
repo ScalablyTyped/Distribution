@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object algebraDotJsLib {
-  type Union = java.lang.String | scala.Double | js.Any
+  type Union = java.lang.String | scala.Double | (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify algebra.js.Fraction */ js.Any)
 }

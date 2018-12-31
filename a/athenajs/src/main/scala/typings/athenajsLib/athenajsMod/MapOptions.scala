@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapOptions extends js.Object {
   var buffer: js.UndefOr[stdLib.ArrayBuffer] = js.undefined
   var height: scala.Double

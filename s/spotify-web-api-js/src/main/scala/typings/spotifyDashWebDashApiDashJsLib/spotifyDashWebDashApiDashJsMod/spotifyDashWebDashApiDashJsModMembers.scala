@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object spotifyDashWebDashApiDashJsModMembers extends js.Object {
   /**
-   * Declare SpotifyWebApi variable, since that is the name of the function in spotify-web-api-js.
-   */
+    * Declare SpotifyWebApi variable, since that is the name of the function in spotify-web-api-js.
+    */
   var default: spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsMod.SpotifyWebApiNs.SpotifyWebApiJsStatic = js.native
 }
 

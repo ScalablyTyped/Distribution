@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Branch extends js.Object {
   var _links: typedDashGithubDashApiLib.Anon_Self
   var commit: typedDashGithubDashApiLib.distApiDashInterfacesCommitMod.CommitSummary

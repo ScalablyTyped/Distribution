@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextOptions extends js.Object {
   var annotations: js.UndefOr[js.Array[TextAnnotation]] = js.undefined
   var eol: js.UndefOr[java.lang.String] = js.undefined

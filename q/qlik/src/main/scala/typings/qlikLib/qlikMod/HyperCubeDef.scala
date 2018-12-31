@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HyperCubeDef extends js.Object {
   var qAlwaysFullyExpanded: js.UndefOr[scala.Boolean] = js.undefined
   var qCalcCond: js.UndefOr[ValueExpr] = js.undefined

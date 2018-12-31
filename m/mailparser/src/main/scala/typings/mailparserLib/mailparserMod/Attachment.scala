@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Attachment object.
- */
-
+  * Attachment object.
+  */
 trait Attachment extends AttachmentCommon {
   /**
   	 * A Buffer that contains the attachment contents.

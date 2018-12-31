@@ -35,44 +35,26 @@ class File protected () extends js.Object {
   /** Type description */
   val Type: java.lang.String = js.native
   /**
-           * Copy this file
-           * @param boolean [OverWriteFiles=true]
-           */
+    * Copy this file
+    * @param boolean [OverWriteFiles=true]
+    */
   def Copy(Destination: java.lang.String): scala.Unit = js.native
-  /**
-           * Copy this file
-           * @param boolean [OverWriteFiles=true]
-           */
   def Copy(Destination: java.lang.String, OverWriteFiles: scala.Boolean): scala.Unit = js.native
   /**
-           * Delete this file
-           * @param boolean [Force=false] Pass `true` to delete the file even if the read-only attribute is set
-           */
+    * Delete this file
+    * @param boolean [Force=false] Pass `true` to delete the file even if the read-only attribute is set
+    */
   def Delete(): scala.Unit = js.native
-  /**
-           * Delete this file
-           * @param boolean [Force=false] Pass `true` to delete the file even if the read-only attribute is set
-           */
   def Delete(Force: scala.Boolean): scala.Unit = js.native
   /** Move this file */
   def Move(Destination: java.lang.String): scala.Unit = js.native
   /**
-           * Open a file as a TextStream
-           * @param Scripting.IOMode [IOMode=1]
-           * @param Scripting.Tristate [Format=0]
-           */
+    * Open a file as a TextStream
+    * @param Scripting.IOMode [IOMode=1]
+    * @param Scripting.Tristate [Format=0]
+    */
   def OpenAsTextStream(): TextStream = js.native
-  /**
-           * Open a file as a TextStream
-           * @param Scripting.IOMode [IOMode=1]
-           * @param Scripting.Tristate [Format=0]
-           */
   def OpenAsTextStream(IOMode: IOMode): TextStream = js.native
-  /**
-           * Open a file as a TextStream
-           * @param Scripting.IOMode [IOMode=1]
-           * @param Scripting.Tristate [Format=0]
-           */
   def OpenAsTextStream(IOMode: IOMode, Format: Tristate): TextStream = js.native
 }
 

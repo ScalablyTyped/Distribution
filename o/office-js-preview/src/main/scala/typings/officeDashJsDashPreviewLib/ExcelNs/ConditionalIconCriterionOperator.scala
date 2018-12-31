@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 sealed trait ConditionalIconCriterionOperator extends js.Object
 
 /**
-     *
-     * Represents the operator for each icon criteria.
-     *
-     * [Api set: ExcelApi 1.6]
-     */
+  *
+  * Represents the operator for each icon criteria.
+  *
+  * [Api set: ExcelApi 1.6]
+  */
 @JSGlobal("Excel.ConditionalIconCriterionOperator")
 @js.native
 object ConditionalIconCriterionOperator extends js.Object {

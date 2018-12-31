@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenCourseIdPrettyPrintBearertokenCallback extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -19,10 +18,10 @@ trait Anon_AccesstokenCourseIdPrettyPrintBearertokenCallback extends js.Object {
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Identifier of the course.
-                   * This identifier can be either the Classroom-assigned identifier or an
-                   * alias.
-                   */
+    * Identifier of the course.
+    * This identifier can be either the Classroom-assigned identifier or an
+    * alias.
+    */
   var courseId: java.lang.String
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
@@ -39,20 +38,20 @@ trait Anon_AccesstokenCourseIdPrettyPrintBearertokenCallback extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Mask that identifies which fields on the announcement to update.
-                   * This field is required to do an update. The update fails if invalid
-                   * fields are specified. If a field supports empty values, it can be cleared
-                   * by specifying it in the update mask and not in the Announcement object. If
-                   * a field that does not support empty values is included in the update mask
-                   * and not set in the Announcement object, an `INVALID_ARGUMENT` error will be
-                   * returned.
-                   *
-                   * The following fields may be specified by teachers:
-                   *
-                   * &#42; `text`
-                   * &#42; `state`
-                   * &#42; `scheduled_time`
-                   */
+    * Mask that identifies which fields on the announcement to update.
+    * This field is required to do an update. The update fails if invalid
+    * fields are specified. If a field supports empty values, it can be cleared
+    * by specifying it in the update mask and not in the Announcement object. If
+    * a field that does not support empty values is included in the update mask
+    * and not set in the Announcement object, an `INVALID_ARGUMENT` error will be
+    * returned.
+    *
+    * The following fields may be specified by teachers:
+    *
+    * &#42; `text`
+    * &#42; `state`
+    * &#42; `scheduled_time`
+    */
   var updateMask: js.UndefOr[java.lang.String] = js.undefined
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CheckboardProps
   extends reactLib.reactMod.ReactNs.ClassAttributes[Checkboard] {
   var grey: js.UndefOr[java.lang.String] = js.undefined

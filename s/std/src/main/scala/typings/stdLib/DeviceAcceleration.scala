@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeviceAcceleration extends js.Object {
   val x: scala.Double | scala.Null
   val y: scala.Double | scala.Null

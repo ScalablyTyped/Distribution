@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SuccessFalse extends js.Object {
   /** Error code in the case where authentication fails. */
   var error: java.lang.String

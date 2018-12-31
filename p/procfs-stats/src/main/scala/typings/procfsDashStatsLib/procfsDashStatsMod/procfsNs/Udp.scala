@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Udp extends js.Object {
   var drops: java.lang.String
   var inode: java.lang.String

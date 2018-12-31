@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 //#region 用户授权 https://docs.alipay.com/mini/api/openapi-authorize
-
 trait GetAuthCodeOptions
   extends BaseOptions[js.Any, js.Any] {
   var scopes: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BatchModifyMessagesRequest extends js.Object {
   /** A list of label IDs to add to messages. */
   var addLabelIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined

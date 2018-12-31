@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PageletData extends js.Object {
   var container: java.lang.String
   var css: js.Array[java.lang.String]

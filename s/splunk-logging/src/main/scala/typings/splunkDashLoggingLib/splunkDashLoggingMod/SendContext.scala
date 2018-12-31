@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SendContext extends js.Object {
   var message: js.Any
   var metadata: js.UndefOr[SendContextMetadata] = js.undefined

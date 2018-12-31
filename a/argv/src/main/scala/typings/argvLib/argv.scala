@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait argv extends js.Object {
   // Cleans out current options
   var clear: js.Function0[js.Object]

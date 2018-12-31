@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridTileProps extends js.Object {
   var actionIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var actionPosition: js.UndefOr[

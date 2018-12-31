@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventHandler extends js.Object {
   // The |off| function removes the event event handling function |f| from
   // both |on| and the |once| event handling.

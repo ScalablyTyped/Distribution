@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * store
- */
+  * store
+  */
 @js.native
 trait StoreStatic extends js.Object {
   var enable: scala.Boolean = js.native

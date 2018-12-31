@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TooltippedProps
   extends reactDashMdLib.libMod.Props {
   var children: reactLib.reactMod.ReactNs.ReactElement[_]

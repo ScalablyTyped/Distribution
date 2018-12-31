@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Label extends js.Object {
   /** The class label. */
   var label: js.UndefOr[java.lang.String] = js.undefined

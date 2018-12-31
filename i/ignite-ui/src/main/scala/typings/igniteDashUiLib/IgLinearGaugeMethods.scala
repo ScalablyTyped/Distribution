@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgLinearGaugeMethods extends js.Object {
   /**
   	 * Adds a new range to the linear gauge.

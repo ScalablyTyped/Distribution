@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Options to create the null engine
-     */
+  * Options to create the null engine
+  */
 @JSImport("babylonjs", "NullEngineOptions")
 @js.native
 class NullEngineOptions ()

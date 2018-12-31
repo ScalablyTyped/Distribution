@@ -6,12 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Creates the P2P object
- * @param socket Socket.io socket
- * @param opts Object of viable options
- * @param cb Optional callback
- */
-
+  * Creates the P2P object
+  * @param socket Socket.io socket
+  * @param opts Object of viable options
+  * @param cb Optional callback
+  */
 trait SocketioP2PStatic extends js.Object {
   var decoder: js.Any
   var defaultOps: socketDotIoDashP2pLib.socketDotIoDashP2pMod.SocketioP2PStaticNs.DefaultOps
@@ -28,8 +27,8 @@ trait SocketioP2PStatic extends js.Object {
   def on(event: java.lang.String, callback: js.Function1[/* data */ js.Any, scala.Unit]): scala.Unit
   def setupPeerEvents(peer: js.Any): scala.Unit
   /**
-     * Upgrade the connection to p2p
-     */
+    * Upgrade the connection to p2p
+    */
   def upgrade(): scala.Unit
 }
 

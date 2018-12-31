@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IShepherdTourStepOptions extends js.Object {
   var advanceOn: js.UndefOr[js.Any] = js.undefined
   var attachTo: js.UndefOr[js.Any] = js.undefined

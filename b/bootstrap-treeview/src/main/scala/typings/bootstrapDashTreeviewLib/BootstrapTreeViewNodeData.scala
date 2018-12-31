@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BootstrapTreeViewNodeData extends js.Object {
   var backColor: js.UndefOr[java.lang.String] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined

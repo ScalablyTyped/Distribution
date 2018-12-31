@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CloudWatchLogsDecodedData extends js.Object {
   var logEvents: js.Array[CloudWatchLogsLogEvent]
   var logGroup: java.lang.String

@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * An editor is composed of a main div element used to hold a toolbar,
- * a text area and an iframe. The toolbar can hold multiple groups
- * which in turn hold multiple buttons.
- */
+  * An editor is composed of a main div element used to hold a toolbar,
+  * a text area and an iframe. The toolbar can hold multiple groups
+  * which in turn hold multiple buttons.
+  */
 @js.native
 trait CLEditor extends js.Object {
   @JSName("$area")

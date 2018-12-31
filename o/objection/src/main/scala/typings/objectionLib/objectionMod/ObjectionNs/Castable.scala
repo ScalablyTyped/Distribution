@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Castable extends js.Object {
   def as(alias: java.lang.String): this.type
   def asArray(): this.type

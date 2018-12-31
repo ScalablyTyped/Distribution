@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object CustomFunctionsNsMembers extends js.Object {
   /**
-       * @beta
-       * Ties together the function's JavaScript name with the JSON id property
-       */
+    * @beta
+    * Ties together the function's JavaScript name with the JSON id property
+    */
   def associate(id: java.lang.String, functionObject: js.Function): scala.Unit = js.native
 }
 

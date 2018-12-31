@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RenderContext_InView extends RenderContext {
   var AllowCreateFolder: scala.Boolean
   var AllowGridMode: scala.Boolean

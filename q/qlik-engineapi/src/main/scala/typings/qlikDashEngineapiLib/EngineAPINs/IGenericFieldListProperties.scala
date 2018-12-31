@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * GenericFieldListProperties width extend GenericProperties
-     */
-
+  * GenericFieldListProperties width extend GenericProperties
+  */
 trait IGenericFieldListProperties extends IGenericProperties {
   /**
-           * FieldListDef...
-           */
+    * FieldListDef...
+    */
   var qFieldListDef: IFieldListDef
 }
 

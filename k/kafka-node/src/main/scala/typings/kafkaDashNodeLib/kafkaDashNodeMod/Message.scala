@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Message extends js.Object {
   var highWaterOffset: js.UndefOr[scala.Double] = js.undefined
   var key: js.UndefOr[java.lang.String] = js.undefined

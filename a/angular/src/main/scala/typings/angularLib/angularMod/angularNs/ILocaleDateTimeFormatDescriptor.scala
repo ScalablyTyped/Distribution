@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILocaleDateTimeFormatDescriptor extends js.Object {
   var AMPMS: js.Array[java.lang.String]
   var DAY: js.Array[java.lang.String]

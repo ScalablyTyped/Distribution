@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Parser extends js.Object {
   def clear(): scala.Unit
   def eval(expr: java.lang.String): js.Any

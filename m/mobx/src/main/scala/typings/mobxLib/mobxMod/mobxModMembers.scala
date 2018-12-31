@@ -13,8 +13,14 @@ object mobxModMembers extends js.Object {
   var action: mobxLib.libApiActionMod.IActionFactory = js.native
   val comparer: mobxLib.Anon_Default = js.native
   var computed: mobxLib.libApiComputedMod.IComputed = js.native
-  var isBoxedObservable: js.Function1[/* x */ js.Any, /* is IObservableValue */scala.Boolean] = js.native
-  var isObservableMap: js.Function1[/* thing */ js.Any, /* is ObservableMap */scala.Boolean] = js.native
+  var isBoxedObservable: js.Function1[
+    /* x */ js.Any, 
+    /* is mobx.mobx/lib/types/observablevalue.IObservableValue<any> */ scala.Boolean
+  ] = js.native
+  var isObservableMap: js.Function1[
+    /* thing */ js.Any, 
+    /* is mobx.mobx/lib/types/observablemap.ObservableMap<any, any> */ scala.Boolean
+  ] = js.native
   val observable: mobxLib.libApiObservableMod.IObservableFactory with mobxLib.libApiObservableMod.IObservableFactories with mobxLib.Anon_Enhancer = js.native
   def _allowStateChanges[T](allowStateChanges: scala.Boolean, func: js.Function0[T]): T = js.native
   def _allowStateChangesInsideComputed[T](func: js.Function0[T]): T = js.native
@@ -118,8 +124,8 @@ object mobxModMembers extends js.Object {
   def isComputed(value: js.Any): scala.Boolean = js.native
   def isComputedProp(value: js.Any, propName: java.lang.String): scala.Boolean = js.native
   def isObservable(value: js.Any): scala.Boolean = js.native
-  def isObservableArray(thing: js.Any): /* is IObservableArray */scala.Boolean = js.native
-  def isObservableObject(thing: js.Any): /* is IObservableObject */scala.Boolean = js.native
+  def isObservableArray(thing: js.Any): /* is mobx.mobx/lib/types/observablearray.IObservableArray<any> */ scala.Boolean = js.native
+  def isObservableObject(thing: js.Any): /* is mobx.mobx/lib/types/observableobject.IObservableObject */ scala.Boolean = js.native
   def isObservableProp(value: js.Any, propName: java.lang.String): scala.Boolean = js.native
   def keys[T](ar: mobxLib.libTypesObservablearrayMod.IObservableArray[T]): js.Array[scala.Double] = js.native
   def keys[K](map: mobxLib.libInternalMod.ObservableMap[K, _]): js.Array[K] = js.native
@@ -170,9 +176,7 @@ object mobxModMembers extends js.Object {
     `object`: T,
     property: K,
     listener: js.Function1[
-      /* change */ mobxLib.libTypesObservablevalueMod.IValueDidChange[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-      ], 
+      /* change */ mobxLib.libTypesObservablevalueMod.IValueDidChange[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any], 
       scala.Unit
     ]
   ): mobxLib.libUtilsUtilsMod.Lambda = js.native
@@ -180,9 +184,7 @@ object mobxModMembers extends js.Object {
     `object`: T,
     property: K,
     listener: js.Function1[
-      /* change */ mobxLib.libTypesObservablevalueMod.IValueDidChange[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
-      ], 
+      /* change */ mobxLib.libTypesObservablevalueMod.IValueDidChange[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any], 
       scala.Unit
     ],
     fireImmediately: scala.Boolean

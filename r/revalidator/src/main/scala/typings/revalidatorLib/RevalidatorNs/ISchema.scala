@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISchema[T] extends js.Object {
   /**If false, the value must not be an empty string */
   var allowEmpty: js.UndefOr[scala.Boolean] = js.undefined

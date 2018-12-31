@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QuickActionDescribeInfo extends js.Object {
   /** Object type used for the action */
   var contextSobjectType: java.lang.String

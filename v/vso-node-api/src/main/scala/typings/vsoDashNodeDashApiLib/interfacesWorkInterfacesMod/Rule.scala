@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Rule extends js.Object {
   var clauses: js.Array[FilterClause]
   var filter: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TranspileOptions extends js.Object {
   var compilerOptions: js.UndefOr[CompilerOptions] = js.undefined
   var fileName: js.UndefOr[java.lang.String] = js.undefined

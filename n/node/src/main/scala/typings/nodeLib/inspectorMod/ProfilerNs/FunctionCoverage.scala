@@ -6,21 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Coverage data for a JavaScript function.
-         */
-
+  * Coverage data for a JavaScript function.
+  */
 trait FunctionCoverage extends js.Object {
   /**
-               * JavaScript function name.
-               */
+    * JavaScript function name.
+    */
   var functionName: java.lang.String
   /**
-               * Whether coverage data for this function has block granularity.
-               */
+    * Whether coverage data for this function has block granularity.
+    */
   var isBlockCoverage: scala.Boolean
   /**
-               * Source ranges inside the function with coverage data.
-               */
+    * Source ranges inside the function with coverage data.
+    */
   var ranges: js.Array[CoverageRange]
 }
 

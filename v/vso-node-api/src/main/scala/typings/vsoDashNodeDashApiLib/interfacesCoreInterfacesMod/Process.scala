@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Process extends ProcessReference {
   var _links: js.Any
   var description: java.lang.String

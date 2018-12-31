@@ -28,20 +28,12 @@ object UserPersistenceStrings extends js.Object {
   		 * @since AppServer 88571
   		 */
   def exists(key: java.lang.String, value: java.lang.String): scala.Boolean = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceStrings.html#method_exists
-  		 * @since AppServer 88571
-  		 */
   def exists(key: java.lang.String, value: java.lang.String, ignoreCase: scala.Boolean): scala.Boolean = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceStrings.html#method_getAllKeys
   		 * @since AppServer 82483
   		 */
   def getAllKeys(): js.Array[java.lang.String] = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceStrings.html#method_getAllKeys
-  		 * @since AppServer 82483
-  		 */
   def getAllKeys(filterKey: java.lang.String): js.Array[java.lang.String] = js.native
 }
 

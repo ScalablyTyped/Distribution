@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-native", "StyleSheet")
 @js.native
 object StyleSheetNs extends js.Object {
-  
   trait AbsoluteFillStyle extends js.Object {
     var bottom: reactDashNativeLib.reactDashNativeLibNumbers.`0`
     var left: reactDashNativeLib.reactDashNativeLibNumbers.`0`

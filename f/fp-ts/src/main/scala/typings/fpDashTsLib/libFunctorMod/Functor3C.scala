@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Functor3C[F /* <: fpDashTsLib.libHKTMod.URIS3 */, U, L] extends js.Object {
   val URI: F
   val _L: L

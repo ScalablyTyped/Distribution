@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait WindowPositions extends js.Object
 
 /**
-     * An enumeration for window positions when opening a new window
-     */
+  * An enumeration for window positions when opening a new window
+  */
 @JSGlobal("XrmEnum.WindowPositions")
 @js.native
 object WindowPositions extends js.Object {

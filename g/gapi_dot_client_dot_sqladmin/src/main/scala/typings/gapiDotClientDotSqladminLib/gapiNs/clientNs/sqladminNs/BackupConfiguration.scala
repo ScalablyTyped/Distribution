@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BackupConfiguration extends js.Object {
   /** Whether binary log is enabled. If backup configuration is disabled, binary log must be disabled as well. */
   var binaryLogEnabled: js.UndefOr[scala.Boolean] = js.undefined

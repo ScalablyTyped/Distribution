@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Test statistics
-     */
-
+  * Test statistics
+  */
 trait Stats extends js.Object {
   var duration: js.UndefOr[scala.Double] = js.undefined
   var end: js.UndefOr[stdLib.Date] = js.undefined

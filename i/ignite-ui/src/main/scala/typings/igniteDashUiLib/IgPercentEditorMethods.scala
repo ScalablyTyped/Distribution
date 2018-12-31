@@ -38,11 +38,6 @@ trait IgPercentEditorMethods extends js.Object {
   	 * @param symbol New percent symbol.
   	 */
   def percentSymbol(): java.lang.String = js.native
-  /**
-  	 * Gets/Sets a string that is used as the percent symbol shown with the number in the input. The value provided as a param is propagated to the [percentSymbol](ui.igpercenteditor#options:percentSymbol) option and thus has the same priority as the option.
-  	 *
-  	 * @param symbol New percent symbol.
-  	 */
   def percentSymbol(symbol: js.Object): java.lang.String = js.native
   /**
   	 * This method is deprecated in favor of [spinDown](ui.%%WidgetNameLowered%%#options:spinDown).
@@ -58,11 +53,6 @@ trait IgPercentEditorMethods extends js.Object {
   	 * @param delta Decrement value.
   	 */
   def spinDown(): scala.Unit = js.native
-  /**
-  	 * Decrements value in editor according to the parameter selects the next item from the drop-down list if [isLimitedToListValues](ui.%%WidgetNameLowered%%#options:isLimitedToListValues) is enabled.
-  	 *
-  	 * @param delta Decrement value.
-  	 */
   def spinDown(delta: scala.Double): scala.Unit = js.native
   /**
   	 * Increments value in editor according to the parameter or selects the previous item from the drop-down list if [isLimitedToListValues](ui.%%WidgetNameLowered%%#options:isLimitedToListValues) is enabled.
@@ -70,11 +60,6 @@ trait IgPercentEditorMethods extends js.Object {
   	 * @param delta Increments value.
   	 */
   def spinUp(): scala.Unit = js.native
-  /**
-  	 * Increments value in editor according to the parameter or selects the previous item from the drop-down list if [isLimitedToListValues](ui.%%WidgetNameLowered%%#options:isLimitedToListValues) is enabled.
-  	 *
-  	 * @param delta Increments value.
-  	 */
   def spinUp(delta: scala.Double): scala.Unit = js.native
   /**
   	 * Gets/Sets editor value.
@@ -82,11 +67,6 @@ trait IgPercentEditorMethods extends js.Object {
   	 * @param newValue New editor value.
   	 */
   def value(): scala.Double = js.native
-  /**
-  	 * Gets/Sets editor value.
-  	 *
-  	 * @param newValue New editor value.
-  	 */
   def value(newValue: scala.Double): scala.Double = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Appearance extends js.Object {
   val closed: scala.Boolean
   val fragmentShaderSource: java.lang.String

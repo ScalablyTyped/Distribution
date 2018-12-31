@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object libUnderscoreUtilTypeModMembers extends js.Object {
   def tuple[T /* <: js.Array[java.lang.String] */](
-    /* import warning: Dropping repeated marker of param TsIdentSimple(args) because its type Some(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())) is not an array type */args: T
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type T is not an array type */ args: T
   ): T = js.native
 }
 

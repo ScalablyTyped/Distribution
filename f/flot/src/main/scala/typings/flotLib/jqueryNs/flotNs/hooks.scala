@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait hooks extends js.Object {
   var bindEvents: js.UndefOr[js.Array[flotLib.Anon_PlotEventHolder]] = js.undefined
   var draw: js.UndefOr[js.Array[flotLib.Anon_Plot]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_KH extends js.Object {
   var KH: Anon_Capacity
   var KH2O: Anon_Capacity3

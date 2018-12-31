@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 		 * An interface extending <Titanium.XML.Node> with a set of attributes and methods for accessing character data in the DOM.
 		 * Implements the [DOM Level 2 API](https://www.w3.org/TR/DOM-Level-2-Core/core.html#ID-FF21A306) on Android and iOS. For reasons of compatibility with the javascript engine, text is represented by UTF-8 instead of UTF-16 on Android and iOS.
 		 */
-
 trait CharacterData
   extends titaniumLib.TitaniumNs.Proxy {
   /**

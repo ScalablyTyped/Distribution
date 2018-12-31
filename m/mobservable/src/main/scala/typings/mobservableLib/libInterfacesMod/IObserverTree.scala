@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IObserverTree extends js.Object {
   var context: js.Any
   var id: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RecordSourceSelectorProxy extends js.Object {
   def create(dataID: DataID, typeName: java.lang.String): RecordProxy
   def delete(dataID: DataID): scala.Unit

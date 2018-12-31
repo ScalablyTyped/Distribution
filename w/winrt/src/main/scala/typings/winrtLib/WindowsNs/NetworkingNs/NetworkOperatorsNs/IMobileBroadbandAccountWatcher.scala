@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMobileBroadbandAccountWatcher extends js.Object {
   var onaccountadded: js.Any
   var onaccountremoved: js.Any

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // No static is available
-
 trait Transaction extends js.Object {
   var amount: scala.Double
   var description: java.lang.String

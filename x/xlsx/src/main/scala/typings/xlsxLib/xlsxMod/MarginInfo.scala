@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MarginInfo extends js.Object {
   /** Bottom side margin (inches) */
   var bottom: js.UndefOr[scala.Double] = js.undefined

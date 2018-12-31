@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GithubPickerProps
   extends reactDashColorLib.reactDashColorMod.ColorPickerProps[GithubPicker] {
   var colors: js.UndefOr[js.Array[java.lang.String]] = js.undefined

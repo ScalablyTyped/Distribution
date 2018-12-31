@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Ban extends js.Object {
   var DAY: plugapiLib.plugapiLibStrings.d
   var HOUR: plugapiLib.plugapiLibStrings.h

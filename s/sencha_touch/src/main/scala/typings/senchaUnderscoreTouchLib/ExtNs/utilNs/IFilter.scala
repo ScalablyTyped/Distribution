@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFilter
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Config Option] (Boolean) */

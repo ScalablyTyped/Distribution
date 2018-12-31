@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // ELangEdit
-
 trait IELangEditDelegates extends js.Object {
   var btnAddClickHandler: js.Function
   var btnAddHandler: js.Function

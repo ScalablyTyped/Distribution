@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnMetadata[T /* <: SlickData */] extends js.Object {
   /**
   		 * Number of columns this cell will span. Can also contain "*" to indicate that the cell should span the rest of the row.

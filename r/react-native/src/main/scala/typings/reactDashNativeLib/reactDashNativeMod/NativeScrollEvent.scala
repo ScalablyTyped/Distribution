@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NativeScrollEvent extends js.Object {
   var contentInset: NativeScrollRectangle
   var contentOffset: NativeScrollPoint

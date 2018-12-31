@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimelineResource extends js.Object {
   var attachments: AttachmentsResource
   /** Deletes a timeline item. */

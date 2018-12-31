@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ViewportHyphen[TLength] extends js.Object {
   var `-ms-height`: js.UndefOr[csstypeLib.ViewportHeightProperty[TLength]] = js.undefined
   var `-ms-max-height`: js.UndefOr[csstypeLib.ViewportMaxHeightProperty[TLength]] = js.undefined

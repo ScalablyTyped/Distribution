@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PassportLocalOptions extends js.Object {
   var attemptsField: js.UndefOr[java.lang.String] = js.undefined
   var digestAlgorithm: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait plupload_events extends js.Object {
   var BeforeUpload: js.UndefOr[plupload_event_file] = js.undefined
   var ChunkUploaded: js.UndefOr[plupload_event_ChunkUploaded] = js.undefined

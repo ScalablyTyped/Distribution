@@ -22,22 +22,15 @@ object jestLibMembers extends js.Object {
   var xit: jestLib.jestNs.It = js.native
   var xtest: jestLib.jestNs.It = js.native
   /**
-   * Fails a test when called within one.
-   */
+    * Fails a test when called within one.
+    */
   def fail(): scala.Unit = js.native
-  /**
-   * Fails a test when called within one.
-   */
   def fail(error: js.Any): scala.Unit = js.native
   /**
-   * If you call the function pending anywhere in the spec body,
-   * no matter the expectations, the spec will be marked pending.
-   */
+    * If you call the function pending anywhere in the spec body,
+    * no matter the expectations, the spec will be marked pending.
+    */
   def pending(): scala.Unit = js.native
-  /**
-   * If you call the function pending anywhere in the spec body,
-   * no matter the expectations, the spec will be marked pending.
-   */
   def pending(reason: java.lang.String): scala.Unit = js.native
   // Jest ships with a copy of Jasmine. They monkey-patch its APIs and divergence/deprecation are expected.
   // Relevant parts of Jasmine's API are below so they can be changed and removed over time.

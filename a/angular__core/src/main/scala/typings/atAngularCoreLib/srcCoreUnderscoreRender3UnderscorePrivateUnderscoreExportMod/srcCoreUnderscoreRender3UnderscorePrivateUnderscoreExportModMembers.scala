@@ -38,19 +38,15 @@ object srcCoreUnderscoreRender3UnderscorePrivateUnderscoreExportModMembers exten
     scala.Unit
   ] = js.native
   val `ɵSWITCH_ELEMENT_REF_FACTORY__POST_R3__`: js.Function1[
-    /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibraryScoped(angular,Some(core)), TsIdentModule(Some(angular),List(core, src, linker, element_ref)), TsIdentSimple(ElementRef)))) *//* ElementRefToken */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: typeof @angular/core.@angular/core/src/linker/element_ref.ElementRef */ /* ElementRefToken */ js.Any, 
     atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Any]
   ] = js.native
   val `ɵSWITCH_IVY_ENABLED__POST_R3__`: /* true */ scala.Boolean = js.native
   val `ɵSWITCH_RENDERER2_FACTORY__POST_R3__`: js.Function0[atAngularCoreLib.srcRenderApiMod.Renderer2] = js.native
-  val `ɵSWITCH_TEMPLATE_REF_FACTORY__POST_R3__`: js.Function2[
-    /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibraryScoped(angular,Some(core)), TsIdentModule(Some(angular),List(core, src, linker, template_ref)), TsIdentSimple(TemplateRef)))) *//* TemplateRefToken */ js.Any, 
-    /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibraryScoped(angular,Some(core)), TsIdentModule(Some(angular),List(core, src, linker, element_ref)), TsIdentSimple(ElementRef)))) *//* ElementRefToken */ js.Any, 
-    atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Any] | scala.Null
-  ] = js.native
+  val `ɵSWITCH_TEMPLATE_REF_FACTORY__POST_R3__`: atAngularCoreLib.Anon_TemplateRefToken = js.native
   val `ɵSWITCH_VIEW_CONTAINER_REF_FACTORY__POST_R3__`: js.Function2[
-    /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibraryScoped(angular,Some(core)), TsIdentModule(Some(angular),List(core, src, linker, view_container_ref)), TsIdentSimple(ViewContainerRef)))) *//* ViewContainerRefToken */ js.Any, 
-    /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibraryScoped(angular,Some(core)), TsIdentModule(Some(angular),List(core, src, linker, element_ref)), TsIdentSimple(ElementRef)))) *//* ElementRefToken */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: typeof @angular/core.@angular/core/src/linker/view_container_ref.ViewContainerRef */ /* ViewContainerRefToken */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: typeof @angular/core.@angular/core/src/linker/element_ref.ElementRef */ /* ElementRefToken */ js.Any, 
     atAngularCoreLib.srcLinkerViewUnderscoreContainerUnderscoreRefMod.ViewContainerRef
   ] = js.native
   val ɵWRAP_RENDERER_FACTORY2: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[
@@ -828,10 +824,10 @@ object srcCoreUnderscoreRender3UnderscorePrivateUnderscoreExportModMembers exten
     exp8: js.Any,
     thisArg: js.Any
   ): js.Any = js.native
-  def ɵpureFunctionV(slotOffset: scala.Double, pureFn: js.Function1[/* repeated */js.Any, _], exps: js.Array[_]): js.Any = js.native
+  def ɵpureFunctionV(slotOffset: scala.Double, pureFn: js.Function1[/* repeated */ js.Any, _], exps: js.Array[_]): js.Any = js.native
   def ɵpureFunctionV(
     slotOffset: scala.Double,
-    pureFn: js.Function1[/* repeated */js.Any, _],
+    pureFn: js.Function1[/* repeated */ js.Any, _],
     exps: js.Array[_],
     thisArg: js.Any
   ): js.Any = js.native

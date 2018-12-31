@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBridgeDescription extends js.Object {
   var icons: js.UndefOr[js.Array[IBridgeIcon]] = js.undefined
   var manufacturer: java.lang.String

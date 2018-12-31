@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SharedDrawerProps
   extends reactDashMdLib.libMod.Props {
   var autoclose: js.UndefOr[scala.Boolean] = js.undefined

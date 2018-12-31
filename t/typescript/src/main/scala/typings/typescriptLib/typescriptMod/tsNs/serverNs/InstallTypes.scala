@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InstallTypes extends ProjectResponse {
   val eventId: scala.Double
   @JSName("kind")

@@ -19,12 +19,12 @@ class NgStyle protected ()
   var _setStyle: js.Any = js.native
   var ngStyle: org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /**
-         * A callback method that performs change-detection, invoked
-         * after the default change-detector runs.
-         * See `KeyValueDiffers` and `IterableDiffers` for implementing
-         * custom change checking for collections.
-         *
-         */
+    * A callback method that performs change-detection, invoked
+    * after the default change-detector runs.
+    * See `KeyValueDiffers` and `IterableDiffers` for implementing
+    * custom change checking for collections.
+    *
+    */
   /* CompleteClass */
   override def ngDoCheck(): scala.Unit = js.native
 }

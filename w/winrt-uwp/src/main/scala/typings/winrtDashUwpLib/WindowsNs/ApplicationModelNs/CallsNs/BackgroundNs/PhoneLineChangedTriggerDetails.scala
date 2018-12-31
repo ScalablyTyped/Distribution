@@ -14,10 +14,10 @@ abstract class PhoneLineChangedTriggerDetails () extends js.Object {
   /** Gets the ID of the phone line that was added, removed, or changed. */
   var lineId: java.lang.String = js.native
   /**
-                       * Checks a phone line against a set of flags to see if any of the specified properties of the phone line have changed.
-                       * @param lineProperty A set of flags which indicate the phone line properties to query for changes.
-                       * @return Returns true if any of the properties indicated by the lineProperty parameter have changed on the phone line.
-                       */
+    * Checks a phone line against a set of flags to see if any of the specified properties of the phone line have changed.
+    * @param lineProperty A set of flags which indicate the phone line properties to query for changes.
+    * @return Returns true if any of the properties indicated by the lineProperty parameter have changed on the phone line.
+    */
   def hasLinePropertyChanged(lineProperty: PhoneLineProperties): scala.Boolean = js.native
 }
 

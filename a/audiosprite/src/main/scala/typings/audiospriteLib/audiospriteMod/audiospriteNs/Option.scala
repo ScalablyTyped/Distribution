@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Option extends js.Object {
   var autoplay: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var bitrate: js.UndefOr[scala.Double] = js.undefined

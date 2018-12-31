@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MetaInfo extends js.Object {
   var owner: webgmeLib.CoreNs.Node
   var ownerPath: Path

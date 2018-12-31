@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AsObjectOptions
   extends nodeLib.streamMod.internalNs.TransformOptions {
   var fieldPrefix: js.UndefOr[java.lang.String] = js.undefined

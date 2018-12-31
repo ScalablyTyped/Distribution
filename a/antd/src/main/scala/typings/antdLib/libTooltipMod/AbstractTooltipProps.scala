@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AbstractTooltipProps
   extends antdLib.libConfigDashProviderMod.ConfigProviderProps {
   var align: js.UndefOr[TooltipAlignConfig] = js.undefined

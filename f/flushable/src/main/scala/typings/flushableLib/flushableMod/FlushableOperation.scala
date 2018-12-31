@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlushableOperation extends js.Object {
   /** Stops the callback from being executed */
   def cancel(): scala.Unit

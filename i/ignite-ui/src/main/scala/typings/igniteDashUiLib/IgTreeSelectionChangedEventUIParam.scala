@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgTreeSelectionChangedEventUIParam extends js.Object {
   /**
   	 * Gets a reference to the newly added nodes to the selection.

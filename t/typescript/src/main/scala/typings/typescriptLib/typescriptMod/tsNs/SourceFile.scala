@@ -11,13 +11,13 @@ trait SourceFile extends Declaration {
   var endOfFileToken: Token[SyntaxKind] = js.native
   var fileName: java.lang.String = js.native
   /**
-           * lib.d.ts should have a reference comment like
-           *
-           *  /// <reference no-default-lib="true"/>
-           *
-           * If any other file has this comment, it signals not to include lib.d.ts
-           * because this containing file is intended to act as a default library.
-           */
+    * lib.d.ts should have a reference comment like
+    *
+    *  /// <reference no-default-lib="true"/>
+    *
+    * If any other file has this comment, it signals not to include lib.d.ts
+    * because this containing file is intended to act as a default library.
+    */
   var hasNoDefaultLib: scala.Boolean = js.native
   var isDeclarationFile: scala.Boolean = js.native
   var languageVariant: LanguageVariant = js.native

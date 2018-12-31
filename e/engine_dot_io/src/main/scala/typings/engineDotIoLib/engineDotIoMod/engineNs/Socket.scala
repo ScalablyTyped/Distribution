@@ -82,10 +82,6 @@ trait Socket
   		 */
   @JSName("on")
   def on_packet(ev: engineDotIoLib.engineDotIoLibStrings.packet, fn: js.Function1[/* packet */ Packet, scala.Unit]): this.type = js.native
-  /**
-  		 * packet: Called when a socket received a packet (message, ping)
-  		 * packetCreate: Called before a socket sends a packet (message, pong)
-  		 */
   @JSName("on")
   def on_packetCreate(
     ev: engineDotIoLib.engineDotIoLibStrings.packetCreate,
@@ -95,13 +91,7 @@ trait Socket
   		 * Sends a message, performing message = toString(arguments[0]) unless sending binary data, which is sent as is.
   		 */
   def send(message: Message): scala.Unit = js.native
-  /**
-  		 * Sends a message, performing message = toString(arguments[0]) unless sending binary data, which is sent as is.
-  		 */
   def send(message: Message, opts: MessageOptions): scala.Unit = js.native
-  /**
-  		 * Sends a message, performing message = toString(arguments[0]) unless sending binary data, which is sent as is.
-  		 */
   def send(message: Message, opts: MessageOptions, fn: js.Function1[/* transport */ js.Any, scala.Unit]): scala.Unit = js.native
 }
 

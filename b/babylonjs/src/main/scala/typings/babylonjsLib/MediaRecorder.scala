@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaRecorder extends js.Object {
   /** Event raised when a new chunk  of data is available and should be tracked. */
   def ondataavailable(event: stdLib.Event): scala.Unit

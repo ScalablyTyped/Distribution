@@ -6,18 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * The options for the countAssociations mixin of the belongsToMany association.
-     * @see BelongsToManyCountAssociationsMixin
-     */
-
+  * The options for the countAssociations mixin of the belongsToMany association.
+  * @see BelongsToManyCountAssociationsMixin
+  */
 trait BelongsToManyCountAssociationsMixinOptions extends js.Object {
   /**
-           * Apply a scope on the related model, or remove its default scope by passing false.
-           */
+    * Apply a scope on the related model, or remove its default scope by passing false.
+    */
   var scope: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
   /**
-           * An optional where clause to limit the associated models.
-           */
+    * An optional where clause to limit the associated models.
+    */
   var where: js.UndefOr[AnyWhereOptions] = js.undefined
 }
 

@@ -37,11 +37,8 @@ trait XMLHttpRequest
   def getResponseHeader(header: java.lang.String): java.lang.String | scala.Null = js.native
   //  msCachingEnabled(): boolean;
   def open(method: java.lang.String, url: java.lang.String): scala.Unit = js.native
-  //  msCachingEnabled(): boolean;
   def open(method: java.lang.String, url: java.lang.String, async: scala.Boolean): scala.Unit = js.native
-  //  msCachingEnabled(): boolean;
   def open(method: java.lang.String, url: java.lang.String, async: scala.Boolean, user: java.lang.String): scala.Unit = js.native
-  //  msCachingEnabled(): boolean;
   def open(
     method: java.lang.String,
     url: java.lang.String,
@@ -49,7 +46,6 @@ trait XMLHttpRequest
     user: java.lang.String,
     password: java.lang.String
   ): scala.Unit = js.native
-  //  msCachingEnabled(): boolean;
   def open(
     method: java.lang.String,
     url: java.lang.String,

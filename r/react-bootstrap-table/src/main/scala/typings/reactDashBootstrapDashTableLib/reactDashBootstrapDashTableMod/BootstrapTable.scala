@@ -18,9 +18,6 @@ class BootstrapTable ()
   	 * @see https://github.com/AllenFang/react-bootstrap-table/blob/master/examples/js/sort/clean-sorted-table.js
   	 */
   def cleanSort(): scala.Unit = js.native
-  /**
-  	 * Call this function to get the page by a rowkey
-  	 */
   def getPageByRowKey(rowKey: java.lang.String): scala.Double = js.native
   /**
   	 * Call this function to get the page by a rowkey

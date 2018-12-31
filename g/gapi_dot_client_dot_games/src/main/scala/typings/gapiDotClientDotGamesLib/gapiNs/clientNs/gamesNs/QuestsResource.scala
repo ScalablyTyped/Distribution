@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QuestsResource extends js.Object {
   /** Indicates that the currently authorized user will participate in the quest. */
   def accept(

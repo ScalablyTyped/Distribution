@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseLoggerOptions extends js.Object {
   var baseMeta: js.UndefOr[js.Object] = js.undefined
   var bodyBlacklist: js.UndefOr[js.Array[java.lang.String]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PluginOptions extends js.Object {
   /** extract from all additional chunks too (by default it extracts only from the initial chunk(s)) */
   var allChunks: js.UndefOr[scala.Boolean] = js.undefined

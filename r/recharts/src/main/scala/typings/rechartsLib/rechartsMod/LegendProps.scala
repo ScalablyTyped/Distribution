@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LegendProps extends js.Object {
   var align: js.UndefOr[
     rechartsLib.rechartsLibStrings.left | rechartsLib.rechartsLibStrings.center | rechartsLib.rechartsLibStrings.right

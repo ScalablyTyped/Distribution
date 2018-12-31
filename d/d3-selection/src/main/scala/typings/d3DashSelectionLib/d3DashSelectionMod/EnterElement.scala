@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EnterElement extends js.Object {
   var namespaceURI: java.lang.String
   var ownerDocument: stdLib.Document

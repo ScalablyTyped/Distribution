@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CalendarListResource extends js.Object {
   /** Deletes an entry on the user's calendar list. */
   def delete(request: gapiDotClientDotCalendarLib.Anon_PrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

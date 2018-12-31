@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IXmlWriter
   extends senchaUnderscoreTouchLib.ExtNs.dataNs.writerNs.IWriter {
   /** [Config Option] (String) */

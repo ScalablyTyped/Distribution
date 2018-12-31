@@ -13,8 +13,6 @@ class Date () extends js.Object {
   def this(date: js.Object) = this()
   def this(timezone: java.lang.String) = this()
   def this(utcMillis: scala.Double) = this()
-  // Note due to naming conflict I have not found a way to introduce the constructor
-  // that takes a regular Date object. Instead, I defined it to take an Object.
   def this(date: js.Object, timezone: java.lang.String) = this()
   def this(time: java.lang.String, timezone: java.lang.String) = this()
   def this(utcMillis: scala.Double, timezone: java.lang.String) = this()
@@ -78,7 +76,6 @@ class Date () extends js.Object {
   def toJSON(key: js.Any): java.lang.String = js.native
   def toLocaleDateString(): java.lang.String = js.native
   def toLocaleTimeString(): java.lang.String = js.native
-  // regular Date members
   def toString(format: java.lang.String): java.lang.String = js.native
   def toTimeString(): java.lang.String = js.native
   def toUTCString(): java.lang.String = js.native

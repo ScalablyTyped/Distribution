@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait SelectionMode extends js.Object
 
 /**
-     * [Api set: WordApi]
-     */
+  * [Api set: WordApi]
+  */
 @JSGlobal("Word.SelectionMode")
 @js.native
 object SelectionMode extends js.Object {

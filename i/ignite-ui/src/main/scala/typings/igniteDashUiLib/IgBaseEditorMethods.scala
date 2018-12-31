@@ -48,11 +48,6 @@ trait IgBaseEditorMethods extends js.Object {
   	 * @param newValue The new input name.
   	 */
   def inputName(): java.lang.String = js.native
-  /**
-  	 * Gets/Sets name attribute applied to the editor element.
-  	 *
-  	 * @param newValue The new input name.
-  	 */
   def inputName(newValue: java.lang.String): java.lang.String = js.native
   /**
   	 * Checks if the value in the editor is valid. Note: This function will not trigger automatic notifications.
@@ -64,11 +59,6 @@ trait IgBaseEditorMethods extends js.Object {
   	 * @param delay The delay before focusing the editor.
   	 */
   def setFocus(): scala.Unit = js.native
-  /**
-  	 * Sets focus to the editor after the specified delay.
-  	 *
-  	 * @param delay The delay before focusing the editor.
-  	 */
   def setFocus(delay: scala.Double): scala.Unit = js.native
   /**
   	 * Shows the editor.

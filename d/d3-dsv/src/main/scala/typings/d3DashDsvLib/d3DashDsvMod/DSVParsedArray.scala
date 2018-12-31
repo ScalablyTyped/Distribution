@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait DSVParsedArray[T]
   extends stdLib.Array[T] {
   /**
-       * List of column names.
-       */
+    * List of column names.
+    */
   var columns: js.Array[java.lang.String] = js.native
 }
 

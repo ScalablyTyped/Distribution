@@ -21,7 +21,6 @@ trait Container extends js.Object {
   def copy(): js.Promise[_] = js.native
   /** Deprecated since RAPI v1.20 */
   def copy(callback: dockerodeLib.Callback[_]): scala.Unit = js.native
-  /** Deprecated since RAPI v1.20 */
   def copy(options: js.Object): js.Promise[_] = js.native
   /** Deprecated since RAPI v1.20 */
   def copy(options: js.Object, callback: dockerodeLib.Callback[_]): scala.Unit = js.native
@@ -57,14 +56,12 @@ trait Container extends js.Object {
     callback: dockerodeLib.Callback[nodeLib.NodeJSNs.WritableStream]
   ): scala.Unit = js.native
   def putArchive(file: nodeLib.Buffer, options: js.Object): js.Promise[nodeLib.NodeJSNs.ReadWriteStream] = js.native
-  /** @param file Filename (will read synchronously), Buffer or stream */
   def putArchive(
     file: nodeLib.Buffer,
     options: js.Object,
     callback: dockerodeLib.Callback[nodeLib.NodeJSNs.WritableStream]
   ): scala.Unit = js.native
   def putArchive(file: nodeLib.NodeJSNs.ReadableStream, options: js.Object): js.Promise[nodeLib.NodeJSNs.ReadWriteStream] = js.native
-  /** @param file Filename (will read synchronously), Buffer or stream */
   def putArchive(
     file: nodeLib.NodeJSNs.ReadableStream,
     options: js.Object,

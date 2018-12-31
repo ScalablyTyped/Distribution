@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait toastOptions extends js.Object {
   var afterHidden: js.UndefOr[js.Function0[_]] = js.undefined
   var afterShown: js.UndefOr[js.Function0[_]] = js.undefined

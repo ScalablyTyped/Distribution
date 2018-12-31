@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * 用于检测和识别图片中的品牌 LOGO 信息
 		 */
-
 trait logoClassifyOptions
   extends baiduDashAppLib.swanNs.BaseOptions[js.Any, js.Any] {
    // 图像资源地址

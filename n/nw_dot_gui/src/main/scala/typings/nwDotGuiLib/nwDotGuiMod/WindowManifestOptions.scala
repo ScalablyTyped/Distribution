@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WindowManifestOptions extends js.Object {
   var frame: js.UndefOr[scala.Boolean] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined

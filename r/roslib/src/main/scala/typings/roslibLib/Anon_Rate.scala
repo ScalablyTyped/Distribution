@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Rate extends js.Object {
   var angularThres: js.UndefOr[scala.Double] = js.undefined
   var fixedFrame: js.UndefOr[java.lang.String] = js.undefined

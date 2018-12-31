@@ -6,15 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @private
-         * @template T Filter type
-         */
-
+  * @private
+  * @template T Filter type
+  */
 trait RemoveCookieParams[T] extends js.Object {
   /**
-               * Filter for cookies that will be removed.
-               * All empty entries are ignored.
-               */
+    * Filter for cookies that will be removed.
+    * All empty entries are ignored.
+    */
   var filter: T
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListContainersResponse extends js.Object {
   /** All Containers of a GTM Account. */
   var container: js.UndefOr[js.Array[Container]] = js.undefined

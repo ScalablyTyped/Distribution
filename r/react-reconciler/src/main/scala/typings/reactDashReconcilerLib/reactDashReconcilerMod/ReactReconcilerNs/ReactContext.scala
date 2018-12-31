@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReactContext[T] extends js.Object {
   @JSName("$$typeof")
   var $$typeof: js.Symbol | scala.Double

@@ -30,10 +30,10 @@ abstract class HtmlPrintDocumentSource () extends js.Object {
   /** Performs app-defined tasks that are associated with freeing, releasing, or resetting resources that were allocated for the document source. */
   def close(): scala.Unit = js.native
   /**
-                   * Tries to set the page range of the document source.
-                   * @param strPageRange The page range to set.
-                   * @return A Boolean value that indicates whether trySetPageRange set the page range in strPageRange. TRUE indicates the page range was set and FALSE otherwise.
-                   */
+    * Tries to set the page range of the document source.
+    * @param strPageRange The page range to set.
+    * @return A Boolean value that indicates whether trySetPageRange set the page range in strPageRange. TRUE indicates the page range was set and FALSE otherwise.
+    */
   def trySetPageRange(strPageRange: java.lang.String): scala.Boolean = js.native
 }
 

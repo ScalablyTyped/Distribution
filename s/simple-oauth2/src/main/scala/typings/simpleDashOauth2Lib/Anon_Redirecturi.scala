@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
-trait Anon_Redirecturi extends js.Object {
+trait Anon_Redirecturi[ClientIdName /* <: java.lang.String */] extends js.Object {
   /** A string that represents the registered application URI where the user is redirected after authentication */
   var redirect_uri: js.UndefOr[java.lang.String] = js.undefined
   /** A string or array of strings that represents the application privileges */

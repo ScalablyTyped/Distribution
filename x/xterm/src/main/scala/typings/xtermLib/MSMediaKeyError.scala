@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MSMediaKeyError extends js.Object {
   val MS_MEDIA_KEYERR_CLIENT: scala.Double
   val MS_MEDIA_KEYERR_DOMAIN: scala.Double

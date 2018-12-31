@@ -5,23 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default '.accordion'
-                   */
+    * @default '.accordion'
+    */
   var accordion: java.lang.String
   /**
-                   * @default '.content'
-                   */
+    * @default '.content'
+    */
   var content: java.lang.String
   /**
-                   * @default '.title'
-                   */
+    * @default '.title'
+    */
   var title: java.lang.String
   /**
-                   * @default '.title'
-                   */
+    * @default '.title'
+    */
   var trigger: java.lang.String
 }
 

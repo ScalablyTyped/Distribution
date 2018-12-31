@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 class QUOTA_EXCEEDED_ERR protected ()
   extends nodeLib.Error {
   /**
-       * Creates a specific `Error` object for **Quota Exceeded Errors**.
-       * @param message Message explaining the error.
-       */
+    * Creates a specific `Error` object for **Quota Exceeded Errors**.
+    * @param message Message explaining the error.
+    */
   def this(message: java.lang.String) = this()
   /**
-       * Message explaining the error.
-       */
+    * Message explaining the error.
+    */
   var message: java.lang.String = js.native
 }
 

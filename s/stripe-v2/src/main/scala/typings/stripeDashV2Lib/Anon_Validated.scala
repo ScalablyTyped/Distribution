@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Validated extends js.Object {
   var bank_name: java.lang.String
   var country: java.lang.String

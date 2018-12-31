@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MultiLevelSelectOptions
   extends BaseOptions[js.Any, js.Any] {
   						// 标题

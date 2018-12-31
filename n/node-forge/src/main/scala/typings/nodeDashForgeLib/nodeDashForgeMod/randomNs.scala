@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("node-forge", "random")
 @js.native
 object randomNs extends js.Object {
-  
   trait Random extends js.Object {
     def seedFile(needed: scala.Double, cb: CB): scala.Unit
     def seedFileSync(needed: scala.Double): java.lang.String

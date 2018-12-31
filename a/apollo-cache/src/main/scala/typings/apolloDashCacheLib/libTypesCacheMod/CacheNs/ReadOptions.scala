@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReadOptions[TVariables]
   extends apolloDashCacheLib.libTypesDataProxyMod.DataProxyNs.Query[TVariables] {
   var optimistic: scala.Boolean

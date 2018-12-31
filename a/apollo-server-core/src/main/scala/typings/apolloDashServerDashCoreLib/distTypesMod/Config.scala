@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick) */ 
-trait Config extends js.Object {
+- Lifted 1 members from Set(std.Pick<apollo-server-core.apollo-server-core/dist/graphqlOptions.GraphQLServerOptions<apollo-server-core.apollo-server-core/dist/types.Context<any>, any>, 'formatError' | 'debug' | 'rootValue' | 'validationRules' | 'formatResponse' | 'fieldResolver' | 'tracing' | 'dataSources' | 'cache'>) */ trait Config extends js.Object {
   var cacheControl: js.UndefOr[
     apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions | scala.Boolean
   ] = js.undefined
@@ -17,7 +16,9 @@ trait Config extends js.Object {
   ] = js.undefined
   var extensions: js.UndefOr[
     apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
-      js.Function0[graphqlDashExtensionsLib.graphqlDashExtensionsMod.GraphQLExtension[_]]
+      js.Function0[
+        /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify GraphQLExtension */ _
+      ]
     ]
   ] = js.undefined
   var introspection: js.UndefOr[scala.Boolean] = js.undefined

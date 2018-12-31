@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransferOperation extends js.Object {
   /** Information about the progress of the transfer operation. */
   var counters: js.UndefOr[TransferCounters] = js.undefined
@@ -16,9 +15,9 @@ trait TransferOperation extends js.Object {
   /** A globally unique ID assigned by the system. */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The ID of the Google Cloud Platform Console project that owns the operation.
-               * Required.
-               */
+    * The ID of the Google Cloud Platform Console project that owns the operation.
+    * Required.
+    */
   var projectId: js.UndefOr[java.lang.String] = js.undefined
   /** Start time of this transfer execution. */
   var startTime: js.UndefOr[java.lang.String] = js.undefined
@@ -27,9 +26,9 @@ trait TransferOperation extends js.Object {
   /** The name of the transfer job that triggers this transfer operation. */
   var transferJobName: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Transfer specification.
-               * Required.
-               */
+    * Transfer specification.
+    * Required.
+    */
   var transferSpec: js.UndefOr[TransferSpec] = js.undefined
 }
 

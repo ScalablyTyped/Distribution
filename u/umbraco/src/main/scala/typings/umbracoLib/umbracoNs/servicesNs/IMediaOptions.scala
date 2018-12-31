@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Media options
-     */
-
+  * Media options
+  */
 trait IMediaOptions extends js.Object {
   var imageOnly: scala.Boolean
   var mediaModel: IMediaModel

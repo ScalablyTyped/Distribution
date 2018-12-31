@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait INamedACL extends js.Object {
   var AccessControlList: IAccessControlList
   val GUID: java.lang.String

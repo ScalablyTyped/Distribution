@@ -6,25 +6,24 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Another Implementation guide this depends on
-     */
-
+  * Another Implementation guide this depends on
+  */
 trait ImplementationGuideDependency extends BackboneElement {
   /**
-           * Contains extended information for property 'type'.
-           */
+    * Contains extended information for property 'type'.
+    */
   var _type: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'uri'.
-           */
+    * Contains extended information for property 'uri'.
+    */
   var _uri: js.UndefOr[Element] = js.undefined
   /**
-           * reference | inclusion
-           */
+    * reference | inclusion
+    */
   var `type`: code
   /**
-           * Where to find dependency
-           */
+    * Where to find dependency
+    */
   var uri: uri
 }
 

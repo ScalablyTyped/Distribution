@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TileProviderError extends js.Object {
   var error: stdLib.Error
   var level: scala.Double

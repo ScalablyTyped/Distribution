@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatabaseAccount extends js.Object {
   var ConsistencyPolicy: ConsistencyPolicy
   var CurrentMediaStorageUsageInMB: scala.Double

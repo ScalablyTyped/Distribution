@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Quality extends js.Object {
   var lgblock: scala.Double
   var lgwin: scala.Double

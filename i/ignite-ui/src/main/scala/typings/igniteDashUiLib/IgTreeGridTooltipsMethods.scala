@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgTreeGridTooltipsMethods extends js.Object {
   def destroy(): scala.Unit
   /**

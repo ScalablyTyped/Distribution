@@ -21,11 +21,6 @@ trait EqjsStatic extends js.Object {
   		 * @returns {}
   		 */
   def nodeWrites(): scala.Unit = js.native
-  /**
-  		 * Runs through all nodes and writes their eq status.
-  		 * @param nodes An array or NodeList of nodes to query
-  		 * @returns {}
-  		 */
   def nodeWrites(nodes: AvailableElementType): scala.Unit = js.native
   /**
   		 * Runs through all nodes and finds their widths and points
@@ -33,11 +28,6 @@ trait EqjsStatic extends js.Object {
   		 * @param callback function to use as a callback once query and nodeWrites have finished
   		 */
   def query(nodes: AvailableElementType): scala.Unit = js.native
-  /**
-  		 * Runs through all nodes and finds their widths and points
-  		 * @param nodes
-  		 * @param callback function to use as a callback once query and nodeWrites have finished
-  		 */
   def query(nodes: AvailableElementType, callback: js.Function): scala.Unit = js.native
   /**
   		 *  Refreshes the list of nodes for eqjs to work with

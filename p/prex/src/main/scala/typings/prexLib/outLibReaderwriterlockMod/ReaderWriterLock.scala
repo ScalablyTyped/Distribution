@@ -34,42 +34,26 @@ class ReaderWriterLock () extends js.Object {
   var _upgrades: js.Any = js.native
   var _writers: js.Any = js.native
   /**
-       * Asynchronously waits for and takes a read lock on a resource.
-       *
-       * @param token A CancellationToken used to cancel the request.
-       */
+    * Asynchronously waits for and takes a read lock on a resource.
+    *
+    * @param token A CancellationToken used to cancel the request.
+    */
   def read(): js.Promise[LockHandle] = js.native
-  /**
-       * Asynchronously waits for and takes a read lock on a resource.
-       *
-       * @param token A CancellationToken used to cancel the request.
-       */
   def read(token: prexLib.outLibCancellationMod.CancellationToken): js.Promise[LockHandle] = js.native
   /**
-       * Asynchronously waits for and takes a read lock on a resource
-       * that can later be upgraded to a write lock.
-       *
-       * @param token A CancellationToken used to cancel the request.
-       */
+    * Asynchronously waits for and takes a read lock on a resource
+    * that can later be upgraded to a write lock.
+    *
+    * @param token A CancellationToken used to cancel the request.
+    */
   def upgradeableRead(): js.Promise[UpgradeableLockHandle] = js.native
-  /**
-       * Asynchronously waits for and takes a read lock on a resource
-       * that can later be upgraded to a write lock.
-       *
-       * @param token A CancellationToken used to cancel the request.
-       */
   def upgradeableRead(token: prexLib.outLibCancellationMod.CancellationToken): js.Promise[UpgradeableLockHandle] = js.native
   /**
-       * Asynchronously waits for and takes a write lock on a resource.
-       *
-       * @param token A CancellationToken used to cancel the request.
-       */
+    * Asynchronously waits for and takes a write lock on a resource.
+    *
+    * @param token A CancellationToken used to cancel the request.
+    */
   def write(): js.Promise[LockHandle] = js.native
-  /**
-       * Asynchronously waits for and takes a write lock on a resource.
-       *
-       * @param token A CancellationToken used to cancel the request.
-       */
   def write(token: prexLib.outLibCancellationMod.CancellationToken): js.Promise[LockHandle] = js.native
 }
 

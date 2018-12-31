@@ -6,28 +6,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Represents a file watcher
-         */
+  * Represents a file watcher
+  */
 @JSGlobal("adone.fs.Watcher")
 @js.native
 class Watcher ()
   extends adoneLib.adoneNs.eventNs.Emitter {
   def this(options: adoneLib.adoneNs.fsNs.INs.WatcherNs.ConstructorOptions) = this()
   /**
-               * Adds files, directories, or glob patterns for tracking
-               */
+    * Adds files, directories, or glob patterns for tracking
+    */
   def add(path: java.lang.String): this.type = js.native
-  /**
-               * Adds files, directories, or glob patterns for tracking
-               */
   def add(path: js.Array[java.lang.String]): this.type = js.native
   /**
-               * Removes all listeners from watched files
-               */
+    * Removes all listeners from watched files
+    */
   def close(): this.type = js.native
   /**
-               * Returns an object representing all the paths on the file system being watched by this watcher
-               */
+    * Returns an object representing all the paths on the file system being watched by this watcher
+    */
   def getWatched(): org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = js.native
   def on(
     event: adoneLib.adoneNs.fsNs.INs.WatcherNs.Event,
@@ -58,12 +55,9 @@ class Watcher ()
     ]
   ): this.type = js.native
   /**
-               * Stops watching files, directories, or glob patterns.
-               */
+    * Stops watching files, directories, or glob patterns.
+    */
   def unwatch(path: java.lang.String): this.type = js.native
-  /**
-               * Stops watching files, directories, or glob patterns.
-               */
   def unwatch(path: js.Array[java.lang.String]): this.type = js.native
 }
 

@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Collision.Shapes.b2Shape")
 @js.native
+/**
+		* Creates a new b2Shape.
+		**/
 class b2Shape () extends js.Object {
   /**
   		* Given a transform, compute the associated axis aligned bounding box for this shape.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BoxProps extends js.Object {
   var alignContent: js.UndefOr[
     gestaltLib.gestaltLibStrings.start | gestaltLib.gestaltLibStrings.end | gestaltLib.gestaltLibStrings.center | gestaltLib.gestaltLibStrings.between | gestaltLib.gestaltLibStrings.around | gestaltLib.gestaltLibStrings.stretch

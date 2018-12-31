@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MessageViewLinkDescriptor extends js.Object {
   var element: stdLib.HTMLElement
   var href: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AllDocsMeta extends js.Object {
   var _attachments: js.UndefOr[Attachments] = js.undefined
   /** Only present if `conflicts` is `true` */

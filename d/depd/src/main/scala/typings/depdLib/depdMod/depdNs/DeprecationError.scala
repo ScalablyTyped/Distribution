@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeprecationError
   extends nodeLib.Error {
   val name: depdLib.depdLibStrings.DeprecationError

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IScrollEvent extends js.Object {
   val scrollHeight: scala.Double
   val scrollHeightChanged: scala.Boolean

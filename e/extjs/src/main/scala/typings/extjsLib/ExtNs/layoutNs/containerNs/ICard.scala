@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICard extends IFit {
   /** [Config Option] (Boolean) */
   var deferredRender: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapStoreOptions extends js.Object {
   var baseDir: java.lang.String
   var sourceStore: istanbulDashLibDashSourceDashMapsLib.istanbulDashLibDashSourceDashMapsLibStrings.memory | istanbulDashLibDashSourceDashMapsLib.istanbulDashLibDashSourceDashMapsLibStrings.file

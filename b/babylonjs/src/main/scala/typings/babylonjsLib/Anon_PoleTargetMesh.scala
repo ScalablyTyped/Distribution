@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PoleTargetMesh extends js.Object {
   var bendAxis: js.UndefOr[babylonjsLib.BABYLONNs.Vector3] = js.undefined
   var maxAngle: js.UndefOr[scala.Double] = js.undefined

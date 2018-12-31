@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Bucket extends js.Object {
   /** Color of line or the interior of a polygon in #RRGGBB format. */
   var color: js.UndefOr[java.lang.String] = js.undefined

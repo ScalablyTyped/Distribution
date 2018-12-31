@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 //  DIALOGS
 //
 ////////////////////////
-
 trait DialogParams extends js.Object {
   var app_id: js.UndefOr[java.lang.String] = js.undefined
   var display: js.UndefOr[

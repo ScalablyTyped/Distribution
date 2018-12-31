@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpaceProps[C] extends BaseProps[C] {
   var m: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var mb: js.UndefOr[scala.Double | java.lang.String] = js.undefined

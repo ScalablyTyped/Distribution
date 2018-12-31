@@ -18,11 +18,9 @@ object cipherNs extends js.Object {
     def update(payload: nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteBuffer): scala.Unit = js.native
   }
   
-  
   trait Mode extends js.Object {
     var tag: nodeDashForgeLib.nodeDashForgeMod.utilNs.ByteStringBuffer
   }
-  
   
   trait StartOptions extends js.Object {
     var additionalData: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SnapshotsResource extends js.Object {
   /** Retrieves the metadata for a given snapshot ID. */
   def get(

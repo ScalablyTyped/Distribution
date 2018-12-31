@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProjectionGroup extends js.Object {
   var bounds: Rectangle
   var groups: js.Array[ProjectionGroup]

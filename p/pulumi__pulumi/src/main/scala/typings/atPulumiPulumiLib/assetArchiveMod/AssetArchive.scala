@@ -11,8 +11,8 @@ class AssetArchive protected () extends Archive {
   def this(assets: AssetMap) = this()
   def this(assets: js.Promise[AssetMap]) = this()
   /**
-       * A map of names to assets.
-       */
+    * A map of names to assets.
+    */
   val assets: js.Promise[AssetMap] = js.native
 }
 

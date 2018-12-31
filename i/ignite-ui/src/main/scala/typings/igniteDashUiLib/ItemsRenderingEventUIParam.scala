@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ItemsRenderingEventUIParam extends js.Object {
   /**
   	 * Used to get a reference to the [$.ig.DataSource](ig.datasource) combo is databound to.

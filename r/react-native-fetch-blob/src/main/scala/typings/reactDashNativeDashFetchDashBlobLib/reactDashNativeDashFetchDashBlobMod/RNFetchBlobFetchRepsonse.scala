@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RNFetchBlobFetchRepsonse extends js.Object {
   var bodyUsed: scala.Boolean
   var headers: js.Any

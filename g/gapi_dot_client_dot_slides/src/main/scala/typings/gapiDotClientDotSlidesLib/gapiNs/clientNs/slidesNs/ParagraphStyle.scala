@@ -5,47 +5,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParagraphStyle extends js.Object {
   /** The text alignment for this paragraph. */
   var alignment: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The text direction of this paragraph. If unset, the value defaults to
-               * LEFT_TO_RIGHT since
-               * text direction is not inherited.
-               */
+    * The text direction of this paragraph. If unset, the value defaults to
+    * LEFT_TO_RIGHT since
+    * text direction is not inherited.
+    */
   var direction: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The amount indentation for the paragraph on the side that corresponds to
-               * the end of the text, based on the current text direction. If unset, the
-               * value is inherited from the parent.
-               */
+    * The amount indentation for the paragraph on the side that corresponds to
+    * the end of the text, based on the current text direction. If unset, the
+    * value is inherited from the parent.
+    */
   var indentEnd: js.UndefOr[Dimension] = js.undefined
   /**
-               * The amount of indentation for the start of the first line of the paragraph.
-               * If unset, the value is inherited from the parent.
-               */
+    * The amount of indentation for the start of the first line of the paragraph.
+    * If unset, the value is inherited from the parent.
+    */
   var indentFirstLine: js.UndefOr[Dimension] = js.undefined
   /**
-               * The amount indentation for the paragraph on the side that corresponds to
-               * the start of the text, based on the current text direction. If unset, the
-               * value is inherited from the parent.
-               */
+    * The amount indentation for the paragraph on the side that corresponds to
+    * the start of the text, based on the current text direction. If unset, the
+    * value is inherited from the parent.
+    */
   var indentStart: js.UndefOr[Dimension] = js.undefined
   /**
-               * The amount of space between lines, as a percentage of normal, where normal
-               * is represented as 100.0. If unset, the value is inherited from the parent.
-               */
+    * The amount of space between lines, as a percentage of normal, where normal
+    * is represented as 100.0. If unset, the value is inherited from the parent.
+    */
   var lineSpacing: js.UndefOr[scala.Double] = js.undefined
   /**
-               * The amount of extra space above the paragraph. If unset, the value is
-               * inherited from the parent.
-               */
+    * The amount of extra space above the paragraph. If unset, the value is
+    * inherited from the parent.
+    */
   var spaceAbove: js.UndefOr[Dimension] = js.undefined
   /**
-               * The amount of extra space above the paragraph. If unset, the value is
-               * inherited from the parent.
-               */
+    * The amount of extra space above the paragraph. If unset, the value is
+    * inherited from the parent.
+    */
   var spaceBelow: js.UndefOr[Dimension] = js.undefined
   /** The spacing mode for the paragraph. */
   var spacingMode: js.UndefOr[java.lang.String] = js.undefined

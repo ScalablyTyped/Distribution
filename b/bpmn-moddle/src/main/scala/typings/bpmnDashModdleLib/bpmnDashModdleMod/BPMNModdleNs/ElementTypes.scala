@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ElementTypes extends js.Object {
   var `bioc:ColoredEdge`: ColoredEdge
   var `bioc:ColoredShape`: ColoredShape

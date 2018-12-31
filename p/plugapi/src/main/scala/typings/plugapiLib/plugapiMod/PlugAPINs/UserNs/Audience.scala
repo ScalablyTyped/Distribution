@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Audience extends DJ {
   var ignores: js.Array[_]
   var notifications: js.Array[plugapiLib.plugapiMod.PlugAPINs.Notification]

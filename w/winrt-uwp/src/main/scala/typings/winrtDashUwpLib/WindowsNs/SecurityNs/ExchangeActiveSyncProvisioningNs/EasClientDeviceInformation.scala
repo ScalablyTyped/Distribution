@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Provides the app the ability to retrieve device information from the local device. */
 @JSGlobal("Windows.Security.ExchangeActiveSyncProvisioning.EasClientDeviceInformation")
 @js.native
+/** Creates an instance of an object that allows the caller app to retrieve device information from the local device. */
 class EasClientDeviceInformation () extends js.Object {
   /** Returns the friendly name of the local device. */
   var friendlyName: java.lang.String = js.native

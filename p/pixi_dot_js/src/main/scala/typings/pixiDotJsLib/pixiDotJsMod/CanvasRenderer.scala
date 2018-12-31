@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("pixi.js", "CanvasRenderer")
 @js.native
+// plugintarget mixin end
 class CanvasRenderer ()
   extends pixiDotJsLib.PIXINs.CanvasRenderer {
-  // plugintarget mixin end
   def this(options: pixiDotJsLib.PIXINs.RendererOptions) = this()
   def this(screenWidth: scala.Double) = this()
   def this(screenWidth: scala.Double, screenHeight: scala.Double) = this()

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FavIconResponse extends js.Object {
   var files: js.Array[faviconsLib.Anon_Name]
   var html: js.Array[java.lang.String]

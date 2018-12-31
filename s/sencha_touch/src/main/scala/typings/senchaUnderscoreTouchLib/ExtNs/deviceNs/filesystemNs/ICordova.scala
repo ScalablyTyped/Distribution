@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICordova extends IHTML5 {
   /** [Method] Downloads a file from the server saving it into the Local File System
   		* @param config Object

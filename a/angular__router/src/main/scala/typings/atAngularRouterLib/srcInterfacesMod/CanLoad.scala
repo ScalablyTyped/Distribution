@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CanLoad extends js.Object {
   def canLoad(
     route: atAngularRouterLib.srcConfigMod.Route,

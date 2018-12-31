@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SetNavigationBarOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 导航栏背景色，支持十六进制颜色值 */

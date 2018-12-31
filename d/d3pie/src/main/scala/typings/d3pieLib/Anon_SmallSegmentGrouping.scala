@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SmallSegmentGrouping extends js.Object {
   var content: js.Array[Anon_Color]
   var smallSegmentGrouping: js.UndefOr[Anon_ValueType] = js.undefined

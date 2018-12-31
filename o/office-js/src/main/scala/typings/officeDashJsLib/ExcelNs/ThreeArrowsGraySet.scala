@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThreeArrowsGraySet
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] {
   var grayDownArrow: Icon

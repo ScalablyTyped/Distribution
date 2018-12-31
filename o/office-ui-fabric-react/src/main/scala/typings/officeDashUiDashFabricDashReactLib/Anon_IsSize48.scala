@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IsSize48 extends js.Object {
   var isSize10: scala.Boolean
   var isSize100: scala.Boolean

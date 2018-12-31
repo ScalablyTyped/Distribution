@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocationPreference extends js.Object {
   /** The AppEngine application to follow, it must be in the same region as the Cloud SQL instance. */
   var followGaeApplication: js.UndefOr[java.lang.String] = js.undefined

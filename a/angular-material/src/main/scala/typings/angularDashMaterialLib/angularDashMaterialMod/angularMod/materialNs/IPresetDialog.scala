@@ -13,36 +13,29 @@ trait IPresetDialog[T] extends js.Object {
   def bindToController(bindToController: scala.Boolean): T = js.native
    // default: true
   def clickOutsideToClose(): T = js.native
-   // default: true
   def clickOutsideToClose(clickOutsideToClose: scala.Boolean): T = js.native
   def closeTo(to: angularDashMaterialLib.Anon_Top): T = js.native
   def closeTo(to: java.lang.String): T = js.native
   def closeTo(to: stdLib.Element): T = js.native
    // default: true
   def controller(): T = js.native
-   // default: true
   def controller(
     controller: angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.angularNs.IControllerConstructor]
   ): T = js.native
-   // default: true
   def controller(controller: java.lang.String): T = js.native
   def controllerAs(): T = js.native
   def controllerAs(controllerAs: java.lang.String): T = js.native
    // default: false
   def disableParentScroll(): T = js.native
-   // default: false
   def disableParentScroll(disableParentScroll: scala.Boolean): T = js.native
    // default: false
   def escapeToClose(): T = js.native
-   // default: false
   def escapeToClose(escapeToClose: scala.Boolean): T = js.native
    // default: true
   def focusOnOpen(): T = js.native
-   // default: true
   def focusOnOpen(focusOnOpen: scala.Boolean): T = js.native
    // default: true
   def hasBackdrop(): T = js.native
-   // default: true
   def hasBackdrop(hasBackdrop: scala.Boolean): T = js.native
   def htmlContent(htmlContent: java.lang.String): T = js.native
   def locals(): T = js.native
@@ -59,11 +52,9 @@ trait IPresetDialog[T] extends js.Object {
   def parent(parent: stdLib.Element): T = js.native
    // default: new child scope
   def preserveScope(): T = js.native
-   // default: new child scope
   def preserveScope(preserveScope: scala.Boolean): T = js.native
    // default: false
   def resolve(): T = js.native
-   // default: false
   def resolve(resolve: ResolveObject): T = js.native
   def scope(): T = js.native
   def scope(scope: angularLib.angularMod.angularNs.IScope): T = js.native

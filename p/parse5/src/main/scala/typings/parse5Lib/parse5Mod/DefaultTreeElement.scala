@@ -5,31 +5,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DefaultTreeElement extends DefaultTreeParentNode {
   /**
-       * List of element attributes.
-       */
+    * List of element attributes.
+    */
   var attrs: js.Array[Attribute]
   /**
-       * Element namespace.
-       */
+    * Element namespace.
+    */
   var namespaceURI: java.lang.String
   /**
-       * The name of the node. Equals to element {@link tagName}.
-       */
+    * The name of the node. Equals to element {@link tagName}.
+    */
   var nodeName: java.lang.String
   /**
-       * Parent node.
-       */
+    * Parent node.
+    */
   var parentNode: DefaultTreeParentNode
   /**
-       * Element source code location info. Available if location info is enabled via {@link ParserOptions}.
-       */
+    * Element source code location info. Available if location info is enabled via {@link ParserOptions}.
+    */
   var sourceCodeLocation: js.UndefOr[ElementLocation] = js.undefined
   /**
-       * Element tag name.
-       */
+    * Element tag name.
+    */
   var tagName: java.lang.String
 }
 

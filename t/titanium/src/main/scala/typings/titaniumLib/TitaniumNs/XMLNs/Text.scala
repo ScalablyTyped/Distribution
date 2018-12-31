@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * Represents the textual content of an <Titanium.XML.Element> or <Titanium.XML.Attr> Implements the [DOM Level 2 API](https://www.w3.org/TR/DOM-Level-2-Core/core.html#ID-1312295772) on Android and iOS.
 		 */
-
 trait Text
   extends titaniumLib.TitaniumNs.Proxy {
   /**

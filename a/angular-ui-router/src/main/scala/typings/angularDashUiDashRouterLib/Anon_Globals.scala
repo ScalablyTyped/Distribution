@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Globals extends js.Object {
   /**
-                   * Currently resolved "resolve" values from the current state
-                   */
+    * Currently resolved "resolve" values from the current state
+    */
   var globals: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 

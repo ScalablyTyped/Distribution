@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait STATUS_TYPES extends js.Object {
   var default: reapopLib.DEFAULT_STATUS
   var error: reapopLib.ERROR_STATUS

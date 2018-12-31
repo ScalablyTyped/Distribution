@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MachineTypesScopedList extends js.Object {
   /** [Output Only] List of machine types contained in this scope. */
   var machineTypes: js.UndefOr[js.Array[MachineType]] = js.undefined

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // http://foundation.zurb.com/docs/components/abide.html#optional-javascript-configuration
-
 trait AbidePatterns extends js.Object {
   var alpha: js.UndefOr[stdLib.RegExp] = js.undefined
   var alpha_numeric: js.UndefOr[stdLib.RegExp] = js.undefined

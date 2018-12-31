@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * A helper class used in the worker thread
-         * This helper class provides convenience functions you can use in the worker thread
-         */
-
+  * A helper class used in the worker thread
+  * This helper class provides convenience functions you can use in the worker thread
+  */
 trait Helpers extends js.Object {
   /** Translates geographical coordinates (latitude, longitude) to world pixel coordinates. */
   var latLngToPixel: js.UndefOr[

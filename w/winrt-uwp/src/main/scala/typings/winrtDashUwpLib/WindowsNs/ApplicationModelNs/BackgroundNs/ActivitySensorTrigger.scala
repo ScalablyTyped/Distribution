@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ActivitySensorTrigger protected () extends js.Object {
   /**
-                   * Creates an instance of the ActivitySensorTrigger class with an initial MinimumReportInterval .
-                   * @param reportIntervalInMilliseconds The initial report interval to use for MinimumReportInterval .
-                   */
+    * Creates an instance of the ActivitySensorTrigger class with an initial MinimumReportInterval .
+    * @param reportIntervalInMilliseconds The initial report interval to use for MinimumReportInterval .
+    */
   def this(reportIntervalInMilliseconds: scala.Double) = this()
   /** Gets the minimum supported report interval for the sensor trigger. */
   var minimumReportInterval: scala.Double = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BarLabelStyle extends js.Object {
   var barLabelStyle: js.UndefOr[googleDotVisualizationLib.googleNs.visualizationNs.LabelStyle] = js.undefined
   var colorByRowLabel: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TSTypeOperator extends BaseNode {
   var operator: java.lang.String | scala.Null
   var typeAnnotation: TSType

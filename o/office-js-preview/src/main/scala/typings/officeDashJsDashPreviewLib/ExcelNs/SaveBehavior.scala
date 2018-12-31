@@ -9,31 +9,31 @@ import scala.scalajs.js.annotation._
 sealed trait SaveBehavior extends js.Object
 
 /**
-     *
-     * Specifies the save behavior for workbook.save API.
-     *
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  *
+  * Specifies the save behavior for workbook.save API.
+  *
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.SaveBehavior")
 @js.native
 object SaveBehavior extends js.Object {
   /**
-           *
-           * Prompts the saveas experience to the user if the workbook has not been saved,
-              Ignored if the workbook was previously saved.
-           *
-           */
+    *
+    * Prompts the saveas experience to the user if the workbook has not been saved,
+    Ignored if the workbook was previously saved.
+    *
+    */
   @js.native
   sealed trait prompt
     extends officeDashJsDashPreviewLib.ExcelNs.SaveBehavior
   
   /**
-           *
-           * Save the workbook without prompting the user. If file is not saved,
-              it will save it with default name under default location.
-           *
-           */
+    *
+    * Save the workbook without prompting the user. If file is not saved,
+    it will save it with default name under default location.
+    *
+    */
   @js.native
   sealed trait save
     extends officeDashJsDashPreviewLib.ExcelNs.SaveBehavior

@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(semanticDashUiDashReactLib.distCommonjsElementsInputInputMod.StrictInputProps because Would inherit conflicting mutable fields List(children, label, as, error, className, disabled, `type`))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(semanticDashUiDashReactLib.distCommonjsElementsInputInputMod.StrictInputProps because Would inherit conflicting mutable fields List(as, children, className, disabled, error, label, `type`))*/
 trait StrictFormInputProps
   extends semanticDashUiDashReactLib.distCommonjsCollectionsFormFormFieldMod.StrictFormFieldProps {
   /** Shorthand for a Label. */

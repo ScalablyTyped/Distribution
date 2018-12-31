@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GrpcObject
   extends /* name */ org.scalablytyped.runtime.StringDictionary[
       GrpcObject | (org.scalablytyped.runtime.Instantiable3[

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class MidiSystemExclusiveMessage protected () extends js.Object {
   /**
-                   * Creates a new MidiSystemExclusiveMessage object.
-                   * @param rawData The system exclusive data.
-                   */
+    * Creates a new MidiSystemExclusiveMessage object.
+    * @param rawData The system exclusive data.
+    */
   def this(rawData: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer) = this()
   /** Gets the array of bytes associated with the MIDI message, including status byte. */
   var rawData: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer = js.native

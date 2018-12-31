@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BeforeBuildContext extends js.Object {
   val appDir: java.lang.String
   val arch: java.lang.String

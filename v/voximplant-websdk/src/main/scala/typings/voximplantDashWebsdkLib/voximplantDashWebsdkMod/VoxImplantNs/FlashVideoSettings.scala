@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	*	Flash Video Settings
 	*/
-
 trait FlashVideoSettings extends js.Object {
   /**
   		*	The maximum amount of bandwidth the current outgoing video feed can use, in bytes

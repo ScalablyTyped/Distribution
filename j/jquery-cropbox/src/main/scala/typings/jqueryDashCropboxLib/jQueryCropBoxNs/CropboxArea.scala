@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CropboxArea extends js.Object {
   var cropH: scala.Double
   var cropW: scala.Double

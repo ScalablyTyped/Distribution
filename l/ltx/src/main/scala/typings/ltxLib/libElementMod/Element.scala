@@ -14,7 +14,7 @@ class Element protected () extends js.Object {
   var attrs: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   var children: js.Array[Element] = js.native
   @JSName("clone")
-  var clone_Original: js.Function1[/* el */ this.type, this.type] = js.native
+  var clone_Original: ltxLib.Anon_El = js.native
   var name: java.lang.String = js.native
   var parent: Element | scala.Null = js.native
   def attr(attr: java.lang.String): js.Any = js.native
@@ -22,23 +22,19 @@ class Element protected () extends js.Object {
   def attrsEquals(el: Element): scala.Boolean = js.native
   /** create child node and return it */
   def c(name: java.lang.String): Element = js.native
-  /** create child node and return it */
   def c(name: java.lang.String, attrs: org.scalablytyped.runtime.StringDictionary[js.Any]): Element = js.native
   def childrenEquals(el: Element): scala.Boolean = js.native
   def clone[T /* <: Element */](el: T): T = js.native
   def cnode[T /* <: Element */](child: T): T = js.native
   def equals(el: Element): scala.Boolean = js.native
   /**
-       * find the namespace to the given prefix, upwards recursively
-       */
+    * find the namespace to the given prefix, upwards recursively
+    */
   def findNS(prefix: java.lang.String): js.UndefOr[java.lang.String] = js.native
   /**
-       * returns the matching attribute.
-       */
+    * returns the matching attribute.
+    */
   def getAttr(name: java.lang.String): js.Any = js.native
-  /**
-       * returns the matching attribute.
-       */
   def getAttr(name: java.lang.String, xmlns: java.lang.String): js.Any = js.native
   def getChild(name: java.lang.String): js.UndefOr[Element] = js.native
   def getChild(name: java.lang.String, xmlns: java.lang.String): js.UndefOr[Element] = js.native
@@ -46,10 +42,10 @@ class Element protected () extends js.Object {
   def getChildByAttr(attr: java.lang.String, `val`: js.Any, xmlns: java.lang.String): js.UndefOr[Element] = js.native
   def getChildByAttr(attr: java.lang.String, `val`: js.Any, xmlns: java.lang.String, recursive: scala.Boolean): js.UndefOr[Element] = js.native
   /**
-       * Return all direct descendents that are Elements.
-       * This differs from `getChildren` in that it will exclude text nodes,
-       * processing instructions, etc.
-       */
+    * Return all direct descendents that are Elements.
+    * This differs from `getChildren` in that it will exclude text nodes,
+    * processing instructions, etc.
+    */
   def getChildElements(): js.Array[Element] = js.native
   def getChildText(name: java.lang.String): java.lang.String | scala.Null = js.native
   def getChildText(name: java.lang.String, xmlns: java.lang.String): java.lang.String | scala.Null = js.native
@@ -61,50 +57,32 @@ class Element protected () extends js.Object {
   def getChildrenByFilter(filter: js.Function1[/* child */ Node, scala.Boolean]): js.Array[Element] = js.native
   def getChildrenByFilter(filter: js.Function1[/* child */ Node, scala.Boolean], recursive: scala.Boolean): js.Array[Element] = js.native
   /**
-       * retrieves the namespace of the current element, upwards recursively
-       */
+    * retrieves the namespace of the current element, upwards recursively
+    */
   def getNS(): js.UndefOr[java.lang.String] = js.native
   /**
-       * without prefix.
-       */
+    * without prefix.
+    */
   def getName(): java.lang.String = js.native
   def getText(): java.lang.String = js.native
   /**
-       * Recursiverly gets all xmlns defined, in the form of {url:prefix}
-       */
+    * Recursiverly gets all xmlns defined, in the form of {url:prefix}
+    */
   def getXmlns(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
   /**
-       * if (element.is('message', 'jabber:client')) ...
-       */
+    * if (element.is('message', 'jabber:client')) ...
+    */
   def is(name: java.lang.String): scala.Boolean = js.native
-  /**
-       * if (element.is('message', 'jabber:client')) ...
-       */
   def is(name: java.lang.String, xmlns: java.lang.String): scala.Boolean = js.native
   def nameEquals(el: Element): scala.Boolean = js.native
-  /**
-       * Either:
-       *   el.remove(childEl)
-       *   el.remove('author', 'urn:...')
-       */
   def remove(el: java.lang.String): this.type = js.native
-  /**
-       * Either:
-       *   el.remove(childEl)
-       *   el.remove('author', 'urn:...')
-       */
   def remove(el: java.lang.String, xmlns: java.lang.String): this.type = js.native
   /**
-       * Either:
-       *   el.remove(childEl)
-       *   el.remove('author', 'urn:...')
-       */
+    * Either:
+    *   el.remove(childEl)
+    *   el.remove('author', 'urn:...')
+    */
   def remove(el: Element): this.type = js.native
-  /**
-       * Either:
-       *   el.remove(childEl)
-       *   el.remove('author', 'urn:...')
-       */
   def remove(el: Element, xmlns: java.lang.String): this.type = js.native
   /** returns uppermost parent */
   def root(): Element | this.type = js.native

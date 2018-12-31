@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DockerContainerStatsData extends js.Object {
   var blockIO: systeminformationLib.Anon_W
   var cpu_percent: scala.Double

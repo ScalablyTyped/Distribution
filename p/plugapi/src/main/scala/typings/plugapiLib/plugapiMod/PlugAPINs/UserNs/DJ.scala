@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DJ extends Room {
   var blurp: js.Any
   var grab: scala.Boolean

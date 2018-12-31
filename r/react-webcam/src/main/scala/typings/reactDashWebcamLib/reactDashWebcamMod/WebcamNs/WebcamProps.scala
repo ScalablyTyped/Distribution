@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebcamProps extends js.Object {
   var audio: js.UndefOr[scala.Boolean] = js.undefined
   var audioSource: js.UndefOr[java.lang.String] = js.undefined

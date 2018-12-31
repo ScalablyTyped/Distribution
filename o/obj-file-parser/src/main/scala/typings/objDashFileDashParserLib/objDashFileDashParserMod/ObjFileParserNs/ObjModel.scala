@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObjModel extends js.Object {
   var faces: js.Array[Face]
   var name: java.lang.String

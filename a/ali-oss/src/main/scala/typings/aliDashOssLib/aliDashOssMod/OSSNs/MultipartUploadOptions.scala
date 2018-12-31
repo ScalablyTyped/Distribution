@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MultipartUploadOptions extends js.Object {
   var callback: js.UndefOr[ObjectCallback] = js.undefined
    // the progress callback called after each successful upload of one part
@@ -19,7 +18,7 @@ trait MultipartUploadOptions extends js.Object {
    // the number of parts to be uploaded in parallel
   var partSize: js.UndefOr[scala.Double] = js.undefined
    // the suggested size for each part
-  var progress: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var progress: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 

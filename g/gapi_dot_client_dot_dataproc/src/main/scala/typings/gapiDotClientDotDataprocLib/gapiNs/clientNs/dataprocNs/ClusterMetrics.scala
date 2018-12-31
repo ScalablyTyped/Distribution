@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClusterMetrics extends js.Object {
   /** The HDFS metrics. */
   var hdfsMetrics: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined

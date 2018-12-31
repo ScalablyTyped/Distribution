@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InteractionTrackingData extends js.Object {
   var flags: scala.Double
   var leftDown: scala.Boolean

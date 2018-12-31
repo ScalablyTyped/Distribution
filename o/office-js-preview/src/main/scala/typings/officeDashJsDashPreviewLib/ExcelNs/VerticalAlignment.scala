@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait VerticalAlignment extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.1]
-     */
+  * [Api set: ExcelApi 1.1]
+  */
 @JSGlobal("Excel.VerticalAlignment")
 @js.native
 object VerticalAlignment extends js.Object {

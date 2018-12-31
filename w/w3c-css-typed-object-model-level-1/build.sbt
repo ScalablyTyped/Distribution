@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "w3c-css-typed-object-model-level-1"
-version := "20180410.0-dt-20181205Z-f7deca"
+version := "20180410.0-dt-20181205Z-5aae6d"
 scalaVersion := "2.12.7"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "std" % "3.2.2-669a73")
+  "org.scalablytyped" %%% "std" % "3.2.2-9ed5ff")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

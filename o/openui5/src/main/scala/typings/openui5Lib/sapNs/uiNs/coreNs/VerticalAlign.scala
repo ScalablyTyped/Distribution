@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait VerticalAlign extends js.Object
 
 /**
-       * Configuration options for vertical alignments, for example of a layout cell content within the
-       * borders.
-      */
+  * Configuration options for vertical alignments, for example of a layout cell content within the
+  * borders.
+  */
 @JSGlobal("sap.ui.core.VerticalAlign")
 @js.native
 object VerticalAlign extends js.Object {

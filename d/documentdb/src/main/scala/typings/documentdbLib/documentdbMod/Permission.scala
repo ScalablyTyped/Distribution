@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Permission extends UniqueId {
   /** The mode of the permission */
   var permissionMode: PermissionMode

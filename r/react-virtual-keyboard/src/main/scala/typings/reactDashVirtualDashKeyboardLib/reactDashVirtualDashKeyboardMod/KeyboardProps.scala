@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeyboardProps extends js.Object {
   var callbackParent: js.UndefOr[kbEvents] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined

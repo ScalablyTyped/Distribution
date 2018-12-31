@@ -8,62 +8,51 @@ import scala.scalajs.js.annotation._
 @JSImport("chartmogul-node", "Metrics")
 @js.native
 object MetricsNs extends js.Object {
-  
   trait ARPA extends js.Object {
     var arpa: scala.Double
     var date: java.lang.String
   }
-  
   
   trait ARR extends js.Object {
     var arr: scala.Double
     var date: java.lang.String
   }
   
-  
   trait ASP extends js.Object {
     var asp: scala.Double
     var date: java.lang.String
   }
   
-  
   trait All extends js.Object {
     var entries: chartmogulDashNodeLib.Anon_Customerchurnrate
   }
   
-  
   trait CustomerChurnRate extends js.Object {
     var date: java.lang.String
   }
-  
   
   trait CustomerCount extends js.Object {
     var customers: scala.Double
     var date: java.lang.String
   }
   
-  
   trait LTV extends js.Object {
     var date: java.lang.String
     var ltv: scala.Double
   }
-  
   
   trait MRR extends js.Object {
     var date: java.lang.String
     var mrr: scala.Double
   }
   
-  
   trait MRRChurnRate extends js.Object {
     var date: java.lang.String
   }
   
-  
   trait Params extends ParamsNoInterval {
     var interval: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait ParamsNoInterval extends js.Object {
     var geo: js.UndefOr[java.lang.String] = js.undefined
@@ -82,7 +71,6 @@ object MetricsNs extends js.Object {
   @JSName("Customer")
   @js.native
   object CustomerNs extends js.Object {
-    
     trait MetricsActivity extends js.Object {
       var currency: java.lang.String
       var date: java.lang.String
@@ -90,7 +78,6 @@ object MetricsNs extends js.Object {
       var id: scala.Double
       var `type`: java.lang.String
     }
-    
     
     trait MetricsSubscription extends js.Object {
       var arr: scala.Double

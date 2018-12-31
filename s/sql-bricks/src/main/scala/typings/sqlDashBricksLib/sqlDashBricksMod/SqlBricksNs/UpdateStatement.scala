@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-   * An UPDATE statement
-   */
+  * An UPDATE statement
+  */
 @js.native
 trait UpdateStatement extends Statement {
   def and(): UpdateStatement = js.native

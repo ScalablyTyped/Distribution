@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Source extends js.Object {
   /** The full source string passed to css.parse. */
   var content: js.UndefOr[java.lang.String] = js.undefined

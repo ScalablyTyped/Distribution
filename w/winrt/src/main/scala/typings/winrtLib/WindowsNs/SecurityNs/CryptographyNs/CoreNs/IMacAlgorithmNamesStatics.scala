@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMacAlgorithmNamesStatics extends js.Object {
   var aesCmac: java.lang.String
   var hmacMd5: java.lang.String

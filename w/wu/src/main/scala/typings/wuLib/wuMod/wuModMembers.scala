@@ -15,9 +15,7 @@ object wuModMembers extends js.Object {
   def apply[T](iterable: stdLib.Iterable[T]): wuLib.wuMod.wuNs.WuIterable[T] = js.native
   // also copied to WuIterable
   def asyncEach(fn: wuLib.wuMod.wuNs.Consumer[_]): scala.Unit = js.native
-  // also copied to WuIterable
   def asyncEach(fn: wuLib.wuMod.wuNs.Consumer[_], maxBlock: scala.Double): scala.Unit = js.native
-  // also copied to WuIterable
   def asyncEach(fn: wuLib.wuMod.wuNs.Consumer[_], maxBlock: scala.Double, timeout: scala.Double): scala.Unit = js.native
   // only static
   def chain[T](iters: stdLib.Iterable[T]*): wuLib.wuMod.wuNs.WuIterable[T] = js.native
@@ -26,8 +24,8 @@ object wuModMembers extends js.Object {
   def count(): wuLib.wuMod.wuNs.WuIterable[scala.Double] = js.native
   def count(start: scala.Double): wuLib.wuMod.wuNs.WuIterable[scala.Double] = js.native
   def count(start: scala.Double, step: scala.Double): wuLib.wuMod.wuNs.WuIterable[scala.Double] = js.native
-  def curryable(fun: js.Function1[/* repeated */js.Any, _]): js.Any = js.native
-  def curryable(fun: js.Function1[/* repeated */js.Any, _], expected: scala.Double): js.Any = js.native
+  def curryable(fun: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
+  def curryable(fun: js.Function1[/* repeated */ js.Any, _], expected: scala.Double): js.Any = js.native
   def cycle[T](iter: stdLib.Iterable[T]): wuLib.wuMod.wuNs.WuIterable[T] = js.native
   def drop[T](n: scala.Double, iter: stdLib.Iterable[T]): wuLib.wuMod.wuNs.WuIterable[T] = js.native
   def dropWhile[T](fn: wuLib.wuMod.wuNs.Filter[T], iter: stdLib.Iterable[T]): wuLib.wuMod.wuNs.WuIterable[T] = js.native
@@ -63,7 +61,7 @@ object wuModMembers extends js.Object {
   def slice[T](start: scala.Double, iter: stdLib.Iterable[T]): wuLib.wuMod.wuNs.WuIterable[T] = js.native
   def slice[T](start: scala.Double, stop: scala.Double, iter: stdLib.Iterable[T]): wuLib.wuMod.wuNs.WuIterable[T] = js.native
   def some[T](fn: wuLib.wuMod.wuNs.Filter[T], iter: stdLib.Iterable[T]): scala.Boolean = js.native
-  def spreadMap[T](fn: js.Function1[/* repeated */js.Any, T], iter: stdLib.Iterable[js.Array[_]]): wuLib.wuMod.wuNs.WuIterable[T] = js.native
+  def spreadMap[T](fn: js.Function1[/* repeated */ js.Any, T], iter: stdLib.Iterable[js.Array[_]]): wuLib.wuMod.wuNs.WuIterable[T] = js.native
   def take[T](n: scala.Double, iter: stdLib.Iterable[T]): wuLib.wuMod.wuNs.WuIterable[T] = js.native
   def takeWhile[T](fn: wuLib.wuMod.wuNs.Filter[T], iter: stdLib.Iterable[T]): wuLib.wuMod.wuNs.WuIterable[T] = js.native
   def tap[T](fn: wuLib.wuMod.wuNs.Consumer[T], iter: stdLib.Iterable[T]): wuLib.wuMod.wuNs.WuIterable[T] = js.native

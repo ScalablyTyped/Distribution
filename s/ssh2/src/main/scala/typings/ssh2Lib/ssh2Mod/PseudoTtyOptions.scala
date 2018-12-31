@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PseudoTtyOptions extends js.Object {
   /** The number of columns (default: `80`). */
   var cols: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScrollbarOptions extends js.Object {
   var barBackgroundColor: js.UndefOr[java.lang.String] = js.undefined
   var barBorderColor: js.UndefOr[java.lang.String] = js.undefined

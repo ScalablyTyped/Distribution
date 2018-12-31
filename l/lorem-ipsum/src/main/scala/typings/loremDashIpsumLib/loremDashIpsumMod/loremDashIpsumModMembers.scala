@@ -9,12 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object loremDashIpsumModMembers extends js.Object {
   /**
-   * Generate a passage of lorem ipsum text.
-   */
+    * Generate a passage of lorem ipsum text.
+    */
   def apply(): java.lang.String = js.native
-  /**
-   * Generate a passage of lorem ipsum text.
-   */
   def apply(options: LoremIpsumOptions): java.lang.String = js.native
 }
 

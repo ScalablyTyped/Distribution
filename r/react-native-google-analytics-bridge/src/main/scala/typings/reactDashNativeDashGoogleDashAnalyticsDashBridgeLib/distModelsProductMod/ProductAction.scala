@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProductAction extends js.Object {
   var action: ProductActionEnum
   var checkoutOption: js.UndefOr[java.lang.String] = js.undefined

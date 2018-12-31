@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebglextensionsBoolean
   extends stdLib.Boolean {
   var ANGLE_instanced_arrays: scala.Boolean

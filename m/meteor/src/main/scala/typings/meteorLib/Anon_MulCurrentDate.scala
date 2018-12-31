@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MulCurrentDate[T] extends js.Object {
   @JSName("$addToSet")
   var $addToSet: js.UndefOr[

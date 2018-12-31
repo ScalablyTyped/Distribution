@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PropsType extends js.Object {
   /** 显示开始日期，default: today */
   var defaultDate: js.UndefOr[stdLib.Date] = js.undefined

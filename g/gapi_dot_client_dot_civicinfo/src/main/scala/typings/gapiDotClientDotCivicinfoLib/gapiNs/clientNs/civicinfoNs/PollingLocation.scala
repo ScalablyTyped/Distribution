@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PollingLocation extends js.Object {
   /** The address of the location. */
   var address: js.UndefOr[SimpleAddressType] = js.undefined
   /** The last date that this early vote site or drop off location may be used. This field is not populated for polling locations. */
   var endDate: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * An ID for this object. IDs may change in future requests and should not be cached. Access to this field requires special access that can be requested
-               * from the Request more link on the Quotas page.
-               */
+    * An ID for this object. IDs may change in future requests and should not be cached. Access to this field requires special access that can be requested
+    * from the Request more link on the Quotas page.
+    */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /** The name of the early vote site or drop off location. This field is not populated for polling locations. */
   var name: js.UndefOr[java.lang.String] = js.undefined

@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object CloudNsMembers extends js.Object {
   /**
-           * To use this Cloud Module in Cloud Code, you must require 'buffer' in your JavaScript file.
-           *
-           *     import Buffer = require("buffer").Buffer;
-           */
+    * To use this Cloud Module in Cloud Code, you must require 'buffer' in your JavaScript file.
+    *
+    *     import Buffer = require("buffer").Buffer;
+    */
   var HTTPOptions: org.scalablytyped.runtime.Instantiable0[HTTPOptions] = js.native
   def afterDelete(arg1: js.Any): scala.Unit = js.native
   def afterDelete(arg1: js.Any, func: js.Function1[/* request */ AfterDeleteRequest, scala.Unit]): scala.Unit = js.native

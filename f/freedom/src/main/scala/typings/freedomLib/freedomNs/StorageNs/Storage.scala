@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Storage extends js.Object {
   // Remove all data from storage.
   def clear(): js.Promise[scala.Unit]

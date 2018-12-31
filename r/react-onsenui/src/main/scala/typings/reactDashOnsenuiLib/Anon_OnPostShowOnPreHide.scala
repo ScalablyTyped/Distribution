@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnPostShowOnPreHide extends js.Object {
   var animation: js.UndefOr[
     reactDashOnsenuiLib.reactDashOnsenuiLibStrings.default | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.ascend | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.lift | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.fall | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.fade | reactDashOnsenuiLib.reactDashOnsenuiLibStrings.none

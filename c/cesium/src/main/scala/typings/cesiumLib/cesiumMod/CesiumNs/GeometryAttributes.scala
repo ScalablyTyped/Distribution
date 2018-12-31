@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GeometryAttributes extends js.Object {
   var binormal: GeometryAttribute
   var color: GeometryAttribute

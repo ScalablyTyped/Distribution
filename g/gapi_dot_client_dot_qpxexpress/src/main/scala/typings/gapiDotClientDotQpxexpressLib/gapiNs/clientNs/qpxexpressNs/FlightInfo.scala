@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlightInfo extends js.Object {
   var carrier: js.UndefOr[java.lang.String] = js.undefined
   /** The flight number. */

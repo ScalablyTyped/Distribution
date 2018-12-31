@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ProvideCompRefUseExisting extends js.Object {
   var deps: js.UndefOr[scala.Nothing] = js.undefined
   var multi: scala.Boolean

@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 // #endregion
 // #region
-
 trait ChooseInvoiceTitleOptions
   extends BaseOptions[js.Any, js.Any] {
   @JSName("success")

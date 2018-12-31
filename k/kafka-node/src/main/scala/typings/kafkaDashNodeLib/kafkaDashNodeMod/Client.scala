@@ -22,18 +22,14 @@ class Client protected () extends js.Object {
   // Note: socket_error is currently KafkaClient only, and zkReconnect is currently Client only.
   @JSName("on")
   def on_brokersChanged(eventName: kafkaDashNodeLib.kafkaDashNodeLibStrings.brokersChanged, cb: js.Function0[_]): this.type = js.native
-  // Note: socket_error is currently KafkaClient only, and zkReconnect is currently Client only.
   @JSName("on")
   def on_close(eventName: kafkaDashNodeLib.kafkaDashNodeLibStrings.close, cb: js.Function0[_]): this.type = js.native
-  // Note: socket_error is currently KafkaClient only, and zkReconnect is currently Client only.
   @JSName("on")
   def on_connect(eventName: kafkaDashNodeLib.kafkaDashNodeLibStrings.connect, cb: js.Function0[_]): this.type = js.native
   @JSName("on")
   def on_error(eventName: kafkaDashNodeLib.kafkaDashNodeLibStrings.error, cb: js.Function1[/* error */ js.Any, _]): this.type = js.native
-  // Note: socket_error is currently KafkaClient only, and zkReconnect is currently Client only.
   @JSName("on")
   def on_ready(eventName: kafkaDashNodeLib.kafkaDashNodeLibStrings.ready, cb: js.Function0[_]): this.type = js.native
-  // Note: socket_error is currently KafkaClient only, and zkReconnect is currently Client only.
   @JSName("on")
   def on_reconnect(eventName: kafkaDashNodeLib.kafkaDashNodeLibStrings.reconnect, cb: js.Function0[_]): this.type = js.native
   @JSName("on")
@@ -41,7 +37,6 @@ class Client protected () extends js.Object {
     eventName: kafkaDashNodeLib.kafkaDashNodeLibStrings.socket_error,
     cb: js.Function1[/* error */ js.Any, _]
   ): this.type = js.native
-  // Note: socket_error is currently KafkaClient only, and zkReconnect is currently Client only.
   @JSName("on")
   def on_zkReconnect(eventName: kafkaDashNodeLib.kafkaDashNodeLibStrings.zkReconnect, cb: js.Function0[_]): this.type = js.native
   def refreshMetadata(topics: js.Array[java.lang.String]): scala.Unit = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BubbleChartOptions extends js.Object {
   var animation: js.UndefOr[TransitionAnimation] = js.undefined
   var axisTitlesPosition: js.UndefOr[java.lang.String] = js.undefined

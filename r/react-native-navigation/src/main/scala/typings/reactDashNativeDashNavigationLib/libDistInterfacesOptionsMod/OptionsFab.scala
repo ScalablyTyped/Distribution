@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OptionsFab extends js.Object {
   var actions: js.UndefOr[js.Array[OptionsFab]] = js.undefined
   var alignHorizontally: js.UndefOr[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FaxServer_OnDeviceStatusChange_Parameter extends js.Object {
   val bPoweredOff: scala.Boolean
   val bReceiving: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IScriptSnapshotShim extends js.Object {
   def getLength(): scala.Double
   def getLineStartPositions(): java.lang.String

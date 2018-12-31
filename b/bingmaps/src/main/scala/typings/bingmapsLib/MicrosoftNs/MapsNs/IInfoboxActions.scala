@@ -11,7 +11,6 @@ trait IInfoboxActions extends js.Object {
   var label: java.lang.String = js.native
   /** The function to call when the label is clicked.  */
   def eventHandler(): scala.Unit = js.native
-  /** The function to call when the label is clicked.  */
   def eventHandler(eventArg: stdLib.MouseEvent): scala.Unit = js.native
 }
 

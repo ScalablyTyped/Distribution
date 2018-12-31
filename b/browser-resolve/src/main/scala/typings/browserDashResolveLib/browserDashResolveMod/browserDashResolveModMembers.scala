@@ -14,19 +14,19 @@ object browserDashResolveModMembers extends js.Object {
     java.lang.String
   ] = js.native
   /**
-   * Resolve a module path and call cb(err, path [, pkg])
-   *
-   * @param id Identifier to resolve
-   * @param callback
-   */
+    * Resolve a module path and call cb(err, path [, pkg])
+    *
+    * @param id Identifier to resolve
+    * @param callback
+    */
   def apply(id: java.lang.String, cb: browserDashResolveLib.resolveCallback): scala.Unit = js.native
   /**
-   * Resolve a module path and call cb(err, path [, pkg])
-   *
-   * @param id Identifier to resolve
-   * @param options Options to use for resolving, optional.
-   * @param callback
-   */
+    * Resolve a module path and call cb(err, path [, pkg])
+    *
+    * @param id Identifier to resolve
+    * @param options Options to use for resolving, optional.
+    * @param callback
+    */
   def apply(
     id: java.lang.String,
     opts: browserDashResolveLib.browserDashResolveMod.browserResolveNs.AsyncOpts,

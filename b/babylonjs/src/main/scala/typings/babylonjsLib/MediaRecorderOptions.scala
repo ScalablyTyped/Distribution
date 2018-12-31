@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaRecorderOptions extends js.Object {
   /** The chosen bitrate for the audio component of the media. */
   var audioBitsPerSecond: js.UndefOr[scala.Double] = js.undefined

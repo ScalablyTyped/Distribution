@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Animation extends js.Object {
   val container: stdLib.Element
   val viewModel: AnimationViewModel

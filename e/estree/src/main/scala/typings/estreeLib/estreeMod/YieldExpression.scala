@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait YieldExpression extends BaseNode {
   var argument: js.UndefOr[estreeLib.Expression | scala.Null] = js.undefined
   var delegate: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGCoreAttributes extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
   var tabindex: js.UndefOr[scala.Double] = js.undefined

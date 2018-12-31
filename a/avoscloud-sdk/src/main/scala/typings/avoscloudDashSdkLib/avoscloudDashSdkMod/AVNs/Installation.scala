@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Every AV application installed on a device registered for
-     * push notifications has an associated Installation object.
-     */
+  * Every AV application installed on a device registered for
+  * push notifications has an associated Installation object.
+  */
 @js.native
 trait Installation extends Object {
   var AVVersion: java.lang.String = js.native

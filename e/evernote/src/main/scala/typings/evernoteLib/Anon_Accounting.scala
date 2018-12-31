@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Accounting extends js.Object {
   var accounting: js.UndefOr[evernoteLib.evernoteMod.EvernoteNs.Accounting] = js.undefined
   var active: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHelmetContentSecurityPolicyConfiguration extends js.Object {
   var browserSniff: js.UndefOr[scala.Boolean] = js.undefined
   var directives: js.UndefOr[IHelmetContentSecurityPolicyDirectives] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataSourceTransportRead
   extends kendoDashUiLib.JQueryAjaxSettings {
   var cache: js.UndefOr[scala.Boolean] = js.undefined

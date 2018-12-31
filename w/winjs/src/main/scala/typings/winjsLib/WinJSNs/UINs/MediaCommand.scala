@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * An enumeration of Media commands that the transport bar buttons support.
-    **/
-
+  * An enumeration of Media commands that the transport bar buttons support.
+  **/
 trait MediaCommand extends js.Object {
   var audioTracks: java.lang.String
   var cast: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Auth0LockShowOptions extends js.Object {
   var allowForgotPassword: js.UndefOr[scala.Boolean] = js.undefined
   var allowLogin: js.UndefOr[scala.Boolean] = js.undefined

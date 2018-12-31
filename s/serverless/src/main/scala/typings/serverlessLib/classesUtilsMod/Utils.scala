@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Utils extends js.Object {
   def appendFileSync(filePath: java.lang.String, contents: java.lang.String): js.Thenable[js.Object]
   def copyDirContentsSync(srcDir: java.lang.String, destDir: java.lang.String): scala.Unit

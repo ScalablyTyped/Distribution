@@ -12,43 +12,43 @@ sealed trait BuildQueryOrder extends js.Object
 @js.native
 object BuildQueryOrder extends js.Object {
   /**
-       * Order by finish time ascending.
-       */
+    * Order by finish time ascending.
+    */
   @js.native
   sealed trait FinishTimeAscending
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildQueryOrder
   
   /**
-       * Order by finish time descending.
-       */
+    * Order by finish time descending.
+    */
   @js.native
   sealed trait FinishTimeDescending
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildQueryOrder
   
   /**
-       * Order by finish time descending.
-       */
+    * Order by finish time descending.
+    */
   @js.native
   sealed trait QueueTimeAscending
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildQueryOrder
   
   /**
-       * Order by finish time descending.
-       */
+    * Order by finish time descending.
+    */
   @js.native
   sealed trait QueueTimeDescending
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildQueryOrder
   
   /**
-       * Order by finish time descending.
-       */
+    * Order by finish time descending.
+    */
   @js.native
   sealed trait StartTimeAscending
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildQueryOrder
   
   /**
-       * Order by finish time descending.
-       */
+    * Order by finish time descending.
+    */
   @js.native
   sealed trait StartTimeDescending
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildQueryOrder

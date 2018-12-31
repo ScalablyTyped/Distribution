@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExternallyHostedApk extends js.Object {
   /** The application label. */
   var applicationLabel: js.UndefOr[java.lang.String] = js.undefined

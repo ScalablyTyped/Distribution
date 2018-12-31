@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 @js.native
 object ReadyStateNs extends js.Object {
   /**
-             * The connection has been closed or could not be opened.
-            */
+    * The connection has been closed or could not be opened.
+    */
   var CLOSED: js.Any = js.native
   /**
-             * The connection is going through the closing handshake.
-            */
+    * The connection is going through the closing handshake.
+    */
   var CLOSING: js.Any = js.native
   /**
-             * The connection has not yet been established.
-            */
+    * The connection has not yet been established.
+    */
   var CONNECTING: js.Any = js.native
   /**
-             * The WebSocket connection is established and communication is possible.
-            */
+    * The WebSocket connection is established and communication is possible.
+    */
   var OPEN: js.Any = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PointerEvent[T]
   extends MouseEvent[T, reactLib.NativePointerEvent] {
   var height: scala.Double

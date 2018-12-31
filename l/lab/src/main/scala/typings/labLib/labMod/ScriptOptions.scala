@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScriptOptions extends js.Object {
   /** Pass Lab CLI options */
   var cli: js.UndefOr[js.Any] = js.undefined

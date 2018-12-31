@@ -18,12 +18,10 @@ object backboneModMembers extends js.Object {
   def ajax(options: jqueryLib.JQueryAjaxSettings): jqueryLib.JQueryXHR = js.native
   // Utility
   def noConflict(): backboneLib.Anon_History = js.native
-  // SYNC
   def sync(
     method: java.lang.String,
     model: backboneLib.backboneMod.BackboneNs.Collection[backboneLib.backboneMod.BackboneNs.Model]
   ): js.Any = js.native
-  // SYNC
   def sync(
     method: java.lang.String,
     model: backboneLib.backboneMod.BackboneNs.Collection[backboneLib.backboneMod.BackboneNs.Model],
@@ -31,7 +29,6 @@ object backboneModMembers extends js.Object {
   ): js.Any = js.native
   // SYNC
   def sync(method: java.lang.String, model: backboneLib.backboneMod.BackboneNs.Model): js.Any = js.native
-  // SYNC
   def sync(
     method: java.lang.String,
     model: backboneLib.backboneMod.BackboneNs.Model,

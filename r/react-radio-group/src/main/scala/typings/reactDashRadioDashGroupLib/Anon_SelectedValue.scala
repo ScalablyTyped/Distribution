@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SelectedValue extends js.Object {
   var Component: js.UndefOr[
     reactLib.reactMod.ReactNs.ReactType[

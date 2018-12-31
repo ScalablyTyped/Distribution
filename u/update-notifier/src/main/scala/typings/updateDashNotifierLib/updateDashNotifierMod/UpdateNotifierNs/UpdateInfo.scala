@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateInfo extends js.Object {
   var current: java.lang.String
   var latest: java.lang.String

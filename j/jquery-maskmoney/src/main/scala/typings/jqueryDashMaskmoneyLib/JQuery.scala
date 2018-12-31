@@ -8,39 +8,25 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JQuery extends js.Object {
   /**
-       * Returns a float value from input field masked
-       */
+    * Returns a float value from input field masked
+    */
   def maskMoney(): js.Array[scala.Double] = js.native
-  /**
-       * Apply mask to input when the argument are options
-       * Remove maskMoney from an element when the argument is "destroy"
-       */
   def maskMoney(methodOrOption: jqueryDashMaskmoneyLib.jQueryMaskMoneyNs.Options): JQuery = js.native
   /**
-       * Apply mask to input when the argument are options
-       * Remove maskMoney from an element when the argument is "destroy"
-       */
+    * Apply mask to input when the argument are options
+    * Remove maskMoney from an element when the argument is "destroy"
+    */
   @JSName("maskMoney")
   def maskMoney_JQuery(): JQuery = js.native
-  /**
-       * Apply mask to input when the argument are options
-       * Remove maskMoney from an element when the argument is "destroy"
-       */
   @JSName("maskMoney")
   def maskMoney_destroy(methodOrOption: jqueryDashMaskmoneyLib.jqueryDashMaskmoneyLibStrings.destroy): JQuery = js.native
   /**
-       * Apply mask to input, can be pass default value to it
-       */
+    * Apply mask to input, can be pass default value to it
+    */
   @JSName("maskMoney")
   def maskMoney_mask(methodName: jqueryDashMaskmoneyLib.jqueryDashMaskmoneyLibStrings.mask): JQuery = js.native
-  /**
-       * Apply mask to input, can be pass default value to it
-       */
   @JSName("maskMoney")
   def maskMoney_mask(methodName: jqueryDashMaskmoneyLib.jqueryDashMaskmoneyLibStrings.mask, defaultValue: scala.Double): JQuery = js.native
-  /**
-       * Returns a float value from input field masked
-       */
   @JSName("maskMoney")
   def maskMoney_unmasked(method: jqueryDashMaskmoneyLib.jqueryDashMaskmoneyLibStrings.unmasked): js.Array[scala.Double] = js.native
 }

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBaseStrategyOption extends js.Object {
   var clientID: java.lang.String
   var clockSkew: js.UndefOr[scala.Double] = js.undefined

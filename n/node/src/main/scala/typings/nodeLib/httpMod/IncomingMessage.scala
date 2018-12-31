@@ -16,24 +16,24 @@ class IncomingMessage protected ()
   var httpVersionMajor: scala.Double = js.native
   var httpVersionMinor: scala.Double = js.native
   /**
-           * Only valid for request obtained from http.Server.
-           */
+    * Only valid for request obtained from http.Server.
+    */
   var method: js.UndefOr[java.lang.String] = js.native
   var rawHeaders: js.Array[java.lang.String] = js.native
   var rawTrailers: js.Array[java.lang.String] = js.native
   var socket: nodeLib.netMod.Socket = js.native
   /**
-           * Only valid for response obtained from http.ClientRequest.
-           */
+    * Only valid for response obtained from http.ClientRequest.
+    */
   var statusCode: js.UndefOr[scala.Double] = js.native
   /**
-           * Only valid for response obtained from http.ClientRequest.
-           */
+    * Only valid for response obtained from http.ClientRequest.
+    */
   var statusMessage: js.UndefOr[java.lang.String] = js.native
   var trailers: org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] = js.native
   /**
-           * Only valid for request obtained from http.Server.
-           */
+    * Only valid for request obtained from http.Server.
+    */
   var url: js.UndefOr[java.lang.String] = js.native
   def setTimeout(msecs: scala.Double, callback: js.Function0[scala.Unit]): this.type = js.native
 }

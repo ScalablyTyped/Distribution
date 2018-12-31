@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CarouselItemProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libCarouselItemMod.CarouselItem] {
   var active: js.UndefOr[scala.Boolean] = js.undefined

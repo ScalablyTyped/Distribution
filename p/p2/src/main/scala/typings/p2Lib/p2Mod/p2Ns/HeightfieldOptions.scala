@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HeightfieldOptions extends SharedShapeOptions {
   var elementWidth: js.UndefOr[scala.Double] = js.undefined
   var heights: js.UndefOr[js.Array[scala.Double]] = js.undefined

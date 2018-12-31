@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** The ContactError object is returned to the user through the contactError callback function when an error occurs. */
-
 trait ContactError extends js.Object {
   /** Error code */
   var code: scala.Double

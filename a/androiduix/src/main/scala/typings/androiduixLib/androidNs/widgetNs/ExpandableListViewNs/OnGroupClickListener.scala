@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnGroupClickListener extends js.Object {
   def onGroupClick(
     parent: androiduixLib.androidNs.widgetNs.ExpandableListView,

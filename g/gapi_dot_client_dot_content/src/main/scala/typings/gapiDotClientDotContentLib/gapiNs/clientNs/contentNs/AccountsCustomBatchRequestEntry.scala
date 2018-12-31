@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccountsCustomBatchRequestEntry extends js.Object {
   /** The account to create or update. Only defined if the method is insert or update. */
   var account: js.UndefOr[Account] = js.undefined

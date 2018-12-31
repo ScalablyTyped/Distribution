@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InventoryItem extends js.Object {
   /** Account ID of this inventory item. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Ad slots of this inventory item. If this inventory item represents a standalone placement, there will be exactly one ad slot. If this inventory item
-               * represents a placement group, there will be more than one ad slot, each representing one child placement in that placement group.
-               */
+    * Ad slots of this inventory item. If this inventory item represents a standalone placement, there will be exactly one ad slot. If this inventory item
+    * represents a placement group, there will be more than one ad slot, each representing one child placement in that placement group.
+    */
   var adSlots: js.UndefOr[js.Array[AdSlot]] = js.undefined
   /** Advertiser ID of this inventory item. */
   var advertiserId: js.UndefOr[java.lang.String] = js.undefined
@@ -31,9 +30,9 @@ trait InventoryItem extends js.Object {
   /** Information about the most recent modification of this inventory item. */
   var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.undefined
   /**
-               * Name of this inventory item. For standalone inventory items, this is the same name as that of its only ad slot. For group inventory items, this can
-               * differ from the name of any of its ad slots.
-               */
+    * Name of this inventory item. For standalone inventory items, this is the same name as that of its only ad slot. For group inventory items, this can
+    * differ from the name of any of its ad slots.
+    */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /** Negotiation channel ID of this inventory item. */
   var negotiationChannelId: js.UndefOr[java.lang.String] = js.undefined

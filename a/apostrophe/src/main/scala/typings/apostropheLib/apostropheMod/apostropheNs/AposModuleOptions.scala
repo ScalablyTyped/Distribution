@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Pass in custom modules to AposModuleOptions to allow them in extend
-
 trait AposModuleOptions[C] extends js.Object {
   var addFields: js.UndefOr[js.Array[Field]] = js.undefined
   var arrangeFields: js.UndefOr[js.Array[apostropheLib.Anon_Fields]] = js.undefined

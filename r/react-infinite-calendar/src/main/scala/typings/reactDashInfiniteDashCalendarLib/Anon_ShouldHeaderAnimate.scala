@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ShouldHeaderAnimate extends js.Object {
   var hideYearsOnSelect: js.UndefOr[scala.Boolean] = js.undefined
   var layout: js.UndefOr[

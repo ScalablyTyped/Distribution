@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SocialTarget extends js.Object {
   var socialAction: java.lang.String
   var socialNetwork: java.lang.String

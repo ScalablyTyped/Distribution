@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBearerStrategyOption
   extends passportDashAzureDashAdLib.commonMod.IBaseStrategyOption {
   var allowMultiAudiencesInToken: js.UndefOr[scala.Boolean] = js.undefined

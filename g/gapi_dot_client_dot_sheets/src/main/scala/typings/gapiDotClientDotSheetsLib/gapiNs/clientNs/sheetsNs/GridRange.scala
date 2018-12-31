@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridRange extends js.Object {
   /** The end column (exclusive) of the range, or not set if unbounded. */
   var endColumnIndex: js.UndefOr[scala.Double] = js.undefined

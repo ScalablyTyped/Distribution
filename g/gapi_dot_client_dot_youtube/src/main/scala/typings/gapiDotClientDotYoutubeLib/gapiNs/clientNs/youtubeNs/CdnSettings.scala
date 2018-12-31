@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CdnSettings extends js.Object {
   /** The format of the video stream that you are sending to Youtube. */
   var format: js.UndefOr[java.lang.String] = js.undefined

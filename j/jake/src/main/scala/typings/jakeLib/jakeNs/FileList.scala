@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class FileList () extends js.Object {
   /**
   	 	 * Get rid of any current exclusion rules
-        	 */
+    	 */
   def clearExclude(): scala.Unit = js.native
   def exclude(file: (FileFilter | stdLib.RegExp | java.lang.String)*): scala.Unit = js.native
   /**
@@ -37,8 +37,8 @@ class FileList () extends js.Object {
   		 * Indicates whether a particular file would be filtered out by the current
   		 * exclusion rules for this FileList.
   		 * @param name The filename to check
-           * @return Whether or not the file should be excluded
-           */
+    * @return Whether or not the file should be excluded
+    */
   def shouldExclude(name: java.lang.String): scala.Boolean = js.native
   /**
   		 * Convert to a plain-jane array

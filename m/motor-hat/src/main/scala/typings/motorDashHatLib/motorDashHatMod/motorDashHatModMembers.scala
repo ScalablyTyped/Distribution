@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object motorDashHatModMembers extends js.Object {
   /**
-   * Creates a new MotorHat controller
-   *
-   * Pass in an options object to generate an uninitialized MotorHat object.
-   */
+    * Creates a new MotorHat controller
+    *
+    * Pass in an options object to generate an uninitialized MotorHat object.
+    */
   def default(options: MotorHatOptions): MotorHat = js.native
 }
 

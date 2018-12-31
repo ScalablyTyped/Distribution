@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // 媒体-----音乐播放控制
-
 trait BackgroundAudioPlayerState extends js.Object {
   /** 选定音频的播放位置（单位：s），只有在当前有音乐播放时返回 */
   var currentPosition: scala.Double

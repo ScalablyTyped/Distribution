@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NotStartedNeedsInvestigation extends js.Object {
   var aborted: scala.Double
   var completed: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICanvas extends js.Object {
   var _canvas: stdLib.HTMLCanvasElement
   var height: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Sun extends js.Object {
   var glowFactor: scala.Double
   var show: scala.Boolean

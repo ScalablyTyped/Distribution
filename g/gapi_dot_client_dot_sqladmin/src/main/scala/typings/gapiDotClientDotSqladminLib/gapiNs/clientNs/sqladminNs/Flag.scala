@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Flag extends js.Object {
   /** For STRING flags, a list of strings that the value can be set to. */
   var allowedStringValues: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -22,9 +21,9 @@ trait Flag extends js.Object {
   /** Indicates whether changing this flag will trigger a database restart. Only applicable to Second Generation instances. */
   var requiresRestart: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               * The type of the flag. Flags are typed to being BOOLEAN, STRING, INTEGER or NONE. NONE is used for flags which do not take a value, such as
-               * skip_grant_tables.
-               */
+    * The type of the flag. Flags are typed to being BOOLEAN, STRING, INTEGER or NONE. NONE is used for flags which do not take a value, such as
+    * skip_grant_tables.
+    */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 

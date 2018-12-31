@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateAclOptions extends js.Object {
   var entity: java.lang.String
   var generation: js.UndefOr[scala.Double] = js.undefined

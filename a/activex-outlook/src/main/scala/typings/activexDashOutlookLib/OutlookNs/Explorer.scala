@@ -13,7 +13,7 @@ class Explorer protected () extends js.Object {
   val AttachmentSelection: AttachmentSelection = js.native
   val Caption: java.lang.String = js.native
   val Class: OlObjectClass = js.native
-  val CommandBars: js.Any = js.native
+  val CommandBars: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Office.CommandBars */ js.Any = js.native
   var CurrentFolder: Folder = js.native
   var CurrentView: js.Any = js.native
   val HTMLDocument: js.Any = js.native

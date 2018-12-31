@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 sealed trait ChartAxisType extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.7]
-     */
+  * [Api set: ExcelApi 1.7]
+  */
 @JSGlobal("Excel.ChartAxisType")
 @js.native
 object ChartAxisType extends js.Object {
   /**
-           *
-           * Axis displays categories.
-           *
-           */
+    *
+    * Axis displays categories.
+    *
+    */
   @js.native
   sealed trait category
     extends officeDashJsDashPreviewLib.ExcelNs.ChartAxisType
@@ -28,19 +28,19 @@ object ChartAxisType extends js.Object {
     extends officeDashJsDashPreviewLib.ExcelNs.ChartAxisType
   
   /**
-           *
-           * Axis displays data series.
-           *
-           */
+    *
+    * Axis displays data series.
+    *
+    */
   @js.native
   sealed trait series
     extends officeDashJsDashPreviewLib.ExcelNs.ChartAxisType
   
   /**
-           *
-           * Axis displays values.
-           *
-           */
+    *
+    * Axis displays values.
+    *
+    */
   @js.native
   sealed trait value
     extends officeDashJsDashPreviewLib.ExcelNs.ChartAxisType

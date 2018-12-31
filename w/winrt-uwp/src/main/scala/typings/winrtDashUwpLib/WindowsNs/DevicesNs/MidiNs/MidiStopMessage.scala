@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a MIDI message that specifies a stop message. */
 @JSGlobal("Windows.Devices.Midi.MidiStopMessage")
 @js.native
+/** Creates a new MidiStopMessage object. */
 class MidiStopMessage () extends js.Object {
   /** Gets the array of bytes associated with the MIDI message, including status byte. */
   var rawData: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer = js.native

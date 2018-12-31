@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * A simple object consisting of the position and size measurements.
- */
-
+  * A simple object consisting of the position and size measurements.
+  */
 trait Dimension extends js.Object {
   /**
   	 * The height measurement.

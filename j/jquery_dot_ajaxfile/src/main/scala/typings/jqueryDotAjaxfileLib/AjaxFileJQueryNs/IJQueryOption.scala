@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IJQueryOption extends js.Object {
   var complete: js.UndefOr[js.Function2[/* jqXHR */ IJQueryXHR, /* textStatus */ java.lang.String, _]] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined

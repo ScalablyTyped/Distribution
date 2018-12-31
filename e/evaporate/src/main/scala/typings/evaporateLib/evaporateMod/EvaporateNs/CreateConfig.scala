@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateConfig extends js.Object {
   var abortCompletionThrottlingMs: js.UndefOr[scala.Double] = js.undefined
   var allowS3ExistenceOptimization: js.UndefOr[scala.Boolean] = js.undefined

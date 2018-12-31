@@ -6,21 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Dates governing proposed immunization
-     */
-
+  * Dates governing proposed immunization
+  */
 trait ImmunizationRecommendationRecommendationDateCriterion extends BackboneElement {
   /**
-           * Contains extended information for property 'value'.
-           */
+    * Contains extended information for property 'value'.
+    */
   var _value: js.UndefOr[Element] = js.undefined
   /**
-           * Type of date
-           */
+    * Type of date
+    */
   var code: CodeableConcept
   /**
-           * Recommended date
-           */
+    * Recommended date
+    */
   var value: dateTime
 }
 

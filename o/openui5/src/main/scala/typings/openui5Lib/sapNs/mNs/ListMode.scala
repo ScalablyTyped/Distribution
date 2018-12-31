@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ListMode extends js.Object
 
 /**
-     * Defines the mode of the list.
-    */
+  * Defines the mode of the list.
+  */
 @JSGlobal("sap.m.ListMode")
 @js.native
 object ListMode extends js.Object {

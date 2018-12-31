@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InsertModalColumnDescription[TRow /* <: js.Object */] extends js.Object {
    // children.props.keyValidator
   /**
@@ -20,7 +19,7 @@ trait InsertModalColumnDescription[TRow /* <: js.Object */] extends js.Object {
   	 * Comes from TableHeader.editable.
   	 */
   var editable: scala.Boolean | (Editable[TRow, java.lang.String]) | (js.Function4[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TRow))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(TRow))),List())))) *//* cell */ js.Any, 
+    /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ /* cell */ js.Any, 
     /* row */ TRow, 
     /* rowIndex */ scala.Double, 
     /* columnIndex */ scala.Double, 
@@ -40,7 +39,7 @@ trait InsertModalColumnDescription[TRow /* <: js.Object */] extends js.Object {
   	 */
   var format: js.UndefOr[
     scala.Boolean | (js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TRow))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(TRow))),List())))) *//* cell */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ /* cell */ js.Any, 
       java.lang.String
     ])
   ] = js.undefined
@@ -75,7 +74,7 @@ trait InsertModalColumnDescription[TRow /* <: js.Object */] extends js.Object {
     attr: EditableAttrs,
     editorClass: java.lang.String,
     ignoreEditable: scala.Boolean,
-    defaultValue: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TRow))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(TRow))),List())))) */js.Any
+    defaultValue: /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Boolean
 }
 

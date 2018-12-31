@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Viewporter extends js.Object {
   var ACTIVE: scala.Boolean
   var READY: scala.Boolean

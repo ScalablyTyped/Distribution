@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BorderedLoading extends js.Object {
   var bordered: scala.Boolean
   var dataSource: js.Array[scala.Nothing]

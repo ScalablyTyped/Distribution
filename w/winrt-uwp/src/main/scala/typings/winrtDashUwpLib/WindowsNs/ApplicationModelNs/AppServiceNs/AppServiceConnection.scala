@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a connection to the endpoint for an app service. */
 @JSGlobal("Windows.ApplicationModel.AppService.AppServiceConnection")
 @js.native
+/** Creates and initializes a new instance of the AppServiceConnection class. */
 class AppServiceConnection () extends js.Object {
   /** Gets or sets the name of the app service to which you want to connect. */
   var appServiceName: java.lang.String = js.native
@@ -39,9 +40,9 @@ class AppServiceConnection () extends js.Object {
   /** Occurs when the other endpoint closes the connection to the app service. */
   def onserviceclosed(ev: AppServiceClosedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[AppServiceConnection]): scala.Unit = js.native
   /**
-                   * Opens a connection to the endpoint for the app service.
-                   * @return An asynchronous operation to open a connection to the endpoint for the app service.
-                   */
+    * Opens a connection to the endpoint for the app service.
+    * @return An asynchronous operation to open a connection to the endpoint for the app service.
+    */
   def openAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[AppServiceConnectionStatus] = js.native
   def removeEventListener(`type`: java.lang.String, listener: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_]): scala.Unit = js.native
   @JSName("removeEventListener")
@@ -55,10 +56,10 @@ class AppServiceConnection () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[AppServiceConnection, AppServiceClosedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Sends a message to the other endpoint of the app service connection.
-                   * @param message The message that you want to send.
-                   * @return An asynchronous operation to send the message that optionally returns a response message when complete.
-                   */
+    * Sends a message to the other endpoint of the app service connection.
+    * @param message The message that you want to send.
+    * @return An asynchronous operation to send the message that optionally returns a response message when complete.
+    */
   def sendMessageAsync(message: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.ValueSet): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[AppServiceResponse] = js.native
 }
 

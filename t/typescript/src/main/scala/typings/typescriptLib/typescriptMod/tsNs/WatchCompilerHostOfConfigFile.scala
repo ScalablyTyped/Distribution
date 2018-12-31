@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Host to create watch with config file
-     */
+  * Host to create watch with config file
+  */
 @js.native
 trait WatchCompilerHostOfConfigFile[T /* <: BuilderProgram */]
   extends WatchCompilerHost[T]
@@ -17,31 +17,19 @@ trait WatchCompilerHostOfConfigFile[T /* <: BuilderProgram */]
   /** Options to extend */
   var optionsToExtend: js.UndefOr[CompilerOptions] = js.native
   /**
-           * Used to generate source file names from the config file and its include, exclude, files rules
-           * and also to cache the directory stucture
-           */
+    * Used to generate source file names from the config file and its include, exclude, files rules
+    * and also to cache the directory stucture
+    */
   @JSName("readDirectory")
   def readDirectory_MWatchCompilerHostOfConfigFile(path: java.lang.String): js.Array[java.lang.String] = js.native
-  /**
-           * Used to generate source file names from the config file and its include, exclude, files rules
-           * and also to cache the directory stucture
-           */
   @JSName("readDirectory")
   def readDirectory_MWatchCompilerHostOfConfigFile(path: java.lang.String, extensions: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
-  /**
-           * Used to generate source file names from the config file and its include, exclude, files rules
-           * and also to cache the directory stucture
-           */
   @JSName("readDirectory")
   def readDirectory_MWatchCompilerHostOfConfigFile(
     path: java.lang.String,
     extensions: js.Array[java.lang.String],
     exclude: js.Array[java.lang.String]
   ): js.Array[java.lang.String] = js.native
-  /**
-           * Used to generate source file names from the config file and its include, exclude, files rules
-           * and also to cache the directory stucture
-           */
   @JSName("readDirectory")
   def readDirectory_MWatchCompilerHostOfConfigFile(
     path: java.lang.String,
@@ -49,10 +37,6 @@ trait WatchCompilerHostOfConfigFile[T /* <: BuilderProgram */]
     exclude: js.Array[java.lang.String],
     include: js.Array[java.lang.String]
   ): js.Array[java.lang.String] = js.native
-  /**
-           * Used to generate source file names from the config file and its include, exclude, files rules
-           * and also to cache the directory stucture
-           */
   @JSName("readDirectory")
   def readDirectory_MWatchCompilerHostOfConfigFile(
     path: java.lang.String,

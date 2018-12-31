@@ -22,14 +22,14 @@ abstract class ReplaceAppointmentOperation () extends js.Object {
   /** Informs the activating app that the operation was canceled by the user. */
   def reportCanceled(): scala.Unit = js.native
   /**
-                       * Informs the activating app that the operation was completed successfully.
-                       * @param itemId A unique appointment ID that the activating app can later use to remove this appointment if necessary or to replace it again.
-                       */
+    * Informs the activating app that the operation was completed successfully.
+    * @param itemId A unique appointment ID that the activating app can later use to remove this appointment if necessary or to replace it again.
+    */
   def reportCompleted(itemId: java.lang.String): scala.Unit = js.native
   /**
-                       * Informs the activating app that the operation couldn't be completed because of a provider error.
-                       * @param value A string that contains info about the error.
-                       */
+    * Informs the activating app that the operation couldn't be completed because of a provider error.
+    * @param value A string that contains info about the error.
+    */
   def reportError(value: java.lang.String): scala.Unit = js.native
 }
 

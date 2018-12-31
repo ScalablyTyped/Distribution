@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("buffer-reader", JSImport.Namespace)
 @js.native
+/**
+  * Create a new reader, if no buffer provided, a empty buffer will be used.
+  */
 class namespaced () extends BufferReader {
-  /**
-       * Create a new reader, if no buffer provided, a empty buffer will be used.
-       */
   def this(buffer: nodeLib.Buffer) = this()
 }
 

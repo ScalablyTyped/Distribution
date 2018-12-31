@@ -28,10 +28,10 @@ abstract class SpeechRecognitionResult () extends js.Object {
   /** Gets the recognized phrase of the speech recognition session. */
   var text: java.lang.String = js.native
   /**
-                   * Gets a collection of recognition result alternatives, ordered by RawConfidence from most likely to least likely. The first item in the collection is the recognition result indicated by the parent object.
-                   * @param maxAlternates The maximum number of speech recognition results to return in the collection.
-                   * @return A collection of speech recognition results, ordered by confidence from most likely to least likely.
-                   */
+    * Gets a collection of recognition result alternatives, ordered by RawConfidence from most likely to least likely. The first item in the collection is the recognition result indicated by the parent object.
+    * @param maxAlternates The maximum number of speech recognition results to return in the collection.
+    * @return A collection of speech recognition results, ordered by confidence from most likely to least likely.
+    */
   def getAlternates(maxAlternates: scala.Double): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[SpeechRecognitionResult] = js.native
 }
 

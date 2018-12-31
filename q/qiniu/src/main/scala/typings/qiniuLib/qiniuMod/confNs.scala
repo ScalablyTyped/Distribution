@@ -13,23 +13,22 @@ object confNs extends js.Object {
     def this(options: ConfigOptions) = this()
   }
   
-  
   trait ConfigOptions extends js.Object {
     /**
-             * @default true
-             */
+      * @default true
+      */
     var useCdnDomain: js.UndefOr[scala.Boolean] = js.undefined
     /**
-             * @default false
-             */
+      * @default false
+      */
     var useHttpsDomain: js.UndefOr[scala.Boolean] = js.undefined
     /**
-             * @default null
-             */
+      * @default null
+      */
     var zone: js.UndefOr[Zone] = js.undefined
     /**
-             * @default -1
-             */
+      * @default -1
+      */
     var zoneExpire: js.UndefOr[scala.Double] = js.undefined
   }
   

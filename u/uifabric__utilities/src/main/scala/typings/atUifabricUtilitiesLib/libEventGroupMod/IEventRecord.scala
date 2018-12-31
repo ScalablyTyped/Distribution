@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IEventRecord extends js.Object {
-  var elementCallback: js.UndefOr[js.Function1[/* repeated */js.Any, scala.Unit]] = js.native
+  var elementCallback: js.UndefOr[js.Function1[/* repeated */ js.Any, scala.Unit]] = js.native
   var eventName: java.lang.String = js.native
   var objectCallback: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], scala.Unit]] = js.native
   var parent: js.Any = js.native

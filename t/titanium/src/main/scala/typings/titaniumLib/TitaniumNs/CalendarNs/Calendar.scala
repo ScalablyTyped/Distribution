@@ -47,17 +47,11 @@ trait Calendar
   			 * Gets the event with the specified identifier.
   			 */
   def getEventById(id: scala.Double): Event = js.native
-  /**
-  			 * Gets events that occur between two dates.
-  			 */
   def getEventsBetweenDates(date1: java.lang.String, date2: java.lang.String): js.Array[Event] = js.native
   /**
   			 * Gets events that occur between two dates.
   			 */
   def getEventsBetweenDates(date1: java.lang.String, date2: stdLib.Date): js.Array[Event] = js.native
-  /**
-  			 * Gets events that occur between two dates.
-  			 */
   def getEventsBetweenDates(date1: stdLib.Date, date2: java.lang.String): js.Array[Event] = js.native
   /**
   			 * Gets events that occur between two dates.

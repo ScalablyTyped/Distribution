@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Argument passed to the callback when a request finishes successfully.
- */
-
+  * Argument passed to the callback when a request finishes successfully.
+  */
 trait CloudPushNotificationsShowChannelResponse extends js.Object {
   /**
   	 * Error code, if any returned.

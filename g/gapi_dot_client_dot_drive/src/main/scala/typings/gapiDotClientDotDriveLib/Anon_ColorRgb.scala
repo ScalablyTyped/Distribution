@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ColorRgb extends js.Object {
   /** A link to this Team Drive theme's background image. */
   var backgroundImageLink: js.UndefOr[java.lang.String] = js.undefined

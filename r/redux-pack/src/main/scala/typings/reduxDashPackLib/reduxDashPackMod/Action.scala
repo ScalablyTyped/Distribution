@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload]
   extends reduxLib.reduxMod.Action[js.Any] {
   // add optional error key to conform to FSA design: https://github.com/redux-utilities/flux-standard-action

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVaultWorkflowOperations extends js.Object {
   def AddWorkflowAdmin(Workflow: IWorkflowAdmin): IWorkflowAdmin
   def GetStateTransitionSignatureSettings(FromState: scala.Double, ToState: scala.Double): ISignatureSettings

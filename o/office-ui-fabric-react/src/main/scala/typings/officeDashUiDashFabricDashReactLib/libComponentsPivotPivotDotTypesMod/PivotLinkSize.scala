@@ -12,15 +12,15 @@ sealed trait PivotLinkSize extends js.Object
 @js.native
 object PivotLinkSize extends js.Object {
   /**
-       * Display links using large font size
-       */
+    * Display links using large font size
+    */
   @js.native
   sealed trait large
     extends officeDashUiDashFabricDashReactLib.libComponentsPivotPivotDotTypesMod.PivotLinkSize
   
   /**
-       * Display Link using normal font size
-       */
+    * Display Link using normal font size
+    */
   @js.native
   sealed trait normal
     extends officeDashUiDashFabricDashReactLib.libComponentsPivotPivotDotTypesMod.PivotLinkSize

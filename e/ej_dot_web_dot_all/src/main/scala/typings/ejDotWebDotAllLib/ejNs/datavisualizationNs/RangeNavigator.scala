@@ -17,8 +17,8 @@ class RangeNavigator protected ()
   @JSName("model")
   var model_RangeNavigator: ejDotWebDotAllLib.ejNs.Model = js.native
   /** destroy the range navigator widget
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def _destroy(): scala.Unit = js.native
 }
 

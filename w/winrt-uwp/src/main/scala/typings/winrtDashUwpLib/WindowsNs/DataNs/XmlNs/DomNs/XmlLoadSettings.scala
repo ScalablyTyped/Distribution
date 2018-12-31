@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Contains settings that are used during loading and parsing of XML documents. The default settings are chosen for the highest security. This class can be instantiated and is accepted by LoadXml , LoadFromUriAsync , and LoadFromFileAsync . */
 @JSGlobal("Windows.Data.Xml.Dom.XmlLoadSettings")
 @js.native
+/** Creates a new XmlLoadSettings object. */
 class XmlLoadSettings () extends js.Object {
   /** Specifies whether default handling preserves white space. */
   var elementContentWhiteSpace: scala.Boolean = js.native

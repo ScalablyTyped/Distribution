@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait REACT_STATICS extends js.Object {
   var childContextTypes: hoistDashNonDashReactDashStaticsLib.hoistDashNonDashReactDashStaticsLibNumbers.`true`
   var contextTypes: hoistDashNonDashReactDashStaticsLib.hoistDashNonDashReactDashStaticsLibNumbers.`true`

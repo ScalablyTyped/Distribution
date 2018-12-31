@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait P13nPanelType extends js.Object
 
 /**
-     * Type of panels used in the personalization dialog.
-    */
+  * Type of panels used in the personalization dialog.
+  */
 @JSGlobal("sap.m.P13nPanelType")
 @js.native
 object P13nPanelType extends js.Object {

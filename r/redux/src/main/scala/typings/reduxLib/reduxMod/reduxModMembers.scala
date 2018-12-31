@@ -42,9 +42,9 @@ object reduxModMembers extends js.Object {
   @JSName("combineReducers")
   def combineReducers_SAAction[S, A /* <: Action[_] */](reducers: ReducersMapObject[S, A]): Reducer[S, A] = js.native
   def compose(): js.Function1[/* a */ js.Any, _] = js.native
-  def compose[R](f1: js.Function1[/* b */ js.Any, R], funcs: js.Function*): js.Function1[/* repeated */js.Any, R] = js.native
+  def compose[R](f1: js.Function1[/* b */ js.Any, R], funcs: js.Function*): js.Function1[/* repeated */ js.Any, R] = js.native
   def compose[F /* <: js.Function */](f: F): F = js.native
-  def compose[R](funcs: js.Function*): js.Function1[/* repeated */js.Any, R] = js.native
+  def compose[R](funcs: js.Function*): js.Function1[/* repeated */ js.Any, R] = js.native
   def compose[A, R](f1: js.Function1[/* b */ A, R], f2: reduxLib.Func0[A]): reduxLib.Func0[R] = js.native
   def compose[A, B, R](f1: js.Function1[/* b */ B, R], f2: js.Function1[/* a */ A, B], f3: reduxLib.Func0[A]): reduxLib.Func0[R] = js.native
   def compose[A, T1, R](f1: js.Function1[/* b */ A, R], f2: reduxLib.Func1[T1, A]): reduxLib.Func1[T1, R] = js.native

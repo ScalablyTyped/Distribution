@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClientInfo extends js.Object {
   var dependencies: js.Array[_]
   var environment: js.Array[Environment]

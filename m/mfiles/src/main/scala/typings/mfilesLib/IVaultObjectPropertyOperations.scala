@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVaultObjectPropertyOperations extends js.Object {
   def ApproveOrRejectAssignment(ObjVer: IObjVer, Approve: scala.Boolean): IObjectVersionAndProperties
   def ApproveOrRejectAssignmentByUser(ObjVer: IObjVer, Approve: scala.Boolean, UserID: scala.Double): IObjectVersionAndProperties

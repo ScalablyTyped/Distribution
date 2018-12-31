@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TaskLog extends TaskLogReference {
   var createdOn: stdLib.Date
   var indexLocation: java.lang.String

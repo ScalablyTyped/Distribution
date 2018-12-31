@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var codeGenerationOptions: js.UndefOr[js.Object] = js.undefined
   var coverageVariable: js.UndefOr[java.lang.String] = js.undefined

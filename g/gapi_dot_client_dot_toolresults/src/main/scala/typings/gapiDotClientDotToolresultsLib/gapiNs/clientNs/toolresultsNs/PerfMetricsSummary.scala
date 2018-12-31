@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PerfMetricsSummary extends js.Object {
   var appStartTime: js.UndefOr[AppStartTime] = js.undefined
   /** A tool results execution ID. */

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a UI element that lets the user choose folders. */
 @JSGlobal("Windows.Storage.Pickers.FolderPicker")
 @js.native
+/** Creates a new instance of a FolderPicker . */
 class FolderPicker () extends js.Object {
   /** Gets or sets the label text of the folder picker's commit button. */
   var commitButtonText: java.lang.String = js.native
@@ -24,9 +25,9 @@ class FolderPicker () extends js.Object {
   /** Shows the file picker so that the user can pick a folder, deactivating and the app and reactivating it when the operation is complete. (Windows Phone Store apps) */
   def pickFolderAndContinue(): scala.Unit = js.native
   /**
-                   * Shows the folderPicker object so that the user can pick a folder. (Windows Store apps)
-                   * @return When the call to this method completes successfully, it returns a storageFolder object that represents the folder that the user picked.
-                   */
+    * Shows the folderPicker object so that the user can pick a folder. (Windows Store apps)
+    * @return When the call to this method completes successfully, it returns a storageFolder object that represents the folder that the user picked.
+    */
   def pickSingleFolderAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.StorageNs.StorageFolder] = js.native
 }
 

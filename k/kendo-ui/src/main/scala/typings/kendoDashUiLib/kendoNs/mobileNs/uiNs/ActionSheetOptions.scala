@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActionSheetOptions extends js.Object {
   var cancel: js.UndefOr[java.lang.String] = js.undefined
   var close: js.UndefOr[js.Function1[/* e */ ActionSheetEvent, scala.Unit]] = js.undefined

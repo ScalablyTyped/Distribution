@@ -6,149 +6,148 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * A task to be performed
-     */
-
+  * A task to be performed
+  */
 trait Task extends DomainResource {
   /**
-           * Contains extended information for property 'authoredOn'.
-           */
+    * Contains extended information for property 'authoredOn'.
+    */
   var _authoredOn: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'definitionUri'.
-           */
+    * Contains extended information for property 'definitionUri'.
+    */
   var _definitionUri: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'description'.
-           */
+    * Contains extended information for property 'description'.
+    */
   var _description: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'intent'.
-           */
+    * Contains extended information for property 'intent'.
+    */
   var _intent: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'lastModified'.
-           */
+    * Contains extended information for property 'lastModified'.
+    */
   var _lastModified: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'priority'.
-           */
+    * Contains extended information for property 'priority'.
+    */
   var _priority: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'status'.
-           */
+    * Contains extended information for property 'status'.
+    */
   var _status: js.UndefOr[Element] = js.undefined
   /**
-           * Task Creation Date
-           */
+    * Task Creation Date
+    */
   var authoredOn: js.UndefOr[dateTime] = js.undefined
   /**
-           * Request fulfilled by this task
-           */
+    * Request fulfilled by this task
+    */
   var basedOn: js.UndefOr[js.Array[Reference]] = js.undefined
   /**
-           * E.g. "Specimen collected", "IV prepped"
-           */
+    * E.g. "Specimen collected", "IV prepped"
+    */
   var businessStatus: js.UndefOr[CodeableConcept] = js.undefined
   /**
-           * Task Type
-           */
+    * Task Type
+    */
   var code: js.UndefOr[CodeableConcept] = js.undefined
   /**
-           * Healthcare event during which this task originated
-           */
+    * Healthcare event during which this task originated
+    */
   var context: js.UndefOr[Reference] = js.undefined
   /**
-           * Formal definition of task
-           */
+    * Formal definition of task
+    */
   var definitionReference: js.UndefOr[Reference] = js.undefined
   /**
-           * Formal definition of task
-           */
+    * Formal definition of task
+    */
   var definitionUri: js.UndefOr[uri] = js.undefined
   /**
-           * Human-readable explanation of task
-           */
+    * Human-readable explanation of task
+    */
   var description: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Start and end time of execution
-           */
+    * Start and end time of execution
+    */
   var executionPeriod: js.UndefOr[Period] = js.undefined
   /**
-           * What task is acting on
-           */
+    * What task is acting on
+    */
   var focus: js.UndefOr[Reference] = js.undefined
   /**
-           * Beneficiary of the Task
-           */
+    * Beneficiary of the Task
+    */
   var `for`: js.UndefOr[Reference] = js.undefined
   /**
-           * Requisition or grouper id
-           */
+    * Requisition or grouper id
+    */
   var groupIdentifier: js.UndefOr[Identifier] = js.undefined
   /**
-           * Task Instance Identifier
-           */
+    * Task Instance Identifier
+    */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   /**
-           * Information used to perform task
-           */
+    * Information used to perform task
+    */
   var input: js.UndefOr[js.Array[TaskInput]] = js.undefined
   /**
-           * proposal | plan | order +
-           */
+    * proposal | plan | order +
+    */
   var intent: code
   /**
-           * Task Last Modified Date
-           */
+    * Task Last Modified Date
+    */
   var lastModified: js.UndefOr[dateTime] = js.undefined
   /**
-           * Comments made about the task
-           */
+    * Comments made about the task
+    */
   var note: js.UndefOr[js.Array[Annotation]] = js.undefined
   /**
-           * Information produced as part of task
-           */
+    * Information produced as part of task
+    */
   var output: js.UndefOr[js.Array[TaskOutput]] = js.undefined
   /**
-           * Responsible individual
-           */
+    * Responsible individual
+    */
   var owner: js.UndefOr[Reference] = js.undefined
   /**
-           * Composite task
-           */
+    * Composite task
+    */
   var partOf: js.UndefOr[js.Array[Reference]] = js.undefined
   /**
-           * requester | dispatcher | scheduler | performer | monitor | manager | acquirer | reviewer
-           */
+    * requester | dispatcher | scheduler | performer | monitor | manager | acquirer | reviewer
+    */
   var performerType: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   /**
-           * normal | urgent | asap | stat
-           */
+    * normal | urgent | asap | stat
+    */
   var priority: js.UndefOr[code] = js.undefined
   /**
-           * Why task is needed
-           */
+    * Why task is needed
+    */
   var reason: js.UndefOr[CodeableConcept] = js.undefined
   /**
-           * Key events in history of the Task
-           */
+    * Key events in history of the Task
+    */
   var relevantHistory: js.UndefOr[js.Array[Reference]] = js.undefined
   /**
-           * Who is asking for task to be done
-           */
+    * Who is asking for task to be done
+    */
   var requester: js.UndefOr[TaskRequester] = js.undefined
   /**
-           * Constraints on fulfillment tasks
-           */
+    * Constraints on fulfillment tasks
+    */
   var restriction: js.UndefOr[TaskRestriction] = js.undefined
   /**
-           * draft | requested | received | accepted | +
-           */
+    * draft | requested | received | accepted | +
+    */
   var status: code
   /**
-           * Reason for current status
-           */
+    * Reason for current status
+    */
   var statusReason: js.UndefOr[CodeableConcept] = js.undefined
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IType extends INamespace {
   /** Extension ranges */
   var extensions: js.UndefOr[js.Array[js.Array[scala.Double]]] = js.undefined

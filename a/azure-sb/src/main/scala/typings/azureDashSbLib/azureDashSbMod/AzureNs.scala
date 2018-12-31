@@ -12,10 +12,8 @@ object AzureNs extends js.Object {
   @js.native
   object ServiceBusNs extends js.Object {
     /*
-         * Options interfaces
-         */
-    
-    
+      * Options interfaces
+      */
     trait CreateOptions extends js.Object {
       var DefaultMessageTimeToLive: java.lang.String
       var DuplicateDetectionHistoryTimeWindow: java.lang.String
@@ -24,16 +22,13 @@ object AzureNs extends js.Object {
       var RequiresDuplicateDetection: scala.Boolean
     }
     
-    
     trait Dictionary[T]
       extends /* k */ org.scalablytyped.runtime.StringDictionary[T]
-    
     
     trait ErrorResponse extends Response {
       @JSName("body")
       var body_ErrorResponse: azureDashSbLib.Anon_Error
     }
-    
     
     trait IBrokerProperties extends js.Object {
       var CorrelationId: java.lang.String
@@ -48,7 +43,6 @@ object AzureNs extends js.Object {
       var To: java.lang.String
     }
     
-    
     trait IBrokerPropertiesResponse extends js.Object {
       val DeliveryCount: scala.Double
       val LockToken: java.lang.String
@@ -56,14 +50,12 @@ object AzureNs extends js.Object {
       val SequenceNumber: scala.Double
     }
     
-    
     trait ICreateNotificationHubOptions extends js.Object {
       var apns: Dictionary[java.lang.String]
       var gcm: Dictionary[java.lang.String]
       var mpns: Dictionary[java.lang.String]
       var wns: Dictionary[java.lang.String]
     }
-    
     
     trait ICreateRuleOptions extends js.Object {
       var correlationIdFilter: java.lang.String
@@ -73,7 +65,6 @@ object AzureNs extends js.Object {
       var trueFilter: java.lang.String
     }
     
-    
     trait ICreateSubscriptionOptions extends js.Object {
       var DefaultMessageTimeToLive: java.lang.String
       var EnableDeadLetteringOnFilterEvaluationExceptions: scala.Boolean
@@ -81,7 +72,6 @@ object AzureNs extends js.Object {
       var LockDuration: java.lang.String
       var RequiresSession: scala.Boolean
     }
-    
     
     trait ICreateTopicIfNotExistsOptions extends ICreateTopicOptions {
       var EnableDeadLetteringOnFilterEvaluationExceptions: scala.Boolean
@@ -91,13 +81,11 @@ object AzureNs extends js.Object {
       var MaxSubscriptionsPerTopic: scala.Double
     }
     
-    
     trait ICreateTopicOptions extends CreateOptions {
       var EnableBatchedOperations: scala.Boolean
       var SizeInBytes: scala.Boolean
       var SupportOrdering: scala.Boolean
     }
-    
     
     trait IQueueOptions extends CreateOptions {
       var AutoDeleteOnIdle: java.lang.String
@@ -106,14 +94,12 @@ object AzureNs extends js.Object {
       var RequiresSession: scala.Boolean
     }
     
-    
     trait Message extends js.Object {
       var body: java.lang.String
       var brokerProperties: js.UndefOr[BrokerProperties] = js.undefined
       var contentType: js.UndefOr[java.lang.String] = js.undefined
       var customProperties: js.UndefOr[Dictionary[_]] = js.undefined
     }
-    
     
     trait NotificationHubRegistration extends js.Object {
       var BodyTemplate: js.UndefOr[js.Any] = js.undefined
@@ -127,22 +113,18 @@ object AzureNs extends js.Object {
       var gcmRegistrationId: js.UndefOr[java.lang.String] = js.undefined
     }
     
-    
     trait PaginationOptions extends js.Object {
       var skip: scala.Double
       var top: scala.Double
     }
     
-    
     trait ReceiveQueueMessageOptions extends js.Object {
       var timeoutIntervalInS: js.UndefOr[scala.Double] = js.undefined
     }
     
-    
     trait ReceiveSubscriptionMessageOptions extends ReceiveQueueMessageOptions {
       var isPeekLock: js.UndefOr[scala.Boolean] = js.undefined
     }
-    
     
     trait Response extends js.Object {
       var body: Dictionary[java.lang.String | js.Object]
@@ -158,7 +140,6 @@ object AzureNs extends js.Object {
       @JSName("Models")
       @js.native
       object ModelsNs extends js.Object {
-        
         trait Base extends js.Object {
           var CreatedAt: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.DateString
           var `_`: azureDashSbLib.Anon_Author
@@ -169,7 +150,6 @@ object AzureNs extends js.Object {
         
         @js.native
         sealed trait EntityStatus extends js.Object
-        
         
         trait ExtendedBase extends Base {
           var AuthorizationRules: java.lang.String
@@ -188,7 +168,6 @@ object AzureNs extends js.Object {
           var UpdatedAt: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.DateString
         }
         
-        
         trait Queue extends ExtendedBase {
           var DeadLetteringOnMessageExpiration: java.lang.String
           var LockDuration: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.Duration
@@ -198,7 +177,6 @@ object AzureNs extends js.Object {
           var RequiresSession: java.lang.String
           var SupportOrdering: java.lang.String
         }
-        
         
         trait Rule extends Base {
           var Action: java.lang.String | SqlFilter
@@ -210,16 +188,14 @@ object AzureNs extends js.Object {
         }
         
         /**
-                 * @see https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-sql-filter
-                 */
-        
+          * @see https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-sql-filter
+          */
         trait SqlFilter extends js.Object {
           val CompatibilityLevel: java.lang.String
           var Parameters: js.UndefOr[azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.Dictionary[_]] = js.undefined
           var RequiresPreprocessing: js.UndefOr[java.lang.String] = js.undefined
           var SqlExpression: java.lang.String
         }
-        
         
         trait Subscription extends ExtendedBase {
           var CountDetails: org.scalablytyped.runtime.StringDictionary[java.lang.String]
@@ -232,7 +208,6 @@ object AzureNs extends js.Object {
           var SubscriptionName: java.lang.String
           var TopicName: java.lang.String
         }
-        
         
         trait Topic extends ExtendedBase {
           var AccessedAt: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.DateString

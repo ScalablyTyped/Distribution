@@ -15,12 +15,12 @@ object AceAjaxNsMembers extends js.Object {
   var Editor: aceLib.Anon_Renderer = js.native
   var PlaceHolder: aceLib.Anon_SessionLength = js.native
   /**
-       * Creates a new `Range` object with the given starting and ending row and column points.
-       * @param startRow The starting row
-       * @param startColumn The starting column
-       * @param endRow The ending row
-       * @param endColumn The ending column
-      **/
+    * Creates a new `Range` object with the given starting and ending row and column points.
+    * @param startRow The starting row
+    * @param startColumn The starting column
+    * @param endRow The ending row
+    * @param endColumn The ending column
+    **/
   var Range: aceLib.Anon_StartRow = js.native
   var RangeList: aceLib.Anon_IRangeList = js.native
   var RenderLoop: aceLib.Anon_RenderLoop = js.native

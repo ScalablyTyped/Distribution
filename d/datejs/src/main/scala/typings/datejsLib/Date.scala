@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 trait Date extends js.Object {
   /** Adds(or subtracts) to the value of the year, month, day, hour, minute, second, millisecond of the date instance using given configuration object. Positive and Negative values allowed. */
   def add(): Date = js.native
-  /** Adds(or subtracts) to the value of the year, month, day, hour, minute, second, millisecond of the date instance using given configuration object. Positive and Negative values allowed. */
   def add(config: IDateJSLiteral): Date = js.native
   def add(n: scala.Double): datejsLib.sugarpakNs.IAddOrientation = js.native
   /** Adds the specified number of days to this instance.The number can be positive or negative. */
@@ -98,7 +97,6 @@ trait Date extends js.Object {
   def toISOString(): java.lang.String = js.native
   /** Returns a date literal from a DateJS instance */
   def toObject(): datejsLib.sugarpakNs.IDateLiteral = js.native
-  /** Converts the value of the current Date object to its equivalent string representation.Use format argument to specify format(optional).See FormatSpecifiers for more info. */
   def toString(format: java.lang.String): java.lang.String = js.native
 }
 

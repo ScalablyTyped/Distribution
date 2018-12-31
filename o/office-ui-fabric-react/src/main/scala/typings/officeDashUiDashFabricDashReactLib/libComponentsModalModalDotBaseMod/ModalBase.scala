@@ -27,8 +27,8 @@ class ModalBase protected ()
   @JSName("componentWillReceiveProps")
   def componentWillReceiveProps_MModalBase(newProps: officeDashUiDashFabricDashReactLib.libComponentsModalModalDotTypesMod.IModalProps): scala.Unit = js.native
   /**
-       * Sets focus on the first focusable, or configured, child in focus trap zone
-       */
+    * Sets focus on the first focusable, or configured, child in focus trap zone
+    */
   /* CompleteClass */
   override def focus(): scala.Unit = js.native
 }

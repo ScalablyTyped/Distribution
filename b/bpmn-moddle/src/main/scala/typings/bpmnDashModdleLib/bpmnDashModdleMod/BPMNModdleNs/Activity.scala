@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Activity extends FlowNode {
   var boundaryEventRefs: js.Array[BoundaryEvent]
   var completionQuantity: scala.Double

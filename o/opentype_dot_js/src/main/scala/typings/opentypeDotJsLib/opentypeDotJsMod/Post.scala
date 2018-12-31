@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Post extends js.Object {
   var glyphNameIndex: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var isFixedPitch: scala.Double

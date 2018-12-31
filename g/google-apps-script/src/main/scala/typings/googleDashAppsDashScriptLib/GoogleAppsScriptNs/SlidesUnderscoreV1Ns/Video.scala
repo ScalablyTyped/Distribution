@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Video extends js.Object {
   // The video source's unique identifier for this video.
   var id: java.lang.String

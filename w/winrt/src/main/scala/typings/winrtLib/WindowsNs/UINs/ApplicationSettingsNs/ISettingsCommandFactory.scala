@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISettingsCommandFactory extends js.Object {
   def create(
     settingsCommandId: js.Any,

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MappingItem extends js.Object {
   var generatedColumn: scala.Double
   var generatedLine: scala.Double

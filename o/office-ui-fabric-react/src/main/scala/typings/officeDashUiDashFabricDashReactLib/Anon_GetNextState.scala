@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_GetNextState extends js.Object {
   var getInitialResizeGroupState: js.Function1[
     /* data */ js.Any, 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Item extends js.Object {
   def asCheckboxGridItem(): CheckboxGridItem
   def asCheckboxItem(): CheckboxItem

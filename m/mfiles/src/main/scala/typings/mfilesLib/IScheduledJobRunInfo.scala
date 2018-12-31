@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IScheduledJobRunInfo extends js.Object {
   val Cancelled: scala.Boolean
   val CurrentStep: scala.Double

@@ -13,39 +13,29 @@ class GraphRequestManager () extends js.Object {
   var requestBatch: js.Array[GraphRequest] = js.native
   var requestCallbacks: js.Array[GraphRequestCallback | scala.Null] = js.native
   /**
-       * Add call back to the GraphRequestManager. Only one callback can be added.
-       * Note that invocation of the batch callback does not indicate success of every
-       * graph request made, only that the entire batch has finished executing.
-       */
+    * Add call back to the GraphRequestManager. Only one callback can be added.
+    * Note that invocation of the batch callback does not indicate success of every
+    * graph request made, only that the entire batch has finished executing.
+    */
   def addBatchCallback(callback: GraphRequestCallback): GraphRequestManager = js.native
   /**
-       * Add a graph request.
-       */
+    * Add a graph request.
+    */
   def addRequest(request: GraphRequest): GraphRequestManager = js.native
   def batchCallback(): scala.Unit = js.native
   def batchCallback(error: js.Object): scala.Unit = js.native
   def batchCallback(error: js.Object, result: js.Object): scala.Unit = js.native
   /**
-       * Executes requests in a batch.
-       * Note that when there's an issue with network connection the batch callback
-       * behavior differs in Android and iOS.
-       * On iOS, the batch callback returns an error if the batch fails with a network error.
-       * On Android, the batch callback always returns {"result": "batch finished executing"}
-       * after the batch time out. This is because detecting network status requires
-       * extra permission and it's unncessary for the sdk. Instead, you can use the NetInfo module
-       * in react-native to get the network status.
-       */
+    * Executes requests in a batch.
+    * Note that when there's an issue with network connection the batch callback
+    * behavior differs in Android and iOS.
+    * On iOS, the batch callback returns an error if the batch fails with a network error.
+    * On Android, the batch callback always returns {"result": "batch finished executing"}
+    * after the batch time out. This is because detecting network status requires
+    * extra permission and it's unncessary for the sdk. Instead, you can use the NetInfo module
+    * in react-native to get the network status.
+    */
   def start(): scala.Unit = js.native
-  /**
-       * Executes requests in a batch.
-       * Note that when there's an issue with network connection the batch callback
-       * behavior differs in Android and iOS.
-       * On iOS, the batch callback returns an error if the batch fails with a network error.
-       * On Android, the batch callback always returns {"result": "batch finished executing"}
-       * after the batch time out. This is because detecting network status requires
-       * extra permission and it's unncessary for the sdk. Instead, you can use the NetInfo module
-       * in react-native to get the network status.
-       */
   def start(timeout: scala.Double): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CardMetaProps extends js.Object {
   var avatar: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebGLContextAttributes extends js.Object {
   var alpha: js.UndefOr[GLboolean] = js.undefined
   var antialias: js.UndefOr[GLboolean] = js.undefined

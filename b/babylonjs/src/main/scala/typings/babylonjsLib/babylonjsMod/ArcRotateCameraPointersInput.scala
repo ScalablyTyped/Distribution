@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Manage the pointers inputs to control an arc rotate camera.
-     * @see http://doc.babylonjs.com/how_to/customizing_camera_inputs
-     */
+  * Manage the pointers inputs to control an arc rotate camera.
+  * @see http://doc.babylonjs.com/how_to/customizing_camera_inputs
+  */
 @JSImport("babylonjs", "ArcRotateCameraPointersInput")
 @js.native
 class ArcRotateCameraPointersInput ()

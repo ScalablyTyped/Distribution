@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 class XmlDtdEntity protected ()
   extends xmlcreateLib.libNodesXmlDtdEntityMod.default {
   /**
-       * Initializes a new instance of the {@link XmlDtdEntity} class.
-       *
-       * @param text The text associated with the XML entity declaration.
-       */
+    * Initializes a new instance of the {@link XmlDtdEntity} class.
+    *
+    * @param text The text associated with the XML entity declaration.
+    */
   def this(text: java.lang.String) = this()
 }
 

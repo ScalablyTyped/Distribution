@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListOffersHistoryResponse extends js.Object {
   /** True if the user has the option to show entire company history. */
   var canShowEntireCompany: js.UndefOr[scala.Boolean] = js.undefined

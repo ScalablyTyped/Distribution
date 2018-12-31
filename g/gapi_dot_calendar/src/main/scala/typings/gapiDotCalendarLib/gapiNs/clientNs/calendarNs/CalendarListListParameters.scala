@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CalendarListListParameters extends js.Object {
   var maxResults: js.UndefOr[integer] = js.undefined
   // The minimum access role for the user in the returned entries. Optional. The default is no restriction. Acceptable values are:

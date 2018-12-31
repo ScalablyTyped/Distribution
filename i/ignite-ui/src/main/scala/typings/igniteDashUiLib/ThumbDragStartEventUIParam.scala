@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThumbDragStartEventUIParam extends js.Object {
   /**
   	 * Gets which axis is being used to scroll - horizontal(true) or vertical(false).

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 			 * The UserActivity module is used to enable device Handoff and to create User Activities.
 			 */
-
 trait UserActivity
   extends titaniumLib.TitaniumNs.Proxy {
   /**

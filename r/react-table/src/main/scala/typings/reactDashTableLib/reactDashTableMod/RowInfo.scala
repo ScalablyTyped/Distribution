@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RowInfo extends js.Object {
   /** A boolean stating if the row is an aggregation row */
   var aggregated: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IntersectionObserver extends js.Object {
   val root: Element | scala.Null
   val rootMargin: java.lang.String

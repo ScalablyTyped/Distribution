@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CFB$WritingOptions extends CFB$CommonOptions {
   /** Enable compression (ZIP only) */
   var compression: js.UndefOr[scala.Boolean] = js.undefined

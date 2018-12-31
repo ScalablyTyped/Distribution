@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScopedCredential extends js.Object {
   val id: ArrayBuffer
   val `type`: ScopedCredentialType

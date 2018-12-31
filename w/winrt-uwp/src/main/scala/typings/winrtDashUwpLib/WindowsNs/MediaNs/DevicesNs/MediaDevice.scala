@@ -44,31 +44,31 @@ object MediaDevice extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-                   * Returns the identifier string of a device for capturing audio.
-                   * @return The identifier string of the audio capture device.
-                   */
+    * Returns the identifier string of a device for capturing audio.
+    * @return The identifier string of the audio capture device.
+    */
   def getAudioCaptureSelector(): java.lang.String = js.native
   /**
-                   * Returns the identifier string of a device for rendering audio.
-                   * @return The identifier string of the audio rendering device.
-                   */
+    * Returns the identifier string of a device for rendering audio.
+    * @return The identifier string of the audio rendering device.
+    */
   def getAudioRenderSelector(): java.lang.String = js.native
   /**
-                   * Returns the identifier string of the default device for capturing audio in the specified role.
-                   * @param role The specified audio device role (console, media, or communications).
-                   * @return The identifier string of the default device.
-                   */
+    * Returns the identifier string of the default device for capturing audio in the specified role.
+    * @param role The specified audio device role (console, media, or communications).
+    * @return The identifier string of the default device.
+    */
   def getDefaultAudioCaptureId(role: winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.AudioDeviceRole): java.lang.String = js.native
   /**
-                   * Returns the identifier string of the default device for rendering audio in the specified role.
-                   * @param role The specified audio device role (console, media, or communications).
-                   * @return The identifier string of the default device.
-                   */
+    * Returns the identifier string of the default device for rendering audio in the specified role.
+    * @param role The specified audio device role (console, media, or communications).
+    * @return The identifier string of the default device.
+    */
   def getDefaultAudioRenderId(role: winrtDashUwpLib.WindowsNs.MediaNs.DevicesNs.AudioDeviceRole): java.lang.String = js.native
   /**
-                   * Returns the identifier string of a device for capturing video.
-                   * @return The identifier string of the video capture device.
-                   */
+    * Returns the identifier string of a device for capturing video.
+    * @return The identifier string of the video capture device.
+    */
   def getVideoCaptureSelector(): java.lang.String = js.native
   /** Raised when the default audio capture device is changed. */
   def ondefaultaudiocapturedevicechanged(

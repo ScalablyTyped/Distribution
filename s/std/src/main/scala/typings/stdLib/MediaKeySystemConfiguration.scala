@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaKeySystemConfiguration extends js.Object {
   var audioCapabilities: js.UndefOr[js.Array[MediaKeySystemMediaCapability]] = js.undefined
   var distinctiveIdentifier: js.UndefOr[MediaKeysRequirement] = js.undefined

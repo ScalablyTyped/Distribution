@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ButtonTextCompoundInput
   extends /* viewId */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] {
   var day: js.UndefOr[java.lang.String] = js.undefined

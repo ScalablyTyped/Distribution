@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GraphOptions extends js.Object {
     // default: false.
   var compound: js.UndefOr[scala.Boolean] = js.undefined

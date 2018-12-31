@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RaygunStackTrace extends js.Object {
   var ClassName: java.lang.String
   var ColumnNumber: scala.Double

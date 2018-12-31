@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PrettyPrintStateKeyQuotaUser extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The version of the app state your application is attempting to update. If this does not match the current version, this method will return a conflict
-                   * error. If there is no data stored on the server for this key, the update will succeed irrespective of the value of this parameter.
-                   */
+    * The version of the app state your application is attempting to update. If this does not match the current version, this method will return a conflict
+    * error. If there is no data stored on the server for this key, the update will succeed irrespective of the value of this parameter.
+    */
   var currentStateVersion: js.UndefOr[java.lang.String] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
@@ -23,9 +22,9 @@ trait Anon_PrettyPrintStateKeyQuotaUser extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** The key for the data to be retrieved. */
   var stateKey: scala.Double

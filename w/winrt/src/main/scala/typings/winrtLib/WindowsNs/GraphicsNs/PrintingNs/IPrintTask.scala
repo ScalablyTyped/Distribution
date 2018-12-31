@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPrintTask extends js.Object {
   var oncompleted: js.Any
   var onpreviewing: js.Any

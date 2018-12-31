@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBoolean extends IColumn {
   /** [Config Option] (String) */
   var falseText: js.UndefOr[java.lang.String] = js.undefined

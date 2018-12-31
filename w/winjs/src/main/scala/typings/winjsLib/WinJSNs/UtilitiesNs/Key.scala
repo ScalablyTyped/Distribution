@@ -10,948 +10,948 @@ sealed trait Key extends js.Object
 
 //#region Enumerations
 /**
-     * Defines a set of keyboard values.
-    **/
+  * Defines a set of keyboard values.
+  **/
 @JSGlobal("WinJS.Utilities.Key")
 @js.native
 object Key extends js.Object {
   /**
-           * The F1 key.
-          **/
+    * The F1 key.
+    **/
   @js.native
   sealed trait F1
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The F10 key.
-          **/
+    * The F10 key.
+    **/
   @js.native
   sealed trait F10
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The F11 key.
-          **/
+    * The F11 key.
+    **/
   @js.native
   sealed trait F11
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The F12 key.
-          **/
+    * The F12 key.
+    **/
   @js.native
   sealed trait F12
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The F2 key.
-          **/
+    * The F2 key.
+    **/
   @js.native
   sealed trait F2
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The F3 key.
-          **/
+    * The F3 key.
+    **/
   @js.native
   sealed trait F3
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The F4 key.
-          **/
+    * The F4 key.
+    **/
   @js.native
   sealed trait F4
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The F5 key.
-          **/
+    * The F5 key.
+    **/
   @js.native
   sealed trait F5
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The F6 key.
-          **/
+    * The F6 key.
+    **/
   @js.native
   sealed trait F6
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The F7 key.
-          **/
+    * The F7 key.
+    **/
   @js.native
   sealed trait F7
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The F8 key.
-          **/
+    * The F8 key.
+    **/
   @js.native
   sealed trait F8
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The F9 key.
-          **/
+    * The F9 key.
+    **/
   @js.native
   sealed trait F9
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The open bracket key ([).
-          **/
+    * The open bracket key ([).
+    **/
   /**
-           * The XBox One gamepad A button.
-          **/
+    * The XBox One gamepad A button.
+    **/
   @js.native
   sealed trait GamepadA
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad B button.
-          **/
+    * The XBox One gamepad B button.
+    **/
   @js.native
   sealed trait GamepadB
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad dpad down.
-          **/
+    * The XBox One gamepad dpad down.
+    **/
   @js.native
   sealed trait GamepadDPadDown
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad dpad left.
-          **/
+    * The XBox One gamepad dpad left.
+    **/
   @js.native
   sealed trait GamepadDPadLeft
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad dpad right.
-          **/
+    * The XBox One gamepad dpad right.
+    **/
   @js.native
   sealed trait GamepadDPadRight
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad dpad up.
-          **/
+    * The XBox One gamepad dpad up.
+    **/
   @js.native
   sealed trait GamepadDPadUp
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad left shoulder.
-          **/
+    * The XBox One gamepad left shoulder.
+    **/
   @js.native
   sealed trait GamepadLeftShoulder
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad left thumbstick button.
-          **/
+    * The XBox One gamepad left thumbstick button.
+    **/
   @js.native
   sealed trait GamepadLeftThumbstick
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad left thumbstick's down.
-          **/
+    * The XBox One gamepad left thumbstick's down.
+    **/
   @js.native
   sealed trait GamepadLeftThumbstickDown
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad left thumbstick's left.
-          **/
+    * The XBox One gamepad left thumbstick's left.
+    **/
   @js.native
   sealed trait GamepadLeftThumbstickLeft
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad left thumbstick's right.
-          **/
+    * The XBox One gamepad left thumbstick's right.
+    **/
   @js.native
   sealed trait GamepadLeftThumbstickRight
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad left thumbstick's up.
-          **/
+    * The XBox One gamepad left thumbstick's up.
+    **/
   @js.native
   sealed trait GamepadLeftThumbstickUp
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad left trigger.
-          **/
+    * The XBox One gamepad left trigger.
+    **/
   @js.native
   sealed trait GamepadLeftTrigger
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad menu button.
-          **/
+    * The XBox One gamepad menu button.
+    **/
   @js.native
   sealed trait GamepadMenu
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad right shoulder.
-          **/
+    * The XBox One gamepad right shoulder.
+    **/
   @js.native
   sealed trait GamepadRightShoulder
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad right thumbstick button.
-          **/
+    * The XBox One gamepad right thumbstick button.
+    **/
   @js.native
   sealed trait GamepadRightThumbstick
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad right thumbstick's down.
-          **/
+    * The XBox One gamepad right thumbstick's down.
+    **/
   @js.native
   sealed trait GamepadRightThumbstickDown
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad right thumbstick's left.
-          **/
+    * The XBox One gamepad right thumbstick's left.
+    **/
   @js.native
   sealed trait GamepadRightThumbstickLeft
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad right thumbstick's right.
-          **/
+    * The XBox One gamepad right thumbstick's right.
+    **/
   @js.native
   sealed trait GamepadRightThumbstickRight
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad right thumbstick's up.
-          **/
+    * The XBox One gamepad right thumbstick's up.
+    **/
   @js.native
   sealed trait GamepadRightThumbstickUp
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad right trigger.
-          **/
+    * The XBox One gamepad right trigger.
+    **/
   @js.native
   sealed trait GamepadRightTrigger
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad view button.
-          **/
+    * The XBox One gamepad view button.
+    **/
   @js.native
   sealed trait GamepadView
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad X button.
-          **/
+    * The XBox One gamepad X button.
+    **/
   @js.native
   sealed trait GamepadX
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One gamepad Y button.
-          **/
+    * The XBox One gamepad Y button.
+    **/
   @js.native
   sealed trait GamepadY
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * Any IME input.
-          **/
+    * Any IME input.
+    **/
   @js.native
   sealed trait IME
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One Remote navigation accept button.
-          **/
+    * The XBox One Remote navigation accept button.
+    **/
   @js.native
   sealed trait NavigationAccept
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One Remote navigation cancel button.
-          **/
+    * The XBox One Remote navigation cancel button.
+    **/
   @js.native
   sealed trait NavigationCancel
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One Remote navigation down button.
-          **/
+    * The XBox One Remote navigation down button.
+    **/
   @js.native
   sealed trait NavigationDown
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One Remote navigation left button.
-          **/
+    * The XBox One Remote navigation left button.
+    **/
   @js.native
   sealed trait NavigationLeft
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One Remote navigation menu button.
-          **/
+    * The XBox One Remote navigation menu button.
+    **/
   @js.native
   sealed trait NavigationMenu
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One Remote navigation right button.
-          **/
+    * The XBox One Remote navigation right button.
+    **/
   @js.native
   sealed trait NavigationRight
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One Remote navigation up button.
-          **/
+    * The XBox One Remote navigation up button.
+    **/
   @js.native
   sealed trait NavigationUp
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The XBox One Remote navigation view button.
-          **/
+    * The XBox One Remote navigation view button.
+    **/
   @js.native
   sealed trait NavigationView
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The a key.
-          **/
+    * The a key.
+    **/
   @js.native
   sealed trait a
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The addition key (+).
-          **/
+    * The addition key (+).
+    **/
   @js.native
   sealed trait add
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The ALT key.
-          **/
+    * The ALT key.
+    **/
   @js.native
   sealed trait alt
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The b key.
-          **/
+    * The b key.
+    **/
   @js.native
   sealed trait b
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The backslash key (\).
-          **/
+    * The backslash key (\).
+    **/
   @js.native
   sealed trait backSlash
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The BACKSPACE key.
-          **/
+    * The BACKSPACE key.
+    **/
   @js.native
   sealed trait backspace
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The browser BACK key.
-          **/
+    * The browser BACK key.
+    **/
   @js.native
   sealed trait browserBack
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The browser FORWARD key.
-          **/
+    * The browser FORWARD key.
+    **/
   @js.native
   sealed trait browserForward
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The c key.
-          **/
+    * The c key.
+    **/
   @js.native
   sealed trait c
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The CAPS LOCK key.
-          **/
+    * The CAPS LOCK key.
+    **/
   @js.native
   sealed trait capsLock
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The close bracket key (]).
-          **/
+    * The close bracket key (]).
+    **/
   @js.native
   sealed trait closeBracket
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The comma key (,).
-          **/
+    * The comma key (,).
+    **/
   @js.native
   sealed trait comma
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The CTRL key.
-          **/
+    * The CTRL key.
+    **/
   @js.native
   sealed trait ctrl
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The d key.
-          **/
+    * The d key.
+    **/
   @js.native
   sealed trait d
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The dash key (-).
-          **/
+    * The dash key (-).
+    **/
   @js.native
   sealed trait dash
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The decimal point key (.)
-          **/
+    * The decimal point key (.)
+    **/
   @js.native
   sealed trait decimalPoint
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The DELETE key.
-          **/
+    * The DELETE key.
+    **/
   @js.native
   sealed trait deleteKey
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The division key (/).
-          **/
+    * The division key (/).
+    **/
   @js.native
   sealed trait divide
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The DOWN ARROW key.
-          **/
+    * The DOWN ARROW key.
+    **/
   @js.native
   sealed trait downArrow
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The e key.
-          **/
+    * The e key.
+    **/
   @js.native
   sealed trait e
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The END key.
-          **/
+    * The END key.
+    **/
   @js.native
   sealed trait end
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The ENTER key.
-          **/
+    * The ENTER key.
+    **/
   @js.native
   sealed trait enter
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The equals key (=).
-          **/
+    * The equals key (=).
+    **/
   @js.native
   sealed trait equal
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The ESCAPE key.
-          **/
+    * The ESCAPE key.
+    **/
   @js.native
   sealed trait escape
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The f key.
-          **/
+    * The f key.
+    **/
   @js.native
   sealed trait f
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The forward slash key (/).
-          **/
+    * The forward slash key (/).
+    **/
   @js.native
   sealed trait forwardSlash
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The g key.
-          **/
+    * The g key.
+    **/
   @js.native
   sealed trait g
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The grave accent key (`).
-          **/
+    * The grave accent key (`).
+    **/
   @js.native
   sealed trait graveAccent
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The h key.
-          **/
+    * The h key.
+    **/
   @js.native
   sealed trait h
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The HOME key.
-          **/
+    * The HOME key.
+    **/
   @js.native
   sealed trait home
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The i key.
-          **/
+    * The i key.
+    **/
   @js.native
   sealed trait i
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The INSERT key.
-          **/
+    * The INSERT key.
+    **/
   @js.native
   sealed trait insert
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The j key.
-          **/
+    * The j key.
+    **/
   @js.native
   sealed trait j
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The k key.
-          **/
+    * The k key.
+    **/
   @js.native
   sealed trait k
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The l key.
-          **/
+    * The l key.
+    **/
   @js.native
   sealed trait l
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The LEFT ARROW key.
-          **/
+    * The LEFT ARROW key.
+    **/
   @js.native
   sealed trait leftArrow
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The left Windows key.
-          **/
+    * The left Windows key.
+    **/
   @js.native
   sealed trait leftWindows
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The m key.
-          **/
+    * The m key.
+    **/
   @js.native
   sealed trait m
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The menu key.
-          **/
+    * The menu key.
+    **/
   @js.native
   sealed trait menu
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The multiplication key (*).
-          **/
+    * The multiplication key (*).
+    **/
   @js.native
   sealed trait multiply
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The n key.
-          **/
+    * The n key.
+    **/
   @js.native
   sealed trait n
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The 0 key.
-          **/
+    * The 0 key.
+    **/
   @js.native
   sealed trait num0
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The 1 key.
-          **/
+    * The 1 key.
+    **/
   @js.native
   sealed trait num1
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The 2 key.
-          **/
+    * The 2 key.
+    **/
   @js.native
   sealed trait num2
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The 3 key.
-          **/
+    * The 3 key.
+    **/
   @js.native
   sealed trait num3
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The 4 key.
-          **/
+    * The 4 key.
+    **/
   @js.native
   sealed trait num4
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The 5 key.
-          **/
+    * The 5 key.
+    **/
   @js.native
   sealed trait num5
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The 6 key.
-          **/
+    * The 6 key.
+    **/
   @js.native
   sealed trait num6
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The 7 key.
-          **/
+    * The 7 key.
+    **/
   @js.native
   sealed trait num7
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The 8 key.
-          **/
+    * The 8 key.
+    **/
   @js.native
   sealed trait num8
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The 9 key.
-          **/
+    * The 9 key.
+    **/
   @js.native
   sealed trait num9
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The NUMBER LOCK key.
-          **/
+    * The NUMBER LOCK key.
+    **/
   @js.native
   sealed trait numLock
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The 0 key on the numerical keypad.
-          **/
+    * The 0 key on the numerical keypad.
+    **/
   @js.native
   sealed trait numPad0
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The 1 key on the numerical keypad.
-          **/
+    * The 1 key on the numerical keypad.
+    **/
   @js.native
   sealed trait numPad1
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The 2 key on the numerical keypad.
-          **/
+    * The 2 key on the numerical keypad.
+    **/
   @js.native
   sealed trait numPad2
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The 3 key on the numerical keypad.
-          **/
+    * The 3 key on the numerical keypad.
+    **/
   @js.native
   sealed trait numPad3
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The 4 key on the numerical keypad.
-          **/
+    * The 4 key on the numerical keypad.
+    **/
   @js.native
   sealed trait numPad4
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The 5 key on the numerical keypad.
-          **/
+    * The 5 key on the numerical keypad.
+    **/
   @js.native
   sealed trait numPad5
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The 6 key on the numerical keypad.
-          **/
+    * The 6 key on the numerical keypad.
+    **/
   @js.native
   sealed trait numPad6
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The 7 key on the numerical keypad.
-          **/
+    * The 7 key on the numerical keypad.
+    **/
   @js.native
   sealed trait numPad7
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The 8 key on the numerical keypad.
-          **/
+    * The 8 key on the numerical keypad.
+    **/
   @js.native
   sealed trait numPad8
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The 9 key on the numerical keypad.
-          **/
+    * The 9 key on the numerical keypad.
+    **/
   @js.native
   sealed trait numPad9
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The o key.
-          **/
+    * The o key.
+    **/
   @js.native
   sealed trait o
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The open bracket key ([).
-          **/
+    * The open bracket key ([).
+    **/
   @js.native
   sealed trait openBracket
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The p key.
-          **/
+    * The p key.
+    **/
   @js.native
   sealed trait p
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The PAGE DOWN key.
-          **/
+    * The PAGE DOWN key.
+    **/
   @js.native
   sealed trait pageDown
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The PAGE UP key.
-          **/
+    * The PAGE UP key.
+    **/
   @js.native
   sealed trait pageUp
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The PAUSE key.
-          **/
+    * The PAUSE key.
+    **/
   @js.native
   sealed trait pause
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The period key (.).
-          **/
+    * The period key (.).
+    **/
   @js.native
   sealed trait period
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The q key.
-          **/
+    * The q key.
+    **/
   @js.native
   sealed trait q
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The r key.
-          **/
+    * The r key.
+    **/
   @js.native
   sealed trait r
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The RIGHT ARROW key.
-          **/
+    * The RIGHT ARROW key.
+    **/
   @js.native
   sealed trait rightArrow
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The right Windows key.
-          **/
+    * The right Windows key.
+    **/
   @js.native
   sealed trait rightWindows
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The s key.
-          **/
+    * The s key.
+    **/
   @js.native
   sealed trait s
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The SCROLL LOCK key.
-          **/
+    * The SCROLL LOCK key.
+    **/
   @js.native
   sealed trait scrollLock
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The semicolon key (;).
-          **/
+    * The semicolon key (;).
+    **/
   @js.native
   sealed trait semicolon
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The SHIFT key.
-          **/
+    * The SHIFT key.
+    **/
   @js.native
   sealed trait shift
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The single quote key (').
-          **/
+    * The single quote key (').
+    **/
   @js.native
   sealed trait singleQuote
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The SPACE key.
-          **/
+    * The SPACE key.
+    **/
   @js.native
   sealed trait space
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The subtraction key (-).
-          **/
+    * The subtraction key (-).
+    **/
   @js.native
   sealed trait subtract
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The t key.
-          **/
+    * The t key.
+    **/
   @js.native
   sealed trait t
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The TAB key.
-          **/
+    * The TAB key.
+    **/
   @js.native
   sealed trait tab
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The u key.
-          **/
+    * The u key.
+    **/
   @js.native
   sealed trait u
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The UP ARROW key.
-          **/
+    * The UP ARROW key.
+    **/
   @js.native
   sealed trait upArrow
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The v key.
-          **/
+    * The v key.
+    **/
   @js.native
   sealed trait v
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The w key.
-          **/
+    * The w key.
+    **/
   @js.native
   sealed trait w
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The x key.
-          **/
+    * The x key.
+    **/
   @js.native
   sealed trait x
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The y key.
-          **/
+    * The y key.
+    **/
   @js.native
   sealed trait y
     extends winjsLib.WinJSNs.UtilitiesNs.Key
   
   /**
-           * The z key.
-          **/
+    * The z key.
+    **/
   @js.native
   sealed trait z
     extends winjsLib.WinJSNs.UtilitiesNs.Key

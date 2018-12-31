@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AzureKeyVaultVariableValue extends VariableValue {
   var contentType: java.lang.String
   var enabled: scala.Boolean

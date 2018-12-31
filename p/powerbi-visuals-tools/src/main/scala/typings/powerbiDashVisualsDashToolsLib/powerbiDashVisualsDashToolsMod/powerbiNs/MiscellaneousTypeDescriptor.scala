@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MiscellaneousTypeDescriptor extends js.Object {
   val barcode: js.UndefOr[scala.Boolean] = js.undefined
   val image: js.UndefOr[scala.Boolean] = js.undefined

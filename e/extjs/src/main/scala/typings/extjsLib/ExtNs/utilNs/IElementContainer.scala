@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IElementContainer
   extends extjsLib.ExtNs.IBase {
   /** [Method] Adds each argument passed to this method to the childEls array  */

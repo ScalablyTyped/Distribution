@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SlicePartitionsStackPartitions extends js.Object {
   var radius: js.UndefOr[scala.Double] = js.undefined
   var slicePartitions: js.UndefOr[scala.Double] = js.undefined

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Define options used to create a render target texture
-     */
+  * Define options used to create a render target texture
+  */
 @JSImport("babylonjs", "RenderTargetCreationOptions")
 @js.native
 class RenderTargetCreationOptions ()

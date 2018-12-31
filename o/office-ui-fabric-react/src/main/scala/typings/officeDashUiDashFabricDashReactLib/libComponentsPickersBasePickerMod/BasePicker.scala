@@ -42,19 +42,15 @@ class BasePicker[T, P /* <: officeDashUiDashFabricDashReactLib.libComponentsPick
   /* private */ def _onSelectedItemsUpdated(items: js.Any, focusIndex: js.Any): js.Any = js.native
   /* private */ def _onValidateInput(): js.Any = js.native
   /**
-       * Takes in the current updated value and either resolves it with the new suggestions
-       * or if updated value is undefined then it clears out currently suggested items
-       */
+    * Takes in the current updated value and either resolves it with the new suggestions
+    * or if updated value is undefined then it clears out currently suggested items
+    */
   /* private */ def _updateAndResolveValue(updatedValue: js.Any, newSuggestions: js.Any): js.Any = js.native
   /**
-       * Controls what happens whenever there is an action that impacts the selected items.
-       * If selectedItems is provided as a property then this will act as a controlled component and it will not update it's own state.
-       */
+    * Controls what happens whenever there is an action that impacts the selected items.
+    * If selectedItems is provided as a property then this will act as a controlled component and it will not update it's own state.
+    */
   /* private */ def _updateSelectedItems(items: js.Any): js.Any = js.native
-  /**
-       * Controls what happens whenever there is an action that impacts the selected items.
-       * If selectedItems is provided as a property then this will act as a controlled component and it will not update it's own state.
-       */
   /* private */ def _updateSelectedItems(items: js.Any, focusIndex: js.Any): js.Any = js.native
   /* protected */ def addItem(item: T): scala.Unit = js.native
   /* protected */ def addItemByIndex(index: scala.Double): scala.Unit = js.native

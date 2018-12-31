@@ -18,30 +18,19 @@ trait Field extends FieldParameters {
   def errorHTML(): java.lang.String = js.native
   /** Returns a string containing a label element with the correct 'for' attribute containing the text from field.labelText(name). */
   def labelHTML(name: java.lang.String): java.lang.String = js.native
-  /** Returns a string containing a label element with the correct 'for' attribute containing the text from field.labelText(name). */
   def labelHTML(name: java.lang.String, id: java.lang.String): java.lang.String = js.native
-  /** Returns a string containing a label element with the correct 'for' attribute containing the text from field.labelText(name). */
   def labelHTML(name: java.lang.String, id: scala.Boolean): java.lang.String = js.native
   /** Returns a string containing the label text from field.label, or defaults to using the field name with underscores replaced with spaces and the first letter capitalised. */
   def labelText(): java.lang.String = js.native
-  /** Returns a string containing the label text from field.label, or defaults to using the field name with underscores replaced with spaces and the first letter capitalised. */
   def labelText(name: java.lang.String): java.lang.String = js.native
   /** Coerces the raw data from the request into the correct format for the field, returning the result, e.g. '123' becomes 123 for the number field. */
   def parse(rawData: js.Any): js.Any = js.native
   /**
-       * Calls the iterator with the name and field object as arguments. Defaults to using forms.render.div as the iterator,
-       * which returns a HTML representation of the field label, error message and widget wrapped in a div.
-       */
+    * Calls the iterator with the name and field object as arguments. Defaults to using forms.render.div as the iterator,
+    * which returns a HTML representation of the field label, error message and widget wrapped in a div.
+    */
   def toHTML(): java.lang.String = js.native
-  /**
-       * Calls the iterator with the name and field object as arguments. Defaults to using forms.render.div as the iterator,
-       * which returns a HTML representation of the field label, error message and widget wrapped in a div.
-       */
   def toHTML(name: java.lang.String): java.lang.String = js.native
-  /**
-       * Calls the iterator with the name and field object as arguments. Defaults to using forms.render.div as the iterator,
-       * which returns a HTML representation of the field label, error message and widget wrapped in a div.
-       */
   def toHTML(name: java.lang.String, iterator: FieldIterator): java.lang.String = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictLabelProps extends js.Object {
   /** A label can be active. */
   var active: js.UndefOr[scala.Boolean] = js.undefined
@@ -50,11 +49,11 @@ trait StrictLabelProps extends js.Object {
   /** A label can be formatted to emphasize an image or prop can be used as shorthand for Image. */
   var image: js.UndefOr[js.Any] = js.undefined
   /**
-     * Called on click.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called on click.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onClick: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
@@ -63,11 +62,11 @@ trait StrictLabelProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Adds an "x" icon, called when "x" is clicked.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Adds an "x" icon, called when "x" is clicked.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onRemove: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 

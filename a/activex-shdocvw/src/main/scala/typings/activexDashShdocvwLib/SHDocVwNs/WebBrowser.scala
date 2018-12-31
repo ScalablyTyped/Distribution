@@ -75,9 +75,7 @@ class WebBrowser protected () extends js.Object {
   def ClientToWindow(pcx: scala.Double, pcy: scala.Double): scala.Unit = js.native
   /** IOleCommandTarget::Exec */
   def ExecWB(cmdID: OLECMDID, cmdexecopt: OLECMDEXECOPT): scala.Unit = js.native
-  /** IOleCommandTarget::Exec */
   def ExecWB(cmdID: OLECMDID, cmdexecopt: OLECMDEXECOPT, pvaIn: js.Any): scala.Unit = js.native
-  /** IOleCommandTarget::Exec */
   def ExecWB(cmdID: OLECMDID, cmdexecopt: OLECMDEXECOPT, pvaIn: js.Any, pvaOut: js.Any): scala.Unit = js.native
   /** Retrieve the Associated value for the property vtValue in the context of the object. */
   def GetProperty(Property: java.lang.String): js.Any = js.native
@@ -91,18 +89,14 @@ class WebBrowser protected () extends js.Object {
   def GoSearch(): scala.Unit = js.native
   /** Navigates to a URL or file. */
   def Navigate(URL: java.lang.String): scala.Unit = js.native
-  /** Navigates to a URL or file. */
   def Navigate(URL: java.lang.String, Flags: BrowserNavConstants): scala.Unit = js.native
-  /** Navigates to a URL or file. */
   def Navigate(URL: java.lang.String, Flags: BrowserNavConstants, TargetFrameName: TargetFrameValues): scala.Unit = js.native
-  /** Navigates to a URL or file. */
   def Navigate(
     URL: java.lang.String,
     Flags: BrowserNavConstants,
     TargetFrameName: TargetFrameValues,
     PostData: js.Any
   ): scala.Unit = js.native
-  /** Navigates to a URL or file. */
   def Navigate(
     URL: java.lang.String,
     Flags: BrowserNavConstants,
@@ -110,16 +104,13 @@ class WebBrowser protected () extends js.Object {
     PostData: js.Any,
     Headers: java.lang.String
   ): scala.Unit = js.native
-  /** Navigates to a URL or file. */
   def Navigate(URL: java.lang.String, Flags: BrowserNavConstants, TargetFrameName: java.lang.String): scala.Unit = js.native
-  /** Navigates to a URL or file. */
   def Navigate(
     URL: java.lang.String,
     Flags: BrowserNavConstants,
     TargetFrameName: java.lang.String,
     PostData: js.Any
   ): scala.Unit = js.native
-  /** Navigates to a URL or file. */
   def Navigate(
     URL: java.lang.String,
     Flags: BrowserNavConstants,
@@ -129,13 +120,9 @@ class WebBrowser protected () extends js.Object {
   ): scala.Unit = js.native
   /** Navigates to a URL or file or pidl. */
   def Navigate2(URL: js.Any): scala.Unit = js.native
-  /** Navigates to a URL or file or pidl. */
   def Navigate2(URL: js.Any, Flags: BrowserNavConstants): scala.Unit = js.native
-  /** Navigates to a URL or file or pidl. */
   def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: TargetFrameValues): scala.Unit = js.native
-  /** Navigates to a URL or file or pidl. */
   def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: TargetFrameValues, PostData: js.Any): scala.Unit = js.native
-  /** Navigates to a URL or file or pidl. */
   def Navigate2(
     URL: js.Any,
     Flags: BrowserNavConstants,
@@ -143,11 +130,8 @@ class WebBrowser protected () extends js.Object {
     PostData: js.Any,
     Headers: java.lang.String
   ): scala.Unit = js.native
-  /** Navigates to a URL or file or pidl. */
   def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: java.lang.String): scala.Unit = js.native
-  /** Navigates to a URL or file or pidl. */
   def Navigate2(URL: js.Any, Flags: BrowserNavConstants, TargetFrameName: java.lang.String, PostData: js.Any): scala.Unit = js.native
-  /** Navigates to a URL or file or pidl. */
   def Navigate2(
     URL: js.Any,
     Flags: BrowserNavConstants,
@@ -165,15 +149,11 @@ class WebBrowser protected () extends js.Object {
   def Refresh(): scala.Unit = js.native
   /** Refresh the currently viewed page. */
   def Refresh2(): scala.Unit = js.native
-  /** Refresh the currently viewed page. */
   def Refresh2(Level: RefreshConstants): scala.Unit = js.native
-  /** Set BrowserBar to Clsid */
   def ShowBrowserBar(pvaClsid: BrowserBarConstants): scala.Unit = js.native
-  /** Set BrowserBar to Clsid */
   def ShowBrowserBar(pvaClsid: BrowserBarConstants, pvarShow: scala.Boolean): scala.Unit = js.native
   /** Set BrowserBar to Clsid */
   def ShowBrowserBar(pvaClsid: java.lang.String): scala.Unit = js.native
-  /** Set BrowserBar to Clsid */
   def ShowBrowserBar(pvaClsid: java.lang.String, pvarShow: scala.Boolean): scala.Unit = js.native
   /** Stops opening a file. */
   def Stop(): scala.Unit = js.native

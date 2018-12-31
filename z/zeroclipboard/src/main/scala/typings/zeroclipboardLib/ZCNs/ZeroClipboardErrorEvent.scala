@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ZeroClipboardErrorEvent extends ZeroClipboardEvent {
   var actualValue: js.UndefOr[java.lang.String] = js.undefined
   var configuredValue: js.UndefOr[java.lang.String] = js.undefined

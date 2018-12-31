@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IUiGridPinningConstants extends js.Object {
   var container: uiDashGridLib.Anon_RIGHT
 }

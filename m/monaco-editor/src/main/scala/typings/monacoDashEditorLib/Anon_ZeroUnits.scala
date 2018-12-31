@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ZeroUnits extends js.Object {
   val argumentsInColorFunction: js.UndefOr[
     monacoDashEditorLib.monacoDashEditorLibStrings.ignore | monacoDashEditorLib.monacoDashEditorLibStrings.warning | monacoDashEditorLib.monacoDashEditorLibStrings.error

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Selection extends js.Object {
   def getCurrentPage(): Page
   def getPageElementRange(): PageElementRange

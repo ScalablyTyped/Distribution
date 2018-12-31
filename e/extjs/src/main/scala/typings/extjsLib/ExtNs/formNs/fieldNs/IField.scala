@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IField
   extends extjsLib.ExtNs.IBase {
   /** [Method] A utility for grouping a set of modifications which may trigger value changes into a single transaction to prevent e

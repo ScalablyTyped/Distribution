@@ -24,22 +24,22 @@ abstract class BluetoothClassOfDevice () extends js.Object {
 @js.native
 object BluetoothClassOfDevice extends js.Object {
   /**
-                   * Creates a BluetoothClassOfDevice object by supplying values for BluetoothMajorClass , BluetoothMinorClass and BluetoothClassOfDevice.
-                   * @param majorClass One of the enumeration values that specifies the device's main function.
-                   * @param minorClass One of the enumeration values that specifies the minor class value to be used.
-                   * @param serviceCapabilities One of the enumeration values that specifies the service the device supports.
-                   * @return A BluetoothClassOfDevice object.
-                   */
+    * Creates a BluetoothClassOfDevice object by supplying values for BluetoothMajorClass , BluetoothMinorClass and BluetoothClassOfDevice.
+    * @param majorClass One of the enumeration values that specifies the device's main function.
+    * @param minorClass One of the enumeration values that specifies the minor class value to be used.
+    * @param serviceCapabilities One of the enumeration values that specifies the service the device supports.
+    * @return A BluetoothClassOfDevice object.
+    */
   def fromParts(
     majorClass: winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothMajorClass,
     minorClass: winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothMinorClass,
     serviceCapabilities: winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothServiceCapabilities
   ): winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothClassOfDevice = js.native
   /**
-                   * Creates a BluetoothClassOfDevice object from a raw integer value representing the Major Class, Minor Class and Service Capabilities of the device.
-                   * @param rawValue The raw integer value from which to create the BluetoothClassOfDevice object.
-                   * @return A BluetoothClassOfDevice object.
-                   */
+    * Creates a BluetoothClassOfDevice object from a raw integer value representing the Major Class, Minor Class and Service Capabilities of the device.
+    * @param rawValue The raw integer value from which to create the BluetoothClassOfDevice object.
+    * @return A BluetoothClassOfDevice object.
+    */
   def fromRawValue(rawValue: scala.Double): winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothClassOfDevice = js.native
 }
 

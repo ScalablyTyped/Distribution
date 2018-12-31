@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Auth0DelegationToken extends js.Object {
   /** The length of time in seconds the token is valid for. */
   var expiresIn: scala.Double

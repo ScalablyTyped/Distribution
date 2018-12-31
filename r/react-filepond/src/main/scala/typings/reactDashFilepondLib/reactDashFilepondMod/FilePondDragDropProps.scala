@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilePondDragDropProps extends js.Object {
   var dropOnElement: js.UndefOr[scala.Boolean] = js.undefined
   var dropOnPage: js.UndefOr[scala.Boolean] = js.undefined

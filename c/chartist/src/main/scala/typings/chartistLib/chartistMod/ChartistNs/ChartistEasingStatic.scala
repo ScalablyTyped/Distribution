@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartistEasingStatic extends js.Object {
   var easeInBack: IChartistEasingDefinition
   var easeInCirc: IChartistEasingDefinition

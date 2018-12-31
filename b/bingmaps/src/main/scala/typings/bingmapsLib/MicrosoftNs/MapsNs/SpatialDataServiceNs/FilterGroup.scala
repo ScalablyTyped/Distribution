@@ -9,25 +9,18 @@ import scala.scalajs.js.annotation._
 @js.native
 class FilterGroup protected () extends IFilter {
   /**
-          * @constructor
-          * @requires The Microsoft.Maps.SpatialDataService module.
-          * @param filters An array consisting of Filter or FilterGroup objects to combine.
-          * @param operator The logical operator for combining the filters together.
-          * @param not A boolean is the logical inverse should of the filter should be used.
-          */
+    * @constructor
+    * @requires The Microsoft.Maps.SpatialDataService module.
+    * @param filters An array consisting of Filter or FilterGroup objects to combine.
+    * @param operator The logical operator for combining the filters together.
+    * @param not A boolean is the logical inverse should of the filter should be used.
+    */
   def this(filters: js.Array[IFilter], operator: FilterLogicalOperator) = this()
-  /**
-          * @constructor
-          * @requires The Microsoft.Maps.SpatialDataService module.
-          * @param filters An array consisting of Filter or FilterGroup objects to combine.
-          * @param operator The logical operator for combining the filters together.
-          * @param not A boolean is the logical inverse should of the filter should be used.
-          */
   def this(filters: js.Array[IFilter], operator: FilterLogicalOperator, not: scala.Boolean) = this()
   /**
-          * Executes the filter logic against a JSON object and returns a boolean indicating if the object meets the requirements of the Filter.
-          * @returns A boolean indicating if the specified object meets the requirements of the Filter.
-          */
+    * Executes the filter logic against a JSON object and returns a boolean indicating if the object meets the requirements of the Filter.
+    * @returns A boolean indicating if the specified object meets the requirements of the Filter.
+    */
   /* CompleteClass */
   override def execute(`object`: js.Any): scala.Boolean = js.native
 }

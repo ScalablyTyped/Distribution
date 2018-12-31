@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait algPrivInfo extends js.Object {
   var curve25519: Algo
   var dsa: Algo

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Entry[StringType] extends js.Object {
   var compressedSize: scala.Double
   var compressionMethod: scala.Double
@@ -14,14 +13,14 @@ trait Entry[StringType] extends js.Object {
   var extraFieldLength: scala.Double
   var extraFields: js.Array[ExtraField]
   /**
-                           * Comment decoded with the charset indicated by generalPurposeBitFlag & 0x800 as with the fileName
-                           */
+    * Comment decoded with the charset indicated by generalPurposeBitFlag & 0x800 as with the fileName
+    */
   var fileComment: StringType
   var fileCommentLength: scala.Double
   /**
-                           * The bytes for the file name are decoded with UTF-8 if generalPurposeBitFlag & 0x800, otherwise with CP437.
-                           * Alternatively, this field may be populated from the Info-ZIP Unicode Path Extra Field (see extraFields).
-                           */
+    * The bytes for the file name are decoded with UTF-8 if generalPurposeBitFlag & 0x800, otherwise with CP437.
+    * Alternatively, this field may be populated from the Info-ZIP Unicode Path Extra Field (see extraFields).
+    */
   var fileName: StringType
   var fileNameLength: scala.Double
   var generalPurposeBitFlag: scala.Double
@@ -34,12 +33,12 @@ trait Entry[StringType] extends js.Object {
   var versionNeededToExtract: scala.Double
   def getLastModDate(): adoneLib.adoneNs.INs.datetimeNs.Datetime
   /**
-                           * Whether the entry is compressed
-                           */
+    * Whether the entry is compressed
+    */
   def isCompressed(): scala.Boolean
   /**
-                           * Whether this entry is encrypted with "Traditional Encryption"
-                           */
+    * Whether this entry is encrypted with "Traditional Encryption"
+    */
   def isEncrypted(): scala.Boolean
 }
 

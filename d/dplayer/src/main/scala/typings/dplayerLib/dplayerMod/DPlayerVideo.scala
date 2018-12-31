@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DPlayerVideo extends js.Object {
   var customType: js.UndefOr[js.Any] = js.undefined
   var defaultQuality: js.UndefOr[scala.Double] = js.undefined

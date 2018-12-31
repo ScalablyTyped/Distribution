@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IButtonConfig extends js.Object {
   /**
-               * @default: 'active'
-               */
+    * @default: 'active'
+    */
   var activeClass: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * @default: 'Click'
-               */
+    * @default: 'Click'
+    */
   var toggleEvent: js.UndefOr[java.lang.String] = js.undefined
 }
 

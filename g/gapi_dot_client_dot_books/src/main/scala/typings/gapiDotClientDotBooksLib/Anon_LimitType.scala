@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LimitType extends js.Object {
   /** Maximum allowed characters on this layer, especially for the "copy" layer. */
   var allowedCharacterCount: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IConnectionAttributes extends js.Object {
   var connectString: java.lang.String
   var externalAuth: js.UndefOr[scala.Boolean] = js.undefined

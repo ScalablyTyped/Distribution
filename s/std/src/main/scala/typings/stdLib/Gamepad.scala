@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Gamepad extends js.Object {
   val axes: js.Array[scala.Double]
   val buttons: js.Array[GamepadButton]

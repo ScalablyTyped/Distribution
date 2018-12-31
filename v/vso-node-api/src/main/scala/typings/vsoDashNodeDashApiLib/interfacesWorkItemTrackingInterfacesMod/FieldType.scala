@@ -12,99 +12,99 @@ sealed trait FieldType extends js.Object
 @js.native
 object FieldType extends js.Object {
   /**
-       * Boolean field type.
-       */
+    * Boolean field type.
+    */
   @js.native
   sealed trait Boolean
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.FieldType
   
   /**
-       * Datetime field type.
-       */
+    * Datetime field type.
+    */
   @js.native
   sealed trait DateTime
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.FieldType
   
   /**
-       * Double field type.
-       */
+    * Double field type.
+    */
   @js.native
   sealed trait Double
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.FieldType
   
   /**
-       * Guid field type.
-       */
+    * Guid field type.
+    */
   @js.native
   sealed trait Guid
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.FieldType
   
   /**
-       * History field type.
-       */
+    * History field type.
+    */
   @js.native
   sealed trait History
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.FieldType
   
   /**
-       * HTML (Multiline) field type.
-       */
+    * HTML (Multiline) field type.
+    */
   @js.native
   sealed trait Html
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.FieldType
   
   /**
-       * Identity field type.
-       */
+    * Identity field type.
+    */
   @js.native
   sealed trait Identity
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.FieldType
   
   /**
-       * Integer field type.
-       */
+    * Integer field type.
+    */
   @js.native
   sealed trait Integer
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.FieldType
   
   /**
-       * Double picklist field type.
-       */
+    * Double picklist field type.
+    */
   @js.native
   sealed trait PicklistDouble
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.FieldType
   
   /**
-       * Integer picklist field type.
-       */
+    * Integer picklist field type.
+    */
   @js.native
   sealed trait PicklistInteger
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.FieldType
   
   /**
-       * String picklist field type.
-       */
+    * String picklist field type.
+    */
   @js.native
   sealed trait PicklistString
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.FieldType
   
   /**
-       * Plain text field type.
-       */
+    * Plain text field type.
+    */
   @js.native
   sealed trait PlainText
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.FieldType
   
   /**
-       * String field type.
-       */
+    * String field type.
+    */
   @js.native
   sealed trait String
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.FieldType
   
   /**
-       * Treepath field type.
-       */
+    * Treepath field type.
+    */
   @js.native
   sealed trait TreePath
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.FieldType

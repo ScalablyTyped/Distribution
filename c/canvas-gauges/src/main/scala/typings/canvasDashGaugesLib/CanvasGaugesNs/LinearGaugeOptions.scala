@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinearGaugeOptions extends GenericOptions {
   var barBeginCircle: js.UndefOr[scala.Double] = js.undefined
   var barLength: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DebugInfo extends js.Object {
   /** Info about the server that serviced this request. */
   var serverInfo: js.UndefOr[java.lang.String] = js.undefined

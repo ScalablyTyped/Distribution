@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CanvasImageDataOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 画布标识，传入 <canvas /> 的 canvas-id  */

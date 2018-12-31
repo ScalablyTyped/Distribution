@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListItemProps
   extends materialDashUiLib.underscoreUnderscoreMaterialUINs.EnhancedButtonProps {
   // <EnhancedButton/> is the element that get the 'other' properties

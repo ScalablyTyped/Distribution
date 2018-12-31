@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IndexedColumn extends js.Object {
   var autoIncrement: scala.Boolean
   var name: java.lang.String

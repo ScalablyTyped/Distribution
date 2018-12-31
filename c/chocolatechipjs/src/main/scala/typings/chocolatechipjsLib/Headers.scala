@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Headers Interface. This defines the methods exposed by the Headers object.
- */
+  * Headers Interface. This defines the methods exposed by the Headers object.
+  */
 @js.native
 trait Headers extends js.Object {
   def apply(): scala.Unit = js.native

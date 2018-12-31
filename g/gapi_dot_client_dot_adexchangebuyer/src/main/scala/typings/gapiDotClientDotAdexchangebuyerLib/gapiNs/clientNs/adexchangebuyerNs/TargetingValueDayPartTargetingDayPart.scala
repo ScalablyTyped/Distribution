@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TargetingValueDayPartTargetingDayPart extends js.Object {
   var dayOfWeek: js.UndefOr[java.lang.String] = js.undefined
   var endHour: js.UndefOr[scala.Double] = js.undefined

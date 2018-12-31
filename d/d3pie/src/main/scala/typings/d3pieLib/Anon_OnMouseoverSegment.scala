@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnMouseoverSegment extends js.Object {
   var onClickSegment: js.UndefOr[js.Function] = js.undefined
   var onMouseoutSegment: js.UndefOr[js.Function] = js.undefined

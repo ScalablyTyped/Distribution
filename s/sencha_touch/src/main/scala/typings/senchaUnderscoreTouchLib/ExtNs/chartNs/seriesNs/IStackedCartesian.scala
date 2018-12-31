@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStackedCartesian extends ICartesian {
   /** [Method] Returns the value of stacked
   		* @returns Boolean

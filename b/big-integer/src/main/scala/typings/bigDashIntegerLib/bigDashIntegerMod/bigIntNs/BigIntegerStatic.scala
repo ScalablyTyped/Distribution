@@ -2008,56 +2008,38 @@ trait BigIntegerStatic extends js.Object {
   var `998`: BigInteger = js.native
   var `999`: BigInteger = js.native
   /**
-           * Equivalent to bigInt(-1).
-           */
+    * Equivalent to bigInt(-1).
+    */
   var minusOne: BigInteger = js.native
   /**
-           * Equivalent to bigInt(1).
-           */
+    * Equivalent to bigInt(1).
+    */
   var one: BigInteger = js.native
   /**
-           * Equivalent to bigInt(0).
-           */
+    * Equivalent to bigInt(0).
+    */
   var zero: BigInteger = js.native
   /**
-           * Equivalent to bigInt(0).
-           */
+    * Equivalent to bigInt(0).
+    */
   def apply(): BigInteger = js.native
   /**
-           * no-op.
-           */
+    * no-op.
+    */
   def apply(bigInt: BigInteger): BigInteger = js.native
   /**
-           * Parse a Javascript number into a bigInt.
-           */
+    * Parse a Javascript number into a bigInt.
+    */
   def apply(number: scala.Double): BigInteger = js.native
   /**
-           * Parse a string into a bigInt.
-           * Default base is 10.
-           * Default alphabet is "0123456789abcdefghijklmnopqrstuvwxyz".
-           * caseSensitive defaults to false.
-           */
+    * Parse a string into a bigInt.
+    * Default base is 10.
+    * Default alphabet is "0123456789abcdefghijklmnopqrstuvwxyz".
+    * caseSensitive defaults to false.
+    */
   def apply(string: java.lang.String): BigInteger = js.native
-  /**
-           * Parse a string into a bigInt.
-           * Default base is 10.
-           * Default alphabet is "0123456789abcdefghijklmnopqrstuvwxyz".
-           * caseSensitive defaults to false.
-           */
   def apply(string: java.lang.String, base: BigNumber): BigInteger = js.native
-  /**
-           * Parse a string into a bigInt.
-           * Default base is 10.
-           * Default alphabet is "0123456789abcdefghijklmnopqrstuvwxyz".
-           * caseSensitive defaults to false.
-           */
   def apply(string: java.lang.String, base: BigNumber, alphabet: java.lang.String): BigInteger = js.native
-  /**
-           * Parse a string into a bigInt.
-           * Default base is 10.
-           * Default alphabet is "0123456789abcdefghijklmnopqrstuvwxyz".
-           * caseSensitive defaults to false.
-           */
   def apply(
     string: java.lang.String,
     base: BigNumber,
@@ -2065,43 +2047,35 @@ trait BigIntegerStatic extends js.Object {
     caseSensitive: scala.Boolean
   ): BigInteger = js.native
   /**
-           * Constructs a bigInt from an array of digits in specified base.
-           * The optional isNegative flag will make the number negative.
-           */
+    * Constructs a bigInt from an array of digits in specified base.
+    * The optional isNegative flag will make the number negative.
+    */
   def fromArray(digits: js.Array[BigNumber]): BigInteger = js.native
-  /**
-           * Constructs a bigInt from an array of digits in specified base.
-           * The optional isNegative flag will make the number negative.
-           */
   def fromArray(digits: js.Array[BigNumber], base: BigNumber): BigInteger = js.native
-  /**
-           * Constructs a bigInt from an array of digits in specified base.
-           * The optional isNegative flag will make the number negative.
-           */
   def fromArray(digits: js.Array[BigNumber], base: BigNumber, isNegative: scala.Boolean): BigInteger = js.native
   /**
-           * Finds the greatest common denominator of a and b.
-           */
+    * Finds the greatest common denominator of a and b.
+    */
   def gcd(a: BigNumber, b: BigNumber): BigInteger = js.native
   /**
-           * Returns true if x is a BigInteger, false otherwise.
-           */
-  def isInstance(x: js.Any): /* is BigInteger */scala.Boolean = js.native
+    * Returns true if x is a BigInteger, false otherwise.
+    */
+  def isInstance(x: js.Any): /* is big-integer.big-integer.bigInt.BigInteger */ scala.Boolean = js.native
   /**
-           * Finds the least common multiple of a and b.
-           */
+    * Finds the least common multiple of a and b.
+    */
   def lcm(a: BigNumber, b: BigNumber): BigInteger = js.native
   /**
-           * Returns the largest of a and b.
-           */
+    * Returns the largest of a and b.
+    */
   def max(a: BigNumber, b: BigNumber): BigInteger = js.native
   /**
-           * Returns the smallest of a and b.
-           */
+    * Returns the smallest of a and b.
+    */
   def min(a: BigNumber, b: BigNumber): BigInteger = js.native
   /**
-           * Returns a random number between min and max.
-           */
+    * Returns a random number between min and max.
+    */
   def randBetween(min: BigNumber, max: BigNumber): BigInteger = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Searchable extends js.Object {
   var autoCapitalize: js.UndefOr[
     reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiLibStrings.none | reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiLibStrings.sentences | reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiLibStrings.words | reactDashNativeDashMaterialDashUiLib.reactDashNativeDashMaterialDashUiLibStrings.characters

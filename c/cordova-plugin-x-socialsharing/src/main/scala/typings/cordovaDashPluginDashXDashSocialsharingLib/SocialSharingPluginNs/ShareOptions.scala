@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShareOptions extends js.Object {
   var chooserTitle: js.UndefOr[java.lang.String] = js.undefined
   var files: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined

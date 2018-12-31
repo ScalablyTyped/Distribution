@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	* Command proxy object.
 	*/
-
 trait ICommand extends js.Object {
   /**
   		* Determines whether the command can execute or not.

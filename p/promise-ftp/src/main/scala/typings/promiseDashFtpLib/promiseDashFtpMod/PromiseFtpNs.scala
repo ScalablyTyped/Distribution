@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("promise-ftp", "PromiseFtp")
 @js.native
 object PromiseFtpNs extends js.Object {
-  
   trait ERROR_CODES extends js.Object {
     var `421`: promiseDashFtpLib.promiseDashFtpLibStrings.`Service not available, closing control connection`
     var `425`: promiseDashFtpLib.promiseDashFtpLibStrings.`Can't open data connection`

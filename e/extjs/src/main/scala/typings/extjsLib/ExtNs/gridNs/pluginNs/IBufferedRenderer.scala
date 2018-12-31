@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBufferedRenderer
   extends extjsLib.ExtNs.IAbstractPlugin {
   /** [Method] Initialize this as a plugin

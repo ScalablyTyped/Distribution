@@ -12,7 +12,6 @@ trait LngLatBounds extends js.Object {
   var sw: LngLatLike = js.native
   /** Extend the bounds to include a given LngLat or LngLatBounds. */
   def extend(obj: LngLat): this.type = js.native
-  /** Extend the bounds to include a given LngLat or LngLatBounds. */
   def extend(obj: LngLatBounds): this.type = js.native
   /** Get the point equidistant from this box's corners */
   def getCenter(): LngLat = js.native

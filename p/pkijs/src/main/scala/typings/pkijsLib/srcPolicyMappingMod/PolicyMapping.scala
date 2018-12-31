@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PolicyMapping extends js.Object {
   var issuerDomainPolicy: java.lang.String
   var subjectDomainPolicy: java.lang.String

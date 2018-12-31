@@ -17,15 +17,11 @@ object Collection extends js.Object {
   var EmptyError: createDashErrorLib.createDashErrorMod.createErrorNs.Error[nodeLib.Error] = js.native
   /** @deprecated use Typescript classes */
   def extend[T](): js.Function = js.native
-  /** @deprecated use Typescript classes */
   def extend[T](prototypeProperties: js.Any): js.Function = js.native
-  /** @deprecated use Typescript classes */
   def extend[T](prototypeProperties: js.Any, classProperties: js.Any): js.Function = js.native
   /** @deprecated should use `new` objects instead. */
   def forge[T](): T = js.native
-  /** @deprecated should use `new` objects instead. */
   def forge[T](attributes: js.Any): T = js.native
-  /** @deprecated should use `new` objects instead. */
   def forge[T](attributes: js.Any, options: bookshelfLib.bookshelfMod.BookshelfNs.ModelOptions): T = js.native
 }
 

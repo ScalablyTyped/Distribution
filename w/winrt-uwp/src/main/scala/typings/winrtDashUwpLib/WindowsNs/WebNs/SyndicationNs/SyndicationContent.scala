@@ -8,17 +8,18 @@ import scala.scalajs.js.annotation._
 /** Represents feed content including Text, HTML, XHTML, URL, and XML. This object encapsulates the atom:content element in Atom 1.0 and can contain a link to external content. */
 @JSGlobal("Windows.Web.Syndication.SyndicationContent")
 @js.native
+/** Creates a new SyndicationContent object. */
 class SyndicationContent () extends js.Object {
   /**
-                   * Creates a new SyndicationContent object with the specified Uri property value.
-                   * @param sourceUri The Uri value.
-                   */
+    * Creates a new SyndicationContent object with the specified Uri property value.
+    * @param sourceUri The Uri value.
+    */
   def this(sourceUri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri) = this()
   /**
-                   * Creates a new SyndicationContent object with the specified Text and Type property values.
-                   * @param text The text of the content.
-                   * @param type The type of the content.
-                   */
+    * Creates a new SyndicationContent object with the specified Text and Type property values.
+    * @param text The text of the content.
+    * @param type The type of the content.
+    */
   def this(text: java.lang.String, `type`: SyndicationTextType) = this()
   /** Gets the list of custom attributes of the element. */
   var attributeExtensions: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[SyndicationAttribute] = js.native
@@ -43,10 +44,10 @@ class SyndicationContent () extends js.Object {
   /** Gets or sets the XML content. */
   var xml: winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument = js.native
   /**
-                   * Generates the DOM object that represents this element, all the attributes and child elements including foreign markups. The only formats accepted by this method are Atom 1.0 and RSS 2.0.
-                   * @param format The format of the data.
-                   * @return The DOM object that represents this element, and all the attributes and child elements, including foreign markups.
-                   */
+    * Generates the DOM object that represents this element, all the attributes and child elements including foreign markups. The only formats accepted by this method are Atom 1.0 and RSS 2.0.
+    * @param format The format of the data.
+    * @return The DOM object that represents this element, and all the attributes and child elements, including foreign markups.
+    */
   def getXmlDocument(format: SyndicationFormat): winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument = js.native
 }
 

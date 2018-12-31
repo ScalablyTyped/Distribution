@@ -12,9 +12,9 @@ abstract class ContactChangeTracker () extends js.Object {
   /** Call this method to enable change tracking. */
   def enable(): scala.Unit = js.native
   /**
-                   * Gets a ContactChangeReader that can be used to process changes.
-                   * @return A ContactChangeReader that can be used to process changes.
-                   */
+    * Gets a ContactChangeReader that can be used to process changes.
+    * @return A ContactChangeReader that can be used to process changes.
+    */
   def getChangeReader(): ContactChangeReader = js.native
   /** Call this method to reset the change tracker if your app receives ContactChangeType.ChangeTrackingLost . */
   def reset(): scala.Unit = js.native

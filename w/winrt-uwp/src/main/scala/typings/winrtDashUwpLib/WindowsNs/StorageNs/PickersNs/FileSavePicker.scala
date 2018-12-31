@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a file picker that lets the user choose the file name, extension, and storage location for a file. */
 @JSGlobal("Windows.Storage.Pickers.FileSavePicker")
 @js.native
+/** Creates a new instance of a FileSavePicker . */
 class FileSavePicker () extends js.Object {
   /** Gets or sets the label text of the commit button in the file picker UI. */
   var commitButtonText: java.lang.String = js.native
@@ -33,9 +34,9 @@ class FileSavePicker () extends js.Object {
   /** Shows the file picker so that the user can save a file, deactivating and the app and reactivating it when the operation is complete. (Windows Phone Store apps) */
   def pickSaveFileAndContinue(): scala.Unit = js.native
   /**
-                   * Shows the file picker so that the user can save a file and set the file name, extension, and location of the file to be saved. (Windows Store apps)
-                   * @return When the call to this method completes successfully, it returns a storageFile object that was created to represent the saved file. The file name, extension, and location of this storageFile match those specified by the user, but the file has no content.
-                   */
+    * Shows the file picker so that the user can save a file and set the file name, extension, and location of the file to be saved. (Windows Store apps)
+    * @return When the call to this method completes successfully, it returns a storageFile object that was created to represent the saved file. The file name, extension, and location of this storageFile match those specified by the user, but the file has no content.
+    */
   def pickSaveFileAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.StorageNs.StorageFile] = js.native
 }
 

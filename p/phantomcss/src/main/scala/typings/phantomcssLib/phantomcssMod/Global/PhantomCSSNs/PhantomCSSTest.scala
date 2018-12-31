@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PhantomCSSTest extends js.Object {
   var error: js.UndefOr[scala.Boolean] = js.undefined
   var fail: js.UndefOr[scala.Boolean] = js.undefined

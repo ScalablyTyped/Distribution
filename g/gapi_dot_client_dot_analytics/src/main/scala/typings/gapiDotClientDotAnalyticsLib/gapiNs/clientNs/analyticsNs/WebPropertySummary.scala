@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebPropertySummary extends js.Object {
   /** Web property ID of the form UA-XXXXX-YY. */
   var id: js.UndefOr[java.lang.String] = js.undefined

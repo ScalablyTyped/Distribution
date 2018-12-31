@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EntityByKeyResult extends js.Object {
   var entity: Entity
   var entityKey: EntityKey

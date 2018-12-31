@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Comment extends BaseNodeWithoutComments {
   @JSName("type")
   var type_Comment: estreeLib.estreeLibStrings.Line | estreeLib.estreeLibStrings.Block

@@ -18,30 +18,24 @@ object wheelMod extends js.Object {
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   /**
-       * Adds a callback to receive mouse wheel events from the given element.
-       */
+    * Adds a callback to receive mouse wheel events from the given element.
+    */
   def addWheelListener(
     element: stdLib.GlobalEventHandlers,
     callback: js.Function1[/* event */ stdLib.WheelEvent, scala.Unit]
   ): scala.Unit = js.native
-  /**
-       * Adds a callback to receive mouse wheel events from the given element.
-       */
   def addWheelListener(
     element: stdLib.GlobalEventHandlers,
     callback: js.Function1[/* event */ stdLib.WheelEvent, scala.Unit],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   /**
-       *  Removes a previously added wheel listener callback.
-       */
+    *  Removes a previously added wheel listener callback.
+    */
   def removeWheelListener(
     element: stdLib.GlobalEventHandlers,
     callback: js.Function1[/* event */ stdLib.WheelEvent, scala.Unit]
   ): scala.Unit = js.native
-  /**
-       *  Removes a previously added wheel listener callback.
-       */
   def removeWheelListener(
     element: stdLib.GlobalEventHandlers,
     callback: js.Function1[/* event */ stdLib.WheelEvent, scala.Unit],

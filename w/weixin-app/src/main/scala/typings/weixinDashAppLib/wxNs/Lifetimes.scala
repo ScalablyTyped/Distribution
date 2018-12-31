@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 	 * 组件生命周期声明对象，组件的生命周期：created、attached、ready、moved、detached将收归到lifetimes字段内进行声明，
 	 * 原有声明方式仍旧有效，如同时存在两种声明方式，则lifetimes字段内声明方式优先级最高
 	 */
-
 trait Lifetimes extends js.Object {
   /**
   		 * 组件生命周期函数，在组件实例进入页面节点树时执行

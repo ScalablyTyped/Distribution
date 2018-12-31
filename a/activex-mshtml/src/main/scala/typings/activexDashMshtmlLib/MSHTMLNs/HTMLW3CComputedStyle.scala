@@ -379,7 +379,6 @@ trait HTMLW3CComputedStyle extends js.Object {
   def removeProperty(bstrPropertyName: java.lang.String): java.lang.String = js.native
   /** @param pvarPropertyPriority [pvarPropertyPriority=''] */
   def setProperty(bstrPropertyName: java.lang.String, pvarPropertyValue: js.Any): scala.Unit = js.native
-  /** @param pvarPropertyPriority [pvarPropertyPriority=''] */
   def setProperty(bstrPropertyName: java.lang.String, pvarPropertyValue: js.Any, pvarPropertyPriority: js.Any): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAbideOptions extends js.Object {
   var formErrorClass: js.UndefOr[java.lang.String] = js.undefined
   var formErrorSelector: js.UndefOr[java.lang.String] = js.undefined

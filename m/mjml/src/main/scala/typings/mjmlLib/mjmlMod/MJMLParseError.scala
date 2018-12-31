@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MJMLParseError extends js.Object {
   var formattedMessage: java.lang.String
   var line: scala.Double

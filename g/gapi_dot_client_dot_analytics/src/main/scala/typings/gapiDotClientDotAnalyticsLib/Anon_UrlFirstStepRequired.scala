@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_UrlFirstStepRequired extends js.Object {
   /** Determines if the goal URL must exactly match the capitalization of visited URLs. */
   var caseSensitive: js.UndefOr[scala.Boolean] = js.undefined

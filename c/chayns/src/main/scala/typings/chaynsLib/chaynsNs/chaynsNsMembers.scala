@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object chaynsNsMembers extends js.Object {
   /**
-       * Getting Started
-       * chayns
-       *
-       */
+    * Getting Started
+    * chayns
+    *
+    */
   var ready: js.Promise[js.Any] = js.native
   /**
-       * chayns.smartShop
-       */
+    * chayns.smartShop
+    */
   var smartShop: js.Any = js.native
   def addErrorListener(logFn: js.Function1[/* error */ js.Any, js.Promise[js.Object]], appName: java.lang.String): scala.Unit = js.native
   def addScrollListener(callback: js.Function1[/* data */ js.Any, _]): js.Promise[_] = js.native
@@ -48,35 +48,26 @@ object chaynsNsMembers extends js.Object {
   def hideTitleImage(): js.Promise[_] = js.native
   def hideWaitCursor(): js.Promise[_] = js.native
   /**
-       * Basic Functions
-       * chayns
-       */
+    * Basic Functions
+    * chayns
+    */
   def login(): js.Promise[_] = js.native
-  /**
-       * Basic Functions
-       * chayns
-       */
   def login(parameters: js.Array[java.lang.String]): js.Promise[_] = js.native
   def navigateBack(): js.Promise[_] = js.native
   /**
-       * Media Functions
-       * Image
-       * chayns
-       */
+    * Media Functions
+    * Image
+    * chayns
+    */
   def openImage(urls: js.Array[java.lang.String]): js.Promise[_] = js.native
-  /**
-       * Media Functions
-       * Image
-       * chayns
-       */
   def openImage(urls: js.Array[java.lang.String], start: scala.Double): js.Promise[_] = js.native
   def openUrl(config: chaynsLib.OpenUrlConfig): scala.Unit = js.native
   def openUrlInBrowser(url: java.lang.String): scala.Unit = js.native
   /**
-       * Media Functions
-       * Miscellaneous
-       * chayns
-       */
+    * Media Functions
+    * Miscellaneous
+    * chayns
+    */
   def openVideo(url: java.lang.String): js.Promise[_] = js.native
   def playSound(url: java.lang.String): js.Promise[_] = js.native
   def playSound(url: java.lang.String, playOnMute: scala.Boolean): js.Promise[_] = js.native
@@ -101,29 +92,19 @@ object chaynsNsMembers extends js.Object {
   def share(config: chaynsLib.ShareConfig): js.Promise[_] = js.native
   def showFinetradingQRCode(): js.Promise[_] = js.native
   /**
-       * UI Functions
-       * Floating Button
-       * chayns
-       */
+    * UI Functions
+    * Floating Button
+    * chayns
+    */
   def showFloatingButton(config: chaynsLib.FloatingConfig, callback: js.Function0[_]): scala.Unit = js.native
   def showTitleImage(): js.Promise[_] = js.native
   /**
-       * UI Functions
-       * Waitcursor
-       * chayns
-       */
+    * UI Functions
+    * Waitcursor
+    * chayns
+    */
   def showWaitCursor(): js.Promise[_] = js.native
-  /**
-       * UI Functions
-       * Waitcursor
-       * chayns
-       */
   def showWaitCursor(text: java.lang.String): js.Promise[_] = js.native
-  /**
-       * UI Functions
-       * Waitcursor
-       * chayns
-       */
   def showWaitCursor(text: java.lang.String, timeout: scala.Double): js.Promise[_] = js.native
   def startInteractionIdentification(config: chaynsLib.InteractionIdentificationConfig): js.Promise[_] = js.native
   def startNfcDetection(

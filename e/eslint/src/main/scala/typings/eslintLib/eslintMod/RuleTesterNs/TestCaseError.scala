@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestCaseError extends js.Object {
   var column: js.UndefOr[scala.Double] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Auth0DecodedHash extends js.Object {
   var accessToken: js.UndefOr[java.lang.String] = js.undefined
   var appState: js.UndefOr[js.Any] = js.undefined

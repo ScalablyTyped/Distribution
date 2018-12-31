@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDDTarget extends IDragDrop {
   /** [Method] toString method
   		* @returns String string representation of the dd obj

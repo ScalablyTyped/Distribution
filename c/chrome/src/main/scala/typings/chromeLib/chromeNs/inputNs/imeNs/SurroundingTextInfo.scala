@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SurroundingTextInfo extends js.Object {
   /** The beginning position of the selection. This value indicates caret position if is no selection. */
   var anchor: scala.Double

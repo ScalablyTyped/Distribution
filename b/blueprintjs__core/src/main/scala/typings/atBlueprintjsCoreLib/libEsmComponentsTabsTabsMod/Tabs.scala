@@ -27,18 +27,16 @@ class Tabs ()
   /* private */ def getKeyCodeDirection(e: js.Any): js.Any = js.native
   /** Filters children to only `<Tab>`s */
   /* private */ def getTabChildren(): js.Any = js.native
-  /** Filters children to only `<Tab>`s */
   /* private */ def getTabChildren(props: js.Any): js.Any = js.native
   /* private */ def getTabChildrenProps(): js.Any = js.native
   /* private */ def getTabChildrenProps(props: js.Any): js.Any = js.native
   /** Queries root HTML element for all tabs with optional filter selector */
   /* private */ def getTabElements(): js.Any = js.native
-  /** Queries root HTML element for all tabs with optional filter selector */
   /* private */ def getTabElements(subselector: js.Any): js.Any = js.native
   /**
-       * Calculate the new height, width, and position of the tab indicator.
-       * Store the CSS values so the transition animation can start.
-       */
+    * Calculate the new height, width, and position of the tab indicator.
+    * Store the CSS values so the transition animation can start.
+    */
   /* private */ def moveSelectionIndicator(): js.Any = js.native
 }
 

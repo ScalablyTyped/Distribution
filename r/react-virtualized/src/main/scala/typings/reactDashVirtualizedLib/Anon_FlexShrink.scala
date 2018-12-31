@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FlexShrink extends js.Object {
   var `aria-label`: reactLib.reactMod.ReactNs.Requireable[java.lang.String]
   var cellDataGetter: reactLib.reactMod.ReactNs.Requireable[reactDashVirtualizedLib.distEsTableMod.TableCellDataGetter]

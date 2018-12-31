@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListResponse extends js.Object {
   /** The app state data. */
   var items: js.UndefOr[js.Array[GetResponse]] = js.undefined

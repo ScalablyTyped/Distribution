@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictDimmerProps extends js.Object {
   /** An active dimmer will dim its parent container. */
   var active: js.UndefOr[scala.Boolean] = js.undefined

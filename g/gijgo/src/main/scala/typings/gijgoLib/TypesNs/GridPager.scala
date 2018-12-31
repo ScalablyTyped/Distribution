@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 //Grid
-
 trait GridPager extends js.Object {
   var leftControls: js.UndefOr[js.Array[_]] = js.undefined
   var limit: js.UndefOr[scala.Double] = js.undefined

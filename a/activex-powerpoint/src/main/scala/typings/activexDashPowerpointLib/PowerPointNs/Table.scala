@@ -25,19 +25,11 @@ class Table protected () extends js.Object {
   var Title: java.lang.String = js.native
   var VertBanding: scala.Boolean = js.native
   /**
-           * @param string [StyleID='']
-           * @param boolean [SaveFormatting=false]
-           */
+    * @param string [StyleID='']
+    * @param boolean [SaveFormatting=false]
+    */
   def ApplyStyle(): scala.Unit = js.native
-  /**
-           * @param string [StyleID='']
-           * @param boolean [SaveFormatting=false]
-           */
   def ApplyStyle(StyleID: java.lang.String): scala.Unit = js.native
-  /**
-           * @param string [StyleID='']
-           * @param boolean [SaveFormatting=false]
-           */
   def ApplyStyle(StyleID: java.lang.String, SaveFormatting: scala.Boolean): scala.Unit = js.native
   def Cell(Row: scala.Double, Column: scala.Double): Cell = js.native
   def MergeBorders(): scala.Unit = js.native

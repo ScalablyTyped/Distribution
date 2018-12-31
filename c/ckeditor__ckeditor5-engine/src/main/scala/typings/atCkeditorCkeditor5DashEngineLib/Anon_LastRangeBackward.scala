@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LastRangeBackward extends js.Object {
   var context: js.UndefOr[
     atCkeditorCkeditor5DashEngineLib.ckeditor5DashEngineMod.modelNs.SchemaContextDefinition

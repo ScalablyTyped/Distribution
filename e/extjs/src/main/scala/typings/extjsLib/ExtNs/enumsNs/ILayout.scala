@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILayout extends js.Object {
   /** [Property] (String) */
   var absolute: js.UndefOr[java.lang.String] = js.undefined

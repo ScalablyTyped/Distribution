@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerRouter extends js.Object {
   var routes: js.Array[ServerRoute[nextDashServerLib.routerMod.DefaultQuery]]
   def add(route: ServerRoute[nextDashServerLib.routerMod.DefaultQuery]): scala.Unit

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChampionListDto extends js.Object {
   var data: org.scalablytyped.runtime.StringDictionary[ChampionDto]
   var format: java.lang.String

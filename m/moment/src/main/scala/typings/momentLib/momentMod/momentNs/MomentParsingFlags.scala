@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MomentParsingFlags extends js.Object {
   var charsLeftOver: scala.Double
   var empty: scala.Boolean

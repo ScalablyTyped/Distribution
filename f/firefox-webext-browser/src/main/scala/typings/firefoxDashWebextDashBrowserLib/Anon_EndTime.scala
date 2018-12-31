@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EndTime extends js.Object {
   /** Items added to history before this date. */
   var endTime: firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.Date

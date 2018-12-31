@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnStr extends js.Object {
   var DATABASE: java.lang.String
   var HOSTNAME: java.lang.String

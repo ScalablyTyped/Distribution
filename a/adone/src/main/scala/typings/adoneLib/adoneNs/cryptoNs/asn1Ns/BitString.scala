@@ -11,9 +11,9 @@ class BitString ()
   extends BaseBlock[adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalBitStringValueBlock] {
   def this(params: adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalBitStringValueBlockParams) = this()
   /**
-               * Checking that two BITSTRINGs are equal
-               * @param bitString
-               */
+    * Checking that two BITSTRINGs are equal
+    * @param bitString
+    */
   def isEqual(bitString: BitString): scala.Boolean = js.native
 }
 

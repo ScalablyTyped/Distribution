@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IfMetagenerationMatchProjectionGenerationPrettyPrint extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -16,14 +15,14 @@ trait Anon_IfMetagenerationMatchProjectionGenerationPrettyPrint extends js.Objec
   /** If present, selects a specific revision of this object (as opposed to the latest version, the default). */
   var generation: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Makes the operation conditional on whether the object's current generation matches the given value. Setting to 0 makes the operation succeed only if
-                   * there are no live versions of the object.
-                   */
+    * Makes the operation conditional on whether the object's current generation matches the given value. Setting to 0 makes the operation succeed only if
+    * there are no live versions of the object.
+    */
   var ifGenerationMatch: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Makes the operation conditional on whether the object's current generation does not match the given value. If no live object exists, the precondition
-                   * fails. Setting to 0 makes the operation succeed only if there is a live version of the object.
-                   */
+    * Makes the operation conditional on whether the object's current generation does not match the given value. If no live object exists, the precondition
+    * fails. Setting to 0 makes the operation succeed only if there is a live version of the object.
+    */
   var ifGenerationNotMatch: js.UndefOr[java.lang.String] = js.undefined
   /** Makes the operation conditional on whether the object's current metageneration matches the given value. */
   var ifMetagenerationMatch: js.UndefOr[java.lang.String] = js.undefined
@@ -42,9 +41,9 @@ trait Anon_IfMetagenerationMatchProjectionGenerationPrettyPrint extends js.Objec
   /** Set of properties to return. Defaults to full. */
   var projection: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[java.lang.String] = js.undefined

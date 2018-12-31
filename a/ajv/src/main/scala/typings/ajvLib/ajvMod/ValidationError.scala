@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ValidationError
   extends stdLib.Error {
   var ajv: ajvLib.ajvLibNumbers.`true`

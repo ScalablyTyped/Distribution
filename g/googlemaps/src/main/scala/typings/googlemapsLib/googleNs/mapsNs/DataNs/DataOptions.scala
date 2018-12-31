@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataOptions extends js.Object {
   var controlPosition: js.UndefOr[googlemapsLib.googleNs.mapsNs.ControlPosition] = js.undefined
   var controls: js.UndefOr[js.Array[googlemapsLib.googleNs.mapsNs.DrawingMode] | scala.Null] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ShowPositions extends js.Object {
   var followSurface: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
   var granularity: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * The pairs of point used to calibrate the display.
-         */
-
+  * The pairs of point used to calibrate the display.
+  */
 trait TouchCalibrationPairs extends js.Object {
   /** First pair of touch and display point required for touch calibration. */
   var pair1: TouchCalibrationPair

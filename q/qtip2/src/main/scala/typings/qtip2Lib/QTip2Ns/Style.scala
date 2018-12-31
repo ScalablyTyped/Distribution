@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * Style property
 	 */
-
 trait Style extends js.Object {
   var classes: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
   var `def`: js.UndefOr[scala.Boolean] = js.undefined

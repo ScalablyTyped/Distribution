@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ContractsNs extends js.Object {
   /**
-   * Instances of AvailabilityData represent the result of executing an availability test.
-   */
+    * Instances of AvailabilityData represent the result of executing an availability test.
+    */
   @js.native
   class AvailabilityData ()
     extends applicationinsightsLib.outDeclarationsContractsMod.AvailabilityData
@@ -24,15 +24,15 @@ object ContractsNs extends js.Object {
     extends applicationinsightsLib.outDeclarationsContractsMod.ContextTagKeys
   
   /**
-   * Data struct to contain both B and C sections.
-   */
+    * Data struct to contain both B and C sections.
+    */
   @js.native
   class Data[TDomain] ()
     extends applicationinsightsLib.outDeclarationsContractsMod.Data[TDomain]
   
   /**
-   * Metric data single measurement.
-   */
+    * Metric data single measurement.
+    */
   @js.native
   class DataPoint ()
     extends applicationinsightsLib.outDeclarationsContractsMod.DataPoint
@@ -42,57 +42,57 @@ object ContractsNs extends js.Object {
     extends applicationinsightsLib.outDeclarationsContractsMod.Domain
   
   /**
-   * System variables for a telemetry item.
-   */
+    * System variables for a telemetry item.
+    */
   @js.native
   class Envelope ()
     extends applicationinsightsLib.outDeclarationsContractsMod.Envelope
   
   /**
-   * Instances of Event represent structured event records that can be grouped and searched by their properties. Event data item also creates a metric of event count by name.
-   */
+    * Instances of Event represent structured event records that can be grouped and searched by their properties. Event data item also creates a metric of event count by name.
+    */
   @js.native
   class EventData ()
     extends applicationinsightsLib.outDeclarationsContractsMod.EventData
   
   /**
-   * An instance of Exception represents a handled or unhandled exception that occurred during execution of the monitored application.
-   */
+    * An instance of Exception represents a handled or unhandled exception that occurred during execution of the monitored application.
+    */
   @js.native
   class ExceptionData ()
     extends applicationinsightsLib.outDeclarationsContractsMod.ExceptionData
   
   /**
-   * Exception details of the exception in a chain.
-   */
+    * Exception details of the exception in a chain.
+    */
   @js.native
   class ExceptionDetails ()
     extends applicationinsightsLib.outDeclarationsContractsMod.ExceptionDetails
   
   /**
-   * Instances of Message represent printf-like trace statements that are text-searched. Log4Net, NLog and other text-based log file entries are translated into intances of this type. The message does not have measurements.
-   */
+    * Instances of Message represent printf-like trace statements that are text-searched. Log4Net, NLog and other text-based log file entries are translated into intances of this type. The message does not have measurements.
+    */
   @js.native
   class MessageData ()
     extends applicationinsightsLib.outDeclarationsContractsMod.MessageData
   
   /**
-   * An instance of the Metric item is a list of measurements (single data points) and/or aggregations.
-   */
+    * An instance of the Metric item is a list of measurements (single data points) and/or aggregations.
+    */
   @js.native
   class MetricData ()
     extends applicationinsightsLib.outDeclarationsContractsMod.MetricData
   
   /**
-   * An instance of PageView represents a generic action on a page like a button click. It is also the base type for PageView.
-   */
+    * An instance of PageView represents a generic action on a page like a button click. It is also the base type for PageView.
+    */
   @js.native
   class PageViewData ()
     extends applicationinsightsLib.outDeclarationsContractsMod.PageViewData
   
   /**
-   * An instance of Remote Dependency represents an interaction of the monitored component with a remote component/service like SQL or an HTTP endpoint.
-   */
+    * An instance of Remote Dependency represents an interaction of the monitored component with a remote component/service like SQL or an HTTP endpoint.
+    */
   @js.native
   class RemoteDependencyData ()
     extends applicationinsightsLib.outDeclarationsContractsMod.RemoteDependencyData
@@ -102,8 +102,8 @@ object ContractsNs extends js.Object {
     extends applicationinsightsLib.outDeclarationsContractsMod.RemoteDependencyDataConstants
   
   /**
-   * An instance of Request represents completion of an external request to the application to do work and contains a summary of that request execution and the results.
-   */
+    * An instance of Request represents completion of an external request to the application to do work and contains a summary of that request execution and the results.
+    */
   @js.native
   class RequestData ()
     extends applicationinsightsLib.outDeclarationsContractsMod.RequestData
@@ -113,7 +113,7 @@ object ContractsNs extends js.Object {
     extends applicationinsightsLib.outDeclarationsContractsMod.StackFrame
   
   def baseTypeToTelemetryType(baseType: java.lang.String): applicationinsightsLib.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryType = js.native
-  def domainSupportsProperties(domain: applicationinsightsLib.outDeclarationsContractsGeneratedMod.Domain): /* is ISupportProperties */scala.Boolean = js.native
+  def domainSupportsProperties(domain: applicationinsightsLib.outDeclarationsContractsGeneratedMod.Domain): /* is applicationinsights.applicationinsights/out/Declarations/Contracts/Constants.ISupportProperties */ scala.Boolean = js.native
   def telemetryTypeToBaseType(
     `type`: applicationinsightsLib.outDeclarationsContractsTelemetryTypesTelemetryTypeMod.TelemetryType
   ): java.lang.String = js.native

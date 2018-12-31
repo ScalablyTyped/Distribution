@@ -12,22 +12,22 @@ sealed trait AskmethatRatingSteps extends js.Object
 @js.native
 object AskmethatRatingSteps extends js.Object {
   /**
-       * Step 0.1 per 0.1
-       */
+    * Step 0.1 per 0.1
+    */
   @js.native
   sealed trait DecimalStep
     extends askmethatDashRatingLib.askmethatDashRatingMod.AskmethatRatingSteps
   
   /**
-       * Step 0.5 per 0.5
-       */
+    * Step 0.5 per 0.5
+    */
   @js.native
   sealed trait HalfStep
     extends askmethatDashRatingLib.askmethatDashRatingMod.AskmethatRatingSteps
   
   /**
-       * Step 1 per 1
-       */
+    * Step 1 per 1
+    */
   @js.native
   sealed trait OnePerOneStep
     extends askmethatDashRatingLib.askmethatDashRatingMod.AskmethatRatingSteps

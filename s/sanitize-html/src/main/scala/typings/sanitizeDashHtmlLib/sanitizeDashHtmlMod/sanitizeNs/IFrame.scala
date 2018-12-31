@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFrame extends js.Object {
   var attribs: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var tag: java.lang.String

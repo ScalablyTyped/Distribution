@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SafeAnchorProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libSafeAnchorMod.SafeAnchor] {
   var componentClass: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined

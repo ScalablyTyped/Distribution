@@ -20,9 +20,9 @@ trait CommonProps[OptionType] extends js.Object {
   def cx(a: scala.Null, b: ClassNamesState | js.UndefOr[scala.Nothing], c: java.lang.String): java.lang.String | scala.Unit = js.native
   def cx(a: scala.Null, b: ClassNamesState): java.lang.String | scala.Unit = js.native
   /*
-      Get the styles of a particular part of the select. Pass in the name of the
-      property as the first argument, and the current props as the second argument.
-      See the `styles` object for the properties available.
+    Get the styles of a particular part of the select. Pass in the name of the
+    property as the first argument, and the current props as the second argument.
+    See the `styles` object for the properties available.
     */
   def getStyles(name: java.lang.String, props: js.Any): js.Object = js.native
   def getValue(): ValueType[OptionType] = js.native

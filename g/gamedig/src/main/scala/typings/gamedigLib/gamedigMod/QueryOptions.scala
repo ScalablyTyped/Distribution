@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryOptions extends js.Object {
   var attemptTimeout: js.UndefOr[scala.Double] = js.undefined
   var host: java.lang.String

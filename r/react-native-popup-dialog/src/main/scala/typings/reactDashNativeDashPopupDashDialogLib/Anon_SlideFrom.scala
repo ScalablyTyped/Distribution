@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SlideFrom extends js.Object {
   var slideFrom: js.UndefOr[
     reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.SlideFromTypes

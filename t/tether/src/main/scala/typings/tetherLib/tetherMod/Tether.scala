@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // global Tether constructor
-
 trait Tether extends js.Object {
   def destroy(): scala.Unit
   def disable(): scala.Unit

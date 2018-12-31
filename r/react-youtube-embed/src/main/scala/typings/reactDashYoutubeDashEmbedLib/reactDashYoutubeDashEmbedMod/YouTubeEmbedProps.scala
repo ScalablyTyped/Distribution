@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait YouTubeEmbedProps extends js.Object {
   var appendSrc: js.UndefOr[java.lang.String] = js.undefined
   var aspectRatio: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TickerProgress extends js.Object {
   var complete: scala.Double
   var eta: java.lang.String

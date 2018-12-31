@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventsInsertParameters extends js.Object {
   var calendarId: java.lang.String
   var maxAttendees: js.UndefOr[integer] = js.undefined

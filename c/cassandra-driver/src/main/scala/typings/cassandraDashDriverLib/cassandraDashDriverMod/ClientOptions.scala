@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClientOptions extends js.Object {
   var authProvider: js.UndefOr[cassandraDashDriverLib.cassandraDashDriverMod.authNs.AuthProvider] = js.undefined
   var contactPoints: js.Array[java.lang.String]

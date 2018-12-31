@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OneSignalCordovaPlugin extends js.Object {
   def addPermissionObserver(callback: js.Function1[/* state */ OSPermissionState, scala.Unit]): scala.Unit
   def addSubscriptionObserver(callback: js.Function1[/* state */ OSSubscriptionState, scala.Unit]): scala.Unit

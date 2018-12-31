@@ -17,7 +17,6 @@ abstract class AsyncIterator[T] ()
   var readable: scala.Boolean = js.native
   // tslint:disable-next-line ban-types
   /* private */ def _addSingleListener(eventName: java.lang.String, listener: js.Function): scala.Unit = js.native
-  // tslint:disable-next-line ban-types
   /* private */ def _addSingleListener(eventName: js.Symbol, listener: js.Function): scala.Unit = js.native
   def _changeState(newState: scala.Double): scala.Unit = js.native
   def _changeState(newState: scala.Double, eventAsync: scala.Boolean): scala.Unit = js.native

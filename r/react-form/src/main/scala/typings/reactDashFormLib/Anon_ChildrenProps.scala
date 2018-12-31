@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ChildrenProps extends js.Object {
   var children: js.UndefOr[
     (js.Function1[

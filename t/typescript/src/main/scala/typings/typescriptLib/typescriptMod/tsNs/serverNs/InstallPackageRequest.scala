@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InstallPackageRequest extends TypingInstallerRequestWithProjectName {
   val fileName: typescriptLib.typescriptMod.tsNs.Path
   val kind: typescriptLib.typescriptLibStrings.installPackage

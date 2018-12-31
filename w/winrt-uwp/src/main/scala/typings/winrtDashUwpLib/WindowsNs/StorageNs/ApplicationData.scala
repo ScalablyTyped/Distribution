@@ -37,27 +37,27 @@ abstract class ApplicationData () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[ApplicationData, _]
   ): scala.Unit = js.native
   /**
-               * Removes all application data from the local, roaming, and temporary app data stores.
-               * @return An object that is used to manage the asynchronous clear operation.
-               */
+    * Removes all application data from the local, roaming, and temporary app data stores.
+    * @return An object that is used to manage the asynchronous clear operation.
+    */
   def clearAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-               * Removes all application data from the specified app data store.
-               * @param locality One of the enumeration values.
-               * @return An object that is used to manage the asynchronous clear operation.
-               */
+    * Removes all application data from the specified app data store.
+    * @param locality One of the enumeration values.
+    * @return An object that is used to manage the asynchronous clear operation.
+    */
   def clearAsync(locality: ApplicationDataLocality): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-               * Clears the files and subfolders from the specified subfolder of the shared storage folder for the publisher of the current app.
-               * @param folderName The subfolder of the shared storage folder for the publisher of the current app from which to clear the files and subfolders.
-               * @return Represents an asynchronous action that does not return a result and does not have progress notifications. You can use this value to get the results of the operation, or to specify a method to run when the operation completes - for example, to repopulate the shared storage folder with new data.
-               */
+    * Clears the files and subfolders from the specified subfolder of the shared storage folder for the publisher of the current app.
+    * @param folderName The subfolder of the shared storage folder for the publisher of the current app from which to clear the files and subfolders.
+    * @return Represents an asynchronous action that does not return a result and does not have progress notifications. You can use this value to get the results of the operation, or to specify a method to run when the operation completes - for example, to repopulate the shared storage folder with new data.
+    */
   def clearPublisherCacheFolderAsync(folderName: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-               * Gets the specified subfolder of the shared storage folder for the publisher of the current app.
-               * @param folderName The subfolder to get from the shared storage folder for the publisher of the current app.
-               * @return The specified subfolder.
-               */
+    * Gets the specified subfolder of the shared storage folder for the publisher of the current app.
+    * @param folderName The subfolder to get from the shared storage folder for the publisher of the current app.
+    * @return The specified subfolder.
+    */
   def getPublisherCacheFolder(folderName: java.lang.String): StorageFolder = js.native
   /** Occurs when roaming application data is synchronized. */
   def ondatachanged(ev: js.Any with winrtDashUwpLib.WindowsNs.WinRTEvent[ApplicationData]): scala.Unit = js.native
@@ -68,11 +68,11 @@ abstract class ApplicationData () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[ApplicationData, _]
   ): scala.Unit = js.native
   /**
-               * Sets the version number of the application data in the app data store.
-               * @param desiredVersion The new version number.
-               * @param handler The set version event handler.
-               * @return An object that is used to manage the asynchronous set version operation.
-               */
+    * Sets the version number of the application data in the app data store.
+    * @param desiredVersion The new version number.
+    * @param handler The set version event handler.
+    * @return An object that is used to manage the asynchronous set version operation.
+    */
   def setVersionAsync(desiredVersion: scala.Double, handler: ApplicationDataSetVersionHandler): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /** Sends a DataChanged | datachanged event to all registered event handlers. */
   def signalDataChanged(): scala.Unit = js.native
@@ -85,10 +85,10 @@ object ApplicationData extends js.Object {
   /** Provides access to the app data store associated with the app's app package. */
   var current: winrtDashUwpLib.WindowsNs.StorageNs.ApplicationData = js.native
   /**
-               * Static method that returns the ApplicationData for a User .
-               * @param user The User for which the ApplicationData is returned.
-               * @return When this method completes, it returns the requested ApplicationData object.
-               */
+    * Static method that returns the ApplicationData for a User .
+    * @param user The User for which the ApplicationData is returned.
+    * @return When this method completes, it returns the requested ApplicationData object.
+    */
   def getForUserAsync(user: winrtDashUwpLib.WindowsNs.SystemNs.User): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.StorageNs.ApplicationData] = js.native
 }
 

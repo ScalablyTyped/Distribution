@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RowCollapsingEventUIParam extends js.Object {
   /**
   	 * Gets access the hierarchical grid object.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Birthday extends js.Object {
   var age: scala.Double
   var birthday: js.Any

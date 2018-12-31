@@ -11,7 +11,6 @@ trait JQuery extends js.Object {
   var tooltipster_Original: tooltipsterLib.JQueryTooltipsterNs.ITooltipsterJQuery = js.native
   /** Activates Tooltipster */
   def tooltipster(): JQuery = js.native
-  /** Activates Tooltipster */
   def tooltipster(options: tooltipsterLib.JQueryTooltipsterNs.ITooltipsterOptions): JQuery = js.native
   /**
   		 * Closes the tooltip. When the animation is over, its HTML element is destroyed (definitely removed from the 
@@ -19,10 +18,6 @@ trait JQuery extends js.Object {
   		 */
   @JSName("tooltipster")
   def tooltipster_close(method: tooltipsterLib.tooltipsterLibStrings.close): JQuery = js.native
-  /**
-  		 * Closes the tooltip. When the animation is over, its HTML element is destroyed (definitely removed from the 
-  		 * DOM). The `callback` function argument is optional.
-  		 */
   @JSName("tooltipster")
   def tooltipster_close(
     method: tooltipsterLib.tooltipsterLibStrings.close,
@@ -101,10 +96,6 @@ trait JQuery extends js.Object {
   		 */
   @JSName("tooltipster")
   def tooltipster_open(method: tooltipsterLib.tooltipsterLibStrings.open): JQuery = js.native
-  /**
-  		 * Opens the tooltip. The `callback` function argument is optional (see its input signature) and, if provided, 
-  		 * is called when the opening animation has ended
-  		 */
   @JSName("tooltipster")
   def tooltipster_open(
     method: tooltipsterLib.tooltipsterLibStrings.open,

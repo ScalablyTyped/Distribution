@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AutocompleteEvents extends js.Object {
   var change: js.UndefOr[AutocompleteEvent] = js.undefined
   var close: js.UndefOr[AutocompleteEvent] = js.undefined

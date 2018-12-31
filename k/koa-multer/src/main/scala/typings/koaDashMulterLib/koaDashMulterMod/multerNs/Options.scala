@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   /** The destination directory for the uploaded files. */
   var dest: js.UndefOr[java.lang.String] = js.undefined
@@ -19,9 +18,9 @@ trait Options extends js.Object {
     ]
   ] = js.undefined
   /**
-           * An object specifying the size limits of the following optional properties. This object is passed to busboy
-           * directly, and the details of properties can be found on https://github.com/mscdex/busboy#busboy-methods
-           */
+    * An object specifying the size limits of the following optional properties. This object is passed to busboy
+    * directly, and the details of properties can be found on https://github.com/mscdex/busboy#busboy-methods
+    */
   var limits: js.UndefOr[koaDashMulterLib.Anon_FieldNameSize] = js.undefined
   /** The storage engine to use for uploaded files. */
   var storage: js.UndefOr[StorageEngine] = js.undefined

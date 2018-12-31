@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateShortDynamicLinkResponse extends js.Object {
   /** Preivew link to show the link flow chart. */
   var previewLink: js.UndefOr[java.lang.String] = js.undefined

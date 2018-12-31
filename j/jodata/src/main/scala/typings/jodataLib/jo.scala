@@ -30,7 +30,6 @@ class jo protected () extends js.Object {
   def expand(expand: java.lang.String): jo = js.native
   // Filter
   def filter(filterClause: jodataLib.joNs.FilterClause): jo = js.native
-  // Filter
   def filter(filterClause: jodataLib.joNs.PrecedenceGroup): jo = js.native
   // Format
   def format(): jodataLib.joNs.FormatOptions = js.native
@@ -58,7 +57,6 @@ class jo protected () extends js.Object {
   def setExpandDefault(expand: java.lang.String): jo = js.native
   // Order by
   def setOrderByDefault(property: java.lang.String): jo = js.native
-  // Order by
   def setOrderByDefault(property: java.lang.String, order: java.lang.String): jo = js.native
   // Select
   def setSelectDefault(select: js.Array[java.lang.String]): jo = js.native

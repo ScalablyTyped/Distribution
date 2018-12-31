@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Label extends js.Object {
   /** Key of the label. */
   var key: js.UndefOr[java.lang.String] = js.undefined

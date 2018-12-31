@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPrimitiveOptions extends js.Object {
   /** The css cursor to show when the IPrimitive has mouse events on it. Default value is pointer (hand). */
   var cursor: js.UndefOr[java.lang.String] = js.undefined

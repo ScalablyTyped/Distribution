@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StructLog extends js.Object {
   var depth: scala.Double
   var error: java.lang.String

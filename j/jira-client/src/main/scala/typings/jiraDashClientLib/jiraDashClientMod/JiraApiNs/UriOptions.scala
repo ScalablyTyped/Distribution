@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UriOptions extends js.Object {
   var intermediatePath: js.UndefOr[java.lang.String] = js.undefined
   var pathname: java.lang.String

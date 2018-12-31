@@ -14,36 +14,36 @@ trait ElectronConfig
       ]
     ] {
   /**
-       * Get the path to the config file.
-       */
+    * Get the path to the config file.
+    */
   var path: java.lang.String = js.native
   /**
-       * gets the item count
-       */
+    * gets the item count
+    */
   var size: scala.Double = js.native
   /**
-       * deletes all items
-       */
+    * deletes all items
+    */
   def clear(): scala.Unit = js.native
   /**
-       * deletes an item
-       */
+    * deletes an item
+    */
   def delete(key: java.lang.String): scala.Unit = js.native
   /**
-       * retrieves an item
-       */
+    * retrieves an item
+    */
   def get(key: java.lang.String): js.Any = js.native
   /**
-       * Checks if an item exists
-       */
+    * Checks if an item exists
+    */
   def has(key: java.lang.String): scala.Boolean = js.native
   /**
-       * Sets an item
-       */
+    * Sets an item
+    */
   def set(key: java.lang.String, value: js.Any): scala.Unit = js.native
   /**
-       * Sets multiple items at once
-       */
+    * Sets multiple items at once
+    */
   def set(`object`: js.Object): scala.Unit = js.native
 }
 

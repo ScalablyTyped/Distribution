@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InteractiveButtonOptions[T] extends js.Object {
   var body: js.UndefOr[T] = js.undefined
   var headers: js.UndefOr[InteractiveButtonHttpHeaders] = js.undefined

@@ -9,17 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 class Keyboard () extends js.Object {
   /**
-       * Whether the keyboard control is enabled
-       */
+    * Whether the keyboard control is enabled
+    */
   var enabled: scala.Boolean = js.native
   /**
-       * Disable keyboard control
-       */
+    * Disable keyboard control
+    */
   def disable(): scala.Unit = js.native
   // Methods
   /**
-       * Enable keyboard control
-       */
+    * Enable keyboard control
+    */
   def enable(): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Names extends js.Object {
   val de: js.UndefOr[java.lang.String] = js.undefined
   val en: java.lang.String

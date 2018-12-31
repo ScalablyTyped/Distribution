@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgZoombarDefaultZoomWindow
   extends /**
 	 * Option for IgZoombarDefaultZoomWindow

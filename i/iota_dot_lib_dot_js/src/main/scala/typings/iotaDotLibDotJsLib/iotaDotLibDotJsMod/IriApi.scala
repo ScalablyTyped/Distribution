@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 //
 // iota.api
 //
-
 trait IriApi extends js.Object {
   def addNeighbors(
     uris: js.Array[java.lang.String],

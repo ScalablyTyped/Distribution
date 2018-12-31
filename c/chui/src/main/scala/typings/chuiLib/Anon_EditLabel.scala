@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EditLabel extends js.Object {
   var callback: js.UndefOr[js.Function] = js.undefined
   var deletable: js.UndefOr[scala.Boolean] = js.undefined

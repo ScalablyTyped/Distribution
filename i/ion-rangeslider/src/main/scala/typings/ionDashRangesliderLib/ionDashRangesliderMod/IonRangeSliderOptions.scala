@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IonRangeSliderOptions extends js.Object {
      // Locks slider and makes it inactive. Input is disabled too. Invisible to forms [Default: false]
   var block: js.UndefOr[scala.Boolean] = js.undefined

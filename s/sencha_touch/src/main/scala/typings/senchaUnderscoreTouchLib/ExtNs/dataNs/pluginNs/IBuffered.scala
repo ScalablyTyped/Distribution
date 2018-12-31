@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBuffered
   extends senchaUnderscoreTouchLib.ExtNs.IEvented {
   /** [Method] Returns the value of bufferedCollection

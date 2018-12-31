@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IconInfo extends js.Object {
   /** A number representing the width and height of the icon. Likely values include (but are not limited to) 128, 48, 24, and 16. */
   var size: scala.Double

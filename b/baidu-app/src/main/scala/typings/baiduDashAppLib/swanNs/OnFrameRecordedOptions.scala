@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnFrameRecordedOptions extends js.Object {
   /**  录音分片结果数据 */
   var frameBuffer: stdLib.ArrayBuffer

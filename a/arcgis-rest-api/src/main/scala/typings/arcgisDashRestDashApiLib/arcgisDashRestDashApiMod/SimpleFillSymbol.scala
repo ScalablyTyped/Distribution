@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SimpleFillSymbol extends Symbol {
   var color: js.UndefOr[Color] = js.undefined
   var outline: js.UndefOr[SimpleLineSymbol] = js.undefined

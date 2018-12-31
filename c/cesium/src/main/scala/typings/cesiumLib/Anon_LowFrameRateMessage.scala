@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LowFrameRateMessage extends js.Object {
   var container: stdLib.Element | java.lang.String
   var lowFrameRateMessage: js.UndefOr[java.lang.String] = js.undefined

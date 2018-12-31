@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * This simple layout places all of the Parts in a grid-like arrangement, ordered, spaced apart,
-    * and wrapping as needed.  It ignores any Links connecting the Nodes being laid out.
-    */
+  * This simple layout places all of the Parts in a grid-like arrangement, ordered, spaced apart,
+  * and wrapping as needed.  It ignores any Links connecting the Nodes being laid out.
+  */
 @js.native
 trait Group extends Node {
   /**Gets or sets whether the size of the area of the Group's .placeholder should remain the same during a DraggingTool move until a drop occurs. The default value is false.*/
@@ -32,47 +32,42 @@ trait Group extends Node {
   /**Gets or sets whether the subgraph starting at this group had been collapsed by a call to .expandSubGraph on the containing Group.*/
   var wasSubGraphExpanded: scala.Boolean = js.native
   /**
-          * Add the Parts in the given collection as members of this Group for those Parts for which CommandHandler.isValidMember returns true.
-          * @param {Iterable<Part>} coll
-          * @param {boolean=} check whether to call CommandHandler.isValidMember to confirm that it is valid to add the Part to be a member of this Group.
-          */
+    * Add the Parts in the given collection as members of this Group for those Parts for which CommandHandler.isValidMember returns true.
+    * @param {Iterable<Part>} coll
+    * @param {boolean=} check whether to call CommandHandler.isValidMember to confirm that it is valid to add the Part to be a member of this Group.
+    */
   def addMembers(coll: Iterable[Part]): scala.Boolean = js.native
-  /**
-          * Add the Parts in the given collection as members of this Group for those Parts for which CommandHandler.isValidMember returns true.
-          * @param {Iterable<Part>} coll
-          * @param {boolean=} check whether to call CommandHandler.isValidMember to confirm that it is valid to add the Part to be a member of this Group.
-          */
   def addMembers(coll: Iterable[Part], check: scala.Boolean): scala.Boolean = js.native
   /**
-          * See if the given collection of Parts contains non-Links all for which CommandHandler.isValidMember returns true.
-          * @param {Iterable<Part>} coll
-          */
+    * See if the given collection of Parts contains non-Links all for which CommandHandler.isValidMember returns true.
+    * @param {Iterable<Part>} coll
+    */
   def canAddMembers(coll: Iterable[Part]): scala.Boolean = js.native
   /**
-          * This predicate returns true if .ungroupable is true, if the layer's Layer.allowUngroup is true, and if the diagram's Diagram.allowUngroup is true.
-          */
+    * This predicate returns true if .ungroupable is true, if the layer's Layer.allowUngroup is true, and if the diagram's Diagram.allowUngroup is true.
+    */
   def canUngroup(): scala.Boolean = js.native
   /**
-          * Hide each of the member nodes and links of this group, and recursively collapse any member groups.
-          */
+    * Hide each of the member nodes and links of this group, and recursively collapse any member groups.
+    */
   def collapseSubGraph(): scala.Unit = js.native
   /**
-          * Show each member node and link, and perhaps recursively expand nested subgraphs.
-          */
+    * Show each member node and link, and perhaps recursively expand nested subgraphs.
+    */
   def expandSubGraph(): scala.Unit = js.native
   /**
-          * Returns an iterator over all of the Links that connect with this group or any node contained by this group,
-          * in either direction, but that are not internal to this group.
-          */
+    * Returns an iterator over all of the Links that connect with this group or any node contained by this group,
+    * in either direction, but that are not internal to this group.
+    */
   def findExternalLinksConnected(): Iterator[Link] = js.native
   /**
-          * Returns an iterator over all of the Nodes that are connected with this group or any node contained by this group,
-          * by a link in either direction, but that are not internal to this group.
-          */
+    * Returns an iterator over all of the Nodes that are connected with this group or any node contained by this group,
+    * by a link in either direction, but that are not internal to this group.
+    */
   def findExternalNodesConnected(): Iterator[Node] = js.native
   /**
-          * Return a collection of Parts that are all of the nodes and links that are members of this group, including inside nested groups, but excluding this group itself.
-          */
+    * Return a collection of Parts that are all of the nodes and links that are members of this group, including inside nested groups, but excluding this group itself.
+    */
   def findSubGraphParts(): Set[Part] = js.native
   /**Gets or sets the function that is called after a member Part has been added to this Group.*/
   def memberAdded(a: Group, b: Part): scala.Unit = js.native

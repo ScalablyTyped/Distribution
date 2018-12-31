@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AutoClose extends js.Object {
   var autoClose: scala.Boolean
   var disabled: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DPlayer extends js.Object {
   var danmaku: Danmaku
   var events: js.Any

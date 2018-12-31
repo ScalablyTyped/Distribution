@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the current state of the controller. */
-
 trait GamepadReading extends js.Object {
   /** The state of the controller buttons. */
   var buttons: GamepadButtons

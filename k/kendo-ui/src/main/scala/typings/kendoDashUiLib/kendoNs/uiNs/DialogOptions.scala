@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DialogOptions extends js.Object {
   var actions: js.UndefOr[js.Array[DialogAction]] = js.undefined
   var animation: js.UndefOr[scala.Boolean | DialogAnimation] = js.undefined

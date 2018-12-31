@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SrcP extends js.Object {
   var email_fuzzy: stdLib.RegExp
   var host_fuzzy_test: stdLib.RegExp

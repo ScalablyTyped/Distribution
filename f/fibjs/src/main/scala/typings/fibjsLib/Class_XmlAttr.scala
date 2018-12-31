@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 	* @brief XmlAttr 对象表示 XmlElement 对象的属性
 	* @detail 
 	*/
-
 @JSGlobal("Class_XmlAttr")
 @js.native
 class Class_XmlAttr () extends Class__object {

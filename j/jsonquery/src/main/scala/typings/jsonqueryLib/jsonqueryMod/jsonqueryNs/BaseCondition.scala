@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseCondition[P] extends js.Object {
   @JSName("$all")
   var $all: js.Array[P]

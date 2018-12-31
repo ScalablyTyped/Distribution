@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISpacer extends IComponent {
   /** [Method] Sets the value of width
   		* @param width Number The new value.

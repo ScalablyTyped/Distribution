@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Sponsor extends js.Object {
   /** Etag of this resource. */
   var etag: js.UndefOr[java.lang.String] = js.undefined

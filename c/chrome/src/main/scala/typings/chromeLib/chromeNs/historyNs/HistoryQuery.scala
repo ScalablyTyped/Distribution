@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HistoryQuery extends js.Object {
   /** Optional. Limit results to those visited before this date, represented in milliseconds since the epoch. */
   var endTime: js.UndefOr[scala.Double] = js.undefined

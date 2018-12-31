@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGAttributes extends HTMLAttributes {
   var accentHeight: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var accumulate: js.UndefOr[preactLib.preactLibStrings.none | preactLib.preactLibStrings.sum] = js.undefined

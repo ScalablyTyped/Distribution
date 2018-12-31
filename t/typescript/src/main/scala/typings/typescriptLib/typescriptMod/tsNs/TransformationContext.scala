@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransformationContext extends js.Object {
   /**
-           * Enables before/after emit notifications in the pretty printer for the provided
-           * SyntaxKind.
-           */
+    * Enables before/after emit notifications in the pretty printer for the provided
+    * SyntaxKind.
+    */
   def enableEmitNotification(kind: SyntaxKind): scala.Unit
   /** Enables expression substitutions in the pretty printer for the provided SyntaxKind. */
   def enableSubstitution(kind: SyntaxKind): scala.Unit
@@ -23,31 +22,31 @@ trait TransformationContext extends js.Object {
   /** Hoists a variable declaration to the containing scope. */
   def hoistVariableDeclaration(node: Identifier): scala.Unit
   /**
-           * Determines whether before/after emit notifications should be raised in the pretty
-           * printer when it emits a node.
-           */
+    * Determines whether before/after emit notifications should be raised in the pretty
+    * printer when it emits a node.
+    */
   def isEmitNotificationEnabled(node: Node): scala.Boolean
   /** Determines whether expression substitutions are enabled for the provided node. */
   def isSubstitutionEnabled(node: Node): scala.Boolean
   /**
-           * Hook used to allow transformers to capture state before or after
-           * the printer emits a node.
-           *
-           * NOTE: Transformation hooks should only be modified during `Transformer` initialization,
-           * before returning the `NodeTransformer` callback.
-           */
+    * Hook used to allow transformers to capture state before or after
+    * the printer emits a node.
+    *
+    * NOTE: Transformation hooks should only be modified during `Transformer` initialization,
+    * before returning the `NodeTransformer` callback.
+    */
   def onEmitNode(
     hint: EmitHint,
     node: Node,
     emitCallback: js.Function2[/* hint */ EmitHint, /* node */ Node, scala.Unit]
   ): scala.Unit
   /**
-           * Hook used by transformers to substitute expressions just before they
-           * are emitted by the pretty printer.
-           *
-           * NOTE: Transformation hooks should only be modified during `Transformer` initialization,
-           * before returning the `NodeTransformer` callback.
-           */
+    * Hook used by transformers to substitute expressions just before they
+    * are emitted by the pretty printer.
+    *
+    * NOTE: Transformation hooks should only be modified during `Transformer` initialization,
+    * before returning the `NodeTransformer` callback.
+    */
   def onSubstituteNode(hint: EmitHint, node: Node): Node
   /** Gets and resets the requested non-scoped emit helpers. */
   def readEmitHelpers(): js.UndefOr[js.Array[EmitHelper]]

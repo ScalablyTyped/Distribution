@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVaultObjectSearchOperations extends js.Object {
   def FindFile(RelativePath: java.lang.String, UpdateFromServer: scala.Boolean): IObjectFileAndVersion
   def FindObjectVersionAndProperties(RelativePath: java.lang.String, UpdateFromServer: scala.Boolean): IObjectVersionAndProperties

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * @see {@link https://w3c.github.io/webauthn/#dictdef-makepublickeycredentialoptions}
- */
-
+  * @see {@link https://w3c.github.io/webauthn/#dictdef-makepublickeycredentialoptions}
+  */
 trait PublicKeyCredentialCreationOptions extends js.Object {
   var attestation: js.UndefOr[AttestationConveyancePreference] = js.undefined
   var authenticatorSelection: js.UndefOr[AuthenticatorSelectionCriteria] = js.undefined

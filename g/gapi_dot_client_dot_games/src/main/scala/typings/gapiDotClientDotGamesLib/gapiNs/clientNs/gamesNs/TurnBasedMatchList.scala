@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TurnBasedMatchList extends js.Object {
   /** The matches. */
   var items: js.UndefOr[js.Array[TurnBasedMatch]] = js.undefined

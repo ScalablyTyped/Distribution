@@ -19,37 +19,37 @@ class SpeedSummary protected () extends js.Object {
   var name: java.lang.String = js.native
   var totalSize: scala.Double = js.native
   /**
-       * Get average upload/download speed
-       */
+    * Get average upload/download speed
+    */
   def getAverageSpeed(): java.lang.String = js.native
   def getAverageSpeed(humanReadable: scala.Boolean): scala.Double = js.native
   /**
-       * Get complete percentage
-       */
+    * Get complete percentage
+    */
   def getCompletePercent(): scala.Double = js.native
   def getCompletePercent(len: scala.Double): scala.Double = js.native
   /**
-       * Get completed data size
-       */
+    * Get completed data size
+    */
   def getCompleteSize(): java.lang.String = js.native
   def getCompleteSize(humanReadable: scala.Boolean): scala.Double = js.native
   /**
-       * Get running seconds
-       */
+    * Get running seconds
+    */
   def getElapsedSeconds(): java.lang.String = js.native
   def getElapsedSeconds(humanReadable: scala.Boolean): scala.Double = js.native
   /**
-       * Get internal speed
-       */
+    * Get internal speed
+    */
   def getSpeed(): java.lang.String = js.native
   def getSpeed(humanReadable: scala.Boolean): scala.Double = js.native
   /**
-       * Get auto increment function
-       */
+    * Get auto increment function
+    */
   def getSpeed(size: scala.Double): js.Function2[/* error */ nodeLib.Error, /* value */ js.Any, scala.Unit] = js.native
   /**
-       * Get total size
-       */
+    * Get total size
+    */
   def getTotalSize(): java.lang.String = js.native
   def getTotalSize(humanReadable: scala.Boolean): scala.Double = js.native
 }

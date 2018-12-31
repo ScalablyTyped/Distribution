@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Application_EPostageInsertEx_Parameter extends js.Object {
   val Doc: activexDashWordLib.WordNs.Document
   val bstrPaperFeed: java.lang.String

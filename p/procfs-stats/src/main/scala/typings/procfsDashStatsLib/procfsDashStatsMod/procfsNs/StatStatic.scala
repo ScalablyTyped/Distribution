@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StatStatic extends js.Object {
   var works: scala.Boolean
   def argv(callback: Callback[js.Array[java.lang.String]]): scala.Nothing

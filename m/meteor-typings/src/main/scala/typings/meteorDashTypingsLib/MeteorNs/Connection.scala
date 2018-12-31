@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Connection **/
-
 trait Connection extends js.Object {
   var clientAddress: java.lang.String
   var close: js.Function

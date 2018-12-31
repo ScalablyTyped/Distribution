@@ -7,12 +7,19 @@ import scala.scalajs.js.annotation._
 
 // For pseudo selectors and media queries
 /* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick, aphrodite.CSSProperties) */ 
-trait OpenCSSProperties
+- Lifted 3 members from Set(std.Pick<aphrodite.BaseCSSProperties, std.Exclude<keyof aphrodite.BaseCSSProperties, 'fontFamily' | 'transition' | 'animationName'>>, aphrodite.CSSProperties) */ trait OpenCSSProperties
   extends /* k */ org.scalablytyped.runtime.StringDictionary[
-      (/* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(aphrodite), TsIdentSimple(CSSProperties))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(aphrodite), TsIdentSimple(CSSProperties))),List())))) */js.Any) | aphroditeLib.CSSProperties
+      (js.UndefOr[
+        aphroditeLib.FontFamily | js.Array[aphroditeLib.FontFamily] | java.lang.String | (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify OpenCSSProperties */ js.Any) | (js.Array[
+          /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify OpenCSSProperties */ _
+        ])
+      ]) | aphroditeLib.CSSProperties
     ] {
-  var animationName: js.UndefOr[java.lang.String | js.Any | js.Array[_]] = js.undefined
+  var animationName: js.UndefOr[
+    java.lang.String | (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify OpenCSSProperties */ js.Any) | (js.Array[
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify OpenCSSProperties */ _
+    ])
+  ] = js.undefined
   var fontFamily: js.UndefOr[aphroditeLib.FontFamily | js.Array[aphroditeLib.FontFamily]] = js.undefined
 }
 

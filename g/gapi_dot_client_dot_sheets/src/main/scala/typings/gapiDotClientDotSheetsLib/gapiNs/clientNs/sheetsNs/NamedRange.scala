@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NamedRange extends js.Object {
   /** The name of the named range. */
   var name: js.UndefOr[java.lang.String] = js.undefined

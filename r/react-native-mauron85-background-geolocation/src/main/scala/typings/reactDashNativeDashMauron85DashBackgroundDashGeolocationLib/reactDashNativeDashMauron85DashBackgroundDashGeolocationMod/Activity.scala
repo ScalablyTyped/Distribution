@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Activity extends js.Object {
   /** Percentage indicating the likelihood user is performing this activity. */
   var confidence: scala.Double

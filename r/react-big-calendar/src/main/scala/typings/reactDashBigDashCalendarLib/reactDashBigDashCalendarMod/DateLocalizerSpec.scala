@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DateLocalizerSpec extends js.Object {
   var formats: Formats
   var propType: js.UndefOr[propDashTypesLib.propDashTypesMod.Validator[_]] = js.undefined

@@ -9,12 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object koaDashCompressModMembers extends js.Object {
   /**
-       * Compress middleware for Koa
-       */
+    * Compress middleware for Koa
+    */
   def apply(): koaLib.koaMod.ApplicationNs.Middleware = js.native
-  /**
-       * Compress middleware for Koa
-       */
   def apply(options: CompressOptions): koaLib.koaMod.ApplicationNs.Middleware = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GoogleMaps extends js.Object {
   var BicyclingLayer: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.BicyclingLayer]
   var Circle: org.scalablytyped.runtime.Instantiable0[googlemapsLib.googleNs.mapsNs.Circle]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   /** exclude listed commit types (e.g. `['chore', 'style', 'refactor']`) */
   var exclude: js.UndefOr[js.Array[java.lang.String]] = js.undefined

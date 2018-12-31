@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnYearSelect extends js.Object {
   var month: reactDashDatesLib.reactDashDatesMod.momentPropTypesNs.momentObj
   var onMonthSelect: js.Function2[

@@ -17,20 +17,20 @@ class BulletGraph protected ()
   @JSName("model")
   var model_BulletGraph: ejDotWebDotAllLib.ejNs.Model = js.native
   /** To redraw the bullet graph
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def redraw(): scala.Unit = js.native
   /** To set the value for comparative measure in bullet graph.
-           * @param {number} value for the graph
-           * @param {number} value for the graph
-           * @returns {void}
-           */
+    * @param {number} value for the graph
+    * @param {number} value for the graph
+    * @returns {void}
+    */
   def setComparativeMeasureSymbol(index: scala.Double, measure: scala.Double): scala.Unit = js.native
   /** To set the value for feature measure bar.
-           * @param {number} value for the graph
-           * @param {number} value for the graph
-           * @returns {void}
-           */
+    * @param {number} value for the graph
+    * @param {number} value for the graph
+    * @returns {void}
+    */
   def setFeatureMeasureBarValue(index: scala.Double, measure: scala.Double): scala.Unit = js.native
 }
 

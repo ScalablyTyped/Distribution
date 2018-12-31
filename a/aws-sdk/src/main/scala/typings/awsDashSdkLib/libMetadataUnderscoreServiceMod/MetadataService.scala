@@ -7,18 +7,18 @@ import scala.scalajs.js.annotation._
 
 @JSImport("aws-sdk/lib/metadata_service", "MetadataService")
 @js.native
+/**
+  * Creates a new MetadataService object with a given set of options.
+  */
 class MetadataService () extends js.Object {
-  /**
-       * Creates a new MetadataService object with a given set of options.
-       */
   def this(options: MetadataServiceOptions) = this()
   /**
-       * A map of options to pass to the underlying HTTP request.
-       */
+    * A map of options to pass to the underlying HTTP request.
+    */
   var httpOptions: awsDashSdkLib.Anon_TimeoutNumber = js.native
   /**
-       * Sends a request to the instance metadata service for a given resource.
-       */
+    * Sends a request to the instance metadata service for a given resource.
+    */
   def request(
     path: java.lang.String,
     callback: js.Function2[
@@ -33,8 +33,8 @@ class MetadataService () extends js.Object {
 @js.native
 object MetadataService extends js.Object {
   /**
-       * 169.254.169.254
-       */
+    * 169.254.169.254
+    */
   var host: java.lang.String = js.native
 }
 

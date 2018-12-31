@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AddressResolution extends js.Object {
   var addressResolution: js.UndefOr[
     cassandraDashDriverLib.cassandraDashDriverMod.policiesNs.addressResolutionNs.AddressTranslator

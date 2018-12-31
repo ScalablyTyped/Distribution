@@ -234,14 +234,10 @@ trait Numeric extends js.Object {
   // utility functions
   // Benchmarking routine
   def bench(func: js.Function0[_]): scala.Double = js.native
-  // utility functions
-  // Benchmarking routine
   def bench(func: js.Function0[_], interval: scala.Double): scala.Double = js.native
-  // create two-dimensional matrix
   def blockMatrix(x: numericLib.MultidimensionalMatrix): numericLib.Matrix = js.native
   // create two-dimensional matrix
   def blockMatrix(x: numericLib.Scalar): numericLib.Matrix = js.native
-  // create two-dimensional matrix
   def blockMatrix(x: numericLib.Vector): numericLib.Matrix = js.native
   // Pointwise binary negation ~x
   def bnot[T /* <: numericLib.TensorValue */](x: T): T = js.native
@@ -446,7 +442,6 @@ trait Numeric extends js.Object {
       numericLib.Vector | numericLib.Scalar
     ]
   ): Dopri = js.native
-  // Ode solver (Dormand-Prince)
   def dopri(
     x0: numericLib.Scalar,
     x1: numericLib.Scalar,
@@ -458,7 +453,6 @@ trait Numeric extends js.Object {
     ],
     tol: scala.Double
   ): Dopri = js.native
-  // Ode solver (Dormand-Prince)
   def dopri(
     x0: numericLib.Scalar,
     x1: numericLib.Scalar,
@@ -471,7 +465,6 @@ trait Numeric extends js.Object {
     tol: scala.Double,
     maxit: scala.Double
   ): Dopri = js.native
-  // Ode solver (Dormand-Prince)
   def dopri(
     x0: numericLib.Scalar,
     x1: numericLib.Scalar,
@@ -491,11 +484,8 @@ trait Numeric extends js.Object {
   ): Dopri = js.native
   // 	Matrix-Matrix, Matrix-Vector, Vector-Matrix and Vector-Vector product
   def dot(x: numericLib.Matrix | numericLib.Vector, y: numericLib.Matrix | numericLib.Vector): numericLib.Vector | numericLib.Matrix | numericLib.Scalar = js.native
-  // 	Matrix-Matrix, Matrix-Vector, Vector-Matrix and Vector-Vector product
   def dot(x: numericLib.Matrix | numericLib.Vector, y: numericLib.Scalar): numericLib.Vector | numericLib.Matrix | numericLib.Scalar = js.native
-  // 	Matrix-Matrix, Matrix-Vector, Vector-Matrix and Vector-Vector product
   def dot(x: numericLib.Scalar, y: numericLib.Matrix | numericLib.Vector): numericLib.Vector | numericLib.Matrix | numericLib.Scalar = js.native
-  // 	Matrix-Matrix, Matrix-Vector, Vector-Matrix and Vector-Vector product
   def dot(x: numericLib.Scalar, y: numericLib.Scalar): numericLib.Vector | numericLib.Matrix | numericLib.Scalar = js.native
   def dotMMbig(x: numericLib.Matrix, y: numericLib.Matrix): numericLib.Matrix = js.native
   def dotMMsmall(x: numericLib.Matrix, y: numericLib.Matrix): numericLib.Matrix = js.native
@@ -573,11 +563,9 @@ trait Numeric extends js.Object {
   def identity(num: scala.Double): numericLib.Matrix = js.native
   // Encode a matrix as an image URL
   def imageURL(img: js.Array[js.Array[scala.Double]]): java.lang.String = js.native
-  // Smallest value of entries (not modulus)
   def inf(x: numericLib.MultidimensionalMatrix): scala.Double = js.native
   // Smallest value of entries (not modulus)
   def inf(x: numericLib.Scalar): scala.Double = js.native
-  // Smallest value of entries (not modulus)
   def inf(x: numericLib.Vector): scala.Double = js.native
   def infV(x: numericLib.Vector): scala.Double = js.native
   // Matrix inverse
@@ -613,7 +601,6 @@ trait Numeric extends js.Object {
   def leqeqV(x: numericLib.Vector, y: numericLib.Vector): numericLib.VectorBoolean = js.native
   // Generate evenly spaced values
   def linspace(from: scala.Double, to: scala.Double): numericLib.Vector = js.native
-  // Generate evenly spaced values
   def linspace(from: scala.Double, to: scala.Double, numberOfValues: scala.Double): numericLib.Vector = js.native
   // Pointwise Math.log(x)
   def log[T /* <: numericLib.NonScalar */](x: T): T = js.native
@@ -737,31 +724,23 @@ trait Numeric extends js.Object {
   def neqeq(x: numericLib.Vector, y: numericLib.Vector): numericLib.VectorBoolean = js.native
   def neqeqS(x: numericLib.Vector, y: numericLib.Scalar): numericLib.VectorBoolean = js.native
   def neqeqV(x: numericLib.Vector, y: numericLib.Vector): numericLib.VectorBoolean = js.native
-  // Sum all absolute values of entries
   def norm1(x: numericLib.MultidimensionalMatrix): scala.Double = js.native
   // Sum all absolute values of entries
   def norm1(x: numericLib.Scalar): scala.Double = js.native
-  // Sum all absolute values of entries
   def norm1(x: numericLib.Vector): scala.Double = js.native
   def norm1V(x: numericLib.Vector): scala.Double = js.native
-  // Square root of the sum of the square of the entries of x
   def norm2(x: numericLib.MultidimensionalMatrix): scala.Double = js.native
   // Square root of the sum of the square of the entries of x
   def norm2(x: numericLib.Scalar): scala.Double = js.native
-  // Square root of the sum of the square of the entries of x
   def norm2(x: numericLib.Vector): scala.Double = js.native
-  // Sum of squares of entries of x
   def norm2Squared(x: numericLib.MultidimensionalMatrix): scala.Double = js.native
   // Sum of squares of entries of x
   def norm2Squared(x: numericLib.Scalar): scala.Double = js.native
-  // Sum of squares of entries of x
   def norm2Squared(x: numericLib.Vector): scala.Double = js.native
   def norm2SquaredV(x: numericLib.Vector): scala.Double = js.native
-  // Largest modulus entry of x
   def norminf(x: numericLib.MultidimensionalMatrix): scala.Double = js.native
   // Largest modulus entry of x
   def norminf(x: numericLib.Scalar): scala.Double = js.native
-  // Largest modulus entry of x
   def norminf(x: numericLib.Vector): scala.Double = js.native
   def norminfV(x: numericLib.Vector): scala.Double = js.native
   def not(x: js.Array[numericLib.NonNullPrimitive]): numericLib.VectorBoolean = js.native
@@ -814,18 +793,15 @@ trait Numeric extends js.Object {
   def poweqV(x: numericLib.Vector, y: numericLib.Vector): numericLib.Vector = js.native
   def prettyPrint(): java.lang.String = js.native
   def prettyPrint(x: js.Any): java.lang.String = js.native
-  // Product of all the entries of x
   def prod(x: numericLib.MultidimensionalMatrix): scala.Double = js.native
   // Product of all the entries of x
   def prod(x: numericLib.Scalar): scala.Double = js.native
-  // Product of all the entries of x
   def prod(x: numericLib.Vector): scala.Double = js.native
   def prodV(x: numericLib.Vector): scala.Double = js.native
   // Create an Array of random numbers
   def random(s: numericLib.Vector): numericLib.Vector | numericLib.MultidimensionalMatrix = js.native
   // 	Create an Array by duplicating values
   def rep[T](scale: numericLib.Vector, value: T): numericLib.MultidimensionalArray[T] = js.native
-  // 	Create an Array by duplicating values
   def rep[T](scale: numericLib.Vector, value: T, key: scala.Double): numericLib.MultidimensionalArray[T] = js.native
   // 	Pointwise Math.round(x)
   def round[T /* <: numericLib.NonScalar */](x: T): T = js.native
@@ -868,26 +844,19 @@ trait Numeric extends js.Object {
   def same(x: js.Any, y: js.Any): scala.Boolean = js.native
   /** @deprecated */
   def sclone[T](matrix: T): T = js.native
-  /** @deprecated */
   def sclone[T](matrix: T, k: scala.Double): T = js.native
-  /** @deprecated */
   def sclone[T](matrix: T, k: scala.Double, n: scala.Double): T = js.native
   /** @deprecated */
   def sdiag(d: numericLib.Vector): numericLib.DeprecatedSparseMatrix = js.native
   /**  @deprecated */
   def sdim(matrix: js.Any): numericLib.Vector = js.native
-  /**  @deprecated */
   def sdim(matrix: js.Any, ret: numericLib.Vector): numericLib.Vector = js.native
-  /**  @deprecated */
   def sdim(matrix: js.Any, ret: numericLib.Vector, k: scala.Double): numericLib.Vector = js.native
-  /** @deprecated */
   def sdot(
     x: numericLib.DeprecatedSparseMatrix | numericLib.DeprecatedSparseVector,
     y: numericLib.DeprecatedSparseMatrix | numericLib.DeprecatedSparseVector
   ): numericLib.Scalar | numericLib.DeprecatedSparseVector | numericLib.DeprecatedSparseMatrix = js.native
-  /** @deprecated */
   def sdot(x: numericLib.DeprecatedSparseMatrix | numericLib.DeprecatedSparseVector, y: numericLib.Scalar): numericLib.Scalar | numericLib.DeprecatedSparseVector | numericLib.DeprecatedSparseMatrix = js.native
-  /** @deprecated */
   def sdot(x: numericLib.Scalar, y: numericLib.DeprecatedSparseMatrix | numericLib.DeprecatedSparseVector): numericLib.Scalar | numericLib.DeprecatedSparseVector | numericLib.DeprecatedSparseMatrix = js.native
   /** @deprecated */
   def sdot(x: numericLib.Scalar, y: numericLib.Scalar): numericLib.Scalar | numericLib.DeprecatedSparseVector | numericLib.DeprecatedSparseMatrix = js.native
@@ -903,9 +872,7 @@ trait Numeric extends js.Object {
   def setBlock[T /* <: numericLib.MultidimensionalMatrix */](x: T, from: numericLib.Vector, to: numericLib.Vector, b: T): T = js.native
   /** @deprecated */
   def sgather(matrix: numericLib.DeprecatedSparseMatrix): numericLib.DeprecatedSparseMatrix = js.native
-  /** @deprecated */
   def sgather(matrix: numericLib.DeprecatedSparseMatrix, ret: numericLib.DeprecatedSparseVector): numericLib.DeprecatedSparseMatrix = js.native
-  /** @deprecated */
   def sgather(
     matrix: numericLib.DeprecatedSparseMatrix,
     ret: numericLib.DeprecatedSparseVector,
@@ -964,16 +931,13 @@ trait Numeric extends js.Object {
   ): numericLib.Anon_Solution = js.native
   // Splines
   def spline(x: numericLib.Vector, y: numericLib.Matrix | numericLib.Vector): Spline = js.native
-  // Splines
   def spline(x: numericLib.Vector, y: numericLib.Matrix | numericLib.Vector, k1: numericLib.Scalar): Spline = js.native
-  // Splines
   def spline(
     x: numericLib.Vector,
     y: numericLib.Matrix | numericLib.Vector,
     k1: numericLib.Scalar,
     kn: numericLib.Scalar
   ): Spline = js.native
-  // Splines
   @JSName("spline")
   def spline_periodic(
     x: numericLib.Vector,
@@ -981,14 +945,12 @@ trait Numeric extends js.Object {
     k1: numericLib.Scalar,
     kn: numericLib.numericLibStrings.periodic
   ): Spline = js.native
-  // Splines
   @JSName("spline")
   def spline_periodic(
     x: numericLib.Vector,
     y: numericLib.Matrix | numericLib.Vector,
     k1: numericLib.numericLibStrings.periodic
   ): Spline = js.native
-  // Splines
   @JSName("spline")
   def spline_periodic(
     x: numericLib.Vector,
@@ -996,7 +958,6 @@ trait Numeric extends js.Object {
     k1: numericLib.numericLibStrings.periodic,
     kn: numericLib.Scalar
   ): Spline = js.native
-  // Splines
   @JSName("spline")
   def spline_periodic(
     x: numericLib.Vector,
@@ -1029,24 +990,19 @@ trait Numeric extends js.Object {
   def subeq(x: numericLib.Vector, y: numericLib.Vector): numericLib.Vector = js.native
   def subeqS(x: numericLib.Vector, y: numericLib.Scalar): numericLib.Vector = js.native
   def subeqV(x: numericLib.Vector, y: numericLib.Vector): numericLib.Vector = js.native
-  // 	Sum all the entries of x
   def sum(x: numericLib.MultidimensionalMatrix): scala.Double = js.native
   // 	Sum all the entries of x
   def sum(x: numericLib.Scalar): scala.Double = js.native
-  // 	Sum all the entries of x
   def sum(x: numericLib.Vector): scala.Double = js.native
   def sumV(x: numericLib.Vector): scala.Double = js.native
-  // Largest value of entries (not modulus)
   def sup(x: numericLib.MultidimensionalMatrix): scala.Double = js.native
   // Largest value of entries (not modulus)
   def sup(x: numericLib.Scalar): scala.Double = js.native
-  // Largest value of entries (not modulus)
   def sup(x: numericLib.Vector): scala.Double = js.native
   def supV(x: numericLib.Vector): scala.Double = js.native
   def svd(matrix: numericLib.Matrix): numericLib.Anon_S = js.native
   // return instance of Tensor class. X — real value, y — imaginary part.
   def t(x: numericLib.TensorValue): Tensor = js.native
-  // return instance of Tensor class. X — real value, y — imaginary part.
   def t(x: numericLib.TensorValue, y: numericLib.TensorValue): Tensor = js.native
   // Pointwise tangent
   def tan[T /* <: numericLib.NonScalar */](x: T): T = js.native
@@ -1073,20 +1029,17 @@ trait Numeric extends js.Object {
   def truncVV(x: numericLib.Vector, y: numericLib.Vector): numericLib.Vector = js.native
   // Unconstrained optimisations
   def uncmin(f: js.Function1[/* x */ numericLib.Vector, numericLib.Scalar], x0: numericLib.Vector): numericLib.Anon_Gradient = js.native
-  // Unconstrained optimisations
   def uncmin(
     f: js.Function1[/* x */ numericLib.Vector, numericLib.Scalar],
     x0: numericLib.Vector,
     tol: scala.Double
   ): numericLib.Anon_Gradient = js.native
-  // Unconstrained optimisations
   def uncmin(
     f: js.Function1[/* x */ numericLib.Vector, numericLib.Scalar],
     x0: numericLib.Vector,
     tol: scala.Double,
     gradient: js.Any
   ): numericLib.Anon_Gradient = js.native
-  // Unconstrained optimisations
   def uncmin(
     f: js.Function1[/* x */ numericLib.Vector, numericLib.Scalar],
     x0: numericLib.Vector,
@@ -1094,7 +1047,6 @@ trait Numeric extends js.Object {
     gradient: js.Any,
     maxit: scala.Double
   ): numericLib.Anon_Gradient = js.native
-  // Unconstrained optimisations
   def uncmin(
     f: js.Function1[/* x */ numericLib.Vector, numericLib.Scalar],
     x0: numericLib.Vector,
@@ -1110,7 +1062,6 @@ trait Numeric extends js.Object {
       _
     ]
   ): numericLib.Anon_Gradient = js.native
-  // Unconstrained optimisations
   def uncmin(
     f: js.Function1[/* x */ numericLib.Vector, numericLib.Scalar],
     x0: numericLib.Vector,

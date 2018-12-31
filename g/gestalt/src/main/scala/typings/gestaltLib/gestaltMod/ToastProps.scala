@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ToastProps extends js.Object {
   var color: js.UndefOr[gestaltLib.gestaltLibStrings.darkGray | gestaltLib.gestaltLibStrings.orange] = js.undefined
   var icon: js.UndefOr[gestaltLib.gestaltLibStrings.`arrow-circle-forward`] = js.undefined

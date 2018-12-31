@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISaxHandler extends js.Object {
   def cdata(text: java.lang.String, param: js.Any): scala.Unit
   def comment(text: java.lang.String, param: js.Any): scala.Unit

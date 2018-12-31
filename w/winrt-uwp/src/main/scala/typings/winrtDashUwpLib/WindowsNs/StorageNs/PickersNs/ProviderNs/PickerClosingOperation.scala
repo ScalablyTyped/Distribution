@@ -12,9 +12,9 @@ abstract class PickerClosingOperation () extends js.Object {
   /** Gets a dateTime object that indicates when the system will shut down the app that is providing files through the file picker without further notice. */
   var deadline: stdLib.Date = js.native
   /**
-                       * Gets a pickerClosingDeferral that the app providing files through the file picker can use to respond asynchronously to a closing event.
-                       * @return The pickerClosingDeferral that the app providing files through the file picker can use to respond asynchronously to a closing event.
-                       */
+    * Gets a pickerClosingDeferral that the app providing files through the file picker can use to respond asynchronously to a closing event.
+    * @return The pickerClosingDeferral that the app providing files through the file picker can use to respond asynchronously to a closing event.
+    */
   def getDeferral(): PickerClosingDeferral = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TabConfig extends js.Object {
   var activeTintColor: js.UndefOr[java.lang.String] = js.undefined
   var backBehavior: js.UndefOr[

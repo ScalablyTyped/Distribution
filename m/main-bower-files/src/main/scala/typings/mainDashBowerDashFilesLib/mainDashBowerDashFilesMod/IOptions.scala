@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOptions extends js.Object {
   var checkExistence: js.UndefOr[scala.Boolean] = js.undefined
   var debugging: js.UndefOr[scala.Boolean] = js.undefined

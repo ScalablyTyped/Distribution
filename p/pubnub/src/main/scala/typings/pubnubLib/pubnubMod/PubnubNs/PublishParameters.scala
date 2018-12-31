@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // publish
-
 trait PublishParameters extends js.Object {
   var channel: java.lang.String
   var message: js.Any

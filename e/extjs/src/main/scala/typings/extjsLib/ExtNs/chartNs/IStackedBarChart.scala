@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStackedBarChart
   extends extjsLib.ExtNs.chartNs.seriesNs.ICartesian {
   /** [Config Option] (Boolean) */

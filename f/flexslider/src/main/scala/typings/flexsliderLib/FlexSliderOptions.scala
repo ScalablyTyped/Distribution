@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlexSliderOptions extends js.Object {
                 //Callback: function(slider) - Fires when the slider reaches the last slide (asynchronous)
   var added: js.UndefOr[js.Function1[/* slider */ SliderObject, _]] = js.undefined

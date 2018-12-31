@@ -9,28 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class SessionRequest protected () extends js.Object {
   /**
-           * @param {string} appId
-           * @param {!Array<chrome.cast.Capability>=} opt_capabilities
-           * @param {number=} opt_timeout
-           * @constructor
-           * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.SessionRequest
-           */
+    * @param {string} appId
+    * @param {!Array<chrome.cast.Capability>=} opt_capabilities
+    * @param {number=} opt_timeout
+    * @constructor
+    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.SessionRequest
+    */
   def this(appId: java.lang.String) = this()
-  /**
-           * @param {string} appId
-           * @param {!Array<chrome.cast.Capability>=} opt_capabilities
-           * @param {number=} opt_timeout
-           * @constructor
-           * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.SessionRequest
-           */
   def this(appId: java.lang.String, capabilities: js.Array[Capability]) = this()
-  /**
-           * @param {string} appId
-           * @param {!Array<chrome.cast.Capability>=} opt_capabilities
-           * @param {number=} opt_timeout
-           * @constructor
-           * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.SessionRequest
-           */
   def this(appId: java.lang.String, capabilities: js.Array[Capability], timeout: scala.Double) = this()
   var appId: java.lang.String = js.native
   var capabilities: js.Array[Capability] = js.native

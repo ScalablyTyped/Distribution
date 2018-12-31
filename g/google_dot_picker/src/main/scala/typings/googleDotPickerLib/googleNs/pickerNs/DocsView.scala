@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("google.picker.DocsView")
 @js.native
+// Constructor. The ViewId must be one of the Google Drive views. Default is ViewId.DOCS.
 class DocsView () extends js.Object {
-  // Constructor. The ViewId must be one of the Google Drive views. Default is ViewId.DOCS.
   def this(viewId: java.lang.String) = this()
   // Allows the user to select folders from Team Drives.
   def setEnableTeamDrives(enabled: scala.Boolean): DocsView = js.native
@@ -18,7 +18,6 @@ class DocsView () extends js.Object {
   def setMode(mode: java.lang.String): DocsView = js.native
   // Filters the documents based on whether they are owned by the user, or shared with the user.
   def setOwnedByMe(): DocsView = js.native
-  // Filters the documents based on whether they are owned by the user, or shared with the user.
   def setOwnedByMe(me: scala.Boolean): DocsView = js.native
   // Sets the initial parent folder to display.
   def setParent(parentId: java.lang.String): DocsView = js.native

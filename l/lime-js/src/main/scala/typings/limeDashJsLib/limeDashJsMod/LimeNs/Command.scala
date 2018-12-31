@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Command extends Envelope {
   var method: java.lang.String
   var reason: js.UndefOr[Reason] = js.undefined

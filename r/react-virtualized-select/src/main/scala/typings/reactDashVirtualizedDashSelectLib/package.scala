@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object reactDashVirtualizedDashSelectLib {
-  type VirtualizedSelectProps[TValue] = ((js.Any with Anon_Async) | js.Any) with js.Any
+  type VirtualizedSelectProps[TValue] = (((/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ReactCreatableSelectProps<TValue> */ js.Any) with Anon_Async) | (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ReactCreatableSelectProps<TValue> */ js.Any)) with (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ReactSelectProps<TValue> */ js.Any)
 }

@@ -47,12 +47,6 @@ trait Server extends js.Object {
   		 * @return This Server
   		 */
   def attach(port: scala.Double): Server = js.native
-  /**
-  		 * Attaches socket.io to a port
-  		 * @param port The port that we want to attach to
-  		 * @param opts An optional parameters object
-  		 * @return This Server
-  		 */
   def attach(port: scala.Double, opts: ServerOptions): Server = js.native
   /**
   		 * Attaches socket.io to a server
@@ -61,12 +55,6 @@ trait Server extends js.Object {
   		 * @return This Server
   		 */
   def attach(srv: js.Any): Server = js.native
-  /**
-  		 * Attaches socket.io to a server
-  		 * @param srv The http.Server that we want to attach to
-  		 * @param opts An optional parameters object
-  		 * @return This Server
-  		 */
   def attach(srv: js.Any, opts: ServerOptions): Server = js.native
   /**
   		 * Binds socket.io to an engine.io instance
@@ -91,9 +79,6 @@ trait Server extends js.Object {
   		 * Closes the server connection
   		 */
   def close(): scala.Unit = js.native
-  /**
-  		 * Closes the server connection
-  		 */
   def close(fn: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
   		 * Sets the compress flag
@@ -117,17 +102,11 @@ trait Server extends js.Object {
   		 * @see attach( port, opts )
   		 */
   def listen(port: scala.Double): Server = js.native
-  /**
-  		 * @see attach( port, opts )
-  		 */
   def listen(port: scala.Double, opts: ServerOptions): Server = js.native
   /**
   		 * @see attach( srv, opts )
   		 */
   def listen(srv: js.Any): Server = js.native
-  /**
-  		 * @see attach( srv, opts )
-  		 */
   def listen(srv: js.Any, opts: ServerOptions): Server = js.native
   /**
   		 * Looks up/creates a Namespace
@@ -136,19 +115,7 @@ trait Server extends js.Object {
   		 * @return The Namespace
   		 */
   def of(nsp: java.lang.String): Namespace = js.native
-  /**
-  		 * Looks up/creates a Namespace
-  		 * @param nsp The name of the NameSpace to look up/create. Should start
-  		 * with a '/'
-  		 * @return The Namespace
-  		 */
   def of(nsp: js.Function): Namespace = js.native
-  /**
-  		 * Looks up/creates a Namespace
-  		 * @param nsp The name of the NameSpace to look up/create. Should start
-  		 * with a '/'
-  		 * @return The Namespace
-  		 */
   def of(nsp: stdLib.RegExp): Namespace = js.native
   /**
   		 * Base 'on' method to add a listener for an event
@@ -211,12 +178,6 @@ trait Server extends js.Object {
   		 * return This Server
   		 */
   def origins(v: java.lang.String): Server = js.native
-  /**
-  		 * Sets the allowed origins for requests
-  		 * @param v The allowed origins, in host:port form
-  		 * @default "*:*"
-  		 * return This Server
-  		 */
   def origins(v: js.Array[java.lang.String]): Server = js.native
   /**
   		 * Gets the client serving path

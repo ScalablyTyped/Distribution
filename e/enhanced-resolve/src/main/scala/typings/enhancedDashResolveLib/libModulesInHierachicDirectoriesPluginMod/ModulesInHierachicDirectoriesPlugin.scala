@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModulesInHierachicDirectoriesPlugin extends js.Object {
   var directories: js.Array[java.lang.String]
   var source: java.lang.String

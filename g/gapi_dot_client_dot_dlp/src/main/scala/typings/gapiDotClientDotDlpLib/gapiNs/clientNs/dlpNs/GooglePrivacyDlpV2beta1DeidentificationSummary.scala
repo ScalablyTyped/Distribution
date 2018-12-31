@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GooglePrivacyDlpV2beta1DeidentificationSummary extends js.Object {
   /** Transformations applied to the dataset. */
   var transformationSummaries: js.UndefOr[js.Array[GooglePrivacyDlpV2beta1TransformationSummary]] = js.undefined

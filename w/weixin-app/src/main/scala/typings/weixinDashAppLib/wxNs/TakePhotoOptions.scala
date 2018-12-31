@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TakePhotoOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 成像质量，值为high, normal, low，默认normal */

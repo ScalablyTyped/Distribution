@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UnsupportedElement extends js.Object {
   def copy(): UnsupportedElement
   def getAttributes(): js.Object

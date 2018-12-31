@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GlDatePickerOptions extends js.Object {
   var allowMonthSelect: js.UndefOr[scala.Boolean] = js.undefined
   var allowYearSelect: js.UndefOr[scala.Boolean] = js.undefined

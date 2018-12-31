@@ -8,17 +8,17 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DecodingType extends js.Object {
   /**
-                       * Decode function
-                       */
+    * Decode function
+    */
   @JSName("decode")
   var decode_Original: DecodeFunction = js.native
   /**
-                       * Value type
-                       */
+    * Value type
+    */
   var `type`: Type = js.native
   /**
-                       * Decode function
-                       */
+    * Decode function
+    */
   def decode(buf: adoneLib.adoneNs.collectionNs.ByteArray): js.Any = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InputHTMLAttributes[T] extends HTMLAttributes[T] {
   var accept: js.UndefOr[java.lang.String] = js.undefined
   var alt: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MarkdownlintResult extends js.Object {
   var errorContext: java.lang.String
   var errorDetail: js.UndefOr[java.lang.String] = js.undefined

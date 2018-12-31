@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CardMenuStyle extends js.Object {
   var backgroundColor: js.UndefOr[java.lang.String] = js.undefined
   var position: js.UndefOr[

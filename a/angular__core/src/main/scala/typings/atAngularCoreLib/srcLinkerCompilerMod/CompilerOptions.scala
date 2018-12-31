@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompilerOptions extends js.Object {
   var defaultEncapsulation: js.UndefOr[atAngularCoreLib.srcMetadataViewMod.ViewEncapsulation] = js.undefined
   var missingTranslation: js.UndefOr[atAngularCoreLib.srcI18nTokensMod.MissingTranslationStrategy] = js.undefined

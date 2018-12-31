@@ -11,34 +11,14 @@ trait Columns extends js.Object {
   def apply(Item: java.lang.String): Column = js.native
   def apply(Item: scala.Double): Column = js.native
   /**
-           * @param Type [Type=202]
-           * @param DefinedSize [DefinedSize=0]
-           */
+    * @param Type [Type=202]
+    * @param DefinedSize [DefinedSize=0]
+    */
   def Append(Item: Column): scala.Unit = js.native
-  /**
-           * @param Type [Type=202]
-           * @param DefinedSize [DefinedSize=0]
-           */
   def Append(Item: Column, Type: activexDashAdodbLib.ADODBNs.DataTypeEnum): scala.Unit = js.native
-  /**
-           * @param Type [Type=202]
-           * @param DefinedSize [DefinedSize=0]
-           */
   def Append(Item: Column, Type: activexDashAdodbLib.ADODBNs.DataTypeEnum, DefinedSize: scala.Double): scala.Unit = js.native
-  /**
-           * @param Type [Type=202]
-           * @param DefinedSize [DefinedSize=0]
-           */
   def Append(Item: java.lang.String): scala.Unit = js.native
-  /**
-           * @param Type [Type=202]
-           * @param DefinedSize [DefinedSize=0]
-           */
   def Append(Item: java.lang.String, Type: activexDashAdodbLib.ADODBNs.DataTypeEnum): scala.Unit = js.native
-  /**
-           * @param Type [Type=202]
-           * @param DefinedSize [DefinedSize=0]
-           */
   def Append(Item: java.lang.String, Type: activexDashAdodbLib.ADODBNs.DataTypeEnum, DefinedSize: scala.Double): scala.Unit = js.native
   def Delete(Item: java.lang.String): scala.Unit = js.native
   def Delete(Item: scala.Double): scala.Unit = js.native

@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IColorSliderStyleProps extends js.Object {
   /**
-       * Additional CSS class(es) to apply to the ColorSlider.
-       */
+    * Additional CSS class(es) to apply to the ColorSlider.
+    */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Theme (provided through customization).
-       */
+    * Theme (provided through customization).
+    */
   var theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkflowTask extends js.Object {
   var alwaysRun: scala.Boolean
   var condition: java.lang.String

@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 @JSImport("rrule/dist/esm/rruleset", JSImport.Default)
 @js.native
+/**
+  *
+  * @param {Boolean?} noCache
+  *  The same stratagy as RRule on cache, default to false
+  * @constructor
+  */
 class default () extends RRuleSet {
-  /**
-       *
-       * @param {Boolean?} noCache
-       *  The same stratagy as RRule on cache, default to false
-       * @constructor
-       */
   def this(noCache: scala.Boolean) = this()
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Search extends js.Object {
   var context: js.UndefOr[Context] = js.undefined
   var items: js.UndefOr[js.Array[Result]] = js.undefined

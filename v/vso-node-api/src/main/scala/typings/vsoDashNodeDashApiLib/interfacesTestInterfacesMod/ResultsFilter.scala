@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResultsFilter extends js.Object {
   var automatedTestName: java.lang.String
   var branch: java.lang.String

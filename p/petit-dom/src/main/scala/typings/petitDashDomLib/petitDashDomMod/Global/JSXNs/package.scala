@@ -14,5 +14,5 @@ package object JSXNs {
   type IntrinsicAttributes = petitDashDomLib.petitDashDomMod.PetitDomNs.IntrinsicProps
   // tslint:disable-next-line:no-empty-interface
   type IntrinsicClassAttributes[T] = petitDashDomLib.petitDashDomMod.PetitDomNs.Props[stdLib.Element]
-  type IntrinsicElements = petitDashDomLib.petitDashDomLibStrings.IntrinsicElements with js.Any
+  type IntrinsicElements = petitDashDomLib.petitDashDomLibStrings.IntrinsicElements with petitDashDomLib.petitDashDomMod.PetitDomNs.DomElements
 }

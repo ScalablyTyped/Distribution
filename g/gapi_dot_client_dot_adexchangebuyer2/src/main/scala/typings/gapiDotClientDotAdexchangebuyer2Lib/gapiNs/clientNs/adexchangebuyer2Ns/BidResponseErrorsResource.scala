@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BidResponseErrorsResource extends js.Object {
   /**
-               * List all errors that occurred in bid responses, with the number of bid
-               * responses affected for each reason.
-               */
+    * List all errors that occurred in bid responses, with the number of bid
+    * responses affected for each reason.
+    */
   def list(
     request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenPageSizePrettyPrintBearertokenPageToken
   ): gapiDotClientLib.gapiNs.clientNs.Request[ListBidResponseErrorsResponse]

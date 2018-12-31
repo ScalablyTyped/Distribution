@@ -22,61 +22,28 @@ trait IFieldExpression extends js.Object {
   /** Specifies that a condition will be tested against the field with the specified internal name, and the type of this field is Date */
   def DateField(internalName: java.lang.String): IDateTimeFieldExpression = js.native
   /** Used in queries for retrieving recurring calendar events.
-              NOTICE: DateRangesOverlap with overlapType other than Now cannot be used with SP.CamlQuery, because it doesn't support
-              CalendarDate and ExpandRecurrence query options. Lists.asmx, however, supports them, so you can still use DateRangesOverlap
-              with SPServices.
-              @param overlapType Defines type of overlap: return all events for a day, for a week, for a month or for a year
-              @param calendarDate Defines date that will be used for determining events for which exactly day/week/month/year will be returned.
-                                  This value is ignored for overlapType=Now, but for the other overlap types it is mandatory.
-              @param eventDateField Internal name of "Start Time" field (default: "EventDate" - all OOTB Calendar lists use this name)
-              @param endDateField Internal name of "End Time" field (default: "EndDate" - all OOTB Calendar lists use this name)
-              @param recurrenceIDField Internal name of "Recurrence ID" field (default: "RecurrenceID" - all OOTB Calendar lists use this name)
-           */
+    NOTICE: DateRangesOverlap with overlapType other than Now cannot be used with SP.CamlQuery, because it doesn't support
+    CalendarDate and ExpandRecurrence query options. Lists.asmx, however, supports them, so you can still use DateRangesOverlap
+    with SPServices.
+    @param overlapType Defines type of overlap: return all events for a day, for a week, for a month or for a year
+    @param calendarDate Defines date that will be used for determining events for which exactly day/week/month/year will be returned.
+    This value is ignored for overlapType=Now, but for the other overlap types it is mandatory.
+    @param eventDateField Internal name of "Start Time" field (default: "EventDate" - all OOTB Calendar lists use this name)
+    @param endDateField Internal name of "End Time" field (default: "EndDate" - all OOTB Calendar lists use this name)
+    @param recurrenceIDField Internal name of "Recurrence ID" field (default: "RecurrenceID" - all OOTB Calendar lists use this name)
+    */
   def DateRangesOverlap(overlapType: DateRangesOverlapType, calendarDate: java.lang.String): IExpression = js.native
-  /** Used in queries for retrieving recurring calendar events.
-              NOTICE: DateRangesOverlap with overlapType other than Now cannot be used with SP.CamlQuery, because it doesn't support
-              CalendarDate and ExpandRecurrence query options. Lists.asmx, however, supports them, so you can still use DateRangesOverlap
-              with SPServices.
-              @param overlapType Defines type of overlap: return all events for a day, for a week, for a month or for a year
-              @param calendarDate Defines date that will be used for determining events for which exactly day/week/month/year will be returned.
-                                  This value is ignored for overlapType=Now, but for the other overlap types it is mandatory.
-              @param eventDateField Internal name of "Start Time" field (default: "EventDate" - all OOTB Calendar lists use this name)
-              @param endDateField Internal name of "End Time" field (default: "EndDate" - all OOTB Calendar lists use this name)
-              @param recurrenceIDField Internal name of "Recurrence ID" field (default: "RecurrenceID" - all OOTB Calendar lists use this name)
-           */
   def DateRangesOverlap(
     overlapType: DateRangesOverlapType,
     calendarDate: java.lang.String,
     eventDateField: java.lang.String
   ): IExpression = js.native
-  /** Used in queries for retrieving recurring calendar events.
-              NOTICE: DateRangesOverlap with overlapType other than Now cannot be used with SP.CamlQuery, because it doesn't support
-              CalendarDate and ExpandRecurrence query options. Lists.asmx, however, supports them, so you can still use DateRangesOverlap
-              with SPServices.
-              @param overlapType Defines type of overlap: return all events for a day, for a week, for a month or for a year
-              @param calendarDate Defines date that will be used for determining events for which exactly day/week/month/year will be returned.
-                                  This value is ignored for overlapType=Now, but for the other overlap types it is mandatory.
-              @param eventDateField Internal name of "Start Time" field (default: "EventDate" - all OOTB Calendar lists use this name)
-              @param endDateField Internal name of "End Time" field (default: "EndDate" - all OOTB Calendar lists use this name)
-              @param recurrenceIDField Internal name of "Recurrence ID" field (default: "RecurrenceID" - all OOTB Calendar lists use this name)
-           */
   def DateRangesOverlap(
     overlapType: DateRangesOverlapType,
     calendarDate: java.lang.String,
     eventDateField: java.lang.String,
     endDateField: java.lang.String
   ): IExpression = js.native
-  /** Used in queries for retrieving recurring calendar events.
-              NOTICE: DateRangesOverlap with overlapType other than Now cannot be used with SP.CamlQuery, because it doesn't support
-              CalendarDate and ExpandRecurrence query options. Lists.asmx, however, supports them, so you can still use DateRangesOverlap
-              with SPServices.
-              @param overlapType Defines type of overlap: return all events for a day, for a week, for a month or for a year
-              @param calendarDate Defines date that will be used for determining events for which exactly day/week/month/year will be returned.
-                                  This value is ignored for overlapType=Now, but for the other overlap types it is mandatory.
-              @param eventDateField Internal name of "Start Time" field (default: "EventDate" - all OOTB Calendar lists use this name)
-              @param endDateField Internal name of "End Time" field (default: "EndDate" - all OOTB Calendar lists use this name)
-              @param recurrenceIDField Internal name of "Recurrence ID" field (default: "RecurrenceID" - all OOTB Calendar lists use this name)
-           */
   def DateRangesOverlap(
     overlapType: DateRangesOverlapType,
     calendarDate: java.lang.String,

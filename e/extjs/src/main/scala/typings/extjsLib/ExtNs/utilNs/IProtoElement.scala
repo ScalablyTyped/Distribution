@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IProtoElement
   extends extjsLib.ExtNs.IBase {
   /** [Method] Adds class to the element

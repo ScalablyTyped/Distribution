@@ -6,48 +6,47 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * ObjectReference contains enough information to let you inspect or modify the referred object.
-         */
-
+  * ObjectReference contains enough information to let you inspect or modify the referred object.
+  */
 trait ObjectReference extends js.Object {
   /**
-               * API version of the referent.
-               */
+    * API version of the referent.
+    */
   val apiVersion: java.lang.String
   /**
-               * If referring to a piece of an object instead of an entire object, this string should
-               * contain a valid JSON/Go field access statement, such as
-               * desiredState.manifest.containers[2]. For example, if the object reference is to a container
-               * within a pod, this would take on a value like: "spec.containers{name}" (where "name" refers
-               * to the name of the container that triggered the event) or if no container name is specified
-               * "spec.containers[2]" (container with index 2 in this pod). This syntax is chosen only to
-               * have some well-defined way of referencing a part of an object.
-               */
+    * If referring to a piece of an object instead of an entire object, this string should
+    * contain a valid JSON/Go field access statement, such as
+    * desiredState.manifest.containers[2]. For example, if the object reference is to a container
+    * within a pod, this would take on a value like: "spec.containers{name}" (where "name" refers
+    * to the name of the container that triggered the event) or if no container name is specified
+    * "spec.containers[2]" (container with index 2 in this pod). This syntax is chosen only to
+    * have some well-defined way of referencing a part of an object.
+    */
   val fieldPath: java.lang.String
   /**
-               * Kind of the referent. More info:
-               * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
-               */
+    * Kind of the referent. More info:
+    * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
+    */
   val kind: java.lang.String
   /**
-               * Name of the referent. More info:
-               * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
-               */
+    * Name of the referent. More info:
+    * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
+    */
   val name: java.lang.String
   /**
-               * Namespace of the referent. More info:
-               * https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
-               */
+    * Namespace of the referent. More info:
+    * https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
+    */
   val namespace: java.lang.String
   /**
-               * Specific resourceVersion to which this reference is made, if any. More info:
-               * https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency
-               */
+    * Specific resourceVersion to which this reference is made, if any. More info:
+    * https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency
+    */
   val resourceVersion: java.lang.String
   /**
-               * UID of the referent. More info:
-               * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids
-               */
+    * UID of the referent. More info:
+    * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids
+    */
   val uid: java.lang.String
 }
 

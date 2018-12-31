@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IExtension extends js.Object {
   var controller: js.UndefOr[js.Any] = js.undefined
   var definition: js.UndefOr[IDefinition] = js.undefined

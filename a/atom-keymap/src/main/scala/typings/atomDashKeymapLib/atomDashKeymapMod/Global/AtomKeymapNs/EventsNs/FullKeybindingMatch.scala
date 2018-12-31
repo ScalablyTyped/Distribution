@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FullKeybindingMatch extends js.Object {
   /** The KeyBinding that the keystrokes matched. */
   var binding: atomDashKeymapLib.atomDashKeymapMod.Global.AtomKeymapNs.KeyBinding

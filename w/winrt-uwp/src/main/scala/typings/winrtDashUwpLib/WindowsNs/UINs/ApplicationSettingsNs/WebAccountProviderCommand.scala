@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebAccountProviderCommand protected () extends js.Object {
   /**
-                   * Initializes a new instance of the WebAccountProviderCommand class.
-                   * @param webAccountProvider The web account provider.
-                   * @param invoked The delegate that handles the provider command.
-                   */
+    * Initializes a new instance of the WebAccountProviderCommand class.
+    * @param webAccountProvider The web account provider.
+    * @param invoked The delegate that handles the provider command.
+    */
   def this(webAccountProvider: winrtDashUwpLib.WindowsNs.SecurityNs.CredentialsNs.WebAccountProvider, invoked: WebAccountProviderCommandInvokedHandler) = this()
   /** Gets the delegate that's invoked when the user selects an account and a specific action in the accounts pane. */
   @JSName("invoked")

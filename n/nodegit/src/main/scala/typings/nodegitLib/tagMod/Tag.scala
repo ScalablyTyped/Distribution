@@ -59,22 +59,12 @@ object Tag extends js.Object {
     repo: nodegitLib.repositoryMod.Repository
   ): scala.Double = js.native
   /**
-       * Retrieves the tag pointed to by the oid
-       *
-       *
-       */
+    * Retrieves the tag pointed to by the oid
+    *
+    *
+    */
   def lookup(repo: nodegitLib.repositoryMod.Repository, id: java.lang.String): js.Promise[nodegitLib.tagMod.Tag] = js.native
-  /**
-       * Retrieves the tag pointed to by the oid
-       *
-       *
-       */
   def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid): js.Promise[nodegitLib.tagMod.Tag] = js.native
-  /**
-       * Retrieves the tag pointed to by the oid
-       *
-       *
-       */
   def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.tagMod.Tag): js.Promise[nodegitLib.tagMod.Tag] = js.native
   def lookupPrefix(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid, len: scala.Double): js.Promise[nodegitLib.tagMod.Tag] = js.native
 }

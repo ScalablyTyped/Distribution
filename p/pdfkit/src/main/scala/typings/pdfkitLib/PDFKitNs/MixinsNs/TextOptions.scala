@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextOptions extends js.Object {
   /** the alignment of the text (center, justify, left, right) */
   var align: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExpanderDefaults extends js.Object {
   /** Default: false */
   var filterable: scala.Boolean

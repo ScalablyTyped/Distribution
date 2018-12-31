@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScrollbarTrack extends js.Object {
   val element: stdLib.HTMLElement
   val thumb: ScrollbarThumb

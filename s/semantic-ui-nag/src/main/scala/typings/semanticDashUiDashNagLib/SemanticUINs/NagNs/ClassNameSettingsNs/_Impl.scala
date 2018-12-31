@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default 'bottom'
-                   */
+    * @default 'bottom'
+    */
   var bottom: java.lang.String
   /**
-                   * @default 'fixed'
-                   */
+    * @default 'fixed'
+    */
   var fixed: java.lang.String
 }
 

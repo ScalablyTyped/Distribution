@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IIconSubset extends js.Object {
   var fontFace: js.UndefOr[atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IFontFace] = js.undefined
   var icons: org.scalablytyped.runtime.StringDictionary[java.lang.String | reactLib.reactMod.Global.JSXNs.Element]

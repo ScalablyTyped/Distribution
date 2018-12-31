@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SendDialogParams extends js.Object {
    // "send"
   var app_id: java.lang.String

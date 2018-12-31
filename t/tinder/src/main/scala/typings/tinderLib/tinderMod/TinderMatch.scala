@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TinderMatch extends js.Object {
   var _id: java.lang.String
   var closed: scala.Boolean

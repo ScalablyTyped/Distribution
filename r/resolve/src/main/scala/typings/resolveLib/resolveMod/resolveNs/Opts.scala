@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Opts extends js.Object {
   /** directory to begin resolving from (defaults to __dirname) */
   var basedir: js.UndefOr[java.lang.String] = js.undefined
@@ -29,12 +28,12 @@ trait Opts extends js.Object {
   /** require.paths array to use if nothing is found on the normal node_modules recursive walk (probably don't use this) */
   var paths: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   /**
-       * if true, doesn't resolve `basedir` to real path before resolving.
-       * This is the way Node resolves dependencies when executed with the --preserve-symlinks flag.
-       *
-       * Note: this property is currently true by default but it will be changed to false in the next major version because Node's resolution
-       * algorithm does not preserve symlinks by default.
-      */
+    * if true, doesn't resolve `basedir` to real path before resolving.
+    * This is the way Node resolves dependencies when executed with the --preserve-symlinks flag.
+    *
+    * Note: this property is currently true by default but it will be changed to false in the next major version because Node's resolution
+    * algorithm does not preserve symlinks by default.
+    */
   var preserveSymlinks: js.UndefOr[scala.Boolean] = js.undefined
 }
 

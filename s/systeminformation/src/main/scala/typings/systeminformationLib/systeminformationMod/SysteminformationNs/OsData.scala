@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OsData extends js.Object {
   var arch: java.lang.String
   var codename: java.lang.String

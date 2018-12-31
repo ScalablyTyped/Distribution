@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IScroller
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Config Option] (String) */

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListenerExpression extends js.Object {
   def createBinding(target: js.Any): Binding
 }

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FitOptions extends js.Object {
   var height: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var maxHeight: js.UndefOr[java.lang.String | scala.Double] = js.undefined

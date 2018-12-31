@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Image extends js.Object {
   /** A unique id representing this image. */
   var id: js.UndefOr[java.lang.String] = js.undefined

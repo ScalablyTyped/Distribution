@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SelfLink extends js.Object {
   /** The List of Posts for this Blog. */
   var items: js.UndefOr[js.Array[gapiDotClientDotBloggerLib.gapiNs.clientNs.bloggerNs.Post]] = js.undefined

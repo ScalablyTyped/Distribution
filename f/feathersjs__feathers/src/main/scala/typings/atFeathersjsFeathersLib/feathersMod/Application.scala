@@ -18,7 +18,7 @@ trait Application[ServiceTypes]
   def hooks(hooks: stdLib.Partial[HooksObject]): this.type = js.native
   def service(location: java.lang.String): Service[_] = js.native
   def service[L /* <: java.lang.String */](location: L): Service[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(ServiceTypes))),List()),Left(TsIdentSimple(L))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: ServiceTypes[L] */ js.Any
   ] = js.native
   def set(name: java.lang.String, value: js.Any): this.type = js.native
   def setup(): this.type = js.native

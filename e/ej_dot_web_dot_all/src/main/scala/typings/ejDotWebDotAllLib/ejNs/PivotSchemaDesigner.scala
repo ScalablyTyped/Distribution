@@ -16,12 +16,12 @@ class PivotSchemaDesigner protected () extends Widget {
   @JSName("model")
   var model_PivotSchemaDesigner: ejDotWebDotAllLib.ejNs.PivotSchemaDesignerNs.Model = js.native
   /** Performs an asynchronous HTTP (AJAX) request.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def doAjaxPost(): scala.Unit = js.native
   /** Re-renders the control with the data source bound to the pivot control at that instant.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def refreshControl(): scala.Unit = js.native
 }
 

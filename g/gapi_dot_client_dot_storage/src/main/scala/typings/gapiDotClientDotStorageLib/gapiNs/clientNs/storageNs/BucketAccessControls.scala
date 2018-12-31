@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BucketAccessControls extends js.Object {
   /** The list of items. */
   var items: js.UndefOr[js.Array[BucketAccessControl]] = js.undefined

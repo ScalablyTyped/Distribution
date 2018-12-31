@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRecognizer
   extends senchaUnderscoreTouchLib.ExtNs.mixinNs.IIdentifiable {
   /** [Method] Returns the value of callbackScope

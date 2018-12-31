@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Date returned by stringToDate */
-
 trait GlobalizationDate extends js.Object {
   /* The day from (1-31). */
   var day: scala.Double

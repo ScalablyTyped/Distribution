@@ -48,8 +48,8 @@ class SearchBox protected () extends ClientControl {
   def get_promptCssClass(): java.lang.String = js.native
   def get_queryGroupNames(): js.Array[java.lang.String] = js.native
   /** Gets the interval in milliseconds, if user is idle during this interval, suggestions retrieval will be initiated.
-           * Default value is 250.
-           */
+    * Default value is 250.
+    */
   def get_querySuggestionCompletionInterval(): scala.Double = js.native
   /** Gets number of suggestions to display. Default is 5. */
   def get_querySuggestionCount(): scala.Double = js.native
@@ -90,9 +90,9 @@ class SearchBox protected () extends ClientControl {
   /** Sets the search input placeholder text */
   def set_currentPrompt(value: java.lang.String): java.lang.String = js.native
   /** Sets the current search term.
-            * Does not update results or even re-render control automatically, only sets the value.
-            * You can call .renderControl() method to re-render control.
-            */
+    * Does not update results or even re-render control automatically, only sets the value.
+    * You can call .renderControl() method to re-render control.
+    */
   def set_currentTerm(value: java.lang.String): java.lang.String = js.native
   def set_initialPrompt(value: java.lang.String): java.lang.String = js.native
   def set_maintainQueryState(value: scala.Boolean): scala.Boolean = js.native
@@ -106,8 +106,8 @@ class SearchBox protected () extends ClientControl {
   def set_promptCssClass(value: java.lang.String): java.lang.String = js.native
   def set_queryGroupNames(value: js.Any): js.Array[java.lang.String] = js.native
   /** Sets the interval in milliseconds, if user is idle during this interval, suggestions retrieval will be initiated.
-           * Default value is 250.
-           */
+    * Default value is 250.
+    */
   def set_querySuggestionCompletionInterval(value: scala.Double): scala.Double = js.native
   /** Sets number of suggestions to display. Default is 5. */
   def set_querySuggestionCount(value: scala.Double): scala.Double = js.native
@@ -115,9 +115,9 @@ class SearchBox protected () extends ClientControl {
   def set_querySuggestionMinimumPrefixLength(value: scala.Double): scala.Double = js.native
   def set_querySuggestionsSourceID(value: java.lang.String): java.lang.String = js.native
   /** Sets the results page address, e.g. '~site/_layouts/15/osssearchresults.aspx?u={contexturl}'
-            * Parameter u is used for setting the url filter for the search, so that only results within
-            * e.g. specified site are returned. Omit this parameter if you want to search everywhere.
-            */
+    * Parameter u is used for setting the url filter for the search, so that only results within
+    * e.g. specified site are returned. Omit this parameter if you want to search everywhere.
+    */
   def set_resultsPageAddress(value: java.lang.String): java.lang.String = js.native
   def set_searchBoxContainerId(value: java.lang.String): java.lang.String = js.native
   /** Sets the id of the search box input element */

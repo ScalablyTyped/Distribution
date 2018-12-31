@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // https://www.w3.org/TR/webrtc/#idl-def-rtcrtpencodingparameters
-
 trait RTCRtpEncodingParameters extends js.Object {
   //ssrc: number;
   //rtx: RTCRtpRtxParameters;

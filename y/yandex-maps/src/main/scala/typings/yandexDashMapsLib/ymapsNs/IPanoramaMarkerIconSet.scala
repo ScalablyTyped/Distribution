@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPanoramaMarkerIconSet extends js.Object {
   var default: IPanoramaMarkerIcon | scala.Null
   var expanded: IPanoramaMarkerIcon | scala.Null

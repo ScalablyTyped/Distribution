@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ContentScriptContentScriptFileContentScriptWhen extends js.Object {
   var attachTo: js.UndefOr[
     jpmLib.pageDashModMod.attachmentMode | js.Array[jpmLib.pageDashModMod.attachmentMode]

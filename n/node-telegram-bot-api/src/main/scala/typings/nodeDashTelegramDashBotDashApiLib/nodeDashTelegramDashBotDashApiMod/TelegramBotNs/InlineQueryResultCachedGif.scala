@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InlineQueryResultCachedGif extends InlineQueryResultBase {
   var caption: js.UndefOr[java.lang.String] = js.undefined
   var gif_file_id: java.lang.String

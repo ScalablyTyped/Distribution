@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Cps extends js.Object {
   var cps: js.UndefOr[js.Array[Anon_Y]] = js.undefined
   var invert: scala.Boolean

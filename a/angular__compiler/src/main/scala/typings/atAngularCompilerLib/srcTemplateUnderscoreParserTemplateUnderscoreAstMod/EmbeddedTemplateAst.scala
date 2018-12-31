@@ -19,14 +19,14 @@ class EmbeddedTemplateAst protected () extends TemplateAst {
   var queryMatches: js.Array[QueryMatch] = js.native
   var references: js.Array[ReferenceAst] = js.native
   /**
-       * The source span from which this node was parsed.
-       */
+    * The source span from which this node was parsed.
+    */
   /* CompleteClass */
   override var sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan = js.native
   var variables: js.Array[VariableAst] = js.native
   /**
-       * Visit this node and possibly transform it.
-       */
+    * Visit this node and possibly transform it.
+    */
   /* CompleteClass */
   override def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any = js.native
 }

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InitParams extends js.Object {
   var appId: java.lang.String
   var autoLogAppEvents: js.UndefOr[scala.Boolean] = js.undefined

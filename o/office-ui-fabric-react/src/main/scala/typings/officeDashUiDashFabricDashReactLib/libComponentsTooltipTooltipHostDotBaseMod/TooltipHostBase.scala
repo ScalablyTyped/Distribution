@@ -26,8 +26,8 @@ class TooltipHostBase protected ()
   @JSName("componentWillUnmount")
   def componentWillUnmount_MTooltipHostBase(): scala.Unit = js.native
   /**
-       * Dismisses the tooltip
-       */
+    * Dismisses the tooltip
+    */
   /* CompleteClass */
   override def dismiss(): scala.Unit = js.native
 }

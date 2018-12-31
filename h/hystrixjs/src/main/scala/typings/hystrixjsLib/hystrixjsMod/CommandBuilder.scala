@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommandBuilder extends js.Object {
   def build(): Command
   def circuitBreakerErrorThresholdPercentage(value: scala.Double): CommandBuilder
@@ -19,7 +18,7 @@ trait CommandBuilder extends js.Object {
   def percentileWindowLength(value: scala.Double): CommandBuilder
   def percentileWindowNumberOfBuckets(value: scala.Double): CommandBuilder
   def requestVolumeRejectionThreshold(value: scala.Double): CommandBuilder
-  def run(value: js.Function1[/* repeated */js.Any, js.Thenable[_]]): CommandBuilder
+  def run(value: js.Function1[/* repeated */ js.Any, js.Thenable[_]]): CommandBuilder
   def statisticalWindowLength(value: scala.Double): CommandBuilder
   def statisticalWindowNumberOfBuckets(value: scala.Double): CommandBuilder
   def timeout(value: scala.Double): CommandBuilder

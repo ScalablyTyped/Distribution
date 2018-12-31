@@ -9,18 +9,18 @@ import scala.scalajs.js.annotation._
 trait ISuggestionsCoreProps[T]
   extends reactLib.reactMod.ReactNs.ClassAttributes[js.Any] {
   /**
-       * Gets the component ref.
-       */
+    * Gets the component ref.
+    */
   var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[js.Object]] = js.native
   /**
-       * How the suggestion should look in the suggestion list.
-       */
+    * How the suggestion should look in the suggestion list.
+    */
   var onRenderSuggestion: js.UndefOr[
     js.Function2[/* props */ T, /* suggestionItemProps */ T, reactLib.reactMod.Global.JSXNs.Element]
   ] = js.native
   /**
-       * Function to fire when one of the optional remove buttons on a suggestion is clicked.
-       */
+    * Function to fire when one of the optional remove buttons on a suggestion is clicked.
+    */
   var onSuggestionRemove: js.UndefOr[
     js.Function3[
       /* ev */ js.UndefOr[
@@ -34,54 +34,45 @@ trait ISuggestionsCoreProps[T]
     ]
   ] = js.native
   /**
-       * Maximum number of suggestions to show in the full suggestion list.
-       */
+    * Maximum number of suggestions to show in the full suggestion list.
+    */
   var resultsMaximumNumber: js.UndefOr[scala.Double] = js.native
   /**
-       * Indicates whether to loop around to the top or bottom of the the suggestions
-       * on calling nextSuggestion and previousSuggestion, respectively
-       */
+    * Indicates whether to loop around to the top or bottom of the the suggestions
+    * on calling nextSuggestion and previousSuggestion, respectively
+    */
   var shouldLoopSelection: scala.Boolean = js.native
   /**
-       * Indicates whether to show a button with each suggestion to remove that suggestion.
-       */
+    * Indicates whether to show a button with each suggestion to remove that suggestion.
+    */
   var showRemoveButtons: js.UndefOr[scala.Boolean] = js.native
   /**
-       * The list of Suggestions that will be displayed
-       */
+    * The list of Suggestions that will be displayed
+    */
   var suggestions: js.Array[
     officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsControllerMod.ISuggestionModel[T]
   ] = js.native
   /**
-       * Screen reader message to read when there are suggestions available.
-       */
+    * Screen reader message to read when there are suggestions available.
+    */
   var suggestionsAvailableAlertText: js.UndefOr[java.lang.String] = js.native
   /**
-       * An ARIA label for the container that is the parent of the suggestions.
-       */
+    * An ARIA label for the container that is the parent of the suggestions.
+    */
   var suggestionsContainerAriaLabel: js.UndefOr[java.lang.String] = js.native
   /**
-       * the classname of the suggestionitem.
-       */
+    * the classname of the suggestionitem.
+    */
   var suggestionsItemClassName: js.UndefOr[java.lang.String] = js.native
   /**
-       * What should occur when a suggestion is clicked
-       */
+    * What should occur when a suggestion is clicked
+    */
   def onSuggestionClick(): scala.Unit = js.native
-  /**
-       * What should occur when a suggestion is clicked
-       */
   def onSuggestionClick(ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
-  /**
-       * What should occur when a suggestion is clicked
-       */
   def onSuggestionClick(
     ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent],
     item: js.Any
   ): scala.Unit = js.native
-  /**
-       * What should occur when a suggestion is clicked
-       */
   def onSuggestionClick(
     ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent],
     item: js.Any,

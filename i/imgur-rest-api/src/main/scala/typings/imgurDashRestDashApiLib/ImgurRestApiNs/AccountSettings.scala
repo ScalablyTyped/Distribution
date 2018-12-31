@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccountSettings extends js.Object {
    //number|boolean;
   var accepted_gallery_terms: scala.Boolean

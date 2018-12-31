@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FailureErrorSuccessTopicAny extends js.Object {
   def failure(error: stdLib.Error): js.Any
   def success(topic: kiiDashCloudDashSdkLib.KiiCloudNs.KiiTopic): js.Any

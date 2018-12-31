@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SparklineSeriesItemLabels extends js.Object {
   var align: js.UndefOr[java.lang.String] = js.undefined
   var background: js.UndefOr[java.lang.String | js.Function] = js.undefined

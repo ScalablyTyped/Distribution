@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait SimpleFormLayout extends js.Object
 
 /**
-         * Available <code>FormLayouts</code> used to render a <code>SimpleForm</code>.
-        */
+  * Available <code>FormLayouts</code> used to render a <code>SimpleForm</code>.
+  */
 @JSGlobal("sap.ui.layout.form.SimpleFormLayout")
 @js.native
 object SimpleFormLayout extends js.Object {

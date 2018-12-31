@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IObjectClasses extends js.Object {
   val Count: scala.Double
   def Add(Index: scala.Double, ObjectClass: IObjectClass): scala.Unit

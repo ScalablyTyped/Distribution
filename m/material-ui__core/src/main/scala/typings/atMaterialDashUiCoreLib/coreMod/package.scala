@@ -19,6 +19,6 @@ package object coreMod {
       ]) with AdditionalProps
     ]
   ]
-  type PropsOf[C] = js.Any
+  type PropsOf[C] = /* import warning: ImportType.apply Failed type conversion: react.react.Global.JSX.IntrinsicElements[C] */ js.Any
   type StandardProps[C, ClassKey /* <: java.lang.String */, Removals /* <: java.lang.String */] = (Omit[C, atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.classes | Removals]) with atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[ClassKey] with atMaterialDashUiCoreLib.Anon_ClassName
 }

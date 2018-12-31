@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITip
   extends extjsLib.ExtNs.tipNs.ITip {
   /** [Config Option] (String) */

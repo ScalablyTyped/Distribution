@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUserKeyOauthtoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -35,16 +34,16 @@ trait Anon_AccesstokenPrettyPrintBearertokenCallbackQuotaUserKeyOauthtoken exten
   /** The ID of the student whose guardian invitation is to be modified. */
   var studentId: java.lang.String
   /**
-                   * Mask that identifies which fields on the course to update.
-                   * This field is required to do an update. The update will fail if invalid
-                   * fields are specified. The following fields are valid:
-                   *
-                   * &#42; `state`
-                   *
-                   * When set in a query parameter, this field should be specified as
-                   *
-                   * `updateMask=<field1>,<field2>,...`
-                   */
+    * Mask that identifies which fields on the course to update.
+    * This field is required to do an update. The update will fail if invalid
+    * fields are specified. The following fields are valid:
+    *
+    * &#42; `state`
+    *
+    * When set in a query parameter, this field should be specified as
+    *
+    * `updateMask=<field1>,<field2>,...`
+    */
   var updateMask: js.UndefOr[java.lang.String] = js.undefined
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomTransformers extends js.Object {
   /** Custom transformers to evaluate after built-in .js transformations. */
   var after: js.UndefOr[js.Array[TransformerFactory[SourceFile]]] = js.undefined

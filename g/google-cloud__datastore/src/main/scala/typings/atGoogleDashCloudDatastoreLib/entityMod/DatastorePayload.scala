@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatastorePayload[T] extends js.Object {
   // TODO Include possibility of 'raw data' with indexing options, etc
   var data: T | js.Object

@@ -12,14 +12,13 @@ import scala.scalajs.js.annotation._
 class Workbook () extends js.Object {
   /** Activates the sheet, either by name or index, and returns a promise of the sheet that was activated. */
   def activateSheetAsync(sheetNameOrIndex: java.lang.String): js.Promise[Sheet] = js.native
-  /** Activates the sheet, either by name or index, and returns a promise of the sheet that was activated. */
   def activateSheetAsync(sheetNameOrIndex: scala.Double): js.Promise[Sheet] = js.native
   /**
-           * Changes the value of the parameter with the given name and returns the new Parameter.
-           * The value should be the same data type as the parameter and within the allowable range of values.
-           * It also needs to be the aliased value and not the raw value.
-           * For more information and examples, see changeParameterValueAsync() Additional Information
-           */
+    * Changes the value of the parameter with the given name and returns the new Parameter.
+    * The value should be the same data type as the parameter and within the allowable range of values.
+    * It also needs to be the aliased value and not the raw value.
+    * For more information and examples, see changeParameterValueAsync() Additional Information
+    */
   def changeParameterValueAsync(name: java.lang.String, value: js.Any): js.Promise[Parameter] = js.native
   /** Gets the currently active custom view, or null if no custom view is active. */
   def getActiveCustomView(): CustomView = js.native

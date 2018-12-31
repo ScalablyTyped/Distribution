@@ -8,5 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("validator/lib/isURL", JSImport.Namespace)
 @js.native
 object libIsURLMod
-  extends org.scalablytyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[
+      js.Function2[
+        /* str */ java.lang.String, 
+        /* options */ js.UndefOr[validatorLib.ValidatorJSNs.IsURLOptions], 
+        scala.Boolean
+      ]
+    ]
 

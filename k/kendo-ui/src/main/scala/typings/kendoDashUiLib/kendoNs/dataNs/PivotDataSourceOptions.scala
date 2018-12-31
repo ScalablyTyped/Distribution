@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PivotDataSourceOptions extends DataSourceOptions {
   var columns: js.UndefOr[js.Array[java.lang.String] | js.Array[PivotDataSourceAxisOptions]] = js.undefined
   var measures: js.UndefOr[js.Array[java.lang.String] | PivotDataSourceMeasureOptions] = js.undefined

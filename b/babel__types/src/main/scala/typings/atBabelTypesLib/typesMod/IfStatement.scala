@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IfStatement extends BaseNode {
   var alternate: Statement | scala.Null
   var consequent: Statement

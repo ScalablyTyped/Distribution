@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * http://js.cytoscape.org/#layouts/cose
-     */
-
+  * http://js.cytoscape.org/#layouts/cose
+  */
 trait CoseLayoutOptions extends ShapedLayoutOptions {
   // Extra spacing between components in non-compound graphs
   var componentSpacing: scala.Double

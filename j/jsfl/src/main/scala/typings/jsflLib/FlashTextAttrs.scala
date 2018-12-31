@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlashTextAttrs extends FlashText {
   var aliasText: scala.Boolean
   var alignment: java.lang.String

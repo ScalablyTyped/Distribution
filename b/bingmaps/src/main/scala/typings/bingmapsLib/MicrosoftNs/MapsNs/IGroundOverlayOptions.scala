@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGroundOverlayOptions extends ICustomOverlayOptions {
   /** A background color that fills the bounding box area beneath the ground overlay. */
   var backgroundColor: js.UndefOr[java.lang.String | Color] = js.undefined

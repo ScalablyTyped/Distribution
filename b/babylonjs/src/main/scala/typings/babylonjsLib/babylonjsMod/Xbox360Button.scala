@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Defines supported buttons for XBox360 compatible gamepads
-     */
+  * Defines supported buttons for XBox360 compatible gamepads
+  */
 @JSImport("babylonjs", "Xbox360Button")
 @js.native
 object Xbox360Button extends js.Object {

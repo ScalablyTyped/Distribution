@@ -9,15 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced[T /* <: js.Object */] () extends NanoEvents[T] {
   /* CompleteClass */
-  override def emit[U /* <: java.lang.String */](
-    name: U,
-    value: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(U))) */js.Any
-  ): scala.Unit = js.native
+  override def emit[U /* <: java.lang.String */](name: U, value: /* import warning: ImportType.apply Failed type conversion: T[U] */ js.Any): scala.Unit = js.native
   /* CompleteClass */
   override def on[U /* <: java.lang.String */](
     name: U,
     callBack: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(U))) *//* arg */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[U] */ /* arg */ js.Any, 
       _
     ]
   ): js.Function0[scala.Unit] = js.native

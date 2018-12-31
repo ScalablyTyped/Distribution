@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents the definition of a video transform effect. */
 @JSGlobal("Windows.Media.Effects.VideoTransformEffectDefinition")
 @js.native
+/** Initializes a new instance of the VideoTransformEffectDefinition class. */
 class VideoTransformEffectDefinition () extends js.Object {
   /** Gets the activatable class ID of the video transform effect definition. */
   var activatableClassId: java.lang.String = js.native

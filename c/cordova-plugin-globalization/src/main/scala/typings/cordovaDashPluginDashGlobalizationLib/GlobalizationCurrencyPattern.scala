@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Pattern to format and parse currency values according
- * to the client's user preferences and ISO 4217 currency code.
- */
-
+  * Pattern to format and parse currency values according
+  * to the client's user preferences and ISO 4217 currency code.
+  */
 trait GlobalizationCurrencyPattern extends js.Object {
   /** The ISO 4217 currency code for the pattern. */
   var code: java.lang.String

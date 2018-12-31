@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 		 * Used to include blocks of literal text containing characters that would otherwise need
 		 * to be escaped.
 		 */
-
 trait CDATASection
   extends titaniumLib.TitaniumNs.Proxy {
   /**

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OlapXmlaDataSourceOptions
   extends /**
 	 * Option for OlapXmlaDataSourceOptions

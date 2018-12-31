@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DefaultProps extends js.Object {
   var defaultProps: js.Object
   var identity: scala.Boolean

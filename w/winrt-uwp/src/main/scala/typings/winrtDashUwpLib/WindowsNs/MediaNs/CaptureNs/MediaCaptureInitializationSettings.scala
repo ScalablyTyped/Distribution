@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Contains initialization settings for the MediaCapture object which are passed to the MediaCapture.InitializeAsync method. */
 @JSGlobal("Windows.Media.Capture.MediaCaptureInitializationSettings")
 @js.native
+/** Creates a new instance of the MediaCaptureInitializationSettings object. */
 class MediaCaptureInitializationSettings () extends js.Object {
   /** Gets the DeviceInformation.Id of the microphone. */
   var audioDeviceId: java.lang.String = js.native

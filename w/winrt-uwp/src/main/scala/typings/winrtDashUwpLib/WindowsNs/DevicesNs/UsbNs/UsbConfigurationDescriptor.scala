@@ -24,15 +24,15 @@ abstract class UsbConfigurationDescriptor () extends js.Object {
 @js.native
 object UsbConfigurationDescriptor extends js.Object {
   /**
-                   * Parses the specified USB descriptor and returns fields of a USB configuration descriptor.
-                   * @param descriptor A UsbDescriptor object that contains first 9 bytes of the USB configuration descriptor.
-                   * @return A UsbConfigurationDescriptor object that contains fields of a USB configuration descriptor.
-                   */
+    * Parses the specified USB descriptor and returns fields of a USB configuration descriptor.
+    * @param descriptor A UsbDescriptor object that contains first 9 bytes of the USB configuration descriptor.
+    * @return A UsbConfigurationDescriptor object that contains fields of a USB configuration descriptor.
+    */
   def parse(descriptor: winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbDescriptor): winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbConfigurationDescriptor = js.native
   /**
-                   * Retrieves the first 9 bytes of a USB configuration descriptor in a UsbConfigurationDescriptor object that is contained in a UsbDescriptor object.
-                   * @param descriptor The UsbDescriptor object to parse.
-                   */
+    * Retrieves the first 9 bytes of a USB configuration descriptor in a UsbConfigurationDescriptor object that is contained in a UsbDescriptor object.
+    * @param descriptor The UsbDescriptor object to parse.
+    */
   def tryParse(descriptor: winrtDashUwpLib.WindowsNs.DevicesNs.UsbNs.UsbDescriptor): winrtDashUwpLib.Anon_ReturnValueParsedBoolean = js.native
 }
 

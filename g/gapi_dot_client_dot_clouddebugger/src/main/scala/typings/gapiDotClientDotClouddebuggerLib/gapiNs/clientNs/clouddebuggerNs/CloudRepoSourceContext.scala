@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CloudRepoSourceContext extends js.Object {
   /** An alias, which may be a branch or tag. */
   var aliasContext: js.UndefOr[AliasContext] = js.undefined

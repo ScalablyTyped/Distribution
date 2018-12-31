@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 class ResolvedReflectiveFactory protected ()
   extends atAngularCoreLib.srcDiMod.ResolvedReflectiveFactory {
   def this(/**
-       * Factory function which can return an instance of an object represented by a key.
-       */
+    * Factory function which can return an instance of an object represented by a key.
+    */
   factory: js.Function, /**
-       * Arguments (dependencies) to the `factory` function.
-       */
+    * Arguments (dependencies) to the `factory` function.
+    */
   dependencies: js.Array[atAngularCoreLib.srcDiReflectiveUnderscoreProviderMod.ReflectiveDependency]) = this()
 }
 

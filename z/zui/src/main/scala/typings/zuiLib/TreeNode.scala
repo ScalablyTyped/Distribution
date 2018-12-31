@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * treeview
- */
-
-
+  * treeview
+  */
 trait TreeNode extends js.Object {
   var children: js.UndefOr[js.Array[TreeNode]] = js.undefined
   var html: js.UndefOr[java.lang.String] = js.undefined

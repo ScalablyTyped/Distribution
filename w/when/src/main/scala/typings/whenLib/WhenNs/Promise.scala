@@ -11,8 +11,6 @@ trait Promise[T] extends js.Object {
   // Make sure you test any usage of these overloads, exceptionType must
   // be a constructor with prototype set to an instance of Error.
   def `catch`[U](exceptionType: js.Any): Promise[U] = js.native
-  // Make sure you test any usage of these overloads, exceptionType must
-  // be a constructor with prototype set to an instance of Error.
   def `catch`[U](exceptionType: js.Any, onRejected: js.Function1[/* reason */ js.Any, U | Promise[U]]): Promise[U] = js.native
   def `catch`[U](
     filter: js.Function1[/* reason */ js.Any, scala.Boolean],
@@ -37,8 +35,6 @@ trait Promise[T] extends js.Object {
   // Make sure you test any usage of these overloads, exceptionType must
   // be a constructor with prototype set to an instance of Error.
   def otherwise[U](exceptionType: js.Any): Promise[U] = js.native
-  // Make sure you test any usage of these overloads, exceptionType must
-  // be a constructor with prototype set to an instance of Error.
   def otherwise[U](exceptionType: js.Any, onRejected: js.Function1[/* reason */ js.Any, U | Promise[U]]): Promise[U] = js.native
   def otherwise[U](onRejected: js.Function1[/* reason */ js.Any, scala.Boolean | Promise[U] | U]): Promise[U] = js.native
   def otherwise[U](

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SignOptions extends BaseSignOptions {
   var binaries: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var entitlements: js.UndefOr[java.lang.String] = js.undefined

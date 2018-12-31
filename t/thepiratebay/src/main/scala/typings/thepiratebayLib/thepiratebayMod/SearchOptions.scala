@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SearchOptions extends js.Object {
   var category: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var filter: js.UndefOr[thepiratebayLib.Anon_Verified] = js.undefined

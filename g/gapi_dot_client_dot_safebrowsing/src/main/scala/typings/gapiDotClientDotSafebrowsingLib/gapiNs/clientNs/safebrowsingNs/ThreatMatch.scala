@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThreatMatch extends js.Object {
   /**
-               * The cache lifetime for the returned match. Clients must not cache this
-               * response for more than this duration to avoid false positives.
-               */
+    * The cache lifetime for the returned match. Clients must not cache this
+    * response for more than this duration to avoid false positives.
+    */
   var cacheDuration: js.UndefOr[java.lang.String] = js.undefined
   /** The platform type matching this threat. */
   var platformType: js.UndefOr[java.lang.String] = js.undefined

@@ -79,11 +79,11 @@ object AnimatedNs extends js.Object {
     a: reactDashNativeLib.reactDashNativeMod.AnimatedNs.Animated,
     b: reactDashNativeLib.reactDashNativeMod.AnimatedNs.Animated
   ): reactDashNativeLib.reactDashNativeMod.AnimatedNs.AnimatedDivision = js.native
-  def event[T](argMapping: js.Array[reactDashNativeLib.reactDashNativeMod.AnimatedNs.Mapping | scala.Null]): js.Function1[/* repeated */js.Any, scala.Unit] = js.native
+  def event[T](argMapping: js.Array[reactDashNativeLib.reactDashNativeMod.AnimatedNs.Mapping | scala.Null]): js.Function1[/* repeated */ js.Any, scala.Unit] = js.native
   def event[T](
     argMapping: js.Array[reactDashNativeLib.reactDashNativeMod.AnimatedNs.Mapping | scala.Null],
     config: reactDashNativeLib.reactDashNativeMod.AnimatedNs.EventConfig[T]
-  ): js.Function1[/* repeated */js.Any, scala.Unit] = js.native
+  ): js.Function1[/* repeated */ js.Any, scala.Unit] = js.native
   def loop(animation: reactDashNativeLib.reactDashNativeMod.AnimatedNs.CompositeAnimation): reactDashNativeLib.reactDashNativeMod.AnimatedNs.CompositeAnimation = js.native
   def loop(
     animation: reactDashNativeLib.reactDashNativeMod.AnimatedNs.CompositeAnimation,

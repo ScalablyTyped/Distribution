@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FolderPackage extends js.Object {
   var Apple: scala.Double
   var Archive: scala.Double

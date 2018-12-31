@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Event extends js.Object {
   /**
-               * Additional event types. Some events may have multiple types when multiple actions are part of a single event. For example, creating a document,
-               * renaming it, and sharing it may be part of a single file-creation event.
-               */
+    * Additional event types. Some events may have multiple types when multiple actions are part of a single event. For example, creating a document,
+    * renaming it, and sharing it may be part of a single file-creation event.
+    */
   var additionalEventTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** The time at which the event occurred formatted as Unix time in milliseconds. */
   var eventTimeMillis: js.UndefOr[java.lang.String] = js.undefined

@@ -18,7 +18,6 @@ import scala.scalajs.js.annotation._
 //   placeholder.
 //
 // Inherited paragraph styles are represented as unset fields in this message.
-
 trait ParagraphStyle extends js.Object {
   // The text alignment for this paragraph.
   var alignment: ParagraphStyleAlignment

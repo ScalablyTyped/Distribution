@@ -14,9 +14,9 @@ abstract class UsbDescriptor () extends js.Object {
   /** Gets the length of the descriptor. */
   var length: scala.Double = js.native
   /**
-                   * Reads descriptor data in the caller-supplied buffer.
-                   * @param buffer A caller-supplied buffer that receives descriptor data.
-                   */
+    * Reads descriptor data in the caller-supplied buffer.
+    * @param buffer A caller-supplied buffer that receives descriptor data.
+    */
   def readDescriptorBuffer(buffer: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer): scala.Unit = js.native
 }
 

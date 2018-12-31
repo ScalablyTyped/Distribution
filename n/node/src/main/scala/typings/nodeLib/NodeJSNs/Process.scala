@@ -8,10 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Process extends EventEmitter {
   /**
-           * The `process.allowedNodeEnvironmentFlags` property is a special,
-           * read-only `Set` of flags allowable within the [`NODE_OPTIONS`][]
-           * environment variable.
-           */
+    * The `process.allowedNodeEnvironmentFlags` property is a special,
+    * read-only `Set` of flags allowable within the [`NODE_OPTIONS`][]
+    * environment variable.
+    */
   var allowedNodeEnvironmentFlags: nodeLib.ReadonlySet[java.lang.String] = js.native
   var arch: java.lang.String = js.native
   var argv: js.Array[java.lang.String] = js.native
@@ -42,19 +42,19 @@ trait Process extends EventEmitter {
   def abort(): scala.Unit = js.native
   def addListener(event: Signals, listener: SignalsListener): this.type = js.native
   /**
-           * EventEmitter
-           *   1. beforeExit
-           *   2. disconnect
-           *   3. exit
-           *   4. message
-           *   5. rejectionHandled
-           *   6. uncaughtException
-           *   7. unhandledRejection
-           *   8. warning
-           *   9. message
-           *  10. <All OS Signals>
-           *  11. newListener/removeListener inherited from EventEmitter
-           */
+    * EventEmitter
+    *   1. beforeExit
+    *   2. disconnect
+    *   3. exit
+    *   4. message
+    *   5. rejectionHandled
+    *   6. uncaughtException
+    *   7. unhandledRejection
+    *   8. warning
+    *   9. message
+    *  10. <All OS Signals>
+    *  11. newListener/removeListener inherited from EventEmitter
+    */
   @JSName("addListener")
   def addListener_beforeExit(event: nodeLib.nodeLibStrings.beforeExit, listener: BeforeExitListener): this.type = js.native
   @JSName("addListener")
@@ -103,13 +103,13 @@ trait Process extends EventEmitter {
   def emit_newListener(
     event: nodeLib.nodeLibStrings.newListener,
     eventName: java.lang.String,
-    listener: js.Function1[/* repeated */js.Any, scala.Unit]
+    listener: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("emit")
   def emit_newListener(
     event: nodeLib.nodeLibStrings.newListener,
     eventName: js.Symbol,
-    listener: js.Function1[/* repeated */js.Any, scala.Unit]
+    listener: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("emit")
   def emit_rejectionHandled(event: nodeLib.nodeLibStrings.rejectionHandled, promise: js.Promise[_]): scala.Boolean = js.native
@@ -117,7 +117,7 @@ trait Process extends EventEmitter {
   def emit_removeListener(
     event: nodeLib.nodeLibStrings.removeListener,
     eventName: java.lang.String,
-    listener: js.Function1[/* repeated */js.Any, scala.Unit]
+    listener: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("emit")
   def emit_uncaughtException(event: nodeLib.nodeLibStrings.uncaughtException, error: nodeLib.Error): scala.Boolean = js.native

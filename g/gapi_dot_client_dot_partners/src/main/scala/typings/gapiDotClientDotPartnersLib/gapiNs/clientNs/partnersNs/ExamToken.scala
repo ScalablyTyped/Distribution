@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExamToken extends js.Object {
   /** The id of the exam the token is for. */
   var examId: js.UndefOr[java.lang.String] = js.undefined

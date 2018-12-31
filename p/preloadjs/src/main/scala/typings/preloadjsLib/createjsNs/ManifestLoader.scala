@@ -15,7 +15,6 @@ class ManifestLoader protected () extends AbstractLoader {
 @JSGlobal("createjs.ManifestLoader")
 @js.native
 object ManifestLoader extends js.Object {
-  // methods
   def canLoadItem(item: js.Object): scala.Boolean = js.native
   // methods
   def canLoadItem(item: preloadjsLib.createjsNs.LoadItem): scala.Boolean = js.native

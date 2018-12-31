@@ -11,14 +11,10 @@ trait MDCComponent[A, F /* <: atMaterialBaseLib.foundationMod.default[A] */] ext
   // attached. An example of this might be deregistering a resize event from the window object.
   def destroy(): scala.Unit = js.native
   /**
-       * Fires a cross-browser-compatible custom event from the component root of the given type,
-       * with the given data.
-       */
+    * Fires a cross-browser-compatible custom event from the component root of the given type,
+    * with the given data.
+    */
   def emit(evtType: java.lang.String, evtData: js.Any): scala.Unit = js.native
-  /**
-       * Fires a cross-browser-compatible custom event from the component root of the given type,
-       * with the given data.
-       */
   def emit(evtType: java.lang.String, evtData: js.Any, shouldBubble: scala.Boolean): scala.Unit = js.native
   // Subclasses must override this method to return a properly configured foundation class for the
   // component.
@@ -33,14 +29,14 @@ trait MDCComponent[A, F /* <: atMaterialBaseLib.foundationMod.default[A] */] ext
   // initialized. Any additional arguments besides root and foundation will be passed in here.
   def initialize(args: js.Any*): scala.Unit = js.native
   /**
-       * Wrapper method to add an event listener to the component's root element. This is most useful when
-       * listening for custom events.
-       */
+    * Wrapper method to add an event listener to the component's root element. This is most useful when
+    * listening for custom events.
+    */
   def listen(evtType: java.lang.String, handler: stdLib.EventListener): scala.Unit = js.native
   /**
-       * Wrapper method to remove an event listener to the component's root element. This is most useful when
-       * unlistening for custom events.
-       */
+    * Wrapper method to remove an event listener to the component's root element. This is most useful when
+    * unlistening for custom events.
+    */
   def unlisten(evtType: java.lang.String, handler: stdLib.EventListener): scala.Unit = js.native
 }
 

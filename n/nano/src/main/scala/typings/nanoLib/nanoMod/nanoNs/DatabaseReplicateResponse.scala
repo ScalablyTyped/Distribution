@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // http://docs.couchdb.org/en/latest/api/server/common.html#post--_replicate
-
 trait DatabaseReplicateResponse extends js.Object {
   // Replication history
   var history: js.Array[DatabaseReplicationHistoryItem]

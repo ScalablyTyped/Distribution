@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OptionsV2 extends Options {
   var cdata: js.UndefOr[scala.Boolean] = js.undefined
   var chunkSize: js.UndefOr[scala.Double] = js.undefined

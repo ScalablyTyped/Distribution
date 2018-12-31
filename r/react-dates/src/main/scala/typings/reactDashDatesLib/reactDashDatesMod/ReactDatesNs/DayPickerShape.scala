@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // components/DayPickerShape.jsx
-
 trait DayPickerShape extends js.Object {
   var calendarInfoPosition: js.UndefOr[CalendarInfoPositionShape] = js.undefined
   var dayAriaLabelFormat: js.UndefOr[java.lang.String] = js.undefined

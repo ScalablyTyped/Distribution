@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PluginDefinition extends js.Object {
   var deferInit: js.UndefOr[scala.Boolean] = js.undefined
   var instance: wavesurferDotJsLib.Anon_Params

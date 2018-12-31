@@ -34,10 +34,6 @@ trait Parser[T] extends js.Object {
   		 * For example, string('x').desc('the letter x') will indicate that 'the letter x' was expected.
   		 */
   def desc(description: java.lang.String): Parser[T] = js.native
-  /**
-  		 * Returns a new parser whose failure message is description.
-  		 * For example, string('x').desc('the letter x') will indicate that 'the letter x' was expected.
-  		 */
   def desc(description: js.Array[java.lang.String]): Parser[T] = js.native
   // Fantasy land support
   /**
@@ -48,11 +44,6 @@ trait Parser[T] extends js.Object {
   		 * returns a new parser that returns the fallback value if the first parser failed.
   		 */
   def fallback[U](fallbackValue: U): Parser[T | U] = js.native
-  /**
-  		 * Returns a parser that looks for whatever arg wants to parse, but does not
-  		 * consume it. Yields the same result as parser. Equivalent to
-  		 * parser.skip(Parsimmon.lookahead(anotherParser)).
-  		 */
   def lookahead(arg: java.lang.String): Parser[T] = js.native
   /**
   		 * Returns a parser that looks for whatever arg wants to parse, but does not
@@ -60,11 +51,6 @@ trait Parser[T] extends js.Object {
   		 * parser.skip(Parsimmon.lookahead(anotherParser)).
   		 */
   def lookahead(arg: Parser[_]): Parser[T] = js.native
-  /**
-  		 * Returns a parser that looks for whatever arg wants to parse, but does not
-  		 * consume it. Yields the same result as parser. Equivalent to
-  		 * parser.skip(Parsimmon.lookahead(anotherParser)).
-  		 */
   def lookahead(arg: stdLib.RegExp): Parser[T] = js.native
   /**
   		 * expects parser zero or more times, and yields an array of the results.

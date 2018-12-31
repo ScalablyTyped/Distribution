@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KnockoutBindingHandler[E /* <: stdLib.Node */, V, VM]
   extends /* s */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var after: js.UndefOr[js.Array[java.lang.String]] = js.undefined

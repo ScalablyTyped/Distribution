@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ChartLineStyle extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.7]
-     */
+  * [Api set: ExcelApi 1.7]
+  */
 @JSGlobal("Excel.ChartLineStyle")
 @js.native
 object ChartLineStyle extends js.Object {

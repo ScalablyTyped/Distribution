@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILineChartClasses extends js.Object {
   var area: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Default is 'ct-chart-line'
-           */
+    * Default is 'ct-chart-line'
+    */
   var chart: js.UndefOr[java.lang.String] = js.undefined
   var end: js.UndefOr[java.lang.String] = js.undefined
   var grid: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChannelSnippet extends js.Object {
   /** The country of the channel. */
   var country: js.UndefOr[java.lang.String] = js.undefined
@@ -20,9 +19,9 @@ trait ChannelSnippet extends js.Object {
   /** The date and time that the channel was created. The value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format. */
   var publishedAt: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * A map of thumbnail images associated with the channel. For each object in the map, the key is the name of the thumbnail image, and the value is an
-               * object that contains other information about the thumbnail.
-               */
+    * A map of thumbnail images associated with the channel. For each object in the map, the key is the name of the thumbnail image, and the value is an
+    * object that contains other information about the thumbnail.
+    */
   var thumbnails: js.UndefOr[ThumbnailDetails] = js.undefined
   /** The channel's title. */
   var title: js.UndefOr[java.lang.String] = js.undefined

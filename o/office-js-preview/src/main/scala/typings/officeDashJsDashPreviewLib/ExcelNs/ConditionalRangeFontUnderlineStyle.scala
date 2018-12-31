@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ConditionalRangeFontUnderlineStyle extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.6]
-     */
+  * [Api set: ExcelApi 1.6]
+  */
 @JSGlobal("Excel.ConditionalRangeFontUnderlineStyle")
 @js.native
 object ConditionalRangeFontUnderlineStyle extends js.Object {

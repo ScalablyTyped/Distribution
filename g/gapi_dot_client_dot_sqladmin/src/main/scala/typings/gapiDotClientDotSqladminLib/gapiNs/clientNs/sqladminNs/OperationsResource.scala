@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OperationsResource extends js.Object {
   /** Retrieves an instance operation that has been performed on an instance. */
   def get(request: gapiDotClientDotSqladminLib.Anon_ProjectPrettyPrintQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[Operation]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RemoteObjSpec extends js.Object {
   /**
   	 * If set, cell edits will be handled remotely

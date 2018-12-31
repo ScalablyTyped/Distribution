@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StatusMessage extends js.Object {
   /** Status message text. */
   var description: js.UndefOr[FormatMessage] = js.undefined

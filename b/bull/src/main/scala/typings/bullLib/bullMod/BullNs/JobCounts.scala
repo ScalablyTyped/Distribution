@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JobCounts extends js.Object {
   var active: scala.Double
   var completed: scala.Double

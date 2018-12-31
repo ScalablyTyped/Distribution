@@ -15,10 +15,10 @@ class AsyncEmitter () extends Emitter {
   def emitSerial(event: java.lang.String, args: js.Any*): js.Promise[js.Array[_]] = js.native
   def setConcurrency(): this.type = js.native
   def setConcurrency(max: scala.Double): this.type = js.native
-  def subscribe(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): js.Function0[scala.Unit] = js.native
+  def subscribe(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): js.Function0[scala.Unit] = js.native
   def subscribe(
     event: java.lang.String,
-    listener: js.Function1[/* repeated */js.Any, scala.Unit],
+    listener: js.Function1[/* repeated */ js.Any, scala.Unit],
     once: scala.Boolean
   ): js.Function0[scala.Unit] = js.native
 }

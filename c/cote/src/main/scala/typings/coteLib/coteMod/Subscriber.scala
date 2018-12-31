@@ -9,15 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class Subscriber protected () extends Component {
   def this(/**
-           * Configuration which controls the data being advertised for auto-discovery.
-           */
+    * Configuration which controls the data being advertised for auto-discovery.
+    */
   advertisement: SubscriberAdvertisement) = this()
   def this(/**
-           * Configuration which controls the data being advertised for auto-discovery.
-           */
+    * Configuration which controls the data being advertised for auto-discovery.
+    */
   advertisement: SubscriberAdvertisement, /**
-           * Controls the network-layer configuration and environments for components.
-           */
+    * Controls the network-layer configuration and environments for components.
+    */
   discoveryOptions: DiscoveryOptions) = this()
 }
 

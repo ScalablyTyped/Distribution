@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TooltipProps extends js.Object {
   var height: js.UndefOr[scala.Double] = js.undefined
   var index: js.UndefOr[scala.Double] = js.undefined

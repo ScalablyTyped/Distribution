@@ -287,7 +287,6 @@ trait Howl extends js.Object {
   def pannerAttr(o: Anon_ConeOuterAngle, id: scala.Double): this.type = js.native
    // .play() is not chainable; the other methods are
   def pause(): this.type = js.native
-   // .play() is not chainable; the other methods are
   def pause(id: scala.Double): this.type = js.native
   def play(): scala.Double = js.native
   def play(spriteOrId: java.lang.String): scala.Double = js.native

@@ -31,7 +31,6 @@ class Layout[TModel /* <: backboneLib.backboneMod.Model */] ()
   def renderViews(): Layout[TModel] = js.native
    // return this
   def setView[U](name: js.Any, view: U): U = js.native
-   // return this
   def setView[U](name: js.Any, view: U, insert: scala.Boolean): U = js.native
    // return view
   def setViews(views: js.Any): Layout[TModel] = js.native

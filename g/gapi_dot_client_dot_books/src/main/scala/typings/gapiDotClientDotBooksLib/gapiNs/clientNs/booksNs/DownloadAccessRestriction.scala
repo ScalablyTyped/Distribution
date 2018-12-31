@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DownloadAccessRestriction extends js.Object {
   /** If restricted, whether access is granted for this (user, device, volume). */
   var deviceAllowed: js.UndefOr[scala.Boolean] = js.undefined
@@ -22,9 +21,9 @@ trait DownloadAccessRestriction extends js.Object {
   /** Client nonce for verification. Download access and client-validation only. */
   var nonce: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Error/warning reason code. Additional codes may be added in the future. 0 OK 100 ACCESS_DENIED_PUBLISHER_LIMIT 101 ACCESS_DENIED_LIMIT 200
-               * WARNING_USED_LAST_ACCESS
-               */
+    * Error/warning reason code. Additional codes may be added in the future. 0 OK 100 ACCESS_DENIED_PUBLISHER_LIMIT 101 ACCESS_DENIED_LIMIT 200
+    * WARNING_USED_LAST_ACCESS
+    */
   var reasonCode: js.UndefOr[java.lang.String] = js.undefined
   /** Whether this volume has any download access restrictions. */
   var restricted: js.UndefOr[scala.Boolean] = js.undefined

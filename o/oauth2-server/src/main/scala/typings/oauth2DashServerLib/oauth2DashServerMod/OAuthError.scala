@@ -14,18 +14,18 @@ class OAuthError protected ()
   def this(messageOrError: java.lang.String, properties: js.Object) = this()
   def this(messageOrError: nodeLib.Error, properties: js.Object) = this()
   /**
-           * The HTTP error code.
-           */
+    * The HTTP error code.
+    */
   /* CompleteClass */
   override var code: scala.Double = js.native
   /**
-           * A human-readable error message.
-           */
+    * A human-readable error message.
+    */
   /* CompleteClass */
   override var message: java.lang.String = js.native
   /**
-           * The OAuth error code.
-           */
+    * The OAuth error code.
+    */
   /* CompleteClass */
   override var name: java.lang.String = js.native
 }

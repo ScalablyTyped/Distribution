@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CameraPopoverOptions extends js.Object {
   var arrowDir: js.UndefOr[scala.Double] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined

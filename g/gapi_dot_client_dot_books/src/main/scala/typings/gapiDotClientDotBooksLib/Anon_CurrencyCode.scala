@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CurrencyCode extends js.Object {
   /** Amount in the currency listed below. (In LITE projection.) */
   var amount: js.UndefOr[scala.Double] = js.undefined

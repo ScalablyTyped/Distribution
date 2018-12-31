@@ -14,7 +14,6 @@ class FolderItemVerbs protected () extends js.Object {
   var `Shell32.FolderItemVerbs_typekey`: FolderItemVerbs = js.native
   /** Return the specified verb */
   def Item(): FolderItemVerb = js.native
-  /** Return the specified verb */
   def Item(index: js.Any): FolderItemVerb = js.native
 }
 

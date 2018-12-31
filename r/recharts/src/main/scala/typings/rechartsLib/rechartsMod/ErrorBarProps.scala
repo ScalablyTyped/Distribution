@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ErrorBarProps extends js.Object {
    // As the source code states, dataKey will replace valueKey in 1.1.0 and it'll be required (it's already required in current implementation).
   var data: js.UndefOr[js.Array[_]] = js.undefined

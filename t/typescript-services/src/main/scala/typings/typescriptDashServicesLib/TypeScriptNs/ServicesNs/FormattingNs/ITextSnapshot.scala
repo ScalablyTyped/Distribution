@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITextSnapshot extends js.Object {
   def getLineFromLineNumber(lineNumber: scala.Double): ITextSnapshotLine
   def getLineFromPosition(position: scala.Double): ITextSnapshotLine

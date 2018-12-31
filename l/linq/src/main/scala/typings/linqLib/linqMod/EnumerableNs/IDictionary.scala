@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDictionary[TKey, TValue] extends js.Object {
   def add(key: TKey, value: TValue): scala.Unit
   def clear(): scala.Unit

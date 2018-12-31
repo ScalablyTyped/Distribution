@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JWTObject extends js.Object {
   var claim: js.Any
   var header: JWTHeader

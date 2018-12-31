@@ -18,14 +18,14 @@ abstract class FileUpdateRequest () extends js.Object {
   /** Gets or sets a message to the user indicating that user input is needed to complete the FileUpdateRequest . */
   var userInputNeededMessage: java.lang.String = js.native
   /**
-                   * Gets an object used to complete an update asynchronously.
-                   * @return The object that the app uses to indicate, asynchronously, that it has finished responding to a FileUpdateRequested event and that the Request is complete.
-                   */
+    * Gets an object used to complete an update asynchronously.
+    * @return The object that the app uses to indicate, asynchronously, that it has finished responding to a FileUpdateRequested event and that the Request is complete.
+    */
   def getDeferral(): FileUpdateRequestDeferral = js.native
   /**
-                   * Provide a new version of the local file to represent the remote file.
-                   * @param value The new version of the local file that will represent remote file.
-                   */
+    * Provide a new version of the local file to represent the remote file.
+    * @param value The new version of the local file that will represent remote file.
+    */
   def updateLocalFile(value: winrtDashUwpLib.WindowsNs.StorageNs.IStorageFile): scala.Unit = js.native
 }
 

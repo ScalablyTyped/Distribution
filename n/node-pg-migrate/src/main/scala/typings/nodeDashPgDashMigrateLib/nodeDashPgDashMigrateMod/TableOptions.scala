@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableOptions extends js.Object {
   var comment: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var constraints: js.UndefOr[ConstraintOptions] = js.undefined

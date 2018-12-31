@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditorTool extends js.Object {
   var columns: js.UndefOr[scala.Double] = js.undefined
   var exec: js.UndefOr[js.Function] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Borders extends js.Object {
   /** The bottom border of the cell. */
   var bottom: js.UndefOr[Border] = js.undefined

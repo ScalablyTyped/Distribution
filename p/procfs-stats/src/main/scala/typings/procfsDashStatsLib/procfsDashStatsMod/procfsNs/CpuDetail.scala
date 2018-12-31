@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CpuDetail extends js.Object {
   var guest: java.lang.String
   var guest_nice: java.lang.String

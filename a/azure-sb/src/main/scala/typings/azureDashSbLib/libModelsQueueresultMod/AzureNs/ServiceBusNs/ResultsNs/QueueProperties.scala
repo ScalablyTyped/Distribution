@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueueProperties extends js.Object {
   var DeadLetteringOnMessageExpiration: java.lang.String
   var DefaultMessageTimeToLive: java.lang.String

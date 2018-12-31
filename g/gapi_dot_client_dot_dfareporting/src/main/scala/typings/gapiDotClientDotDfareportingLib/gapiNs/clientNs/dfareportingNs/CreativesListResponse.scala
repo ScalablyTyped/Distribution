@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreativesListResponse extends js.Object {
   /** Creative collection. */
   var creatives: js.UndefOr[js.Array[Creative]] = js.undefined

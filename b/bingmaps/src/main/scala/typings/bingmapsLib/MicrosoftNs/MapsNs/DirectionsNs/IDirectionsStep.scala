@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDirectionsStep extends js.Object {
   /** The child direction items for this directions step. */
   var childItineraryItems: js.Array[IDirectionsStep]

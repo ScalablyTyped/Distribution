@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PeerCertificate extends js.Object {
   var fingerprint: java.lang.String
   var issuer: nodeLib.tlsMod.Certificate

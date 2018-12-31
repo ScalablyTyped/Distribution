@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartAxisLabelClickEvent extends ChartEvent {
   var axis: js.UndefOr[js.Any] = js.undefined
   var dataItem: js.UndefOr[js.Any] = js.undefined

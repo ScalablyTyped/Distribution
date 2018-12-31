@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PageSize extends js.Object {
   var filter: java.lang.String
   var orderBy: umbracoLib.umbracoNs.resourcesNs.OrderItemsBy

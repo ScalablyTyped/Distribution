@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GoalsResource extends js.Object {
   /** Gets a goal to which the user has access. */
   def get(request: gapiDotClientDotAnalyticsLib.Anon_ProfileIdPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Goal]

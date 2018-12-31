@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MarkerOptions extends InteractiveLayerOptions {
   var alt: js.UndefOr[java.lang.String] = js.undefined
   var clickable: js.UndefOr[scala.Boolean] = js.undefined

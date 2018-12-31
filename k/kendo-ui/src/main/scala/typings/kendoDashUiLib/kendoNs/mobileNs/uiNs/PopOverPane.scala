@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PopOverPane extends js.Object {
   var initial: js.UndefOr[java.lang.String] = js.undefined
   var layout: js.UndefOr[java.lang.String] = js.undefined

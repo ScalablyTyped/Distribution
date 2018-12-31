@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 class Transform protected ()
   extends roslibLib.roslibMod.ROSLIBNs.Transform {
   /**
-           * A Transform in 3-space. Values are copied into this object.
-           *
-           * @constructor
-           * @param options - object with following keys:
-           *   * translation - the Vector3 describing the translation
-           *   * rotation - the ROSLIB.Quaternion describing the rotation
-           */
+    * A Transform in 3-space. Values are copied into this object.
+    *
+    * @constructor
+    * @param options - object with following keys:
+    *   * translation - the Vector3 describing the translation
+    *   * rotation - the ROSLIB.Quaternion describing the rotation
+    */
   def this(options: roslibLib.Anon_Translation) = this()
   /* CompleteClass */
   override var rotation: roslibLib.roslibMod.ROSLIBNs.Quaternion = js.native

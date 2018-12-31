@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("plottable/build/src/plots/areaPlot", "Area")
 @js.native
+/**
+  * An Area Plot draws a filled region (area) between Y and Y0.
+  *
+  * @constructor
+  */
 class Area[X] ()
   extends plottableLib.buildSrcPlotsLinePlotMod.Line[X] {
   var _constantBaselineValueProvider: js.Any = js.native
@@ -48,24 +53,17 @@ class Area[X] ()
     yScale: plottableLib.buildSrcScalesQuantitativeScaleMod.QuantitativeScale[scala.Double]
   ): this.type = js.native
   /**
-       * Gets the AccessorScaleBinding for Y0.
-       */
+    * Gets the AccessorScaleBinding for Y0.
+    */
   def y0(): plottableLib.buildSrcPlotsCommonsMod.IAccessorScaleBinding[scala.Double, scala.Double] = js.native
-  /**
-       * Sets Y0 to a constant number or the result of an Accessor<number>.
-       * If a Scale has been set for Y, it will also be used to scale Y0.
-       *
-       * @param {number|Accessor<number>} y0
-       * @returns {Area} The calling Area Plot.
-       */
   def y0(y0: plottableLib.buildSrcCoreInterfacesMod.IAccessor[scala.Double]): this.type = js.native
   /**
-       * Sets Y0 to a constant number or the result of an Accessor<number>.
-       * If a Scale has been set for Y, it will also be used to scale Y0.
-       *
-       * @param {number|Accessor<number>} y0
-       * @returns {Area} The calling Area Plot.
-       */
+    * Sets Y0 to a constant number or the result of an Accessor<number>.
+    * If a Scale has been set for Y, it will also be used to scale Y0.
+    *
+    * @param {number|Accessor<number>} y0
+    * @returns {Area} The calling Area Plot.
+    */
   def y0(y0: scala.Double): this.type = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserDevice extends js.Object {
   var id: java.lang.String | scala.Null
   var is_active: scala.Boolean

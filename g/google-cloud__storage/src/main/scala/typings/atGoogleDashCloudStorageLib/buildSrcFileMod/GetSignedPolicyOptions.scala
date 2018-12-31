@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetSignedPolicyOptions extends js.Object {
   var acl: js.UndefOr[java.lang.String] = js.undefined
   var contentLengthRange: js.UndefOr[atGoogleDashCloudStorageLib.Anon_Max] = js.undefined

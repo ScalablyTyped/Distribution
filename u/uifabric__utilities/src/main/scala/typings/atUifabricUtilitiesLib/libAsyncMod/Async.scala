@@ -21,137 +21,79 @@ class Async () extends js.Object {
   /* protected */ def _logError(e: js.Any): scala.Unit = js.native
   def cancelAnimationFrame(id: scala.Double): scala.Unit = js.native
   /**
-       * Clears the immediate.
-       * @param id - Id to cancel.
-       */
+    * Clears the immediate.
+    * @param id - Id to cancel.
+    */
   def clearImmediate(id: scala.Double): scala.Unit = js.native
   /**
-       * Clears the interval.
-       * @param id - Id to cancel.
-       */
+    * Clears the interval.
+    * @param id - Id to cancel.
+    */
   def clearInterval(id: scala.Double): scala.Unit = js.native
   /**
-       * Clears the timeout.
-       * @param id - Id to cancel.
-       */
+    * Clears the timeout.
+    * @param id - Id to cancel.
+    */
   def clearTimeout(id: scala.Double): scala.Unit = js.native
   /**
-       * Creates a function that will delay the execution of func until after wait milliseconds have
-       * elapsed since the last time it was invoked. Provide an options object to indicate that func
-       * should be invoked on the leading and/or trailing edge of the wait timeout. Subsequent calls
-       * to the debounced function will return the result of the last func call.
-       *
-       * Note: If leading and trailing options are true func will be called on the trailing edge of
-       * the timeout only if the the debounced function is invoked more than once during the wait
-       * timeout.
-       *
-       * @param func - The function to debounce.
-       * @param wait - The number of milliseconds to delay.
-       * @param options - The options object.
-       * @returns The new debounced function.
-       */
+    * Creates a function that will delay the execution of func until after wait milliseconds have
+    * elapsed since the last time it was invoked. Provide an options object to indicate that func
+    * should be invoked on the leading and/or trailing edge of the wait timeout. Subsequent calls
+    * to the debounced function will return the result of the last func call.
+    *
+    * Note: If leading and trailing options are true func will be called on the trailing edge of
+    * the timeout only if the the debounced function is invoked more than once during the wait
+    * timeout.
+    *
+    * @param func - The function to debounce.
+    * @param wait - The number of milliseconds to delay.
+    * @param options - The options object.
+    * @returns The new debounced function.
+    */
   def debounce[T /* <: js.Function */](func: T): ICancelable[T] with js.Function0[scala.Unit] = js.native
-  /**
-       * Creates a function that will delay the execution of func until after wait milliseconds have
-       * elapsed since the last time it was invoked. Provide an options object to indicate that func
-       * should be invoked on the leading and/or trailing edge of the wait timeout. Subsequent calls
-       * to the debounced function will return the result of the last func call.
-       *
-       * Note: If leading and trailing options are true func will be called on the trailing edge of
-       * the timeout only if the the debounced function is invoked more than once during the wait
-       * timeout.
-       *
-       * @param func - The function to debounce.
-       * @param wait - The number of milliseconds to delay.
-       * @param options - The options object.
-       * @returns The new debounced function.
-       */
   def debounce[T /* <: js.Function */](func: T, wait: scala.Double): ICancelable[T] with js.Function0[scala.Unit] = js.native
-  /**
-       * Creates a function that will delay the execution of func until after wait milliseconds have
-       * elapsed since the last time it was invoked. Provide an options object to indicate that func
-       * should be invoked on the leading and/or trailing edge of the wait timeout. Subsequent calls
-       * to the debounced function will return the result of the last func call.
-       *
-       * Note: If leading and trailing options are true func will be called on the trailing edge of
-       * the timeout only if the the debounced function is invoked more than once during the wait
-       * timeout.
-       *
-       * @param func - The function to debounce.
-       * @param wait - The number of milliseconds to delay.
-       * @param options - The options object.
-       * @returns The new debounced function.
-       */
   def debounce[T /* <: js.Function */](func: T, wait: scala.Double, options: atUifabricUtilitiesLib.Anon_MaxWait): ICancelable[T] with js.Function0[scala.Unit] = js.native
   /**
-       * Dispose function, clears all async operations.
-       */
+    * Dispose function, clears all async operations.
+    */
   def dispose(): scala.Unit = js.native
   def requestAnimationFrame(callback: js.Function0[scala.Unit]): scala.Double = js.native
   /**
-       * SetImmediate override, which will auto cancel the immediate during dispose.
-       * @param callback - Callback to execute.
-       * @returns The setTimeout id.
-       */
+    * SetImmediate override, which will auto cancel the immediate during dispose.
+    * @param callback - Callback to execute.
+    * @returns The setTimeout id.
+    */
   def setImmediate(callback: js.Function0[scala.Unit]): scala.Double = js.native
   /**
-       * SetInterval override, which will auto cancel the timeout during dispose.
-       * @param callback - Callback to execute.
-       * @param duration - Duration in milliseconds.
-       * @returns The setTimeout id.
-       */
+    * SetInterval override, which will auto cancel the timeout during dispose.
+    * @param callback - Callback to execute.
+    * @param duration - Duration in milliseconds.
+    * @returns The setTimeout id.
+    */
   def setInterval(callback: js.Function0[scala.Unit], duration: scala.Double): scala.Double = js.native
   /**
-       * SetTimeout override, which will auto cancel the timeout during dispose.
-       * @param callback - Callback to execute.
-       * @param duration - Duration in milliseconds.
-       * @returns The setTimeout id.
-       */
+    * SetTimeout override, which will auto cancel the timeout during dispose.
+    * @param callback - Callback to execute.
+    * @param duration - Duration in milliseconds.
+    * @returns The setTimeout id.
+    */
   def setTimeout(callback: js.Function0[scala.Unit], duration: scala.Double): scala.Double = js.native
   /**
-       * Creates a function that, when executed, will only call the func function at most once per
-       * every wait milliseconds. Provide an options object to indicate that func should be invoked
-       * on the leading and/or trailing edge of the wait timeout. Subsequent calls to the throttled
-       * function will return the result of the last func call.
-       *
-       * Note: If leading and trailing options are true func will be called on the trailing edge of
-       * the timeout only if the the throttled function is invoked more than once during the wait timeout.
-       *
-       * @param func - The function to throttle.
-       * @param wait - The number of milliseconds to throttle executions to. Defaults to 0.
-       * @param options - The options object.
-       * @returns The new throttled function.
-       */
+    * Creates a function that, when executed, will only call the func function at most once per
+    * every wait milliseconds. Provide an options object to indicate that func should be invoked
+    * on the leading and/or trailing edge of the wait timeout. Subsequent calls to the throttled
+    * function will return the result of the last func call.
+    *
+    * Note: If leading and trailing options are true func will be called on the trailing edge of
+    * the timeout only if the the throttled function is invoked more than once during the wait timeout.
+    *
+    * @param func - The function to throttle.
+    * @param wait - The number of milliseconds to throttle executions to. Defaults to 0.
+    * @param options - The options object.
+    * @returns The new throttled function.
+    */
   def throttle[T /* <: js.Function */](func: T): T | js.Function0[scala.Unit] = js.native
-  /**
-       * Creates a function that, when executed, will only call the func function at most once per
-       * every wait milliseconds. Provide an options object to indicate that func should be invoked
-       * on the leading and/or trailing edge of the wait timeout. Subsequent calls to the throttled
-       * function will return the result of the last func call.
-       *
-       * Note: If leading and trailing options are true func will be called on the trailing edge of
-       * the timeout only if the the throttled function is invoked more than once during the wait timeout.
-       *
-       * @param func - The function to throttle.
-       * @param wait - The number of milliseconds to throttle executions to. Defaults to 0.
-       * @param options - The options object.
-       * @returns The new throttled function.
-       */
   def throttle[T /* <: js.Function */](func: T, wait: scala.Double): T | js.Function0[scala.Unit] = js.native
-  /**
-       * Creates a function that, when executed, will only call the func function at most once per
-       * every wait milliseconds. Provide an options object to indicate that func should be invoked
-       * on the leading and/or trailing edge of the wait timeout. Subsequent calls to the throttled
-       * function will return the result of the last func call.
-       *
-       * Note: If leading and trailing options are true func will be called on the trailing edge of
-       * the timeout only if the the throttled function is invoked more than once during the wait timeout.
-       *
-       * @param func - The function to throttle.
-       * @param wait - The number of milliseconds to throttle executions to. Defaults to 0.
-       * @param options - The options object.
-       * @returns The new throttled function.
-       */
   def throttle[T /* <: js.Function */](func: T, wait: scala.Double, options: atUifabricUtilitiesLib.Anon_Trailing): T | js.Function0[scala.Unit] = js.native
 }
 

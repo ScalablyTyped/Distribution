@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * ===== GoogleAnalyticsNamespace =====
- */
-
-
+  * ===== GoogleAnalyticsNamespace =====
+  */
 trait IGoogleAnalyticsInitializeOptions extends js.Object {
   /**
   	 * The cache name to store and retrieve analytics.js. Defaults to the cache names provided by workbox-core.

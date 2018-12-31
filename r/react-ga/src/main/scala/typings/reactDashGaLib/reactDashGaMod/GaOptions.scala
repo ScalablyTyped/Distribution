@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GaOptions extends js.Object {
   var allowAnchor: js.UndefOr[scala.Boolean] = js.undefined
   var allowLinker: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Loader extends js.Object {
   var getConfig: js.UndefOr[
     js.Function2[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AlgoliaError extends js.Object {
   var debugData: js.Array[_]
   var message: java.lang.String

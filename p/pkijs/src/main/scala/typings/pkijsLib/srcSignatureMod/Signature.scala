@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Signature extends js.Object {
   var certs: js.UndefOr[js.Array[pkijsLib.srcCertificateMod.default]] = js.undefined
   var signature: asn1jsLib.asn1jsMod.BitString

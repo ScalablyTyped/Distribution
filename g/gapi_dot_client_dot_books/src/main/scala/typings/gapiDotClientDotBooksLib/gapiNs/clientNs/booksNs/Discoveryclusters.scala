@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Discoveryclusters extends js.Object {
   var clusters: js.UndefOr[js.Array[gapiDotClientDotBooksLib.Anon_Bannerwithcontentcontainer]] = js.undefined
   /** Resorce type. */

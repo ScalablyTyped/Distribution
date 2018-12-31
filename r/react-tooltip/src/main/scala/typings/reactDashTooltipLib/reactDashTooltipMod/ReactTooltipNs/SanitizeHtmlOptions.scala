@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SanitizeHtmlOptions extends js.Object {
   var allowedAttributes: js.UndefOr[js.Any] = js.undefined
   var allowedSchemes: js.UndefOr[js.Array[java.lang.String]] = js.undefined

@@ -9,10 +9,8 @@ import scala.scalajs.js.annotation._
 trait JSON5 extends js.Object {
   // Old JSON methods
   def parse(text: java.lang.String): js.Any = js.native
-  // Old JSON methods
   def parse(text: java.lang.String, reviver: js.Function2[/* key */ js.Any, /* value */ js.Any, _]): js.Any = js.native
   def stringify(value: js.Any): java.lang.String = js.native
-  // New JSON5 stringify function
   def stringify(value: js.Any, options: json5Lib.Anon_Replacer): java.lang.String = js.native
   def stringify(value: js.Any, replacer: js.Array[scala.Double | java.lang.String]): java.lang.String = js.native
   def stringify(value: js.Any, replacer: js.Array[scala.Double | java.lang.String], space: java.lang.String): java.lang.String = js.native

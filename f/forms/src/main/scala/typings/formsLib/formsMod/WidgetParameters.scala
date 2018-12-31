@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WidgetParameters extends js.Object {
   /** Custom classes to add to the rendered widget. */
   var classes: js.UndefOr[js.Array[java.lang.String]] = js.undefined

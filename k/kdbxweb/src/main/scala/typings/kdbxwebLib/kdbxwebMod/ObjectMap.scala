@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObjectMap extends js.Object {
   var deleted: js.Array[KdbxObject]
   var objects: js.Array[KdbxObject]

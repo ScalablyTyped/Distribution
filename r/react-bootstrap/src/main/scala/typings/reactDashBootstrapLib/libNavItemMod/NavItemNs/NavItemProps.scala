@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavItemProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libNavItemMod.NavItem] {
   var active: js.UndefOr[scala.Boolean] = js.undefined

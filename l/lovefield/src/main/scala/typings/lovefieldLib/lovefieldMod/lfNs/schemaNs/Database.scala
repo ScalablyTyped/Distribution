@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Database extends js.Object {
   def name(): java.lang.String
   def pragma(): DatabasePragma

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MinEndDate extends js.Object {
   /** Select only placements that belong to these advertisers. */
   var advertiserIds: js.UndefOr[java.lang.String] = js.undefined
@@ -16,10 +15,10 @@ trait Anon_MinEndDate extends js.Object {
   /** Select only placements that belong to these campaigns. */
   var campaignIds: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Select only placements that are associated with these compatibilities. DISPLAY and DISPLAY_INTERSTITIAL refer to rendering either on desktop or on
-                   * mobile devices for regular or interstitial ads respectively. APP and APP_INTERSTITIAL are for rendering in mobile apps. IN_STREAM_VIDEO refers to
-                   * rendering in in-stream video ads developed with the VAST standard.
-                   */
+    * Select only placements that are associated with these compatibilities. DISPLAY and DISPLAY_INTERSTITIAL refer to rendering either on desktop or on
+    * mobile devices for regular or interstitial ads respectively. APP and APP_INTERSTITIAL are for rendering in mobile apps. IN_STREAM_VIDEO refers to
+    * rendering in in-stream video ads developed with the VAST standard.
+    */
   var compatibilities: js.UndefOr[java.lang.String] = js.undefined
   /** Select only placements that are associated with these content categories. */
   var contentCategoryIds: js.UndefOr[java.lang.String] = js.undefined
@@ -58,16 +57,16 @@ trait Anon_MinEndDate extends js.Object {
   /** User profile ID associated with this request. */
   var profileId: java.lang.String
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Allows searching for placements by name or ID. Wildcards (&#42;) are allowed. For example, "placement&#42;2015" will return placements with names like
-                   * "placement June 2015", "placement May 2015", or simply "placements 2015". Most of the searches also add wildcards implicitly at the start and the end
-                   * of the search string. For example, a search string of "placement" will match placements with name "my placement", "placement 2015", or simply
-                   * "placement".
-                   */
+    * Allows searching for placements by name or ID. Wildcards (&#42;) are allowed. For example, "placement&#42;2015" will return placements with names like
+    * "placement June 2015", "placement May 2015", or simply "placements 2015". Most of the searches also add wildcards implicitly at the start and the end
+    * of the search string. For example, a search string of "placement" will match placements with name "my placement", "placement 2015", or simply
+    * "placement".
+    */
   var searchString: js.UndefOr[java.lang.String] = js.undefined
   /** Select only placements that are associated with these sites. */
   var siteIds: js.UndefOr[java.lang.String] = js.undefined

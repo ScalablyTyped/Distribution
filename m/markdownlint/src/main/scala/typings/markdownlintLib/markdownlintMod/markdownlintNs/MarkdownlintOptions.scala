@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MarkdownlintOptions extends js.Object {
   var config: js.UndefOr[MarkdownlintConfig] = js.undefined
   var files: js.UndefOr[js.Array[java.lang.String] | java.lang.String] = js.undefined

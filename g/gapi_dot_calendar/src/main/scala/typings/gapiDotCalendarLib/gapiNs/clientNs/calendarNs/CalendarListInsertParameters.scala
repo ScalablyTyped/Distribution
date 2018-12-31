@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CalendarListInsertParameters extends js.Object {
   // Parameters
   // Optional query parameters

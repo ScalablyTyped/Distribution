@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IControlChannelTriggerResetEventDetails extends js.Object {
   var hardwareSlotReset: scala.Boolean
   var resetReason: ControlChannelTriggerResetReason

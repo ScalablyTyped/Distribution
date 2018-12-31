@@ -10,7 +10,7 @@ package object reduxDashActionMod {
   type ActionFunction1[T1, R] = js.Function1[/* t1 */ T1, R]
   type ActionFunction2[T1, T2, R] = js.Function2[/* t1 */ T1, /* t2 */ T2, R]
   type ActionFunction3[T1, T2, T3, R] = js.Function3[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, R]
-  type ActionFunctionAny[R] = js.Function1[/* repeated */js.Any, R]
+  type ActionFunctionAny[R] = js.Function1[/* repeated */ js.Any, R]
   type ReducerHandler[State] = js.Function3[
     /* payload */ js.Any, 
     /* state */ js.UndefOr[State], 

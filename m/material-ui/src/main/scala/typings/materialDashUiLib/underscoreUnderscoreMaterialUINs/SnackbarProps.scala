@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SnackbarProps extends js.Object {
   var action: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var autoHideDuration: js.UndefOr[scala.Double] = js.undefined

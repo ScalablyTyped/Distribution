@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICacheStrategyMakeRequestOptions extends js.Object {
-  var event: js.UndefOr[js.Any] = js.undefined
+  var event: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify FetchEvent */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify FetchEvent */ js.Any
+  ] = js.undefined
   var request: stdLib.Request | java.lang.String
 }
 

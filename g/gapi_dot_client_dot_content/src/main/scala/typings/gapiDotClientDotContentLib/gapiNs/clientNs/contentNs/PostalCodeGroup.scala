@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PostalCodeGroup extends js.Object {
   /** The CLDR territory code of the country the postal code group applies to. Required. */
   var country: js.UndefOr[java.lang.String] = js.undefined

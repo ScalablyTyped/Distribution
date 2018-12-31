@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SourceMapTarget extends js.Object {
   var ast: js.UndefOr[scala.Boolean] = js.undefined
   var auxiliaryCommentAfter: js.UndefOr[js.Any] = js.undefined

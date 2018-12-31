@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "QuickSight")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class QuickSight ()
   extends awsDashSdkLib.awsDashSdkMod.QuickSight {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsQuicksightMod.QuickSightNs.ClientConfiguration) = this()
 }
 

@@ -12,36 +12,36 @@ sealed trait DefinitionQueryOrder extends js.Object
 @js.native
 object DefinitionQueryOrder extends js.Object {
   /**
-       * Order by definition name ascending.
-       */
+    * Order by definition name ascending.
+    */
   @js.native
   sealed trait DefinitionNameAscending
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.DefinitionQueryOrder
   
   /**
-       * Order by definition name descending.
-       */
+    * Order by definition name descending.
+    */
   @js.native
   sealed trait DefinitionNameDescending
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.DefinitionQueryOrder
   
   /**
-       * Order by created on/last modified time ascending.
-       */
+    * Order by created on/last modified time ascending.
+    */
   @js.native
   sealed trait LastModifiedAscending
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.DefinitionQueryOrder
   
   /**
-       * Order by created on/last modified time descending.
-       */
+    * Order by created on/last modified time descending.
+    */
   @js.native
   sealed trait LastModifiedDescending
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.DefinitionQueryOrder
   
   /**
-       * No order
-       */
+    * No order
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.DefinitionQueryOrder

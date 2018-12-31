@@ -21,13 +21,11 @@ trait TorrentEngine extends js.Object {
     event: torrentDashStreamLib.torrentDashStreamLibStrings.download,
     callback: js.Function1[/* pieceIndex */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
-  // Events
   @JSName("on")
   def on_idle(event: torrentDashStreamLib.torrentDashStreamLibStrings.idle, callback: js.Function): scala.Unit = js.native
   // Events
   @JSName("on")
   def on_ready(event: torrentDashStreamLib.torrentDashStreamLibStrings.ready, callback: js.Function): scala.Unit = js.native
-  // Events
   @JSName("on")
   def on_torrent(event: torrentDashStreamLib.torrentDashStreamLibStrings.torrent, callback: js.Function): scala.Unit = js.native
   @JSName("on")

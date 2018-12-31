@@ -33,17 +33,15 @@ class Device protected () extends js.Object {
   /** A collection of all events for this imaging device */
   def Events(Index: scala.Double): DeviceEvent = js.native
   /**
-           * Issues the command specified by CommandID to the imaging device. CommandIDs are device dependent. Valid CommandIDs for this Device are contained in
-           * the Commands collection.
-           */
+    * Issues the command specified by CommandID to the imaging device. CommandIDs are device dependent. Valid CommandIDs for this Device are contained in
+    * the Commands collection.
+    */
   def ExecuteCommand(CommandID: java.lang.String): Item = js.native
   /** Returns the Item object specified by ItemID if it exists */
   def GetItem(ItemID: java.lang.String): Item = js.native
   /** Returns the specified item in the collection by position */
   /** A collection of all items for this imaging device */
   def Items(Index: scala.Double): Item = js.native
-  /** Returns the specified item in the collection either by position or name. */
-  /** A collection of all properties for this imaging device */
   def Properties(Index: java.lang.String): Property = js.native
   /** Returns the specified item in the collection either by position or name. */
   /** A collection of all properties for this imaging device */

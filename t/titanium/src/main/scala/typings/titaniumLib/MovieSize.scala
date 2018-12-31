@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Simple object used to describe the size of a movie.
- */
-
+  * Simple object used to describe the size of a movie.
+  */
 trait MovieSize extends js.Object {
   /**
   	 * Height of the movie.

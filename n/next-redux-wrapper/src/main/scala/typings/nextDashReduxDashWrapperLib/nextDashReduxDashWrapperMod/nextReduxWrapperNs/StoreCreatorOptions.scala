@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StoreCreatorOptions[TInitialState, TStateProps, TDispatchProps, TOwnProps, TMergedProps] extends Options {
   var isServer: scala.Boolean
   var query: js.UndefOr[js.Any] = js.undefined

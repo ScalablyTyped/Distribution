@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GlideElementDescriptor extends js.Object {
   def getAttachmentEncryptionType(): java.lang.String
   def getEncryptionType(): java.lang.String

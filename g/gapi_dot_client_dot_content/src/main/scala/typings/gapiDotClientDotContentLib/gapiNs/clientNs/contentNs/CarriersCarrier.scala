@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CarriersCarrier extends js.Object {
   /** The CLDR country code of the carrier (e.g., "US"). Always present. */
   var country: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiagnosticMessage extends js.Object {
   var category: DiagnosticCategory
   var code: scala.Double

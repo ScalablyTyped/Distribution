@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait HTMLVideoElement extends HTMLMediaElement {
   /**
-       * Gets or sets the height of the video element.
-       */
+    * Gets or sets the height of the video element.
+    */
   var height: scala.Double = js.native
   var msHorizontalMirror: scala.Boolean = js.native
   val msIsLayoutOptimalForPlayback: scala.Boolean = js.native
@@ -21,22 +21,22 @@ trait HTMLVideoElement extends HTMLMediaElement {
   var onMSVideoFrameStepCompleted: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
   var onMSVideoOptimalLayoutChanged: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | scala.Null = js.native
   /**
-       * Gets or sets a URL of an image to display, for example, like a movie poster. This can be a still frame from the video, or another image if no video data is available.
-       */
+    * Gets or sets a URL of an image to display, for example, like a movie poster. This can be a still frame from the video, or another image if no video data is available.
+    */
   var poster: java.lang.String = js.native
   /**
-       * Gets the intrinsic height of a video in CSS pixels, or zero if the dimensions are not known.
-       */
+    * Gets the intrinsic height of a video in CSS pixels, or zero if the dimensions are not known.
+    */
   val videoHeight: scala.Double = js.native
   /**
-       * Gets the intrinsic width of a video in CSS pixels, or zero if the dimensions are not known.
-       */
+    * Gets the intrinsic width of a video in CSS pixels, or zero if the dimensions are not known.
+    */
   val videoWidth: scala.Double = js.native
   val webkitDisplayingFullscreen: scala.Boolean = js.native
   val webkitSupportsFullscreen: scala.Boolean = js.native
   /**
-       * Gets or sets the width of the video element.
-       */
+    * Gets or sets the width of the video element.
+    */
   var width: scala.Double = js.native
   @JSName("addEventListener")
   def addEventListener_MSVideoFormatChanged(

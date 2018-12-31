@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Cursor extends js.Object {
   var current_page: js.UndefOr[scala.Double] = js.undefined
   var has_more: js.UndefOr[scala.Boolean] = js.undefined

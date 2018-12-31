@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LoadingData extends js.Object {
   var element: js.UndefOr[scala.Nothing] = js.undefined
   var id: js.UndefOr[scala.Nothing] = js.undefined

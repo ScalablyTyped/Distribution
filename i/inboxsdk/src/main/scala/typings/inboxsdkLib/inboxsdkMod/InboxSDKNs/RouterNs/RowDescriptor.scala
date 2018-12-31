@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RowDescriptor extends js.Object {
   var body: java.lang.String
   var iconClass: js.UndefOr[java.lang.String] = js.undefined

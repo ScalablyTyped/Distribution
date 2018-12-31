@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransitVehicle extends js.Object {
   /** contains the URL for an icon associated with this vehicle type. */
   var icon: java.lang.String

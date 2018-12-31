@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KinesisStreamRecordPayload extends js.Object {
   var approximateArrivalTimestamp: scala.Double
   var data: java.lang.String

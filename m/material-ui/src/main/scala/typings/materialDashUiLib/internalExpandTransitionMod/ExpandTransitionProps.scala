@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExpandTransitionProps
   extends reactLib.reactMod.ReactNs.Props[ExpandTransition] {
   var enterDelay: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILanguageServiceHost
   extends typescriptDashServicesLib.TypeScriptNs.ILogger
      with typescriptDashServicesLib.TypeScriptNs.IReferenceResolverHost {

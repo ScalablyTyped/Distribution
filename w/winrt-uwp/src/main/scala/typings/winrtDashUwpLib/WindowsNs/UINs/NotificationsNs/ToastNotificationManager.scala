@@ -17,21 +17,21 @@ object ToastNotificationManager extends js.Object {
   /** Gets the ToastNotificationHistory object. */
   var history: winrtDashUwpLib.WindowsNs.UINs.NotificationsNs.ToastNotificationHistory = js.native
   /**
-                   * Creates and initializes a new instance of the ToastNotification , bound to the calling application, that lets you raise a toast notification to that app.
-                   * @return The object you will use to send the toast notification to the app.
-                   */
+    * Creates and initializes a new instance of the ToastNotification , bound to the calling application, that lets you raise a toast notification to that app.
+    * @return The object you will use to send the toast notification to the app.
+    */
   def createToastNotifier(): winrtDashUwpLib.WindowsNs.UINs.NotificationsNs.ToastNotifier = js.native
   /**
-                   * Creates and initializes a new instance of the ToastNotification , bound to a specified app, usually another app in the same package.
-                   * @param applicationId The unique ID of the app.
-                   * @return The object you will use to send the toast notification to the tile.
-                   */
+    * Creates and initializes a new instance of the ToastNotification , bound to a specified app, usually another app in the same package.
+    * @param applicationId The unique ID of the app.
+    * @return The object you will use to send the toast notification to the tile.
+    */
   def createToastNotifier(applicationId: java.lang.String): winrtDashUwpLib.WindowsNs.UINs.NotificationsNs.ToastNotifier = js.native
   /**
-                   * Gets the XML content of one of the predefined toast templates so that you can customize it for use in your notification.
-                   * @param type One of the system-provided toast templates.
-                   * @return The object that contains the template XML.
-                   */
+    * Gets the XML content of one of the predefined toast templates so that you can customize it for use in your notification.
+    * @param type One of the system-provided toast templates.
+    * @return The object that contains the template XML.
+    */
   def getTemplateContent(`type`: winrtDashUwpLib.WindowsNs.UINs.NotificationsNs.ToastTemplateType): winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument = js.native
 }
 

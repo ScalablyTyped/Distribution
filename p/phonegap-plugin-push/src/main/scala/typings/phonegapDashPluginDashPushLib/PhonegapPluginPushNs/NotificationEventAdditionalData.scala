@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation._
 	 * Ideally the developer would overload (merged declaration) this or create a new interface that would extend this one
 	 * so that he could specify any custom code without having to use array notation (map['prop']) for all of them.
 	 */
-
 trait NotificationEventAdditionalData
   extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /**

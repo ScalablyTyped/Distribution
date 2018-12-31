@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class EmailMessageReader () extends js.Object {
   /**
-                   * Reads a collection of email messages.
-                   * @return A batch of email messages.
-                   */
+    * Reads a collection of email messages.
+    * @return A batch of email messages.
+    */
   def readBatchAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[EmailMessageBatch] = js.native
 }
 

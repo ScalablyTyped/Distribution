@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Activefile extends js.Object {
   var active_anon: scala.Double
   var active_file: scala.Double

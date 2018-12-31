@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_WARNINGSUCCESS extends js.Object {
   var ALERT: reactDashFoundationLib.enumsMod.ButtonColors
   var PRIMARY: reactDashFoundationLib.enumsMod.ButtonColors

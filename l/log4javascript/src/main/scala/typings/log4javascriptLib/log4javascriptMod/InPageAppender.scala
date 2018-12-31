@@ -27,100 +27,10 @@ class InPageAppender protected () extends Appender {
   	 * @param height The height of the console window. Any valid CSS length may be used. If not specified, defaults to 250px.
   	 */
   def this(container: stdLib.HTMLElement) = this()
-  /**
-  	 * Constructor
-  	 * @param container The container element for the console window. This should be an HTML element.
-  	 * @param lazyInit Set this to true to create the console only when the first log message reaches the appender. Otherwise,
-  	 * the console is initialized as soon as the appender is created. If not specified, defaults to true.
-  	 * @param initiallyMinimized Whether the console window should start off hidden / minimized. If not specified, defaults to false
-  	 * @param useDocumentWrite Specifies how the console window is created. By default, the console window is created dynamically
-  	 * using document's write method. This has the advantage of keeping all the code in one single JavaScript file. However,
-  	 * if your page sets document.domain then the browser prevents script access to a window unless it too has the same value
-  	 * set for document.domain. To get round this issue, you can set useDocumentWrite to false and log4javascript will instead
-  	 * use the external HTML file console.html (or console_uncompressed.html if you're using an uncompressed version of
-  	 * log4javascript.js), which must be placed in the same directory as your log4javascript.js file.
-  	 * In general it's simpler to use the document.write method, so unless your page needs to set document.domain,
-  	 * useDocumentWrite should be set to true.
-  	 * If not specified, defaults to true.
-  	 * @param width The width of the console window. Any valid CSS length may be used. If not specified, defaults to 100%.
-  	 * @param height The height of the console window. Any valid CSS length may be used. If not specified, defaults to 250px.
-  	 */
   def this(container: stdLib.HTMLElement, lazyInit: scala.Boolean) = this()
-  /**
-  	 * Constructor
-  	 * @param container The container element for the console window. This should be an HTML element.
-  	 * @param lazyInit Set this to true to create the console only when the first log message reaches the appender. Otherwise,
-  	 * the console is initialized as soon as the appender is created. If not specified, defaults to true.
-  	 * @param initiallyMinimized Whether the console window should start off hidden / minimized. If not specified, defaults to false
-  	 * @param useDocumentWrite Specifies how the console window is created. By default, the console window is created dynamically
-  	 * using document's write method. This has the advantage of keeping all the code in one single JavaScript file. However,
-  	 * if your page sets document.domain then the browser prevents script access to a window unless it too has the same value
-  	 * set for document.domain. To get round this issue, you can set useDocumentWrite to false and log4javascript will instead
-  	 * use the external HTML file console.html (or console_uncompressed.html if you're using an uncompressed version of
-  	 * log4javascript.js), which must be placed in the same directory as your log4javascript.js file.
-  	 * In general it's simpler to use the document.write method, so unless your page needs to set document.domain,
-  	 * useDocumentWrite should be set to true.
-  	 * If not specified, defaults to true.
-  	 * @param width The width of the console window. Any valid CSS length may be used. If not specified, defaults to 100%.
-  	 * @param height The height of the console window. Any valid CSS length may be used. If not specified, defaults to 250px.
-  	 */
   def this(container: stdLib.HTMLElement, lazyInit: scala.Boolean, initiallyMinimized: scala.Boolean) = this()
-  /**
-  	 * Constructor
-  	 * @param container The container element for the console window. This should be an HTML element.
-  	 * @param lazyInit Set this to true to create the console only when the first log message reaches the appender. Otherwise,
-  	 * the console is initialized as soon as the appender is created. If not specified, defaults to true.
-  	 * @param initiallyMinimized Whether the console window should start off hidden / minimized. If not specified, defaults to false
-  	 * @param useDocumentWrite Specifies how the console window is created. By default, the console window is created dynamically
-  	 * using document's write method. This has the advantage of keeping all the code in one single JavaScript file. However,
-  	 * if your page sets document.domain then the browser prevents script access to a window unless it too has the same value
-  	 * set for document.domain. To get round this issue, you can set useDocumentWrite to false and log4javascript will instead
-  	 * use the external HTML file console.html (or console_uncompressed.html if you're using an uncompressed version of
-  	 * log4javascript.js), which must be placed in the same directory as your log4javascript.js file.
-  	 * In general it's simpler to use the document.write method, so unless your page needs to set document.domain,
-  	 * useDocumentWrite should be set to true.
-  	 * If not specified, defaults to true.
-  	 * @param width The width of the console window. Any valid CSS length may be used. If not specified, defaults to 100%.
-  	 * @param height The height of the console window. Any valid CSS length may be used. If not specified, defaults to 250px.
-  	 */
   def this(container: stdLib.HTMLElement, lazyInit: scala.Boolean, initiallyMinimized: scala.Boolean, useDocumentWrite: scala.Boolean) = this()
-  /**
-  	 * Constructor
-  	 * @param container The container element for the console window. This should be an HTML element.
-  	 * @param lazyInit Set this to true to create the console only when the first log message reaches the appender. Otherwise,
-  	 * the console is initialized as soon as the appender is created. If not specified, defaults to true.
-  	 * @param initiallyMinimized Whether the console window should start off hidden / minimized. If not specified, defaults to false
-  	 * @param useDocumentWrite Specifies how the console window is created. By default, the console window is created dynamically
-  	 * using document's write method. This has the advantage of keeping all the code in one single JavaScript file. However,
-  	 * if your page sets document.domain then the browser prevents script access to a window unless it too has the same value
-  	 * set for document.domain. To get round this issue, you can set useDocumentWrite to false and log4javascript will instead
-  	 * use the external HTML file console.html (or console_uncompressed.html if you're using an uncompressed version of
-  	 * log4javascript.js), which must be placed in the same directory as your log4javascript.js file.
-  	 * In general it's simpler to use the document.write method, so unless your page needs to set document.domain,
-  	 * useDocumentWrite should be set to true.
-  	 * If not specified, defaults to true.
-  	 * @param width The width of the console window. Any valid CSS length may be used. If not specified, defaults to 100%.
-  	 * @param height The height of the console window. Any valid CSS length may be used. If not specified, defaults to 250px.
-  	 */
   def this(container: stdLib.HTMLElement, lazyInit: scala.Boolean, initiallyMinimized: scala.Boolean, useDocumentWrite: scala.Boolean, width: scala.Double) = this()
-  /**
-  	 * Constructor
-  	 * @param container The container element for the console window. This should be an HTML element.
-  	 * @param lazyInit Set this to true to create the console only when the first log message reaches the appender. Otherwise,
-  	 * the console is initialized as soon as the appender is created. If not specified, defaults to true.
-  	 * @param initiallyMinimized Whether the console window should start off hidden / minimized. If not specified, defaults to false
-  	 * @param useDocumentWrite Specifies how the console window is created. By default, the console window is created dynamically
-  	 * using document's write method. This has the advantage of keeping all the code in one single JavaScript file. However,
-  	 * if your page sets document.domain then the browser prevents script access to a window unless it too has the same value
-  	 * set for document.domain. To get round this issue, you can set useDocumentWrite to false and log4javascript will instead
-  	 * use the external HTML file console.html (or console_uncompressed.html if you're using an uncompressed version of
-  	 * log4javascript.js), which must be placed in the same directory as your log4javascript.js file.
-  	 * In general it's simpler to use the document.write method, so unless your page needs to set document.domain,
-  	 * useDocumentWrite should be set to true.
-  	 * If not specified, defaults to true.
-  	 * @param width The width of the console window. Any valid CSS length may be used. If not specified, defaults to 100%.
-  	 * @param height The height of the console window. Any valid CSS length may be used. If not specified, defaults to 250px.
-  	 */
   def this(container: stdLib.HTMLElement, lazyInit: scala.Boolean, initiallyMinimized: scala.Boolean, useDocumentWrite: scala.Boolean, width: scala.Double, height: scala.Double) = this()
   /**
   	 * Adds a function with the name specified to the list of functions available on the command line. This feature may be used

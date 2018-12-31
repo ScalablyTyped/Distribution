@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 class XmlDocument protected ()
   extends xmlcreateLib.libNodesXmlDocumentMod.default {
   /**
-       * Initializes a new instance of the {@link XmlDocument} class.
-       *
-       * @param root The name of the root element.
-       */
+    * Initializes a new instance of the {@link XmlDocument} class.
+    *
+    * @param root The name of the root element.
+    */
   def this(root: java.lang.String) = this()
 }
 

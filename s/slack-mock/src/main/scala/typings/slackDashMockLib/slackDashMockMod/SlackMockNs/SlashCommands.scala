@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SlashCommands[T] extends js.Object {
   var calls: js.Array[SlashCommandCall[T]]
   def addResponse(opts: SlashCommandOptions[T]): scala.Unit

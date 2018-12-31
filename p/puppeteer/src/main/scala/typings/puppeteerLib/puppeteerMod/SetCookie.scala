@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SetCookie extends js.Object {
   /** The cookie domain. */
   var domain: js.UndefOr[java.lang.String] = js.undefined

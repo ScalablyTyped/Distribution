@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GooglePrivacyDlpV2beta1InspectOperationMetadata extends js.Object {
   /** The time which this request was started. */
   var createTime: js.UndefOr[java.lang.String] = js.undefined

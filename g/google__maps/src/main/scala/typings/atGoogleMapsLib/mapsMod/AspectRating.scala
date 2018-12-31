@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AspectRating extends js.Object {
   /** the user's rating for this particular aspect, from 0 to 3. */
   var rating: scala.Double

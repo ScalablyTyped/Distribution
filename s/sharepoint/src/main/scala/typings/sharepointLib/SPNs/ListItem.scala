@@ -19,14 +19,14 @@ class ListItem[T] () extends SecurableObject {
   /** Gets the content type of the item. */
   def get_contentType(): ContentType = js.native
   /** Gets a value that specifies the display name of the list item.
-              This property is not available by default when you return list items. Trying to call this method returns a PropertyOrFieldNotInitializedException if you try to access one of these properties. To access this property, use the Include method as part of the query string. */
+    This property is not available by default when you return list items. Trying to call this method returns a PropertyOrFieldNotInitializedException if you try to access one of these properties. To access this property, use the Include method as part of the query string. */
   def get_displayName(): java.lang.String = js.native
   /** Gets a value that specifies the effective permissions on the list item that are assigned to the current user.
-              This property is not available by default when you return list items. Trying to call this method returns a PropertyOrFieldNotInitializedException if you try to access one of these properties. To access this property, use the Include method as part of the query string. */
+    This property is not available by default when you return list items. Trying to call this method returns a PropertyOrFieldNotInitializedException if you try to access one of these properties. To access this property, use the Include method as part of the query string. */
   def get_effectiveBasePermissions(): BasePermissions = js.native
   /** Gets the effective base permissions for the current user, as they should be displayed in UI.
-              This will only differ from EffectiveBasePermissions if ReadOnlyUI is set to true on the item's parent list, and in all cases will be a subset of EffectiveBasePermissions. To put it another way, EffectiveBasePermissionsForUI will always be as or more restrictive than EffectiveBasePermissions.
-              This property is not available by default when you return list items. Trying to call this method returns a PropertyOrFieldNotInitializedException if you try to access one of these properties. To access this property, use the Include method as part of the query string.  */
+    This will only differ from EffectiveBasePermissions if ReadOnlyUI is set to true on the item's parent list, and in all cases will be a subset of EffectiveBasePermissions. To put it another way, EffectiveBasePermissionsForUI will always be as or more restrictive than EffectiveBasePermissions.
+    This property is not available by default when you return list items. Trying to call this method returns a PropertyOrFieldNotInitializedException if you try to access one of these properties. To access this property, use the Include method as part of the query string.  */
   def get_effectiveBasePermissionsForUI(): BasePermissions = js.native
   def get_fieldValues(): T = js.native
   def get_fieldValuesAsHtml(): FieldStringValues = js.native
@@ -41,7 +41,7 @@ class ListItem[T] () extends SecurableObject {
   /** Gets id of the item */
   def get_id(): scala.Double = js.native
   /** Gets the specified field value for the list item. Field value is returned as string, but it can be casted to a specific field value type, e.g. SP.LookupFieldValue, etc. */
-  def get_item[K /* <: java.lang.String */](fieldInternalName: K): /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any = js.native
+  def get_item[K /* <: java.lang.String */](fieldInternalName: K): /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any = js.native
   /** Get the list in which the item resides. */
   def get_parentList(): List[_] = js.native
   /** Sets the value of the field for the list item based on an implementation specific transformation of the value. */
@@ -51,7 +51,7 @@ class ListItem[T] () extends SecurableObject {
   /** Sets the specified field value for the list item. Consider using parseAndSetFieldValue instead. */
   def set_item[K /* <: java.lang.String */](
     fieldInternalName: K,
-    value: /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) */js.Any
+    value: /* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any
   ): scala.Unit = js.native
   /** Commits changed properties of the list item. The actual update is performed during context.executeQueryAsync method call. */
   def update(): scala.Unit = js.native

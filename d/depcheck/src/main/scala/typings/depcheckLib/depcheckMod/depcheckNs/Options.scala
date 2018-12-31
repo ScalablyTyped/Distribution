@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var detectors: js.UndefOr[js.Array[Detector]] = js.undefined
   var ignoreBinPackage: js.UndefOr[scala.Boolean] = js.undefined

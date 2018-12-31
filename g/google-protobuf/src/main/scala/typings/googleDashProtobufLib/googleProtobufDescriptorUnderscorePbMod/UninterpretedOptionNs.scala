@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "UninterpretedOption")
 @js.native
 object UninterpretedOptionNs extends js.Object {
-  
   trait AsObject extends js.Object {
     var aggregateValue: js.UndefOr[java.lang.String] = js.undefined
     var doubleValue: js.UndefOr[scala.Double] = js.undefined
@@ -60,7 +59,6 @@ object UninterpretedOptionNs extends js.Object {
   @JSName("NamePart")
   @js.native
   object NamePartNs extends js.Object {
-    
     trait AsObject extends js.Object {
       var isExtension: js.UndefOr[scala.Boolean] = js.undefined
       var namePart: js.UndefOr[java.lang.String] = js.undefined

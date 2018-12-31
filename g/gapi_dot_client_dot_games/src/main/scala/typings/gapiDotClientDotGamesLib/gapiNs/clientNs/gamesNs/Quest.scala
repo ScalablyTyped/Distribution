@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Quest extends js.Object {
   /** The timestamp at which the user accepted the quest in milliseconds since the epoch in UTC. Only present if the player has accepted the quest. */
   var acceptedTimestampMillis: js.UndefOr[java.lang.String] = js.undefined
@@ -28,9 +27,9 @@ trait Quest extends js.Object {
   /** Uniquely identifies the type of this resource. Value is always the fixed string games#quest. */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The timestamp at which the quest was last updated by the user in milliseconds since the epoch in UTC. Only present if the player has accepted the
-               * quest.
-               */
+    * The timestamp at which the quest was last updated by the user in milliseconds since the epoch in UTC. Only present if the player has accepted the
+    * quest.
+    */
   var lastUpdatedTimestampMillis: js.UndefOr[java.lang.String] = js.undefined
   /** The quest milestones. */
   var milestones: js.UndefOr[js.Array[QuestMilestone]] = js.undefined
@@ -41,16 +40,16 @@ trait Quest extends js.Object {
   /** The timestamp at which the quest becomes active in milliseconds since the epoch in UTC. */
   var startTimestampMillis: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The state of the quest.
-               * Possible values are:
-               * - "UPCOMING": The quest is upcoming. The user can see the quest, but cannot accept it until it is open.
-               * - "OPEN": The quest is currently open and may be accepted at this time.
-               * - "ACCEPTED": The user is currently participating in this quest.
-               * - "COMPLETED": The user has completed the quest.
-               * - "FAILED": The quest was attempted but was not completed before the deadline expired.
-               * - "EXPIRED": The quest has expired and was not accepted.
-               * - "DELETED": The quest should be deleted from the local database.
-               */
+    * The state of the quest.
+    * Possible values are:
+    * - "UPCOMING": The quest is upcoming. The user can see the quest, but cannot accept it until it is open.
+    * - "OPEN": The quest is currently open and may be accepted at this time.
+    * - "ACCEPTED": The user is currently participating in this quest.
+    * - "COMPLETED": The user has completed the quest.
+    * - "FAILED": The quest was attempted but was not completed before the deadline expired.
+    * - "EXPIRED": The quest has expired and was not accepted.
+    * - "DELETED": The quest should be deleted from the local database.
+    */
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 

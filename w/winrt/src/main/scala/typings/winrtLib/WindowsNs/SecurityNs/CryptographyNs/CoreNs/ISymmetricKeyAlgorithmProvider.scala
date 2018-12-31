@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISymmetricKeyAlgorithmProvider extends js.Object {
   var algorithmName: java.lang.String
   var blockLength: scala.Double

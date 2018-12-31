@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PanelWidth extends js.Object {
   var minSize: js.UndefOr[scala.Double] = js.undefined
   var resize: js.UndefOr[

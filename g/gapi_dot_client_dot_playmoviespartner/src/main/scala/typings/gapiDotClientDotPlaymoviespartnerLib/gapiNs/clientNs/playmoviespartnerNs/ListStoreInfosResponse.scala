@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListStoreInfosResponse extends js.Object {
   /** See 'List methods rules' for info about this field. */
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined

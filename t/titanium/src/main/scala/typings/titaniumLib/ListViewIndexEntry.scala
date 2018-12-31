@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * A simple object that represents an index entry in a `ListView`.
- */
-
+  * A simple object that represents an index entry in a `ListView`.
+  */
 trait ListViewIndexEntry extends js.Object {
   /**
   	 * Section index associated with this title.

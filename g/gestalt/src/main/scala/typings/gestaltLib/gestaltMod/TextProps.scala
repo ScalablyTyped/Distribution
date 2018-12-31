@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextProps extends js.Object {
   var align: js.UndefOr[
     gestaltLib.gestaltLibStrings.left | gestaltLib.gestaltLibStrings.right | gestaltLib.gestaltLibStrings.center | gestaltLib.gestaltLibStrings.justify

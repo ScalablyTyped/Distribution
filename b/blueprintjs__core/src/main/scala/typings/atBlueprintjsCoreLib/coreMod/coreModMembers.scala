@@ -18,7 +18,7 @@ object coreModMembers extends js.Object {
     reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[reactLib.HTMLElement]
   ] = js.native
   val Colors: atBlueprintjsCoreLib.Anon_FOREST2 = js.native
-  val ContextMenu: js.Any = js.native
+  val ContextMenu: atBlueprintjsCoreLib.Anon_Hide = js.native
   val DISPLAYNAME_PREFIX: /* Blueprint3 */ java.lang.String = js.native
   val Elevation: atBlueprintjsCoreLib.Anon_TWO = js.native
   val Expander: reactLib.reactMod.ReactNs.SFC[js.Object] = js.native

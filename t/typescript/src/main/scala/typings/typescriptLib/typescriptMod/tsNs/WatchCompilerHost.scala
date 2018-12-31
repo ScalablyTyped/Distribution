@@ -11,8 +11,8 @@ trait WatchCompilerHost[T /* <: BuilderProgram */] extends WatchHost {
   var afterProgramCreate: js.UndefOr[js.Function1[/* program */ T, scala.Unit]] = js.native
   var createHash: js.UndefOr[js.Function1[/* data */ java.lang.String, java.lang.String]] = js.native
   /**
-           * Used to create the program when need for program creation or recreation detected
-           */
+    * Used to create the program when need for program creation or recreation detected
+    */
   @JSName("createProgram")
   var createProgram_Original: CreateProgram[T] = js.native
   /** If provided, used for module resolution as well as to handle directory structure */
@@ -56,30 +56,15 @@ trait WatchCompilerHost[T /* <: BuilderProgram */] extends WatchHost {
   ] = js.native
   /** If provided would be used to write log about compilation */
   var trace: js.UndefOr[js.Function1[/* s */ java.lang.String, scala.Unit]] = js.native
-  /**
-           * Used to create the program when need for program creation or recreation detected
-           */
   def createProgram(): T = js.native
-  /**
-           * Used to create the program when need for program creation or recreation detected
-           */
   def createProgram(rootNames: js.Array[java.lang.String]): T = js.native
-  /**
-           * Used to create the program when need for program creation or recreation detected
-           */
   def createProgram(rootNames: js.Array[java.lang.String], options: js.UndefOr[scala.Nothing], host: CompilerHost): T = js.native
-  /**
-           * Used to create the program when need for program creation or recreation detected
-           */
   def createProgram(
     rootNames: js.Array[java.lang.String],
     options: js.UndefOr[scala.Nothing],
     host: CompilerHost,
     oldProgram: T
   ): T = js.native
-  /**
-           * Used to create the program when need for program creation or recreation detected
-           */
   def createProgram(
     rootNames: js.Array[java.lang.String],
     options: js.UndefOr[scala.Nothing],
@@ -87,9 +72,6 @@ trait WatchCompilerHost[T /* <: BuilderProgram */] extends WatchHost {
     oldProgram: T,
     configFileParsingDiagnostics: js.Array[Diagnostic]
   ): T = js.native
-  /**
-           * Used to create the program when need for program creation or recreation detected
-           */
   def createProgram(
     rootNames: js.Array[java.lang.String],
     options: js.UndefOr[scala.Nothing],
@@ -99,20 +81,11 @@ trait WatchCompilerHost[T /* <: BuilderProgram */] extends WatchHost {
     projectReferences: js.Array[ProjectReference]
   ): T = js.native
   /**
-           * Used to create the program when need for program creation or recreation detected
-           */
+    * Used to create the program when need for program creation or recreation detected
+    */
   def createProgram(rootNames: js.Array[java.lang.String], options: CompilerOptions): T = js.native
-  /**
-           * Used to create the program when need for program creation or recreation detected
-           */
   def createProgram(rootNames: js.Array[java.lang.String], options: CompilerOptions, host: CompilerHost): T = js.native
-  /**
-           * Used to create the program when need for program creation or recreation detected
-           */
   def createProgram(rootNames: js.Array[java.lang.String], options: CompilerOptions, host: CompilerHost, oldProgram: T): T = js.native
-  /**
-           * Used to create the program when need for program creation or recreation detected
-           */
   def createProgram(
     rootNames: js.Array[java.lang.String],
     options: CompilerOptions,
@@ -120,9 +93,6 @@ trait WatchCompilerHost[T /* <: BuilderProgram */] extends WatchHost {
     oldProgram: T,
     configFileParsingDiagnostics: js.Array[Diagnostic]
   ): T = js.native
-  /**
-           * Used to create the program when need for program creation or recreation detected
-           */
   def createProgram(
     rootNames: js.Array[java.lang.String],
     options: CompilerOptions,
@@ -131,22 +101,13 @@ trait WatchCompilerHost[T /* <: BuilderProgram */] extends WatchHost {
     configFileParsingDiagnostics: js.Array[Diagnostic],
     projectReferences: js.Array[ProjectReference]
   ): T = js.native
-  /**
-           * Used to create the program when need for program creation or recreation detected
-           */
   def createProgram(rootNames: js.UndefOr[scala.Nothing], options: js.UndefOr[scala.Nothing], host: CompilerHost): T = js.native
-  /**
-           * Used to create the program when need for program creation or recreation detected
-           */
   def createProgram(
     rootNames: js.UndefOr[scala.Nothing],
     options: js.UndefOr[scala.Nothing],
     host: CompilerHost,
     oldProgram: T
   ): T = js.native
-  /**
-           * Used to create the program when need for program creation or recreation detected
-           */
   def createProgram(
     rootNames: js.UndefOr[scala.Nothing],
     options: js.UndefOr[scala.Nothing],
@@ -154,9 +115,6 @@ trait WatchCompilerHost[T /* <: BuilderProgram */] extends WatchHost {
     oldProgram: T,
     configFileParsingDiagnostics: js.Array[Diagnostic]
   ): T = js.native
-  /**
-           * Used to create the program when need for program creation or recreation detected
-           */
   def createProgram(
     rootNames: js.UndefOr[scala.Nothing],
     options: js.UndefOr[scala.Nothing],
@@ -165,21 +123,9 @@ trait WatchCompilerHost[T /* <: BuilderProgram */] extends WatchHost {
     configFileParsingDiagnostics: js.Array[Diagnostic],
     projectReferences: js.Array[ProjectReference]
   ): T = js.native
-  /**
-           * Used to create the program when need for program creation or recreation detected
-           */
   def createProgram(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions): T = js.native
-  /**
-           * Used to create the program when need for program creation or recreation detected
-           */
   def createProgram(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions, host: CompilerHost): T = js.native
-  /**
-           * Used to create the program when need for program creation or recreation detected
-           */
   def createProgram(rootNames: js.UndefOr[scala.Nothing], options: CompilerOptions, host: CompilerHost, oldProgram: T): T = js.native
-  /**
-           * Used to create the program when need for program creation or recreation detected
-           */
   def createProgram(
     rootNames: js.UndefOr[scala.Nothing],
     options: CompilerOptions,
@@ -187,9 +133,6 @@ trait WatchCompilerHost[T /* <: BuilderProgram */] extends WatchHost {
     oldProgram: T,
     configFileParsingDiagnostics: js.Array[Diagnostic]
   ): T = js.native
-  /**
-           * Used to create the program when need for program creation or recreation detected
-           */
   def createProgram(
     rootNames: js.UndefOr[scala.Nothing],
     options: CompilerOptions,
@@ -199,22 +142,18 @@ trait WatchCompilerHost[T /* <: BuilderProgram */] extends WatchHost {
     projectReferences: js.Array[ProjectReference]
   ): T = js.native
   /**
-           * Use to check file presence for source files and
-           * if resolveModuleNames is not provided (complier is in charge of module resolution) then module files as well
-           */
+    * Use to check file presence for source files and
+    * if resolveModuleNames is not provided (complier is in charge of module resolution) then module files as well
+    */
   def fileExists(path: java.lang.String): scala.Boolean = js.native
   def getCurrentDirectory(): java.lang.String = js.native
   def getDefaultLibFileName(options: CompilerOptions): java.lang.String = js.native
   def getNewLine(): java.lang.String = js.native
   /**
-           * Use to read file text for source files and
-           * if resolveModuleNames is not provided (complier is in charge of module resolution) then module files as well
-           */
+    * Use to read file text for source files and
+    * if resolveModuleNames is not provided (complier is in charge of module resolution) then module files as well
+    */
   def readFile(path: java.lang.String): js.UndefOr[java.lang.String] = js.native
-  /**
-           * Use to read file text for source files and
-           * if resolveModuleNames is not provided (complier is in charge of module resolution) then module files as well
-           */
   def readFile(path: java.lang.String, encoding: java.lang.String): js.UndefOr[java.lang.String] = js.native
   def useCaseSensitiveFileNames(): scala.Boolean = js.native
 }

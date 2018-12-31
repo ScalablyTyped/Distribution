@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridProps[T] extends js.Object {
   var belowChart: js.UndefOr[scala.Boolean] = js.undefined
   var direction: js.UndefOr[GridDirection] = js.undefined

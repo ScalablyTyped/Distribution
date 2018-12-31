@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PropTypes extends js.Object {
   var classNames: js.UndefOr[reactDashPlacesDashAutocompleteLib.Anon_RootAutocompleteItemActive] = js.undefined
   var debounce: js.UndefOr[scala.Double] = js.undefined

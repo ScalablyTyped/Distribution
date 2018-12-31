@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServeDetails extends js.Object {
   var custom: scala.Boolean
   var externalAddress: java.lang.String

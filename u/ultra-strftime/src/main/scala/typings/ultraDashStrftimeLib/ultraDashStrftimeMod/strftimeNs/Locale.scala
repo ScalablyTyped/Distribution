@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Locale extends js.Object {
   var AM: java.lang.String
   var PM: java.lang.String

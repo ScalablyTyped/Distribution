@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITimeLine extends js.Object {
   var asset: js.UndefOr[ITimeLineAsset] = js.undefined
   var date: js.UndefOr[js.Array[ITimelineDate]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait detectPointer extends js.Object {
   var anyCoarse: scala.Boolean
   var anyFine: scala.Boolean

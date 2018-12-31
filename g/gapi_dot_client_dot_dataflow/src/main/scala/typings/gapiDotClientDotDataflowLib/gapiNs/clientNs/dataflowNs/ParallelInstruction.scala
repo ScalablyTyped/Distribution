@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParallelInstruction extends js.Object {
   /** Additional information for Flatten instructions. */
   var flatten: js.UndefOr[FlattenInstruction] = js.undefined
@@ -22,9 +21,9 @@ trait ParallelInstruction extends js.Object {
   /** Additional information for Read instructions. */
   var read: js.UndefOr[ReadInstruction] = js.undefined
   /**
-               * System-defined name of this operation.
-               * Unique across the workflow.
-               */
+    * System-defined name of this operation.
+    * Unique across the workflow.
+    */
   var systemName: js.UndefOr[java.lang.String] = js.undefined
   /** Additional information for Write instructions. */
   var write: js.UndefOr[WriteInstruction] = js.undefined

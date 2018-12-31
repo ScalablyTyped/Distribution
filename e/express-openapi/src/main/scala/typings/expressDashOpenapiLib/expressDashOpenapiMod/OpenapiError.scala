@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OpenapiError extends js.Object {
   var errorCode: java.lang.String
   var location: java.lang.String

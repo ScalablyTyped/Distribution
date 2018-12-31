@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.utilNs.IBindable because Would inherit conflicting mutable fields List(statics, uses, mixins, config, extend, inheritableStatics, alias, alternateClassName, requires, singleton, callSuper, self, getInitialConfig, callParent, callOverridden, initConfig))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(extjsLib.ExtNs.utilNs.IBindable because Would inherit conflicting mutable fields List(alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses))*/
 trait IComboBox extends IPicker {
   /** [Method] A method called when the filtering caused by the doQuery call is complete and the store has been either filtered loca
   		* @param queryPlan Object An object containing details about the query was executed.

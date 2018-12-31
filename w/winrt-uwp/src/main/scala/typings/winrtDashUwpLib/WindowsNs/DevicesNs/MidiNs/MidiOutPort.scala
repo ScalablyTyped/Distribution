@@ -14,14 +14,14 @@ abstract class MidiOutPort () extends js.Object {
   /** Closes the MidiOutPort . */
   def close(): scala.Unit = js.native
   /**
-                   * Send the specified data buffer to the device associated with this MidiOutPort .
-                   * @param midiData The data to send to the device.
-                   */
+    * Send the specified data buffer to the device associated with this MidiOutPort .
+    * @param midiData The data to send to the device.
+    */
   def sendBuffer(midiData: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer): scala.Unit = js.native
   /**
-                   * Send the data in the specified MIDI message to the device associated with this MidiOutPort .
-                   * @param midiMessage The MIDI message to send to the device.
-                   */
+    * Send the data in the specified MIDI message to the device associated with this MidiOutPort .
+    * @param midiMessage The MIDI message to send to the device.
+    */
   def sendMessage(midiMessage: IMidiMessage): scala.Unit = js.native
 }
 
@@ -30,15 +30,15 @@ abstract class MidiOutPort () extends js.Object {
 @js.native
 object MidiOutPort extends js.Object {
   /**
-                   * Creates a MidiOutPort object for the specified device.
-                   * @param deviceId The device ID, which can be obtained by enumerating the devices on the system Windows.Devices.Enumeration.DeviceInformation.FindAllAsync .
-                   * @return The asynchronous operation. Upon completion, IAsyncOperation.GetResults returns a MidiOutPort object.
-                   */
+    * Creates a MidiOutPort object for the specified device.
+    * @param deviceId The device ID, which can be obtained by enumerating the devices on the system Windows.Devices.Enumeration.DeviceInformation.FindAllAsync .
+    * @return The asynchronous operation. Upon completion, IAsyncOperation.GetResults returns a MidiOutPort object.
+    */
   def fromIdAsync(deviceId: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.DevicesNs.MidiNs.IMidiOutPort] = js.native
   /**
-                   * Gets a query string that can be used to enumerate all MidiOutPort objects on the system.
-                   * @return The query string used to enumerate the MidiOutPort objects on the system.
-                   */
+    * Gets a query string that can be used to enumerate all MidiOutPort objects on the system.
+    * @return The query string used to enumerate the MidiOutPort objects on the system.
+    */
   def getDeviceSelector(): java.lang.String = js.native
 }
 

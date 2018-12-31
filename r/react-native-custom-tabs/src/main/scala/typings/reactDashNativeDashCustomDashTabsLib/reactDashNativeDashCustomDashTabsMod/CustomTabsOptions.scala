@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomTabsOptions extends js.Object {
   var animations: js.UndefOr[Animations] = js.undefined
   var enableDefaultShare: js.UndefOr[scala.Boolean] = js.undefined

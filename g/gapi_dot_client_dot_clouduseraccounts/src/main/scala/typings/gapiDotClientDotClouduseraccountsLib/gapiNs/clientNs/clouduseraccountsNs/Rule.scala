@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Rule extends js.Object {
   /** Required */
   var action: js.UndefOr[java.lang.String] = js.undefined
@@ -20,9 +19,9 @@ trait Rule extends js.Object {
   /** The rule matches if the PRINCIPAL/AUTHORITY_SELECTOR is not in this set of entries. */
   var notIns: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-               * A permission is a string of form '..' (e.g., 'storage.buckets.list'). A value of '&#42;' matches all permissions, and a verb part of '&#42;' (e.g.,
-               * 'storage.buckets.&#42;') matches all verbs.
-               */
+    * A permission is a string of form '..' (e.g., 'storage.buckets.list'). A value of '&#42;' matches all permissions, and a verb part of '&#42;' (e.g.,
+    * 'storage.buckets.&#42;') matches all verbs.
+    */
   var permissions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 

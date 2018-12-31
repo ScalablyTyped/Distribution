@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Type extends js.Object {
   def collation(): java.lang.String
   def column(): java.lang.String

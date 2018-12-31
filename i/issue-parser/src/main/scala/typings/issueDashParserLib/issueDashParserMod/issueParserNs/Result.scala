@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Result extends js.Object {
   var actions: Actions
   var allRefs: js.Array[Reference | Action]

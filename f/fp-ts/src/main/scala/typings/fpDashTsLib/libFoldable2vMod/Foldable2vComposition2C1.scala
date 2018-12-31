@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Foldable2vComposition2C1[F /* <: fpDashTsLib.libHKTMod.URIS2 */, G /* <: fpDashTsLib.libHKTMod.URIS */, LF]
   extends fpDashTsLib.libFoldableMod.FoldableComposition2C1[F, G, LF] {
   def foldMap[M](M: fpDashTsLib.libMonoidMod.Monoid[M]): js.Function2[

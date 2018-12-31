@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This represents the attributes available for configuring virtual elements, beyond the applicable DOM attributes. */
-
 trait Attributes
   extends Lifecycle[js.Any, js.Any]
      with /** Any other virtual element properties, including attributes and event handlers. */

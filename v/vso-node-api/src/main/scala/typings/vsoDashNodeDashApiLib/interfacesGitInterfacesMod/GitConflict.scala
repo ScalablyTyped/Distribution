@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GitConflict extends js.Object {
   var _links: js.Any
   var conflictId: scala.Double

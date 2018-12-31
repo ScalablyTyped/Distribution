@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait ErrorEventObject
   extends jqueryLib.JQueryEventObject {
   /**
-       * The invalid date. Type: moment object (clone)
-       */
+    * The invalid date. Type: moment object (clone)
+    */
   var date: momentLib.momentMod.momentNs.Moment = js.native
 }
 

@@ -15,12 +15,12 @@ class MDCChip ()
   val foundation: atMaterialChipsLib.chipFoundationMod.default = js.native
   val ripple: atMaterialRippleLib.rippleMod.MDCRipple = js.native
   /**
-       * Returns true if the chip is selected.
-       */
+    * Returns true if the chip is selected.
+    */
   def isSelected(): scala.Boolean = js.native
   /**
-       * Destroys the chip and removes the root element from the DOM.
-       */
+    * Destroys the chip and removes the root element from the DOM.
+    */
   def remove(): scala.Unit = js.native
 }
 

@@ -28,11 +28,9 @@ trait CSSStyleSheet extends StyleSheet {
   val rules: CSSRuleList = js.native
   /** @deprecated */
   def addImport(bstrURL: java.lang.String): scala.Double = js.native
-  /** @deprecated */
   def addImport(bstrURL: java.lang.String, lIndex: scala.Double): scala.Double = js.native
   /** @deprecated */
   def addPageRule(bstrSelector: java.lang.String, bstrStyle: java.lang.String): scala.Double = js.native
-  /** @deprecated */
   def addPageRule(bstrSelector: java.lang.String, bstrStyle: java.lang.String, lIndex: scala.Double): scala.Double = js.native
   def addRule(bstrSelector: java.lang.String): scala.Double = js.native
   def addRule(bstrSelector: java.lang.String, bstrStyle: java.lang.String): scala.Double = js.native

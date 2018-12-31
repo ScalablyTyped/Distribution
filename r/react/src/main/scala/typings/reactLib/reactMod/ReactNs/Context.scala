@@ -12,8 +12,8 @@ trait Context[T] extends js.Object {
   var Provider: Provider[T] = js.native
   var displayName: js.UndefOr[java.lang.String] = js.native
   /**
-           * **NOTE**: Exotic components are not callable.
-           */
+    * **NOTE**: Exotic components are not callable.
+    */
   def Consumer(props: ConsumerProps[T]): ReactElement[_] | scala.Null = js.native
 }
 

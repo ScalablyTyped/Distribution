@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OutputOptions extends js.Object {
   var ascii_only: js.UndefOr[scala.Boolean] = js.undefined
   var beautify: js.UndefOr[scala.Boolean] = js.undefined

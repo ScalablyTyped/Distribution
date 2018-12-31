@@ -223,7 +223,6 @@ object arrayNs extends js.Object {
   ): fpDashTsLib.libArrayMod.Global.Array[C] = js.native
   @js.native
   object Global extends js.Object {
-    
     trait Array[T] extends js.Object {
       /** phantom property added by `fp-ts` */
       var _A: T

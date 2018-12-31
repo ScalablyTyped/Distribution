@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HTMLSnippets extends js.Object {
   /*HTML that gives the download link for the STIX fonts only. (Used in place of fonts when the HTML-CSS option
-          * for availableFonts only includes the STIX fonts.)
-          */
+    * for availableFonts only includes the STIX fonts.)
+    */
   var STIXfonts: js.UndefOr[java.lang.String] = js.undefined
   /*HTML that gives the download link for the MathJax TeX fonts only. (Used in place of fonts when the HTML-CSS
-          * option for availableFonts only includes the TeX fonts.)
-          */
+    * option for availableFonts only includes the TeX fonts.)
+    */
   var TeXfonts: js.UndefOr[java.lang.String] = js.undefined
   /*The HTML for the close box in the FontWarning message.*/
   var closeBox: js.UndefOr[java.lang.String] = js.undefined

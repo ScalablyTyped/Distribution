@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object responseDashTimeModMembers extends js.Object {
   /**
-   * Response time header for node.js
-   * Returns middleware that adds a X-Response-Time header to responses.
-   */
+    * Response time header for node.js
+    * Returns middleware that adds a X-Response-Time header to responses.
+    */
   def apply(): js.Function3[
     /* request */ nodeLib.httpMod.IncomingMessage, 
     /* response */ nodeLib.httpMod.ServerResponse, 
@@ -24,10 +24,6 @@ object responseDashTimeModMembers extends js.Object {
     /* callback */ js.Function1[/* err */ js.Any, scala.Unit], 
     _
   ] = js.native
-  /**
-   * Response time header for node.js
-   * Returns middleware that adds a X-Response-Time header to responses.
-   */
   def apply(options: responseDashTimeLib.responseDashTimeMod.responseTimeNs.ResponseTimeOptions): js.Function3[
     /* request */ nodeLib.httpMod.IncomingMessage, 
     /* response */ nodeLib.httpMod.ServerResponse, 

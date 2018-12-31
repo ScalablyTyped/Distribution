@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TorrentOptions extends js.Object {
   var announce: js.UndefOr[js.Array[_]] = js.undefined
   var getAnnounceOpts: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

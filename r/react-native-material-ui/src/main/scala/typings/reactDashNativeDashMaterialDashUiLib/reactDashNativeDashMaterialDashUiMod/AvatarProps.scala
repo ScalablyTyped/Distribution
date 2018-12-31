@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AvatarProps extends js.Object {
   var icon: js.UndefOr[java.lang.String] = js.undefined
   var iconColor: js.UndefOr[java.lang.String] = js.undefined

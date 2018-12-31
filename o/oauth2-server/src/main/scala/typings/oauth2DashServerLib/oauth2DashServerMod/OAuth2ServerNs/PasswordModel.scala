@@ -10,9 +10,9 @@ trait PasswordModel
   extends BaseModel
      with RequestAuthenticationModel {
   /**
-           * Invoked to generate a new refresh token.
-           *
-           */
+    * Invoked to generate a new refresh token.
+    *
+    */
   var generateRefreshToken: js.UndefOr[
     js.Function4[
       /* client */ Client, 
@@ -23,9 +23,9 @@ trait PasswordModel
     ]
   ] = js.native
   /**
-           * Invoked to check if the requested scope is valid for a particular client/user combination.
-           *
-           */
+    * Invoked to check if the requested scope is valid for a particular client/user combination.
+    *
+    */
   var validateScope: js.UndefOr[
     js.Function4[
       /* user */ User, 
@@ -36,14 +36,10 @@ trait PasswordModel
     ]
   ] = js.native
   /**
-           * Invoked to retrieve a user using a username/password combination.
-           *
-           */
+    * Invoked to retrieve a user using a username/password combination.
+    *
+    */
   def getUser(username: java.lang.String, password: java.lang.String): js.Promise[User | Falsey] = js.native
-  /**
-           * Invoked to retrieve a user using a username/password combination.
-           *
-           */
   def getUser(username: java.lang.String, password: java.lang.String, callback: Callback[User | Falsey]): js.Promise[User | Falsey] = js.native
 }
 

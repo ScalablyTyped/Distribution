@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InappproductsResource extends js.Object {
   def batch(request: gapiDotClientDotAndroidpublisherLib.Anon_PrettyPrintQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[InappproductsBatchResponse]
   /** Delete an in-app product for an app. */

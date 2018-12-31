@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Block extends Node {
   var hasMedia: scala.Boolean
   var hasProperties: scala.Boolean
@@ -15,8 +14,8 @@ trait Block extends Node {
   var parent: Block
   var scope: scala.Boolean
   /**
-               * Push a `node` to this block.
-               */
+    * Push a `node` to this block.
+    */
   def push(node: Node): scala.Unit
 }
 

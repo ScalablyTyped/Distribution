@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetUsersData extends js.Object {
   var connection: js.UndefOr[java.lang.String] = js.undefined
   var fields: js.UndefOr[java.lang.String] = js.undefined

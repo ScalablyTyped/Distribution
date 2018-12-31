@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Enum for the animation key frame interpolation type
-     */
+  * Enum for the animation key frame interpolation type
+  */
 @JSImport("babylonjs", "AnimationKeyInterpolation")
 @js.native
 object AnimationKeyInterpolation extends js.Object {

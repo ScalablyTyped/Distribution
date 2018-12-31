@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_WindowIdIsWindowClosing extends js.Object {
   /** True when the tab is being closed because its window is being closed. */
   var isWindowClosing: scala.Boolean

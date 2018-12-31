@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AdapterInstancesConfig extends js.Object {
   /** the name of a previously registered "ajax" adapter */
   var ajax: js.UndefOr[java.lang.String] = js.undefined

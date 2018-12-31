@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EncryptionInfo extends js.Object {
   /** The encryption entity ID. This should match the encryption configuration for ad serving or Data Transfer. */
   var encryptionEntityId: js.UndefOr[java.lang.String] = js.undefined

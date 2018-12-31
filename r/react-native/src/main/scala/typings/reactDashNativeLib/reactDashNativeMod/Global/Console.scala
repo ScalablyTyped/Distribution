@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Console polyfill
-     * @see https://facebook.github.io/react-native/docs/javascript-environment.html#polyfills
-     */
+  * Console polyfill
+  * @see https://facebook.github.io/react-native/docs/javascript-environment.html#polyfills
+  */
 @js.native
 trait Console extends js.Object {
   var disableYellowBox: scala.Boolean = js.native

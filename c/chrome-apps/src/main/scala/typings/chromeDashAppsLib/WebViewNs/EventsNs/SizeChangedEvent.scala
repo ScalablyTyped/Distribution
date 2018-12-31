@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Fired when the embedded web content has been resized via autosize.
-         * Only fires if autosize is enabled.
-         */
+  * Fired when the embedded web content has been resized via autosize.
+  * Only fires if autosize is enabled.
+  */
 @js.native
 trait SizeChangedEvent
   extends stdLib.Event {

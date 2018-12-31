@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WampyOptions extends js.Object {
   var authid: js.UndefOr[java.lang.String] = js.undefined
   var authmethods: js.UndefOr[js.Array[java.lang.String]] = js.undefined

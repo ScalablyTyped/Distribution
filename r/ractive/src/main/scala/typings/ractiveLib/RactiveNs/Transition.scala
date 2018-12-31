@@ -14,7 +14,6 @@ trait Transition extends js.Object {
   def animateStyle(props: js.Object, options: TransitionAnimateOptions, complete: js.Function): scala.Unit = js.native
   // Default false
   def complete(): scala.Unit = js.native
-  // Default false
   def complete(noReset: scala.Boolean): scala.Unit = js.native
   def getStyle(prop: java.lang.String): java.lang.String = js.native
   def getStyle(props: js.Array[java.lang.String]): js.Object = js.native

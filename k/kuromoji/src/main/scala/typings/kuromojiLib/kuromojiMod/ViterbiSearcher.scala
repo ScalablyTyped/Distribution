@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ViterbiSearcher extends js.Object {
   var connection_costs: ConnectionCosts
   def backward(lattice: ViterbiLattice): js.Array[ViterbiNode]

@@ -6,27 +6,27 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * A PathSegment represents a straight line or curved segment of a path between
-    * two or more points that are part of a PathFigure.
-    * A PathSegment must not be modified once its containing PathFigure's
-    * Geometry has been assigned to a Shape.
-    */
+  * A PathSegment represents a straight line or curved segment of a path between
+  * two or more points that are part of a PathFigure.
+  * A PathSegment must not be modified once its containing PathFigure's
+  * Geometry has been assigned to a Shape.
+  */
 @JSImport("go", "PathSegment")
 @js.native
 class PathSegment protected ()
   extends goLib.goMod.goNs.PathSegment {
   /**
-          * Constructs a segment that goes nowhere unless you specify some Points.
-          * @param {EnumValue} type
-          * @param {number=} ex optional: the X coordinate of the end point.
-          * @param {number=} ey optional: the Y coordinate of the end point.
-          * @param {number=} x1 optional: the X coordinate of the first bezier control point.
-          * @param {number=} y1 optional: the Y coordinate of the first bezier control point.
-          * @param {number=} x2 optional: the X coordinate of the second cubic bezier control point.
-          * @param {number=} y2 optional: the Y coordinate of the second cubic bezier control point,
-          * or the large-arc-flag of an SvgArc.
-          * @param {boolean=} clockwise optional: whether an SvgArc goes clockwise or counterclockwise.
-          */
+    * Constructs a segment that goes nowhere unless you specify some Points.
+    * @param {EnumValue} type
+    * @param {number=} ex optional: the X coordinate of the end point.
+    * @param {number=} ey optional: the Y coordinate of the end point.
+    * @param {number=} x1 optional: the X coordinate of the first bezier control point.
+    * @param {number=} y1 optional: the Y coordinate of the first bezier control point.
+    * @param {number=} x2 optional: the X coordinate of the second cubic bezier control point.
+    * @param {number=} y2 optional: the Y coordinate of the second cubic bezier control point,
+    * or the large-arc-flag of an SvgArc.
+    * @param {boolean=} clockwise optional: whether an SvgArc goes clockwise or counterclockwise.
+    */
   def this(`type`: goLib.goMod.goNs.EnumValue, ex: js.UndefOr[scala.Double], ey: js.UndefOr[scala.Double], x1: js.UndefOr[scala.Double], y1: js.UndefOr[scala.Double], x2: js.UndefOr[scala.Double], y2: js.UndefOr[scala.Double], clockwise: js.UndefOr[scala.Boolean]) = this()
   /**Gets or sets the center X value of the Arc for a PathSegment of type .Arc.*/
   /* CompleteClass */
@@ -80,13 +80,13 @@ class PathSegment protected ()
   /* CompleteClass */
   override var xAxisRotation: scala.Double = js.native
   /**
-          * Closes the path after this PathSegment.
-          */
+    * Closes the path after this PathSegment.
+    */
   /* CompleteClass */
   override def close(): goLib.goMod.goNs.PathSegment = js.native
   /**
-          * Makes a copy of this PathSegment.
-          */
+    * Makes a copy of this PathSegment.
+    */
   /* CompleteClass */
   override def copy(): goLib.goMod.goNs.PathSegment = js.native
   /* CompleteClass */
@@ -94,11 +94,11 @@ class PathSegment protected ()
 }
 
 /**
-    * A PathSegment represents a straight line or curved segment of a path between
-    * two or more points that are part of a PathFigure.
-    * A PathSegment must not be modified once its containing PathFigure's
-    * Geometry has been assigned to a Shape.
-    */
+  * A PathSegment represents a straight line or curved segment of a path between
+  * two or more points that are part of a PathFigure.
+  * A PathSegment must not be modified once its containing PathFigure's
+  * Geometry has been assigned to a Shape.
+  */
 @JSImport("go", "PathSegment")
 @js.native
 object PathSegment extends js.Object {

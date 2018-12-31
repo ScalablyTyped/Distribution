@@ -5,55 +5,54 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Header extends js.Object {
   /**
-                       * device minor versio, 0 by default
-                       */
+    * device minor versio, 0 by default
+    */
   var devmajor: scala.Double
   /**
-                       * device minor version, 0 by default
-                       */
+    * device minor version, 0 by default
+    */
   var devminor: scala.Double
   /**
-                       * gid for entry owner, 9 by default
-                       */
+    * gid for entry owner, 9 by default
+    */
   var gid: scala.Double
   /**
-                       * gname of entry owner, null by default
-                       */
+    * gname of entry owner, null by default
+    */
   var gname: java.lang.String
   /**
-                       * Linked file name
-                       */
+    * Linked file name
+    */
   var linkname: java.lang.String
   /**
-                       * Entry mode, 0755 for dirs and 0644 by default
-                       */
+    * Entry mode, 0755 for dirs and 0644 by default
+    */
   var mode: scala.Double
   /**
-                       * Last modified date for entry, now by default
-                       */
+    * Last modified date for entry, now by default
+    */
   var mtime: scala.Double
   /**
-                       * File path
-                       */
+    * File path
+    */
   var name: java.lang.String
   /**
-                       * Entry size, 0 by default
-                       */
+    * Entry size, 0 by default
+    */
   var size: scala.Double
   /**
-                       * Type of entry, file by default
-                       */
+    * Type of entry, file by default
+    */
   var `type`: adoneLib.adoneLibStrings.file | adoneLib.adoneLibStrings.directory | adoneLib.adoneLibStrings.link | adoneLib.adoneLibStrings.symlink | adoneLib.adoneLibStrings.`block-device` | adoneLib.adoneLibStrings.`character-device` | adoneLib.adoneLibStrings.fifo | adoneLib.adoneLibStrings.`contiguous-file`
   /**
-                       * uid for entry owner, 0 by default
-                       */
+    * uid for entry owner, 0 by default
+    */
   var uid: scala.Double
   /**
-                       * uname of entry owner, null by default
-                       */
+    * uname of entry owner, null by default
+    */
   var uname: java.lang.String
 }
 

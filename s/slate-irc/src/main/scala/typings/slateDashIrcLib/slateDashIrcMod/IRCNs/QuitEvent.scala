@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QuitEvent extends js.Object {
   var hostmask: java.lang.String
   var message: java.lang.String

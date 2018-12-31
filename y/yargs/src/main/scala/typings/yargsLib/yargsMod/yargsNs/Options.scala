@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var alias: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var array: js.UndefOr[scala.Boolean] = js.undefined
@@ -21,9 +20,9 @@ trait Options extends js.Object {
   var default: js.UndefOr[js.Any] = js.undefined
   var defaultDescription: js.UndefOr[java.lang.String] = js.undefined
   /**
-           *  @deprecated since version 6.6.0
-           *  Use 'demandOption' instead
-           */
+    *  @deprecated since version 6.6.0
+    *  Use 'demandOption' instead
+    */
   var demand: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   var demandOption: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   var desc: js.UndefOr[java.lang.String] = js.undefined
@@ -39,14 +38,14 @@ trait Options extends js.Object {
   var normalize: js.UndefOr[scala.Boolean] = js.undefined
   var number: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           *  @deprecated since version 6.6.0
-           *  Use 'demandOption' instead
-           */
+    *  @deprecated since version 6.6.0
+    *  Use 'demandOption' instead
+    */
   var require: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   /**
-           *  @deprecated since version 6.6.0
-           *  Use 'demandOption' instead
-           */
+    *  @deprecated since version 6.6.0
+    *  Use 'demandOption' instead
+    */
   var required: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   var requiresArg: js.UndefOr[scala.Boolean] = js.undefined
   var skipValidation: js.UndefOr[scala.Boolean] = js.undefined

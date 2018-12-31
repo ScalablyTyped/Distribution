@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Options Type Defs
-
 trait OpenOptions extends js.Object {
   var autoOpen: js.UndefOr[scala.Boolean] = js.undefined
   var baudRate: js.UndefOr[

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This holds LayeredDigraphLayout-specific information about Nodes.*/
-
 trait LayeredDigraphVertex extends LayoutVertex {
   /**The column to which the node is assigned.*/
   var column: scala.Double

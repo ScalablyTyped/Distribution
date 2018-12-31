@@ -14,9 +14,9 @@ class Tween protected () extends AbstractTween {
   var pluginData: js.Any = js.native
   // properties
   var target: js.Any = js.native
-  def call(callback: js.Function1[/* repeated */js.Any, scala.Unit]): Tween = js.native
-  def call(callback: js.Function1[/* repeated */js.Any, scala.Unit], params: js.Array[_]): Tween = js.native
-  def call(callback: js.Function1[/* repeated */js.Any, scala.Unit], params: js.Array[_], scope: js.Any): Tween = js.native
+  def call(callback: js.Function1[/* repeated */ js.Any, scala.Unit]): Tween = js.native
+  def call(callback: js.Function1[/* repeated */ js.Any, scala.Unit], params: js.Array[_]): Tween = js.native
+  def call(callback: js.Function1[/* repeated */ js.Any, scala.Unit], params: js.Array[_], scope: js.Any): Tween = js.native
   def label(name: java.lang.String): Tween = js.native
   def pause(): Tween = js.native
   def pause(tween: Tween): Tween = js.native
@@ -37,7 +37,6 @@ object Tween extends js.Object {
   var IGNORE: js.Any = js.native
   // methods
   def get(target: js.Any): tweenjsLib.createjsNs.Tween = js.native
-  // methods
   def get(target: js.Any, props: tweenjsLib.createjsNs.TweenProps): tweenjsLib.createjsNs.Tween = js.native
   def handleEvent(e: createjsDashLibLib.createjsNs.Event): scala.Unit = js.native
   def hasActiveTweens(target: js.Any): scala.Boolean = js.native

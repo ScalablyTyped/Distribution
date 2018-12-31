@@ -8,14 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("spdy", "server")
 @js.native
 object serverNs extends js.Object {
-  
   trait PushOptions extends js.Object {
     var method: js.UndefOr[java.lang.String] = js.undefined
     var request: js.UndefOr[js.Any] = js.undefined
     var response: js.UndefOr[js.Any] = js.undefined
     var status: js.UndefOr[scala.Double] = js.undefined
   }
-  
   
   trait ServerOptions
     extends nodeLib.tlsMod.TlsOptions {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SortField extends js.Object {
   var multiSortMeta: js.Any
   var sortField: java.lang.String

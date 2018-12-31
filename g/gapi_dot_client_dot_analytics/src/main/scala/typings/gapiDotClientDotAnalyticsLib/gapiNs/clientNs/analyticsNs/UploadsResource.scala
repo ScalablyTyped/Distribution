@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadsResource extends js.Object {
   /** Delete data associated with a previous upload. */
   def deleteUploadData(request: gapiDotClientDotAnalyticsLib.Anon_PrettyPrintAccountIdQuotaUserKeyUserIp): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

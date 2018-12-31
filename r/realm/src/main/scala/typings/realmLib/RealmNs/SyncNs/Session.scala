@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * Session
-    * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.Session.html }
-    */
+  * Session
+  * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.Session.html }
+  */
 @JSGlobal("Realm.Sync.Session")
 @js.native
 class Session () extends js.Object {

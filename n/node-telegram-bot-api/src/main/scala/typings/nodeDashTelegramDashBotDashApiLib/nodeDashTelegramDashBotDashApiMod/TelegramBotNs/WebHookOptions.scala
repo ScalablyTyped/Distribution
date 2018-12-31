@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebHookOptions extends js.Object {
   var autoOpen: js.UndefOr[scala.Boolean] = js.undefined
   var cert: java.lang.String

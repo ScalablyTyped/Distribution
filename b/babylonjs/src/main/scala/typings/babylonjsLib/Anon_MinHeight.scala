@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MinHeight extends js.Object {
   var alphaFilter: js.UndefOr[scala.Double] = js.undefined
   var colorFilter: js.UndefOr[babylonjsLib.BABYLONNs.Color3] = js.undefined

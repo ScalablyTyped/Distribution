@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartYAxisItemLabelsDateFormats extends js.Object {
   var days: js.UndefOr[java.lang.String] = js.undefined
   var hours: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RedirectUri extends js.Object {
   /** url that the Auth0 will redirect after Auth with the Authorization Response */
   var redirectUri: js.UndefOr[java.lang.String] = js.undefined

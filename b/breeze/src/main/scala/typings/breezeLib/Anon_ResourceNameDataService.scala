@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ResourceNameDataService extends js.Object {
   var allowConcurrentSaves: js.UndefOr[scala.Boolean] = js.undefined
   var dataService: js.UndefOr[breezeLib.breezeNs.DataService] = js.undefined

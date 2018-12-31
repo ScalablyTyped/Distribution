@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("aws-sdk/clients/iam", JSImport.Namespace)
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class namespaced () extends IAM {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsIamMod.IAMNs.ClientConfiguration) = this()
 }
 

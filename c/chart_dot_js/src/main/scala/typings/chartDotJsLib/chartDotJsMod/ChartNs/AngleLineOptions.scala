@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AngleLineOptions extends js.Object {
   var color: js.UndefOr[ChartColor] = js.undefined
   var display: js.UndefOr[scala.Boolean] = js.undefined

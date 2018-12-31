@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EllipticalArcCommand extends js.Object {
   var code: svgDashPathDashParserLib.svgDashPathDashParserLibStrings.a | svgDashPathDashParserLib.svgDashPathDashParserLibStrings.A
   var command: svgDashPathDashParserLib.svgDashPathDashParserLibStrings.`elliptical arc`

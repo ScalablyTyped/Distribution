@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LogConfig extends js.Object {
   /** The JQuery element for the command. This will highlight the command in the main window when debugging */
   @JSName("$el")

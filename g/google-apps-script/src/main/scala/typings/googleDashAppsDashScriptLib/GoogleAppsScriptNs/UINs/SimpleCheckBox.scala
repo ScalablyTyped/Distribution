@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SimpleCheckBox extends js.Object {
   def addBlurHandler(handler: Handler): SimpleCheckBox
   def addClickHandler(handler: Handler): SimpleCheckBox

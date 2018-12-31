@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SafeStyles extends js.Object {
   var backgroundColor: js.UndefOr[scala.Boolean] = js.undefined
   var border: js.UndefOr[scala.Boolean] = js.undefined

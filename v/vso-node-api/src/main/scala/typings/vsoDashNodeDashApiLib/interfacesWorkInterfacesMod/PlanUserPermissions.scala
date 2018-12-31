@@ -12,43 +12,43 @@ sealed trait PlanUserPermissions extends js.Object
 @js.native
 object PlanUserPermissions extends js.Object {
   /**
-       * Full control permission for this plan.
-       */
+    * Full control permission for this plan.
+    */
   @js.native
   sealed trait AllPermissions
     extends vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.PlanUserPermissions
   
   /**
-       * Permission to delete this plan.
-       */
+    * Permission to delete this plan.
+    */
   @js.native
   sealed trait Delete
     extends vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.PlanUserPermissions
   
   /**
-       * Permission to update this plan.
-       */
+    * Permission to update this plan.
+    */
   @js.native
   sealed trait Edit
     extends vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.PlanUserPermissions
   
   /**
-       * Permission to manage this plan.
-       */
+    * Permission to manage this plan.
+    */
   @js.native
   sealed trait Manage
     extends vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.PlanUserPermissions
   
   /**
-       * None
-       */
+    * None
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.PlanUserPermissions
   
   /**
-       * Permission to view this plan.
-       */
+    * Permission to view this plan.
+    */
   @js.native
   sealed trait View
     extends vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.PlanUserPermissions

@@ -12,22 +12,22 @@ sealed trait ProcessTemplateType extends js.Object
 @js.native
 object ProcessTemplateType extends js.Object {
   /**
-       * Indicates a custom template.
-       */
+    * Indicates a custom template.
+    */
   @js.native
   sealed trait Custom
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.ProcessTemplateType
   
   /**
-       * Indicates a default template.
-       */
+    * Indicates a default template.
+    */
   @js.native
   sealed trait Default
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.ProcessTemplateType
   
   /**
-       * Indicates an upgrade template.
-       */
+    * Indicates an upgrade template.
+    */
   @js.native
   sealed trait Upgrade
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.ProcessTemplateType

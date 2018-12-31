@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnUnfixingRefusedEventUIParam extends js.Object {
   /**
   	 * Gets the columnKey or the columnIndex.

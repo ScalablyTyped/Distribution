@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnRefRefComponent[T, P] extends js.Object {
   var onRef: js.UndefOr[
     reactLib.reactMod.ReactNs.Ref[

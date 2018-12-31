@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectTableHOCOptions extends js.Object {
   /**
-       * Default: false
-       */
+    * Default: false
+    */
   var floatingLeft: js.UndefOr[scala.Boolean] = js.undefined
 }
 

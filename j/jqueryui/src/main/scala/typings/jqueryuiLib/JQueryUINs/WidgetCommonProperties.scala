@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WidgetCommonProperties extends js.Object {
   var defaultElement: java.lang.String
   var document: stdLib.Document

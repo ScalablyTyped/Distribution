@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait CalculationMode extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.1]
-     */
+  * [Api set: ExcelApi 1.1]
+  */
 @JSGlobal("Excel.CalculationMode")
 @js.native
 object CalculationMode extends js.Object {

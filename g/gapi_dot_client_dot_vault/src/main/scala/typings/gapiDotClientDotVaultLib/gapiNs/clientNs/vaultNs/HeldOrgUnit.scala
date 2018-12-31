@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HeldOrgUnit extends js.Object {
   /** When the org unit was put on hold. This property is immutable. */
   var holdTime: js.UndefOr[java.lang.String] = js.undefined

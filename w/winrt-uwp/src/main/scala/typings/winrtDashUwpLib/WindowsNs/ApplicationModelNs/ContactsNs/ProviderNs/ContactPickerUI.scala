@@ -19,17 +19,17 @@ abstract class ContactPickerUI () extends js.Object {
   /** Determines the selection mode for the contact picker. The most common options are PickSingleContactAsync or PickMultipleContactsAsync . */
   var selectionMode: winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.ContactSelectionMode = js.native
   /**
-                       * Adds a Contact .
-                       * @param contact An object that contains the contact's information.
-                       * @return An AddContactResult -typed value that indicates whether the contact was added successfully.
-                       */
+    * Adds a Contact .
+    * @param contact An object that contains the contact's information.
+    * @return An AddContactResult -typed value that indicates whether the contact was added successfully.
+    */
   def addContact(contact: winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.Contact): AddContactResult = js.native
   /**
-                       * Adds a Contact .
-                       * @param id The ID for the contact.
-                       * @param contact An object that contains the contact's information.
-                       * @return An AddContactResult -typed value that indicates whether the contact was added successfully.
-                       */
+    * Adds a Contact .
+    * @param id The ID for the contact.
+    * @param contact An object that contains the contact's information.
+    * @return An AddContactResult -typed value that indicates whether the contact was added successfully.
+    */
   def addContact(id: java.lang.String, contact: winrtDashUwpLib.WindowsNs.ApplicationModelNs.ContactsNs.Contact): AddContactResult = js.native
   def addEventListener(`type`: java.lang.String, listener: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_]): scala.Unit = js.native
   @JSName("addEventListener")
@@ -38,17 +38,17 @@ abstract class ContactPickerUI () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[ContactPickerUI, ContactRemovedEventArgs]
   ): scala.Unit = js.native
   /**
-                       * Checks to see whether the contact was already selected by the user.
-                       * @param id The ID of the contact.
-                       * @return True if the contact has already been selected; otherwise, false.
-                       */
+    * Checks to see whether the contact was already selected by the user.
+    * @param id The ID of the contact.
+    * @return True if the contact has already been selected; otherwise, false.
+    */
   def containsContact(id: java.lang.String): scala.Boolean = js.native
   /** Occurs when the user deselects or removes the contact. */
   def oncontactremoved(ev: ContactRemovedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[ContactPickerUI]): scala.Unit = js.native
   /**
-                       * Removes a contact.
-                       * @param id The ID of the contact to remove.
-                       */
+    * Removes a contact.
+    * @param id The ID of the contact to remove.
+    */
   def removeContact(id: java.lang.String): scala.Unit = js.native
   def removeEventListener(`type`: java.lang.String, listener: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_]): scala.Unit = js.native
   @JSName("removeEventListener")

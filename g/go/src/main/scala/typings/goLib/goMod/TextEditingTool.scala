@@ -6,20 +6,23 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * The TextEditingTool is used to let the user interactively edit text in place.
-    * You do not normally need to create an instance of this tool
-    * because one already exists as the ToolManager.clickSelectingTool.
-    */
+  * The TextEditingTool is used to let the user interactively edit text in place.
+  * You do not normally need to create an instance of this tool
+  * because one already exists as the ToolManager.clickSelectingTool.
+  */
 @JSImport("go", "TextEditingTool")
 @js.native
+/**
+  * You do not normally need to create an instance of this tool because one already exists as the ToolManager.textEditingTool, which you can modify.
+  */
 class TextEditingTool ()
   extends goLib.goMod.goNs.TextEditingTool
 
 /**
-    * The TextEditingTool is used to let the user interactively edit text in place.
-    * You do not normally need to create an instance of this tool
-    * because one already exists as the ToolManager.clickSelectingTool.
-    */
+  * The TextEditingTool is used to let the user interactively edit text in place.
+  * You do not normally need to create an instance of this tool
+  * because one already exists as the ToolManager.clickSelectingTool.
+  */
 @JSImport("go", "TextEditingTool")
 @js.native
 object TextEditingTool extends js.Object {

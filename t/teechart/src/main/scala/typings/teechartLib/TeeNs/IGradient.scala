@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGradient extends js.Object {
   var chart: IChart
   var colors: js.Array[java.lang.String]

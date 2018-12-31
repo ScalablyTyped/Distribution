@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavItem
   extends // This is really any shape, but give some *hints* about additional formatting behind the scenes
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {

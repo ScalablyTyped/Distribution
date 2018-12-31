@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FailureDetail extends js.Object {
   /** If the failure was severe because the system (app) under test crashed. */
   var crashed: js.UndefOr[scala.Boolean] = js.undefined

@@ -44,24 +44,17 @@ trait MessagePort extends EventTarget {
     options: AddEventListenerOptions
   ): scala.Unit = js.native
   /**
-       * Disconnects the port, so that it is no longer active.
-       */
+    * Disconnects the port, so that it is no longer active.
+    */
   def close(): scala.Unit = js.native
   /**
-       * Posts a message through the channel. Objects listed in transfer are
-       * transferred, not just cloned, meaning that they are no longer usable on the sending side.
-       * Throws a "DataCloneError" DOMException if
-       * transfer contains duplicate objects or port, or if message
-       * could not be cloned.
-       */
+    * Posts a message through the channel. Objects listed in transfer are
+    * transferred, not just cloned, meaning that they are no longer usable on the sending side.
+    * Throws a "DataCloneError" DOMException if
+    * transfer contains duplicate objects or port, or if message
+    * could not be cloned.
+    */
   def postMessage(message: js.Any): scala.Unit = js.native
-  /**
-       * Posts a message through the channel. Objects listed in transfer are
-       * transferred, not just cloned, meaning that they are no longer usable on the sending side.
-       * Throws a "DataCloneError" DOMException if
-       * transfer contains duplicate objects or port, or if message
-       * could not be cloned.
-       */
   def postMessage(message: js.Any, transfer: js.Array[Transferable]): scala.Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_message(
@@ -98,8 +91,8 @@ trait MessagePort extends EventTarget {
     options: EventListenerOptions
   ): scala.Unit = js.native
   /**
-       * Begins dispatching messages received on the port.
-       */
+    * Begins dispatching messages received on the port.
+    */
   def start(): scala.Unit = js.native
 }
 

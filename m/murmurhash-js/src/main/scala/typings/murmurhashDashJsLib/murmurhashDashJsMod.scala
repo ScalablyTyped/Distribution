@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("murmurhash-js", JSImport.Namespace)
 @js.native
 object murmurhashDashJsMod
-  extends org.scalablytyped.runtime.TopLevel[js.Any with Anon_Murmur3]
+  extends org.scalablytyped.runtime.TopLevel[Anon_Murmur3]
 

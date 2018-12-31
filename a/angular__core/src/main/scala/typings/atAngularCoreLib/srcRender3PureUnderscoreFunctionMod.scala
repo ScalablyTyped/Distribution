@@ -199,10 +199,10 @@ object srcRender3PureUnderscoreFunctionMod extends js.Object {
     exp8: js.Any,
     thisArg: js.Any
   ): js.Any = js.native
-  def pureFunctionV(slotOffset: scala.Double, pureFn: js.Function1[/* repeated */js.Any, _], exps: js.Array[_]): js.Any = js.native
+  def pureFunctionV(slotOffset: scala.Double, pureFn: js.Function1[/* repeated */ js.Any, _], exps: js.Array[_]): js.Any = js.native
   def pureFunctionV(
     slotOffset: scala.Double,
-    pureFn: js.Function1[/* repeated */js.Any, _],
+    pureFn: js.Function1[/* repeated */ js.Any, _],
     exps: js.Array[_],
     thisArg: js.Any
   ): js.Any = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateLogoutResponseUrlOptions extends js.Object {
   var in_response_to: js.UndefOr[java.lang.String] = js.undefined
   var relay_state: js.UndefOr[java.lang.String] = js.undefined

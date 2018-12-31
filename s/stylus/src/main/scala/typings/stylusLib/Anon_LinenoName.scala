@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LinenoName extends js.Object {
   var __type: java.lang.String
   var args: stylusLib.stylusMod.StylusNs.NodesNs.Expression

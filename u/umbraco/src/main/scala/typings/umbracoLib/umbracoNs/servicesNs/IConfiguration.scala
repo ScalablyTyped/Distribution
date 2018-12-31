@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Configuration
-     */
-
+  * Configuration
+  */
 trait IConfiguration extends js.Object {
   var dimensions: IDimension
   var maxImageSize: scala.Double

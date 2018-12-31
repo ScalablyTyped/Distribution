@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 @js.native
 class KmlPoint () extends KmlExtrudableGeometry {
   /**
-       * The point's altitude, in meters.
-       */
+    * The point's altitude, in meters.
+    */
   def getAltitude(): scala.Double = js.native
   /**
-       * The point's latitude, in degrees.
-       */
+    * The point's latitude, in degrees.
+    */
   def getLatitude(): scala.Double = js.native
   /**
-       * The point's longitude, in degrees.
-       */
+    * The point's longitude, in degrees.
+    */
   def getLongitude(): scala.Double = js.native
   /**
-       * Sets altitudeMode, extrude, tessellate, latitude, longitude, and altitude values.
-       */
+    * Sets altitudeMode, extrude, tessellate, latitude, longitude, and altitude values.
+    */
   def set(
     latitude: scala.Double,
     longitude: scala.Double,
@@ -32,24 +32,24 @@ class KmlPoint () extends KmlExtrudableGeometry {
     tessellate: scala.Boolean
   ): scala.Unit = js.native
   /**
-       * The point's altitude, in meters.
-       */
+    * The point's altitude, in meters.
+    */
   def setAltitude(altitude: scala.Double): scala.Unit = js.native
   /**
-       * Sets the latitude and longitude.
-       */
+    * Sets the latitude and longitude.
+    */
   def setLatLng(latitude: scala.Double, longitude: scala.Double): scala.Unit = js.native
   /**
-       * Sets the latitude, longitude, and altitide.
-       */
+    * Sets the latitude, longitude, and altitide.
+    */
   def setLatLngAlt(latitude: scala.Double, longitude: scala.Double, altitude: scala.Double): scala.Unit = js.native
   /**
-       * The point's latitude, in degrees.
-       */
+    * The point's latitude, in degrees.
+    */
   def setLatitude(latitude: scala.Double): scala.Unit = js.native
   /**
-       * The point's longitude, in degrees.
-       */
+    * The point's longitude, in degrees.
+    */
   def setLongitude(longitude: scala.Double): scala.Unit = js.native
 }
 

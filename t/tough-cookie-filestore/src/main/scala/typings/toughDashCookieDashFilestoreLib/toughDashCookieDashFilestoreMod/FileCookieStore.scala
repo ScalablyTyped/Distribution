@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileCookieStore extends js.Object {
   var filePath: java.lang.String
   var idx: org.scalablytyped.runtime.StringDictionary[

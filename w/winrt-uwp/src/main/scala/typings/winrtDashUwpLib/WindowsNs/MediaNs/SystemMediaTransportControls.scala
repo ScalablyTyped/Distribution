@@ -146,9 +146,9 @@ abstract class SystemMediaTransportControls () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[SystemMediaTransportControls, ShuffleEnabledChangeRequestedEventArgs]
   ): scala.Unit = js.native
   /**
-               * Updates the SystemMediaTransportControls timeline properties with the values in the provided object.
-               * @param timelineProperties The object representing the new timeline property values.
-               */
+    * Updates the SystemMediaTransportControls timeline properties with the values in the provided object.
+    * @param timelineProperties The object representing the new timeline property values.
+    */
   def updateTimelineProperties(timelineProperties: SystemMediaTransportControlsTimelineProperties): scala.Unit = js.native
 }
 
@@ -157,9 +157,9 @@ abstract class SystemMediaTransportControls () extends js.Object {
 @js.native
 object SystemMediaTransportControls extends js.Object {
   /**
-               * The system transport controls for the current view.
-               * @return The system transport controls for the current view.
-               */
+    * The system transport controls for the current view.
+    * @return The system transport controls for the current view.
+    */
   def getForCurrentView(): winrtDashUwpLib.WindowsNs.MediaNs.SystemMediaTransportControls = js.native
 }
 

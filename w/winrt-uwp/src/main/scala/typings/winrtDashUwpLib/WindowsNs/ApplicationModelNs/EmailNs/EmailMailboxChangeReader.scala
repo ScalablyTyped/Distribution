@@ -12,14 +12,14 @@ abstract class EmailMailboxChangeReader () extends js.Object {
   /** Accepts all changes. */
   def acceptChanges(): scala.Unit = js.native
   /**
-                   * Accepts all changes through the current change.
-                   * @param lastChangeToAcknowledge The current change.
-                   */
+    * Accepts all changes through the current change.
+    * @param lastChangeToAcknowledge The current change.
+    */
   def acceptChangesThrough(lastChangeToAcknowledge: EmailMailboxChange): scala.Unit = js.native
   /**
-                   * Reads a collection of changes.
-                   * @return A batch of changes.
-                   */
+    * Reads a collection of changes.
+    * @return A batch of changes.
+    */
   def readBatchAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
 }
 

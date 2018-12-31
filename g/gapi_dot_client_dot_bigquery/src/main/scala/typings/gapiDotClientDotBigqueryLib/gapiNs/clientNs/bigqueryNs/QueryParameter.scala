@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryParameter extends js.Object {
   /** [Optional] If unset, this is a positional parameter. Otherwise, should be unique within a query. */
   var name: js.UndefOr[java.lang.String] = js.undefined

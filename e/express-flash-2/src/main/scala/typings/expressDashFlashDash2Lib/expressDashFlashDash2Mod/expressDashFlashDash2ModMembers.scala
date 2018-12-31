@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object expressDashFlashDash2ModMembers extends js.Object {
   /**
-   * Expose `flash()` function on responses.
-   */
+    * Expose `flash()` function on responses.
+    */
   def apply(): expressLib.expressMod.eNs.RequestHandler = js.native
 }
 

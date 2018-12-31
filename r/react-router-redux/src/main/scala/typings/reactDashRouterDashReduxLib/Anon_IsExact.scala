@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IsExact extends js.Object {
   var isExact: scala.Boolean
   var params: js.Any

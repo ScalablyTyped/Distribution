@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_XUHO2 extends js.Object {
   var GH: Anon_UpgradeController15
   var GH2O: Anon_UpgradeController

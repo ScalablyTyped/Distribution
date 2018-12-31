@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChannelConfiguration extends js.Object {
   var debugOutput: js.UndefOr[scala.Boolean] = js.undefined
   var gotMessageObserver: js.UndefOr[js.Function2[/* origin */ java.lang.String, /* message */ Message, scala.Unit]] = js.undefined

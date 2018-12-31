@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreativeField extends js.Object {
   /** Account ID of this creative field. This is a read-only field that can be left blank. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined
@@ -18,9 +17,9 @@ trait CreativeField extends js.Object {
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#creativeField". */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Name of this creative field. This is a required field and must be less than 256 characters long and unique among creative fields of the same
-               * advertiser.
-               */
+    * Name of this creative field. This is a required field and must be less than 256 characters long and unique among creative fields of the same
+    * advertiser.
+    */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /** Subaccount ID of this creative field. This is a read-only field that can be left blank. */
   var subaccountId: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataObserver extends js.Object {
   var observedData: js.Array[_]
   var observer: js.Object

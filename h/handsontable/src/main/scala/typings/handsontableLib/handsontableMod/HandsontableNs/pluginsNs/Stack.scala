@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Stack extends js.Object {
   var items: js.Array[_]
   def isEmpty(): scala.Boolean

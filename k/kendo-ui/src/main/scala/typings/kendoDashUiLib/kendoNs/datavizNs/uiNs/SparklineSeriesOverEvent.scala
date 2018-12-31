@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SparklineSeriesOverEvent extends SparklineEvent {
   var category: js.UndefOr[js.Any] = js.undefined
   var dataItem: js.UndefOr[js.Any] = js.undefined

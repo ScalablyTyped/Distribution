@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CheckBoxProps extends js.Object {
   var checked: js.UndefOr[scala.Boolean] = js.undefined
   var checkedIcon: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RankingsResponseObject extends js.Object {
   var ap: scala.Double
   var ccwm: scala.Double

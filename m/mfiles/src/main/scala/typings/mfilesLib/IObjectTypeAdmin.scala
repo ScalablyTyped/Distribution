@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IObjectTypeAdmin extends js.Object {
   var ColumnMappings: IObjectTypeColumnMappings
   var ConnectionString: java.lang.String

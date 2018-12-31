@@ -16,9 +16,9 @@ abstract class StoreProductPagedQueryResult () extends js.Object {
   /** Gets the collection of products returned by the request. */
   var products: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, StoreProduct] = js.native
   /**
-                   * Returns the next page of results. To determine if there are more pages of results, use the HasMoreResults property.
-                   * @return An asynchronous operation that, on successful completion, returns a StoreProductPagedQueryResult object that provides the next page of results.
-                   */
+    * Returns the next page of results. To determine if there are more pages of results, use the HasMoreResults property.
+    * @return An asynchronous operation that, on successful completion, returns a StoreProductPagedQueryResult object that provides the next page of results.
+    */
   def getNextAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[StoreProductPagedQueryResult] = js.native
 }
 

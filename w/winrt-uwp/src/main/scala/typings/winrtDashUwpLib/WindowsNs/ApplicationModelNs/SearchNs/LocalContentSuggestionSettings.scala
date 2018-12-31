@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Stores settings that determine whether the app provides suggestions based on local files, and that define the criteria used to locate and filter these suggestions. */
 @JSGlobal("Windows.ApplicationModel.Search.LocalContentSuggestionSettings")
 @js.native
+/** Creates a new instance of the localContentSuggestionSettings class. */
 class LocalContentSuggestionSettings () extends js.Object {
   /** An Advanced Query Syntax (AQS) string that limits the types and kinds of files that are used to provide suggestions. If no AQS string is specified, suggestions are provided from all local files in locations specified by the locations property. */
   var aqsFilter: java.lang.String = js.native

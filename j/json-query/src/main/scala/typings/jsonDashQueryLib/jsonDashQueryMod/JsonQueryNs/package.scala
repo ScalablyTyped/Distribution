@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object JsonQueryNs {
   type Context = js.Any
-  type Filter = js.Function2[/* input */ Context, /* repeated */js.Any, Context]
+  type Filter = js.Function2[/* input */ Context, /* repeated */ js.Any, Context]
   type QueryParam = js.Any
   type Selector = java.lang.String
   // No way to support [Selector, ...QueryParam[]]?

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RenderedChunk extends js.Object {
   var dynamicImports: js.Array[java.lang.String]
   var exports: js.Array[java.lang.String]

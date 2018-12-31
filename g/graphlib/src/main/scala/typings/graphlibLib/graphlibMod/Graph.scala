@@ -35,15 +35,6 @@ class Graph () extends js.Object {
   		 * @returns value associated with specified edge.
   		*/
   def edge(v: java.lang.String, w: java.lang.String): js.Any = js.native
-  /**
-  		 * Gets the label for the specified edge.
-  		 * Complexity: O(1).
-  		 * 
-  		 * @argument v - edge source node.
-  		 * @argument w - edge sink node.
-  		 * @argument name - name of the edge (actual for multigraph).
-  		 * @returns value associated with specified edge.
-  		*/
   def edge(v: java.lang.String, w: java.lang.String, name: java.lang.String): js.Any = js.native
   /**
   		 * Gets the number of edges in the graph.
@@ -93,15 +84,6 @@ class Graph () extends js.Object {
   		 * @returns whether the graph contains the specified edge or not.
   		 */
   def hasEdge(v: java.lang.String, w: java.lang.String): scala.Boolean = js.native
-  /**
-  		 * Detects whether the graph contains specified edge or not. No subgraphs are considered.
-  		 * Complexity: O(1).
-  		 * 
-  		 * @argument v - edge source node.
-  		 * @argument w - edge sink node.
-  		 * @argument name - name of the edge (actual for multigraph).
-  		 * @returns whether the graph contains the specified edge or not.
-  		 */
   def hasEdge(v: java.lang.String, w: java.lang.String, name: java.lang.String): scala.Boolean = js.native
   /**
   		 * Detects whether graph has a node with specified name or not.
@@ -121,15 +103,6 @@ class Graph () extends js.Object {
   		 * @returns edges descriptors list if v is in the graph, or undefined otherwise.
   		 */
   def inEdges(v: java.lang.String): scala.Unit | js.Array[Edge] = js.native
-  /**
-  		 * Return all edges that point to the node v. Optionally filters those edges down to just those
-  		 * coming from node u. Behavior is undefined for undirected graphs - use nodeEdges instead.
-  		 * Complexity: O(|E|).
-  		 * 
-  		 * @argument v - edge sink node.
-  		 * @argument w - edge source node.
-  		 * @returns edges descriptors list if v is in the graph, or undefined otherwise.
-  		 */
   def inEdges(v: java.lang.String, w: java.lang.String): scala.Unit | js.Array[Edge] = js.native
   /**
   		 * Whether graph was created with 'compound' flag set to true or not.
@@ -157,7 +130,6 @@ class Graph () extends js.Object {
   		 * @argument v - node identifier.
   		 * @returns node identifiers list or undefined if v is not in the graph.
   		 */
-  
   def neighbors(v: java.lang.String): scala.Unit | js.Array[java.lang.String] = js.native
   /**
   		 * Gets the label of node with specified name.
@@ -183,15 +155,6 @@ class Graph () extends js.Object {
   		 * @returns edges descriptors list if v is in the graph, or undefined otherwise.
   		 */
   def nodeEdges(v: java.lang.String): scala.Unit | js.Array[Edge] = js.native
-  /**
-  		 * Returns all edges to or from node v regardless of direction. Optionally filters those edges
-  		 * down to just those between nodes v and w regardless of direction.
-  		 * Complexity: O(|E|).
-  		 * 
-  		 * @argument v - edge adjacent node.
-  		 * @argument w - edge adjacent node.
-  		 * @returns edges descriptors list if v is in the graph, or undefined otherwise.
-  		 */
   def nodeEdges(v: java.lang.String, w: java.lang.String): scala.Unit | js.Array[Edge] = js.native
   /**
   		 * Gets all nodes of the graph. Note, the in case of compound graph subnodes are
@@ -211,15 +174,6 @@ class Graph () extends js.Object {
   		 * @returns edges descriptors list if v is in the graph, or undefined otherwise.
   		 */
   def outEdges(v: java.lang.String): scala.Unit | js.Array[Edge] = js.native
-  /**
-  		 * Return all edges that are pointed at by node v. Optionally filters those edges down to just
-  		 * those point to w. Behavior is undefined for undirected graphs - use nodeEdges instead.
-  		 * Complexity: O(|E|).
-  		 * 
-  		 * @argument v - edge source node.
-  		 * @argument w - edge sink node.
-  		 * @returns edges descriptors list if v is in the graph, or undefined otherwise.
-  		 */
   def outEdges(v: java.lang.String, w: java.lang.String): scala.Unit | js.Array[Edge] = js.native
   /**
   		 * Gets parent node for node v.
@@ -256,15 +210,6 @@ class Graph () extends js.Object {
   		 * @returns the graph, allowing this to be chained with other functions.
   		 */
   def removeEdge(v: java.lang.String, w: java.lang.String): Graph = js.native
-  /**
-  		 * Removes the specified edge from the graph. No subgraphs are considered.
-  		 * Complexity: O(1).
-  		 * 
-  		 * @argument v - edge source node.
-  		 * @argument w - edge sink node.
-  		 * @argument name - name of the edge (actual for multigraph).
-  		 * @returns the graph, allowing this to be chained with other functions.
-  		 */
   def removeEdge(v: java.lang.String, w: java.lang.String, name: java.lang.String): Graph = js.native
   /**
   		 * Remove the node with the name from the graph or do nothing if the node is not in
@@ -326,17 +271,6 @@ class Graph () extends js.Object {
   		 * @returns the graph, allowing this to be chained with other functions.
   		 */
   def setEdge(edge: Edge): Graph = js.native
-  /**
-  		 * Creates or updates the label for the specified edge. If label is supplied it is 
-  		 * set as the value for the edge. If label is not supplied and the edge was created 
-  		 * by this call then the default edge label will be assigned. The name parameter is 
-  		 * only useful with multigraphs.
-  		 * Complexity: O(1).
-  		 * 
-  		 * @argument edge - edge descriptor.
-  		 * @argument label - value to associate with the edge.
-  		 * @returns the graph, allowing this to be chained with other functions.
-  		 */
   def setEdge(edge: Edge, label: js.Any): Graph = js.native
   /**
   		 * Creates or updates the label for the edge (v, w) with the optionally supplied
@@ -352,33 +286,7 @@ class Graph () extends js.Object {
   		 * @returns the graph, allowing this to be chained with other functions.
   		 */
   def setEdge(v: java.lang.String, w: java.lang.String): Graph = js.native
-  /**
-  		 * Creates or updates the label for the edge (v, w) with the optionally supplied
-  		 * name. If label is supplied it is set as the value for the edge. If label is not
-  		 * supplied and the edge was created by this call then the default edge label will
-  		 * be assigned. The name parameter is only useful with multigraphs.
-  		 * Complexity: O(1).
-  		 * 
-  		 * @argument v - edge source node.
-  		 * @argument w - edge sink node.
-  		 * @argument label - value to associate with the edge.
-  		 * @argument name - unique name of the edge in order to identify it in multigraph.
-  		 * @returns the graph, allowing this to be chained with other functions.
-  		 */
   def setEdge(v: java.lang.String, w: java.lang.String, label: js.Any): Graph = js.native
-  /**
-  		 * Creates or updates the label for the edge (v, w) with the optionally supplied
-  		 * name. If label is supplied it is set as the value for the edge. If label is not
-  		 * supplied and the edge was created by this call then the default edge label will
-  		 * be assigned. The name parameter is only useful with multigraphs.
-  		 * Complexity: O(1).
-  		 * 
-  		 * @argument v - edge source node.
-  		 * @argument w - edge sink node.
-  		 * @argument label - value to associate with the edge.
-  		 * @argument name - unique name of the edge in order to identify it in multigraph.
-  		 * @returns the graph, allowing this to be chained with other functions.
-  		 */
   def setEdge(v: java.lang.String, w: java.lang.String, label: js.Any, name: java.lang.String): Graph = js.native
   /**
   		 * Sets the label of the graph.
@@ -398,16 +306,6 @@ class Graph () extends js.Object {
   		 * @returns the graph, allowing this to be chained with other functions.
   		 */
   def setNode(name: java.lang.String): Graph = js.native
-  /**
-  		 * Creates or updates the value for the node v in the graph. If label is supplied
-  		 * it is set as the value for the node. If label is not supplied and the node was
-  		 * created by this call then the default node label will be assigned.
-  		 * Complexity: O(1).
-  		 * 
-  		 * @argument name - node name.
-  		 * @argument label - value to set for node.
-  		 * @returns the graph, allowing this to be chained with other functions.
-  		 */
   def setNode(name: java.lang.String, label: js.Any): Graph = js.native
   /**
   		 * Invokes setNode method for each node in names list.
@@ -418,14 +316,6 @@ class Graph () extends js.Object {
   		 * @returns the graph, allowing this to be chained with other functions.
   		 */
   def setNodes(names: js.Array[java.lang.String]): Graph = js.native
-  /**
-  		 * Invokes setNode method for each node in names list.
-  		 * Complexity: O(|names|).
-  		 * 
-  		 * @argument names - list of nodes names to be set.
-  		 * @argument label - value to set for each node in list.
-  		 * @returns the graph, allowing this to be chained with other functions.
-  		 */
   def setNodes(names: js.Array[java.lang.String], label: js.Any): Graph = js.native
   /**
   		 * Sets node p as a parent for node v if it is defined, or removes the
@@ -438,16 +328,6 @@ class Graph () extends js.Object {
   		 * @returns the graph, allowing this to be chained with other functions.
   		 */
   def setParent(v: java.lang.String): Graph = js.native
-  /**
-  		 * Sets node p as a parent for node v if it is defined, or removes the
-  		 * parent for v if p is undefined. Method throws an exception in case of
-  		 * invoking it in context of noncompound graph.
-  		 * Average-case complexity: O(1).
-  		 * 
-  		 * @argument v - node to be child for p.
-  		 * @argument p - node to be parent for v.
-  		 * @returns the graph, allowing this to be chained with other functions.
-  		 */
   def setParent(v: java.lang.String, p: java.lang.String): Graph = js.native
   /**
   		 * Establish an edges path over the nodes in nodes list. If some edge is already
@@ -460,16 +340,6 @@ class Graph () extends js.Object {
   		 * @returns the graph, allowing this to be chained with other functions.
   		 */
   def setPath(nodes: js.Array[java.lang.String]): Graph = js.native
-  /**
-  		 * Establish an edges path over the nodes in nodes list. If some edge is already
-  		 * exists, it will update its label, otherwise it will create an edge between pair
-  		 * of nodes with label provided or default label if no label provided.
-  		 * Complexity: O(|nodes|).
-  		 * 
-  		 * @argument nodes - list of nodes to be connected in series.
-  		 * @argument label - value to set for each edge between pairs of nodes.
-  		 * @returns the graph, allowing this to be chained with other functions.
-  		 */
   def setPath(nodes: js.Array[java.lang.String], label: js.Any): Graph = js.native
   /**
   		 * Gets list of nodes without out-edges.

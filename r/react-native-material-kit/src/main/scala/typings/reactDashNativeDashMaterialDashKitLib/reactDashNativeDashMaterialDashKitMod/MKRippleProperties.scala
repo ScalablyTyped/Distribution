@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MKRippleProperties
   extends reactDashNativeLib.reactDashNativeMod.ViewProps {
   var maskBorderRadius: js.UndefOr[scala.Double] = js.undefined

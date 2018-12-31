@@ -6,77 +6,76 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * PaymentReconciliation resource
-     */
-
+  * PaymentReconciliation resource
+  */
 trait PaymentReconciliation extends DomainResource {
   /**
-           * Contains extended information for property 'created'.
-           */
+    * Contains extended information for property 'created'.
+    */
   var _created: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'disposition'.
-           */
+    * Contains extended information for property 'disposition'.
+    */
   var _disposition: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'status'.
-           */
+    * Contains extended information for property 'status'.
+    */
   var _status: js.UndefOr[Element] = js.undefined
   /**
-           * Creation date
-           */
+    * Creation date
+    */
   var created: js.UndefOr[dateTime] = js.undefined
   /**
-           * List of settlements
-           */
+    * List of settlements
+    */
   var detail: js.UndefOr[js.Array[PaymentReconciliationDetail]] = js.undefined
   /**
-           * Disposition Message
-           */
+    * Disposition Message
+    */
   var disposition: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Printed Form Identifier
-           */
+    * Printed Form Identifier
+    */
   var form: js.UndefOr[CodeableConcept] = js.undefined
   /**
-           * Business Identifier
-           */
+    * Business Identifier
+    */
   var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   /**
-           * Insurer
-           */
+    * Insurer
+    */
   var organization: js.UndefOr[Reference] = js.undefined
   /**
-           * complete | error | partial
-           */
+    * complete | error | partial
+    */
   var outcome: js.UndefOr[CodeableConcept] = js.undefined
   /**
-           * Period covered
-           */
+    * Period covered
+    */
   var period: js.UndefOr[Period] = js.undefined
   /**
-           * Processing comments
-           */
+    * Processing comments
+    */
   var processNote: js.UndefOr[js.Array[PaymentReconciliationProcessNote]] = js.undefined
   /**
-           * Claim reference
-           */
+    * Claim reference
+    */
   var request: js.UndefOr[Reference] = js.undefined
   /**
-           * Responsible organization
-           */
+    * Responsible organization
+    */
   var requestOrganization: js.UndefOr[Reference] = js.undefined
   /**
-           * Responsible practitioner
-           */
+    * Responsible practitioner
+    */
   var requestProvider: js.UndefOr[Reference] = js.undefined
   /**
-           * active | cancelled | draft | entered-in-error
-           */
+    * active | cancelled | draft | entered-in-error
+    */
   var status: js.UndefOr[code] = js.undefined
   /**
-           * Total amount of Payment
-           */
+    * Total amount of Payment
+    */
   var total: js.UndefOr[Money] = js.undefined
 }
 

@@ -5,18 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CookieParserOptionItem extends js.Object {
   /**
-               *  an object that is passed to cookie.parse as the second option
-               */
+    *  an object that is passed to cookie.parse as the second option
+    */
   var options: js.UndefOr[js.Any] = js.undefined
   /**
-               * A string or array used for signing cookies.
-               * This is optional and if not specified, will not parse signed cookies.
-               * If a string is provided, this is used as the secret.
-               * If an array is provided, an attempt will be made to unsign the cookie with each secret in order.
-               */
+    * A string or array used for signing cookies.
+    * This is optional and if not specified, will not parse signed cookies.
+    * If a string is provided, this is used as the secret.
+    * If an array is provided, an attempt will be made to unsign the cookie with each secret in order.
+    */
   var secret: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
 

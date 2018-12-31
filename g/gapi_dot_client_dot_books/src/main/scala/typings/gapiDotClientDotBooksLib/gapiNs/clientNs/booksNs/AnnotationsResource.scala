@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnnotationsResource extends js.Object {
   /** Deletes an annotation. */
   def delete(request: gapiDotClientDotBooksLib.Anon_SourcePrettyPrintQuotaUserKeyUserIpOauthtokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

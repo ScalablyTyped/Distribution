@@ -18,10 +18,10 @@ trait WshArguments extends js.Object {
   def Item(index: scala.Double): java.lang.String = js.native
   def Named(name: java.lang.String): java.lang.String = js.native
   /**
-       * When you run the **ShowUsage** method, a help screen (referred to as the usage) appears and displays details about the script's command line options.
-       * This information comes from the runtime section of the `*.WSF` file. Everything written between the `<runtime>` and `</runtime>` tags is pieced together
-       * to produce what is called a "usage statement." The usage statement tells the user how to use the script.
-       */
+    * When you run the **ShowUsage** method, a help screen (referred to as the usage) appears and displays details about the script's command line options.
+    * This information comes from the runtime section of the `*.WSF` file. Everything written between the `<runtime>` and `</runtime>` tags is pieced together
+    * to produce what is called a "usage statement." The usage statement tells the user how to use the script.
+    */
   def ShowUsage(): scala.Unit = js.native
   def Unnamed(index: scala.Double): java.lang.String = js.native
 }

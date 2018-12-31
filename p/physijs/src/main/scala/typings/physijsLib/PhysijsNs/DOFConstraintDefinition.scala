@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DOFConstraintDefinition extends js.Object {
   var axisa: threeLib.threeMod.Vector3
   var axisb: threeLib.threeMod.Vector3

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IncomingHttpHeaders
   extends nodeLib.httpMod.IncomingHttpHeaders {
   var `:authority`: js.UndefOr[java.lang.String] = js.undefined

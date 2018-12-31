@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MessageBoxesOptions extends MessageBoxesDefault {
   var bodyClass: js.UndefOr[java.lang.String] = js.undefined
   var buttons: js.UndefOr[lobiboxLib.Anon_Cancel | js.Any] = js.undefined

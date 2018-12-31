@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TargetPoolsScopedList extends js.Object {
   /** List of target pools contained in this scope. */
   var targetPools: js.UndefOr[js.Array[TargetPool]] = js.undefined

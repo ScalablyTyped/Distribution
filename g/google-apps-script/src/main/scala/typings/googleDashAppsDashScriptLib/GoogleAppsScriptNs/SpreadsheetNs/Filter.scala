@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Filter extends js.Object {
   def getColumnFilterCriteria(columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): FilterCriteria
   def getRange(): Range

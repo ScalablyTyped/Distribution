@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UglifyJsOptions extends js.Object {
   var compress: js.UndefOr[scala.Boolean | js.Object] = js.undefined
   var ecma: js.UndefOr[scala.Double] = js.undefined

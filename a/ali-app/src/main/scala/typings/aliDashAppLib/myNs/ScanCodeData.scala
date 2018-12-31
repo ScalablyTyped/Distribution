@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScanCodeData extends js.Object {
   /**
   		 * 扫描条形码时返回条形码数据

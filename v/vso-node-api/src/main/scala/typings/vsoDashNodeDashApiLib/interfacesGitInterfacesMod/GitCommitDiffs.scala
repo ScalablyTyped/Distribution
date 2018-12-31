@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GitCommitDiffs extends js.Object {
   var aheadCount: scala.Double
   var allChangesIncluded: scala.Boolean

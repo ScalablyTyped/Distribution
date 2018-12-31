@@ -13,7 +13,7 @@ abstract class SpatialAnchorTransferManager () extends js.Object
 @js.native
 object SpatialAnchorTransferManager extends js.Object {
   var requestAccessAsync: js.Any = js.native
-   /* unmapped type */var tryExportAnchorsAsync: js.Any = js.native
-   /* unmapped type */var tryImportAnchorsAsync: js.Any = js.native
+   /* unmapped type */ var tryExportAnchorsAsync: js.Any = js.native
+   /* unmapped type */ var tryImportAnchorsAsync: js.Any = js.native
 }
 

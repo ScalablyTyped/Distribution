@@ -12,36 +12,36 @@ sealed trait QueryExpand extends js.Object
 @js.native
 object QueryExpand extends js.Object {
   /**
-       * Expands all properties
-       */
+    * Expands all properties
+    */
   @js.native
   sealed trait All
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.QueryExpand
   
   /**
-       * Expands Columns, Links, ChangeInfo, WIQL text and clauses
-       */
+    * Expands Columns, Links, ChangeInfo, WIQL text and clauses
+    */
   @js.native
   sealed trait Clauses
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.QueryExpand
   
   /**
-       * Displays minimal properties and the WIQL text
-       */
+    * Displays minimal properties and the WIQL text
+    */
   @js.native
   sealed trait Minimal
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.QueryExpand
   
   /**
-       * Expands Columns, Links and ChangeInfo
-       */
+    * Expands Columns, Links and ChangeInfo
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.QueryExpand
   
   /**
-       * Expands Columns, Links,  ChangeInfo and WIQL text
-       */
+    * Expands Columns, Links,  ChangeInfo and WIQL text
+    */
   @js.native
   sealed trait Wiql
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.QueryExpand

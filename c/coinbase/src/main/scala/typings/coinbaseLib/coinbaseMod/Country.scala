@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Country extends js.Object {
   /**
-       * 2-letter country code
-       */
+    * 2-letter country code
+    */
   var code: java.lang.String
   /**
-       * Country name
-       */
+    * Country name
+    */
   var name: java.lang.String
 }
 

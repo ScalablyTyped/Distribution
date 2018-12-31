@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SchemaOptions extends js.Object {
   /** defaults to true */
   var _id: js.UndefOr[scala.Boolean] = js.undefined
@@ -34,18 +33,18 @@ trait SchemaOptions extends js.Object {
   /** defaults to null */
   var shardKey: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * skipVersioning allows excluding paths from
-       * versioning (the internal revision will not be
-       * incremented even if these paths are updated).
-       */
+    * skipVersioning allows excluding paths from
+    * versioning (the internal revision will not be
+    * incremented even if these paths are updated).
+    */
   var skipVersioning: js.UndefOr[js.Any] = js.undefined
   /** defaults to true */
   var strict: js.UndefOr[scala.Boolean | mongooseLib.mongooseLibStrings.`throw`] = js.undefined
   /**
-       * If set timestamps, mongoose assigns createdAt
-       * and updatedAt fields to your schema, the type
-       * assigned is Date.
-       */
+    * If set timestamps, mongoose assigns createdAt
+    * and updatedAt fields to your schema, the type
+    * assigned is Date.
+    */
   var timestamps: js.UndefOr[scala.Boolean | SchemaTimestampsConfig] = js.undefined
   /** no default */
   var toJSON: js.UndefOr[DocumentToObjectOptions] = js.undefined

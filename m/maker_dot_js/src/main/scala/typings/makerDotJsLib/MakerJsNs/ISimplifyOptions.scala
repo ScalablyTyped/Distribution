@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Options to pass to model.simplify()
-     */
-
+  * Options to pass to model.simplify()
+  */
 trait ISimplifyOptions extends js.Object {
   /**
-           * Optional
-           */
+    * Optional
+    */
   var pointMatchingDistance: js.UndefOr[scala.Double] = js.undefined
   /**
-           * Optional
-           */
+    * Optional
+    */
   var scalarMatchingDistance: js.UndefOr[scala.Double] = js.undefined
 }
 

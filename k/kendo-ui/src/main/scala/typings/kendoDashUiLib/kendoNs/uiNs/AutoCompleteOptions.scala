@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AutoCompleteOptions extends js.Object {
   var animation: js.UndefOr[scala.Boolean | AutoCompleteAnimation] = js.undefined
   var autoWidth: js.UndefOr[scala.Boolean] = js.undefined

@@ -22,16 +22,16 @@ import scala.scalajs.js.annotation._
 trait String extends js.Object {
   def at(index: scala.Double): java.lang.String = js.native
   /**
-       * Non-standard.
-       */
+    * Non-standard.
+    */
   def escapeHTML(): java.lang.String = js.native
   def padEnd(length: scala.Double): java.lang.String = js.native
   def padEnd(length: scala.Double, fillStr: java.lang.String): java.lang.String = js.native
   def padStart(length: scala.Double): java.lang.String = js.native
   def padStart(length: scala.Double, fillStr: java.lang.String): java.lang.String = js.native
   /**
-       * Non-standard.
-       */
+    * Non-standard.
+    */
   def unescapeHTML(): java.lang.String = js.native
 }
 

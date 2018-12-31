@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MergeSource extends js.Object {
   var change: scala.Double
   var changeset: scala.Double

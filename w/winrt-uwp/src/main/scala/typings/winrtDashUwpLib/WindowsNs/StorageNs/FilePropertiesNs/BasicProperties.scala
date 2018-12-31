@@ -16,23 +16,23 @@ abstract class BasicProperties () extends js.Object {
   /** Gets the size of the file. */
   var size: scala.Double = js.native
   /**
-                   * Retrieves the specified properties associated with the item.
-                   * @param propertiesToRetrieve A collection that contains the names of the properties to retrieve.
-                   * @return When this method completes successfully, it returns a collection (type IMap ) that contains the specified properties and values as key-value pairs.
-                   */
+    * Retrieves the specified properties associated with the item.
+    * @param propertiesToRetrieve A collection that contains the names of the properties to retrieve.
+    * @return When this method completes successfully, it returns a collection (type IMap ) that contains the specified properties and values as key-value pairs.
+    */
   def retrievePropertiesAsync(
     propertiesToRetrieve: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String]
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IMap[_, _]] = js.native
   /**
-                   * Saves all properties associated with the item.
-                   * @return No object or value is returned when this method completes.
-                   */
+    * Saves all properties associated with the item.
+    * @return No object or value is returned when this method completes.
+    */
   def savePropertiesAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Saves the specified properties and values associated with the item.
-                   * @param propertiesToSave A collection that contains the names and values of the properties to save as key-value pairs (type IKeyValuePair ).
-                   * @return No object or value is returned when this method completes.
-                   */
+    * Saves the specified properties and values associated with the item.
+    * @param propertiesToSave A collection that contains the names and values of the properties to save as key-value pairs (type IKeyValuePair ).
+    * @return No object or value is returned when this method completes.
+    */
   def savePropertiesAsync(
     propertiesToSave: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IKeyValuePair[_, _]]
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native

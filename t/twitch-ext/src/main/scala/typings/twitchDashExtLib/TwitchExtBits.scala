@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * @see TwitchExt.bits
- */
-
+  * @see TwitchExt.bits
+  */
 trait TwitchExtBits extends js.Object {
   /**
   	 * This function returns a promise which resolves to an array of products available for Bits,

@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OpenFileRequestedEventOptions
   extends chromeDashAppsLib.chromeNs.fileSystemProviderNs.underscoreInternalUnderscoreNs.FilePathRequestedEventOptions {
   /**
-               * Whether the file will be used for reading or writing.
-               * @see ChangeType
-               */
+    * Whether the file will be used for reading or writing.
+    * @see ChangeType
+    */
   var mode: chromeDashAppsLib.chromeNs.ToStringLiteral[
     chromeDashAppsLib.Anon_READ, 
     java.lang.String, 
     stdLib.Exclude[
       java.lang.String, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(chrome-apps), TsIdentSimple(Anon_READ))),List()),Left(TsIdentSimple(K))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_READ[keyof chrome-apps.Anon_READ] */ js.Any
     ]
   ]
 }

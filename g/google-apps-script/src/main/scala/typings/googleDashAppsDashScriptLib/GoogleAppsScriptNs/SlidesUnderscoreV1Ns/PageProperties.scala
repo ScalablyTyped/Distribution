@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PageProperties extends js.Object {
   // The color scheme of the page. If unset, the color scheme is inherited from
   // a parent page. If the page has no parent, the color scheme uses a default

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PluginsDoc[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */] extends js.Object {
   var doc: js.UndefOr[prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S] | scala.Null] = js.undefined
   var plugins: js.UndefOr[js.Array[prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[S]] | scala.Null] = js.undefined

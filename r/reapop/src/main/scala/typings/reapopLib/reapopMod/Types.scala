@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Types extends js.Object {
   var ADD_NOTIFICATION: reapopLib.ADD_NOTIFICATION
   var REMOVE_NOTIFICATION: reapopLib.REMOVE_NOTIFICATION

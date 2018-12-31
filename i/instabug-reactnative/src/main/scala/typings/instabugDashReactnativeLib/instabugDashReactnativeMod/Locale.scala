@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Locale extends js.Object {
   var arabic: java.lang.String
   var chineseSimplified: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NxStateCounts extends js.Object {
   var qAlternative: scala.Double
   var qDeselected: scala.Double

@@ -80,13 +80,13 @@ abstract class Expression () extends js.Object {
   def isBlank(): Expression = js.native
   def isBlank(sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan): Expression = js.native
   /**
-       * Return true if the expression is constant.
-       */
+    * Return true if the expression is constant.
+    */
   def isConstant(): scala.Boolean = js.native
   /**
-       * Calculates whether this expression produces the same value as the given expression.
-       * Note: We don't check Types nor ParseSourceSpans nor function arguments.
-       */
+    * Calculates whether this expression produces the same value as the given expression.
+    * Note: We don't check Types nor ParseSourceSpans nor function arguments.
+    */
   def isEquivalent(e: Expression): scala.Boolean = js.native
   def key(index: Expression): ReadKeyExpr = js.native
   def key(index: Expression, `type`: Type): ReadKeyExpr = js.native

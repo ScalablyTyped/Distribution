@@ -9,12 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object layzrDotJsModMembers extends js.Object {
   /**
-   * @param options Options
-   */
+    * @param options Options
+    */
   def apply(): layzrDotJsLib.layzrDotJsMod.LayzrNs.LayzrInstance = js.native
-  /**
-   * @param options Options
-   */
   def apply(options: layzrDotJsLib.layzrDotJsMod.LayzrNs.LayzrOptions): layzrDotJsLib.layzrDotJsMod.LayzrNs.LayzrInstance = js.native
 }
 

@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default '.embed'
-                   */
+    * @default '.embed'
+    */
   var embed: java.lang.String
   /**
-                   * @default '.placeholder'
-                   */
+    * @default '.placeholder'
+    */
   var placeholder: java.lang.String
   /**
-                   * @default '.play'
-                   */
+    * @default '.play'
+    */
   var play: java.lang.String
 }
 

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when INFO message is received
 		*/
-
 trait InfoReceived extends js.Object {
   /**
   			*	Content of the message

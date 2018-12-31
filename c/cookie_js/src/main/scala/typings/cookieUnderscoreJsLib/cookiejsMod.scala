@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * https://github.com/DefinitelyTyped/DefinitelyTyped/pull/16025#issuecomment-295784660
- */
+  * https://github.com/DefinitelyTyped/DefinitelyTyped/pull/16025#issuecomment-295784660
+  */
 @JSImport("cookiejs", JSImport.Namespace)
 @js.native
 object cookiejsMod extends js.Object {

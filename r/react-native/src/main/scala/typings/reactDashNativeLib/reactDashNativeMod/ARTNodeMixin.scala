@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ARTNodeMixin extends js.Object {
   var opacity: js.UndefOr[scala.Double] = js.undefined
   var originX: js.UndefOr[scala.Double] = js.undefined

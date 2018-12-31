@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Image extends js.Object {
   var layer: plotlyDotJsLib.plotlyDotJsLibStrings.above | plotlyDotJsLib.plotlyDotJsLibStrings.below
   var opacity: scala.Double

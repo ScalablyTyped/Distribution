@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Process extends js.Object {
   @JSName("addListener")
   def addListener_deprecation(

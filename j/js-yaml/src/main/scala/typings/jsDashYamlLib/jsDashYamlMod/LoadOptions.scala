@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LoadOptions extends js.Object {
   /** string to be used as a file path in error/warning messages. */
   var filename: js.UndefOr[java.lang.String] = js.undefined

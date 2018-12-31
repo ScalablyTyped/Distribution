@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRectangle extends js.Object {
   var bottom: js.UndefOr[scala.Double] = js.undefined
   var height: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ServerHeight extends js.Object {
   var onResize: js.Function0[scala.Unit]
   var onScroll: js.Function0[scala.Unit]

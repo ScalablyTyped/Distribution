@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TimeUUID extends js.Object {
   def binarySet(): joiLib.joiMod.AnySchema
   def numberSet(): joiLib.joiMod.AnySchema

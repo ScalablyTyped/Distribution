@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents the settings for a frame in a variable photo sequence. */
 @JSGlobal("Windows.Media.Devices.Core.FrameController")
 @js.native
+/** Initializes a new instance of the FrameController class. */
 class FrameController () extends js.Object {
   /** Gets the exposure compensation settings for a frame in a variable photo sequence. */
   var exposureCompensationControl: FrameExposureCompensationControl = js.native

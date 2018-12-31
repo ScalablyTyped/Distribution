@@ -20,7 +20,6 @@ class RuleWalker protected ()
   def addFailure(failure: tslintLib.libLanguageRuleRuleMod.RuleFailure): scala.Unit = js.native
   /** Add a failure with any arbitrary span. Prefer `addFailureAtNode` if possible. */
   def addFailureAt(start: scala.Double, width: scala.Double, failure: java.lang.String): scala.Unit = js.native
-  /** Add a failure with any arbitrary span. Prefer `addFailureAtNode` if possible. */
   def addFailureAt(
     start: scala.Double,
     width: scala.Double,
@@ -29,7 +28,6 @@ class RuleWalker protected ()
   ): scala.Unit = js.native
   /** Add a failure using a node's span. */
   def addFailureAtNode(node: typescriptLib.typescriptMod.tsNs.Node, failure: java.lang.String): scala.Unit = js.native
-  /** Add a failure using a node's span. */
   def addFailureAtNode(
     node: typescriptLib.typescriptMod.tsNs.Node,
     failure: java.lang.String,
@@ -37,7 +35,6 @@ class RuleWalker protected ()
   ): scala.Unit = js.native
   /** Like `addFailureAt` but uses start and end instead of start and width. */
   def addFailureFromStartToEnd(start: scala.Double, end: scala.Double, failure: java.lang.String): scala.Unit = js.native
-  /** Like `addFailureAt` but uses start and end instead of start and width. */
   def addFailureFromStartToEnd(
     start: scala.Double,
     end: scala.Double,
@@ -47,7 +44,6 @@ class RuleWalker protected ()
   def appendText(start: scala.Double, text: java.lang.String): tslintLib.libLanguageRuleRuleMod.Replacement = js.native
   /** @deprecated Prefer `addFailureAt` and its variants. */
   def createFailure(start: scala.Double, width: scala.Double, failure: java.lang.String): tslintLib.libLanguageRuleRuleMod.RuleFailure = js.native
-  /** @deprecated Prefer `addFailureAt` and its variants. */
   def createFailure(
     start: scala.Double,
     width: scala.Double,

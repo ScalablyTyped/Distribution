@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Framebuffer extends js.Object {
   var color: stdLib.WebGLTexture
   var handle: stdLib.WebGLFramebuffer

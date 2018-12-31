@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait textarea extends labeledElement {
   var bidi: js.UndefOr[scala.Boolean] = js.undefined
   var cols: js.UndefOr[scala.Double] = js.undefined

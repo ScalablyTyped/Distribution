@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Query extends js.Object {
   def done(callback: js.Function1[/* data */ js.Any, scala.Unit]): scala.Unit
   def limit(number: scala.Double): Query

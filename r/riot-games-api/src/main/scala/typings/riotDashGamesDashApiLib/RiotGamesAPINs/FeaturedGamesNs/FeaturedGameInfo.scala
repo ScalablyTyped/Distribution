@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FeaturedGameInfo extends js.Object {
   var bannedChampions: js.Array[BannedChampion]
   var gameId: scala.Double

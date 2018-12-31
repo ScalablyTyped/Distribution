@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WikidataMainSnak extends js.Object {
   var datatype: java.lang.String
   var datavalue: WikidataTimeDataValue | WikidataEntityDataValue

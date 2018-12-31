@@ -33,9 +33,6 @@ trait FileSystem extends js.Object {
   // open(path: string, mode: string): IStream;
   // open(path: string, options: { mode: string; charset?: string; }): IStream;
   def open(path: java.lang.String, mode: java.lang.String): Stream = js.native
-  // File Functions
-  // open(path: string, mode: string): IStream;
-  // open(path: string, options: { mode: string; charset?: string; }): IStream;
   def open(path: java.lang.String, mode: Anon_Charset): Stream = js.native
   def read(path: java.lang.String): java.lang.String = js.native
   def readLink(path: java.lang.String): java.lang.String = js.native

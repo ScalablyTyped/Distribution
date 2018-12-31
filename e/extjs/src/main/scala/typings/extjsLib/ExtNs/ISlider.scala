@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISlider
   extends extjsLib.ExtNs.sliderNs.IMulti {
   /** [Method] Programmatically sets the value of the Slider

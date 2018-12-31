@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EncryptedKey extends js.Object {
   var CanonicalizationMethod: java.lang.String
   var DSAKeyValue: java.lang.String

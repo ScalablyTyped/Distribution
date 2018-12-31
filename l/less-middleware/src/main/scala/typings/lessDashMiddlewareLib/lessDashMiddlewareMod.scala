@@ -9,14 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object lessDashMiddlewareMod extends js.Object {
   /**
-   * Middleware created to allow processing of Less files for Connect JS framework
-   * and by extension the Express JS framework
-   */
+    * Middleware created to allow processing of Less files for Connect JS framework
+    * and by extension the Express JS framework
+    */
   def apply(source: java.lang.String): expressLib.expressMod.eNs.RequestHandler = js.native
-  /**
-   * Middleware created to allow processing of Less files for Connect JS framework
-   * and by extension the Express JS framework
-   */
   def apply(source: java.lang.String, options: lessDashMiddlewareLib.Anon_Dest): expressLib.expressMod.eNs.RequestHandler = js.native
 }
 

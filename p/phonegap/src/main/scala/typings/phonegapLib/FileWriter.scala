@@ -7,13 +7,11 @@ import scala.scalajs.js.annotation._
 
 /* Defined in lib.d.ts
 interface File {
-    fullPath: string;
-    type: string;
-    size: number;
+  fullPath: string;
+  type: string;
+  size: number;
 }
 */
-
-
 trait FileWriter extends js.Object {
   var error: FileError
   var fileName: java.lang.String

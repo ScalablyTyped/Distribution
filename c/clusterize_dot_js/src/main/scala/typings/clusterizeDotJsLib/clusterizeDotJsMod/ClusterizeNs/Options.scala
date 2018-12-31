@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var blocks_in_cluster: js.UndefOr[scala.Double] = js.undefined
   var callbacks: js.UndefOr[Callbacks] = js.undefined

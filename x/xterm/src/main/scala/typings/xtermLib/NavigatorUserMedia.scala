@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigatorUserMedia extends js.Object {
   val mediaDevices: MediaDevices
   def getDisplayMedia(constraints: MediaStreamConstraints): js.Promise[MediaStream]

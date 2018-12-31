@@ -16,28 +16,10 @@ class Task protected ()
   		 * @param opts Perform this task asynchronously. If you flag a task with this option, you must call the global `complete` method inside the task's action, for execution to proceed to the next task.
   		 */
   def this(name: java.lang.String) = this()
-  /**
-  		 * @name name The name of the Task
-  		 * @param prereqs Prerequisites to be run before this task
-  		 * @param action The action to perform for this task
-  		 * @param opts Perform this task asynchronously. If you flag a task with this option, you must call the global `complete` method inside the task's action, for execution to proceed to the next task.
-  		 */
   def this(name: java.lang.String, prereqs: js.Array[java.lang.String]) = this()
-  /**
-  		 * @name name The name of the Task
-  		 * @param prereqs Prerequisites to be run before this task
-  		 * @param action The action to perform for this task
-  		 * @param opts Perform this task asynchronously. If you flag a task with this option, you must call the global `complete` method inside the task's action, for execution to proceed to the next task.
-  		 */
   def this(name: java.lang.String, prereqs: js.Array[java.lang.String], action: js.ThisFunction0[/* this */ Task, scala.Unit]) = this()
-  /**
-  		 * @name name The name of the Task
-  		 * @param prereqs Prerequisites to be run before this task
-  		 * @param action The action to perform for this task
-  		 * @param opts Perform this task asynchronously. If you flag a task with this option, you must call the global `complete` method inside the task's action, for execution to proceed to the next task.
-  		 */
   def this(name: java.lang.String, prereqs: js.Array[java.lang.String], action: js.ThisFunction0[/* this */ Task, scala.Unit], opts: TaskOptions) = this()
-  var action: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.native
+  var action: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
   var async: js.UndefOr[scala.Boolean] = js.native
   var description: js.UndefOr[java.lang.String] = js.native
   var fullName: java.lang.String = js.native

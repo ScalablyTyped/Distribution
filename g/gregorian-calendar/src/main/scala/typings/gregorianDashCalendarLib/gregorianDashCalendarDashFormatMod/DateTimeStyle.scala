@@ -12,29 +12,29 @@ sealed trait DateTimeStyle extends js.Object
 @js.native
 object DateTimeStyle extends js.Object {
   /**
-           * full style
-           */
+    * full style
+    */
   @js.native
   sealed trait FULL
     extends gregorianDashCalendarLib.gregorianDashCalendarDashFormatMod.DateTimeStyle
   
   /**
-           * long style
-           */
+    * long style
+    */
   @js.native
   sealed trait LONG
     extends gregorianDashCalendarLib.gregorianDashCalendarDashFormatMod.DateTimeStyle
   
   /**
-           * medium style
-           */
+    * medium style
+    */
   @js.native
   sealed trait MEDIUM
     extends gregorianDashCalendarLib.gregorianDashCalendarDashFormatMod.DateTimeStyle
   
   /**
-           * short style
-           */
+    * short style
+    */
   @js.native
   sealed trait SHORT
     extends gregorianDashCalendarLib.gregorianDashCalendarDashFormatMod.DateTimeStyle

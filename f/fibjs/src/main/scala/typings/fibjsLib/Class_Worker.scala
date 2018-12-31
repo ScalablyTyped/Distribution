@@ -18,15 +18,6 @@ class Class_Worker protected () extends Class_EventEmitter {
   	 * 
   	 */
   def this(path: java.lang.String) = this()
-  /**
-  	 * 
-  	 * @brief Worker 对象构造函数
-  	 * @param path 指定 Worker 入口脚本，只接受绝对路径
-  	 * @param opts 构造选项，暂未支持
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def this(path: java.lang.String, opts: js.Object) = this()
   /**
   	 * class prop 

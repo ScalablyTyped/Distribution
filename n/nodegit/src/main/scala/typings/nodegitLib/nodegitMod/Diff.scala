@@ -14,10 +14,10 @@ class Diff ()
 @js.native
 object Diff extends js.Object {
   /**
-       * Directly run a diff between a blob and a buffer.
-       *
-       *
-       */
+    * Directly run a diff between a blob and a buffer.
+    *
+    *
+    */
   def blobToBuffer(
     oldBlob: nodegitLib.blobMod.Blob,
     oldAsPath: java.lang.String,

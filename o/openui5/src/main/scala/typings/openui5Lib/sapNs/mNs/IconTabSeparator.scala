@@ -10,55 +10,47 @@ import scala.scalajs.js.annotation._
 class IconTabSeparator protected ()
   extends openui5Lib.sapNs.uiNs.coreNs.Element {
   /**
-         * Constructor for a new IconTabSeparator.Accepts an object literal <code>mSettings</code> that defines
-         * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-         * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-         * object.
-         * @param sId ID for the new control, generated automatically if no ID is given
-         * @param mSettings Initial settings for the new control
-        */
+    * Constructor for a new IconTabSeparator.Accepts an object literal <code>mSettings</code> that defines
+    * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
+    * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
+    * object.
+    * @param sId ID for the new control, generated automatically if no ID is given
+    * @param mSettings Initial settings for the new control
+    */
   def this(sId: java.lang.String) = this()
-  /**
-         * Constructor for a new IconTabSeparator.Accepts an object literal <code>mSettings</code> that defines
-         * initialproperty values, aggregated and associated objects as well as event handlers.See {@link
-         * sap.ui.base.ManagedObject#constructor} for a general description of the syntax of the settings
-         * object.
-         * @param sId ID for the new control, generated automatically if no ID is given
-         * @param mSettings Initial settings for the new control
-        */
   def this(sId: java.lang.String, mSettings: js.Any) = this()
   /**
-         * Gets current value of property <code>icon</code>.The icon to display for this separator. If no icon
-         * is given, a separator line is used instead.Default value is <code></code>.
-         * @returns Value of property <code>icon</code>
-        */
+    * Gets current value of property <code>icon</code>.The icon to display for this separator. If no icon
+    * is given, a separator line is used instead.Default value is <code></code>.
+    * @returns Value of property <code>icon</code>
+    */
   def getIcon(): js.Any = js.native
   /**
-         * Gets current value of property <code>iconDensityAware</code>.If set to true, it sends one or more
-         * requests,trying to get the density perfect version of the image if this version ofthe image doesn't
-         * exist on the server. Default value is set to true.If bandwidth is key for the application, set this
-         * value to false.Default value is <code>true</code>.
-         * @returns Value of property <code>iconDensityAware</code>
-        */
+    * Gets current value of property <code>iconDensityAware</code>.If set to true, it sends one or more
+    * requests,trying to get the density perfect version of the image if this version ofthe image doesn't
+    * exist on the server. Default value is set to true.If bandwidth is key for the application, set this
+    * value to false.Default value is <code>true</code>.
+    * @returns Value of property <code>iconDensityAware</code>
+    */
   def getIconDensityAware(): scala.Boolean = js.native
   /**
-         * Sets a new value for property <code>icon</code>.The icon to display for this separator. If no icon
-         * is given, a separator line is used instead.When called with a value of <code>null</code> or
-         * <code>undefined</code>, the default value of the property will be restored.Default value is
-         * <code></code>.
-         * @param sIcon New value for property <code>icon</code>
-         * @returns Reference to <code>this</code> in order to allow method chaining
-        */
+    * Sets a new value for property <code>icon</code>.The icon to display for this separator. If no icon
+    * is given, a separator line is used instead.When called with a value of <code>null</code> or
+    * <code>undefined</code>, the default value of the property will be restored.Default value is
+    * <code></code>.
+    * @param sIcon New value for property <code>icon</code>
+    * @returns Reference to <code>this</code> in order to allow method chaining
+    */
   def setIcon(sIcon: js.Any): IconTabSeparator = js.native
   /**
-         * Sets a new value for property <code>iconDensityAware</code>.If set to true, it sends one or more
-         * requests,trying to get the density perfect version of the image if this version ofthe image doesn't
-         * exist on the server. Default value is set to true.If bandwidth is key for the application, set this
-         * value to false.When called with a value of <code>null</code> or <code>undefined</code>, the default
-         * value of the property will be restored.Default value is <code>true</code>.
-         * @param bIconDensityAware New value for property <code>iconDensityAware</code>
-         * @returns Reference to <code>this</code> in order to allow method chaining
-        */
+    * Sets a new value for property <code>iconDensityAware</code>.If set to true, it sends one or more
+    * requests,trying to get the density perfect version of the image if this version ofthe image doesn't
+    * exist on the server. Default value is set to true.If bandwidth is key for the application, set this
+    * value to false.When called with a value of <code>null</code> or <code>undefined</code>, the default
+    * value of the property will be restored.Default value is <code>true</code>.
+    * @param bIconDensityAware New value for property <code>iconDensityAware</code>
+    * @returns Reference to <code>this</code> in order to allow method chaining
+    */
   def setIconDensityAware(bIconDensityAware: scala.Boolean): IconTabSeparator = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DecorationLayerOptions extends SharedDecorationOptions {
   /** One of several supported decoration types. */
   var `type`: js.UndefOr[

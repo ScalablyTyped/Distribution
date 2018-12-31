@@ -9,11 +9,8 @@ import scala.scalajs.js.annotation._
 trait ValidationState extends js.Object {
   // Finds and returns the validation states
   def findIn(model: js.Any): js.Array[IValidationState] = js.native
-  // Finds and returns the validation states
   def findIn(model: js.Any, includeSubModels: scala.Boolean): js.Array[IValidationState] = js.native
-  // Finds and returns the validation states
   def findIn(model: js.Any, includeSubModels: scala.Boolean, recurse: scala.Boolean): js.Array[IValidationState] = js.native
-  // Finds and returns the validation states
   def findIn(
     model: js.Any,
     includeSubModels: scala.Boolean,

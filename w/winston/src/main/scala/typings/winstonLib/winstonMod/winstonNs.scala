@@ -46,7 +46,6 @@ object winstonNs extends js.Object {
     def apply(message: java.lang.String, meta: js.Any, callback: LogCallback): Logger = js.native
   }
   
-  
   trait LogEntry
     extends /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
     var level: java.lang.String
@@ -118,15 +117,15 @@ object winstonNs extends js.Object {
     override def _destroy(error: scala.Null, callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
     def add(transport: winstonDashTransportLib.winstonDashTransportMod.namespaced): Logger = js.native
     /**
-                 * Event emitter
-                 * The defined events on documents including:
-                 * 1. close
-                 * 2. drain
-                 * 3. error
-                 * 4. finish
-                 * 5. pipe
-                 * 6. unpipe
-                 */
+      * Event emitter
+      * The defined events on documents including:
+      * 1. close
+      * 2. drain
+      * 3. error
+      * 4. finish
+      * 5. pipe
+      * 6. unpipe
+      */
     /* InferMemberOverrides */
     /* InferMemberOverrides */
     @JSName("addListener")
@@ -288,7 +287,6 @@ object winstonNs extends js.Object {
     def warning(message: java.lang.String, meta: js.Any, callback: LogCallback): Logger = js.native
   }
   
-  
   trait LoggerOptions extends js.Object {
     var exceptionHandlers: js.UndefOr[js.Any] = js.undefined
     var exitOnError: js.UndefOr[js.Function | scala.Boolean] = js.undefined
@@ -309,7 +307,6 @@ object winstonNs extends js.Object {
     def done(info: js.Any): scala.Boolean = js.native
   }
   
-  
   trait QueryOptions extends js.Object {
     var fields: js.Any
     var from: js.UndefOr[stdLib.Date] = js.undefined
@@ -329,20 +326,16 @@ object winstonNs extends js.Object {
     @JSName("winston")
     @js.native
     object winstonNs extends js.Object {
-      
       trait AbstractConfigSet extends js.Object {
         var colors: winstonLib.libWinstonConfigMod.winstonNs.AbstractConfigSetColors
         var levels: winstonLib.libWinstonConfigMod.winstonNs.AbstractConfigSetLevels
       }
       
-      
       trait AbstractConfigSetColors
         extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]
       
-      
       trait AbstractConfigSetLevels
         extends /* key */ org.scalablytyped.runtime.StringDictionary[scala.Double]
-      
       
       trait CliConfigSetColors
         extends winstonLib.libWinstonConfigMod.winstonNs.AbstractConfigSetColors {
@@ -358,7 +351,6 @@ object winstonNs extends js.Object {
         var warn: java.lang.String | js.Array[java.lang.String]
       }
       
-      
       trait CliConfigSetLevels
         extends winstonLib.libWinstonConfigMod.winstonNs.AbstractConfigSetLevels {
         var data: scala.Double
@@ -373,7 +365,6 @@ object winstonNs extends js.Object {
         var warn: scala.Double
       }
       
-      
       trait Config extends js.Object {
         var allColors: winstonLib.libWinstonConfigMod.winstonNs.AbstractConfigSetColors
         var cli: winstonLib.Anon_LevelsColorsCliConfigSetLevels
@@ -381,7 +372,6 @@ object winstonNs extends js.Object {
         var syslog: winstonLib.Anon_Levels
         def addColors(colors: winstonLib.libWinstonConfigMod.winstonNs.AbstractConfigSetColors): scala.Unit
       }
-      
       
       trait NpmConfigSetColors
         extends winstonLib.libWinstonConfigMod.winstonNs.AbstractConfigSetColors {
@@ -392,7 +382,6 @@ object winstonNs extends js.Object {
         var verbose: java.lang.String | js.Array[java.lang.String]
         var warn: java.lang.String | js.Array[java.lang.String]
       }
-      
       
       trait NpmConfigSetLevels
         extends winstonLib.libWinstonConfigMod.winstonNs.AbstractConfigSetLevels {
@@ -405,7 +394,6 @@ object winstonNs extends js.Object {
         var warn: scala.Double
       }
       
-      
       trait SyslogConfigSetColors
         extends winstonLib.libWinstonConfigMod.winstonNs.AbstractConfigSetColors {
         var alert: java.lang.String | js.Array[java.lang.String]
@@ -417,7 +405,6 @@ object winstonNs extends js.Object {
         var notice: java.lang.String | js.Array[java.lang.String]
         var warning: java.lang.String | js.Array[java.lang.String]
       }
-      
       
       trait SyslogConfigSetLevels
         extends winstonLib.libWinstonConfigMod.winstonNs.AbstractConfigSetLevels {
@@ -487,7 +474,6 @@ object winstonNs extends js.Object {
         var stderrLevels: js.Array[java.lang.String] = js.native
       }
       
-      
       trait ConsoleTransportOptions
         extends winstonDashTransportLib.winstonDashTransportMod.TransportStreamNs.TransportStreamOptions {
         var debugStdout: js.UndefOr[scala.Boolean] = js.undefined
@@ -514,7 +500,6 @@ object winstonNs extends js.Object {
         var tailable: scala.Boolean = js.native
         var zippedArchive: scala.Boolean = js.native
       }
-      
       
       trait FileTransportOptions
         extends winstonDashTransportLib.winstonDashTransportMod.TransportStreamNs.TransportStreamOptions {
@@ -547,7 +532,6 @@ object winstonNs extends js.Object {
         var ssl: scala.Boolean = js.native
       }
       
-      
       trait HttpTransportOptions
         extends winstonDashTransportLib.winstonDashTransportMod.TransportStreamNs.TransportStreamOptions {
         var agent: js.UndefOr[nodeLib.httpMod.Agent] = js.undefined
@@ -570,13 +554,11 @@ object winstonNs extends js.Object {
         var eol: java.lang.String = js.native
       }
       
-      
       trait StreamTransportOptions
         extends winstonDashTransportLib.winstonDashTransportMod.TransportStreamNs.TransportStreamOptions {
         var eol: js.UndefOr[java.lang.String] = js.undefined
         var stream: nodeLib.NodeJSNs.WritableStream
       }
-      
       
       trait Transports extends js.Object {
         var Console: winstonLib.libWinstonTransportsMod.winstonNs.ConsoleTransportInstance

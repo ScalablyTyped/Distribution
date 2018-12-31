@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FittingRules extends js.Object {
   var hLayout: scala.Double
   var hRule1: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KnockoutBindingProvider extends js.Object {
   var getBindingAccessors: js.UndefOr[
     js.Function2[

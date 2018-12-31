@@ -6,9 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /*=============================设备信息================================*/
-
 /*=============================地理位置================================*/
-
 trait IopenLocation extends BaseParams {
    // 位置名
   var address: java.lang.String

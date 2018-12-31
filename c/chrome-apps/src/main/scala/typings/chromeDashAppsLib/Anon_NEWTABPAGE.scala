@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NEWTABPAGE extends js.Object {
   var ABOUT_PAGE: chromeDashAppsLib.chromeDashAppsLibStrings.about_page
   var APP_LAUNCHER: chromeDashAppsLib.chromeDashAppsLibStrings.app_launcher

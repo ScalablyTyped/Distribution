@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Wizard extends js.Object {
   def activeTab(): js.Any
   def currentIndex(): scala.Double

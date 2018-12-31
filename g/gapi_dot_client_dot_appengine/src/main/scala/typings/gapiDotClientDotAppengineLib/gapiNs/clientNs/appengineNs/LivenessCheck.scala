@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LivenessCheck extends js.Object {
   /** Interval between health checks. */
   var checkInterval: js.UndefOr[java.lang.String] = js.undefined

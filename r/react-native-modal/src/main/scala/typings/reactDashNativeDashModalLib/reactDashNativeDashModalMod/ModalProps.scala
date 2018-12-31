@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModalProps extends js.Object {
   var animationIn: js.UndefOr[AnimationConfig] = js.undefined
   var animationInTiming: js.UndefOr[scala.Double] = js.undefined

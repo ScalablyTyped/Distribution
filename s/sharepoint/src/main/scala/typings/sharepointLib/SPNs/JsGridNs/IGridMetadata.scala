@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line: interface-name
-
 trait IGridMetadata extends js.Object {
   var GridOperationalConstantsFieldKeyMap: js.UndefOr[org.scalablytyped.runtime.NumberDictionary[java.lang.String]] = js.undefined
   var GroupingLevel: js.UndefOr[scala.Double] = js.undefined

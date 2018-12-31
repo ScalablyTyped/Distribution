@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LogglyOptions extends js.Object {
   var auth: js.UndefOr[logglyLib.Anon_Username] = js.undefined
   var host: js.UndefOr[java.lang.String] = js.undefined

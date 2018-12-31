@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IncomingWebhookOptions[T] extends js.Object {
   var body: js.UndefOr[T] = js.undefined
   var headers: js.UndefOr[IncomingWebhookHttpHeaders] = js.undefined

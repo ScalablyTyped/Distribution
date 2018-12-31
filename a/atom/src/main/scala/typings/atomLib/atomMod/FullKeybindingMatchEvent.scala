@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FullKeybindingMatchEvent extends js.Object {
   /** The KeyBinding that the keystrokes matched. */
   var binding: KeyBinding

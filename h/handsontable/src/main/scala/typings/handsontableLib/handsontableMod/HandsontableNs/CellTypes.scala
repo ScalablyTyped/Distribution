@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CellTypes extends js.Object {
   var autocomplete: handsontableLib.handsontableMod.HandsontableNs.cellTypesNs.Autocomplete
   var checkbox: handsontableLib.handsontableMod.HandsontableNs.cellTypesNs.Checkbox

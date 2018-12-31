@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileExtensionsValidatingEventUIParam extends js.Object {
   /**
   	 * Gets the file extension.

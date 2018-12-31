@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataViewTreeNodeMeasureValue
   extends DataViewTreeNodeValue
      with DataViewColumnAggregates {

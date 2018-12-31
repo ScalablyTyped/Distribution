@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPersonaStyles extends js.Object {
   var details: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   var optionalText: atUifabricMergeDashStylesLib.libIStyleMod.IStyle

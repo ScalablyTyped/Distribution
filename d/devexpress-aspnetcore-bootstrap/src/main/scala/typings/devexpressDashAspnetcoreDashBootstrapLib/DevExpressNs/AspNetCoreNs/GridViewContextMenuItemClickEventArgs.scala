@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridViewContextMenuItemClickEventArgs extends ProcessingModeEventArgs {
   val elementIndex: scala.Double
   var handled: scala.Boolean

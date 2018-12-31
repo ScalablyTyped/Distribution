@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BitcoinReceivers extends js.Object {
   var Accounts: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Accounts]
   var ApplicationFeeRefunds: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.ApplicationFeeRefunds]
@@ -30,12 +29,12 @@ trait Anon_BitcoinReceivers extends js.Object {
   var Plans: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Plans]
   var Products: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Products]
   /**
-           * @deprecated
-           */
+    * @deprecated
+    */
   var RecipientCards: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.RecipientCards]
   /**
-           * @deprecated
-           */
+    * @deprecated
+    */
   var Recipients: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Recipients]
   var Refunds: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.Refunds]
   var SKUs: org.scalablytyped.runtime.Instantiable0[stripeLib.stripeMod.StripeNs.resourcesNs.SKUs]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InspectOptions extends js.Object {
   var breakLength: js.UndefOr[scala.Double] = js.undefined
   var colors: js.UndefOr[scala.Boolean] = js.undefined

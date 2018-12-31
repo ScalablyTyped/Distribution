@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICompositeOptions extends js.Object {
   var compositeData: nodeLib.Buffer
   var debug: js.UndefOr[scala.Boolean] = js.undefined

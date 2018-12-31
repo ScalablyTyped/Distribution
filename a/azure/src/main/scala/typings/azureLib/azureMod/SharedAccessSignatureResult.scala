@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SharedAccessSignatureResult extends js.Object {
   var baseUrl: java.lang.String
   var path: java.lang.String

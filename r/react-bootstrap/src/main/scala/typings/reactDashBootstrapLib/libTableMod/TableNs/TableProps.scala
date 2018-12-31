@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libTableMod.Table] {
   var bordered: js.UndefOr[scala.Boolean] = js.undefined

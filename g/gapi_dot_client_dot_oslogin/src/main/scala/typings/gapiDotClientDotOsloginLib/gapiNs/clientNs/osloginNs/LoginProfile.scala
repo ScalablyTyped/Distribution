@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LoginProfile extends js.Object {
   /** A unique user ID for identifying the user. */
   var name: js.UndefOr[java.lang.String] = js.undefined

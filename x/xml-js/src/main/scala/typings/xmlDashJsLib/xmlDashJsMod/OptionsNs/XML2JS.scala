@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait XML2JS
   extends ChangingKeyNames
      with IgnoreOptions {

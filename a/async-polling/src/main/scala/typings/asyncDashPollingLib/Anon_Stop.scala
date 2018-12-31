@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Stop extends js.Object {
   var on: js.Function2[
     /* eventName */ asyncDashPollingLib.asyncDashPollingMod.AsyncPollingNs.EventName, 

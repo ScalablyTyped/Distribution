@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class HttpRequest[T] () extends HttpRequestPromise[T] {
   /**
-           * Executes the request and runs the supplied callback on response.
-           * @param callback The callback function which executes when the request succeeds or fails.
-           */
+    * Executes the request and runs the supplied callback on response.
+    * @param callback The callback function which executes when the request succeeds or fails.
+    */
   def execute(callback: js.Function2[/* jsonResp */ T, /* rawResp */ gapiLib.Anon_StatusText, _]): scala.Unit = js.native
 }
 

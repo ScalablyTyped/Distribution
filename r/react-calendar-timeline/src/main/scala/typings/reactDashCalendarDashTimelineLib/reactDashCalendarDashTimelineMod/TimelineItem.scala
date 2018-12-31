@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimelineItem extends js.Object {
   var canChangeGroup: js.UndefOr[scala.Boolean] = js.undefined
   var canMove: js.UndefOr[scala.Boolean] = js.undefined

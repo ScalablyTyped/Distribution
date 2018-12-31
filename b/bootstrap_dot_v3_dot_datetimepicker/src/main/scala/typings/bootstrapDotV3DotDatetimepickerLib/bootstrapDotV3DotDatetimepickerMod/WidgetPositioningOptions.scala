@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WidgetPositioningOptions extends js.Object {
   var horizontal: js.UndefOr[
     bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerLibStrings.auto | bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerLibStrings.left | bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerLibStrings.right

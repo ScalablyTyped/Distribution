@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Settings extends js.Object {
   /** Contains the language the device displays information in. */
   var language: java.lang.String

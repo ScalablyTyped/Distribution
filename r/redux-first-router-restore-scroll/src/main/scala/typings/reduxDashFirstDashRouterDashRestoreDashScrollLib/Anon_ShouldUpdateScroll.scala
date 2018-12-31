@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ShouldUpdateScroll extends js.Object {
   /** @default false */
   var manual: js.UndefOr[scala.Boolean] = js.undefined
@@ -18,11 +17,11 @@ trait Anon_ShouldUpdateScroll extends js.Object {
     ]
   ] = js.undefined
   /**
-       * To implement a custom backend storage for scroll state, pass a custom
-       * stateStorage object. The object should implement the methods as described
-       * by the package `scroll-behavior` as well as a function called setPrevKey
-       * that keeps track of the previous key.
-       */
+    * To implement a custom backend storage for scroll state, pass a custom
+    * stateStorage object. The object should implement the methods as described
+    * by the package `scroll-behavior` as well as a function called setPrevKey
+    * that keeps track of the previous key.
+    */
   var stateStorage: js.UndefOr[Anon_SetPrevKey] = js.undefined
 }
 

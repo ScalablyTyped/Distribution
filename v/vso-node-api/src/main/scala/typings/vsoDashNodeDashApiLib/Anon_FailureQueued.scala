@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FailureQueued extends js.Object {
   var conflicts: scala.Double
   var failure: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SupportsPreferredEmailAddressDelivery extends js.Object {
   var deliveryPreferencesEditable: scala.Double
   var isGroup: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueueMessageResponse extends js.Object {
   var body: js.Any
   var brokerProperties: js.UndefOr[azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.BrokerProperties] = js.undefined

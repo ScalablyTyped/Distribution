@@ -5,21 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PigJob extends js.Object {
   /**
-               * Optional. Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent
-               * parallel queries.
-               */
+    * Optional. Whether to continue executing queries if a query fails. The default value is false. Setting to true can be useful when executing independent
+    * parallel queries.
+    */
   var continueOnFailure: js.UndefOr[scala.Boolean] = js.undefined
   /** Optional. HCFS URIs of jar files to add to the CLASSPATH of the Pig Client and Hadoop MapReduce (MR) tasks. Can contain Pig UDFs. */
   var jarFileUris: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Optional. The runtime log config for job execution. */
   var loggingConfig: js.UndefOr[LoggingConfig] = js.undefined
   /**
-               * Optional. A mapping of property names to values, used to configure Pig. Properties that conflict with values set by the Cloud Dataproc API may be
-               * overwritten. Can include properties set in /etc/hadoop/conf/&#42;-site.xml, /etc/pig/conf/pig.properties, and classes in user code.
-               */
+    * Optional. A mapping of property names to values, used to configure Pig. Properties that conflict with values set by the Cloud Dataproc API may be
+    * overwritten. Can include properties set in /etc/hadoop/conf/&#42;-site.xml, /etc/pig/conf/pig.properties, and classes in user code.
+    */
   var properties: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
   /** The HCFS URI of the script that contains the Pig queries. */
   var queryFileUri: js.UndefOr[java.lang.String] = js.undefined

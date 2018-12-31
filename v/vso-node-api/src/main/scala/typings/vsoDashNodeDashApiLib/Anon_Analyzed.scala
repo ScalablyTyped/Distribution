@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Analyzed extends js.Object {
   var abortedBySystem: scala.Double
   var analyzed: scala.Double

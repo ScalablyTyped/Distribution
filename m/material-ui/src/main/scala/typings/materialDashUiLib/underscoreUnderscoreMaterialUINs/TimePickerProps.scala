@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimePickerProps extends js.Object {
   // <TextField/> is element that get the 'other' properties
   var autoOk: js.UndefOr[scala.Boolean] = js.undefined

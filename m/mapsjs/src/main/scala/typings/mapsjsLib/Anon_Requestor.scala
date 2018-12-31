@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Requestor extends js.Object {
   var descriptor: js.UndefOr[js.Any] = js.undefined
   var enableTileFadeIn: js.UndefOr[scala.Boolean] = js.undefined

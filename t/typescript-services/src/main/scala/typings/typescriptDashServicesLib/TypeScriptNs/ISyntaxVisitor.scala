@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISyntaxVisitor extends js.Object {
   def visitArgumentList(node: ArgumentListSyntax): js.Any
   def visitArrayLiteralExpression(node: ArrayLiteralExpressionSyntax): js.Any

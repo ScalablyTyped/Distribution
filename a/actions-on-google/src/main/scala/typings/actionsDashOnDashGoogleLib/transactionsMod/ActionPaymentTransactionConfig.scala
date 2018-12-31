@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActionPaymentTransactionConfig extends js.Object {
   var customerInfoOptions: js.UndefOr[CustomerInfoOptions] = js.undefined
   /** True if delivery address is required for the transaction. */

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAccessControlListComponent extends js.Object {
   var AccessControlEntries: IAccessControlEntryContainer
   var CanDeactivate: scala.Boolean

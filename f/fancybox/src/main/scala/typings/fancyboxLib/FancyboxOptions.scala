@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FancyboxOptions extends FancyboxCallback {
   var ajax: js.UndefOr[js.Any] = js.undefined
   var arrows: js.UndefOr[scala.Boolean] = js.undefined

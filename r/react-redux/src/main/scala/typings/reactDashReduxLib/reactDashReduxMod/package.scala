@@ -16,7 +16,7 @@ package object reactDashReduxMod {
   ]) with reactDashReduxLib.Anon_WrappedComponent[C]
   type GetProps[C] = js.Any
   type HandleThunkActionCreator[TActionCreator] = TActionCreator | InferThunkActionCreatorType[TActionCreator]
-  type InferThunkActionCreatorType[TActionCreator /* <: js.Function1[/* repeated */js.Any, _] */] = TActionCreator | (js.Function1[/* args */ js.Any, js.Any])
+  type InferThunkActionCreatorType[TActionCreator /* <: js.Function1[/* repeated */ js.Any, _] */] = TActionCreator | (js.Function1[/* args */ js.Any, js.Any])
   type InferableComponentEnhancer[TInjectedProps] = InferableComponentEnhancerWithProps[TInjectedProps, js.Object]
   type InferableComponentEnhancerWithProps[TInjectedProps, TNeedsProps] = js.Function1[
     /* component */ js.Any, 

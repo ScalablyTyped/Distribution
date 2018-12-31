@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait WiaPropertyType extends js.Object
 
 /**
-     * The WiaPropertyType enumeration specifies the type of the value of an item property. Item properties can be found in the Properties collection of a
-     * Device or Item object.
-     */
+  * The WiaPropertyType enumeration specifies the type of the value of an item property. Item properties can be found in the Properties collection of a
+  * Device or Item object.
+  */
 @JSGlobal("WIA.WiaPropertyType")
 @js.native
 object WiaPropertyType extends js.Object {

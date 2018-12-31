@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TSTypeAssertion extends BaseNode {
   var expression: Expression
   var typeAnnotation: TSType

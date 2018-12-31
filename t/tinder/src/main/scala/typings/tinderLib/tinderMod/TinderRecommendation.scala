@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TinderRecommendation extends js.Object {
    // todo
   var _id: java.lang.String

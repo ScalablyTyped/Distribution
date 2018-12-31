@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextSearchRequest extends js.Object {
   var bounds: js.UndefOr[
     googlemapsLib.googleNs.mapsNs.LatLngBounds | googlemapsLib.googleNs.mapsNs.LatLngBoundsLiteral
@@ -15,7 +14,7 @@ trait TextSearchRequest extends js.Object {
   ] = js.undefined
   var query: java.lang.String
   var radius: js.UndefOr[scala.Double] = js.undefined
-   /* Deprecated. Will be removed February 16, 2017 */var `type`: js.UndefOr[java.lang.String] = js.undefined
+   /* Deprecated. Will be removed February 16, 2017 */ var `type`: js.UndefOr[java.lang.String] = js.undefined
   var types: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 

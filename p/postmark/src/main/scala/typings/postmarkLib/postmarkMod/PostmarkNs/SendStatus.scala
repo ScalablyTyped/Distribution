@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SendStatus extends js.Object {
   var ErrorCode: scala.Double
   var Message: java.lang.String

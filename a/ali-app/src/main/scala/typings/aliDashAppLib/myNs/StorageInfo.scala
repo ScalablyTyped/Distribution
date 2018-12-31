@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StorageInfo extends js.Object {
   /**
   		 * 当前占用的空间大小, 单位kb

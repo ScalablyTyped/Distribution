@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TrackerParams extends js.Object {
   /** whether to use constant velocity model when fitting (default is true) */
   var constantVelocity: js.UndefOr[scala.Boolean] = js.undefined

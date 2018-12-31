@@ -9,14 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object removeDashMarkdownMod extends js.Object {
   /**
-   * Strip Markdown formatting from text
-   * @param markdown Markdown text
-   */
+    * Strip Markdown formatting from text
+    * @param markdown Markdown text
+    */
   def apply(markdown: java.lang.String): java.lang.String = js.native
-  /**
-   * Strip Markdown formatting from text
-   * @param markdown Markdown text
-   */
   def apply(markdown: java.lang.String, options: removeDashMarkdownLib.Anon_Gfm): java.lang.String = js.native
 }
 

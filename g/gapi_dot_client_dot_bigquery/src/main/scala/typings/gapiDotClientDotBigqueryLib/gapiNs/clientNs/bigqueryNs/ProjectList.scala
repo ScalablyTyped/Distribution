@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProjectList extends js.Object {
   /** A hash of the page of results */
   var etag: js.UndefOr[java.lang.String] = js.undefined

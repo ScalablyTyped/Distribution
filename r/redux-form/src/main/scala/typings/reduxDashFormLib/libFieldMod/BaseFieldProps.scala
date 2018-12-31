@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Partial) */ 
-trait BaseFieldProps[P] extends js.Object {
+- Lifted 1 members from Set(std.Partial<redux-form.redux-form/lib/Field.CommonFieldProps>) */ trait BaseFieldProps[P] extends js.Object {
   var component: js.UndefOr[
     (reactLib.reactMod.ReactNs.ComponentType[WrappedFieldProps with P]) | reduxDashFormLib.reduxDashFormLibStrings.input | reduxDashFormLib.reduxDashFormLibStrings.select | reduxDashFormLib.reduxDashFormLibStrings.textarea
   ] = js.undefined

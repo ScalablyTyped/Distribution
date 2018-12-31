@@ -13,8 +13,11 @@ object throttleNsMembers extends js.Object {
   def create(options: adoneLib.adoneNs.utilNs.throttleNs.INs.Options): adoneLib.adoneNs.utilNs.throttleNs.INs.CreateFunction = js.native
   def create[R](fn: js.Function0[R]): js.Function0[js.Promise[R]] = js.native
   def create[R](fn: js.Function0[R], options: adoneLib.adoneNs.utilNs.throttleNs.INs.Options): js.Function0[js.Promise[R]] = js.native
-  def create[R](fn: js.Function1[/* repeated */js.Any, R]): js.Function1[/* repeated */js.Any, js.Promise[R]] = js.native
-  def create[R](fn: js.Function1[/* repeated */js.Any, R], options: adoneLib.adoneNs.utilNs.throttleNs.INs.Options): js.Function1[/* repeated */js.Any, js.Promise[R]] = js.native
+  def create[R](fn: js.Function1[/* repeated */ js.Any, R]): js.Function1[/* repeated */ js.Any, js.Promise[R]] = js.native
+  def create[R](
+    fn: js.Function1[/* repeated */ js.Any, R],
+    options: adoneLib.adoneNs.utilNs.throttleNs.INs.Options
+  ): js.Function1[/* repeated */ js.Any, js.Promise[R]] = js.native
   def create[T1, T2, R](fn: js.Function2[/* a */ T1, /* b */ T2, R]): js.Function2[/* a */ T1, /* b */ T2, js.Promise[R]] = js.native
   def create[T1, T2, R](
     fn: js.Function2[/* a */ T1, /* b */ T2, R],

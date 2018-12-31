@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RefinementListProvided extends js.Object {
   /** a boolean that says whether you can currently refine */
   var canRefine: scala.Boolean
@@ -14,9 +13,9 @@ trait RefinementListProvided extends js.Object {
   /** a boolean that says if the items props contains facet values from the global search or from the search inside items. */
   var isFromSearch: scala.Boolean
   /**
-     * The list of items the RefinementList can display.
-     * If isFromSearch is false, the hit properties like _highlightResult are undefined
-     */
+    * The list of items the RefinementList can display.
+    * If isFromSearch is false, the hit properties like _highlightResult are undefined
+    */
   var items: js.Array[Hit[reactDashInstantsearchDashCoreLib.Anon_Count]]
   /** a function to generate a URL for the corresponding search state */
   def createURL(args: js.Any*): js.Any

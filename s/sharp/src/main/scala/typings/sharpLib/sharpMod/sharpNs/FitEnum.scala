@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FitEnum extends js.Object {
   var contain: sharpLib.sharpLibStrings.contain
   var cover: sharpLib.sharpLibStrings.cover

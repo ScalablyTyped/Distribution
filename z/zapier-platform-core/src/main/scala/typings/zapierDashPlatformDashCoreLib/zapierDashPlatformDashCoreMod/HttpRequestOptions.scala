@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HttpRequestOptions extends js.Object {
   var agent: js.UndefOr[nodeLib.httpMod.Agent | scala.Null] = js.undefined
   var body: js.UndefOr[

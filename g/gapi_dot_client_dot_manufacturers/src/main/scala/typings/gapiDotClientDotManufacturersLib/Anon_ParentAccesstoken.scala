@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ParentAccesstoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -25,17 +24,17 @@ trait Anon_ParentAccesstoken extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Maximum number of product statuses to return in the response, used for
-                   * paging.
-                   */
+    * Maximum number of product statuses to return in the response, used for
+    * paging.
+    */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /** The token returned by the previous request. */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Parent ID in the format `accounts/{account_id}`.
-                   *
-                   * `account_id` - The ID of the Manufacturer Center account.
-                   */
+    * Parent ID in the format `accounts/{account_id}`.
+    *
+    * `account_id` - The ID of the Manufacturer Center account.
+    */
   var parent: java.lang.String
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

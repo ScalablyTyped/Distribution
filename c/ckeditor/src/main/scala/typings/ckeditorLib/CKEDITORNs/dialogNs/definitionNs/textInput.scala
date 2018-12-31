@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait textInput extends labeledElement {
   var bidi: js.UndefOr[scala.Boolean] = js.undefined
   var default: js.UndefOr[java.lang.String] = js.undefined

@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Simple object returned in the callback from the
- * [forwardGeocoder](Titanium.Geolocation.forwardGeocoder) method.
- * Note that Android includes a number of extra fields.
- */
-
+  * Simple object returned in the callback from the
+  * [forwardGeocoder](Titanium.Geolocation.forwardGeocoder) method.
+  * Note that Android includes a number of extra fields.
+  */
 trait ForwardGeocodeResponse extends js.Object {
   /**
   	 * Estimated accuracy of the geocoding, in meters.

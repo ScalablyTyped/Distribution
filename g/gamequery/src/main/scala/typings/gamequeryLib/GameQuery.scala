@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GameQuery extends js.Object {
   var ANIMATION_CALLBACK: scala.Double
   var ANIMATION_HORIZONTAL: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Repeater extends js.Object {
   def column(ngBindingExpression: java.lang.String): Future
   def count(): Future

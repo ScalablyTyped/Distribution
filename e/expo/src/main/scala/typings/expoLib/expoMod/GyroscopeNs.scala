@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "Gyroscope")
 @js.native
 object GyroscopeNs extends js.Object {
-  
   trait GyroscopeObject extends js.Object {
     var x: expoLib.expoMod.Axis
     var y: expoLib.expoMod.Axis

@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * JavaScript image viewer.
- * @see {@link https://github.com/fengyuanchen/viewerjs}
- */
+  * JavaScript image viewer.
+  * @see {@link https://github.com/fengyuanchen/viewerjs}
+  */
 @JSImport("viewerjs", JSImport.Namespace)
 @js.native
 class namespaced protected () extends Viewer {

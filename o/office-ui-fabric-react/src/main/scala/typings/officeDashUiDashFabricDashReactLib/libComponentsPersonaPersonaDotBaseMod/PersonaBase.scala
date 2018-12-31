@@ -14,22 +14,22 @@ class PersonaBase protected ()
     ] {
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.IPersonaProps) = this()
   /**
-       * Deprecation helper for getting text.
-       */
+    * Deprecation helper for getting text.
+    */
   /* private */ def _getText(): js.Any = js.native
   /**
-       * using closure to wrap the default render behavior
-       * to make it independent of the type of text passed
-       * @param text
-       */
+    * using closure to wrap the default render behavior
+    * to make it independent of the type of text passed
+    * @param text
+    */
   /* private */ def _onRenderText(text: js.Any): js.Any = js.native
   /**
-       * Renders various types of Text (primaryText, secondaryText, etc)
-       * based on the classNames passed
-       * @param classNames
-       * @param renderFunction
-       * @param defaultRenderFunction
-       */
+    * Renders various types of Text (primaryText, secondaryText, etc)
+    * based on the classNames passed
+    * @param classNames
+    * @param renderFunction
+    * @param defaultRenderFunction
+    */
   /* private */ def _renderElement(classNames: js.Any, renderFunction: js.Any, defaultRenderFunction: js.Any): js.Any = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Circle extends js.Object {
   /** The description of this circle. */
   var description: js.UndefOr[java.lang.String] = js.undefined

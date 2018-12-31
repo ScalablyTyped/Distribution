@@ -144,13 +144,6 @@ class b2World protected () extends js.Object {
     callback: js.Function1[/* fixture */ b2Fixture, scala.Boolean],
     shape: box2dLib.Box2DNs.CollisionNs.ShapesNs.b2Shape
   ): scala.Unit = js.native
-  /**
-  		* Query the world for all fixtures that precisely overlap the provided transformed shape.
-  		* @note This provides a feature specific to this port.
-  		* @param callback A user implemented callback class.  It should match signature function Callback(fixture:b2Fixture):Boolean.  Return true to continue to the next fixture.
-  		* @param shape The query shape.
-  		* @param transform Optional transform, default = null.
-  		**/
   def QueryShape(
     callback: js.Function1[/* fixture */ b2Fixture, scala.Boolean],
     shape: box2dLib.Box2DNs.CollisionNs.ShapesNs.b2Shape,

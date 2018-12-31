@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IconSequence extends js.Object {
   var fixedRotation: js.UndefOr[scala.Boolean] = js.undefined
   var icon: js.UndefOr[Symbol] = js.undefined

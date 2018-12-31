@@ -18,9 +18,9 @@ class DropdownBase protected ()
   var _host: js.Any = js.native
   var _id: js.Any = js.native
   /**
-       * Because the isDisabled prop is deprecated, we have had to repeat this logic all over the place.
-       * This helper method avoids all the repetition.
-       */
+    * Because the isDisabled prop is deprecated, we have had to repeat this logic all over the place.
+    * This helper method avoids all the repetition.
+    */
   var _isDisabled: js.Any = js.native
   var _isScrollIdle: js.Any = js.native
   /** True if the most recent keydown event was for alt (option) or meta (command). */
@@ -50,9 +50,9 @@ class DropdownBase protected ()
   /** Render text in dropdown input */
   var _onRenderTitle: js.Any = js.native
   /**
-       * Scroll handler for the callout to make sure the mouse events
-       * for updating focus are not interacting during scroll
-       */
+    * Scroll handler for the callout to make sure the mouse events
+    * for updating focus are not interacting during scroll
+    */
   var _onScroll: js.Any = js.native
   var _onZoneKeyDown: js.Any = js.native
   var _onZoneKeyUp: js.Any = js.native
@@ -70,16 +70,16 @@ class DropdownBase protected ()
   /** Get all selected indexes for multi-select mode */
   /* private */ def _getSelectedIndexes(options: js.Any, selectedKey: js.Any): js.Any = js.native
   /**
-       * Returns true if the key for the event is alt (Mac option) or meta (Mac command).
-       */
+    * Returns true if the key for the event is alt (Mac option) or meta (Mac command).
+    */
   /* private */ def _isAltOrMeta(ev: js.Any): js.Any = js.native
   /**
-       * Finds the next valid Dropdown option and sets the selected index to it.
-       * @param stepValue Value of how many items the function should traverse.  Should be -1 or 1.
-       * @param index Index of where the search should start
-       * @param selectedIndex The selectedIndex Dropdown's state
-       * @returns The next valid dropdown option's index
-       */
+    * Finds the next valid Dropdown option and sets the selected index to it.
+    * @param stepValue Value of how many items the function should traverse.  Should be -1 or 1.
+    * @param index Index of where the search should start
+    * @param selectedIndex The selectedIndex Dropdown's state
+    * @returns The next valid dropdown option's index
+    */
   /* private */ def _moveIndex(event: js.Any, stepValue: js.Any, index: js.Any, selectedIndex: js.Any): js.Any = js.native
   /* private */ def _onItemMouseEnter(item: js.Any, ev: js.Any): js.Any = js.native
   /* private */ def _onItemMouseMove(item: js.Any, ev: js.Any): js.Any = js.native
@@ -88,15 +88,15 @@ class DropdownBase protected ()
   /* private */ def _renderHeader(item: js.Any): js.Any = js.native
   /* private */ def _renderSeparator(item: js.Any): js.Any = js.native
   /**
-       * We close the menu on key up only if ALL of the following are true:
-       * - Most recent key down was alt or meta (command)
-       * - The alt/meta key down was NOT followed by some other key (such as down/up arrow to
-       *   expand/collapse the menu)
-       * - We're not on a Mac (or iOS)
-       *
-       * This is because on Windows, pressing alt moves focus to the application menu bar or similar,
-       * closing any open context menus. There is not a similar behavior on Macs.
-       */
+    * We close the menu on key up only if ALL of the following are true:
+    * - Most recent key down was alt or meta (command)
+    * - The alt/meta key down was NOT followed by some other key (such as down/up arrow to
+    *   expand/collapse the menu)
+    * - We're not on a Mac (or iOS)
+    *
+    * This is because on Windows, pressing alt moves focus to the application menu bar or similar,
+    * closing any open context menus. There is not a similar behavior on Macs.
+    */
   /* private */ def _shouldHandleKeyUp(ev: js.Any): js.Any = js.native
   /* private */ def _shouldIgnoreMouseEvent(): js.Any = js.native
   @JSName("componentDidUpdate")

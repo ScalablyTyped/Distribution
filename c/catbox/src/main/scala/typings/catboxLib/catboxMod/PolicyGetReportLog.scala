@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PolicyGetReportLog extends js.Object {
   /** error - lookup error. */
   var error: js.UndefOr[stdLib.Error] = js.undefined

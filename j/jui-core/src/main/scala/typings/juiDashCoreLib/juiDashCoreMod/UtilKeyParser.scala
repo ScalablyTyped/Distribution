@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UtilKeyParser extends js.Object {
   def changeIndex(index: java.lang.String, targetIndex: java.lang.String, rootIndex: java.lang.String): java.lang.String
   def getIndexList(index: java.lang.String): scala.Boolean

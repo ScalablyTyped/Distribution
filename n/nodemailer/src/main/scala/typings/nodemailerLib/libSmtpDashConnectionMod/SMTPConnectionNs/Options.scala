@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   /** defines authentication data */
   var auth: js.UndefOr[AuthenticationType] = js.undefined

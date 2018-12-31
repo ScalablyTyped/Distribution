@@ -17,7 +17,6 @@ trait ListCollection
   def ensureSitePagesLibrary(): List[_] = js.native
   /** Returns the list with the specified list identifier. */
   def getById[T](id: java.lang.String): List[T] = js.native
-  /** Returns the list with the specified list identifier. */
   def getById[T](id: Guid): List[T] = js.native
   /** Returns the list with the specified title from the collection. */
   def getByTitle[T](title: java.lang.String): List[T] = js.native

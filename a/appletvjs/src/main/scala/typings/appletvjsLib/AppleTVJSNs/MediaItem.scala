@@ -14,11 +14,6 @@ class MediaItem protected () extends js.Object {
   		 * @url: The URL pointing to the media item information.
   		 * */
   def this(`type`: java.lang.String) = this()
-  /**
-  		 * Creates a new MediaItem object from the information stored in the URL location.
-  		 * @type: Valid values are: audio, video. Defaults to video.
-  		 * @url: The URL pointing to the media item information.
-  		 * */
   def this(`type`: java.lang.String, url: java.lang.String) = this()
   /** The URL path to the artwork that accompanies the media item. */
   var artworkImageURL: java.lang.String = js.native

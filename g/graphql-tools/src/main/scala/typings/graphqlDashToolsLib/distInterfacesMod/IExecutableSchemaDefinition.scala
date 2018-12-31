@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IExecutableSchemaDefinition[TContext] extends js.Object {
   var allowUndefinedInResolve: js.UndefOr[scala.Boolean] = js.undefined
   var connectors: js.UndefOr[IConnectors[TContext]] = js.undefined

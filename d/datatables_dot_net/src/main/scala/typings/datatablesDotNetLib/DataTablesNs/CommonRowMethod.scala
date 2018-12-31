@@ -10,16 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait CommonRowMethod extends CommonSubMethods {
   /**
-           * Obtain the th / td nodes for the selected column
-           *
-           * @param source Data source to read the new data from. Values: 'auto', 'data', 'dom'
-           */
+    * Obtain the th / td nodes for the selected column
+    *
+    * @param source Data source to read the new data from. Values: 'auto', 'data', 'dom'
+    */
   def invalidate(): Api = js.native
-  /**
-           * Obtain the th / td nodes for the selected column
-           *
-           * @param source Data source to read the new data from. Values: 'auto', 'data', 'dom'
-           */
   def invalidate(source: java.lang.String): Api = js.native
 }
 

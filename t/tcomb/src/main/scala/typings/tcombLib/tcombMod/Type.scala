@@ -14,6 +14,6 @@ trait Type[T]
   var meta: tcombLib.Anon_KindIdentityNameString = js.native
   var t: T = js.native
   def apply(value: T): T = js.native
-  def is(x: js.Any): /* is T */scala.Boolean = js.native
+  def is(x: js.Any): /* is T */ scala.Boolean = js.native
 }
 

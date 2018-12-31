@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JInfoMap extends js.Object {
   var myAppKey: java.lang.String
   var myDeviceId: java.lang.String

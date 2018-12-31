@@ -20,32 +20,32 @@ trait ModuleDepsObject
     cb: js.Function3[/* a */ js.Any, /* b */ js.Any, /* c */ js.UndefOr[js.Any], _]
   ): scala.Unit = js.native
   /**
-           * Every time a file is read, this event fires with the file path.
-           */
+    * Every time a file is read, this event fires with the file path.
+    */
   @JSName("on")
   def on_file(
     event: moduleDashDepsLib.moduleDashDepsLibStrings.file,
     listener: js.Function2[/* file */ java.lang.String, /* id */ java.lang.String, _]
   ): this.type = js.native
   /**
-           * When opts.ignoreMissing is enabled, this event fires for each missing package.
-           */
+    * When opts.ignoreMissing is enabled, this event fires for each missing package.
+    */
   @JSName("on")
   def on_missing(
     event: moduleDashDepsLib.moduleDashDepsLibStrings.missing,
     listener: js.Function2[/* id */ java.lang.String, /* parent */ moduleDashDepsLib.Anon_Prop, _]
   ): this.type = js.native
   /**
-           * Every time a package is read, this event fires. The directory name of the package is available in pkg.__dirname.
-           */
+    * Every time a package is read, this event fires. The directory name of the package is available in pkg.__dirname.
+    */
   @JSName("on")
   def on_package(
     event: moduleDashDepsLib.moduleDashDepsLibStrings.PACKAGE,
     listener: js.Function1[/* package */ PackageObject, _]
   ): this.type = js.native
   /**
-           * Every time a transform is applied to a file, a 'transform' event fires with the instantiated transform stream tr.
-           */
+    * Every time a transform is applied to a file, a 'transform' event fires with the instantiated transform stream tr.
+    */
   @JSName("on")
   def on_transform(
     event: moduleDashDepsLib.moduleDashDepsLibStrings.transform,

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait CustomFunctionType extends js.Object
 
 /**
-     * [Api set: CustomFunctions 1.1]
-     * @beta
-     */
+  * [Api set: CustomFunctions 1.1]
+  * @beta
+  */
 @JSGlobal("Excel.CustomFunctionType")
 @js.native
 object CustomFunctionType extends js.Object {

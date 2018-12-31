@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Time extends ReqlType {
   @JSName("$reql_type$")
   var $reql_type$_Time: rethinkdbLib.rethinkdbLibStrings.TIME

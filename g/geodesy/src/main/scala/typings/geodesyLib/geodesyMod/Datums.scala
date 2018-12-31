@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Datums extends js.Object {
   var ED50: Datum
   var Irl1975: Datum

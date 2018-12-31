@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaImage extends js.Object {
   // Specify the MediaImage object’s sizes. It follows the spec of sizes attribute in HTML link element.
   var sizes: js.UndefOr[java.lang.String] = js.undefined

@@ -20,10 +20,6 @@ object createDashElementMod extends js.Object {
     for which the common denominator is Element (not HTMLElement).
     */
   def apply(vnode: virtualDashDomLib.VirtualDOMNs.VText): stdLib.Text = js.native
-  /**
-    create() calls either document.createElement() or document.createElementNS(),
-    for which the common denominator is Element (not HTMLElement).
-    */
   def apply(vnode: virtualDashDomLib.VirtualDOMNs.VText, opts: virtualDashDomLib.Anon_Warn): stdLib.Text = js.native
 }
 

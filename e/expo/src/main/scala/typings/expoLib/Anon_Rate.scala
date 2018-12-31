@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Rate extends js.Object {
   var androidImplementation: js.UndefOr[java.lang.String] = js.undefined
   /** True exactly once when the track plays to finish. */

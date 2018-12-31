@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * 关闭WebSocket连接。
 	 */
-
 trait CloseSocketOptions
   extends BaseOptions[js.Any, js.Any] {
   var code: js.UndefOr[scala.Double] = js.undefined

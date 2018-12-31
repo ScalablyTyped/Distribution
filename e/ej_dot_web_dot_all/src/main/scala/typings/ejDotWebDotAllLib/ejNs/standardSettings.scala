@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait standardSettings extends js.Object {
   var AM: js.Array[java.lang.String]
   var PM: js.Array[java.lang.String]

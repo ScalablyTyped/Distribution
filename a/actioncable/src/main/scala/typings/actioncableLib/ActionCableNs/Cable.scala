@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Cable extends js.Object {
   var subscriptions: Subscriptions
   def connect(): scala.Unit

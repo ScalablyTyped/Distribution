@@ -27,9 +27,7 @@ trait horseman extends js.Object {
   def closeTab(tabNumber: java.lang.String): this.type = js.native
   /** Get the cookies from Phantom. */
   def cookies(): java.lang.String = js.native
-  /** Set the cookies for Phantom. */
   def cookies(args: java.lang.String): this.type = js.native
-  /** Set the cookies for Phantom. */
   def cookies(args: js.Array[js.Object]): this.type = js.native
   /** Set the cookies for Phantom. */
   def cookies(args: js.Object): this.type = js.native
@@ -37,11 +35,9 @@ trait horseman extends js.Object {
   def count(selector: java.lang.String): scala.Double = js.native
   /** Save a cropped screenshot to disk. */
   def crop(area: java.lang.String, path: java.lang.String): this.type = js.native
-  /** Save a cropped screenshot to disk. */
   def crop(area: js.Object, path: java.lang.String): this.type = js.native
   /** Take a base64 encoded cropped screenshot. */
   def cropBase64(area: java.lang.String, `type`: java.lang.String): js.Any = js.native
-  /** Take a base64 encoded cropped screenshot. */
   @JSName("cropBase64")
   def cropBase64_PNG(area: java.lang.String, `type`: nodeDashHorsemanLib.nodeDashHorsemanLibStrings.PNG): js.Any = js.native
   /** Get the value of an css property of a selector. */
@@ -58,7 +54,6 @@ trait horseman extends js.Object {
   ): this.type = js.native
   /** Run a javascript function on the current page and optionally return the results. */
   def evaluate(fn: js.Function0[scala.Unit]): this.type = js.native
-  /** Run a javascript function on the current page and optionally return the results. */
   def evaluate(fn: js.Function0[scala.Unit], args: js.Array[_]): this.type = js.native
   /** Determine if the selector exists, at least once, on the page. */
   def exists(selector: java.lang.String): scala.Boolean = js.native
@@ -76,9 +71,7 @@ trait horseman extends js.Object {
   def height(selector: java.lang.String): scala.Double = js.native
   /** Get the HTML for the page, or optionally for a selector. */
   def html(): js.Promise[java.lang.String] = js.native
-  /** Get the HTML for the page, or optionally for a selector. */
   def html(selector: java.lang.String): js.Promise[java.lang.String] = js.native
-  /** Get the HTML for the page, or optionally for a selector. */
   def html(selector: java.lang.String, file: java.lang.String): js.Promise[java.lang.String] = js.native
   /** Includes javascript script from a url on the page. */
   def includeJs(url: java.lang.String): this.type = js.native
@@ -86,267 +79,88 @@ trait horseman extends js.Object {
   def injectJs(file: java.lang.String): this.type = js.native
   /** Fire a key event. */
   def keyboardEvent(): this.type = js.native
-  /** Fire a key event. */
   def keyboardEvent(`type`: java.lang.String): this.type = js.native
-  /** Fire a key event. */
   def keyboardEvent(`type`: java.lang.String, key: java.lang.String): this.type = js.native
-  /** Fire a key event. */
   def keyboardEvent(`type`: java.lang.String, key: java.lang.String, modifier: scala.Double): this.type = js.native
   /** Log the output from either a previous chain method, or a string the user passed in. */
   def log(): this.type = js.native
-  /** Log the output from either a previous chain method, or a string the user passed in. */
   def log(output: java.lang.String): this.type = js.native
   /** Run javascript on the page. */
   def manipulate(fn: js.Function0[scala.Unit]): this.type = js.native
-  /** Run javascript on the page. */
   def manipulate(fn: js.Function0[scala.Unit], args: js.Array[_]): this.type = js.native
   /** Fire a mouse event. */
   def mouseEvent(): this.type = js.native
-  /** Fire a mouse event. */
   def mouseEvent(`type`: java.lang.String): this.type = js.native
-  /** Fire a mouse event. */
   def mouseEvent(`type`: java.lang.String, x: scala.Double): this.type = js.native
-  /** Fire a mouse event. */
   def mouseEvent(`type`: java.lang.String, x: scala.Double, y: scala.Double): this.type = js.native
-  /** Fire a mouse event. */
   def mouseEvent(`type`: java.lang.String, x: scala.Double, y: scala.Double, button: java.lang.String): this.type = js.native
   /**
-       * Handles page events.
-       * eventType can be one of:
-       *  initialized - callback()
-       *  loadStarted - callback()
-       *  loadFinished - callback(status)
-       *  tabCreated - callback(tabNum, tab)
-       *  tabClosed - callback(tabNum, tab)
-       *  urlChanged - callback(targetUrl)
-       *  navigationRequested - callback(url, type, willNavigate, main)
-       *  resourceRequested - callback(requestData, networkRequest)
-       *  resourceReceived - callback(response)
-       *  pageCreated - callback(newPage)
-       *  consoleMessage(msg, lineNum, sourceId)
-       *  alert - callback(msg)
-       *  confirm - callback(msg)
-       *  prompt - callback(msg, defaultVal)
-       *  filePicker - callback(oldFile)
-       *  error - callback(msg, trace);
-       *  timeout - callback(type)
-       */
-  def on(event: java.lang.String, func: js.Function1[/* repeated */js.Any, scala.Unit]): this.type = js.native
-  /**
-       * Handles page events.
-       * eventType can be one of:
-       *  initialized - callback()
-       *  loadStarted - callback()
-       *  loadFinished - callback(status)
-       *  tabCreated - callback(tabNum, tab)
-       *  tabClosed - callback(tabNum, tab)
-       *  urlChanged - callback(targetUrl)
-       *  navigationRequested - callback(url, type, willNavigate, main)
-       *  resourceRequested - callback(requestData, networkRequest)
-       *  resourceReceived - callback(response)
-       *  pageCreated - callback(newPage)
-       *  consoleMessage(msg, lineNum, sourceId)
-       *  alert - callback(msg)
-       *  confirm - callback(msg)
-       *  prompt - callback(msg, defaultVal)
-       *  filePicker - callback(oldFile)
-       *  error - callback(msg, trace);
-       *  timeout - callback(type)
-       */
+    * Handles page events.
+    * eventType can be one of:
+    *  initialized - callback()
+    *  loadStarted - callback()
+    *  loadFinished - callback(status)
+    *  tabCreated - callback(tabNum, tab)
+    *  tabClosed - callback(tabNum, tab)
+    *  urlChanged - callback(targetUrl)
+    *  navigationRequested - callback(url, type, willNavigate, main)
+    *  resourceRequested - callback(requestData, networkRequest)
+    *  resourceReceived - callback(response)
+    *  pageCreated - callback(newPage)
+    *  consoleMessage(msg, lineNum, sourceId)
+    *  alert - callback(msg)
+    *  confirm - callback(msg)
+    *  prompt - callback(msg, defaultVal)
+    *  filePicker - callback(oldFile)
+    *  error - callback(msg, trace);
+    *  timeout - callback(type)
+    */
+  def on(event: java.lang.String, func: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   @JSName("on")
   def on_loadFinished(
     event: nodeDashHorsemanLib.nodeDashHorsemanLibStrings.loadFinished,
-    func: js.Function1[/* repeated */js.Any, scala.Unit]
+    func: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
-  /**
-       * Handles page events.
-       * eventType can be one of:
-       *  initialized - callback()
-       *  loadStarted - callback()
-       *  loadFinished - callback(status)
-       *  tabCreated - callback(tabNum, tab)
-       *  tabClosed - callback(tabNum, tab)
-       *  urlChanged - callback(targetUrl)
-       *  navigationRequested - callback(url, type, willNavigate, main)
-       *  resourceRequested - callback(requestData, networkRequest)
-       *  resourceReceived - callback(response)
-       *  pageCreated - callback(newPage)
-       *  consoleMessage(msg, lineNum, sourceId)
-       *  alert - callback(msg)
-       *  confirm - callback(msg)
-       *  prompt - callback(msg, defaultVal)
-       *  filePicker - callback(oldFile)
-       *  error - callback(msg, trace);
-       *  timeout - callback(type)
-       */
   @JSName("on")
   def on_pageCreated(
     event: nodeDashHorsemanLib.nodeDashHorsemanLibStrings.pageCreated,
-    func: js.Function1[/* repeated */js.Any, scala.Unit]
+    func: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
-  /**
-       * Handles page events.
-       * eventType can be one of:
-       *  initialized - callback()
-       *  loadStarted - callback()
-       *  loadFinished - callback(status)
-       *  tabCreated - callback(tabNum, tab)
-       *  tabClosed - callback(tabNum, tab)
-       *  urlChanged - callback(targetUrl)
-       *  navigationRequested - callback(url, type, willNavigate, main)
-       *  resourceRequested - callback(requestData, networkRequest)
-       *  resourceReceived - callback(response)
-       *  pageCreated - callback(newPage)
-       *  consoleMessage(msg, lineNum, sourceId)
-       *  alert - callback(msg)
-       *  confirm - callback(msg)
-       *  prompt - callback(msg, defaultVal)
-       *  filePicker - callback(oldFile)
-       *  error - callback(msg, trace);
-       *  timeout - callback(type)
-       */
   @JSName("on")
   def on_resourceReceived(
     event: nodeDashHorsemanLib.nodeDashHorsemanLibStrings.resourceReceived,
-    func: js.Function1[/* repeated */js.Any, scala.Unit]
+    func: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
-  /**
-       * Handles page events.
-       * eventType can be one of:
-       *  initialized - callback()
-       *  loadStarted - callback()
-       *  loadFinished - callback(status)
-       *  tabCreated - callback(tabNum, tab)
-       *  tabClosed - callback(tabNum, tab)
-       *  urlChanged - callback(targetUrl)
-       *  navigationRequested - callback(url, type, willNavigate, main)
-       *  resourceRequested - callback(requestData, networkRequest)
-       *  resourceReceived - callback(response)
-       *  pageCreated - callback(newPage)
-       *  consoleMessage(msg, lineNum, sourceId)
-       *  alert - callback(msg)
-       *  confirm - callback(msg)
-       *  prompt - callback(msg, defaultVal)
-       *  filePicker - callback(oldFile)
-       *  error - callback(msg, trace);
-       *  timeout - callback(type)
-       */
   @JSName("on")
   def on_resourceTimeout(
     event: nodeDashHorsemanLib.nodeDashHorsemanLibStrings.resourceTimeout,
-    func: js.Function1[/* repeated */js.Any, scala.Unit]
+    func: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
-  /**
-       * Handles page events.
-       * eventType can be one of:
-       *  initialized - callback()
-       *  loadStarted - callback()
-       *  loadFinished - callback(status)
-       *  tabCreated - callback(tabNum, tab)
-       *  tabClosed - callback(tabNum, tab)
-       *  urlChanged - callback(targetUrl)
-       *  navigationRequested - callback(url, type, willNavigate, main)
-       *  resourceRequested - callback(requestData, networkRequest)
-       *  resourceReceived - callback(response)
-       *  pageCreated - callback(newPage)
-       *  consoleMessage(msg, lineNum, sourceId)
-       *  alert - callback(msg)
-       *  confirm - callback(msg)
-       *  prompt - callback(msg, defaultVal)
-       *  filePicker - callback(oldFile)
-       *  error - callback(msg, trace);
-       *  timeout - callback(type)
-       */
   @JSName("on")
   def on_tabClosed(
     event: nodeDashHorsemanLib.nodeDashHorsemanLibStrings.tabClosed,
-    func: js.Function1[/* repeated */js.Any, scala.Unit]
+    func: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
-  /**
-       * Handles page events.
-       * eventType can be one of:
-       *  initialized - callback()
-       *  loadStarted - callback()
-       *  loadFinished - callback(status)
-       *  tabCreated - callback(tabNum, tab)
-       *  tabClosed - callback(tabNum, tab)
-       *  urlChanged - callback(targetUrl)
-       *  navigationRequested - callback(url, type, willNavigate, main)
-       *  resourceRequested - callback(requestData, networkRequest)
-       *  resourceReceived - callback(response)
-       *  pageCreated - callback(newPage)
-       *  consoleMessage(msg, lineNum, sourceId)
-       *  alert - callback(msg)
-       *  confirm - callback(msg)
-       *  prompt - callback(msg, defaultVal)
-       *  filePicker - callback(oldFile)
-       *  error - callback(msg, trace);
-       *  timeout - callback(type)
-       */
   @JSName("on")
   def on_tabCreated(
     event: nodeDashHorsemanLib.nodeDashHorsemanLibStrings.tabCreated,
-    func: js.Function1[/* repeated */js.Any, scala.Unit]
+    func: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
-  /**
-       * Handles page events.
-       * eventType can be one of:
-       *  initialized - callback()
-       *  loadStarted - callback()
-       *  loadFinished - callback(status)
-       *  tabCreated - callback(tabNum, tab)
-       *  tabClosed - callback(tabNum, tab)
-       *  urlChanged - callback(targetUrl)
-       *  navigationRequested - callback(url, type, willNavigate, main)
-       *  resourceRequested - callback(requestData, networkRequest)
-       *  resourceReceived - callback(response)
-       *  pageCreated - callback(newPage)
-       *  consoleMessage(msg, lineNum, sourceId)
-       *  alert - callback(msg)
-       *  confirm - callback(msg)
-       *  prompt - callback(msg, defaultVal)
-       *  filePicker - callback(oldFile)
-       *  error - callback(msg, trace);
-       *  timeout - callback(type)
-       */
   @JSName("on")
   def on_timeout(
     event: nodeDashHorsemanLib.nodeDashHorsemanLibStrings.timeout,
-    func: js.Function1[/* repeated */js.Any, scala.Unit]
+    func: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
-  /**
-       * Handles page events.
-       * eventType can be one of:
-       *  initialized - callback()
-       *  loadStarted - callback()
-       *  loadFinished - callback(status)
-       *  tabCreated - callback(tabNum, tab)
-       *  tabClosed - callback(tabNum, tab)
-       *  urlChanged - callback(targetUrl)
-       *  navigationRequested - callback(url, type, willNavigate, main)
-       *  resourceRequested - callback(requestData, networkRequest)
-       *  resourceReceived - callback(response)
-       *  pageCreated - callback(newPage)
-       *  consoleMessage(msg, lineNum, sourceId)
-       *  alert - callback(msg)
-       *  confirm - callback(msg)
-       *  prompt - callback(msg, defaultVal)
-       *  filePicker - callback(oldFile)
-       *  error - callback(msg, trace);
-       *  timeout - callback(type)
-       */
   @JSName("on")
   def on_urlChanged(
     event: nodeDashHorsemanLib.nodeDashHorsemanLibStrings.urlChanged,
-    func: js.Function1[/* repeated */js.Any, scala.Unit]
+    func: js.Function1[/* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
   /** Open a url in Phantom. */
   def open(url: java.lang.String): this.type = js.native
-  /** Open a url in Phantom. */
   def open(url: java.lang.String, method: java.lang.String): this.type = js.native
   /** Open URL in a new tab */
   def openTab(url: java.lang.String): this.type = js.native
-  /** Open a url in Phantom. */
   @JSName("open")
   def open_GET(url: java.lang.String, method: nodeDashHorsemanLib.nodeDashHorsemanLibStrings.GET): this.type = js.native
   def pageMaker(url: js.Any, _page: js.Any, args: js.Any*): js.Any = js.native
@@ -364,7 +178,6 @@ trait horseman extends js.Object {
   def screenshot(path: java.lang.String): this.type = js.native
   /** Take a base64 encoded screenshot, e.g., PNG. */
   def screenshotBase64(`type`: java.lang.String): js.Any = js.native
-  /** Take a base64 encoded screenshot, e.g., PNG. */
   @JSName("screenshotBase64")
   def screenshotBase64_PNG(`type`: nodeDashHorsemanLib.nodeDashHorsemanLibStrings.PNG): js.Any = js.native
   /** Scroll to a position on the page. */
@@ -383,13 +196,11 @@ trait horseman extends js.Object {
   def status(): java.lang.String = js.native
   /** Switch to a child frame. */
   def switchToChildFrame(nameOrPosition: java.lang.String): this.type = js.native
-  /** Switch to a child frame. */
   def switchToChildFrame(nameOrPosition: scala.Double): this.type = js.native
   /** Switch to the focused frame. */
   def switchToFocusedFrame(): this.type = js.native
   /** Switch to a frame inside the current frame. */
   def switchToFrame(nameOrPosition: java.lang.String): this.type = js.native
-  /** Switch to a frame inside the current frame. */
   def switchToFrame(nameOrPosition: scala.Double): this.type = js.native
   /** Switch to the main frame. */
   def switchToMainFrame(): this.type = js.native
@@ -401,13 +212,11 @@ trait horseman extends js.Object {
   def tabCount(): scala.Double = js.native
   /** Get the text for the body of the page, or optionally for a selector. */
   def text(): java.lang.String = js.native
-  /** Get the text for the body of the page, or optionally for a selector. */
   def text(selector: java.lang.String): java.lang.String = js.native
   /** Get the title of the current page. */
   def title(): java.lang.String = js.native
   /** Simulate a keypress on a selector */
   def `type`(selector: java.lang.String, text: java.lang.String): this.type = js.native
-  /** Simulate a keypress on a selector */
   def `type`(selector: java.lang.String, text: java.lang.String, options: js.Object): this.type = js.native
   /** Upload a file to the page. */
   def upload(selector: java.lang.String, file: java.lang.String): this.type = js.native
@@ -431,7 +240,6 @@ trait horseman extends js.Object {
   def waitFor(args: js.Any*): this.type = js.native
   /** Wait for a page load to occur */
   def waitForNextPage(): this.type = js.native
-  /** Wait for a page load to occur */
   def waitForNextPage(`object`: js.Object): this.type = js.native
   /** Wait for a selector to be present on the current page. */
   def waitForSelector(selector: java.lang.String, options: js.Object): this.type = js.native

@@ -23,8 +23,8 @@ class ProtractorBrowser protected ()
 @js.native
 object ProtractorBrowser extends js.Object {
   /**
-       * @type {ProtractorBy}
-       */
+    * @type {ProtractorBy}
+    */
   var By: protractorLib.builtLocatorsMod.ProtractorBy = js.native
 }
 

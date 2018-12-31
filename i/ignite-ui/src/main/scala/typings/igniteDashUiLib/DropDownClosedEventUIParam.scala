@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DropDownClosedEventUIParam extends js.Object {
   /**
   	 * Used to obtain reference to jquery DOM element which represents drop down list container.

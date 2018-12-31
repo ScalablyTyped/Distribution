@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Auth0UserProfile extends js.Object {
   var app_metadata: js.UndefOr[js.Any] = js.undefined
   var clientID: java.lang.String

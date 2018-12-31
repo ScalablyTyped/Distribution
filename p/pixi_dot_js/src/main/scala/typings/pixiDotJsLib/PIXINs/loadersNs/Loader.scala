@@ -40,77 +40,52 @@ class Loader ()
   /* protected */ def _prepareUrl(url: java.lang.String): java.lang.String = js.native
   //tslint:disable-next-line:ban-types forbidden-types
   def add(name: java.lang.String, url: java.lang.String): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def add(name: java.lang.String, url: java.lang.String, options: LoaderOptions): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def add(name: java.lang.String, url: java.lang.String, options: LoaderOptions, cb: js.Function): this.type = js.native
   //tslint:disable-next-line:ban-types forbidden-types
   def add(obj: java.lang.String): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def add(obj: java.lang.String, options: LoaderOptions): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def add(obj: java.lang.String, options: LoaderOptions, cb: js.Function): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def add(obj: js.Any): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def add(obj: js.Any, options: LoaderOptions): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def add(obj: js.Any, options: LoaderOptions, cb: js.Function): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def add(obj: js.Array[_]): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def add(obj: js.Array[_], options: LoaderOptions): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def add(obj: js.Array[_], options: LoaderOptions, cb: js.Function): this.type = js.native
   def add(params: js.Any*): this.type = js.native
   def destroy(): scala.Unit = js.native
   //tslint:disable-next-line:ban-types forbidden-types
   def load(): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def load(cb: js.Function): this.type = js.native
   //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_complete(event: pixiDotJsLib.pixiDotJsLibStrings.complete): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_complete(event: pixiDotJsLib.pixiDotJsLibStrings.complete, fn: js.Function): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_complete(event: pixiDotJsLib.pixiDotJsLibStrings.complete, fn: js.Function, context: js.Any): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_error(event: pixiDotJsLib.pixiDotJsLibStrings.error): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_error(event: pixiDotJsLib.pixiDotJsLibStrings.error, fn: js.Function): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_error(event: pixiDotJsLib.pixiDotJsLibStrings.error, fn: js.Function, context: js.Any): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_load(event: pixiDotJsLib.pixiDotJsLibStrings.load): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_load(event: pixiDotJsLib.pixiDotJsLibStrings.load, fn: js.Function): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_load(event: pixiDotJsLib.pixiDotJsLibStrings.load, fn: js.Function, context: js.Any): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_progress(event: pixiDotJsLib.pixiDotJsLibStrings.progress): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_progress(event: pixiDotJsLib.pixiDotJsLibStrings.progress, fn: js.Function): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_progress(event: pixiDotJsLib.pixiDotJsLibStrings.progress, fn: js.Function, context: js.Any): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_start(event: pixiDotJsLib.pixiDotJsLibStrings.start): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_start(event: pixiDotJsLib.pixiDotJsLibStrings.start, fn: js.Function): this.type = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   @JSName("off")
   def off_start(event: pixiDotJsLib.pixiDotJsLibStrings.start, fn: js.Function, context: js.Any): this.type = js.native
   // depreciation
@@ -119,7 +94,6 @@ class Loader ()
     event: pixiDotJsLib.pixiDotJsLibStrings.complete,
     fn: js.Function2[/* loader */ this.type, /* object */ js.Any, scala.Unit]
   ): this.type = js.native
-  // depreciation
   @JSName("on")
   def on_complete(
     event: pixiDotJsLib.pixiDotJsLibStrings.complete,

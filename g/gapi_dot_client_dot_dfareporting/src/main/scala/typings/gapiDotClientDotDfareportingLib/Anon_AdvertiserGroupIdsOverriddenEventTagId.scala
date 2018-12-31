@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AdvertiserGroupIdsOverriddenEventTagId extends js.Object {
   /** Select only campaigns whose advertisers belong to these advertiser groups. */
   var advertiserGroupIds: js.UndefOr[java.lang.String] = js.undefined
@@ -38,15 +37,15 @@ trait Anon_AdvertiserGroupIdsOverriddenEventTagId extends js.Object {
   /** User profile ID associated with this request. */
   var profileId: java.lang.String
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Allows searching for campaigns by name or ID. Wildcards (&#42;) are allowed. For example, "campaign&#42;2015" will return campaigns with names like "campaign
-                   * June 2015", "campaign April 2015", or simply "campaign 2015". Most of the searches also add wildcards implicitly at the start and the end of the search
-                   * string. For example, a search string of "campaign" will match campaigns with name "my campaign", "campaign 2015", or simply "campaign".
-                   */
+    * Allows searching for campaigns by name or ID. Wildcards (&#42;) are allowed. For example, "campaign&#42;2015" will return campaigns with names like "campaign
+    * June 2015", "campaign April 2015", or simply "campaign 2015". Most of the searches also add wildcards implicitly at the start and the end of the search
+    * string. For example, a search string of "campaign" will match campaigns with name "my campaign", "campaign 2015", or simply "campaign".
+    */
   var searchString: js.UndefOr[java.lang.String] = js.undefined
   /** Field by which to sort the list. */
   var sortField: js.UndefOr[java.lang.String] = js.undefined

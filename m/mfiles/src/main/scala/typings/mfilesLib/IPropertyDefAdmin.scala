@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPropertyDefAdmin extends js.Object {
   var AllowAutomaticPermissions: scala.Boolean
   var AutomaticValue: IAutomaticValue

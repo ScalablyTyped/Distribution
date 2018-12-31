@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ViewportProps extends js.Object {
   var altitude: scala.Double
   var bearing: scala.Double

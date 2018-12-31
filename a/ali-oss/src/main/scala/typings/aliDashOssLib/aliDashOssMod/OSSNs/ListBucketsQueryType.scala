@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // parameters type
-
 trait ListBucketsQueryType extends js.Object {
    // search buckets using prefix key
   var marker: js.UndefOr[java.lang.String] = js.undefined

@@ -14,19 +14,19 @@ class Rectangle () extends js.Object {
   def this(left: scala.Double, right: scala.Double, top: scala.Double, bottom: scala.Double) = this()
   var bottom: scala.Double = js.native
   /**
-       * Calculated automatically by subtracting the bottom from top.
-       */
+    * Calculated automatically by subtracting the bottom from top.
+    */
   val height: scala.Double = js.native
   var left: scala.Double = js.native
   var right: scala.Double = js.native
   var top: scala.Double = js.native
   /**
-       * Calculated automatically by subtracting the right from left
-       */
+    * Calculated automatically by subtracting the right from left
+    */
   val width: scala.Double = js.native
   /**
-       * Tests if another rect is approximately equal to this rect (within 4 decimal places.)
-       */
+    * Tests if another rect is approximately equal to this rect (within 4 decimal places.)
+    */
   def equals(rect: Rectangle): scala.Boolean = js.native
 }
 

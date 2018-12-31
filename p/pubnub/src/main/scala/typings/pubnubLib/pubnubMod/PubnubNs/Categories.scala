@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Categories extends js.Object {
   var PNAccessDeniedCategory: java.lang.String
   var PNBadRequestCategory: java.lang.String

@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 class AccessScope protected () extends Expression {
   def this(name: java.lang.String, ancestor: scala.Double) = this()
   /**
-     * The number of hops up the scope tree.
-     */
+    * The number of hops up the scope tree.
+    */
   var ancestor: scala.Double = js.native
   /**
-     * The property name.
-     */
+    * The property name.
+    */
   var name: java.lang.String = js.native
 }
 

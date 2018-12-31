@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Container_BeforeDropOrPaste_Parameter extends js.Object {
   val Action: activexDashMsformsLib.MSFormsNs.fmAction
   val Cancel: activexDashMsformsLib.MSFormsNs.ReturnBoolean

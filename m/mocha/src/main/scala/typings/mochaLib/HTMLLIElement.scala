@@ -11,6 +11,5 @@ import scala.scalajs.js.annotation._
 // Required by Mocha.reporters.HTML.
 // NOTE: Mocha *must not* have a direct dependency on DOM types.
 // tslint:disable-next-line no-empty-interface
-
 trait HTMLLIElement extends js.Object
 

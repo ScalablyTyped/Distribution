@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a 3D Manufacturing Format (3MF) component. Acts as a container of other components. */
 @JSGlobal("Windows.Graphics.Printing3D.Printing3DComponent")
 @js.native
+/** Creates an instance of the Printing3DComponent class. */
 class Printing3DComponent () extends js.Object {
   /** Gets the other components contained within the component. */
   var components: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[Printing3DComponentWithMatrix] = js.native

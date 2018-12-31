@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrderPaymentMethod extends js.Object {
   /** The billing address. */
   var billingAddress: js.UndefOr[OrderAddress] = js.undefined
@@ -18,17 +17,17 @@ trait OrderPaymentMethod extends js.Object {
   /** The billing phone number. */
   var phoneNumber: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The type of instrument.
-               *
-               * Acceptable values are:
-               * - "AMEX"
-               * - "DISCOVER"
-               * - "JCB"
-               * - "MASTERCARD"
-               * - "UNIONPAY"
-               * - "VISA"
-               * - ""
-               */
+    * The type of instrument.
+    *
+    * Acceptable values are:
+    * - "AMEX"
+    * - "DISCOVER"
+    * - "JCB"
+    * - "MASTERCARD"
+    * - "UNIONPAY"
+    * - "VISA"
+    * - ""
+    */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GanttColumn extends js.Object {
   var editable: js.UndefOr[scala.Boolean] = js.undefined
   var field: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Parser extends js.Object {
   var astFormat: java.lang.String
   var hasPragma: js.UndefOr[js.Function1[/* text */ java.lang.String, scala.Boolean]] = js.undefined

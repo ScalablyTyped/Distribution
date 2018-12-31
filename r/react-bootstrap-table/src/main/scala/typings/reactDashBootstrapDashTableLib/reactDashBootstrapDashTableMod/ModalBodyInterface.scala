@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModalBodyInterface[TRow /* <: js.Object */] extends js.Object {
   /**
   	 * The required getFieldValue method that must be implemented on a customized insert modal body that returns the

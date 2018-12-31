@@ -9,18 +9,18 @@ import scala.scalajs.js.annotation._
 @js.native
 object libAddressparserModMembers extends js.Object {
   /**
-   * Parses structured e-mail addresses from an address field
-   *
-   * Example:
-   *
-   *    'Name <address@domain>'
-   *
-   * will be converted to
-   *
-   *     [{name: 'Name', address: 'address@domain'}]
-   *
-   * @return An array of address objects
-   */
+    * Parses structured e-mail addresses from an address field
+    *
+    * Example:
+    *
+    *    'Name <address@domain>'
+    *
+    * will be converted to
+    *
+    *     [{name: 'Name', address: 'address@domain'}]
+    *
+    * @return An array of address objects
+    */
   def apply(address: java.lang.String): js.Array[nodemailerLib.libAddressparserMod.addressparserNs.Address] = js.native
 }
 

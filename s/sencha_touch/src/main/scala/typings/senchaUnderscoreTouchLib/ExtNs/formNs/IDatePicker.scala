@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDatePicker
   extends senchaUnderscoreTouchLib.ExtNs.fieldNs.ISelect {
   /** [Config Option] (String) */

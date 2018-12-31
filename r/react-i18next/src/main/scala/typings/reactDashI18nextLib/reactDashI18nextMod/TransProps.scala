@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransProps extends js.Object {
   var components: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
   var count: js.UndefOr[scala.Double] = js.undefined

@@ -28,7 +28,6 @@ class SAXXMLReader60 protected () extends js.Object {
   def getProperty(strName: java.lang.String): js.Any = js.native
   /** Parse an XML document. */
   def parse(): scala.Unit = js.native
-  /** Parse an XML document. */
   def parse(varInput: js.Any): scala.Unit = js.native
   /** Parse an XML document from a system identifier (URI). */
   def parseURL(strURL: java.lang.String): scala.Unit = js.native

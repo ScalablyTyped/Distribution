@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CollapsibleColumns extends Base {
   var buttonEnabledList: js.Object
   var collapsedSections: js.Object

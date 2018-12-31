@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched after call was disconnected
 		*/
-
 trait Disconnected extends js.Object {
   /**
   			*	Call that dispatched the event

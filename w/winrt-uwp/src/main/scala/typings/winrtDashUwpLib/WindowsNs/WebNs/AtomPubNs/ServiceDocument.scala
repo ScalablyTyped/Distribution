@@ -26,10 +26,10 @@ abstract class ServiceDocument () extends js.Object {
   /** Gets the collection of app:workspace elements in the service document. */
   var workspaces: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[Workspace] = js.native
   /**
-                   * Generates the DOM object that represents this element, and all the attributes and child elements including foreign markups.
-                   * @param format The format of the element. The only formats accepted by this method are Atom 1.0 and RSS 2.0.
-                   * @return The XML document.
-                   */
+    * Generates the DOM object that represents this element, and all the attributes and child elements including foreign markups.
+    * @param format The format of the element. The only formats accepted by this method are Atom 1.0 and RSS 2.0.
+    * @return The XML document.
+    */
   def getXmlDocument(format: winrtDashUwpLib.WindowsNs.WebNs.SyndicationNs.SyndicationFormat): winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument = js.native
 }
 

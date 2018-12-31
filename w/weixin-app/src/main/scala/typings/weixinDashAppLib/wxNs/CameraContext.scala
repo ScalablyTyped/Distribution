@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CameraContext extends js.Object {
   /** 开始录像 */
   def startRecord(options: StartRecordOptions): scala.Unit

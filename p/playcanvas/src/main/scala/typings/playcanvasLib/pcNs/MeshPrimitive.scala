@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MeshPrimitive extends js.Object {
   var base: scala.Double
   var count: scala.Double

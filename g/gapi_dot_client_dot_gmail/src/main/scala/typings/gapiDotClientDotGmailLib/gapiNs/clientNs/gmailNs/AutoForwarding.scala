@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AutoForwarding extends js.Object {
   /** The state that a message should be left in after it has been forwarded. */
   var disposition: js.UndefOr[java.lang.String] = js.undefined

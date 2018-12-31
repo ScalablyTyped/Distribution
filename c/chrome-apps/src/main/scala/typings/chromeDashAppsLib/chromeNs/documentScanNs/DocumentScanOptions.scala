@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DocumentScanOptions extends js.Object {
   /** The number of scanned images allowed (defaults to 1).  */
   var maxImages: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined

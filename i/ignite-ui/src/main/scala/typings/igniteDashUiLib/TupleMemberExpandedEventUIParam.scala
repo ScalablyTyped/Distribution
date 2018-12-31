@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TupleMemberExpandedEventUIParam extends js.Object {
   /**
   	 * Gets the name of axis, which holds the member and the tuple.

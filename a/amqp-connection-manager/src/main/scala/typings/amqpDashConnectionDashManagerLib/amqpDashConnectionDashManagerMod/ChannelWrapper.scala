@@ -14,11 +14,6 @@ trait ChannelWrapper
   	 * @param allUpTo
   	 */
   def ack(message: amqplibLib.propertiesMod.Message): scala.Unit = js.native
-  /**
-  	 * @see amqplib
-  	 * @param message
-  	 * @param allUpTo
-  	 */
   def ack(message: amqplibLib.propertiesMod.Message, allUpTo: scala.Boolean): scala.Unit = js.native
   @JSName("addListener")
   def addListener_close(
@@ -61,19 +56,7 @@ trait ChannelWrapper
   	 * @param requeue
   	 */
   def nack(message: amqplibLib.propertiesMod.Message): scala.Unit = js.native
-  /**
-  	 * @see amqplib
-  	 * @param message
-  	 * @param allUpTo
-  	 * @param requeue
-  	 */
   def nack(message: amqplibLib.propertiesMod.Message, allUpTo: scala.Boolean): scala.Unit = js.native
-  /**
-  	 * @see amqplib
-  	 * @param message
-  	 * @param allUpTo
-  	 * @param requeue
-  	 */
   def nack(message: amqplibLib.propertiesMod.Message, allUpTo: scala.Boolean, requeue: scala.Boolean): scala.Unit = js.native
   @JSName("on")
   def on_close(
@@ -160,28 +143,12 @@ trait ChannelWrapper
   	 * @param callback
   	 */
   def publish(exchange: java.lang.String, routingKey: java.lang.String, content: nodeLib.Buffer): js.Promise[scala.Unit] = js.native
-  /**
-  	 * @see amqplib
-  	 * @param exchange
-  	 * @param routingKey
-  	 * @param content
-  	 * @param options
-  	 * @param callback
-  	 */
   def publish(
     exchange: java.lang.String,
     routingKey: java.lang.String,
     content: nodeLib.Buffer,
     options: amqplibLib.propertiesMod.OptionsNs.Publish
   ): js.Promise[scala.Unit] = js.native
-  /**
-  	 * @see amqplib
-  	 * @param exchange
-  	 * @param routingKey
-  	 * @param content
-  	 * @param options
-  	 * @param callback
-  	 */
   def publish(
     exchange: java.lang.String,
     routingKey: java.lang.String,
@@ -194,20 +161,13 @@ trait ChannelWrapper
   	 */
   def queueLength(): scala.Double = js.native
   /**
-       * Remove a setup function added with `addSetup`.  If there is currently a
-       * connection, `teardown(channel, [cb])` will be run immediately, and the
-       * returned Promise will not resolve until it completes.
-       * @param func
-       * @param [tearDown]
-       */
+    * Remove a setup function added with `addSetup`.  If there is currently a
+    * connection, `teardown(channel, [cb])` will be run immediately, and the
+    * returned Promise will not resolve until it completes.
+    * @param func
+    * @param [tearDown]
+    */
   def removeSetup(func: SetupFunc): js.Promise[scala.Unit] = js.native
-  /**
-       * Remove a setup function added with `addSetup`.  If there is currently a
-       * connection, `teardown(channel, [cb])` will be run immediately, and the
-       * returned Promise will not resolve until it completes.
-       * @param func
-       * @param [tearDown]
-       */
   def removeSetup(func: SetupFunc, tearDown: SetupFunc): js.Promise[scala.Unit] = js.native
   /**
   	 * @see amqplib
@@ -217,25 +177,11 @@ trait ChannelWrapper
   	 * @param callback
   	 */
   def sendToQueue(queue: java.lang.String, content: nodeLib.Buffer): js.Promise[scala.Unit] = js.native
-  /**
-  	 * @see amqplib
-  	 * @param queue
-  	 * @param content
-  	 * @param options
-  	 * @param callback
-  	 */
   def sendToQueue(
     queue: java.lang.String,
     content: nodeLib.Buffer,
     options: amqplibLib.propertiesMod.OptionsNs.Publish
   ): js.Promise[scala.Unit] = js.native
-  /**
-  	 * @see amqplib
-  	 * @param queue
-  	 * @param content
-  	 * @param options
-  	 * @param callback
-  	 */
   def sendToQueue(
     queue: java.lang.String,
     content: nodeLib.Buffer,

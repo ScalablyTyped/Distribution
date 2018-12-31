@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MangoResponse[D] extends js.Object {
   // A string that enables you to specify which page of results you require. Used for paging through result sets.
   var bookmark: js.UndefOr[java.lang.String] = js.undefined

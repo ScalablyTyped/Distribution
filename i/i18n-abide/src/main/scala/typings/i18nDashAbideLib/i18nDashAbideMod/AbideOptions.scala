@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AbideOptions extends js.Object {
   var debug_lang: js.UndefOr[java.lang.String] = js.undefined
   var default_lang: js.UndefOr[java.lang.String] = js.undefined

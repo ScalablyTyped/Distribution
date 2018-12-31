@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SjclEllipticalPoint extends js.Object {
   def isValid(): scala.Boolean
   def mult(k: BigNumber): SjclEllipticalPoint

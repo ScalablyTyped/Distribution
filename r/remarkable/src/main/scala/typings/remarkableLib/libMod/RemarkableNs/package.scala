@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 package object RemarkableNs {
   /**
-       * Return `true` if the parsing function has recognized the current position
-       * in the input as one if its tokens.
-       */
+    * Return `true` if the parsing function has recognized the current position
+    * in the input as one if its tokens.
+    */
   type BlockParsingRule = js.Function4[
     /* state */ StateBlock, 
     /* startLine */ scala.Double, 
@@ -18,9 +18,9 @@ package object RemarkableNs {
     scala.Boolean
   ]
   /**
-       * Return `true` if the parsing function has recognized the current position
-       * in the input as one if its tokens.
-       */
+    * Return `true` if the parsing function has recognized the current position
+    * in the input as one if its tokens.
+    */
   type CoreParsingRule = js.Function1[/* state */ StateInline, scala.Boolean]
   type GetBreak = js.Function2[
     /* tokens */ js.Array[ContentToken], 
@@ -28,9 +28,9 @@ package object RemarkableNs {
     remarkableLib.remarkableLibStrings.Empty | remarkableLib.remarkableLibStrings.BACKSLASHn
   ]
   /**
-       * Return `true` if the parsing function has recognized the current position
-       * in the input as one if its tokens.
-       */
+    * Return `true` if the parsing function has recognized the current position
+    * in the input as one if its tokens.
+    */
   type InlineParsingRule = js.Function2[/* state */ StateInline, /* silent */ scala.Boolean, scala.Boolean]
   type Plugin = js.Function2[
     /* md */ remarkableLib.libMod.Remarkable, 

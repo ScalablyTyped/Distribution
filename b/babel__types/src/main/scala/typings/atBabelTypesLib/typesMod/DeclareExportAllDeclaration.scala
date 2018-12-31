@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeclareExportAllDeclaration extends BaseNode {
   var exportKind: (js.Tuple2[
     atBabelTypesLib.atBabelTypesLibStrings.`type`, 

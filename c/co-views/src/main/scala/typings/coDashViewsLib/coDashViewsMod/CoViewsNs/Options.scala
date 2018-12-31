@@ -5,31 +5,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   /**
-           * cache compiled templates
-           */
+    * cache compiled templates
+    */
   var cache: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * default extname
-           */
+    * default extname
+    */
   var default: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * default extname
-           */
+    * default extname
+    */
   var ext: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * common locals data
-           */
+    * common locals data
+    */
   var locals: js.UndefOr[js.Object] = js.undefined
   /**
-           * engine map
-           */
+    * engine map
+    */
   var map: js.UndefOr[js.Object] = js.undefined
   /**
-           * proxy partials
-           */
+    * proxy partials
+    */
   var partials: js.UndefOr[js.Object] = js.undefined
 }
 

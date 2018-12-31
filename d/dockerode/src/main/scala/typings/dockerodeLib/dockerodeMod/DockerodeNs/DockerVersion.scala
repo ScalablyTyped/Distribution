@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DockerVersion extends js.Object {
   var ApiVersion: java.lang.String
   var Arch: java.lang.String

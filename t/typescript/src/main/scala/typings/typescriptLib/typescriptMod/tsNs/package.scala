@@ -137,10 +137,10 @@ package object tsNs {
   type RelationalOperatorOrHigher = ShiftOperatorOrHigher | RelationalOperator
   type RenameInfo = RenameInfoSuccess | RenameInfoFailure
   /**
-       * Branded string for keeping track of when we've turned an ambiguous path
-       * specified like "./blah" to an absolute path to an actual
-       * tsconfig file, e.g. "/root/blah/tsconfig.json"
-       */
+    * Branded string for keeping track of when we've turned an ambiguous path
+    * specified like "./blah" to an absolute path to an actual
+    * tsconfig file, e.g. "/root/blah/tsconfig.json"
+    */
   type ResolvedConfigFileName = java.lang.String with typescriptLib.Anon_IsResolvedConfigFileName
   type ShiftOperator = SyntaxKind
   type ShiftOperatorOrHigher = AdditiveOperatorOrHigher | ShiftOperator
@@ -156,13 +156,13 @@ package object tsNs {
   type TemplateLiteral = TemplateExpression | NoSubstitutionTemplateLiteral
   type TemplateLiteralToken = NoSubstitutionTemplateLiteral | TemplateHead | TemplateMiddle | TemplateTail
   /**
-       * A function that transforms a node.
-       */
+    * A function that transforms a node.
+    */
   type Transformer[T /* <: Node */] = js.Function1[/* node */ T, T]
   /**
-       * A function that is used to initialize and return a `Transformer` callback, which in turn
-       * will be used to transform one or more nodes.
-       */
+    * A function that is used to initialize and return a `Transformer` callback, which in turn
+    * will be used to transform one or more nodes.
+    */
   type TransformerFactory[T /* <: Node */] = js.Function1[/* context */ TransformationContext, Transformer[T]]
   type TypeParameter = InstantiableType
   type TypePredicate = IdentifierTypePredicate | ThisTypePredicate
@@ -173,12 +173,12 @@ package object tsNs {
   type VariableLikeDeclaration = VariableDeclaration | ParameterDeclaration | BindingElement | PropertyDeclaration | PropertyAssignment | PropertySignature | JsxAttribute | ShorthandPropertyAssignment | EnumMember | JSDocPropertyTag | JSDocParameterTag
   type VisitResult[T /* <: Node */] = js.UndefOr[T | js.Array[T]]
   /**
-       * A function that accepts and possibly transforms a node.
-       */
+    * A function that accepts and possibly transforms a node.
+    */
   type Visitor = js.Function1[/* node */ Node, VisitResult[Node]]
   /**
-       * Creates the watch what generates program using the config file
-       */
+    * Creates the watch what generates program using the config file
+    */
   type WatchOfConfigFile[T] = Watch[T]
   type WatchStatusReporter = js.Function3[
     /* diagnostic */ Diagnostic, 
@@ -196,12 +196,12 @@ package object tsNs {
     scala.Unit
   ]
   /**
-       * This represents a string whose leading underscore have been escaped by adding extra leading underscores.
-       * The shape of this brand is rather unique compared to others we've used.
-       * Instead of just an intersection of a string and an object, it is that union-ed
-       * with an intersection of void and an object. This makes it wholly incompatible
-       * with a normal string (which is good, it cannot be misused on assignment or on usage),
-       * while still being comparable with a normal string via === (also good) and castable from a string.
-       */
+    * This represents a string whose leading underscore have been escaped by adding extra leading underscores.
+    * The shape of this brand is rather unique compared to others we've used.
+    * Instead of just an intersection of a string and an object, it is that union-ed
+    * with an intersection of void and an object. This makes it wholly incompatible
+    * with a normal string (which is good, it cannot be misused on assignment or on usage),
+    * while still being comparable with a normal string via === (also good) and castable from a string.
+    */
   type __String = (java.lang.String with typescriptLib.Anon_EscapedIdentifier) | (scala.Unit with typescriptLib.Anon_EscapedIdentifier) | InternalSymbolName
 }

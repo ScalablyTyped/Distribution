@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IsPlusOned extends js.Object {
   /** Whether the viewer can comment on the activity. */
   var canComment: js.UndefOr[scala.Boolean] = js.undefined

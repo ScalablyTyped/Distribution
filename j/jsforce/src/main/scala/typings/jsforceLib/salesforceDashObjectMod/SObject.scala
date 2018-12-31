@@ -22,7 +22,6 @@ class SObject[T] () extends js.Object {
   /** Returns a value from the cache if it exists, otherwise calls SObject.approvalLayouts */
   @JSName("approvalLayouts$")
   def approvalLayouts$(): ApprovalLayoutInfo = js.native
-  /** Returns a value from the cache if it exists, otherwise calls SObject.approvalLayouts */
   @JSName("approvalLayouts$")
   def approvalLayouts$(callback: jsforceLib.connectionMod.Callback[ApprovalLayoutInfo]): ApprovalLayoutInfo = js.native
   def bulkload(operation: java.lang.String): jsforceLib.batchMod.Batch = js.native
@@ -57,7 +56,6 @@ class SObject[T] () extends js.Object {
   /** Returns a value from the cache if it exists, otherwise calls SObject.compactLayouts */
   @JSName("compactLayouts$")
   def compactLayouts$(): CompactLayoutInfo = js.native
-  /** Returns a value from the cache if it exists, otherwise calls SObject.compactLayouts */
   @JSName("compactLayouts$")
   def compactLayouts$(callback: jsforceLib.connectionMod.Callback[CompactLayoutInfo]): CompactLayoutInfo = js.native
   def count(): jsforceLib.queryMod.Query[scala.Double] = js.native
@@ -186,7 +184,6 @@ class SObject[T] () extends js.Object {
   /** Returns a value from the cache if it exists, otherwise calls SObject.describe */
   @JSName("describe$")
   def describe$(): jsforceLib.describeDashResultMod.DescribeSObjectResult = js.native
-  /** Returns a value from the cache if it exists, otherwise calls SObject.describe */
   @JSName("describe$")
   def describe$(
     callback: jsforceLib.connectionMod.Callback[jsforceLib.describeDashResultMod.DescribeSObjectResult]
@@ -440,10 +437,8 @@ class SObject[T] () extends js.Object {
   /** Returns a value from the cache if it exists, otherwise calls SObject.layouts */
   @JSName("layouts$")
   def layouts$(): LayoutInfo = js.native
-  /** Returns a value from the cache if it exists, otherwise calls SObject.layouts */
   @JSName("layouts$")
   def layouts$(layoutName: java.lang.String): LayoutInfo = js.native
-  /** Returns a value from the cache if it exists, otherwise calls SObject.layouts */
   @JSName("layouts$")
   def layouts$(layoutName: java.lang.String, callback: jsforceLib.connectionMod.Callback[LayoutInfo]): LayoutInfo = js.native
   def listview(id: java.lang.String): ListView = js.native
@@ -482,20 +477,14 @@ class SObject[T] () extends js.Object {
   // TODO:use a typed pluck to turn `fields` into a subset of T's fields so that the output is slimmed down appropriately
   def select(): jsforceLib.queryMod.Query[js.Array[T]] = js.native
   def select(callback: jsforceLib.connectionMod.Callback[js.Array[T]]): jsforceLib.queryMod.Query[js.Array[T]] = js.native
-  // TODO:use a typed pluck to turn `fields` into a subset of T's fields so that the output is slimmed down appropriately
   def select(fields: jsforceLib.jsforceLibStrings.SObject with js.Any): jsforceLib.queryMod.Query[js.Array[stdLib.Partial[T]]] = js.native
-  // TODO:use a typed pluck to turn `fields` into a subset of T's fields so that the output is slimmed down appropriately
   def select(
     fields: jsforceLib.jsforceLibStrings.SObject with js.Any,
     callback: jsforceLib.connectionMod.Callback[js.Array[stdLib.Partial[T]]]
   ): jsforceLib.queryMod.Query[js.Array[stdLib.Partial[T]]] = js.native
-  // TODO:use a typed pluck to turn `fields` into a subset of T's fields so that the output is slimmed down appropriately
   def select(fields: java.lang.String): jsforceLib.queryMod.Query[js.Array[stdLib.Partial[T]]] = js.native
-  // TODO:use a typed pluck to turn `fields` into a subset of T's fields so that the output is slimmed down appropriately
   def select(fields: java.lang.String, callback: jsforceLib.connectionMod.Callback[js.Array[stdLib.Partial[T]]]): jsforceLib.queryMod.Query[js.Array[stdLib.Partial[T]]] = js.native
-  // TODO:use a typed pluck to turn `fields` into a subset of T's fields so that the output is slimmed down appropriately
   def select(fields: js.Array[java.lang.String]): jsforceLib.queryMod.Query[js.Array[stdLib.Partial[T]]] = js.native
-  // TODO:use a typed pluck to turn `fields` into a subset of T's fields so that the output is slimmed down appropriately
   def select(
     fields: js.Array[java.lang.String],
     callback: jsforceLib.connectionMod.Callback[js.Array[stdLib.Partial[T]]]
@@ -513,7 +502,6 @@ class SObject[T] () extends js.Object {
   ): js.Promise[js.Array[jsforceLib.recordDashResultMod.RecordResult]] = js.native
   // Should update require that the record Id field be provided?
   def update(record: stdLib.Partial[T]): js.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
-  // Should update require that the record Id field be provided?
   def update(
     record: stdLib.Partial[T],
     callback: jsforceLib.connectionMod.Callback[jsforceLib.recordDashResultMod.RecordResult]
@@ -526,23 +514,17 @@ class SObject[T] () extends js.Object {
   ): js.Promise[jsforceLib.recordDashResultMod.RecordResult] = js.native
   // should input really be optional? the documentation says so, but how can you actually update without it?
   def updateBulk(): jsforceLib.batchMod.Batch = js.native
-  // should input really be optional? the documentation says so, but how can you actually update without it?
   def updateBulk(input: java.lang.String): jsforceLib.batchMod.Batch = js.native
-  // should input really be optional? the documentation says so, but how can you actually update without it?
   def updateBulk(
     input: java.lang.String,
     callback: jsforceLib.connectionMod.Callback[js.Array[jsforceLib.recordDashResultMod.RecordResult]]
   ): jsforceLib.batchMod.Batch = js.native
-  // should input really be optional? the documentation says so, but how can you actually update without it?
   def updateBulk(input: js.Array[jsforceLib.recordMod.Record[_]]): jsforceLib.batchMod.Batch = js.native
-  // should input really be optional? the documentation says so, but how can you actually update without it?
   def updateBulk(
     input: js.Array[jsforceLib.recordMod.Record[_]],
     callback: jsforceLib.connectionMod.Callback[js.Array[jsforceLib.recordDashResultMod.RecordResult]]
   ): jsforceLib.batchMod.Batch = js.native
-  // should input really be optional? the documentation says so, but how can you actually update without it?
   def updateBulk(input: nodeLib.streamMod.Stream): jsforceLib.batchMod.Batch = js.native
-  // should input really be optional? the documentation says so, but how can you actually update without it?
   def updateBulk(
     input: nodeLib.streamMod.Stream,
     callback: jsforceLib.connectionMod.Callback[js.Array[jsforceLib.recordDashResultMod.RecordResult]]

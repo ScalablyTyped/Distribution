@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHotspotAuthenticationContext extends js.Object {
   var authenticationUrl: winrtLib.WindowsNs.FoundationNs.Uri
   var networkAdapter: winrtLib.WindowsNs.NetworkingNs.ConnectivityNs.NetworkAdapter

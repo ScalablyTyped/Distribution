@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InlineKeyboardButton extends js.Object {
   var callback_data: js.UndefOr[java.lang.String] = js.undefined
   var callback_game: js.UndefOr[CallbackGame] = js.undefined

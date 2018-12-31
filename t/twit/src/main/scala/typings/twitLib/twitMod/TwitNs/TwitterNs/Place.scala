@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Place extends js.Object {
   var attributes: PlaceAttribute
   var bounding_box: geojsonLib.geojsonMod.Polygon

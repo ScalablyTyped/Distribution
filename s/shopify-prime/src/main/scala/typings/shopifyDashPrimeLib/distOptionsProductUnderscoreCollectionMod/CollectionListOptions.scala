@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CollectionListOptions
   extends shopifyDashPrimeLib.distOptionsBaseMod.ListOptions
      with shopifyDashPrimeLib.distOptionsBaseMod.FieldOptions

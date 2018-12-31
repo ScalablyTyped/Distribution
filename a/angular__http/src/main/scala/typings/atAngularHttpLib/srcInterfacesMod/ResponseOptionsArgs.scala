@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResponseOptionsArgs extends js.Object {
   var body: js.UndefOr[
     java.lang.String | js.Object | stdLib.FormData | stdLib.ArrayBuffer | stdLib.Blob | scala.Null

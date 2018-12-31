@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UIRouter extends js.Object {
   /** @hidden */
   var stateProvider: atUirouterAngularjsLib.libStateProviderMod.StateProvider

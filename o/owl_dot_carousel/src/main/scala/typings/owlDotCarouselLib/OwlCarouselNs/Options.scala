@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var URLhashListener: js.UndefOr[scala.Boolean] = js.undefined
   var animateIn: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined

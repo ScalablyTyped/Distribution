@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SetTypings extends ProjectResponse {
   val compilerOptions: typescriptLib.typescriptMod.tsNs.CompilerOptions
   @JSName("kind")

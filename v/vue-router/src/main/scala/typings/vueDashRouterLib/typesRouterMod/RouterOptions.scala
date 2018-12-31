@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RouterOptions extends js.Object {
   var base: js.UndefOr[java.lang.String] = js.undefined
   var fallback: js.UndefOr[scala.Boolean] = js.undefined

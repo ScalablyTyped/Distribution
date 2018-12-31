@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConfigFile extends js.Object {
   /** The bytes that constitute the file. */
   var fileContents: js.UndefOr[java.lang.String] = js.undefined

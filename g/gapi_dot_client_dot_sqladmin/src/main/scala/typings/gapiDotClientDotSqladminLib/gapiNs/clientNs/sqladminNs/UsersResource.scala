@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UsersResource extends js.Object {
   /** Deletes a user from a Cloud SQL instance. */
   def delete(request: gapiDotClientDotSqladminLib.Anon_Name): gapiDotClientLib.gapiNs.clientNs.Request[Operation]

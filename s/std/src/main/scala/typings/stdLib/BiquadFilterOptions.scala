@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BiquadFilterOptions extends AudioNodeOptions {
   var Q: js.UndefOr[scala.Double] = js.undefined
   var detune: js.UndefOr[scala.Double] = js.undefined

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * The parameter passed to the `error` callback of <PreviewImageOptions>.
- */
-
+  * The parameter passed to the `error` callback of <PreviewImageOptions>.
+  */
 trait PreviewImageError extends js.Object {
   /**
   	 * Error code, if applicable.

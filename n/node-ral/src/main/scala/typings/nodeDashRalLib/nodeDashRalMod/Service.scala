@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Service extends js.Object {
   var balance: nodeDashRalLib.nodeDashRalLibStrings.random | nodeDashRalLib.nodeDashRalLibStrings.roundrobin | nodeDashRalLib.nodeDashRalLibStrings.hashring
   var data: js.UndefOr[js.Any] = js.undefined

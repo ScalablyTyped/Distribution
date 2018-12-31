@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageMapGuideOptions extends js.Object {
   var displayDpi: js.UndefOr[scala.Double] = js.undefined
   var hidpi: js.UndefOr[scala.Boolean] = js.undefined

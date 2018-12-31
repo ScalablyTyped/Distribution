@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Notify extends js.Object {
   /**
-       * Close the notification.
-       */
+    * Close the notification.
+    */
   def close(): scala.Unit
   /**
-       * Remove all event listener.
-       */
+    * Remove all event listener.
+    */
   def destroy(): scala.Unit
   def handleEvent(e: stdLib.Event): scala.Unit
   def onClickNotification(): scala.Unit
@@ -21,8 +20,8 @@ trait Notify extends js.Object {
   def onErrorNotification(): scala.Unit
   def onShowNotification(e: stdLib.Event): scala.Unit
   /**
-       * Show the notification.
-       */
+    * Show the notification.
+    */
   def show(): scala.Unit
 }
 

@@ -27,12 +27,12 @@ trait LodashInvokeArgsMap extends js.Object {
   def apply(methodName: java.lang.String, args: js.Array[_], collection: js.Object): js.Array[_] = js.native
   def apply(methodName: java.lang.String, args: lodashLib.lodashMod.underscoreNs.`__`): LodashInvokeArgsMap1x5 = js.native
   def apply(methodName: java.lang.String, args: lodashLib.lodashMod.underscoreNs.`__`, collection: js.Object): LodashInvokeArgsMap1x5 = js.native
-  def apply[TResult](method: js.Function1[/* repeated */js.Any, TResult]): LodashInvokeArgsMap2x1[TResult] = js.native
-  def apply[TResult](method: js.Function1[/* repeated */js.Any, TResult], args: js.Array[_]): js.Array[TResult] = js.native
-  def apply[TResult](method: js.Function1[/* repeated */js.Any, TResult], args: js.Array[_], collection: js.Object): js.Array[TResult] = js.native
-  def apply[TResult](method: js.Function1[/* repeated */js.Any, TResult], args: lodashLib.lodashMod.underscoreNs.`__`): LodashInvokeArgsMap2x5[TResult] = js.native
+  def apply[TResult](method: js.Function1[/* repeated */ js.Any, TResult]): LodashInvokeArgsMap2x1[TResult] = js.native
+  def apply[TResult](method: js.Function1[/* repeated */ js.Any, TResult], args: js.Array[_]): js.Array[TResult] = js.native
+  def apply[TResult](method: js.Function1[/* repeated */ js.Any, TResult], args: js.Array[_], collection: js.Object): js.Array[TResult] = js.native
+  def apply[TResult](method: js.Function1[/* repeated */ js.Any, TResult], args: lodashLib.lodashMod.underscoreNs.`__`): LodashInvokeArgsMap2x5[TResult] = js.native
   def apply[TResult](
-    method: js.Function1[/* repeated */js.Any, TResult],
+    method: js.Function1[/* repeated */ js.Any, TResult],
     args: lodashLib.lodashMod.underscoreNs.`__`,
     collection: js.Object
   ): LodashInvokeArgsMap2x5[TResult] = js.native

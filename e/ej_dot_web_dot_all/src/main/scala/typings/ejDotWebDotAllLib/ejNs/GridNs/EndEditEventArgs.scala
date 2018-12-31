@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EndEditEventArgs extends js.Object {
   /** Returns modified data.
-               */
+    */
   var data: js.UndefOr[js.Any] = js.undefined
   /** Returns the grid model.
-               */
+    */
   var model: js.UndefOr[js.Any] = js.undefined
   /** Returns modified data.
-               */
+    */
   var rowData: js.UndefOr[js.Any] = js.undefined
   /** Returns the name of the event.
-               */
+    */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 

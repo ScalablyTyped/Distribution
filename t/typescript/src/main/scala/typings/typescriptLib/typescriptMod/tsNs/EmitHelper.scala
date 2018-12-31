@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EmitHelper extends js.Object {
   val name: java.lang.String
   val priority: js.UndefOr[scala.Double] = js.undefined

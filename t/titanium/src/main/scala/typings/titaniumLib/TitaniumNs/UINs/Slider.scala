@@ -290,9 +290,6 @@ trait Slider extends View {
   			 * Sets the [value](Titanium.UI.Slider.value) property.
   			 */
   def setValue(value: scala.Double): scala.Unit = js.native
-  /**
-  			 * Sets the [value](Titanium.UI.Slider.value) property.
-  			 */
   def setValue(value: scala.Double, options: js.Any): scala.Unit = js.native
 }
 

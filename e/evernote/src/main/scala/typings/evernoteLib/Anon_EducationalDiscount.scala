@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EducationalDiscount extends js.Object {
   var businessAddress: js.UndefOr[java.lang.String] = js.undefined
   var clipFullPage: js.UndefOr[scala.Boolean] = js.undefined

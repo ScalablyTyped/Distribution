@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class TransactionResult protected () extends js.Object {
   /**
-       * A type for the resolve value of Firebase.transaction.
-       * @constructor
-       * @dict
-       * @param {boolean} committed
-       * @param {DataSnapshot} snapshot
-       */
+    * A type for the resolve value of Firebase.transaction.
+    * @constructor
+    * @dict
+    * @param {boolean} committed
+    * @param {DataSnapshot} snapshot
+    */
   def this(committed: scala.Boolean, snapshot: atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot) = this()
   var committed: scala.Boolean = js.native
   var snapshot: atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot = js.native

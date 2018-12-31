@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransformationDescriptor extends js.Object {
   var diffMatrix: Matrix
   var global: java.lang.String

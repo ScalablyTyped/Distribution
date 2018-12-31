@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait patternSettings extends js.Object {
   var D: java.lang.String
   var F: java.lang.String

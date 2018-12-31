@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("google-protobuf/google/protobuf/type_pb", "Field")
 @js.native
 object FieldNs extends js.Object {
-  
   trait AsObject extends js.Object {
     var cardinality: Cardinality
     var defaultValue: java.lang.String

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "Audio")
 @js.native
 object AudioNs extends js.Object {
-  
   trait AudioMode extends js.Object {
     /** Boolean selecting if recording is enabled on iOS. This value defaults to `false`. NOTE: when this flag is set to true, playback may be routed to the phone receiver instead of to the speaker. */
     var allowsRecordingIOS: scala.Boolean
@@ -33,31 +32,17 @@ object AudioNs extends js.Object {
   @js.native
   class Recording () extends js.Object {
     /**
-             * Creates and loads a new `Sound` object to play back the `Recording`. Note that this will only succeed once the `Recording` is done recording (once `stopAndUnloadAsync()` has been called).
-             *
-             * @returns A Promise that is rejected if creation failed, or fulfilled with the following dictionary if creation succeeded:
-             * - `sound`: the newly created and loaded Sound object.
-             * - `status`: the PlaybackStatus of the Sound object.
-             */
+      * Creates and loads a new `Sound` object to play back the `Recording`. Note that this will only succeed once the `Recording` is done recording (once `stopAndUnloadAsync()` has been called).
+      *
+      * @returns A Promise that is rejected if creation failed, or fulfilled with the following dictionary if creation succeeded:
+      * - `sound`: the newly created and loaded Sound object.
+      * - `status`: the PlaybackStatus of the Sound object.
+      */
     def createNewLoadedSound(): js.Promise[expoLib.Anon_Sound] = js.native
-    /**
-             * Creates and loads a new `Sound` object to play back the `Recording`. Note that this will only succeed once the `Recording` is done recording (once `stopAndUnloadAsync()` has been called).
-             *
-             * @returns A Promise that is rejected if creation failed, or fulfilled with the following dictionary if creation succeeded:
-             * - `sound`: the newly created and loaded Sound object.
-             * - `status`: the PlaybackStatus of the Sound object.
-             */
     def createNewLoadedSound(
       /** The initial intended `PlaybackStatusToSet` of the sound, whose values will override the default initial playback status. This value defaults to `{}` if no parameter is passed. */
     initialStatus: expoLib.expoMod.PlaybackStatusToSet
     ): js.Promise[expoLib.Anon_Sound] = js.native
-    /**
-             * Creates and loads a new `Sound` object to play back the `Recording`. Note that this will only succeed once the `Recording` is done recording (once `stopAndUnloadAsync()` has been called).
-             *
-             * @returns A Promise that is rejected if creation failed, or fulfilled with the following dictionary if creation succeeded:
-             * - `sound`: the newly created and loaded Sound object.
-             * - `status`: the PlaybackStatus of the Sound object.
-             */
     def createNewLoadedSound(
       /** The initial intended `PlaybackStatusToSet` of the sound, whose values will override the default initial playback status. This value defaults to `{}` if no parameter is passed. */
     initialStatus: expoLib.expoMod.PlaybackStatusToSet,
@@ -67,27 +52,25 @@ object AudioNs extends js.Object {
     /** Gets the `status` of the `Recording`. */
     def getStatusAsync(): js.Promise[RecordingStatus] = js.native
     /**
-             * Gets the local URI of the Recording. Note that this will only succeed once the Recording is prepared to record.
-             *
-             * @returns A string with the local URI of the `Recording`, or `null` if the `Recording` is not prepared to record.
-             */
+      * Gets the local URI of the Recording. Note that this will only succeed once the Recording is prepared to record.
+      *
+      * @returns A string with the local URI of the `Recording`, or `null` if the `Recording` is not prepared to record.
+      */
     def getURI(): js.UndefOr[java.lang.String | scala.Null] = js.native
     /**
-             * Pauses recording. This method can only be called if the Recording has been prepared.
-             *
-             * NOTE: This is only available on Android API version 24 and later.
-             */
+      * Pauses recording. This method can only be called if the Recording has been prepared.
+      *
+      * NOTE: This is only available on Android API version 24 and later.
+      */
     def pauseAsync(): js.Promise[RecordingStatus] = js.native
     /** Loads the recorder into memory and prepares it for recording. This must be called before calling `startAsync()`. This method can only be called if the `Recording` instance has never yet been prepared. */
     def prepareToRecordAsync(): js.Promise[RecordingStatus] = js.native
-    /** Loads the recorder into memory and prepares it for recording. This must be called before calling `startAsync()`. This method can only be called if the `Recording` instance has never yet been prepared. */
     def prepareToRecordAsync(
       /** Options for the recording, including sample rate, bitrate, channels, format, encoder, and extension. If no options are passed to `prepareToRecordAsync()`, the recorder will be created with options `Expo.Audio.RECORDING_OPTIONS_PRESET_LOW_QUALITY`. */
     options: RecordingOptions
     ): js.Promise[RecordingStatus] = js.native
     /** Sets a function to be called regularly with the `status` of the `Recording`. */
     def setOnRecordingStatusUpdate(): scala.Unit = js.native
-    /** Sets a function to be called regularly with the `status` of the `Recording`. */
     def setOnRecordingStatusUpdate(onRecordingStatusUpdate: js.Function1[/* status */ RecordingStatus, scala.Unit]): scala.Unit = js.native
     /** Sets the interval with which onRecordingStatusUpdate is called while the recording can record. This value defaults to 500 milliseconds. */
     def setProgressUpdateInterval(progressUpdateIntervalMillis: scala.Double): scala.Unit = js.native
@@ -96,7 +79,6 @@ object AudioNs extends js.Object {
     /** Stops the recording and deallocates the recorder from memory. This reverts the Recording instance to an unprepared state, and another Recording instance must be created in order to record again. This method can only be called if the `Recording` has been prepared. */
     def stopAndUnloadAsync(): js.Promise[RecordingStatus] = js.native
   }
-  
   
   trait RecordingOptions extends js.Object {
     var android: expoLib.Anon_BitRateSampleRate
@@ -223,77 +205,56 @@ object AudioNs extends js.Object {
   @js.native
   object Sound extends js.Object {
     /**
-             * Creates and loads a sound from source, with optional `initialStatus`, `onPlaybackStatusUpdate`, and `downloadFirst`.
-             *
-             * @returns A `Promise` that is rejected if creation failed, or fulfilled with the following dictionary if creation succeeded:
-             * - `sound`: The newly created and loaded Sound object.
-             * - `status`: The PlaybackStatus of the Sound object. See the AV documentation for further information.
-             */
+      * Creates and loads a sound from source, with optional `initialStatus`, `onPlaybackStatusUpdate`, and `downloadFirst`.
+      *
+      * @returns A `Promise` that is rejected if creation failed, or fulfilled with the following dictionary if creation succeeded:
+      * - `sound`: The newly created and loaded Sound object.
+      * - `status`: The PlaybackStatus of the Sound object. See the AV documentation for further information.
+      */
     def create(
       /**
-                 * The source of the sound. The following forms are supported:
-                 *
-                 * - A dictionary of the form `{ uri: 'http://path/to/file' }` with a network URL pointing to an audio file on the web.
-                 * - `require('path/to/file')` for an audio file asset in the source code directory.
-                 * - An `Expo.Asset` object for an audio file asset.
-                 */
+      * The source of the sound. The following forms are supported:
+      *
+      * - A dictionary of the form `{ uri: 'http://path/to/file' }` with a network URL pointing to an audio file on the web.
+      * - `require('path/to/file')` for an audio file asset in the source code directory.
+      * - An `Expo.Asset` object for an audio file asset.
+      */
     source: expoLib.expoMod.PlaybackSource
     ): js.Promise[expoLib.Anon_Sound] = js.native
-    /**
-             * Creates and loads a sound from source, with optional `initialStatus`, `onPlaybackStatusUpdate`, and `downloadFirst`.
-             *
-             * @returns A `Promise` that is rejected if creation failed, or fulfilled with the following dictionary if creation succeeded:
-             * - `sound`: The newly created and loaded Sound object.
-             * - `status`: The PlaybackStatus of the Sound object. See the AV documentation for further information.
-             */
     def create(
       /**
-                 * The source of the sound. The following forms are supported:
-                 *
-                 * - A dictionary of the form `{ uri: 'http://path/to/file' }` with a network URL pointing to an audio file on the web.
-                 * - `require('path/to/file')` for an audio file asset in the source code directory.
-                 * - An `Expo.Asset` object for an audio file asset.
-                 */
+      * The source of the sound. The following forms are supported:
+      *
+      * - A dictionary of the form `{ uri: 'http://path/to/file' }` with a network URL pointing to an audio file on the web.
+      * - `require('path/to/file')` for an audio file asset in the source code directory.
+      * - An `Expo.Asset` object for an audio file asset.
+      */
     source: expoLib.expoMod.PlaybackSource,
       /** The initial intended PlaybackStatusToSet of the sound, whose values will override the default initial playback status. This value defaults to `{}` if no parameter is passed. */
     initialStatus: expoLib.expoMod.PlaybackStatusToSet
     ): js.Promise[expoLib.Anon_Sound] = js.native
-    /**
-             * Creates and loads a sound from source, with optional `initialStatus`, `onPlaybackStatusUpdate`, and `downloadFirst`.
-             *
-             * @returns A `Promise` that is rejected if creation failed, or fulfilled with the following dictionary if creation succeeded:
-             * - `sound`: The newly created and loaded Sound object.
-             * - `status`: The PlaybackStatus of the Sound object. See the AV documentation for further information.
-             */
     def create(
       /**
-                 * The source of the sound. The following forms are supported:
-                 *
-                 * - A dictionary of the form `{ uri: 'http://path/to/file' }` with a network URL pointing to an audio file on the web.
-                 * - `require('path/to/file')` for an audio file asset in the source code directory.
-                 * - An `Expo.Asset` object for an audio file asset.
-                 */
+      * The source of the sound. The following forms are supported:
+      *
+      * - A dictionary of the form `{ uri: 'http://path/to/file' }` with a network URL pointing to an audio file on the web.
+      * - `require('path/to/file')` for an audio file asset in the source code directory.
+      * - An `Expo.Asset` object for an audio file asset.
+      */
     source: expoLib.expoMod.PlaybackSource,
       /** The initial intended PlaybackStatusToSet of the sound, whose values will override the default initial playback status. This value defaults to `{}` if no parameter is passed. */
     initialStatus: expoLib.expoMod.PlaybackStatusToSet,
       /** A function taking a single parameter PlaybackStatus. This value defaults to `null` if no parameter is passed. */
     onPlaybackStatusUpdate: js.Function1[/* status */ expoLib.expoMod.PlaybackStatus, scala.Unit]
     ): js.Promise[expoLib.Anon_Sound] = js.native
-    /**
-             * Creates and loads a sound from source, with optional `initialStatus`, `onPlaybackStatusUpdate`, and `downloadFirst`.
-             *
-             * @returns A `Promise` that is rejected if creation failed, or fulfilled with the following dictionary if creation succeeded:
-             * - `sound`: The newly created and loaded Sound object.
-             * - `status`: The PlaybackStatus of the Sound object. See the AV documentation for further information.
-             */
     def create(
       /**
-                 * The source of the sound. The following forms are supported:
-                 *
-                 * - A dictionary of the form `{ uri: 'http://path/to/file' }` with a network URL pointing to an audio file on the web.
-                 * - `require('path/to/file')` for an audio file asset in the source code directory.
-                 * - An `Expo.Asset` object for an audio file asset.
-                 */
+      * The source of the sound. The following forms are supported:
+      *
+      * - A dictionary of the form `{ uri: 'http://path/to/file' }` with a network URL pointing to an audio file on the web.
+      * - `require('path/to/file')` for an audio file asset in the source code directory.
+      * - An `Expo.Asset` object for an audio file asset.
+      */
     source: expoLib.expoMod.PlaybackSource,
       /** The initial intended PlaybackStatusToSet of the sound, whose values will override the default initial playback status. This value defaults to `{}` if no parameter is passed. */
     initialStatus: expoLib.expoMod.PlaybackStatusToSet,
@@ -302,21 +263,14 @@ object AudioNs extends js.Object {
       /** If set to true, the system will attempt to download the resource to the device before loading. This value defaults to `true`. Note that at the moment, this will only work for `source`s of the form `require('path/to/file')` or `Asset` objects. */
     downloadFirst: scala.Boolean
     ): js.Promise[expoLib.Anon_Sound] = js.native
-    /**
-             * Creates and loads a sound from source, with optional `initialStatus`, `onPlaybackStatusUpdate`, and `downloadFirst`.
-             *
-             * @returns A `Promise` that is rejected if creation failed, or fulfilled with the following dictionary if creation succeeded:
-             * - `sound`: The newly created and loaded Sound object.
-             * - `status`: The PlaybackStatus of the Sound object. See the AV documentation for further information.
-             */
     def create(
       /**
-                 * The source of the sound. The following forms are supported:
-                 *
-                 * - A dictionary of the form `{ uri: 'http://path/to/file' }` with a network URL pointing to an audio file on the web.
-                 * - `require('path/to/file')` for an audio file asset in the source code directory.
-                 * - An `Expo.Asset` object for an audio file asset.
-                 */
+      * The source of the sound. The following forms are supported:
+      *
+      * - A dictionary of the form `{ uri: 'http://path/to/file' }` with a network URL pointing to an audio file on the web.
+      * - `require('path/to/file')` for an audio file asset in the source code directory.
+      * - An `Expo.Asset` object for an audio file asset.
+      */
     source: expoLib.expoMod.PlaybackSource,
       /** The initial intended PlaybackStatusToSet of the sound, whose values will override the default initial playback status. This value defaults to `{}` if no parameter is passed. */
     initialStatus: expoLib.expoMod.PlaybackStatusToSet,

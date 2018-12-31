@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GmailSinglePromotionAdBuilder[GmailSinglePromotionAd] extends AdBuilder[GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]] {
   def withAdvertiser(advertiser: java.lang.String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]
   def withCallToAction(callToAction: java.lang.String): GmailSinglePromotionAdBuilder[GmailSinglePromotionAd]

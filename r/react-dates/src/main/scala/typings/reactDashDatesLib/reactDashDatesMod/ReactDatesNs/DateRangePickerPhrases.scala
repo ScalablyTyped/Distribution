@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 // PHRASES
 //
 // defaultPhrases.js
-
 trait DateRangePickerPhrases extends js.Object {
   var calendarLabel: js.UndefOr[java.lang.String] = js.undefined
   var chooseAvailableEndDate: js.UndefOr[js.Function1[/* date */ java.lang.String, java.lang.String]] = js.undefined

@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class Request protected ()
   extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.Request {
   /*
-       Provides methods for generating request bodies.
-       */
+    Provides methods for generating request bodies.
+    */
   def this(conf: js.Object) = this()
 }
 

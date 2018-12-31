@@ -42,16 +42,6 @@ class geometry () extends js.Object {
   	 * is the distance of the point to the reference point in map units.
   	 */
   def findNearestSegment(pt: point): mapsjsLib.Anon_PtIdx = js.native
-  /**
-  	 * Finds point along boundary of geometry nearest to the given point
-  	 * @param {point} pt Reference point.
-  	 * @param {boolean} [close] Flag to indicate whether this geometry
-  	 * should be treated as a closed geometry.
-  	 * @returns {object} An object of the form {setIdx, ptIdx, pt, distance}
-  	 * where setIdx is the index of the set the point is in, ptIdx is the
-  	 * index of the point in the set, pt is the point object, and distance
-  	 * is the distance of the point to the reference point in map units.
-  	 */
   def findNearestSegment(pt: point, close: scala.Boolean): mapsjsLib.Anon_PtIdx = js.native
   /**
   	 * Finds the point in this geometry nearest to the given point.
@@ -102,15 +92,6 @@ class geometry () extends js.Object {
   	 * @returns {point} Midpoint of this geometry.
   	 */
   def getLabelingPoint(): point = js.native
-  /** 
-  	 * Finds coordinates in map units of the midpoint of this geometry. If
-  	 * this geometry is an open path, the midpoint is the midpoint of the
-  	 * path. If this geometry is a closed path, the midpoint is the centroid
-  	 * of the polygon. If a set index is not provided, finds the labeling
-  	 * point for the last set in this geometry's set collection.
-  	 * @param {number} [idx] Index of set for which to find the labeling point.
-  	 * @returns {point} Midpoint of this geometry.
-  	 */
   def getLabelingPoint(idx: scala.Double): point = js.native
   /**
   	 * Gets a set from this geometry's set collection by index, or, if no 

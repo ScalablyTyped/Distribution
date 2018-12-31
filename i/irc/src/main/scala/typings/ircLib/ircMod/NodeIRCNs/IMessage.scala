@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMessage extends js.Object {
   /** Command arguments */
   var args: js.Array[java.lang.String]

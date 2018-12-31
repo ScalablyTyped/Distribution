@@ -14,12 +14,12 @@ object internalObservableFromEventModMembers extends js.Object {
     target: FromEventTarget[T],
     eventName: java.lang.String,
     options: EventListenerOptions,
-    resultSelector: js.Function1[/* repeated */js.Any, T]
+    resultSelector: js.Function1[/* repeated */ js.Any, T]
   ): rxjsLib.internalObservableMod.Observable[T] = js.native
   def fromEvent[T](
     target: FromEventTarget[T],
     eventName: java.lang.String,
-    resultSelector: js.Function1[/* repeated */js.Any, T]
+    resultSelector: js.Function1[/* repeated */ js.Any, T]
   ): rxjsLib.internalObservableMod.Observable[T] = js.native
 }
 

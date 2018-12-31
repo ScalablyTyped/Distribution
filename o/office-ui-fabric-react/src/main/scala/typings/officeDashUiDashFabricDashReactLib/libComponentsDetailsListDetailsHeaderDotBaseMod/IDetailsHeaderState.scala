@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDetailsHeaderState extends js.Object {
   var columnReorderProps: js.UndefOr[
     officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsHeaderDotTypesMod.IColumnReorderHeaderProps

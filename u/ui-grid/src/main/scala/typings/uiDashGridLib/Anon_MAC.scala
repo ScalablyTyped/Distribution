@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MAC extends js.Object {
   var ALT: scala.Double
   var ALTR: scala.Double

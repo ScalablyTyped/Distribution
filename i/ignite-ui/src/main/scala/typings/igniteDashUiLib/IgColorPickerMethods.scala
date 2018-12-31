@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgColorPickerMethods extends js.Object {
   /**
   	 * Gets the color for an element from the color picker in RGB format.

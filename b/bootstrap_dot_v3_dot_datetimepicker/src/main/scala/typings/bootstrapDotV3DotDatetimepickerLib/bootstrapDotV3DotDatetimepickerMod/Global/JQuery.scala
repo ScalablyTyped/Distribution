@@ -15,9 +15,6 @@ trait JQuery extends js.Object {
   	 * JQuery plugin function.
   	 */
   def datetimepicker(): JQuery = js.native
-  /**
-  	 * JQuery plugin function.
-  	 */
   def datetimepicker(
     options: bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerMod.DatetimepickerOptions
   ): JQuery = js.native

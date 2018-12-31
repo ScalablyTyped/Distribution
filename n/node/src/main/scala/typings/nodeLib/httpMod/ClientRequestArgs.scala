@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClientRequestArgs extends js.Object {
   var _defaultAgent: js.UndefOr[Agent] = js.undefined
   var agent: js.UndefOr[Agent | scala.Boolean] = js.undefined

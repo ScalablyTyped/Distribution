@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait options extends js.Object {
   var bar: js.UndefOr[scala.Double] = js.undefined
   var plates: js.UndefOr[js.Array[scala.Double]] = js.undefined

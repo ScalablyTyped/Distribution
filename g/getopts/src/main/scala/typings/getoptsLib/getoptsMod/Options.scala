@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var alias: js.UndefOr[
     org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]

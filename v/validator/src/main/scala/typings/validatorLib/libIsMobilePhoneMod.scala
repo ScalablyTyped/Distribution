@@ -8,5 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("validator/lib/isMobilePhone", JSImport.Namespace)
 @js.native
 object libIsMobilePhoneMod
-  extends org.scalablytyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[
+      js.Function3[
+        /* str */ java.lang.String, 
+        /* locale */ validatorLib.ValidatorJSNs.MobilePhoneLocale, 
+        /* options */ js.UndefOr[validatorLib.ValidatorJSNs.IsMobilePhoneOptions], 
+        scala.Boolean
+      ]
+    ]
 

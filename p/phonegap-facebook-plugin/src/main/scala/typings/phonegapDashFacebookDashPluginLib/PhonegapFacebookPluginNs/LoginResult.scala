@@ -8,9 +8,8 @@ import scala.scalajs.js.annotation._
 //#endregion
 //#region Callback Results
 /**
-     * Result for the login() and getLoginStatus() success callbacks.
-     */
-
+  * Result for the login() and getLoginStatus() success callbacks.
+  */
 trait LoginResult extends js.Object {
   var authResponse: phonegapDashFacebookDashPluginLib.Anon_Secret
   var status: java.lang.String

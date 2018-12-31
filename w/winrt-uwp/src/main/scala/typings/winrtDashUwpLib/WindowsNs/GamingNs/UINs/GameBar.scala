@@ -13,10 +13,10 @@ abstract class GameBar () extends js.Object
 @js.native
 object GameBar extends js.Object {
   var addEventListener: js.Any = js.native
-   /* unmapped type */var isInputRedirected: js.Any = js.native
-   /* unmapped type */var onisinputredirectedchanged: js.Any = js.native
-   /* unmapped type */var onvisibilitychanged: js.Any = js.native
-   /* unmapped type */var removeEventListener: js.Any = js.native
-   /* unmapped type */var visible: js.Any = js.native
+   /* unmapped type */ var isInputRedirected: js.Any = js.native
+   /* unmapped type */ var onisinputredirectedchanged: js.Any = js.native
+   /* unmapped type */ var onvisibilitychanged: js.Any = js.native
+   /* unmapped type */ var removeEventListener: js.Any = js.native
+   /* unmapped type */ var visible: js.Any = js.native
 }
 

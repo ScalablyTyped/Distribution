@@ -31,83 +31,37 @@ class Connection protected () extends js.Object {
   def CommitTrans(): scala.Unit = js.native
   def Errors(Index: js.Any): Error = js.native
   /**
-           * @param Options [Options=-1]
-           *
-           * The **RecordsAffected** parameter is meant to take a variable to be modified by reference, which is not supported by Javascript
-           *
-           * The return value is as follows:
-           *
-           * * If the **adExecuteNoRecords** option is passed in, the method will return `null`. Otherwise:
-           * * If **CommandText** specifies a row-returning query, then the method will return a new read-only, forward-only **Recordset** object with the results
-           * * If **CommandText** isn't intended to return results (e.g. an `UPDATE` statement), a closed empty **Recordset** will be returned.
-           */
+    * @param Options [Options=-1]
+    *
+    * The **RecordsAffected** parameter is meant to take a variable to be modified by reference, which is not supported by Javascript
+    *
+    * The return value is as follows:
+    *
+    * * If the **adExecuteNoRecords** option is passed in, the method will return `null`. Otherwise:
+    * * If **CommandText** specifies a row-returning query, then the method will return a new read-only, forward-only **Recordset** object with the results
+    * * If **CommandText** isn't intended to return results (e.g. an `UPDATE` statement), a closed empty **Recordset** will be returned.
+    */
   def Execute(CommandText: java.lang.String): Recordset | scala.Null = js.native
-  /**
-           * @param Options [Options=-1]
-           *
-           * The **RecordsAffected** parameter is meant to take a variable to be modified by reference, which is not supported by Javascript
-           *
-           * The return value is as follows:
-           *
-           * * If the **adExecuteNoRecords** option is passed in, the method will return `null`. Otherwise:
-           * * If **CommandText** specifies a row-returning query, then the method will return a new read-only, forward-only **Recordset** object with the results
-           * * If **CommandText** isn't intended to return results (e.g. an `UPDATE` statement), a closed empty **Recordset** will be returned.
-           */
   def Execute(
     CommandText: java.lang.String,
     RecordsAffected: js.UndefOr[scala.Nothing],
     Options: CommandTypeEnum
   ): Recordset | scala.Null = js.native
-  /**
-           * @param Options [Options=-1]
-           *
-           * The **RecordsAffected** parameter is meant to take a variable to be modified by reference, which is not supported by Javascript
-           *
-           * The return value is as follows:
-           *
-           * * If the **adExecuteNoRecords** option is passed in, the method will return `null`. Otherwise:
-           * * If **CommandText** specifies a row-returning query, then the method will return a new read-only, forward-only **Recordset** object with the results
-           * * If **CommandText** isn't intended to return results (e.g. an `UPDATE` statement), a closed empty **Recordset** will be returned.
-           */
   def Execute(
     CommandText: java.lang.String,
     RecordsAffected: js.UndefOr[scala.Nothing],
     Options: ExecuteOptionEnum
   ): Recordset | scala.Null = js.native
   /**
-           * @param ConnectionString [ConnectionString='']
-           * @param UserID [UserID='']
-           * @param Password [Password='']
-           * @param Options [Options=-1]
-           */
+    * @param ConnectionString [ConnectionString='']
+    * @param UserID [UserID='']
+    * @param Password [Password='']
+    * @param Options [Options=-1]
+    */
   def Open(): scala.Unit = js.native
-  /**
-           * @param ConnectionString [ConnectionString='']
-           * @param UserID [UserID='']
-           * @param Password [Password='']
-           * @param Options [Options=-1]
-           */
   def Open(ConnectionString: java.lang.String): scala.Unit = js.native
-  /**
-           * @param ConnectionString [ConnectionString='']
-           * @param UserID [UserID='']
-           * @param Password [Password='']
-           * @param Options [Options=-1]
-           */
   def Open(ConnectionString: java.lang.String, UserID: java.lang.String): scala.Unit = js.native
-  /**
-           * @param ConnectionString [ConnectionString='']
-           * @param UserID [UserID='']
-           * @param Password [Password='']
-           * @param Options [Options=-1]
-           */
   def Open(ConnectionString: java.lang.String, UserID: java.lang.String, Password: java.lang.String): scala.Unit = js.native
-  /**
-           * @param ConnectionString [ConnectionString='']
-           * @param UserID [UserID='']
-           * @param Password [Password='']
-           * @param Options [Options=-1]
-           */
   def Open(
     ConnectionString: java.lang.String,
     UserID: java.lang.String,
@@ -115,21 +69,16 @@ class Connection protected () extends js.Object {
     Options: scala.Double
   ): scala.Unit = js.native
   /**
-           * Returns a Recordset object that contains schema information
-           * @param Schema Type of schema query to run
-           * @param Restrictions A SafeArray of query constraints; depends on the [type of the schema query](https://msdn.microsoft.com/en-us/library/jj249359.aspx)
-           */
+    * Returns a Recordset object that contains schema information
+    * @param Schema Type of schema query to run
+    * @param Restrictions A SafeArray of query constraints; depends on the [type of the schema query](https://msdn.microsoft.com/en-us/library/jj249359.aspx)
+    */
   def OpenSchema(Schema: SchemaEnum): Recordset = js.native
-  /**
-           * Returns a Recordset object that contains schema information
-           * @param Schema Type of schema query to run
-           * @param Restrictions A SafeArray of query constraints; depends on the [type of the schema query](https://msdn.microsoft.com/en-us/library/jj249359.aspx)
-           */
   def OpenSchema(Schema: SchemaEnum, Restrictions: activexDashInteropLib.SafeArray[java.lang.String]): Recordset = js.native
   /**
-           * Returns a Recordset object that contains schema information, for a provider-specific schema query type
-           * @param SchemaID The GUID for a provider-schema query not defined by the OLE DB specification.
-           */
+    * Returns a Recordset object that contains schema information, for a provider-specific schema query type
+    * @param SchemaID The GUID for a provider-schema query not defined by the OLE DB specification.
+    */
   def OpenSchema(
     Schema: SchemaEnum,
     Restrictions: activexDashInteropLib.SafeArray[java.lang.String],

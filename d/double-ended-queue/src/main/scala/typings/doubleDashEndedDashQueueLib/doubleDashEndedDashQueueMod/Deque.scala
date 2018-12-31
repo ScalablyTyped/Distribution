@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Deque[T] extends js.Object {
   val length: scala.Double
   def clear(): scala.Unit

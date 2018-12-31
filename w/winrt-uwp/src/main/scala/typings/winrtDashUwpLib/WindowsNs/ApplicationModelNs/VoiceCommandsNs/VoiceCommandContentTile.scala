@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** An asset, containing image, text, and link data, provided by the background app service for display on the Cortana canvas. */
 @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandContentTile")
 @js.native
+/** Creates an instance of the VoiceCommandContentTile class. */
 class VoiceCommandContentTile () extends js.Object {
   /** Gets or sets supplementary information the background app service can associate with the content tile. This information is not used by Cortana. */
   var appContext: js.Any = js.native

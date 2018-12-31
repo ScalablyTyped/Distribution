@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default '.icon'
-                   */
+    * @default '.icon'
+    */
   var icon: java.lang.String
 }
 

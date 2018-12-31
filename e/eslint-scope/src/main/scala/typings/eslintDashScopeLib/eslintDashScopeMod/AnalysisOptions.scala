@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnalysisOptions extends js.Object {
   var directive: js.UndefOr[scala.Boolean] = js.undefined
   var ecmaVersion: js.UndefOr[scala.Double] = js.undefined

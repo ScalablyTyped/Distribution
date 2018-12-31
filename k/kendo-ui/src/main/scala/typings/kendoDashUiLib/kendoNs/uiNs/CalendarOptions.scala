@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CalendarOptions extends js.Object {
   var change: js.UndefOr[js.Function1[/* e */ CalendarEvent, scala.Unit]] = js.undefined
   var culture: js.UndefOr[java.lang.String] = js.undefined

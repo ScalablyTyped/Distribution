@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContainerCreateOptions extends js.Object {
   var AttachStderr: js.UndefOr[scala.Boolean] = js.undefined
   var AttachStdin: js.UndefOr[scala.Boolean] = js.undefined

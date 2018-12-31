@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlashActionsPanel extends js.Object {
   def getClassForObject(): js.Any
   def getScriptAssistMode(): js.Any

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Provides gesture and manipulation recognition, event listeners, and settings. */
 @JSGlobal("Windows.UI.Input.GestureRecognizer")
 @js.native
+/** Initializes a new instance of a GestureRecognizer object. */
 class GestureRecognizer () extends js.Object {
   /** Gets or sets a value that indicates whether manipulations during inertia are generated automatically. */
   var autoProcessInertia: scala.Boolean = js.native
@@ -119,10 +120,10 @@ class GestureRecognizer () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[GestureRecognizer, TappedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Identifies whether a tap can still be interpreted as the second tap of a double tap gesture.
-                   * @param value The last input pointer.
-                   * @return True if a UI element supports the double tap gesture and the time threshold to complete the gesture has not been crossed; otherwise false.
-                   */
+    * Identifies whether a tap can still be interpreted as the second tap of a double tap gesture.
+    * @param value The last input pointer.
+    * @return True if a UI element supports the double tap gesture and the time threshold to complete the gesture has not been crossed; otherwise false.
+    */
   def canBeDoubleTap(value: PointerPoint): scala.Boolean = js.native
   /** Causes the gesture recognizer to finalize an interaction. */
   def completeGesture(): scala.Unit = js.native
@@ -147,28 +148,28 @@ class GestureRecognizer () extends js.Object {
   /** Occurs when the pointer input is interpreted as a tap gesture. */
   def ontapped(ev: TappedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[GestureRecognizer]): scala.Unit = js.native
   /**
-                   * Processes pointer input and raises the GestureRecognizer events appropriate to a pointer down action for the gestures and manipulations specified by the GestureSettings property.
-                   * @param value The input point.
-                   */
+    * Processes pointer input and raises the GestureRecognizer events appropriate to a pointer down action for the gestures and manipulations specified by the GestureSettings property.
+    * @param value The input point.
+    */
   def processDownEvent(value: PointerPoint): scala.Unit = js.native
   /** Performs inertia calculations and raises the various inertia events. */
   def processInertia(): scala.Unit = js.native
   /**
-                   * Processes pointer input and raises the GestureRecognizer events appropriate to a mouse wheel action for the gestures and manipulations specified by the GestureSettings property.
-                   * @param value The input point.
-                   * @param isShiftKeyDown True if the Shift key is pressed; otherwise false.
-                   * @param isControlKeyDown True if the Ctrl key is pressed.
-                   */
+    * Processes pointer input and raises the GestureRecognizer events appropriate to a mouse wheel action for the gestures and manipulations specified by the GestureSettings property.
+    * @param value The input point.
+    * @param isShiftKeyDown True if the Shift key is pressed; otherwise false.
+    * @param isControlKeyDown True if the Ctrl key is pressed.
+    */
   def processMouseWheelEvent(value: PointerPoint, isShiftKeyDown: scala.Boolean, isControlKeyDown: scala.Boolean): scala.Unit = js.native
   /**
-                   * Processes pointer input and raises the GestureRecognizer events appropriate to a pointer move action for the gestures and manipulations specified by the GestureSettings property.
-                   * @param value The pointer location history based on the PointerId . If no history is available then the value is the current location of the input pointer.
-                   */
+    * Processes pointer input and raises the GestureRecognizer events appropriate to a pointer move action for the gestures and manipulations specified by the GestureSettings property.
+    * @param value The pointer location history based on the PointerId . If no history is available then the value is the current location of the input pointer.
+    */
   def processMoveEvents(value: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[PointerPoint]): scala.Unit = js.native
   /**
-                   * Processes pointer input and raises the GestureRecognizer events appropriate to a pointer up action for the gestures and manipulations specified by the GestureSettings property.
-                   * @param value The input point.
-                   */
+    * Processes pointer input and raises the GestureRecognizer events appropriate to a pointer up action for the gestures and manipulations specified by the GestureSettings property.
+    * @param value The input point.
+    */
   def processUpEvent(value: PointerPoint): scala.Unit = js.native
   def removeEventListener(`type`: java.lang.String, listener: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_]): scala.Unit = js.native
   @JSName("removeEventListener")

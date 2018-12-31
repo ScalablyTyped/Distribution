@@ -10,23 +10,23 @@ import scala.scalajs.js.annotation._
 @js.native
 class UssdMessage protected () extends js.Object {
   /**
-                   * Creates a new instance of a UssdMessage and encodes the supplied string into the message payload.
-                   * @param messageText The payload for the UssdMessage.
-                   */
+    * Creates a new instance of a UssdMessage and encodes the supplied string into the message payload.
+    * @param messageText The payload for the UssdMessage.
+    */
   def this(messageText: java.lang.String) = this()
   /** Gets or sets the encoding scheme of the payload of this UssdMessage . */
   var dataCodingScheme: scala.Double = js.native
   /** Gets or sets the payload of this UssdMessage as text. */
   var payloadAsText: java.lang.String = js.native
   /**
-                   * Gets the raw payload of this UssdMessage .
-                   * @return The raw payload of this UssdMessage .
-                   */
+    * Gets the raw payload of this UssdMessage .
+    * @return The raw payload of this UssdMessage .
+    */
   def getPayload(): js.Array[scala.Double] = js.native
   /**
-                   * Sets the raw payload of this UssdMessage .
-                   * @param value The raw payload of this UssdMessage .
-                   */
+    * Sets the raw payload of this UssdMessage .
+    * @param value The raw payload of this UssdMessage .
+    */
   def setPayload(value: js.Array[scala.Double]): scala.Unit = js.native
 }
 

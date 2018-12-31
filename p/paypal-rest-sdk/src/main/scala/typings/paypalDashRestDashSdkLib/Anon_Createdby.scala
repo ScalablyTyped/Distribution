@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Createdby extends js.Object {
   var cancelled_by: js.UndefOr[java.lang.String] = js.undefined
   var cancelled_date: js.UndefOr[java.lang.String] = js.undefined

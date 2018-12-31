@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CollectionAdsDialogParams extends InstantExperiencesAdsDialogParams {
   var account_id: java.lang.String
   @JSName("canvas_id")

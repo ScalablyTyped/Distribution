@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConversionsBatchUpdateRequest extends js.Object {
   /** The set of conversions to update. */
   var conversions: js.UndefOr[js.Array[Conversion]] = js.undefined

@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default '.ui:not(.menu)'
-                   */
+    * @default '.ui:not(.menu)'
+    */
   var parent: java.lang.String
   /**
-                   * @default '.ui.tab'
-                   */
+    * @default '.ui.tab'
+    */
   var tabs: java.lang.String
 }
 

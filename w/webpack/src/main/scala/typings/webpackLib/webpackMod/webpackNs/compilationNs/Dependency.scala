@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Dependency extends js.Object {
   def disconnect(): scala.Unit
   def getErrors(): js.Any

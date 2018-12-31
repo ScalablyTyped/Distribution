@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/fn/array/of", JSImport.Namespace)
 @js.native
 object fnArrayOfMod
-  extends org.scalablytyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[Anon_Items]
 

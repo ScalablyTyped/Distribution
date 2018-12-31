@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectionStateChange extends js.Object {
   var current: ConnectionState
   var previous: ConnectionState

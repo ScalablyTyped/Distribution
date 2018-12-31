@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // ELangTest
-
 trait IELangTestDefaults extends IELangBaseDefaults {
   var formHtml: java.lang.String
   var rdoOrderedLabel: java.lang.String

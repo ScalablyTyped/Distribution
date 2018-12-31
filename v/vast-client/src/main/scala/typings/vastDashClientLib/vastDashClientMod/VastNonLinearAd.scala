@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VastNonLinearAd extends js.Object {
   var adParameters: java.lang.String
   var apiFramework: js.Any

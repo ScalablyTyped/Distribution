@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "MailComposer")
 @js.native
 object MailComposerNs extends js.Object {
-  
   trait ComposeOptions extends js.Object {
     /** An array of app’s internal file uris to attach. */
     var attachments: js.UndefOr[js.Array[java.lang.String]] = js.undefined

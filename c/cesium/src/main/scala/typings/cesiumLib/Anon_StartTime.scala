@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_StartTime extends js.Object {
   var canAnimate: js.UndefOr[scala.Boolean] = js.undefined
   var clockRange: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.ClockRange] = js.undefined

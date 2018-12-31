@@ -22,19 +22,17 @@ trait WatchHost extends js.Object {
   /** If provided, will be used to set delayed compilation, so that multiple changes in short span are compiled together */
   var setTimeout: js.UndefOr[
     js.Function3[
-      /* callback */ js.Function1[/* repeated */js.Any, scala.Unit], 
+      /* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], 
       /* ms */ scala.Double, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       _
     ]
   ] = js.native
   /** Used to watch resolved module's failed lookup locations, config file specs, type roots where auto type reference directives are added */
   def watchDirectory(path: java.lang.String, callback: DirectoryWatcherCallback): FileWatcher = js.native
-  /** Used to watch resolved module's failed lookup locations, config file specs, type roots where auto type reference directives are added */
   def watchDirectory(path: java.lang.String, callback: DirectoryWatcherCallback, recursive: scala.Boolean): FileWatcher = js.native
   /** Used to watch changes in source files, missing files needed to update the program or config file */
   def watchFile(path: java.lang.String, callback: FileWatcherCallback): FileWatcher = js.native
-  /** Used to watch changes in source files, missing files needed to update the program or config file */
   def watchFile(path: java.lang.String, callback: FileWatcherCallback, pollingInterval: scala.Double): FileWatcher = js.native
 }
 

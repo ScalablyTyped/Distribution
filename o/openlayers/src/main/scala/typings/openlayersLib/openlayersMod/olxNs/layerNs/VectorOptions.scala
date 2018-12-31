@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VectorOptions extends js.Object {
   var declutter: js.UndefOr[scala.Boolean] = js.undefined
   var extent: js.UndefOr[openlayersLib.openlayersMod.Extent] = js.undefined

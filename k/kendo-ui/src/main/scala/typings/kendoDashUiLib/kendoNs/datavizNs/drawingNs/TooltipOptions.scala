@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TooltipOptions extends js.Object {
   var autoHide: js.UndefOr[scala.Boolean] = js.undefined
   var content: js.UndefOr[java.lang.String | js.Function] = js.undefined

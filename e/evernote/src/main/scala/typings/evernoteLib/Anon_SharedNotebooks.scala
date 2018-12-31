@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SharedNotebooks extends js.Object {
   var businessNotebook: js.UndefOr[evernoteLib.evernoteMod.EvernoteNs.BusinessNotebook] = js.undefined
   var contact: js.UndefOr[evernoteLib.evernoteMod.EvernoteNs.User] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SharedDescriptionFields extends js.Object {
   // b=AS:4000
   var bandwidth: js.UndefOr[sdpDashTransformLib.Anon_Limit] = js.undefined

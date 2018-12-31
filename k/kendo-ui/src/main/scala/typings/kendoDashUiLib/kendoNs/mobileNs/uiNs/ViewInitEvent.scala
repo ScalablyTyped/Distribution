@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ViewInitEvent extends ViewEvent {
   var view: js.UndefOr[View] = js.undefined
 }

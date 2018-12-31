@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRequestOptions extends js.Object {
   var cert: js.UndefOr[ICertConfiguration] = js.undefined
   var ignoreSslError: js.UndefOr[scala.Boolean] = js.undefined

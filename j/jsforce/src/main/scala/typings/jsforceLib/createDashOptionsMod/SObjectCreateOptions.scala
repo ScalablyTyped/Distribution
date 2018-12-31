@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SObjectCreateOptions
   extends jsforceLib.salesforceDashObjectDashOptionsMod.SObjectOptions {
   var AccountSource: js.UndefOr[java.lang.String] = js.undefined

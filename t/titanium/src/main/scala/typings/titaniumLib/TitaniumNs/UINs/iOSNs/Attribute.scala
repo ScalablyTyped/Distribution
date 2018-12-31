@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 			 * An abstract datatype for specifying an attributed string attribute.
 			 */
-
 trait Attribute
   extends titaniumLib.TitaniumNs.Proxy {
   /**

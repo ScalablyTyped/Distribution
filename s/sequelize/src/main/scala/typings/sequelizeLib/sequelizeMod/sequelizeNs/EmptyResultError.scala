@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait EmptyResultError
   extends BaseError
      with /**
-         * Thrown when a record was not found, Usually used with rejectOnEmpty mode (see message for details)
-         */
+  * Thrown when a record was not found, Usually used with rejectOnEmpty mode (see message for details)
+  */
 org.scalablytyped.runtime.Instantiable1[/* parent */ nodeLib.Error, EmptyResultError]
 

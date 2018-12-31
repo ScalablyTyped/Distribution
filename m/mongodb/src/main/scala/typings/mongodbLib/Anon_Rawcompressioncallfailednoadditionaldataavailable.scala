@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Rawcompressioncallfailednoadditionaldataavailable extends js.Object {
   var `compressed pages read`: scala.Double
   var `compressed pages written`: scala.Double

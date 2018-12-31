@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IModeBase extends js.Object {
   var aliases: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var begin: js.UndefOr[java.lang.String | stdLib.RegExp] = js.undefined

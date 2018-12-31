@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClearDropOperation extends js.Object {
   var graph: GraphReference
   var silent: scala.Boolean

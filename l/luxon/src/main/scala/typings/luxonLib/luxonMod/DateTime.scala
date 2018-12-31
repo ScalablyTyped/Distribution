@@ -51,24 +51,18 @@ object DateTime extends js.Object {
   def fromSQL(text: java.lang.String): luxonLib.luxonMod.luxonNs.DateTime = js.native
   def fromSQL(text: java.lang.String, options: luxonLib.luxonMod.luxonNs.DateTimeOptions): luxonLib.luxonMod.luxonNs.DateTime = js.native
   /**
-               * @deprecated since 0.3.0. Use fromFormat instead
-               */
+    * @deprecated since 0.3.0. Use fromFormat instead
+    */
   def fromString(text: java.lang.String, format: java.lang.String): luxonLib.luxonMod.luxonNs.DateTime = js.native
-  /**
-               * @deprecated since 0.3.0. Use fromFormat instead
-               */
   def fromString(
     text: java.lang.String,
     format: java.lang.String,
     options: luxonLib.luxonMod.luxonNs.DateTimeOptions
   ): luxonLib.luxonMod.luxonNs.DateTime = js.native
   /**
-               * @deprecated 0.3.0. Use fromFormatExplain instead
-               */
+    * @deprecated 0.3.0. Use fromFormatExplain instead
+    */
   def fromStringExplain(text: java.lang.String, format: java.lang.String): luxonLib.luxonMod.luxonNs.ExplainedFormat = js.native
-  /**
-               * @deprecated 0.3.0. Use fromFormatExplain instead
-               */
   def fromStringExplain(
     text: java.lang.String,
     format: java.lang.String,

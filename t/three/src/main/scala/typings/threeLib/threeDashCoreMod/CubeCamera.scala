@@ -16,8 +16,8 @@ class CubeCamera () extends Object3D {
   var type_CubeCamera: threeLib.threeLibStrings.CubeCamera = js.native
   def update(renderer: WebGLRenderer, scene: Scene): scala.Unit = js.native
   /**
-       * @deprecated Use {@link CubeCamera#update .update()} instead
-       */
+    * @deprecated Use {@link CubeCamera#update .update()} instead
+    */
   def updateCubeMap(renderer: Renderer, scene: Scene): scala.Unit = js.native
 }
 

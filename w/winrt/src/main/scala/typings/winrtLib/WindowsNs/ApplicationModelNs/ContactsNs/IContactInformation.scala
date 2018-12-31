@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IContactInformation extends js.Object {
   var customFields: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ContactField]
   var emails: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ContactField]

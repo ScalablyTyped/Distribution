@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 	* @brief 消息处理器接口
 	* @detail 
 	*/
-
 @JSGlobal("Class_Handler")
 @js.native
 class Class_Handler protected () extends Class__object {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GanttMessagesEditor extends js.Object {
   var assignButton: js.UndefOr[java.lang.String] = js.undefined
   var editorTitle: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FindOneAndUpdateOptions extends js.Object {
   /**
   		 * Return a new document if one is not found with the given query.

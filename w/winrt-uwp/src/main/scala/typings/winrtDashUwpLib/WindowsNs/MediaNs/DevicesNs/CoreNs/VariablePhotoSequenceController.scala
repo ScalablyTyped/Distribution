@@ -20,15 +20,15 @@ abstract class VariablePhotoSequenceController () extends js.Object {
   /** Gets a value that indicates whether variable photo sequences are supported by the capture device. */
   var supported: scala.Boolean = js.native
   /**
-                       * Gets the current frame rate at which pictures can be taken in a variable photo sequence.
-                       * @return The current frame rate at which pictures can be taken in a variable photo sequence.
-                       */
+    * Gets the current frame rate at which pictures can be taken in a variable photo sequence.
+    * @return The current frame rate at which pictures can be taken in a variable photo sequence.
+    */
   def getCurrentFrameRate(): winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.MediaRatio = js.native
   /**
-                       * Gets the highest frame rate supported when video and a variable photo sequence are being captured concurrently.
-                       * @param captureProperties The media encoding properties.
-                       * @return The highest supported concurrent frame rate.
-                       */
+    * Gets the highest frame rate supported when video and a variable photo sequence are being captured concurrently.
+    * @param captureProperties The media encoding properties.
+    * @return The highest supported concurrent frame rate.
+    */
   def getHighestConcurrentFrameRate(captureProperties: winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.IMediaEncodingProperties): winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.MediaRatio = js.native
 }
 

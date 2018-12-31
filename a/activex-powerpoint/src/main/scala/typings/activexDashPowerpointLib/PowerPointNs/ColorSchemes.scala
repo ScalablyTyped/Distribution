@@ -14,7 +14,6 @@ class ColorSchemes protected () extends js.Object {
   var `PowerPoint.ColorSchemes_typekey`: ColorSchemes = js.native
   /** @param PowerPoint.ColorScheme [Scheme=0] */
   def Add(): ColorScheme = js.native
-  /** @param PowerPoint.ColorScheme [Scheme=0] */
   def Add(Scheme: ColorScheme): ColorScheme = js.native
   def Item(Index: scala.Double): ColorScheme = js.native
 }

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UnityMediaPlayer extends js.Object {
   def getPlaybackstate(response: js.Function): js.Any
   def onNext(onNextCallback: js.Function): js.Any

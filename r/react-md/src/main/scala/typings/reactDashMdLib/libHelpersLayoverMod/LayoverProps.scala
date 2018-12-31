@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LayoverProps
   extends SharedLayoverProps
      with // for the `component` prop until refactored out

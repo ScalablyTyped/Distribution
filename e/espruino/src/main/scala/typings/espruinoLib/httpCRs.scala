@@ -13,32 +13,32 @@ import scala.scalajs.js.annotation._
 @js.native
 trait httpCRs
   extends /**
-     * 
-     * @return  
-     */
+  * 
+  * @return  
+  */
 org.scalablytyped.runtime.Instantiable0[httpCRs] {
   /**
-       * <p>Return how many bytes are available to read. If there is a &#39;data&#39; event handler, this will always return 0.</p>
-       * 
-       * @return  
-       * @url http://www.espruino.com/Reference#l_httpCRs_available
-       */
+    * <p>Return how many bytes are available to read. If there is a &#39;data&#39; event handler, this will always return 0.</p>
+    * 
+    * @return  
+    * @url http://www.espruino.com/Reference#l_httpCRs_available
+    */
   def available(): scala.Double = js.native
   /**
-       * <p>Pipe this to a stream (an object with a &#39;write&#39; method)</p>
-       * 
-       * @param destination 
-       * @param options 
-       * @url http://www.espruino.com/Reference#l_httpCRs_pipe
-       */
+    * <p>Pipe this to a stream (an object with a &#39;write&#39; method)</p>
+    * 
+    * @param destination 
+    * @param options 
+    * @url http://www.espruino.com/Reference#l_httpCRs_pipe
+    */
   def pipe(destination: js.Any, options: js.Any): scala.Unit = js.native
   /**
-       * <p>Return a string containing characters that have been received</p>
-       * 
-       * @param chars 
-       * @return  
-       * @url http://www.espruino.com/Reference#l_httpCRs_read
-       */
+    * <p>Return a string containing characters that have been received</p>
+    * 
+    * @param chars 
+    * @return  
+    * @url http://www.espruino.com/Reference#l_httpCRs_read
+    */
   def read(chars: scala.Double): js.Any = js.native
 }
 

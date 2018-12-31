@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContainerLogsOptions extends js.Object {
   var details: js.UndefOr[scala.Boolean] = js.undefined
   var follow: js.UndefOr[scala.Boolean] = js.undefined

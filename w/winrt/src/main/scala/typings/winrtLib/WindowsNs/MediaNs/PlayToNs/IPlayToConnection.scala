@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPlayToConnection extends js.Object {
   var onerror: js.Any
   var onstatechanged: js.Any

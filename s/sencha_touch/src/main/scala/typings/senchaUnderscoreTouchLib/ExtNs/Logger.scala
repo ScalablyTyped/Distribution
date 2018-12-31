@@ -24,17 +24,7 @@ object Logger extends js.Object {
   		* @returns Ext.Logger this
   		*/
   def log(): senchaUnderscoreTouchLib.ExtNs.ILogger = js.native
-  /** [Method] Logs a message to help with debugging
-  		* @param message String Message to log.
-  		* @param priority Number Priority of the log message.
-  		* @returns Ext.Logger this
-  		*/
   def log(message: java.lang.String): senchaUnderscoreTouchLib.ExtNs.ILogger = js.native
-  /** [Method] Logs a message to help with debugging
-  		* @param message String Message to log.
-  		* @param priority Number Priority of the log message.
-  		* @returns Ext.Logger this
-  		*/
   def log(message: java.lang.String, priority: scala.Double): senchaUnderscoreTouchLib.ExtNs.ILogger = js.native
   /** [Method] Convenience method for log with priority verbose */
   def verbose(): scala.Unit = js.native

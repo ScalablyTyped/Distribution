@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ValidateOnly extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -29,9 +28,9 @@ trait Anon_ValidateOnly extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * The GMP project identifier. Required.
-                   * See note at the beginning of this file regarding project ids.
-                   */
+    * The GMP project identifier. Required.
+    * See note at the beginning of this file regarding project ids.
+    */
   var project: java.lang.String
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
@@ -40,14 +39,14 @@ trait Anon_ValidateOnly extends js.Object {
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Optional. Defaults to <code>false</code> (UpdateRemoteConfig call should
-                   * update the backend if there are no validation/interal errors). May be set
-                   * to <code>true</code> to indicate that, should no validation errors occur,
-                   * the call should return a "200 OK" instead of performing the update. Note
-                   * that other error messages (500 Internal Error, 412 Version Mismatch, etc)
-                   * may still result after flipping to <code>false</code>, even if getting a
-                   * "200 OK" when calling with <code>true</code>.
-                   */
+    * Optional. Defaults to <code>false</code> (UpdateRemoteConfig call should
+    * update the backend if there are no validation/interal errors). May be set
+    * to <code>true</code> to indicate that, should no validation errors occur,
+    * the call should return a "200 OK" instead of performing the update. Note
+    * that other error messages (500 Internal Error, 412 Version Mismatch, etc)
+    * may still result after flipping to <code>false</code>, even if getting a
+    * "200 OK" when calling with <code>true</code>.
+    */
   var validateOnly: js.UndefOr[scala.Boolean] = js.undefined
 }
 

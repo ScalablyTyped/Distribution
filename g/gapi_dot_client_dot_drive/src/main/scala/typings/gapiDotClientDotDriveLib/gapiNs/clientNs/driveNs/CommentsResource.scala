@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommentsResource extends js.Object {
   /** Creates a new comment on a file. */
   def create(request: gapiDotClientDotDriveLib.Anon_FileId): gapiDotClientLib.gapiNs.clientNs.Request[Comment]

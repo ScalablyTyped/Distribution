@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ArtifactCreated
   extends electronDashPublishLib.electronDashPublishMod.UploadTask {
   val isWriteUpdateInfo: js.UndefOr[scala.Boolean] = js.undefined

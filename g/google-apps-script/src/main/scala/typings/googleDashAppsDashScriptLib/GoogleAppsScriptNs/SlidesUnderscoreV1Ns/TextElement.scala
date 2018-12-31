@@ -12,7 +12,6 @@ import scala.scalajs.js.annotation._
 //// FILE: text.proto ////
 // A TextElement describes the content of a range of indices in the text content
 // of a Shape or TableCell.
-
 trait TextElement extends js.Object {
   // The zero-based end index of this text element, exclusive, in Unicode code
   // units.

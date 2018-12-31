@@ -16,16 +16,16 @@ class CheckBox protected () extends Widget {
   @JSName("model")
   var model_CheckBox: ejDotWebDotAllLib.ejNs.CheckBoxNs.Model = js.native
   /** Disable the CheckBox to prevent all user interactions.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def disable(): scala.Unit = js.native
   /** To enable the CheckBox
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def enable(): scala.Unit = js.native
   /** To Check the status of CheckBox
-           * @returns {boolean}
-           */
+    * @returns {boolean}
+    */
   def isChecked(): scala.Boolean = js.native
 }
 

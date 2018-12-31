@@ -5,27 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LegendFont extends js.Object {
   /** Font color of the text for legend items.
-               * @Default {null}
-               */
+    * @Default {null}
+    */
   var color: js.UndefOr[java.lang.String] = js.undefined
   /** Font family for legend item text.
-               * @Default {Segoe UI}
-               */
+    * @Default {Segoe UI}
+    */
   var fontFamily: js.UndefOr[java.lang.String] = js.undefined
   /** Font style for legend item text.
-               * @Default {Normal}
-               */
+    * @Default {Normal}
+    */
   var fontStyle: js.UndefOr[java.lang.String] = js.undefined
   /** Font weight for legend item text.
-               * @Default {Regular}
-               */
+    * @Default {Regular}
+    */
   var fontWeight: js.UndefOr[java.lang.String] = js.undefined
   /** Font size for legend item text.
-               * @Default {12px}
-               */
+    * @Default {12px}
+    */
   var size: js.UndefOr[java.lang.String] = js.undefined
 }
 

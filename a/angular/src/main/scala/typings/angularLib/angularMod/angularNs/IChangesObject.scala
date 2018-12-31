@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IChangesObject[T] extends js.Object {
   var currentValue: T
   var previousValue: T

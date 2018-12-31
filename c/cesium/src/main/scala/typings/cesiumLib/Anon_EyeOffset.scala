@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EyeOffset extends js.Object {
   var alignedAxis: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
   var color: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined

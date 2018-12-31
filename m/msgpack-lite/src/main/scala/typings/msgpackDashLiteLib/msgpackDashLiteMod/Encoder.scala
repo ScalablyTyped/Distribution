@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Encoder extends js.Object {
   var bufferish: js.Any
   var maxBufferSize: scala.Double

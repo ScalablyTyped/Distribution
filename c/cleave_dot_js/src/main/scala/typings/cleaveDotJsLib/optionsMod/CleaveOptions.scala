@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CleaveOptions extends js.Object {
   var blocks: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var copyDelimiter: js.UndefOr[scala.Boolean] = js.undefined

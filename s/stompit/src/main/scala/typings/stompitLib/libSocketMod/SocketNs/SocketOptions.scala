@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SocketOptions extends js.Object {
   var commandHandlers: js.UndefOr[CommandHandlers] = js.undefined
   var heartbeat: js.UndefOr[Heartbeat] = js.undefined

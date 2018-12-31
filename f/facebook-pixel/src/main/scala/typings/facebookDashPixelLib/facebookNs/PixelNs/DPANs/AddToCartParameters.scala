@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AddToCartParameters
   extends facebookDashPixelLib.facebookNs.PixelNs.AddToCartParameters {
   @JSName("content_ids")

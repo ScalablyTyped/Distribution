@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlatColorPickerOptions extends js.Object {
   var autoupdate: js.UndefOr[scala.Boolean] = js.undefined
   var buttons: js.UndefOr[scala.Boolean] = js.undefined

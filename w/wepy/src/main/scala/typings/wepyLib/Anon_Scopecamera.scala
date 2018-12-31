@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Scopecamera extends js.Object {
   var `scope.address`: scala.Boolean
   var `scope.camera`: scala.Boolean

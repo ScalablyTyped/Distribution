@@ -20,7 +20,7 @@ trait WebSocket
   var upgradeReq: nodeLib.httpMod.IncomingMessage = js.native
   var url: java.lang.String = js.native
   def addEventListener(method: java.lang.String): scala.Unit = js.native
-  def addEventListener(method: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): scala.Unit = js.native
+  def addEventListener(method: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): scala.Unit = js.native
   @JSName("addEventListener")
   def addEventListener_close(method: uwsLib.uwsLibStrings.close): scala.Unit = js.native
   @JSName("addEventListener")
@@ -32,7 +32,6 @@ trait WebSocket
   // HTML5 WebSocket events
   @JSName("addEventListener")
   def addEventListener_message(method: uwsLib.uwsLibStrings.message): scala.Unit = js.native
-  // HTML5 WebSocket events
   @JSName("addEventListener")
   def addEventListener_message(
     method: uwsLib.uwsLibStrings.message,
@@ -71,7 +70,7 @@ trait WebSocket
   def close(code: scala.Double, data: js.Any): scala.Unit = js.native
   def on(
     event: java.lang.String,
-    listener: js.ThisFunction1[/* this */ this.type, /* repeated */js.Any, scala.Unit]
+    listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("on")
   def on_close(

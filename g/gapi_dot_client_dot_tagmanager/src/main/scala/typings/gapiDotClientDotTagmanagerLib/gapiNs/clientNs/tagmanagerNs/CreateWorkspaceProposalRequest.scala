@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateWorkspaceProposalRequest extends js.Object {
   /** If present, an initial comment to associate with the workspace proposal. */
   var initialComment: js.UndefOr[WorkspaceProposalHistoryComment] = js.undefined

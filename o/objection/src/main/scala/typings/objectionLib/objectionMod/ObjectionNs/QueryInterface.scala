@@ -253,7 +253,6 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def connection(connection: js.Any): this.type = js.native
   // Aggregation
   def count(): this.type = js.native
-  // Aggregation
   def count(columnName: java.lang.String): this.type = js.native
   def countDistinct(): this.type = js.native
   def countDistinct(columnName: java.lang.String): this.type = js.native
@@ -308,19 +307,15 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def having(
     callback: js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
   ): QueryBuilder[QM, RM, RV] = js.native
-  // Having
   def having(
     column: java.lang.String,
     operator: java.lang.String,
     value: QueryBuilder[_, js.Array[_], js.Array[_]]
   ): QueryBuilder[QM, RM, RV] = js.native
-  // Having
   def having(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
   // Having
   def having(column: java.lang.String, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
-  // Having
   def having(column: java.lang.String, value: QueryBuilder[_, js.Array[_], js.Array[_]]): QueryBuilder[QM, RM, RV] = js.native
-  // Having
   def having(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
   // Having
   def having(column: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
@@ -652,7 +647,6 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def orWhereRaw(sql: java.lang.String, bindings: js.Any): QueryBuilder[QM, RM, RV] = js.native
   // Order by
   def orderBy(column: ColumnRef): QueryBuilder[QM, RM, RV] = js.native
-  // Order by
   def orderBy(column: ColumnRef, direction: java.lang.String): QueryBuilder[QM, RM, RV] = js.native
   def orderByRaw(raw: Raw): QueryBuilder[QM, RM, RV] = js.native
   def orderByRaw(sql: java.lang.String, bindings: js.Any*): QueryBuilder[QM, RM, RV] = js.native
@@ -719,32 +713,26 @@ trait QueryInterface[QM /* <: Model */, RM, RV] extends js.Object {
   def truncate(): this.type = js.native
   // Union
   def union(callback: js.Function0[scala.Unit]): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
-  // Union
   def union(callback: js.Function0[scala.Unit], wrap: scala.Boolean): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
   // Union
   def union(callbacks: js.Function0[scala.Unit]*): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
   // Union
   def union(callbacks: js.Array[js.Function0[scala.Unit]]): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
-  // Union
   def union(callbacks: js.Array[js.Function0[scala.Unit]], wrap: scala.Boolean): QueryBuilder[QM, js.Array[QM], js.Array[QM]] = js.native
   def unionAll(callback: js.Function0[scala.Unit]): this.type = js.native
   // Wheres
   def where(
     callback: js.Function1[/* queryBuilder */ QueryBuilder[QM, js.Array[QM], js.Array[QM]], scala.Unit]
   ): QueryBuilder[QM, RM, RV] = js.native
-  // Wheres
   def where(
     column: java.lang.String,
     operator: java.lang.String,
     value: QueryBuilder[_, js.Array[_], js.Array[_]]
   ): QueryBuilder[QM, RM, RV] = js.native
-  // Wheres
   def where(column: java.lang.String, operator: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
   // Wheres
   def where(column: java.lang.String, operator: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native
-  // Wheres
   def where(column: java.lang.String, value: QueryBuilder[_, js.Array[_], js.Array[_]]): QueryBuilder[QM, RM, RV] = js.native
-  // Wheres
   def where(column: java.lang.String, value: Reference): QueryBuilder[QM, RM, RV] = js.native
   // Wheres
   def where(column: java.lang.String, value: Value): QueryBuilder[QM, RM, RV] = js.native

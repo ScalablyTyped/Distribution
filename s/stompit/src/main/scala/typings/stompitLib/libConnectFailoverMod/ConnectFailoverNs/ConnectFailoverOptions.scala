@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectFailoverOptions extends js.Object {
   // Override the connect function
   var connectFunction: js.UndefOr[

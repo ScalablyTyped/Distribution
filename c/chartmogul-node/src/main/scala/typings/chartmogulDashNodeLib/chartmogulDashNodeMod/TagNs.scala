@@ -8,11 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("chartmogul-node", "Tag")
 @js.native
 object TagNs extends js.Object {
-  
   trait Tags extends js.Object {
     var tags: chartmogulDashNodeLib.commonMod.Strings
   }
-  
   
   trait TagsWithEmail extends js.Object {
     var email: java.lang.String

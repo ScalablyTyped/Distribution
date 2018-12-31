@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Token extends js.Object {
   /** Dependency tree parse for this token. */
   var dependencyEdge: js.UndefOr[DependencyEdge] = js.undefined

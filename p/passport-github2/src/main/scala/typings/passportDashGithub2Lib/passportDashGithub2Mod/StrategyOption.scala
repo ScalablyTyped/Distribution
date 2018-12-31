@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrategyOption
   extends passportLib.passportMod.passportNs.AuthenticateOptions {
   var authorizationURL: js.UndefOr[java.lang.String] = js.undefined

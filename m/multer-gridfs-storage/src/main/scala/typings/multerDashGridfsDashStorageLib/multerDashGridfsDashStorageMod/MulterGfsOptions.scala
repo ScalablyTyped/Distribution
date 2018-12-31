@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MulterGfsOptions extends js.Object {
   var file: js.UndefOr[
     js.Function2[

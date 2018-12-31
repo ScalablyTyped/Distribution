@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSImmutableFlowConnection extends js.Object {
   var _class: sketchappLib.sketchappLibStrings.immutableFlowConnection
   var animationType: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Buttom extends js.Object {
   var buttom: scala.Double
   var left: scala.Double

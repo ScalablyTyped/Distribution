@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TrimRows extends Base {
   var removedRows: js.Array[_]
   var rowsMapper: TrimRowsMapper

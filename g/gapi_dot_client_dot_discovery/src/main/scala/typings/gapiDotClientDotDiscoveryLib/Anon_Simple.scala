@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Simple extends js.Object {
   /** Supports the Resumable Media Upload protocol. */
   var resumable: js.UndefOr[Anon_Multipart] = js.undefined

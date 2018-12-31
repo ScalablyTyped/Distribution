@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Uvs extends js.Object {
   var colors: js.Array[scala.Double]
   var indices: js.Array[scala.Double]

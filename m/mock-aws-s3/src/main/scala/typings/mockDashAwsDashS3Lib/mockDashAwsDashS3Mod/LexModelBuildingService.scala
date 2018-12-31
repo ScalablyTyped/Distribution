@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "LexModelBuildingService")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class LexModelBuildingService ()
   extends awsDashSdkLib.awsDashSdkMod.LexModelBuildingService {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsLexmodelbuildingserviceMod.LexModelBuildingServiceNs.ClientConfiguration) = this()
 }
 

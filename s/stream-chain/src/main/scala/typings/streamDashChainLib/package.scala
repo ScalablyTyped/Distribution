@@ -5,7 +5,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object streamDashChainLib {
-  type Stream = js.Any
+  type Stream = /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Readable */ js.Any
   type StreamItem = Stream | TransformFunction
   type TransformFunction = js.Function2[/* chunk */ js.Any, /* encoding */ js.UndefOr[java.lang.String], js.Any]
 }

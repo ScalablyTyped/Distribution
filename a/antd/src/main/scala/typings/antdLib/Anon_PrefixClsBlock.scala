@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PrefixClsBlock extends js.Object {
   var block: scala.Boolean
   var ghost: scala.Boolean

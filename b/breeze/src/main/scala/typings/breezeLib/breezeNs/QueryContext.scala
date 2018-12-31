@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryContext extends js.Object {
   var dataService: DataService
   var entityManager: EntityManager

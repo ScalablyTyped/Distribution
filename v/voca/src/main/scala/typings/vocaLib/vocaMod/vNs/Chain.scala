@@ -14,7 +14,6 @@ trait Chain extends js.Object {
   def chain(): ExplicitChain[java.lang.String] = js.native
   // Chop
   def charAt(): Chain = js.native
-  // Chop
   def charAt(position: scala.Double): Chain = js.native
   // Split
   def chars(): js.Array[java.lang.String] = js.native
@@ -37,9 +36,7 @@ trait Chain extends js.Object {
   def decapitalize(): Chain = js.native
   // Query
   def endsWith(): scala.Boolean = js.native
-  // Query
   def endsWith(end: java.lang.String): scala.Boolean = js.native
-  // Query
   def endsWith(end: java.lang.String, position: scala.Double): scala.Boolean = js.native
   // Escape
   def escapeHtml(): Chain = js.native
@@ -54,15 +51,11 @@ trait Chain extends js.Object {
   def includes(search: java.lang.String, position: scala.Double): scala.Boolean = js.native
   // Index
   def indexOf(): scala.Double = js.native
-  // Index
   def indexOf(search: java.lang.String): scala.Double = js.native
-  // Index
   def indexOf(search: java.lang.String, fromIndex: scala.Double): scala.Double = js.native
   // Multipulate
   def insert(): Chain = js.native
-  // Multipulate
   def insert(toInsert: java.lang.String): Chain = js.native
-  // Multipulate
   def insert(toInsert: java.lang.String, position: scala.Double): Chain = js.native
   def isAlpha(): scala.Boolean = js.native
   def isAlphaDigit(): scala.Boolean = js.native

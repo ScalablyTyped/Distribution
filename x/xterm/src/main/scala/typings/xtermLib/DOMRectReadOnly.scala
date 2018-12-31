@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DOMRectReadOnly extends js.Object {
   val bottom: scala.Double
   val height: scala.Double

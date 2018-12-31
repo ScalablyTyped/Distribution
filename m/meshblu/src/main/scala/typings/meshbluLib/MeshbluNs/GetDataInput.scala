@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetDataInput extends js.Object {
   var finish: java.lang.String
   var limit: scala.Double

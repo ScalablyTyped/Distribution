@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_KeyExpirationTime extends js.Object {
   var keyExpirationTime: js.UndefOr[scala.Double] = js.undefined
   var passphrase: js.UndefOr[java.lang.String] = js.undefined

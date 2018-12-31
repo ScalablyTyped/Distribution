@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ScreenSize extends js.Object
 
 /**
-     * Breakpoint names for different screen sizes.
-    */
+  * Breakpoint names for different screen sizes.
+  */
 @JSGlobal("sap.m.ScreenSize")
 @js.native
 object ScreenSize extends js.Object {

@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /*
-    Collection of properties of the current browser
+  Collection of properties of the current browser
 */
-
-
 trait JQuerySupport extends js.Object {
   var ajax: js.UndefOr[scala.Boolean] = js.undefined
   var boxModel: js.UndefOr[scala.Boolean] = js.undefined

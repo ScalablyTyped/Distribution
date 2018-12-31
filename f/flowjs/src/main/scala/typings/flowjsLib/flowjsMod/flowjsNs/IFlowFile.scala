@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFlowFile extends js.Object {
   var averageSpeed: scala.Double
   var chunks: js.Array[_]

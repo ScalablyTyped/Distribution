@@ -73,16 +73,6 @@ class Uploader protected () extends js.Object {
   		 * @param {String} [fileName] If specified, will be used as a name for the file
   		 */
   def addFile(file: js.Any): scala.Unit = js.native
-  /**
-  		 * Adds file to the queue programmatically. Can be native file, instance of Plupload.File,
-  		 * instance of mOxie.File, input[type="file"] element, or array of these. Fires FilesAdded,
-  		 * if any files were added to the queue. Otherwise nothing happens.
-  		 *
-  		 * @method addFile
-  		 * @since 2.0
-  		 * @param {plupload.File|mOxie.File|File|Node|Array} file File or files to add to the queue.
-  		 * @param {String} [fileName] If specified, will be used as a name for the file
-  		 */
   def addFile(file: js.Any, fileName: java.lang.String): scala.Unit = js.native
   def bind(name: java.lang.String, func: js.Any): js.Any = js.native
   def bind(name: java.lang.String, func: js.Any, scope: js.Any): js.Any = js.native
@@ -112,14 +102,6 @@ class Uploader protected () extends js.Object {
   		 * @return {Mixed} Value for the option or the whole set
   		 */
   def getOption(): js.Any = js.native
-  /**
-  		 * Get the value for the specified option or the whole configuration, if not specified.
-  		 *
-  		 * @method getOption
-  		 * @since 2.1
-  		 * @param {String} [option] Name of the option to get
-  		 * @return {Mixed} Value for the option or the whole set
-  		 */
   def getOption(option: java.lang.String): js.Any = js.native
   def hasEventListener(name: java.lang.String): js.Any = js.native
   /**
@@ -151,32 +133,8 @@ class Uploader protected () extends js.Object {
   		 * @param {Mixed} [value] Value for the option (is ignored, if first argument is object)
   		 */
   def setOption(option: java.lang.String): scala.Unit = js.native
-  /**
-  		 * Set the value for the specified option(s).
-  		 *
-  		 * @method setOption
-  		 * @since 2.1
-  		 * @param {String|Object} option Name of the option to change or the set of key/value pairs
-  		 * @param {Mixed} [value] Value for the option (is ignored, if first argument is object)
-  		 */
   def setOption(option: java.lang.String, value: js.Any): scala.Unit = js.native
-  /**
-  		 * Set the value for the specified option(s).
-  		 *
-  		 * @method setOption
-  		 * @since 2.1
-  		 * @param {String|Object} option Name of the option to change or the set of key/value pairs
-  		 * @param {Mixed} [value] Value for the option (is ignored, if first argument is object)
-  		 */
   def setOption(option: js.Any): scala.Unit = js.native
-  /**
-  		 * Set the value for the specified option(s).
-  		 *
-  		 * @method setOption
-  		 * @since 2.1
-  		 * @param {String|Object} option Name of the option to change or the set of key/value pairs
-  		 * @param {Mixed} [value] Value for the option (is ignored, if first argument is object)
-  		 */
   def setOption(option: js.Any, value: js.Any): scala.Unit = js.native
   /**
   		 * Removes part of the queue and returns the files removed. This will also trigger the
@@ -188,25 +146,7 @@ class Uploader protected () extends js.Object {
   		 * @return {Array} Array of files that was removed.
   		 */
   def splice(): js.Any = js.native
-  /**
-  		 * Removes part of the queue and returns the files removed. This will also trigger the
-  		 * FilesRemoved and QueueChanged events.
-  		 *
-  		 * @method splice
-  		 * @param {Number} [start=0] Start index to remove from.
-  		 * @param {Number} [length] Number of files to remove (defaults to number of files in the queue).
-  		 * @return {Array} Array of files that was removed.
-  		 */
   def splice(start: scala.Double): js.Any = js.native
-  /**
-  		 * Removes part of the queue and returns the files removed. This will also trigger the
-  		 * FilesRemoved and QueueChanged events.
-  		 *
-  		 * @method splice
-  		 * @param {Number} [start=0] Start index to remove from.
-  		 * @param {Number} [length] Number of files to remove (defaults to number of files in the queue).
-  		 * @return {Array} Array of files that was removed.
-  		 */
   def splice(start: scala.Double, length: scala.Double): js.Any = js.native
   /**
   		 * Starts uploading the queued files.
@@ -224,7 +164,7 @@ class Uploader protected () extends js.Object {
   		 * Dispatches the specified event name and its arguments to all listeners.
   		 * @method trigger
   	 	 * @param {String} name Event name to fire.
-           * @param {Object..} Multiple arguments to pass along to the listener functions.
+    * @param {Object..} Multiple arguments to pass along to the listener functions.
   		*/
   def trigger(name: java.lang.String, Multiple: js.Any): js.Any = js.native
   def unbind(name: java.lang.String, func: js.Any): js.Any = js.native

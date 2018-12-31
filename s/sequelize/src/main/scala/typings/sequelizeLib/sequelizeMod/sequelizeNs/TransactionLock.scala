@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Possible options for row locking. Used in conjuction with `find` calls:
-     */
-
+  * Possible options for row locking. Used in conjuction with `find` calls:
+  */
 trait TransactionLock extends js.Object {
    // 'SHARE'
   var KEY_SHARE: TransactionLockLevelKeyShare

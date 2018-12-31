@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Dimension extends js.Object {
   // The magnitude.
   var magnitude: scala.Double

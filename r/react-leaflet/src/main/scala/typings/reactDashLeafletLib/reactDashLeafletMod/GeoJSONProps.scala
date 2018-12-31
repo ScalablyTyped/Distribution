@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GeoJSONProps
   extends leafletLib.leafletMod.GeoJSONOptions[js.Any]
      with FeatureGroupEvents {

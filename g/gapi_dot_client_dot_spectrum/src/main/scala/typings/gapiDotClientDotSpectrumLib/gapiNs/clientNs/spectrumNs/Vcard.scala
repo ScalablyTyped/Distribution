@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Vcard extends js.Object {
   /** The street address of the entity. */
   var adr: js.UndefOr[VcardAddress] = js.undefined

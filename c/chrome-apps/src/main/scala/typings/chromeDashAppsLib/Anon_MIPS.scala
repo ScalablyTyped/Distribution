@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MIPS extends js.Object {
   var ARM: chromeDashAppsLib.chromeDashAppsLibStrings.arm
   var MIPS: chromeDashAppsLib.chromeDashAppsLibStrings.mips

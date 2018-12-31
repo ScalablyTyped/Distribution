@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IResizeFilter extends js.Object {
   /**
   	 * LanczosLobes parameter for lanczos filter

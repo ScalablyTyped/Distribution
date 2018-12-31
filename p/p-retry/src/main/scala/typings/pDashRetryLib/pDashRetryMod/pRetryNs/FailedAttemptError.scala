@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FailedAttemptError
   extends stdLib.Error {
   var attemptNumber: scala.Double

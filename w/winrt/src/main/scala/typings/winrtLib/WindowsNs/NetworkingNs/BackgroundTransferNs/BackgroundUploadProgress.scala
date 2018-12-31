@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BackgroundUploadProgress extends js.Object {
   var bytesReceived: scala.Double
   var bytesSent: scala.Double

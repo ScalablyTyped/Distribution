@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // http://foundation.zurb.com/docs/components/dropdown.html#optional-javascript-configuration
-
 trait DropdownOptions extends js.Object {
   var active_class: js.UndefOr[java.lang.String] = js.undefined
   var align: js.UndefOr[java.lang.String] = js.undefined

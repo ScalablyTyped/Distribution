@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Jsx extends js.Object {
   var coffee: depcheckLib.depcheckMod.depcheckNs.Parser
   var es6: depcheckLib.depcheckMod.depcheckNs.Parser

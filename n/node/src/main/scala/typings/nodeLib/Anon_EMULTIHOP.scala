@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EMULTIHOP extends js.Object {
   var E2BIG: scala.Double
   var EACCES: scala.Double

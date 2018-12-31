@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListPartsResult extends js.Object {
   var PartNumberMarker: scala.Double
   var bucket: java.lang.String

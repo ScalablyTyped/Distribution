@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CreatedByUpsamplingCredits extends js.Object {
   var buffer: stdLib.ArrayBuffer
   var childTileMask: js.UndefOr[scala.Double] = js.undefined

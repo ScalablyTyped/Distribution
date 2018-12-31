@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CHANGED extends js.Object {
   var CHANGED: chromeDashAppsLib.chromeDashAppsLibStrings.CHANGED
   var DELETED: chromeDashAppsLib.chromeDashAppsLibStrings.DELETED

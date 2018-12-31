@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Block extends js.Object {
   var header: java.lang.String
   var lines: js.Array[Line]

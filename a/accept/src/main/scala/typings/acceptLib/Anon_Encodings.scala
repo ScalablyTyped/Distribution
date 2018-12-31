@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Encodings extends js.Object {
   var charsets: js.Array[java.lang.String]
   var encodings: js.Array[java.lang.String]

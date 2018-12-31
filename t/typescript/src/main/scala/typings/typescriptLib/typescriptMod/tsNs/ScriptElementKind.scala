@@ -57,9 +57,9 @@ object ScriptElementKind extends js.Object {
     extends typescriptLib.typescriptMod.tsNs.ScriptElementKind
   
   /**
-           * Inside module and script only
-           * function f() { }
-           */
+    * Inside module and script only
+    * function f() { }
+    */
   @js.native
   sealed trait functionElement
     extends typescriptLib.typescriptMod.tsNs.ScriptElementKind
@@ -75,8 +75,8 @@ object ScriptElementKind extends js.Object {
     extends typescriptLib.typescriptMod.tsNs.ScriptElementKind
   
   /**
-           * <JsxTagName attribute1 attribute2={0} />
-           */
+    * <JsxTagName attribute1 attribute2={0} />
+    */
   @js.native
   sealed trait jsxAttribute
     extends typescriptLib.typescriptMod.tsNs.ScriptElementKind
@@ -124,9 +124,9 @@ object ScriptElementKind extends js.Object {
     extends typescriptLib.typescriptMod.tsNs.ScriptElementKind
   
   /**
-           * class X { [public|private]* foo:number; }
-           * interface Y { foo:number; }
-           */
+    * class X { [public|private]* foo:number; }
+    * interface Y { foo:number; }
+    */
   @js.native
   sealed trait memberVariableElement
     extends typescriptLib.typescriptMod.tsNs.ScriptElementKind
@@ -169,9 +169,9 @@ object ScriptElementKind extends js.Object {
     extends typescriptLib.typescriptMod.tsNs.ScriptElementKind
   
   /**
-           * Inside module and script only
-           * const v = ..
-           */
+    * Inside module and script only
+    * const v = ..
+    */
   @js.native
   sealed trait variableElement
     extends typescriptLib.typescriptMod.tsNs.ScriptElementKind

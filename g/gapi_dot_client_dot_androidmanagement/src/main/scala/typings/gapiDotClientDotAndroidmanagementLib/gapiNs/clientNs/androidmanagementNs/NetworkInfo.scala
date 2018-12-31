@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NetworkInfo extends js.Object {
   /** IMEI number of the GSM device, e.g. A1000031212. */
   var imei: js.UndefOr[java.lang.String] = js.undefined

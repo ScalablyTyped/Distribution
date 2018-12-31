@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HttpOptions extends js.Object {
   var before: js.UndefOr[js.Function1[/* request */ js.Any, _]] = js.undefined
   var body: js.UndefOr[js.Any] = js.undefined

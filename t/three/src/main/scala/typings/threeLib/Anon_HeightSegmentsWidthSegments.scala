@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_HeightSegmentsWidthSegments extends js.Object {
   var height: scala.Double
   var heightSegments: scala.Double

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Specifies how to parse data in the buffer. */
-
 trait Printing3DBufferDescription extends js.Object {
   /** Specifies the format used by the buffer. */
   var format: Printing3DBufferFormat

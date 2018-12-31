@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EndOffset extends js.Object {
   var endOffset: scala.Double
   var endTextNodePos: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParallelCollectionScanOptions extends js.Object {
   var batchSize: js.UndefOr[scala.Double] = js.undefined
   var numCursors: js.UndefOr[scala.Double] = js.undefined

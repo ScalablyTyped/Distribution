@@ -8,9 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait LodashAt extends js.Object {
   def apply(props: lodashLib.lodashMod.underscoreNs.PropertyPath): LodashAt1x1 = js.native
-  def apply[T /* <: js.Object */](props: lodashLib.lodashMod.underscoreNs.Many[java.lang.String], `object`: T): js.Array[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
-  ] = js.native
+  def apply[T /* <: js.Object */](props: lodashLib.lodashMod.underscoreNs.Many[java.lang.String], `object`: T): js.Array[/* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any] = js.native
   def apply[T](
     props: lodashLib.lodashMod.underscoreNs.PropertyPath,
     `object`: lodashLib.lodashMod.underscoreNs.Dictionary[T]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait File extends js.Object {
   /** A Buffer of the entire file (MemoryStorage) */
   var buffer: nodeLib.Buffer

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParagraphStyle extends js.Object {
   def getIndentEnd(): stdLib.Number
   def getIndentFirstLine(): stdLib.Number

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VertexFormat extends Packable {
   var binormal: scala.Boolean
   var color: scala.Boolean

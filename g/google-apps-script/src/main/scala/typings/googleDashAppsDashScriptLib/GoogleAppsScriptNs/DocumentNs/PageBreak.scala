@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PageBreak extends js.Object {
   def copy(): PageBreak
   def getAttributes(): js.Object

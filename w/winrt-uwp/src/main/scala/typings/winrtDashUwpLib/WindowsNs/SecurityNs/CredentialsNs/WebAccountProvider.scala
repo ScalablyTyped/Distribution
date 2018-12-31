@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebAccountProvider protected () extends js.Object {
   /**
-                   * Creates an instance of the WebAccountProvider class.
-                   * @param id The web account provider id.
-                   * @param displayName The display name for the web account provider.
-                   * @param iconUri The Uri of the icon image to display for the web account provider.
-                   */
+    * Creates an instance of the WebAccountProvider class.
+    * @param id The web account provider id.
+    * @param displayName The display name for the web account provider.
+    * @param iconUri The Uri of the icon image to display for the web account provider.
+    */
   def this(id: java.lang.String, displayName: java.lang.String, iconUri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri) = this()
   /** Gets the authority of the web account provider. Use authority to disambiguate between a single provider with multiple identities (such as a Microsoft account versus Azure Active Directory). */
   var authority: java.lang.String = js.native

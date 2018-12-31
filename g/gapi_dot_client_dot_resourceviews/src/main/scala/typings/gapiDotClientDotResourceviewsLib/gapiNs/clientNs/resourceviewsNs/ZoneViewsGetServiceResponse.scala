@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ZoneViewsGetServiceResponse extends js.Object {
   /** The service information. */
   var endpoints: js.UndefOr[js.Array[ServiceEndpoint]] = js.undefined

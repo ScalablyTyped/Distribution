@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CredentialDetails extends js.Object {
   var ca: java.lang.String | js.Array[java.lang.String]
   var cert: java.lang.String

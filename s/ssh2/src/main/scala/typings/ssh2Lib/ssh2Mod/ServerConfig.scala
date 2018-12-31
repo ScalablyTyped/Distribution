@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerConfig extends js.Object {
   /** Explicit overrides for the default transport layer algorithms used for the connection. */
   var algorithms: js.UndefOr[ssh2DashStreamsLib.ssh2DashStreamsMod.Algorithms] = js.undefined

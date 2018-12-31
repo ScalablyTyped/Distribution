@@ -13,22 +13,8 @@ object effectsNs extends js.Object {
   val put: reduxDashSagaLib.effectsMod.Put = js.native
   val spawn: reduxDashSagaLib.effectsMod.CallEffectFactory[reduxDashSagaLib.effectsMod.ForkEffect] = js.native
   val take: reduxDashSagaLib.effectsMod.Take = js.native
-  val takeLatest: js.Function9[
-    /* channel */ reduxDashSagaLib.reduxDashSagaMod.Channel[js.Any], 
-    /* worker */ reduxDashSagaLib.effectsMod.HelperFunc6Rest[js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any], 
-    /* arg1 */ js.Any, 
-    /* arg2 */ js.Any, 
-    /* arg3 */ js.Any, 
-    /* arg4 */ js.Any, 
-    /* arg5 */ js.Any, 
-    /* arg6 */ js.Any, 
-    /* repeated */js.Any, 
-    reduxDashSagaLib.effectsMod.ForkEffect
-  ] = js.native
-  val takem: js.Function1[
-    /* pattern */ js.UndefOr[reduxDashSagaLib.effectsMod.Pattern], 
-    reduxDashSagaLib.effectsMod.TakeEffect
-  ] = js.native
+  val takeLatest: reduxDashSagaLib.Anon_Channel = js.native
+  val takem: reduxDashSagaLib.Anon_Pattern = js.native
   def actionChannel(pattern: reduxDashSagaLib.effectsMod.Pattern): reduxDashSagaLib.effectsMod.ActionChannelEffect = js.native
   def actionChannel(
     pattern: reduxDashSagaLib.effectsMod.Pattern,

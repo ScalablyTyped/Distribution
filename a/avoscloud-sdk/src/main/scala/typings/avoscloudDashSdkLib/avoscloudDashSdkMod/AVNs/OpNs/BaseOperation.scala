@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseOperation
   extends avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.IBaseObject {
   def objects(): js.Array[_]

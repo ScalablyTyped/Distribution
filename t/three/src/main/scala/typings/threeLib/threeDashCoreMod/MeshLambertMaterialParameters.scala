@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MeshLambertMaterialParameters extends MaterialParameters {
   var alphaMap: js.UndefOr[Texture] = js.undefined
   var aoMap: js.UndefOr[Texture] = js.undefined

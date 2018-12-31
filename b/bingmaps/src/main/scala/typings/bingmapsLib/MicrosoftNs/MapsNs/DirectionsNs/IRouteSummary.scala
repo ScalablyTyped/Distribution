@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRouteSummary extends js.Object {
   /** The total travel distance of the route */
   var distance: scala.Double
@@ -18,9 +17,9 @@ trait IRouteSummary extends js.Object {
   /** The total travel time, in seconds, for the route. */
   var time: scala.Double
   /**
-          * The total travel time, in seconds, taking into account traffic delays, for the route.
-          * This property is 0 if the avoidTraffic property of the IDirectionsRequestOptions is set to false.
-          */
+    * The total travel time, in seconds, taking into account traffic delays, for the route.
+    * This property is 0 if the avoidTraffic property of the IDirectionsRequestOptions is set to false.
+    */
   var timeWithTraffic: scala.Double
 }
 

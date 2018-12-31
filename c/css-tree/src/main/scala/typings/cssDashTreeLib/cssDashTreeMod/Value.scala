@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Value extends CssNodeCommon {
   var children: List[CssNode]
   @JSName("type")

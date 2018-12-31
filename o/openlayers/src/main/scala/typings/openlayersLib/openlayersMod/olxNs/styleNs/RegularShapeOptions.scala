@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Specify radius for regular polygons, or radius1 and radius2 for stars.
-         */
-
+  * Specify radius for regular polygons, or radius1 and radius2 for stars.
+  */
 trait RegularShapeOptions extends js.Object {
   var angle: js.UndefOr[scala.Double] = js.undefined
   var fill: js.UndefOr[openlayersLib.openlayersMod.styleNs.Fill] = js.undefined

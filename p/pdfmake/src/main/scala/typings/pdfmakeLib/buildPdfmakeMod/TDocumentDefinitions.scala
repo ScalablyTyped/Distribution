@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TDocumentDefinitions extends js.Object {
   var compress: js.UndefOr[scala.Boolean] = js.undefined
   var content: java.lang.String | Content

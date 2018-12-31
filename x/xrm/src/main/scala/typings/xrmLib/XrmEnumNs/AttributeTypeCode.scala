@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait AttributeTypeCode extends js.Object
 
 /**
-     * An enumeration for Attribute Type metadata
-     */
+  * An enumeration for Attribute Type metadata
+  */
 @JSGlobal("XrmEnum.AttributeTypeCode")
 @js.native
 object AttributeTypeCode extends js.Object {

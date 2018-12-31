@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LinenoBody extends js.Object {
   var __type: java.lang.String
   var body: stylusLib.stylusMod.StylusNs.NodesNs.Block

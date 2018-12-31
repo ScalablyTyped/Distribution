@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IComponent
   extends extjsLib.ExtNs.layoutNs.ILayout {
   /** [Method] Called before any calculation cycles to reset DOM values and prepare for calculation

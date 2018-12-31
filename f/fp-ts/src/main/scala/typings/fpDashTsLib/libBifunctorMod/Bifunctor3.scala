@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Bifunctor3[F /* <: fpDashTsLib.libHKTMod.URIS3 */] extends js.Object {
   val URI: F
   def bimap[U, L, A, M, B](

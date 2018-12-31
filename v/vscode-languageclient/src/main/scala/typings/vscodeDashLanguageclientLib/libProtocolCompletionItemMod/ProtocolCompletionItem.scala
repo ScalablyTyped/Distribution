@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Dropped any */ 
-trait ProtocolCompletionItem extends js.Object {
+- Dropped any */ trait ProtocolCompletionItem extends js.Object {
   var data: js.Any
   var deprecated: scala.Boolean
   var documentationFormat: java.lang.String

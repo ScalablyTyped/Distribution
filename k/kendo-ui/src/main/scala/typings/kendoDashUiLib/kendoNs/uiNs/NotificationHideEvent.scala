@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NotificationHideEvent extends NotificationEvent {
   var element: js.UndefOr[kendoDashUiLib.JQuery] = js.undefined
 }

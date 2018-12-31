@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BeginTransactionRequest extends js.Object {
   /**
-               * The options for the transaction.
-               * Defaults to a read-write transaction.
-               */
+    * The options for the transaction.
+    * Defaults to a read-write transaction.
+    */
   var options: js.UndefOr[TransactionOptions] = js.undefined
 }
 

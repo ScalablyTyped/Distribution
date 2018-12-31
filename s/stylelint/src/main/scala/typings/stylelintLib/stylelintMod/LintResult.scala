@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LintResult extends js.Object {
   var deprecations: js.Array[java.lang.String]
   var errored: js.UndefOr[scala.Boolean]

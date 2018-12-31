@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EdgeOptions extends js.Object {
   var arrowStrikethrough: js.UndefOr[scala.Boolean] = js.undefined
   var arrows: js.UndefOr[java.lang.String | visLib.Anon_From] = js.undefined

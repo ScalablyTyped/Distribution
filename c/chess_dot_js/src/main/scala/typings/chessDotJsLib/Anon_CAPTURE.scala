@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CAPTURE extends js.Object {
   /** a pawn push of two squares */
   var BIG_PAWN: chessDotJsLib.chessDotJsLibStrings.b

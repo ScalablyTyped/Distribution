@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Key extends js.Object {
   var delimiter: java.lang.String
   var name: java.lang.String | scala.Double

@@ -10,13 +10,9 @@ import scala.scalajs.js.annotation._
 class uiElement protected () extends js.Object {
   // Not sure that the htmlList array type is right.
   def this(dialog: ckeditorLib.CKEDITORNs.dialog, elementDefinition: ckeditorLib.CKEDITORNs.uiNs.dialogNs.definitionsNs.uiElement, htmlList: js.Array[_]) = this()
-  // Not sure that the htmlList array type is right.
   def this(dialog: ckeditorLib.CKEDITORNs.dialog, elementDefinition: ckeditorLib.CKEDITORNs.uiNs.dialogNs.definitionsNs.uiElement, htmlList: js.Array[_], nodeNameArg: js.Function0[java.lang.String]) = this()
-  // Not sure that the htmlList array type is right.
   def this(dialog: ckeditorLib.CKEDITORNs.dialog, elementDefinition: ckeditorLib.CKEDITORNs.uiNs.dialogNs.definitionsNs.uiElement, htmlList: js.Array[_], nodeNameArg: js.Function0[java.lang.String], stylesArg: js.Function0[org.scalablytyped.runtime.StringDictionary[_]]) = this()
-  // Not sure that the htmlList array type is right.
   def this(dialog: ckeditorLib.CKEDITORNs.dialog, elementDefinition: ckeditorLib.CKEDITORNs.uiNs.dialogNs.definitionsNs.uiElement, htmlList: js.Array[_], nodeNameArg: js.Function0[java.lang.String], stylesArg: js.Function0[org.scalablytyped.runtime.StringDictionary[_]], attributesArg: js.Function0[org.scalablytyped.runtime.StringDictionary[_]]) = this()
-  // Not sure that the htmlList array type is right.
   def this(dialog: ckeditorLib.CKEDITORNs.dialog, elementDefinition: ckeditorLib.CKEDITORNs.uiNs.dialogNs.definitionsNs.uiElement, htmlList: js.Array[_], nodeNameArg: js.Function0[java.lang.String], stylesArg: js.Function0[org.scalablytyped.runtime.StringDictionary[_]], attributesArg: js.Function0[org.scalablytyped.runtime.StringDictionary[_]], contentsArg: js.Function0[org.scalablytyped.runtime.StringDictionary[_] | java.lang.String]) = this()
   var eventProcessors: js.Any = js.native
   def accessKeyDown(dialog: ckeditorLib.CKEDITORNs.dialog, key: java.lang.String): scala.Unit = js.native

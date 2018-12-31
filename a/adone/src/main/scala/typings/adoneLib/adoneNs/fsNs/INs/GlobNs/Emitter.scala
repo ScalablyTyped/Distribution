@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait Emitter
   extends adoneLib.adoneNs.eventNs.Emitter {
   /**
-                   * Stops the search permanently
-                   */
+    * Stops the search permanently
+    */
   def abort(): scala.Unit = js.native
   def isIgnored(path: java.lang.String): scala.Boolean = js.native
   @JSName("on")
@@ -28,12 +28,12 @@ trait Emitter
     ]
   ): this.type = js.native
   /**
-                   * Temporarely stops the search
-                   */
+    * Temporarely stops the search
+    */
   def pause(): scala.Unit = js.native
   /**
-                   * Resumes the search
-                   */
+    * Resumes the search
+    */
   def resume(): scala.Unit = js.native
 }
 

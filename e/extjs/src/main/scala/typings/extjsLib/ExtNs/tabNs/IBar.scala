@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBar
   extends extjsLib.ExtNs.panelNs.IHeader {
   /** [Method] Called by the layout system after the Component has been laid out

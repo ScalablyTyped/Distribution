@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISector extends IPath {
   /** [Config Option] (Number) */
   var centerX: js.UndefOr[scala.Double] = js.undefined

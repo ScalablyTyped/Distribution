@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MatchDetail extends js.Object {
   var mapId: scala.Double
   var matchCreation: scala.Double

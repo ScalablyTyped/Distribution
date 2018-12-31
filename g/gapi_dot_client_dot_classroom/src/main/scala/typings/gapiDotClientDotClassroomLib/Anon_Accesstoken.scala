@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Accesstoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -19,10 +18,10 @@ trait Anon_Accesstoken extends js.Object {
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Identifier of the course.
-                   * This identifier can be either the Classroom-assigned identifier or an
-                   * alias.
-                   */
+    * Identifier of the course.
+    * This identifier can be either the Classroom-assigned identifier or an
+    * alias.
+    */
   var courseId: java.lang.String
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
@@ -41,13 +40,13 @@ trait Anon_Accesstoken extends js.Object {
   /** Upload protocol for media (e.g. "raw", "multipart"). */
   var upload_protocol: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Identifier of the student to delete. The identifier can be one of the
-                   * following:
-                   *
-                   * &#42; the numeric identifier for the user
-                   * &#42; the email address of the user
-                   * &#42; the string literal `"me"`, indicating the requesting user
-                   */
+    * Identifier of the student to delete. The identifier can be one of the
+    * following:
+    *
+    * &#42; the numeric identifier for the user
+    * &#42; the email address of the user
+    * &#42; the string literal `"me"`, indicating the requesting user
+    */
   var userId: java.lang.String
 }
 

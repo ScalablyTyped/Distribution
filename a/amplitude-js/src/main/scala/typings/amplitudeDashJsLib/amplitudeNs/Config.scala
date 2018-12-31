@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Config extends js.Object {
   var apiEndpoint: js.UndefOr[java.lang.String] = js.undefined
   var batchEvents: js.UndefOr[scala.Boolean] = js.undefined

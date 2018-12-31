@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaTrackSettings extends js.Object {
   var brightness: scala.Double
   var colorTemperature: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICordova extends IAbstract {
   /** [Method] Vibrates the device
   		* @param time Object

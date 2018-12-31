@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a size that is used to convey the values of timed text style properties. */
-
 trait TimedTextSize extends js.Object {
   /** The height. */
   var height: scala.Double

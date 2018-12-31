@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Request extends js.Object {
   /** Device that send this request. */
   var device: RequestDevice

@@ -6,14 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * @class
-     *
-     * <p>A Parse.User object is a local representation of a user persisted to the
-     * Parse cloud. This class is a subclass of a Parse.Object, and retains the
-     * same functionality of a Parse.Object, but also extends it with various
-     * user specific methods, like authentication, signing up, and validation of
-     * uniqueness.</p>
-     */
+  * @class
+  *
+  * <p>A Parse.User object is a local representation of a user persisted to the
+  * Parse cloud. This class is a subclass of a Parse.Object, and retains the
+  * same functionality of a Parse.Object, but also extends it with various
+  * user specific methods, like authentication, signing up, and validation of
+  * uniqueness.</p>
+  */
 @JSGlobal("Parse.User")
 @js.native
 class User () extends Object {
@@ -35,14 +35,14 @@ class User () extends Object {
 }
 
 /**
-     * @class
-     *
-     * <p>A Parse.User object is a local representation of a user persisted to the
-     * Parse cloud. This class is a subclass of a Parse.Object, and retains the
-     * same functionality of a Parse.Object, but also extends it with various
-     * user specific methods, like authentication, signing up, and validation of
-     * uniqueness.</p>
-     */
+  * @class
+  *
+  * <p>A Parse.User object is a local representation of a user persisted to the
+  * Parse cloud. This class is a subclass of a Parse.Object, and retains the
+  * same functionality of a Parse.Object, but also extends it with various
+  * user specific methods, like authentication, signing up, and validation of
+  * uniqueness.</p>
+  */
 @JSGlobal("Parse.User")
 @js.native
 object User extends js.Object {

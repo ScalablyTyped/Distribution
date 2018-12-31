@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Mask extends js.Object {
   /**
   			 * Rgb channel (0, 1, 2 or 3)

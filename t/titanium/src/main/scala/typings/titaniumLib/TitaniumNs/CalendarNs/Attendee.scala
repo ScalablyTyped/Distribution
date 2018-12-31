@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * An object that represents a single attendee of an event.
 		 */
-
 trait Attendee
   extends titaniumLib.TitaniumNs.Proxy {
   /**

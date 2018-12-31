@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class Printing3DTexture2CoordMaterialGroup protected () extends js.Object {
   /**
-                   * Creates a instance of the Printing3DTexture2CoordMaterialGroup class.
-                   * @param MaterialGroupId The identifier for a group of 2D texture materials used in the 3D model; a value greater than zero.
-                   */
+    * Creates a instance of the Printing3DTexture2CoordMaterialGroup class.
+    * @param MaterialGroupId The identifier for a group of 2D texture materials used in the 3D model; a value greater than zero.
+    */
   def this(MaterialGroupId: scala.Double) = this()
   /** Gets the identifier (ID) of the 2D texture material group. */
   var materialGroupId: scala.Double = js.native

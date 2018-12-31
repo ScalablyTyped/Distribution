@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Repository extends js.Object {
   var allow_merge_commit: scala.Boolean
   var allow_rebase_merge: scala.Boolean

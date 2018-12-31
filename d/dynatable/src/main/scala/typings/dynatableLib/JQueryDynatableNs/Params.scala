@@ -5,47 +5,46 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Params extends js.Object {
   /**
-           * @default 'dynatable'
-           */
+    * @default 'dynatable'
+    */
   var dynatable: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * @default 'offset'
-           */
+    * @default 'offset'
+    */
   var offset: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * @default 'page'
-           */
+    * @default 'page'
+    */
   var page: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * @default 'perPage'
-           */
+    * @default 'perPage'
+    */
   var perPage: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * @default 'queries'
-           */
+    * @default 'queries'
+    */
   var queries: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * @default 'queryRecordCount'
-           */
+    * @default 'queryRecordCount'
+    */
   var queryRecordCount: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * @default null
-           */
+    * @default null
+    */
   var record: js.UndefOr[js.Object] = js.undefined
   /**
-           * @default 'records'
-           */
+    * @default 'records'
+    */
   var records: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * @default 'sorts'
-           */
+    * @default 'sorts'
+    */
   var sorts: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * @default 'totalRecordCount'
-           */
+    * @default 'totalRecordCount'
+    */
   var totalRecordCount: js.UndefOr[java.lang.String] = js.undefined
 }
 

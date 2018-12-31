@@ -12,14 +12,14 @@ abstract class MediaStreamSourceStartingRequest () extends js.Object {
   /** Specifies a reference to a TimeSpan object which represents a time position in the media time-line from which the application should return MediaStreamSample objects. */
   var startPosition: scala.Double = js.native
   /**
-                   * Defers completing the MediaStreamSource.Starting event.
-                   * @return The deferral.
-                   */
+    * Defers completing the MediaStreamSource.Starting event.
+    * @return The deferral.
+    */
   def getDeferral(): MediaStreamSourceStartingRequestDeferral = js.native
   /**
-                   * Specifies the starting position in the media time-line for subsequent MediaStreamSamples that will be delivered to the MediaStreamSource .
-                   * @param position The actual starting point in the media time-line chosen by the application.
-                   */
+    * Specifies the starting position in the media time-line for subsequent MediaStreamSamples that will be delivered to the MediaStreamSource .
+    * @param position The actual starting point in the media time-line chosen by the application.
+    */
   def setActualStartPosition(position: scala.Double): scala.Unit = js.native
 }
 

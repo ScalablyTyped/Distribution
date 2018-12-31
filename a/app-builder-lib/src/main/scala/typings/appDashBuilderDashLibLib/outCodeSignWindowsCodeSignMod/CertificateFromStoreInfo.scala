@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CertificateFromStoreInfo extends js.Object {
   var isLocalMachineStore: scala.Boolean
   var store: java.lang.String

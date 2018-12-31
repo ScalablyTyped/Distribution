@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 // Unfortunately this copy-paste must happen -- I can't just take PropTypes and programmatically
 // define a version that intersects in the Deprecatable interface into the keys.
-
 trait DeprecatablePropTypes extends js.Object {
   var any: reactLib.reactMod.ReactNs.Requireable[_] with Deprecatable[_]
   var array: reactLib.reactMod.ReactNs.Requireable[_] with Deprecatable[_]

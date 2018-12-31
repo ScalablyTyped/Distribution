@@ -9,12 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class `ReflectiveInjector_` protected () extends ReflectiveInjector {
   /**
-       * Private
-       */
+    * Private
+    */
   def this(_providers: js.Array[atAngularCoreLib.srcDiReflectiveUnderscoreProviderMod.ResolvedReflectiveProvider]) = this()
-  /**
-       * Private
-       */
   def this(_providers: js.Array[atAngularCoreLib.srcDiReflectiveUnderscoreProviderMod.ResolvedReflectiveProvider], _parent: atAngularCoreLib.srcDiInjectorMod.Injector) = this()
   var _getByKey: js.Any = js.native
   var _getByReflectiveDependency: js.Any = js.native

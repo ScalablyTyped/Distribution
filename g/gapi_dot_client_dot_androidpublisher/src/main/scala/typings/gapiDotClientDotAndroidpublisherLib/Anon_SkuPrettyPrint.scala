@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SkuPrettyPrint extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * If true the prices for all regions targeted by the parent app that don't have a price specified for this in-app product will be auto converted to the
-                   * target currency based on the default price. Defaults to false.
-                   */
+    * If true the prices for all regions targeted by the parent app that don't have a price specified for this in-app product will be auto converted to the
+    * target currency based on the default price. Defaults to false.
+    */
   var autoConvertMissingPrices: js.UndefOr[scala.Boolean] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
@@ -25,9 +24,9 @@ trait Anon_SkuPrettyPrint extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** Unique identifier for the in-app product. */
   var sku: java.lang.String

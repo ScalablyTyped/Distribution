@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModulesInRootPlugin extends js.Object {
   var path: java.lang.String
   var source: java.lang.String

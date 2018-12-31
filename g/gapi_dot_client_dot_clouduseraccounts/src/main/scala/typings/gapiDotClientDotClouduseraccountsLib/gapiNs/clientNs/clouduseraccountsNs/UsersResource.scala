@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UsersResource extends js.Object {
   /** Adds a public key to the specified User resource with the data included in the request. */
   def addPublicKey(request: gapiDotClientDotClouduseraccountsLib.Anon_ProjectPrettyPrintQuotaUserKeyUserIp): gapiDotClientLib.gapiNs.clientNs.Request[Operation]

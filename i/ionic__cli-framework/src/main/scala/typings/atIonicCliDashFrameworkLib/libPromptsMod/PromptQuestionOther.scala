@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PromptQuestionOther extends PromptQuestionBase {
   @JSName("default")
   var default_PromptQuestionOther: js.UndefOr[PromptValueOther] = js.undefined

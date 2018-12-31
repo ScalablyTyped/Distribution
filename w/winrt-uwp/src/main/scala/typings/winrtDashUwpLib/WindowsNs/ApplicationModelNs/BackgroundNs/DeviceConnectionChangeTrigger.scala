@@ -22,10 +22,10 @@ abstract class DeviceConnectionChangeTrigger () extends js.Object {
 @js.native
 object DeviceConnectionChangeTrigger extends js.Object {
   /**
-                   * Begins an asynchronous operation to get the DeviceConnectionChangeTrigger associated with the specified Id.
-                   * @param deviceId The device Id with which to find the associated trigger.
-                   * @return The DeviceConnectionChangeTrigger object associated with the specified device Id.
-                   */
+    * Begins an asynchronous operation to get the DeviceConnectionChangeTrigger associated with the specified Id.
+    * @param deviceId The device Id with which to find the associated trigger.
+    * @return The DeviceConnectionChangeTrigger object associated with the specified device Id.
+    */
   def fromIdAsync(deviceId: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[
     winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.DeviceConnectionChangeTrigger
   ] = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeflateOptions extends js.Object {
   var dictionary: js.UndefOr[js.Any] = js.undefined
   var level: js.UndefOr[scala.Double] = js.undefined

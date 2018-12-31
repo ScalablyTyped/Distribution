@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Nonce extends js.Object {
   var addFrame: js.Function2[
     /* err */ js.UndefOr[braintreeDashWebLib.braintreeDashWebMod.braintreeNs.BraintreeError], 

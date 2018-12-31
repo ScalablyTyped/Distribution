@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Definition extends js.Object {
   var createViewModel: js.UndefOr[
     js.Function2[

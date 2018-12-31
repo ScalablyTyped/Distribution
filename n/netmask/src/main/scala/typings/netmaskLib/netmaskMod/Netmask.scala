@@ -29,9 +29,7 @@ class Netmask protected () extends js.Object {
   var size: scala.Double = js.native
   // Returns true if the given ip or netmask is contained in the block
   def contains(ip: java.lang.String): scala.Boolean = js.native
-  // Returns true if the given ip or netmask is contained in the block
   def contains(ip: Netmask): scala.Boolean = js.native
-  // Returns true if the given ip or netmask is contained in the block
   def contains(ip: scala.Double): scala.Boolean = js.native
   // Evaluate a function on each IP address
   def forEach(
@@ -44,7 +42,6 @@ class Netmask protected () extends js.Object {
   ): scala.Unit = js.native
   // Returns the Netmask object for the block which follow this one
   def next(): Netmask = js.native
-  // Returns the Netmask object for the block which follow this one
   def next(count: scala.Double): Netmask = js.native
 }
 

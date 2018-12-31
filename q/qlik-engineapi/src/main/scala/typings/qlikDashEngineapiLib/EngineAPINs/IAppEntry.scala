@@ -6,37 +6,36 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * AppEntry...
-     */
-
+  * AppEntry...
+  */
 trait IAppEntry extends js.Object {
   /**
-           * Identifier of the app.
-           */
+    * Identifier of the app.
+    */
   var qID: java.lang.String
   /**
-           * Last reload time of the app.
-           */
+    * Last reload time of the app.
+    */
   var qLastReloadTime: java.lang.String
   /**
-           * Meta data.
-           */
+    * Meta data.
+    */
   var qMeta: INxMeta
   /**
-           * Path of the app.
-           */
+    * Path of the app.
+    */
   var qPath: java.lang.String
   /**
-           * Is set to true if the app is read-only.
-           */
+    * Is set to true if the app is read-only.
+    */
   var qReadOnly: scala.Boolean
   /**
-           * App thumbnail.
-           */
+    * App thumbnail.
+    */
   var qThumbnail: IStaticContentUrl
   /**
-           * Title of the app.
-           */
+    * Title of the app.
+    */
   var qTitle: java.lang.String
 }
 

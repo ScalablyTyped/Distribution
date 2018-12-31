@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LogDetails extends js.Object {
   var actual: js.Any
   var expected: js.Any

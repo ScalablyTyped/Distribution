@@ -24,20 +24,20 @@ abstract class MobileBroadbandModem () extends js.Object {
   /** Gets the maximum device service data size, in bytes, for the mobile broadband modem. */
   var maxDeviceServiceDataSizeInBytes: scala.Double = js.native
   /**
-                   * Asynchronously retrieves mobile broadband modem configuration information.
-                   * @return An asynchronous retrieval operation. On successful completion, contains a MobileBroadbandModemConfiguration object representing the current configuration.
-                   */
+    * Asynchronously retrieves mobile broadband modem configuration information.
+    * @return An asynchronous retrieval operation. On successful completion, contains a MobileBroadbandModemConfiguration object representing the current configuration.
+    */
   def getCurrentConfigurationAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[MobileBroadbandModemConfiguration] = js.native
   /**
-                   * Gets a specific device service for the mobile broadband modem.
-                   * @param deviceServiceId The unique device service identifier for the device service to be retrieved.
-                   * @return The mobile broadband device service retrieved.
-                   */
+    * Gets a specific device service for the mobile broadband modem.
+    * @param deviceServiceId The unique device service identifier for the device service to be retrieved.
+    * @return The mobile broadband device service retrieved.
+    */
   def getDeviceService(deviceServiceId: java.lang.String): MobileBroadbandDeviceService = js.native
   /**
-                   * Asynchronously performs a reset operation on the mobile broadband modem.
-                   * @return An asynchronous reset operation.
-                   */
+    * Asynchronously performs a reset operation on the mobile broadband modem.
+    * @return An asynchronous reset operation.
+    */
   def resetAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 
@@ -46,20 +46,20 @@ abstract class MobileBroadbandModem () extends js.Object {
 @js.native
 object MobileBroadbandModem extends js.Object {
   /**
-                   * Determine if a mobile broadband device is a Wireless WAN device.
-                   * @param deviceId The mobile broadband device ID
-                   * @return The mobile broadband modem.
-                   */
+    * Determine if a mobile broadband device is a Wireless WAN device.
+    * @param deviceId The mobile broadband device ID
+    * @return The mobile broadband modem.
+    */
   def fromId(deviceId: java.lang.String): winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.MobileBroadbandModem = js.native
   /**
-                   * Determines the default mobile broadband modem.
-                   * @return The mobile broadband modem.
-                   */
+    * Determines the default mobile broadband modem.
+    * @return The mobile broadband modem.
+    */
   def getDefault(): winrtDashUwpLib.WindowsNs.NetworkingNs.NetworkOperatorsNs.MobileBroadbandModem = js.native
   /**
-                   * Gets a device selector for the mobile broadband modem.
-                   * @return A device selector for the mobile broadband modem.
-                   */
+    * Gets a device selector for the mobile broadband modem.
+    * @return A device selector for the mobile broadband modem.
+    */
   def getDeviceSelector(): java.lang.String = js.native
 }
 

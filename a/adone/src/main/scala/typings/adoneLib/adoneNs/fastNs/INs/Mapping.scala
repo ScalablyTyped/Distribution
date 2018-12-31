@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Mapping extends js.Object {
   /**
-                   * Source file/files
-                   */
+    * Source file/files
+    */
   var from: java.lang.String
   /**
-                   * Destination directory
-                   */
+    * Destination directory
+    */
   var to: java.lang.String
 }
 

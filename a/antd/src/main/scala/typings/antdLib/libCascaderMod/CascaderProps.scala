@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CascaderProps extends js.Object {
   /** 是否支持清除*/
   var allowClear: js.UndefOr[scala.Boolean] = js.undefined

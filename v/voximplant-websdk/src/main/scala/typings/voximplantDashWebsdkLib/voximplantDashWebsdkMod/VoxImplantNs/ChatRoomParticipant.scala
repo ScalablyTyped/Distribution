@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	*	Chat room participant
 	*/
-
 trait ChatRoomParticipant extends js.Object {
   /**
   		* User id

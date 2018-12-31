@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line interface-name
-
 trait IRoute extends js.Object {
   var coordinates: js.UndefOr[js.Array[leafletLib.leafletMod.LatLng]] = js.undefined
   var instructions: js.UndefOr[js.Array[IInstruction]] = js.undefined

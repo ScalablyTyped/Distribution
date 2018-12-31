@@ -19,40 +19,18 @@ trait SignedData extends js.Object {
   var version: scala.Double = js.native
   def fromSchema(schema: js.Any): scala.Unit = js.native
   /**
-           * Signing current SignedData
-           * 
-           * @param {CryptoKey} privateKey Private key for "subjectPublicKeyInfo" structure
-           * @param {number} signerIndex Index number (starting from 0) of signer index to make signature for
-           * @param {string} [hashAlgorithm] Hashing algorithm. Default SHA-1
-           * @param {BufferSource} [data] Detached data
-           * @returns {ArrayBuffer}
-           * 
-           * @memberOf SignedData
-           */
+    * Signing current SignedData
+    * 
+    * @param {CryptoKey} privateKey Private key for "subjectPublicKeyInfo" structure
+    * @param {number} signerIndex Index number (starting from 0) of signer index to make signature for
+    * @param {string} [hashAlgorithm] Hashing algorithm. Default SHA-1
+    * @param {BufferSource} [data] Detached data
+    * @returns {ArrayBuffer}
+    * 
+    * @memberOf SignedData
+    */
   def sign(privateKey: stdLib.CryptoKey, signerIndex: scala.Double): stdLib.ArrayBuffer = js.native
-  /**
-           * Signing current SignedData
-           * 
-           * @param {CryptoKey} privateKey Private key for "subjectPublicKeyInfo" structure
-           * @param {number} signerIndex Index number (starting from 0) of signer index to make signature for
-           * @param {string} [hashAlgorithm] Hashing algorithm. Default SHA-1
-           * @param {BufferSource} [data] Detached data
-           * @returns {ArrayBuffer}
-           * 
-           * @memberOf SignedData
-           */
   def sign(privateKey: stdLib.CryptoKey, signerIndex: scala.Double, hashAlgorithm: java.lang.String): stdLib.ArrayBuffer = js.native
-  /**
-           * Signing current SignedData
-           * 
-           * @param {CryptoKey} privateKey Private key for "subjectPublicKeyInfo" structure
-           * @param {number} signerIndex Index number (starting from 0) of signer index to make signature for
-           * @param {string} [hashAlgorithm] Hashing algorithm. Default SHA-1
-           * @param {BufferSource} [data] Detached data
-           * @returns {ArrayBuffer}
-           * 
-           * @memberOf SignedData
-           */
   def sign(
     privateKey: stdLib.CryptoKey,
     signerIndex: scala.Double,
@@ -61,18 +39,12 @@ trait SignedData extends js.Object {
   ): stdLib.ArrayBuffer = js.native
   def toJSON(): js.Any = js.native
   /**
-           * Convert current object to asn1js object and set correct values
-           * 
-           * @param {boolean} [encodeFlag]
-           * @returns {*}
-           */
+    * Convert current object to asn1js object and set correct values
+    * 
+    * @param {boolean} [encodeFlag]
+    * @returns {*}
+    */
   def toSchema(): js.Any = js.native
-  /**
-           * Convert current object to asn1js object and set correct values
-           * 
-           * @param {boolean} [encodeFlag]
-           * @returns {*}
-           */
   def toSchema(encodeFlag: scala.Boolean): js.Any = js.native
   def verify(options: VerifyParams): js.Thenable[VerifyResult] = js.native
 }

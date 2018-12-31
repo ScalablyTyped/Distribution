@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NumberConstructor extends js.Object {
   def above(n: scala.Double): NumberConstructor
   def below(n: scala.Double): NumberConstructor

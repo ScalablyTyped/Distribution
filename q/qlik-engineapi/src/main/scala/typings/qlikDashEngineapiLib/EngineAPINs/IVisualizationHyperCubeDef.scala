@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * HyperCubeDef...
-     */
-
+  * HyperCubeDef...
+  */
 trait IVisualizationHyperCubeDef extends IHyperCubeDef {
   var customErrorMessage: ICustomErrorMessage
   @JSName("qDimensions")

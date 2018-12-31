@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModSkip extends js.Object {
   var m: java.lang.String
   var mi: scala.Double

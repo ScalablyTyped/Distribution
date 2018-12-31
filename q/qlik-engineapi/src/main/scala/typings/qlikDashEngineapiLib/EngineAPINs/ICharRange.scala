@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * CharRange...
-     */
-
+  * CharRange...
+  */
 trait ICharRange extends js.Object {
   /*
-           * Number of occurrences found
-           */
+    * Number of occurrences found
+    */
   var qCharCount: scala.Double
   /**
-           * Position of the first search occurrence
-           */
+    * Position of the first search occurrence
+    */
   var qCharPos: scala.Double
 }
 

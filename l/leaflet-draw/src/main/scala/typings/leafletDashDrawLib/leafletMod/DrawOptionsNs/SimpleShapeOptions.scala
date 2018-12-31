@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SimpleShapeOptions extends js.Object {
   /**
   			 * Determines if the draw tool remains enabled after drawing a shape.

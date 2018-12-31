@@ -15,7 +15,6 @@ class AnimationPoints protected () extends js.Object {
   var Smooth: activexDashOfficeLib.OfficeNs.MsoTriState = js.native
   /** @param number [Index=-1] */
   def Add(): AnimationPoint = js.native
-  /** @param number [Index=-1] */
   def Add(Index: scala.Double): AnimationPoint = js.native
   def Item(Index: scala.Double): AnimationPoint = js.native
 }

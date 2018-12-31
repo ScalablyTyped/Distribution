@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPropertyValidationRule[T] extends js.Object {
   var Validators: org.scalablytyped.runtime.StringDictionary[js.Any]
   def Validate(context: IValidationContext[T]): js.Array[IValidationFailure]

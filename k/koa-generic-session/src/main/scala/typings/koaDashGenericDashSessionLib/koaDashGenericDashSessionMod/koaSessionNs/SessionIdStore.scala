@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SessionIdStore extends js.Object {
   def get(): js.Any
   def reset(): scala.Unit

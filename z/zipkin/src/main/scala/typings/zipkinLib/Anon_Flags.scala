@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Flags extends js.Object {
   var flags: js.UndefOr[scala.Double] = js.undefined
   var parentId: js.UndefOr[zipkinLib.zipkinMod.zipkinNs.optionNs.IOption[java.lang.String]] = js.undefined

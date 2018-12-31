@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RowStatus extends js.Object {
   /** Whether the stored entity is changed as a result of upload. */
   var changed: js.UndefOr[scala.Boolean] = js.undefined

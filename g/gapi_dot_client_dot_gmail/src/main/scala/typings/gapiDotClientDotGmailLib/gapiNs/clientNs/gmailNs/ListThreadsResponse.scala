@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListThreadsResponse extends js.Object {
   /** Page token to retrieve the next page of results in the list. */
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined

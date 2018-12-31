@@ -379,6 +379,9 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait `direction-xs-row-reverse` extends js.Object
   
   @js.native
+  sealed trait disableActionSpacing extends js.Object
+  
+  @js.native
   sealed trait disabled extends js.Object
   
   @js.native
@@ -1438,6 +1441,7 @@ object atMaterialDashUiCoreLibStrings {
   def `direction-xs-column`: `direction-xs-column` = "direction-xs-column".asInstanceOf[`direction-xs-column`]
   def `direction-xs-column-reverse`: `direction-xs-column-reverse` = "direction-xs-column-reverse".asInstanceOf[`direction-xs-column-reverse`]
   def `direction-xs-row-reverse`: `direction-xs-row-reverse` = "direction-xs-row-reverse".asInstanceOf[`direction-xs-row-reverse`]
+  def disableActionSpacing: disableActionSpacing = "disableActionSpacing".asInstanceOf[disableActionSpacing]
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   def display1: display1 = "display1".asInstanceOf[display1]
   def display2: display2 = "display2".asInstanceOf[display2]

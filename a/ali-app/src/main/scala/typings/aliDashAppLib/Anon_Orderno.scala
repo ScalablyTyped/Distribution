@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Orderno extends js.Object {
   /**
   				 * 是否准入:Y:准入；N:不准入(该字段目前无实际意义)

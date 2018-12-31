@@ -18,11 +18,11 @@ class NavBase protected ()
   var _renderGroup: js.Any = js.native
   var _renderGroupHeader: js.Any = js.native
   /**
-       * The meta 'key' property of the currently selected NavItem of the Nav. Can return
-       * undefined if the currently selected nav item has no populated key property. Be aware
-       * that in order for Nav to properly understand which key is selected all NavItems in
-       * all groups of the Nav must have populated key properties.
-       */
+    * The meta 'key' property of the currently selected NavItem of the Nav. Can return
+    * undefined if the currently selected nav item has no populated key property. Be aware
+    * that in order for Nav to properly understand which key is selected all NavItems in
+    * all groups of the Nav must have populated key properties.
+    */
   /* CompleteClass */
   override var selectedKey: js.UndefOr[java.lang.String] = js.native
   /* private */ def _isLinkSelected(link: js.Any): js.Any = js.native

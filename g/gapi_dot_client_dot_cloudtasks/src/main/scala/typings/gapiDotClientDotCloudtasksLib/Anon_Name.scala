@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Name extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -23,11 +22,11 @@ trait Anon_Name extends js.Object {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Required.
-                   *
-                   * The resource name of the queue. For example:
-                   * `projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID`
-                   */
+    * Required.
+    *
+    * The resource name of the queue. For example:
+    * `projects/PROJECT_ID/locations/LOCATION_ID/queues/QUEUE_ID`
+    */
   var name: java.lang.String
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined

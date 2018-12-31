@@ -6,19 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Options used for Instance.save method
-     */
-
+  * Options used for Instance.save method
+  */
 trait InstanceSaveOptions
   extends FieldsOptions
      with LoggingOptions
      with ReturningOptions
      with SearchPathOptions {
   /**
-           * If true, the updatedAt timestamp will not be updated.
-           *
-           * Defaults to false
-           */
+    * If true, the updatedAt timestamp will not be updated.
+    *
+    * Defaults to false
+    */
   var silent: js.UndefOr[scala.Boolean] = js.undefined
 }
 

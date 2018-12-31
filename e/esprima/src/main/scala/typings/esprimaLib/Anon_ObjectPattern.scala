@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ObjectPattern extends js.Object {
   var ArrayExpression: esprimaLib.esprimaLibStrings.ArrayExpression
   var ArrayPattern: esprimaLib.esprimaLibStrings.ArrayPattern

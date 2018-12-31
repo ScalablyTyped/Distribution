@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BufferChanged extends js.Object {
   /** Range of the new text. */
   var newRange: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Range

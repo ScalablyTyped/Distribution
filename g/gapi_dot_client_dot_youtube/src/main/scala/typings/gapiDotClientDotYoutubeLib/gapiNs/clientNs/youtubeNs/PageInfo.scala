@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PageInfo extends js.Object {
   /** The number of results included in the API response. */
   var resultsPerPage: js.UndefOr[scala.Double] = js.undefined

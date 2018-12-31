@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Config
   extends // allow to store custom values e.g. for swagger-node-runner
 // see https://github.com/theganyo/swagger-node-runner/blob/v0.7.1/index.js#L304

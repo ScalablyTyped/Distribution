@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class TileFlyoutNotification () extends js.Object {
   var content: js.Any = js.native
-   /* unmapped type */var expirationTime: js.Any = js.native
+   /* unmapped type */ var expirationTime: js.Any = js.native
 }
 

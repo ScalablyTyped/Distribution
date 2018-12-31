@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomPartitionAssignmentProtocol extends js.Object {
   var name: java.lang.String
   var version: scala.Double

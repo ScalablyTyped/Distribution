@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("expo", "ImagePicker")
 @js.native
 object ImagePickerNs extends js.Object {
-  
   trait CameraOptions extends js.Object {
     var allowsEditing: js.UndefOr[scala.Boolean] = js.undefined
     var aspect: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.undefined
@@ -16,7 +15,6 @@ object ImagePickerNs extends js.Object {
     var exif: js.UndefOr[scala.Boolean] = js.undefined
     var quality: js.UndefOr[scala.Double] = js.undefined
   }
-  
   
   trait ImageInfo extends js.Object {
     var base64: js.UndefOr[java.lang.String] = js.undefined
@@ -27,7 +25,6 @@ object ImagePickerNs extends js.Object {
     var uri: java.lang.String
     var width: scala.Double
   }
-  
   
   trait ImageLibraryOptions extends js.Object {
     var allowsEditing: js.UndefOr[scala.Boolean] = js.undefined
@@ -40,7 +37,6 @@ object ImagePickerNs extends js.Object {
     var quality: js.UndefOr[scala.Double] = js.undefined
   }
   
-  
   trait _MediaTypeOptions extends js.Object {
     var All: expoLib.expoLibStrings.All
     var Images: expoLib.expoLibStrings.Images
@@ -49,20 +45,14 @@ object ImagePickerNs extends js.Object {
   
   val MediaTypeOptions: _MediaTypeOptions = js.native
   /**
-       * require Permissions.CAMERA_ROLL
-       */
+    * require Permissions.CAMERA_ROLL
+    */
   def launchCameraAsync(): js.Promise[ImageResult] = js.native
-  /**
-       * require Permissions.CAMERA_ROLL
-       */
   def launchCameraAsync(options: CameraOptions): js.Promise[ImageResult] = js.native
   /**
-       * require Permissions.CAMERA_ROLL
-       */
+    * require Permissions.CAMERA_ROLL
+    */
   def launchImageLibraryAsync(): js.Promise[ImageResult] = js.native
-  /**
-       * require Permissions.CAMERA_ROLL
-       */
   def launchImageLibraryAsync(options: ImageLibraryOptions): js.Promise[ImageResult] = js.native
   type ImageResult = expoLib.Anon_Cancelled | (expoLib.Anon_CancelledFalse with ImageInfo)
 }

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AlterManager extends js.Object {
   var dataProvider: DataProvider
   var hot: handsontableLib.handsontableMod.underscoreHandsontableNs.Core

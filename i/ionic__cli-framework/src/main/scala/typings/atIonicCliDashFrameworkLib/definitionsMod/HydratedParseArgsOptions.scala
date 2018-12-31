@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HydratedParseArgsOptions
   extends minimistLib.minimistMod.minimistNs.Opts {
   @JSName("alias")

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SliderProps
   extends reactDashMdLib.libMod.Props {
   var defaultValue: js.UndefOr[scala.Double] = js.undefined

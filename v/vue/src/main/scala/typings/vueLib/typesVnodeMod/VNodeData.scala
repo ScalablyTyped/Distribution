@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VNodeData extends js.Object {
   var attrs: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var `class`: js.UndefOr[js.Any] = js.undefined

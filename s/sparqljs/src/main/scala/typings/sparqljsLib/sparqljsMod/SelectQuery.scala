@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectQuery extends BaseQuery {
   var distinct: js.UndefOr[scala.Boolean] = js.undefined
   var from: js.UndefOr[sparqljsLib.Anon_Default] = js.undefined

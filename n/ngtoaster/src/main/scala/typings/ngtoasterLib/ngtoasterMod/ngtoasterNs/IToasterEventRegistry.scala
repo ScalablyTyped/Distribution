@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IToasterEventRegistry extends js.Object {
   def setup(): scala.Unit
   def subscribeToClearToastsEvent(onClearToasts: IToastEventListener): scala.Unit

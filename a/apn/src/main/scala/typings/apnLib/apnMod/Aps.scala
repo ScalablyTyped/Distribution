@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Aps extends js.Object {
   var alert: js.UndefOr[java.lang.String | ApsAlert] = js.undefined
   var badge: js.UndefOr[scala.Double] = js.undefined

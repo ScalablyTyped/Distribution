@@ -12,8 +12,8 @@ trait JQuery extends js.Object {
   def tab(): JQuery = js.native
   def tab(settings: semanticDashUiDashTabLib.SemanticUINs.TabSettings): JQuery = js.native
   /**
-           * Sets cached HTML for path
-           */
+    * Sets cached HTML for path
+    */
   @JSName("tab")
   def `tab_cache add`(
     behavior: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.`cache add`,
@@ -21,16 +21,16 @@ trait JQuery extends js.Object {
     html: java.lang.String
   ): JQuery = js.native
   /**
-           * Returns cached HTML for path
-           */
+    * Returns cached HTML for path
+    */
   @JSName("tab")
   def `tab_cache read`(
     behavior: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.`cache read`,
     path: java.lang.String
   ): java.lang.String | semanticDashUiDashTabLib.semanticDashUiDashTabLibNumbers.`false` = js.native
   /**
-           * Removes cached HTML for path
-           */
+    * Removes cached HTML for path
+    */
   @JSName("tab")
   def `tab_cache remove`(
     behavior: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.`cache remove`,
@@ -42,8 +42,8 @@ trait JQuery extends js.Object {
   //  */
   // (behavior: 'attach events', selector: Selector, event?: string): JQuery;
   /**
-           * Changes tab to path
-           */
+    * Changes tab to path
+    */
   @JSName("tab")
   def `tab_change tab`(
     behavior: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.`change tab`,
@@ -52,18 +52,18 @@ trait JQuery extends js.Object {
   @JSName("tab")
   def tab_destroy(behavior: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.destroy): JQuery = js.native
   /**
-           * Returns current path
-           */
+    * Returns current path
+    */
   @JSName("tab")
   def `tab_get path`(behavior: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.`get path`): java.lang.String = js.native
   /**
-           * Returns whether tab exists
-           */
+    * Returns whether tab exists
+    */
   @JSName("tab")
   def `tab_is tab`(behavior: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.`is tab`): scala.Boolean = js.native
   /**
-           * Sets current path to state
-           */
+    * Sets current path to state
+    */
   @JSName("tab")
   def `tab_set state`(
     behavior: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.`set state`,
@@ -75,8 +75,12 @@ trait JQuery extends js.Object {
     value: semanticDashUiDashTabLib.SemanticUINs.TabSettings
   ): JQuery = js.native
   @JSName("tab")
-  def tab_setting[K /* <: java.lang.String */](behavior: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.setting, name: K): js.Any = js.native
+  def tab_setting[K /* <: java.lang.String */](behavior: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.setting, name: K): /* import warning: ImportType.apply Failed type conversion: semantic-ui-tab.SemanticUI.TabSettings._Impl[K] */ js.Any = js.native
   @JSName("tab")
-  def tab_setting[K /* <: java.lang.String */](behavior: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.setting, name: K, value: js.Any): JQuery = js.native
+  def tab_setting[K /* <: java.lang.String */](
+    behavior: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.setting,
+    name: K,
+    value: /* import warning: ImportType.apply Failed type conversion: semantic-ui-tab.SemanticUI.TabSettings._Impl[K] */ js.Any
+  ): JQuery = js.native
 }
 

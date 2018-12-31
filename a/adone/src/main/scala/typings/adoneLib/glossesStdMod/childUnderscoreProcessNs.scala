@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 object childUnderscoreProcessNs extends js.Object {
   // no `options` definitely means stdout/stderr are `string`.
   def exec(command: java.lang.String): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  // no `options` definitely means stdout/stderr are `string`.
   def exec(
     command: java.lang.String,
     callback: js.Function3[
@@ -41,7 +40,6 @@ object childUnderscoreProcessNs extends js.Object {
     command: java.lang.String,
     options: nodeLib.Anon_EncodingStringNull with nodeLib.childUnderscoreProcessMod.ExecOptions
   ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  // fallback if nothing else matches. Worst case is always `string | Buffer`.
   def exec(
     command: java.lang.String,
     options: nodeLib.Anon_EncodingStringNull with nodeLib.childUnderscoreProcessMod.ExecOptions,
@@ -52,7 +50,6 @@ object childUnderscoreProcessNs extends js.Object {
       scala.Unit
     ]
   ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  // `options` with well known `encoding` means stdout/stderr are definitely `string`.
   def exec(
     command: java.lang.String,
     options: nodeLib.Anon_EncodingBufferEncoding with nodeLib.childUnderscoreProcessMod.ExecOptions,
@@ -63,7 +60,6 @@ object childUnderscoreProcessNs extends js.Object {
       scala.Unit
     ]
   ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  // `options` with `"buffer"` or `null` for `encoding` means stdout/stderr are definitely `Buffer`.
   def exec(
     command: java.lang.String,
     options: nodeLib.Anon_EncodingBuffer with nodeLib.childUnderscoreProcessMod.ExecOptions,
@@ -74,8 +70,6 @@ object childUnderscoreProcessNs extends js.Object {
       scala.Unit
     ]
   ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  // `options` with an `encoding` whose type is `string` means stdout/stderr could either be `Buffer` or `string`.
-  // There is no guarantee the `encoding` is unknown as `string` is a superset of `BufferEncoding`.
   def exec(
     command: java.lang.String,
     options: nodeLib.Anon_EncodingString with nodeLib.childUnderscoreProcessMod.ExecOptions,
@@ -86,7 +80,6 @@ object childUnderscoreProcessNs extends js.Object {
       scala.Unit
     ]
   ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  // fallback if nothing else matches. Worst case is always `string | Buffer`.
   def exec(
     command: java.lang.String,
     options: js.UndefOr[scala.Nothing],
@@ -99,7 +92,6 @@ object childUnderscoreProcessNs extends js.Object {
   ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
   // `options` without an `encoding` means stdout/stderr are definitely `string`.
   def exec(command: java.lang.String, options: nodeLib.childUnderscoreProcessMod.ExecOptions): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  // `options` without an `encoding` means stdout/stderr are definitely `string`.
   def exec(
     command: java.lang.String,
     options: nodeLib.childUnderscoreProcessMod.ExecOptions,
@@ -110,7 +102,6 @@ object childUnderscoreProcessNs extends js.Object {
       scala.Unit
     ]
   ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  // fallback if nothing else matches. Worst case is always `string | Buffer`.
   def exec(
     command: java.lang.String,
     options: scala.Null,
@@ -193,7 +184,6 @@ object childUnderscoreProcessNs extends js.Object {
       scala.Unit
     ]
   ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  // fallback if nothing else matches. Worst case is always `string | Buffer`.
   def execFile(
     file: java.lang.String,
     args: js.UndefOr[scala.Nothing],
@@ -253,7 +243,6 @@ object childUnderscoreProcessNs extends js.Object {
       scala.Unit
     ]
   ): nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  // fallback if nothing else matches. Worst case is always `string | Buffer`.
   def execFile(
     file: java.lang.String,
     args: scala.Null,

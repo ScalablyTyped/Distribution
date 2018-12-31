@@ -9,6 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object AnimatorsNs extends js.Object {
   @js.native
+  /**
+    * Constructs the default animator
+    *
+    * @constructor
+    */
   class Easing ()
     extends plottableLib.buildSrcAnimatorsMod.Easing
   
@@ -20,24 +25,24 @@ object AnimatorsNs extends js.Object {
   @js.native
   object Easing extends js.Object {
     /**
-         * The default easing of the animation
-         */
+      * The default easing of the animation
+      */
     var _DEFAULT_EASING_MODE: js.Any = js.native
     /**
-         * The default maximum start delay between each step of an animation
-         */
+      * The default maximum start delay between each step of an animation
+      */
     var _DEFAULT_ITERATIVE_DELAY_MILLISECONDS: js.Any = js.native
     /**
-         * The default maximum total animation duration
-         */
+      * The default maximum total animation duration
+      */
     var _DEFAULT_MAX_TOTAL_DURATION_MILLISECONDS: js.Any = js.native
     /**
-         * The default starting delay of the animation in milliseconds
-         */
+      * The default starting delay of the animation in milliseconds
+      */
     var _DEFAULT_START_DELAY_MILLISECONDS: js.Any = js.native
     /**
-         * The default duration of one animation step in milliseconds
-         */
+      * The default duration of one animation step in milliseconds
+      */
     var _DEFAULT_STEP_DURATION_MILLISECONDS: js.Any = js.native
   }
   

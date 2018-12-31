@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IpMessagingGrant extends Grant {
   var deploymentRoleSid: java.lang.String
   var endpointId: java.lang.String

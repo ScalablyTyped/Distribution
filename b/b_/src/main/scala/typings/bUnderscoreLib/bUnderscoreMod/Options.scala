@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var classSeparator: js.UndefOr[java.lang.String] = js.undefined
   var elementSeparator: js.UndefOr[java.lang.String] = js.undefined

@@ -9,28 +9,28 @@ import scala.scalajs.js.annotation._
 sealed trait SelectionMode extends js.Object
 
 /**
-     * Specifies the selection mode of a ListView.
-    **/
+  * Specifies the selection mode of a ListView.
+  **/
 @JSGlobal("WinJS.UI.SelectionMode")
 @js.native
 object SelectionMode extends js.Object {
   /**
-           * Multiple items may be selected. Clicking additional items adds them to the selection.
-          **/
+    * Multiple items may be selected. Clicking additional items adds them to the selection.
+    **/
   @js.native
   sealed trait multi
     extends winjsLib.WinJSNs.UINs.SelectionMode
   
   /**
-           * Items cannot be selected.
-          **/
+    * Items cannot be selected.
+    **/
   @js.native
   sealed trait none
     extends winjsLib.WinJSNs.UINs.SelectionMode
   
   /**
-           * A single item may be selected.
-          **/
+    * A single item may be selected.
+    **/
   @js.native
   sealed trait single
     extends winjsLib.WinJSNs.UINs.SelectionMode

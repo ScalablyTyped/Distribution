@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 // #endregion
 // region KeyboardEvent
 // #region KeyboardEvent
-
 trait KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends UIEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] {
   // MouseEvent, KeyboardEvent, TouchEvent
   @JSName("altKey")
@@ -36,10 +35,10 @@ trait KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends
   @JSName("key")
   var key_KeyboardEventBase: java.lang.String
   /**
-           * Indicates whether the META key was pressed when the event fired.
-           * @see \`{@link https://api.jquery.com/event.metaKey/ }\`
-           * @since 1.0.4
-           * @example ​ ````Determine whether the META key was pressed when the event fired.
+    * Indicates whether the META key was pressed when the event fired.
+    * @see \`{@link https://api.jquery.com/event.metaKey/ }\`
+    * @since 1.0.4
+    * @example ​ ````Determine whether the META key was pressed when the event fired.
   ```html
   <!doctype html>
   <html lang="en">
@@ -48,10 +47,10 @@ trait KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends
     <title>event.metaKey demo</title>
     <style>
     body {
-      background-color: #eef;
+    background-color: #eef;
     }
     div {
-      padding: 20px;
+    padding: 20px;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -70,7 +69,7 @@ trait KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends
   </body>
   </html>
   ```
-           */
+    */
   @JSName("metaKey")
   var metaKey_KeyboardEventBase: scala.Boolean
   @JSName("offsetX")
@@ -80,10 +79,10 @@ trait KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends
   @JSName("originalEvent")
   var originalEvent_KeyboardEventBase: js.UndefOr[jqueryLib._KeyboardEvent] = js.undefined
   /**
-           * The mouse position relative to the left edge of the document.
-           * @see \`{@link https://api.jquery.com/event.pageX/ }\`
-           * @since 1.0.4
-           * @example ​ ````Show the mouse position relative to the left and top edges of the document (within this iframe).
+    * The mouse position relative to the left edge of the document.
+    * @see \`{@link https://api.jquery.com/event.pageX/ }\`
+    * @since 1.0.4
+    * @example ​ ````Show the mouse position relative to the left and top edges of the document (within this iframe).
   ```html
   <!doctype html>
   <html lang="en">
@@ -92,10 +91,10 @@ trait KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends
     <title>event.pageX demo</title>
     <style>
     body {
-      background-color: #eef;
+    background-color: #eef;
     }
     div {
-      padding: 20px;
+    padding: 20px;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -113,14 +112,14 @@ trait KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends
   </body>
   </html>
   ```
-           */
+    */
   @JSName("pageX")
   var pageX_KeyboardEventBase: js.UndefOr[scala.Nothing]
   /**
-           * The mouse position relative to the top edge of the document.
-           * @see \`{@link https://api.jquery.com/event.pageY/ }\`
-           * @since 1.0.4
-           * @example ​ ````Show the mouse position relative to the left and top edges of the document (within this iframe).
+    * The mouse position relative to the top edge of the document.
+    * @see \`{@link https://api.jquery.com/event.pageY/ }\`
+    * @since 1.0.4
+    * @example ​ ````Show the mouse position relative to the left and top edges of the document (within this iframe).
   ```html
   <!doctype html>
   <html lang="en">
@@ -129,10 +128,10 @@ trait KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends
     <title>event.pageY demo</title>
     <style>
     body {
-      background-color: #eef;
+    background-color: #eef;
     }
     div {
-      padding: 20px;
+    padding: 20px;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -150,7 +149,7 @@ trait KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends
   </body>
   </html>
   ```
-           */
+    */
   @JSName("pageY")
   var pageY_KeyboardEventBase: js.UndefOr[scala.Nothing]
   // PointerEvent
@@ -159,16 +158,16 @@ trait KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends
   @JSName("pointerType")
   var pointerType_KeyboardEventBase: js.UndefOr[scala.Nothing]
   /**
-           * The other DOM element involved in the event, if any.
-           * @see \`{@link https://api.jquery.com/event.relatedTarget/ }\`
-           * @since 1.1.4
-           * @example ​ ````On mouseout of anchors, alert the element type being entered.
+    * The other DOM element involved in the event, if any.
+    * @see \`{@link https://api.jquery.com/event.relatedTarget/ }\`
+    * @since 1.1.4
+    * @example ​ ````On mouseout of anchors, alert the element type being entered.
   ```javascript
   $( "a" ).mouseout(function( event ) {
     alert( event.relatedTarget.nodeName ); // "DIV"
   });
   ```
-          */
+    */
   var relatedTarget: js.UndefOr[scala.Nothing] = js.undefined
   @JSName("screenX")
   var screenX_KeyboardEventBase: js.UndefOr[scala.Nothing]
@@ -185,11 +184,11 @@ trait KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends
   var touches_KeyboardEventBase: js.UndefOr[scala.Nothing]
   // MouseEvent, KeyboardEvent
   /**
-           * For key or mouse events, this property indicates the specific key or button that was pressed.
-           * @see \`{@link https://api.jquery.com/event.which/ }\`
-           * @since 1.1.3
-           * @deprecated ​ Deprecated since 3.3. See \`{@link https://github.com/jquery/api.jquery.com/issues/821 }\`.
-           * @example ​ ````Log which key was depressed.
+    * For key or mouse events, this property indicates the specific key or button that was pressed.
+    * @see \`{@link https://api.jquery.com/event.which/ }\`
+    * @since 1.1.3
+    * @deprecated ​ Deprecated since 3.3. See \`{@link https://github.com/jquery/api.jquery.com/issues/821 }\`.
+    * @example ​ ````Log which key was depressed.
   ```html
   <!doctype html>
   <html lang="en">
@@ -212,7 +211,7 @@ trait KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends
   </body>
   </html>
   ```
-           * @example ​ ````Log which mouse button was depressed.
+    * @example ​ ````Log which mouse button was depressed.
   ```html
   <!doctype html>
   <html lang="en">
@@ -235,7 +234,7 @@ trait KeyboardEventBase[TDelegateTarget, TData, TCurrentTarget, TTarget] extends
   </body>
   </html>
   ```
-           */
+    */
   @JSName("which")
   var which_KeyboardEventBase: scala.Double
 }

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
+@js.native
 trait Anon_FramesU258F extends js.Object {
   var frames: js.Tuple12[
     adoneLib.adoneLibStrings.BACKSLASHu258F, 
@@ -20,7 +20,7 @@ trait Anon_FramesU258F extends js.Object {
     adoneLib.adoneLibStrings.BACKSLASHu258C, 
     adoneLib.adoneLibStrings.BACKSLASHu258D, 
     adoneLib.adoneLibStrings.BACKSLASHu258E
-  ]
-  var interval: adoneLib.adoneLibNumbers.`120`
+  ] = js.native
+  var interval: adoneLib.adoneLibNumbers.`120` = js.native
 }
 

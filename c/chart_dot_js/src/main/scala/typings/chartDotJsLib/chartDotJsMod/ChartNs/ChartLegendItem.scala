@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartLegendItem extends js.Object {
   var fillStyle: js.UndefOr[java.lang.String] = js.undefined
   var hidden: js.UndefOr[scala.Boolean] = js.undefined

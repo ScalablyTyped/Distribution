@@ -9,7 +9,9 @@ package object GmeCommonNs {
   type ArtifactHash = java.lang.String
   type Aspect = java.lang.String
   type AttrMeta = js.Any
-  type Buffer = js.Array[js.Any]
+  type Buffer = js.Array[
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify GLbyte */ js.Any
+  ]
   type CatchCallback = ErrorOnlyCallback
   type Constraint = java.lang.String
   type Content = DataObject | Buffer | js.Array[Buffer]
@@ -22,12 +24,12 @@ package object GmeCommonNs {
   type ISO8601 = java.lang.String
   type InAttr = RegObj | Primitive | scala.Null
   /**
-       * Callback for loadObject.
-       *
-       * @callback ProjectInterface~loadObjectCallback
-       * @param {Error} err - If error occurred.
-       * @param {module:Storage~CommitObject|module:Core~ObjectData} object - Object loaded from database, e.g. a commit object.
-       */
+    * Callback for loadObject.
+    *
+    * @callback ProjectInterface~loadObjectCallback
+    * @param {Error} err - If error occurred.
+    * @param {module:Storage~CommitObject|module:Core~ObjectData} object - Object loaded from database, e.g. a commit object.
+    */
   type LoadObject = webgmeLib.GmeStorageNs.CommitObject | webgmeLib.CoreNs.DataObject
   type MemberId = Path
   type MetadataHash = java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageButton extends js.Object {
   def setAltText(altText: java.lang.String): ImageButton
   def setAuthorizationAction(action: AuthorizationAction): ImageButton

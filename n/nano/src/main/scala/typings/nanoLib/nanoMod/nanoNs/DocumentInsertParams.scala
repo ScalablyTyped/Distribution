@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 // http://docs.couchdb.org/en/latest/api/database/common.html#post--db
 // http://docs.couchdb.org/en/latest/api/document/common.html#put--db-docid
-
 trait DocumentInsertParams extends js.Object {
   // Stores document in batch mode.
   var batch: js.UndefOr[nanoLib.nanoLibStrings.ok] = js.undefined

@@ -18,8 +18,8 @@ class ToggleBase protected ()
   var _onClick: js.Any = js.native
   var _toggleButton: js.Any = js.native
   /**
-       * Gets the current checked state of the toggle.
-       */
+    * Gets the current checked state of the toggle.
+    */
   val checked: scala.Boolean = js.native
   /* private */ def _noop(): js.Any = js.native
   @JSName("componentWillReceiveProps")

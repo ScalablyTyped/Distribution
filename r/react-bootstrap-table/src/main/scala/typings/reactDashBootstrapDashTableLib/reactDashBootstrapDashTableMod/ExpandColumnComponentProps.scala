@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExpandColumnComponentProps extends js.Object {
   /**
   	 * True if the current row is able to be expanded.

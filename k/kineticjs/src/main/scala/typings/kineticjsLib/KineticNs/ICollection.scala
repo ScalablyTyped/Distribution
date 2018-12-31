@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICollection extends js.Object {
   @JSName("apply")
   def apply(method: js.Function, `val`: js.Any): js.Any

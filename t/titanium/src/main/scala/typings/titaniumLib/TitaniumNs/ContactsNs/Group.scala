@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * An object which represents a group in the system contacts address book.
 		 */
-
 trait Group
   extends titaniumLib.TitaniumNs.Proxy {
   /**

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Network extends js.Object {
   var networkPredictionEnabled: chromeLib.chromeNs.typesNs.ChromeSetting
   /** @since Chrome 42. */

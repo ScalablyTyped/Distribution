@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CounterUpdate extends js.Object {
   /** Boolean value for And, Or. */
   var boolean: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               * True if this counter is reported as the total cumulative aggregate
-               * value accumulated since the worker started working on this WorkItem.
-               * By default this is false, indicating that this counter is reported
-               * as a delta.
-               */
+    * True if this counter is reported as the total cumulative aggregate
+    * value accumulated since the worker started working on this WorkItem.
+    * By default this is false, indicating that this counter is reported
+    * as a delta.
+    */
   var cumulative: js.UndefOr[scala.Boolean] = js.undefined
   /** Distribution data */
   var distribution: js.UndefOr[DistributionUpdate] = js.undefined
@@ -35,10 +34,10 @@ trait CounterUpdate extends js.Object {
   /** Counter name and aggregation type. */
   var nameAndKind: js.UndefOr[NameAndKind] = js.undefined
   /**
-               * The service-generated short identifier for this counter.
-               * The short_id -> (name, metadata) mapping is constant for the lifetime of
-               * a job.
-               */
+    * The service-generated short identifier for this counter.
+    * The short_id -> (name, metadata) mapping is constant for the lifetime of
+    * a job.
+    */
   var shortId: js.UndefOr[java.lang.String] = js.undefined
   /** List of strings, for Set. */
   var stringList: js.UndefOr[StringList] = js.undefined

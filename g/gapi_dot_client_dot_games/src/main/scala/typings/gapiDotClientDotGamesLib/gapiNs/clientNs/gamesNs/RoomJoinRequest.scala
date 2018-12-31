@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RoomJoinRequest extends js.Object {
   /** The capabilities that this client supports for realtime communication. */
   var capabilities: js.UndefOr[js.Array[java.lang.String]] = js.undefined

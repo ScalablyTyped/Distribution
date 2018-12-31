@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * NxLayoutErrors...
-     */
-
+  * NxLayoutErrors...
+  */
 trait INxLayoutErrors extends js.Object {
   /**
-           * Error code  <Integer>
-           */
+    * Error code  <Integer>
+    */
   var ErrorCode: scala.Double
 }
 

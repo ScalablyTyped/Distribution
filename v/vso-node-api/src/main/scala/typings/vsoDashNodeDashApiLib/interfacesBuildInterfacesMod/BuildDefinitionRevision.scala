@@ -5,35 +5,34 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BuildDefinitionRevision extends js.Object {
   /**
-       * The change type (add, edit, delete).
-       */
+    * The change type (add, edit, delete).
+    */
   var changeType: AuditAction
   /**
-       * The identity of the person or process that changed the definition.
-       */
+    * The identity of the person or process that changed the definition.
+    */
   var changedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef
   /**
-       * The date and time that the definition was changed.
-       */
+    * The date and time that the definition was changed.
+    */
   var changedDate: stdLib.Date
   /**
-       * The comment associated with the change.
-       */
+    * The comment associated with the change.
+    */
   var comment: java.lang.String
   /**
-       * A link to the definition at this revision.
-       */
+    * A link to the definition at this revision.
+    */
   var definitionUrl: java.lang.String
   /**
-       * The name of the definition.
-       */
+    * The name of the definition.
+    */
   var name: java.lang.String
   /**
-       * The revision number.
-       */
+    * The revision number.
+    */
   var revision: scala.Double
 }
 

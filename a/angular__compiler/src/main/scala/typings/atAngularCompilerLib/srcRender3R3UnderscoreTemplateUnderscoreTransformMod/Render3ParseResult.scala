@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Render3ParseResult extends js.Object {
   var errors: js.Array[atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseError]
   var hasNgContent: scala.Boolean

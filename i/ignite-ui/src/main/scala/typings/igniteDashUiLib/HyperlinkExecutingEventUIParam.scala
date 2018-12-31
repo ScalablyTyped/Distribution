@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HyperlinkExecutingEventUIParam extends js.Object {
   /**
   	 * Get the [hyperlink](ig.excel.WorksheetHyperlink) to be executed.

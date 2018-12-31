@@ -29,42 +29,34 @@ trait CountUp extends js.Object {
   var timestamp: js.UndefOr[scala.Double] = js.native
   // #endregion
   /**
-       * @param timestamp
-       */
+    * @param timestamp
+    */
   def count(timestamp: scala.Double): scala.Unit = js.native
   def initialize(): scala.Boolean = js.native
   /**
-       * Toggles pause/resume animation.
-       */
+    * Toggles pause/resume animation.
+    */
   def pauseResume(): scala.Unit = js.native
   /**
-       * Print value to target.
-       * @param value number that will be passed to formattingFn and then printed to the target
-       */
+    * Print value to target.
+    * @param value number that will be passed to formattingFn and then printed to the target
+    */
   def printValue(value: scala.Double): scala.Unit = js.native
   /**
-       * Reset to startVal so animation can be run again.
-       */
+    * Reset to startVal so animation can be run again.
+    */
   def reset(): scala.Unit = js.native
   /**
-       * Start your animation.
-       * @param callback Option callback to run on animation end
-       */
+    * Start your animation.
+    * @param callback Option callback to run on animation end
+    */
   def start(): scala.Unit = js.native
-  /**
-       * Start your animation.
-       * @param callback Option callback to run on animation end
-       */
   def start(callback: js.Function0[scala.Unit]): scala.Unit = js.native
-  /**
-       * Pass a new endVal and start animation.
-       * @param newEndVal new value
-       */
   def update(newEndVal: java.lang.String): scala.Unit = js.native
   /**
-       * Pass a new endVal and start animation.
-       * @param newEndVal new value
-       */
+    * Pass a new endVal and start animation.
+    * @param newEndVal new value
+    */
   def update(newEndVal: scala.Double): scala.Unit = js.native
   def version(): java.lang.String = js.native
 }

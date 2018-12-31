@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-leaflet", "LayersControl")
 @js.native
 object LayersControlNs extends js.Object {
-  
   trait BaseControlledLayerProps extends js.Object {
     var checked: js.UndefOr[scala.Boolean] = js.undefined
     var children: js.UndefOr[reactDashLeafletLib.reactDashLeafletMod.Children] = js.undefined
@@ -24,10 +23,9 @@ object LayersControlNs extends js.Object {
     extends reactLib.reactMod.Component[P, js.Object, js.Any] {
     var layer: js.UndefOr[leafletLib.leafletMod.Layer] = js.native
     def addLayer(): scala.Unit = js.native
-    def getChildContext(): reactDashLeafletLib.Anon_LayerContainer_976206209 = js.native
+    def getChildContext(): reactDashLeafletLib.Anon_LayerContainer_643756764 = js.native
     def removeLayer(layer: leafletLib.leafletMod.Layer): scala.Unit = js.native
   }
-  
   
   trait ControlledLayerProps extends BaseControlledLayerProps {
     var addBaseLayer: js.UndefOr[

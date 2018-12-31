@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Iconpicker dialog options object
-    */
-
+  * Iconpicker dialog options object
+  */
 trait ITreePickerOptions extends js.Object {
   /*callback function*/
   var callback: angularLib.angularMod.Global.Function

@@ -8,11 +8,12 @@ import scala.scalajs.js.annotation._
 /** Enables speech recognition with either a default or a custom graphical user interface (GUI). */
 @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognizer")
 @js.native
+/** Creates a new instance of the SpeechRecognizer class. */
 class SpeechRecognizer () extends js.Object {
   /**
-                   * Creates a new instance of the SpeechRecognizer class with a language specifier.
-                   * @param language The spoken language to use for recognition.
-                   */
+    * Creates a new instance of the SpeechRecognizer class with a language specifier.
+    * @param language The spoken language to use for recognition.
+    */
   def this(language: winrtDashUwpLib.WindowsNs.GlobalizationNs.Language) = this()
   /** Gets the collection of constraint objects that are associated with the SpeechRecognizer object. */
   var constraints: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[ISpeechRecognitionConstraint] = js.native
@@ -54,9 +55,9 @@ class SpeechRecognizer () extends js.Object {
   /** Disposes the speech recognizer by freeing, releasing, or resetting allocated resources. */
   def close(): scala.Unit = js.native
   /**
-                   * Asynchronously compile all constraints specified by the Constraints property.
-                   * @return The result of the constraints compilation as a SpeechRecognitionCompilationResult object.
-                   */
+    * Asynchronously compile all constraints specified by the Constraints property.
+    * @return The result of the constraints compilation as a SpeechRecognitionCompilationResult object.
+    */
   def compileConstraintsAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[SpeechRecognitionCompilationResult] = js.native
   /** Occurs during an ongoing dictation session when a recognition result fragment is returned by the speech recognizer. */
   def onhypothesisgenerated(
@@ -71,14 +72,14 @@ class SpeechRecognizer () extends js.Object {
     ev: SpeechRecognizerStateChangedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[SpeechRecognizer]
   ): scala.Unit = js.native
   /**
-                   * Begins a speech recognition session for a SpeechRecognizer object.
-                   * @return The result of the speech recognition session that was initiated by the SpeechRecognizer object.
-                   */
+    * Begins a speech recognition session for a SpeechRecognizer object.
+    * @return The result of the speech recognition session that was initiated by the SpeechRecognizer object.
+    */
   def recognizeAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[SpeechRecognitionResult] = js.native
   /**
-                   * Asynchronously starts a speech recognition session that includes additional UI mechanisms, including prompts, examples, text-to-speech (TTS), and confirmations.
-                   * @return The result of the speech recognition session as a SpeechRecognitionResult object.
-                   */
+    * Asynchronously starts a speech recognition session that includes additional UI mechanisms, including prompts, examples, text-to-speech (TTS), and confirmations.
+    * @return The result of the speech recognition session as a SpeechRecognitionResult object.
+    */
   def recognizeWithUIAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[SpeechRecognitionResult] = js.native
   def removeEventListener(`type`: java.lang.String, listener: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_]): scala.Unit = js.native
   @JSName("removeEventListener")
@@ -97,9 +98,9 @@ class SpeechRecognizer () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[SpeechRecognizer, SpeechRecognizerStateChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Asynchronously ends the speech recognition session.
-                   * @return No object or value is returned when this method completes.
-                   */
+    * Asynchronously ends the speech recognition session.
+    * @return No object or value is returned when this method completes.
+    */
   def stopRecognitionAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

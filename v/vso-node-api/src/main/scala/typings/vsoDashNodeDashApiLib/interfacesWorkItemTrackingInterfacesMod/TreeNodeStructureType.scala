@@ -12,15 +12,15 @@ sealed trait TreeNodeStructureType extends js.Object
 @js.native
 object TreeNodeStructureType extends js.Object {
   /**
-       * Area type.
-       */
+    * Area type.
+    */
   @js.native
   sealed trait Area
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.TreeNodeStructureType
   
   /**
-       * Iteration type.
-       */
+    * Iteration type.
+    */
   @js.native
   sealed trait Iteration
     extends vsoDashNodeDashApiLib.interfacesWorkItemTrackingInterfacesMod.TreeNodeStructureType

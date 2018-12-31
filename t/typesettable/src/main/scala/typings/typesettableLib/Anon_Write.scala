@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Write extends js.Object {
   var write: js.Function5[
     /* line */ java.lang.String, 

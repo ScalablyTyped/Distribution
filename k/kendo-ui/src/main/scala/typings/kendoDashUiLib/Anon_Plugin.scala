@@ -303,15 +303,15 @@ trait Anon_Plugin extends js.Object {
     kendoDashUiLib.kendoNs.uiNs.Window
   ] = js.native
   def plugin(
-    widget: /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(kendo-ui), TsIdentNamespace(kendo), TsIdentNamespace(ui), TsIdentSimple(Widget)))) */js.Any
+    widget: /* import warning: ImportType.apply Failed type conversion: typeof kendo-ui.kendo.ui.Widget */ js.Any
   ): scala.Unit = js.native
   def plugin(
-    widget: /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(kendo-ui), TsIdentNamespace(kendo), TsIdentNamespace(ui), TsIdentSimple(Widget)))) */js.Any,
-    register: /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(kendo-ui), TsIdentNamespace(kendo), TsIdentNamespace(ui)))) */js.Any
+    widget: /* import warning: ImportType.apply Failed type conversion: typeof kendo-ui.kendo.ui.Widget */ js.Any,
+    register: /* import warning: ImportType.apply Failed type conversion: typeof kendo-ui.kendo.ui */ js.Any
   ): scala.Unit = js.native
   def plugin(
-    widget: /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(kendo-ui), TsIdentNamespace(kendo), TsIdentNamespace(ui), TsIdentSimple(Widget)))) */js.Any,
-    register: /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(kendo-ui), TsIdentNamespace(kendo), TsIdentNamespace(ui)))) */js.Any,
+    widget: /* import warning: ImportType.apply Failed type conversion: typeof kendo-ui.kendo.ui.Widget */ js.Any,
+    register: /* import warning: ImportType.apply Failed type conversion: typeof kendo-ui.kendo.ui */ js.Any,
     prefix: java.lang.String
   ): scala.Unit = js.native
   def progress(container: JQuery, toggle: scala.Boolean): scala.Unit = js.native

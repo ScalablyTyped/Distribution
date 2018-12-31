@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion
 //#region Other
-
 trait Size extends js.Object {
   var height: scala.Double
   var width: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_B extends js.Object {
   var b: coreDashJsLib.Array[scala.Double]
   var g: coreDashJsLib.Array[scala.Double]

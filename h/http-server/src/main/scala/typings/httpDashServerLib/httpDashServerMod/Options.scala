@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var autoIndex: js.UndefOr[scala.Boolean | httpDashServerLib.httpDashServerLibStrings.`false`] = js.undefined
   var before: js.UndefOr[js.Array[connectLib.connectMod.createServerNs.HandleFunction]] = js.undefined

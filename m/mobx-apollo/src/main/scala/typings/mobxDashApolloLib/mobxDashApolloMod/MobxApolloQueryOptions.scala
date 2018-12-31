@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MobxApolloQueryOptions[T]
   extends apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryOptions[apolloDashClientLib.coreTypesMod.OperationVariables] {
   var client: apolloDashClientLib.apolloDashClientMod.ApolloClient[_]

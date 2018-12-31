@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerRegisterPluginObject[T] extends ServerRegisterOptions {
   /**
-       * options passed to the plugin during registration.
-       */
+    * options passed to the plugin during registration.
+    */
   var options: js.UndefOr[T] = js.undefined
   /**
-       * a plugin object.
-       */
+    * a plugin object.
+    */
   var plugin: Plugin[T]
 }
 

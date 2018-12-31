@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnLoadData extends js.Object {
   var canPlayFastForward: scala.Boolean
   var canPlayReverse: scala.Boolean

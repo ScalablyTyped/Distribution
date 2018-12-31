@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GeoJSONSourceRaw
   extends Source
      with GeoJSONSourceOptions {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TorrentEngineOptions extends js.Object {
   var connections: js.UndefOr[scala.Double] = js.undefined
    // Verify previously stored data before starting.

@@ -42,20 +42,20 @@ abstract class StoreSku () extends js.Object {
   /** Gets the videos from the Windows Store listing for the product SKU. */
   var videos: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[StoreVideo] = js.native
   /**
-                   * Indicates whether this product SKU is installed on the current device.
-                   * @return An asynchronous operation that, on successful completion, returns true if this product SKU is installed on the current device; otherwise, false.
-                   */
+    * Indicates whether this product SKU is installed on the current device.
+    * @return An asynchronous operation that, on successful completion, returns true if this product SKU is installed on the current device; otherwise, false.
+    */
   def getIsInstalledAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
   /**
-                   * Requests the purchase of the product SKU and displays the UI that is used to complete the transaction via the Windows Store.
-                   * @return An asynchronous operation that, on successful completion, returns a StorePurchaseResult object that provides status and error info about the purchase.
-                   */
+    * Requests the purchase of the product SKU and displays the UI that is used to complete the transaction via the Windows Store.
+    * @return An asynchronous operation that, on successful completion, returns a StorePurchaseResult object that provides status and error info about the purchase.
+    */
   def requestPurchaseAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[StorePurchaseResult] = js.native
   /**
-                   * Requests the purchase of the product SKU and displays the UI that is used to complete the transaction via the Windows Store. This method provides the option to specify additional details for a specific offer within a large catalog of products that are represented by a single listing in the Windows Store, including the product name to display to the user during the purchase.
-                   * @param storePurchaseProperties An object that specifies additional info for the purchase request, including the product name to display to the user during the purchase.
-                   * @return An asynchronous operation that, on successful completion, returns a StorePurchaseResult object that provides status and error info about the purchase.
-                   */
+    * Requests the purchase of the product SKU and displays the UI that is used to complete the transaction via the Windows Store. This method provides the option to specify additional details for a specific offer within a large catalog of products that are represented by a single listing in the Windows Store, including the product name to display to the user during the purchase.
+    * @param storePurchaseProperties An object that specifies additional info for the purchase request, including the product name to display to the user during the purchase.
+    * @return An asynchronous operation that, on successful completion, returns a StorePurchaseResult object that provides status and error info about the purchase.
+    */
   def requestPurchaseAsync(storePurchaseProperties: StorePurchaseProperties): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[StorePurchaseResult] = js.native
 }
 

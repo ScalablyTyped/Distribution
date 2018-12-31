@@ -32,7 +32,6 @@ trait WebSocket
   // HTML5 WebSocket events
   @JSName("addEventListener")
   def addEventListener_message(method: wsLib.wsLibStrings.message): scala.Unit = js.native
-  // HTML5 WebSocket events
   @JSName("addEventListener")
   def addEventListener_message(method: wsLib.wsLibStrings.message, cb: js.Function1[/* event */ wsLib.Anon_TypeData, scala.Unit]): scala.Unit = js.native
   @JSName("addEventListener")
@@ -76,11 +75,11 @@ trait WebSocket
   def close(code: scala.Double, data: java.lang.String): scala.Unit = js.native
   def on(
     event: java.lang.String,
-    listener: js.ThisFunction1[/* this */ this.type, /* repeated */js.Any, scala.Unit]
+    listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
   def on(
     event: js.Symbol,
-    listener: js.ThisFunction1[/* this */ this.type, /* repeated */js.Any, scala.Unit]
+    listener: js.ThisFunction1[/* this */ this.type, /* repeated */ js.Any, scala.Unit]
   ): this.type = js.native
   // Events
   @JSName("on")

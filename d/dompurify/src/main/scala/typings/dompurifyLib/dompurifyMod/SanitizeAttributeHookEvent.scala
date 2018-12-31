@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SanitizeAttributeHookEvent extends js.Object {
   var allowedAttributes: js.Array[java.lang.String]
   var attrName: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SearchBarProps extends js.Object {
   var alwaysShowBackButton: js.UndefOr[scala.Boolean] = js.undefined
   var autoCorrect: js.UndefOr[scala.Boolean] = js.undefined

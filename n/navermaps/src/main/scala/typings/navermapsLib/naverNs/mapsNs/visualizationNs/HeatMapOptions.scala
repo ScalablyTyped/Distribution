@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HeatMapOptions extends js.Object {
   var colorMap: js.UndefOr[SpectrumStyle] = js.undefined
   var data: js.Array[navermapsLib.naverNs.mapsNs.LatLng] | js.Array[navermapsLib.naverNs.mapsNs.PointArrayLiteral] | js.Array[WeightedLocation]

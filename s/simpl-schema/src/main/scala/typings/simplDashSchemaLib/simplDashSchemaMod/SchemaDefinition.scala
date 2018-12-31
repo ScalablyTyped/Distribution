@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SchemaDefinition extends js.Object {
   var allowedValues: js.UndefOr[js.Array[_] | js.Function0[js.Array[_]]] = js.undefined
   var autoValue: js.UndefOr[js.Function0[_]] = js.undefined
   var blackbox: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * For custom validation function. If you use an arrow function the context
-       * for "this" will not be available. Use "custom: function() { return
-       * something(this.value); }" instead.
-       */
+    * For custom validation function. If you use an arrow function the context
+    * for "this" will not be available. Use "custom: function() { return
+    * something(this.value); }" instead.
+    */
   var custom: js.UndefOr[
     js.ThisFunction0[
       /* this */ CustomValidationContext, 

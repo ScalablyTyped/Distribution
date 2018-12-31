@@ -88,7 +88,6 @@ trait ShapeRange extends js.Object {
   def Item(Index: js.Any): Shape = js.native
   /** @param PrimaryShape [PrimaryShape=0] */
   def MergeShapes(MergeCmd: MsoMergeCmd): scala.Unit = js.native
-  /** @param PrimaryShape [PrimaryShape=0] */
   def MergeShapes(MergeCmd: MsoMergeCmd, PrimaryShape: Shape): scala.Unit = js.native
   def Nodes(Index: js.Any): ShapeNode = js.native
   def PickUp(): scala.Unit = js.native
@@ -96,11 +95,9 @@ trait ShapeRange extends js.Object {
   def RerouteConnections(): scala.Unit = js.native
   /** @param fScale [fScale=0] */
   def ScaleHeight(Factor: scala.Double, RelativeToOriginalSize: MsoTriState): scala.Unit = js.native
-  /** @param fScale [fScale=0] */
   def ScaleHeight(Factor: scala.Double, RelativeToOriginalSize: MsoTriState, fScale: MsoScaleFrom): scala.Unit = js.native
   /** @param fScale [fScale=0] */
   def ScaleWidth(Factor: scala.Double, RelativeToOriginalSize: MsoTriState): scala.Unit = js.native
-  /** @param fScale [fScale=0] */
   def ScaleWidth(Factor: scala.Double, RelativeToOriginalSize: MsoTriState, fScale: MsoScaleFrom): scala.Unit = js.native
   def Select(): scala.Unit = js.native
   def Select(Replace: js.Any): scala.Unit = js.native

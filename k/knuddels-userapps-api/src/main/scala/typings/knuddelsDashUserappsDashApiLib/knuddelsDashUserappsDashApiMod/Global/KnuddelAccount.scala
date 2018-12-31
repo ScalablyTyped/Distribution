@@ -43,9 +43,6 @@ class KnuddelAccount () extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/KnuddelAccount.html#method_use
   		 */
   def use(knuddelAmount: KnuddelAmount, displayReasonText: java.lang.String): scala.Unit = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/KnuddelAccount.html#method_use
-  		 */
   def use(
     knuddelAmount: KnuddelAmount,
     displayReasonText: java.lang.String,

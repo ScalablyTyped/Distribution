@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait datapointFormat extends js.Object {
   var defaultValue: js.UndefOr[scala.Double] = js.undefined
   var number: scala.Boolean

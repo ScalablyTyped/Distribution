@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OneSignalBuilder extends js.Object {
   def endInit(): scala.Unit
   def handleNotificationOpened(callback: js.Function1[/* json */ OSNotificationOpenedResult, scala.Unit]): OneSignalBuilder

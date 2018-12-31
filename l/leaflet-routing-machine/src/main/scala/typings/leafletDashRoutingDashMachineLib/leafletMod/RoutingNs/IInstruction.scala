@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line interface-name
-
 trait IInstruction extends js.Object {
   var direction: js.UndefOr[java.lang.String] = js.undefined
   var distance: scala.Double

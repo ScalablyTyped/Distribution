@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Outline extends js.Object {
   // The dash style of the outline.
   var dash_style: DashStyle

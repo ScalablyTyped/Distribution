@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Masks
   extends /* myMask */ org.scalablytyped.runtime.StringDictionary[java.lang.String] {
   var default: java.lang.String

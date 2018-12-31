@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BackupRunsResource extends js.Object {
   /** Deletes the backup taken by a backup run. */
   def delete(request: gapiDotClientDotSqladminLib.Anon_ProjectPrettyPrintInstanceQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[Operation]

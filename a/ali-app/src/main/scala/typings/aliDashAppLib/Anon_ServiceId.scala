@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ServiceId extends js.Object {
   /**
   				 * 蓝牙设备特征值的 uuid

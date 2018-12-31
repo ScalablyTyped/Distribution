@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * An object for playing system sounds.
 		 */
-
 trait SystemAlert
   extends titaniumLib.TitaniumNs.Proxy {
   /**

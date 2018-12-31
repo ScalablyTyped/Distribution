@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DecoratorConfigOptions extends js.Object {
   var bound: js.UndefOr[scala.Boolean] = js.undefined
   var getter: js.UndefOr[scala.Boolean] = js.undefined

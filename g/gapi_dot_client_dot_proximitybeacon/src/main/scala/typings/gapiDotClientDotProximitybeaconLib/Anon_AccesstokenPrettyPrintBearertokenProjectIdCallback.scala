@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPrettyPrintBearertokenProjectIdCallback extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -15,13 +14,13 @@ trait Anon_AccesstokenPrettyPrintBearertokenProjectIdCallback extends js.Object 
   /** Data format for response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The attachment name (`attachmentName`) of
-                   * the attachment to remove. For example:
-                   * `beacons/3!893737abc9/attachments/c5e937-af0-494-959-ec49d12738`. For
-                   * Eddystone-EID beacons, the beacon ID portion (`3!893737abc9`) may be the
-                   * beacon's current EID, or its "stable" Eddystone-UID.
-                   * Required.
-                   */
+    * The attachment name (`attachmentName`) of
+    * the attachment to remove. For example:
+    * `beacons/3!893737abc9/attachments/c5e937-af0-494-959-ec49d12738`. For
+    * Eddystone-EID beacons, the beacon ID portion (`3!893737abc9`) may be the
+    * beacon's current EID, or its "stable" Eddystone-UID.
+    * Required.
+    */
   var attachmentName: java.lang.String
   /** OAuth bearer token. */
   var bearer_token: js.UndefOr[java.lang.String] = js.undefined
@@ -38,10 +37,10 @@ trait Anon_AccesstokenPrettyPrintBearertokenProjectIdCallback extends js.Object 
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * The project id of the attachment to delete. If not provided, the project
-                   * that is making the request is used.
-                   * Optional.
-                   */
+    * The project id of the attachment to delete. If not provided, the project
+    * that is making the request is used.
+    * Optional.
+    */
   var projectId: js.UndefOr[java.lang.String] = js.undefined
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined

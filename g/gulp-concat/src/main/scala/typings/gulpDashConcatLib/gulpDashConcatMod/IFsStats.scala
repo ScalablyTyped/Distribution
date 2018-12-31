@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFsStats extends js.Object {
   var atime: js.UndefOr[stdLib.Date] = js.undefined
   var blksize: js.UndefOr[scala.Double] = js.undefined

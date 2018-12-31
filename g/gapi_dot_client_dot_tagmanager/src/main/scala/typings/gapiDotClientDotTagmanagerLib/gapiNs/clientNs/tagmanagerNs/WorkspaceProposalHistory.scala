@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkspaceProposalHistory extends js.Object {
   /** A user or reviewer comment. */
   var comment: js.UndefOr[WorkspaceProposalHistoryComment] = js.undefined

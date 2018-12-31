@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WindowsUpdateInfo extends UpdateInfo {
   var packages: js.UndefOr[org.scalablytyped.runtime.StringDictionary[PackageFileInfo] | scala.Null] = js.undefined
   /**
-       * @deprecated
-       * @private
-       */
+    * @deprecated
+    * @private
+    */
   var sha2: js.UndefOr[java.lang.String] = js.undefined
 }
 

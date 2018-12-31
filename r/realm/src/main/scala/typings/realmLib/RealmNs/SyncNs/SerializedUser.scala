@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SerializedUser extends js.Object {
   var identity: java.lang.String
   var isAdmin: scala.Boolean

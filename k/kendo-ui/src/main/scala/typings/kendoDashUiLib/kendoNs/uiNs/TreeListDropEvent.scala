@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TreeListDropEvent extends TreeListEvent {
   var destination: js.UndefOr[kendoDashUiLib.kendoNs.dataNs.TreeListModel] = js.undefined
   var dropTarget: js.UndefOr[stdLib.Element] = js.undefined

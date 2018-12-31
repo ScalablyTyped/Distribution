@@ -12,9 +12,9 @@ trait JQBlockUIStatic extends js.Object {
   /** block user activity for the page */
   def apply(): scala.Unit = js.native
   /**
-       * block user activity for the page
-       * @param options options 
-       */
+    * block user activity for the page
+    * @param options options 
+    */
   def apply(option: JQBlockUIOptions): scala.Unit = js.native
 }
 

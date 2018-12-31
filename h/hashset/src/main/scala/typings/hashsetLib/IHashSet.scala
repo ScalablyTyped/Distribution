@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHashSet[TValue] extends js.Object {
   def add(value: TValue): scala.Unit
   def addAll(arr: js.Array[TValue]): scala.Unit

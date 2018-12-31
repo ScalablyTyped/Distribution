@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Country extends js.Object {
   var AdditionalData: js.Array[Anon_Key]
   var City: java.lang.String

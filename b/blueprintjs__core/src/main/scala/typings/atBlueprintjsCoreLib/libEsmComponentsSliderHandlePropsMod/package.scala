@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libEsmComponentsSliderHandlePropsMod {
-  type HandleInteractionKind = /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibraryScoped(blueprintjs,Some(core)), TsIdentSimple(Anon_PUSH))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentLibraryScoped(blueprintjs,Some(core)), TsIdentSimple(Anon_PUSH))),List())))) */js.Any
-  type HandleType = /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibraryScoped(blueprintjs,Some(core)), TsIdentSimple(Anon_STARTStart))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentLibraryScoped(blueprintjs,Some(core)), TsIdentSimple(Anon_STARTStart))),List())))) */js.Any
+  type HandleInteractionKind = atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.lock | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.push | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.none
+  type HandleType = atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.full | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.start | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.end
 }

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISPECTATOR_TO_PLAYER extends js.Object {
   var playerId: scala.Double
   var room: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSRoom

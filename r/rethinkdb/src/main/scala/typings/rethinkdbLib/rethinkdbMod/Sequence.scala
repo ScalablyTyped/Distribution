@@ -12,32 +12,22 @@ trait Sequence
   def between(lower: js.Any, upper: js.Any): Sequence = js.native
   def between(lower: js.Any, upper: js.Any, index: Index): Sequence = js.native
   /**
-           * Turn a query into a changefeed, an infinite stream of objects representing
-           * changes to the query’s results as they occur. A changefeed may return changes
-           * to a table or an individual document (a “point” changefeed). Commands such as
-           * filter or `map` may be used before the changes command to transform or filter
-           * the output, and many commands that operate on sequences can be chained after
-           * `changes`.
-           *
-           * See: https://rethinkdb.com/api/javascript/changes/
-           */
+    * Turn a query into a changefeed, an infinite stream of objects representing
+    * changes to the query’s results as they occur. A changefeed may return changes
+    * to a table or an individual document (a “point” changefeed). Commands such as
+    * filter or `map` may be used before the changes command to transform or filter
+    * the output, and many commands that operate on sequences can be chained after
+    * `changes`.
+    *
+    * See: https://rethinkdb.com/api/javascript/changes/
+    */
   def changes(): Sequence = js.native
-  /**
-           * Turn a query into a changefeed, an infinite stream of objects representing
-           * changes to the query’s results as they occur. A changefeed may return changes
-           * to a table or an individual document (a “point” changefeed). Commands such as
-           * filter or `map` may be used before the changes command to transform or filter
-           * the output, and many commands that operate on sequences can be chained after
-           * `changes`.
-           *
-           * See: https://rethinkdb.com/api/javascript/changes/
-           */
   def changes(opts: ChangesOptions): Sequence = js.native
   /**
-           * Turn a sequence into an array or object, necessary when merging a sequence.
-           *
-           * See: https://www.rethinkdb.com/api/javascript/coerce_to/
-           */
+    * Turn a sequence into an array or object, necessary when merging a sequence.
+    *
+    * See: https://www.rethinkdb.com/api/javascript/coerce_to/
+    */
   @JSName("coerceTo")
   def coerceTo_array(key: rethinkdbLib.rethinkdbLibStrings.array): Expression[js.Array[_]] = js.native
   @JSName("coerceTo")
@@ -75,7 +65,6 @@ trait Sequence
   def pluck(props: java.lang.String*): Sequence = js.native
   // Aggregate
   def reduce(r: ReduceFunction[_]): Expression[_] = js.native
-  // Aggregate
   def reduce(r: ReduceFunction[_], base: js.Any): Expression[_] = js.native
   def sample(n: scala.Double): Sequence = js.native
   def skip(n: scala.Double): Sequence = js.native

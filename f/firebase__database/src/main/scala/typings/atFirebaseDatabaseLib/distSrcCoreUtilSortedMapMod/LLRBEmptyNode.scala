@@ -14,45 +14,20 @@ class LLRBEmptyNode[K, V] () extends js.Object {
   var right: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) = js.native
   var value: V = js.native
   /**
-       * @private
-       * @return {number} Not sure what this returns exactly. :-).
-       */
+    * @private
+    * @return {number} Not sure what this returns exactly. :-).
+    */
   def `check_`(): scala.Double = js.native
   /**
-       * Returns a copy of the current node.
-       *
-       * @return {!LLRBEmptyNode} The node copy.
-       */
+    * Returns a copy of the current node.
+    *
+    * @return {!LLRBEmptyNode} The node copy.
+    */
   def copy(): LLRBEmptyNode[K, V] = js.native
-  /**
-       * Returns a copy of the current node.
-       *
-       * @return {!LLRBEmptyNode} The node copy.
-       */
   def copy(key: K): LLRBEmptyNode[K, V] = js.native
-  /**
-       * Returns a copy of the current node.
-       *
-       * @return {!LLRBEmptyNode} The node copy.
-       */
   def copy(key: K, value: V): LLRBEmptyNode[K, V] = js.native
-  /**
-       * Returns a copy of the current node.
-       *
-       * @return {!LLRBEmptyNode} The node copy.
-       */
   def copy(key: K, value: V, color: scala.Boolean): LLRBEmptyNode[K, V] = js.native
-  /**
-       * Returns a copy of the current node.
-       *
-       * @return {!LLRBEmptyNode} The node copy.
-       */
   def copy(key: K, value: V, color: scala.Boolean, left: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V])): LLRBEmptyNode[K, V] = js.native
-  /**
-       * Returns a copy of the current node.
-       *
-       * @return {!LLRBEmptyNode} The node copy.
-       */
   def copy(
     key: K,
     value: V,
@@ -61,60 +36,60 @@ class LLRBEmptyNode[K, V] () extends js.Object {
     right: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V])
   ): LLRBEmptyNode[K, V] = js.native
   /**
-       * @return {number} The total number of nodes in the tree.
-       */
+    * @return {number} The total number of nodes in the tree.
+    */
   def count(): scala.Double = js.native
   /**
-       * Traverses the tree in key order and calls the specified action function
-       * for each node.
-       *
-       * @param {function(!K, !V):*} action Callback function to be called for each
-       * node.  If it returns true, traversal is aborted.
-       * @return {boolean} True if traversal was aborted.
-       */
+    * Traverses the tree in key order and calls the specified action function
+    * for each node.
+    *
+    * @param {function(!K, !V):*} action Callback function to be called for each
+    * node.  If it returns true, traversal is aborted.
+    * @return {boolean} True if traversal was aborted.
+    */
   def inorderTraversal(action: js.Function2[/* k */ K, /* v */ V, _]): scala.Boolean = js.native
   /**
-       * Returns a copy of the tree, with the specified key/value added.
-       *
-       * @param {!K} key Key to be added.
-       * @param {!V} value Value to be added.
-       * @param {Comparator} comparator Comparator.
-       * @return {!LLRBNode} New tree, with item added.
-       */
+    * Returns a copy of the tree, with the specified key/value added.
+    *
+    * @param {!K} key Key to be added.
+    * @param {!V} value Value to be added.
+    * @param {Comparator} comparator Comparator.
+    * @return {!LLRBNode} New tree, with item added.
+    */
   def insert(key: K, value: V, comparator: Comparator[K]): LLRBNode[K, V] = js.native
   /**
-       * @return {boolean} True if the tree is empty.
-       */
+    * @return {boolean} True if the tree is empty.
+    */
   def isEmpty(): scala.Boolean = js.native
   /**
-       * @private
-       * @return {boolean} Whether this node is red.
-       */
+    * @private
+    * @return {boolean} Whether this node is red.
+    */
   def `isRed_`(): scala.Boolean = js.native
   /**
-       * @return {null}
-       */
+    * @return {null}
+    */
   def maxKey(): scala.Null = js.native
   /**
-       * @return {null}
-       */
+    * @return {null}
+    */
   def minKey(): scala.Null = js.native
   /**
-       * Returns a copy of the tree, with the specified key removed.
-       *
-       * @param {!K} key The key to remove.
-       * @param {Comparator} comparator Comparator.
-       * @return {!LLRBEmptyNode} New tree, with item removed.
-       */
+    * Returns a copy of the tree, with the specified key removed.
+    *
+    * @param {!K} key The key to remove.
+    * @param {Comparator} comparator Comparator.
+    * @return {!LLRBEmptyNode} New tree, with item removed.
+    */
   def remove(key: K, comparator: Comparator[K]): LLRBEmptyNode[K, V] = js.native
   /**
-       * Traverses the tree in reverse key order and calls the specified action function
-       * for each node.
-       *
-       * @param {function(!K, !V)} action Callback function to be called for each
-       * node.  If it returns true, traversal is aborted.
-       * @return {boolean} True if traversal was aborted.
-       */
+    * Traverses the tree in reverse key order and calls the specified action function
+    * for each node.
+    *
+    * @param {function(!K, !V)} action Callback function to be called for each
+    * node.  If it returns true, traversal is aborted.
+    * @return {boolean} True if traversal was aborted.
+    */
   def reverseTraversal(action: js.Function2[/* k */ K, /* v */ V, scala.Unit]): scala.Boolean = js.native
 }
 

@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScoresResource extends js.Object {
   /**
-               * Get high scores, and optionally ranks, in leaderboards for the currently authenticated player. For a specific time span, leaderboardId can be set to
-               * ALL to retrieve data for all leaderboards in a given time span.
-               * NOTE: You cannot ask for 'ALL' leaderboards and 'ALL' timeSpans in the same request; only one parameter may be set to 'ALL'.
-               */
+    * Get high scores, and optionally ranks, in leaderboards for the currently authenticated player. For a specific time span, leaderboardId can be set to
+    * ALL to retrieve data for all leaderboards in a given time span.
+    * NOTE: You cannot ask for 'ALL' leaderboards and 'ALL' timeSpans in the same request; only one parameter may be set to 'ALL'.
+    */
   def get(request: gapiDotClientDotGamesLib.Anon_ConsistencyTokenIncludeRankType): gapiDotClientLib.gapiNs.clientNs.Request[PlayerLeaderboardScoreListResponse]
   /** Lists the scores in a leaderboard, starting from the top. */
   def list(request: gapiDotClientDotGamesLib.Anon_CollectionConsistencyTokenMaxResultsPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[LeaderboardScores]

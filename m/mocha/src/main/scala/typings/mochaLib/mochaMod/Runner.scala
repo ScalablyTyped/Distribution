@@ -31,10 +31,10 @@ import scala.scalajs.js.annotation._
 // #region Runner "start" event
 // #region Runner "waiting" event
 /**
-     * Initialize a `Runner` for the given `suite`.
-     *
-     * @see https://mochajs.org/api/Mocha.Runner.html
-     */
+  * Initialize a `Runner` for the given `suite`.
+  *
+  * @see https://mochajs.org/api/Mocha.Runner.html
+  */
 @JSImport("mocha", "Runner")
 @js.native
 class Runner protected ()
@@ -70,16 +70,16 @@ class Runner protected ()
 // #region Runner "start" event
 // #region Runner "waiting" event
 /**
-     * Initialize a `Runner` for the given `suite`.
-     *
-     * @see https://mochajs.org/api/Mocha.Runner.html
-     */
+  * Initialize a `Runner` for the given `suite`.
+  *
+  * @see https://mochajs.org/api/Mocha.Runner.html
+  */
 @JSImport("mocha", "Runner")
 @js.native
 object Runner extends js.Object {
   /**
-           * Wrapper for setImmediate, process.nextTick, or browser polyfill.
-           */
+    * Wrapper for setImmediate, process.nextTick, or browser polyfill.
+    */
   /* protected */ def immediately(callback: js.Function): scala.Unit = js.native
 }
 

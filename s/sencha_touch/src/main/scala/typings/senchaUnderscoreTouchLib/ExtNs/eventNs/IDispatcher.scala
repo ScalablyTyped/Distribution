@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDispatcher
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Returns the value of publishers

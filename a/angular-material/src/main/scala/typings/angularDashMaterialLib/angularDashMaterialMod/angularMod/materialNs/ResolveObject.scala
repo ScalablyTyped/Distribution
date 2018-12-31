@@ -5,9 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResolveObject
   extends /* name */ org.scalablytyped.runtime.StringDictionary[
-      angularLib.angularMod.angularNs.Injectable[js.Function1[/* repeated */_, js.Thenable[_]]]
+      angularLib.angularMod.angularNs.Injectable[js.Function1[/* repeated */ _, js.Thenable[_]]]
     ]
 

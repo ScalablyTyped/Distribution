@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FormattingTypeDescriptor extends js.Object {
   val alignment: js.UndefOr[scala.Boolean] = js.undefined
   val altText: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStorageQueryResultBase extends js.Object {
   var folder: winrtLib.WindowsNs.StorageNs.StorageFolder
   var oncontentschanged: js.Any

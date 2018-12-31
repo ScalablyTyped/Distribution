@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait URIRegExps extends js.Object {
   var ESCAPE: stdLib.RegExp
   var IPV4ADDRESS: stdLib.RegExp

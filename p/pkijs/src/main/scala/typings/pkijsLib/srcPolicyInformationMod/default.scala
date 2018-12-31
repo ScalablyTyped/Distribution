@@ -12,8 +12,8 @@ class default () extends PolicyInformation {
   /* CompleteClass */
   override var policyIdentifier: java.lang.String = js.native
   /**
-           * Value of the TIME class 
-           */
+    * Value of the TIME class 
+    */
   /* CompleteClass */
   override var policyQualifiers: js.Array[pkijsLib.srcPolicyQualifierInfoMod.default] = js.native
   /* CompleteClass */

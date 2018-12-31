@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Token extends js.Object {
   /** Raw text of this token. If you join all raws, you will get the original document. */
   var raw: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetParameters extends js.Object {
   var acknowledgeAbuse: js.UndefOr[scala.Boolean] = js.undefined
   var fileId: java.lang.String

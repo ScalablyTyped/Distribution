@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LaunchTemplateParameters extends js.Object {
   /** The runtime environment for the job. */
   var environment: js.UndefOr[RuntimeEnvironment] = js.undefined

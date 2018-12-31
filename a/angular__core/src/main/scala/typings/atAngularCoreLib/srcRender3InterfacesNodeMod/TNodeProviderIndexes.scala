@@ -12,7 +12,7 @@ sealed trait TNodeProviderIndexes extends js.Object
 @js.native
 object TNodeProviderIndexes extends js.Object {
   /** The count of view providers from the component on this node is encoded on the 16 most
-         significant bits */
+    significant bits */
   @js.native
   sealed trait CptViewProvidersCountShift
     extends atAngularCoreLib.srcRender3InterfacesNodeMod.TNodeProviderIndexes

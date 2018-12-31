@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOrientationSensorReading extends js.Object {
   var quaternion: SensorQuaternion
   var rotationMatrix: SensorRotationMatrix

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ScrollBarAction extends js.Object
 
 /**
-       * Actions are: Click on track, button, drag of thumb, or mouse wheel click
-      */
+  * Actions are: Click on track, button, drag of thumb, or mouse wheel click
+  */
 @JSGlobal("sap.ui.core.ScrollBarAction")
 @js.native
 object ScrollBarAction extends js.Object {

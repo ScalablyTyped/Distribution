@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseSchema extends js.Object {
   var default: js.UndefOr[java.lang.String | scala.Boolean | scala.Double | js.Object] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined

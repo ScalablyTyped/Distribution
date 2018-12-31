@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestRoute extends js.Object {
   var auth: hapiLib.Anon_Access
   /** the route internal normalized string representing the normalized path. */

@@ -5,33 +5,32 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SidebarProps
   extends reactDashToolboxLib.libDrawerDrawerMod.DrawerCommonProps {
   /**
-     * If true, when the `AppBar` gets pinned, it will stand over the `Drawer`.
-     * @default false
-     */
+    * If true, when the `AppBar` gets pinned, it will stand over the `Drawer`.
+    * @default false
+    */
   var clipped: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * The breakpoint at which the drawer is automatically pinned.
-     */
+    * The breakpoint at which the drawer is automatically pinned.
+    */
   var permanentAt: js.UndefOr[
     reactDashToolboxLib.reactDashToolboxLibStrings.sm | reactDashToolboxLib.reactDashToolboxLibStrings.smTablet | reactDashToolboxLib.reactDashToolboxLibStrings.md | reactDashToolboxLib.reactDashToolboxLibStrings.lg | reactDashToolboxLib.reactDashToolboxLibStrings.lgTablet | reactDashToolboxLib.reactDashToolboxLibStrings.xl | reactDashToolboxLib.reactDashToolboxLibStrings.xxl | reactDashToolboxLib.reactDashToolboxLibStrings.xxxl
   ] = js.undefined
   /**
-     * If true, the sidebar will be pinned open.
-     * @default false
-     */
+    * If true, the sidebar will be pinned open.
+    * @default false
+    */
   var pinned: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * Classnames object defining the component style.
-     */
+    * Classnames object defining the component style.
+    */
   var theme: js.UndefOr[SidebarTheme] = js.undefined
   /**
-     * Width in standard increments (1-12) or percentage (25, 33, 50, 66, 75, 100)
-     * @default 5
-     */
+    * Width in standard increments (1-12) or percentage (25, 33, 50, 66, 75, 100)
+    * @default 5
+    */
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 

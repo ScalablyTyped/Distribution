@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgGridRowSelectorsMethods extends js.Object {
   /**
   	 * Changes the all locales into the widget element to the language specified in [options.language](ui.iggridrowselectors#options:language)

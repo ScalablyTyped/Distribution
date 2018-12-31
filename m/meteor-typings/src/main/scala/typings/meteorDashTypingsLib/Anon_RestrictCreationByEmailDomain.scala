@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RestrictCreationByEmailDomain extends js.Object {
   var forbidClientAccountCreation: js.UndefOr[scala.Boolean] = js.undefined
   var loginExpirationInDays: js.UndefOr[scala.Double] = js.undefined

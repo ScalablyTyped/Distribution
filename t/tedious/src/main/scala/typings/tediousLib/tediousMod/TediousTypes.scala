@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TediousTypes extends js.Object {
   var BigInt: TediousType
   var Binary: TediousType

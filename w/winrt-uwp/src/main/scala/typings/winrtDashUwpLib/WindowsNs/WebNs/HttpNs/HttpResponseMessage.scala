@@ -8,11 +8,12 @@ import scala.scalajs.js.annotation._
 /** Represents an HTTP response message including headers, the status code, and data. */
 @JSGlobal("Windows.Web.Http.HttpResponseMessage")
 @js.native
+/** Initializes a new instance of the HttpResponseMessage class. */
 class HttpResponseMessage () extends js.Object {
   /**
-                   * Initializes a new instance of the HttpResponseMessage class with a specific HttpStatusCode .
-                   * @param statusCode The status code of the HTTP response.
-                   */
+    * Initializes a new instance of the HttpResponseMessage class with a specific HttpStatusCode .
+    * @param statusCode The status code of the HTTP response.
+    */
   def this(statusCode: HttpStatusCode) = this()
   /** Gets or sets the content of the HTTP response message on the HttpResponseMessage object. */
   var content: IHttpContent = js.native
@@ -33,9 +34,9 @@ class HttpResponseMessage () extends js.Object {
   /** Closes the HttpResponseMessage instance and releases allocated resources. */
   def close(): scala.Unit = js.native
   /**
-                   * Throws an exception if the IsSuccessStatusCode property for the HTTP response is false.
-                   * @return The HTTP response if the request was successful.
-                   */
+    * Throws an exception if the IsSuccessStatusCode property for the HTTP response is false.
+    * @return The HTTP response if the request was successful.
+    */
   def ensureSuccessStatusCode(): HttpResponseMessage = js.native
 }
 

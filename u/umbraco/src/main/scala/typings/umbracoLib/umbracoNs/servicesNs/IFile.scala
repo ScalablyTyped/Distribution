@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * File
-     */
-
+  * File
+  */
 trait IFile extends js.Object
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaContent extends js.Object {
   var bitrate: scala.Double
   var channels: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var autoHide: js.UndefOr[scala.Boolean] = js.undefined
   var classNames: js.UndefOr[ClassNamesOptions] = js.undefined

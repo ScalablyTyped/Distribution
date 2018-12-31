@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_HourlyNotificationBySubscription extends js.Object {
   var delayRangeStart: scala.Double
   var eventPipelineTime: scala.Double

@@ -10,24 +10,24 @@ import scala.scalajs.js.annotation._
 class SuggestContextMixin ()
   extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.SuggestContextMixin {
   /*
-       Sets analyzer used to analyze the suggest text.
-       */
+    Sets analyzer used to analyze the suggest text.
+    */
   /* CompleteClass */
   override def analyzer(analyzer: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.SuggestContextMixin = js.native
   /*
-       Sets the field used to generate suggestions from.
-       */
+    Sets the field used to generate suggestions from.
+    */
   /* CompleteClass */
   override def field(field: java.lang.String): elasticDotJsLib.elasticDotJsMod.elasticjsNs.SuggestContextMixin = js.native
   /*
-       Sets the maximum number of suggestions to be retrieved from
-       each individual shard.
-       */
+    Sets the maximum number of suggestions to be retrieved from
+    each individual shard.
+    */
   /* CompleteClass */
   override def shardSize(s: scala.Double): elasticDotJsLib.elasticDotJsMod.elasticjsNs.SuggestContextMixin = js.native
   /*
-       Sets the number of suggestions returned for each token.
-       */
+    Sets the number of suggestions returned for each token.
+    */
   /* CompleteClass */
   override def size(s: scala.Double): elasticDotJsLib.elasticDotJsMod.elasticjsNs.SuggestContextMixin = js.native
 }

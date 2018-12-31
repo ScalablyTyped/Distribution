@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChannelSettings extends js.Object {
   /** The country of the channel. */
   var country: js.UndefOr[java.lang.String] = js.undefined

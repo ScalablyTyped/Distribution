@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("fabric/fabric-impl", "Triangle")
 @js.native
+/**
+	 * Constructor
+	 * @param [options] Options object
+	 */
 class Triangle () extends Object {
-  /**
-  	 * Constructor
-  	 * @param [options] Options object
-  	 */
   def this(options: ITriangleOptions) = this()
   /**
   	 * Returns SVG representation of an instance
@@ -19,11 +19,6 @@ class Triangle () extends Object {
   	 * @return svg representation of an instance
   	 */
   def toSVG(): java.lang.String = js.native
-  /**
-  	 * Returns SVG representation of an instance
-  	 * @param [reviver] Method for further parsing of svg representation.
-  	 * @return svg representation of an instance
-  	 */
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 

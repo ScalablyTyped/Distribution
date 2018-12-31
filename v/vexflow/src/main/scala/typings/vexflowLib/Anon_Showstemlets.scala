@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Showstemlets extends js.Object {
   var beam_middle_only: js.UndefOr[scala.Boolean] = js.undefined
   var beam_rests: js.UndefOr[scala.Boolean] = js.undefined

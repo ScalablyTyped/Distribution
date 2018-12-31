@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(filesystemLib.LocalFileSystemSync because Would inherit conflicting mutable fields List(TEMPORARY, PERSISTENT))*/
+/* RemoveMultipleInheritance: Dropped parents List(filesystemLib.LocalFileSystemSync because Would inherit conflicting mutable fields List(PERSISTENT, TEMPORARY))*/
 @js.native
 trait WorkerGlobalScope extends LocalFileSystem
 

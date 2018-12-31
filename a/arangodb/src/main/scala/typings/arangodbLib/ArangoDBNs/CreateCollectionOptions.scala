@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateCollectionOptions extends js.Object {
   var isSystem: js.UndefOr[scala.Boolean] = js.undefined
   var isVolatile: js.UndefOr[scala.Boolean] = js.undefined

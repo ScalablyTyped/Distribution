@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Describe a HAL Link object
-     *
-     * https://tools.ietf.org/html/draft-kelly-json-hal-06#section-5
-     */
-
+  * Describe a HAL Link object
+  *
+  * https://tools.ietf.org/html/draft-kelly-json-hal-06#section-5
+  */
 trait Link extends js.Object {
   var deprecation: js.UndefOr[java.lang.String] = js.undefined
   var href: java.lang.String

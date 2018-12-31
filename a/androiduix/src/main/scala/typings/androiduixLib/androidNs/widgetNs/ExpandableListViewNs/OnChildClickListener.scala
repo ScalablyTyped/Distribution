@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnChildClickListener extends js.Object {
   def onChildClick(
     parent: androiduixLib.androidNs.widgetNs.ExpandableListView,

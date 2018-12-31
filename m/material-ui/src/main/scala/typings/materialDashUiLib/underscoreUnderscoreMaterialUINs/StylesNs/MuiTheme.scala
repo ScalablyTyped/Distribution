@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MuiTheme extends js.Object {
   var appBar: js.UndefOr[materialDashUiLib.Anon_Height] = js.undefined
   var avatar: js.UndefOr[materialDashUiLib.Anon_ColorBorderColor] = js.undefined

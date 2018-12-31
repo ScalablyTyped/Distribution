@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An object containing information about the current browser. */
-
 trait BrowserInfo extends js.Object {
   /** The browser's build ID/date, for example '20160101'. */
   var buildID: java.lang.String

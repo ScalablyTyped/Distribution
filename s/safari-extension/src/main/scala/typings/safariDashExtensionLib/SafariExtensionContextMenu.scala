@@ -21,14 +21,6 @@ trait SafariExtensionContextMenu extends js.Object {
   		* @returns The context menu item that was appended.
   		*/
   def appendContextMenuItem(identifier: java.lang.String, title: java.lang.String): SafariExtensionContextMenuItem = js.native
-  /**
-  		* Appends a menu item to the contextual menu.
-  		* If another menu item with the same identifier already exists, it is removed before appending the menu item. If command is not supplied, identifier is used as the command identifier.
-  		* @param identifier The unique identifier of the menu item.
-  		* @param title The title of the menu item.
-  		* @param command The command identifier that the context menu item sends when activated.
-  		* @returns The context menu item that was appended.
-  		*/
   def appendContextMenuItem(identifier: java.lang.String, title: java.lang.String, command: java.lang.String): SafariExtensionContextMenuItem = js.native
   /**
   		* Inserts a menu item at a specific index in the contextual menu.
@@ -40,15 +32,6 @@ trait SafariExtensionContextMenu extends js.Object {
   		* @returns The context menu item that was inserted.
   		*/
   def insertContextMenuItem(index: scala.Double, identifier: java.lang.String, title: java.lang.String): SafariExtensionContextMenuItem = js.native
-  /**
-  		* Inserts a menu item at a specific index in the contextual menu.
-  		* If another menu item with the same identifier already exists, it is removed before appending the menu item. If command is not supplied, identifier is used as the command identifier.
-  		* @param index The index where the menu item is being inserted.
-  		* @param identifier The unique identifier of the menu item.
-  		* @param title The title of the menu item.
-  		* @param command The command identifier that the context menu item sends when activated.
-  		* @returns The context menu item that was inserted.
-  		*/
   def insertContextMenuItem(
     index: scala.Double,
     identifier: java.lang.String,

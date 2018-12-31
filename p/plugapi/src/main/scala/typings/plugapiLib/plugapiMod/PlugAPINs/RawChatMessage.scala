@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RawChatMessage extends js.Object {
   var cid: java.lang.String
   var message: java.lang.String

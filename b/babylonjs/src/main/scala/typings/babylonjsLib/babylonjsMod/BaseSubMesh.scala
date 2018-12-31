@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Base class for submeshes
-     */
+  * Base class for submeshes
+  */
 @JSImport("babylonjs", "BaseSubMesh")
 @js.native
 class BaseSubMesh ()

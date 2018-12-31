@@ -16,9 +16,9 @@ abstract class UsbInterruptOutPipe () extends js.Object {
   /** Gets or sets configuration flags that controls the behavior of the pipe that writes data to a USB interrupt OUT endpoint. */
   var writeOptions: UsbWriteOptions = js.native
   /**
-                   * Starts an asynchronous operation to clear a stall condition (endpoint halt) on the USB interrupt OUT endpoint that is associated with the pipe.
-                   * @return An IAsyncAction object that is used to control the asynchronous operation.
-                   */
+    * Starts an asynchronous operation to clear a stall condition (endpoint halt) on the USB interrupt OUT endpoint that is associated with the pipe.
+    * @return An IAsyncAction object that is used to control the asynchronous operation.
+    */
   def clearStallAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

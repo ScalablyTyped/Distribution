@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnItemLongClickListener extends js.Object {
   def onItemLongClick(
     parent: androiduixLib.androidNs.widgetNs.AdapterView[_],

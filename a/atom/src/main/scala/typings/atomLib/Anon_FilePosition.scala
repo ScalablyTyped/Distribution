@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FilePosition extends js.Object {
   /** The path to the file to which the message applies. */
   var file: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISlider
   extends senchaUnderscoreTouchLib.ExtNs.fieldNs.IField {
   /** [Method] Returns the value of cls

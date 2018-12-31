@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 class Decimal128 protected ()
   extends bsonLib.bsonMod.Decimal128 {
   /**
-       * @param bytes A buffer containing the raw Decimal128 bytes.
-       */
+    * @param bytes A buffer containing the raw Decimal128 bytes.
+    */
   def this(bytes: nodeLib.Buffer) = this()
 }
 

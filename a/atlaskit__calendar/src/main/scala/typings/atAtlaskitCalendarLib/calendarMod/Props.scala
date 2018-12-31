@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Props extends js.Object {
   /** The number of the day currently focused. Places border around the date. 0 highlights no date. */
   var day: js.UndefOr[scala.Double] = js.undefined
@@ -22,9 +21,9 @@ trait Props extends js.Object {
   /** Default for `year`. */
   var defaultYear: js.UndefOr[scala.Double] = js.undefined
   /**
-       * Takes an array of dates as string in the format 'YYYY-MM-DD'. All dates provided are greyed out.
-       * This does not prevent these dates being selected.
-       */
+    * Takes an array of dates as string in the format 'YYYY-MM-DD'. All dates provided are greyed out.
+    * This does not prevent these dates being selected.
+    */
   var disabled: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Props to apply to the container. */
   var innerProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement]] = js.undefined
@@ -38,9 +37,9 @@ trait Props extends js.Object {
     ]
   ] = js.undefined
   /**
-       * Called when the calendar is navigated. This can be triggered by the keyboard, or by clicking the navigational buttons.
-       * The 'type' property indicates the the direction the calendar was navigated whereas the 'iso' property is a string of the format YYYY-MM-DD.
-       */
+    * Called when the calendar is navigated. This can be triggered by the keyboard, or by clicking the navigational buttons.
+    * The 'type' property indicates the the direction the calendar was navigated whereas the 'iso' property is a string of the format YYYY-MM-DD.
+    */
   var onChange: js.UndefOr[js.Function1[/* e */ ChangeEvent, scala.Unit]] = js.undefined
   /** Called when the calendar receives focus. This could be from a mouse event on the container by tabbing into it. */
   var onFocus: js.UndefOr[
@@ -50,21 +49,21 @@ trait Props extends js.Object {
     ]
   ] = js.undefined
   /**
-       * Function called when a day is clicked on. Calls with an object that has
-       * a day, month and week property as numbers, representing the date just clicked.
-       * It also has an 'iso' property, which is a string of the selected date in the
-       * format YYYY-MM-DD.
-       */
+    * Function called when a day is clicked on. Calls with an object that has
+    * a day, month and week property as numbers, representing the date just clicked.
+    * It also has an 'iso' property, which is a string of the selected date in the
+    * format YYYY-MM-DD.
+    */
   var onSelect: js.UndefOr[js.Function1[/* e */ SelectEvent, scala.Unit]] = js.undefined
   /**
-       * Takes an array of dates as string in the format 'YYYY-MM-DD'. All dates
-       * provided are given a background color.
-       */
+    * Takes an array of dates as string in the format 'YYYY-MM-DD'. All dates
+    * provided are given a background color.
+    */
   var previouslySelected: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-       * Takes an array of dates as string in the format 'YYYY-MM-DD'. All dates
-       * provided are given a background color.
-       */
+    * Takes an array of dates as string in the format 'YYYY-MM-DD'. All dates
+    * provided are given a background color.
+    */
   var selected: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Value of current day, as a string in the format 'YYYY-MM-DD'. */
   var today: js.UndefOr[java.lang.String] = js.undefined

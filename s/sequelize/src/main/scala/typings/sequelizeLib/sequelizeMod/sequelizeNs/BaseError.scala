@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 //  https://github.com/sequelize/sequelize/blob/v3.4.1/lib/errors.js
 //
 /**
-     * The Base Error all Sequelize Errors inherit from.
-     */
+  * The Base Error all Sequelize Errors inherit from.
+  */
 @js.native
 trait BaseError
   extends nodeLib.Error

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebpBoolean
   extends stdLib.Boolean {
   var alpha: scala.Boolean

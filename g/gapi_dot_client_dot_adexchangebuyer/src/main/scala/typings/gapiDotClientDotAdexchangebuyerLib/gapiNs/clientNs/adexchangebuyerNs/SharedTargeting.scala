@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SharedTargeting extends js.Object {
   /** The list of values to exclude from targeting. Each value is AND'd together. */
   var exclusions: js.UndefOr[js.Array[TargetingValue]] = js.undefined

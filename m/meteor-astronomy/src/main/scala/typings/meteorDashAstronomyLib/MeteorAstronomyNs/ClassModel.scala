@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClassModel[T] extends js.Object {
   var behaviors: js.UndefOr[js.Object] = js.undefined
   var collection: js.UndefOr[meteorLib.MongoNs.Collection[T]] = js.undefined

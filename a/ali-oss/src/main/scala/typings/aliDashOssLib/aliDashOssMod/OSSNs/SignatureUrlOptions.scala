@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SignatureUrlOptions extends js.Object {
    // the HTTP method, default is 'GET'
   var `Content-Type`: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ShowUrl extends js.Object {
   var allowPicking: js.UndefOr[scala.Boolean] = js.undefined
   var asynchronous: js.UndefOr[scala.Boolean] = js.undefined

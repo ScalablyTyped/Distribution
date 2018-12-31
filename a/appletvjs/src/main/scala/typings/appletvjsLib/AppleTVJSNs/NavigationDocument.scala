@@ -19,9 +19,6 @@ trait NavigationDocument extends js.Object {
   		 * Inserts a new document directly before a document currently on the stack.
   		 * */
   def insertBeforeDocument(document: stdLib.Document): scala.Unit = js.native
-  /**
-  		 * Inserts a new document directly before a document currently on the stack.
-  		 * */
   def insertBeforeDocument(document: stdLib.Document, beforeDocument: stdLib.Document): scala.Unit = js.native
   /**
   		 * Removes the top most document from the stack.
@@ -53,9 +50,6 @@ trait NavigationDocument extends js.Object {
   		 * Replaces a document on the stack with a new document.
   		 * */
   def replaceDocument(document: stdLib.Document): scala.Unit = js.native
-  /**
-  		 * Replaces a document on the stack with a new document.
-  		 * */
   def replaceDocument(document: stdLib.Document, beforeDocument: stdLib.Document): scala.Unit = js.native
 }
 

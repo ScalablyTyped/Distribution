@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Pkcs7 extends js.Object {
   var AnsiX923: cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.Padding
   var Iso10126: cryptoDashJsLib.cryptoDashJsMod.CryptoJSNs.Padding

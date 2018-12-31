@@ -13,19 +13,8 @@ object effectsModMembers extends js.Object {
   val put: Put = js.native
   val spawn: CallEffectFactory[ForkEffect] = js.native
   val take: Take = js.native
-  val takeLatest: js.Function9[
-    /* channel */ reduxDashSagaLib.reduxDashSagaMod.Channel[js.Any], 
-    /* worker */ HelperFunc6Rest[js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any], 
-    /* arg1 */ js.Any, 
-    /* arg2 */ js.Any, 
-    /* arg3 */ js.Any, 
-    /* arg4 */ js.Any, 
-    /* arg5 */ js.Any, 
-    /* arg6 */ js.Any, 
-    /* repeated */js.Any, 
-    ForkEffect
-  ] = js.native
-  val takem: js.Function1[/* pattern */ js.UndefOr[Pattern], TakeEffect] = js.native
+  val takeLatest: reduxDashSagaLib.Anon_Channel = js.native
+  val takem: reduxDashSagaLib.Anon_Pattern = js.native
   def actionChannel(pattern: Pattern): ActionChannelEffect = js.native
   def actionChannel(pattern: Pattern, buffer: reduxDashSagaLib.reduxDashSagaMod.Buffer[reduxLib.reduxMod.Action[_]]): ActionChannelEffect = js.native
   def all(effects: js.Array[Effect]): AllEffect = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChannelStats extends js.Object {
   /** maximum value in the channel */
   var max: scala.Double

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait BorderLineStyle extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.1]
-     */
+  * [Api set: ExcelApi 1.1]
+  */
 @JSGlobal("Excel.BorderLineStyle")
 @js.native
 object BorderLineStyle extends js.Object {

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ReferenceByURI protected () extends js.Object {
   /**
-                 * Create a reference to an OData model by the URI of the related OData service.
-                 * @param sURI holding the URI.
-                */
+    * Create a reference to an OData model by the URI of the related OData service.
+    * @param sURI holding the URI.
+    */
   def this(sURI: java.lang.String) = this()
 }
 

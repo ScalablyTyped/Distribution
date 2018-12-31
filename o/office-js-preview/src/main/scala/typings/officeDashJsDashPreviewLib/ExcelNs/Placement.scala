@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait Placement extends js.Object
 
 /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.Placement")
 @js.native
 object Placement extends js.Object {

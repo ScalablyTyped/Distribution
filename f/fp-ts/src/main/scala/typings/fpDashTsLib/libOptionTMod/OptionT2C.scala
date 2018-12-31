@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OptionT2C[M /* <: fpDashTsLib.libHKTMod.URIS2 */, L]
   extends fpDashTsLib.libApplicativeMod.ApplicativeComposition2C1[M, fpDashTsLib.libOptionMod.URI, L] {
   def chain[A, B](

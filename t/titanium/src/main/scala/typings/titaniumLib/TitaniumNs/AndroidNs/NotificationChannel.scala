@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * Module for notification channels.
 		 */
-
 trait NotificationChannel
   extends titaniumLib.TitaniumNs.Proxy {
   /**

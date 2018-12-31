@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Style extends js.Object {
   var Action: js.UndefOr[ItemStyle] = js.undefined
   var ActionWrapper: js.UndefOr[WrapperStyle] = js.undefined

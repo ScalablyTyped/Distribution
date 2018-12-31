@@ -94,19 +94,14 @@ trait Node extends NodeOptions {
   def enqueue(arg1: TwimlCallback, arg2: js.Any): Node = js.native
   // TwiML Verbs/Nouns:
   def gather(): Node = js.native
-  // TwiML Verbs/Nouns:
   def gather(arg1: java.lang.String): Node = js.native
-  // TwiML Verbs/Nouns:
   def gather(arg1: java.lang.String, arg2: js.Any): Node = js.native
   // TwiML Verbs/Nouns:
   def gather(arg1: js.Any): Node = js.native
-  // TwiML Verbs/Nouns:
   def gather(arg1: js.Any, arg2: java.lang.String): Node = js.native
-  // TwiML Verbs/Nouns:
   def gather(arg1: js.Any, arg2: TwimlCallback): Node = js.native
   // TwiML Verbs/Nouns:
   def gather(arg1: TwimlCallback): Node = js.native
-  // TwiML Verbs/Nouns:
   def gather(arg1: TwimlCallback, arg2: js.Any): Node = js.native
   def hangup(): Node = js.native
   def hangup(arg1: java.lang.String): Node = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LogicalOperation extends js.Object {
   var AccountMyWorkResult: js.Any
   var AccountRecentActivityWorkItemModel: js.Any

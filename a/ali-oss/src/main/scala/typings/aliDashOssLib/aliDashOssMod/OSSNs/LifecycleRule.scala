@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LifecycleRule extends js.Object {
    // expire after the days
   var date: java.lang.String

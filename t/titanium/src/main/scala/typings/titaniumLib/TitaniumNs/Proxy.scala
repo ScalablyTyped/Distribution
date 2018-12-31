@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * The base for all Titanium objects.
 	 */
-
 trait Proxy extends js.Object {
   /**
   		 * The name of the API that this proxy corresponds to.

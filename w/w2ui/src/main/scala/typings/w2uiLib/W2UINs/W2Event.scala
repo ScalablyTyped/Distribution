@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait W2Event extends js.Object {
   var target: java.lang.String
   def onComplete(): scala.Unit

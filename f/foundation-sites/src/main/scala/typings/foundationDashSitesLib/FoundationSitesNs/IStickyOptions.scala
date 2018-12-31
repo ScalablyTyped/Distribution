@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStickyOptions extends js.Object {
   var anchor: js.UndefOr[java.lang.String] = js.undefined
   var btmAnchor: js.UndefOr[java.lang.String] = js.undefined

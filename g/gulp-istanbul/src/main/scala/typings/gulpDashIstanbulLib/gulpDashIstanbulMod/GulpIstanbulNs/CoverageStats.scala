@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CoverageStats extends js.Object {
   var covered: scala.Double
   var pct: scala.Double

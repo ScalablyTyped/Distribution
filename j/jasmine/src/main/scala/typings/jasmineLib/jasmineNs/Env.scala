@@ -27,7 +27,6 @@ trait Env extends js.Object {
   def beforeAll(beforeAllFunction: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit], timeout: scala.Double): scala.Unit = js.native
   // ddescribe(description: string, specDefinitions: () => void): Suite; Not a part of jasmine. Angular team adds these
   def beforeEach(beforeEachFunction: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit]): scala.Unit = js.native
-  // ddescribe(description: string, specDefinitions: () => void): Suite; Not a part of jasmine. Angular team adds these
   def beforeEach(beforeEachFunction: js.Function1[/* done */ jasmineLib.DoneFn, scala.Unit], timeout: scala.Double): scala.Unit = js.native
   def clearReporters(): scala.Unit = js.native
   def `compareObjects_`(

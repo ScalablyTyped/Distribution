@@ -26,9 +26,9 @@ abstract class AllJoynCredentialsVerificationRequestedEventArgs () extends js.Ob
   /** Calling this method indicates that the credentials provided for authentication are valid. */
   def accept(): scala.Unit = js.native
   /**
-                   * Conducts verification of provided of credentials asynchronously.
-                   * @return The verification deferral.
-                   */
+    * Conducts verification of provided of credentials asynchronously.
+    * @return The verification deferral.
+    */
   def getDeferral(): winrtDashUwpLib.WindowsNs.FoundationNs.Deferral = js.native
 }
 

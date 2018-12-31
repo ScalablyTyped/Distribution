@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerOptions extends js.Object {
   var corsAllowOrigins: java.lang.String | scala.Boolean
   var delegate: Delegate

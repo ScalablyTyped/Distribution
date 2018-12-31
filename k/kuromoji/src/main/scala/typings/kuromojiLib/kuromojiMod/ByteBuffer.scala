@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ByteBuffer extends js.Object {
   var buffer: stdLib.Uint8Array
   var position: scala.Double

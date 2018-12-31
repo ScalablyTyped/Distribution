@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 @js.native
 object DiagnosticSeverityNs extends js.Object {
   /**
-       * Reports an error.
-       */
+    * Reports an error.
+    */
   val Error: vscodeDashLanguageclientLib.vscodeDashLanguageclientLibNumbers.`1` = js.native
   /**
-       * Reports a hint.
-       */
+    * Reports a hint.
+    */
   val Hint: vscodeDashLanguageclientLib.vscodeDashLanguageclientLibNumbers.`4` = js.native
   /**
-       * Reports an information.
-       */
+    * Reports an information.
+    */
   val Information: vscodeDashLanguageclientLib.vscodeDashLanguageclientLibNumbers.`3` = js.native
   /**
-       * Reports a warning.
-       */
+    * Reports a warning.
+    */
   val Warning: vscodeDashLanguageclientLib.vscodeDashLanguageclientLibNumbers.`2` = js.native
 }
 

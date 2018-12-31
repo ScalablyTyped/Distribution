@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MultipleSelectUI extends BaseUI {
   var clearAllUI: BaseUI
   var items: js.Array[_]

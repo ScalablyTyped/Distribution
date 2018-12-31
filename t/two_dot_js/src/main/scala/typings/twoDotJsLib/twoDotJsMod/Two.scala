@@ -18,7 +18,7 @@ trait Two extends js.Object {
   def add(objects: twoDotJsLib.twoDotJsMod.TwoNs.Object*): this.type = js.native
   def add(objects: js.Array[twoDotJsLib.twoDotJsMod.TwoNs.Object]): this.type = js.native
   def appendTo(domElement: stdLib.HTMLElement): this.type = js.native
-  def bind(event: java.lang.String, callback: js.Function1[/* repeated */js.Any, scala.Unit]): this.type = js.native
+  def bind(event: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   def clear(): this.type = js.native
   def interpret(svgNode: stdLib.SVGElement): twoDotJsLib.twoDotJsMod.TwoNs.Group = js.native
   def makeArcSegment(
@@ -60,8 +60,8 @@ trait Two extends js.Object {
   def render(): this.type = js.native
   def unbind(): this.type = js.native
   def unbind(event: java.lang.String): this.type = js.native
-  def unbind(event: java.lang.String, callback: js.Function1[/* repeated */js.Any, scala.Unit]): this.type = js.native
-  def unbind(event: scala.Null, callback: js.Function1[/* repeated */js.Any, scala.Unit]): this.type = js.native
+  def unbind(event: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
+  def unbind(event: scala.Null, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   def update(): this.type = js.native
 }
 

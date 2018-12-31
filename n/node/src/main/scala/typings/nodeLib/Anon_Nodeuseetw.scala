@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Nodeuseetw extends js.Object {
   var clang: scala.Double
   var host_arch: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimeScale extends ChartScales {
   var displayFormats: js.UndefOr[TimeDisplayFormat] = js.undefined
   var isoWeekday: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOnlineIdServiceTicketRequest extends js.Object {
   var policy: java.lang.String
   var service: java.lang.String

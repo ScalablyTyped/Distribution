@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Errors extends js.Object {
   /** The HTTP status of the first error in errors. */
   var code: js.UndefOr[scala.Double] = js.undefined

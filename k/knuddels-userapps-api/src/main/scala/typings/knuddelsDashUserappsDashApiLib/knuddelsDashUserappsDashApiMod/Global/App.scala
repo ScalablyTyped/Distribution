@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * @see https://developer.knuddels.de/docs/classes/App.html
 	 */
-
 trait App extends js.Object {
   /**
   		 * @see https://developer.knuddels.de/docs/classes/App.html#property_chatCommands

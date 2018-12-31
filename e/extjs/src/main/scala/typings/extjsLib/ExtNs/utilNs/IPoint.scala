@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPoint extends IRegion {
   /** [Method] Compare this point and another point
   		* @param p Ext.util.Point/Object The point to compare with, either an instance of Ext.util.Point or an object with left and top properties

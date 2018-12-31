@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IconClassName extends js.Object {
   var headerClassName: js.UndefOr[java.lang.String] = js.undefined
   var iconClassName: js.UndefOr[java.lang.String] = js.undefined

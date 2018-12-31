@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DetectIntentRequest extends js.Object {
   var inputAudio: js.UndefOr[js.Any] = js.undefined
   var queryInput: QueryInput

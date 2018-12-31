@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IShadow extends IBase {
   /** [Method] Hides this shadow */
   var hide: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

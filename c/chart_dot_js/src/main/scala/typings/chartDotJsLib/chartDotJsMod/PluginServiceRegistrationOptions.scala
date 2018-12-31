@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PluginServiceRegistrationOptions extends js.Object {
   var afterDatasetDraw: js.UndefOr[
     js.Function3[

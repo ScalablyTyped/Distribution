@@ -30,7 +30,7 @@ object incrementalDashDomMod extends js.Object {
     /* nameOrCtor */ incrementalDashDomLib.NameOrCtorDef, 
     /* key */ js.UndefOr[java.lang.String], 
     /* statics */ js.UndefOr[js.Array[js.Any]], 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     stdLib.Element
   ] = js.native
   var elementOpenEnd: js.Function0[stdLib.Element] = js.native
@@ -44,7 +44,7 @@ object incrementalDashDomMod extends js.Object {
     /* nameOrCtor */ incrementalDashDomLib.NameOrCtorDef, 
     /* key */ js.UndefOr[java.lang.String], 
     /* statics */ js.UndefOr[js.Array[js.Any]], 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     stdLib.Element
   ] = js.native
   var importNode: js.Function1[/* node */ js.UndefOr[stdLib.Node], scala.Unit] = js.native
@@ -54,12 +54,7 @@ object incrementalDashDomMod extends js.Object {
     /* typeId */ js.UndefOr[js.Any], 
     stdLib.Element
   ] = js.native
-  var patch: js.Function3[
-    /* node */ stdLib.Element | stdLib.DocumentFragment, 
-    /* fn */ js.Function1[/* data */ js.Any, scala.Unit], 
-    /* data */ js.UndefOr[js.Any], 
-    stdLib.Node
-  ] = js.native
+  var patch: incrementalDashDomLib.Anon_Node = js.native
   var patchInner: js.Function3[
     /* node */ stdLib.Element | stdLib.DocumentFragment, 
     /* fn */ js.Function1[/* data */ js.Any, scala.Unit], 

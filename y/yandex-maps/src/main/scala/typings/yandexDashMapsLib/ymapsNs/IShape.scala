@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IShape extends js.Object {
   def contains(position: js.Array[scala.Double]): scala.Boolean
   def equals(shape: IShape): scala.Boolean

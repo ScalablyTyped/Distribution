@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NgModuleProviderDef extends js.Object {
   var deps: js.Array[DepDef]
   var flags: NodeFlags

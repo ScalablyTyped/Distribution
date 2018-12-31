@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReactI18NextOptions
   extends i18nextLib.i18nextMod.i18nextNs.ReactOptions {
   var omitBoundRerender: js.UndefOr[scala.Boolean] = js.undefined

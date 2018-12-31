@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FireOptions
   extends consulLib.consulMod.ConsulNs.CommonOptions {
   var name: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SwiperState extends js.Object {
   var autoplayEnd: scala.Boolean
   var dir: reactDashNativeDashSwiperLib.reactDashNativeDashSwiperLibStrings.x | reactDashNativeDashSwiperLib.reactDashNativeDashSwiperLibStrings.y

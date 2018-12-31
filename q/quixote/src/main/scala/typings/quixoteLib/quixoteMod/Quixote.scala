@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Quixote extends js.Object {
   def createFrame(
     options: quixoteLib.QuixoteFrameOptions,

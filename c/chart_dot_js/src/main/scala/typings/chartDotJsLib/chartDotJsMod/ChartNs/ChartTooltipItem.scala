@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartTooltipItem extends js.Object {
   var datasetIndex: js.UndefOr[scala.Double] = js.undefined
   var index: js.UndefOr[scala.Double] = js.undefined

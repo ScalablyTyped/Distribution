@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImportSpecifier extends BaseModuleSpecifier {
   var imported: Identifier
   @JSName("type")

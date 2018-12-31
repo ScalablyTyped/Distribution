@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VersionInfo extends js.Object {
   var language: java.lang.String
   var language_version: java.lang.String

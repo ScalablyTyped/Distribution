@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UVGenerator extends js.Object {
   def generateSideWallUV(
     geometry: ExtrudeBufferGeometry,

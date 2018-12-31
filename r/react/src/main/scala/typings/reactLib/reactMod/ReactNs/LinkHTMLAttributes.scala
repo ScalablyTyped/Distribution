@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinkHTMLAttributes[T] extends HTMLAttributes[T] {
   var as: js.UndefOr[java.lang.String] = js.undefined
   var crossOrigin: js.UndefOr[java.lang.String] = js.undefined

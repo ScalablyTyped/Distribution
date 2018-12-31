@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHelmetConfiguration extends js.Object {
   var contentSecurityPolicy: js.UndefOr[scala.Boolean | IHelmetContentSecurityPolicyConfiguration] = js.undefined
   var dnsPrefetchControl: js.UndefOr[scala.Boolean | IHelmetDnsPrefetchControlConfiguration] = js.undefined

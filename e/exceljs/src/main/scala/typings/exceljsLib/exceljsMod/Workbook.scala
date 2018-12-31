@@ -38,9 +38,6 @@ class Workbook () extends js.Object {
   	 * Add a new worksheet and return a reference to it
   	 */
   def addWorksheet(name: java.lang.String): Worksheet = js.native
-  /**
-  	 * Add a new worksheet and return a reference to it
-  	 */
   def addWorksheet(name: java.lang.String, options: AddWorksheetOptions): Worksheet = js.native
   /**
   	 * Commit a completed workbook to stream and close the stream
@@ -52,9 +49,6 @@ class Workbook () extends js.Object {
   	 * Note: `workbook.worksheets.forEach` will still work but this is better.
   	 */
   def eachSheet(callback: js.Function2[/* worksheet */ Worksheet, /* id */ scala.Double, scala.Unit]): scala.Unit = js.native
-  /**
-  	 * fetch sheet by name or id
-  	 */
   def getWorksheet(indexOrName: java.lang.String): Worksheet = js.native
   /**
   	 * fetch sheet by name or id

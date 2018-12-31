@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RemoteInfo extends js.Object {
   /** the IP address of the remote server */
   var ip: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IsDeepEqual extends js.Object {
   @JSName("$copy")
   var $copy: js.Function2[/* obj */ js.Any, /* deep */ js.UndefOr[scala.Boolean], _]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkspacesResource extends js.Object {
   var built_in_variables: Built_in_variablesResource
   var folders: FoldersResource
@@ -16,9 +15,9 @@ trait WorkspacesResource extends js.Object {
   /** Creates a Workspace. */
   def create(request: gapiDotClientDotTagmanagerLib.Anon_Parent): gapiDotClientLib.gapiNs.clientNs.Request[Workspace]
   /**
-               * Creates a Container Version from the entities present in the workspace, deletes the workspace, and sets the base container version to the newly created
-               * version.
-               */
+    * Creates a Container Version from the entities present in the workspace, deletes the workspace, and sets the base container version to the newly created
+    * version.
+    */
   def create_version(request: gapiDotClientDotTagmanagerLib.Anon_Path): gapiDotClientLib.gapiNs.clientNs.Request[CreateContainerVersionResponse]
   /** Deletes a Workspace. */
   def delete(request: gapiDotClientDotTagmanagerLib.Anon_Path): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

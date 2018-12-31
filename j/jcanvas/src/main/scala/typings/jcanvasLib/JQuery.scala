@@ -14,12 +14,6 @@ trait JQuery extends js.Object {
   	 * with the rectangle being drawn from its center (by default).
   	 */
   def clearCanvas(): scala.Unit = js.native
-  /**
-  	 * This clearCanvas() clears all or any part of the canvas
-  	 * If nothing is passed, the entire canvas is cleared.
-  	 * Clearing a section works in the same way as drawing a rectangle,
-  	 * with the rectangle being drawn from its center (by default).
-  	 */
   def clearCanvas(rect: JCanvasRect): scala.Unit = js.native
   /**
   	 * A slice in jCanvas is, essentially, a slice of a circle (similar to a pizza slice).

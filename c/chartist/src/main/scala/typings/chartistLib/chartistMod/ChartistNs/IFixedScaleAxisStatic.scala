@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation._
 // a line chart axisX
 // in the actual chartist library these are classes that project their options onto
 // the parent class
-
 trait IFixedScaleAxisStatic extends js.Object
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait YAxisProps extends EventAttributes {
   var allowDataOverflow: js.UndefOr[scala.Boolean] = js.undefined
   var allowDecimals: js.UndefOr[scala.Boolean] = js.undefined

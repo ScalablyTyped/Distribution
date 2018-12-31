@@ -27,7 +27,6 @@ trait Matchers[T] extends js.Object {
   def toMatchRegex(regex: stdLib.RegExp): scala.Boolean = js.native
   // Copied definitions from angular-translate.
   def toMatchTranslated(translationId: java.lang.String): scala.Boolean = js.native
-  // Copied definitions from angular-translate.
   def toMatchTranslated(translationId: java.lang.String, interpolateParams: js.Any): scala.Boolean = js.native
   def toMatchTranslated(translationId: js.Array[java.lang.String]): scala.Boolean = js.native
   def toMatchTranslated(translationId: js.Array[java.lang.String], interpolateParams: js.Any): scala.Boolean = js.native

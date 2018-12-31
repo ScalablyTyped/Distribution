@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocateOptions extends js.Object {
   var enableHighAccuracy: js.UndefOr[scala.Boolean] = js.undefined
   var maxZoom: js.UndefOr[scala.Double] = js.undefined

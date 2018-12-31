@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DialogInstance extends js.Object {
   @JSName("$modal")
   var $modal: jqueryLib.JQuery[stdLib.HTMLElement]

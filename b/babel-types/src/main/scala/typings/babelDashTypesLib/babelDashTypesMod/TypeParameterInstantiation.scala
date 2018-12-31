@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TypeParameterInstantiation extends Node {
   var params: js.Array[FlowTypeAnnotation]
   @JSName("type")

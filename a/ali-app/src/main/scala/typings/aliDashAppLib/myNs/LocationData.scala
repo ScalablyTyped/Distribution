@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 //#region 位置 https://docs.alipay.com/mini/api/location
-
 trait LocationData extends js.Object {
   /** 精确度，单位m */
   var accuracy: java.lang.String

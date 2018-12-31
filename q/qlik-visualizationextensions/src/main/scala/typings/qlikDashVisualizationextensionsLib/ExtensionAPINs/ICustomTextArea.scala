@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICustomTextArea extends ICustomControl {
   var component: qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.textarea
   var defaultValue: java.lang.String

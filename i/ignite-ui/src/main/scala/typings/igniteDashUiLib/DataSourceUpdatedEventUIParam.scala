@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataSourceUpdatedEventUIParam extends js.Object {
   /**
   	 * Gets a reference to the data source.

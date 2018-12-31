@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Search args
-     */
-
+  * Search args
+  */
 trait ISearchArgs extends js.Object {
   var term: java.lang.String
 }

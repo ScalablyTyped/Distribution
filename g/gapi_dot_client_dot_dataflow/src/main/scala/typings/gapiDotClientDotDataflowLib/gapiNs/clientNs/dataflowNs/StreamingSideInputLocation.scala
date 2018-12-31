@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StreamingSideInputLocation extends js.Object {
   /** Identifies the state family where this side input is stored. */
   var stateFamily: js.UndefOr[java.lang.String] = js.undefined

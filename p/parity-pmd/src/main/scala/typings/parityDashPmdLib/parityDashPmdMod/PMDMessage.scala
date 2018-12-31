@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PMDMessage extends js.Object {
   var instrument: js.UndefOr[java.lang.String] = js.undefined
   var messageType: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CustomAuthorizerResult extends js.Object {
   var context: js.UndefOr[AuthResponseContext] = js.undefined
   var policyDocument: PolicyDocument

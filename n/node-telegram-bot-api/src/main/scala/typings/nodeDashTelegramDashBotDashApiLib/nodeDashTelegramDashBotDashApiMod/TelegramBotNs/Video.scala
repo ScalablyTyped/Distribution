@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Video extends FileBase {
   var duration: scala.Double
   var height: scala.Double

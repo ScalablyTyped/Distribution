@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProductUnitPricingBaseMeasure extends js.Object {
   /** The unit of the denominator. */
   var unit: js.UndefOr[java.lang.String] = js.undefined

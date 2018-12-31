@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IViewDropZone
   extends extjsLib.ExtNs.viewNs.IDropZone {
   /** [Config Option] (Boolean) */

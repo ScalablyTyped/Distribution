@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISmsTextMessage extends ISmsMessage {
   var body: java.lang.String
   var encoding: SmsEncoding

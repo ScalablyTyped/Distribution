@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ArtifactsEnvironments extends js.Object {
   var artifacts: scala.Double
   var environments: scala.Double

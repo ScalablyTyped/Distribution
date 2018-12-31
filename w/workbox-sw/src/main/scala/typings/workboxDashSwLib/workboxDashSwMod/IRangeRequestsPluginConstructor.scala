@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Instantiates a new RangeRequestsPlugin
- */
+  * Instantiates a new RangeRequestsPlugin
+  */
 @js.native
 trait IRangeRequestsPluginConstructor
   extends org.scalablytyped.runtime.Instantiable0[RangeRequestsPlugin]

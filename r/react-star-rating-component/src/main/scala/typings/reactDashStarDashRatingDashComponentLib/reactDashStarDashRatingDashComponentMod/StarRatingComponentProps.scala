@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StarRatingComponentProps extends js.Object {
   /** is component available for editing, default `true` */
   var editing: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DrawerItemsProps extends js.Object {
   var activeBackgroundColor: js.UndefOr[java.lang.String] = js.undefined
   var activeItemKey: js.UndefOr[java.lang.String] = js.undefined

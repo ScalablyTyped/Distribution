@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PretargetingConfigResource extends js.Object {
   /** Deletes an existing pretargeting config. */
   def delete(request: gapiDotClientDotAdexchangebuyerLib.Anon_PrettyPrintAccountIdQuotaUserKeyUserIpOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

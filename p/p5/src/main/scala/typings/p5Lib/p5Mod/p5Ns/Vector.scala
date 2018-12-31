@@ -8,418 +8,263 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Vector extends js.Object {
   /**
-       *   The x component of the vector
-       */
+    *   The x component of the vector
+    */
   var x: scala.Double = js.native
   /**
-       *   The y component of the vector
-       */
+    *   The y component of the vector
+    */
   var y: scala.Double = js.native
   /**
-       *   The z component of the vector
-       */
+    *   The z component of the vector
+    */
   var z: scala.Double = js.native
-  /**
-       *   Adds x, y, and z components to a vector, adds one
-       *   vector to another, or adds two independent vectors
-       *   together. The version of the method that adds two
-       *   vectors together is a static method and returns a
-       *   p5.Vector, the others acts directly on the vector.
-       *   See the examples for more context.
-       *   @param value the vector to add
-       *   @chainable
-       */
   def add(value: js.Array[scala.Double]): p5Lib.p5Mod.Vector = js.native
   /**
-       *   Adds x, y, and z components to a vector, adds one
-       *   vector to another, or adds two independent vectors
-       *   together. The version of the method that adds two
-       *   vectors together is a static method and returns a
-       *   p5.Vector, the others acts directly on the vector.
-       *   See the examples for more context.
-       *   @param value the vector to add
-       *   @chainable
-       */
+    *   Adds x, y, and z components to a vector, adds one
+    *   vector to another, or adds two independent vectors
+    *   together. The version of the method that adds two
+    *   vectors together is a static method and returns a
+    *   p5.Vector, the others acts directly on the vector.
+    *   See the examples for more context.
+    *   @param value the vector to add
+    *   @chainable
+    */
   def add(value: p5Lib.p5Mod.Vector): p5Lib.p5Mod.Vector = js.native
   /**
-       *   Adds x, y, and z components to a vector, adds one
-       *   vector to another, or adds two independent vectors
-       *   together. The version of the method that adds two
-       *   vectors together is a static method and returns a
-       *   p5.Vector, the others acts directly on the vector.
-       *   See the examples for more context.
-       *   @param x the x component of the vector to be added
-       *   @param [y] the y component of the vector to be
-       *   added
-       *   @param [z] the z component of the vector to be
-       *   added
-       *   @chainable
-       */
+    *   Adds x, y, and z components to a vector, adds one
+    *   vector to another, or adds two independent vectors
+    *   together. The version of the method that adds two
+    *   vectors together is a static method and returns a
+    *   p5.Vector, the others acts directly on the vector.
+    *   See the examples for more context.
+    *   @param x the x component of the vector to be added
+    *   @param [y] the y component of the vector to be
+    *   added
+    *   @param [z] the z component of the vector to be
+    *   added
+    *   @chainable
+    */
   def add(x: scala.Double): p5Lib.p5Mod.Vector = js.native
-  /**
-       *   Adds x, y, and z components to a vector, adds one
-       *   vector to another, or adds two independent vectors
-       *   together. The version of the method that adds two
-       *   vectors together is a static method and returns a
-       *   p5.Vector, the others acts directly on the vector.
-       *   See the examples for more context.
-       *   @param x the x component of the vector to be added
-       *   @param [y] the y component of the vector to be
-       *   added
-       *   @param [z] the z component of the vector to be
-       *   added
-       *   @chainable
-       */
   def add(x: scala.Double, y: scala.Double): p5Lib.p5Mod.Vector = js.native
-  /**
-       *   Adds x, y, and z components to a vector, adds one
-       *   vector to another, or adds two independent vectors
-       *   together. The version of the method that adds two
-       *   vectors together is a static method and returns a
-       *   p5.Vector, the others acts directly on the vector.
-       *   See the examples for more context.
-       *   @param x the x component of the vector to be added
-       *   @param [y] the y component of the vector to be
-       *   added
-       *   @param [z] the z component of the vector to be
-       *   added
-       *   @chainable
-       */
   def add(x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.Vector = js.native
   /**
-       *   Calculates and returns the angle (in radians)
-       *   between two vectors.
-       *   @param the x, y, and z components of a p5.Vector
-       *   @return the angle between (in radians)
-       */
+    *   Calculates and returns the angle (in radians)
+    *   between two vectors.
+    *   @param the x, y, and z components of a p5.Vector
+    *   @return the angle between (in radians)
+    */
   def angleBetween(the: p5Lib.p5Mod.Vector): scala.Double = js.native
   /**
-       *   Return a representation of this vector as a float
-       *   array. This is only for temporary use. If used in
-       *   any other fashion, the contents should be copied
-       *   by using the p5.Vector.copy() method to copy into
-       *   your own array.
-       *   @return an Array with the 3 values
-       */
+    *   Return a representation of this vector as a float
+    *   array. This is only for temporary use. If used in
+    *   any other fashion, the contents should be copied
+    *   by using the p5.Vector.copy() method to copy into
+    *   your own array.
+    *   @return an Array with the 3 values
+    */
   def array(): js.Array[scala.Double] = js.native
   /**
-       *   Gets a copy of the vector, returns a p5.Vector
-       *   object.
-       *   @return the copy of the p5.Vector object
-       */
+    *   Gets a copy of the vector, returns a p5.Vector
+    *   object.
+    *   @return the copy of the p5.Vector object
+    */
   def copy(): p5Lib.p5Mod.Vector = js.native
   /**
-       *   Calculates and returns a vector composed of the
-       *   cross product between two vectors. Both the static
-       *   and non static methods return a new p5.Vector. See
-       *   the examples for more context.
-       *   @param v p5.Vector to be crossed
-       *   @return p5.Vector composed of cross product
-       */
+    *   Calculates and returns a vector composed of the
+    *   cross product between two vectors. Both the static
+    *   and non static methods return a new p5.Vector. See
+    *   the examples for more context.
+    *   @param v p5.Vector to be crossed
+    *   @return p5.Vector composed of cross product
+    */
   def cross(v: p5Lib.p5Mod.Vector): p5Lib.p5Mod.Vector = js.native
   /**
-       *   Calculates the Euclidean distance between two
-       *   points (considering a point as a vector object).
-       *   @param v the x, y, and z coordinates of a
-       *   p5.Vector
-       *   @return the distance
-       */
+    *   Calculates the Euclidean distance between two
+    *   points (considering a point as a vector object).
+    *   @param v the x, y, and z coordinates of a
+    *   p5.Vector
+    *   @return the distance
+    */
   def dist(v: p5Lib.p5Mod.Vector): scala.Double = js.native
   /**
-       *   Divide the vector by a scalar. The static version
-       *   of this method creates a new p5.Vector while the
-       *   non static version acts on the vector directly.
-       *   See the examples for more context.
-       *   @param n the number to divide the vector by
-       *   @chainable
-       */
+    *   Divide the vector by a scalar. The static version
+    *   of this method creates a new p5.Vector while the
+    *   non static version acts on the vector directly.
+    *   See the examples for more context.
+    *   @param n the number to divide the vector by
+    *   @chainable
+    */
   def div(n: scala.Double): p5Lib.p5Mod.Vector = js.native
   /**
-       *   Calculates the dot product of two vectors. The
-       *   version of the method that computes the dot
-       *   product of two independent vectors is a static
-       *   method. See the examples for more context.
-       *   @param value value component of the vector or a
-       *   p5.Vector
-       */
+    *   Calculates the dot product of two vectors. The
+    *   version of the method that computes the dot
+    *   product of two independent vectors is a static
+    *   method. See the examples for more context.
+    *   @param value value component of the vector or a
+    *   p5.Vector
+    */
   def dot(value: p5Lib.p5Mod.Vector): scala.Double = js.native
   /**
-       *   Calculates the dot product of two vectors. The
-       *   version of the method that computes the dot
-       *   product of two independent vectors is a static
-       *   method. See the examples for more context.
-       *   @param x x component of the vector
-       *   @param [y] y component of the vector
-       *   @param [z] z component of the vector
-       *   @return the dot product
-       */
+    *   Calculates the dot product of two vectors. The
+    *   version of the method that computes the dot
+    *   product of two independent vectors is a static
+    *   method. See the examples for more context.
+    *   @param x x component of the vector
+    *   @param [y] y component of the vector
+    *   @param [z] z component of the vector
+    *   @return the dot product
+    */
   def dot(x: scala.Double): scala.Double = js.native
-  /**
-       *   Calculates the dot product of two vectors. The
-       *   version of the method that computes the dot
-       *   product of two independent vectors is a static
-       *   method. See the examples for more context.
-       *   @param x x component of the vector
-       *   @param [y] y component of the vector
-       *   @param [z] z component of the vector
-       *   @return the dot product
-       */
   def dot(x: scala.Double, y: scala.Double): scala.Double = js.native
-  /**
-       *   Calculates the dot product of two vectors. The
-       *   version of the method that computes the dot
-       *   product of two independent vectors is a static
-       *   method. See the examples for more context.
-       *   @param x x component of the vector
-       *   @param [y] y component of the vector
-       *   @param [z] z component of the vector
-       *   @return the dot product
-       */
   def dot(x: scala.Double, y: scala.Double, z: scala.Double): scala.Double = js.native
   /**
-       *   Equality check against a p5.Vector
-       *   @param [x] the x component of the vector
-       *   @param [y] the y component of the vector
-       *   @param [z] the z component of the vector
-       *   @return whether the vectors are equals
-       */
+    *   Equality check against a p5.Vector
+    *   @param [x] the x component of the vector
+    *   @param [y] the y component of the vector
+    *   @param [z] the z component of the vector
+    *   @return whether the vectors are equals
+    */
   def equals(): scala.Boolean = js.native
-  /**
-       *   Equality check against a p5.Vector
-       *   @param value the vector to compare
-       */
   def equals(value: js.Array[_]): scala.Boolean = js.native
   /**
-       *   Equality check against a p5.Vector
-       *   @param value the vector to compare
-       */
+    *   Equality check against a p5.Vector
+    *   @param value the vector to compare
+    */
   def equals(value: p5Lib.p5Mod.Vector): scala.Boolean = js.native
-  /**
-       *   Equality check against a p5.Vector
-       *   @param [x] the x component of the vector
-       *   @param [y] the y component of the vector
-       *   @param [z] the z component of the vector
-       *   @return whether the vectors are equals
-       */
   def equals(x: scala.Double): scala.Boolean = js.native
-  /**
-       *   Equality check against a p5.Vector
-       *   @param [x] the x component of the vector
-       *   @param [y] the y component of the vector
-       *   @param [z] the z component of the vector
-       *   @return whether the vectors are equals
-       */
   def equals(x: scala.Double, y: scala.Double): scala.Boolean = js.native
-  /**
-       *   Equality check against a p5.Vector
-       *   @param [x] the x component of the vector
-       *   @param [y] the y component of the vector
-       *   @param [z] the z component of the vector
-       *   @return whether the vectors are equals
-       */
   def equals(x: scala.Double, y: scala.Double, z: scala.Double): scala.Boolean = js.native
   /**
-       *   Calculate the angle of rotation for this vector
-       *   (only 2D vectors)
-       *   @return the angle of rotation
-       */
+    *   Calculate the angle of rotation for this vector
+    *   (only 2D vectors)
+    *   @return the angle of rotation
+    */
   def heading(): scala.Double = js.native
   /**
-       *   Linear interpolate the vector to another vector
-       *   @param v the p5.Vector to lerp to
-       *   @param amt the amount of interpolation; some value
-       *   between 0.0 (old vector) and 1.0 (new vector). 0.9
-       *   is very near the new vector. 0.5 is halfway in
-       *   between.
-       *   @chainable
-       */
+    *   Linear interpolate the vector to another vector
+    *   @param v the p5.Vector to lerp to
+    *   @param amt the amount of interpolation; some value
+    *   between 0.0 (old vector) and 1.0 (new vector). 0.9
+    *   is very near the new vector. 0.5 is halfway in
+    *   between.
+    *   @chainable
+    */
   def lerp(v: p5Lib.p5Mod.Vector, amt: scala.Double): p5Lib.p5Mod.Vector = js.native
   /**
-       *   Linear interpolate the vector to another vector
-       *   @param x the x component
-       *   @param y the y component
-       *   @param z the z component
-       *   @param amt the amount of interpolation; some value
-       *   between 0.0 (old vector) and 1.0 (new vector). 0.9
-       *   is very near the new vector. 0.5 is halfway in
-       *   between.
-       *   @chainable
-       */
+    *   Linear interpolate the vector to another vector
+    *   @param x the x component
+    *   @param y the y component
+    *   @param z the z component
+    *   @param amt the amount of interpolation; some value
+    *   between 0.0 (old vector) and 1.0 (new vector). 0.9
+    *   is very near the new vector. 0.5 is halfway in
+    *   between.
+    *   @chainable
+    */
   def lerp(x: scala.Double, y: scala.Double, z: scala.Double, amt: scala.Double): p5Lib.p5Mod.Vector = js.native
   /**
-       *   Limit the magnitude of this vector to the value
-       *   used for the max parameter.
-       *   @param max the maximum magnitude for the vector
-       *   @chainable
-       */
+    *   Limit the magnitude of this vector to the value
+    *   used for the max parameter.
+    *   @param max the maximum magnitude for the vector
+    *   @chainable
+    */
   def limit(max: scala.Double): p5Lib.p5Mod.Vector = js.native
   /**
-       *   Calculates the magnitude (length) of the vector
-       *   and returns the result as a float (this is simply
-       *   the equation sqrt(xx + yy + z*z).)
-       *   @return magnitude of the vector
-       */
+    *   Calculates the magnitude (length) of the vector
+    *   and returns the result as a float (this is simply
+    *   the equation sqrt(xx + yy + z*z).)
+    *   @return magnitude of the vector
+    */
   def mag(): scala.Double = js.native
   /**
-       *   Calculates the squared magnitude of the vector and
-       *   returns the result as a float (this is simply the
-       *   equation (xx + yy + z*z).) Faster if the real
-       *   length is not required in the case of comparing
-       *   vectors, etc.
-       *   @return squared magnitude of the vector
-       */
+    *   Calculates the squared magnitude of the vector and
+    *   returns the result as a float (this is simply the
+    *   equation (xx + yy + z*z).) Faster if the real
+    *   length is not required in the case of comparing
+    *   vectors, etc.
+    *   @return squared magnitude of the vector
+    */
   def magSq(): scala.Double = js.native
   /**
-       *   Multiply the vector by a scalar. The static
-       *   version of this method creates a new p5.Vector
-       *   while the non static version acts on the vector
-       *   directly. See the examples for more context.
-       *   @param n the number to multiply with the vector
-       *   @chainable
-       */
+    *   Multiply the vector by a scalar. The static
+    *   version of this method creates a new p5.Vector
+    *   while the non static version acts on the vector
+    *   directly. See the examples for more context.
+    *   @param n the number to multiply with the vector
+    *   @chainable
+    */
   def mult(n: scala.Double): p5Lib.p5Mod.Vector = js.native
   /**
-       *   Normalize the vector to length 1 (make it a unit
-       *   vector).
-       *   @return normalized p5.Vector
-       */
+    *   Normalize the vector to length 1 (make it a unit
+    *   vector).
+    *   @return normalized p5.Vector
+    */
   def normalize(): p5Lib.p5Mod.Vector = js.native
   /**
-       *   Rotate the vector by an angle (only 2D vectors),
-       *   magnitude remains the same
-       *   @param angle the angle of rotation
-       *   @chainable
-       */
+    *   Rotate the vector by an angle (only 2D vectors),
+    *   magnitude remains the same
+    *   @param angle the angle of rotation
+    *   @chainable
+    */
   def rotate(angle: scala.Double): p5Lib.p5Mod.Vector = js.native
   /**
-       *   Sets the x, y, and z component of the vector using
-       *   two or three separate variables, the data from a
-       *   p5.Vector, or the values from a float array.
-       *   @param [x] the x component of the vector
-       *   @param [y] the y component of the vector
-       *   @param [z] the z component of the vector
-       *   @chainable
-       */
+    *   Sets the x, y, and z component of the vector using
+    *   two or three separate variables, the data from a
+    *   p5.Vector, or the values from a float array.
+    *   @param [x] the x component of the vector
+    *   @param [y] the y component of the vector
+    *   @param [z] the z component of the vector
+    *   @chainable
+    */
   def set(): p5Lib.p5Mod.Vector = js.native
-  /**
-       *   Sets the x, y, and z component of the vector using
-       *   two or three separate variables, the data from a
-       *   p5.Vector, or the values from a float array.
-       *   @param value the vector to set
-       *   @chainable
-       */
   def set(value: js.Array[scala.Double]): p5Lib.p5Mod.Vector = js.native
   /**
-       *   Sets the x, y, and z component of the vector using
-       *   two or three separate variables, the data from a
-       *   p5.Vector, or the values from a float array.
-       *   @param value the vector to set
-       *   @chainable
-       */
+    *   Sets the x, y, and z component of the vector using
+    *   two or three separate variables, the data from a
+    *   p5.Vector, or the values from a float array.
+    *   @param value the vector to set
+    *   @chainable
+    */
   def set(value: p5Lib.p5Mod.Vector): p5Lib.p5Mod.Vector = js.native
-  /**
-       *   Sets the x, y, and z component of the vector using
-       *   two or three separate variables, the data from a
-       *   p5.Vector, or the values from a float array.
-       *   @param [x] the x component of the vector
-       *   @param [y] the y component of the vector
-       *   @param [z] the z component of the vector
-       *   @chainable
-       */
   def set(x: scala.Double): p5Lib.p5Mod.Vector = js.native
-  /**
-       *   Sets the x, y, and z component of the vector using
-       *   two or three separate variables, the data from a
-       *   p5.Vector, or the values from a float array.
-       *   @param [x] the x component of the vector
-       *   @param [y] the y component of the vector
-       *   @param [z] the z component of the vector
-       *   @chainable
-       */
   def set(x: scala.Double, y: scala.Double): p5Lib.p5Mod.Vector = js.native
-  /**
-       *   Sets the x, y, and z component of the vector using
-       *   two or three separate variables, the data from a
-       *   p5.Vector, or the values from a float array.
-       *   @param [x] the x component of the vector
-       *   @param [y] the y component of the vector
-       *   @param [z] the z component of the vector
-       *   @chainable
-       */
   def set(x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.Vector = js.native
   /**
-       *   Set the magnitude of this vector to the value used
-       *   for the len parameter.
-       *   @param len the new length for this vector
-       *   @chainable
-       */
+    *   Set the magnitude of this vector to the value used
+    *   for the len parameter.
+    *   @param len the new length for this vector
+    *   @chainable
+    */
   def setMag(len: scala.Double): p5Lib.p5Mod.Vector = js.native
-  /**
-       *   Subtracts x, y, and z components from a vector,
-       *   subtracts one vector from another, or subtracts
-       *   two independent vectors. The version of the method
-       *   that subtracts two vectors is a static method and
-       *   returns a p5.Vector, the other acts directly on
-       *   the vector. See the examples for more context.
-       *   @param value the vector to subtract
-       *   @chainable
-       */
   def sub(value: js.Array[scala.Double]): p5Lib.p5Mod.Vector = js.native
   /**
-       *   Subtracts x, y, and z components from a vector,
-       *   subtracts one vector from another, or subtracts
-       *   two independent vectors. The version of the method
-       *   that subtracts two vectors is a static method and
-       *   returns a p5.Vector, the other acts directly on
-       *   the vector. See the examples for more context.
-       *   @param value the vector to subtract
-       *   @chainable
-       */
+    *   Subtracts x, y, and z components from a vector,
+    *   subtracts one vector from another, or subtracts
+    *   two independent vectors. The version of the method
+    *   that subtracts two vectors is a static method and
+    *   returns a p5.Vector, the other acts directly on
+    *   the vector. See the examples for more context.
+    *   @param value the vector to subtract
+    *   @chainable
+    */
   def sub(value: p5Lib.p5Mod.Vector): p5Lib.p5Mod.Vector = js.native
   /**
-       *   Subtracts x, y, and z components from a vector,
-       *   subtracts one vector from another, or subtracts
-       *   two independent vectors. The version of the method
-       *   that subtracts two vectors is a static method and
-       *   returns a p5.Vector, the other acts directly on
-       *   the vector. See the examples for more context.
-       *   @param x the x component of the vector to subtract
-       *   @param [y] the y component of the vector to
-       *   subtract
-       *   @param [z] the z component of the vector to
-       *   subtract
-       *   @chainable
-       */
+    *   Subtracts x, y, and z components from a vector,
+    *   subtracts one vector from another, or subtracts
+    *   two independent vectors. The version of the method
+    *   that subtracts two vectors is a static method and
+    *   returns a p5.Vector, the other acts directly on
+    *   the vector. See the examples for more context.
+    *   @param x the x component of the vector to subtract
+    *   @param [y] the y component of the vector to
+    *   subtract
+    *   @param [z] the z component of the vector to
+    *   subtract
+    *   @chainable
+    */
   def sub(x: scala.Double): p5Lib.p5Mod.Vector = js.native
-  /**
-       *   Subtracts x, y, and z components from a vector,
-       *   subtracts one vector from another, or subtracts
-       *   two independent vectors. The version of the method
-       *   that subtracts two vectors is a static method and
-       *   returns a p5.Vector, the other acts directly on
-       *   the vector. See the examples for more context.
-       *   @param x the x component of the vector to subtract
-       *   @param [y] the y component of the vector to
-       *   subtract
-       *   @param [z] the z component of the vector to
-       *   subtract
-       *   @chainable
-       */
   def sub(x: scala.Double, y: scala.Double): p5Lib.p5Mod.Vector = js.native
-  /**
-       *   Subtracts x, y, and z components from a vector,
-       *   subtracts one vector from another, or subtracts
-       *   two independent vectors. The version of the method
-       *   that subtracts two vectors is a static method and
-       *   returns a p5.Vector, the other acts directly on
-       *   the vector. See the examples for more context.
-       *   @param x the x component of the vector to subtract
-       *   @param [y] the y component of the vector to
-       *   subtract
-       *   @param [z] the z component of the vector to
-       *   subtract
-       *   @chainable
-       */
   def sub(x: scala.Double, y: scala.Double, z: scala.Double): p5Lib.p5Mod.Vector = js.native
 }
 

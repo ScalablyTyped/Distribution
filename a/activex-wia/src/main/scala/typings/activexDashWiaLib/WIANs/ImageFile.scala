@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * The ImageFile object is a container for images transferred to your computer when you call Transfer or ShowTransfer. It also supports image files
-     * through LoadFile. An ImageFile object can be created using "WIA.ImageFile" in a call to CreateObject.
-     */
+  * The ImageFile object is a container for images transferred to your computer when you call Transfer or ShowTransfer. It also supports image files
+  * through LoadFile. An ImageFile object can be created using "WIA.ImageFile" in a call to CreateObject.
+  */
 @JSGlobal("WIA.ImageFile")
 @js.native
 class ImageFile protected () extends js.Object {
@@ -56,8 +56,6 @@ class ImageFile protected () extends js.Object {
   def FileData(Index: scala.Double): js.Any = js.native
   /** Loads the ImageFile object with the specified File */
   def LoadFile(Filename: java.lang.String): scala.Unit = js.native
-  /** Returns the specified item in the collection either by position or name. */
-  /** A collection of all properties for this image */
   def Properties(Index: java.lang.String): Property = js.native
   /** Returns the specified item in the collection either by position or name. */
   /** A collection of all properties for this image */

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _RetryOptions extends js.Object {
   var backOffBase: scala.Double
   var backOffExponent: scala.Double

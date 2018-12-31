@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Events extends js.Object {
   var ADVANCE: plugapiLib.plugapiLibStrings.advance
   var BAN: plugapiLib.plugapiLibStrings.ban

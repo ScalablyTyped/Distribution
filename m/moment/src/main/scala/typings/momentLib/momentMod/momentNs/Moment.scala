@@ -11,13 +11,10 @@ trait Moment
   def add(): Moment = js.native
   def add(amount: DurationInputArg1): Moment = js.native
   def add(amount: DurationInputArg1, unit: DurationInputArg2): Moment = js.native
-  /**
-       * @deprecated reverse syntax
-       */
   def add(unit: momentLib.momentMod.momentNs.unitOfTimeNs.DurationConstructor, amount: java.lang.String): Moment = js.native
   /**
-       * @deprecated reverse syntax
-       */
+    * @deprecated reverse syntax
+    */
   def add(unit: momentLib.momentMod.momentNs.unitOfTimeNs.DurationConstructor, amount: scala.Double): Moment = js.native
   def calendar(): java.lang.String = js.native
   def calendar(time: MomentInput): java.lang.String = js.native
@@ -26,12 +23,12 @@ trait Moment
   def date(): scala.Double = js.native
   def date(d: scala.Double): Moment = js.native
   /**
-       * @deprecated use date()
-       */
+    * @deprecated use date()
+    */
   def dates(): scala.Double = js.native
   /**
-       * @deprecated use date(d)
-       */
+    * @deprecated use date(d)
+    */
   def dates(d: scala.Double): Moment = js.native
   def day(): scala.Double = js.native
   def day(d: java.lang.String): Moment = js.native
@@ -99,8 +96,8 @@ trait Moment
   ): scala.Boolean = js.native
   def isDST(): scala.Boolean = js.native
   /**
-       * @deprecated no reliable implementation
-       */
+    * @deprecated no reliable implementation
+    */
   def isDSTShifted(): scala.Boolean = js.native
   def isLeapYear(): scala.Boolean = js.native
   def isLocal(): scala.Boolean = js.native
@@ -115,8 +112,8 @@ trait Moment
   def isSameOrBefore(inp: MomentInput, granularity: momentLib.momentMod.momentNs.unitOfTimeNs.StartOf): scala.Boolean = js.native
   def isUTC(): scala.Boolean = js.native
   /**
-       * @deprecated use isUTC
-       */
+    * @deprecated use isUTC
+    */
   def isUtc(): scala.Boolean = js.native
   def isUtcOffset(): scala.Boolean = js.native
   def isValid(): scala.Boolean = js.native
@@ -131,52 +128,33 @@ trait Moment
   def isoWeeks(d: scala.Double): Moment = js.native
   def isoWeeksInYear(): scala.Double = js.native
   /**
-       * @deprecated as of 2.8.0, use locale
-       */
+    * @deprecated as of 2.8.0, use locale
+    */
   def lang(): Locale = js.native
   /**
-       * @deprecated as of 2.8.0, use locale
-       */
+    * @deprecated as of 2.8.0, use locale
+    */
   def lang(language: LocaleSpecifier): Moment = js.native
   // current date/time in local mode
   def local(): Moment = js.native
-  // current date/time in local mode
   def local(keepLocalTime: scala.Boolean): Moment = js.native
   def locale(): java.lang.String = js.native
   def locale(locale: LocaleSpecifier): Moment = js.native
   def localeData(): Locale = js.native
   // NOTE(constructor): Same as moment constructor
   /**
-       * @deprecated as of 2.7.0, use moment.min/max
-       */
+    * @deprecated as of 2.7.0, use moment.min/max
+    */
   def max(): Moment = js.native
-  // NOTE(constructor): Same as moment constructor
-  /**
-       * @deprecated as of 2.7.0, use moment.min/max
-       */
   def max(inp: MomentInput): Moment = js.native
-  // NOTE(constructor): Same as moment constructor
-  /**
-       * @deprecated as of 2.7.0, use moment.min/max
-       */
   def max(inp: MomentInput, format: MomentFormatSpecification): Moment = js.native
-  /**
-       * @deprecated as of 2.7.0, use moment.min/max
-       */
   def max(inp: MomentInput, format: MomentFormatSpecification, language: java.lang.String): Moment = js.native
-  /**
-       * @deprecated as of 2.7.0, use moment.min/max
-       */
   def max(
     inp: MomentInput,
     format: MomentFormatSpecification,
     language: java.lang.String,
     strict: scala.Boolean
   ): Moment = js.native
-  // NOTE(constructor): Same as moment constructor
-  /**
-       * @deprecated as of 2.7.0, use moment.min/max
-       */
   def max(inp: MomentInput, format: MomentFormatSpecification, strict: scala.Boolean): Moment = js.native
   def millisecond(): scala.Double = js.native
   def millisecond(ms: scala.Double): Moment = js.native
@@ -184,36 +162,18 @@ trait Moment
   def milliseconds(ms: scala.Double): Moment = js.native
   // NOTE(constructor): Same as moment constructor
   /**
-       * @deprecated as of 2.7.0, use moment.min/max
-       */
+    * @deprecated as of 2.7.0, use moment.min/max
+    */
   def min(): Moment = js.native
-  // NOTE(constructor): Same as moment constructor
-  /**
-       * @deprecated as of 2.7.0, use moment.min/max
-       */
   def min(inp: MomentInput): Moment = js.native
-  // NOTE(constructor): Same as moment constructor
-  /**
-       * @deprecated as of 2.7.0, use moment.min/max
-       */
   def min(inp: MomentInput, format: MomentFormatSpecification): Moment = js.native
-  /**
-       * @deprecated as of 2.7.0, use moment.min/max
-       */
   def min(inp: MomentInput, format: MomentFormatSpecification, language: java.lang.String): Moment = js.native
-  /**
-       * @deprecated as of 2.7.0, use moment.min/max
-       */
   def min(
     inp: MomentInput,
     format: MomentFormatSpecification,
     language: java.lang.String,
     strict: scala.Boolean
   ): Moment = js.native
-  // NOTE(constructor): Same as moment constructor
-  /**
-       * @deprecated as of 2.7.0, use moment.min/max
-       */
   def min(inp: MomentInput, format: MomentFormatSpecification, strict: scala.Boolean): Moment = js.native
   def minute(): scala.Double = js.native
   def minute(m: scala.Double): Moment = js.native
@@ -223,16 +183,13 @@ trait Moment
   def month(M: java.lang.String): Moment = js.native
   def month(M: scala.Double): Moment = js.native
   /**
-       * @deprecated use month()
-       */
+    * @deprecated use month()
+    */
   def months(): scala.Double = js.native
-  /**
-       * @deprecated use month(M)
-       */
   def months(M: java.lang.String): Moment = js.native
   /**
-       * @deprecated use month(M)
-       */
+    * @deprecated use month(M)
+    */
   def months(M: scala.Double): Moment = js.native
   def parseZone(): Moment = js.native
   def parsingFlags(): MomentParsingFlags = js.native
@@ -250,13 +207,10 @@ trait Moment
   def subtract(): Moment = js.native
   def subtract(amount: DurationInputArg1): Moment = js.native
   def subtract(amount: DurationInputArg1, unit: DurationInputArg2): Moment = js.native
-  /**
-       * @deprecated reverse syntax
-       */
   def subtract(unit: momentLib.momentMod.momentNs.unitOfTimeNs.DurationConstructor, amount: java.lang.String): Moment = js.native
   /**
-       * @deprecated reverse syntax
-       */
+    * @deprecated reverse syntax
+    */
   def subtract(unit: momentLib.momentMod.momentNs.unitOfTimeNs.DurationConstructor, amount: scala.Double): Moment = js.native
   def to(inp: MomentInput): java.lang.String = js.native
   def to(inp: MomentInput, suffix: scala.Boolean): java.lang.String = js.native
@@ -271,7 +225,6 @@ trait Moment
   def unix(): scala.Double = js.native
   // current date/time in UTC mode
   def utc(): Moment = js.native
-  // current date/time in UTC mode
   def utc(keepLocalTime: scala.Boolean): Moment = js.native
   def utcOffset(): scala.Double = js.native
   def utcOffset(b: java.lang.String): Moment = js.native
@@ -290,16 +243,16 @@ trait Moment
   def year(): scala.Double = js.native
   def year(y: scala.Double): Moment = js.native
   /**
-       * @deprecated use year()
-       */
+    * @deprecated use year()
+    */
   def years(): scala.Double = js.native
   /**
-       * @deprecated use year(y)
-       */
+    * @deprecated use year(y)
+    */
   def years(y: scala.Double): Moment = js.native
   /**
-       * @deprecated in favor of utcOffset
-       */
+    * @deprecated in favor of utcOffset
+    */
   def zone(): scala.Double = js.native
   def zone(b: java.lang.String): Moment = js.native
   def zone(b: scala.Double): Moment = js.native

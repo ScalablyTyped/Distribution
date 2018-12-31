@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Tooltips extends js.Object {
   var clear: js.UndefOr[java.lang.String] = js.undefined
   var close: js.UndefOr[java.lang.String] = js.undefined

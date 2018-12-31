@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MariaSslConfiguration extends js.Object {
   var ca: js.UndefOr[java.lang.String] = js.undefined
   var capath: js.UndefOr[java.lang.String] = js.undefined

@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion
 //#region 节点查询 https://docs.alipay.com/mini/api/selector-query
-
 trait RectArea extends js.Object {
   /** 节点的下边界坐标 */
   var bottom: scala.Double

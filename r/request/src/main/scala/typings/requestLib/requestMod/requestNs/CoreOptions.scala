@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CoreOptions extends js.Object {
   var agent: js.UndefOr[nodeLib.httpMod.Agent | nodeLib.httpsMod.Agent] = js.undefined
   var agentClass: js.UndefOr[js.Any] = js.undefined

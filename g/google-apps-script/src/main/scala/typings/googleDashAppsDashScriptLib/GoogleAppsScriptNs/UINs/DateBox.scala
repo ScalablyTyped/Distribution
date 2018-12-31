@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DateBox extends js.Object {
   def addStyleDependentName(styleName: java.lang.String): DateBox
   def addStyleName(styleName: java.lang.String): DateBox

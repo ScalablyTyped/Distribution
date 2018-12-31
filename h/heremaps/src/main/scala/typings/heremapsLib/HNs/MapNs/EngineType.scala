@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait EngineType extends js.Object
 
 /**
-         * Types of engines
-         */
+  * Types of engines
+  */
 @JSGlobal("H.Map.EngineType")
 @js.native
 object EngineType extends js.Object {

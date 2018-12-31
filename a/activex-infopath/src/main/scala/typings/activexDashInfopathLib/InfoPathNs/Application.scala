@@ -26,11 +26,9 @@ class Application protected () extends js.Object {
   def NewADODBRecordset(): activexDashAdodbLib.ADODBNs.Recordset = js.native
   /** @param boolean [bForce=false] */
   def Quit(): scala.Unit = js.native
-  /** @param boolean [bForce=false] */
   def Quit(bForce: scala.Boolean): scala.Unit = js.native
   /** @param string [bstrBehavior='overwrite'] */
   def RegisterSolution(bstrSolutionURL: java.lang.String): scala.Unit = js.native
-  /** @param string [bstrBehavior='overwrite'] */
   def RegisterSolution(bstrSolutionURL: java.lang.String, bstrBehavior: java.lang.String): scala.Unit = js.native
   def UnregisterSolution(bstrSolutionURI: java.lang.String): scala.Unit = js.native
 }

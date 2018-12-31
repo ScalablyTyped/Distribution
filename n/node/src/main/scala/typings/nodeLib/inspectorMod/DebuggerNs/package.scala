@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 package object DebuggerNs {
   /**
-           * Breakpoint identifier.
-           */
+    * Breakpoint identifier.
+    */
   type BreakpointId = java.lang.String
   /**
-           * Call frame identifier.
-           */
+    * Call frame identifier.
+    */
   type CallFrameId = java.lang.String
 }

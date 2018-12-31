@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Animatable extends js.Object {
   def isRunning(): scala.Boolean
   def start(): scala.Unit

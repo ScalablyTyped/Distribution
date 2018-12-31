@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line: interface-name
-
 trait IMultiValuePropertyType extends IPropertyType {
   var bMultiValue: scala.Boolean
   var separator: java.lang.String

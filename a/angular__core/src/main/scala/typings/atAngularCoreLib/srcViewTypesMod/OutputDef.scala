@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OutputDef extends js.Object {
   var eventName: java.lang.String
   var propName: java.lang.String | scala.Null

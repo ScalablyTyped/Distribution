@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BoundingBox12 extends js.Object {
   var x1: scala.Double
   var x2: scala.Double

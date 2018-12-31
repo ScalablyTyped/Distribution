@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * The result object as passed to the onAuthorized callback.
- *
- * @see TwitchExt.onAuthorized
- */
-
+  * The result object as passed to the onAuthorized callback.
+  *
+  * @see TwitchExt.onAuthorized
+  */
 trait TwitchExtAuthorized extends js.Object {
   /**
   	 * Channel ID of the page where the extension is iframe embedded.

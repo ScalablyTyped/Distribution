@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ViewportProperties extends js.Object {
   var name: ViewportName
   var styles: atStorybookAddonDashViewportLib.Anon_StyleName

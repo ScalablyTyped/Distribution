@@ -10,30 +10,18 @@ import scala.scalajs.js.annotation._
 class Exception protected ()
   extends applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.ISerializable {
   /**
-           * Constructs a new isntance of the ExceptionTelemetry object
-           */
+    * Constructs a new isntance of the ExceptionTelemetry object
+    */
   def this(exception: stdLib.Error) = this()
-  /**
-           * Constructs a new isntance of the ExceptionTelemetry object
-           */
   def this(exception: stdLib.Error, handledAt: java.lang.String) = this()
-  /**
-           * Constructs a new isntance of the ExceptionTelemetry object
-           */
   def this(exception: stdLib.Error, handledAt: java.lang.String, properties: js.Any) = this()
-  /**
-           * Constructs a new isntance of the ExceptionTelemetry object
-           */
   def this(exception: stdLib.Error, handledAt: java.lang.String, properties: js.Any, measurements: js.Any) = this()
-  /**
-           * Constructs a new isntance of the ExceptionTelemetry object
-           */
   def this(exception: stdLib.Error, handledAt: java.lang.String, properties: js.Any, measurements: js.Any, severityLevel: applicationinsightsDashJsLib.AINs.SeverityLevel) = this()
   /**
-           * The set of fields for a serializeable object.
-           * This defines the serialization order and a value of true/false
-           * for each field defines whether the field is required or not.
-           */
+    * The set of fields for a serializeable object.
+    * This defines the serialization order and a value of true/false
+    * for each field defines whether the field is required or not.
+    */
   /* CompleteClass */
   override var aiDataContract: js.Any = js.native
   @JSName("aiDataContract")
@@ -54,8 +42,8 @@ object Exception extends js.Object {
   var dataType: java.lang.String = js.native
   var envelopeType: java.lang.String = js.native
   /**
-           * Creates a simple exception with 1 stack frame. Useful for manual constracting of exception.
-           */
+    * Creates a simple exception with 1 stack frame. Useful for manual constracting of exception.
+    */
   def CreateSimpleException(
     message: java.lang.String,
     typeName: java.lang.String,
@@ -64,9 +52,6 @@ object Exception extends js.Object {
     details: java.lang.String,
     line: scala.Double
   ): applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.TelemetryNs.Exception = js.native
-  /**
-           * Creates a simple exception with 1 stack frame. Useful for manual constracting of exception.
-           */
   def CreateSimpleException(
     message: java.lang.String,
     typeName: java.lang.String,

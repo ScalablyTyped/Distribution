@@ -10,18 +10,12 @@ import scala.scalajs.js.annotation._
 class Semaphore protected ()
   extends prexLib.outLibSemaphoreMod.Semaphore {
   /**
-       * Initializes a new instance of the Semaphore class.
-       *
-       * @param initialCount The initial number of entries.
-       * @param maxCount The maximum number of entries.
-       */
+    * Initializes a new instance of the Semaphore class.
+    *
+    * @param initialCount The initial number of entries.
+    * @param maxCount The maximum number of entries.
+    */
   def this(initialCount: scala.Double) = this()
-  /**
-       * Initializes a new instance of the Semaphore class.
-       *
-       * @param initialCount The initial number of entries.
-       * @param maxCount The maximum number of entries.
-       */
   def this(initialCount: scala.Double, maxCount: scala.Double) = this()
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MSGesture extends js.Object {
   var target: Element
   def addPointer(pointerId: scala.Double): scala.Unit

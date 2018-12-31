@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchPickerProps
   extends reactDashColorLib.reactDashColorMod.ColorPickerProps[SketchPicker] {
   var disableAlpha: js.UndefOr[scala.Boolean] = js.undefined

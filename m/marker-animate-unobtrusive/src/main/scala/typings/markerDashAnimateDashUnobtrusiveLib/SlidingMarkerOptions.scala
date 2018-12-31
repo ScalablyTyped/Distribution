@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SlidingMarkerOptions
   extends googlemapsLib.googleNs.mapsNs.MarkerOptions {
   var animateFunctionAdapter: js.UndefOr[

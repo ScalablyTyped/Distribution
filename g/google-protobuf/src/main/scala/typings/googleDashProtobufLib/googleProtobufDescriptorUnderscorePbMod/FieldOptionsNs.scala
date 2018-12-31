@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FieldOptions")
 @js.native
 object FieldOptionsNs extends js.Object {
-  
   trait AsObject extends js.Object {
     var ctype: js.UndefOr[CType] = js.undefined
     var deprecated: js.UndefOr[scala.Boolean] = js.undefined

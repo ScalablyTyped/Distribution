@@ -5,27 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait _Impl extends js.Object {
   /**
-                   * @default 'icon'
-                   */
+    * @default 'icon'
+    */
   var icon: java.lang.String
   /**
-                   * @default 'id'
-                   */
+    * @default 'id'
+    */
   var id: java.lang.String
   /**
-                   * @default 'placeholder'
-                   */
+    * @default 'placeholder'
+    */
   var placeholder: java.lang.String
   /**
-                   * @default 'source'
-                   */
+    * @default 'source'
+    */
   var source: java.lang.String
   /**
-                   * @default 'url'
-                   */
+    * @default 'url'
+    */
   var url: java.lang.String
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnimatedPathProps
   extends reactDashNativeDashSvgLib.reactDashNativeDashSvgMod.CommonPathProps {
   var animated: js.UndefOr[scala.Boolean] = js.undefined

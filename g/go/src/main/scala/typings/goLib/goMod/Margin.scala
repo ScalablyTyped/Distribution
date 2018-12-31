@@ -6,37 +6,40 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * A Margin represents a band of space outside or inside a rectangular area,
-    * with possibly different values on each of the four sides.
-    */
+  * A Margin represents a band of space outside or inside a rectangular area,
+  * with possibly different values on each of the four sides.
+  */
 @JSImport("go", "Margin")
 @js.native
+/**
+  * If zero arguments are supplied, zero is used for all four sides.
+  */
 class Margin ()
   extends goLib.goMod.goNs.Margin {
   /**
-          * If one argument is supplied, that number is used for all four sides.
-          * @param {number} m the margin for all four sides.
-          */
+    * If one argument is supplied, that number is used for all four sides.
+    * @param {number} m the margin for all four sides.
+    */
   def this(m: scala.Double) = this()
   /**
-          * If two arguments are supplied, the top and bottom sides get the first value,
-          * and the left and right sides get the second value.
-          * @param {number} tb the margin for the top and bottom sides
-          * @param {number} rl the margin for the right and left sides
-          */
+    * If two arguments are supplied, the top and bottom sides get the first value,
+    * and the left and right sides get the second value.
+    * @param {number} tb the margin for the top and bottom sides
+    * @param {number} rl the margin for the right and left sides
+    */
   def this(tb: scala.Double, rl: scala.Double) = this()
   /**
-          * If there are four arguments, the numbers represent: top, right, bottom, left.
-          * @param {number} t the margin for the top side;
-          *                    if not supplied, all sides are zero.
-          * @param {number} r the margin for the right side;
-          *                    if not supplied, all sides have the value of the first argument.
-          * @param {number} b the margin for all bottom side;
-          *                    if not supplied, the top and bottom get the value of the first argument,
-          *                    and the right and left sides get the value of the second argument.
-          * @param {number} l the margin for the left side;
-          *                    must be supplied if the third argument was supplied.
-          */
+    * If there are four arguments, the numbers represent: top, right, bottom, left.
+    * @param {number} t the margin for the top side;
+    *                    if not supplied, all sides are zero.
+    * @param {number} r the margin for the right side;
+    *                    if not supplied, all sides have the value of the first argument.
+    * @param {number} b the margin for all bottom side;
+    *                    if not supplied, the top and bottom get the value of the first argument,
+    *                    and the right and left sides get the value of the second argument.
+    * @param {number} l the margin for the left side;
+    *                    must be supplied if the third argument was supplied.
+    */
   def this(t: scala.Double, r: scala.Double, b: scala.Double, l: scala.Double) = this()
   /**Gets or sets the bottom value of this margin.*/
   /* CompleteClass */
@@ -51,63 +54,63 @@ class Margin ()
   /* CompleteClass */
   override var top: scala.Double = js.native
   /**
-          * Create a copy of this Margin, with the same values.
-          */
+    * Create a copy of this Margin, with the same values.
+    */
   /* CompleteClass */
   override def copy(): goLib.goMod.goNs.Margin = js.native
   /**
-          * Indicates whether the given margin is equal to this Margin.
-          * @param {number} t top.
-          * @param {number} r right.
-          * @param {number} b bottom.
-          * @param {number} l left.
-          */
+    * Indicates whether the given margin is equal to this Margin.
+    * @param {number} t top.
+    * @param {number} r right.
+    * @param {number} b bottom.
+    * @param {number} l left.
+    */
   /* CompleteClass */
   override def equalTo(t: scala.Double, r: scala.Double, b: scala.Double, l: scala.Double): scala.Boolean = js.native
   /**
-          * Indicates whether the given Margin is equal to this Margin.
-          * @param {Margin} m The Margin to compare to this Margin.
-          */
+    * Indicates whether the given Margin is equal to this Margin.
+    * @param {Margin} m The Margin to compare to this Margin.
+    */
   /* CompleteClass */
   override def equals(m: goLib.goMod.goNs.Margin): scala.Boolean = js.native
   /* CompleteClass */
   override def equalsApprox(m: goLib.goMod.goNs.Margin): scala.Boolean = js.native
   /**
-          * True if this Margin has values that are real numbers and not infinity.
-          */
+    * True if this Margin has values that are real numbers and not infinity.
+    */
   /* CompleteClass */
   override def isReal(): scala.Boolean = js.native
   /**
-          * Modify this Margin so that its Top, Right, Bottom, and Left values are the same as the given Margin.
-          * @param {Margin} m the Margin whose values are to be copied
-          */
+    * Modify this Margin so that its Top, Right, Bottom, and Left values are the same as the given Margin.
+    * @param {Margin} m the Margin whose values are to be copied
+    */
   /* CompleteClass */
   override def set(m: goLib.goMod.goNs.Margin): goLib.goMod.goNs.Margin = js.native
   /**
-          * Modify this Size with new Width and Height values.
-          * @param {number} w the width.
-          * @param {number} h the height.
-          */
+    * Modify this Size with new Width and Height values.
+    * @param {number} w the width.
+    * @param {number} h the height.
+    */
   /* CompleteClass */
   override def setTo(t: scala.Double, r: scala.Double, b: scala.Double, l: scala.Double): goLib.goMod.goNs.Margin = js.native
 }
 
 /**
-    * A Margin represents a band of space outside or inside a rectangular area,
-    * with possibly different values on each of the four sides.
-    */
+  * A Margin represents a band of space outside or inside a rectangular area,
+  * with possibly different values on each of the four sides.
+  */
 @JSImport("go", "Margin")
 @js.native
 object Margin extends js.Object {
   /**
-          * This static function can be used to read in a Margin from a string that was produced by Margin.stringify.
-          * @param {string} str
-          */
+    * This static function can be used to read in a Margin from a string that was produced by Margin.stringify.
+    * @param {string} str
+    */
   def parse(str: java.lang.String): goLib.goMod.goNs.Margin = js.native
   /**
-          * This static function can be used to write out a Margin as a string that can be read by Margin.parse.
-          * @param {Margin} val
-          */
+    * This static function can be used to write out a Margin as a string that can be read by Margin.parse.
+    * @param {Margin} val
+    */
   def stringify(`val`: goLib.goMod.goNs.Margin): java.lang.String = js.native
 }
 

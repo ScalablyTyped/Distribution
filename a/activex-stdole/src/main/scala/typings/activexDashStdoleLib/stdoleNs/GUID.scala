@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GUID extends js.Object {
   val Data1: scala.Double
   val Data2: scala.Double

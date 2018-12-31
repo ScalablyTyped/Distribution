@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventArgs extends js.Object {
   var action: java.lang.String
   var category: java.lang.String

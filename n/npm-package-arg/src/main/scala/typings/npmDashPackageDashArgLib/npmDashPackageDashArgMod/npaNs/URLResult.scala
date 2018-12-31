@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait URLResult extends Result {
   @JSName("fetchSpec")
   var fetchSpec_URLResult: java.lang.String

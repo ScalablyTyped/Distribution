@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Server extends js.Object {
   /**
   	 * Caches pages result instead of executing them each time.
-       * Disabling cache could impact performance.
+    * Disabling cache could impact performance.
   	 */
   var cache: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -18,7 +17,7 @@ trait Server extends js.Object {
   var port: js.UndefOr[scala.Double] = js.undefined
   /**
   	 * The folder where your application files like .html; .js and .css are going to be.
-       * The value is passed to express.static() middleware.
+    * The value is passed to express.static() middleware.
   	 */
   var static: js.UndefOr[java.lang.String] = js.undefined
   /**

@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StopReturnType extends js.Object {
   /**
-               * Recorded profile.
-               */
+    * Recorded profile.
+    */
   var profile: Profile
 }
 

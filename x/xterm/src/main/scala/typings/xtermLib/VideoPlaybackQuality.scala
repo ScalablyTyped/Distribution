@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VideoPlaybackQuality extends js.Object {
   val corruptedVideoFrames: scala.Double
   val creationTime: scala.Double

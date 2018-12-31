@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISpinnerStyleProps extends js.Object {
   /** CSS class name for the component attached to the root stylable area. */
   var className: js.UndefOr[java.lang.String] = js.undefined

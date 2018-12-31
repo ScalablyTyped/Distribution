@@ -21,7 +21,6 @@ class ContactCard protected () extends js.Object {
     RectangleBottom: scala.Double,
     HorizontalPosition: scala.Double
   ): scala.Unit = js.native
-  /** @param boolean [ShowWithDelay=false] */
   def Show(
     CardStyle: MsoContactCardStyle,
     RectangleLeft: scala.Double,

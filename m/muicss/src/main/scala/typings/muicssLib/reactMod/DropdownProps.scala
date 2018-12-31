@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DropdownProps
   extends reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] {
   var alignMenu: js.UndefOr[muicssLib.muicssLibStrings.left | muicssLib.muicssLibStrings.right] = js.undefined

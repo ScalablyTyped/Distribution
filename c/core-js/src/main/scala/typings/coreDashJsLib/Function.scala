@@ -12,8 +12,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Function extends js.Object {
   /**
-       * Non-standard.
-       */
+    * Non-standard.
+    */
   def part(args: js.Any*): js.Any = js.native
 }
 

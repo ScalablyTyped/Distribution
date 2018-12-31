@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITimeLiteral extends js.Object {
   var hour: scala.Double
   var millisecond: scala.Double

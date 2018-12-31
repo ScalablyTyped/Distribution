@@ -18,15 +18,15 @@ class ReqSocket protected ()
   /* InferMemberOverrides */
   override def _destroy(error: scala.Null, callback: js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit]): scala.Unit = js.native
   /**
-               * Event emitter
-               * The defined events on documents including:
-               * 1. close
-               * 2. drain
-               * 3. error
-               * 4. finish
-               * 5. pipe
-               * 6. unpipe
-               */
+    * Event emitter
+    * The defined events on documents including:
+    * 1. close
+    * 2. drain
+    * 3. error
+    * 4. finish
+    * 5. pipe
+    * 6. unpipe
+    */
   /* InferMemberOverrides */
   /* InferMemberOverrides */
   @JSName("addListener")

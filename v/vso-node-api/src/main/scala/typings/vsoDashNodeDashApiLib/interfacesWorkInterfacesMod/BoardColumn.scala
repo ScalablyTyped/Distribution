@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BoardColumn extends js.Object {
   var columnType: BoardColumnType
   var description: java.lang.String

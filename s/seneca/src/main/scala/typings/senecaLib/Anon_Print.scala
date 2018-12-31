@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Print extends js.Object {
   // Trace action caller and place in args.caller$.
   var act_caller: js.UndefOr[scala.Boolean] = js.undefined

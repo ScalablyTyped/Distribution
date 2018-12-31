@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CaptureOptions extends js.Object {
   /** Optional. */
   var audio: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VideoRecordingDetails extends js.Object {
   /** The geolocation information associated with the video. */
   var location: js.UndefOr[GeoPoint] = js.undefined

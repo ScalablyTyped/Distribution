@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AdViewSpace extends js.Object {
   def expandedTextAd(): ExpandedTextAd
   def gmailImageAd(): GmailImageAd

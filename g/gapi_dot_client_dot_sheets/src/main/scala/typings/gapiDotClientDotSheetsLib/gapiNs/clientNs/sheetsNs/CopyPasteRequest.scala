@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CopyPasteRequest extends js.Object {
   /**
-               * The location to paste to. If the range covers a span that's
-               * a multiple of the source's height or width, then the
-               * data will be repeated to fill in the destination range.
-               * If the range is smaller than the source range, the entire
-               * source data will still be copied (beyond the end of the destination range).
-               */
+    * The location to paste to. If the range covers a span that's
+    * a multiple of the source's height or width, then the
+    * data will be repeated to fill in the destination range.
+    * If the range is smaller than the source range, the entire
+    * source data will still be copied (beyond the end of the destination range).
+    */
   var destination: js.UndefOr[GridRange] = js.undefined
   /** How that data should be oriented when pasting. */
   var pasteOrientation: js.UndefOr[java.lang.String] = js.undefined

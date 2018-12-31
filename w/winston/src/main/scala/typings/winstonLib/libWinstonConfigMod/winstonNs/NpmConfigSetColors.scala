@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NpmConfigSetColors extends AbstractConfigSetColors {
   var debug: java.lang.String | js.Array[java.lang.String]
   var error: java.lang.String | js.Array[java.lang.String]

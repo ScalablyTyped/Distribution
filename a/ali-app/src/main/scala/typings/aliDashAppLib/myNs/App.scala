@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait App
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var data: js.Any

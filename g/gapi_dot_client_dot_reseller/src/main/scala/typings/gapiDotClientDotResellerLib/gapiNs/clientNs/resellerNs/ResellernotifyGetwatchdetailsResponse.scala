@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResellernotifyGetwatchdetailsResponse extends js.Object {
   /** List of registered service accounts. */
   var serviceAccountEmailAddresses: js.UndefOr[js.Array[java.lang.String]] = js.undefined

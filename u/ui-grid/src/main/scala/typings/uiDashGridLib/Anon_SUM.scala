@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SUM extends js.Object {
   var AVG: java.lang.String
   var COUNT: java.lang.String

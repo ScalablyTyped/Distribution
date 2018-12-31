@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Database extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -19,10 +18,10 @@ trait Anon_Database extends js.Object {
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The database name. In the format:
-                   * `projects/{project_id}/databases/{database_id}`.
-                   * This is only required in the first message.
-                   */
+    * The database name. In the format:
+    * `projects/{project_id}/databases/{database_id}`.
+    * This is only required in the first message.
+    */
   var database: java.lang.String
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined

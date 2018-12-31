@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * modal trigger
- */
-
+  * modal trigger
+  */
 trait ModalTriggerOption extends js.Object {
   var backdrop: js.UndefOr[scala.Boolean] = js.undefined
   var broken: js.UndefOr[js.Function0[_]] = js.undefined

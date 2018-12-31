@@ -22,10 +22,10 @@ abstract class ErrorDetails () extends js.Object {
 @js.native
 object ErrorDetails extends js.Object {
   /**
-                   * Asynchronously creates an ErrorDetails object based on an HRESULT error code.
-                   * @param errorCode The unique code representing the error.
-                   * @return The newly created ErrorDetails object representing the error.
-                   */
+    * Asynchronously creates an ErrorDetails object based on an HRESULT error code.
+    * @param errorCode The unique code representing the error.
+    * @return The newly created ErrorDetails object representing the error.
+    */
   def createFromHResultAsync(errorCode: scala.Double): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.DiagnosticsNs.ErrorDetails] = js.native
 }
 

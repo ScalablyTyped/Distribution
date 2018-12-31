@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompletedResult extends js.Object {
   var avinfo: js.UndefOr[AvAudioInfo] = js.undefined
   var bucket: java.lang.String

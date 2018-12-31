@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_GetData extends js.Object {
   var key: java.lang.String
   var pauseBefore: js.UndefOr[scala.Boolean] = js.undefined

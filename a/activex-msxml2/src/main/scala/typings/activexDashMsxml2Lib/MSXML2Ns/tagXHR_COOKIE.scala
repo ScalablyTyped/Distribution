@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait tagXHR_COOKIE extends js.Object {
   val dwFlags: scala.Double
   val ftExpires: _FILETIME

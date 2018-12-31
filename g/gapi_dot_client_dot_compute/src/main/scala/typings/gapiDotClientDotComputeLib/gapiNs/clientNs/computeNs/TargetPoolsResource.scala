@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TargetPoolsResource extends js.Object {
   /** Adds health check URLs to a target pool. */
   def addHealthCheck(request: gapiDotClientDotComputeLib.Anon_TargetPool): gapiDotClientLib.gapiNs.clientNs.Request[Operation]

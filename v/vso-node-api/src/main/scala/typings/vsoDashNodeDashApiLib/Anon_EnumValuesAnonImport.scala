@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EnumValuesAnonImport extends js.Object {
   var enumValues: Anon_Import
 }

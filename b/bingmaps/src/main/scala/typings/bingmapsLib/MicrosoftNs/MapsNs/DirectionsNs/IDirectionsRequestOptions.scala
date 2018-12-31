@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDirectionsRequestOptions extends js.Object {
   /** The unit to use when displaying direction distances. */
   var distanceUnit: js.UndefOr[DistanceUnit] = js.undefined

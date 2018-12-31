@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HelmetData extends js.Object {
   var base: HelmetDatum
   var bodyAttributes: HelmetHTMLBodyDatum

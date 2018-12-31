@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DateFormat extends js.Object {
   var day: java.lang.String
   var month: java.lang.String

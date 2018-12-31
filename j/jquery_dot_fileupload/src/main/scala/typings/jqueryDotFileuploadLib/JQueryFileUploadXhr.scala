@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JQueryFileUploadXhr extends js.Object {
   var errorThrown: js.Any
   var headers: org.scalablytyped.runtime.StringDictionary[js.Any]

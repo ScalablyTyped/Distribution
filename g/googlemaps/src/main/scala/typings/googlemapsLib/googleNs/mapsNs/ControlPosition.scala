@@ -17,25 +17,25 @@ object ControlPosition extends js.Object {
     extends googlemapsLib.googleNs.mapsNs.ControlPosition
   
   /**
-       * Elements are positioned in the bottom left and flow towards the middle.
-       * Elements are positioned to the right of the Google logo.
-       */
+    * Elements are positioned in the bottom left and flow towards the middle.
+    * Elements are positioned to the right of the Google logo.
+    */
   @js.native
   sealed trait BOTTOM_LEFT
     extends googlemapsLib.googleNs.mapsNs.ControlPosition
   
   /**
-       * Elements are positioned in the bottom right and flow towards the middle.
-       * Elements are positioned to the left of the copyrights.
-       */
+    * Elements are positioned in the bottom right and flow towards the middle.
+    * Elements are positioned to the left of the copyrights.
+    */
   @js.native
   sealed trait BOTTOM_RIGHT
     extends googlemapsLib.googleNs.mapsNs.ControlPosition
   
   /**
-       * Elements are positioned on the left, above bottom-left elements, and flow
-       * upwards.
-       */
+    * Elements are positioned on the left, above bottom-left elements, and flow
+    * upwards.
+    */
   @js.native
   sealed trait LEFT_BOTTOM
     extends googlemapsLib.googleNs.mapsNs.ControlPosition
@@ -46,17 +46,17 @@ object ControlPosition extends js.Object {
     extends googlemapsLib.googleNs.mapsNs.ControlPosition
   
   /**
-       * Elements are positioned on the left, below top-left elements, and flow
-       * downwards.
-       */
+    * Elements are positioned on the left, below top-left elements, and flow
+    * downwards.
+    */
   @js.native
   sealed trait LEFT_TOP
     extends googlemapsLib.googleNs.mapsNs.ControlPosition
   
   /**
-       * Elements are positioned on the right, above bottom-right elements, and
-       * flow upwards.
-       */
+    * Elements are positioned on the right, above bottom-right elements, and
+    * flow upwards.
+    */
   @js.native
   sealed trait RIGHT_BOTTOM
     extends googlemapsLib.googleNs.mapsNs.ControlPosition
@@ -67,9 +67,9 @@ object ControlPosition extends js.Object {
     extends googlemapsLib.googleNs.mapsNs.ControlPosition
   
   /**
-         Elements are positioned on the right, below top-right elements, and flow
-         downwards.
-       */
+    Elements are positioned on the right, below top-right elements, and flow
+    downwards.
+    */
   @js.native
   sealed trait RIGHT_TOP
     extends googlemapsLib.googleNs.mapsNs.ControlPosition

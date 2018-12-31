@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransactionParams
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var p: js.UndefOr[java.lang.String] = js.undefined

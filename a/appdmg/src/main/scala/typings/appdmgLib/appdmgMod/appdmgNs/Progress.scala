@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Progress extends js.Object {
   var current: scala.Double
   var status: appdmgLib.appdmgLibStrings.ok | appdmgLib.appdmgLibStrings.skip | appdmgLib.appdmgLibStrings.fail

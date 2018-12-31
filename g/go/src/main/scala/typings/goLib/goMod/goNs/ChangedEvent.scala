@@ -6,14 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * A ChangedEvent represents a change to an object, typically a GraphObject,
-    * but also for model data, a Model, or a Diagram.
-    * The most common case is for remembering the name of a property
-    * and the before-and-after values for that property.
-    * You can listen for changed events on the model using Model.addChangedListener
-    * and on the Diagram using Diagram.addChangedListener.
-    */
-
+  * A ChangedEvent represents a change to an object, typically a GraphObject,
+  * but also for model data, a Model, or a Diagram.
+  * The most common case is for remembering the name of a property
+  * and the before-and-after values for that property.
+  * You can listen for changed events on the model using Model.addChangedListener
+  * and on the Diagram using Diagram.addChangedListener.
+  */
 trait ChangedEvent extends js.Object {
   /**Gets or sets the nature of change that occurred.*/
   var change: EnumValue
@@ -38,40 +37,40 @@ trait ChangedEvent extends js.Object {
   /**Gets or sets the name of the property change.*/
   var propertyName: PropertyAccessor
   /**
-          * This predicate returns true if you can call redo().
-          */
+    * This predicate returns true if you can call redo().
+    */
   def canRedo(): scala.Boolean
   /**
-          * This predicate returns true if you can call undo().
-          */
+    * This predicate returns true if you can call undo().
+    */
   def canUndo(): scala.Boolean
   /**
-          * Forget any object references that this ChangedEvent may have.
-          */
+    * Forget any object references that this ChangedEvent may have.
+    */
   def clear(): scala.Unit
   /**
-          * Make a copy of this ChangedEvent.
-          */
+    * Make a copy of this ChangedEvent.
+    */
   def copy(): ChangedEvent
   /**
-          * This is a convenient method to get the right parameter value, depending on the value of undo,
-          * when implementing a state change as part of an undo or a redo.
-          * @param {boolean} undo If true, returns the oldParam, otherwise returns the newParam.
-          */
+    * This is a convenient method to get the right parameter value, depending on the value of undo,
+    * when implementing a state change as part of an undo or a redo.
+    * @param {boolean} undo If true, returns the oldParam, otherwise returns the newParam.
+    */
   def getParam(undo: scala.Boolean): js.Any
   /**
-          * This is a convenient method to get the right value, depending on the value of undo,
-          * when implementing a state change as part of an undo or a redo.
-          * @param {boolean} undo If true, returns the oldValue, otherwise returns the newValue.
-          */
+    * This is a convenient method to get the right value, depending on the value of undo,
+    * when implementing a state change as part of an undo or a redo.
+    * @param {boolean} undo If true, returns the oldValue, otherwise returns the newValue.
+    */
   def getValue(undo: scala.Boolean): js.Any
   /**
-          * Re-perform this object change after an undo().
-          */
+    * Re-perform this object change after an undo().
+    */
   def redo(): scala.Unit
   /**
-          * Reverse the effects of this object change.
-          */
+    * Reverse the effects of this object change.
+    */
   def undo(): scala.Unit
 }
 

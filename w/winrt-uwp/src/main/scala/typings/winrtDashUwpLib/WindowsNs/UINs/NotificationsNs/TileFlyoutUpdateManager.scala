@@ -13,7 +13,7 @@ abstract class TileFlyoutUpdateManager () extends js.Object
 @js.native
 object TileFlyoutUpdateManager extends js.Object {
   var createTileFlyoutUpdaterForApplication: js.Any = js.native
-   /* unmapped type */var createTileFlyoutUpdaterForSecondaryTile: js.Any = js.native
-   /* unmapped type */var getTemplateContent: js.Any = js.native
+   /* unmapped type */ var createTileFlyoutUpdaterForSecondaryTile: js.Any = js.native
+   /* unmapped type */ var getTemplateContent: js.Any = js.native
 }
 

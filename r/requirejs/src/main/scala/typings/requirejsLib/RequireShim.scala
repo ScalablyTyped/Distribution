@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequireShim extends js.Object {
   /**
   	* List of dependencies.
@@ -23,6 +22,6 @@ trait RequireShim extends js.Object {
   	* @param dependencies
   	* @return
   	**/
-  var init: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var init: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
 }
 

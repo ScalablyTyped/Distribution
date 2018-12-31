@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NvFBU extends js.Object {
   var encoding: scala.Double
   var encodingName: java.lang.String

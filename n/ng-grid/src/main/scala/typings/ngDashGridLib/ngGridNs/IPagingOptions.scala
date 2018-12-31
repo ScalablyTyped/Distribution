@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPagingOptions extends js.Object {
   /** currentPage: the uhm... current page. */
   var currentPage: js.UndefOr[scala.Double] = js.undefined

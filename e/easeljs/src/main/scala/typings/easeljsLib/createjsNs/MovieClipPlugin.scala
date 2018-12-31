@@ -19,7 +19,6 @@ class MovieClipPlugin () extends js.Object {
     wait: js.Object,
     end: js.Object
   ): scala.Unit = js.native
-  // methods
   def tween(
     tween: tweenjsLib.createjsNs.Tween,
     prop: java.lang.String,
@@ -30,7 +29,6 @@ class MovieClipPlugin () extends js.Object {
     wait: js.Object,
     end: js.Object
   ): scala.Unit = js.native
-  // methods
   def tween(
     tween: tweenjsLib.createjsNs.Tween,
     prop: java.lang.String,

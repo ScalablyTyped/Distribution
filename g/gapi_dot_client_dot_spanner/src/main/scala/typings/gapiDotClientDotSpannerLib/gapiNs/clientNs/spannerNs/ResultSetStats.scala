@@ -5,21 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResultSetStats extends js.Object {
   /** QueryPlan for the query associated with this result. */
   var queryPlan: js.UndefOr[QueryPlan] = js.undefined
   /**
-               * Aggregated statistics from the execution of the query. Only present when
-               * the query is profiled. For example, a query could return the statistics as
-               * follows:
-               *
-               * {
-               * "rows_returned": "3",
-               * "elapsed_time": "1.22 secs",
-               * "cpu_time": "1.19 secs"
-               * }
-               */
+    * Aggregated statistics from the execution of the query. Only present when
+    * the query is profiled. For example, a query could return the statistics as
+    * follows:
+    *
+    * {
+    * "rows_returned": "3",
+    * "elapsed_time": "1.22 secs",
+    * "cpu_time": "1.19 secs"
+    * }
+    */
   var queryStats: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
 }
 

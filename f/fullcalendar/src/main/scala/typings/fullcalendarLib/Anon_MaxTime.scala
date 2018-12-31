@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MaxTime extends js.Object {
   var activeUnzonedRange: js.Any
   var currentRangeUnit: js.Any

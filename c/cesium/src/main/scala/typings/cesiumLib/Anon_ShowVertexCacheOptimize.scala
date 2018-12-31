@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ShowVertexCacheOptimize extends js.Object {
   var allowPicking: js.UndefOr[scala.Boolean] = js.undefined
   var appearance: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Appearance] = js.undefined

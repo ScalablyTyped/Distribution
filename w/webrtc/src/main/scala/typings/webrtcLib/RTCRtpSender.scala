@@ -14,9 +14,6 @@ trait RTCRtpSender extends js.Object {
   //readonly transport?: RTCDtlsTransport;
   //readonly rtcpTransport?: RTCDtlsTransport;
   def setParameters(): js.Promise[scala.Unit] = js.native
-  //readonly track?: MediaStreamTrack;
-  //readonly transport?: RTCDtlsTransport;
-  //readonly rtcpTransport?: RTCDtlsTransport;
   def setParameters(parameters: RTCRtpParameters): js.Promise[scala.Unit] = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnchorFormOptions extends js.Object {
   var customClassOption: js.UndefOr[java.lang.String] = js.undefined
   var customClassOptionText: js.UndefOr[java.lang.String] = js.undefined

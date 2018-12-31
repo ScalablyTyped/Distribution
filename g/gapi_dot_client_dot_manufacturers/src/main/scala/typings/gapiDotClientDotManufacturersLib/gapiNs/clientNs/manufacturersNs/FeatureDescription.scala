@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FeatureDescription extends js.Object {
   /** A short description of the feature. */
   var headline: js.UndefOr[java.lang.String] = js.undefined

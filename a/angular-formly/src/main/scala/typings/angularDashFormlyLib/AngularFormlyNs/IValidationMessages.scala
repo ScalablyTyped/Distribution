@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * see http://docs.angular-formly.com/docs/formlyvalidationmessages#addtemplateoptionvaluemessage
 	 */
-
 trait IValidationMessages extends js.Object {
   var messages: org.scalablytyped.runtime.StringDictionary[
     js.Function3[

@@ -19,12 +19,12 @@ object reactDashNativeLibMembers extends js.Object {
     callback: js.Function1[/* error */ js.UndefOr[stdLib.Error | scala.Null], scala.Unit]
   ): scala.Unit = js.native
   def requestAnimationFrame(callback: js.Function1[/* time */ scala.Double, scala.Unit]): scala.Double = js.native
-  def setImmediate(handler: js.Function1[/* repeated */js.Any, scala.Unit]): scala.Double = js.native
+  def setImmediate(handler: js.Function1[/* repeated */ js.Any, scala.Unit]): scala.Double = js.native
   def setInterval(handler: js.Any): scala.Double = js.native
   def setInterval(handler: js.Any, timeout: js.Any, args: js.Any*): scala.Double = js.native
-  def setInterval(handler: js.Function1[/* repeated */js.Any, scala.Unit], timeout: scala.Double): scala.Double = js.native
+  def setInterval(handler: js.Function1[/* repeated */ js.Any, scala.Unit], timeout: scala.Double): scala.Double = js.native
   def setTimeout(handler: js.Any): scala.Double = js.native
   def setTimeout(handler: js.Any, timeout: js.Any, args: js.Any*): scala.Double = js.native
-  def setTimeout(handler: js.Function1[/* repeated */js.Any, scala.Unit], timeout: scala.Double): scala.Double = js.native
+  def setTimeout(handler: js.Function1[/* repeated */ js.Any, scala.Unit], timeout: scala.Double): scala.Double = js.native
 }
 

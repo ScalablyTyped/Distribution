@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileTransportOptions
   extends winstonDashTransportLib.winstonDashTransportMod.TransportStreamNs.TransportStreamOptions {
   var dirname: js.UndefOr[java.lang.String] = js.undefined

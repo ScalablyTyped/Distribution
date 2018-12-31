@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CampaignTargeting[SearchCampaignAudience, SearchCampaignExcludedAudience] extends AdWordsTargeting[AdWordsEntity, AdWordsEntity] {
   def adSchedules(): AdWordsSelector[AdSchedule]
   def excludedContentLabels(): AdWordsSelector[ExcludedContentLabel]

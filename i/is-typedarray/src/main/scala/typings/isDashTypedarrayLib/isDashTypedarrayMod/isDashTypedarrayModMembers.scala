@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("is-typedarray", JSImport.Namespace)
 @js.native
 object isDashTypedarrayModMembers extends js.Object {
-  def apply(candidate: js.Any): /* is TypedArray */scala.Boolean = js.native
-  def loose(candidate: js.Any): /* is TypedArray */scala.Boolean = js.native
-  def strict(candidate: js.Any): /* is TypedArray */scala.Boolean = js.native
+  def apply(candidate: js.Any): /* is is-typedarray.is-typedarray.isTypedArray.TypedArray */ scala.Boolean = js.native
+  def loose(candidate: js.Any): /* is is-typedarray.is-typedarray.isTypedArray.TypedArray */ scala.Boolean = js.native
+  def strict(candidate: js.Any): /* is is-typedarray.is-typedarray.isTypedArray.TypedArray */ scala.Boolean = js.native
 }
 

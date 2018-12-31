@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MochaPhantomJS extends js.Object {
   var columns: scala.Double
   var mochaStartWait: scala.Double

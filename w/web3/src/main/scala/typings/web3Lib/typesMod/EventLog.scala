@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventLog extends js.Object {
   var address: java.lang.String
   var blockHash: java.lang.String

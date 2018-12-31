@@ -19,27 +19,27 @@ object reactDashAddonsDashTestDashUtilsModMembers extends js.Object {
   ): T = js.native
   def findRenderedDOMComponentWithClass(root: reactLib.reactMod.Component[_, js.Object, _], className: java.lang.String): reactLib.Element = js.native
   def findRenderedDOMComponentWithTag(root: reactLib.reactMod.Component[_, js.Object, _], tagName: java.lang.String): reactLib.Element = js.native
-  def isCompositeComponent(instance: reactLib.reactMod.ReactNs.ReactInstance): /* is Component */scala.Boolean = js.native
+  def isCompositeComponent(instance: reactLib.reactMod.ReactNs.ReactInstance): /* is react.react.Component<any, {}, any> */ scala.Boolean = js.native
   def isCompositeComponentWithType[T /* <: reactLib.reactMod.Component[_, js.Object, _] */, C /* <: reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] */](
     instance: reactLib.reactMod.ReactNs.ReactInstance,
     `type`: reactLib.reactMod.ReactNs.ClassType[_, T, C]
   ): T = js.native
-  def isDOMComponent(instance: reactLib.reactMod.ReactNs.ReactInstance): /* is Element */scala.Boolean = js.native
-  def isElementOfType[T /* <: reactLib.HTMLElement */](element: reactLib.reactMod.ReactNs.ReactElement[_], `type`: java.lang.String): /* is ReactHTMLElement */scala.Boolean = js.native
-  def isElementOfType[P](element: reactLib.reactMod.ReactNs.ReactElement[_], `type`: reactLib.reactMod.ReactNs.SFC[P]): /* is SFCElement */scala.Boolean = js.native
+  def isDOMComponent(instance: reactLib.reactMod.ReactNs.ReactInstance): /* is react.Element */ scala.Boolean = js.native
+  def isElementOfType[T /* <: reactLib.HTMLElement */](element: reactLib.reactMod.ReactNs.ReactElement[_], `type`: java.lang.String): /* is react.react.React.ReactHTMLElement<T> */ scala.Boolean = js.native
+  def isElementOfType[P](element: reactLib.reactMod.ReactNs.ReactElement[_], `type`: reactLib.reactMod.ReactNs.SFC[P]): /* is react.react.React.SFCElement<P> */ scala.Boolean = js.native
   def isElementOfType[P, T /* <: reactLib.reactMod.Component[P, js.Object, _] */, C /* <: reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState] */](
     element: reactLib.reactMod.ReactNs.ReactElement[_],
     `type`: reactLib.reactMod.ReactNs.ClassType[P, T, C]
-  ): /* is CElement */scala.Boolean = js.native
+  ): /* is react.react.React.CElement<P, T> */ scala.Boolean = js.native
   @JSName("isElementOfType")
-  def isElementOfType_PDOMAttributesTElement[P /* <: reactLib.reactMod.ReactNs.DOMAttributes[js.Object] */, T /* <: reactLib.Element */](element: reactLib.reactMod.ReactNs.ReactElement[_], `type`: java.lang.String): /* is DOMElement */scala.Boolean = js.native
+  def isElementOfType_PDOMAttributesTElement[P /* <: reactLib.reactMod.ReactNs.DOMAttributes[js.Object] */, T /* <: reactLib.Element */](element: reactLib.reactMod.ReactNs.ReactElement[_], `type`: java.lang.String): /* is react.react.React.DOMElement<P, T> */ scala.Boolean = js.native
   def mockComponent(
     mocked: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.MockedComponentClass
-  ): js.Object = js.native
+  ): js.Any = js.native
   def mockComponent(
     mocked: reactDashAddonsDashTestDashUtilsLib.reactDashAddonsDashTestDashUtilsMod.TestUtilsNs.MockedComponentClass,
     mockTagName: java.lang.String
-  ): js.Object = js.native
+  ): js.Any = js.native
   def renderIntoDocument(element: reactLib.reactMod.ReactNs.SFCElement[_]): scala.Unit = js.native
   def renderIntoDocument[T /* <: reactLib.reactMod.Component[_, js.Object, _] */](element: reactLib.reactMod.ReactNs.CElement[_, T]): T = js.native
   def renderIntoDocument[T /* <: reactLib.Element */](element: reactLib.reactMod.ReactNs.DOMElement[_, T]): T = js.native

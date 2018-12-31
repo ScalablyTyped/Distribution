@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object BrightnessNs extends js.Object {
   /**
-       * Gets screen brightness.
-       * @returns A Promise that is resolved with a number between `0` and `1`, representing the current screen brightness.
-       */
+    * Gets screen brightness.
+    * @returns A Promise that is resolved with a number between `0` and `1`, representing the current screen brightness.
+    */
   def getBrightnessAsync(): js.Promise[scala.Double] = js.native
   /**
-       * Gets global system screen brightness.
-       * @returns A Promise that is resolved with a number between `0` and `1`, representing the current system screen brightness.
-       */
+    * Gets global system screen brightness.
+    * @returns A Promise that is resolved with a number between `0` and `1`, representing the current system screen brightness.
+    */
   def getSystemBrightnessAsync(): js.Promise[scala.Double] = js.native
   /** Sets screen brightness. */
   def setBrightnessAsync(

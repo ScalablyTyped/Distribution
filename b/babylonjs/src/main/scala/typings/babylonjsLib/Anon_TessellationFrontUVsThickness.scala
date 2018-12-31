@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TessellationFrontUVsThickness extends js.Object {
   var backUVs: js.UndefOr[babylonjsLib.BABYLONNs.Vector4] = js.undefined
   var diameter: js.UndefOr[scala.Double] = js.undefined

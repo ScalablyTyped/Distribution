@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GraphQLInterfaceTypeConfig extends js.Object {
   var description: js.UndefOr[java.lang.String] = js.undefined
   var fields: GraphQLFieldConfigMapThunk | GraphQLFieldConfigMap

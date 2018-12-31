@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * The strenght of the force in correspondence to the distance of the affected object
-    * @see https://doc.babylonjs.com/how_to/using_the_physics_engine
-    */
+  * The strenght of the force in correspondence to the distance of the affected object
+  * @see https://doc.babylonjs.com/how_to/using_the_physics_engine
+  */
 @JSImport("babylonjs", "PhysicsRadialImpulseFalloff")
 @js.native
 object PhysicsRadialImpulseFalloff extends js.Object {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PartialMessagePayload extends js.Object {
   @JSName("fatal$")
   var fatal$: scala.Boolean

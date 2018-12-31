@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartSpecs extends js.Object {
   var chartType: java.lang.String
   var container: js.UndefOr[stdLib.HTMLElement] = js.undefined

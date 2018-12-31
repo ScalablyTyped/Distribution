@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BreaksLangPrefix extends js.Object {
   var breaks: scala.Boolean
   var highlight: js.Any

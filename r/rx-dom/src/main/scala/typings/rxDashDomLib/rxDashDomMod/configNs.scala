@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 object configNs extends js.Object {
   var Promise: rxDashLiteLib.Anon_Resolver = js.native
   /**
-           * Configuration option to determine whether to use native events only
-           */
+    * Configuration option to determine whether to use native events only
+    */
   val useNativeEvents: scala.Boolean = js.native
 }
 

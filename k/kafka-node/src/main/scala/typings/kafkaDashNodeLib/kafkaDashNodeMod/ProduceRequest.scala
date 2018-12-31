@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProduceRequest extends js.Object {
   var attributes: js.UndefOr[scala.Double] = js.undefined
    // string[] | Array<KeyedMessage> | string | KeyedMessage

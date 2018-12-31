@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ChunkSize extends js.Object {
   var chunkSize: js.UndefOr[scala.Double] = js.undefined
   var dictionary: js.UndefOr[nodeLib.Buffer | js.Array[nodeLib.Buffer] | stdLib.DataView] = js.undefined

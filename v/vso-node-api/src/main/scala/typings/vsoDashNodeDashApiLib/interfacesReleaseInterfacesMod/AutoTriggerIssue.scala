@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AutoTriggerIssue extends js.Object {
   var issue: Issue
   var issueSource: IssueSource

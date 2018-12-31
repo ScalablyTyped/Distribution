@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProcedureInvocationData extends js.Object {
   var adapter: java.lang.String
   var compressResponse: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FunctionTypeAnnotation extends Node {
   var params: js.Array[FunctionTypeParam]
   var rest: FunctionTypeParam

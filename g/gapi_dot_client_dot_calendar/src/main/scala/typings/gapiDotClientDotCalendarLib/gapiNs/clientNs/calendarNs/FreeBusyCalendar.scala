@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FreeBusyCalendar extends js.Object {
   /** List of time ranges during which this calendar should be regarded as busy. */
   var busy: js.UndefOr[js.Array[TimePeriod]] = js.undefined

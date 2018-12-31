@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScrollRevealObjectOptions extends js.Object {
   var afterReset: js.UndefOr[
     (js.Function1[/* domEl */ stdLib.HTMLElement, scala.Unit]) with (js.Function1[/* domEl */ stdLib.NodeListOf[stdLib.Element], scala.Unit])

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridViewColumnMovingEventArgs extends EventArgs {
   var allow: scala.Boolean
   val destinationColumn: BootstrapGridViewColumn

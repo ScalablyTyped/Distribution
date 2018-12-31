@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGauge extends IAbstract {
   /** [Config Option] (Number) */
   var margin: js.UndefOr[scala.Double] = js.undefined

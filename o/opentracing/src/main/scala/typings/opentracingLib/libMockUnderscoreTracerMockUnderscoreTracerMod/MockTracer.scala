@@ -18,13 +18,13 @@ class MockTracer ()
     carrier: js.Any
   ): scala.Nothing = js.native
   /**
-       * Discard any buffered data.
-       */
+    * Discard any buffered data.
+    */
   def clear(): scala.Unit = js.native
   /**
-       * Return the buffered data in a format convenient for making unit test
-       * assertions.
-       */
+    * Return the buffered data in a format convenient for making unit test
+    * assertions.
+    */
   def report(): opentracingLib.libMockUnderscoreTracerMockUnderscoreReportMod.default = js.native
 }
 

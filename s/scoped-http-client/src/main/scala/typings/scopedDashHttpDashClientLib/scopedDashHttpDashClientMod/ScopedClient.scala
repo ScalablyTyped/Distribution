@@ -61,7 +61,6 @@ class ScopedClient protected () extends js.Object {
   def scope(options: Options, callback: ScopeCallback): ScopedClient = js.native
   // tslint:disable-next-line unified-signatures
   def scope(url: java.lang.String): ScopedClient = js.native
-  // tslint:disable-next-line unified-signatures
   def scope(url: java.lang.String, callback: ScopeCallback): ScopedClient = js.native
   def scope(url: java.lang.String, options: Options): ScopedClient = js.native
   def scope(url: java.lang.String, options: Options, callback: ScopeCallback): ScopedClient = js.native

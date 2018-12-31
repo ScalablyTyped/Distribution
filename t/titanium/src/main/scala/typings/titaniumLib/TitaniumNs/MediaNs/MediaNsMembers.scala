@@ -716,41 +716,26 @@ object MediaNsMembers extends js.Object {
   		 * Creates and returns an instance of <Titanium.Media.AudioPlayer>.
   		 */
   def createAudioPlayer(): AudioPlayer = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.Media.AudioPlayer>.
-  		 */
   def createAudioPlayer(parameters: js.Any): AudioPlayer = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Media.AudioRecorder>.
   		 */
   def createAudioRecorder(): AudioRecorder = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.Media.AudioRecorder>.
-  		 */
   def createAudioRecorder(parameters: js.Any): AudioRecorder = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Media.Sound>.
   		 */
   def createSound(): Sound = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.Media.Sound>.
-  		 */
   def createSound(parameters: js.Any): Sound = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Media.SystemAlert>.
   		 */
   def createSystemAlert(): SystemAlert = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.Media.SystemAlert>.
-  		 */
   def createSystemAlert(parameters: js.Any): SystemAlert = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Media.VideoPlayer>.
   		 */
   def createVideoPlayer(): VideoPlayer = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.Media.VideoPlayer>.
-  		 */
   def createVideoPlayer(parameters: js.Any): VideoPlayer = js.native
   /**
   		 * Fires a synthesized event to any registered listeners.
@@ -1025,9 +1010,6 @@ object MediaNsMembers extends js.Object {
   		 * Makes the device vibrate.
   		 */
   def vibrate(): scala.Unit = js.native
-  /**
-  		 * Makes the device vibrate.
-  		 */
   def vibrate(pattern: js.Array[scala.Double]): scala.Unit = js.native
 }
 

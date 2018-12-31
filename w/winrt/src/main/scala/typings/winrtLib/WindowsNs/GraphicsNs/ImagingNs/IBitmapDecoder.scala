@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBitmapDecoder extends js.Object {
   var bitmapContainerProperties: BitmapPropertiesView
   var decoderInformation: BitmapCodecInformation

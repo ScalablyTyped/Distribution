@@ -43,42 +43,24 @@ class Folder protected () extends js.Object {
   /** Type description */
   val Type: java.lang.String = js.native
   /**
-           * Copy this folder
-           * @param boolean [OverWriteFiles=true]
-           */
+    * Copy this folder
+    * @param boolean [OverWriteFiles=true]
+    */
   def Copy(Destination: java.lang.String): scala.Unit = js.native
-  /**
-           * Copy this folder
-           * @param boolean [OverWriteFiles=true]
-           */
   def Copy(Destination: java.lang.String, OverWriteFiles: scala.Boolean): scala.Unit = js.native
   /**
-           * Create a file as a TextStream
-           * @param boolean [Overwrite=true]
-           * @param boolean [Unicode=false]
-           */
+    * Create a file as a TextStream
+    * @param boolean [Overwrite=true]
+    * @param boolean [Unicode=false]
+    */
   def CreateTextFile(FileName: java.lang.String): TextStream = js.native
-  /**
-           * Create a file as a TextStream
-           * @param boolean [Overwrite=true]
-           * @param boolean [Unicode=false]
-           */
   def CreateTextFile(FileName: java.lang.String, Overwrite: scala.Boolean): TextStream = js.native
-  /**
-           * Create a file as a TextStream
-           * @param boolean [Overwrite=true]
-           * @param boolean [Unicode=false]
-           */
   def CreateTextFile(FileName: java.lang.String, Overwrite: scala.Boolean, Unicode: scala.Boolean): TextStream = js.native
   /**
-           * Delete this folder
-           * @param boolean [Force=false] Pass `true` to delete the folder even if the read-only attribute set
-           */
+    * Delete this folder
+    * @param boolean [Force=false] Pass `true` to delete the folder even if the read-only attribute set
+    */
   def Delete(): scala.Unit = js.native
-  /**
-           * Delete this folder
-           * @param boolean [Force=false] Pass `true` to delete the folder even if the read-only attribute set
-           */
   def Delete(Force: scala.Boolean): scala.Unit = js.native
   /** Get file */
   /** Get files collection */

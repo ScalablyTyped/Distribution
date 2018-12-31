@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommandBuilderA6[R, T, U, V, W, X, Y] extends js.Object {
   def build(): CommandA6[R, T, U, V, W, X, Y]
   def circuitBreakerErrorThresholdPercentage(value: scala.Double): CommandBuilderA6[R, T, U, V, W, X, Y]

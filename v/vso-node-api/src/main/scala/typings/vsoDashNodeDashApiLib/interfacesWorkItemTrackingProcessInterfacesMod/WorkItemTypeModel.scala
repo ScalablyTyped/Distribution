@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkItemTypeModel extends js.Object {
   var behaviors: js.Array[WorkItemTypeBehavior]
   var `class`: WorkItemTypeClass
@@ -14,8 +13,8 @@ trait WorkItemTypeModel extends js.Object {
   var icon: java.lang.String
   var id: java.lang.String
   /**
-       * Parent WIT Id/Internal ReferenceName that it inherits from
-       */
+    * Parent WIT Id/Internal ReferenceName that it inherits from
+    */
   var inherits: java.lang.String
   var isDisabled: scala.Boolean
   var layout: FormLayout

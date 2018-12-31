@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IActionConvertToPDF extends js.Object {
   var FailOnUnsupportedSourceFiles: scala.Boolean
   var OverwriteExistingFile: scala.Boolean

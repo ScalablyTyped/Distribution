@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SslCert extends js.Object {
   /** PEM representation. */
   var cert: js.UndefOr[java.lang.String] = js.undefined

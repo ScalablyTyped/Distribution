@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStackedCartesian extends ICartesian {
   /** [Method] Get the nearest item index from point x y
   		* @param x Object

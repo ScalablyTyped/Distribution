@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FromHeader extends js.Object {
   def fromAuthHeader(): atFeathersjsAuthenticationDashJwtLib.authenticationDashJwtMod.JwtFromRequestFunction
   def fromAuthHeaderAsBearerToken(): atFeathersjsAuthenticationDashJwtLib.authenticationDashJwtMod.JwtFromRequestFunction

@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * NxMetaTitleDescriptionTag width extend NxMetaTitleDescription
-     */
-
+  * NxMetaTitleDescriptionTag width extend NxMetaTitleDescription
+  */
 trait INxMetaTitleDescriptionTag extends INxMetaTitleDescription {
   /**
-           * Array of String
-           */
+    * Array of String
+    */
   var tags: js.Array[java.lang.String]
 }
 

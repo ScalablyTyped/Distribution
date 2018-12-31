@@ -1,5 +1,5 @@
 ```
-// Type definitions for stripe 6.0.0
+// Type definitions for stripe 6.18
 // Project: https://github.com/stripe/stripe-node/
 // Definitions by: William Johnston <https://github.com/wjohnsto>
 //                 Peter Harris <https://github.com/codeanimal>
@@ -14,6 +14,7 @@
 //                 Tyler Jones <https://github.com/squirly>
 //                 Troy Zarger <https://github.com/tzarger>
 //                 Ifiok Jr. <https://github.com/ifiokjr>
+//                 Simon Schick <https://github.com/SimonSchick>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 ```

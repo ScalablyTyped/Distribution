@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "CloudSearch")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class CloudSearch ()
   extends awsDashSdkLib.awsDashSdkMod.CloudSearch {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsCloudsearchMod.CloudSearchNs.ClientConfiguration) = this()
 }
 

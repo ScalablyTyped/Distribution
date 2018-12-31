@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait WiaDeviceType extends js.Object
 
 /**
-     * The WiaDeviceType enumeration specifies the type of device attached to a user's computer. Use the Type property on the DeviceInfo object or the Device
-     * object to obtain these values from the device.
-     */
+  * The WiaDeviceType enumeration specifies the type of device attached to a user's computer. Use the Type property on the DeviceInfo object or the Device
+  * object to obtain these values from the device.
+  */
 @JSGlobal("WIA.WiaDeviceType")
 @js.native
 object WiaDeviceType extends js.Object {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TypicalBasedOnEventUIParam extends js.Object {
   /**
   	 * Used to specify which columns changing will invalidate the series and cause it to be recalculated.

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class WalletVerb protected () extends js.Object {
   /**
-                   * Initializes a new instance of the WalletVerb class.
-                   * @param name The name of the custom verb. Sets the value of the Name property.
-                   */
+    * Initializes a new instance of the WalletVerb class.
+    * @param name The name of the custom verb. Sets the value of the Name property.
+    */
   def this(name: java.lang.String) = this()
   /** Gets or sets the custom verb name. */
   var name: java.lang.String = js.native

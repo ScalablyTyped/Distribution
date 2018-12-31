@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ManagedconfigurationsfordeviceResource extends js.Object {
   /** Removes a per-device managed configuration for an app for the specified device. */
   def delete(request: gapiDotClientDotAndroidenterpriseLib.Anon_EnterpriseId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

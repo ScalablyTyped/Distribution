@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommitSummary extends js.Object {
   var author: typedDashGithubDashApiLib.distApiDashInterfacesUserMod.UserSummary
   var comments_url: java.lang.String

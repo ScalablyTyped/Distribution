@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 //
 // XMLHttpRequest
 //
-
 trait XMLHttpRequestEventMap extends XMLHttpRequestEventTargetEventMap {
   var readystatechange: reactLib.Event
 }

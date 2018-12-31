@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStylesOptions extends js.Object {
   /** Sets the options for all polygons. */
   var polygonOptions: js.UndefOr[IPolygonOptions] = js.undefined

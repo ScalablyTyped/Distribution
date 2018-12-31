@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait TooltipManager extends js.Object {
-  /** Add a tooltip to the given element. */
   def add(
     target: JQueryCompatible[stdLib.HTMLElement],
     options: (atomLib.Anon_Item | atomLib.Anon_KeyBindingCommand) with atomLib.Anon_Placement

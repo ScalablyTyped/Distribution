@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Config extends js.Object {
   var _profileQueryEndpoint: js.Any
   /** A list of domains to exclude from cross-component header injection */

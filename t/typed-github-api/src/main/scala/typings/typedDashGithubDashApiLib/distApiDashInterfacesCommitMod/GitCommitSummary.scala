@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GitCommitSummary extends js.Object {
   var author: GitActor
   var comment_count: scala.Double

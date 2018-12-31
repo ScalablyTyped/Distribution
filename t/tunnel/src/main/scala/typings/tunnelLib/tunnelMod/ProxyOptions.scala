@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProxyOptions extends js.Object {
   var headers: org.scalablytyped.runtime.StringDictionary[js.Any]
   var host: js.UndefOr[java.lang.String] = js.undefined

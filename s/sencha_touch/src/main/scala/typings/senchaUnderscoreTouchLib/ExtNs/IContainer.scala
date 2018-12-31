@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IContainer extends IComponent {
   /** [Config Option] (Object/String/Number) */
   var activeItem: js.UndefOr[js.Any] = js.undefined

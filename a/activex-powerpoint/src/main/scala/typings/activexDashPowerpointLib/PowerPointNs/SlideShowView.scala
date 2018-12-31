@@ -41,7 +41,6 @@ class SlideShowView protected () extends js.Object {
   def GotoNamedShow(SlideShowName: java.lang.String): scala.Unit = js.native
   /** @param Office.MsoTriState [ResetSlide=-1] */
   def GotoSlide(Index: scala.Double): scala.Unit = js.native
-  /** @param Office.MsoTriState [ResetSlide=-1] */
   def GotoSlide(Index: scala.Double, ResetSlide: activexDashOfficeLib.OfficeNs.MsoTriState): scala.Unit = js.native
   def InstallTracker(pTracker: MouseTracker, Presenter: activexDashOfficeLib.OfficeNs.MsoTriState): scala.Unit = js.native
   def Last(): scala.Unit = js.native

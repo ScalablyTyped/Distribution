@@ -27,7 +27,7 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   val Dialog: reactLib.reactMod.ReactNs.StatelessComponent[
     officeDashUiDashFabricDashReactLib.libComponentsDialogDialogDotTypesMod.IDialogProps
   ] = js.native
-  val DirectionalHint: officeDashUiDashFabricDashReactLib.Anon_LeftTopEdge = js.native
+  val DirectionalHint: officeDashUiDashFabricDashReactLib.Anon_LeftTopEdge8 = js.native
   val FocusZoneTabbableElements: officeDashUiDashFabricDashReactLib.Anon_None = js.native
   val HighContrastSelector: /* @media screen and (-ms-high-contrast: active) */ java.lang.String = js.native
   val HighContrastSelectorBlack: /* @media screen and (-ms-high-contrast: white-on-black) */ java.lang.String = js.native
@@ -763,7 +763,7 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
   def createGenericItem(
     name: java.lang.String,
     currentValidationState: officeDashUiDashFabricDashReactLib.libComponentsPickersBasePickerDotTypesMod.ValidationState
-  ): officeDashUiDashFabricDashReactLib.libComponentsPickersPeoplePickerPeoplePickerMod.IGenericItem with officeDashUiDashFabricDashReactLib.Anon_Key_902091276 = js.native
+  ): officeDashUiDashFabricDashReactLib.libComponentsPickersPeoplePickerPeoplePickerMod.IGenericItem with officeDashUiDashFabricDashReactLib.Anon_Key_2068182360 = js.native
   def createItem(name: java.lang.String, isValid: scala.Boolean): officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsControllerMod.ISuggestionModel[
     officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.IPersonaProps
   ] = js.native
@@ -1127,8 +1127,8 @@ object officeDashUiDashFabricDashReactModMembers extends js.Object {
     ]
   ): js.UndefOr[js.Array[js.UndefOr[T]]] = js.native
   def memoize[T /* <: js.Function */](target: js.Any, key: java.lang.String, descriptor: stdLib.TypedPropertyDescriptor[T]): atUifabricUtilitiesLib.Anon_Get[T] = js.native
-  def memoizeFunction[T /* <: js.Function1[/* repeated */js.Any, RET_TYPE] */, RET_TYPE](cb: T): T = js.native
-  def memoizeFunction[T /* <: js.Function1[/* repeated */js.Any, RET_TYPE] */, RET_TYPE](cb: T, maxCacheSize: scala.Double): T = js.native
+  def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RET_TYPE] */, RET_TYPE](cb: T): T = js.native
+  def memoizeFunction[T /* <: js.Function1[/* repeated */ js.Any, RET_TYPE] */, RET_TYPE](cb: T, maxCacheSize: scala.Double): T = js.native
   def merge[T](
     target: stdLib.Partial[T],
     args: (js.UndefOr[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IUssdMessage extends js.Object {
   var dataCodingScheme: scala.Double
   var payloadAsText: java.lang.String

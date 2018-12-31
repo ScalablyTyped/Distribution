@@ -16,5 +16,5 @@ package object coreMod {
   type ParseResult = atBabelTypesLib.typesMod.File | atBabelTypesLib.typesMod.Program
   type PluginItem = ConfigItem | PluginObj[js.Any] | PluginTarget | (js.Tuple2[PluginTarget, PluginOptions]) | (js.Tuple3[PluginTarget, PluginOptions, js.UndefOr[java.lang.String]])
   type PluginOptions = js.UndefOr[js.Object | atBabelCoreLib.atBabelCoreLibNumbers.`false`]
-  type PluginTarget = java.lang.String | js.Object | (js.Function1[/* repeated */js.Any, js.Any])
+  type PluginTarget = java.lang.String | js.Object | (js.Function1[/* repeated */ js.Any, js.Any])
 }

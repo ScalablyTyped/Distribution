@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Search options to filter navigator.contacts.  */
-
 trait ContactFindOptions extends js.Object {
   /* Contact fields to be returned back. If specified, the resulting Contact object only features values for these fields. */
   var desiredFields: js.UndefOr[js.Array[ContactFieldType]] = js.undefined
@@ -21,12 +20,9 @@ trait ContactFindOptions extends js.Object {
 object ContactFindOptions
   extends /** Constructor for ContactFindOptions object */
 org.scalablytyped.runtime.Instantiable0[ContactFindOptions]
-     with /** Constructor for ContactFindOptions object */
-org.scalablytyped.runtime.Instantiable1[/* filter */ java.lang.String, ContactFindOptions]
-     with /** Constructor for ContactFindOptions object */
-org.scalablytyped.runtime.Instantiable2[/* filter */ java.lang.String, /* multiple */ scala.Boolean, ContactFindOptions]
-     with /** Constructor for ContactFindOptions object */
-org.scalablytyped.runtime.Instantiable3[
+     with org.scalablytyped.runtime.Instantiable1[/* filter */ java.lang.String, ContactFindOptions]
+     with org.scalablytyped.runtime.Instantiable2[/* filter */ java.lang.String, /* multiple */ scala.Boolean, ContactFindOptions]
+     with org.scalablytyped.runtime.Instantiable3[
       /* filter */ java.lang.String, 
       /* multiple */ scala.Boolean, 
       /* desiredFields */ js.Array[ContactFieldType], 

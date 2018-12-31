@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched if chat room participant presence status was updated
 		*/
-
 trait ChatRoomPresenceUpdate extends js.Object {
   /**
   			* Optional presence message

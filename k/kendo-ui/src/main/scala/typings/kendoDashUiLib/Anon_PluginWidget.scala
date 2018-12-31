@@ -63,7 +63,7 @@ trait Anon_PluginWidget extends js.Object {
     kendoDashUiLib.kendoNs.datavizNs.uiNs.TreeMap
   ] = js.native
   def plugin(
-    widget: /* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(kendo-ui), TsIdentNamespace(kendo), TsIdentNamespace(ui), TsIdentSimple(Widget)))) */js.Any
+    widget: /* import warning: ImportType.apply Failed type conversion: typeof kendo-ui.kendo.ui.Widget */ js.Any
   ): scala.Unit = js.native
   def registerTheme(name: java.lang.String, options: js.Any): scala.Unit = js.native
 }

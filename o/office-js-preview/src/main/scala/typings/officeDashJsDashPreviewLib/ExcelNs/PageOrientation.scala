@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait PageOrientation extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.7]
-     */
+  * [Api set: ExcelApi 1.7]
+  */
 @JSGlobal("Excel.PageOrientation")
 @js.native
 object PageOrientation extends js.Object {

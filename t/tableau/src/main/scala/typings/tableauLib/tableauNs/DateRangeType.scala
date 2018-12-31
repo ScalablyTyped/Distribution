@@ -11,27 +11,27 @@ sealed trait DateRangeType extends js.Object
 @JSGlobal("tableau.DateRangeType")
 @js.native
 object DateRangeType extends js.Object {
-   /** Refers to the current day, week, month, etc. of the date period. */@js.native
+   /** Refers to the current day, week, month, etc. of the date period. */ @js.native
   sealed trait CURRENT
     extends tableauLib.tableauNs.DateRangeType
   
-   /** Refers to the last day, week, month, etc. of the date period. */@js.native
+   /** Refers to the last day, week, month, etc. of the date period. */ @js.native
   sealed trait LAST
     extends tableauLib.tableauNs.DateRangeType
   
-   /** Refers to the last N days, weeks, months, etc. of the date period. */@js.native
+   /** Refers to the last N days, weeks, months, etc. of the date period. */ @js.native
   sealed trait LASTN
     extends tableauLib.tableauNs.DateRangeType
   
-   /** Refers to the next day, week, month, etc. of the date period. */@js.native
+   /** Refers to the next day, week, month, etc. of the date period. */ @js.native
   sealed trait NEXT
     extends tableauLib.tableauNs.DateRangeType
   
-   /** Refers to the next N days, weeks, months, etc. of the date period. */@js.native
+   /** Refers to the next N days, weeks, months, etc. of the date period. */ @js.native
   sealed trait NEXTN
     extends tableauLib.tableauNs.DateRangeType
   
-   /** Refers to everything up to and including the current day, week, month, etc. of the date period. */@js.native
+   /** Refers to everything up to and including the current day, week, month, etc. of the date period. */ @js.native
   sealed trait TODATE
     extends tableauLib.tableauNs.DateRangeType
   

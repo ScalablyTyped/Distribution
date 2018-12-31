@@ -12,50 +12,50 @@ sealed trait BuildStatus extends js.Object
 @js.native
 object BuildStatus extends js.Object {
   /**
-       * All status.
-       */
+    * All status.
+    */
   @js.native
   sealed trait All
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildStatus
   
   /**
-       * The build is cancelling
-       */
+    * The build is cancelling
+    */
   @js.native
   sealed trait Cancelling
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildStatus
   
   /**
-       * The build has completed.
-       */
+    * The build has completed.
+    */
   @js.native
   sealed trait Completed
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildStatus
   
   /**
-       * The build is currently in progress.
-       */
+    * The build is currently in progress.
+    */
   @js.native
   sealed trait InProgress
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildStatus
   
   /**
-       * No status.
-       */
+    * No status.
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildStatus
   
   /**
-       * The build has not yet started.
-       */
+    * The build has not yet started.
+    */
   @js.native
   sealed trait NotStarted
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildStatus
   
   /**
-       * The build is inactive in the queue.
-       */
+    * The build is inactive in the queue.
+    */
   @js.native
   sealed trait Postponed
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.BuildStatus

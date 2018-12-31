@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HorizontalLineToCommand extends js.Object {
   var code: svgDashPathDashParserLib.svgDashPathDashParserLibStrings.h | svgDashPathDashParserLib.svgDashPathDashParserLibStrings.H
   var command: svgDashPathDashParserLib.svgDashPathDashParserLibStrings.`horizontal lineto`

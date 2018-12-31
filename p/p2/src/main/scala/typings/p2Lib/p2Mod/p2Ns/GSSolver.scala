@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GSSolver extends Solver {
   var frictionIterations: scala.Double
   var iterations: scala.Double

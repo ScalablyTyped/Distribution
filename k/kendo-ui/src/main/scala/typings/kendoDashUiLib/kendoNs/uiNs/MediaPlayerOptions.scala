@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaPlayerOptions extends js.Object {
   var autoPlay: js.UndefOr[scala.Boolean] = js.undefined
   var autoRepeat: js.UndefOr[scala.Boolean] = js.undefined

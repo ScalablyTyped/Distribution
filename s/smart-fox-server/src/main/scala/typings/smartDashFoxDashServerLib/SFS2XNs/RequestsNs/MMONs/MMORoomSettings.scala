@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class MMORoomSettings protected () extends js.Object {
   /**
-                   * Creates a new MMORoomSettings instance.
-                   * @param {string} name The name of the MMORoom to be created.
-                   */
+    * Creates a new MMORoomSettings instance.
+    * @param {string} name The name of the MMORoom to be created.
+    */
   def this(name: java.lang.String) = this()
   /** @type {Entities.Data.Vec3D} Defines the Area of Interest (AoI) for the MMORoom. */
   var defaultAOI: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.DataNs.Vec3D = js.native

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ChartDisplayBlanksAs extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.8]
-     */
+  * [Api set: ExcelApi 1.8]
+  */
 @JSGlobal("Excel.ChartDisplayBlanksAs")
 @js.native
 object ChartDisplayBlanksAs extends js.Object {

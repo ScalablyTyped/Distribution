@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FooterLinkListProps
   extends MDLHTMLAttributes
      with reactLib.reactMod.ReactNs.DOMAttributes[FooterLinkList] {

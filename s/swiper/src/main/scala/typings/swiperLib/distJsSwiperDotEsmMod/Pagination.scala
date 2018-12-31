@@ -9,22 +9,22 @@ import scala.scalajs.js.annotation._
 @js.native
 class Pagination () extends js.Object {
   /**
-       * Dom7 array-like collection of pagination bullets
-       * HTML elements. To get specific slide HTMLElement
-       * use `mySwiper.pagination.bullets[1]`.
-       */
+    * Dom7 array-like collection of pagination bullets
+    * HTML elements. To get specific slide HTMLElement
+    * use `mySwiper.pagination.bullets[1]`.
+    */
   var bullets: js.Array[swiperLib.swiperMod.DOM7Element] = js.native
   /**
-       * HTMLElement of pagination container element
-       */
+    * HTMLElement of pagination container element
+    */
   var el: stdLib.HTMLElement = js.native
   /**
-       * Render pagination layout
-       */
+    * Render pagination layout
+    */
   def render(): scala.Unit = js.native
   /**
-       * Update pagination state (enabled/disabled/active)
-       */
+    * Update pagination state (enabled/disabled/active)
+    */
   def update(): scala.Unit = js.native
 }
 

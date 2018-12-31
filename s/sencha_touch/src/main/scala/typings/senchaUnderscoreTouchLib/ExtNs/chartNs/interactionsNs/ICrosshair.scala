@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICrosshair extends IAbstract {
   /** [Config Option] (Object) */
   var axes: js.UndefOr[js.Any] = js.undefined

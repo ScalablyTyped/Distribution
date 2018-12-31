@@ -12,42 +12,42 @@ sealed trait PersonaSize extends js.Object
 @js.native
 object PersonaSize extends js.Object {
   /**
-       *
-       * extraExtraSmall size has been deprecated in favor of standardized numeric sizing. Use `size24` instead.
-       * @deprecated Use `size24` instead.
-       */
+    *
+    * extraExtraSmall size has been deprecated in favor of standardized numeric sizing. Use `size24` instead.
+    * @deprecated Use `size24` instead.
+    */
   @js.native
   sealed trait extraExtraSmall
     extends officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaSize
   
   /**
-       * extraLarge size has been deprecated in favor of standardized numeric sizing. Use `size100` instead.
-       * @deprecated Use `size100` instead.
-       */
+    * extraLarge size has been deprecated in favor of standardized numeric sizing. Use `size100` instead.
+    * @deprecated Use `size100` instead.
+    */
   @js.native
   sealed trait extraLarge
     extends officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaSize
   
   /**
-       * extraSmall size has been deprecated in favor of standardized numeric sizing. Use `size32` instead.
-       * @deprecated Use `size32` instead.
-       */
+    * extraSmall size has been deprecated in favor of standardized numeric sizing. Use `size32` instead.
+    * @deprecated Use `size32` instead.
+    */
   @js.native
   sealed trait extraSmall
     extends officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaSize
   
   /**
-       * large size has been deprecated in favor of standardized numeric sizing. Use `size72` instead.
-       * @deprecated Use `size72` instead.
-       */
+    * large size has been deprecated in favor of standardized numeric sizing. Use `size72` instead.
+    * @deprecated Use `size72` instead.
+    */
   @js.native
   sealed trait large
     extends officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaSize
   
   /**
-       * regular size has been deprecated in favor of standardized numeric sizing. Use `size48` instead.
-       * @deprecated Use `size48` instead.
-       */
+    * regular size has been deprecated in favor of standardized numeric sizing. Use `size48` instead.
+    * @deprecated Use `size48` instead.
+    */
   @js.native
   sealed trait regular
     extends officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaSize
@@ -89,17 +89,17 @@ object PersonaSize extends js.Object {
     extends officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaSize
   
   /**
-       * small size has been deprecated in favor of standardized numeric sizing. Use `size40` instead.
-       * @deprecated Use `size40` instead.
-       */
+    * small size has been deprecated in favor of standardized numeric sizing. Use `size40` instead.
+    * @deprecated Use `size40` instead.
+    */
   @js.native
   sealed trait small
     extends officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaSize
   
   /**
-       * tiny size has been deprecated in favor of standardized numeric sizing. Use `size10` instead.
-       * @deprecated Use `size10` instead.
-       */
+    * tiny size has been deprecated in favor of standardized numeric sizing. Use `size10` instead.
+    * @deprecated Use `size10` instead.
+    */
   @js.native
   sealed trait tiny
     extends officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.PersonaSize

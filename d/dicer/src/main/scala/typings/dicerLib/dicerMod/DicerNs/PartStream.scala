@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * PartStream is a _ReadableStream_
-     *
-     * PartStream (special) events:
-     * - on('header', (header: object)) - An object containing the header for this particular part. Each property value is an array of one or more string values.
-     */
+  * PartStream is a _ReadableStream_
+  *
+  * PartStream (special) events:
+  * - on('header', (header: object)) - An object containing the header for this particular part. Each property value is an array of one or more string values.
+  */
 @js.native
 trait PartStream
   extends nodeLib.streamMod.Readable {

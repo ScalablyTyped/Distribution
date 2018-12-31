@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AntdTreeNodeAttribute extends js.Object {
   var checked: scala.Boolean
   var children: reactLib.reactMod.ReactNs.ReactNode

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class RequestTask () extends js.Object {
   /**
-       * 中断请求任务
-       */
+    * 中断请求任务
+    */
   def abort(): scala.Unit = js.native
 }
 

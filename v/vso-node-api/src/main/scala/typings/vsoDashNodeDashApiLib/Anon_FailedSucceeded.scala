@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FailedSucceeded extends js.Object {
   var error: scala.Double
   var failed: scala.Double

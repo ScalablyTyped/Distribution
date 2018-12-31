@@ -15,9 +15,9 @@ class Click ()
   var _doubleClicking: js.Any = js.native
   var _mouseDispatcher: js.Any = js.native
   /**
-       * Note: we bind to mousedown, mouseup, touchstart and touchend because browsers
-       * have a 300ms delay between touchstart and click to allow for scrolling cancelling etc.
-       */
+    * Note: we bind to mousedown, mouseup, touchstart and touchend because browsers
+    * have a 300ms delay between touchstart and click to allow for scrolling cancelling etc.
+    */
   var _mouseDownCallback: js.Any = js.native
   var _mouseUpCallback: js.Any = js.native
   var _onClickCallbacks: js.Any = js.native
@@ -30,32 +30,32 @@ class Click ()
   /* private */ def _handleClickUp(p: js.Any, event: js.Any): js.Any = js.native
   /* private */ def _handleDblClick(p: js.Any, event: js.Any): js.Any = js.native
   /**
-       * Removes a callback that would be called when the Component is clicked.
-       *
-       * @param {ClickCallback} callback
-       * @return {Interactions.Click} The calling Click Interaction.
-       */
+    * Removes a callback that would be called when the Component is clicked.
+    *
+    * @param {ClickCallback} callback
+    * @return {Interactions.Click} The calling Click Interaction.
+    */
   def offClick(callback: ClickCallback): this.type = js.native
   /**
-       * Removes a callback that would be called when the Component is double-clicked.
-       *
-       * @param {ClickCallback} callback
-       * @return {Interactions.Click} The calling Click Interaction.
-       */
+    * Removes a callback that would be called when the Component is double-clicked.
+    *
+    * @param {ClickCallback} callback
+    * @return {Interactions.Click} The calling Click Interaction.
+    */
   def offDoubleClick(callback: ClickCallback): this.type = js.native
   /**
-       * Adds a callback to be called when the Component is clicked.
-       *
-       * @param {ClickCallback} callback
-       * @return {Interactions.Click} The calling Click Interaction.
-       */
+    * Adds a callback to be called when the Component is clicked.
+    *
+    * @param {ClickCallback} callback
+    * @return {Interactions.Click} The calling Click Interaction.
+    */
   def onClick(callback: ClickCallback): this.type = js.native
   /**
-       * Adds a callback to be called when the Component is double-clicked.
-       *
-       * @param {ClickCallback} callback
-       * @return {Interactions.Click} The calling Click Interaction.
-       */
+    * Adds a callback to be called when the Component is double-clicked.
+    *
+    * @param {ClickCallback} callback
+    * @return {Interactions.Click} The calling Click Interaction.
+    */
   def onDoubleClick(callback: ClickCallback): this.type = js.native
 }
 

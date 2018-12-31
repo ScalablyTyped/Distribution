@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModalDialogContentsRenderingEventUIParam extends js.Object {
   /**
   	 * Gets a reference to the modal dialog element. This is a jQuery object.

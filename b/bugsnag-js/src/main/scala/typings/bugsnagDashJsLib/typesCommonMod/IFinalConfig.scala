@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFinalConfig extends IConfig {
   @JSName("autoBreadcrumbs")
   var autoBreadcrumbs_IFinalConfig: scala.Boolean

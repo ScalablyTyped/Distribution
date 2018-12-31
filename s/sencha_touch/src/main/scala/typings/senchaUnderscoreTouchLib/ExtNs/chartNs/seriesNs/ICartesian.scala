@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICartesian extends ISeries {
   /** [Method] For a given x y point relative to the main region find a corresponding item from this series if any
   		* @param x Object

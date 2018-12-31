@@ -8,308 +8,289 @@ import scala.scalajs.js.annotation._
 @js.native
 trait win extends EventEmitter {
   /**
-           * This includes multiple functions to manipulate the cookies.
-           */
+    * This includes multiple functions to manipulate the cookies.
+    */
   var cookies: Cookies = js.native
   /**
-           * Get or set window's height.
-           */
+    * Get or set window's height.
+    */
   var height: scala.Double = js.native
   /**
-           * Get whether we're in fullscreen mode.
-           */
+    * Get whether we're in fullscreen mode.
+    */
   var isFullscreen: scala.Boolean = js.native
   /**
-           * Get whether we're in kiosk mode.
-           */
+    * Get whether we're in kiosk mode.
+    */
   var isKioskMode: scala.Boolean = js.native
   /**
-           * Get whether transparency is turned on
-           */
+    * Get whether transparency is turned on
+    */
   var isTransparent: scala.Boolean = js.native
   /**
-           * Get or set window's menubar.
-           */
+    * Get or set window's menubar.
+    */
   var menu: nwDotJsLib.nwNs.Menu = js.native
   /**
-           * Get or set window's title.
-           */
+    * Get or set window's title.
+    */
   var title: java.lang.String = js.native
   /**
-           * Get or set window's width.
-           */
+    * Get or set window's width.
+    */
   var width: scala.Double = js.native
   /**
-           * Get the corresponding DOM window object of the native window.
-           */
+    * Get the corresponding DOM window object of the native window.
+    */
   var window: js.Object = js.native
   /**
-           * Get or set left offset from window to screen.
-           */
+    * Get or set left offset from window to screen.
+    */
   var x: scala.Double = js.native
   /**
-           * Get or set top offset from window to screen.
-           */
+    * Get or set top offset from window to screen.
+    */
   var y: scala.Double = js.native
   /**
-           * Get or set the page zoom.
-           */
+    * Get or set the page zoom.
+    */
   var zoomLevel: scala.Double = js.native
   /**
-           * Move focus away.
-           */
+    * Move focus away.
+    */
   def blur(): scala.Unit = js.native
   /**
-           * Returns a a boolean indicating if the platform (currently Mac OS X and Linux) support Window API method setVisibleOnAllWorkspace(Boolean).
-           */
+    * Returns a a boolean indicating if the platform (currently Mac OS X and Linux) support Window API method setVisibleOnAllWorkspace(Boolean).
+    */
   def canSetVisibleOnAllWorkspaces(): scala.Boolean = js.native
   /**
-           * Captures the visible area of the window.
-           *
-           * @param callback {string} The callback when finished capturing the window
-           * - (optional) arg {base64string|Buffer} Captured page data.
-           * @param config {string|CapturePageConfig} (Optional) Conig how captured page returned.
-           */
+    * Captures the visible area of the window.
+    *
+    * @param callback {string} The callback when finished capturing the window
+    * - (optional) arg {base64string|Buffer} Captured page data.
+    * @param config {string|CapturePageConfig} (Optional) Conig how captured page returned.
+    */
   def capturePage(callback: js.Function1[/* arg */ java.lang.String | js.Object, scala.Unit]): scala.Unit = js.native
-  /**
-           * Captures the visible area of the window.
-           *
-           * @param callback {string} The callback when finished capturing the window
-           * - (optional) arg {base64string|Buffer} Captured page data.
-           * @param config {string|CapturePageConfig} (Optional) Conig how captured page returned.
-           */
   def capturePage(
     callback: js.Function1[/* arg */ java.lang.String | js.Object, scala.Unit],
     config: java.lang.String
   ): scala.Unit = js.native
-  /**
-           * Captures the visible area of the window.
-           *
-           * @param callback {string} The callback when finished capturing the window
-           * - (optional) arg {base64string|Buffer} Captured page data.
-           * @param config {string|CapturePageConfig} (Optional) Conig how captured page returned.
-           */
   def capturePage(
     callback: js.Function1[/* arg */ java.lang.String | js.Object, scala.Unit],
     config: CapturePageConfig
   ): scala.Unit = js.native
   /**
-           * Close current window.
-           *
-           * @param force {boolean} (Optional) Specify whether to close the window forcely and bypass close event.
-           */
+    * Close current window.
+    *
+    * @param force {boolean} (Optional) Specify whether to close the window forcely and bypass close event.
+    */
   def close(): scala.Unit = js.native
-  /**
-           * Close current window.
-           *
-           * @param force {boolean} (Optional) Specify whether to close the window forcely and bypass close event.
-           */
   def close(force: scala.Boolean): scala.Unit = js.native
   /**
-           * Close the devtools window.
-           */
+    * Close the devtools window.
+    */
   def closeDevTools(): scala.Unit = js.native
   /**
-           * Make the window fullscreen.
-           */
+    * Make the window fullscreen.
+    */
   def enterFullscreen(): scala.Unit = js.native
   /**
-           * Enter the Kiosk mode.
-           */
+    * Enter the Kiosk mode.
+    */
   def enterKioskMode(): scala.Unit = js.native
   /**
-           * Execute a piece of JavaScript in the frame.
-           *
-           * @param frame {HTMLIFrameElement} The frame to execute in. If iframe is null, it assumes in current window / frame.
-           * @param script {string} The source code of the script to be executed
-           */
+    * Execute a piece of JavaScript in the frame.
+    *
+    * @param frame {HTMLIFrameElement} The frame to execute in. If iframe is null, it assumes in current window / frame.
+    * @param script {string} The source code of the script to be executed
+    */
   def eval(frame: stdLib.HTMLIFrameElement, script: java.lang.String): scala.Unit = js.native
   /**
-           * Load and execute the compiled snapshot in the frame.
-           *
-           * @param frame {HTMLIFrameElement} The frame to execute in. If iframe is null, it assumes in current window / frame.
-           * @param path {string} the path of the snapshot file generated by nwjc
-           */
+    * Load and execute the compiled snapshot in the frame.
+    *
+    * @param frame {HTMLIFrameElement} The frame to execute in. If iframe is null, it assumes in current window / frame.
+    * @param path {string} the path of the snapshot file generated by nwjc
+    */
   def evalNWBin(frame: stdLib.HTMLIFrameElement, path: java.lang.String): scala.Unit = js.native
   /**
-           * Focus on the window.
-           */
+    * Focus on the window.
+    */
   def focus(): scala.Unit = js.native
   /**
-           * Enumerate the printers in the system.
-           *
-           * @param callback {function(dev_win?)} callback with the native window of the DevTools window.
-           * - (optional) printers {any[]} An array of json objects for the printer information.
-           */
+    * Enumerate the printers in the system.
+    *
+    * @param callback {function(dev_win?)} callback with the native window of the DevTools window.
+    * - (optional) printers {any[]} An array of json objects for the printer information.
+    */
   def getPrinters(callback: js.Function1[/* printers */ js.UndefOr[js.Array[_]], scala.Unit]): scala.Unit = js.native
   /**
-           * Hide the window.
-           */
+    * Hide the window.
+    */
   def hide(): scala.Unit = js.native
   /**
-           * Query the status of devtools window.
-           */
+    * Query the status of devtools window.
+    */
   def isDevToolsOpen(): scala.Boolean = js.native
   /**
-           * Leave the fullscreen mode.
-           */
+    * Leave the fullscreen mode.
+    */
   def leaveFullscreen(): scala.Unit = js.native
   /**
-           * Leave the Kiosk mode.
-           */
+    * Leave the Kiosk mode.
+    */
   def leaveKioskMode(): scala.Unit = js.native
   /**
-           * Maximize the window on GTK and Windows, and zoom the window on Mac OS X.
-           */
+    * Maximize the window on GTK and Windows, and zoom the window on Mac OS X.
+    */
   def maximize(): scala.Unit = js.native
   /**
-           * Minimize the window to task bar on Windows, iconify the window on GTK, and miniaturize the window on Mac OS X.
-           */
+    * Minimize the window to task bar on Windows, iconify the window on GTK, and miniaturize the window on Mac OS X.
+    */
   def minimize(): scala.Unit = js.native
   /**
-           * Moves a window a specified number of pixels relative to its current coordinates.
-           *
-           * @param x {Integer} Horizontal offset
-           * @param y {Integer} Vertical offset
-           */
+    * Moves a window a specified number of pixels relative to its current coordinates.
+    *
+    * @param x {Integer} Horizontal offset
+    * @param y {Integer} Vertical offset
+    */
   def moveBy(x: scala.Double, y: scala.Double): scala.Unit = js.native
   /**
-           * Moves a window's left and top edge to the specified coordinates.
-           *
-           * @param x {Integer} Offset to the left of the screen
-           * @param y {Integer} Offset to the top of the screen
-           */
+    * Moves a window's left and top edge to the specified coordinates.
+    *
+    * @param x {Integer} Offset to the left of the screen
+    * @param y {Integer} Offset to the top of the screen
+    */
   def moveTo(x: scala.Double, y: scala.Double): scala.Unit = js.native
   /**
-           * Emitted when window loses focus.
-           *
-           * @param event {string} Event name
-           * @param listener {function} The callback that handles the `blur` event.
-           */
+    * Emitted when window loses focus.
+    *
+    * @param event {string} Event name
+    * @param listener {function} The callback that handles the `blur` event.
+    */
   @JSName("on")
   def on_blur(event: nwDotJsLib.nwDotJsLibStrings.blur, listener: js.Function0[_]): this.type = js.native
   /**
-           * The close event is a special event that will affect the result of the Window.close() function.
-           *
-           * @param event {string} Event name
-           * @param listener {function(byCommandQ?)} The callback that handles the `close` event.
-           * - (optional) byCommandQ {string} Whether it’s being closed by ⌘+Q.
-           */
+    * The close event is a special event that will affect the result of the Window.close() function.
+    *
+    * @param event {string} Event name
+    * @param listener {function(byCommandQ?)} The callback that handles the `close` event.
+    * - (optional) byCommandQ {string} Whether it’s being closed by ⌘+Q.
+    */
   @JSName("on")
   def on_close(
     event: nwDotJsLib.nwDotJsLibStrings.close,
     listener: js.Function1[/* byCommandQ */ js.UndefOr[java.lang.String | js.Any], _]
   ): this.type = js.native
   /**
-           * The closed event is emitted after corresponding window is closed.
-           *
-           * @param event {string} Event name
-           * @param listener {function} The callback that handles the `closed` event.
-           */
+    * The closed event is emitted after corresponding window is closed.
+    *
+    * @param event {string} Event name
+    * @param listener {function} The callback that handles the `closed` event.
+    */
   @JSName("on")
   def on_closed(event: nwDotJsLib.nwDotJsLibStrings.closed, listener: js.Function0[_]): this.type = js.native
   /**
-           * Emitted after Devtools is closed.
-           *
-           * @param event {string} Event name
-           * @param listener {function} The callback that handles the `devtools-closed` event.
-           */
+    * Emitted after Devtools is closed.
+    *
+    * @param event {string} Event name
+    * @param listener {function} The callback that handles the `devtools-closed` event.
+    */
   @JSName("on")
   def `on_devtools-closed`(event: nwDotJsLib.nwDotJsLibStrings.`devtools-closed`, listener: js.Function0[_]): this.type = js.native
   /**
-           * Emitted when the document object in this window or a child iframe is unloaded, but before the onunload event is emitted.
-           *
-           * @param event {string} Event name
-           * @param listener {function(byCommandQ?)} The callback that handles the `document-end` event.
-           * - (optional) frame {HTMLIFrameElement|any} Is the iframe object, or null if the event is for the window..
-           */
+    * Emitted when the document object in this window or a child iframe is unloaded, but before the onunload event is emitted.
+    *
+    * @param event {string} Event name
+    * @param listener {function(byCommandQ?)} The callback that handles the `document-end` event.
+    * - (optional) frame {HTMLIFrameElement|any} Is the iframe object, or null if the event is for the window..
+    */
   @JSName("on")
   def `on_document-end`(
     event: nwDotJsLib.nwDotJsLibStrings.`document-end`,
     listener: js.Function1[/* frame */ stdLib.HTMLIFrameElement | js.Any, _]
   ): this.type = js.native
   /**
-           * Emitted when the document object in this window or a child iframe is available, after all files are loaded, but before DOM is constructed or any script is run.
-           *
-           * @param event {string} Event name
-           * @param listener {function(byCommandQ?)} The callback that handles the `document-start` event.
-           * - (optional) frame {HTMLIFrameElement|any} Is the iframe object, or null if the event is for the window..
-           */
+    * Emitted when the document object in this window or a child iframe is available, after all files are loaded, but before DOM is constructed or any script is run.
+    *
+    * @param event {string} Event name
+    * @param listener {function(byCommandQ?)} The callback that handles the `document-start` event.
+    * - (optional) frame {HTMLIFrameElement|any} Is the iframe object, or null if the event is for the window..
+    */
   @JSName("on")
   def `on_document-start`(
     event: nwDotJsLib.nwDotJsLibStrings.`document-start`,
     listener: js.Function1[/* frame */ stdLib.HTMLIFrameElement | js.Any, _]
   ): this.type = js.native
   /**
-           * Emitted when window enters fullscreen state.
-           *
-           * @param event {string} Event name
-           * @param listener {function} The callback that handles the `enter-fullscreen` event.
-           */
+    * Emitted when window enters fullscreen state.
+    *
+    * @param event {string} Event name
+    * @param listener {function} The callback that handles the `enter-fullscreen` event.
+    */
   @JSName("on")
   def `on_enter-fullscreen`(event: nwDotJsLib.nwDotJsLibStrings.`enter-fullscreen`, listener: js.Function0[_]): this.type = js.native
   /**
-           * Emitted when window gets focus.
-           *
-           * @param event {string} Event name
-           * @param listener {function} The callback that handles the `focus` event.
-           */
+    * Emitted when window gets focus.
+    *
+    * @param event {string} Event name
+    * @param listener {function} The callback that handles the `focus` event.
+    */
   @JSName("on")
   def on_focus(event: nwDotJsLib.nwDotJsLibStrings.focus, listener: js.Function0[_]): this.type = js.native
   /**
-           * Emitted when the window is fully loaded, this event behaves the same with window.onload, but doesn’t rely on the DOM.
-           *
-           * @param event {string} Event name
-           * @param listener {function} The callback that handles the `loaded` event.
-           */
+    * Emitted when the window is fully loaded, this event behaves the same with window.onload, but doesn’t rely on the DOM.
+    *
+    * @param event {string} Event name
+    * @param listener {function} The callback that handles the `loaded` event.
+    */
   @JSName("on")
   def on_loaded(event: nwDotJsLib.nwDotJsLibStrings.loaded, listener: js.Function0[_]): this.type = js.native
   /**
-           * Emitted when the window starts to reload, normally you cannot catch this event because usually it’s emitted before you actually setup the callback.
-           *
-           * @param event {string} Event name
-           * @param listener {function} The callback that handles the `loading` event.
-           */
+    * Emitted when the window starts to reload, normally you cannot catch this event because usually it’s emitted before you actually setup the callback.
+    *
+    * @param event {string} Event name
+    * @param listener {function} The callback that handles the `loading` event.
+    */
   @JSName("on")
   def on_loading(event: nwDotJsLib.nwDotJsLibStrings.loading, listener: js.Function0[_]): this.type = js.native
   /**
-           * Emitted when window is maximized.
-           *
-           * @param event {string} Event name
-           * @param listener {function} The callback that handles the `maximize` event.
-           */
+    * Emitted when window is maximized.
+    *
+    * @param event {string} Event name
+    * @param listener {function} The callback that handles the `maximize` event.
+    */
   @JSName("on")
   def on_maximize(event: nwDotJsLib.nwDotJsLibStrings.maximize, listener: js.Function0[_]): this.type = js.native
   /**
-           * Emitted when window is minimized.
-           *
-           * @param event {string} Event name
-           * @param listener {function} The callback that handles the `minimize` event.
-           */
+    * Emitted when window is minimized.
+    *
+    * @param event {string} Event name
+    * @param listener {function} The callback that handles the `minimize` event.
+    */
   @JSName("on")
   def on_minimize(event: nwDotJsLib.nwDotJsLibStrings.minimize, listener: js.Function0[_]): this.type = js.native
   /**
-           * Emitted after window is moved.
-           *
-           * @param event {string} Event name
-           * @param listener {function(byCommandQ?)} The callback that handles the `move` event.
-           * - (optional) x {Integer} The new location of the left corner of the window.
-           * - (optional) y {Integer} The new location of the top corner of the window.
-           */
+    * Emitted after window is moved.
+    *
+    * @param event {string} Event name
+    * @param listener {function(byCommandQ?)} The callback that handles the `move` event.
+    * - (optional) x {Integer} The new location of the left corner of the window.
+    * - (optional) y {Integer} The new location of the top corner of the window.
+    */
   @JSName("on")
   def on_move(
     event: nwDotJsLib.nwDotJsLibStrings.move,
     listener: js.Function2[/* x */ js.UndefOr[scala.Double], /* y */ js.UndefOr[scala.Double], _]
   ): this.type = js.native
   /**
-           * Emitted when navigating to another page.
-           *
-           * @param event {string} Event name
-           * @param listener {function(byCommandQ?)} The callback that handles the `navigation` event.
-           * - (optional) frame {HTMLIFrameElement} Is the object of the child iframe where the request is from, or null if it’s from the top window.
-           * - (optional) url {string} Is the address of the requested link
-           * - (optional) policy {Object} Is an object contain window policy.
-           */
+    * Emitted when navigating to another page.
+    *
+    * @param event {string} Event name
+    * @param listener {function(byCommandQ?)} The callback that handles the `navigation` event.
+    * - (optional) frame {HTMLIFrameElement} Is the object of the child iframe where the request is from, or null if it’s from the top window.
+    * - (optional) url {string} Is the address of the requested link
+    * - (optional) policy {Object} Is an object contain window policy.
+    */
   @JSName("on")
   def on_navigation(
     event: nwDotJsLib.nwDotJsLibStrings.navigation,
@@ -321,14 +302,14 @@ trait win extends EventEmitter {
     ]
   ): this.type = js.native
   /**
-           * Emitted when a new window is requested from this window or a child iframe.
-           *
-           * @param event {string} Event name
-           * @param listener {function(byCommandQ?)} The callback that handles the `new-win-policy` event.
-           * - (optional) frame {HTMLIFrameElement} Is the object of the child iframe where the request is from, or null if it’s from the top window.
-           * - (optional) url {string} Is the address of the requested link
-           * - (optional) policy {Object} Is an object contain window policy.
-           */
+    * Emitted when a new window is requested from this window or a child iframe.
+    *
+    * @param event {string} Event name
+    * @param listener {function(byCommandQ?)} The callback that handles the `new-win-policy` event.
+    * - (optional) frame {HTMLIFrameElement} Is the object of the child iframe where the request is from, or null if it’s from the top window.
+    * - (optional) url {string} Is the address of the requested link
+    * - (optional) policy {Object} Is an object contain window policy.
+    */
   @JSName("on")
   def `on_new-win-policy`(
     event: nwDotJsLib.nwDotJsLibStrings.`new-win-policy`,
@@ -340,213 +321,170 @@ trait win extends EventEmitter {
     ]
   ): this.type = js.native
   /**
-           * Emitted after window is resized.
-           *
-           * @param event {string} Event name
-           * @param listener {function(byCommandQ?)} The callback that handles the `resize` event.
-           * - (optional) width {Integer} The new width of the window.
-           * - (optional) height {Integer} The new height of the window.
-           */
+    * Emitted after window is resized.
+    *
+    * @param event {string} Event name
+    * @param listener {function(byCommandQ?)} The callback that handles the `resize` event.
+    * - (optional) width {Integer} The new width of the window.
+    * - (optional) height {Integer} The new height of the window.
+    */
   @JSName("on")
   def on_resize(
     event: nwDotJsLib.nwDotJsLibStrings.resize,
     listener: js.Function2[/* width */ js.UndefOr[scala.Double], /* height */ js.UndefOr[scala.Double], _]
   ): this.type = js.native
   /**
-           * Emitted when window is restored from minimize, maximize and fullscreen state.
-           *
-           * @param event {string} Event name
-           * @param listener {function} The callback that handles the `restore` event.
-           */
+    * Emitted when window is restored from minimize, maximize and fullscreen state.
+    *
+    * @param event {string} Event name
+    * @param listener {function} The callback that handles the `restore` event.
+    */
   @JSName("on")
   def on_restore(event: nwDotJsLib.nwDotJsLibStrings.restore, listener: js.Function0[_]): this.type = js.native
   /**
-           * Emitted when window zooming changed.
-           *
-           * @param event {string} Event name
-           * @param listener {function(byCommandQ?)} The callback that handles the `zoom` event.
-           * - (optional) zoom {Integer} Indicating the new zoom level
-           */
+    * Emitted when window zooming changed.
+    *
+    * @param event {string} Event name
+    * @param listener {function(byCommandQ?)} The callback that handles the `zoom` event.
+    * - (optional) zoom {Integer} Indicating the new zoom level
+    */
   @JSName("on")
   def on_zoom(
     event: nwDotJsLib.nwDotJsLibStrings.zoom,
     listener: js.Function1[/* zoom */ js.UndefOr[scala.Double], _]
   ): this.type = js.native
   /**
-           * Print the web contents in the window without the need for user’s interaction.
-           *
-           * @param options {any | PrintOption} Specify whether to close the window forcely and bypass close event.
-           */
+    * Print the web contents in the window without the need for user’s interaction.
+    *
+    * @param options {any | PrintOption} Specify whether to close the window forcely and bypass close event.
+    */
   def print(options: js.Any): scala.Unit = js.native
-  /**
-           * Print the web contents in the window without the need for user’s interaction.
-           *
-           * @param options {any | PrintOption} Specify whether to close the window forcely and bypass close event.
-           */
   def print(options: PrintOption): scala.Unit = js.native
   /**
-           * Reloads the current window.
-           */
+    * Reloads the current window.
+    */
   def reload(): scala.Unit = js.native
   /**
-           * Reloads the current page by starting a new renderer process from scratch.
-           */
+    * Reloads the current page by starting a new renderer process from scratch.
+    */
   def reloadDev(): scala.Unit = js.native
   /**
-           * Like reload(), but don't use caches (aka 'shift-reload').
-           */
+    * Like reload(), but don't use caches (aka 'shift-reload').
+    */
   def reloadIgnoringCache(): scala.Unit = js.native
   /**
-           * Request the user’s attension by making the window flashes in the task bar.
-           *
-           * @param attension {boolean | number} If a Boolean, it indicates to request or cancel user’s attension. If an Integer, it indicates the number of times the window flashes.
-           */
+    * Request the user’s attension by making the window flashes in the task bar.
+    *
+    * @param attension {boolean | number} If a Boolean, it indicates to request or cancel user’s attension. If an Integer, it indicates the number of times the window flashes.
+    */
   def requestAttention(attension: scala.Boolean): scala.Unit = js.native
-  /**
-           * Request the user’s attension by making the window flashes in the task bar.
-           *
-           * @param attension {boolean | number} If a Boolean, it indicates to request or cancel user’s attension. If an Integer, it indicates the number of times the window flashes.
-           */
   def requestAttention(attension: scala.Double): scala.Unit = js.native
   /**
-           * Resizes a window by the specified amount.
-           *
-           * @param width {Integer} The offset width of the window
-           * @param height {Integer} The offset height of the window
-           */
+    * Resizes a window by the specified amount.
+    *
+    * @param width {Integer} The offset width of the window
+    * @param height {Integer} The offset height of the window
+    */
   def resizeBy(width: scala.Double, height: scala.Double): scala.Unit = js.native
   /**
-           * Resizes a window to the specified width and height.
-           *
-           * @param width {Integer} The width of the window
-           * @param height {Integer} The height of the window
-           */
+    * Resizes a window to the specified width and height.
+    *
+    * @param width {Integer} The width of the window
+    * @param height {Integer} The height of the window
+    */
   def resizeTo(width: scala.Double, height: scala.Double): scala.Unit = js.native
   /**
-           * Restore window to previous state after the window is minimized.
-           */
+    * Restore window to previous state after the window is minimized.
+    */
   def restore(): scala.Unit = js.native
   /**
-           * Sets the widget to be on top of all other windows in the window system.
-           *
-           * @param top {boolean} Whether the window should always be on top
-           */
+    * Sets the widget to be on top of all other windows in the window system.
+    *
+    * @param top {boolean} Whether the window should always be on top
+    */
   def setAlwaysOnTop(top: scala.Boolean): scala.Unit = js.native
   /**
-           * Set the badge label on the window icon in taskbar or dock.
-           *
-           * @param label {string} Badge label.
-           */
+    * Set the badge label on the window icon in taskbar or dock.
+    *
+    * @param label {string} Badge label.
+    */
   def setBadgeLabel(label: java.lang.String): scala.Unit = js.native
   /**
-           * Set window's maximum size.
-           *
-           * @param width {Integer} The maximum width of the window
-           * @param height {Integer} The maximum height of the window
-           */
+    * Set window's maximum size.
+    *
+    * @param width {Integer} The maximum width of the window
+    * @param height {Integer} The maximum height of the window
+    */
   def setMaximumSize(width: scala.Double, height: scala.Double): scala.Unit = js.native
   /**
-           * Set window's minimum size.
-           *
-           * @param width {Integer} The minimum width of the window
-           * @param height {Integer} The minimum height of the window
-           */
+    * Set window's minimum size.
+    *
+    * @param width {Integer} The minimum width of the window
+    * @param height {Integer} The minimum height of the window
+    */
   def setMinimumSize(width: scala.Double, height: scala.Double): scala.Unit = js.native
   /**
-           * Move window to specified position.
-           *
-           * @param position {string} The position of the window. There are three valid positions: null or center or mouse
-           */
+    * Move window to specified position.
+    *
+    * @param position {string} The position of the window. There are three valid positions: null or center or mouse
+    */
   def setPosition(position: java.lang.String): scala.Unit = js.native
   /**
-           * Show window progress bar.
-           *
-           * @param progress {number} valid values within [0, 1]. Setting to negative value (<0) removes the progress bar.
-           */
+    * Show window progress bar.
+    *
+    * @param progress {number} valid values within [0, 1]. Setting to negative value (<0) removes the progress bar.
+    */
   def setProgressBar(progress: scala.Double): scala.Unit = js.native
   /**
-           * Set whether window is resizable.
-           *
-           * @param resizable {boolean} Whether the window can be resized
-           */
+    * Set whether window is resizable.
+    *
+    * @param resizable {boolean} Whether the window can be resized
+    */
   def setResizable(resizable: scala.Boolean): scala.Unit = js.native
   /**
-           * Control whether to show window in taskbar or dock.
-           *
-           * @param show {boolean} Whether show in task bar
-           */
+    * Control whether to show window in taskbar or dock.
+    *
+    * @param show {boolean} Whether show in task bar
+    */
   def setShowInTaskbar(show: scala.Boolean): scala.Unit = js.native
   /**
-           * For platforms that support multiple workspaces (currently Mac OS X and Linux), this allows NW.js windows to be visible on all workspaces simultaneously.
-           *
-           * @param visible {boolean} Whether the window should be visible on all workspaces
-           */
+    * For platforms that support multiple workspaces (currently Mac OS X and Linux), this allows NW.js windows to be visible on all workspaces simultaneously.
+    *
+    * @param visible {boolean} Whether the window should be visible on all workspaces
+    */
   def setVisibleOnAllWorkspaces(visible: scala.Boolean): scala.Unit = js.native
   /**
-           * Show the window if it's not shown.
-           *
-           * @param is_show {boolean} (Optional) Specify whether the window should be shown or hidden. It's set to true by default.
-           */
+    * Show the window if it's not shown.
+    *
+    * @param is_show {boolean} (Optional) Specify whether the window should be shown or hidden. It's set to true by default.
+    */
   def show(): scala.Unit = js.native
-  /**
-           * Show the window if it's not shown.
-           *
-           * @param is_show {boolean} (Optional) Specify whether the window should be shown or hidden. It's set to true by default.
-           */
   def show(is_show: scala.Boolean): scala.Unit = js.native
   /**
-           * Open the devtools to inspect the window.
-           *
-           * @param iframe {Integer} (Optional) the id or the element of the <iframe> to be jailed on. By default, the DevTools is shown for entire window.
-           * @param callback {function(dev_win?)} callback with the native window of the DevTools window.
-           * - (optional) dev_win {window} Window object that you can use any properties and methods of Window except the events
-           */
+    * Open the devtools to inspect the window.
+    *
+    * @param iframe {Integer} (Optional) the id or the element of the <iframe> to be jailed on. By default, the DevTools is shown for entire window.
+    * @param callback {function(dev_win?)} callback with the native window of the DevTools window.
+    * - (optional) dev_win {window} Window object that you can use any properties and methods of Window except the events
+    */
   def showDevTools(): scala.Unit = js.native
-  /**
-           * Open the devtools to inspect the window.
-           *
-           * @param iframe {Integer} (Optional) the id or the element of the <iframe> to be jailed on. By default, the DevTools is shown for entire window.
-           * @param callback {function(dev_win?)} callback with the native window of the DevTools window.
-           * - (optional) dev_win {window} Window object that you can use any properties and methods of Window except the events
-           */
   def showDevTools(iframe: java.lang.String): scala.Unit = js.native
-  /**
-           * Open the devtools to inspect the window.
-           *
-           * @param iframe {Integer} (Optional) the id or the element of the <iframe> to be jailed on. By default, the DevTools is shown for entire window.
-           * @param callback {function(dev_win?)} callback with the native window of the DevTools window.
-           * - (optional) dev_win {window} Window object that you can use any properties and methods of Window except the events
-           */
   def showDevTools(
     iframe: java.lang.String,
     callback: js.Function1[/* dev_win */ js.UndefOr[stdLib.Window], scala.Unit]
   ): scala.Unit = js.native
-  /**
-           * Open the devtools to inspect the window.
-           *
-           * @param iframe {Integer} (Optional) the id or the element of the <iframe> to be jailed on. By default, the DevTools is shown for entire window.
-           * @param callback {function(dev_win?)} callback with the native window of the DevTools window.
-           * - (optional) dev_win {window} Window object that you can use any properties and methods of Window except the events
-           */
   def showDevTools(iframe: stdLib.HTMLIFrameElement): scala.Unit = js.native
-  /**
-           * Open the devtools to inspect the window.
-           *
-           * @param iframe {Integer} (Optional) the id or the element of the <iframe> to be jailed on. By default, the DevTools is shown for entire window.
-           * @param callback {function(dev_win?)} callback with the native window of the DevTools window.
-           * - (optional) dev_win {window} Window object that you can use any properties and methods of Window except the events
-           */
   def showDevTools(
     iframe: stdLib.HTMLIFrameElement,
     callback: js.Function1[/* dev_win */ js.UndefOr[stdLib.Window], scala.Unit]
   ): scala.Unit = js.native
   /**
-           * Toggle the fullscreen mode.
-           */
+    * Toggle the fullscreen mode.
+    */
   def toggleFullscreen(): scala.Unit = js.native
   /**
-           * Toggle the kiosk mode.
-           */
+    * Toggle the kiosk mode.
+    */
   def toggleKioskMode(): scala.Unit = js.native
 }
 

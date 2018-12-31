@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContainerInfo extends js.Object {
   var Command: java.lang.String
   var Created: scala.Double

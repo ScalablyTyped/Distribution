@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Commit extends js.Object {
   var app: java.lang.String
   var appVersion: java.lang.String

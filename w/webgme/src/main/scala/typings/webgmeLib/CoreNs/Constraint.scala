@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Constraint extends js.Object {
   /** Short description of the constraint. */
   var info: java.lang.String

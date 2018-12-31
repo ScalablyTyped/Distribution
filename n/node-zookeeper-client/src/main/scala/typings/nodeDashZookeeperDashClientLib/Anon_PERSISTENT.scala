@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PERSISTENT extends js.Object {
   var EPHEMERAL: scala.Double
   var EPHEMERAL_SEQUENTIAL: scala.Double

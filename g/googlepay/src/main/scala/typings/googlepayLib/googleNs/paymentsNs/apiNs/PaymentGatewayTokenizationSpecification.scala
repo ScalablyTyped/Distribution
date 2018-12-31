@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaymentGatewayTokenizationSpecification extends BasePaymentMethodTokenizationSpecification {
   var parameters: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   @JSName("type")

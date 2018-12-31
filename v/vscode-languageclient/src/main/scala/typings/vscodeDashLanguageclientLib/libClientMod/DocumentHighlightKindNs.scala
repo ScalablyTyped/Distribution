@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object DocumentHighlightKindNs extends js.Object {
   /**
-       * Read-access of a symbol, like reading a variable.
-       */
+    * Read-access of a symbol, like reading a variable.
+    */
   val Read: vscodeDashLanguageclientLib.vscodeDashLanguageclientLibNumbers.`2` = js.native
   /**
-       * A textual occurrence.
-       */
+    * A textual occurrence.
+    */
   val Text: vscodeDashLanguageclientLib.vscodeDashLanguageclientLibNumbers.`1` = js.native
   /**
-       * Write-access of a symbol, like writing to a variable.
-       */
+    * Write-access of a symbol, like writing to a variable.
+    */
   val Write: vscodeDashLanguageclientLib.vscodeDashLanguageclientLibNumbers.`3` = js.native
 }
 

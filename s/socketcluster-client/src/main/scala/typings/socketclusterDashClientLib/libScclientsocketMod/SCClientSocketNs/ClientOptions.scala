@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClientOptions extends js.Object {
   // (milliseconds) - This is the timeout for getting a response to a SCSocket emit event (when a callback is provided).
   var ackTimeout: js.UndefOr[scala.Double] = js.undefined

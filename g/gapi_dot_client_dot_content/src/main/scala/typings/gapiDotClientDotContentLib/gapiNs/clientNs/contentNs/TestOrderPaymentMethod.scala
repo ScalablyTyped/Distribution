@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestOrderPaymentMethod extends js.Object {
   /** The card expiration month (January = 1, February = 2 etc.). */
   var expirationMonth: js.UndefOr[scala.Double] = js.undefined

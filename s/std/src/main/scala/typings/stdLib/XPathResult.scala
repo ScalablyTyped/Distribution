@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait XPathResult extends js.Object {
   val ANY_TYPE: scala.Double
   val ANY_UNORDERED_NODE_TYPE: scala.Double

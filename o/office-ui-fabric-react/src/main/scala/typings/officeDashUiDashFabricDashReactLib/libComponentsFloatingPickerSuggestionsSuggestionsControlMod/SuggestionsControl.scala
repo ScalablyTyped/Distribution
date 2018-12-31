@@ -26,32 +26,20 @@ class SuggestionsControl[T] protected ()
   /* private */ def _getPreviousItemSectionType(itemType: js.Any): js.Any = js.native
   /* protected */ def _renderSuggestions(): reactLib.reactMod.Global.JSXNs.Element = js.native
   /**
-       * Selects the next item in the suggestion item type group, given the current index
-       * If none is able to be selected, returns false, otherwise returns true
-       * @param itemType - The suggestion item type
-       * @param currentIndex - The current index, default is -1
-       */
+    * Selects the next item in the suggestion item type group, given the current index
+    * If none is able to be selected, returns false, otherwise returns true
+    * @param itemType - The suggestion item type
+    * @param currentIndex - The current index, default is -1
+    */
   /* private */ def _selectNextItemOfItemType(itemType: js.Any): js.Any = js.native
-  /**
-       * Selects the next item in the suggestion item type group, given the current index
-       * If none is able to be selected, returns false, otherwise returns true
-       * @param itemType - The suggestion item type
-       * @param currentIndex - The current index, default is -1
-       */
   /* private */ def _selectNextItemOfItemType(itemType: js.Any, currentIndex: js.Any): js.Any = js.native
   /**
-       * Selects the previous item in the suggestion item type group, given the current index
-       * If none is able to be selected, returns false, otherwise returns true
-       * @param itemType - The suggestion item type
-       * @param currentIndex - The current index. If none is provided, the default is the items length of specified type
-       */
+    * Selects the previous item in the suggestion item type group, given the current index
+    * If none is able to be selected, returns false, otherwise returns true
+    * @param itemType - The suggestion item type
+    * @param currentIndex - The current index. If none is provided, the default is the items length of specified type
+    */
   /* private */ def _selectPreviousItemOfItemType(itemType: js.Any): js.Any = js.native
-  /**
-       * Selects the previous item in the suggestion item type group, given the current index
-       * If none is able to be selected, returns false, otherwise returns true
-       * @param itemType - The suggestion item type
-       * @param currentIndex - The current index. If none is provided, the default is the items length of specified type
-       */
   /* private */ def _selectPreviousItemOfItemType(itemType: js.Any, currentIndex: js.Any): js.Any = js.native
   @JSName("componentDidMount")
   def componentDidMount_MSuggestionsControl(): scala.Unit = js.native
@@ -65,9 +53,9 @@ class SuggestionsControl[T] protected ()
   def componentWillUnmount_MSuggestionsControl(): scala.Unit = js.native
   def executeSelectedAction(): scala.Unit = js.native
   /**
-       * Handles the key down, returns true, if the event was handled, false otherwise
-       * @param keyCode - The keyCode to handle
-       */
+    * Handles the key down, returns true, if the event was handled, false otherwise
+    * @param keyCode - The keyCode to handle
+    */
   def handleKeyDown(keyCode: scala.Double): scala.Boolean = js.native
   def hasSelection(): scala.Boolean = js.native
   def hasSuggestionSelected(): scala.Boolean = js.native
@@ -76,33 +64,27 @@ class SuggestionsControl[T] protected ()
   /* protected */ def renderFooterItems(): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   /* protected */ def renderHeaderItems(): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   /**
-       * Resets the selected state and selects the first selectable item
-       */
+    * Resets the selected state and selects the first selectable item
+    */
   /* protected */ def resetSelectedItem(): scala.Unit = js.native
   def scrollSelected(): scala.Unit = js.native
   /**
-       * Selects the first item
-       */
+    * Selects the first item
+    */
   /* protected */ def selectFirstItem(): scala.Unit = js.native
   /**
-       * Selects the last item
-       */
+    * Selects the last item
+    */
   /* protected */ def selectLastItem(): scala.Unit = js.native
   /**
-       * Selects the next selectable item
-       */
+    * Selects the next selectable item
+    */
   /* protected */ def selectNextItem(itemType: SuggestionItemType): scala.Unit = js.native
-  /**
-       * Selects the next selectable item
-       */
   /* protected */ def selectNextItem(itemType: SuggestionItemType, originalItemType: SuggestionItemType): scala.Unit = js.native
   /**
-       * Selects the previous selectable item
-       */
+    * Selects the previous selectable item
+    */
   /* protected */ def selectPreviousItem(itemType: SuggestionItemType): scala.Unit = js.native
-  /**
-       * Selects the previous selectable item
-       */
   /* protected */ def selectPreviousItem(itemType: SuggestionItemType, originalItemType: SuggestionItemType): scala.Unit = js.native
 }
 

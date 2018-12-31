@@ -9,9 +9,7 @@ import scala.scalajs.js.annotation._
 trait BitArrayStatic extends js.Object {
   /// Shift an array right.
   def _shiftRight(a: BitArray, shift: scala.Double): BitArray = js.native
-  /// Shift an array right.
   def _shiftRight(a: BitArray, shift: scala.Double, carry: scala.Double): BitArray = js.native
-  /// Shift an array right.
   def _shiftRight(a: BitArray, shift: scala.Double, carry: scala.Double, out: BitArray): BitArray = js.native
   /// xor a block of 4 words together.
   def _xor4(x: js.Array[scala.Double], y: js.Array[scala.Double]): js.Array[scala.Double] = js.native
@@ -31,7 +29,6 @@ trait BitArrayStatic extends js.Object {
   def getPartial(x: scala.Double): scala.Double = js.native
   /// Make a partial word for a bit array.
   def partial(len: scala.Double, x: scala.Double): scala.Double = js.native
-  /// Make a partial word for a bit array.
   def partial(len: scala.Double, x: scala.Double, _end: scala.Double): scala.Double = js.native
 }
 

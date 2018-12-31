@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EquationFunctionArgumentSeparator extends js.Object {
   def copy(): EquationFunctionArgumentSeparator
   def getAttributes(): js.Object

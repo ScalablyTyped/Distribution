@@ -46,8 +46,8 @@ class Suggestions[T] protected ()
   def hasSuggestedActionSelected(): scala.Boolean = js.native
   def scrollSelected(): scala.Unit = js.native
   /**
-       * Returns true if the event was handled, false otherwise
-       */
+    * Returns true if the event was handled, false otherwise
+    */
   def tryHandleKeyDown(keyCode: scala.Double, currentSuggestionIndex: scala.Double): scala.Boolean = js.native
 }
 

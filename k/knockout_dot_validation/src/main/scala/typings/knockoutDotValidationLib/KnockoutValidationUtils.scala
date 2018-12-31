@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KnockoutValidationUtils extends js.Object {
   def contextFor(node: stdLib.Element): KnockoutValidationConfiguration
   def getConfigOptions(element: stdLib.Element): KnockoutValidationConfiguration

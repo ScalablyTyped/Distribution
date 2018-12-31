@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MenuItem extends js.Object {
   def addStyleDependentName(styleName: java.lang.String): MenuItem
   def addStyleName(styleName: java.lang.String): MenuItem

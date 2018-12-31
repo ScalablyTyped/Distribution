@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ToastrOptions extends js.Object {
   /**
   	 * Should a close button be shown?

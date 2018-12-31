@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILogLevel extends js.Object {
   /**
   	 * Prints all logs from Workbox. Useful for debugging.

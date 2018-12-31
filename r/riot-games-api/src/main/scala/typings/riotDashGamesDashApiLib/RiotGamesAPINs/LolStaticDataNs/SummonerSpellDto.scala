@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SummonerSpellDto extends js.Object {
   var cooldown: js.Array[scala.Double]
   var cooldownBurn: java.lang.String

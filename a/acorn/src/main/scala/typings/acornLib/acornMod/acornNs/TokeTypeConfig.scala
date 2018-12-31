@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TokeTypeConfig extends js.Object {
   var beforeExpr: js.UndefOr[scala.Boolean] = js.undefined
   var binop: js.UndefOr[scala.Double] = js.undefined

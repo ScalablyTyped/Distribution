@@ -13,7 +13,6 @@ class Menu () extends js.Object {
   def append(item: MenuItem): scala.Unit = js.native
   // since v0.10.0-rc1
   def createMacBuiltin(appname: java.lang.String): scala.Unit = js.native
-  // since v0.10.0-rc1
   def createMacBuiltin(appname: java.lang.String, options: HideMenusOptions): scala.Unit = js.native
   def insert(item: MenuItem, atPosition: scala.Double): scala.Unit = js.native
   def popup(x: scala.Double, y: scala.Double): scala.Unit = js.native

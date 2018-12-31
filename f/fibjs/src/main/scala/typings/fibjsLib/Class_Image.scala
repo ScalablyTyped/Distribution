@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 	* @brief 图像处理对象，用以对图像进行转换，绘制，存储等操作
 	* @detail Image 对象属于 gd 模块，创建：,```JavaScript,var img = gd.create(640, 480);,var img1 = gd.load(data);,```
 	*/
-
 @JSGlobal("Class_Image")
 @js.native
 class Class_Image () extends Class__object {
@@ -115,89 +114,9 @@ class Class_Image () extends Class__object {
   	 * @async
   	 */
   def affine(affine: js.Array[_]): Class_Image = js.native
-  /**
-  	 * 
-  	 * @brief 根据给定的矩阵，对当前图像进行仿射
-  	 * 
-  	 * 参数 affine 是一个数组：
-  	 * ```JavaScript
-  	 * affine = [ a0, a1, b0, b1, a2, b2 ];
-  	 * x' = a0x + a1y + a2;
-  	 * y' = b0x + b1y + b2;
-  	 * ```
-  	 * @param affine 仿射矩阵，由  6 个 double 类型的数字组成
-  	 * @param x 可选剪切区域的原点 x 坐标
-  	 * @param y 可选剪切区域的原点 y 坐标
-  	 * @param width 可选剪切区域的的宽度
-  	 * @param height 可选剪切区域的的高度
-  	 * @return 返回仿射后的图像
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def affine(affine: js.Array[_], x: scala.Double): Class_Image = js.native
-  /**
-  	 * 
-  	 * @brief 根据给定的矩阵，对当前图像进行仿射
-  	 * 
-  	 * 参数 affine 是一个数组：
-  	 * ```JavaScript
-  	 * affine = [ a0, a1, b0, b1, a2, b2 ];
-  	 * x' = a0x + a1y + a2;
-  	 * y' = b0x + b1y + b2;
-  	 * ```
-  	 * @param affine 仿射矩阵，由  6 个 double 类型的数字组成
-  	 * @param x 可选剪切区域的原点 x 坐标
-  	 * @param y 可选剪切区域的原点 y 坐标
-  	 * @param width 可选剪切区域的的宽度
-  	 * @param height 可选剪切区域的的高度
-  	 * @return 返回仿射后的图像
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def affine(affine: js.Array[_], x: scala.Double, y: scala.Double): Class_Image = js.native
-  /**
-  	 * 
-  	 * @brief 根据给定的矩阵，对当前图像进行仿射
-  	 * 
-  	 * 参数 affine 是一个数组：
-  	 * ```JavaScript
-  	 * affine = [ a0, a1, b0, b1, a2, b2 ];
-  	 * x' = a0x + a1y + a2;
-  	 * y' = b0x + b1y + b2;
-  	 * ```
-  	 * @param affine 仿射矩阵，由  6 个 double 类型的数字组成
-  	 * @param x 可选剪切区域的原点 x 坐标
-  	 * @param y 可选剪切区域的原点 y 坐标
-  	 * @param width 可选剪切区域的的宽度
-  	 * @param height 可选剪切区域的的高度
-  	 * @return 返回仿射后的图像
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def affine(affine: js.Array[_], x: scala.Double, y: scala.Double, width: scala.Double): Class_Image = js.native
-  /**
-  	 * 
-  	 * @brief 根据给定的矩阵，对当前图像进行仿射
-  	 * 
-  	 * 参数 affine 是一个数组：
-  	 * ```JavaScript
-  	 * affine = [ a0, a1, b0, b1, a2, b2 ];
-  	 * x' = a0x + a1y + a2;
-  	 * y' = b0x + b1y + b2;
-  	 * ```
-  	 * @param affine 仿射矩阵，由  6 个 double 类型的数字组成
-  	 * @param x 可选剪切区域的原点 x 坐标
-  	 * @param y 可选剪切区域的原点 y 坐标
-  	 * @param width 可选剪切区域的的宽度
-  	 * @param height 可选剪切区域的的高度
-  	 * @return 返回仿射后的图像
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def affine(affine: js.Array[_], x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double): Class_Image = js.native
   /**
   	 * 
@@ -464,14 +383,6 @@ class Class_Image () extends Class__object {
   	 * @async
   	 */
   def convert(): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 转换当前图像类型
-  	 * @param color 指定图像类型，允许值为 gd.TRUECOLOR 或 gd.PALETTE
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def convert(color: scala.Double): scala.Unit = js.native
   /**
   	 * 
@@ -698,21 +609,6 @@ class Class_Image () extends Class__object {
     end: scala.Double,
     color: scala.Double
   ): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 画一个填充扇形
-  	 * @param x 扇形中心的 x 坐标
-  	 * @param y 扇形中心的 y 坐标
-  	 * @param width 扇形所在椭圆的宽度
-  	 * @param height 扇形所在椭圆的高度
-  	 * @param start 扇形开始的角度，范围为 0-360
-  	 * @param end 扇形结束的角度，范围为 0-360
-  	 * @param color 指定矩形的颜色号
-  	 * @param style 指定扇形的样式，允许的值有 gd.ARC, gd.CHORD, gd.NOFILL, gd.EDGED 及其组合
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def filledArc(
     x: scala.Double,
     y: scala.Double,
@@ -785,109 +681,9 @@ class Class_Image () extends Class__object {
   	 * @async
   	 */
   def filter(filterType: scala.Double): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 把过滤器 filterType应用到图像上，根据过滤器类型传入所需参数
-  	 * 
-  	 * 参数 filterType 可以为以下数值：
-  	 * - MEAN_REMOVAL,    用平均移除法来达到轮廓效果
-  	 * - EDGEDETECT,      用边缘检测来突出图像的边缘
-  	 * - EMBOSS,          使图像浮雕化
-  	 * - SELECTIVE_BLUR,  模糊图像
-  	 * - GAUSSIAN_BLUR,   用高斯算法模糊图像
-  	 * - NEGATE,          将图像中所有颜色反转
-  	 * - GRAYSCALE,       将图像转换为灰度图
-  	 * - SMOOTH,          使图像更柔滑，用arg1设定柔滑级别
-  	 * - BRIGHTNESS,      改变图像的亮度，用arg1设定亮度级别，取值范围是-255~255
-  	 * - CONTRAST,        改变图像的对比度，用arg1设定对比度级别，取值范围是0~100
-  	 * - COLORIZE,        改变图像的色调，用arg1、arg2、arg3分别指定red、blue、green分值，每种颜色范围是0~255，arg4为透明度，取值返回是0~127
-  	 * @param filterType 过滤器类型
-  	 * @param arg1 过滤器所需参数: SMOOTH 的平滑级别、BRIGHTNESS 的亮度级别、CONTRAST 的对比度级别、COLORIZE 的 red 分值
-  	 * @param arg2 过滤器所需参数: COLORIZE 的 green 分值
-  	 * @param arg3 过滤器所需参数: COLORIZE 的 blue 分值
-  	 * @param arg4 过滤器所需参数: COLORIZE 的透明度 alpha 分值
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def filter(filterType: scala.Double, arg1: scala.Double): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 把过滤器 filterType应用到图像上，根据过滤器类型传入所需参数
-  	 * 
-  	 * 参数 filterType 可以为以下数值：
-  	 * - MEAN_REMOVAL,    用平均移除法来达到轮廓效果
-  	 * - EDGEDETECT,      用边缘检测来突出图像的边缘
-  	 * - EMBOSS,          使图像浮雕化
-  	 * - SELECTIVE_BLUR,  模糊图像
-  	 * - GAUSSIAN_BLUR,   用高斯算法模糊图像
-  	 * - NEGATE,          将图像中所有颜色反转
-  	 * - GRAYSCALE,       将图像转换为灰度图
-  	 * - SMOOTH,          使图像更柔滑，用arg1设定柔滑级别
-  	 * - BRIGHTNESS,      改变图像的亮度，用arg1设定亮度级别，取值范围是-255~255
-  	 * - CONTRAST,        改变图像的对比度，用arg1设定对比度级别，取值范围是0~100
-  	 * - COLORIZE,        改变图像的色调，用arg1、arg2、arg3分别指定red、blue、green分值，每种颜色范围是0~255，arg4为透明度，取值返回是0~127
-  	 * @param filterType 过滤器类型
-  	 * @param arg1 过滤器所需参数: SMOOTH 的平滑级别、BRIGHTNESS 的亮度级别、CONTRAST 的对比度级别、COLORIZE 的 red 分值
-  	 * @param arg2 过滤器所需参数: COLORIZE 的 green 分值
-  	 * @param arg3 过滤器所需参数: COLORIZE 的 blue 分值
-  	 * @param arg4 过滤器所需参数: COLORIZE 的透明度 alpha 分值
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def filter(filterType: scala.Double, arg1: scala.Double, arg2: scala.Double): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 把过滤器 filterType应用到图像上，根据过滤器类型传入所需参数
-  	 * 
-  	 * 参数 filterType 可以为以下数值：
-  	 * - MEAN_REMOVAL,    用平均移除法来达到轮廓效果
-  	 * - EDGEDETECT,      用边缘检测来突出图像的边缘
-  	 * - EMBOSS,          使图像浮雕化
-  	 * - SELECTIVE_BLUR,  模糊图像
-  	 * - GAUSSIAN_BLUR,   用高斯算法模糊图像
-  	 * - NEGATE,          将图像中所有颜色反转
-  	 * - GRAYSCALE,       将图像转换为灰度图
-  	 * - SMOOTH,          使图像更柔滑，用arg1设定柔滑级别
-  	 * - BRIGHTNESS,      改变图像的亮度，用arg1设定亮度级别，取值范围是-255~255
-  	 * - CONTRAST,        改变图像的对比度，用arg1设定对比度级别，取值范围是0~100
-  	 * - COLORIZE,        改变图像的色调，用arg1、arg2、arg3分别指定red、blue、green分值，每种颜色范围是0~255，arg4为透明度，取值返回是0~127
-  	 * @param filterType 过滤器类型
-  	 * @param arg1 过滤器所需参数: SMOOTH 的平滑级别、BRIGHTNESS 的亮度级别、CONTRAST 的对比度级别、COLORIZE 的 red 分值
-  	 * @param arg2 过滤器所需参数: COLORIZE 的 green 分值
-  	 * @param arg3 过滤器所需参数: COLORIZE 的 blue 分值
-  	 * @param arg4 过滤器所需参数: COLORIZE 的透明度 alpha 分值
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def filter(filterType: scala.Double, arg1: scala.Double, arg2: scala.Double, arg3: scala.Double): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 把过滤器 filterType应用到图像上，根据过滤器类型传入所需参数
-  	 * 
-  	 * 参数 filterType 可以为以下数值：
-  	 * - MEAN_REMOVAL,    用平均移除法来达到轮廓效果
-  	 * - EDGEDETECT,      用边缘检测来突出图像的边缘
-  	 * - EMBOSS,          使图像浮雕化
-  	 * - SELECTIVE_BLUR,  模糊图像
-  	 * - GAUSSIAN_BLUR,   用高斯算法模糊图像
-  	 * - NEGATE,          将图像中所有颜色反转
-  	 * - GRAYSCALE,       将图像转换为灰度图
-  	 * - SMOOTH,          使图像更柔滑，用arg1设定柔滑级别
-  	 * - BRIGHTNESS,      改变图像的亮度，用arg1设定亮度级别，取值范围是-255~255
-  	 * - CONTRAST,        改变图像的对比度，用arg1设定对比度级别，取值范围是0~100
-  	 * - COLORIZE,        改变图像的色调，用arg1、arg2、arg3分别指定red、blue、green分值，每种颜色范围是0~255，arg4为透明度，取值返回是0~127
-  	 * @param filterType 过滤器类型
-  	 * @param arg1 过滤器所需参数: SMOOTH 的平滑级别、BRIGHTNESS 的亮度级别、CONTRAST 的对比度级别、COLORIZE 的 red 分值
-  	 * @param arg2 过滤器所需参数: COLORIZE 的 green 分值
-  	 * @param arg3 过滤器所需参数: COLORIZE 的 blue 分值
-  	 * @param arg4 过滤器所需参数: COLORIZE 的透明度 alpha 分值
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def filter(
     filterType: scala.Double,
     arg1: scala.Double,
@@ -904,14 +700,6 @@ class Class_Image () extends Class__object {
   	 * @async
   	 */
   def flip(): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 镜像当前图像
-  	 * @param dir 镜像方向，允许值为 gd.BOTH,gd.HORIZONTAL, gd.VERTICAL, 缺省为 gd.HORIZONTAL
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def flip(dir: scala.Double): scala.Unit = js.native
   /**
   	 * 
@@ -933,27 +721,7 @@ class Class_Image () extends Class__object {
   	 * @async
   	 */
   def getData(): Class_Buffer = js.native
-  /**
-  	 * 
-  	 * @brief 按照指定的格式返回图像数据
-  	 * @param format 指定返回数据的格式，允许值为 gd.PNG, gd.JPEG, gd.GIF, gd.BMP, gd.WEBP, 缺省为 gd.PNG
-  	 * @param quality 当格式为 gd.JPEG 或 gd.WEBP 时用于指定压缩质量，缺省为 85，其他格式忽略此参数
-  	 * @return 返回格式化的数据
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def getData(format: scala.Double): Class_Buffer = js.native
-  /**
-  	 * 
-  	 * @brief 按照指定的格式返回图像数据
-  	 * @param format 指定返回数据的格式，允许值为 gd.PNG, gd.JPEG, gd.GIF, gd.BMP, gd.WEBP, 缺省为 gd.PNG
-  	 * @param quality 当格式为 gd.JPEG 或 gd.WEBP 时用于指定压缩质量，缺省为 85，其他格式忽略此参数
-  	 * @return 返回格式化的数据
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def getData(format: scala.Double, quality: scala.Double): Class_Buffer = js.native
   /**
   	 * 
@@ -1054,27 +822,7 @@ class Class_Image () extends Class__object {
   	 * @async
   	 */
   def save(fname: java.lang.String): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 按照指定的格式将图像数据存入指定文件，文件将被强制覆盖
-  	 * @param fname 指定文件名
-  	 * @param format 指定返回数据的格式，允许值为 gd.PNG, gd.JPEG, gd.GIF, gd.BMP, gd.WEBP, 缺省为 gd.PNG
-  	 * @param quality 当格式为 gd.JPEG 时用于指定压缩质量，缺省为 85，其他格式忽略此参数
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def save(fname: java.lang.String, format: scala.Double): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 按照指定的格式将图像数据存入指定文件，文件将被强制覆盖
-  	 * @param fname 指定文件名
-  	 * @param format 指定返回数据的格式，允许值为 gd.PNG, gd.JPEG, gd.GIF, gd.BMP, gd.WEBP, 缺省为 gd.PNG
-  	 * @param quality 当格式为 gd.JPEG 时用于指定压缩质量，缺省为 85，其他格式忽略此参数
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def save(fname: java.lang.String, format: scala.Double, quality: scala.Double): scala.Unit = js.native
   /**
   	 * 
@@ -1087,27 +835,7 @@ class Class_Image () extends Class__object {
   	 * @async
   	 */
   def save(stm: Class_Stream): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 按照指定的格式将图像数据存入流对象
-  	 * @param stm 指定要存入的流对象
-  	 * @param format 指定返回数据的格式，允许值为 gd.PNG, gd.JPEG, gd.GIF, gd.BMP, gd.WEBP, 缺省为 gd.PNG
-  	 * @param quality 当格式为 gd.JPEG 或 gd.WEBP 时用于指定压缩质量，缺省为 85，其他格式忽略此参数
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def save(stm: Class_Stream, format: scala.Double): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 按照指定的格式将图像数据存入流对象
-  	 * @param stm 指定要存入的流对象
-  	 * @param format 指定返回数据的格式，允许值为 gd.PNG, gd.JPEG, gd.GIF, gd.BMP, gd.WEBP, 缺省为 gd.PNG
-  	 * @param quality 当格式为 gd.JPEG 或 gd.WEBP 时用于指定压缩质量，缺省为 85，其他格式忽略此参数
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def save(stm: Class_Stream, format: scala.Double, quality: scala.Double): scala.Unit = js.native
   /**
   	 * 

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Argument passed to the callback when a request finishes successfully or erroneously.
- */
-
+  * Argument passed to the callback when a request finishes successfully or erroneously.
+  */
 trait CloudGeoFenceResponse extends js.Object {
   /**
   	 * Error code, if any returned.

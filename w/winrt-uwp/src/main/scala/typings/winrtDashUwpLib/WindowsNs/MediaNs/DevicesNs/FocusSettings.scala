@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents settings for a FocusControl object. */
 @JSGlobal("Windows.Media.Devices.FocusSettings")
 @js.native
+/** Initializes a new instance of the FocusSettings class. */
 class FocusSettings () extends js.Object {
   /** Gets or sets a value indicating the auto focus range setting. */
   var autoFocusRange: AutoFocusRange = js.native

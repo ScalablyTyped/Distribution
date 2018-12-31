@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * This is the base class for all user-manipulated top-level objects.
-    * Because it inherits from Panel, it is automatically a visual container
-    * of other GraphObjects.
-    * Because it thus also inherits from GraphObject, it also has properties such as
-    * GraphObject.actualBounds, GraphObject.contextMenu, and GraphObject.visible.
-    */
+  * This is the base class for all user-manipulated top-level objects.
+  * Because it inherits from Panel, it is automatically a visual container
+  * of other GraphObjects.
+  * Because it thus also inherits from GraphObject, it also has properties such as
+  * GraphObject.actualBounds, GraphObject.contextMenu, and GraphObject.visible.
+  */
 @js.native
 trait Part extends Panel {
   /**This read-only property returns an iterator over all of the Adornments associated with this part.*/
@@ -103,138 +103,131 @@ trait Part extends Panel {
   /**Gets or sets the Z-ordering position of this Part within its Layer; default value is NaN which means "don't care".*/
   var zOrder: scala.Double = js.native
   /**
-          * Associate an Adornment with this Part, perhaps replacing any existing adornment.
-          * @param {string} category a string identifying the kind or role of the given adornment for this Part.
-          * @param {Adornment} ad
-          */
+    * Associate an Adornment with this Part, perhaps replacing any existing adornment.
+    * @param {string} category a string identifying the kind or role of the given adornment for this Part.
+    * @param {Adornment} ad
+    */
   def addAdornment(category: java.lang.String, ad: Adornment): scala.Unit = js.native
   /**
-          * This predicate returns true if .copyable is true, if the layer's Layer.allowCopy is true, and if the diagram's Diagram.allowCopy is true.
-          */
+    * This predicate returns true if .copyable is true, if the layer's Layer.allowCopy is true, and if the diagram's Diagram.allowCopy is true.
+    */
   def canCopy(): scala.Boolean = js.native
   /**
-          * This predicate returns true if .deletable is true, if the layer's Layer.allowDelete is true, and if the diagram's Diagram.allowDelete is true.
-          */
+    * This predicate returns true if .deletable is true, if the layer's Layer.allowDelete is true, and if the diagram's Diagram.allowDelete is true.
+    */
   def canDelete(): scala.Boolean = js.native
   /**
-          * This predicate returns true if .textEditable is true, if the layer's Layer.allowTextEdit is true, and if the diagram's Diagram.allowTextEdit is true.
-          */
+    * This predicate returns true if .textEditable is true, if the layer's Layer.allowTextEdit is true, and if the diagram's Diagram.allowTextEdit is true.
+    */
   def canEdit(): scala.Boolean = js.native
   /**
-          * This predicate returns true if .groupable is true, if the layer's Layer.allowGroup is true, and if the diagram's Diagram.allowGroup is true.
-          */
+    * This predicate returns true if .groupable is true, if the layer's Layer.allowGroup is true, and if the diagram's Diagram.allowGroup is true.
+    */
   def canGroup(): scala.Boolean = js.native
   /**
-          * This predicate is called by Layout implementations to decide whether this Part should be positioned and might affect the positioning of other Parts.
-          */
+    * This predicate is called by Layout implementations to decide whether this Part should be positioned and might affect the positioning of other Parts.
+    */
   def canLayout(): scala.Boolean = js.native
   /**
-          * This predicate returns true if .movable is true, if the layer's Layer.allowMove is true, and if the diagram's Diagram.allowMove is true.
-          */
+    * This predicate returns true if .movable is true, if the layer's Layer.allowMove is true, and if the diagram's Diagram.allowMove is true.
+    */
   def canMove(): scala.Boolean = js.native
   /**
-          * This predicate returns true if .reshapable is true, if the layer's Layer.allowReshape is true, and if the diagram's Diagram.allowReshape is true.
-          */
+    * This predicate returns true if .reshapable is true, if the layer's Layer.allowReshape is true, and if the diagram's Diagram.allowReshape is true.
+    */
   def canReshape(): scala.Boolean = js.native
   /**
-          * This predicate returns true if .resizable is true, if the layer's Layer.allowResize is true, and if the diagram's Diagram.allowResize is true.
-          */
+    * This predicate returns true if .resizable is true, if the layer's Layer.allowResize is true, and if the diagram's Diagram.allowResize is true.
+    */
   def canResize(): scala.Boolean = js.native
   /**
-          * This predicate returns true if .rotatable is true, if the layer's Layer.allowRotate is true, and if the diagram's Diagram.allowRotate is true.
-          */
+    * This predicate returns true if .rotatable is true, if the layer's Layer.allowRotate is true, and if the diagram's Diagram.allowRotate is true.
+    */
   def canRotate(): scala.Boolean = js.native
   /**
-          * This predicate returns true if .selectable is true, if the layer's Layer.allowSelect is true, and if the diagram's Diagram.allowSelect is true.
-          */
+    * This predicate returns true if .selectable is true, if the layer's Layer.allowSelect is true, and if the diagram's Diagram.allowSelect is true.
+    */
   def canSelect(): scala.Boolean = js.native
   /**
-          * Remove all adornments associated with this part.
-          */
+    * Remove all adornments associated with this part.
+    */
   def clearAdornments(): scala.Unit = js.native
   /**Gets or sets the function that is called after this Part has changed which Group it belongs to, if any.*/
   def containingGroupChanged(member: Part, oldgrp: Group, newgrp: Group): scala.Unit = js.native
   /**Gets or sets the function used to determine the location that this Part can be dragged to.*/
   def dragComputation(part: Part, oldloc: Point, newloc: Point): Point = js.native
   /**
-          * Measures if needed to make sure the GraphObject.measuredBounds and GraphObject.naturalBounds are all real numbers,
-          * primarily to get the actual width and height.
-          * GraphObject.actualBounds will get a real width and height, but the x and y values may continue to be <code>NaN</code>
-          * if they were that way beforehand.
-          */
+    * Measures if needed to make sure the GraphObject.measuredBounds and GraphObject.naturalBounds are all real numbers,
+    * primarily to get the actual width and height.
+    * GraphObject.actualBounds will get a real width and height, but the x and y values may continue to be <code>NaN</code>
+    * if they were that way beforehand.
+    */
   def ensureBounds(): scala.Unit = js.native
   /**
-          * Find an Adornment of a given category associated with this Part.
-          * @param {string} category
-          */
+    * Find an Adornment of a given category associated with this Part.
+    * @param {string} category
+    */
   def findAdornment(category: java.lang.String): Adornment = js.native
   /**
-          * Find the Group that contains both this part and another one.
-          * @param {Part} other
-          */
+    * Find the Group that contains both this part and another one.
+    * @param {Part} other
+    */
   def findCommonContainingGroup(other: Part): Group = js.native
   /**
-          * Return how deep this part is in the hierarchy of nested Groups.
-          * For top level parts, i.e. isTopLevel, this returns zero.
-          */
+    * Return how deep this part is in the hierarchy of nested Groups.
+    * For top level parts, i.e. isTopLevel, this returns zero.
+    */
   def findSubGraphLevel(): scala.Double = js.native
   /**
-          * Gets the top-level Part for this part, which is itself when .isTopLevel is true.
-          */
+    * Gets the top-level Part for this part, which is itself when .isTopLevel is true.
+    */
   def findTopLevelPart(): Part = js.native
   /**
-          * Invalidate the Layout that is responsible for positioning this Part.
-          * @param {number=} condition the reason that the layout should be invalidated --
-          * some combination of "Layout..." flag values;
-          * if this argument is not supplied, any value of .layoutConditions other than Part.LayoutNone
-          * will allow the layout to be invalidated.
-          */
+    * Invalidate the Layout that is responsible for positioning this Part.
+    * @param {number=} condition the reason that the layout should be invalidated --
+    * some combination of "Layout..." flag values;
+    * if this argument is not supplied, any value of .layoutConditions other than Part.LayoutNone
+    * will allow the layout to be invalidated.
+    */
   def invalidateLayout(): scala.Unit = js.native
-  /**
-          * Invalidate the Layout that is responsible for positioning this Part.
-          * @param {number=} condition the reason that the layout should be invalidated --
-          * some combination of "Layout..." flag values;
-          * if this argument is not supplied, any value of .layoutConditions other than Part.LayoutNone
-          * will allow the layout to be invalidated.
-          */
   def invalidateLayout(condition: scala.Double): scala.Unit = js.native
   /**
-          * This predicate is true if this part is a member of the given Part, perhaps indirectly.
-          * @param {Part} part
-          */
+    * This predicate is true if this part is a member of the given Part, perhaps indirectly.
+    * @param {Part} part
+    */
   def isMemberOf(part: Part): scala.Boolean = js.native
   /**
-          * This predicate is true if this Part can be seen.
-          */
+    * This predicate is true if this Part can be seen.
+    */
   def isVisible(): scala.Boolean = js.native
   /**Gets or sets the function to execute when this part changes layers.*/
   def layerChanged(part: Part, oldlayer: Layer, newlayer: Layer): scala.Unit = js.native
   /**
-          * Move this part and any parts that are owned by this part to a new position.
-          * @param {Point} newpos a new Point in document coordinates.
-          */
+    * Move this part and any parts that are owned by this part to a new position.
+    * @param {Point} newpos a new Point in document coordinates.
+    */
   def move(newpos: Point): scala.Unit = js.native
   /**
-          * Move this part and any parts that are owned by this part to a new position.
-          * @param {number} x the new X position in document coordinates.
-          * @param {number} y the new Y position in document coordinates.
-          */
+    * Move this part and any parts that are owned by this part to a new position.
+    * @param {number} x the new X position in document coordinates.
+    * @param {number} y the new Y position in document coordinates.
+    */
   def moveTo(x: scala.Double, y: scala.Double): scala.Unit = js.native
   /**
-          * Remove any Adornment of the given category that may be associated with this Part.
-          * @param {string} category a string identifying the kind or role of the given adornment for this Part.
-          */
+    * Remove any Adornment of the given category that may be associated with this Part.
+    * @param {string} category a string identifying the kind or role of the given adornment for this Part.
+    */
   def removeAdornment(category: java.lang.String): scala.Unit = js.native
   /**Gets or sets the function to execute when this part is selected or deselected.*/
   def selectionChanged(p: Part): scala.Unit = js.native
   /**
-          * This is responsible for creating any selection Adornment (if this Part .isSelected) and any tool adornments for this part.*/
+    * This is responsible for creating any selection Adornment (if this Part .isSelected) and any tool adornments for this part.*/
   def updateAdornments(): scala.Unit = js.native
   /**
-          * Update all of the references to nodes in case they had been modified in the model without
-          * properly notifying the model by calling GraphLinksModel.setGroupKeyForNodeData or
-          * GraphLinksModel.setToKeyForLinkData or other similar methods.
-          */
+    * Update all of the references to nodes in case they had been modified in the model without
+    * properly notifying the model by calling GraphLinksModel.setGroupKeyForNodeData or
+    * GraphLinksModel.setToKeyForLinkData or other similar methods.
+    */
   def updateRelationshipsFromData(): scala.Unit = js.native
 }
 

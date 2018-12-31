@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RESTAPIRequest[T] extends js.Object {
   val body: RESTAPIRequestBody[T]
   val headers: org.scalablytyped.runtime.StringDictionary[java.lang.String]

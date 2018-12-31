@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Dynamics.Joints.b2MouseJointDef")
 @js.native
+/**
+		* Constructor.
+		**/
 class b2MouseJointDef () extends b2JointDef {
   /**
   		* The damping ratio. 0 = no damping, 1 = critical damping.

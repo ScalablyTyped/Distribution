@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 object libCommonTraceModMembers extends js.Object {
   /**
-   * The [[Trace]] singleton
-   *
-   * #### Example:
-   * ```js
-   * import {trace} from "@uirouter/core";
-   * trace.enable(1, 5);
-   * ```
-   */
+    * The [[Trace]] singleton
+    *
+    * #### Example:
+    * ```js
+    * import {trace} from "@uirouter/core";
+    * trace.enable(1, 5);
+    * ```
+    */
   val trace: Trace = js.native
 }
 

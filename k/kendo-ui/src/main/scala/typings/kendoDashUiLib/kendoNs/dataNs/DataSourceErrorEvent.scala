@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataSourceErrorEvent extends DataSourceEvent {
   var errorThrown: js.Any
   var errors: js.UndefOr[js.Any] = js.undefined

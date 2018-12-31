@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SystemInfo extends js.Object {
   /** 微信设置的语言 */
   var language: java.lang.String

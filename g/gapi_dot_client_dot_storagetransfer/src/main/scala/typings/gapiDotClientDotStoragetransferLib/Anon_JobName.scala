@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_JobName extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -21,9 +20,9 @@ trait Anon_JobName extends js.Object {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The job to get.
-                   * Required.
-                   */
+    * The job to get.
+    * Required.
+    */
   var jobName: java.lang.String
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
@@ -34,9 +33,9 @@ trait Anon_JobName extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * The ID of the Google Cloud Platform Console project that owns the job.
-                   * Required.
-                   */
+    * The ID of the Google Cloud Platform Console project that owns the job.
+    * Required.
+    */
   var projectId: js.UndefOr[java.lang.String] = js.undefined
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined

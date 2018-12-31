@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_HORIZONTAL extends js.Object {
   var BOTH: reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsLibStrings.BOTH
   var HORIZONTAL: reactDashNativeDashSvgDashChartsLib.reactDashNativeDashSvgDashChartsLibStrings.HORIZONTAL

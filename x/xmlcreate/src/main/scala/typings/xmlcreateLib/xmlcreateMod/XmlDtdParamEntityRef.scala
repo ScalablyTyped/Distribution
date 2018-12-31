@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 class XmlDtdParamEntityRef protected ()
   extends xmlcreateLib.libNodesXmlDtdParamEntityRefMod.default {
   /**
-       * Initializes a new instance of the {@link XmlDtdParamEntityRef} class.
-       *
-       * @param entity The entity to be referenced.
-       */
+    * Initializes a new instance of the {@link XmlDtdParamEntityRef} class.
+    *
+    * @param entity The entity to be referenced.
+    */
   def this(entity: java.lang.String) = this()
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Config[V /* <: HTTPVersion */] extends js.Object {
   var allowUnsafeRegex: js.UndefOr[scala.Boolean] = js.undefined
   var caseSensitive: js.UndefOr[scala.Boolean] = js.undefined

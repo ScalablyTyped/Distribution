@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPackageId extends js.Object {
   var architecture: winrtLib.WindowsNs.SystemNs.ProcessorArchitecture
   var familyName: java.lang.String

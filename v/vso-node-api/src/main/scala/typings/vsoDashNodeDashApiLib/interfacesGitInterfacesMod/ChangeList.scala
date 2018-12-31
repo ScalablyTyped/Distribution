@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChangeList[T] extends js.Object {
   var allChangesIncluded: scala.Boolean
   var changeCounts: org.scalablytyped.runtime.NumberDictionary[scala.Double]

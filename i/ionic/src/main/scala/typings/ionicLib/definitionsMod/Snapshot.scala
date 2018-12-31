@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Snapshot extends js.Object {
   var created: java.lang.String
   var id: java.lang.String

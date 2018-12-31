@@ -12,8 +12,8 @@ sealed trait EventPublisherQueryFlags extends js.Object
 @js.native
 object EventPublisherQueryFlags extends js.Object {
   /**
-       * Include event types from the remote services too
-       */
+    * Include event types from the remote services too
+    */
   @js.native
   sealed trait IncludeRemoteServices
     extends vsoDashNodeDashApiLib.interfacesNotificationInterfacesMod.EventPublisherQueryFlags

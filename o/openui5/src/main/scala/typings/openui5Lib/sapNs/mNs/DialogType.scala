@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait DialogType extends js.Object
 
 /**
-     * Enum for the type of sap.m.Dialog control.
-    */
+  * Enum for the type of sap.m.Dialog control.
+  */
 @JSGlobal("sap.m.DialogType")
 @js.native
 object DialogType extends js.Object {

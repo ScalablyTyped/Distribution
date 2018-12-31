@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 sealed trait AccessibleRole extends js.Object
 
 /**
-       * Defines the accessible roles for ARIA support. This enumeration is used with the AccessibleRole
-       * control property.For more information, goto "Roles for Accessible Rich Internet Applications
-       * (WAI-ARIA Roles)" at the www.w3.org homepage.
-      */
+  * Defines the accessible roles for ARIA support. This enumeration is used with the AccessibleRole
+  * control property.For more information, goto "Roles for Accessible Rich Internet Applications
+  * (WAI-ARIA Roles)" at the www.w3.org homepage.
+  */
 @JSGlobal("sap.ui.core.AccessibleRole")
 @js.native
 object AccessibleRole extends js.Object {

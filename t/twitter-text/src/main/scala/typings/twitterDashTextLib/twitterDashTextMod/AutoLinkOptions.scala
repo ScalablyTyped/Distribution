@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AutoLinkOptions extends js.Object {
   var cashtagClass: js.UndefOr[java.lang.String] = js.undefined
   var cashtagUrlBase: js.UndefOr[java.lang.String] = js.undefined

@@ -14,15 +14,15 @@ abstract class RfcommServiceProvider () extends js.Object {
   /** Gets the RfcommServiceId of this local RFCOMM service instance. */
   var serviceId: RfcommServiceId = js.native
   /**
-                       * Begins advertising the SDP attributes.
-                       * @param listener The StreamSocketListener that is listening for incoming connections.
-                       */
+    * Begins advertising the SDP attributes.
+    * @param listener The StreamSocketListener that is listening for incoming connections.
+    */
   def startAdvertising(listener: winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.StreamSocketListener): scala.Unit = js.native
   /**
-                       * Begins advertising the SDP attributes.
-                       * @param listener The StreamSocketListener that is listening for incoming connections.
-                       * @param radioDiscoverable Indicates whether the radio is discoverable (true) or not (false).
-                       */
+    * Begins advertising the SDP attributes.
+    * @param listener The StreamSocketListener that is listening for incoming connections.
+    * @param radioDiscoverable Indicates whether the radio is discoverable (true) or not (false).
+    */
   def startAdvertising(
     listener: winrtDashUwpLib.WindowsNs.NetworkingNs.SocketsNs.StreamSocketListener,
     radioDiscoverable: scala.Boolean
@@ -36,10 +36,10 @@ abstract class RfcommServiceProvider () extends js.Object {
 @js.native
 object RfcommServiceProvider extends js.Object {
   /**
-                       * Gets a RfcommServiceProvider object from a DeviceInformation Id for a RFCOMM service instance.
-                       * @param serviceId The RfcommServiceId to be hosted locally.
-                       * @return The RfcommServiceProvider object that represents the local RFCOMM service instance.
-                       */
+    * Gets a RfcommServiceProvider object from a DeviceInformation Id for a RFCOMM service instance.
+    * @param serviceId The RfcommServiceId to be hosted locally.
+    * @return The RfcommServiceProvider object that represents the local RFCOMM service instance.
+    */
   def createAsync(serviceId: winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.RfcommNs.RfcommServiceId): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.RfcommNs.RfcommServiceProvider] = js.native
 }
 

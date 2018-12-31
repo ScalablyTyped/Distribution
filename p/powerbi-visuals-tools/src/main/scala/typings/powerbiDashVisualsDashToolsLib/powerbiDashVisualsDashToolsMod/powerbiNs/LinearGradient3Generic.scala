@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinearGradient3Generic[TColor, TValue, TStrategy] extends js.Object {
   var max: RuleColorStopGeneric[TColor, TValue]
   var mid: RuleColorStopGeneric[TColor, TValue]

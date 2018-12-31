@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextPathProps extends TextSpecificProps {
   var href: java.lang.String
   var method: js.UndefOr[TextPathMethod] = js.undefined

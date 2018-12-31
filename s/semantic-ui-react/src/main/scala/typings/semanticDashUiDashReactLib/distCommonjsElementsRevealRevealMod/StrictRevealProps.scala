@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictRevealProps extends js.Object {
   /** An active reveal displays its hidden content. */
   var active: js.UndefOr[scala.Boolean] = js.undefined

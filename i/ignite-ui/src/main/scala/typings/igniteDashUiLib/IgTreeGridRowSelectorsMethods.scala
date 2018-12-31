@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgTreeGridRowSelectorsMethods extends js.Object {
   /**
   	 * Changes the check state of a row by index to specified value

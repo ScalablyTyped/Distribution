@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITextParagraphFormat extends js.Object {
   var alignment: ParagraphAlignment
   var firstLineIndent: scala.Double

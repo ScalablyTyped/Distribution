@@ -5,27 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PrimaryXAxisTitleFont extends js.Object {
   /** Font family of the title text.
-               * @Default {Segoe UI}
-               */
+    * @Default {Segoe UI}
+    */
   var fontFamily: js.UndefOr[java.lang.String] = js.undefined
   /** Font style of the title text.
-               * @Default {ej.datavisualization.Chart.FontStyle.Normal}
-               */
+    * @Default {ej.datavisualization.Chart.FontStyle.Normal}
+    */
   var fontStyle: js.UndefOr[FontStyle | java.lang.String] = js.undefined
   /** Font weight of the title text.
-               * @Default {ej.datavisualization.Chart.FontWeight.Regular. See FontWeight}
-               */
+    * @Default {ej.datavisualization.Chart.FontWeight.Regular. See FontWeight}
+    */
   var fontWeight: js.UndefOr[FontWeight | java.lang.String] = js.undefined
   /** Opacity of the axis title text.
-               * @Default {1}
-               */
+    * @Default {1}
+    */
   var opacity: js.UndefOr[scala.Double] = js.undefined
   /** Font size of the axis title.
-               * @Default {16px}
-               */
+    * @Default {16px}
+    */
   var size: js.UndefOr[java.lang.String] = js.undefined
 }
 

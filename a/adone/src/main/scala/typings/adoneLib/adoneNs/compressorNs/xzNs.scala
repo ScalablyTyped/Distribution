@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * xz compressor (lzma2) + common lzma functionality
-         */
+  * xz compressor (lzma2) + common lzma functionality
+  */
 @JSGlobal("adone.compressor.xz")
 @js.native
 object xzNs extends js.Object {
@@ -42,283 +42,187 @@ object xzNs extends js.Object {
   val STREAM_HEADER_SIZE: scala.Double = js.native
   val asyncCodeAvailable: scala.Boolean = js.native
   /**
-               * Checks whether the given Check ID is supported by this liblzma build
-               */
+    * Checks whether the given Check ID is supported by this liblzma build
+    */
   def checkIsSupported(check: scala.Double): scala.Boolean = js.native
   /**
-               * Return the byte size of a check sums
-               *
-               * @param check Any supported check constant
-               */
+    * Return the byte size of a check sums
+    *
+    * @param check Any supported check constant
+    */
   def checkSize(check: scala.Double): scala.Double = js.native
   /**
-               * Compresses the given string or buffer
-               *
-               * @param options preset or options
-               */
+    * Compresses the given string or buffer
+    *
+    * @param options preset or options
+    */
   def compress(buf: java.lang.String): js.Promise[nodeLib.Buffer] = js.native
-  /**
-               * Compresses the given string or buffer
-               *
-               * @param options preset or options
-               */
   def compress(buf: java.lang.String, options: adoneLib.adoneNs.compressorNs.INs.lzmaNs.EasyEncoderOptions): js.Promise[nodeLib.Buffer] = js.native
-  /**
-               * Compresses the given string or buffer
-               *
-               * @param options preset or options
-               */
   def compress(buf: java.lang.String, options: scala.Double): js.Promise[nodeLib.Buffer] = js.native
-  /**
-               * Compresses the given string or buffer
-               *
-               * @param options preset or options
-               */
   def compress(buf: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
-  /**
-               * Compresses the given string or buffer
-               *
-               * @param options preset or options
-               */
   def compress(buf: nodeLib.Buffer, options: adoneLib.adoneNs.compressorNs.INs.lzmaNs.EasyEncoderOptions): js.Promise[nodeLib.Buffer] = js.native
-  /**
-               * Compresses the given string or buffer
-               *
-               * @param options preset or options
-               */
   def compress(buf: nodeLib.Buffer, options: scala.Double): js.Promise[nodeLib.Buffer] = js.native
   /**
-               * Creates a compress stream
-               *
-               * @param options preset or options
-               */
+    * Creates a compress stream
+    *
+    * @param options preset or options
+    */
   def compressStream(): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
-  /**
-               * Creates a compress stream
-               *
-               * @param options preset or options
-               */
   def compressStream(options: adoneLib.adoneNs.compressorNs.INs.lzmaNs.EasyEncoderOptions): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
-  /**
-               * Creates a compress stream
-               *
-               * @param options preset or options
-               */
   def compressStream(options: scala.Double): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
   /**
-               * Returns a standard LZMA decoder
-               */
+    * Returns a standard LZMA decoder
+    */
   @JSName("createStream")
   def createStream_aloneDecoder(coder: adoneLib.adoneLibStrings.aloneDecoder): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
-  /**
-               * Returns a standard LZMA decoder
-               */
   @JSName("createStream")
   def createStream_aloneDecoder(
     coder: adoneLib.adoneLibStrings.aloneDecoder,
     options: adoneLib.adoneNs.compressorNs.INs.lzmaNs.AloneDecoderOptions
   ): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
   /**
-               * Returns a standard LZMA encoder
-               *
-               * @param options preset or options
-               */
+    * Returns a standard LZMA encoder
+    *
+    * @param options preset or options
+    */
   @JSName("createStream")
   def createStream_aloneEncoder(coder: adoneLib.adoneLibStrings.aloneEncoder): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
-  /**
-               * Returns a standard LZMA encoder
-               *
-               * @param options preset or options
-               */
   @JSName("createStream")
   def createStream_aloneEncoder(
     coder: adoneLib.adoneLibStrings.aloneEncoder,
     options: adoneLib.adoneNs.compressorNs.INs.lzmaNs.AloneEncoderOptions
   ): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
-  /**
-               * Returns a standard LZMA encoder
-               *
-               * @param options preset or options
-               */
   @JSName("createStream")
   def createStream_aloneEncoder(coder: adoneLib.adoneLibStrings.aloneEncoder, options: scala.Double): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
   /**
-               * Returns a standard LZMA 1/2 (bith .xz and .lzma) decoder with auto detection of file format
-               */
+    * Returns a standard LZMA 1/2 (bith .xz and .lzma) decoder with auto detection of file format
+    */
   @JSName("createStream")
   def createStream_autoDecoder(coder: adoneLib.adoneLibStrings.autoDecoder): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
-  /**
-               * Returns a standard LZMA 1/2 (bith .xz and .lzma) decoder with auto detection of file format
-               */
   @JSName("createStream")
   def createStream_autoDecoder(
     coder: adoneLib.adoneLibStrings.autoDecoder,
     options: adoneLib.adoneNs.compressorNs.INs.lzmaNs.AutoDecoderOptions
   ): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
   /**
-               * Returns a standard LZMA2 (.xz) encoder
-               *
-               * @param options preset or options
-               */
+    * Returns a standard LZMA2 (.xz) encoder
+    *
+    * @param options preset or options
+    */
   @JSName("createStream")
   def createStream_easyEncoder(coder: adoneLib.adoneLibStrings.easyEncoder): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
-  /**
-               * Returns a standard LZMA2 (.xz) encoder
-               *
-               * @param options preset or options
-               */
   @JSName("createStream")
   def createStream_easyEncoder(
     coder: adoneLib.adoneLibStrings.easyEncoder,
     options: adoneLib.adoneNs.compressorNs.INs.lzmaNs.EasyEncoderOptions
   ): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
-  /**
-               * Returns a standard LZMA2 (.xz) encoder
-               *
-               * @param options preset or options
-               */
   @JSName("createStream")
   def createStream_easyEncoder(coder: adoneLib.adoneLibStrings.easyEncoder, options: scala.Double): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
   /**
-               * Returns a custom decoder corresponding to lzma_raw_decoder
-               */
+    * Returns a custom decoder corresponding to lzma_raw_decoder
+    */
   @JSName("createStream")
   def createStream_rawDecoder(coder: adoneLib.adoneLibStrings.rawDecoder): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
-  /**
-               * Returns a custom decoder corresponding to lzma_raw_decoder
-               */
   @JSName("createStream")
   def createStream_rawDecoder(
     coder: adoneLib.adoneLibStrings.rawDecoder,
     options: adoneLib.adoneNs.compressorNs.INs.lzmaNs.RawDecoderOptions
   ): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
   /**
-               * Returns a custom encoder corresponding to lzma_raw_encoder
-               */
+    * Returns a custom encoder corresponding to lzma_raw_encoder
+    */
   @JSName("createStream")
   def createStream_rawEncoder(coder: adoneLib.adoneLibStrings.rawEncoder): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
-  /**
-               * Returns a custom encoder corresponding to lzma_raw_encoder
-               */
   @JSName("createStream")
   def createStream_rawEncoder(
     coder: adoneLib.adoneLibStrings.rawEncoder,
     options: adoneLib.adoneNs.compressorNs.INs.lzmaNs.RawEncoderOptions
   ): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
   /**
-               * Returns a custom decoder corresponding to lzma_stream_decoder
-               */
+    * Returns a custom decoder corresponding to lzma_stream_decoder
+    */
   @JSName("createStream")
   def createStream_streamDecoder(coder: adoneLib.adoneLibStrings.streamDecoder): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
-  /**
-               * Returns a custom decoder corresponding to lzma_stream_decoder
-               */
   @JSName("createStream")
   def createStream_streamDecoder(
     coder: adoneLib.adoneLibStrings.streamDecoder,
     options: adoneLib.adoneNs.compressorNs.INs.lzmaNs.StreamDecoderOptions
   ): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
   /**
-               * Returns a custom encoder corresponding to lzma_stream_encoder
-               */
+    * Returns a custom encoder corresponding to lzma_stream_encoder
+    */
   @JSName("createStream")
   def createStream_streamEncoder(coder: adoneLib.adoneLibStrings.streamEncoder): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
-  /**
-               * Returns a custom encoder corresponding to lzma_stream_encoder
-               */
   @JSName("createStream")
   def createStream_streamEncoder(
     coder: adoneLib.adoneLibStrings.streamEncoder,
     options: adoneLib.adoneNs.compressorNs.INs.lzmaNs.StreamEncoderOptions
   ): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
   /**
-               * Decompresses the given buffer
-               */
+    * Decompresses the given buffer
+    */
   def decompress(buf: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
-  /**
-               * Decompresses the given buffer
-               */
   def decompress(buf: nodeLib.Buffer, options: adoneLib.adoneNs.compressorNs.INs.lzmaNs.AutoDecoderOptions): js.Promise[nodeLib.Buffer] = js.native
   /**
-               * Creates a decompress stream
-               *
-               * @param options preset or options
-               */
+    * Creates a decompress stream
+    *
+    * @param options preset or options
+    */
   def decompressStream(): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
-  /**
-               * Creates a decompress stream
-               *
-               * @param options preset or options
-               */
   def decompressStream(options: adoneLib.adoneNs.compressorNs.INs.lzmaNs.AutoDecoderOptions): adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream = js.native
   /**
-               * Returns the approximate memory usage when decoding using easyDecoder for a given preset
-               */
+    * Returns the approximate memory usage when decoding using easyDecoder for a given preset
+    */
   def easyDecoderMemusage(preset: scala.Double): scala.Double = js.native
   /**
-               * Returns the approximate memory usage when encoding using easyEncoder for a given preset
-               */
+    * Returns the approximate memory usage when encoding using easyEncoder for a given preset
+    */
   def easyEncoderMemusage(preset: scala.Double): scala.Double = js.native
   /**
-               * Checks whether the given encoder filter is supported
-               */
+    * Checks whether the given encoder filter is supported
+    */
   def filterDecoderIsSupported(decoder: java.lang.String): scala.Boolean = js.native
   /**
-               * Checks whether the given encoder filter is supported
-               */
+    * Checks whether the given encoder filter is supported
+    */
   def filterEncoderIsSupported(encoder: java.lang.String): scala.Boolean = js.native
   /**
-               * Checks whether the given match finder is supported by this liblzma build
-               */
+    * Checks whether the given match finder is supported by this liblzma build
+    */
   def mfIsSupported(mf: scala.Double): scala.Boolean = js.native
   /**
-               * Checks whether the given compression mode is supported by this liblzma build
-               */
+    * Checks whether the given compression mode is supported by this liblzma build
+    */
   def modeIsSupported(mode: scala.Double): scala.Boolean = js.native
   /**
-               * Returns the approximate memory usage when decoding using rawDecoder for a given filter list
-               */
+    * Returns the approximate memory usage when decoding using rawDecoder for a given filter list
+    */
   def rawDecoderMemusage(filters: adoneLib.adoneNs.compressorNs.INs.lzmaNs.Filters): scala.Double = js.native
   /**
-               * Returns the approximate memory usage when encoding using rawEncoder for a given filter list
-               */
+    * Returns the approximate memory usage when encoding using rawEncoder for a given filter list
+    */
   def rawEncoderMemusage(filters: adoneLib.adoneNs.compressorNs.INs.lzmaNs.Filters): scala.Double = js.native
   /**
-               * Encodes the given string or buffer using the given stream
-               */
+    * Encodes the given string or buffer using the given stream
+    */
   def singleStringCoding(stream: adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream, string: java.lang.String): js.Promise[nodeLib.Buffer] = js.native
-  /**
-               * Encodes the given string or buffer using the given stream
-               */
   def singleStringCoding(
     stream: adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream,
     string: java.lang.String,
     onFinish: js.Function2[/* err */ js.Any, /* data */ nodeLib.Buffer, scala.Unit]
   ): js.Promise[nodeLib.Buffer] = js.native
-  /**
-               * Encodes the given string or buffer using the given stream
-               */
   def singleStringCoding(
     stream: adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream,
     string: java.lang.String,
     onFinish: js.Function2[/* err */ js.Any, /* data */ nodeLib.Buffer, scala.Unit],
     onProgress: js.Function1[/* progress */ scala.Double, scala.Unit]
   ): js.Promise[nodeLib.Buffer] = js.native
-  /**
-               * Encodes the given string or buffer using the given stream
-               */
   def singleStringCoding(stream: adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream, string: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
-  /**
-               * Encodes the given string or buffer using the given stream
-               */
   def singleStringCoding(
     stream: adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream,
     string: nodeLib.Buffer,
     onFinish: js.Function2[/* err */ js.Any, /* data */ nodeLib.Buffer, scala.Unit]
   ): js.Promise[nodeLib.Buffer] = js.native
-  /**
-               * Encodes the given string or buffer using the given stream
-               */
   def singleStringCoding(
     stream: adoneLib.adoneNs.compressorNs.INs.lzmaNs.Stream,
     string: nodeLib.Buffer,
@@ -326,12 +230,12 @@ object xzNs extends js.Object {
     onProgress: js.Function1[/* progress */ scala.Double, scala.Unit]
   ): js.Promise[nodeLib.Buffer] = js.native
   /**
-               * Returns the version of the underlying C library
-               */
+    * Returns the version of the underlying C library
+    */
   def versionNumber(): scala.Double = js.native
   /**
-               * Returns the version of the underlying C library
-               */
+    * Returns the version of the underlying C library
+    */
   def versionString(): java.lang.String = js.native
 }
 

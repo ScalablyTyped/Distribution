@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Model extends js.Object {
   var effects: js.UndefOr[EffectsMapObject] = js.undefined
   var namespace: java.lang.String

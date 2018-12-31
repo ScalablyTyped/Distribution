@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IElementLoader
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Method] Aborts the active load request */

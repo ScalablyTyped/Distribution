@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // TimePicker
-
 trait TimePickerSettings extends js.Object {
   //Events
   var change: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.undefined

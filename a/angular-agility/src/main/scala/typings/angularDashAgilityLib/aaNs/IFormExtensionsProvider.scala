@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFormExtensionsProvider
   extends angularLib.angularMod.angularNs.IServiceProvider {
   var defaultFieldGroupStrategy: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LoggerOptions
   extends /* custom */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var level: js.UndefOr[LogLevel] = js.undefined

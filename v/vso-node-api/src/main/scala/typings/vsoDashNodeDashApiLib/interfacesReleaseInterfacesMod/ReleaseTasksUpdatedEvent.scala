@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReleaseTasksUpdatedEvent extends RealtimeReleaseEvent {
   var environmentId: scala.Double
   var job: ReleaseTask

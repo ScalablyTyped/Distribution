@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ssoClientConf extends js.Object {
   var callbackUrl: java.lang.String
   var clientId: java.lang.String

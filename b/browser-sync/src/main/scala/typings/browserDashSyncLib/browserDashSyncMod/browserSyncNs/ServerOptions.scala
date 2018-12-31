@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerOptions extends js.Object {
   /** set base directory */
   var baseDir: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
@@ -16,9 +15,9 @@ trait ServerOptions extends js.Object {
   /** configure custom middleware */
   var middleware: js.UndefOr[js.Array[MiddlewareHandler | PerRouteMiddleware]] = js.undefined
   /**
-           * key-value object hash, where the key is the url to match,
-           * and the value is the folder to serve (relative to your working directory)
-           */
+    * key-value object hash, where the key is the url to match,
+    * and the value is the folder to serve (relative to your working directory)
+    */
   var routes: js.UndefOr[Hash[java.lang.String]] = js.undefined
   var serveStaticOptions: js.UndefOr[serveDashStaticLib.serveDashStaticMod.serveStaticNs.ServeStaticOptions] = js.undefined
 }

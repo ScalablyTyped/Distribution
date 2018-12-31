@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ParentAccesstokenPrettyPrint extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -23,16 +22,16 @@ trait Anon_ParentAccesstokenPrettyPrint extends js.Object {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Required. It must be unique within a location and match the regular
-                   * expression `[a-zA-Z0-9_-]{1,63}`
-                   */
+    * Required. It must be unique within a location and match the regular
+    * expression `[a-zA-Z0-9_-]{1,63}`
+    */
   var keyRingId: js.UndefOr[java.lang.String] = js.undefined
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Required. The resource name of the location associated with the
-                   * KeyRings, in the format `projects/&#42;/locations/&#42;`.
-                   */
+    * Required. The resource name of the location associated with the
+    * KeyRings, in the format `projects/&#42;/locations/&#42;`.
+    */
   var parent: java.lang.String
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

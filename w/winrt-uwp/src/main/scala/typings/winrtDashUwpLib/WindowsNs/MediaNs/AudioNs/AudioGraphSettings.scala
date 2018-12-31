@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class AudioGraphSettings protected () extends js.Object {
   /**
-                   * Initializes a new instance of the AudioGraphSettings class with initial settings values optimized for the specified AudioRenderCategory .
-                   * @param audioRenderCategory The AudioRenderCategory that determines the initial settings values.
-                   */
+    * Initializes a new instance of the AudioGraphSettings class with initial settings values optimized for the specified AudioRenderCategory .
+    * @param audioRenderCategory The AudioRenderCategory that determines the initial settings values.
+    */
   def this(audioRenderCategory: winrtDashUwpLib.WindowsNs.MediaNs.RenderNs.AudioRenderCategory) = this()
   /** Gets or sets a value that indicates the audio render category setting for the audio graph. */
   var audioRenderCategory: winrtDashUwpLib.WindowsNs.MediaNs.RenderNs.AudioRenderCategory = js.native

@@ -5,51 +5,50 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Slice extends js.Object {
   /**
-       * Opacity of a slice.
-       */
+    * Opacity of a slice.
+    */
   var alpha: scala.Double
   /**
-       * Color of a slice.
-       */
+    * Color of a slice.
+    */
   var color: java.lang.String
   /**
-       * Original object from data provider.
-       */
+    * Original object from data provider.
+    */
   var dataContext: js.Object
   /**
-       * Slice description.
-       */
+    * Slice description.
+    */
   var description: java.lang.String
   /**
-       * Specifies whether the slice is hidden
-       */
+    * Specifies whether the slice is hidden
+    */
   var hidden: scala.Boolean
   /**
-       * Percent value of a slice.
-       */
+    * Percent value of a slice.
+    */
   var percents: scala.Double
   /**
-       * Specifies whether the slice is pulled or not.
-       */
+    * Specifies whether the slice is pulled or not.
+    */
   var pulled: scala.Boolean
   /**
-       * Slice title
-       */
+    * Slice title
+    */
   var title: java.lang.String
   /**
-       * Url of a slice
-       */
+    * Url of a slice
+    */
   var url: java.lang.String
   /**
-       * Value of a slice
-       */
+    * Value of a slice
+    */
   var value: scala.Double
   /**
-       * specifies whether this slice has a legend entry
-       */
+    * specifies whether this slice has a legend entry
+    */
   var visibleInLegend: scala.Boolean
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IQueueOptions extends js.Object {
   /**
   	 * Callbacks to observe the lifecycle of queued requests. Use these to respond to or modify the requests during the replay process.

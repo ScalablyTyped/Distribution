@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IUserIdentity extends js.Object {
   var firstName: java.lang.String
   var id: java.lang.String

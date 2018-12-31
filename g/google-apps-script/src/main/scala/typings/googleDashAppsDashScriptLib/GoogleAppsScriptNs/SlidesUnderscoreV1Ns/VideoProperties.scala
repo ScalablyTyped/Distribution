@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VideoProperties extends js.Object {
   // Whether to enable video autoplay when the page is displayed in present
   // mode. Defaults to false.

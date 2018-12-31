@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBelongsToAssociation
   extends extjsLib.ExtNs.dataNs.associationNs.IAssociation {
   /** [Config Option] (String) */

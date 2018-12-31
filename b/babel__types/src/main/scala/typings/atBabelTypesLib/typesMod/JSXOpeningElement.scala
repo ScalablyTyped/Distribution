@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JSXOpeningElement extends BaseNode {
   var attributes: js.Array[JSXAttribute | JSXSpreadAttribute]
   var name: JSXIdentifier | JSXMemberExpression

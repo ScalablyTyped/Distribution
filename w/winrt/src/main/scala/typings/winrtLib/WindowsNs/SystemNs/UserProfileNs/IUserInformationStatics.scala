@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IUserInformationStatics extends js.Object {
   var accountPictureChangeEnabled: scala.Boolean
   var nameAccessAllowed: scala.Boolean

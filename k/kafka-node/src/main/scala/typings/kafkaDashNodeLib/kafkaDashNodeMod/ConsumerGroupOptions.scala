@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConsumerGroupOptions extends js.Object {
   var autoCommit: js.UndefOr[scala.Boolean] = js.undefined
   var autoCommitIntervalMs: js.UndefOr[scala.Double] = js.undefined

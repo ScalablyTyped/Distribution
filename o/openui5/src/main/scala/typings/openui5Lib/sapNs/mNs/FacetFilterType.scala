@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait FacetFilterType extends js.Object
 
 /**
-     * Used by the FacetFilter control to adapt its design according to type.
-    */
+  * Used by the FacetFilter control to adapt its design according to type.
+  */
 @JSGlobal("sap.m.FacetFilterType")
 @js.native
 object FacetFilterType extends js.Object {

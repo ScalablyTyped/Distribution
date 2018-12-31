@@ -15,9 +15,6 @@ class KnuddelPot () extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/KnuddelPot.html#method_addWinner
   		 */
   def addWinner(user: User): scala.Unit = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/KnuddelPot.html#method_addWinner
-  		 */
   def addWinner(user: User, weight: scala.Double): scala.Unit = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/KnuddelPot.html#method_getFeeMultiplier
@@ -55,17 +52,11 @@ class KnuddelPot () extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/KnuddelPot.html#method_payout
   		 */
   def payout(): scala.Unit = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/KnuddelPot.html#method_payout
-  		 */
   def payout(text: java.lang.String): scala.Unit = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/KnuddelPot.html#method_refund
   		 */
   def refund(): scala.Unit = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/KnuddelPot.html#method_refund
-  		 */
   def refund(reason: java.lang.String): scala.Unit = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/KnuddelPot.html#method_seal

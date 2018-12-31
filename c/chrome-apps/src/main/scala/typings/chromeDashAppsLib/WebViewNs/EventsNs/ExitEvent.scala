@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Fired when the process rendering the guest web content has exited.
-         */
+  * Fired when the process rendering the guest web content has exited.
+  */
 @js.native
 trait ExitEvent
   extends stdLib.Event {

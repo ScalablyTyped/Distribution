@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPayoutListOptions
   extends stripeLib.stripeMod.StripeNs.IListOptionsCreated {
   var arrival_date: js.UndefOr[java.lang.String | stripeLib.stripeMod.StripeNs.IDateFilter] = js.undefined

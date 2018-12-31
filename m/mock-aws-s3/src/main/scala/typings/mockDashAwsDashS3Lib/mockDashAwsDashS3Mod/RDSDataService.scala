@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "RDSDataService")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class RDSDataService ()
   extends awsDashSdkLib.awsDashSdkMod.RDSDataService {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsRdsdataserviceMod.RDSDataServiceNs.ClientConfiguration) = this()
 }
 

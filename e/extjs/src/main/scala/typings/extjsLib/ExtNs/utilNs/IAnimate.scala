@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAnimate
   extends extjsLib.ExtNs.IBase {
   /** [Method] Performs custom animation on this object. ... */

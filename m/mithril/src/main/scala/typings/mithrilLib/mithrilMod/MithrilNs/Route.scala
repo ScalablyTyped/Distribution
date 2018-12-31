@@ -21,9 +21,7 @@ trait Route extends js.Object {
   def prefix(urlFragment: java.lang.String): scala.Unit = js.native
   /** Redirects to a matching route or to the default route if no matching routes can be found. */
   def set(route: java.lang.String): scala.Unit = js.native
-  /** Redirects to a matching route or to the default route if no matching routes can be found. */
   def set(route: java.lang.String, data: js.Any): scala.Unit = js.native
-  /** Redirects to a matching route or to the default route if no matching routes can be found. */
   def set(route: java.lang.String, data: js.Any, options: RouteOptions): scala.Unit = js.native
 }
 

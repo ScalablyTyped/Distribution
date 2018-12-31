@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventStackProps extends js.Object {
   /** An event name on which we will subscribe. */
   var name: java.lang.String

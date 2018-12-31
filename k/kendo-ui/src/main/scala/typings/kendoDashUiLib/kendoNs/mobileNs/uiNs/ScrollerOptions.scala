@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScrollerOptions extends js.Object {
   var elastic: js.UndefOr[scala.Boolean] = js.undefined
   var messages: js.UndefOr[ScrollerMessages] = js.undefined

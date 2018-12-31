@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SchedulerConfigOptions extends js.Object {
   /**
   	 * 'says' to present the numbers of days in the Month view as clickable links that open the related day in the specified view

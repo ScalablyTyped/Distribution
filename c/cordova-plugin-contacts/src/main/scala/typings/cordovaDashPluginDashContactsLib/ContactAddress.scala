@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * The ContactAddress object stores the properties of a single address of a contact.
- * A Contact object may include more than one address in a ContactAddress[] array.
- */
-
+  * The ContactAddress object stores the properties of a single address of a contact.
+  * A Contact object may include more than one address in a ContactAddress[] array.
+  */
 trait ContactAddress extends js.Object {
   /** The country name. */
   var country: js.UndefOr[java.lang.String] = js.undefined

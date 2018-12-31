@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * 获取全局唯一的语音识别器voiceRecognizer。
 		 */
-
 trait VoiceRecognizerStart extends js.Object {
    // 是否开启长语音
   var context: js.UndefOr[java.lang.String] = js.undefined

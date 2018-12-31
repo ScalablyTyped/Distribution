@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KinesisStreamRecord extends js.Object {
   var awsRegion: java.lang.String
   var eventID: java.lang.String

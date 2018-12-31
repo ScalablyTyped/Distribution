@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ToggleProps extends CommonEnhancedSwitchProps[Toggle] {
   // <EnhancedSwitch/> is element that get the 'other' properties
   var defaultToggled: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObjectTypeIndexer extends BaseNode {
   var id: Identifier | scala.Null
   var key: FlowType

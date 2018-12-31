@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartOptions extends js.Object {
   var initialHeight: js.UndefOr[scala.Double] = js.undefined
   var initialWidth: js.UndefOr[scala.Double] = js.undefined

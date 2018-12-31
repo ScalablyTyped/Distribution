@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CreateDefaultAnimation extends js.Object {
   var continuousPulseAnimationDouble: js.Function5[
     /* beaconColorOne */ java.lang.String, 

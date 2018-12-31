@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * The 3D Matrix is an object for holding values for a 3D affine transform.
 		 */
-
 trait Matrix3D
   extends titaniumLib.TitaniumNs.Proxy {
   /**

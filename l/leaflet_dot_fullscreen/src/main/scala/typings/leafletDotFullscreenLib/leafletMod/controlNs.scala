@@ -9,12 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object controlNs extends js.Object {
   /**
-       * Creates a fullscreen control.
-       */
+    * Creates a fullscreen control.
+    */
   def fullscreen(): leafletDotFullscreenLib.leafletMod.ControlNs.Fullscreen = js.native
-  /**
-       * Creates a fullscreen control.
-       */
   def fullscreen(options: leafletDotFullscreenLib.leafletMod.ControlNs.FullscreenOptions): leafletDotFullscreenLib.leafletMod.ControlNs.Fullscreen = js.native
 }
 

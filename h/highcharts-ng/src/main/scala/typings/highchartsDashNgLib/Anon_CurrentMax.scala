@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CurrentMax extends js.Object {
   var currentMax: js.UndefOr[scala.Double] = js.undefined
   var currentMin: js.UndefOr[scala.Double] = js.undefined

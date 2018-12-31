@@ -9,56 +9,56 @@ import scala.scalajs.js.annotation._
 sealed trait PivotAxis extends js.Object
 
 /**
-     *
-     * The ShowAs Calculation function for the Data Pivot Field.
-     *
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  *
+  * The ShowAs Calculation function for the Data Pivot Field.
+  *
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.PivotAxis")
 @js.native
 object PivotAxis extends js.Object {
   /**
-           *
-           * The column axis.
-           *
-           */
+    *
+    * The column axis.
+    *
+    */
   @js.native
   sealed trait column
     extends officeDashJsDashPreviewLib.ExcelNs.PivotAxis
   
   /**
-           *
-           * The data axis.
-           *
-           */
+    *
+    * The data axis.
+    *
+    */
   @js.native
   sealed trait data
     extends officeDashJsDashPreviewLib.ExcelNs.PivotAxis
   
   /**
-           *
-           * The filter axis.
-           *
-           */
+    *
+    * The filter axis.
+    *
+    */
   @js.native
   sealed trait filter
     extends officeDashJsDashPreviewLib.ExcelNs.PivotAxis
   
   /**
-           *
-           * The row axis.
-           *
-           */
+    *
+    * The row axis.
+    *
+    */
   @js.native
   sealed trait row
     extends officeDashJsDashPreviewLib.ExcelNs.PivotAxis
   
   /**
-           *
-           * The axis or region is unknown or unsupported.
-           *
-           */
+    *
+    * The axis or region is unknown or unsupported.
+    *
+    */
   @js.native
   sealed trait unknown
     extends officeDashJsDashPreviewLib.ExcelNs.PivotAxis

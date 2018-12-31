@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait lowdb extends js.Object {
   def apply[AdapterT /* <: AdapterAsync[_] */](adapter: AdapterT): js.Promise[
     LowdbAsync[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(AdapterT))),List()),Left(TsIdentSimple(ReferenceProperty))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: AdapterT[lowdb.ReferenceProperty] */ js.Any
     ]
   ] = js.native
 }

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Policy extends js.Object {
   var bindings: js.UndefOr[js.Array[_]] = js.undefined
   var etag: js.UndefOr[java.lang.String] = js.undefined

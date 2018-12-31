@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Enum extends js.Object {
   /** Enum value definitions. */
   var enumvalue: js.UndefOr[js.Array[EnumValue]] = js.undefined

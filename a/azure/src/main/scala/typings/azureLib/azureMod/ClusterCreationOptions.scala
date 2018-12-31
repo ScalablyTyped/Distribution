@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClusterCreationOptions extends js.Object {
   var additionalStorageAccounts: js.UndefOr[js.Array[azureLib.Anon_Key]] = js.undefined
   var defaultStorageAccountKey: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TorrentProvider extends js.Object {
   var autoFixUnstableUrl: scala.Boolean
   var baseUrl: java.lang.String

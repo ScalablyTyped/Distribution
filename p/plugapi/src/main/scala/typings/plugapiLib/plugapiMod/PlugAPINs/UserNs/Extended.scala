@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Extended extends Default {
   var curatorPoints: scala.Double
   var djPoints: scala.Double

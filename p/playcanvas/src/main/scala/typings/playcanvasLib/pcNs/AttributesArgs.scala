@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AttributesArgs extends js.Object {
   var array: js.UndefOr[scala.Boolean] = js.undefined
   var assetType: js.UndefOr[java.lang.String] = js.undefined

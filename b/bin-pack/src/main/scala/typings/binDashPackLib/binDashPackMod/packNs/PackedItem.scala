@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Describes the location of a packed bin. */
-
 trait PackedItem[T] extends js.Object {
   /** Height of the bin. */
   var height: scala.Double

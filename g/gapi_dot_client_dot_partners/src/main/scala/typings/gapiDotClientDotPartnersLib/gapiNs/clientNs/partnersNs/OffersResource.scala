@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OffersResource extends js.Object {
   var history: HistoryResource
   /** Lists the Offers available for the current user */

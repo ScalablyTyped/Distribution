@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILegendItem
   extends extjsLib.ExtNs.drawNs.ICompositeSprite {
   /** [Method] Creates all the individual sprites for this legend item

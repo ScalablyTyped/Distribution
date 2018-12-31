@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GooglePrivacyDlpV2beta1Value extends js.Object {
   var booleanValue: js.UndefOr[scala.Boolean] = js.undefined
   var dateValue: js.UndefOr[GoogleTypeDate] = js.undefined

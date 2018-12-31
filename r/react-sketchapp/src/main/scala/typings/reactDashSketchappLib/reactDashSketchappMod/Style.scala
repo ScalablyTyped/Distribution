@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Style extends js.Object {
   var alignItems: js.UndefOr[
     reactDashSketchappLib.reactDashSketchappLibStrings.`flex-start` | reactDashSketchappLib.reactDashSketchappLibStrings.`flex-end` | reactDashSketchappLib.reactDashSketchappLibStrings.center | reactDashSketchappLib.reactDashSketchappLibStrings.stretch

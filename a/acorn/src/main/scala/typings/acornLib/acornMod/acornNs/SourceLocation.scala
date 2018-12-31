@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SourceLocation
   extends estreeLib.estreeMod.SourceLocation {
   @JSName("end")

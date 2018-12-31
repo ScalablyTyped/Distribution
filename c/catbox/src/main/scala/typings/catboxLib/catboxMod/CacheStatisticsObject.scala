@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CacheStatisticsObject extends js.Object {
   /** errors - cache operations errors. TODO check this */
   var errors: scala.Double

@@ -37,14 +37,14 @@ abstract class AppInstallItem () extends js.Object {
   /** Cancels the installation of the current app. */
   def cancel(): scala.Unit = js.native
   /**
-                           * Cancels the installation of the current app, with the option to generate telemetry data.
-                           * @param correlationVector A correlation vector string that can be used to generate telemetry data.
-                           */
+    * Cancels the installation of the current app, with the option to generate telemetry data.
+    * @param correlationVector A correlation vector string that can be used to generate telemetry data.
+    */
   def cancel(correlationVector: java.lang.String): scala.Unit = js.native
   /**
-                           * Gets the installation status of the current app.
-                           * @return A value that specifies the installation status of the current app.
-                           */
+    * Gets the installation status of the current app.
+    * @return A value that specifies the installation status of the current app.
+    */
   def getCurrentStatus(): AppInstallStatus = js.native
   /** Occurs when the installation of the current app has finished. */
   def oncompleted(ev: js.Any with winrtDashUwpLib.WindowsNs.WinRTEvent[AppInstallItem]): scala.Unit = js.native
@@ -53,9 +53,9 @@ abstract class AppInstallItem () extends js.Object {
   /** Pauses the installation of the current app. */
   def pause(): scala.Unit = js.native
   /**
-                           * Pauses the installation of the current app, with the option to generate telemetry data.
-                           * @param correlationVector A correlation vector string that can be used to generate telemetry data.
-                           */
+    * Pauses the installation of the current app, with the option to generate telemetry data.
+    * @param correlationVector A correlation vector string that can be used to generate telemetry data.
+    */
   def pause(correlationVector: java.lang.String): scala.Unit = js.native
   def removeEventListener(`type`: java.lang.String, listener: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_]): scala.Unit = js.native
   @JSName("removeEventListener")
@@ -71,9 +71,9 @@ abstract class AppInstallItem () extends js.Object {
   /** Restarts the installation of the current app. */
   def restart(): scala.Unit = js.native
   /**
-                           * Restarts the installation of the current app, with the option to generate telemetry data.
-                           * @param correlationVector A correlation vector string that can be used to generate telemetry data.
-                           */
+    * Restarts the installation of the current app, with the option to generate telemetry data.
+    * @param correlationVector A correlation vector string that can be used to generate telemetry data.
+    */
   def restart(correlationVector: java.lang.String): scala.Unit = js.native
 }
 

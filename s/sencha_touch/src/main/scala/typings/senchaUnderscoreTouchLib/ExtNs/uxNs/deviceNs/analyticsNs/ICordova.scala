@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICordova extends IAbstract {
   /** [Method] Track an pageview in your application
   		* @param page Object

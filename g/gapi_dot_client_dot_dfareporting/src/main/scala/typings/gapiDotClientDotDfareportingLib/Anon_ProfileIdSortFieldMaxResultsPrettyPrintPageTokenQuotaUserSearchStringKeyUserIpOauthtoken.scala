@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ProfileIdSortFieldMaxResultsPrettyPrintPageTokenQuotaUserSearchStringKeyUserIpOauthtoken extends js.Object {
   /** Select only targeting templates with this advertiser ID. */
   var advertiserId: js.UndefOr[java.lang.String] = js.undefined
@@ -28,15 +27,15 @@ trait Anon_ProfileIdSortFieldMaxResultsPrettyPrintPageTokenQuotaUserSearchString
   /** User profile ID associated with this request. */
   var profileId: java.lang.String
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Allows searching for objects by name or ID. Wildcards (&#42;) are allowed. For example, "template&#42;2015" will return objects with names like "template June
-                   * 2015", "template April 2015", or simply "template 2015". Most of the searches also add wildcards implicitly at the start and the end of the search
-                   * string. For example, a search string of "template" will match objects with name "my template", "template 2015", or simply "template".
-                   */
+    * Allows searching for objects by name or ID. Wildcards (&#42;) are allowed. For example, "template&#42;2015" will return objects with names like "template June
+    * 2015", "template April 2015", or simply "template 2015". Most of the searches also add wildcards implicitly at the start and the end of the search
+    * string. For example, a search string of "template" will match objects with name "my template", "template 2015", or simply "template".
+    */
   var searchString: js.UndefOr[java.lang.String] = js.undefined
   /** Field by which to sort the list. */
   var sortField: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MaskOptions extends js.Object {
   var alwaysShowMask: scala.Boolean
   var formatChars: stdLib.Record[java.lang.String, java.lang.String]

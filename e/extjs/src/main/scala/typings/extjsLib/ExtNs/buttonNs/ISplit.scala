@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISplit extends IButton {
   /** [Config Option] (Function) */
   var arrowHandler: js.UndefOr[js.Any] = js.undefined

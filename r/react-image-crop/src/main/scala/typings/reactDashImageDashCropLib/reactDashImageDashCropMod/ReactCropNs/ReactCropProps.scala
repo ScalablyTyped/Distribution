@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReactCropProps extends js.Object {
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var crop: js.UndefOr[Crop] = js.undefined

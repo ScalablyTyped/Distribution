@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MarkdownAbstractSyntaxTree extends js.Object {
   var align: js.UndefOr[js.Array[AlignType]] = js.undefined
   var alt: js.UndefOr[java.lang.String | scala.Null] = js.undefined

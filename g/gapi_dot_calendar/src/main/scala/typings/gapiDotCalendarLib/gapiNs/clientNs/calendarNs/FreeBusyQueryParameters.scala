@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FreeBusyQueryParameters extends js.Object {
   var calendarExpansionMax: js.UndefOr[integer] = js.undefined
   var groupExpansionMax: js.UndefOr[integer] = js.undefined

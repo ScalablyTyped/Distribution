@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Helper interface for handling the different rendering contexts (i.e. CanvasContext, RaphaelContext, SVGContext). Not part of VexFlow!
-     */
+  * Helper interface for handling the different rendering contexts (i.e. CanvasContext, RaphaelContext, SVGContext). Not part of VexFlow!
+  */
 @js.native
 trait IRenderContext extends js.Object {
   def arc(
@@ -36,8 +36,8 @@ trait IRenderContext extends js.Object {
   def glow(): IRenderContext = js.native
   def lineTo(x: scala.Double, y: scala.Double): IRenderContext = js.native
   /**
-           * canvas returns TextMetrics, SVG returns SVGRect, Raphael returns {width : number, height : number}. Only width is used throughout VexFlow.
-           */
+    * canvas returns TextMetrics, SVG returns SVGRect, Raphael returns {width : number, height : number}. Only width is used throughout VexFlow.
+    */
   def measureText(text: java.lang.String): vexflowLib.Anon_Width = js.native
   def moveTo(x: scala.Double, y: scala.Double): IRenderContext = js.native
   def quadraticCurveToTo(x1: scala.Double, y1: scala.Double, x2: scala.Double, y2: scala.Double): IRenderContext = js.native

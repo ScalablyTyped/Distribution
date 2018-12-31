@@ -10,17 +10,17 @@ import scala.scalajs.js.annotation._
 @js.native
 class SpeechRecognitionTopicConstraint protected () extends js.Object {
   /**
-                   * Creates an instance of the SpeechRecognitionTopicConstraint class by using a pre-defined scenario type and context.
-                   * @param scenario A predefined scenario type.
-                   * @param topicHint A subject, or context hint, used to optimize recognition.
-                   */
+    * Creates an instance of the SpeechRecognitionTopicConstraint class by using a pre-defined scenario type and context.
+    * @param scenario A predefined scenario type.
+    * @param topicHint A subject, or context hint, used to optimize recognition.
+    */
   def this(scenario: SpeechRecognitionScenario, topicHint: java.lang.String) = this()
   /**
-                   * Creates an instance of the SpeechRecognitionTopicConstraint class by using a pre-defined scenario type, context, and an identifier.
-                   * @param scenario A predefined scenario type.
-                   * @param topicHint A subject, or context hint, used to optimize recognition.
-                   * @param tag Identifier for the constraint.
-                   */
+    * Creates an instance of the SpeechRecognitionTopicConstraint class by using a pre-defined scenario type, context, and an identifier.
+    * @param scenario A predefined scenario type.
+    * @param topicHint A subject, or context hint, used to optimize recognition.
+    * @param tag Identifier for the constraint.
+    */
   def this(scenario: SpeechRecognitionScenario, topicHint: java.lang.String, tag: java.lang.String) = this()
   /** Gets or sets whether the constraint can be used by the SpeechRecognizer object to perform recognition. */
   var isEnabled: scala.Boolean = js.native

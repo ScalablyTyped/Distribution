@@ -11,5 +11,5 @@ package object promiseDashDagMod {
     /* required */ js.UndefOr[js.Array[java.lang.String]], 
     org.scalablytyped.runtime.StringDictionary[P]
   ]
-  type Step = java.lang.String | (js.Function1[/* repeated */js.Any, js.Thenable[js.Any]])
+  type Step = java.lang.String | (js.Function1[/* repeated */ js.Any, js.Thenable[js.Any]])
 }

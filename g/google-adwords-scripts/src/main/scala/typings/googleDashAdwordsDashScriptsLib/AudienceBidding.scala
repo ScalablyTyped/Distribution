@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AudienceBidding extends AdWordsBidding {
   def clearCpc(): scala.Unit
   def clearCpm(): scala.Unit

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SHOWELEMENT extends js.Object {
   val FILTER_ACCEPT: scala.Double
   val FILTER_REJECT: scala.Double

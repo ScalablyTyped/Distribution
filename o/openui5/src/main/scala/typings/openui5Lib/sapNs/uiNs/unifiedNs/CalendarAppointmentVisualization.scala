@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait CalendarAppointmentVisualization extends js.Object
 
 /**
-       * Visualisation of an <code>CalendarAppoinment</code> in a <code>CalendarRow</code>.
-      */
+  * Visualisation of an <code>CalendarAppoinment</code> in a <code>CalendarRow</code>.
+  */
 @JSGlobal("sap.ui.unified.CalendarAppointmentVisualization")
 @js.native
 object CalendarAppointmentVisualization extends js.Object {

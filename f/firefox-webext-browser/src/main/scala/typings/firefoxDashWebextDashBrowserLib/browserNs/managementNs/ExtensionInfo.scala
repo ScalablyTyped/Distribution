@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Information about an installed extension. */
-
 trait ExtensionInfo extends js.Object {
   /** The description of this extension. */
   var description: java.lang.String
@@ -19,11 +18,11 @@ trait ExtensionInfo extends js.Object {
   /** Returns a list of host based permissions. */
   var hostPermissions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-           * A list of icon information. Note that this just reflects what was declared in the manifest, and the actual
-           * image at that url may be larger or smaller than what was declared, so you might consider using explicit
-           * width and height attributes on img tags referencing these images. See the manifest documentation on icons
-           * for more details.
-           */
+    * A list of icon information. Note that this just reflects what was declared in the manifest, and the actual
+    * image at that url may be larger or smaller than what was declared, so you might consider using explicit
+    * width and height attributes on img tags referencing these images. See the manifest documentation on icons
+    * for more details.
+    */
   var icons: js.UndefOr[js.Array[IconInfo]] = js.undefined
   /** The extension's unique identifier. */
   var id: java.lang.String

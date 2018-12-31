@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SplitterOptions extends js.Object {
   var collapse: js.UndefOr[js.Function1[/* e */ SplitterCollapseEvent, scala.Unit]] = js.undefined
   var contentLoad: js.UndefOr[js.Function1[/* e */ SplitterContentLoadEvent, scala.Unit]] = js.undefined

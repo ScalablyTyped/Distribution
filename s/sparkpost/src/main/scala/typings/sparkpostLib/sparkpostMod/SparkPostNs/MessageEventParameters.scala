@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MessageEventParameters extends js.Object {
   /** delimited list of bounce classification codes to search. (See Bounce Classification Codes.) */
   var bounce_classes: js.UndefOr[(js.Array[java.lang.String | scala.Double]) | java.lang.String | scala.Double] = js.undefined

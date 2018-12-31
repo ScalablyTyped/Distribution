@@ -95,7 +95,6 @@ class Presentation protected () extends js.Object {
   def AcceptAll(): scala.Unit = js.native
   /** @param string [FileName=''] */
   def AddBaseline(): scala.Unit = js.native
-  /** @param string [FileName=''] */
   def AddBaseline(FileName: java.lang.String): scala.Unit = js.native
   def AddTitleMaster(): Master = js.native
   def AddToFavorites(): scala.Unit = js.native
@@ -104,21 +103,14 @@ class Presentation protected () extends js.Object {
   def CanCheckIn(): scala.Boolean = js.native
   /** @param boolean [SaveChanges=true] */
   def CheckIn(): scala.Unit = js.native
-  /** @param boolean [SaveChanges=true] */
   def CheckIn(SaveChanges: scala.Boolean): scala.Unit = js.native
-  /** @param boolean [SaveChanges=true] */
   def CheckIn(SaveChanges: scala.Boolean, Comments: js.Any): scala.Unit = js.native
-  /** @param boolean [SaveChanges=true] */
   def CheckIn(SaveChanges: scala.Boolean, Comments: js.Any, MakePublic: js.Any): scala.Unit = js.native
   /** @param boolean [SaveChanges=true] */
   def CheckInWithVersion(): scala.Unit = js.native
-  /** @param boolean [SaveChanges=true] */
   def CheckInWithVersion(SaveChanges: scala.Boolean): scala.Unit = js.native
-  /** @param boolean [SaveChanges=true] */
   def CheckInWithVersion(SaveChanges: scala.Boolean, Comments: js.Any): scala.Unit = js.native
-  /** @param boolean [SaveChanges=true] */
   def CheckInWithVersion(SaveChanges: scala.Boolean, Comments: js.Any, MakePublic: js.Any): scala.Unit = js.native
-  /** @param boolean [SaveChanges=true] */
   def CheckInWithVersion(SaveChanges: scala.Boolean, Comments: js.Any, MakePublic: js.Any, VersionType: js.Any): scala.Unit = js.native
   def Close(): scala.Unit = js.native
   def CommandBars(Index: java.lang.String): activexDashOfficeLib.OfficeNs.CommandBar = js.native
@@ -128,53 +120,25 @@ class Presentation protected () extends js.Object {
   def Convert(): scala.Unit = js.native
   def Convert2(FileName: java.lang.String): scala.Unit = js.native
   /**
-           * @param boolean [UseTimingsAndNarrations=true]
-           * @param number [DefaultSlideDuration=5]
-           * @param number [VertResolution=720]
-           * @param number [FramesPerSecond=30]
-           * @param number [Quality=85]
-           */
+    * @param boolean [UseTimingsAndNarrations=true]
+    * @param number [DefaultSlideDuration=5]
+    * @param number [VertResolution=720]
+    * @param number [FramesPerSecond=30]
+    * @param number [Quality=85]
+    */
   def CreateVideo(FileName: java.lang.String): scala.Unit = js.native
-  /**
-           * @param boolean [UseTimingsAndNarrations=true]
-           * @param number [DefaultSlideDuration=5]
-           * @param number [VertResolution=720]
-           * @param number [FramesPerSecond=30]
-           * @param number [Quality=85]
-           */
   def CreateVideo(FileName: java.lang.String, UseTimingsAndNarrations: scala.Boolean): scala.Unit = js.native
-  /**
-           * @param boolean [UseTimingsAndNarrations=true]
-           * @param number [DefaultSlideDuration=5]
-           * @param number [VertResolution=720]
-           * @param number [FramesPerSecond=30]
-           * @param number [Quality=85]
-           */
   def CreateVideo(
     FileName: java.lang.String,
     UseTimingsAndNarrations: scala.Boolean,
     DefaultSlideDuration: scala.Double
   ): scala.Unit = js.native
-  /**
-           * @param boolean [UseTimingsAndNarrations=true]
-           * @param number [DefaultSlideDuration=5]
-           * @param number [VertResolution=720]
-           * @param number [FramesPerSecond=30]
-           * @param number [Quality=85]
-           */
   def CreateVideo(
     FileName: java.lang.String,
     UseTimingsAndNarrations: scala.Boolean,
     DefaultSlideDuration: scala.Double,
     VertResolution: scala.Double
   ): scala.Unit = js.native
-  /**
-           * @param boolean [UseTimingsAndNarrations=true]
-           * @param number [DefaultSlideDuration=5]
-           * @param number [VertResolution=720]
-           * @param number [FramesPerSecond=30]
-           * @param number [Quality=85]
-           */
   def CreateVideo(
     FileName: java.lang.String,
     UseTimingsAndNarrations: scala.Boolean,
@@ -182,13 +146,6 @@ class Presentation protected () extends js.Object {
     VertResolution: scala.Double,
     FramesPerSecond: scala.Double
   ): scala.Unit = js.native
-  /**
-           * @param boolean [UseTimingsAndNarrations=true]
-           * @param number [DefaultSlideDuration=5]
-           * @param number [VertResolution=720]
-           * @param number [FramesPerSecond=30]
-           * @param number [Quality=85]
-           */
   def CreateVideo(
     FileName: java.lang.String,
     UseTimingsAndNarrations: scala.Boolean,
@@ -206,19 +163,11 @@ class Presentation protected () extends js.Object {
   def EndReview(): scala.Unit = js.native
   def EnsureAllMediaUpgraded(): scala.Unit = js.native
   /**
-           * @param number [ScaleWidth=0]
-           * @param number [ScaleHeight=0]
-           */
+    * @param number [ScaleWidth=0]
+    * @param number [ScaleHeight=0]
+    */
   def Export(Path: java.lang.String, FilterName: java.lang.String): scala.Unit = js.native
-  /**
-           * @param number [ScaleWidth=0]
-           * @param number [ScaleHeight=0]
-           */
   def Export(Path: java.lang.String, FilterName: java.lang.String, ScaleWidth: scala.Double): scala.Unit = js.native
-  /**
-           * @param number [ScaleWidth=0]
-           * @param number [ScaleHeight=0]
-           */
   def Export(
     Path: java.lang.String,
     FilterName: java.lang.String,
@@ -226,20 +175,20 @@ class Presentation protected () extends js.Object {
     ScaleHeight: scala.Double
   ): scala.Unit = js.native
   /**
-           * @param PowerPoint.PpFixedFormatIntent [Intent=1]
-           * @param Office.MsoTriState [FrameSlides=0]
-           * @param PowerPoint.PpPrintHandoutOrder [HandoutOrder=1]
-           * @param PowerPoint.PpPrintOutputType [OutputType=1]
-           * @param Office.MsoTriState [PrintHiddenSlides=0]
-           * @param PowerPoint.PrintRange [PrintRange=0]
-           * @param PowerPoint.PpPrintRangeType [RangeType=1]
-           * @param string [SlideShowName='']
-           * @param boolean [IncludeDocProperties=false]
-           * @param boolean [KeepIRMSettings=true]
-           * @param boolean [DocStructureTags=true]
-           * @param boolean [BitmapMissingFonts=true]
-           * @param boolean [UseISO19005_1=false]
-           */
+    * @param PowerPoint.PpFixedFormatIntent [Intent=1]
+    * @param Office.MsoTriState [FrameSlides=0]
+    * @param PowerPoint.PpPrintHandoutOrder [HandoutOrder=1]
+    * @param PowerPoint.PpPrintOutputType [OutputType=1]
+    * @param Office.MsoTriState [PrintHiddenSlides=0]
+    * @param PowerPoint.PrintRange [PrintRange=0]
+    * @param PowerPoint.PpPrintRangeType [RangeType=1]
+    * @param string [SlideShowName='']
+    * @param boolean [IncludeDocProperties=false]
+    * @param boolean [KeepIRMSettings=true]
+    * @param boolean [DocStructureTags=true]
+    * @param boolean [BitmapMissingFonts=true]
+    * @param boolean [UseISO19005_1=false]
+    */
   def ExportAsFixedFormat(
     Path: java.lang.String,
     FixedFormatType: PpFixedFormatType,
@@ -259,13 +208,13 @@ class Presentation protected () extends js.Object {
     ExternalExporter: js.UndefOr[js.Any]
   ): scala.Unit = js.native
   /**
-           * @param string [SubAddress='']
-           * @param boolean [NewWindow=false]
-           * @param boolean [AddHistory=true]
-           * @param string [ExtraInfo='']
-           * @param Office.MsoExtraInfoMethod [Method=0]
-           * @param string [HeaderInfo='']
-           */
+    * @param string [SubAddress='']
+    * @param boolean [NewWindow=false]
+    * @param boolean [AddHistory=true]
+    * @param string [ExtraInfo='']
+    * @param Office.MsoExtraInfoMethod [Method=0]
+    * @param string [HeaderInfo='']
+    */
   def FollowHyperlink(
     Address: java.lang.String,
     SubAddress: js.UndefOr[java.lang.String],
@@ -290,52 +239,17 @@ class Presentation protected () extends js.Object {
   def NewWindow(): DocumentWindow = js.native
   def Permission(Index: js.Any): activexDashOfficeLib.OfficeNs.UserPermission = js.native
   /**
-           * @param number [From=-1]
-           * @param number [To=-1]
-           * @param string [PrintToFile='']
-           * @param number [Copies=0]
-           * @param Office.MsoTriState [Collate=-99]
-           */
+    * @param number [From=-1]
+    * @param number [To=-1]
+    * @param string [PrintToFile='']
+    * @param number [Copies=0]
+    * @param Office.MsoTriState [Collate=-99]
+    */
   def PrintOut(): scala.Unit = js.native
-  /**
-           * @param number [From=-1]
-           * @param number [To=-1]
-           * @param string [PrintToFile='']
-           * @param number [Copies=0]
-           * @param Office.MsoTriState [Collate=-99]
-           */
   def PrintOut(From: scala.Double): scala.Unit = js.native
-  /**
-           * @param number [From=-1]
-           * @param number [To=-1]
-           * @param string [PrintToFile='']
-           * @param number [Copies=0]
-           * @param Office.MsoTriState [Collate=-99]
-           */
   def PrintOut(From: scala.Double, To: scala.Double): scala.Unit = js.native
-  /**
-           * @param number [From=-1]
-           * @param number [To=-1]
-           * @param string [PrintToFile='']
-           * @param number [Copies=0]
-           * @param Office.MsoTriState [Collate=-99]
-           */
   def PrintOut(From: scala.Double, To: scala.Double, PrintToFile: java.lang.String): scala.Unit = js.native
-  /**
-           * @param number [From=-1]
-           * @param number [To=-1]
-           * @param string [PrintToFile='']
-           * @param number [Copies=0]
-           * @param Office.MsoTriState [Collate=-99]
-           */
   def PrintOut(From: scala.Double, To: scala.Double, PrintToFile: java.lang.String, Copies: scala.Double): scala.Unit = js.native
-  /**
-           * @param number [From=-1]
-           * @param number [To=-1]
-           * @param string [PrintToFile='']
-           * @param number [Copies=0]
-           * @param Office.MsoTriState [Collate=-99]
-           */
   def PrintOut(
     From: scala.Double,
     To: scala.Double,
@@ -344,19 +258,11 @@ class Presentation protected () extends js.Object {
     Collate: activexDashOfficeLib.OfficeNs.MsoTriState
   ): scala.Unit = js.native
   /**
-           * @param boolean [Overwrite=false]
-           * @param boolean [UseSlideOrder=false]
-           */
+    * @param boolean [Overwrite=false]
+    * @param boolean [UseSlideOrder=false]
+    */
   def PublishSlides(SlideLibraryUrl: java.lang.String): scala.Unit = js.native
-  /**
-           * @param boolean [Overwrite=false]
-           * @param boolean [UseSlideOrder=false]
-           */
   def PublishSlides(SlideLibraryUrl: java.lang.String, Overwrite: scala.Boolean): scala.Unit = js.native
-  /**
-           * @param boolean [Overwrite=false]
-           * @param boolean [UseSlideOrder=false]
-           */
   def PublishSlides(SlideLibraryUrl: java.lang.String, Overwrite: scala.Boolean, UseSlideOrder: scala.Boolean): scala.Unit = js.native
   def RejectAll(): scala.Unit = js.native
   def ReloadAs(cp: activexDashOfficeLib.OfficeNs.MsoEncoding): scala.Unit = js.native
@@ -364,100 +270,48 @@ class Presentation protected () extends js.Object {
   def RemoveDocumentInformation(Type: PpRemoveDocInfoType): scala.Unit = js.native
   /** @param boolean [ShowMessage=true] */
   def ReplyWithChanges(): scala.Unit = js.native
-  /** @param boolean [ShowMessage=true] */
   def ReplyWithChanges(ShowMessage: scala.Boolean): scala.Unit = js.native
   def Save(): scala.Unit = js.native
   /**
-           * @param PowerPoint.PpSaveAsFileType [FileFormat=11]
-           * @param Office.MsoTriState [EmbedTrueTypeFonts=-2]
-           */
+    * @param PowerPoint.PpSaveAsFileType [FileFormat=11]
+    * @param Office.MsoTriState [EmbedTrueTypeFonts=-2]
+    */
   def SaveAs(FileName: java.lang.String): scala.Unit = js.native
-  /**
-           * @param PowerPoint.PpSaveAsFileType [FileFormat=11]
-           * @param Office.MsoTriState [EmbedTrueTypeFonts=-2]
-           */
   def SaveAs(FileName: java.lang.String, FileFormat: PpSaveAsFileType): scala.Unit = js.native
-  /**
-           * @param PowerPoint.PpSaveAsFileType [FileFormat=11]
-           * @param Office.MsoTriState [EmbedTrueTypeFonts=-2]
-           */
   def SaveAs(
     FileName: java.lang.String,
     FileFormat: PpSaveAsFileType,
     EmbedTrueTypeFonts: activexDashOfficeLib.OfficeNs.MsoTriState
   ): scala.Unit = js.native
   /**
-           * @param PowerPoint.PpSaveAsFileType [FileFormat=11]
-           * @param Office.MsoTriState [EmbedTrueTypeFonts=-2]
-           */
+    * @param PowerPoint.PpSaveAsFileType [FileFormat=11]
+    * @param Office.MsoTriState [EmbedTrueTypeFonts=-2]
+    */
   def SaveCopyAs(FileName: java.lang.String): scala.Unit = js.native
-  /**
-           * @param PowerPoint.PpSaveAsFileType [FileFormat=11]
-           * @param Office.MsoTriState [EmbedTrueTypeFonts=-2]
-           */
   def SaveCopyAs(FileName: java.lang.String, FileFormat: PpSaveAsFileType): scala.Unit = js.native
-  /**
-           * @param PowerPoint.PpSaveAsFileType [FileFormat=11]
-           * @param Office.MsoTriState [EmbedTrueTypeFonts=-2]
-           */
   def SaveCopyAs(
     FileName: java.lang.String,
     FileFormat: PpSaveAsFileType,
     EmbedTrueTypeFonts: activexDashOfficeLib.OfficeNs.MsoTriState
   ): scala.Unit = js.native
   /**
-           * @param string [Recipients='']
-           * @param string [Subject='']
-           * @param boolean [ShowMessage=false]
-           */
+    * @param string [Recipients='']
+    * @param string [Subject='']
+    * @param boolean [ShowMessage=false]
+    */
   def SendFaxOverInternet(): scala.Unit = js.native
-  /**
-           * @param string [Recipients='']
-           * @param string [Subject='']
-           * @param boolean [ShowMessage=false]
-           */
   def SendFaxOverInternet(Recipients: java.lang.String): scala.Unit = js.native
-  /**
-           * @param string [Recipients='']
-           * @param string [Subject='']
-           * @param boolean [ShowMessage=false]
-           */
   def SendFaxOverInternet(Recipients: java.lang.String, Subject: java.lang.String): scala.Unit = js.native
-  /**
-           * @param string [Recipients='']
-           * @param string [Subject='']
-           * @param boolean [ShowMessage=false]
-           */
   def SendFaxOverInternet(Recipients: java.lang.String, Subject: java.lang.String, ShowMessage: scala.Boolean): scala.Unit = js.native
   /**
-           * @param string [Recipients='']
-           * @param string [Subject='']
-           * @param boolean [ShowMessage=true]
-           */
+    * @param string [Recipients='']
+    * @param string [Subject='']
+    * @param boolean [ShowMessage=true]
+    */
   def SendForReview(): scala.Unit = js.native
-  /**
-           * @param string [Recipients='']
-           * @param string [Subject='']
-           * @param boolean [ShowMessage=true]
-           */
   def SendForReview(Recipients: java.lang.String): scala.Unit = js.native
-  /**
-           * @param string [Recipients='']
-           * @param string [Subject='']
-           * @param boolean [ShowMessage=true]
-           */
   def SendForReview(Recipients: java.lang.String, Subject: java.lang.String): scala.Unit = js.native
-  /**
-           * @param string [Recipients='']
-           * @param string [Subject='']
-           * @param boolean [ShowMessage=true]
-           */
   def SendForReview(Recipients: java.lang.String, Subject: java.lang.String, ShowMessage: scala.Boolean): scala.Unit = js.native
-  /**
-           * @param string [Recipients='']
-           * @param string [Subject='']
-           * @param boolean [ShowMessage=true]
-           */
   def SendForReview(
     Recipients: java.lang.String,
     Subject: java.lang.String,

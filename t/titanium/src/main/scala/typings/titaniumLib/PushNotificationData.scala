@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * A simple object representing a push notification.
- */
-
+  * A simple object representing a push notification.
+  */
 trait PushNotificationData extends js.Object {
   /**
   	 * The `userinfo` dictionary passed to the Apple Push Notification Service.

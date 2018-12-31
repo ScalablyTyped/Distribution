@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSAssetCollection extends js.Object {
   var _class: sketchappLib.sketchappLibStrings.assetCollection
   var colors: js.Array[_]

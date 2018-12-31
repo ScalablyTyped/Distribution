@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MomentObjectOutput extends js.Object {
   /* Day of the month */
   var date: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TiersListResponse extends js.Object {
   /** List of tiers. */
   var items: js.UndefOr[js.Array[Tier]] = js.undefined

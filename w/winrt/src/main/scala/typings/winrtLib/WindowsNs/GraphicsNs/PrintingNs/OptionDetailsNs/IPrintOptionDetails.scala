@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPrintOptionDetails extends js.Object {
   var errorText: java.lang.String
   var optionId: java.lang.String

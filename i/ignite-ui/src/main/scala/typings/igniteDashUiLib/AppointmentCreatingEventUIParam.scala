@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AppointmentCreatingEventUIParam extends js.Object {
   /**
   	 * Gets a reference to the appointment which is going to be created.

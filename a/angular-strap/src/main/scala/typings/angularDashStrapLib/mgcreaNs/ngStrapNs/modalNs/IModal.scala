@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IModal extends js.Object {
   @JSName("$promise")
   var $promise: angularLib.angularMod.angularNs.IPromise[scala.Unit]

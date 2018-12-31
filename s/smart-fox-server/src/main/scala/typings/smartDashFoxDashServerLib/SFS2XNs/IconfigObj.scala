@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IconfigObj extends js.Object {
   /** @type {boolean} Indicates whether the client-server messages console debug should be enabled or not. */
   var debug: js.UndefOr[scala.Boolean] = js.undefined

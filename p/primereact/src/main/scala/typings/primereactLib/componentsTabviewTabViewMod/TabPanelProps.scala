@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TabPanelProps extends js.Object {
   var contentClassName: js.UndefOr[java.lang.String] = js.undefined
   var contentStyle: js.UndefOr[js.Any] = js.undefined

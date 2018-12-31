@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JobPlacement extends js.Object {
   /** Required. The name of the cluster where the job will be submitted. */
   var clusterName: js.UndefOr[java.lang.String] = js.undefined

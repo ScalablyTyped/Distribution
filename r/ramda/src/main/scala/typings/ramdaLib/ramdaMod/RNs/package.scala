@@ -18,6 +18,6 @@ package object RNs {
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
   type Ord = scala.Double | java.lang.String | scala.Boolean | stdLib.Date
   type Path = js.Array[scala.Double | java.lang.String]
-  type Pred = js.Function1[/* repeated */js.Any, scala.Boolean]
-  type SafePred[T] = js.Function1[/* repeated */T, scala.Boolean]
+  type Pred = js.Function1[/* repeated */ js.Any, scala.Boolean]
+  type SafePred[T] = js.Function1[/* repeated */ T, scala.Boolean]
 }

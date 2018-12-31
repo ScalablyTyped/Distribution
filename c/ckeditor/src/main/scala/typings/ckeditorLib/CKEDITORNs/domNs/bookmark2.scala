@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait bookmark2 extends js.Object {
   var collapsed: scala.Boolean
   var end: js.Array[scala.Double]

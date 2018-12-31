@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 			 * A set of notification actions to associate with a notification.
 			 */
-
 trait UserNotificationCategory
   extends titaniumLib.TitaniumNs.Proxy {
   /**

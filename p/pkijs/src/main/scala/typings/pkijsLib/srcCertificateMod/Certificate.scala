@@ -22,50 +22,35 @@ trait Certificate extends js.Object {
   var tbs: stdLib.ArrayBuffer = js.native
   var version: scala.Double = js.native
   /**
-           * Create ASN.1 schema for existing values of TBS part for the certificate
-           */
+    * Create ASN.1 schema for existing values of TBS part for the certificate
+    */
   def encodeTBS(): asn1jsLib.asn1jsMod.Sequence = js.native
   def fromSchema(schema: js.Any): scala.Unit = js.native
   /**
-           * Get SHA-1 hash value for subject public key
-           */
+    * Get SHA-1 hash value for subject public key
+    */
   def getKeyHash(): js.Thenable[stdLib.ArrayBuffer] = js.native
   /**
-           * Importing public key for current certificate
-           */
+    * Importing public key for current certificate
+    */
   def getPublicKey(): js.Thenable[stdLib.CryptoKey] = js.native
-  /**
-           * Importing public key for current certificate
-           */
   def getPublicKey(parameters: js.Any): js.Thenable[stdLib.CryptoKey] = js.native
   /**
-           * Make a signature for current value from TBS section
-           * 
-           * @param {CryptoKey} privateKey Private key for "subjectPublicKeyInfo" structure
-           * @param {string} [hashAlgorithm="SHA-1"] Hashing algorithm
-           */
+    * Make a signature for current value from TBS section
+    * 
+    * @param {CryptoKey} privateKey Private key for "subjectPublicKeyInfo" structure
+    * @param {string} [hashAlgorithm="SHA-1"] Hashing algorithm
+    */
   def sign(privateKey: stdLib.CryptoKey): js.Thenable[stdLib.ArrayBuffer] = js.native
-  /**
-           * Make a signature for current value from TBS section
-           * 
-           * @param {CryptoKey} privateKey Private key for "subjectPublicKeyInfo" structure
-           * @param {string} [hashAlgorithm="SHA-1"] Hashing algorithm
-           */
   def sign(privateKey: stdLib.CryptoKey, hashAlgorithm: java.lang.String): js.Thenable[stdLib.ArrayBuffer] = js.native
   def toJSON(): js.Any = js.native
   /**
-           * Convert current object to asn1js object and set correct values
-           * 
-           * @param {boolean} [encodeFlag]
-           * @returns {*}
-           */
+    * Convert current object to asn1js object and set correct values
+    * 
+    * @param {boolean} [encodeFlag]
+    * @returns {*}
+    */
   def toSchema(): js.Any = js.native
-  /**
-           * Convert current object to asn1js object and set correct values
-           * 
-           * @param {boolean} [encodeFlag]
-           * @returns {*}
-           */
   def toSchema(encodeFlag: scala.Boolean): js.Any = js.native
   def verify(): js.Thenable[scala.Boolean] = js.native
   def verify(issuerCertificate: Certificate): js.Thenable[scala.Boolean] = js.native

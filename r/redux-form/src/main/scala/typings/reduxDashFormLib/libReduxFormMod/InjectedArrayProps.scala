@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InjectedArrayProps extends js.Object {
   def insert(field: java.lang.String, index: scala.Double, value: js.Any): scala.Unit
   def move(field: java.lang.String, from: scala.Double, to: scala.Double): scala.Unit

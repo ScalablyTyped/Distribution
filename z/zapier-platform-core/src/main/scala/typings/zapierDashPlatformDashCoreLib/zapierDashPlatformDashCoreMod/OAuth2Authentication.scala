@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OAuth2Authentication[InputData] extends js.Object {
   var connectionLabel: java.lang.String
   var oauth2Config: zapierDashPlatformDashCoreLib.Anon_Scope[InputData]

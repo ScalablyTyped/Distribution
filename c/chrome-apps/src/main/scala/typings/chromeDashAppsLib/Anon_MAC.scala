@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MAC extends js.Object {
   var ANDROID: chromeDashAppsLib.chromeDashAppsLibStrings.android
   var CROS: chromeDashAppsLib.chromeDashAppsLibStrings.cros
@@ -14,7 +13,6 @@ trait Anon_MAC extends js.Object {
   var OPENBSD: chromeDashAppsLib.chromeDashAppsLibStrings.openbsd
   var WIN: chromeDashAppsLib.chromeDashAppsLibStrings.win
 }
-
 
 trait Anon_Mac extends js.Object {
   var chromeos: js.UndefOr[java.lang.String] = js.undefined

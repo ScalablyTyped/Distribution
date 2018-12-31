@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiskStorageOptions extends js.Object {
   /** A function used to determine within which folder the uploaded files should be stored. Defaults to the system's default temporary directory. */
   var destination: js.UndefOr[

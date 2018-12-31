@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SummariesCalculatingEventUIParam extends js.Object {
   /**
   	 * Gets the igGridSummaries widget object.

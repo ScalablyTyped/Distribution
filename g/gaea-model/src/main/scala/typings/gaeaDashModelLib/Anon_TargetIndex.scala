@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TargetIndex extends js.Object {
   // 当前拖拽组件的 mapUniqueKey
   var mapUniqueKey: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Tasks extends js.Object {
   /** The actual list of tasks returned as a result of the lease operation. */
   var items: js.UndefOr[js.Array[Task]] = js.undefined

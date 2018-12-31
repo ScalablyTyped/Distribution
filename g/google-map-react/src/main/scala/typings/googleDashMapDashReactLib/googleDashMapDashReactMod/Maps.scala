@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Maps extends js.Object {
   var Animation: js.Any
   var ControlPosition: js.Any

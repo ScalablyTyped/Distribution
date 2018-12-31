@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AbstractSelectProps extends js.Object {
   var allowClear: js.UndefOr[scala.Boolean] = js.undefined
   var autoClearSearchValue: js.UndefOr[scala.Boolean] = js.undefined
@@ -44,8 +43,8 @@ trait AbstractSelectProps extends js.Object {
   var showAction: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var showArrow: js.UndefOr[scala.Boolean] = js.undefined
   var showSearch: js.UndefOr[scala.Boolean] = js.undefined
-  var size: /* import warning: Failed type conversion: TsTypeLookup(TsTypeTuple(List(TsTypeLiteral(TsLiteralString(default)), TsTypeLiteral(TsLiteralString(large)), TsTypeLiteral(TsLiteralString(small)))),Left(TsIdentSimple(number))) */js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeTuple(List(TsTypeLiteral(TsLiteralString(default)), TsTypeLiteral(TsLiteralString(large)), TsTypeLiteral(TsLiteralString(small)))),Left(TsIdentSimple(number))) */js.Any
+  var size: /* import warning: ImportType.apply Failed type conversion: ['default', 'large', 'small'][number] */ js.UndefOr[
+    /* import warning: ImportType.apply Failed type conversion: ['default', 'large', 'small'][number] */ js.Any
   ] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var tabIndex: js.UndefOr[scala.Double] = js.undefined

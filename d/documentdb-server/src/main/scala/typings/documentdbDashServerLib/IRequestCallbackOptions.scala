@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Information associated with the response to the operation. */
-
 trait IRequestCallbackOptions extends js.Object {
   /** Comma delimited string containing the collection's current quota metrics (storage, number of stored procedure, triggers and UDFs) after completion of the operation. */
   var currentCollectionSizeInMB: java.lang.String

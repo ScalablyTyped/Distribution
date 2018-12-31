@@ -14,9 +14,9 @@ object chromeNsMembers extends js.Object {
   // CLASSES //
   /////////////
   /**
-       * New Chrome Event
-       * @constructor
-       */
+    * New Chrome Event
+    * @constructor
+    */
   val Event: chromeDashAppsLib.Anon_T = js.native
   // #endregion
   // #region placeholders
@@ -24,10 +24,10 @@ object chromeNsMembers extends js.Object {
   // PLACEHOLDERS //
   //////////////////
   /**
-       * Chrome experimental apis may be using this namespace.
-       * Please consult the official documentation.
-       * @see[Documentation]{@link https://developer.chrome.com/apps/experimental}
-       */
+    * Chrome experimental apis may be using this namespace.
+    * Please consult the official documentation.
+    * @see[Documentation]{@link https://developer.chrome.com/apps/experimental}
+    */
   val experimental: js.Any = js.native
   // #endregion
   // #region chrome.serial
@@ -35,12 +35,12 @@ object chromeNsMembers extends js.Object {
   // Serial //
   ////////////
   /**
-       * Use the chrome.socket API to send and receive data over the network using TCP and UDP connections.
-       * @deprecated Note: Starting with Chrome 33,
-       *  this API is deprecated in favor of the
-       *  sockets.udp, sockets.tcp and sockets.tcpServer APIs.
-       * @since Chrome 23
-       */
+    * Use the chrome.socket API to send and receive data over the network using TCP and UDP connections.
+    * @deprecated Note: Starting with Chrome 33,
+    *  this API is deprecated in favor of the
+    *  sockets.udp, sockets.tcp and sockets.tcpServer APIs.
+    * @since Chrome 23
+    */
   val serial: deprecated = js.native
   // #endregion
   // #region methods
@@ -48,17 +48,17 @@ object chromeNsMembers extends js.Object {
   // METHODS //
   /////////////
   /**
-       * Different page speed and load metrics
-       */
+    * Different page speed and load metrics
+    */
   def csi(): chromeDashAppsLib.Anon_Tran = js.native
   /**
-       * @deprecated Deprecated in Chrome 64.
-       * chrome.loadTimes() is a non-standard API that exposes loading metrics
-       * and network information to developers in order to help them better
-       * understand their site's performance in the real world.
-       * @see[Use this instead]{@link https://www.w3.org/TR/navigation-timing-2/}
-       * @see[Deprecation article]{@link https://developers.google.com/web/updates/2017/12/chrome-loadtimes-deprecated}
-       */
+    * @deprecated Deprecated in Chrome 64.
+    * chrome.loadTimes() is a non-standard API that exposes loading metrics
+    * and network information to developers in order to help them better
+    * understand their site's performance in the real world.
+    * @see[Use this instead]{@link https://www.w3.org/TR/navigation-timing-2/}
+    * @see[Deprecation article]{@link https://developers.google.com/web/updates/2017/12/chrome-loadtimes-deprecated}
+    */
   def loadTimes(): deprecatedButUsable = js.native
 }
 

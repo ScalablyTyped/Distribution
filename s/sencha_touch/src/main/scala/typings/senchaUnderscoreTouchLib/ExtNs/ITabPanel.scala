@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITabPanel extends IContainer {
   /** [Method] Updates this container with the new active item
   		* @param tabBar Object

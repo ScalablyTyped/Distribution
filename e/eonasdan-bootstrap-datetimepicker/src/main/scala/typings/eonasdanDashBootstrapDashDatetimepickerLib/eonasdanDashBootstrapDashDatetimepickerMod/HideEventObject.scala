@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait HideEventObject
   extends jqueryLib.JQueryEventObject {
   /**
-       * The currently set date. Type: moment object (clone)
-       */
+    * The currently set date. Type: moment object (clone)
+    */
   var date: momentLib.momentMod.momentNs.Moment = js.native
 }
 

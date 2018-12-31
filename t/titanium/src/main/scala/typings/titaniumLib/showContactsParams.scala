@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Dictionary of options for the <Titanium.Contacts.showContacts> method.
- */
-
+  * Dictionary of options for the <Titanium.Contacts.showContacts> method.
+  */
 trait showContactsParams extends js.Object {
   /**
   	 * Determines whether to animate the show/hide of the contacts picker (iPhone, iPad only.)

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // truncate
-
 trait TruncateOptions extends js.Object {
   /** The maximum string length. */
   var length: js.UndefOr[scala.Double] = js.undefined

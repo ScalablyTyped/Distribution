@@ -11,9 +11,9 @@ import scala.scalajs.js.annotation._
 // Diagnostics //
 /////////////////
 /**
-     * @requires(CrOS) Only Chrome OS. Crashes app on Windows.
-     * @requires Permissions: 'diagnostics'
-     */
+  * @requires(CrOS) Only Chrome OS. Crashes app on Windows.
+  * @requires Permissions: 'diagnostics'
+  */
 @JSGlobal("chrome.diagnostics")
 @js.native
 object diagnosticsNs extends js.Object {

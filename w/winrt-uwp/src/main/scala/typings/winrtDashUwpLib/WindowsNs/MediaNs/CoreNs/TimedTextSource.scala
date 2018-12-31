@@ -35,33 +35,33 @@ abstract class TimedTextSource () extends js.Object {
 @js.native
 object TimedTextSource extends js.Object {
   /**
-                   * Creates a new instance of TimedTextSource from the provided stream.
-                   * @param stream The stream from which the timed text source is created.
-                   * @return The new timed text source.
-                   */
+    * Creates a new instance of TimedTextSource from the provided stream.
+    * @param stream The stream from which the timed text source is created.
+    * @return The new timed text source.
+    */
   def createFromStream(stream: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream): winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextSource = js.native
   /**
-                   * Creates a new instance of TimedTextSource with the specified default language from the provided stream.
-                   * @param stream The stream from which the timed text source is created.
-                   * @param defaultLanguage A string specifying the default language for the timed text source.
-                   * @return The new timed text source.
-                   */
+    * Creates a new instance of TimedTextSource with the specified default language from the provided stream.
+    * @param stream The stream from which the timed text source is created.
+    * @param defaultLanguage A string specifying the default language for the timed text source.
+    * @return The new timed text source.
+    */
   def createFromStream(
     stream: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream,
     defaultLanguage: java.lang.String
   ): winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextSource = js.native
   /**
-                   * Creates a new instance of TimedTextSource from the provided URI.
-                   * @param uri The URI from which the timed text source is created.
-                   * @return The new timed text source.
-                   */
+    * Creates a new instance of TimedTextSource from the provided URI.
+    * @param uri The URI from which the timed text source is created.
+    * @return The new timed text source.
+    */
   def createFromUri(uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri): winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextSource = js.native
   /**
-                   * Creates a new instance of TimedTextSource with the specified default language from the provided URI.
-                   * @param uri The URI from which the timed text source is created.
-                   * @param defaultLanguage A string specifying the default language for the timed text source.
-                   * @return The new timed text source.
-                   */
+    * Creates a new instance of TimedTextSource with the specified default language from the provided URI.
+    * @param uri The URI from which the timed text source is created.
+    * @param defaultLanguage A string specifying the default language for the timed text source.
+    * @return The new timed text source.
+    */
   def createFromUri(uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri, defaultLanguage: java.lang.String): winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedTextSource = js.native
 }
 

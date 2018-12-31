@@ -10,16 +10,16 @@ import scala.scalajs.js.annotation._
 object permissionsNsMembers extends js.Object {
   /* permissions events */
   /**
-       * Fired when the extension acquires new permissions.
-       * @deprecated Unsupported on Firefox at this time.
-       */
+    * Fired when the extension acquires new permissions.
+    * @deprecated Unsupported on Firefox at this time.
+    */
   val onAdded: js.UndefOr[
     firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* permissions */ Permissions, scala.Unit]]
   ] = js.native
   /**
-       * Fired when permissions are removed from the extension.
-       * @deprecated Unsupported on Firefox at this time.
-       */
+    * Fired when permissions are removed from the extension.
+    * @deprecated Unsupported on Firefox at this time.
+    */
   val onRemoved: js.UndefOr[
     firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* permissions */ Permissions, scala.Unit]]
   ] = js.native
@@ -31,10 +31,10 @@ object permissionsNsMembers extends js.Object {
   /** Relinquish the given permissions. */
   def remove(permissions: Permissions): js.Promise[scala.Unit] = js.native
   /**
-       * Request the given permissions.
-       *
-       * Not allowed in: Devtools pages
-       */
+    * Request the given permissions.
+    *
+    * Not allowed in: Devtools pages
+    */
   def request(permissions: Permissions): js.Promise[scala.Boolean] = js.native
 }
 

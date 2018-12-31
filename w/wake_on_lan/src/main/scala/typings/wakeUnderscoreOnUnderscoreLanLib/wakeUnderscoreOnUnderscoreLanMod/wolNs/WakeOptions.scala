@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WakeOptions extends js.Object {
   /**
   		 * The ip address to which the packet is send  (default: 255.255.255.255)

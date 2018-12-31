@@ -49,19 +49,7 @@ trait IgGridFeatureChooserPopoverMethods extends js.Object {
   	 * @param content The string to set for the popover to show.
   	 */
   def show(): scala.Unit = js.native
-  /**
-  	 * Shows the popover for the specified target
-  	 *
-  	 * @param trg The element to show popover for.
-  	 * @param content The string to set for the popover to show.
-  	 */
   def show(trg: stdLib.Element): scala.Unit = js.native
-  /**
-  	 * Shows the popover for the specified target
-  	 *
-  	 * @param trg The element to show popover for.
-  	 * @param content The string to set for the popover to show.
-  	 */
   def show(trg: stdLib.Element, content: java.lang.String): scala.Unit = js.native
   /**
   	 * Gets the popover current target

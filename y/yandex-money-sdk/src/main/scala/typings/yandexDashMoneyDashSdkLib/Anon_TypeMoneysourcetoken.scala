@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TypeMoneysourcetoken extends js.Object {
   var money_source_token: js.UndefOr[java.lang.String] = js.undefined
   var pan_fragment: js.UndefOr[java.lang.String] = js.undefined

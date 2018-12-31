@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MoonConfig extends js.Object {
   var delimiters: js.Array[java.lang.String]
   var prefix: java.lang.String

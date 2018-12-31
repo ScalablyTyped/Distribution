@@ -44,7 +44,7 @@ object swigModMembers extends js.Object {
   def setExtension(name: java.lang.String, `object`: js.Any): scala.Unit = js.native
   def setFilter(
     name: java.lang.String,
-    method: js.Function2[/* input */ js.Any, /* repeated */js.Any, java.lang.String]
+    method: js.Function2[/* input */ js.Any, /* repeated */ js.Any, java.lang.String]
   ): scala.Unit = js.native
   def setTag(
     name: java.lang.String,

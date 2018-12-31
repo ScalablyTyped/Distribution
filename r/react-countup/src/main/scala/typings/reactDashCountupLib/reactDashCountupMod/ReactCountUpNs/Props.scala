@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Props extends js.Object {
   var children: js.UndefOr[js.Function1[/* data */ RenderProps, reactLib.reactMod.ReactNs.ReactElement[_]]] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined

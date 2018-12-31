@@ -88,11 +88,6 @@ trait ConvasContext extends js.Object {
   		 * @param [reserve] 本次绘制是否接着上一次绘制，即 reserve 参数为 false 时则在本次调用 drawCanvas绘制之前 native 层应先清空画布再继续绘制；若 reserver 参数为true 时，则保留当前画布上的内容，本次调用drawCanvas绘制的内容覆盖在上面，默认 false
   		 */
   def draw(): scala.Unit = js.native
-  /**
-  		 * 将之前在绘图上下文中的描述（路径、变形、样式）画到 canvas 中。
-  		 * 绘图上下文需要由 my.createCanvasContext(canvasId) 来创建。
-  		 * @param [reserve] 本次绘制是否接着上一次绘制，即 reserve 参数为 false 时则在本次调用 drawCanvas绘制之前 native 层应先清空画布再继续绘制；若 reserver 参数为true 时，则保留当前画布上的内容，本次调用drawCanvas绘制的内容覆盖在上面，默认 false
-  		 */
   def draw(reserve: scala.Boolean): scala.Unit = js.native
   /**
   		 * 绘制图像，图像保持原始尺寸。
@@ -206,11 +201,6 @@ trait ConvasContext extends js.Object {
   		 * @param alpha 透明度，0 表示完全透明，1 表示不透明 范围 [0, 1]
   		 */
   def setGlobalAlpha(alpha: scala.Double): scala.Unit = js.native
-  /**
-  		 * 设置线条的端点样式。
-  		 *
-  		 * @param lineCap 线条的结束端点样式
-  		 */
   @JSName("setLineCap")
   def setLineCap_butt(lineCap: aliDashAppLib.aliDashAppLibStrings.butt): scala.Unit = js.native
   /**
@@ -220,11 +210,6 @@ trait ConvasContext extends js.Object {
   		 */
   @JSName("setLineCap")
   def setLineCap_round(lineCap: aliDashAppLib.aliDashAppLibStrings.round): scala.Unit = js.native
-  /**
-  		 * 设置线条的端点样式。
-  		 *
-  		 * @param lineCap 线条的结束端点样式
-  		 */
   @JSName("setLineCap")
   def setLineCap_square(lineCap: aliDashAppLib.aliDashAppLibStrings.square): scala.Unit = js.native
   /**
@@ -233,18 +218,8 @@ trait ConvasContext extends js.Object {
   		 * @param segments 一组描述交替绘制线段和间距（坐标空间单位）长度的数字。 如果数组元素的数量是奇数， 数组的元素会被复制并重复。例如， [5, 15, 25] 会变成 [5, 15, 25, 5, 15, 25]。
   		 */
   def setLineDash(segments: js.Array[scala.Double]): scala.Unit = js.native
-  /**
-  		 * 设置线条的交点样式。
-  		 *
-  		 * @param lineJoin 线条的结束交点样式
-  		 */
   @JSName("setLineJoin")
   def setLineJoin_bevel(lineJoin: aliDashAppLib.aliDashAppLibStrings.bevel): scala.Unit = js.native
-  /**
-  		 * 设置线条的交点样式。
-  		 *
-  		 * @param lineJoin 线条的结束交点样式
-  		 */
   @JSName("setLineJoin")
   def setLineJoin_miter(lineJoin: aliDashAppLib.aliDashAppLibStrings.miter): scala.Unit = js.native
   /**
@@ -280,16 +255,8 @@ trait ConvasContext extends js.Object {
   		 * 如果没有设置 strokeStyle，则默认颜色为 black。
   		 */
   def setStrokeStyle(color: Color): scala.Unit = js.native
-  /**
-  		 * textAlign 是 Canvas 2D API 描述绘制文本时，文本的对齐方式的属性。注意，该对齐是基于
-  		 * CanvasRenderingContext2D.fillText 方法的x的值。所以如果 textAlign="center"，那么该文本将画在 x-50%*width
-  		 */
   @JSName("setTextAlign")
   def setTextAlign_center(textAlign: aliDashAppLib.aliDashAppLibStrings.center): scala.Unit = js.native
-  /**
-  		 * textAlign 是 Canvas 2D API 描述绘制文本时，文本的对齐方式的属性。注意，该对齐是基于
-  		 * CanvasRenderingContext2D.fillText 方法的x的值。所以如果 textAlign="center"，那么该文本将画在 x-50%*width
-  		 */
   @JSName("setTextAlign")
   def setTextAlign_end(textAlign: aliDashAppLib.aliDashAppLibStrings.end): scala.Unit = js.native
   /**
@@ -298,41 +265,18 @@ trait ConvasContext extends js.Object {
   		 */
   @JSName("setTextAlign")
   def setTextAlign_left(textAlign: aliDashAppLib.aliDashAppLibStrings.left): scala.Unit = js.native
-  /**
-  		 * textAlign 是 Canvas 2D API 描述绘制文本时，文本的对齐方式的属性。注意，该对齐是基于
-  		 * CanvasRenderingContext2D.fillText 方法的x的值。所以如果 textAlign="center"，那么该文本将画在 x-50%*width
-  		 */
   @JSName("setTextAlign")
   def setTextAlign_right(textAlign: aliDashAppLib.aliDashAppLibStrings.right): scala.Unit = js.native
-  /**
-  		 * textAlign 是 Canvas 2D API 描述绘制文本时，文本的对齐方式的属性。注意，该对齐是基于
-  		 * CanvasRenderingContext2D.fillText 方法的x的值。所以如果 textAlign="center"，那么该文本将画在 x-50%*width
-  		 */
   @JSName("setTextAlign")
   def setTextAlign_start(textAlign: aliDashAppLib.aliDashAppLibStrings.start): scala.Unit = js.native
-  /**
-  		 * textBaseline 是 Canvas 2D API 描述绘制文本时，当前文本基线的属性。
-  		 */
   @JSName("setTextBaseline")
   def setTextBaseline_alphabetic(textBaseline: aliDashAppLib.aliDashAppLibStrings.alphabetic): scala.Unit = js.native
-  /**
-  		 * textBaseline 是 Canvas 2D API 描述绘制文本时，当前文本基线的属性。
-  		 */
   @JSName("setTextBaseline")
   def setTextBaseline_bottom(textBaseline: aliDashAppLib.aliDashAppLibStrings.bottom): scala.Unit = js.native
-  /**
-  		 * textBaseline 是 Canvas 2D API 描述绘制文本时，当前文本基线的属性。
-  		 */
   @JSName("setTextBaseline")
   def setTextBaseline_hanging(textBaseline: aliDashAppLib.aliDashAppLibStrings.hanging): scala.Unit = js.native
-  /**
-  		 * textBaseline 是 Canvas 2D API 描述绘制文本时，当前文本基线的属性。
-  		 */
   @JSName("setTextBaseline")
   def setTextBaseline_ideographic(textBaseline: aliDashAppLib.aliDashAppLibStrings.ideographic): scala.Unit = js.native
-  /**
-  		 * textBaseline 是 Canvas 2D API 描述绘制文本时，当前文本基线的属性。
-  		 */
   @JSName("setTextBaseline")
   def setTextBaseline_middle(textBaseline: aliDashAppLib.aliDashAppLibStrings.middle): scala.Unit = js.native
   /**
@@ -376,9 +320,6 @@ trait ConvasContext extends js.Object {
   		 * 把当前画布的内容导出生成图片，并返回文件路径。
   		 */
   def toTempFilePath(): scala.Unit = js.native
-  /**
-  		 * 把当前画布的内容导出生成图片，并返回文件路径。
-  		 */
   def toTempFilePath(options: stdLib.Partial[ToTempFilePathOptions]): scala.Unit = js.native
   /**
   		 * 使用矩阵多次叠加当前变换的方法，矩阵由方法的参数进行描述。你可以缩放、旋转、移动和倾斜上下文。

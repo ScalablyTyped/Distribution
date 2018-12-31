@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_REPEATABLEREAD extends js.Object {
   var READ_COMMITTED: IIsolationLevel
   var READ_UNCOMMITTED: IIsolationLevel

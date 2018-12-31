@@ -9,39 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 object typesLibConnectModMembers extends js.Object {
   /**
-   * connect - connect to an MQTT broker.
-   *
-   * @param {String} [brokerUrl] - url of the broker, optional
-   * @param {Object} opts - see MqttClient#constructor
-   */
+    * connect - connect to an MQTT broker.
+    *
+    * @param {String} [brokerUrl] - url of the broker, optional
+    * @param {Object} opts - see MqttClient#constructor
+    */
   def connect(): mqttLib.typesLibClientMod.MqttClient = js.native
-  /**
-   * connect - connect to an MQTT broker.
-   *
-   * @param {String} [brokerUrl] - url of the broker, optional
-   * @param {Object} opts - see MqttClient#constructor
-   */
   def connect(brokerUrl: java.lang.String): mqttLib.typesLibClientMod.MqttClient = js.native
-  /**
-   * connect - connect to an MQTT broker.
-   *
-   * @param {String} [brokerUrl] - url of the broker, optional
-   * @param {Object} opts - see MqttClient#constructor
-   */
   def connect(brokerUrl: java.lang.String, opts: mqttLib.typesLibClientDashOptionsMod.IClientOptions): mqttLib.typesLibClientMod.MqttClient = js.native
-  /**
-   * connect - connect to an MQTT broker.
-   *
-   * @param {String} [brokerUrl] - url of the broker, optional
-   * @param {Object} opts - see MqttClient#constructor
-   */
   def connect(brokerUrl: js.Any): mqttLib.typesLibClientMod.MqttClient = js.native
-  /**
-   * connect - connect to an MQTT broker.
-   *
-   * @param {String} [brokerUrl] - url of the broker, optional
-   * @param {Object} opts - see MqttClient#constructor
-   */
   def connect(brokerUrl: js.Any, opts: mqttLib.typesLibClientDashOptionsMod.IClientOptions): mqttLib.typesLibClientMod.MqttClient = js.native
 }
 

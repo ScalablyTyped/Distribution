@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITranslatableGroup
   extends senchaUnderscoreTouchLib.ExtNs.utilNs.translatableNs.IAbstract {
   /** [Method] Returns the value of activeIndex

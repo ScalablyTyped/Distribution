@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /*----------------------
 		CompounObserver
 	----------------------*/
-
 @js.native
 trait CompoundObserver_static
   extends /**

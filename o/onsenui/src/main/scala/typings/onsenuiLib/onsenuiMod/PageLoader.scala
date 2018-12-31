@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-   * @description PageLoader class constructor
-   */
+  * @description PageLoader class constructor
+  */
 @JSImport("onsenui", "PageLoader")
 @js.native
 class PageLoader protected ()

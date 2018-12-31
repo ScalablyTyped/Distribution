@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPlaceResult extends js.Object {
   /** The geocoded address of the place result. */
   var address: bingmapsLib.MicrosoftNs.MapsNs.IAddress

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RegistryResult extends Result {
   @JSName("fetchSpec")
   var fetchSpec_RegistryResult: java.lang.String

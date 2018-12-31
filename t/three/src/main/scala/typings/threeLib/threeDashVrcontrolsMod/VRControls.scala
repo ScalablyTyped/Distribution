@@ -13,8 +13,8 @@ class VRControls protected () extends js.Object {
   var scale: scala.Double = js.native
   def setVRDisplay(display: stdLib.VRDisplay): scala.Unit = js.native
   /**
-       * Update VR Instance Tracking
-       */
+    * Update VR Instance Tracking
+    */
   def update(): scala.Unit = js.native
   def zeroSensor(): scala.Unit = js.native
 }

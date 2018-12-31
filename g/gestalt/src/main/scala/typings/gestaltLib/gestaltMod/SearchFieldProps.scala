@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SearchFieldProps extends js.Object {
   var accessibilityLabel: java.lang.String
   var id: java.lang.String

@@ -12,15 +12,15 @@ sealed trait PivotLinkFormat extends js.Object
 @js.native
 object PivotLinkFormat extends js.Object {
   /**
-       * Display Pivot Links as links
-       */
+    * Display Pivot Links as links
+    */
   @js.native
   sealed trait links
     extends officeDashUiDashFabricDashReactLib.libComponentsPivotPivotDotTypesMod.PivotLinkFormat
   
   /**
-       * Display Pivot Links as Tabs
-       */
+    * Display Pivot Links as Tabs
+    */
   @js.native
   sealed trait tabs
     extends officeDashUiDashFabricDashReactLib.libComponentsPivotPivotDotTypesMod.PivotLinkFormat

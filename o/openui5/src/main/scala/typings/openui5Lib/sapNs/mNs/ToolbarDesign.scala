@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ToolbarDesign extends js.Object
 
 /**
-     * Types of the Toolbar Design.
-    */
+  * Types of the Toolbar Design.
+  */
 @JSGlobal("sap.m.ToolbarDesign")
 @js.native
 object ToolbarDesign extends js.Object {

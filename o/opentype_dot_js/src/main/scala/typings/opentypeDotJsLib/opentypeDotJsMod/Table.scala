@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Table
   extends /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var fields: js.Array[Field]

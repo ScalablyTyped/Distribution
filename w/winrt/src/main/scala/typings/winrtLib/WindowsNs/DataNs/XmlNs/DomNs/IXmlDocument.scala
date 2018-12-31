@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IXmlDocument extends IXmlNode {
   var doctype: XmlDocumentType
   var documentElement: XmlElement

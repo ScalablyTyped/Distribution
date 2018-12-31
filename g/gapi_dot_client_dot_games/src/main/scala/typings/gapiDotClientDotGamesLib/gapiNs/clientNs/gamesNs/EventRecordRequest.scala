@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventRecordRequest extends js.Object {
   /** The current time when this update was sent, in milliseconds, since 1970 UTC (Unix Epoch). */
   var currentTimeMillis: js.UndefOr[java.lang.String] = js.undefined

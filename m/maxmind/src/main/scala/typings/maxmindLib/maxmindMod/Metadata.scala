@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Metadata extends js.Object {
   val binaryFormatMajorVersion: scala.Double
   val binaryFormatMinorVersion: scala.Double

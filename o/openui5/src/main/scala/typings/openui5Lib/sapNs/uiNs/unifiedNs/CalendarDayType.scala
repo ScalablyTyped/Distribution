@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait CalendarDayType extends js.Object
 
 /**
-       * Type of a calendar day used for visualization.
-      */
+  * Type of a calendar day used for visualization.
+  */
 @JSGlobal("sap.ui.unified.CalendarDayType")
 @js.native
 object CalendarDayType extends js.Object {

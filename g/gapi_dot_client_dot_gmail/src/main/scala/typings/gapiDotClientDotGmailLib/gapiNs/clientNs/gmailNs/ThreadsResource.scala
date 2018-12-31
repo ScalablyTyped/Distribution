@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThreadsResource extends js.Object {
   /** Immediately and permanently deletes the specified thread. This operation cannot be undone. Prefer threads.trash instead. */
   def delete(request: gapiDotClientDotGmailLib.Anon_PrettyPrintQuotaUserKeyUserIp): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreativeFieldValuesResource extends js.Object {
   /** Deletes an existing creative field value. */
   def delete(request: gapiDotClientDotDfareportingLib.Anon_ProfileIdPrettyPrintCreativeFieldIdQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

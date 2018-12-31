@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Viewport[TLength] extends js.Object {
   var OOrientation: js.UndefOr[csstypeLib.ViewportOrientationProperty] = js.undefined
   var height: js.UndefOr[csstypeLib.ViewportHeightProperty[TLength]] = js.undefined

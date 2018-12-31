@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DisplayName extends js.Object {
   var amount: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var billingAgreementDescription: js.UndefOr[java.lang.String] = js.undefined

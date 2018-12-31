@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SOAPResponseV2 extends js.Object {
   def getBody(): java.lang.String
   def getErrorCode(): scala.Double

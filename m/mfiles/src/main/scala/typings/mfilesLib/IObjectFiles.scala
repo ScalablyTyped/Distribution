@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IObjectFiles extends js.Object {
   val Count: scala.Double
   def GetObjectFileByNameForFileSystem(NameForFileSystem: java.lang.String): IObjectFile

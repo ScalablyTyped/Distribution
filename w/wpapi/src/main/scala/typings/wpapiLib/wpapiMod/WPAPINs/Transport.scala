@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Transport extends js.Object {
   var delete: js.UndefOr[TransportFunction] = js.undefined
   var get: js.UndefOr[TransportFunction] = js.undefined

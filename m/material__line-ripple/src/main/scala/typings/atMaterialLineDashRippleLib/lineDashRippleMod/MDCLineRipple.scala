@@ -13,17 +13,17 @@ class MDCLineRipple ()
       atMaterialLineDashRippleLib.foundationMod.default
     ] {
   /**
-       * Activates the line ripple
-       */
+    * Activates the line ripple
+    */
   def activate(): scala.Unit = js.native
   /**
-       * Deactivates the line ripple
-       */
+    * Deactivates the line ripple
+    */
   def deactivate(): scala.Unit = js.native
   /**
-       * Sets the transform origin given a user's click location. The `rippleCenter` is the
-       * x-coordinate of the middle of the ripple.
-       */
+    * Sets the transform origin given a user's click location. The `rippleCenter` is the
+    * x-coordinate of the middle of the ripple.
+    */
   def setRippleCenter(xCoordinate: scala.Double): scala.Unit = js.native
 }
 

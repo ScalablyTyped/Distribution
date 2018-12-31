@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridFSBucketOptions extends js.Object {
   var ReadPreference: js.UndefOr[js.Object] = js.undefined
   var bucketName: js.UndefOr[java.lang.String] = js.undefined

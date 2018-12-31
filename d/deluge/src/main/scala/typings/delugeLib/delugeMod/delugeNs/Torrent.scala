@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Torrent extends js.Object {
   var distributed_copies: scala.Double
   var download_payload_rate: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestErrorEventUIParam extends js.Object {
   /**
   	 * Gets the processed error message sent by the server

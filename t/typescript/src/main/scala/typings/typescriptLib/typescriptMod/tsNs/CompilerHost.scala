@@ -41,8 +41,8 @@ trait CompilerHost extends ModuleResolutionHost {
     ]
   ] = js.native
   /**
-           * This method is a companion for 'resolveModuleNames' and is used to resolve 'types' references to actual type declaration files
-           */
+    * This method is a companion for 'resolveModuleNames' and is used to resolve 'types' references to actual type declaration files
+    */
   var resolveTypeReferenceDirectives: js.UndefOr[
     js.Function3[
       /* typeReferenceDirectiveNames */ js.Array[java.lang.String], 

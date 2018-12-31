@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SliceClickedEventUIParam extends js.Object {
   /**
   	 * Used to obtain index of clicked slice.

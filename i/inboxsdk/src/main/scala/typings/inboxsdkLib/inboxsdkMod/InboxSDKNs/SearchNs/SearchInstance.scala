@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SearchInstance extends js.Object {
   def registerSearchQueryRewriter(rewriter: SearchQueryRewriter): scala.Unit
   def registerSearchSuggestionsProvider(

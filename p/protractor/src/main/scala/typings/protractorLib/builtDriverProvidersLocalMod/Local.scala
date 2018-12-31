@@ -12,9 +12,9 @@ class Local protected ()
   def this(config: protractorLib.builtConfigMod.Config) = this()
   var `server_`: js.Any = js.native
   /**
-       * Helper to locate the default jar path if none is provided by the user.
-       * @private
-       */
+    * Helper to locate the default jar path if none is provided by the user.
+    * @private
+    */
   def `addDefaultBinaryLocs_`(): scala.Unit = js.native
 }
 

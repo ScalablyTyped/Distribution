@@ -37,7 +37,6 @@ object ErrorNs extends js.Object {
     var url: java.lang.String = js.native
   }
   
-  
   trait BacklogErrorMessage extends js.Object {
     var code: scala.Double
     var errorInfo: java.lang.String

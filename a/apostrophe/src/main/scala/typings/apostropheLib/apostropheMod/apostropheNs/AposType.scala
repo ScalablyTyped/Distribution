@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AposType extends js.Object {
   var bless: js.UndefOr[js.Function2[/* req */ js.Any, /* field */ js.Any, scala.Unit]] = js.undefined
   var converters: apostropheLib.Anon_Form

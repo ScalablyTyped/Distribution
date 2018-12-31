@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PicklistString extends js.Object {
   var boolean: scala.Double
   var dateTime: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BootstrapPolarChartEventMap extends ControlEventMap {
   var argumentAxisClick: BootstrapChartElementClickEventArgs
   var disposing: BootstrapChartEventArgsBase

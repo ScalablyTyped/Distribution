@@ -10,8 +10,8 @@ trait OnsBackButtonElement
   extends stdLib.HTMLElement {
   var onClick: js.Any = js.native
   /**
-       * @Options Options object.
-       */
+    * @Options Options object.
+    */
   var options: js.UndefOr[onsenuiLib.onsenuiMod.BackButtonOptions] = js.native
 }
 

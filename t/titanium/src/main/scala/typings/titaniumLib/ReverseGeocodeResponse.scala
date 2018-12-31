@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Simple object returned in the callback from the
- * [reverseGeocoder](Titanium.Geolocation.reverseGeocoder) method.
- */
-
+  * Simple object returned in the callback from the
+  * [reverseGeocoder](Titanium.Geolocation.reverseGeocoder) method.
+  */
 trait ReverseGeocodeResponse extends js.Object {
   /**
   	 * Error code. Returns 0 if `success` is `true`.

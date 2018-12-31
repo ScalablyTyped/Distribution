@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListrTask extends js.Object {
   var enabled: js.UndefOr[
     js.Function2[

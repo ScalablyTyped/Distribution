@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnswerCallbackQueryOptions extends js.Object {
   var cache_time: js.UndefOr[scala.Double] = js.undefined
   var callback_query_id: java.lang.String

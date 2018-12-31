@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMapView[K, V] extends IIterable[IKeyValuePair[K, V]] {
   var size: scala.Double
   def hasKey(key: K): scala.Boolean

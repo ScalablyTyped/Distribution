@@ -10,17 +10,14 @@ trait Server
   extends nodeLib.eventsMod.EventEmitter {
   def addListener(event: java.lang.String, listener: js.Function0[scala.Unit]): this.type = js.native
   /**
-     * A function that closes the inner webserver and stops listening on given port
-     */
+    * A function that closes the inner webserver and stops listening on given port
+    */
   def close(): scala.Unit = js.native
-  /**
-     * A function that closes the inner webserver and stops listening on given port
-     */
   def close(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
-     * A function that wraps the object in a webserver, for your convenience
-     * @param port - Port to listen on
-     */
+    * A function that wraps the object in a webserver, for your convenience
+    * @param port - Port to listen on
+    */
   def listen(port: scala.Double): Server = js.native
   def on(event: java.lang.String, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("on")
@@ -102,29 +99,17 @@ trait Server
   def once(event: java.lang.String, listener: js.Function0[scala.Unit]): this.type = js.native
   def removeListener(event: java.lang.String, listener: js.Function0[scala.Unit]): this.type = js.native
   /**
-     * Used for proxying regular HTTP(S) requests
-     * @param req - Client request.
-     * @param res - Client response.
-     * @param options - Additionnal options.
-     */
+    * Used for proxying regular HTTP(S) requests
+    * @param req - Client request.
+    * @param res - Client response.
+    * @param options - Additionnal options.
+    */
   def web(req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse): scala.Unit = js.native
-  /**
-     * Used for proxying regular HTTP(S) requests
-     * @param req - Client request.
-     * @param res - Client response.
-     * @param options - Additionnal options.
-     */
   def web(
     req: nodeLib.httpMod.IncomingMessage,
     res: nodeLib.httpMod.ServerResponse,
     options: httpDashProxyLib.httpDashProxyMod.ServerNs.ServerOptions
   ): scala.Unit = js.native
-  /**
-     * Used for proxying regular HTTP(S) requests
-     * @param req - Client request.
-     * @param res - Client response.
-     * @param options - Additionnal options.
-     */
   def web(
     req: nodeLib.httpMod.IncomingMessage,
     res: nodeLib.httpMod.ServerResponse,
@@ -132,20 +117,13 @@ trait Server
     callback: httpDashProxyLib.ErrorCallback
   ): scala.Unit = js.native
   /**
-     * Used for proxying regular HTTP(S) requests
-     * @param req - Client request.
-     * @param socket - Client socket.
-     * @param head - Client head.
-     * @param options - Additionnal options.
-     */
+    * Used for proxying regular HTTP(S) requests
+    * @param req - Client request.
+    * @param socket - Client socket.
+    * @param head - Client head.
+    * @param options - Additionnal options.
+    */
   def ws(req: nodeLib.httpMod.IncomingMessage, socket: js.Any, head: js.Any): scala.Unit = js.native
-  /**
-     * Used for proxying regular HTTP(S) requests
-     * @param req - Client request.
-     * @param socket - Client socket.
-     * @param head - Client head.
-     * @param options - Additionnal options.
-     */
   def ws(
     req: nodeLib.httpMod.IncomingMessage,
     socket: js.Any,

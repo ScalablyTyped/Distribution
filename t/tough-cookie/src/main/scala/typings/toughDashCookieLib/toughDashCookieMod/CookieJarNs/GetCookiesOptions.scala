@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetCookiesOptions extends js.Object {
   var allPoints: js.UndefOr[scala.Boolean] = js.undefined
   var date: js.UndefOr[stdLib.Date] = js.undefined

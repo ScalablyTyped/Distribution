@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait SideContentFallDown extends js.Object
 
 /**
-       * Types of the DynamicSideContent FallDown options
-      */
+  * Types of the DynamicSideContent FallDown options
+  */
 @JSGlobal("sap.ui.layout.SideContentFallDown")
 @js.native
 object SideContentFallDown extends js.Object {

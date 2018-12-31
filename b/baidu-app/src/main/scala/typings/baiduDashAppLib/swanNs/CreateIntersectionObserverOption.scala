@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * swan节点布局相交状态
 	 */
-
 trait CreateIntersectionObserverOption extends js.Object {
   var initialRatio: js.UndefOr[scala.Double] = js.undefined
   var selectAll: js.UndefOr[scala.Boolean] = js.undefined

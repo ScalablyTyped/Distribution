@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CSSRule extends js.Object {
   val CHARSET_RULE: scala.Double
   val FONT_FACE_RULE: scala.Double

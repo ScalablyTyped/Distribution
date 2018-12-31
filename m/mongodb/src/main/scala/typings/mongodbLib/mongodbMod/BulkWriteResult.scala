@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BulkWriteResult extends js.Object {
   var nInserted: scala.Double
   var nModified: scala.Double

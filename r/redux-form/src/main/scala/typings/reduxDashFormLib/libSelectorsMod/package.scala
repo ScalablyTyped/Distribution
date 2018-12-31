@@ -27,7 +27,7 @@ package object libSelectorsMod {
   type FormOrFieldsBooleanSelector[State] = js.Function2[
     /* formName */ java.lang.String, 
     /* getFormState */ js.UndefOr[reduxDashFormLib.libReduxFormMod.GetFormState], 
-    js.Function2[/* state */ State, /* repeated */java.lang.String, scala.Boolean]
+    js.Function2[/* state */ State, /* repeated */ java.lang.String, scala.Boolean]
   ]
   type NamesSelector[State] = js.Function1[
     /* getFormState */ js.UndefOr[reduxDashFormLib.libReduxFormMod.GetFormState], 

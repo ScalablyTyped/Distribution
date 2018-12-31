@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GalleryImage extends GalleryItem {
   var animated: scala.Boolean
   var bandwidth: scala.Double

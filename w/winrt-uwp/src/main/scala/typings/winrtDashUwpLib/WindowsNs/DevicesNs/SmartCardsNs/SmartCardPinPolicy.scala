@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a set of personal identification number (PIN) rules on a Trusted Platform Module (TPM) virtual smart card. */
 @JSGlobal("Windows.Devices.SmartCards.SmartCardPinPolicy")
 @js.native
+/** Creates and initializes a new instance of a set of personal identification number (PIN) rules on a Trusted Platform Module (TPM) virtual smart card. */
 class SmartCardPinPolicy () extends js.Object {
   /** Gets or sets whether number characters are allowed for a personal identification number (PIN) on a Trusted Platform Module (TPM) virtual smart card. */
   var digits: SmartCardPinCharacterPolicyOption = js.native

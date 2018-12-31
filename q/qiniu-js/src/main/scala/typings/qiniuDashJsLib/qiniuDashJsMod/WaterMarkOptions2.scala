@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WaterMarkOptions2 extends js.Object {
    // 水印文字，mode = 2 时 **必需**
   var dissolve: scala.Double

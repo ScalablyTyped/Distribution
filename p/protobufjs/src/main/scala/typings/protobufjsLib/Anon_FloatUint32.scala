@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FloatUint32 extends js.Object {
   var bool: scala.Double
   var double: scala.Double

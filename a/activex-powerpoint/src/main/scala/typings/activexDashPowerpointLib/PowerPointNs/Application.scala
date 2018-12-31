@@ -77,22 +77,13 @@ class Application protected () extends js.Object {
   def FileDialog(Type: activexDashOfficeLib.OfficeNs.MsoFileDialogType): activexDashOfficeLib.OfficeNs.FileDialog = js.native
   /** @param boolean [Persist=false] */
   def GetOptionFlag(Option: scala.Double): scala.Boolean = js.native
-  /** @param boolean [Persist=false] */
   def GetOptionFlag(Option: scala.Double, Persist: scala.Boolean): scala.Boolean = js.native
   /**
-           * @param string [HelpFile='vbapp10.chm']
-           * @param number [ContextID=0]
-           */
+    * @param string [HelpFile='vbapp10.chm']
+    * @param number [ContextID=0]
+    */
   def Help(): scala.Unit = js.native
-  /**
-           * @param string [HelpFile='vbapp10.chm']
-           * @param number [ContextID=0]
-           */
   def Help(HelpFile: java.lang.String): scala.Unit = js.native
-  /**
-           * @param string [HelpFile='vbapp10.chm']
-           * @param number [ContextID=0]
-           */
   def Help(HelpFile: java.lang.String, ContextID: scala.Double): scala.Unit = js.native
   def LaunchPublishSlidesDialog(SlideLibraryUrl: java.lang.String): scala.Unit = js.native
   def LaunchSendToPPTDialog(SlideUrls: js.Any): scala.Unit = js.native
@@ -101,7 +92,6 @@ class Application protected () extends js.Object {
   def Run(MacroName: java.lang.String, safeArrayOfParams: js.Any*): js.Any = js.native
   /** @param boolean [Persist=false] */
   def SetOptionFlag(Option: scala.Double, State: scala.Boolean): scala.Unit = js.native
-  /** @param boolean [Persist=false] */
   def SetOptionFlag(Option: scala.Double, State: scala.Boolean, Persist: scala.Boolean): scala.Unit = js.native
   def SetPerfMarker(Marker: scala.Double): scala.Unit = js.native
   def SmartArtColors(Index: java.lang.String): activexDashOfficeLib.OfficeNs.SmartArtColor = js.native

@@ -6,21 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * The referenced rule within the ruleset
-     */
-
+  * The referenced rule within the ruleset
+  */
 trait TestScriptRulesetRule extends BackboneElement {
   /**
-           * Contains extended information for property 'ruleId'.
-           */
+    * Contains extended information for property 'ruleId'.
+    */
   var _ruleId: js.UndefOr[Element] = js.undefined
   /**
-           * Ruleset rule parameter template
-           */
+    * Ruleset rule parameter template
+    */
   var param: js.UndefOr[js.Array[TestScriptRulesetRuleParam]] = js.undefined
   /**
-           * Id of referenced rule within the ruleset
-           */
+    * Id of referenced rule within the ruleset
+    */
   var ruleId: id
 }
 

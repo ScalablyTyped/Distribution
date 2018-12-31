@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GenericOptions extends js.Object {
   var animateOnInit: js.UndefOr[scala.Boolean] = js.undefined
   var animatedValue: js.UndefOr[scala.Boolean] = js.undefined

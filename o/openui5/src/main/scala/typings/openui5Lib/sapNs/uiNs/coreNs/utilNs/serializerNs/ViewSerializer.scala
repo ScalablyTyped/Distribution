@@ -10,58 +10,18 @@ import scala.scalajs.js.annotation._
 class ViewSerializer protected ()
   extends openui5Lib.sapNs.uiNs.baseNs.EventProvider {
   /**
-               * View serializer class. Iterates over all controls and serializes all found views by calling the
-               * corresponding view type serializer.
-               * @param oRootControl the root control to serialize
-               * @param oWindow the window object. Default is the window object the instance of the serializer is
-               * running in.
-               * @param sDefaultXmlNamespace defines the default xml namespace
-              */
+    * View serializer class. Iterates over all controls and serializes all found views by calling the
+    * corresponding view type serializer.
+    * @param oRootControl the root control to serialize
+    * @param oWindow the window object. Default is the window object the instance of the serializer is
+    * running in.
+    * @param sDefaultXmlNamespace defines the default xml namespace
+    */
   def this(oRootControl: openui5Lib.sapNs.uiNs.coreNs.Control) = this()
-  /**
-               * View serializer class. Iterates over all controls and serializes all found views by calling the
-               * corresponding view type serializer.
-               * @param oRootControl the root control to serialize
-               * @param oWindow the window object. Default is the window object the instance of the serializer is
-               * running in.
-               * @param sDefaultXmlNamespace defines the default xml namespace
-              */
   def this(oRootControl: openui5Lib.sapNs.uiNs.coreNs.UIArea) = this()
-  /**
-               * View serializer class. Iterates over all controls and serializes all found views by calling the
-               * corresponding view type serializer.
-               * @param oRootControl the root control to serialize
-               * @param oWindow the window object. Default is the window object the instance of the serializer is
-               * running in.
-               * @param sDefaultXmlNamespace defines the default xml namespace
-              */
   def this(oRootControl: openui5Lib.sapNs.uiNs.coreNs.Control, oWindow: js.Any) = this()
-  /**
-               * View serializer class. Iterates over all controls and serializes all found views by calling the
-               * corresponding view type serializer.
-               * @param oRootControl the root control to serialize
-               * @param oWindow the window object. Default is the window object the instance of the serializer is
-               * running in.
-               * @param sDefaultXmlNamespace defines the default xml namespace
-              */
   def this(oRootControl: openui5Lib.sapNs.uiNs.coreNs.UIArea, oWindow: js.Any) = this()
-  /**
-               * View serializer class. Iterates over all controls and serializes all found views by calling the
-               * corresponding view type serializer.
-               * @param oRootControl the root control to serialize
-               * @param oWindow the window object. Default is the window object the instance of the serializer is
-               * running in.
-               * @param sDefaultXmlNamespace defines the default xml namespace
-              */
   def this(oRootControl: openui5Lib.sapNs.uiNs.coreNs.Control, oWindow: js.Any, sDefaultXmlNamespace: java.lang.String) = this()
-  /**
-               * View serializer class. Iterates over all controls and serializes all found views by calling the
-               * corresponding view type serializer.
-               * @param oRootControl the root control to serialize
-               * @param oWindow the window object. Default is the window object the instance of the serializer is
-               * running in.
-               * @param sDefaultXmlNamespace defines the default xml namespace
-              */
   def this(oRootControl: openui5Lib.sapNs.uiNs.coreNs.UIArea, oWindow: js.Any, sDefaultXmlNamespace: java.lang.String) = this()
 }
 

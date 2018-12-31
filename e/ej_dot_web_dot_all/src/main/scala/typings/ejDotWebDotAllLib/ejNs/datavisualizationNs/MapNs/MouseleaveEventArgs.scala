@@ -5,10 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MouseleaveEventArgs extends js.Object {
   /** Returns hovered map shape object.
-               */
+    */
   var originalEvent: js.UndefOr[js.Any] = js.undefined
 }
 

@@ -12,19 +12,14 @@ trait Assertion
      with TypeComparison {
   // Basename
   def basename(): Assertion = js.native
-  // Basename
   def basename(path: java.lang.String): Assertion = js.native
-  // Basename
   def basename(path: java.lang.String, name: java.lang.String): Assertion = js.native
-  // Basename
   def basename(path: java.lang.String, name: java.lang.String, msg: java.lang.String): Assertion = js.native
   // file().with.content(str)
   def content(data: js.Any): Assertion = js.native
-  // file().with.content(str)
   def content(data: js.Any, msg: java.lang.String): Assertion = js.native
   // directory().with.contents([...])
   def contents(array: js.Array[_]): Assertion = js.native
-  // directory().with.contents([...])
   def contents(array: js.Array[_], msg: java.lang.String): Assertion = js.native
   def directoryContent(path: java.lang.String, array: js.Array[_]): Assertion = js.native
   def directoryContent(path: java.lang.String, array: js.Array[_], msg: java.lang.String): Assertion = js.native
@@ -38,7 +33,6 @@ trait Assertion
   def directoryDeepSubDirs(path: java.lang.String, array: js.Array[_], msg: java.lang.String): Assertion = js.native
   // directory().and.equal(otherPath)
   def directoryEqual(path: java.lang.String, otherPath: java.lang.String): Assertion = js.native
-  // directory().and.equal(otherPath)
   def directoryEqual(path: java.lang.String, otherPath: java.lang.String, msg: java.lang.String): Assertion = js.native
   def directoryFiles(path: java.lang.String, array: js.Array[_]): Assertion = js.native
   def directoryFiles(path: java.lang.String, array: js.Array[_], msg: java.lang.String): Assertion = js.native
@@ -52,51 +46,39 @@ trait Assertion
   def directorySubDirs(path: java.lang.String, array: js.Array[_], msg: java.lang.String): Assertion = js.native
   // Dirname
   def dirname(name: java.lang.String): Assertion = js.native
-  // Dirname
   def dirname(name: java.lang.String, msg: java.lang.String): Assertion = js.native
   // Еxtname
   def extname(path: java.lang.String): Assertion = js.native
-  // Еxtname
   def extname(path: java.lang.String, name: java.lang.String): Assertion = js.native
-  // Еxtname
   def extname(path: java.lang.String, name: java.lang.String, msg: java.lang.String): Assertion = js.native
   def fileContent(path: java.lang.String, data: js.Any): Assertion = js.native
   def fileContent(path: java.lang.String, data: js.Any, msg: java.lang.String): Assertion = js.native
   // file().with.contents.that.match(/xyz/)
   def fileContentMatch(path: java.lang.String, regExp: stdLib.RegExp): Assertion = js.native
-  // file().with.contents.that.match(/xyz/)
   def fileContentMatch(path: java.lang.String, regExp: stdLib.RegExp, msg: java.lang.String): Assertion = js.native
   // file().and.equal(otherPath)
   def fileEqual(path: java.lang.String, otherPath: java.lang.String): Assertion = js.native
-  // file().and.equal(otherPath)
   def fileEqual(path: java.lang.String, otherPath: java.lang.String, msg: java.lang.String): Assertion = js.native
   // directory().with.files([...])
   def files(array: js.Array[_]): Assertion = js.native
-  // directory().with.files([...])
   def files(array: js.Array[_], msg: java.lang.String): Assertion = js.native
   // Directory
   def isDirectory(path: java.lang.String): Assertion = js.native
-  // Directory
   def isDirectory(path: java.lang.String, msg: java.lang.String): Assertion = js.native
   // directory().and.empty
   def isEmptyDirectory(path: java.lang.String): Assertion = js.native
-  // directory().and.empty
   def isEmptyDirectory(path: java.lang.String, msg: java.lang.String): Assertion = js.native
   // file().and.empty
   def isEmptyFile(path: java.lang.String): Assertion = js.native
-  // file().and.empty
   def isEmptyFile(path: java.lang.String, msg: java.lang.String): Assertion = js.native
   // file
   def isFile(path: java.lang.String): Assertion = js.native
-  // file
   def isFile(path: java.lang.String, msg: java.lang.String): Assertion = js.native
   // file().with.json
   def jsonFile(path: java.lang.String): Assertion = js.native
-  // file().with.json
   def jsonFile(path: java.lang.String, msg: java.lang.String): Assertion = js.native
   // file().using.json.schema(obj)
   def jsonSchemaFile(path: java.lang.String, schema: js.Any): Assertion = js.native
-  // file().using.json.schema(obj)
   def jsonSchemaFile(path: java.lang.String, schema: js.Any, msg: java.lang.String): Assertion = js.native
   def notBasename(path: java.lang.String, name: java.lang.String): Assertion = js.native
   def notBasename(path: java.lang.String, name: java.lang.String, msg: java.lang.String): Assertion = js.native
@@ -148,12 +130,10 @@ trait Assertion
   def notPathExists(path: java.lang.String, msg: java.lang.String): Assertion = js.native
   // Path
   def pathExists(path: java.lang.String): Assertion = js.native
-  // Path
   def pathExists(path: java.lang.String, msg: java.lang.String): Assertion = js.native
   def schema(obj: js.Object): Assertion = js.native
   // directory().with.subDirs([...])
   def subDirs(array: js.Array[_]): Assertion = js.native
-  // directory().with.subDirs([...])
   def subDirs(array: js.Array[_], msg: java.lang.String): Assertion = js.native
 }
 

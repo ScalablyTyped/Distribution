@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BucketOptions extends js.Object {
   /** The explicit buckets. */
   var explicitBuckets: js.UndefOr[Explicit] = js.undefined

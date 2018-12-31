@@ -27,9 +27,9 @@ abstract class Compass () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[Compass, CompassReadingChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Gets the current compass reading.
-                   * @return The current compass reading.
-                   */
+    * Gets the current compass reading.
+    * @return The current compass reading.
+    */
   def getCurrentReading(): CompassReading = js.native
   /** Occurs each time the compass reports a new sensor reading. */
   def onreadingchanged(ev: CompassReadingChangedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[Compass]): scala.Unit = js.native
@@ -46,9 +46,9 @@ abstract class Compass () extends js.Object {
 @js.native
 object Compass extends js.Object {
   /**
-                   * Returns the default compass.
-                   * @return The default compass or null if no integrated compasses are found.
-                   */
+    * Returns the default compass.
+    * @return The default compass or null if no integrated compasses are found.
+    */
   def getDefault(): winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.Compass = js.native
 }
 

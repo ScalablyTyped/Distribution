@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BootstrapGridViewEventMap extends BootstrapGridBaseEventMap {
   var batchEditChangesCanceling: GridViewBatchEditChangesCancelingEventArgs
   var batchEditChangesSaving: GridViewBatchEditChangesSavingEventArgs

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait AddSeriesEvent
   extends stdLib.Event {
   /**
-           * The series options that was passed to the addSeries method.
-           */
+    * The series options that was passed to the addSeries method.
+    */
   var options: ChartOptions = js.native
 }
 

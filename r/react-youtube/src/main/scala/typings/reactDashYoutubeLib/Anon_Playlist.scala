@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Playlist extends js.Object {
   var autoplay: js.UndefOr[
     reactDashYoutubeLib.reactDashYoutubeLibNumbers.`0` | reactDashYoutubeLib.reactDashYoutubeLibNumbers.`1`

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Comment extends js.Object {
   /** A region of the document represented as a JSON string. See anchor documentation for details on how to define and interpret anchor properties. */
   var anchor: js.UndefOr[java.lang.String] = js.undefined
@@ -26,9 +25,9 @@ trait Comment extends js.Object {
   /** The last time the comment or any of its replies was modified (RFC 3339 date-time). */
   var modifiedTime: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The file content to which the comment refers, typically within the anchor region. For a text file, for example, this would be the text at the location
-               * of the comment.
-               */
+    * The file content to which the comment refers, typically within the anchor region. For a text file, for example, this would be the text at the location
+    * of the comment.
+    */
   var quotedFileContent: js.UndefOr[gapiDotClientDotDriveLib.Anon_Value] = js.undefined
   /** The full list of replies to the comment in chronological order. */
   var replies: js.UndefOr[js.Array[Reply]] = js.undefined

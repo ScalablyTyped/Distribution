@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExtensionDraft extends js.Object {
   var assets: js.Array[ExtensionDraftAsset]
   var createdDate: stdLib.Date

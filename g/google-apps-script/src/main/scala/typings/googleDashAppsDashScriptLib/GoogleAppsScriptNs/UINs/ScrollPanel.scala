@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScrollPanel extends js.Object {
   def add(widget: Widget): ScrollPanel
   def addScrollHandler(handler: Handler): ScrollPanel

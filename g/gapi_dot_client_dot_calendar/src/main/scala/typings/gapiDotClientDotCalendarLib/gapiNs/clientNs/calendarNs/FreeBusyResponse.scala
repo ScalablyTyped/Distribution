@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FreeBusyResponse extends js.Object {
   /** List of free/busy information for calendars. */
   var calendars: js.UndefOr[stdLib.Record[java.lang.String, FreeBusyCalendar]] = js.undefined

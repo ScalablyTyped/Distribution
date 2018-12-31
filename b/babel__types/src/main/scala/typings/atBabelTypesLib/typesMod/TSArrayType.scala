@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TSArrayType extends BaseNode {
   var elementType: TSType
   @JSName("type")

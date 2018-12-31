@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SecretInfo extends js.Object {
   var CreatedAt: java.lang.String
   var ID: java.lang.String

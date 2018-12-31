@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChangeLog extends js.Object {
   /** Account ID of the modified object. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined
@@ -30,9 +29,9 @@ trait ChangeLog extends js.Object {
   /** Subaccount ID of the modified object. */
   var subaccountId: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Transaction ID of this change log. When a single API call results in many changes, each change will have a separate ID in the change log but will share
-               * the same transactionId.
-               */
+    * Transaction ID of this change log. When a single API call results in many changes, each change will have a separate ID in the change log but will share
+    * the same transactionId.
+    */
   var transactionId: js.UndefOr[java.lang.String] = js.undefined
   /** ID of the user who modified the object. */
   var userProfileId: js.UndefOr[java.lang.String] = js.undefined

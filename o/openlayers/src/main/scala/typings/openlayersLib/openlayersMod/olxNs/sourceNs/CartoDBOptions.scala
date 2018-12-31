@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CartoDBOptions extends js.Object {
   var account: java.lang.String
   var attributions: js.UndefOr[openlayersLib.openlayersMod.AttributionLike] = js.undefined

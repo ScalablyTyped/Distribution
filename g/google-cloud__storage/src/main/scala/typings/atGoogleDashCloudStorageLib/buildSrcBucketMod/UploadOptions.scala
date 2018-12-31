@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadOptions
   extends atGoogleDashCloudStorageLib.buildSrcFileMod.CreateWriteStreamOptions {
   var destination: js.UndefOr[java.lang.String | atGoogleDashCloudStorageLib.buildSrcFileMod.File] = js.undefined

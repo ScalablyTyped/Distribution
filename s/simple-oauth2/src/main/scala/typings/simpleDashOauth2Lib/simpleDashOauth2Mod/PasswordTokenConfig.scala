@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PasswordTokenConfig extends js.Object {
   /** A string that represents the registered password. */
   var password: java.lang.String

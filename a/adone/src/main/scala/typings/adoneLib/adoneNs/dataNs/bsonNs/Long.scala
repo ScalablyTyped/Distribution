@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * Represents BSON Long type
-             */
+  * Represents BSON Long type
+  */
 @JSGlobal("adone.data.bson.Long")
 @js.native
 class Long ()
@@ -20,8 +20,8 @@ class Long ()
 }
 
 /**
-             * Represents BSON Long type
-             */
+  * Represents BSON Long type
+  */
 @JSGlobal("adone.data.bson.Long")
 @js.native
 object Long extends js.Object {

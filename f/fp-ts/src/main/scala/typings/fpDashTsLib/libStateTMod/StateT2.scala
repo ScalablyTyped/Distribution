@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StateT2[M /* <: fpDashTsLib.libHKTMod.URIS2 */] extends js.Object {
   def ap[L, S, A, B](
     fab: js.Function1[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait XMLCreateOptions extends js.Object {
   var headless: js.UndefOr[scala.Boolean] = js.undefined
   var ignoreDecorators: js.UndefOr[scala.Boolean] = js.undefined

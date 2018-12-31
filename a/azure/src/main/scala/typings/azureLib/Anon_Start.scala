@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Start extends js.Object {
   var Expiry: stdLib.Date
   var Permission: js.UndefOr[java.lang.String] = js.undefined

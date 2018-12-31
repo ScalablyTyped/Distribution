@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CSSTransitionClassNames extends js.Object {
   var appear: js.UndefOr[java.lang.String] = js.undefined
   var appearActive: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Result extends js.Object {
   // Adding a pattern overrides existing pattern only if matches exactly.
   var add: js.UndefOr[scala.Boolean] = js.undefined

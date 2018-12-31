@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RawStatsDto extends js.Object {
   var assists: scala.Double
   var barracksKilled: scala.Double

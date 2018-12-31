@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait eventObject extends js.Object {
   var activeEnterModeChange: js.UndefOr[js.Function1[/* evt */ ckeditorLib.CKEDITORNs.eventInfo, scala.Unit]] = js.undefined
   var activeFilterChange: js.UndefOr[js.Function1[/* evt */ ckeditorLib.CKEDITORNs.eventInfo, scala.Unit]] = js.undefined

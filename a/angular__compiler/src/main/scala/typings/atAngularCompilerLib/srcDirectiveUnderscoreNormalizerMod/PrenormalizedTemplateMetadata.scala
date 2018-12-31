@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PrenormalizedTemplateMetadata extends js.Object {
   var animations: js.Array[_]
   var componentType: js.Any

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadControlUploadingProgressChangedEventArgs extends EventArgs {
   val currentFileContentLength: scala.Double
   val currentFileName: java.lang.String

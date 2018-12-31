@@ -11,9 +11,8 @@ import scala.scalajs.js.annotation._
 // see http://docs.angularjs.org/api/ng.$controllerProvider
 ///////////////////////////////////////////////////////////////////////////
 /**
-     * The minimal local definitions required by $controller(ctrl, locals) calls.
-     */
-
+  * The minimal local definitions required by $controller(ctrl, locals) calls.
+  */
 trait IControllerLocals extends js.Object {
   @JSName("$element")
   var $element: angularLib.JQuery

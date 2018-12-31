@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MultiLines extends js.Object {
   var loading: scala.Boolean
   var multiLines: scala.Boolean

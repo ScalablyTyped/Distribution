@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetFilesOptions extends js.Object {
   var autoPaginate: js.UndefOr[scala.Boolean] = js.undefined
   var delimiter: js.UndefOr[java.lang.String] = js.undefined

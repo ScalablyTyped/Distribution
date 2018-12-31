@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IImageOptions extends js.Object {
   var checkCRC: js.UndefOr[scala.Boolean] = js.undefined
   var deflateChunkSize: js.UndefOr[scala.Double] = js.undefined

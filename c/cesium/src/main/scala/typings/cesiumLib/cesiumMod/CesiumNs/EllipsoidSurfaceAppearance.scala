@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EllipsoidSurfaceAppearance extends Appearance {
   val aboveGround: scala.Boolean
   val faceForward: scala.Boolean

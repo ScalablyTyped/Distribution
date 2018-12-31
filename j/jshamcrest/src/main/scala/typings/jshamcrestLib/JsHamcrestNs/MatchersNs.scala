@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Defines all of the built-in matchers grouped into five categories.
-     */
+  * Defines all of the built-in matchers grouped into five categories.
+  */
 @JSGlobal("JsHamcrest.Matchers")
 @js.native
 object MatchersNs extends js.Object {

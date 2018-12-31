@@ -9,91 +9,81 @@ import scala.scalajs.js.annotation._
 trait ShouldSinonAssertion
   extends shouldLib.shouldMod.shouldNs.Assertion {
   /**
-           * Assert stub was called with given object as this always. So if you call stub several times
-           * all should be with the same object
-           */
+    * Assert stub was called with given object as this always. So if you call stub several times
+    * all should be with the same object
+    */
   def alwaysCalledOn(obj: js.Any): scala.Unit = js.native
   def alwaysCalledWith(args: js.Any*): scala.Unit = js.native
   /**
-           * Passes if the spy was always called with the provided arguments and no others.
-           */
+    * Passes if the spy was always called with the provided arguments and no others.
+    */
   def alwaysCalledWithExactly(args: js.Any*): scala.Unit = js.native
   /**
-           * Returns true if spy was always called with matching arguments (and possibly others).
-           */
+    * Returns true if spy was always called with matching arguments (and possibly others).
+    */
   def alwaysCalledWithMatch(args: js.Any*): scala.Unit = js.native
   def alwaysCalledWithNew(): scala.Unit = js.native
   /**
-           * Passes if the spy always threw the given exception. The exception can be a
-           * string denoting its type, or an actual object. If no argument is
-           * provided, the assertion passes if the spy ever threw any exception.
-           */
+    * Passes if the spy always threw the given exception. The exception can be a
+    * string denoting its type, or an actual object. If no argument is
+    * provided, the assertion passes if the spy ever threw any exception.
+    */
   def alwaysThrew(ex: java.lang.String): scala.Unit = js.native
-  /**
-           * Passes if the spy always threw the given exception. The exception can be a
-           * string denoting its type, or an actual object. If no argument is
-           * provided, the assertion passes if the spy ever threw any exception.
-           */
   def alwaysThrew(ex: stdLib.Error): scala.Unit = js.native
   /**
-           * Assert stub was called at exact number of times
-           */
+    * Assert stub was called at exact number of times
+    */
   def callCount(count: scala.Double): scala.Unit = js.native
   /**
-           * Assert stub was called at least once
-           */
+    * Assert stub was called at least once
+    */
   def called(): scala.Unit = js.native
   /**
-           * Assert stub was called with given object as this
-           */
+    * Assert stub was called with given object as this
+    */
   def calledOn(obj: js.Any): scala.Unit = js.native
   /**
-           * Assert stub was called at exactly once
-           */
+    * Assert stub was called at exactly once
+    */
   def calledOnce(): scala.Unit = js.native
   /**
-           * Assert stub was called at exactly thrice
-           */
+    * Assert stub was called at exactly thrice
+    */
   def calledThrice(): scala.Unit = js.native
   /**
-           * Assert stub was called at exactly twice
-           */
+    * Assert stub was called at exactly twice
+    */
   def calledTwice(): scala.Unit = js.native
   /**
-           * Asserts that stub was called with given arguments
-           */
+    * Asserts that stub was called with given arguments
+    */
   def calledWith(args: js.Any*): scala.Unit = js.native
   /**
-           * Returns true if call received provided arguments and no others.
-           */
+    * Returns true if call received provided arguments and no others.
+    */
   def calledWithExactly(args: js.Any*): scala.Unit = js.native
   /**
-           * Returns true if spy was called with matching arguments (and possibly others).
-           */
+    * Returns true if spy was called with matching arguments (and possibly others).
+    */
   def calledWithMatch(args: js.Any*): scala.Unit = js.native
   /**
-           * Asserts that stub was called with new
-           */
+    * Asserts that stub was called with new
+    */
   def calledWithNew(): scala.Unit = js.native
   /**
-           * Returns true if the spy/stub was never called with the provided arguments.
-           */
+    * Returns true if the spy/stub was never called with the provided arguments.
+    */
   def neverCalledWith(args: js.Any*): scala.Unit = js.native
   /**
-           * Returns true if the spy/stub was never called with matching arguments.
-           */
+    * Returns true if the spy/stub was never called with matching arguments.
+    */
   def neverCalledWithMatch(args: js.Any*): scala.Unit = js.native
   /**
-           * Passes if the spy threw the given exception. The exception can be a
-           * string denoting its type, or an actual object. If no argument is
-           * provided, the assertion passes if the spy ever threw any exception.
-           */
+    * Passes if the spy threw the given exception. The exception can be a
+    * string denoting its type, or an actual object. If no argument is
+    * provided, the assertion passes if the spy ever threw any exception.
+    */
   def threw(ex: java.lang.String): scala.Unit = js.native
-  /**
-           * Passes if the spy threw the given exception. The exception can be a
-           * string denoting its type, or an actual object. If no argument is
-           * provided, the assertion passes if the spy ever threw any exception.
-           */
   def threw(ex: stdLib.Error): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IdentitytoolkitRelyingpartySignOutUserRequest extends js.Object {
   /** Instance id token of the app. */
   var instanceId: js.UndefOr[java.lang.String] = js.undefined

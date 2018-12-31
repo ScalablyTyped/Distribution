@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICollapseState extends js.Object {
   /** The state the element is currently in. */
   var animationState: AnimationStates

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RoomModification extends js.Object {
   /** Uniquely identifies the type of this resource. Value is always the fixed string games#roomModification. */
   var kind: js.UndefOr[java.lang.String] = js.undefined

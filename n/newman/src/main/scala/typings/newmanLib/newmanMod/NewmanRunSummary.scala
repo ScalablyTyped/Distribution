@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NewmanRunSummary extends js.Object {
   var collection: js.Any
   var environment: js.Any

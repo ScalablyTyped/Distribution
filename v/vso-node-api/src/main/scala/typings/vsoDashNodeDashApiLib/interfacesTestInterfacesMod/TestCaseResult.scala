@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestCaseResult extends js.Object {
   var afnStripId: scala.Double
   var area: ShallowReference

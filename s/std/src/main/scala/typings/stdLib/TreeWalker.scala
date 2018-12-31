@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TreeWalker extends js.Object {
   var currentNode: Node
   val filter: NodeFilter | scala.Null

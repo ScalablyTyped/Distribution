@@ -34,11 +34,8 @@ class XMLHTTP60 protected () extends js.Object {
   def getResponseHeader(bstrHeader: java.lang.String): java.lang.String = js.native
   /** Open HTTP connection */
   def open(bstrMethod: java.lang.String, bstrUrl: java.lang.String): scala.Unit = js.native
-  /** Open HTTP connection */
   def open(bstrMethod: java.lang.String, bstrUrl: java.lang.String, varAsync: js.Any): scala.Unit = js.native
-  /** Open HTTP connection */
   def open(bstrMethod: java.lang.String, bstrUrl: java.lang.String, varAsync: js.Any, bstrUser: js.Any): scala.Unit = js.native
-  /** Open HTTP connection */
   def open(
     bstrMethod: java.lang.String,
     bstrUrl: java.lang.String,
@@ -48,7 +45,6 @@ class XMLHTTP60 protected () extends js.Object {
   ): scala.Unit = js.native
   /** Send HTTP request */
   def send(): scala.Unit = js.native
-  /** Send HTTP request */
   def send(varBody: js.Any): scala.Unit = js.native
   /** Add HTTP request header */
   def setRequestHeader(bstrHeader: java.lang.String, bstrValue: java.lang.String): scala.Unit = js.native

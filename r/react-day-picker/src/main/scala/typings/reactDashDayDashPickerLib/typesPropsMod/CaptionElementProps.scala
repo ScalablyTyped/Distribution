@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CaptionElementProps extends js.Object {
   var classNames: reactDashDayDashPickerLib.typesCommonMod.ClassNames
   var date: stdLib.Date

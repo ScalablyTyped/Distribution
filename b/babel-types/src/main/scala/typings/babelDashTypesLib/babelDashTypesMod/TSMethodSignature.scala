@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TSMethodSignature extends Node {
   var computed: scala.Boolean | scala.Null
   var key: Expression

@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetMeta extends js.Object {
   /** Attachments where index is attachmentId */
   var _attachments: js.UndefOr[Attachments] = js.undefined
   /**
-               * Conflicting leaf revisions.
-               *
-               * Only present if `GetOptions.conflicts` is `true`
-               */
+    * Conflicting leaf revisions.
+    *
+    * Only present if `GetOptions.conflicts` is `true`
+    */
   var _conflicts: js.UndefOr[js.Array[RevisionId]] = js.undefined
   var _rev: RevisionId
   /** Only present if `GetOptions.revs_info` is `true` */

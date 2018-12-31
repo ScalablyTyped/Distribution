@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SwitchProps
   extends reactDashMdLib.libSelectionControlsSelectionControlMod.BaseSelectionControlProps {
   var onChange: js.UndefOr[

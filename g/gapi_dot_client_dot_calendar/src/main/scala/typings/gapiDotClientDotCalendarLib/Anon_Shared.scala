@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Shared extends js.Object {
   /** Properties that are private to the copy of the event that appears on this calendar. */
   var `private`: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SlideProperties extends js.Object {
   // The object ID of the layout that this slide is based on. This property is
   // read-only.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Hit extends js.Object {
    // 违禁检测分，范围 0~1，数值从低到高代表风险程度的高低 。
   var hit: js.Array[java.lang.String]

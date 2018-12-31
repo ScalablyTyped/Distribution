@@ -18,9 +18,9 @@ package object underscoreManifestNs {
   /** Same as MatchPattern above, but excludes<all_urls></all_urls> */
   type MatchPatternRestricted = java.lang.String
   /**
-       * Mostly unrestricted match patterns for privileged add-ons. This should technically be rejected for unprivileged
-       * add-ons, but, reasons. The MatchPattern class will still refuse privileged schemes for those extensions.
-       */
+    * Mostly unrestricted match patterns for privileged add-ons. This should technically be rejected for unprivileged
+    * add-ons, but, reasons. The MatchPattern class will still refuse privileged schemes for those extensions.
+    */
   type MatchPatternUnestricted = java.lang.String
   /** Represents a native manifest file */
   type NativeManifest = firefoxDashWebextDashBrowserLib.Anon_NamePathDescription | firefoxDashWebextDashBrowserLib.Anon_TypeStorage

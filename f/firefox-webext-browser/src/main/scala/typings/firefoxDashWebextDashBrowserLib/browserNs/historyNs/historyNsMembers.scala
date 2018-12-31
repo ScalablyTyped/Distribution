@@ -13,28 +13,28 @@ object historyNsMembers extends js.Object {
     js.Function1[/* changed */ firefoxDashWebextDashBrowserLib.Anon_UrlTitle, scala.Unit]
   ] = js.native
   /**
-       * Fired when one or more URLs are removed from the history service. When all visits have been removed the URL is
-       * purged from history.
-       */
+    * Fired when one or more URLs are removed from the history service. When all visits have been removed the URL is
+    * purged from history.
+    */
   val onVisitRemoved: firefoxDashWebextDashBrowserLib.WebExtEvent[
     js.Function1[/* removed */ firefoxDashWebextDashBrowserLib.Anon_AllHistory, scala.Unit]
   ] = js.native
   /* history events */
   /**
-       * Fired when a URL is visited, providing the HistoryItem data for that URL. This event fires before the page has
-       * loaded.
-       */
+    * Fired when a URL is visited, providing the HistoryItem data for that URL. This event fires before the page has
+    * loaded.
+    */
   val onVisited: firefoxDashWebextDashBrowserLib.WebExtEvent[js.Function1[/* result */ HistoryItem, scala.Unit]] = js.native
   /**
-       * Adds a URL to the history with a default visitTime of the current time and a default transition type of "link".
-       */
+    * Adds a URL to the history with a default visitTime of the current time and a default transition type of "link".
+    */
   def addUrl(details: firefoxDashWebextDashBrowserLib.Anon_VisitTime): js.Promise[scala.Unit] = js.native
   /** Deletes all items from the history. */
   def deleteAll(): js.Promise[scala.Unit] = js.native
   /**
-       * Removes all items within the specified date range from the history. Pages will not be removed from the history
-       * unless all visits fall within the range.
-       */
+    * Removes all items within the specified date range from the history. Pages will not be removed from the history
+    * unless all visits fall within the range.
+    */
   def deleteRange(range: firefoxDashWebextDashBrowserLib.Anon_EndTime): js.Promise[scala.Unit] = js.native
   /** Removes all occurrences of the given URL from the history. */
   def deleteUrl(details: firefoxDashWebextDashBrowserLib.Anon_Url): js.Promise[scala.Unit] = js.native

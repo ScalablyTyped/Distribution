@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigationReplaceAction extends js.Object {
   var action: js.UndefOr[NavigationNavigateAction] = js.undefined
   var key: java.lang.String

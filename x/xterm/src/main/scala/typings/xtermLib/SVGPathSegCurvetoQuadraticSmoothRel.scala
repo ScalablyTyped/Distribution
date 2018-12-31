@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGPathSegCurvetoQuadraticSmoothRel extends SVGPathSeg {
   var x: scala.Double
   var y: scala.Double

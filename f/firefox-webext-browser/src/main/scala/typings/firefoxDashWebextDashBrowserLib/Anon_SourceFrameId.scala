@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SourceFrameId extends js.Object {
   /**
-           * The ID of the frame with sourceTabId in which the navigation is triggered. 0 indicates the main frame.
-           */
+    * The ID of the frame with sourceTabId in which the navigation is triggered. 0 indicates the main frame.
+    */
   var sourceFrameId: scala.Double
   /** The ID of the process runs the renderer for the source tab. */
   var sourceProcessId: scala.Double

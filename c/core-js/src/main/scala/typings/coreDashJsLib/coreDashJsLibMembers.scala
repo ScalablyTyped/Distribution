@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object coreDashJsLibMembers extends js.Object {
   /**
-   * Non-standard.
-   */
+    * Non-standard.
+    */
   var Dict: DictConstructor = js.native
   /**
-   * Non-standard.
-   */
+    * Non-standard.
+    */
   var log: Log = js.native
   @JSName("$for")
   def $for[T](iterable: nodeLib.Iterable[T]): $for[T] = js.native

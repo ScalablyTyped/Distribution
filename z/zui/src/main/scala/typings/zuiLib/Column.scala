@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Column extends js.Object {
   var colClass: js.UndefOr[java.lang.String] = js.undefined
   var flex: js.UndefOr[scala.Boolean] = js.undefined

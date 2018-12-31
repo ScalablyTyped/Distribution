@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IIndexedResourceCandidate extends js.Object {
   var metadata: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, java.lang.String]
   var qualifiers: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[IndexedResourceQualifier]

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object servicesNs extends js.Object {
   /**
-       * Notification Type
-       */
+    * Notification Type
+    */
   @js.native
   object NotificationType extends js.Object {
     val error: umbracoLib.umbracoNs.servicesNs.NotificationType.error with java.lang.String = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeyboardCommandOptions extends js.Object {
   var alt: scala.Boolean
   var command: java.lang.String

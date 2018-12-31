@@ -14,12 +14,9 @@ class Clone ()
 @js.native
 object Clone extends js.Object {
   /**
-       * Patch repository cloning to automatically coerce objects.
-       */
+    * Patch repository cloning to automatically coerce objects.
+    */
   def clone(url: java.lang.String, localPath: java.lang.String): js.Promise[nodegitLib.repositoryMod.Repository] = js.native
-  /**
-       * Patch repository cloning to automatically coerce objects.
-       */
   def clone(
     url: java.lang.String,
     localPath: java.lang.String,

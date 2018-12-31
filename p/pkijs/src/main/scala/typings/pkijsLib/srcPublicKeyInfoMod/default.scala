@@ -14,9 +14,9 @@ class default () extends PublicKeyInfo {
   /* CompleteClass */
   override var subjectPublicKey: asn1jsLib.asn1jsMod.BitString = js.native
   /**
-           * Convert JSON value into current object
-           * @param {JsonWebKey} json
-           */
+    * Convert JSON value into current object
+    * @param {JsonWebKey} json
+    */
   /* CompleteClass */
   override def fromJSON(json: stdLib.JsonWebKey): scala.Unit = js.native
   /* CompleteClass */

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILimitedCache
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Clear all the objects  */
@@ -17,7 +16,7 @@ trait ILimitedCache
   		* @param args Mixed... Arguments appended to feeder.
   		* @returns Object
   		*/
-  var get: js.UndefOr[js.Function2[/* id */ java.lang.String, /* repeated */js.Any, _]] = js.undefined
+  var get: js.UndefOr[js.Function2[/* id */ java.lang.String, /* repeated */ js.Any, _]] = js.undefined
   /** [Method] Returns the value of feeder
   		* @returns Function
   		*/

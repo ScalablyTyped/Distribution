@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RTCIceCandidate extends js.Object {
   val candidate: java.lang.String
   val component: RTCIceComponent | scala.Null

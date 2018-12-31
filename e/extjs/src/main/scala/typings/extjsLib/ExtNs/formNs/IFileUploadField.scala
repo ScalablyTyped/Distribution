@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFileUploadField
   extends extjsLib.ExtNs.formNs.fieldNs.ITrigger {
   /** [Property] (Ext.button.Button) */

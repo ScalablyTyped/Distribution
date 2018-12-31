@@ -12,7 +12,6 @@ object FacebookAdsNs extends js.Object {
   class BannerView ()
     extends reactLib.reactMod.Component[BannerViewProps, js.Object, js.Any]
   
-  
   trait BannerViewProps extends js.Object {
     var placementId: java.lang.String
     var `type`: AdType
@@ -30,8 +29,8 @@ object FacebookAdsNs extends js.Object {
   
   def withNativeAd(component: reactLib.reactMod.Component[expoLib.Anon_Subtitle, js.Object, _]): reactLib.reactMod.Component[expoLib.Anon_AdsManager, expoLib.Anon_Ad, _] = js.native
   /**
-       * Ad Settings
-       */
+    * Ad Settings
+    */
   @JSName("AdSettings")
   @js.native
   object AdSettingsNs extends js.Object {
@@ -46,8 +45,8 @@ object FacebookAdsNs extends js.Object {
   }
   
   /**
-       * Interstitial Ads
-       */
+    * Interstitial Ads
+    */
   @JSName("InterstitialAdManager")
   @js.native
   object InterstitialAdManagerNs extends js.Object {
@@ -55,12 +54,12 @@ object FacebookAdsNs extends js.Object {
   }
   
   /**
-       * Banner View
-       */
+    * Banner View
+    */
   type AdType = expoLib.expoLibStrings.large | expoLib.expoLibStrings.rectangle | expoLib.expoLibStrings.standard
   /**
-       * Native Ads
-       */
+    * Native Ads
+    */
   type MediaCachePolicy = expoLib.expoLibStrings.none | expoLib.expoLibStrings.icon | expoLib.expoLibStrings.image | expoLib.expoLibStrings.all
 }
 

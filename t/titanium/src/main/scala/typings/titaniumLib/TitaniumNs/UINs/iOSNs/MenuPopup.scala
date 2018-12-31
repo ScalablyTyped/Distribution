@@ -26,9 +26,6 @@ trait MenuPopup
   				 * Hides the menu popup.
   				 */
   def hide(): scala.Unit = js.native
-  /**
-  				 * Hides the menu popup.
-  				 */
   def hide(params: titaniumLib.MenuPopupHideParams): scala.Unit = js.native
   /**
   				 * Indicates whether the menu popup is currently visible.

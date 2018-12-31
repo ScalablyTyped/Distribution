@@ -42,21 +42,7 @@ trait IgTileManagerMethods extends js.Object {
   	 * @param event Indicates the browser even which triggered this action (not API).
   	 */
   def maximize($tileToMaximize: js.Object): scala.Unit = js.native
-  /**
-  	 * Maximizes a given tile.
-  	 *
-  	 * @param $tileToMaximize Specifies the jQuery object of the tile element to be maximized.
-  	 * @param animDuration Specifies the animation duration for this maximizing.
-  	 * @param event Indicates the browser even which triggered this action (not API).
-  	 */
   def maximize($tileToMaximize: js.Object, animDuration: scala.Double): scala.Unit = js.native
-  /**
-  	 * Maximizes a given tile.
-  	 *
-  	 * @param $tileToMaximize Specifies the jQuery object of the tile element to be maximized.
-  	 * @param animDuration Specifies the animation duration for this maximizing.
-  	 * @param event Indicates the browser even which triggered this action (not API).
-  	 */
   def maximize($tileToMaximize: js.Object, animDuration: scala.Double, event: js.Object): scala.Unit = js.native
   /**
   	 * Returns the maximized tile or null if such is not present.
@@ -70,19 +56,7 @@ trait IgTileManagerMethods extends js.Object {
   	 * @param event Indicates the browser even which triggered this action (not API).
   	 */
   def minimize(): scala.Unit = js.native
-  /**
-  	 * Minimizes the maximized tile. Has no effect if no maximized tile is present.
-  	 *
-  	 * @param animDuration Specifies the animation duration for this minimize.
-  	 * @param event Indicates the browser even which triggered this action (not API).
-  	 */
   def minimize(animDuration: scala.Double): scala.Unit = js.native
-  /**
-  	 * Minimizes the maximized tile. Has no effect if no maximized tile is present.
-  	 *
-  	 * @param animDuration Specifies the animation duration for this minimize.
-  	 * @param event Indicates the browser even which triggered this action (not API).
-  	 */
   def minimize(animDuration: scala.Double, event: js.Object): scala.Unit = js.native
   /**
   	 * Returns an array with the tiles in minimized state or null if such are not present.
@@ -97,29 +71,8 @@ trait IgTileManagerMethods extends js.Object {
   	 * @param event Indicates the browser even which triggered this action (not API).
   	 */
   def reflow(): scala.Unit = js.native
-  /**
-  	 * Reflow the tile manager. Rearranging the tiles to fit in the container
-  	 *
-  	 * @param forceReflow Indicates whether the reflow should be forced. Useful in cases where the items size and position was changed manually.
-  	 * @param animationDuration The animation duration to be used for this reflow only.
-  	 * @param event Indicates the browser even which triggered this action (not API).
-  	 */
   def reflow(forceReflow: js.Object): scala.Unit = js.native
-  /**
-  	 * Reflow the tile manager. Rearranging the tiles to fit in the container
-  	 *
-  	 * @param forceReflow Indicates whether the reflow should be forced. Useful in cases where the items size and position was changed manually.
-  	 * @param animationDuration The animation duration to be used for this reflow only.
-  	 * @param event Indicates the browser even which triggered this action (not API).
-  	 */
   def reflow(forceReflow: js.Object, animationDuration: scala.Double): scala.Unit = js.native
-  /**
-  	 * Reflow the tile manager. Rearranging the tiles to fit in the container
-  	 *
-  	 * @param forceReflow Indicates whether the reflow should be forced. Useful in cases where the items size and position was changed manually.
-  	 * @param animationDuration The animation duration to be used for this reflow only.
-  	 * @param event Indicates the browser even which triggered this action (not API).
-  	 */
   def reflow(forceReflow: js.Object, animationDuration: scala.Double, event: js.Object): scala.Unit = js.native
   /**
   	 * Returns the splitter associated with this tile manager or

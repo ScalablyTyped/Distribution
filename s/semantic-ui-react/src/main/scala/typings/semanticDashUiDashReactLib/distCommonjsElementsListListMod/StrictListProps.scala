@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictListProps extends js.Object {
   /** A list can animate to set the current item apart from the list. */
   var animated: js.UndefOr[scala.Boolean] = js.undefined
@@ -36,11 +35,11 @@ trait StrictListProps extends js.Object {
   /** A list can be specially formatted for navigation links. */
   var link: js.UndefOr[scala.Boolean] = js.undefined
   /**
-     * onClick handler for ListItem. Mutually exclusive with children.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All item props.
-     */
+    * onClick handler for ListItem. Mutually exclusive with children.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All item props.
+    */
   var onItemClick: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 

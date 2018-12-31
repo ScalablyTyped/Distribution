@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion Functions
 //#region Interfaces
-
 trait IAnimationMethodResponse extends js.Object {
   def execute(): winjsLib.WinJSNs.Promise[_]
 }

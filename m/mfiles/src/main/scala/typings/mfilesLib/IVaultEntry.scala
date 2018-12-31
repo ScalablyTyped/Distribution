@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVaultEntry extends js.Object {
   val Events: IVaultEntryEvents
   val Vault: IVault

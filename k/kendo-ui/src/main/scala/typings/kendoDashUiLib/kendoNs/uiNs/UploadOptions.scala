@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadOptions extends js.Object {
   var async: js.UndefOr[UploadAsync] = js.undefined
   var cancel: js.UndefOr[js.Function1[/* e */ UploadCancelEvent, scala.Unit]] = js.undefined

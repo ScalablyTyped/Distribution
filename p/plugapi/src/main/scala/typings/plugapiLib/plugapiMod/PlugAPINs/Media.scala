@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Media extends js.Object {
   var author: java.lang.String
   var cid: java.lang.String

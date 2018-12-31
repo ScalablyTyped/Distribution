@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPath
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Create an circular arc

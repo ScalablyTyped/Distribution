@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Tx extends js.Object {
   var chainId: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var data: js.UndefOr[java.lang.String] = js.undefined

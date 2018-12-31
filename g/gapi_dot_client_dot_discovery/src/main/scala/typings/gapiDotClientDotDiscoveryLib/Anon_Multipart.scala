@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Multipart extends js.Object {
   /** True if this endpoint supports uploading multipart media. */
   var multipart: js.UndefOr[scala.Boolean] = js.undefined

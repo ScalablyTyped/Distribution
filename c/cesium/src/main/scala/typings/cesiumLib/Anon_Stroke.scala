@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Stroke extends js.Object {
   var clampToGround: js.UndefOr[scala.Boolean] = js.undefined
   var fill: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Color] = js.undefined

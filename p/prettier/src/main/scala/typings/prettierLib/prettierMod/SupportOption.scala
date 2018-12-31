@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SupportOption extends js.Object {
   var array: js.UndefOr[scala.Boolean] = js.undefined
   var choices: js.UndefOr[SupportOptionChoice] = js.undefined

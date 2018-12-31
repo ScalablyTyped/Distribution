@@ -22,8 +22,8 @@ trait Dinero extends js.Object {
   def greaterThan(comparator: Dinero): scala.Boolean = js.native
   def greaterThanOrEqual(comparator: Dinero): scala.Boolean = js.native
   /**
-           * @deprecated since version 2.0
-           */
+    * @deprecated since version 2.0
+    */
   def hasCents(): scala.Boolean = js.native
   def hasSameAmount(comparator: Dinero): scala.Boolean = js.native
   def hasSameCurrency(comparator: Dinero): scala.Boolean = js.native

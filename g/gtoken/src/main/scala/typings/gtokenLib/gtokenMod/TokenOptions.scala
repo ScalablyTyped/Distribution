@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TokenOptions extends js.Object {
   var additionalClaims: js.UndefOr[js.Object] = js.undefined
   var email: js.UndefOr[java.lang.String] = js.undefined

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Pattern to format and parse numbers according to the client's user preferences. */
-
 trait GlobalizationNumberPattern extends js.Object {
   /* The decimal symbol to use for parsing and formatting. */
   var decimal: java.lang.String

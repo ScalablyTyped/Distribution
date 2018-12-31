@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EnhancedSwitchProps extends CommonEnhancedSwitchProps[EnhancedSwitch] {
   var defaultSwitched: js.UndefOr[scala.Boolean] = js.undefined
   var disableFocusRipple: js.UndefOr[scala.Boolean] = js.undefined

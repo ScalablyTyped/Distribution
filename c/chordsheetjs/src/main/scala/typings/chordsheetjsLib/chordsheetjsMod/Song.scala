@@ -10,21 +10,21 @@ import scala.scalajs.js.annotation._
 class Song protected () extends js.Object {
   def this(metadata: js.Object) = this()
   /**
-       * Returns the song lines, skipping the leading empty lines (empty as in not rendering any content). This is useful
-       * if you want to skip the "header lines": the lines that only contain meta data.
-       */
+    * Returns the song lines, skipping the leading empty lines (empty as in not rendering any content). This is useful
+    * if you want to skip the "header lines": the lines that only contain meta data.
+    */
   var bodyLines: js.Array[Line] = js.native
   var currentLine: Line = js.native
   var currentParagraph: Paragraph = js.native
   /**
-       * The Line items of which the song consists
-       */
+    * The Line items of which the song consists
+    */
   var lines: js.Array[Line] = js.native
   var metaData: js.Object = js.native
   var optimizedMetaData: js.Object = js.native
   /**
-       * The Paragraph items of which the song consists
-       */
+    * The Paragraph items of which the song consists
+    */
   var paragraphs: js.Array[Paragraph] = js.native
   def addChordLyricsPair(): ChordLyricsPair = js.native
   def addLine(): Line = js.native

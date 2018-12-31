@@ -22,9 +22,6 @@ object UserPersistenceNumbers extends js.Object {
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_addNumber
   		 */
   def addNumber(key: java.lang.String, value: scala.Double): scala.Double = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_addNumber
-  		 */
   def addNumber(
     key: java.lang.String,
     value: scala.Double,
@@ -48,9 +45,6 @@ object UserPersistenceNumbers extends js.Object {
       scala.Boolean
     ]
   ): scala.Unit = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_each
-  		 */
   def each(
     key: java.lang.String,
     callback: js.Function5[
@@ -68,18 +62,11 @@ object UserPersistenceNumbers extends js.Object {
   		 * @since AppServer 82483
   		 */
   def getAllKeys(): js.Array[java.lang.String] = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getAllKeys
-  		 * @since AppServer 82483
-  		 */
   def getAllKeys(filterKey: java.lang.String): js.Array[java.lang.String] = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getCount
   		 */
   def getCount(key: java.lang.String): scala.Double = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getCount
-  		 */
   def getCount(key: java.lang.String, parameters: knuddelsDashUserappsDashApiLib.Anon_MaximumValue): scala.Double = js.native
   /**
   		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getPosition
@@ -88,21 +75,12 @@ object UserPersistenceNumbers extends js.Object {
     key: java.lang.String,
     user_or_userId: knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.User
   ): scala.Double = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getPosition
-  		 */
   def getPosition(
     key: java.lang.String,
     user_or_userId: knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.User,
     parameters: knuddelsDashUserappsDashApiLib.Anon_Ascending
   ): scala.Double = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getPosition
-  		 */
   def getPosition(key: java.lang.String, user_or_userId: scala.Double): scala.Double = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getPosition
-  		 */
   def getPosition(
     key: java.lang.String,
     user_or_userId: scala.Double,
@@ -115,21 +93,12 @@ object UserPersistenceNumbers extends js.Object {
     key: java.lang.String,
     user_or_userId: knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.User
   ): scala.Double = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getRank
-  		 */
   def getRank(
     key: java.lang.String,
     user_or_userId: knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.User,
     parameters: knuddelsDashUserappsDashApiLib.Anon_Ascending
   ): scala.Double = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getRank
-  		 */
   def getRank(key: java.lang.String, user_or_userId: scala.Double): scala.Double = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getRank
-  		 */
   def getRank(
     key: java.lang.String,
     user_or_userId: scala.Double,
@@ -141,9 +110,6 @@ object UserPersistenceNumbers extends js.Object {
   def getSortedEntries(key: java.lang.String): js.Array[
     knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.UserPersistenceNumberEntry
   ] = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getSortedEntries
-  		 */
   def getSortedEntries(key: java.lang.String, parameters: knuddelsDashUserappsDashApiLib.Anon_Count): js.Array[
     knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.UserPersistenceNumberEntry
   ] = js.native
@@ -156,9 +122,6 @@ object UserPersistenceNumbers extends js.Object {
   ): js.Array[
     knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.UserPersistenceNumberEntry
   ] = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getSortedEntriesAdjacent
-  		 */
   def getSortedEntriesAdjacent(
     key: java.lang.String,
     user_or_userId: knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.User,
@@ -166,15 +129,9 @@ object UserPersistenceNumbers extends js.Object {
   ): js.Array[
     knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.UserPersistenceNumberEntry
   ] = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getSortedEntriesAdjacent
-  		 */
   def getSortedEntriesAdjacent(key: java.lang.String, user_or_userId: scala.Double): js.Array[
     knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod.Global.UserPersistenceNumberEntry
   ] = js.native
-  /**
-  		 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html#method_getSortedEntriesAdjacent
-  		 */
   def getSortedEntriesAdjacent(
     key: java.lang.String,
     user_or_userId: scala.Double,

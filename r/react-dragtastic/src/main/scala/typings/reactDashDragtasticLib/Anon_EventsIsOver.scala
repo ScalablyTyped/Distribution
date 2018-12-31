@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EventsIsOver extends js.Object {
   var events: Anon_OnMouseLeave
   /** A boolean representing if the user is currently hovering the <Droppable/>. */

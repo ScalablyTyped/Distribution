@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Miles extends js.Object {
   var feet: scala.Double
   var inches: scala.Double

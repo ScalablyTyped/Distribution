@@ -14,16 +14,16 @@ trait InAppPurchase extends EventEmitter {
   ): this.type = js.native
   def canMakePayments(): scala.Boolean = js.native
   /**
-       * Completes all pending transactions.
-       */
+    * Completes all pending transactions.
+    */
   def finishAllTransactions(): scala.Unit = js.native
   /**
-       * Completes the pending transactions corresponding to the date.
-       */
+    * Completes the pending transactions corresponding to the date.
+    */
   def finishTransactionByDate(date: java.lang.String): scala.Unit = js.native
   /**
-       * Retrieves the product descriptions.
-       */
+    * Retrieves the product descriptions.
+    */
   def getProducts(
     productIDs: js.Array[java.lang.String],
     callback: js.Function1[/* products */ js.Array[Product], scala.Unit]
@@ -31,8 +31,8 @@ trait InAppPurchase extends EventEmitter {
   def getReceiptURL(): java.lang.String = js.native
   // Docs: http://electronjs.org/docs/api/in-app-purchase
   /**
-       * Emitted when one or more transactions have been updated.
-       */
+    * Emitted when one or more transactions have been updated.
+    */
   @JSName("on")
   def `on_transactions-updated`(
     event: electronLib.electronLibStrings.`transactions-updated`,
@@ -44,19 +44,11 @@ trait InAppPurchase extends EventEmitter {
     listener: js.Function2[/* event */ Event, /* transactions */ js.Array[Transaction], scala.Unit]
   ): this.type = js.native
   /**
-       * You should listen for the transactions-updated event as soon as possible and
-       * certainly before you call purchaseProduct.
-       */
+    * You should listen for the transactions-updated event as soon as possible and
+    * certainly before you call purchaseProduct.
+    */
   def purchaseProduct(productID: java.lang.String): scala.Unit = js.native
-  /**
-       * You should listen for the transactions-updated event as soon as possible and
-       * certainly before you call purchaseProduct.
-       */
   def purchaseProduct(productID: java.lang.String, quantity: scala.Double): scala.Unit = js.native
-  /**
-       * You should listen for the transactions-updated event as soon as possible and
-       * certainly before you call purchaseProduct.
-       */
   def purchaseProduct(
     productID: java.lang.String,
     quantity: scala.Double,

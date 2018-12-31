@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEventWorkflowController extends IEventController {
   var onAfterEventFiring: js.UndefOr[
     js.Function3[

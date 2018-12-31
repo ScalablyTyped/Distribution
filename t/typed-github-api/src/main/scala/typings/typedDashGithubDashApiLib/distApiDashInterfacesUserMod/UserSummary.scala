@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserSummary extends UserOrOrgSummary {
   var followers_url: java.lang.String
   var following_url: java.lang.String

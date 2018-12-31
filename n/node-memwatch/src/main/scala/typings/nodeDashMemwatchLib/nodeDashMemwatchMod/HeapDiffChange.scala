@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HeapDiffChange extends js.Object {
   var allocated_nodes: scala.Double
   var details: js.Array[HeapDiffDetail]

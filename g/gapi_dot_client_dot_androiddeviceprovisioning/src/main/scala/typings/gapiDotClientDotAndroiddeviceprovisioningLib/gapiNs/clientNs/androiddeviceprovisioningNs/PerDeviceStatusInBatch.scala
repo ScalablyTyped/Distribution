@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PerDeviceStatusInBatch extends js.Object {
   /** Device ID of the device if process succeeds. */
   var deviceId: js.UndefOr[java.lang.String] = js.undefined

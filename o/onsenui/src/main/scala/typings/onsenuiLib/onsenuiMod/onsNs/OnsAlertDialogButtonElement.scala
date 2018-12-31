@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait OnsAlertDialogButtonElement
   extends stdLib.HTMLElement {
   /**
-       * @description A boolean value that specifies if the button is disabled or not.
-       */
+    * @description A boolean value that specifies if the button is disabled or not.
+    */
   var disabled: scala.Boolean = js.native
 }
 

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object fdatasyncNs extends js.Object {
   /**
-           * Asynchronous fdatasync(2) - synchronize a file's in-core state with storage device.
-           * @param fd A file descriptor.
-           */
+    * Asynchronous fdatasync(2) - synchronize a file's in-core state with storage device.
+    * @param fd A file descriptor.
+    */
   def `__promisify__`(fd: scala.Double): js.Promise[scala.Unit] = js.native
 }
 

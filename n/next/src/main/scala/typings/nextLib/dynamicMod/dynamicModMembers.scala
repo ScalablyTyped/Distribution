@@ -13,14 +13,10 @@ object dynamicModMembers extends js.Object {
     options: nextDashServerLib.dynamicMod.NextDynamicOptions[P]
   ): nextDashServerLib.dynamicMod.DynamicComponent[P] = js.native
   /**
-   * Overloaded dynamic function.
-   * https://github.com/zeit/next.js/blob/7.0.0/lib/dynamic.js#L55
-   */
+    * Overloaded dynamic function.
+    * https://github.com/zeit/next.js/blob/7.0.0/lib/dynamic.js#L55
+    */
   def default[P](options: nextDashServerLib.dynamicMod.AsyncComponent[P]): nextDashServerLib.dynamicMod.DynamicComponent[P] = js.native
-  /**
-   * Overloaded dynamic function.
-   * https://github.com/zeit/next.js/blob/7.0.0/lib/dynamic.js#L55
-   */
   def default[P](options: nextDashServerLib.dynamicMod.NextDynamicOptions[P]): nextDashServerLib.dynamicMod.DynamicComponent[P] = js.native
 }
 

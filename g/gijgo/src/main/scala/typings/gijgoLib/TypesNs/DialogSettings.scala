@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Dialog
-
 trait DialogSettings extends js.Object {
   var autoOpen: js.UndefOr[scala.Boolean] = js.undefined
   var closeButtonInHeader: js.UndefOr[scala.Boolean] = js.undefined

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // execution/*.js
-
 trait ExecutionContext extends js.Object {
   var errors: js.Array[GraphQLError]
   var fragments: org.scalablytyped.runtime.StringDictionary[FragmentDefinition]

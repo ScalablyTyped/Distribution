@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Poly Bezier
-     * @param {[type]} curves [description]
-     */
+  * Poly Bezier
+  * @param {[type]} curves [description]
+  */
 @JSGlobal("BezierJs.PolyBezier")
 @js.native
 class PolyBezier protected () extends js.Object {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RoleLocalResource extends js.Object {
   var maximumSizeInMegabytes: scala.Double
   var name: java.lang.String

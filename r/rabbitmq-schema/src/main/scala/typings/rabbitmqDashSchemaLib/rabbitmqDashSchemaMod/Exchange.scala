@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Exchange extends Topology {
   var bindings: js.Array[Binding]
   var exchange: java.lang.String

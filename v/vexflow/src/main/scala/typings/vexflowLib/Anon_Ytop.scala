@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Ytop extends js.Object {
   var highest_line: scala.Double
   var lowest_line: scala.Double

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("chartmogul-node", "CustomAttribute")
 @js.native
 object CustomAttributeNs extends js.Object {
-  
   trait CustomAttributes extends js.Object {
     var custom: chartmogulDashNodeLib.commonMod.Map
   }

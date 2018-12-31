@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Custom rendering functions. Each function should accept two arguments: "data" and "escape" and return
-     * HTML (string) with a single root element. The "escape" argument is a function that takes a string and
-     * escapes all special HTML characters. This is very important to use to prevent XSS vulnerabilities.
-     */
-
+  * Custom rendering functions. Each function should accept two arguments: "data" and "escape" and return
+  * HTML (string) with a single root element. The "escape" argument is a function that takes a string and
+  * escapes all special HTML characters. This is very important to use to prevent XSS vulnerabilities.
+  */
 trait ICustomRenderers[U] extends js.Object {
   // An item the user has selected.
   var item: js.UndefOr[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Label extends js.Object {
   /** The immutable ID of the label. */
   var id: js.UndefOr[java.lang.String] = js.undefined
@@ -24,11 +23,11 @@ trait Label extends js.Object {
   /** The number of unread threads with the label. */
   var threadsUnread: js.UndefOr[scala.Double] = js.undefined
   /**
-               * The owner type for the label. User labels are created by the user and can be modified and deleted by the user and can be applied to any message or
-               * thread. System labels are internally created and cannot be added, modified, or deleted. System labels may be able to be applied to or removed from
-               * messages and threads under some circumstances but this is not guaranteed. For example, users can apply and remove the INBOX and UNREAD labels from
-               * messages and threads, but cannot apply or remove the DRAFTS or SENT labels from messages or threads.
-               */
+    * The owner type for the label. User labels are created by the user and can be modified and deleted by the user and can be applied to any message or
+    * thread. System labels are internally created and cannot be added, modified, or deleted. System labels may be able to be applied to or removed from
+    * messages and threads under some circumstances but this is not guaranteed. For example, users can apply and remove the INBOX and UNREAD labels from
+    * messages and threads, but cannot apply or remove the DRAFTS or SENT labels from messages or threads.
+    */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 

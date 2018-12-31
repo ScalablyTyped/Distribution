@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * EventSource
-     */
+  * EventSource
+  */
 @JSImport("ss-utils", "ReadyState")
 @js.native
 object ReadyState extends js.Object {

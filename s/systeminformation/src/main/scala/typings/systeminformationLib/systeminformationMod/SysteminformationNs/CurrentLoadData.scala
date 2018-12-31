@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CurrentLoadData extends js.Object {
   var avgload: scala.Double
   var cpus: js.Array[CurrentLoadCpuData]

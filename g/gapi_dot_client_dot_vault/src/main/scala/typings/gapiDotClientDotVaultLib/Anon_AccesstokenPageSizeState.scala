@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPageSizeState extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -25,9 +24,9 @@ trait Anon_AccesstokenPageSizeState extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The number of matters to return in the response.
-                   * Default and maximum are 100.
-                   */
+    * The number of matters to return in the response.
+    * Default and maximum are 100.
+    */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /** The pagination token as returned in the response. */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
@@ -38,9 +37,9 @@ trait Anon_AccesstokenPageSizeState extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * If set, list only matters with that specific state. The default is listing
-                   * matters of all states.
-                   */
+    * If set, list only matters with that specific state. The default is listing
+    * matters of all states.
+    */
   var state: js.UndefOr[java.lang.String] = js.undefined
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

@@ -96,7 +96,6 @@ trait telebot extends js.Object {
   def inlineQueryKeyboard(config: js.Array[js.Array[_]]): js.Any = js.native
   // methods.js
   def keyboard(buttons: js.Array[js.Array[_]]): js.Any = js.native
-  // methods.js
   def keyboard(buttons: js.Array[js.Array[_]], opt: js.Any): js.Any = js.native
   def kickChatMember(chat_id: java.lang.String, user_id: scala.Double): scala.Boolean = js.native
   def kickChatMember(chat_id: scala.Double, user_id: scala.Double): scala.Boolean = js.native

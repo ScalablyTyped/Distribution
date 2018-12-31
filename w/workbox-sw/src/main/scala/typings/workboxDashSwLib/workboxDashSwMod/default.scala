@@ -38,10 +38,6 @@ object default extends js.Object {
   	 * @param {Partial<IConfigOptions>} config
   	 */
   def setConfig(): scala.Unit = js.native
-  /**
-  	 * Updates the configuration options. You can specify whether to treat as a debug build and whether to use a CDN or a specific path when importing other workbox-modules
-  	 * @param {Partial<IConfigOptions>} config
-  	 */
   def setConfig(config: stdLib.Partial[workboxDashSwLib.workboxDashSwMod.IConfigOptions]): scala.Unit = js.native
   /**
   	 * Force a service worker to become active, instead of waiting. This is normally used in conjunction with clientsClaim().

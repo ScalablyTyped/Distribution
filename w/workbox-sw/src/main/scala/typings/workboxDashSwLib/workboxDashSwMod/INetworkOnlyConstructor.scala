@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Instantiates a new NetworkOnly strategy
- */
+  * Instantiates a new NetworkOnly strategy
+  */
 @js.native
 trait INetworkOnlyConstructor
   extends org.scalablytyped.runtime.Instantiable0[NetworkOnly]

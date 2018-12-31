@@ -22,16 +22,16 @@ abstract class WhiteBalanceControl () extends js.Object {
   /** Gets the color temperature value. */
   var value: scala.Double = js.native
   /**
-                   * Asynchronously sets the color temperature Preset .
-                   * @param preset The color temperate preset to set the Preset property to.
-                   * @return The object that is used to control the asynchronous operation.
-                   */
+    * Asynchronously sets the color temperature Preset .
+    * @param preset The color temperate preset to set the Preset property to.
+    * @return The object that is used to control the asynchronous operation.
+    */
   def setPresetAsync(preset: ColorTemperaturePreset): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Asynchronously sets the color temperature Value .
-                   * @param temperature The temperature value to set the Value property to.
-                   * @return The object that is used to control the asynchronous operation.
-                   */
+    * Asynchronously sets the color temperature Value .
+    * @param temperature The temperature value to set the Value property to.
+    * @return The object that is used to control the asynchronous operation.
+    */
   def setValueAsync(temperature: scala.Double): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

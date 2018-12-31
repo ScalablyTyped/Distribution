@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartCategoryAxisItemSelect extends js.Object {
   var from: js.UndefOr[js.Any] = js.undefined
   var max: js.UndefOr[js.Any] = js.undefined

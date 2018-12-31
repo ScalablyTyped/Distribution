@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Definitions extends js.Object {
   @JSName("$name")
   var $name: java.lang.String

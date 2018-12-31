@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BoardConfig extends js.Object {
   var appearSpeed: js.UndefOr[scala.Double | SpeedType] = js.undefined
   var draggable: js.UndefOr[scala.Boolean] = js.undefined

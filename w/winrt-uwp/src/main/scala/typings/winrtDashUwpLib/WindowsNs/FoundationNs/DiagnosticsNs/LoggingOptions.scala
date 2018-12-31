@@ -8,11 +8,12 @@ import scala.scalajs.js.annotation._
 /** Represents advanced event settings. */
 @JSGlobal("Windows.Foundation.Diagnostics.LoggingOptions")
 @js.native
+/** Initializes a new LoggingOptions instance with default option values. */
 class LoggingOptions () extends js.Object {
   /**
-                   * Initializes a new LoggingOptions instance with the specified keyword value.
-                   * @param keywords The keyword value.
-                   */
+    * Initializes a new LoggingOptions instance with the specified keyword value.
+    * @param keywords The keyword value.
+    */
   def this(keywords: scala.Double) = this()
   /** Gets or sets the unique identifier associated with an activity. */
   var activityId: java.lang.String = js.native

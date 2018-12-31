@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BasicScaling extends js.Object {
   /** Duration of time after the last request that an instance must wait before the instance is shut down. */
   var idleTimeout: js.UndefOr[java.lang.String] = js.undefined

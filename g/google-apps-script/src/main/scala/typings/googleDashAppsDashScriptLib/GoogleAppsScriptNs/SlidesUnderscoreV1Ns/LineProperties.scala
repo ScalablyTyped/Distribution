@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LineProperties extends js.Object {
   // The dash style of the line.
   var dash_style: DashStyle

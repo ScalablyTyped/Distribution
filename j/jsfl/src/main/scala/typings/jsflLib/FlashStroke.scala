@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlashStroke extends js.Object {
   /// A Boolean value, same as the Sharp Corners setting in the custom Stroke Style dialog box.
   var breakAtCorners: scala.Boolean

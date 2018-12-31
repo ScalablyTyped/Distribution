@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains status information about the upload operation. */
-
 trait BackgroundUploadProgress extends js.Object {
   /** The total number of bytes received. This value does not include bytes received as part of response headers. If the upload operation has restarted, this value may be smaller than in the previous progress report. */
   var bytesReceived: scala.Double

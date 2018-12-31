@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Spec extends js.Object {
   var basePath: js.UndefOr[java.lang.String] = js.undefined
   var consumes: js.UndefOr[js.Array[java.lang.String]] = js.undefined

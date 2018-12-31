@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Timer extends js.Object {
   var id: scala.Double
   def ref(): scala.Unit

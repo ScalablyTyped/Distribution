@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ComponentsPerAttributeValue extends js.Object {
   var componentDatatype: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.ComponentDatatype] = js.undefined
   var componentsPerAttribute: js.UndefOr[scala.Double] = js.undefined

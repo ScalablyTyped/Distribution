@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SerialPortOutput extends js.Object {
   /** [Output Only] The contents of the console output. */
   var contents: js.UndefOr[java.lang.String] = js.undefined
@@ -16,9 +15,9 @@ trait SerialPortOutput extends js.Object {
   /** [Output Only] Server-defined URL for this resource. */
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The starting byte position of the output that was returned. This should match the start parameter sent with the request. If the serial console output
-               * exceeds the size of the buffer, older output will be overwritten by newer content and the start values will be mismatched.
-               */
+    * The starting byte position of the output that was returned. This should match the start parameter sent with the request. If the serial console output
+    * exceeds the size of the buffer, older output will be overwritten by newer content and the start values will be mismatched.
+    */
   var start: js.UndefOr[java.lang.String] = js.undefined
 }
 

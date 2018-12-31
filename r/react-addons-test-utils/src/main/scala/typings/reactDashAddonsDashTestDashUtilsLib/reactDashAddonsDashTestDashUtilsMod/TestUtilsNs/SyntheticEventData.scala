@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SyntheticEventData extends OptionalEventProperties {
   var altKey: js.UndefOr[scala.Boolean] = js.undefined
   var button: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISettingsStyle extends js.Object {
   /** A hex color value that all land is first flushed to before things are drawn on it. */
   var landColor: js.UndefOr[java.lang.String] = js.undefined

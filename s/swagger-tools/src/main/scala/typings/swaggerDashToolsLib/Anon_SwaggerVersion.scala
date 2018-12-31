@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SwaggerVersion[P /* <: swaggerDashToolsLib.swaggerDashToolsMod.SwaggerRequestParameters */] extends js.Object {
   var apiPath: java.lang.String
   var operation: js.UndefOr[swaggerDashToolsLib.swaggerDashToolsMod.Swagger20Operation] = js.undefined

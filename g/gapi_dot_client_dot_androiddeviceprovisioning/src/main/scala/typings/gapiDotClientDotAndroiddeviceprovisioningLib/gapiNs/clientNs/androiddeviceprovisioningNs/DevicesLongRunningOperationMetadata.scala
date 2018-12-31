@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DevicesLongRunningOperationMetadata extends js.Object {
   /** Number of devices parsed in your requests. */
   var devicesCount: js.UndefOr[scala.Double] = js.undefined

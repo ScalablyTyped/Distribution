@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Option extends js.Object {
   var Footer: scala.Double
   var Loading: scala.Double

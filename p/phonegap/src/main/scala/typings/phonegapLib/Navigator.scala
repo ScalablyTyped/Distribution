@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Navigator extends js.Object {
   var accelerometer: Accelerometer
   var camera: Camera

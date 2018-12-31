@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait WiaImagePropertyType extends js.Object
 
 /**
-     * The WiaImagePropertyType enumeration specifies the type of the value of an image property. Image properties can be found in the Properties collection
-     * of an ImageFile object.
-     */
+  * The WiaImagePropertyType enumeration specifies the type of the value of an image property. Image properties can be found in the Properties collection
+  * of an ImageFile object.
+  */
 @JSGlobal("WIA.WiaImagePropertyType")
 @js.native
 object WiaImagePropertyType extends js.Object {

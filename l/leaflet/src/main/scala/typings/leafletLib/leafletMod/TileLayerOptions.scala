@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TileLayerOptions extends GridLayerOptions {
   var crossOrigin: js.UndefOr[scala.Boolean] = js.undefined
   var detectRetina: js.UndefOr[scala.Boolean] = js.undefined

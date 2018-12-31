@@ -18,30 +18,30 @@ trait Application
   var silent: scala.Boolean = js.native
   var subdomainOffset: scala.Double = js.native
   /**
-       * Return a request handler callback
-       * for node's native http/http2 server.
-       */
+    * Return a request handler callback
+    * for node's native http/http2 server.
+    */
   def callback(): js.Function2[
     /* req */ nodeLib.httpMod.IncomingMessage | nodeLib.http2Mod.Http2ServerRequest, 
     /* res */ nodeLib.httpMod.ServerResponse | nodeLib.http2Mod.Http2ServerResponse, 
     scala.Unit
   ] = js.native
   /**
-       * Initialize a new context.
-       *
-       * @api private
-       */
+    * Initialize a new context.
+    *
+    * @api private
+    */
   def createContext(req: nodeLib.httpMod.IncomingMessage, res: nodeLib.httpMod.ServerResponse): koaLib.koaMod.ApplicationNs.Context = js.native
   /**
-       * Return JSON representation.
-       * We only bother showing settings.
-       */
+    * Return JSON representation.
+    * We only bother showing settings.
+    */
   def inspect(): js.Any = js.native
   /**
-       * Shorthand for:
-       *
-       *    http.createServer(app.callback()).listen(...)
-       */
+    * Shorthand for:
+    *
+    *    http.createServer(app.callback()).listen(...)
+    */
   def listen(): nodeLib.httpMod.Server = js.native
   def listen(handle: js.Any): nodeLib.httpMod.Server = js.native
   def listen(handle: js.Any, backlog: scala.Double): nodeLib.httpMod.Server = js.native
@@ -53,31 +53,11 @@ trait Application
   def listen(path: java.lang.String, backlog: scala.Double): nodeLib.httpMod.Server = js.native
   def listen(path: java.lang.String, backlog: scala.Double, listeningListener: js.Function0[scala.Unit]): nodeLib.httpMod.Server = js.native
   def listen(path: java.lang.String, listeningListener: js.Function0[scala.Unit]): nodeLib.httpMod.Server = js.native
-  /**
-       * Shorthand for:
-       *
-       *    http.createServer(app.callback()).listen(...)
-       */
   def listen(port: scala.Double): nodeLib.httpMod.Server = js.native
   def listen(port: scala.Double, backlog: scala.Double): nodeLib.httpMod.Server = js.native
   def listen(port: scala.Double, backlog: scala.Double, listeningListener: js.Function0[scala.Unit]): nodeLib.httpMod.Server = js.native
-  /**
-       * Shorthand for:
-       *
-       *    http.createServer(app.callback()).listen(...)
-       */
   def listen(port: scala.Double, hostname: java.lang.String): nodeLib.httpMod.Server = js.native
-  /**
-       * Shorthand for:
-       *
-       *    http.createServer(app.callback()).listen(...)
-       */
   def listen(port: scala.Double, hostname: java.lang.String, backlog: scala.Double): nodeLib.httpMod.Server = js.native
-  /**
-       * Shorthand for:
-       *
-       *    http.createServer(app.callback()).listen(...)
-       */
   def listen(
     port: scala.Double,
     hostname: java.lang.String,
@@ -87,21 +67,21 @@ trait Application
   def listen(port: scala.Double, hostname: java.lang.String, listeningListener: js.Function0[scala.Unit]): nodeLib.httpMod.Server = js.native
   def listen(port: scala.Double, listeningListener: js.Function0[scala.Unit]): nodeLib.httpMod.Server = js.native
   /**
-       * Default error handler.
-       *
-       * @api private
-       */
+    * Default error handler.
+    *
+    * @api private
+    */
   def onerror(err: nodeLib.Error): scala.Unit = js.native
   /**
-       * Return JSON representation.
-       * We only bother showing settings.
-       */
+    * Return JSON representation.
+    * We only bother showing settings.
+    */
   def toJSON(): js.Any = js.native
   /**
-       * Use the given middleware `fn`.
-       *
-       * Old-style middleware will be converted.
-       */
+    * Use the given middleware `fn`.
+    *
+    * Old-style middleware will be converted.
+    */
   def use(middleware: koaLib.koaMod.ApplicationNs.Middleware): this.type = js.native
 }
 

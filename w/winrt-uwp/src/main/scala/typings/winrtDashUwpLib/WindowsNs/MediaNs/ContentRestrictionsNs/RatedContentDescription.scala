@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class RatedContentDescription protected () extends js.Object {
   /**
-                   * Initializes a new instance of the RatedContentDescription class.
-                   * @param id The ID of the content, as specified by the app developer.
-                   * @param title The title of the content.
-                   * @param category Specifies the type of a piece of content, defined by RatedContentCategory .
-                   */
+    * Initializes a new instance of the RatedContentDescription class.
+    * @param id The ID of the content, as specified by the app developer.
+    * @param title The title of the content.
+    * @param category Specifies the type of a piece of content, defined by RatedContentCategory .
+    */
   def this(id: java.lang.String, title: java.lang.String, category: RatedContentCategory) = this()
   /** Specifies the type of a piece of content, defined by RatedContentCategory . */
   var category: RatedContentCategory = js.native

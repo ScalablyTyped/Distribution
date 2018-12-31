@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ReactiveSkipFieldsSort extends js.Object {
   var fields: js.UndefOr[meteorLib.mongoMod.MongoNs.FieldSpecifier] = js.undefined
   var reactive: js.UndefOr[scala.Boolean] = js.undefined

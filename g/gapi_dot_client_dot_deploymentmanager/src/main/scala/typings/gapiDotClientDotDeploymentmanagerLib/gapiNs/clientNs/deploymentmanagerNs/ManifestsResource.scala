@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ManifestsResource extends js.Object {
   /** Gets information about a specific manifest. */
   def get(request: gapiDotClientDotDeploymentmanagerLib.Anon_DeploymentProjectPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Manifest]

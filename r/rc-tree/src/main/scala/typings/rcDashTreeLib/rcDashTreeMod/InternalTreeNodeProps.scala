@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InternalTreeNodeProps extends TreeNodeProps {
   var checked: scala.Boolean
   var dragOver: scala.Boolean

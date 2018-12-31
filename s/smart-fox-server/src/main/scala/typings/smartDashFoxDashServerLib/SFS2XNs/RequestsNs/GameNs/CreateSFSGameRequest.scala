@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class CreateSFSGameRequest protected () extends js.Object {
   /**
-                   * Creates a new CreateSFSGameRequest instance.
-                   * @param {SFSGameSettings} settings An object containing the Game Room configuration settings.
-                   */
+    * Creates a new CreateSFSGameRequest instance.
+    * @param {SFSGameSettings} settings An object containing the Game Room configuration settings.
+    */
   def this(settings: SFSGameSettings) = this()
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SerialPinTypes extends js.Object {
   var RES_RX0: SERIAL_PIN_TYPE
   var RES_RX1: SERIAL_PIN_TYPE

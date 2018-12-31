@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProxyObject extends js.Object {
   var ftpProxy: js.UndefOr[java.lang.String] = js.undefined
   var ftpProxyPort: js.UndefOr[scala.Double] = js.undefined

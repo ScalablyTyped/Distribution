@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FloodlightConfigIdConversionDimensions extends js.Object {
   /** The list of 'dfa:activity' values to filter on. */
   var activityFilters: js.UndefOr[
@@ -26,9 +25,9 @@ trait Anon_FloodlightConfigIdConversionDimensions extends js.Object {
   /** The date range this report should be run for. */
   var dateRange: js.UndefOr[gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.DateRange] = js.undefined
   /**
-                   * The floodlight ID for which to show data in this report. All advertisers associated with that ID will automatically be added. The dimension of the
-                   * value needs to be 'dfa:floodlightConfigId'.
-                   */
+    * The floodlight ID for which to show data in this report. All advertisers associated with that ID will automatically be added. The dimension of the
+    * value needs to be 'dfa:floodlightConfigId'.
+    */
   var floodlightConfigId: js.UndefOr[gapiDotClientDotDfareportingLib.gapiNs.clientNs.dfareportingNs.DimensionValue] = js.undefined
   /** The list of names of metrics the report should include. */
   var metricNames: js.UndefOr[js.Array[java.lang.String]] = js.undefined

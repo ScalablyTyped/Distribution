@@ -21,19 +21,11 @@ class WebApi protected () extends js.Object {
   /* private */ def _readTaskLibSecrets(lookupKey: js.Any): js.Any = js.native
   def connect(): js.Promise[vsoDashNodeDashApiLib.interfacesLocationsInterfacesMod.ConnectionData] = js.native
   /**
-       * Each factory method can take a serverUrl and a list of handlers
-       * if these aren't provided, the default url and auth handler given to the constructor for this class will be used
-       */
+    * Each factory method can take a serverUrl and a list of handlers
+    * if these aren't provided, the default url and auth handler given to the constructor for this class will be used
+    */
   def getBuildApi(): js.Promise[vsoDashNodeDashApiLib.buildapiMod.IBuildApi] = js.native
-  /**
-       * Each factory method can take a serverUrl and a list of handlers
-       * if these aren't provided, the default url and auth handler given to the constructor for this class will be used
-       */
   def getBuildApi(serverUrl: java.lang.String): js.Promise[vsoDashNodeDashApiLib.buildapiMod.IBuildApi] = js.native
-  /**
-       * Each factory method can take a serverUrl and a list of handlers
-       * if these aren't provided, the default url and auth handler given to the constructor for this class will be used
-       */
   def getBuildApi(
     serverUrl: java.lang.String,
     handlers: js.Array[vsoDashNodeDashApiLib.interfacesCommonVsoBaseInterfacesMod.IRequestHandler]
@@ -176,16 +168,11 @@ class WebApi protected () extends js.Object {
 @js.native
 object WebApi extends js.Object {
   /**
-       *  Convenience factory to create with a bearer token.
-       * @param defaultServerUrl default server url to use when creating new apis from factory methods
-       * @param defaultAuthHandler default authentication credentials to use when creating new apis from factory methods
-       */
+    *  Convenience factory to create with a bearer token.
+    * @param defaultServerUrl default server url to use when creating new apis from factory methods
+    * @param defaultAuthHandler default authentication credentials to use when creating new apis from factory methods
+    */
   def createWithBearerToken(defaultUrl: java.lang.String, token: java.lang.String): vsoDashNodeDashApiLib.webapiMod.WebApi = js.native
-  /**
-       *  Convenience factory to create with a bearer token.
-       * @param defaultServerUrl default server url to use when creating new apis from factory methods
-       * @param defaultAuthHandler default authentication credentials to use when creating new apis from factory methods
-       */
   def createWithBearerToken(
     defaultUrl: java.lang.String,
     token: java.lang.String,

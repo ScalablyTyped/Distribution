@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IInkStrokeContainer extends js.Object {
   var boundingRect: winrtLib.WindowsNs.FoundationNs.Rect
   def addStroke(stroke: InkStroke): scala.Unit

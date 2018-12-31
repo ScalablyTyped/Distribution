@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VideoOrPlaylistSettings extends js.Object {
   /**
   		 * Time, in seconds from the end of the (first) video, when to end playing.

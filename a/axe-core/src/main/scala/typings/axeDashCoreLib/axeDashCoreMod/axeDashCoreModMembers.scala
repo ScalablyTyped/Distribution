@@ -33,11 +33,6 @@ object axeDashCoreModMembers extends js.Object {
   	 * @return {Array}  Array of rules
   	 */
   def getRules(): js.Array[js.Object] = js.native
-  /**
-  	 * Searches and returns rules that contain a tag in the list of tags.
-  	 * @param  {Array}  tags  Optional array of tags
-  	 * @return {Array}  Array of rules
-  	 */
   def getRules(tags: js.Array[java.lang.String]): js.Array[js.Object] = js.native
   /**
   	 * Function to register a plugin configuration in document and its subframes
@@ -64,14 +59,6 @@ object axeDashCoreModMembers extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /**
-  	 * Runs a number of rules against the provided HTML page and returns the resulting issue list
-  	 *
-  	 * @param   {ElementContext} context  Optional The `Context` specification object @see Context
-  	 * @param   {RunOptions}     options  Optional Options passed into rules or checks, temporarily modifying them.
-  	 * @param   {RunCallback}    callback Optional The function to invoke when analysis is complete.
-  	 * @returns {Promise<AxeResults>|void} If the callback was not defined, aXe will return a Promise.
-  	 */
   def run(context: axeDashCoreLib.axeDashCoreMod.axeNs.ElementContext): js.Promise[axeDashCoreLib.axeDashCoreMod.axeNs.AxeResults] = js.native
   def run(
     context: axeDashCoreLib.axeDashCoreMod.axeNs.ElementContext,

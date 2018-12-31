@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiffOptions
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var contextLines: js.UndefOr[scala.Double] = js.undefined

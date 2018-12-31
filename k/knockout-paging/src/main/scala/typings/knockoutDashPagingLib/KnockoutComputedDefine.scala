@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KnockoutComputedDefine[T] extends js.Object {
   var deferEvaluation: js.UndefOr[scala.Boolean] = js.undefined
   var disposeWhen: js.UndefOr[js.Function0[scala.Boolean]] = js.undefined

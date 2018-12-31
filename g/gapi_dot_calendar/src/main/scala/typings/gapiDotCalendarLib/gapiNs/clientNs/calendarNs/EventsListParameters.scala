@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventsListParameters extends js.Object {
   var alwaysIncludeEmail: js.UndefOr[scala.Boolean] = js.undefined
   var calendarId: java.lang.String

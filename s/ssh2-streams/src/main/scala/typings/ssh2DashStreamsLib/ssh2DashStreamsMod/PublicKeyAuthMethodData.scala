@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PublicKeyAuthMethodData extends js.Object {
   var blob: js.UndefOr[nodeLib.Buffer] = js.undefined
   var key: nodeLib.Buffer

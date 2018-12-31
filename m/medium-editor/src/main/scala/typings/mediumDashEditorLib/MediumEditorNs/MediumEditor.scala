@@ -9,14 +9,12 @@ import scala.scalajs.js.annotation._
 trait MediumEditor
   extends // Initialization Functions
 org.scalablytyped.runtime.Instantiable1[/* elements */ elementType, MediumEditor]
-     with // Initialization Functions
-org.scalablytyped.runtime.Instantiable2[/* elements */ elementType, /* options */ CoreOptions, MediumEditor] {
+     with org.scalablytyped.runtime.Instantiable2[/* elements */ elementType, /* options */ CoreOptions, MediumEditor] {
   // Properties
   var version: mediumDashEditorLib.Anon_Revision = js.native
   def addElements(elements: elementType): scala.Unit = js.native
   // Helper Functions
   def checkContentChanged(): scala.Unit = js.native
-  // Helper Functions
   def checkContentChanged(editable: stdLib.HTMLElement): scala.Unit = js.native
   // Selection Functions
   def checkSelection(): MediumEditor = js.native
@@ -57,7 +55,6 @@ org.scalablytyped.runtime.Instantiable2[/* elements */ elementType, /* options *
     listener: stdLib.EventListenerOrEventListenerObject,
     useCapture: scala.Boolean
   ): MediumEditor = js.native
-  // Event Functions
   def on(
     targets: stdLib.NodeList,
     event: java.lang.String,

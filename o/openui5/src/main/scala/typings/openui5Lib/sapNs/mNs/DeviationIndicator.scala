@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait DeviationIndicator extends js.Object
 
 /**
-     * Enum of the available deviation markers for the NumericContent control.
-    */
+  * Enum of the available deviation markers for the NumericContent control.
+  */
 @JSGlobal("sap.m.DeviationIndicator")
 @js.native
 object DeviationIndicator extends js.Object {

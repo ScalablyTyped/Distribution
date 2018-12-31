@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThunkData
   extends snabbdomLib.vnodeMod.VNodeData {
   @JSName("args")

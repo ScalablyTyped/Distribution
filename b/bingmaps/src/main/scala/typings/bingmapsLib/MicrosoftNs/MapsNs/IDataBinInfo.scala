@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDataBinInfo extends js.Object {
   /* An array of all the pushpins that are in the data bin. */
   var containedPushpins: js.Array[Pushpin]

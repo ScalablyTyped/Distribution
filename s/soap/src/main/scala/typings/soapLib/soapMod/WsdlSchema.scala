@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WsdlSchema extends XsdTypeBase {
   var children: js.Array[_]
   var complexTypes: js.UndefOr[WsdlElements] = js.undefined

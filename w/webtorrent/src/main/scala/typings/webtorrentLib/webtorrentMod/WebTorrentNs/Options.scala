@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var dht: js.UndefOr[scala.Boolean | js.Object] = js.undefined
   var maxConns: js.UndefOr[scala.Double] = js.undefined

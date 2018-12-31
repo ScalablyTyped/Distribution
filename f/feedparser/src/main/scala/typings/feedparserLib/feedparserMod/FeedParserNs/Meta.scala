@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Meta extends js.Object {
   var `#ns`: js.Array[NS]
   var `#type`: Type

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_KFSEventStreamEventFlagItemModified extends js.Object {
   var kFSEventStreamEventFlagEventIdsWrapped: fseventsLib.fseventsLibNumbers.`0x8`
   var kFSEventStreamEventFlagHistoryDone: fseventsLib.fseventsLibNumbers.`0x10`

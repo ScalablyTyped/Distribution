@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListJobsResponse extends js.Object {
   /** Zero or more messages describing locations that failed to respond. */
   var failedLocation: js.UndefOr[js.Array[FailedLocation]] = js.undefined

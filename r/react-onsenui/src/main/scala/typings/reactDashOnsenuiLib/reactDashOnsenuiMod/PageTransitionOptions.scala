@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PageTransitionOptions extends js.Object {
   var animation: js.UndefOr[NavigatorAnimationTypes] = js.undefined
   var animationOptions: js.UndefOr[AnimationOptions] = js.undefined

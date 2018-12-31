@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Moment extends js.Object {
   def hasTime(): scala.Boolean
   def stripTime(): js.Any

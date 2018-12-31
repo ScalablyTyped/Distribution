@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * Hide property
 	 */
-
 trait Hide extends js.Object {
   var delay: js.UndefOr[scala.Double] = js.undefined
   var distance: js.UndefOr[scala.Double | scala.Boolean] = js.undefined

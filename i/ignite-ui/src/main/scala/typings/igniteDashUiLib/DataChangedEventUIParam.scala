@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataChangedEventUIParam extends js.Object {
   /**
   	 * Used to obtain the new data.

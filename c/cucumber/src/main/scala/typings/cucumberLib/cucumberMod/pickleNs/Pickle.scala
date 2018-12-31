@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Pickle extends js.Object {
   var language: java.lang.String
   var locations: js.Array[Location]

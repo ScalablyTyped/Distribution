@@ -18,7 +18,6 @@ object RequestUtils extends js.Object {
   var RELATIVE_PATH: stdLib.RegExp = js.native
   // methods
   def buildPath(src: java.lang.String): java.lang.String = js.native
-  // methods
   def buildPath(src: java.lang.String, data: js.Object): java.lang.String = js.native
   def formatQueryString(data: js.Object): java.lang.String = js.native
   def formatQueryString(data: js.Object, query: js.Array[js.Object]): java.lang.String = js.native

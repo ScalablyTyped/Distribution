@@ -9,34 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 object striptagsModMembers extends js.Object {
   /**
-   * Creates an array of elements split into groups the length of size. If collection can’t be split evenly, the
-   * final chunk will be the remaining elements.
-   *
-   * @param html The text to process.
-   * @param allowedTags Tags which aren't removed
-   * @param tagReplacement Removed tags are replaced with this
-   * @return Returns the input string, sans any html tags that weren't allowed
-   */
+    * Creates an array of elements split into groups the length of size. If collection can’t be split evenly, the
+    * final chunk will be the remaining elements.
+    *
+    * @param html The text to process.
+    * @param allowedTags Tags which aren't removed
+    * @param tagReplacement Removed tags are replaced with this
+    * @return Returns the input string, sans any html tags that weren't allowed
+    */
   def apply(html: java.lang.String): java.lang.String = js.native
-  /**
-   * Creates an array of elements split into groups the length of size. If collection can’t be split evenly, the
-   * final chunk will be the remaining elements.
-   *
-   * @param html The text to process.
-   * @param allowedTags Tags which aren't removed
-   * @param tagReplacement Removed tags are replaced with this
-   * @return Returns the input string, sans any html tags that weren't allowed
-   */
   def apply(html: java.lang.String, allowedTags: java.lang.String | js.Array[java.lang.String]): java.lang.String = js.native
-  /**
-   * Creates an array of elements split into groups the length of size. If collection can’t be split evenly, the
-   * final chunk will be the remaining elements.
-   *
-   * @param html The text to process.
-   * @param allowedTags Tags which aren't removed
-   * @param tagReplacement Removed tags are replaced with this
-   * @return Returns the input string, sans any html tags that weren't allowed
-   */
   def apply(
     html: java.lang.String,
     allowedTags: java.lang.String | js.Array[java.lang.String],

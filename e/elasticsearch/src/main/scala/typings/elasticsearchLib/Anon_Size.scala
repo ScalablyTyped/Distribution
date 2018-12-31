@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Size extends js.Object {
   var index: java.lang.String | js.Array[java.lang.String]
   var query: js.UndefOr[js.Any] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TSTypeParameterInstantiation extends BaseNode {
   var params: js.Array[TSType]
   @JSName("type")

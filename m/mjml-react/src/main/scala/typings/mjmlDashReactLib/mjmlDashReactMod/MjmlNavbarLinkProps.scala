@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MjmlNavbarLinkProps extends js.Object {
   var color: js.UndefOr[csstypeLib.csstypeMod.ColorProperty] = js.undefined
   var fontFamily: js.UndefOr[java.lang.String] = js.undefined

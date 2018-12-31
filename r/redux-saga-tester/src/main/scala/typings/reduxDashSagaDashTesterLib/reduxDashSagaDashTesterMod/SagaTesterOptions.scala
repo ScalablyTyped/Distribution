@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SagaTesterOptions[StateType] extends js.Object {
   var combineReducers: js.UndefOr[
     js.Function1[

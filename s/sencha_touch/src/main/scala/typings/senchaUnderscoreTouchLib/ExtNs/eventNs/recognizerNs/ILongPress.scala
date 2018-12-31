@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILongPress extends IRecognizer {
   /** [Method] Returns the value of minDuration
   		* @returns Number

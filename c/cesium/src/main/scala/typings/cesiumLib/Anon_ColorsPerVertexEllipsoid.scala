@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ColorsPerVertexEllipsoid extends js.Object {
   var colors: js.UndefOr[js.Array[cesiumLib.cesiumMod.CesiumNs.Color]] = js.undefined
   var colorsPerVertex: js.UndefOr[scala.Boolean] = js.undefined

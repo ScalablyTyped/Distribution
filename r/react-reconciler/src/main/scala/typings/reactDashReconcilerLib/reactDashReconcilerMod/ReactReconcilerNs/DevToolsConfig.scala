@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DevToolsConfig[Instance, TextInstance] extends js.Object {
   var bundleType: BundleType
   // Note: this actually *does* depend on Fiber internal fields.

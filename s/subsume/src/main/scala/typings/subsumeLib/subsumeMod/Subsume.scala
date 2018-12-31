@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Subsume extends js.Object {
   var id: java.lang.String
   var postfix: java.lang.String

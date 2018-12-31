@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // defaultPhrases.js
-
 trait DayPickerPhrases extends js.Object {
   var calendarLabel: js.UndefOr[java.lang.String] = js.undefined
   var chooseAvailableDate: js.UndefOr[js.Function1[/* date */ java.lang.String, java.lang.String]] = js.undefined

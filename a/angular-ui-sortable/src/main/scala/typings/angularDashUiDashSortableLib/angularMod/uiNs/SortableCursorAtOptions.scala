@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Base Sortable //////////////////////////////////////////////////
-
 trait SortableCursorAtOptions extends js.Object {
   var bottom: js.UndefOr[scala.Double] = js.undefined
   var left: js.UndefOr[scala.Double] = js.undefined

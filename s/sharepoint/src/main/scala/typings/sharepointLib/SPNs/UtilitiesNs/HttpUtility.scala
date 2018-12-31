@@ -13,7 +13,7 @@ class HttpUtility () extends js.Object
 @js.native
 object HttpUtility extends js.Object {
   /** Appends correct "Source" parameter to the specified url, and then navigates to this url.
-                  "Source" parameter is recognized in many places in SharePoint, usually to determine "Cancel" behavior. */
+    "Source" parameter is recognized in many places in SharePoint, usually to determine "Cancel" behavior. */
   def appendSourceAndNavigateTo(url: java.lang.String): scala.Unit = js.native
   def ecmaScriptStringLiteralEncode(scriptLiteralToEncode: java.lang.String): java.lang.String = js.native
   def escapeXmlText(stringToEscape: java.lang.String): java.lang.String = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectionInfo extends js.Object {
   var collection: java.lang.String
   var connectionOptions: js.UndefOr[mongodbLib.mongodbMod.MongoClientOptions] = js.undefined

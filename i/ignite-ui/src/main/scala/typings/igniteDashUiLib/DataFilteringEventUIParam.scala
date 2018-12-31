@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataFilteringEventUIParam extends js.Object {
   /**
   	 * Gets the column index. Applicable only when filtering mode is "simple".

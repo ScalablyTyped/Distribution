@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InlineImage extends js.Object {
   def copy(): InlineImage
   def getAltDescription(): java.lang.String

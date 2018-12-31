@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Double protected () extends js.Object {
   /**
-       * @param value The number we want to represent as a double.
-       */
+    * @param value The number we want to represent as a double.
+    */
   def this(value: scala.Double) = this()
 }
 

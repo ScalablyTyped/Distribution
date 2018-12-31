@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	*	Video recording device info
 	*/
-
 trait VideoSourceInfo extends js.Object {
   /**
   		*	Device id that can be used to choose video recording device

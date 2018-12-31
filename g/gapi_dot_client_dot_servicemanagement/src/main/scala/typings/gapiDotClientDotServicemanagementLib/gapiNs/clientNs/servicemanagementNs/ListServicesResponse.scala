@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListServicesResponse extends js.Object {
   /** Token that can be passed to `ListServices` to resume a paginated query. */
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined

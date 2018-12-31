@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Format extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -23,16 +22,16 @@ trait Anon_Format extends js.Object {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The format of the source text, in either HTML (default) or plain-text. A
-                   * value of "html" indicates HTML and a value of "text" indicates plain-text.
-                   */
+    * The format of the source text, in either HTML (default) or plain-text. A
+    * value of "html" indicates HTML and a value of "text" indicates plain-text.
+    */
   var format: js.UndefOr[java.lang.String] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The `model` type requested for this translation. Valid values are
-                   * listed in public documentation.
-                   */
+    * The `model` type requested for this translation. Valid values are
+    * listed in public documentation.
+    */
   var model: js.UndefOr[java.lang.String] = js.undefined
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
@@ -41,26 +40,26 @@ trait Anon_Format extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * The input text to translate. Repeat this parameter to perform translation
-                   * operations on multiple text inputs.
-                   */
+    * The input text to translate. Repeat this parameter to perform translation
+    * operations on multiple text inputs.
+    */
   var q: java.lang.String
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The language of the source text, set to one of the language codes listed in
-                   * Language Support. If the source language is not specified, the API will
-                   * attempt to identify the source language automatically and return it within
-                   * the response.
-                   */
+    * The language of the source text, set to one of the language codes listed in
+    * Language Support. If the source language is not specified, the API will
+    * attempt to identify the source language automatically and return it within
+    * the response.
+    */
   var source: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The language to use for translation of the input text, set to one of the
-                   * language codes listed in Language Support.
-                   */
+    * The language to use for translation of the input text, set to one of the
+    * language codes listed in Language Support.
+    */
   var target: java.lang.String
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

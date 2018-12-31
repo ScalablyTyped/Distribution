@@ -5,28 +5,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TaskAgentReference extends js.Object {
   var _links: js.Any
   /**
-       * Gets or sets a value indicating whether or not this agent should be enabled for job execution.
-       */
+    * Gets or sets a value indicating whether or not this agent should be enabled for job execution.
+    */
   var enabled: scala.Boolean
   /**
-       * Gets the identifier of the agent.
-       */
+    * Gets the identifier of the agent.
+    */
   var id: scala.Double
   /**
-       * Gets the name of the agent.
-       */
+    * Gets the name of the agent.
+    */
   var name: java.lang.String
   /**
-       * Gets the current connectivity status of the agent.
-       */
+    * Gets the current connectivity status of the agent.
+    */
   var status: TaskAgentStatus
   /**
-       * Gets the version of the agent.
-       */
+    * Gets the version of the agent.
+    */
   var version: java.lang.String
 }
 

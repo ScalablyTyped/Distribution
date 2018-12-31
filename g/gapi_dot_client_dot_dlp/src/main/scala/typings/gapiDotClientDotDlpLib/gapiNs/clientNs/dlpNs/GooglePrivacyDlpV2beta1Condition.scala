@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GooglePrivacyDlpV2beta1Condition extends js.Object {
   /** Field within the record this condition is evaluated against. [required] */
   var field: js.UndefOr[GooglePrivacyDlpV2beta1FieldId] = js.undefined

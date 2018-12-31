@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimePickerProps extends js.Object {
   var allowEmpty: scala.Boolean
   var className: java.lang.String

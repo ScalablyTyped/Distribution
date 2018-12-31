@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 	 */
 @JSImport("engine.io", "Server")
 @js.native
+/**
+		 * Initializes the server
+		 */
 class Server ()
   extends engineDotIoLib.engineDotIoMod.engineNs.Server {
-  /**
-  		 * Initializes the server
-  		 */
   def this(opts: engineDotIoLib.engineDotIoMod.engineNs.ServerOptions) = this()
 }
 

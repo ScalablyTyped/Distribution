@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EntityCluster extends js.Object {
   var clusterBillboards: scala.Boolean
   var clusterEvent: Event

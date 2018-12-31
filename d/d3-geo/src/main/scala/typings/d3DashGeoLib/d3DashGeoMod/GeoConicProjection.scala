@@ -8,14 +8,14 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GeoConicProjection extends GeoProjection {
   /**
-       * Return the standard parallels for the conic projection in degrees.
-       */
+    * Return the standard parallels for the conic projection in degrees.
+    */
   def parallels(): js.Tuple2[scala.Double, scala.Double] = js.native
   /**
-       * Set the standard parallels for the conic projection in degrees and return the projection.
-       *
-       * @param value A two-dimensional array representing the standard parallels in degrees.
-       */
+    * Set the standard parallels for the conic projection in degrees and return the projection.
+    *
+    * @param value A two-dimensional array representing the standard parallels in degrees.
+    */
   def parallels(value: js.Tuple2[scala.Double, scala.Double]): this.type = js.native
 }
 

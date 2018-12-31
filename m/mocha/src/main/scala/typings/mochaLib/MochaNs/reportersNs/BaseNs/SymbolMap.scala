@@ -6,11 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * Default symbol map
-             *
-             * @see https://mochajs.org/api/module-base#.symbols
-             */
-
+  * Default symbol map
+  *
+  * @see https://mochajs.org/api/module-base#.symbols
+  */
 trait SymbolMap
   extends /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String] {
   var bang: java.lang.String

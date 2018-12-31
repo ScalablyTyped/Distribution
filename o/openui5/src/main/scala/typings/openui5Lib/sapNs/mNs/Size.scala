@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait Size extends js.Object
 
 /**
-     * Enumeration of possible size settings.
-    */
+  * Enumeration of possible size settings.
+  */
 @JSGlobal("sap.m.Size")
 @js.native
 object Size extends js.Object {

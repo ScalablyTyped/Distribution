@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait I18nState extends js.Object {
   var locale: java.lang.String
   var translations: TranslationObjects

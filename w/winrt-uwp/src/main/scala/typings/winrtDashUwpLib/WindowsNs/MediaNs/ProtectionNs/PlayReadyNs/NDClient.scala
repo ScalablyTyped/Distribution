@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class NDClient protected () extends js.Object {
   /**
-                       * Creates a new instance of the NDClient class.
-                       * @param downloadEngine The download engine used to stream protected media content from a transmitter.
-                       * @param streamParser The stream parser used to parse data from a media stream.
-                       * @param pMessenger The messenger used to send messages between the PlayReady-ND receiver and transmitter.
-                       */
+    * Creates a new instance of the NDClient class.
+    * @param downloadEngine The download engine used to stream protected media content from a transmitter.
+    * @param streamParser The stream parser used to parse data from a media stream.
+    * @param pMessenger The messenger used to send messages between the PlayReady-ND receiver and transmitter.
+    */
   def this(downloadEngine: INDDownloadEngine, streamParser: INDStreamParser, pMessenger: INDMessenger) = this()
   /** Notifies listeners that a closed caption acquisition operation has completed. */
   @JSName("onclosedcaptiondatareceived")
@@ -60,10 +60,10 @@ class NDClient protected () extends js.Object {
   /** Closes the current playback session regardless of whether it is in the registration, proximity detection, license fetch, or play state. */
   def close(): scala.Unit = js.native
   /**
-                       * Performs a license fetch between a client receiver and a transmitter.
-                       * @param licenseFetchDescriptor Descriptor for the license being fetched.
-                       * @return The result of the asynchronous license fetch call.
-                       */
+    * Performs a license fetch between a client receiver and a transmitter.
+    * @param licenseFetchDescriptor Descriptor for the license being fetched.
+    * @return The result of the asynchronous license fetch call.
+    */
   def licenseFetchAsync(licenseFetchDescriptor: INDLicenseFetchDescriptor): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[INDLicenseFetchResult] = js.native
   /** Notifies listeners that a closed caption acquisition operation has completed. */
   def onclosedcaptiondatareceived(ev: INDClosedCaptionDataReceivedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[NDClient]): scala.Unit = js.native
@@ -76,10 +76,10 @@ class NDClient protected () extends js.Object {
   /** Notifies listeners that the app should start re-registration by calling the ReRegistrationAsync method. */
   def onreregistrationneeded(ev: js.Any with winrtDashUwpLib.WindowsNs.WinRTEvent[NDClient]): scala.Unit = js.native
   /**
-                       * Performs a proximity detection and reregistration between a client receiver and a transmitter.
-                       * @param registrationCustomData Custom data for the registration request.
-                       * @return The result of the asynchronous reregistration call.
-                       */
+    * Performs a proximity detection and reregistration between a client receiver and a transmitter.
+    * @param registrationCustomData Custom data for the registration request.
+    * @return The result of the asynchronous reregistration call.
+    */
   def reRegistrationAsync(registrationCustomData: INDCustomData): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   def removeEventListener(`type`: java.lang.String, listener: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_]): scala.Unit = js.native
   @JSName("removeEventListener")
@@ -108,13 +108,13 @@ class NDClient protected () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[NDClient, _]
   ): scala.Unit = js.native
   /**
-                       * Starts the registration, proximity detection, and license fetch procedures between a client receiver and a transmitter.
-                       * @param contentUrl The URL of the streamed content.
-                       * @param startAsyncOptions The asynchronous start options. See the NDStartAsyncOptions enumeration for a detailed description of these options.
-                       * @param registrationCustomData The custom data type identifier that is used for registration with the transmitter.
-                       * @param licenseFetchDescriptor The descriptor used for license fetching.
-                       * @return The result of the asynchronous start call.
-                       */
+    * Starts the registration, proximity detection, and license fetch procedures between a client receiver and a transmitter.
+    * @param contentUrl The URL of the streamed content.
+    * @param startAsyncOptions The asynchronous start options. See the NDStartAsyncOptions enumeration for a detailed description of these options.
+    * @param registrationCustomData The custom data type identifier that is used for registration with the transmitter.
+    * @param licenseFetchDescriptor The descriptor used for license fetching.
+    * @return The result of the asynchronous start call.
+    */
   def startAsync(
     contentUrl: winrtDashUwpLib.WindowsNs.FoundationNs.Uri,
     startAsyncOptions: scala.Double,

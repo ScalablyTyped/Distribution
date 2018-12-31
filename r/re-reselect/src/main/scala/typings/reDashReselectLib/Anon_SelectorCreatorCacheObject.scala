@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SelectorCreatorCacheObject extends js.Object {
-  var cacheObject: js.UndefOr[js.Any] = js.undefined
-  var selectorCreator: js.Any
+  var cacheObject: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ICacheObject */ js.UndefOr[
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ICacheObject */ js.Any
+  ] = js.undefined
+  var selectorCreator: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify CreateSelectorInstance */ js.Any
 }
 

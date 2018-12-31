@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AutomaticScaling extends js.Object {
   /**
-               * Amount of time that the Autoscaler (https://cloud.google.com/compute/docs/autoscaler/) should wait between changes to the number of virtual machines.
-               * Only applicable for VM runtimes.
-               */
+    * Amount of time that the Autoscaler (https://cloud.google.com/compute/docs/autoscaler/) should wait between changes to the number of virtual machines.
+    * Only applicable for VM runtimes.
+    */
   var coolDownPeriod: js.UndefOr[java.lang.String] = js.undefined
   /** Target scaling by CPU usage. */
   var cpuUtilization: js.UndefOr[CpuUtilization] = js.undefined

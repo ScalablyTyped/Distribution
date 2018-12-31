@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_GoogleOrderId extends js.Object {
   /** User visible order ID set in proposed order. */
   var actionOrderId: java.lang.String

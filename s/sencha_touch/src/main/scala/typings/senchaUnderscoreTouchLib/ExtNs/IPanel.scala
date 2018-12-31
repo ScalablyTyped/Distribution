@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPanel extends IContainer {
   /** [Config Option] (Number/Boolean/String) */
   var bodyBorder: js.UndefOr[js.Any] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SetCacheOptions extends GetCacheOptions {
   var cache: scala.Boolean
   var expires: scala.Boolean | scala.Double

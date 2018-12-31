@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MockRes extends js.Object {
   var append: sinonLib.sinonMod.SinonNs.SinonStub
   var attachement: sinonLib.sinonMod.SinonNs.SinonStub

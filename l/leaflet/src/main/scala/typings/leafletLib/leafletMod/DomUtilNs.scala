@@ -21,12 +21,9 @@ object DomUtilNs extends js.Object {
   def enableImageDrag(): scala.Unit = js.native
   def enableTextSelection(): scala.Unit = js.native
   /**
-       * Get Element by its ID or with the given HTML-Element
-       */
+    * Get Element by its ID or with the given HTML-Element
+    */
   def get(element: java.lang.String): stdLib.HTMLElement | scala.Null = js.native
-  /**
-       * Get Element by its ID or with the given HTML-Element
-       */
   def get(element: stdLib.HTMLElement): stdLib.HTMLElement | scala.Null = js.native
   def getClass(el: stdLib.HTMLElement): java.lang.String = js.native
   def getPosition(el: stdLib.HTMLElement): leafletLib.leafletMod.Point = js.native

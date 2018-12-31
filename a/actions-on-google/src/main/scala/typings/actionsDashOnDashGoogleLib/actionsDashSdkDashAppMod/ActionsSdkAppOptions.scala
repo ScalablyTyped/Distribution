@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActionsSdkAppOptions extends js.Object {
   /** Express HTTP request object. */
   var request: expressLib.expressMod.eNs.Request

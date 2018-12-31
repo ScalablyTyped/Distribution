@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataViewColumnAggregates extends js.Object {
   var average: js.UndefOr[PrimitiveValue] = js.undefined
   var count: js.UndefOr[scala.Double] = js.undefined

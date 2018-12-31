@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UnityLauncher extends js.Object {
   def addAction(name: java.lang.String, onActionInvoked: js.Function): js.Any
   def clearCount(): js.Any

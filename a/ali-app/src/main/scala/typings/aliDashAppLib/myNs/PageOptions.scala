@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * Page 实现的接口对象
 	 */
-
 trait PageOptions
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var data: js.Any

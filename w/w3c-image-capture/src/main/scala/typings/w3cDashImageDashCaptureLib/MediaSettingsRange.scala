@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaSettingsRange extends js.Object {
   val max: scala.Double
   val min: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VideoStatistics extends js.Object {
   /** The number of comments for the video. */
   var commentCount: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConcurrentAccessRestriction extends js.Object {
   /** Whether access is granted for this (user, device, volume). */
   var deviceAllowed: js.UndefOr[scala.Boolean] = js.undefined

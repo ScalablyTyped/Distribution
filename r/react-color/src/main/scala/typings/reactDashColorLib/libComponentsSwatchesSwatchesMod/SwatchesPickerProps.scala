@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SwatchesPickerProps
   extends reactDashColorLib.reactDashColorMod.ColorPickerProps[SwatchesPicker] {
   var colors: js.UndefOr[js.Array[js.Array[java.lang.String]]] = js.undefined

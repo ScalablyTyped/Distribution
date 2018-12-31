@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Algorithms extends js.Object {
   var cipher: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var compress: js.UndefOr[js.Array[java.lang.String]] = js.undefined

@@ -17,7 +17,6 @@ trait Observable[T] extends IObservable[T] {
   ): Observable[T] = js.native
       // alias for catch
   def catchException(second: Observable[T]): Observable[T] = js.native
-      // alias for catch
   def combineLatest[T2](second: rxDashCoreLib.RxNs.IPromise[T2]): Observable[js.Tuple2[T, T2]] = js.native
       // alias for catch
   def combineLatest[T2](second: Observable[T2]): Observable[js.Tuple2[T, T2]] = js.native
@@ -32,7 +31,7 @@ trait Observable[T] extends IObservable[T] {
   def combineLatest[T2, T3](second: Observable[T2], third: Observable[T3]): Observable[js.Tuple3[T, T2, T3]] = js.native
   def combineLatest[TOther, TResult](
     souces: js.Array[Observable[TOther] | rxDashCoreLib.RxNs.IPromise[TOther]],
-    resultSelector: js.Function2[/* firstValue */ T, /* repeated */TOther, TResult]
+    resultSelector: js.Function2[/* firstValue */ T, /* repeated */ TOther, TResult]
   ): Observable[TResult] = js.native
   def combineLatest[T2, T3, T4](
     second: rxDashCoreLib.RxNs.IPromise[T2],
@@ -384,14 +383,11 @@ trait Observable[T] extends IObservable[T] {
       // alias for do
   def doAction(): Observable[T] = js.native
   def doAction(observer: Observer[T]): Observable[T] = js.native
-      // alias for do
   def doAction(onNext: js.Function1[/* value */ T, scala.Unit]): Observable[T] = js.native
-      // alias for do
   def doAction(
     onNext: js.Function1[/* value */ T, scala.Unit],
     onError: js.Function1[/* exception */ stdLib.Error, scala.Unit]
   ): Observable[T] = js.native
-      // alias for do
   def doAction(
     onNext: js.Function1[/* value */ T, scala.Unit],
     onError: js.Function1[/* exception */ stdLib.Error, scala.Unit],
@@ -403,36 +399,26 @@ trait Observable[T] extends IObservable[T] {
   def doOnError(onError: js.Function1[/* exception */ js.Any, scala.Unit], thisArg: js.Any): Observable[T] = js.native
       // alias for do
   def doOnNext(onNext: js.Function1[/* value */ T, scala.Unit]): Observable[T] = js.native
-      // alias for do
   def doOnNext(onNext: js.Function1[/* value */ T, scala.Unit], thisArg: js.Any): Observable[T] = js.native
   // Experimental Flattening
   /**
-           * Performs a exclusive waiting for the first to finish before subscribing to another observable.
-           * Observables that come in between subscriptions will be dropped on the floor.
-           * Can be applied on `Observable<Observable<R>>` or `Observable<IPromise<R>>`.
-           * @since 2.2.28
-           * @returns A exclusive observable with only the results that happen when subscribed.
-           */
+    * Performs a exclusive waiting for the first to finish before subscribing to another observable.
+    * Observables that come in between subscriptions will be dropped on the floor.
+    * Can be applied on `Observable<Observable<R>>` or `Observable<IPromise<R>>`.
+    * @since 2.2.28
+    * @returns A exclusive observable with only the results that happen when subscribed.
+    */
   def exclusive[R](): Observable[R] = js.native
   /**
-           * Performs a exclusive map waiting for the first to finish before subscribing to another observable.
-           * Observables that come in between subscriptions will be dropped on the floor.
-           * Can be applied on `Observable<Observable<I>>` or `Observable<IPromise<I>>`.
-           * @since 2.2.28
-           * @param selector Selector to invoke for every item in the current subscription.
-           * @param [thisArg] An optional context to invoke with the selector parameter.
-           * @returns An exclusive observable with only the results that happen when subscribed.
-           */
+    * Performs a exclusive map waiting for the first to finish before subscribing to another observable.
+    * Observables that come in between subscriptions will be dropped on the floor.
+    * Can be applied on `Observable<Observable<I>>` or `Observable<IPromise<I>>`.
+    * @since 2.2.28
+    * @param selector Selector to invoke for every item in the current subscription.
+    * @param [thisArg] An optional context to invoke with the selector parameter.
+    * @returns An exclusive observable with only the results that happen when subscribed.
+    */
   def exclusiveMap[I, R](selector: js.Function3[/* value */ I, /* index */ scala.Double, /* source */ Observable[I], R]): Observable[R] = js.native
-  /**
-           * Performs a exclusive map waiting for the first to finish before subscribing to another observable.
-           * Observables that come in between subscriptions will be dropped on the floor.
-           * Can be applied on `Observable<Observable<I>>` or `Observable<IPromise<I>>`.
-           * @since 2.2.28
-           * @param selector Selector to invoke for every item in the current subscription.
-           * @param [thisArg] An optional context to invoke with the selector parameter.
-           * @returns An exclusive observable with only the results that happen when subscribed.
-           */
   def exclusiveMap[I, R](
     selector: js.Function3[/* value */ I, /* index */ scala.Double, /* source */ Observable[I], R],
     thisArg: js.Any
@@ -463,13 +449,13 @@ trait Observable[T] extends IObservable[T] {
     resultSelector: js.Function2[/* item */ T, /* other */ TOther, TResult]
   ): Observable[TResult] = js.native
   /**
-           *  Projects each element of an observable sequence into a new sequence of observable sequences by incorporating the element's index and then
-           *  transforms an observable sequence of observable sequences into an observable sequence producing values only from the most recent observable sequence.
-           * @param selector A transform function to apply to each source element; the second parameter of the function represents the index of the source element.
-           * @param [thisArg] Object to use as this when executing callback.
-           * @returns An observable sequence whose elements are the result of invoking the transform function on each element of source producing an Observable of Observable sequences
-           *  and that at any point in time produces the elements of the most recent inner observable sequence that has been received.
-           */
+    *  Projects each element of an observable sequence into a new sequence of observable sequences by incorporating the element's index and then
+    *  transforms an observable sequence of observable sequences into an observable sequence producing values only from the most recent observable sequence.
+    * @param selector A transform function to apply to each source element; the second parameter of the function represents the index of the source element.
+    * @param [thisArg] Object to use as this when executing callback.
+    * @returns An observable sequence whose elements are the result of invoking the transform function on each element of source producing an Observable of Observable sequences
+    *  and that at any point in time produces the elements of the most recent inner observable sequence that has been received.
+    */
   def flatMapLatest[TResult](
     selector: js.Function3[
       /* value */ T, 
@@ -478,14 +464,6 @@ trait Observable[T] extends IObservable[T] {
       Observable[TResult]
     ]
   ): Observable[TResult] = js.native
-  /**
-           *  Projects each element of an observable sequence into a new sequence of observable sequences by incorporating the element's index and then
-           *  transforms an observable sequence of observable sequences into an observable sequence producing values only from the most recent observable sequence.
-           * @param selector A transform function to apply to each source element; the second parameter of the function represents the index of the source element.
-           * @param [thisArg] Object to use as this when executing callback.
-           * @returns An observable sequence whose elements are the result of invoking the transform function on each element of source producing an Observable of Observable sequences
-           *  and that at any point in time produces the elements of the most recent inner observable sequence that has been received.
-           */
   def flatMapLatest[TResult](
     selector: js.Function3[
       /* value */ T, 
@@ -496,26 +474,18 @@ trait Observable[T] extends IObservable[T] {
     thisArg: js.Any
   ): Observable[TResult] = js.native
   /**
-           * Projects each notification of an observable sequence to an observable sequence and merges the resulting observable sequences into one observable sequence.
-           * @param onNext A transform function to apply to each element; the second parameter of the function represents the index of the source element.
-           * @param onError A transform function to apply when an error occurs in the source sequence.
-           * @param onCompleted A transform function to apply when the end of the source sequence is reached.
-           * @param [thisArg] An optional "this" to use to invoke each transform.
-           * @returns An observable sequence whose elements are the result of invoking the one-to-many transform function corresponding to each notification in the input sequence.
-           */
+    * Projects each notification of an observable sequence to an observable sequence and merges the resulting observable sequences into one observable sequence.
+    * @param onNext A transform function to apply to each element; the second parameter of the function represents the index of the source element.
+    * @param onError A transform function to apply when an error occurs in the source sequence.
+    * @param onCompleted A transform function to apply when the end of the source sequence is reached.
+    * @param [thisArg] An optional "this" to use to invoke each transform.
+    * @returns An observable sequence whose elements are the result of invoking the one-to-many transform function corresponding to each notification in the input sequence.
+    */
   def flatMapObserver[T2, T3, T4](
     onNext: js.Function2[/* value */ T, /* index */ scala.Double, Observable[T2]],
     onError: js.Function1[/* exception */ js.Any, Observable[T3]],
     onCompleted: js.Function0[Observable[T4]]
   ): Observable[T2 | T3 | T4] = js.native
-  /**
-           * Projects each notification of an observable sequence to an observable sequence and merges the resulting observable sequences into one observable sequence.
-           * @param onNext A transform function to apply to each element; the second parameter of the function represents the index of the source element.
-           * @param onError A transform function to apply when an error occurs in the source sequence.
-           * @param onCompleted A transform function to apply when the end of the source sequence is reached.
-           * @param [thisArg] An optional "this" to use to invoke each transform.
-           * @returns An observable sequence whose elements are the result of invoking the one-to-many transform function corresponding to each notification in the input sequence.
-           */
   def flatMapObserver[T2, T3, T4](
     onNext: js.Function2[/* value */ T, /* index */ scala.Double, Observable[T2]],
     onError: js.Function1[/* exception */ js.Any, Observable[T3]],
@@ -571,15 +541,15 @@ trait Observable[T] extends IObservable[T] {
     ]
   ): Observable[T] = js.native
   /**
-           *  Applies an accumulator function over an observable sequence and returns each intermediate result. The optional seed value is used as the initial accumulator value.
-           *  For aggregation behavior with no intermediate results, see Observable.aggregate.
-           * @example
-           *  var res = source.scan(function (acc, x) { return acc + x; });
-           *  var res = source.scan(function (acc, x) { return acc + x; }, 0);
-           * @param accumulator An accumulator function to be invoked on each element.
-           * @param seed The initial accumulator value.
-           * @returns An observable sequence containing the accumulated values.
-           */
+    *  Applies an accumulator function over an observable sequence and returns each intermediate result. The optional seed value is used as the initial accumulator value.
+    *  For aggregation behavior with no intermediate results, see Observable.aggregate.
+    * @example
+    *  var res = source.scan(function (acc, x) { return acc + x; });
+    *  var res = source.scan(function (acc, x) { return acc + x; }, 0);
+    * @param accumulator An accumulator function to be invoked on each element.
+    * @param seed The initial accumulator value.
+    * @returns An observable sequence containing the accumulated values.
+    */
   def scan[TAcc](
     accumulator: js.Function4[
       /* acc */ TAcc, 
@@ -627,27 +597,18 @@ trait Observable[T] extends IObservable[T] {
   ): Observable[TResult] = js.native
       // alias for selectMany
   /**
-           * Projects each notification of an observable sequence to an observable sequence and merges the resulting observable sequences into one observable sequence.
-           * @param onNext A transform function to apply to each element; the second parameter of the function represents the index of the source element.
-           * @param onError A transform function to apply when an error occurs in the source sequence.
-           * @param onCompleted A transform function to apply when the end of the source sequence is reached.
-           * @param [thisArg] An optional "this" to use to invoke each transform.
-           * @returns An observable sequence whose elements are the result of invoking the one-to-many transform function corresponding to each notification in the input sequence.
-           */
+    * Projects each notification of an observable sequence to an observable sequence and merges the resulting observable sequences into one observable sequence.
+    * @param onNext A transform function to apply to each element; the second parameter of the function represents the index of the source element.
+    * @param onError A transform function to apply when an error occurs in the source sequence.
+    * @param onCompleted A transform function to apply when the end of the source sequence is reached.
+    * @param [thisArg] An optional "this" to use to invoke each transform.
+    * @returns An observable sequence whose elements are the result of invoking the one-to-many transform function corresponding to each notification in the input sequence.
+    */
   def selectManyObserver[T2, T3, T4](
     onNext: js.Function2[/* value */ T, /* index */ scala.Double, Observable[T2]],
     onError: js.Function1[/* exception */ js.Any, Observable[T3]],
     onCompleted: js.Function0[Observable[T4]]
   ): Observable[T2 | T3 | T4] = js.native
-      // alias for selectMany
-  /**
-           * Projects each notification of an observable sequence to an observable sequence and merges the resulting observable sequences into one observable sequence.
-           * @param onNext A transform function to apply to each element; the second parameter of the function represents the index of the source element.
-           * @param onError A transform function to apply when an error occurs in the source sequence.
-           * @param onCompleted A transform function to apply when the end of the source sequence is reached.
-           * @param [thisArg] An optional "this" to use to invoke each transform.
-           * @returns An observable sequence whose elements are the result of invoking the one-to-many transform function corresponding to each notification in the input sequence.
-           */
   def selectManyObserver[T2, T3, T4](
     onNext: js.Function2[/* value */ T, /* index */ scala.Double, Observable[T2]],
     onError: js.Function1[/* exception */ js.Any, Observable[T3]],
@@ -655,13 +616,13 @@ trait Observable[T] extends IObservable[T] {
     thisArg: js.Any
   ): Observable[T2 | T3 | T4] = js.native
   /**
-           *  Projects each element of an observable sequence into a new sequence of observable sequences by incorporating the element's index and then
-           *  transforms an observable sequence of observable sequences into an observable sequence producing values only from the most recent observable sequence.
-           * @param selector A transform function to apply to each source element; the second parameter of the function represents the index of the source element.
-           * @param [thisArg] Object to use as this when executing callback.
-           * @returns An observable sequence whose elements are the result of invoking the transform function on each element of source producing an Observable of Observable sequences
-           *  and that at any point in time produces the elements of the most recent inner observable sequence that has been received.
-           */
+    *  Projects each element of an observable sequence into a new sequence of observable sequences by incorporating the element's index and then
+    *  transforms an observable sequence of observable sequences into an observable sequence producing values only from the most recent observable sequence.
+    * @param selector A transform function to apply to each source element; the second parameter of the function represents the index of the source element.
+    * @param [thisArg] Object to use as this when executing callback.
+    * @returns An observable sequence whose elements are the result of invoking the transform function on each element of source producing an Observable of Observable sequences
+    *  and that at any point in time produces the elements of the most recent inner observable sequence that has been received.
+    */
   def selectSwitch[TResult](
     selector: js.Function3[
       /* value */ T, 
@@ -670,14 +631,6 @@ trait Observable[T] extends IObservable[T] {
       Observable[TResult]
     ]
   ): Observable[TResult] = js.native
-  /**
-           *  Projects each element of an observable sequence into a new sequence of observable sequences by incorporating the element's index and then
-           *  transforms an observable sequence of observable sequences into an observable sequence producing values only from the most recent observable sequence.
-           * @param selector A transform function to apply to each source element; the second parameter of the function represents the index of the source element.
-           * @param [thisArg] Object to use as this when executing callback.
-           * @returns An observable sequence whose elements are the result of invoking the transform function on each element of source producing an Observable of Observable sequences
-           *  and that at any point in time produces the elements of the most recent inner observable sequence that has been received.
-           */
   def selectSwitch[TResult](
     selector: js.Function3[
       /* value */ T, 
@@ -706,27 +659,17 @@ trait Observable[T] extends IObservable[T] {
   def switchLatest(): T = js.native
       // alias for selectSwitch
   /**
-           *  Projects each element of an observable sequence into a new sequence of observable sequences by incorporating the element's index and then
-           *  transforms an observable sequence of observable sequences into an observable sequence producing values only from the most recent observable sequence.
-           * @param selector A transform function to apply to each source element; the second parameter of the function represents the index of the source element.
-           * @param [thisArg] Object to use as this when executing callback.
-           * @since 2.2.28
-           * @returns An observable sequence whose elements are the result of invoking the transform function on each element of source producing an Observable of Observable sequences
-           *  and that at any point in time produces the elements of the most recent inner observable sequence that has been received.
-           */
+    *  Projects each element of an observable sequence into a new sequence of observable sequences by incorporating the element's index and then
+    *  transforms an observable sequence of observable sequences into an observable sequence producing values only from the most recent observable sequence.
+    * @param selector A transform function to apply to each source element; the second parameter of the function represents the index of the source element.
+    * @param [thisArg] Object to use as this when executing callback.
+    * @since 2.2.28
+    * @returns An observable sequence whose elements are the result of invoking the transform function on each element of source producing an Observable of Observable sequences
+    *  and that at any point in time produces the elements of the most recent inner observable sequence that has been received.
+    */
   def switchMap[TResult](
     selector: js.Function3[/* value */ T, /* index */ scala.Double, /* source */ Observable[T], TResult]
   ): Observable[TResult] = js.native
-      // alias for selectSwitch
-  /**
-           *  Projects each element of an observable sequence into a new sequence of observable sequences by incorporating the element's index and then
-           *  transforms an observable sequence of observable sequences into an observable sequence producing values only from the most recent observable sequence.
-           * @param selector A transform function to apply to each source element; the second parameter of the function represents the index of the source element.
-           * @param [thisArg] Object to use as this when executing callback.
-           * @since 2.2.28
-           * @returns An observable sequence whose elements are the result of invoking the transform function on each element of source producing an Observable of Observable sequences
-           *  and that at any point in time produces the elements of the most recent inner observable sequence that has been received.
-           */
   def switchMap[TResult](
     selector: js.Function3[/* value */ T, /* index */ scala.Double, /* source */ Observable[T], TResult],
     thisArg: js.Any
@@ -749,14 +692,11 @@ trait Observable[T] extends IObservable[T] {
   def tap(): Observable[T] = js.native
       // alias for do
   def tap(observer: Observer[T]): Observable[T] = js.native
-      // alias for do
   def tap(onNext: js.Function1[/* value */ T, scala.Unit]): Observable[T] = js.native
-      // alias for do
   def tap(
     onNext: js.Function1[/* value */ T, scala.Unit],
     onError: js.Function1[/* exception */ stdLib.Error, scala.Unit]
   ): Observable[T] = js.native
-      // alias for do
   def tap(
     onNext: js.Function1[/* value */ T, scala.Unit],
     onError: js.Function1[/* exception */ stdLib.Error, scala.Unit],
@@ -769,12 +709,9 @@ trait Observable[T] extends IObservable[T] {
   def tapOnNext(onNext: js.Function1[/* value */ T, scala.Unit]): Observable[T] = js.native
   def tapOnNext(onNext: js.Function1[/* value */ T, scala.Unit], thisArg: js.Any): Observable[T] = js.native
   /**
-           * @deprecated use #debounce or #throttleWithTimeout instead.
-           */
+    * @deprecated use #debounce or #throttleWithTimeout instead.
+    */
   def throttle(dueTime: scala.Double): Observable[T] = js.native
-  /**
-           * @deprecated use #debounce or #throttleWithTimeout instead.
-           */
   def throttle(dueTime: scala.Double, scheduler: IScheduler): Observable[T] = js.native
   def throttleWithTimeout(dueTime: scala.Double): Observable[T] = js.native
   def throttleWithTimeout(dueTime: scala.Double, scheduler: IScheduler): Observable[T] = js.native
@@ -791,37 +728,26 @@ trait Observable[T] extends IObservable[T] {
       // alias for subscribe
   def toArray(): Observable[js.Array[T]] = js.native
   /**
-           * Converts an existing observable sequence to an ES6 Compatible Promise
-           * @example
-           * var promise = Rx.Observable.return(42).toPromise(RSVP.Promise);
-           *
-           * // With config
-           * Rx.config.Promise = RSVP.Promise;
-           * var promise = Rx.Observable.return(42).toPromise();
-           * @param [promiseCtor] The constructor of the promise. If not provided, it looks for it in Rx.config.Promise.
-           * @returns An ES6 compatible promise with the last value from the observable sequence.
-           */
+    * Converts an existing observable sequence to an ES6 Compatible Promise
+    * @example
+    * var promise = Rx.Observable.return(42).toPromise(RSVP.Promise);
+    *
+    * // With config
+    * Rx.config.Promise = RSVP.Promise;
+    * var promise = Rx.Observable.return(42).toPromise();
+    * @param [promiseCtor] The constructor of the promise. If not provided, it looks for it in Rx.config.Promise.
+    * @returns An ES6 compatible promise with the last value from the observable sequence.
+    */
   def toPromise(): rxDashCoreLib.RxNs.IPromise[T] = js.native
-  /**
-           * Converts an existing observable sequence to an ES6 Compatible Promise
-           * @example
-           * var promise = Rx.Observable.return(42).toPromise(RSVP.Promise);
-           *
-           * // With config
-           * Rx.config.Promise = RSVP.Promise;
-           * var promise = Rx.Observable.return(42).toPromise();
-           * @param [promiseCtor] The constructor of the promise. If not provided, it looks for it in Rx.config.Promise.
-           * @returns An ES6 compatible promise with the last value from the observable sequence.
-           */
   def toPromise(promiseCtor: rxDashLiteLib.Anon_ResolverResolvePromiseValue[T]): rxDashCoreLib.RxNs.IPromise[T] = js.native
    // alias for where
   /**
-           * Converts an existing observable sequence to an ES6 Compatible Promise
-           * @example
-           * var promise = Rx.Observable.return(42).toPromise(RSVP.Promise);
-           * @param promiseCtor The constructor of the promise.
-           * @returns An ES6 compatible promise with the last value from the observable sequence.
-           */
+    * Converts an existing observable sequence to an ES6 Compatible Promise
+    * @example
+    * var promise = Rx.Observable.return(42).toPromise(RSVP.Promise);
+    * @param promiseCtor The constructor of the promise.
+    * @returns An ES6 compatible promise with the last value from the observable sequence.
+    */
   def toPromise[TPromise /* <: rxDashCoreLib.RxNs.IPromise[T] */](promiseCtor: rxDashLiteLib.Anon_ResolverResolvePromise[T, TPromise]): TPromise = js.native
   def where(
     predicate: js.Function3[/* value */ T, /* index */ scala.Double, /* source */ Observable[T], scala.Boolean]
@@ -843,7 +769,7 @@ trait Observable[T] extends IObservable[T] {
   def withLatestFrom[T2, T3](second: Observable[T2], third: Observable[T3]): Observable[js.Tuple3[T, T2, T3]] = js.native
   def withLatestFrom[TOther, TResult](
     souces: js.Array[Observable[TOther] | rxDashCoreLib.RxNs.IPromise[TOther]],
-    resultSelector: js.Function2[/* firstValue */ T, /* repeated */TOther, TResult]
+    resultSelector: js.Function2[/* firstValue */ T, /* repeated */ TOther, TResult]
   ): Observable[TResult] = js.native
   def withLatestFrom[T2, T3, T4](
     second: rxDashCoreLib.RxNs.IPromise[T2],
@@ -1144,7 +1070,7 @@ trait Observable[T] extends IObservable[T] {
   def zip[T2](second: Observable[T2]): Observable[js.Tuple2[T, T2]] = js.native
   def zip[TOther, TResult](
     second: js.Array[Observable[TOther] | rxDashCoreLib.RxNs.IPromise[TOther]],
-    resultSelector: js.Function2[/* left */ T, /* repeated */TOther, TResult]
+    resultSelector: js.Function2[/* left */ T, /* repeated */ TOther, TResult]
   ): Observable[TResult] = js.native
   def zip[T2, TResult](
     second: rxDashCoreLib.RxNs.IPromise[T2],

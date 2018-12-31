@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompilerOptions
   extends /* option */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[CompilerOptionsValue | TsConfigSourceFile]] {
   var allowJs: js.UndefOr[scala.Boolean] = js.undefined

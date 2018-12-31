@@ -15,8 +15,7 @@ org.scalablytyped.runtime.Instantiable1[/* queueName */ java.lang.String, bullLi
       /* opts */ bullLib.bullMod.BullNs.QueueOptions, 
       bullLib.bullMod.BullNs.Queue[js.Any]
     ]
-     with  // tslint:disable-line unified-signatures
-org.scalablytyped.runtime.Instantiable2[
+     with org.scalablytyped.runtime.Instantiable2[
       /* queueName */ java.lang.String, 
       (/* opts */ bullLib.bullMod.BullNs.QueueOptions) | (/* url */ java.lang.String), 
       bullLib.bullMod.BullNs.Queue[js.Any]

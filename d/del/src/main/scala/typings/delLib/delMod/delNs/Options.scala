@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options
   extends globLib.globMod.GNs.IOptions {
   var concurrency: js.UndefOr[scala.Double] = js.undefined

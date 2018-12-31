@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CHROMEUPDATE extends js.Object {
   var CHROME_UPDATE: chromeDashAppsLib.chromeDashAppsLibStrings.chrome_update
   var INSTALL: chromeDashAppsLib.chromeDashAppsLibStrings.install

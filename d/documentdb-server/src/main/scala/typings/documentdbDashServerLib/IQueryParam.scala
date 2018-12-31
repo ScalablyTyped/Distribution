@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Parameter interface for parameterized queries */
-
 trait IQueryParam extends js.Object {
   /** Name to use in the query */
   var name: java.lang.String

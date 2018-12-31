@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 package object OAuth2ServerNs {
   type AccessDeniedError = OAuthError
   /**
-       * Represents a generic callback structure for model callbacks
-       */
+    * Represents a generic callback structure for model callbacks
+    */
   type Callback[T] = js.Function2[/* err */ js.UndefOr[js.Any], /* result */ js.UndefOr[T], scala.Unit]
   /**
-       * For returning falsey parameters in cases of failure
-       */
+    * For returning falsey parameters in cases of failure
+    */
   type Falsey = js.UndefOr[
     oauth2DashServerLib.oauth2DashServerLibStrings.Empty | oauth2DashServerLib.oauth2DashServerLibNumbers.`0` | oauth2DashServerLib.oauth2DashServerLibNumbers.`false` | scala.Null
   ]

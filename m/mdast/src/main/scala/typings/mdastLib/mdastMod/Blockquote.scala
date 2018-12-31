@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Blockquote extends Parent {
   @JSName("children")
   var children_Blockquote: js.Array[BlockContent]

@@ -27,22 +27,22 @@ abstract class GpioPin () extends js.Object {
   /** Closes the general-purpose I/O (GPIO) pin and releases the resources associated with it. */
   def close(): scala.Unit = js.native
   /**
-                   * Gets the current drive mode for the general-purpose I/O (GPIO) pin. The drive mode specifies whether the pin is configured as an input or an output, and determines how values are driven onto the pin.
-                   * @return An enumeration value that indicates the current drive mode for the GPIO pin. The drive mode specifies whether the pin is configured as an input or an output, and determines how values are driven onto the pin.
-                   */
+    * Gets the current drive mode for the general-purpose I/O (GPIO) pin. The drive mode specifies whether the pin is configured as an input or an output, and determines how values are driven onto the pin.
+    * @return An enumeration value that indicates the current drive mode for the GPIO pin. The drive mode specifies whether the pin is configured as an input or an output, and determines how values are driven onto the pin.
+    */
   def getDriveMode(): GpioPinDriveMode = js.native
   /**
-                   * Gets whether the general-purpose I/O (GPIO) pin supports the specified drive mode.
-                   * @param driveMode The drive mode that you want to check for support.
-                   * @return True if the GPIO pin supports the drive mode that driveMode specifies; otherwise false. If you specify a drive mode for which this method returns false when you call SetDriveMode , SetDriveMode generates an exception.
-                   */
+    * Gets whether the general-purpose I/O (GPIO) pin supports the specified drive mode.
+    * @param driveMode The drive mode that you want to check for support.
+    * @return True if the GPIO pin supports the drive mode that driveMode specifies; otherwise false. If you specify a drive mode for which this method returns false when you call SetDriveMode , SetDriveMode generates an exception.
+    */
   def isDriveModeSupported(driveMode: GpioPinDriveMode): scala.Boolean = js.native
   /** Occurs when the value of the general-purpose I/O (GPIO) pin changes, either because of an external stimulus when the pin is configured as an input, or when a value is written to the pin when the pin in configured as an output. */
   def onvaluechanged(ev: GpioPinValueChangedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[GpioPin]): scala.Unit = js.native
   /**
-                   * Reads the current value of the general-purpose I/O (GPIO) pin.
-                   * @return The current value of the GPIO pin. If the pin is configured as an output, this value is the last value written to the pin.
-                   */
+    * Reads the current value of the general-purpose I/O (GPIO) pin.
+    * @return The current value of the GPIO pin. If the pin is configured as an output, this value is the last value written to the pin.
+    */
   def read(): GpioPinValue = js.native
   def removeEventListener(`type`: java.lang.String, listener: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_]): scala.Unit = js.native
   @JSName("removeEventListener")
@@ -51,14 +51,14 @@ abstract class GpioPin () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[GpioPin, GpioPinValueChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Sets the drive mode of the general-purpose I/O (GPIO) pin. The drive mode specifies whether the pin is configured as an input or an output, and determines how values are driven onto the pin.
-                   * @param value An enumeration value that specifies drive mode to use for the GPIO pin. The drive mode specifies whether the pin is configured as an input or an output, and determines how values are driven onto the pin.
-                   */
+    * Sets the drive mode of the general-purpose I/O (GPIO) pin. The drive mode specifies whether the pin is configured as an input or an output, and determines how values are driven onto the pin.
+    * @param value An enumeration value that specifies drive mode to use for the GPIO pin. The drive mode specifies whether the pin is configured as an input or an output, and determines how values are driven onto the pin.
+    */
   def setDriveMode(value: GpioPinDriveMode): scala.Unit = js.native
   /**
-                   * Drives the specified value onto the general purpose I/O (GPIO) pin according to the current drive mode for the pin if the pin is configured as an output, or updates the latched output value for the pin if the pin is configured as an input.
-                   * @param value The enumeration value to write to the GPIO pin.
-                   */
+    * Drives the specified value onto the general purpose I/O (GPIO) pin according to the current drive mode for the pin if the pin is configured as an output, or updates the latched output value for the pin if the pin is configured as an input.
+    * @param value The enumeration value to write to the GPIO pin.
+    */
   def write(value: GpioPinValue): scala.Unit = js.native
 }
 

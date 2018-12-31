@@ -5,32 +5,31 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CertificatePrincipal extends js.Object {
   // Docs: http://electronjs.org/docs/api/structures/certificate-principal
   /**
-       * Common Name.
-       */
+    * Common Name.
+    */
   var commonName: java.lang.String
   /**
-       * Country or region.
-       */
+    * Country or region.
+    */
   var country: java.lang.String
   /**
-       * Locality.
-       */
+    * Locality.
+    */
   var locality: java.lang.String
   /**
-       * Organization Unit names.
-       */
+    * Organization Unit names.
+    */
   var organizationUnits: js.Array[java.lang.String]
   /**
-       * Organization names.
-       */
+    * Organization names.
+    */
   var organizations: js.Array[java.lang.String]
   /**
-       * State or province.
-       */
+    * State or province.
+    */
   var state: java.lang.String
 }
 

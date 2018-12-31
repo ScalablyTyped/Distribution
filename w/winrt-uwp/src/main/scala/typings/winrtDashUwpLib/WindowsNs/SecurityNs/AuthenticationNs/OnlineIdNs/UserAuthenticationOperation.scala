@@ -28,9 +28,9 @@ abstract class UserAuthenticationOperation () extends js.Object {
     asyncStatus: winrtDashUwpLib.WindowsNs.FoundationNs.AsyncStatus
   ): scala.Unit = js.native
   /**
-                       * Returns a UserIdentity object that contains information about the user.
-                       * @return An object containing information about the user's identity.
-                       */
+    * Returns a UserIdentity object that contains information about the user.
+    * @return An object containing information about the user's identity.
+    */
   def getResults(): UserIdentity = js.native
 }
 

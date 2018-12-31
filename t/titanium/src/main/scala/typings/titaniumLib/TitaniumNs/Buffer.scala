@@ -30,49 +30,25 @@ trait Buffer extends Proxy {
   		 * Appends `sourceBuffer` to the this buffer.
   		 */
   def append(sourceBuffer: Buffer): scala.Double = js.native
-  /**
-  		 * Appends `sourceBuffer` to the this buffer.
-  		 */
   def append(sourceBuffer: Buffer, sourceOffset: scala.Double): scala.Double = js.native
-  /**
-  		 * Appends `sourceBuffer` to the this buffer.
-  		 */
   def append(sourceBuffer: Buffer, sourceOffset: scala.Double, sourceLength: scala.Double): scala.Double = js.native
   /**
   		 * Clears this buffer's contents but does not change the size of the buffer.
   		 */
   def clear(): scala.Unit = js.native
-  /**
-  		 * Creates a complete or partial copy of this buffer.
-  		 */
   def clone(offset: scala.Double): Buffer = js.native
-  /**
-  		 * Creates a complete or partial copy of this buffer.
-  		 */
   def clone(offset: scala.Double, length: scala.Double): Buffer = js.native
   /**
   		 * Copies data from `sourceBuffer` into the current buffer at `offset`.
   		 */
   def copy(sourceBuffer: Buffer, offset: scala.Double): scala.Double = js.native
-  /**
-  		 * Copies data from `sourceBuffer` into the current buffer at `offset`.
-  		 */
   def copy(sourceBuffer: Buffer, offset: scala.Double, sourceOffset: scala.Double): scala.Double = js.native
-  /**
-  		 * Copies data from `sourceBuffer` into the current buffer at `offset`.
-  		 */
   def copy(sourceBuffer: Buffer, offset: scala.Double, sourceOffset: scala.Double, sourceLength: scala.Double): scala.Double = js.native
   /**
   		 * Fills this buffer with the specified byte value.
   		 */
   def fill(fillByte: scala.Double): scala.Unit = js.native
-  /**
-  		 * Fills this buffer with the specified byte value.
-  		 */
   def fill(fillByte: scala.Double, offset: scala.Double): scala.Unit = js.native
-  /**
-  		 * Fills this buffer with the specified byte value.
-  		 */
   def fill(fillByte: scala.Double, offset: scala.Double, length: scala.Double): scala.Unit = js.native
   /**
   		 * Gets the value of the <Titanium.Buffer.byteOrder> property.
@@ -94,13 +70,7 @@ trait Buffer extends Proxy {
   		 * Inserts data from `sourceBuffer` into this buffer at `offset`.
   		 */
   def insert(sourceBuffer: Buffer, offset: scala.Double): scala.Double = js.native
-  /**
-  		 * Inserts data from `sourceBuffer` into this buffer at `offset`.
-  		 */
   def insert(sourceBuffer: Buffer, offset: scala.Double, sourceOffset: scala.Double): scala.Double = js.native
-  /**
-  		 * Inserts data from `sourceBuffer` into this buffer at `offset`.
-  		 */
   def insert(sourceBuffer: Buffer, offset: scala.Double, sourceOffset: scala.Double, sourceLength: scala.Double): scala.Double = js.native
   /**
   		 * Releases the space allocated to the buffer, and sets its length to 0.

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This holds ForceDirectedLayout-specific information about Links.*/
-
 trait ForceDirectedEdge extends LayoutEdge {
   /**Gets or sets the length of this edge.*/
   var length: scala.Double

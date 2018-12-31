@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * IGenericMeasureListLayout
-     */
-
+  * IGenericMeasureListLayout
+  */
 trait IGenericMeasureListLayout extends IGenericBaseLayout {
   var qMeassureListObject: IMeassureList
 }

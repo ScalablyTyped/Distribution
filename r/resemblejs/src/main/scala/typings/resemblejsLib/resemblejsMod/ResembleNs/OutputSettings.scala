@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OutputSettings extends js.Object {
   var errorColor: resemblejsLib.Anon_Green
   var errorType: java.lang.String

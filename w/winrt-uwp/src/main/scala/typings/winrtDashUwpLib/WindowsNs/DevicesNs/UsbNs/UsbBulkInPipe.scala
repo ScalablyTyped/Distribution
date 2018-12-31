@@ -18,9 +18,9 @@ abstract class UsbBulkInPipe () extends js.Object {
   /** Gets or sets configuration flags that controls the behavior of the pipe that reads data from a USB bulk IN endpoint. */
   var readOptions: UsbReadOptions = js.native
   /**
-                   * Starts an asynchronous operation to clear a stall condition (endpoint halt) on the USB bulk IN endpoint that is associated with the pipe.
-                   * @return An IAsyncAction object that is used to control the asynchronous operation.
-                   */
+    * Starts an asynchronous operation to clear a stall condition (endpoint halt) on the USB bulk IN endpoint that is associated with the pipe.
+    * @return An IAsyncAction object that is used to control the asynchronous operation.
+    */
   def clearStallAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /** Discards any data that is cached in the bulk IN pipe. */
   def flushBuffer(): scala.Unit = js.native

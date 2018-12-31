@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait Orientation extends js.Object
 
 /**
-     * Defines potential orientation for back face culling
-     */
+  * Defines potential orientation for back face culling
+  */
 @JSGlobal("BABYLON.Orientation")
 @js.native
 object Orientation extends js.Object {
@@ -20,8 +20,8 @@ object Orientation extends js.Object {
     extends babylonjsLib.BABYLONNs.Orientation
   
   /**
-           * Clockwise
-           */
+    * Clockwise
+    */
   @js.native
   sealed trait CW
     extends babylonjsLib.BABYLONNs.Orientation

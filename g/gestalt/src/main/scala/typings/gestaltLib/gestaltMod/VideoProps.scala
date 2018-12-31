@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VideoProps extends js.Object {
   var accessibilityMaximizeLabel: js.UndefOr[java.lang.String] = js.undefined
   var accessibilityMinimizeLabel: js.UndefOr[java.lang.String] = js.undefined

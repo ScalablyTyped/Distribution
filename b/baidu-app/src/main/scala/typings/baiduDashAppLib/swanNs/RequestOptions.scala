@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestOptions
   extends BaseOptions[DataResponse, js.Any] {
   /** 请求的参数 */

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   	// set pic quality,default is 50
   var fontsize: js.UndefOr[scala.Double] = js.undefined

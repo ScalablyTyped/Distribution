@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReleaseDeployPhase extends js.Object {
   var deploymentJobs: js.Array[DeploymentJob]
   var errorLog: java.lang.String

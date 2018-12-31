@@ -192,9 +192,6 @@ trait ProgressIndicator
   				 * Hides the progress indicator and stops the animation.
   				 */
   def hide(): scala.Unit = js.native
-  /**
-  				 * Hides the progress indicator and stops the animation.
-  				 */
   def hide(options: titaniumLib.AnimationOption): scala.Unit = js.native
   /**
   				 * Inserts a view at the specified position in the [children](Titanium.UI.View.children) array.
@@ -292,9 +289,6 @@ trait ProgressIndicator
   				 * Shows the progress indicator and starts the animation.
   				 */
   def show(): scala.Unit = js.native
-  /**
-  				 * Shows the progress indicator and starts the animation.
-  				 */
   def show(options: titaniumLib.AnimationOption): scala.Unit = js.native
   /**
   				 * Starts a batch update of this view's layout properties.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CallbackType extends js.Object {
   /** A list of arguments, as in function parameters. */
   var arguments: js.Array[Argument]

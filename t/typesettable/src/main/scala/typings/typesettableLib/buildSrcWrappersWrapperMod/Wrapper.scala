@@ -18,14 +18,10 @@ class Wrapper () extends js.Object {
   def allowBreakingWords(allow: scala.Boolean): Wrapper = js.native
   /* private */ def breakLineToFitWidth(state: js.Any, line: js.Any, hasNextLine: js.Any, measurer: js.Any): js.Any = js.native
   /**
-       * Breaks single token to fit current line.
-       * If token contains only whitespaces then they will not be populated to next line.
-       */
+    * Breaks single token to fit current line.
+    * If token contains only whitespaces then they will not be populated to next line.
+    */
   /* private */ def breakTokenToFitInWidth(token: js.Any, line: js.Any, availableWidth: js.Any, measurer: js.Any): js.Any = js.native
-  /**
-       * Breaks single token to fit current line.
-       * If token contains only whitespaces then they will not be populated to next line.
-       */
   /* private */ def breakTokenToFitInWidth(token: js.Any, line: js.Any, availableWidth: js.Any, measurer: js.Any, breakingCharacter: js.Any): js.Any = js.native
   /* private */ def canFitToken(token: js.Any, width: js.Any, measurer: js.Any): js.Any = js.native
   /* private */ def finishWrapping(token: js.Any, state: js.Any, measurer: js.Any): js.Any = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LiveStreamSnippet extends js.Object {
   /** The ID that YouTube uses to uniquely identify the channel that is transmitting the stream. */
   var channelId: js.UndefOr[java.lang.String] = js.undefined

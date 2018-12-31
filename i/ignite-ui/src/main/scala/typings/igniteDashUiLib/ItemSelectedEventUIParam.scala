@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ItemSelectedEventUIParam extends js.Object {
   /**
   	 * Gets a reference to jQuery UI date picker widget, used as a calendar from the igDatePicker.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlacePhoto extends js.Object {
   /** the maximum height of the image. */
   var height: scala.Double

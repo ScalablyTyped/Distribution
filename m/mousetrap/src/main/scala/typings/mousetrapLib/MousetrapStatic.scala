@@ -33,18 +33,15 @@ trait MousetrapStatic
     keyArray: java.lang.String,
     callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ java.lang.String, _]
   ): scala.Unit = js.native
-  /** https://craig.is/killing/mice#extensions.global */
   def bindGlobal(
     keyArray: java.lang.String,
     callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ java.lang.String, _],
     action: java.lang.String
   ): scala.Unit = js.native
-  /** https://craig.is/killing/mice#extensions.global */
   def bindGlobal(
     keyArray: js.Array[java.lang.String],
     callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ java.lang.String, _]
   ): scala.Unit = js.native
-  /** https://craig.is/killing/mice#extensions.global */
   def bindGlobal(
     keyArray: js.Array[java.lang.String],
     callback: js.Function2[/* e */ ExtendedKeyboardEvent, /* combo */ java.lang.String, _],

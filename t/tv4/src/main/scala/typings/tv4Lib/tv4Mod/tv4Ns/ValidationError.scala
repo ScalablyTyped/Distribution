@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ValidationError extends js.Object {
   var code: scala.Double
   var dataPath: js.UndefOr[java.lang.String] = js.undefined

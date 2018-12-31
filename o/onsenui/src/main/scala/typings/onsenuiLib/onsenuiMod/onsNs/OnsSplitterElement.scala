@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 trait OnsSplitterElement
   extends stdLib.HTMLElement {
   /**
-       * @description The `<ons-splitter-content>` element.
-       */
+    * @description The `<ons-splitter-content>` element.
+    */
   var content: stdLib.HTMLElement = js.native
   /**
-       * @description Left `<ons-splitter-side>` element.
-       */
+    * @description Left `<ons-splitter-side>` element.
+    */
   var left: stdLib.HTMLElement = js.native
   /**
-       * @description Retrieve the back button handler.
-       */
+    * @description Retrieve the back button handler.
+    */
   var onDeviceBackButton: coreDashJsLib.Function = js.native
   /**
-       * @description Right `<ons-splitter-side>` element.
-       */
+    * @description Right `<ons-splitter-side>` element.
+    */
   var right: stdLib.HTMLElement = js.native
   var side: js.Any = js.native
 }

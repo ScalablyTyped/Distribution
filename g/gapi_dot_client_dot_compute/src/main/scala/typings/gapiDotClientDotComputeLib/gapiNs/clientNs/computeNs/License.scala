@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait License extends js.Object {
   /** [Output Only] Deprecated. This field no longer reflects whether a license charges a usage fee. */
   var chargesUseFee: js.UndefOr[scala.Boolean] = js.undefined

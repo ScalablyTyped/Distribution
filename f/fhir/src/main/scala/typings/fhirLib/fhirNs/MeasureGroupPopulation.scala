@@ -6,41 +6,40 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Population criteria
-     */
-
+  * Population criteria
+  */
 trait MeasureGroupPopulation extends BackboneElement {
   /**
-           * Contains extended information for property 'criteria'.
-           */
+    * Contains extended information for property 'criteria'.
+    */
   var _criteria: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'description'.
-           */
+    * Contains extended information for property 'description'.
+    */
   var _description: js.UndefOr[Element] = js.undefined
   /**
-           * Contains extended information for property 'name'.
-           */
+    * Contains extended information for property 'name'.
+    */
   var _name: js.UndefOr[Element] = js.undefined
   /**
-           * initial-population | numerator | numerator-exclusion | denominator | denominator-exclusion | denominator-exception | measure-population | measure-population-exclusion | measure-observation
-           */
+    * initial-population | numerator | numerator-exclusion | denominator | denominator-exclusion | denominator-exception | measure-population | measure-population-exclusion | measure-observation
+    */
   var code: js.UndefOr[CodeableConcept] = js.undefined
   /**
-           * The name of a valid referenced CQL expression (may be namespaced) that defines this population criteria
-           */
+    * The name of a valid referenced CQL expression (may be namespaced) that defines this population criteria
+    */
   var criteria: java.lang.String
   /**
-           * The human readable description of this population criteria
-           */
+    * The human readable description of this population criteria
+    */
   var description: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Unique identifier
-           */
+    * Unique identifier
+    */
   var identifier: js.UndefOr[Identifier] = js.undefined
   /**
-           * Short name
-           */
+    * Short name
+    */
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 

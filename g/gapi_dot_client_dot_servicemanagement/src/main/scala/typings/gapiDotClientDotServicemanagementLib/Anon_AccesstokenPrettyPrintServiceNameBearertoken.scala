@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPrettyPrintServiceNameBearertoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -33,9 +32,9 @@ trait Anon_AccesstokenPrettyPrintServiceNameBearertoken extends js.Object {
   /** The id of the rollout resource. */
   var rolloutId: java.lang.String
   /**
-                   * The name of the service.  See the [overview](/service-management/overview)
-                   * for naming requirements.  For example: `example.googleapis.com`.
-                   */
+    * The name of the service.  See the [overview](/service-management/overview)
+    * for naming requirements.  For example: `example.googleapis.com`.
+    */
   var serviceName: java.lang.String
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

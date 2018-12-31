@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait User extends js.Object {
   /** A plain text displayable name for this user. */
   var displayName: js.UndefOr[java.lang.String] = js.undefined

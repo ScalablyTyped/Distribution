@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FunctionDeclaration extends BaseNode {
   var async: scala.Boolean
   var body: BlockStatement

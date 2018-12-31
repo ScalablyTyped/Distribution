@@ -18,14 +18,14 @@ abstract class MidiSynthesizer () extends js.Object {
   /** Closes this instance of the Microsoft MIDI synthesizer. It is a best practice for the caller to use this method to clear resources used by the MIDI object. */
   def close(): scala.Unit = js.native
   /**
-                   * Sends an array of bytes through the synthesizer's out port . This enables you to send your data as a byte array instead of as a defined MIDI message.
-                   * @param midiData The array of bytes to send.
-                   */
+    * Sends an array of bytes through the synthesizer's out port . This enables you to send your data as a byte array instead of as a defined MIDI message.
+    * @param midiData The array of bytes to send.
+    */
   def sendBuffer(midiData: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer): scala.Unit = js.native
   /**
-                   * Sends a MIDI message through the Microsoft MIDI synthesizer's out port .
-                   * @param midiMessage The MIDI message to send.
-                   */
+    * Sends a MIDI message through the Microsoft MIDI synthesizer's out port .
+    * @param midiMessage The MIDI message to send.
+    */
   def sendMessage(midiMessage: IMidiMessage): scala.Unit = js.native
 }
 
@@ -34,21 +34,21 @@ abstract class MidiSynthesizer () extends js.Object {
 @js.native
 object MidiSynthesizer extends js.Object {
   /**
-                   * Creates a new instance of the Microsoft MIDI synthesizer that uses the system's default audio output device.
-                   * @return An instance of the Windows MIDI synthesizer.
-                   */
+    * Creates a new instance of the Microsoft MIDI synthesizer that uses the system's default audio output device.
+    * @return An instance of the Windows MIDI synthesizer.
+    */
   def createAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.DevicesNs.MidiNs.MidiSynthesizer] = js.native
   /**
-                   * Creates a new instance of the Microsoft MIDI synthesizer with a specified audio output device.
-                   * @param audioDevice The audio output device.
-                   * @return An instance of the Microsoft MIDI synthesizer.
-                   */
+    * Creates a new instance of the Microsoft MIDI synthesizer with a specified audio output device.
+    * @param audioDevice The audio output device.
+    * @return An instance of the Microsoft MIDI synthesizer.
+    */
   def createAsync(audioDevice: winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DeviceInformation): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.DevicesNs.MidiNs.MidiSynthesizer] = js.native
   /**
-                   * Determines whether a particular device is an instance of the Microsoft MIDI synthesizer. When all MIDI out ports on the system are enumerated, this method can be used to identify which of them is the Microsoft MIDI synthesizer.
-                   * @param midiDevice An object that represents the device in question.
-                   * @return True if the device is the Microsoft MIDI synthesizer; otherwise, false.
-                   */
+    * Determines whether a particular device is an instance of the Microsoft MIDI synthesizer. When all MIDI out ports on the system are enumerated, this method can be used to identify which of them is the Microsoft MIDI synthesizer.
+    * @param midiDevice An object that represents the device in question.
+    * @return True if the device is the Microsoft MIDI synthesizer; otherwise, false.
+    */
   def isSynthesizer(midiDevice: winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DeviceInformation): scala.Boolean = js.native
 }
 

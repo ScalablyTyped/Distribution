@@ -22,17 +22,17 @@ class Catalog protected () extends js.Object {
   @JSName("Views")
   val Views_Original: Views = js.native
   /**
-           * The **Create** method creates and opens a new ADO Connection to the data source specified in _ConnectString_. If successful, the new **Connection** object is assigned to the **ActiveConnection** property.
-           *
-           * An error will occur if the provider does not support creating new catalogs.
-           *
-           * @param ConnectString Connection string
-           */
+    * The **Create** method creates and opens a new ADO Connection to the data source specified in _ConnectString_. If successful, the new **Connection** object is assigned to the **ActiveConnection** property.
+    *
+    * An error will occur if the provider does not support creating new catalogs.
+    *
+    * @param ConnectString Connection string
+    */
   def Create(ConnectString: java.lang.String): scala.Unit = js.native
   def GetObjectOwner(ObjectName: java.lang.String, ObjectType: ObjectTypeEnum): java.lang.String = js.native
   /**
-           * @param ObjectTypeId Specifies the GUID for a provider object type not defined by the OLE DB specification
-           */
+    * @param ObjectTypeId Specifies the GUID for a provider object type not defined by the OLE DB specification
+    */
   def GetObjectOwner(ObjectName: java.lang.String, ObjectType: ObjectTypeEnum, ObjectTypeId: js.Any): java.lang.String = js.native
   def Groups(Item: java.lang.String): Group = js.native
   def Groups(Item: scala.Double): Group = js.native
@@ -40,9 +40,9 @@ class Catalog protected () extends js.Object {
   def Procedures(Item: scala.Double): Procedure = js.native
   def SetObjectOwner(ObjectName: java.lang.String, ObjectType: ObjectTypeEnum, UserName: java.lang.String): scala.Unit = js.native
   /**
-           * @param UserName Specifies the name of the **User** or **Group** to own the object
-           * @param ObjectTypeId Specifies the GUID for a provider object type that is not defined by the OLE DB specification
-           */
+    * @param UserName Specifies the name of the **User** or **Group** to own the object
+    * @param ObjectTypeId Specifies the GUID for a provider object type that is not defined by the OLE DB specification
+    */
   def SetObjectOwner(
     ObjectName: java.lang.String,
     ObjectType: ObjectTypeEnum,

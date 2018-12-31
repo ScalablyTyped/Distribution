@@ -17,12 +17,12 @@ trait PropertyValidationState[T] extends js.Object {
   var options: ValidationOptions = js.native
   // fluent methods (can be chanined):
   /**
-           * Adds a rule to the chain of rules used to validate the property's value.<br/>
-           * <i>[fluent]</i>
-           * @fluent
-           * @param {valerie.IRule} rule the rule to add
-           * @return {valerie.PropertyValidationState}
-           */
+    * Adds a rule to the chain of rules used to validate the property's value.<br/>
+    * <i>[fluent]</i>
+    * @fluent
+    * @param {valerie.IRule} rule the rule to add
+    * @return {valerie.PropertyValidationState}
+    */
   def addRule(rule: IRule): PropertyValidationState[T] = js.native
   def applicable(fn: js.Function0[scala.Boolean]): PropertyValidationState[T] = js.native
   def applicable(value: scala.Boolean): PropertyValidationState[T] = js.native
@@ -33,25 +33,20 @@ trait PropertyValidationState[T] extends js.Object {
   def date(): PropertyValidationState[T] = js.native
    // date + dateFN
   def during(earliest: js.Function0[stdLib.Date], latest: js.Function0[stdLib.Date]): PropertyValidationState[T] = js.native
-   // date + dateFN
   def during(earliest: js.Function0[stdLib.Date], latest: js.Function0[stdLib.Date], options: ValidationOptions): PropertyValidationState[T] = js.native
    // date + date
   def during(earliest: js.Function0[stdLib.Date], latest: stdLib.Date): PropertyValidationState[T] = js.native
-   // date + date
   def during(earliest: js.Function0[stdLib.Date], latest: stdLib.Date, options: ValidationOptions): PropertyValidationState[T] = js.native
    // dateFN + date
   def during(earliest: stdLib.Date, latest: js.Function0[stdLib.Date]): PropertyValidationState[T] = js.native
-   // dateFN + date
   def during(earliest: stdLib.Date, latest: js.Function0[stdLib.Date], options: ValidationOptions): PropertyValidationState[T] = js.native
   def during(earliest: stdLib.Date, latest: stdLib.Date): PropertyValidationState[T] = js.native
   def during(earliest: stdLib.Date, latest: stdLib.Date, options: ValidationOptions): PropertyValidationState[T] = js.native
    // date value
   def earliest(earliest: js.Function0[stdLib.Date]): PropertyValidationState[T] = js.native
-   // date value
   def earliest(earliest: js.Function0[stdLib.Date], options: ValidationOptions): PropertyValidationState[T] = js.native
    // dateFN + dateFN
   def earliest(earliest: stdLib.Date): PropertyValidationState[T] = js.native
-   // dateFN + dateFN
   def earliest(earliest: stdLib.Date, options: ValidationOptions): PropertyValidationState[T] = js.native
    // date function
   def email(): PropertyValidationState[T] = js.native
@@ -61,7 +56,6 @@ trait PropertyValidationState[T] extends js.Object {
   def excludeFromSummary(): PropertyValidationState[T] = js.native
    // regex
   def expression(regularExpressionString: java.lang.String): PropertyValidationState[T] = js.native
-   // regex
   def expression(regularExpressionString: java.lang.String, options: ValidationOptions): PropertyValidationState[T] = js.native
   def expression(regularExpression: stdLib.RegExp): PropertyValidationState[T] = js.native
   def expression(regularExpression: stdLib.RegExp, options: ValidationOptions): PropertyValidationState[T] = js.native
@@ -69,7 +63,6 @@ trait PropertyValidationState[T] extends js.Object {
   def failed(): scala.Boolean = js.native
    // regex string
   def float(): PropertyValidationState[T] = js.native
-   // regex string
   def float(options: ValidationOptions): PropertyValidationState[T] = js.native
   def getName(): java.lang.String = js.native
   def integer(): PropertyValidationState[T] = js.native

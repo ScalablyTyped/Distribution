@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libImageMod.Image] {
   var circle: js.UndefOr[scala.Boolean] = js.undefined

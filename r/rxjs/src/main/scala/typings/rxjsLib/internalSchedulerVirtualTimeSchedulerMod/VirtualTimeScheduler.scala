@@ -31,10 +31,10 @@ class VirtualTimeScheduler ()
   var index: scala.Double = js.native
   var maxFrames: scala.Double = js.native
   /**
-       * Prompt the Scheduler to execute all of its queued actions, therefore
-       * clearing its queue.
-       * @return {void}
-       */
+    * Prompt the Scheduler to execute all of its queued actions, therefore
+    * clearing its queue.
+    * @return {void}
+    */
   def flush(): scala.Unit = js.native
 }
 

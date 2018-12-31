@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Base class of materials working in push mode in babylon JS
-     * @hidden
-     */
+  * Base class of materials working in push mode in babylon JS
+  * @hidden
+  */
 @JSImport("babylonjs", "PushMaterial")
 @js.native
 class PushMaterial protected ()

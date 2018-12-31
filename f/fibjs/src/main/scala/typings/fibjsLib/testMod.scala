@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
 @JSImport("test", JSImport.Namespace)
 @js.native
 object testMod extends js.Object {
-  val assert: js.Any = js.native
+  val assert: fibjsLib.Anon_NotExist = js.native
   val slow: scala.Double = js.native
   def after(func: js.Function): scala.Unit = js.native
   def afterEach(func: js.Function): scala.Unit = js.native

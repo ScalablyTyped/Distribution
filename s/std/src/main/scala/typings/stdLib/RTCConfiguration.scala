@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RTCConfiguration extends js.Object {
   var bundlePolicy: js.UndefOr[RTCBundlePolicy] = js.undefined
   var certificates: js.UndefOr[js.Array[RTCCertificate]] = js.undefined

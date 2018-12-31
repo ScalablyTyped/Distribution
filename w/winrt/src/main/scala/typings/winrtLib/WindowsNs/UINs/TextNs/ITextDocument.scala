@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITextDocument extends js.Object {
   var caretType: CaretType
   var defaultTabStop: scala.Double

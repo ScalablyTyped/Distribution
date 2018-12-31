@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GooglePaymentTransactionConfig extends js.Object {
   /** List of accepted card networks. Must be any number of Transactions.CardNetwork. */
   var cardNetworks: js.Array[actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.CardNetwork]

@@ -16,34 +16,30 @@ class Rating protected () extends Widget {
   @JSName("model")
   var model_Rating: ejDotWebDotAllLib.ejNs.RatingNs.Model = js.native
   /** To get the current value of rating control.
-           * @returns {number}
-           */
+    * @returns {number}
+    */
   def getValue(): scala.Double = js.native
   /** To hide the rating control.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def hide(): scala.Unit = js.native
   /** User can refresh the rating control to identify changes.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def refresh(): scala.Unit = js.native
   /** To reset the rating value.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def reset(): scala.Unit = js.native
   /** To set the rating value.
-           * @param {string|number} Specifies the rating value.
-           * @returns {void}
-           */
+    * @param {string|number} Specifies the rating value.
+    * @returns {void}
+    */
   def setValue(value: java.lang.String): scala.Unit = js.native
-  /** To set the rating value.
-           * @param {string|number} Specifies the rating value.
-           * @returns {void}
-           */
   def setValue(value: scala.Double): scala.Unit = js.native
   /** To show the rating control
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def show(): scala.Unit = js.native
 }
 

@@ -13,28 +13,13 @@ class Sequence protected () extends js.Object {
   val Parent: js.Any = js.native
   var `PowerPoint.Sequence_typekey`: Sequence = js.native
   /**
-           * @param PowerPoint.MsoAnimateByLevel [Level=0]
-           * @param PowerPoint.MsoAnimTriggerType [trigger=1]
-           * @param number [Index=-1]
-           */
+    * @param PowerPoint.MsoAnimateByLevel [Level=0]
+    * @param PowerPoint.MsoAnimTriggerType [trigger=1]
+    * @param number [Index=-1]
+    */
   def AddEffect(Shape: Shape, effectId: MsoAnimEffect): Effect = js.native
-  /**
-           * @param PowerPoint.MsoAnimateByLevel [Level=0]
-           * @param PowerPoint.MsoAnimTriggerType [trigger=1]
-           * @param number [Index=-1]
-           */
   def AddEffect(Shape: Shape, effectId: MsoAnimEffect, Level: MsoAnimateByLevel): Effect = js.native
-  /**
-           * @param PowerPoint.MsoAnimateByLevel [Level=0]
-           * @param PowerPoint.MsoAnimTriggerType [trigger=1]
-           * @param number [Index=-1]
-           */
   def AddEffect(Shape: Shape, effectId: MsoAnimEffect, Level: MsoAnimateByLevel, trigger: MsoAnimTriggerType): Effect = js.native
-  /**
-           * @param PowerPoint.MsoAnimateByLevel [Level=0]
-           * @param PowerPoint.MsoAnimTriggerType [trigger=1]
-           * @param number [Index=-1]
-           */
   def AddEffect(
     Shape: Shape,
     effectId: MsoAnimEffect,
@@ -43,14 +28,10 @@ class Sequence protected () extends js.Object {
     Index: scala.Double
   ): Effect = js.native
   /**
-           * @param string [bookmark='']
-           * @param PowerPoint.MsoAnimateByLevel [Level=0]
-           */
+    * @param string [bookmark='']
+    * @param PowerPoint.MsoAnimateByLevel [Level=0]
+    */
   def AddTriggerEffect(pShape: Shape, effectId: MsoAnimEffect, trigger: MsoAnimTriggerType, pTriggerShape: Shape): Effect = js.native
-  /**
-           * @param string [bookmark='']
-           * @param PowerPoint.MsoAnimateByLevel [Level=0]
-           */
   def AddTriggerEffect(
     pShape: Shape,
     effectId: MsoAnimEffect,
@@ -58,10 +39,6 @@ class Sequence protected () extends js.Object {
     pTriggerShape: Shape,
     bookmark: java.lang.String
   ): Effect = js.native
-  /**
-           * @param string [bookmark='']
-           * @param PowerPoint.MsoAnimateByLevel [Level=0]
-           */
   def AddTriggerEffect(
     pShape: Shape,
     effectId: MsoAnimEffect,
@@ -72,22 +49,13 @@ class Sequence protected () extends js.Object {
   ): Effect = js.native
   /** @param number [Index=-1] */
   def Clone(Effect: Effect): Effect = js.native
-  /** @param number [Index=-1] */
   def Clone(Effect: Effect, Index: scala.Double): Effect = js.native
   /**
-           * @param Office.MsoRGBType [DimColor=0]
-           * @param PowerPoint.PpColorSchemeIndex [DimSchemeColor=0]
-           */
+    * @param Office.MsoRGBType [DimColor=0]
+    * @param PowerPoint.PpColorSchemeIndex [DimSchemeColor=0]
+    */
   def ConvertToAfterEffect(Effect: Effect, After: MsoAnimAfterEffect): Effect = js.native
-  /**
-           * @param Office.MsoRGBType [DimColor=0]
-           * @param PowerPoint.PpColorSchemeIndex [DimSchemeColor=0]
-           */
   def ConvertToAfterEffect(Effect: Effect, After: MsoAnimAfterEffect, DimColor: activexDashOfficeLib.OfficeNs.MsoRGBType): Effect = js.native
-  /**
-           * @param Office.MsoRGBType [DimColor=0]
-           * @param PowerPoint.PpColorSchemeIndex [DimSchemeColor=0]
-           */
   def ConvertToAfterEffect(
     Effect: Effect,
     After: MsoAnimAfterEffect,

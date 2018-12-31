@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetCompanyResponse extends js.Object {
   /** The company. */
   var company: js.UndefOr[Company] = js.undefined

@@ -39,12 +39,6 @@ trait IgValidatorMethods extends js.Object {
   	 * @param field Optional field object, selector or zero-based index for a single field to get error message for.
   	 */
   def getErrorMessages(): js.Array[_] = js.native
-  /**
-  	 * Gets all current error messages for invalid field(s). Note that this method does not validate and states and messages are only updated on validation, so
-  	 * this can be used on formValidated event or after validate/isValid method calls.
-  	 *
-  	 * @param field Optional field object, selector or zero-based index for a single field to get error message for.
-  	 */
   def getErrorMessages(field: js.Object): js.Array[_] = js.native
   /**
   	 * Hide any possible message(s) (either messageTarget or igNotifier).
@@ -53,12 +47,6 @@ trait IgValidatorMethods extends js.Object {
   	 * @param field Optional field object, its selector or zero-based index to hide message for.
   	 */
   def hide(): scala.Unit = js.native
-  /**
-  	 * Hide any possible message(s) (either messageTarget or igNotifier).
-  	 * Note: When the validator has a fields collection, not passing a field will hide messages on all fields.
-  	 *
-  	 * @param field Optional field object, its selector or zero-based index to hide message for.
-  	 */
   def hide(field: js.Object): scala.Unit = js.native
   /**
   	 * Check for currently displayed message(s). Takes an optional field.
@@ -67,12 +55,6 @@ trait IgValidatorMethods extends js.Object {
   	 * @param field Optional field object, selector or zero-based index for a single field to get error message for.
   	 */
   def isMessageDisplayed(): scala.Boolean = js.native
-  /**
-  	 * Check for currently displayed message(s). Takes an optional field.
-  	 * Note: When the validator has a fields collection, not passing a field will return a cumulative true even if just one field has a visible message.
-  	 *
-  	 * @param field Optional field object, selector or zero-based index for a single field to get error message for.
-  	 */
   def isMessageDisplayed(field: js.Object): scala.Boolean = js.native
   /**
   	 * Trigger validation but do not display error messages.
@@ -80,11 +62,6 @@ trait IgValidatorMethods extends js.Object {
   	 * @param field Optional field object, its selector or zero-based index to check. Only has effect with fields collection and skips other fields.
   	 */
   def isValid(): scala.Boolean = js.native
-  /**
-  	 * Trigger validation but do not display error messages.
-  	 *
-  	 * @param field Optional field object, its selector or zero-based index to check. Only has effect with fields collection and skips other fields.
-  	 */
   def isValid(field: js.Object): scala.Boolean = js.native
   /**
   	 * Gets the notifier for the igValidator or for a single filed.
@@ -92,11 +69,6 @@ trait IgValidatorMethods extends js.Object {
   	 * @param field Optional field object, its selector or zero-based index to get notifier for.
   	 */
   def notifier(): js.Object = js.native
-  /**
-  	 * Gets the notifier for the igValidator or for a single filed.
-  	 *
-  	 * @param field Optional field object, its selector or zero-based index to get notifier for.
-  	 */
   def notifier(field: js.Object): js.Object = js.native
   /**
   	 * Removes an input from the fields collection.
@@ -111,12 +83,6 @@ trait IgValidatorMethods extends js.Object {
   	 * @param fieldOptions New options to apply to the field.
   	 */
   def updateField(field: js.Object): scala.Unit = js.native
-  /**
-  	 * Updates a field in the validator collection. Used to reinitialize field in case a control has been created after the validator or to pass in new options.
-  	 *
-  	 * @param field The field object to update, its zero-based index or selector.
-  	 * @param fieldOptions New options to apply to the field.
-  	 */
   def updateField(field: js.Object, fieldOptions: js.Object): scala.Unit = js.native
   /**
   	 * Trigger validation and show errors for invalid fields.
@@ -124,11 +90,6 @@ trait IgValidatorMethods extends js.Object {
   	 * @param field Optional field object, its selector or zero-based index to check. Only has effect with fields collection and skips other fields.
   	 */
   def validate(): scala.Boolean = js.native
-  /**
-  	 * Trigger validation and show errors for invalid fields.
-  	 *
-  	 * @param field Optional field object, its selector or zero-based index to check. Only has effect with fields collection and skips other fields.
-  	 */
   def validate(field: js.Object): scala.Boolean = js.native
 }
 

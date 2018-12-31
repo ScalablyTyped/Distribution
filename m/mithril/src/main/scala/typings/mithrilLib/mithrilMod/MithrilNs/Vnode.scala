@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Virtual DOM nodes, or vnodes, are Javascript objects that represent an element (or parts of the DOM). */
-
 trait Vnode[Attrs, State /* <: Lifecycle[Attrs, State] */] extends js.Object {
   /** A hashmap of DOM attributes, events, properties and lifecycle methods. */
   var attrs: Attrs

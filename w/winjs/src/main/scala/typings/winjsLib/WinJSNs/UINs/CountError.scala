@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 sealed trait CountError extends js.Object
 
 /**
-     * Indicates that the IListDataAdapter was unable to provide a count.
-    **/
+  * Indicates that the IListDataAdapter was unable to provide a count.
+  **/
 @JSGlobal("WinJS.UI.CountError")
 @js.native
 object CountError extends js.Object {
   /**
-           * An attempt to count items timed out.
-          **/
+    * An attempt to count items timed out.
+    **/
   @js.native
   sealed trait noResponse
     extends winjsLib.WinJSNs.UINs.CountError

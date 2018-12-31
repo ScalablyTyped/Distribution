@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Address extends js.Object {
   var Address: Anon_Country
   var DisplayPosition: Anon_Latitude

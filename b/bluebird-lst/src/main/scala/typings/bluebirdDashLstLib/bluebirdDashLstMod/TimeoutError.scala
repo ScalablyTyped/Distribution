@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-   * Signals that an operation has timed out. Used as a custom cancellation reason in `.timeout`.
-   */
+  * Signals that an operation has timed out. Used as a custom cancellation reason in `.timeout`.
+  */
 @JSImport("bluebird-lst", "TimeoutError")
 @js.native
 class TimeoutError ()

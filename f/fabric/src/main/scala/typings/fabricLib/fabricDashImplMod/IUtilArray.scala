@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IUtilArray extends js.Object {
   /**
   	 * Invokes method on all items in a given array

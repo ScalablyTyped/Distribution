@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "CognitoIdentityServiceProvider")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class CognitoIdentityServiceProvider ()
   extends awsDashSdkLib.awsDashSdkMod.CognitoIdentityServiceProvider {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsCognitoidentityserviceproviderMod.CognitoIdentityServiceProviderNs.ClientConfiguration) = this()
 }
 

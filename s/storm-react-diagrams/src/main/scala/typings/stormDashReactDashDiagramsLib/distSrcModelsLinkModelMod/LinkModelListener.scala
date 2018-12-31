@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinkModelListener
   extends stormDashReactDashDiagramsLib.distSrcModelsBaseModelMod.BaseModelListener {
   var sourcePortChanged: js.UndefOr[

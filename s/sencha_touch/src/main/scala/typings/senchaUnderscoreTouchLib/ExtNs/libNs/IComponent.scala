@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IComponent
   extends senchaUnderscoreTouchLib.ExtNs.IEvented {
   /** [Method] Adds a CSS class or classes to this Component s rendered element

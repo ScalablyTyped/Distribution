@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LinenoNodes extends js.Object {
   var column: scala.Double
   var filename: java.lang.String

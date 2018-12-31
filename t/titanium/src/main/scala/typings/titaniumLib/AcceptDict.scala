@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Options object for the [accept](Titanium.Network.Socket.TCP.accept) method.
- */
-
+  * Options object for the [accept](Titanium.Network.Socket.TCP.accept) method.
+  */
 trait AcceptDict extends js.Object {
   /**
   	 * Callback to be fired when the socket enters the [ERROR](Titanium.Network.Socket.ERROR) state.

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Provides information about the USB control transfer, the type of control request, whether the data is sent from or to the host, and the recipient of the request in the device. */
 @JSGlobal("Windows.Devices.Usb.UsbControlRequestType")
 @js.native
+/** Creates a UsbControlRequestType object. */
 class UsbControlRequestType () extends js.Object {
   /** Gets or sets the bmRequestType value as a byte. */
   var asByte: scala.Double = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RawPositionObject extends js.Object {
   // bottom edge
   var bottom: scala.Double

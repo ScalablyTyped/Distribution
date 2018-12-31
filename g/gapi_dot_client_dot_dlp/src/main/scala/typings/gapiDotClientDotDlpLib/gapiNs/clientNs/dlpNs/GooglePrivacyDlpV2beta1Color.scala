@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GooglePrivacyDlpV2beta1Color extends js.Object {
   /** The amount of blue in the color as a value in the interval [0, 1]. */
   var blue: js.UndefOr[scala.Double] = js.undefined

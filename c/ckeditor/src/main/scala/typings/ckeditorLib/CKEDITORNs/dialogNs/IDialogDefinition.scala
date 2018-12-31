@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDialogDefinition extends js.Object {
   var buttons: js.UndefOr[js.Array[ckeditorLib.CKEDITORNs.dialogNs.definitionNs.button]] = js.undefined
   var contents: js.UndefOr[js.Array[ckeditorLib.CKEDITORNs.dialogNs.definitionNs.content]] = js.undefined

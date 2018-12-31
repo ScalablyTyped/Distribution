@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when roster item changed
 		*/
-
 trait RosterItemChange extends js.Object {
   /**
   			*	User display name

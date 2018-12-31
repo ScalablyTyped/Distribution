@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FullMetadata extends UploadMetadata {
   var bucket: java.lang.String
   var fullPath: java.lang.String

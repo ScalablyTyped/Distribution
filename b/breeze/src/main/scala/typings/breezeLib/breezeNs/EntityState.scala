@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EntityState
   extends breezeLib.breezeNs.coreNs.IEnum {
   var Added: EntityStateSymbol

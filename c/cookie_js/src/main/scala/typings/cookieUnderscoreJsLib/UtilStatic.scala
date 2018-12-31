@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UtilStatic extends js.Object {
   def decode(value: java.lang.String): java.lang.String
   def encode(value: java.lang.String): java.lang.String

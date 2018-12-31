@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class KmlLineStyle () extends KmlColorStyle {
   /**
-       * Width of the line, in pixels.
-       */
+    * Width of the line, in pixels.
+    */
   def getWidth(): scala.Double = js.native
   /**
-       * Width of the line, in pixels.
-       */
+    * Width of the line, in pixels.
+    */
   def setWidth(width: scala.Double): scala.Unit = js.native
 }
 

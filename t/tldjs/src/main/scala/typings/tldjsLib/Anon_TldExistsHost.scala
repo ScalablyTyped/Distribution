@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TldExistsHost extends js.Object {
   var extractHostname: js.Function1[/* host */ java.lang.String, java.lang.String | scala.Null]
   var fromUserSettings: js.Function1[/* options */ Anon_ExtractHostnameRules, Anon_TldExists]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseNode extends js.Object {
   var end: scala.Double | scala.Null
   var innerComments: js.Array[Comment] | scala.Null

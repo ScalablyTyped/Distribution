@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VastCreativeLinear extends VastCreative {
   var adParameters: js.Any
   var duration: scala.Double

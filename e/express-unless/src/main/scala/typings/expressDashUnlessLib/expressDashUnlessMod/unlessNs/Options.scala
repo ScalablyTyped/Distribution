@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var custom: js.UndefOr[js.Function1[/* req */ expressLib.expressMod.eNs.Request, scala.Boolean]] = js.undefined
    // TODO: union type 'string|string[]' is not supported yet

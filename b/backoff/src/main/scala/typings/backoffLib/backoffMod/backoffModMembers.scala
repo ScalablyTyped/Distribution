@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object backoffModMembers extends js.Object {
   val FunctionCall: FunctionCallConstructor = js.native
-  def call(wrappedFunction: js.Function1[/* repeated */js.Any, scala.Unit], args: js.Any*): FunctionCallAny = js.native
+  def call(wrappedFunction: js.Function1[/* repeated */ js.Any, scala.Unit], args: js.Any*): FunctionCallAny = js.native
   def call[E](
     wrappedFunction: js.Function1[/* cb */ js.Function1[/* err */ E, scala.Unit], scala.Unit],
     callback: js.Function1[/* err */ E, scala.Unit]

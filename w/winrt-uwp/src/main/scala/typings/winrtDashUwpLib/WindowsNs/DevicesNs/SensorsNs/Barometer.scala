@@ -25,9 +25,9 @@ abstract class Barometer () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[Barometer, BarometerReadingChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Gets the current reading for the barometer.
-                   * @return The current atmospheric pressure according to this sensor.
-                   */
+    * Gets the current reading for the barometer.
+    * @return The current atmospheric pressure according to this sensor.
+    */
   def getCurrentReading(): BarometerReading = js.native
   /** Occurs each time the barometer sensor reports a new value. */
   def onreadingchanged(ev: BarometerReadingChangedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[Barometer]): scala.Unit = js.native
@@ -44,9 +44,9 @@ abstract class Barometer () extends js.Object {
 @js.native
 object Barometer extends js.Object {
   /**
-                   * Returns the default barometer sensor.
-                   * @return The default barometer.
-                   */
+    * Returns the default barometer sensor.
+    * @return The default barometer.
+    */
   def getDefault(): winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.Barometer = js.native
 }
 

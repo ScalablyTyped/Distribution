@@ -5,27 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdatePlan extends js.Object {
   /**
-       * Description of the plan
-       */
+    * Description of the plan
+    */
   var description: java.lang.String
   /**
-       * Name of the plan to create.
-       */
+    * Name of the plan to create.
+    */
   var name: java.lang.String
   /**
-       * Plan properties.
-       */
+    * Plan properties.
+    */
   var properties: js.Any
   /**
-       * Revision of the plan that was updated - the value used here should match the one the server gave the client in the Plan.
-       */
+    * Revision of the plan that was updated - the value used here should match the one the server gave the client in the Plan.
+    */
   var revision: scala.Double
   /**
-       * Type of the plan
-       */
+    * Type of the plan
+    */
   var `type`: PlanType
 }
 

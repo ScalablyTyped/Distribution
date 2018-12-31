@@ -14,8 +14,8 @@ object TabBarNsMembers extends js.Object {
   def isVisible(): scala.Boolean = js.native
   def setEnabled(isEnabled: scala.Boolean): scala.Unit = js.native
   /**
-       * @deprecated
-       */
+    * @deprecated
+    */
   def setParentDivId(parentId: java.lang.String): scala.Unit = js.native
   def setSelectedItem(id: java.lang.String): scala.Unit = js.native
   def setVisible(isVisible: scala.Boolean): scala.Unit = js.native

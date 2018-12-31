@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Printer extends js.Object {
   var canAttachComment: js.UndefOr[js.Function1[/* node */ js.Any, scala.Boolean]] = js.undefined
   var embed: js.UndefOr[
@@ -21,10 +20,10 @@ trait Printer extends js.Object {
   var hasPrettierIgnore: js.UndefOr[js.Function1[/* path */ FastPath[_], scala.Boolean]] = js.undefined
   var insertPragma: js.UndefOr[js.Function1[/* text */ java.lang.String, java.lang.String]] = js.undefined
   /**
-       * @returns `null` if you want to remove this node
-       * @returns `void` if you want to use modified newNode
-       * @returns anything if you want to replace the node with it
-       */
+    * @returns `null` if you want to remove this node
+    * @returns `void` if you want to use modified newNode
+    * @returns anything if you want to replace the node with it
+    */
   var massageAstNode: js.UndefOr[js.Function3[/* node */ js.Any, /* newNode */ js.Any, /* parent */ js.Any, _]] = js.undefined
   var printComments: js.UndefOr[
     js.Function4[

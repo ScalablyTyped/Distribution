@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait Flag extends js.Object
 
 /**
-                 * This enumeration encapsulates bit flags for different invalidations of map objects.
-                 */
+  * This enumeration encapsulates bit flags for different invalidations of map objects.
+  */
 @JSGlobal("H.map.provider.Invalidations.Flag")
 @js.native
 object Flag extends js.Object {

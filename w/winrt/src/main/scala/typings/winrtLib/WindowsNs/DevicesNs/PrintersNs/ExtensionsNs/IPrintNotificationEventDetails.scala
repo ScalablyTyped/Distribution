@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPrintNotificationEventDetails extends js.Object {
   var eventData: java.lang.String
   var printerName: java.lang.String

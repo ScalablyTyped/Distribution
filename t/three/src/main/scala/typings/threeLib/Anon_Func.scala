@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Func extends js.Object {
   var func: js.Function3[
     /* u */ scala.Double, 

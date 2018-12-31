@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IndicesDeleteAliasParams extends GenericParams {
   var index: NameList
   var masterTimeout: js.UndefOr[TimeSpan] = js.undefined

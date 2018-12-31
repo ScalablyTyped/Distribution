@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SearchSuggestEnabled extends js.Object {
   var alternateErrorPagesEnabled: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.typesNs.StubbedChromeSetting
   var autofillEnabled: sinonDashChromeLib.sinonDashChromeMod.SinonChromeNs.typesNs.StubbedChromeSetting

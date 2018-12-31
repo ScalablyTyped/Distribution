@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FullMetadata extends UploadMetadata {
   var bucket: java.lang.String
   /**
-       * @deprecated
-       * Use Reference.getDownloadURL instead. This property will be removed in a
-       * future release.
-       */
+    * @deprecated
+    * Use Reference.getDownloadURL instead. This property will be removed in a
+    * future release.
+    */
   var downloadURLs: coreDashJsLib.Array[java.lang.String]
   var fullPath: java.lang.String
   var generation: java.lang.String

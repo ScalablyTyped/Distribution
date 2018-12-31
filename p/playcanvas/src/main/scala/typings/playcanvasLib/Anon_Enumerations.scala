@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Enumerations extends js.Object {
   var color: js.UndefOr[js.Array[_]] = js.undefined
   var curves: js.UndefOr[js.Array[java.lang.String]] = js.undefined

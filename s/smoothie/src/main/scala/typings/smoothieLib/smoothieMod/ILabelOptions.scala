@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILabelOptions extends js.Object {
   /** Enables/disables labels showing the min/max values. */
   var disabled: js.UndefOr[scala.Boolean] = js.undefined

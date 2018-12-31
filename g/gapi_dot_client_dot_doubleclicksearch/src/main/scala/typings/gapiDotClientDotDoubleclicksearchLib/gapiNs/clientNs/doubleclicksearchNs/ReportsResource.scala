@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReportsResource extends js.Object {
   /** Generates and returns a report immediately. */
   def generate(request: gapiDotClientDotDoubleclicksearchLib.Anon_PrettyPrintQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[Report]

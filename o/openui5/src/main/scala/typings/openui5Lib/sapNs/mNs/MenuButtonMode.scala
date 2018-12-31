@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait MenuButtonMode extends js.Object
 
 /**
-     * Different mode for a MenuButton (predefined types)
-    */
+  * Different mode for a MenuButton (predefined types)
+  */
 @JSGlobal("sap.m.MenuButtonMode")
 @js.native
 object MenuButtonMode extends js.Object {

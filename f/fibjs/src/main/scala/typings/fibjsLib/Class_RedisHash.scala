@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 	* @brief Redis 数据库客户端 Hash 对象，此对象为包含指定 key 的客户端，只有调用其方法才会操作数据库
 	* @detail 用以操作 Redis 的 Hash 对象，创建方法：,```JavaScript,var db = require("db");,var rdb = new db.openRedis("redis-server");,var hash = rdb.getHash("test");,```
 	*/
-
 @JSGlobal("Class_RedisHash")
 @js.native
 class Class_RedisHash () extends Class__object {
@@ -68,15 +67,6 @@ class Class_RedisHash () extends Class__object {
   	 * 
   	 */
   def incr(field: Class_Buffer): scala.Double = js.native
-  /**
-  	 * 
-  	 * @brief 将域所储存的值加上增量
-  	 * @param field 指定要修改的域
-  	 * @param num 指定要加上的数值
-  	 * @return 加上 num 之后，域的值
-  	 * 
-  	 * 
-  	 */
   def incr(field: Class_Buffer, num: scala.Double): scala.Double = js.native
   /**
   	 * 

@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick) */ 
-trait SplitButtonProps extends js.Object {
+- Lifted 1 members from Set(std.Pick<react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/SplitButton.SplitButton>, {typemapped, typemapped, indexed, indexed}[keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/SplitButton.SplitButton>]>) */ trait SplitButtonProps extends js.Object {
   var bsSize: js.UndefOr[reactDashBootstrapLib.reactDashBootstrapMod.Sizes] = js.undefined
   var bsStyle: js.UndefOr[java.lang.String] = js.undefined
   var dropdownTitle: js.UndefOr[js.Any] = js.undefined

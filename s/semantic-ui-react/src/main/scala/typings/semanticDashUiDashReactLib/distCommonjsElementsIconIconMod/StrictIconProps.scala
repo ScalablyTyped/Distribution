@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictIconProps extends js.Object {
   /** Icon can have an aria hidden. */
   var `aria-hidden`: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictStickyProps extends js.Object {
   /** A Sticky can be active. */
   var active: js.UndefOr[scala.Boolean] = js.undefined
@@ -22,11 +21,11 @@ trait StrictStickyProps extends js.Object {
   /** Offset in pixels from the top of the screen when fixing element to viewport. */
   var offset: js.UndefOr[scala.Double] = js.undefined
   /**
-     * Callback when element is bound to bottom of parent container.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Callback when element is bound to bottom of parent container.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onBottom: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
@@ -35,11 +34,11 @@ trait StrictStickyProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Callback when element is fixed to page.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Callback when element is fixed to page.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onStick: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
@@ -48,11 +47,11 @@ trait StrictStickyProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Callback when element is bound to top of parent container.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Callback when element is bound to top of parent container.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onTop: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
@@ -61,11 +60,11 @@ trait StrictStickyProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Callback when element is unfixed from page.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Callback when element is unfixed from page.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onUnstick: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 

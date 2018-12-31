@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Describes a 3*2 floating point matrix. */
-
 trait Matrix3x2 extends js.Object {
   /** The row one and column one element of the matrix. */
   var m11: scala.Double

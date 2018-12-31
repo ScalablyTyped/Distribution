@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnimateOptions extends AnimationOptions {
   /** complete - A function to call when the animation is done. */
   var complete: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

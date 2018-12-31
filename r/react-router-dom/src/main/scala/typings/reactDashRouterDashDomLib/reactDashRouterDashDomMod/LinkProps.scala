@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinkProps
   extends reactLib.reactMod.ReactNs.AnchorHTMLAttributes[reactLib.HTMLAnchorElement] {
   var innerRef: js.UndefOr[js.Function1[/* node */ reactLib.HTMLAnchorElement | scala.Null, scala.Unit]] = js.undefined

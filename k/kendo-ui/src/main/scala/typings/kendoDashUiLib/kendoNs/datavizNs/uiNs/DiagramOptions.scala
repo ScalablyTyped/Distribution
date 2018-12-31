@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiagramOptions extends js.Object {
   var add: js.UndefOr[js.Function1[/* e */ DiagramAddEvent, scala.Unit]] = js.undefined
   var autoBind: js.UndefOr[scala.Boolean] = js.undefined

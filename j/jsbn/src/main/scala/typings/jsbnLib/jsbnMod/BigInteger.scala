@@ -86,9 +86,7 @@ class BigInteger protected () extends js.Object {
   def fromInt(x: scala.Double): scala.Unit = js.native
   // (protected) alternate constructor
   def fromNumber(a: scala.Double): scala.Unit = js.native
-  // (protected) alternate constructor
   def fromNumber(a: scala.Double, b: scala.Double): scala.Unit = js.native
-  // (protected) alternate constructor
   def fromNumber(a: scala.Double, b: scala.Double, c: scala.Double): scala.Unit = js.native
   // (protected) convert from radix string
   def fromRadix(s: java.lang.String, b: scala.Double): scala.Unit = js.native
@@ -166,7 +164,6 @@ class BigInteger protected () extends js.Object {
   def toByteArray(): js.Array[scala.Double] = js.native
   // (protected) convert to radix string
   def toRadix(b: scala.Double): java.lang.String = js.native
-  // (public) return string representation in given radix
   def toString(b: scala.Double): java.lang.String = js.native
   // (public) this ^ a
   def xor(a: BigInteger): BigInteger = js.native

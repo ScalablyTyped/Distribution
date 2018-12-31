@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FillPaint extends js.Object {
   var `fill-antialias`: js.UndefOr[scala.Boolean | Expression] = js.undefined
   var `fill-color`: js.UndefOr[java.lang.String | StyleFunction | Expression] = js.undefined

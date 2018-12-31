@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BootstrapClientEditEventMap extends ControlEventMap {
   var gotFocus: EventArgs
   var lostFocus: EventArgs

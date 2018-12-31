@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WaterMarkOptions1 extends js.Object {
    // 图片水印的Url，mode = 1 时 **必需**
   var dissolve: scala.Double

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait HostPathVolumeConstructor
   extends /**
-     * Construct a new Volume with the given unique name.
-     */
+  * Construct a new Volume with the given unique name.
+  */
 org.scalablytyped.runtime.Instantiable1[/* path */ java.lang.String, HostPathVolume]
 

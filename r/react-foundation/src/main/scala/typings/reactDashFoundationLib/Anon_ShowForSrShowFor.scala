@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ShowForSrShowFor extends js.Object {
   var float: propDashTypesLib.propDashTypesMod.Requireable[_]
   var hideFor: propDashTypesLib.propDashTypesMod.Requireable[_]

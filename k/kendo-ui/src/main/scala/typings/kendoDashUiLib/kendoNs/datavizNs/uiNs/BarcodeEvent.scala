@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BarcodeEvent extends js.Object {
   var preventDefault: js.Function
   var sender: Barcode

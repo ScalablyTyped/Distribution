@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICertificateEnrollmentManagerStatics extends js.Object {
   def createRequestAsync(request: CertificateRequestProperties): winrtLib.WindowsNs.FoundationNs.IAsyncOperation[java.lang.String]
   def importPfxDataAsync(

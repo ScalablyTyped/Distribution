@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents relevant location data for a wallet item. */
 @JSGlobal("Windows.ApplicationModel.Wallet.WalletRelevantLocation")
 @js.native
+/** Initializes a new instance of the WalletRelevantLocation class. */
 class WalletRelevantLocation () extends js.Object {
   /** Gets or sets the message associated with a relevant location. */
   var displayMessage: java.lang.String = js.native

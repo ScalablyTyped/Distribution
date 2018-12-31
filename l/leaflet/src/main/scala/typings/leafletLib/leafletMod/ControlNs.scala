@@ -19,7 +19,6 @@ object ControlNs extends js.Object {
     def setPrefix(prefix: java.lang.String): this.type = js.native
   }
   
-  
   trait AttributionOptions
     extends leafletLib.leafletMod.ControlOptions {
     var prefix: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
@@ -40,10 +39,8 @@ object ControlNs extends js.Object {
     def removeLayer(layer: leafletLib.leafletMod.Layer): this.type = js.native
   }
   
-  
   trait LayersObject
     extends /* name */ org.scalablytyped.runtime.StringDictionary[leafletLib.leafletMod.Layer]
-  
   
   trait LayersOptions
     extends leafletLib.leafletMod.ControlOptions {
@@ -60,7 +57,6 @@ object ControlNs extends js.Object {
     var options_Scale: ScaleOptions = js.native
   }
   
-  
   trait ScaleOptions
     extends leafletLib.leafletMod.ControlOptions {
     var imperial: js.UndefOr[scala.Boolean] = js.undefined
@@ -76,7 +72,6 @@ object ControlNs extends js.Object {
     @JSName("options")
     var options_Zoom: ZoomOptions = js.native
   }
-  
   
   trait ZoomOptions
     extends leafletLib.leafletMod.ControlOptions {

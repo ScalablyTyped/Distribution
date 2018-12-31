@@ -15,25 +15,25 @@ trait Descriptor extends js.Object {
   /** Deeply merged properties of object instances */
   var deepProperties: js.UndefOr[js.Object] = js.native
   /**
-       * Initialization function(s) which will be called per each newly created
-       * instance.
-       */
+    * Initialization function(s) which will be called per each newly created
+    * instance.
+    */
   var initializers: js.UndefOr[js.Array[stampitLib.Init]] = js.native
   /**
-       * A hash containing methods (functions) of any future created instance.
-       */
+    * A hash containing methods (functions) of any future created instance.
+    */
   var methods: js.UndefOr[js.Object] = js.native
   /**
-       * Properties which will shallowly copied into any future created instance.
-       */
+    * Properties which will shallowly copied into any future created instance.
+    */
   var properties: js.UndefOr[js.Object] = js.native
   /** ES5 Property Descriptors applied to object instances */
   var propertyDescriptors: js.UndefOr[js.Object] = js.native
   /** Deeply merged properties of Stamps */
   var staticDeepProperties: js.UndefOr[js.Object] = js.native
   /**
-       * Properties which will be mixed to the new and any other stamp which this stamp will be composed with.
-       */
+    * Properties which will be mixed to the new and any other stamp which this stamp will be composed with.
+    */
   var staticProperties: js.UndefOr[js.Object] = js.native
   /** ES5 Property Descriptors applied to Stamps */
   var staticPropertyDescriptors: js.UndefOr[js.Object] = js.native

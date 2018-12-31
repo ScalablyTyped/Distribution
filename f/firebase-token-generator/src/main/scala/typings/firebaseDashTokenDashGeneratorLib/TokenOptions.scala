@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TokenOptions extends js.Object {
   var admin: js.UndefOr[scala.Boolean] = js.undefined
   var debug: js.UndefOr[scala.Boolean] = js.undefined

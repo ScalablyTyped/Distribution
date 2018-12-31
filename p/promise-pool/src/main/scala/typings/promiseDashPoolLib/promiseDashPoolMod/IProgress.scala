@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IProgress extends js.Object {
   var error: js.Any
   var fulfilled: scala.Double

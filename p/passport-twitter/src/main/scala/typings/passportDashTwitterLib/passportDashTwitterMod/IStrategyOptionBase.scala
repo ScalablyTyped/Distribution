@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStrategyOptionBase extends js.Object {
   var accessTokenURL: js.UndefOr[java.lang.String] = js.undefined
   var callbackURL: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RejectionInfo extends js.Object {
   /** Reason for the order rejection. */
   var reason: java.lang.String

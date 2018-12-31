@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Envelope extends js.Object {
   /** addresses from this value get added to RCPT TO list */
   var bcc: js.UndefOr[java.lang.String] = js.undefined

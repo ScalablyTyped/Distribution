@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_HtmlResponseBytes extends js.Object {
   /** Number of uncompressed response bytes for CSS resources on the page. */
   var cssResponseBytes: js.UndefOr[java.lang.String] = js.undefined

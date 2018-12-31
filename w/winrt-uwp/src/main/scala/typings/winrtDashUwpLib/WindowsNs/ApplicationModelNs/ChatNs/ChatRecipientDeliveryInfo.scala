@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represent the delivery info about a chat recipient. */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatRecipientDeliveryInfo")
 @js.native
+/** Initializes a new instance of the ChatRecipientDeliveryInfo class. */
 class ChatRecipientDeliveryInfo () extends js.Object {
   /** Gets or sets the time the message was sent to the recipient. */
   var deliveryTime: stdLib.Date = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OptionsWithState extends Options {
   var busy: scala.Boolean
   var currSlide: scala.Double

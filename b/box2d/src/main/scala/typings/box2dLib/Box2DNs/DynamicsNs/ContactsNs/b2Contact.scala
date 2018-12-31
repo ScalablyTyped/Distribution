@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Box2D.Dynamics.Contacts.b2Contact")
 @js.native
+/**
+		* Constructor
+		**/
 class b2Contact () extends js.Object {
   /**
   		* Flag this contact for filtering. Filtering will occur the next time step.

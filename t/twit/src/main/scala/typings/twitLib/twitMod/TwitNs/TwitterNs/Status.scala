@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Status extends js.Object {
   var annotations: js.UndefOr[js.Object] = js.undefined
   var contributors: js.UndefOr[js.Array[Contributors]] = js.undefined

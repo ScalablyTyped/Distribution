@@ -16,8 +16,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TelnetServer
   extends /**
-     * 
-     * @return  
-     */
+  * 
+  * @return  
+  */
 org.scalablytyped.runtime.Instantiable0[TelnetServer]
 

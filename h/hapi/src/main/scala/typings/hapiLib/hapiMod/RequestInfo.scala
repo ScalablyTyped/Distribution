@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestInfo extends js.Object {
   /** the request preferred encoding. */
   var acceptEncoding: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StatusReportingSettings extends js.Object {
   /** Whether displays reporting is enabled. */
   var displayInfoEnabled: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinkEventDefinition extends BaseElement {
   var name: java.lang.String
   var source: LinkEventDefinition

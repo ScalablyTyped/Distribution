@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDetailsHeaderStyles extends js.Object {
   var accessibleLabel: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   var cellIsActionable: atUifabricMergeDashStylesLib.libIStyleMod.IStyle

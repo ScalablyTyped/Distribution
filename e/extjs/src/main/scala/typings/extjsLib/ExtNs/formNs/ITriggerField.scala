@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITriggerField
   extends extjsLib.ExtNs.formNs.fieldNs.IText {
   /** [Config Option] (Boolean) */

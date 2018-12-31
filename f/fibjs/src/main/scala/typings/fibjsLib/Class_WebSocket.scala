@@ -19,27 +19,7 @@ class Class_WebSocket protected () extends Class_EventEmitter {
   	 * 
   	 */
   def this(url: java.lang.String) = this()
-  /**
-  	 * 
-  	 * @brief WebSocket 构造函数
-  	 * @param url 指定连接的服务器
-  	 * @param protocol 指定握手协议，缺省为 ""
-  	 * @param origin 指定握手时模拟的源
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def this(url: java.lang.String, protocol: java.lang.String) = this()
-  /**
-  	 * 
-  	 * @brief WebSocket 构造函数
-  	 * @param url 指定连接的服务器
-  	 * @param protocol 指定握手协议，缺省为 ""
-  	 * @param origin 指定握手时模拟的源
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def this(url: java.lang.String, protocol: java.lang.String, origin: java.lang.String) = this()
   /**
   	 * class prop 
@@ -131,25 +111,7 @@ class Class_WebSocket protected () extends Class_EventEmitter {
   	 * 
   	 */
   def close(): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 关闭当前连接，此操作会向对方发送 CLOSE 数据包，并等待对方响应
-  	 * @param code 指定关闭的代码，允许值为 3000-4999 或者 1000，缺省为 1000
-  	 * @param reason 指定关闭的原因，缺省为 ""
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def close(code: scala.Double): scala.Unit = js.native
-  /**
-  	 * 
-  	 * @brief 关闭当前连接，此操作会向对方发送 CLOSE 数据包，并等待对方响应
-  	 * @param code 指定关闭的代码，允许值为 3000-4999 或者 1000，缺省为 1000
-  	 * @param reason 指定关闭的原因，缺省为 ""
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def close(code: scala.Double, reason: java.lang.String): scala.Unit = js.native
   /**
   	 * 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectFieldProps extends js.Object {
   // <DropDownMenu/> is the element that get the 'other' properties
   var autoWidth: js.UndefOr[scala.Boolean] = js.undefined

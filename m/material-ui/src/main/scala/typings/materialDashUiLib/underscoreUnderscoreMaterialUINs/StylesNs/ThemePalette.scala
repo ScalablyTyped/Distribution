@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThemePalette extends js.Object {
   var accent1Color: js.UndefOr[java.lang.String] = js.undefined
   var accent2Color: js.UndefOr[java.lang.String] = js.undefined

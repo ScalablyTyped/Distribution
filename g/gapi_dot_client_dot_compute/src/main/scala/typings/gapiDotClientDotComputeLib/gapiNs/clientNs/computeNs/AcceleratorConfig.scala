@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AcceleratorConfig extends js.Object {
   /** The number of the guest accelerator cards exposed to this instance. */
   var acceleratorCount: js.UndefOr[scala.Double] = js.undefined

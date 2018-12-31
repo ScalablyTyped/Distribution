@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CidrBlock extends js.Object {
   /** cidr_block must be specified in CIDR notation. */
   var cidrBlock: js.UndefOr[java.lang.String] = js.undefined

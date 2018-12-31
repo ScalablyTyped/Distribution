@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VastCompanionAd extends js.Object {
   var companionClickThroughURLTemplate: java.lang.String
   var companionClickTrackingURLTemplate: java.lang.String

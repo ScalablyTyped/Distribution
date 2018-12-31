@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Protocols extends js.Object {
   var connection: js.UndefOr[Anon_AutoSpdy31] = js.undefined
   var plain: js.UndefOr[scala.Boolean] = js.undefined

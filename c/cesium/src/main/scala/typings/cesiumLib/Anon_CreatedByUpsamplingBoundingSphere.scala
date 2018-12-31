@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CreatedByUpsamplingBoundingSphere extends js.Object {
   var boundingSphere: cesiumLib.cesiumMod.CesiumNs.BoundingSphere
   var childTileMask: js.UndefOr[scala.Double] = js.undefined

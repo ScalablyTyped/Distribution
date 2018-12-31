@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISOTimeOptions extends js.Object {
   var includeOffset: js.UndefOr[scala.Boolean] = js.undefined
   var suppressMilliseconds: js.UndefOr[scala.Boolean] = js.undefined

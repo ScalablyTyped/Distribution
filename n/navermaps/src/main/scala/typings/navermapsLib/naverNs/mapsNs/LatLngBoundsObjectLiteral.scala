@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LatLngBoundsObjectLiteral extends js.Object {
   var east: scala.Double
   var north: scala.Double

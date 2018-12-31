@@ -15,9 +15,9 @@ abstract class Statement () extends js.Object {
   var sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan | scala.Null = js.native
   def hasModifier(modifier: StmtModifier): scala.Boolean = js.native
   /**
-       * Calculates whether this statement produces the same value as the given statement.
-       * Note: We don't check Types nor ParseSourceSpans nor function arguments.
-       */
+    * Calculates whether this statement produces the same value as the given statement.
+    * Note: We don't check Types nor ParseSourceSpans nor function arguments.
+    */
   def isEquivalent(stmt: Statement): scala.Boolean = js.native
   def visitStatement(visitor: StatementVisitor, context: js.Any): js.Any = js.native
 }

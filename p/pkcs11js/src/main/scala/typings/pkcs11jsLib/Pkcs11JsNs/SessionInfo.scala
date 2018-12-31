@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SessionInfo extends js.Object {
   var deviceError: scala.Double
   var flags: scala.Double

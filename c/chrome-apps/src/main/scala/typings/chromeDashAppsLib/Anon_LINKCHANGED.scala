@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LINKCHANGED extends js.Object {
   var CONNECTED: chromeDashAppsLib.chromeDashAppsLibStrings.connected
   var DISCONNECTED: chromeDashAppsLib.chromeDashAppsLibStrings.disconnected

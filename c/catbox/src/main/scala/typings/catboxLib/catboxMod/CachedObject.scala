@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CachedObject[T] extends js.Object {
   /** item - the value stored in the cache using set(). */
   var item: T

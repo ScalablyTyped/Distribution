@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 /*----------------------
 		Path
 	----------------------*/
-
-
 trait Path extends js.Object {
   /**
   		 * Returns the current value of the path from the provided object. If eval() is available,

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateLabelWriterPrintParamsXmlParams extends js.Object {
   /** The number of copies to print. */
   var copies: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VersionData extends StatusData {
   var bugfix: java.lang.String
   var major: java.lang.String

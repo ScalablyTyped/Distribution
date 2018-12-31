@@ -11,13 +11,13 @@ import scala.scalajs.js.annotation._
 // TODO use externalised Thenable
 // TODO use externalised Readable/Writable (not node's)
 /**
- * Highland: the high-level streams library
- *
- * Highland may be freely distributed under the Apache 2.0 license.
- * https://github.com/caolan/highland
- * Copyright (c) Caolan McMahon
- *
- */
+  * Highland: the high-level streams library
+  *
+  * Highland may be freely distributed under the Apache 2.0 license.
+  * https://github.com/caolan/highland
+  * Copyright (c) Caolan McMahon
+  *
+  */
 @js.native
 trait HighlandStatic extends js.Object {
   /**
@@ -200,20 +200,8 @@ trait HighlandStatic extends js.Object {
   	 * @param x - the object to test
   	 * @api public
   	 */
-  def isNil[R](x: R): /* is Nil */scala.Boolean = js.native
-  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  // UTILS
-  // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-  /**
-  	 * Returns true if `x` is the end of stream marker.
-  	 *
-  	 * @id isNil
-  	 * @section Streams
-  	 * @name _.isNil(x)
-  	 * @param x - the object to test
-  	 * @api public
-  	 */
-  def isNil[R](x: highlandLib.HighlandNs.Nil): /* is Nil */scala.Boolean = js.native
+  def isNil[R](x: R): /* is highland.Highland.Nil */ scala.Boolean = js.native
+  def isNil[R](x: highlandLib.HighlandNs.Nil): /* is highland.Highland.Nil */ scala.Boolean = js.native
   /**
   	 * Returns true if `x` is a Highland Stream.
   	 *
@@ -364,31 +352,7 @@ trait HighlandStatic extends js.Object {
   	 * @param {Array | Function | Number} [mappingHint] - how to pass the arguments to the callback
   	 * @api public
   	 */
-  def wrapCallback(f: js.Function): js.Function1[/* repeated */js.Any, highlandLib.HighlandNs.Stream[_]] = js.native
-  /**
-  	 * Wraps a node-style async function which accepts a callback, transforming
-  	 * it to a function which accepts the same arguments minus the callback and
-  	 * returns a Highland Stream instead. The wrapped function keeps its context,
-  	 * so you can safely use it as a method without binding (see the second
-  	 * example below).
-  	 *
-  	 * wrapCallback also accepts an optional mappingHint, which specifies how
-  	 * callback arguments are pushed to the stream. This can be used to handle
-  	 * non-standard callback protocols that pass back more than one value.
-  	 *
-  	 * mappingHint can be a function, number, or array. See the documentation on
-  	 * EventEmitter Stream Objects for details on the mapping hint. If
-  	 * mappingHint is a function, it will be called with all but the first
-  	 * argument that is passed to the callback. The first is still assumed to be
-  	 * the error argument.
-  	 *
-  	 * @id wrapCallback
-  	 * @section Utils
-  	 * @name _.wrapCallback(f)
-  	 * @param {Function} f - the node-style function to wrap
-  	 * @param {Array | Function | Number} [mappingHint] - how to pass the arguments to the callback
-  	 * @api public
-  	 */
-  def wrapCallback(f: js.Function, mappingHint: highlandLib.HighlandNs.MappingHint): js.Function1[/* repeated */js.Any, highlandLib.HighlandNs.Stream[_]] = js.native
+  def wrapCallback(f: js.Function): js.Function1[/* repeated */ js.Any, highlandLib.HighlandNs.Stream[_]] = js.native
+  def wrapCallback(f: js.Function, mappingHint: highlandLib.HighlandNs.MappingHint): js.Function1[/* repeated */ js.Any, highlandLib.HighlandNs.Stream[_]] = js.native
 }
 

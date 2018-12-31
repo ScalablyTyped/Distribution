@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Plugins
-     */
-
+  * Plugins
+  */
 @JSImport("webpack", "BannerPlugin")
 @js.native
 class BannerPlugin protected ()

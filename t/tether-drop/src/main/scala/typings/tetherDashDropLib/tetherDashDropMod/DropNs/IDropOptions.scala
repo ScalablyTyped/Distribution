@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDropOptions extends js.Object {
   var beforeClose: js.UndefOr[
     js.Function2[

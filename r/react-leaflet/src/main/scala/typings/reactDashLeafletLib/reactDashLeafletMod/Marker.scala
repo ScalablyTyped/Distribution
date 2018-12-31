@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-leaflet", "Marker")
 @js.native
 class Marker[P /* <: MarkerProps */, E /* <: leafletLib.leafletMod.Marker[_] */] () extends MapLayer[P, E] {
-  def getChildContext(): reactDashLeafletLib.Anon_PopupContainerE_600292564[E] = js.native
+  def getChildContext(): reactDashLeafletLib.Anon_PopupContainerE_1379115291[E] = js.native
 }
 

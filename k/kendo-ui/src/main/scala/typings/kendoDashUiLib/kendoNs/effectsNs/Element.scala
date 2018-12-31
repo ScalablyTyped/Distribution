@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Element extends js.Object {
   def expand(direction: java.lang.String): Expand
   def expandHorizontal(): Expand

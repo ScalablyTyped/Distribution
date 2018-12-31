@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Supports managing a request for background execution. */
 @JSGlobal("Windows.ApplicationModel.ExtendedExecution.ExtendedExecutionSession")
 @js.native
+/** Creates an ExtendedExecutionSession object. */
 class ExtendedExecutionSession () extends js.Object {
   /** Gets or sets a string to display in the shell. */
   var description: java.lang.String = js.native
@@ -35,9 +36,9 @@ class ExtendedExecutionSession () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[_, ExtendedExecutionRevokedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Requests background execution.
-                   * @return The result of the request.
-                   */
+    * Requests background execution.
+    * @return The result of the request.
+    */
   def requestExtensionAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[ExtendedExecutionResult] = js.native
 }
 

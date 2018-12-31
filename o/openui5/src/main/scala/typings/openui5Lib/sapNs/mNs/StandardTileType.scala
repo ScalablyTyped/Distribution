@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait StandardTileType extends js.Object
 
 /**
-     * Types for StandardTile
-    */
+  * Types for StandardTile
+  */
 @JSGlobal("sap.m.StandardTileType")
 @js.native
 object StandardTileType extends js.Object {

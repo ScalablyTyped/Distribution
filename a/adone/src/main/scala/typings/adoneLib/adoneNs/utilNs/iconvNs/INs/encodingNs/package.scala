@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object encodingNs {
   type Chinese = adoneLib.adoneLibStrings.GB2312 | adoneLib.adoneLibStrings.GBK | adoneLib.adoneLibStrings.GB18030 | adoneLib.adoneLibStrings.`Windows-936` | adoneLib.adoneLibStrings.`EUC-CN`
-  type IBM = /* LimitUnionLength: was union type with length 78 */java.lang.String
+  type IBM = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 78 */ java.lang.String
   type ISO = adoneLib.adoneLibStrings.`ISO-8829-1` | adoneLib.adoneLibStrings.`ISO-8859-2` | adoneLib.adoneLibStrings.`ISO-8859-3` | adoneLib.adoneLibStrings.`ISO-8859-4` | adoneLib.adoneLibStrings.`ISO-8859-5` | adoneLib.adoneLibStrings.`ISO-8859-6` | adoneLib.adoneLibStrings.`ISO-8859-7` | adoneLib.adoneLibStrings.`ISO-8859-8` | adoneLib.adoneLibStrings.`ISO-8859-9` | adoneLib.adoneLibStrings.`ISO-8859-10` | adoneLib.adoneLibStrings.`ISO-8859-11` | adoneLib.adoneLibStrings.`ISO-8859-12` | adoneLib.adoneLibStrings.`ISO-8859-13` | adoneLib.adoneLibStrings.`ISO-8859-14` | adoneLib.adoneLibStrings.`ISO-8859-15` | adoneLib.adoneLibStrings.`ISO-8859-16`
   type Japanese = adoneLib.adoneLibStrings.Shift_JIS | adoneLib.adoneLibStrings.`Windows-31J` | adoneLib.adoneLibStrings.`windows-932` | adoneLib.adoneLibStrings.`EUC-JP`
   type KOI8 = adoneLib.adoneLibStrings.`KOI8-R` | adoneLib.adoneLibStrings.`KOI8-U` | adoneLib.adoneLibStrings.`KOI8-RU` | adoneLib.adoneLibStrings.`KOI8-T`

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ButtonsApiExportDataParameter extends js.Object {
   var columns: js.UndefOr[js.Any] = js.undefined
   var decodeEntities: js.UndefOr[scala.Boolean] = js.undefined

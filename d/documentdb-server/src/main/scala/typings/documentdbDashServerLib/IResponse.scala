@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * The Response object represents the response message that will be sent from the server in response to the requested operation. This includes information about the HTTP headers and body of the response from the server.
- * The Response object is not present in pre-triggers because they are run before the response is generated.
- * For post-triggers, the response represents the operation that was executed before the trigger. For example, if the post-trigger is being run ("triggered") after the creation of a document, then
- * the response body contains the JSON body of the document that was created. This can be accessed through the response object and (as JSON) can be natively consumed in JavaScript.
- * For stored procedures, the response can be manipulated to send output back to the client-side.
- * Note: this object not available in pre-triggers
- */
+  * The Response object represents the response message that will be sent from the server in response to the requested operation. This includes information about the HTTP headers and body of the response from the server.
+  * The Response object is not present in pre-triggers because they are run before the response is generated.
+  * For post-triggers, the response represents the operation that was executed before the trigger. For example, if the post-trigger is being run ("triggered") after the creation of a document, then
+  * the response body contains the JSON body of the document that was created. This can be accessed through the response object and (as JSON) can be natively consumed in JavaScript.
+  * For stored procedures, the response can be manipulated to send output back to the client-side.
+  * Note: this object not available in pre-triggers
+  */
 @js.native
 trait IResponse extends js.Object {
   def appendBody(value: java.lang.String): scala.Unit = js.native

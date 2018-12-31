@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Transform extends js.Object {
   def mixin(dest: js.Any): scala.Unit
   def pipe(dest: js.Any): js.Any

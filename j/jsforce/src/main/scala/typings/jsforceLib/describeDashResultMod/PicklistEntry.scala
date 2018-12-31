@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PicklistEntry extends js.Object {
   var active: scala.Boolean
   var defaultValue: scala.Boolean

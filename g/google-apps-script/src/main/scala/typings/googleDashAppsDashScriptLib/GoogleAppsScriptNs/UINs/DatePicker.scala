@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatePicker extends js.Object {
   def addStyleDependentName(styleName: java.lang.String): DatePicker
   def addStyleName(styleName: java.lang.String): DatePicker

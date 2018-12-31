@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * WebAssembly.Module
-     */
+  * WebAssembly.Module
+  */
 @JSGlobal("WebAssembly.Module")
 @js.native
 class Module protected () extends js.Object {
@@ -15,8 +15,8 @@ class Module protected () extends js.Object {
 }
 
 /**
-     * WebAssembly.Module
-     */
+  * WebAssembly.Module
+  */
 @JSGlobal("WebAssembly.Module")
 @js.native
 object Module extends js.Object {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadData extends js.Object {
   /** Optional. An ArrayBuffer with a copy of the data. */
   var bytes: js.UndefOr[stdLib.ArrayBuffer] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WrapperConfig extends js.Object {
   var autoLoad: js.UndefOr[scala.Boolean] = js.undefined
   var autoReset: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MinHeightSubdivisions extends js.Object {
   var alphaFilter: scala.Double
   var buffer: stdLib.Uint8Array

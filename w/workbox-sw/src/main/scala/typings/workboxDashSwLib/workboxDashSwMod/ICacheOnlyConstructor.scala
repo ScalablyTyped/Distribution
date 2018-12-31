@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Instantiates a new CacheOnly strategy
- */
+  * Instantiates a new CacheOnly strategy
+  */
 @js.native
 trait ICacheOnlyConstructor
   extends org.scalablytyped.runtime.Instantiable0[CacheOnly]

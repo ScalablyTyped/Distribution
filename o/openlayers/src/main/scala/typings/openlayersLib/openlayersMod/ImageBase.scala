@@ -10,12 +10,12 @@ import scala.scalajs.js.annotation._
 class ImageBase protected ()
   extends openlayersLib.openlayersMod.eventsNs.EventTarget {
   /**
-       * @param extent Extent.
-       * @param resolution Resolution.
-       * @param pixelRatio Pixel ratio.
-       * @param state State.
-       * @param attributions Attributions.
-       */
+    * @param extent Extent.
+    * @param resolution Resolution.
+    * @param pixelRatio Pixel ratio.
+    * @param state State.
+    * @param attributions Attributions.
+    */
   def this(extent: Extent, resolution: scala.Double, pixelRatio: scala.Double, state: ImageState, attributions: js.Array[Attribution]) = this()
 }
 

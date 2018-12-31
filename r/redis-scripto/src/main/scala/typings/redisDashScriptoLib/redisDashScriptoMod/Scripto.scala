@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Scripto extends js.Object {
   def eval(
     scriptName: java.lang.String,

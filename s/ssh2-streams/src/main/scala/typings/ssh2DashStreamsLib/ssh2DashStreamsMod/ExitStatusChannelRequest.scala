@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExitStatusChannelRequest extends js.Object {
   var code: scala.Double
   var recipient: scala.Double

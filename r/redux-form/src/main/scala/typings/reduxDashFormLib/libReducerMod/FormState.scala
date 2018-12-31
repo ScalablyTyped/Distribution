@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FormState extends js.Object {
   var active: js.UndefOr[java.lang.String] = js.undefined
   var anyTouched: js.UndefOr[scala.Boolean] = js.undefined

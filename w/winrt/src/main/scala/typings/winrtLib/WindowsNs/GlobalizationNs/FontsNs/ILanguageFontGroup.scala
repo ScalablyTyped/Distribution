@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILanguageFontGroup extends js.Object {
   var documentAlternate1Font: LanguageFont
   var documentAlternate2Font: LanguageFont

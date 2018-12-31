@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RollupBuild extends js.Object {
   var cache: RollupCache
   var getTimings: js.UndefOr[js.Function0[SerializedTimings]] = js.undefined

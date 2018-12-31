@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(stripeLib.stripeMod.StripeNs.tokensNs.IBankAccountToken because Would inherit conflicting mutable fields List(`object`, id, used, `type`, livemode, client_ip, created))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(stripeLib.stripeMod.StripeNs.tokensNs.IBankAccountToken because Would inherit conflicting mutable fields List(client_ip, created, id, livemode, `object`, `type`, used))*/
 trait IToken extends ICardToken
 

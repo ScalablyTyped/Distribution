@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * An Object describing the current audio route.
- */
-
+  * An Object describing the current audio route.
+  */
 trait RouteDescription extends js.Object {
   /**
   	 * An Array of current input ports for the session. See the `AUDIO_SESSION_PORT` constants.

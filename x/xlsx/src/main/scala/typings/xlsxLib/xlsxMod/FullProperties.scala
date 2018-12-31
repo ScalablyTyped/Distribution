@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FullProperties extends Properties {
   var AppVersion: js.UndefOr[java.lang.String] = js.undefined
   var Application: js.UndefOr[java.lang.String] = js.undefined

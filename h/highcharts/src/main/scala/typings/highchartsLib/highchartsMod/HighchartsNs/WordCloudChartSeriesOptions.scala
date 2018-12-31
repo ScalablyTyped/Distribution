@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(highchartsLib.highchartsMod.HighchartsNs.IndividualSeriesOptions because Would inherit conflicting mutable fields List(visible, color, cursor, pointWidth, minFontSize, maxFontSize))*/
-
+/* RemoveMultipleInheritance: Dropped parents List(highchartsLib.highchartsMod.HighchartsNs.IndividualSeriesOptions because Would inherit conflicting mutable fields List(color, cursor, maxFontSize, minFontSize, pointWidth, visible))*/
 trait WordCloudChartSeriesOptions extends WordCloudChart
 

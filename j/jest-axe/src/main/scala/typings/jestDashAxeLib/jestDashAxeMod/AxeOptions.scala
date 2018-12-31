@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AxeOptions extends js.Object {
   var elementRef: js.UndefOr[scala.Boolean] = js.undefined
   var iframes: js.UndefOr[scala.Boolean] = js.undefined

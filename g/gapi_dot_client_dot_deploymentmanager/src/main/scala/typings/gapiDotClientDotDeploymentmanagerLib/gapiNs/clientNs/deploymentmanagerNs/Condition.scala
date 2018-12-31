@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Condition extends js.Object {
   /** Trusted attributes supplied by the IAM system. */
   var iam: js.UndefOr[java.lang.String] = js.undefined

@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Defines an optimization used to turn post-processes off
-     * @description More details at http://doc.babylonjs.com/how_to/how_to_use_sceneoptimizer
-     */
+  * Defines an optimization used to turn post-processes off
+  * @description More details at http://doc.babylonjs.com/how_to/how_to_use_sceneoptimizer
+  */
 @JSImport("babylonjs", "PostProcessesOptimization")
 @js.native
 class PostProcessesOptimization ()

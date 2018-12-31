@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 object MeteorNsMembers extends js.Object {
   /** User **/
-  
   /** Error **/
   var Error: ErrorStatic = js.native
   /** Global props **/
@@ -25,16 +24,9 @@ object MeteorNsMembers extends js.Object {
   var users: meteorLib.MongoNs.Collection[User] = js.native
   def _debug(args: js.Any*): scala.Unit = js.native
   /** Method **/
-  
   /** Url **/
   def absoluteUrl(): java.lang.String = js.native
-  /** Method **/
-  
-  /** Url **/
   def absoluteUrl(path: java.lang.String): java.lang.String = js.native
-  /** Method **/
-  
-  /** Url **/
   def absoluteUrl(path: java.lang.String, options: meteorLib.Anon_RootUrl): java.lang.String = js.native
   @JSName("apply")
   def apply(name: java.lang.String, args: js.Array[meteorLib.EJSONable]): js.Any = js.native
@@ -93,32 +85,25 @@ object MeteorNsMembers extends js.Object {
   def logoutOtherClients(): scala.Unit = js.native
   def logoutOtherClients(callback: js.Function): scala.Unit = js.native
   /** Error **/
-  
   /** Method **/
   def methods(methods: js.Object): scala.Unit = js.native
   def onConnection(callback: js.Function): scala.Unit = js.native
   /** Connection **/
-  
   def publish(name: java.lang.String, func: js.Function): scala.Unit = js.native
   /** Event **/
-  
   /** Connection **/
   def reconnect(): scala.Unit = js.native
   /** Url **/
-  
   /** Timeout **/
   def setInterval(func: js.Function, delay: scala.Double): scala.Double = js.native
   def setTimeout(func: js.Function, delay: scala.Double): scala.Double = js.native
   /** Timeout **/
-  
   /** utils **/
   def startup(func: js.Function): scala.Unit = js.native
   /** Connection **/
-  
   /** Status **/
   def status(): meteorLib.DDPNs.DDPStatus = js.native
   /** Status **/
-  
   /** Pub/Sub **/
   def subscribe(name: java.lang.String, args: js.Any*): SubscriptionHandle = js.native
   def user(): User = js.native

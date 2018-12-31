@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SnackbarProps
   extends reactLib.reactMod.ReactNs.Props[materialDashUiLib.underscoreUnderscoreMaterialUINs.Snackbar] {
   var action: js.UndefOr[java.lang.String] = js.undefined

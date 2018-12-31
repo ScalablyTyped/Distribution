@@ -97,33 +97,18 @@ class ShapeRange protected () extends js.Object {
   ): scala.Unit = js.native
   def Duplicate(): ShapeRange = js.native
   /**
-           * @param number [ScaleWidth=0]
-           * @param number [ScaleHeight=0]
-           * @param PowerPoint.PpExportMode [ExportMode=1]
-           */
+    * @param number [ScaleWidth=0]
+    * @param number [ScaleHeight=0]
+    * @param PowerPoint.PpExportMode [ExportMode=1]
+    */
   def Export(PathName: java.lang.String, Filter: PpShapeFormat): scala.Unit = js.native
-  /**
-           * @param number [ScaleWidth=0]
-           * @param number [ScaleHeight=0]
-           * @param PowerPoint.PpExportMode [ExportMode=1]
-           */
   def Export(PathName: java.lang.String, Filter: PpShapeFormat, ScaleWidth: scala.Double): scala.Unit = js.native
-  /**
-           * @param number [ScaleWidth=0]
-           * @param number [ScaleHeight=0]
-           * @param PowerPoint.PpExportMode [ExportMode=1]
-           */
   def Export(
     PathName: java.lang.String,
     Filter: PpShapeFormat,
     ScaleWidth: scala.Double,
     ScaleHeight: scala.Double
   ): scala.Unit = js.native
-  /**
-           * @param number [ScaleWidth=0]
-           * @param number [ScaleHeight=0]
-           * @param PowerPoint.PpExportMode [ExportMode=1]
-           */
   def Export(
     PathName: java.lang.String,
     Filter: PpShapeFormat,
@@ -143,7 +128,6 @@ class ShapeRange protected () extends js.Object {
   def RerouteConnections(): scala.Unit = js.native
   /** @param Office.MsoScaleFrom [fScale=0] */
   def ScaleHeight(Factor: scala.Double, RelativeToOriginalSize: activexDashOfficeLib.OfficeNs.MsoTriState): scala.Unit = js.native
-  /** @param Office.MsoScaleFrom [fScale=0] */
   def ScaleHeight(
     Factor: scala.Double,
     RelativeToOriginalSize: activexDashOfficeLib.OfficeNs.MsoTriState,
@@ -151,7 +135,6 @@ class ShapeRange protected () extends js.Object {
   ): scala.Unit = js.native
   /** @param Office.MsoScaleFrom [fScale=0] */
   def ScaleWidth(Factor: scala.Double, RelativeToOriginalSize: activexDashOfficeLib.OfficeNs.MsoTriState): scala.Unit = js.native
-  /** @param Office.MsoScaleFrom [fScale=0] */
   def ScaleWidth(
     Factor: scala.Double,
     RelativeToOriginalSize: activexDashOfficeLib.OfficeNs.MsoTriState,
@@ -159,7 +142,6 @@ class ShapeRange protected () extends js.Object {
   ): scala.Unit = js.native
   /** @param Office.MsoTriState [Replace=-1] */
   def Select(): scala.Unit = js.native
-  /** @param Office.MsoTriState [Replace=-1] */
   def Select(Replace: activexDashOfficeLib.OfficeNs.MsoTriState): scala.Unit = js.native
   def SetShapesDefaultProperties(): scala.Unit = js.native
   def Ungroup(): ShapeRange = js.native

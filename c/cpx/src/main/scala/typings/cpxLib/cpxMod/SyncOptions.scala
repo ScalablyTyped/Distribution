@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SyncOptions extends js.Object {
   /** remove files that copied on past before copy. */
   var clean: js.UndefOr[scala.Boolean] = js.undefined

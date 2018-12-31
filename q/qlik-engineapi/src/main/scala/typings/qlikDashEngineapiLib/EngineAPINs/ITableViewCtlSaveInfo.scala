@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * TableViewCtlSaveInfo...
-     */
-
+  * TableViewCtlSaveInfo...
+  */
 trait ITableViewCtlSaveInfo extends js.Object {
   /**
-           * Internal view mode.
-           */
+    * Internal view mode.
+    */
   var qInternalView: ITableViewSaveInfo
   /**
-           * Source view mode.
-           */
+    * Source view mode.
+    */
   var qSourceView: ITableViewSaveInfo
 }
 

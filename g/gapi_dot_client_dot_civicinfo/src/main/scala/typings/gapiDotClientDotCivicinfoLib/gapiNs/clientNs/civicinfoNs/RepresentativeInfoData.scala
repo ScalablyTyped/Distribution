@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RepresentativeInfoData extends js.Object {
   /** Political geographic divisions that contain the requested address. */
   var divisions: js.UndefOr[stdLib.Record[java.lang.String, GeographicDivision]] = js.undefined

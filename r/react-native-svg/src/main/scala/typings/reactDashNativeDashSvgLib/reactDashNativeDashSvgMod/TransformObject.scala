@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransformObject extends js.Object {
   var origin: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined
   var originX: js.UndefOr[reactDashNativeDashSvgLib.NumberProp] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SignerOptions extends js.Object {
   var credentials: js.UndefOr[
     awsDashSdkLib.libCredentialsMod.Credentials | awsDashSdkLib.libCredentialsMod.CredentialsOptions

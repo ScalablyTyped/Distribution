@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PipelineDescription extends js.Object {
   /** Pipeline level display data. */
   var displayData: js.UndefOr[js.Array[DisplayData]] = js.undefined

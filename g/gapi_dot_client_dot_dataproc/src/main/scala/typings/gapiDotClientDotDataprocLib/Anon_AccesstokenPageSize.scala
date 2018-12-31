@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPageSize extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -23,11 +22,11 @@ trait Anon_AccesstokenPageSize extends js.Object {
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Optional. A filter constraining the jobs to list. Filters are case-sensitive and have the following syntax:field = value AND field = value ...where
-                   * field is status.state or labels.[KEY], and [KEY] is a label key. value can be &#42; to match all values. status.state can be either ACTIVE or INACTIVE.
-                   * Only the logical AND operator is supported; space-separated items are treated as having an implicit AND operator.Example filter:status.state = ACTIVE
-                   * AND labels.env = staging AND labels.starred = &#42;
-                   */
+    * Optional. A filter constraining the jobs to list. Filters are case-sensitive and have the following syntax:field = value AND field = value ...where
+    * field is status.state or labels.[KEY], and [KEY] is a label key. value can be &#42; to match all values. status.state can be either ACTIVE or INACTIVE.
+    * Only the logical AND operator is supported; space-separated items are treated as having an implicit AND operator.Example filter:status.state = ACTIVE
+    * AND labels.env = staging AND labels.starred = &#42;
+    */
   var filter: js.UndefOr[java.lang.String] = js.undefined
   /** Optional. Specifies enumerated categories of jobs to list (default = match ALL jobs). */
   var jobStateMatcher: js.UndefOr[java.lang.String] = js.undefined

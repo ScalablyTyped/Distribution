@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object scheduledeventsNs extends js.Object {
   /**
-       * Interfaces and instance classes for types from the Mendix sub meta model `ScheduledEvents`.
-       */
+    * Interfaces and instance classes for types from the Mendix sub meta model `ScheduledEvents`.
+    */
   /**
-       * See: {@link https://docs.mendix.com/refguide7/scheduled-events relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/scheduled-events relevant section in reference guide}
+    */
   @js.native
   trait IScheduledEvent
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.IDocument
@@ -23,9 +23,9 @@ object scheduledeventsNs extends js.Object {
     extends mendixmodelsdkLib.distSdkInternalMod.AbstractEnum
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/scheduled-events relevant section in reference guide}
-       */
-  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenScheduledeventsMod.scheduledeventsNs.IScheduledEvent because Would inherit conflicting mutable fields List(model, structureTypeName, id, unit, isLoaded))*/
+    * See: {@link https://docs.mendix.com/refguide7/scheduled-events relevant section in reference guide}
+    */
+  /* RemoveMultipleInheritance: Dropped parents List(mendixmodelsdkLib.distGenScheduledeventsMod.scheduledeventsNs.IScheduledEvent because Would inherit conflicting mutable fields List(id, isLoaded, model, structureTypeName, unit))*/
   @js.native
   class ScheduledEvent protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.Document {
@@ -55,16 +55,16 @@ object scheduledeventsNs extends js.Object {
   }
   
   /**
-       * See: {@link https://docs.mendix.com/refguide7/scheduled-events relevant section in reference guide}
-       */
+    * See: {@link https://docs.mendix.com/refguide7/scheduled-events relevant section in reference guide}
+    */
   @js.native
   object ScheduledEvent extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenScheduledeventsMod.StructureVersionInfo = js.native
     /**
-             * Creates a new ScheduledEvent unit in the SDK and on the server.
-             * Expects one argument, the projects.IFolderBase in which this unit is contained.
-             */
+      * Creates a new ScheduledEvent unit in the SDK and on the server.
+      * Expects one argument, the projects.IFolderBase in which this unit is contained.
+      */
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenScheduledeventsMod.scheduledeventsNs.ScheduledEvent = js.native
   }
   

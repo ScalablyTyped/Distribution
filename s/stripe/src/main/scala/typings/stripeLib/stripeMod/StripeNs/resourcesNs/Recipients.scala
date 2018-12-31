@@ -6,31 +6,30 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @deprecated
-         */
-
+  * @deprecated
+  */
 trait Recipients
   extends stripeLib.stripeMod.StripeNs.StripeResource {
   /**
-               * @deprecated
-               */
+    * @deprecated
+    */
   def create(): scala.Unit
-  //options: IDataOptions
+  // options: IDataOptions
   /**
-               * @deprecated
-               */
+    * @deprecated
+    */
   def del(id: java.lang.String): scala.Unit
   /**
-               * @deprecated
-               */
+    * @deprecated
+    */
   def list(): scala.Unit
   /**
-               * @deprecated
-               */
+    * @deprecated
+    */
   def retrieve(id: java.lang.String): scala.Unit
   /**
-               * @deprecated
-               */
+    * @deprecated
+    */
   def update(id: java.lang.String): scala.Unit
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IValidator extends js.Object {
   var help: java.lang.String
   var name: java.lang.String

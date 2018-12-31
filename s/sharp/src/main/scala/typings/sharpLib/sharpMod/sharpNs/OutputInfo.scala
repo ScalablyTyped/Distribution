@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OutputInfo extends js.Object {
   var channels: scala.Double
   /** Only defined when using a crop strategy */

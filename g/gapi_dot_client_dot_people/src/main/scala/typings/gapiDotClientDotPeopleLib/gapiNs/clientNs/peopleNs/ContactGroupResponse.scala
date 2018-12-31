@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContactGroupResponse extends js.Object {
   /** The contact group. */
   var contactGroup: js.UndefOr[ContactGroup] = js.undefined

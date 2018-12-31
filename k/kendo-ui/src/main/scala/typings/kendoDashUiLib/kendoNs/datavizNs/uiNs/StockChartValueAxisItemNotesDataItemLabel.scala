@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StockChartValueAxisItemNotesDataItemLabel extends js.Object {
   var background: js.UndefOr[java.lang.String] = js.undefined
   var border: js.UndefOr[StockChartValueAxisItemNotesDataItemLabelBorder] = js.undefined

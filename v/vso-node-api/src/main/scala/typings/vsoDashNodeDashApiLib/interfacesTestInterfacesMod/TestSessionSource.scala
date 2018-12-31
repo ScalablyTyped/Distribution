@@ -12,50 +12,50 @@ sealed trait TestSessionSource extends js.Object
 @js.native
 object TestSessionSource extends js.Object {
   /**
-       * The session was created from feedback client.
-       */
+    * The session was created from feedback client.
+    */
   @js.native
   sealed trait FeedbackDesktop
     extends vsoDashNodeDashApiLib.interfacesTestInterfacesMod.TestSessionSource
   
   /**
-       * The session was created from browser extension.
-       */
+    * The session was created from browser extension.
+    */
   @js.native
   sealed trait FeedbackWeb
     extends vsoDashNodeDashApiLib.interfacesTestInterfacesMod.TestSessionSource
   
   /**
-       * To show sessions from all supported sources.
-       */
+    * To show sessions from all supported sources.
+    */
   @js.native
   sealed trait SessionInsightsForAll
     extends vsoDashNodeDashApiLib.interfacesTestInterfacesMod.TestSessionSource
   
   /**
-       * Source of test session uncertain as it is stale
-       */
+    * Source of test session uncertain as it is stale
+    */
   @js.native
   sealed trait Unknown
     extends vsoDashNodeDashApiLib.interfacesTestInterfacesMod.TestSessionSource
   
   /**
-       * The session was created from Microsoft Test Manager exploratory desktop tool.
-       */
+    * The session was created from Microsoft Test Manager exploratory desktop tool.
+    */
   @js.native
   sealed trait XTDesktop
     extends vsoDashNodeDashApiLib.interfacesTestInterfacesMod.TestSessionSource
   
   /**
-       * The session was created from web access using Microsoft Test Manager exploratory desktop tool.
-       */
+    * The session was created from web access using Microsoft Test Manager exploratory desktop tool.
+    */
   @js.native
   sealed trait XTDesktop2
     extends vsoDashNodeDashApiLib.interfacesTestInterfacesMod.TestSessionSource
   
   /**
-       * The session was created from browser extension.
-       */
+    * The session was created from browser extension.
+    */
   @js.native
   sealed trait XTWeb
     extends vsoDashNodeDashApiLib.interfacesTestInterfacesMod.TestSessionSource

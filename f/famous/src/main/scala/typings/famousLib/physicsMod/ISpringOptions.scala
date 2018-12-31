@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISpringOptions extends IForceOptions {
   var anchor: js.UndefOr[famousLib.mathMod.Vec3] = js.undefined
   var damping: js.UndefOr[scala.Double] = js.undefined

@@ -46,18 +46,14 @@ class WebBrowser_V1 protected () extends js.Object {
   def GoSearch(): scala.Unit = js.native
   /** Navigates to a URL or file. */
   def Navigate(URL: java.lang.String): scala.Unit = js.native
-  /** Navigates to a URL or file. */
   def Navigate(URL: java.lang.String, Flags: BrowserNavConstants): scala.Unit = js.native
-  /** Navigates to a URL or file. */
   def Navigate(URL: java.lang.String, Flags: BrowserNavConstants, TargetFrameName: TargetFrameValues): scala.Unit = js.native
-  /** Navigates to a URL or file. */
   def Navigate(
     URL: java.lang.String,
     Flags: BrowserNavConstants,
     TargetFrameName: TargetFrameValues,
     PostData: js.Any
   ): scala.Unit = js.native
-  /** Navigates to a URL or file. */
   def Navigate(
     URL: java.lang.String,
     Flags: BrowserNavConstants,
@@ -65,16 +61,13 @@ class WebBrowser_V1 protected () extends js.Object {
     PostData: js.Any,
     Headers: java.lang.String
   ): scala.Unit = js.native
-  /** Navigates to a URL or file. */
   def Navigate(URL: java.lang.String, Flags: BrowserNavConstants, TargetFrameName: java.lang.String): scala.Unit = js.native
-  /** Navigates to a URL or file. */
   def Navigate(
     URL: java.lang.String,
     Flags: BrowserNavConstants,
     TargetFrameName: java.lang.String,
     PostData: js.Any
   ): scala.Unit = js.native
-  /** Navigates to a URL or file. */
   def Navigate(
     URL: java.lang.String,
     Flags: BrowserNavConstants,
@@ -86,7 +79,6 @@ class WebBrowser_V1 protected () extends js.Object {
   def Refresh(): scala.Unit = js.native
   /** Refresh the currently viewed page. */
   def Refresh2(): scala.Unit = js.native
-  /** Refresh the currently viewed page. */
   def Refresh2(Level: RefreshConstants): scala.Unit = js.native
   /** Stops opening a file. */
   def Stop(): scala.Unit = js.native

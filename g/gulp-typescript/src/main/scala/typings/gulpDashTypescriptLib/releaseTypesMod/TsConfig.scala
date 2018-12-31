@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TsConfig extends js.Object {
   var compilerOptions: js.UndefOr[js.Any] = js.undefined
   var exclude: js.UndefOr[js.Array[java.lang.String]] = js.undefined

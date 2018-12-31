@@ -19,19 +19,19 @@ class MaskedTextField protected ()
   /** True if the TextField is focused */
   var _isFocused: js.Any = js.native
   /**
-       *  An array of data containing information regarding the format characters,
-       *  their indices inside the display text, and their corresponding values.
-       * @example
-       * ```
-       *  [
-       *    { value: '1', displayIndex: 16, format: /[0-9]/ },
-       *    { value: '2', displayIndex: 17, format: /[0-9]/ },
-       *    { displayIndex: 18, format: /[0-9]/ },
-       *    { value: '4', displayIndex: 22, format: /[0-9]/ },
-       *    ...
-       *  ]
-       * ```
-       */
+    *  An array of data containing information regarding the format characters,
+    *  their indices inside the display text, and their corresponding values.
+    * @example
+    * ```
+    *  [
+    *    { value: '1', displayIndex: 16, format: /[0-9]/ },
+    *    { value: '2', displayIndex: 17, format: /[0-9]/ },
+    *    { displayIndex: 18, format: /[0-9]/ },
+    *    { value: '4', displayIndex: 22, format: /[0-9]/ },
+    *    ...
+    *  ]
+    * ```
+    */
   var _maskCharData: js.Any = js.native
   /** True if the TextField was not focused and it was clicked into */
   var _moveCursorOnMouseUp: js.Any = js.native
@@ -72,19 +72,19 @@ class MaskedTextField protected ()
   /* CompleteClass */
   override def setSelectionEnd(value: scala.Double): scala.Unit = js.native
   /**
-       * Sets the start and end positions of a selection in a text field.
-       * Call with start and end set to the same value to set the cursor position.
-       * @param start - Index of the start of the selection.
-       * @param end - Index of the end of the selection.
-       */
+    * Sets the start and end positions of a selection in a text field.
+    * Call with start and end set to the same value to set the cursor position.
+    * @param start - Index of the start of the selection.
+    * @param end - Index of the end of the selection.
+    */
   /* CompleteClass */
   override def setSelectionRange(start: scala.Double, end: scala.Double): scala.Unit = js.native
   /** Sets the selection start of the text field to a specified value. */
   /* CompleteClass */
   override def setSelectionStart(value: scala.Double): scala.Unit = js.native
   /**
-       *
-       */
+    *
+    */
   def setValue(newValue: java.lang.String): scala.Unit = js.native
 }
 

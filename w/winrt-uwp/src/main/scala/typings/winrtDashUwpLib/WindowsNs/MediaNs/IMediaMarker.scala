@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents a marker at specific location in a media stream time-line. */
-
 trait IMediaMarker extends js.Object {
   /** Gets the type of the media marker. */
   var mediaMarkerType: java.lang.String

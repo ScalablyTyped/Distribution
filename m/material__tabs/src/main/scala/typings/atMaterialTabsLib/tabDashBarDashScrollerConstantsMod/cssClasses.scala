@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait cssClasses
   extends atMaterialBaseLib.foundationMod.MDCStrings {
   var INDICATOR_BACK: atMaterialTabsLib.atMaterialTabsLibStrings.`mdc-tab-bar-scroller__indicator--back`

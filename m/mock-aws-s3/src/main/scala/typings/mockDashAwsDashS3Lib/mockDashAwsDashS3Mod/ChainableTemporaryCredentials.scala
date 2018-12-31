@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "ChainableTemporaryCredentials")
 @js.native
+/**
+  * Creates a new temporary credentials object.
+  */
 class ChainableTemporaryCredentials ()
   extends awsDashSdkLib.awsDashSdkMod.ChainableTemporaryCredentials {
   def this(options: awsDashSdkLib.libCredentialsChainableUnderscoreTemporaryUnderscoreCredentialsMod.ChainableTemporaryCredentialsNs.ChainableTemporaryCredentialsOptions) = this()

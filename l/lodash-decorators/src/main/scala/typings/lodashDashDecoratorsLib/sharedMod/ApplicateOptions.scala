@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ApplicateOptions extends js.Object {
   var args: js.Array[_]
   var config: lodashDashDecoratorsLib.factoryMod.DecoratorConfig

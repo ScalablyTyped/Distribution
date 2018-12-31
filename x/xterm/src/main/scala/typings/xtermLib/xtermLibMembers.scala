@@ -8,11 +8,8 @@ import scala.scalajs.js.annotation._
 @JSGlobalScope
 @js.native
 object xtermLibMembers extends js.Object {
-  var Blob: Anon_BlobParts with (/* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(xterm), TsIdentSimple(Blob)))) */js.Any) = js.native
   var CSS: CSS = js.native
   var ServiceUIFrameContext: ServiceUIFrameContext = js.native
-  var URL: Anon_Url with (/* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(xterm), TsIdentSimple(URL)))) */js.Any) = js.native
-  var URLSearchParams: Anon_Init with (/* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(xterm), TsIdentSimple(URLSearchParams)))) */js.Any) = js.native
   var applicationCache: ApplicationCache = js.native
   var caches: CacheStorage = js.native
   var clientInformation: Navigator = js.native
@@ -44,9 +41,9 @@ object xtermLibMembers extends js.Object {
   var navigator: Navigator = js.native
   var offscreenBuffering: java.lang.String | scala.Boolean = js.native
   /**
-   * Fires when the user aborts the download.
-   * @param ev The event.
-   */
+    * Fires when the user aborts the download.
+    * @param ev The event.
+    */
   var onabort: (js.ThisFunction1[/* this */ Window, /* ev */ UIEvent, js.Any]) | scala.Null = js.native
   var onafterprint: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   var onanimationcancel: (js.ThisFunction1[/* this */ Window, /* ev */ AnimationEvent, js.Any]) | scala.Null = js.native
@@ -57,170 +54,170 @@ object xtermLibMembers extends js.Object {
   var onbeforeprint: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   var onbeforeunload: (js.ThisFunction1[/* this */ Window, /* ev */ BeforeUnloadEvent, js.Any]) | scala.Null = js.native
   /**
-   * Fires when the object loses the input focus.
-   * @param ev The focus event.
-   */
+    * Fires when the object loses the input focus.
+    * @param ev The focus event.
+    */
   var onblur: (js.ThisFunction1[/* this */ Window, /* ev */ FocusEvent, js.Any]) | scala.Null = js.native
   var oncancel: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Occurs when playback is possible, but would require further buffering.
-   * @param ev The event.
-   */
+    * Occurs when playback is possible, but would require further buffering.
+    * @param ev The event.
+    */
   var oncanplay: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   var oncanplaythrough: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Fires when the contents of the object or selection have changed.
-   * @param ev The event.
-   */
+    * Fires when the contents of the object or selection have changed.
+    * @param ev The event.
+    */
   var onchange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Fires when the user clicks the left mouse button on the object
-   * @param ev The mouse event.
-   */
+    * Fires when the user clicks the left mouse button on the object
+    * @param ev The mouse event.
+    */
   var onclick: (js.ThisFunction1[/* this */ Window, /* ev */ MouseEvent, js.Any]) | scala.Null = js.native
   var onclose: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   var oncompassneedscalibration: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Fires when the user clicks the right mouse button in the client area, opening the context menu.
-   * @param ev The mouse event.
-   */
+    * Fires when the user clicks the right mouse button in the client area, opening the context menu.
+    * @param ev The mouse event.
+    */
   var oncontextmenu: (js.ThisFunction1[/* this */ Window, /* ev */ MouseEvent, js.Any]) | scala.Null = js.native
   var oncuechange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Fires when the user double-clicks the object.
-   * @param ev The mouse event.
-   */
+    * Fires when the user double-clicks the object.
+    * @param ev The mouse event.
+    */
   var ondblclick: (js.ThisFunction1[/* this */ Window, /* ev */ MouseEvent, js.Any]) | scala.Null = js.native
   var ondevicelight: (js.ThisFunction1[/* this */ Window, /* ev */ DeviceLightEvent, js.Any]) | scala.Null = js.native
   var ondevicemotion: (js.ThisFunction1[/* this */ Window, /* ev */ DeviceMotionEvent, js.Any]) | scala.Null = js.native
   var ondeviceorientation: (js.ThisFunction1[/* this */ Window, /* ev */ DeviceOrientationEvent, js.Any]) | scala.Null = js.native
   /**
-   * Fires on the source object continuously during a drag operation.
-   * @param ev The event.
-   */
+    * Fires on the source object continuously during a drag operation.
+    * @param ev The event.
+    */
   var ondrag: (js.ThisFunction1[/* this */ Window, /* ev */ DragEvent, js.Any]) | scala.Null = js.native
   /**
-   * Fires on the source object when the user releases the mouse at the close of a drag operation.
-   * @param ev The event.
-   */
+    * Fires on the source object when the user releases the mouse at the close of a drag operation.
+    * @param ev The event.
+    */
   var ondragend: (js.ThisFunction1[/* this */ Window, /* ev */ DragEvent, js.Any]) | scala.Null = js.native
   /**
-   * Fires on the target element when the user drags the object to a valid drop target.
-   * @param ev The drag event.
-   */
+    * Fires on the target element when the user drags the object to a valid drop target.
+    * @param ev The drag event.
+    */
   var ondragenter: (js.ThisFunction1[/* this */ Window, /* ev */ DragEvent, js.Any]) | scala.Null = js.native
   var ondragexit: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Fires on the target object when the user moves the mouse out of a valid drop target during a drag operation.
-   * @param ev The drag event.
-   */
+    * Fires on the target object when the user moves the mouse out of a valid drop target during a drag operation.
+    * @param ev The drag event.
+    */
   var ondragleave: (js.ThisFunction1[/* this */ Window, /* ev */ DragEvent, js.Any]) | scala.Null = js.native
   /**
-   * Fires on the target element continuously while the user drags the object over a valid drop target.
-   * @param ev The event.
-   */
+    * Fires on the target element continuously while the user drags the object over a valid drop target.
+    * @param ev The event.
+    */
   var ondragover: (js.ThisFunction1[/* this */ Window, /* ev */ DragEvent, js.Any]) | scala.Null = js.native
   /**
-   * Fires on the source object when the user starts to drag a text selection or selected object.
-   * @param ev The event.
-   */
+    * Fires on the source object when the user starts to drag a text selection or selected object.
+    * @param ev The event.
+    */
   var ondragstart: (js.ThisFunction1[/* this */ Window, /* ev */ DragEvent, js.Any]) | scala.Null = js.native
   var ondrop: (js.ThisFunction1[/* this */ Window, /* ev */ DragEvent, js.Any]) | scala.Null = js.native
   /**
-   * Occurs when the duration attribute is updated.
-   * @param ev The event.
-   */
+    * Occurs when the duration attribute is updated.
+    * @param ev The event.
+    */
   var ondurationchange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Occurs when the media element is reset to its initial state.
-   * @param ev The event.
-   */
+    * Occurs when the media element is reset to its initial state.
+    * @param ev The event.
+    */
   var onemptied: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Occurs when the end of playback is reached.
-   * @param ev The event
-   */
+    * Occurs when the end of playback is reached.
+    * @param ev The event
+    */
   var onended: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Fires when an error occurs during object loading.
-   * @param ev The event.
-   */
+    * Fires when an error occurs during object loading.
+    * @param ev The event.
+    */
   var onerror: ErrorEventHandler = js.native
   /**
-   * Fires when the object receives focus.
-   * @param ev The event.
-   */
+    * Fires when the object receives focus.
+    * @param ev The event.
+    */
   var onfocus: (js.ThisFunction1[/* this */ Window, /* ev */ FocusEvent, js.Any]) | scala.Null = js.native
   var ongotpointercapture: (js.ThisFunction1[/* this */ Window, /* ev */ PointerEvent, js.Any]) | scala.Null = js.native
   var onhashchange: (js.ThisFunction1[/* this */ Window, /* ev */ HashChangeEvent, js.Any]) | scala.Null = js.native
   var oninput: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   var oninvalid: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Fires when the user presses a key.
-   * @param ev The keyboard event
-   */
+    * Fires when the user presses a key.
+    * @param ev The keyboard event
+    */
   var onkeydown: (js.ThisFunction1[/* this */ Window, /* ev */ KeyboardEvent, js.Any]) | scala.Null = js.native
   /**
-   * Fires when the user presses an alphanumeric key.
-   * @param ev The event.
-   */
+    * Fires when the user presses an alphanumeric key.
+    * @param ev The event.
+    */
   var onkeypress: (js.ThisFunction1[/* this */ Window, /* ev */ KeyboardEvent, js.Any]) | scala.Null = js.native
   /**
-   * Fires when the user releases a key.
-   * @param ev The keyboard event
-   */
+    * Fires when the user releases a key.
+    * @param ev The keyboard event
+    */
   var onkeyup: (js.ThisFunction1[/* this */ Window, /* ev */ KeyboardEvent, js.Any]) | scala.Null = js.native
   var onlanguagechange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Fires immediately after the browser loads the object.
-   * @param ev The event.
-   */
+    * Fires immediately after the browser loads the object.
+    * @param ev The event.
+    */
   var onload: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Occurs when media data is loaded at the current playback position.
-   * @param ev The event.
-   */
+    * Occurs when media data is loaded at the current playback position.
+    * @param ev The event.
+    */
   var onloadeddata: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Occurs when the duration and dimensions of the media have been determined.
-   * @param ev The event.
-   */
+    * Occurs when the duration and dimensions of the media have been determined.
+    * @param ev The event.
+    */
   var onloadedmetadata: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   var onloadend: (js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, js.Any]) | scala.Null = js.native
   /**
-   * Occurs when Internet Explorer begins looking for media data.
-   * @param ev The event.
-   */
+    * Occurs when Internet Explorer begins looking for media data.
+    * @param ev The event.
+    */
   var onloadstart: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   var onlostpointercapture: (js.ThisFunction1[/* this */ Window, /* ev */ PointerEvent, js.Any]) | scala.Null = js.native
   var onmessage: (js.ThisFunction1[/* this */ Window, /* ev */ MessageEvent, js.Any]) | scala.Null = js.native
   var onmessageerror: (js.ThisFunction1[/* this */ Window, /* ev */ MessageEvent, js.Any]) | scala.Null = js.native
   /**
-   * Fires when the user clicks the object with either mouse button.
-   * @param ev The mouse event.
-   */
+    * Fires when the user clicks the object with either mouse button.
+    * @param ev The mouse event.
+    */
   var onmousedown: (js.ThisFunction1[/* this */ Window, /* ev */ MouseEvent, js.Any]) | scala.Null = js.native
   var onmouseenter: (js.ThisFunction1[/* this */ Window, /* ev */ MouseEvent, js.Any]) | scala.Null = js.native
   var onmouseleave: (js.ThisFunction1[/* this */ Window, /* ev */ MouseEvent, js.Any]) | scala.Null = js.native
   /**
-   * Fires when the user moves the mouse over the object.
-   * @param ev The mouse event.
-   */
+    * Fires when the user moves the mouse over the object.
+    * @param ev The mouse event.
+    */
   var onmousemove: (js.ThisFunction1[/* this */ Window, /* ev */ MouseEvent, js.Any]) | scala.Null = js.native
   /**
-   * Fires when the user moves the mouse pointer outside the boundaries of the object.
-   * @param ev The mouse event.
-   */
+    * Fires when the user moves the mouse pointer outside the boundaries of the object.
+    * @param ev The mouse event.
+    */
   var onmouseout: (js.ThisFunction1[/* this */ Window, /* ev */ MouseEvent, js.Any]) | scala.Null = js.native
   /**
-   * Fires when the user moves the mouse pointer into the object.
-   * @param ev The mouse event.
-   */
+    * Fires when the user moves the mouse pointer into the object.
+    * @param ev The mouse event.
+    */
   var onmouseover: (js.ThisFunction1[/* this */ Window, /* ev */ MouseEvent, js.Any]) | scala.Null = js.native
   /**
-   * Fires when the user releases a mouse button while the mouse is over the object.
-   * @param ev The mouse event.
-   */
+    * Fires when the user releases a mouse button while the mouse is over the object.
+    * @param ev The mouse event.
+    */
   var onmouseup: (js.ThisFunction1[/* this */ Window, /* ev */ MouseEvent, js.Any]) | scala.Null = js.native
   var onmousewheel: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   var onmsgesturechange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
@@ -245,19 +242,19 @@ object xtermLibMembers extends js.Object {
   var onpagehide: (js.ThisFunction1[/* this */ Window, /* ev */ PageTransitionEvent, js.Any]) | scala.Null = js.native
   var onpageshow: (js.ThisFunction1[/* this */ Window, /* ev */ PageTransitionEvent, js.Any]) | scala.Null = js.native
   /**
-   * Occurs when playback is paused.
-   * @param ev The event.
-   */
+    * Occurs when playback is paused.
+    * @param ev The event.
+    */
   var onpause: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Occurs when the play method is requested.
-   * @param ev The event.
-   */
+    * Occurs when the play method is requested.
+    * @param ev The event.
+    */
   var onplay: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Occurs when the audio or video has started playing.
-   * @param ev The event.
-   */
+    * Occurs when the audio or video has started playing.
+    * @param ev The event.
+    */
   var onplaying: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   var onpointercancel: (js.ThisFunction1[/* this */ Window, /* ev */ PointerEvent, js.Any]) | scala.Null = js.native
   var onpointerdown: (js.ThisFunction1[/* this */ Window, /* ev */ PointerEvent, js.Any]) | scala.Null = js.native
@@ -269,60 +266,60 @@ object xtermLibMembers extends js.Object {
   var onpointerup: (js.ThisFunction1[/* this */ Window, /* ev */ PointerEvent, js.Any]) | scala.Null = js.native
   var onpopstate: (js.ThisFunction1[/* this */ Window, /* ev */ PopStateEvent, js.Any]) | scala.Null = js.native
   /**
-   * Occurs to indicate progress while downloading media data.
-   * @param ev The event.
-   */
+    * Occurs to indicate progress while downloading media data.
+    * @param ev The event.
+    */
   var onprogress: (js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, js.Any]) | scala.Null = js.native
   /**
-   * Occurs when the playback rate is increased or decreased.
-   * @param ev The event.
-   */
+    * Occurs when the playback rate is increased or decreased.
+    * @param ev The event.
+    */
   var onratechange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   var onreadystatechange: (js.ThisFunction1[/* this */ Window, /* ev */ ProgressEvent, js.Any]) | scala.Null = js.native
   var onrejectionhandled: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Fires when the user resets a form.
-   * @param ev The event.
-   */
+    * Fires when the user resets a form.
+    * @param ev The event.
+    */
   var onreset: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   var onresize: (js.ThisFunction1[/* this */ Window, /* ev */ UIEvent, js.Any]) | scala.Null = js.native
   /**
-   * Fires when the user repositions the scroll box in the scroll bar on the object.
-   * @param ev The event.
-   */
+    * Fires when the user repositions the scroll box in the scroll bar on the object.
+    * @param ev The event.
+    */
   var onscroll: (js.ThisFunction1[/* this */ Window, /* ev */ UIEvent, js.Any]) | scala.Null = js.native
   var onsecuritypolicyviolation: (js.ThisFunction1[/* this */ Window, /* ev */ SecurityPolicyViolationEvent, js.Any]) | scala.Null = js.native
   /**
-   * Occurs when the seek operation ends.
-   * @param ev The event.
-   */
+    * Occurs when the seek operation ends.
+    * @param ev The event.
+    */
   var onseeked: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Occurs when the current playback position is moved.
-   * @param ev The event.
-   */
+    * Occurs when the current playback position is moved.
+    * @param ev The event.
+    */
   var onseeking: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Fires when the current selection changes.
-   * @param ev The event.
-   */
+    * Fires when the current selection changes.
+    * @param ev The event.
+    */
   var onselect: (js.ThisFunction1[/* this */ Window, /* ev */ UIEvent, js.Any]) | scala.Null = js.native
   /**
-   * Occurs when the download has stopped.
-   * @param ev The event.
-   */
+    * Occurs when the download has stopped.
+    * @param ev The event.
+    */
   var onstalled: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   var onstorage: (js.ThisFunction1[/* this */ Window, /* ev */ StorageEvent, js.Any]) | scala.Null = js.native
   var onsubmit: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Occurs if the load operation has been intentionally halted.
-   * @param ev The event.
-   */
+    * Occurs if the load operation has been intentionally halted.
+    * @param ev The event.
+    */
   var onsuspend: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Occurs to indicate the current playback position.
-   * @param ev The event.
-   */
+    * Occurs to indicate the current playback position.
+    * @param ev The event.
+    */
   var ontimeupdate: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   var ontoggle: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   var ontouchcancel: (js.ThisFunction1[/* this */ Window, /* ev */ TouchEvent, js.Any]) | scala.Null = js.native
@@ -336,9 +333,9 @@ object xtermLibMembers extends js.Object {
   var onunhandledrejection: (js.ThisFunction1[/* this */ Window, /* ev */ PromiseRejectionEvent, js.Any]) | scala.Null = js.native
   var onunload: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Occurs when the volume is changed, or playback is muted or unmuted.
-   * @param ev The event.
-   */
+    * Occurs when the volume is changed, or playback is muted or unmuted.
+    * @param ev The event.
+    */
   var onvolumechange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   var onvrdisplayactivate: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   var onvrdisplayblur: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
@@ -350,9 +347,9 @@ object xtermLibMembers extends js.Object {
   var onvrdisplaypointerunrestricted: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   var onvrdisplaypresentchange: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   /**
-   * Occurs when playback stops because the next frame of a video resource is not available.
-   * @param ev The event.
-   */
+    * Occurs when playback stops because the next frame of a video resource is not available.
+    * @param ev The event.
+    */
   var onwaiting: (js.ThisFunction1[/* this */ Window, /* ev */ Event, js.Any]) | scala.Null = js.native
   var onwheel: (js.ThisFunction1[/* this */ Window, /* ev */ WheelEvent, js.Any]) | scala.Null = js.native
   var opener: js.Any = js.native
@@ -382,7 +379,6 @@ object xtermLibMembers extends js.Object {
   var styleMedia: StyleMedia = js.native
   var toolbar: BarProp = js.native
   var top: Window = js.native
-  var webkitURL: Anon_Url with (/* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(xterm), TsIdentSimple(URL)))) */js.Any) = js.native
   var window: Window = js.native
   def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): scala.Unit = js.native
   def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): scala.Unit = js.native
@@ -2637,9 +2633,9 @@ object xtermLibMembers extends js.Object {
   def createImageBitmap(image: ImageBitmapSource, sx: scala.Double, sy: scala.Double, sw: scala.Double, sh: scala.Double): js.Promise[ImageBitmap] = js.native
   def departFocus(navigationReason: NavigationReason, origin: FocusNavigationOrigin): scala.Unit = js.native
   /**
-   * Dispatches a synthetic event event to target and returns true
-   * if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
-   */
+    * Dispatches a synthetic event event to target and returns true
+    * if either event's cancelable attribute value is false or its preventDefault() method was not invoked, and false otherwise.
+    */
   def dispatchEvent(event: Event): scala.Boolean = js.native
   def fetch(input: RequestInfo): js.Promise[Response] = js.native
   def fetch(input: RequestInfo, init: RequestInit): js.Promise[Response] = js.native

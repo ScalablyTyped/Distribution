@@ -39,7 +39,6 @@ trait AnswerList extends js.Object {
   def cachedGif(set: js.Any): js.Any = js.native
   // Cached methods
   def cachedPhoto(): js.Any = js.native
-  // Cached methods
   def cachedPhoto(set: js.Any): js.Any = js.native
   def cachedSticker(): js.Any = js.native
   def cachedSticker(set: js.Any): js.Any = js.native

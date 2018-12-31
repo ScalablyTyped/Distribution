@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object UpdateMethodNs extends js.Object {
   /**
-             * MERGE method will send update requests in a MERGE request
-            */
+    * MERGE method will send update requests in a MERGE request
+    */
   var Merge: js.Any = js.native
   /**
-             * PUT method will send update requests in a PUT request
-            */
+    * PUT method will send update requests in a PUT request
+    */
   var Put: js.Any = js.native
 }
 

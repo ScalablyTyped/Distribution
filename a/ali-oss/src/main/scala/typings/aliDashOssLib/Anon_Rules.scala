@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Rules extends js.Object {
   var res: aliDashOssLib.aliDashOssMod.OSSNs.NormalSuccessResponse
   var rules: js.Array[aliDashOssLib.aliDashOssMod.OSSNs.LifecycleRule]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProductDestination extends js.Object {
   /** The name of the destination. */
   var destinationName: js.UndefOr[java.lang.String] = js.undefined

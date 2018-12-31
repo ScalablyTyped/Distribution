@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestAuth extends js.Object {
   /** an artifact object received from the authentication strategy and used in authentication-related actions. */
   var artifacts: js.Object
@@ -16,9 +15,9 @@ trait RequestAuth extends js.Object {
   /** true if the request has been successfully authenticated, otherwise false. */
   var isAuthenticated: scala.Boolean
   /**
-       * true is the request has been successfully authorized against the route authentication access configuration. If the route has not access rules defined or if the request failed authorization,
-       * set to false.
-       */
+    * true is the request has been successfully authorized against the route authentication access configuration. If the route has not access rules defined or if the request failed authorization,
+    * set to false.
+    */
   var isAuthorized: scala.Boolean
   /** the route authentication mode. */
   var mode: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChooserOptions extends js.Object {
   // called when the user closes the dialog without selecting a file
   var cancel: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

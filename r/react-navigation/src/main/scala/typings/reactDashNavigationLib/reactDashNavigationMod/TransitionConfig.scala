@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransitionConfig extends js.Object {
   // The style of the container. Useful when a scene doesn't have
   // 100% opacity and the underlying container is visible.

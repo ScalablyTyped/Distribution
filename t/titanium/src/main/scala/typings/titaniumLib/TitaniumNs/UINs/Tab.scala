@@ -67,9 +67,6 @@ trait Tab extends View {
   			 * Closes the top-level window for this tab.
   			 */
   def close(window: Window): scala.Unit = js.native
-  /**
-  			 * Closes the top-level window for this tab.
-  			 */
   def close(window: Window, options: js.Any): scala.Unit = js.native
   /**
   			 * Gets the value of the <Titanium.UI.Tab.active> property.
@@ -127,9 +124,6 @@ trait Tab extends View {
   			 * Opens a new window.
   			 */
   def open(window: Window): scala.Unit = js.native
-  /**
-  			 * Opens a new window.
-  			 */
   def open(window: Window, options: js.Any): scala.Unit = js.native
   /**
   			 * Closes all windows that are currently opened inside the tab.

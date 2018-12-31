@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MaxRatio extends js.Object {
   /**
-                     * Set max width of each bar
-                     */
+    * Set max width of each bar
+    */
   var max: js.UndefOr[scala.Double] = js.undefined
   /**
-                     * Set the width of each bar by ratio
-                     */
+    * Set the width of each bar by ratio
+    */
   var ratio: scala.Double
 }
 

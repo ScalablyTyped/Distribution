@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatetimeParsingFlagsOpt extends js.Object {
   var charsLeftOver: js.UndefOr[scala.Double] = js.undefined
   var empty: js.UndefOr[scala.Boolean] = js.undefined

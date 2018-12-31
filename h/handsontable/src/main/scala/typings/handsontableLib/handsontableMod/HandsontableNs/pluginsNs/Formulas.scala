@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Formulas extends Base {
   var dataProvider: DataProvider
   var eventManager: EventManager

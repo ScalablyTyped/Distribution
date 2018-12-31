@@ -17,7 +17,7 @@ object jasmineNsMembers extends js.Object {
   def clock(): Clock = js.native
   def createSpy(): Spy = js.native
   def createSpy(name: java.lang.String): Spy = js.native
-  def createSpy(name: java.lang.String, originalFn: js.Function1[/* repeated */js.Any, _]): Spy = js.native
+  def createSpy(name: java.lang.String, originalFn: js.Function1[/* repeated */ js.Any, _]): Spy = js.native
   def createSpyObj(baseName: java.lang.String, methodNames: js.Array[_]): js.Any = js.native
   @JSName("createSpyObj")
   def createSpyObj_TT[T](baseName: java.lang.String, methodNames: js.Array[_]): T = js.native

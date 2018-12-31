@@ -12,36 +12,36 @@ sealed trait QueryMembership extends js.Object
 @js.native
 object QueryMembership extends js.Object {
   /**
-       * Query will return only direct membership data
-       */
+    * Query will return only direct membership data
+    */
   @js.native
   sealed trait Direct
     extends vsoDashNodeDashApiLib.interfacesIdentitiesInterfacesMod.QueryMembership
   
   /**
-       * Query will return expanded membership data
-       */
+    * Query will return expanded membership data
+    */
   @js.native
   sealed trait Expanded
     extends vsoDashNodeDashApiLib.interfacesIdentitiesInterfacesMod.QueryMembership
   
   /**
-       * Query will return expanded down membership data (children only)
-       */
+    * Query will return expanded down membership data (children only)
+    */
   @js.native
   sealed trait ExpandedDown
     extends vsoDashNodeDashApiLib.interfacesIdentitiesInterfacesMod.QueryMembership
   
   /**
-       * Query will return expanded up membership data (parents only)
-       */
+    * Query will return expanded up membership data (parents only)
+    */
   @js.native
   sealed trait ExpandedUp
     extends vsoDashNodeDashApiLib.interfacesIdentitiesInterfacesMod.QueryMembership
   
   /**
-       * Query will not return any membership data
-       */
+    * Query will not return any membership data
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesIdentitiesInterfacesMod.QueryMembership

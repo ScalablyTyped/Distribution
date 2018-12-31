@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BadgeProps
   extends reactLib.reactMod.ReactNs.ClassAttributes[js.Any] {
   var className: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LayoutParameter extends js.Object {
   var lossFunction: js.UndefOr[
     js.Function2[

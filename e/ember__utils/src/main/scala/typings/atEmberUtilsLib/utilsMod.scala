@@ -21,20 +21,14 @@ object utilsMod extends js.Object {
   def tryInvoke(obj: js.Object, methodName: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def tryInvoke(obj: js.Object, methodName: java.lang.String, args: js.Array[_]): js.UndefOr[scala.Nothing] = js.native
   def tryInvoke[FNAME /* <: java.lang.String */, T /* <: js.Object */](obj: T, methodName: FNAME): js.UndefOr[
-    stdLib.ReturnType[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(FNAME))) */js.Any
-    ]
+    stdLib.ReturnType[/* import warning: ImportType.apply Failed type conversion: T[FNAME] */ js.Any]
   ] = js.native
   def tryInvoke[FNAME /* <: java.lang.String */, T /* <: js.Object */](
     obj: T,
     methodName: FNAME,
-    args: atEmberUtilsLib.dashPrivateTypesMod.FunctionArgs[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(FNAME))) */js.Any
-    ]
+    args: atEmberUtilsLib.dashPrivateTypesMod.FunctionArgs[/* import warning: ImportType.apply Failed type conversion: T[FNAME] */ js.Any]
   ): js.UndefOr[
-    stdLib.ReturnType[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(FNAME))) */js.Any
-    ]
+    stdLib.ReturnType[/* import warning: ImportType.apply Failed type conversion: T[FNAME] */ js.Any]
   ] = js.native
   def typeOf(): atEmberUtilsLib.atEmberUtilsLibStrings.undefined = js.native
   def typeOf(item: js.Any): java.lang.String = js.native

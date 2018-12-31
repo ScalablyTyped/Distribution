@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Messages extends js.Object {
   var agenda: js.UndefOr[java.lang.String] = js.undefined
   var allDay: js.UndefOr[java.lang.String] = js.undefined

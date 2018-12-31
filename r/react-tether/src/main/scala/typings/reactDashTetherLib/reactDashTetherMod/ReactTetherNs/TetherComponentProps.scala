@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TetherComponentProps
   extends reactLib.reactMod.ReactNs.Props[reactDashTetherLib.reactDashTetherMod.TetherComponent]
      with tetherLib.tetherMod.TetherNs.ITetherOptions {

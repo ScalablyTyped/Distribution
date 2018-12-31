@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChannelBrandingSettings extends js.Object {
   /** Branding properties for the channel view. */
   var channel: js.UndefOr[ChannelSettings] = js.undefined

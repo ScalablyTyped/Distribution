@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TouchInit extends js.Object {
   var altitudeAngle: js.UndefOr[scala.Double] = js.undefined
   var azimuthAngle: js.UndefOr[scala.Double] = js.undefined

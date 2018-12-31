@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreateProgramOptions extends js.Object {
   var configFileParsingDiagnostics: js.UndefOr[js.Array[Diagnostic]] = js.undefined
   var host: js.UndefOr[CompilerHost] = js.undefined

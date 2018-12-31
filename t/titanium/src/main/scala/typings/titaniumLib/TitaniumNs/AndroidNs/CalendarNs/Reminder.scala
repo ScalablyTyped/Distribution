@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 			 * An object that represents a single reminder for an event in an Android calendar.
 			 */
-
 trait Reminder
   extends titaniumLib.TitaniumNs.Proxy {
   /**

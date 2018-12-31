@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IsBWImg extends js.Object {
   var accentColor: java.lang.String
   var dominantColorBackground: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GlideUser extends js.Object {
   def getCompanyID(): java.lang.String
   def getDisplayName(): java.lang.String

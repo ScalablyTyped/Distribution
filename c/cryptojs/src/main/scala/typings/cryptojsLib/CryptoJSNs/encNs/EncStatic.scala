@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EncStatic extends js.Object {
   var Base64: ICoder
   var Hex: ICoder

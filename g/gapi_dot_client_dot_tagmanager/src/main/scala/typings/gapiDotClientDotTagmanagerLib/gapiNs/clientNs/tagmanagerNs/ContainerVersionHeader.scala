@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContainerVersionHeader extends js.Object {
   /** GTM Account ID. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined

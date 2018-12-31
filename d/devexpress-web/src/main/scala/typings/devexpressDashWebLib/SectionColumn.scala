@@ -6,19 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Defines a section column in the document.
- */
-
+  * Defines a section column in the document.
+  */
 trait SectionColumn extends js.Object {
   /**
-       * Gets or sets the amount of space between adjacent section columns.
-       * Value: An integer value specifying the spacing after a column in twips.
-       */
+    * Gets or sets the amount of space between adjacent section columns.
+    * Value: An integer value specifying the spacing after a column in twips.
+    */
   var spacing: scala.Double
   /**
-       * Gets or sets the width of the section column.
-       * Value: An integer value specifying the section column width in twips.
-       */
+    * Gets or sets the width of the section column.
+    * Value: An integer value specifying the section column width in twips.
+    */
   var width: scala.Double
 }
 

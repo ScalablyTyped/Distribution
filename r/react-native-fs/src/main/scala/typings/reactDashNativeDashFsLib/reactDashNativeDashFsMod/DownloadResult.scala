@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DownloadResult extends js.Object {
   // The number of bytes written to the file
   var bytesWritten: scala.Double

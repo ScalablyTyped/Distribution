@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PostalCode extends js.Object {
   /** Postal code. This is equivalent to the id field. */
   var code: js.UndefOr[java.lang.String] = js.undefined

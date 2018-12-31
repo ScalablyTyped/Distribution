@@ -8,14 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("meteor/blaze", "Blaze")
 @js.native
 object BlazeNs extends js.Object {
-  
   trait EventsMap
     extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Function]
   
-  
   trait HelpersMap
     extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Function]
-  
   
   trait Template extends js.Object {
     @JSName("$")
@@ -35,7 +32,6 @@ object BlazeNs extends js.Object {
     def onDestroyed(cb: js.Function): scala.Unit
     def onRendered(cb: js.Function): scala.Unit
   }
-  
   
   trait TemplateInstance extends js.Object {
     var data: js.Object
@@ -65,7 +61,6 @@ object BlazeNs extends js.Object {
     def parentData(numLevels: scala.Double): js.Any = js.native
     def registerHelper(name: java.lang.String, func: js.Function): scala.Unit = js.native
   }
-  
   
   trait View extends js.Object {
     var isCreated: scala.Boolean

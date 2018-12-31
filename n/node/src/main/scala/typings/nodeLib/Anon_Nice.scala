@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Nice extends js.Object {
   var idle: scala.Double
   var irq: scala.Double

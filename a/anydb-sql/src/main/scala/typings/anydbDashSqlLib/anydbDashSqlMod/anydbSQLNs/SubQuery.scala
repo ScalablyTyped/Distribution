@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SubQuery[T] extends js.Object {
   def exists(): BinaryNode
   def from(table: TableNode): SubQuery[T]

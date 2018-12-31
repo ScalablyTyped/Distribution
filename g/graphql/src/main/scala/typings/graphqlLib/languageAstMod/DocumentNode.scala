@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DocumentNode extends js.Object {
   val definitions: js.Array[DefinitionNode]
   val kind: graphqlLib.graphqlLibStrings.Document

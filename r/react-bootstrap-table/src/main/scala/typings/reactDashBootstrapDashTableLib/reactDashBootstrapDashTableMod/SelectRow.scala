@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectRow[TRow /* <: js.Object */] extends js.Object {
   /**
   	 * You can assign the background color of row which be selected.

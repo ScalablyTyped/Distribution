@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FallbackLoading extends js.Object {
   var evalScripts: java.lang.String
   var fallback: scala.Null

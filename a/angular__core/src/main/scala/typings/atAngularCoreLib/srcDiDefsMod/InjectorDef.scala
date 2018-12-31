@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InjectorDef[T] extends js.Object {
   var imports: js.Array[InjectorType[_] | InjectorTypeWithProviders[_]]
   var providers: js.Array[

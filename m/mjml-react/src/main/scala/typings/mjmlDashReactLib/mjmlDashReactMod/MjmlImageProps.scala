@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MjmlImageProps extends js.Object {
   var align: js.UndefOr[java.lang.String] = js.undefined
   var alt: js.UndefOr[java.lang.String] = js.undefined

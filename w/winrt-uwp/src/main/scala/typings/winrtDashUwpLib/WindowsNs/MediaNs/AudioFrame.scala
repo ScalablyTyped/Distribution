@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class AudioFrame protected () extends js.Object {
   /**
-               * Initializes a new instance of the AudioFrame class.
-               * @param capacity The maximum number of bytes that the buffer can hold.
-               */
+    * Initializes a new instance of the AudioFrame class.
+    * @param capacity The maximum number of bytes that the buffer can hold.
+    */
   def this(capacity: scala.Double) = this()
   /** Gets or sets the duration of the audio frame. */
   var duration: scala.Double = js.native
@@ -31,10 +31,10 @@ class AudioFrame protected () extends js.Object {
   /** Disposes of the object and associated resources. */
   def close(): scala.Unit = js.native
   /**
-               * Gets a AudioBuffer object that allows you to operate directly on the software bitmap's pixel data.
-               * @param mode A value indicating the access mode of the returned audio buffer.
-               * @return The buffer containing pixel data.
-               */
+    * Gets a AudioBuffer object that allows you to operate directly on the software bitmap's pixel data.
+    * @param mode A value indicating the access mode of the returned audio buffer.
+    * @return The buffer containing pixel data.
+    */
   def lockBuffer(mode: AudioBufferAccessMode): AudioBuffer = js.native
 }
 

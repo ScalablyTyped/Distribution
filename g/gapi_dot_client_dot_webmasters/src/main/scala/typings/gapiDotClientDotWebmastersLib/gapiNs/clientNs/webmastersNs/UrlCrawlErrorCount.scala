@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UrlCrawlErrorCount extends js.Object {
   /** The error count at the given timestamp. */
   var count: js.UndefOr[java.lang.String] = js.undefined

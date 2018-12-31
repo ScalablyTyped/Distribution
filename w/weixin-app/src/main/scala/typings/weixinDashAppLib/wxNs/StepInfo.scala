@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 // #endregion
 // #region 微信运动
-
 trait StepInfo extends js.Object {
   /** 微信运动步数 */
   var step: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WizardOptions extends js.Object {
   var firstSelector: js.UndefOr[java.lang.String] = js.undefined
   var lastSelector: js.UndefOr[java.lang.String] = js.undefined

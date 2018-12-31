@@ -19,15 +19,15 @@ class AndroidUIElement ()
   /* CompleteClass */
   override val isContentEditable: scala.Boolean = js.native
   /**
-       * Returns the first following sibling that
-       * is an element, and null otherwise.
-       */
+    * Returns the first following sibling that
+    * is an element, and null otherwise.
+    */
   /* CompleteClass */
   override val nextElementSibling: stdLib.Element | scala.Null = js.native
   /**
-       * Returns the first preceding sibling that
-       * is an element, and null otherwise.
-       */
+    * Returns the first preceding sibling that
+    * is an element, and null otherwise.
+    */
   /* CompleteClass */
   override val previousElementSibling: stdLib.Element | scala.Null = js.native
   /* CompleteClass */

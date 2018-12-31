@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimelineHeaderLabelFormat extends js.Object {
   var dayLong: java.lang.String
   var dayShort: java.lang.String

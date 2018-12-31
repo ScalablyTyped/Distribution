@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SnapshotSerializerColors extends js.Object {
   var comment: SnapshotSerializerColor
   var content: SnapshotSerializerColor

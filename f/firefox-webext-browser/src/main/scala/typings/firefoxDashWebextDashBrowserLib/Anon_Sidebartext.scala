@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Sidebartext extends js.Object {
   var accentcolor: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor] = js.undefined
   var bookmark_text: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ThemeColor] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PieChartSpec extends js.Object {
   /** The data that covers the domain of the pie chart. */
   var domain: js.UndefOr[ChartData] = js.undefined

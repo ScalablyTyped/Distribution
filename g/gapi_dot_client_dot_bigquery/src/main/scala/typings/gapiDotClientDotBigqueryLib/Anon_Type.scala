@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Type extends js.Object {
   /** [Optional] Human-oriented description of the field. */
   var description: js.UndefOr[java.lang.String] = js.undefined

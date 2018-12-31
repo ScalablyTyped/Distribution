@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Group extends js.Object {
   var bounds: js.UndefOr[webcolaLib.distSrcRectangleMod.Rectangle] = js.undefined
   var groups: js.UndefOr[js.Array[Group]] = js.undefined

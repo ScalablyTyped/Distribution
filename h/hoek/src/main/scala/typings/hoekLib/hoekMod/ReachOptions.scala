@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReachOptions extends js.Object {
   /** Value to return if the path or value is not present. Default is undefined. */
   var default: js.UndefOr[js.Any] = js.undefined

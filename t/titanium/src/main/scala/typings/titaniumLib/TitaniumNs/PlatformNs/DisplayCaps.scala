@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * The Display Caps object returned by the <Titanium.Platform.displayCaps> property.
 		 */
-
 trait DisplayCaps
   extends titaniumLib.TitaniumNs.Proxy {
   /**

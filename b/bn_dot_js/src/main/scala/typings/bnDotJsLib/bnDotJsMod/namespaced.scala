@@ -44,28 +44,25 @@ class namespaced protected () extends BN {
 @js.native
 object namespaced extends js.Object {
   /**
-       * @description returns true if the supplied object is a BN.js instance
-       */
-  def isBN(b: js.Any): /* is BN */scala.Boolean = js.native
+    * @description returns true if the supplied object is a BN.js instance
+    */
+  def isBN(b: js.Any): /* is bn.js.bn.js.BN */ scala.Boolean = js.native
   /**
-       * @description returns the maximum of 2 BN instances.
-       */
+    * @description returns the maximum of 2 BN instances.
+    */
   def max(left: bnDotJsLib.bnDotJsMod.BN, right: bnDotJsLib.bnDotJsMod.BN): bnDotJsLib.bnDotJsMod.BN = js.native
   /**
-       * @description returns the minimum of 2 BN instances.
-       */
+    * @description returns the minimum of 2 BN instances.
+    */
   def min(left: bnDotJsLib.bnDotJsMod.BN, right: bnDotJsLib.bnDotJsMod.BN): bnDotJsLib.bnDotJsMod.BN = js.native
   /**
-       * @description  create a reduction context  with the Montgomery trick.
-       */
+    * @description  create a reduction context  with the Montgomery trick.
+    */
   def mont(num: bnDotJsLib.bnDotJsMod.BN): bnDotJsLib.bnDotJsMod.ReductionContext = js.native
-  /**
-       * @description  create a reduction context
-       */
   def red(reductionContext: bnDotJsLib.IPrimeName): bnDotJsLib.bnDotJsMod.ReductionContext = js.native
   /**
-       * @description  create a reduction context
-       */
+    * @description  create a reduction context
+    */
   def red(reductionContext: bnDotJsLib.bnDotJsMod.BN): bnDotJsLib.bnDotJsMod.ReductionContext = js.native
 }
 

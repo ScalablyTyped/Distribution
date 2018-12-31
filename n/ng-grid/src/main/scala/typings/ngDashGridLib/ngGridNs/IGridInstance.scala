@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGridInstance extends js.Object {
   @JSName("$canvas")
   var $canvas: angularLib.angularMod.angularNs.IAugmentedJQuery

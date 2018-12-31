@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IndieDelegate extends js.Object {
   var name: java.lang.String
   def clearMessages(): scala.Unit

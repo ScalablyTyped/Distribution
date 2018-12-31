@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SkippableSetting extends js.Object {
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#skippableSetting". */
   var kind: js.UndefOr[java.lang.String] = js.undefined

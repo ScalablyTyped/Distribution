@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IExpressionEx extends js.Object {
   var Conditions: ISearchConditions
   var Expression: IExpression

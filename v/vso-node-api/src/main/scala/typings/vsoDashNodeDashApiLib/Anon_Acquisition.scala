@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Acquisition extends js.Object {
   var acquisition: scala.Double
   var install: scala.Double

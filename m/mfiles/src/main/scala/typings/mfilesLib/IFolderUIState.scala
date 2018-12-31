@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFolderUIState extends js.Object {
   var BottomPaneBarMinimized: scala.Boolean
   var HitHighlightingEnabled: scala.Boolean

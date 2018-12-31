@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AdCustomizerSource extends AdWordsEntity {
   def adCustomizerItemBuilder(): AdCustomizerItemBuilder[AdCustomizerItem]
   def getAttributes(): js.Object

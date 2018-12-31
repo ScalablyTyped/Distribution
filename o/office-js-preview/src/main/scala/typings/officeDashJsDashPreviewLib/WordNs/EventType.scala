@@ -9,46 +9,46 @@ import scala.scalajs.js.annotation._
 sealed trait EventType extends js.Object
 
 /**
-     *
-     * Provides information about the type of a raised event. For each object type, please keep the order of: deleted, selection changed, data changed, added.
-     *
-     * [Api set: WordApi]
-     */
+  *
+  * Provides information about the type of a raised event. For each object type, please keep the order of: deleted, selection changed, data changed, added.
+  *
+  * [Api set: WordApi]
+  */
 @JSGlobal("Word.EventType")
 @js.native
 object EventType extends js.Object {
   /**
-           *
-           * ContentControlAdded represents the event a content control has been added to the document.
-           *
-           */
+    *
+    * ContentControlAdded represents the event a content control has been added to the document.
+    *
+    */
   @js.native
   sealed trait contentControlAdded
     extends officeDashJsDashPreviewLib.WordNs.EventType
   
   /**
-           *
-           * ContentControlDataChanged represents the event that the data in the content control have been changed.
-           *
-           */
+    *
+    * ContentControlDataChanged represents the event that the data in the content control have been changed.
+    *
+    */
   @js.native
   sealed trait contentControlDataChanged
     extends officeDashJsDashPreviewLib.WordNs.EventType
   
   /**
-           *
-           * ContentControlDeleted represent the event that the content control has been deleted.
-           *
-           */
+    *
+    * ContentControlDeleted represent the event that the content control has been deleted.
+    *
+    */
   @js.native
   sealed trait contentControlDeleted
     extends officeDashJsDashPreviewLib.WordNs.EventType
   
   /**
-           *
-           * ContentControlSelectionChanged represents the event that the selection in the content control has been changed.
-           *
-           */
+    *
+    * ContentControlSelectionChanged represents the event that the selection in the content control has been changed.
+    *
+    */
   @js.native
   sealed trait contentControlSelectionChanged
     extends officeDashJsDashPreviewLib.WordNs.EventType

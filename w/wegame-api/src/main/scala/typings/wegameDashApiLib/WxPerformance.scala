@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class WxPerformance () extends js.Object {
   /**
-       * 时间戳
-       */
+    * 时间戳
+    */
   def now(): scala.Double = js.native
 }
 

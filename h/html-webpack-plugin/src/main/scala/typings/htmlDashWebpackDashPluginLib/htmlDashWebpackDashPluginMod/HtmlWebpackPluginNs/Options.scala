@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options
   extends /**
 		 * In addition to the options actually used by this plugin, you can use this hash to pass arbitrary data through

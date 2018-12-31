@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ValueColor extends js.Object
 
 /**
-     * Enumeration of possible value color settings.
-    */
+  * Enumeration of possible value color settings.
+  */
 @JSGlobal("sap.m.ValueColor")
 @js.native
 object ValueColor extends js.Object {

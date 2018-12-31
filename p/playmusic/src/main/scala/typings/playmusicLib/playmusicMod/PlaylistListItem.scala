@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlaylistListItem extends js.Object {
   var accessControlled: js.UndefOr[scala.Boolean] = js.undefined
   var creationTimestamp: js.UndefOr[java.lang.String] = js.undefined

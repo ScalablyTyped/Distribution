@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait contractOptions extends js.Object {
   var address: java.lang.String
   var data: java.lang.String

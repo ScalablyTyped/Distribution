@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WriteOptions extends js.Object {
   var dataProjection: openlayersLib.openlayersMod.ProjectionLike
   var decimals: js.UndefOr[scala.Double] = js.undefined

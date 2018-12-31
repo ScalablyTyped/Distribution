@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PanelBarOptions extends js.Object {
   var activate: js.UndefOr[js.Function1[/* e */ PanelBarActivateEvent, scala.Unit]] = js.undefined
   var animation: js.UndefOr[scala.Boolean | PanelBarAnimation] = js.undefined

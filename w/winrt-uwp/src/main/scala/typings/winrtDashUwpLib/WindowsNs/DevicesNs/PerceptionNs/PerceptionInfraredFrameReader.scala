@@ -35,9 +35,9 @@ abstract class PerceptionInfraredFrameReader () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[PerceptionInfraredFrameReader, PerceptionInfraredFrameArrivedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Attempts to read the most recent frame that is available to this infrared frame reader.
-                   * @return If the attempt was successful, this method returns the most recent frame that is available to this infrared frame reader. If the attempt was not successful, this method returns null.
-                   */
+    * Attempts to read the most recent frame that is available to this infrared frame reader.
+    * @return If the attempt was successful, this method returns the most recent frame that is available to this infrared frame reader. If the attempt was not successful, this method returns null.
+    */
   def tryReadLatestFrame(): PerceptionInfraredFrame = js.native
 }
 

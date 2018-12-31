@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RecurrenceRule extends js.Object {
   def addDailyExclusion(): RecurrenceRule
   def addDailyRule(): RecurrenceRule

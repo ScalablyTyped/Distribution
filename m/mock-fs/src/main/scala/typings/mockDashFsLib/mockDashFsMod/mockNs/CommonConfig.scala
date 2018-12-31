@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommonConfig extends js.Object {
   var atime: js.UndefOr[stdLib.Date] = js.undefined
   var birthtime: js.UndefOr[stdLib.Date] = js.undefined

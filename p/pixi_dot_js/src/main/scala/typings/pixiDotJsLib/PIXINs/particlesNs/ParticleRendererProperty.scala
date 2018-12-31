@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParticleRendererProperty extends js.Object {
   var attribute: scala.Double
   var offset: scala.Double

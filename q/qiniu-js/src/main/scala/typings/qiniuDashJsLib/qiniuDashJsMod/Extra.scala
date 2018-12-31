@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Extra extends js.Object {
   var fname: java.lang.String
   	// 用来放置自定义变量

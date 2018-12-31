@@ -40,13 +40,6 @@ class b2Body () extends js.Object {
   		* @return The created fixture.
   		**/
   def CreateFixture2(shape: box2dLib.Box2DNs.CollisionNs.ShapesNs.b2Shape): b2Fixture = js.native
-  /**
-  		* Creates a fixture from a shape and attach it to this body. This is a convenience function. Use b2FixtureDef if you need to set parameters like friction, restitution, user data, or filtering. This function automatically updates the mass of the body.
-  		* @warning This function is locked during callbacks.
-  		* @param shape The shaped of the fixture (to be cloned).
-  		* @param density The shape density, default is 0.0, set to zero for static bodies.
-  		* @return The created fixture.
-  		**/
   def CreateFixture2(shape: box2dLib.Box2DNs.CollisionNs.ShapesNs.b2Shape, density: scala.Double): b2Fixture = js.native
   /**
   		* Destroy a fixture. This removes the fixture from the broad-phase and destroys all contacts associated with this fixture. This will automatically adjust the mass of the body if the body is dynamic and the fixture has positive density. All fixtures attached to a body are implicitly destroyed when the body is destroyed.

@@ -9,12 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object depsDashSortModMembers extends js.Object {
   /**
-   * Return a new through stream that should get written module-deps objects and will output sorted objects.
-   */
+    * Return a new through stream that should get written module-deps objects and will output sorted objects.
+    */
   def apply(): nodeLib.streamMod.Transform = js.native
-  /**
-   * Return a new through stream that should get written module-deps objects and will output sorted objects.
-   */
   def apply(opts: depsDashSortLib.depsDashSortMod.depsSortNs.Options): nodeLib.streamMod.Transform = js.native
 }
 

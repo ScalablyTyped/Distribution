@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * A way to keep processor-specific information in the text of the document. Implements the [DOM Level 2 API](https://www.w3.org/TR/DOM-Level-2-Core/core.html#ID-1004215813) on Android and iOS.
 		 */
-
 trait ProcessingInstruction
   extends titaniumLib.TitaniumNs.Proxy {
   /**

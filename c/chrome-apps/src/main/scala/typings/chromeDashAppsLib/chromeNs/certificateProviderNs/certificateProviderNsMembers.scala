@@ -9,20 +9,20 @@ import scala.scalajs.js.annotation._
 @js.native
 object certificateProviderNsMembers extends js.Object {
   /**
-           * The types of errors that can be presented to the user through the requestPin function.
-           * @enum
-           */
+    * The types of errors that can be presented to the user through the requestPin function.
+    * @enum
+    */
   val PinRequestErrorType: chromeDashAppsLib.Anon_INVALIDPIN = js.native
   /**
-           * The type of code being requested by the extension with requestPin function.
-           * @enum
-           */
+    * The type of code being requested by the extension with requestPin function.
+    * @enum
+    */
   val PinRequestType: chromeDashAppsLib.Anon_PUK = js.native
   /**
-           * This event fires every time the browser requests the current list of
-           * certificates provided by this app. The app must call *reportCallback*
-           * exactly once with the current list of certificates.
-           */
+    * This event fires every time the browser requests the current list of
+    * certificates provided by this app. The app must call *reportCallback*
+    * exactly once with the current list of certificates.
+    */
   val onCertificatesRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function2[
       /* certificates */ js.Array[CertificateInfo], 
@@ -31,15 +31,15 @@ object certificateProviderNsMembers extends js.Object {
     ]
   ] = js.native
   /**
-           * This event fires every time the browser needs to sign
-           * a message using a certificate provided by this app
-           * in reply to an *onCertificatesRequested* event.
-           *
-           * The app must sign the data in *request* using the
-           * appropriate algorithm and private key and return it by calling
-           * *reportCallback*. *reportCallback* must be called exactly once.
-           * @param request: Contains the details about the sign request.
-           */
+    * This event fires every time the browser needs to sign
+    * a message using a certificate provided by this app
+    * in reply to an *onCertificatesRequested* event.
+    *
+    * The app must sign the data in *request* using the
+    * appropriate algorithm and private key and return it by calling
+    * *reportCallback*. *reportCallback* must be called exactly once.
+    * @param request: Contains the details about the sign request.
+    */
   val onSignDigestRequested: chromeDashAppsLib.chromeNs.eventsNs.Event[
     js.Function2[
       /* signRequest */ SignRequest, 
@@ -48,25 +48,25 @@ object certificateProviderNsMembers extends js.Object {
     ]
   ] = js.native
   /**
-           * Requests the PIN from the user. Only one ongoing request at a time is
-           * allowed. The requests issued while another flow is ongoing are rejected.
-           * It's the apps's responsibility to try again later if another flow is
-           * in progress.
-           * @param details Contains the details about the requested dialog.
-           * @param callback Is called when the dialog is resolved with the user input, or
-           * when the dialog request finishes unsuccessfully (e.g. the dialog was
-           * canceled by the user or was not allowed to be shown).
-           */
+    * Requests the PIN from the user. Only one ongoing request at a time is
+    * allowed. The requests issued while another flow is ongoing are rejected.
+    * It's the apps's responsibility to try again later if another flow is
+    * in progress.
+    * @param details Contains the details about the requested dialog.
+    * @param callback Is called when the dialog is resolved with the user input, or
+    * when the dialog request finishes unsuccessfully (e.g. the dialog was
+    * canceled by the user or was not allowed to be shown).
+    */
   def requestPin(
     details: RequestPinDetails,
     callback: js.Function1[/* details */ js.UndefOr[PinResponseDetails], scala.Unit]
   ): scala.Unit = js.native
   /**
-           * @description Stops the pin request started by the *requestPin* function.
-           * @param details Contains the details about the reason for stopping the request flow.
-           * @param callback To be used by Chrome to send to the app the status from
-           * their request to close PIN dialog for user.
-           */
+    * @description Stops the pin request started by the *requestPin* function.
+    * @param details Contains the details about the reason for stopping the request flow.
+    * @param callback To be used by Chrome to send to the app the status from
+    * their request to close PIN dialog for user.
+    */
   def stopPinRequest(details: StopRequestPinDetails, callback: js.Function0[scala.Unit]): scala.Unit = js.native
 }
 

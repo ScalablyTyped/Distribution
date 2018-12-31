@@ -21,7 +21,6 @@ object firebaseNs extends js.Object {
     def setUserProperty(propertyName: java.lang.String, value: java.lang.String): scala.Unit = js.native
   }
   
-  
   trait MessageEvent
     extends tabrisDashPluginDashFirebaseLib.tabrisDashPluginDashFirebaseMod.EventObject[Messaging] {
     var data: js.Any
@@ -38,7 +37,6 @@ object firebaseNs extends js.Object {
     def once(listeners: MessagingEvents): this.type = js.native
     def resetInstanceId(): scala.Unit = js.native
   }
-  
   
   trait MessagingEvents extends js.Object {
     var instanceIdChanged: js.UndefOr[
@@ -63,7 +61,6 @@ object firebaseNs extends js.Object {
   @JSName("PropertyMixins")
   @js.native
   object PropertyMixinsNs extends js.Object {
-    
     trait Analytics extends js.Object {
       var analyticsCollectionEnabled: scala.Boolean
       var screenName: java.lang.String

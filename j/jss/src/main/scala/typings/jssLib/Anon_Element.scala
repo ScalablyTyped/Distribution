@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Element[Name /* <: java.lang.String */] extends js.Object {
   var classNamePrefix: java.lang.String
   var element: stdLib.HTMLStyleElement

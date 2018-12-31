@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RegionsMixin extends js.Object {
   var addRegion: js.Any
   var addRegions: js.Any

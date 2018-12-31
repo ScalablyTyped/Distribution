@@ -8,19 +8,20 @@ import scala.scalajs.js.annotation._
 /** Represents an email attachment. */
 @JSGlobal("Windows.ApplicationModel.Email.EmailAttachment")
 @js.native
+/** Initializes a new instance of the EmailAttachment class. */
 class EmailAttachment () extends js.Object {
   /**
-                   * Initializes a new instance of the EmailAttachment class with the specified random access stream.
-                   * @param filename The file name to use for the attachment.
-                   * @param data A random access stream containing the data for the attachment.
-                   */
+    * Initializes a new instance of the EmailAttachment class with the specified random access stream.
+    * @param filename The file name to use for the attachment.
+    * @param data A random access stream containing the data for the attachment.
+    */
   def this(filename: java.lang.String, data: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStreamReference) = this()
   /**
-                   * Initializes a new instance of the EmailAttachment class.
-                   * @param fileName The filename of the attachment.
-                   * @param data The stream to use to download the attachment.
-                   * @param mimeType The MIME type of the attachment.
-                   */
+    * Initializes a new instance of the EmailAttachment class.
+    * @param fileName The filename of the attachment.
+    * @param data The stream to use to download the attachment.
+    * @param mimeType The MIME type of the attachment.
+    */
   def this(fileName: java.lang.String, data: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStreamReference, mimeType: java.lang.String) = this()
   /** Gets or sets a value that identifies the content of the attachment on a remote system. */
   var contentId: java.lang.String = js.native

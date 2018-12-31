@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObjectsResource extends js.Object {
   /** Concatenates a list of existing objects into a new object in the same bucket. */
   def compose(request: gapiDotClientDotStorageLib.Anon_IfMetagenerationMatchDestinationObject): gapiDotClientLib.gapiNs.clientNs.Request[Object]

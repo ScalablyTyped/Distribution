@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TopicProperties extends js.Object {
   var DefaultMessageTimeToLive: java.lang.String
   var DuplicateDetectionHistoryTimeWindow: java.lang.String

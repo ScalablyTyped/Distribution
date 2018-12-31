@@ -10,38 +10,38 @@ import scala.scalajs.js.annotation._
 @js.native
 class Geofence protected () extends js.Object {
   /**
-                       * Initializes a new Geofence object given the id and the shape of the geofence.
-                       * @param id The Id of the geofence.
-                       * @param geoshape The area that defines the geofence to monitor.
-                       */
+    * Initializes a new Geofence object given the id and the shape of the geofence.
+    * @param id The Id of the geofence.
+    * @param geoshape The area that defines the geofence to monitor.
+    */
   def this(id: java.lang.String, geoshape: winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.IGeoshape) = this()
   /**
-                       * Initializes a new Geofence object given the id, the shape of the geofence, the states to monitor the geofence for, and the singleUse flag.
-                       * @param id The Id of the geofence.
-                       * @param geoshape The area that defines the geofence to monitor.
-                       * @param monitoredStates The states to monitor the geofence for.
-                       * @param singleUse True indicates the geofence should be monitored only for one use. False indicates the geofence should be monitored for multiple uses.
-                       */
+    * Initializes a new Geofence object given the id, the shape of the geofence, the states to monitor the geofence for, and the singleUse flag.
+    * @param id The Id of the geofence.
+    * @param geoshape The area that defines the geofence to monitor.
+    * @param monitoredStates The states to monitor the geofence for.
+    * @param singleUse True indicates the geofence should be monitored only for one use. False indicates the geofence should be monitored for multiple uses.
+    */
   def this(id: java.lang.String, geoshape: winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.IGeoshape, monitoredStates: MonitoredGeofenceStates, singleUse: scala.Boolean) = this()
   /**
-                       * Initializes a new Geofence object given the id, the shape of the geofence, the states to monitor the geofence for, the singleUse flag, and the dwellTime for the geofence.
-                       * @param id The Id of the geofence.
-                       * @param geoshape The area that defines the geofence to monitor.
-                       * @param monitoredStates The states to monitor the geofence for.
-                       * @param singleUse True indicates the geofence should be monitored only for one use. False indicates the geofence should be monitored for multiple uses.
-                       * @param dwellTime The time that a position has to be in or out of the geofence in order for the notification to be triggered.
-                       */
+    * Initializes a new Geofence object given the id, the shape of the geofence, the states to monitor the geofence for, the singleUse flag, and the dwellTime for the geofence.
+    * @param id The Id of the geofence.
+    * @param geoshape The area that defines the geofence to monitor.
+    * @param monitoredStates The states to monitor the geofence for.
+    * @param singleUse True indicates the geofence should be monitored only for one use. False indicates the geofence should be monitored for multiple uses.
+    * @param dwellTime The time that a position has to be in or out of the geofence in order for the notification to be triggered.
+    */
   def this(id: java.lang.String, geoshape: winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.IGeoshape, monitoredStates: MonitoredGeofenceStates, singleUse: scala.Boolean, dwellTime: scala.Double) = this()
   /**
-                       * Initializes a new Geofence object given the id, the shape of the geofence, the states to monitor the geofence for, the singleUse flag, the dwellTime for the geofence, the time to start monitoring the geofence, and the duration of the geofence.
-                       * @param id The Id of the geofence.
-                       * @param geoshape The area that defines the geofence to monitor.
-                       * @param monitoredStates The states to monitor the geofence for.
-                       * @param singleUse True indicates the geofence should be monitored only for one use. False indicates the geofence should be monitored for multiple uses.
-                       * @param dwellTime The time that a position has to be in or out of the geofence in order for the notification to be triggered.
-                       * @param startTime The time to start monitoring the geofence.
-                       * @param duration The duration of time to monitor the geofence for. The duration begins at the startTime.
-                       */
+    * Initializes a new Geofence object given the id, the shape of the geofence, the states to monitor the geofence for, the singleUse flag, the dwellTime for the geofence, the time to start monitoring the geofence, and the duration of the geofence.
+    * @param id The Id of the geofence.
+    * @param geoshape The area that defines the geofence to monitor.
+    * @param monitoredStates The states to monitor the geofence for.
+    * @param singleUse True indicates the geofence should be monitored only for one use. False indicates the geofence should be monitored for multiple uses.
+    * @param dwellTime The time that a position has to be in or out of the geofence in order for the notification to be triggered.
+    * @param startTime The time to start monitoring the geofence.
+    * @param duration The duration of time to monitor the geofence for. The duration begins at the startTime.
+    */
   def this(id: java.lang.String, geoshape: winrtDashUwpLib.WindowsNs.DevicesNs.GeolocationNs.IGeoshape, monitoredStates: MonitoredGeofenceStates, singleUse: scala.Boolean, dwellTime: scala.Double, startTime: stdLib.Date, duration: scala.Double) = this()
   /** Gets the time window, beginning after the StartTime , during which the Geofence is monitored. */
   var duration: scala.Double = js.native

@@ -6,19 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Provides information about a report parameter on the client side.
- */
-
+  * Provides information about a report parameter on the client side.
+  */
 trait ASPxClientReportParameterInfo extends js.Object {
   /**
-       * Specifies the parameter path, relative to its parent container (e.g., "subreport1.subreportParameter1" for a subreport's parameter, or "parameter1" for a report's parameter).
-       * Value: A String value, specifying the parameter path (e.g., "subreport1.subreportParameter1").
-       */
+    * Specifies the parameter path, relative to its parent container (e.g., "subreport1.subreportParameter1" for a subreport's parameter, or "parameter1" for a report's parameter).
+    * Value: A String value, specifying the parameter path (e.g., "subreport1.subreportParameter1").
+    */
   var Path: java.lang.String
   /**
-       * Provides access to a parameter value on the client.
-       * Value: A Object value.
-       */
+    * Provides access to a parameter value on the client.
+    * Value: A Object value.
+    */
   var Value: js.Object
 }
 

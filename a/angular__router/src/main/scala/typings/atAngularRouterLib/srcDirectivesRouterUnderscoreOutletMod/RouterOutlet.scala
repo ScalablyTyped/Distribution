@@ -30,30 +30,30 @@ class RouterOutlet protected ()
     resolver: atAngularCoreLib.coreMod.ComponentFactoryResolver
   ): scala.Unit = js.native
   /**
-       * Called when the `RouteReuseStrategy` instructs to re-attach a previously detached subtree
-       */
+    * Called when the `RouteReuseStrategy` instructs to re-attach a previously detached subtree
+    */
   def attach(
     ref: atAngularCoreLib.coreMod.ComponentRef[_],
     activatedRoute: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRoute
   ): scala.Unit = js.native
   def deactivate(): scala.Unit = js.native
   /**
-       * Called when the `RouteReuseStrategy` instructs to detach the subtree
-       */
+    * Called when the `RouteReuseStrategy` instructs to detach the subtree
+    */
   def detach(): atAngularCoreLib.coreMod.ComponentRef[_] = js.native
   /**
-       * A callback method that performs custom clean-up, invoked immediately
-       * after a directive, pipe, or service instance is destroyed.
-       */
+    * A callback method that performs custom clean-up, invoked immediately
+    * after a directive, pipe, or service instance is destroyed.
+    */
   /* CompleteClass */
   override def ngOnDestroy(): scala.Unit = js.native
   /**
-       * A callback method that is invoked immediately after the
-       * default change detector has checked the directive's
-       * data-bound properties for the first time,
-       * and before any of the view or content children have been checked.
-       * It is invoked only once when the directive is instantiated.
-       */
+    * A callback method that is invoked immediately after the
+    * default change detector has checked the directive's
+    * data-bound properties for the first time,
+    * and before any of the view or content children have been checked.
+    * It is invoked only once when the directive is instantiated.
+    */
   /* CompleteClass */
   override def ngOnInit(): scala.Unit = js.native
 }

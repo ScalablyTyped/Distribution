@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MacData extends js.Object {
   var iterations: js.UndefOr[scala.Double] = js.undefined
   var mac: pkijsLib.srcDigestInfoMod.default

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait INgProgress extends js.Object {
   def color(color: java.lang.String): scala.Unit
   def complete(): scala.Unit

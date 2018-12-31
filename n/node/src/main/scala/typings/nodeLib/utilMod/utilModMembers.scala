@@ -156,7 +156,7 @@ object utilModMembers extends js.Object {
   ] = js.native
   /** @deprecated since v0.11.3 - use `console.error()` instead. */
   def debug(string: java.lang.String): scala.Unit = js.native
-  def debuglog(key: java.lang.String): js.Function2[/* msg */ java.lang.String, /* repeated */js.Any, scala.Unit] = js.native
+  def debuglog(key: java.lang.String): js.Function2[/* msg */ java.lang.String, /* repeated */ js.Any, scala.Unit] = js.native
   def deprecate[T /* <: js.Function */](fn: T, message: java.lang.String): T = js.native
   /** @deprecated since v0.11.3 - use `console.error()` instead. */
   def error(param: js.Any*): scala.Unit = js.native
@@ -164,36 +164,36 @@ object utilModMembers extends js.Object {
   def formatWithOptions(inspectOptions: InspectOptions, format: java.lang.String, param: js.Any*): java.lang.String = js.native
   def inherits(constructor: js.Any, superConstructor: js.Any): scala.Unit = js.native
   /** @deprecated since v4.0.0 - use `Array.isArray()` instead. */
-  def isArray(`object`: js.Any): /* is Array */scala.Boolean = js.native
+  def isArray(`object`: js.Any): /* is std.Array<any> */ scala.Boolean = js.native
   /** @deprecated since v4.0.0 - use `typeof value === 'boolean'` instead. */
-  def isBoolean(`object`: js.Any): /* is boolean */scala.Boolean = js.native
+  def isBoolean(`object`: js.Any): /* is boolean */ scala.Boolean = js.native
   /** @deprecated since v4.0.0 - use `Buffer.isBuffer()` instead. */
-  def isBuffer(`object`: js.Any): /* is Buffer */scala.Boolean = js.native
+  def isBuffer(`object`: js.Any): /* is node.Buffer */ scala.Boolean = js.native
   /** @deprecated since v4.0.0 - use `util.types.isDate()` instead. */
-  def isDate(`object`: js.Any): /* is Date */scala.Boolean = js.native
+  def isDate(`object`: js.Any): /* is std.Date */ scala.Boolean = js.native
   def isDeepStrictEqual(val1: js.Any, val2: js.Any): scala.Boolean = js.native
   /** @deprecated since v4.0.0 - use `util.types.isNativeError()` instead. */
-  def isError(`object`: js.Any): /* is Error */scala.Boolean = js.native
+  def isError(`object`: js.Any): /* is node.Error */ scala.Boolean = js.native
   /** @deprecated since v4.0.0 - use `typeof value === 'function'` instead. */
   def isFunction(`object`: js.Any): scala.Boolean = js.native
   /** @deprecated since v4.0.0 - use `value === null` instead. */
-  def isNull(`object`: js.Any): /* is null */scala.Boolean = js.native
+  def isNull(`object`: js.Any): /* is null */ scala.Boolean = js.native
   /** @deprecated since v4.0.0 - use `value === null || value === undefined` instead. */
   def isNullOrUndefined(`object`: js.Any): scala.Boolean = js.native
   /** @deprecated since v4.0.0 - use `typeof value === 'number'` instead. */
-  def isNumber(`object`: js.Any): /* is number */scala.Boolean = js.native
+  def isNumber(`object`: js.Any): /* is number */ scala.Boolean = js.native
   /** @deprecated since v4.0.0 - use `value !== null && typeof value === 'object'` instead. */
   def isObject(`object`: js.Any): scala.Boolean = js.native
   /** @deprecated since v4.0.0 - use `(typeof value !== 'object' && typeof value !== 'function') || value === null` instead. */
   def isPrimitive(`object`: js.Any): scala.Boolean = js.native
   /** @deprecated since v4.0.0 - use `util.types.isRegExp()` instead. */
-  def isRegExp(`object`: js.Any): /* is RegExp */scala.Boolean = js.native
+  def isRegExp(`object`: js.Any): /* is std.RegExp */ scala.Boolean = js.native
   /** @deprecated since v4.0.0 - use `typeof value === 'string'` instead. */
-  def isString(`object`: js.Any): /* is string */scala.Boolean = js.native
+  def isString(`object`: js.Any): /* is string */ scala.Boolean = js.native
   /** @deprecated since v4.0.0 - use `typeof value === 'symbol'` instead. */
-  def isSymbol(`object`: js.Any): /* is symbol */scala.Boolean = js.native
+  def isSymbol(`object`: js.Any): /* is symbol */ scala.Boolean = js.native
   /** @deprecated since v4.0.0 - use `value === undefined` instead. */
-  def isUndefined(`object`: js.Any): /* is undefined */scala.Boolean = js.native
+  def isUndefined(`object`: js.Any): /* is undefined */ scala.Boolean = js.native
   /** @deprecated since v0.11.3 - use a third party module instead. */
   def log(string: java.lang.String): scala.Unit = js.native
   /** @deprecated since v0.11.3 - use `console.log()` instead. */

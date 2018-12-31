@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinkedWorkItemsQueryResult extends js.Object {
   var automatedTestName: java.lang.String
   var planId: scala.Double

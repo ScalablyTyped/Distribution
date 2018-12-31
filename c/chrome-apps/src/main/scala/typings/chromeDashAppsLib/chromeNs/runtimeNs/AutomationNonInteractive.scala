@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AutomationNonInteractive extends js.Object {
   var desktop: js.UndefOr[chromeDashAppsLib.chromeDashAppsLibNumbers.`false`] = js.undefined
   var interact: chromeDashAppsLib.chromeDashAppsLibNumbers.`false`

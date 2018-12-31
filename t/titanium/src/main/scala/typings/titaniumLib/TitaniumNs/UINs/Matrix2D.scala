@@ -71,21 +71,12 @@ trait Matrix2D
   			 * Returns a matrix constructed by rotating this matrix.
   			 */
   def rotate(angle: scala.Double): Matrix2D = js.native
-  /**
-  			 * Returns a matrix constructed by rotating this matrix.
-  			 */
   def rotate(angle: scala.Double, toAngle: scala.Double): Matrix2D = js.native
   /**
   			 * Returns a `2DMatrix` object that specifies a scaling animation from one scale to another.
   			 */
   def scale(sx: scala.Double, sy: scala.Double): Matrix2D = js.native
-  /**
-  			 * Returns a `2DMatrix` object that specifies a scaling animation from one scale to another.
-  			 */
   def scale(sx: scala.Double, sy: scala.Double, toSx: scala.Double): Matrix2D = js.native
-  /**
-  			 * Returns a `2DMatrix` object that specifies a scaling animation from one scale to another.
-  			 */
   def scale(sx: scala.Double, sy: scala.Double, toSx: scala.Double, toSy: scala.Double): Matrix2D = js.native
   /**
   			 * Sets the value of the <Titanium.UI.2DMatrix.a> property.

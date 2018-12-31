@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Browser extends js.Object {
   var chrome: scala.Boolean
   var edge: scala.Boolean

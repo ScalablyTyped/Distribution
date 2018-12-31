@@ -30,7 +30,6 @@ object GeneratedCodeInfoNs extends js.Object {
     def setSourceFile(value: java.lang.String): scala.Unit = js.native
   }
   
-  
   trait AsObject extends js.Object {
     var annotationList: js.Array[
         googleDashProtobufLib.googleProtobufDescriptorUnderscorePbMod.GeneratedCodeInfoNs.AnnotationNs.AsObject
@@ -63,7 +62,6 @@ object GeneratedCodeInfoNs extends js.Object {
   @JSName("Annotation")
   @js.native
   object AnnotationNs extends js.Object {
-    
     trait AsObject extends js.Object {
       var begin: js.UndefOr[scala.Double] = js.undefined
       var end: js.UndefOr[scala.Double] = js.undefined

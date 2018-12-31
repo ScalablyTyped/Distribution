@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Event extends js.Object {
   var element: stdLib.Element
   var event: java.lang.String

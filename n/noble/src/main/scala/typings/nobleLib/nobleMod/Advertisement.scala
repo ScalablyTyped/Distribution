@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Advertisement extends js.Object {
   var localName: java.lang.String
   var manufacturerData: nodeLib.Buffer

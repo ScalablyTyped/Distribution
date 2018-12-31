@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EntOpts extends js.Object {
   /**
   	 * If opts.numeric is false or opts.named is true, encoding will used named codes like &pi;.

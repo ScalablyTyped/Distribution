@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InventoryItem
   extends shopifyDashPrimeLib.distModelsBaseMod.ShopifyObject {
   var created_at: js.UndefOr[java.lang.String] = js.undefined

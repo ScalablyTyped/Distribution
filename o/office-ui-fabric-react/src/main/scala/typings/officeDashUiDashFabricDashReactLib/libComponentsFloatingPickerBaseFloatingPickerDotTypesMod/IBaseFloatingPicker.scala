@@ -18,12 +18,9 @@ trait IBaseFloatingPicker extends js.Object {
   /** On queryString changed */
   def onQueryStringChanged(input: java.lang.String): scala.Unit = js.native
   /** Shows the picker
-       * @param updateValue - Optional param to indicate whether to update the query string
-       */
+    * @param updateValue - Optional param to indicate whether to update the query string
+    */
   def showPicker(): scala.Unit = js.native
-  /** Shows the picker
-       * @param updateValue - Optional param to indicate whether to update the query string
-       */
   def showPicker(updateValue: scala.Boolean): scala.Unit = js.native
 }
 

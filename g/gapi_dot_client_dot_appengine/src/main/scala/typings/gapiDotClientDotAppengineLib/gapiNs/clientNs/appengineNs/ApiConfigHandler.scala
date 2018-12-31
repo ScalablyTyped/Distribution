@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ApiConfigHandler extends js.Object {
   /** Action to take when users access resources that require authentication. Defaults to redirect. */
   var authFailAction: js.UndefOr[java.lang.String] = js.undefined

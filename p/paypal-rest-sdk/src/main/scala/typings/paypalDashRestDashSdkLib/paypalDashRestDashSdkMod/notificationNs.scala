@@ -8,12 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("paypal-rest-sdk", "notification")
 @js.native
 object notificationNs extends js.Object {
-  
   trait EventTypesResponse
     extends paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Response {
     val event_types: js.Array[NotificationEventType]
   }
-  
   
   trait NotificationEventType extends js.Object {
     val description: js.UndefOr[java.lang.String] = js.undefined
@@ -24,7 +22,6 @@ object notificationNs extends js.Object {
   @JSName("webhookEvent")
   @js.native
   object webhookEventNs extends js.Object {
-    
     trait WebhookEvent extends js.Object {
       val create_time: js.UndefOr[java.lang.String] = js.undefined
       val event_type: js.UndefOr[java.lang.String] = js.undefined
@@ -35,12 +32,10 @@ object notificationNs extends js.Object {
       val summary: js.UndefOr[java.lang.String] = js.undefined
     }
     
-    
     trait WebhookEventListResponse
       extends paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Response {
       var events: js.Array[WebhookEvent]
     }
-    
     
     trait WebhookVerifyResponse extends js.Object {
       var verification_status: java.lang.String
@@ -240,7 +235,6 @@ object notificationNs extends js.Object {
   @JSName("webhook")
   @js.native
   object webhookNs extends js.Object {
-    
     trait Webhook extends js.Object {
       var event_types: js.Array[
             paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.notificationNs.NotificationEventType
@@ -249,7 +243,6 @@ object notificationNs extends js.Object {
       val links: js.UndefOr[js.Array[paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Link]] = js.undefined
       var url: java.lang.String
     }
-    
     
     trait WebhookListResponse
       extends paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Response {

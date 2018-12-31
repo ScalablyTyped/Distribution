@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 sealed trait SocialPostDefinitionDataItemType extends js.Object
 
 /** Defines the type of item being specified in the SocialPostDefinitionDataItem.
-            This type is only available in server-to-server calls. */
+  This type is only available in server-to-server calls. */
 @JSGlobal("SP.Social.SocialPostDefinitionDataItemType")
 @js.native
 object SocialPostDefinitionDataItemType extends js.Object {

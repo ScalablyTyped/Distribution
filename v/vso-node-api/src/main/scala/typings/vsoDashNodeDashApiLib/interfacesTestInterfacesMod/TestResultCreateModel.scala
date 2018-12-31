@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestResultCreateModel extends js.Object {
   var area: ShallowReference
   var associatedWorkItems: js.Array[scala.Double]

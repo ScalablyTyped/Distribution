@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CollapsibleSetOptions extends js.Object {
   var collapsedIcon: js.UndefOr[java.lang.String] = js.undefined
   var expandedIcon: js.UndefOr[java.lang.String] = js.undefined

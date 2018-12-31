@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IKnownFoldersStatics extends js.Object {
   var documentsLibrary: StorageFolder
   var homeGroup: StorageFolder

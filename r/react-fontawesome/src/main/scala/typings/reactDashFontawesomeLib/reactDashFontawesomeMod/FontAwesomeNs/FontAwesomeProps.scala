@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FontAwesomeProps
   extends reactDashFontawesomeLib.reactDashFontawesomeMod.Intermediate {
   var ariaLabel: js.UndefOr[java.lang.String] = js.undefined

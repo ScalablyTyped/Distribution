@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RadioButtonProps extends CommonEnhancedSwitchProps[RadioButton] {
   // <EnhancedSwitch/> is element that get the 'other' properties
   var checkedIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[materialDashUiLib.Anon_Style]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBgiframe extends js.Object {
   var s: ISettings
   def createIframe(): stdLib.HTMLElement

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MarkOptions extends js.Object {
   var accuracy: js.UndefOr[MarkAccuracy | markDotJsLib.Anon_Value] = js.undefined
   var acrossElements: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAjaxProxy
   extends extjsLib.ExtNs.dataNs.proxyNs.IServer {
   /** [Property] (Object) */

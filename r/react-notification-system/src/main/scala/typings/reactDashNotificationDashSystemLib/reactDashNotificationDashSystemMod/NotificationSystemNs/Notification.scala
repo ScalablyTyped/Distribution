@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Notification extends js.Object {
   var action: js.UndefOr[ActionObject] = js.undefined
   var autoDismiss: js.UndefOr[scala.Double] = js.undefined

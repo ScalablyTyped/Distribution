@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UrlData extends js.Object {
   var chengefreq: js.UndefOr[java.lang.String] = js.undefined
   var lastmod: js.UndefOr[stdLib.Date] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListenRequest extends js.Object {
   /** A target to add to this stream. */
   var addTarget: js.UndefOr[Target] = js.undefined

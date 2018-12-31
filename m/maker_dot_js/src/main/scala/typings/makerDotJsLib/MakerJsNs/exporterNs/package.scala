@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object exporterNs {
   /**
-       * DXF rendering options.
-       */
+    * DXF rendering options.
+    */
   type IDXFRenderOptions = IExportOptions
 }

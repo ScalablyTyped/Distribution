@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILoginAccount extends js.Object {
   val AccountName: java.lang.String
   var AccountType: mfilesLib.MFilesNs.MFLoginAccountType

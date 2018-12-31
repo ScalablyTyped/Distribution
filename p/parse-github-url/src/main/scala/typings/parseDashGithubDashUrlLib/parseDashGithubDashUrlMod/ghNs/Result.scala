@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Result
   extends nodeLib.urlMod.Url {
   var branch: java.lang.String

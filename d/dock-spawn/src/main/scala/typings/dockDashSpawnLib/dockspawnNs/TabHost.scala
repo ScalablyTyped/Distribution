@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Tab Host control contains tabs known as TabPages.
-     * The tab strip can be aligned in different orientations
-     */
+  * Tab Host control contains tabs known as TabPages.
+  * The tab strip can be aligned in different orientations
+  */
 @JSGlobal("dockspawn.TabHost")
 @js.native
 class TabHost () extends js.Object {

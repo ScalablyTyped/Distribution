@@ -67,20 +67,17 @@ class InteractionManager protected ()
   /* protected */ def onPointerUp(event: stdLib.PointerEvent): scala.Unit = js.native
   //tslint:disable-next-line:ban-types forbidden-types
   /* protected */ def processInteractive(interactionEvent: InteractionEvent, displayObject: pixiDotJsLib.PIXINs.Container): scala.Boolean = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: pixiDotJsLib.PIXINs.Container,
     func: js.Function
   ): scala.Boolean = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: pixiDotJsLib.PIXINs.Container,
     func: js.Function,
     hitTest: scala.Boolean
   ): scala.Boolean = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: pixiDotJsLib.PIXINs.Container,
@@ -88,18 +85,14 @@ class InteractionManager protected ()
     hitTest: scala.Boolean,
     interactive: scala.Boolean
   ): scala.Boolean = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   /* protected */ def processInteractive(interactionEvent: InteractionEvent, displayObject: pixiDotJsLib.PIXINs.Sprite): scala.Boolean = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   /* protected */ def processInteractive(interactionEvent: InteractionEvent, displayObject: pixiDotJsLib.PIXINs.Sprite, func: js.Function): scala.Boolean = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: pixiDotJsLib.PIXINs.Sprite,
     func: js.Function,
     hitTest: scala.Boolean
   ): scala.Boolean = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: pixiDotJsLib.PIXINs.Sprite,
@@ -107,22 +100,18 @@ class InteractionManager protected ()
     hitTest: scala.Boolean,
     interactive: scala.Boolean
   ): scala.Boolean = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   /* protected */ def processInteractive(interactionEvent: InteractionEvent, displayObject: pixiDotJsLib.PIXINs.extrasNs.TilingSprite): scala.Boolean = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: pixiDotJsLib.PIXINs.extrasNs.TilingSprite,
     func: js.Function
   ): scala.Boolean = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: pixiDotJsLib.PIXINs.extrasNs.TilingSprite,
     func: js.Function,
     hitTest: scala.Boolean
   ): scala.Boolean = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   /* protected */ def processInteractive(
     interactionEvent: InteractionEvent,
     displayObject: pixiDotJsLib.PIXINs.extrasNs.TilingSprite,

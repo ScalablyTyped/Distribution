@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Props extends js.Object {
   var afterHide: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var afterShow: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

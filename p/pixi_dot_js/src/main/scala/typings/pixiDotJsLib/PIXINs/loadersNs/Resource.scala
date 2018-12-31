@@ -82,7 +82,6 @@ class Resource protected () extends js.Object {
   def complete(): scala.Unit = js.native
   //tslint:disable-next-line:ban-types forbidden-types
   def load(): scala.Unit = js.native
-  //tslint:disable-next-line:ban-types forbidden-types
   def load(cb: js.Function): scala.Unit = js.native
 }
 

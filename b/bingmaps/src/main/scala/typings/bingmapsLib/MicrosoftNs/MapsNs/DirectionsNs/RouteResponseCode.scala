@@ -52,17 +52,17 @@ object RouteResponseCode extends js.Object {
     extends bingmapsLib.MicrosoftNs.MapsNs.DirectionsNs.RouteResponseCode
   
   /**
-          * A route cannot be calculated for the specified waypoints. For example, this code is returned when a route between
-          * “Seattle, WA” and “Honolulu, HI” is requested.
-          */
+    * A route cannot be calculated for the specified waypoints. For example, this code is returned when a route between
+    * “Seattle, WA” and “Honolulu, HI” is requested.
+    */
   @js.native
   sealed trait noSolution
     extends bingmapsLib.MicrosoftNs.MapsNs.DirectionsNs.RouteResponseCode
   
   /**
-          * There is no transit data available for the route or for one or more of the specified waypoints,
-          * or the waypoints are in different transit areas that do not overlap.
-          */
+    * There is no transit data available for the route or for one or more of the specified waypoints,
+    * or the waypoints are in different transit areas that do not overlap.
+    */
   @js.native
   sealed trait outOfTransitBounds
     extends bingmapsLib.MicrosoftNs.MapsNs.DirectionsNs.RouteResponseCode
@@ -83,9 +83,9 @@ object RouteResponseCode extends js.Object {
     extends bingmapsLib.MicrosoftNs.MapsNs.DirectionsNs.RouteResponseCode
   
   /**
-          * The distance between two route waypoints, or the total length of the route exceeds the limit of the route mode.
-          * Modify the waypoint locations so that they are closer together.
-          */
+    * The distance between two route waypoints, or the total length of the route exceeds the limit of the route mode.
+    * Modify the waypoint locations so that they are closer together.
+    */
   @js.native
   sealed trait tooFar
     extends bingmapsLib.MicrosoftNs.MapsNs.DirectionsNs.RouteResponseCode
@@ -106,9 +106,9 @@ object RouteResponseCode extends js.Object {
     extends bingmapsLib.MicrosoftNs.MapsNs.DirectionsNs.RouteResponseCode
   
   /**
-          * One or more waypoints need to be disambiguated. This error does not occur if the
-          * autoDisplayDisambiguation directions render option is set to true.
-          */
+    * One or more waypoints need to be disambiguated. This error does not occur if the
+    * autoDisplayDisambiguation directions render option is set to true.
+    */
   @js.native
   sealed trait waypointDisambiguation
     extends bingmapsLib.MicrosoftNs.MapsNs.DirectionsNs.RouteResponseCode

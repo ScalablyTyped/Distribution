@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScrollingLegacy extends js.Object {
   var bAutoCss: scala.Boolean
   var bCollapse: scala.Boolean

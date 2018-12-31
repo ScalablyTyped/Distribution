@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LayersResource extends js.Object {
   var annotationData: AnnotationDataResource
   var volumeAnnotations: VolumeAnnotationsResource

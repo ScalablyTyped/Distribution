@@ -6,15 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * A ChangedEvent represents a change to an object, typically a GraphObject,
-    * but also for model data, a Model, or a Diagram.
-    * The most common case is for remembering the name of a property
-    * and the before-and-after values for that property.
-    * You can listen for changed events on the model using Model.addChangedListener
-    * and on the Diagram using Diagram.addChangedListener.
-    */
+  * A ChangedEvent represents a change to an object, typically a GraphObject,
+  * but also for model data, a Model, or a Diagram.
+  * The most common case is for remembering the name of a property
+  * and the before-and-after values for that property.
+  * You can listen for changed events on the model using Model.addChangedListener
+  * and on the Diagram using Diagram.addChangedListener.
+  */
 @JSImport("go", "ChangedEvent")
 @js.native
+/**
+  * The ChangedEvent class constructor produces an empty ChangedEvent object.
+  */
 class ChangedEvent ()
   extends goLib.goMod.goNs.ChangedEvent {
   /**Gets or sets the nature of change that occurred.*/
@@ -51,59 +54,59 @@ class ChangedEvent ()
   /* CompleteClass */
   override var propertyName: goLib.goMod.goNs.PropertyAccessor = js.native
   /**
-          * This predicate returns true if you can call redo().
-          */
+    * This predicate returns true if you can call redo().
+    */
   /* CompleteClass */
   override def canRedo(): scala.Boolean = js.native
   /**
-          * This predicate returns true if you can call undo().
-          */
+    * This predicate returns true if you can call undo().
+    */
   /* CompleteClass */
   override def canUndo(): scala.Boolean = js.native
   /**
-          * Forget any object references that this ChangedEvent may have.
-          */
+    * Forget any object references that this ChangedEvent may have.
+    */
   /* CompleteClass */
   override def clear(): scala.Unit = js.native
   /**
-          * Make a copy of this ChangedEvent.
-          */
+    * Make a copy of this ChangedEvent.
+    */
   /* CompleteClass */
   override def copy(): goLib.goMod.goNs.ChangedEvent = js.native
   /**
-          * This is a convenient method to get the right parameter value, depending on the value of undo,
-          * when implementing a state change as part of an undo or a redo.
-          * @param {boolean} undo If true, returns the oldParam, otherwise returns the newParam.
-          */
+    * This is a convenient method to get the right parameter value, depending on the value of undo,
+    * when implementing a state change as part of an undo or a redo.
+    * @param {boolean} undo If true, returns the oldParam, otherwise returns the newParam.
+    */
   /* CompleteClass */
   override def getParam(undo: scala.Boolean): js.Any = js.native
   /**
-          * This is a convenient method to get the right value, depending on the value of undo,
-          * when implementing a state change as part of an undo or a redo.
-          * @param {boolean} undo If true, returns the oldValue, otherwise returns the newValue.
-          */
+    * This is a convenient method to get the right value, depending on the value of undo,
+    * when implementing a state change as part of an undo or a redo.
+    * @param {boolean} undo If true, returns the oldValue, otherwise returns the newValue.
+    */
   /* CompleteClass */
   override def getValue(undo: scala.Boolean): js.Any = js.native
   /**
-          * Re-perform this object change after an undo().
-          */
+    * Re-perform this object change after an undo().
+    */
   /* CompleteClass */
   override def redo(): scala.Unit = js.native
   /**
-          * Reverse the effects of this object change.
-          */
+    * Reverse the effects of this object change.
+    */
   /* CompleteClass */
   override def undo(): scala.Unit = js.native
 }
 
 /**
-    * A ChangedEvent represents a change to an object, typically a GraphObject,
-    * but also for model data, a Model, or a Diagram.
-    * The most common case is for remembering the name of a property
-    * and the before-and-after values for that property.
-    * You can listen for changed events on the model using Model.addChangedListener
-    * and on the Diagram using Diagram.addChangedListener.
-    */
+  * A ChangedEvent represents a change to an object, typically a GraphObject,
+  * but also for model data, a Model, or a Diagram.
+  * The most common case is for remembering the name of a property
+  * and the before-and-after values for that property.
+  * You can listen for changed events on the model using Model.addChangedListener
+  * and on the Diagram using Diagram.addChangedListener.
+  */
 @JSImport("go", "ChangedEvent")
 @js.native
 object ChangedEvent extends js.Object {

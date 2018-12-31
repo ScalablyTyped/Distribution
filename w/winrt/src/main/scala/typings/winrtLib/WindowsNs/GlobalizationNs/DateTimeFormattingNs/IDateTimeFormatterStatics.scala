@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDateTimeFormatterStatics extends js.Object {
   var longDate: DateTimeFormatter
   var longTime: DateTimeFormatter

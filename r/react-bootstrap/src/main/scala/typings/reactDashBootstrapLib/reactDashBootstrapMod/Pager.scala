@@ -13,6 +13,6 @@ class Pager ()
 @JSImport("react-bootstrap", "Pager")
 @js.native
 object Pager extends js.Object {
-  var Item: js.Any = js.native
+  var Item: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libPagerItemMod.namespaced] = js.native
 }
 

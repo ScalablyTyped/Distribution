@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Person extends js.Object {
   var aboutMe: java.lang.String
   var ageRange: gapiDotPlusLib.Anon_Max

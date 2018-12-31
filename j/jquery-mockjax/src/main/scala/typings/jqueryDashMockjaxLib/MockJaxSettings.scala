@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MockJaxSettings extends js.Object {
   var contentType: js.UndefOr[java.lang.String] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StatusFileOptions
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var entry: js.UndefOr[nodegitLib.statusDashEntryMod.StatusEntry] = js.undefined

@@ -28,11 +28,11 @@ class BaseExecutor[C /* <: atIonicCliDashFrameworkLib.definitionsMod.ICommand[C,
     callback: js.Function1[/* rpc */ atIonicCliDashFrameworkLib.utilsIpcMod.RPCProcess, scala.Unit]
   ): this.type = js.native
   /**
-       * Initiate RPC operation.
-       *
-       * This means the CLI has been executed by a parent Node process with an IPC
-       * channel, allowing request/response communication via RPC.
-       */
+    * Initiate RPC operation.
+    *
+    * This means the CLI has been executed by a parent Node process with an IPC
+    * channel, allowing request/response communication via RPC.
+    */
   def rpc(): js.Promise[scala.Unit] = js.native
 }
 

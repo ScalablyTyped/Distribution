@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Coast extends js.Object {
   /* Create Android homescreen icon.  */
   var android: scala.Boolean | Anon_Offset

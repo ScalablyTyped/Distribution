@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 //// FILE: transform.proto ////
-
 trait AffineTransform extends js.Object {
   // The X coordinate scaling element.
   var scale_x: scala.Double

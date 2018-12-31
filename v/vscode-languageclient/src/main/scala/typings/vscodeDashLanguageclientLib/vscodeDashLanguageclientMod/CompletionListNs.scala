@@ -9,29 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 object CompletionListNs extends js.Object {
   /**
-       * Creates a new completion list.
-       *
-       * @param items The completion items.
-       * @param isIncomplete The list is not complete.
-       */
+    * Creates a new completion list.
+    *
+    * @param items The completion items.
+    * @param isIncomplete The list is not complete.
+    */
   def create(): vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionList = js.native
-  /**
-       * Creates a new completion list.
-       *
-       * @param items The completion items.
-       * @param isIncomplete The list is not complete.
-       */
   def create(
     items: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItem
     ]
   ): vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionList = js.native
-  /**
-       * Creates a new completion list.
-       *
-       * @param items The completion items.
-       * @param isIncomplete The list is not complete.
-       */
   def create(
     items: js.Array[
       vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItem

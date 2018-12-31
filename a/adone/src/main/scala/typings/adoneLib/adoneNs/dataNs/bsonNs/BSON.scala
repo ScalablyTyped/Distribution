@@ -6,31 +6,25 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * Represents a BSON serializer
-             */
+  * Represents a BSON serializer
+  */
 @JSGlobal("adone.data.bson.BSON")
 @js.native
 class BSON () extends js.Object {
   def this(types: js.Array[adoneLib.Anon_ArgsAny]) = this()
   /**
-                   * Calculates the size BSON object for the given object
-                   */
+    * Calculates the size BSON object for the given object
+    */
   def calculateObjectSize(`object`: js.Object): scala.Double = js.native
-  /**
-                   * Calculates the size BSON object for the given object
-                   */
   def calculateObjectSize(`object`: js.Object, options: adoneLib.Anon_IgnoreUndefined): scala.Double = js.native
   /**
-                   * Deserializes the given buffer into an object
-                   */
+    * Deserializes the given buffer into an object
+    */
   def deserialize(buf: nodeLib.Buffer): js.Any = js.native
-  /**
-                   * Deserializes the given buffer into an object
-                   */
   def deserialize(buf: nodeLib.Buffer, options: adoneLib.adoneNs.dataNs.bsonNs.INs.DeserializeOptions): js.Any = js.native
   /**
-                   * Takes a node.js Buffer, startIndex and allow more control over deserialization of a Buffer containing concatenated BSON documents
-                   */
+    * Takes a node.js Buffer, startIndex and allow more control over deserialization of a Buffer containing concatenated BSON documents
+    */
   def deserializeStream(
     buf: nodeLib.Buffer,
     startIndex: scala.Double,
@@ -38,9 +32,6 @@ class BSON () extends js.Object {
     documents: js.Array[_],
     docStartIndex: scala.Double
   ): scala.Double = js.native
-  /**
-                   * Takes a node.js Buffer, startIndex and allow more control over deserialization of a Buffer containing concatenated BSON documents
-                   */
   def deserializeStream(
     buf: nodeLib.Buffer,
     startIndex: scala.Double,
@@ -50,22 +41,15 @@ class BSON () extends js.Object {
     options: adoneLib.adoneNs.dataNs.bsonNs.INs.DeserializeOptions
   ): scala.Double = js.native
   /**
-                   * Serializes a js object into a buffer
-                   */
+    * Serializes a js object into a buffer
+    */
   def serialize(`object`: js.Object): nodeLib.Buffer = js.native
-  /**
-                   * Serializes a js object into a buffer
-                   */
   def serialize(`object`: js.Object, options: adoneLib.adoneNs.dataNs.bsonNs.INs.SerializeOptions): nodeLib.Buffer = js.native
   /**
-                   * Takes an object, a target buffer instance and an optional options object and returns the end serialization index
-                   * in the final buffer
-                   */
+    * Takes an object, a target buffer instance and an optional options object and returns the end serialization index
+    * in the final buffer
+    */
   def serializeWithBufferAndIndex(`object`: js.Object, buffer: nodeLib.Buffer): scala.Double = js.native
-  /**
-                   * Takes an object, a target buffer instance and an optional options object and returns the end serialization index
-                   * in the final buffer
-                   */
   def serializeWithBufferAndIndex(
     `object`: js.Object,
     buffer: nodeLib.Buffer,

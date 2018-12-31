@@ -41,11 +41,11 @@ object KnownFolders extends js.Object {
   /** Gets the Videos library. */
   var videosLibrary: winrtDashUwpLib.WindowsNs.StorageNs.StorageFolder = js.native
   /**
-               * Static method that returns a specified known folder for a User .
-               * @param user The User for which the folder is returned.
-               * @param folderId The ID of the folder to be returned.
-               * @return When this method completes, it returns the requested StorageFolder object.
-               */
+    * Static method that returns a specified known folder for a User .
+    * @param user The User for which the folder is returned.
+    * @param folderId The ID of the folder to be returned.
+    * @return When this method completes, it returns the requested StorageFolder object.
+    */
   def getFolderForUserAsync(
     user: winrtDashUwpLib.WindowsNs.SystemNs.User,
     folderId: winrtDashUwpLib.WindowsNs.StorageNs.KnownFolderId

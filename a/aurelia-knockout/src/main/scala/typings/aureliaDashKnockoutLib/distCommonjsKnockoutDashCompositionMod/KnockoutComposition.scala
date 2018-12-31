@@ -17,8 +17,8 @@ class KnockoutComposition protected () extends js.Object {
   /** internal: do not use */
   def getViewModelInstance(moduleId: java.lang.String): js.Promise[_] = js.native
   /**
-       * Registers the `compose` Knockout Binding to use Compositions in your Views.
-       */
+    * Registers the `compose` Knockout Binding to use Compositions in your Views.
+    */
   def register(): scala.Unit = js.native
 }
 

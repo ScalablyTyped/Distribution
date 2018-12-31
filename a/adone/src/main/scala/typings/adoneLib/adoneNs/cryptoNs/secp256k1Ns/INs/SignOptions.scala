@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SignOptions extends js.Object {
   var data: js.UndefOr[nodeLib.Buffer | scala.Null] = js.undefined
   var noncefn: js.UndefOr[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SummariesMethodSelectionChangedEventUIParam extends js.Object {
   /**
   	 * Gets the column key of the column where it is changed selection of summary method.

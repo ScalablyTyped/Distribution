@@ -24,12 +24,6 @@ class Object ()
   	 * @param [intersecting] If `true`, send object in front of next upper intersecting object
   	 */
   def bringForward(): this.type = js.native
-  // functions from object stacking mixin
-  // -----------------------------------------------------------------------------------------------------------------------------------
-  /**
-  	 * Moves an object up in stack of drawn objects
-  	 * @param [intersecting] If `true`, send object in front of next upper intersecting object
-  	 */
   def bringForward(intersecting: scala.Boolean): this.type = js.native
   /**
   	 * Moves an object to the top of the stack of drawn objects
@@ -56,11 +50,6 @@ class Object ()
   	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
   	 */
   def clone(callback: js.Function1[/* clone */ this.type, scala.Unit]): scala.Unit = js.native
-  /**
-  	 * Clones an instance, using a callback method will work for every object.
-  	 * @param callback Callback is invoked with a clone as a first argument
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 */
   def clone(
     callback: js.Function1[/* clone */ this.type, scala.Unit],
     propertiesToInclude: js.Array[java.lang.String]
@@ -103,30 +92,18 @@ class Object ()
   	 * Basic getter
   	 * @param property Property name
   	 */
-  def get[K /* <: java.lang.String */](property: K): /* import warning: Failed type conversion: TsTypeLookup(TsTypeThis(),Left(TsIdentSimple(K))) */js.Any = js.native
+  def get[K /* <: java.lang.String */](property: K): /* import warning: ImportType.apply Failed type conversion: this[K] */ js.Any = js.native
   def getAngle(): scala.Double = js.native
   def getBorderColor(): java.lang.String = js.native
   def getBorderScaleFactor(): scala.Double = js.native
   /**
   	 * Returns coordinates of object's bounding rectangle (left, top, width, height)
-       * @param absoluteopt use coordinates without viewportTransform
-       * @param calculateopt use coordinates of current position instead of .oCoords / .aCoords
+    * @param absoluteopt use coordinates without viewportTransform
+    * @param calculateopt use coordinates of current position instead of .oCoords / .aCoords
   	 * @return Object with left, top, width, height properties
   	 */
   def getBoundingRect(): fabricLib.Anon_Top = js.native
-  /**
-  	 * Returns coordinates of object's bounding rectangle (left, top, width, height)
-       * @param absoluteopt use coordinates without viewportTransform
-       * @param calculateopt use coordinates of current position instead of .oCoords / .aCoords
-  	 * @return Object with left, top, width, height properties
-  	 */
   def getBoundingRect(absoluteopt: scala.Boolean): fabricLib.Anon_Top = js.native
-  /**
-  	 * Returns coordinates of object's bounding rectangle (left, top, width, height)
-       * @param absoluteopt use coordinates without viewportTransform
-       * @param calculateopt use coordinates of current position instead of .oCoords / .aCoords
-  	 * @return Object with left, top, width, height properties
-  	 */
   def getBoundingRect(absoluteopt: scala.Boolean, calculateopt: scala.Boolean): fabricLib.Anon_Top = js.native
   /**
   	 * Returns the real center coordinates of the object
@@ -147,11 +124,6 @@ class Object ()
   	 * @param [pointer] Pointer to operate upon (instead of event)
   	 */
   def getLocalPointer(e: stdLib.Event): fabricLib.Anon_Y = js.native
-  /**
-  	 * Returns coordinates of a pointer relative to an object
-  	 * @param e Event to operate upon
-  	 * @param [pointer] Pointer to operate upon (instead of event)
-  	 */
   def getLocalPointer(e: stdLib.Event, pointer: fabricLib.Anon_Y): fabricLib.Anon_Y = js.native
   def getOpacity(): scala.Double = js.native
   def getOverlayFill(): java.lang.String = js.native
@@ -239,11 +211,6 @@ class Object ()
   	 * @param [noTransform] When true, context is not transformed
   	 */
   def render(ctx: stdLib.CanvasRenderingContext2D): scala.Unit = js.native
-  /**
-  	 * Renders an object on a specified context
-  	 * @param ctx Context to render on
-  	 * @param [noTransform] When true, context is not transformed
-  	 */
   def render(ctx: stdLib.CanvasRenderingContext2D, noTransform: scala.Boolean): scala.Unit = js.native
   /**
   	 * Sets "angle" of an instance
@@ -256,11 +223,6 @@ class Object ()
   	 * @return thisArg
   	 */
   def saveState(): this.type = js.native
-  /**
-  	 * Saves state of an object
-  	 * @param [options] Object with additional `stateProperties` array to include when saving state
-  	 * @return thisArg
-  	 */
   def saveState(options: fabricLib.Anon_StateProperties): this.type = js.native
   /**
   	 * Scales an object (equally by x and y)
@@ -283,10 +245,6 @@ class Object ()
   	 * @param [intersecting] If `true`, send object behind next lower intersecting object
   	 */
   def sendBackwards(): this.type = js.native
-  /**
-  	 * Moves an object down in stack of drawn objects
-  	 * @param [intersecting] If `true`, send object behind next lower intersecting object
-  	 */
   def sendBackwards(intersecting: scala.Boolean): this.type = js.native
   /**
   	 * Moves an object to the bottom of the stack of drawn objects
@@ -306,22 +264,12 @@ class Object ()
   	 * @param key Property name
   	 * @param value Property value (if function, the value is passed into it and its return value is used as a new one)
   	 */
-  def set[K /* <: java.lang.String */](
-    key: K,
-    value: /* import warning: Failed type conversion: TsTypeLookup(TsTypeThis(),Left(TsIdentSimple(K))) */js.Any
-  ): this.type = js.native
-  /**
-  	 * Sets property to a given value.
-  	 * When changing position/dimension -related properties (left, top, scale, angle, etc.) `set` does not update position of object's borders/controls.
-  	 * If you need to update those, call `setCoords()`.
-  	 * @param key Property name
-  	 * @param value Property value (if function, the value is passed into it and its return value is used as a new one)
-  	 */
+  def set[K /* <: java.lang.String */](key: K, value: /* import warning: ImportType.apply Failed type conversion: this[K] */ js.Any): this.type = js.native
   def set[K /* <: java.lang.String */](
     key: K,
     value: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeThis(),Left(TsIdentSimple(K))) *//* value */ js.Any, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeThis(),Left(TsIdentSimple(K))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: this[K] */ /* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: this[K] */ js.Any
     ]
   ): this.type = js.native
   def setAngle(value: scala.Double): Object = js.native
@@ -348,10 +296,6 @@ class Object ()
   	 * @param [options] Options object
   	 */
   def setControlsVisibility(): this.type = js.native
-  /**
-  	 * Sets the visibility state of object controls.
-  	 * @param [options] Options object
-  	 */
   def setControlsVisibility(options: fabricLib.Anon_Mb): this.type = js.native
   // functions from geometry mixin
   // -------------------------------------------------------------------------------------------------------------------------------
@@ -365,12 +309,6 @@ class Object ()
   def setFillRule(value: java.lang.String): Object = js.native
   def setFlipX(value: scala.Boolean): Object = js.native
   def setFlipY(value: scala.Boolean): Object = js.native
-  /**
-  	 * Sets gradient (fill or stroke) of an object
-  	 * **Backwards incompatibility note:** This method was named "setGradientFill" until v1.1.0
-  	 * @param property Property name 'stroke' or 'fill'
-  	 * @param [options] Options object
-  	 */
   @JSName("setGradient")
   def setGradient_fill(property: fabricLib.fabricLibStrings.fill, options: IGradientOptions): this.type = js.native
   /**
@@ -413,15 +351,7 @@ class Object ()
   	 * @param [options] Options object or string (e.g. "2px 2px 10px rgba(0,0,0,0.2)")
   	 */
   def setShadow(): this.type = js.native
-  /**
-  	 * Sets shadow of an object
-  	 * @param [options] Options object or string (e.g. "2px 2px 10px rgba(0,0,0,0.2)")
-  	 */
   def setShadow(options: Shadow): this.type = js.native
-  /**
-  	 * Sets shadow of an object
-  	 * @param [options] Options object or string (e.g. "2px 2px 10px rgba(0,0,0,0.2)")
-  	 */
   def setShadow(options: java.lang.String): this.type = js.native
   def setShadow(options: js.Any): Object = js.native
   def setSkewX(value: scala.Double): Object = js.native
@@ -459,20 +389,12 @@ class Object ()
   	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
   	 */
   def toDatalessObject(): js.Any = js.native
-  /**
-  	 * Returns (dataless) object representation of an instance
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 */
   def toDatalessObject(propertiesToInclude: js.Array[java.lang.String]): js.Any = js.native
   /**
   	 * Returns a JSON representation of an instance
   	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
   	 */
   def toJSON(): js.Any = js.native
-  /**
-  	 * Returns a JSON representation of an instance
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 */
   def toJSON(propertiesToInclude: js.Array[java.lang.String]): js.Any = js.native
   /**
   	 * Returns the point in local coordinates
@@ -486,10 +408,6 @@ class Object ()
   	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
   	 */
   def toObject(): js.Any = js.native
-  /**
-  	 * Returns an object representation of an instance
-  	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
-  	 */
   def toObject(propertiesToInclude: js.Array[java.lang.String]): js.Any = js.native
   /**
   	 * Toggles specified property from `true` to `false` or from `false` to `true`

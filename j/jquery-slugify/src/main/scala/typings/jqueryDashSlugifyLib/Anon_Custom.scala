@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Custom extends js.Object {
   var custom: js.Array[java.lang.String]
   var lang: java.lang.String | scala.Boolean

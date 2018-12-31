@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CaptureIndex extends js.Object {
   /** The position in the search string where the capture ends */
   var end: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapLayer extends js.Object {
   var attribution: js.UndefOr[java.lang.String] = js.undefined
   var autoBind: js.UndefOr[scala.Boolean] = js.undefined

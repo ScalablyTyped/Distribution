@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Accesstoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -29,9 +28,9 @@ trait Anon_Accesstoken extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * The GMP project identifier. Required.
-                   * See note at the beginning of this file regarding project ids.
-                   */
+    * The GMP project identifier. Required.
+    * See note at the beginning of this file regarding project ids.
+    */
   var project: java.lang.String
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProcessVersions extends js.Object {
   var ares: java.lang.String
   var http_parser: java.lang.String

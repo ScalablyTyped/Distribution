@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StreamState extends js.Object {
   var localWindowSize: js.UndefOr[scala.Double] = js.undefined
   var state: js.UndefOr[scala.Double] = js.undefined

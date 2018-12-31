@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_HttpsAllowUnauthorized extends js.Object {
   var http: nodeLib.httpMod.Agent
   var https: nodeLib.httpMod.Agent

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITabBar extends IToolbar {
   /** [Config Option] (Number/String/Ext.Component) */
   var activeTab: js.UndefOr[js.Any] = js.undefined

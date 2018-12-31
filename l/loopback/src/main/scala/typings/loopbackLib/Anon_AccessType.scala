@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccessType extends js.Object {
   var accessType: java.lang.String
   var id: js.Any

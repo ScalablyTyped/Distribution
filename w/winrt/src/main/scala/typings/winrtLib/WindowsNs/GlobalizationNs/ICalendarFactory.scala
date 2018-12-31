@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICalendarFactory extends js.Object {
   def createCalendar(
     languages: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String],

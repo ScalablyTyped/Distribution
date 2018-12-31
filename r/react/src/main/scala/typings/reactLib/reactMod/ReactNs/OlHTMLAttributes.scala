@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OlHTMLAttributes[T] extends HTMLAttributes[T] {
   var reversed: js.UndefOr[scala.Boolean] = js.undefined
   var start: js.UndefOr[scala.Double] = js.undefined

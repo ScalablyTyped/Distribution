@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserPermission extends js.Object {
   /** GTM Account access permissions. */
   var accountAccess: js.UndefOr[AccountAccess] = js.undefined

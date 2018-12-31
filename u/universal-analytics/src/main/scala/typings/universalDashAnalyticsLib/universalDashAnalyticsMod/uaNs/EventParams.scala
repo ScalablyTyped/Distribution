@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventParams
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var dp: js.UndefOr[java.lang.String] = js.undefined

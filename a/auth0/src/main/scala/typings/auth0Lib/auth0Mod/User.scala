@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait User extends js.Object {
   var app_metadata: js.UndefOr[AppMetadata] = js.undefined
   var blocked: js.UndefOr[scala.Boolean] = js.undefined

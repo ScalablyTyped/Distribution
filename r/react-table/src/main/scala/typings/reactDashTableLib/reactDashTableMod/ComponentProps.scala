@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ComponentProps extends js.Object {
   var AggregatedComponent: reactLib.reactMod.ReactNs.ReactType[_]
   var ExpanderComponent: reactLib.reactMod.ReactNs.ReactType[_]

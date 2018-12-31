@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Config object for mysql: https://github.com/mysqljs/mysql#connection-options
-
 trait MySqlConnectionConfig extends js.Object {
   var bigNumberStrings: js.UndefOr[scala.Boolean] = js.undefined
   var charset: js.UndefOr[java.lang.String] = js.undefined

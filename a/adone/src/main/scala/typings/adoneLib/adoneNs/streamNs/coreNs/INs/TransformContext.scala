@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransformContext[T] extends js.Object {
   /**
-                       * Pushes the given value into the stream
-                       */
+    * Pushes the given value into the stream
+    */
   def push(value: T): scala.Boolean
 }
 

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("cassandra-driver", "metadata")
 @js.native
 object metadataNs extends js.Object {
-  
   trait Aggregate extends js.Object {
     var argumentTypes: js.Array[cassandraDashDriverLib.Anon_CodeInfo]
     var finalFunction: java.lang.String
@@ -24,7 +23,6 @@ object metadataNs extends js.Object {
   trait AggregateStatic
     extends org.scalablytyped.runtime.Instantiable0[Aggregate]
   
-  
   trait ClientState extends js.Object {
     def getConnectedHosts(): js.Array[cassandraDashDriverLib.cassandraDashDriverMod.Host]
     def getInFlightQueries(host: cassandraDashDriverLib.cassandraDashDriverMod.Host): scala.Double
@@ -35,12 +33,10 @@ object metadataNs extends js.Object {
   trait ClientStateStatic
     extends org.scalablytyped.runtime.Instantiable0[ClientState]
   
-  
   trait ColumnInfo extends js.Object {
     var name: java.lang.String
     var `type`: DataTypeInfo
   }
-  
   
   trait DataCollection extends js.Object {
     var bloomFilterFalsePositiveChance: scala.Double
@@ -67,13 +63,11 @@ object metadataNs extends js.Object {
     var speculateRetry: java.lang.String
   }
   
-  
   trait DataTypeInfo extends js.Object {
     var code: scala.Double
     var info: java.lang.String | DataTypeInfo | js.Array[DataTypeInfo]
     var options: cassandraDashDriverLib.Anon_Frozen
   }
-  
   
   trait Index extends js.Object {
     var kind: IndexType
@@ -167,7 +161,6 @@ object metadataNs extends js.Object {
           Metadata
         ]
   
-  
   trait SchemaFunction extends js.Object {
     var argumentNames: js.Array[java.lang.String]
     var argumentTypes: js.Array[cassandraDashDriverLib.Anon_CodeInfo]
@@ -183,7 +176,6 @@ object metadataNs extends js.Object {
   @js.native
   trait SchemaFunctionStatic
     extends org.scalablytyped.runtime.Instantiable0[SchemaFunction]
-  
   
   trait TableMetadata extends DataCollection {
     var cdc: js.UndefOr[scala.Boolean] = js.undefined

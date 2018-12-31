@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISortableList
   extends senchaUnderscoreTouchLib.ExtNs.IComponent {
   /** [Method] Returns the value of handleSelector

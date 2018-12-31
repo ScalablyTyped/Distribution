@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Advertisement extends js.Object {
   /** List of manufacturer specific data to be included in 'Manufacturer Specific Data' fields of the advertising data. */
   var manufacturerData: js.UndefOr[chromeDashAppsLib.Anon_Data] = js.undefined

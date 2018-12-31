@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Readonly extends js.Object {
   var content: reactLib.reactMod.ReactNs.ReactElement[_]
   var disabled: scala.Boolean

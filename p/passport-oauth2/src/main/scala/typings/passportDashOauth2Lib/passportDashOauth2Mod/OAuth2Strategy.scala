@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 trait OAuth2Strategy
   extends passportLib.passportMod.passportNs.Strategy {
   /**
-       *   NOTE: The _oauth2 property is considered "protected".  Subclasses are
-       *         allowed to use it when making protected resource requests to retrieve
-       *         the user profile.
-       */
+    *   NOTE: The _oauth2 property is considered "protected".  Subclasses are
+    *         allowed to use it when making protected resource requests to retrieve
+    *         the user profile.
+    */
   var _oauth2: oauthLib.oauthMod.OAuth2 = js.native
   @JSName("name")
   var name_OAuth2Strategy: java.lang.String = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IToastBaseConfig extends js.Object {
   var allowHtml: js.UndefOr[scala.Boolean] = js.undefined
   var closeButton: js.UndefOr[scala.Boolean] = js.undefined

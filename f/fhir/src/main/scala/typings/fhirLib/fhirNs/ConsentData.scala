@@ -6,21 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Data controlled by this consent
-     */
-
+  * Data controlled by this consent
+  */
 trait ConsentData extends BackboneElement {
   /**
-           * Contains extended information for property 'meaning'.
-           */
+    * Contains extended information for property 'meaning'.
+    */
   var _meaning: js.UndefOr[Element] = js.undefined
   /**
-           * instance | related | dependents | authoredby
-           */
+    * instance | related | dependents | authoredby
+    */
   var meaning: code
   /**
-           * The actual data reference
-           */
+    * The actual data reference
+    */
   var reference: Reference
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SystemModule extends js.Object {
   var args: js.Array[java.lang.String]
   var env: org.scalablytyped.runtime.StringDictionary[java.lang.String]

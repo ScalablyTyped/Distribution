@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITimeStats extends js.Object {
   /** TimeStats realNsDelta */
   var realNsDelta: js.UndefOr[scala.Double | scala.Null] = js.undefined

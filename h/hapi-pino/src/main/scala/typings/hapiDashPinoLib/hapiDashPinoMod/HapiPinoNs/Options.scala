@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var allTags: js.UndefOr[LogLevels] = js.undefined
   var ignorePaths: js.UndefOr[js.Array[java.lang.String]] = js.undefined

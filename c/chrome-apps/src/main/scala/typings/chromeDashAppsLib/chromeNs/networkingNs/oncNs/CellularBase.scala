@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CellularBase extends js.Object {
   /** Carrier account activation state. */
   var ActivationState: js.UndefOr[ActivationStateType] = js.undefined

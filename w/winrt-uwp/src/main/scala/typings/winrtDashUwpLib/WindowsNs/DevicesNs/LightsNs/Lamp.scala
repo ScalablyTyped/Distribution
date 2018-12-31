@@ -45,20 +45,20 @@ abstract class Lamp () extends js.Object {
 @js.native
 object Lamp extends js.Object {
   /**
-                   * Gets a Lamp object representing the lamp device with the specified ID.
-                   * @param deviceId The ID of the requested lamp device.
-                   * @return An asynchronous operation that returns a Lamp object upon successful completion.
-                   */
+    * Gets a Lamp object representing the lamp device with the specified ID.
+    * @param deviceId The ID of the requested lamp device.
+    * @return An asynchronous operation that returns a Lamp object upon successful completion.
+    */
   def fromIdAsync(deviceId: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.DevicesNs.LightsNs.Lamp] = js.native
   /**
-                   * Gets a Lamp object representing the default lamp for the device.
-                   * @return An asynchronous operation that returns a Lamp object upon successful completion.
-                   */
+    * Gets a Lamp object representing the default lamp for the device.
+    * @return An asynchronous operation that returns a Lamp object upon successful completion.
+    */
   def getDefaultAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.DevicesNs.LightsNs.Lamp] = js.native
   /**
-                   * Returns the class selection string that you can use to enumerate lamp devices.
-                   * @return The class selection string for lamp devices.
-                   */
+    * Returns the class selection string that you can use to enumerate lamp devices.
+    * @return The class selection string for lamp devices.
+    */
   def getDeviceSelector(): java.lang.String = js.native
 }
 

@@ -12,11 +12,9 @@ object kssModMembers extends js.Object {
   def apply(options: kssLib.kssMod.kssNs.KssOptions): js.Promise[kssLib.kssMod.kssNs.KssStyleguide] = js.native
   /** Parse a string of documented CSS, or an array of file anys with their content. */
   def parse(input: java.lang.String, options: kssLib.kssMod.kssNs.Options): kssLib.kssMod.kssNs.KssStyleguide = js.native
-  /** Parse a string of documented CSS, or an array of file anys with their content. */
   def parse(input: js.Array[kssLib.kssMod.kssNs.File], options: kssLib.kssMod.kssNs.Options): kssLib.kssMod.kssNs.KssStyleguide = js.native
   /** Traverse a directory, parse its contents, and create a `KssStyleGuide`. */
   def traverse(directory: java.lang.String, options: kssLib.kssMod.kssNs.Options): js.Promise[kssLib.kssMod.kssNs.KssStyleguide] = js.native
-  /** Traverse a directory, parse its contents, and create a `KssStyleGuide`. */
   def traverse(directory: js.Array[java.lang.String], options: kssLib.kssMod.kssNs.Options): js.Promise[kssLib.kssMod.kssNs.KssStyleguide] = js.native
 }
 

@@ -9,35 +9,35 @@ import scala.scalajs.js.annotation._
 sealed trait ObjectType extends js.Object
 
 /**
-     * Describes the type of object in a ListView.
-    **/
+  * Describes the type of object in a ListView.
+  **/
 @JSGlobal("WinJS.UI.ObjectType")
 @js.native
 object ObjectType extends js.Object {
   /**
-           * The object is the footer for the list.
-          **/
+    * The object is the footer for the list.
+    **/
   @js.native
   sealed trait footer
     extends winjsLib.WinJSNs.UINs.ObjectType
   
   /**
-           * The object is a group header in the list.
-          **/
+    * The object is a group header in the list.
+    **/
   @js.native
   sealed trait groupHeader
     extends winjsLib.WinJSNs.UINs.ObjectType
   
   /**
-           * The object is the header for the list.
-          **/
+    * The object is the header for the list.
+    **/
   @js.native
   sealed trait header
     extends winjsLib.WinJSNs.UINs.ObjectType
   
   /**
-           * The object is an item in the list.
-          **/
+    * The object is an item in the list.
+    **/
   @js.native
   sealed trait item
     extends winjsLib.WinJSNs.UINs.ObjectType

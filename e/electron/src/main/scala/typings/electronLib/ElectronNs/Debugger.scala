@@ -19,31 +19,28 @@ class Debugger () extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* method */ java.lang.String, /* params */ js.Any, scala.Unit]
   ): this.type = js.native
   /**
-       * Attaches the debugger to the webContents.
-       */
+    * Attaches the debugger to the webContents.
+    */
   def attach(): scala.Unit = js.native
-  /**
-       * Attaches the debugger to the webContents.
-       */
   def attach(protocolVersion: java.lang.String): scala.Unit = js.native
   /**
-       * Detaches the debugger from the webContents.
-       */
+    * Detaches the debugger from the webContents.
+    */
   def detach(): scala.Unit = js.native
   def isAttached(): scala.Boolean = js.native
   // Docs: http://electronjs.org/docs/api/debugger
   /**
-       * Emitted when debugging session is terminated. This happens either when
-       * webContents is closed or devtools is invoked for the attached webContents.
-       */
+    * Emitted when debugging session is terminated. This happens either when
+    * webContents is closed or devtools is invoked for the attached webContents.
+    */
   @JSName("on")
   def on_detach(
     event: electronLib.electronLibStrings.detach,
     listener: js.Function2[/* event */ Event, /* reason */ java.lang.String, scala.Unit]
   ): this.type = js.native
   /**
-       * Emitted whenever debugging target issues instrumentation event.
-       */
+    * Emitted whenever debugging target issues instrumentation event.
+    */
   @JSName("on")
   def on_message(
     event: electronLib.electronLibStrings.message,
@@ -70,16 +67,10 @@ class Debugger () extends EventEmitter {
     listener: js.Function3[/* event */ Event, /* method */ java.lang.String, /* params */ js.Any, scala.Unit]
   ): this.type = js.native
   /**
-       * Send given command to the debugging target.
-       */
+    * Send given command to the debugging target.
+    */
   def sendCommand(method: java.lang.String): scala.Unit = js.native
-  /**
-       * Send given command to the debugging target.
-       */
   def sendCommand(method: java.lang.String, commandParams: js.Any): scala.Unit = js.native
-  /**
-       * Send given command to the debugging target.
-       */
   def sendCommand(
     method: java.lang.String,
     commandParams: js.Any,

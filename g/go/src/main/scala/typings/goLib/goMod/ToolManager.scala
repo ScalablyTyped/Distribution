@@ -6,18 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * This special Tool is responsible for managing all of the Diagram's
-    * mode-less tools.
-    */
+  * This special Tool is responsible for managing all of the Diagram's
+  * mode-less tools.
+  */
 @JSImport("go", "ToolManager")
 @js.native
+/**
+  * You do not normally need to create an instance of this tool because one already exists as the Diagram.toolManager, which you can modify.
+  */
 class ToolManager ()
   extends goLib.goMod.goNs.ToolManager
 
 /**
-    * This special Tool is responsible for managing all of the Diagram's
-    * mode-less tools.
-    */
+  * This special Tool is responsible for managing all of the Diagram's
+  * mode-less tools.
+  */
 @JSImport("go", "ToolManager")
 @js.native
 object ToolManager extends js.Object {

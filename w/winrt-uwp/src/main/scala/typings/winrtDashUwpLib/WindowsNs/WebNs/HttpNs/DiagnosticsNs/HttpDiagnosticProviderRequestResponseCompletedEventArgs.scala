@@ -14,11 +14,11 @@ abstract class HttpDiagnosticProviderRequestResponseCompletedEventArgs () extend
   /** Gets the type of operation initiating this request. */
   var initiator: HttpDiagnosticRequestInitiator = js.native
   var processId: js.Any = js.native
-   /* unmapped type *//** Gets the URI of the requested response. */
+   /* unmapped type */ /** Gets the URI of the requested response. */
   var requestedUri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri = js.native
   var sourceLocations: js.Any = js.native
-   /* unmapped type */var threadId: js.Any = js.native
-   /* unmapped type *//** Gets the timestamp for connection events. */
+   /* unmapped type */ var threadId: js.Any = js.native
+   /* unmapped type */ /** Gets the timestamp for connection events. */
   var timestamps: HttpDiagnosticProviderRequestResponseTimestamps = js.native
 }
 

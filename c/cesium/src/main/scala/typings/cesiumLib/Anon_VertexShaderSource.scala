@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_VertexShaderSource extends js.Object {
   var closed: js.UndefOr[scala.Boolean] = js.undefined
   var fragmentShaderSource: js.UndefOr[java.lang.String] = js.undefined

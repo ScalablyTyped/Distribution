@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkArtifactLink extends js.Object {
   /**
-       * Target artifact type.
-       */
+    * Target artifact type.
+    */
   var artifactType: java.lang.String
   /**
-       * Outbound link type.
-       */
+    * Outbound link type.
+    */
   var linkType: java.lang.String
   /**
-       * Target tool type.
-       */
+    * Target tool type.
+    */
   var toolType: java.lang.String
 }
 

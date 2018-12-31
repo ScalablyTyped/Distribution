@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Esc extends js.Object {
   var `0`: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsLibNumbers.`48`
   var `1`: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsLibNumbers.`49`

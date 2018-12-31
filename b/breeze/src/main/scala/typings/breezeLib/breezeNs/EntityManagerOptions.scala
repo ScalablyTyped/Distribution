@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EntityManagerOptions extends js.Object {
   var dataService: js.UndefOr[DataService] = js.undefined
   var keyGeneratorCtor: js.UndefOr[js.Function] = js.undefined

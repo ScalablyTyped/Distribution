@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DisplayNameUrlImage extends js.Object {
   /** If the attachment is an article, this property contains a snippet of text from the article. It can also include descriptions for other types. */
   var content: js.UndefOr[java.lang.String] = js.undefined
@@ -20,17 +19,17 @@ trait Anon_DisplayNameUrlImage extends js.Object {
   /** The preview image for photos or videos. */
   var image: js.UndefOr[Anon_Type] = js.undefined
   /**
-                       * The type of media object. Possible values include, but are not limited to, the following values:
-                       * - "photo" - A photo.
-                       * - "album" - A photo album.
-                       * - "video" - A video.
-                       * - "article" - An article, specified by a link.
-                       */
+    * The type of media object. Possible values include, but are not limited to, the following values:
+    * - "photo" - A photo.
+    * - "album" - A photo album.
+    * - "video" - A video.
+    * - "article" - An article, specified by a link.
+    */
   var objectType: js.UndefOr[java.lang.String] = js.undefined
   /**
-                       * When previewing, these are the optional thumbnails for the post. When posting an article, choose one by setting the attachment.image.url property. If
-                       * you don't choose one, one will be chosen for you.
-                       */
+    * When previewing, these are the optional thumbnails for the post. When posting an article, choose one by setting the attachment.image.url property. If
+    * you don't choose one, one will be chosen for you.
+    */
   var previewThumbnails: js.UndefOr[js.Array[Anon_Url]] = js.undefined
   /** If the attachment is an album, this property is a list of potential additional thumbnails from the album. */
   var thumbnails: js.UndefOr[js.Array[Anon_UrlDescription]] = js.undefined

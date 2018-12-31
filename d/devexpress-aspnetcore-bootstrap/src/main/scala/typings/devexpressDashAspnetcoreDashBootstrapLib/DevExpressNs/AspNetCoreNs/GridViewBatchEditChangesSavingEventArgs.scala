@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridViewBatchEditChangesSavingEventArgs extends CancelEventArgs {
   val deletedValues: js.Any
   val insertedValues: js.Any

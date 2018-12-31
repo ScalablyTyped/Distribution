@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MetaInformation extends js.Object {
   var error: js.UndefOr[stdLib.Error] = js.undefined
   var extra: js.Any

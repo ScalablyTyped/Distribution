@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVaultEventLogOperations extends js.Object {
   def Clear(): scala.Unit
   def ClearRange(FirstEventID: scala.Double, LastEventID: scala.Double): scala.Unit

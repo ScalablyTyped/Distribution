@@ -6,18 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Trace categories Enum
- *
- * Enable or disable a category using [[Trace.enable]] or [[Trace.disable]]
- *
- * `trace.enable(Category.TRANSITION)`
- *
- * These can also be provided using a matching string, or position ordinal
- *
- * `trace.enable("TRANSITION")`
- *
- * `trace.enable(1)`
- */
+  * Trace categories Enum
+  *
+  * Enable or disable a category using [[Trace.enable]] or [[Trace.disable]]
+  *
+  * `trace.enable(Category.TRANSITION)`
+  *
+  * These can also be provided using a matching string, or position ordinal
+  *
+  * `trace.enable("TRANSITION")`
+  *
+  * `trace.enable(1)`
+  */
 @JSImport("@uirouter/angularjs", "Category")
 @js.native
 object Category extends js.Object {

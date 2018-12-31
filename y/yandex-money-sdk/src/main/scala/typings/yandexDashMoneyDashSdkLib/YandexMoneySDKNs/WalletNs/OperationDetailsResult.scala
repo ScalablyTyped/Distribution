@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OperationDetailsResult extends js.Object {
   var amount: js.UndefOr[scala.Double] = js.undefined
   var amount_due: js.UndefOr[scala.Double] = js.undefined

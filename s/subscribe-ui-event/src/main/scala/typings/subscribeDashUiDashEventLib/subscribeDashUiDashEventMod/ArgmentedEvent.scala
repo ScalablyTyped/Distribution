@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ArgmentedEvent[T /* <: EventType */] extends js.Object {
   var mainType: java.lang.String
   var resize: subscribeDashUiDashEventLib.Anon_Height

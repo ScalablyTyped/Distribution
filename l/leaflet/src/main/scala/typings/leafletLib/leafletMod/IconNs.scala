@@ -14,7 +14,6 @@ object IconNs extends js.Object {
     def this(options: DefaultIconOptions) = this()
   }
   
-  
   trait DefaultIconOptions
     extends leafletLib.leafletMod.BaseIconOptions {
     var imagePath: js.UndefOr[java.lang.String] = js.undefined

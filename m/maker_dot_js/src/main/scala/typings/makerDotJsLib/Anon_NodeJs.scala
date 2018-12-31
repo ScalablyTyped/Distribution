@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NodeJs extends js.Object {
   var BrowserUI: java.lang.String
   var NodeJs: java.lang.String

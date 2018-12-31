@@ -28,26 +28,23 @@ trait MarkerLayer extends js.Object {
   def isDestroyed(): scala.Boolean = js.native
   /** Create a marker at with its head at the given position with no tail. */
   def markPosition(position: PointCompatible): Marker = js.native
-  /** Create a marker at with its head at the given position with no tail. */
   def markPosition(position: PointCompatible, options: textDashBufferLib.Anon_ExclusiveInvalidate): Marker = js.native
   // Marker Creation
   /** Create a marker with the given range. */
   def markRange(range: RangeCompatible): Marker = js.native
-  // Marker Creation
-  /** Create a marker with the given range. */
   def markRange(range: RangeCompatible, options: textDashBufferLib.Anon_Exclusive): Marker = js.native
   /**
-               *  Subscribe to be notified synchronously whenever markers are created on
-               *  this layer.
-               */
+    *  Subscribe to be notified synchronously whenever markers are created on
+    *  this layer.
+    */
   def onDidCreateMarker(callback: js.Function1[/* marker */ Marker, scala.Unit]): eventDashKitLib.eventDashKitMod.Disposable = js.native
   /** Subscribe to be notified synchronously when this layer is destroyed. */
   def onDidDestroy(callback: js.Function0[scala.Unit]): eventDashKitLib.eventDashKitMod.Disposable = js.native
   // Event Subscription
   /**
-               *  Subscribe to be notified asynchronously whenever markers are created,
-               *  updated, or destroyed on this layer.
-               */
+    *  Subscribe to be notified asynchronously whenever markers are created,
+    *  updated, or destroyed on this layer.
+    */
   def onDidUpdate(callback: js.Function0[scala.Unit]): eventDashKitLib.eventDashKitMod.Disposable = js.native
 }
 

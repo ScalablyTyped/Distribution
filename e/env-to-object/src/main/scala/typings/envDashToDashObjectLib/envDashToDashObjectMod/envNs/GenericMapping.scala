@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GenericMapping
   extends /* opt */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var keypath: java.lang.String

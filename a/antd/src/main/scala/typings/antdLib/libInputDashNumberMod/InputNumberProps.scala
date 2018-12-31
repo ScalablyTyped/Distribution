@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick) */ 
-trait InputNumberProps extends js.Object {
+- Lifted 1 members from Set(std.Pick<react.react.InputHTMLAttributes<react.HTMLInputElement>, std.Exclude<keyof react.react.InputHTMLAttributes<react.HTMLInputElement>, antd.antd/lib/input-number.OmitAttrs>>) */ trait InputNumberProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var decimalSeparator: js.UndefOr[java.lang.String] = js.undefined
   var defaultValue: js.UndefOr[scala.Double] = js.undefined

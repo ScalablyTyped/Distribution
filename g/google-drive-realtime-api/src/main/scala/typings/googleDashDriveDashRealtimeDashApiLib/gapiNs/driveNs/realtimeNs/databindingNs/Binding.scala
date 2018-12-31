@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Binding extends js.Object {
   // Throws gapi.drive.realtime.databinding.AlreadyBoundError If domElement has already been bound.
   // The collaborative object to bind.

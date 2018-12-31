@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConfigObject extends js.Object {
   var aliases: js.UndefOr[scala.Boolean | js.Object] = js.undefined
   // assuming this is optional

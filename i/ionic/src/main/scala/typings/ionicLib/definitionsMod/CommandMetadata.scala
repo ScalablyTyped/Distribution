@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommandMetadata
   extends atIonicCliDashFrameworkLib.definitionsMod.CommandMetadata[
       atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataInput, 

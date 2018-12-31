@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * http://js.cytoscape.org/#layouts/grid
-     */
-
+  * http://js.cytoscape.org/#layouts/grid
+  */
 trait GridLayoutOptions extends ShapedLayoutOptions {
   // extra spacing around nodes when avoidOverlap: true
   var avoidOverlapPadding: js.UndefOr[scala.Double] = js.undefined

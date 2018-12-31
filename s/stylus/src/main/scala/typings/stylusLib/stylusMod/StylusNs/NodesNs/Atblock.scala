@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Atblock extends Node {
   var block: Block
   var nodes: js.Array[Node]

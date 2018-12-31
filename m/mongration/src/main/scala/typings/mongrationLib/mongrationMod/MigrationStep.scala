@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MigrationStep extends js.Object {
   var down: js.UndefOr[
     js.Function2[

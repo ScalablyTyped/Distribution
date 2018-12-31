@@ -10,24 +10,24 @@ import scala.scalajs.js.annotation._
 @js.native
 class ContactInstantMessageField protected () extends js.Object {
   /**
-                   * Creates a new ContactInstantMessageField object.
-                   * @param userName The user's name.
-                   */
+    * Creates a new ContactInstantMessageField object.
+    * @param userName The user's name.
+    */
   def this(userName: java.lang.String) = this()
   /**
-                   * Creates a new ContactInstantMessageField object.
-                   * @param userName The user's name.
-                   * @param category The category of contact data.
-                   */
+    * Creates a new ContactInstantMessageField object.
+    * @param userName The user's name.
+    * @param category The category of contact data.
+    */
   def this(userName: java.lang.String, category: ContactFieldCategory) = this()
   /**
-                   * Creates a new ContactInstantMessageField object.
-                   * @param userName The user's name.
-                   * @param category The category of the contact data.
-                   * @param service The name of the instant messaging service.
-                   * @param displayText The display text used with the instant messaging URI.
-                   * @param verb The URI that starts an instant message.
-                   */
+    * Creates a new ContactInstantMessageField object.
+    * @param userName The user's name.
+    * @param category The category of the contact data.
+    * @param service The name of the instant messaging service.
+    * @param displayText The display text used with the instant messaging URI.
+    * @param verb The URI that starts an instant message.
+    */
   def this(userName: java.lang.String, category: ContactFieldCategory, service: java.lang.String, displayText: java.lang.String, verb: winrtDashUwpLib.WindowsNs.FoundationNs.Uri) = this()
   /** Gets the category for the contact data. */
   var category: ContactFieldCategory = js.native

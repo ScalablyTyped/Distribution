@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExtensionVersion extends js.Object {
   var assetUri: java.lang.String
   var badges: js.Array[ExtensionBadge]

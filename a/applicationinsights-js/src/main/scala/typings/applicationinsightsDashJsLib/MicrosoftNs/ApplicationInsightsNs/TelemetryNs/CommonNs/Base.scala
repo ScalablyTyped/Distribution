@@ -11,10 +11,10 @@ class Base ()
   extends applicationinsightsDashJsLib.MicrosoftNs.TelemetryNs.Base
      with applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.ISerializable {
   /**
-           * The set of fields for a serializeable object.
-           * This defines the serialization order and a value of true/false
-           * for each field defines whether the field is required or not.
-           */
+    * The set of fields for a serializeable object.
+    * This defines the serialization order and a value of true/false
+    * for each field defines whether the field is required or not.
+    */
   /* CompleteClass */
   override var aiDataContract: js.Any = js.native
 }

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CancelError
   extends stdLib.Error {
   val isCanceled: scala.Boolean

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait SwipeDirection extends js.Object
 
 /**
-     * Directions for swipe event.
-    */
+  * Directions for swipe event.
+  */
 @JSGlobal("sap.m.SwipeDirection")
 @js.native
 object SwipeDirection extends js.Object {

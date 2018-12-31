@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISmsDeviceMessageStore extends js.Object {
   var maxMessages: scala.Double
   def deleteMessageAsync(messageId: scala.Double): winrtLib.WindowsNs.FoundationNs.IAsyncAction

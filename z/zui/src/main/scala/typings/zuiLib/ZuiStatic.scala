@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ZuiStatic extends js.Object {
   var Color: ColorStatic
   var Messager: MessagerStatic

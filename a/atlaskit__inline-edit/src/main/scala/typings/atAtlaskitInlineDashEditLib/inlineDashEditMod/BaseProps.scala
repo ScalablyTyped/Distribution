@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseProps extends js.Object {
   /** Sets whether the checkmark and cross are displayed in the bottom right fo the field. */
   var areActionButtonsHidden: js.UndefOr[scala.Boolean] = js.undefined

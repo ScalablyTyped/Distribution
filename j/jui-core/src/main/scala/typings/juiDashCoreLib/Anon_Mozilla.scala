@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Mozilla extends js.Object {
   /** Mozilla 브라우저 체크 */
   var mozilla: scala.Boolean

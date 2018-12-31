@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReactHammerProps extends js.Object {
   var action: js.UndefOr[hammerjsLib.HammerListener] = js.undefined
   var direction: js.UndefOr[

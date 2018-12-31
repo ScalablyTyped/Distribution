@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 sealed trait RoundingMode extends js.Object
 
 /**
-           * Specifies a rounding behavior for numerical operations capable of discarding precision. Each
-           * rounding mode in this object indicates how the leastsignificant returned digits of rounded result is
-           * to be calculated.
-          */
+  * Specifies a rounding behavior for numerical operations capable of discarding precision. Each
+  * rounding mode in this object indicates how the leastsignificant returned digits of rounded result is
+  * to be calculated.
+  */
 @JSGlobal("sap.ui.core.format.NumberFormat.RoundingMode")
 @js.native
 object RoundingMode extends js.Object {

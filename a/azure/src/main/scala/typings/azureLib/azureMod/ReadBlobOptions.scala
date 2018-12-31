@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReadBlobOptions extends GetBlobPropertiesOptions {
   var disableContentMD5Validation: js.UndefOr[scala.Boolean] = js.undefined
   var rangeEnd: js.UndefOr[java.lang.String] = js.undefined

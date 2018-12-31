@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDelayedTask extends js.Object {
   /** [Method] Cancel the last queued timeout */
   var cancel: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

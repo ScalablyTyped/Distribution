@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InteractiveMapProps extends StaticMapProps {
   var clickRadius: js.UndefOr[scala.Double] = js.undefined
   var controller: js.UndefOr[MapController] = js.undefined

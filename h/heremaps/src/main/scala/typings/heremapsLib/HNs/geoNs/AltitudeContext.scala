@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait AltitudeContext extends js.Object
 
 /**
-         * Contexts for altitudes to specify the contextual origin of an altitude's value
-         */
+  * Contexts for altitudes to specify the contextual origin of an altitude's value
+  */
 @JSGlobal("H.geo.AltitudeContext")
 @js.native
 object AltitudeContext extends js.Object {

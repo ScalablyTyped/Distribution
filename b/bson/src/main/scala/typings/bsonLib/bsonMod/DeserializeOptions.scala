@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeserializeOptions extends js.Object {
   /** {default:false}, return BSON regular expressions as BSONRegExp instances. */
   var bsonRegExp: js.UndefOr[scala.Boolean] = js.undefined

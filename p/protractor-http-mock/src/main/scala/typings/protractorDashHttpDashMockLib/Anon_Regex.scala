@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Regex extends js.Object {
   var headers: js.UndefOr[js.Object] = js.undefined
   var interceptedAnonymousRequest: js.UndefOr[scala.Boolean] = js.undefined

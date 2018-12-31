@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MKSpinnerProperties
   extends reactDashNativeLib.reactDashNativeMod.ViewProps {
   var spinnerAniDuration: js.UndefOr[scala.Double] = js.undefined

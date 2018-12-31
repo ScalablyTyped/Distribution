@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPreallocatedWorkItemFactory extends js.Object {
   def createWorkItem(handler: winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemHandler): PreallocatedWorkItem
   def createWorkItemWithPriority(

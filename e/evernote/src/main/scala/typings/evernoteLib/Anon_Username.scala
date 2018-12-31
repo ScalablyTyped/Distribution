@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Username extends js.Object {
   var noteStoreUrl: js.UndefOr[java.lang.String] = js.undefined
   var privilege: js.UndefOr[evernoteLib.evernoteMod.EvernoteNs.PrivilegeLevel] = js.undefined

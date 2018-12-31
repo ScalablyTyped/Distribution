@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AjaxData extends js.Object {
   var data: js.Any
   var draw: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectionChangingEventUIParam extends js.Object {
   /**
   	 * Used to obtain reference to array of the selected items before the new selection has happened. That can be null.

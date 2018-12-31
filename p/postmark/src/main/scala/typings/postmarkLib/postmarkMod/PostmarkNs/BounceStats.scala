@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BounceStats extends js.Object {
   var Count: scala.Double
   var Name: java.lang.String

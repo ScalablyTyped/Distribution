@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VirtualizedOptionRenderOptions[T] extends js.Object {
   var focusedOption: T
   var focusedOptionIndex: scala.Double

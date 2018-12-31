@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GooglePrivacyDlpV2beta1PrimitiveTransformation extends js.Object {
   var bucketingConfig: js.UndefOr[GooglePrivacyDlpV2beta1BucketingConfig] = js.undefined
   var characterMaskConfig: js.UndefOr[GooglePrivacyDlpV2beta1CharacterMaskConfig] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait List extends js.Object {
   /** List of models. */
   var items: js.UndefOr[js.Array[Insert2]] = js.undefined

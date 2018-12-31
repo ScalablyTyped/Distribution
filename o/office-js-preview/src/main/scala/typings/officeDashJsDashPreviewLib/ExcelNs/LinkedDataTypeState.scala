@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait LinkedDataTypeState extends js.Object
 
 /**
-     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-     * @beta
-     */
+  * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+  * @beta
+  */
 @JSGlobal("Excel.LinkedDataTypeState")
 @js.native
 object LinkedDataTypeState extends js.Object {

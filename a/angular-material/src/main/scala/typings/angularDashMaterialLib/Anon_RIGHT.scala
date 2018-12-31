@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RIGHT extends js.Object {
   var BOTTOM: java.lang.String
   var LEFT: java.lang.String

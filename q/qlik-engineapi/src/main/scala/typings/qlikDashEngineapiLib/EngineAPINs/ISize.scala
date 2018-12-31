@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Size...
-     */
-
+  * Size...
+  */
 trait ISize extends js.Object {
   /**
-           * Number of pixels on the x axis.
-           */
+    * Number of pixels on the x axis.
+    */
   var qcx: scala.Double
   /**
-           * Number of pixels on the y axis.
-           */
+    * Number of pixels on the y axis.
+    */
   var qcy: scala.Double
 }
 

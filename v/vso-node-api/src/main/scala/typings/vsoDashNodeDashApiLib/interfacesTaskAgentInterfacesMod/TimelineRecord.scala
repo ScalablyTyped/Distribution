@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimelineRecord extends js.Object {
   var changeId: scala.Double
   var currentOperation: java.lang.String

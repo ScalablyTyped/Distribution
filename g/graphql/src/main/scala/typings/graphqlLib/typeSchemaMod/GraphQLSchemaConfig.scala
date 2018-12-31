@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GraphQLSchemaConfig extends GraphQLSchemaValidationOptions {
   var astNode: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.languageAstMod.SchemaDefinitionNode]] = js.undefined
   var directives: js.UndefOr[

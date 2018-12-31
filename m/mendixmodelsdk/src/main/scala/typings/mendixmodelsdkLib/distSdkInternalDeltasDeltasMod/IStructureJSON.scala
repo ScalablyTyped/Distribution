@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStructureJSON
   extends /* propertyName */ org.scalablytyped.runtime.StringDictionary[
       PrimitiveValue | js.Array[PrimitiveValue] | IStructureJSON | js.Array[IStructureJSON] | scala.Null

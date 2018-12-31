@@ -6,12 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Getting Started
- * chayns
- * interfaces
- */
+  * Getting Started
+  * chayns
+  * interfaces
+  */
 // chayns.register()
-
 trait RegisterConfig extends js.Object {
   var appName: js.UndefOr[java.lang.String] = js.undefined
   var autoResize: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IIndexBar extends IComponent {
   /** [Config Option] (Boolean) */
   var alphabet: js.UndefOr[scala.Boolean] = js.undefined

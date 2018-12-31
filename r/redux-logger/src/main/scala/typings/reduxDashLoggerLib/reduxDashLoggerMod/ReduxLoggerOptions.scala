@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReduxLoggerOptions extends js.Object {
   var actionTransformer: js.UndefOr[js.Function1[/* action */ js.Any, _]] = js.undefined
   var collapsed: js.UndefOr[scala.Boolean | LoggerPredicate] = js.undefined

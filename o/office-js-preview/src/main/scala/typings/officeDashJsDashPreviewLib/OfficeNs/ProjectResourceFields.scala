@@ -9,1429 +9,1429 @@ import scala.scalajs.js.annotation._
 sealed trait ProjectResourceFields extends js.Object
 
 /**
-     * Specifies the resource fields that are available as a parameter for the {@link Office.Document | Document}.getResourceFieldAsync method.
-     *
-     * @remarks
-     * A ProjectResourceFields constant can be used as a parameter of the {@link Office.Document | Document}.getResourceFieldAsync method.
-     *
-     * For more information about working with fields in Project, see 
-     * {@link https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460 | Available fields} reference. In 
-     * Project Help, search for Available fields.
-     * 
-     * **Support details**
-     * 
-     * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
-     * An empty cell indicates that the Office host application doesn't support this enumeration.
-     * 
-     * For more information about Office host application and server requirements, see 
-     * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
-     * 
-     * *Supported hosts, by platform*
-     *  <table>
-     *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th></tr>
-     *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                            </td></tr>
-     *  </table>
-     */
+  * Specifies the resource fields that are available as a parameter for the {@link Office.Document | Document}.getResourceFieldAsync method.
+  *
+  * @remarks
+  * A ProjectResourceFields constant can be used as a parameter of the {@link Office.Document | Document}.getResourceFieldAsync method.
+  *
+  * For more information about working with fields in Project, see 
+  * {@link https://support.office.com/article/Available-fields-reference-615a4563-1cc3-40f4-b66f-1b17e793a460 | Available fields} reference. In 
+  * Project Help, search for Available fields.
+  * 
+  * **Support details**
+  * 
+  * A capital Y in the following matrix indicates that this enumeration is supported in the corresponding Office host application. 
+  * An empty cell indicates that the Office host application doesn't support this enumeration.
+  * 
+  * For more information about Office host application and server requirements, see 
+  * {@link https://docs.microsoft.com/office/dev/add-ins/concepts/requirements-for-running-office-add-ins | Requirements for running Office Add-ins}.
+  * 
+  * *Supported hosts, by platform*
+  *  <table>
+  *   <tr><th>                          </th><th> Office for Windows desktop </th><th> Office Online (in browser) </th></tr>
+  *   <tr><td><strong> Project </strong></td><td> Y                          </td><td>                            </td></tr>
+  *  </table>
+  */
 @JSGlobal("Office.ProjectResourceFields")
 @js.native
 object ProjectResourceFields extends js.Object {
   /**
-           * The accrual method that defines how a task accrues the cost of the resource: Accrues when the task starts = 1, 
-           * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
-           */
+    * The accrual method that defines how a task accrues the cost of the resource: Accrues when the task starts = 1, 
+    * accrues when the task ends = 2, accrues as the task progresses (prorated) = 3.
+    */
   @js.native
   sealed trait Accrual
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The calculated actual cost of the resource for assignments in the project.
-           */
+    * The calculated actual cost of the resource for assignments in the project.
+    */
   @js.native
   sealed trait ActualCost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The actual overtime cost for a resource.
-           */
+    * The actual overtime cost for a resource.
+    */
   @js.native
   sealed trait ActualOvertimeCost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The actual overtime work for a resource, in minutes.
-           */
+    * The actual overtime work for a resource, in minutes.
+    */
   @js.native
   sealed trait ActualOvertimeWork
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The actual overtime work for the resource that has been protected (made read-only).
-           */
+    * The actual overtime work for the resource that has been protected (made read-only).
+    */
   @js.native
   sealed trait ActualOvertimeWorkProtected
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The actual work that the resource has done on assignments in the project.
-           */
+    * The actual work that the resource has done on assignments in the project.
+    */
   @js.native
   sealed trait ActualWork
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The actual work for the resource that has been protected (made read-only).
-           */
+    * The actual work for the resource that has been protected (made read-only).
+    */
   @js.native
   sealed trait ActualWorkProtected
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The name of the base calendar for the resource.
-           */
+    * The name of the base calendar for the resource.
+    */
   @js.native
   sealed trait BaseCalendar
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget cost for the baseline resource.
-           */
+    * The budget cost for the baseline resource.
+    */
   @js.native
   sealed trait Baseline10BudgetCost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget work for the baseline resource, in hours.
-           */
+    * The budget work for the baseline resource, in hours.
+    */
   @js.native
   sealed trait Baseline10BudgetWork
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The cost for the baseline resource.
-           */
+    * The cost for the baseline resource.
+    */
   @js.native
   sealed trait Baseline10Cost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The work for the baseline resource, in minutes.
-           */
+    * The work for the baseline resource, in minutes.
+    */
   @js.native
   sealed trait Baseline10Work
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget cost for the baseline resource.
-           */
+    * The budget cost for the baseline resource.
+    */
   @js.native
   sealed trait Baseline1BudgetCost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget work for the baseline resource, in hours.
-           */
+    * The budget work for the baseline resource, in hours.
+    */
   @js.native
   sealed trait Baseline1BudgetWork
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The cost for the baseline resource.
-           */
+    * The cost for the baseline resource.
+    */
   @js.native
   sealed trait Baseline1Cost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The work for the baseline resource, in minutes.
-           */
+    * The work for the baseline resource, in minutes.
+    */
   @js.native
   sealed trait Baseline1Work
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget cost for the baseline resource.
-           */
+    * The budget cost for the baseline resource.
+    */
   @js.native
   sealed trait Baseline2BudgetCost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget work for the baseline resource, in hours.
-           */
+    * The budget work for the baseline resource, in hours.
+    */
   @js.native
   sealed trait Baseline2BudgetWork
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The cost for the baseline resource.
-           */
+    * The cost for the baseline resource.
+    */
   @js.native
   sealed trait Baseline2Cost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The work for the baseline resource, in minutes.
-           */
+    * The work for the baseline resource, in minutes.
+    */
   @js.native
   sealed trait Baseline2Work
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget cost for the baseline resource.
-           */
+    * The budget cost for the baseline resource.
+    */
   @js.native
   sealed trait Baseline3BudgetCost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget work for the baseline resource, in hours.
-           */
+    * The budget work for the baseline resource, in hours.
+    */
   @js.native
   sealed trait Baseline3BudgetWork
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The cost for the baseline resource.
-           */
+    * The cost for the baseline resource.
+    */
   @js.native
   sealed trait Baseline3Cost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The work for the baseline resource, in minutes.
-           */
+    * The work for the baseline resource, in minutes.
+    */
   @js.native
   sealed trait Baseline3Work
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget cost for the baseline resource.
-           */
+    * The budget cost for the baseline resource.
+    */
   @js.native
   sealed trait Baseline4BudgetCost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget work for the baseline resource, in hours.
-           */
+    * The budget work for the baseline resource, in hours.
+    */
   @js.native
   sealed trait Baseline4BudgetWork
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The cost for the baseline resource.
-           */
+    * The cost for the baseline resource.
+    */
   @js.native
   sealed trait Baseline4Cost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The work for the baseline resource, in minutes.
-           */
+    * The work for the baseline resource, in minutes.
+    */
   @js.native
   sealed trait Baseline4Work
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget cost for the baseline resource.
-           */
+    * The budget cost for the baseline resource.
+    */
   @js.native
   sealed trait Baseline5BudgetCost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget work for the baseline resource, in hours.
-           */
+    * The budget work for the baseline resource, in hours.
+    */
   @js.native
   sealed trait Baseline5BudgetWork
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The cost for the baseline resource.
-           */
+    * The cost for the baseline resource.
+    */
   @js.native
   sealed trait Baseline5Cost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The work for the baseline resource, in minutes.
-           */
+    * The work for the baseline resource, in minutes.
+    */
   @js.native
   sealed trait Baseline5Work
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget cost for the baseline resource.
-           */
+    * The budget cost for the baseline resource.
+    */
   @js.native
   sealed trait Baseline6BudgetCost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget work for the baseline resource, in hours.
-           */
+    * The budget work for the baseline resource, in hours.
+    */
   @js.native
   sealed trait Baseline6BudgetWork
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The cost for the baseline resource.
-           */
+    * The cost for the baseline resource.
+    */
   @js.native
   sealed trait Baseline6Cost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The work for the baseline resource, in minutes.
-           */
+    * The work for the baseline resource, in minutes.
+    */
   @js.native
   sealed trait Baseline6Work
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget cost for the baseline resource.
-           */
+    * The budget cost for the baseline resource.
+    */
   @js.native
   sealed trait Baseline7BudgetCost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget work for the baseline resource, in hours.
-           */
+    * The budget work for the baseline resource, in hours.
+    */
   @js.native
   sealed trait Baseline7BudgetWork
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The cost for the baseline resource.
-           */
+    * The cost for the baseline resource.
+    */
   @js.native
   sealed trait Baseline7Cost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The work for the baseline resource, in minutes.
-           */
+    * The work for the baseline resource, in minutes.
+    */
   @js.native
   sealed trait Baseline7Work
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget cost for the baseline resource.
-           */
+    * The budget cost for the baseline resource.
+    */
   @js.native
   sealed trait Baseline8BudgetCost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget work for the baseline resource, in hours.
-           */
+    * The budget work for the baseline resource, in hours.
+    */
   @js.native
   sealed trait Baseline8BudgetWork
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The cost for the baseline resource.
-           */
+    * The cost for the baseline resource.
+    */
   @js.native
   sealed trait Baseline8Cost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The work for the baseline resource, in minutes.
-           */
+    * The work for the baseline resource, in minutes.
+    */
   @js.native
   sealed trait Baseline8Work
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget cost for the baseline resource.
-           */
+    * The budget cost for the baseline resource.
+    */
   @js.native
   sealed trait Baseline9BudgetCost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget work for the baseline resource, in hours.
-           */
+    * The budget work for the baseline resource, in hours.
+    */
   @js.native
   sealed trait Baseline9BudgetWork
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The cost for the baseline resource.
-           */
+    * The cost for the baseline resource.
+    */
   @js.native
   sealed trait Baseline9Cost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The work for the baseline resource, in minutes.
-           */
+    * The work for the baseline resource, in minutes.
+    */
   @js.native
   sealed trait Baseline9Work
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget cost for the baseline resource.
-           */
+    * The budget cost for the baseline resource.
+    */
   @js.native
   sealed trait BaselineBudgetCost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget work for the baseline resource, in hours.
-           */
+    * The budget work for the baseline resource, in hours.
+    */
   @js.native
   sealed trait BaselineBudgetWork
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The baseline cost for the resource for assignments in the project.
-           */
+    * The baseline cost for the resource for assignments in the project.
+    */
   @js.native
   sealed trait BaselineCost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The baseline work for the resource for assignments in the project, in minutes.
-           */
+    * The baseline work for the resource for assignments in the project, in minutes.
+    */
   @js.native
   sealed trait BaselineWork
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget cost for the resource.
-           */
+    * The budget cost for the resource.
+    */
   @js.native
   sealed trait BudgetCost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The budget work for the resource.
-           */
+    * The budget work for the resource.
+    */
   @js.native
   sealed trait BudgetWork
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The code value of the resource.
-           */
+    * The code value of the resource.
+    */
   @js.native
   sealed trait Code
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The total cost of the resource.
-           */
+    * The total cost of the resource.
+    */
   @js.native
   sealed trait Cost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A cost field for the resource.
-           */
+    * A cost field for the resource.
+    */
   @js.native
   sealed trait Cost1
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A cost field for the resource.
-           */
+    * A cost field for the resource.
+    */
   @js.native
   sealed trait Cost10
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A cost field for the resource.
-           */
+    * A cost field for the resource.
+    */
   @js.native
   sealed trait Cost2
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A cost field for the resource.
-           */
+    * A cost field for the resource.
+    */
   @js.native
   sealed trait Cost3
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A cost field for the resource.
-           */
+    * A cost field for the resource.
+    */
   @js.native
   sealed trait Cost4
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A cost field for the resource.
-           */
+    * A cost field for the resource.
+    */
   @js.native
   sealed trait Cost5
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A cost field for the resource.
-           */
+    * A cost field for the resource.
+    */
   @js.native
   sealed trait Cost6
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A cost field for the resource.
-           */
+    * A cost field for the resource.
+    */
   @js.native
   sealed trait Cost7
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A cost field for the resource.
-           */
+    * A cost field for the resource.
+    */
   @js.native
   sealed trait Cost8
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A cost field for the resource.
-           */
+    * A cost field for the resource.
+    */
   @js.native
   sealed trait Cost9
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The cost per use of the resource.
-           */
+    * The cost per use of the resource.
+    */
   @js.native
   sealed trait CostPerUse
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A date field for the resource.
-           */
+    * A date field for the resource.
+    */
   @js.native
   sealed trait Date1
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A date field for the resource.
-           */
+    * A date field for the resource.
+    */
   @js.native
   sealed trait Date10
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A date field for the resource.
-           */
+    * A date field for the resource.
+    */
   @js.native
   sealed trait Date2
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A date field for the resource.
-           */
+    * A date field for the resource.
+    */
   @js.native
   sealed trait Date3
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A date field for the resource.
-           */
+    * A date field for the resource.
+    */
   @js.native
   sealed trait Date4
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A date field for the resource.
-           */
+    * A date field for the resource.
+    */
   @js.native
   sealed trait Date5
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A date field for the resource.
-           */
+    * A date field for the resource.
+    */
   @js.native
   sealed trait Date6
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A date field for the resource.
-           */
+    * A date field for the resource.
+    */
   @js.native
   sealed trait Date7
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A date field for the resource.
-           */
+    * A date field for the resource.
+    */
   @js.native
   sealed trait Date8
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A date field for the resource.
-           */
+    * A date field for the resource.
+    */
   @js.native
   sealed trait Date9
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A duration field for the resource.
-           */
+    * A duration field for the resource.
+    */
   @js.native
   sealed trait Duration1
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A duration field for the resource.
-           */
+    * A duration field for the resource.
+    */
   @js.native
   sealed trait Duration10
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A duration field for the resource.
-           */
+    * A duration field for the resource.
+    */
   @js.native
   sealed trait Duration2
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A duration field for the resource.
-           */
+    * A duration field for the resource.
+    */
   @js.native
   sealed trait Duration3
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A duration field for the resource.
-           */
+    * A duration field for the resource.
+    */
   @js.native
   sealed trait Duration4
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A duration field for the resource.
-           */
+    * A duration field for the resource.
+    */
   @js.native
   sealed trait Duration5
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A duration field for the resource.
-           */
+    * A duration field for the resource.
+    */
   @js.native
   sealed trait Duration6
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A duration field for the resource.
-           */
+    * A duration field for the resource.
+    */
   @js.native
   sealed trait Duration7
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A duration field for the resource.
-           */
+    * A duration field for the resource.
+    */
   @js.native
   sealed trait Duration8
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A duration field for the resource.
-           */
+    * A duration field for the resource.
+    */
   @js.native
   sealed trait Duration9
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The email address of the resource.
-           */
+    * The email address of the resource.
+    */
   @js.native
   sealed trait Email
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The end date of the resource availability.
-           */
+    * The end date of the resource availability.
+    */
   @js.native
   sealed trait End
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A finish field for the task.
-           */
+    * A finish field for the task.
+    */
   @js.native
   sealed trait Finish1
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A finish field for the task.
-           */
+    * A finish field for the task.
+    */
   @js.native
   sealed trait Finish10
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A finish field for the task.
-           */
+    * A finish field for the task.
+    */
   @js.native
   sealed trait Finish2
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A finish field for the task.
-           */
+    * A finish field for the task.
+    */
   @js.native
   sealed trait Finish3
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A finish field for the task.
-           */
+    * A finish field for the task.
+    */
   @js.native
   sealed trait Finish4
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A finish field for the task.
-           */
+    * A finish field for the task.
+    */
   @js.native
   sealed trait Finish5
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A finish field for the task.
-           */
+    * A finish field for the task.
+    */
   @js.native
   sealed trait Finish6
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A finish field for the task.
-           */
+    * A finish field for the task.
+    */
   @js.native
   sealed trait Finish7
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A finish field for the task.
-           */
+    * A finish field for the task.
+    */
   @js.native
   sealed trait Finish8
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A finish field for the task.
-           */
+    * A finish field for the task.
+    */
   @js.native
   sealed trait Finish9
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A Boolean flag field for the resource.
-           */
+    * A Boolean flag field for the resource.
+    */
   @js.native
   sealed trait Flag1
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A Boolean flag field for the resource.
-           */
+    * A Boolean flag field for the resource.
+    */
   @js.native
   sealed trait Flag10
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A Boolean flag field for the resource.
-           */
+    * A Boolean flag field for the resource.
+    */
   @js.native
   sealed trait Flag11
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A Boolean flag field for the resource.
-           */
+    * A Boolean flag field for the resource.
+    */
   @js.native
   sealed trait Flag12
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A Boolean flag field for the resource.
-           */
+    * A Boolean flag field for the resource.
+    */
   @js.native
   sealed trait Flag13
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A Boolean flag field for the resource.
-           */
+    * A Boolean flag field for the resource.
+    */
   @js.native
   sealed trait Flag14
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A Boolean flag field for the resource.
-           */
+    * A Boolean flag field for the resource.
+    */
   @js.native
   sealed trait Flag15
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A Boolean flag field for the resource.
-           */
+    * A Boolean flag field for the resource.
+    */
   @js.native
   sealed trait Flag16
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A Boolean flag field for the resource.
-           */
+    * A Boolean flag field for the resource.
+    */
   @js.native
   sealed trait Flag17
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A Boolean flag field for the resource.
-           */
+    * A Boolean flag field for the resource.
+    */
   @js.native
   sealed trait Flag18
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A Boolean flag field for the resource.
-           */
+    * A Boolean flag field for the resource.
+    */
   @js.native
   sealed trait Flag19
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A Boolean flag field for the resource.
-           */
+    * A Boolean flag field for the resource.
+    */
   @js.native
   sealed trait Flag2
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A Boolean flag field for the resource.
-           */
+    * A Boolean flag field for the resource.
+    */
   @js.native
   sealed trait Flag20
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A Boolean flag field for the resource.
-           */
+    * A Boolean flag field for the resource.
+    */
   @js.native
   sealed trait Flag3
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A Boolean flag field for the resource.
-           */
+    * A Boolean flag field for the resource.
+    */
   @js.native
   sealed trait Flag4
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A Boolean flag field for the resource.
-           */
+    * A Boolean flag field for the resource.
+    */
   @js.native
   sealed trait Flag5
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A Boolean flag field for the resource.
-           */
+    * A Boolean flag field for the resource.
+    */
   @js.native
   sealed trait Flag6
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A Boolean flag field for the resource.
-           */
+    * A Boolean flag field for the resource.
+    */
   @js.native
   sealed trait Flag7
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A Boolean flag field for the resource.
-           */
+    * A Boolean flag field for the resource.
+    */
   @js.native
   sealed trait Flag8
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A Boolean flag field for the resource.
-           */
+    * A Boolean flag field for the resource.
+    */
   @js.native
   sealed trait Flag9
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * Indicates whether the resource is a generic resource (identified by skill rather than by name).
-           */
+    * Indicates whether the resource is a generic resource (identified by skill rather than by name).
+    */
   @js.native
   sealed trait Generic
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The group the resource belongs to.
-           */
+    * The group the resource belongs to.
+    */
   @js.native
   sealed trait Group
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The name of the resource.
-           */
+    * The name of the resource.
+    */
   @js.native
   sealed trait Name
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The text value of the notes regarding the resource.
-           */
+    * The text value of the notes regarding the resource.
+    */
   @js.native
   sealed trait Notes
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A number field for the resource.
-           */
+    * A number field for the resource.
+    */
   @js.native
   sealed trait Number1
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A number field for the resource.
-           */
+    * A number field for the resource.
+    */
   @js.native
   sealed trait Number10
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A number field for the resource.
-           */
+    * A number field for the resource.
+    */
   @js.native
   sealed trait Number11
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A number field for the resource.
-           */
+    * A number field for the resource.
+    */
   @js.native
   sealed trait Number12
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A number field for the resource.
-           */
+    * A number field for the resource.
+    */
   @js.native
   sealed trait Number13
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A number field for the resource.
-           */
+    * A number field for the resource.
+    */
   @js.native
   sealed trait Number14
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A number field for the resource.
-           */
+    * A number field for the resource.
+    */
   @js.native
   sealed trait Number15
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A number field for the resource.
-           */
+    * A number field for the resource.
+    */
   @js.native
   sealed trait Number16
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A number field for the resource.
-           */
+    * A number field for the resource.
+    */
   @js.native
   sealed trait Number17
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A number field for the resource.
-           */
+    * A number field for the resource.
+    */
   @js.native
   sealed trait Number18
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A number field for the resource.
-           */
+    * A number field for the resource.
+    */
   @js.native
   sealed trait Number19
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A number field for the resource.
-           */
+    * A number field for the resource.
+    */
   @js.native
   sealed trait Number2
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A number field for the resource.
-           */
+    * A number field for the resource.
+    */
   @js.native
   sealed trait Number20
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A number field for the resource.
-           */
+    * A number field for the resource.
+    */
   @js.native
   sealed trait Number3
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A number field for the resource.
-           */
+    * A number field for the resource.
+    */
   @js.native
   sealed trait Number4
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A number field for the resource.
-           */
+    * A number field for the resource.
+    */
   @js.native
   sealed trait Number5
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A number field for the resource.
-           */
+    * A number field for the resource.
+    */
   @js.native
   sealed trait Number6
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A number field for the resource.
-           */
+    * A number field for the resource.
+    */
   @js.native
   sealed trait Number7
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A number field for the resource.
-           */
+    * A number field for the resource.
+    */
   @js.native
   sealed trait Number8
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A number field for the resource.
-           */
+    * A number field for the resource.
+    */
   @js.native
   sealed trait Number9
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * Indicates whether the resource is overallocated.
-           */
+    * Indicates whether the resource is overallocated.
+    */
   @js.native
   sealed trait OverAllocated
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The overtime cost for a resource.
-           */
+    * The overtime cost for a resource.
+    */
   @js.native
   sealed trait OvertimeCost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The overtime rate for a resource.
-           */
+    * The overtime rate for a resource.
+    */
   @js.native
   sealed trait OvertimeRate
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The overtime work for a resource.
-           */
+    * The overtime work for a resource.
+    */
   @js.native
   sealed trait OvertimeWork
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The percentage of work complete for a resource.
-           */
+    * The percentage of work complete for a resource.
+    */
   @js.native
   sealed trait PercentWorkComplete
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The amount of regular work for the resource.
-           */
+    * The amount of regular work for the resource.
+    */
   @js.native
   sealed trait RegularWork
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The remaining cost for the resource.
-           */
+    * The remaining cost for the resource.
+    */
   @js.native
   sealed trait RemainingCost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The remaining overtime cost for the resource.
-           */
+    * The remaining overtime cost for the resource.
+    */
   @js.native
   sealed trait RemainingOvertimeCost
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The remaining overtime work for the resource, in minutes.
-           */
+    * The remaining overtime work for the resource, in minutes.
+    */
   @js.native
   sealed trait RemainingOvertimeWork
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The remaining work for the resource, in minutes.
-           */
+    * The remaining work for the resource, in minutes.
+    */
   @js.native
   sealed trait RemainingWork
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The GUID of the resource calendar.
-           */
+    * The GUID of the resource calendar.
+    */
   @js.native
   sealed trait ResourceCalendarGUID
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The date the resource was created.
-           */
+    * The date the resource was created.
+    */
   @js.native
   sealed trait ResourceCreationDate
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The ID of the resource.
-           */
+    * The ID of the resource.
+    */
   @js.native
   sealed trait ResourceGUID
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The standard rate of pay for the resource, in cost per hour.
-           */
+    * The standard rate of pay for the resource, in cost per hour.
+    */
   @js.native
   sealed trait StandardRate
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The start date for the resource.
-           */
+    * The start date for the resource.
+    */
   @js.native
   sealed trait Start
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A start field for the resource.
-           */
+    * A start field for the resource.
+    */
   @js.native
   sealed trait Start1
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A start field for the resource.
-           */
+    * A start field for the resource.
+    */
   @js.native
   sealed trait Start10
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A start field for the resource.
-           */
+    * A start field for the resource.
+    */
   @js.native
   sealed trait Start2
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A start field for the resource.
-           */
+    * A start field for the resource.
+    */
   @js.native
   sealed trait Start3
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A start field for the resource.
-           */
+    * A start field for the resource.
+    */
   @js.native
   sealed trait Start4
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A start field for the resource.
-           */
+    * A start field for the resource.
+    */
   @js.native
   sealed trait Start5
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A start field for the resource.
-           */
+    * A start field for the resource.
+    */
   @js.native
   sealed trait Start6
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A start field for the resource.
-           */
+    * A start field for the resource.
+    */
   @js.native
   sealed trait Start7
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A start field for the resource.
-           */
+    * A start field for the resource.
+    */
   @js.native
   sealed trait Start8
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A start field for the resource.
-           */
+    * A start field for the resource.
+    */
   @js.native
   sealed trait Start9
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text1
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text10
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text11
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text12
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text13
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text14
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text15
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text16
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text17
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text18
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text19
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text2
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text20
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text21
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text22
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text23
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text24
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text25
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text26
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text27
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text28
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text29
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text3
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text30
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text4
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text5
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text6
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text7
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text8
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * A text field for the resource.
-           */
+    * A text field for the resource.
+    */
   @js.native
   sealed trait Text9
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The percentage of work units that the resource has assigned in the project. If the resource is working full-time on the project, Units = 100.
-           */
+    * The percentage of work units that the resource has assigned in the project. If the resource is working full-time on the project, Units = 100.
+    */
   @js.native
   sealed trait Units
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields
   
   /**
-           * The total work for the resource, in minutes.
-           */
+    * The total work for the resource, in minutes.
+    */
   @js.native
   sealed trait Work
     extends officeDashJsDashPreviewLib.OfficeNs.ProjectResourceFields

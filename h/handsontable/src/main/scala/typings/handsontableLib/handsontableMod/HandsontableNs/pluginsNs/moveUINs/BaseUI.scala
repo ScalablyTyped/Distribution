@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseUI extends js.Object {
   var hot: handsontableLib.handsontableMod.underscoreHandsontableNs.Core
   var state: scala.Double

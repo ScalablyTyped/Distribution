@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISearchBoxStyles extends js.Object {
   var clearButton: js.UndefOr[atUifabricMergeDashStylesLib.libIStyleMod.IStyle] = js.undefined
   var field: js.UndefOr[atUifabricMergeDashStylesLib.libIStyleMod.IStyle] = js.undefined

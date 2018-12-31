@@ -81,7 +81,6 @@ class Chart protected () extends js.Object {
   def AutoFormat(Gallery: scala.Double, Format: js.Any): scala.Unit = js.native
   /** @param Word.XlAxisGroup [AxisGroup=1] */
   def Axes(Type: js.Any): js.Any = js.native
-  /** @param Word.XlAxisGroup [AxisGroup=1] */
   def Axes(Type: js.Any, AxisGroup: XlAxisGroup): js.Any = js.native
   def BarGroups(): js.Any = js.native
   def BarGroups(Index: js.Any): js.Any = js.native
@@ -107,28 +106,13 @@ class Chart protected () extends js.Object {
   def Copy(Before: js.Any): scala.Unit = js.native
   def Copy(Before: js.Any, After: js.Any): scala.Unit = js.native
   /**
-           * @param Word.XlPictureAppearance [Appearance=1]
-           * @param Word.XlCopyPictureFormat [Format=-4147]
-           * @param Word.XlPictureAppearance [Size=2]
-           */
+    * @param Word.XlPictureAppearance [Appearance=1]
+    * @param Word.XlCopyPictureFormat [Format=-4147]
+    * @param Word.XlPictureAppearance [Size=2]
+    */
   def CopyPicture(): scala.Unit = js.native
-  /**
-           * @param Word.XlPictureAppearance [Appearance=1]
-           * @param Word.XlCopyPictureFormat [Format=-4147]
-           * @param Word.XlPictureAppearance [Size=2]
-           */
   def CopyPicture(Appearance: XlPictureAppearance): scala.Unit = js.native
-  /**
-           * @param Word.XlPictureAppearance [Appearance=1]
-           * @param Word.XlCopyPictureFormat [Format=-4147]
-           * @param Word.XlPictureAppearance [Size=2]
-           */
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat): scala.Unit = js.native
-  /**
-           * @param Word.XlPictureAppearance [Appearance=1]
-           * @param Word.XlCopyPictureFormat [Format=-4147]
-           * @param Word.XlPictureAppearance [Size=2]
-           */
   def CopyPicture(Appearance: XlPictureAppearance, Format: XlCopyPictureFormat, Size: XlPictureAppearance): scala.Unit = js.native
   def Delete(): js.Any = js.native
   def DoughnutGroups(): js.Any = js.native

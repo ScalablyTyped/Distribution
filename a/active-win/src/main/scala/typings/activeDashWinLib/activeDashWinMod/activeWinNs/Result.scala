@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Result extends js.Object {
   var bounds: js.UndefOr[activeDashWinLib.Anon_Y] = js.undefined
   var id: scala.Double

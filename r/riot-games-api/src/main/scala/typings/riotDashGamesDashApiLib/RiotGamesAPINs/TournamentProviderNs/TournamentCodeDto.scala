@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TournamentCodeDto extends js.Object {
   var code: java.lang.String
   var id: scala.Double

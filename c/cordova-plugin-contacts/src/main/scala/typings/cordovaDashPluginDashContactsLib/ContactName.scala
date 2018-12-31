@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Contains different kinds of information about a Contact object's name. */
-
 trait ContactName extends js.Object {
   /** The contact's family name. */
   var familyName: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SeriesProperties extends js.Object {
   var axis: scala.Double
   var color: java.lang.String

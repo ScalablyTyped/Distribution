@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventModifierInit extends UIEventInit {
   var altKey: js.UndefOr[scala.Boolean] = js.undefined
   var ctrlKey: js.UndefOr[scala.Boolean] = js.undefined

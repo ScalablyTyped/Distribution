@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JScrollPaneSettings extends js.Object {
   /**
   	 * The number of milliseconds taken to animate to a new position

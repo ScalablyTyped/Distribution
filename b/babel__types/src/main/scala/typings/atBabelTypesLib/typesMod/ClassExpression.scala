@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClassExpression extends BaseNode {
   var body: ClassBody
   var decorators: js.Array[Decorator] | scala.Null

@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait ContactsApp extends js.Object {
-  var ExtendedField: js.Any = js.native
-  var Field: js.Any = js.native
-  var Gender: js.Any = js.native
-  var Month: js.Any = js.native
-  var Priority: js.Any = js.native
-  var Sensitivity: js.Any = js.native
+  var ExtendedField: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Contacts.ExtendedField */ js.Any = js.native
+  var Field: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Contacts.Field */ js.Any = js.native
+  var Gender: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Contacts.Gender */ js.Any = js.native
+  var Month: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Base.Month */ js.Any = js.native
+  var Priority: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Contacts.Priority */ js.Any = js.native
+  var Sensitivity: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Contacts.Sensitivity */ js.Any = js.native
   def createContact(givenName: java.lang.String, familyName: java.lang.String, email: java.lang.String): Contact = js.native
   def createContactGroup(name: java.lang.String): ContactGroup = js.native
   def deleteContact(contact: Contact): scala.Unit = js.native

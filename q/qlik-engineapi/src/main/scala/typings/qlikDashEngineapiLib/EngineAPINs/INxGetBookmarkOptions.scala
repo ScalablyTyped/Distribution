@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * NxGetBookmarkOptions.
-     */
-
+  * NxGetBookmarkOptions.
+  */
 trait INxGetBookmarkOptions extends js.Object {
   /**
-           * Set of data.
-           */
+    * Set of data.
+    */
   var qData: js.Any
   /**
-           * List of object types..
-           */
+    * List of object types..
+    */
   var qTypes: js.Array[java.lang.String]
 }
 

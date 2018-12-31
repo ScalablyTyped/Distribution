@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GeocoderGeometry extends js.Object {
   var bounds: LatLngBounds
   var location: LatLng

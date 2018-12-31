@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RadialGaugeOptions extends GenericOptions {
   var animationTarget: js.UndefOr[java.lang.String] = js.undefined
   var colorNeedleCircleInner: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SlideProps extends BaseProps {
   var align: js.UndefOr[alignType] = js.undefined
   var contentStyles: js.UndefOr[CSSProperties] = js.undefined

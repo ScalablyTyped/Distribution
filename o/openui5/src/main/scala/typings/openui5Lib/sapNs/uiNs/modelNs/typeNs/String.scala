@@ -10,18 +10,12 @@ import scala.scalajs.js.annotation._
 class String protected ()
   extends openui5Lib.sapNs.uiNs.modelNs.SimpleType {
   /**
-             * Constructor for a String type.
-             * @param oFormatOptions formatting options. String doesn't support any formatting options
-             * @param oConstraints value constraints. All given constraints must be fulfilled by a value to be
-             * valid
-            */
+    * Constructor for a String type.
+    * @param oFormatOptions formatting options. String doesn't support any formatting options
+    * @param oConstraints value constraints. All given constraints must be fulfilled by a value to be
+    * valid
+    */
   def this(oFormatOptions: js.Any) = this()
-  /**
-             * Constructor for a String type.
-             * @param oFormatOptions formatting options. String doesn't support any formatting options
-             * @param oConstraints value constraints. All given constraints must be fulfilled by a value to be
-             * valid
-            */
   def this(oFormatOptions: js.Any, oConstraints: js.Any) = this()
 }
 

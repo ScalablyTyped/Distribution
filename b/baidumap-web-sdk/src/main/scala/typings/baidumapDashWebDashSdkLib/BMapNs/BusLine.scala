@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BusLine extends js.Object {
   var company: java.lang.String
   var endTime: java.lang.String

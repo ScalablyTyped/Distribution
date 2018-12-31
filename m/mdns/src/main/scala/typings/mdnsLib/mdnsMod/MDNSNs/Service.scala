@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // --- Services ---
-
 trait Service extends js.Object {
   var addresses: js.Array[java.lang.String]
   var flags: scala.Double

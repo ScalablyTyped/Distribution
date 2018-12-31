@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Block extends js.Object {
   var baseline: Baseline
   var bbox: Bbox

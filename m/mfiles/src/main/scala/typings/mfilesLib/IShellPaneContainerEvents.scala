@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IShellPaneContainerEvents extends IEvents {
   var OnHidePane: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var OnMinimizedStateChanged: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

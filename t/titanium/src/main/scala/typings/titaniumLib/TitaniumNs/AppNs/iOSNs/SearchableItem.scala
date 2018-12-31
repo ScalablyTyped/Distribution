@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 			 * Used to create a unique object containing all of the search information that will appear in the device search index.
 			 */
-
 trait SearchableItem
   extends titaniumLib.TitaniumNs.Proxy {
   /**

@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 3 members from Set(std.Pick, @material-ui/core.@material-ui/core.StandardProps) */ 
-trait AppBarProps
+- Lifted 3 members from Set(std.Pick<@material-ui/core.@material-ui/core/Paper.PaperProps, std.Exclude<keyof @material-ui/core.@material-ui/core/Paper.PaperProps, 'classes' | never>>, @material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/Paper.PaperProps, @material-ui/core.@material-ui/core/AppBar/AppBar.AppBarClassKey, never>) */ trait AppBarProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[AppBarClassKey] {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var color: js.UndefOr[atMaterialDashUiCoreLib.coreMod.PropTypesNs.Color] = js.undefined

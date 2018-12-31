@@ -14,11 +14,11 @@ class Agent () extends js.Object {
   var requests: js.Any = js.native
   var sockets: js.Any = js.native
   /**
-           * Destroy any sockets that are currently in use by the agent.
-           * It is usually not necessary to do this. However, if you are using an agent with KeepAlive enabled,
-           * then it is best to explicitly shut down the agent when you know that it will no longer be used. Otherwise,
-           * sockets may hang open for quite a long time before the server terminates them.
-           */
+    * Destroy any sockets that are currently in use by the agent.
+    * It is usually not necessary to do this. However, if you are using an agent with KeepAlive enabled,
+    * then it is best to explicitly shut down the agent when you know that it will no longer be used. Otherwise,
+    * sockets may hang open for quite a long time before the server terminates them.
+    */
   def destroy(): scala.Unit = js.native
 }
 

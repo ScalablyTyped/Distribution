@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_XmlDsigBase64Transform extends js.Object {
   var XmlDecryptionTransform: java.lang.String
   var XmlDsigBase64Transform: java.lang.String

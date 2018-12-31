@@ -18,9 +18,9 @@ trait Window
      with GlobalFetch
      with WindowOrWorkerGlobalScope
      with WindowEventHandlers {
-  var Blob: Anon_BlobParts with (/* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(xterm), TsIdentSimple(Blob)))) */js.Any) = js.native
-  var URL: Anon_Url with (/* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(xterm), TsIdentSimple(URL)))) */js.Any) = js.native
-  var URLSearchParams: Anon_Init with (/* import warning: Failed type conversion: TsTypeQuery(TsQIdent(List(TsIdentLibrarySimple(xterm), TsIdentSimple(URLSearchParams)))) */js.Any) = js.native
+  var Blob: Anon_BlobParts = js.native
+  var URL: Anon_Url = js.native
+  var URLSearchParams: Anon_Init = js.native
   val applicationCache: ApplicationCache = js.native
   val clientInformation: Navigator = js.native
   val closed: scala.Boolean = js.native
@@ -106,39 +106,19 @@ trait Window
   val top: Window = js.native
   val window: Window = js.native
   /**
-       * Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
-       * The options argument sets listener-specific options. For compatibility this can be a
-       * boolean, in which case the method behaves exactly as if the value was specified as options's capture.
-       * When set to true, options's capture prevents callback from being invoked when the event's eventPhase attribute value is BUBBLING_PHASE. When false (or not present), callback will not be invoked when event's eventPhase attribute value is CAPTURING_PHASE. Either way, callback will be invoked if event's eventPhase attribute value is AT_TARGET.
-       * When set to true, options's passive indicates that the callback will not cancel the event by invoking preventDefault(). This is used to enable performance optimizations described in §2.8 Observing event listeners.
-       * When set to true, options's once indicates that the callback will only be invoked once after which the event listener will
-       * be removed.
-       * The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
-       */
+    * Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
+    * The options argument sets listener-specific options. For compatibility this can be a
+    * boolean, in which case the method behaves exactly as if the value was specified as options's capture.
+    * When set to true, options's capture prevents callback from being invoked when the event's eventPhase attribute value is BUBBLING_PHASE. When false (or not present), callback will not be invoked when event's eventPhase attribute value is CAPTURING_PHASE. Either way, callback will be invoked if event's eventPhase attribute value is AT_TARGET.
+    * When set to true, options's passive indicates that the callback will not cancel the event by invoking preventDefault(). This is used to enable performance optimizations described in §2.8 Observing event listeners.
+    * When set to true, options's once indicates that the callback will only be invoked once after which the event listener will
+    * be removed.
+    * The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
+    */
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): scala.Unit = js.native
-  /**
-       * Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
-       * The options argument sets listener-specific options. For compatibility this can be a
-       * boolean, in which case the method behaves exactly as if the value was specified as options's capture.
-       * When set to true, options's capture prevents callback from being invoked when the event's eventPhase attribute value is BUBBLING_PHASE. When false (or not present), callback will not be invoked when event's eventPhase attribute value is CAPTURING_PHASE. Either way, callback will be invoked if event's eventPhase attribute value is AT_TARGET.
-       * When set to true, options's passive indicates that the callback will not cancel the event by invoking preventDefault(). This is used to enable performance optimizations described in §2.8 Observing event listeners.
-       * When set to true, options's once indicates that the callback will only be invoked once after which the event listener will
-       * be removed.
-       * The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
-       */
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): scala.Unit = js.native
-  /**
-       * Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
-       * The options argument sets listener-specific options. For compatibility this can be a
-       * boolean, in which case the method behaves exactly as if the value was specified as options's capture.
-       * When set to true, options's capture prevents callback from being invoked when the event's eventPhase attribute value is BUBBLING_PHASE. When false (or not present), callback will not be invoked when event's eventPhase attribute value is CAPTURING_PHASE. Either way, callback will be invoked if event's eventPhase attribute value is AT_TARGET.
-       * When set to true, options's passive indicates that the callback will not cancel the event by invoking preventDefault(). This is used to enable performance optimizations described in §2.8 Observing event listeners.
-       * When set to true, options's once indicates that the callback will only be invoked once after which the event listener will
-       * be removed.
-       * The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
-       */
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
@@ -719,18 +699,12 @@ trait Window
   /** @deprecated */
   def releaseEvents(): scala.Unit = js.native
   /**
-       * Removes the event listener in target's event listener list with the same type, callback, and options.
-       */
+    * Removes the event listener in target's event listener list with the same type, callback, and options.
+    */
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): scala.Unit = js.native
-  /**
-       * Removes the event listener in target's event listener list with the same type, callback, and options.
-       */
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): scala.Unit = js.native
-  /**
-       * Removes the event listener in target's event listener list with the same type, callback, and options.
-       */
   /* InferMemberOverrides */
   override def removeEventListener(
     `type`: java.lang.String,

@@ -19,16 +19,16 @@ trait LodashPropertyOf extends js.Object {
   ): LodashPropertyOf4x2[T] = js.native
   def apply[T](path: scala.Double, `object`: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): js.UndefOr[T] = js.native
   def apply[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def apply[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: TKey, `object`: TObject): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def apply[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey]): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
   def apply[TObject /* <: js.Object */, TKey /* <: java.lang.String */](path: js.Array[TKey], `object`: TObject): js.UndefOr[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(TObject))),List()),Left(TsIdentSimple(TKey))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: TObject[TKey] */ js.Any
   ] = js.native
 }
 

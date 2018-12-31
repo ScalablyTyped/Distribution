@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ChartAxisPosition extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.7]
-     */
+  * [Api set: ExcelApi 1.7]
+  */
 @JSGlobal("Excel.ChartAxisPosition")
 @js.native
 object ChartAxisPosition extends js.Object {

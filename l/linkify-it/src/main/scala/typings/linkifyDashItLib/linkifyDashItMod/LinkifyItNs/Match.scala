@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Match extends js.Object {
   var index: scala.Double
   var lastIndex: scala.Double

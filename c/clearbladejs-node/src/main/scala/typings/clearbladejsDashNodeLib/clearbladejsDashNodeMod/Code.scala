@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Code extends js.Object {
   var URI: java.lang.String
   var URIPrefix: java.lang.String

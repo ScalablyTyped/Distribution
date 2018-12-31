@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NavigatorsConfig[TKeys, TState] extends js.Object {
   var navigators: Navigators[TState]
   def actionToNavigation(

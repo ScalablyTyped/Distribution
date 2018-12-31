@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilterOptions
   extends nodeLib.streamMod.internalNs.TransformOptions {
   var allowEmptyReplacement: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ButtonOptions extends js.Object {
   var click: js.UndefOr[js.Function1[/* e */ ButtonClickEvent, scala.Unit]] = js.undefined
   var enable: js.UndefOr[scala.Boolean] = js.undefined

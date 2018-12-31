@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IClass extends js.Object {
   /** [Config Option] (String[]) */
   var alias: js.UndefOr[Array] = js.undefined

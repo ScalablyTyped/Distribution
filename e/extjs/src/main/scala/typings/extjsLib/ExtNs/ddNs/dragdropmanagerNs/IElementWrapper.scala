@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IElementWrapper extends js.Object {
   /** [Property] (Object) */
   var css: js.UndefOr[js.Any] = js.undefined

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This holds LayeredDigraphLayout-specific information about Link s.*/
-
 trait LayeredDigraphEdge extends LayoutEdge {
   /**True if the link is part of the depth first forest.*/
   var forest: scala.Boolean

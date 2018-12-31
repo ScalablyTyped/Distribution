@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Subdivisions extends js.Object {
   var fill: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.Property] = js.undefined
   var material: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.MaterialProperty] = js.undefined

@@ -31,9 +31,9 @@ abstract class WebUIBackgroundTaskInstanceRuntimeClass () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.BackgroundTaskCanceledEventHandler
   ): scala.Unit = js.native
   /**
-                   * Informs the system that the background task might continue to perform work after the IBackgroundTask.Run method returns. This method is not applicable to JavaScript background tasks.
-                   * @return A background task deferral.
-                   */
+    * Informs the system that the background task might continue to perform work after the IBackgroundTask.Run method returns. This method is not applicable to JavaScript background tasks.
+    * @return A background task deferral.
+    */
   def getDeferral(): winrtDashUwpLib.WindowsNs.ApplicationModelNs.BackgroundNs.BackgroundTaskDeferral = js.native
   /** Attaches a cancellation event handler to the background task instance. */
   def oncanceled(

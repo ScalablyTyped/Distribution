@@ -12,43 +12,43 @@ sealed trait TestSessionState extends js.Object
 @js.native
 object TestSessionState extends js.Object {
   /**
-       * The session has completed.
-       */
+    * The session has completed.
+    */
   @js.native
   sealed trait Completed
     extends vsoDashNodeDashApiLib.interfacesTestInterfacesMod.TestSessionState
   
   /**
-       * This is required for Feedback session which are declined
-       */
+    * This is required for Feedback session which are declined
+    */
   @js.native
   sealed trait Declined
     extends vsoDashNodeDashApiLib.interfacesTestInterfacesMod.TestSessionState
   
   /**
-       * The session is running.
-       */
+    * The session is running.
+    */
   @js.native
   sealed trait InProgress
     extends vsoDashNodeDashApiLib.interfacesTestInterfacesMod.TestSessionState
   
   /**
-       * The session is still being created.
-       */
+    * The session is still being created.
+    */
   @js.native
   sealed trait NotStarted
     extends vsoDashNodeDashApiLib.interfacesTestInterfacesMod.TestSessionState
   
   /**
-       * The session has paused.
-       */
+    * The session has paused.
+    */
   @js.native
   sealed trait Paused
     extends vsoDashNodeDashApiLib.interfacesTestInterfacesMod.TestSessionState
   
   /**
-       * Only used during an update to preserve the existing value.
-       */
+    * Only used during an update to preserve the existing value.
+    */
   @js.native
   sealed trait Unspecified
     extends vsoDashNodeDashApiLib.interfacesTestInterfacesMod.TestSessionState

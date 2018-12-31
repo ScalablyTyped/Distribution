@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DialogButton extends js.Object {
   /**
-           * If provided, the callback will be invoked after the button is clicked, and the dialog instance
-           * will be passed to the callback function.
-           */
+    * If provided, the callback will be invoked after the button is clicked, and the dialog instance
+    * will be passed to the callback function.
+    */
   var action: js.UndefOr[js.Function1[/* dialog */ DialogContext, scala.Unit]] = js.undefined
   /**  If it's true, after clicked the button a spinning icon appears. */
   var autospin: js.UndefOr[scala.Boolean] = js.undefined

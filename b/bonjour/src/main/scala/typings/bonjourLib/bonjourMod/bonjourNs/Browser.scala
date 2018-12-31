@@ -6,19 +6,19 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Start a browser
-     *
-     * The browser listens for services by querying for PTR records of a given
-     * type, protocol and domain, e.g. _http._tcp.local.
-     *
-     * If no type is given, a wild card search is performed.
-     *
-     * An internal list of online services is kept which starts out empty. When
-     * ever a new service is discovered, it's added to the list and an "up" event
-     * is emitted with that service. When it's discovered that the service is no
-     * longer available, it is removed from the list and a "down" event is emitted
-     * with that service.
-     */
+  * Start a browser
+  *
+  * The browser listens for services by querying for PTR records of a given
+  * type, protocol and domain, e.g. _http._tcp.local.
+  *
+  * If no type is given, a wild card search is performed.
+  *
+  * An internal list of online services is kept which starts out empty. When
+  * ever a new service is discovered, it's added to the list and an "up" event
+  * is emitted with that service. When it's discovered that the service is no
+  * longer available, it is removed from the list and a "down" event is emitted
+  * with that service.
+  */
 @js.native
 trait Browser
   extends nodeLib.NodeJSNs.EventEmitter {

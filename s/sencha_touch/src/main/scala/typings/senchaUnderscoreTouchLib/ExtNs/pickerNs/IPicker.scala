@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPicker
   extends senchaUnderscoreTouchLib.ExtNs.ISheet {
   /** [Config Option] (String) */

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClientRequestOptions
   extends nesLib.clientMod.ClientNs.ClientRequestOptions
 

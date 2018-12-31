@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActiveUIView extends js.Object {
   /** type of framework, e.g., "ng1" or "ng2" */
   @JSName("$type")

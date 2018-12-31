@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileAppender extends js.Object {
   // (default value = 5) - the number of old log files to keep during log rolling.
   var backups: js.UndefOr[scala.Double] = js.undefined

@@ -28,44 +28,39 @@ trait Screen extends EventEmitter {
     listener: js.Function2[/* event */ Event, /* oldDisplay */ Display, scala.Unit]
   ): this.type = js.native
   /**
-       * Converts a screen DIP point to a screen physical point. The DPI scale is
-       * performed relative to the display containing the DIP point.
-       */
+    * Converts a screen DIP point to a screen physical point. The DPI scale is
+    * performed relative to the display containing the DIP point.
+    */
   def dipToScreenPoint(point: Point): Point = js.native
   /**
-       * Converts a screen DIP rect to a screen physical rect. The DPI scale is performed
-       * relative to the display nearest to window. If window is null, scaling will be
-       * performed to the display nearest to rect.
-       */
+    * Converts a screen DIP rect to a screen physical rect. The DPI scale is performed
+    * relative to the display nearest to window. If window is null, scaling will be
+    * performed to the display nearest to rect.
+    */
   def dipToScreenRect(window: BrowserWindow, rect: Rectangle): Rectangle = js.native
-  /**
-       * Converts a screen DIP rect to a screen physical rect. The DPI scale is performed
-       * relative to the display nearest to window. If window is null, scaling will be
-       * performed to the display nearest to rect.
-       */
   def dipToScreenRect(window: scala.Null, rect: Rectangle): Rectangle = js.native
   def getAllDisplays(): js.Array[Display] = js.native
   /**
-       * The current absolute position of the mouse pointer.
-       */
+    * The current absolute position of the mouse pointer.
+    */
   def getCursorScreenPoint(): Point = js.native
   def getDisplayMatching(rect: Rectangle): Display = js.native
   def getDisplayNearestPoint(point: Point): Display = js.native
   def getPrimaryDisplay(): Display = js.native
   // Docs: http://electronjs.org/docs/api/screen
   /**
-       * Emitted when newDisplay has been added.
-       */
+    * Emitted when newDisplay has been added.
+    */
   @JSName("on")
   def `on_display-added`(
     event: electronLib.electronLibStrings.`display-added`,
     listener: js.Function2[/* event */ Event, /* newDisplay */ Display, scala.Unit]
   ): this.type = js.native
   /**
-       * Emitted when one or more metrics change in a display. The changedMetrics is an
-       * array of strings that describe the changes. Possible changes are bounds,
-       * workArea, scaleFactor and rotation.
-       */
+    * Emitted when one or more metrics change in a display. The changedMetrics is an
+    * array of strings that describe the changes. Possible changes are bounds,
+    * workArea, scaleFactor and rotation.
+    */
   @JSName("on")
   def `on_display-metrics-changed`(
     event: electronLib.electronLibStrings.`display-metrics-changed`,
@@ -77,8 +72,8 @@ trait Screen extends EventEmitter {
     ]
   ): this.type = js.native
   /**
-       * Emitted when oldDisplay has been removed.
-       */
+    * Emitted when oldDisplay has been removed.
+    */
   @JSName("on")
   def `on_display-removed`(
     event: electronLib.electronLibStrings.`display-removed`,
@@ -125,21 +120,16 @@ trait Screen extends EventEmitter {
     listener: js.Function2[/* event */ Event, /* oldDisplay */ Display, scala.Unit]
   ): this.type = js.native
   /**
-       * Converts a screen physical point to a screen DIP point. The DPI scale is
-       * performed relative to the display containing the physical point.
-       */
+    * Converts a screen physical point to a screen DIP point. The DPI scale is
+    * performed relative to the display containing the physical point.
+    */
   def screenToDipPoint(point: Point): Point = js.native
   /**
-       * Converts a screen physical rect to a screen DIP rect. The DPI scale is performed
-       * relative to the display nearest to window. If window is null, scaling will be
-       * performed to the display nearest to rect.
-       */
+    * Converts a screen physical rect to a screen DIP rect. The DPI scale is performed
+    * relative to the display nearest to window. If window is null, scaling will be
+    * performed to the display nearest to rect.
+    */
   def screenToDipRect(window: BrowserWindow, rect: Rectangle): Rectangle = js.native
-  /**
-       * Converts a screen physical rect to a screen DIP rect. The DPI scale is performed
-       * relative to the display nearest to window. If window is null, scaling will be
-       * performed to the display nearest to rect.
-       */
   def screenToDipRect(window: scala.Null, rect: Rectangle): Rectangle = js.native
 }
 

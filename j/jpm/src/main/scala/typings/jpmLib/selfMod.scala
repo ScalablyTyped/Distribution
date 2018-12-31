@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Access data that is bundled with the add-on, and add-on metadata
- */
-
+  * Access data that is bundled with the add-on, and add-on metadata
+  */
 @JSImport("sdk/self", JSImport.Namespace)
 @js.native
 object selfMod extends js.Object {

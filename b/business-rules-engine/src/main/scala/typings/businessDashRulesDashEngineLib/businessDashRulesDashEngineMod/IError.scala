@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IError extends js.Object {
   var ErrorMessage: java.lang.String
   var HasError: scala.Boolean

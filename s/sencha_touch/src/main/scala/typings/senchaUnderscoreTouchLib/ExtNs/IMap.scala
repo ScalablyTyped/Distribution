@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMap extends IContainer {
   /** [Config Option] (Ext.util.Geolocation) */
   var geo: js.UndefOr[senchaUnderscoreTouchLib.ExtNs.utilNs.IGeolocation] = js.undefined

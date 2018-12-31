@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Interactions for the map. Default is `true` for all options.
-         */
-
+  * Interactions for the map. Default is `true` for all options.
+  */
 trait DefaultsOptions extends js.Object {
   var altShiftDragRotate: js.UndefOr[scala.Boolean] = js.undefined
   var constrainResolution: js.UndefOr[scala.Boolean] = js.undefined

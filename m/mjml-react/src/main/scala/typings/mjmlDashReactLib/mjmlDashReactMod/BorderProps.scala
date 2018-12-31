@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BorderProps extends js.Object {
   var border: js.UndefOr[java.lang.String] = js.undefined
   var borderBottom: js.UndefOr[java.lang.String] = js.undefined

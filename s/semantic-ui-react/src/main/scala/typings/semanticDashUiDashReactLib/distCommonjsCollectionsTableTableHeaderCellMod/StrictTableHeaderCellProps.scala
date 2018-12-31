@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictTableHeaderCellProps
   extends semanticDashUiDashReactLib.distCommonjsCollectionsTableTableCellMod.StrictTableCellProps {
   /** A header cell can be sorted in ascending or descending order. */

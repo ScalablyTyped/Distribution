@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IColumnChart
   extends extjsLib.ExtNs.chartNs.seriesNs.IBar {
   /** [Config Option] (String) */

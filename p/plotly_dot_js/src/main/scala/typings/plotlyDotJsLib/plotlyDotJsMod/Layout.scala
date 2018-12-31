@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Layout extends js.Object {
   var annotations: js.Array[stdLib.Partial[Annotations]]
   var autosize: scala.Boolean

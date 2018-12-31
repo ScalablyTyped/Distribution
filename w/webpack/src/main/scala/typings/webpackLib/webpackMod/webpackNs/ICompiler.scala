@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // tslint:disable-next-line:interface-name
-
 trait ICompiler extends js.Object {
   def run(handler: webpackLib.webpackMod.webpackNs.ICompilerNs.Handler): scala.Unit
   def watch(

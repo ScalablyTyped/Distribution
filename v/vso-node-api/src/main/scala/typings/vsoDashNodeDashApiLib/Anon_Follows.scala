@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Follows extends js.Object {
   var aliasMemberGroupRole: scala.Double
   var directMember: scala.Double

@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 // #endregion
 // #region 界面API列表
-
 trait ToastOptions
   extends BaseOptions[js.Any, js.Any] {
   /**

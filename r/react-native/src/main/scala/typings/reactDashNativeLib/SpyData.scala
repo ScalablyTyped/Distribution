@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpyData extends js.Object {
   var args: js.Array[_]
   var method: java.lang.String | scala.Double

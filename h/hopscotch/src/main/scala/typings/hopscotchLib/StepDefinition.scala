@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StepDefinition extends js.Object {
   var arrowOffset: js.UndefOr[scala.Double | hopscotchLib.hopscotchLibStrings.center] = js.undefined
   var content: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPicker
   extends extjsLib.ExtNs.formNs.fieldNs.ITrigger {
   /** [Method] Aligns the picker to the input element */

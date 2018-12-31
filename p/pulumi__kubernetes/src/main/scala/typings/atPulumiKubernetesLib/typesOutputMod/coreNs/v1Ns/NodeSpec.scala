@@ -6,37 +6,36 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * NodeSpec describes the attributes that a node is created with.
-         */
-
+  * NodeSpec describes the attributes that a node is created with.
+  */
 trait NodeSpec extends js.Object {
   /**
-               * If specified, the source to get node configuration from The DynamicKubeletConfig feature
-               * gate must be enabled for the Kubelet to use this field
-               */
+    * If specified, the source to get node configuration from The DynamicKubeletConfig feature
+    * gate must be enabled for the Kubelet to use this field
+    */
   val configSource: NodeConfigSource
   /**
-               * Deprecated. Not all kubelets will set this field. Remove field after 1.13. see:
-               * https://issues.k8s.io/61966
-               */
+    * Deprecated. Not all kubelets will set this field. Remove field after 1.13. see:
+    * https://issues.k8s.io/61966
+    */
   val externalID: java.lang.String
   /**
-               * PodCIDR represents the pod IP range assigned to the node.
-               */
+    * PodCIDR represents the pod IP range assigned to the node.
+    */
   val podCIDR: java.lang.String
   /**
-               * ID of the node assigned by the cloud provider in the format:
-               * <ProviderName>://<ProviderSpecificNodeID>
-               */
+    * ID of the node assigned by the cloud provider in the format:
+    * <ProviderName>://<ProviderSpecificNodeID>
+    */
   val providerID: java.lang.String
   /**
-               * If specified, the node's taints.
-               */
+    * If specified, the node's taints.
+    */
   val taints: js.Array[Taint]
   /**
-               * Unschedulable controls node schedulability of new pods. By default, node is schedulable.
-               * More info: https://kubernetes.io/docs/concepts/nodes/node/#manual-node-administration
-               */
+    * Unschedulable controls node schedulability of new pods. By default, node is schedulable.
+    * More info: https://kubernetes.io/docs/concepts/nodes/node/#manual-node-administration
+    */
   val unschedulable: scala.Boolean
 }
 

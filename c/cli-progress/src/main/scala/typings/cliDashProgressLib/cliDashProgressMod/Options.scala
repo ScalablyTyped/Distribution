@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   /** character to use as "complete" indicator in the bar (default: "=") */
   var barCompleteChar: js.UndefOr[java.lang.String] = js.undefined
@@ -22,22 +21,22 @@ trait Options extends js.Object {
   /** number of updates with which to calculate the eta; higher numbers give a more stable eta (default: 10) */
   var etaBuffer: js.UndefOr[scala.Double] = js.undefined
   /**
-       * progress bar output format.
-       * The progressbar can be customized by using the following build-in placeholders. They can be combined in any order.
-       *   {bar} - the progress bar, customizable by the options barsize, barCompleteString and barIncompleteString
-       *   {percentage} - the current progress in percent (0-100)
-       *   {total} - the end value
-       *   {value} - the current value set by last update() call
-       *   {eta} - expected time of accomplishment in seconds
-       *   {duration} - elapsed time in seconds
-       *   {eta_formatted} - expected time of accomplishment formatted into appropriate units
-       *   {duration_formatted} - elapsed time formatted into appropriate units
-       *
-       * Example:
-       *      progress [{bar}] {percentage}% | ETA: {eta}s | {value}/{total}
-       *    is rendered as
-       *      progress [========================================] 100% | ETA: 0s | 200/200
-       */
+    * progress bar output format.
+    * The progressbar can be customized by using the following build-in placeholders. They can be combined in any order.
+    *   {bar} - the progress bar, customizable by the options barsize, barCompleteString and barIncompleteString
+    *   {percentage} - the current progress in percent (0-100)
+    *   {total} - the end value
+    *   {value} - the current value set by last update() call
+    *   {eta} - expected time of accomplishment in seconds
+    *   {duration} - elapsed time in seconds
+    *   {eta_formatted} - expected time of accomplishment formatted into appropriate units
+    *   {duration_formatted} - elapsed time formatted into appropriate units
+    *
+    * Example:
+    *      progress [{bar}] {percentage}% | ETA: {eta}s | {value}/{total}
+    *    is rendered as
+    *      progress [========================================] 100% | ETA: 0s | 200/200
+    */
   var format: js.UndefOr[java.lang.String] = js.undefined
   /** the maximum update rate (default: 10) */
   var fps: js.UndefOr[scala.Double] = js.undefined

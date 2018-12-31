@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ApiClientResponse extends js.Object {
   var body: js.Object
   var headers: js.Object

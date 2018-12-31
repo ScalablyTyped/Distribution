@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OptionLimits extends js.Object {
   var hashLength: NumericLimit
   var memoryCost: NumericLimit

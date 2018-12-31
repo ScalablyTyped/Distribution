@@ -13,15 +13,15 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BluetoothDevice
   extends /**
-     * 
-     * @return  
-     */
+  * 
+  * @return  
+  */
 org.scalablytyped.runtime.Instantiable0[BluetoothDevice] {
   /**
-       * <p><strong>Note:</strong> This is only available on some devices</p>
-       * 
-       * @url http://www.espruino.com/Reference#l_BluetoothDevice_gatt
-       */
+    * <p><strong>Note:</strong> This is only available on some devices</p>
+    * 
+    * @url http://www.espruino.com/Reference#l_BluetoothDevice_gatt
+    */
   var gatt: js.Any = js.native
 }
 

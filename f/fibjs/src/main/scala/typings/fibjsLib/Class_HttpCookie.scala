@@ -10,18 +10,17 @@ import scala.scalajs.js.annotation._
 	* @brief http Cookie 对象，用于添加和处理 cookie
 	* @detail 
 	*/
-
 @JSGlobal("Class_HttpCookie")
 @js.native
+/**
+	 * 
+	 * @brief HttpCookie 构造函数，创建一个新的 HttpCookie 对象
+	 * @param opts 指定创建的 cookie 的属性
+	 * 
+	 * 
+	 * 
+	 */
 class Class_HttpCookie () extends Class__object {
-  /**
-  	 * 
-  	 * @brief HttpCookie 构造函数，创建一个新的 HttpCookie 对象
-  	 * @param opts 指定创建的 cookie 的属性
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def this(opts: js.Object) = this()
   /**
   	 * 
@@ -34,16 +33,6 @@ class Class_HttpCookie () extends Class__object {
   	 * 
   	 */
   def this(name: java.lang.String, value: java.lang.String) = this()
-  /**
-  	 * 
-  	 * @brief HttpCookie 构造函数，创建一个新的 HttpCookie 对象
-  	 * @param name 指定创建的 cookie 名称
-  	 * @param value 指定创建的 cookie 值
-  	 * @param opts 指定创建的 cookie 的其它属性
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def this(name: java.lang.String, value: java.lang.String, opts: js.Object) = this()
   /**
   	 * class prop 

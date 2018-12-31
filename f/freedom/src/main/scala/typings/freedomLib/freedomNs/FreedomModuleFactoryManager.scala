@@ -17,9 +17,6 @@ trait FreedomModuleFactoryManager[T] extends js.Object {
   // is assumed that the argument is a result of the factory constructor. If
   // no argument is supplied, all stubs are closed.
   def close(): js.Promise[scala.Unit] = js.native
-  // This is the call to close a particular stub's channel and resources. It
-  // is assumed that the argument is a result of the factory constructor. If
-  // no argument is supplied, all stubs are closed.
   def close(freedomModuleStubInstance: T): js.Promise[scala.Unit] = js.native
 }
 

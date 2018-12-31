@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilterCriteria extends js.Object {
   def copy(): FilterCriteriaBuilder
   def getCriteriaType(): BooleanCriteria

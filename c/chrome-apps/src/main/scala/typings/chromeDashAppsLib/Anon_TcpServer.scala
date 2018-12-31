@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TcpServer extends js.Object {
   /** The tcp manifest property declares which sockets.tcp operations an app can issue. */
   var tcp: js.UndefOr[chromeDashAppsLib.chromeNs.runtimeNs.SocketTcpPermission] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Sort extends js.Object {
   /** sets the document fields to return */
   var select: js.UndefOr[js.Any] = js.undefined

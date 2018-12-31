@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlacementAssignment extends js.Object {
   /** Whether this placement assignment is active. When true, the placement will be included in the ad's rotation. */
   var active: js.UndefOr[scala.Boolean] = js.undefined

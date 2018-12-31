@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Dispatcher extends js.Object {
   def addStore(name: java.lang.String, store: Store): scala.Unit
   def dispatch(action: js.Function): scala.Unit

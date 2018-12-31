@@ -24,9 +24,9 @@ class MDCTextField ()
   var valid: scala.Boolean = js.native
   var value: java.lang.String = js.native
   /**
-       * Initiliazes the Text Field's internal state based on the environment's
-       * state.
-       */
+    * Initiliazes the Text Field's internal state based on the environment's
+    * state.
+    */
   def initialSyncWithDom(): scala.Unit = js.native
   def initialize(
     rippleFactory: js.UndefOr[
@@ -65,8 +65,8 @@ class MDCTextField ()
     ]
   ): scala.Unit = js.native
   /**
-       * Recomputes the outline SVG path for the outline element.
-       */
+    * Recomputes the outline SVG path for the outline element.
+    */
   def layout(): scala.Unit = js.native
 }
 

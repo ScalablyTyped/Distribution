@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * The DeviceInfo object is a container that describes the unchanging (static) properties of an imaging device that is currently connected to the
-     * computer.
-     */
+  * The DeviceInfo object is a container that describes the unchanging (static) properties of an imaging device that is currently connected to the
+  * computer.
+  */
 @JSGlobal("WIA.DeviceInfo")
 @js.native
 class DeviceInfo protected () extends js.Object {
@@ -22,8 +22,6 @@ class DeviceInfo protected () extends js.Object {
   var `WIA.DeviceInfo_typekey`: DeviceInfo = js.native
   /** Establish a connection with this device and return a Device object */
   def Connect(): Device = js.native
-  /** Returns the specified item in the collection either by position or name. */
-  /** A collection of all properties for this imaging device that are applicable when the device is not connected */
   def Properties(Index: java.lang.String): Property = js.native
   /** Returns the specified item in the collection either by position or name. */
   /** A collection of all properties for this imaging device that are applicable when the device is not connected */

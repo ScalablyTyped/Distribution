@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStandardDataFormatsStatics extends js.Object {
   var bitmap: java.lang.String
   var html: java.lang.String

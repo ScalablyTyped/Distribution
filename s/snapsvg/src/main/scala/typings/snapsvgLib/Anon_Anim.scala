@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Anim extends js.Object {
   var anim: snapsvgLib.snapsvgMod.SnapNs.Animation
   var curStatus: scala.Double

@@ -25,8 +25,8 @@ object libEitherModMembers extends js.Object {
   def getSemigroup[L, A](S: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[Either[L, A]] = js.native
   def getSetoid[L, A](SL: fpDashTsLib.libSetoidMod.Setoid[L], SA: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[Either[L, A]] = js.native
   def getWitherable[L](ML: fpDashTsLib.libMonoidMod.Monoid[L]): fpDashTsLib.libWitherableMod.Witherable2C[URI, L] = js.native
-  def isLeft[L, A](fa: Either[L, A]): /* is Left */scala.Boolean = js.native
-  def isRight[L, A](fa: Either[L, A]): /* is Right */scala.Boolean = js.native
+  def isLeft[L, A](fa: Either[L, A]): /* is fp-ts.fp-ts/lib/Either.Left<L, A> */ scala.Boolean = js.native
+  def isRight[L, A](fa: Either[L, A]): /* is fp-ts.fp-ts/lib/Either.Right<L, A> */ scala.Boolean = js.native
   def left[L, A](l: L): Either[L, A] = js.native
   def right[L, A](a: A): Either[L, A] = js.native
   def toError(e: js.Any): stdLib.Error = js.native

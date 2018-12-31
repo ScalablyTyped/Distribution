@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VerifyAssertionResponse extends js.Object {
   /** The action code. */
   var action: js.UndefOr[java.lang.String] = js.undefined
@@ -38,9 +37,9 @@ trait VerifyAssertionResponse extends js.Object {
   /** The ID token. */
   var idToken: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * It's the identifier param in the createAuthUri request if the identifier is an email. It can be used to check whether the user input email is different
-               * from the asserted email.
-               */
+    * It's the identifier param in the createAuthUri request if the identifier is an email. It can be used to check whether the user input email is different
+    * from the asserted email.
+    */
   var inputEmail: js.UndefOr[java.lang.String] = js.undefined
   /** True if it's a new user sign-in, false if it's a returning user. */
   var isNewUser: js.UndefOr[scala.Boolean] = js.undefined
@@ -77,10 +76,10 @@ trait VerifyAssertionResponse extends js.Object {
   /** The URI of the public accessible profiel picture. */
   var photoUrl: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The IdP ID. For white listed IdPs it's a short domain name e.g. google.com, aol.com, live.net and yahoo.com. If the "providerId" param is set to OpenID
-               * OP identifer other than the whilte listed IdPs the OP identifier is returned. If the "identifier" param is federated ID in the createAuthUri request.
-               * The domain part of the federated ID is returned.
-               */
+    * The IdP ID. For white listed IdPs it's a short domain name e.g. google.com, aol.com, live.net and yahoo.com. If the "providerId" param is set to OpenID
+    * OP identifer other than the whilte listed IdPs the OP identifier is returned. If the "identifier" param is federated ID in the createAuthUri request.
+    * The domain part of the federated ID is returned.
+    */
   var providerId: js.UndefOr[java.lang.String] = js.undefined
   /** Raw IDP-returned user info. */
   var rawUserInfo: js.UndefOr[java.lang.String] = js.undefined

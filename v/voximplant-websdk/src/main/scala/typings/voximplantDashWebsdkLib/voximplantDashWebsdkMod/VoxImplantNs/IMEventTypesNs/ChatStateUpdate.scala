@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when chat session state updated
 		*/
-
 trait ChatStateUpdate extends js.Object {
   /**
   			*	User id

@@ -14,8 +14,8 @@ class DefaultTransporter ()
 @js.native
 object DefaultTransporter extends js.Object {
   /**
-       * Default user agent.
-       */
+    * Default user agent.
+    */
   val USER_AGENT: java.lang.String = js.native
 }
 

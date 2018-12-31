@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICrossZoom extends IAbstract {
   /** [Config Option] (Object/Array) */
   var axes: js.UndefOr[js.Any] = js.undefined

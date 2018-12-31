@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProductShippingWeight extends js.Object {
   /** The unit of value. */
   var unit: js.UndefOr[java.lang.String] = js.undefined

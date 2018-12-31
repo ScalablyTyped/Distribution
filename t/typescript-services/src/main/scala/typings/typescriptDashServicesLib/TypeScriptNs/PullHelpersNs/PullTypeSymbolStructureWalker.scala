@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PullTypeSymbolStructureWalker extends js.Object {
   def callSignatureWalk(signatureSymbol: typescriptDashServicesLib.TypeScriptNs.PullSignatureSymbol): scala.Boolean
   def constructSignatureWalk(signatureSymbol: typescriptDashServicesLib.TypeScriptNs.PullSignatureSymbol): scala.Boolean

@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * datetime picker
- */
-
+  * datetime picker
+  */
 @js.native
 trait DatetimepickerChangeEventObject extends DatetimepickerEventObject {
   var oldDate: js.Any = js.native

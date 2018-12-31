@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UrlMapTest extends js.Object {
   /** Description of this test case. */
   var description: js.UndefOr[java.lang.String] = js.undefined

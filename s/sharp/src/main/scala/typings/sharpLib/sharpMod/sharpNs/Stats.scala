@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Stats extends js.Object {
   /** Array of channel statistics for each channel in the image. */
   var channels: js.Array[ChannelStats]

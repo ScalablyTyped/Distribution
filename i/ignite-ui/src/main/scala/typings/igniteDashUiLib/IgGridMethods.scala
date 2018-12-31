@@ -99,11 +99,6 @@ trait IgGridMethods extends js.Object {
   	 * @param rowId If specified, will commit only that transaction corresponding to the specified record key.
   	 */
   def commit(): scala.Unit = js.native
-  /**
-  	 * Commits all pending transactions to the client data source. Note that there won't be anything to commit on the UI, since it is updated instantly. In order to rollback the actual UI, a call to dataBind() is required.
-  	 *
-  	 * @param rowId If specified, will commit only that transaction corresponding to the specified record key.
-  	 */
   def commit(rowId: js.Object): scala.Unit = js.native
   /**
   	 * Returns the DIV that is the topmost container of the grid widget
@@ -303,38 +298,8 @@ trait IgGridMethods extends js.Object {
   	 * @param callback Specifies a custom function to be called when the column is moved.
   	 */
   def moveColumn(column: js.Object, target: js.Object): scala.Unit = js.native
-  /**
-  	 * Moves a visible column at a specified place, in front or behind a target column or at a target index
-  	 * Note: This method is asynchronous which means that it returns immediately and any subsequent code will execute in parallel. This may lead to runtime errors. To avoid them put the subsequent code in the callback parameter provided by the method.
-  	 *
-  	 * @param column An identifier of the column to be moved. It can be a key, a Multi-Column Header identificator, or an index in a number format. The latter is not supported when the grid contains multi-column headers.
-  	 * @param target An identifier of a column where the moved column should move to or an index at which the moved column should be moved to. In the case of a column identifier the column will be moved after it by default.
-  	 * @param after Specifies whether the column moved should be moved after or before the target column. This parameter is disregarded if there is no target column specified but a target index is used.
-  	 * @param inDom Specifies whether the column moving will be enacted through DOM manipulation or through rerendering of the grid.
-  	 * @param callback Specifies a custom function to be called when the column is moved.
-  	 */
   def moveColumn(column: js.Object, target: js.Object, after: scala.Boolean): scala.Unit = js.native
-  /**
-  	 * Moves a visible column at a specified place, in front or behind a target column or at a target index
-  	 * Note: This method is asynchronous which means that it returns immediately and any subsequent code will execute in parallel. This may lead to runtime errors. To avoid them put the subsequent code in the callback parameter provided by the method.
-  	 *
-  	 * @param column An identifier of the column to be moved. It can be a key, a Multi-Column Header identificator, or an index in a number format. The latter is not supported when the grid contains multi-column headers.
-  	 * @param target An identifier of a column where the moved column should move to or an index at which the moved column should be moved to. In the case of a column identifier the column will be moved after it by default.
-  	 * @param after Specifies whether the column moved should be moved after or before the target column. This parameter is disregarded if there is no target column specified but a target index is used.
-  	 * @param inDom Specifies whether the column moving will be enacted through DOM manipulation or through rerendering of the grid.
-  	 * @param callback Specifies a custom function to be called when the column is moved.
-  	 */
   def moveColumn(column: js.Object, target: js.Object, after: scala.Boolean, inDom: scala.Boolean): scala.Unit = js.native
-  /**
-  	 * Moves a visible column at a specified place, in front or behind a target column or at a target index
-  	 * Note: This method is asynchronous which means that it returns immediately and any subsequent code will execute in parallel. This may lead to runtime errors. To avoid them put the subsequent code in the callback parameter provided by the method.
-  	 *
-  	 * @param column An identifier of the column to be moved. It can be a key, a Multi-Column Header identificator, or an index in a number format. The latter is not supported when the grid contains multi-column headers.
-  	 * @param target An identifier of a column where the moved column should move to or an index at which the moved column should be moved to. In the case of a column identifier the column will be moved after it by default.
-  	 * @param after Specifies whether the column moved should be moved after or before the target column. This parameter is disregarded if there is no target column specified but a target index is used.
-  	 * @param inDom Specifies whether the column moving will be enacted through DOM manipulation or through rerendering of the grid.
-  	 * @param callback Specifies a custom function to be called when the column is moved.
-  	 */
   def moveColumn(
     column: js.Object,
     target: js.Object,
@@ -359,11 +324,6 @@ trait IgGridMethods extends js.Object {
   	 * @param rec Identifier/key of row. If missing, then number of rows in grid is used.
   	 */
   def renderNewRow(): scala.Unit = js.native
-  /**
-  	 * Adds a new row (TR) to the grid, by taking a data row object. Assumes the record will have the primary key.
-  	 *
-  	 * @param rec Identifier/key of row. If missing, then number of rows in grid is used.
-  	 */
   def renderNewRow(rec: java.lang.String): scala.Unit = js.native
   /**
   	 * Called to detect whether grid container is resized. When autoAdjustHeight is true and height of the grid is changed then the height of grid is re-set.
@@ -376,19 +336,7 @@ trait IgGridMethods extends js.Object {
   	 * @param updateUI Whether to update the UI or not.
   	 */
   def rollback(): js.Array[_] = js.native
-  /**
-  	 * Clears the transaction log (delegates to igDataSource). Note that this does not update the UI. In case the UI must be updated, set the second parameter "updateUI" to true, which will trigger a call to dataBind() to re-render the contents.
-  	 *
-  	 * @param rowId If specified, will only rollback the transactions with that row id.
-  	 * @param updateUI Whether to update the UI or not.
-  	 */
   def rollback(rowId: js.Object): js.Array[_] = js.native
-  /**
-  	 * Clears the transaction log (delegates to igDataSource). Note that this does not update the UI. In case the UI must be updated, set the second parameter "updateUI" to true, which will trigger a call to dataBind() to re-render the contents.
-  	 *
-  	 * @param rowId If specified, will only rollback the transactions with that row id.
-  	 * @param updateUI Whether to update the UI or not.
-  	 */
   def rollback(rowId: js.Object, updateUI: scala.Boolean): js.Array[_] = js.native
   /**
   	 * Returns the row (TR element) at the specified index. jQuery selectors aren't used for performance reasons
@@ -403,12 +351,6 @@ trait IgGridMethods extends js.Object {
   	 * @param isFixed Specify search in the fixed container.
   	 */
   def rowById(rowId: js.Object): stdLib.Element = js.native
-  /**
-  	 * Returns the row TR element by row id
-  	 *
-  	 * @param rowId The id of the row.
-  	 * @param isFixed Specify search in the fixed container.
-  	 */
   def rowById(rowId: js.Object, isFixed: scala.Boolean): stdLib.Element = js.native
   /**
   	 * Returns a list of all TR elements holding data in the grid(when there is at least one fixed column returns rows only in the UNFIXED table)
@@ -453,13 +395,6 @@ trait IgGridMethods extends js.Object {
   	 * @param render Should the grid rerender after template is set
   	 */
   def setColumnTemplate(col: js.Object, tmpl: java.lang.String): scala.Unit = js.native
-  /**
-  	 * Sets a new template for a column after initialization and renders the grid if not explicitly disabled. This method will replace any existing explicitly set row template and will build one anew from the column ones.
-  	 *
-  	 * @param col An identifier of the column to set template for (index or key)
-  	 * @param tmpl The column template to set
-  	 * @param render Should the grid rerender after template is set
-  	 */
   def setColumnTemplate(col: js.Object, tmpl: java.lang.String, render: scala.Boolean): scala.Unit = js.native
   /**
   	 * Sets unbound value for the unbound cell by the specified column key and row primary key.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPointerPointProperties extends js.Object {
   var contactRect: winrtLib.WindowsNs.FoundationNs.Rect
   var contactRectRaw: winrtLib.WindowsNs.FoundationNs.Rect

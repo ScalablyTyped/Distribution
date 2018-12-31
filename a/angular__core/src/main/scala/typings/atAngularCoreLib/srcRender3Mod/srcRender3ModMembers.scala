@@ -9,7 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object srcRender3ModMembers extends js.Object {
   val NO_CHANGE: atAngularCoreLib.srcRender3TokensMod.NO_CHANGE = js.native
-  val QueryList: org.scalablytyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerQueryUnderscoreListMod.QueryList[js.Any]] = js.native
+  val QueryList: org.scalablytyped.runtime.Instantiable0[
+    atAngularCoreLib.srcLinkerQueryUnderscoreListMod.QueryList[
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for T */ js.Any
+    ]
+  ] = js.native
   val WRAP_RENDERER_FACTORY2: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[
     js.Function1[
       /* rf */ atAngularCoreLib.srcRenderApiMod.RendererFactory2, 
@@ -738,10 +742,10 @@ object srcRender3ModMembers extends js.Object {
     exp8: js.Any,
     thisArg: js.Any
   ): js.Any = js.native
-  def pureFunctionV(slotOffset: scala.Double, pureFn: js.Function1[/* repeated */js.Any, _], exps: js.Array[_]): js.Any = js.native
+  def pureFunctionV(slotOffset: scala.Double, pureFn: js.Function1[/* repeated */ js.Any, _], exps: js.Array[_]): js.Any = js.native
   def pureFunctionV(
     slotOffset: scala.Double,
-    pureFn: js.Function1[/* repeated */js.Any, _],
+    pureFn: js.Function1[/* repeated */ js.Any, _],
     exps: js.Array[_],
     thisArg: js.Any
   ): js.Any = js.native

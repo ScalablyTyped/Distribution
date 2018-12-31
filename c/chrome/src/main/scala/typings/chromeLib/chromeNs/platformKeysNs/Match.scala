@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Match extends js.Object {
   /** The DER encoding of a X.509 certificate. */
   var certificate: stdLib.ArrayBuffer

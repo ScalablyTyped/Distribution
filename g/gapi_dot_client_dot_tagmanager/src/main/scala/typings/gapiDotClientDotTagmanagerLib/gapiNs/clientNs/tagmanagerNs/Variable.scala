@@ -5,21 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Variable extends js.Object {
   /** GTM Account ID. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined
   /** GTM Container ID. */
   var containerId: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * For mobile containers only: A list of trigger IDs for disabling conditional variables; the variable is enabled if one of the enabling trigger is true
-               * while all the disabling trigger are false. Treated as an unordered set.
-               */
+    * For mobile containers only: A list of trigger IDs for disabling conditional variables; the variable is enabled if one of the enabling trigger is true
+    * while all the disabling trigger are false. Treated as an unordered set.
+    */
   var disablingTriggerId: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-               * For mobile containers only: A list of trigger IDs for enabling conditional variables; the variable is enabled if one of the enabling triggers is true
-               * while all the disabling triggers are false. Treated as an unordered set.
-               */
+    * For mobile containers only: A list of trigger IDs for enabling conditional variables; the variable is enabled if one of the enabling triggers is true
+    * while all the disabling triggers are false. Treated as an unordered set.
+    */
   var enablingTriggerId: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** The fingerprint of the GTM Variable as computed at storage time. This value is recomputed whenever the variable is modified. */
   var fingerprint: js.UndefOr[java.lang.String] = js.undefined

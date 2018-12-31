@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Secret extends js.Object {
   var accessToken: java.lang.String
   var expiresIn: java.lang.String

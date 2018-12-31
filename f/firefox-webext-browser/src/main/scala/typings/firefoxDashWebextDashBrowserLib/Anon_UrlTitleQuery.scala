@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_UrlTitleQuery extends js.Object {
   /** A string of words and quoted phrases that are matched against bookmark URLs and titles. */
   var query: js.UndefOr[java.lang.String] = js.undefined

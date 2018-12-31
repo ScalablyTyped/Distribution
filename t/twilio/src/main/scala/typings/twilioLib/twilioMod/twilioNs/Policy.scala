@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Policy extends js.Object {
    // Map<string, FilterRequirement>, where FilterRequirement ::= Map<string, boolean>
   var allow: scala.Boolean

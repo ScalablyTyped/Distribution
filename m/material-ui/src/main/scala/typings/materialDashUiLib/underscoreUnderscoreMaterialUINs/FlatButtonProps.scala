@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveMultipleInheritance: Dropped parents List(materialDashUiLib.underscoreUnderscoreMaterialUINs.SharedEnhancedButtonProps because Would inherit conflicting mutable fields List(onBlur, onClick, onFocus, onKeyDown, onKeyUp))*/
-
 trait FlatButtonProps
   extends reactLib.reactMod.ReactNs.DOMAttributes[js.Object] {
   // <EnhancedButton/> is the element that get the 'other' properties

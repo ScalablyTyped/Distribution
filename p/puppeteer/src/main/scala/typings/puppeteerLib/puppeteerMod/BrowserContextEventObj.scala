@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BrowserContextEventObj extends js.Object {
   /** Emitted when the url of a target inside the browser context changes. */
   var targetchanged: Target

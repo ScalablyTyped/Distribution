@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object dtsInversifyModMembers extends js.Object {
   val BindingScopeEnum: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.BindingScopeEnum = js.native
   val BindingTypeEnum: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.BindingTypeEnum = js.native
-  val METADATA_KEY: js.Any = js.native
+  val METADATA_KEY: inversifyLib.Anon_POSTCONSTRUCT = js.native
   val TargetTypeEnum: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.TargetTypeEnum = js.native
   def decorate(decorator: stdLib.MethodDecorator | stdLib.ParameterDecorator, target: js.Any): scala.Unit = js.native
   def decorate(
@@ -38,7 +38,7 @@ object dtsInversifyModMembers extends js.Object {
   def multiBindToService(container: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Container): js.Function1[
     /* service */ java.lang.String | js.Symbol | inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Newable[_] | inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Abstract[_], 
     js.Function1[
-      /* repeated */java.lang.String | js.Symbol | inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Newable[_] | inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Abstract[_], 
+      /* repeated */ java.lang.String | js.Symbol | inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Newable[_] | inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.Abstract[_], 
       scala.Unit
     ]
   ] = js.native

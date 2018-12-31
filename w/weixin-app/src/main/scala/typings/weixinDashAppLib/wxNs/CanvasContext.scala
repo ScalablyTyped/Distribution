@@ -36,16 +36,6 @@ trait CanvasContext extends js.Object {
     startAngle: scala.Double,
     endAngle: scala.Double
   ): scala.Unit = js.native
-  /**
-  		 * 添加一个弧形路径到当前路径，顺时针绘制。
-  		 *
-  		 * @param x 圆的x坐标
-  		 * @param y 圆的y坐标
-  		 * @param radius 圆的半径
-  		 * @param startAngle 起始弧度，单位弧度（在3点钟方向）
-  		 * @param endAngle 终止弧度
-  		 * @param counterclockwise 指定弧度的方向是逆时针还是顺时针。默认是false，即顺时针。
-  		 */
   def arc(
     x: scala.Double,
     y: scala.Double,
@@ -122,12 +112,6 @@ trait CanvasContext extends js.Object {
   		 *
   		 */
   def draw(): scala.Unit = js.native
-  /**
-  		 * 将之前在绘图上下文中的描述（路径、变形、样式）画到 canvas 中。
-  		 * Tip: 绘图上下文需要由 wx.createCanvasContext(canvasId) 来创建。
-  		 * @param [reserve] 非必填。本次绘制是否接着上一次绘制，即reserve参数为false，则在本次调用drawCanvas绘制之前native层应先清空画布再继续绘制；若reserver参数为true，则保留当前画布上的内容，本次调用drawCanvas绘制的内容覆盖在上面，默认 false
-  		 *
-  		 */
   def draw(reserve: scala.Boolean): scala.Unit = js.native
   /**
   		 * 绘制图像，图像保持原始尺寸。
@@ -256,14 +240,6 @@ trait CanvasContext extends js.Object {
   		 * @param scaleHeight 纵坐标轴缩放的倍数
   		 */
   def scale(scaleWidth: scala.Double): scala.Unit = js.native
-  /**
-  		 * 对横纵坐标进行缩放
-  		 * 在调用scale方法后，之后创建的路径其横纵坐标会被缩放。
-  		 * 多次调用scale，倍数会相乘。
-  		 *
-  		 * @param scaleWidth 横坐标缩放的倍数
-  		 * @param scaleHeight 纵坐标轴缩放的倍数
-  		 */
   def scale(scaleWidth: scala.Double, scaleHeight: scala.Double): scala.Unit = js.native
   /**
   		 * 设置填充样式
@@ -322,9 +298,6 @@ trait CanvasContext extends js.Object {
   		 * @param color 设置为填充样式的颜色。'rgb(255, 0, 0)'或'rgba(255, 0, 0, 0.6)'或'#ff0000'格式的颜色字符串
   		 */
   def setStrokeStyle(color: java.lang.String): scala.Unit = js.native
-  /**
-  		 * 用于设置文字的对齐
-  		 */
   @JSName("setTextAlign")
   def setTextAlign_center(align: weixinDashAppLib.weixinDashAppLibStrings.center): scala.Unit = js.native
   /**
@@ -332,9 +305,6 @@ trait CanvasContext extends js.Object {
   		 */
   @JSName("setTextAlign")
   def setTextAlign_left(align: weixinDashAppLib.weixinDashAppLibStrings.left): scala.Unit = js.native
-  /**
-  		 * 用于设置文字的对齐
-  		 */
   @JSName("setTextAlign")
   def setTextAlign_right(align: weixinDashAppLib.weixinDashAppLibStrings.right): scala.Unit = js.native
   /**

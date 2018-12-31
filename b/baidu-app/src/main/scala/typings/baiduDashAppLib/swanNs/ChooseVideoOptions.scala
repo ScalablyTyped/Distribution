@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // 媒体-----视频
-
 trait ChooseVideoOptions
   extends BaseOptions[js.Any, js.Any] {
   /** 前置或者后置摄像头，默认为前后都有，即：['front', 'back'] */

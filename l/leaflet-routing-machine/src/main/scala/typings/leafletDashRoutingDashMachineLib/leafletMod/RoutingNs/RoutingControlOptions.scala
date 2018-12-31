@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RoutingControlOptions extends ItineraryOptions {
   var altLineOptions: js.UndefOr[LineOptions] = js.undefined
   var autoRoute: js.UndefOr[scala.Boolean] = js.undefined

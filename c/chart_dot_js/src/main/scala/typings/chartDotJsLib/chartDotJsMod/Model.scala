@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Model extends js.Object {
   var backgroundColor: java.lang.String
   var base: scala.Double

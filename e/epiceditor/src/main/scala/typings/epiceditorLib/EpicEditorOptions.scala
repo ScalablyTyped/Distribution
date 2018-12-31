@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EpicEditorOptions extends js.Object {
   var basePath: js.UndefOr[java.lang.String] = js.undefined
   var clientSideStorage: js.UndefOr[scala.Boolean] = js.undefined

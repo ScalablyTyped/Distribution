@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IEnclosureLocation extends js.Object {
   var inDock: scala.Boolean
   var inLid: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TypeLookup extends js.Object {
   var array: js.Array[_]
   var boolean: scala.Boolean

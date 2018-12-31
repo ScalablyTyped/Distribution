@@ -9,12 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object SRVNs extends js.Object {
   /**
-       * returns a lazy iterator which can be restarted via connection.connect()
-       */
+    * returns a lazy iterator which can be restarted via connection.connect()
+    */
   def connect(): js.Any = js.native
-  /**
-       * returns a lazy iterator which can be restarted via connection.connect()
-       */
   def connect(opts: js.Any): js.Any = js.native
 }
 

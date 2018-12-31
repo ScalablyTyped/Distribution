@@ -19,7 +19,6 @@ package object compilerNs {
   /** @deprecated use webpack.Stats.ToStringOptions */
   type StatsToStringOptions = webpackLib.webpackMod.webpackNs.StatsNs.ToStringOptions
   /** @deprecated use webpack.Compiler.WatchOptions */
-  
   type WatchOptions = webpackLib.webpackMod.webpackNs.CompilerNs.WatchOptions
   /** @deprecated use webpack.Compiler.Watching */
   type Watching = webpackLib.webpackMod.webpackNs.CompilerNs.Watching

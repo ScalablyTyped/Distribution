@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RectangleOptions extends js.Object {
   var bounds: js.UndefOr[LatLngBounds | LatLngBoundsLiteral] = js.undefined
   var clickable: js.UndefOr[scala.Boolean] = js.undefined

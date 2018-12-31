@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadListProps extends js.Object {
   var items: js.UndefOr[js.Array[UploadFile]] = js.undefined
   var listType: js.UndefOr[UploadListType] = js.undefined

@@ -17,15 +17,15 @@ trait ChartistStatic extends js.Object {
   var StepAxis: IStepAxisStatic = js.native
   var Svg: ChartistSvgStatic = js.native
   /**
-           * A map with characters to escape for strings to be safely used as attribute values.
-           */
+    * A map with characters to escape for strings to be safely used as attribute values.
+    */
   var escapingMap: IChartistEscapeMap = js.native
   var noop: js.Function = js.native
    // TODO: Figure out if this is returning a ChartistSVGWrapper or an actual SVGElement
   var plugins: js.Any = js.native
   /**
-           * Precision level used internally in Chartist for rounding. If you require more decimal places you can increase this number.
-           */
+    * Precision level used internally in Chartist for rounding. If you require more decimal places you can increase this number.
+    */
   var precision: scala.Double = js.native
   def alphaNumerate(n: scala.Double): java.lang.String = js.native
   def createSvg(
@@ -49,11 +49,9 @@ trait ChartistStatic extends js.Object {
   def roundWithPrecision(value: scala.Double): scala.Double = js.native
   def roundWithPrecision(value: scala.Double, digits: scala.Double): scala.Double = js.native
   def serialMap(arr: js.Array[_], cb: js.Function): js.Array[_] = js.native
-   // this method is not documented, but it is used in the examples
   def serialize(data: java.lang.String): java.lang.String = js.native
    // this method is not documented, but it is used in the examples
   def serialize(data: js.Object): java.lang.String = js.native
-   // this method is not documented, but it is used in the examples
   def serialize(data: scala.Double): java.lang.String = js.native
   def sum(previous: scala.Double, current: scala.Double): scala.Double = js.native
   def times(length: scala.Double): js.Array[_] = js.native

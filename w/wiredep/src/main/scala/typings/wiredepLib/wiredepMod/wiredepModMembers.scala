@@ -9,19 +9,19 @@ import scala.scalajs.js.annotation._
 @js.native
 object wiredepModMembers extends js.Object {
   /**
-   * @return {PathFiles} paths to your files by extension
-   * @example:
-   *  {
-   *     js: [
-   *       'paths/to/your/js/files.js',
-   *       'in/their/order/of/dependency.js'
-   *     ],
-   *     css: [
-   *       'paths/to/your/css/files.css'
-   *     ],
-   *     // etc.
-   *   }
-   */
+    * @return {PathFiles} paths to your files by extension
+    * @example:
+    *  {
+    *     js: [
+    *       'paths/to/your/js/files.js',
+    *       'in/their/order/of/dependency.js'
+    *     ],
+    *     css: [
+    *       'paths/to/your/css/files.css'
+    *     ],
+    *     // etc.
+    *   }
+    */
   def apply(config: WiredepParams): PathFiles = js.native
   def stream(config: WiredepParams): nodeLib.NodeJSNs.ReadWriteStream = js.native
 }

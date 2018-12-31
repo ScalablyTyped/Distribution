@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JQRangeSliderOptions extends js.Object {
    // speed of the wheel scrolling
   var arrows: js.UndefOr[scala.Boolean] = js.undefined

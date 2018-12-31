@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Accepts a URL and RequestInit dictionary that can be used to create a
- * new Request object. A timestamp is also generated so consumers can
- * reference when the object was created.
- */
+  * Accepts a URL and RequestInit dictionary that can be used to create a
+  * new Request object. A timestamp is also generated so consumers can
+  * reference when the object was created.
+  */
 @js.native
 trait IStorableRequestConstructor
   extends org.scalablytyped.runtime.Instantiable1[/* options */ IStorableRequestOptions, StorableRequest] {

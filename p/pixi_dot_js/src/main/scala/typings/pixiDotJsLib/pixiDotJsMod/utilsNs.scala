@@ -10,6 +10,13 @@ import scala.scalajs.js.annotation._
 object utilsNs extends js.Object {
   // https://github.com/primus/eventemitter3
   @js.native
+  /**
+    * Minimal EventEmitter interface that is molded against the Node.js
+    * EventEmitter interface.
+    *
+    * @constructor
+    * @api public
+    */
   class EventEmitter ()
     extends pixiDotJsLib.PIXINs.utilsNs.EventEmitter
   

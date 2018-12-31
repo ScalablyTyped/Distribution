@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SourceContext extends js.Object {
   /** A SourceContext referring to a revision in a cloud repo. */
   var cloudRepo: js.UndefOr[CloudRepoSourceContext] = js.undefined

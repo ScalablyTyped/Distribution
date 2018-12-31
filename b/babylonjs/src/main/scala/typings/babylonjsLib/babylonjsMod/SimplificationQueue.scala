@@ -6,11 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Queue used to order the simplification tasks
-     * @see http://doc.babylonjs.com/how_to/in-browser_mesh_simplification
-     */
+  * Queue used to order the simplification tasks
+  * @see http://doc.babylonjs.com/how_to/in-browser_mesh_simplification
+  */
 @JSImport("babylonjs", "SimplificationQueue")
 @js.native
+/**
+  * Creates a new queue
+  */
 class SimplificationQueue ()
   extends babylonjsLib.BABYLONNs.SimplificationQueue
 

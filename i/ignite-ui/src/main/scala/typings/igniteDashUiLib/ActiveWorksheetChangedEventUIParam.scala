@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActiveWorksheetChangedEventUIParam extends js.Object {
   /**
   	 * Gets the current active [worksheet](ig.excel.Worksheet).

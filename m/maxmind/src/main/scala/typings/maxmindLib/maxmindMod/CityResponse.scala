@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CityResponse extends CountryResponse {
   val city: js.UndefOr[CityRecord] = js.undefined
   val location: js.UndefOr[LocationRecord] = js.undefined

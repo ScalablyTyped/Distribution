@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LockAndWatch extends js.Object {
   var getManager: js.Function1[/* type */ java.lang.String, scala.Unit]
   var lock: js.Function2[/* id */ java.lang.String, /* callback */ js.UndefOr[js.Function0[_]], scala.Unit]

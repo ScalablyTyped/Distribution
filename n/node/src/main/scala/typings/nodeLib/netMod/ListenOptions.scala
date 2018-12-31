@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListenOptions extends js.Object {
   var backlog: js.UndefOr[scala.Double] = js.undefined
   var exclusive: js.UndefOr[scala.Boolean] = js.undefined

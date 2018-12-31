@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CellSelectionChangedEventUIParam extends js.Object {
   /**
   	 * Gets reference to the cell object.

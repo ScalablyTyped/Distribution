@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait INumberFormatterOptions extends js.Object {
   var fractionDigits: scala.Double
   var geographicRegion: java.lang.String

@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PushToken extends js.Object {
   /**
-               * The revision of the client SDK used by your application, in the same format that's used by revisions.check. Used to send backward compatible messages.
-               * Format: [PLATFORM_TYPE]:[VERSION_NUMBER]. Possible values of PLATFORM_TYPE are:
-               * - IOS - Push token is for iOS
-               */
+    * The revision of the client SDK used by your application, in the same format that's used by revisions.check. Used to send backward compatible messages.
+    * Format: [PLATFORM_TYPE]:[VERSION_NUMBER]. Possible values of PLATFORM_TYPE are:
+    * - IOS - Push token is for iOS
+    */
   var clientRevision: js.UndefOr[java.lang.String] = js.undefined
   /** Unique identifier for this push token. */
   var id: js.UndefOr[PushTokenId] = js.undefined

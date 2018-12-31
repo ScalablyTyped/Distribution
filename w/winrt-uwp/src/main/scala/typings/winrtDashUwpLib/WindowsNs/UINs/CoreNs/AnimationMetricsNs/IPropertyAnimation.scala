@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Describes properties of animations that are common to all animation effects. */
-
 trait IPropertyAnimation extends js.Object {
   /** Gets the location of the first control point for the cubic Bézier curve that describes how this property of this object should animate over time. */
   var control1: winrtDashUwpLib.WindowsNs.FoundationNs.Point

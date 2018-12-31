@@ -5,29 +5,28 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IColorSliderProps
   extends atUifabricUtilitiesLib.libBaseComponentMod.IBaseProps[IColorSlider] {
   /**
-       * Additional CSS class(es) to apply to the ColorSlider.
-       */
+    * Additional CSS class(es) to apply to the ColorSlider.
+    */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * If true, the slider represents an alpha slider.
-       * Otherwise, the slider represents a hue slider.
-       */
+    * If true, the slider represents an alpha slider.
+    * Otherwise, the slider represents a hue slider.
+    */
   var isAlpha: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * Maximum value of the slider.
-       */
+    * Maximum value of the slider.
+    */
   var maxValue: js.UndefOr[scala.Double] = js.undefined
   /**
-       * Minimum value of the slider.
-       */
+    * Minimum value of the slider.
+    */
   var minValue: js.UndefOr[scala.Double] = js.undefined
   /**
-       * Callback issued when the value changes.
-       */
+    * Callback issued when the value changes.
+    */
   var onChange: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
@@ -36,31 +35,31 @@ trait IColorSliderProps
     ]
   ] = js.undefined
   /**
-       * Deprecated, use `onChange` instead.
-       * @deprecated Use `onChange` instead.
-       */
+    * Deprecated, use `onChange` instead.
+    * @deprecated Use `onChange` instead.
+    */
   var onChanged: js.UndefOr[js.Function1[/* newValue */ scala.Double, scala.Unit]] = js.undefined
   /**
-       * Custom style for the overlay element.
-       */
+    * Custom style for the overlay element.
+    */
   var overlayStyle: js.UndefOr[js.Any] = js.undefined
   /**
-       * Call to provide customized styling that will layer on top of the variant rules.
-       */
+    * Call to provide customized styling that will layer on top of the variant rules.
+    */
   var styles: js.UndefOr[
     atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[IColorSliderStyleProps, IColorSliderStyles]
   ] = js.undefined
   /**
-       * Theme (provided through customization).
-       */
+    * Theme (provided through customization).
+    */
   var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined
   /**
-       * CSS-compatible string for the color of the thumb element.
-       */
+    * CSS-compatible string for the color of the thumb element.
+    */
   var thumbColor: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Current value of the slider.
-       */
+    * Current value of the slider.
+    */
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 

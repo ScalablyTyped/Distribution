@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class OnDisconnect protected ()
   extends atFirebaseDatabaseLib.distSrcApiOnDisconnectMod.OnDisconnect {
   /**
-       * @param {!Repo} repo_
-       * @param {!Path} path_
-       */
+    * @param {!Repo} repo_
+    * @param {!Path} path_
+    */
   def this(`repo_`: atFirebaseDatabaseLib.distSrcCoreRepoMod.Repo, `path_`: atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path) = this()
 }
 

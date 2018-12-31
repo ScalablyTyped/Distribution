@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OutboundLinkProps extends js.Object {
   var eventLabel: java.lang.String
   var onClick: js.UndefOr[js.Function] = js.undefined

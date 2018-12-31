@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PieChartOptions extends js.Object {
   var backgroundColor: js.UndefOr[js.Any] = js.undefined
   var chartArea: js.UndefOr[ChartArea] = js.undefined

@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * The Request object represents the request message that was sent to the server. This includes information about HTTP headers and the body of the HTTP request sent to the server.
- * For triggers, the request represents the operation that is executing when the trigger is run. For example, if the trigger is being run ("triggered") on the creation of a document, then
- * the request body contains the JSON body of the document to be created. This can be accessed through the request object and (as JSON) can be natively consumed in JavaScript.
- * For stored procedures, the request contains information about the request sent to execute the stored procedure.
- */
+  * The Request object represents the request message that was sent to the server. This includes information about HTTP headers and the body of the HTTP request sent to the server.
+  * For triggers, the request represents the operation that is executing when the trigger is run. For example, if the trigger is being run ("triggered") on the creation of a document, then
+  * the request body contains the JSON body of the document to be created. This can be accessed through the request object and (as JSON) can be natively consumed in JavaScript.
+  * For stored procedures, the request contains information about the request sent to execute the stored procedure.
+  */
 @js.native
 trait IRequest extends js.Object {
   /**
@@ -20,8 +20,8 @@ trait IRequest extends js.Object {
   @JSName("getBody")
   def getBody_TT[T](): T = js.native
   /**
-       * Gets the OperationType for the request with a pre-trigger or post-trigger.
-       */
+    * Gets the OperationType for the request with a pre-trigger or post-trigger.
+    */
   def getOperationType(): documentdbDashServerLib.documentdbDashServerLibStrings.Create | documentdbDashServerLib.documentdbDashServerLibStrings.Replace | documentdbDashServerLib.documentdbDashServerLibStrings.Upsert | documentdbDashServerLib.documentdbDashServerLibStrings.Delete = js.native
   /**
   	 * Gets a specified request header value.

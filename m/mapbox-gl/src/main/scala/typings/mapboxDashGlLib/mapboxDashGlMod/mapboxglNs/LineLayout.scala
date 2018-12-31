@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LineLayout extends js.Object {
   var `line-cap`: js.UndefOr[
     mapboxDashGlLib.mapboxDashGlLibStrings.butt | mapboxDashGlLib.mapboxDashGlLibStrings.round | mapboxDashGlLib.mapboxDashGlLibStrings.square

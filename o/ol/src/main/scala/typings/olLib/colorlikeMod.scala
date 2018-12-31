@@ -12,10 +12,10 @@ object colorlikeMod extends js.Object {
   @js.native
   object defaultNs extends js.Object {
     /**
-         * @param color Color.
-         * @return The color as an ol.ColorLike
-         * @api
-         */
+      * @param color Color.
+      * @return The color as an ol.ColorLike
+      * @api
+      */
     def asColorLike(color: openlayersLib.openlayersMod.Color | openlayersLib.openlayersMod.ColorLike): openlayersLib.openlayersMod.ColorLike = js.native
   }
   

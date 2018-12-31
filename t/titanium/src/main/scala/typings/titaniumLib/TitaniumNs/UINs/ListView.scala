@@ -192,25 +192,16 @@ trait ListView extends View {
   			 * Appends a single section or an array of sections to the end of the list.
   			 */
   def appendSection(section: js.Array[ListSection]): scala.Unit = js.native
-  /**
-  			 * Appends a single section or an array of sections to the end of the list.
-  			 */
   def appendSection(section: js.Array[ListSection], animation: titaniumLib.ListViewAnimationProperties): scala.Unit = js.native
   /**
   			 * Appends a single section or an array of sections to the end of the list.
   			 */
   def appendSection(section: ListSection): scala.Unit = js.native
-  /**
-  			 * Appends a single section or an array of sections to the end of the list.
-  			 */
   def appendSection(section: ListSection, animation: titaniumLib.ListViewAnimationProperties): scala.Unit = js.native
   /**
   			 * Deletes an existing section.
   			 */
   def deleteSectionAt(sectionIndex: scala.Double): scala.Unit = js.native
-  /**
-  			 * Deletes an existing section.
-  			 */
   def deleteSectionAt(sectionIndex: scala.Double, animation: titaniumLib.ListViewAnimationProperties): scala.Unit = js.native
   /**
   			 * Deselects a specific item.
@@ -392,9 +383,6 @@ trait ListView extends View {
   			 * Inserts a section or an array of sections at a specific index.
   			 */
   def insertSectionAt(sectionIndex: scala.Double, section: js.Array[ListSection]): scala.Unit = js.native
-  /**
-  			 * Inserts a section or an array of sections at a specific index.
-  			 */
   def insertSectionAt(
     sectionIndex: scala.Double,
     section: js.Array[ListSection],
@@ -404,9 +392,6 @@ trait ListView extends View {
   			 * Inserts a section or an array of sections at a specific index.
   			 */
   def insertSectionAt(sectionIndex: scala.Double, section: ListSection): scala.Unit = js.native
-  /**
-  			 * Inserts a section or an array of sections at a specific index.
-  			 */
   def insertSectionAt(
     sectionIndex: scala.Double,
     section: ListSection,
@@ -424,9 +409,6 @@ trait ListView extends View {
   			 * Scrolls to a specific item.
   			 */
   def scrollToItem(sectionIndex: scala.Double, itemIndex: scala.Double): scala.Unit = js.native
-  /**
-  			 * Scrolls to a specific item.
-  			 */
   def scrollToItem(
     sectionIndex: scala.Double,
     itemIndex: scala.Double,
@@ -460,9 +442,6 @@ trait ListView extends View {
   			 * Sets this list view's content insets.
   			 */
   def setContentInsets(edgeInsets: titaniumLib.ListViewEdgeInsets): scala.Unit = js.native
-  /**
-  			 * Sets this list view's content insets.
-  			 */
   def setContentInsets(edgeInsets: titaniumLib.ListViewEdgeInsets, animated: titaniumLib.ListViewContentInsetOption): scala.Unit = js.native
   /**
   			 * Sets the value of the content offset of the list view without animation by default.

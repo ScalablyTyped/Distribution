@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SDKInfo extends js.Object {
   var language: js.UndefOr[java.lang.String] = js.undefined
   var platform: js.UndefOr[

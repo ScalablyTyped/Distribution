@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Badge extends js.Object {
   var alert: scala.Double
   var badge: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISyntaxToken extends IPrimaryExpressionSyntax {
   var tokenKind: SyntaxKind
   def hasLeadingComment(): scala.Boolean

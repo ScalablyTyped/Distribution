@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 sealed trait ConditionalDataBarAxisFormat extends js.Object
 
 /**
-     *
-     * Represents the format options for a Data Bar Axis.
-     *
-     * [Api set: ExcelApi 1.6]
-     */
+  *
+  * Represents the format options for a Data Bar Axis.
+  *
+  * [Api set: ExcelApi 1.6]
+  */
 @JSGlobal("Excel.ConditionalDataBarAxisFormat")
 @js.native
 object ConditionalDataBarAxisFormat extends js.Object {

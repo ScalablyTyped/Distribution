@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITooltipOptions extends js.Object {
   var clickOpen: js.UndefOr[scala.Boolean] = js.undefined
   var disableHover: js.UndefOr[scala.Boolean] = js.undefined

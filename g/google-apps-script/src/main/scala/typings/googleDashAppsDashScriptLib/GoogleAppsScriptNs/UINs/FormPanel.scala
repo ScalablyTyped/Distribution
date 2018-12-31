@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FormPanel extends js.Object {
   def add(widget: Widget): FormPanel
   def addStyleDependentName(styleName: java.lang.String): FormPanel

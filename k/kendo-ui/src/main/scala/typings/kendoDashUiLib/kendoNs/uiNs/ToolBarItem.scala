@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ToolBarItem extends js.Object {
   var attributes: js.UndefOr[js.Any] = js.undefined
   var buttons: js.UndefOr[js.Array[ToolBarItemButton]] = js.undefined

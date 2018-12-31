@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SafariExtensionContextMenuEvent extends SafariEvent {
   /**
   		* The context menu being built up.

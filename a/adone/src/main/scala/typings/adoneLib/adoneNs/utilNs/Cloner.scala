@@ -9,20 +9,17 @@ import scala.scalajs.js.annotation._
 @js.native
 class Cloner () extends js.Object {
   /**
-               * Returns a clone function that is binded to this cloner
-               */
+    * Returns a clone function that is binded to this cloner
+    */
   def binding(): js.Function2[
     /* obj */ js.Any, 
     /* options */ js.UndefOr[adoneLib.adoneNs.utilNs.INs.CloneOptions], 
     _
   ] = js.native
   /**
-               * Clones the given object
-               */
+    * Clones the given object
+    */
   def clone(obj: js.Any): js.Any = js.native
-  /**
-               * Clones the given object
-               */
   def clone(obj: js.Any, options: adoneLib.adoneNs.utilNs.INs.CloneOptions): js.Any = js.native
 }
 

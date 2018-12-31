@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LiveChatSuperChatDetails extends js.Object {
   /** A rendered string that displays the fund amount and currency to the user. */
   var amountDisplayString: js.UndefOr[java.lang.String] = js.undefined

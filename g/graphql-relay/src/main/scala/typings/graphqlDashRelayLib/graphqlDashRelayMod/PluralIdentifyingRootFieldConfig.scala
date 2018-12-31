@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PluralIdentifyingRootFieldConfig extends js.Object {
   var argName: java.lang.String
   var description: js.UndefOr[java.lang.String] = js.undefined

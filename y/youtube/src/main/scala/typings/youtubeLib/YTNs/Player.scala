@@ -22,45 +22,21 @@ class Player protected () extends js.Object {
   		 * @param options   Player options.
   		 */
   def this(id: java.lang.String, options: PlayerOptions) = this()
-  /**
-  		 * Adds an event listener for the specified event.
-  		 *
-  		 * @param eventName   Name of the event.
-  		 * @param listener   Handler for the event.
-  		 */
   @JSName("addEventListener")
   def addEventListener_onApiChange[TEvent /* <: PlayerEvent */](
     eventName: youtubeLib.youtubeLibStrings.onApiChange,
     listener: js.Function1[/* event */ TEvent, scala.Unit]
   ): scala.Unit = js.native
-  /**
-  		 * Adds an event listener for the specified event.
-  		 *
-  		 * @param eventName   Name of the event.
-  		 * @param listener   Handler for the event.
-  		 */
   @JSName("addEventListener")
   def addEventListener_onError[TEvent /* <: PlayerEvent */](
     eventName: youtubeLib.youtubeLibStrings.onError,
     listener: js.Function1[/* event */ TEvent, scala.Unit]
   ): scala.Unit = js.native
-  /**
-  		 * Adds an event listener for the specified event.
-  		 *
-  		 * @param eventName   Name of the event.
-  		 * @param listener   Handler for the event.
-  		 */
   @JSName("addEventListener")
   def addEventListener_onPlaybackQualityChange[TEvent /* <: PlayerEvent */](
     eventName: youtubeLib.youtubeLibStrings.onPlaybackQualityChange,
     listener: js.Function1[/* event */ TEvent, scala.Unit]
   ): scala.Unit = js.native
-  /**
-  		 * Adds an event listener for the specified event.
-  		 *
-  		 * @param eventName   Name of the event.
-  		 * @param listener   Handler for the event.
-  		 */
   @JSName("addEventListener")
   def addEventListener_onPlaybackRateChange[TEvent /* <: PlayerEvent */](
     eventName: youtubeLib.youtubeLibStrings.onPlaybackRateChange,
@@ -77,12 +53,6 @@ class Player protected () extends js.Object {
     eventName: youtubeLib.youtubeLibStrings.onReady,
     listener: js.Function1[/* event */ TEvent, scala.Unit]
   ): scala.Unit = js.native
-  /**
-  		 * Adds an event listener for the specified event.
-  		 *
-  		 * @param eventName   Name of the event.
-  		 * @param listener   Handler for the event.
-  		 */
   @JSName("addEventListener")
   def addEventListener_onStateChange[TEvent /* <: PlayerEvent */](
     eventName: youtubeLib.youtubeLibStrings.onStateChange,
@@ -103,73 +73,17 @@ class Player protected () extends js.Object {
   		 * @param suggestedQuality   Suggested video player quality.
   		 */
   def cuePlaylist(playlist: java.lang.String): scala.Unit = js.native
-  /**
-  		 * Queues a playlist of videos.
-  		 *
-  		 * @param playlist   Video ID(s) to play.
-  		 * @param index   Start index of the playlist, if not 0.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def cuePlaylist(playlist: java.lang.String, index: scala.Double): scala.Unit = js.native
-  /**
-  		 * Queues a playlist of videos.
-  		 *
-  		 * @param playlist   Video ID(s) to play.
-  		 * @param index   Start index of the playlist, if not 0.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def cuePlaylist(playlist: java.lang.String, index: scala.Double, startSeconds: scala.Double): scala.Unit = js.native
-  /**
-  		 * Queues a playlist of videos.
-  		 *
-  		 * @param playlist   Video ID(s) to play.
-  		 * @param index   Start index of the playlist, if not 0.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def cuePlaylist(
     playlist: java.lang.String,
     index: scala.Double,
     startSeconds: scala.Double,
     suggestedQuality: SuggestedVideoQuality
   ): scala.Unit = js.native
-  /**
-  		 * Queues a playlist of videos.
-  		 *
-  		 * @param playlist   Video ID(s) to play.
-  		 * @param index   Start index of the playlist, if not 0.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def cuePlaylist(playlist: js.Array[java.lang.String]): scala.Unit = js.native
-  /**
-  		 * Queues a playlist of videos.
-  		 *
-  		 * @param playlist   Video ID(s) to play.
-  		 * @param index   Start index of the playlist, if not 0.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def cuePlaylist(playlist: js.Array[java.lang.String], index: scala.Double): scala.Unit = js.native
-  /**
-  		 * Queues a playlist of videos.
-  		 *
-  		 * @param playlist   Video ID(s) to play.
-  		 * @param index   Start index of the playlist, if not 0.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def cuePlaylist(playlist: js.Array[java.lang.String], index: scala.Double, startSeconds: scala.Double): scala.Unit = js.native
-  /**
-  		 * Queues a playlist of videos.
-  		 *
-  		 * @param playlist   Video ID(s) to play.
-  		 * @param index   Start index of the playlist, if not 0.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def cuePlaylist(
     playlist: js.Array[java.lang.String],
     index: scala.Double,
@@ -190,21 +104,7 @@ class Player protected () extends js.Object {
   		 * @param suggestedQuality   Suggested video player quality.
   		 */
   def cueVideoById(videoId: java.lang.String): scala.Unit = js.native
-  /**
-  		 * Queues a video by ID.
-  		 *
-  		 * @param videoId   Video ID.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def cueVideoById(videoId: java.lang.String, startSeconds: scala.Double): scala.Unit = js.native
-  /**
-  		 * Queues a video by ID.
-  		 *
-  		 * @param videoId   Video ID.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def cueVideoById(videoId: java.lang.String, startSeconds: scala.Double, suggestedQuality: SuggestedVideoQuality): scala.Unit = js.native
   /**
   		 * Queues a video by media content URL.
@@ -220,21 +120,7 @@ class Player protected () extends js.Object {
   		 * @param suggestedQuality   Suggested video player quality.
   		 */
   def cueVideoByUrl(mediaContentUrl: java.lang.String): scala.Unit = js.native
-  /**
-  		 * Queues a video by media content URL.
-  		 *
-  		 * @param mediaContentUrl   Fully qualified player URL.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def cueVideoByUrl(mediaContentUrl: java.lang.String, startSeconds: scala.Double): scala.Unit = js.native
-  /**
-  		 * Queues a video by media content URL.
-  		 *
-  		 * @param mediaContentUrl   Fully qualified player URL.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def cueVideoByUrl(
     mediaContentUrl: java.lang.String,
     startSeconds: scala.Double,
@@ -319,73 +205,17 @@ class Player protected () extends js.Object {
   		 * @param suggestedQuality   Suggested video player quality.
   		 */
   def loadPlaylist(playlist: java.lang.String): scala.Unit = js.native
-  /**
-  		 * Loads a playlist of videos.
-  		 *
-  		 * @param playlist   Video ID(s) to play.
-  		 * @param index   Start index of the playlist, if not 0.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def loadPlaylist(playlist: java.lang.String, index: scala.Double): scala.Unit = js.native
-  /**
-  		 * Loads a playlist of videos.
-  		 *
-  		 * @param playlist   Video ID(s) to play.
-  		 * @param index   Start index of the playlist, if not 0.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def loadPlaylist(playlist: java.lang.String, index: scala.Double, startSeconds: scala.Double): scala.Unit = js.native
-  /**
-  		 * Loads a playlist of videos.
-  		 *
-  		 * @param playlist   Video ID(s) to play.
-  		 * @param index   Start index of the playlist, if not 0.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def loadPlaylist(
     playlist: java.lang.String,
     index: scala.Double,
     startSeconds: scala.Double,
     suggestedQuality: SuggestedVideoQuality
   ): scala.Unit = js.native
-  /**
-  		 * Loads a playlist of videos.
-  		 *
-  		 * @param playlist   Video ID(s) to play.
-  		 * @param index   Start index of the playlist, if not 0.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def loadPlaylist(playlist: js.Array[java.lang.String]): scala.Unit = js.native
-  /**
-  		 * Loads a playlist of videos.
-  		 *
-  		 * @param playlist   Video ID(s) to play.
-  		 * @param index   Start index of the playlist, if not 0.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def loadPlaylist(playlist: js.Array[java.lang.String], index: scala.Double): scala.Unit = js.native
-  /**
-  		 * Loads a playlist of videos.
-  		 *
-  		 * @param playlist   Video ID(s) to play.
-  		 * @param index   Start index of the playlist, if not 0.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def loadPlaylist(playlist: js.Array[java.lang.String], index: scala.Double, startSeconds: scala.Double): scala.Unit = js.native
-  /**
-  		 * Loads a playlist of videos.
-  		 *
-  		 * @param playlist   Video ID(s) to play.
-  		 * @param index   Start index of the playlist, if not 0.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def loadPlaylist(
     playlist: js.Array[java.lang.String],
     index: scala.Double,
@@ -406,21 +236,7 @@ class Player protected () extends js.Object {
   		 * @param suggestedQuality   Suggested video player quality.
   		 */
   def loadVideoById(videoId: java.lang.String): scala.Unit = js.native
-  /**
-  		 * Loads and plays a video by ID.
-  		 *
-  		 * @param videoId   Video ID.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def loadVideoById(videoId: java.lang.String, startSeconds: scala.Double): scala.Unit = js.native
-  /**
-  		 * Loads and plays a video by ID.
-  		 *
-  		 * @param videoId   Video ID.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def loadVideoById(videoId: java.lang.String, startSeconds: scala.Double, suggestedQuality: SuggestedVideoQuality): scala.Unit = js.native
   /**
   		 * Loads a video by media content URL.
@@ -436,21 +252,7 @@ class Player protected () extends js.Object {
   		 * @param suggestedQuality   Suggested video player quality.
   		 */
   def loadVideoByUrl(mediaContentUrl: java.lang.String): scala.Unit = js.native
-  /**
-  		 * Loads a video by media content URL.
-  		 *
-  		 * @param mediaContentUrl   Fully qualified player URL.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def loadVideoByUrl(mediaContentUrl: java.lang.String, startSeconds: scala.Double): scala.Unit = js.native
-  /**
-  		 * Loads a video by media content URL.
-  		 *
-  		 * @param mediaContentUrl   Fully qualified player URL.
-  		 * @param startSeconds   Time from which the video should start playing.
-  		 * @param suggestedQuality   Suggested video player quality.
-  		 */
   def loadVideoByUrl(
     mediaContentUrl: java.lang.String,
     startSeconds: scala.Double,

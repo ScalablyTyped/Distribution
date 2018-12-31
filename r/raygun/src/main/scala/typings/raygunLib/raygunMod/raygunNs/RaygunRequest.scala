@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RaygunRequest extends js.Object {
   var form: js.UndefOr[KeyValueObject] = js.undefined
   var headers: js.UndefOr[KeyValueObject] = js.undefined

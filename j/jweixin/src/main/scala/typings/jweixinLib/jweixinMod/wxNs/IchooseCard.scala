@@ -6,8 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /*=============================微信卡券================================*/
-
-
 trait IchooseCard extends BaseParams {
    // 卡券类型
   var cardId: java.lang.String

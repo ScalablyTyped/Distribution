@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Schema extends js.Object {
   var Config: js.UndefOr[js.Any] = js.undefined
   var Schema: js.UndefOr[js.Any] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Resource
   extends /* language */ org.scalablytyped.runtime.StringDictionary[ResourceLanguage]
 

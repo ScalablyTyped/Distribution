@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Easing extends js.Object {
   var Back: Anon_In
   var Bounce: Anon_In

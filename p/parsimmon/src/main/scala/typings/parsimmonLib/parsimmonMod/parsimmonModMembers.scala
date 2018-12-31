@@ -197,24 +197,18 @@ object parsimmonModMembers extends js.Object {
   /**
   	 * Returns true if obj is a Parsimmon parser, otherwise false.
   	 */
-  def isParser(obj: js.Any): /* is Parser */scala.Boolean = js.native
+  def isParser(obj: js.Any): /* is parsimmon.parsimmon.Parsimmon.Parser<any> */ scala.Boolean = js.native
   def `lazy`[U](description: java.lang.String, f: js.Function0[parsimmonLib.parsimmonMod.ParsimmonNs.Parser[U]]): parsimmonLib.parsimmonMod.ParsimmonNs.Parser[U] = js.native
   /**
   	 * accepts a function that returns a parser, which is evaluated the first time the parser is used.
   	 * This is useful for referencing parsers that haven't yet been defined.
   	 */
   def `lazy`[U](f: js.Function0[parsimmonLib.parsimmonMod.ParsimmonNs.Parser[U]]): parsimmonLib.parsimmonMod.ParsimmonNs.Parser[U] = js.native
-  /**
-  	 * Parses using arg, but does not consume what it parses. Yields an empty string.
-  	 */
   def lookahead(arg: java.lang.String): parsimmonLib.parsimmonMod.ParsimmonNs.Parser[parsimmonLib.parsimmonLibStrings.Empty] = js.native
   /**
   	 * Parses using arg, but does not consume what it parses. Yields an empty string.
   	 */
   def lookahead(arg: parsimmonLib.parsimmonMod.ParsimmonNs.Parser[_]): parsimmonLib.parsimmonMod.ParsimmonNs.Parser[parsimmonLib.parsimmonLibStrings.Empty] = js.native
-  /**
-  	 * Parses using arg, but does not consume what it parses. Yields an empty string.
-  	 */
   def lookahead(arg: stdLib.RegExp): parsimmonLib.parsimmonMod.ParsimmonNs.Parser[parsimmonLib.parsimmonLibStrings.Empty] = js.native
   /**
   	 * To be used inside of Parsimmon(fn). Generates an object describing how
@@ -222,11 +216,6 @@ object parsimmonModMembers extends js.Object {
   	 * expected to see (expectation). See documentation for Parsimmon(fn).
   	 */
   def makeFailure(furthest: scala.Double, expectation: java.lang.String): parsimmonLib.parsimmonMod.ParsimmonNs.FailureReply = js.native
-  /**
-  	 * To be used inside of Parsimmon(fn). Generates an object describing how
-  	 * far the unsuccessful parse went (index), and what kind of syntax it
-  	 * expected to see (expectation). See documentation for Parsimmon(fn).
-  	 */
   def makeFailure(furthest: scala.Double, expectation: js.Array[java.lang.String]): parsimmonLib.parsimmonMod.ParsimmonNs.FailureReply = js.native
   /**
   	 * To be used inside of Parsimmon(fn). Generates an object describing how
@@ -259,9 +248,6 @@ object parsimmonModMembers extends js.Object {
   	 * This was the original name for Parsimmon.regexp, but now it is just an alias.
   	 */
   def regex(myregex: stdLib.RegExp): parsimmonLib.parsimmonMod.ParsimmonNs.Parser[java.lang.String] = js.native
-  /**
-  	 * This was the original name for Parsimmon.regexp, but now it is just an alias.
-  	 */
   def regex(myregex: stdLib.RegExp, group: scala.Double): parsimmonLib.parsimmonMod.ParsimmonNs.Parser[java.lang.String] = js.native
   /**
   	 * Returns a parser that looks for a match to the regexp and yields the given match group
@@ -270,12 +256,6 @@ object parsimmonModMembers extends js.Object {
   	 * result in an error being thrown.
   	 */
   def regexp(myregex: stdLib.RegExp): parsimmonLib.parsimmonMod.ParsimmonNs.Parser[java.lang.String] = js.native
-  /**
-  	 * Returns a parser that looks for a match to the regexp and yields the given match group
-  	 * (defaulting to the entire match). The regexp will always match starting at the current
-  	 * parse location. The regexp may only use the following flags: imu. Any other flag will
-  	 * result in an error being thrown.
-  	 */
   def regexp(myregex: stdLib.RegExp, group: scala.Double): parsimmonLib.parsimmonMod.ParsimmonNs.Parser[java.lang.String] = js.native
   /**
   	 * Accepts two parsers, and expects zero or more matches for content, separated by separator, yielding an array.
@@ -409,9 +389,7 @@ object parsimmonModMembers extends js.Object {
   def seqObj[T, Key /* <: java.lang.String */](
     args: ((js.Tuple2[
       Key, 
-      parsimmonLib.parsimmonMod.ParsimmonNs.Parser[
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(Key))) */js.Any
-      ]
+      parsimmonLib.parsimmonMod.ParsimmonNs.Parser[/* import warning: ImportType.apply Failed type conversion: T[Key] */ js.Any]
     ]) | parsimmonLib.parsimmonMod.ParsimmonNs.Parser[_])*
   ): parsimmonLib.parsimmonMod.ParsimmonNs.Parser[parsimmonLib.parsimmonLibStrings.seqObj with T] = js.native
   @JSName("seq")

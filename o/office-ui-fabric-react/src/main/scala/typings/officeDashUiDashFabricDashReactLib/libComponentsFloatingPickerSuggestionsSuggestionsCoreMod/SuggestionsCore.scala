@@ -29,12 +29,12 @@ class SuggestionsCore[T] protected ()
   def getSuggestionAtIndex(index: scala.Double): officeDashUiDashFabricDashReactLib.libComponentsPickersSuggestionsSuggestionsControllerMod.ISuggestionModel[T] = js.native
   def hasSuggestionSelected(): scala.Boolean = js.native
   /**
-       * Increments the selected suggestion index
-       */
+    * Increments the selected suggestion index
+    */
   def nextSuggestion(): scala.Boolean = js.native
   /**
-       * Decrements the selected suggestion index
-       */
+    * Decrements the selected suggestion index
+    */
   def previousSuggestion(): scala.Boolean = js.native
   def removeSuggestion(index: scala.Double): scala.Unit = js.native
   def scrollSelected(): scala.Unit = js.native

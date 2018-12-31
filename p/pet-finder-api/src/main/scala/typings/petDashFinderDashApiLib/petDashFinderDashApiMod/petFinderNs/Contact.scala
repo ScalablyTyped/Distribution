@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Contact extends js.Object {
   var address1: java.lang.String
   var address2: java.lang.String

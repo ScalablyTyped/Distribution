@@ -229,41 +229,41 @@ object UtilsNs extends js.Object {
     @js.native
     object RTreeBounds extends js.Object {
       /**
-           * Returns the orthogonal absolute distance in the x-dimension from point
-           * `p` to the farthest edge of `bounds`.
-           *
-           * If `p.x` is inside the bounds returns `0`.
-           */
+        * Returns the orthogonal absolute distance in the x-dimension from point
+        * `p` to the farthest edge of `bounds`.
+        *
+        * If `p.x` is inside the bounds returns `0`.
+        */
       def absoluteDistanceToFarEdgeX(
         bounds: plottableLib.buildSrcUtilsRTreeMod.RTreeBounds,
         p: plottableLib.buildSrcCoreInterfacesMod.Point
       ): scala.Double = js.native
       /**
-           * Returns the orthogonal absolute distance in the y-dimension from point
-           * `p` to the farthest edge of `bounds`.
-           *
-           * If `p.y` is inside the bounds returns `0`.
-           */
+        * Returns the orthogonal absolute distance in the y-dimension from point
+        * `p` to the farthest edge of `bounds`.
+        *
+        * If `p.y` is inside the bounds returns `0`.
+        */
       def absoluteDistanceToFarEdgeY(
         bounds: plottableLib.buildSrcUtilsRTreeMod.RTreeBounds,
         p: plottableLib.buildSrcCoreInterfacesMod.Point
       ): scala.Double = js.native
       /**
-           * Returns the orthogonal absolute distance in the x-dimension from point
-           * `p` to the nearest edge of `bounds`.
-           *
-           * If `p.x` is inside the bounds returns `0`.
-           */
+        * Returns the orthogonal absolute distance in the x-dimension from point
+        * `p` to the nearest edge of `bounds`.
+        *
+        * If `p.x` is inside the bounds returns `0`.
+        */
       def absoluteDistanceToNearEdgeX(
         bounds: plottableLib.buildSrcUtilsRTreeMod.RTreeBounds,
         p: plottableLib.buildSrcCoreInterfacesMod.Point
       ): scala.Double = js.native
       /**
-           * Returns the orthogonal absolute distance in the y-dimension from point
-           * `p` to the nearest edge of `bounds`.
-           *
-           * If `p.y` is inside the bounds returns `0`.
-           */
+        * Returns the orthogonal absolute distance in the y-dimension from point
+        * `p` to the nearest edge of `bounds`.
+        *
+        * If `p.y` is inside the bounds returns `0`.
+        */
       def absoluteDistanceToNearEdgeY(
         bounds: plottableLib.buildSrcUtilsRTreeMod.RTreeBounds,
         p: plottableLib.buildSrcCoreInterfacesMod.Point
@@ -274,39 +274,39 @@ object UtilsNs extends js.Object {
         p: plottableLib.buildSrcCoreInterfacesMod.Point
       ): scala.Double = js.native
       /**
-           * Returns the distance squared from `p` to the nearest edge of `bounds`. If
-           * the point touches or is inside the bounds, returns `0`;
-           *
-           * https://gamedev.stackexchange.com/questions/44483/how-do-i-calculate-distance-between-a-point-and-an-axis-aligned-rectangle
-           */
+        * Returns the distance squared from `p` to the nearest edge of `bounds`. If
+        * the point touches or is inside the bounds, returns `0`;
+        *
+        * https://gamedev.stackexchange.com/questions/44483/how-do-i-calculate-distance-between-a-point-and-an-axis-aligned-rectangle
+        */
       def distanceSquaredToNearEdge(
         bounds: plottableLib.buildSrcUtilsRTreeMod.RTreeBounds,
         p: plottableLib.buildSrcCoreInterfacesMod.Point
       ): scala.Double = js.native
       def entityBounds(bounds: plottableLib.buildSrcCoreInterfacesMod.IEntityBounds): plottableLib.buildSrcUtilsRTreeMod.RTreeBounds = js.native
       /**
-           * Returns true if `a` overlaps `b` in the x and y axes.
-           *
-           * Touching counts as overlap.
-           */
+        * Returns true if `a` overlaps `b` in the x and y axes.
+        *
+        * Touching counts as overlap.
+        */
       def isBoundsOverlapBounds(
         a: plottableLib.buildSrcUtilsRTreeMod.RTreeBounds,
         b: plottableLib.buildSrcUtilsRTreeMod.RTreeBounds
       ): scala.Boolean = js.native
       /**
-           * Returns true if `a` overlaps `b` in the x axis only.
-           *
-           * Touching counts as overlap.
-           */
+        * Returns true if `a` overlaps `b` in the x axis only.
+        *
+        * Touching counts as overlap.
+        */
       def isBoundsOverlapX(
         a: plottableLib.buildSrcUtilsRTreeMod.RTreeBounds,
         b: plottableLib.buildSrcUtilsRTreeMod.RTreeBounds
       ): scala.Boolean = js.native
       /**
-           * Returns true if `a` overlaps `b` in the y axis only.
-           *
-           * Touching counts as overlap.
-           */
+        * Returns true if `a` overlaps `b` in the y axis only.
+        *
+        * Touching counts as overlap.
+        */
       def isBoundsOverlapY(
         a: plottableLib.buildSrcUtilsRTreeMod.RTreeBounds,
         b: plottableLib.buildSrcUtilsRTreeMod.RTreeBounds
@@ -356,8 +356,8 @@ object UtilsNs extends js.Object {
   @js.native
   object Translator extends js.Object {
     /**
-         * Is the event's target part of the given component's DOM tree?
-         */
+      * Is the event's target part of the given component's DOM tree?
+      */
     def isEventInside(component: plottableLib.buildSrcComponentsComponentMod.Component, e: stdLib.Event): scala.Boolean = js.native
   }
   

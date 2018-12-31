@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModalFuncProps extends js.Object {
   var autoFocusButton: js.UndefOr[scala.Null | antdLib.antdLibStrings.ok | antdLib.antdLibStrings.cancel] = js.undefined
   var cancelButtonProps: js.UndefOr[antdLib.libButtonButtonMod.NativeButtonProps] = js.undefined
@@ -25,8 +24,8 @@ trait ModalFuncProps extends js.Object {
   var okCancel: js.UndefOr[scala.Boolean] = js.undefined
   var okText: js.UndefOr[java.lang.String] = js.undefined
   var okType: js.UndefOr[antdLib.libButtonButtonMod.ButtonType] = js.undefined
-  var onCancel: js.UndefOr[js.Function1[/* repeated */js.Any, _ | js.Thenable[_]]] = js.undefined
-  var onOk: js.UndefOr[js.Function1[/* repeated */js.Any, _ | js.Thenable[_]]] = js.undefined
+  var onCancel: js.UndefOr[js.Function1[/* repeated */ js.Any, _ | js.Thenable[_]]] = js.undefined
+  var onOk: js.UndefOr[js.Function1[/* repeated */ js.Any, _ | js.Thenable[_]]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined

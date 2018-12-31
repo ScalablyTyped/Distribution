@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MochaPhantomJSOptions extends js.Object {
   var cookies: js.UndefOr[js.Array[_]] = js.undefined
   var file: js.UndefOr[java.lang.String] = js.undefined

@@ -18,26 +18,26 @@ object namespaced extends js.Object {
   def replace(
     options: stringDashReplaceDashWebpackDashPluginLib.stringDashReplaceDashWebpackDashPluginMod.StringReplacePluginNs.Options,
     /**
-           * loaders to follow the replacement
-           */
+    * loaders to follow the replacement
+    */
   nextLoaders: java.lang.String
   ): webpackLib.webpackMod.webpackNs.RuleSetUse = js.native
   def replace(
     /**
-           * loaders to apply prior to the replacement
-           */
+    * loaders to apply prior to the replacement
+    */
   prevLoaders: java.lang.String,
     options: stringDashReplaceDashWebpackDashPluginLib.stringDashReplaceDashWebpackDashPluginMod.StringReplacePluginNs.Options
   ): webpackLib.webpackMod.webpackNs.RuleSetUse = js.native
   def replace(
     /**
-           * loaders to apply prior to the replacement
-           */
+    * loaders to apply prior to the replacement
+    */
   prevLoaders: java.lang.String,
     options: stringDashReplaceDashWebpackDashPluginLib.stringDashReplaceDashWebpackDashPluginMod.StringReplacePluginNs.Options,
     /**
-           * loaders to follow the replacement
-           */
+    * loaders to follow the replacement
+    */
   nextLoaders: java.lang.String
   ): webpackLib.webpackMod.webpackNs.RuleSetUse = js.native
 }

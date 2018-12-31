@@ -24,8 +24,8 @@ object SyncNsMembers extends js.Object {
     changeCallback: js.Function1[/* changeEvent */ ChangeEvent, scala.Unit]
   ): js.Promise[scala.Unit] = js.native
   /**
-       * @deprecated, to be removed in future versions
-       */
+    * @deprecated, to be removed in future versions
+    */
   def setFeatureToken(token: java.lang.String): scala.Unit = js.native
   @JSName("setLogLevel")
   def setLogLevel_all(logLevel: realmLib.realmLibStrings.all): scala.Unit = js.native

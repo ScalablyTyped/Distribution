@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SendInvoiceOptions extends SendBasicOptions {
   var is_flexible: js.UndefOr[scala.Boolean] = js.undefined
   var need_email: js.UndefOr[scala.Boolean] = js.undefined

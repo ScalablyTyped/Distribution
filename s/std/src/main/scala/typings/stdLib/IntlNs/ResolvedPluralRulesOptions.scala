@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResolvedPluralRulesOptions extends js.Object {
   var locale: java.lang.String
   var maximumFractionDigits: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPageSizePrettyPrint extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -13,9 +12,9 @@ trait Anon_AccesstokenPageSizePrettyPrint extends js.Object {
   /** OAuth access token. */
   var access_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Requests only beacons that have the given alert. For example, to find
-                   * beacons that have low batteries use `alert_filter=LOW_BATTERY`.
-                   */
+    * Requests only beacons that have the given alert. For example, to find
+    * beacons that have low batteries use `alert_filter=LOW_BATTERY`.
+    */
   var alertFilter: js.UndefOr[java.lang.String] = js.undefined
   /** Data format for response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -32,24 +31,24 @@ trait Anon_AccesstokenPageSizePrettyPrint extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Specifies the maximum number of results to return. Defaults to
-                   * 10. Maximum 1000. Optional.
-                   */
+    * Specifies the maximum number of results to return. Defaults to
+    * 10. Maximum 1000. Optional.
+    */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * Requests results that occur after the `page_token`, obtained from the
-                   * response to a previous request. Optional.
-                   */
+    * Requests results that occur after the `page_token`, obtained from the
+    * response to a previous request. Optional.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Requests only diagnostic records for the given project id. If not set,
-                   * then the project making the request will be used for looking up
-                   * diagnostic records. Optional.
-                   */
+    * Requests only diagnostic records for the given project id. If not set,
+    * then the project making the request will be used for looking up
+    * diagnostic records. Optional.
+    */
   var projectId: js.UndefOr[java.lang.String] = js.undefined
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined

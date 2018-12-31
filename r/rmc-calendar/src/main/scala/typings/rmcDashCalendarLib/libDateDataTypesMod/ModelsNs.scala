@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("rmc-calendar/lib/date/DataTypes", "Models")
 @js.native
 object ModelsNs extends js.Object {
-  
   trait CellData extends js.Object {
     var dayOfMonth: scala.Double
     var isFirstOfMonth: scala.Boolean
@@ -17,7 +16,6 @@ object ModelsNs extends js.Object {
     var selected: SelectType
     var tick: scala.Double
   }
-  
   
   trait ExtraData extends js.Object {
     /** (web only) 附加cell样式 className */
@@ -28,7 +26,6 @@ object ModelsNs extends js.Object {
     /** 扩展信息 */
     var info: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait Locale extends js.Object {
     var am: java.lang.String
@@ -57,7 +54,6 @@ object ModelsNs extends js.Object {
     var year: java.lang.String
     var yesterday: java.lang.String
   }
-  
   
   trait MonthData extends js.Object {
     var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Translation extends js.Object {
   var errorLoading: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   var inputTooLong: js.UndefOr[js.Function1[/* arg */ TranslationArg, java.lang.String]] = js.undefined

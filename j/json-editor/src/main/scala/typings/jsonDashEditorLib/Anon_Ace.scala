@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Ace extends js.Object {
   var ace: Anon_Theme
   var epiceditor: Anon_BasePath

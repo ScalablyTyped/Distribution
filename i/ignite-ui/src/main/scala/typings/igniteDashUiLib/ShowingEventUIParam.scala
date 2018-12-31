@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShowingEventUIParam extends js.Object {
   /**
   	 * Gets or set the content to be shown as a string.

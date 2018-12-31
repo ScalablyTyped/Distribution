@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompositionContext extends js.Object {
   var activate: js.UndefOr[scala.Boolean] = js.undefined
   var activeView: stdLib.HTMLElement

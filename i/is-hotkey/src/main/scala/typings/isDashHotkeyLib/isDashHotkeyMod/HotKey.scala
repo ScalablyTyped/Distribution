@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HotKey extends js.Object {
   var altKey: scala.Boolean
   var ctrlKey: scala.Boolean

@@ -14,12 +14,12 @@ class SharedAccessSignature protected () extends js.Object {
   var storageAccessKey: java.lang.String = js.native
   var storageAccount: java.lang.String = js.native
   /**
-       * Generates the shared access signature for a resource.
-       */
+    * Generates the shared access signature for a resource.
+    */
   def _generateSignature(path: java.lang.String, resourceType: java.lang.String, sharedAccessPolicy: SharedAccessPolicy): java.lang.String = js.native
   /**
-       * Generates the query string for a shared access signature signing.
-       */
+    * Generates the query string for a shared access signature signing.
+    */
   def _permissionMatchesRequest(
     sharedAccessSignature: java.lang.String,
     webResource: WebResource,
@@ -27,8 +27,8 @@ class SharedAccessSignature protected () extends js.Object {
     requiredPermissions: js.Array[java.lang.String]
   ): java.lang.String = js.native
   /**
-       * Generates the query string for a shared access signature signing.
-       */
+    * Generates the query string for a shared access signature signing.
+    */
   def generateSignedQueryString(
     path: java.lang.String,
     queryString: Dictionary[java.lang.String],
@@ -36,8 +36,8 @@ class SharedAccessSignature protected () extends js.Object {
     sharedAccessPolicy: SharedAccessPolicy
   ): Dictionary[java.lang.String] = js.native
   /**
-       * Signs a request with the signature header.
-       */
+    * Signs a request with the signature header.
+    */
   def signRequest(webResource: WebResource, callback: ErrorCallback): scala.Unit = js.native
 }
 

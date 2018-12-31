@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Subscriptions extends js.Object {
   /** Identifies the resource as a collection of subscriptions. Value: reseller#subscriptions */
   var kind: js.UndefOr[java.lang.String] = js.undefined

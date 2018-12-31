@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Locale extends js.Object {
   var Calendar: js.UndefOr[js.Object] = js.undefined
   var DatePicker: js.UndefOr[js.Object] = js.undefined

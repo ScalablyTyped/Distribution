@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Action extends js.Object {
   /** The action to take. */
   var action: js.UndefOr[Anon_Type] = js.undefined

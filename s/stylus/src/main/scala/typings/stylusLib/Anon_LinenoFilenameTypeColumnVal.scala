@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LinenoFilenameTypeColumnVal extends js.Object {
   var __type: java.lang.String
   var column: scala.Double

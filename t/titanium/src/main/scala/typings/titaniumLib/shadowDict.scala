@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Dictionary describing the shadow effect for text.
- */
-
+  * Dictionary describing the shadow effect for text.
+  */
 trait shadowDict extends js.Object {
   /**
   	 * Specifies the blur radius of the shadow.

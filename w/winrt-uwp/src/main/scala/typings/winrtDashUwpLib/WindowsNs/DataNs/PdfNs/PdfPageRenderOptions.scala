@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents display settings for a single page of a Portable Document Format (PDF) document, such as the page's background color and its encoding type. */
 @JSGlobal("Windows.Data.Pdf.PdfPageRenderOptions")
 @js.native
+/** Creates and initializes a new instance of display settings for a single page of a Portable Document Format (PDF) document. */
 class PdfPageRenderOptions () extends js.Object {
   /** Gets or sets the Portable Document Format (PDF) page's background color. */
   var backgroundColor: winrtDashUwpLib.WindowsNs.UINs.Color = js.native

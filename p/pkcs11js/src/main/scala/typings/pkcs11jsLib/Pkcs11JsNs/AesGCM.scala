@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AesGCM extends IParams {
   var aad: js.UndefOr[nodeLib.Buffer] = js.undefined
   var iv: js.UndefOr[nodeLib.Buffer] = js.undefined

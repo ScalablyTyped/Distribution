@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var dataset: js.UndefOr[Dataset] = js.undefined
   var features: js.UndefOr[Features] = js.undefined

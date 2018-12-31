@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UrlStorageOptions
   extends multerDashGridfsDashStorageLib.multerDashGridfsDashStorageMod.MulterGfsOptions {
   var cache: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined

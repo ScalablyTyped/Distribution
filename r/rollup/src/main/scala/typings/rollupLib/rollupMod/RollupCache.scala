@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RollupCache extends js.Object {
   // to be deprecated
   var modules: js.UndefOr[js.Array[ModuleJSON]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Operation extends js.Object {
   /** The time this operation finished in UTC timezone in RFC 3339 format, for example 2012-11-15T16:19:00.094Z. */
   var endTime: js.UndefOr[java.lang.String] = js.undefined
@@ -20,14 +19,14 @@ trait Operation extends js.Object {
   /** This is always sql#operation. */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * An identifier that uniquely identifies the operation. You can use this identifier to retrieve the Operations resource that has information about the
-               * operation.
-               */
+    * An identifier that uniquely identifies the operation. You can use this identifier to retrieve the Operations resource that has information about the
+    * operation.
+    */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The type of the operation. Valid values are CREATE, DELETE, UPDATE, RESTART, IMPORT, EXPORT, BACKUP_VOLUME, RESTORE_VOLUME, CREATE_USER, DELETE_USER,
-               * CREATE_DATABASE, DELETE_DATABASE .
-               */
+    * The type of the operation. Valid values are CREATE, DELETE, UPDATE, RESTART, IMPORT, EXPORT, BACKUP_VOLUME, RESTORE_VOLUME, CREATE_USER, DELETE_USER,
+    * CREATE_DATABASE, DELETE_DATABASE .
+    */
   var operationType: js.UndefOr[java.lang.String] = js.undefined
   /** The URI of this resource. */
   var selfLink: js.UndefOr[java.lang.String] = js.undefined

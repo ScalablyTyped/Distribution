@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Container_Scroll_Parameter extends js.Object {
   val ActionX: activexDashMsformsLib.MSFormsNs.fmScrollAction
   val ActionY: activexDashMsformsLib.MSFormsNs.fmScrollAction

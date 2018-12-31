@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShapeConnectorDefaults extends js.Object {
   var fill: js.UndefOr[java.lang.String | ShapeConnectorDefaultsFill] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined

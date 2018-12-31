@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JsonpOptions extends js.Object {
   /** If false, redraws mounted components upon completion of the request. If true, it does not. */
   var background: js.UndefOr[scala.Boolean] = js.undefined

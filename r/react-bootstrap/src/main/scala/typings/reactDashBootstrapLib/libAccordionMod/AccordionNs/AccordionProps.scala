@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccordionProps
   extends reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libAccordionMod.Accordion] {
   var bsSize: js.UndefOr[reactDashBootstrapLib.reactDashBootstrapMod.Sizes] = js.undefined

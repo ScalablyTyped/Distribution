@@ -7,6 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("plottable/build/src/plots", "Segment")
 @js.native
+/**
+  * A Segment Plot displays line segments based on the data.
+  *
+  * @constructor
+  */
 class Segment[X, Y] ()
   extends plottableLib.buildSrcPlotsSegmentPlotMod.Segment[X, Y]
 

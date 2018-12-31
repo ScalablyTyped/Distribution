@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IWindowGroup extends IBase {
   /** [Method] Brings the specified Component to the front of any other active Components in this ZIndexManager
   		* @param comp String/Object The id of the Component or a Ext.Component instance

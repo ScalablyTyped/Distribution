@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IColumnLayout
   extends extjsLib.ExtNs.layoutNs.containerNs.IHBox
 

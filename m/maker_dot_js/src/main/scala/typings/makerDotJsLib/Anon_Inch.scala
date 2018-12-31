@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Inch extends js.Object {
   var Centimeter: java.lang.String
   var Foot: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WindowStateKeeperOptions extends js.Object {
   /*
   		 * The height that should be returned if no file exists yet. Defaults to 600.

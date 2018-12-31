@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("mobx/lib/types/observablemap", JSImport.Namespace)
 @js.native
 object libTypesObservablemapModMembers extends js.Object {
-  var isObservableMap: js.Function1[/* thing */ js.Any, /* is ObservableMap */scala.Boolean] = js.native
+  var isObservableMap: js.Function1[
+    /* thing */ js.Any, 
+    /* is mobx.mobx/lib/types/observablemap.ObservableMap<any, any> */ scala.Boolean
+  ] = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IExportContentJob extends js.Object {
   var ExportContent: scala.Boolean
   var ExportStructureItems: scala.Boolean

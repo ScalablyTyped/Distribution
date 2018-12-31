@@ -137,9 +137,6 @@ trait Activity
   			 * Broadcast the passed in `Intent` to all `BroadcastReceiver`s with an optional permission.
   			 */
   def sendBroadcastWithPermission(intent: Intent): scala.Unit = js.native
-  /**
-  			 * Broadcast the passed in `Intent` to all `BroadcastReceiver`s with an optional permission.
-  			 */
   def sendBroadcastWithPermission(intent: Intent, receiverPermission: java.lang.String): scala.Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Android.Activity.onCreate> property.
@@ -185,9 +182,6 @@ trait Activity
   			 * Sets the result of this activity using an `Intent`.
   			 */
   def setResult(resultCode: scala.Double): scala.Unit = js.native
-  /**
-  			 * Sets the result of this activity using an `Intent`.
-  			 */
   def setResult(resultCode: scala.Double, intent: Intent): scala.Unit = js.native
   /**
   			 * Sets a toolbar instance to be used as an ActionBar.

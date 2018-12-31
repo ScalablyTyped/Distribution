@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NodeCheckstateChangingEventUIParam extends js.Object {
   /**
   	 * Gets the collection of all checked nodes before the new state is applied.

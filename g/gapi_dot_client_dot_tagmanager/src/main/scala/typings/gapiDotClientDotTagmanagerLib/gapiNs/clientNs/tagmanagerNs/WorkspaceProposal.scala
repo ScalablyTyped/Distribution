@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkspaceProposal extends js.Object {
   /** List of authors for the workspace proposal. */
   var authors: js.UndefOr[js.Array[WorkspaceProposalUser]] = js.undefined

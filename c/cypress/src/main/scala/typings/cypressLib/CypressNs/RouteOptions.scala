@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RouteOptions extends js.Object {
   var delay: scala.Double
   var force404: scala.Boolean

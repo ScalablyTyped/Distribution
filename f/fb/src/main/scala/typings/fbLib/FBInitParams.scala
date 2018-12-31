@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FBInitParams extends js.Object {
   var appId: js.UndefOr[java.lang.String] = js.undefined
   var authResponse: js.UndefOr[java.lang.String] = js.undefined

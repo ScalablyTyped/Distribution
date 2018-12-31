@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISpinner extends INumber {
   /** [Config Option] (Boolean) */
   var accelerateOnTapHold: js.UndefOr[scala.Boolean] = js.undefined

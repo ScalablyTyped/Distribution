@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NotificationItem extends js.Object {
   /** Additional details about this item. */
   var message: java.lang.String

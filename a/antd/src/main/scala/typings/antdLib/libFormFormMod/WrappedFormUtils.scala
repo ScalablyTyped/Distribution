@@ -23,7 +23,6 @@ trait WrappedFormUtils extends js.Object {
   def getFieldsError(names: js.Array[java.lang.String]): js.Object = js.native
   /** 获取一组输入控件的值，如不传入参数，则获取全部组件的值 */
   def getFieldsValue(): js.Object = js.native
-  /** 获取一组输入控件的值，如不传入参数，则获取全部组件的值 */
   def getFieldsValue(fieldNames: js.Array[java.lang.String]): js.Object = js.native
   def isFieldTouched(name: java.lang.String): scala.Boolean = js.native
   /** 判断一个输入控件是否在校验状态*/
@@ -32,7 +31,6 @@ trait WrappedFormUtils extends js.Object {
   def isFieldsTouched(names: js.Array[java.lang.String]): scala.Boolean = js.native
   /** 重置一组输入控件的值与状态，如不传入参数，则重置所有组件 */
   def resetFields(): scala.Unit = js.native
-  /** 重置一组输入控件的值与状态，如不传入参数，则重置所有组件 */
   def resetFields(names: js.Array[java.lang.String]): scala.Unit = js.native
   /** 设置一组输入控件的值*/
   def setFields(obj: js.Object): scala.Unit = js.native

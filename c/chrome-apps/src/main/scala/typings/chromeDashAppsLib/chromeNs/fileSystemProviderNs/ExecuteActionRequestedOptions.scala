@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** @since Chrome 45. */
-
 trait ExecuteActionRequestedOptions extends js.Object {
   /** The identifier of the action to be executed. */
   var actionId: java.lang.String

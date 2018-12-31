@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Style extends js.Object {
   var alignment: js.UndefOr[Alignment] = js.undefined
   var border: js.UndefOr[Borders] = js.undefined

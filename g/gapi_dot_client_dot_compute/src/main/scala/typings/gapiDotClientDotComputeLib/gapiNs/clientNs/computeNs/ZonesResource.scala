@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ZonesResource extends js.Object {
   /** Returns the specified Zone resource. Get a list of available zones by making a list() request. */
   def get(

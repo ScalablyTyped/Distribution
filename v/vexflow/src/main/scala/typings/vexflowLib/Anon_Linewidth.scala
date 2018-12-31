@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Linewidth extends js.Object {
   var arrowhead_angle: scala.Double
   var arrowhead_length: scala.Double

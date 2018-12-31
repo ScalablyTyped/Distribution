@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SignaleConfig extends js.Object {
   /** Display the badge of the logger. */
   var displayBadge: js.UndefOr[scala.Boolean] = js.undefined

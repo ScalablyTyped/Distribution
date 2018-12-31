@@ -175,9 +175,6 @@ trait ScrollView extends View {
   			 * Moves the specified coordinate of the scrollable region into the viewable area.
   			 */
   def scrollTo(x: scala.Double, y: scala.Double): scala.Unit = js.native
-  /**
-  			 * Moves the specified coordinate of the scrollable region into the viewable area.
-  			 */
   def scrollTo(x: scala.Double, y: scala.Double, animation: titaniumLib.ScrollViewAnimationProperties): scala.Unit = js.native
   /**
   			 * Moves the end of the scrollable region into the viewable area.
@@ -203,9 +200,6 @@ trait ScrollView extends View {
   			 * Sets the value of the [contentOffset](Titanium.UI.ScrollView.contentOffset) property.
   			 */
   def setContentOffset(contentOffset: js.Any): scala.Unit = js.native
-  /**
-  			 * Sets the value of the [contentOffset](Titanium.UI.ScrollView.contentOffset) property.
-  			 */
   def setContentOffset(contentOffset: js.Any, animated: titaniumLib.contentOffsetOption): scala.Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.ScrollView.contentWidth> property.
@@ -279,9 +273,6 @@ trait ScrollView extends View {
   			 * Sets the value of the [zoomScale](Titanium.UI.ScrollView.zoomScale) property.
   			 */
   def setZoomScale(zoomScale: scala.Double): scala.Unit = js.native
-  /**
-  			 * Sets the value of the [zoomScale](Titanium.UI.ScrollView.zoomScale) property.
-  			 */
   def setZoomScale(zoomScale: scala.Double, animated: titaniumLib.zoomScaleOption): scala.Unit = js.native
 }
 

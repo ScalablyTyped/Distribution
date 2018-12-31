@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Searchnearcalls extends js.Object {
   var `bulk-loaded cursor-insert calls`: scala.Double
   var `create calls`: scala.Double

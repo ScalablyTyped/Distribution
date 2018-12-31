@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("vscode-languageclient", "ConnectionStrategy")
 @js.native
 object ConnectionStrategyNs extends js.Object {
-  def is(value: js.Any): /* is ConnectionStrategy */scala.Boolean = js.native
+  def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc.ConnectionStrategy */ scala.Boolean = js.native
 }
 

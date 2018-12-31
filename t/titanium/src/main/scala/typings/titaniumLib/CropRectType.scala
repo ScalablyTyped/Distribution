@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Simple object for describing the crop rectangle for an image.
- */
-
+  * Simple object for describing the crop rectangle for an image.
+  */
 trait CropRectType extends js.Object {
   /**
   	 * Height of the crop rectangle, in pixels.

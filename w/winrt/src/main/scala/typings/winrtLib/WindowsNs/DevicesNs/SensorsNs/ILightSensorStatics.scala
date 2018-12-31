@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILightSensorStatics extends js.Object {
   def getDefault(): LightSensor
 }

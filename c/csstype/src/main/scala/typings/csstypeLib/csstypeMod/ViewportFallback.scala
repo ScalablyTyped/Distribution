@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ViewportFallback[TLength] extends js.Object {
   var OOrientation: js.UndefOr[
     csstypeLib.ViewportOrientationProperty | js.Array[csstypeLib.ViewportOrientationProperty]

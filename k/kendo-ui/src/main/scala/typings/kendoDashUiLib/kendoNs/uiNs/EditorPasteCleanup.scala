@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditorPasteCleanup extends js.Object {
   var all: js.UndefOr[scala.Boolean] = js.undefined
   var css: js.UndefOr[scala.Boolean] = js.undefined

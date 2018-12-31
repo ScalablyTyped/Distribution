@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHelmetHstsConfiguration extends js.Object {
   var force: js.UndefOr[scala.Boolean] = js.undefined
   var includeSubdomains: js.UndefOr[scala.Boolean] = js.undefined

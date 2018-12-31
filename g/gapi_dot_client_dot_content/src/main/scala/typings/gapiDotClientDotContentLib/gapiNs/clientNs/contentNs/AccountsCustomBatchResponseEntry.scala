@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccountsCustomBatchResponseEntry extends js.Object {
   /** The retrieved, created, or updated account. Not defined if the method was delete or claimwebsite. */
   var account: js.UndefOr[Account] = js.undefined

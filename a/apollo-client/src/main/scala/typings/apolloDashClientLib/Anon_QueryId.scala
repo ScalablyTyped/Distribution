@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_QueryId extends js.Object {
   var document: graphqlLib.languageAstMod.DocumentNode
   var fetchMoreForQueryId: js.UndefOr[java.lang.String]

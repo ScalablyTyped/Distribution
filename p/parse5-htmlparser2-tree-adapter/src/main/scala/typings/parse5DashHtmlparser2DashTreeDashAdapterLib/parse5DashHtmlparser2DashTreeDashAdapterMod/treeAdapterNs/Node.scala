@@ -6,41 +6,40 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * htmlparser2 tree adapter Node interface.
-     */
-
+  * htmlparser2 tree adapter Node interface.
+  */
 trait Node extends js.Object {
   /**
-           * Next sibling.
-           */
+    * Next sibling.
+    */
   var next: Node
   /**
-           * Same as {@link next}. [DOM spec](https://dom.spec.whatwg.org)-compatible alias.
-           */
+    * Same as {@link next}. [DOM spec](https://dom.spec.whatwg.org)-compatible alias.
+    */
   var nextSibling: Node
   /**
-           * [DOM spec](https://dom.spec.whatwg.org/#dom-node-nodetype)-compatible node {@link type}.
-           */
+    * [DOM spec](https://dom.spec.whatwg.org/#dom-node-nodetype)-compatible node {@link type}.
+    */
   var nodeType: scala.Double
   /**
-           * Parent node.
-           */
+    * Parent node.
+    */
   var parent: ParentNode
   /**
-           * Same as {@link parent}. [DOM spec](https://dom.spec.whatwg.org)-compatible alias.
-           */
+    * Same as {@link parent}. [DOM spec](https://dom.spec.whatwg.org)-compatible alias.
+    */
   var parentNode: ParentNode
   /**
-           * Previous sibling.
-           */
+    * Previous sibling.
+    */
   var prev: Node
   /**
-           * Same as {@link prev}. [DOM spec](https://dom.spec.whatwg.org)-compatible alias.
-           */
+    * Same as {@link prev}. [DOM spec](https://dom.spec.whatwg.org)-compatible alias.
+    */
   var previousSibling: Node
   /**
-           * The type of the node. E.g. {@link Document} will have `type` equal to 'root'`.
-           */
+    * The type of the node. E.g. {@link Document} will have `type` equal to 'root'`.
+    */
   var `type`: java.lang.String
 }
 

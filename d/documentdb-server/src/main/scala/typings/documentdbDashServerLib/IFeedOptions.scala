@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Options associated with a read feed or query operation. */
-
 trait IFeedOptions extends js.Object {
   /** Opaque token for continuing the enumeration. */
   var continuation: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CredentialsHandshake extends AbstractHandshake {
   var authData: CredentialsAuthData
   var login: java.lang.String

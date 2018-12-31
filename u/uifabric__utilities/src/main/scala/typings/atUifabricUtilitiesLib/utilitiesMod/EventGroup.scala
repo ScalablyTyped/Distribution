@@ -22,25 +22,13 @@ object EventGroup extends js.Object {
   def isDeclared(target: js.Any, eventName: java.lang.String): scala.Boolean = js.native
   def isObserved(target: js.Any, eventName: java.lang.String): scala.Boolean = js.native
   /** For IE8, bubbleEvent is ignored here and must be dealt with by the handler.
-       *  Events raised here by default have bubbling set to false and cancelable set to true.
-       *  This applies also to built-in events being raised manually here on HTMLElements,
-       *  which may lead to unexpected behavior if it differs from the defaults.
-       *
-       */
+    *  Events raised here by default have bubbling set to false and cancelable set to true.
+    *  This applies also to built-in events being raised manually here on HTMLElements,
+    *  which may lead to unexpected behavior if it differs from the defaults.
+    *
+    */
   def raise(target: js.Any, eventName: java.lang.String): js.UndefOr[scala.Boolean] = js.native
-  /** For IE8, bubbleEvent is ignored here and must be dealt with by the handler.
-       *  Events raised here by default have bubbling set to false and cancelable set to true.
-       *  This applies also to built-in events being raised manually here on HTMLElements,
-       *  which may lead to unexpected behavior if it differs from the defaults.
-       *
-       */
   def raise(target: js.Any, eventName: java.lang.String, eventArgs: js.Any): js.UndefOr[scala.Boolean] = js.native
-  /** For IE8, bubbleEvent is ignored here and must be dealt with by the handler.
-       *  Events raised here by default have bubbling set to false and cancelable set to true.
-       *  This applies also to built-in events being raised manually here on HTMLElements,
-       *  which may lead to unexpected behavior if it differs from the defaults.
-       *
-       */
   def raise(target: js.Any, eventName: java.lang.String, eventArgs: js.Any, bubbleEvent: scala.Boolean): js.UndefOr[scala.Boolean] = js.native
   def stopPropagation(event: js.Any): scala.Unit = js.native
 }

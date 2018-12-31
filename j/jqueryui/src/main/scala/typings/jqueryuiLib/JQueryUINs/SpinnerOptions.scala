@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // Spinner //////////////////////////////////////////////////
-
 trait SpinnerOptions extends SpinnerEvents {
   var culture: js.UndefOr[java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined

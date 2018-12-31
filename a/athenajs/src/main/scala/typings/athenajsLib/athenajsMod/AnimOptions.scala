@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnimOptions extends js.Object {
   var frameDuration: scala.Double
   var frameHeight: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LiveDialogResponse extends js.Object {
   var id: java.lang.String
   var secure_stream_url: java.lang.String

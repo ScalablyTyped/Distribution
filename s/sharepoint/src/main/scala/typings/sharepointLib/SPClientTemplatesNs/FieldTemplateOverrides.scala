@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FieldTemplateOverrides extends js.Object {
   /** Defines templates for rendering the field on a display form. */
   var DisplayForm: js.UndefOr[FieldInFormCallback] = js.undefined

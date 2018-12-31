@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 			 * Gravitational force to apply to an item.
 			 */
-
 trait GravityBehavior
   extends titaniumLib.TitaniumNs.Proxy {
   /**

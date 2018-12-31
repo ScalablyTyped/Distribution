@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @abstract
-         */
-
+  * @abstract
+  */
 trait IAction extends js.Object {
   var desc: js.UndefOr[java.lang.String] = js.undefined
 }

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridColumnFilterable extends js.Object {
   var cell: js.UndefOr[GridColumnFilterableCell] = js.undefined
   var checkAll: js.UndefOr[scala.Boolean] = js.undefined

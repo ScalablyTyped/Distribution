@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ProjectReference extends js.Object {
   /** A descriptive name for this project. */
   var friendlyName: js.UndefOr[java.lang.String] = js.undefined

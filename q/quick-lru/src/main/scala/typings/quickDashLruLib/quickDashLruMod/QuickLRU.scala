@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QuickLRU[K, V]
   extends stdLib.Iterable[js.Tuple2[K, V]] {
   val size: scala.Double

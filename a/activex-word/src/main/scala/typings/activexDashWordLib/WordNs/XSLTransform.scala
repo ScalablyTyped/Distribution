@@ -15,12 +15,10 @@ class XSLTransform protected () extends js.Object {
   var `Word.XSLTransform_typekey`: XSLTransform = js.native
   /** @param boolean [AllUsers=false] */
   def Alias(): java.lang.String = js.native
-  /** @param boolean [AllUsers=false] */
   def Alias(AllUsers: scala.Boolean): java.lang.String = js.native
   def Delete(): scala.Unit = js.native
   /** @param boolean [AllUsers=false] */
   def Location(): java.lang.String = js.native
-  /** @param boolean [AllUsers=false] */
   def Location(AllUsers: scala.Boolean): java.lang.String = js.native
 }
 

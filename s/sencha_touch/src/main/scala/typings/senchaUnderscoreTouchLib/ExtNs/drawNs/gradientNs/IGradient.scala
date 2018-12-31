@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGradient
   extends senchaUnderscoreTouchLib.ExtNs.mixinNs.IIdentifiable {
   /** [Config Option] (Array/Object) */

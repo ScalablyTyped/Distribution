@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Enabled extends js.Object {
   // optional callback fired when item is moved,
   var drag: js.UndefOr[

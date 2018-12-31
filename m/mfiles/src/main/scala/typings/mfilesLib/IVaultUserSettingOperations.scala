@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVaultUserSettingOperations extends js.Object {
   def ChangeVaultLanguage(Language: scala.Double): scala.Unit
   def GetSubstituteUsers(): IUserOrUserGroupIDs

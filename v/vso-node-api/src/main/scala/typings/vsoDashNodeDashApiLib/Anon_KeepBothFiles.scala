@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_KeepBothFiles extends js.Object {
   var keepBothFiles: scala.Double
   var keepSourcePath: scala.Double

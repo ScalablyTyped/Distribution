@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced protected () extends NodePowershell {
   /**
-           * Creates a new Shell instance.
-           */
+    * Creates a new Shell instance.
+    */
   def this(options: nodeDashPowershellLib.nodeDashPowershellMod.NodePowershellNs.ShellOptions) = this()
 }
 

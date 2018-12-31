@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebIDLParseError extends js.Object {
   /** a short peek at the text at the point where the error happened */
   var input: java.lang.String

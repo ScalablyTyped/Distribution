@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NvDisplayDefaults extends js.Object {
   var context: js.UndefOr[stdLib.CanvasRenderingContext2D] = js.undefined
   var cursor_uri: js.UndefOr[js.Any] = js.undefined

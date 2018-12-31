@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StatusOptions
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var flags: js.UndefOr[scala.Double] = js.undefined

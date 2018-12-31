@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ParticipantTimelineData extends js.Object {
   var tenToTwenty: scala.Double
   var thirtyToEnd: scala.Double

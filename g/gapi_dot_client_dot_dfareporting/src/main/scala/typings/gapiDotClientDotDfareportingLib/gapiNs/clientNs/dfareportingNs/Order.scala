@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Order extends js.Object {
   /** Account ID of this order. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined

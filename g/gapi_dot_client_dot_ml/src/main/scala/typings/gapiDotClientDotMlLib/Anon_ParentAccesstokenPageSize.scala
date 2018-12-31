@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ParentAccesstokenPageSize extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -25,19 +24,19 @@ trait Anon_ParentAccesstokenPageSize extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Optional. The number of versions to retrieve per "page" of results. If
-                   * there are more remaining results than this number, the response message
-                   * will contain a valid value in the `next_page_token` field.
-                   *
-                   * The default value is 20, and the maximum page size is 100.
-                   */
+    * Optional. The number of versions to retrieve per "page" of results. If
+    * there are more remaining results than this number, the response message
+    * will contain a valid value in the `next_page_token` field.
+    *
+    * The default value is 20, and the maximum page size is 100.
+    */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * Optional. A page token to request the next page of results.
-                   *
-                   * You get the token from the `next_page_token` field of the response from
-                   * the previous call.
-                   */
+    * Optional. A page token to request the next page of results.
+    *
+    * You get the token from the `next_page_token` field of the response from
+    * the previous call.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /** Required. The name of the model for which to list the version. */
   var parent: java.lang.String

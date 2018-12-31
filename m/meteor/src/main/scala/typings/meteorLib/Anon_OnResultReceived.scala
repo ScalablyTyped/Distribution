@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnResultReceived extends js.Object {
   var onResultReceived: js.UndefOr[js.Function] = js.undefined
   var returnStubValue: js.UndefOr[scala.Boolean] = js.undefined

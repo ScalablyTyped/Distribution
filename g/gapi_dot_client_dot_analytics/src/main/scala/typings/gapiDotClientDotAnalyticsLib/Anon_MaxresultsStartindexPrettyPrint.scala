@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MaxresultsStartindexPrettyPrint extends js.Object {
   /** Account ID to retrieve filters for. */
   var accountId: java.lang.String
@@ -22,9 +21,9 @@ trait Anon_MaxresultsStartindexPrettyPrint extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** An index of the first entity to retrieve. Use this parameter as a pagination mechanism along with the max-results parameter. */
   var `start-index`: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InfoBoxViewModel extends js.Object {
   var cameraClicked: Event
   var cameraIconPath: java.lang.String

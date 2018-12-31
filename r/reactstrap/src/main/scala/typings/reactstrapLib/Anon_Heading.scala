@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Heading extends js.Object {
   var alt: js.UndefOr[java.lang.String] = js.undefined
   var body: js.UndefOr[scala.Boolean] = js.undefined

@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Collection[TModel /* <: Model */] extends ModelBase {
   /**
-           * Specify a model attribute name (string) or function that will be used to sort the collection.
-           */
+    * Specify a model attribute name (string) or function that will be used to sort the collection.
+    */
   var comparator: java.lang.String | (js.Function1[/* element */ TModel, scala.Double | java.lang.String]) | (js.Function2[/* compare */ TModel, /* to */ js.UndefOr[TModel], scala.Double]) = js.native
   var length: scala.Double = js.native
   var model: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, TModel] = js.native
   var models: js.Array[TModel] = js.native
   /**
-           * Sets the url property (or function) on a collection to reference its location on the server.
-           *
-           * @memberof Collection
-           */
+    * Sets the url property (or function) on a collection to reference its location on the server.
+    *
+    * @memberof Collection
+    */
   var url: java.lang.String | js.Function0[java.lang.String] = js.native
-  /* private */ def _isModel(obj: js.Any): /* is Model */scala.Boolean = js.native
+  /* private */ def _isModel(obj: js.Any): /* is backbone.backbone.Backbone.Model */ scala.Boolean = js.native
   /* private */ def _onModelEvent(event: java.lang.String, model: TModel, collection: Collection[TModel], options: js.Any): scala.Unit = js.native
   /* private */ def _prepareModel(): js.Any = js.native
   /* private */ def _prepareModel(attributes: js.Any): js.Any = js.native
@@ -34,9 +34,7 @@ trait Collection[TModel /* <: Model */] extends ModelBase {
   def add(models: js.Array[js.Object | TModel], options: AddOptions): js.Array[TModel] = js.native
   // mixins from underscore
   def all(): scala.Boolean = js.native
-  // mixins from underscore
   def all(iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TModel, scala.Boolean]): scala.Boolean = js.native
-  // mixins from underscore
   def all(
     iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TModel, scala.Boolean],
     context: js.Any
@@ -119,17 +117,11 @@ trait Collection[TModel /* <: Model */] extends ModelBase {
     iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TModel, scala.Unit],
     context: js.Any
   ): js.Array[TModel] = js.native
-  /**
-           * Get a model from a collection, specified by an id, a cid, or by passing in a model.
-           **/
   def get(id: Model): TModel = js.native
-  /**
-           * Get a model from a collection, specified by an id, a cid, or by passing in a model.
-           **/
   def get(id: java.lang.String): TModel = js.native
   /**
-           * Get a model from a collection, specified by an id, a cid, or by passing in a model.
-           **/
+    * Get a model from a collection, specified by an id, a cid, or by passing in a model.
+    **/
   def get(id: scala.Double): TModel = js.native
   def groupBy(iterator: java.lang.String): underscoreLib.underscoreMod.underscoreNs.Dictionary[js.Array[TModel]] = js.native
   def groupBy(iterator: java.lang.String, context: js.Any): underscoreLib.underscoreMod.underscoreNs.Dictionary[js.Array[TModel]] = js.native
@@ -219,56 +211,28 @@ trait Collection[TModel /* <: Model */] extends ModelBase {
     context: js.Any
   ): js.Array[TModel] = js.native
   /**
-           *
-           * The set method performs a "smart" update of the collection with the passed list of models.
-           * If a model in the list isn't yet in the collection it will be added; if the model is already in the
-           * collection its attributes will be merged; and if the collection contains any models that aren't present
-           * in the list, they'll be removed. All of the appropriate "add", "remove", and "change" events are fired as
-           * this happens. Returns the touched models in the collection. If you'd like to customize the behavior, you can
-           * disable it with options: {add: false}, {remove: false}, or {merge: false}.
-           * @param models
-           * @param options
-           */
+    *
+    * The set method performs a "smart" update of the collection with the passed list of models.
+    * If a model in the list isn't yet in the collection it will be added; if the model is already in the
+    * collection its attributes will be merged; and if the collection contains any models that aren't present
+    * in the list, they'll be removed. All of the appropriate "add", "remove", and "change" events are fired as
+    * this happens. Returns the touched models in the collection. If you'd like to customize the behavior, you can
+    * disable it with options: {add: false}, {remove: false}, or {merge: false}.
+    * @param models
+    * @param options
+    */
   def set(): js.Array[TModel] = js.native
-  /**
-           *
-           * The set method performs a "smart" update of the collection with the passed list of models.
-           * If a model in the list isn't yet in the collection it will be added; if the model is already in the
-           * collection its attributes will be merged; and if the collection contains any models that aren't present
-           * in the list, they'll be removed. All of the appropriate "add", "remove", and "change" events are fired as
-           * this happens. Returns the touched models in the collection. If you'd like to customize the behavior, you can
-           * disable it with options: {add: false}, {remove: false}, or {merge: false}.
-           * @param models
-           * @param options
-           */
   def set(models: js.Array[TModel]): js.Array[TModel] = js.native
-  /**
-           *
-           * The set method performs a "smart" update of the collection with the passed list of models.
-           * If a model in the list isn't yet in the collection it will be added; if the model is already in the
-           * collection its attributes will be merged; and if the collection contains any models that aren't present
-           * in the list, they'll be removed. All of the appropriate "add", "remove", and "change" events are fired as
-           * this happens. Returns the touched models in the collection. If you'd like to customize the behavior, you can
-           * disable it with options: {add: false}, {remove: false}, or {merge: false}.
-           * @param models
-           * @param options
-           */
   def set(models: js.Array[TModel], options: CollectionSetOptions): js.Array[TModel] = js.native
   def shift(): TModel = js.native
   def shift(options: Silenceable): TModel = js.native
   def shuffle(): js.Array[TModel] = js.native
   def size(): scala.Double = js.native
   /**
-           * Return a shallow copy of this collection's models, using the same options as native Array#slice.
-           */
+    * Return a shallow copy of this collection's models, using the same options as native Array#slice.
+    */
   def slice(): js.Array[TModel] = js.native
-  /**
-           * Return a shallow copy of this collection's models, using the same options as native Array#slice.
-           */
   def slice(min: scala.Double): js.Array[TModel] = js.native
-  /**
-           * Return a shallow copy of this collection's models, using the same options as native Array#slice.
-           */
   def slice(min: scala.Double, max: scala.Double): js.Array[TModel] = js.native
   def some(): scala.Boolean = js.native
   def some(iterator: underscoreLib.underscoreMod.underscoreNs.ListIterator[TModel, scala.Boolean]): scala.Boolean = js.native

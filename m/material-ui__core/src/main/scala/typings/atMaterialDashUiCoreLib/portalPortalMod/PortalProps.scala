@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PortalProps extends js.Object {
   var children: reactLib.reactMod.ReactNs.ReactElement[_]
   var container: js.UndefOr[

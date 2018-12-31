@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILine extends IAggregative {
   /** [Config Option] (Boolean) */
   var fillArea: js.UndefOr[scala.Boolean] = js.undefined

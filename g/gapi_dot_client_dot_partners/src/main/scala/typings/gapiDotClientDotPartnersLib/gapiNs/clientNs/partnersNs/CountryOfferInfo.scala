@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CountryOfferInfo extends js.Object {
   /** (localized) Get Y amount for that country's offer. */
   var getYAmount: js.UndefOr[java.lang.String] = js.undefined

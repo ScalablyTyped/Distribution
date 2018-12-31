@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrderLineItemShippingDetails extends js.Object {
   /** The delivery by date, in ISO 8601 format. */
   var deliverByDate: js.UndefOr[java.lang.String] = js.undefined

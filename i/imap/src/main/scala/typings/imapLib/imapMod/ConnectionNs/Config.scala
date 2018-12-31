@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Config extends js.Object {
   /** Number of milliseconds to wait to be authenticated after a connection has been established. Default: 5000 */
   var authTimeout: js.UndefOr[scala.Double] = js.undefined
@@ -13,7 +12,7 @@ trait Config extends js.Object {
   var autotls: js.UndefOr[java.lang.String] = js.undefined
   /** Number of milliseconds to wait for a connection to be established. Default: 10000 */
   var connTimeout: js.UndefOr[scala.Double] = js.undefined
-    /* boolean|KeepAlive *//** If set, the function will be called with one argument, a string containing some debug info Default: (no debug output) */
+    /* boolean|KeepAlive */ /** If set, the function will be called with one argument, a string containing some debug info Default: (no debug output) */
   var debug: js.UndefOr[js.Function] = js.undefined
   /** Hostname or IP address of the IMAP server. Default: "localhost" */
   var host: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RotateOptions extends js.Object {
   var anchor: js.UndefOr[openlayersLib.openlayersMod.Coordinate] = js.undefined
   var duration: js.UndefOr[scala.Double] = js.undefined

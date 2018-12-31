@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IndicesStatsParams extends GenericParams {
   var completionFields: js.UndefOr[NameList] = js.undefined
   var fielddataFields: js.UndefOr[NameList] = js.undefined

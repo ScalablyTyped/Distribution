@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridEditable extends js.Object {
   var cancelDelete: js.UndefOr[java.lang.String] = js.undefined
   var confirmDelete: js.UndefOr[java.lang.String] = js.undefined

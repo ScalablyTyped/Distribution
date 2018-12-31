@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class HttpCookie protected () extends js.Object {
   /**
-                   * Initializes a new instance of the HttpCookie class with a specified name, domain, and path.
-                   * @param name The name for the HttpCookie
-                   * @param domain The domain for which the HttpCookie is valid.
-                   * @param path The URIs to which the HttpCookie applies.
-                   */
+    * Initializes a new instance of the HttpCookie class with a specified name, domain, and path.
+    * @param name The name for the HttpCookie
+    * @param domain The domain for which the HttpCookie is valid.
+    * @param path The URIs to which the HttpCookie applies.
+    */
   def this(name: java.lang.String, domain: java.lang.String, path: java.lang.String) = this()
   /** Get the domain for which the HttpCookie is valid. */
   var domain: java.lang.String = js.native

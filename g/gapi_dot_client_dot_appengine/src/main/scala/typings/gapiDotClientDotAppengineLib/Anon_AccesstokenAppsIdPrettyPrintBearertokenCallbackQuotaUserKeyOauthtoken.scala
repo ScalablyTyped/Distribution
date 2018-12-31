@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenAppsIdPrettyPrintBearertokenCallbackQuotaUserKeyOauthtoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -25,14 +24,14 @@ trait Anon_AccesstokenAppsIdPrettyPrintBearertokenCallbackQuotaUserKeyOauthtoken
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Set to true to gradually shift traffic to one or more versions that you specify. By default, traffic is shifted immediately. For gradual traffic
-                   * migration, the target versions must be located within instances that are configured for both warmup requests
-                   * (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services.versions#inboundservicetype) and automatic scaling
-                   * (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services.versions#automaticscaling). You must specify the shardBy
-                   * (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services#shardby) field in the Service resource. Gradual traffic migration is
-                   * not supported in the App Engine flexible environment. For examples, see Migrating and Splitting Traffic
-                   * (https://cloud.google.com/appengine/docs/admin-api/migrating-splitting-traffic).
-                   */
+    * Set to true to gradually shift traffic to one or more versions that you specify. By default, traffic is shifted immediately. For gradual traffic
+    * migration, the target versions must be located within instances that are configured for both warmup requests
+    * (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services.versions#inboundservicetype) and automatic scaling
+    * (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services.versions#automaticscaling). You must specify the shardBy
+    * (https://cloud.google.com/appengine/docs/admin-api/reference/rest/v1/apps.services#shardby) field in the Service resource. Gradual traffic migration is
+    * not supported in the App Engine flexible environment. For examples, see Migrating and Splitting Traffic
+    * (https://cloud.google.com/appengine/docs/admin-api/migrating-splitting-traffic).
+    */
   var migrateTraffic: js.UndefOr[scala.Boolean] = js.undefined
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined

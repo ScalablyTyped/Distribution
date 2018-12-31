@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReindexResponseBase extends js.Object {
   var batches: scala.Double
   var deleted: scala.Double

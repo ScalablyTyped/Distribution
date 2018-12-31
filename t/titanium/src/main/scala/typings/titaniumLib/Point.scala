@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * A pair of coordinates used to describe the location of a <Titanium.UI.View>.
- */
-
+  * A pair of coordinates used to describe the location of a <Titanium.UI.View>.
+  */
 trait Point extends js.Object {
   /**
   	 * The x-axis coordinate of this point.

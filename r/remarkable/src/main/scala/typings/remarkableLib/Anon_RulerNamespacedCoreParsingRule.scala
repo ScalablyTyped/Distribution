@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RulerNamespacedCoreParsingRule extends js.Object {
   var ruler: remarkableLib.libRulerMod.namespaced[remarkableLib.libMod.RemarkableNs.CoreParsingRule]
 }

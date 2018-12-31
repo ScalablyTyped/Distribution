@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModuleInfo extends js.Object {
   var cryptokiVersion: Version
   var flags: scala.Double

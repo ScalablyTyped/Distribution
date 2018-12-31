@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageItem extends js.Object {
   def duplicate(): ImageItem
   def getAlignment(): Alignment

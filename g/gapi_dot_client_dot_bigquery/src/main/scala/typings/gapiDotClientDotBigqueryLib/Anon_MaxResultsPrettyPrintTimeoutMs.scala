@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MaxResultsPrettyPrintTimeoutMs extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -26,16 +25,16 @@ trait Anon_MaxResultsPrettyPrintTimeoutMs extends js.Object {
   /** [Required] Project ID of the query job */
   var projectId: java.lang.String
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** Zero-based index of the starting row */
   var startIndex: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * How long to wait for the query to complete, in milliseconds, before returning. Default is 10 seconds. If the timeout passes before the job completes,
-                   * the 'jobComplete' field in the response will be false
-                   */
+    * How long to wait for the query to complete, in milliseconds, before returning. Default is 10 seconds. If the timeout passes before the job completes,
+    * the 'jobComplete' field in the response will be false
+    */
   var timeoutMs: js.UndefOr[scala.Double] = js.undefined
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[java.lang.String] = js.undefined

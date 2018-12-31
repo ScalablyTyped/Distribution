@@ -19,9 +19,6 @@ trait ITooltipsterStatic extends js.Object {
   		 * Returns the instances of Tooltipster of all tooltips set on the element(s) matched by the argument.
   		 */
   def instances(selector: java.lang.String): js.Array[ITooltipsterInstance] = js.native
-  /**
-  		 * Returns the instances of Tooltipster of all tooltips set on the element(s) matched by the argument.
-  		 */
   def instances(selector: tooltipsterLib.JQuery): js.Array[ITooltipsterInstance] = js.native
   /**
   		 * Returns the instances of Tooltipster which were generated during the last initializing call.
@@ -45,15 +42,7 @@ trait ITooltipsterStatic extends js.Object {
   		 * is passed, the results will be limited to the descendants of the matched elements.
   		 */
   def origins(): js.Array[stdLib.HTMLElement] = js.native
-  /**
-  		 * Returns an array of all HTML elements in the page which have one or several tooltips initialized. If a selector 
-  		 * is passed, the results will be limited to the descendants of the matched elements.
-  		 */
   def origins(selector: java.lang.String): js.Array[stdLib.HTMLElement] = js.native
-  /**
-  		 * Returns an array of all HTML elements in the page which have one or several tooltips initialized. If a selector 
-  		 * is passed, the results will be limited to the descendants of the matched elements.
-  		 */
   def origins(selector: tooltipsterLib.JQuery): js.Array[stdLib.HTMLElement] = js.native
   /**
   		 * Changes the default options that will apply to any tooltips created from now on.

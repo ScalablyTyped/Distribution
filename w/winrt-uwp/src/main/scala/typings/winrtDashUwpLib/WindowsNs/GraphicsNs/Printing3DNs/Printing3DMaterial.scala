@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents all material resources in the 3D model. */
 @JSGlobal("Windows.Graphics.Printing3D.Printing3DMaterial")
 @js.native
+/** Creates an instance of the Printing3DMaterial class. */
 class Printing3DMaterial () extends js.Object {
   /** Gets all base material groups used in the 3D model. */
   var baseGroups: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[Printing3DBaseMaterialGroup] = js.native

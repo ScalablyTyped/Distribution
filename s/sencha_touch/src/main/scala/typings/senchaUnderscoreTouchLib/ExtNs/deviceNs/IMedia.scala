@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMedia
   extends senchaUnderscoreTouchLib.ExtNs.deviceNs.mediaNs.IAbstract
 

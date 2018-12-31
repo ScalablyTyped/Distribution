@@ -10,10 +10,10 @@ package object libCommonDashTypesMod {
     /* name */ java.lang.String, 
     /* callback */ js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException | scala.Null, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       scala.Unit
     ], 
     scala.Unit
   ]
-  type ErrorCallback[T] = js.Function2[/* err */ T | scala.Null, /* repeated */js.Any, js.Any]
+  type ErrorCallback[T] = js.Function2[/* err */ T | scala.Null, /* repeated */ js.Any, js.Any]
 }

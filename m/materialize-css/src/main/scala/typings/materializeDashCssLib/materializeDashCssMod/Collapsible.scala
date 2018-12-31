@@ -14,27 +14,21 @@ class Collapsible ()
 @js.native
 object Collapsible extends js.Object {
   /**
-           * Get Instance
-           */
+    * Get Instance
+    */
   def getInstance(elem: stdLib.Element): materializeDashCssLib.MNs.Collapsible = js.native
   /**
-           * Init Collapsibles
-           */
+    * Init Collapsibles
+    */
   def init(els: materializeDashCssLib.MElements): js.Array[materializeDashCssLib.MNs.Collapsible] = js.native
-  /**
-           * Init Collapsibles
-           */
   def init(
     els: materializeDashCssLib.MElements,
     options: stdLib.Partial[materializeDashCssLib.MNs.CollapsibleOptions]
   ): js.Array[materializeDashCssLib.MNs.Collapsible] = js.native
   /**
-           * Init Collapsible
-           */
+    * Init Collapsible
+    */
   def init(els: stdLib.Element): materializeDashCssLib.MNs.Collapsible = js.native
-  /**
-           * Init Collapsible
-           */
   def init(els: stdLib.Element, options: stdLib.Partial[materializeDashCssLib.MNs.CollapsibleOptions]): materializeDashCssLib.MNs.Collapsible = js.native
 }
 

@@ -8,25 +8,21 @@ import scala.scalajs.js.annotation._
 @JSImport("paypal-rest-sdk", "invoice")
 @js.native
 object invoiceNs extends js.Object {
-  
   trait BillingInfo extends Person {
     var additional_info: js.UndefOr[java.lang.String] = js.undefined
     var language: js.UndefOr[java.lang.String] = js.undefined
     var notification_channel: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait Cost extends js.Object {
     var amount: js.UndefOr[paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Currency] = js.undefined
     var percent: js.UndefOr[scala.Double] = js.undefined
   }
   
-  
   trait CustomAmount extends js.Object {
     var amount: paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Currency
     var label: java.lang.String
   }
-  
   
   trait Detail extends js.Object {
     var amount: paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Currency
@@ -36,7 +32,6 @@ object invoiceNs extends js.Object {
     var `type`: java.lang.String
   }
   
-  
   trait EmailRequest extends js.Object {
     var cc_emails: js.UndefOr[js.Array[java.lang.String]] = js.undefined
     var note: js.UndefOr[java.lang.String] = js.undefined
@@ -45,12 +40,10 @@ object invoiceNs extends js.Object {
     var subject: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait FileAttachment extends js.Object {
     var name: java.lang.String
     var url: java.lang.String
   }
-  
   
   trait Invoice extends js.Object {
     var allow_partial_payment: js.UndefOr[scala.Boolean] = js.undefined
@@ -90,7 +83,6 @@ object invoiceNs extends js.Object {
     val uri: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait InvoiceItem extends js.Object {
     var date: js.UndefOr[java.lang.String] = js.undefined
     var description: js.UndefOr[java.lang.String] = js.undefined
@@ -102,17 +94,14 @@ object invoiceNs extends js.Object {
     var unit_price: paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Currency
   }
   
-  
   trait InvoiceResponse
     extends Invoice
        with paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Response
-  
   
   trait ListResponse
     extends paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Response {
     var invoices: js.Array[Invoice]
   }
-  
   
   trait Merchant extends Person {
     var additional_info: js.UndefOr[java.lang.String] = js.undefined
@@ -121,11 +110,9 @@ object invoiceNs extends js.Object {
     var tax_id: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait NumberResponse extends js.Object {
     var number: java.lang.String
   }
-  
   
   trait Participant extends Person {
     var additional_info: js.UndefOr[java.lang.String] = js.undefined
@@ -134,7 +121,6 @@ object invoiceNs extends js.Object {
     var fax: js.UndefOr[paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Phone] = js.undefined
   }
   
-  
   trait PayRequest extends js.Object {
     var amount: paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Currency
     var date: java.lang.String
@@ -142,18 +128,15 @@ object invoiceNs extends js.Object {
     var note: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait PaymentDetail extends Detail {
     var method: java.lang.String
     var transaction_type: java.lang.String
   }
   
-  
   trait PaymentTerm extends js.Object {
     var due_date: js.UndefOr[java.lang.String] = js.undefined
     var term_type: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait Person extends js.Object {
     var address: js.UndefOr[paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Address] = js.undefined
@@ -165,18 +148,15 @@ object invoiceNs extends js.Object {
     var website: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait QrResponse extends js.Object {
     var image: java.lang.String
   }
-  
   
   trait RefundRequest extends js.Object {
     var amount: paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Currency
     var date: java.lang.String
     var note: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait SearchRequest extends js.Object {
     var archived: js.UndefOr[scala.Boolean] = js.undefined
@@ -201,12 +181,10 @@ object invoiceNs extends js.Object {
     var upper_total_amount: js.UndefOr[paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Currency] = js.undefined
   }
   
-  
   trait ShippingCost extends js.Object {
     var amount: js.UndefOr[paypalDashRestDashSdkLib.paypalDashRestDashSdkMod.Currency] = js.undefined
     var tax: js.UndefOr[Tax] = js.undefined
   }
-  
   
   trait Tax extends Cost {
     var id: js.UndefOr[java.lang.String] = js.undefined

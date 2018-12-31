@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBackgroundTransferBase extends js.Object {
   var costPolicy: BackgroundTransferCostPolicy
   var group: java.lang.String

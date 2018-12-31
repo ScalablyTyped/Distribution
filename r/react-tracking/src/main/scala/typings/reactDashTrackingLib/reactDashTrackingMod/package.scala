@@ -11,5 +11,10 @@ package object reactDashTrackingMod {
     /* options */ js.UndefOr[Options[stdLib.Partial[T]]], 
     reactDashTrackingLib.Decorator
   ]
-  type TrackingInfo[T, P, S] = T | (js.Function3[/* props */ P, /* state */ S, /* args */ js.Any, T])
+  type TrackingInfo[T, P, S] = T | (js.Function3[
+    /* props */ P, 
+    /* state */ S, 
+    /* import warning: ImportType.apply Failed type conversion: any[any] */ /* args */ js.Any, 
+    T
+  ])
 }

@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Wait a few seconds.
-     *
-     */
+  * Wait a few seconds.
+  *
+  */
 @JSGlobal("b3.Wait")
 @js.native
+/**
+  * Creates an instance of Wait.
+  */
 class Wait () extends Action {
-  /**
-           * Creates an instance of Wait.
-           */
   def this(hasMilliseconds: behavior3Lib.Anon_Milliseconds) = this()
 }
 

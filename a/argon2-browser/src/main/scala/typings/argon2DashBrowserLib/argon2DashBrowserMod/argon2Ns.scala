@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("argon2-browser", "argon2")
 @js.native
 object argon2Ns extends js.Object {
-  
   trait Argon2BrowserHashOptions extends js.Object {
     var distPath: js.UndefOr[java.lang.String] = js.undefined
     var hashLen: js.UndefOr[scala.Double] = js.undefined
@@ -19,7 +18,6 @@ object argon2Ns extends js.Object {
     var time: js.UndefOr[scala.Double] = js.undefined
     var `type`: js.UndefOr[ArgonType] = js.undefined
   }
-  
   
   trait Argon2BrowserHashResult extends js.Object {
     var encoded: java.lang.String

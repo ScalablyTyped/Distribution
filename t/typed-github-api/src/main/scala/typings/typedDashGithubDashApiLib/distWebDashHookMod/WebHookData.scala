@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebHookData extends js.Object {
   var action: java.lang.String
   var event: java.lang.String

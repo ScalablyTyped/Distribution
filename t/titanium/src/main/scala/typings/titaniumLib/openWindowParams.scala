@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Dictionary of options for the <Titanium.UI.Window.open> method.
- */
-
+  * Dictionary of options for the <Titanium.UI.Window.open> method.
+  */
 trait openWindowParams extends js.Object {
   /**
   	 * Animation resource to run on the activity (heavyweight window) being opened.

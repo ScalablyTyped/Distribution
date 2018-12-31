@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JasmineJQuery extends js.Object {
   var events: JasmineJQueryEvents
   var matchersClass: js.Any

@@ -12,22 +12,22 @@ sealed trait CoverageQueryFlags extends js.Object
 @js.native
 object CoverageQueryFlags extends js.Object {
   /**
-       * If set, the ModuleCoverage.CoverageData field will be populated.
-       */
+    * If set, the ModuleCoverage.CoverageData field will be populated.
+    */
   @js.native
   sealed trait BlockData
     extends vsoDashNodeDashApiLib.interfacesTestInterfacesMod.CoverageQueryFlags
   
   /**
-       * If set, the ModuleCoverage.Functions properties will be populated.
-       */
+    * If set, the ModuleCoverage.Functions properties will be populated.
+    */
   @js.native
   sealed trait Functions
     extends vsoDashNodeDashApiLib.interfacesTestInterfacesMod.CoverageQueryFlags
   
   /**
-       * If set, the Coverage.Modules property will be populated.
-       */
+    * If set, the Coverage.Modules property will be populated.
+    */
   @js.native
   sealed trait Modules
     extends vsoDashNodeDashApiLib.interfacesTestInterfacesMod.CoverageQueryFlags

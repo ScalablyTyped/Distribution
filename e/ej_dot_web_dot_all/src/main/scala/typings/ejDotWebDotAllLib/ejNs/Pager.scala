@@ -16,29 +16,29 @@ class Pager protected () extends Widget {
   @JSName("model")
   var model_Pager: ejDotWebDotAllLib.ejNs.PagerNs.Model = js.native
   /** goToFirstPage() helps to navigate to the first page of the pager.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def goToFirstPage(): scala.Unit = js.native
   /** goToLastPage() helps to navigate to the Last page of the pager.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def goToLastPage(): scala.Unit = js.native
   /** goToNextPage() helps to navigate to the next page to the current page of the pager.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def goToNextPage(): scala.Unit = js.native
   /** goToPrevPage() helps to navigate to the previous page to the current page of the pager.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def goToPrevPage(): scala.Unit = js.native
   /** Send a paging request to specified page through the pager control.
-           * @param {number} Specifies the index to be navigated
-           * @returns {void}
-           */
+    * @param {number} Specifies the index to be navigated
+    * @returns {void}
+    */
   def gotoPage(pageIndex: scala.Double): scala.Unit = js.native
   /** refreshPager() helps to refresh the model value of pager control.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def refreshPager(): scala.Unit = js.native
 }
 

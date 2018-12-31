@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlaybackState extends js.Object {
   var context: PlaybackContext
   var disallows: PlaybackDisallows
@@ -13,10 +12,10 @@ trait PlaybackState extends js.Object {
   var paused: scala.Boolean
   var position: scala.Double
   /**
-           * 0: NO_REPEAT
-           * 1: ONCE_REPEAT
-           * 2: FULL_REPEAT
-           */
+    * 0: NO_REPEAT
+    * 1: ONCE_REPEAT
+    * 2: FULL_REPEAT
+    */
   var repeat_mode: spotifyDashWebDashPlaybackDashSdkLib.spotifyDashWebDashPlaybackDashSdkLibNumbers.`0` | spotifyDashWebDashPlaybackDashSdkLib.spotifyDashWebDashPlaybackDashSdkLibNumbers.`1` | spotifyDashWebDashPlaybackDashSdkLib.spotifyDashWebDashPlaybackDashSdkLibNumbers.`2`
   var restrictions: PlaybackRestrictions
   var shuffle: scala.Boolean

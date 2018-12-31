@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveMultipleInheritance: Dropped parents List(reactLib.reactMod.ReactNs.HTMLAttributes because Would inherit conflicting mutable fields List(className))*/
-
 trait ColumnProps
   extends reactDashFoundationLib.utilsMod.FlexboxPropTypes {
   var centerOnLarge: js.UndefOr[scala.Boolean] = js.undefined

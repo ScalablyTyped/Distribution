@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TimingFunc extends js.Object {
   // 动画变化时间，默认0，单位：毫秒
   var duration: js.UndefOr[scala.Double] = js.undefined

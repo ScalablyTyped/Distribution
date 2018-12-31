@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseNodeWithoutComments extends js.Object {
   var loc: js.UndefOr[SourceLocation | scala.Null] = js.undefined
   var range: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Review extends js.Object {
    // 待人工复审的类别列表与详情
   var pass: js.Array[Anon_Hit]

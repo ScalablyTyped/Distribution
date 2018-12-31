@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @mixin
-         */
+  * @mixin
+  */
 @js.native
 trait IDate extends js.Object {
   def isDateEqual(got: stdLib.Date, expectedDate: stdLib.Date): scala.Unit = js.native

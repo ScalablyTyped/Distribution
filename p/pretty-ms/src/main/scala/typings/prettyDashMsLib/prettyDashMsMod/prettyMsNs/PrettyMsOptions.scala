@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PrettyMsOptions extends js.Object {
   var compact: js.UndefOr[scala.Boolean] = js.undefined
   var formatSubMs: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Map
   extends // full data if this country has been retrieved with country() at least once
 /* code */ org.scalablytyped.runtime.StringDictionary[Full | Partial]

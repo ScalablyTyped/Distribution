@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Enum for storage constants
-     */
-
+  * Enum for storage constants
+  */
 trait Constants extends js.Object {
   var ACCESS_TOKEN: adalDashAngularLib.adalDashAngularLibStrings.access_token
   var ERROR_DESCRIPTION: adalDashAngularLib.adalDashAngularLibStrings.error_description

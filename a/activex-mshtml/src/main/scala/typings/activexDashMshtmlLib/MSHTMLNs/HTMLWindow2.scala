@@ -136,7 +136,6 @@ trait HTMLWindow2 extends js.Object {
   def addEventListener(`type`: java.lang.String, listener: js.Any, useCapture: scala.Boolean): scala.Unit = js.native
   /** @param message [message=''] */
   def alert(): scala.Unit = js.native
-  /** @param message [message=''] */
   def alert(message: java.lang.String): scala.Unit = js.native
   def attachEvent(event: java.lang.String, pdisp: js.Any): scala.Boolean = js.native
   def blur(): scala.Unit = js.native
@@ -145,7 +144,6 @@ trait HTMLWindow2 extends js.Object {
   def close(): scala.Unit = js.native
   /** @param message [message=''] */
   def confirm(): scala.Boolean = js.native
-  /** @param message [message=''] */
   def confirm(message: java.lang.String): scala.Boolean = js.native
   def createPopup(): js.Any = js.native
   def createPopup(varArgIn: js.Any): js.Any = js.native
@@ -153,13 +151,11 @@ trait HTMLWindow2 extends js.Object {
   def dispatchEvent(evt: IDOMEvent): scala.Boolean = js.native
   /** @param language [language='JScript'] */
   def execScript(code: java.lang.String): js.Any = js.native
-  /** @param language [language='JScript'] */
   def execScript(code: java.lang.String, language: java.lang.String): js.Any = js.native
   def focus(): scala.Unit = js.native
   def frames(pvarIndex: js.Any): js.Any = js.native
   /** @param bstrPseudoElt [bstrPseudoElt=''] */
   def getComputedStyle(varArgIn: IHTMLDOMNode): IHTMLCSSStyleDeclaration = js.native
-  /** @param bstrPseudoElt [bstrPseudoElt=''] */
   def getComputedStyle(varArgIn: IHTMLDOMNode, bstrPseudoElt: java.lang.String): IHTMLCSSStyleDeclaration = js.native
   def getSelection(): IHTMLSelection = js.native
   def item(pvarIndex: js.Any): js.Any = js.native
@@ -168,58 +164,26 @@ trait HTMLWindow2 extends js.Object {
   def msWriteProfilerMark(bstrProfilerMarkName: java.lang.String): scala.Unit = js.native
   def navigate(url: java.lang.String): scala.Unit = js.native
   /**
-           * @param url [url='']
-           * @param name [name='']
-           * @param features [features='']
-           * @param replace [replace=false]
-           */
+    * @param url [url='']
+    * @param name [name='']
+    * @param features [features='']
+    * @param replace [replace=false]
+    */
   def open(): IHTMLWindow2 = js.native
-  /**
-           * @param url [url='']
-           * @param name [name='']
-           * @param features [features='']
-           * @param replace [replace=false]
-           */
   def open(url: java.lang.String): IHTMLWindow2 = js.native
-  /**
-           * @param url [url='']
-           * @param name [name='']
-           * @param features [features='']
-           * @param replace [replace=false]
-           */
   def open(url: java.lang.String, name: java.lang.String): IHTMLWindow2 = js.native
-  /**
-           * @param url [url='']
-           * @param name [name='']
-           * @param features [features='']
-           * @param replace [replace=false]
-           */
   def open(url: java.lang.String, name: java.lang.String, features: java.lang.String): IHTMLWindow2 = js.native
-  /**
-           * @param url [url='']
-           * @param name [name='']
-           * @param features [features='']
-           * @param replace [replace=false]
-           */
   def open(url: java.lang.String, name: java.lang.String, features: java.lang.String, replace: scala.Boolean): IHTMLWindow2 = js.native
   def parent(pvarIndex: js.Any): js.Any = js.native
   def postMessage(msg: java.lang.String): scala.Unit = js.native
   def postMessage(msg: java.lang.String, targetOrigin: js.Any): scala.Unit = js.native
   def print(): scala.Unit = js.native
   /**
-           * @param message [message='']
-           * @param defstr [defstr='undefined']
-           */
+    * @param message [message='']
+    * @param defstr [defstr='undefined']
+    */
   def prompt(): js.Any = js.native
-  /**
-           * @param message [message='']
-           * @param defstr [defstr='undefined']
-           */
   def prompt(message: java.lang.String): js.Any = js.native
-  /**
-           * @param message [message='']
-           * @param defstr [defstr='undefined']
-           */
   def prompt(message: java.lang.String, defstr: java.lang.String): js.Any = js.native
   def removeEventListener(`type`: java.lang.String, listener: js.Any, useCapture: scala.Boolean): scala.Unit = js.native
   def resizeBy(x: scala.Double, y: scala.Double): scala.Unit = js.native
@@ -234,18 +198,14 @@ trait HTMLWindow2 extends js.Object {
   def setTimeout(expression: js.Any, msec: scala.Double, language: js.Any): scala.Double = js.native
   /** @param features [features=''] */
   def showHelp(helpURL: java.lang.String, helpArg: js.Any): scala.Unit = js.native
-  /** @param features [features=''] */
   def showHelp(helpURL: java.lang.String, helpArg: js.Any, features: java.lang.String): scala.Unit = js.native
   def showModalDialog(dialog: java.lang.String): js.Any = js.native
   def showModalDialog(dialog: java.lang.String, varArgIn: js.Any): js.Any = js.native
   def showModalDialog(dialog: java.lang.String, varArgIn: js.Any, varOptions: js.Any): js.Any = js.native
   /** @param url [url=''] */
   def showModelessDialog(): IHTMLWindow2 = js.native
-  /** @param url [url=''] */
   def showModelessDialog(url: java.lang.String): IHTMLWindow2 = js.native
-  /** @param url [url=''] */
   def showModelessDialog(url: java.lang.String, varArgIn: js.Any): IHTMLWindow2 = js.native
-  /** @param url [url=''] */
   def showModelessDialog(url: java.lang.String, varArgIn: js.Any, options: js.Any): IHTMLWindow2 = js.native
   def toStaticHTML(bstrHTML: java.lang.String): java.lang.String = js.native
   def top(pvarIndex: js.Any): js.Any = js.native

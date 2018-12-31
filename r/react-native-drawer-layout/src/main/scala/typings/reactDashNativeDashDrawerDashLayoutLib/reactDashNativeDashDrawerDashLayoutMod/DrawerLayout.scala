@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 trait DrawerLayout
   extends reactLib.reactMod.Component[DrawerLayoutProperties, js.Object, js.Any] {
   /**
-       * Closes the drawer.
-       */
+    * Closes the drawer.
+    */
   def closeDrawer(): scala.Unit = js.native
   /**
-       * Opens the drawer.
-       */
+    * Opens the drawer.
+    */
   def openDrawer(): scala.Unit = js.native
 }
 

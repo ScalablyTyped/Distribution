@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FfmpegCommandOptions extends js.Object {
   var logger: js.UndefOr[FfmpegCommandLogger] = js.undefined
   var niceness: js.UndefOr[scala.Double] = js.undefined

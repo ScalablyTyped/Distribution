@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgGridResponsiveMethods extends js.Object {
   /**
   	 * Destroys the responsive widget.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DSNOptions extends js.Object {
   /** sender’s ‘envelope identifier’ for tracking */
   var envid: js.UndefOr[java.lang.String] = js.undefined

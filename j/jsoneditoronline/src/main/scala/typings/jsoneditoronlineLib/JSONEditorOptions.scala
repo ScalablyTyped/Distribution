@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JSONEditorOptions extends js.Object {
   var change: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var history: js.UndefOr[scala.Boolean] = js.undefined

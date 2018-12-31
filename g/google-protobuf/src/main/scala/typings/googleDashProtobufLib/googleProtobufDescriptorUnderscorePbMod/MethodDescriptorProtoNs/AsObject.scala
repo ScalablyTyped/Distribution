@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AsObject extends js.Object {
   var clientStreaming: js.UndefOr[scala.Boolean] = js.undefined
   var inputType: js.UndefOr[java.lang.String] = js.undefined

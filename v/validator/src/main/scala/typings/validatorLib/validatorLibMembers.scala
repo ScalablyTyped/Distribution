@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object validatorLibMembers extends js.Object {
   /**
-   * MODULES
-   */
+    * MODULES
+    */
   var validator: validatorLib.ValidatorJSNs.ValidatorStatic = js.native
 }
 

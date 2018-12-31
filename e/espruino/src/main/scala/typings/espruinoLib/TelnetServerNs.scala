@@ -12,10 +12,10 @@ import scala.scalajs.js.annotation._
 @js.native
 object TelnetServerNs extends js.Object {
   /**
-       * 
-       * @param options 
-       * @url http://www.espruino.com/Reference#l_TelnetServer_setOptions
-       */
+    * 
+    * @param options 
+    * @url http://www.espruino.com/Reference#l_TelnetServer_setOptions
+    */
   def setOptions(options: js.Any): scala.Unit = js.native
 }
 

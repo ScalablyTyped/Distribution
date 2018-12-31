@@ -6,14 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-                 * @property maps {Object<string, Object>} -
-                 * @property schemes {Object<string, Object>} -
-                 * @property tiletypes {Object<string, Object>} -
-                 * @property formats {Object<string, Object>} -
-                 * @property resolutions {Object<string, Object>} -
-                 * @property languages {Object<string, Object>} -
-                 */
-
+  * @property maps {Object<string, Object>} -
+  * @property schemes {Object<string, Object>} -
+  * @property tiletypes {Object<string, Object>} -
+  * @property formats {Object<string, Object>} -
+  * @property resolutions {Object<string, Object>} -
+  * @property languages {Object<string, Object>} -
+  */
 trait Info extends js.Object {
   var formats: org.scalablytyped.runtime.StringDictionary[js.Any]
   var languages: org.scalablytyped.runtime.StringDictionary[js.Any]

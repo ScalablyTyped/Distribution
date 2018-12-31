@@ -19,7 +19,6 @@ trait Graph extends HasAttributes {
   def addEdge(nodeOne: java.lang.String, nodeTwo: Node, attrs: js.Any): Edge = js.native
   // TODO: Use union types when we have TS 1.4
   def addEdge(nodeOne: java.lang.String, nodeTwo: java.lang.String): Edge = js.native
-  // TODO: Use union types when we have TS 1.4
   def addEdge(nodeOne: java.lang.String, nodeTwo: java.lang.String, attrs: js.Any): Edge = js.native
   def addNode(id: java.lang.String): Node = js.native
   def addNode(id: java.lang.String, attrs: js.Any): Node = js.native
@@ -37,7 +36,6 @@ trait Graph extends HasAttributes {
   def output(`type`: java.lang.String, callback: OutputCallback, errback: ErrorCallback): scala.Unit = js.native
   // alias for render
   def output(`type`: java.lang.String, filename: java.lang.String): scala.Unit = js.native
-  // alias for render
   def output(`type`: java.lang.String, filename: java.lang.String, errback: ErrorCallback): scala.Unit = js.native
   def render(options: RenderOptions, callback: OutputCallback): scala.Unit = js.native
   def render(options: RenderOptions, callback: OutputCallback, errback: ErrorCallback): scala.Unit = js.native
@@ -47,7 +45,6 @@ trait Graph extends HasAttributes {
   def render(`type`: java.lang.String, callback: OutputCallback, errback: ErrorCallback): scala.Unit = js.native
   // TODO: Use union types when we can have TS 1.4
   def render(`type`: java.lang.String, filename: java.lang.String): scala.Unit = js.native
-  // TODO: Use union types when we can have TS 1.4
   def render(`type`: java.lang.String, filename: java.lang.String, errback: ErrorCallback): scala.Unit = js.native
   def setEdgeAttribut(name: java.lang.String, value: js.Any): scala.Unit = js.native
   // Path containing Graphviz binaries.

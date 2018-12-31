@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISupport extends js.Object {
    // | () => boolean;
   var canTakeSnapshot: js.UndefOr[scala.Boolean] = js.undefined

@@ -13,23 +13,17 @@ class FreeformBuilder protected () extends js.Object {
   val Parent: js.Any = js.native
   var `PowerPoint.FreeformBuilder_typekey`: FreeformBuilder = js.native
   /**
-           * @param number [X2=0]
-           * @param number [Y2=0]
-           * @param number [X3=0]
-           * @param number [Y3=0]
-           */
+    * @param number [X2=0]
+    * @param number [Y2=0]
+    * @param number [X3=0]
+    * @param number [Y3=0]
+    */
   def AddNodes(
     SegmentType: activexDashOfficeLib.OfficeNs.MsoSegmentType,
     EditingType: activexDashOfficeLib.OfficeNs.MsoEditingType,
     X1: scala.Double,
     Y1: scala.Double
   ): scala.Unit = js.native
-  /**
-           * @param number [X2=0]
-           * @param number [Y2=0]
-           * @param number [X3=0]
-           * @param number [Y3=0]
-           */
   def AddNodes(
     SegmentType: activexDashOfficeLib.OfficeNs.MsoSegmentType,
     EditingType: activexDashOfficeLib.OfficeNs.MsoEditingType,
@@ -37,12 +31,6 @@ class FreeformBuilder protected () extends js.Object {
     Y1: scala.Double,
     X2: scala.Double
   ): scala.Unit = js.native
-  /**
-           * @param number [X2=0]
-           * @param number [Y2=0]
-           * @param number [X3=0]
-           * @param number [Y3=0]
-           */
   def AddNodes(
     SegmentType: activexDashOfficeLib.OfficeNs.MsoSegmentType,
     EditingType: activexDashOfficeLib.OfficeNs.MsoEditingType,
@@ -51,12 +39,6 @@ class FreeformBuilder protected () extends js.Object {
     X2: scala.Double,
     Y2: scala.Double
   ): scala.Unit = js.native
-  /**
-           * @param number [X2=0]
-           * @param number [Y2=0]
-           * @param number [X3=0]
-           * @param number [Y3=0]
-           */
   def AddNodes(
     SegmentType: activexDashOfficeLib.OfficeNs.MsoSegmentType,
     EditingType: activexDashOfficeLib.OfficeNs.MsoEditingType,
@@ -66,12 +48,6 @@ class FreeformBuilder protected () extends js.Object {
     Y2: scala.Double,
     X3: scala.Double
   ): scala.Unit = js.native
-  /**
-           * @param number [X2=0]
-           * @param number [Y2=0]
-           * @param number [X3=0]
-           * @param number [Y3=0]
-           */
   def AddNodes(
     SegmentType: activexDashOfficeLib.OfficeNs.MsoSegmentType,
     EditingType: activexDashOfficeLib.OfficeNs.MsoEditingType,

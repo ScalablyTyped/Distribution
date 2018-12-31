@@ -10,101 +10,81 @@ trait HTMLIFrameElement
   extends HTMLElement
      with GetSVGDocument {
   /**
-       * Sets or retrieves how the object is aligned with adjacent text.
-       */
+    * Sets or retrieves how the object is aligned with adjacent text.
+    */
   /** @deprecated */
   var align: java.lang.String = js.native
   var allowFullscreen: scala.Boolean = js.native
   var allowPaymentRequest: scala.Boolean = js.native
   /**
-       * Retrieves the document object of the page or frame.
-       */
+    * Retrieves the document object of the page or frame.
+    */
   val contentDocument: Document | scala.Null = js.native
   /**
-       * Retrieves the object of the specified.
-       */
+    * Retrieves the object of the specified.
+    */
   val contentWindow: Window | scala.Null = js.native
   /**
-       * Sets or retrieves whether to display a border for the frame.
-       */
+    * Sets or retrieves whether to display a border for the frame.
+    */
   /** @deprecated */
   var frameBorder: java.lang.String = js.native
   /**
-       * Sets or retrieves the height of the object.
-       */
+    * Sets or retrieves the height of the object.
+    */
   var height: java.lang.String = js.native
   /**
-       * Sets or retrieves a URI to a long description of the object.
-       */
+    * Sets or retrieves a URI to a long description of the object.
+    */
   /** @deprecated */
   var longDesc: java.lang.String = js.native
   /**
-       * Sets or retrieves the top and bottom margin heights before displaying the text in a frame.
-       */
+    * Sets or retrieves the top and bottom margin heights before displaying the text in a frame.
+    */
   /** @deprecated */
   var marginHeight: java.lang.String = js.native
   /**
-       * Sets or retrieves the left and right margin widths before displaying the text in a frame.
-       */
+    * Sets or retrieves the left and right margin widths before displaying the text in a frame.
+    */
   /** @deprecated */
   var marginWidth: java.lang.String = js.native
   /**
-       * Sets or retrieves the frame name.
-       */
+    * Sets or retrieves the frame name.
+    */
   var name: java.lang.String = js.native
   val referrerPolicy: ReferrerPolicy = js.native
   val sandbox: DOMTokenList = js.native
   /**
-       * Sets or retrieves whether the frame can be scrolled.
-       */
+    * Sets or retrieves whether the frame can be scrolled.
+    */
   /** @deprecated */
   var scrolling: java.lang.String = js.native
   /**
-       * Sets or retrieves a URL to be loaded by the object.
-       */
+    * Sets or retrieves a URL to be loaded by the object.
+    */
   var src: java.lang.String = js.native
   /**
-       * Sets or retrives the content of the page that is to contain.
-       */
+    * Sets or retrives the content of the page that is to contain.
+    */
   var srcdoc: java.lang.String = js.native
   /**
-       * Sets or retrieves the width of the object.
-       */
+    * Sets or retrieves the width of the object.
+    */
   var width: java.lang.String = js.native
   /**
-       * Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
-       * The options argument sets listener-specific options. For compatibility this can be a
-       * boolean, in which case the method behaves exactly as if the value was specified as options's capture.
-       * When set to true, options's capture prevents callback from being invoked when the event's eventPhase attribute value is BUBBLING_PHASE. When false (or not present), callback will not be invoked when event's eventPhase attribute value is CAPTURING_PHASE. Either way, callback will be invoked if event's eventPhase attribute value is AT_TARGET.
-       * When set to true, options's passive indicates that the callback will not cancel the event by invoking preventDefault(). This is used to enable performance optimizations described in §2.8 Observing event listeners.
-       * When set to true, options's once indicates that the callback will only be invoked once after which the event listener will
-       * be removed.
-       * The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
-       */
+    * Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
+    * The options argument sets listener-specific options. For compatibility this can be a
+    * boolean, in which case the method behaves exactly as if the value was specified as options's capture.
+    * When set to true, options's capture prevents callback from being invoked when the event's eventPhase attribute value is BUBBLING_PHASE. When false (or not present), callback will not be invoked when event's eventPhase attribute value is CAPTURING_PHASE. Either way, callback will be invoked if event's eventPhase attribute value is AT_TARGET.
+    * When set to true, options's passive indicates that the callback will not cancel the event by invoking preventDefault(). This is used to enable performance optimizations described in §2.8 Observing event listeners.
+    * When set to true, options's once indicates that the callback will only be invoked once after which the event listener will
+    * be removed.
+    * The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
+    */
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): scala.Unit = js.native
-  /**
-       * Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
-       * The options argument sets listener-specific options. For compatibility this can be a
-       * boolean, in which case the method behaves exactly as if the value was specified as options's capture.
-       * When set to true, options's capture prevents callback from being invoked when the event's eventPhase attribute value is BUBBLING_PHASE. When false (or not present), callback will not be invoked when event's eventPhase attribute value is CAPTURING_PHASE. Either way, callback will be invoked if event's eventPhase attribute value is AT_TARGET.
-       * When set to true, options's passive indicates that the callback will not cancel the event by invoking preventDefault(). This is used to enable performance optimizations described in §2.8 Observing event listeners.
-       * When set to true, options's once indicates that the callback will only be invoked once after which the event listener will
-       * be removed.
-       * The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
-       */
   /* InferMemberOverrides */
   override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): scala.Unit = js.native
-  /**
-       * Appends an event listener for events whose type attribute value is type. The callback argument sets the callback that will be invoked when the event is dispatched.
-       * The options argument sets listener-specific options. For compatibility this can be a
-       * boolean, in which case the method behaves exactly as if the value was specified as options's capture.
-       * When set to true, options's capture prevents callback from being invoked when the event's eventPhase attribute value is BUBBLING_PHASE. When false (or not present), callback will not be invoked when event's eventPhase attribute value is CAPTURING_PHASE. Either way, callback will be invoked if event's eventPhase attribute value is AT_TARGET.
-       * When set to true, options's passive indicates that the callback will not cancel the event by invoking preventDefault(). This is used to enable performance optimizations described in §2.8 Observing event listeners.
-       * When set to true, options's once indicates that the callback will only be invoked once after which the event listener will
-       * be removed.
-       * The event listener is appended to target's event listener list and is not appended if it has the same type, callback, and capture.
-       */
   /* InferMemberOverrides */
   override def addEventListener(
     `type`: java.lang.String,
@@ -112,18 +92,12 @@ trait HTMLIFrameElement
     options: AddEventListenerOptions
   ): scala.Unit = js.native
   /**
-       * Removes the event listener in target's event listener list with the same type, callback, and options.
-       */
+    * Removes the event listener in target's event listener list with the same type, callback, and options.
+    */
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): scala.Unit = js.native
-  /**
-       * Removes the event listener in target's event listener list with the same type, callback, and options.
-       */
   /* InferMemberOverrides */
   override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): scala.Unit = js.native
-  /**
-       * Removes the event listener in target's event listener list with the same type, callback, and options.
-       */
   /* InferMemberOverrides */
   override def removeEventListener(
     `type`: java.lang.String,

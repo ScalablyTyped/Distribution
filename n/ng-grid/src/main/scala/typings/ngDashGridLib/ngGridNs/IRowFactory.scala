@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRowFactory extends js.Object {
   var aggCache: js.Any
   var dataChanged: scala.Boolean

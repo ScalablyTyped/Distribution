@@ -10,70 +10,52 @@ import scala.scalajs.js.annotation._
 class VariableSizeGrid ()
   extends reactLib.reactMod.Component[VariableSizeGridProps, js.Object, js.Any] {
   /**
-       * VariableSizeGrid caches offsets and measurements for each column index for performance purposes.
-       * This method clears that cached data for all columns after (and including) the specified index.
-       * It should be called whenever a column's width changes. (Note that this is not a typical occurrance.)
-       *
-       * By default the grid will automatically re-render after the index is reset.
-       * If you would like to delay this re-render until e.g. a state update has completed in the parent component,
-       * specify a value offalse for the second, optional parameter.
-       */
+    * VariableSizeGrid caches offsets and measurements for each column index for performance purposes.
+    * This method clears that cached data for all columns after (and including) the specified index.
+    * It should be called whenever a column's width changes. (Note that this is not a typical occurrance.)
+    *
+    * By default the grid will automatically re-render after the index is reset.
+    * If you would like to delay this re-render until e.g. a state update has completed in the parent component,
+    * specify a value offalse for the second, optional parameter.
+    */
   def resetAfterColumnIndex(index: scala.Double): scala.Unit = js.native
-  /**
-       * VariableSizeGrid caches offsets and measurements for each column index for performance purposes.
-       * This method clears that cached data for all columns after (and including) the specified index.
-       * It should be called whenever a column's width changes. (Note that this is not a typical occurrance.)
-       *
-       * By default the grid will automatically re-render after the index is reset.
-       * If you would like to delay this re-render until e.g. a state update has completed in the parent component,
-       * specify a value offalse for the second, optional parameter.
-       */
   def resetAfterColumnIndex(index: scala.Double, shouldForceUpdate: scala.Boolean): scala.Unit = js.native
   /**
-       * VariableSizeGrid caches offsets and measurements for each item for performance purposes.
-       * This method clears that cached data for all items after (and including) the specified indices.
-       * It should be called whenever an items size changes. (Note that this is not a typical occurrance.)
-       *
-       * By default the grid will automatically re-render after the index is reset.
-       * If you would like to delay this re-render until e.g. a state update has completed in the parent component,
-       * specify a value offalse for the optional shouldForceUpdate parameter.
-       */
+    * VariableSizeGrid caches offsets and measurements for each item for performance purposes.
+    * This method clears that cached data for all items after (and including) the specified indices.
+    * It should be called whenever an items size changes. (Note that this is not a typical occurrance.)
+    *
+    * By default the grid will automatically re-render after the index is reset.
+    * If you would like to delay this re-render until e.g. a state update has completed in the parent component,
+    * specify a value offalse for the optional shouldForceUpdate parameter.
+    */
   def resetAfterIndices(params: reactDashWindowLib.Anon_ColumnIndexShouldForceUpdate): scala.Unit = js.native
   /**
-       * VariableSizeGrid caches offsets and measurements for each row index for performance purposes.
-       * This method clears that cached data for all rows after (and including) the specified index.
-       * It should be called whenever a row's height changes. (Note that this is not a typical occurrance.)
-       *
-       * By default the grid will automatically re-render after the index is reset.
-       * If you would like to delay this re-render until e.g. a state update has completed in the parent component,
-       * specify a value offalse for the second, optional parameter.
-       */
+    * VariableSizeGrid caches offsets and measurements for each row index for performance purposes.
+    * This method clears that cached data for all rows after (and including) the specified index.
+    * It should be called whenever a row's height changes. (Note that this is not a typical occurrance.)
+    *
+    * By default the grid will automatically re-render after the index is reset.
+    * If you would like to delay this re-render until e.g. a state update has completed in the parent component,
+    * specify a value offalse for the second, optional parameter.
+    */
   def resetAfterRowIndex(index: scala.Double): scala.Unit = js.native
-  /**
-       * VariableSizeGrid caches offsets and measurements for each row index for performance purposes.
-       * This method clears that cached data for all rows after (and including) the specified index.
-       * It should be called whenever a row's height changes. (Note that this is not a typical occurrance.)
-       *
-       * By default the grid will automatically re-render after the index is reset.
-       * If you would like to delay this re-render until e.g. a state update has completed in the parent component,
-       * specify a value offalse for the second, optional parameter.
-       */
   def resetAfterRowIndex(index: scala.Double, shouldForceUpdate: scala.Boolean): scala.Unit = js.native
   /**
-       * Scroll to the specified offsets.
-       */
+    * Scroll to the specified offsets.
+    */
   def scrollTo(params: reactDashWindowLib.Anon_ScrollTop): scala.Unit = js.native
   /**
-       * Scroll to the specified item.
-       *
-       * By default, the Grid will scroll as little as possible to ensure the item is visible.
-       * You can control the alignment of the item though by specifying a second alignment parameter. Acceptable values are:
-       *
-       * - auto (default) - Scroll as little as possible to ensure the item is visible. (If the item is already visible, it won't scroll at all.)
-       * - center - Center align the item within the grid.
-       * - end - Align the item to the bottom, right hand side of the grid.
-       * - start - Align the item to the top, left hand of the grid.
-       */
+    * Scroll to the specified item.
+    *
+    * By default, the Grid will scroll as little as possible to ensure the item is visible.
+    * You can control the alignment of the item though by specifying a second alignment parameter. Acceptable values are:
+    *
+    * - auto (default) - Scroll as little as possible to ensure the item is visible. (If the item is already visible, it won't scroll at all.)
+    * - center - Center align the item within the grid.
+    * - end - Align the item to the bottom, right hand side of the grid.
+    * - start - Align the item to the top, left hand of the grid.
+    */
   def scrollToItem(params: reactDashWindowLib.Anon_ColumnIndex): scala.Unit = js.native
 }
 

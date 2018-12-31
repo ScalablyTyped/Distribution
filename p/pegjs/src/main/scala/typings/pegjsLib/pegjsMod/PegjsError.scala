@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PegjsError
   extends stdLib.Error {
   var expected: js.UndefOr[js.Array[ExpectedItem]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait INotification extends js.Object {
   var content: java.lang.String
   var icon: java.lang.String

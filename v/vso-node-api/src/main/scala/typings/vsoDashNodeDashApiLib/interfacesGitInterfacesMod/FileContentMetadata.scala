@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileContentMetadata extends js.Object {
   var contentType: java.lang.String
   var encoding: scala.Double

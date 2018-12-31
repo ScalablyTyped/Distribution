@@ -15,21 +15,21 @@ class LifeCycle () extends js.Object {
   var introduced: Version | scala.Null = js.native
   def getCurrentState(version: Version): LifeCycleState = js.native
   /**
-       * Yields true if this feature is available in the specified version, that is:
-       * - it was in base, or added before the specified version
-       * - it was not removed yet in the given version
-       * - deprecation statues does not influence it results
-       */
+    * Yields true if this feature is available in the specified version, that is:
+    * - it was in base, or added before the specified version
+    * - it was not removed yet in the given version
+    * - deprecation statues does not influence it results
+    */
   def isAvailableIn(version: Version): scala.Boolean = js.native
   /**
-       * Yields true only if this version was actively removed in the given version.
-       * Doesn't yield true if the feature was not yet introduced in the given version (see isAvailableIn for that)
-       */
+    * Yields true only if this version was actively removed in the given version.
+    * Doesn't yield true if the feature was not yet introduced in the given version (see isAvailableIn for that)
+    */
   def isRemovedIn(version: Version): scala.Boolean = js.native
   /**
-       * Checks a version based on this lifecycle.
-       * Returns true if something is thrown or warned, otherwise false
-       */
+    * Checks a version based on this lifecycle.
+    * Returns true if something is thrown or warned, otherwise false
+    */
   def reportVersionIssues(version: Version, aboutWhatMessage: java.lang.String): scala.Boolean = js.native
 }
 

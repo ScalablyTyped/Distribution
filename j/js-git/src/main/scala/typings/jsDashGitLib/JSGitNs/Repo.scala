@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Repo extends js.Object {
   /**
   		 * Convenience wrapper that fetches from a remote instance and calls repo.unpack with the resulting packfile stream for you.

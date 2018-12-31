@@ -6,10 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Provides access to the named command-line arguments
- *
- * Note that enumerating over this object returns the **names** of the arguments, not the values
- */
+  * Provides access to the named command-line arguments
+  *
+  * Note that enumerating over this object returns the **names** of the arguments, not the values
+  */
 @js.native
 trait WshNamed extends js.Object {
   var Length: scala.Double = js.native

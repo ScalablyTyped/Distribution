@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AudienceSegmentGroup extends js.Object {
   /** Audience segments assigned to this group. The number of segments must be between 2 and 100. */
   var audienceSegments: js.UndefOr[js.Array[AudienceSegment]] = js.undefined

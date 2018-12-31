@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Node[T] extends js.Object {
   def checkIntegrity(plus: js.Any*): scala.Double
   def getNext(plus: js.Any*): js.UndefOr[Node[T]]

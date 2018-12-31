@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Accesstoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -19,10 +18,10 @@ trait Anon_Accesstoken extends js.Object {
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The callback URL to which the admin will be redirected after successfully creating an enterprise. Before redirecting there the system will add a query
-                   * parameter to this URL named enterpriseToken which will contain an opaque token to be used for the create enterprise request. The URL will be parsed
-                   * then reformatted in order to add the enterpriseToken parameter, so there may be some minor formatting changes.
-                   */
+    * The callback URL to which the admin will be redirected after successfully creating an enterprise. Before redirecting there the system will add a query
+    * parameter to this URL named enterpriseToken which will contain an opaque token to be used for the create enterprise request. The URL will be parsed
+    * then reformatted in order to add the enterpriseToken parameter, so there may be some minor formatting changes.
+    */
   var callbackUrl: js.UndefOr[java.lang.String] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined

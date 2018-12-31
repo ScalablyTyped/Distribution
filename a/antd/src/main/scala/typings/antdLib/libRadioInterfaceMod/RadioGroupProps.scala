@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RadioGroupProps
   extends antdLib.libCheckboxGroupMod.AbstractCheckboxGroupProps {
   var buttonStyle: js.UndefOr[RadioGroupButtonStyle] = js.undefined

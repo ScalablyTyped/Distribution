@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IdentityBatchInfo extends js.Object {
   var descriptors: js.Array[IdentityDescriptor]
   var identityIds: js.Array[java.lang.String]

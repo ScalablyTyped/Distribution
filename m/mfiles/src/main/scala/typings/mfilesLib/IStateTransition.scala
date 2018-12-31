@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStateTransition extends js.Object {
   var AccessControlList: IAccessControlList
   var Description: java.lang.String

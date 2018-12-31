@@ -9,14 +9,14 @@ import scala.scalajs.js.annotation._
 sealed trait AnimationKeyInterpolation extends js.Object
 
 /**
-     * Enum for the animation key frame interpolation type
-     */
+  * Enum for the animation key frame interpolation type
+  */
 @JSGlobal("BABYLON.AnimationKeyInterpolation")
 @js.native
 object AnimationKeyInterpolation extends js.Object {
   /**
-           * Do not interpolate between keys and use the start key value only. Tangents are ignored
-           */
+    * Do not interpolate between keys and use the start key value only. Tangents are ignored
+    */
   @js.native
   sealed trait STEP
     extends babylonjsLib.BABYLONNs.AnimationKeyInterpolation

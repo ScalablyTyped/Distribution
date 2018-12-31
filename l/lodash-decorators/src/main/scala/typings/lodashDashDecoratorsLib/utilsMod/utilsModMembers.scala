@@ -27,6 +27,6 @@ object utilsModMembers extends js.Object {
   def resolveFunction(method: js.Function, context: js.Any, target: js.Any): js.Any = js.native
   def resolveFunction(method: js.Function, context: js.Any, target: js.Any, throwNotFound: scala.Boolean): js.Any = js.native
   def returnAtIndex(fn: js.Function, index: scala.Double): js.Function = js.native
-  def wrapConstructor(Ctor: js.Function, wrapper: js.Function2[/* Ctor */ js.Function, /* repeated */js.Any, _]): js.Function = js.native
+  def wrapConstructor(Ctor: js.Function, wrapper: js.Function2[/* Ctor */ js.Function, /* repeated */ js.Any, _]): js.Function = js.native
 }
 

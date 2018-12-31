@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReadOptions extends js.Object {
   var gunzip: js.UndefOr[scala.Boolean | wreckLib.wreckLibStrings.force] = js.undefined
   var json: js.UndefOr[

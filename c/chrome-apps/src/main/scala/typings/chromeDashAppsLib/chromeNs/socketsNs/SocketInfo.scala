@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SocketInfo extends js.Object {
   /** The size of the buffer used to receive data. If no buffer size has been specified explictly, the value is not provided. */
   var bufferSize: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined

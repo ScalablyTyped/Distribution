@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinuxAccountViews extends js.Object {
   /** [Output Only] A list of all groups within a project. */
   var groupViews: js.UndefOr[js.Array[LinuxGroupView]] = js.undefined

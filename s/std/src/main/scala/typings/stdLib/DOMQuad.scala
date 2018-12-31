@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DOMQuad extends js.Object {
   val p1: DOMPoint
   val p2: DOMPoint

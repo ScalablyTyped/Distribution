@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LanguageDetectionResult extends js.Object {
   /** CLD detected language reliability */
   var isReliable: scala.Boolean

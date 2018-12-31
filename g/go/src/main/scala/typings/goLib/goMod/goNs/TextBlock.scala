@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * A TextBlock is a GraphObject that displays a .text string in a given .font.
-    */
+  * A TextBlock is a GraphObject that displays a .text string in a given .font.
+  */
 @js.native
 trait TextBlock extends GraphObject {
   /**Gets or sets whether or not this TextBlock allows in-place editing of the .text string by the user with the help of the TextEditingTool.*/

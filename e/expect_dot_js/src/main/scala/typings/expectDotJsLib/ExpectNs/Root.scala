@@ -14,8 +14,8 @@ trait Root extends Assertion {
   var only: Only = js.native
   var to: To = js.native
   /**
-           * Checks if the obj exactly equals another.
-           */
+    * Checks if the obj exactly equals another.
+    */
   def be(obj: js.Any): Assertion = js.native
 }
 

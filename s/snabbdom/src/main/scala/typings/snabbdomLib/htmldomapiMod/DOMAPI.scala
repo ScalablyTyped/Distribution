@@ -15,9 +15,9 @@ trait DOMAPI extends js.Object {
   def getTextContent(node: stdLib.Node): java.lang.String | scala.Null = js.native
   def insertBefore(parentNode: stdLib.Node, newNode: stdLib.Node): scala.Unit = js.native
   def insertBefore(parentNode: stdLib.Node, newNode: stdLib.Node, referenceNode: stdLib.Node): scala.Unit = js.native
-  def isComment(node: stdLib.Node): /* is Comment */scala.Boolean = js.native
-  def isElement(node: stdLib.Node): /* is Element */scala.Boolean = js.native
-  def isText(node: stdLib.Node): /* is Text */scala.Boolean = js.native
+  def isComment(node: stdLib.Node): /* is std.Comment */ scala.Boolean = js.native
+  def isElement(node: stdLib.Node): /* is snabbdom.snabbdom/modules/attributes.Global.Element */ scala.Boolean = js.native
+  def isText(node: stdLib.Node): /* is std.Text */ scala.Boolean = js.native
   def nextSibling(node: stdLib.Node): stdLib.Node = js.native
   def parentNode(node: stdLib.Node): stdLib.Node = js.native
   def removeChild(node: stdLib.Node, child: stdLib.Node): scala.Unit = js.native

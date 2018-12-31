@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object buildSrcBucketMod {
-  type BucketExistsCallback = atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.ExistsCallback
+  type BucketExistsCallback = /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ExistsCallback */ js.Any
   type BucketExistsResponse = js.Array[scala.Boolean]
   type BucketLockCallback = js.Function2[
     /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
@@ -64,14 +64,20 @@ package object buildSrcBucketMod {
     scala.Unit
   ]
   type EnableRequesterPaysResponse = js.Array[requestLib.requestMod.requestNs.Response]
+  type GetBucketCallback = js.Function3[
+    /* err */ (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ApiError */ js.Any) | scala.Null, 
+    /* bucket */ Bucket | scala.Null, 
+    /* apiResponse */ requestLib.requestMod.requestNs.Response, 
+    scala.Unit
+  ]
   type GetBucketMetadataCallback = js.Function3[
-    /* err */ atGoogleDashCloudCommonLib.commonMod.ApiError | scala.Null, 
-    /* metadata */ atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata | scala.Null, 
+    /* err */ (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify ApiError */ js.Any) | scala.Null, 
+    /* metadata */ (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Metadata */ js.Any) | scala.Null, 
     /* apiResponse */ requestLib.requestMod.requestNs.Response, 
     scala.Unit
   ]
   type GetBucketMetadataResponse = js.Tuple2[
-    atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata, 
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Metadata */ js.Any, 
     requestLib.requestMod.requestNs.Response
   ]
   type GetBucketResponse = js.Tuple2[Bucket, requestLib.requestMod.requestNs.Response]
@@ -99,21 +105,21 @@ package object buildSrcBucketMod {
     requestLib.requestMod.requestNs.Response
   ]
   /**
-   * @private
-   *
-   * @callback SetBucketMetadataCallback
-   * @param {?Error} err Request error, if any.
-   * @param {File[]} files Files that were updated.
-   */
+    * @private
+    *
+    * @callback SetBucketMetadataCallback
+    * @param {?Error} err Request error, if any.
+    * @param {File[]} files Files that were updated.
+    */
   type MakeAllFilesPublicPrivateCallback = js.Function2[
     /* err */ js.UndefOr[nodeLib.Error | js.Array[nodeLib.Error] | scala.Null], 
     /* files */ js.UndefOr[js.Array[atGoogleDashCloudStorageLib.buildSrcFileMod.File]], 
     scala.Unit
   ]
   /**
-   * @typedef {array} MakeAllFilesPublicPrivateResponse
-   * @property {File[]} 0 List of files affected.
-   */
+    * @typedef {array} MakeAllFilesPublicPrivateResponse
+    * @property {File[]} 0 List of files affected.
+    */
   type MakeAllFilesPublicPrivateResponse = js.Array[js.Array[atGoogleDashCloudStorageLib.buildSrcFileMod.File]]
   type MakeBucketPrivateCallback = js.Function2[
     /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
@@ -129,14 +135,18 @@ package object buildSrcBucketMod {
   type MakeBucketPublicResponse = js.Array[js.Array[atGoogleDashCloudStorageLib.buildSrcFileMod.File]]
   type SetBucketMetadataCallback = js.Function2[
     /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-    /* metadata */ js.UndefOr[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata], 
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Metadata */ /* metadata */ js.UndefOr[
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Metadata */ js.Any
+    ], 
     scala.Unit
   ]
   type SetBucketMetadataResponse = js.Array[requestLib.requestMod.requestNs.Response]
   type SetBucketStorageClassCallback = js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit]
   type SetLabelsCallback = js.Function2[
     /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-    /* metadata */ js.UndefOr[atGoogleDashCloudCommonLib.buildSrcServiceDashObjectMod.Metadata], 
+    /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Metadata */ /* metadata */ js.UndefOr[
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify Metadata */ js.Any
+    ], 
     scala.Unit
   ]
   type SetLabelsResponse = js.Array[requestLib.requestMod.requestNs.Response]

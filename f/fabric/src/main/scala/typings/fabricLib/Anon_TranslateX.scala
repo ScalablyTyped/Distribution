@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TranslateX extends js.Object {
   var angle: scala.Double
   var scaleX: scala.Double

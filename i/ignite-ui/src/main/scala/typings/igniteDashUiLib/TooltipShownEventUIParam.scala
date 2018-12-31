@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TooltipShownEventUIParam extends js.Object {
   /**
   	 * Used to get item brush.

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents schema for a DateTime field in list form or in list view in grid mode */
-
 trait FieldSchema_InForm_DateTime extends FieldSchema_InForm {
   /** Type of calendar to use */
   var CalendarType: DateTimeCalendarType
@@ -22,7 +21,7 @@ trait FieldSchema_InForm_DateTime extends FieldSchema_InForm {
   var MaxJDay: scala.Double
   var MinJDay: scala.Double
   /** Indicates wherever current user regional settings specify to display week numbers in day or week views of a calendar.
-              Only appears for DateTime fields. */
+    Only appears for DateTime fields. */
   var ShowWeekNumber: scala.Boolean
   var TimeSeparator: java.lang.String
   var TimeZoneDifference: java.lang.String

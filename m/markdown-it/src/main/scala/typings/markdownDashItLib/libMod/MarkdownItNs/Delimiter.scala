@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Delimiter extends js.Object {
   var close: scala.Boolean
   var end: scala.Double

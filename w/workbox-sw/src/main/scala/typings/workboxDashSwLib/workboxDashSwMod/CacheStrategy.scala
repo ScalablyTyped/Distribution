@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CacheStrategy extends js.Object {
   /**
   	 * This method will perform a request strategy and follows an API that will work with the Workbox Router.

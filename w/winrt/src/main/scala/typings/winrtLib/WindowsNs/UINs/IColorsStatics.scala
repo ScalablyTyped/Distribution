@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IColorsStatics extends js.Object {
   var aliceBlue: Color
   var antiqueWhite: Color

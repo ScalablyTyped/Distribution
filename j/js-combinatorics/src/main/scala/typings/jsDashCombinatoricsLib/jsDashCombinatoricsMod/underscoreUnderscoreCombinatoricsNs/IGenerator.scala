@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGenerator[T] extends js.Object {
   /**
   		 * Returns the number of elements to be generated which equals to generator.toArray().length

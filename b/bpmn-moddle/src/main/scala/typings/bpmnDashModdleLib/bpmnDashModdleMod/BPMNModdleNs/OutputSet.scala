@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OutputSet extends BaseElement {
   var dataOutputRefs: js.Array[DataOutput]
   var inputSetRefs: js.Array[InputSet]

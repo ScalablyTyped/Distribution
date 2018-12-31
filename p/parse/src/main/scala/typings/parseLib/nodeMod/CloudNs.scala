@@ -6,20 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * @namespace Contains functions for calling and declaring
-     * <a href="/docs/cloud_code_guide#functions">cloud functions</a>.
-     * <p><strong><em>
-     *   Some functions are only available from Cloud Code.
-     * </em></strong></p>
-     */
+  * @namespace Contains functions for calling and declaring
+  * <a href="/docs/cloud_code_guide#functions">cloud functions</a>.
+  * <p><strong><em>
+  *   Some functions are only available from Cloud Code.
+  * </em></strong></p>
+  */
 @JSImport("parse/node", "Cloud")
 @js.native
 object CloudNs extends js.Object {
   /**
-           * To use this Cloud Module in Cloud Code, you must require 'buffer' in your JavaScript file.
-           *
-           *     import Buffer = require("buffer").Buffer;
-           */
+    * To use this Cloud Module in Cloud Code, you must require 'buffer' in your JavaScript file.
+    *
+    *     import Buffer = require("buffer").Buffer;
+    */
   var HTTPOptions: org.scalablytyped.runtime.Instantiable0[parseLib.ParseNs.CloudNs.HTTPOptions] = js.native
   def afterDelete(arg1: js.Any): scala.Unit = js.native
   def afterDelete(

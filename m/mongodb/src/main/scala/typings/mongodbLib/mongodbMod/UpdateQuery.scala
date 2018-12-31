@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateQuery[T] extends js.Object {
   @JSName("$addToSet")
   var $addToSet: js.UndefOr[stdLib.Partial[T] | org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined

@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * ===== Queue =====
- */
-
-
+  * ===== Queue =====
+  */
 trait IQueueCallback extends js.Object {
   /**
   	 * Invoked after all requests in the queue have successfully replayed.

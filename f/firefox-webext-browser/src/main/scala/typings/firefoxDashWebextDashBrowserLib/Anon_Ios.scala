@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Ios extends js.Object {
   /** @deprecated Unknown platform name */
   var additionalProperties: js.UndefOr[java.lang.String] = js.undefined

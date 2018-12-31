@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait I18nLanguageSnippet extends js.Object {
   /** A short BCP-47 code that uniquely identifies a language. */
   var hl: js.UndefOr[java.lang.String] = js.undefined

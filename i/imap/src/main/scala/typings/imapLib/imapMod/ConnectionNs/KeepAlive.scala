@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeepAlive extends js.Object {
   /** Set to true to force use of NOOP keepalive on servers also support IDLE. Default: false */
   var forceNoop: js.UndefOr[scala.Boolean] = js.undefined

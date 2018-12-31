@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Reserved extends js.Object {
   var groupIndividual: scala.Boolean
   var nonce: java.lang.String

@@ -13,11 +13,7 @@ object gulpDashUtilModMembers extends js.Object {
   val date: gulpDashUtilLib.Anon_Now = js.native
   val env: js.Any = js.native
   val linefeed: java.lang.String = js.native
-  val noop: js.Function2[
-    /* transform */ through2Lib.through2Mod.through2Ns.TransformFunction, 
-    /* flush */ through2Lib.through2Mod.through2Ns.FlushCallback, 
-    nodeLib.streamMod.Transform
-  ] = js.native
+  val noop: gulpDashUtilLib.Anon_Transform = js.native
   def beep(): scala.Unit = js.native
   def buffer(): nodeLib.NodeJSNs.ReadWriteStream = js.native
   def buffer(cb: js.Function2[/* err */ nodeLib.Error, /* data */ js.Array[_], scala.Unit]): nodeLib.NodeJSNs.ReadWriteStream = js.native

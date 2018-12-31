@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AotCompilerOptions extends js.Object {
   var allowEmptyCodegenFiles: js.UndefOr[scala.Boolean] = js.undefined
   var enableIvy: js.UndefOr[

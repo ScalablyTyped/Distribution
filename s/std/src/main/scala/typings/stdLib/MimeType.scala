@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MimeType extends js.Object {
   val description: java.lang.String
   val enabledPlugin: Plugin

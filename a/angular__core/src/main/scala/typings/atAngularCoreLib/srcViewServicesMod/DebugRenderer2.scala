@@ -13,22 +13,14 @@ class DebugRenderer2 protected ()
   var createDebugContext: js.Any = js.native
   var delegate: js.Any = js.native
   /**
-       * Factory function used to create a `DebugContext` when a node is created.
-       *
-       * The `DebugContext` allows to retrieve information about the nodes that are useful in tests.
-       *
-       * The factory is configurable so that the `DebugRenderer2` could instantiate either a View Engine
-       * or a Render context.
-       */
+    * Factory function used to create a `DebugContext` when a node is created.
+    *
+    * The `DebugContext` allows to retrieve information about the nodes that are useful in tests.
+    *
+    * The factory is configurable so that the `DebugRenderer2` could instantiate either a View Engine
+    * or a Render context.
+    */
   def debugContextFactory(): atAngularCoreLib.srcViewTypesMod.DebugContext | scala.Null = js.native
-  /**
-       * Factory function used to create a `DebugContext` when a node is created.
-       *
-       * The `DebugContext` allows to retrieve information about the nodes that are useful in tests.
-       *
-       * The factory is configurable so that the `DebugRenderer2` could instantiate either a View Engine
-       * or a Render context.
-       */
   def debugContextFactory(nativeElement: js.Any): atAngularCoreLib.srcViewTypesMod.DebugContext | scala.Null = js.native
   @JSName("destroyNode")
   def destroyNode_MDebugRenderer2(node: js.Any): scala.Unit = js.native

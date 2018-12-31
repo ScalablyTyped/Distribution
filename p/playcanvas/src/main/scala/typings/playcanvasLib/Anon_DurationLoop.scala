@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DurationLoop extends js.Object {
   var distanceModel: js.UndefOr[java.lang.String] = js.undefined
   var duration: js.UndefOr[scala.Double] = js.undefined

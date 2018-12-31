@@ -5,23 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StringifyOptions extends js.Object {
   /** Omit comments and extraneous whitespace. */
   var compress: js.UndefOr[scala.Boolean] = js.undefined
   /** The string used to indent the output. Defaults to two spaces. */
   var indent: js.UndefOr[java.lang.String] = js.undefined
   /** (enabled by default, specify false to disable)
-       *  Reads any source maps referenced by the input files 
-       * when generating the output source map. When enabled, 
-       * file system access may be required for reading the referenced source maps. 
-       */
+    *  Reads any source maps referenced by the input files 
+    * when generating the output source map. When enabled, 
+    * file system access may be required for reading the referenced source maps. 
+    */
   var inputSourcemaps: js.UndefOr[scala.Boolean] = js.undefined
   /** Return a sourcemap along with the CSS output. 
-       * Using the source option of css.parse is strongly recommended 
-       * when creating a source map. Specify sourcemap: 'generator' 
-       * to return the SourceMapGenerator object instead of serializing the source map. 
-       */
+    * Using the source option of css.parse is strongly recommended 
+    * when creating a source map. Specify sourcemap: 'generator' 
+    * to return the SourceMapGenerator object instead of serializing the source map. 
+    */
   var sourcemap: js.UndefOr[java.lang.String] = js.undefined
 }
 

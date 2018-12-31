@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAbsoluteLayout
   extends extjsLib.ExtNs.layoutNs.containerNs.IAnchor {
   /** [Config Option] (Boolean) */

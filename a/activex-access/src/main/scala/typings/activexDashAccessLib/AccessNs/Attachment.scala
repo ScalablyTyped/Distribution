@@ -130,7 +130,6 @@ class Attachment protected () extends js.Object {
   val accParent: js.Any = js.native
   val accSelection: js.Any = js.native
   def Back(): scala.Unit = js.native
-  // tslint:disable-next-line:no-unnecessary-generics
   def Controls[T](Index: java.lang.String): T = js.native
   // tslint:disable-next-line:no-unnecessary-generics
   def Controls[T](Index: scala.Double): T = js.native

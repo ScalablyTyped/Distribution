@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListEnabledBuiltInVariablesResponse extends js.Object {
   /** All GTM BuiltInVariables of a GTM container. */
   var builtInVariable: js.UndefOr[js.Array[BuiltInVariable]] = js.undefined

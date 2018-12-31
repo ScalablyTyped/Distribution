@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Elements extends js.Object {
   var _hideNextMonthArrow: scala.Boolean
   var _hidePrevMonthArrow: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OnboardingResource extends js.Object {
   /** List categories for onboarding experience. */
   def listCategories(request: gapiDotClientDotBooksLib.Anon_PrettyPrintQuotaUserLocale): gapiDotClientLib.gapiNs.clientNs.Request[Category]

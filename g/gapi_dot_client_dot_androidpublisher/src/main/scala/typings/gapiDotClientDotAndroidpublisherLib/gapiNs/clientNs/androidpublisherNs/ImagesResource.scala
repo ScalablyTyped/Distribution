@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImagesResource extends js.Object {
   /** Deletes the image (specified by id) from the edit. */
   def delete(request: gapiDotClientDotAndroidpublisherLib.Anon_ImageTypePrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

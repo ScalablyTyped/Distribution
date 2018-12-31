@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICanvasOptions extends IStaticCanvasOptions {
   /**
   	 * When true, objects use center point as the origin of rotate transformation.

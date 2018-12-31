@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NvRFBDefaults extends js.Object {
   var disconnectTimeout: js.UndefOr[scala.Double] = js.undefined
   var encrypt: js.UndefOr[scala.Boolean] = js.undefined

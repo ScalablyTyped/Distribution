@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Operation extends js.Object {
   /** [Output Only] Reserved for future use. */
   var clientOperationId: js.UndefOr[java.lang.String] = js.undefined
@@ -20,9 +19,9 @@ trait Operation extends js.Object {
   /** [Output Only] If the operation fails, this field contains the HTTP error message that was returned, such as NOT FOUND. */
   var httpErrorMessage: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * [Output Only] If the operation fails, this field contains the HTTP error status code that was returned. For example, a 404 means the resource was not
-               * found.
-               */
+    * [Output Only] If the operation fails, this field contains the HTTP error status code that was returned. For example, a 404 means the resource was not
+    * found.
+    */
   var httpErrorStatusCode: js.UndefOr[scala.Double] = js.undefined
   /** [Output Only] The unique identifier for the resource. This identifier is defined by the server. */
   var id: js.UndefOr[java.lang.String] = js.undefined
@@ -35,10 +34,10 @@ trait Operation extends js.Object {
   /** [Output Only] The type of operation, such as insert, update, or delete, and so on. */
   var operationType: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * [Output Only] An optional progress indicator that ranges from 0 to 100. There is no requirement that this be linear or support any granularity of
-               * operations. This should not be used to guess when the operation will be complete. This number should monotonically increase as the operation
-               * progresses.
-               */
+    * [Output Only] An optional progress indicator that ranges from 0 to 100. There is no requirement that this be linear or support any granularity of
+    * operations. This should not be used to guess when the operation will be complete. This number should monotonically increase as the operation
+    * progresses.
+    */
   var progress: js.UndefOr[scala.Double] = js.undefined
   /** [Output Only] The URL of the region where the operation resides. Only available when performing regional operations. */
   var region: js.UndefOr[java.lang.String] = js.undefined
@@ -53,9 +52,9 @@ trait Operation extends js.Object {
   /** [Output Only] The unique target ID, which identifies a specific incarnation of the target resource. */
   var targetId: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * [Output Only] The URL of the resource that the operation modifies. For operations related to creating a snapshot, this points to the persistent disk
-               * that the snapshot was created from.
-               */
+    * [Output Only] The URL of the resource that the operation modifies. For operations related to creating a snapshot, this points to the persistent disk
+    * that the snapshot was created from.
+    */
   var targetLink: js.UndefOr[java.lang.String] = js.undefined
   /** [Output Only] User who requested the operation, for example: user@example.com. */
   var user: js.UndefOr[java.lang.String] = js.undefined

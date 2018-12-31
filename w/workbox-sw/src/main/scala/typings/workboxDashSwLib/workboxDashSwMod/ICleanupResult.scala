@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * ===== PrecacheController =====
- */
-
-
+  * ===== PrecacheController =====
+  */
 trait ICleanupResult extends js.Object {
   /**
   	 * List of URLs that were deleted from the precache cache.

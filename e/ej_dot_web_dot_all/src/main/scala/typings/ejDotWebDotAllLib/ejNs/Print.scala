@@ -16,8 +16,8 @@ class Print protected () extends Widget {
   @JSName("model")
   var model_Print: ejDotWebDotAllLib.ejNs.PrintNs.Model = js.native
   /** Print the specific page or an element.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def print(): scala.Unit = js.native
 }
 

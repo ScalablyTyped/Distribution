@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RangyClassApplierOptions extends js.Object {
   var applyToEditableOnly: js.UndefOr[scala.Boolean] = js.undefined
   var elementAttributes: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined

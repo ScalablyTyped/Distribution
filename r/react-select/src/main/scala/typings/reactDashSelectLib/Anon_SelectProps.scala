@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SelectProps[OptionType] extends js.Object {
   var clearValue: js.Function0[scala.Unit]
   var cx: js.Any

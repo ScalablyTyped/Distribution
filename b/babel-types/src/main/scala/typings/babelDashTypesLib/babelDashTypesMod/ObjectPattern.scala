@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObjectPattern extends Node {
   var properties: js.Array[AssignmentProperty | RestProperty]
   var typeAnnotation: js.UndefOr[TypeAnnotation] = js.undefined

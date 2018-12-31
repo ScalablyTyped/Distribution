@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class GeoJSONReader () extends js.Object {
   /**
-               * Converts a GeoJSON to its <code>Geometry</code> representation.
-               *
-               * @param {Object} The GeoJSON representation of the Geometry.
-               * @return {jsts.geom.Geometry}
-               * geometry a <code>Geometry</code> to process.
-               */
+    * Converts a GeoJSON to its <code>Geometry</code> representation.
+    *
+    * @param {Object} The GeoJSON representation of the Geometry.
+    * @return {jsts.geom.Geometry}
+    * geometry a <code>Geometry</code> to process.
+    */
   def read(geometry: js.Object): jstsLib.jstsNs.geomNs.Geometry = js.native
 }
 

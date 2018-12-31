@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ObjectModeFalse extends js.Object {
   var objectMode: js.UndefOr[from2Lib.from2LibNumbers.`false`] = js.undefined
 }

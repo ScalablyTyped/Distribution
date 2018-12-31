@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VariableData extends js.Object {
   // 值类型 string number boolean
   var valueType: java.lang.String

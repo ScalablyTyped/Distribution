@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HumaneOptions extends js.Object {
   var addnCls: js.UndefOr[java.lang.String] = js.undefined
   var baseCls: js.UndefOr[java.lang.String] = js.undefined

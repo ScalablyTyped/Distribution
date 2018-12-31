@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LayoutAnimationTypes extends js.Object {
   var easeIn: java.lang.String
   var easeInEaseOut: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVaultNotificationOperations extends js.Object {
   def SendCustomNotification(
     UserOrUserGroupIDs: IUserOrUserGroupIDs,

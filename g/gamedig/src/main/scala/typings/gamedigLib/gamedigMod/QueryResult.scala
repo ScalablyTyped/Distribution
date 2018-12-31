@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryResult extends js.Object {
   var bots: js.Array[Player]
   var map: java.lang.String

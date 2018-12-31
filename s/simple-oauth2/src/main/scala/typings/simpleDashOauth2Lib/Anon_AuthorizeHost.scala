@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AuthorizeHost extends js.Object {
   /** String used to set the host to request an "authorization code". Default to the value set on auth.tokenHost. */
   var authorizeHost: js.UndefOr[java.lang.String] = js.undefined

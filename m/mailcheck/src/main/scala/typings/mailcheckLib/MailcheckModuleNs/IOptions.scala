@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOptions extends js.Object {
   var distanceFunction: js.UndefOr[IDistanceFunction] = js.undefined
   var domains: js.UndefOr[js.Array[java.lang.String]] = js.undefined

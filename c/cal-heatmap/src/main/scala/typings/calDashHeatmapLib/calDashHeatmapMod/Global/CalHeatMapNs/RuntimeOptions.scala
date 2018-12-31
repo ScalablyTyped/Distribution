@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RuntimeOptions extends InitOptions {
   /** Margin around each domain, in pixels. Ordered like in CSS (top, right, bottom, left) */
   @JSName("domainMargin")

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Implementation extends js.Object {
   def bind(address: java.lang.String, port: scala.Double, continuation: js.Function0[scala.Unit]): scala.Unit
   def destroy(continuation: js.Function0[scala.Unit]): scala.Unit

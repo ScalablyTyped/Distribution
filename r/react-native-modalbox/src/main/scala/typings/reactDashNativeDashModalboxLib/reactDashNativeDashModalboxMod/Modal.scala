@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 trait Modal
   extends reactLib.reactMod.Component[ModalProps, js.Object, js.Any] {
   /**
-       * Close the modal
-       *
-       *
-       */
+    * Close the modal
+    *
+    *
+    */
   def close(): scala.Unit = js.native
   /**
-       * Open the modal
-       *
-       *
-       */
+    * Open the modal
+    *
+    *
+    */
   def open(): scala.Unit = js.native
 }
 

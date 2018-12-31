@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPositionable
   extends extjsLib.ExtNs.IBase {
   /** [Method] Aligns the element with another element relative to the specified anchor points

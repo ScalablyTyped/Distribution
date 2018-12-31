@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait XDomainRequest extends js.Object {
   val responseText: java.lang.String
   var timeout: scala.Double

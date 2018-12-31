@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // 3.9.1
-
 trait WebCLKernelArgInfo extends js.Object {
    // 'global', 'local', 'constant', or 'private'
   var accessQualifier: java.lang.String

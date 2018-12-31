@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShapeProperties extends js.Object {
   // The alignment of the content in the shape. If unspecified,
   // the alignment is inherited from a parent placeholder if it exists. If the

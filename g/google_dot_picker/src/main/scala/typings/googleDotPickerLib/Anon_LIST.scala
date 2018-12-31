@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_LIST extends js.Object {
   // Display documents in a thumbnail grid.
   var GRID: java.lang.String

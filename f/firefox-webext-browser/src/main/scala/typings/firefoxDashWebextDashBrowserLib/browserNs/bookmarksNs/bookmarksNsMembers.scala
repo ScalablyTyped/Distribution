@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object bookmarksNsMembers extends js.Object {
   /**
-       * Fired when a bookmark or folder changes. **Note:** Currently, only title and url changes trigger this.
-       */
+    * Fired when a bookmark or folder changes. **Note:** Currently, only title and url changes trigger this.
+    */
   val onChanged: firefoxDashWebextDashBrowserLib.WebExtEvent[
     js.Function2[
       /* id */ java.lang.String, 
@@ -19,10 +19,10 @@ object bookmarksNsMembers extends js.Object {
     ]
   ] = js.native
   /**
-       * Fired when the children of a folder have changed their order due to the order being sorted in the UI. This is
-       * not called as a result of a move().
-       * @deprecated Unsupported on Firefox at this time.
-       */
+    * Fired when the children of a folder have changed their order due to the order being sorted in the UI. This is
+    * not called as a result of a move().
+    * @deprecated Unsupported on Firefox at this time.
+    */
   val onChildrenReordered: js.UndefOr[
     firefoxDashWebextDashBrowserLib.WebExtEvent[
       js.Function2[
@@ -46,9 +46,9 @@ object bookmarksNsMembers extends js.Object {
     ]
   ] = js.native
   /**
-       * Fired when a bookmark or folder is removed. When a folder is removed recursively, a single notification is fired
-       * for the folder, and none for its contents.
-       */
+    * Fired when a bookmark or folder is removed. When a folder is removed recursively, a single notification is fired
+    * for the folder, and none for its contents.
+    */
   val onRemoved: firefoxDashWebextDashBrowserLib.WebExtEvent[
     js.Function2[
       /* id */ java.lang.String, 
@@ -57,32 +57,27 @@ object bookmarksNsMembers extends js.Object {
     ]
   ] = js.native
   /**
-       * Creates a bookmark or folder under the specified parentId. If url is NULL or missing, it will be a folder.
-       */
+    * Creates a bookmark or folder under the specified parentId. If url is NULL or missing, it will be a folder.
+    */
   def create(bookmark: CreateDetails): js.Promise[js.UndefOr[BookmarkTreeNode]] = js.native
   /* bookmarks functions */
   /**
-       * Retrieves the specified BookmarkTreeNode(s).
-       * @param idOrIdList A single string-valued id, or an array of string-valued ids
-       */
+    * Retrieves the specified BookmarkTreeNode(s).
+    * @param idOrIdList A single string-valued id, or an array of string-valued ids
+    */
   def get(idOrIdList: java.lang.String): js.Promise[js.Array[BookmarkTreeNode]] = js.native
-  /* bookmarks functions */
-  /**
-       * Retrieves the specified BookmarkTreeNode(s).
-       * @param idOrIdList A single string-valued id, or an array of string-valued ids
-       */
   def get(idOrIdList: js.Array[java.lang.String]): js.Promise[js.Array[BookmarkTreeNode]] = js.native
   /** Retrieves the children of the specified BookmarkTreeNode id. */
   def getChildren(id: java.lang.String): js.Promise[js.Array[BookmarkTreeNode]] = js.native
   /**
-       * Retrieves the recently added bookmarks.
-       * @param numberOfItems The maximum number of items to return.
-       */
+    * Retrieves the recently added bookmarks.
+    * @param numberOfItems The maximum number of items to return.
+    */
   def getRecent(numberOfItems: scala.Double): js.Promise[js.Array[BookmarkTreeNode]] = js.native
   /**
-       * Retrieves part of the Bookmarks hierarchy, starting at the specified node.
-       * @param id The ID of the root of the subtree to retrieve.
-       */
+    * Retrieves part of the Bookmarks hierarchy, starting at the specified node.
+    * @param id The ID of the root of the subtree to retrieve.
+    */
   def getSubTree(id: java.lang.String): js.Promise[js.Array[BookmarkTreeNode]] = js.native
   /** Retrieves the entire Bookmarks hierarchy. */
   def getTree(): js.Promise[js.Array[BookmarkTreeNode]] = js.native
@@ -92,26 +87,19 @@ object bookmarksNsMembers extends js.Object {
   def remove(id: java.lang.String): js.Promise[scala.Unit] = js.native
   /** Recursively removes a bookmark folder. */
   def removeTree(id: java.lang.String): js.Promise[scala.Unit] = js.native
-  /**
-       * Searches for BookmarkTreeNodes matching the given query. Queries specified with an object produce
-       * BookmarkTreeNodes matching all specified properties.
-       * @param query Either a string of words and quoted phrases that are matched against bookmark URLs and titles, or
-       *     an object. If an object, the properties `query`, `url`, and `title` may be specified and bookmarks matching
-       *     all specified properties will be produced.
-       */
   def search(query: firefoxDashWebextDashBrowserLib.Anon_UrlTitleQuery): js.Promise[js.Array[BookmarkTreeNode]] = js.native
   /**
-       * Searches for BookmarkTreeNodes matching the given query. Queries specified with an object produce
-       * BookmarkTreeNodes matching all specified properties.
-       * @param query Either a string of words and quoted phrases that are matched against bookmark URLs and titles, or
-       *     an object. If an object, the properties `query`, `url`, and `title` may be specified and bookmarks matching
-       *     all specified properties will be produced.
-       */
+    * Searches for BookmarkTreeNodes matching the given query. Queries specified with an object produce
+    * BookmarkTreeNodes matching all specified properties.
+    * @param query Either a string of words and quoted phrases that are matched against bookmark URLs and titles, or
+    *     an object. If an object, the properties `query`, `url`, and `title` may be specified and bookmarks matching
+    *     all specified properties will be produced.
+    */
   def search(query: java.lang.String): js.Promise[js.Array[BookmarkTreeNode]] = js.native
   /**
-       * Updates the properties of a bookmark or folder. Specify only the properties that you want to change; unspecified
-       * properties will be left unchanged. **Note:** Currently, only 'title' and 'url' are supported.
-       */
+    * Updates the properties of a bookmark or folder. Specify only the properties that you want to change; unspecified
+    * properties will be left unchanged. **Note:** Currently, only 'title' and 'url' are supported.
+    */
   def update(id: java.lang.String, changes: firefoxDashWebextDashBrowserLib.Anon_UrlTitleStringOptional): js.Promise[js.UndefOr[BookmarkTreeNode]] = js.native
 }
 

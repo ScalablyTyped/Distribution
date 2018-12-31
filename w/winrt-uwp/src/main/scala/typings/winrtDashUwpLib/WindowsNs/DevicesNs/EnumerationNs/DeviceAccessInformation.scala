@@ -37,22 +37,22 @@ abstract class DeviceAccessInformation () extends js.Object {
 @js.native
 object DeviceAccessInformation extends js.Object {
   /**
-                   * Initializes a DeviceAccessInformation object based on a given DeviceClass .
-                   * @param deviceClass Device class to get DeviceAccessInformation about.
-                   * @return The DeviceAccessInformation object for the given DeviceClass .
-                   */
+    * Initializes a DeviceAccessInformation object based on a given DeviceClass .
+    * @param deviceClass Device class to get DeviceAccessInformation about.
+    * @return The DeviceAccessInformation object for the given DeviceClass .
+    */
   def createFromDeviceClass(deviceClass: winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DeviceClass): winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DeviceAccessInformation = js.native
   /**
-                   * Initializes a DeviceAccessInformation object based on a device class id.
-                   * @param deviceClassId Id of the device class to get DeviceAccessInformation about.
-                   * @return The DeviceAccessInformation object for the given device class id.
-                   */
+    * Initializes a DeviceAccessInformation object based on a device class id.
+    * @param deviceClassId Id of the device class to get DeviceAccessInformation about.
+    * @return The DeviceAccessInformation object for the given device class id.
+    */
   def createFromDeviceClassId(deviceClassId: java.lang.String): winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DeviceAccessInformation = js.native
   /**
-                   * Initializes a DeviceAccessInformation object based on a device id.
-                   * @param deviceId Id of the device to get DeviceAccessInformation about.
-                   * @return The DeviceAccessInformation object for the given device id.
-                   */
+    * Initializes a DeviceAccessInformation object based on a device id.
+    * @param deviceId Id of the device to get DeviceAccessInformation about.
+    * @return The DeviceAccessInformation object for the given device id.
+    */
   def createFromId(deviceId: java.lang.String): winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.DeviceAccessInformation = js.native
 }
 

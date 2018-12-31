@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ActivityContentDetailsRecommendation extends js.Object {
   /** The reason that the resource is recommended to the user. */
   var reason: js.UndefOr[java.lang.String] = js.undefined

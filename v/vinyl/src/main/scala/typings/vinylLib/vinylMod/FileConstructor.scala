@@ -13,12 +13,12 @@ trait FileConstructor
       BufferFile | File | NullFile | StreamFile
     ] {
   /**
-       * Checks if a property is not managed internally.
-       */
+    * Checks if a property is not managed internally.
+    */
   def isCustomProp(name: java.lang.String): scala.Boolean = js.native
   /**
-       * Checks if a given object is a vinyl file.
-       */
-  def isVinyl(obj: js.Any): /* is File */scala.Boolean = js.native
+    * Checks if a given object is a vinyl file.
+    */
+  def isVinyl(obj: js.Any): /* is vinyl.vinyl.File */ scala.Boolean = js.native
 }
 

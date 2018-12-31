@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait BasicAuthenticatorStatic
   extends /**
-             * @param apiKey
-             */
+  * @param apiKey
+  */
 org.scalablytyped.runtime.Instantiable1[/* apiKey */ java.lang.String, BasicAuthenticator]
 

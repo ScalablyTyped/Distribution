@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AsyncResult extends js.Object {
   var done: scala.Boolean
   var id: java.lang.String

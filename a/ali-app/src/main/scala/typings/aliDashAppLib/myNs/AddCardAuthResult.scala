@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 //#endregion
 //#region 会员开卡授权 https://docs.alipay.com/mini/api/add-card-auth
-
 trait AddCardAuthResult extends js.Object {
   		// false 表示领卡失败
   /**

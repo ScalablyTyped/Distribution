@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetFieldDecoratorOptions extends js.Object {
   /** 是否和其他控件互斥，特别用于 Radio 单选控件 */
   var exclusive: js.UndefOr[scala.Boolean] = js.undefined
   /** 可以把 onChange 的参数转化为控件的值，例如 DatePicker 可设为：(date, dateString) => dateString */
-  var getValueFromEvent: js.UndefOr[js.Function1[/* repeated */js.Any, _]] = js.undefined
+  var getValueFromEvent: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
   /** Get the component props according to field value. */
   var getValueProps: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.undefined
   /** 子节点的初始值，类型、可选值均由子节点决定 */

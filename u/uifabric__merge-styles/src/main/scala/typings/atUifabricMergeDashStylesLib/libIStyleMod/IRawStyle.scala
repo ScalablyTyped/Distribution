@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRawStyle
   extends atUifabricMergeDashStylesLib.libIRawStyleBaseMod.IRawStyleBase {
   /**
-       * Display name for the style.
-       */
+    * Display name for the style.
+    */
   var displayName: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Custom selectors for the style.
-       */
+    * Custom selectors for the style.
+    */
   var selectors: js.UndefOr[org.scalablytyped.runtime.StringDictionary[IStyle]] = js.undefined
 }
 

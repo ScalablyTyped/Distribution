@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BOSH extends js.Object {
   var AUTH: java.lang.String
   var BIND: java.lang.String

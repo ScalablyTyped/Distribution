@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModuleTemplateHooks extends js.Object {
   var content: tapableLib.tapableMod.SyncWaterfallHook[_, _, _]
   var hash: tapableLib.tapableMod.SyncHook[_, _, _]

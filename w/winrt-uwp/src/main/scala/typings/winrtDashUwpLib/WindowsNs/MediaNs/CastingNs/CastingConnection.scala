@@ -35,9 +35,9 @@ abstract class CastingConnection () extends js.Object {
   /** Closes the casting connection. */
   def close(): scala.Unit = js.native
   /**
-                   * Terminates a casting connection. The content that was rendering remotely returns to the local element that you retrieved the casting source from.
-                   * @return The status of the termination.
-                   */
+    * Terminates a casting connection. The content that was rendering remotely returns to the local element that you retrieved the casting source from.
+    * @return The status of the termination.
+    */
   def disconnectAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[CastingConnectionErrorStatus] = js.native
   /** Indicates an error occurred while attempting to make a casting connection. */
   def onerroroccurred(
@@ -57,10 +57,10 @@ abstract class CastingConnection () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[CastingConnection, _]
   ): scala.Unit = js.native
   /**
-                   * Starts the process of casting to a casting device. When called, this method pairs the c sting device, if necessary, and verifies access to the casting device with the user. If the user denies the app access to the device, casting fails. Otherwise, a connection is established, and content is sent to the device. During this time, the connection state changes to connecting, then to connected. If a casting source is set, the state changes to rendering once playback begins.
-                   * @param value The content to be casted.
-                   * @return The status of the casting connection request.
-                   */
+    * Starts the process of casting to a casting device. When called, this method pairs the c sting device, if necessary, and verifies access to the casting device with the user. If the user denies the app access to the device, casting fails. Otherwise, a connection is established, and content is sent to the device. During this time, the connection state changes to connecting, then to connected. If a casting source is set, the state changes to rendering once playback begins.
+    * @param value The content to be casted.
+    * @return The status of the casting connection request.
+    */
   def requestStartCastingAsync(value: CastingSource): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[CastingConnectionErrorStatus] = js.native
 }
 

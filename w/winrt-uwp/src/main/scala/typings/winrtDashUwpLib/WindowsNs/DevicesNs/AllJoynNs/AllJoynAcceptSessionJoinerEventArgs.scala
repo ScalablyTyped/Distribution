@@ -10,13 +10,13 @@ import scala.scalajs.js.annotation._
 @js.native
 class AllJoynAcceptSessionJoinerEventArgs protected () extends js.Object {
   /**
-                   * Generates an object containing information about the connection being accepted to the session and the method that completes the session join.
-                   * @param uniqueName The unique bus name.
-                   * @param sessionPort The session port used for the connection.
-                   * @param trafficType The type of traffic provided over the connection.
-                   * @param proximity Indicates network proximity.
-                   * @param acceptSessionJoiner The IAllJoynAcceptSessionJoiner object used to complete the session join.
-                   */
+    * Generates an object containing information about the connection being accepted to the session and the method that completes the session join.
+    * @param uniqueName The unique bus name.
+    * @param sessionPort The session port used for the connection.
+    * @param trafficType The type of traffic provided over the connection.
+    * @param proximity Indicates network proximity.
+    * @param acceptSessionJoiner The IAllJoynAcceptSessionJoiner object used to complete the session join.
+    */
   def this(uniqueName: java.lang.String, sessionPort: scala.Double, trafficType: AllJoynTrafficType, proximity: scala.Double, acceptSessionJoiner: IAllJoynAcceptSessionJoiner) = this()
   /** Indicates if the app joining the session is on the same network. */
   var sameNetwork: scala.Boolean = js.native

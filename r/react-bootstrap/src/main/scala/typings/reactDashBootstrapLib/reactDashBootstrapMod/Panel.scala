@@ -13,11 +13,11 @@ class Panel ()
 @JSImport("react-bootstrap", "Panel")
 @js.native
 object Panel extends js.Object {
-  var Body: js.Any = js.native
-  var Collapse: js.Any = js.native
-  var Footer: js.Any = js.native
-  var Heading: js.Any = js.native
-  var Title: js.Any = js.native
-  var Toggle: js.Any = js.native
+  var Body: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libPanelBodyMod.namespaced] = js.native
+  var Collapse: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libPanelCollapseMod.namespaced] = js.native
+  var Footer: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libPanelFooterMod.namespaced] = js.native
+  var Heading: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libPanelHeadingMod.namespaced] = js.native
+  var Title: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libPanelTitleMod.namespaced] = js.native
+  var Toggle: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libPanelToggleMod.namespaced] = js.native
 }
 

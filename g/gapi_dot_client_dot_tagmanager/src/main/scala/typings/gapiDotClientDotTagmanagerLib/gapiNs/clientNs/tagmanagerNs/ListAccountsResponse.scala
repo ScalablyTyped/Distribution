@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListAccountsResponse extends js.Object {
   /** List of GTM Accounts that a user has access to. */
   var account: js.UndefOr[js.Array[Account]] = js.undefined

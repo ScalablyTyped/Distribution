@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IIdentifyResult extends js.Object {
   var density: imagemagickDashNativeLib.Anon_Height
   var depth: scala.Double

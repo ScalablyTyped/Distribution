@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MiddlewareOptions extends js.Object {
   var apiKey: java.lang.String
   var realm: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SelectionCalculations extends js.Object {
   def getUpdatedSelectionRange(
     oldSelectionRange: handsontableLib.handsontableMod.HandsontableNs.wotNs.CellRange,

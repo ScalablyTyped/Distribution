@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDragZone
   extends extjsLib.ExtNs.ddNs.IDragZone {
   /** [Method] Called before a repair of an invalid drop to get the XY to animate to

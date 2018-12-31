@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Maximuminternalpagekeysize extends js.Object {
   var `btree checkpoint generation`: scala.Double
   var `column-store fixed-size leaf pages`: scala.Double

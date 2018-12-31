@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserPreferences extends js.Object {
   val allowTextChangesInNewFiles: js.UndefOr[scala.Boolean] = js.undefined
   val disableSuggestions: js.UndefOr[scala.Boolean] = js.undefined

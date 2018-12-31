@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Exp extends js.Object {
   var aud: java.lang.String
   var exp: scala.Double

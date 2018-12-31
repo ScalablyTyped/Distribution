@@ -19,6 +19,17 @@ object byteMod extends js.Object {
     bitwiseLib.typesMod.Bit, 
     bitwiseLib.typesMod.Bit
   ] = js.native
-  def write(byte: js.Tuple8[_, _, _, _, _, _, _, _]): bitwiseLib.typesMod.UInt8 = js.native
+  def write(
+    byte: js.Tuple8[
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _, 
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _, 
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _, 
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _, 
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _, 
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _, 
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _, 
+      /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify imported_bitwise/types.Bit */ _
+    ]
+  ): bitwiseLib.typesMod.UInt8 = js.native
 }
 

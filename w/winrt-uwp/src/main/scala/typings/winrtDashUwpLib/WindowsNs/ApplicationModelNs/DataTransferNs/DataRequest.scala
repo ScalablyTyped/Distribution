@@ -14,14 +14,14 @@ abstract class DataRequest () extends js.Object {
   /** Gets the deadline for finishing a delayed rendering operation. If execution goes beyond that deadline, the results of delayed rendering are ignored. */
   var deadline: stdLib.Date = js.native
   /**
-                   * Cancels the sharing operation and supplies an error string to display to the user.
-                   * @param value The text to display to the user.
-                   */
+    * Cancels the sharing operation and supplies an error string to display to the user.
+    * @param value The text to display to the user.
+    */
   def failWithDisplayText(value: java.lang.String): scala.Unit = js.native
   /**
-                   * Supports asynchronous sharing operations by creating and returning a DataRequestDeferral object.
-                   * @return An object that allows you to share or send content asynchronously.
-                   */
+    * Supports asynchronous sharing operations by creating and returning a DataRequestDeferral object.
+    * @return An object that allows you to share or send content asynchronously.
+    */
   def getDeferral(): DataRequestDeferral = js.native
 }
 

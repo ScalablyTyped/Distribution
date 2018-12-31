@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Simplified Track Object
-     * [track object (simplified)](https://developer.spotify.com/web-api/object-model/#track-object-simplified)
-     */
-
+  * Simplified Track Object
+  * [track object (simplified)](https://developer.spotify.com/web-api/object-model/#track-object-simplified)
+  */
 trait TrackObjectSimplified extends js.Object {
   var artists: js.Array[ArtistObjectSimplified]
   var available_markets: js.UndefOr[js.Array[java.lang.String]] = js.undefined

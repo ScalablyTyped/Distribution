@@ -198,9 +198,6 @@ object EventObject extends js.Object {
   		* @param delta Number The delta value.
   		*/
   def correctWheelDelta(): scala.Unit = js.native
-  /** [Method] Correctly scales a given wheel delta
-  		* @param delta Number The delta value.
-  		*/
   def correctWheelDelta(delta: scala.Double): scala.Unit = js.native
   /** [Method] Gets the character code for the event
   		* @returns Number
@@ -229,26 +226,8 @@ object EventObject extends js.Object {
   		* @returns HTMLElement
   		*/
   def getRelatedTarget(): stdLib.HTMLElement = js.native
-  /** [Method] Gets the related target
-  		* @param selector String A simple selector to filter the target or look for an ancestor of the target
-  		* @param maxDepth Number/HTMLElement The max depth to search as a number or element (defaults to 10 || document.body)
-  		* @param returnEl Boolean True to return a Ext.Element object instead of DOM node
-  		* @returns HTMLElement
-  		*/
   def getRelatedTarget(selector: java.lang.String): stdLib.HTMLElement = js.native
-  /** [Method] Gets the related target
-  		* @param selector String A simple selector to filter the target or look for an ancestor of the target
-  		* @param maxDepth Number/HTMLElement The max depth to search as a number or element (defaults to 10 || document.body)
-  		* @param returnEl Boolean True to return a Ext.Element object instead of DOM node
-  		* @returns HTMLElement
-  		*/
   def getRelatedTarget(selector: java.lang.String, maxDepth: js.Any): stdLib.HTMLElement = js.native
-  /** [Method] Gets the related target
-  		* @param selector String A simple selector to filter the target or look for an ancestor of the target
-  		* @param maxDepth Number/HTMLElement The max depth to search as a number or element (defaults to 10 || document.body)
-  		* @param returnEl Boolean True to return a Ext.Element object instead of DOM node
-  		* @returns HTMLElement
-  		*/
   def getRelatedTarget(selector: java.lang.String, maxDepth: js.Any, returnEl: scala.Boolean): stdLib.HTMLElement = js.native
   /** [Method] Gets the target for the event
   		* @param selector String A simple selector to filter the target or look for an ancestor of the target
@@ -257,26 +236,8 @@ object EventObject extends js.Object {
   		* @returns HTMLElement
   		*/
   def getTarget(): stdLib.HTMLElement = js.native
-  /** [Method] Gets the target for the event
-  		* @param selector String A simple selector to filter the target or look for an ancestor of the target
-  		* @param maxDepth Number/HTMLElement The max depth to search as a number or element (defaults to 10 || document.body)
-  		* @param returnEl Boolean True to return a Ext.Element object instead of DOM node
-  		* @returns HTMLElement
-  		*/
   def getTarget(selector: java.lang.String): stdLib.HTMLElement = js.native
-  /** [Method] Gets the target for the event
-  		* @param selector String A simple selector to filter the target or look for an ancestor of the target
-  		* @param maxDepth Number/HTMLElement The max depth to search as a number or element (defaults to 10 || document.body)
-  		* @param returnEl Boolean True to return a Ext.Element object instead of DOM node
-  		* @returns HTMLElement
-  		*/
   def getTarget(selector: java.lang.String, maxDepth: js.Any): stdLib.HTMLElement = js.native
-  /** [Method] Gets the target for the event
-  		* @param selector String A simple selector to filter the target or look for an ancestor of the target
-  		* @param maxDepth Number/HTMLElement The max depth to search as a number or element (defaults to 10 || document.body)
-  		* @param returnEl Boolean True to return a Ext.Element object instead of DOM node
-  		* @returns HTMLElement
-  		*/
   def getTarget(selector: java.lang.String, maxDepth: js.Any, returnEl: scala.Boolean): stdLib.HTMLElement = js.native
   /** [Method] Normalizes mouse wheel y delta across browsers
   		* @returns Number The mouse wheel y-delta
@@ -306,9 +267,6 @@ object EventObject extends js.Object {
   		* @param target Ext.Element/HTMLElement If specified, the target for the event. This is likely to be used when relaying a DOM event. If not specified, getTarget is used to determine the target.
   		*/
   def injectEvent(): scala.Unit = js.native
-  /** [Method] Injects a DOM event using the data in this object and optionally a new target
-  		* @param target Ext.Element/HTMLElement If specified, the target for the event. This is likely to be used when relaying a DOM event. If not specified, getTarget is used to determine the target.
-  		*/
   def injectEvent(target: js.Any): scala.Unit = js.native
   /** [Method] Checks if the key pressed was a navigation key
   		* @returns Boolean True if the press is a navigation keypress
@@ -331,26 +289,8 @@ object EventObject extends js.Object {
   		* @returns Boolean
   		*/
   def within(): scala.Boolean = js.native
-  /** [Method] Returns true if the target of this event is a child of el
-  		* @param el String/HTMLElement/Ext.Element The id, DOM element or Ext.Element to check
-  		* @param related Boolean true to test if the related target is within el instead of the target
-  		* @param allowEl Boolean true to also check if the passed element is the target or related target
-  		* @returns Boolean
-  		*/
   def within(el: js.Any): scala.Boolean = js.native
-  /** [Method] Returns true if the target of this event is a child of el
-  		* @param el String/HTMLElement/Ext.Element The id, DOM element or Ext.Element to check
-  		* @param related Boolean true to test if the related target is within el instead of the target
-  		* @param allowEl Boolean true to also check if the passed element is the target or related target
-  		* @returns Boolean
-  		*/
   def within(el: js.Any, related: scala.Boolean): scala.Boolean = js.native
-  /** [Method] Returns true if the target of this event is a child of el
-  		* @param el String/HTMLElement/Ext.Element The id, DOM element or Ext.Element to check
-  		* @param related Boolean true to test if the related target is within el instead of the target
-  		* @param allowEl Boolean true to also check if the passed element is the target or related target
-  		* @returns Boolean
-  		*/
   def within(el: js.Any, related: scala.Boolean, allowEl: scala.Boolean): scala.Boolean = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlashSoundItem extends js.Object {
   var bitRate: java.lang.String
   var bits: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HeadroomOptions extends js.Object {
   var classes: js.UndefOr[Anon_Initial] = js.undefined
   var offset: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PublicProfile extends js.Object {
   /** The URL to the main display image of the public profile. Being deprecated. */
   var displayImageUrl: js.UndefOr[java.lang.String] = js.undefined

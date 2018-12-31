@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait openssh_DirectStreamLocalChannelInfo extends js.Object {
   var data: SocketChannelData
   var packetSize: scala.Double

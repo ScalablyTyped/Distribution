@@ -6,9 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Login **/
-
 /** Event **/
-
 trait Event extends js.Object {
   var currentTarget: stdLib.HTMLElement
   var target: stdLib.HTMLElement

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlashXMLUI extends js.Object {
   def accept(): js.Any
   def cancel(): js.Any

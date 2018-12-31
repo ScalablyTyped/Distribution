@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MetricDescriptorsResource extends js.Object {
   /** Creates a new metric descriptor. User-created metric descriptors define custom metrics. */
   def create(request: gapiDotClientDotMonitoringLib.Anon_NameAccesstoken): gapiDotClientLib.gapiNs.clientNs.Request[MetricDescriptor]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Locales
   extends /* language */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[LocaleMessages]] {
   var cn: js.UndefOr[LocaleMessages] = js.undefined

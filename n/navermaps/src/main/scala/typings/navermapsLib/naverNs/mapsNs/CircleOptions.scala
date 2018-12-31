@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CircleOptions extends js.Object {
   var center: Coord | CoordLiteral
   var clickable: js.UndefOr[scala.Boolean] = js.undefined

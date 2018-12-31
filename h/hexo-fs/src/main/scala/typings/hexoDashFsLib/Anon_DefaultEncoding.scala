@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DefaultEncoding extends js.Object {
   var autoClose: js.UndefOr[scala.Boolean] = js.undefined
   var defaultEncoding: js.UndefOr[java.lang.String] = js.undefined

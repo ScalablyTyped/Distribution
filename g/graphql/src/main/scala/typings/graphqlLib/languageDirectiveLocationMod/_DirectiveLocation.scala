@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // @internal
-
 trait _DirectiveLocation extends js.Object {
   var ARGUMENT_DEFINITION: graphqlLib.graphqlLibStrings.ARGUMENT_DEFINITION
   var ENUM: graphqlLib.graphqlLibStrings.ENUM

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlatformStatic extends js.Object {
   var OS: PlatformOSType
   var Version: scala.Double | java.lang.String

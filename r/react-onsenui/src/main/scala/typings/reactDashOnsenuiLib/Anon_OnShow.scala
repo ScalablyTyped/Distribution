@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnShow extends js.Object {
   var contentStyle: js.UndefOr[js.Any] = js.undefined
   var modifier: js.UndefOr[java.lang.String] = js.undefined

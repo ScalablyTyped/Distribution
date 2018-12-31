@@ -12,22 +12,22 @@ sealed trait SourceProviderAvailability extends js.Object
 @js.native
 object SourceProviderAvailability extends js.Object {
   /**
-       * The source provider is available in all environments.
-       */
+    * The source provider is available in all environments.
+    */
   @js.native
   sealed trait All
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.SourceProviderAvailability
   
   /**
-       * The source provider is available in the hosted environment.
-       */
+    * The source provider is available in the hosted environment.
+    */
   @js.native
   sealed trait Hosted
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.SourceProviderAvailability
   
   /**
-       * The source provider is available in the on-premises environment.
-       */
+    * The source provider is available in the on-premises environment.
+    */
   @js.native
   sealed trait OnPremises
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.SourceProviderAvailability

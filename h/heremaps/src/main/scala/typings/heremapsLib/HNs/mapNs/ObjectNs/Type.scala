@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait Type extends js.Object
 
 /**
-             * The major types of map objects
-             */
+  * The major types of map objects
+  */
 @JSGlobal("H.map.Object.Type")
 @js.native
 object Type extends js.Object {

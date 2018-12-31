@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AdRequestParam extends CallbackParam {
   var adposition: jwplayerLib.jwplayerLibStrings.pre | jwplayerLib.jwplayerLibStrings.mid | jwplayerLib.jwplayerLibStrings.post
   var client: jwplayerLib.jwplayerLibStrings.vast | jwplayerLib.jwplayerLibStrings.googima

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBinaryXhr
   extends extjsLib.ExtNs.IBase {
   /** [Method] Abort this connection  */

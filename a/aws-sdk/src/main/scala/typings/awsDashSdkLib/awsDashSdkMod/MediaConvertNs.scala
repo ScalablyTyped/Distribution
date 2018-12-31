@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object MediaConvertNs extends js.Object {
   @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class Types ()
     extends awsDashSdkLib.clientsAllMod.MediaConvertNs.Types {
-    /**
-       * Constructs a service object. This object has one method for each API operation.
-       */
     def this(options: awsDashSdkLib.clientsMediaconvertMod.MediaConvertNs.ClientConfiguration) = this()
   }
   

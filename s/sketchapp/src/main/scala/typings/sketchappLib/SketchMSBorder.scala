@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSBorder extends js.Object {
   var _class: sketchappLib.sketchappLibStrings.border
   var color: SketchMSColor

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Volume extends js.Object {
   /** Unique name for the volume. */
   var name: js.UndefOr[java.lang.String] = js.undefined

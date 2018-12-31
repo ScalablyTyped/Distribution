@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnlyIfLicensed extends js.Object {
   var alwaysInclude: scala.Double
   var onlyIfLicensed: scala.Double

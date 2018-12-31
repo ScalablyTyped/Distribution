@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgComboSelectionChangedEventUIParam extends js.Object {
   /**
   	 * Used to obtain reference to array of new selected items. That can be null.

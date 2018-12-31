@@ -21,8 +21,8 @@ class MockSpan protected ()
   /* private */ def _generateUUID(): js.Any = js.native
   def addReference(ref: opentracingLib.libReferenceMod.default): scala.Unit = js.native
   /**
-       * Returns a simplified object better for console.log()'ing.
-       */
+    * Returns a simplified object better for console.log()'ing.
+    */
   def debug(): DebugInfo = js.native
   def durationMs(): scala.Double = js.native
   def operationName(): java.lang.String = js.native

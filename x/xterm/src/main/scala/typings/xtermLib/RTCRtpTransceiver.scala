@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RTCRtpTransceiver extends js.Object {
   val currentDirection: RTCRtpTransceiverDirection | scala.Null
   var direction: RTCRtpTransceiverDirection

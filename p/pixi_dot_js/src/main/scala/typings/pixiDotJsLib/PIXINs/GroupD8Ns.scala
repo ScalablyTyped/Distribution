@@ -23,10 +23,10 @@ object GroupD8Ns extends js.Object {
   def byDirection(dx: scala.Double, dy: scala.Double): scala.Double = js.native
   def inv(rotation: scala.Double): scala.Double = js.native
   /**
-           * @name PIXI.GroupD8.isSwapWidthHeight
-           * @see PIXI.GroupD8.isVertical
-           * @deprecated since version 4.6.0
-           */
+    * @name PIXI.GroupD8.isSwapWidthHeight
+    * @see PIXI.GroupD8.isVertical
+    * @deprecated since version 4.6.0
+    */
   def isSwapWidthHeight(rotation: scala.Double): scala.Boolean = js.native
   def isVertical(rotation: scala.Double): scala.Boolean = js.native
   def matrixAppendRotationInv(matrix: pixiDotJsLib.PIXINs.Matrix, rotation: scala.Double, tx: scala.Double, ty: scala.Double): scala.Unit = js.native

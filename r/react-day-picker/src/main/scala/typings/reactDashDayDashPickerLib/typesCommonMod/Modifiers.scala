@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Modifiers
   extends /* other */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[Modifier | js.Array[Modifier]]] {
   var outside: Modifier | js.Array[Modifier]

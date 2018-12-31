@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FileContainer extends js.Object {
   var ContainerItemStatus: Anon_EnumValuesAnonCreatedPendingUpload
   var ContainerItemType: Anon_EnumValuesAnonFolderAny

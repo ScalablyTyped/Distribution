@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var from: js.UndefOr[java.lang.String] = js.undefined
   var map: js.UndefOr[autoprefixerDashCoreLib.Anon_Prev] = js.undefined

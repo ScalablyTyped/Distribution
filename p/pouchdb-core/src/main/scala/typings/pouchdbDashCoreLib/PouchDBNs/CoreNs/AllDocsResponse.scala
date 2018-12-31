@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AllDocsResponse[Content /* <: js.Object */] extends js.Object {
   /** The `skip` if provided, or in CouchDB the actual offset */
   var offset: scala.Double

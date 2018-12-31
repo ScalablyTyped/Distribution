@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DocType extends js.Object {
   def detach(): Content
   def getElementName(): java.lang.String

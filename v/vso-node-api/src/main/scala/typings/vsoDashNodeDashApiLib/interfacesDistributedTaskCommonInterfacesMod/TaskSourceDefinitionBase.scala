@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TaskSourceDefinitionBase extends js.Object {
   var authKey: java.lang.String
   var endpoint: java.lang.String

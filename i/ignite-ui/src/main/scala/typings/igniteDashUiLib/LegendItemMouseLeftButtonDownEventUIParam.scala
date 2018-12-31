@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LegendItemMouseLeftButtonDownEventUIParam extends js.Object {
   /**
   	 * Used to get legend item brush.

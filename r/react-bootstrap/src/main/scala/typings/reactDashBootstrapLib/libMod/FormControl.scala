@@ -13,7 +13,7 @@ class FormControl ()
 @JSImport("react-bootstrap/lib", "FormControl")
 @js.native
 object FormControl extends js.Object {
-  var Feedback: js.Any = js.native
-  var Static: js.Any = js.native
+  var Feedback: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libFormControlFeedbackMod.namespaced] = js.native
+  var Static: org.scalablytyped.runtime.Instantiable0[reactDashBootstrapLib.libFormControlStaticMod.namespaced] = js.native
 }
 

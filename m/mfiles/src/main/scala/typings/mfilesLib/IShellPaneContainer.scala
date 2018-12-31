@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IShellPaneContainer extends js.Object {
   val Content: js.Any
   val Events: IShellPaneContainerEvents

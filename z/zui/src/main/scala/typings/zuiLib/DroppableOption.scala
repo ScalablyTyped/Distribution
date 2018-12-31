@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DroppableOption extends js.Object {
   var always: js.UndefOr[js.Function1[/* e */ DroppableEvent, scala.Unit]] = js.undefined
   var before: js.UndefOr[js.Function1[/* e */ js.UndefOr[DroppableEvent], scala.Boolean]] = js.undefined

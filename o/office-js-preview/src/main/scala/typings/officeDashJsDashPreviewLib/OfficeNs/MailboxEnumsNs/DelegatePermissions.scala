@@ -9,58 +9,58 @@ import scala.scalajs.js.annotation._
 sealed trait DelegatePermissions extends js.Object
 
 /**
-         * This bit mask represents a delegate's permissions on a shared folder.
-         *
-         * [Api set: Mailbox Preview]
-         *
-         * @remarks
-         * <table><tr><td>
-         * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
-         * </td><td>Compose or read</td></tr></table>
-         * 
-         * @beta
-         */
+  * This bit mask represents a delegate's permissions on a shared folder.
+  *
+  * [Api set: Mailbox Preview]
+  *
+  * @remarks
+  * <table><tr><td>
+  * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
+  * </td><td>Compose or read</td></tr></table>
+  * 
+  * @beta
+  */
 @JSGlobal("Office.MailboxEnums.DelegatePermissions")
 @js.native
 object DelegatePermissions extends js.Object {
   /**
-               * Delegate has permission to delete any items.
-               */
+    * Delegate has permission to delete any items.
+    */
   @js.native
   sealed trait DeleteAll
     extends officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.DelegatePermissions
   
   /**
-               * Delegate has permission to delete only the items they created.
-               */
+    * Delegate has permission to delete only the items they created.
+    */
   @js.native
   sealed trait DeleteOwn
     extends officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.DelegatePermissions
   
   /**
-               * Delegate has permission to edit any items.
-               */
+    * Delegate has permission to edit any items.
+    */
   @js.native
   sealed trait EditAll
     extends officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.DelegatePermissions
   
   /**
-               * Delegate has permission to edit only they items they created.
-               */
+    * Delegate has permission to edit only they items they created.
+    */
   @js.native
   sealed trait EditOwn
     extends officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.DelegatePermissions
   
   /**
-               * Delegate has permission to read items.
-               */
+    * Delegate has permission to read items.
+    */
   @js.native
   sealed trait Read
     extends officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.DelegatePermissions
   
   /**
-               * Delegate has permission to create and write items.
-               */
+    * Delegate has permission to create and write items.
+    */
   @js.native
   sealed trait Write
     extends officeDashJsDashPreviewLib.OfficeNs.MailboxEnumsNs.DelegatePermissions

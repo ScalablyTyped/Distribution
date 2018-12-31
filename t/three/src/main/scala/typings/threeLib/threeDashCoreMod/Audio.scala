@@ -33,8 +33,8 @@ class Audio protected () extends Object3D {
   def getPlaybackRate(): scala.Double = js.native
   def getVolume(): scala.Double = js.native
   /**
-       * @deprecated Use {@link AudioLoader} instead.
-       */
+    * @deprecated Use {@link AudioLoader} instead.
+    */
   def load(file: java.lang.String): Audio = js.native
   def onEnded(): scala.Unit = js.native
   def pause(): this.type = js.native

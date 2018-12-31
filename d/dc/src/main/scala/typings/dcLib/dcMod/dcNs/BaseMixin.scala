@@ -52,8 +52,18 @@ trait BaseMixin[T] extends js.Object {
   var resetFilterHandler_Original: IGetSet[js.Function1[/* filters */ js.Array[_], js.Array[_]], T] = js.native
   @JSName("svg")
   var svg_Original: IGetSet[
-    d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _], 
-    d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _]
+    d3DashSelectionLib.d3DashSelectionMod.Selection[
+      _, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+      d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+    ], 
+    d3DashSelectionLib.d3DashSelectionMod.Selection[
+      _, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+      d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+    ]
   ] = js.native
   @JSName("title")
   var title_Original: IGetSet[Accessor[_, java.lang.String], T] = js.native
@@ -68,16 +78,56 @@ trait BaseMixin[T] extends js.Object {
   def addFilterHandler(): js.Function1[/* filters */ js.Array[_], js.Array[_]] = js.native
   def addFilterHandler(t: js.Function1[/* filters */ js.Array[_], js.Array[_]]): js.Function1[/* filters */ js.Array[_], js.Array[_]] = js.native
   def anchor(
-    anchor: d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _]
-  ): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
+    anchor: d3DashSelectionLib.d3DashSelectionMod.Selection[
+      _, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+      d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+    ]
+  ): d3DashSelectionLib.d3DashSelectionMod.Selection[
+    _, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+    d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+  ] = js.native
   def anchor(
-    anchor: d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _],
+    anchor: d3DashSelectionLib.d3DashSelectionMod.Selection[
+      _, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+      d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+    ],
     chartGroup: java.lang.String
-  ): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
-  def anchor(anchor: BaseMixin[_]): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
-  def anchor(anchor: BaseMixin[_], chartGroup: java.lang.String): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
-  def anchor(anchor: java.lang.String): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
-  def anchor(anchor: java.lang.String, chartGroup: java.lang.String): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
+  ): d3DashSelectionLib.d3DashSelectionMod.Selection[
+    _, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+    d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+  ] = js.native
+  def anchor(anchor: BaseMixin[_]): d3DashSelectionLib.d3DashSelectionMod.Selection[
+    _, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+    d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+  ] = js.native
+  def anchor(anchor: BaseMixin[_], chartGroup: java.lang.String): d3DashSelectionLib.d3DashSelectionMod.Selection[
+    _, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+    d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+  ] = js.native
+  def anchor(anchor: java.lang.String): d3DashSelectionLib.d3DashSelectionMod.Selection[
+    _, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+    d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+  ] = js.native
+  def anchor(anchor: java.lang.String, chartGroup: java.lang.String): d3DashSelectionLib.d3DashSelectionMod.Selection[
+    _, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+    d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+  ] = js.native
   def anchorName(): java.lang.String = js.native
   def chartGroup(): java.lang.String = js.native
   def chartGroup(t: java.lang.String): java.lang.String = js.native
@@ -100,7 +150,6 @@ trait BaseMixin[T] extends js.Object {
   def group(): js.Any = js.native
   // http://dc-js.github.io/dc.js/docs/html/dc.baseMixin.html#group__anchor
   def group(t: js.Any): js.Any = js.native
-  // http://dc-js.github.io/dc.js/docs/html/dc.baseMixin.html#group__anchor
   def group(t: js.Any, r: java.lang.String): js.Any = js.native
   def hasFilter(): scala.Boolean = js.native
   def hasFilter(filter: js.Any): scala.Boolean = js.native
@@ -118,7 +167,7 @@ trait BaseMixin[T] extends js.Object {
   def minHeight(t: scala.Double): scala.Double = js.native
   def minWidth(): scala.Double = js.native
   def minWidth(t: scala.Double): scala.Double = js.native
-  def on(event: java.lang.String, fn: js.Function2[/* chart */ T, /* repeated */js.Any, _]): T = js.native
+  def on(event: java.lang.String, fn: js.Function2[/* chart */ T, /* repeated */ js.Any, _]): T = js.native
   def onClick(datum: js.Any): scala.Unit = js.native
   @JSName("on")
   def on_filtered(event: dcLib.dcLibStrings.filtered, fn: js.Function2[/* chart */ T, /* filter */ js.Any, _]): T = js.native
@@ -153,17 +202,62 @@ trait BaseMixin[T] extends js.Object {
   def resetFilterHandler(t: js.Function1[/* filters */ js.Array[_], js.Array[_]]): js.Function1[/* filters */ js.Array[_], js.Array[_]] = js.native
   def resetSvg(): scala.Unit = js.native
   def select(
-    selector: d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _]
-  ): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
-  def select(selector: java.lang.String): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
+    selector: d3DashSelectionLib.d3DashSelectionMod.Selection[
+      _, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+      d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+    ]
+  ): d3DashSelectionLib.d3DashSelectionMod.Selection[
+    _, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+    d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+  ] = js.native
+  def select(selector: java.lang.String): d3DashSelectionLib.d3DashSelectionMod.Selection[
+    _, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+    d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+  ] = js.native
   def selectAll(
-    selector: d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _]
-  ): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
-  def selectAll(selector: java.lang.String): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
-  def svg(): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
+    selector: d3DashSelectionLib.d3DashSelectionMod.Selection[
+      _, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+      d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+    ]
+  ): d3DashSelectionLib.d3DashSelectionMod.Selection[
+    _, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+    d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+  ] = js.native
+  def selectAll(selector: java.lang.String): d3DashSelectionLib.d3DashSelectionMod.Selection[
+    _, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+    d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+  ] = js.native
+  def svg(): d3DashSelectionLib.d3DashSelectionMod.Selection[
+    _, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+    d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+  ] = js.native
   def svg(
-    t: d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _]
-  ): d3DashSelectionLib.d3DashSelectionMod.Selection[_, _, d3DashSelectionLib.d3DashSelectionMod.BaseType, _] = js.native
+    t: d3DashSelectionLib.d3DashSelectionMod.Selection[
+      _, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+      d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+      /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+    ]
+  ): d3DashSelectionLib.d3DashSelectionMod.Selection[
+    _, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for Datum */ _, 
+    d3DashSelectionLib.d3DashSelectionMod.BaseType, 
+    /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for PDatum */ _
+  ] = js.native
   def title(): Accessor[_, java.lang.String] = js.native
   def title(t: Accessor[_, java.lang.String]): Accessor[_, java.lang.String] = js.native
   def transitionDuration(): scala.Double = js.native

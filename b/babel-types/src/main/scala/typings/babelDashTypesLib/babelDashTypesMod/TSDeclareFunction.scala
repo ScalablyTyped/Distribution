@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TSDeclareFunction extends Node {
   var async: scala.Boolean
   var declare: scala.Boolean | scala.Null

@@ -10,22 +10,14 @@ trait SourcesPanel extends js.Object {
   /** Fired when an object is selected in the panel. */
   var onSelectionChanged: SelectionChangedEvent = js.native
   /**
-           * Creates a pane within panel's sidebar.
-           * @param title Text that is displayed in sidebar caption.
-           * @param callback A callback invoked when the sidebar is created.
-           * If you specify the callback parameter, it should be a function that looks like this:
-           * function( ExtensionSidebarPane result) {...};
-           * Parameter result: An ExtensionSidebarPane object for created sidebar pane.
-           */
+    * Creates a pane within panel's sidebar.
+    * @param title Text that is displayed in sidebar caption.
+    * @param callback A callback invoked when the sidebar is created.
+    * If you specify the callback parameter, it should be a function that looks like this:
+    * function( ExtensionSidebarPane result) {...};
+    * Parameter result: An ExtensionSidebarPane object for created sidebar pane.
+    */
   def createSidebarPane(title: java.lang.String): scala.Unit = js.native
-  /**
-           * Creates a pane within panel's sidebar.
-           * @param title Text that is displayed in sidebar caption.
-           * @param callback A callback invoked when the sidebar is created.
-           * If you specify the callback parameter, it should be a function that looks like this:
-           * function( ExtensionSidebarPane result) {...};
-           * Parameter result: An ExtensionSidebarPane object for created sidebar pane.
-           */
   def createSidebarPane(title: java.lang.String, callback: js.Function1[/* result */ ExtensionSidebarPane, scala.Unit]): scala.Unit = js.native
 }
 

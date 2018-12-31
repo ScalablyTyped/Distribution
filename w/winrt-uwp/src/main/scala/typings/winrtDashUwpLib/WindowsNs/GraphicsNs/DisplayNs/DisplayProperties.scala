@@ -68,9 +68,9 @@ object DisplayProperties extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.GraphicsNs.DisplayNs.DisplayPropertiesEventHandler
   ): scala.Unit = js.native
   /**
-                   * Asynchronously gets the default International Color Consortium (ICC) color profile that is associated with the physical display.
-                   * @return Object that manages the asynchronous retrieval of the color profile.
-                   */
+    * Asynchronously gets the default International Color Consortium (ICC) color profile that is associated with the physical display.
+    * @return Object that manages the asynchronous retrieval of the color profile.
+    */
   def getColorProfileAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IRandomAccessStream] = js.native
   /** Occurs when the physical display's color profile changes. */
   def oncolorprofilechanged(ev: winrtDashUwpLib.WindowsNs.WinRTEvent[_]): scala.Unit = js.native

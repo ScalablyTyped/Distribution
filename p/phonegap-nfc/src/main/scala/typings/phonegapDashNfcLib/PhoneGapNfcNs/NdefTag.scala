@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NdefTag extends Tag {
   var canMakeReadOnly: scala.Boolean
   var isWritable: scala.Boolean

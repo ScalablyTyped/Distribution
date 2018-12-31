@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MaxApertureValue extends js.Object {
   /** The aperture used to create the photo (f-number). */
   var aperture: js.UndefOr[scala.Double] = js.undefined

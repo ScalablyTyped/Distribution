@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Revision extends js.Object {
   /** The ID of the revision. */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Whether to keep this revision forever, even if it is no longer the head revision. If not set, the revision will be automatically purged 30 days after
-               * newer content is uploaded. This can be set on a maximum of 200 revisions for a file.
-               * This field is only applicable to files with binary content in Drive.
-               */
+    * Whether to keep this revision forever, even if it is no longer the head revision. If not set, the revision will be automatically purged 30 days after
+    * newer content is uploaded. This can be set on a maximum of 200 revisions for a file.
+    * This field is only applicable to files with binary content in Drive.
+    */
   var keepForever: js.UndefOr[scala.Boolean] = js.undefined
   /** Identifies what kind of resource this is. Value: the fixed string "drive#revision". */
   var kind: js.UndefOr[java.lang.String] = js.undefined

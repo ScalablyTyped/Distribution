@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBounce extends IAbstract {
   /** [Method] Returns the value of acceleration
   		* @returns Number

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExtrudeGeometryOptions extends js.Object {
   var UVGenerator: js.UndefOr[UVGenerator] = js.undefined
   var bevelEnabled: js.UndefOr[scala.Boolean] = js.undefined

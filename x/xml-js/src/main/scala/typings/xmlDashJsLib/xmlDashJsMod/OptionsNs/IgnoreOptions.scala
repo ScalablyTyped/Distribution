@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IgnoreOptions extends js.Object {
   var ignoreAttributes: js.UndefOr[scala.Boolean] = js.undefined
   var ignoreCdata: js.UndefOr[scala.Boolean] = js.undefined

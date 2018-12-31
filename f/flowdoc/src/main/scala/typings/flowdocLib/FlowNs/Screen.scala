@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Screen
   extends flowdocLib.Graphic {
   var children: js.Array[Layer]

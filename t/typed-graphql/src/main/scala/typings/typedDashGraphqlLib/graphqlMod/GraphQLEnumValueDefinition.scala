@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GraphQLEnumValueDefinition extends js.Object {
   var deprecationReason: java.lang.String
   var description: java.lang.String

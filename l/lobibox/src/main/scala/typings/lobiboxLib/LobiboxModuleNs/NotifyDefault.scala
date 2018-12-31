@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NotifyDefault extends js.Object {
                     // Image source string
   var closable: js.UndefOr[scala.Boolean] = js.undefined

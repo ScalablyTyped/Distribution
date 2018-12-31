@@ -15,9 +15,9 @@ object libTheseModMembers extends js.Object {
   def getMonad[L](S: fpDashTsLib.libSemigroupMod.Semigroup[L]): fpDashTsLib.libMonadMod.Monad2C[fpDashTsLib.fpDashTsLibStrings.These, L] = js.native
   def getSemigroup[L, A](SL: fpDashTsLib.libSemigroupMod.Semigroup[L], SA: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[These[L, A]] = js.native
   def getSetoid[L, A](SL: fpDashTsLib.libSetoidMod.Setoid[L], SA: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[These[L, A]] = js.native
-  def isBoth[L, A](fa: These[L, A]): /* is Both */scala.Boolean = js.native
-  def isThat[L, A](fa: These[L, A]): /* is That */scala.Boolean = js.native
-  def isThis[L, A](fa: These[L, A]): /* is This */scala.Boolean = js.native
+  def isBoth[L, A](fa: These[L, A]): /* is fp-ts.fp-ts/lib/These.Both<L, A> */ scala.Boolean = js.native
+  def isThat[L, A](fa: These[L, A]): /* is fp-ts.fp-ts/lib/These.That<L, A> */ scala.Boolean = js.native
+  def isThis[L, A](fa: These[L, A]): /* is fp-ts.fp-ts/lib/These.This<L, A> */ scala.Boolean = js.native
   def that[L, A](a: A): These[L, A] = js.native
   def theseLeft[L, A](fa: These[L, A]): fpDashTsLib.libOptionMod.Option[L] = js.native
   def theseRight[L, A](fa: These[L, A]): fpDashTsLib.libOptionMod.Option[A] = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AntAnchor extends js.Object {
   var activeLink: java.lang.String | scala.Null
   var onClick: js.UndefOr[

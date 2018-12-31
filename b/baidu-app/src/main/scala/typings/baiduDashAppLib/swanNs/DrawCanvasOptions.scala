@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DrawCanvasOptions extends js.Object {
   /**
   		 * 绘图动作数组，由 swan.createCanvasContext 创建的 context，

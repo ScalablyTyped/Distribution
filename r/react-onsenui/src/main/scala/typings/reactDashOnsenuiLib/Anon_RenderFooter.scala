@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RenderFooter extends js.Object {
   var dataSource: js.UndefOr[js.Array[_]] = js.undefined
   var modifier: js.UndefOr[java.lang.String] = js.undefined

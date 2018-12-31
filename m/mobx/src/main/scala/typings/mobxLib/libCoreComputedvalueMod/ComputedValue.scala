@@ -12,17 +12,17 @@ class ComputedValue[T] protected ()
   extends mobxLib.libCoreObservableMod.IObservable
      with IComputedValue[T] {
   /**
-       * Create a new computed value based on a function expression.
-       *
-       * The `name` property is for debug purposes only.
-       *
-       * The `equals` property specifies the comparer function to use to determine if a newly produced
-       * value differs from the previous value. Two comparers are provided in the library; `defaultComparer`
-       * compares based on identity comparison (===), and `structualComparer` deeply compares the structure.
-       * Structural comparison can be convenient if you always produce a new aggregated object and
-       * don't want to notify observers if it is structurally the same.
-       * This is useful for working with vectors, mouse coordinates etc.
-       */
+    * Create a new computed value based on a function expression.
+    *
+    * The `name` property is for debug purposes only.
+    *
+    * The `equals` property specifies the comparer function to use to determine if a newly produced
+    * value differs from the previous value. Two comparers are provided in the library; `defaultComparer`
+    * compares based on identity comparison (===), and `structualComparer` deeply compares the structure.
+    * Structural comparison can be convenient if you always produce a new aggregated object and
+    * don't want to notify observers if it is structurally the same.
+    * This is useful for working with vectors, mouse coordinates etc.
+    */
   def this(options: IComputedValueOptions[T]) = this()
   var __mapid: java.lang.String = js.native
   var dependenciesState: mobxLib.libCoreDerivationMod.IDerivationState = js.native
@@ -39,10 +39,10 @@ class ComputedValue[T] protected ()
   var isTracing: mobxLib.libCoreDerivationMod.TraceMode = js.native
   var keepAlive: js.Any = js.native
   /**
-       * Id of the derivation *run* that last accessed this observable.
-       * If this id equals the *run* id of the current derivation,
-       * the dependency is already established
-       */
+    * Id of the derivation *run* that last accessed this observable.
+    * If this id equals the *run* id of the current derivation,
+    * the dependency is already established
+    */
   /* CompleteClass */
   override var lastAccessedBy: scala.Double = js.native
   /* CompleteClass */

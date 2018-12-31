@@ -46,39 +46,39 @@ abstract class AppointmentCalendar () extends js.Object {
   /** Get the identifier of the user account data for the AppointmentCalendar . */
   var userDataAccountId: java.lang.String = js.native
   /**
-                   * Asynchronously deletes the appointment with the specified ID.
-                   * @param localId The LocalId of the appointment to be deleted.
-                   * @return An asynchronous action.
-                   */
+    * Asynchronously deletes the appointment with the specified ID.
+    * @param localId The LocalId of the appointment to be deleted.
+    * @return An asynchronous action.
+    */
   def deleteAppointmentAsync(localId: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Asynchronously deletes the appointment instance with the specified start time of a master appointment with the specified ID.
-                   * @param localId The LocalId of the master appointment associated with the appointment instance to be deleted.
-                   * @param instanceStartTime The start time of the appointment instance to be deleted.
-                   * @return An asynchronous action.
-                   */
+    * Asynchronously deletes the appointment instance with the specified start time of a master appointment with the specified ID.
+    * @param localId The LocalId of the master appointment associated with the appointment instance to be deleted.
+    * @param instanceStartTime The start time of the appointment instance to be deleted.
+    * @return An asynchronous action.
+    */
   def deleteAppointmentInstanceAsync(localId: java.lang.String, instanceStartTime: stdLib.Date): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Asynchronously deletes the appointment calendar.
-                   * @return An asynchrounous action.
-                   */
+    * Asynchronously deletes the appointment calendar.
+    * @return An asynchrounous action.
+    */
   def deleteAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Asynchronously retrieves a list of appointment instances of the specified master appointment that meet the specified criteria.
-                   * @param masterLocalId The LocalId of the master appointment for which appointment instances are retrieved.
-                   * @param rangeStart The start time of the time window for which appointment instances are retrieved.
-                   * @param rangeLength The length of the time window for which appointment instances are retrieved.
-                   * @return An asynchronous operation that returns IVectorView on successful completion.
-                   */
+    * Asynchronously retrieves a list of appointment instances of the specified master appointment that meet the specified criteria.
+    * @param masterLocalId The LocalId of the master appointment for which appointment instances are retrieved.
+    * @param rangeStart The start time of the time window for which appointment instances are retrieved.
+    * @param rangeLength The length of the time window for which appointment instances are retrieved.
+    * @return An asynchronous operation that returns IVectorView on successful completion.
+    */
   def findAllInstancesAsync(masterLocalId: java.lang.String, rangeStart: stdLib.Date, rangeLength: scala.Double): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
   /**
-                   * Asynchronously retrieves a list of appointment instances of the specified master appointment that meet the specified criteria.
-                   * @param masterLocalId The LocalId of the master appointment for which appointment instances are retrieved.
-                   * @param rangeStart The start time of the time window for which appointment instances are retrieved.
-                   * @param rangeLength The length of the time window for which appointment instances are retrieved.
-                   * @param pOptions A FindAppointmentsOptions object that is used to specify more options for this operation.
-                   * @return An asynchronous operation that returns IVectorView on successful completion.
-                   */
+    * Asynchronously retrieves a list of appointment instances of the specified master appointment that meet the specified criteria.
+    * @param masterLocalId The LocalId of the master appointment for which appointment instances are retrieved.
+    * @param rangeStart The start time of the time window for which appointment instances are retrieved.
+    * @param rangeLength The length of the time window for which appointment instances are retrieved.
+    * @param pOptions A FindAppointmentsOptions object that is used to specify more options for this operation.
+    * @return An asynchronous operation that returns IVectorView on successful completion.
+    */
   def findAllInstancesAsync(
     masterLocalId: java.lang.String,
     rangeStart: stdLib.Date,
@@ -86,79 +86,79 @@ abstract class AppointmentCalendar () extends js.Object {
     pOptions: FindAppointmentsOptions
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
   /**
-                   * Asynchronously retrieves a list of appointments belonging to the current AppointmentCalendar that meet the specified criteria.
-                   * @param rangeStart The start time of the time window for which appointments are retrieved.
-                   * @param rangeLength The length of the time window for which appointments are retrieved.
-                   * @return An asynchronous operation that returns IVectorView on successful completion.
-                   */
+    * Asynchronously retrieves a list of appointments belonging to the current AppointmentCalendar that meet the specified criteria.
+    * @param rangeStart The start time of the time window for which appointments are retrieved.
+    * @param rangeLength The length of the time window for which appointments are retrieved.
+    * @return An asynchronous operation that returns IVectorView on successful completion.
+    */
   def findAppointmentsAsync(rangeStart: stdLib.Date, rangeLength: scala.Double): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
   /**
-                   * Asynchronously retrieves a list of appointments belonging to the current AppointmentCalendar that meet the specified criteria.
-                   * @param rangeStart The start time of the time window for which appointments are retrieved.
-                   * @param rangeLength The length of the time window for which appointments are retrieved.
-                   * @param options A FindAppointmentsOptions object that is used to specify more options for this operation.
-                   * @return An asynchronous operation that returns IVectorView on successful completion.
-                   */
+    * Asynchronously retrieves a list of appointments belonging to the current AppointmentCalendar that meet the specified criteria.
+    * @param rangeStart The start time of the time window for which appointments are retrieved.
+    * @param rangeLength The length of the time window for which appointments are retrieved.
+    * @param options A FindAppointmentsOptions object that is used to specify more options for this operation.
+    * @return An asynchronous operation that returns IVectorView on successful completion.
+    */
   def findAppointmentsAsync(rangeStart: stdLib.Date, rangeLength: scala.Double, options: FindAppointmentsOptions): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
   /**
-                   * Asynchronously retrieves a list of appointment instances that are exceptions from the specified master appointment.
-                   * @param masterLocalId The LocalId of the master appointment for which exceptional appointment instances are retrieved.
-                   * @return An asynchronous operation that returns IVectorView on successful completion.
-                   */
+    * Asynchronously retrieves a list of appointment instances that are exceptions from the specified master appointment.
+    * @param masterLocalId The LocalId of the master appointment for which exceptional appointment instances are retrieved.
+    * @return An asynchronous operation that returns IVectorView on successful completion.
+    */
   def findExceptionsFromMasterAsync(masterLocalId: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
   /**
-                   * Asynchronously retrieves a list of appointments that meet the specified criteria.
-                   * @return An asynchronous operation that returns IVectorView on successful completion.
-                   */
+    * Asynchronously retrieves a list of appointments that meet the specified criteria.
+    * @return An asynchronous operation that returns IVectorView on successful completion.
+    */
   def findUnexpandedAppointmentsAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
   /**
-                   * Asynchronously retrieves a list of appointments that meet the specified criteria.
-                   * @param options A FindAppointmentsOptions object that is used to specify more options for this operation.
-                   * @return An asynchronous operation that returns IVectorView on successful completion.
-                   */
+    * Asynchronously retrieves a list of appointments that meet the specified criteria.
+    * @param options A FindAppointmentsOptions object that is used to specify more options for this operation.
+    * @return An asynchronous operation that returns IVectorView on successful completion.
+    */
   def findUnexpandedAppointmentsAsync(options: FindAppointmentsOptions): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[_]] = js.native
   /**
-                   * Asynchronously retrieves the Appointment with the specified ID.
-                   * @param localId The LocalId of the appointment to be retrieved.
-                   * @return An asynchronous operation that returns Appointment on successful completion.
-                   */
+    * Asynchronously retrieves the Appointment with the specified ID.
+    * @param localId The LocalId of the appointment to be retrieved.
+    * @return An asynchronous operation that returns Appointment on successful completion.
+    */
   def getAppointmentAsync(localId: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[Appointment] = js.native
   /**
-                   * (Applies to Windows Phone only) Asynchronously retrieves the Appointment with the specified ID and includes data for the specified properties.
-                   * @param localId The LocalId of the appointment to be retrieved.
-                   * @param prefetchProperties A list of names of the properties for which data should be included when the appointment is retrieved.
-                   * @return An asynchronous operation that returns Appointment on successful completion.
-                   */
+    * (Applies to Windows Phone only) Asynchronously retrieves the Appointment with the specified ID and includes data for the specified properties.
+    * @param localId The LocalId of the appointment to be retrieved.
+    * @param prefetchProperties A list of names of the properties for which data should be included when the appointment is retrieved.
+    * @return An asynchronous operation that returns Appointment on successful completion.
+    */
   def getAppointmentAsync(
     localId: java.lang.String,
     prefetchProperties: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String]
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[Appointment] = js.native
   /**
-                   * Asynchronously retrieves the appointment instance of the specified master appointment that has the specified start time.
-                   * @param localId The ID of the master appointment to which the retrieved appointment instance belongs.
-                   * @param instanceStartTime The start time of the appointment instance to be retrieved.
-                   * @return An asynchronous operation that returns Appointment on successful completion.
-                   */
+    * Asynchronously retrieves the appointment instance of the specified master appointment that has the specified start time.
+    * @param localId The ID of the master appointment to which the retrieved appointment instance belongs.
+    * @param instanceStartTime The start time of the appointment instance to be retrieved.
+    * @return An asynchronous operation that returns Appointment on successful completion.
+    */
   def getAppointmentInstanceAsync(localId: java.lang.String, instanceStartTime: stdLib.Date): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[Appointment] = js.native
   /**
-                   * Asynchronously saves the provided appointment to the calendar.
-                   * @param pAppointment The appointment to be saved.
-                   * @return An asynchronous action.
-                   */
+    * Asynchronously saves the provided appointment to the calendar.
+    * @param pAppointment The appointment to be saved.
+    * @return An asynchronous action.
+    */
   def saveAppointmentAsync(pAppointment: Appointment): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Asynchronously saves changes to the appointment calendar.
-                   * @return An asynchronous action.
-                   */
+    * Asynchronously saves changes to the appointment calendar.
+    * @return An asynchronous action.
+    */
   def saveAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
   /**
-                   * Asynchronously attempts to cancel a meeting.
-                   * @param meeting The meeting to cancel.
-                   * @param subject The subject for the cancellation notification.
-                   * @param comment The body of the cancellation notification.
-                   * @param notifyInvitees A Boolean value indicating if invitees should be notified.
-                   * @return A Boolean value indicating if the operation was successful.
-                   */
+    * Asynchronously attempts to cancel a meeting.
+    * @param meeting The meeting to cancel.
+    * @param subject The subject for the cancellation notification.
+    * @param comment The body of the cancellation notification.
+    * @param notifyInvitees A Boolean value indicating if invitees should be notified.
+    * @return A Boolean value indicating if the operation was successful.
+    */
   def tryCancelMeetingAsync(
     meeting: Appointment,
     subject: java.lang.String,
@@ -166,21 +166,21 @@ abstract class AppointmentCalendar () extends js.Object {
     notifyInvitees: scala.Boolean
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
   /**
-                   * Asynchronously attempts to create or update a meeting.
-                   * @param appointment The meeting to create or update.
-                   * @param notifyInvitees A Boolean value indicating if invitees should be notified.
-                   * @return A Boolean value indicating if the operation was successful.
-                   */
+    * Asynchronously attempts to create or update a meeting.
+    * @param appointment The meeting to create or update.
+    * @param notifyInvitees A Boolean value indicating if invitees should be notified.
+    * @return A Boolean value indicating if the operation was successful.
+    */
   def tryCreateOrUpdateAppointmentAsync(appointment: Appointment, notifyInvitees: scala.Boolean): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
   /**
-                   * Asynchronously attempts to forward a meeting.
-                   * @param meeting The meeting to forward.
-                   * @param invitees A list of new invitees to receive the forwarded meeting.
-                   * @param subject The subject of the meeting invitation.
-                   * @param forwardHeader A new meeting header that includes the new invitees.
-                   * @param comment The body of the forwarded meeting invitation.
-                   * @return A Boolean value indicating if the operation was successful.
-                   */
+    * Asynchronously attempts to forward a meeting.
+    * @param meeting The meeting to forward.
+    * @param invitees A list of new invitees to receive the forwarded meeting.
+    * @param subject The subject of the meeting invitation.
+    * @param forwardHeader A new meeting header that includes the new invitees.
+    * @param comment The body of the forwarded meeting invitation.
+    * @return A Boolean value indicating if the operation was successful.
+    */
   def tryForwardMeetingAsync(
     meeting: Appointment,
     invitees: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[AppointmentInvitee],
@@ -189,14 +189,14 @@ abstract class AppointmentCalendar () extends js.Object {
     comment: java.lang.String
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
   /**
-                   * Asynchronously attempts to propose a new meeting time.
-                   * @param meeting The meeting to update.
-                   * @param newStartTime The proposed new start time.
-                   * @param newDuration A new duration for the meeting.
-                   * @param subject The subject of the meeting invitation.
-                   * @param comment The body of the meeting invitation.
-                   * @return A Boolean value indicating if the operation was successful.
-                   */
+    * Asynchronously attempts to propose a new meeting time.
+    * @param meeting The meeting to update.
+    * @param newStartTime The proposed new start time.
+    * @param newDuration A new duration for the meeting.
+    * @param subject The subject of the meeting invitation.
+    * @param comment The body of the meeting invitation.
+    * @return A Boolean value indicating if the operation was successful.
+    */
   def tryProposeNewTimeForMeetingAsync(
     meeting: Appointment,
     newStartTime: stdLib.Date,
@@ -205,14 +205,14 @@ abstract class AppointmentCalendar () extends js.Object {
     comment: java.lang.String
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
   /**
-                   * Asynchronously attempts to update the response to a meeting invitation.
-                   * @param meeting The meeting to update.
-                   * @param response The response to the meeting invitation, such as accept, tentative or decline.
-                   * @param subject The subject of the response.
-                   * @param comment The body of the response.
-                   * @param sendUpdate A Boolean value indicating whether or not to send the response to the meeting organizer.
-                   * @return A Boolean value indicating if the operation was successful.
-                   */
+    * Asynchronously attempts to update the response to a meeting invitation.
+    * @param meeting The meeting to update.
+    * @param response The response to the meeting invitation, such as accept, tentative or decline.
+    * @param subject The subject of the response.
+    * @param comment The body of the response.
+    * @param sendUpdate A Boolean value indicating whether or not to send the response to the meeting organizer.
+    * @return A Boolean value indicating if the operation was successful.
+    */
   def tryUpdateMeetingResponseAsync(
     meeting: Appointment,
     response: AppointmentParticipantResponse,

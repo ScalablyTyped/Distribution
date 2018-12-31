@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HttpConnector extends js.Object {
   // onStatusSet(handler: (status: any) => void): void;
   def createAgent(config: js.Any): js.Any

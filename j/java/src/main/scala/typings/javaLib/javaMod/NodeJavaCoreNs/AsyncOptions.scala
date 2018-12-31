@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AsyncOptions extends js.Object {
   var asyncSuffix: js.UndefOr[java.lang.String] = js.undefined
   var promiseSuffix: js.UndefOr[java.lang.String] = js.undefined

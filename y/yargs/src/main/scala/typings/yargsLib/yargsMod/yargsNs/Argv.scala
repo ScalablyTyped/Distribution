@@ -13,10 +13,10 @@ import scala.scalajs.js.annotation._
 // Arguments<T> to simplify the inferred type signature in client code.
 @js.native
 trait Argv[T] extends js.Object {
-  var argv: yargsLib.yargsLibStrings.Argv with js.Any = js.native
-  def apply(): yargsLib.yargsLibStrings.Argv with js.Any = js.native
-  def apply(args: js.Array[java.lang.String]): yargsLib.yargsLibStrings.Argv with js.Any = js.native
-  def apply(args: js.Array[java.lang.String], cwd: java.lang.String): yargsLib.yargsLibStrings.Argv with js.Any = js.native
+  var argv: yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
+  def apply(): yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
+  def apply(args: js.Array[java.lang.String]): yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
+  def apply(args: js.Array[java.lang.String], cwd: java.lang.String): yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
   def alias(aliases: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]): Argv[T] = js.native
   def alias(shortName: java.lang.String, longName: java.lang.String): Argv[T] = js.native
   def alias(shortName: java.lang.String, longName: js.Array[java.lang.String]): Argv[T] = js.native
@@ -24,7 +24,6 @@ trait Argv[T] extends js.Object {
   def alias(shortName: js.Array[java.lang.String], longName: js.Array[java.lang.String]): Argv[T] = js.native
   // Aliases for previously declared options can inherit the types of those options.
   def alias[K1 /* <: java.lang.String */, K2 /* <: java.lang.String */](shortName: K1 | K2, longName: K1 | K2): Argv[T with yargsLib.yargsLibStrings.Argv] = js.native
-  // Aliases for previously declared options can inherit the types of those options.
   def alias[K1 /* <: java.lang.String */, K2 /* <: java.lang.String */](shortName: K1 | K2, longName: js.Array[K1 | K2]): Argv[T with yargsLib.yargsLibStrings.Argv] = js.native
   def array[K /* <: java.lang.String */](key: K): Argv[(Omit[T, K]) with yargsLib.yargsLibStrings.Argv with T] = js.native
   def array[K /* <: java.lang.String */](key: js.Array[K]): Argv[(Omit[T, K]) with yargsLib.yargsLibStrings.Argv with T] = js.native
@@ -141,7 +140,6 @@ trait Argv[T] extends js.Object {
   def command[U](module: CommandModule[T, U]): Argv[U] = js.native
   // Advanced API
   def commandDir(dir: java.lang.String): Argv[T] = js.native
-  // Advanced API
   def commandDir(dir: java.lang.String, opts: RequireDirectoryOptions): Argv[T] = js.native
   @JSName("command")
   def command_U[U](command: java.lang.String, description: java.lang.String): Argv[T] = js.native
@@ -200,29 +198,13 @@ trait Argv[T] extends js.Object {
   def demand(positionals: scala.Double, msg: java.lang.String): Argv[T] = js.native
   def demand(positionals: scala.Double, required: scala.Boolean): Argv[T] = js.native
   /**
-           * @deprecated since version 6.6.0
-           * Use '.demandCommand()' or '.demandOption()' instead
-           */
+    * @deprecated since version 6.6.0
+    * Use '.demandCommand()' or '.demandOption()' instead
+    */
   def demand[K /* <: java.lang.String */](key: K): Argv[Defined[T, K]] = js.native
-  /**
-           * @deprecated since version 6.6.0
-           * Use '.demandCommand()' or '.demandOption()' instead
-           */
   def demand[K /* <: java.lang.String */](key: K, msg: java.lang.String): Argv[Defined[T, K]] = js.native
-  /**
-           * @deprecated since version 6.6.0
-           * Use '.demandCommand()' or '.demandOption()' instead
-           */
   def demand[K /* <: java.lang.String */](key: K, msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
-  /**
-           * @deprecated since version 6.6.0
-           * Use '.demandCommand()' or '.demandOption()' instead
-           */
   def demand[K /* <: java.lang.String */](key: js.Array[K], msg: java.lang.String): Argv[Defined[T, K]] = js.native
-  /**
-           * @deprecated since version 6.6.0
-           * Use '.demandCommand()' or '.demandOption()' instead
-           */
   def demand[K /* <: java.lang.String */](key: js.Array[K], msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
   def demandCommand(): Argv[T] = js.native
   def demandCommand(min: scala.Double): Argv[T] = js.native
@@ -241,10 +223,6 @@ trait Argv[T] extends js.Object {
   def demandOption[K /* <: java.lang.String */](key: js.Array[K], msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
   @JSName("demandOption")
   def demandOption_KString[K /* <: java.lang.String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
-  /**
-           * @deprecated since version 6.6.0
-           * Use '.demandCommand()' or '.demandOption()' instead
-           */
   @JSName("demand")
   def demand_KString[K /* <: java.lang.String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
   def describe(descriptions: org.scalablytyped.runtime.StringDictionary[java.lang.String]): Argv[T] = js.native
@@ -303,9 +281,9 @@ trait Argv[T] extends js.Object {
   def pkgConf(key: js.Array[java.lang.String]): Argv[T] = js.native
   def pkgConf(key: js.Array[java.lang.String], cwd: java.lang.String): Argv[T] = js.native
   /**
-           * 'positional' should be called in a command's builder function, and is not
-           * available on the top-level yargs instance. If so, it will throw an error.
-           */
+    * 'positional' should be called in a command's builder function, and is not
+    * available on the top-level yargs instance. If so, it will throw an error.
+    */
   def positional(key: java.lang.String, opt: PositionalOptions): Argv[T] = js.native
   def recommendCommands(): Argv[T] = js.native
   def require(key: java.lang.String, msg: java.lang.String): Argv[T] = js.native
@@ -315,34 +293,14 @@ trait Argv[T] extends js.Object {
   def require(positionals: scala.Double, msg: java.lang.String): Argv[T] = js.native
   def require(positionals: scala.Double, required: scala.Boolean): Argv[T] = js.native
   /**
-           * @deprecated since version 6.6.0
-           * Use '.demandCommand()' or '.demandOption()' instead
-           */
+    * @deprecated since version 6.6.0
+    * Use '.demandCommand()' or '.demandOption()' instead
+    */
   def require[K /* <: java.lang.String */](key: K): Argv[Defined[T, K]] = js.native
-  /**
-           * @deprecated since version 6.6.0
-           * Use '.demandCommand()' or '.demandOption()' instead
-           */
   def require[K /* <: java.lang.String */](key: K, msg: java.lang.String): Argv[Defined[T, K]] = js.native
-  /**
-           * @deprecated since version 6.6.0
-           * Use '.demandCommand()' or '.demandOption()' instead
-           */
   def require[K /* <: java.lang.String */](key: K, msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
-  /**
-           * @deprecated since version 6.6.0
-           * Use '.demandCommand()' or '.demandOption()' instead
-           */
   def require[K /* <: java.lang.String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
-  /**
-           * @deprecated since version 6.6.0
-           * Use '.demandCommand()' or '.demandOption()' instead
-           */
   def require[K /* <: java.lang.String */](key: js.Array[K], msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
-  /**
-           * @deprecated since version 6.6.0
-           * Use '.demandCommand()' or '.demandOption()' instead
-           */
   @JSName("require")
   def require_KString[K /* <: java.lang.String */](key: js.Array[K], msg: java.lang.String): Argv[Defined[T, K]] = js.native
   def required(key: java.lang.String, msg: java.lang.String): Argv[T] = js.native
@@ -352,42 +310,22 @@ trait Argv[T] extends js.Object {
   def required(positionals: scala.Double, msg: java.lang.String): Argv[T] = js.native
   def required(positionals: scala.Double, required: scala.Boolean): Argv[T] = js.native
   /**
-           * @deprecated since version 6.6.0
-           * Use '.demandCommand()' or '.demandOption()' instead
-           */
+    * @deprecated since version 6.6.0
+    * Use '.demandCommand()' or '.demandOption()' instead
+    */
   def required[K /* <: java.lang.String */](key: K): Argv[Defined[T, K]] = js.native
-  /**
-           * @deprecated since version 6.6.0
-           * Use '.demandCommand()' or '.demandOption()' instead
-           */
   def required[K /* <: java.lang.String */](key: K, msg: java.lang.String): Argv[Defined[T, K]] = js.native
-  /**
-           * @deprecated since version 6.6.0
-           * Use '.demandCommand()' or '.demandOption()' instead
-           */
   def required[K /* <: java.lang.String */](key: K, msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
-  /**
-           * @deprecated since version 6.6.0
-           * Use '.demandCommand()' or '.demandOption()' instead
-           */
   def required[K /* <: java.lang.String */](key: js.Array[K]): Argv[Defined[T, K]] = js.native
-  /**
-           * @deprecated since version 6.6.0
-           * Use '.demandCommand()' or '.demandOption()' instead
-           */
   def required[K /* <: java.lang.String */](key: js.Array[K], msg: yargsLib.yargsLibNumbers.`true`): Argv[Defined[T, K]] = js.native
-  /**
-           * @deprecated since version 6.6.0
-           * Use '.demandCommand()' or '.demandOption()' instead
-           */
   @JSName("required")
   def required_KString[K /* <: java.lang.String */](key: js.Array[K], msg: java.lang.String): Argv[Defined[T, K]] = js.native
   def requiresArg(key: java.lang.String): Argv[T] = js.native
   def requiresArg(key: js.Array[java.lang.String]): Argv[T] = js.native
   /**
-           * @deprecated since version 6.6.0
-           * Use '.global()' instead
-           */
+    * @deprecated since version 6.6.0
+    * Use '.global()' instead
+    */
   def reset(): Argv[T] = js.native
   def scriptName($0: java.lang.String): Argv[T] = js.native
   def showCompletionScript(): Argv[T] = js.native

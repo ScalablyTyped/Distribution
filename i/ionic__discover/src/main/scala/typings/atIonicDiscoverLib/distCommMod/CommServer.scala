@@ -11,22 +11,22 @@ class CommServer protected ()
   extends nodeLib.eventsMod.EventEmitter
      with ICommServerEventEmitter {
   def this(namespace: java.lang.String, /**
-       * Unique identifier of the publisher.
-       */
+    * Unique identifier of the publisher.
+    */
   id: java.lang.String, /**
-       * Port of communication server.
-       */
+    * Port of communication server.
+    */
   port: scala.Double) = this()
   val clients: nodeLib.Set[wsLib.wsMod.namespaced] = js.native
   /**
-       * Unique identifier of the publisher.
-       */
+    * Unique identifier of the publisher.
+    */
   var id: java.lang.String = js.native
   var namespace: java.lang.String = js.native
   var parseData: js.Any = js.native
   /**
-       * Port of communication server.
-       */
+    * Port of communication server.
+    */
   var port: scala.Double = js.native
   var server: js.UndefOr[wsLib.wsMod.Server] = js.native
   def start(): js.Promise[scala.Unit] = js.native

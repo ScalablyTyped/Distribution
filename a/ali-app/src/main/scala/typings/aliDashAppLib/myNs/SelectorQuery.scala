@@ -15,10 +15,6 @@ trait SelectorQuery extends js.Object {
   		 * 请求结果按请求次序构成数组，在callback的第一个参数中返回。
   		 */
   def exec(): scala.Unit = js.native
-  /**
-  		 * 执行所有的请求
-  		 * 请求结果按请求次序构成数组，在callback的第一个参数中返回。
-  		 */
   def exec(callback: js.Function1[/* result */ js.Array[_], scala.Unit]): scala.Unit = js.native
   // /**
   //  * 将选择器的选取范围更改为自定义组件component内

@@ -62,7 +62,6 @@ trait BigNumber extends js.Object {
   def square(): BigNumber = js.native
   /// Serialize to a bit array
   def toBits(): BitArray = js.native
-  /// Serialize to a bit array
   def toBits(len: scala.Double): BitArray = js.native
   def trim(): BigNumber = js.native
 }

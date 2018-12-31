@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EXCEPINFO extends js.Object {
   val bstrDescription: java.lang.String
   val bstrHelpFile: java.lang.String

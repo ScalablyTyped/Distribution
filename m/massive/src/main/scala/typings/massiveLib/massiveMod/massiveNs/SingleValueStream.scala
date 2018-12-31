@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SingleValueStream extends js.Object {
   /** Implement the Transform stream that invokes singleValue on everything which passes through it. */
   /* private */ def _transform(

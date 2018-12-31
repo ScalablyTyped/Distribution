@@ -12,22 +12,22 @@ sealed trait ShimmerElementType extends js.Object
 @js.native
 object ShimmerElementType extends js.Object {
   /**
-       * Circle element type
-       */
+    * Circle element type
+    */
   @js.native
   sealed trait circle
     extends officeDashUiDashFabricDashReactLib.libComponentsShimmerShimmerDotTypesMod.ShimmerElementType
   
   /**
-       * Gap element type
-       */
+    * Gap element type
+    */
   @js.native
   sealed trait gap
     extends officeDashUiDashFabricDashReactLib.libComponentsShimmerShimmerDotTypesMod.ShimmerElementType
   
   /**
-       * Line element type
-       */
+    * Line element type
+    */
   @js.native
   sealed trait line
     extends officeDashUiDashFabricDashReactLib.libComponentsShimmerShimmerDotTypesMod.ShimmerElementType

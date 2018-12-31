@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LayersControlProps
   extends leafletLib.leafletMod.ControlNs.LayersOptions
      with LayersControlEvents {

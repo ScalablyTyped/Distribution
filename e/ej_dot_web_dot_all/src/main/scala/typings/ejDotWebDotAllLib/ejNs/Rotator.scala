@@ -16,43 +16,43 @@ class Rotator protected () extends Widget {
   @JSName("model")
   var model_Rotator: ejDotWebDotAllLib.ejNs.RotatorNs.Model = js.native
   /** Disables the Rotator control.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def disable(): scala.Unit = js.native
   /** Enables the Rotator control.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def enable(): scala.Unit = js.native
   /** This method is used to get the current slide index.
-           * @returns {number}
-           */
+    * @returns {number}
+    */
   def getIndex(): scala.Double = js.native
   /** This method is used to move a slide to the specified index.
-           * @param {number} index of an slide
-           * @returns {void}
-           */
+    * @param {number} index of an slide
+    * @returns {void}
+    */
   def gotoIndex(index: scala.Double): scala.Unit = js.native
   /** This method is used to pause autoplay.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def pause(): scala.Unit = js.native
   /** This method is used to move slides continuously (or start autoplay) in the specified autoplay direction.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def play(): scala.Unit = js.native
   /** This method is used to move to the next slide from the current slide. If the current slide is the last slide, then the first slide will be treated as the next slide.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def slideNext(): scala.Unit = js.native
   /** This method is used to move to the previous slide from the current slide. If the current slide is the first slide, then the last slide will be treated as the previous slide.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def slidePrevious(): scala.Unit = js.native
   /** This method is used to update/modify the slide content of template rotator by using id based on index value.
-           * @param {number} index of an slide
-           * @param {string} id of a new updated slide
-           * @returns {void}
-           */
+    * @param {number} index of an slide
+    * @param {string} id of a new updated slide
+    * @returns {void}
+    */
   def updateTemplateById(index: scala.Double, id: java.lang.String): scala.Unit = js.native
 }
 

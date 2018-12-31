@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CENTER extends js.Object {
   var CENTER: reactDashMdLib.reactDashMdLibStrings.center
   var INNER_LEFT: reactDashMdLib.reactDashMdLibStrings.`inner left`

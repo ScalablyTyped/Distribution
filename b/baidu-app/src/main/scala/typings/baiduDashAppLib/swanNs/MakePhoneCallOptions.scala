@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // 设备-----拨打电话
-
 trait MakePhoneCallOptions
   extends BaseOptions[js.Any, js.Any] {
   /**

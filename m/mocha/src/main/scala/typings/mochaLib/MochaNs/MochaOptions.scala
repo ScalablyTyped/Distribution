@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Options to pass to Mocha.
-     */
-
+  * Options to pass to Mocha.
+  */
 trait MochaOptions extends js.Object {
   var allowUncaught: js.UndefOr[scala.Boolean] = js.undefined
   var asyncOnly: js.UndefOr[scala.Boolean] = js.undefined
@@ -34,9 +33,9 @@ trait MochaOptions extends js.Object {
   var inlineDiffs: js.UndefOr[scala.Boolean] = js.undefined
   var noHighlighting: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * Reporter constructor, built-in reporter name, or reporter module path. Defaults to
-           * `"spec"`.
-           */
+    * Reporter constructor, built-in reporter name, or reporter module path. Defaults to
+    * `"spec"`.
+    */
   var reporter: js.UndefOr[java.lang.String | ReporterConstructor] = js.undefined
   /** Options to pass to the reporter. */
   var reporterOptions: js.UndefOr[js.Any] = js.undefined

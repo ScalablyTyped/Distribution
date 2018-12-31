@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // @internal
-
 trait _Kind extends js.Object {
   var ARGUMENT: graphqlLib.graphqlLibStrings.Argument
   var BOOLEAN: graphqlLib.graphqlLibStrings.BooleanValue

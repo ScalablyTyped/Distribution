@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced[R] protected () extends Bluebird[R] {
   /**
-     * Create a new promise. The passed in function will receive functions
-     * `resolve` and `reject` as its arguments which can be called to seal the fate of the created promise.
-     *
-     * If promise cancellation is enabled, passed in function will receive
-     * one more function argument `onCancel` that allows to register an optional cancellation callback.
-     */
+    * Create a new promise. The passed in function will receive functions
+    * `resolve` and `reject` as its arguments which can be called to seal the fate of the created promise.
+    *
+    * If promise cancellation is enabled, passed in function will receive
+    * one more function argument `onCancel` that allows to register an optional cancellation callback.
+    */
   def this(callback: js.Function3[
       /* resolve */ js.Function1[/* thenableOrResult */ js.UndefOr[bluebirdLib.Resolvable[R]], scala.Unit], 
       /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit], 
@@ -22,37 +22,37 @@ class namespaced[R] protected () extends Bluebird[R] {
       scala.Unit
     ]) = this()
   /**
-       * See if the underlying promise was cancelled at the creation time of this inspection object.
-       */
+    * See if the underlying promise was cancelled at the creation time of this inspection object.
+    */
   /* CompleteClass */
   override def isCancelled(): scala.Boolean = js.native
   /**
-       * See if the underlying promise was fulfilled at the creation time of this inspection object.
-       */
+    * See if the underlying promise was fulfilled at the creation time of this inspection object.
+    */
   /* CompleteClass */
   override def isFulfilled(): scala.Boolean = js.native
   /**
-       * See if the underlying promise was defer at the creation time of this inspection object.
-       */
+    * See if the underlying promise was defer at the creation time of this inspection object.
+    */
   /* CompleteClass */
   override def isPending(): scala.Boolean = js.native
   /**
-       * See if the underlying promise was rejected at the creation time of this inspection object.
-       */
+    * See if the underlying promise was rejected at the creation time of this inspection object.
+    */
   /* CompleteClass */
   override def isRejected(): scala.Boolean = js.native
   /**
-       * Get the rejection reason for the underlying promise. Throws if the promise wasn't rejected at the creation time of this inspection object.
-       *
-       * throws `TypeError`
-       */
+    * Get the rejection reason for the underlying promise. Throws if the promise wasn't rejected at the creation time of this inspection object.
+    *
+    * throws `TypeError`
+    */
   /* CompleteClass */
   override def reason(): js.Any = js.native
   /**
-       * Get the fulfillment value of the underlying promise. Throws if the promise wasn't fulfilled at the creation time of this inspection object.
-       *
-       * throws `TypeError`
-       */
+    * Get the fulfillment value of the underlying promise. Throws if the promise wasn't fulfilled at the creation time of this inspection object.
+    *
+    * throws `TypeError`
+    */
   /* CompleteClass */
   override def value(): R = js.native
 }
@@ -61,13 +61,21 @@ class namespaced[R] protected () extends Bluebird[R] {
 @js.native
 object namespaced extends js.Object {
   /**
-     * Create a new promise. The passed in function will receive functions `resolve` and `reject` as its arguments which can be called to seal the fate of the created promise.
-     * If promise cancellation is enabled, passed in function will receive one more function argument `onCancel` that allows to register an optional cancellation callback.
-     */
-  var Promise: bluebirdLib.Anon_TimeoutError = js.native
+    * Create a new promise. The passed in function will receive functions `resolve` and `reject` as its arguments which can be called to seal the fate of the created promise.
+    * If promise cancellation is enabled, passed in function will receive one more function argument `onCancel` that allows to register an optional cancellation callback.
+    */
+  var Promise: bluebirdLib.Anon_TimeoutError with (org.scalablytyped.runtime.Instantiable1[
+    /* callback */ js.Function3[
+      /* resolve */ js.Function1[/* thenableOrResult */ js.UndefOr[bluebirdLib.Resolvable[js.Object]], scala.Unit], 
+      /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit], 
+      /* onCancel */ js.UndefOr[js.Function1[/* callback */ js.Function0[scala.Unit], scala.Unit]], 
+      scala.Unit
+    ], 
+    bluebirdLib.bluebirdMod.Bluebird[js.Object]
+  ]) = js.native
   /**
-     * The version number of the library
-     */
+    * The version number of the library
+    */
   var version: java.lang.String = js.native
   // array with values
   def all[R](values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]]): bluebirdLib.bluebirdMod.Bluebird[js.Array[R]] = js.native
@@ -85,10 +93,10 @@ object namespaced extends js.Object {
     ]
   ): bluebirdLib.bluebirdMod.Bluebird[js.Tuple4[T1, T2, T3, T4]] = js.native
   /**
-     * Given an array, or a promise of an array, which contains promises (or a mix of promises and values) return a promise that is fulfilled when all the items in the array are fulfilled.
-     * The promise's fulfillment value is an array with fulfillment values at respective positions to the original array.
-     * If any promise in the array rejects, the returned promise is rejected with the rejection reason.
-     */
+    * Given an array, or a promise of an array, which contains promises (or a mix of promises and values) return a promise that is fulfilled when all the items in the array are fulfilled.
+    * The promise's fulfillment value is an array with fulfillment values at respective positions to the original array.
+    * If any promise in the array rejects, the returned promise is rejected with the rejection reason.
+    */
   // TODO enable more overloads
   // array with promises of different types
   def all[T1, T2, T3, T4, T5](
@@ -102,45 +110,37 @@ object namespaced extends js.Object {
   ): bluebirdLib.bluebirdMod.Bluebird[js.Tuple5[T1, T2, T3, T4, T5]] = js.native
    // tslint:disable-line:unified-signatures
   /**
-     * Like `Promise.some()`, with 1 as `count`. However, if the promise fulfills, the fulfillment value is not an array of 1 but the value directly.
-     */
+    * Like `Promise.some()`, with 1 as `count`. However, if the promise fulfills, the fulfillment value is not an array of 1 but the value directly.
+    */
   def any[R](values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
   def attempt[R](fn: js.Function0[bluebirdLib.Resolvable[R]]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
   /**
-     * Sugar for `Promise.resolve(undefined).bind(thisArg);`. See `.bind()`.
-     */
+    * Sugar for `Promise.resolve(undefined).bind(thisArg);`. See `.bind()`.
+    */
   def bind(thisArg: js.Any): bluebirdLib.bluebirdMod.Bluebird[scala.Unit] = js.native
    // tslint:disable-line no-unnecessary-generics
   /**
-     * Cast the given `value` to a trusted promise.
-     *
-     * If `value` is already a trusted `Promise`, it is returned as is. If `value` is not a thenable, a fulfilled is: Promise returned with `value` as its fulfillment value.
-     * If `value` is a thenable (Promise-like object, like those returned by jQuery's `$.ajax`), returns a trusted that: Promise assimilates the state of the thenable.
-     */
+    * Cast the given `value` to a trusted promise.
+    *
+    * If `value` is already a trusted `Promise`, it is returned as is. If `value` is not a thenable, a fulfilled is: Promise returned with `value` as its fulfillment value.
+    * If `value` is a thenable (Promise-like object, like those returned by jQuery's `$.ajax`), returns a trusted that: Promise assimilates the state of the thenable.
+    */
   def cast[R](value: bluebirdLib.Resolvable[R]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
   /**
-     * Configure long stack traces, warnings, monitoring and cancellation.
-     * Note that even though false is the default here, a development environment might be detected which automatically
-     *  enables long stack traces and warnings.
-     */
+    * Configure long stack traces, warnings, monitoring and cancellation.
+    * Note that even though false is the default here, a development environment might be detected which automatically
+    *  enables long stack traces and warnings.
+    */
   def config(options: bluebirdLib.Anon_Warnings): scala.Unit = js.native
   /**
-     * Returns a function that can use `yield` to run asynchronous code synchronously.
-     *
-     * This feature requires the support of generators which are drafted in the next version of the language.
-     * Node version greater than `0.11.2` is required and needs to be executed with the `--harmony-generators` (or `--harmony`) command-line switch.
-     */
+    * Returns a function that can use `yield` to run asynchronous code synchronously.
+    *
+    * This feature requires the support of generators which are drafted in the next version of the language.
+    * Node version greater than `0.11.2` is required and needs to be executed with the `--harmony-generators` (or `--harmony`) command-line switch.
+    */
   // TODO: After https://github.com/Microsoft/TypeScript/issues/2983 is implemented, we can use
   // the return type propagation of generators to automatically infer the return type T.
   def coroutine[T](generatorFunction: js.Function0[stdLib.IterableIterator[_]]): js.Function0[bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
-  /**
-     * Returns a function that can use `yield` to run asynchronous code synchronously.
-     *
-     * This feature requires the support of generators which are drafted in the next version of the language.
-     * Node version greater than `0.11.2` is required and needs to be executed with the `--harmony-generators` (or `--harmony`) command-line switch.
-     */
-  // TODO: After https://github.com/Microsoft/TypeScript/issues/2983 is implemented, we can use
-  // the return type propagation of generators to automatically infer the return type T.
   def coroutine[T](
     generatorFunction: js.Function0[stdLib.IterableIterator[_]],
     options: bluebirdLib.bluebirdMod.BluebirdNs.CoroutineOptions
@@ -332,55 +332,45 @@ object namespaced extends js.Object {
     bluebirdLib.bluebirdMod.Bluebird[T]
   ] = js.native
   /**
-     * @deprecated
-     * Create a promise with undecided fate and return a `PromiseResolver` to control it. See resolution?: Promise(#promise-resolution).
-     * @see http://bluebirdjs.com/docs/deprecated-apis.html#promise-resolution
-     */
+    * @deprecated
+    * Create a promise with undecided fate and return a `PromiseResolver` to control it. See resolution?: Promise(#promise-resolution).
+    * @see http://bluebirdjs.com/docs/deprecated-apis.html#promise-resolution
+    */
   def defer[R](): bluebirdLib.bluebirdMod.BluebirdNs.Resolver[R] = js.native
   def delay(ms: scala.Double): bluebirdLib.bluebirdMod.Bluebird[scala.Unit] = js.native
   /**
-     * Returns a promise that will be resolved with value (or undefined) after given ms milliseconds.
-     * If value is a promise, the delay will start counting down when it is fulfilled and the returned
-     *  promise will be fulfilled with the fulfillment value of the value promise.
-     */
+    * Returns a promise that will be resolved with value (or undefined) after given ms milliseconds.
+    * If value is a promise, the delay will start counting down when it is fulfilled and the returned
+    *  promise will be fulfilled with the fulfillment value of the value promise.
+    */
   def delay[R](ms: scala.Double, value: bluebirdLib.Resolvable[R]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
   /**
-     * Iterate over an array, or a promise of an array,
-     * which contains promises (or a mix of promises and values) with the given iterator function with the signature `(item, index, value)`
-     * where item is the resolved value of a respective promise in the input array.
-     * Iteration happens serially. If any promise in the input array is rejected the returned promise is rejected as well.
-     *
-     * Resolves to the original array unmodified, this method is meant to be used for side effects.
-     * If the iterator function returns a promise or a thenable, the result for the promise is awaited for before continuing with next iteration.
-     */
+    * Iterate over an array, or a promise of an array,
+    * which contains promises (or a mix of promises and values) with the given iterator function with the signature `(item, index, value)`
+    * where item is the resolved value of a respective promise in the input array.
+    * Iteration happens serially. If any promise in the input array is rejected the returned promise is rejected as well.
+    *
+    * Resolves to the original array unmodified, this method is meant to be used for side effects.
+    * If the iterator function returns a promise or a thenable, the result for the promise is awaited for before continuing with next iteration.
+    */
   def each[R](
     values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]],
     iterator: bluebirdLib.IterateFunction[R, _]
   ): bluebirdLib.bluebirdMod.Bluebird[js.Array[R]] = js.native
   /**
-     * Filter an array, or a promise of an array,
-     * which contains a promises (or a mix of promises and values) with the given `filterer` function with the signature `(item, index, arrayLength)`
-     * where `item` is the resolved value of a respective promise in the input array.
-     * If any promise in the input array is rejected the returned promise is rejected as well.
-     *
-     * The return values from the filtered functions are coerced to booleans, with the exception of promises and thenables which are awaited for their eventual result.
-     *
-     * *The original array is not modified.
-     */
+    * Filter an array, or a promise of an array,
+    * which contains a promises (or a mix of promises and values) with the given `filterer` function with the signature `(item, index, arrayLength)`
+    * where `item` is the resolved value of a respective promise in the input array.
+    * If any promise in the input array is rejected the returned promise is rejected as well.
+    *
+    * The return values from the filtered functions are coerced to booleans, with the exception of promises and thenables which are awaited for their eventual result.
+    *
+    * *The original array is not modified.
+    */
   def filter[R](
     values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]],
     filterer: bluebirdLib.IterateFunction[R, scala.Boolean]
   ): bluebirdLib.bluebirdMod.Bluebird[js.Array[R]] = js.native
-  /**
-     * Filter an array, or a promise of an array,
-     * which contains a promises (or a mix of promises and values) with the given `filterer` function with the signature `(item, index, arrayLength)`
-     * where `item` is the resolved value of a respective promise in the input array.
-     * If any promise in the input array is rejected the returned promise is rejected as well.
-     *
-     * The return values from the filtered functions are coerced to booleans, with the exception of promises and thenables which are awaited for their eventual result.
-     *
-     * *The original array is not modified.
-     */
   def filter[R](
     values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]],
     filterer: bluebirdLib.IterateFunction[R, scala.Boolean],
@@ -400,17 +390,14 @@ object namespaced extends js.Object {
     options: bluebirdLib.bluebirdMod.BluebirdNs.FromNodeOptions
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   /**
-     * Returns a promise that is resolved by a node style callback function.
-     */
+    * Returns a promise that is resolved by a node style callback function.
+    */
   def fromNode[T](
     resolver: js.Function1[
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
       scala.Unit
     ]
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
-  /**
-     * Returns a promise that is resolved by a node style callback function.
-     */
   def fromNode[T](
     resolver: js.Function1[
       /* callback */ js.Function2[/* err */ js.Any, /* result */ js.UndefOr[T], scala.Unit], 
@@ -419,22 +406,22 @@ object namespaced extends js.Object {
     options: bluebirdLib.bluebirdMod.BluebirdNs.FromNodeOptions
   ): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   /**
-     * See if `value` is a trusted Promise.
-     */
+    * See if `value` is a trusted Promise.
+    */
   def is(value: js.Any): scala.Boolean = js.native
   // variadic array
   /** @deprecated use .all instead */
   def join[R](values: bluebirdLib.Resolvable[R]*): bluebirdLib.bluebirdMod.Bluebird[js.Array[R]] = js.native
   /**
-     * Promise.join(
-     *   Promise<any>|any values...,
-     *   function handler
-     * ) -> Promise
-     * For coordinating multiple concurrent discrete promises.
-     *
-     * Note: In 1.x and 0.x Promise.join used to be a Promise.all that took the values in as arguments instead in an array.
-     * This behavior has been deprecated but is still supported partially - when the last argument is an immediate function value the new semantics will apply
-     */
+    * Promise.join(
+    *   Promise<any>|any values...,
+    *   function handler
+    * ) -> Promise
+    * For coordinating multiple concurrent discrete promises.
+    *
+    * Note: In 1.x and 0.x Promise.join used to be a Promise.all that took the values in as arguments instead in an array.
+    * This behavior has been deprecated but is still supported partially - when the last argument is an immediate function value the new semantics will apply
+    */
   def join[R, A1](arg1: bluebirdLib.Resolvable[A1], handler: js.Function1[/* arg1 */ A1, bluebirdLib.Resolvable[R]]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
   def join[R, A1, A2](
     arg1: bluebirdLib.Resolvable[A1],
@@ -470,62 +457,52 @@ object namespaced extends js.Object {
     ]
   ): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
   /**
-     * Call this right after the library is loaded to enabled long stack traces.
-     *
-     * Long stack traces cannot be disabled after being enabled, and cannot be enabled after promises have already been created.
-     * Long stack traces imply a substantial performance penalty, around 4-5x for throughput and 0.5x for latency.
-     */
+    * Call this right after the library is loaded to enabled long stack traces.
+    *
+    * Long stack traces cannot be disabled after being enabled, and cannot be enabled after promises have already been created.
+    * Long stack traces imply a substantial performance penalty, around 4-5x for throughput and 0.5x for latency.
+    */
   def longStackTraces(): scala.Unit = js.native
   /**
-     * Map an array, or a promise of an array,
-     * which contains a promises (or a mix of promises and values) with the given `mapper` function with the signature `(item, index, arrayLength)`
-     * where `item` is the resolved value of a respective promise in the input array.
-     * If any promise in the input array is rejected the returned promise is rejected as well.
-     *
-     * If the `mapper` function returns promises or thenables, the returned promise will wait for all the mapped results to be resolved as well.
-     *
-     * *The original array is not modified.*
-     */
+    * Map an array, or a promise of an array,
+    * which contains a promises (or a mix of promises and values) with the given `mapper` function with the signature `(item, index, arrayLength)`
+    * where `item` is the resolved value of a respective promise in the input array.
+    * If any promise in the input array is rejected the returned promise is rejected as well.
+    *
+    * If the `mapper` function returns promises or thenables, the returned promise will wait for all the mapped results to be resolved as well.
+    *
+    * *The original array is not modified.*
+    */
   def map[R, U](
     values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]],
     mapper: bluebirdLib.IterateFunction[R, U]
   ): bluebirdLib.bluebirdMod.Bluebird[js.Array[U]] = js.native
-  /**
-     * Map an array, or a promise of an array,
-     * which contains a promises (or a mix of promises and values) with the given `mapper` function with the signature `(item, index, arrayLength)`
-     * where `item` is the resolved value of a respective promise in the input array.
-     * If any promise in the input array is rejected the returned promise is rejected as well.
-     *
-     * If the `mapper` function returns promises or thenables, the returned promise will wait for all the mapped results to be resolved as well.
-     *
-     * *The original array is not modified.*
-     */
   def map[R, U](
     values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]],
     mapper: bluebirdLib.IterateFunction[R, U],
     options: bluebirdLib.bluebirdMod.BluebirdNs.ConcurrencyOption
   ): bluebirdLib.bluebirdMod.Bluebird[js.Array[U]] = js.native
   /**
-     * Given an Iterable(arrays are Iterable), or a promise of an Iterable, which produces promises (or a mix of promises and values),
-     * iterate over all the values in the Iterable into an array and iterate over the array serially, in-order.
-     *
-     * Returns a promise for an array that contains the values returned by the iterator function in their respective positions.
-     * The iterator won't be called for an item until its previous item, and the promise returned by the iterator for that item are fulfilled.
-     * This results in a mapSeries kind of utility but it can also be used simply as a side effect iterator similar to Array#forEach.
-     *
-     * If any promise in the input array is rejected or any promise returned by the iterator function is rejected, the result will be rejected as well.
-     */
+    * Given an Iterable(arrays are Iterable), or a promise of an Iterable, which produces promises (or a mix of promises and values),
+    * iterate over all the values in the Iterable into an array and iterate over the array serially, in-order.
+    *
+    * Returns a promise for an array that contains the values returned by the iterator function in their respective positions.
+    * The iterator won't be called for an item until its previous item, and the promise returned by the iterator for that item are fulfilled.
+    * This results in a mapSeries kind of utility but it can also be used simply as a side effect iterator similar to Array#forEach.
+    *
+    * If any promise in the input array is rejected or any promise returned by the iterator function is rejected, the result will be rejected as well.
+    */
   def mapSeries[R, U](
     values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]],
     iterator: bluebirdLib.IterateFunction[R, U]
   ): bluebirdLib.bluebirdMod.Bluebird[js.Array[U]] = js.native
   /**
-     * Returns a new function that wraps the given function `fn`.
-     * The new function will always return a promise that is fulfilled with the original functions return values or rejected with thrown exceptions from the original function.
-     * This method is convenient when a function can sometimes return synchronously or throw synchronously.
-     */
+    * Returns a new function that wraps the given function `fn`.
+    * The new function will always return a promise that is fulfilled with the original functions return values or rejected with thrown exceptions from the original function.
+    * This method is convenient when a function can sometimes return synchronously or throw synchronously.
+    */
   def method[R](fn: js.Function0[bluebirdLib.Resolvable[R]]): js.Function0[bluebirdLib.bluebirdMod.Bluebird[R]] = js.native
-  def method[R](fn: js.Function1[/* repeated */js.Any, bluebirdLib.Resolvable[R]]): js.Function1[/* repeated */js.Any, bluebirdLib.bluebirdMod.Bluebird[R]] = js.native
+  def method[R](fn: js.Function1[/* repeated */ js.Any, bluebirdLib.Resolvable[R]]): js.Function1[/* repeated */ js.Any, bluebirdLib.bluebirdMod.Bluebird[R]] = js.native
   def method[R, A1, A2](fn: js.Function2[/* arg1 */ A1, /* arg2 */ A2, bluebirdLib.Resolvable[R]]): js.Function2[/* arg1 */ A1, /* arg2 */ A2, bluebirdLib.bluebirdMod.Bluebird[R]] = js.native
   def method[R, A1, A2, A3](fn: js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, bluebirdLib.Resolvable[R]]): js.Function3[/* arg1 */ A1, /* arg2 */ A2, /* arg3 */ A3, bluebirdLib.bluebirdMod.Bluebird[R]] = js.native
   def method[R, A1, A2, A3, A4](
@@ -557,28 +534,20 @@ object namespaced extends js.Object {
   @JSName("method")
   def method_RA1[R, A1](fn: js.Function1[/* arg1 */ A1, bluebirdLib.Resolvable[R]]): js.Function1[/* arg1 */ A1, bluebirdLib.bluebirdMod.Bluebird[R]] = js.native
   /**
-     * Add handler as the handler to call when there is a possibly unhandled rejection.
-     * The default handler logs the error stack to stderr or console.error in browsers.
-     *
-     * Passing no value or a non-function will have the effect of removing any kind of handling for possibly unhandled rejections.
-     *
-     * Note: this hook is specific to the bluebird instance its called on, application developers should use global rejection events.
-     */
+    * Add handler as the handler to call when there is a possibly unhandled rejection.
+    * The default handler logs the error stack to stderr or console.error in browsers.
+    *
+    * Passing no value or a non-function will have the effect of removing any kind of handling for possibly unhandled rejections.
+    *
+    * Note: this hook is specific to the bluebird instance its called on, application developers should use global rejection events.
+    */
   def onPossiblyUnhandledRejection(): scala.Unit = js.native
   /**
-     * Add `handler` as the handler to call when there is a possibly unhandled rejection. The default handler logs the error stack to stderr or `console.error` in browsers.
-     *
-     * Passing no value or a non-function will have the effect of removing any kind of handling for possibly unhandled rejections.
-     */
+    * Add `handler` as the handler to call when there is a possibly unhandled rejection. The default handler logs the error stack to stderr or `console.error` in browsers.
+    *
+    * Passing no value or a non-function will have the effect of removing any kind of handling for possibly unhandled rejections.
+    */
   def onPossiblyUnhandledRejection(handler: js.Function1[/* reason */ js.Any, _]): scala.Unit = js.native
-  /**
-     * Add handler as the handler to call when there is a possibly unhandled rejection.
-     * The default handler logs the error stack to stderr or console.error in browsers.
-     *
-     * Passing no value or a non-function will have the effect of removing any kind of handling for possibly unhandled rejections.
-     *
-     * Note: this hook is specific to the bluebird instance its called on, application developers should use global rejection events.
-     */
   def onPossiblyUnhandledRejection(
     handler: js.Function2[
       /* error */ stdLib.Error, 
@@ -586,11 +555,11 @@ object namespaced extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def promisify(nodeFunction: js.Function1[/* repeated */js.Any, scala.Unit]): js.Function1[/* repeated */js.Any, bluebirdLib.bluebirdMod.Bluebird[_]] = js.native
+  def promisify(nodeFunction: js.Function1[/* repeated */ js.Any, scala.Unit]): js.Function1[/* repeated */ js.Any, bluebirdLib.bluebirdMod.Bluebird[_]] = js.native
   def promisify(
-    nodeFunction: js.Function1[/* repeated */js.Any, scala.Unit],
+    nodeFunction: js.Function1[/* repeated */ js.Any, scala.Unit],
     options: bluebirdLib.bluebirdMod.BluebirdNs.PromisifyOptions
-  ): js.Function1[/* repeated */js.Any, bluebirdLib.bluebirdMod.Bluebird[_]] = js.native
+  ): js.Function1[/* repeated */ js.Any, bluebirdLib.bluebirdMod.Bluebird[_]] = js.native
   def promisify[T, A1](
     func: js.Function2[
       /* arg1 */ A1, 
@@ -713,36 +682,27 @@ object namespaced extends js.Object {
     bluebirdLib.bluebirdMod.Bluebird[T]
   ] = js.native
   /**
-     * Promisifies the entire object by going through the object's properties and creating an async equivalent of each function on the object and its prototype chain.
-     *
-     * The promisified method name will be the original method name postfixed with `Async`. Returns the input object.
-     *
-     * Note that the original methods on the object are not overwritten but new methods are created with the `Async`-postfix. For example,
-     * if you `promisifyAll()` the node.js `fs` object use `fs.statAsync()` to call the promisified `stat` method.
-     */
+    * Promisifies the entire object by going through the object's properties and creating an async equivalent of each function on the object and its prototype chain.
+    *
+    * The promisified method name will be the original method name postfixed with `Async`. Returns the input object.
+    *
+    * Note that the original methods on the object are not overwritten but new methods are created with the `Async`-postfix. For example,
+    * if you `promisifyAll()` the node.js `fs` object use `fs.statAsync()` to call the promisified `stat` method.
+    */
   // TODO how to model promisifyAll?
   def promisifyAll[T /* <: js.Object */](target: T): T = js.native
-  /**
-     * Promisifies the entire object by going through the object's properties and creating an async equivalent of each function on the object and its prototype chain.
-     *
-     * The promisified method name will be the original method name postfixed with `Async`. Returns the input object.
-     *
-     * Note that the original methods on the object are not overwritten but new methods are created with the `Async`-postfix. For example,
-     * if you `promisifyAll()` the node.js `fs` object use `fs.statAsync()` to call the promisified `stat` method.
-     */
-  // TODO how to model promisifyAll?
   def promisifyAll[T /* <: js.Object */](target: T, options: bluebirdLib.bluebirdMod.BluebirdNs.PromisifyAllOptions[T]): T = js.native
   /**
-     * Returns a function that will wrap the given `nodeFunction`.
-     *
-     * Instead of taking a callback, the returned function will return a promise whose fate is decided by the callback behavior of the given node function.
-     * The node function should conform to node.js convention of accepting a callback as last argument and
-     * calling that callback with error as the first argument and success value on the second argument.
-     *
-     * If the `nodeFunction` calls its callback with multiple success values, the fulfillment value will be an array of them.
-     *
-     * If you pass a `receiver`, the `nodeFunction` will be called as a method on the `receiver`.
-     */
+    * Returns a function that will wrap the given `nodeFunction`.
+    *
+    * Instead of taking a callback, the returned function will return a promise whose fate is decided by the callback behavior of the given node function.
+    * The node function should conform to node.js convention of accepting a callback as last argument and
+    * calling that callback with error as the first argument and success value on the second argument.
+    *
+    * If the `nodeFunction` calls its callback with multiple success values, the fulfillment value will be an array of them.
+    *
+    * If you pass a `receiver`, the `nodeFunction` will be called as a method on the `receiver`.
+    */
   @JSName("promisify")
   def promisify_TFunction0[T](
     func: js.Function1[
@@ -750,17 +710,6 @@ object namespaced extends js.Object {
       scala.Unit
     ]
   ): js.Function0[bluebirdLib.bluebirdMod.Bluebird[T]] = js.native
-  /**
-     * Returns a function that will wrap the given `nodeFunction`.
-     *
-     * Instead of taking a callback, the returned function will return a promise whose fate is decided by the callback behavior of the given node function.
-     * The node function should conform to node.js convention of accepting a callback as last argument and
-     * calling that callback with error as the first argument and success value on the second argument.
-     *
-     * If the `nodeFunction` calls its callback with multiple success values, the fulfillment value will be an array of them.
-     *
-     * If you pass a `receiver`, the `nodeFunction` will be called as a method on the `receiver`.
-     */
   @JSName("promisify")
   def promisify_TFunction0[T](
     func: js.Function1[
@@ -775,38 +724,38 @@ object namespaced extends js.Object {
   // trusted promise for object
   def props[T](`object`: js.Thenable[bluebirdLib.bluebirdMod.BluebirdNs.ResolvableProps[T]]): bluebirdLib.bluebirdMod.Bluebird[T] = js.native
   /**
-     * Like ``Promise.all`` but for object properties instead of array items. Returns a promise that is fulfilled when all the properties of the object are fulfilled.
-     *
-     * The promise's fulfillment value is an object with fulfillment values at respective keys to the original object.
-     * If any promise in the object rejects, the returned promise is rejected with the rejection reason.
-     *
-     * If `object` is a trusted `Promise`, then it will be treated as a promise for object rather than for its properties.
-     * All other objects are treated for their properties as is returned by `Object.keys` - the object's own enumerable properties.
-     *
-     * *The original object is not modified.*
-     */
+    * Like ``Promise.all`` but for object properties instead of array items. Returns a promise that is fulfilled when all the properties of the object are fulfilled.
+    *
+    * The promise's fulfillment value is an object with fulfillment values at respective keys to the original object.
+    * If any promise in the object rejects, the returned promise is rejected with the rejection reason.
+    *
+    * If `object` is a trusted `Promise`, then it will be treated as a promise for object rather than for its properties.
+    * All other objects are treated for their properties as is returned by `Object.keys` - the object's own enumerable properties.
+    *
+    * *The original object is not modified.*
+    */
   // map
   def props[K, V](map: bluebirdLib.Resolvable[stdLib.Map[K, bluebirdLib.Resolvable[V]]]): bluebirdLib.bluebirdMod.Bluebird[stdLib.Map[K, V]] = js.native
   /**
-     * Given an array, or a promise of an array, which contains promises (or a mix of promises and values) return a promise that is
-     * fulfilled or rejected as soon as a promise in the array is fulfilled or rejected with the respective rejection reason or fulfillment value.
-     *
-     * **Note** If you pass empty array or a sparse array with no values, or a promise/thenable for such, it will be forever pending.
-     */
+    * Given an array, or a promise of an array, which contains promises (or a mix of promises and values) return a promise that is
+    * fulfilled or rejected as soon as a promise in the array is fulfilled or rejected with the respective rejection reason or fulfillment value.
+    *
+    * **Note** If you pass empty array or a sparse array with no values, or a promise/thenable for such, it will be forever pending.
+    */
   def race[R](values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
   /**
-     * Reduce an array, or a promise of an array,
-     * which contains a promises (or a mix of promises and values) with the given `reducer` function with the signature `(total, current, index, arrayLength)`
-     * where `item` is the resolved value of a respective promise in the input array.
-     * If any promise in the input array is rejected the returned promise is rejected as well.
-     *
-     * If the reducer function returns a promise or a thenable, the result for the promise is awaited for before continuing with next iteration.
-     *
-     * *The original array is not modified. If no `initialValue` is given and the array doesn't contain at least 2 items,
-     * the callback will not be called and `undefined` is returned.
-     *
-     * If `initialValue` is given and the array doesn't have at least 1 item, `initialValue` is returned.*
-     */
+    * Reduce an array, or a promise of an array,
+    * which contains a promises (or a mix of promises and values) with the given `reducer` function with the signature `(total, current, index, arrayLength)`
+    * where `item` is the resolved value of a respective promise in the input array.
+    * If any promise in the input array is rejected the returned promise is rejected as well.
+    *
+    * If the reducer function returns a promise or a thenable, the result for the promise is awaited for before continuing with next iteration.
+    *
+    * *The original array is not modified. If no `initialValue` is given and the array doesn't contain at least 2 items,
+    * the callback will not be called and `undefined` is returned.
+    *
+    * If `initialValue` is given and the array doesn't have at least 1 item, `initialValue` is returned.*
+    */
   def reduce[R, U](
     values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]],
     reducer: js.Function4[
@@ -817,19 +766,6 @@ object namespaced extends js.Object {
       bluebirdLib.Resolvable[U]
     ]
   ): bluebirdLib.bluebirdMod.Bluebird[U] = js.native
-  /**
-     * Reduce an array, or a promise of an array,
-     * which contains a promises (or a mix of promises and values) with the given `reducer` function with the signature `(total, current, index, arrayLength)`
-     * where `item` is the resolved value of a respective promise in the input array.
-     * If any promise in the input array is rejected the returned promise is rejected as well.
-     *
-     * If the reducer function returns a promise or a thenable, the result for the promise is awaited for before continuing with next iteration.
-     *
-     * *The original array is not modified. If no `initialValue` is given and the array doesn't contain at least 2 items,
-     * the callback will not be called and `undefined` is returned.
-     *
-     * If `initialValue` is given and the array doesn't have at least 1 item, `initialValue` is returned.*
-     */
   def reduce[R, U](
     values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]],
     reducer: js.Function4[
@@ -842,39 +778,39 @@ object namespaced extends js.Object {
     initialValue: U
   ): bluebirdLib.bluebirdMod.Bluebird[U] = js.native
   /**
-     * Create a promise that is rejected with the given `reason`.
-     */
+    * Create a promise that is rejected with the given `reason`.
+    */
   def reject(reason: js.Any): bluebirdLib.bluebirdMod.Bluebird[scala.Nothing] = js.native
   /**
-     * Create a promise that is resolved with the given `value`. If `value` is a thenable or promise, the returned promise will assume its state.
-     */
+    * Create a promise that is resolved with the given `value`. If `value` is a thenable or promise, the returned promise will assume its state.
+    */
   def resolve(): bluebirdLib.bluebirdMod.Bluebird[scala.Unit] = js.native
   def resolve[R](value: bluebirdLib.Resolvable[R]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
   /**
-     * Initiate a competitive race between multiple promises or values (values will become immediately fulfilled promises).
-     * When `count` amount of promises have been fulfilled, the returned promise is fulfilled with an array that contains the fulfillment values of
-     * the winners in order of resolution.
-     *
-     * If too many promises are rejected so that the promise can never become fulfilled,
-     * it will be immediately rejected with an array of rejection reasons in the order they were thrown in.
-     *
-     * *The original array is not modified.*
-     */
+    * Initiate a competitive race between multiple promises or values (values will become immediately fulfilled promises).
+    * When `count` amount of promises have been fulfilled, the returned promise is fulfilled with an array that contains the fulfillment values of
+    * the winners in order of resolution.
+    *
+    * If too many promises are rejected so that the promise can never become fulfilled,
+    * it will be immediately rejected with an array of rejection reasons in the order they were thrown in.
+    *
+    * *The original array is not modified.*
+    */
   def some[R](values: bluebirdLib.Resolvable[stdLib.Iterable[bluebirdLib.Resolvable[R]]], count: scala.Double): bluebirdLib.bluebirdMod.Bluebird[js.Array[R]] = js.native
   /**
-     * Start the chain of promises with `Promise.try`. Any synchronous exceptions will be turned into rejections on the returned promise.
-     *
-     * Note about second argument: if it's specifically a true array, its values become respective arguments for the function call.
-     * Otherwise it is passed as is as the first argument for the function call.
-     *
-     * Alias for `attempt();` for compatibility with earlier ECMAScript version.
-     */
+    * Start the chain of promises with `Promise.try`. Any synchronous exceptions will be turned into rejections on the returned promise.
+    *
+    * Note about second argument: if it's specifically a true array, its values become respective arguments for the function call.
+    * Otherwise it is passed as is as the first argument for the function call.
+    *
+    * Alias for `attempt();` for compatibility with earlier ECMAScript version.
+    */
   def `try`[R](fn: js.Function0[bluebirdLib.Resolvable[R]]): bluebirdLib.bluebirdMod.Bluebird[R] = js.native
   /**
-     * In conjunction with `.disposer`, using will make sure that no matter what, the specified disposer
-     *  will be called when the promise returned by the callback passed to using has settled. The disposer is
-     *  necessary because there is no standard interface in node for disposing resources.
-     */
+    * In conjunction with `.disposer`, using will make sure that no matter what, the specified disposer
+    *  will be called when the promise returned by the callback passed to using has settled. The disposer is
+    *  necessary because there is no standard interface in node for disposing resources.
+    */
   def using[R, T](
     disposer: bluebirdLib.bluebirdMod.BluebirdNs.Disposer[R],
     executor: js.Function1[/* transaction */ R, js.Thenable[T]]

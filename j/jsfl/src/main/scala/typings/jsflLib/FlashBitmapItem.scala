@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlashBitmapItem extends js.Object {
   var allowSmoothing: scala.Boolean
   var compressionType: java.lang.String

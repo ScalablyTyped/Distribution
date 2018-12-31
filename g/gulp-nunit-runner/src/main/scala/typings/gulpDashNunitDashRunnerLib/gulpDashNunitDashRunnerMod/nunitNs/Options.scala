@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   // The NUnit bin folder or the full path of the console runner.
   // If not specified the NUnit bin folder must be in the `PATH`.

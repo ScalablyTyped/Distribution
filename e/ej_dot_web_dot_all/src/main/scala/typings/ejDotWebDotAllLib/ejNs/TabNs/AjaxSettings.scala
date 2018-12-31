@@ -5,31 +5,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AjaxSettings extends js.Object {
   /** It specifies, whether to enable or disable asynchronous request.
-               * @Default {true}
-               */
+    * @Default {true}
+    */
   var async: js.UndefOr[scala.Boolean] = js.undefined
   /** It specifies the page will be cached in the web browser.
-               * @Default {false}
-               */
+    * @Default {false}
+    */
   var cache: js.UndefOr[scala.Boolean] = js.undefined
   /** It specifies the type of data is send in the query string.
-               * @Default {html}
-               */
+    * @Default {html}
+    */
   var contentType: js.UndefOr[java.lang.String] = js.undefined
   /** It specifies the data as an object, will be passed in the query string.
-               * @Default {{}}
-               */
+    * @Default {{}}
+    */
   var data: js.UndefOr[js.Any] = js.undefined
   /** It specifies the type of data that you're expecting back from the response.
-               * @Default {html}
-               */
+    * @Default {html}
+    */
   var dataType: js.UndefOr[java.lang.String] = js.undefined
   /** It specifies the HTTP request type.
-               * @Default {get}
-               */
+    * @Default {get}
+    */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 

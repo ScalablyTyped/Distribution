@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BuiltinEnabled extends js.Object {
   var builtinEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var connector: js.UndefOr[

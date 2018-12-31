@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Token extends js.Object {
   val name: java.lang.String
   val value: js.UndefOr[

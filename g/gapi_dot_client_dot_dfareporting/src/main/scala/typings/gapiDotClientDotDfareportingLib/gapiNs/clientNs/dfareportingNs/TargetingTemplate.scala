@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TargetingTemplate extends js.Object {
   /** Account ID of this targeting template. This field, if left unset, will be auto-generated on insert and is read-only after insert. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined

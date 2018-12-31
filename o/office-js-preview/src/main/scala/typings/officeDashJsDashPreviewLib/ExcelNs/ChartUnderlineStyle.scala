@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ChartUnderlineStyle extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.1]
-     */
+  * [Api set: ExcelApi 1.1]
+  */
 @JSGlobal("Excel.ChartUnderlineStyle")
 @js.native
 object ChartUnderlineStyle extends js.Object {

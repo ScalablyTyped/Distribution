@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PERIODIC extends js.Object {
   var DATA: chromeDashAppsLib.chromeDashAppsLibStrings.data
   var EXPLICIT_FEEDBACK: chromeDashAppsLib.chromeDashAppsLibStrings.explicitFeedback

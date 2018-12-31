@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Application extends js.Object {
   /** The number of achievements visible to the currently authenticated player. */
   var achievement_count: js.UndefOr[scala.Double] = js.undefined
@@ -18,10 +17,10 @@ trait Application extends js.Object {
   /** The description of the application. */
   var description: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * A list of features that have been enabled for the application.
-               * Possible values are:
-               * - "SNAPSHOTS" - Snapshots has been enabled
-               */
+    * A list of features that have been enabled for the application.
+    * Possible values are:
+    * - "SNAPSHOTS" - Snapshots has been enabled
+    */
   var enabledFeatures: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** The ID of the application. */
   var id: js.UndefOr[java.lang.String] = js.undefined

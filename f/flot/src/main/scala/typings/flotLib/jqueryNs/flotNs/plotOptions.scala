@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait plotOptions extends js.Object {
   var colors: js.UndefOr[js.Array[_]] = js.undefined
   var grid: js.UndefOr[gridOptions] = js.undefined

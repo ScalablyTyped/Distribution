@@ -6,60 +6,59 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Sets the formatting of a field.
-     * The properties of qFieldAttributes and the formatting mechanism are described below.
-     */
-
+  * Sets the formatting of a field.
+  * The properties of qFieldAttributes and the formatting mechanism are described below.
+  */
 trait IFieldAttributes extends js.Object {
   /**
-           * Defines the decimal separator.
-           * Example: .
-           */
+    * Defines the decimal separator.
+    * Example: .
+    */
   var qDec: java.lang.String
   /**
-           * Defines the format pattern that applies to qText.
-           * Is used in connection to the type of the field (parameter qType).
-           * For more information, see Formatting mechanism.
-           * Example: YYYY-MM-DD for a date
-           */
+    * Defines the format pattern that applies to qText.
+    * Is used in connection to the type of the field (parameter qType).
+    * For more information, see Formatting mechanism.
+    * Example: YYYY-MM-DD for a date
+    */
   var qFmt: java.lang.String
   /**
-           * no / empty docu
-           */
+    * no / empty docu
+    */
   var qSAFEARRAY: js.Array[_]
   /**
-           * Defines the thousand separator (if any).
-           * Is used if qUseThou is set to 1.
-           * Example: ,
-           */
+    * Defines the thousand separator (if any).
+    * Is used if qUseThou is set to 1.
+    * Example: ,
+    */
   var qThou: java.lang.String
   /**
-           * Type of the field.
-           * One of:
-           *
-           *    - U for UNKNOWN type (default)
-           *    - A for ASCII; Numeric fields values contain only standard ASCII characters.
-           *    - I for INTEGER; Numeric fields values are shown as integer numbers.
-           *    - R for REAL; Numeric fields values are shown as real numbers.
-           *    - F for FIX; Numeric fields values are shown as numbers with a fix number of decimals.
-           *    - M for MONEY; Numeric fields values are shown as in the money format.
-           *    - D for DATE; Numeric fields values are shown as dates.
-           *    - T for TIME; Numeric fields values are shown as times.
-           *    - TS TIMESTAMP; Numeric fields values are shown as time stamps.
-           *    - IV for INTERVAL; Numeric fields values are shown as intervals.
-           *
-           */
+    * Type of the field.
+    * One of:
+    *
+    *    - U for UNKNOWN type (default)
+    *    - A for ASCII; Numeric fields values contain only standard ASCII characters.
+    *    - I for INTEGER; Numeric fields values are shown as integer numbers.
+    *    - R for REAL; Numeric fields values are shown as real numbers.
+    *    - F for FIX; Numeric fields values are shown as numbers with a fix number of decimals.
+    *    - M for MONEY; Numeric fields values are shown as in the money format.
+    *    - D for DATE; Numeric fields values are shown as dates.
+    *    - T for TIME; Numeric fields values are shown as times.
+    *    - TS TIMESTAMP; Numeric fields values are shown as time stamps.
+    *    - IV for INTERVAL; Numeric fields values are shown as intervals.
+    *
+    */
   var qType: FieldAttributesType
   /**
-           * Defines whether or not a thousands separator must be used.
-           * default is 0 (false) or  1 (true).
-           */
+    * Defines whether or not a thousands separator must be used.
+    * default is 0 (false) or  1 (true).
+    */
   var qUseThou: scala.Boolean
   /**
-           * Number of decimals.
-           * (Integer between 0 and 15.)
-           * default is 10.
-           */
+    * Number of decimals.
+    * (Integer between 0 and 15.)
+    * default is 10.
+    */
   var qnDec: scala.Double
 }
 

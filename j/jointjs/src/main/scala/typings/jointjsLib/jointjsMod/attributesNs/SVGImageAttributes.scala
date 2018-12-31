@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGImageAttributes extends SVGAttributes {
   var height: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var preserveAspectRatio: js.UndefOr[java.lang.String] = js.undefined

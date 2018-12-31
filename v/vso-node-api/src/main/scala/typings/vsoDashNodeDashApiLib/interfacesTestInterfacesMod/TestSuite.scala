@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestSuite extends js.Object {
   var areaUri: java.lang.String
   var children: js.Array[TestSuite]

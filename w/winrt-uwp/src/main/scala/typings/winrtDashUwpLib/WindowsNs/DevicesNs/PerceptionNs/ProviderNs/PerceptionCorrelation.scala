@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class PerceptionCorrelation protected () extends js.Object {
   /**
-                       * Initializes a new PerceptionCorrelation instance.
-                       * @param targetId The unique identifier of the IPerceptionFrameProvider being described.
-                       * @param position The position of the device in a common coordinate frame of all members of a PerceptionCorrelationGroup.
-                       * @param orientation The orientation of the device in a common coordinate frame of all members of a PerceptionCorrelationGroup.
-                       */
+    * Initializes a new PerceptionCorrelation instance.
+    * @param targetId The unique identifier of the IPerceptionFrameProvider being described.
+    * @param position The position of the device in a common coordinate frame of all members of a PerceptionCorrelationGroup.
+    * @param orientation The orientation of the device in a common coordinate frame of all members of a PerceptionCorrelationGroup.
+    */
   def this(targetId: java.lang.String, position: winrtDashUwpLib.WindowsNs.FoundationNs.NumericsNs.Vector3, orientation: winrtDashUwpLib.WindowsNs.FoundationNs.NumericsNs.Quaternion) = this()
   /** The orientation of the device in the common coordinate frame shared by other PerceptionCorrelations in the PerceptionCorrelationGroup. */
   var orientation: winrtDashUwpLib.WindowsNs.FoundationNs.NumericsNs.Quaternion = js.native

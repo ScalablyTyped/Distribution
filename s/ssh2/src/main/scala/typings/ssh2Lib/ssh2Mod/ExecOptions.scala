@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExecOptions extends js.Object {
   /** An environment to use for the execution of the command. */
   var env: js.UndefOr[js.Any] = js.undefined

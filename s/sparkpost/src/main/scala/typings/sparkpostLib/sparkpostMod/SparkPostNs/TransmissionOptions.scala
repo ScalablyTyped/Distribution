@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransmissionOptions extends js.Object {
   /** Whether click tracking is enabled for this transmission */
   var click_tracking: js.UndefOr[scala.Boolean] = js.undefined

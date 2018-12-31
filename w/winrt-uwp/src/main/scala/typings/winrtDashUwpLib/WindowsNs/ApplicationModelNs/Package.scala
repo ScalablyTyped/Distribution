@@ -37,15 +37,15 @@ abstract class Package () extends js.Object {
   /** Gets the publisher display name of the package. */
   var publisherDisplayName: java.lang.String = js.native
   var status: js.Any = js.native
-   /* unmapped type *//**
-               * Windows Phone only. Returns a token that can be used to retrieve the thumbnail image associated with this application package.
-               * @return A token that can be used to retrieve the thumbnail image associated with this application package.
-               */
+   /* unmapped type */ /**
+    * Windows Phone only. Returns a token that can be used to retrieve the thumbnail image associated with this application package.
+    * @return A token that can be used to retrieve the thumbnail image associated with this application package.
+    */
   def getThumbnailToken(): java.lang.String = js.native
   /**
-               * Windows Phone only. Launches the specified application.
-               * @param parameters The navigation URI that specifies the page to launch and optional parameters. Use an empty string to specify the default page for the app.
-               */
+    * Windows Phone only. Launches the specified application.
+    * @param parameters The navigation URI that specifies the page to launch and optional parameters. Use an empty string to specify the default page for the app.
+    */
   def launch(parameters: java.lang.String): scala.Unit = js.native
 }
 

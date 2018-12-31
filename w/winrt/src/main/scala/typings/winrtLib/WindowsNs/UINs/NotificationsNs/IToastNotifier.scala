@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IToastNotifier extends js.Object {
   var setting: NotificationSetting
   def addToSchedule(scheduledToast: ScheduledToastNotification): scala.Unit

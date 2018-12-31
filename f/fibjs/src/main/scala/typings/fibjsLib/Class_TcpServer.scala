@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 	* @brief tcp 服务器对象，可方便创建一个标准多纤程 tcp 服务器
 	* @detail 使用 TcpServer 对象可以迅速创建一个多纤程并发处理的 tcp 服务器。,```JavaScript,function func(conn),{,    var data;,,    while(data = conn.read()),        conn.write(data);,,    conn.close();,},,new net.TcpServer(8080, func).run();,```
 	*/
-
 @JSGlobal("Class_TcpServer")
 @js.native
 class Class_TcpServer protected () extends Class__object {

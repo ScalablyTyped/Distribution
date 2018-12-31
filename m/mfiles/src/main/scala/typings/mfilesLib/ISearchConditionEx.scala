@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISearchConditionEx extends js.Object {
   var Enabled: scala.Boolean
   var Ignored: scala.Boolean

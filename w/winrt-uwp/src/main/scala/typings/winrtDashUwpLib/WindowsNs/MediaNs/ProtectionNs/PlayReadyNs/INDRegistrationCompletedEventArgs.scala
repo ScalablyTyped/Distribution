@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Provides arguments for the PlayReady-ND RegistrationCompleted event. */
-
 trait INDRegistrationCompletedEventArgs extends js.Object {
   /** Gets custom data from a registration response. */
   var responseCustomData: INDCustomData

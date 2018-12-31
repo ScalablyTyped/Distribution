@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Diff extends js.Object {
   // 新增操作
   var add: js.UndefOr[gaeaDashModelLib.Anon_UniqueId] = js.undefined

@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class default protected () extends XmlDtdElement {
   /**
-       * Initializes a new instance of the {@link XmlDtdElement} class.
-       *
-       * @param text The text associated with the XML element declaration.
-       */
+    * Initializes a new instance of the {@link XmlDtdElement} class.
+    *
+    * @param text The text associated with the XML element declaration.
+    */
   def this(text: java.lang.String) = this()
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Frame extends js.Object {
   /**
   	 * The name of the frame into which this frame's properties are merged

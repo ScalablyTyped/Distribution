@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Threshold extends js.Object {
   var minimumBatchSize: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`10`
   var rowCount: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`0`

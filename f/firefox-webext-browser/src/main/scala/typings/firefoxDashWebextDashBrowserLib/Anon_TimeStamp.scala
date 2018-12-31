@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TimeStamp extends js.Object {
   /** The ID of the tab that was replaced. */
   var replacedTabId: scala.Double

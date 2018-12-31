@@ -12,10 +12,6 @@ trait IBaseFilter extends js.Object {
   	 * @param [options] Options object
   	 */
   def setOptions(): scala.Unit = js.native
-  /**
-  	 * Sets filter's properties from options
-  	 * @param [options] Options object
-  	 */
   def setOptions(options: js.Any): scala.Unit = js.native
   /**
   	 * Returns a JSON representation of an instance

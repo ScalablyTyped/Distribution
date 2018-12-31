@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRowExpander
   extends extjsLib.ExtNs.IAbstractPlugin {
   /** [Config Option] (Boolean) */

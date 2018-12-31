@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridColumnResizeEvent extends GridEvent {
   var column: js.UndefOr[js.Any] = js.undefined
   var newWidth: js.UndefOr[scala.Double] = js.undefined

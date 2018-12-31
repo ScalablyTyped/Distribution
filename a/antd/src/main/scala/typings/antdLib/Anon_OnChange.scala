@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnChange extends js.Object {
   var fullscreen: scala.Boolean
   var mode: antdLib.libCalendarMod.CalendarMode

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	*	Chat room info
 	*/
-
 trait ChatRoomInfo extends js.Object {
   /**
   		* Creation date

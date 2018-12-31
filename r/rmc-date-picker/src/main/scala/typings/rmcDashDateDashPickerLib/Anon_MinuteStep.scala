@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MinuteStep extends js.Object {
   var disabled: scala.Boolean
   var locale: Anon_Pm

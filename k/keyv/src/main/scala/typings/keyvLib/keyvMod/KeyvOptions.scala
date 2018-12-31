@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeyvOptions extends js.Object {
   /** Specify an adapter to use. e.g `'redis'` or `'mongodb'`. */
   var adapter: js.UndefOr[java.lang.String] = js.undefined

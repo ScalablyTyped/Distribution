@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JSONEditorShowDropDownListParams extends js.Object {
   var node: JSONEditorNode
   var optionClassName: java.lang.String

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait BindingType extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.1]
-     */
+  * [Api set: ExcelApi 1.1]
+  */
 @JSGlobal("Excel.BindingType")
 @js.native
 object BindingType extends js.Object {

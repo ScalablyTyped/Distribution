@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PretargetingConfig extends js.Object {
   /** The id for billing purposes, provided for reference. Leave this field blank for insert requests; the id will be generated automatically. */
   var billingId: js.UndefOr[java.lang.String] = js.undefined
@@ -36,9 +35,9 @@ trait PretargetingConfig extends js.Object {
   /** Request containing any of these language codes will match. */
   var languages: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-               * Requests where the predicted viewability is below the specified decile will not match. E.g. if the buyer sets this value to 5, requests from slots
-               * where the predicted viewability is below 50% will not match. If the predicted viewability is unknown this field will be ignored.
-               */
+    * Requests where the predicted viewability is below the specified decile will not match. E.g. if the buyer sets this value to 5, requests from slots
+    * where the predicted viewability is below 50% will not match. If the predicted viewability is unknown this field will be ignored.
+    */
   var minimumViewabilityDecile: js.UndefOr[scala.Double] = js.undefined
   /** Requests containing any of these mobile carrier ids will match. Values are from mobile-carriers.csv in the downloadable files section. */
   var mobileCarriers: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -49,19 +48,19 @@ trait PretargetingConfig extends js.Object {
   /** Requests containing any of these placements will match. */
   var placements: js.UndefOr[js.Array[gapiDotClientDotAdexchangebuyerLib.Anon_Token]] = js.undefined
   /**
-               * Requests matching any of these platforms will match. Possible values are PRETARGETING_PLATFORM_MOBILE, PRETARGETING_PLATFORM_DESKTOP, and
-               * PRETARGETING_PLATFORM_TABLET.
-               */
+    * Requests matching any of these platforms will match. Possible values are PRETARGETING_PLATFORM_MOBILE, PRETARGETING_PLATFORM_DESKTOP, and
+    * PRETARGETING_PLATFORM_TABLET.
+    */
   var platforms: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-               * Creative attributes should be declared here if all creatives corresponding to this pretargeting configuration have that creative attribute. Values are
-               * from pretargetable-creative-attributes.txt in the downloadable files section.
-               */
+    * Creative attributes should be declared here if all creatives corresponding to this pretargeting configuration have that creative attribute. Values are
+    * from pretargetable-creative-attributes.txt in the downloadable files section.
+    */
   var supportedCreativeAttributes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-               * Requests containing the specified type of user data will match. Possible values are HOSTED_MATCH_DATA, which means the request is cookie-targetable and
-               * has a match in the buyer's hosted match table, and COOKIE_OR_IDFA, which means the request has either a targetable cookie or an iOS IDFA.
-               */
+    * Requests containing the specified type of user data will match. Possible values are HOSTED_MATCH_DATA, which means the request is cookie-targetable and
+    * has a match in the buyer's hosted match table, and COOKIE_OR_IDFA, which means the request has either a targetable cookie or an iOS IDFA.
+    */
   var userIdentifierDataRequired: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /** Requests containing any of these user list ids will match. */
   var userLists: js.UndefOr[js.Array[java.lang.String]] = js.undefined

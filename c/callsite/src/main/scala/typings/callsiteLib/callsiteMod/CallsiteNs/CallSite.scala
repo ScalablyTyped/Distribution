@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CallSite extends js.Object {
   def getColumnNumber(): scala.Double
   def getEvalOrigin(): java.lang.String

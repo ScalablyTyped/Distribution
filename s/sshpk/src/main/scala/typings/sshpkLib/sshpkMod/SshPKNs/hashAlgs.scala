@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait hashAlgs extends js.Object {
   var md5: scala.Boolean
   var sha1: scala.Boolean

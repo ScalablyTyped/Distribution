@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JQNumericRangeSliderOptions extends JQRangeSliderOptions {
   var bounds: js.UndefOr[JQRangeSliderNumericRange] = js.undefined
    // min and max values of the slider

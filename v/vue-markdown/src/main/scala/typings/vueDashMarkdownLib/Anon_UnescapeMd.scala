@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_UnescapeMd extends js.Object {
   var arrayReplaceAt: js.Any
   var assign: js.Any

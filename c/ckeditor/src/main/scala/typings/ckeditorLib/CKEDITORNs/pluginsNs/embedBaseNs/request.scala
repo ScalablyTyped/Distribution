@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait request extends js.Object {
   var response: org.scalablytyped.runtime.StringDictionary[java.lang.String]
   var task: ckeditorLib.CKEDITORNs.pluginsNs.notificationAggregatorNs.task

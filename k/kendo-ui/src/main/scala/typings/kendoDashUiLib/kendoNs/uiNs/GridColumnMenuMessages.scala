@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridColumnMenuMessages extends js.Object {
   var columns: js.UndefOr[java.lang.String] = js.undefined
   var done: js.UndefOr[java.lang.String] = js.undefined

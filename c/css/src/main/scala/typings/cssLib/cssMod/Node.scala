@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Node extends js.Object {
   /** A reference to the parent node, or null if the node has no parent. */
   var parent: js.UndefOr[Node] = js.undefined

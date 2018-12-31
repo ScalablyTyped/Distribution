@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Props[T]
   extends reactLib.reactMod.ReactNs.Props[T] {
   var bemBlock: js.UndefOr[java.lang.String] = js.undefined

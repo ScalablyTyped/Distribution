@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReactCodeMirrorProps
   extends reactLib.reactMod.ReactNs.Props[ReactCodeMirror] {
   /** Automatically focuses the editor when it is mounted (default false) */

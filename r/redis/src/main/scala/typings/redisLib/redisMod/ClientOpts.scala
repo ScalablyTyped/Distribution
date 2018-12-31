@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClientOpts extends js.Object {
   var auth_pass: js.UndefOr[java.lang.String] = js.undefined
   var connect_timeout: js.UndefOr[scala.Double] = js.undefined

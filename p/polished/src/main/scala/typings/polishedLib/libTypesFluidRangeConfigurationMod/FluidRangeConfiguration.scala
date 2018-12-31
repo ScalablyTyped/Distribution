@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FluidRangeConfiguration extends js.Object {
   var fromSize: java.lang.String
   var prop: java.lang.String

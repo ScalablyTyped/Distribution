@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // encrypt & decrypt
-
 trait CryptoParameters extends js.Object {
   var encryptKey: js.UndefOr[scala.Boolean] = js.undefined
   var keyEncoding: js.UndefOr[java.lang.String] = js.undefined

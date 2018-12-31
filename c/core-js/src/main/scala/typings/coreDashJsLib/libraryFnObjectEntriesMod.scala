@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("core-js/library/fn/object/entries", JSImport.Namespace)
 @js.native
 object libraryFnObjectEntriesMod
-  extends org.scalablytyped.runtime.TopLevel[js.Any]
+  extends org.scalablytyped.runtime.TopLevel[js.Function1[/* object */ js.Any, Array[js.Any]]]
 

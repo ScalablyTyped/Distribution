@@ -6,436 +6,235 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * A Model represents a table in the database. Sometimes you might also see it referred to as model, or simply
-     * as factory. This class should _not_ be instantiated directly, it is created using `sequelize.define`, and
-     * already created models can be loaded using `sequelize.import`
-     */
+  * A Model represents a table in the database. Sometimes you might also see it referred to as model, or simply
+  * as factory. This class should _not_ be instantiated directly, it is created using `sequelize.define`, and
+  * already created models can be loaded using `sequelize.import`
+  */
 @js.native
 trait Model[TInstance, TAttributes]
   extends Hooks[TInstance]
      with Associations {
   /**
-           * Set associations with other models
-           *
-           * Not part of the sequelize API, used as convention to associate models after creation. e.g.:
-           * ```js
-           * Object.keys(models).forEach(modelName => {
-           *   if (models[modelName].associate) {
-           *     models[modelName].associate(models);
-           *   }
-           * });
-           * ```
-           *
-           * @param models
-           */
+    * Set associations with other models
+    *
+    * Not part of the sequelize API, used as convention to associate models after creation. e.g.:
+    * ```js
+    * Object.keys(models).forEach(modelName => {
+    *   if (models[modelName].associate) {
+    *     models[modelName].associate(models);
+    *   }
+    * });
+    * ```
+    *
+    * @param models
+    */
   var associate: js.UndefOr[js.Function1[/* models */ Models, scala.Unit]] = js.native
   /**
-           * The singular name of the model
-           */
+    * The singular name of the model
+    */
   var name: java.lang.String = js.native
   /**
-           * The Instance class
-           */
+    * The Instance class
+    */
   def Instance(): TInstance = js.native
-  /**
-           * Add a new scope to the model. This is especially useful for adding scopes with includes, when the model you want to include is not available at the time this model is defined.
-           *
-           * By default this will throw an error if a scope with that name already exists. Pass `override: true` in the options object to silence this error.
-           *
-           * @param {String}          name The name of the scope. Use `defaultScope` to override the default scope
-           * @param {Object|Function} scope
-           * @param {Object}          [options]
-           * @param {Boolean}         [options.override=false]
-           */
   def addScope(name: java.lang.String, scope: js.Function): scala.Unit = js.native
-  /**
-           * Add a new scope to the model. This is especially useful for adding scopes with includes, when the model you want to include is not available at the time this model is defined.
-           *
-           * By default this will throw an error if a scope with that name already exists. Pass `override: true` in the options object to silence this error.
-           *
-           * @param {String}          name The name of the scope. Use `defaultScope` to override the default scope
-           * @param {Object|Function} scope
-           * @param {Object}          [options]
-           * @param {Boolean}         [options.override=false]
-           */
   def addScope(name: java.lang.String, scope: js.Function, options: AddScopeOptions): scala.Unit = js.native
   /**
-           * Add a new scope to the model. This is especially useful for adding scopes with includes, when the model you want to include is not available at the time this model is defined.
-           *
-           * By default this will throw an error if a scope with that name already exists. Pass `override: true` in the options object to silence this error.
-           *
-           * @param {String}          name The name of the scope. Use `defaultScope` to override the default scope
-           * @param {Object|Function} scope
-           * @param {Object}          [options]
-           * @param {Boolean}         [options.override=false]
-           */
+    * Add a new scope to the model. This is especially useful for adding scopes with includes, when the model you want to include is not available at the time this model is defined.
+    *
+    * By default this will throw an error if a scope with that name already exists. Pass `override: true` in the options object to silence this error.
+    *
+    * @param {String}          name The name of the scope. Use `defaultScope` to override the default scope
+    * @param {Object|Function} scope
+    * @param {Object}          [options]
+    * @param {Boolean}         [options.override=false]
+    */
   def addScope(name: java.lang.String, scope: AnyFindOptions): scala.Unit = js.native
-  /**
-           * Add a new scope to the model. This is especially useful for adding scopes with includes, when the model you want to include is not available at the time this model is defined.
-           *
-           * By default this will throw an error if a scope with that name already exists. Pass `override: true` in the options object to silence this error.
-           *
-           * @param {String}          name The name of the scope. Use `defaultScope` to override the default scope
-           * @param {Object|Function} scope
-           * @param {Object}          [options]
-           * @param {Boolean}         [options.override=false]
-           */
   def addScope(name: java.lang.String, scope: AnyFindOptions, options: AddScopeOptions): scala.Unit = js.native
   /**
-           * Run an aggregation method on the specified field
-           *
-           * @param field The field to aggregate over. Can be a field name or *
-           * @param aggregateFunction The function to use for aggregation, e.g. sum, max etc.
-           * @param options Query options. See sequelize.query for full options
-           * @return Returns the aggregate result cast to `options.dataType`, unless `options.plain` is false, in
-           *     which case the complete data result is returned.
-           */
+    * Run an aggregation method on the specified field
+    *
+    * @param field The field to aggregate over. Can be a field name or *
+    * @param aggregateFunction The function to use for aggregation, e.g. sum, max etc.
+    * @param options Query options. See sequelize.query for full options
+    * @return Returns the aggregate result cast to `options.dataType`, unless `options.plain` is false, in
+    *     which case the complete data result is returned.
+    */
   def aggregate(field: java.lang.String, aggregateFunction: java.lang.String): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
-  /**
-           * Run an aggregation method on the specified field
-           *
-           * @param field The field to aggregate over. Can be a field name or *
-           * @param aggregateFunction The function to use for aggregation, e.g. sum, max etc.
-           * @param options Query options. See sequelize.query for full options
-           * @return Returns the aggregate result cast to `options.dataType`, unless `options.plain` is false, in
-           *     which case the complete data result is returned.
-           */
   def aggregate(field: java.lang.String, aggregateFunction: java.lang.String, options: AggregateOptions): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
   def all[TCustomAttributes](): bluebirdLib.bluebirdMod.namespaced[js.Array[TInstance]] = js.native
   def all[TCustomAttributes](optionz: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.namespaced[js.Array[TInstance]] = js.native
   /**
-           * Builds a new model instance. Values is an object of key value pairs, must be defined but can be empty.
-           */
+    * Builds a new model instance. Values is an object of key value pairs, must be defined but can be empty.
+    */
   def build(): TInstance = js.native
-  /**
-           * Builds a new model instance. Values is an object of key value pairs, must be defined but can be empty.
-           */
   def build(record: TAttributes): TInstance = js.native
-  /**
-           * Builds a new model instance. Values is an object of key value pairs, must be defined but can be empty.
-           */
   def build(record: TAttributes, options: BuildOptions): TInstance = js.native
   /**
-           * Undocumented bulkBuild
-           */
+    * Undocumented bulkBuild
+    */
   def bulkBuild(records: js.Array[TAttributes]): js.Array[TInstance] = js.native
-  /**
-           * Undocumented bulkBuild
-           */
   def bulkBuild(records: js.Array[TAttributes], options: BuildOptions): js.Array[TInstance] = js.native
   /**
-           * Create and insert multiple instances in bulk.
-           *
-           * The success handler is passed an array of instances, but please notice that these may not completely
-           * represent the state of the rows in the DB. This is because MySQL and SQLite do not make it easy to
-           * obtain
-           * back automatically generated IDs and other default values in a way that can be mapped to multiple
-           * records. To obtain Instances for the newly created values, you will need to query for them again.
-           *
-           * @param records List of objects (key/value pairs) to create instances from
-           */
+    * Create and insert multiple instances in bulk.
+    *
+    * The success handler is passed an array of instances, but please notice that these may not completely
+    * represent the state of the rows in the DB. This is because MySQL and SQLite do not make it easy to
+    * obtain
+    * back automatically generated IDs and other default values in a way that can be mapped to multiple
+    * records. To obtain Instances for the newly created values, you will need to query for them again.
+    *
+    * @param records List of objects (key/value pairs) to create instances from
+    */
   def bulkCreate(records: js.Array[TAttributes]): bluebirdLib.bluebirdMod.namespaced[js.Array[TInstance]] = js.native
-  /**
-           * Create and insert multiple instances in bulk.
-           *
-           * The success handler is passed an array of instances, but please notice that these may not completely
-           * represent the state of the rows in the DB. This is because MySQL and SQLite do not make it easy to
-           * obtain
-           * back automatically generated IDs and other default values in a way that can be mapped to multiple
-           * records. To obtain Instances for the newly created values, you will need to query for them again.
-           *
-           * @param records List of objects (key/value pairs) to create instances from
-           */
   def bulkCreate(records: js.Array[TAttributes], options: BulkCreateOptions): bluebirdLib.bluebirdMod.namespaced[js.Array[TInstance]] = js.native
   /**
-           * Count the number of records matching the provided where clause.
-           *
-           * If you provide an `include` option, the number of matching associations will be counted instead.
-           */
+    * Count the number of records matching the provided where clause.
+    *
+    * If you provide an `include` option, the number of matching associations will be counted instead.
+    */
   def count(): bluebirdLib.bluebirdMod.namespaced[scala.Double] = js.native
-  /**
-           * Count the number of records matching the provided where clause.
-           *
-           * If you provide an `include` option, the number of matching associations will be counted instead.
-           */
   def count(options: CountOptions): bluebirdLib.bluebirdMod.namespaced[scala.Double] = js.native
   /**
-           * Builds a new model instance and calls save on it.
-           */
+    * Builds a new model instance and calls save on it.
+    */
   def create(): bluebirdLib.bluebirdMod.namespaced[TInstance] = js.native
-  /**
-           * Builds a new model instance and calls save on it.
-           */
   def create(values: TAttributes): bluebirdLib.bluebirdMod.namespaced[TInstance] = js.native
-  /**
-           * Builds a new model instance and calls save on it.
-           */
   def create(values: TAttributes, options: CreateOptions): bluebirdLib.bluebirdMod.namespaced[TInstance] = js.native
   /**
-           * Run a describe query on the table. The result will be return to the listener as a hash of attributes and
-           * their types.
-           */
+    * Run a describe query on the table. The result will be return to the listener as a hash of attributes and
+    * their types.
+    */
   def describe(): bluebirdLib.bluebirdMod.namespaced[js.Object] = js.native
   /**
-           * Delete multiple instances, or set their deletedAt timestamp to the current time if `paranoid` is enabled.
-           *
-           * @return Promise<number> The number of destroyed rows
-           */
+    * Delete multiple instances, or set their deletedAt timestamp to the current time if `paranoid` is enabled.
+    *
+    * @return Promise<number> The number of destroyed rows
+    */
   def destroy(): bluebirdLib.bluebirdMod.namespaced[scala.Double] = js.native
-  /**
-           * Delete multiple instances, or set their deletedAt timestamp to the current time if `paranoid` is enabled.
-           *
-           * @return Promise<number> The number of destroyed rows
-           */
   def destroy(options: DestroyOptions): bluebirdLib.bluebirdMod.namespaced[scala.Double] = js.native
   /**
-           * Drop the table represented by this Model
-           *
-           * @param options
-           */
+    * Drop the table represented by this Model
+    *
+    * @param options
+    */
   def drop(): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  /**
-           * Drop the table represented by this Model
-           *
-           * @param options
-           */
   def drop(options: DropOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   def find[TCustomAttributes](): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
   def find[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
   /**
-           * Search for multiple instances.
-           *
-           * __Simple search using AND and =__
-           * ```js
-           * Model.findAll({
-           *   where: {
-           *     attr1: 42,
-           *     attr2: 'cake'
-           *   }
-           * })
-           * ```
-           * ```sql
-           * WHERE attr1 = 42 AND attr2 = 'cake'
-           *```
-           *
-           * __Using greater than, less than etc.__
-           * ```js
-           *
-           * Model.findAll({
-           *   where: {
-           *     attr1: {
-           *       gt: 50
-           *     },
-           *     attr2: {
-           *       lte: 45
-           *     },
-           *     attr3: {
-           *       in: [1,2,3]
-           *     },
-           *     attr4: {
-           *       ne: 5
-           *     }
-           *   }
-           * })
-           * ```
-           * ```sql
-           * WHERE attr1 > 50 AND attr2 <= 45 AND attr3 IN (1,2,3) AND attr4 != 5
-           * ```
-           * Possible options are: `$ne, $in, $not, $notIn, $gte, $gt, $lte, $lt, $like, $ilike/$iLike, $notLike,
-           * $notILike, '..'/$between, '!..'/$notBetween, '&&'/$overlap, '@>'/$contains, '<@'/$contained`
-           *
-           * __Queries using OR__
-           * ```js
-           * Model.findAll({
-           *   where: Sequelize.and(
-           *     { name: 'a project' },
-           *     Sequelize.or(
-           *       { id: [1,2,3] },
-           *       { id: { gt: 10 } }
-           *     )
-           *   )
-           * })
-           * ```
-           * ```sql
-           * WHERE name = 'a project' AND (id` IN (1,2,3) OR id > 10)
-           * ```
-           *
-           * The success listener is called with an array of instances if the query succeeds.
-           *
-           * @see    {Sequelize#query}
-           */
+    * Search for multiple instances.
+    *
+    * __Simple search using AND and =__
+    * ```js
+    * Model.findAll({
+    *   where: {
+    *     attr1: 42,
+    *     attr2: 'cake'
+    *   }
+    * })
+    * ```
+    * ```sql
+    * WHERE attr1 = 42 AND attr2 = 'cake'
+    *```
+    *
+    * __Using greater than, less than etc.__
+    * ```js
+    *
+    * Model.findAll({
+    *   where: {
+    *     attr1: {
+    *       gt: 50
+    *     },
+    *     attr2: {
+    *       lte: 45
+    *     },
+    *     attr3: {
+    *       in: [1,2,3]
+    *     },
+    *     attr4: {
+    *       ne: 5
+    *     }
+    *   }
+    * })
+    * ```
+    * ```sql
+    * WHERE attr1 > 50 AND attr2 <= 45 AND attr3 IN (1,2,3) AND attr4 != 5
+    * ```
+    * Possible options are: `$ne, $in, $not, $notIn, $gte, $gt, $lte, $lt, $like, $ilike/$iLike, $notLike,
+    * $notILike, '..'/$between, '!..'/$notBetween, '&&'/$overlap, '@>'/$contains, '<@'/$contained`
+    *
+    * __Queries using OR__
+    * ```js
+    * Model.findAll({
+    *   where: Sequelize.and(
+    *     { name: 'a project' },
+    *     Sequelize.or(
+    *       { id: [1,2,3] },
+    *       { id: { gt: 10 } }
+    *     )
+    *   )
+    * })
+    * ```
+    * ```sql
+    * WHERE name = 'a project' AND (id` IN (1,2,3) OR id > 10)
+    * ```
+    *
+    * The success listener is called with an array of instances if the query succeeds.
+    *
+    * @see    {Sequelize#query}
+    */
   def findAll[TCustomAttributes](): bluebirdLib.bluebirdMod.namespaced[js.Array[TInstance]] = js.native
-  /**
-           * Search for multiple instances.
-           *
-           * __Simple search using AND and =__
-           * ```js
-           * Model.findAll({
-           *   where: {
-           *     attr1: 42,
-           *     attr2: 'cake'
-           *   }
-           * })
-           * ```
-           * ```sql
-           * WHERE attr1 = 42 AND attr2 = 'cake'
-           *```
-           *
-           * __Using greater than, less than etc.__
-           * ```js
-           *
-           * Model.findAll({
-           *   where: {
-           *     attr1: {
-           *       gt: 50
-           *     },
-           *     attr2: {
-           *       lte: 45
-           *     },
-           *     attr3: {
-           *       in: [1,2,3]
-           *     },
-           *     attr4: {
-           *       ne: 5
-           *     }
-           *   }
-           * })
-           * ```
-           * ```sql
-           * WHERE attr1 > 50 AND attr2 <= 45 AND attr3 IN (1,2,3) AND attr4 != 5
-           * ```
-           * Possible options are: `$ne, $in, $not, $notIn, $gte, $gt, $lte, $lt, $like, $ilike/$iLike, $notLike,
-           * $notILike, '..'/$between, '!..'/$notBetween, '&&'/$overlap, '@>'/$contains, '<@'/$contained`
-           *
-           * __Queries using OR__
-           * ```js
-           * Model.findAll({
-           *   where: Sequelize.and(
-           *     { name: 'a project' },
-           *     Sequelize.or(
-           *       { id: [1,2,3] },
-           *       { id: { gt: 10 } }
-           *     )
-           *   )
-           * })
-           * ```
-           * ```sql
-           * WHERE name = 'a project' AND (id` IN (1,2,3) OR id > 10)
-           * ```
-           *
-           * The success listener is called with an array of instances if the query succeeds.
-           *
-           * @see    {Sequelize#query}
-           */
   def findAll[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.namespaced[js.Array[TInstance]] = js.native
   /**
-           * Find all the rows matching your query, within a specified offset / limit, and get the total number of
-           * rows matching your query. This is very usefull for paging
-           *
-           * ```js
-           * Model.findAndCountAll({
-           *   where: ...,
-           *   limit: 12,
-           *   offset: 12
-           * }).then(function (result) {
-           *   ...
-           * })
-           * ```
-           * In the above example, `result.rows` will contain rows 13 through 24, while `result.count` will return
-           * the
-           * total number of rows that matched your query.
-           *
-           * When you add includes, only those which are required (either because they have a where clause, or
-           * because
-           * `required` is explicitly set to true on the include) will be added to the count part.
-           *
-           * Suppose you want to find all users who have a profile attached:
-           * ```js
-           * User.findAndCountAll({
-           *   include: [
-           *      { model: Profile, required: true}
-           *   ],
-           *   limit 3
-           * });
-           * ```
-           * Because the include for `Profile` has `required` set it will result in an inner join, and only the users
-           * who have a profile will be counted. If we remove `required` from the include, both users with and
-           * without
-           * profiles will be counted
-           */
+    * Find all the rows matching your query, within a specified offset / limit, and get the total number of
+    * rows matching your query. This is very usefull for paging
+    *
+    * ```js
+    * Model.findAndCountAll({
+    *   where: ...,
+    *   limit: 12,
+    *   offset: 12
+    * }).then(function (result) {
+    *   ...
+    * })
+    * ```
+    * In the above example, `result.rows` will contain rows 13 through 24, while `result.count` will return
+    * the
+    * total number of rows that matched your query.
+    *
+    * When you add includes, only those which are required (either because they have a where clause, or
+    * because
+    * `required` is explicitly set to true on the include) will be added to the count part.
+    *
+    * Suppose you want to find all users who have a profile attached:
+    * ```js
+    * User.findAndCountAll({
+    *   include: [
+    *      { model: Profile, required: true}
+    *   ],
+    *   limit 3
+    * });
+    * ```
+    * Because the include for `Profile` has `required` set it will result in an inner join, and only the users
+    * who have a profile will be counted. If we remove `required` from the include, both users with and
+    * without
+    * profiles will be counted
+    */
   def findAndCount[TCustomAttributes](): bluebirdLib.bluebirdMod.namespaced[sequelizeLib.Anon_Count[TInstance]] = js.native
-  /**
-           * Find all the rows matching your query, within a specified offset / limit, and get the total number of
-           * rows matching your query. This is very usefull for paging
-           *
-           * ```js
-           * Model.findAndCountAll({
-           *   where: ...,
-           *   limit: 12,
-           *   offset: 12
-           * }).then(function (result) {
-           *   ...
-           * })
-           * ```
-           * In the above example, `result.rows` will contain rows 13 through 24, while `result.count` will return
-           * the
-           * total number of rows that matched your query.
-           *
-           * When you add includes, only those which are required (either because they have a where clause, or
-           * because
-           * `required` is explicitly set to true on the include) will be added to the count part.
-           *
-           * Suppose you want to find all users who have a profile attached:
-           * ```js
-           * User.findAndCountAll({
-           *   include: [
-           *      { model: Profile, required: true}
-           *   ],
-           *   limit 3
-           * });
-           * ```
-           * Because the include for `Profile` has `required` set it will result in an inner join, and only the users
-           * who have a profile will be counted. If we remove `required` from the include, both users with and
-           * without
-           * profiles will be counted
-           */
   def findAndCount[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.namespaced[sequelizeLib.Anon_Count[TInstance]] = js.native
   def findAndCountAll[TCustomAttributes](): bluebirdLib.bluebirdMod.namespaced[sequelizeLib.Anon_Count[TInstance]] = js.native
   def findAndCountAll[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.namespaced[sequelizeLib.Anon_Count[TInstance]] = js.native
   /**
-           * Search for a single instance by its primary key. This applies LIMIT 1, so the listener will
-           * always be called with a single instance.
-           */
+    * Search for a single instance by its primary key. This applies LIMIT 1, so the listener will
+    * always be called with a single instance.
+    */
   def findById[TCustomAttributes](): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
-  /**
-           * Search for a single instance by its primary key. This applies LIMIT 1, so the listener will
-           * always be called with a single instance.
-           */
   def findById[TCustomAttributes](identifier: java.lang.String): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
-  /**
-           * Search for a single instance by its primary key. This applies LIMIT 1, so the listener will
-           * always be called with a single instance.
-           */
   def findById[TCustomAttributes](identifier: java.lang.String, options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
-  /**
-           * Search for a single instance by its primary key. This applies LIMIT 1, so the listener will
-           * always be called with a single instance.
-           */
   def findById[TCustomAttributes](identifier: nodeLib.Buffer): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
-  /**
-           * Search for a single instance by its primary key. This applies LIMIT 1, so the listener will
-           * always be called with a single instance.
-           */
   def findById[TCustomAttributes](identifier: nodeLib.Buffer, options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
-  /**
-           * Search for a single instance by its primary key. This applies LIMIT 1, so the listener will
-           * always be called with a single instance.
-           */
   def findById[TCustomAttributes](identifier: scala.Double): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
-  /**
-           * Search for a single instance by its primary key. This applies LIMIT 1, so the listener will
-           * always be called with a single instance.
-           */
   def findById[TCustomAttributes](identifier: scala.Double, options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
   def findByPk[TCustomAttributes](): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
   def findByPk[TCustomAttributes](identifier: java.lang.String): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
@@ -452,59 +251,45 @@ trait Model[TInstance, TAttributes]
   def findByPrimary[TCustomAttributes](identifier: scala.Double): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
   def findByPrimary[TCustomAttributes](identifier: scala.Double, options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
   /**
-           * A more performant findOrCreate that will not work under a transaction (at least not in postgres)
-           * Will execute a find call, if empty then attempt to create, if unique constraint then attempt to find again
-           */
+    * A more performant findOrCreate that will not work under a transaction (at least not in postgres)
+    * Will execute a find call, if empty then attempt to create, if unique constraint then attempt to find again
+    */
   def findCreateFind[TCustomAttributes](options: FindCreateFindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.namespaced[js.Tuple2[TInstance, scala.Boolean]] = js.native
   /**
-           * Search for a single instance. This applies LIMIT 1, so the listener will always be called with a single
-           * instance.
-           */
+    * Search for a single instance. This applies LIMIT 1, so the listener will always be called with a single
+    * instance.
+    */
   def findOne[TCustomAttributes](): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
-  /**
-           * Search for a single instance. This applies LIMIT 1, so the listener will always be called with a single
-           * instance.
-           */
   def findOne[TCustomAttributes](options: FindOptions[TAttributes with TCustomAttributes]): bluebirdLib.bluebirdMod.namespaced[TInstance | scala.Null] = js.native
   def findOrBuild(options: FindOrInitializeOptions[TAttributes]): bluebirdLib.bluebirdMod.namespaced[js.Tuple2[TInstance, scala.Boolean]] = js.native
   /**
-           * Find a row that matches the query, or build and save the row if none is found
-           * The successful result of the promise will be (instance, created) - Make sure to use .spread()
-           *
-           * If no transaction is passed in the `options` object, a new transaction will be created internally, to
-           * prevent the race condition where a matching row is created by another connection after the find but
-           * before the insert call. However, it is not always possible to handle this case in SQLite, specifically
-           * if one transaction inserts and another tries to select before the first one has comitted. In this case,
-           * an instance of sequelize.TimeoutError will be thrown instead. If a transaction is created, a savepoint
-           * will be created instead, and any unique constraint violation will be handled internally.
-           */
+    * Find a row that matches the query, or build and save the row if none is found
+    * The successful result of the promise will be (instance, created) - Make sure to use .spread()
+    *
+    * If no transaction is passed in the `options` object, a new transaction will be created internally, to
+    * prevent the race condition where a matching row is created by another connection after the find but
+    * before the insert call. However, it is not always possible to handle this case in SQLite, specifically
+    * if one transaction inserts and another tries to select before the first one has comitted. In this case,
+    * an instance of sequelize.TimeoutError will be thrown instead. If a transaction is created, a savepoint
+    * will be created instead, and any unique constraint violation will be handled internally.
+    */
   def findOrCreate(options: FindOrInitializeOptions[TAttributes]): bluebirdLib.bluebirdMod.namespaced[js.Tuple2[TInstance, scala.Boolean]] = js.native
   /**
-           * Find a row that matches the query, or build (but don't save) the row if none is found.
-           * The successfull result of the promise will be (instance, initialized) - Make sure to use .spread()
-           */
+    * Find a row that matches the query, or build (but don't save) the row if none is found.
+    * The successfull result of the promise will be (instance, initialized) - Make sure to use .spread()
+    */
   def findOrInitialize(options: FindOrInitializeOptions[TAttributes]): bluebirdLib.bluebirdMod.namespaced[js.Tuple2[TInstance, scala.Boolean]] = js.native
   /**
-           * Get the tablename of the model, taking schema into account. The method will return The name as a string
-           * if the model has no schema, or an object with `tableName`, `schema` and `delimiter` properties.
-           *
-           * @param options The hash of options from any query. You can use one model to access tables with matching
-           *     schemas by overriding `getTableName` and using custom key/values to alter the name of the table.
-           *     (eg.
-           *     subscribers_1, subscribers_2)
-           * @param options.logging=false A function that gets executed while running the query to log the sql.
-           */
+    * Get the tablename of the model, taking schema into account. The method will return The name as a string
+    * if the model has no schema, or an object with `tableName`, `schema` and `delimiter` properties.
+    *
+    * @param options The hash of options from any query. You can use one model to access tables with matching
+    *     schemas by overriding `getTableName` and using custom key/values to alter the name of the table.
+    *     (eg.
+    *     subscribers_1, subscribers_2)
+    * @param options.logging=false A function that gets executed while running the query to log the sql.
+    */
   def getTableName(): java.lang.String | js.Object = js.native
-  /**
-           * Get the tablename of the model, taking schema into account. The method will return The name as a string
-           * if the model has no schema, or an object with `tableName`, `schema` and `delimiter` properties.
-           *
-           * @param options The hash of options from any query. You can use one model to access tables with matching
-           *     schemas by overriding `getTableName` and using custom key/values to alter the name of the table.
-           *     (eg.
-           *     subscribers_1, subscribers_2)
-           * @param options.logging=false A function that gets executed while running the query to log the sql.
-           */
   def getTableName(options: GetTableNameOptions): java.lang.String | js.Object = js.native
   def insertOrUpdate(values: TAttributes): bluebirdLib.bluebirdMod.namespaced[scala.Boolean] = js.native
   def insertOrUpdate(
@@ -512,376 +297,136 @@ trait Model[TInstance, TAttributes]
     options: UpsertOptions with (sequelizeLib.Anon_Returning | sequelizeLib.Anon_ReturningTrue)
   ): bluebirdLib.bluebirdMod.namespaced[scala.Boolean] = js.native
   /**
-           * Find the maximum value of field
-           */
+    * Find the maximum value of field
+    */
   def max(field: java.lang.String): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  /**
-           * Find the maximum value of field
-           */
   def max(field: java.lang.String, options: AggregateOptions): bluebirdLib.bluebirdMod.namespaced[_] = js.native
   /**
-           * Find the minimum value of field
-           */
+    * Find the minimum value of field
+    */
   def min(field: java.lang.String): bluebirdLib.bluebirdMod.namespaced[_] = js.native
-  /**
-           * Find the minimum value of field
-           */
   def min(field: java.lang.String, options: AggregateOptions): bluebirdLib.bluebirdMod.namespaced[_] = js.native
   /**
-           * Remove attribute from model definition
-           *
-           * @param attribute
-           */
+    * Remove attribute from model definition
+    *
+    * @param attribute
+    */
   def removeAttribute(attribute: java.lang.String): scala.Unit = js.native
   /**
-           * Restore multiple instances if `paranoid` is enabled.
-           */
+    * Restore multiple instances if `paranoid` is enabled.
+    */
   def restore(): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  /**
-           * Restore multiple instances if `paranoid` is enabled.
-           */
   def restore(options: RestoreOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   /**
-           * Apply a schema to this model. For postgres, this will actually place the schema in front of the table
-           * name
-           * - `"schema"."tableName"`, while the schema will be prepended to the table name for mysql and
-           * sqlite - `'schema.tablename'`.
-           *
-           * @param schema The name of the schema
-           * @param options
-           */
+    * Apply a schema to this model. For postgres, this will actually place the schema in front of the table
+    * name
+    * - `"schema"."tableName"`, while the schema will be prepended to the table name for mysql and
+    * sqlite - `'schema.tablename'`.
+    *
+    * @param schema The name of the schema
+    * @param options
+    */
   def schema(schema: java.lang.String): this.type = js.native
-  /**
-           * Apply a schema to this model. For postgres, this will actually place the schema in front of the table
-           * name
-           * - `"schema"."tableName"`, while the schema will be prepended to the table name for mysql and
-           * sqlite - `'schema.tablename'`.
-           *
-           * @param schema The name of the schema
-           * @param options
-           */
   def schema(schema: java.lang.String, options: SchemaOptions): this.type = js.native
   /**
-           * Apply a scope created in `define` to the model. First let's look at how to create scopes:
-           * ```js
-           * var Model = sequelize.define('model', attributes, {
-           *   defaultScope: {
-           *     where: {
-           *       username: 'dan'
-           *     },
-           *     limit: 12
-           *   },
-           *   scopes: {
-           *     isALie: {
-           *       where: {
-           *         stuff: 'cake'
-           *       }
-           *     },
-           *     complexFunction: function(email, accessLevel) {
-           *       return {
-           *         where: {
-           *           email: {
-           *             $like: email
-           *           },
-           *           accesss_level {
-           *             $gte: accessLevel
-           *           }
-           *         }
-           *       }
-           *     }
-           *   }
-           * })
-           * ```
-           * Now, since you defined a default scope, every time you do Model.find, the default scope is appended to
-           * your query. Here's a couple of examples:
-           * ```js
-           * Model.findAll() // WHERE username = 'dan'
-           * Model.findAll({ where: { age: { gt: 12 } } }) // WHERE age > 12 AND username = 'dan'
-           * ```
-           *
-           * To invoke scope functions you can do:
-           * ```js
-           * Model.scope({ method: ['complexFunction' 'dan@sequelize.com', 42]}).findAll()
-           * // WHERE email like 'dan@sequelize.com%' AND access_level >= 42
-           * ```
-           *
-           * @return Model A reference to the model, with the scope(s) applied. Calling scope again on the returned
-           *     model will clear the previous scope.
-           */
+    * Apply a scope created in `define` to the model. First let's look at how to create scopes:
+    * ```js
+    * var Model = sequelize.define('model', attributes, {
+    *   defaultScope: {
+    *     where: {
+    *       username: 'dan'
+    *     },
+    *     limit: 12
+    *   },
+    *   scopes: {
+    *     isALie: {
+    *       where: {
+    *         stuff: 'cake'
+    *       }
+    *     },
+    *     complexFunction: function(email, accessLevel) {
+    *       return {
+    *         where: {
+    *           email: {
+    *             $like: email
+    *           },
+    *           accesss_level {
+    *             $gte: accessLevel
+    *           }
+    *         }
+    *       }
+    *     }
+    *   }
+    * })
+    * ```
+    * Now, since you defined a default scope, every time you do Model.find, the default scope is appended to
+    * your query. Here's a couple of examples:
+    * ```js
+    * Model.findAll() // WHERE username = 'dan'
+    * Model.findAll({ where: { age: { gt: 12 } } }) // WHERE age > 12 AND username = 'dan'
+    * ```
+    *
+    * To invoke scope functions you can do:
+    * ```js
+    * Model.scope({ method: ['complexFunction' 'dan@sequelize.com', 42]}).findAll()
+    * // WHERE email like 'dan@sequelize.com%' AND access_level >= 42
+    * ```
+    *
+    * @return Model A reference to the model, with the scope(s) applied. Calling scope again on the returned
+    *     model will clear the previous scope.
+    */
   def scope(): this.type = js.native
-  /**
-           * Apply a scope created in `define` to the model. First let's look at how to create scopes:
-           * ```js
-           * var Model = sequelize.define('model', attributes, {
-           *   defaultScope: {
-           *     where: {
-           *       username: 'dan'
-           *     },
-           *     limit: 12
-           *   },
-           *   scopes: {
-           *     isALie: {
-           *       where: {
-           *         stuff: 'cake'
-           *       }
-           *     },
-           *     complexFunction: function(email, accessLevel) {
-           *       return {
-           *         where: {
-           *           email: {
-           *             $like: email
-           *           },
-           *           accesss_level {
-           *             $gte: accessLevel
-           *           }
-           *         }
-           *       }
-           *     }
-           *   }
-           * })
-           * ```
-           * Now, since you defined a default scope, every time you do Model.find, the default scope is appended to
-           * your query. Here's a couple of examples:
-           * ```js
-           * Model.findAll() // WHERE username = 'dan'
-           * Model.findAll({ where: { age: { gt: 12 } } }) // WHERE age > 12 AND username = 'dan'
-           * ```
-           *
-           * To invoke scope functions you can do:
-           * ```js
-           * Model.scope({ method: ['complexFunction' 'dan@sequelize.com', 42]}).findAll()
-           * // WHERE email like 'dan@sequelize.com%' AND access_level >= 42
-           * ```
-           *
-           * @return Model A reference to the model, with the scope(s) applied. Calling scope again on the returned
-           *     model will clear the previous scope.
-           */
   def scope(options: java.lang.String): this.type = js.native
-  /**
-           * Apply a scope created in `define` to the model. First let's look at how to create scopes:
-           * ```js
-           * var Model = sequelize.define('model', attributes, {
-           *   defaultScope: {
-           *     where: {
-           *       username: 'dan'
-           *     },
-           *     limit: 12
-           *   },
-           *   scopes: {
-           *     isALie: {
-           *       where: {
-           *         stuff: 'cake'
-           *       }
-           *     },
-           *     complexFunction: function(email, accessLevel) {
-           *       return {
-           *         where: {
-           *           email: {
-           *             $like: email
-           *           },
-           *           accesss_level {
-           *             $gte: accessLevel
-           *           }
-           *         }
-           *       }
-           *     }
-           *   }
-           * })
-           * ```
-           * Now, since you defined a default scope, every time you do Model.find, the default scope is appended to
-           * your query. Here's a couple of examples:
-           * ```js
-           * Model.findAll() // WHERE username = 'dan'
-           * Model.findAll({ where: { age: { gt: 12 } } }) // WHERE age > 12 AND username = 'dan'
-           * ```
-           *
-           * To invoke scope functions you can do:
-           * ```js
-           * Model.scope({ method: ['complexFunction' 'dan@sequelize.com', 42]}).findAll()
-           * // WHERE email like 'dan@sequelize.com%' AND access_level >= 42
-           * ```
-           *
-           * @return Model A reference to the model, with the scope(s) applied. Calling scope again on the returned
-           *     model will clear the previous scope.
-           */
   def scope(options: js.Array[java.lang.String | ScopeOptions | AnyWhereOptions]): this.type = js.native
-  /**
-           * Apply a scope created in `define` to the model. First let's look at how to create scopes:
-           * ```js
-           * var Model = sequelize.define('model', attributes, {
-           *   defaultScope: {
-           *     where: {
-           *       username: 'dan'
-           *     },
-           *     limit: 12
-           *   },
-           *   scopes: {
-           *     isALie: {
-           *       where: {
-           *         stuff: 'cake'
-           *       }
-           *     },
-           *     complexFunction: function(email, accessLevel) {
-           *       return {
-           *         where: {
-           *           email: {
-           *             $like: email
-           *           },
-           *           accesss_level {
-           *             $gte: accessLevel
-           *           }
-           *         }
-           *       }
-           *     }
-           *   }
-           * })
-           * ```
-           * Now, since you defined a default scope, every time you do Model.find, the default scope is appended to
-           * your query. Here's a couple of examples:
-           * ```js
-           * Model.findAll() // WHERE username = 'dan'
-           * Model.findAll({ where: { age: { gt: 12 } } }) // WHERE age > 12 AND username = 'dan'
-           * ```
-           *
-           * To invoke scope functions you can do:
-           * ```js
-           * Model.scope({ method: ['complexFunction' 'dan@sequelize.com', 42]}).findAll()
-           * // WHERE email like 'dan@sequelize.com%' AND access_level >= 42
-           * ```
-           *
-           * @return Model A reference to the model, with the scope(s) applied. Calling scope again on the returned
-           *     model will clear the previous scope.
-           */
   def scope(options: AnyWhereOptions): this.type = js.native
-  /**
-           * Apply a scope created in `define` to the model. First let's look at how to create scopes:
-           * ```js
-           * var Model = sequelize.define('model', attributes, {
-           *   defaultScope: {
-           *     where: {
-           *       username: 'dan'
-           *     },
-           *     limit: 12
-           *   },
-           *   scopes: {
-           *     isALie: {
-           *       where: {
-           *         stuff: 'cake'
-           *       }
-           *     },
-           *     complexFunction: function(email, accessLevel) {
-           *       return {
-           *         where: {
-           *           email: {
-           *             $like: email
-           *           },
-           *           accesss_level {
-           *             $gte: accessLevel
-           *           }
-           *         }
-           *       }
-           *     }
-           *   }
-           * })
-           * ```
-           * Now, since you defined a default scope, every time you do Model.find, the default scope is appended to
-           * your query. Here's a couple of examples:
-           * ```js
-           * Model.findAll() // WHERE username = 'dan'
-           * Model.findAll({ where: { age: { gt: 12 } } }) // WHERE age > 12 AND username = 'dan'
-           * ```
-           *
-           * To invoke scope functions you can do:
-           * ```js
-           * Model.scope({ method: ['complexFunction' 'dan@sequelize.com', 42]}).findAll()
-           * // WHERE email like 'dan@sequelize.com%' AND access_level >= 42
-           * ```
-           *
-           * @return Model A reference to the model, with the scope(s) applied. Calling scope again on the returned
-           *     model will clear the previous scope.
-           */
   def scope(options: ScopeOptions): this.type = js.native
   /**
-           * Find the sum of field
-           */
+    * Find the sum of field
+    */
   def sum(field: java.lang.String): bluebirdLib.bluebirdMod.namespaced[scala.Double] = js.native
-  /**
-           * Find the sum of field
-           */
   def sum(field: java.lang.String, options: AggregateOptions): bluebirdLib.bluebirdMod.namespaced[scala.Double] = js.native
   /**
-           * Sync this Model to the DB, that is create the table. Upon success, the callback will be called with the
-           * model instance (this)
-           */
+    * Sync this Model to the DB, that is create the table. Upon success, the callback will be called with the
+    * model instance (this)
+    */
   def sync(): bluebirdLib.bluebirdMod.namespaced[this.type] = js.native
-  /**
-           * Sync this Model to the DB, that is create the table. Upon success, the callback will be called with the
-           * model instance (this)
-           */
   def sync(options: SyncOptions): bluebirdLib.bluebirdMod.namespaced[this.type] = js.native
   /**
-           * Truncate all instances of the model. This is a convenient method for Model.destroy({ truncate: true }).
-           */
+    * Truncate all instances of the model. This is a convenient method for Model.destroy({ truncate: true }).
+    */
   def truncate(): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
-  /**
-           * Truncate all instances of the model. This is a convenient method for Model.destroy({ truncate: true }).
-           */
   def truncate(options: TruncateOptions): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
   /**
-           * Unscope the model
-           */
+    * Unscope the model
+    */
   def unscoped(): this.type = js.native
   /**
-           * Update multiple instances that match the where options. The promise returns an array with one or two
-           * elements. The first element is always the number of affected rows, while the second element is the actual
-           * affected rows (only supported in postgres with `options.returning` true.)
-           */
+    * Update multiple instances that match the where options. The promise returns an array with one or two
+    * elements. The first element is always the number of affected rows, while the second element is the actual
+    * affected rows (only supported in postgres with `options.returning` true.)
+    */
   def update(values: stdLib.Partial[TAttributes]): bluebirdLib.bluebirdMod.namespaced[js.Tuple2[scala.Double, js.Array[TInstance]]] = js.native
-  /**
-           * Update multiple instances that match the where options. The promise returns an array with one or two
-           * elements. The first element is always the number of affected rows, while the second element is the actual
-           * affected rows (only supported in postgres with `options.returning` true.)
-           */
   def update(values: stdLib.Partial[TAttributes], options: UpdateOptions): bluebirdLib.bluebirdMod.namespaced[js.Tuple2[scala.Double, js.Array[TInstance]]] = js.native
   /**
-           * Insert or update a single row. An update will be executed if a row which matches the supplied values on
-           * either the primary key or a unique key is found. Note that the unique index must be defined in your
-           * sequelize model and not just in the table. Otherwise you may experience a unique constraint violation,
-           * because sequelize fails to identify the row that should be updated.
-           *
-           * **Implementation details:**
-           *
-           * * MySQL - Implemented as a single query `INSERT values ON DUPLICATE KEY UPDATE values`
-           * * PostgreSQL - Implemented as a temporary function with exception handling: INSERT EXCEPTION WHEN
-           *   unique_constraint UPDATE
-           * * SQLite - Implemented as two queries `INSERT; UPDATE`. This means that the update is executed
-           * regardless
-           *   of whether the row already existed or not
-           *
-           * **Note** that SQLite returns undefined for created, no matter if the row was created or updated. This is
-           * because SQLite always runs INSERT OR IGNORE + UPDATE, in a single query, so there is no way to know
-           * whether the row was inserted or not.
-           */
+    * Insert or update a single row. An update will be executed if a row which matches the supplied values on
+    * either the primary key or a unique key is found. Note that the unique index must be defined in your
+    * sequelize model and not just in the table. Otherwise you may experience a unique constraint violation,
+    * because sequelize fails to identify the row that should be updated.
+    *
+    * **Implementation details:**
+    *
+    * * MySQL - Implemented as a single query `INSERT values ON DUPLICATE KEY UPDATE values`
+    * * PostgreSQL - Implemented as a temporary function with exception handling: INSERT EXCEPTION WHEN
+    *   unique_constraint UPDATE
+    * * SQLite - Implemented as two queries `INSERT; UPDATE`. This means that the update is executed
+    * regardless
+    *   of whether the row already existed or not
+    *
+    * **Note** that SQLite returns undefined for created, no matter if the row was created or updated. This is
+    * because SQLite always runs INSERT OR IGNORE + UPDATE, in a single query, so there is no way to know
+    * whether the row was inserted or not.
+    */
   def upsert(values: TAttributes): bluebirdLib.bluebirdMod.namespaced[scala.Boolean] = js.native
-  /**
-           * Insert or update a single row. An update will be executed if a row which matches the supplied values on
-           * either the primary key or a unique key is found. Note that the unique index must be defined in your
-           * sequelize model and not just in the table. Otherwise you may experience a unique constraint violation,
-           * because sequelize fails to identify the row that should be updated.
-           *
-           * **Implementation details:**
-           *
-           * * MySQL - Implemented as a single query `INSERT values ON DUPLICATE KEY UPDATE values`
-           * * PostgreSQL - Implemented as a temporary function with exception handling: INSERT EXCEPTION WHEN
-           *   unique_constraint UPDATE
-           * * SQLite - Implemented as two queries `INSERT; UPDATE`. This means that the update is executed
-           * regardless
-           *   of whether the row already existed or not
-           *
-           * **Note** that SQLite returns undefined for created, no matter if the row was created or updated. This is
-           * because SQLite always runs INSERT OR IGNORE + UPDATE, in a single query, so there is no way to know
-           * whether the row was inserted or not.
-           */
   def upsert(
     values: TAttributes,
     options: UpsertOptions with (sequelizeLib.Anon_ReturningFalse | sequelizeLib.Anon_ReturningTrue)

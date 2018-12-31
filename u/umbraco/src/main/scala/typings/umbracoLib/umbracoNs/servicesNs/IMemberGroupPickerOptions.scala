@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Member group picker dialog options object
-    */
-
+  * Member group picker dialog options object
+  */
 trait IMemberGroupPickerOptions extends js.Object {
   /*callback function*/
   var callback: angularLib.angularMod.Global.Function

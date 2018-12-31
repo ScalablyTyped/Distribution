@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContainerStats extends js.Object {
   var cpu_stats: CPUStats
   var memory_stats: MemoryStats

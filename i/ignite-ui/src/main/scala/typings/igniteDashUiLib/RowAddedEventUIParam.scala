@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RowAddedEventUIParam extends js.Object {
   /**
   	 * Gets the default value (before editing) for the column with the specified key.

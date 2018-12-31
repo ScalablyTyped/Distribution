@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModelPopulateOptions extends js.Object {
   /** optional query conditions to match */
   var `match`: js.UndefOr[js.Any] = js.undefined

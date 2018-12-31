@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RelayMutationRequest extends js.Object {
   def getQueryString(): java.lang.String
   def getVariables(): RelayVariables

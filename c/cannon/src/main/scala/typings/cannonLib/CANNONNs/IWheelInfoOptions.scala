@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IWheelInfoOptions extends js.Object {
   var axis: js.UndefOr[Vec3] = js.undefined
   var axleLocal: js.UndefOr[Vec3] = js.undefined

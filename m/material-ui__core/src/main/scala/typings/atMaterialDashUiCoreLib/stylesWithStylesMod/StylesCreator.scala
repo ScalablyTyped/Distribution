@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StylesCreator extends js.Object {
   var options: atMaterialDashUiCoreLib.Anon_Index
   var themingEnabled: scala.Boolean

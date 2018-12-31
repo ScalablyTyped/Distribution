@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRowEditing extends IEditing {
   /** [Config Option] (Boolean) */
   var autoCancel: js.UndefOr[scala.Boolean] = js.undefined

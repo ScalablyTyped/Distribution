@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UrlMatcherConfig extends js.Object {
   /** See: [[UrlConfig.caseInsensitive]] */ var caseInsensitive: js.Function1[/* value */ js.UndefOr[scala.Boolean], scala.Boolean]
   /** See: [[UrlConfig.defaultSquashPolicy]] */ var defaultSquashPolicy: js.Function1[

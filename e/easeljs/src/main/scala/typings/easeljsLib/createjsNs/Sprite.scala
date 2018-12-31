@@ -17,14 +17,13 @@ class Sprite protected () extends DisplayObject {
   var currentFrame: scala.Double = js.native
   var framerate: scala.Double = js.native
   /**
-           * @deprecated
-           */
+    * @deprecated
+    */
   var offset: scala.Double = js.native
   var paused: scala.Boolean = js.native
   var spriteSheet: SpriteSheet = js.native
   // methods
   def advance(): scala.Unit = js.native
-  // methods
   def advance(time: scala.Double): scala.Unit = js.native
   def gotoAndPlay(frameOrAnimation: java.lang.String): scala.Unit = js.native
   def gotoAndPlay(frameOrAnimation: scala.Double): scala.Unit = js.native

@@ -8,14 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("chartmogul-node", "Plan")
 @js.native
 object PlanNs extends js.Object {
-  
   trait ListPlansParams
     extends chartmogulDashNodeLib.commonMod.CursorParams {
     var data_source_uuid: js.UndefOr[java.lang.String] = js.undefined
     var external_id: js.UndefOr[java.lang.String] = js.undefined
     var system: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait Plan extends js.Object {
     var data_source_uuid: js.UndefOr[java.lang.String] = js.undefined
@@ -25,7 +23,6 @@ object PlanNs extends js.Object {
     var name: js.UndefOr[java.lang.String] = js.undefined
     var uuid: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait Plans
     extends chartmogulDashNodeLib.commonMod.Cursor {

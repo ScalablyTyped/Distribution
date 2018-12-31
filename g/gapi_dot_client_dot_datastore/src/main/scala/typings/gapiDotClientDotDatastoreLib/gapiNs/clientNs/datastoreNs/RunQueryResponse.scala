@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RunQueryResponse extends js.Object {
   /** A batch of query results (always present). */
   var batch: js.UndefOr[QueryResultBatch] = js.undefined

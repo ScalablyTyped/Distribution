@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ListBullet extends js.Object
 
 /**
-     * [Api set: WordApi]
-     */
+  * [Api set: WordApi]
+  */
 @JSGlobal("Word.ListBullet")
 @js.native
 object ListBullet extends js.Object {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictPaginationProps extends js.Object {
   /** Index of the currently active page. */
   var activePage: js.UndefOr[scala.Double | java.lang.String] = js.undefined
@@ -42,11 +41,11 @@ trait StrictPaginationProps extends js.Object {
     ]
   ] = js.undefined
   /**
-     * Called on change of an active page.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props.
-     */
+    * Called on change of an active page.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props.
+    */
   var onPageChange: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 

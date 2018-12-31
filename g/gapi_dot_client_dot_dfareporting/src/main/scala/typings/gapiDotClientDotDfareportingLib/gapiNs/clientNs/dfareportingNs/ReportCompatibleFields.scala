@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReportCompatibleFields extends js.Object {
   /** Dimensions which are compatible to be selected in the "dimensionFilters" section of the report. */
   var dimensionFilters: js.UndefOr[js.Array[Dimension]] = js.undefined

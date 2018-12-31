@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ServiceIdIsPrimary extends js.Object {
   /**
   				 * 该服务是否为主服务

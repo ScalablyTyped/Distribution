@@ -9,16 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class Navigation () extends js.Object {
   /**
-       * HTMLElement of "next" navigation button
-       */
+    * HTMLElement of "next" navigation button
+    */
   var nextEl: stdLib.HTMLElement = js.native
   /**
-       * HTMLElement of "previous" navigation button
-       */
+    * HTMLElement of "previous" navigation button
+    */
   var prevEl: stdLib.HTMLElement = js.native
   /**
-       * Update navigation buttons state (enabled/disabled)
-       */
+    * Update navigation buttons state (enabled/disabled)
+    */
   def update(): scala.Unit = js.native
 }
 

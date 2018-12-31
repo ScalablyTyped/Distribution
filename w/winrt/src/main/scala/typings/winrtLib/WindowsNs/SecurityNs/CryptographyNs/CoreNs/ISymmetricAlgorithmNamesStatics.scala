@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISymmetricAlgorithmNamesStatics extends js.Object {
   var aesCbc: java.lang.String
   var aesCbcPkcs7: java.lang.String

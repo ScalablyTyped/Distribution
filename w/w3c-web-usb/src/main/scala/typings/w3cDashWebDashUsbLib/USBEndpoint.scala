@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait USBEndpoint extends js.Object {
   val direction: USBDirection
   val endpointNumber: scala.Double

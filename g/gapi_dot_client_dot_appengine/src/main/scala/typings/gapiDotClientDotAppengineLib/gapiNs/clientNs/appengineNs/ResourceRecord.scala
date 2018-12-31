@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResourceRecord extends js.Object {
   /** Relative name of the object affected by this record. Only applicable for CNAME records. Example: 'www'. */
   var name: js.UndefOr[java.lang.String] = js.undefined

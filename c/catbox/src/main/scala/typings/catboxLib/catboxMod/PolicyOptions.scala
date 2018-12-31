@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PolicyOptions[T] extends js.Object {
   /** dropOnError - if true, an error or timeout in the generateFunc causes the stale value to be evicted from the cache. Defaults to true. */
   var dropOnError: js.UndefOr[scala.Boolean] = js.undefined
@@ -20,22 +19,22 @@ trait PolicyOptions[T] extends js.Object {
   /** generateOnReadError - if false, an upstream cache read error will stop the get() method from calling the generate function and will instead pass back the cache error. Defaults to true. */
   var generateOnReadError: js.UndefOr[scala.Boolean] = js.undefined
   /**
-       * generateTimeout - number of milliseconds to wait before returning a timeout error when the generateFunc function takes too long to return a value.
-       * When the value is eventually returned, it is stored in the cache for future requests. Required if generateFunc is present.
-       * Set to false to disable timeouts which may cause all get() requests to get stuck forever.
-       */
+    * generateTimeout - number of milliseconds to wait before returning a timeout error when the generateFunc function takes too long to return a value.
+    * When the value is eventually returned, it is stored in the cache for future requests. Required if generateFunc is present.
+    * Set to false to disable timeouts which may cause all get() requests to get stuck forever.
+    */
   var generateTimeout: js.UndefOr[scala.Double | catboxLib.catboxLibNumbers.`false`] = js.undefined
   /**
-       * pendingGenerateTimeout - number of milliseconds while generateFunc call is in progress for a given id, before a subsequent generateFunc call is allowed.
-       * @default 0, no blocking of concurrent generateFunc calls beyond staleTimeout.
-       */
+    * pendingGenerateTimeout - number of milliseconds while generateFunc call is in progress for a given id, before a subsequent generateFunc call is allowed.
+    * @default 0, no blocking of concurrent generateFunc calls beyond staleTimeout.
+    */
   var pendingGenerateTimeout: js.UndefOr[scala.Double] = js.undefined
   /**
-       * staleIn - number of milliseconds to mark an item stored in cache as stale and attempt to regenerate it when generateFunc is provided.
-       * Must be less than expiresIn. Alternatively function that returns staleIn value in milliseconds. The function signature is function(stored, ttl) where:
-       *  * stored - the timestamp when the item was stored in the cache (in milliseconds).
-       *  * ttl - the remaining time-to-live (not the original value used when storing the object).
-       */
+    * staleIn - number of milliseconds to mark an item stored in cache as stale and attempt to regenerate it when generateFunc is provided.
+    * Must be less than expiresIn. Alternatively function that returns staleIn value in milliseconds. The function signature is function(stored, ttl) where:
+    *  * stored - the timestamp when the item was stored in the cache (in milliseconds).
+    *  * ttl - the remaining time-to-live (not the original value used when storing the object).
+    */
   var staleIn: js.UndefOr[
     scala.Double | (js.Function2[/* stored */ scala.Double, /* ttl */ scala.Double, scala.Double])
   ] = js.undefined

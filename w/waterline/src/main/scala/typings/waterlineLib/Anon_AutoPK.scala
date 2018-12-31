@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AutoPK extends js.Object {
   var attributes: js.UndefOr[waterlineLib.waterlineMod.WaterlineNs.Attributes] = js.undefined
   var autoCreatedAt: js.UndefOr[scala.Boolean] = js.undefined

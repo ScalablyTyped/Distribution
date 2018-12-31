@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DateObjectUnits extends js.Object {
   var day: js.UndefOr[scala.Double] = js.undefined
   var hour: js.UndefOr[scala.Double] = js.undefined

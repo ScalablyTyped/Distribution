@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AdStatusPRecordset extends js.Object {
   val MaxProgress: scala.Double
   val Progress: scala.Double

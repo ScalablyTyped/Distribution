@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerOptions extends js.Object {
   /** Object to be passed to http(s).request. */
   var agent: js.UndefOr[js.Any] = js.undefined

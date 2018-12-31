@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommonMixin extends js.Object {
   var bindEvents: js.Any
   var getOption: js.Any

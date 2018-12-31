@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QueryFindOneAndRemoveOptions extends js.Object {
   /** puts a time limit on the query - requires mongodb >= 2.6.0 */
   var maxTimeMS: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextAnnotation extends js.Object {
   /** List of pages detected by OCR. */
   var pages: js.UndefOr[js.Array[Page]] = js.undefined

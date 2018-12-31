@@ -20,8 +20,8 @@ object TimeUnit extends js.Object {
     extends timezonecompleteLib.distLibBasicsMod.TimeUnit
   
   /**
-       * End-of-enum marker, do not use
-       */
+    * End-of-enum marker, do not use
+    */
   @js.native
   sealed trait MAX
     extends timezonecompleteLib.distLibBasicsMod.TimeUnit

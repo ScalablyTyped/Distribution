@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataStructure extends js.Object {
   /** the default charset associated with this type, if any. */
   var charset: js.UndefOr[java.lang.String] = js.undefined

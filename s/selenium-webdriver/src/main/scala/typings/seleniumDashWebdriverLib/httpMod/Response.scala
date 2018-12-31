@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class Response protected () extends js.Object {
   /**
-       * @param {number} status The response code.
-       * @param {!Object<string>} headers The response headers. All header names
-       *     will be converted to lowercase strings for consistent lookups.
-       * @param {string} body The response body.
-       */
+    * @param {number} status The response code.
+    * @param {!Object<string>} headers The response headers. All header names
+    *     will be converted to lowercase strings for consistent lookups.
+    * @param {string} body The response body.
+    */
   def this(status: scala.Double, headers: js.Object, body: java.lang.String) = this()
   var body: java.lang.String = js.native
   var headers: stdLib.Map[java.lang.String, java.lang.String] = js.native

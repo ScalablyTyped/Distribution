@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 /* theme types */
 /** Info provided in the onUpdated listener. */
-
 trait ThemeUpdateInfo extends js.Object {
   /** The new theme after update */
   var theme: js.Object

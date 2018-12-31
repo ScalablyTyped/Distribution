@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // 开放接口-----用户信息
-
 trait UserInfo extends js.Object {
   var avatarUrl: java.lang.String
   var city: java.lang.String

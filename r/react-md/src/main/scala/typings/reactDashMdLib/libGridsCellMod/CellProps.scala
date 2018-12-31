@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CellProps
   extends reactDashMdLib.libMod.Props {
   var align: js.UndefOr[

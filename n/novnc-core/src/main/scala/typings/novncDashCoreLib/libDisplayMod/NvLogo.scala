@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NvLogo extends js.Object {
   var data: js.Array[scala.Double]
   var height: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GeoTrackingInfo extends js.Object {
   var City: java.lang.String
   var Coords: java.lang.String

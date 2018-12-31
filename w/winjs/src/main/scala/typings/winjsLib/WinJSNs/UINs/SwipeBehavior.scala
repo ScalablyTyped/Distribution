@@ -9,21 +9,21 @@ import scala.scalajs.js.annotation._
 sealed trait SwipeBehavior extends js.Object
 
 /**
-     * Specifies whether elements are selected when the user performs a swipe interaction.
-    **/
+  * Specifies whether elements are selected when the user performs a swipe interaction.
+  **/
 @JSGlobal("WinJS.UI.SwipeBehavior")
 @js.native
 object SwipeBehavior extends js.Object {
   /**
-           * The swipe interaction does not change which elements are selected.
-          **/
+    * The swipe interaction does not change which elements are selected.
+    **/
   @js.native
   sealed trait none
     extends winjsLib.WinJSNs.UINs.SwipeBehavior
   
   /**
-           * The swipe interaction selects the elements touched by the swipe.
-          **/
+    * The swipe interaction selects the elements touched by the swipe.
+    **/
   @js.native
   sealed trait select
     extends winjsLib.WinJSNs.UINs.SwipeBehavior

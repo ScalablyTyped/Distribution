@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BankAccount extends js.Object {
   var account_holder_name: java.lang.String
   var account_holder_type: java.lang.String

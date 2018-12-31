@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StripeWebhookEvent[T] extends js.Object {
   var api_version: java.lang.String
   var created: scala.Double
@@ -15,9 +14,9 @@ trait StripeWebhookEvent[T] extends js.Object {
   var `object`: java.lang.String
   var pending_webhooks: scala.Double
   /**
-               * One of https://stripe.com/docs/api#event_types
-               * E.g. account.updated
-               */
+    * One of https://stripe.com/docs/api#event_types
+    * E.g. account.updated
+    */
   var `type`: java.lang.String
 }
 

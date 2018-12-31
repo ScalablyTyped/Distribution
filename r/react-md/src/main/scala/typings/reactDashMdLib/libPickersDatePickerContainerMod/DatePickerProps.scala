@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatePickerProps
   extends reactDashMdLib.libPickersMod.BasePickerProps {
   var calendarClassName: js.UndefOr[java.lang.String] = js.undefined
@@ -34,19 +33,19 @@ trait DatePickerProps
   var formatOptions: js.UndefOr[reactDashMdLib.libPickersMod.IntlFormat] = js.undefined
   var getDateClassName: js.UndefOr[js.Function2[/* date */ stdLib.Date, /* day */ scala.Double, java.lang.String]] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var initialCalendarDate: js.UndefOr[java.lang.String | stdLib.Date] = js.undefined
   var maxDate: js.UndefOr[stdLib.Date] = js.undefined
   var minDate: js.UndefOr[stdLib.Date] = js.undefined
   var nextIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var nextIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var nextIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[
     js.Function3[
@@ -61,12 +60,12 @@ trait DatePickerProps
   var onYearSelected: js.UndefOr[js.Function1[/* firstDayInYear */ stdLib.Date, scala.Unit]] = js.undefined
   var previousIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var previousIconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
-     * @deprecated
-     */
+    * @deprecated
+    */
   var previousIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var showAllDays: js.UndefOr[scala.Boolean] = js.undefined
   var timeZone: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThemeOptions extends js.Object {
   var breakpoints: js.UndefOr[atMaterialDashUiCoreLib.stylesCreateBreakpointsMod.BreakpointsOptions] = js.undefined
   var direction: js.UndefOr[Direction] = js.undefined

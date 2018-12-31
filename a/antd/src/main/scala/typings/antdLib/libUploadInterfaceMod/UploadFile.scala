@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadFile extends js.Object {
   var error: js.UndefOr[js.Any] = js.undefined
   var fileName: js.UndefOr[java.lang.String] = js.undefined

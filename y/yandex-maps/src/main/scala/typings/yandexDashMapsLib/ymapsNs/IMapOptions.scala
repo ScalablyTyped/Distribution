@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMapOptions extends js.Object {
   var autoFitToViewport: js.UndefOr[
     yandexDashMapsLib.yandexDashMapsLibStrings.none | yandexDashMapsLib.yandexDashMapsLibStrings.ifNull | yandexDashMapsLib.yandexDashMapsLibStrings.always

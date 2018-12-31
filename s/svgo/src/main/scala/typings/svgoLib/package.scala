@@ -5,5 +5,5 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object svgoLib {
-  type PluginConfig = js.Any
+  type PluginConfig = /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify PluginCleanupAttrs */ js.Any
 }

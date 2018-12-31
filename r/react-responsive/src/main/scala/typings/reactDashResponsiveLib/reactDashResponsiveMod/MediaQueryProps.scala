@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaQueryProps extends MediaQueryAllQueryable {
   var children: js.UndefOr[
     reactLib.reactMod.ReactNs.ReactNode | (js.Function1[/* matches */ scala.Boolean, reactLib.reactMod.ReactNs.ReactNode])

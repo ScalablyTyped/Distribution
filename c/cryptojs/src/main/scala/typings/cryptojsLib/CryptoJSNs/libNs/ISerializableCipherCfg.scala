@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISerializableCipherCfg extends js.Object {
   var format: js.UndefOr[cryptojsLib.CryptoJSNs.formatNs.IFormatter] = js.undefined
   //default OpenSSLFormatter

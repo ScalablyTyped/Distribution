@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerOptions extends js.Object {
   var disconnect_delay: js.UndefOr[scala.Double] = js.undefined
   var heartbeat_delay: js.UndefOr[scala.Double] = js.undefined

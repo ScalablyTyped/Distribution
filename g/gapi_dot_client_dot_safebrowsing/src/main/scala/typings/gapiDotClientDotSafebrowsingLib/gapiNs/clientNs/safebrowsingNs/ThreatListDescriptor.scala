@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ThreatListDescriptor extends js.Object {
   /** The platform type targeted by the list's entries. */
   var platformType: js.UndefOr[java.lang.String] = js.undefined

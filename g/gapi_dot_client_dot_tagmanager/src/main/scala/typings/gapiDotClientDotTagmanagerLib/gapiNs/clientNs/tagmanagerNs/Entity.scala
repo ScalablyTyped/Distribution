@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Entity extends js.Object {
   /** Represents how the entity has been changed in the workspace. */
   var changeStatus: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStageGLOptions extends js.Object {
   var antialias: js.UndefOr[scala.Boolean] = js.undefined
   var autoPurge: js.UndefOr[scala.Double] = js.undefined

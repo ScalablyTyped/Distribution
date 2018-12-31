@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Root extends js.Object {
   // 标签结果数组
   var keyword: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OpenLocationOptions extends js.Object {
   /** 地址的详细说明 */
   var address: js.UndefOr[java.lang.String] = js.undefined

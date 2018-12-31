@@ -9,41 +9,41 @@ import scala.scalajs.js.annotation._
 trait OnsSpeedDialElement
   extends stdLib.HTMLElement {
   /**
-       * @description Whether the element is disabled or not.
-       */
+    * @description Whether the element is disabled or not.
+    */
   var disabled: scala.Boolean = js.native
   /**
-       * @description Whether the element is inline or not.
-       */
+    * @description Whether the element is inline or not.
+    */
   var `inline`: scala.Boolean = js.native
   /**
-       * @description Whether the element is visible or not.
-       */
+    * @description Whether the element is visible or not.
+    */
   var visible: scala.Boolean = js.native
   /**
-       * @description Hide the speed dial.
-       */
+    * @description Hide the speed dial.
+    */
   def hide(): scala.Unit = js.native
   /**
-       * @description Hide the speed dial items.
-       */
+    * @description Hide the speed dial items.
+    */
   def hideItems(): scala.Unit = js.native
   def isOpen(): js.Any = js.native
   /**
-       * @description Show the speed dial.
-       */
+    * @description Show the speed dial.
+    */
   def show(): scala.Unit = js.native
   /**
-       * @description Show the speed dial items.
-       */
+    * @description Show the speed dial items.
+    */
   def showItems(): scala.Unit = js.native
   /**
-       * @description Toggle visibility.
-       */
+    * @description Toggle visibility.
+    */
   def toggle(): scala.Unit = js.native
   /**
-       * @description Toggle item visibility.
-       */
+    * @description Toggle item visibility.
+    */
   def toggleItems(): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StandardGridsterItem extends js.Object {
   // starting column where the item will be placed
   var col: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TreeListColumn extends js.Object {
   var attributes: js.UndefOr[js.Any] = js.undefined
   var columns: js.UndefOr[js.Any] = js.undefined

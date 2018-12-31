@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnReorderEndEvent extends js.Object {
   /** the column after the new location of this one */
   var columnAfter: js.UndefOr[java.lang.String] = js.undefined

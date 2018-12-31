@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SyncOpts extends Opts {
   /** function to synchronously test whether a file exists */
   var isFile: js.UndefOr[js.Function1[/* file */ java.lang.String, scala.Boolean]] = js.undefined

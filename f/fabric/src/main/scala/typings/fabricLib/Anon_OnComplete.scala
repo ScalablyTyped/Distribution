@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnComplete extends js.Object {
   /** @default "GET" */
   var method: js.UndefOr[java.lang.String] = js.undefined

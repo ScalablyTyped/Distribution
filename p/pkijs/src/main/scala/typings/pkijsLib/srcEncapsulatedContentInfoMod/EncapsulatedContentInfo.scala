@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EncapsulatedContentInfo extends js.Object {
   var eContent: asn1jsLib.asn1jsMod.OctetString
   var eContentType: java.lang.String

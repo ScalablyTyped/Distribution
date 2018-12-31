@@ -16,48 +16,48 @@ class PivotClient protected () extends Widget {
   @JSName("model")
   var model_PivotClient: ejDotWebDotAllLib.ejNs.PivotClientNs.Model = js.native
   /** Performs an asynchronous HTTP (AJAX) request.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def doAjaxPost(): scala.Unit = js.native
   /** Performs an asynchronous HTTP (full post) submit.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def doPostBack(): scala.Unit = js.native
   /** Renders the pivot chart and the pivot grid with the provided JSON data.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def generateJSON(): scala.Unit = js.native
   /** Returns the control tab string that displays currently in the pivot client.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def getActiveTab(): scala.Unit = js.native
   /** Returns the formed JSON records to render the control.
-           * @returns {any[]}
-           */
+    * @returns {any[]}
+    */
   def getJSONRecords(): js.Array[_] = js.native
   /** Returns the OLAP report string that is maintained along with the axis elements information.
-           * @returns {string}
-           */
+    * @returns {string}
+    */
   def getOlapReport(): java.lang.String = js.native
   /** Re-renders the control with the report at that instant.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def refreshControl(): scala.Unit = js.native
   /** Navigates to a specified page in the specified axis.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def refreshPagedPivotClient(): scala.Unit = js.native
   /** Updates the pivot client component with the JSON data that is fetched from the service while navigating between the pages.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def refreshPagedPivotClientSuccess(): scala.Unit = js.native
   /** Sets the formed JSON records to render the control to a property.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def setJSONRecords(): scala.Unit = js.native
   /** Sets the OLAP report string along with the axis information and maintains it in a property.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def setOlapReport(): scala.Unit = js.native
 }
 

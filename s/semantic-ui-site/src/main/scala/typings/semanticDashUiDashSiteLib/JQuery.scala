@@ -19,12 +19,12 @@ trait JQuery extends js.Object {
     value: semanticDashUiDashSiteLib.SemanticUINs.SiteSettings
   ): JQuery = js.native
   @JSName("site")
-  def site_setting[K /* <: java.lang.String */](behavior: semanticDashUiDashSiteLib.semanticDashUiDashSiteLibStrings.setting, name: K): js.Any = js.native
+  def site_setting[K /* <: java.lang.String */](behavior: semanticDashUiDashSiteLib.semanticDashUiDashSiteLibStrings.setting, name: K): /* import warning: ImportType.apply Failed type conversion: semantic-ui-site.SemanticUI.SiteSettings._Impl[K] */ js.Any = js.native
   @JSName("site")
   def site_setting[K /* <: java.lang.String */](
     behavior: semanticDashUiDashSiteLib.semanticDashUiDashSiteLibStrings.setting,
     name: K,
-    value: js.Any
+    value: /* import warning: ImportType.apply Failed type conversion: semantic-ui-site.SemanticUI.SiteSettings._Impl[K] */ js.Any
   ): JQuery = js.native
 }
 

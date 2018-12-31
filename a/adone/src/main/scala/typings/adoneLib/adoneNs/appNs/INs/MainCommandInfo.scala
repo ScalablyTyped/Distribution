@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MainCommandInfo extends js.Object {
   var arguments: js.UndefOr[js.Array[ArgumentInfo | java.lang.String]] = js.undefined
   var blindMode: js.UndefOr[scala.Boolean] = js.undefined

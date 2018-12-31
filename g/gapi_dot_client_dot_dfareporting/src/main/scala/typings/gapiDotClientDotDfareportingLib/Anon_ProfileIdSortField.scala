@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ProfileIdSortField extends js.Object {
   /** Select only active accounts. Don't set this field to select both active and non-active accounts. */
   var active: js.UndefOr[scala.Boolean] = js.undefined
@@ -28,15 +27,15 @@ trait Anon_ProfileIdSortField extends js.Object {
   /** User profile ID associated with this request. */
   var profileId: java.lang.String
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Allows searching for objects by name or ID. Wildcards (&#42;) are allowed. For example, "account&#42;2015" will return objects with names like "account June
-                   * 2015", "account April 2015", or simply "account 2015". Most of the searches also add wildcards implicitly at the start and the end of the search
-                   * string. For example, a search string of "account" will match objects with name "my account", "account 2015", or simply "account".
-                   */
+    * Allows searching for objects by name or ID. Wildcards (&#42;) are allowed. For example, "account&#42;2015" will return objects with names like "account June
+    * 2015", "account April 2015", or simply "account 2015". Most of the searches also add wildcards implicitly at the start and the end of the search
+    * string. For example, a search string of "account" will match objects with name "my account", "account 2015", or simply "account".
+    */
   var searchString: js.UndefOr[java.lang.String] = js.undefined
   /** Field by which to sort the list. */
   var sortField: js.UndefOr[java.lang.String] = js.undefined

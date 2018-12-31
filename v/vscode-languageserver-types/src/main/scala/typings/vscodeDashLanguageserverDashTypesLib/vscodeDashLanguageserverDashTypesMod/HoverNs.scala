@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object HoverNs extends js.Object {
   /**
-       * Checks whether the given value conforms to the [Hover](#Hover) interface.
-       */
-  def is(value: js.Any): /* is Hover */scala.Boolean = js.native
+    * Checks whether the given value conforms to the [Hover](#Hover) interface.
+    */
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Hover */ scala.Boolean = js.native
 }
 

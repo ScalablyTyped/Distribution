@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait colors extends js.Object {
   var black: jsgraphLib.jsgraphLibNumbers.`2`
   var gray: jsgraphLib.jsgraphLibNumbers.`1`

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableRow extends js.Object {
   def getCell(cellIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): TableCell
   def getIndex(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CodemirrorOptions extends js.Object {
   var htmlNode: js.UndefOr[scala.Boolean] = js.undefined
   var lineNumbers: js.UndefOr[scala.Boolean] = js.undefined

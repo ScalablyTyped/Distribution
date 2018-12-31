@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_XLARGE extends js.Object {
   var ALL: reactDashFoundationLib.enumsMod.ExtendedBreakpoints
   var LARGE: reactDashFoundationLib.enumsMod.ExtendedBreakpoints

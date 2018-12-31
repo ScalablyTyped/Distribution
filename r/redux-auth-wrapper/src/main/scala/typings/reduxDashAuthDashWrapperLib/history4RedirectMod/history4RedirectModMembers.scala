@@ -14,7 +14,7 @@ object history4RedirectModMembers extends js.Object {
   def connectedRouterRedirect[OwnProps, State](
     config: reduxDashAuthDashWrapperLib.history3RedirectMod.ConnectedRouterRedirectConfig[OwnProps, State]
   ): reduxDashAuthDashWrapperLib.reduxDashAuthDashWrapperMod.AuthWrapperDecorator[
-    OwnProps with (reduxDashAuthDashWrapperLib.history3RedirectMod.InjectedAuthRouterProps[js.Function1[/* repeated */_, reduxLib.reduxMod.Action[_]]])
+    OwnProps with (reduxDashAuthDashWrapperLib.history3RedirectMod.InjectedAuthRouterProps[js.Function1[/* repeated */ _, reduxLib.reduxMod.Action[_]]])
   ] = js.native
 }
 

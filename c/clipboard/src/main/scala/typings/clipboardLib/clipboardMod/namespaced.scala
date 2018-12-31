@@ -20,8 +20,8 @@ class namespaced protected () extends ClipboardJS {
 @js.native
 object namespaced extends js.Object {
   /**
-       * Checks if clipboard.js is supported
-       */
+    * Checks if clipboard.js is supported
+    */
   def isSupported(): scala.Boolean = js.native
 }
 

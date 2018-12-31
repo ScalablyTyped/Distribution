@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NewOptions extends js.Object {
   /*
   	     * @type List of mixed string or Adaptor

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServicePattern extends BlockPattern {
   var name: Term
   var silent: scala.Boolean

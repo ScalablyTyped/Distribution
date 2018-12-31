@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpreadsheetOptions extends js.Object {
   var activeSheet: js.UndefOr[java.lang.String] = js.undefined
   var change: js.UndefOr[js.Function1[/* e */ SpreadsheetChangeEvent, scala.Unit]] = js.undefined

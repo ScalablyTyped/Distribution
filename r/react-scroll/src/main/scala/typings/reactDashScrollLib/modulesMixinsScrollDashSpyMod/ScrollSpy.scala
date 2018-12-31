@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScrollSpy extends js.Object {
   var scrollSpyContainers: js.Array[_]
   var spyCallbacks: js.Array[_]

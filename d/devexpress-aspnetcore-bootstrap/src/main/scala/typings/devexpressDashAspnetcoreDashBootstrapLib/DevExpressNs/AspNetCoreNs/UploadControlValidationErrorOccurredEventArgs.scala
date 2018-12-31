@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadControlValidationErrorOccurredEventArgs extends EventArgs {
   var errorText: java.lang.String
   val invalidFiles: js.Array[BootstrapUploadControlInvalidFileInfo]

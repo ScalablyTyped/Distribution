@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Package
   extends /* k */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var author: js.UndefOr[Person] = js.undefined

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Provides access to the high contrast accessibility settings. */
 @JSGlobal("Windows.UI.ViewManagement.AccessibilitySettings")
 @js.native
+/** Initializes a new AccessibilitySettings object. */
 class AccessibilitySettings () extends js.Object {
   /** Gets a value that indicates whether the system high contrast feature is on or off. */
   var highContrast: scala.Boolean = js.native

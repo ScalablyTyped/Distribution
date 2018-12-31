@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReadinessCheck extends js.Object {
   /**
-               * A maximum time limit on application initialization, measured from moment the application successfully replies to a healthcheck until it is ready to
-               * serve traffic.
-               */
+    * A maximum time limit on application initialization, measured from moment the application successfully replies to a healthcheck until it is ready to
+    * serve traffic.
+    */
   var appStartTimeout: js.UndefOr[java.lang.String] = js.undefined
   /** Interval between health checks. */
   var checkInterval: js.UndefOr[java.lang.String] = js.undefined

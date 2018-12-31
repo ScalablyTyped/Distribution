@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeploymentApprovalPendingEvent extends js.Object {
   var approval: ReleaseApproval
   var approvalOptions: ApprovalOptions

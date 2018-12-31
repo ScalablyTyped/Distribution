@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataGroupOptions extends js.Object {
   var drawPoints: js.UndefOr[Graph2dDrawPointsOption | js.Function0[scala.Unit]] = js.undefined
    // TODO

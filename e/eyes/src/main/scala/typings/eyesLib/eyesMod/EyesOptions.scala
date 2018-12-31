@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EyesOptions extends js.Object {
   /** Don't output functions at all */
   var hideFunctions: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MentionsInputProps extends js.Object {
   /**
-       * If set to `true` spaces will not interrupt matching suggestions
-       */
+    * If set to `true` spaces will not interrupt matching suggestions
+    */
   var allowSpaceInQuery: js.UndefOr[scala.Boolean] = js.undefined
   var children: reactLib.reactMod.ReactNs.ReactElement[MentionProps] | js.Array[reactLib.reactMod.ReactNs.ReactElement[MentionProps]]
   var className: js.UndefOr[java.lang.String] = js.undefined
@@ -35,9 +34,9 @@ trait MentionsInputProps extends js.Object {
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var regex: js.UndefOr[stdLib.RegExp] = js.undefined
   /**
-       * If set to `true` a regular text input element will be rendered
-       * instead of a textarea
-       */
+    * If set to `true` a regular text input element will be rendered
+    * instead of a textarea
+    */
   var singleLine: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[js.Any] = js.undefined
   var suggestionsPortalHost: js.UndefOr[reactLib.Element] = js.undefined

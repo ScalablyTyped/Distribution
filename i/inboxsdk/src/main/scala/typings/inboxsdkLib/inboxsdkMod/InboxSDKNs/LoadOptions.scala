@@ -13,7 +13,6 @@ import scala.scalajs.js.annotation._
 //   error: () => any;
 //   event: () => any;
 // };
-
 trait LoadOptions extends js.Object {
   var appIconUrl: js.UndefOr[java.lang.String] = js.undefined
   var appName: js.UndefOr[java.lang.String] = js.undefined

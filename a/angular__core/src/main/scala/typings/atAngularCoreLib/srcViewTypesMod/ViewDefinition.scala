@@ -15,15 +15,15 @@ trait ViewDefinition extends Definition[ViewDefinitionFactory] {
   /** aggregated NodeFlags for all nodes **/
   var nodeFlags: NodeFlags = js.native
   /**
-       * Binary or of all query ids that are matched by one of the nodes.
-       * This includes query ids from templates as well.
-       * Used as a bloom filter.
-       */
+    * Binary or of all query ids that are matched by one of the nodes.
+    * This includes query ids from templates as well.
+    * Used as a bloom filter.
+    */
   var nodeMatchedQueries: scala.Double = js.native
   /**
-       * Order: Depth first.
-       * Especially providers are before elements / anchors.
-       */
+    * Order: Depth first.
+    * Especially providers are before elements / anchors.
+    */
   var nodes: js.Array[NodeDef] = js.native
   var outputCount: scala.Double = js.native
   var rootNodeFlags: NodeFlags = js.native

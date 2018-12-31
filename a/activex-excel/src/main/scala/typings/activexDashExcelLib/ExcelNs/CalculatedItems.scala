@@ -14,12 +14,9 @@ trait CalculatedItems extends js.Object {
   def apply(Field: java.lang.String): PivotItem = js.native
   def apply(Field: scala.Double): PivotItem = js.native
   /**
-           * @param UseStandardFormula [UseStandardFormula=false]
-           */
+    * @param UseStandardFormula [UseStandardFormula=false]
+    */
   def Add(Name: java.lang.String, Formula: java.lang.String): PivotItem = js.native
-  /**
-           * @param UseStandardFormula [UseStandardFormula=false]
-           */
   def Add(Name: java.lang.String, Formula: java.lang.String, UseStandardFormula: scala.Boolean): PivotItem = js.native
   def Item(Index: java.lang.String): PivotItem = js.native
   def Item(Index: scala.Double): PivotItem = js.native

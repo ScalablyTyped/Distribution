@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VirtualOptions extends js.Object {
   var cache: js.UndefOr[scala.Boolean] = js.undefined
   var renderExternal: js.UndefOr[js.Function1[/* data */ js.Any, _]] = js.undefined

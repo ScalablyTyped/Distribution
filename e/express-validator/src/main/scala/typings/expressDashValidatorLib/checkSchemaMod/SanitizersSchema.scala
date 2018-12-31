@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SanitizersSchema extends js.Object {
   var blacklist: js.UndefOr[SanitizerSchemaOptions[_]] = js.undefined
   var escape: js.UndefOr[expressDashValidatorLib.expressDashValidatorLibNumbers.`true`] = js.undefined

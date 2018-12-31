@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICachedFileUpdaterStatics extends js.Object {
   def setUpdateInformation(
     file: winrtLib.WindowsNs.StorageNs.IStorageFile,

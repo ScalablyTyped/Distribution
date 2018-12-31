@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AcceptableLatencyMS extends js.Object {
   var acceptableLatencyMS: js.UndefOr[scala.Double] = js.undefined
   var authSource: js.UndefOr[java.lang.String] = js.undefined

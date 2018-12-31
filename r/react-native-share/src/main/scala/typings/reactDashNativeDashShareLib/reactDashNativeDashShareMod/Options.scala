@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   var excludedActivityTypes: js.UndefOr[java.lang.String] = js.undefined
   var failOnCancel: js.UndefOr[scala.Boolean] = js.undefined

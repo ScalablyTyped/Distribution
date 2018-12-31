@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Instance extends js.Object {
   var events: Events[_]
   var incomingWebhooks: IncomingWebhooks[_]

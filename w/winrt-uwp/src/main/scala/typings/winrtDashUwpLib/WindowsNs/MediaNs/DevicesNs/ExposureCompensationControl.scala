@@ -20,10 +20,10 @@ abstract class ExposureCompensationControl () extends js.Object {
   /** Gets the exposure compensation level. */
   var value: scala.Double = js.native
   /**
-                   * Asynchronously sets the exposure compensation.
-                   * @param value The exposure compensation level to set the Value property to. The minimum and maximum values are specified by Min and Max .
-                   * @return The object that is used to control the asynchronous operation.
-                   */
+    * Asynchronously sets the exposure compensation.
+    * @param value The exposure compensation level to set the Value property to. The minimum and maximum values are specified by Min and Max .
+    * @return The object that is used to control the asynchronous operation.
+    */
   def setValueAsync(value: scala.Double): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 

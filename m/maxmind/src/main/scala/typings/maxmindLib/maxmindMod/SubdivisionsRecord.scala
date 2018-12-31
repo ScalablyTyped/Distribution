@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SubdivisionsRecord extends js.Object {
   val confidence: js.UndefOr[scala.Double] = js.undefined
   val geoname_id: scala.Double

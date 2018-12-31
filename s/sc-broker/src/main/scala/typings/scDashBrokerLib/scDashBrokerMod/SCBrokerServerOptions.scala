@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SCBrokerServerOptions extends js.Object {
   var brokerControllerPath: js.UndefOr[java.lang.String] = js.undefined
   var brokerOptions: js.UndefOr[scDashBrokerLib.scbrokerMod.SCBrokerNs.SCBrokerOptions] = js.undefined

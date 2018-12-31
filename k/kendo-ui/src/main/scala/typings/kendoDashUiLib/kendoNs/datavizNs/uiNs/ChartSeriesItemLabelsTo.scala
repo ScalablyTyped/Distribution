@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartSeriesItemLabelsTo extends js.Object {
   var background: js.UndefOr[java.lang.String | js.Function] = js.undefined
   var border: js.UndefOr[ChartSeriesItemLabelsToBorder] = js.undefined

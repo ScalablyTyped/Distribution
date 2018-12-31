@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GlideSession extends js.Object {
   def getClientData(paramName: java.lang.String): java.lang.String
   def getClientIP(): java.lang.String

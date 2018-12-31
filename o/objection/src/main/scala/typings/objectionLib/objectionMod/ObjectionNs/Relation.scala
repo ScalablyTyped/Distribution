@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Relation extends js.Object {
   var joinModelClass: ModelClass[_]
   var joinTable: java.lang.String

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 			 * Provides support for the built-in iOS dynamic animations
 			 */
-
 trait Animator
   extends titaniumLib.TitaniumNs.Proxy {
   /**

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AudioDeviceInfo extends js.Object {
   /** Device name. */
   var deviceName: java.lang.String

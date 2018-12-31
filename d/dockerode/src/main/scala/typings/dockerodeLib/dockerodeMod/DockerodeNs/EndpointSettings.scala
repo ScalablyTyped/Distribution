@@ -6,8 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* tslint:enable:interface-name */
-
-
 trait EndpointSettings extends js.Object {
   var Aliases: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var DriverOpts: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined

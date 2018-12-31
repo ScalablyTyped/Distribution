@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SearchOptions extends js.Object {
   var colorType: js.UndefOr[SearchColorType] = js.undefined
   var dominantColor: js.UndefOr[SearchDominantColor] = js.undefined

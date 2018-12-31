@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HoldsResource extends js.Object {
   var accounts: AccountsResource
   /** Creates a hold in the given matter. */
@@ -15,15 +14,15 @@ trait HoldsResource extends js.Object {
   /** Gets a hold by ID. */
   def get(request: gapiDotClientDotVaultLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Hold]
   /**
-               * Lists holds within a matter. An empty page token in ListHoldsResponse
-               * denotes no more holds to list.
-               */
+    * Lists holds within a matter. An empty page token in ListHoldsResponse
+    * denotes no more holds to list.
+    */
   def list(request: gapiDotClientDotVaultLib.Anon_AccesstokenPageSize): gapiDotClientLib.gapiNs.clientNs.Request[ListHoldsResponse]
   /**
-               * Updates the OU and/or query parameters of a hold. You cannot add accounts
-               * to a hold that covers an OU, nor can you add OUs to a hold that covers
-               * individual accounts. Accounts listed in the hold will be ignored.
-               */
+    * Updates the OU and/or query parameters of a hold. You cannot add accounts
+    * to a hold that covers an OU, nor can you add OUs to a hold that covers
+    * individual accounts. Accounts listed in the hold will be ignored.
+    */
   def update(request: gapiDotClientDotVaultLib.Anon_AccesstokenPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Hold]
 }
 

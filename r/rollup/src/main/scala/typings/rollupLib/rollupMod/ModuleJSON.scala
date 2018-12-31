@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ModuleJSON extends js.Object {
   var ast: estreeLib.estreeMod.Program
   var code: java.lang.String

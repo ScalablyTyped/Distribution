@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPointerPoint extends js.Object {
   var frameId: scala.Double
   var isInContact: scala.Boolean

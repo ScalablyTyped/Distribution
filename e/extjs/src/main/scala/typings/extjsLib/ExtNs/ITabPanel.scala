@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITabPanel
   extends extjsLib.ExtNs.panelNs.IPanel {
   /** [Config Option] (String/Number/Ext.Component) */

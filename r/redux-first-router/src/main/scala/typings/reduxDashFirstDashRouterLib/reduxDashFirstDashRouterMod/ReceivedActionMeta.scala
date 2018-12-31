@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReceivedActionMeta extends js.Object {
   var meta: reduxDashFirstDashRouterLib.Anon_NotFoundPath
   var navKey: js.UndefOr[Nullable[java.lang.String]] = js.undefined

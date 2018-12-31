@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataEvent extends js.Object {
   var command: java.lang.String
   var params: java.lang.String

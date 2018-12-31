@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * An object that represents a single alert for an event in an calendar.
 		 */
-
 trait Alert
   extends titaniumLib.TitaniumNs.Proxy {
   /**

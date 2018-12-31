@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPoint
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Copy a new instance of this point

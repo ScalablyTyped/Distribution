@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CaptionPanel extends js.Object {
   def add(widget: Widget): CaptionPanel
   def addStyleDependentName(styleName: java.lang.String): CaptionPanel

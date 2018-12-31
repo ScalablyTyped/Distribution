@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait SOD extends js.Object {
-  def delayUntilEventNotified(func: js.Function1[/* repeated */js.Any, scala.Unit], eventName: java.lang.String): scala.Unit = js.native
+  def delayUntilEventNotified(func: js.Function1[/* repeated */ js.Any, scala.Unit], eventName: java.lang.String): scala.Unit = js.native
   def execute(fileName: java.lang.String, functionName: java.lang.String, args: js.Any*): scala.Unit = js.native
   def executeFunc(fileName: java.lang.String, typeName: java.lang.String, fn: js.Function0[scala.Unit]): scala.Unit = js.native
-  def executeOrDelayUntilEventNotified(func: js.Function1[/* repeated */js.Any, scala.Unit], eventName: java.lang.String): scala.Boolean = js.native
+  def executeOrDelayUntilEventNotified(func: js.Function1[/* repeated */ js.Any, scala.Unit], eventName: java.lang.String): scala.Boolean = js.native
   def executeOrDelayUntilScriptLoaded(func: js.Function0[scala.Unit], depScriptFileName: java.lang.String): scala.Boolean = js.native
   def get_prefetch(): scala.Boolean = js.native
   def get_ribbonImagePrefetchEnabled(): scala.Boolean = js.native

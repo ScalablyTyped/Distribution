@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Device extends js.Object {
   /** Claims. */
   var claims: js.UndefOr[js.Array[DeviceClaim]] = js.undefined
   /**
-               * The resource name of the configuration.
-               * Only set for customers.
-               */
+    * The resource name of the configuration.
+    * Only set for customers.
+    */
   var configuration: js.UndefOr[java.lang.String] = js.undefined
   /** Device ID. */
   var deviceId: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Modal extends js.Object {
   var button: js.UndefOr[java.lang.String] = js.undefined
   var expose: js.UndefOr[java.lang.String] = js.undefined

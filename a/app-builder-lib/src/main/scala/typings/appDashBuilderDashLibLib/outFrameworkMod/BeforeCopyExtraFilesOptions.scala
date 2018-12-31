@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BeforeCopyExtraFilesOptions extends js.Object {
   var appOutDir: java.lang.String
   var asarIntegrity: appDashBuilderDashLibLib.outAsarIntegrityMod.AsarIntegrity | scala.Null
-  var packager: js.Any
+  var packager: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify PlatformPackager<any> */ js.Any
   var platformName: java.lang.String
 }
 

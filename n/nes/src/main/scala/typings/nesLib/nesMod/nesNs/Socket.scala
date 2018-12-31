@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Socket extends js.Object {
   var app: js.Object
   var auth: SocketAuthObject

@@ -6,16 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-        * Provides the script API to make a Web request.
-        * @see {@link http://msdn.microsoft.com/en-us/library/bb310979(v=vs.100).aspx}
-        */
+  * Provides the script API to make a Web request.
+  * @see {@link http://msdn.microsoft.com/en-us/library/bb310979(v=vs.100).aspx}
+  */
 @JSGlobal("Sys.Net.WebRequest")
 @js.native
+//#region Constructors
+/**
+  * Initializes a new instance of the Sys.Net.WebRequest class.
+  */
 class WebRequest () extends js.Object {
   /**
-              * Registers a handler for the completed request event of the Web request.
-              * @see {@link http://msdn.microsoft.com/en-us/library/bb310841(v=vs.100).aspx}
-              */
+    * Registers a handler for the completed request event of the Web request.
+    * @see {@link http://msdn.microsoft.com/en-us/library/bb310841(v=vs.100).aspx}
+    */
   def add_completed(
     handler: js.Function2[
       /* reference */ js.Any, 
@@ -24,15 +28,15 @@ class WebRequest () extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-              * Raises the completed event for the associated Sys.Net.WebRequest instance.
-              * @param eventArgs
-              *           The value to pass to the Web request completed event handler.
-              */
+    * Raises the completed event for the associated Sys.Net.WebRequest instance.
+    * @param eventArgs
+    *           The value to pass to the Web request completed event handler.
+    */
   def completed(eventArgs: microsoftDashAjaxLib.SysNs.EventArgs): scala.Unit = js.native
   /**
-              * Gets the resolved URL of the Sys.Net.WebRequest instance.
-              * @returns The resolved URL that the Web request is directed to.
-              */
+    * Gets the resolved URL of the Sys.Net.WebRequest instance.
+    * @returns The resolved URL that the Web request is directed to.
+    */
   def getResolvedUrl(): java.lang.String = js.native
   def get_body(): java.lang.String = js.native
   def get_executor(): WebRequestExecutor = js.native
@@ -44,13 +48,13 @@ class WebRequest () extends js.Object {
   def get_url(): java.lang.String = js.native
   def get_userContext(): js.Any = js.native
   /**
-              * Executes a Web request.
-              */
+    * Executes a Web request.
+    */
   def invoke(): scala.Unit = js.native
   /**
-              * Removes the event handler added by the add_completed method.
-              * @see {@link http://msdn.microsoft.com/en-us/library/bb397454(v=vs.100).aspx}
-              */
+    * Removes the event handler added by the add_completed method.
+    * @see {@link http://msdn.microsoft.com/en-us/library/bb397454(v=vs.100).aspx}
+    */
   def remove_completed(
     handler: js.Function2[
       /* reference */ js.Any, 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICheckbox
   extends extjsLib.ExtNs.formNs.fieldNs.IBase {
   /** [Config Option] (String/Array/Ext.XTemplate) */

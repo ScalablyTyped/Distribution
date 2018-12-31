@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait imageAuditResponse extends js.Object {
    // 请求唯一id
   var conclusion: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPanorama extends js.Object {
   def getAngularBBox(): js.Array[scala.Double]
   def getConnectionArrows(): js.Array[IPanoramaConnectionArrow]

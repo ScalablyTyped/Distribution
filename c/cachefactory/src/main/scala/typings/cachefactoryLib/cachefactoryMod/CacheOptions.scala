@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CacheOptions extends js.Object {
   var cacheFlushInterval: js.UndefOr[scala.Double] = js.undefined
   var capacity: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MaximumDistance extends js.Object {
   var cascadesEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var darkness: js.UndefOr[scala.Double] = js.undefined

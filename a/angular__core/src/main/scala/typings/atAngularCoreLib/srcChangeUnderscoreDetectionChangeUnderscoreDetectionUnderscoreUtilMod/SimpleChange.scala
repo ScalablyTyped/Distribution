@@ -13,8 +13,8 @@ class SimpleChange protected () extends js.Object {
   var firstChange: scala.Boolean = js.native
   var previousValue: js.Any = js.native
   /**
-       * Check whether the new value is the first value assigned.
-       */
+    * Check whether the new value is the first value assigned.
+    */
   def isFirstChange(): scala.Boolean = js.native
 }
 

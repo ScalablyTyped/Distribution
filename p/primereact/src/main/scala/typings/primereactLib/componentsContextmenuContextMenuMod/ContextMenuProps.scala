@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContextMenuProps extends js.Object {
   var appendTo: js.UndefOr[js.Any] = js.undefined
   var autoZIndex: js.UndefOr[scala.Boolean] = js.undefined

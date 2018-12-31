@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CallbackObject extends js.Object {
   var close: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var open: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

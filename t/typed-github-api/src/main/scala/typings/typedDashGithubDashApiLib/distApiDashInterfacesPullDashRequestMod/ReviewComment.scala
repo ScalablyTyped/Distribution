@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReviewComment
   extends typedDashGithubDashApiLib.distApiDashInterfacesIssueMod.IssueComment {
   var commit_id: java.lang.String

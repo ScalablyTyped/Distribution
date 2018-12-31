@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait RatingIndicatorVisualMode extends js.Object
 
 /**
-     * Possible values for the visualization of float values in the RatingIndicator Control.
-    */
+  * Possible values for the visualization of float values in the RatingIndicator Control.
+  */
 @JSGlobal("sap.m.RatingIndicatorVisualMode")
 @js.native
 object RatingIndicatorVisualMode extends js.Object {

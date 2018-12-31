@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PageTabDialogParams extends js.Object {
    // "pagetab"
   var app_id: java.lang.String

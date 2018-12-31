@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BootboxService extends js.Object {
   def addLocale(name: java.lang.String, values: bootboxLib.BootboxLocaleValues): scala.Unit
   def alert(msg: java.lang.String): js.Promise[_]

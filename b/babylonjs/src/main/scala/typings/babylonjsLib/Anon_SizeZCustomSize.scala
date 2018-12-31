@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SizeZCustomSize extends js.Object {
   var backUVs: js.UndefOr[babylonjsLib.BABYLONNs.Vector4] = js.undefined
   var custom: js.UndefOr[js.Any] = js.undefined

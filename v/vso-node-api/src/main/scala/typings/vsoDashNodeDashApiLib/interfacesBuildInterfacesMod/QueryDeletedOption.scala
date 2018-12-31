@@ -12,22 +12,22 @@ sealed trait QueryDeletedOption extends js.Object
 @js.native
 object QueryDeletedOption extends js.Object {
   /**
-       * Include only non-deleted builds.
-       */
+    * Include only non-deleted builds.
+    */
   @js.native
   sealed trait ExcludeDeleted
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.QueryDeletedOption
   
   /**
-       * Include deleted and non-deleted builds.
-       */
+    * Include deleted and non-deleted builds.
+    */
   @js.native
   sealed trait IncludeDeleted
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.QueryDeletedOption
   
   /**
-       * Include only deleted builds.
-       */
+    * Include only deleted builds.
+    */
   @js.native
   sealed trait OnlyDeleted
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.QueryDeletedOption

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents a trigger that is registered to scan for Bluetooth LE advertisement in the background. */
 @JSGlobal("Windows.ApplicationModel.Background.BluetoothLEAdvertisementWatcherTrigger")
 @js.native
+/** Creates a new instance of the BluetoothLEAdvertisementWatcherTrigger class. */
 class BluetoothLEAdvertisementWatcherTrigger () extends js.Object {
   /** Gets or sets the configuration of Bluetooth LE advertisement filtering that uses payload section-based filtering. */
   var advertisementFilter: winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.AdvertisementNs.BluetoothLEAdvertisementFilter = js.native

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("inversify-restify-utils/dts/server", "InversifyRestifyServer")
 @js.native
 class InversifyRestifyServer protected () extends js.Object {
-  def this(container: js.Any) = this()
-  def this(container: js.Any, opts: restifyLib.restifyMod.ServerOptions with inversifyDashRestifyDashUtilsLib.dtsInterfacesMod.interfacesNs.ServerOptions) = this()
+  def this(container: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify inversify.interfaces.Container */ js.Any) = this()
+  def this(container: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify inversify.interfaces.Container */ js.Any, opts: restifyLib.restifyMod.ServerOptions with inversifyDashRestifyDashUtilsLib.dtsInterfacesMod.interfacesNs.ServerOptions) = this()
   var app: js.Any = js.native
   var configFn: js.Any = js.native
   var container: js.Any = js.native
@@ -18,7 +18,7 @@ class InversifyRestifyServer protected () extends js.Object {
   /* private */ def handlerFactory(controllerName: js.Any, key: js.Any): js.Any = js.native
   /* private */ def registerControllers(): js.Any = js.native
   /* private */ def resolveMiddleware(
-    /* import warning: Dropping repeated marker of param TsIdentSimple(middleware) because its type None is not an array type */middleware: js.Any
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param middleware because its type <none> is not an array type */ middleware: js.Any
   ): js.Any = js.native
   def setConfig(fn: inversifyDashRestifyDashUtilsLib.dtsInterfacesMod.interfacesNs.ConfigFunction): InversifyRestifyServer = js.native
 }

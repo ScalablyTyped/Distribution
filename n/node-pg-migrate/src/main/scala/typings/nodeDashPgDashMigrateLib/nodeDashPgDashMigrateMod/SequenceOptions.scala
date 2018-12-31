@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SequenceOptions extends js.Object {
   var cache: js.UndefOr[scala.Double] = js.undefined
   var cycle: js.UndefOr[scala.Boolean] = js.undefined

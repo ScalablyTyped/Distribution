@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlashText extends js.Object {
   var accName: java.lang.String
   var antiAliasSharpness: scala.Double

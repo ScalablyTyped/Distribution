@@ -369,9 +369,7 @@ class PivotTable protected () extends js.Object {
   def PivotFormulas(Index: scala.Double): PivotFormula = js.native
   /** @param Mode [Mode=0] */
   def PivotSelect(Name: java.lang.String): scala.Unit = js.native
-  /** @param Mode [Mode=0] */
   def PivotSelect(Name: java.lang.String, Mode: XlPTSelectionMode): scala.Unit = js.native
-  /** @param Mode [Mode=0] */
   def PivotSelect(Name: java.lang.String, Mode: XlPTSelectionMode, UseStandardName: scala.Boolean): scala.Unit = js.native
   def PivotTableWizard(): scala.Unit = js.native
   def PivotTableWizard[TSourceType](
@@ -419,7 +417,6 @@ class PivotTable protected () extends js.Object {
   def VisibleFields(Index: scala.Double): PivotField = js.native
   /** @param Mode [Mode=0] */
   def _PivotSelect(Name: java.lang.String): scala.Unit = js.native
-  /** @param Mode [Mode=0] */
   def _PivotSelect(Name: java.lang.String, Mode: XlPTSelectionMode): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TopologyConfig extends js.Object {
   /** The computations associated with a streaming Dataflow job. */
   var computations: js.UndefOr[js.Array[ComputationTopology]] = js.undefined

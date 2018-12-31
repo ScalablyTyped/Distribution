@@ -9,10 +9,10 @@ import scala.scalajs.js.annotation._
 // #region Runnable untyped events
 // #region Runnable "error" event
 /**
-     * Initialize a new `Runnable` with the given `title` and callback `fn`.
-     *
-     * @see https://mochajs.org/api/Runnable.html
-     */
+  * Initialize a new `Runnable` with the given `title` and callback `fn`.
+  *
+  * @see https://mochajs.org/api/Runnable.html
+  */
 @JSImport("mocha", "Runnable")
 @js.native
 class Runnable protected ()

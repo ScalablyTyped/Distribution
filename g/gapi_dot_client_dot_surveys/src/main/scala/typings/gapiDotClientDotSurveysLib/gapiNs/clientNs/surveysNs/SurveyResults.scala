@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SurveyResults extends js.Object {
   /** Human readable string describing the status of the request. */
   var status: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IHeaderReorderer
   extends extjsLib.ExtNs.IAbstractPlugin {
   /** [Method] The init method is invoked after initComponent method has been run for the client Component

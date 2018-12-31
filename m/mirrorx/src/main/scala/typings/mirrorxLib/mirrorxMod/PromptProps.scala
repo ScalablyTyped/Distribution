@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PromptProps extends js.Object {
   var message: java.lang.String | (js.Function1[
     /* location */ historyLib.historyMod.Location[historyLib.historyMod.LocationState], 

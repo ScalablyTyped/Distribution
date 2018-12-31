@@ -14,16 +14,16 @@ object clusterModMembers extends js.Object {
   val settings: ClusterSettings = js.native
   val worker: Worker = js.native
   /**
-       * events.EventEmitter
-       *   1. disconnect
-       *   2. exit
-       *   3. fork
-       *   4. listening
-       *   5. message
-       *   6. online
-       *   7. setup
-       */
-  def addListener(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): Cluster = js.native
+    * events.EventEmitter
+    *   1. disconnect
+    *   2. exit
+    *   3. fork
+    *   4. listening
+    *   5. message
+    *   6. online
+    *   7. setup
+    */
+  def addListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): Cluster = js.native
   @JSName("addListener")
   def addListener_disconnect(event: nodeLib.nodeLibStrings.disconnect, listener: js.Function1[/* worker */ Worker, scala.Unit]): Cluster = js.native
   @JSName("addListener")
@@ -94,7 +94,7 @@ object clusterModMembers extends js.Object {
   def getMaxListeners(): scala.Double = js.native
   def listenerCount(`type`: java.lang.String): scala.Double = js.native
   def listeners(event: java.lang.String): js.Array[js.Function] = js.native
-  def on(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): Cluster = js.native
+  def on(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): Cluster = js.native
   @JSName("on")
   def on_disconnect(event: nodeLib.nodeLibStrings.disconnect, listener: js.Function1[/* worker */ Worker, scala.Unit]): Cluster = js.native
   @JSName("on")
@@ -128,7 +128,7 @@ object clusterModMembers extends js.Object {
   def on_online(event: nodeLib.nodeLibStrings.online, listener: js.Function1[/* worker */ Worker, scala.Unit]): Cluster = js.native
   @JSName("on")
   def on_setup(event: nodeLib.nodeLibStrings.setup, listener: js.Function1[/* settings */ js.Any, scala.Unit]): Cluster = js.native
-  def once(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): Cluster = js.native
+  def once(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): Cluster = js.native
   @JSName("once")
   def once_disconnect(event: nodeLib.nodeLibStrings.disconnect, listener: js.Function1[/* worker */ Worker, scala.Unit]): Cluster = js.native
   @JSName("once")
@@ -162,7 +162,7 @@ object clusterModMembers extends js.Object {
   def once_online(event: nodeLib.nodeLibStrings.online, listener: js.Function1[/* worker */ Worker, scala.Unit]): Cluster = js.native
   @JSName("once")
   def once_setup(event: nodeLib.nodeLibStrings.setup, listener: js.Function1[/* settings */ js.Any, scala.Unit]): Cluster = js.native
-  def prependListener(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): Cluster = js.native
+  def prependListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): Cluster = js.native
   @JSName("prependListener")
   def prependListener_disconnect(event: nodeLib.nodeLibStrings.disconnect, listener: js.Function1[/* worker */ Worker, scala.Unit]): Cluster = js.native
   @JSName("prependListener")
@@ -197,7 +197,7 @@ object clusterModMembers extends js.Object {
   def prependListener_online(event: nodeLib.nodeLibStrings.online, listener: js.Function1[/* worker */ Worker, scala.Unit]): Cluster = js.native
   @JSName("prependListener")
   def prependListener_setup(event: nodeLib.nodeLibStrings.setup, listener: js.Function1[/* settings */ js.Any, scala.Unit]): Cluster = js.native
-  def prependOnceListener(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): Cluster = js.native
+  def prependOnceListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): Cluster = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_disconnect(event: nodeLib.nodeLibStrings.disconnect, listener: js.Function1[/* worker */ Worker, scala.Unit]): Cluster = js.native
   @JSName("prependOnceListener")
@@ -234,7 +234,7 @@ object clusterModMembers extends js.Object {
   def prependOnceListener_setup(event: nodeLib.nodeLibStrings.setup, listener: js.Function1[/* settings */ js.Any, scala.Unit]): Cluster = js.native
   def removeAllListeners(): Cluster = js.native
   def removeAllListeners(event: java.lang.String): Cluster = js.native
-  def removeListener(event: java.lang.String, listener: js.Function1[/* repeated */js.Any, scala.Unit]): Cluster = js.native
+  def removeListener(event: java.lang.String, listener: js.Function1[/* repeated */ js.Any, scala.Unit]): Cluster = js.native
   def setMaxListeners(n: scala.Double): Cluster = js.native
   def setupMaster(): scala.Unit = js.native
   def setupMaster(settings: ClusterSettings): scala.Unit = js.native

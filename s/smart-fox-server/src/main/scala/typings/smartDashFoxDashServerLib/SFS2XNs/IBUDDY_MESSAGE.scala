@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBUDDY_MESSAGE extends js.Object {
   var buddy: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSBuddy
   var data: js.Object

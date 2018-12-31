@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILicenseStatus extends js.Object {
   val EvaluationDaysLeft: scala.Double
   val EvaluationMode: scala.Boolean

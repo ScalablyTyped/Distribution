@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RenderedSection extends js.Object {
   var columnOverscanStartIndex: scala.Double
   var columnOverscanStopIndex: scala.Double

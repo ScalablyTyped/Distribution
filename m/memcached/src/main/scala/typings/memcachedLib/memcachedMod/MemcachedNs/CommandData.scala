@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommandData extends js.Object {
   var cas: js.UndefOr[java.lang.String] = js.undefined
   var command: java.lang.String
@@ -15,7 +14,7 @@ trait CommandData extends js.Object {
   var redundancyEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var start: scala.Double
   var `type`: java.lang.String
-  var validate: js.Array[js.Tuple2[java.lang.String, js.Function1[/* repeated */_, _]]]
+  var validate: js.Array[js.Tuple2[java.lang.String, js.Function1[/* repeated */ _, _]]]
   var value: js.UndefOr[js.Any] = js.undefined
   def callback(args: js.Any*): js.Any
 }

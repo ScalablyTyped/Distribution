@@ -16,18 +16,18 @@ abstract class EmailMailboxCapabilities () extends js.Object {
   /** Gets a Boolean value indicating if folders in the mailbox can be emptied. */
   var canEmptyFolder: scala.Boolean = js.native
   var canForwardMeetings: js.Any = js.native
-   /* unmapped type */var canGetAndSetExternalAutoReplies: js.Any = js.native
-   /* unmapped type */var canGetAndSetInternalAutoReplies: js.Any = js.native
-   /* unmapped type *//** Gets a Boolean value indicating if folders in the mailbox can be moved. */
+   /* unmapped type */ var canGetAndSetExternalAutoReplies: js.Any = js.native
+   /* unmapped type */ var canGetAndSetInternalAutoReplies: js.Any = js.native
+   /* unmapped type */ /** Gets a Boolean value indicating if folders in the mailbox can be moved. */
   var canMoveFolder: scala.Boolean = js.native
   var canProposeNewTimeForMeetings: js.Any = js.native
-   /* unmapped type *//** Gets a Boolean value that indicates whether the email mailbox is capable of resolving recipients. */
+   /* unmapped type */ /** Gets a Boolean value that indicates whether the email mailbox is capable of resolving recipients. */
   var canResolveRecipients: scala.Boolean = js.native
   var canServerSearchFolders: js.Any = js.native
-   /* unmapped type */var canServerSearchMailbox: js.Any = js.native
-   /* unmapped type */var canSmartSend: js.Any = js.native
-   /* unmapped type */var canUpdateMeetingResponses: js.Any = js.native
-   /* unmapped type *//** Gets a Boolean value that indicates whether the email mailbox is capable of validating certificates. */
+   /* unmapped type */ var canServerSearchMailbox: js.Any = js.native
+   /* unmapped type */ var canSmartSend: js.Any = js.native
+   /* unmapped type */ var canUpdateMeetingResponses: js.Any = js.native
+   /* unmapped type */ /** Gets a Boolean value that indicates whether the email mailbox is capable of validating certificates. */
   var canValidateCertificates: scala.Boolean = js.native
 }
 

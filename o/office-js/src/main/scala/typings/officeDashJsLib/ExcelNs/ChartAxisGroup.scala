@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait ChartAxisGroup extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.7]
-     */
+  * [Api set: ExcelApi 1.7]
+  */
 @JSGlobal("Excel.ChartAxisGroup")
 @js.native
 object ChartAxisGroup extends js.Object {

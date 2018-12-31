@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SketchMSExportOptions extends js.Object {
   var _class: sketchappLib.sketchappLibStrings.exportOptions
   var do_objectID: js.UndefOr[java.lang.String] = js.undefined

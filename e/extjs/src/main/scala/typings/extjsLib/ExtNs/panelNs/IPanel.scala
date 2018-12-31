@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPanel extends IAbstractPanel {
   /** [Method] Add tools to this panel
   		* @param tools Object[]/Ext.panel.Tool[] The tools to add

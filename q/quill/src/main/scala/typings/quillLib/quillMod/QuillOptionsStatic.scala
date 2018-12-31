@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QuillOptionsStatic extends js.Object {
   var bounds: js.UndefOr[stdLib.HTMLElement | java.lang.String] = js.undefined
   var debug: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined

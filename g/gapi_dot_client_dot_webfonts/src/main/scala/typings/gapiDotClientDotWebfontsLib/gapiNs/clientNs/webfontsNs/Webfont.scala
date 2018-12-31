@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Webfont extends js.Object {
   /** The category of the font. */
   var category: js.UndefOr[java.lang.String] = js.undefined

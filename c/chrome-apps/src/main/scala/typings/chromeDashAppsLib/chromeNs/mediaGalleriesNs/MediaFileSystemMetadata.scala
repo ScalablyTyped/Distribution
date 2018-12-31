@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaFileSystemMetadata extends js.Object {
   /** If the media gallery is on a removable device, a unique id for the device while the device is online. */
   var deviceId: js.UndefOr[java.lang.String] = js.undefined

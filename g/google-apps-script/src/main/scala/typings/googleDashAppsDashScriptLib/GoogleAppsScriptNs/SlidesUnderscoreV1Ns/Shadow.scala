@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Shadow extends js.Object {
   // The alignment point of the shadow, that sets the origin for translate,
   // scale and skew of the shadow.

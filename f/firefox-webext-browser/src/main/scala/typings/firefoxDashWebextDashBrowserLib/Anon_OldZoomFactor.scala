@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OldZoomFactor extends js.Object {
   var newZoomFactor: scala.Double
   var oldZoomFactor: scala.Double

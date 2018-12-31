@@ -12,8 +12,8 @@ trait ComponentDecoratorProps extends js.Object {
   @JSName("getNoDataProps")
   var getNoDataProps_Original: ComponentPropsGetter0 = js.native
   /**
-       * @TODO not exists in react-table but in the docs
-       */
+    * @TODO not exists in react-table but in the docs
+    */
   // getTfootThProps: ComponentPropsGetter
   @JSName("getPaginationProps")
   var getPaginationProps_Original: ComponentPropsGetter0 = js.native
@@ -25,8 +25,8 @@ trait ComponentDecoratorProps extends js.Object {
   @JSName("getTbodyProps")
   var getTbodyProps_Original: ComponentPropsGetter0 = js.native
   /**
-       * @TODO not exists in react-table but in the docs
-       */
+    * @TODO not exists in react-table but in the docs
+    */
   // getThProps: ComponentPropsGetter
   var getTdProps: ComponentPropsGetterRC | ComponentPropsGetterR = js.native
   @JSName("getTfootProps")
@@ -68,14 +68,10 @@ trait ComponentDecoratorProps extends js.Object {
     instance: js.Any
   ): js.UndefOr[js.Object] = js.native
   /**
-       * @TODO not exists in react-table but in the docs
-       */
+    * @TODO not exists in react-table but in the docs
+    */
   // getTfootThProps: ComponentPropsGetter
   def getPaginationProps(finalState: js.Any): js.UndefOr[js.Object] = js.native
-  /**
-       * @TODO not exists in react-table but in the docs
-       */
-  // getTfootThProps: ComponentPropsGetter
   def getPaginationProps(
     finalState: js.Any,
     rowInfo: js.UndefOr[scala.Nothing],

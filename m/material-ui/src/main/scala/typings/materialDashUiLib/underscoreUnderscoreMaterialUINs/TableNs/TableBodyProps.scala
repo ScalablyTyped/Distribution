@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableBodyProps extends js.Object {
   /** @deprecated Instead, use property on Table */
   var allRowsSelected: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,19 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InvalidManifest extends PartialManifest {
   /** Not for packaged apps */
   var browser_action: js.UndefOr[scala.Nothing] = js.undefined
   /**
-               * Not for packaged apps
-               * Only for extensions and legacy packaged apps
-               */
+    * Not for packaged apps
+    * Only for extensions and legacy packaged apps
+    */
   var chrome_url_overrides: js.UndefOr[scala.Nothing] = js.undefined
   /**
-               * Not for packaged apps
-               * Only for extensions and legacy packaged apps
-               */
+    * Not for packaged apps
+    * Only for extensions and legacy packaged apps
+    */
   var content_security_policy: js.UndefOr[scala.Nothing] = js.undefined
   /** Not for packaged apps */
   var options_page: js.UndefOr[scala.Nothing] = js.undefined

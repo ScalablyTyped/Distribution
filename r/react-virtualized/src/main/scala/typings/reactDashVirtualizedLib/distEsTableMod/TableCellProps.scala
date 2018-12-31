@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TableCellProps extends js.Object {
   var cellData: js.UndefOr[js.Any] = js.undefined
   var columnData: js.UndefOr[js.Any] = js.undefined

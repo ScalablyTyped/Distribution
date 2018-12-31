@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LeaderboardConfigurationsResource extends js.Object {
   /** Delete the leaderboard configuration with the given ID. */
   def delete(request: gapiDotClientDotGamesconfigurationLib.Anon_PrettyPrintQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

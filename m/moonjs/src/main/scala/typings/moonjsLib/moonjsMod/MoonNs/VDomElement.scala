@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VDomElement extends js.Object {
   var children: js.Array[VDomElement]
   var meta: js.Object

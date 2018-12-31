@@ -11,10 +11,9 @@ trait Static extends js.Object {
   val HALT: js.Any = js.native
   /** Creates a stream. */
   def apply[T](): Stream[T] = js.native
-  /** Creates a stream. */
   def apply[T](value: T): Stream[T] = js.native
   /** Creates a computed stream that reactively updates if any of its upstreams are updated. */
-  def combine[T](combiner: js.Function1[/* repeated */js.Any, T], streams: js.Array[Stream[_]]): Stream[T] = js.native
+  def combine[T](combiner: js.Function1[/* repeated */ js.Any, T], streams: js.Array[Stream[_]]): Stream[T] = js.native
   /** Creates a stream whose value is the array of values from an array of streams. */
   def merge(streams: js.Array[Stream[_]]): Stream[js.Array[_]] = js.native
   /** Creates a new stream with the results of calling the function on every incoming stream with and accumulator and the incoming value. */

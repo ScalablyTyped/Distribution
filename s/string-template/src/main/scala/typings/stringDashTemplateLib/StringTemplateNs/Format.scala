@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Format
-     */
+  * Format
+  */
 @js.native
 trait Format extends js.Object {
   // Escape {} pairs by using double {{}} 

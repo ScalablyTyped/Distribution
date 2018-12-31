@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Rule extends js.Object {
   var all: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var any: js.UndefOr[js.Array[java.lang.String]] = js.undefined

@@ -20,9 +20,9 @@ abstract class PointerVisualizationSettings () extends js.Object {
 @js.native
 object PointerVisualizationSettings extends js.Object {
   /**
-                   * Gets a PointerVisualizationSettings object associated with the current app.
-                   * @return The PointerVisualizationSettings object associated with the current app.
-                   */
+    * Gets a PointerVisualizationSettings object associated with the current app.
+    * @return The PointerVisualizationSettings object associated with the current app.
+    */
   def getForCurrentView(): winrtDashUwpLib.WindowsNs.UINs.InputNs.PointerVisualizationSettings = js.native
 }
 

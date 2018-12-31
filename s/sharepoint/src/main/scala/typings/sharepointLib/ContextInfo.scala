@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContextInfo
   extends sharepointLib.SPClientTemplatesNs.RenderContext {
   var AllowCreateFolder: scala.Boolean

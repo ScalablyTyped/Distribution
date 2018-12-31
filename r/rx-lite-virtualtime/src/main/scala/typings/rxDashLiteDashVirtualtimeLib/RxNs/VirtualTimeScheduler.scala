@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VirtualTimeScheduler[TAbsolute, TRelative]
   extends rxDashLiteLib.RxNs.IScheduler {
   var isEnabled: scala.Boolean

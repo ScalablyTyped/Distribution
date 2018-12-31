@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("libxslt", JSImport.Namespace)
 @js.native
 object libxsltModMembers extends js.Object {
-  val libxmljs: js.Any = js.native
+  val libxmljs: libxsltLib.Anon_ParseHtmlString = js.native
   def parse(source: java.lang.String): Stylesheet = js.native
   def parse(source: java.lang.String, callback: libxsltLib.internalDashTypesMod.ParseCallback): scala.Unit = js.native
   def parse(source: libxmljsLib.libxmljsMod.Document): Stylesheet = js.native

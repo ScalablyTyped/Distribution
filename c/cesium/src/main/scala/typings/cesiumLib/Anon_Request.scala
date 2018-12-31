@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Request extends js.Object {
   var callbackParameterName: js.UndefOr[java.lang.String] = js.undefined
   var headers: js.UndefOr[js.Any] = js.undefined

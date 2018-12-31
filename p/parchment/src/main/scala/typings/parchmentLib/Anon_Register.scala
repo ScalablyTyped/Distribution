@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Register extends js.Object {
-  var Attributor: Anon_Class
+  var Attributor: Anon_ClassAttribute
   var Block: org.scalablytyped.runtime.Instantiable0[parchmentLib.distSrcBlotBlockMod.default]
   var Container: org.scalablytyped.runtime.Instantiable1[/* domNode */ stdLib.Node, parchmentLib.distSrcBlotAbstractContainerMod.default]
   var Embed: org.scalablytyped.runtime.Instantiable0[parchmentLib.distSrcBlotEmbedMod.default]
   var Format: org.scalablytyped.runtime.Instantiable1[/* domNode */ stdLib.Node, parchmentLib.distSrcBlotAbstractFormatMod.default]
   var Inline: org.scalablytyped.runtime.Instantiable0[parchmentLib.distSrcBlotInlineMod.default]
   var Leaf: org.scalablytyped.runtime.Instantiable0[parchmentLib.distSrcBlotAbstractLeafMod.default]
-  var Scope: js.Any
+  var Scope: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof parchment.parchment/dist/src/registry.Scope */ js.Any
   var Scroll: org.scalablytyped.runtime.Instantiable1[/* node */ stdLib.HTMLDivElement, parchmentLib.distSrcBlotScrollMod.default]
   var Text: org.scalablytyped.runtime.Instantiable1[/* node */ stdLib.Node, parchmentLib.distSrcBlotTextMod.default]
   var create: js.Function2[
@@ -32,6 +31,6 @@ trait Anon_Register extends js.Object {
     /* scope */ js.UndefOr[parchmentLib.distSrcRegistryMod.Scope], 
     parchmentLib.distSrcAttributorAttributorMod.default | parchmentLib.distSrcRegistryMod.BlotConstructor | scala.Null
   ]
-  var register: js.Function1[/* repeated */js.Any, _]
+  var register: js.Function1[/* repeated */ js.Any, _]
 }
 

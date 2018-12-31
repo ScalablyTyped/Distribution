@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPrettyPrint extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -25,9 +24,9 @@ trait Anon_AccesstokenPrettyPrint extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The content owner's external ID on which behalf the user is acting on. If
-                   * not set, the user is acting for himself (his own channel).
-                   */
+    * The content owner's external ID on which behalf the user is acting on. If
+    * not set, the user is acting for himself (his own channel).
+    */
   var onBehalfOfContentOwner: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

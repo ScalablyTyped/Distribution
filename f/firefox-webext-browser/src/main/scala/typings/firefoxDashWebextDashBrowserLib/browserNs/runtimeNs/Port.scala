@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 /* runtime types */
 /** An object which allows two way communication with other pages. */
-
 trait Port extends js.Object {
   var name: java.lang.String
   var onDisconnect: firefoxDashWebextDashBrowserLib.browserNs.eventsNs.Event

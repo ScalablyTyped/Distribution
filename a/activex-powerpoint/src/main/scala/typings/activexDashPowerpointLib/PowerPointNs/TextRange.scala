@@ -27,50 +27,27 @@ class TextRange protected () extends js.Object {
   def AddPeriods(): scala.Unit = js.native
   def ChangeCase(Type: PpChangeCase): scala.Unit = js.native
   /**
-           * @param number [Start=-1]
-           * @param number [Length=-1]
-           */
+    * @param number [Start=-1]
+    * @param number [Length=-1]
+    */
   def Characters(): TextRange = js.native
-  /**
-           * @param number [Start=-1]
-           * @param number [Length=-1]
-           */
   def Characters(Start: scala.Double): TextRange = js.native
-  /**
-           * @param number [Start=-1]
-           * @param number [Length=-1]
-           */
   def Characters(Start: scala.Double, Length: scala.Double): TextRange = js.native
   def Copy(): scala.Unit = js.native
   def Cut(): scala.Unit = js.native
   def Delete(): scala.Unit = js.native
   /**
-           * @param number [After=0]
-           * @param Office.MsoTriState [MatchCase=0]
-           * @param Office.MsoTriState [WholeWords=0]
-           */
+    * @param number [After=0]
+    * @param Office.MsoTriState [MatchCase=0]
+    * @param Office.MsoTriState [WholeWords=0]
+    */
   def Find(FindWhat: java.lang.String): TextRange = js.native
-  /**
-           * @param number [After=0]
-           * @param Office.MsoTriState [MatchCase=0]
-           * @param Office.MsoTriState [WholeWords=0]
-           */
   def Find(FindWhat: java.lang.String, After: scala.Double): TextRange = js.native
-  /**
-           * @param number [After=0]
-           * @param Office.MsoTriState [MatchCase=0]
-           * @param Office.MsoTriState [WholeWords=0]
-           */
   def Find(
     FindWhat: java.lang.String,
     After: scala.Double,
     MatchCase: activexDashOfficeLib.OfficeNs.MsoTriState
   ): TextRange = js.native
-  /**
-           * @param number [After=0]
-           * @param Office.MsoTriState [MatchCase=0]
-           * @param Office.MsoTriState [WholeWords=0]
-           */
   def Find(
     FindWhat: java.lang.String,
     After: scala.Double,
@@ -79,65 +56,45 @@ class TextRange protected () extends js.Object {
   ): TextRange = js.native
   /** @param string [NewText=''] */
   def InsertAfter(): TextRange = js.native
-  /** @param string [NewText=''] */
   def InsertAfter(NewText: java.lang.String): TextRange = js.native
   /** @param string [NewText=''] */
   def InsertBefore(): TextRange = js.native
-  /** @param string [NewText=''] */
   def InsertBefore(NewText: java.lang.String): TextRange = js.native
   /** @param Office.MsoTriState [InsertAsField=0] */
   def InsertDateTime(DateTimeFormat: PpDateTimeFormat): TextRange = js.native
-  /** @param Office.MsoTriState [InsertAsField=0] */
   def InsertDateTime(DateTimeFormat: PpDateTimeFormat, InsertAsField: activexDashOfficeLib.OfficeNs.MsoTriState): TextRange = js.native
   def InsertSlideNumber(): TextRange = js.native
   /** @param Office.MsoTriState [Unicode=0] */
   def InsertSymbol(FontName: java.lang.String, CharNumber: scala.Double): TextRange = js.native
-  /** @param Office.MsoTriState [Unicode=0] */
   def InsertSymbol(
     FontName: java.lang.String,
     CharNumber: scala.Double,
     Unicode: activexDashOfficeLib.OfficeNs.MsoTriState
   ): TextRange = js.native
   /**
-           * @param number [Start=-1]
-           * @param number [Length=-1]
-           */
+    * @param number [Start=-1]
+    * @param number [Length=-1]
+    */
   def Lines(): TextRange = js.native
-  /**
-           * @param number [Start=-1]
-           * @param number [Length=-1]
-           */
   def Lines(Start: scala.Double): TextRange = js.native
-  /**
-           * @param number [Start=-1]
-           * @param number [Length=-1]
-           */
   def Lines(Start: scala.Double, Length: scala.Double): TextRange = js.native
   def LtrRun(): scala.Unit = js.native
   /**
-           * @param number [Start=-1]
-           * @param number [Length=-1]
-           */
+    * @param number [Start=-1]
+    * @param number [Length=-1]
+    */
   def Paragraphs(): TextRange = js.native
-  /**
-           * @param number [Start=-1]
-           * @param number [Length=-1]
-           */
   def Paragraphs(Start: scala.Double): TextRange = js.native
-  /**
-           * @param number [Start=-1]
-           * @param number [Length=-1]
-           */
   def Paragraphs(Start: scala.Double, Length: scala.Double): TextRange = js.native
   def Paste(): TextRange = js.native
   /**
-           * @param PowerPoint.PpPasteDataType [DataType=0]
-           * @param Office.MsoTriState [DisplayAsIcon=0]
-           * @param string [IconFileName='']
-           * @param number [IconIndex=0]
-           * @param string [IconLabel='']
-           * @param Office.MsoTriState [Link=0]
-           */
+    * @param PowerPoint.PpPasteDataType [DataType=0]
+    * @param Office.MsoTriState [DisplayAsIcon=0]
+    * @param string [IconFileName='']
+    * @param number [IconIndex=0]
+    * @param string [IconLabel='']
+    * @param Office.MsoTriState [Link=0]
+    */
   def PasteSpecial(
     DataType: js.UndefOr[PpPasteDataType],
     DisplayAsIcon: js.UndefOr[activexDashOfficeLib.OfficeNs.MsoTriState],
@@ -148,33 +105,18 @@ class TextRange protected () extends js.Object {
   ): TextRange = js.native
   def RemovePeriods(): scala.Unit = js.native
   /**
-           * @param number [After=0]
-           * @param Office.MsoTriState [MatchCase=0]
-           * @param Office.MsoTriState [WholeWords=0]
-           */
+    * @param number [After=0]
+    * @param Office.MsoTriState [MatchCase=0]
+    * @param Office.MsoTriState [WholeWords=0]
+    */
   def Replace(FindWhat: java.lang.String, ReplaceWhat: java.lang.String): TextRange = js.native
-  /**
-           * @param number [After=0]
-           * @param Office.MsoTriState [MatchCase=0]
-           * @param Office.MsoTriState [WholeWords=0]
-           */
   def Replace(FindWhat: java.lang.String, ReplaceWhat: java.lang.String, After: scala.Double): TextRange = js.native
-  /**
-           * @param number [After=0]
-           * @param Office.MsoTriState [MatchCase=0]
-           * @param Office.MsoTriState [WholeWords=0]
-           */
   def Replace(
     FindWhat: java.lang.String,
     ReplaceWhat: java.lang.String,
     After: scala.Double,
     MatchCase: activexDashOfficeLib.OfficeNs.MsoTriState
   ): TextRange = js.native
-  /**
-           * @param number [After=0]
-           * @param Office.MsoTriState [MatchCase=0]
-           * @param Office.MsoTriState [WholeWords=0]
-           */
   def Replace(
     FindWhat: java.lang.String,
     ReplaceWhat: java.lang.String,
@@ -194,51 +136,27 @@ class TextRange protected () extends js.Object {
   ): scala.Unit = js.native
   def RtlRun(): scala.Unit = js.native
   /**
-           * @param number [Start=-1]
-           * @param number [Length=-1]
-           */
+    * @param number [Start=-1]
+    * @param number [Length=-1]
+    */
   def Runs(): TextRange = js.native
-  /**
-           * @param number [Start=-1]
-           * @param number [Length=-1]
-           */
   def Runs(Start: scala.Double): TextRange = js.native
-  /**
-           * @param number [Start=-1]
-           * @param number [Length=-1]
-           */
   def Runs(Start: scala.Double, Length: scala.Double): TextRange = js.native
   def Select(): scala.Unit = js.native
   /**
-           * @param number [Start=-1]
-           * @param number [Length=-1]
-           */
+    * @param number [Start=-1]
+    * @param number [Length=-1]
+    */
   def Sentences(): TextRange = js.native
-  /**
-           * @param number [Start=-1]
-           * @param number [Length=-1]
-           */
   def Sentences(Start: scala.Double): TextRange = js.native
-  /**
-           * @param number [Start=-1]
-           * @param number [Length=-1]
-           */
   def Sentences(Start: scala.Double, Length: scala.Double): TextRange = js.native
   def TrimText(): TextRange = js.native
   /**
-           * @param number [Start=-1]
-           * @param number [Length=-1]
-           */
+    * @param number [Start=-1]
+    * @param number [Length=-1]
+    */
   def Words(): TextRange = js.native
-  /**
-           * @param number [Start=-1]
-           * @param number [Length=-1]
-           */
   def Words(Start: scala.Double): TextRange = js.native
-  /**
-           * @param number [Start=-1]
-           * @param number [Length=-1]
-           */
   def Words(Start: scala.Double, Length: scala.Double): TextRange = js.native
 }
 

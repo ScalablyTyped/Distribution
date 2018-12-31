@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PasswordEnrollTokenExpirationInDays extends js.Object {
   var ambiguousErrorMessages: js.UndefOr[scala.Boolean] = js.undefined
   var forbidClientAccountCreation: js.UndefOr[scala.Boolean] = js.undefined

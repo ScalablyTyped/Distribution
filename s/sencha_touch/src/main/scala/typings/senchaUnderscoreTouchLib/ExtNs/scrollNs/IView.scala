@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IView
   extends senchaUnderscoreTouchLib.ExtNs.IEvented {
   /** [Method] Returns the value of cls

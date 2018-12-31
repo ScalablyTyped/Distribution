@@ -6,43 +6,42 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * SortCriteria...
-     */
-
+  * SortCriteria...
+  */
 trait ISortCriteria extends js.Object {
   /**
-           * Sort by expression.
-           */
+    * Sort by expression.
+    */
   var qExpression: js.UndefOr[IValueExpr] = js.undefined
   /**
-           * Sorts the field by alphabetical order.
-           */
+    * Sorts the field by alphabetical order.
+    */
   var qSortByAscii: js.UndefOr[TypeSortDirection] = js.undefined
   /**
-           * Sorts the field by expression.
-           */
+    * Sorts the field by expression.
+    */
   var qSortByExpression: js.UndefOr[TypeSortDirection] = js.undefined
   /**
-           * Sorts the field values by frequency
-           * (number of occurrences in the field).
-           */
+    * Sorts the field values by frequency
+    * (number of occurrences in the field).
+    */
   var qSortByFrequency: js.UndefOr[TypeSortDirection] = js.undefined
   /**
-           * no / empty docu
-           */
+    * no / empty docu
+    */
   var qSortByGreyness: js.UndefOr[TypeSortDirection] = js.undefined
   /**
-           * Sorts the field values by the initial load order.
-           */
+    * Sorts the field values by the initial load order.
+    */
   var qSortByLoadOrder: js.UndefOr[TypeSortDirection] = js.undefined
   /**
-           * Sorts the field values by numeric value.
-           */
+    * Sorts the field values by numeric value.
+    */
   var qSortByNumeric: js.UndefOr[TypeSortDirection] = js.undefined
   /**
-           * Sorts the field values according to their logical state
-           * (selected, optional, alternative or excluded).
-           */
+    * Sorts the field values according to their logical state
+    * (selected, optional, alternative or excluded).
+    */
   var qSortByState: js.UndefOr[TypeSortDirection] = js.undefined
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Sql extends js.Object {
   var bindings: js.Array[knexLib.Value]
   var method: java.lang.String

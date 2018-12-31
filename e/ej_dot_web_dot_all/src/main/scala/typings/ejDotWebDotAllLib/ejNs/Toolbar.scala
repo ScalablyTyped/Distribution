@@ -16,70 +16,70 @@ class Toolbar protected () extends Widget {
   @JSName("model")
   var model_Toolbar: ejDotWebDotAllLib.ejNs.ToolbarNs.Model = js.native
   /** Deselect the specified Toolbar item.
-           * @param {any} The element need to be deselected
-           * @returns {void}
-           */
+    * @param {any} The element need to be deselected
+    * @returns {void}
+    */
   def deselectItem(element: js.Any): scala.Unit = js.native
   /** Deselect the Toolbar item based on specified id.
-           * @param {string} The ID of the element need to be deselected
-           * @returns {void}
-           */
+    * @param {string} The ID of the element need to be deselected
+    * @returns {void}
+    */
   def deselectItemByID(ID: java.lang.String): scala.Unit = js.native
   /** To disable all items in the Toolbar control.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def disable(): scala.Unit = js.native
   /** Disable the specified Toolbar item.
-           * @param {any} The element need to be disabled
-           * @returns {void}
-           */
+    * @param {any} The element need to be disabled
+    * @returns {void}
+    */
   def disableItem(element: js.Any): scala.Unit = js.native
   /** Disable the Toolbar item based on specified item id in the Toolbar.
-           * @param {string} The ID of the element need to be disabled
-           * @returns {void}
-           */
+    * @param {string} The ID of the element need to be disabled
+    * @returns {void}
+    */
   def disableItemByID(ID: java.lang.String): scala.Unit = js.native
   /** Enable the Toolbar if it is in disabled state.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def enable(): scala.Unit = js.native
   /** Enable the Toolbar item based on specified item.
-           * @param {any} The element need to be enabled
-           * @returns {void}
-           */
+    * @param {any} The element need to be enabled
+    * @returns {void}
+    */
   def enableItem(element: js.Any): scala.Unit = js.native
   /** Enable the Toolbar item based on specified item id in the Toolbar.
-           * @param {string} The ID of the element need to be enabled
-           * @returns {void}
-           */
+    * @param {string} The ID of the element need to be enabled
+    * @returns {void}
+    */
   def enableItemByID(ID: java.lang.String): scala.Unit = js.native
   /** To hide the Toolbar
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def hide(): scala.Unit = js.native
   /** Remove the item from toolbar, based on specified item.
-           * @param {any} The element need to be removed
-           * @returns {void}
-           */
+    * @param {any} The element need to be removed
+    * @returns {void}
+    */
   def removeItem(element: js.Any): scala.Unit = js.native
   /** Remove the item from toolbar, based on specified item id in the Toolbar.
-           * @param {string} The ID of the element need to be removed
-           * @returns {void}
-           */
+    * @param {string} The ID of the element need to be removed
+    * @returns {void}
+    */
   def removeItemByID(ID: java.lang.String): scala.Unit = js.native
   /** Selects the item from toolbar, based on specified item.
-           * @param {any} The element need to be selected
-           * @returns {void}
-           */
+    * @param {any} The element need to be selected
+    * @returns {void}
+    */
   def selectItem(element: js.Any): scala.Unit = js.native
   /** Selects the item from toolbar, based on specified item id in the Toolbar.
-           * @param {string} The ID of the element need to be selected
-           * @returns {void}
-           */
+    * @param {string} The ID of the element need to be selected
+    * @returns {void}
+    */
   def selectItemByID(ID: java.lang.String): scala.Unit = js.native
   /** To show the Toolbar.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def show(): scala.Unit = js.native
 }
 

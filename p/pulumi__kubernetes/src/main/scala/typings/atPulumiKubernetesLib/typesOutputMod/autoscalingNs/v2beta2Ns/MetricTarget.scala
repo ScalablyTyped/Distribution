@@ -6,29 +6,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * MetricTarget defines the target value, average value, or average utilization of a specific
-         * metric
-         */
-
+  * MetricTarget defines the target value, average value, or average utilization of a specific
+  * metric
+  */
 trait MetricTarget extends js.Object {
   /**
-               * averageUtilization is the target value of the average of the resource metric across all
-               * relevant pods, represented as a percentage of the requested value of the resource for the
-               * pods. Currently only valid for Resource metric source type
-               */
+    * averageUtilization is the target value of the average of the resource metric across all
+    * relevant pods, represented as a percentage of the requested value of the resource for the
+    * pods. Currently only valid for Resource metric source type
+    */
   val averageUtilization: scala.Double
   /**
-               * averageValue is the target value of the average of the metric across all relevant pods (as
-               * a quantity)
-               */
+    * averageValue is the target value of the average of the metric across all relevant pods (as
+    * a quantity)
+    */
   val averageValue: java.lang.String
   /**
-               * type represents whether the metric type is Utilization, Value, or AverageValue
-               */
+    * type represents whether the metric type is Utilization, Value, or AverageValue
+    */
   val `type`: java.lang.String
   /**
-               * value is the target value of the metric (as a quantity).
-               */
+    * value is the target value of the metric (as a quantity).
+    */
   val value: java.lang.String
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Permission extends js.Object {
   /** Whether the permission allows the file to be discovered through search. This is only applicable for permissions of type domain or anyone. */
   var allowFileDiscovery: js.UndefOr[scala.Boolean] = js.undefined
@@ -18,11 +17,11 @@ trait Permission extends js.Object {
   /** The email address of the user or group to which this permission refers. */
   var emailAddress: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The time at which this permission will expire (RFC 3339 date-time). Expiration times have the following restrictions:
-               * - They can only be set on user and group permissions
-               * - The time must be in the future
-               * - The time cannot be more than a year in the future
-               */
+    * The time at which this permission will expire (RFC 3339 date-time). Expiration times have the following restrictions:
+    * - They can only be set on user and group permissions
+    * - The time must be in the future
+    * - The time cannot be more than a year in the future
+    */
   var expirationTime: js.UndefOr[java.lang.String] = js.undefined
   /** The ID of this permission. This is a unique identifier for the grantee, and is published in User resources as permissionId. */
   var id: js.UndefOr[java.lang.String] = js.undefined
@@ -31,26 +30,26 @@ trait Permission extends js.Object {
   /** A link to the user's profile photo, if available. */
   var photoLink: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The role granted by this permission. While new values may be supported in the future, the following are currently allowed:
-               * - organizer
-               * - owner
-               * - writer
-               * - commenter
-               * - reader
-               */
+    * The role granted by this permission. While new values may be supported in the future, the following are currently allowed:
+    * - organizer
+    * - owner
+    * - writer
+    * - commenter
+    * - reader
+    */
   var role: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Details of whether the permissions on this Team Drive item are inherited or directly on this item. This is an output-only field which is present only
-               * for Team Drive items.
-               */
+    * Details of whether the permissions on this Team Drive item are inherited or directly on this item. This is an output-only field which is present only
+    * for Team Drive items.
+    */
   var teamDrivePermissionDetails: js.UndefOr[js.Array[gapiDotClientDotDriveLib.Anon_Role]] = js.undefined
   /**
-               * The type of the grantee. Valid values are:
-               * - user
-               * - group
-               * - domain
-               * - anyone
-               */
+    * The type of the grantee. Valid values are:
+    * - user
+    * - group
+    * - domain
+    * - anyone
+    */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 

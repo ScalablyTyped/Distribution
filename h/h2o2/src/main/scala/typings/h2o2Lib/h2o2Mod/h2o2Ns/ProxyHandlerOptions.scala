@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProxyHandlerOptions extends js.Object {
   /** acceptEncoding - if set to false, does not pass-through the 'Accept-Encoding' HTTP header which is useful for the onResponse post-processing to avoid receiving an encoded response. Can only be used together with passThrough. Defaults to true (passing header). */
   var acceptEncoding: js.UndefOr[scala.Boolean] = js.undefined
@@ -16,8 +15,8 @@ trait ProxyHandlerOptions extends js.Object {
   /** localStatePassThrough - if set tofalse, any locally defined state is removed from incoming requests before being sent to the upstream service. This value can be overridden on a per state basis via the server.state()``passThrough option. Defaults to false */
   var localStatePassThrough: js.UndefOr[scala.Boolean] = js.undefined
   /** mapUri - a function used to map the request URI to the target `uri` and optional `headers` with which to make that request. Cannot be used together with `host`, `port`, `protocol`, or `uri`.
-           * @param request - is the incoming request object.
-          */
+    * @param request - is the incoming request object.
+    */
   var mapUri: js.UndefOr[
     js.ThisFunction1[
       /* this */ ProxyHandlerOptions, 
@@ -28,14 +27,14 @@ trait ProxyHandlerOptions extends js.Object {
   /** maxSockets - sets the maximum number of sockets available per outgoing proxy host connection. false means use the wreck module default value (Infinity). Does not affect non-proxy outgoing client connections. Defaults to Infinity. */
   var maxSockets: js.UndefOr[h2o2Lib.h2o2LibNumbers.`false` | scala.Double] = js.undefined
   /**
-           * onResponse - a custom function for processing the response from the upstream service before sending to the client. Useful for custom error handling of responses from the proxied endpoint or other payload manipulation.
-           * @param err - internal or upstream error returned from attempting to contact the upstream proxy.  TODO: check this is of type BoomError or just Error.
-           * @param res - the node response object received from the upstream service. res is a readable stream (use the wreck module read method to easily convert it to a Buffer or string).
-           * @param request - is the incoming request object.
-           * @param h - Hapi's response toolkit.
-           * @param settings - the proxy handler configuration.
-           * @param ttl - the upstream TTL in milliseconds if proxy.ttl it set to 'upstream' and the upstream response included a valid 'Cache-Control' header with 'max-age'.
-           */
+    * onResponse - a custom function for processing the response from the upstream service before sending to the client. Useful for custom error handling of responses from the proxied endpoint or other payload manipulation.
+    * @param err - internal or upstream error returned from attempting to contact the upstream proxy.  TODO: check this is of type BoomError or just Error.
+    * @param res - the node response object received from the upstream service. res is a readable stream (use the wreck module read method to easily convert it to a Buffer or string).
+    * @param request - is the incoming request object.
+    * @param h - Hapi's response toolkit.
+    * @param settings - the proxy handler configuration.
+    * @param ttl - the upstream TTL in milliseconds if proxy.ttl it set to 'upstream' and the upstream response included a valid 'Cache-Control' header with 'max-age'.
+    */
   var onResponse: js.UndefOr[
     js.ThisFunction6[
       /* this */ hapiLib.hapiMod.RouteOptions, 

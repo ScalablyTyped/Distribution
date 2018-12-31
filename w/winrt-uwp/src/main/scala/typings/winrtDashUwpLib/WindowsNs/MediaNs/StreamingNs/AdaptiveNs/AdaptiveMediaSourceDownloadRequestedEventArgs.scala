@@ -20,9 +20,9 @@ abstract class AdaptiveMediaSourceDownloadRequestedEventArgs () extends js.Objec
   /** Gets an AdaptiveMediaSourceDownloadResult object representing the result of the media download request. */
   var result: AdaptiveMediaSourceDownloadResult = js.native
   /**
-                       * Gets a deferral that can be used to defer the completion of the DownloadRequested event so that the app can asynchronously download media content.
-                       * @return A deferral that can be used to defer the completion of the DownloadRequested event.
-                       */
+    * Gets a deferral that can be used to defer the completion of the DownloadRequested event so that the app can asynchronously download media content.
+    * @return A deferral that can be used to defer the completion of the DownloadRequested event.
+    */
   def getDeferral(): AdaptiveMediaSourceDownloadRequestedDeferral = js.native
 }
 

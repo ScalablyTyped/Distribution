@@ -25,7 +25,7 @@ object srcI18nFormatUnderscoreDateMod extends js.Object {
   ): java.lang.String = js.native
   def formatDate(value: stdLib.Date, format: java.lang.String, locale: java.lang.String): java.lang.String = js.native
   def formatDate(value: stdLib.Date, format: java.lang.String, locale: java.lang.String, timezone: java.lang.String): java.lang.String = js.native
-  def isDate(value: js.Any): /* is Date */scala.Boolean = js.native
+  def isDate(value: js.Any): /* is std.Date */ scala.Boolean = js.native
   def isoStringToDate(`match`: stdLib.RegExpMatchArray): stdLib.Date = js.native
   def toDate(value: java.lang.String): stdLib.Date = js.native
   def toDate(value: scala.Double): stdLib.Date = js.native

@@ -35,8 +35,8 @@ class GroupedListBase protected ()
     newProps: officeDashUiDashFabricDashReactLib.libComponentsGroupedListGroupedListDotTypesMod.IGroupedListProps
   ): scala.Unit = js.native
   /**
-       * Force the component to update.
-       */
+    * Force the component to update.
+    */
   /* InferMemberOverrides */
   override def forceUpdate(): scala.Unit = js.native
 }

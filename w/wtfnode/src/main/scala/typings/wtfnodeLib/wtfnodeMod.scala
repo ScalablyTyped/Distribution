@@ -14,17 +14,17 @@ object wtfnodeMod extends js.Object {
   @JSName("setLogger")
   def setLogger_error(
     `type`: wtfnodeLib.wtfnodeLibStrings.error,
-    fn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */js.Any, scala.Unit]
+    fn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   @JSName("setLogger")
   def setLogger_info(
     `type`: wtfnodeLib.wtfnodeLibStrings.info,
-    fn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */js.Any, scala.Unit]
+    fn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   @JSName("setLogger")
   def setLogger_warn(
     `type`: wtfnodeLib.wtfnodeLibStrings.warn,
-    fn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */js.Any, scala.Unit]
+    fn: js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, scala.Unit]
   ): scala.Unit = js.native
 }
 

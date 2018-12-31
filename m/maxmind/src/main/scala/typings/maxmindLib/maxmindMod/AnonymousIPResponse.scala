@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnonymousIPResponse extends js.Object {
   var ip_address: js.UndefOr[java.lang.String] = js.undefined
   val is_anonymous: js.UndefOr[scala.Boolean] = js.undefined

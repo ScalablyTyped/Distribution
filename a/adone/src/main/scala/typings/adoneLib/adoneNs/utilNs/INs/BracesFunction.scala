@@ -16,7 +16,6 @@ trait BracesFunction extends js.Object {
   def getCache(): js.Object = js.native
    // TODO
   def makeRe(pattern: java.lang.String): stdLib.RegExp = js.native
-   // TODO
   def makeRe(pattern: java.lang.String, options: BracesOptions): stdLib.RegExp = js.native
   def resizeCache(newSize: scala.Double): scala.Unit = js.native
 }

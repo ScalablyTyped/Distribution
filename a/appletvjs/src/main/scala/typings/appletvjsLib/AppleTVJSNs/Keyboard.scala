@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Keyboard extends js.Object {
   /** The text inside of a searchField or textField element. */
   var text: java.lang.String

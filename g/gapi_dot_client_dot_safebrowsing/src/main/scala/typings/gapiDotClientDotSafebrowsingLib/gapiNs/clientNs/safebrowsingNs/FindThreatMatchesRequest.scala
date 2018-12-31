@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FindThreatMatchesRequest extends js.Object {
   /** The client metadata. */
   var client: js.UndefOr[ClientInfo] = js.undefined

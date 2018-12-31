@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * A Node is a Part that may connect to other nodes with Links,
-    * or that may be a member of a Group.
-    * Group inherits from Node,
-    * enabling nodes to logically contain other nodes and links.
-    */
+  * A Node is a Part that may connect to other nodes with Links,
+  * or that may be a member of a Group.
+  * Group inherits from Node,
+  * enabling nodes to logically contain other nodes and links.
+  */
 @js.native
 trait Node extends Part {
   /**Gets or sets whether this Node is to be avoided by Links whose Link.routing is Link.AvoidsNodes.*/
@@ -37,174 +37,110 @@ trait Node extends Part {
   var wasTreeExpanded: scala.Boolean = js.native
   def canAvoid(): scala.Boolean = js.native
   /**
-          * Hide each child node and the connecting link, and recursively collapse each child node.
-          * @param {number=} level How many levels of the tree, starting at this node, to keep expanded if already expanded;
-          *    the default is 1, hiding all tree children of this node.  Values less than 1 are treated as 1.
-          */
+    * Hide each child node and the connecting link, and recursively collapse each child node.
+    * @param {number=} level How many levels of the tree, starting at this node, to keep expanded if already expanded;
+    *    the default is 1, hiding all tree children of this node.  Values less than 1 are treated as 1.
+    */
   def collapseTree(): scala.Unit = js.native
-  /**
-          * Hide each child node and the connecting link, and recursively collapse each child node.
-          * @param {number=} level How many levels of the tree, starting at this node, to keep expanded if already expanded;
-          *    the default is 1, hiding all tree children of this node.  Values less than 1 are treated as 1.
-          */
   def collapseTree(level: scala.Double): scala.Unit = js.native
   /**
-          * Show each child node and the connecting link, and perhaps recursively expand their child nodes.
-          * @param {number=} level How many levels of the tree should be expanded;
-          *    the default is 2, showing all tree children of this node and potentially more.
-          *    Values less than 2 are treated as 2.
-          */
+    * Show each child node and the connecting link, and perhaps recursively expand their child nodes.
+    * @param {number=} level How many levels of the tree should be expanded;
+    *    the default is 2, showing all tree children of this node and potentially more.
+    *    Values less than 2 are treated as 2.
+    */
   def expandTree(): scala.Unit = js.native
-  /**
-          * Show each child node and the connecting link, and perhaps recursively expand their child nodes.
-          * @param {number=} level How many levels of the tree should be expanded;
-          *    the default is 2, showing all tree children of this node and potentially more.
-          *    Values less than 2 are treated as 2.
-          */
   def expandTree(level: scala.Double): scala.Unit = js.native
   /**
-          * Returns an iterator over all of the Links that go from this node to another node or vice-versa, perhaps limited to a given port id on this node and a port id on the other node.
-          * @param {Node} othernode
-          * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          * @param {string|null=} otherpid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          */
+    * Returns an iterator over all of the Links that go from this node to another node or vice-versa, perhaps limited to a given port id on this node and a port id on the other node.
+    * @param {Node} othernode
+    * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
+    * @param {string|null=} otherpid A port identifier string; if null the link's portId is ignored and all links are included in the search.
+    */
   def findLinksBetween(othernode: Node): Iterator[Link] = js.native
-  /**
-          * Returns an iterator over all of the Links that go from this node to another node or vice-versa, perhaps limited to a given port id on this node and a port id on the other node.
-          * @param {Node} othernode
-          * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          * @param {string|null=} otherpid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          */
   def findLinksBetween(othernode: Node, pid: java.lang.String): Iterator[Link] = js.native
-  /**
-          * Returns an iterator over all of the Links that go from this node to another node or vice-versa, perhaps limited to a given port id on this node and a port id on the other node.
-          * @param {Node} othernode
-          * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          * @param {string|null=} otherpid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          */
   def findLinksBetween(othernode: Node, pid: java.lang.String, otherpid: java.lang.String): Iterator[Link] = js.native
   /**
-          * Returns an iterator over all of the Links that connect with this node in either direction, perhaps limited to the given port id on this node.
-          * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          */
+    * Returns an iterator over all of the Links that connect with this node in either direction, perhaps limited to the given port id on this node.
+    * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
+    */
   def findLinksConnected(): Iterator[Link] = js.native
-  /**
-          * Returns an iterator over all of the Links that connect with this node in either direction, perhaps limited to the given port id on this node.
-          * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          */
   def findLinksConnected(pid: java.lang.String): Iterator[Link] = js.native
   /**
-          * Returns an iterator over all of the Links that go into this node, perhaps limited to the given port id on this node.
-          * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          */
+    * Returns an iterator over all of the Links that go into this node, perhaps limited to the given port id on this node.
+    * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
+    */
   def findLinksInto(): Iterator[Link] = js.native
-  /**
-          * Returns an iterator over all of the Links that go into this node, perhaps limited to the given port id on this node.
-          * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          */
   def findLinksInto(pid: java.lang.String): Iterator[Link] = js.native
   /**
-          * Returns an iterator over all of the Links that come out of this node, perhaps limited to the given port id on this node.
-          * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          */
+    * Returns an iterator over all of the Links that come out of this node, perhaps limited to the given port id on this node.
+    * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
+    */
   def findLinksOutOf(): Iterator[Link] = js.native
-  /**
-          * Returns an iterator over all of the Links that come out of this node, perhaps limited to the given port id on this node.
-          * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          */
   def findLinksOutOf(pid: java.lang.String): Iterator[Link] = js.native
   /**
-          * Returns an iterator over all of the Links that go from this node to another node, perhaps limited to a given port id on this node and a port id on the other node.
-          * @param {Node} othernode
-          * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          * @param {string|null=} otherpid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          */
+    * Returns an iterator over all of the Links that go from this node to another node, perhaps limited to a given port id on this node and a port id on the other node.
+    * @param {Node} othernode
+    * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
+    * @param {string|null=} otherpid A port identifier string; if null the link's portId is ignored and all links are included in the search.
+    */
   def findLinksTo(othernode: Node): Iterator[Link] = js.native
-  /**
-          * Returns an iterator over all of the Links that go from this node to another node, perhaps limited to a given port id on this node and a port id on the other node.
-          * @param {Node} othernode
-          * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          * @param {string|null=} otherpid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          */
   def findLinksTo(othernode: Node, pid: java.lang.String): Iterator[Link] = js.native
-  /**
-          * Returns an iterator over all of the Links that go from this node to another node, perhaps limited to a given port id on this node and a port id on the other node.
-          * @param {Node} othernode
-          * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          * @param {string|null=} otherpid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          */
   def findLinksTo(othernode: Node, pid: java.lang.String, otherpid: java.lang.String): Iterator[Link] = js.native
   /**
-          * Returns an iterator over the Nodes that are connected with this node in either direction, perhaps limited to the given port id on this node.
-          * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          */
+    * Returns an iterator over the Nodes that are connected with this node in either direction, perhaps limited to the given port id on this node.
+    * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
+    */
   def findNodesConnected(): Iterator[Node] = js.native
-  /**
-          * Returns an iterator over the Nodes that are connected with this node in either direction, perhaps limited to the given port id on this node.
-          * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          */
   def findNodesConnected(pid: java.lang.String): Iterator[Node] = js.native
   /**
-          * Returns an iterator over the Nodes that are connected with this node by links going into this node, perhaps limited to the given port id on this node.
-          * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          */
+    * Returns an iterator over the Nodes that are connected with this node by links going into this node, perhaps limited to the given port id on this node.
+    * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
+    */
   def findNodesInto(): Iterator[Node] = js.native
-  /**
-          * Returns an iterator over the Nodes that are connected with this node by links going into this node, perhaps limited to the given port id on this node.
-          * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          */
   def findNodesInto(pid: java.lang.String): Iterator[Node] = js.native
   /**
-          * Returns an iterator over the Nodes that are connected with this node by links coming out of this node, perhaps limited to the given port id on this node.
-          * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          */
+    * Returns an iterator over the Nodes that are connected with this node by links coming out of this node, perhaps limited to the given port id on this node.
+    * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
+    */
   def findNodesOutOf(): Iterator[Node] = js.native
-  /**
-          * Returns an iterator over the Nodes that are connected with this node by links coming out of this node, perhaps limited to the given port id on this node.
-          * @param {string|null=} pid A port identifier string; if null the link's portId is ignored and all links are included in the search.
-          */
   def findNodesOutOf(pid: java.lang.String): Iterator[Node] = js.native
   /**
-          * Find a GraphObject with a given GraphObject.portId.
-          * @param {string} pid
-          */
+    * Find a GraphObject with a given GraphObject.portId.
+    * @param {string} pid
+    */
   def findPort(pid: java.lang.String): GraphObject = js.native
   /**
-          * Returns an Iterator for the collection of Links that connect with the immediate tree children of this node.
-          */
+    * Returns an Iterator for the collection of Links that connect with the immediate tree children of this node.
+    */
   def findTreeChildrenLinks(): Iterator[Link] = js.native
   /**
-          * Returns an Iterator for the collection of Nodes that are the immediate tree children of this node.
-          */
+    * Returns an Iterator for the collection of Nodes that are the immediate tree children of this node.
+    */
   def findTreeChildrenNodes(): Iterator[Node] = js.native
   /**
-          * Return how deep this node is in a tree structure.
-          * For tree root nodes, this returns zero.
-          */
+    * Return how deep this node is in a tree structure.
+    * For tree root nodes, this returns zero.
+    */
   def findTreeLevel(): scala.Double = js.native
   /**
-          * Returns the Link that connects with the tree parent Node of this node if the graph is tree-structured, if there is such a link and Link.isTreeLink is true.
-          */
+    * Returns the Link that connects with the tree parent Node of this node if the graph is tree-structured, if there is such a link and Link.isTreeLink is true.
+    */
   def findTreeParentLink(): Link = js.native
   /**
-          * Returns the Node that is the tree parent of this node if the graph is tree-structured, if there is a parent.
-          */
+    * Returns the Node that is the tree parent of this node if the graph is tree-structured, if there is a parent.
+    */
   def findTreeParentNode(): Node = js.native
   /**
-          * Return a collection of Parts including this Node, all of the Links going to child Nodes, and all of their tree child nodes and links.
-          * @param {number=} level How many levels of the tree, starting at this node, to include;
-          *    the default is Infinity, including all tree children of this node.  Values less than 1 are treated as 1.
-          */
+    * Return a collection of Parts including this Node, all of the Links going to child Nodes, and all of their tree child nodes and links.
+    * @param {number=} level How many levels of the tree, starting at this node, to include;
+    *    the default is Infinity, including all tree children of this node.  Values less than 1 are treated as 1.
+    */
   def findTreeParts(): Set[Part] = js.native
-  /**
-          * Return a collection of Parts including this Node, all of the Links going to child Nodes, and all of their tree child nodes and links.
-          * @param {number=} level How many levels of the tree, starting at this node, to include;
-          *    the default is Infinity, including all tree children of this node.  Values less than 1 are treated as 1.
-          */
   def findTreeParts(level: scala.Double): Set[Part] = js.native
   /**
-          * Return the Node that is at the root of the tree that this node is in, perhaps this node itself.
-          */
+    * Return the Node that is at the root of the tree that this node is in, perhaps this node itself.
+    */
   def findTreeRoot(): Node = js.native
     // undocumented
   def findVisibleNode(): Node = js.native
@@ -214,14 +150,12 @@ trait Node extends Part {
   def invalidateConnectedLinks(): scala.Unit = js.native
     // undocumented
   def invalidateLinkBundle(other: Node): scala.Unit = js.native
-    // undocumented
   def invalidateLinkBundle(other: Node, thisportid: java.lang.String): scala.Unit = js.native
-    // undocumented
   def invalidateLinkBundle(other: Node, thisportid: java.lang.String, otherportid: java.lang.String): scala.Unit = js.native
   /**
-          * This predicate is true if this node is a child of the given Node, perhaps indirectly as a descendant.
-          * @param {Node} node the Node that might be a parent or ancestor of this node.
-          */
+    * This predicate is true if this node is a child of the given Node, perhaps indirectly as a descendant.
+    * @param {Node} node the Node that might be a parent or ancestor of this node.
+    */
   def isInTreeOf(node: Node): scala.Boolean = js.native
   /**Gets or sets the function that is called after a Link has been connected with this Node.*/
   def linkConnected(a: Node, b: Link, c: GraphObject): scala.Unit = js.native

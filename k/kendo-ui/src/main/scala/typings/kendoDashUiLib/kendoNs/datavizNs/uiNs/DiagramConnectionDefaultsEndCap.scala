@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiagramConnectionDefaultsEndCap extends js.Object {
   var fill: js.UndefOr[java.lang.String | DiagramConnectionDefaultsEndCapFill] = js.undefined
   var stroke: js.UndefOr[java.lang.String | DiagramConnectionDefaultsEndCapStroke] = js.undefined

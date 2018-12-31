@@ -29,13 +29,6 @@ class DataCache protected () extends js.Object {
   		 * @param p - predicate
   		 */
   def addListener(l: js.Function1[/* data */ js.Any, scala.Unit]): scala.Unit = js.native
-  /**
-  		 * Register a listener to be notified whenever data which matches a predicate is written into the cache.
-  		 * If no predicate is provided then the listeners is always notified upon data inserion.
-  		 *
-  		 * @param l - listener function
-  		 * @param p - predicate
-  		 */
   def addListener(l: js.Function1[/* data */ js.Any, scala.Unit], p: js.Function1[/* data */ js.Any, scala.Boolean]): scala.Unit = js.native
   /**
   		 * clears the data cache

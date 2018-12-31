@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AllowScriptableWebParts extends js.Object {
   var AllowScriptableWebParts: scala.Boolean
   var CurrentUserId: scala.Double

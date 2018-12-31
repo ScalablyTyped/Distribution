@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class Message protected ()
   extends openui5Lib.sapNs.uiNs.baseNs.Object {
   /**
-             * Constructor for a new Message.
-             * @param mParameters (optional) a map which contains the following parameter properties:
-            */
+    * Constructor for a new Message.
+    * @param mParameters (optional) a map which contains the following parameter properties:
+    */
   def this(mParameters: js.Any) = this()
 }
 

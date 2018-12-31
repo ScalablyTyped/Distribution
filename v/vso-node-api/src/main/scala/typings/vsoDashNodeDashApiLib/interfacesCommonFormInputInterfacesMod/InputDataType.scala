@@ -12,43 +12,43 @@ sealed trait InputDataType extends js.Object
 @js.native
 object InputDataType extends js.Object {
   /**
-       * Represents a value of true or false.
-       */
+    * Represents a value of true or false.
+    */
   @js.native
   sealed trait Boolean
     extends vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputDataType
   
   /**
-       * Represents a Guid.
-       */
+    * Represents a Guid.
+    */
   @js.native
   sealed trait Guid
     extends vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputDataType
   
   /**
-       * No data type is specified.
-       */
+    * No data type is specified.
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputDataType
   
   /**
-       * Represents a numberic value.
-       */
+    * Represents a numberic value.
+    */
   @js.native
   sealed trait Number
     extends vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputDataType
   
   /**
-       * Represents a textual value.
-       */
+    * Represents a textual value.
+    */
   @js.native
   sealed trait String
     extends vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputDataType
   
   /**
-       * Represents a URI.
-       */
+    * Represents a URI.
+    */
   @js.native
   sealed trait Uri
     extends vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputDataType

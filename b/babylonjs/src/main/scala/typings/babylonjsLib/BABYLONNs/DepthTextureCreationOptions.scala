@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Define options used to create a depth texture
-     */
+  * Define options used to create a depth texture
+  */
 @JSGlobal("BABYLON.DepthTextureCreationOptions")
 @js.native
 class DepthTextureCreationOptions () extends js.Object {

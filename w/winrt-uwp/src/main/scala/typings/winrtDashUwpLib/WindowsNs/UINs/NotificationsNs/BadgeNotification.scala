@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class BadgeNotification protected () extends js.Object {
   /**
-                   * Creates and initializes a new instance of the BadgeNotification .
-                   * @param content The XML content that defines the badge update.
-                   */
+    * Creates and initializes a new instance of the BadgeNotification .
+    * @param content The XML content that defines the badge update.
+    */
   def this(content: winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument) = this()
   /** Gets the XML that defines the value or glyph used as the tile's badge. */
   var content: winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument = js.native

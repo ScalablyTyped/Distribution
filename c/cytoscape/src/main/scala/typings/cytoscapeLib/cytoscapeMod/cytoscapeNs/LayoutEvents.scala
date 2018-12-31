@@ -14,63 +14,50 @@ trait LayoutEvents extends js.Object {
   def listen(events: EventNames, data: js.Any, handler: EventHandler): this.type = js.native
   def listen(events: EventNames, handler: EventHandler): this.type = js.native
   /**
-           * Remove event handlers on the layout.
-           * http://js.cytoscape.org/#layout.off
-           *
-           * @param events A space separated list of event names.
-           * @param handler [optional] A reference to the handler function to remove.
-           */
+    * Remove event handlers on the layout.
+    * http://js.cytoscape.org/#layout.off
+    *
+    * @param events A space separated list of event names.
+    * @param handler [optional] A reference to the handler function to remove.
+    */
   def off(events: EventNames): this.type = js.native
-  /**
-           * Remove event handlers on the layout.
-           * http://js.cytoscape.org/#layout.off
-           *
-           * @param events A space separated list of event names.
-           * @param handler [optional] A reference to the handler function to remove.
-           */
   def off(events: EventNames, handler: EventHandler): this.type = js.native
   def on(events: EventNames, data: js.Any, handler: EventHandler): this.type = js.native
   /**
-           * http://js.cytoscape.org/#layouts/layout-events
-           */
+    * http://js.cytoscape.org/#layouts/layout-events
+    */
   /**
-           * @param events A space separated list of event names.
-           * @param data [optional] A plain object which is passed to the
-           * handler in the event object argument.
-           * @param handler  The handler function that is called
-           * when one of the specified events occurs.
-           */
+    * @param events A space separated list of event names.
+    * @param data [optional] A plain object which is passed to the
+    * handler in the event object argument.
+    * @param handler  The handler function that is called
+    * when one of the specified events occurs.
+    */
   def on(events: EventNames, handler: EventHandler): this.type = js.native
   def one(events: EventNames, data: js.Any, handler: EventHandler): this.type = js.native
   /**
-           * Bind to events that are emitted by the layout, and trigger the handler only once.
-           * @param events A space separated list of event names.
-           * @param data [optional] A plain object which is passed to the handler in the event object argument.
-           * @param handler The handler function that is called when one of the specified events occurs.
-           */
+    * Bind to events that are emitted by the layout, and trigger the handler only once.
+    * @param events A space separated list of event names.
+    * @param data [optional] A plain object which is passed to the handler in the event object argument.
+    * @param handler The handler function that is called when one of the specified events occurs.
+    */
   def one(events: EventNames, handler: EventHandler): this.type = js.native
   def pon(events: EventNames): js.Promise[EventObject] = js.native
   /**
-           * Get a promise that is resolved with the first of any of
-           * the specified events triggered on the layout.
-           * http://js.cytoscape.org/#layout.promiseOn
-           */
+    * Get a promise that is resolved with the first of any of
+    * the specified events triggered on the layout.
+    * http://js.cytoscape.org/#layout.promiseOn
+    */
   def promiseOn(events: EventNames): js.Promise[EventObject] = js.native
   def removeListener(events: EventNames): this.type = js.native
   def removeListener(events: EventNames, handler: EventHandler): this.type = js.native
   /**
-           * Trigger one or more events on the layout.
-           * http://js.cytoscape.org/#layout.trigger
-           * @param events A space separated list of event names to trigger.
-           * @param extraParams [optional] An array of additional parameters to pass to the handler.
-           */
+    * Trigger one or more events on the layout.
+    * http://js.cytoscape.org/#layout.trigger
+    * @param events A space separated list of event names to trigger.
+    * @param extraParams [optional] An array of additional parameters to pass to the handler.
+    */
   def trigger(events: EventNames): this.type = js.native
-  /**
-           * Trigger one or more events on the layout.
-           * http://js.cytoscape.org/#layout.trigger
-           * @param events A space separated list of event names to trigger.
-           * @param extraParams [optional] An array of additional parameters to pass to the handler.
-           */
   def trigger(events: EventNames, extraParams: js.Array[_]): this.type = js.native
   def unbind(events: EventNames): this.type = js.native
   def unbind(events: EventNames, handler: EventHandler): this.type = js.native

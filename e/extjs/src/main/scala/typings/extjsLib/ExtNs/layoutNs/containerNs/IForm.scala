@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IForm extends IContainer {
   /** [Method] Handles overflow processing for a container
   		* @param ownerContext Ext.layout.ContextItem

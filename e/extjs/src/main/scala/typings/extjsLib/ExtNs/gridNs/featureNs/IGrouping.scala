@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGrouping extends IAbstractSummary {
   /** [Method] Collapse a group
   		* @param groupName String The group name

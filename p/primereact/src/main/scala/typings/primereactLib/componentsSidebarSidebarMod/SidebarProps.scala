@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SidebarProps extends js.Object {
   var baseZIndex: js.UndefOr[scala.Double] = js.undefined
   var blockScroll: js.UndefOr[scala.Boolean] = js.undefined

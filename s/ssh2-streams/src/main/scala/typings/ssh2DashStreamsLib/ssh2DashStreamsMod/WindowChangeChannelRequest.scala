@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WindowChangeChannelRequest extends js.Object {
   var cols: scala.Double
   var height: scala.Double

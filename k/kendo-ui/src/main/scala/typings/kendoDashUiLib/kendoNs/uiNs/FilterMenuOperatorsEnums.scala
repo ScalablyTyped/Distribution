@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilterMenuOperatorsEnums extends js.Object {
   @JSName("eq")
   var eq_FFilterMenuOperatorsEnums: js.UndefOr[java.lang.String] = js.undefined

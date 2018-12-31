@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICalendarIdentifiersStatics extends js.Object {
   var gregorian: java.lang.String
   var hebrew: java.lang.String

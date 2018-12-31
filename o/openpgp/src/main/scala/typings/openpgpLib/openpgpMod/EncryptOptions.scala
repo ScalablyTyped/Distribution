@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EncryptOptions extends js.Object {
   var armor: js.UndefOr[scala.Boolean] = js.undefined
   var compression: js.UndefOr[openpgpLib.openpgpMod.enumsNs.compression] = js.undefined

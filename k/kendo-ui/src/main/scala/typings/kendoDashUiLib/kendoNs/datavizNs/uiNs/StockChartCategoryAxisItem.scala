@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StockChartCategoryAxisItem extends js.Object {
   var autoBaseUnitSteps: js.UndefOr[StockChartCategoryAxisItemAutoBaseUnitSteps] = js.undefined
   var axisCrossingValue: js.UndefOr[js.Any | stdLib.Date] = js.undefined

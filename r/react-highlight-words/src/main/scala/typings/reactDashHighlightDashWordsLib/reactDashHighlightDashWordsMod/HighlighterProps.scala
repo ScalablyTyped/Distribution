@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HighlighterProps extends js.Object {
   /** The class name to be applied to an active match. Use along with activeIndex */
   var activeClassName: js.UndefOr[java.lang.String] = js.undefined
@@ -20,24 +19,24 @@ trait HighlighterProps extends js.Object {
   /** CSS class name applied to the outer/wrapper <span> */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Use a custom function to search for matching chunks. This makes it possible to use arbitrary logic
-       * when looking for matches. See the default findChunks function in highlight-words-core for signature.
-       * Have a look at the custom findChunks example on how to use it.
-       */
+    * Use a custom function to search for matching chunks. This makes it possible to use arbitrary logic
+    * when looking for matches. See the default findChunks function in highlight-words-core for signature.
+    * Have a look at the custom findChunks example on how to use it.
+    */
   var findChunks: js.UndefOr[js.Function1[/* options */ FindChunks, js.Array[Chunk]]] = js.undefined
   /** CSS class name applied to highlighted text */
   var highlightClassName: js.UndefOr[java.lang.String] = js.undefined
   /** Inline styles applied to highlighted text */
   var highlightStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   /**
-       * Type of tag to wrap around highlighted matches; defaults to mark but can also be a React element
-       * (class or functional)
-       */
+    * Type of tag to wrap around highlighted matches; defaults to mark but can also be a React element
+    * (class or functional)
+    */
   var highlightTag: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * Process each search word and text to highlight before comparing (eg remove accents); signature
-       * (text: string): string
-       */
+    * Process each search word and text to highlight before comparing (eg remove accents); signature
+    * (text: string): string
+    */
   var sanitize: js.UndefOr[js.Function1[/* text */ java.lang.String, java.lang.String]] = js.undefined
   /** Array of search words. The search terms are treated as RegExps unless autoEscape is set. */
   var searchWords: js.Array[java.lang.String]

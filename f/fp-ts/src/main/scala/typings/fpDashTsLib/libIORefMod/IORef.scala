@@ -12,12 +12,12 @@ class IORef[A] protected () extends js.Object {
   var read: fpDashTsLib.libIOMod.IO[A] = js.native
   var value: js.Any = js.native
   /**
-       * @since 1.8.0
-       */
+    * @since 1.8.0
+    */
   def modify(f: js.Function1[/* a */ A, A]): fpDashTsLib.libIOMod.IO[scala.Unit] = js.native
   /**
-       * @since 1.8.0
-       */
+    * @since 1.8.0
+    */
   def write(a: A): fpDashTsLib.libIOMod.IO[scala.Unit] = js.native
 }
 

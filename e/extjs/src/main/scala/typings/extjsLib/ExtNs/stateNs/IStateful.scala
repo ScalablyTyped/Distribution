@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IStateful
   extends extjsLib.ExtNs.utilNs.IObservable {
   /** [Method] Add events that will trigger the state to be saved

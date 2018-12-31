@@ -10,10 +10,10 @@ import scala.scalajs.js.annotation._
 class namespaced protected ()
   extends firebaseDashTokenDashGeneratorLib.FirebaseTokenGenerator {
   /**
-     * Builds a new object that can generate Firebase authentication tokens.
-     * @constructor
-     * @param { String } secret The secret for the Firebase being used (get yours from the Firebase Admin Console).
-     */
+    * Builds a new object that can generate Firebase authentication tokens.
+    * @constructor
+    * @param { String } secret The secret for the Firebase being used (get yours from the Firebase Admin Console).
+    */
   def this(secret: java.lang.String) = this()
 }
 

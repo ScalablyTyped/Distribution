@@ -12,7 +12,6 @@ object underscoreNs extends js.Object {
   // isElement check. If the DOM is present, this declaration will merge.
   @js.native
   object Global extends js.Object {
-    
     trait Element extends js.Object
     
   }

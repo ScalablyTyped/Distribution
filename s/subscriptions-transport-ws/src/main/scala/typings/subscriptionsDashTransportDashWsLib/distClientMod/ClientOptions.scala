@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClientOptions extends js.Object {
   var connectionCallback: js.UndefOr[
     js.Function2[/* error */ js.Array[nodeLib.Error], /* result */ js.UndefOr[js.Any], scala.Unit]

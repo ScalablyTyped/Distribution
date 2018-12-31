@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProcessingModeCancelEventArgs extends ProcessingModeEventArgs {
   var cancel: scala.Boolean
 }

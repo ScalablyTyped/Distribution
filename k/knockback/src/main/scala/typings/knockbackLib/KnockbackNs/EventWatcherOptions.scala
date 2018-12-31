@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventWatcherOptions extends js.Object {
   var event_selector: java.lang.String
   var key: js.UndefOr[java.lang.String] = js.undefined

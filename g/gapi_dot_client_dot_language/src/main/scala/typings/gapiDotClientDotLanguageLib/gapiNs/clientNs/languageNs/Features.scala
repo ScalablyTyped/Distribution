@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Features extends js.Object {
   /** Extract document-level sentiment. */
   var extractDocumentSentiment: js.UndefOr[scala.Boolean] = js.undefined

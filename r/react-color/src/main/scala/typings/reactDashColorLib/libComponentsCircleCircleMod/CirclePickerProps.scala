@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CirclePickerProps
   extends reactDashColorLib.reactDashColorMod.ColorPickerProps[CirclePicker] {
   var circleSize: js.UndefOr[scala.Double] = js.undefined

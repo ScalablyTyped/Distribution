@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object ConnectNs extends js.Object {
   @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class Types ()
     extends awsDashSdkLib.awsDashSdkMod.ConnectNs.Types {
-    /**
-       * Constructs a service object. This object has one method for each API operation.
-       */
     def this(options: awsDashSdkLib.clientsConnectMod.ConnectNs.ClientConfiguration) = this()
   }
   

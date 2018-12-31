@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OAuthOptions extends js.Object {
   var body_hash: js.UndefOr[requestLib.requestLibNumbers.`true` | java.lang.String] = js.undefined
   var callback: js.UndefOr[java.lang.String] = js.undefined

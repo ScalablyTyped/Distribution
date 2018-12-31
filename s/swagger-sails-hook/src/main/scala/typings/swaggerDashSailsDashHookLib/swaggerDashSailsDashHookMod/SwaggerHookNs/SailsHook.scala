@@ -11,7 +11,6 @@ import scala.scalajs.js.annotation._
 	 * @see {@link http://sailsjs.com/documentation/concepts/extending-sails/hooks/hook-specification|Sails Hook Docs}
 	 * @see {@link http://sailsjs.com/documentation/anatomy/api/hooks/my-hook/index-js|Sails Hook Example}
 	 */
-
 trait SailsHook extends js.Object {
   /**
   		 * `swagger-sails-hook` specific route bound to a Sails app at load time.

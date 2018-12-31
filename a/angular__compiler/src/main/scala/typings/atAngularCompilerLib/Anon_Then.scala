@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Then extends js.Object {
   var all: js.Function1[
     /* syncAsyncValues */ js.Array[atAngularCompilerLib.srcUtilMod.SyncAsync[_]], 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Percpuusage extends js.Object {
   var percpu_usage: js.Array[scala.Double]
   var total_usage: scala.Double

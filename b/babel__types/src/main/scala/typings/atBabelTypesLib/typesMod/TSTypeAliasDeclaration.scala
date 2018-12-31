@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TSTypeAliasDeclaration extends BaseNode {
   var declare: scala.Boolean | scala.Null
   var id: Identifier

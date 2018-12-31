@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAtom
   extends mobxLib.libCoreObservableMod.IObservable {
   def reportChanged(): js.Any

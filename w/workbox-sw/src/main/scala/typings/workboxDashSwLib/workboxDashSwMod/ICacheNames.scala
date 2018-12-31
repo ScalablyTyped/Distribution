@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * ===== CoreNamespace =====
- */
-
-
+  * ===== CoreNamespace =====
+  */
 trait ICacheNames extends js.Object {
   var googleAnalytics: java.lang.String
   var precache: java.lang.String

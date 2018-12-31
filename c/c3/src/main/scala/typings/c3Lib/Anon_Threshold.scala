@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Threshold extends js.Object {
   /**
-               * Set formatter for the label on each donut piece.
-               */
+    * Set formatter for the label on each donut piece.
+    */
   var format: js.UndefOr[
     js.Function3[
       /* value */ scala.Double, 
@@ -19,12 +18,12 @@ trait Anon_Threshold extends js.Object {
     ]
   ] = js.undefined
   /**
-               * Show or hide label on each donut piece.
-               */
+    * Show or hide label on each donut piece.
+    */
   var show: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               * Set threshold to show/hide labels.
-               */
+    * Set threshold to show/hide labels.
+    */
   var threshold: js.UndefOr[scala.Double] = js.undefined
 }
 

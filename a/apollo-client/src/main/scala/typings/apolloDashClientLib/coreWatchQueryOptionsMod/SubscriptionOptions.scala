@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SubscriptionOptions[TVariables] extends js.Object {
   var fetchPolicy: js.UndefOr[FetchPolicy] = js.undefined
   var query: graphqlLib.languageAstMod.DocumentNode

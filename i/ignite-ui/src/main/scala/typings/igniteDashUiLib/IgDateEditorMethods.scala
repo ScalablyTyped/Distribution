@@ -42,11 +42,6 @@ trait IgDateEditorMethods extends js.Object {
   	 * @param delta The decrease delta.
   	 */
   def spinDown(): scala.Unit = js.native
-  /**
-  	 * Decreases the date or time period, depending on the current cursor position.
-  	 *
-  	 * @param delta The decrease delta.
-  	 */
   def spinDown(delta: scala.Double): scala.Unit = js.native
   /**
   	 * Returns a reference to the spin down UI element of the editor.
@@ -58,11 +53,6 @@ trait IgDateEditorMethods extends js.Object {
   	 * @param delta The increase delta.
   	 */
   def spinUp(): scala.Unit = js.native
-  /**
-  	 * Increases the date or time period, depending on the current cursor position.
-  	 *
-  	 * @param delta The increase delta.
-  	 */
   def spinUp(delta: scala.Double): scala.Unit = js.native
   /**
   	 * Returns a reference to the spin up UI element of the editor.
@@ -76,13 +66,6 @@ trait IgDateEditorMethods extends js.Object {
   	 * @param newValue New editor value. Date object can be set as value. String value can be passed and the editor will use the javascript Date object constructor to create date object and will use it for the comparison. MVC date format can be used too. For example Date(/"thicks"/).
   	 */
   def value(): stdLib.Date = js.native
-  /**
-  	 * Gets/Sets editor value.
-  	 *
-  	 * Note! This option doesn't use the dateInputFormat to extract the date
-  	 *
-  	 * @param newValue New editor value. Date object can be set as value. String value can be passed and the editor will use the javascript Date object constructor to create date object and will use it for the comparison. MVC date format can be used too. For example Date(/"thicks"/).
-  	 */
   def value(newValue: stdLib.Date): stdLib.Date = js.native
 }
 

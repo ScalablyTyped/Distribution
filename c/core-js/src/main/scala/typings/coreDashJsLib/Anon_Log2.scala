@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Log2 extends js.Object {
   def acosh(x: scala.Double): scala.Double
   def asinh(x: scala.Double): scala.Double

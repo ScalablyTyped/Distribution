@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaneItemMovedEvent extends js.Object {
   /** The removed pane item. */
   var item: js.Object

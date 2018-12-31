@@ -18,76 +18,61 @@ class Commit () extends js.Object {
   ): js.Promise[nodegitLib.oidMod.Oid] = js.native
   def author(): nodegitLib.signatureMod.Signature = js.native
   /**
-       * consists of a summary
-       *
-       *
-       */
+    * consists of a summary
+    *
+    *
+    */
   def body(): java.lang.String = js.native
   def committer(): nodegitLib.signatureMod.Signature = js.native
   /**
-       * Retrieve the commit time as a Date object.
-       *
-       *
-       */
+    * Retrieve the commit time as a Date object.
+    *
+    *
+    */
   def date(): stdLib.Date = js.native
   def dup(): js.Promise[Commit] = js.native
   def free(): scala.Unit = js.native
   /**
-       * Generate an array of diff trees showing changes between this commit and its parent(s).
-       *
-       *
-       */
+    * Generate an array of diff trees showing changes between this commit and its parent(s).
+    *
+    *
+    */
   def getDiff(): js.Promise[js.Array[nodegitLib.diffMod.Diff]] = js.native
-  /**
-       * Generate an array of diff trees showing changes between this commit and its parent(s).
-       *
-       *
-       */
   def getDiff(callback: js.Function): js.Promise[js.Array[nodegitLib.diffMod.Diff]] = js.native
   /**
-       * Generate an array of diff trees showing changes between this commit and its parent(s).
-       *
-       *
-       */
+    * Generate an array of diff trees showing changes between this commit and its parent(s).
+    *
+    *
+    */
   def getDiffWithOptions(options: nodegitLib.objectMod.Object): js.Promise[js.Array[nodegitLib.diffMod.Diff]] = js.native
-  /**
-       * Generate an array of diff trees showing changes between this commit and its parent(s).
-       *
-       *
-       */
   def getDiffWithOptions(options: nodegitLib.objectMod.Object, callback: js.Function): js.Promise[js.Array[nodegitLib.diffMod.Diff]] = js.native
   /**
-       * Retrieve the entry represented by path for this commit. Path must be relative to repository root.
-       *
-       *
-       */
+    * Retrieve the entry represented by path for this commit. Path must be relative to repository root.
+    *
+    *
+    */
   def getEntry(path: java.lang.String): js.Promise[nodegitLib.treeDashEntryMod.TreeEntry] = js.native
   /**
-       * Retrieve the commit's parents as commit objects.
-       *
-       *
-       */
+    * Retrieve the commit's parents as commit objects.
+    *
+    *
+    */
   def getParents(limit: scala.Double): js.Promise[js.Array[Commit]] = js.native
-  /**
-       * Retrieve the commit's parents as commit objects.
-       *
-       *
-       */
   def getParents(limit: scala.Double, callback: js.Function): js.Promise[js.Array[Commit]] = js.native
   /**
-       * Get the tree associated with this commit.
-       *
-       *
-       */
+    * Get the tree associated with this commit.
+    *
+    *
+    */
   def getTree(): js.Promise[nodegitLib.treeMod.Tree] = js.native
   def headerField(field: java.lang.String): js.Promise[nodegitLib.bufMod.Buf] = js.native
   /**
-       * Walk the history from this commit backwards.
-       * An EventEmitter is returned that will emit a "commit" event for each commit in the history, and one "end"
-       * event when the walk is completed. Don't forget to call start() on the returned EventEmitter.
-       *
-       *
-       */
+    * Walk the history from this commit backwards.
+    * An EventEmitter is returned that will emit a "commit" event for each commit in the history, and one "end"
+    * event when the walk is completed. Don't forget to call start() on the returned EventEmitter.
+    *
+    *
+    */
   def history(): HistoryEventEmitter = js.native
   def id(): nodegitLib.oidMod.Oid = js.native
   def message(): java.lang.String = js.native
@@ -99,25 +84,25 @@ class Commit () extends js.Object {
   def parentId(n: scala.Double): nodegitLib.oidMod.Oid = js.native
   def parentcount(): scala.Double = js.native
   /**
-       * Retrieve the commit's parent shas.
-       *
-       *
-       */
+    * Retrieve the commit's parent shas.
+    *
+    *
+    */
   def parents(): js.Array[nodegitLib.oidMod.Oid] = js.native
   def rawHeader(): java.lang.String = js.native
   /**
-       * Retrieve the SHA.
-       *
-       *
-       */
+    * Retrieve the SHA.
+    *
+    *
+    */
   def sha(): java.lang.String = js.native
   def summary(): java.lang.String = js.native
   def time(): scala.Double = js.native
   /**
-       * Retrieve the commit time as a unix timestamp.
-       *
-       *
-       */
+    * Retrieve the commit time as a unix timestamp.
+    *
+    *
+    */
   def timeMs(): scala.Double = js.native
   def timeOffset(): scala.Double = js.native
   def tree(treeOut: nodegitLib.treeMod.Tree): scala.Double = js.native
@@ -156,22 +141,12 @@ object Commit extends js.Object {
     signatureField: java.lang.String
   ): js.Promise[nodegitLib.oidMod.Oid] = js.native
   /**
-       * Retrieves the commit pointed to by the oid
-       *
-       *
-       */
+    * Retrieves the commit pointed to by the oid
+    *
+    *
+    */
   def lookup(repo: nodegitLib.repositoryMod.Repository, id: java.lang.String): js.Promise[nodegitLib.commitMod.Commit] = js.native
-  /**
-       * Retrieves the commit pointed to by the oid
-       *
-       *
-       */
   def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.commitMod.Commit): js.Promise[nodegitLib.commitMod.Commit] = js.native
-  /**
-       * Retrieves the commit pointed to by the oid
-       *
-       *
-       */
   def lookup(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid): js.Promise[nodegitLib.commitMod.Commit] = js.native
   def lookupPrefix(repo: nodegitLib.repositoryMod.Repository, id: nodegitLib.oidMod.Oid, len: scala.Double): js.Promise[nodegitLib.commitMod.Commit] = js.native
 }

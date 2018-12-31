@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GraphQLServerOptions[TContext, TRootValue] extends js.Object {
   var cache: js.UndefOr[apolloDashServerDashCachingLib.distKeyValueCacheMod.KeyValueCache] = js.undefined
   var cacheControl: js.UndefOr[
@@ -16,7 +15,9 @@ trait GraphQLServerOptions[TContext, TRootValue] extends js.Object {
   var debug: js.UndefOr[scala.Boolean] = js.undefined
   var extensions: js.UndefOr[
     apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
-      js.Function0[graphqlDashExtensionsLib.graphqlDashExtensionsMod.GraphQLExtension[_]]
+      js.Function0[
+        /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify GraphQLExtension */ _
+      ]
     ]
   ] = js.undefined
   var fieldResolver: js.UndefOr[

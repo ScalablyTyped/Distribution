@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OptionsPolicyIdentifier extends js.Object {
   var description: js.UndefOr[java.lang.String] = js.undefined
   var qualifier: xadesjsLib.xadesjsMod.XAdESNs.xmlNs.IdentifierQualifier

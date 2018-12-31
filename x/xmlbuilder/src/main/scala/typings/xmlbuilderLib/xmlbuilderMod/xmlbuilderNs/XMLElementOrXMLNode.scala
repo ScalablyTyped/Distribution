@@ -33,9 +33,7 @@ trait XMLElementOrXMLNode extends js.Object {
   def ele(name: js.Any, attributes: js.Object, text: js.Any): XMLElementOrXMLNode = js.native
   // XMLNode:
   def element(name: js.Any): XMLElementOrXMLNode = js.native
-  // XMLNode:
   def element(name: js.Any, attributes: js.Object): XMLElementOrXMLNode = js.native
-  // XMLNode:
   def element(name: js.Any, attributes: js.Object, text: js.Any): XMLElementOrXMLNode = js.native
   def end(): java.lang.String = js.native
   def end(options: XMLEndOptions): java.lang.String = js.native

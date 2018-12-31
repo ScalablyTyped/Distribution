@@ -8,11 +8,12 @@ import scala.scalajs.js.annotation._
 /** Represents a connection to the underlying communication pipeline (transport agnostic) that AllJoyn uses to communicate with other endpoints regardless of the transport. */
 @JSGlobal("Windows.Devices.AllJoyn.AllJoynBusAttachment")
 @js.native
+/** Generates an AllJoynBusAttachment object using the default named pipe connection specification. */
 class AllJoynBusAttachment () extends js.Object {
   /**
-                   * Generates an AllJoynBusAttachment object using the provided connection specification.
-                   * @param connectionSpecification Specification used to initiate and maintain connections to a router node (bus). Windows 10 supports the 'npipe:' transport, formatted according to the D-Bus Specification.
-                   */
+    * Generates an AllJoynBusAttachment object using the provided connection specification.
+    * @param connectionSpecification Specification used to initiate and maintain connections to a router node (bus). Windows 10 supports the 'npipe:' transport, formatted according to the D-Bus Specification.
+    */
   def this(connectionSpecification: java.lang.String) = this()
   /** This property returns an AllJoynAboutData object containing the descriptive data that the platform may advertise on behalf of the app. */
   var aboutData: AllJoynAboutData = js.native
@@ -78,10 +79,10 @@ class AllJoynBusAttachment () extends js.Object {
     ev: AllJoynBusAttachmentStateChangedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[AllJoynBusAttachment]
   ): scala.Unit = js.native
   /**
-                   * Pings the specified connection asynchronously.
-                   * @param uniqueName The unique name associated with the connection.
-                   * @return An AllJoyn status code.
-                   */
+    * Pings the specified connection asynchronously.
+    * @param uniqueName The unique name associated with the connection.
+    * @return An AllJoyn status code.
+    */
   def pingAsync(uniqueName: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Double] = js.native
   def removeEventListener(`type`: java.lang.String, listener: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_]): scala.Unit = js.native
   @JSName("removeEventListener")

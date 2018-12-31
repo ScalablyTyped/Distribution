@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EditorImageBrowser extends js.Object {
   var fileTypes: js.UndefOr[java.lang.String] = js.undefined
   var messages: js.UndefOr[EditorImageBrowserMessages] = js.undefined

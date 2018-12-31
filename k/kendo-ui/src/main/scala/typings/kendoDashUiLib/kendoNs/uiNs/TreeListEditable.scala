@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TreeListEditable extends js.Object {
   var mode: js.UndefOr[java.lang.String] = js.undefined
   var move: js.UndefOr[scala.Boolean] = js.undefined

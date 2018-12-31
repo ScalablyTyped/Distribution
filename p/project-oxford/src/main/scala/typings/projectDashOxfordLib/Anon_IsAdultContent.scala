@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_IsAdultContent extends js.Object {
   var adultScore: scala.Double
   var isAdultContent: scala.Boolean

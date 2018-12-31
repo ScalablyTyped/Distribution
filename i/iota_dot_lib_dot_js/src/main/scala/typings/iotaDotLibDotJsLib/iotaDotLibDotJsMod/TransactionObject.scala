@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 //
 // Objects
 //
-
 trait TransactionObject extends js.Object {
   var address: java.lang.String
   var attachmentTimestamp: scala.Double

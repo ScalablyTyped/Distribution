@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TransferListProps extends js.Object {
   var body: js.UndefOr[js.Function1[/* props */ TransferListProps, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
   var checkedKeys: js.Array[java.lang.String]

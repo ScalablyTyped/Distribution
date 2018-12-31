@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Specifies a thread that is stored on the server.
-            The thread contains a root post and zero or more reply posts. */
+  The thread contains a root post and zero or more reply posts. */
 @JSGlobal("SP.Social.SocialThread")
 @js.native
 class SocialThread ()
@@ -18,15 +18,15 @@ class SocialThread ()
   /** Specifies the unique identification of the thread. */
   def get_id(): java.lang.String = js.native
   /** Specifies the thread owner as an index into the Actors array.
-                  Typically, the thread owner is the user who created the root post, but the thread owner can be any user included in the Actors array. */
+    Typically, the thread owner is the user who created the root post, but the thread owner can be any user included in the Actors array. */
   def get_ownerIndex(): scala.Double = js.native
   /** Specifies a URI that is a permanent reference to the thread, if such a permanent reference is available.  */
   def get_permalink(): java.lang.String = js.native
   /** Specifies a reference to a post in another thread.
-                  The PostReference property is available only if the ThreadType has a value of ReplyReference, LikeReference, MentionReference, or TagReference.  */
+    The PostReference property is available only if the ThreadType has a value of ReplyReference, LikeReference, MentionReference, or TagReference.  */
   def get_postReference(): SocialPostReference = js.native
   /** Returns an array of zero or more reply posts.
-                  The server can return a subset of the reply posts that are stored on the server. */
+    The server can return a subset of the reply posts that are stored on the server. */
   def get_replies(): js.Array[SocialPost] = js.native
   def get_rootPost(): SocialPost = js.native
   /** Provides information about conditions that were encountered retrieving the thread that did not prevent the operation from completing. */

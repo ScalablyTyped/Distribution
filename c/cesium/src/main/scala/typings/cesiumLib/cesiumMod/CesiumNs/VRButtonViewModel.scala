@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VRButtonViewModel extends js.Object {
   var command: Command
   var isVREnabled: scala.Boolean

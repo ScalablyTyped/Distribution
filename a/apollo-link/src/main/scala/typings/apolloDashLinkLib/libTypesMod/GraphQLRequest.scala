@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GraphQLRequest extends js.Object {
   var context: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
   var extensions: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined

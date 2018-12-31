@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ItemListDto extends js.Object {
   var basic: BasicDataDto
   var data: js.Array[org.scalablytyped.runtime.StringDictionary[ItemDto]]

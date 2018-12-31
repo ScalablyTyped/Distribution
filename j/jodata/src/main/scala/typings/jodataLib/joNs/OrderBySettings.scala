@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrderBySettings extends ISettings {
   var DefaultOrder: java.lang.String
   var DefaultProperty: java.lang.String

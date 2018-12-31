@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Internal representation of node in the UI
-     */
+  * Internal representation of node in the UI
+  */
 @js.native
 trait ITreeNodeScope
   extends angularLib.angularMod.angularNs.IRootScopeService {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RunLoaderOption extends js.Object {
   var context: js.Any
   var loaders: js.Array[_]

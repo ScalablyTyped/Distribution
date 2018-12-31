@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class ToastNotification protected () extends js.Object {
   /**
-                   * Creates and initializes a new instance of the ToastNotification .
-                   * @param content The XML content that defines the toast notification.
-                   */
+    * Creates and initializes a new instance of the ToastNotification .
+    * @param content The XML content that defines the toast notification.
+    */
   def this(content: winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument) = this()
   /** Gets the XML that defines the current toast notification. */
   var content: winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument = js.native

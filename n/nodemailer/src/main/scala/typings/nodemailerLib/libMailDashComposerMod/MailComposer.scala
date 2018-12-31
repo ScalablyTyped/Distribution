@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Creates the object for composing a MimeNode instance out from the mail options */
-
 trait MailComposer extends js.Object {
   var mail: nodemailerLib.libMailerMod.MailNs.Options
   var message: nodemailerLib.libMimeDashNodeMod.namespaced | nodemailerLib.nodemailerLibNumbers.`false`

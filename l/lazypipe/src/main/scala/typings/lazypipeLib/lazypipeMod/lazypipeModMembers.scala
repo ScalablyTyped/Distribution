@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object lazypipeModMembers extends js.Object {
   /**
-   * Initializes a lazypipe.
-   */
+    * Initializes a lazypipe.
+    */
   def apply(): IPipelineBuilder = js.native
 }
 

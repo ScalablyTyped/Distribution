@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AppendDimensionRequest extends js.Object {
   /** Whether rows or columns should be appended. */
   var dimension: js.UndefOr[java.lang.String] = js.undefined

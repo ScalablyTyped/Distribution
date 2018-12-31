@@ -12,10 +12,10 @@ abstract class AppServiceRequest () extends js.Object {
   /** Gets the message that request from the app service contains. */
   var message: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.ValueSet = js.native
   /**
-                   * Sends a response to a received request.
-                   * @param message The message that you want to include in the response.
-                   * @return An asynchronous operation to send the response.
-                   */
+    * Sends a response to a received request.
+    * @param message The message that you want to include in the response.
+    * @return An asynchronous operation to send the response.
+    */
   def sendResponseAsync(message: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.ValueSet): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[AppServiceResponseStatus] = js.native
 }
 

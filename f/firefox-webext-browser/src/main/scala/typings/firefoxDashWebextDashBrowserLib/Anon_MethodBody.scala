@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MethodBody extends js.Object {
   /** Post body. */
   var body: js.UndefOr[java.lang.String] = js.undefined
@@ -13,20 +12,20 @@ trait Anon_MethodBody extends js.Object {
   /** A file path relative to the Downloads directory to contain the downloaded file. */
   var filename: js.UndefOr[java.lang.String] = js.undefined
   /**
-           * Extra HTTP headers to send with the request if the URL uses the HTTP[s] protocol. Each header is represented
-           * as a dictionary containing the keys `name` and either `value` or `binaryValue`, restricted to those allowed
-           * by XMLHttpRequest.
-           */
+    * Extra HTTP headers to send with the request if the URL uses the HTTP[s] protocol. Each header is represented
+    * as a dictionary containing the keys `name` and either `value` or `binaryValue`, restricted to those allowed
+    * by XMLHttpRequest.
+    */
   var headers: js.UndefOr[js.Array[Anon_Value]] = js.undefined
   /** Whether to associate the download with a private browsing session. */
   var incognito: js.UndefOr[scala.Boolean] = js.undefined
   /** The HTTP method to use if the URL uses the HTTP[S] protocol. */
   var method: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.downloadsNs._DownloadMethod] = js.undefined
   /**
-           * Use a file-chooser to allow the user to select a filename. If the option is not specified, the file chooser
-           * will be shown only if the Firefox "Always ask you where to save files" option is enabled (i.e. the pref
-           * `browser.download.useDownloadDir` is set to `false`).
-           */
+    * Use a file-chooser to allow the user to select a filename. If the option is not specified, the file chooser
+    * will be shown only if the Firefox "Always ask you where to save files" option is enabled (i.e. the pref
+    * `browser.download.useDownloadDir` is set to `false`).
+    */
   var saveAs: js.UndefOr[scala.Boolean] = js.undefined
   /** The URL to download. */
   var url: java.lang.String

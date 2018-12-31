@@ -8,14 +8,16 @@ import scala.scalajs.js.annotation._
 @JSImport("assert", JSImport.Namespace)
 @js.native
 object assertModMembers extends js.Object {
-  val strict: nodeLib.Anon_IfError = js.native
+  val strict: (js.Function2[
+    /* value */ js.Any, 
+    /* message */ js.UndefOr[java.lang.String | nodeLib.Error], 
+    scala.Unit
+  ]) with nodeLib.Anon_IfError = js.native
   def apply(value: js.Any): scala.Unit = js.native
   def apply(value: js.Any, message: java.lang.String | nodeLib.Error): scala.Unit = js.native
   /** @deprecated since v9.9.0 - use deepStrictEqual() instead. */
   def deepEqual(actual: js.Any, expected: js.Any): scala.Unit = js.native
-  /** @deprecated since v9.9.0 - use deepStrictEqual() instead. */
   def deepEqual(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
-  /** @deprecated since v9.9.0 - use deepStrictEqual() instead. */
   def deepEqual(actual: js.Any, expected: js.Any, message: nodeLib.Error): scala.Unit = js.native
   def deepStrictEqual(actual: js.Any, expected: js.Any): scala.Unit = js.native
   def deepStrictEqual(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
@@ -49,18 +51,13 @@ object assertModMembers extends js.Object {
   def doesNotThrow(block: js.Function, message: nodeLib.Error): scala.Unit = js.native
   /** @deprecated since v9.9.0 - use strictEqual() instead. */
   def equal(actual: js.Any, expected: js.Any): scala.Unit = js.native
-  /** @deprecated since v9.9.0 - use strictEqual() instead. */
   def equal(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
-  /** @deprecated since v9.9.0 - use strictEqual() instead. */
   def equal(actual: js.Any, expected: js.Any, message: nodeLib.Error): scala.Unit = js.native
   def fail(): scala.Nothing = js.native
   /** @deprecated since v10.0.0 - use fail([message]) or other assert functions instead. */
   def fail(actual: js.Any, expected: js.Any): scala.Nothing = js.native
-  /** @deprecated since v10.0.0 - use fail([message]) or other assert functions instead. */
   def fail(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Nothing = js.native
-  /** @deprecated since v10.0.0 - use fail([message]) or other assert functions instead. */
   def fail(actual: js.Any, expected: js.Any, message: java.lang.String, operator: java.lang.String): scala.Nothing = js.native
-  /** @deprecated since v10.0.0 - use fail([message]) or other assert functions instead. */
   def fail(
     actual: js.Any,
     expected: js.Any,
@@ -68,11 +65,8 @@ object assertModMembers extends js.Object {
     operator: java.lang.String,
     stackStartFn: js.Function
   ): scala.Nothing = js.native
-  /** @deprecated since v10.0.0 - use fail([message]) or other assert functions instead. */
   def fail(actual: js.Any, expected: js.Any, message: nodeLib.Error): scala.Nothing = js.native
-  /** @deprecated since v10.0.0 - use fail([message]) or other assert functions instead. */
   def fail(actual: js.Any, expected: js.Any, message: nodeLib.Error, operator: java.lang.String): scala.Nothing = js.native
-  /** @deprecated since v10.0.0 - use fail([message]) or other assert functions instead. */
   def fail(
     actual: js.Any,
     expected: js.Any,
@@ -85,18 +79,14 @@ object assertModMembers extends js.Object {
   def ifError(value: js.Any): scala.Unit = js.native
   /** @deprecated since v9.9.0 - use notDeepStrictEqual() instead. */
   def notDeepEqual(actual: js.Any, expected: js.Any): scala.Unit = js.native
-  /** @deprecated since v9.9.0 - use notDeepStrictEqual() instead. */
   def notDeepEqual(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
-  /** @deprecated since v9.9.0 - use notDeepStrictEqual() instead. */
   def notDeepEqual(actual: js.Any, expected: js.Any, message: nodeLib.Error): scala.Unit = js.native
   def notDeepStrictEqual(actual: js.Any, expected: js.Any): scala.Unit = js.native
   def notDeepStrictEqual(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
   def notDeepStrictEqual(actual: js.Any, expected: js.Any, message: nodeLib.Error): scala.Unit = js.native
   /** @deprecated since v9.9.0 - use notStrictEqual() instead. */
   def notEqual(actual: js.Any, expected: js.Any): scala.Unit = js.native
-  /** @deprecated since v9.9.0 - use notStrictEqual() instead. */
   def notEqual(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native
-  /** @deprecated since v9.9.0 - use notStrictEqual() instead. */
   def notEqual(actual: js.Any, expected: js.Any, message: nodeLib.Error): scala.Unit = js.native
   def notStrictEqual(actual: js.Any, expected: js.Any): scala.Unit = js.native
   def notStrictEqual(actual: js.Any, expected: js.Any, message: java.lang.String): scala.Unit = js.native

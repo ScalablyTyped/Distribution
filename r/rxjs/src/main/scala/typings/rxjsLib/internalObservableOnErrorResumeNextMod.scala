@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object internalObservableOnErrorResumeNextMod extends js.Object {
   def onErrorResumeNext[R](array: js.Array[rxjsLib.internalTypesMod.ObservableInput[_]]): rxjsLib.internalObservableMod.Observable[R] = js.native
   def onErrorResumeNext[R](
-    observables: (rxjsLib.internalTypesMod.ObservableInput[_] | (js.Function1[/* repeated */js.Any, R]))*
+    observables: (rxjsLib.internalTypesMod.ObservableInput[_] | (js.Function1[/* repeated */ js.Any, R]))*
   ): rxjsLib.internalObservableMod.Observable[R] = js.native
   def onErrorResumeNext[R](v: rxjsLib.internalTypesMod.ObservableInput[R]): rxjsLib.internalObservableMod.Observable[R] = js.native
   def onErrorResumeNext[T2, T3, R](v2: rxjsLib.internalTypesMod.ObservableInput[T2], v3: rxjsLib.internalTypesMod.ObservableInput[T3]): rxjsLib.internalObservableMod.Observable[R] = js.native

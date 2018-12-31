@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RouteConfigComponentProps[Params /* <: reactDashRouterDashConfigLib.reactDashRouterDashConfigLibStrings.RouteConfigComponentProps with js.Any */]
   extends reactDashRouterLib.reactDashRouterMod.RouteComponentProps[
       Params, 

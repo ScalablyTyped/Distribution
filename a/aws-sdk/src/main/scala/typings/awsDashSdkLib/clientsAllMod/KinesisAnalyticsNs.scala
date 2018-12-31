@@ -9,11 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object KinesisAnalyticsNs extends js.Object {
   @js.native
+  /**
+    * Constructs a service object. This object has one method for each API operation.
+    */
   class Types ()
     extends awsDashSdkLib.clientsKinesisanalyticsMod.Types {
-    /**
-       * Constructs a service object. This object has one method for each API operation.
-       */
     def this(options: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ClientConfiguration) = this()
   }
   

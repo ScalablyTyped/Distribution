@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_DefaultMethods extends js.Object {
   var DefaultMethods: signaleLib.signaleMod.signaleNs.DefaultMethods
   var Signale: signaleLib.signaleMod.signaleNs.SignaleConstructor

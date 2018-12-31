@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ArrowFunctionExpression extends Node {
   var async: scala.Boolean
   var body: BlockStatement | Expression

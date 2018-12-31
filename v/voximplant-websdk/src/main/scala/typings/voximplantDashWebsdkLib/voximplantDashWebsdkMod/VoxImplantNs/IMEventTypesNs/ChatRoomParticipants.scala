@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when info about chat room participants received
 		*/
-
 trait ChatRoomParticipants extends js.Object {
   /**
   			* Participants list

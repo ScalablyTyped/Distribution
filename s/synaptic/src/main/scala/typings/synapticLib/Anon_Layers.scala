@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Layers extends js.Object {
   var activation_sentences: js.Any
   var inputs: js.Any

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DOMAttributes
   extends preactLib.preactMod.preactNs.PreactDOMAttributes {
   // Media Events

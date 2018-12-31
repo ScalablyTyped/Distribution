@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InterceptStreamProtocolRequest extends js.Object {
   var headers: Headers
   var method: java.lang.String

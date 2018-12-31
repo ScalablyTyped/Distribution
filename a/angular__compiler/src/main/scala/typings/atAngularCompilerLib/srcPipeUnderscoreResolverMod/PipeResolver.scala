@@ -12,12 +12,9 @@ class PipeResolver protected () extends js.Object {
   var _reflector: js.Any = js.native
   def isPipe(`type`: atAngularCompilerLib.srcCoreMod.Type): scala.Boolean = js.native
   /**
-       * Return {@link Pipe} for a given `Type`.
-       */
+    * Return {@link Pipe} for a given `Type`.
+    */
   def resolve(`type`: atAngularCompilerLib.srcCoreMod.Type): atAngularCompilerLib.srcCoreMod.Pipe | scala.Null = js.native
-  /**
-       * Return {@link Pipe} for a given `Type`.
-       */
   def resolve(`type`: atAngularCompilerLib.srcCoreMod.Type, throwIfNotFound: scala.Boolean): atAngularCompilerLib.srcCoreMod.Pipe | scala.Null = js.native
 }
 

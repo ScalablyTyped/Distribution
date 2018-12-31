@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILocalContentSuggestionSettings extends js.Object {
   var aqsFilter: java.lang.String
   var enabled: scala.Boolean

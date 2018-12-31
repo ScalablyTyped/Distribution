@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GanttEditEvent extends GanttEvent {
   var container: js.UndefOr[kendoDashUiLib.JQuery] = js.undefined
   var task: js.UndefOr[kendoDashUiLib.kendoNs.dataNs.GanttTask] = js.undefined

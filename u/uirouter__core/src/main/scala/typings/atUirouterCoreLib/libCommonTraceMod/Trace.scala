@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@uirouter/core/lib/common/trace", "Trace")
 @js.native
+/** @hidden */
 class Trace () extends js.Object {
   /** @hidden */
   var _enabled: js.Any = js.native
@@ -15,56 +16,38 @@ class Trace () extends js.Object {
   /** @hidden */
   var approximateDigests: scala.Double = js.native
   /**
-       * Disables a trace [[Category]]
-       *
-       * ```js
-       * trace.disable("VIEWCONFIG");
-       * ```
-       *
-       * @param categories categories to disable. If `categories` is omitted, all categories are disabled.
-       *        Also takes strings (category name) or ordinal (category position)
-       */
+    * Disables a trace [[Category]]
+    *
+    * ```js
+    * trace.disable("VIEWCONFIG");
+    * ```
+    *
+    * @param categories categories to disable. If `categories` is omitted, all categories are disabled.
+    *        Also takes strings (category name) or ordinal (category position)
+    */
   def disable(categories: (Category | java.lang.String | scala.Double)*): js.Any = js.native
   /**
-       * Enables a trace [[Category]]
-       *
-       * ```js
-       * trace.enable("TRANSITION");
-       * ```
-       *
-       * @param categories categories to enable. If `categories` is omitted, all categories are enabled.
-       *        Also takes strings (category name) or ordinal (category position)
-       */
+    * Enables a trace [[Category]]
+    *
+    * ```js
+    * trace.enable("TRANSITION");
+    * ```
+    *
+    * @param categories categories to enable. If `categories` is omitted, all categories are enabled.
+    *        Also takes strings (category name) or ordinal (category position)
+    */
   def enable(categories: (Category | java.lang.String | scala.Double)*): js.Any = js.native
   /**
-       * Retrieves the enabled stateus of a [[Category]]
-       *
-       * ```js
-       * trace.enabled("VIEWCONFIG"); // true or false
-       * ```
-       *
-       * @returns boolean true if the category is enabled
-       */
+    * Retrieves the enabled stateus of a [[Category]]
+    *
+    * ```js
+    * trace.enabled("VIEWCONFIG"); // true or false
+    * ```
+    *
+    * @returns boolean true if the category is enabled
+    */
   def enabled(category: Category): scala.Boolean = js.native
-  /**
-       * Retrieves the enabled stateus of a [[Category]]
-       *
-       * ```js
-       * trace.enabled("VIEWCONFIG"); // true or false
-       * ```
-       *
-       * @returns boolean true if the category is enabled
-       */
   def enabled(category: java.lang.String): scala.Boolean = js.native
-  /**
-       * Retrieves the enabled stateus of a [[Category]]
-       *
-       * ```js
-       * trace.enabled("VIEWCONFIG"); // true or false
-       * ```
-       *
-       * @returns boolean true if the category is enabled
-       */
   def enabled(category: scala.Double): scala.Boolean = js.native
   /** @internalapi called by ui-router code */
   def traceError(reason: js.Any, trans: atUirouterCoreLib.libTransitionTransitionMod.Transition): scala.Unit = js.native
@@ -82,7 +65,6 @@ class Trace () extends js.Object {
   ): scala.Unit = js.native
   /** @internalapi called by ui-router code */
   def traceResolvableResolved(resolvable: atUirouterCoreLib.libResolveResolvableMod.Resolvable): scala.Unit = js.native
-  /** @internalapi called by ui-router code */
   def traceResolvableResolved(
     resolvable: atUirouterCoreLib.libResolveResolvableMod.Resolvable,
     trans: atUirouterCoreLib.libTransitionTransitionMod.Transition
@@ -92,7 +74,6 @@ class Trace () extends js.Object {
     path: js.Array[atUirouterCoreLib.libPathPathNodeMod.PathNode],
     when: atUirouterCoreLib.libResolveInterfaceMod.PolicyWhen
   ): scala.Unit = js.native
-  /** @internalapi called by ui-router code */
   def traceResolvePath(
     path: js.Array[atUirouterCoreLib.libPathPathNodeMod.PathNode],
     when: atUirouterCoreLib.libResolveInterfaceMod.PolicyWhen,
@@ -114,7 +95,6 @@ class Trace () extends js.Object {
   ): scala.Unit = js.native
   /** @internalapi called by ui-router code */
   def traceUIViewEvent(event: java.lang.String, viewData: atUirouterCoreLib.libViewInterfaceMod.ActiveUIView): scala.Unit = js.native
-  /** @internalapi called by ui-router code */
   def traceUIViewEvent(
     event: java.lang.String,
     viewData: atUirouterCoreLib.libViewInterfaceMod.ActiveUIView,

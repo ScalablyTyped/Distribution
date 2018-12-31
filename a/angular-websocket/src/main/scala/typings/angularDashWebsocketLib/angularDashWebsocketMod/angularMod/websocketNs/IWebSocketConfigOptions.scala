@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * Options available to be specified for IWebSocketProvider.
-         */
-
+  * Options available to be specified for IWebSocketProvider.
+  */
 trait IWebSocketConfigOptions extends js.Object {
   var binaryType: js.UndefOr[
     angularDashWebsocketLib.angularDashWebsocketLibStrings.blob | angularDashWebsocketLib.angularDashWebsocketLibStrings.arraybuffer

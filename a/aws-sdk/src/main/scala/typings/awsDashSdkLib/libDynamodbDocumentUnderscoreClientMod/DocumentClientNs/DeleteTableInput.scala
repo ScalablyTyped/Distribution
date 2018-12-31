@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeleteTableInput extends js.Object {
   /**
-       * The name of the table to delete.
-       */
+    * The name of the table to delete.
+    */
   var TableName: TableName
 }
 

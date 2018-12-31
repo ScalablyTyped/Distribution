@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MSearchParams extends GenericParams {
   var index: js.UndefOr[NameList] = js.undefined
   var maxConcurrentSearches: js.UndefOr[scala.Double] = js.undefined

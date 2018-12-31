@@ -5,13 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Config extends js.Object {
   var auth: adoneLib.Anon_Username
   var baseURL: java.lang.String
   var cancelToken: adoneLib.adoneNs.netNs.httpNs.clientNs.CancelToken
   var data: Data
-  var formData: org.scalablytyped.runtime.StringDictionary[FormValue | js.Array[FormValue]]
+  var formData: /* import warning: ImportType.apply Failed type conversion: {indexed, indexed, indexed, indexed} */ js.Any
   var headers: RequestHeaders
   var httpAgent: js.Object
   var httpsAgent: js.Object

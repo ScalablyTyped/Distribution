@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PublisherProfileApiProto extends js.Object {
   /** Deprecated: use the seller.account_id. The account id of the seller. */
   var accountId: js.UndefOr[java.lang.String] = js.undefined

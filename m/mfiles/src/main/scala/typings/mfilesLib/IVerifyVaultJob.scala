@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVerifyVaultJob extends js.Object {
   val FixErrors: scala.Boolean
   val VaultGUID: java.lang.String

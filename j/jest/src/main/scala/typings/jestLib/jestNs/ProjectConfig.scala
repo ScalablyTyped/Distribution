@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProjectConfig extends js.Object {
   var automock: scala.Boolean
   var browser: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TreeViewNodeCancelEventArgs extends ProcessingModeCancelEventArgs {
   val node: BootstrapTreeViewNode
 }

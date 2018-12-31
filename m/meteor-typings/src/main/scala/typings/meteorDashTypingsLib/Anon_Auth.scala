@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Auth extends js.Object {
   var auth: js.UndefOr[java.lang.String] = js.undefined
   var beforeSend: js.UndefOr[js.Function] = js.undefined

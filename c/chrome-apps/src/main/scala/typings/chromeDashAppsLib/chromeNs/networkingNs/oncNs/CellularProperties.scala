@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CellularProperties[M /* <: ManagedObject */] extends CellularBase {
   /** The cellular network activation type. */
   var ActivationType: js.UndefOr[java.lang.String] = js.undefined
@@ -38,9 +37,9 @@ trait CellularProperties[M /* <: ManagedObject */] extends CellularBase {
   /** The state of SIM lock for GSM family networks. */
   var SIMLockStatus: js.UndefOr[SIMLockStatus] = js.undefined
   /**
-               * @since Chrome 63.
-               * True when a cellular network scan is in progress.
-               */
+    * @since Chrome 63.
+    * True when a cellular network scan is in progress.
+    */
   var Scanning: js.UndefOr[scala.Boolean] = js.undefined
   /** Information about the operator on whose network the modem is currently registered. */
   var ServingOperator: js.UndefOr[CellularProviderProperties] = js.undefined

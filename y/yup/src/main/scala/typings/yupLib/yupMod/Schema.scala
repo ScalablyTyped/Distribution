@@ -13,7 +13,7 @@ trait Schema[T] extends js.Object {
   def default(): this.type = js.native
   def default(value: js.Any): this.type = js.native
   def describe(): SchemaDescription = js.native
-  def isType(value: js.Any): /* is T */scala.Boolean = js.native
+  def isType(value: js.Any): /* is T */ scala.Boolean = js.native
   def isValid(value: T): js.Promise[scala.Boolean] = js.native
   def isValid(value: T, options: js.Any): js.Promise[scala.Boolean] = js.native
   def isValidSync(value: T): scala.Boolean = js.native

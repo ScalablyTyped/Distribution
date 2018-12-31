@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RasterPaint extends js.Object {
   var `raster-brightness-max`: js.UndefOr[scala.Double | Expression] = js.undefined
   var `raster-brightness-max-transition`: js.UndefOr[Transition] = js.undefined

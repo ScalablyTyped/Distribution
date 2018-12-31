@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICompiledMode extends IModeBase {
   var compiled: scala.Boolean
   var contains: js.UndefOr[js.Array[ICompiledMode]] = js.undefined

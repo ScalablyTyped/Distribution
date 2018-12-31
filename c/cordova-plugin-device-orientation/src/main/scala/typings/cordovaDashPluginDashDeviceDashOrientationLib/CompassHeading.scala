@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** A CompassHeading object is returned to the compassSuccess callback function. */
-
 trait CompassHeading extends js.Object {
   /** The deviation in degrees between the reported heading and the true heading. */
   var headingAccuracy: scala.Double

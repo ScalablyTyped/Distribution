@@ -5,31 +5,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Environments extends js.Object {
   /**
-       * Development environment
-       */
+    * Development environment
+    */
   var DEVELOPMENT: Environment
   /**
-       * Integration environment
-       */
+    * Integration environment
+    */
   var INTEGRATION: Environment
   /**
-       * Local environment
-       */
+    * Local environment
+    */
   var LOCAL: Environment
   /**
-       * Production environment
-       */
+    * Production environment
+    */
   var PRODUCTION: Environment
   /**
-       * Stage environment
-       */
+    * Stage environment
+    */
   var STAGE: Environment
   /**
-       * Testing environment
-       */
+    * Testing environment
+    */
   var TESTING: Environment
 }
 

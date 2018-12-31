@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOptions
   extends vinylDashFsLib.vinylDashFsMod.SrcOptions {
   var events: js.UndefOr[js.Array[java.lang.String]] = js.undefined

@@ -12,29 +12,29 @@ sealed trait ConditionType extends js.Object
 @js.native
 object ConditionType extends js.Object {
   /**
-       * The condition type is artifact.
-       */
+    * The condition type is artifact.
+    */
   @js.native
   sealed trait Artifact
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.ConditionType
   
   /**
-       * The condition type is environment state.
-       */
+    * The condition type is environment state.
+    */
   @js.native
   sealed trait EnvironmentState
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.ConditionType
   
   /**
-       * The condition type is event.
-       */
+    * The condition type is event.
+    */
   @js.native
   sealed trait Event
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.ConditionType
   
   /**
-       * The condition type is undefined.
-       */
+    * The condition type is undefined.
+    */
   @js.native
   sealed trait Undefined
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.ConditionType

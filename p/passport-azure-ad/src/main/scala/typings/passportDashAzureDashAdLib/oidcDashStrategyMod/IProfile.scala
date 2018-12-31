@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IProfile extends js.Object {
   var _json: js.UndefOr[js.Any] = js.undefined
   var _raw: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InstabugStatic extends js.Object {
   var colorTheme: ColorTheme
   var invocationEvent: InvocationEvent

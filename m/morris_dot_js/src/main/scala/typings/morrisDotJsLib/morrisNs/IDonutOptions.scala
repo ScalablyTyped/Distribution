@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDonutOptions extends IChartOptions {
   /** An array of strings containing HTML-style hex colors for each of the donut segments. */
   var colors: js.UndefOr[js.Array[java.lang.String]] = js.undefined

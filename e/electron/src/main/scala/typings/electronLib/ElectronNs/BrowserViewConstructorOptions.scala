@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BrowserViewConstructorOptions extends js.Object {
   /**
-       * See .
-       */
+    * See .
+    */
   var webPreferences: js.UndefOr[WebPreferences] = js.undefined
 }
 

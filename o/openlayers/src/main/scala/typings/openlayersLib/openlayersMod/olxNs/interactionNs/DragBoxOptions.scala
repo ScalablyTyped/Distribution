@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DragBoxOptions extends js.Object {
   var boxEndCondition: js.UndefOr[openlayersLib.openlayersMod.DragBoxEndConditionType] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined

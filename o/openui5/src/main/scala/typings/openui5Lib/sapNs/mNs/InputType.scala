@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait InputType extends js.Object
 
 /**
-     * A subset of input types that fits to a simple API returning one string.Not available on purpose:
-     * button, checkbox, hidden, image, password, radio, range, reset, search, submit.
-    */
+  * A subset of input types that fits to a simple API returning one string.Not available on purpose:
+  * button, checkbox, hidden, image, password, radio, range, reset, search, submit.
+  */
 @JSGlobal("sap.m.InputType")
 @js.native
 object InputType extends js.Object {

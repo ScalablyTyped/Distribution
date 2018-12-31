@@ -5,12 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrderContact extends js.Object {
   /**
-               * Free-form information about this contact. It could be any information related to this contact in addition to type, title, name, and signature user
-               * profile ID.
-               */
+    * Free-form information about this contact. It could be any information related to this contact in addition to type, title, name, and signature user
+    * profile ID.
+    */
   var contactInfo: js.UndefOr[java.lang.String] = js.undefined
   /** Name of this contact. */
   var contactName: js.UndefOr[java.lang.String] = js.undefined

@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait NavBarDisplay extends js.Object
 
 /**
-     * Constant Enum: Navigation Bar Display options for Xrm.Url.FormOpenParameters.navbar, Xrm.Url.ViewOpenParameters.navbar, and Xrm.Utility.FormOpenParameters.navbar.
-     * @see {@link Xrm.Url.NavBarDisplay}
-     */
+  * Constant Enum: Navigation Bar Display options for Xrm.Url.FormOpenParameters.navbar, Xrm.Url.ViewOpenParameters.navbar, and Xrm.Utility.FormOpenParameters.navbar.
+  * @see {@link Xrm.Url.NavBarDisplay}
+  */
 @JSGlobal("XrmEnum.NavBarDisplay")
 @js.native
 object NavBarDisplay extends js.Object {

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IndicesShrinkParams extends GenericParams {
   var index: java.lang.String
   var masterTimeout: js.UndefOr[TimeSpan] = js.undefined

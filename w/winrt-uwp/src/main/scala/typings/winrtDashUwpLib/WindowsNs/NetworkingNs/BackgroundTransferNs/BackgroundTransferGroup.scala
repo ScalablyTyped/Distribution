@@ -20,10 +20,10 @@ abstract class BackgroundTransferGroup () extends js.Object {
 @js.native
 object BackgroundTransferGroup extends js.Object {
   /**
-                   * Creates a transfer group using the provided group name.
-                   * @param name The name of the group. If a group with the this name already exists, this method will return a reference to the existing group object.
-                   * @return The new BackgroundTransferGroup .
-                   */
+    * Creates a transfer group using the provided group name.
+    * @param name The name of the group. If a group with the this name already exists, this method will return a reference to the existing group object.
+    * @return The new BackgroundTransferGroup .
+    */
   def createGroup(name: java.lang.String): winrtDashUwpLib.WindowsNs.NetworkingNs.BackgroundTransferNs.BackgroundTransferGroup = js.native
 }
 

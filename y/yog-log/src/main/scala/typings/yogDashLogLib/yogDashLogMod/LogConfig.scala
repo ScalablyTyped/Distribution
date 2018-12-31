@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LogConfig extends js.Object {
   var IS_ODP: js.UndefOr[scala.Boolean] = js.undefined
   var IS_OMP: js.UndefOr[yogDashLogLib.yogDashLogLibNumbers.`0` | yogDashLogLib.yogDashLogLibNumbers.`1`] = js.undefined

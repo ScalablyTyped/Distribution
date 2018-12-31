@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait FlexDirection extends js.Object
 
 /**
-     * Available directions for flex layouts.
-    */
+  * Available directions for flex layouts.
+  */
 @JSGlobal("sap.m.FlexDirection")
 @js.native
 object FlexDirection extends js.Object {

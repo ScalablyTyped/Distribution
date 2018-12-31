@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait App extends js.Object {
   var allowStop: scala.Boolean
   var name: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Toast extends js.Object {
   var progressbar: js.UndefOr[java.lang.String] = js.undefined
   var toast: js.UndefOr[java.lang.String] = js.undefined

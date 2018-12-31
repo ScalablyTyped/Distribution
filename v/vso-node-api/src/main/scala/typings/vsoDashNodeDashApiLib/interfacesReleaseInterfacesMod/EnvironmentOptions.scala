@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EnvironmentOptions extends js.Object {
   var autoLinkWorkItems: scala.Boolean
   var badgeEnabled: scala.Boolean

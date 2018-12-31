@@ -25,9 +25,9 @@ abstract class CustomSensor () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[CustomSensor, CustomSensorReadingChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                       * Gets the current sensor reading.
-                       * @return The current sensor reading.
-                       */
+    * Gets the current sensor reading.
+    * @return The current sensor reading.
+    */
   def getCurrentReading(): CustomSensorReading = js.native
   /** Occurs each time the sensor reports a new sensor reading. */
   def onreadingchanged(ev: CustomSensorReadingChangedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[CustomSensor]): scala.Unit = js.native
@@ -44,16 +44,16 @@ abstract class CustomSensor () extends js.Object {
 @js.native
 object CustomSensor extends js.Object {
   /**
-                       * Asynchronously obtains the sensor from its identifier.
-                       * @param sensorId The sensor identifier.
-                       * @return Returns the CustomSensor object from its identifier.
-                       */
+    * Asynchronously obtains the sensor from its identifier.
+    * @param sensorId The sensor identifier.
+    * @return Returns the CustomSensor object from its identifier.
+    */
   def fromIdAsync(sensorId: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.CustomNs.CustomSensor] = js.native
   /**
-                       * Gets the device selector from the given interface identifier.
-                       * @param interfaceId The interface Guid that is associated with the custom sensor. This Guid is defined and registered by the sensor.
-                       * @return Returns the device selector, if it exists; otherwise, null.
-                       */
+    * Gets the device selector from the given interface identifier.
+    * @param interfaceId The interface Guid that is associated with the custom sensor. This Guid is defined and registered by the sensor.
+    * @return Returns the device selector, if it exists; otherwise, null.
+    */
   def getDeviceSelector(interfaceId: java.lang.String): java.lang.String = js.native
 }
 

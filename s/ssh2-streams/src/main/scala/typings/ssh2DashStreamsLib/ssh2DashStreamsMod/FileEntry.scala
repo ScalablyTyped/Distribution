@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileEntry extends js.Object {
   var attrs: Attributes
   var filename: java.lang.String

@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 @js.native
 class TimedMetadataTrack protected () extends js.Object {
   /**
-                   * Initializes a new instance of the TimedMetadataTrack class.
-                   * @param id An identifier for the new timed metadata track.
-                   * @param language A string indicating the language of the new timed metadata track.
-                   * @param kind A value indicating the kind of metadata contained in the new track.
-                   */
+    * Initializes a new instance of the TimedMetadataTrack class.
+    * @param id An identifier for the new timed metadata track.
+    * @param language A string indicating the language of the new timed metadata track.
+    * @param kind A value indicating the kind of metadata contained in the new track.
+    */
   def this(id: java.lang.String, language: java.lang.String, kind: TimedMetadataKind) = this()
   /** Gets the list of media cues in the TimedMetadataTrack that are currently active. A cue is considered active after its StartTime has been reached until its Duration has been exceeded. */
   var activeCues: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[IMediaCue] = js.native
@@ -42,9 +42,9 @@ class TimedMetadataTrack protected () extends js.Object {
   /** Gets a value specifying the type of the media track. For TimedMetadataTrack this value will always be MediaTrackKind::TimedMetadata . */
   var trackKind: MediaTrackKind = js.native
   /**
-                   * Adds the specified media cue to the TimedMetadataTrack .
-                   * @param cue The media cue to add.
-                   */
+    * Adds the specified media cue to the TimedMetadataTrack .
+    * @param cue The media cue to add.
+    */
   def addCue(cue: IMediaCue): scala.Unit = js.native
   def addEventListener(`type`: java.lang.String, listener: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_]): scala.Unit = js.native
   @JSName("addEventListener")
@@ -71,9 +71,9 @@ class TimedMetadataTrack protected () extends js.Object {
     ev: TimedMetadataTrackFailedEventArgs with winrtDashUwpLib.WindowsNs.WinRTEvent[TimedMetadataTrack]
   ): scala.Unit = js.native
   /**
-                   * Removes the specified media cue from the TimedMetadataTrack .
-                   * @param cue The media cue to remove.
-                   */
+    * Removes the specified media cue from the TimedMetadataTrack .
+    * @param cue The media cue to remove.
+    */
   def removeCue(cue: IMediaCue): scala.Unit = js.native
   def removeEventListener(`type`: java.lang.String, listener: winrtDashUwpLib.WindowsNs.FoundationNs.EventHandler[_]): scala.Unit = js.native
   @JSName("removeEventListener")

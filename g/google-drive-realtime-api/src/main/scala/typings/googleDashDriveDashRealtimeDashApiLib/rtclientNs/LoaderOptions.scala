@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LoaderOptions extends js.Object {
   // Your Application ID from the Google APIs Console.
   var appId: java.lang.String

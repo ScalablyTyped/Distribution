@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RequestInit extends js.Object {
   var agent: js.UndefOr[RequestAgent | apolloDashEnvLib.apolloDashEnvLibNumbers.`false`] = js.undefined
   var body: js.UndefOr[BodyInit] = js.undefined

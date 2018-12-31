@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PointLabelOptions extends js.Object {
   var callback: js.UndefOr[js.Function1[/* arg */ js.Any, _]] = js.undefined
   var fontColor: js.UndefOr[ChartColor] = js.undefined

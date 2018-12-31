@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 package object webpackMergeNs {
   type ConfigurationMergeConfigFunction = js.Function1[/* customizeOptions */ CustomizeOptions, ConfigurationMergeFunction]
   type ConfigurationMergeFunction = js.Function1[
-    /* repeated */webpackLib.webpackMod.webpackNs.Configuration, 
+    /* repeated */ webpackLib.webpackMod.webpackNs.Configuration, 
     webpackLib.webpackMod.webpackNs.Configuration
   ]
   type CustomizeArrayFunction = js.Function3[

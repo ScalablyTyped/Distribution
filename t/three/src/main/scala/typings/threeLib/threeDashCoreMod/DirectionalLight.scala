@@ -17,8 +17,8 @@ class DirectionalLight () extends Light {
   @JSName("shadow")
   var shadow_DirectionalLight: DirectionalLightShadow = js.native
   /**
-       * Target used for shadow camera orientation.
-       */
+    * Target used for shadow camera orientation.
+    */
   var target: Object3D = js.native
 }
 

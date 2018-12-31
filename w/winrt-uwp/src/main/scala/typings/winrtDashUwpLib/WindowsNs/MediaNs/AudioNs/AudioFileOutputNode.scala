@@ -24,19 +24,19 @@ abstract class AudioFileOutputNode () extends js.Object {
   /** Closes the audio file output node. */
   def close(): scala.Unit = js.native
   /**
-                   * Disables all effects in the EffectDefinitions list with the specified effect definition.
-                   * @param definition The effect definition of the effects to disable.
-                   */
+    * Disables all effects in the EffectDefinitions list with the specified effect definition.
+    * @param definition The effect definition of the effects to disable.
+    */
   def disableEffectsByDefinition(definition: winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition): scala.Unit = js.native
   /**
-                   * Enables all effects in the EffectDefinitions list with the specified effect definition.
-                   * @param definition The effect definition of the effects to enable.
-                   */
+    * Enables all effects in the EffectDefinitions list with the specified effect definition.
+    * @param definition The effect definition of the effects to enable.
+    */
   def enableEffectsByDefinition(definition: winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition): scala.Unit = js.native
   /**
-                   * Finalizes the asynchronous operation of the audio file output node.
-                   * @return When this operation completes, a TranscodeFailureReason value is returned.
-                   */
+    * Finalizes the asynchronous operation of the audio file output node.
+    * @return When this operation completes, a TranscodeFailureReason value is returned.
+    */
   def finalizeAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.MediaNs.TranscodingNs.TranscodeFailureReason] = js.native
   /** Resets the audio file output node. */
   def reset(): scala.Unit = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VerifyOptions extends js.Object {
   var algorithms: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var audience: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
@@ -16,9 +15,9 @@ trait VerifyOptions extends js.Object {
   var issuer: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var jwtid: js.UndefOr[java.lang.String] = js.undefined
   /**
-       * @deprecated
-       * {string} - Max age of token
-       */
+    * @deprecated
+    * {string} - Max age of token
+    */
   var maxAge: js.UndefOr[java.lang.String] = js.undefined
   var subject: js.UndefOr[java.lang.String] = js.undefined
 }

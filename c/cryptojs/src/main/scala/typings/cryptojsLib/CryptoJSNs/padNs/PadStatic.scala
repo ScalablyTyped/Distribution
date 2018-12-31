@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PadStatic extends js.Object {
   var AnsiX923: AnsiX923
   var Iso10126: Iso10126

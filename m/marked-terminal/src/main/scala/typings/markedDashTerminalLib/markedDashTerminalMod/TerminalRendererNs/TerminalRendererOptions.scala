@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TerminalRendererOptions extends js.Object {
   var blockquote: js.UndefOr[
     chalkLib.chalkMod.Chalk | (js.Function1[/* s */ java.lang.String, java.lang.String])

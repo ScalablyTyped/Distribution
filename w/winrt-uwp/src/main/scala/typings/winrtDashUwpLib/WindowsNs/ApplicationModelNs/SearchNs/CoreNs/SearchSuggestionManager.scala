@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Manages access to search suggestions for the in-app SearchBox control. */
 @JSGlobal("Windows.ApplicationModel.Search.Core.SearchSuggestionManager")
 @js.native
+/** Initializes a new instance of the SearchSuggestionManager class. */
 class SearchSuggestionManager () extends js.Object {
   /** Raised when the user presses a key that initiates type-to-search. */
   @JSName("onrequestingfocusonkeyboardinput")
@@ -33,15 +34,15 @@ class SearchSuggestionManager () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[SearchSuggestionManager, SearchSuggestionsRequestedEventArgs]
   ): scala.Unit = js.native
   /**
-                       * Stores the specified query in the search history.
-                       * @param queryText The query.
-                       */
+    * Stores the specified query in the search history.
+    * @param queryText The query.
+    */
   def addToHistory(queryText: java.lang.String): scala.Unit = js.native
   /**
-                       * Stores the specified query and input language in the search history.
-                       * @param queryText The query.
-                       * @param language The input language. The input language ensures that the query string is displayed in the search history for the correct language.
-                       */
+    * Stores the specified query and input language in the search history.
+    * @param queryText The query.
+    * @param language The input language. The input language ensures that the query string is displayed in the search history for the correct language.
+    */
   def addToHistory(queryText: java.lang.String, language: java.lang.String): scala.Unit = js.native
   /** Clears all search history contexts for the current app. */
   def clearHistory(): scala.Unit = js.native
@@ -65,27 +66,27 @@ class SearchSuggestionManager () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[SearchSuggestionManager, SearchSuggestionsRequestedEventArgs]
   ): scala.Unit = js.native
   /**
-                       * Specifies whether suggestions based on local files are added automatically to the Suggestions collection, and defines the criteria that Windows uses to locate and filter these suggestions.
-                       * @param settings The new settings for local content suggestions.
-                       */
+    * Specifies whether suggestions based on local files are added automatically to the Suggestions collection, and defines the criteria that Windows uses to locate and filter these suggestions.
+    * @param settings The new settings for local content suggestions.
+    */
   def setLocalContentSuggestionSettings(settings: winrtDashUwpLib.WindowsNs.ApplicationModelNs.SearchNs.LocalContentSuggestionSettings): scala.Unit = js.native
   /**
-                       * Assigns the current search query.
-                       * @param queryText The query.
-                       */
+    * Assigns the current search query.
+    * @param queryText The query.
+    */
   def setQuery(queryText: java.lang.String): scala.Unit = js.native
   /**
-                       * Assigns the current search query with the specified input language.
-                       * @param queryText The query.
-                       * @param language The input language.
-                       */
+    * Assigns the current search query with the specified input language.
+    * @param queryText The query.
+    * @param language The input language.
+    */
   def setQuery(queryText: java.lang.String, language: java.lang.String): scala.Unit = js.native
   /**
-                       * Assigns the current search query with the specified input language and Input Method Editor (IME) info.
-                       * @param queryText The query.
-                       * @param language The input language.
-                       * @param linguisticDetails Info about the query text that the user enters through an IME.
-                       */
+    * Assigns the current search query with the specified input language and Input Method Editor (IME) info.
+    * @param queryText The query.
+    * @param language The input language.
+    * @param linguisticDetails Info about the query text that the user enters through an IME.
+    */
   def setQuery(
     queryText: java.lang.String,
     language: java.lang.String,

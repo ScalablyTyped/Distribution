@@ -34,136 +34,24 @@ trait Promise[T] extends js.Object {
   		 * itself throw an error.
   		 */
   def done(): scala.Unit = js.native
-  /**
-  		 * Much like then, but with different behavior around unhandled rejection. If there is an unhandled rejection,
-  		 * either because promise is rejected and no onRejected callback was provided, or because onFulfilled or onRejected
-  		 * threw an error or returned a rejected promise, the resulting rejection reason is thrown as an exception in a
-  		 * future turn of the event loop.
-  		 * This method should be used to terminate chains of promises that will not be passed elsewhere. Since exceptions
-  		 * thrown in then callbacks are consumed and transformed into rejections, exceptions at the end of the chain are
-  		 * easy to accidentally, silently ignore. By arranging for the exception to be thrown in a future turn of the
-  		 * event loop, so that it won't be caught, it causes an onerror event on the browser window, or an uncaughtException
-  		 * event on Node.js's process object.
-  		 * Exceptions thrown by done will have long stack traces, if Q.longStackSupport is set to true. If Q.onerror is set,
-  		 * exceptions will be delivered there instead of thrown in a future turn.
-  		 * The Golden Rule of done vs. then usage is: either return your promise to someone else, or if the chain ends
-  		 * with you, call done to terminate it. Terminating with catch is not sufficient because the catch handler may
-  		 * itself throw an error.
-  		 */
   def done(onFulfilled: js.Function1[/* value */ T, _]): scala.Unit = js.native
-  /**
-  		 * Much like then, but with different behavior around unhandled rejection. If there is an unhandled rejection,
-  		 * either because promise is rejected and no onRejected callback was provided, or because onFulfilled or onRejected
-  		 * threw an error or returned a rejected promise, the resulting rejection reason is thrown as an exception in a
-  		 * future turn of the event loop.
-  		 * This method should be used to terminate chains of promises that will not be passed elsewhere. Since exceptions
-  		 * thrown in then callbacks are consumed and transformed into rejections, exceptions at the end of the chain are
-  		 * easy to accidentally, silently ignore. By arranging for the exception to be thrown in a future turn of the
-  		 * event loop, so that it won't be caught, it causes an onerror event on the browser window, or an uncaughtException
-  		 * event on Node.js's process object.
-  		 * Exceptions thrown by done will have long stack traces, if Q.longStackSupport is set to true. If Q.onerror is set,
-  		 * exceptions will be delivered there instead of thrown in a future turn.
-  		 * The Golden Rule of done vs. then usage is: either return your promise to someone else, or if the chain ends
-  		 * with you, call done to terminate it. Terminating with catch is not sufficient because the catch handler may
-  		 * itself throw an error.
-  		 */
   def done(onFulfilled: js.Function1[/* value */ T, _], onRejected: js.Function1[/* reason */ js.Any, _]): scala.Unit = js.native
-  /**
-  		 * Much like then, but with different behavior around unhandled rejection. If there is an unhandled rejection,
-  		 * either because promise is rejected and no onRejected callback was provided, or because onFulfilled or onRejected
-  		 * threw an error or returned a rejected promise, the resulting rejection reason is thrown as an exception in a
-  		 * future turn of the event loop.
-  		 * This method should be used to terminate chains of promises that will not be passed elsewhere. Since exceptions
-  		 * thrown in then callbacks are consumed and transformed into rejections, exceptions at the end of the chain are
-  		 * easy to accidentally, silently ignore. By arranging for the exception to be thrown in a future turn of the
-  		 * event loop, so that it won't be caught, it causes an onerror event on the browser window, or an uncaughtException
-  		 * event on Node.js's process object.
-  		 * Exceptions thrown by done will have long stack traces, if Q.longStackSupport is set to true. If Q.onerror is set,
-  		 * exceptions will be delivered there instead of thrown in a future turn.
-  		 * The Golden Rule of done vs. then usage is: either return your promise to someone else, or if the chain ends
-  		 * with you, call done to terminate it. Terminating with catch is not sufficient because the catch handler may
-  		 * itself throw an error.
-  		 */
   def done(
     onFulfilled: js.Function1[/* value */ T, _],
     onRejected: js.Function1[/* reason */ js.Any, _],
     onProgress: js.Function1[/* progress */ js.Any, _]
   ): scala.Unit = js.native
-  /**
-  		 * Much like then, but with different behavior around unhandled rejection. If there is an unhandled rejection,
-  		 * either because promise is rejected and no onRejected callback was provided, or because onFulfilled or onRejected
-  		 * threw an error or returned a rejected promise, the resulting rejection reason is thrown as an exception in a
-  		 * future turn of the event loop.
-  		 * This method should be used to terminate chains of promises that will not be passed elsewhere. Since exceptions
-  		 * thrown in then callbacks are consumed and transformed into rejections, exceptions at the end of the chain are
-  		 * easy to accidentally, silently ignore. By arranging for the exception to be thrown in a future turn of the
-  		 * event loop, so that it won't be caught, it causes an onerror event on the browser window, or an uncaughtException
-  		 * event on Node.js's process object.
-  		 * Exceptions thrown by done will have long stack traces, if Q.longStackSupport is set to true. If Q.onerror is set,
-  		 * exceptions will be delivered there instead of thrown in a future turn.
-  		 * The Golden Rule of done vs. then usage is: either return your promise to someone else, or if the chain ends
-  		 * with you, call done to terminate it. Terminating with catch is not sufficient because the catch handler may
-  		 * itself throw an error.
-  		 */
   def done(
     onFulfilled: js.Function1[/* value */ T, _],
     onRejected: scala.Null,
     onProgress: js.Function1[/* progress */ js.Any, _]
   ): scala.Unit = js.native
-  /**
-  		 * Much like then, but with different behavior around unhandled rejection. If there is an unhandled rejection,
-  		 * either because promise is rejected and no onRejected callback was provided, or because onFulfilled or onRejected
-  		 * threw an error or returned a rejected promise, the resulting rejection reason is thrown as an exception in a
-  		 * future turn of the event loop.
-  		 * This method should be used to terminate chains of promises that will not be passed elsewhere. Since exceptions
-  		 * thrown in then callbacks are consumed and transformed into rejections, exceptions at the end of the chain are
-  		 * easy to accidentally, silently ignore. By arranging for the exception to be thrown in a future turn of the
-  		 * event loop, so that it won't be caught, it causes an onerror event on the browser window, or an uncaughtException
-  		 * event on Node.js's process object.
-  		 * Exceptions thrown by done will have long stack traces, if Q.longStackSupport is set to true. If Q.onerror is set,
-  		 * exceptions will be delivered there instead of thrown in a future turn.
-  		 * The Golden Rule of done vs. then usage is: either return your promise to someone else, or if the chain ends
-  		 * with you, call done to terminate it. Terminating with catch is not sufficient because the catch handler may
-  		 * itself throw an error.
-  		 */
   def done(onFulfilled: scala.Null, onRejected: js.Function1[/* reason */ js.Any, _]): scala.Unit = js.native
-  /**
-  		 * Much like then, but with different behavior around unhandled rejection. If there is an unhandled rejection,
-  		 * either because promise is rejected and no onRejected callback was provided, or because onFulfilled or onRejected
-  		 * threw an error or returned a rejected promise, the resulting rejection reason is thrown as an exception in a
-  		 * future turn of the event loop.
-  		 * This method should be used to terminate chains of promises that will not be passed elsewhere. Since exceptions
-  		 * thrown in then callbacks are consumed and transformed into rejections, exceptions at the end of the chain are
-  		 * easy to accidentally, silently ignore. By arranging for the exception to be thrown in a future turn of the
-  		 * event loop, so that it won't be caught, it causes an onerror event on the browser window, or an uncaughtException
-  		 * event on Node.js's process object.
-  		 * Exceptions thrown by done will have long stack traces, if Q.longStackSupport is set to true. If Q.onerror is set,
-  		 * exceptions will be delivered there instead of thrown in a future turn.
-  		 * The Golden Rule of done vs. then usage is: either return your promise to someone else, or if the chain ends
-  		 * with you, call done to terminate it. Terminating with catch is not sufficient because the catch handler may
-  		 * itself throw an error.
-  		 */
   def done(
     onFulfilled: scala.Null,
     onRejected: js.Function1[/* reason */ js.Any, _],
     onProgress: js.Function1[/* progress */ js.Any, _]
   ): scala.Unit = js.native
-  /**
-  		 * Much like then, but with different behavior around unhandled rejection. If there is an unhandled rejection,
-  		 * either because promise is rejected and no onRejected callback was provided, or because onFulfilled or onRejected
-  		 * threw an error or returned a rejected promise, the resulting rejection reason is thrown as an exception in a
-  		 * future turn of the event loop.
-  		 * This method should be used to terminate chains of promises that will not be passed elsewhere. Since exceptions
-  		 * thrown in then callbacks are consumed and transformed into rejections, exceptions at the end of the chain are
-  		 * easy to accidentally, silently ignore. By arranging for the exception to be thrown in a future turn of the
-  		 * event loop, so that it won't be caught, it causes an onerror event on the browser window, or an uncaughtException
-  		 * event on Node.js's process object.
-  		 * Exceptions thrown by done will have long stack traces, if Q.longStackSupport is set to true. If Q.onerror is set,
-  		 * exceptions will be delivered there instead of thrown in a future turn.
-  		 * The Golden Rule of done vs. then usage is: either return your promise to someone else, or if the chain ends
-  		 * with you, call done to terminate it. Terminating with catch is not sufficient because the catch handler may
-  		 * itself throw an error.
-  		 */
   def done(
     onFulfilled: scala.Null,
     onRejected: scala.Null,
@@ -280,14 +168,9 @@ trait Promise[T] extends js.Object {
   		 * rejected, instead calls onRejected with the first rejected promise's rejection reason.
   		 * This is especially useful in conjunction with all
   		 */
-  def spread[U](onFulfill: js.Function1[/* repeated */js.Any, IWhenable[U]]): Promise[U] = js.native
-  /**
-  		 * Like then, but "spreads" the array into a variadic fulfillment handler. If any of the promises in the array are
-  		 * rejected, instead calls onRejected with the first rejected promise's rejection reason.
-  		 * This is especially useful in conjunction with all
-  		 */
+  def spread[U](onFulfill: js.Function1[/* repeated */ js.Any, IWhenable[U]]): Promise[U] = js.native
   def spread[U](
-    onFulfill: js.Function1[/* repeated */js.Any, IWhenable[U]],
+    onFulfill: js.Function1[/* repeated */ js.Any, IWhenable[U]],
     onReject: js.Function1[/* reason */ js.Any, IWhenable[U]]
   ): Promise[U] = js.native
   /**
@@ -299,56 +182,32 @@ trait Promise[T] extends js.Object {
   		 * The then method from the Promises/A+ specification, with an additional progress handler.
   		 */
   def `then`[U](): Promise[U] = js.native
-  /**
-  		 * The then method from the Promises/A+ specification, with an additional progress handler.
-  		 */
   def `then`[U](onFulfill: js.Function1[/* value */ T, IWhenable[U]]): Promise[U] = js.native
-  /**
-  		 * The then method from the Promises/A+ specification, with an additional progress handler.
-  		 */
   def `then`[U](
     onFulfill: js.Function1[/* value */ T, IWhenable[U]],
     onReject: js.Function1[/* error */ js.Any, IWhenable[U]]
   ): Promise[U] = js.native
-  /**
-  		 * The then method from the Promises/A+ specification, with an additional progress handler.
-  		 */
   def `then`[U](
     onFulfill: js.Function1[/* value */ T, IWhenable[U]],
     onReject: js.Function1[/* error */ js.Any, IWhenable[U]],
     onProgress: js.Function1[/* progress */ js.Any, _]
   ): Promise[U] = js.native
-  /**
-  		 * The then method from the Promises/A+ specification, with an additional progress handler.
-  		 */
   def `then`[U](
     onFulfill: js.Function1[/* value */ T, IWhenable[U]],
     onReject: scala.Null,
     onProgress: js.Function1[/* progress */ js.Any, _]
   ): Promise[U] = js.native
-  /**
-  		 * The then method from the Promises/A+ specification, with an additional progress handler.
-  		 */
   def `then`[U](onFulfill: scala.Null, onReject: js.Function1[/* error */ js.Any, IWhenable[U]]): Promise[U] = js.native
-  /**
-  		 * The then method from the Promises/A+ specification, with an additional progress handler.
-  		 */
   def `then`[U](
     onFulfill: scala.Null,
     onReject: js.Function1[/* error */ js.Any, IWhenable[U]],
     onProgress: js.Function1[/* progress */ js.Any, _]
   ): Promise[U] = js.native
-  /**
-  		 * The then method from the Promises/A+ specification, with an additional progress handler.
-  		 */
   def `then`[U](onFulfill: scala.Null, onReject: scala.Null, onProgress: js.Function1[/* progress */ js.Any, _]): Promise[U] = js.native
   /**
   		 * A sugar method, equivalent to promise.then(function () { throw reason; }).
   		 */
   def thenReject[U](): Promise[U] = js.native
-  /**
-  		 * A sugar method, equivalent to promise.then(function () { throw reason; }).
-  		 */
   def thenReject[U](reason: js.Any): Promise[U] = js.native
   /**
   		 * A sugar method, equivalent to promise.then(function () { return value; }).
@@ -391,11 +250,6 @@ trait Promise[T] extends js.Object {
   		 * is not supplied, the message will be "Timed out after " + ms + " ms".
   		 */
   def timeout(ms: scala.Double): Promise[T] = js.native
-  /**
-  		 * Returns a promise that will have the same result as promise, except that if promise is not fulfilled or rejected
-  		 * before ms milliseconds, the returned promise will be rejected with an Error with the given message. If message
-  		 * is not supplied, the message will be "Timed out after " + ms + " ms".
-  		 */
   def timeout(ms: scala.Double, message: java.lang.String): Promise[T] = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AuthorityKeyIdentifier extends js.Object {
   var authorityCertIssuer: js.Array[pkijsLib.srcAccessDescriptionMod.default]
   var authorityCertSerialNumber: asn1jsLib.asn1jsMod.Integer

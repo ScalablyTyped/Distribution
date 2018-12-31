@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @class
-         */
+  * @class
+  */
 @js.native
 trait ExtJS
   extends Browser

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaginationPanelProps extends js.Object {
   /**
   	 * The basic components for the pagination panel, provided here so that you have the option to use some of them

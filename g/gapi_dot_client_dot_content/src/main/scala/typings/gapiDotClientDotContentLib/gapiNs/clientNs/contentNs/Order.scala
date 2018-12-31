@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Order extends js.Object {
   /** Whether the order was acknowledged. */
   var acknowledged: js.UndefOr[scala.Boolean] = js.undefined
@@ -25,9 +24,9 @@ trait Order extends js.Object {
   /** Merchant-provided id of the order. */
   var merchantOrderId: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The net amount for the order. For example, if an order was originally for a grand total of $100 and a refund was issued for $20, the net amount will be
-               * $80.
-               */
+    * The net amount for the order. For example, if an order was originally for a grand total of $100 and a refund was issued for $20, the net amount will be
+    * $80.
+    */
   var netAmount: js.UndefOr[Price] = js.undefined
   /** The details of the payment method. */
   var paymentMethod: js.UndefOr[OrderPaymentMethod] = js.undefined

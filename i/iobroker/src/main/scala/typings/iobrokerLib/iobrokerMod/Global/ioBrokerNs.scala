@@ -124,51 +124,30 @@ object ioBrokerNs extends js.Object {
       callback: js.Function1[/* result */ scala.Boolean, scala.Unit]
     ): scala.Unit = js.native
     /**
-                 * Changes access rights of all files in the adapter directory
-                 * @param adapter Name of the adapter instance, e.g. "admin.0". Defaults to the namespace of this adapter.
-                 * @param path Pattern to match the file path against
-                 * @param options Mode of the access change as a number or hexadecimal string
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Changes access rights of all files in the adapter directory
+      * @param adapter Name of the adapter instance, e.g. "admin.0". Defaults to the namespace of this adapter.
+      * @param path Pattern to match the file path against
+      * @param options Mode of the access change as a number or hexadecimal string
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def chmodFile(
       adapter: java.lang.String,
       path: java.lang.String,
       options: iobrokerLib.Anon_Mode,
       callback: ChownFileCallback
     ): scala.Unit = js.native
-    /**
-                 * Changes access rights of all files in the adapter directory
-                 * @param adapter Name of the adapter instance, e.g. "admin.0". Defaults to the namespace of this adapter.
-                 * @param path Pattern to match the file path against
-                 * @param options Mode of the access change as a number or hexadecimal string
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
     def chmodFile(
       adapter: java.lang.String,
       path: java.lang.String,
       options: stdLib.Record[java.lang.String, _],
       callback: ChownFileCallback
     ): scala.Unit = js.native
-    /**
-                 * Changes access rights of all files in the adapter directory
-                 * @param adapter Name of the adapter instance, e.g. "admin.0". Defaults to the namespace of this adapter.
-                 * @param path Pattern to match the file path against
-                 * @param options Mode of the access change as a number or hexadecimal string
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
     def chmodFile(
       adapter: scala.Null,
       path: java.lang.String,
       options: iobrokerLib.Anon_Mode,
       callback: ChownFileCallback
     ): scala.Unit = js.native
-    /**
-                 * Changes access rights of all files in the adapter directory
-                 * @param adapter Name of the adapter instance, e.g. "admin.0". Defaults to the namespace of this adapter.
-                 * @param path Pattern to match the file path against
-                 * @param options Mode of the access change as a number or hexadecimal string
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
     def chmodFile(
       adapter: scala.Null,
       path: java.lang.String,
@@ -176,25 +155,15 @@ object ioBrokerNs extends js.Object {
       callback: ChownFileCallback
     ): scala.Unit = js.native
     /** gets the devices of this instance */
-    
     /** creates an object with type channel */
     def createChannel(parentDevice: java.lang.String, channelName: java.lang.String): scala.Unit = js.native
-    /** gets the devices of this instance */
-    
-    /** creates an object with type channel */
     def createChannel(parentDevice: java.lang.String, channelName: java.lang.String, roleOrCommon: java.lang.String): scala.Unit = js.native
-    /** gets the devices of this instance */
-    
-    /** creates an object with type channel */
     def createChannel(
       parentDevice: java.lang.String,
       channelName: java.lang.String,
       roleOrCommon: java.lang.String,
       native: js.Any
     ): scala.Unit = js.native
-    /** gets the devices of this instance */
-    
-    /** creates an object with type channel */
     def createChannel(
       parentDevice: java.lang.String,
       channelName: java.lang.String,
@@ -202,9 +171,6 @@ object ioBrokerNs extends js.Object {
       native: js.Any,
       options: js.Any
     ): scala.Unit = js.native
-    /** gets the devices of this instance */
-    
-    /** creates an object with type channel */
     def createChannel(
       parentDevice: java.lang.String,
       channelName: java.lang.String,
@@ -213,22 +179,13 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetObjectCallback
     ): scala.Unit = js.native
-    /** gets the devices of this instance */
-    
-    /** creates an object with type channel */
     def createChannel(parentDevice: java.lang.String, channelName: java.lang.String, roleOrCommon: js.Object): scala.Unit = js.native
-    /** gets the devices of this instance */
-    
-    /** creates an object with type channel */
     def createChannel(
       parentDevice: java.lang.String,
       channelName: java.lang.String,
       roleOrCommon: js.Object,
       native: js.Any
     ): scala.Unit = js.native
-    /** gets the devices of this instance */
-    
-    /** creates an object with type channel */
     def createChannel(
       parentDevice: java.lang.String,
       channelName: java.lang.String,
@@ -236,9 +193,6 @@ object ioBrokerNs extends js.Object {
       native: js.Any,
       options: js.Any
     ): scala.Unit = js.native
-    /** gets the devices of this instance */
-    
-    /** creates an object with type channel */
     def createChannel(
       parentDevice: java.lang.String,
       channelName: java.lang.String,
@@ -251,21 +205,9 @@ object ioBrokerNs extends js.Object {
     // devices and channels
     /** creates an object with type device */
     def createDevice(deviceName: java.lang.String): scala.Unit = js.native
-    // ==============================
-    // devices and channels
-    /** creates an object with type device */
     def createDevice(deviceName: java.lang.String, common: js.Any): scala.Unit = js.native
-    // ==============================
-    // devices and channels
-    /** creates an object with type device */
     def createDevice(deviceName: java.lang.String, common: js.Any, native: js.Any): scala.Unit = js.native
-    // ==============================
-    // devices and channels
-    /** creates an object with type device */
     def createDevice(deviceName: java.lang.String, common: js.Any, native: js.Any, options: js.Any): scala.Unit = js.native
-    // ==============================
-    // devices and channels
-    /** creates an object with type device */
     def createDevice(
       deviceName: java.lang.String,
       common: js.Any,
@@ -275,14 +217,12 @@ object ioBrokerNs extends js.Object {
     ): scala.Unit = js.native
     /** creates a state and the corresponding object */
     def createState(parentDevice: java.lang.String, parentChannel: java.lang.String, stateName: java.lang.String): scala.Unit = js.native
-    /** creates a state and the corresponding object */
     def createState(
       parentDevice: java.lang.String,
       parentChannel: java.lang.String,
       stateName: java.lang.String,
       roleOrCommon: java.lang.String
     ): scala.Unit = js.native
-    /** creates a state and the corresponding object */
     def createState(
       parentDevice: java.lang.String,
       parentChannel: java.lang.String,
@@ -290,7 +230,6 @@ object ioBrokerNs extends js.Object {
       roleOrCommon: java.lang.String,
       native: js.Any
     ): scala.Unit = js.native
-    /** creates a state and the corresponding object */
     def createState(
       parentDevice: java.lang.String,
       parentChannel: java.lang.String,
@@ -299,7 +238,6 @@ object ioBrokerNs extends js.Object {
       native: js.Any,
       options: js.Any
     ): scala.Unit = js.native
-    /** creates a state and the corresponding object */
     def createState(
       parentDevice: java.lang.String,
       parentChannel: java.lang.String,
@@ -309,14 +247,12 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetObjectCallback
     ): scala.Unit = js.native
-    /** creates a state and the corresponding object */
     def createState(
       parentDevice: java.lang.String,
       parentChannel: java.lang.String,
       stateName: java.lang.String,
       roleOrCommon: js.Object
     ): scala.Unit = js.native
-    /** creates a state and the corresponding object */
     def createState(
       parentDevice: java.lang.String,
       parentChannel: java.lang.String,
@@ -324,7 +260,6 @@ object ioBrokerNs extends js.Object {
       roleOrCommon: js.Object,
       native: js.Any
     ): scala.Unit = js.native
-    /** creates a state and the corresponding object */
     def createState(
       parentDevice: java.lang.String,
       parentChannel: java.lang.String,
@@ -333,7 +268,6 @@ object ioBrokerNs extends js.Object {
       native: js.Any,
       options: js.Any
     ): scala.Unit = js.native
-    /** creates a state and the corresponding object */
     def createState(
       parentDevice: java.lang.String,
       parentChannel: java.lang.String,
@@ -346,46 +280,34 @@ object ioBrokerNs extends js.Object {
     def delFile(adapterName: java.lang.String, path: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
     def delFile(adapterName: java.lang.String, path: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     /**
-                 * Deletes an object (which might not belong to this adapter) from the object db
-                 * @param id - The id of the object including namespace
-                 */
+      * Deletes an object (which might not belong to this adapter) from the object db
+      * @param id - The id of the object including namespace
+      */
     def delForeignObject(id: java.lang.String): scala.Unit = js.native
-    /**
-                 * Deletes an object (which might not belong to this adapter) from the object db
-                 * @param id - The id of the object including namespace
-                 */
     def delForeignObject(id: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
     def delForeignObject(id: java.lang.String, options: js.Any): scala.Unit = js.native
     def delForeignObject(id: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     /** Deletes a state from the states DB, but not the associated object */
     def delForeignState(id: java.lang.String): scala.Unit = js.native
-    /** Deletes a state from the states DB, but not the associated object */
     def delForeignState(id: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
     def delForeignState(id: java.lang.String, options: js.Any): scala.Unit = js.native
     def delForeignState(id: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     /**
-                 * Deletes an object from the object db
-                 * @param id - The id of the object without namespace
-                 */
+      * Deletes an object from the object db
+      * @param id - The id of the object without namespace
+      */
     def delObject(id: java.lang.String): scala.Unit = js.native
-    /**
-                 * Deletes an object from the object db
-                 * @param id - The id of the object without namespace
-                 */
     def delObject(id: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
     def delObject(id: java.lang.String, options: js.Any): scala.Unit = js.native
     def delObject(id: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     /** Deletes a state from the states DB, but not the associated object. Consider using @link{deleteState} instead */
     def delState(id: java.lang.String): scala.Unit = js.native
-    /** Deletes a state from the states DB, but not the associated object. Consider using @link{deleteState} instead */
     def delState(id: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
     def delState(id: java.lang.String, options: js.Any): scala.Unit = js.native
     def delState(id: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     /** deletes a channel and its states */
     def deleteChannel(channelName: java.lang.String): scala.Unit = js.native
-    /** deletes a channel and its states */
     def deleteChannel(channelName: java.lang.String, options: js.Any): scala.Unit = js.native
-    /** deletes a channel and its states */
     def deleteChannel(channelName: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     def deleteChannel(parentDevice: java.lang.String, channelName: java.lang.String): scala.Unit = js.native
     def deleteChannel(parentDevice: java.lang.String, channelName: java.lang.String, options: js.Any): scala.Unit = js.native
@@ -411,9 +333,7 @@ object ioBrokerNs extends js.Object {
     ): scala.Unit = js.native
     /** deletes a device, its channels and states */
     def deleteDevice(deviceName: java.lang.String): scala.Unit = js.native
-    /** deletes a device, its channels and states */
     def deleteDevice(deviceName: java.lang.String, options: js.Any): scala.Unit = js.native
-    /** deletes a device, its channels and states */
     def deleteDevice(deviceName: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     def deleteState(parentChannel: java.lang.String, stateName: java.lang.String): scala.Unit = js.native
     def deleteState(parentChannel: java.lang.String, stateName: java.lang.String, options: js.Any): scala.Unit = js.native
@@ -439,9 +359,7 @@ object ioBrokerNs extends js.Object {
     ): scala.Unit = js.native
     /** deletes a state */
     def deleteState(stateName: java.lang.String): scala.Unit = js.native
-    /** deletes a state */
     def deleteState(stateName: java.lang.String, options: js.Any): scala.Unit = js.native
-    /** deletes a state */
     def deleteState(stateName: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     def deleteStateFromEnum(
       enumName: java.lang.String,
@@ -466,21 +384,19 @@ object ioBrokerNs extends js.Object {
     ): scala.Unit = js.native
     /** Extend an object (which might not belong to this adapter) and create it if it might not exist */
     def extendForeignObject(id: java.lang.String, objPart: PartialObject): scala.Unit = js.native
-    /** Extend an object (which might not belong to this adapter) and create it if it might not exist */
     def extendForeignObject(id: java.lang.String, objPart: PartialObject, callback: SetObjectCallback): scala.Unit = js.native
     def extendForeignObject(id: java.lang.String, objPart: PartialObject, options: js.Any): scala.Unit = js.native
     def extendForeignObject(id: java.lang.String, objPart: PartialObject, options: js.Any, callback: SetObjectCallback): scala.Unit = js.native
     /** Extend an object and create it if it might not exist */
     def extendObject(id: java.lang.String, objPart: PartialObject): scala.Unit = js.native
-    /** Extend an object and create it if it might not exist */
     def extendObject(id: java.lang.String, objPart: PartialObject, callback: SetObjectCallback): scala.Unit = js.native
     def extendObject(id: java.lang.String, objPart: PartialObject, options: js.Any): scala.Unit = js.native
     def extendObject(id: java.lang.String, objPart: PartialObject, options: js.Any, callback: SetObjectCallback): scala.Unit = js.native
     // tslint:enable:unified-signatures
     /**
-                 * Finds an object by its ID or name
-                 * @param type - common.type of the state
-                 */
+      * Finds an object by its ID or name
+      * @param type - common.type of the state
+      */
     def findForeignObject(idOrName: java.lang.String, `type`: java.lang.String, callback: FindObjectCallback): scala.Unit = js.native
     def findForeignObject(
       idOrName: java.lang.String,
@@ -498,8 +414,6 @@ object ioBrokerNs extends js.Object {
     def formatDate(dateObj: stdLib.Date, isDuration: java.lang.String, format: java.lang.String): java.lang.String = js.native
     def formatDate(dateObj: stdLib.Date, isDuration: scala.Boolean, format: java.lang.String): java.lang.String = js.native
     def formatValue(value: java.lang.String, decimals: scala.Double, format: js.Any): java.lang.String = js.native
-    // ==============================
-    // formatting
     def formatValue(value: java.lang.String, format: js.Any): java.lang.String = js.native
     def formatValue(value: scala.Double, decimals: scala.Double, format: js.Any): java.lang.String = js.native
     // ==============================
@@ -508,11 +422,11 @@ object ioBrokerNs extends js.Object {
     /** Get all states, channels and devices of this adapter */
     def getAdapterObjects(callback: js.Function1[/* objects */ stdLib.Record[java.lang.String, Object], scala.Unit]): scala.Unit = js.native
     /**
-                 * Reads a binary state from Redis
-                 * @param id The id of the state
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Reads a binary state from Redis
+      * @param id The id of the state
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def getBinaryState(id: java.lang.String, callback: GetBinaryStateCallback): scala.Unit = js.native
     def getBinaryState(id: java.lang.String, options: js.Any, callback: GetBinaryStateCallback): scala.Unit = js.native
     /** Returns SSL certificates by name (private key, public cert and chained certificate) for creation of HTTPS servers */
@@ -528,32 +442,32 @@ object ioBrokerNs extends js.Object {
         ]
     ): scala.Unit = js.native
     /**
-                 * Returns a list of all channels in this adapter instance
-                 * @param parentDevice (optional) Name of the parent device to filter the channels by
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Returns a list of all channels in this adapter instance
+      * @param parentDevice (optional) Name of the parent device to filter the channels by
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def getChannels(callback: GetObjectsCallback3[ChannelObject]): scala.Unit = js.native
     def getChannels(parentDevice: java.lang.String, callback: GetObjectsCallback3[ChannelObject]): scala.Unit = js.native
     def getChannels(parentDevice: java.lang.String, options: js.Any, callback: GetObjectsCallback3[ChannelObject]): scala.Unit = js.native
     def getChannels(parentDevice: scala.Null, callback: GetObjectsCallback3[ChannelObject]): scala.Unit = js.native
     def getChannels(parentDevice: scala.Null, options: js.Any, callback: GetObjectsCallback3[ChannelObject]): scala.Unit = js.native
     /**
-                 * Returns a list of all channels in this adapter instance
-                 * @param parentDevice (optional) Name of the parent device to filter the channels by
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Returns a list of all channels in this adapter instance
+      * @param parentDevice (optional) Name of the parent device to filter the channels by
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def getChannelsOf(callback: GetObjectsCallback3[ChannelObject]): scala.Unit = js.native
     def getChannelsOf(parentDevice: java.lang.String, callback: GetObjectsCallback3[ChannelObject]): scala.Unit = js.native
     def getChannelsOf(parentDevice: java.lang.String, options: js.Any, callback: GetObjectsCallback3[ChannelObject]): scala.Unit = js.native
     def getChannelsOf(parentDevice: scala.Null, callback: GetObjectsCallback3[ChannelObject]): scala.Unit = js.native
     def getChannelsOf(parentDevice: scala.Null, options: js.Any, callback: GetObjectsCallback3[ChannelObject]): scala.Unit = js.native
     /**
-                 * Returns a list of all devices in this adapter instance
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Returns a list of all devices in this adapter instance
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def getDevices(callback: GetObjectsCallback3[DeviceObject]): scala.Unit = js.native
     def getDevices(options: js.Any, callback: GetObjectsCallback3[DeviceObject]): scala.Unit = js.native
     // ==============================
@@ -597,14 +511,13 @@ object ioBrokerNs extends js.Object {
     def getObject(id: java.lang.String, callback: GetObjectCallback): scala.Unit = js.native
     def getObject(id: java.lang.String, options: js.Any, callback: GetObjectCallback): scala.Unit = js.native
     /*	===============================
-                    Functions defined in adapter.js
-                    =============================== */
-    
+      Functions defined in adapter.js
+      =============================== */
     /**
-                 * Helper function that looks for first free TCP port starting with the given one.
-                 * @param port - The port to start with
-                 * @param callback - gets called when a free port is found
-                 */
+      * Helper function that looks for first free TCP port starting with the given one.
+      * @param port - The port to start with
+      * @param callback - gets called when a free port is found
+      */
     def getPort(port: scala.Double, callback: js.Function1[/* port */ scala.Double, scala.Unit]): scala.Unit = js.native
     // tslint:enable:unified-signatures
     /** Read a value from the states DB. */
@@ -614,12 +527,12 @@ object ioBrokerNs extends js.Object {
     def getStates(pattern: java.lang.String, callback: GetStatesCallback): scala.Unit = js.native
     def getStates(pattern: java.lang.String, options: js.Any, callback: GetStatesCallback): scala.Unit = js.native
     /**
-                 * Returns a list of all states in this adapter instance
-                 * @param parentDevice (optional) Name of the parent device to filter the channels by
-                 * @param parentChannel (optional) Name of the parent channel to filter the channels by
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Returns a list of all states in this adapter instance
+      * @param parentDevice (optional) Name of the parent device to filter the channels by
+      * @param parentChannel (optional) Name of the parent channel to filter the channels by
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def getStatesOf(callback: GetObjectsCallback3[StateObject]): scala.Unit = js.native
     def getStatesOf(parentDevice: java.lang.String, callback: GetObjectsCallback3[StateObject]): scala.Unit = js.native
     def getStatesOf(
@@ -683,10 +596,10 @@ object ioBrokerNs extends js.Object {
     // ==============================
     // filesystem
     /**
-                 * reads the content of directory from DB for given adapter and path
-                 * @param adapter - adapter name. If adapter name is null, default will be the name of the current adapter.
-                 * @param path - path to direcory without adapter name. E.g. If you want to read "/vis.0/main/views.json", here must be "/main/views.json" and _adapter must be equal to "vis.0".
-                 */
+      * reads the content of directory from DB for given adapter and path
+      * @param adapter - adapter name. If adapter name is null, default will be the name of the current adapter.
+      * @param path - path to direcory without adapter name. E.g. If you want to read "/vis.0/main/views.json", here must be "/main/views.json" and _adapter must be equal to "vis.0".
+      */
     def readDir(adapterName: java.lang.String, path: java.lang.String, callback: ReadDirCallback): scala.Unit = js.native
     def readDir(adapterName: java.lang.String, path: java.lang.String, options: js.Any, callback: ReadDirCallback): scala.Unit = js.native
     def readFile(adapterName: java.lang.String, path: java.lang.String, callback: ReadFileCallback): scala.Unit = js.native
@@ -752,58 +665,18 @@ object ioBrokerNs extends js.Object {
       callback: MessageCallbackInfo
     ): scala.Unit = js.native
     /**
-                 * Sends a message to a specific instance or all instances of some specific adapter.
-                 * @param instanceName The instance to send this message to.
-                 * If the ID of an instance is given (e.g. "admin.0"), only this instance will receive the message.
-                 * If the name of an adapter is given (e.g. "admin"), all instances of this adapter will receive it.
-                 * @param command (optional) Command name of the target instance. Default: "send"
-                 * @param message The message (e.g. params) to send.
-                 */
+      * Sends a message to a specific instance or all instances of some specific adapter.
+      * @param instanceName The instance to send this message to.
+      * If the ID of an instance is given (e.g. "admin.0"), only this instance will receive the message.
+      * If the name of an adapter is given (e.g. "admin"), all instances of this adapter will receive it.
+      * @param command (optional) Command name of the target instance. Default: "send"
+      * @param message The message (e.g. params) to send.
+      */
     def sendTo(instanceName: java.lang.String, message: java.lang.String): scala.Unit = js.native
-    /**
-                 * Sends a message to a specific instance or all instances of some specific adapter.
-                 * @param instanceName The instance to send this message to.
-                 * If the ID of an instance is given (e.g. "admin.0"), only this instance will receive the message.
-                 * If the name of an adapter is given (e.g. "admin"), all instances of this adapter will receive it.
-                 * @param command (optional) Command name of the target instance. Default: "send"
-                 * @param message The message (e.g. params) to send.
-                 */
     def sendTo(instanceName: java.lang.String, message: java.lang.String, callback: MessageCallback): scala.Unit = js.native
-    /**
-                 * Sends a message to a specific instance or all instances of some specific adapter.
-                 * @param instanceName The instance to send this message to.
-                 * If the ID of an instance is given (e.g. "admin.0"), only this instance will receive the message.
-                 * If the name of an adapter is given (e.g. "admin"), all instances of this adapter will receive it.
-                 * @param command (optional) Command name of the target instance. Default: "send"
-                 * @param message The message (e.g. params) to send.
-                 */
     def sendTo(instanceName: java.lang.String, message: java.lang.String, callback: MessageCallbackInfo): scala.Unit = js.native
-    /**
-                 * Sends a message to a specific instance or all instances of some specific adapter.
-                 * @param instanceName The instance to send this message to.
-                 * If the ID of an instance is given (e.g. "admin.0"), only this instance will receive the message.
-                 * If the name of an adapter is given (e.g. "admin"), all instances of this adapter will receive it.
-                 * @param command (optional) Command name of the target instance. Default: "send"
-                 * @param message The message (e.g. params) to send.
-                 */
     def sendTo(instanceName: java.lang.String, message: js.Object): scala.Unit = js.native
-    /**
-                 * Sends a message to a specific instance or all instances of some specific adapter.
-                 * @param instanceName The instance to send this message to.
-                 * If the ID of an instance is given (e.g. "admin.0"), only this instance will receive the message.
-                 * If the name of an adapter is given (e.g. "admin"), all instances of this adapter will receive it.
-                 * @param command (optional) Command name of the target instance. Default: "send"
-                 * @param message The message (e.g. params) to send.
-                 */
     def sendTo(instanceName: java.lang.String, message: js.Object, callback: MessageCallback): scala.Unit = js.native
-    /**
-                 * Sends a message to a specific instance or all instances of some specific adapter.
-                 * @param instanceName The instance to send this message to.
-                 * If the ID of an instance is given (e.g. "admin.0"), only this instance will receive the message.
-                 * If the name of an adapter is given (e.g. "admin"), all instances of this adapter will receive it.
-                 * @param command (optional) Command name of the target instance. Default: "send"
-                 * @param message The message (e.g. params) to send.
-                 */
     def sendTo(instanceName: java.lang.String, message: js.Object, callback: MessageCallbackInfo): scala.Unit = js.native
     def sendToHost(hostName: java.lang.String, command: java.lang.String, message: java.lang.String): scala.Unit = js.native
     def sendToHost(
@@ -832,28 +705,13 @@ object ioBrokerNs extends js.Object {
       callback: MessageCallbackInfo
     ): scala.Unit = js.native
     /**
-                 * Sends a message to a specific host or all hosts.
-                 */
+      * Sends a message to a specific host or all hosts.
+      */
     def sendToHost(hostName: java.lang.String, message: java.lang.String): scala.Unit = js.native
-    /**
-                 * Sends a message to a specific host or all hosts.
-                 */
     def sendToHost(hostName: java.lang.String, message: java.lang.String, callback: MessageCallback): scala.Unit = js.native
-    /**
-                 * Sends a message to a specific host or all hosts.
-                 */
     def sendToHost(hostName: java.lang.String, message: java.lang.String, callback: MessageCallbackInfo): scala.Unit = js.native
-    /**
-                 * Sends a message to a specific host or all hosts.
-                 */
     def sendToHost(hostName: java.lang.String, message: js.Object): scala.Unit = js.native
-    /**
-                 * Sends a message to a specific host or all hosts.
-                 */
     def sendToHost(hostName: java.lang.String, message: js.Object, callback: MessageCallback): scala.Unit = js.native
-    /**
-                 * Sends a message to a specific host or all hosts.
-                 */
     def sendToHost(hostName: java.lang.String, message: js.Object, callback: MessageCallbackInfo): scala.Unit = js.native
     // MISSING:
     // pushFifo and similar https://github.com/ioBroker/ioBroker.js-controller/blob/master/lib/adapter.js#L4105
@@ -861,27 +719,24 @@ object ioBrokerNs extends js.Object {
     // requireLog https://github.com/ioBroker/ioBroker.js-controller/blob/master/lib/adapter.js#L4336
     // processLog https://github.com/ioBroker/ioBroker.js-controller/blob/master/lib/adapter.js#L4360
     /**
-                 * Writes a binary state into Redis
-                 * @param id The id of the state
-                 * @param binary The data to be written
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Writes a binary state into Redis
+      * @param id The id of the state
+      * @param binary The data to be written
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def setBinaryState(id: java.lang.String, binary: nodeLib.Buffer, callback: SetStateCallback): scala.Unit = js.native
     def setBinaryState(id: java.lang.String, binary: nodeLib.Buffer, options: js.Any, callback: SetStateCallback): scala.Unit = js.native
     /** Creates or overwrites an object (which might not belong to this adapter) in the object db */
     def setForeignObject(id: java.lang.String, obj: SettableObject): scala.Unit = js.native
-    /** Creates or overwrites an object (which might not belong to this adapter) in the object db */
     def setForeignObject(id: java.lang.String, obj: SettableObject, callback: SetObjectCallback): scala.Unit = js.native
     def setForeignObject(id: java.lang.String, obj: SettableObject, options: js.Any): scala.Unit = js.native
     def setForeignObject(id: java.lang.String, obj: SettableObject, options: js.Any, callback: SetObjectCallback): scala.Unit = js.native
     /** Creates an object (which might not belong to this adapter) in the object db. Existing objects are not overwritten. */
     def setForeignObjectNotExists(id: java.lang.String, obj: SettableObject): scala.Unit = js.native
-    /** Creates an object (which might not belong to this adapter) in the object db. Existing objects are not overwritten. */
     def setForeignObjectNotExists(id: java.lang.String, obj: SettableObject, callback: SetObjectCallback): scala.Unit = js.native
     def setForeignObjectNotExists(id: java.lang.String, obj: SettableObject, options: js.Any): scala.Unit = js.native
     def setForeignObjectNotExists(id: java.lang.String, obj: SettableObject, options: js.Any, callback: SetObjectCallback): scala.Unit = js.native
-    /** Writes a value (which might not belong to this adapter) into the states DB. */
     def setForeignState(id: java.lang.String, state: State): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: State, ack: scala.Boolean): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: State, ack: scala.Boolean, callback: SetStateCallback): scala.Unit = js.native
@@ -893,7 +748,6 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateCallback
     ): scala.Unit = js.native
-    /** Writes a value (which might not belong to this adapter) into the states DB. */
     def setForeignState(id: java.lang.String, state: State, callback: SetStateCallback): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: State, options: js.Any): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: State, options: js.Any, callback: SetStateCallback): scala.Unit = js.native
@@ -909,11 +763,9 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateCallback
     ): scala.Unit = js.native
-    /** Writes a value (which might not belong to this adapter) into the states DB. */
     def setForeignState(id: java.lang.String, state: java.lang.String, callback: SetStateCallback): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: java.lang.String, options: js.Any): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: java.lang.String, options: js.Any, callback: SetStateCallback): scala.Unit = js.native
-    /** Writes a value (which might not belong to this adapter) into the states DB. */
     def setForeignState(id: java.lang.String, state: scala.Boolean): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean, callback: SetStateCallback): scala.Unit = js.native
@@ -925,11 +777,9 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateCallback
     ): scala.Unit = js.native
-    /** Writes a value (which might not belong to this adapter) into the states DB. */
     def setForeignState(id: java.lang.String, state: scala.Boolean, callback: SetStateCallback): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: scala.Boolean, options: js.Any): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: scala.Boolean, options: js.Any, callback: SetStateCallback): scala.Unit = js.native
-    /** Writes a value (which might not belong to this adapter) into the states DB. */
     def setForeignState(id: java.lang.String, state: scala.Double): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: scala.Double, ack: scala.Boolean): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: scala.Double, ack: scala.Boolean, callback: SetStateCallback): scala.Unit = js.native
@@ -941,11 +791,9 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateCallback
     ): scala.Unit = js.native
-    /** Writes a value (which might not belong to this adapter) into the states DB. */
     def setForeignState(id: java.lang.String, state: scala.Double, callback: SetStateCallback): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: scala.Double, options: js.Any): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: scala.Double, options: js.Any, callback: SetStateCallback): scala.Unit = js.native
-    /** Writes a value (which might not belong to this adapter) into the states DB. */
     def setForeignState(id: java.lang.String, state: stdLib.Partial[State]): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean, callback: SetStateCallback): scala.Unit = js.native
@@ -957,11 +805,9 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateCallback
     ): scala.Unit = js.native
-    /** Writes a value (which might not belong to this adapter) into the states DB. */
     def setForeignState(id: java.lang.String, state: stdLib.Partial[State], callback: SetStateCallback): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: stdLib.Partial[State], options: js.Any): scala.Unit = js.native
     def setForeignState(id: java.lang.String, state: stdLib.Partial[State], options: js.Any, callback: SetStateCallback): scala.Unit = js.native
-    /** Writes a value (which might not belong to this adapter) into the states DB only if it has changed. */
     def setForeignStateChanged(id: java.lang.String, state: State): scala.Unit = js.native
     def setForeignStateChanged(id: java.lang.String, state: State, ack: scala.Boolean): scala.Unit = js.native
     def setForeignStateChanged(id: java.lang.String, state: State, ack: scala.Boolean, callback: SetStateChangedCallback): scala.Unit = js.native
@@ -973,7 +819,6 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateChangedCallback
     ): scala.Unit = js.native
-    /** Writes a value (which might not belong to this adapter) into the states DB only if it has changed. */
     def setForeignStateChanged(id: java.lang.String, state: State, callback: SetStateChangedCallback): scala.Unit = js.native
     def setForeignStateChanged(id: java.lang.String, state: State, options: js.Any): scala.Unit = js.native
     def setForeignStateChanged(id: java.lang.String, state: State, options: js.Any, callback: SetStateChangedCallback): scala.Unit = js.native
@@ -994,11 +839,9 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateChangedCallback
     ): scala.Unit = js.native
-    /** Writes a value (which might not belong to this adapter) into the states DB only if it has changed. */
     def setForeignStateChanged(id: java.lang.String, state: java.lang.String, callback: SetStateChangedCallback): scala.Unit = js.native
     def setForeignStateChanged(id: java.lang.String, state: java.lang.String, options: js.Any): scala.Unit = js.native
     def setForeignStateChanged(id: java.lang.String, state: java.lang.String, options: js.Any, callback: SetStateChangedCallback): scala.Unit = js.native
-    /** Writes a value (which might not belong to this adapter) into the states DB only if it has changed. */
     def setForeignStateChanged(id: java.lang.String, state: scala.Boolean): scala.Unit = js.native
     def setForeignStateChanged(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean): scala.Unit = js.native
     def setForeignStateChanged(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean, callback: SetStateChangedCallback): scala.Unit = js.native
@@ -1010,11 +853,9 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateChangedCallback
     ): scala.Unit = js.native
-    /** Writes a value (which might not belong to this adapter) into the states DB only if it has changed. */
     def setForeignStateChanged(id: java.lang.String, state: scala.Boolean, callback: SetStateChangedCallback): scala.Unit = js.native
     def setForeignStateChanged(id: java.lang.String, state: scala.Boolean, options: js.Any): scala.Unit = js.native
     def setForeignStateChanged(id: java.lang.String, state: scala.Boolean, options: js.Any, callback: SetStateChangedCallback): scala.Unit = js.native
-    /** Writes a value (which might not belong to this adapter) into the states DB only if it has changed. */
     def setForeignStateChanged(id: java.lang.String, state: scala.Double): scala.Unit = js.native
     def setForeignStateChanged(id: java.lang.String, state: scala.Double, ack: scala.Boolean): scala.Unit = js.native
     def setForeignStateChanged(id: java.lang.String, state: scala.Double, ack: scala.Boolean, callback: SetStateChangedCallback): scala.Unit = js.native
@@ -1026,11 +867,9 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateChangedCallback
     ): scala.Unit = js.native
-    /** Writes a value (which might not belong to this adapter) into the states DB only if it has changed. */
     def setForeignStateChanged(id: java.lang.String, state: scala.Double, callback: SetStateChangedCallback): scala.Unit = js.native
     def setForeignStateChanged(id: java.lang.String, state: scala.Double, options: js.Any): scala.Unit = js.native
     def setForeignStateChanged(id: java.lang.String, state: scala.Double, options: js.Any, callback: SetStateChangedCallback): scala.Unit = js.native
-    /** Writes a value (which might not belong to this adapter) into the states DB only if it has changed. */
     def setForeignStateChanged(id: java.lang.String, state: stdLib.Partial[State]): scala.Unit = js.native
     def setForeignStateChanged(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean): scala.Unit = js.native
     def setForeignStateChanged(
@@ -1047,7 +886,6 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateChangedCallback
     ): scala.Unit = js.native
-    /** Writes a value (which might not belong to this adapter) into the states DB only if it has changed. */
     def setForeignStateChanged(id: java.lang.String, state: stdLib.Partial[State], callback: SetStateChangedCallback): scala.Unit = js.native
     def setForeignStateChanged(id: java.lang.String, state: stdLib.Partial[State], options: js.Any): scala.Unit = js.native
     def setForeignStateChanged(
@@ -1058,32 +896,23 @@ object ioBrokerNs extends js.Object {
     ): scala.Unit = js.native
     /** Creates or overwrites an object in the object db */
     def setObject(id: java.lang.String, obj: SettableObject): scala.Unit = js.native
-    /** Creates or overwrites an object in the object db */
     def setObject(id: java.lang.String, obj: SettableObject, callback: SetObjectCallback): scala.Unit = js.native
     def setObject(id: java.lang.String, obj: SettableObject, options: js.Any): scala.Unit = js.native
     def setObject(id: java.lang.String, obj: SettableObject, options: js.Any, callback: SetObjectCallback): scala.Unit = js.native
     /** Creates an object in the object db. Existing objects are not overwritten. */
     def setObjectNotExists(id: java.lang.String, obj: SettableObject): scala.Unit = js.native
-    /** Creates an object in the object db. Existing objects are not overwritten. */
     def setObjectNotExists(id: java.lang.String, obj: SettableObject, callback: SetObjectCallback): scala.Unit = js.native
     def setObjectNotExists(id: java.lang.String, obj: SettableObject, options: js.Any): scala.Unit = js.native
     def setObjectNotExists(id: java.lang.String, obj: SettableObject, options: js.Any, callback: SetObjectCallback): scala.Unit = js.native
     /** Sets a new password for the given user */
     def setPassword(user: java.lang.String, password: java.lang.String): scala.Unit = js.native
-    /** Sets a new password for the given user */
     def setPassword(user: java.lang.String, password: java.lang.String, options: js.Any): scala.Unit = js.native
-    /** Sets a new password for the given user */
     def setPassword(
       user: java.lang.String,
       password: java.lang.String,
       options: js.Any,
       callback: js.Function1[/* err */ js.UndefOr[js.Any], scala.Unit]
     ): scala.Unit = js.native
-    // ==============================
-    // states
-    // Multiple signatures help understanding what the parameters are about
-    // tslint:disable:unified-signatures
-    /** Writes a value into the states DB. */
     def setState(id: java.lang.String, state: State): scala.Unit = js.native
     def setState(id: java.lang.String, state: State, ack: scala.Boolean): scala.Unit = js.native
     def setState(id: java.lang.String, state: State, ack: scala.Boolean, callback: SetStateCallback): scala.Unit = js.native
@@ -1095,11 +924,6 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateCallback
     ): scala.Unit = js.native
-    // ==============================
-    // states
-    // Multiple signatures help understanding what the parameters are about
-    // tslint:disable:unified-signatures
-    /** Writes a value into the states DB. */
     def setState(id: java.lang.String, state: State, callback: SetStateCallback): scala.Unit = js.native
     def setState(id: java.lang.String, state: State, options: js.Any): scala.Unit = js.native
     def setState(id: java.lang.String, state: State, options: js.Any, callback: SetStateCallback): scala.Unit = js.native
@@ -1119,19 +943,9 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateCallback
     ): scala.Unit = js.native
-    // ==============================
-    // states
-    // Multiple signatures help understanding what the parameters are about
-    // tslint:disable:unified-signatures
-    /** Writes a value into the states DB. */
     def setState(id: java.lang.String, state: java.lang.String, callback: SetStateCallback): scala.Unit = js.native
     def setState(id: java.lang.String, state: java.lang.String, options: js.Any): scala.Unit = js.native
     def setState(id: java.lang.String, state: java.lang.String, options: js.Any, callback: SetStateCallback): scala.Unit = js.native
-    // ==============================
-    // states
-    // Multiple signatures help understanding what the parameters are about
-    // tslint:disable:unified-signatures
-    /** Writes a value into the states DB. */
     def setState(id: java.lang.String, state: scala.Boolean): scala.Unit = js.native
     def setState(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean): scala.Unit = js.native
     def setState(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean, callback: SetStateCallback): scala.Unit = js.native
@@ -1143,19 +957,9 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateCallback
     ): scala.Unit = js.native
-    // ==============================
-    // states
-    // Multiple signatures help understanding what the parameters are about
-    // tslint:disable:unified-signatures
-    /** Writes a value into the states DB. */
     def setState(id: java.lang.String, state: scala.Boolean, callback: SetStateCallback): scala.Unit = js.native
     def setState(id: java.lang.String, state: scala.Boolean, options: js.Any): scala.Unit = js.native
     def setState(id: java.lang.String, state: scala.Boolean, options: js.Any, callback: SetStateCallback): scala.Unit = js.native
-    // ==============================
-    // states
-    // Multiple signatures help understanding what the parameters are about
-    // tslint:disable:unified-signatures
-    /** Writes a value into the states DB. */
     def setState(id: java.lang.String, state: scala.Double): scala.Unit = js.native
     def setState(id: java.lang.String, state: scala.Double, ack: scala.Boolean): scala.Unit = js.native
     def setState(id: java.lang.String, state: scala.Double, ack: scala.Boolean, callback: SetStateCallback): scala.Unit = js.native
@@ -1167,19 +971,9 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateCallback
     ): scala.Unit = js.native
-    // ==============================
-    // states
-    // Multiple signatures help understanding what the parameters are about
-    // tslint:disable:unified-signatures
-    /** Writes a value into the states DB. */
     def setState(id: java.lang.String, state: scala.Double, callback: SetStateCallback): scala.Unit = js.native
     def setState(id: java.lang.String, state: scala.Double, options: js.Any): scala.Unit = js.native
     def setState(id: java.lang.String, state: scala.Double, options: js.Any, callback: SetStateCallback): scala.Unit = js.native
-    // ==============================
-    // states
-    // Multiple signatures help understanding what the parameters are about
-    // tslint:disable:unified-signatures
-    /** Writes a value into the states DB. */
     def setState(id: java.lang.String, state: stdLib.Partial[State]): scala.Unit = js.native
     def setState(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean): scala.Unit = js.native
     def setState(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean, callback: SetStateCallback): scala.Unit = js.native
@@ -1191,15 +985,9 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateCallback
     ): scala.Unit = js.native
-    // ==============================
-    // states
-    // Multiple signatures help understanding what the parameters are about
-    // tslint:disable:unified-signatures
-    /** Writes a value into the states DB. */
     def setState(id: java.lang.String, state: stdLib.Partial[State], callback: SetStateCallback): scala.Unit = js.native
     def setState(id: java.lang.String, state: stdLib.Partial[State], options: js.Any): scala.Unit = js.native
     def setState(id: java.lang.String, state: stdLib.Partial[State], options: js.Any, callback: SetStateCallback): scala.Unit = js.native
-    /** Writes a value into the states DB only if it has changed. */
     def setStateChanged(id: java.lang.String, state: State): scala.Unit = js.native
     def setStateChanged(id: java.lang.String, state: State, ack: scala.Boolean): scala.Unit = js.native
     def setStateChanged(id: java.lang.String, state: State, ack: scala.Boolean, callback: SetStateChangedCallback): scala.Unit = js.native
@@ -1211,7 +999,6 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateChangedCallback
     ): scala.Unit = js.native
-    /** Writes a value into the states DB only if it has changed. */
     def setStateChanged(id: java.lang.String, state: State, callback: SetStateChangedCallback): scala.Unit = js.native
     def setStateChanged(id: java.lang.String, state: State, options: js.Any): scala.Unit = js.native
     def setStateChanged(id: java.lang.String, state: State, options: js.Any, callback: SetStateChangedCallback): scala.Unit = js.native
@@ -1232,11 +1019,9 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateChangedCallback
     ): scala.Unit = js.native
-    /** Writes a value into the states DB only if it has changed. */
     def setStateChanged(id: java.lang.String, state: java.lang.String, callback: SetStateChangedCallback): scala.Unit = js.native
     def setStateChanged(id: java.lang.String, state: java.lang.String, options: js.Any): scala.Unit = js.native
     def setStateChanged(id: java.lang.String, state: java.lang.String, options: js.Any, callback: SetStateChangedCallback): scala.Unit = js.native
-    /** Writes a value into the states DB only if it has changed. */
     def setStateChanged(id: java.lang.String, state: scala.Boolean): scala.Unit = js.native
     def setStateChanged(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean): scala.Unit = js.native
     def setStateChanged(id: java.lang.String, state: scala.Boolean, ack: scala.Boolean, callback: SetStateChangedCallback): scala.Unit = js.native
@@ -1248,11 +1033,9 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateChangedCallback
     ): scala.Unit = js.native
-    /** Writes a value into the states DB only if it has changed. */
     def setStateChanged(id: java.lang.String, state: scala.Boolean, callback: SetStateChangedCallback): scala.Unit = js.native
     def setStateChanged(id: java.lang.String, state: scala.Boolean, options: js.Any): scala.Unit = js.native
     def setStateChanged(id: java.lang.String, state: scala.Boolean, options: js.Any, callback: SetStateChangedCallback): scala.Unit = js.native
-    /** Writes a value into the states DB only if it has changed. */
     def setStateChanged(id: java.lang.String, state: scala.Double): scala.Unit = js.native
     def setStateChanged(id: java.lang.String, state: scala.Double, ack: scala.Boolean): scala.Unit = js.native
     def setStateChanged(id: java.lang.String, state: scala.Double, ack: scala.Boolean, callback: SetStateChangedCallback): scala.Unit = js.native
@@ -1264,11 +1047,9 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateChangedCallback
     ): scala.Unit = js.native
-    /** Writes a value into the states DB only if it has changed. */
     def setStateChanged(id: java.lang.String, state: scala.Double, callback: SetStateChangedCallback): scala.Unit = js.native
     def setStateChanged(id: java.lang.String, state: scala.Double, options: js.Any): scala.Unit = js.native
     def setStateChanged(id: java.lang.String, state: scala.Double, options: js.Any, callback: SetStateChangedCallback): scala.Unit = js.native
-    /** Writes a value into the states DB only if it has changed. */
     def setStateChanged(id: java.lang.String, state: stdLib.Partial[State]): scala.Unit = js.native
     def setStateChanged(id: java.lang.String, state: stdLib.Partial[State], ack: scala.Boolean): scala.Unit = js.native
     def setStateChanged(
@@ -1285,7 +1066,6 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: SetStateChangedCallback
     ): scala.Unit = js.native
-    /** Writes a value into the states DB only if it has changed. */
     def setStateChanged(id: java.lang.String, state: stdLib.Partial[State], callback: SetStateChangedCallback): scala.Unit = js.native
     def setStateChanged(id: java.lang.String, state: stdLib.Partial[State], options: js.Any): scala.Unit = js.native
     def setStateChanged(
@@ -1296,67 +1076,41 @@ object ioBrokerNs extends js.Object {
     ): scala.Unit = js.native
     /** Subscribe to changes of objects (which might not belong to this adapter) */
     def subscribeForeignObjects(pattern: java.lang.String): scala.Unit = js.native
-    /** Subscribe to changes of objects (which might not belong to this adapter) */
     def subscribeForeignObjects(pattern: java.lang.String, options: js.Any): scala.Unit = js.native
     /** Subscribe to changes of states (which might not belong to this adapter) */
     def subscribeForeignStates(pattern: java.lang.String): scala.Unit = js.native
-    /** Subscribe to changes of states (which might not belong to this adapter) */
     def subscribeForeignStates(pattern: java.lang.String, options: js.Any): scala.Unit = js.native
-    /** Subscribe to changes of states (which might not belong to this adapter) */
     def subscribeForeignStates(pattern: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     // ==============================
     // subscriptions
     /** Subscribe to changes of objects in this instance */
     def subscribeObjects(pattern: java.lang.String): scala.Unit = js.native
-    // ==============================
-    // subscriptions
-    /** Subscribe to changes of objects in this instance */
     def subscribeObjects(pattern: java.lang.String, options: js.Any): scala.Unit = js.native
     /** Subscribe to changes of states in this instance */
     def subscribeStates(pattern: java.lang.String): scala.Unit = js.native
-    /** Subscribe to changes of states in this instance */
     def subscribeStates(pattern: java.lang.String, options: js.Any): scala.Unit = js.native
-    /** Subscribe to changes of states in this instance */
     def subscribeStates(pattern: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     def unlink(adapterName: java.lang.String, path: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
     def unlink(adapterName: java.lang.String, path: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     /** Unsubscribe from changes of objects (which might not belong to this adapter) */
     def unsubscribeForeignObjects(pattern: java.lang.String): scala.Unit = js.native
-    /** Unsubscribe from changes of objects (which might not belong to this adapter) */
     def unsubscribeForeignObjects(pattern: java.lang.String, options: js.Any): scala.Unit = js.native
     /**
-                 * Subscribe from changes of states (which might not belong to this adapter)
-                 * @param pattern - Must match the pattern used to subscribe
-                 */
+      * Subscribe from changes of states (which might not belong to this adapter)
+      * @param pattern - Must match the pattern used to subscribe
+      */
     def unsubscribeForeignStates(pattern: java.lang.String): scala.Unit = js.native
-    /**
-                 * Subscribe from changes of states (which might not belong to this adapter)
-                 * @param pattern - Must match the pattern used to subscribe
-                 */
     def unsubscribeForeignStates(pattern: java.lang.String, options: js.Any): scala.Unit = js.native
-    /**
-                 * Subscribe from changes of states (which might not belong to this adapter)
-                 * @param pattern - Must match the pattern used to subscribe
-                 */
     def unsubscribeForeignStates(pattern: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     /** Unsubscribe from changes of objects in this instance */
     def unsubscribeObjects(pattern: java.lang.String): scala.Unit = js.native
-    /** Unsubscribe from changes of objects in this instance */
     def unsubscribeObjects(pattern: java.lang.String, options: js.Any): scala.Unit = js.native
     /**
-                 * Subscribe from changes of states in this instance
-                 * @param pattern - Must match the pattern used to subscribe
-                 */
+      * Subscribe from changes of states in this instance
+      * @param pattern - Must match the pattern used to subscribe
+      */
     def unsubscribeStates(pattern: java.lang.String): scala.Unit = js.native
-    /**
-                 * Subscribe from changes of states in this instance
-                 * @param pattern - Must match the pattern used to subscribe
-                 */
     def unsubscribeStates(pattern: java.lang.String, options: js.Any): scala.Unit = js.native
-    /**
-                 * Subscribe from changes of states in this instance
-                 * @param pattern - Must match the pattern used to subscribe
-                 */
     def unsubscribeStates(pattern: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     def writeFile(
       adapterName: java.lang.String,
@@ -1364,7 +1118,6 @@ object ioBrokerNs extends js.Object {
       data: java.lang.String,
       callback: ErrorCallback
     ): scala.Unit = js.native
-    // options see https://github.com/ioBroker/ioBroker.js-controller/blob/master/lib/objects/objectsInMemServer.js#L599
     def writeFile(
       adapterName: java.lang.String,
       path: java.lang.String,
@@ -1390,9 +1143,7 @@ object ioBrokerNs extends js.Object {
   
   // end interface AdapterOptions
   // tslint:disable-next-line:no-empty-interface
-  
   trait AdapterConfig extends js.Object
-  
   
   trait AdapterOptions extends js.Object {
     /** provide alternative global configuration for the adapter. Default: null */
@@ -1423,7 +1174,6 @@ object ioBrokerNs extends js.Object {
     var useFormatDate: js.UndefOr[scala.Boolean] = js.undefined
   }
   
-  
   trait BaseObject extends js.Object {
     /** The ID of this object */
     var _id: java.lang.String
@@ -1435,7 +1185,6 @@ object ioBrokerNs extends js.Object {
     var `type`: java.lang.String
   }
   
-  
   trait Certificates extends js.Object {
     /** chained CA certificates */
     var ca: js.Array[java.lang.String | nodeLib.Buffer]
@@ -1445,12 +1194,10 @@ object ioBrokerNs extends js.Object {
     var key: java.lang.String | nodeLib.Buffer
   }
   
-  
   trait ChannelCommon extends ObjectCommon {
     /** description of this channel */
     var desc: js.UndefOr[java.lang.String] = js.undefined
   }
-  
   
   trait ChannelObject extends BaseObject {
     @JSName("common")
@@ -1460,7 +1207,6 @@ object ioBrokerNs extends js.Object {
   }
   
   /** Contains the return values of chownFile */
-  
   trait ChownFileResult extends js.Object {
     /** Access rights */
     var acl: FileACL
@@ -1477,7 +1223,6 @@ object ioBrokerNs extends js.Object {
     /** File system stats */
     var stats: nodeLib.fsMod.Stats
   }
-  
   
   trait CommandsPermissions extends js.Object {
     var authEnabled: Permission
@@ -1512,12 +1257,10 @@ object ioBrokerNs extends js.Object {
     var writeFile64: ObjectOrStatePermission
   }
   
-  
   trait DeviceObject extends BaseObject {
     @JSName("type")
     var type_DeviceObject: iobrokerLib.iobrokerLibStrings.device
   }
-  
   
   trait DirectoryEntry extends js.Object {
     var acl: js.Any
@@ -1530,7 +1273,6 @@ object ioBrokerNs extends js.Object {
   }
   
   /** Defines access rights for a single file, applied to a user or group */
-  
   trait EvaluatedFileACL extends FileACL {
     /** Whether the user may read the file */
     var read: scala.Boolean
@@ -1539,7 +1281,6 @@ object ioBrokerNs extends js.Object {
   }
   
   /** Defines access rights for a single file */
-  
   trait FileACL extends js.Object {
     /** Full name of the user who owns this file, e.g. "system.user.admin" */
     var owner: java.lang.String
@@ -1548,7 +1289,6 @@ object ioBrokerNs extends js.Object {
     /** Linux-type permissions defining access to this file */
     var permissions: scala.Double
   }
-  
   
   trait GetHistoryOptions extends js.Object {
     var ack: js.UndefOr[scala.Boolean] = js.undefined
@@ -1568,7 +1308,6 @@ object ioBrokerNs extends js.Object {
     var step: js.UndefOr[scala.Double] = js.undefined
   }
   
-  
   trait GetObjectListItem extends GetObjectViewItem {
     /** The same as @link{value} */
     var doc: Object
@@ -1578,12 +1317,10 @@ object ioBrokerNs extends js.Object {
   }
   
   /** Parameters for @link{Objects.getObjectList} */
-  
   trait GetObjectListParams extends GetObjectViewParams {
     /** Whether docs should be included in the return list */ // TODO: What are docs?
     var include_docs: scala.Boolean
   }
-  
   
   trait GetObjectViewItem extends js.Object {
     /** The ID of this object */
@@ -1593,7 +1330,6 @@ object ioBrokerNs extends js.Object {
   }
   
   /** Parameters for @link{Objects.getObjectView} */
-  
   trait GetObjectViewParams extends js.Object {
     /** Last id to include in the return list */
     var endkey: java.lang.String
@@ -1601,14 +1337,12 @@ object ioBrokerNs extends js.Object {
     var startkey: java.lang.String
   }
   
-  
   trait GetObjectsItem[T /* <: BaseObject */] extends js.Object {
     /** The ID of this object */
     var id: java.lang.String
     /** A copy of the object from the DB */
     var value: T
   }
-  
   
   trait Logger extends js.Object {
     /** Verbosity of the log output */
@@ -1626,7 +1360,6 @@ object ioBrokerNs extends js.Object {
   }
   
   /** A message being passed between adapter instances */
-  
   trait Message extends js.Object {
     /** ID of this message */
     var _id: scala.Double
@@ -1641,7 +1374,6 @@ object ioBrokerNs extends js.Object {
   }
   
   /** Callback information for a passed message */
-  
   trait MessageCallbackInfo extends js.Object {
     // ???
     var ack: scala.Boolean
@@ -1654,7 +1386,6 @@ object ioBrokerNs extends js.Object {
   }
   
   /** Defines access rights for a single object */
-  
   trait ObjectACL extends js.Object {
     /** Linux-type permissions defining access to this object */
     var `object`: scala.Double
@@ -1668,7 +1399,6 @@ object ioBrokerNs extends js.Object {
   // but the extra properties aren't defined anywhere,
   // so I'd rather force the user to explicitly state
   // he knows what he's doing by casting to any
-  
   trait ObjectCommon extends js.Object {
     // Icon and role aren't defined in SCHEMA.md,
     // but they are being used by some adapters
@@ -1681,7 +1411,6 @@ object ioBrokerNs extends js.Object {
   }
   
   /** Defines access rights for a single object type */
-  
   trait ObjectOperationPermissions extends js.Object {
     /** Whether a user may create objects of this type */
     var create: scala.Boolean
@@ -1695,7 +1424,6 @@ object ioBrokerNs extends js.Object {
     var write: scala.Boolean
   }
   
-  
   trait ObjectOrStatePermission extends Permission {
     @JSName("operation")
     var operation_ObjectOrStatePermission: iobrokerLib.iobrokerLibStrings.list | iobrokerLib.iobrokerLibStrings.read | iobrokerLib.iobrokerLibStrings.write | iobrokerLib.iobrokerLibStrings.create | iobrokerLib.iobrokerLibStrings.delete
@@ -1704,7 +1432,6 @@ object ioBrokerNs extends js.Object {
   }
   
   /** Defines the rights a user or group has to change objects */
-  
   trait ObjectPermissions extends js.Object {
     /** The access rights for files */
     var file: ObjectOperationPermissions
@@ -1720,25 +1447,18 @@ object ioBrokerNs extends js.Object {
   @js.native
   trait Objects extends js.Object {
     /**
-                 * Changes access rights of all files in the root directory matching <name>
-                 * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
-                 * @param name Pattern to match against
-                 * @param options Mode of the access change as a number or hexadecimal string
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Changes access rights of all files in the root directory matching <name>
+      * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
+      * @param name Pattern to match against
+      * @param options Mode of the access change as a number or hexadecimal string
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def chmodFile(
       id: java.lang.String,
       name: java.lang.String,
       options: iobrokerLib.Anon_Mode,
       callback: ChownFileCallback
     ): scala.Unit = js.native
-    /**
-                 * Changes access rights of all files in the root directory matching <name>
-                 * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
-                 * @param name Pattern to match against
-                 * @param options Mode of the access change as a number or hexadecimal string
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
     def chmodFile(
       id: java.lang.String,
       name: java.lang.String,
@@ -1746,126 +1466,105 @@ object ioBrokerNs extends js.Object {
       callback: ChownFileCallback
     ): scala.Unit = js.native
     /**
-                 * Changes access rights of all objects matching <pattern>
-                 * @param pattern Pattern to match against
-                 * @param options Mode of the access change as a number or hexadecimal string
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Changes access rights of all objects matching <pattern>
+      * @param pattern Pattern to match against
+      * @param options Mode of the access change as a number or hexadecimal string
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def chmodObject(pattern: java.lang.String, callback: ChownObjectCallback): scala.Unit = js.native
     def chmodObject(pattern: java.lang.String, options: js.Any, callback: ChownObjectCallback): scala.Unit = js.native
     /**
-                 * Takes possession all files in the root directory matching <name>
-                 * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
-                 * @param name Pattern to match against
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Takes possession all files in the root directory matching <name>
+      * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
+      * @param name Pattern to match against
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def chownFile(id: java.lang.String, name: java.lang.String, callback: ChownFileCallback): scala.Unit = js.native
     def chownFile(id: java.lang.String, name: java.lang.String, options: js.Any, callback: ChownFileCallback): scala.Unit = js.native
     /**
-                 * Takes possession of all objects matching <pattern>
-                 * @param pattern Pattern to match against
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Takes possession of all objects matching <pattern>
+      * @param pattern Pattern to match against
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def chownObject(pattern: java.lang.String, callback: ChownObjectCallback): scala.Unit = js.native
     def chownObject(pattern: java.lang.String, options: js.Any, callback: ChownObjectCallback): scala.Unit = js.native
     /**
-                 * Deletes an object in the object db
-                 * @param id ID of the object
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Deletes an object in the object db
+      * @param id ID of the object
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def delConfig(id: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
     def delConfig(id: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     /**
-                 * Deletes a file.
-                 * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
-                 * @param name File name
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Deletes a file.
+      * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
+      * @param name File name
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def delFile(id: java.lang.String, name: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
     def delFile(id: java.lang.String, name: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     /**
-                 * Deletes an object in the object db
-                 * @param id ID of the object
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Deletes an object in the object db
+      * @param id ID of the object
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def delObject(id: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
     def delObject(id: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     // I'd rather not document a function with the name "destroyDB"
     /** Destructor of the class. Call this before shutting down. */
     def destroy(): scala.Unit = js.native
     /**
-                 * Extends an object in the object db with new properties
-                 * @param id ID of the object
-                 * @param obj Object to extend the original one with. May be just parts of an object.
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Extends an object in the object db with new properties
+      * @param id ID of the object
+      * @param obj Object to extend the original one with. May be just parts of an object.
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def extendObject(id: java.lang.String, obj: PartialObject, callback: ExtendObjectCallback): scala.Unit = js.native
     def extendObject(id: java.lang.String, obj: PartialObject, options: js.Any, callback: ExtendObjectCallback): scala.Unit = js.native
     /**
-                 * Finds an object by ID or name. If multiple objects were found, return the first one
-                 * @param idOrName ID or name of the object
-                 * @param type If != null, only return an object with a common.type equal to this
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Finds an object by ID or name. If multiple objects were found, return the first one
+      * @param idOrName ID or name of the object
+      * @param type If != null, only return an object with a common.type equal to this
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def findObject(idOrName: java.lang.String, `type`: CommonType, callback: FindObjectCallback): scala.Unit = js.native
     def findObject(idOrName: java.lang.String, `type`: CommonType, options: js.Any, callback: FindObjectCallback): scala.Unit = js.native
-    /**
-                 * Finds an object by ID or name. If multiple objects were found, return the first one
-                 * @param idOrName ID or name of the object
-                 * @param type If != null, only return an object with a common.type equal to this
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
     def findObject(idOrName: java.lang.String, `type`: scala.Null, callback: FindObjectCallback): scala.Unit = js.native
     def findObject(idOrName: java.lang.String, `type`: scala.Null, options: js.Any, callback: FindObjectCallback): scala.Unit = js.native
     /**
-                 * Retrieves a copy of the object with the given ID
-                 * @param id Id of the object to find
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Retrieves a copy of the object with the given ID
+      * @param id Id of the object to find
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def getConfig(id: java.lang.String, callback: GetObjectCallback): scala.Unit = js.native
     def getConfig(id: java.lang.String, options: js.Any, callback: GetObjectCallback): scala.Unit = js.native
     /**
-                 * Returns a list of config keys matching <pattern>
-                 * @param pattern Pattern to match against
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 * @param dontModify unused
-                 */
+      * Returns a list of config keys matching <pattern>
+      * @param pattern Pattern to match against
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      * @param dontModify unused
+      */
     def getConfigKeys(pattern: java.lang.String, callback: GetConfigKeysCallback): scala.Unit = js.native
-    /**
-                 * Returns a list of config keys matching <pattern>
-                 * @param pattern Pattern to match against
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 * @param dontModify unused
-                 */
     def getConfigKeys(pattern: java.lang.String, callback: GetConfigKeysCallback, dontModify: js.Any): scala.Unit = js.native
     def getConfigKeys(pattern: java.lang.String, options: js.Any, callback: GetConfigKeysCallback): scala.Unit = js.native
     def getConfigKeys(pattern: java.lang.String, options: js.Any, callback: GetConfigKeysCallback, dontModify: js.Any): scala.Unit = js.native
     /**
-                 * Returns a list of objects with the given ids
-                 * @param keys IDs of the objects to be retrieved
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 * @param dontModify unused
-                 */
+      * Returns a list of objects with the given ids
+      * @param keys IDs of the objects to be retrieved
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      * @param dontModify unused
+      */
     def getConfigs(keys: js.Array[java.lang.String], callback: GetObjectsCallback2): scala.Unit = js.native
-    /**
-                 * Returns a list of objects with the given ids
-                 * @param keys IDs of the objects to be retrieved
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 * @param dontModify unused
-                 */
     def getConfigs(keys: js.Array[java.lang.String], callback: GetObjectsCallback2, dontModify: js.Any): scala.Unit = js.native
     def getConfigs(keys: js.Array[java.lang.String], options: js.Any, callback: GetObjectsCallback2): scala.Unit = js.native
     def getConfigs(
@@ -1875,24 +1574,24 @@ object ioBrokerNs extends js.Object {
       dontModify: js.Any
     ): scala.Unit = js.native
     /**
-                 * Determines the mime type for a given file extension
-                 * @param ext File extension, including the leading dot, e.g. ".zip"
-                 */
+      * Determines the mime type for a given file extension
+      * @param ext File extension, including the leading dot, e.g. ".zip"
+      */
     def getMimeType(ext: java.lang.String): iobrokerLib.Anon_IsBinary = js.native
     /**
-                 * Retrieves a copy of the object with the given ID
-                 * @param id Id of the object to find
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Retrieves a copy of the object with the given ID
+      * @param id Id of the object to find
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def getObject(id: java.lang.String, callback: GetObjectCallback): scala.Unit = js.native
     def getObject(id: java.lang.String, options: js.Any, callback: GetObjectCallback): scala.Unit = js.native
     /**
-                 * Returns a list of objects with id between params.startkey and params.endkey
-                 * @param params Parameters determining the objects included in the return list. Null to include all objects
-                 * @param options (optional) If the returned list should be sorted. And some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Returns a list of objects with id between params.startkey and params.endkey
+      * @param params Parameters determining the objects included in the return list. Null to include all objects
+      * @param options (optional) If the returned list should be sorted. And some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def getObjectList(params: GetObjectListParams, callback: GetObjectListCallback): scala.Unit = js.native
     def getObjectList(params: GetObjectListParams, options: iobrokerLib.Anon_Sorted, callback: GetObjectListCallback): scala.Unit = js.native
     def getObjectList(
@@ -1900,25 +1599,19 @@ object ioBrokerNs extends js.Object {
       options: stdLib.Record[java.lang.String, _],
       callback: GetObjectListCallback
     ): scala.Unit = js.native
-    /**
-                 * Returns a list of objects with id between params.startkey and params.endkey
-                 * @param params Parameters determining the objects included in the return list. Null to include all objects
-                 * @param options (optional) If the returned list should be sorted. And some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
     def getObjectList(params: scala.Null, callback: GetObjectListCallback): scala.Unit = js.native
     def getObjectList(params: scala.Null, options: iobrokerLib.Anon_Sorted, callback: GetObjectListCallback): scala.Unit = js.native
     def getObjectList(params: scala.Null, options: stdLib.Record[java.lang.String, _], callback: GetObjectListCallback): scala.Unit = js.native
     /**
-                 * Query a predefined object view (similar to SQL stored procedures) and return the results
-                 * For a detailed description refer to https://github.com/ioBroker/ioBroker/wiki/Adapter-Development-Documentation#object-fields
-                 * or http://guide.couchdb.org/editions/1/en/views.html
-                 * @param design The namespace of the object view, as defined in io-package.json. Usually the adapter name, e.g. "hm-rpc"
-                 * @param search The name of the object view.
-                 * @param params Parameters to additionally filter out objects from the return list. Null to include all objects
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Query a predefined object view (similar to SQL stored procedures) and return the results
+      * For a detailed description refer to https://github.com/ioBroker/ioBroker/wiki/Adapter-Development-Documentation#object-fields
+      * or http://guide.couchdb.org/editions/1/en/views.html
+      * @param design The namespace of the object view, as defined in io-package.json. Usually the adapter name, e.g. "hm-rpc"
+      * @param search The name of the object view.
+      * @param params Parameters to additionally filter out objects from the return list. Null to include all objects
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def getObjectView(
       design: java.lang.String,
       search: java.lang.String,
@@ -1932,16 +1625,6 @@ object ioBrokerNs extends js.Object {
       options: js.Any,
       callback: GetObjectViewCallback
     ): scala.Unit = js.native
-    /**
-                 * Query a predefined object view (similar to SQL stored procedures) and return the results
-                 * For a detailed description refer to https://github.com/ioBroker/ioBroker/wiki/Adapter-Development-Documentation#object-fields
-                 * or http://guide.couchdb.org/editions/1/en/views.html
-                 * @param design The namespace of the object view, as defined in io-package.json. Usually the adapter name, e.g. "hm-rpc"
-                 * @param search The name of the object view.
-                 * @param params Parameters to additionally filter out objects from the return list. Null to include all objects
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
     def getObjectView(
       design: java.lang.String,
       search: java.lang.String,
@@ -1956,20 +1639,13 @@ object ioBrokerNs extends js.Object {
       callback: GetObjectViewCallback
     ): scala.Unit = js.native
     /**
-                 * Returns a list of objects with the given ids
-                 * @param keys IDs of the objects to be retrieved
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 * @param dontModify unused
-                 */
+      * Returns a list of objects with the given ids
+      * @param keys IDs of the objects to be retrieved
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      * @param dontModify unused
+      */
     def getObjects(keys: js.Array[java.lang.String], callback: GetObjectsCallback2): scala.Unit = js.native
-    /**
-                 * Returns a list of objects with the given ids
-                 * @param keys IDs of the objects to be retrieved
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 * @param dontModify unused
-                 */
     def getObjects(keys: js.Array[java.lang.String], callback: GetObjectsCallback2, dontModify: js.Any): scala.Unit = js.native
     def getObjects(keys: js.Array[java.lang.String], options: js.Any, callback: GetObjectsCallback2): scala.Unit = js.native
     def getObjects(
@@ -1979,46 +1655,46 @@ object ioBrokerNs extends js.Object {
       dontModify: js.Any
     ): scala.Unit = js.native
     /**
-                 * For a given user, returns the groups he belongs to, and his access rights
-                 * @param user Name of the user. Has to start with "system.user."
-                 * @param callback The callback function to be invoked with the return values
-                 */
+      * For a given user, returns the groups he belongs to, and his access rights
+      * @param user Name of the user. Has to start with "system.user."
+      * @param callback The callback function to be invoked with the return values
+      */
     def getUserGroup(user: java.lang.String, callback: GetUserGroupCallback): scala.Unit = js.native
     /**
-                 * Creates an empty directory with the given name
-                 * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
-                 * @param name Directory name
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Creates an empty directory with the given name
+      * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
+      * @param name Directory name
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def mkDir(id: java.lang.String, name: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
     def mkDir(id: java.lang.String, name: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     /**
-                 * Finds all files and directories starting with <name>
-                 * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
-                 * @param name File or directory name
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Finds all files and directories starting with <name>
+      * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
+      * @param name File or directory name
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def readDir(id: java.lang.String, name: java.lang.String, callback: ReadDirCallback): scala.Unit = js.native
     def readDir(id: java.lang.String, name: java.lang.String, options: js.Any, callback: ReadDirCallback): scala.Unit = js.native
     /**
-                 * Reads a file.
-                 * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
-                 * @param name File name
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Reads a file.
+      * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
+      * @param name File name
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def readFile(id: java.lang.String, name: java.lang.String, callback: ReadFileCallback): scala.Unit = js.native
     def readFile(id: java.lang.String, name: java.lang.String, options: js.Any, callback: ReadFileCallback): scala.Unit = js.native
     /**
-                 * Renames a file or directory
-                 * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
-                 * @param oldName Old file or directory name
-                 * @param newName Name to rename to
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Renames a file or directory
+      * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
+      * @param oldName Old file or directory name
+      * @param newName Name to rename to
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def rename(
       id: java.lang.String,
       oldName: java.lang.String,
@@ -2033,84 +1709,76 @@ object ioBrokerNs extends js.Object {
       callback: ErrorCallback
     ): scala.Unit = js.native
     /**
-                 * Deletes all files in the root directory matching <name>
-                 * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
-                 * @param name Pattern to match against
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Deletes all files in the root directory matching <name>
+      * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
+      * @param name Pattern to match against
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def rm(id: java.lang.String, name: java.lang.String, callback: RmCallback): scala.Unit = js.native
     def rm(id: java.lang.String, name: java.lang.String, options: js.Any, callback: RmCallback): scala.Unit = js.native
     /**
-                 * Creates or overwrites an object in the object db
-                 * @param id ID of the object
-                 * @param obj Object to store
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Creates or overwrites an object in the object db
+      * @param id ID of the object
+      * @param obj Object to store
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def setConfig(id: java.lang.String, obj: SettableObject, callback: SetObjectCallback): scala.Unit = js.native
     def setConfig(id: java.lang.String, obj: SettableObject, options: js.Any, callback: SetObjectCallback): scala.Unit = js.native
     /**
-                 * Creates or overwrites an object in the object db
-                 * @param id ID of the object
-                 * @param obj Object to store
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Creates or overwrites an object in the object db
+      * @param id ID of the object
+      * @param obj Object to store
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def setObject(id: java.lang.String, obj: SettableObject, callback: SetObjectCallback): scala.Unit = js.native
     def setObject(id: java.lang.String, obj: SettableObject, options: js.Any, callback: SetObjectCallback): scala.Unit = js.native
     /**
-                 * Subscribe to object changes
-                 * @param pattern The pattern to match against
-                 */
+      * Subscribe to object changes
+      * @param pattern The pattern to match against
+      */
     def subscribe(pattern: java.lang.String, callback: EmptyCallback): scala.Unit = js.native
     def subscribe(pattern: java.lang.String, options: js.Any, callback: EmptyCallback): scala.Unit = js.native
     // not documented. enabled = true seems to disable the cache
     // enableFileCache(enabled, options, callback)
     /**
-                 * Subscribe to object changes
-                 * @param pattern The pattern to match against
-                 */
+      * Subscribe to object changes
+      * @param pattern The pattern to match against
+      */
     def subscribeConfig(pattern: java.lang.String, callback: EmptyCallback): scala.Unit = js.native
     def subscribeConfig(pattern: java.lang.String, options: js.Any, callback: EmptyCallback): scala.Unit = js.native
     /**
-                 * Creates an empty file with the given name
-                 * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
-                 * @param name File name
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Creates an empty file with the given name
+      * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
+      * @param name File name
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def touch(id: java.lang.String, name: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
     def touch(id: java.lang.String, name: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     /**
-                 * Deletes a file.
-                 * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
-                 * @param name File name
-                 * @param options (optional) Some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Deletes a file.
+      * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
+      * @param name File name
+      * @param options (optional) Some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def unlink(id: java.lang.String, name: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
     def unlink(id: java.lang.String, name: java.lang.String, options: js.Any, callback: ErrorCallback): scala.Unit = js.native
     /**
-                 * Unsubscribe from object changes
-                 * @param pattern The pattern to match against
-                 */
+      * Unsubscribe from object changes
+      * @param pattern The pattern to match against
+      */
     def unsubscribe(pattern: java.lang.String, callback: EmptyCallback): scala.Unit = js.native
     def unsubscribe(pattern: java.lang.String, options: js.Any, callback: EmptyCallback): scala.Unit = js.native
     /**
-                 * Unsubscribe from object changes
-                 * @param pattern The pattern to match against
-                 */
+      * Unsubscribe from object changes
+      * @param pattern The pattern to match against
+      */
     def unsubscribeConfig(pattern: java.lang.String, callback: EmptyCallback): scala.Unit = js.native
     def unsubscribeConfig(pattern: java.lang.String, options: js.Any, callback: EmptyCallback): scala.Unit = js.native
-    /**
-                 * Writes a file.
-                 * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
-                 * @param name File name
-                 * @param data Contents of the file
-                 * @param options (optional) MIME type of the file (string). Or some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
     def writeFile(id: java.lang.String, name: java.lang.String, data: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
     def writeFile(
       id: java.lang.String,
@@ -2127,13 +1795,13 @@ object ioBrokerNs extends js.Object {
       callback: ErrorCallback
     ): scala.Unit = js.native
     /**
-                 * Writes a file.
-                 * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
-                 * @param name File name
-                 * @param data Contents of the file
-                 * @param options (optional) MIME type of the file (string). Or some internal options.
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Writes a file.
+      * @param id Name of the root directory. This should be the adapter instance, e.g. "admin.0"
+      * @param name File name
+      * @param data Contents of the file
+      * @param options (optional) MIME type of the file (string). Or some internal options.
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def writeFile(id: java.lang.String, name: java.lang.String, data: nodeLib.Buffer, callback: ErrorCallback): scala.Unit = js.native
     def writeFile(
       id: java.lang.String,
@@ -2151,14 +1819,12 @@ object ioBrokerNs extends js.Object {
     ): scala.Unit = js.native
   }
   
-  
   trait OtherObject extends BaseObject {
     @JSName("common")
     var common_OtherObject: OtherCommon
     @JSName("type")
     var type_OtherObject: iobrokerLib.iobrokerLibStrings.adapter | iobrokerLib.iobrokerLibStrings.config | iobrokerLib.iobrokerLibStrings.enum | iobrokerLib.iobrokerLibStrings.group | iobrokerLib.iobrokerLibStrings.host | iobrokerLib.iobrokerLibStrings.info | iobrokerLib.iobrokerLibStrings.instance | iobrokerLib.iobrokerLibStrings.meta | iobrokerLib.iobrokerLibStrings.script | iobrokerLib.iobrokerLibStrings.user
   }
-  
   
   trait OtherPermission extends Permission {
     @JSName("operation")
@@ -2168,30 +1834,25 @@ object ioBrokerNs extends js.Object {
   }
   
   /* RemoveDifficultInheritance: 
-  - Lifted 1 members from Set(std.Partial) */ 
-  trait PartialChannelObject extends js.Object {
+  - Lifted 1 members from Set(std.Partial<std.Pick<iobroker.iobroker.Global.ioBroker.ChannelObject, '_id' | 'native' | 'enums' | 'type' | 'acl'>>) */ trait PartialChannelObject extends js.Object {
     var common: js.UndefOr[stdLib.Partial[ChannelCommon]] = js.undefined
   }
   
   /* RemoveDifficultInheritance: 
-  - Lifted 1 members from Set(std.Partial) */ 
-  trait PartialDeviceObject extends js.Object {
+  - Lifted 1 members from Set(std.Partial<std.Pick<iobroker.iobroker.Global.ioBroker.DeviceObject, '_id' | 'native' | 'enums' | 'type' | 'acl'>>) */ trait PartialDeviceObject extends js.Object {
     var common: js.UndefOr[stdLib.Partial[ObjectCommon]] = js.undefined
   }
   
   /* RemoveDifficultInheritance: 
-  - Lifted 1 members from Set(std.Partial) */ 
-  trait PartialOtherObject extends js.Object {
+  - Lifted 1 members from Set(std.Partial<std.Pick<iobroker.iobroker.Global.ioBroker.OtherObject, '_id' | 'native' | 'enums' | 'type' | 'acl'>>) */ trait PartialOtherObject extends js.Object {
     var common: js.UndefOr[stdLib.Partial[ObjectCommon]] = js.undefined
   }
   
   /* RemoveDifficultInheritance: 
-  - Lifted 1 members from Set(std.Partial) */ 
-  trait PartialStateObject extends js.Object {
+  - Lifted 1 members from Set(std.Partial<std.Pick<iobroker.iobroker.Global.ioBroker.StateObject, '_id' | 'native' | 'enums' | 'type'>>) */ trait PartialStateObject extends js.Object {
     var acl: js.UndefOr[stdLib.Partial[StateACL]] = js.undefined
     var common: js.UndefOr[stdLib.Partial[StateCommon]] = js.undefined
   }
-  
   
   trait Permission extends js.Object {
     /** Which kind of operation is required */
@@ -2201,7 +1862,6 @@ object ioBrokerNs extends js.Object {
   }
   
   /** Defined the complete set of access rights a user has */
-  
   trait PermissionSet extends ObjectPermissions {
     /** The name of the groups this ACL was merged from */
     var groups: js.Array[java.lang.String]
@@ -2212,7 +1872,6 @@ object ioBrokerNs extends js.Object {
   }
   
   /** Contains the return values of readDir */
-  
   trait ReadDirResult extends js.Object {
     /** Access rights */
     var acl: EvaluatedFileACL
@@ -2229,7 +1888,6 @@ object ioBrokerNs extends js.Object {
   }
   
   /** Contains the return values of rm */
-  
   trait RmResult extends js.Object {
     /** The name of the deleted file or directory */
     var file: java.lang.String
@@ -2241,12 +1899,10 @@ object ioBrokerNs extends js.Object {
   
   // In set[Foreign]Object[NotExists] methods, the ID and acl of the object is optional
   /* RemoveDifficultInheritance: 
-  - Lifted 1 members from Set(std.Pick) */ 
-  trait SettableObject extends js.Object {
+  - Lifted 1 members from Set(std.Pick<iobroker.iobroker.Global.ioBroker.Object, std.Exclude<keyof iobroker.iobroker.Global.ioBroker.Object, '_id' | 'acl'>>) */ trait SettableObject extends js.Object {
     var _id: js.UndefOr[js.Any] = js.undefined
     var acl: js.UndefOr[js.Any] = js.undefined
   }
-  
   
   trait State extends js.Object {
     /** Direction flag: false for desired value and true for actual value. Default: false. */
@@ -2268,12 +1924,10 @@ object ioBrokerNs extends js.Object {
   }
   
   /** Defines access rights for a single state object */
-  
   trait StateACL extends ObjectACL {
     /** Linux-type permissions defining access to this state */
     var state: scala.Double
   }
-  
   
   trait StateCommon extends ObjectCommon {
     /** the default value */
@@ -2292,17 +1946,17 @@ object ioBrokerNs extends js.Object {
     @JSName("role")
     var role_StateCommon: java.lang.String
     /**
-                 * Dictionary of possible values for this state in the form
-                 * <pre>
-                 * {
-                 *     "internal value 1": "displayed value 1",
-                 *     "internal value 2": "displayed value 2",
-                 *     ...
-                 * }
-                 * </pre>
-                 * In old ioBroker versions, this could also be a string of the form
-                 * "val1:text1;val2:text2" (now deprecated)
-                 */
+      * Dictionary of possible values for this state in the form
+      * <pre>
+      * {
+      *     "internal value 1": "displayed value 1",
+      *     "internal value 2": "displayed value 2",
+      *     ...
+      * }
+      * </pre>
+      * In old ioBroker versions, this could also be a string of the form
+      * "val1:text1;val2:text2" (now deprecated)
+      */
     var states: js.UndefOr[(stdLib.Record[java.lang.String, java.lang.String]) | java.lang.String] = js.undefined
     /** Type of this state. See https://github.com/ioBroker/ioBroker/blob/master/doc/SCHEMA.md#state-commonrole for a detailed description */
     var `type`: js.UndefOr[CommonType] = js.undefined
@@ -2313,7 +1967,6 @@ object ioBrokerNs extends js.Object {
     /** if this state is writable */
     var write: scala.Boolean
   }
-  
   
   trait StateObject extends BaseObject {
     @JSName("acl")
@@ -2335,284 +1988,182 @@ object ioBrokerNs extends js.Object {
     def clearAllMessages(): scala.Unit = js.native
     def clearAllMessages(callback: EmptyCallback): scala.Unit = js.native
     /**
-                 * Deletes a binary state from Redis
-                 * @param id The id of the state to be deleted
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Deletes a binary state from Redis
+      * @param id The id of the state to be deleted
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def delBinaryState(id: java.lang.String, callback: DeleteStateCallback): scala.Unit = js.native
     /**
-                 * Deletes a config object in the object db
-                 * @param id ID of the object
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Deletes a config object in the object db
+      * @param id ID of the object
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def delConfig(id: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
     def delLog(id: java.lang.String, logId: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
     def delMessage(id: java.lang.String, messageId: scala.Double, callback: ErrorCallback): scala.Unit = js.native
     /**
-                 * Deletes a state
-                 * @param id ID of the state to be stored
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Deletes a state
+      * @param id ID of the state to be stored
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def delState(id: java.lang.String, callback: DeleteStateCallback): scala.Unit = js.native
     /** Destructor of the class. Call this before shutting down */
     def destroy(): scala.Unit = js.native
     def destroySession(id: java.lang.String): scala.Unit = js.native
     def destroySession(id: java.lang.String, callback: EmptyCallback): scala.Unit = js.native
     /**
-                 * Reads a binary state from Redis
-                 * @param id The id of the state
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Reads a binary state from Redis
+      * @param id The id of the state
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def getBinaryState(id: java.lang.String, callback: GetBinaryStateCallback): scala.Unit = js.native
     /**
-                 * Retrieves a copy of the object with the given ID
-                 * @param id Id of the object to find
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Retrieves a copy of the object with the given ID
+      * @param id Id of the object to find
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def getConfig(id: java.lang.String, callback: GetObjectCallback): scala.Unit = js.native
     /**
-                 * Returns a list of config keys matching <pattern>
-                 * @param pattern Pattern to match against
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 * @param dontModify unused
-                 */
+      * Returns a list of config keys matching <pattern>
+      * @param pattern Pattern to match against
+      * @param callback Is called when the operation has finished (successfully or not)
+      * @param dontModify unused
+      */
     def getConfigKeys(pattern: java.lang.String, callback: GetConfigKeysCallback): scala.Unit = js.native
-    /**
-                 * Returns a list of config keys matching <pattern>
-                 * @param pattern Pattern to match against
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 * @param dontModify unused
-                 */
     def getConfigKeys(pattern: java.lang.String, callback: GetConfigKeysCallback, dontModify: js.Any): scala.Unit = js.native
     /**
-                 * Returns a list of objects with the given ids
-                 * @param keys IDs of the objects to be retrieved
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 * @param dontModify unused
-                 */
+      * Returns a list of objects with the given ids
+      * @param keys IDs of the objects to be retrieved
+      * @param callback Is called when the operation has finished (successfully or not)
+      * @param dontModify unused
+      */
     def getConfigs(keys: js.Array[java.lang.String], callback: GetObjectsCallback2): scala.Unit = js.native
-    /**
-                 * Returns a list of objects with the given ids
-                 * @param keys IDs of the objects to be retrieved
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 * @param dontModify unused
-                 */
     def getConfigs(keys: js.Array[java.lang.String], callback: GetObjectsCallback2, dontModify: js.Any): scala.Unit = js.native
     /**
-                 * Retrieves all ids of states matching @link{pattern}
-                 * @param pattern The pattern to match against
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 * @param dontModify unused
-                 */
+      * Retrieves all ids of states matching @link{pattern}
+      * @param pattern The pattern to match against
+      * @param callback Is called when the operation has finished (successfully or not)
+      * @param dontModify unused
+      */
     def getKeys(pattern: java.lang.String, callback: GetConfigKeysCallback): scala.Unit = js.native
-    /**
-                 * Retrieves all ids of states matching @link{pattern}
-                 * @param pattern The pattern to match against
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 * @param dontModify unused
-                 */
     def getKeys(pattern: java.lang.String, callback: GetConfigKeysCallback, dontModify: js.Any): scala.Unit = js.native
     def getLog(id: java.lang.String, callback: GenericCallback[Log]): scala.Unit = js.native
     def getMessage(id: java.lang.String, callback: GenericCallback[Message]): scala.Unit = js.native
     def getSession(id: java.lang.String, callback: GetSessionCallback): scala.Unit = js.native
     /**
-                 * Returns the state with the given id
-                 * @param id ID of the state to be retrieved
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Returns the state with the given id
+      * @param id ID of the state to be retrieved
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def getState(id: java.lang.String, callback: GetStateCallback): scala.Unit = js.native
     /**
-                 * Returns a list of states with the given ids
-                 * @param keys IDs of the states to be retrieved
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 * @param dontModify unused
-                 */
+      * Returns a list of states with the given ids
+      * @param keys IDs of the states to be retrieved
+      * @param callback Is called when the operation has finished (successfully or not)
+      * @param dontModify unused
+      */
     def getStates(keys: js.Array[java.lang.String], callback: GetStatesCallback2): scala.Unit = js.native
-    /**
-                 * Returns a list of states with the given ids
-                 * @param keys IDs of the states to be retrieved
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 * @param dontModify unused
-                 */
     def getStates(keys: js.Array[java.lang.String], callback: GetStatesCallback2, dontModify: js.Any): scala.Unit = js.native
     def lenLog(id: java.lang.String, callback: GenericCallback[scala.Double]): scala.Unit = js.native
     def lenMessage(id: java.lang.String, callback: GenericCallback[scala.Double]): scala.Unit = js.native
     /**
-                 * EDUCATED GUESS: Notify all clients about changes to an object
-                 * @param type object type
-                 * @param id State/object id
-                 * @param obj The changed object
-                 */
+      * EDUCATED GUESS: Notify all clients about changes to an object
+      * @param type object type
+      * @param id State/object id
+      * @param obj The changed object
+      */
     def publishAll(`type`: java.lang.String, id: java.lang.String, obj: Message): scala.Unit = js.native
     def pushLog(id: java.lang.String, log: Log, callback: SetStateCallback): scala.Unit = js.native
     // TODO: Documentation for these functions is missing
     def pushMessage(id: java.lang.String, state: Message, callback: SetStateCallback): scala.Unit = js.native
     /**
-                 * Register an adapter instance as subscribable.
-                 * This means that the instance can read information about all subscriptions to its states
-                 * and will be notified of changes.
-                 * @param instance Adapter instance to register, e.g. "admin.0"
-                 * @param cb Is called when the operation has finished (successfully or not)
-                 */
+      * Register an adapter instance as subscribable.
+      * This means that the instance can read information about all subscriptions to its states
+      * and will be notified of changes.
+      * @param instance Adapter instance to register, e.g. "admin.0"
+      * @param cb Is called when the operation has finished (successfully or not)
+      */
     def registerAdapterSubs(instance: java.lang.String): scala.Unit = js.native
-    /**
-                 * Register an adapter instance as subscribable.
-                 * This means that the instance can read information about all subscriptions to its states
-                 * and will be notified of changes.
-                 * @param instance Adapter instance to register, e.g. "admin.0"
-                 * @param cb Is called when the operation has finished (successfully or not)
-                 */
     def registerAdapterSubs(
       instance: java.lang.String,
       cb: js.Function2[/* error */ scala.Null, /* success */ scala.Boolean, scala.Unit]
     ): scala.Unit = js.native
     /**
-                 * Writes a binary state into Redis
-                 * @param id The id of the state
-                 * @param data The data to be written
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Writes a binary state into Redis
+      * @param id The id of the state
+      * @param data The data to be written
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def setBinaryState(id: java.lang.String, data: nodeLib.Buffer, callback: SetStateCallback): scala.Unit = js.native
     /**
-                 * Creates or overwrites a config object in the object db
-                 * @param id ID of the object
-                 * @param obj Object to store
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Creates or overwrites a config object in the object db
+      * @param id ID of the object
+      * @param obj Object to store
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def setConfig(id: java.lang.String, obj: Object, callback: SetObjectCallback): scala.Unit = js.native
     /**
-                 * Updates a state in memory without triggering a save
-                 * @param id ID of the state to be stored
-                 * @param state The state to be updated
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Updates a state in memory without triggering a save
+      * @param id ID of the state to be stored
+      * @param state The state to be updated
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def setRawState(id: java.lang.String, state: State): scala.Unit = js.native
-    /**
-                 * Updates a state in memory without triggering a save
-                 * @param id ID of the state to be stored
-                 * @param state The state to be updated
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
     def setRawState(id: java.lang.String, state: State, callback: SetStateCallback): scala.Unit = js.native
     def setSession(id: java.lang.String, expire: scala.Double): scala.Unit = js.native
     def setSession(id: java.lang.String, expire: scala.Double, callback: EmptyCallback): scala.Unit = js.native
     def setSession(id: java.lang.String, expire: scala.Double, obj: Session): scala.Unit = js.native
     def setSession(id: java.lang.String, expire: scala.Double, obj: Session, callback: EmptyCallback): scala.Unit = js.native
     /**
-                 * Stores a state in the db
-                 * @param id ID of the state to be stored
-                 * @param state The state to be stored in the db
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Stores a state in the db
+      * @param id ID of the state to be stored
+      * @param state The state to be stored in the db
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def setState(id: java.lang.String): scala.Unit = js.native
-    /**
-                 * Stores a state in the db
-                 * @param id ID of the state to be stored
-                 * @param state The state to be stored in the db
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
     def setState(id: java.lang.String, state: State): scala.Unit = js.native
-    /**
-                 * Stores a state in the db
-                 * @param id ID of the state to be stored
-                 * @param state The state to be stored in the db
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
     def setState(id: java.lang.String, state: State, callback: SetStateCallback): scala.Unit = js.native
-    /**
-                 * Stores a state in the db
-                 * @param id ID of the state to be stored
-                 * @param state The state to be stored in the db
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
     def setState(id: java.lang.String, state: java.lang.String): scala.Unit = js.native
-    /**
-                 * Stores a state in the db
-                 * @param id ID of the state to be stored
-                 * @param state The state to be stored in the db
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
     def setState(id: java.lang.String, state: java.lang.String, callback: SetStateCallback): scala.Unit = js.native
-    /**
-                 * Stores a state in the db
-                 * @param id ID of the state to be stored
-                 * @param state The state to be stored in the db
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
     def setState(id: java.lang.String, state: scala.Boolean): scala.Unit = js.native
-    /**
-                 * Stores a state in the db
-                 * @param id ID of the state to be stored
-                 * @param state The state to be stored in the db
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
     def setState(id: java.lang.String, state: scala.Boolean, callback: SetStateCallback): scala.Unit = js.native
-    /**
-                 * Stores a state in the db
-                 * @param id ID of the state to be stored
-                 * @param state The state to be stored in the db
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
     def setState(id: java.lang.String, state: scala.Double): scala.Unit = js.native
-    /**
-                 * Stores a state in the db
-                 * @param id ID of the state to be stored
-                 * @param state The state to be stored in the db
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
     def setState(id: java.lang.String, state: scala.Double, callback: SetStateCallback): scala.Unit = js.native
-    /**
-                 * Stores a state in the db
-                 * @param id ID of the state to be stored
-                 * @param state The state to be stored in the db
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
     def setState(id: java.lang.String, state: stdLib.Partial[State]): scala.Unit = js.native
-    /**
-                 * Stores a state in the db
-                 * @param id ID of the state to be stored
-                 * @param state The state to be stored in the db
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
     def setState(id: java.lang.String, state: stdLib.Partial[State], callback: SetStateCallback): scala.Unit = js.native
     /**
-                 * Subscribe to changes of all states matching @link{pattern}
-                 * @param pattern The pattern to match against
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Subscribe to changes of all states matching @link{pattern}
+      * @param pattern The pattern to match against
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def subscribe(pattern: java.lang.String, cb: EmptyCallback): scala.Unit = js.native
     /**
-                 * Subscribe to config object changes
-                 * @param pattern The pattern to match against
-                 */
+      * Subscribe to config object changes
+      * @param pattern The pattern to match against
+      */
     def subscribeConfig(pattern: java.lang.String, callback: EmptyCallback): scala.Unit = js.native
     def subscribeLog(id: java.lang.String, cb: EmptyCallback): scala.Unit = js.native
     def subscribeMessage(id: java.lang.String, cb: EmptyCallback): scala.Unit = js.native
     /**
-                 * Unregister an adapter instance as subscribable.
-                 * @param instance Adapter instance to unregister, e.g. "admin.0"
-                 * @param cb Is called when the operation has finished (successfully or not)
-                 */
+      * Unregister an adapter instance as subscribable.
+      * @param instance Adapter instance to unregister, e.g. "admin.0"
+      * @param cb Is called when the operation has finished (successfully or not)
+      */
     def unregisterAdapterSubs(instance: java.lang.String): scala.Unit = js.native
-    /**
-                 * Unregister an adapter instance as subscribable.
-                 * @param instance Adapter instance to unregister, e.g. "admin.0"
-                 * @param cb Is called when the operation has finished (successfully or not)
-                 */
     def unregisterAdapterSubs(
       instance: java.lang.String,
       cb: js.Function2[/* error */ scala.Null, /* success */ scala.Boolean, scala.Unit]
     ): scala.Unit = js.native
     /**
-                 * Unsubscribe from changes of all states matching @link{pattern}
-                 * @param pattern The pattern to match against
-                 * @param callback Is called when the operation has finished (successfully or not)
-                 */
+      * Unsubscribe from changes of all states matching @link{pattern}
+      * @param pattern The pattern to match against
+      * @param callback Is called when the operation has finished (successfully or not)
+      */
     def unsubscribe(pattern: java.lang.String, cb: EmptyCallback): scala.Unit = js.native
     /**
-                 * Unsubscribe from config object changes
-                 * @param pattern The pattern to match against
-                 */
+      * Unsubscribe from config object changes
+      * @param pattern The pattern to match against
+      */
     def unsubscribeConfig(pattern: java.lang.String, callback: EmptyCallback): scala.Unit = js.native
     def unsubscribeLog(id: java.lang.String, cb: EmptyCallback): scala.Unit = js.native
     def unsubscribeMessage(id: java.lang.String, cb: EmptyCallback): scala.Unit = js.native
@@ -2620,7 +2171,6 @@ object ioBrokerNs extends js.Object {
   
   // interface UserGroup { }
   /** Contains information about a user */
-  
   trait User extends js.Object {
     /** Access rights of this user */
     var acl: ObjectPermissions

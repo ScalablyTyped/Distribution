@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 trait OnsRippleElement
   extends stdLib.HTMLElement {
   /**
-       * @description A boolean value that specifies whether the input is disabled or not.
-       */
+    * @description A boolean value that specifies whether the input is disabled or not.
+    */
   var disabled: scala.Boolean = js.native
 }
 

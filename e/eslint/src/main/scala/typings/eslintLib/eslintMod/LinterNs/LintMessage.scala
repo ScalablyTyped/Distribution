@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LintMessage extends js.Object {
   var column: scala.Double
   var endColumn: js.UndefOr[scala.Double] = js.undefined

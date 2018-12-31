@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_BottomRadius extends js.Object {
   var bottomRadius: scala.Double
   var length: scala.Double

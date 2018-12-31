@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Editor extends js.Object {
   var bin: java.lang.String
   var id: java.lang.String

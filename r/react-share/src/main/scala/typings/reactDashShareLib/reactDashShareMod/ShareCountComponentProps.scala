@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShareCountComponentProps extends js.Object {
   /** Supply a function as the child to render anything but the count */
   var children: js.UndefOr[js.Function1[/* shareCount */ scala.Double, reactLib.reactMod.ReactNs.ReactNode]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LeagueDto extends js.Object {
   var entries: js.Array[LeagueEntryDto]
   var name: java.lang.String

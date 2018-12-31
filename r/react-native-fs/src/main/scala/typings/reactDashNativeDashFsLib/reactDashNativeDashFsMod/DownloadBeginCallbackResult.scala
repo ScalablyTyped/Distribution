@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DownloadBeginCallbackResult extends js.Object {
   // The total size in bytes of the download resource
   var contentLength: scala.Double

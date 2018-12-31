@@ -10,9 +10,14 @@ import scala.scalajs.js.annotation._
 	* @brief x509 证书对象
 	* @detail X509Cert 对象属于 crypto 模块，创建：,```JavaScript,var k = new crypto.X509Cert();,```
 	*/
-
 @JSGlobal("Class_X509Cert")
 @js.native
+/**
+	 * 
+	 * @brief X509Cert 构造函数
+	 * 
+	 * 
+	 */
 class Class_X509Cert () extends Class__object {
   /**
   	 * class prop 

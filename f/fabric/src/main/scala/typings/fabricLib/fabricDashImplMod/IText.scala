@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(fabricLib.fabricDashImplMod.IITextOptions because Would inherit conflicting mutable fields List(cornerColor, transparentCorners, lockScalingX, shadow, hasControls, backgroundColor, name, includeDefaultValues, hasRotatingPoint, cornerSize, perPixelTargetFind, originX, scaleY, aCoords, lockMovementY, visible, transformMatrix, centeredRotation, angle, evented, stroke, strokeDashArray, data, left, height, centeredScaling, strokeLineCap, hoverCursor, skewX, strokeMiterLimit, lockUniScaling, borderDashArray, selectable, strokeLineJoin, skewY, objectCaching, cornerStrokeColor, flipX, fill, cornerDashArray, rotatingPointOffset, borderScaleFactor, opacity, globalCompositeOperation, padding, `type`, cornerStyle, lockScalingFlip, hasBorders, width, top, lockMovementX, lockRotation, clipTo, strokeWidth, flipY, originY, borderColor, scaleX, lockScalingY, borderOpacityWhenMoving, fillRule, minScaleLimit, path, underline, textDecoration, fontStyle, text, textAlign, fontFamily, lineHeight, overline, fontSize, textBackgroundColor, linethrough, useNative, charSpacing, fontWeight))*/
+/* RemoveMultipleInheritance: Dropped parents List(fabricLib.fabricDashImplMod.IITextOptions because Would inherit conflicting mutable fields List(aCoords, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, centeredRotation, centeredScaling, charSpacing, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, evented, fill, fillRule, flipX, flipY, fontFamily, fontSize, fontStyle, fontWeight, globalCompositeOperation, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, left, lineHeight, linethrough, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockUniScaling, minScaleLimit, name, objectCaching, opacity, originX, originY, overline, padding, path, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, shadow, skewX, skewY, stroke, strokeDashArray, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeWidth, text, textAlign, textBackgroundColor, textDecoration, top, transformMatrix, transparentCorners, `type`, underline, useNative, visible, width))*/
 @JSImport("fabric/fabric-impl", "IText")
 @js.native
 class IText protected () extends Text {
@@ -15,11 +15,6 @@ class IText protected () extends Text {
   	 * @param [options] Options object
   	 */
   def this(text: java.lang.String) = this()
-  /**
-  	 * Constructor
-  	 * @param text Text string
-  	 * @param [options] Options object
-  	 */
   def this(text: java.lang.String, options: IITextOptions) = this()
   /**
   	 * Aborts cursor animation and clears all timeouts
@@ -62,10 +57,6 @@ class IText protected () extends Text {
   	 * @param [selectionStart] Optional index. When not given, current selectionStart is used.
   	 */
   def get2DCursorLocation(): scala.Unit = js.native
-  /**
-  	 * Returns 2d representation (lineIndex and charIndex) of cursor (or selection start)
-  	 * @param [selectionStart] Optional index. When not given, current selectionStart is used.
-  	 */
   def get2DCursorLocation(selectionStart: scala.Double): scala.Unit = js.native
   /**
   	 * Returns color (fill) of char at the current cursor
@@ -103,12 +94,6 @@ class IText protected () extends Text {
   	 * @return styles Style object at a specified (or current) index
   	 */
   def getSelectionStyles(startIndex: scala.Double, endIndex: scala.Double): js.Any = js.native
-  /**
-  	 * Gets style of a current selection/cursor (at the start position)
-  	 * @param [startIndex] Start index to get styles at
-  	 * @param [endIndex] End index to get styles at
-  	 * @return styles Style object at a specified (or current) index
-  	 */
   def getSelectionStyles(startIndex: scala.Double, endIndex: scala.Double, complete: scala.Boolean): js.Any = js.native
   /**
   	 * Initializes "added" event handler
@@ -145,10 +130,6 @@ class IText protected () extends Text {
   	 * @param _chars Characters to insert
   	 */
   def insertChars(_chars: java.lang.String): scala.Unit = js.native
-  /**
-  	 * Inserts a character where cursor is (replacing selection if one exists)
-  	 * @param _chars Characters to insert
-  	 */
   def insertChars(_chars: java.lang.String, useCopiedStyle: scala.Boolean): scala.Unit = js.native
   /**
   	 * Inserts new line
@@ -168,16 +149,10 @@ class IText protected () extends Text {
   	 * @param [useCopiedStyle] Style to insert
   	 */
   def insertStyleObjects(_chars: java.lang.String, isEndOfLine: scala.Boolean): scala.Unit = js.native
-  /**
-  	 * Inserts style object(s)
-  	 * @param _chars Characters at the location where style is inserted
-  	 * @param isEndOfLine True if it's end of line
-  	 * @param [useCopiedStyle] Style to insert
-  	 */
   def insertStyleObjects(_chars: java.lang.String, isEndOfLine: scala.Boolean, useCopiedStyle: scala.Boolean): scala.Unit = js.native
   /**
-       * Returns true if object has no styling or no styling in a line
-       * @param {Number} lineIndex , lineIndex is on wrapped lines.
+    * Returns true if object has no styling or no styling in a line
+    * @param {Number} lineIndex , lineIndex is on wrapped lines.
   	 */
   def isEmptyStyles(lineIndex: scala.Double): scala.Boolean = js.native
   /**
@@ -186,11 +161,6 @@ class IText protected () extends Text {
   	 * @param [index] Optional index. When not given, current selectionStart is used.
   	 */
   def removeStyleObject(isBeginningOfLine: scala.Boolean): scala.Unit = js.native
-  /**
-  	 * Removes style object
-  	 * @param isBeginningOfLine True if cursor is at the beginning of line
-  	 * @param [index] Optional index. When not given, current selectionStart is used.
-  	 */
   def removeStyleObject(isBeginningOfLine: scala.Boolean, index: scala.Double): scala.Unit = js.native
   /**
   	 * Renders cursor

@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait HTMLFormControlsCollection extends HTMLCollectionBase {
   /**
-       * element = collection[name]
-       */
+    * element = collection[name]
+    */
   def namedItem(name: java.lang.String): RadioNodeList | Element | scala.Null
 }
 

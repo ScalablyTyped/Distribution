@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Node extends js.Object {
   var children: js.Array[Node]
   var error: stdLib.Error | scala.Null

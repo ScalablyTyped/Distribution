@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PivotTransportDiscover extends js.Object {
   var cache: js.UndefOr[scala.Boolean] = js.undefined
   var contentType: js.UndefOr[java.lang.String] = js.undefined

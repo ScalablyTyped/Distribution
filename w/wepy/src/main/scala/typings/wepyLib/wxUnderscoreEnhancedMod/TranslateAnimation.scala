@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TranslateAnimation extends js.Object {
   def translate(tx: scala.Double): Animation
   def translate3d(): Animation

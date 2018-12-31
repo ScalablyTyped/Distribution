@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PolygonOptions extends PolylineOptions {
   /**
   			 * Defines the precision for each type of unit (e.g. {km: 2, ft: 0}

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IShellFrameEvents extends IEvents {
   var OnActiveListingChanged: js.UndefOr[
     js.Function2[

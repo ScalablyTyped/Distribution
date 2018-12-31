@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IObservable
   extends extjsLib.ExtNs.IBase {
   /** [Method] Adds the specified events to the list of events which this Observable may fire
@@ -60,7 +59,7 @@ trait IObservable
   		* @returns Boolean returns false if any of the handlers return false otherwise it returns true.
   		*/
   var fireEvent: js.UndefOr[
-    js.Function2[/* eventName */ java.lang.String, /* repeated */js.Any, scala.Boolean]
+    js.Function2[/* eventName */ java.lang.String, /* repeated */ js.Any, scala.Boolean]
   ] = js.undefined
   /** [Method] Fires the specified event with the passed parameter list
   		* @param eventName String The name of the event to fire.
@@ -179,13 +178,13 @@ trait IObservable
   /** [Method] Resumes firing of the named event s
   		* @param eventName String... Multiple event names to resume.
   		*/
-  var resumeEvent: js.UndefOr[js.Function1[/* repeated */js.Any, scala.Unit]] = js.undefined
+  var resumeEvent: js.UndefOr[js.Function1[/* repeated */ js.Any, scala.Unit]] = js.undefined
   /** [Method] Resumes firing events see suspendEvents */
   var resumeEvents: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   /** [Method] Suspends firing of the named event s
   		* @param eventName String... Multiple event names to suspend.
   		*/
-  var suspendEvent: js.UndefOr[js.Function1[/* repeated */js.Any, scala.Unit]] = js.undefined
+  var suspendEvent: js.UndefOr[js.Function1[/* repeated */ js.Any, scala.Unit]] = js.undefined
   /** [Method] Suspends the firing of all events
   		* @param queueSuspended Boolean Pass as true to queue up suspended events to be fired after the resumeEvents call instead of discarding all suspended events.
   		*/

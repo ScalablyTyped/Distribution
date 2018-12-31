@@ -37,8 +37,8 @@ trait ChartistSvgStatic
      with org.scalablytyped.runtime.Instantiable0[IChartistSvg] {
   var Easing: ChartistEasingStatic = js.native
   /**
-           * This method checks for support of a given SVG feature like Extensibility, SVG-animation or the like. Check http://www.w3.org/TR/SVG11/feature for a detailed list.
-           */
+    * This method checks for support of a given SVG feature like Extensibility, SVG-animation or the like. Check http://www.w3.org/TR/SVG11/feature for a detailed list.
+    */
   def isSupported(feature: java.lang.String): scala.Boolean = js.native
 }
 

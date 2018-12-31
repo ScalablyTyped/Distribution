@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(vsoDashNodeDashApiLib.filecontainerapiMod.IFileContainerApi because Would inherit conflicting mutable fields List(rest, vsoClient, userAgent, baseUrl, http))*/
+/* RemoveMultipleInheritance: Dropped parents List(vsoDashNodeDashApiLib.filecontainerapiMod.IFileContainerApi because Would inherit conflicting mutable fields List(baseUrl, http, rest, userAgent, vsoClient))*/
 @JSImport("vso-node-api/FileContainerApi", "FileContainerApi")
 @js.native
 class FileContainerApi protected ()
@@ -34,38 +34,20 @@ class FileContainerApi protected ()
     options: js.Any
   ): js.Promise[vsoDashNodeDashApiLib.interfacesFileContainerInterfacesMod.FileContainerItem] = js.native
   /**
-       * @param {number} containerId
-       * @param {string} scope
-       * @param {string} itemPath
-       * @param {string} downloadFileName
-       */
+    * @param {number} containerId
+    * @param {string} scope
+    * @param {string} itemPath
+    * @param {string} downloadFileName
+    */
   def getItem(containerId: scala.Double): js.Promise[
     typedDashRestDashClientLib.restclientMod.IRestResponse[nodeLib.NodeJSNs.ReadableStream]
   ] = js.native
-  /**
-       * @param {number} containerId
-       * @param {string} scope
-       * @param {string} itemPath
-       * @param {string} downloadFileName
-       */
   def getItem(containerId: scala.Double, scope: java.lang.String): js.Promise[
     typedDashRestDashClientLib.restclientMod.IRestResponse[nodeLib.NodeJSNs.ReadableStream]
   ] = js.native
-  /**
-       * @param {number} containerId
-       * @param {string} scope
-       * @param {string} itemPath
-       * @param {string} downloadFileName
-       */
   def getItem(containerId: scala.Double, scope: java.lang.String, itemPath: java.lang.String): js.Promise[
     typedDashRestDashClientLib.restclientMod.IRestResponse[nodeLib.NodeJSNs.ReadableStream]
   ] = js.native
-  /**
-       * @param {number} containerId
-       * @param {string} scope
-       * @param {string} itemPath
-       * @param {string} downloadFileName
-       */
   def getItem(
     containerId: scala.Double,
     scope: java.lang.String,

@@ -14,39 +14,15 @@ trait CustomXMLSchemaCollection extends js.Object {
   def apply(Index: java.lang.String): CustomXMLSchema = js.native
   def apply(Index: scala.Double): CustomXMLSchema = js.native
   /**
-           * @param NamespaceURI [NamespaceURI='']
-           * @param Alias [Alias='']
-           * @param FileName [FileName='']
-           * @param InstallForAllUsers [InstallForAllUsers=false]
-           */
+    * @param NamespaceURI [NamespaceURI='']
+    * @param Alias [Alias='']
+    * @param FileName [FileName='']
+    * @param InstallForAllUsers [InstallForAllUsers=false]
+    */
   def Add(): CustomXMLSchema = js.native
-  /**
-           * @param NamespaceURI [NamespaceURI='']
-           * @param Alias [Alias='']
-           * @param FileName [FileName='']
-           * @param InstallForAllUsers [InstallForAllUsers=false]
-           */
   def Add(NamespaceURI: java.lang.String): CustomXMLSchema = js.native
-  /**
-           * @param NamespaceURI [NamespaceURI='']
-           * @param Alias [Alias='']
-           * @param FileName [FileName='']
-           * @param InstallForAllUsers [InstallForAllUsers=false]
-           */
   def Add(NamespaceURI: java.lang.String, Alias: java.lang.String): CustomXMLSchema = js.native
-  /**
-           * @param NamespaceURI [NamespaceURI='']
-           * @param Alias [Alias='']
-           * @param FileName [FileName='']
-           * @param InstallForAllUsers [InstallForAllUsers=false]
-           */
   def Add(NamespaceURI: java.lang.String, Alias: java.lang.String, FileName: java.lang.String): CustomXMLSchema = js.native
-  /**
-           * @param NamespaceURI [NamespaceURI='']
-           * @param Alias [Alias='']
-           * @param FileName [FileName='']
-           * @param InstallForAllUsers [InstallForAllUsers=false]
-           */
   def Add(
     NamespaceURI: java.lang.String,
     Alias: java.lang.String,

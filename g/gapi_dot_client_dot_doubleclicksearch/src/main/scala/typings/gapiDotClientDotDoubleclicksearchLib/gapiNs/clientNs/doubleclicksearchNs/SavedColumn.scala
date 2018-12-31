@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SavedColumn extends js.Object {
   /** Identifies this as a SavedColumn resource. Value: the fixed string doubleclicksearch#savedColumn. */
   var kind: js.UndefOr[java.lang.String] = js.undefined

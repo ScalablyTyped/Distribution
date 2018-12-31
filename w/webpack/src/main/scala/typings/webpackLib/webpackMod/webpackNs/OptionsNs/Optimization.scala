@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Optimization extends js.Object {
   /** Tries to find segments of the module graph which can be safely concatenated into a single module. Depends on optimization.providedExports and optimization.usedExports. */
   var concatenateModules: js.UndefOr[scala.Boolean] = js.undefined
@@ -34,9 +33,9 @@ trait Optimization extends js.Object {
   /** Determine exports for each module when possible. This information is used by other optimizations or code generation. I. e. to generate more efficient code for export * from. */
   var providedExports: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               *  Modules are removed from chunks when they are already available in all parent chunk groups.
-               *  This reduces asset size. Smaller assets also result in faster builds since less code generation has to be performed.
-               */
+    *  Modules are removed from chunks when they are already available in all parent chunk groups.
+    *  This reduces asset size. Smaller assets also result in faster builds since less code generation has to be performed.
+    */
   var removeAvailableModules: js.UndefOr[scala.Boolean] = js.undefined
   /** Empty chunks are removed. This reduces load in filesystem and results in faster builds. */
   var removeEmptyChunks: js.UndefOr[scala.Boolean] = js.undefined
@@ -45,18 +44,18 @@ trait Optimization extends js.Object {
     scala.Boolean | webpackLib.webpackLibStrings.single | webpackLib.webpackLibStrings.multiple | RuntimeChunkOptions
   ] = js.undefined
   /**
-               *  Recognise the sideEffects flag in package.json or rules to eliminate modules. This depends on optimization.providedExports and optimization.usedExports.
-               *  These dependencies have a cost, but eliminating modules has positive impact on performance because of less code generation. It depends on your codebase.
-               *  Try it for possible performance wins.
-               */
+    *  Recognise the sideEffects flag in package.json or rules to eliminate modules. This depends on optimization.providedExports and optimization.usedExports.
+    *  These dependencies have a cost, but eliminating modules has positive impact on performance because of less code generation. It depends on your codebase.
+    *  Try it for possible performance wins.
+    */
   var sideEffects: js.UndefOr[scala.Boolean] = js.undefined
   /** Finds modules which are shared between chunk and splits them into separate chunks to reduce duplication or separate vendor modules from application modules. */
   var splitChunks: js.UndefOr[SplitChunksOptions | webpackLib.webpackLibNumbers.`false`] = js.undefined
   /**
-               *  Determine used exports for each module. This depends on optimization.providedExports. This information is used by other optimizations or code generation.
-               *  I. e. exports are not generated for unused exports, export names are mangled to single char identifiers when all usages are compatible.
-               *  DCE in minimizers will benefit from this and can remove unused exports.
-               */
+    *  Determine used exports for each module. This depends on optimization.providedExports. This information is used by other optimizations or code generation.
+    *  I. e. exports are not generated for unused exports, export names are mangled to single char identifiers when all usages are compatible.
+    *  DCE in minimizers will benefit from this and can remove unused exports.
+    */
   var usedExports: js.UndefOr[scala.Boolean] = js.undefined
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IFileVer extends js.Object {
   var ID: scala.Double
   var Version: scala.Double

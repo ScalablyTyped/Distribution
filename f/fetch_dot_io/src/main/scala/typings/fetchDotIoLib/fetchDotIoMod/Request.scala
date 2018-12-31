@@ -10,92 +10,80 @@ import scala.scalajs.js.annotation._
 class Request protected () extends js.Object {
   def this(method: TMethod, url: TUrl, options: Options) = this()
   /**
-     * append formData
-     */
+    * append formData
+    */
   def append(key: java.lang.String, value: js.Any): this.type = js.native
   def append(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   /**
-     * Set Options
-     */
+    * Set Options
+    */
   def config(key: java.lang.String, value: js.Any): this.type = js.native
   def config(opts: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   /**
-     * HTTP delete method
-     */
+    * HTTP delete method
+    */
   def delete(url: TUrl): this.type = js.native
   /**
-     * HTTP get method
-     */
+    * HTTP get method
+    */
   def get(url: TUrl): this.type = js.native
   /**
-     * HTTP head method
-     */
+    * HTTP head method
+    */
   def head(url: TUrl): this.type = js.native
   /**
-     * Make Response to JSON
-     */
+    * Make Response to JSON
+    */
   def json(): js.Promise[_] = js.native
-  /**
-     * Make Response to JSON
-     */
   def json(strict: scala.Boolean): js.Promise[_] = js.native
   /**
-     * HTTP options method
-     */
+    * HTTP options method
+    */
   def options(url: TUrl): this.type = js.native
   /**
-     * HTTP patch method
-     */
+    * HTTP patch method
+    */
   def patch(url: TUrl): this.type = js.native
   /**
-     * HTTP post method
-     */
+    * HTTP post method
+    */
   def post(url: TUrl): this.type = js.native
   /**
-     * HTTP put method
-     */
+    * HTTP put method
+    */
   def put(url: TUrl): this.type = js.native
   /**
-     * Add query string
-     */
+    * Add query string
+    */
   def query(`object`: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   /**
-     * Send data
-     */
+    * Send data
+    */
   def send(data: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   /**
-     * Set Header
-     */
+    * Set Header
+    */
   def set(key: java.lang.String, value: js.Any): this.type = js.native
   def set(opts: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   /**
-     * Make Response to string
-     */
+    * Make Response to string
+    */
   def text(): js.Promise[java.lang.String] = js.native
   /**
-     * Get Response directly
-     */
+    * Get Response directly
+    */
   def `then`(resolve: js.Function1[/* value */ js.UndefOr[stdLib.Response], scala.Unit]): js.Promise[_] = js.native
-  /**
-     * Get Response directly
-     */
   def `then`(
     resolve: js.Function1[/* value */ js.UndefOr[stdLib.Response], scala.Unit],
     reject: js.Function1[/* reason */ js.UndefOr[js.Any], scala.Unit]
   ): js.Promise[_] = js.native
-  /**
-     * Set Content-Type
-     */
   @JSName("type")
   def type_form(`type`: fetchDotIoLib.fetchDotIoLibStrings.form): this.type = js.native
   /**
-     * Set Content-Type
-     */
+    * Set Content-Type
+    */
   @JSName("type")
   def type_json(`type`: fetchDotIoLib.fetchDotIoLibStrings.json): this.type = js.native
-  /**
-     * Set Content-Type
-     */
   @JSName("type")
   def type_urlencoded(`type`: fetchDotIoLib.fetchDotIoLibStrings.urlencoded): this.type = js.native
 }

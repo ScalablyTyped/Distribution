@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetOptions extends Options {
   /** Include attachment data. */
   var attachments: js.UndefOr[scala.Boolean] = js.undefined
@@ -20,9 +19,9 @@ trait GetOptions extends Options {
   /** Include revision history of the document. */
   var revs: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               * Include a list of revisions of the document, and their
-               * availability.
-               */
+    * Include a list of revisions of the document, and their
+    * availability.
+    */
   var revs_info: js.UndefOr[scala.Boolean] = js.undefined
 }
 

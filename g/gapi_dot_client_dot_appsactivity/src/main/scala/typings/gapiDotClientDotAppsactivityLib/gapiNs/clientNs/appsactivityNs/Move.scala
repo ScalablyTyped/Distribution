@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Move extends js.Object {
   /** The added parent(s). */
   var addedParents: js.UndefOr[js.Array[Parent]] = js.undefined

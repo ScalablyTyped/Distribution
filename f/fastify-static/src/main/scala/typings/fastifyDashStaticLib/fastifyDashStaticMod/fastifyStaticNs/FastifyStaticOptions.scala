@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FastifyStaticOptions extends js.Object {
   // Passed on to `send`
   var acceptRanges: js.UndefOr[scala.Boolean] = js.undefined

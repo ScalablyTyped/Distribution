@@ -12,22 +12,22 @@ sealed trait ContainerItemType extends js.Object
 @js.native
 object ContainerItemType extends js.Object {
   /**
-       * Any item type.
-       */
+    * Any item type.
+    */
   @js.native
   sealed trait Any
     extends vsoDashNodeDashApiLib.interfacesFileContainerInterfacesMod.ContainerItemType
   
   /**
-       * Item is a file which is stored in the file service.
-       */
+    * Item is a file which is stored in the file service.
+    */
   @js.native
   sealed trait File
     extends vsoDashNodeDashApiLib.interfacesFileContainerInterfacesMod.ContainerItemType
   
   /**
-       * Item is a folder which can have child items.
-       */
+    * Item is a folder which can have child items.
+    */
   @js.native
   sealed trait Folder
     extends vsoDashNodeDashApiLib.interfacesFileContainerInterfacesMod.ContainerItemType

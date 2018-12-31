@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccountIdentifier extends js.Object {
   /** The aggregator ID, set for aggregators and subaccounts (in that case, it represents the aggregator of the subaccount). */
   var aggregatorId: js.UndefOr[java.lang.String] = js.undefined

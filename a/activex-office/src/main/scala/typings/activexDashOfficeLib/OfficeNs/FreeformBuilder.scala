@@ -13,18 +13,12 @@ class FreeformBuilder protected () extends js.Object {
   var `Office.FreeformBuilder_typekey`: FreeformBuilder = js.native
   val Parent: js.Any = js.native
   /**
-           * @param X2 [X2=0]
-           * @param Y2 [Y2=0]
-           * @param X3 [X3=0]
-           * @param Y3 [Y3=0]
-           */
+    * @param X2 [X2=0]
+    * @param Y2 [Y2=0]
+    * @param X3 [X3=0]
+    * @param Y3 [Y3=0]
+    */
   def AddNodes(SegmentType: MsoSegmentType, EditingType: MsoEditingType, X1: scala.Double, Y1: scala.Double): scala.Unit = js.native
-  /**
-           * @param X2 [X2=0]
-           * @param Y2 [Y2=0]
-           * @param X3 [X3=0]
-           * @param Y3 [Y3=0]
-           */
   def AddNodes(
     SegmentType: MsoSegmentType,
     EditingType: MsoEditingType,
@@ -32,12 +26,6 @@ class FreeformBuilder protected () extends js.Object {
     Y1: scala.Double,
     X2: scala.Double
   ): scala.Unit = js.native
-  /**
-           * @param X2 [X2=0]
-           * @param Y2 [Y2=0]
-           * @param X3 [X3=0]
-           * @param Y3 [Y3=0]
-           */
   def AddNodes(
     SegmentType: MsoSegmentType,
     EditingType: MsoEditingType,
@@ -46,12 +34,6 @@ class FreeformBuilder protected () extends js.Object {
     X2: scala.Double,
     Y2: scala.Double
   ): scala.Unit = js.native
-  /**
-           * @param X2 [X2=0]
-           * @param Y2 [Y2=0]
-           * @param X3 [X3=0]
-           * @param Y3 [Y3=0]
-           */
   def AddNodes(
     SegmentType: MsoSegmentType,
     EditingType: MsoEditingType,
@@ -61,12 +43,6 @@ class FreeformBuilder protected () extends js.Object {
     Y2: scala.Double,
     X3: scala.Double
   ): scala.Unit = js.native
-  /**
-           * @param X2 [X2=0]
-           * @param Y2 [Y2=0]
-           * @param X3 [X3=0]
-           * @param Y3 [Y3=0]
-           */
   def AddNodes(
     SegmentType: MsoSegmentType,
     EditingType: MsoEditingType,

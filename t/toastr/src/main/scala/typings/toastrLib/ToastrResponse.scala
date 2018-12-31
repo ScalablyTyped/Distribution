@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ToastrResponse extends js.Object {
   /**
   	 * The datetime the toast was closed, if the state is hidden.

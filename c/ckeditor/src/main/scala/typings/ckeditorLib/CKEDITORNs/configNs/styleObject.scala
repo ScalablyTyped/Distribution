@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait styleObject extends js.Object {
   var attributes: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var element: java.lang.String

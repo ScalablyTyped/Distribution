@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait XMLToStringOptions extends js.Object {
   var allowEmpty: js.UndefOr[scala.Boolean] = js.undefined
   var indent: js.UndefOr[java.lang.String] = js.undefined

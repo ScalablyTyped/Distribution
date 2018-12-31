@@ -5,17 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StrictRatingProps extends js.Object {
   /** An element type to render as (string or function). */
   var as: js.UndefOr[js.Any] = js.undefined
   /** Additional classes. */
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
-     * You can clear the rating by clicking on the current start rating.
-     * By default a rating will be only clearable if there is 1 icon.
-     * Setting to `true`/`false` will allow or disallow a user to clear their rating.
-     */
+    * You can clear the rating by clicking on the current start rating.
+    * By default a rating will be only clearable if there is 1 icon.
+    * Setting to `true`/`false` will allow or disallow a user to clear their rating.
+    */
   var clearable: js.UndefOr[
     scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.auto
   ] = js.undefined
@@ -30,11 +29,11 @@ trait StrictRatingProps extends js.Object {
   /** The total number of icons. */
   var maxRating: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   /**
-     * Called after user selects a new rating.
-     *
-     * @param {SyntheticEvent} event - React's original SyntheticEvent.
-     * @param {object} data - All props and proposed rating.
-     */
+    * Called after user selects a new rating.
+    *
+    * @param {SyntheticEvent} event - React's original SyntheticEvent.
+    * @param {object} data - All props and proposed rating.
+    */
   var onRate: js.UndefOr[
     js.Function2[
       /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLDivElement, reactLib.NativeMouseEvent], 

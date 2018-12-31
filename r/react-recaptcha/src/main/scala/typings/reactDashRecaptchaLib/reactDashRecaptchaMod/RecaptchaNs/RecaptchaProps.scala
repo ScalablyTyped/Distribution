@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RecaptchaProps extends js.Object {
   var badge: js.UndefOr[
     reactDashRecaptchaLib.reactDashRecaptchaLibStrings.bottomright | reactDashRecaptchaLib.reactDashRecaptchaLibStrings.bottomleft | reactDashRecaptchaLib.reactDashRecaptchaLibStrings.`inline`

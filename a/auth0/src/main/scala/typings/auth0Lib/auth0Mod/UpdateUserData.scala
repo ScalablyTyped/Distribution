@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateUserData extends UserData {
   var blocked: js.UndefOr[scala.Boolean] = js.undefined
   var client_id: js.UndefOr[java.lang.String] = js.undefined

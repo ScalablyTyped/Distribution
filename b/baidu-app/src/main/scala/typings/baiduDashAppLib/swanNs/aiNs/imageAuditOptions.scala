@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * 自定义图像审核。
 		 */
-
 trait imageAuditOptions
   extends baiduDashAppLib.swanNs.BaseOptions[js.Any, js.Any] {
   var image: java.lang.String

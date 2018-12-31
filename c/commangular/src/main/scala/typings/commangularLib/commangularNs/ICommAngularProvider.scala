@@ -12,7 +12,6 @@ import scala.scalajs.js.annotation._
 	 * can have multiple command config blocks to separate functional parts of your application.
 	 * see http://commangular.org/docs/#using-the-provider
 	 */
-
 trait ICommAngularProvider extends js.Object {
   /**
   		  * A command flow is a decision point inside the command group.You can have any number

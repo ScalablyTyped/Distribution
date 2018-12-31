@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_TRIANGLESLINELOOP extends js.Object {
   var LINES: scala.Double
   var LINE_LOOP: scala.Double

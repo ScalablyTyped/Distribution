@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StoreSpec extends js.Object {
   var actions: js.UndefOr[js.Any] = js.undefined
   var initialize: js.UndefOr[

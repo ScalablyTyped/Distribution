@@ -11,23 +11,23 @@ class DefaultGraph ()
   extends rdfDashJsLib.rdfDashJsMod.DefaultGraph {
   val id: java.lang.String = js.native
   /**
-       * Contains the constant "DefaultGraph".
-       */
+    * Contains the constant "DefaultGraph".
+    */
   /* CompleteClass */
   override var termType: rdfDashJsLib.rdfDashJsLibStrings.DefaultGraph = js.native
   @JSName("termType")
   val termType_DefaultGraph: n3Lib.n3LibStrings.DefaultGraph = js.native
   /**
-       * Contains an empty string as constant value.
-       */
+    * Contains an empty string as constant value.
+    */
   /* CompleteClass */
   override var value: rdfDashJsLib.rdfDashJsLibStrings.Empty = js.native
   @JSName("value")
   val value_DefaultGraph: n3Lib.n3LibStrings.Empty = js.native
   /**
-       * @param other The term to compare with.
-       * @return True if and only if other has termType "DefaultGraph".
-       */
+    * @param other The term to compare with.
+    * @return True if and only if other has termType "DefaultGraph".
+    */
   /* CompleteClass */
   override def equals(other: rdfDashJsLib.rdfDashJsMod.Term): scala.Boolean = js.native
   def toJSON(): js.Object = js.native

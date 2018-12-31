@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Properties for alertify.set function
-     */
-
+  * Properties for alertify.set function
+  */
 trait IProperties extends js.Object {
   /** Default button for focus */
   var buttonFocus: js.UndefOr[java.lang.String] = js.undefined

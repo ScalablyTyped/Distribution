@@ -12,15 +12,15 @@ sealed trait QueueOptions extends js.Object
 @js.native
 object QueueOptions extends js.Object {
   /**
-       * Create a plan Id for the build, do not run it
-       */
+    * Create a plan Id for the build, do not run it
+    */
   @js.native
   sealed trait DoNotRun
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.QueueOptions
   
   /**
-       * No queue options
-       */
+    * No queue options
+    */
   @js.native
   sealed trait None
     extends vsoDashNodeDashApiLib.interfacesBuildInterfacesMod.QueueOptions

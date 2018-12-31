@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlaybackStatusToSet extends js.Object {
   var androidImplementation: js.UndefOr[java.lang.String] = js.undefined
   var isLooping: js.UndefOr[scala.Boolean] = js.undefined

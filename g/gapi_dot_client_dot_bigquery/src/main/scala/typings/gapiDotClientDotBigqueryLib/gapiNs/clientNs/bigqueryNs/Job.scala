@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Job extends js.Object {
   /** [Required] Describes the job configuration. */
   var configuration: js.UndefOr[JobConfiguration] = js.undefined

@@ -5,39 +5,38 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BarFormatOptions extends js.Object {
   /**
-               * A number that is the base value to compare the cell value against. If the cell value is higher, it will be drawn to the right of the base; if lower, it will be drawn to the left. Default value is 0.
-               */
+    * A number that is the base value to compare the cell value against. If the cell value is higher, it will be drawn to the right of the base; if lower, it will be drawn to the left. Default value is 0.
+    */
   var base: js.UndefOr[scala.Double] = js.undefined
   /**
-               * A string indicating the negative value section of bars. Possible values are 'red', 'green' and 'blue'; default value is 'red'.
-               */
+    * A string indicating the negative value section of bars. Possible values are 'red', 'green' and 'blue'; default value is 'red'.
+    */
   var colorNegative: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * A string indicating the color of the positive value section of bars. Possible values are 'red', 'green' and 'blue'. Default is 'blue'.
-               */
+    * A string indicating the color of the positive value section of bars. Possible values are 'red', 'green' and 'blue'. Default is 'blue'.
+    */
   var colorPositive: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * A boolean indicating if to draw a 1 pixel dark base line when negative values are present. The dark line is there to enhance visual scanning of the bars. Default value is 'false'.
-               */
+    * A boolean indicating if to draw a 1 pixel dark base line when negative values are present. The dark line is there to enhance visual scanning of the bars. Default value is 'false'.
+    */
   var drawZeroLine: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               * The maximum number value for the bar range. Default value is the highest value in the table.
-               */
+    * The maximum number value for the bar range. Default value is the highest value in the table.
+    */
   var max: js.UndefOr[scala.Double] = js.undefined
   /**
-               * The minimum number value for the bar range. Default value is the lowest value in the table.
-               */
+    * The minimum number value for the bar range. Default value is the lowest value in the table.
+    */
   var min: js.UndefOr[scala.Double] = js.undefined
   /**
-               * If true, shows values and bars; if false, shows only bars. Default value is true.
-               */
+    * If true, shows values and bars; if false, shows only bars. Default value is true.
+    */
   var showValue: js.UndefOr[scala.Boolean] = js.undefined
   /**
-               * Thickness of each bar, in pixels. Default value is 100.
-               */
+    * Thickness of each bar, in pixels. Default value is 100.
+    */
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 

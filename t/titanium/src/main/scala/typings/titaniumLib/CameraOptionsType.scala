@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Simple object for specifying options to [showCamera](Titanium.Media.showCamera).
- */
-
+  * Simple object for specifying options to [showCamera](Titanium.Media.showCamera).
+  */
 trait CameraOptionsType extends js.Object {
   /**
   	 * Specifies if the media should be editable after capture/selection.

@@ -28,9 +28,7 @@ class FilterClause () extends js.Object {
   def endswith(value: java.lang.String): FilterClause = js.native
   // Logical operators
   def eq(value: java.lang.String): FilterClause = js.native
-  // Logical operators
   def eq(value: scala.Boolean): FilterClause = js.native
-  // Logical operators
   def eq(value: scala.Double): FilterClause = js.native
   def floor(): FilterClause = js.native
   def ge(value: java.lang.String): FilterClause = js.native

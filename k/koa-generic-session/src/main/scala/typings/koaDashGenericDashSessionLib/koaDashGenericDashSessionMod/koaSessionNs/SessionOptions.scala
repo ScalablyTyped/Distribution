@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SessionOptions extends js.Object {
   var allowEmpty: js.UndefOr[scala.Boolean] = js.undefined
   var beforeSave: js.UndefOr[

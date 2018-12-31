@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * User
-     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.User.html }
-     */
+  * User
+  * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.User.html }
+  */
 @JSGlobal("Realm.Sync.User")
 @js.native
 class User () extends js.Object {
@@ -38,9 +38,9 @@ class User () extends js.Object {
 }
 
 /**
-     * User
-     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.User.html }
-     */
+  * User
+  * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.User.html }
+  */
 @JSGlobal("Realm.Sync.User")
 @js.native
 object User extends js.Object {
@@ -49,8 +49,6 @@ object User extends js.Object {
   // Deprecated
   /** @deprecated, to be removed in future versions */
   def adminUser(adminToken: java.lang.String): realmLib.RealmNs.SyncNs.User = js.native
-  // Deprecated
-  /** @deprecated, to be removed in future versions */
   def adminUser(adminToken: java.lang.String, server: java.lang.String): realmLib.RealmNs.SyncNs.User = js.native
   /** @deprecated, to be removed in future versions */
   def authenticate(server: java.lang.String, provider: java.lang.String, options: js.Any): js.Promise[realmLib.RealmNs.SyncNs.User] = js.native

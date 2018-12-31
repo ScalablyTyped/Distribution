@@ -12,31 +12,31 @@ trait JQuery extends js.Object {
   def accordion(): JQuery = js.native
   def accordion(settings: semanticDashUiDashAccordionLib.SemanticUINs.AccordionSettings): JQuery = js.native
   /**
-           * Closes accordion content at index
-           */
+    * Closes accordion content at index
+    */
   @JSName("accordion")
   def accordion_close(
     behavior: semanticDashUiDashAccordionLib.semanticDashUiDashAccordionLibStrings.close,
     index: scala.Double
   ): JQuery = js.native
   /**
-           * Closes accordion content that are not active
-           */
+    * Closes accordion content that are not active
+    */
   @JSName("accordion")
   def `accordion_close others`(behavior: semanticDashUiDashAccordionLib.semanticDashUiDashAccordionLibStrings.`close others`): JQuery = js.native
   @JSName("accordion")
   def accordion_destroy(behavior: semanticDashUiDashAccordionLib.semanticDashUiDashAccordionLibStrings.destroy): JQuery = js.native
   /**
-           * Opens accordion content at index
-           */
+    * Opens accordion content at index
+    */
   @JSName("accordion")
   def accordion_open(
     behavior: semanticDashUiDashAccordionLib.semanticDashUiDashAccordionLibStrings.open,
     index: scala.Double
   ): JQuery = js.native
   /**
-           * Refreshes all cached selectors and data
-           */
+    * Refreshes all cached selectors and data
+    */
   @JSName("accordion")
   def accordion_refresh(behavior: semanticDashUiDashAccordionLib.semanticDashUiDashAccordionLibStrings.refresh): JQuery = js.native
   @JSName("accordion")
@@ -45,16 +45,16 @@ trait JQuery extends js.Object {
     value: semanticDashUiDashAccordionLib.SemanticUINs.AccordionSettings
   ): JQuery = js.native
   @JSName("accordion")
-  def accordion_setting[K /* <: java.lang.String */](behavior: semanticDashUiDashAccordionLib.semanticDashUiDashAccordionLibStrings.setting, name: K): js.Any = js.native
+  def accordion_setting[K /* <: java.lang.String */](behavior: semanticDashUiDashAccordionLib.semanticDashUiDashAccordionLibStrings.setting, name: K): /* import warning: ImportType.apply Failed type conversion: semantic-ui-accordion.SemanticUI.AccordionSettings._Impl[K] */ js.Any = js.native
   @JSName("accordion")
   def accordion_setting[K /* <: java.lang.String */](
     behavior: semanticDashUiDashAccordionLib.semanticDashUiDashAccordionLibStrings.setting,
     name: K,
-    value: js.Any
+    value: /* import warning: ImportType.apply Failed type conversion: semantic-ui-accordion.SemanticUI.AccordionSettings._Impl[K] */ js.Any
   ): JQuery = js.native
   /**
-           * Toggles accordion content at index
-           */
+    * Toggles accordion content at index
+    */
   @JSName("accordion")
   def accordion_toggle(
     behavior: semanticDashUiDashAccordionLib.semanticDashUiDashAccordionLibStrings.toggle,

@@ -32,22 +32,22 @@ trait KoaPassport extends js.Object {
     scala.Unit
   ] = js.native
   def authenticate(strategy: java.lang.String): koaLib.koaMod.ApplicationNs.Middleware = js.native
-  def authenticate(strategy: java.lang.String, callback: js.Function1[/* repeated */js.Any, _]): koaLib.koaMod.ApplicationNs.Middleware = js.native
+  def authenticate(strategy: java.lang.String, callback: js.Function1[/* repeated */ js.Any, _]): koaLib.koaMod.ApplicationNs.Middleware = js.native
   def authenticate(strategy: java.lang.String, options: js.Object): koaLib.koaMod.ApplicationNs.Middleware = js.native
-  def authenticate(strategy: java.lang.String, options: js.Object, callback: js.Function1[/* repeated */js.Any, _]): koaLib.koaMod.ApplicationNs.Middleware = js.native
+  def authenticate(strategy: java.lang.String, options: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): koaLib.koaMod.ApplicationNs.Middleware = js.native
   def authenticate(strategy: java.lang.String, options: passportLib.passportMod.passportNs.AuthenticateOptions): koaLib.koaMod.ApplicationNs.Middleware = js.native
   def authenticate(
     strategy: java.lang.String,
     options: passportLib.passportMod.passportNs.AuthenticateOptions,
-    callback: js.Function1[/* repeated */js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, _]
   ): koaLib.koaMod.ApplicationNs.Middleware = js.native
   def authenticate(strategy: js.Array[java.lang.String]): koaLib.koaMod.ApplicationNs.Middleware = js.native
-  def authenticate(strategy: js.Array[java.lang.String], callback: js.Function1[/* repeated */js.Any, _]): koaLib.koaMod.ApplicationNs.Middleware = js.native
+  def authenticate(strategy: js.Array[java.lang.String], callback: js.Function1[/* repeated */ js.Any, _]): koaLib.koaMod.ApplicationNs.Middleware = js.native
   def authenticate(strategy: js.Array[java.lang.String], options: js.Object): koaLib.koaMod.ApplicationNs.Middleware = js.native
   def authenticate(
     strategy: js.Array[java.lang.String],
     options: js.Object,
-    callback: js.Function1[/* repeated */js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, _]
   ): koaLib.koaMod.ApplicationNs.Middleware = js.native
   def authenticate(
     strategy: js.Array[java.lang.String],
@@ -56,19 +56,19 @@ trait KoaPassport extends js.Object {
   def authenticate(
     strategy: js.Array[java.lang.String],
     options: passportLib.passportMod.passportNs.AuthenticateOptions,
-    callback: js.Function1[/* repeated */js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, _]
   ): koaLib.koaMod.ApplicationNs.Middleware = js.native
   def authorize(strategy: java.lang.String): koaLib.koaMod.ApplicationNs.Middleware = js.native
-  def authorize(strategy: java.lang.String, callback: js.Function1[/* repeated */js.Any, _]): koaLib.koaMod.ApplicationNs.Middleware = js.native
+  def authorize(strategy: java.lang.String, callback: js.Function1[/* repeated */ js.Any, _]): koaLib.koaMod.ApplicationNs.Middleware = js.native
   def authorize(strategy: java.lang.String, options: js.Any): koaLib.koaMod.ApplicationNs.Middleware = js.native
-  def authorize(strategy: java.lang.String, options: js.Any, callback: js.Function1[/* repeated */js.Any, _]): koaLib.koaMod.ApplicationNs.Middleware = js.native
+  def authorize(strategy: java.lang.String, options: js.Any, callback: js.Function1[/* repeated */ js.Any, _]): koaLib.koaMod.ApplicationNs.Middleware = js.native
   def authorize(strategy: js.Array[java.lang.String]): koaLib.koaMod.ApplicationNs.Middleware = js.native
-  def authorize(strategy: js.Array[java.lang.String], callback: js.Function1[/* repeated */js.Any, _]): koaLib.koaMod.ApplicationNs.Middleware = js.native
+  def authorize(strategy: js.Array[java.lang.String], callback: js.Function1[/* repeated */ js.Any, _]): koaLib.koaMod.ApplicationNs.Middleware = js.native
   def authorize(strategy: js.Array[java.lang.String], options: js.Any): koaLib.koaMod.ApplicationNs.Middleware = js.native
   def authorize(
     strategy: js.Array[java.lang.String],
     options: js.Any,
-    callback: js.Function1[/* repeated */js.Any, _]
+    callback: js.Function1[/* repeated */ js.Any, _]
   ): koaLib.koaMod.ApplicationNs.Middleware = js.native
   def framework(fw: passportLib.passportMod.passportNs.Framework[_, _, _]): this.type = js.native
   def initialize(): koaLib.koaMod.ApplicationNs.Middleware = js.native

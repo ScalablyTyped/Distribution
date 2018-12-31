@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EntityCollection extends js.Object {
   val collectionChanged: Event
   val id: java.lang.String

@@ -5,23 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LegendData extends js.Object {
   /**
-           * Dygraph object for this graph
-           */
+    * Dygraph object for this graph
+    */
   var dygraph: dygraphsLib.Dygraph
   /**
-           * Series data for the highlighted points
-           */
+    * Series data for the highlighted points
+    */
   var series: js.Array[SeriesLegendData]
   /**
-           * x value of highlighted points
-           */
+    * x value of highlighted points
+    */
   var x: scala.Double
   /**
-           * Generated HTML for x value
-           */
+    * Generated HTML for x value
+    */
   var xHTML: java.lang.String
 }
 

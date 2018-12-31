@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RawDER extends js.Object {
   /** Include the entire certificate chain. */
   var certificateChain: js.UndefOr[scala.Boolean] = js.undefined

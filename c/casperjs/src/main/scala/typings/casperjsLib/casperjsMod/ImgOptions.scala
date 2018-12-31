@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImgOptions extends js.Object {
   // format to set the image format manually, avoiding relying on the filename
   var format: js.UndefOr[java.lang.String] = js.undefined

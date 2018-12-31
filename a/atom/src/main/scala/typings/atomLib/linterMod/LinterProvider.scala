@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LinterProvider extends js.Object {
   var grammarScopes: js.Array[java.lang.String]
   var lintsOnChange: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISuggestionResult extends js.Object {
   /** A structured address object for the result.  */
   var address: IAddress
@@ -20,9 +19,9 @@ trait ISuggestionResult extends js.Object {
   /** A nicely formatted suggestion string for the result based on market. */
   var formattedSuggestion: java.lang.String
   /**
-          * The coordinate of the result. This value is only returned for place (city, landmarks) results and not for addresses.
-          * Street addresses will need to be geocoded to get their location.
-          */
+    * The coordinate of the result. This value is only returned for place (city, landmarks) results and not for addresses.
+    * Street addresses will need to be geocoded to get their location.
+    */
   var location: Location
   /** A secondary title that provides additional context to the title value of the suggestion. **/
   var subtitle: java.lang.String

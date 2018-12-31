@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Log levels
-     */
-
+  * Log levels
+  */
 trait LogLevel extends js.Object {
   var DEBUG: loglevelLib.loglevelLibNumbers.`1`
   var ERROR: loglevelLib.loglevelLibNumbers.`4`

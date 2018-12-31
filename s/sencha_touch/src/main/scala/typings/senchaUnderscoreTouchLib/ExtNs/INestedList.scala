@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait INestedList extends IContainer {
   /** [Config Option] (Boolean) */
   var allowDeselect: js.UndefOr[scala.Boolean] = js.undefined

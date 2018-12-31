@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebhookResponse extends js.Object {
   var headers: js.Any
   var response: js.Any

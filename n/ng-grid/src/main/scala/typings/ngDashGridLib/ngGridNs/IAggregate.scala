@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAggregate extends js.Object {
   var aggChildren: js.Array[_]
   var aggIndex: scala.Double

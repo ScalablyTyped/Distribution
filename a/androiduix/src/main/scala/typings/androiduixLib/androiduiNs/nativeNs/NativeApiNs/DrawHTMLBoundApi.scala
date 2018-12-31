@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DrawHTMLBoundApi extends js.Object {
   def hideDrawHTMLBound(viewHash: scala.Double): scala.Unit
   def showDrawHTMLBound(

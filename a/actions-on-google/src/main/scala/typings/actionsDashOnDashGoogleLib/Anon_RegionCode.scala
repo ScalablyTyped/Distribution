@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RegionCode extends js.Object {
   var addressLines: js.Array[java.lang.String]
   var administrativeArea: java.lang.String

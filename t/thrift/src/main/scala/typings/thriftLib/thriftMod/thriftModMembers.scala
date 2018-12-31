@@ -9,20 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 object thriftModMembers extends js.Object {
   /**
-   * Calling with nothing at all creates a void promise
-   */
+    * Calling with nothing at all creates a void promise
+    */
   def Q(): qLib.qMod.QNs.Promise[scala.Unit] = js.native
-  /**
-   * If value is a Q promise, returns the promise.
-   * If value is a promise from another library it is coerced into a Q promise (where possible).
-   * If value is not a promise, returns a promise that is fulfilled with value.
-   */
   def Q[T](promise: T): qLib.qMod.QNs.Promise[T] = js.native
   /**
-   * If value is a Q promise, returns the promise.
-   * If value is a promise from another library it is coerced into a Q promise (where possible).
-   * If value is not a promise, returns a promise that is fulfilled with value.
-   */
+    * If value is a Q promise, returns the promise.
+    * If value is a promise from another library it is coerced into a Q promise (where possible).
+    * If value is not a promise, returns a promise that is fulfilled with value.
+    */
   def Q[T](promise: js.Thenable[T]): qLib.qMod.QNs.Promise[T] = js.native
   def createClient[TClient](client: TClientConstructor[TClient], connection: Connection): TClient = js.native
   def createConnection(host: java.lang.String, port: scala.Double): Connection = js.native

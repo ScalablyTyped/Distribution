@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MDCSelectAdapter extends js.Object {
   def activateBottomLine(): scala.Unit
   def addClass(className: java.lang.String): scala.Unit

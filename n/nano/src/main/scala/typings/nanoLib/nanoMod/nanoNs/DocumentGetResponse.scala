@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // http://docs.couchdb.org/en/latest/api/document/common.html#get--db-docid
-
 trait DocumentGetResponse extends js.Object {
   // Attachment’s stubs. Available if document has any attachments.
   var _attachments: js.UndefOr[js.Any] = js.undefined

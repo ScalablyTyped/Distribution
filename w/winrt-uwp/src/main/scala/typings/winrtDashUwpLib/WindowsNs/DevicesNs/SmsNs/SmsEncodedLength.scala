@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** This structure represents information about the length of an SmsTextMessage object when it is encoded as a PDU. */
-
 trait SmsEncodedLength extends js.Object {
   /** The number of bytes in the last segment of the encoded message. */
   var byteCountLastSegment: scala.Double

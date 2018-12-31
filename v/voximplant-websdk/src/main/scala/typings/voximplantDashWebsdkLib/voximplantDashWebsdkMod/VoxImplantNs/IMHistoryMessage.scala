@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	*	Message received from history
 	*/
-
 trait IMHistoryMessage extends js.Object {
   /**
   		* Message body

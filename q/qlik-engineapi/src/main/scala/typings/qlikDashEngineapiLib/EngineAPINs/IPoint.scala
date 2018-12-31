@@ -6,19 +6,18 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Point...
-     */
-
+  * Point...
+  */
 trait IPoint extends js.Object {
   /**
-           * x-coordinate in pixels.
-           * The origin is the top left of the screen.
-           */
+    * x-coordinate in pixels.
+    * The origin is the top left of the screen.
+    */
   var qx: scala.Double
   /**
-           * y-coordinate in pixels.
-           * The origin is the top left of the screen.
-           */
+    * y-coordinate in pixels.
+    * The origin is the top left of the screen.
+    */
   var qy: scala.Double
 }
 

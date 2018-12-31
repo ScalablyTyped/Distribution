@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpeechRecognitionResultList
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[SpeechRecognitionResult] {
   val length: scala.Double

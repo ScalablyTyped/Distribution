@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_SessionInsightsForAll extends js.Object {
   var feedbackDesktop: scala.Double
   var feedbackWeb: scala.Double

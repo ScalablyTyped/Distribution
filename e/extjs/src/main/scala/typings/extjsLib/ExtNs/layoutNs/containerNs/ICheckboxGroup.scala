@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICheckboxGroup extends IContainer {
   /** [Config Option] (Boolean) */
   var autoFlex: js.UndefOr[scala.Boolean] = js.undefined

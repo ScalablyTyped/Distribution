@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IClient extends js.Object {
   var config: IConfig
   def `do`(req: superagentLib.superagentMod.requestNs.SuperAgentRequest): js.Promise[APIResponseSuccess]

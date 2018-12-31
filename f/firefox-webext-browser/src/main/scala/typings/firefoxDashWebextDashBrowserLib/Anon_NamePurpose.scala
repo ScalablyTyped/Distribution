@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NamePurpose extends js.Object {
   /** The type of param can be either "purpose" or "pref". */
   var condition: js.UndefOr[

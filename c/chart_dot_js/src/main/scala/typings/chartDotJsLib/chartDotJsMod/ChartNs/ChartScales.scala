@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartScales extends js.Object {
   var display: js.UndefOr[scala.Boolean] = js.undefined
   var gridLines: js.UndefOr[GridLineOptions] = js.undefined

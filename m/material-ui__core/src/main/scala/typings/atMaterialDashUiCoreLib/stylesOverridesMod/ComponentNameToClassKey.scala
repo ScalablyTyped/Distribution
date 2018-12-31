@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ComponentNameToClassKey extends js.Object {
   var MuiAppBar: atMaterialDashUiCoreLib.appbarAppBarMod.AppBarClassKey
   var MuiAvatar: atMaterialDashUiCoreLib.avatarAvatarMod.AvatarClassKey

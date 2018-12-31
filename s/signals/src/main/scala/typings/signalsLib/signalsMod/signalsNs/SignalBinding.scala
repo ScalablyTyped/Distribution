@@ -13,7 +13,7 @@ trait SignalBinding[T] extends js.Object {
   def detach(): js.Function = js.native
   def execute(): js.Any = js.native
   def execute(paramsArr: js.Array[_]): js.Any = js.native
-  def getListener(): js.Function1[/* repeated */T, scala.Unit] = js.native
+  def getListener(): js.Function1[/* repeated */ T, scala.Unit] = js.native
   def getSignal(): Signal[T] = js.native
   def isBound(): scala.Boolean = js.native
   def isOnce(): scala.Boolean = js.native

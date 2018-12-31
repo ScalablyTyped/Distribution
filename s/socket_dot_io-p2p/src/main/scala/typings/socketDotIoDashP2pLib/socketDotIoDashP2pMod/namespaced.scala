@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Creates the P2P object
- * @param socket Socket.io socket
- * @param opts Object of viable options
- * @param cb Optional callback
- */
+  * Creates the P2P object
+  * @param socket Socket.io socket
+  * @param opts Object of viable options
+  * @param cb Optional callback
+  */
 @JSImport("socket.io-p2p", JSImport.Namespace)
 @js.native
 class namespaced protected () extends SocketioP2PStatic {
@@ -46,8 +46,8 @@ class namespaced protected () extends SocketioP2PStatic {
   /* CompleteClass */
   override def setupPeerEvents(peer: js.Any): scala.Unit = js.native
   /**
-     * Upgrade the connection to p2p
-     */
+    * Upgrade the connection to p2p
+    */
   /* CompleteClass */
   override def upgrade(): scala.Unit = js.native
 }

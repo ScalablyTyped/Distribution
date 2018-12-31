@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * see http://docs.angular-formly.com/docs/ngmodelattrstemplatemanipulator
 	 */
-
 trait ITemplateOptions
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var description: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISencha
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Returns a Ext device sqlite Database instance

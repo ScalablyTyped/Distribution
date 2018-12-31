@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ArangoSearchViewProperties extends js.Object {
   var cleanupIntervalStep: scala.Double
   var consolidationIntervalMsec: scala.Double

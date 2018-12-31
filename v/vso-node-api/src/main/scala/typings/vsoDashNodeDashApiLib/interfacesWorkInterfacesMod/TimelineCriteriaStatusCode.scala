@@ -12,22 +12,22 @@ sealed trait TimelineCriteriaStatusCode extends js.Object
 @js.native
 object TimelineCriteriaStatusCode extends js.Object {
   /**
-       * One of the filter clause is invalid.
-       */
+    * One of the filter clause is invalid.
+    */
   @js.native
   sealed trait InvalidFilterClause
     extends vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.TimelineCriteriaStatusCode
   
   /**
-       * No error - filter is good.
-       */
+    * No error - filter is good.
+    */
   @js.native
   sealed trait OK
     extends vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.TimelineCriteriaStatusCode
   
   /**
-       * Unknown error.
-       */
+    * Unknown error.
+    */
   @js.native
   sealed trait Unknown
     extends vsoDashNodeDashApiLib.interfacesWorkInterfacesMod.TimelineCriteriaStatusCode

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FontNames extends js.Object {
   var copyright: LocalizedName
   var description: LocalizedName

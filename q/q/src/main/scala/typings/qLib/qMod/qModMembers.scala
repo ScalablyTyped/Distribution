@@ -11,14 +11,14 @@ object qModMembers extends js.Object {
   var longStackSupport: scala.Boolean = js.native
   var onerror: js.Function1[/* reason */ js.Any, scala.Unit] = js.native
   /**
-   * Calling with nothing at all creates a void promise
-   */
+    * Calling with nothing at all creates a void promise
+    */
   def apply(): qLib.qMod.QNs.Promise[scala.Unit] = js.native
   /**
-   * If value is a Q promise, returns the promise.
-   * If value is a promise from another library it is coerced into a Q promise (where possible).
-   * If value is not a promise, returns a promise that is fulfilled with value.
-   */
+    * If value is a Q promise, returns the promise.
+    * If value is a promise from another library it is coerced into a Q promise (where possible).
+    * If value is not a promise, returns a promise that is fulfilled with value.
+    */
   def apply[T](promise: js.Thenable[T] | T): qLib.qMod.QNs.Promise[T] = js.native
   def Promise[T](
     resolver: js.Function3[
@@ -77,33 +77,33 @@ object qModMembers extends js.Object {
       ]
     ]
   ): qLib.qMod.QNs.Promise[js.Tuple6[A, B, C, D, E, F]] = js.native
-  def async[T](generatorFunction: js.Any): js.Function1[/* repeated */js.Any, qLib.qMod.QNs.Promise[T]] = js.native
+  def async[T](generatorFunction: js.Any): js.Function1[/* repeated */ js.Any, qLib.qMod.QNs.Promise[T]] = js.native
   def defer[T](): qLib.qMod.QNs.Deferred[T] = js.native
   def delay(ms: scala.Double): qLib.qMod.QNs.Promise[scala.Unit] = js.native
   def delay[T](promiseOrValue: T, ms: scala.Double): qLib.qMod.QNs.Promise[T] = js.native
   def delay[T](promiseOrValue: qLib.qMod.QNs.Promise[T], ms: scala.Double): qLib.qMod.QNs.Promise[T] = js.native
-  def denodeify[T](nodeFunction: js.Function1[/* repeated */js.Any, _], args: js.Any*): js.Function1[/* repeated */js.Any, qLib.qMod.QNs.Promise[T]] = js.native
-  def fbind[T](method: js.Function1[/* repeated */js.Any, qLib.qMod.QNs.IWhenable[T]], args: js.Any*): js.Function1[/* repeated */js.Any, qLib.qMod.QNs.Promise[T]] = js.native
-  def fcall[T](method: js.Function1[/* repeated */js.Any, T], args: js.Any*): qLib.qMod.QNs.Promise[T] = js.native
+  def denodeify[T](nodeFunction: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Function1[/* repeated */ js.Any, qLib.qMod.QNs.Promise[T]] = js.native
+  def fbind[T](method: js.Function1[/* repeated */ js.Any, qLib.qMod.QNs.IWhenable[T]], args: js.Any*): js.Function1[/* repeated */ js.Any, qLib.qMod.QNs.Promise[T]] = js.native
+  def fcall[T](method: js.Function1[/* repeated */ js.Any, T], args: js.Any*): qLib.qMod.QNs.Promise[T] = js.native
   def invoke[T](obj: js.Any, functionName: java.lang.String, args: js.Any*): qLib.qMod.QNs.Promise[T] = js.native
   def isFulfilled(promise: qLib.qMod.QNs.Promise[_]): scala.Boolean = js.native
   def isPending(promiseOrObject: js.Any): scala.Boolean = js.native
   def isPending(promiseOrObject: qLib.qMod.QNs.Promise[_]): scala.Boolean = js.native
-  def isPromise(`object`: js.Any): /* is Promise */scala.Boolean = js.native
-  def isPromiseAlike(`object`: js.Any): /* is IPromise */scala.Boolean = js.native
+  def isPromise(`object`: js.Any): /* is q.q.Q.Promise<any> */ scala.Boolean = js.native
+  def isPromiseAlike(`object`: js.Any): /* is q.q.Q.IPromise<any> */ scala.Boolean = js.native
   def isRejected(promise: qLib.qMod.QNs.Promise[_]): scala.Boolean = js.native
   def mcall[T](obj: js.Any, functionName: java.lang.String, args: js.Any*): qLib.qMod.QNs.Promise[T] = js.native
-  def nbind[T](nodeFunction: js.Function1[/* repeated */js.Any, _], thisArg: js.Any, args: js.Any*): js.Function1[/* repeated */js.Any, qLib.qMod.QNs.Promise[T]] = js.native
+  def nbind[T](nodeFunction: js.Function1[/* repeated */ js.Any, _], thisArg: js.Any, args: js.Any*): js.Function1[/* repeated */ js.Any, qLib.qMod.QNs.Promise[T]] = js.native
   def nearer[T](promise: qLib.qMod.QNs.Promise[T]): T = js.native
-  def nextTick(callback: js.Function1[/* repeated */js.Any, _]): scala.Unit = js.native
-  def nfapply[T](nodeFunction: js.Function1[/* repeated */js.Any, _], args: js.Array[_]): qLib.qMod.QNs.Promise[T] = js.native
-  def nfbind[T](nodeFunction: js.Function1[/* repeated */js.Any, _], args: js.Any*): js.Function1[/* repeated */js.Any, qLib.qMod.QNs.Promise[T]] = js.native
-  def nfcall[T](nodeFunction: js.Function1[/* repeated */js.Any, _], args: js.Any*): qLib.qMod.QNs.Promise[T] = js.native
+  def nextTick(callback: js.Function1[/* repeated */ js.Any, _]): scala.Unit = js.native
+  def nfapply[T](nodeFunction: js.Function1[/* repeated */ js.Any, _], args: js.Array[_]): qLib.qMod.QNs.Promise[T] = js.native
+  def nfbind[T](nodeFunction: js.Function1[/* repeated */ js.Any, _], args: js.Any*): js.Function1[/* repeated */ js.Any, qLib.qMod.QNs.Promise[T]] = js.native
+  def nfcall[T](nodeFunction: js.Function1[/* repeated */ js.Any, _], args: js.Any*): qLib.qMod.QNs.Promise[T] = js.native
   def ninvoke[T](nodeModule: js.Any, functionName: java.lang.String, args: js.Any*): qLib.qMod.QNs.Promise[T] = js.native
-  def noConflict(): js.Object = js.native
+  def noConflict(): qLib.Anon_Promise = js.native
   def npost[T](nodeModule: js.Any, functionName: java.lang.String, args: js.Array[_]): qLib.qMod.QNs.Promise[T] = js.native
   def nsend[T](nodeModule: js.Any, functionName: java.lang.String, args: js.Any*): qLib.qMod.QNs.Promise[T] = js.native
-  def promised[T](callback: js.Function1[/* repeated */js.Any, T]): js.Function1[/* repeated */js.Any, qLib.qMod.QNs.Promise[T]] = js.native
+  def promised[T](callback: js.Function1[/* repeated */ js.Any, T]): js.Function1[/* repeated */ js.Any, qLib.qMod.QNs.Promise[T]] = js.native
   def race[T](promises: js.Array[qLib.qMod.QNs.IWhenable[T]]): qLib.qMod.QNs.Promise[T] = js.native
   def reject[T](): qLib.qMod.QNs.Promise[T] = js.native
   def reject[T](reason: js.Any): qLib.qMod.QNs.Promise[T] = js.native
@@ -112,11 +112,11 @@ object qModMembers extends js.Object {
   def send[T](obj: js.Any, functionName: java.lang.String, args: js.Any*): qLib.qMod.QNs.Promise[T] = js.native
   def spread[T, U](
     promises: js.Array[qLib.qMod.QNs.IWhenable[T]],
-    onFulfilled: js.Function1[/* repeated */T, qLib.qMod.QNs.IWhenable[U]]
+    onFulfilled: js.Function1[/* repeated */ T, qLib.qMod.QNs.IWhenable[U]]
   ): qLib.qMod.QNs.Promise[U] = js.native
   def spread[T, U](
     promises: js.Array[qLib.qMod.QNs.IWhenable[T]],
-    onFulfilled: js.Function1[/* repeated */T, qLib.qMod.QNs.IWhenable[U]],
+    onFulfilled: js.Function1[/* repeated */ T, qLib.qMod.QNs.IWhenable[U]],
     onRejected: js.Function1[/* reason */ js.Any, qLib.qMod.QNs.IWhenable[U]]
   ): qLib.qMod.QNs.Promise[U] = js.native
   def timeout[T](promise: qLib.qMod.QNs.Promise[T], ms: scala.Double): qLib.qMod.QNs.Promise[T] = js.native

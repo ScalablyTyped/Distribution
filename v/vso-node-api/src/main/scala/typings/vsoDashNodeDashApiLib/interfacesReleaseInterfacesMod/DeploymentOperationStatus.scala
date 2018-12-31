@@ -12,141 +12,141 @@ sealed trait DeploymentOperationStatus extends js.Object
 @js.native
 object DeploymentOperationStatus extends js.Object {
   /**
-       * The deployment operation status is all.
-       */
+    * The deployment operation status is all.
+    */
   @js.native
   sealed trait All
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentOperationStatus
   
   /**
-       * The deployment operation status is approved.
-       */
+    * The deployment operation status is approved.
+    */
   @js.native
   sealed trait Approved
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentOperationStatus
   
   /**
-       * The deployment operation status is canceled.
-       */
+    * The deployment operation status is canceled.
+    */
   @js.native
   sealed trait Canceled
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentOperationStatus
   
   /**
-       * The deployment operation status is cancelling.
-       */
+    * The deployment operation status is cancelling.
+    */
   @js.native
   sealed trait Cancelling
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentOperationStatus
   
   /**
-       * The deployment operation status is deferred.
-       */
+    * The deployment operation status is deferred.
+    */
   @js.native
   sealed trait Deferred
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentOperationStatus
   
   /**
-       * The deployment operation status is EvaluatingGates.
-       */
+    * The deployment operation status is EvaluatingGates.
+    */
   @js.native
   sealed trait EvaluatingGates
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentOperationStatus
   
   /**
-       * The deployment operation status is GateFailed.
-       */
+    * The deployment operation status is GateFailed.
+    */
   @js.native
   sealed trait GateFailed
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentOperationStatus
   
   /**
-       * The deployment operation status is manualintervention pending.
-       */
+    * The deployment operation status is manualintervention pending.
+    */
   @js.native
   sealed trait ManualInterventionPending
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentOperationStatus
   
   /**
-       * The deployment operation status is pending.
-       */
+    * The deployment operation status is pending.
+    */
   @js.native
   sealed trait Pending
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentOperationStatus
   
   /**
-       * The deployment operation status is phase canceled.
-       */
+    * The deployment operation status is phase canceled.
+    */
   @js.native
   sealed trait PhaseCanceled
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentOperationStatus
   
   /**
-       * The deployment operation status is phase failed.
-       */
+    * The deployment operation status is phase failed.
+    */
   @js.native
   sealed trait PhaseFailed
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentOperationStatus
   
   /**
-       * The deployment operation status is phase inprogress.
-       */
+    * The deployment operation status is phase inprogress.
+    */
   @js.native
   sealed trait PhaseInProgress
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentOperationStatus
   
   /**
-       * The deployment operation status is phase partially succeeded.
-       */
+    * The deployment operation status is phase partially succeeded.
+    */
   @js.native
   sealed trait PhasePartiallySucceeded
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentOperationStatus
   
   /**
-       * The deployment operation status is phase succeeded.
-       */
+    * The deployment operation status is phase succeeded.
+    */
   @js.native
   sealed trait PhaseSucceeded
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentOperationStatus
   
   /**
-       * The deployment operation status is queued.
-       */
+    * The deployment operation status is queued.
+    */
   @js.native
   sealed trait Queued
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentOperationStatus
   
   /**
-       * The deployment operation status is queued for agent.
-       */
+    * The deployment operation status is queued for agent.
+    */
   @js.native
   sealed trait QueuedForAgent
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentOperationStatus
   
   /**
-       * The deployment operation status is queued for pipeline.
-       */
+    * The deployment operation status is queued for pipeline.
+    */
   @js.native
   sealed trait QueuedForPipeline
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentOperationStatus
   
   /**
-       * The deployment operation status is rejected.
-       */
+    * The deployment operation status is rejected.
+    */
   @js.native
   sealed trait Rejected
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentOperationStatus
   
   /**
-       * The deployment operation status is scheduled.
-       */
+    * The deployment operation status is scheduled.
+    */
   @js.native
   sealed trait Scheduled
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentOperationStatus
   
   /**
-       * The deployment operation status is undefined.
-       */
+    * The deployment operation status is undefined.
+    */
   @js.native
   sealed trait Undefined
     extends vsoDashNodeDashApiLib.interfacesReleaseInterfacesMod.DeploymentOperationStatus

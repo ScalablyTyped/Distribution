@@ -112,7 +112,6 @@ object U extends js.Object {
   def getIconUrl(): java.lang.String = js.native
   /** Returns URL of the appropriate file image based on the file type identifier (see getFriendlyNameForFileExtension) */
   def getIconUrlByFileExtension(item: java.lang.String): java.lang.String = js.native
-  /** Returns URL of the appropriate file image based on the file type identifier (see getFriendlyNameForFileExtension) */
   def getIconUrlByFileExtension(item: java.lang.String, defaultIconPath: java.lang.String): java.lang.String = js.native
   def getImageSourceWithRendition(imageInfo: js.Any, width: scala.Double, height: scala.Double): java.lang.String = js.native
   def getMultipleHHXMLNodeValues(
@@ -217,14 +216,10 @@ object U extends js.Object {
   def processHHXML(pre: java.lang.String): java.lang.String = js.native
   def registerLoadedScripts(scripts: js.Array[java.lang.String]): scala.Unit = js.native
   /** Registers display template function in the system.
-           *  @param name Identifier of the template. Usually template is registered twice: by URL and by name.
-           *  @param template The display template. It can be either string, or function, that gets the CSR context object and returns HTML string
-            */
+    *  @param name Identifier of the template. Usually template is registered twice: by URL and by name.
+    *  @param template The display template. It can be either string, or function, that gets the CSR context object and returns HTML string
+    */
   def registerRenderTemplateByName(name: java.lang.String, templateFunction: java.lang.String): scala.Unit = js.native
-  /** Registers display template function in the system.
-           *  @param name Identifier of the template. Usually template is registered twice: by URL and by name.
-           *  @param template The display template. It can be either string, or function, that gets the CSR context object and returns HTML string
-            */
   def registerRenderTemplateByName(name: java.lang.String, templateFunction: sharepointLib.SrchNs.RenderFunction): scala.Unit = js.native
   /** Registers in system resources defined by the dictionary object */
   def registerResourceDictionary(locale: java.lang.String, dict: org.scalablytyped.runtime.StringDictionary[java.lang.String]): scala.Unit = js.native
@@ -238,7 +233,6 @@ object U extends js.Object {
   ): scala.Unit = js.native
   /** Renders datetime value in friendly format into element specified by targetElementID */
   def renderFriendlyTimeIntervalString(dateTimeSinceUTC: microsoftDashAjaxLib.Date, targetElementID: java.lang.String): scala.Unit = js.native
-  /** Renders datetime value in friendly format into element specified by targetElementID */
   def renderFriendlyTimeIntervalString(
     dateTimeSinceUTC: microsoftDashAjaxLib.Date,
     targetElementID: java.lang.String,
@@ -247,14 +241,12 @@ object U extends js.Object {
   /** Replaces tokens {searchcenterurl}, {contexturl}, {resultsurl}, {defaultpageslistname}, {Locale} and others, and converts URL to server-relative */
   def replaceUrlTokens(url: java.lang.String): java.lang.String = js.native
   def resetElement(element: stdLib.Element): scala.Unit = js.native
-  /** Returns the CSR template that was previously registered using 'registerRenderTemplateByName' based on CSR template level */
   @JSName("resolveRenderTemplate")
   def resolveRenderTemplate_Body(
     renderCtx: js.Any,
     component: sharepointLib.SrchNs.ClientControl,
     level: sharepointLib.sharepointLibStrings.Body
   ): java.lang.String | sharepointLib.SrchNs.RenderFunction = js.native
-  /** Returns the CSR template that was previously registered using 'registerRenderTemplateByName' based on CSR template level */
   @JSName("resolveRenderTemplate")
   def resolveRenderTemplate_Group(
     renderCtx: js.Any,
@@ -268,7 +260,6 @@ object U extends js.Object {
     component: sharepointLib.SrchNs.ClientControl,
     level: sharepointLib.sharepointLibStrings.Item
   ): java.lang.String | sharepointLib.SrchNs.RenderFunction = js.native
-  /** Returns the CSR template that was previously registered using 'registerRenderTemplateByName' based on CSR template level */
   @JSName("resolveRenderTemplate")
   def resolveRenderTemplate_View(
     renderCtx: js.Any,
@@ -281,16 +272,13 @@ object U extends js.Object {
   def selectText(text: java.lang.String, el: stdLib.Element): scala.Unit = js.native
   /** Adds cookie with specified parameters */
   def setCookie(name: java.lang.String, value: java.lang.String): scala.Unit = js.native
-  /** Adds cookie with specified parameters */
   def setCookie(name: java.lang.String, value: java.lang.String, expires: microsoftDashAjaxLib.Date): scala.Unit = js.native
-  /** Adds cookie with specified parameters */
   def setCookie(
     name: java.lang.String,
     value: java.lang.String,
     expires: microsoftDashAjaxLib.Date,
     domain: java.lang.String
   ): scala.Unit = js.native
-  /** Adds cookie with specified parameters */
   def setCookie(
     name: java.lang.String,
     value: java.lang.String,
@@ -309,7 +297,6 @@ object U extends js.Object {
   def toFileSizeDisplay(numberOfBytes: scala.Double, showDecimalPart: scala.Boolean): java.lang.String = js.native
   /** Returns formatted date */
   def toFormattedDate(dateValue: microsoftDashAjaxLib.Date): java.lang.String = js.native
-  /** Returns formatted date */
   def toFormattedDate(dateValue: microsoftDashAjaxLib.Date, dateTimeFormatId: java.lang.String): java.lang.String = js.native
   /** Returns formatted number */
   def toFormattedNumber(num: scala.Double, defaultDecimalPlacesIfNotInt: scala.Double): java.lang.String = js.native

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChangesResource extends js.Object {
   /** Atomically update the ResourceRecordSet collection. */
   def create(request: gapiDotClientDotDnsLib.Anon_ManagedZoneProjectPrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[Change]

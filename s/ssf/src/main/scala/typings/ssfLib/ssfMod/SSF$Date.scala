@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SSF$Date extends js.Object {
   /** number of whole days since relevant epoch, 0 <= D */
   var D: scala.Double

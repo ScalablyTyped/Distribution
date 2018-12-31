@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MaxCommentsPrettyPrint extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
   /** ID of the blog to fetch the post from. */
   var blogId: java.lang.String
   /**
-                   * Whether the body content of the post is included (default: true). This should be set to false when the post bodies are not required, to help minimize
-                   * traffic.
-                   */
+    * Whether the body content of the post is included (default: true). This should be set to false when the post bodies are not required, to help minimize
+    * traffic.
+    */
   var fetchBody: js.UndefOr[scala.Boolean] = js.undefined
   /** Whether image URL metadata for each post is included (default: false). */
   var fetchImages: js.UndefOr[scala.Boolean] = js.undefined
@@ -31,9 +30,9 @@ trait Anon_MaxCommentsPrettyPrint extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[java.lang.String] = js.undefined

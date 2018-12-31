@@ -9,31 +9,15 @@ import scala.scalajs.js.annotation._
 @js.native
 class Receiver protected () extends js.Object {
   /**
-           * @param {string} label
-           * @param {string} friendlyName
-           * @param {Array<chrome.cast.Capability>=} opt_capabilities
-           * @param {chrome.cast.Volume=} opt_volume
-           * @constructor
-           * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.Receiver
-           */
+    * @param {string} label
+    * @param {string} friendlyName
+    * @param {Array<chrome.cast.Capability>=} opt_capabilities
+    * @param {chrome.cast.Volume=} opt_volume
+    * @constructor
+    * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.Receiver
+    */
   def this(label: java.lang.String, friendlyName: java.lang.String) = this()
-  /**
-           * @param {string} label
-           * @param {string} friendlyName
-           * @param {Array<chrome.cast.Capability>=} opt_capabilities
-           * @param {chrome.cast.Volume=} opt_volume
-           * @constructor
-           * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.Receiver
-           */
   def this(label: java.lang.String, friendlyName: java.lang.String, capabilities: js.Array[Capability]) = this()
-  /**
-           * @param {string} label
-           * @param {string} friendlyName
-           * @param {Array<chrome.cast.Capability>=} opt_capabilities
-           * @param {chrome.cast.Volume=} opt_volume
-           * @constructor
-           * @see https://developers.google.com/cast/docs/reference/chrome/chrome.cast.Receiver
-           */
   def this(label: java.lang.String, friendlyName: java.lang.String, capabilities: js.Array[Capability], volume: Volume) = this()
   var capabilities: js.Array[Capability] = js.native
   var displayStatus: ReceiverDisplayStatus = js.native

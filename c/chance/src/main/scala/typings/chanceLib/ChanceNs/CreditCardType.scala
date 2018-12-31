@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CreditCardType extends js.Object {
   var length: scala.Double
   var name: java.lang.String

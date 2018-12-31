@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference
-
 trait FieldsObject extends js.Object {
   var affiliation: js.UndefOr[java.lang.String] = js.undefined
   var allowAnchor: js.UndefOr[scala.Boolean] = js.undefined

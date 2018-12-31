@@ -10,5 +10,5 @@ package object dashPrivateUtilsMod {
   type MethodNames[T] = Values[coreDashObjectLib.coreDashObjectLibStrings.MethodNames with js.Any]
   type Mix[T, U] = U with (stdLib.Pick[T, stdLib.Exclude[java.lang.String, java.lang.String]])
   type Super[T] = coreDashObjectLib.coreDashObjectLibStrings.Super with js.Any
-  type Values[T] = /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) */js.Any
+  type Values[T] = /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ js.Any
 }

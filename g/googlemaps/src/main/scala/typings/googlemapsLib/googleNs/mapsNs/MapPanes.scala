@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MapPanes extends js.Object {
   var floatPane: stdLib.Element
   var floatShadow: stdLib.Element

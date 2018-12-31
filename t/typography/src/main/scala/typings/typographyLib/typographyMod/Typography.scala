@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Typography extends js.Object {
   var adjustFontSizeTo: js.Function1[/* value */ js.UndefOr[scala.Double | java.lang.String], js.Object]
   var establishBaseline: js.Function0[BaseLine]

@@ -8,16 +8,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DropdownElement extends js.Object {
   /**
-           * Hide the dropdown
-           */
+    * Hide the dropdown
+    */
   def hide(): scala.Unit = js.native
-  /**
-           * Hide the dropdown
-           */
   def hide(force: scala.Boolean): scala.Unit = js.native
   /**
-           * Show the dropdown
-           */
+    * Show the dropdown
+    */
   def show(): scala.Unit = js.native
 }
 

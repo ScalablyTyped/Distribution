@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait bufferFlushedData extends js.Object {
   var endOffset: scala.Double
   var startOffset: scala.Double

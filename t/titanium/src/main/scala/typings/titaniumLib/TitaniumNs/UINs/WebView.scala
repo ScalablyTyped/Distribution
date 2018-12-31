@@ -309,9 +309,6 @@ trait WebView extends View {
   			 * Sets the value of [html](Titanium.UI.WebView.html) property.
   			 */
   def setHtml(html: js.Any): scala.Unit = js.native
-  /**
-  			 * Sets the value of [html](Titanium.UI.WebView.html) property.
-  			 */
   def setHtml(html: js.Any, options: js.Any): scala.Unit = js.native
   /**
   			 * Sets the value of the <Titanium.UI.WebView.ignoreSslError> property.

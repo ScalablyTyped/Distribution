@@ -45,8 +45,8 @@ trait Emitter
     listener: js.Function1[/* event */ adoneLib.Anon_BlockTest, scala.Unit]
   ): this.type = js.native
   /**
-                   * Stops testing
-                   */
+    * Stops testing
+    */
   def stop(): scala.Unit = js.native
 }
 

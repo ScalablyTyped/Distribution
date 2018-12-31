@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ITemplate extends IBase {
   /** [Method] Applies the supplied values to the template and appends the new node s to the specified el
   		* @param el String/HTMLElement/Ext.Element The context element.

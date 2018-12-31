@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SpawnWith extends js.Object {
   var customFds: js.Array[scala.Double]
   var gid: scala.Double

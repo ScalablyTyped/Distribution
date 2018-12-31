@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SiJedecBits extends js.Object {
   var Eb: js.UndefOr[java.lang.String] = js.undefined
   var Gb: js.UndefOr[java.lang.String] = js.undefined

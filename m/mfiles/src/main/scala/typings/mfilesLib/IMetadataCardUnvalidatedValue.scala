@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IMetadataCardUnvalidatedValue extends js.Object {
   val ID: java.lang.String
   val IsMultiValue: scala.Boolean

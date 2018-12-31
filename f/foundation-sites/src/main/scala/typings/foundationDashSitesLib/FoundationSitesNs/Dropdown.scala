@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // http://foundation.zurb.com/sites/docs/dropdown.html#javascript-reference
-
 trait Dropdown extends js.Object {
   def close(): scala.Unit
   def destroy(): scala.Unit

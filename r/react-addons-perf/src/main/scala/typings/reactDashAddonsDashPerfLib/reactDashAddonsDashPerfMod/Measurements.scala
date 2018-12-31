@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Measurements extends js.Object {
   var counts: NumericPerfContext
   var displayNames: org.scalablytyped.runtime.StringDictionary[ComponentPerfContext]

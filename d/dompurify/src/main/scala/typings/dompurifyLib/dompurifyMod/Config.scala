@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Config extends js.Object {
   var ADD_ATTR: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var ADD_TAGS: js.UndefOr[js.Array[java.lang.String]] = js.undefined

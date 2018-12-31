@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SuccessfulPayment extends js.Object {
   var currency: java.lang.String
   var invoice_payload: java.lang.String

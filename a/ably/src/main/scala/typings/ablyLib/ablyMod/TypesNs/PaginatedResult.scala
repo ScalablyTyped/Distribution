@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaginatedResult[T] extends js.Object {
   var items: js.Array[T]
   def current(results: paginatedResultCallback[T]): scala.Unit

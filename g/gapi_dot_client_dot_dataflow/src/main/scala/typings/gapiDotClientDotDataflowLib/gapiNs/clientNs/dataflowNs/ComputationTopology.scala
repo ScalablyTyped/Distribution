@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ComputationTopology extends js.Object {
   /** The ID of the computation. */
   var computationId: js.UndefOr[java.lang.String] = js.undefined

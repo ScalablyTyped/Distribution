@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * NxRange...
-     */
-
+  * NxRange...
+  */
 trait INxRange extends js.Object {
   /**
-           * Position in the expression of the first character of the field name.
-           */
+    * Position in the expression of the first character of the field name.
+    */
   var qCount: scala.Double
   /**
-           * Number of characters in the field name.
-           */
+    * Number of characters in the field name.
+    */
   var qFrom: scala.Double
 }
 

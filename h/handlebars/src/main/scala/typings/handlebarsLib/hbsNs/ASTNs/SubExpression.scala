@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SubExpression extends Node {
   var hash: Hash
   var params: js.Array[Expression]

@@ -16,7 +16,6 @@ class EventGroup protected () extends js.Object {
   var _parent: js.Any = js.native
   /** Declare an event as being supported by this instance of EventGroup. */
   def declare(event: java.lang.String): scala.Unit = js.native
-  /** Declare an event as being supported by this instance of EventGroup. */
   def declare(event: js.Array[java.lang.String]): scala.Unit = js.native
   def dispose(): scala.Unit = js.native
   def off(): scala.Unit = js.native
@@ -34,16 +33,13 @@ class EventGroup protected () extends js.Object {
     useCapture: scala.Boolean
   ): scala.Unit = js.native
   /** On the target, attach an event whose handler will be called in the context of the parent
-       * of this instance of EventGroup.
-       */
+    * of this instance of EventGroup.
+    */
   def on(
     target: js.Any,
     eventName: java.lang.String,
     callback: js.Function1[/* args */ js.UndefOr[js.Any], scala.Unit]
   ): scala.Unit = js.native
-  /** On the target, attach an event whose handler will be called in the context of the parent
-       * of this instance of EventGroup.
-       */
   def on(
     target: js.Any,
     eventName: java.lang.String,
@@ -55,7 +51,6 @@ class EventGroup protected () extends js.Object {
     target: js.Any,
     events: org.scalablytyped.runtime.StringDictionary[js.Function1[/* args */ js.UndefOr[js.Any], scala.Unit]]
   ): scala.Unit = js.native
-  /** On the target, attach a set of events, where the events object is a name to function mapping. */
   def onAll(
     target: js.Any,
     events: org.scalablytyped.runtime.StringDictionary[js.Function1[/* args */ js.UndefOr[js.Any], scala.Unit]],
@@ -63,9 +58,7 @@ class EventGroup protected () extends js.Object {
   ): scala.Unit = js.native
   /** Trigger the given event in the context of this instance of EventGroup. */
   def raise(eventName: java.lang.String): js.UndefOr[scala.Boolean] = js.native
-  /** Trigger the given event in the context of this instance of EventGroup. */
   def raise(eventName: java.lang.String, eventArgs: js.Any): js.UndefOr[scala.Boolean] = js.native
-  /** Trigger the given event in the context of this instance of EventGroup. */
   def raise(eventName: java.lang.String, eventArgs: js.Any, bubbleEvent: scala.Boolean): js.UndefOr[scala.Boolean] = js.native
 }
 
@@ -78,25 +71,13 @@ object EventGroup extends js.Object {
   def isDeclared(target: js.Any, eventName: java.lang.String): scala.Boolean = js.native
   def isObserved(target: js.Any, eventName: java.lang.String): scala.Boolean = js.native
   /** For IE8, bubbleEvent is ignored here and must be dealt with by the handler.
-       *  Events raised here by default have bubbling set to false and cancelable set to true.
-       *  This applies also to built-in events being raised manually here on HTMLElements,
-       *  which may lead to unexpected behavior if it differs from the defaults.
-       *
-       */
+    *  Events raised here by default have bubbling set to false and cancelable set to true.
+    *  This applies also to built-in events being raised manually here on HTMLElements,
+    *  which may lead to unexpected behavior if it differs from the defaults.
+    *
+    */
   def raise(target: js.Any, eventName: java.lang.String): js.UndefOr[scala.Boolean] = js.native
-  /** For IE8, bubbleEvent is ignored here and must be dealt with by the handler.
-       *  Events raised here by default have bubbling set to false and cancelable set to true.
-       *  This applies also to built-in events being raised manually here on HTMLElements,
-       *  which may lead to unexpected behavior if it differs from the defaults.
-       *
-       */
   def raise(target: js.Any, eventName: java.lang.String, eventArgs: js.Any): js.UndefOr[scala.Boolean] = js.native
-  /** For IE8, bubbleEvent is ignored here and must be dealt with by the handler.
-       *  Events raised here by default have bubbling set to false and cancelable set to true.
-       *  This applies also to built-in events being raised manually here on HTMLElements,
-       *  which may lead to unexpected behavior if it differs from the defaults.
-       *
-       */
   def raise(target: js.Any, eventName: java.lang.String, eventArgs: js.Any, bubbleEvent: scala.Boolean): js.UndefOr[scala.Boolean] = js.native
   def stopPropagation(event: js.Any): scala.Unit = js.native
 }

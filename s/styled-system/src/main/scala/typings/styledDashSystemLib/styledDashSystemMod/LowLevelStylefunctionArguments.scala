@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LowLevelStylefunctionArguments extends js.Object {
   var cssProperty: js.UndefOr[java.lang.String] = js.undefined
   var getter: js.UndefOr[js.Function0[_]] = js.undefined

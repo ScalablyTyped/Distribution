@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Bucket extends js.Object {
   /** Access controls on the bucket. */
   var acl: js.UndefOr[js.Array[BucketAccessControl]] = js.undefined
@@ -28,9 +27,9 @@ trait Bucket extends js.Object {
   /** The bucket's lifecycle configuration. See lifecycle management for more information. */
   var lifecycle: js.UndefOr[gapiDotClientDotStorageLib.Anon_Rule] = js.undefined
   /**
-               * The location of the bucket. Object data for objects in the bucket resides in physical storage within this region. Defaults to US. See the developer's
-               * guide for the authoritative list.
-               */
+    * The location of the bucket. Object data for objects in the bucket resides in physical storage within this region. Defaults to US. See the developer's
+    * guide for the authoritative list.
+    */
   var location: js.UndefOr[java.lang.String] = js.undefined
   /** The bucket's logging configuration, which defines the destination bucket and optional name prefix for the current bucket's logs. */
   var logging: js.UndefOr[gapiDotClientDotStorageLib.Anon_LogBucket] = js.undefined
@@ -45,11 +44,11 @@ trait Bucket extends js.Object {
   /** The URI of this bucket. */
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The bucket's default storage class, used whenever no storageClass is specified for a newly-created object. This defines how objects in the bucket are
-               * stored and determines the SLA and the cost of storage. Values include MULTI_REGIONAL, REGIONAL, STANDARD, NEARLINE, COLDLINE, and
-               * DURABLE_REDUCED_AVAILABILITY. If this value is not specified when the bucket is created, it will default to STANDARD. For more information, see storage
-               * classes.
-               */
+    * The bucket's default storage class, used whenever no storageClass is specified for a newly-created object. This defines how objects in the bucket are
+    * stored and determines the SLA and the cost of storage. Values include MULTI_REGIONAL, REGIONAL, STANDARD, NEARLINE, COLDLINE, and
+    * DURABLE_REDUCED_AVAILABILITY. If this value is not specified when the bucket is created, it will default to STANDARD. For more information, see storage
+    * classes.
+    */
   var storageClass: js.UndefOr[java.lang.String] = js.undefined
   /** The creation time of the bucket in RFC 3339 format. */
   var timeCreated: js.UndefOr[java.lang.String] = js.undefined
@@ -58,9 +57,9 @@ trait Bucket extends js.Object {
   /** The bucket's versioning configuration. */
   var versioning: js.UndefOr[gapiDotClientDotStorageLib.Anon_Enabled] = js.undefined
   /**
-               * The bucket's website configuration, controlling how the service behaves when accessing bucket contents as a web site. See the Static Website Examples
-               * for more information.
-               */
+    * The bucket's website configuration, controlling how the service behaves when accessing bucket contents as a web site. See the Static Website Examples
+    * for more information.
+    */
   var website: js.UndefOr[gapiDotClientDotStorageLib.Anon_NotFoundPage] = js.undefined
 }
 

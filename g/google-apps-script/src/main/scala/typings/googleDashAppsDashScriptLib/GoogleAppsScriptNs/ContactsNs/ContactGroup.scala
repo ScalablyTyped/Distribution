@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContactGroup extends js.Object {
   def addContact(contact: Contact): ContactGroup
   def deleteGroup(): scala.Unit

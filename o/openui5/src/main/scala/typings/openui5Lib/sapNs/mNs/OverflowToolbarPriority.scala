@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait OverflowToolbarPriority extends js.Object
 
 /**
-     * Defines the priorities of the controls within sap.m.OverflowToolbar
-    */
+  * Defines the priorities of the controls within sap.m.OverflowToolbar
+  */
 @JSGlobal("sap.m.OverflowToolbarPriority")
 @js.native
 object OverflowToolbarPriority extends js.Object {

@@ -18,42 +18,42 @@ trait JQueryStatic extends js.Object {
   @JSName("Tween")
   var Tween_Original: jqueryLib.JQueryNs.TweenStatic = js.native
   /**
-       * @see \`{@link https://api.jquery.com/jquery.ajax/#jQuery-ajax1 }\`
-       * @deprecated ​ Deprecated. Use \`{@link ajaxSetup }\`.
-       */
+    * @see \`{@link https://api.jquery.com/jquery.ajax/#jQuery-ajax1 }\`
+    * @deprecated ​ Deprecated. Use \`{@link ajaxSetup }\`.
+    */
   var ajaxSettings: jqueryLib.JQueryNs.AjaxSettings[_] = js.native
   /**
-       * Hook directly into jQuery to override how particular CSS properties are retrieved or set, normalize CSS property naming, or create custom properties.
-       * @see \`{@link https://api.jquery.com/jQuery.cssHooks/ }\`
-       * @since 1.4.3
-       */
+    * Hook directly into jQuery to override how particular CSS properties are retrieved or set, normalize CSS property naming, or create custom properties.
+    * @see \`{@link https://api.jquery.com/jQuery.cssHooks/ }\`
+    * @since 1.4.3
+    */
   var cssHooks: jqueryLib.JQueryNs.CSSHooks = js.native
   /**
-       * An object containing all CSS properties that may be used without a unit. The .css() method uses this object to see if it may append px to unitless values.
-       * @see \`{@link https://api.jquery.com/jQuery.cssNumber/ }\`
-       * @since 1.4.3
-       */
+    * An object containing all CSS properties that may be used without a unit. The .css() method uses this object to see if it may append px to unitless values.
+    * @see \`{@link https://api.jquery.com/jQuery.cssNumber/ }\`
+    * @since 1.4.3
+    */
   var cssNumber: jqueryLib.JQueryNs.PlainObject[scala.Boolean] = js.native
   var easing: jqueryLib.JQueryNs.Easings = js.native
   /**
-       * @see \`{@link https://learn.jquery.com/events/event-extensions/ }\`
-       */
+    * @see \`{@link https://learn.jquery.com/events/event-extensions/ }\`
+    */
   var event: jqueryLib.JQueryNs.EventExtensions = js.native
   var expr: jqueryLib.JQueryNs.Selectors = js.native
   // Set to HTMLElement to minimize breaks but should probably be Element.
   val fn: JQuery[stdLib.HTMLElement] = js.native
   var fx: jqueryLib.JQueryNs.Effects = js.native
   /**
-       * A Promise-like object (or "thenable") that resolves when the document is ready.
-       * @see \`{@link https://api.jquery.com/jQuery.ready/ }\`
-       * @since 1.8
-       * @example ​ ````Listen for document ready using jQuery.when.
+    * A Promise-like object (or "thenable") that resolves when the document is ready.
+    * @see \`{@link https://api.jquery.com/jQuery.ready/ }\`
+    * @since 1.8
+    * @example ​ ````Listen for document ready using jQuery.when.
   ```javascript
   $.when( $.ready ).then(function() {
     // Document is ready.
   });
   ```
-       * @example ​ ````Typical usage involving another promise, using jQuery.when.
+    * @example ​ ````Typical usage involving another promise, using jQuery.when.
   ```javascript
   $.when(
     $.getJSON( "ajax/test.json" ),
@@ -63,140 +63,93 @@ trait JQueryStatic extends js.Object {
     // Value of test.json is passed as `data`.
   });
   ```
-       */
+    */
   var ready: jqueryLib.JQueryNs.Thenable[JQueryStatic] = js.native
   /**
-       * A collection of properties that represent the presence of different browser features or bugs. Intended for jQuery's internal use; specific properties may be removed when they are no longer needed internally to improve page startup performance. For your own project's feature-detection needs, we strongly recommend the use of an external library such as Modernizr instead of dependency on properties in jQuery.support.
-       * @see \`{@link https://api.jquery.com/jQuery.support/ }\`
-       * @since 1.3
-       * @deprecated ​ Deprecated since 1.9. See \`{@link https://api.jquery.com/jQuery.support/ }\`.
-       */
+    * A collection of properties that represent the presence of different browser features or bugs. Intended for jQuery's internal use; specific properties may be removed when they are no longer needed internally to improve page startup performance. For your own project's feature-detection needs, we strongly recommend the use of an external library such as Modernizr instead of dependency on properties in jQuery.support.
+    * @see \`{@link https://api.jquery.com/jQuery.support/ }\`
+    * @since 1.3
+    * @deprecated ​ Deprecated since 1.9. See \`{@link https://api.jquery.com/jQuery.support/ }\`.
+    */
   var support: jqueryLib.JQueryNs.PlainObject[_] = js.native
   var timers: js.Array[jqueryLib.JQueryNs.TickFunction[_]] = js.native
   var valHooks: jqueryLib.JQueryNs.ValHooks = js.native
   /**
-       * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-       * @param element A DOM element to wrap in a jQuery object.
-       * @see \`{@link https://api.jquery.com/jQuery/ }\`
-       * @since 1.0
-       * @example ​ ````Set the background color of the page to black.
+    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
+    * @param element A DOM element to wrap in a jQuery object.
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
+    * @example ​ ````Set the background color of the page to black.
   ```javascript
   $( document.body ).css( "background", "black" );
   ```
-       */
+    */
   // NOTE: `HTMLSelectElement` is both an Element and an Array-Like Object but jQuery treats it as an Element.
   def apply(element: stdLib.HTMLSelectElement): JQuery[stdLib.HTMLSelectElement] = js.native
   // HACK: This is the factory function returned when importing jQuery without a DOM. Declaring it separately breaks using the type parameter on JQueryStatic.
   // HACK: The discriminator parameter handles the edge case of passing a Window object to JQueryStatic. It doesn't actually exist on the factory function.
   def apply(window: stdLib.Window, discriminator: scala.Boolean): JQueryStatic = js.native
   /**
-       * Returns an empty jQuery set.
-       * @see \`{@link https://api.jquery.com/jQuery/ }\`
-       * @since 1.4
-       */
+    * Returns an empty jQuery set.
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.4
+    */
   // tslint:disable-next-line:no-unnecessary-generics
   def apply[TElement](): JQuery[TElement] = js.native
   /**
-       * Binds a function to be executed when the DOM has finished loading.
-       * @param callback The function to execute when the DOM is ready.
-       * @see \`{@link https://api.jquery.com/jQuery/ }\`
-       * @since 1.0
-       * @example ​ ````Execute the function when the DOM is ready to be used.
+    * Binds a function to be executed when the DOM has finished loading.
+    * @param callback The function to execute when the DOM is ready.
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
+    * @example ​ ````Execute the function when the DOM is ready to be used.
   ```javascript
   $(function() {
     // Document is ready
   });
   ```
-       * @example ​ ````Use both the shortcut for $(document).ready() and the argument to write failsafe jQuery code using the $ alias, without relying on the global alias.
+    * @example ​ ````Use both the shortcut for $(document).ready() and the argument to write failsafe jQuery code using the $ alias, without relying on the global alias.
   ```javascript
   jQuery(function( $ ) {
     // Your code using failsafe $ alias here...
   });
   ```
-       */
+    */
   // tslint:disable-next-line:no-unnecessary-generics unified-signatures
   def apply[TElement](callback: js.ThisFunction1[/* this */ stdLib.Document, /* $ */ this.type, scala.Unit]): JQuery[TElement] = js.native
   /**
-       * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-       * @param element_elementArray _&#x40;param_ `element_elementArray`
-       * <br>
-       * * `element` — A DOM element to wrap in a jQuery object. <br>
-       * * `elementArray` — An array containing a set of DOM elements to wrap in a jQuery object.
-       * @see \`{@link https://api.jquery.com/jQuery/ }\`
-       * @since 1.0
-       * @example ​ ````Set the background color of the page to black.
+    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
+    * @param element_elementArray _&#x40;param_ `element_elementArray`
+    * <br>
+    * * `element` — A DOM element to wrap in a jQuery object. <br>
+    * * `elementArray` — An array containing a set of DOM elements to wrap in a jQuery object.
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
+    * @example ​ ````Set the background color of the page to black.
   ```javascript
   $( document.body ).css( "background", "black" );
   ```
-       * @example ​ ````Hide all the input elements within a form.
+    * @example ​ ````Hide all the input elements within a form.
   ```javascript
   $( myForm.elements ).hide();
   ```
-       */
+    */
   def apply[T /* <: stdLib.Element */](element_elementArray: T): JQuery[T] = js.native
-  /**
-       * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-       * @param element_elementArray _&#x40;param_ `element_elementArray`
-       * <br>
-       * * `element` — A DOM element to wrap in a jQuery object. <br>
-       * * `elementArray` — An array containing a set of DOM elements to wrap in a jQuery object.
-       * @see \`{@link https://api.jquery.com/jQuery/ }\`
-       * @since 1.0
-       * @example ​ ````Set the background color of the page to black.
-  ```javascript
-  $( document.body ).css( "background", "black" );
-  ```
-       * @example ​ ````Hide all the input elements within a form.
-  ```javascript
-  $( myForm.elements ).hide();
-  ```
-       */
   def apply[T /* <: stdLib.Element */](element_elementArray: stdLib.ArrayLike[T]): JQuery[T] = js.native
-  /**
-       * Creates DOM elements on the fly from the provided string of raw HTML.
-       * @param html _&#x40;param_ `html`
-       * <br>
-       * * `html (ownerDocument)` — A string of HTML to create on the fly. Note that this parses HTML, not XML. <br>
-       * * `html (attributes)` — A string defining a single, standalone, HTML element (e.g. &lt;div/&gt; or &lt;div&gt;&lt;/div&gt;).
-       * @param ownerDocument_attributes _&#x40;param_ `ownerDocument_attributes`
-       * <br>
-       * * `ownerDocument` — A document in which the new elements will be created. <br>
-       * * `attributes` — An object of attributes, events, and methods to call on the newly-created element.
-       * @see \`{@link https://api.jquery.com/jQuery/ }\`
-       * @since 1.0
-       * @since 1.4
-       * @example ​ ````Create a div element (and all of its contents) dynamically and append it to the body element. Internally, an element is created and its innerHTML property set to the given markup.
-  ```javascript
-  $( "<div><p>Hello</p></div>" ).appendTo( "body" )
-  ```
-       * @example ​ ````Create some DOM elements.
-  ```javascript
-  $( "<div/>", {
-    "class": "test",
-    text: "Click me!",
-    click: function() {
-      $( this ).toggleClass( "test" );
-    }
-  })
-    .appendTo( "body" );
-  ```
-       */
-  // tslint:disable-next-line:no-unnecessary-generics
   def apply[TElement /* <: stdLib.HTMLElement */](html: jqueryLib.JQueryNs.htmlString, ownerDocument_attributes: jqueryLib.JQueryNs.PlainObject[_]): JQuery[TElement] = js.native
   /**
-       * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
-       * @param selection An existing jQuery object to clone.
-       * @see \`{@link https://api.jquery.com/jQuery/ }\`
-       * @since 1.0
-       */
+    * Return a collection of matched elements either found in the DOM based on passed argument(s) or created by passing an HTML string.
+    * @param selection An existing jQuery object to clone.
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
+    */
   def apply[T](selection: JQuery[T]): JQuery[T] = js.native
   /**
-       * Accepts a string containing a CSS selector which is then used to match a set of elements.
-       * @param selector A string containing a selector expression
-       * @param context A DOM Element, Document, or jQuery to use as context
-       * @see \`{@link https://api.jquery.com/jQuery/ }\`
-       * @since 1.0
-       * @example ​ ````Find all p elements that are children of a div element and apply a border to them.
+    * Accepts a string containing a CSS selector which is then used to match a set of elements.
+    * @param selector A string containing a selector expression
+    * @param context A DOM Element, Document, or jQuery to use as context
+    * @see \`{@link https://api.jquery.com/jQuery/ }\`
+    * @since 1.0
+    * @example ​ ````Find all p elements that are children of a div element and apply a border to them.
   ```html
   <!doctype html>
   <html lang="en">
@@ -217,173 +170,46 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Find all inputs of type radio within the first form in the document.
+    * @example ​ ````Find all inputs of type radio within the first form in the document.
   ```javascript
   $( "input:radio", document.forms[ 0 ] );
   ```
-       * @example ​ ````Find all div elements within an XML document from an Ajax response.
+    * @example ​ ````Find all div elements within an XML document from an Ajax response.
   ```javascript
   $( "div", xml.responseXML );
   ```
   ​
-       */
+    */
   // tslint:disable-next-line:no-unnecessary-generics
   def apply[TElement /* <: stdLib.Element */](selector: jqueryLib.JQueryNs.Selector): JQuery[TElement] = js.native
-  /**
-       * Accepts a string containing a CSS selector which is then used to match a set of elements.
-       * @param selector A string containing a selector expression
-       * @param context A DOM Element, Document, or jQuery to use as context
-       * @see \`{@link https://api.jquery.com/jQuery/ }\`
-       * @since 1.0
-       * @example ​ ````Find all p elements that are children of a div element and apply a border to them.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>one</p>
-  <div><p>two</p></div>
-  <p>three</p>
-  ​
-  <script>
-  $( "div > p" ).css( "border", "1px solid gray" );
-  </script>
-  </body>
-  </html>
-  ```
-       * @example ​ ````Find all inputs of type radio within the first form in the document.
-  ```javascript
-  $( "input:radio", document.forms[ 0 ] );
-  ```
-       * @example ​ ````Find all div elements within an XML document from an Ajax response.
-  ```javascript
-  $( "div", xml.responseXML );
-  ```
-  ​
-       */
-  // tslint:disable-next-line:no-unnecessary-generics
   def apply[TElement /* <: stdLib.Element */](selector: jqueryLib.JQueryNs.Selector, context: JQuery[stdLib.HTMLElement]): JQuery[TElement] = js.native
-  /**
-       * Accepts a string containing a CSS selector which is then used to match a set of elements.
-       * @param selector A string containing a selector expression
-       * @param context A DOM Element, Document, or jQuery to use as context
-       * @see \`{@link https://api.jquery.com/jQuery/ }\`
-       * @since 1.0
-       * @example ​ ````Find all p elements that are children of a div element and apply a border to them.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>one</p>
-  <div><p>two</p></div>
-  <p>three</p>
-  ​
-  <script>
-  $( "div > p" ).css( "border", "1px solid gray" );
-  </script>
-  </body>
-  </html>
-  ```
-       * @example ​ ````Find all inputs of type radio within the first form in the document.
-  ```javascript
-  $( "input:radio", document.forms[ 0 ] );
-  ```
-       * @example ​ ````Find all div elements within an XML document from an Ajax response.
-  ```javascript
-  $( "div", xml.responseXML );
-  ```
-  ​
-       */
-  // tslint:disable-next-line:no-unnecessary-generics
   def apply[TElement /* <: stdLib.Element */](selector: jqueryLib.JQueryNs.Selector, context: stdLib.Document): JQuery[TElement] = js.native
-  /**
-       * Accepts a string containing a CSS selector which is then used to match a set of elements.
-       * @param selector A string containing a selector expression
-       * @param context A DOM Element, Document, or jQuery to use as context
-       * @see \`{@link https://api.jquery.com/jQuery/ }\`
-       * @since 1.0
-       * @example ​ ````Find all p elements that are children of a div element and apply a border to them.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>one</p>
-  <div><p>two</p></div>
-  <p>three</p>
-  ​
-  <script>
-  $( "div > p" ).css( "border", "1px solid gray" );
-  </script>
-  </body>
-  </html>
-  ```
-       * @example ​ ````Find all inputs of type radio within the first form in the document.
-  ```javascript
-  $( "input:radio", document.forms[ 0 ] );
-  ```
-       * @example ​ ````Find all div elements within an XML document from an Ajax response.
-  ```javascript
-  $( "div", xml.responseXML );
-  ```
-  ​
-       */
-  // tslint:disable-next-line:no-unnecessary-generics
   def apply[TElement /* <: stdLib.Element */](selector: jqueryLib.JQueryNs.Selector, context: stdLib.Element): JQuery[TElement] = js.native
   /**
-           * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#animation-factory }\`
-           * @since 1.8
-           */
+    * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#animation-factory }\`
+    * @since 1.8
+    */
   def Animation[TElement](
     element: TElement,
     props: jqueryLib.JQueryNs.PlainObject[_],
     opts: jqueryLib.JQueryNs.EffectsOptions[TElement]
   ): jqueryLib.JQueryNs.Animation[TElement] = js.native
   /**
-           * A multi-purpose callbacks list object that provides a powerful way to manage callback lists.
-           * @param flags An optional list of space-separated flags that change how the callback list behaves.
-           * @see \`{@link https://api.jquery.com/jQuery.Callbacks/ }\`
-           * @since 1.7
-           */
+    * A multi-purpose callbacks list object that provides a powerful way to manage callback lists.
+    * @param flags An optional list of space-separated flags that change how the callback list behaves.
+    * @see \`{@link https://api.jquery.com/jQuery.Callbacks/ }\`
+    * @since 1.7
+    */
   // tslint:disable-next-line:ban-types callable-types no-unnecessary-generics
   def Callbacks[T /* <: js.Function */](): jqueryLib.JQueryNs.Callbacks[T] = js.native
-  /**
-           * A multi-purpose callbacks list object that provides a powerful way to manage callback lists.
-           * @param flags An optional list of space-separated flags that change how the callback list behaves.
-           * @see \`{@link https://api.jquery.com/jQuery.Callbacks/ }\`
-           * @since 1.7
-           */
-  // tslint:disable-next-line:ban-types callable-types no-unnecessary-generics
   def Callbacks[T /* <: js.Function */](flags: java.lang.String): jqueryLib.JQueryNs.Callbacks[T] = js.native
   /**
-           * A factory function that returns a chainable utility object with methods to register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.
-           * @param beforeStart A function that is called just before the constructor returns.
-           * @see \`{@link https://api.jquery.com/jQuery.Deferred/ }\`
-           * @since 1.5
-           */
+    * A factory function that returns a chainable utility object with methods to register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.
+    * @param beforeStart A function that is called just before the constructor returns.
+    * @see \`{@link https://api.jquery.com/jQuery.Deferred/ }\`
+    * @since 1.5
+    */
   def Deferred[TR, TJ, TN](): jqueryLib.JQueryNs.Deferred[TR, TJ, TN] = js.native
-  /**
-           * A factory function that returns a chainable utility object with methods to register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.
-           * @param beforeStart A function that is called just before the constructor returns.
-           * @see \`{@link https://api.jquery.com/jQuery.Deferred/ }\`
-           * @since 1.5
-           */
   def Deferred[TR, TJ, TN](
     beforeStart: js.ThisFunction1[
       /* this */ jqueryLib.JQueryNs.Deferred[TR, TJ, TN], 
@@ -392,12 +218,12 @@ trait JQueryStatic extends js.Object {
     ]
   ): jqueryLib.JQueryNs.Deferred[TR, TJ, TN] = js.native
   /**
-           * The jQuery.Event constructor is exposed and can be used when calling trigger. The new operator is optional.
-           *
-           * Check \`{@link https://api.jquery.com/trigger/ trigger}\`'s documentation to see how to combine it with your own event object.
-           * @see \`{@link https://api.jquery.com/category/events/event-object/ }\`
-           * @since 1.6
-           * @example
+    * The jQuery.Event constructor is exposed and can be used when calling trigger. The new operator is optional.
+    *
+    * Check \`{@link https://api.jquery.com/trigger/ trigger}\`'s documentation to see how to combine it with your own event object.
+    * @see \`{@link https://api.jquery.com/category/events/event-object/ }\`
+    * @since 1.6
+    * @example
   ```javascript
   //Create a new jQuery.Event object without the "new" operator.
   var e = jQuery.Event( "click" );
@@ -405,7 +231,7 @@ trait JQueryStatic extends js.Object {
   // trigger an artificial click event
   jQuery( "body" ).trigger( e );
   ```
-           * @example
+    * @example
   ```javascript
   // Create a new jQuery.Event object with specified event properties.
   var e = jQuery.Event( "keydown", { keyCode: 64 } );
@@ -413,46 +239,19 @@ trait JQueryStatic extends js.Object {
   // trigger an artificial keydown event with keyCode 64
   jQuery( "body" ).trigger( e );
   ```
-           */
+    */
   def Event[T /* <: js.Object */](event: java.lang.String): jqueryLib.JQueryNs.Event with T = js.native
-  /**
-           * The jQuery.Event constructor is exposed and can be used when calling trigger. The new operator is optional.
-           *
-           * Check \`{@link https://api.jquery.com/trigger/ trigger}\`'s documentation to see how to combine it with your own event object.
-           * @see \`{@link https://api.jquery.com/category/events/event-object/ }\`
-           * @since 1.6
-           * @example
-  ```javascript
-  //Create a new jQuery.Event object without the "new" operator.
-  var e = jQuery.Event( "click" );
-  ​
-  // trigger an artificial click event
-  jQuery( "body" ).trigger( e );
-  ```
-           * @example
-  ```javascript
-  // Create a new jQuery.Event object with specified event properties.
-  var e = jQuery.Event( "keydown", { keyCode: 64 } );
-  ​
-  // trigger an artificial keydown event with keyCode 64
-  jQuery( "body" ).trigger( e );
-  ```
-           */
   def Event[T /* <: js.Object */](event: java.lang.String, properties: T): jqueryLib.JQueryNs.Event with T = js.native
   /**
-           * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tweens }\`
-           * @since 1.8
-           */
+    * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tweens }\`
+    * @since 1.8
+    */
   def Tween[TElement](
     elem: TElement,
     options: jqueryLib.JQueryNs.EffectsOptions[TElement],
     prop: java.lang.String,
     end: scala.Double
   ): jqueryLib.JQueryNs.Tween[TElement] = js.native
-  /**
-           * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tweens }\`
-           * @since 1.8
-           */
   def Tween[TElement](
     elem: TElement,
     options: jqueryLib.JQueryNs.EffectsOptions[TElement],
@@ -460,10 +259,6 @@ trait JQueryStatic extends js.Object {
     end: scala.Double,
     easing: java.lang.String
   ): jqueryLib.JQueryNs.Tween[TElement] = js.native
-  /**
-           * @see \`{@link https://gist.github.com/gnarf/54829d408993526fe475#tweens }\`
-           * @since 1.8
-           */
   def Tween[TElement](
     elem: TElement,
     options: jqueryLib.JQueryNs.EffectsOptions[TElement],
@@ -473,12 +268,12 @@ trait JQueryStatic extends js.Object {
     unit: java.lang.String
   ): jqueryLib.JQueryNs.Tween[TElement] = js.native
   /**
-       * Perform an asynchronous HTTP (Ajax) request.
-       * @param settings A set of key/value pairs that configure the Ajax request. All settings are optional. A default can
-       *                 be set for any option with $.ajaxSetup().
-       * @see \`{@link https://api.jquery.com/jQuery.ajax/ }\`
-       * @since 1.0
-       * @example ​ ````Save some data to the server and notify the user once it&#39;s complete.
+    * Perform an asynchronous HTTP (Ajax) request.
+    * @param settings A set of key/value pairs that configure the Ajax request. All settings are optional. A default can
+    *                 be set for any option with $.ajaxSetup().
+    * @see \`{@link https://api.jquery.com/jQuery.ajax/ }\`
+    * @since 1.0
+    * @example ​ ````Save some data to the server and notify the user once it&#39;s complete.
   ```javascript
   $.ajax({
     method: "POST",
@@ -486,21 +281,21 @@ trait JQueryStatic extends js.Object {
     data: { name: "John", location: "Boston" }
   })
     .done(function( msg ) {
-      alert( "Data Saved: " + msg );
+    alert( "Data Saved: " + msg );
     });
   ```
-       * @example ​ ````Retrieve the latest version of an HTML page.
+    * @example ​ ````Retrieve the latest version of an HTML page.
   ```javascript
   $.ajax({
     url: "test.html",
     cache: false
   })
     .done(function( html ) {
-      $( "#results" ).append( html );
+    $( "#results" ).append( html );
     });
   ```
-       * @example ​ ````Send an xml document as data to the server. By setting the processData
-      option to false, the automatic conversion of data to strings is prevented.
+    * @example ​ ````Send an xml document as data to the server. By setting the processData
+    option to false, the automatic conversion of data to strings is prevented.
   ```javascript
   var xmlDocument = [create xml document];
   var xmlRequest = $.ajax({
@@ -511,7 +306,7 @@ trait JQueryStatic extends js.Object {
   ​
   xmlRequest.done( handleResponse );
   ```
-       * @example ​ ````Send an id as data to the server, save some data to the server, and notify the user once it&#39;s complete. If the request fails, alert the user.
+    * @example ​ ````Send an id as data to the server, save some data to the server, and notify the user once it&#39;s complete. If the request fails, alert the user.
   ```javascript
   var menuId = $( "ul.nav" ).first().attr( "id" );
   var request = $.ajax({
@@ -529,7 +324,7 @@ trait JQueryStatic extends js.Object {
     alert( "Request failed: " + textStatus );
   });
   ```
-       * @example ​ ````Load and execute a JavaScript file.
+    * @example ​ ````Load and execute a JavaScript file.
   ```javascript
   $.ajax({
     method: "GET",
@@ -537,100 +332,26 @@ trait JQueryStatic extends js.Object {
     dataType: "script"
   });
   ```
-       */
+    */
   def ajax(): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Perform an asynchronous HTTP (Ajax) request.
-       * @param settings A set of key/value pairs that configure the Ajax request. All settings are optional. A default can
-       *                 be set for any option with $.ajaxSetup().
-       * @see \`{@link https://api.jquery.com/jQuery.ajax/ }\`
-       * @since 1.0
-       * @example ​ ````Save some data to the server and notify the user once it&#39;s complete.
-  ```javascript
-  $.ajax({
-    method: "POST",
-    url: "some.php",
-    data: { name: "John", location: "Boston" }
-  })
-    .done(function( msg ) {
-      alert( "Data Saved: " + msg );
-    });
-  ```
-       * @example ​ ````Retrieve the latest version of an HTML page.
-  ```javascript
-  $.ajax({
-    url: "test.html",
-    cache: false
-  })
-    .done(function( html ) {
-      $( "#results" ).append( html );
-    });
-  ```
-       * @example ​ ````Send an xml document as data to the server. By setting the processData
-      option to false, the automatic conversion of data to strings is prevented.
-  ```javascript
-  var xmlDocument = [create xml document];
-  var xmlRequest = $.ajax({
-    url: "page.php",
-    processData: false,
-    data: xmlDocument
-  });
-  ​
-  xmlRequest.done( handleResponse );
-  ```
-       * @example ​ ````Send an id as data to the server, save some data to the server, and notify the user once it&#39;s complete. If the request fails, alert the user.
-  ```javascript
-  var menuId = $( "ul.nav" ).first().attr( "id" );
-  var request = $.ajax({
-    url: "script.php",
-    method: "POST",
-    data: { id : menuId },
-    dataType: "html"
-  });
-  ​
-  request.done(function( msg ) {
-    $( "#log" ).html( msg );
-  });
-  ​
-  request.fail(function( jqXHR, textStatus ) {
-    alert( "Request failed: " + textStatus );
-  });
-  ```
-       * @example ​ ````Load and execute a JavaScript file.
-  ```javascript
-  $.ajax({
-    method: "GET",
-    url: "test.js",
-    dataType: "script"
-  });
-  ```
-       */
   def ajax(settings: jqueryLib.JQueryNs.AjaxSettings[_]): jqueryLib.JQueryNs.jqXHR[_] = js.native
   /**
-       * Perform an asynchronous HTTP (Ajax) request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param settings A set of key/value pairs that configure the Ajax request. All settings are optional. A default can
-       *                 be set for any option with $.ajaxSetup(). See jQuery.ajax( settings ) below for a complete list of all settings.
-       * @see \`{@link https://api.jquery.com/jQuery.ajax/ }\`
-       * @since 1.5
-       */
+    * Perform an asynchronous HTTP (Ajax) request.
+    * @param url A string containing the URL to which the request is sent.
+    * @param settings A set of key/value pairs that configure the Ajax request. All settings are optional. A default can
+    *                 be set for any option with $.ajaxSetup(). See jQuery.ajax( settings ) below for a complete list of all settings.
+    * @see \`{@link https://api.jquery.com/jQuery.ajax/ }\`
+    * @since 1.5
+    */
   def ajax(url: java.lang.String): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Perform an asynchronous HTTP (Ajax) request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param settings A set of key/value pairs that configure the Ajax request. All settings are optional. A default can
-       *                 be set for any option with $.ajaxSetup(). See jQuery.ajax( settings ) below for a complete list of all settings.
-       * @see \`{@link https://api.jquery.com/jQuery.ajax/ }\`
-       * @since 1.5
-       */
   def ajax(url: java.lang.String, settings: jqueryLib.JQueryNs.AjaxSettings[_]): jqueryLib.JQueryNs.jqXHR[_] = js.native
   /**
-       * Handle custom Ajax options or modify existing options before each request is sent and before they are processed by $.ajax().
-       * @param dataTypes An optional string containing one or more space-separated dataTypes
-       * @param handler A handler to set default values for future Ajax requests.
-       * @see \`{@link https://api.jquery.com/jQuery.ajaxPrefilter/ }\`
-       * @since 1.5
-       */
+    * Handle custom Ajax options or modify existing options before each request is sent and before they are processed by $.ajax().
+    * @param dataTypes An optional string containing one or more space-separated dataTypes
+    * @param handler A handler to set default values for future Ajax requests.
+    * @see \`{@link https://api.jquery.com/jQuery.ajaxPrefilter/ }\`
+    * @since 1.5
+    */
   def ajaxPrefilter(
     dataTypes: java.lang.String,
     handler: js.Function3[
@@ -641,11 +362,11 @@ trait JQueryStatic extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-       * Handle custom Ajax options or modify existing options before each request is sent and before they are processed by $.ajax().
-       * @param handler A handler to set default values for future Ajax requests.
-       * @see \`{@link https://api.jquery.com/jQuery.ajaxPrefilter/ }\`
-       * @since 1.5
-       */
+    * Handle custom Ajax options or modify existing options before each request is sent and before they are processed by $.ajax().
+    * @param handler A handler to set default values for future Ajax requests.
+    * @see \`{@link https://api.jquery.com/jQuery.ajaxPrefilter/ }\`
+    * @since 1.5
+    */
   def ajaxPrefilter(
     handler: js.Function3[
       /* options */ jqueryLib.JQueryNs.AjaxSettings[_], 
@@ -655,11 +376,11 @@ trait JQueryStatic extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-       * Set default values for future Ajax requests. Its use is not recommended.
-       * @param options A set of key/value pairs that configure the default Ajax request. All options are optional.
-       * @see \`{@link https://api.jquery.com/jQuery.ajaxSetup/ }\`
-       * @since 1.1
-       * @example ​ ````Sets the defaults for Ajax requests to the url &quot;/xmlhttp/&quot;, disables global handlers and uses POST instead of GET. The following Ajax requests then sends some data without having to set anything else.
+    * Set default values for future Ajax requests. Its use is not recommended.
+    * @param options A set of key/value pairs that configure the default Ajax request. All options are optional.
+    * @see \`{@link https://api.jquery.com/jQuery.ajaxSetup/ }\`
+    * @since 1.1
+    * @example ​ ````Sets the defaults for Ajax requests to the url &quot;/xmlhttp/&quot;, disables global handlers and uses POST instead of GET. The following Ajax requests then sends some data without having to set anything else.
   ```javascript
   $.ajaxSetup({
     url: "/xmlhttp/",
@@ -668,15 +389,15 @@ trait JQueryStatic extends js.Object {
   });
   $.ajax({ data: myData });
   ```
-       */
+    */
   def ajaxSetup(options: jqueryLib.JQueryNs.AjaxSettings[_]): jqueryLib.JQueryNs.AjaxSettings[_] = js.native
   /**
-       * Creates an object that handles the actual transmission of Ajax data.
-       * @param dataType A string identifying the data type to use
-       * @param handler A handler to return the new transport object to use with the data type provided in the first argument.
-       * @see \`{@link https://api.jquery.com/jQuery.ajaxTransport/ }\`
-       * @since 1.5
-       */
+    * Creates an object that handles the actual transmission of Ajax data.
+    * @param dataType A string identifying the data type to use
+    * @param handler A handler to return the new transport object to use with the data type provided in the first argument.
+    * @see \`{@link https://api.jquery.com/jQuery.ajaxTransport/ }\`
+    * @since 1.5
+    */
   def ajaxTransport(
     dataType: java.lang.String,
     handler: js.Function3[
@@ -687,8 +408,8 @@ trait JQueryStatic extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-       * @deprecated ​ Deprecated since 3.3. Internal. See \`{@link https://github.com/jquery/jquery/issues/3384 }\`.
-       */
+    * @deprecated ​ Deprecated since 3.3. Internal. See \`{@link https://github.com/jquery/jquery/issues/3384 }\`.
+    */
   def camelCase(value: java.lang.String): java.lang.String = js.native
   def cleanData(
     elems: stdLib.ArrayLike[
@@ -696,149 +417,31 @@ trait JQueryStatic extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-       * Check to see if a DOM element is a descendant of another DOM element.
-       * @param container The DOM element that may contain the other element.
-       * @param contained The DOM element that may be contained by (a descendant of) the other element.
-       * @see \`{@link https://api.jquery.com/jQuery.contains/ }\`
-       * @since 1.4
-       * @example ​ ````Check if an element is a descendant of another.
+    * Check to see if a DOM element is a descendant of another DOM element.
+    * @param container The DOM element that may contain the other element.
+    * @param contained The DOM element that may be contained by (a descendant of) the other element.
+    * @see \`{@link https://api.jquery.com/jQuery.contains/ }\`
+    * @since 1.4
+    * @example ​ ````Check if an element is a descendant of another.
   ```javascript
   $.contains( document.documentElement, document.body ); // true
   $.contains( document.body, document.documentElement ); // false
   ```
-       */
+    */
   def contains(container: stdLib.Element, contained: stdLib.Element): scala.Boolean = js.native
   def css(elem: stdLib.Element, name: java.lang.String): js.Any = js.native
-  /**
-       * Returns value at named data store for the element, as set by `jQuery.data(element, name, value)`, or the full data store for the element.
-       * @param element The DOM element to query for the data.
-       * @param key Name of the data stored.
-       * @see \`{@link https://api.jquery.com/jQuery.data/ }\`
-       * @since 1.2.3
-       * @since 1.4
-       * @example ​ ````Store then retrieve a value from the div element.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.data demo</title>
-    <style>
-    div {
-      color: blue;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div>
-    The values stored were
-    <span></span>
-    and
-    <span></span>
-  </div>
-  ​
-  <script>
-  var div = $( "div" )[ 0 ];
-  jQuery.data( div, "test", {
-    first: 16,
-    last: "pizza!"
-  });
-  $( "span:first" ).text( jQuery.data( div, "test" ).first );
-  $( "span:last" ).text( jQuery.data( div, "test" ).last );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def data(element: jqueryLib.JQueryNs.PlainObject[_]): js.Any = js.native
-  /**
-       * Returns value at named data store for the element, as set by `jQuery.data(element, name, value)`, or the full data store for the element.
-       * @param element The DOM element to query for the data.
-       * @param key Name of the data stored.
-       * @param value `undefined` is not recognized as a data value. Calls such as `jQuery.data( el, "name", undefined )`
-       *              will return the corresponding data for "name", and is therefore the same as `jQuery.data( el, "name" )`
-       * @see \`{@link https://api.jquery.com/jQuery.data/ }\`
-       * @since 1.2.3
-       */
-  // `unified-signatures` is disabled so that behavior when passing `undefined` to `value` can be documented. Unifying the signatures
-  // results in potential confusion for users from an unexpected parameter.
-  // tslint:disable-next-line:unified-signatures
   def data(element: jqueryLib.JQueryNs.PlainObject[_], key: java.lang.String): js.Any = js.native
-  /**
-       * Returns value at named data store for the element, as set by `jQuery.data(element, name, value)`, or the full data store for the element.
-       * @param element The DOM element to query for the data.
-       * @param key Name of the data stored.
-       * @see \`{@link https://api.jquery.com/jQuery.data/ }\`
-       * @since 1.2.3
-       * @since 1.4
-       * @example ​ ````Store then retrieve a value from the div element.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.data demo</title>
-    <style>
-    div {
-      color: blue;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div>
-    The values stored were
-    <span></span>
-    and
-    <span></span>
-  </div>
-  ​
-  <script>
-  var div = $( "div" )[ 0 ];
-  jQuery.data( div, "test", {
-    first: 16,
-    last: "pizza!"
-  });
-  $( "span:first" ).text( jQuery.data( div, "test" ).first );
-  $( "span:last" ).text( jQuery.data( div, "test" ).last );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def data(element: stdLib.Document): js.Any = js.native
-  /**
-       * Returns value at named data store for the element, as set by `jQuery.data(element, name, value)`, or the full data store for the element.
-       * @param element The DOM element to query for the data.
-       * @param key Name of the data stored.
-       * @param value `undefined` is not recognized as a data value. Calls such as `jQuery.data( el, "name", undefined )`
-       *              will return the corresponding data for "name", and is therefore the same as `jQuery.data( el, "name" )`
-       * @see \`{@link https://api.jquery.com/jQuery.data/ }\`
-       * @since 1.2.3
-       */
-  // `unified-signatures` is disabled so that behavior when passing `undefined` to `value` can be documented. Unifying the signatures
-  // results in potential confusion for users from an unexpected parameter.
-  // tslint:disable-next-line:unified-signatures
   def data(element: stdLib.Document, key: java.lang.String): js.Any = js.native
   /**
-       * Returns value at named data store for the element, as set by `jQuery.data(element, name, value)`, or the full data store for the element.
-       * @param element The DOM element to query for the data.
-       * @param key Name of the data stored.
-       * @see \`{@link https://api.jquery.com/jQuery.data/ }\`
-       * @since 1.2.3
-       * @since 1.4
-       * @example ​ ````Store then retrieve a value from the div element.
+    * Returns value at named data store for the element, as set by `jQuery.data(element, name, value)`, or the full data store for the element.
+    * @param element The DOM element to query for the data.
+    * @param key Name of the data stored.
+    * @see \`{@link https://api.jquery.com/jQuery.data/ }\`
+    * @since 1.2.3
+    * @since 1.4
+    * @example ​ ````Store then retrieve a value from the div element.
   ```html
   <!doctype html>
   <html lang="en">
@@ -847,10 +450,10 @@ trait JQueryStatic extends js.Object {
     <title>jQuery.data demo</title>
     <style>
     div {
-      color: blue;
+    color: blue;
     }
     span {
-      color: red;
+    color: red;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -877,234 +480,33 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def data(element: stdLib.Element): js.Any = js.native
   /**
-       * Returns value at named data store for the element, as set by `jQuery.data(element, name, value)`, or the full data store for the element.
-       * @param element The DOM element to query for the data.
-       * @param key Name of the data stored.
-       * @param value `undefined` is not recognized as a data value. Calls such as `jQuery.data( el, "name", undefined )`
-       *              will return the corresponding data for "name", and is therefore the same as `jQuery.data( el, "name" )`
-       * @see \`{@link https://api.jquery.com/jQuery.data/ }\`
-       * @since 1.2.3
-       */
+    * Returns value at named data store for the element, as set by `jQuery.data(element, name, value)`, or the full data store for the element.
+    * @param element The DOM element to query for the data.
+    * @param key Name of the data stored.
+    * @param value `undefined` is not recognized as a data value. Calls such as `jQuery.data( el, "name", undefined )`
+    *              will return the corresponding data for "name", and is therefore the same as `jQuery.data( el, "name" )`
+    * @see \`{@link https://api.jquery.com/jQuery.data/ }\`
+    * @since 1.2.3
+    */
   // `unified-signatures` is disabled so that behavior when passing `undefined` to `value` can be documented. Unifying the signatures
   // results in potential confusion for users from an unexpected parameter.
   // tslint:disable-next-line:unified-signatures
   def data(element: stdLib.Element, key: java.lang.String): js.Any = js.native
-  /**
-       * Returns value at named data store for the element, as set by `jQuery.data(element, name, value)`, or the full data store for the element.
-       * @param element The DOM element to query for the data.
-       * @param key Name of the data stored.
-       * @see \`{@link https://api.jquery.com/jQuery.data/ }\`
-       * @since 1.2.3
-       * @since 1.4
-       * @example ​ ````Store then retrieve a value from the div element.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.data demo</title>
-    <style>
-    div {
-      color: blue;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div>
-    The values stored were
-    <span></span>
-    and
-    <span></span>
-  </div>
-  ​
-  <script>
-  var div = $( "div" )[ 0 ];
-  jQuery.data( div, "test", {
-    first: 16,
-    last: "pizza!"
-  });
-  $( "span:first" ).text( jQuery.data( div, "test" ).first );
-  $( "span:last" ).text( jQuery.data( div, "test" ).last );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def data(element: stdLib.Window): js.Any = js.native
-  /**
-       * Returns value at named data store for the element, as set by `jQuery.data(element, name, value)`, or the full data store for the element.
-       * @param element The DOM element to query for the data.
-       * @param key Name of the data stored.
-       * @param value `undefined` is not recognized as a data value. Calls such as `jQuery.data( el, "name", undefined )`
-       *              will return the corresponding data for "name", and is therefore the same as `jQuery.data( el, "name" )`
-       * @see \`{@link https://api.jquery.com/jQuery.data/ }\`
-       * @since 1.2.3
-       */
-  // `unified-signatures` is disabled so that behavior when passing `undefined` to `value` can be documented. Unifying the signatures
-  // results in potential confusion for users from an unexpected parameter.
-  // tslint:disable-next-line:unified-signatures
   def data(element: stdLib.Window, key: java.lang.String): js.Any = js.native
-  /**
-       * Store arbitrary data associated with the specified element. Returns the value that was set.
-       * @param element The DOM element to associate with the data.
-       * @param key A string naming the piece of data to set.
-       * @param value The new data value; this can be any Javascript type except `undefined`.
-       * @see \`{@link https://api.jquery.com/jQuery.data/ }\`
-       * @since 1.2.3
-       * @example ​ ````Get the data named &quot;blah&quot; stored at for an element.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.data demo</title>
-    <style>
-    div {
-      margin: 5px;
-      background: yellow;
-    }
-    button {
-      margin: 5px;
-      font-size: 14px;
-    }
-    p {
-      margin: 5px;
-      color: blue;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div>A div</div>
-  <button>Get "blah" from the div</button>
-  <button>Set "blah" to "hello"</button>
-  <button>Set "blah" to 86</button>
-  <button>Remove "blah" from the div</button>
-  <p>The "blah" value of this div is <span>?</span></p>
-  ​
-  <script>
-  $( "button" ).click( function() {
-    var value,
-      div = $( "div" )[ 0 ];
-    switch ( $( "button" ).index( this ) ) {
-    case 0 :
-      value = jQuery.data( div, "blah" );
-      break;
-    case 1 :
-      jQuery.data( div, "blah", "hello" );
-      value = "Stored!";
-      break;
-    case 2 :
-      jQuery.data( div, "blah", 86 );
-      value = "Stored!";
-      break;
-    case 3 :
-      jQuery.removeData( div, "blah" );
-      value = "Removed!";
-      break;
-    }
-    $( "span" ).text( "" + value );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def data[T /* <: java.lang.String | scala.Double | scala.Boolean | js.Symbol | js.Object | scala.Null */](element: jqueryLib.JQueryNs.PlainObject[_], key: java.lang.String, value: T): T = js.native
-  /**
-       * Store arbitrary data associated with the specified element. Returns the value that was set.
-       * @param element The DOM element to associate with the data.
-       * @param key A string naming the piece of data to set.
-       * @param value The new data value; this can be any Javascript type except `undefined`.
-       * @see \`{@link https://api.jquery.com/jQuery.data/ }\`
-       * @since 1.2.3
-       * @example ​ ````Get the data named &quot;blah&quot; stored at for an element.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.data demo</title>
-    <style>
-    div {
-      margin: 5px;
-      background: yellow;
-    }
-    button {
-      margin: 5px;
-      font-size: 14px;
-    }
-    p {
-      margin: 5px;
-      color: blue;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div>A div</div>
-  <button>Get "blah" from the div</button>
-  <button>Set "blah" to "hello"</button>
-  <button>Set "blah" to 86</button>
-  <button>Remove "blah" from the div</button>
-  <p>The "blah" value of this div is <span>?</span></p>
-  ​
-  <script>
-  $( "button" ).click( function() {
-    var value,
-      div = $( "div" )[ 0 ];
-    switch ( $( "button" ).index( this ) ) {
-    case 0 :
-      value = jQuery.data( div, "blah" );
-      break;
-    case 1 :
-      jQuery.data( div, "blah", "hello" );
-      value = "Stored!";
-      break;
-    case 2 :
-      jQuery.data( div, "blah", 86 );
-      value = "Stored!";
-      break;
-    case 3 :
-      jQuery.removeData( div, "blah" );
-      value = "Removed!";
-      break;
-    }
-    $( "span" ).text( "" + value );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def data[T /* <: java.lang.String | scala.Double | scala.Boolean | js.Symbol | js.Object | scala.Null */](element: stdLib.Document, key: java.lang.String, value: T): T = js.native
   /**
-       * Store arbitrary data associated with the specified element. Returns the value that was set.
-       * @param element The DOM element to associate with the data.
-       * @param key A string naming the piece of data to set.
-       * @param value The new data value; this can be any Javascript type except `undefined`.
-       * @see \`{@link https://api.jquery.com/jQuery.data/ }\`
-       * @since 1.2.3
-       * @example ​ ````Get the data named &quot;blah&quot; stored at for an element.
+    * Store arbitrary data associated with the specified element. Returns the value that was set.
+    * @param element The DOM element to associate with the data.
+    * @param key A string naming the piece of data to set.
+    * @param value The new data value; this can be any Javascript type except `undefined`.
+    * @see \`{@link https://api.jquery.com/jQuery.data/ }\`
+    * @since 1.2.3
+    * @example ​ ````Get the data named &quot;blah&quot; stored at for an element.
   ```html
   <!doctype html>
   <html lang="en">
@@ -1113,19 +515,19 @@ trait JQueryStatic extends js.Object {
     <title>jQuery.data demo</title>
     <style>
     div {
-      margin: 5px;
-      background: yellow;
+    margin: 5px;
+    background: yellow;
     }
     button {
-      margin: 5px;
-      font-size: 14px;
+    margin: 5px;
+    font-size: 14px;
     }
     p {
-      margin: 5px;
-      color: blue;
+    margin: 5px;
+    color: blue;
     }
     span {
-      color: red;
+    color: red;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -1142,23 +544,23 @@ trait JQueryStatic extends js.Object {
   <script>
   $( "button" ).click( function() {
     var value,
-      div = $( "div" )[ 0 ];
+    div = $( "div" )[ 0 ];
     switch ( $( "button" ).index( this ) ) {
     case 0 :
-      value = jQuery.data( div, "blah" );
-      break;
+    value = jQuery.data( div, "blah" );
+    break;
     case 1 :
-      jQuery.data( div, "blah", "hello" );
-      value = "Stored!";
-      break;
+    jQuery.data( div, "blah", "hello" );
+    value = "Stored!";
+    break;
     case 2 :
-      jQuery.data( div, "blah", 86 );
-      value = "Stored!";
-      break;
+    jQuery.data( div, "blah", 86 );
+    value = "Stored!";
+    break;
     case 3 :
-      jQuery.removeData( div, "blah" );
-      value = "Removed!";
-      break;
+    jQuery.removeData( div, "blah" );
+    value = "Removed!";
+    break;
     }
     $( "span" ).text( "" + value );
   });
@@ -1167,87 +569,16 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def data[T /* <: java.lang.String | scala.Double | scala.Boolean | js.Symbol | js.Object | scala.Null */](element: stdLib.Element, key: java.lang.String, value: T): T = js.native
-  /**
-       * Store arbitrary data associated with the specified element. Returns the value that was set.
-       * @param element The DOM element to associate with the data.
-       * @param key A string naming the piece of data to set.
-       * @param value The new data value; this can be any Javascript type except `undefined`.
-       * @see \`{@link https://api.jquery.com/jQuery.data/ }\`
-       * @since 1.2.3
-       * @example ​ ````Get the data named &quot;blah&quot; stored at for an element.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.data demo</title>
-    <style>
-    div {
-      margin: 5px;
-      background: yellow;
-    }
-    button {
-      margin: 5px;
-      font-size: 14px;
-    }
-    p {
-      margin: 5px;
-      color: blue;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div>A div</div>
-  <button>Get "blah" from the div</button>
-  <button>Set "blah" to "hello"</button>
-  <button>Set "blah" to 86</button>
-  <button>Remove "blah" from the div</button>
-  <p>The "blah" value of this div is <span>?</span></p>
-  ​
-  <script>
-  $( "button" ).click( function() {
-    var value,
-      div = $( "div" )[ 0 ];
-    switch ( $( "button" ).index( this ) ) {
-    case 0 :
-      value = jQuery.data( div, "blah" );
-      break;
-    case 1 :
-      jQuery.data( div, "blah", "hello" );
-      value = "Stored!";
-      break;
-    case 2 :
-      jQuery.data( div, "blah", 86 );
-      value = "Stored!";
-      break;
-    case 3 :
-      jQuery.removeData( div, "blah" );
-      value = "Removed!";
-      break;
-    }
-    $( "span" ).text( "" + value );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def data[T /* <: java.lang.String | scala.Double | scala.Boolean | js.Symbol | js.Object | scala.Null */](element: stdLib.Window, key: java.lang.String, value: T): T = js.native
   /**
-       * Execute the next function on the queue for the matched element.
-       * @param element A DOM element from which to remove and execute a queued function.
-       * @param queueName A string containing the name of the queue. Defaults to fx, the standard effects queue.
-       * @see \`{@link https://api.jquery.com/jQuery.dequeue/ }\`
-       * @since 1.3
-       * @example ​ ````Use jQuery.dequeue() to end a custom queue function which allows the queue to keep going.
+    * Execute the next function on the queue for the matched element.
+    * @param element A DOM element from which to remove and execute a queued function.
+    * @param queueName A string containing the name of the queue. Defaults to fx, the standard effects queue.
+    * @see \`{@link https://api.jquery.com/jQuery.dequeue/ }\`
+    * @since 1.3
+    * @example ​ ````Use jQuery.dequeue() to end a custom queue function which allows the queue to keep going.
   ```html
   <!doctype html>
   <html lang="en">
@@ -1256,16 +587,16 @@ trait JQueryStatic extends js.Object {
     <title>jQuery.dequeue demo</title>
     <style>
     div {
-      margin: 3px;
-      width: 50px;
-      position: absolute;
-      height: 50px;
-      left: 10px;
-      top: 30px;
-      background-color: yellow;
+    margin: 3px;
+    width: 50px;
+    position: absolute;
+    height: 50px;
+    left: 10px;
+    top: 30px;
+    background-color: yellow;
     }
     div.red {
-      background-color: red;
+    background-color: red;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -1278,80 +609,29 @@ trait JQueryStatic extends js.Object {
   <script>
   $( "button" ).click(function() {
     $( "div" )
-      .animate({ left: '+=200px' }, 2000 )
-      .animate({ top: '0px' }, 600 )
-      .queue(function() {
-        $( this ).toggleClass( "red" );
-        $.dequeue( this );
-      })
-      .animate({ left:'10px', top:'30px' }, 700 );
+    .animate({ left: '+=200px' }, 2000 )
+    .animate({ top: '0px' }, 600 )
+    .queue(function() {
+    $( this ).toggleClass( "red" );
+    $.dequeue( this );
+    })
+    .animate({ left:'10px', top:'30px' }, 700 );
   });
   </script>
   ​
   </body>
   </html>
   ```
-       */
+    */
   def dequeue(element: stdLib.Element): scala.Unit = js.native
-  /**
-       * Execute the next function on the queue for the matched element.
-       * @param element A DOM element from which to remove and execute a queued function.
-       * @param queueName A string containing the name of the queue. Defaults to fx, the standard effects queue.
-       * @see \`{@link https://api.jquery.com/jQuery.dequeue/ }\`
-       * @since 1.3
-       * @example ​ ````Use jQuery.dequeue() to end a custom queue function which allows the queue to keep going.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.dequeue demo</title>
-    <style>
-    div {
-      margin: 3px;
-      width: 50px;
-      position: absolute;
-      height: 50px;
-      left: 10px;
-      top: 30px;
-      background-color: yellow;
-    }
-    div.red {
-      background-color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <button>Start</button>
-  <div></div>
-  ​
-  <script>
-  $( "button" ).click(function() {
-    $( "div" )
-      .animate({ left: '+=200px' }, 2000 )
-      .animate({ top: '0px' }, 600 )
-      .queue(function() {
-        $( this ).toggleClass( "red" );
-        $.dequeue( this );
-      })
-      .animate({ left:'10px', top:'30px' }, 700 );
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def dequeue(element: stdLib.Element, queueName: java.lang.String): scala.Unit = js.native
   /**
-       * A generic iterator function, which can be used to seamlessly iterate over both objects and arrays. Arrays and array-like objects with a length property (such as a function's arguments object) are iterated by numeric index, from 0 to length-1. Other objects are iterated via their named properties.
-       * @param array The array to iterate over.
-       * @param callback The function that will be executed on every object.
-       * @see \`{@link https://api.jquery.com/jQuery.each/ }\`
-       * @since 1.0
-       * @example ​ ````Iterates through the array displaying each number as both a word and numeral
+    * A generic iterator function, which can be used to seamlessly iterate over both objects and arrays. Arrays and array-like objects with a length property (such as a function's arguments object) are iterated by numeric index, from 0 to length-1. Other objects are iterated via their named properties.
+    * @param array The array to iterate over.
+    * @param callback The function that will be executed on every object.
+    * @see \`{@link https://api.jquery.com/jQuery.each/ }\`
+    * @since 1.0
+    * @example ​ ````Iterates through the array displaying each number as both a word and numeral
   ```html
   <!doctype html>
   <html lang="en">
@@ -1360,10 +640,10 @@ trait JQueryStatic extends js.Object {
     <title>jQuery.each demo</title>
     <style>
     div {
-      color: blue;
+    color: blue;
     }
     div#five {
-      color: red;
+    color: red;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -1395,24 +675,24 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Iterates over items in an array, accessing both the current item and its index.
+    * @example ​ ````Iterates over items in an array, accessing both the current item and its index.
   ```javascript
   $.each( [ "a", "b", "c" ], function( i, l ){
     alert( "Index #" + i + ": " + l );
   });
   ```
-       */
+    */
   def each[T](
     array: stdLib.ArrayLike[T],
     callback: js.ThisFunction2[/* this */ T, /* indexInArray */ scala.Double, /* value */ T, _]
   ): stdLib.ArrayLike[T] = js.native
   /**
-       * A generic iterator function, which can be used to seamlessly iterate over both objects and arrays. Arrays and array-like objects with a length property (such as a function's arguments object) are iterated by numeric index, from 0 to length-1. Other objects are iterated via their named properties.
-       * @param obj The object to iterate over.
-       * @param callback The function that will be executed on every object.
-       * @see \`{@link https://api.jquery.com/jQuery.each/ }\`
-       * @since 1.0
-       * @example ​ ````Iterates through the array displaying each number as both a word and numeral
+    * A generic iterator function, which can be used to seamlessly iterate over both objects and arrays. Arrays and array-like objects with a length property (such as a function's arguments object) are iterated by numeric index, from 0 to length-1. Other objects are iterated via their named properties.
+    * @param obj The object to iterate over.
+    * @param callback The function that will be executed on every object.
+    * @see \`{@link https://api.jquery.com/jQuery.each/ }\`
+    * @since 1.0
+    * @example ​ ````Iterates through the array displaying each number as both a word and numeral
   ```html
   <!doctype html>
   <html lang="en">
@@ -1421,10 +701,10 @@ trait JQueryStatic extends js.Object {
     <title>jQuery.each demo</title>
     <style>
     div {
-      color: blue;
+    color: blue;
     }
     div#five {
-      color: red;
+    color: red;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -1456,57 +736,57 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Iterates over the properties in an object, accessing both the current item and its key.
+    * @example ​ ````Iterates over the properties in an object, accessing both the current item and its key.
   ```javascript
   $.each({ name: "John", lang: "JS" }, function( k, v ) {
     alert( "Key: " + k + ", Value: " + v );
   });
   ```
-       */
+    */
   def each[T, K /* <: java.lang.String */](
     obj: T,
     callback: js.ThisFunction2[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) *//* this */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[K] */ /* this */ js.Any, 
       /* propertyName */ K, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) *//* valueOfProperty */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[K] */ /* valueOfProperty */ js.Any, 
       _
     ]
   ): T = js.native
   /**
-       * Takes a string and throws an exception containing it.
-       * @param message The message to send out.
-       * @see \`{@link https://api.jquery.com/jQuery.error/ }\`
-       * @since 1.4.1
-       * @example ​ ````Override jQuery.error for display in Firebug.
+    * Takes a string and throws an exception containing it.
+    * @param message The message to send out.
+    * @see \`{@link https://api.jquery.com/jQuery.error/ }\`
+    * @since 1.4.1
+    * @example ​ ````Override jQuery.error for display in Firebug.
   ```javascript
   jQuery.error = console.error;
   ```
-       */
+    */
   def error(message: java.lang.String): js.Any = js.native
   /**
-       * Escapes any character that has a special meaning in a CSS selector.
-       * @param selector A string containing a selector expression to escape.
-       * @see \`{@link https://api.jquery.com/jQuery.escapeSelector/ }\`
-       * @since 3.0
-       * @example ​ ````Escape an ID containing a hash.
+    * Escapes any character that has a special meaning in a CSS selector.
+    * @param selector A string containing a selector expression to escape.
+    * @see \`{@link https://api.jquery.com/jQuery.escapeSelector/ }\`
+    * @since 3.0
+    * @example ​ ````Escape an ID containing a hash.
   ```javascript
   $.escapeSelector( "#target" ); // "\#target"
   ```
-       * @example ​ ````Select all the elements having a class name of .box inside a div.
+    * @example ​ ````Select all the elements having a class name of .box inside a div.
   ```javascript
   $( "div" ).find( "." + $.escapeSelector( ".box" ) );
   ```
-       */
+    */
   def escapeSelector(selector: jqueryLib.JQueryNs.Selector): jqueryLib.JQueryNs.Selector = js.native
   /**
-       * Merge the contents of two or more objects together into the first object.
-       * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-       * @param target The object to extend. It will receive the new properties.
-       * @param object1 An object containing additional properties to merge in.
-       * @param objectN Additional objects containing properties to merge in.
-       * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-       * @since 1.1.4
-       * @example ​ ````Merge two objects recursively, modifying the first.
+    * Merge the contents of two or more objects together into the first object.
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @param object1 An object containing additional properties to merge in.
+    * @param objectN Additional objects containing properties to merge in.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    * @example ​ ````Merge two objects recursively, modifying the first.
   ```html
   <!doctype html>
   <html lang="en">
@@ -1540,17 +820,17 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def extend(deep: jqueryLib.jqueryLibNumbers.`true`, target: js.Any, object1: js.Any, objectN: js.Any*): js.Any = js.native
   /**
-       * Merge the contents of two or more objects together into the first object.
-       * @param target An object that will receive the new properties if additional objects are passed in or that will
-       *               extend the jQuery namespace if it is the sole argument.
-       * @param object1 An object containing additional properties to merge in.
-       * @param objectN Additional objects containing properties to merge in.
-       * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-       * @since 1.0
-       * @example ​ ````Merge two objects, modifying the first.
+    * Merge the contents of two or more objects together into the first object.
+    * @param target An object that will receive the new properties if additional objects are passed in or that will
+    *               extend the jQuery namespace if it is the sole argument.
+    * @param object1 An object containing additional properties to merge in.
+    * @param objectN Additional objects containing properties to merge in.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.0
+    * @example ​ ````Merge two objects, modifying the first.
   ```html
   <!doctype html>
   <html lang="en">
@@ -1584,7 +864,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Merge defaults and options, without modifying the defaults. This is a common plugin development pattern.
+    * @example ​ ````Merge defaults and options, without modifying the defaults. This is a common plugin development pattern.
   ```html
   <!doctype html>
   <html lang="en">
@@ -1613,32 +893,32 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def extend(target: js.Any, object1: js.Any, objectN: js.Any*): js.Any = js.native
   /**
-       * Merge the contents of two or more objects together into the first object.
-       * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-       * @param target The object to extend. It will receive the new properties.
-       * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-       * @since 1.1.4
-       */
+    * Merge the contents of two or more objects together into the first object.
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    */
   def extend[T](deep: jqueryLib.jqueryLibNumbers.`true`, target: T): this.type with T = js.native
   /**
-       * Merge the contents of two or more objects together into the first object.
-       * @param target An object that will receive the new properties if additional objects are passed in or that will
-       *               extend the jQuery namespace if it is the sole argument.
-       * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-       * @since 1.0
-       */
+    * Merge the contents of two or more objects together into the first object.
+    * @param target An object that will receive the new properties if additional objects are passed in or that will
+    *               extend the jQuery namespace if it is the sole argument.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.0
+    */
   def extend[T](target: T): this.type with T = js.native
   /**
-       * Merge the contents of two or more objects together into the first object.
-       * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-       * @param target The object to extend. It will receive the new properties.
-       * @param object1 An object containing additional properties to merge in.
-       * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-       * @since 1.1.4
-       * @example ​ ````Merge two objects recursively, modifying the first.
+    * Merge the contents of two or more objects together into the first object.
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @param object1 An object containing additional properties to merge in.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    * @example ​ ````Merge two objects recursively, modifying the first.
   ```html
   <!doctype html>
   <html lang="en">
@@ -1672,16 +952,16 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def extend[T, U](deep: jqueryLib.jqueryLibNumbers.`true`, target: T, object1: U): T with U = js.native
   /**
-       * Merge the contents of two or more objects together into the first object.
-       * @param target An object that will receive the new properties if additional objects are passed in or that will
-       *               extend the jQuery namespace if it is the sole argument.
-       * @param object1 An object containing additional properties to merge in.
-       * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-       * @since 1.0
-       * @example ​ ````Merge two objects, modifying the first.
+    * Merge the contents of two or more objects together into the first object.
+    * @param target An object that will receive the new properties if additional objects are passed in or that will
+    *               extend the jQuery namespace if it is the sole argument.
+    * @param object1 An object containing additional properties to merge in.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.0
+    * @example ​ ````Merge two objects, modifying the first.
   ```html
   <!doctype html>
   <html lang="en">
@@ -1715,7 +995,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Merge defaults and options, without modifying the defaults. This is a common plugin development pattern.
+    * @example ​ ````Merge defaults and options, without modifying the defaults. This is a common plugin development pattern.
   ```html
   <!doctype html>
   <html lang="en">
@@ -1744,17 +1024,17 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def extend[T, U](target: T, object1: U): T with U = js.native
   /**
-       * Merge the contents of two or more objects together into the first object.
-       * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-       * @param target The object to extend. It will receive the new properties.
-       * @param object1 An object containing additional properties to merge in.
-       * @param object2 An object containing additional properties to merge in.
-       * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-       * @since 1.1.4
-       * @example ​ ````Merge two objects recursively, modifying the first.
+    * Merge the contents of two or more objects together into the first object.
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @param object1 An object containing additional properties to merge in.
+    * @param object2 An object containing additional properties to merge in.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    * @example ​ ````Merge two objects recursively, modifying the first.
   ```html
   <!doctype html>
   <html lang="en">
@@ -1788,17 +1068,17 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def extend[T, U, V](deep: jqueryLib.jqueryLibNumbers.`true`, target: T, object1: U, object2: V): T with U with V = js.native
   /**
-       * Merge the contents of two or more objects together into the first object.
-       * @param target An object that will receive the new properties if additional objects are passed in or that will
-       *               extend the jQuery namespace if it is the sole argument.
-       * @param object1 An object containing additional properties to merge in.
-       * @param object2 An object containing additional properties to merge in.
-       * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-       * @since 1.0
-       * @example ​ ````Merge two objects, modifying the first.
+    * Merge the contents of two or more objects together into the first object.
+    * @param target An object that will receive the new properties if additional objects are passed in or that will
+    *               extend the jQuery namespace if it is the sole argument.
+    * @param object1 An object containing additional properties to merge in.
+    * @param object2 An object containing additional properties to merge in.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.0
+    * @example ​ ````Merge two objects, modifying the first.
   ```html
   <!doctype html>
   <html lang="en">
@@ -1832,7 +1112,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Merge defaults and options, without modifying the defaults. This is a common plugin development pattern.
+    * @example ​ ````Merge defaults and options, without modifying the defaults. This is a common plugin development pattern.
   ```html
   <!doctype html>
   <html lang="en">
@@ -1861,18 +1141,18 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def extend[T, U, V](target: T, object1: U, object2: V): T with U with V = js.native
   /**
-       * Merge the contents of two or more objects together into the first object.
-       * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-       * @param target The object to extend. It will receive the new properties.
-       * @param object1 An object containing additional properties to merge in.
-       * @param object2 An object containing additional properties to merge in.
-       * @param object3 An object containing additional properties to merge in.
-       * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-       * @since 1.1.4
-       * @example ​ ````Merge two objects recursively, modifying the first.
+    * Merge the contents of two or more objects together into the first object.
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @param object1 An object containing additional properties to merge in.
+    * @param object2 An object containing additional properties to merge in.
+    * @param object3 An object containing additional properties to merge in.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    * @example ​ ````Merge two objects recursively, modifying the first.
   ```html
   <!doctype html>
   <html lang="en">
@@ -1906,18 +1186,18 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def extend[T, U, V, W](deep: jqueryLib.jqueryLibNumbers.`true`, target: T, object1: U, object2: V, object3: W): T with U with V with W = js.native
   /**
-       * Merge the contents of two or more objects together into the first object.
-       * @param target An object that will receive the new properties if additional objects are passed in or that will
-       *               extend the jQuery namespace if it is the sole argument.
-       * @param object1 An object containing additional properties to merge in.
-       * @param object2 An object containing additional properties to merge in.
-       * @param object3 An object containing additional properties to merge in.
-       * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-       * @since 1.0
-       * @example ​ ````Merge two objects, modifying the first.
+    * Merge the contents of two or more objects together into the first object.
+    * @param target An object that will receive the new properties if additional objects are passed in or that will
+    *               extend the jQuery namespace if it is the sole argument.
+    * @param object1 An object containing additional properties to merge in.
+    * @param object2 An object containing additional properties to merge in.
+    * @param object3 An object containing additional properties to merge in.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.0
+    * @example ​ ````Merge two objects, modifying the first.
   ```html
   <!doctype html>
   <html lang="en">
@@ -1951,7 +1231,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Merge defaults and options, without modifying the defaults. This is a common plugin development pattern.
+    * @example ​ ````Merge defaults and options, without modifying the defaults. This is a common plugin development pattern.
   ```html
   <!doctype html>
   <html lang="en">
@@ -1980,19 +1260,19 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def extend[T, U, V, W](target: T, object1: U, object2: V, object3: W): T with U with V with W = js.native
   /**
-       * Merge the contents of two or more objects together into the first object.
-       * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-       * @param target The object to extend. It will receive the new properties.
-       * @param object1 An object containing additional properties to merge in.
-       * @param object2 An object containing additional properties to merge in.
-       * @param object3 An object containing additional properties to merge in.
-       * @param object4 An object containing additional properties to merge in.
-       * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-       * @since 1.1.4
-       * @example ​ ````Merge two objects recursively, modifying the first.
+    * Merge the contents of two or more objects together into the first object.
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @param object1 An object containing additional properties to merge in.
+    * @param object2 An object containing additional properties to merge in.
+    * @param object3 An object containing additional properties to merge in.
+    * @param object4 An object containing additional properties to merge in.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    * @example ​ ````Merge two objects recursively, modifying the first.
   ```html
   <!doctype html>
   <html lang="en">
@@ -2026,19 +1306,19 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def extend[T, U, V, W, X](deep: jqueryLib.jqueryLibNumbers.`true`, target: T, object1: U, object2: V, object3: W, object4: X): T with U with V with W with X = js.native
   /**
-       * Merge the contents of two or more objects together into the first object.
-       * @param target An object that will receive the new properties if additional objects are passed in or that will
-       *               extend the jQuery namespace if it is the sole argument.
-       * @param object1 An object containing additional properties to merge in.
-       * @param object2 An object containing additional properties to merge in.
-       * @param object3 An object containing additional properties to merge in.
-       * @param object4 An object containing additional properties to merge in.
-       * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-       * @since 1.0
-       * @example ​ ````Merge two objects, modifying the first.
+    * Merge the contents of two or more objects together into the first object.
+    * @param target An object that will receive the new properties if additional objects are passed in or that will
+    *               extend the jQuery namespace if it is the sole argument.
+    * @param object1 An object containing additional properties to merge in.
+    * @param object2 An object containing additional properties to merge in.
+    * @param object3 An object containing additional properties to merge in.
+    * @param object4 An object containing additional properties to merge in.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.0
+    * @example ​ ````Merge two objects, modifying the first.
   ```html
   <!doctype html>
   <html lang="en">
@@ -2072,7 +1352,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Merge defaults and options, without modifying the defaults. This is a common plugin development pattern.
+    * @example ​ ````Merge defaults and options, without modifying the defaults. This is a common plugin development pattern.
   ```html
   <!doctype html>
   <html lang="en">
@@ -2101,20 +1381,20 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def extend[T, U, V, W, X](target: T, object1: U, object2: V, object3: W, object4: X): T with U with V with W with X = js.native
   /**
-       * Merge the contents of two or more objects together into the first object.
-       * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-       * @param target The object to extend. It will receive the new properties.
-       * @param object1 An object containing additional properties to merge in.
-       * @param object2 An object containing additional properties to merge in.
-       * @param object3 An object containing additional properties to merge in.
-       * @param object4 An object containing additional properties to merge in.
-       * @param object5 An object containing additional properties to merge in.
-       * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-       * @since 1.1.4
-       * @example ​ ````Merge two objects recursively, modifying the first.
+    * Merge the contents of two or more objects together into the first object.
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @param object1 An object containing additional properties to merge in.
+    * @param object2 An object containing additional properties to merge in.
+    * @param object3 An object containing additional properties to merge in.
+    * @param object4 An object containing additional properties to merge in.
+    * @param object5 An object containing additional properties to merge in.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    * @example ​ ````Merge two objects recursively, modifying the first.
   ```html
   <!doctype html>
   <html lang="en">
@@ -2148,7 +1428,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def extend[T, U, V, W, X, Y](
     deep: jqueryLib.jqueryLibNumbers.`true`,
     target: T,
@@ -2159,17 +1439,17 @@ trait JQueryStatic extends js.Object {
     object5: Y
   ): T with U with V with W with X with Y = js.native
   /**
-       * Merge the contents of two or more objects together into the first object.
-       * @param target An object that will receive the new properties if additional objects are passed in or that will
-       *               extend the jQuery namespace if it is the sole argument.
-       * @param object1 An object containing additional properties to merge in.
-       * @param object2 An object containing additional properties to merge in.
-       * @param object3 An object containing additional properties to merge in.
-       * @param object4 An object containing additional properties to merge in.
-       * @param object5 An object containing additional properties to merge in.
-       * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-       * @since 1.0
-       * @example ​ ````Merge two objects, modifying the first.
+    * Merge the contents of two or more objects together into the first object.
+    * @param target An object that will receive the new properties if additional objects are passed in or that will
+    *               extend the jQuery namespace if it is the sole argument.
+    * @param object1 An object containing additional properties to merge in.
+    * @param object2 An object containing additional properties to merge in.
+    * @param object3 An object containing additional properties to merge in.
+    * @param object4 An object containing additional properties to merge in.
+    * @param object5 An object containing additional properties to merge in.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.0
+    * @example ​ ````Merge two objects, modifying the first.
   ```html
   <!doctype html>
   <html lang="en">
@@ -2203,7 +1483,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Merge defaults and options, without modifying the defaults. This is a common plugin development pattern.
+    * @example ​ ````Merge defaults and options, without modifying the defaults. This is a common plugin development pattern.
   ```html
   <!doctype html>
   <html lang="en">
@@ -2232,21 +1512,21 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def extend[T, U, V, W, X, Y](target: T, object1: U, object2: V, object3: W, object4: X, object5: Y): T with U with V with W with X with Y = js.native
   /**
-       * Merge the contents of two or more objects together into the first object.
-       * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
-       * @param target The object to extend. It will receive the new properties.
-       * @param object1 An object containing additional properties to merge in.
-       * @param object2 An object containing additional properties to merge in.
-       * @param object3 An object containing additional properties to merge in.
-       * @param object4 An object containing additional properties to merge in.
-       * @param object5 An object containing additional properties to merge in.
-       * @param object6 An object containing additional properties to merge in.
-       * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-       * @since 1.1.4
-       * @example ​ ````Merge two objects recursively, modifying the first.
+    * Merge the contents of two or more objects together into the first object.
+    * @param deep If true, the merge becomes recursive (aka. deep copy). Passing false for this argument is not supported.
+    * @param target The object to extend. It will receive the new properties.
+    * @param object1 An object containing additional properties to merge in.
+    * @param object2 An object containing additional properties to merge in.
+    * @param object3 An object containing additional properties to merge in.
+    * @param object4 An object containing additional properties to merge in.
+    * @param object5 An object containing additional properties to merge in.
+    * @param object6 An object containing additional properties to merge in.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.1.4
+    * @example ​ ````Merge two objects recursively, modifying the first.
   ```html
   <!doctype html>
   <html lang="en">
@@ -2280,7 +1560,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def extend[T, U, V, W, X, Y, Z](
     deep: jqueryLib.jqueryLibNumbers.`true`,
     target: T,
@@ -2292,18 +1572,18 @@ trait JQueryStatic extends js.Object {
     object6: Z
   ): T with U with V with W with X with Y with Z = js.native
   /**
-       * Merge the contents of two or more objects together into the first object.
-       * @param target An object that will receive the new properties if additional objects are passed in or that will
-       *               extend the jQuery namespace if it is the sole argument.
-       * @param object1 An object containing additional properties to merge in.
-       * @param object2 An object containing additional properties to merge in.
-       * @param object3 An object containing additional properties to merge in.
-       * @param object4 An object containing additional properties to merge in.
-       * @param object5 An object containing additional properties to merge in.
-       * @param object6 An object containing additional properties to merge in.
-       * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
-       * @since 1.0
-       * @example ​ ````Merge two objects, modifying the first.
+    * Merge the contents of two or more objects together into the first object.
+    * @param target An object that will receive the new properties if additional objects are passed in or that will
+    *               extend the jQuery namespace if it is the sole argument.
+    * @param object1 An object containing additional properties to merge in.
+    * @param object2 An object containing additional properties to merge in.
+    * @param object3 An object containing additional properties to merge in.
+    * @param object4 An object containing additional properties to merge in.
+    * @param object5 An object containing additional properties to merge in.
+    * @param object6 An object containing additional properties to merge in.
+    * @see \`{@link https://api.jquery.com/jQuery.extend/ }\`
+    * @since 1.0
+    * @example ​ ````Merge two objects, modifying the first.
   ```html
   <!doctype html>
   <html lang="en">
@@ -2337,7 +1617,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Merge defaults and options, without modifying the defaults. This is a common plugin development pattern.
+    * @example ​ ````Merge defaults and options, without modifying the defaults. This is a common plugin development pattern.
   ```html
   <!doctype html>
   <html lang="en">
@@ -2366,231 +1646,63 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def extend[T, U, V, W, X, Y, Z](target: T, object1: U, object2: V, object3: W, object4: X, object5: Y, object6: Z): T with U with V with W with X with Y with Z = js.native
   /**
-       * Load data from the server using a HTTP GET request.
-       * @param url_settings _&#x40;param_ `url_settings`
-       * <br>
-       * * `url` — A string containing the URL to which the request is sent. <br>
-       * * `settings` — A set of key/value pairs that configure the Ajax request. All properties except for `url` are
-       *                optional. A default can be set for any option with \`{@link ajaxSetup $.ajaxSetup()}\`. See \`{@link https://api.jquery.com/jquery.ajax/#jQuery-ajax-settings jQuery.ajax( settings )}\`
-       *                for a complete list of all settings. The type option will automatically be set to `GET`.
-       * @see \`{@link https://api.jquery.com/jQuery.get/ }\`
-       * @since 1.0
-       * @since 1.12
-       * @since 2.2
-       * @example ​ ````Request the test.php page, but ignore the return results.
+    * Load data from the server using a HTTP GET request.
+    * @param url_settings _&#x40;param_ `url_settings`
+    * <br>
+    * * `url` — A string containing the URL to which the request is sent. <br>
+    * * `settings` — A set of key/value pairs that configure the Ajax request. All properties except for `url` are
+    *                optional. A default can be set for any option with \`{@link ajaxSetup $.ajaxSetup()}\`. See \`{@link https://api.jquery.com/jquery.ajax/#jQuery-ajax-settings jQuery.ajax( settings )}\`
+    *                for a complete list of all settings. The type option will automatically be set to `GET`.
+    * @see \`{@link https://api.jquery.com/jQuery.get/ }\`
+    * @since 1.0
+    * @since 1.12
+    * @since 2.2
+    * @example ​ ````Request the test.php page, but ignore the return results.
   ```javascript
   $.get( "test.php" );
   ```
-       */
+    */
   def get(): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load data from the server using a HTTP GET request.
-       * @param url_settings _&#x40;param_ `url_settings`
-       * <br>
-       * * `url` — A string containing the URL to which the request is sent. <br>
-       * * `settings` — A set of key/value pairs that configure the Ajax request. All properties except for `url` are
-       *                optional. A default can be set for any option with \`{@link ajaxSetup $.ajaxSetup()}\`. See \`{@link https://api.jquery.com/jquery.ajax/#jQuery-ajax-settings jQuery.ajax( settings )}\`
-       *                for a complete list of all settings. The type option will automatically be set to `GET`.
-       * @see \`{@link https://api.jquery.com/jQuery.get/ }\`
-       * @since 1.0
-       * @since 1.12
-       * @since 2.2
-       * @example ​ ````Request the test.php page, but ignore the return results.
-  ```javascript
-  $.get( "test.php" );
-  ```
-       */
   def get(url_settings: java.lang.String): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load data from the server using a HTTP GET request.
-       * @param url_settings _&#x40;param_ `url_settings`
-       * <br>
-       * * `url` — A string containing the URL to which the request is sent. <br>
-       * * `settings` — A set of key/value pairs that configure the Ajax request. All properties except for `url` are
-       *                optional. A default can be set for any option with \`{@link ajaxSetup $.ajaxSetup()}\`. See \`{@link https://api.jquery.com/jquery.ajax/#jQuery-ajax-settings jQuery.ajax( settings )}\`
-       *                for a complete list of all settings. The type option will automatically be set to `GET`.
-       * @see \`{@link https://api.jquery.com/jQuery.get/ }\`
-       * @since 1.0
-       * @since 1.12
-       * @since 2.2
-       * @example ​ ````Request the test.php page, but ignore the return results.
-  ```javascript
-  $.get( "test.php" );
-  ```
-       */
   def get(url_settings: jqueryLib.JQueryNs.UrlAjaxSettings[_]): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load data from the server using a HTTP GET request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param data A plain object or string that is sent to the server with the request.
-       * @param success A callback function that is executed if the request succeeds. Required if `dataType` is provided,
-       *                but you can use `null` or \`{@link noop jQuery.noop}\` as a placeholder.
-       * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
-       * @see \`{@link https://api.jquery.com/jQuery.get/ }\`
-       * @since 1.0
-       */
-  /**
-       * Load data from the server using a HTTP GET request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param success_data _&#x40;param_ `success_data`
-       * <br>
-       * * `success` — A callback function that is executed if the request succeeds. Required if `dataType` is provided,
-       *               but you can use `null` or \`{@link noop jQuery.noop}\` as a placeholder. <br>
-       * * `data` — A plain object or string that is sent to the server with the request.
-       * @see \`{@link https://api.jquery.com/jQuery.get/ }\`
-       * @since 1.0
-       * @example ​ ````Request the test.php page and send some additional data along (while still ignoring the return results).
-  ```javascript
-  $.get( "test.php", { name: "John", time: "2pm" } );
-  ```
-       * @example ​ ````Pass arrays of data to the server (while still ignoring the return results).
-  ```javascript
-  $.get( "test.php", { "choices[]": ["Jon", "Susan"] } );
-  ```
-       * @example ​ ````Alert the results from requesting test.php (HTML or XML, depending on what was returned).
-  ```javascript
-  $.get( "test.php", function( data ) {
-    alert( "Data Loaded: " + data );
-  });
-  ```
-       * @example ​ ````Alert the results from requesting test.cgi with an additional payload of data (HTML or XML, depending on what was returned).
-  ```javascript
-  $.get( "test.cgi", { name: "John", time: "2pm" } )
-    .done(function( data ) {
-      alert( "Data Loaded: " + data );
-    });
-  ```
-       */
   def get(url: java.lang.String, data: java.lang.String): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load data from the server using a HTTP GET request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param data A plain object or string that is sent to the server with the request.
-       * @param success A callback function that is executed if the request succeeds. Required if `dataType` is provided,
-       *                but you can use `null` or \`{@link noop jQuery.noop}\` as a placeholder.
-       * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
-       * @see \`{@link https://api.jquery.com/jQuery.get/ }\`
-       * @since 1.0
-       */
   def get(
     url: java.lang.String,
     data: java.lang.String,
     success: jqueryLib.JQueryNs.jqXHRNs.DoneCallback[_, jqueryLib.JQueryNs.jqXHR[_]]
   ): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load data from the server using a HTTP GET request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param data A plain object or string that is sent to the server with the request.
-       * @param success A callback function that is executed if the request succeeds. Required if `dataType` is provided,
-       *                but you can use `null` or \`{@link noop jQuery.noop}\` as a placeholder.
-       * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
-       * @see \`{@link https://api.jquery.com/jQuery.get/ }\`
-       * @since 1.0
-       */
   def get(
     url: java.lang.String,
     data: java.lang.String,
     success: jqueryLib.JQueryNs.jqXHRNs.DoneCallback[_, jqueryLib.JQueryNs.jqXHR[_]],
     dataType: java.lang.String
   ): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load data from the server using a HTTP GET request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param data A plain object or string that is sent to the server with the request.
-       * @param success A callback function that is executed if the request succeeds. Required if `dataType` is provided,
-       *                but you can use `null` or \`{@link noop jQuery.noop}\` as a placeholder.
-       * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
-       * @see \`{@link https://api.jquery.com/jQuery.get/ }\`
-       * @since 1.0
-       */
   def get(url: java.lang.String, data: java.lang.String, success: scala.Null, dataType: java.lang.String): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load data from the server using a HTTP GET request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param data A plain object or string that is sent to the server with the request.
-       * @param success A callback function that is executed if the request succeeds. Required if `dataType` is provided,
-       *                but you can use `null` or \`{@link noop jQuery.noop}\` as a placeholder.
-       * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
-       * @see \`{@link https://api.jquery.com/jQuery.get/ }\`
-       * @since 1.0
-       */
-  /**
-       * Load data from the server using a HTTP GET request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param success_data _&#x40;param_ `success_data`
-       * <br>
-       * * `success` — A callback function that is executed if the request succeeds. Required if `dataType` is provided,
-       *               but you can use `null` or \`{@link noop jQuery.noop}\` as a placeholder. <br>
-       * * `data` — A plain object or string that is sent to the server with the request.
-       * @see \`{@link https://api.jquery.com/jQuery.get/ }\`
-       * @since 1.0
-       * @example ​ ````Request the test.php page and send some additional data along (while still ignoring the return results).
-  ```javascript
-  $.get( "test.php", { name: "John", time: "2pm" } );
-  ```
-       * @example ​ ````Pass arrays of data to the server (while still ignoring the return results).
-  ```javascript
-  $.get( "test.php", { "choices[]": ["Jon", "Susan"] } );
-  ```
-       * @example ​ ````Alert the results from requesting test.php (HTML or XML, depending on what was returned).
-  ```javascript
-  $.get( "test.php", function( data ) {
-    alert( "Data Loaded: " + data );
-  });
-  ```
-       * @example ​ ````Alert the results from requesting test.cgi with an additional payload of data (HTML or XML, depending on what was returned).
-  ```javascript
-  $.get( "test.cgi", { name: "John", time: "2pm" } )
-    .done(function( data ) {
-      alert( "Data Loaded: " + data );
-    });
-  ```
-       */
   def get(url: java.lang.String, data: jqueryLib.JQueryNs.PlainObject[_]): jqueryLib.JQueryNs.jqXHR[_] = js.native
   /**
-       * Load data from the server using a HTTP GET request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param data A plain object or string that is sent to the server with the request.
-       * @param success A callback function that is executed if the request succeeds. Required if `dataType` is provided,
-       *                but you can use `null` or \`{@link noop jQuery.noop}\` as a placeholder.
-       * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
-       * @see \`{@link https://api.jquery.com/jQuery.get/ }\`
-       * @since 1.0
-       */
+    * Load data from the server using a HTTP GET request.
+    * @param url A string containing the URL to which the request is sent.
+    * @param data A plain object or string that is sent to the server with the request.
+    * @param success A callback function that is executed if the request succeeds. Required if `dataType` is provided,
+    *                but you can use `null` or \`{@link noop jQuery.noop}\` as a placeholder.
+    * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
+    * @see \`{@link https://api.jquery.com/jQuery.get/ }\`
+    * @since 1.0
+    */
   def get(
     url: java.lang.String,
     data: jqueryLib.JQueryNs.PlainObject[_],
     success: jqueryLib.JQueryNs.jqXHRNs.DoneCallback[_, jqueryLib.JQueryNs.jqXHR[_]]
   ): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load data from the server using a HTTP GET request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param data A plain object or string that is sent to the server with the request.
-       * @param success A callback function that is executed if the request succeeds. Required if `dataType` is provided,
-       *                but you can use `null` or \`{@link noop jQuery.noop}\` as a placeholder.
-       * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
-       * @see \`{@link https://api.jquery.com/jQuery.get/ }\`
-       * @since 1.0
-       */
   def get(
     url: java.lang.String,
     data: jqueryLib.JQueryNs.PlainObject[_],
     success: jqueryLib.JQueryNs.jqXHRNs.DoneCallback[_, jqueryLib.JQueryNs.jqXHR[_]],
     dataType: java.lang.String
   ): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load data from the server using a HTTP GET request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param data A plain object or string that is sent to the server with the request.
-       * @param success A callback function that is executed if the request succeeds. Required if `dataType` is provided,
-       *                but you can use `null` or \`{@link noop jQuery.noop}\` as a placeholder.
-       * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
-       * @see \`{@link https://api.jquery.com/jQuery.get/ }\`
-       * @since 1.0
-       */
   def get(
     url: java.lang.String,
     data: jqueryLib.JQueryNs.PlainObject[_],
@@ -2598,91 +1710,74 @@ trait JQueryStatic extends js.Object {
     dataType: java.lang.String
   ): jqueryLib.JQueryNs.jqXHR[_] = js.native
   /**
-       * Load data from the server using a HTTP GET request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param success_data _&#x40;param_ `success_data`
-       * <br>
-       * * `success` — A callback function that is executed if the request succeeds. Required if `dataType` is provided,
-       *               but you can use `null` or \`{@link noop jQuery.noop}\` as a placeholder. <br>
-       * * `data` — A plain object or string that is sent to the server with the request.
-       * @see \`{@link https://api.jquery.com/jQuery.get/ }\`
-       * @since 1.0
-       * @example ​ ````Request the test.php page and send some additional data along (while still ignoring the return results).
+    * Load data from the server using a HTTP GET request.
+    * @param url A string containing the URL to which the request is sent.
+    * @param success_data _&#x40;param_ `success_data`
+    * <br>
+    * * `success` — A callback function that is executed if the request succeeds. Required if `dataType` is provided,
+    *               but you can use `null` or \`{@link noop jQuery.noop}\` as a placeholder. <br>
+    * * `data` — A plain object or string that is sent to the server with the request.
+    * @see \`{@link https://api.jquery.com/jQuery.get/ }\`
+    * @since 1.0
+    * @example ​ ````Request the test.php page and send some additional data along (while still ignoring the return results).
   ```javascript
   $.get( "test.php", { name: "John", time: "2pm" } );
   ```
-       * @example ​ ````Pass arrays of data to the server (while still ignoring the return results).
+    * @example ​ ````Pass arrays of data to the server (while still ignoring the return results).
   ```javascript
   $.get( "test.php", { "choices[]": ["Jon", "Susan"] } );
   ```
-       * @example ​ ````Alert the results from requesting test.php (HTML or XML, depending on what was returned).
+    * @example ​ ````Alert the results from requesting test.php (HTML or XML, depending on what was returned).
   ```javascript
   $.get( "test.php", function( data ) {
     alert( "Data Loaded: " + data );
   });
   ```
-       * @example ​ ````Alert the results from requesting test.cgi with an additional payload of data (HTML or XML, depending on what was returned).
+    * @example ​ ````Alert the results from requesting test.cgi with an additional payload of data (HTML or XML, depending on what was returned).
   ```javascript
   $.get( "test.cgi", { name: "John", time: "2pm" } )
     .done(function( data ) {
-      alert( "Data Loaded: " + data );
+    alert( "Data Loaded: " + data );
     });
   ```
-       */
+    */
   def get(
     url: java.lang.String,
     success_data: jqueryLib.JQueryNs.jqXHRNs.DoneCallback[_, jqueryLib.JQueryNs.jqXHR[_]]
   ): jqueryLib.JQueryNs.jqXHR[_] = js.native
   /**
-       * Load data from the server using a HTTP GET request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param success A callback function that is executed if the request succeeds. Required if `dataType` is provided,
-       *                but you can use `null` or \`{@link noop jQuery.noop}\` as a placeholder.
-       * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
-       * @see \`{@link https://api.jquery.com/jQuery.get/ }\`
-       * @since 1.0
-       * @example ​ ````Get the test.php page contents, which has been returned in json format (&lt;?php echo json_encode( array( &quot;name&quot;=&gt;&quot;John&quot;,&quot;time&quot;=&gt;&quot;2pm&quot; ) ); ?&gt;), and add it to the page.
+    * Load data from the server using a HTTP GET request.
+    * @param url A string containing the URL to which the request is sent.
+    * @param success A callback function that is executed if the request succeeds. Required if `dataType` is provided,
+    *                but you can use `null` or \`{@link noop jQuery.noop}\` as a placeholder.
+    * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
+    * @see \`{@link https://api.jquery.com/jQuery.get/ }\`
+    * @since 1.0
+    * @example ​ ````Get the test.php page contents, which has been returned in json format (&lt;?php echo json_encode( array( &quot;name&quot;=&gt;&quot;John&quot;,&quot;time&quot;=&gt;&quot;2pm&quot; ) ); ?&gt;), and add it to the page.
   ```javascript
   $.get( "test.php", function( data ) {
     $( "body" )
-      .append( "Name: " + data.name ) // John
-      .append( "Time: " + data.time ); //  2pm
+    .append( "Name: " + data.name ) // John
+    .append( "Time: " + data.time ); //  2pm
   }, "json" );
   ```
-       */
+    */
   def get(
     url: java.lang.String,
     success: jqueryLib.JQueryNs.jqXHRNs.DoneCallback[_, jqueryLib.JQueryNs.jqXHR[_]],
     dataType: java.lang.String
   ): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load data from the server using a HTTP GET request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param success A callback function that is executed if the request succeeds. Required if `dataType` is provided,
-       *                but you can use `null` or \`{@link noop jQuery.noop}\` as a placeholder.
-       * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
-       * @see \`{@link https://api.jquery.com/jQuery.get/ }\`
-       * @since 1.0
-       * @example ​ ````Get the test.php page contents, which has been returned in json format (&lt;?php echo json_encode( array( &quot;name&quot;=&gt;&quot;John&quot;,&quot;time&quot;=&gt;&quot;2pm&quot; ) ); ?&gt;), and add it to the page.
-  ```javascript
-  $.get( "test.php", function( data ) {
-    $( "body" )
-      .append( "Name: " + data.name ) // John
-      .append( "Time: " + data.time ); //  2pm
-  }, "json" );
-  ```
-       */
   def get(url: java.lang.String, success: scala.Null, dataType: java.lang.String): jqueryLib.JQueryNs.jqXHR[_] = js.native
   /**
-       * Load JSON-encoded data from the server using a GET HTTP request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param success_data _&#x40;param_ `url_settings`
-       * <br>
-       * * `success` — A callback function that is executed if the request succeeds. <br>
-       * * `data` — A plain object or string that is sent to the server with the request.
-       * @see \`{@link https://api.jquery.com/jQuery.getJSON/ }\`
-       * @since 1.0
-       * @example ​ ````Loads the four most recent pictures of Mount Rainier from the Flickr JSONP API.
+    * Load JSON-encoded data from the server using a GET HTTP request.
+    * @param url A string containing the URL to which the request is sent.
+    * @param success_data _&#x40;param_ `url_settings`
+    * <br>
+    * * `success` — A callback function that is executed if the request succeeds. <br>
+    * * `data` — A plain object or string that is sent to the server with the request.
+    * @see \`{@link https://api.jquery.com/jQuery.getJSON/ }\`
+    * @since 1.0
+    * @example ​ ````Loads the four most recent pictures of Mount Rainier from the Flickr JSONP API.
   ```html
   <!doctype html>
   <html lang="en">
@@ -2691,8 +1786,8 @@ trait JQueryStatic extends js.Object {
     <title>jQuery.getJSON demo</title>
     <style>
     img {
-      height: 100px;
-      float: left;
+    height: 100px;
+    float: left;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -2705,305 +1800,90 @@ trait JQueryStatic extends js.Object {
   (function() {
     var flickerAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
     $.getJSON( flickerAPI, {
-      tags: "mount rainier",
-      tagmode: "any",
-      format: "json"
+    tags: "mount rainier",
+    tagmode: "any",
+    format: "json"
     })
-      .done(function( data ) {
-        $.each( data.items, function( i, item ) {
-          $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
-          if ( i === 3 ) {
-            return false;
-          }
-        });
-      });
+    .done(function( data ) {
+    $.each( data.items, function( i, item ) {
+    $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
+    if ( i === 3 ) {
+    return false;
+    }
+    });
+    });
   })();
   </script>
   ​
   </body>
   </html>
   ```
-       * @example ​ ````Load the JSON data from test.js and access a name from the returned JSON data.
+    * @example ​ ````Load the JSON data from test.js and access a name from the returned JSON data.
   ```javascript
   $.getJSON( "test.js", function( json ) {
     console.log( "JSON Data: " + json.users[ 3 ].name );
-   });
-   ```
-       * @example ​ ````Load the JSON data from test.js, passing along additional data, and access a name from the returned JSON data.
-        If an error occurs, log an error message instead.
+    });
+    ```
+    * @example ​ ````Load the JSON data from test.js, passing along additional data, and access a name from the returned JSON data.
+    If an error occurs, log an error message instead.
   ```javascript
   $.getJSON( "test.js", { name: "John", time: "2pm" } )
     .done(function( json ) {
-      console.log( "JSON Data: " + json.users[ 3 ].name );
+    console.log( "JSON Data: " + json.users[ 3 ].name );
     })
     .fail(function( jqxhr, textStatus, error ) {
-      var err = textStatus + ", " + error;
-      console.log( "Request Failed: " + err );
+    var err = textStatus + ", " + error;
+    console.log( "Request Failed: " + err );
   });
   ```
-       */
+    */
   def getJSON(url: java.lang.String): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load JSON-encoded data from the server using a GET HTTP request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param data A plain object or string that is sent to the server with the request.
-       * @param success A callback function that is executed if the request succeeds.
-       * @see \`{@link https://api.jquery.com/jQuery.getJSON/ }\`
-       * @since 1.0
-       */
   def getJSON(
     url: java.lang.String,
     data: java.lang.String,
     success: jqueryLib.JQueryNs.jqXHRNs.DoneCallback[_, jqueryLib.JQueryNs.jqXHR[_]]
   ): jqueryLib.JQueryNs.jqXHR[_] = js.native
   /**
-       * Load JSON-encoded data from the server using a GET HTTP request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param data A plain object or string that is sent to the server with the request.
-       * @param success A callback function that is executed if the request succeeds.
-       * @see \`{@link https://api.jquery.com/jQuery.getJSON/ }\`
-       * @since 1.0
-       */
+    * Load JSON-encoded data from the server using a GET HTTP request.
+    * @param url A string containing the URL to which the request is sent.
+    * @param data A plain object or string that is sent to the server with the request.
+    * @param success A callback function that is executed if the request succeeds.
+    * @see \`{@link https://api.jquery.com/jQuery.getJSON/ }\`
+    * @since 1.0
+    */
   def getJSON(
     url: java.lang.String,
     data: jqueryLib.JQueryNs.PlainObject[_],
     success: jqueryLib.JQueryNs.jqXHRNs.DoneCallback[_, jqueryLib.JQueryNs.jqXHR[_]]
   ): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load JSON-encoded data from the server using a GET HTTP request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param success_data _&#x40;param_ `url_settings`
-       * <br>
-       * * `success` — A callback function that is executed if the request succeeds. <br>
-       * * `data` — A plain object or string that is sent to the server with the request.
-       * @see \`{@link https://api.jquery.com/jQuery.getJSON/ }\`
-       * @since 1.0
-       * @example ​ ````Loads the four most recent pictures of Mount Rainier from the Flickr JSONP API.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.getJSON demo</title>
-    <style>
-    img {
-      height: 100px;
-      float: left;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div id="images"></div>
-  ​
-  <script>
-  (function() {
-    var flickerAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
-    $.getJSON( flickerAPI, {
-      tags: "mount rainier",
-      tagmode: "any",
-      format: "json"
-    })
-      .done(function( data ) {
-        $.each( data.items, function( i, item ) {
-          $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
-          if ( i === 3 ) {
-            return false;
-          }
-        });
-      });
-  })();
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````Load the JSON data from test.js and access a name from the returned JSON data.
-  ```javascript
-  $.getJSON( "test.js", function( json ) {
-    console.log( "JSON Data: " + json.users[ 3 ].name );
-   });
-   ```
-       * @example ​ ````Load the JSON data from test.js, passing along additional data, and access a name from the returned JSON data.
-        If an error occurs, log an error message instead.
-  ```javascript
-  $.getJSON( "test.js", { name: "John", time: "2pm" } )
-    .done(function( json ) {
-      console.log( "JSON Data: " + json.users[ 3 ].name );
-    })
-    .fail(function( jqxhr, textStatus, error ) {
-      var err = textStatus + ", " + error;
-      console.log( "Request Failed: " + err );
-  });
-  ```
-       */
   def getJSON(url: java.lang.String, success_data: java.lang.String): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load JSON-encoded data from the server using a GET HTTP request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param success_data _&#x40;param_ `url_settings`
-       * <br>
-       * * `success` — A callback function that is executed if the request succeeds. <br>
-       * * `data` — A plain object or string that is sent to the server with the request.
-       * @see \`{@link https://api.jquery.com/jQuery.getJSON/ }\`
-       * @since 1.0
-       * @example ​ ````Loads the four most recent pictures of Mount Rainier from the Flickr JSONP API.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.getJSON demo</title>
-    <style>
-    img {
-      height: 100px;
-      float: left;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div id="images"></div>
-  ​
-  <script>
-  (function() {
-    var flickerAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
-    $.getJSON( flickerAPI, {
-      tags: "mount rainier",
-      tagmode: "any",
-      format: "json"
-    })
-      .done(function( data ) {
-        $.each( data.items, function( i, item ) {
-          $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
-          if ( i === 3 ) {
-            return false;
-          }
-        });
-      });
-  })();
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````Load the JSON data from test.js and access a name from the returned JSON data.
-  ```javascript
-  $.getJSON( "test.js", function( json ) {
-    console.log( "JSON Data: " + json.users[ 3 ].name );
-   });
-   ```
-       * @example ​ ````Load the JSON data from test.js, passing along additional data, and access a name from the returned JSON data.
-        If an error occurs, log an error message instead.
-  ```javascript
-  $.getJSON( "test.js", { name: "John", time: "2pm" } )
-    .done(function( json ) {
-      console.log( "JSON Data: " + json.users[ 3 ].name );
-    })
-    .fail(function( jqxhr, textStatus, error ) {
-      var err = textStatus + ", " + error;
-      console.log( "Request Failed: " + err );
-  });
-  ```
-       */
   def getJSON(url: java.lang.String, success_data: jqueryLib.JQueryNs.PlainObject[_]): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load JSON-encoded data from the server using a GET HTTP request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param success_data _&#x40;param_ `url_settings`
-       * <br>
-       * * `success` — A callback function that is executed if the request succeeds. <br>
-       * * `data` — A plain object or string that is sent to the server with the request.
-       * @see \`{@link https://api.jquery.com/jQuery.getJSON/ }\`
-       * @since 1.0
-       * @example ​ ````Loads the four most recent pictures of Mount Rainier from the Flickr JSONP API.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.getJSON demo</title>
-    <style>
-    img {
-      height: 100px;
-      float: left;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div id="images"></div>
-  ​
-  <script>
-  (function() {
-    var flickerAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
-    $.getJSON( flickerAPI, {
-      tags: "mount rainier",
-      tagmode: "any",
-      format: "json"
-    })
-      .done(function( data ) {
-        $.each( data.items, function( i, item ) {
-          $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
-          if ( i === 3 ) {
-            return false;
-          }
-        });
-      });
-  })();
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````Load the JSON data from test.js and access a name from the returned JSON data.
-  ```javascript
-  $.getJSON( "test.js", function( json ) {
-    console.log( "JSON Data: " + json.users[ 3 ].name );
-   });
-   ```
-       * @example ​ ````Load the JSON data from test.js, passing along additional data, and access a name from the returned JSON data.
-        If an error occurs, log an error message instead.
-  ```javascript
-  $.getJSON( "test.js", { name: "John", time: "2pm" } )
-    .done(function( json ) {
-      console.log( "JSON Data: " + json.users[ 3 ].name );
-    })
-    .fail(function( jqxhr, textStatus, error ) {
-      var err = textStatus + ", " + error;
-      console.log( "Request Failed: " + err );
-  });
-  ```
-       */
   def getJSON(
     url: java.lang.String,
     success_data: jqueryLib.JQueryNs.jqXHRNs.DoneCallback[_, jqueryLib.JQueryNs.jqXHR[_]]
   ): jqueryLib.JQueryNs.jqXHR[_] = js.native
   /**
-       * Load a JavaScript file from the server using a GET HTTP request, then execute it.
-       * @see \`{@link https://api.jquery.com/jQuery.getScript/ }\`
-       * @since 1.12
-       * @since 2.2
-       */
+    * Load a JavaScript file from the server using a GET HTTP request, then execute it.
+    * @see \`{@link https://api.jquery.com/jQuery.getScript/ }\`
+    * @since 1.12
+    * @since 2.2
+    */
   def getScript(options: jqueryLib.JQueryNs.UrlAjaxSettings[_]): jqueryLib.JQueryNs.jqXHR[js.UndefOr[java.lang.String]] = js.native
   /**
-       * Load a JavaScript file from the server using a GET HTTP request, then execute it.
-       * @param url A string containing the URL to which the request is sent.
-       * @param success A callback function that is executed if the request succeeds.
-       * @see \`{@link https://api.jquery.com/jQuery.getScript/ }\`
-       * @since 1.0
-       * @example ​ ````Define a $.cachedScript() method that allows fetching a cached script:
+    * Load a JavaScript file from the server using a GET HTTP request, then execute it.
+    * @param url A string containing the URL to which the request is sent.
+    * @param success A callback function that is executed if the request succeeds.
+    * @see \`{@link https://api.jquery.com/jQuery.getScript/ }\`
+    * @since 1.0
+    * @example ​ ````Define a $.cachedScript() method that allows fetching a cached script:
   ```javascript
   jQuery.cachedScript = function( url, options ) {
   ​
     // Allow user to set any option except for dataType, cache, and url
     options = $.extend( options || {}, {
-      dataType: "script",
-      cache: true,
-      url: url
+    dataType: "script",
+    cache: true,
+    url: url
     });
   ​
     // Use $.ajax() since it is more flexible than $.getScript
@@ -3016,7 +1896,7 @@ trait JQueryStatic extends js.Object {
     console.log( textStatus );
   });
   ```
-       * @example ​ ````Load the official jQuery Color Animation plugin dynamically and bind some color animations to occur once the new functionality is loaded.
+    * @example ​ ````Load the official jQuery Color Animation plugin dynamically and bind some color animations to occur once the new functionality is loaded.
   ```html
   <!doctype html>
   <html lang="en">
@@ -3025,10 +1905,10 @@ trait JQueryStatic extends js.Object {
     <title>jQuery.getScript demo</title>
     <style>
     .block {
-       background-color: blue;
-       width: 150px;
-       height: 70px;
-       margin: 10px;
+    background-color: blue;
+    width: 150px;
+    height: 70px;
+    margin: 10px;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -3042,18 +1922,18 @@ trait JQueryStatic extends js.Object {
   var url = "https://code.jquery.com/color/jquery.color.js";
   $.getScript( url, function() {
     $( "#go" ).click(function() {
-      $( ".block" )
-        .animate({
-          backgroundColor: "rgb(255, 180, 180)"
-        }, 1000 )
-        .delay( 500 )
-        .animate({
-          backgroundColor: "olive"
-        }, 1000 )
-        .delay( 500 )
-        .animate({
-          backgroundColor: "#00f"
-        }, 1000 );
+    $( ".block" )
+    .animate({
+    backgroundColor: "rgb(255, 180, 180)"
+    }, 1000 )
+    .delay( 500 )
+    .animate({
+    backgroundColor: "olive"
+    }, 1000 )
+    .delay( 500 )
+    .animate({
+    backgroundColor: "#00f"
+    }, 1000 );
     });
   });
   </script>
@@ -3061,81 +1941,8 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def getScript(url: java.lang.String): jqueryLib.JQueryNs.jqXHR[js.UndefOr[java.lang.String]] = js.native
-  /**
-       * Load a JavaScript file from the server using a GET HTTP request, then execute it.
-       * @param url A string containing the URL to which the request is sent.
-       * @param success A callback function that is executed if the request succeeds.
-       * @see \`{@link https://api.jquery.com/jQuery.getScript/ }\`
-       * @since 1.0
-       * @example ​ ````Define a $.cachedScript() method that allows fetching a cached script:
-  ```javascript
-  jQuery.cachedScript = function( url, options ) {
-  ​
-    // Allow user to set any option except for dataType, cache, and url
-    options = $.extend( options || {}, {
-      dataType: "script",
-      cache: true,
-      url: url
-    });
-  ​
-    // Use $.ajax() since it is more flexible than $.getScript
-    // Return the jqXHR object so we can chain callbacks
-    return jQuery.ajax( options );
-  };
-  ​
-  // Usage
-  $.cachedScript( "ajax/test.js" ).done(function( script, textStatus ) {
-    console.log( textStatus );
-  });
-  ```
-       * @example ​ ````Load the official jQuery Color Animation plugin dynamically and bind some color animations to occur once the new functionality is loaded.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.getScript demo</title>
-    <style>
-    .block {
-       background-color: blue;
-       width: 150px;
-       height: 70px;
-       margin: 10px;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <button id="go">&raquo; Run</button>
-  <div class="block"></div>
-  ​
-  <script>
-  var url = "https://code.jquery.com/color/jquery.color.js";
-  $.getScript( url, function() {
-    $( "#go" ).click(function() {
-      $( ".block" )
-        .animate({
-          backgroundColor: "rgb(255, 180, 180)"
-        }, 1000 )
-        .delay( 500 )
-        .animate({
-          backgroundColor: "olive"
-        }, 1000 )
-        .delay( 500 )
-        .animate({
-          backgroundColor: "#00f"
-        }, 1000 );
-    });
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def getScript(
     url: java.lang.String,
     success: jqueryLib.JQueryNs.jqXHRNs.DoneCallback[
@@ -3144,11 +1951,11 @@ trait JQueryStatic extends js.Object {
     ]
   ): jqueryLib.JQueryNs.jqXHR[js.UndefOr[java.lang.String]] = js.native
   /**
-       * Execute some JavaScript code globally.
-       * @param code The JavaScript code to execute.
-       * @see \`{@link https://api.jquery.com/jQuery.globalEval/ }\`
-       * @since 1.0.4
-       * @example ​ ````Execute a script in the global context.
+    * Execute some JavaScript code globally.
+    * @param code The JavaScript code to execute.
+    * @see \`{@link https://api.jquery.com/jQuery.globalEval/ }\`
+    * @since 1.0.4
+    * @example ​ ````Execute a script in the global context.
   ```javascript
   function test() {
     jQuery.globalEval( "var newVar = true;" )
@@ -3156,20 +1963,20 @@ trait JQueryStatic extends js.Object {
   test();
   // newVar === true
   ```
-       */
+    */
   def globalEval(code: java.lang.String): scala.Unit = js.native
   /**
-       * Finds the elements of an array which satisfy a filter function. The original array is not affected.
-       * @param array The array-like object to search through.
-       * @param funсtion The function to process each item against. The first argument to the function is the item, and the
-       *                 second argument is the index. The function should return a Boolean value. `this` will be the global
-       *                 window object.
-       * @param invert If "invert" is false, or not provided, then the function returns an array consisting of all elements
-       *               for which "callback" returns true. If "invert" is true, then the function returns an array
-       *               consisting of all elements for which "callback" returns false.
-       * @see \`{@link https://api.jquery.com/jQuery.grep/ }\`
-       * @since 1.0
-       * @example ​ ````Filters the original array of numbers leaving that are not 5 and have an index greater than 4.  Then it removes all 9s.
+    * Finds the elements of an array which satisfy a filter function. The original array is not affected.
+    * @param array The array-like object to search through.
+    * @param funсtion The function to process each item against. The first argument to the function is the item, and the
+    *                 second argument is the index. The function should return a Boolean value. `this` will be the global
+    *                 window object.
+    * @param invert If "invert" is false, or not provided, then the function returns an array consisting of all elements
+    *               for which "callback" returns true. If "invert" is true, then the function returns an array
+    *               consisting of all elements for which "callback" returns false.
+    * @see \`{@link https://api.jquery.com/jQuery.grep/ }\`
+    * @since 1.0
+    * @example ​ ````Filters the original array of numbers leaving that are not 5 and have an index greater than 4.  Then it removes all 9s.
   ```html
   <!doctype html>
   <html lang="en">
@@ -3178,14 +1985,14 @@ trait JQueryStatic extends js.Object {
     <title>jQuery.grep demo</title>
     <style>
     div {
-      color: blue;
+    color: blue;
     }
     p {
-      color: green;
-      margin: 0;
+    color: green;
+    margin: 0;
     }
     span {
-      color: red;
+    color: red;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -3215,184 +2022,36 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Filter an array of numbers to include only numbers bigger then zero.
+    * @example ​ ````Filter an array of numbers to include only numbers bigger then zero.
   ```javascript
   $.grep( [ 0, 1, 2 ], function( n, i ) {
     return n > 0;
   });
   ```
-       * @example ​ ````Filter an array of numbers to include numbers that are not bigger than zero.
+    * @example ​ ````Filter an array of numbers to include numbers that are not bigger than zero.
   ```javascript
   $.grep( [ 0, 1, 2 ], function( n, i ) {
-      return n > 0;
+    return n > 0;
   }, true );
   ```
-       */
+    */
   def grep[T](
     array: stdLib.ArrayLike[T],
     funсtion: js.Function2[/* elementOfArray */ T, /* indexInArray */ scala.Double, scala.Boolean]
   ): js.Array[T] = js.native
-  /**
-       * Finds the elements of an array which satisfy a filter function. The original array is not affected.
-       * @param array The array-like object to search through.
-       * @param funсtion The function to process each item against. The first argument to the function is the item, and the
-       *                 second argument is the index. The function should return a Boolean value. `this` will be the global
-       *                 window object.
-       * @param invert If "invert" is false, or not provided, then the function returns an array consisting of all elements
-       *               for which "callback" returns true. If "invert" is true, then the function returns an array
-       *               consisting of all elements for which "callback" returns false.
-       * @see \`{@link https://api.jquery.com/jQuery.grep/ }\`
-       * @since 1.0
-       * @example ​ ````Filters the original array of numbers leaving that are not 5 and have an index greater than 4.  Then it removes all 9s.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.grep demo</title>
-    <style>
-    div {
-      color: blue;
-    }
-    p {
-      color: green;
-      margin: 0;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div></div>
-  <p></p>
-  <span></span>
-  ​
-  <script>
-  var arr = [ 1, 9, 3, 8, 6, 1, 5, 9, 4, 7, 3, 8, 6, 9, 1 ];
-  $( "div" ).text( arr.join( ", " ) );
-  ​
-  arr = jQuery.grep(arr, function( n, i ) {
-    return ( n !== 5 && i > 4 );
-  });
-  $( "p" ).text( arr.join( ", " ) );
-  ​
-  arr = jQuery.grep(arr, function( a ) {
-    return a !== 9;
-  });
-  ​
-  $( "span" ).text( arr.join( ", " ) );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````Filter an array of numbers to include only numbers bigger then zero.
-  ```javascript
-  $.grep( [ 0, 1, 2 ], function( n, i ) {
-    return n > 0;
-  });
-  ```
-       * @example ​ ````Filter an array of numbers to include numbers that are not bigger than zero.
-  ```javascript
-  $.grep( [ 0, 1, 2 ], function( n, i ) {
-      return n > 0;
-  }, true );
-  ```
-       */
   def grep[T](
     array: stdLib.ArrayLike[T],
     funсtion: js.Function2[/* elementOfArray */ T, /* indexInArray */ scala.Double, scala.Boolean],
     invert: scala.Boolean
   ): js.Array[T] = js.native
-  /**
-       * Determine whether an element has any jQuery data associated with it.
-       * @param element A DOM element to be checked for data.
-       * @see \`{@link https://api.jquery.com/jQuery.hasData/ }\`
-       * @since 1.5
-       * @example ​ ````Set data on an element and see the results of hasData.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.hasData demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>Results: </p>
-  ​
-  <script>
-  var $p = jQuery( "p" ), p = $p[ 0 ];
-  $p.append( jQuery.hasData( p ) + " " ); // false
-  ​
-  $.data( p, "testing", 123 );
-  $p.append( jQuery.hasData( p ) + " " ); // true
-  ​
-  $.removeData( p, "testing" );
-  $p.append( jQuery.hasData( p ) + " " ); // false
-  ​
-  $p.on( "click", function() {} );
-  $p.append( jQuery.hasData( p ) + " " ); // true
-  ​
-  $p.off( "click" );
-  $p.append( jQuery.hasData( p ) + " " ); // false
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def hasData(element: jqueryLib.JQueryNs.PlainObject[_]): scala.Boolean = js.native
-  /**
-       * Determine whether an element has any jQuery data associated with it.
-       * @param element A DOM element to be checked for data.
-       * @see \`{@link https://api.jquery.com/jQuery.hasData/ }\`
-       * @since 1.5
-       * @example ​ ````Set data on an element and see the results of hasData.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.hasData demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>Results: </p>
-  ​
-  <script>
-  var $p = jQuery( "p" ), p = $p[ 0 ];
-  $p.append( jQuery.hasData( p ) + " " ); // false
-  ​
-  $.data( p, "testing", 123 );
-  $p.append( jQuery.hasData( p ) + " " ); // true
-  ​
-  $.removeData( p, "testing" );
-  $p.append( jQuery.hasData( p ) + " " ); // false
-  ​
-  $p.on( "click", function() {} );
-  $p.append( jQuery.hasData( p ) + " " ); // true
-  ​
-  $p.off( "click" );
-  $p.append( jQuery.hasData( p ) + " " ); // false
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def hasData(element: stdLib.Document): scala.Boolean = js.native
   /**
-       * Determine whether an element has any jQuery data associated with it.
-       * @param element A DOM element to be checked for data.
-       * @see \`{@link https://api.jquery.com/jQuery.hasData/ }\`
-       * @since 1.5
-       * @example ​ ````Set data on an element and see the results of hasData.
+    * Determine whether an element has any jQuery data associated with it.
+    * @param element A DOM element to be checked for data.
+    * @see \`{@link https://api.jquery.com/jQuery.hasData/ }\`
+    * @since 1.5
+    * @example ​ ````Set data on an element and see the results of hasData.
   ```html
   <!doctype html>
   <html lang="en">
@@ -3425,83 +2084,44 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def hasData(element: stdLib.Element): scala.Boolean = js.native
-  /**
-       * Determine whether an element has any jQuery data associated with it.
-       * @param element A DOM element to be checked for data.
-       * @see \`{@link https://api.jquery.com/jQuery.hasData/ }\`
-       * @since 1.5
-       * @example ​ ````Set data on an element and see the results of hasData.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.hasData demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <p>Results: </p>
-  ​
-  <script>
-  var $p = jQuery( "p" ), p = $p[ 0 ];
-  $p.append( jQuery.hasData( p ) + " " ); // false
-  ​
-  $.data( p, "testing", 123 );
-  $p.append( jQuery.hasData( p ) + " " ); // true
-  ​
-  $.removeData( p, "testing" );
-  $p.append( jQuery.hasData( p ) + " " ); // false
-  ​
-  $p.on( "click", function() {} );
-  $p.append( jQuery.hasData( p ) + " " ); // true
-  ​
-  $p.off( "click" );
-  $p.append( jQuery.hasData( p ) + " " ); // false
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def hasData(element: stdLib.Window): scala.Boolean = js.native
   /**
-       * Holds or releases the execution of jQuery's ready event.
-       * @param hold Indicates whether the ready hold is being requested or released
-       * @see \`{@link https://api.jquery.com/jQuery.holdReady/ }\`
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.2. See \`{@link https://github.com/jquery/jquery/issues/3288 }\`.
-       *
-       * **Cause**: The `jQuery.holdReady()` method has been deprecated due to its detrimental effect on the global performance of the page. This method can prevent all the code on the page from initializing for extended lengths of time.
-       *
-       * **Solution**: Rewrite the page so that it does not require all jQuery ready handlers to be delayed. This might be accomplished, for example, by late-loading only the code that requires the delay when it is safe to run. Due to the complexity of this method, jQuery Migrate does not attempt to fill the functionality. If the underlying version of jQuery used with jQuery Migrate no longer contains `jQuery.holdReady()` the code will fail shortly after this warning appears.
-       * @example ​ ````Delay the ready event until a custom plugin has loaded.
+    * Holds or releases the execution of jQuery's ready event.
+    * @param hold Indicates whether the ready hold is being requested or released
+    * @see \`{@link https://api.jquery.com/jQuery.holdReady/ }\`
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.2. See \`{@link https://github.com/jquery/jquery/issues/3288 }\`.
+    *
+    * **Cause**: The `jQuery.holdReady()` method has been deprecated due to its detrimental effect on the global performance of the page. This method can prevent all the code on the page from initializing for extended lengths of time.
+    *
+    * **Solution**: Rewrite the page so that it does not require all jQuery ready handlers to be delayed. This might be accomplished, for example, by late-loading only the code that requires the delay when it is safe to run. Due to the complexity of this method, jQuery Migrate does not attempt to fill the functionality. If the underlying version of jQuery used with jQuery Migrate no longer contains `jQuery.holdReady()` the code will fail shortly after this warning appears.
+    * @example ​ ````Delay the ready event until a custom plugin has loaded.
   ```javascript
   $.holdReady( true );
   $.getScript( "myplugin.js", function() {
     $.holdReady( false );
   });
   ```
-       */
+    */
   def holdReady(hold: scala.Boolean): scala.Unit = js.native
   /**
-       * Modify and filter HTML strings passed through jQuery manipulation methods.
-       * @param html The HTML string on which to operate.
-       * @see \`{@link https://api.jquery.com/jQuery.htmlPrefilter/ }\`
-       * @since 1.12
-       * @since 2.2
-       */
+    * Modify and filter HTML strings passed through jQuery manipulation methods.
+    * @param html The HTML string on which to operate.
+    * @see \`{@link https://api.jquery.com/jQuery.htmlPrefilter/ }\`
+    * @since 1.12
+    * @since 2.2
+    */
   def htmlPrefilter(html: jqueryLib.JQueryNs.htmlString): jqueryLib.JQueryNs.htmlString = js.native
   /**
-       * Search for a specified value within an array and return its index (or -1 if not found).
-       * @param value The value to search for.
-       * @param array An array through which to search.
-       * @param fromIndex The index of the array at which to begin the search. The default is 0, which will search the whole array.
-       * @see \`{@link https://api.jquery.com/jQuery.inArray/ }\`
-       * @since 1.2
-       * @example ​ ````Report the index of some elements in the array.
+    * Search for a specified value within an array and return its index (or -1 if not found).
+    * @param value The value to search for.
+    * @param array An array through which to search.
+    * @param fromIndex The index of the array at which to begin the search. The default is 0, which will search the whole array.
+    * @see \`{@link https://api.jquery.com/jQuery.inArray/ }\`
+    * @since 1.2
+    * @example ​ ````Report the index of some elements in the array.
   ```html
   <!doctype html>
   <html lang="en">
@@ -3510,10 +2130,10 @@ trait JQueryStatic extends js.Object {
     <title>jQuery.inArray demo</title>
     <style>
     div {
-      color: blue;
+    color: blue;
     }
     span {
-      color: red;
+    color: red;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -3537,60 +2157,16 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def inArray[T](value: T, array: js.Array[T]): scala.Double = js.native
-  /**
-       * Search for a specified value within an array and return its index (or -1 if not found).
-       * @param value The value to search for.
-       * @param array An array through which to search.
-       * @param fromIndex The index of the array at which to begin the search. The default is 0, which will search the whole array.
-       * @see \`{@link https://api.jquery.com/jQuery.inArray/ }\`
-       * @since 1.2
-       * @example ​ ````Report the index of some elements in the array.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.inArray demo</title>
-    <style>
-    div {
-      color: blue;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div>"John" found at <span></span></div>
-  <div>4 found at <span></span></div>
-  <div>"Karl" not found, so <span></span></div>
-  <div>"Pete" is in the array, but not at or after index 2, so <span></span></div>
-  ​
-  <script>
-  var arr = [ 4, "Pete", 8, "John" ];
-  var $spans = $( "span" );
-  $spans.eq( 0 ).text( jQuery.inArray( "John", arr ) );
-  $spans.eq( 1 ).text( jQuery.inArray( 4, arr ) );
-  $spans.eq( 2 ).text( jQuery.inArray( "Karl", arr ) );
-  $spans.eq( 3 ).text( jQuery.inArray( "Pete", arr, 2 ) );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def inArray[T](value: T, array: js.Array[T], fromIndex: scala.Double): scala.Double = js.native
   /**
-       * Determine whether the argument is an array.
-       * @param obj Object to test whether or not it is an array.
-       * @see \`{@link https://api.jquery.com/jQuery.isArray/ }\`
-       * @since 1.3
-       * @deprecated ​ Deprecated since 3.2. Use \`{@link ArrayConstructor.isArray Array.isArray}\`.
-       * @example ​ ````Finds out if the parameter is an array.
+    * Determine whether the argument is an array.
+    * @param obj Object to test whether or not it is an array.
+    * @see \`{@link https://api.jquery.com/jQuery.isArray/ }\`
+    * @since 1.3
+    * @deprecated ​ Deprecated since 3.2. Use \`{@link ArrayConstructor.isArray Array.isArray}\`.
+    * @example ​ ````Finds out if the parameter is an array.
   ```html
   <!doctype html>
   <html lang="en">
@@ -3610,27 +2186,27 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
-  def isArray(obj: js.Any): /* is Array */scala.Boolean = js.native
+    */
+  def isArray(obj: js.Any): /* is std.Array<any> */ scala.Boolean = js.native
   /**
-       * Check to see if an object is empty (contains no enumerable properties).
-       * @param obj The object that will be checked to see if it's empty.
-       * @see \`{@link https://api.jquery.com/jQuery.isEmptyObject/ }\`
-       * @since 1.4
-       * @example ​ ````Check an object to see if it&#39;s empty.
+    * Check to see if an object is empty (contains no enumerable properties).
+    * @param obj The object that will be checked to see if it's empty.
+    * @see \`{@link https://api.jquery.com/jQuery.isEmptyObject/ }\`
+    * @since 1.4
+    * @example ​ ````Check an object to see if it&#39;s empty.
   ```javascript
   jQuery.isEmptyObject({}); // true
   jQuery.isEmptyObject({ foo: "bar" }); // false
   ```
-       */
+    */
   def isEmptyObject(obj: js.Any): scala.Boolean = js.native
   /**
-       * Determine if the argument passed is a JavaScript function object.
-       * @param obj Object to test whether or not it is a function.
-       * @see \`{@link https://api.jquery.com/jQuery.isFunction/ }\`
-       * @since 1.2
-       * @deprecated ​ Deprecated since 3.3. Use `typeof x === "function"`.
-       * @example ​ ````Test a few parameter examples.
+    * Determine if the argument passed is a JavaScript function object.
+    * @param obj Object to test whether or not it is a function.
+    * @see \`{@link https://api.jquery.com/jQuery.isFunction/ }\`
+    * @since 1.2
+    * @deprecated ​ Deprecated since 3.3. Use `typeof x === "function"`.
+    * @example ​ ````Test a few parameter examples.
   ```html
   <!doctype html>
   <html lang="en">
@@ -3639,12 +2215,12 @@ trait JQueryStatic extends js.Object {
     <title>jQuery.isFunction demo</title>
     <style>
     div {
-      color: blue;
-      margin: 2px;
-      font-size: 14px;
+    color: blue;
+    margin: 2px;
+    font-size: 14px;
     }
     span {
-      color: red;
+    color: red;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -3676,20 +2252,20 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Finds out if the parameter is a function.
+    * @example ​ ````Finds out if the parameter is a function.
   ```javascript
   $.isFunction(function() {});
   ```
-       */
+    */
   // tslint:disable-next-line:ban-types
-  def isFunction(obj: js.Any): /* is Function */scala.Boolean = js.native
+  def isFunction(obj: js.Any): /* is std.Function */ scala.Boolean = js.native
   /**
-       * Determines whether its argument represents a JavaScript number.
-       * @param value The value to be tested.
-       * @see \`{@link https://api.jquery.com/jQuery.isNumeric/ }\`
-       * @since 1.7
-       * @deprecated ​ Deprecated since 3.3. Internal. See \`{@link https://github.com/jquery/jquery/issues/2960 }\`.
-       * @example ​ ````Sample return values of $.isNumeric with various inputs.
+    * Determines whether its argument represents a JavaScript number.
+    * @param value The value to be tested.
+    * @see \`{@link https://api.jquery.com/jQuery.isNumeric/ }\`
+    * @since 1.7
+    * @deprecated ​ Deprecated since 3.3. Internal. See \`{@link https://github.com/jquery/jquery/issues/2960 }\`.
+    * @example ​ ````Sample return values of $.isNumeric with various inputs.
   ```javascript
   // true (numeric)
   $.isNumeric( "-10" )
@@ -3712,31 +2288,31 @@ trait JQueryStatic extends js.Object {
   $.isNumeric( Infinity )
   $.isNumeric( undefined )
   ```
-       */
+    */
   def isNumeric(value: js.Any): scala.Boolean = js.native
   /**
-       * Check to see if an object is a plain object (created using "{}" or "new Object").
-       * @param obj The object that will be checked to see if it's a plain object.
-       * @see \`{@link https://api.jquery.com/jQuery.isPlainObject/ }\`
-       * @since 1.4
-       * @example ​ ````Check an object to see if it&#39;s a plain object.
+    * Check to see if an object is a plain object (created using "{}" or "new Object").
+    * @param obj The object that will be checked to see if it's a plain object.
+    * @see \`{@link https://api.jquery.com/jQuery.isPlainObject/ }\`
+    * @since 1.4
+    * @example ​ ````Check an object to see if it&#39;s a plain object.
   ```javascript
   jQuery.isPlainObject({}) // true
   jQuery.isPlainObject( "test" ) // false
   ```
-       */
+    */
   def isPlainObject(obj: js.Any): scala.Boolean = js.native
   /**
-       * Determine whether the argument is a window.
-       * @param obj Object to test whether or not it is a window.
-       * @see \`{@link https://api.jquery.com/jQuery.isWindow/ }\`
-       * @since 1.4.3
-       * @deprecated ​ Deprecated since 3.3. Internal. See \`{@link https://github.com/jquery/jquery/issues/3629 }\`.
-       *
-       * **Cause**: This method returns `true` if its argument is thought to be a `window` element. It was created for internal use and is not a reliable way of detecting `window` for public needs.
-       *
-       * **Solution**: Remove any use of `jQuery.isWindow()` from code. If it is truly needed it can be replaced with a check for `obj != null && obj === obj.window` which was the test used inside this method.
-       * @example ​ ````Finds out if the parameter is a window.
+    * Determine whether the argument is a window.
+    * @param obj Object to test whether or not it is a window.
+    * @see \`{@link https://api.jquery.com/jQuery.isWindow/ }\`
+    * @since 1.4.3
+    * @deprecated ​ Deprecated since 3.3. Internal. See \`{@link https://github.com/jquery/jquery/issues/3629 }\`.
+    *
+    * **Cause**: This method returns `true` if its argument is thought to be a `window` element. It was created for internal use and is not a reliable way of detecting `window` for public needs.
+    *
+    * **Solution**: Remove any use of `jQuery.isWindow()` from code. If it is truly needed it can be replaced with a check for `obj != null && obj === obj.window` which was the test used inside this method.
+    * @example ​ ````Finds out if the parameter is a window.
   ```html
   <!doctype html>
   <html lang="en">
@@ -3756,26 +2332,26 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
-  def isWindow(obj: js.Any): /* is Window */scala.Boolean = js.native
+    */
+  def isWindow(obj: js.Any): /* is std.Window */ scala.Boolean = js.native
   /**
-       * Check to see if a DOM node is within an XML document (or is an XML document).
-       * @param node The DOM node that will be checked to see if it's in an XML document.
-       * @see \`{@link https://api.jquery.com/jQuery.isXMLDoc/ }\`
-       * @since 1.1.4
-       * @example ​ ````Check an object to see if it&#39;s in an XML document.
+    * Check to see if a DOM node is within an XML document (or is an XML document).
+    * @param node The DOM node that will be checked to see if it's in an XML document.
+    * @see \`{@link https://api.jquery.com/jQuery.isXMLDoc/ }\`
+    * @since 1.1.4
+    * @example ​ ````Check an object to see if it&#39;s in an XML document.
   ```javascript
   jQuery.isXMLDoc( document ) // false
   jQuery.isXMLDoc( document.body ) // false
   ```
-       */
+    */
   def isXMLDoc(node: stdLib.Node): scala.Boolean = js.native
   /**
-       * Convert an array-like object into a true JavaScript array.
-       * @param obj Any object to turn into a native Array.
-       * @see \`{@link https://api.jquery.com/jQuery.makeArray/ }\`
-       * @since 1.2
-       * @example ​ ````Turn a collection of HTMLElements into an Array of them.
+    * Convert an array-like object into a true JavaScript array.
+    * @param obj Any object to turn into a native Array.
+    * @see \`{@link https://api.jquery.com/jQuery.makeArray/ }\`
+    * @since 1.2
+    * @example ​ ````Turn a collection of HTMLElements into an Array of them.
   ```html
   <!doctype html>
   <html lang="en">
@@ -3784,7 +2360,7 @@ trait JQueryStatic extends js.Object {
     <title>jQuery.makeArray demo</title>
     <style>
     div {
-      color: red;
+    color: red;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -3809,22 +2385,22 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Turn a jQuery object into an array
+    * @example ​ ````Turn a jQuery object into an array
   ```javascript
   var obj = $( "li" );
   var arr = $.makeArray( obj );
   ```
-       */
+    */
   def makeArray[T](obj: stdLib.ArrayLike[T]): js.Array[T] = js.native
   /**
-       * Translate all items in an array or object to new array of items.
-       * @param array The Array to translate.
-       * @param callback The function to process each item against. The first argument to the function is the array item, the
-       *                 second argument is the index in array The function can return any value. A returned array will be
-       *                 flattened into the resulting array. Within the function, this refers to the global (window) object.
-       * @see \`{@link https://api.jquery.com/jQuery.map/ }\`
-       * @since 1.0
-       * @example ​ ````Use $.map() to change the values of an array.
+    * Translate all items in an array or object to new array of items.
+    * @param array The Array to translate.
+    * @param callback The function to process each item against. The first argument to the function is the array item, the
+    *                 second argument is the index in array The function can return any value. A returned array will be
+    *                 flattened into the resulting array. Within the function, this refers to the global (window) object.
+    * @see \`{@link https://api.jquery.com/jQuery.map/ }\`
+    * @since 1.0
+    * @example ​ ````Use $.map() to change the values of an array.
   ```html
   <!doctype html>
   <html lang="en">
@@ -3833,14 +2409,14 @@ trait JQueryStatic extends js.Object {
     <title>jQuery.map demo</title>
     <style>
     div {
-      color: blue;
+    color: blue;
     }
     p {
-      color: green;
-      margin: 0;
+    color: green;
+    margin: 0;
     }
     span {
-      color: red;
+    color: red;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -3869,44 +2445,44 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Map the original array to a new one and add 4 to each value.
+    * @example ​ ````Map the original array to a new one and add 4 to each value.
   ```javascript
   $.map( [ 0, 1, 2 ], function( n ) {
     return n + 4;
   });
   ```
-       * @example ​ ````Map the original array to a new one, adding 1 to each value if it is bigger then zero and removing it if not.
+    * @example ​ ````Map the original array to a new one, adding 1 to each value if it is bigger then zero and removing it if not.
   ```javascript
   $.map( [ 0, 1, 2 ], function( n ) {
     return n > 0 ? n + 1 : null;
   });
   ```
-       * @example ​ ````Map the original array to a new one; each element is added with its original value and the value plus one.
+    * @example ​ ````Map the original array to a new one; each element is added with its original value and the value plus one.
   ```javascript
   $.map( [ 0, 1, 2 ], function( n ) {
-      return [ n, n + 1 ];
+    return [ n, n + 1 ];
   });
   ```
-       * @example ​ ````Map the original array to a new one; each element is squared.
+    * @example ​ ````Map the original array to a new one; each element is squared.
   ```javascript
   $.map( [ 0, 1, 2, 3 ], function( a ) {
     return a * a;
   });
   ```
-       * @example ​ ````Map the original array to a new one, removing numbers less than 50 by returning null and subtracting 45 from the rest.
+    * @example ​ ````Map the original array to a new one, removing numbers less than 50 by returning null and subtracting 45 from the rest.
   ```javascript
   $.map( [ 0, 1, 52, 97 ], function( a ) {
     return (a > 50 ? a - 45 : null);
   });
   ```
-       * @example ​ ````Augment the resulting array by returning an array inside the function.
+    * @example ​ ````Augment the resulting array by returning an array inside the function.
   ```javascript
   var array = [ 0, 1, 52, 97 ];
   array = $.map( array, function( a, index ) {
     return [ a - 45, index ];
   });
   ```
-       */
+    */
   def map[T, TReturn](
     array: js.Array[T],
     callback: js.ThisFunction2[
@@ -3917,66 +2493,66 @@ trait JQueryStatic extends js.Object {
     ]
   ): js.Array[TReturn] = js.native
   /**
-       * Translate all items in an array or object to new array of items.
-       * @param obj The Object to translate.
-       * @param callback The function to process each item against. The first argument to the function is the value; the
-       *                 second argument is the key of the object property. The function can return any value to add to the
-       *                 array. A returned array will be flattened into the resulting array. Within the function, this refers
-       *                 to the global (window) object.
-       * @see \`{@link https://api.jquery.com/jQuery.map/ }\`
-       * @since 1.6
-       * @example ​ ````Map the original object to a new array and double each value.
+    * Translate all items in an array or object to new array of items.
+    * @param obj The Object to translate.
+    * @param callback The function to process each item against. The first argument to the function is the value; the
+    *                 second argument is the key of the object property. The function can return any value to add to the
+    *                 array. A returned array will be flattened into the resulting array. Within the function, this refers
+    *                 to the global (window) object.
+    * @see \`{@link https://api.jquery.com/jQuery.map/ }\`
+    * @since 1.6
+    * @example ​ ````Map the original object to a new array and double each value.
   ```javascript
   var dimensions = { width: 10, height: 15, length: 20 };
   dimensions = $.map( dimensions, function( value, index ) {
     return value * 2;
   });
   ```
-       * @example ​ ````Map an object&#39;s keys to an array.
+    * @example ​ ````Map an object&#39;s keys to an array.
   ```javascript
   var dimensions = { width: 10, height: 15, length: 20 };
   var keys = $.map( dimensions, function( value, key ) {
     return key;
   });
   ```
-       */
+    */
   def map[T, K /* <: java.lang.String */, TReturn](
     obj: T,
     callback: js.ThisFunction2[
       /* this */ stdLib.Window, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(K))) *//* propertyOfObject */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[K] */ /* propertyOfObject */ js.Any, 
       /* key */ K, 
       js.UndefOr[jqueryLib.JQueryNs.TypeOrArray[TReturn] | scala.Null]
     ]
   ): js.Array[TReturn] = js.native
   /**
-       * Merge the contents of two arrays together into the first array.
-       * @param first The first array-like object to merge, the elements of second added.
-       * @param second The second array-like object to merge into the first, unaltered.
-       * @see \`{@link https://api.jquery.com/jQuery.merge/ }\`
-       * @since 1.0
-       * @example ​ ````Merges two arrays, altering the first argument.
+    * Merge the contents of two arrays together into the first array.
+    * @param first The first array-like object to merge, the elements of second added.
+    * @param second The second array-like object to merge into the first, unaltered.
+    * @see \`{@link https://api.jquery.com/jQuery.merge/ }\`
+    * @since 1.0
+    * @example ​ ````Merges two arrays, altering the first argument.
   ```javascript
   $.merge( [ 0, 1, 2 ], [ 2, 3, 4 ] )
   ```
-       * @example ​ ````Merges two arrays, altering the first argument.
+    * @example ​ ````Merges two arrays, altering the first argument.
   ```javascript
   $.merge( [ 3, 2, 1 ], [ 4, 3, 2 ] )
   ```
-       * @example ​ ````Merges two arrays, but uses a copy, so the original isn&#39;t altered.
+    * @example ​ ````Merges two arrays, but uses a copy, so the original isn&#39;t altered.
   ```javascript
   var first = [ "a", "b", "c" ];
   var second = [ "d", "e", "f" ];
   $.merge( $.merge( [], first ), second );
   ```
-       */
+    */
   def merge[T, U](first: stdLib.ArrayLike[T], second: stdLib.ArrayLike[U]): js.Array[T | U] = js.native
   /**
-       * Relinquish jQuery's control of the $ variable.
-       * @param removeAll A Boolean indicating whether to remove all jQuery variables from the global scope (including jQuery itself).
-       * @see \`{@link https://api.jquery.com/jQuery.noConflict/ }\`
-       * @since 1.0
-       * @example ​ ````Map the original object that was referenced by $ back to $.
+    * Relinquish jQuery's control of the $ variable.
+    * @param removeAll A Boolean indicating whether to remove all jQuery variables from the global scope (including jQuery itself).
+    * @see \`{@link https://api.jquery.com/jQuery.noConflict/ }\`
+    * @since 1.0
+    * @example ​ ````Map the original object that was referenced by $ back to $.
   ```javascript
   jQuery.noConflict();
   // Do something with jQuery
@@ -3984,18 +2560,18 @@ trait JQueryStatic extends js.Object {
   // Do something with another library's $()
   $( "content" ).style.display = "none";
   ```
-       * @example ​ ````Revert the $ alias and then create and execute a function to provide the $ as a jQuery alias inside the function&#39;s scope. Inside the function the original $ object is not available. This works well for most plugins that don&#39;t rely on any other library.
+    * @example ​ ````Revert the $ alias and then create and execute a function to provide the $ as a jQuery alias inside the function&#39;s scope. Inside the function the original $ object is not available. This works well for most plugins that don&#39;t rely on any other library.
   ```javascript
   jQuery.noConflict();
   (function( $ ) {
     $(function() {
-      // More code using $ as alias to jQuery
+    // More code using $ as alias to jQuery
     });
   })(jQuery);
   ​
   // Other code using $ as an alias to the other library
   ```
-       * @example ​ ````Create a different alias instead of jQuery to use in the rest of the script.
+    * @example ​ ````Create a different alias instead of jQuery to use in the rest of the script.
   ```javascript
   var j = jQuery.noConflict();
   ​
@@ -4005,12 +2581,12 @@ trait JQueryStatic extends js.Object {
   // Do something with another library's $()
   $( "content" ).style.display = "none";
   ```
-       * @example ​ ````Completely move jQuery to a new namespace in another object.
+    * @example ​ ````Completely move jQuery to a new namespace in another object.
   ```javascript
   var dom = {};
   dom.query = jQuery.noConflict( true );
   ```
-       * @example ​ ````Load two versions of jQuery (not recommended). Then, restore jQuery&#39;s globally scoped variables to the first loaded jQuery.
+    * @example ​ ````Load two versions of jQuery (not recommended). Then, restore jQuery&#39;s globally scoped variables to the first loaded jQuery.
   ```html
   <!doctype html>
   <html lang="en">
@@ -4044,392 +2620,42 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def noConflict(): this.type = js.native
-  /**
-       * Relinquish jQuery's control of the $ variable.
-       * @param removeAll A Boolean indicating whether to remove all jQuery variables from the global scope (including jQuery itself).
-       * @see \`{@link https://api.jquery.com/jQuery.noConflict/ }\`
-       * @since 1.0
-       * @example ​ ````Map the original object that was referenced by $ back to $.
-  ```javascript
-  jQuery.noConflict();
-  // Do something with jQuery
-  jQuery( "div p" ).hide();
-  // Do something with another library's $()
-  $( "content" ).style.display = "none";
-  ```
-       * @example ​ ````Revert the $ alias and then create and execute a function to provide the $ as a jQuery alias inside the function&#39;s scope. Inside the function the original $ object is not available. This works well for most plugins that don&#39;t rely on any other library.
-  ```javascript
-  jQuery.noConflict();
-  (function( $ ) {
-    $(function() {
-      // More code using $ as alias to jQuery
-    });
-  })(jQuery);
-  ​
-  // Other code using $ as an alias to the other library
-  ```
-       * @example ​ ````Create a different alias instead of jQuery to use in the rest of the script.
-  ```javascript
-  var j = jQuery.noConflict();
-  ​
-  // Do something with jQuery
-  j( "div p" ).hide();
-  ​
-  // Do something with another library's $()
-  $( "content" ).style.display = "none";
-  ```
-       * @example ​ ````Completely move jQuery to a new namespace in another object.
-  ```javascript
-  var dom = {};
-  dom.query = jQuery.noConflict( true );
-  ```
-       * @example ​ ````Load two versions of jQuery (not recommended). Then, restore jQuery&#39;s globally scoped variables to the first loaded jQuery.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.noConflict demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div id="log">
-    <h3>Before $.noConflict(true)</h3>
-  </div>
-  <script src="https://code.jquery.com/jquery-1.6.2.js"></script>
-  ​
-  <script>
-  var $log = $( "#log" );
-  ​
-  $log.append( "2nd loaded jQuery version ($): " + $.fn.jquery + "<br>" );
-  ​
-  // Restore globally scoped jQuery variables to the first version loaded
-  // (the newer version)
-  ​
-  jq162 = jQuery.noConflict( true );
-  ​
-  $log.append( "<h3>After $.noConflict(true)</h3>" );
-  $log.append( "1st loaded jQuery version ($): " + $.fn.jquery + "<br>" );
-  $log.append( "2nd loaded jQuery version (jq162): " + jq162.fn.jquery + "<br>" );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def noConflict(removeAll: scala.Boolean): this.type = js.native
   /**
-       * @deprecated ​ Deprecated since 3.2.
-       *
-       * **Cause**: This public but never-documented method has been deprecated as of jQuery 3.2.0.
-       *
-       * **Solution**: Replace calls such as `jQuery.nodeName( elem, "div" )` with a test such as `elem.nodeName.toLowerCase() === "div"`.
-       */
+    * @deprecated ​ Deprecated since 3.2.
+    *
+    * **Cause**: This public but never-documented method has been deprecated as of jQuery 3.2.0.
+    *
+    * **Solution**: Replace calls such as `jQuery.nodeName( elem, "div" )` with a test such as `elem.nodeName.toLowerCase() === "div"`.
+    */
   def nodeName(elem: stdLib.Node, name: java.lang.String): scala.Boolean = js.native
   /**
-       * An empty function.
-       * @see \`{@link https://api.jquery.com/jQuery.noop/ }\`
-       * @since 1.4
-       */
+    * An empty function.
+    * @see \`{@link https://api.jquery.com/jQuery.noop/ }\`
+    * @since 1.4
+    */
   def noop(): js.UndefOr[scala.Nothing] = js.native
   /**
-       * Return a number representing the current time.
-       * @see \`{@link https://api.jquery.com/jQuery.now/ }\`
-       * @since 1.4.3
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link DateConstructor.now Date.now}\`.
-       */
+    * Return a number representing the current time.
+    * @see \`{@link https://api.jquery.com/jQuery.now/ }\`
+    * @since 1.4.3
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link DateConstructor.now Date.now}\`.
+    */
   def now(): scala.Double = js.native
-  /**
-       * Create a serialized representation of an array, a plain object, or a jQuery object suitable for use in a URL query string or Ajax request. In case a jQuery object is passed, it should contain input elements with name/value properties.
-       * @param obj An array, a plain object, or a jQuery object to serialize.
-       * @param traditional A Boolean indicating whether to perform a traditional "shallow" serialization.
-       * @see \`{@link https://api.jquery.com/jQuery.param/ }\`
-       * @since 1.2
-       * @since 1.4
-       * @example ​ ````Serialize a key/value object.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.param demo</title>
-    <style>
-    div {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div id="results"></div>
-  ​
-  <script>
-  var params = { width:1680, height:1050 };
-  var str = jQuery.param( params );
-  $( "#results" ).text( str );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````Serialize a few complex objects
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.param demo</title>
-    <style>
-    div {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​​
-  <script>
-  // <=1.3.2:
-  $.param({ a: [ 2, 3, 4 ] }); // "a=2&a=3&a=4"
-  // >=1.4:
-  $.param({ a: [ 2, 3, 4 ] }); // "a[]=2&a[]=3&a[]=4"
-  ​
-  // <=1.3.2:
-  $.param({ a: { b: 1, c: 2 }, d: [ 3, 4, { e: 5 } ] });
-  // "a=[object+Object]&d=3&d=4&d=[object+Object]"
-  ​
-  // >=1.4:
-  $.param({ a: { b: 1, c: 2 }, d: [ 3, 4, { e: 5 } ] });
-  // "a[b]=1&a[c]=2&d[]=3&d[]=4&d[2][e]=5"
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def param(obj: JQuery[stdLib.HTMLElement]): java.lang.String = js.native
-  /**
-       * Create a serialized representation of an array, a plain object, or a jQuery object suitable for use in a URL query string or Ajax request. In case a jQuery object is passed, it should contain input elements with name/value properties.
-       * @param obj An array, a plain object, or a jQuery object to serialize.
-       * @param traditional A Boolean indicating whether to perform a traditional "shallow" serialization.
-       * @see \`{@link https://api.jquery.com/jQuery.param/ }\`
-       * @since 1.2
-       * @since 1.4
-       * @example ​ ````Serialize a key/value object.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.param demo</title>
-    <style>
-    div {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div id="results"></div>
-  ​
-  <script>
-  var params = { width:1680, height:1050 };
-  var str = jQuery.param( params );
-  $( "#results" ).text( str );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````Serialize a few complex objects
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.param demo</title>
-    <style>
-    div {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​​
-  <script>
-  // <=1.3.2:
-  $.param({ a: [ 2, 3, 4 ] }); // "a=2&a=3&a=4"
-  // >=1.4:
-  $.param({ a: [ 2, 3, 4 ] }); // "a[]=2&a[]=3&a[]=4"
-  ​
-  // <=1.3.2:
-  $.param({ a: { b: 1, c: 2 }, d: [ 3, 4, { e: 5 } ] });
-  // "a=[object+Object]&d=3&d=4&d=[object+Object]"
-  ​
-  // >=1.4:
-  $.param({ a: { b: 1, c: 2 }, d: [ 3, 4, { e: 5 } ] });
-  // "a[b]=1&a[c]=2&d[]=3&d[]=4&d[2][e]=5"
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def param(obj: jqueryLib.JQueryNs.PlainObject[_]): java.lang.String = js.native
-  /**
-       * Create a serialized representation of an array, a plain object, or a jQuery object suitable for use in a URL query string or Ajax request. In case a jQuery object is passed, it should contain input elements with name/value properties.
-       * @param obj An array, a plain object, or a jQuery object to serialize.
-       * @param traditional A Boolean indicating whether to perform a traditional "shallow" serialization.
-       * @see \`{@link https://api.jquery.com/jQuery.param/ }\`
-       * @since 1.2
-       * @since 1.4
-       * @example ​ ````Serialize a key/value object.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.param demo</title>
-    <style>
-    div {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div id="results"></div>
-  ​
-  <script>
-  var params = { width:1680, height:1050 };
-  var str = jQuery.param( params );
-  $( "#results" ).text( str );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````Serialize a few complex objects
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.param demo</title>
-    <style>
-    div {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​​
-  <script>
-  // <=1.3.2:
-  $.param({ a: [ 2, 3, 4 ] }); // "a=2&a=3&a=4"
-  // >=1.4:
-  $.param({ a: [ 2, 3, 4 ] }); // "a[]=2&a[]=3&a[]=4"
-  ​
-  // <=1.3.2:
-  $.param({ a: { b: 1, c: 2 }, d: [ 3, 4, { e: 5 } ] });
-  // "a=[object+Object]&d=3&d=4&d=[object+Object]"
-  ​
-  // >=1.4:
-  $.param({ a: { b: 1, c: 2 }, d: [ 3, 4, { e: 5 } ] });
-  // "a[b]=1&a[c]=2&d[]=3&d[]=4&d[2][e]=5"
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def param(obj: jqueryLib.JQueryNs.PlainObject[_], traditional: scala.Boolean): java.lang.String = js.native
-  /**
-       * Create a serialized representation of an array, a plain object, or a jQuery object suitable for use in a URL query string or Ajax request. In case a jQuery object is passed, it should contain input elements with name/value properties.
-       * @param obj An array, a plain object, or a jQuery object to serialize.
-       * @param traditional A Boolean indicating whether to perform a traditional "shallow" serialization.
-       * @see \`{@link https://api.jquery.com/jQuery.param/ }\`
-       * @since 1.2
-       * @since 1.4
-       * @example ​ ````Serialize a key/value object.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.param demo</title>
-    <style>
-    div {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div id="results"></div>
-  ​
-  <script>
-  var params = { width:1680, height:1050 };
-  var str = jQuery.param( params );
-  $( "#results" ).text( str );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````Serialize a few complex objects
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.param demo</title>
-    <style>
-    div {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​​
-  <script>
-  // <=1.3.2:
-  $.param({ a: [ 2, 3, 4 ] }); // "a=2&a=3&a=4"
-  // >=1.4:
-  $.param({ a: [ 2, 3, 4 ] }); // "a[]=2&a[]=3&a[]=4"
-  ​
-  // <=1.3.2:
-  $.param({ a: { b: 1, c: 2 }, d: [ 3, 4, { e: 5 } ] });
-  // "a=[object+Object]&d=3&d=4&d=[object+Object]"
-  ​
-  // >=1.4:
-  $.param({ a: { b: 1, c: 2 }, d: [ 3, 4, { e: 5 } ] });
-  // "a[b]=1&a[c]=2&d[]=3&d[]=4&d[2][e]=5"
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def param(obj: JQuery[stdLib.HTMLElement], traditional: scala.Boolean): java.lang.String = js.native
   /**
-       * Create a serialized representation of an array, a plain object, or a jQuery object suitable for use in a URL query string or Ajax request. In case a jQuery object is passed, it should contain input elements with name/value properties.
-       * @param obj An array, a plain object, or a jQuery object to serialize.
-       * @param traditional A Boolean indicating whether to perform a traditional "shallow" serialization.
-       * @see \`{@link https://api.jquery.com/jQuery.param/ }\`
-       * @since 1.2
-       * @since 1.4
-       * @example ​ ````Serialize a key/value object.
+    * Create a serialized representation of an array, a plain object, or a jQuery object suitable for use in a URL query string or Ajax request. In case a jQuery object is passed, it should contain input elements with name/value properties.
+    * @param obj An array, a plain object, or a jQuery object to serialize.
+    * @param traditional A Boolean indicating whether to perform a traditional "shallow" serialization.
+    * @see \`{@link https://api.jquery.com/jQuery.param/ }\`
+    * @since 1.2
+    * @since 1.4
+    * @example ​ ````Serialize a key/value object.
   ```html
   <!doctype html>
   <html lang="en">
@@ -4438,7 +2664,7 @@ trait JQueryStatic extends js.Object {
     <title>jQuery.param demo</title>
     <style>
     div {
-      color: red;
+    color: red;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -4456,7 +2682,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Serialize a few complex objects
+    * @example ​ ````Serialize a few complex objects
   ```html
   <!doctype html>
   <html lang="en">
@@ -4465,7 +2691,7 @@ trait JQueryStatic extends js.Object {
     <title>jQuery.param demo</title>
     <style>
     div {
-      color: red;
+    color: red;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -4490,88 +2716,19 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def param(obj: js.Array[_]): java.lang.String = js.native
-  /**
-       * Create a serialized representation of an array, a plain object, or a jQuery object suitable for use in a URL query string or Ajax request. In case a jQuery object is passed, it should contain input elements with name/value properties.
-       * @param obj An array, a plain object, or a jQuery object to serialize.
-       * @param traditional A Boolean indicating whether to perform a traditional "shallow" serialization.
-       * @see \`{@link https://api.jquery.com/jQuery.param/ }\`
-       * @since 1.2
-       * @since 1.4
-       * @example ​ ````Serialize a key/value object.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.param demo</title>
-    <style>
-    div {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div id="results"></div>
-  ​
-  <script>
-  var params = { width:1680, height:1050 };
-  var str = jQuery.param( params );
-  $( "#results" ).text( str );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````Serialize a few complex objects
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.param demo</title>
-    <style>
-    div {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​​
-  <script>
-  // <=1.3.2:
-  $.param({ a: [ 2, 3, 4 ] }); // "a=2&a=3&a=4"
-  // >=1.4:
-  $.param({ a: [ 2, 3, 4 ] }); // "a[]=2&a[]=3&a[]=4"
-  ​
-  // <=1.3.2:
-  $.param({ a: { b: 1, c: 2 }, d: [ 3, 4, { e: 5 } ] });
-  // "a=[object+Object]&d=3&d=4&d=[object+Object]"
-  ​
-  // >=1.4:
-  $.param({ a: { b: 1, c: 2 }, d: [ 3, 4, { e: 5 } ] });
-  // "a[b]=1&a[c]=2&d[]=3&d[]=4&d[2][e]=5"
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def param(obj: js.Array[_], traditional: scala.Boolean): java.lang.String = js.native
   /**
-       * Parses a string into an array of DOM nodes.
-       * @param data HTML string to be parsed
-       * @param context_keepScripts _&#x40;param_ `context_keepScripts`
-       * <br>
-       * * `context` — Document element to serve as the context in which the HTML fragment will be created <br>
-       * * `keepScripts` — A Boolean indicating whether to include scripts passed in the HTML string
-       * @see \`{@link https://api.jquery.com/jQuery.parseHTML/ }\`
-       * @since 1.8
-       * @example ​ ````Create an array of DOM nodes using an HTML string and insert it into a div.
+    * Parses a string into an array of DOM nodes.
+    * @param data HTML string to be parsed
+    * @param context_keepScripts _&#x40;param_ `context_keepScripts`
+    * <br>
+    * * `context` — Document element to serve as the context in which the HTML fragment will be created <br>
+    * * `keepScripts` — A Boolean indicating whether to include scripts passed in the HTML string
+    * @see \`{@link https://api.jquery.com/jQuery.parseHTML/ }\`
+    * @since 1.8
+    * @example ​ ````Create an array of DOM nodes using an HTML string and insert it into a div.
   ```html
   <!doctype html>
   <html lang="en">
@@ -4610,158 +2767,44 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def parseHTML(data: java.lang.String): js.Array[jqueryLib.JQueryNs.Node] = js.native
-  /**
-       * Parses a string into an array of DOM nodes.
-       * @param data HTML string to be parsed
-       * @param context_keepScripts _&#x40;param_ `context_keepScripts`
-       * <br>
-       * * `context` — Document element to serve as the context in which the HTML fragment will be created <br>
-       * * `keepScripts` — A Boolean indicating whether to include scripts passed in the HTML string
-       * @see \`{@link https://api.jquery.com/jQuery.parseHTML/ }\`
-       * @since 1.8
-       * @example ​ ````Create an array of DOM nodes using an HTML string and insert it into a div.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.parseHTML demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div id="log">
-    <h3>Content:</h3>
-  </div>
-  ​
-  <script>
-  var $log = $( "#log" ),
-    str = "hello, <b>my name is</b> jQuery.",
-    html = $.parseHTML( str ),
-    nodeNames = [];
-  ​
-  // Append the parsed HTML
-  $log.append( html );
-  ​
-  // Gather the parsed HTML's node names
-  $.each( html, function( i, el ) {
-    nodeNames[ i ] = "<li>" + el.nodeName + "</li>";
-  });
-  ​
-  // Insert the node names
-  $log.append( "<h3>Node Names:</h3>" );
-  $( "<ol></ol>" )
-    .append( nodeNames.join( "" ) )
-    .appendTo( $log );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def parseHTML(data: java.lang.String, context_keepScripts: scala.Boolean): js.Array[jqueryLib.JQueryNs.Node] = js.native
-  /**
-       * Parses a string into an array of DOM nodes.
-       * @param data HTML string to be parsed
-       * @param context_keepScripts _&#x40;param_ `context_keepScripts`
-       * <br>
-       * * `context` — Document element to serve as the context in which the HTML fragment will be created <br>
-       * * `keepScripts` — A Boolean indicating whether to include scripts passed in the HTML string
-       * @see \`{@link https://api.jquery.com/jQuery.parseHTML/ }\`
-       * @since 1.8
-       * @example ​ ````Create an array of DOM nodes using an HTML string and insert it into a div.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.parseHTML demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div id="log">
-    <h3>Content:</h3>
-  </div>
-  ​
-  <script>
-  var $log = $( "#log" ),
-    str = "hello, <b>my name is</b> jQuery.",
-    html = $.parseHTML( str ),
-    nodeNames = [];
-  ​
-  // Append the parsed HTML
-  $log.append( html );
-  ​
-  // Gather the parsed HTML's node names
-  $.each( html, function( i, el ) {
-    nodeNames[ i ] = "<li>" + el.nodeName + "</li>";
-  });
-  ​
-  // Insert the node names
-  $log.append( "<h3>Node Names:</h3>" );
-  $( "<ol></ol>" )
-    .append( nodeNames.join( "" ) )
-    .appendTo( $log );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def parseHTML(data: java.lang.String, context_keepScripts: stdLib.Document): js.Array[jqueryLib.JQueryNs.Node] = js.native
-  /**
-       * Parses a string into an array of DOM nodes.
-       * @param data HTML string to be parsed
-       * @param context Document element to serve as the context in which the HTML fragment will be created
-       * @param keepScripts A Boolean indicating whether to include scripts passed in the HTML string
-       * @see \`{@link https://api.jquery.com/jQuery.parseHTML/ }\`
-       * @since 1.8
-       */
   def parseHTML(data: java.lang.String, context: js.UndefOr[scala.Nothing], keepScripts: scala.Boolean): js.Array[jqueryLib.JQueryNs.Node] = js.native
-  /**
-       * Parses a string into an array of DOM nodes.
-       * @param data HTML string to be parsed
-       * @param context Document element to serve as the context in which the HTML fragment will be created
-       * @param keepScripts A Boolean indicating whether to include scripts passed in the HTML string
-       * @see \`{@link https://api.jquery.com/jQuery.parseHTML/ }\`
-       * @since 1.8
-       */
   def parseHTML(data: java.lang.String, context: scala.Null, keepScripts: scala.Boolean): js.Array[jqueryLib.JQueryNs.Node] = js.native
   /**
-       * Parses a string into an array of DOM nodes.
-       * @param data HTML string to be parsed
-       * @param context Document element to serve as the context in which the HTML fragment will be created
-       * @param keepScripts A Boolean indicating whether to include scripts passed in the HTML string
-       * @see \`{@link https://api.jquery.com/jQuery.parseHTML/ }\`
-       * @since 1.8
-       */
+    * Parses a string into an array of DOM nodes.
+    * @param data HTML string to be parsed
+    * @param context Document element to serve as the context in which the HTML fragment will be created
+    * @param keepScripts A Boolean indicating whether to include scripts passed in the HTML string
+    * @see \`{@link https://api.jquery.com/jQuery.parseHTML/ }\`
+    * @since 1.8
+    */
   def parseHTML(data: java.lang.String, context: stdLib.Document, keepScripts: scala.Boolean): js.Array[jqueryLib.JQueryNs.Node] = js.native
   /**
-       * Takes a well-formed JSON string and returns the resulting JavaScript value.
-       * @param json The JSON string to parse.
-       * @see \`{@link https://api.jquery.com/jQuery.parseJSON/ }\`
-       * @since 1.4.1
-       * @deprecated ​ Deprecated since 3.0. Use \`{@link JSON.parse }\`.
-       *
-       * **Cause**: The `jQuery.parseJSON` method in recent jQuery is identical to the native `JSON.parse`. As of jQuery 3.0 `jQuery.parseJSON` is deprecated.
-       *
-       * **Solution**: Replace any use of `jQuery.parseJSON` with `JSON.parse`.
-       * @example ​ ````Parse a JSON string.
+    * Takes a well-formed JSON string and returns the resulting JavaScript value.
+    * @param json The JSON string to parse.
+    * @see \`{@link https://api.jquery.com/jQuery.parseJSON/ }\`
+    * @since 1.4.1
+    * @deprecated ​ Deprecated since 3.0. Use \`{@link JSON.parse }\`.
+    *
+    * **Cause**: The `jQuery.parseJSON` method in recent jQuery is identical to the native `JSON.parse`. As of jQuery 3.0 `jQuery.parseJSON` is deprecated.
+    *
+    * **Solution**: Replace any use of `jQuery.parseJSON` with `JSON.parse`.
+    * @example ​ ````Parse a JSON string.
   ```javascript
   var obj = jQuery.parseJSON( '{ "name": "John" }' );
   alert( obj.name === "John" );
   ```
-       */
+    */
   def parseJSON(json: java.lang.String): js.Any = js.native
   /**
-       * Parses a string into an XML document.
-       * @param data a well-formed XML string to be parsed
-       * @see \`{@link https://api.jquery.com/jQuery.parseXML/ }\`
-       * @since 1.5
-       * @example ​ ````Create a jQuery object using an XML string and obtain the value of the title node.
+    * Parses a string into an XML document.
+    * @param data a well-formed XML string to be parsed
+    * @see \`{@link https://api.jquery.com/jQuery.parseXML/ }\`
+    * @since 1.5
+    * @example ​ ````Create a jQuery object using an XML string and obtain the value of the title node.
   ```html
   <!doctype html>
   <html lang="en">
@@ -4794,383 +2837,70 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def parseXML(data: java.lang.String): stdLib.XMLDocument = js.native
   /**
-       * Load data from the server using a HTTP POST request.
-       * @param url_settings _&#x40;param_ `url_settings`
-       * <br>
-       * * `url` — A string containing the URL to which the request is sent. <br>
-       * * `settings` — A set of key/value pairs that configure the Ajax request. All properties except for `url` are optional.
-       *                A default can be set for any option with \`{@link ajaxSetup $.ajaxSetup()}\`. See \`{@link https://api.jquery.com/jquery.ajax/#jQuery-ajax-settings jQuery.ajax( settings )}\`
-       *                for a complete list of all settings. Type will automatically be set to `POST`.
-       * @see \`{@link https://api.jquery.com/jQuery.post/ }\`
-       * @since 1.0
-       * @since 1.12
-       * @since 2.2
-       * @example ​ ````Request the test.php page, but ignore the return results.
+    * Load data from the server using a HTTP POST request.
+    * @param url_settings _&#x40;param_ `url_settings`
+    * <br>
+    * * `url` — A string containing the URL to which the request is sent. <br>
+    * * `settings` — A set of key/value pairs that configure the Ajax request. All properties except for `url` are optional.
+    *                A default can be set for any option with \`{@link ajaxSetup $.ajaxSetup()}\`. See \`{@link https://api.jquery.com/jquery.ajax/#jQuery-ajax-settings jQuery.ajax( settings )}\`
+    *                for a complete list of all settings. Type will automatically be set to `POST`.
+    * @see \`{@link https://api.jquery.com/jQuery.post/ }\`
+    * @since 1.0
+    * @since 1.12
+    * @since 2.2
+    * @example ​ ````Request the test.php page, but ignore the return results.
   ```javascript
   $.post( "test.php" );
   ```
-       */
+    */
   def post(): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load data from the server using a HTTP POST request.
-       * @param url_settings _&#x40;param_ `url_settings`
-       * <br>
-       * * `url` — A string containing the URL to which the request is sent. <br>
-       * * `settings` — A set of key/value pairs that configure the Ajax request. All properties except for `url` are optional.
-       *                A default can be set for any option with \`{@link ajaxSetup $.ajaxSetup()}\`. See \`{@link https://api.jquery.com/jquery.ajax/#jQuery-ajax-settings jQuery.ajax( settings )}\`
-       *                for a complete list of all settings. Type will automatically be set to `POST`.
-       * @see \`{@link https://api.jquery.com/jQuery.post/ }\`
-       * @since 1.0
-       * @since 1.12
-       * @since 2.2
-       * @example ​ ````Request the test.php page, but ignore the return results.
-  ```javascript
-  $.post( "test.php" );
-  ```
-       */
   def post(url_settings: java.lang.String): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load data from the server using a HTTP POST request.
-       * @param url_settings _&#x40;param_ `url_settings`
-       * <br>
-       * * `url` — A string containing the URL to which the request is sent. <br>
-       * * `settings` — A set of key/value pairs that configure the Ajax request. All properties except for `url` are optional.
-       *                A default can be set for any option with \`{@link ajaxSetup $.ajaxSetup()}\`. See \`{@link https://api.jquery.com/jquery.ajax/#jQuery-ajax-settings jQuery.ajax( settings )}\`
-       *                for a complete list of all settings. Type will automatically be set to `POST`.
-       * @see \`{@link https://api.jquery.com/jQuery.post/ }\`
-       * @since 1.0
-       * @since 1.12
-       * @since 2.2
-       * @example ​ ````Request the test.php page, but ignore the return results.
-  ```javascript
-  $.post( "test.php" );
-  ```
-       */
   def post(url_settings: jqueryLib.JQueryNs.UrlAjaxSettings[_]): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load data from the server using a HTTP POST request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param data A plain object or string that is sent to the server with the request.
-       * @param success A callback function that is executed if the request succeeds. Required if dataType is provided, but
-       *                can be null in that case.
-       * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
-       * @see \`{@link https://api.jquery.com/jQuery.post/ }\`
-       * @since 1.0
-       * @example ​ ````Post to the test.php page and get content which has been returned in json format (&lt;?php echo json_encode(array(&quot;name&quot;=&gt;&quot;John&quot;,&quot;time&quot;=&gt;&quot;2pm&quot;)); ?&gt;).
-  ```javascript
-  $.post( "test.php", { func: "getNameAndTime" }, function( data ) {
-    console.log( data.name ); // John
-    console.log( data.time ); // 2pm
-  }, "json");
-  ```
-       */
-  /**
-       * Load data from the server using a HTTP POST request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param success_data _&#x40;param_ `success_data`
-       * <br>
-       * * `success` — A callback function that is executed if the request succeeds. Required if `dataType` is provided,
-       *               but can be `null` in that case. <br>
-       * * `data` — A plain object or string that is sent to the server with the request.
-       * @see \`{@link https://api.jquery.com/jQuery.post/ }\`
-       * @since 1.0
-       * @example ​ ````Request the test.php page and send some additional data along (while still ignoring the return results).
-  ```javascript
-  $.post( "test.php", { name: "John", time: "2pm" } );
-  ```
-       * @example ​ ````Pass arrays of data to the server (while still ignoring the return results).
-  ```javascript
-  $.post( "test.php", { 'choices[]': [ "Jon", "Susan" ] } );
-  ```
-       * @example ​ ````Send form data using Ajax requests
-  ```javascript
-  $.post( "test.php", $( "#testform" ).serialize() );
-  ```
-       * @example ​ ````Alert the results from requesting test.php (HTML or XML, depending on what was returned).
-  ```javascript
-  $.post( "test.php", function( data ) {
-    alert( "Data Loaded: " + data );
-  });
-  ```
-       * @example ​ ````Alert the results from requesting test.php with an additional payload of data (HTML or XML, depending on what was returned).
-  ```javascript
-  $.post( "test.php", { name: "John", time: "2pm" })
-    .done(function( data ) {
-      alert( "Data Loaded: " + data );
-    });
-  ```
-       * @example ​ ````Post a form using Ajax and put results in a div
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.post demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <form action="/" id="searchForm">
-    <input type="text" name="s" placeholder="Search...">
-    <input type="submit" value="Search">
-  </form>
-  <!-- the result of the search will be rendered inside this div -->
-  <div id="result"></div>
-  ​
-  <script>
-  // Attach a submit handler to the form
-  $( "#searchForm" ).submit(function( event ) {
-  ​
-    // Stop form from submitting normally
-    event.preventDefault();
-  ​
-    // Get some values from elements on the page:
-    var $form = $( this ),
-      term = $form.find( "input[name='s']" ).val(),
-      url = $form.attr( "action" );
-  ​
-    // Send the data using post
-    var posting = $.post( url, { s: term } );
-  ​
-    // Put the results in a div
-    posting.done(function( data ) {
-      var content = $( data ).find( "#content" );
-      $( "#result" ).empty().append( content );
-    });
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def post(url: java.lang.String, data: java.lang.String): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load data from the server using a HTTP POST request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param data A plain object or string that is sent to the server with the request.
-       * @param success A callback function that is executed if the request succeeds. Required if dataType is provided, but
-       *                can be null in that case.
-       * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
-       * @see \`{@link https://api.jquery.com/jQuery.post/ }\`
-       * @since 1.0
-       * @example ​ ````Post to the test.php page and get content which has been returned in json format (&lt;?php echo json_encode(array(&quot;name&quot;=&gt;&quot;John&quot;,&quot;time&quot;=&gt;&quot;2pm&quot;)); ?&gt;).
-  ```javascript
-  $.post( "test.php", { func: "getNameAndTime" }, function( data ) {
-    console.log( data.name ); // John
-    console.log( data.time ); // 2pm
-  }, "json");
-  ```
-       */
   def post(
     url: java.lang.String,
     data: java.lang.String,
     success: jqueryLib.JQueryNs.jqXHRNs.DoneCallback[_, jqueryLib.JQueryNs.jqXHR[_]]
   ): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load data from the server using a HTTP POST request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param data A plain object or string that is sent to the server with the request.
-       * @param success A callback function that is executed if the request succeeds. Required if dataType is provided, but
-       *                can be null in that case.
-       * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
-       * @see \`{@link https://api.jquery.com/jQuery.post/ }\`
-       * @since 1.0
-       * @example ​ ````Post to the test.php page and get content which has been returned in json format (&lt;?php echo json_encode(array(&quot;name&quot;=&gt;&quot;John&quot;,&quot;time&quot;=&gt;&quot;2pm&quot;)); ?&gt;).
-  ```javascript
-  $.post( "test.php", { func: "getNameAndTime" }, function( data ) {
-    console.log( data.name ); // John
-    console.log( data.time ); // 2pm
-  }, "json");
-  ```
-       */
   def post(
     url: java.lang.String,
     data: java.lang.String,
     success: jqueryLib.JQueryNs.jqXHRNs.DoneCallback[_, jqueryLib.JQueryNs.jqXHR[_]],
     dataType: java.lang.String
   ): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load data from the server using a HTTP POST request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param data A plain object or string that is sent to the server with the request.
-       * @param success A callback function that is executed if the request succeeds. Required if dataType is provided, but
-       *                can be null in that case.
-       * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
-       * @see \`{@link https://api.jquery.com/jQuery.post/ }\`
-       * @since 1.0
-       * @example ​ ````Post to the test.php page and get content which has been returned in json format (&lt;?php echo json_encode(array(&quot;name&quot;=&gt;&quot;John&quot;,&quot;time&quot;=&gt;&quot;2pm&quot;)); ?&gt;).
-  ```javascript
-  $.post( "test.php", { func: "getNameAndTime" }, function( data ) {
-    console.log( data.name ); // John
-    console.log( data.time ); // 2pm
-  }, "json");
-  ```
-       */
   def post(url: java.lang.String, data: java.lang.String, success: scala.Null, dataType: java.lang.String): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load data from the server using a HTTP POST request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param data A plain object or string that is sent to the server with the request.
-       * @param success A callback function that is executed if the request succeeds. Required if dataType is provided, but
-       *                can be null in that case.
-       * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
-       * @see \`{@link https://api.jquery.com/jQuery.post/ }\`
-       * @since 1.0
-       * @example ​ ````Post to the test.php page and get content which has been returned in json format (&lt;?php echo json_encode(array(&quot;name&quot;=&gt;&quot;John&quot;,&quot;time&quot;=&gt;&quot;2pm&quot;)); ?&gt;).
-  ```javascript
-  $.post( "test.php", { func: "getNameAndTime" }, function( data ) {
-    console.log( data.name ); // John
-    console.log( data.time ); // 2pm
-  }, "json");
-  ```
-       */
-  /**
-       * Load data from the server using a HTTP POST request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param success_data _&#x40;param_ `success_data`
-       * <br>
-       * * `success` — A callback function that is executed if the request succeeds. Required if `dataType` is provided,
-       *               but can be `null` in that case. <br>
-       * * `data` — A plain object or string that is sent to the server with the request.
-       * @see \`{@link https://api.jquery.com/jQuery.post/ }\`
-       * @since 1.0
-       * @example ​ ````Request the test.php page and send some additional data along (while still ignoring the return results).
-  ```javascript
-  $.post( "test.php", { name: "John", time: "2pm" } );
-  ```
-       * @example ​ ````Pass arrays of data to the server (while still ignoring the return results).
-  ```javascript
-  $.post( "test.php", { 'choices[]': [ "Jon", "Susan" ] } );
-  ```
-       * @example ​ ````Send form data using Ajax requests
-  ```javascript
-  $.post( "test.php", $( "#testform" ).serialize() );
-  ```
-       * @example ​ ````Alert the results from requesting test.php (HTML or XML, depending on what was returned).
-  ```javascript
-  $.post( "test.php", function( data ) {
-    alert( "Data Loaded: " + data );
-  });
-  ```
-       * @example ​ ````Alert the results from requesting test.php with an additional payload of data (HTML or XML, depending on what was returned).
-  ```javascript
-  $.post( "test.php", { name: "John", time: "2pm" })
-    .done(function( data ) {
-      alert( "Data Loaded: " + data );
-    });
-  ```
-       * @example ​ ````Post a form using Ajax and put results in a div
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.post demo</title>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <form action="/" id="searchForm">
-    <input type="text" name="s" placeholder="Search...">
-    <input type="submit" value="Search">
-  </form>
-  <!-- the result of the search will be rendered inside this div -->
-  <div id="result"></div>
-  ​
-  <script>
-  // Attach a submit handler to the form
-  $( "#searchForm" ).submit(function( event ) {
-  ​
-    // Stop form from submitting normally
-    event.preventDefault();
-  ​
-    // Get some values from elements on the page:
-    var $form = $( this ),
-      term = $form.find( "input[name='s']" ).val(),
-      url = $form.attr( "action" );
-  ​
-    // Send the data using post
-    var posting = $.post( url, { s: term } );
-  ​
-    // Put the results in a div
-    posting.done(function( data ) {
-      var content = $( data ).find( "#content" );
-      $( "#result" ).empty().append( content );
-    });
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def post(url: java.lang.String, data: jqueryLib.JQueryNs.PlainObject[_]): jqueryLib.JQueryNs.jqXHR[_] = js.native
   /**
-       * Load data from the server using a HTTP POST request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param data A plain object or string that is sent to the server with the request.
-       * @param success A callback function that is executed if the request succeeds. Required if dataType is provided, but
-       *                can be null in that case.
-       * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
-       * @see \`{@link https://api.jquery.com/jQuery.post/ }\`
-       * @since 1.0
-       * @example ​ ````Post to the test.php page and get content which has been returned in json format (&lt;?php echo json_encode(array(&quot;name&quot;=&gt;&quot;John&quot;,&quot;time&quot;=&gt;&quot;2pm&quot;)); ?&gt;).
+    * Load data from the server using a HTTP POST request.
+    * @param url A string containing the URL to which the request is sent.
+    * @param data A plain object or string that is sent to the server with the request.
+    * @param success A callback function that is executed if the request succeeds. Required if dataType is provided, but
+    *                can be null in that case.
+    * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
+    * @see \`{@link https://api.jquery.com/jQuery.post/ }\`
+    * @since 1.0
+    * @example ​ ````Post to the test.php page and get content which has been returned in json format (&lt;?php echo json_encode(array(&quot;name&quot;=&gt;&quot;John&quot;,&quot;time&quot;=&gt;&quot;2pm&quot;)); ?&gt;).
   ```javascript
   $.post( "test.php", { func: "getNameAndTime" }, function( data ) {
     console.log( data.name ); // John
     console.log( data.time ); // 2pm
   }, "json");
   ```
-       */
+    */
   def post(
     url: java.lang.String,
     data: jqueryLib.JQueryNs.PlainObject[_],
     success: jqueryLib.JQueryNs.jqXHRNs.DoneCallback[_, jqueryLib.JQueryNs.jqXHR[_]]
   ): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load data from the server using a HTTP POST request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param data A plain object or string that is sent to the server with the request.
-       * @param success A callback function that is executed if the request succeeds. Required if dataType is provided, but
-       *                can be null in that case.
-       * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
-       * @see \`{@link https://api.jquery.com/jQuery.post/ }\`
-       * @since 1.0
-       * @example ​ ````Post to the test.php page and get content which has been returned in json format (&lt;?php echo json_encode(array(&quot;name&quot;=&gt;&quot;John&quot;,&quot;time&quot;=&gt;&quot;2pm&quot;)); ?&gt;).
-  ```javascript
-  $.post( "test.php", { func: "getNameAndTime" }, function( data ) {
-    console.log( data.name ); // John
-    console.log( data.time ); // 2pm
-  }, "json");
-  ```
-       */
   def post(
     url: java.lang.String,
     data: jqueryLib.JQueryNs.PlainObject[_],
     success: jqueryLib.JQueryNs.jqXHRNs.DoneCallback[_, jqueryLib.JQueryNs.jqXHR[_]],
     dataType: java.lang.String
   ): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load data from the server using a HTTP POST request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param data A plain object or string that is sent to the server with the request.
-       * @param success A callback function that is executed if the request succeeds. Required if dataType is provided, but
-       *                can be null in that case.
-       * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
-       * @see \`{@link https://api.jquery.com/jQuery.post/ }\`
-       * @since 1.0
-       * @example ​ ````Post to the test.php page and get content which has been returned in json format (&lt;?php echo json_encode(array(&quot;name&quot;=&gt;&quot;John&quot;,&quot;time&quot;=&gt;&quot;2pm&quot;)); ?&gt;).
-  ```javascript
-  $.post( "test.php", { func: "getNameAndTime" }, function( data ) {
-    console.log( data.name ); // John
-    console.log( data.time ); // 2pm
-  }, "json");
-  ```
-       */
   def post(
     url: java.lang.String,
     data: jqueryLib.JQueryNs.PlainObject[_],
@@ -5178,41 +2908,41 @@ trait JQueryStatic extends js.Object {
     dataType: java.lang.String
   ): jqueryLib.JQueryNs.jqXHR[_] = js.native
   /**
-       * Load data from the server using a HTTP POST request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param success_data _&#x40;param_ `success_data`
-       * <br>
-       * * `success` — A callback function that is executed if the request succeeds. Required if `dataType` is provided,
-       *               but can be `null` in that case. <br>
-       * * `data` — A plain object or string that is sent to the server with the request.
-       * @see \`{@link https://api.jquery.com/jQuery.post/ }\`
-       * @since 1.0
-       * @example ​ ````Request the test.php page and send some additional data along (while still ignoring the return results).
+    * Load data from the server using a HTTP POST request.
+    * @param url A string containing the URL to which the request is sent.
+    * @param success_data _&#x40;param_ `success_data`
+    * <br>
+    * * `success` — A callback function that is executed if the request succeeds. Required if `dataType` is provided,
+    *               but can be `null` in that case. <br>
+    * * `data` — A plain object or string that is sent to the server with the request.
+    * @see \`{@link https://api.jquery.com/jQuery.post/ }\`
+    * @since 1.0
+    * @example ​ ````Request the test.php page and send some additional data along (while still ignoring the return results).
   ```javascript
   $.post( "test.php", { name: "John", time: "2pm" } );
   ```
-       * @example ​ ````Pass arrays of data to the server (while still ignoring the return results).
+    * @example ​ ````Pass arrays of data to the server (while still ignoring the return results).
   ```javascript
   $.post( "test.php", { 'choices[]': [ "Jon", "Susan" ] } );
   ```
-       * @example ​ ````Send form data using Ajax requests
+    * @example ​ ````Send form data using Ajax requests
   ```javascript
   $.post( "test.php", $( "#testform" ).serialize() );
   ```
-       * @example ​ ````Alert the results from requesting test.php (HTML or XML, depending on what was returned).
+    * @example ​ ````Alert the results from requesting test.php (HTML or XML, depending on what was returned).
   ```javascript
   $.post( "test.php", function( data ) {
     alert( "Data Loaded: " + data );
   });
   ```
-       * @example ​ ````Alert the results from requesting test.php with an additional payload of data (HTML or XML, depending on what was returned).
+    * @example ​ ````Alert the results from requesting test.php with an additional payload of data (HTML or XML, depending on what was returned).
   ```javascript
   $.post( "test.php", { name: "John", time: "2pm" })
     .done(function( data ) {
-      alert( "Data Loaded: " + data );
+    alert( "Data Loaded: " + data );
     });
   ```
-       * @example ​ ````Post a form using Ajax and put results in a div
+    * @example ​ ````Post a form using Ajax and put results in a div
   ```html
   <!doctype html>
   <html lang="en">
@@ -5239,16 +2969,16 @@ trait JQueryStatic extends js.Object {
   ​
     // Get some values from elements on the page:
     var $form = $( this ),
-      term = $form.find( "input[name='s']" ).val(),
-      url = $form.attr( "action" );
+    term = $form.find( "input[name='s']" ).val(),
+    url = $form.attr( "action" );
   ​
     // Send the data using post
     var posting = $.post( url, { s: term } );
   ​
     // Put the results in a div
     posting.done(function( data ) {
-      var content = $( data ).find( "#content" );
-      $( "#result" ).empty().append( content );
+    var content = $( data ).find( "#content" );
+    $( "#result" ).empty().append( content );
     });
   });
   </script>
@@ -5256,49 +2986,40 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def post(
     url: java.lang.String,
     success_data: jqueryLib.JQueryNs.jqXHRNs.DoneCallback[_, jqueryLib.JQueryNs.jqXHR[_]]
   ): jqueryLib.JQueryNs.jqXHR[_] = js.native
   /**
-       * Load data from the server using a HTTP POST request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param success A callback function that is executed if the request succeeds. Required if dataType is provided, but
-       *                can be null in that case.
-       * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
-       * @see \`{@link https://api.jquery.com/jQuery.post/ }\`
-       * @since 1.0
-       */
+    * Load data from the server using a HTTP POST request.
+    * @param url A string containing the URL to which the request is sent.
+    * @param success A callback function that is executed if the request succeeds. Required if dataType is provided, but
+    *                can be null in that case.
+    * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
+    * @see \`{@link https://api.jquery.com/jQuery.post/ }\`
+    * @since 1.0
+    */
   def post(
     url: java.lang.String,
     success: jqueryLib.JQueryNs.jqXHRNs.DoneCallback[_, jqueryLib.JQueryNs.jqXHR[_]],
     dataType: java.lang.String
   ): jqueryLib.JQueryNs.jqXHR[_] = js.native
-  /**
-       * Load data from the server using a HTTP POST request.
-       * @param url A string containing the URL to which the request is sent.
-       * @param success A callback function that is executed if the request succeeds. Required if dataType is provided, but
-       *                can be null in that case.
-       * @param dataType The type of data expected from the server. Default: Intelligent Guess (xml, json, script, text, html).
-       * @see \`{@link https://api.jquery.com/jQuery.post/ }\`
-       * @since 1.0
-       */
   def post(url: java.lang.String, success: scala.Null, dataType: java.lang.String): jqueryLib.JQueryNs.jqXHR[_] = js.native
   // #endregion
   // #endregion
   // region (context, name)
   // #region (context, name)
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param context The object to which the context of the function should be set.
-       * @param name The name of the function whose context will be changed (should be a property of the context object).
-       * @param additionalArguments Any number of arguments to be passed to the function named in the name argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Enforce the context of the function using the &quot;context, function name&quot; signature. Unbind the handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param context The object to which the context of the function should be set.
+    * @param name The name of the function whose context will be changed (should be a property of the context object).
+    * @param additionalArguments Any number of arguments to be passed to the function named in the name argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Enforce the context of the function using the &quot;context, function name&quot; signature. Unbind the handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -5316,8 +3037,8 @@ trait JQueryStatic extends js.Object {
   var obj = {
     name: "John",
     test: function() {
-      $( "#log" ).append( this.name );
-      $( "#test" ).off( "click", obj.test );
+    $( "#log" ).append( this.name );
+    $( "#test" ).off( "click", obj.test );
     }
   };
   $( "#test" ).on( "click", jQuery.proxy( obj, "test" ) );
@@ -5326,69 +3047,60 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
-  def proxy[TContext](context: TContext, name: java.lang.String, additionalArguments: js.Any*): js.Function1[/* repeated */js.Any, _] = js.native
+    */
+  def proxy[TContext](context: TContext, name: java.lang.String, additionalArguments: js.Any*): js.Function1[/* repeated */ js.Any, _] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn](funсtion: js.Function0[TReturn]): js.Function0[TReturn] = js.native
   // #endregion
   // #endregion
   // region 8+ additional arguments
   // #region 8+ additional arguments
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param additionalArguments Any number of arguments to be passed to the function referenced in the function argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
-  def proxy[TReturn](funсtion: js.Function1[/* repeated */js.Any, TReturn], additionalArguments: js.Any*): js.Function1[/* repeated */js.Any, TReturn] = js.native
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param additionalArguments Any number of arguments to be passed to the function referenced in the function argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
+  def proxy[TReturn](funсtion: js.Function1[/* repeated */ js.Any, TReturn], additionalArguments: js.Any*): js.Function1[/* repeated */ js.Any, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, T](funсtion: js.Function1[/* t */ T, TReturn]): js.Function1[/* t */ T, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A](funсtion: js.Function1[/* a */ A, TReturn], context: js.UndefOr[scala.Nothing], a: A): js.Function0[TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A](funсtion: js.Function1[/* a */ A, TReturn], context: scala.Null, a: A): js.Function0[TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -5406,22 +3118,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -5448,7 +3160,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -5469,26 +3181,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -5506,22 +3218,22 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn](funсtion: js.ThisFunction0[/* this */ TContext, TReturn], context: TContext): js.Function0[TReturn] = js.native
   // #endregion
   // #endregion
   // region 8+ additional arguments
   // #region 8+ additional arguments
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param additionalArguments Any number of arguments to be passed to the function referenced in the function argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param additionalArguments Any number of arguments to be passed to the function referenced in the function argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -5539,22 +3251,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -5581,7 +3293,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -5602,26 +3314,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -5639,41 +3351,22 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn](
-    funсtion: js.ThisFunction1[/* this */ TContext, /* repeated */js.Any, TReturn],
+    funсtion: js.ThisFunction1[/* this */ TContext, /* repeated */ js.Any, TReturn],
     context: TContext,
     additionalArguments: js.Any*
-  ): js.Function1[/* repeated */js.Any, TReturn] = js.native
+  ): js.Function1[/* repeated */ js.Any, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, T, U](funсtion: js.Function2[/* t */ T, /* u */ U, TReturn]): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, T](funсtion: js.Function2[/* a */ A, /* t */ T, TReturn], context: js.UndefOr[scala.Nothing], a: A): js.Function1[/* t */ T, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B](
     funсtion: js.Function2[/* a */ A, /* b */ B, TReturn],
     context: js.UndefOr[scala.Nothing],
@@ -5681,35 +3374,35 @@ trait JQueryStatic extends js.Object {
     b: B
   ): js.Function0[TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, T](funсtion: js.Function2[/* a */ A, /* t */ T, TReturn], context: scala.Null, a: A): js.Function1[/* t */ T, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B](funсtion: js.Function2[/* a */ A, /* b */ B, TReturn], context: scala.Null, a: A, b: B): js.Function0[TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -5727,22 +3420,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -5769,7 +3462,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -5790,26 +3483,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -5827,18 +3520,18 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, T](funсtion: js.ThisFunction1[/* this */ TContext, /* t */ T, TReturn], context: TContext): js.Function1[/* t */ T, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4`
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4`
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -5856,22 +3549,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -5898,7 +3591,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -5919,26 +3612,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -5956,58 +3649,28 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A](funсtion: js.ThisFunction1[/* this */ TContext, /* a */ A, TReturn], context: TContext, a: A): js.Function0[TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, T, U, V](funсtion: js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn]): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, T, U](
     funсtion: js.Function3[/* a */ A, /* t */ T, /* u */ U, TReturn],
     context: js.UndefOr[scala.Nothing],
     a: A
   ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, T](
     funсtion: js.Function3[/* a */ A, /* b */ B, /* t */ T, TReturn],
     context: js.UndefOr[scala.Nothing],
     a: A,
     b: B
   ): js.Function1[/* t */ T, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C](
     funсtion: js.Function3[/* a */ A, /* b */ B, /* c */ C, TReturn],
     context: js.UndefOr[scala.Nothing],
@@ -6016,37 +3679,37 @@ trait JQueryStatic extends js.Object {
     c: C
   ): js.Function0[TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, T, U](funсtion: js.Function3[/* a */ A, /* t */ T, /* u */ U, TReturn], context: scala.Null, a: A): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, T](funсtion: js.Function3[/* a */ A, /* b */ B, /* t */ T, TReturn], context: scala.Null, a: A, b: B): js.Function1[/* t */ T, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C](
     funсtion: js.Function3[/* a */ A, /* b */ B, /* c */ C, TReturn],
     context: scala.Null,
@@ -6055,14 +3718,14 @@ trait JQueryStatic extends js.Object {
     c: C
   ): js.Function0[TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -6080,22 +3743,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -6122,7 +3785,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -6143,26 +3806,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -6180,18 +3843,18 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, T, U](funсtion: js.ThisFunction2[/* this */ TContext, /* t */ T, /* u */ U, TReturn], context: TContext): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -6209,22 +3872,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -6251,7 +3914,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -6272,26 +3935,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -6309,23 +3972,23 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, T](
     funсtion: js.ThisFunction2[/* this */ TContext, /* a */ A, /* t */ T, TReturn],
     context: TContext,
     a: A
   ): js.Function1[/* t */ T, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -6343,22 +4006,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -6385,7 +4048,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -6406,26 +4069,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -6443,7 +4106,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B](
     funсtion: js.ThisFunction2[/* this */ TContext, /* a */ A, /* b */ B, TReturn],
     context: TContext,
@@ -6451,55 +4114,25 @@ trait JQueryStatic extends js.Object {
     b: B
   ): js.Function0[TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, T, U, V, W](funсtion: js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn]): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, T, U, V](
     funсtion: js.Function4[/* a */ A, /* t */ T, /* u */ U, /* v */ V, TReturn],
     context: js.UndefOr[scala.Nothing],
     a: A
   ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, T, U](
     funсtion: js.Function4[/* a */ A, /* b */ B, /* t */ T, /* u */ U, TReturn],
     context: js.UndefOr[scala.Nothing],
     a: A,
     b: B
   ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, T](
     funсtion: js.Function4[/* a */ A, /* b */ B, /* c */ C, /* t */ T, TReturn],
     context: js.UndefOr[scala.Nothing],
@@ -6507,18 +4140,6 @@ trait JQueryStatic extends js.Object {
     b: B,
     c: C
   ): js.Function1[/* t */ T, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D](
     funсtion: js.Function4[/* a */ A, /* b */ B, /* c */ C, /* d */ D, TReturn],
     context: js.UndefOr[scala.Nothing],
@@ -6528,29 +4149,29 @@ trait JQueryStatic extends js.Object {
     d: D
   ): js.Function0[TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, T, U, V](
     funсtion: js.Function4[/* a */ A, /* t */ T, /* u */ U, /* v */ V, TReturn],
     context: scala.Null,
     a: A
   ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, T, U](
     funсtion: js.Function4[/* a */ A, /* b */ B, /* t */ T, /* u */ U, TReturn],
     context: scala.Null,
@@ -6558,16 +4179,16 @@ trait JQueryStatic extends js.Object {
     b: B
   ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, T](
     funсtion: js.Function4[/* a */ A, /* b */ B, /* c */ C, /* t */ T, TReturn],
     context: scala.Null,
@@ -6576,17 +4197,17 @@ trait JQueryStatic extends js.Object {
     c: C
   ): js.Function1[/* t */ T, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D](
     funсtion: js.Function4[/* a */ A, /* b */ B, /* c */ C, /* d */ D, TReturn],
     context: scala.Null,
@@ -6596,14 +4217,14 @@ trait JQueryStatic extends js.Object {
     d: D
   ): js.Function0[TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -6621,22 +4242,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -6663,7 +4284,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -6684,26 +4305,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -6721,21 +4342,21 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, T, U, V](
     funсtion: js.ThisFunction3[/* this */ TContext, /* t */ T, /* u */ U, /* v */ V, TReturn],
     context: TContext
   ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -6753,22 +4374,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -6795,7 +4416,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -6816,26 +4437,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -6853,23 +4474,23 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, T, U](
     funсtion: js.ThisFunction3[/* this */ TContext, /* a */ A, /* t */ T, /* u */ U, TReturn],
     context: TContext,
     a: A
   ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -6887,22 +4508,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -6929,7 +4550,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -6950,26 +4571,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -6987,7 +4608,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, T](
     funсtion: js.ThisFunction3[/* this */ TContext, /* a */ A, /* b */ B, /* t */ T, TReturn],
     context: TContext,
@@ -6995,17 +4616,17 @@ trait JQueryStatic extends js.Object {
     b: B
   ): js.Function1[/* t */ T, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -7023,22 +4644,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -7065,7 +4686,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -7086,26 +4707,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -7123,7 +4744,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C](
     funсtion: js.ThisFunction3[/* this */ TContext, /* a */ A, /* b */ B, /* c */ C, TReturn],
     context: TContext,
@@ -7132,55 +4753,25 @@ trait JQueryStatic extends js.Object {
     c: C
   ): js.Function0[TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, T, U, V, W, X](funсtion: js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn]): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, T, U, V, W](
     funсtion: js.Function5[/* a */ A, /* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn],
     context: js.UndefOr[scala.Nothing],
     a: A
   ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, T, U, V](
     funсtion: js.Function5[/* a */ A, /* b */ B, /* t */ T, /* u */ U, /* v */ V, TReturn],
     context: js.UndefOr[scala.Nothing],
     a: A,
     b: B
   ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, T, U](
     funсtion: js.Function5[/* a */ A, /* b */ B, /* c */ C, /* t */ T, /* u */ U, TReturn],
     context: js.UndefOr[scala.Nothing],
@@ -7188,18 +4779,6 @@ trait JQueryStatic extends js.Object {
     b: B,
     c: C
   ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, T](
     funсtion: js.Function5[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* t */ T, TReturn],
     context: js.UndefOr[scala.Nothing],
@@ -7208,19 +4787,6 @@ trait JQueryStatic extends js.Object {
     c: C,
     d: D
   ): js.Function1[/* t */ T, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E](
     funсtion: js.Function5[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, TReturn],
     context: js.UndefOr[scala.Nothing],
@@ -7231,29 +4797,29 @@ trait JQueryStatic extends js.Object {
     e: E
   ): js.Function0[TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, T, U, V, W](
     funсtion: js.Function5[/* a */ A, /* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn],
     context: scala.Null,
     a: A
   ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, T, U, V](
     funсtion: js.Function5[/* a */ A, /* b */ B, /* t */ T, /* u */ U, /* v */ V, TReturn],
     context: scala.Null,
@@ -7261,16 +4827,16 @@ trait JQueryStatic extends js.Object {
     b: B
   ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, T, U](
     funсtion: js.Function5[/* a */ A, /* b */ B, /* c */ C, /* t */ T, /* u */ U, TReturn],
     context: scala.Null,
@@ -7279,17 +4845,17 @@ trait JQueryStatic extends js.Object {
     c: C
   ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, T](
     funсtion: js.Function5[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* t */ T, TReturn],
     context: scala.Null,
@@ -7299,18 +4865,18 @@ trait JQueryStatic extends js.Object {
     d: D
   ): js.Function1[/* t */ T, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E](
     funсtion: js.Function5[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, TReturn],
     context: scala.Null,
@@ -7321,14 +4887,14 @@ trait JQueryStatic extends js.Object {
     e: E
   ): js.Function0[TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -7346,22 +4912,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -7388,7 +4954,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -7409,26 +4975,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -7446,21 +5012,21 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, T, U, V, W](
     funсtion: js.ThisFunction4[/* this */ TContext, /* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn],
     context: TContext
   ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -7478,22 +5044,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -7520,7 +5086,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -7541,26 +5107,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -7578,23 +5144,23 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, T, U, V](
     funсtion: js.ThisFunction4[/* this */ TContext, /* a */ A, /* t */ T, /* u */ U, /* v */ V, TReturn],
     context: TContext,
     a: A
   ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -7612,22 +5178,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -7654,7 +5220,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -7675,26 +5241,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -7712,7 +5278,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, T, U](
     funсtion: js.ThisFunction4[/* this */ TContext, /* a */ A, /* b */ B, /* t */ T, /* u */ U, TReturn],
     context: TContext,
@@ -7720,17 +5286,17 @@ trait JQueryStatic extends js.Object {
     b: B
   ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -7748,22 +5314,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -7790,7 +5356,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -7811,26 +5377,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -7848,7 +5414,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, T](
     funсtion: js.ThisFunction4[/* this */ TContext, /* a */ A, /* b */ B, /* c */ C, /* t */ T, TReturn],
     context: TContext,
@@ -7857,18 +5423,18 @@ trait JQueryStatic extends js.Object {
     c: C
   ): js.Function1[/* t */ T, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -7886,22 +5452,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -7928,7 +5494,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -7949,26 +5515,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -7986,7 +5552,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D](
     funсtion: js.ThisFunction4[/* this */ TContext, /* a */ A, /* b */ B, /* c */ C, /* d */ D, TReturn],
     context: TContext,
@@ -7996,55 +5562,25 @@ trait JQueryStatic extends js.Object {
     d: D
   ): js.Function0[TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, T, U, V, W, X, Y](funсtion: js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn]): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, T, U, V, W, X](
     funсtion: js.Function6[/* a */ A, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn],
     context: js.UndefOr[scala.Nothing],
     a: A
   ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, T, U, V, W](
     funсtion: js.Function6[/* a */ A, /* b */ B, /* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn],
     context: js.UndefOr[scala.Nothing],
     a: A,
     b: B
   ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, T, U, V](
     funсtion: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* t */ T, /* u */ U, /* v */ V, TReturn],
     context: js.UndefOr[scala.Nothing],
@@ -8052,18 +5588,6 @@ trait JQueryStatic extends js.Object {
     b: B,
     c: C
   ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, T, U](
     funсtion: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* t */ T, /* u */ U, TReturn],
     context: js.UndefOr[scala.Nothing],
@@ -8072,19 +5596,6 @@ trait JQueryStatic extends js.Object {
     c: C,
     d: D
   ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, T](
     funсtion: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* t */ T, TReturn],
     context: js.UndefOr[scala.Nothing],
@@ -8094,20 +5605,6 @@ trait JQueryStatic extends js.Object {
     d: D,
     e: E
   ): js.Function1[/* t */ T, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, F](
     funсtion: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, TReturn],
     context: js.UndefOr[scala.Nothing],
@@ -8119,29 +5616,29 @@ trait JQueryStatic extends js.Object {
     f: F
   ): js.Function0[TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, T, U, V, W, X](
     funсtion: js.Function6[/* a */ A, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn],
     context: scala.Null,
     a: A
   ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, T, U, V, W](
     funсtion: js.Function6[/* a */ A, /* b */ B, /* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn],
     context: scala.Null,
@@ -8149,16 +5646,16 @@ trait JQueryStatic extends js.Object {
     b: B
   ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, T, U, V](
     funсtion: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* t */ T, /* u */ U, /* v */ V, TReturn],
     context: scala.Null,
@@ -8167,17 +5664,17 @@ trait JQueryStatic extends js.Object {
     c: C
   ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, T, U](
     funсtion: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* t */ T, /* u */ U, TReturn],
     context: scala.Null,
@@ -8187,18 +5684,18 @@ trait JQueryStatic extends js.Object {
     d: D
   ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, T](
     funсtion: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* t */ T, TReturn],
     context: scala.Null,
@@ -8209,19 +5706,19 @@ trait JQueryStatic extends js.Object {
     e: E
   ): js.Function1[/* t */ T, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, F](
     funсtion: js.Function6[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, TReturn],
     context: scala.Null,
@@ -8233,14 +5730,14 @@ trait JQueryStatic extends js.Object {
     f: F
   ): js.Function0[TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -8258,22 +5755,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -8300,7 +5797,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -8321,26 +5818,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -8358,21 +5855,21 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, T, U, V, W, X](
     funсtion: js.ThisFunction5[/* this */ TContext, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn],
     context: TContext
   ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -8390,22 +5887,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -8432,7 +5929,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -8453,26 +5950,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -8490,23 +5987,23 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, T, U, V, W](
     funсtion: js.ThisFunction5[/* this */ TContext, /* a */ A, /* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn],
     context: TContext,
     a: A
   ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -8524,22 +6021,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -8566,7 +6063,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -8587,26 +6084,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -8624,7 +6121,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, T, U, V](
     funсtion: js.ThisFunction5[/* this */ TContext, /* a */ A, /* b */ B, /* t */ T, /* u */ U, /* v */ V, TReturn],
     context: TContext,
@@ -8632,17 +6129,17 @@ trait JQueryStatic extends js.Object {
     b: B
   ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -8660,22 +6157,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -8702,7 +6199,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -8723,26 +6220,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -8760,7 +6257,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, T, U](
     funсtion: js.ThisFunction5[/* this */ TContext, /* a */ A, /* b */ B, /* c */ C, /* t */ T, /* u */ U, TReturn],
     context: TContext,
@@ -8769,18 +6266,18 @@ trait JQueryStatic extends js.Object {
     c: C
   ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -8798,22 +6295,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -8840,7 +6337,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -8861,26 +6358,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -8898,7 +6395,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, T](
     funсtion: js.ThisFunction5[/* this */ TContext, /* a */ A, /* b */ B, /* c */ C, /* d */ D, /* t */ T, TReturn],
     context: TContext,
@@ -8908,19 +6405,19 @@ trait JQueryStatic extends js.Object {
     d: D
   ): js.Function1[/* t */ T, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -8938,22 +6435,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -8980,7 +6477,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -9001,26 +6498,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -9038,7 +6535,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E](
     funсtion: js.ThisFunction5[/* this */ TContext, /* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, TReturn],
     context: TContext,
@@ -9048,47 +6545,17 @@ trait JQueryStatic extends js.Object {
     d: D,
     e: E
   ): js.Function0[TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, T, U, V, W, X, Y](
     funсtion: js.Function7[/* a */ A, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn],
     context: js.UndefOr[scala.Nothing],
     a: A
   ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, T, U, V, W, X](
     funсtion: js.Function7[/* a */ A, /* b */ B, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn],
     context: js.UndefOr[scala.Nothing],
     a: A,
     b: B
   ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, T, U, V, W](
     funсtion: js.Function7[/* a */ A, /* b */ B, /* c */ C, /* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn],
     context: js.UndefOr[scala.Nothing],
@@ -9096,18 +6563,6 @@ trait JQueryStatic extends js.Object {
     b: B,
     c: C
   ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, T, U, V](
     funсtion: js.Function7[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* t */ T, /* u */ U, /* v */ V, TReturn],
     context: js.UndefOr[scala.Nothing],
@@ -9116,19 +6571,6 @@ trait JQueryStatic extends js.Object {
     c: C,
     d: D
   ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, T, U](
     funсtion: js.Function7[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* t */ T, /* u */ U, TReturn],
     context: js.UndefOr[scala.Nothing],
@@ -9138,20 +6580,6 @@ trait JQueryStatic extends js.Object {
     d: D,
     e: E
   ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, F, T](
     funсtion: js.Function7[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, /* t */ T, TReturn],
     context: js.UndefOr[scala.Nothing],
@@ -9162,29 +6590,6 @@ trait JQueryStatic extends js.Object {
     e: E,
     f: F
   ): js.Function1[/* t */ T, TReturn] = js.native
-  // region proxy
-  // #region proxy
-  // region (funсtion, null | undefined)
-  // #region (funсtion, null | undefined)
-  // region 0 to 7 additional arguments
-  // #region 0 to 7 additional arguments
-  // region 0 parameters
-  // #region 0 parameters
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, F, G](
     funсtion: js.Function7[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, /* g */ G, TReturn],
     context: js.UndefOr[scala.Nothing],
@@ -9197,29 +6602,29 @@ trait JQueryStatic extends js.Object {
     g: G
   ): js.Function0[TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, T, U, V, W, X, Y](
     funсtion: js.Function7[/* a */ A, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn],
     context: scala.Null,
     a: A
   ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, T, U, V, W, X](
     funсtion: js.Function7[/* a */ A, /* b */ B, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn],
     context: scala.Null,
@@ -9227,16 +6632,16 @@ trait JQueryStatic extends js.Object {
     b: B
   ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, T, U, V, W](
     funсtion: js.Function7[/* a */ A, /* b */ B, /* c */ C, /* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn],
     context: scala.Null,
@@ -9245,17 +6650,17 @@ trait JQueryStatic extends js.Object {
     c: C
   ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, T, U, V](
     funсtion: js.Function7[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* t */ T, /* u */ U, /* v */ V, TReturn],
     context: scala.Null,
@@ -9265,18 +6670,18 @@ trait JQueryStatic extends js.Object {
     d: D
   ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, T, U](
     funсtion: js.Function7[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* t */ T, /* u */ U, TReturn],
     context: scala.Null,
@@ -9287,19 +6692,19 @@ trait JQueryStatic extends js.Object {
     e: E
   ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, F, T](
     funсtion: js.Function7[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, /* t */ T, TReturn],
     context: scala.Null,
@@ -9319,20 +6724,20 @@ trait JQueryStatic extends js.Object {
   // region 0 parameters
   // #region 0 parameters
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @param g An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, F, G](
     funсtion: js.Function7[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, /* g */ G, TReturn],
     context: scala.Null,
@@ -9345,13 +6750,13 @@ trait JQueryStatic extends js.Object {
     g: G
   ): js.Function0[TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, T, U, V, W, X, Y, Z](
     funсtion: js.Function8[
       /* t */ T, 
@@ -9361,7 +6766,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ]
   ): js.Function8[
@@ -9372,18 +6777,18 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -9401,22 +6806,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -9443,7 +6848,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -9464,26 +6869,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -9501,21 +6906,21 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, T, U, V, W, X, Y](
     funсtion: js.ThisFunction6[/* this */ TContext, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn],
     context: TContext
   ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -9533,22 +6938,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -9575,7 +6980,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -9596,26 +7001,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -9633,23 +7038,23 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, T, U, V, W, X](
     funсtion: js.ThisFunction6[/* this */ TContext, /* a */ A, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn],
     context: TContext,
     a: A
   ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -9667,22 +7072,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -9709,7 +7114,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -9730,26 +7135,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -9767,7 +7172,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, T, U, V, W](
     funсtion: js.ThisFunction6[/* this */ TContext, /* a */ A, /* b */ B, /* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn],
     context: TContext,
@@ -9775,17 +7180,17 @@ trait JQueryStatic extends js.Object {
     b: B
   ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -9803,22 +7208,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -9845,7 +7250,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -9866,26 +7271,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -9903,7 +7308,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, T, U, V](
     funсtion: js.ThisFunction6[/* this */ TContext, /* a */ A, /* b */ B, /* c */ C, /* t */ T, /* u */ U, /* v */ V, TReturn],
     context: TContext,
@@ -9912,18 +7317,18 @@ trait JQueryStatic extends js.Object {
     c: C
   ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -9941,22 +7346,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -9983,7 +7388,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -10004,26 +7409,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -10041,7 +7446,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, T, U](
     funсtion: js.ThisFunction6[/* this */ TContext, /* a */ A, /* b */ B, /* c */ C, /* d */ D, /* t */ T, /* u */ U, TReturn],
     context: TContext,
@@ -10051,19 +7456,19 @@ trait JQueryStatic extends js.Object {
     d: D
   ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -10081,22 +7486,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -10123,7 +7528,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -10144,26 +7549,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -10181,7 +7586,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, T](
     funсtion: js.ThisFunction6[/* this */ TContext, /* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* t */ T, TReturn],
     context: TContext,
@@ -10192,20 +7597,20 @@ trait JQueryStatic extends js.Object {
     e: E
   ): js.Function1[/* t */ T, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -10223,22 +7628,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -10265,7 +7670,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -10286,26 +7691,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -10323,7 +7728,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, F](
     funсtion: js.ThisFunction6[/* this */ TContext, /* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, TReturn],
     context: TContext,
@@ -10334,33 +7739,12 @@ trait JQueryStatic extends js.Object {
     e: E,
     f: F
   ): js.Function0[TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, T, U, V, W, X, Y](
     funсtion: js.Function8[/* a */ A, /* b */ B, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn],
     context: js.UndefOr[scala.Nothing],
     a: A,
     b: B
   ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, T, U, V, W, X](
     funсtion: js.Function8[/* a */ A, /* b */ B, /* c */ C, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn],
     context: js.UndefOr[scala.Nothing],
@@ -10368,18 +7752,6 @@ trait JQueryStatic extends js.Object {
     b: B,
     c: C
   ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, T, U, V, W](
     funсtion: js.Function8[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn],
     context: js.UndefOr[scala.Nothing],
@@ -10388,19 +7760,6 @@ trait JQueryStatic extends js.Object {
     c: C,
     d: D
   ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, T, U, V](
     funсtion: js.Function8[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* t */ T, /* u */ U, /* v */ V, TReturn],
     context: js.UndefOr[scala.Nothing],
@@ -10410,20 +7769,6 @@ trait JQueryStatic extends js.Object {
     d: D,
     e: E
   ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, F, T, U](
     funсtion: js.Function8[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, /* t */ T, /* u */ U, TReturn],
     context: js.UndefOr[scala.Nothing],
@@ -10434,24 +7779,6 @@ trait JQueryStatic extends js.Object {
     e: E,
     f: F
   ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
-  // #endregion
-  // region 1 parameters
-  // #region 1 parameters
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, F, G, T](
     funсtion: js.Function8[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, /* g */ G, /* t */ T, TReturn],
     context: js.UndefOr[scala.Nothing],
@@ -10464,15 +7791,15 @@ trait JQueryStatic extends js.Object {
     g: G
   ): js.Function1[/* t */ T, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, T, U, V, W, X, Y](
     funсtion: js.Function8[/* a */ A, /* b */ B, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn],
     context: scala.Null,
@@ -10480,16 +7807,16 @@ trait JQueryStatic extends js.Object {
     b: B
   ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, T, U, V, W, X](
     funсtion: js.Function8[/* a */ A, /* b */ B, /* c */ C, /* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn],
     context: scala.Null,
@@ -10498,17 +7825,17 @@ trait JQueryStatic extends js.Object {
     c: C
   ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, T, U, V, W](
     funсtion: js.Function8[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn],
     context: scala.Null,
@@ -10518,18 +7845,18 @@ trait JQueryStatic extends js.Object {
     d: D
   ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, T, U, V](
     funсtion: js.Function8[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* t */ T, /* u */ U, /* v */ V, TReturn],
     context: scala.Null,
@@ -10540,19 +7867,19 @@ trait JQueryStatic extends js.Object {
     e: E
   ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, F, T, U](
     funсtion: js.Function8[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, /* t */ T, /* u */ U, TReturn],
     context: scala.Null,
@@ -10567,20 +7894,20 @@ trait JQueryStatic extends js.Object {
   // region 1 parameters
   // #region 1 parameters
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @param g An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, F, G, T](
     funсtion: js.Function8[/* a */ A, /* b */ B, /* c */ C, /* d */ D, /* e */ E, /* f */ F, /* g */ G, /* t */ T, TReturn],
     context: scala.Null,
@@ -10592,15 +7919,6 @@ trait JQueryStatic extends js.Object {
     f: F,
     g: G
   ): js.Function1[/* t */ T, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, T, U, V, W, X, Y, Z](
     funсtion: js.Function9[
       /* a */ A, 
@@ -10611,7 +7929,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: js.UndefOr[scala.Nothing],
@@ -10624,18 +7942,18 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, T, U, V, W, X, Y, Z](
     funсtion: js.Function9[
       /* a */ A, 
@@ -10646,7 +7964,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: scala.Null,
@@ -10659,19 +7977,19 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -10689,22 +8007,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -10731,7 +8049,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -10752,26 +8070,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -10789,7 +8107,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, T, U, V, W, X, Y](
     funсtion: js.ThisFunction7[
       /* this */ TContext, 
@@ -10806,16 +8124,16 @@ trait JQueryStatic extends js.Object {
     a: A
   ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -10833,22 +8151,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -10875,7 +8193,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -10896,26 +8214,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -10933,7 +8251,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, T, U, V, W, X](
     funсtion: js.ThisFunction7[
       /* this */ TContext, 
@@ -10951,17 +8269,17 @@ trait JQueryStatic extends js.Object {
     b: B
   ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -10979,22 +8297,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -11021,7 +8339,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -11042,26 +8360,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -11079,7 +8397,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, T, U, V, W](
     funсtion: js.ThisFunction7[
       /* this */ TContext, 
@@ -11098,18 +8416,18 @@ trait JQueryStatic extends js.Object {
     c: C
   ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -11127,22 +8445,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -11169,7 +8487,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -11190,26 +8508,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -11227,7 +8545,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, T, U, V](
     funсtion: js.ThisFunction7[
       /* this */ TContext, 
@@ -11247,19 +8565,19 @@ trait JQueryStatic extends js.Object {
     d: D
   ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -11277,22 +8595,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -11319,7 +8637,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -11340,26 +8658,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -11377,7 +8695,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, T, U](
     funсtion: js.ThisFunction7[
       /* this */ TContext, 
@@ -11398,20 +8716,20 @@ trait JQueryStatic extends js.Object {
     e: E
   ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -11429,22 +8747,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -11471,7 +8789,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -11492,26 +8810,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -11529,7 +8847,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, F, T](
     funсtion: js.ThisFunction7[
       /* this */ TContext, 
@@ -11559,21 +8877,21 @@ trait JQueryStatic extends js.Object {
   // region 0 parameters
   // #region 0 parameters
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @param g An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -11591,22 +8909,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -11633,7 +8951,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -11654,26 +8972,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -11691,7 +9009,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, F, G](
     funсtion: js.ThisFunction7[
       /* this */ TContext, 
@@ -11714,14 +9032,14 @@ trait JQueryStatic extends js.Object {
     g: G
   ): js.Function0[TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -11739,22 +9057,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -11781,7 +9099,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -11802,26 +9120,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -11839,7 +9157,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, T, U, V, W, X, Y, Z](
     funсtion: js.ThisFunction8[
       /* this */ TContext, 
@@ -11850,7 +9168,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: TContext
@@ -11862,19 +9180,9 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, T, U, V, W, X, Y, Z](
     funсtion: js.Function10[
       /* a */ A, 
@@ -11886,7 +9194,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: js.UndefOr[scala.Nothing],
@@ -11900,19 +9208,19 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, T, U, V, W, X, Y, Z](
     funсtion: js.Function10[
       /* a */ A, 
@@ -11924,7 +9232,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: scala.Null,
@@ -11938,20 +9246,9 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, T, U, V, W, X, Y](
     funсtion: js.Function9[
       /* a */ A, 
@@ -11970,18 +9267,6 @@ trait JQueryStatic extends js.Object {
     b: B,
     c: C
   ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, T, U, V, W, X](
     funсtion: js.Function9[
       /* a */ A, 
@@ -12001,19 +9286,6 @@ trait JQueryStatic extends js.Object {
     c: C,
     d: D
   ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, T, U, V, W](
     funсtion: js.Function9[
       /* a */ A, 
@@ -12034,20 +9306,6 @@ trait JQueryStatic extends js.Object {
     d: D,
     e: E
   ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, F, T, U, V](
     funсtion: js.Function9[
       /* a */ A, 
@@ -12069,24 +9327,6 @@ trait JQueryStatic extends js.Object {
     e: E,
     f: F
   ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
-  // #endregion
-  // region 2 parameters
-  // #region 2 parameters
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, F, G, T, U](
     funсtion: js.Function9[
       /* a */ A, 
@@ -12110,16 +9350,16 @@ trait JQueryStatic extends js.Object {
     g: G
   ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, T, U, V, W, X, Y](
     funсtion: js.Function9[
       /* a */ A, 
@@ -12139,17 +9379,17 @@ trait JQueryStatic extends js.Object {
     c: C
   ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, T, U, V, W, X](
     funсtion: js.Function9[
       /* a */ A, 
@@ -12170,18 +9410,18 @@ trait JQueryStatic extends js.Object {
     d: D
   ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, T, U, V, W](
     funсtion: js.Function9[
       /* a */ A, 
@@ -12203,19 +9443,19 @@ trait JQueryStatic extends js.Object {
     e: E
   ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, F, T, U, V](
     funсtion: js.Function9[
       /* a */ A, 
@@ -12241,20 +9481,20 @@ trait JQueryStatic extends js.Object {
   // region 2 parameters
   // #region 2 parameters
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @param g An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, F, G, T, U](
     funсtion: js.Function9[
       /* a */ A, 
@@ -12278,16 +9518,16 @@ trait JQueryStatic extends js.Object {
     g: G
   ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -12305,22 +9545,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -12347,7 +9587,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -12368,26 +9608,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -12405,7 +9645,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, T, U, V, W, X, Y](
     funсtion: js.ThisFunction8[
       /* this */ TContext, 
@@ -12424,17 +9664,17 @@ trait JQueryStatic extends js.Object {
     b: B
   ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -12452,22 +9692,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -12494,7 +9734,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -12515,26 +9755,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -12552,7 +9792,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, T, U, V, W, X](
     funсtion: js.ThisFunction8[
       /* this */ TContext, 
@@ -12572,18 +9812,18 @@ trait JQueryStatic extends js.Object {
     c: C
   ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -12601,22 +9841,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -12643,7 +9883,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -12664,26 +9904,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -12701,7 +9941,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, T, U, V, W](
     funсtion: js.ThisFunction8[
       /* this */ TContext, 
@@ -12722,19 +9962,19 @@ trait JQueryStatic extends js.Object {
     d: D
   ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -12752,22 +9992,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -12794,7 +10034,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -12815,26 +10055,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -12852,7 +10092,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, T, U, V](
     funсtion: js.ThisFunction8[
       /* this */ TContext, 
@@ -12874,20 +10114,20 @@ trait JQueryStatic extends js.Object {
     e: E
   ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -12905,22 +10145,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -12947,7 +10187,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -12968,26 +10208,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -13005,7 +10245,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, F, T, U](
     funсtion: js.ThisFunction8[
       /* this */ TContext, 
@@ -13031,21 +10271,21 @@ trait JQueryStatic extends js.Object {
   // region 1 parameters
   // #region 1 parameters
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @param g An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -13063,22 +10303,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -13105,7 +10345,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -13126,26 +10366,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -13163,7 +10403,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, F, G, T](
     funсtion: js.ThisFunction8[
       /* this */ TContext, 
@@ -13187,15 +10427,15 @@ trait JQueryStatic extends js.Object {
     g: G
   ): js.Function1[/* t */ T, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -13213,22 +10453,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -13255,7 +10495,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -13276,26 +10516,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -13313,7 +10553,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, T, U, V, W, X, Y, Z](
     funсtion: js.ThisFunction9[
       /* this */ TContext, 
@@ -13325,7 +10565,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: TContext,
@@ -13338,21 +10578,9 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, T, U, V, W, X, Y](
     funсtion: js.Function10[
       /* a */ A, 
@@ -13373,19 +10601,6 @@ trait JQueryStatic extends js.Object {
     c: C,
     d: D
   ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, T, U, V, W, X](
     funсtion: js.Function10[
       /* a */ A, 
@@ -13407,20 +10622,6 @@ trait JQueryStatic extends js.Object {
     d: D,
     e: E
   ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, F, T, U, V, W](
     funсtion: js.Function10[
       /* a */ A, 
@@ -13443,24 +10644,6 @@ trait JQueryStatic extends js.Object {
     e: E,
     f: F
   ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
-  // #endregion
-  // region 3 parameters
-  // #region 3 parameters
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, F, G, T, U, V](
     funсtion: js.Function10[
       /* a */ A, 
@@ -13485,17 +10668,17 @@ trait JQueryStatic extends js.Object {
     g: G
   ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, T, U, V, W, X, Y](
     funсtion: js.Function10[
       /* a */ A, 
@@ -13517,18 +10700,18 @@ trait JQueryStatic extends js.Object {
     d: D
   ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, T, U, V, W, X](
     funсtion: js.Function10[
       /* a */ A, 
@@ -13551,19 +10734,19 @@ trait JQueryStatic extends js.Object {
     e: E
   ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, F, T, U, V, W](
     funсtion: js.Function10[
       /* a */ A, 
@@ -13590,20 +10773,20 @@ trait JQueryStatic extends js.Object {
   // region 3 parameters
   // #region 3 parameters
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @param g An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, F, G, T, U, V](
     funсtion: js.Function10[
       /* a */ A, 
@@ -13627,17 +10810,6 @@ trait JQueryStatic extends js.Object {
     f: F,
     g: G
   ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, T, U, V, W, X, Y, Z](
     funсtion: js.Function11[
       /* a */ A, 
@@ -13650,7 +10822,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: js.UndefOr[scala.Nothing],
@@ -13665,20 +10837,20 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, T, U, V, W, X, Y, Z](
     funсtion: js.Function11[
       /* a */ A, 
@@ -13691,7 +10863,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: scala.Null,
@@ -13706,20 +10878,20 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -13737,22 +10909,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -13779,7 +10951,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -13800,26 +10972,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -13837,7 +11009,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, T, U, V, W, X, Y, Z](
     funсtion: js.ThisFunction10[
       /* this */ TContext, 
@@ -13850,7 +11022,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: TContext,
@@ -13864,21 +11036,21 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -13896,22 +11068,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -13938,7 +11110,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -13959,26 +11131,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -13996,7 +11168,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, T, U, V, W, X, Y](
     funсtion: js.ThisFunction9[
       /* this */ TContext, 
@@ -14017,18 +11189,18 @@ trait JQueryStatic extends js.Object {
     c: C
   ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -14046,22 +11218,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -14088,7 +11260,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -14109,26 +11281,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -14146,7 +11318,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, T, U, V, W, X](
     funсtion: js.ThisFunction9[
       /* this */ TContext, 
@@ -14168,19 +11340,19 @@ trait JQueryStatic extends js.Object {
     d: D
   ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -14198,22 +11370,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -14240,7 +11412,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -14261,26 +11433,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -14298,7 +11470,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, T, U, V, W](
     funсtion: js.ThisFunction9[
       /* this */ TContext, 
@@ -14321,20 +11493,20 @@ trait JQueryStatic extends js.Object {
     e: E
   ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -14352,22 +11524,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -14394,7 +11566,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -14415,26 +11587,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -14452,7 +11624,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, F, T, U, V](
     funсtion: js.ThisFunction9[
       /* this */ TContext, 
@@ -14479,21 +11651,21 @@ trait JQueryStatic extends js.Object {
   // region 2 parameters
   // #region 2 parameters
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @param g An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -14511,22 +11683,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -14553,7 +11725,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -14574,26 +11746,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -14611,7 +11783,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, F, G, T, U](
     funсtion: js.ThisFunction9[
       /* this */ TContext, 
@@ -14635,19 +11807,6 @@ trait JQueryStatic extends js.Object {
     f: F,
     g: G
   ): js.Function2[/* t */ T, /* u */ U, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, T, U, V, W, X, Y](
     funсtion: js.Function11[
       /* a */ A, 
@@ -14670,20 +11829,6 @@ trait JQueryStatic extends js.Object {
     d: D,
     e: E
   ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, F, T, U, V, W, X](
     funсtion: js.Function11[
       /* a */ A, 
@@ -14707,24 +11852,6 @@ trait JQueryStatic extends js.Object {
     e: E,
     f: F
   ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
-  // #endregion
-  // region 4 parameters
-  // #region 4 parameters
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, F, G, T, U, V, W](
     funсtion: js.Function11[
       /* a */ A, 
@@ -14750,18 +11877,18 @@ trait JQueryStatic extends js.Object {
     g: G
   ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, T, U, V, W, X, Y](
     funсtion: js.Function11[
       /* a */ A, 
@@ -14785,19 +11912,19 @@ trait JQueryStatic extends js.Object {
     e: E
   ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, F, T, U, V, W, X](
     funсtion: js.Function11[
       /* a */ A, 
@@ -14825,20 +11952,20 @@ trait JQueryStatic extends js.Object {
   // region 4 parameters
   // #region 4 parameters
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @param g An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, F, G, T, U, V, W](
     funсtion: js.Function11[
       /* a */ A, 
@@ -14863,18 +11990,6 @@ trait JQueryStatic extends js.Object {
     f: F,
     g: G
   ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, T, U, V, W, X, Y, Z](
     funсtion: js.Function12[
       /* a */ A, 
@@ -14888,7 +12003,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: js.UndefOr[scala.Nothing],
@@ -14904,21 +12019,21 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, T, U, V, W, X, Y, Z](
     funсtion: js.Function12[
       /* a */ A, 
@@ -14932,7 +12047,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: scala.Null,
@@ -14948,22 +12063,22 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -14981,22 +12096,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -15023,7 +12138,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -15044,26 +12159,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -15081,7 +12196,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, T, U, V, W, X, Y](
     funсtion: js.ThisFunction10[
       /* this */ TContext, 
@@ -15104,19 +12219,19 @@ trait JQueryStatic extends js.Object {
     d: D
   ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -15134,22 +12249,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -15176,7 +12291,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -15197,26 +12312,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -15234,7 +12349,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, T, U, V, W, X](
     funсtion: js.ThisFunction10[
       /* this */ TContext, 
@@ -15258,20 +12373,20 @@ trait JQueryStatic extends js.Object {
     e: E
   ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -15289,22 +12404,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -15331,7 +12446,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -15352,26 +12467,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -15389,7 +12504,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, F, T, U, V, W](
     funсtion: js.ThisFunction10[
       /* this */ TContext, 
@@ -15417,21 +12532,21 @@ trait JQueryStatic extends js.Object {
   // region 3 parameters
   // #region 3 parameters
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @param g An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -15449,22 +12564,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -15491,7 +12606,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -15512,26 +12627,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -15549,7 +12664,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, F, G, T, U, V](
     funсtion: js.ThisFunction10[
       /* this */ TContext, 
@@ -15575,17 +12690,17 @@ trait JQueryStatic extends js.Object {
     g: G
   ): js.Function3[/* t */ T, /* u */ U, /* v */ V, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -15603,22 +12718,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -15645,7 +12760,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -15666,26 +12781,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -15703,7 +12818,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, T, U, V, W, X, Y, Z](
     funсtion: js.ThisFunction11[
       /* this */ TContext, 
@@ -15717,7 +12832,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: TContext,
@@ -15732,23 +12847,9 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, F, T, U, V, W, X, Y](
     funсtion: js.Function12[
       /* a */ A, 
@@ -15773,24 +12874,6 @@ trait JQueryStatic extends js.Object {
     e: E,
     f: F
   ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
-  // #endregion
-  // region 5 parameters
-  // #region 5 parameters
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, F, G, T, U, V, W, X](
     funсtion: js.Function12[
       /* a */ A, 
@@ -15817,19 +12900,19 @@ trait JQueryStatic extends js.Object {
     g: G
   ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, F, T, U, V, W, X, Y](
     funсtion: js.Function12[
       /* a */ A, 
@@ -15858,20 +12941,20 @@ trait JQueryStatic extends js.Object {
   // region 5 parameters
   // #region 5 parameters
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @param g An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, F, G, T, U, V, W, X](
     funсtion: js.Function12[
       /* a */ A, 
@@ -15897,19 +12980,6 @@ trait JQueryStatic extends js.Object {
     f: F,
     g: G
   ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, T, U, V, W, X, Y, Z](
     funсtion: js.Function13[
       /* a */ A, 
@@ -15924,7 +12994,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: js.UndefOr[scala.Nothing],
@@ -15941,22 +13011,22 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, T, U, V, W, X, Y, Z](
     funсtion: js.Function13[
       /* a */ A, 
@@ -15971,7 +13041,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: scala.Null,
@@ -15988,23 +13058,23 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -16022,22 +13092,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -16064,7 +13134,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -16085,26 +13155,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -16122,7 +13192,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, T, U, V, W, X, Y](
     funсtion: js.ThisFunction11[
       /* this */ TContext, 
@@ -16147,20 +13217,20 @@ trait JQueryStatic extends js.Object {
     e: E
   ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -16178,22 +13248,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -16220,7 +13290,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -16241,26 +13311,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -16278,7 +13348,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, F, T, U, V, W, X](
     funсtion: js.ThisFunction11[
       /* this */ TContext, 
@@ -16307,21 +13377,21 @@ trait JQueryStatic extends js.Object {
   // region 4 parameters
   // #region 4 parameters
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @param g An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -16339,22 +13409,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -16381,7 +13451,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -16402,26 +13472,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -16439,7 +13509,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, F, G, T, U, V, W](
     funсtion: js.ThisFunction11[
       /* this */ TContext, 
@@ -16466,18 +13536,18 @@ trait JQueryStatic extends js.Object {
     g: G
   ): js.Function4[/* t */ T, /* u */ U, /* v */ V, /* w */ W, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -16495,22 +13565,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -16537,7 +13607,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -16558,26 +13628,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -16595,7 +13665,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, T, U, V, W, X, Y, Z](
     funсtion: js.ThisFunction12[
       /* this */ TContext, 
@@ -16610,7 +13680,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: TContext,
@@ -16626,27 +13696,9 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
-  // #endregion
-  // region 6 parameters
-  // #region 6 parameters
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, F, G, T, U, V, W, X, Y](
     funсtion: js.Function13[
       /* a */ A, 
@@ -16677,20 +13729,20 @@ trait JQueryStatic extends js.Object {
   // region 6 parameters
   // #region 6 parameters
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @param g An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, F, G, T, U, V, W, X, Y](
     funсtion: js.Function13[
       /* a */ A, 
@@ -16717,20 +13769,6 @@ trait JQueryStatic extends js.Object {
     f: F,
     g: G
   ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, F, T, U, V, W, X, Y, Z](
     funсtion: js.Function14[
       /* a */ A, 
@@ -16746,7 +13784,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: js.UndefOr[scala.Nothing],
@@ -16764,23 +13802,23 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, F, T, U, V, W, X, Y, Z](
     funсtion: js.Function14[
       /* a */ A, 
@@ -16796,7 +13834,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: scala.Null,
@@ -16814,24 +13852,24 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -16849,22 +13887,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -16891,7 +13929,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -16912,26 +13950,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -16949,7 +13987,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, F, T, U, V, W, X, Y](
     funсtion: js.ThisFunction12[
       /* this */ TContext, 
@@ -16979,21 +14017,21 @@ trait JQueryStatic extends js.Object {
   // region 5 parameters
   // #region 5 parameters
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @param g An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -17011,22 +14049,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -17053,7 +14091,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -17074,26 +14112,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -17111,7 +14149,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, F, G, T, U, V, W, X](
     funсtion: js.ThisFunction12[
       /* this */ TContext, 
@@ -17139,19 +14177,19 @@ trait JQueryStatic extends js.Object {
     g: G
   ): js.Function5[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -17169,22 +14207,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -17211,7 +14249,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -17232,26 +14270,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -17269,7 +14307,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, T, U, V, W, X, Y, Z](
     funсtion: js.ThisFunction13[
       /* this */ TContext, 
@@ -17285,7 +14323,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: TContext,
@@ -17302,27 +14340,9 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
-  // #endregion
-  // region 7+ parameters
-  // #region 7+ parameters
-  /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
   def proxy[TReturn, A, B, C, D, E, F, G, T, U, V, W, X, Y, Z](
     funсtion: js.Function15[
       /* a */ A, 
@@ -17339,7 +14359,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: js.UndefOr[scala.Nothing],
@@ -17358,27 +14378,27 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
   // #endregion
   // region 7+ parameters
   // #region 7+ parameters
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.9
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       */
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @param g An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.9
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    */
   def proxy[TReturn, A, B, C, D, E, F, G, T, U, V, W, X, Y, Z](
     funсtion: js.Function15[
       /* a */ A, 
@@ -17395,7 +14415,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: scala.Null,
@@ -17414,28 +14434,28 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
   // #endregion
   // region 6 parameters
   // #region 6 parameters
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @param g An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -17453,22 +14473,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -17495,7 +14515,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -17516,26 +14536,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -17553,7 +14573,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, F, G, T, U, V, W, X, Y](
     funсtion: js.ThisFunction13[
       /* this */ TContext, 
@@ -17582,20 +14602,20 @@ trait JQueryStatic extends js.Object {
     g: G
   ): js.Function6[/* t */ T, /* u */ U, /* v */ V, /* w */ W, /* x */ X, /* y */ Y, TReturn] = js.native
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -17613,22 +14633,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -17655,7 +14675,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -17676,26 +14696,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -17713,7 +14733,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, F, T, U, V, W, X, Y, Z](
     funсtion: js.ThisFunction14[
       /* this */ TContext, 
@@ -17730,7 +14750,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: TContext,
@@ -17748,28 +14768,28 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
   // #endregion
   // region 7+ parameters
   // #region 7+ parameters
   /**
-       * Takes a function and returns a new one that will always have a particular context.
-       * @param funсtion The function whose context will be changed.
-       * @param context The object to which the context (`this`) of the function should be set.
-       * @param a An argument to be passed to the function referenced in the `function` argument.
-       * @param b An argument to be passed to the function referenced in the `function` argument.
-       * @param c An argument to be passed to the function referenced in the `function` argument.
-       * @param d An argument to be passed to the function referenced in the `function` argument.
-       * @param e An argument to be passed to the function referenced in the `function` argument.
-       * @param f An argument to be passed to the function referenced in the `function` argument.
-       * @param g An argument to be passed to the function referenced in the `function` argument.
-       * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
-       * @since 1.4
-       * @since 1.6
-       * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
-       * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
+    * Takes a function and returns a new one that will always have a particular context.
+    * @param funсtion The function whose context will be changed.
+    * @param context The object to which the context (`this`) of the function should be set.
+    * @param a An argument to be passed to the function referenced in the `function` argument.
+    * @param b An argument to be passed to the function referenced in the `function` argument.
+    * @param c An argument to be passed to the function referenced in the `function` argument.
+    * @param d An argument to be passed to the function referenced in the `function` argument.
+    * @param e An argument to be passed to the function referenced in the `function` argument.
+    * @param f An argument to be passed to the function referenced in the `function` argument.
+    * @param g An argument to be passed to the function referenced in the `function` argument.
+    * @see \`{@link https://api.jquery.com/jQuery.proxy/ }\`
+    * @since 1.4
+    * @since 1.6
+    * @deprecated ​ Deprecated since 3.3. Use \`{@link Function#bind }\`.
+    * @example ​ ````Change the context of functions bound to a click handler using the &quot;function, context&quot; signature. Unbind the first handler after first click.
   ```html
   <!doctype html>
   <html lang="en">
@@ -17787,22 +14807,22 @@ trait JQueryStatic extends js.Object {
   var me = {
     type: "zombie",
     test: function( event ) {
-      // Without proxy, `this` would refer to the event target
-      // use event.target to reference that element.
-      var element = event.target;
-      $( element ).css( "background-color", "red" );
+    // Without proxy, `this` would refer to the event target
+    // use event.target to reference that element.
+    var element = event.target;
+    $( element ).css( "background-color", "red" );
   ​
-      // With proxy, `this` refers to the me object encapsulating
-      // this function.
-      $( "#log" ).append( "Hello " + this.type + "<br>" );
-      $( "#test" ).off( "click", this.test );
+    // With proxy, `this` refers to the me object encapsulating
+    // this function.
+    $( "#log" ).append( "Hello " + this.type + "<br>" );
+    $( "#test" ).off( "click", this.test );
     }
   };
   ​
   var you = {
     type: "person",
     test: function( event ) {
-      $( "#log" ).append( this.type + " " );
+    $( "#log" ).append( this.type + " " );
     }
   };
   ​
@@ -17829,7 +14849,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Change the context of a function bound to the click handler,
+    * @example ​ ````Change the context of a function bound to the click handler,
   ```html
   <!doctype html>
   <html lang="en">
@@ -17850,26 +14870,26 @@ trait JQueryStatic extends js.Object {
   ​
     // Note that event comes *after* one and two
     test: function( one, two, event ) {
-      $( "#log" )
+    $( "#log" )
   ​
-        // `one` maps to `you`, the 1st additional
-        // argument in the $.proxy function call
-        .append( "<h3>Hello " + one.type + ":</h3>" )
+    // `one` maps to `you`, the 1st additional
+    // argument in the $.proxy function call
+    .append( "<h3>Hello " + one.type + ":</h3>" )
   ​
-        // The `this` keyword refers to `me`
-        // (the 2nd, context, argument of $.proxy)
-        .append( "I am a " + this.type + ", " )
+    // The `this` keyword refers to `me`
+    // (the 2nd, context, argument of $.proxy)
+    .append( "I am a " + this.type + ", " )
   ​
-        // `two` maps to `they`, the 2nd additional
-        // argument in the $.proxy function call
-        .append( "and they are " + two.type + ".<br>" )
+    // `two` maps to `they`, the 2nd additional
+    // argument in the $.proxy function call
+    .append( "and they are " + two.type + ".<br>" )
   ​
-        // The event type is "click"
-        .append( "Thanks for " + event.type + "ing." )
+    // The event type is "click"
+    .append( "Thanks for " + event.type + "ing." )
   ​
-        // The clicked element is `event.target`,
-        // and its type is "button"
-        .append( "the " + event.target.type + "." );
+    // The clicked element is `event.target`,
+    // and its type is "button"
+    .append( "the " + event.target.type + "." );
     }
   };
   ​
@@ -17887,7 +14907,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def proxy[TContext, TReturn, A, B, C, D, E, F, G, T, U, V, W, X, Y, Z](
     funсtion: js.ThisFunction15[
       /* this */ TContext, 
@@ -17905,7 +14925,7 @@ trait JQueryStatic extends js.Object {
       /* x */ X, 
       /* y */ Y, 
       /* z */ Z, 
-      /* repeated */js.Any, 
+      /* repeated */ js.Any, 
       TReturn
     ],
     context: TContext,
@@ -17924,20 +14944,20 @@ trait JQueryStatic extends js.Object {
     /* x */ X, 
     /* y */ Y, 
     /* z */ Z, 
-    /* repeated */js.Any, 
+    /* repeated */ js.Any, 
     TReturn
   ] = js.native
   // #endregion
   // #endregion
   /**
-       * Manipulate the queue of functions to be executed on the matched element.
-       * @param element A DOM element where the array of queued functions is attached.
-       * @param queueName A string containing the name of the queue. Defaults to fx, the standard effects queue.
-       * @param newQueue The new function to add to the queue.
-       *                 An array of functions to replace the current queue contents.
-       * @see \`{@link https://api.jquery.com/jQuery.queue/ }\`
-       * @since 1.3
-       * @example ​ ````Show the length of the queue.
+    * Manipulate the queue of functions to be executed on the matched element.
+    * @param element A DOM element where the array of queued functions is attached.
+    * @param queueName A string containing the name of the queue. Defaults to fx, the standard effects queue.
+    * @param newQueue The new function to add to the queue.
+    *                 An array of functions to replace the current queue contents.
+    * @see \`{@link https://api.jquery.com/jQuery.queue/ }\`
+    * @since 1.3
+    * @example ​ ````Show the length of the queue.
   ```html
   <!doctype html>
   <html lang="en">
@@ -17946,20 +14966,20 @@ trait JQueryStatic extends js.Object {
     <title>jQuery.queue demo</title>
     <style>
     div {
-      margin: 3px;
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      left: 0px;
-      top: 30px;
-      background: green;
-      display: none;
+    margin: 3px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    background: green;
+    display: none;
     }
     div.newcolor {
-      background: blue;
+    background: blue;
     }
     span {
-      color: red;
+    color: red;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -17978,18 +14998,18 @@ trait JQueryStatic extends js.Object {
   ​
   function runIt() {
     $( "div" )
-      .show( "slow" )
-      .animate({
-        left: "+=200"
-      }, 2000 )
-      .slideToggle( 1000 )
-      .slideToggle( "fast" )
-      .animate({
-        left: "-=200"
-      }, 1500 )
-      .hide( "slow" )
-      .show( 1200 )
-      .slideUp( "normal", runIt );
+    .show( "slow" )
+    .animate({
+    left: "+=200"
+    }, 2000 )
+    .slideToggle( 1000 )
+    .slideToggle( "fast" )
+    .animate({
+    left: "-=200"
+    }, 1500 )
+    .hide( "slow" )
+    .show( 1200 )
+    .slideUp( "normal", runIt );
   }
   ​
   runIt();
@@ -17998,7 +15018,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Queue a custom function.
+    * @example ​ ````Queue a custom function.
   ```html
   <!doctype html>
   <html lang="en">
@@ -18007,17 +15027,17 @@ trait JQueryStatic extends js.Object {
     <title>jQuery.queue demo</title>
     <style>
     div {
-      margin: 3px;
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      left: 0px;
-      top: 30px;
-      background: green;
-      display: none;
+    margin: 3px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    background: green;
+    display: none;
     }
     div.newcolor {
-      background: blue;
+    background: blue;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -18030,16 +15050,16 @@ trait JQueryStatic extends js.Object {
   <script>
   $( document.body ).click(function() {
     var divs = $( "div" )
-      .show( "slow" )
-      .animate({ left: "+=200" }, 2000 );
+    .show( "slow" )
+    .animate({ left: "+=200" }, 2000 );
     jQuery.queue( divs[ 0 ], "fx", function() {
-      $( this ).addClass( "newcolor" );
-      jQuery.dequeue( this );
+    $( this ).addClass( "newcolor" );
+    jQuery.dequeue( this );
     });
     divs.animate({ left: "-=200" }, 500 );
     jQuery.queue( divs[ 0 ], "fx", function() {
-      $( this ).removeClass( "newcolor" );
-      jQuery.dequeue( this );
+    $( this ).removeClass( "newcolor" );
+    jQuery.dequeue( this );
     });
     divs.slideUp();
   });
@@ -18048,7 +15068,7 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Set a queue array to delete the queue.
+    * @example ​ ````Set a queue array to delete the queue.
   ```html
   <!doctype html>
   <html lang="en">
@@ -18057,17 +15077,17 @@ trait JQueryStatic extends js.Object {
     <title>jQuery.queue demo</title>
     <style>
     div {
-      margin: 3px;
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      left: 0px;
-      top: 30px;
-      background: green;
-      display: none;
+    margin: 3px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0px;
+    top: 30px;
+    background: green;
+    display: none;
     }
     div.newcolor {
-      background: blue;
+    background: blue;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -18081,16 +15101,16 @@ trait JQueryStatic extends js.Object {
   <script>
   $( "#start" ).click(function() {
     var divs = $( "div" )
-      .show( "slow" )
-      .animate({ left: "+=200" }, 5000 );
+    .show( "slow" )
+    .animate({ left: "+=200" }, 5000 );
     jQuery.queue( divs[ 0 ], "fx", function() {
-      $( this ).addClass( "newcolor" );
-      jQuery.dequeue( this );
+    $( this ).addClass( "newcolor" );
+    jQuery.dequeue( this );
     });
     divs.animate({ left: "-=200" }, 1500 );
     jQuery.queue( divs[ 0 ], "fx", function() {
-      $( this ).removeClass( "newcolor" );
-      jQuery.dequeue( this );
+    $( this ).removeClass( "newcolor" );
+    jQuery.dequeue( this );
     });
     divs.slideUp();
   });
@@ -18103,576 +15123,38 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def queue[T /* <: stdLib.Element */](element: T): jqueryLib.JQueryNs.Queue[T] = js.native
-  // #endregion
-  // #endregion
-  /**
-       * Manipulate the queue of functions to be executed on the matched element.
-       * @param element A DOM element where the array of queued functions is attached.
-       * @param queueName A string containing the name of the queue. Defaults to fx, the standard effects queue.
-       * @param newQueue The new function to add to the queue.
-       *                 An array of functions to replace the current queue contents.
-       * @see \`{@link https://api.jquery.com/jQuery.queue/ }\`
-       * @since 1.3
-       * @example ​ ````Show the length of the queue.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.queue demo</title>
-    <style>
-    div {
-      margin: 3px;
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      left: 0px;
-      top: 30px;
-      background: green;
-      display: none;
-    }
-    div.newcolor {
-      background: blue;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <button id="show">Show Length of Queue</button>
-  <span></span>
-  <div></div>
-    ​
-  <script>
-  $( "#show" ).click(function() {
-    var n = jQuery.queue( $( "div" )[ 0 ], "fx" );
-    $( "span" ).text( "Queue length is: " + n.length );
-  });
-  ​
-  function runIt() {
-    $( "div" )
-      .show( "slow" )
-      .animate({
-        left: "+=200"
-      }, 2000 )
-      .slideToggle( 1000 )
-      .slideToggle( "fast" )
-      .animate({
-        left: "-=200"
-      }, 1500 )
-      .hide( "slow" )
-      .show( 1200 )
-      .slideUp( "normal", runIt );
-  }
-  ​
-  runIt();
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````Queue a custom function.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.queue demo</title>
-    <style>
-    div {
-      margin: 3px;
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      left: 0px;
-      top: 30px;
-      background: green;
-      display: none;
-    }
-    div.newcolor {
-      background: blue;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  Click here...
-  <div></div>
-  ​
-  <script>
-  $( document.body ).click(function() {
-    var divs = $( "div" )
-      .show( "slow" )
-      .animate({ left: "+=200" }, 2000 );
-    jQuery.queue( divs[ 0 ], "fx", function() {
-      $( this ).addClass( "newcolor" );
-      jQuery.dequeue( this );
-    });
-    divs.animate({ left: "-=200" }, 500 );
-    jQuery.queue( divs[ 0 ], "fx", function() {
-      $( this ).removeClass( "newcolor" );
-      jQuery.dequeue( this );
-    });
-    divs.slideUp();
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````Set a queue array to delete the queue.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.queue demo</title>
-    <style>
-    div {
-      margin: 3px;
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      left: 0px;
-      top: 30px;
-      background: green;
-      display: none;
-    }
-    div.newcolor {
-      background: blue;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <button id="start">Start</button>
-  <button id="stop">Stop</button>
-  <div></div>
-  ​
-  <script>
-  $( "#start" ).click(function() {
-    var divs = $( "div" )
-      .show( "slow" )
-      .animate({ left: "+=200" }, 5000 );
-    jQuery.queue( divs[ 0 ], "fx", function() {
-      $( this ).addClass( "newcolor" );
-      jQuery.dequeue( this );
-    });
-    divs.animate({ left: "-=200" }, 1500 );
-    jQuery.queue( divs[ 0 ], "fx", function() {
-      $( this ).removeClass( "newcolor" );
-      jQuery.dequeue( this );
-    });
-    divs.slideUp();
-  });
-  $( "#stop" ).click(function() {
-    jQuery.queue( $( "div" )[ 0 ], "fx", [] );
-    $( "div" ).stop();
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def queue[T /* <: stdLib.Element */](element: T, queueName: java.lang.String): jqueryLib.JQueryNs.Queue[T] = js.native
-  // #endregion
-  // #endregion
-  /**
-       * Manipulate the queue of functions to be executed on the matched element.
-       * @param element A DOM element where the array of queued functions is attached.
-       * @param queueName A string containing the name of the queue. Defaults to fx, the standard effects queue.
-       * @param newQueue The new function to add to the queue.
-       *                 An array of functions to replace the current queue contents.
-       * @see \`{@link https://api.jquery.com/jQuery.queue/ }\`
-       * @since 1.3
-       * @example ​ ````Show the length of the queue.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.queue demo</title>
-    <style>
-    div {
-      margin: 3px;
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      left: 0px;
-      top: 30px;
-      background: green;
-      display: none;
-    }
-    div.newcolor {
-      background: blue;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <button id="show">Show Length of Queue</button>
-  <span></span>
-  <div></div>
-    ​
-  <script>
-  $( "#show" ).click(function() {
-    var n = jQuery.queue( $( "div" )[ 0 ], "fx" );
-    $( "span" ).text( "Queue length is: " + n.length );
-  });
-  ​
-  function runIt() {
-    $( "div" )
-      .show( "slow" )
-      .animate({
-        left: "+=200"
-      }, 2000 )
-      .slideToggle( 1000 )
-      .slideToggle( "fast" )
-      .animate({
-        left: "-=200"
-      }, 1500 )
-      .hide( "slow" )
-      .show( 1200 )
-      .slideUp( "normal", runIt );
-  }
-  ​
-  runIt();
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````Queue a custom function.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.queue demo</title>
-    <style>
-    div {
-      margin: 3px;
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      left: 0px;
-      top: 30px;
-      background: green;
-      display: none;
-    }
-    div.newcolor {
-      background: blue;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  Click here...
-  <div></div>
-  ​
-  <script>
-  $( document.body ).click(function() {
-    var divs = $( "div" )
-      .show( "slow" )
-      .animate({ left: "+=200" }, 2000 );
-    jQuery.queue( divs[ 0 ], "fx", function() {
-      $( this ).addClass( "newcolor" );
-      jQuery.dequeue( this );
-    });
-    divs.animate({ left: "-=200" }, 500 );
-    jQuery.queue( divs[ 0 ], "fx", function() {
-      $( this ).removeClass( "newcolor" );
-      jQuery.dequeue( this );
-    });
-    divs.slideUp();
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       * @example ​ ````Set a queue array to delete the queue.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.queue demo</title>
-    <style>
-    div {
-      margin: 3px;
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      left: 0px;
-      top: 30px;
-      background: green;
-      display: none;
-    }
-    div.newcolor {
-      background: blue;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <button id="start">Start</button>
-  <button id="stop">Stop</button>
-  <div></div>
-  ​
-  <script>
-  $( "#start" ).click(function() {
-    var divs = $( "div" )
-      .show( "slow" )
-      .animate({ left: "+=200" }, 5000 );
-    jQuery.queue( divs[ 0 ], "fx", function() {
-      $( this ).addClass( "newcolor" );
-      jQuery.dequeue( this );
-    });
-    divs.animate({ left: "-=200" }, 1500 );
-    jQuery.queue( divs[ 0 ], "fx", function() {
-      $( this ).removeClass( "newcolor" );
-      jQuery.dequeue( this );
-    });
-    divs.slideUp();
-  });
-  $( "#stop" ).click(function() {
-    jQuery.queue( $( "div" )[ 0 ], "fx", [] );
-    $( "div" ).stop();
-  });
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def queue[T /* <: stdLib.Element */](
     element: T,
     queueName: java.lang.String,
     newQueue: jqueryLib.JQueryNs.TypeOrArray[jqueryLib.JQueryNs.QueueFunction[T]]
   ): jqueryLib.JQueryNs.Queue[T] = js.native
   /**
-       * Handles errors thrown synchronously in functions wrapped in jQuery().
-       * @param error An error thrown in the function wrapped in jQuery().
-       * @see \`{@link https://api.jquery.com/jQuery.readyException/ }\`
-       * @since 3.1
-       * @example ​ ````Pass the received error to console.error.
+    * Handles errors thrown synchronously in functions wrapped in jQuery().
+    * @param error An error thrown in the function wrapped in jQuery().
+    * @see \`{@link https://api.jquery.com/jQuery.readyException/ }\`
+    * @since 3.1
+    * @example ​ ````Pass the received error to console.error.
   ```javascript
   jQuery.readyException = function( error ) {
     console.error( error );
   };
   ```
-       */
+    */
   def readyException(error: stdLib.Error): js.Any = js.native
-  /**
-       * Remove a previously-stored piece of data.
-       * @param element A DOM element from which to remove data.
-       * @param name A string naming the piece of data to remove.
-       * @see \`{@link https://api.jquery.com/jQuery.removeData/ }\`
-       * @since 1.2.3
-       * @example ​ ````Set a data store for 2 names then remove one of them.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.removeData demo</title>
-    <style>
-    div {
-      margin: 2px;
-      color: blue;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div>value1 before creation: <span></span></div>
-  <div>value1 after creation: <span></span></div>
-  <div>value1 after removal: <span></span></div>
-  <div>value2 after removal: <span></span></div>
-  ​
-  <script>
-  var div = $( "div" )[ 0 ];
-  $( "span:eq(0)" ).text( "" + $( "div" ).data( "test1" ) );
-  jQuery.data( div, "test1", "VALUE-1" );
-  jQuery.data( div, "test2", "VALUE-2" );
-  $( "span:eq(1)" ).text( "" + jQuery.data( div, "test1" ) );
-  jQuery.removeData( div, "test1" );
-  $( "span:eq(2)" ).text( "" + jQuery.data( div, "test1" ) );
-  $( "span:eq(3)" ).text( "" + jQuery.data( div, "test2" ) );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def removeData(element: jqueryLib.JQueryNs.PlainObject[_]): scala.Unit = js.native
-  /**
-       * Remove a previously-stored piece of data.
-       * @param element A DOM element from which to remove data.
-       * @param name A string naming the piece of data to remove.
-       * @see \`{@link https://api.jquery.com/jQuery.removeData/ }\`
-       * @since 1.2.3
-       * @example ​ ````Set a data store for 2 names then remove one of them.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.removeData demo</title>
-    <style>
-    div {
-      margin: 2px;
-      color: blue;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div>value1 before creation: <span></span></div>
-  <div>value1 after creation: <span></span></div>
-  <div>value1 after removal: <span></span></div>
-  <div>value2 after removal: <span></span></div>
-  ​
-  <script>
-  var div = $( "div" )[ 0 ];
-  $( "span:eq(0)" ).text( "" + $( "div" ).data( "test1" ) );
-  jQuery.data( div, "test1", "VALUE-1" );
-  jQuery.data( div, "test2", "VALUE-2" );
-  $( "span:eq(1)" ).text( "" + jQuery.data( div, "test1" ) );
-  jQuery.removeData( div, "test1" );
-  $( "span:eq(2)" ).text( "" + jQuery.data( div, "test1" ) );
-  $( "span:eq(3)" ).text( "" + jQuery.data( div, "test2" ) );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def removeData(element: jqueryLib.JQueryNs.PlainObject[_], name: java.lang.String): scala.Unit = js.native
-  /**
-       * Remove a previously-stored piece of data.
-       * @param element A DOM element from which to remove data.
-       * @param name A string naming the piece of data to remove.
-       * @see \`{@link https://api.jquery.com/jQuery.removeData/ }\`
-       * @since 1.2.3
-       * @example ​ ````Set a data store for 2 names then remove one of them.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.removeData demo</title>
-    <style>
-    div {
-      margin: 2px;
-      color: blue;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div>value1 before creation: <span></span></div>
-  <div>value1 after creation: <span></span></div>
-  <div>value1 after removal: <span></span></div>
-  <div>value2 after removal: <span></span></div>
-  ​
-  <script>
-  var div = $( "div" )[ 0 ];
-  $( "span:eq(0)" ).text( "" + $( "div" ).data( "test1" ) );
-  jQuery.data( div, "test1", "VALUE-1" );
-  jQuery.data( div, "test2", "VALUE-2" );
-  $( "span:eq(1)" ).text( "" + jQuery.data( div, "test1" ) );
-  jQuery.removeData( div, "test1" );
-  $( "span:eq(2)" ).text( "" + jQuery.data( div, "test1" ) );
-  $( "span:eq(3)" ).text( "" + jQuery.data( div, "test2" ) );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def removeData(element: stdLib.Document): scala.Unit = js.native
-  /**
-       * Remove a previously-stored piece of data.
-       * @param element A DOM element from which to remove data.
-       * @param name A string naming the piece of data to remove.
-       * @see \`{@link https://api.jquery.com/jQuery.removeData/ }\`
-       * @since 1.2.3
-       * @example ​ ````Set a data store for 2 names then remove one of them.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.removeData demo</title>
-    <style>
-    div {
-      margin: 2px;
-      color: blue;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div>value1 before creation: <span></span></div>
-  <div>value1 after creation: <span></span></div>
-  <div>value1 after removal: <span></span></div>
-  <div>value2 after removal: <span></span></div>
-  ​
-  <script>
-  var div = $( "div" )[ 0 ];
-  $( "span:eq(0)" ).text( "" + $( "div" ).data( "test1" ) );
-  jQuery.data( div, "test1", "VALUE-1" );
-  jQuery.data( div, "test2", "VALUE-2" );
-  $( "span:eq(1)" ).text( "" + jQuery.data( div, "test1" ) );
-  jQuery.removeData( div, "test1" );
-  $( "span:eq(2)" ).text( "" + jQuery.data( div, "test1" ) );
-  $( "span:eq(3)" ).text( "" + jQuery.data( div, "test2" ) );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def removeData(element: stdLib.Document, name: java.lang.String): scala.Unit = js.native
   /**
-       * Remove a previously-stored piece of data.
-       * @param element A DOM element from which to remove data.
-       * @param name A string naming the piece of data to remove.
-       * @see \`{@link https://api.jquery.com/jQuery.removeData/ }\`
-       * @since 1.2.3
-       * @example ​ ````Set a data store for 2 names then remove one of them.
+    * Remove a previously-stored piece of data.
+    * @param element A DOM element from which to remove data.
+    * @param name A string naming the piece of data to remove.
+    * @see \`{@link https://api.jquery.com/jQuery.removeData/ }\`
+    * @since 1.2.3
+    * @example ​ ````Set a data store for 2 names then remove one of them.
   ```html
   <!doctype html>
   <html lang="en">
@@ -18681,11 +15163,11 @@ trait JQueryStatic extends js.Object {
     <title>jQuery.removeData demo</title>
     <style>
     div {
-      margin: 2px;
-      color: blue;
+    margin: 2px;
+    color: blue;
     }
     span {
-      color: red;
+    color: red;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -18711,233 +15193,62 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def removeData(element: stdLib.Element): scala.Unit = js.native
-  /**
-       * Remove a previously-stored piece of data.
-       * @param element A DOM element from which to remove data.
-       * @param name A string naming the piece of data to remove.
-       * @see \`{@link https://api.jquery.com/jQuery.removeData/ }\`
-       * @since 1.2.3
-       * @example ​ ````Set a data store for 2 names then remove one of them.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.removeData demo</title>
-    <style>
-    div {
-      margin: 2px;
-      color: blue;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div>value1 before creation: <span></span></div>
-  <div>value1 after creation: <span></span></div>
-  <div>value1 after removal: <span></span></div>
-  <div>value2 after removal: <span></span></div>
-  ​
-  <script>
-  var div = $( "div" )[ 0 ];
-  $( "span:eq(0)" ).text( "" + $( "div" ).data( "test1" ) );
-  jQuery.data( div, "test1", "VALUE-1" );
-  jQuery.data( div, "test2", "VALUE-2" );
-  $( "span:eq(1)" ).text( "" + jQuery.data( div, "test1" ) );
-  jQuery.removeData( div, "test1" );
-  $( "span:eq(2)" ).text( "" + jQuery.data( div, "test1" ) );
-  $( "span:eq(3)" ).text( "" + jQuery.data( div, "test2" ) );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def removeData(element: stdLib.Element, name: java.lang.String): scala.Unit = js.native
-  /**
-       * Remove a previously-stored piece of data.
-       * @param element A DOM element from which to remove data.
-       * @param name A string naming the piece of data to remove.
-       * @see \`{@link https://api.jquery.com/jQuery.removeData/ }\`
-       * @since 1.2.3
-       * @example ​ ````Set a data store for 2 names then remove one of them.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.removeData demo</title>
-    <style>
-    div {
-      margin: 2px;
-      color: blue;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div>value1 before creation: <span></span></div>
-  <div>value1 after creation: <span></span></div>
-  <div>value1 after removal: <span></span></div>
-  <div>value2 after removal: <span></span></div>
-  ​
-  <script>
-  var div = $( "div" )[ 0 ];
-  $( "span:eq(0)" ).text( "" + $( "div" ).data( "test1" ) );
-  jQuery.data( div, "test1", "VALUE-1" );
-  jQuery.data( div, "test2", "VALUE-2" );
-  $( "span:eq(1)" ).text( "" + jQuery.data( div, "test1" ) );
-  jQuery.removeData( div, "test1" );
-  $( "span:eq(2)" ).text( "" + jQuery.data( div, "test1" ) );
-  $( "span:eq(3)" ).text( "" + jQuery.data( div, "test2" ) );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def removeData(element: stdLib.Window): scala.Unit = js.native
-  /**
-       * Remove a previously-stored piece of data.
-       * @param element A DOM element from which to remove data.
-       * @param name A string naming the piece of data to remove.
-       * @see \`{@link https://api.jquery.com/jQuery.removeData/ }\`
-       * @since 1.2.3
-       * @example ​ ````Set a data store for 2 names then remove one of them.
-  ```html
-  <!doctype html>
-  <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>jQuery.removeData demo</title>
-    <style>
-    div {
-      margin: 2px;
-      color: blue;
-    }
-    span {
-      color: red;
-    }
-    </style>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-  </head>
-  <body>
-  ​
-  <div>value1 before creation: <span></span></div>
-  <div>value1 after creation: <span></span></div>
-  <div>value1 after removal: <span></span></div>
-  <div>value2 after removal: <span></span></div>
-  ​
-  <script>
-  var div = $( "div" )[ 0 ];
-  $( "span:eq(0)" ).text( "" + $( "div" ).data( "test1" ) );
-  jQuery.data( div, "test1", "VALUE-1" );
-  jQuery.data( div, "test2", "VALUE-2" );
-  $( "span:eq(1)" ).text( "" + jQuery.data( div, "test1" ) );
-  jQuery.removeData( div, "test1" );
-  $( "span:eq(2)" ).text( "" + jQuery.data( div, "test1" ) );
-  $( "span:eq(3)" ).text( "" + jQuery.data( div, "test2" ) );
-  </script>
-  ​
-  </body>
-  </html>
-  ```
-       */
   def removeData(element: stdLib.Window, name: java.lang.String): scala.Unit = js.native
   /**
-       * Creates an object containing a set of properties ready to be used in the definition of custom animations.
-       * @param duration_complete_settings _&#x40;param_ `duration_complete_settings`
-       * <br>
-       * * `duration` — A string or number determining how long the animation will run. <br>
-       * * `complete` — A function to call once the animation is complete, called once per matched element. <br>
-       * * `settings` —
-       * @see \`{@link https://api.jquery.com/jQuery.speed/ }\`
-       * @since 1.0
-       * @since 1.1
-       */
+    * Creates an object containing a set of properties ready to be used in the definition of custom animations.
+    * @param duration_complete_settings _&#x40;param_ `duration_complete_settings`
+    * <br>
+    * * `duration` — A string or number determining how long the animation will run. <br>
+    * * `complete` — A function to call once the animation is complete, called once per matched element. <br>
+    * * `settings` —
+    * @see \`{@link https://api.jquery.com/jQuery.speed/ }\`
+    * @since 1.0
+    * @since 1.1
+    */
   def speed[TElement /* <: stdLib.Element */](): jqueryLib.JQueryNs.EffectsOptions[TElement] = js.native
-  /**
-       * Creates an object containing a set of properties ready to be used in the definition of custom animations.
-       * @param duration_complete_settings _&#x40;param_ `duration_complete_settings`
-       * <br>
-       * * `duration` — A string or number determining how long the animation will run. <br>
-       * * `complete` — A function to call once the animation is complete, called once per matched element. <br>
-       * * `settings` —
-       * @see \`{@link https://api.jquery.com/jQuery.speed/ }\`
-       * @since 1.0
-       * @since 1.1
-       */
   def speed[TElement /* <: stdLib.Element */](
     duration_complete_settings: jqueryLib.JQueryNs.Duration | jqueryLib.JQueryNs.SpeedSettings[TElement]
   ): jqueryLib.JQueryNs.EffectsOptions[TElement] = js.native
-  /**
-       * Creates an object containing a set of properties ready to be used in the definition of custom animations.
-       * @param duration_complete_settings _&#x40;param_ `duration_complete_settings`
-       * <br>
-       * * `duration` — A string or number determining how long the animation will run. <br>
-       * * `complete` — A function to call once the animation is complete, called once per matched element. <br>
-       * * `settings` —
-       * @see \`{@link https://api.jquery.com/jQuery.speed/ }\`
-       * @since 1.0
-       * @since 1.1
-       */
   def speed[TElement /* <: stdLib.Element */](duration_complete_settings: js.ThisFunction0[/* this */ TElement, scala.Unit]): jqueryLib.JQueryNs.EffectsOptions[TElement] = js.native
   /**
-       * Creates an object containing a set of properties ready to be used in the definition of custom animations.
-       * @param duration A string or number determining how long the animation will run.
-       * @param easing_complete _&#x40;param_ `easing_complete`
-       * <br>
-       * * `easing` — A string indicating which easing function to use for the transition. <br>
-       * * `complete` — A function to call once the animation is complete, called once per matched element.
-       * @see \`{@link https://api.jquery.com/jQuery.speed/ }\`
-       * @since 1.0
-       * @since 1.1
-       */
+    * Creates an object containing a set of properties ready to be used in the definition of custom animations.
+    * @param duration A string or number determining how long the animation will run.
+    * @param easing_complete _&#x40;param_ `easing_complete`
+    * <br>
+    * * `easing` — A string indicating which easing function to use for the transition. <br>
+    * * `complete` — A function to call once the animation is complete, called once per matched element.
+    * @see \`{@link https://api.jquery.com/jQuery.speed/ }\`
+    * @since 1.0
+    * @since 1.1
+    */
   def speed[TElement /* <: stdLib.Element */](duration: jqueryLib.JQueryNs.Duration, easing_complete: java.lang.String): jqueryLib.JQueryNs.EffectsOptions[TElement] = js.native
-  /**
-       * Creates an object containing a set of properties ready to be used in the definition of custom animations.
-       * @param duration A string or number determining how long the animation will run.
-       * @param easing_complete _&#x40;param_ `easing_complete`
-       * <br>
-       * * `easing` — A string indicating which easing function to use for the transition. <br>
-       * * `complete` — A function to call once the animation is complete, called once per matched element.
-       * @see \`{@link https://api.jquery.com/jQuery.speed/ }\`
-       * @since 1.0
-       * @since 1.1
-       */
   def speed[TElement /* <: stdLib.Element */](
     duration: jqueryLib.JQueryNs.Duration,
     easing_complete: js.ThisFunction0[/* this */ TElement, scala.Unit]
   ): jqueryLib.JQueryNs.EffectsOptions[TElement] = js.native
   /**
-       * Creates an object containing a set of properties ready to be used in the definition of custom animations.
-       * @param duration A string or number determining how long the animation will run.
-       * @param easing A string indicating which easing function to use for the transition.
-       * @param complete A function to call once the animation is complete, called once per matched element.
-       * @see \`{@link https://api.jquery.com/jQuery.speed/ }\`
-       * @since 1.1
-       */
+    * Creates an object containing a set of properties ready to be used in the definition of custom animations.
+    * @param duration A string or number determining how long the animation will run.
+    * @param easing A string indicating which easing function to use for the transition.
+    * @param complete A function to call once the animation is complete, called once per matched element.
+    * @see \`{@link https://api.jquery.com/jQuery.speed/ }\`
+    * @since 1.1
+    */
   def speed[TElement /* <: stdLib.Element */](
     duration: jqueryLib.JQueryNs.Duration,
     easing: java.lang.String,
     complete: js.ThisFunction0[/* this */ TElement, scala.Unit]
   ): jqueryLib.JQueryNs.EffectsOptions[TElement] = js.native
   /**
-       * Remove the whitespace from the beginning and end of a string.
-       * @param str The string to trim.
-       * @see \`{@link https://api.jquery.com/jQuery.trim/ }\`
-       * @since 1.0
-       * @example ​ ````Remove the white spaces at the start and at the end of the string.
+    * Remove the whitespace from the beginning and end of a string.
+    * @param str The string to trim.
+    * @see \`{@link https://api.jquery.com/jQuery.trim/ }\`
+    * @since 1.0
+    * @example ​ ````Remove the white spaces at the start and at the end of the string.
   ```html
   <!doctype html>
   <html lang="en">
@@ -18960,23 +15271,23 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       * @example ​ ````Remove the white spaces at the start and at the end of the string.
+    * @example ​ ````Remove the white spaces at the start and at the end of the string.
   ```javascript
   $.trim("    hello, how are you?    ");
   ```
-       * @example ​ ````Remove the white spaces at the start and at the end of the string.
+    * @example ​ ````Remove the white spaces at the start and at the end of the string.
   ```javascript
   $.trim("    hello, how are you?    ");
   ```
-       */
+    */
   def trim(str: java.lang.String): java.lang.String = js.native
   /**
-       * Determine the internal JavaScript [[Class]] of an object.
-       * @param obj Object to get the internal JavaScript [[Class]] of.
-       * @see \`{@link https://api.jquery.com/jQuery.type/ }\`
-       * @since 1.4.3
-       * @deprecated ​ Deprecated since 3.3. See \`{@link https://github.com/jquery/jquery/issues/3605 }\`.
-       * @example ​ ````Find out if the parameter is a RegExp.
+    * Determine the internal JavaScript [[Class]] of an object.
+    * @param obj Object to get the internal JavaScript [[Class]] of.
+    * @see \`{@link https://api.jquery.com/jQuery.type/ }\`
+    * @since 1.4.3
+    * @deprecated ​ Deprecated since 3.3. See \`{@link https://github.com/jquery/jquery/issues/3605 }\`.
+    * @example ​ ````Find out if the parameter is a RegExp.
   ```html
   <!doctype html>
   <html lang="en">
@@ -18996,19 +15307,19 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def `type`(obj: js.Any): jqueryLib.jqueryLibStrings.array | jqueryLib.jqueryLibStrings.boolean | jqueryLib.jqueryLibStrings.date | jqueryLib.jqueryLibStrings.error | jqueryLib.jqueryLibStrings.function | jqueryLib.jqueryLibStrings.`null` | jqueryLib.jqueryLibStrings.number | jqueryLib.jqueryLibStrings.`object` | jqueryLib.jqueryLibStrings.regexp | jqueryLib.jqueryLibStrings.string | jqueryLib.jqueryLibStrings.symbol | jqueryLib.jqueryLibStrings.undefined = js.native
   /**
-       * Sorts an array of DOM elements, in place, with the duplicates removed. Note that this only works on arrays of DOM elements, not strings or numbers.
-       * @param array The Array of DOM elements.
-       * @see \`{@link https://api.jquery.com/jQuery.unique/ }\`
-       * @since 1.1.3
-       * @deprecated ​ Deprecated since 3.0. Use \`{@link uniqueSort }\`.
-       *
-       * **Cause**: The fact that `jQuery.unique` sorted its results in DOM order was surprising to many who did not read the documentation carefully. As of jQuery 3.0 this function is being renamed to make it clear.
-       *
-       * **Solution**: Replace all uses of `jQuery.unique` with `jQuery.uniqueSort` which is the same function with a better name.
-       * @example ​ ````Removes any duplicate elements from the array of divs.
+    * Sorts an array of DOM elements, in place, with the duplicates removed. Note that this only works on arrays of DOM elements, not strings or numbers.
+    * @param array The Array of DOM elements.
+    * @see \`{@link https://api.jquery.com/jQuery.unique/ }\`
+    * @since 1.1.3
+    * @deprecated ​ Deprecated since 3.0. Use \`{@link uniqueSort }\`.
+    *
+    * **Cause**: The fact that `jQuery.unique` sorted its results in DOM order was surprising to many who did not read the documentation carefully. As of jQuery 3.0 this function is being renamed to make it clear.
+    *
+    * **Solution**: Replace all uses of `jQuery.unique` with `jQuery.uniqueSort` which is the same function with a better name.
+    * @example ​ ````Removes any duplicate elements from the array of divs.
   ```html
   <!doctype html>
   <html lang="en">
@@ -19017,7 +15328,7 @@ trait JQueryStatic extends js.Object {
     <title>jQuery.unique demo</title>
     <style>
     div {
-      color: blue;
+    color: blue;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -19047,15 +15358,15 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def unique[T /* <: stdLib.Element */](array: js.Array[T]): js.Array[T] = js.native
   /**
-       * Sorts an array of DOM elements, in place, with the duplicates removed. Note that this only works on arrays of DOM elements, not strings or numbers.
-       * @param array The Array of DOM elements.
-       * @see \`{@link https://api.jquery.com/jQuery.uniqueSort/ }\`
-       * @since 1.12
-       * @since 2.2
-       * @example ​ ````Removes any duplicate elements from the array of divs.
+    * Sorts an array of DOM elements, in place, with the duplicates removed. Note that this only works on arrays of DOM elements, not strings or numbers.
+    * @param array The Array of DOM elements.
+    * @see \`{@link https://api.jquery.com/jQuery.uniqueSort/ }\`
+    * @since 1.12
+    * @since 2.2
+    * @example ​ ````Removes any duplicate elements from the array of divs.
   ```html
   <!doctype html>
   <html lang="en">
@@ -19064,7 +15375,7 @@ trait JQueryStatic extends js.Object {
     <title>jQuery.uniqueSort demo</title>
     <style>
     div {
-      color: blue;
+    color: blue;
     }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -19094,369 +15405,159 @@ trait JQueryStatic extends js.Object {
   </body>
   </html>
   ```
-       */
+    */
   def uniqueSort[T /* <: stdLib.Element */](array: js.Array[T]): js.Array[T] = js.native
   /**
-       * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
-       * @param deferreds Zero or more Thenable objects.
-       * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
-       * @since 1.5
-       * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
+    * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
+    * @param deferreds Zero or more Thenable objects.
+    * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
+    * @since 1.5
+    * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
   ```javascript
   $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) ).done(function( a1, a2 ) {
     // a1 and a2 are arguments resolved for the page1 and page2 ajax requests, respectively.
     // Each argument is an array with the following structure: [ data, statusText, jqXHR ]
     var data = a1[ 0 ] + a2[ 0 ]; // a1[ 0 ] = "Whip", a2[ 0 ] = " It"
     if ( /Whip It/.test( data ) ) {
-      alert( "We got what we came for!" );
+    alert( "We got what we came for!" );
     }
   });
   ```
-       * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
+    * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
   ```javascript
   $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) )
     .then( myFunc, myFailure );
   ```
-       */
+    */
   def when(deferreds: js.Any*): jqueryLib.JQueryNs.Promise[_, _, scala.Nothing] = js.native
-  /**
-       * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
-       * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
-       * @since 1.5
-       * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
-  ```javascript
-  $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) ).done(function( a1, a2 ) {
-    // a1 and a2 are arguments resolved for the page1 and page2 ajax requests, respectively.
-    // Each argument is an array with the following structure: [ data, statusText, jqXHR ]
-    var data = a1[ 0 ] + a2[ 0 ]; // a1[ 0 ] = "Whip", a2[ 0 ] = " It"
-    if ( /Whip It/.test( data ) ) {
-      alert( "We got what we came for!" );
-    }
-  });
-  ```
-       * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
-  ```javascript
-  $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) )
-    .then( myFunc, myFailure );
-  ```
-       */
   def when[TR1, TJ1](deferred: TR1): jqueryLib.JQueryNs.Promise[TR1, TJ1, scala.Nothing] = js.native
   /**
-       * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
-       * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
-       * @since 1.5
-       * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
+    * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
+    * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
+    * @since 1.5
+    * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
   ```javascript
   $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) ).done(function( a1, a2 ) {
     // a1 and a2 are arguments resolved for the page1 and page2 ajax requests, respectively.
     // Each argument is an array with the following structure: [ data, statusText, jqXHR ]
     var data = a1[ 0 ] + a2[ 0 ]; // a1[ 0 ] = "Whip", a2[ 0 ] = " It"
     if ( /Whip It/.test( data ) ) {
-      alert( "We got what we came for!" );
+    alert( "We got what we came for!" );
     }
   });
   ```
-       * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
+    * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
   ```javascript
   $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) )
     .then( myFunc, myFailure );
   ```
-       */
+    */
   def when[TR1, TJ1](deferred: jqueryLib.JQueryNs.Promise[TR1, TJ1, _]): jqueryLib.JQueryNs.Promise[TR1, TJ1, scala.Nothing] = js.native
-  /**
-       * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
-       * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
-       * @since 1.5
-       * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
-  ```javascript
-  $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) ).done(function( a1, a2 ) {
-    // a1 and a2 are arguments resolved for the page1 and page2 ajax requests, respectively.
-    // Each argument is an array with the following structure: [ data, statusText, jqXHR ]
-    var data = a1[ 0 ] + a2[ 0 ]; // a1[ 0 ] = "Whip", a2[ 0 ] = " It"
-    if ( /Whip It/.test( data ) ) {
-      alert( "We got what we came for!" );
-    }
-  });
-  ```
-       * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
-  ```javascript
-  $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) )
-    .then( myFunc, myFailure );
-  ```
-       */
   def when[TR1, TJ1](deferred: jqueryLib.JQueryNs.Thenable[TR1]): jqueryLib.JQueryNs.Promise[TR1, TJ1, scala.Nothing] = js.native
-  /**
-       * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
-       * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
-       * @since 1.5
-       * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
-  ```javascript
-  $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) ).done(function( a1, a2 ) {
-    // a1 and a2 are arguments resolved for the page1 and page2 ajax requests, respectively.
-    // Each argument is an array with the following structure: [ data, statusText, jqXHR ]
-    var data = a1[ 0 ] + a2[ 0 ]; // a1[ 0 ] = "Whip", a2[ 0 ] = " It"
-    if ( /Whip It/.test( data ) ) {
-      alert( "We got what we came for!" );
-    }
-  });
-  ```
-       * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
-  ```javascript
-  $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) )
-    .then( myFunc, myFailure );
-  ```
-       */
   def when[TR1, UR1, TJ1, UJ1](deferredT: TR1, deferredU: UR1): jqueryLib.JQueryNs.Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
-  /**
-       * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
-       * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
-       * @since 1.5
-       * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
-  ```javascript
-  $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) ).done(function( a1, a2 ) {
-    // a1 and a2 are arguments resolved for the page1 and page2 ajax requests, respectively.
-    // Each argument is an array with the following structure: [ data, statusText, jqXHR ]
-    var data = a1[ 0 ] + a2[ 0 ]; // a1[ 0 ] = "Whip", a2[ 0 ] = " It"
-    if ( /Whip It/.test( data ) ) {
-      alert( "We got what we came for!" );
-    }
-  });
-  ```
-       * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
-  ```javascript
-  $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) )
-    .then( myFunc, myFailure );
-  ```
-       */
   def when[TR1, UR1, TJ1, UJ1](deferredT: TR1, deferredU: jqueryLib.JQueryNs.Promise[UR1, UJ1, _]): jqueryLib.JQueryNs.Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
-  /**
-       * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
-       * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
-       * @since 1.5
-       * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
-  ```javascript
-  $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) ).done(function( a1, a2 ) {
-    // a1 and a2 are arguments resolved for the page1 and page2 ajax requests, respectively.
-    // Each argument is an array with the following structure: [ data, statusText, jqXHR ]
-    var data = a1[ 0 ] + a2[ 0 ]; // a1[ 0 ] = "Whip", a2[ 0 ] = " It"
-    if ( /Whip It/.test( data ) ) {
-      alert( "We got what we came for!" );
-    }
-  });
-  ```
-       * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
-  ```javascript
-  $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) )
-    .then( myFunc, myFailure );
-  ```
-       */
   def when[TR1, UR1, TJ1, UJ1](deferredT: TR1, deferredU: jqueryLib.JQueryNs.Thenable[UR1]): jqueryLib.JQueryNs.Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
-  /**
-       * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
-       * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
-       * @since 1.5
-       * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
-  ```javascript
-  $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) ).done(function( a1, a2 ) {
-    // a1 and a2 are arguments resolved for the page1 and page2 ajax requests, respectively.
-    // Each argument is an array with the following structure: [ data, statusText, jqXHR ]
-    var data = a1[ 0 ] + a2[ 0 ]; // a1[ 0 ] = "Whip", a2[ 0 ] = " It"
-    if ( /Whip It/.test( data ) ) {
-      alert( "We got what we came for!" );
-    }
-  });
-  ```
-       * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
-  ```javascript
-  $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) )
-    .then( myFunc, myFailure );
-  ```
-       */
   def when[TR1, UR1, TJ1, UJ1](deferredT: jqueryLib.JQueryNs.Promise[TR1, TJ1, _], deferredU: UR1): jqueryLib.JQueryNs.Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
   /**
-       * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
-       * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
-       * @since 1.5
-       * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
+    * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
+    * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
+    * @since 1.5
+    * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
   ```javascript
   $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) ).done(function( a1, a2 ) {
     // a1 and a2 are arguments resolved for the page1 and page2 ajax requests, respectively.
     // Each argument is an array with the following structure: [ data, statusText, jqXHR ]
     var data = a1[ 0 ] + a2[ 0 ]; // a1[ 0 ] = "Whip", a2[ 0 ] = " It"
     if ( /Whip It/.test( data ) ) {
-      alert( "We got what we came for!" );
+    alert( "We got what we came for!" );
     }
   });
   ```
-       * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
+    * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
   ```javascript
   $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) )
     .then( myFunc, myFailure );
   ```
-       */
+    */
   def when[TR1, UR1, TJ1, UJ1](
     deferredT: jqueryLib.JQueryNs.Promise[TR1, TJ1, _],
     deferredU: jqueryLib.JQueryNs.Promise[UR1, UJ1, _]
   ): jqueryLib.JQueryNs.Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
-  /**
-       * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
-       * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
-       * @since 1.5
-       * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
-  ```javascript
-  $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) ).done(function( a1, a2 ) {
-    // a1 and a2 are arguments resolved for the page1 and page2 ajax requests, respectively.
-    // Each argument is an array with the following structure: [ data, statusText, jqXHR ]
-    var data = a1[ 0 ] + a2[ 0 ]; // a1[ 0 ] = "Whip", a2[ 0 ] = " It"
-    if ( /Whip It/.test( data ) ) {
-      alert( "We got what we came for!" );
-    }
-  });
-  ```
-       * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
-  ```javascript
-  $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) )
-    .then( myFunc, myFailure );
-  ```
-       */
   def when[TR1, UR1, TJ1, UJ1](deferredT: jqueryLib.JQueryNs.Promise[TR1, TJ1, _], deferredU: jqueryLib.JQueryNs.Thenable[UR1]): jqueryLib.JQueryNs.Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
-  /**
-       * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
-       * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
-       * @since 1.5
-       * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
-  ```javascript
-  $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) ).done(function( a1, a2 ) {
-    // a1 and a2 are arguments resolved for the page1 and page2 ajax requests, respectively.
-    // Each argument is an array with the following structure: [ data, statusText, jqXHR ]
-    var data = a1[ 0 ] + a2[ 0 ]; // a1[ 0 ] = "Whip", a2[ 0 ] = " It"
-    if ( /Whip It/.test( data ) ) {
-      alert( "We got what we came for!" );
-    }
-  });
-  ```
-       * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
-  ```javascript
-  $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) )
-    .then( myFunc, myFailure );
-  ```
-       */
   def when[TR1, UR1, TJ1, UJ1](deferredT: jqueryLib.JQueryNs.Thenable[TR1], deferredU: UR1): jqueryLib.JQueryNs.Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
-  /**
-       * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
-       * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
-       * @since 1.5
-       * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
-  ```javascript
-  $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) ).done(function( a1, a2 ) {
-    // a1 and a2 are arguments resolved for the page1 and page2 ajax requests, respectively.
-    // Each argument is an array with the following structure: [ data, statusText, jqXHR ]
-    var data = a1[ 0 ] + a2[ 0 ]; // a1[ 0 ] = "Whip", a2[ 0 ] = " It"
-    if ( /Whip It/.test( data ) ) {
-      alert( "We got what we came for!" );
-    }
-  });
-  ```
-       * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
-  ```javascript
-  $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) )
-    .then( myFunc, myFailure );
-  ```
-       */
   def when[TR1, UR1, TJ1, UJ1](deferredT: jqueryLib.JQueryNs.Thenable[TR1], deferredU: jqueryLib.JQueryNs.Promise[UR1, UJ1, _]): jqueryLib.JQueryNs.Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
-  /**
-       * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
-       * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
-       * @since 1.5
-       * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
-  ```javascript
-  $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) ).done(function( a1, a2 ) {
-    // a1 and a2 are arguments resolved for the page1 and page2 ajax requests, respectively.
-    // Each argument is an array with the following structure: [ data, statusText, jqXHR ]
-    var data = a1[ 0 ] + a2[ 0 ]; // a1[ 0 ] = "Whip", a2[ 0 ] = " It"
-    if ( /Whip It/.test( data ) ) {
-      alert( "We got what we came for!" );
-    }
-  });
-  ```
-       * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
-  ```javascript
-  $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) )
-    .then( myFunc, myFailure );
-  ```
-       */
   def when[TR1, UR1, TJ1, UJ1](deferredT: jqueryLib.JQueryNs.Thenable[TR1], deferredU: jqueryLib.JQueryNs.Thenable[UR1]): jqueryLib.JQueryNs.Promise2[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing] = js.native
   /**
-       * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
-       * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
-       * @since 1.5
-       * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
+    * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
+    * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
+    * @since 1.5
+    * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
   ```javascript
   $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) ).done(function( a1, a2 ) {
     // a1 and a2 are arguments resolved for the page1 and page2 ajax requests, respectively.
     // Each argument is an array with the following structure: [ data, statusText, jqXHR ]
     var data = a1[ 0 ] + a2[ 0 ]; // a1[ 0 ] = "Whip", a2[ 0 ] = " It"
     if ( /Whip It/.test( data ) ) {
-      alert( "We got what we came for!" );
+    alert( "We got what we came for!" );
     }
   });
   ```
-       * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
+    * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
   ```javascript
   $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) )
     .then( myFunc, myFailure );
   ```
-       */
+    */
   def when[TR1, UR1, VR1, TJ1, UJ1, VJ1](
     deferredT: (jqueryLib.JQueryNs.Promise[TR1, TJ1, _]) | jqueryLib.JQueryNs.Thenable[TR1] | TR1,
     deferredU: (jqueryLib.JQueryNs.Promise[UR1, UJ1, _]) | jqueryLib.JQueryNs.Thenable[UR1] | UR1,
     deferredV: (jqueryLib.JQueryNs.Promise[VR1, VJ1, _]) | jqueryLib.JQueryNs.Thenable[VR1] | VR1
   ): jqueryLib.JQueryNs.Promise3[TR1, TJ1, scala.Nothing, UR1, UJ1, scala.Nothing, VR1, VJ1, scala.Nothing] = js.native
   /**
-       * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
-       * @param deferreds Zero or more Thenable objects.
-       * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
-       * @since 1.5
-       * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
+    * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
+    * @param deferreds Zero or more Thenable objects.
+    * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
+    * @since 1.5
+    * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
   ```javascript
   $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) ).done(function( a1, a2 ) {
     // a1 and a2 are arguments resolved for the page1 and page2 ajax requests, respectively.
     // Each argument is an array with the following structure: [ data, statusText, jqXHR ]
     var data = a1[ 0 ] + a2[ 0 ]; // a1[ 0 ] = "Whip", a2[ 0 ] = " It"
     if ( /Whip It/.test( data ) ) {
-      alert( "We got what we came for!" );
+    alert( "We got what we came for!" );
     }
   });
   ```
-       * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
+    * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
   ```javascript
   $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) )
     .then( myFunc, myFailure );
   ```
-       */
+    */
   @JSName("when")
   def when_TR1TJ1[TR1, TJ1](deferreds: ((jqueryLib.JQueryNs.Promise[TR1, TJ1, _]) | jqueryLib.JQueryNs.Thenable[TR1] | TR1)*): jqueryLib.JQueryNs.Promise[TR1, TJ1, scala.Nothing] = js.native
   /**
-       * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
-       * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
-       * @since 1.5
-       * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
+    * Provides a way to execute callback functions based on zero or more Thenable objects, usually Deferred objects that represent asynchronous events.
+    * @see \`{@link https://api.jquery.com/jQuery.when/ }\`
+    * @since 1.5
+    * @example ​ ````Execute a function after two Ajax requests are successful. (See the jQuery.ajax() documentation for a complete description of success and error cases for an ajax request).
   ```javascript
   $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) ).done(function( a1, a2 ) {
     // a1 and a2 are arguments resolved for the page1 and page2 ajax requests, respectively.
     // Each argument is an array with the following structure: [ data, statusText, jqXHR ]
     var data = a1[ 0 ] + a2[ 0 ]; // a1[ 0 ] = "Whip", a2[ 0 ] = " It"
     if ( /Whip It/.test( data ) ) {
-      alert( "We got what we came for!" );
+    alert( "We got what we came for!" );
     }
   });
   ```
-       * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
+    * @example ​ ````Execute the function myFunc when both ajax requests are successful, or myFailure if either one has an error.
   ```javascript
   $.when( $.ajax( "/page1.php" ), $.ajax( "/page2.php" ) )
     .then( myFunc, myFailure );
   ```
-       */
+    */
   @JSName("when")
   def when_TR1TJ1TR2TJ2TR3TJ3Promise3[TR1, TJ1, TR2, TJ2, TR3, TJ3](
     deferredT: (jqueryLib.JQueryNs.Promise2[TR1, TJ1, _, TR2, TJ2, _]) | (jqueryLib.JQueryNs.Promise3[TR1, TJ1, _, TR2, TJ2, _, TR3, TJ3, _])

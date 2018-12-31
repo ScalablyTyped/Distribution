@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OverlayOptions extends js.Object {
   /** describes a blank overlay to be created. */
   var create: js.UndefOr[Create] = js.undefined

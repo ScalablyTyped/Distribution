@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 //////////////////////////////////
 // tasks.js
 //////////////////////////////////
-
 trait KnockoutTasks extends js.Object {
   def cancel(handle: scala.Double): scala.Unit
   def runEarly(): scala.Unit

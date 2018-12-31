@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EnabledIsselectable extends js.Object {
   var draggable: js.UndefOr[scala.Boolean] = js.undefined
   var enabled: js.UndefOr[scala.Boolean] = js.undefined

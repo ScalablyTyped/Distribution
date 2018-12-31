@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRule extends js.Object {
   @JSName("apply")
   def apply(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile): js.Array[RuleFailure]

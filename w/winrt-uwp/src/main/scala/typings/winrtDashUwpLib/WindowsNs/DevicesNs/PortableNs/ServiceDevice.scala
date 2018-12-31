@@ -15,16 +15,16 @@ abstract class ServiceDevice () extends js.Object
 @js.native
 object ServiceDevice extends js.Object {
   /**
-                   * Returns an Advanced Query Syntax (AQS) string that is used to enumerate device services of the specified ServiceDeviceType . This string is passed to the FindAllAsync or CreateWatcher method.
-                   * @param serviceType The type of service to identify.
-                   * @return The AQS string.
-                   */
+    * Returns an Advanced Query Syntax (AQS) string that is used to enumerate device services of the specified ServiceDeviceType . This string is passed to the FindAllAsync or CreateWatcher method.
+    * @param serviceType The type of service to identify.
+    * @return The AQS string.
+    */
   def getDeviceSelector(serviceType: winrtDashUwpLib.WindowsNs.DevicesNs.PortableNs.ServiceDeviceType): java.lang.String = js.native
   /**
-                   * An Advanced Query Syntax (AQS) string for identifying a device service by its GUIDs. This string is passed to the FindAllAsync or CreateWatcher method.
-                   * @param serviceId The service identifier.
-                   * @return The AQS string.
-                   */
+    * An Advanced Query Syntax (AQS) string for identifying a device service by its GUIDs. This string is passed to the FindAllAsync or CreateWatcher method.
+    * @param serviceId The service identifier.
+    * @return The AQS string.
+    */
   def getDeviceSelectorFromServiceId(serviceId: java.lang.String): java.lang.String = js.native
 }
 

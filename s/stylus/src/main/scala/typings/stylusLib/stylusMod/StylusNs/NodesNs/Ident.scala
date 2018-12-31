@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Ident extends Node {
   var isEmpty: scala.Boolean
   var mixin: scala.Boolean

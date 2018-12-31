@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @mixin
-         */
+  * @mixin
+  */
 @js.native
 trait IBDD extends js.Object {
   def any(clsConstructor: js.Function): js.Any = js.native

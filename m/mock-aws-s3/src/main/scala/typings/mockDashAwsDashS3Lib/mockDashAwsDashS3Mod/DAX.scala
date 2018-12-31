@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "DAX")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class DAX ()
   extends awsDashSdkLib.awsDashSdkMod.DAX {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsDaxMod.DAXNs.ClientConfiguration) = this()
 }
 

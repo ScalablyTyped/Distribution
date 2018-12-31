@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListItem extends js.Object {
   def deleteListItem(): scala.Unit
   def getDatePublished(): stdLib.Date

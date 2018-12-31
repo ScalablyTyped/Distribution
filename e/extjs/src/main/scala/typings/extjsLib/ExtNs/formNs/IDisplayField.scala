@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDisplayField
   extends extjsLib.ExtNs.formNs.fieldNs.IBase {
   /** [Config Option] (String) */

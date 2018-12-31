@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrderLineItemReturnInfo extends js.Object {
   /** How many days later the item can be returned. */
   var daysToReturn: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GraphQLInterfaceTypeConfig[TSource, TContext] extends js.Object {
   var astNode: js.UndefOr[
     graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.languageAstMod.InterfaceTypeDefinitionNode]
@@ -17,10 +16,10 @@ trait GraphQLInterfaceTypeConfig[TSource, TContext] extends js.Object {
   var fields: Thunk[GraphQLFieldConfigMap[TSource, TContext]]
   var name: java.lang.String
   /**
-       * Optionally provide a custom type resolver function. If one is not provided,
-       * the default implementation will call `isTypeOf` on each implementing
-       * Object type.
-       */
+    * Optionally provide a custom type resolver function. If one is not provided,
+    * the default implementation will call `isTypeOf` on each implementing
+    * Object type.
+    */
   var resolveType: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[GraphQLTypeResolver[TSource, TContext]]] = js.undefined
 }
 

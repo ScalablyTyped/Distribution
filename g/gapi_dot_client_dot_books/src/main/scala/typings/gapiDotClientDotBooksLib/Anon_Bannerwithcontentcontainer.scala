@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Bannerwithcontentcontainer extends js.Object {
   var banner_with_content_container: js.UndefOr[Anon_FillColorArgb] = js.undefined
   var subTitle: js.UndefOr[java.lang.String] = js.undefined

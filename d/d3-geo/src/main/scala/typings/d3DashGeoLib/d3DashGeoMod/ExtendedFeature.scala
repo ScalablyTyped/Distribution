@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExtendedFeature[GeometryType /* <: GeoGeometryObjects | scala.Null */, Properties /* <: geojsonLib.geojsonMod.GeoJsonProperties */]
   extends geojsonLib.geojsonMod.GeoJsonObject {
   var geometry: GeometryType

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IUsageRecord
   extends stripeLib.stripeMod.StripeNs.IObject {
   var id: java.lang.String

@@ -275,17 +275,11 @@ trait NavigationWindow
   				 * Animates this view.
   				 */
   def animate(animation: js.Any): scala.Unit = js.native
-  /**
-  				 * Animates this view.
-  				 */
   def animate(animation: js.Any, callback: js.Function1[/* param0 */ js.Any, _]): scala.Unit = js.native
   /**
   				 * Closes the window.
   				 */
   def close(): scala.Unit = js.native
-  /**
-  				 * Closes the window.
-  				 */
   def close(params: js.Any): scala.Unit = js.native
   /**
   				 * Closes a window and removes it from the navigation window.
@@ -556,25 +550,16 @@ trait NavigationWindow
   				 * Hides this view.
   				 */
   def hide(): scala.Unit = js.native
-  /**
-  				 * Hides this view.
-  				 */
   def hide(options: titaniumLib.AnimationOption): scala.Unit = js.native
   /**
   				 * Hides the navigation bar.
   				 */
   def hideNavBar(): scala.Unit = js.native
-  /**
-  				 * Hides the navigation bar.
-  				 */
   def hideNavBar(options: js.Any): scala.Unit = js.native
   /**
   				 * Makes the bottom toolbar invisible.
   				 */
   def hideToolbar(): scala.Unit = js.native
-  /**
-  				 * Makes the bottom toolbar invisible.
-  				 */
   def hideToolbar(options: js.Any): scala.Unit = js.native
   /**
   				 * Inserts a view at the specified position in the [children](Titanium.UI.View.children) array.
@@ -584,9 +569,6 @@ trait NavigationWindow
   				 * Opens the window.
   				 */
   def open(): scala.Unit = js.native
-  /**
-  				 * Opens the window.
-  				 */
   def open(params: titaniumLib.openWindowParams): scala.Unit = js.native
   /**
   				 * Opens a window within the navigation window.
@@ -860,25 +842,16 @@ trait NavigationWindow
   				 * Makes this view visible.
   				 */
   def show(): scala.Unit = js.native
-  /**
-  				 * Makes this view visible.
-  				 */
   def show(options: titaniumLib.AnimationOption): scala.Unit = js.native
   /**
   				 * Makes the navigation bar visible.
   				 */
   def showNavBar(): scala.Unit = js.native
-  /**
-  				 * Makes the navigation bar visible.
-  				 */
   def showNavBar(options: js.Any): scala.Unit = js.native
   /**
   				 * Makes the bottom toolbar visible.
   				 */
   def showToolbar(): scala.Unit = js.native
-  /**
-  				 * Makes the bottom toolbar visible.
-  				 */
   def showToolbar(options: js.Any): scala.Unit = js.native
   /**
   				 * Starts a batch update of this view's layout properties.
@@ -888,13 +861,7 @@ trait NavigationWindow
   				 * Returns an image of the rendered view, as a Blob.
   				 */
   def toImage(): titaniumLib.TitaniumNs.Blob = js.native
-  /**
-  				 * Returns an image of the rendered view, as a Blob.
-  				 */
   def toImage(callback: js.Function1[/* param0 */ titaniumLib.TitaniumNs.Blob, _]): titaniumLib.TitaniumNs.Blob = js.native
-  /**
-  				 * Returns an image of the rendered view, as a Blob.
-  				 */
   def toImage(
     callback: js.Function1[/* param0 */ titaniumLib.TitaniumNs.Blob, _],
     honorScaleFactor: scala.Boolean

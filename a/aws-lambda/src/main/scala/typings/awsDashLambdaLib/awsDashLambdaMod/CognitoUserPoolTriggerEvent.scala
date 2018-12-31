@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CognitoUserPoolTriggerEvent extends js.Object {
   var callerContext: awsDashLambdaLib.Anon_AwsSdkVersion
   var region: java.lang.String

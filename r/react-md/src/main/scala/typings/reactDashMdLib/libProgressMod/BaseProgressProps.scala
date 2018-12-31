@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseProgressProps
   extends reactDashMdLib.libMod.Props {
   var centered: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EstimatedRowSize30 extends js.Object {
   var autoHeight: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`false`
   var estimatedRowSize: reactDashVirtualizedLib.reactDashVirtualizedLibNumbers.`30`

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SocketOptions extends js.Object {
   var _fd: scala.Double
   var _ioevents: scala.Double

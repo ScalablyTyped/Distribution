@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PACKAGEDAPP extends js.Object {
   var EXTENSION: chromeDashAppsLib.chromeDashAppsLibStrings.extension
   var HOSTED_APP: chromeDashAppsLib.chromeDashAppsLibStrings.hosted_app

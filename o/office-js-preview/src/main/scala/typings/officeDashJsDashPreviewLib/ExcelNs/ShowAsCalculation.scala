@@ -9,155 +9,155 @@ import scala.scalajs.js.annotation._
 sealed trait ShowAsCalculation extends js.Object
 
 /**
-     *
-     * The ShowAs Calculation function for the Data Pivot Field.
-     *
-     * [Api set: ExcelApi 1.8]
-     */
+  *
+  * The ShowAs Calculation function for the Data Pivot Field.
+  *
+  * [Api set: ExcelApi 1.8]
+  */
 @JSGlobal("Excel.ShowAsCalculation")
 @js.native
 object ShowAsCalculation extends js.Object {
   /**
-           *
-           * Difference from the specified Base Field and Base Item.
-           *
-           */
+    *
+    * Difference from the specified Base Field and Base Item.
+    *
+    */
   @js.native
   sealed trait differenceFrom
     extends officeDashJsDashPreviewLib.ExcelNs.ShowAsCalculation
   
   /**
-           *
-           * Calculates the values as follows:
-              ((value in cell) x (Grand Total of Grand Totals)) / ((Grand Row Total) x (Grand Column Total))
-           *
-           */
+    *
+    * Calculates the values as follows:
+    ((value in cell) x (Grand Total of Grand Totals)) / ((Grand Row Total) x (Grand Column Total))
+    *
+    */
   @js.native
   sealed trait index
     extends officeDashJsDashPreviewLib.ExcelNs.ShowAsCalculation
   
   /**
-           *
-           * No calculation is applied.
-           *
-           */
+    *
+    * No calculation is applied.
+    *
+    */
   @js.native
   sealed trait none
     extends officeDashJsDashPreviewLib.ExcelNs.ShowAsCalculation
   
   /**
-           *
-           * Difference from the specified Base Field and Base Item.
-           *
-           */
+    *
+    * Difference from the specified Base Field and Base Item.
+    *
+    */
   @js.native
   sealed trait percentDifferenceFrom
     extends officeDashJsDashPreviewLib.ExcelNs.ShowAsCalculation
   
   /**
-           *
-           * Percent of the specified Base Field and Base Item.
-           *
-           */
+    *
+    * Percent of the specified Base Field and Base Item.
+    *
+    */
   @js.native
   sealed trait percentOf
     extends officeDashJsDashPreviewLib.ExcelNs.ShowAsCalculation
   
   /**
-           *
-           * Percent of the column total.
-           *
-           */
+    *
+    * Percent of the column total.
+    *
+    */
   @js.native
   sealed trait percentOfColumnTotal
     extends officeDashJsDashPreviewLib.ExcelNs.ShowAsCalculation
   
   /**
-           *
-           * Percent of the grand total.
-           *
-           */
+    *
+    * Percent of the grand total.
+    *
+    */
   @js.native
   sealed trait percentOfGrandTotal
     extends officeDashJsDashPreviewLib.ExcelNs.ShowAsCalculation
   
   /**
-           *
-           * Percent of the column total for the specified Base Field.
-           *
-           */
+    *
+    * Percent of the column total for the specified Base Field.
+    *
+    */
   @js.native
   sealed trait percentOfParentColumnTotal
     extends officeDashJsDashPreviewLib.ExcelNs.ShowAsCalculation
   
   /**
-           *
-           * Percent of the row total for the specified Base Field.
-           *
-           */
+    *
+    * Percent of the row total for the specified Base Field.
+    *
+    */
   @js.native
   sealed trait percentOfParentRowTotal
     extends officeDashJsDashPreviewLib.ExcelNs.ShowAsCalculation
   
   /**
-           *
-           * Percent of the grand total for the specified Base Field.
-           *
-           */
+    *
+    * Percent of the grand total for the specified Base Field.
+    *
+    */
   @js.native
   sealed trait percentOfParentTotal
     extends officeDashJsDashPreviewLib.ExcelNs.ShowAsCalculation
   
   /**
-           *
-           * Percent of the row total.
-           *
-           */
+    *
+    * Percent of the row total.
+    *
+    */
   @js.native
   sealed trait percentOfRowTotal
     extends officeDashJsDashPreviewLib.ExcelNs.ShowAsCalculation
   
   /**
-           *
-           * Percent Running Total of the specified Base Field.
-           *
-           */
+    *
+    * Percent Running Total of the specified Base Field.
+    *
+    */
   @js.native
   sealed trait percentRunningTotal
     extends officeDashJsDashPreviewLib.ExcelNs.ShowAsCalculation
   
   /**
-           *
-           * Ascending Rank of the specified Base Field.
-           *
-           */
+    *
+    * Ascending Rank of the specified Base Field.
+    *
+    */
   @js.native
   sealed trait rankAscending
     extends officeDashJsDashPreviewLib.ExcelNs.ShowAsCalculation
   
   /**
-           *
-           * Descending Rank of the specified Base Field.
-           *
-           */
+    *
+    * Descending Rank of the specified Base Field.
+    *
+    */
   @js.native
   sealed trait rankDecending
     extends officeDashJsDashPreviewLib.ExcelNs.ShowAsCalculation
   
   /**
-           *
-           * Running Total of the specified Base Field.
-           *
-           */
+    *
+    * Running Total of the specified Base Field.
+    *
+    */
   @js.native
   sealed trait runningTotal
     extends officeDashJsDashPreviewLib.ExcelNs.ShowAsCalculation
   
   /**
-           *
-           * Calculation is unknown or unsupported.
-           *
-           */
+    *
+    * Calculation is unknown or unsupported.
+    *
+    */
   @js.native
   sealed trait unknown
     extends officeDashJsDashPreviewLib.ExcelNs.ShowAsCalculation

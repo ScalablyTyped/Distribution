@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CssProps extends js.Object {
   var contentZooming: java.lang.String
   var tapHighlightColor: java.lang.String

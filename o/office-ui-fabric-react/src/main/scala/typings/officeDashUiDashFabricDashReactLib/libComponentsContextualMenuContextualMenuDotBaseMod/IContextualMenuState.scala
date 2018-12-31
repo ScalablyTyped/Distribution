@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IContextualMenuState extends js.Object {
   var contextualMenuItems: js.UndefOr[
     js.Array[

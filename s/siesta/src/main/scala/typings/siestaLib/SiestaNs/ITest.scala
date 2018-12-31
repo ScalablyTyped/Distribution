@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * @abstract
-     */
+  * @abstract
+  */
 @js.native
 trait ITest
   extends siestaLib.SiestaNs.TestNs.IBDD

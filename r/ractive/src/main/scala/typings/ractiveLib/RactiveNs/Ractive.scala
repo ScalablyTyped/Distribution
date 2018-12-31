@@ -30,17 +30,13 @@ trait Ractive extends js.Object {
   def find(selector: java.lang.String): stdLib.HTMLElement = js.native
   // live default false
   def findAll(selector: java.lang.String): js.Array[stdLib.HTMLElement] = js.native
-  // live default false
   def findAll(selector: java.lang.String, options: ractiveLib.Anon_Live): js.Array[stdLib.HTMLElement] = js.native
   // live default false
   def findAllComponents(name: java.lang.String): js.Array[Ractive] = js.native
-  // live default false
   def findAllComponents(name: java.lang.String, options: ractiveLib.Anon_Live): js.Array[Ractive] = js.native
   // TODO: maybe exist, in that case it is undocumented
   // findAllComponents(): Ractive[]
   def findComponent(): Ractive = js.native
-  // TODO: maybe exist, in that case it is undocumented
-  // findAllComponents(): Ractive[]
   def findComponent(name: java.lang.String): Ractive = js.native
   // Since 0.7.1
   def findContainer(name: java.lang.String): Ractive = js.native
@@ -56,13 +52,9 @@ trait Ractive extends js.Object {
   // target - Node or String or jQuery (see Valid selectors)
   // anchor - Node or String or jQuery
   def insert(target: js.Any): scala.Unit = js.native
-   // TODO: Object?
-  // target - Node or String or jQuery (see Valid selectors)
-  // anchor - Node or String or jQuery
   def insert(target: js.Any, anchor: js.Any): scala.Unit = js.native
    // TODO: void?
   def merge(keypath: java.lang.String, value: js.Array[_]): Promise = js.native
-   // TODO: void?
   def merge(keypath: java.lang.String, value: js.Array[_], options: ractiveLib.Anon_Compare): Promise = js.native
   // callback context Ractive
   def observe(
@@ -74,7 +66,6 @@ trait Ractive extends js.Object {
       scala.Unit
     ]
   ): Observe = js.native
-  // callback context Ractive
   def observe(
     keypath: java.lang.String,
     callback: js.Function3[
@@ -97,7 +88,6 @@ trait Ractive extends js.Object {
       scala.Unit
     ]
   ): Observe = js.native
-  // Since 0.7.1
   def observeOnce(
     keypath: java.lang.String,
     callback: js.Function3[
@@ -110,24 +100,22 @@ trait Ractive extends js.Object {
   ): Observe = js.native
   // handler context Ractive
   def off(): Ractive = js.native
-  // handler context Ractive
   def off(eventName: java.lang.String): Ractive = js.native
-  // handler context Ractive
   def off(
     eventName: java.lang.String,
-    handler: js.Function2[/* event */ js.UndefOr[Event | js.Any], /* repeated */js.Any, _]
+    handler: js.Function2[/* event */ js.UndefOr[Event | js.Any], /* repeated */ js.Any, _]
   ): Ractive = js.native
   def on(
     eventName: java.lang.String,
-    handler: js.Function2[/* event */ js.UndefOr[Event | js.Any], /* repeated */js.Any, _]
+    handler: js.Function2[/* event */ js.UndefOr[Event | js.Any], /* repeated */ js.Any, _]
   ): Observe = js.native
   def on(
-    map: org.scalablytyped.runtime.StringDictionary[js.Function2[/* event */ js.UndefOr[Event | js.Any], /* repeated */js.Any, _]]
+    map: org.scalablytyped.runtime.StringDictionary[js.Function2[/* event */ js.UndefOr[Event | js.Any], /* repeated */ js.Any, _]]
   ): Observe = js.native
   // Since 0.7.1
   def once(
     eventName: java.lang.String,
-    handler: js.Function2[/* event */ js.UndefOr[Event | js.Any], /* repeated */js.Any, _]
+    handler: js.Function2[/* event */ js.UndefOr[Event | js.Any], /* repeated */ js.Any, _]
   ): Observe = js.native
   // Since 0.5.5
   def pop(keypath: java.lang.String): Promise = js.native
@@ -138,8 +126,6 @@ trait Ractive extends js.Object {
    // TODO: void?
   // Default {}
   def reset(): Promise = js.native
-   // TODO: void?
-  // Default {}
   def reset(data: js.Object): Promise = js.native
   // Since 0.7.1
   def resetPartial(name: java.lang.String, partial: js.Any): Promise = js.native
@@ -172,17 +158,7 @@ trait Ractive extends js.Object {
   	     * @param cascade A boolean with default false
   	     */
   def updateModel(): Promise = js.native
-  /**
-  	     * Update out of sync two-way bindings
-  	     * @param keypath A string
-  	     * @param cascade A boolean with default false
-  	     */
   def updateModel(keypath: java.lang.String): Promise = js.native
-  /**
-  	     * Update out of sync two-way bindings
-  	     * @param keypath A string
-  	     * @param cascade A boolean with default false
-  	     */
   def updateModel(keypath: java.lang.String, cascade: scala.Boolean): Promise = js.native
 }
 

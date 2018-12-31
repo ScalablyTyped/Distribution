@@ -42,12 +42,6 @@ class b2PolygonShape () extends b2Shape {
   		* @return Convex polygon shape.
   		**/
   def SetAsArray(vertices: js.Array[box2dLib.Box2DNs.CommonNs.MathNs.b2Vec2]): scala.Unit = js.native
-  /**
-  		* Copy vertices. This assumes the vertices define a convex polygon.  It is assumed that the exterior is the the right of each edge.
-  		* @param vertices List of vertices to create the polygon shape from.
-  		* @param vertexCount Number of vertices in the shape, default value is 0 and in the box2dweb.js code it is ignored.
-  		* @return Convex polygon shape.
-  		**/
   def SetAsArray(vertices: js.Array[box2dLib.Box2DNs.CommonNs.MathNs.b2Vec2], vertexCount: scala.Double): scala.Unit = js.native
   /**
   		* Build vertices to represent an axis-aligned box.
@@ -72,23 +66,7 @@ class b2PolygonShape () extends b2Shape {
   		* @return Oriented box shape.
   		**/
   def SetAsOrientedBox(hx: scala.Double, hy: scala.Double): scala.Unit = js.native
-  /**
-  		* Build vertices to represent an oriented box.
-  		* @param hx The half-width.
-  		* @param hy The half-height.
-  		* @param center The center of the box in local coordinates, default is null (no center?)
-  		* @param angle The rotation of the box in local coordinates, default is 0.0.
-  		* @return Oriented box shape.
-  		**/
   def SetAsOrientedBox(hx: scala.Double, hy: scala.Double, center: box2dLib.Box2DNs.CommonNs.MathNs.b2Vec2): scala.Unit = js.native
-  /**
-  		* Build vertices to represent an oriented box.
-  		* @param hx The half-width.
-  		* @param hy The half-height.
-  		* @param center The center of the box in local coordinates, default is null (no center?)
-  		* @param angle The rotation of the box in local coordinates, default is 0.0.
-  		* @return Oriented box shape.
-  		**/
   def SetAsOrientedBox(
     hx: scala.Double,
     hy: scala.Double,
@@ -102,12 +80,6 @@ class b2PolygonShape () extends b2Shape {
   		* @return Convex polygon shape.
   		**/
   def SetAsVector(vertices: js.Array[_]): scala.Unit = js.native
-  /**
-  		* This assumes the vertices define a convex polygon.  It is assumed that the exterior is the the right of each edge.
-  		* @param vertices List of vertices to create the polygon shape from.
-  		* @param vertexCount The number of vertices, default is 0 and in the box2dweb.js code it is ignored.
-  		* @return Convex polygon shape.
-  		**/
   def SetAsVector(vertices: js.Array[_], vertexCount: scala.Double): scala.Unit = js.native
 }
 
@@ -121,12 +93,6 @@ object b2PolygonShape extends js.Object {
   		* @return Convex polygon shape.
   		**/
   def AsArray(vertices: js.Array[box2dLib.Box2DNs.CommonNs.MathNs.b2Vec2]): box2dLib.Box2DNs.CollisionNs.ShapesNs.b2PolygonShape = js.native
-  /**
-  		* Creates a b2PolygonShape from a vertices list. This assumes the vertices define a convex polygon.  It is assumed that the exterior is the the right of each edge.
-  		* @param vertices List of vertices to create the polygon shape from.
-  		* @param vertexCount Number of vertices in the shape, default value is 0 and in the box2dweb.js code it is ignored.
-  		* @return Convex polygon shape.
-  		**/
   def AsArray(vertices: js.Array[box2dLib.Box2DNs.CommonNs.MathNs.b2Vec2], vertexCount: scala.Double): box2dLib.Box2DNs.CollisionNs.ShapesNs.b2PolygonShape = js.native
   /**
   		* Build vertices to represent an axis-aligned box.
@@ -151,23 +117,7 @@ object b2PolygonShape extends js.Object {
   		* @return Oriented box shape.
   		**/
   def AsOrientedBox(hx: scala.Double, hy: scala.Double): box2dLib.Box2DNs.CollisionNs.ShapesNs.b2PolygonShape = js.native
-  /**
-  		* Build vertices to represent an oriented box.
-  		* @param hx The half-width.
-  		* @param hy The half-height.
-  		* @param center The center of the box in local coordinates, default is null (no center?)
-  		* @param angle The rotation of the box in local coordinates, default is 0.0.
-  		* @return Oriented box shape.
-  		**/
   def AsOrientedBox(hx: scala.Double, hy: scala.Double, center: box2dLib.Box2DNs.CommonNs.MathNs.b2Vec2): box2dLib.Box2DNs.CollisionNs.ShapesNs.b2PolygonShape = js.native
-  /**
-  		* Build vertices to represent an oriented box.
-  		* @param hx The half-width.
-  		* @param hy The half-height.
-  		* @param center The center of the box in local coordinates, default is null (no center?)
-  		* @param angle The rotation of the box in local coordinates, default is 0.0.
-  		* @return Oriented box shape.
-  		**/
   def AsOrientedBox(
     hx: scala.Double,
     hy: scala.Double,
@@ -181,12 +131,6 @@ object b2PolygonShape extends js.Object {
   		* @return Convex polygon shape.
   		**/
   def AsVector(vertices: js.Array[box2dLib.Box2DNs.CommonNs.MathNs.b2Vec2]): box2dLib.Box2DNs.CollisionNs.ShapesNs.b2PolygonShape = js.native
-  /**
-  		* This assumes the vertices define a convex polygon.  It is assumed that the exterior is the the right of each edge.
-  		* @param vertices List of vertices to create the polygon shape from.
-  		* @param vertexCount The number of vertices, default is 0 and in the box2dweb.js code it is ignored.
-  		* @return Convex polygon shape.
-  		**/
   def AsVector(vertices: js.Array[box2dLib.Box2DNs.CommonNs.MathNs.b2Vec2], vertexCount: scala.Double): box2dLib.Box2DNs.CollisionNs.ShapesNs.b2PolygonShape = js.native
 }
 

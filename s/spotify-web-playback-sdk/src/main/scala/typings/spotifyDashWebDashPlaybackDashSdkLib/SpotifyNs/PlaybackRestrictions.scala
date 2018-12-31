@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PlaybackRestrictions extends js.Object {
   var disallow_pausing_reasons: js.Array[java.lang.String]
   var disallow_peeking_next_reasons: js.Array[java.lang.String]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatetimeCreationData extends js.Object {
   var format: js.UndefOr[DatetimeFormatSpecification] = js.undefined
   var input: DatetimeInput

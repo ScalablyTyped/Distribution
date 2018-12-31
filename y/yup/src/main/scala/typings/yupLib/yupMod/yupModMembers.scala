@@ -23,7 +23,7 @@ object yupModMembers extends js.Object {
   def addMethod[T /* <: Schema[_] */](
     schemaCtor: AnySchemaConstructor,
     name: java.lang.String,
-    method: js.ThisFunction1[/* this */ T, /* repeated */js.Any, T]
+    method: js.ThisFunction1[/* this */ T, /* repeated */ js.Any, T]
   ): scala.Unit = js.native
   def `lazy`[T](fn: js.Function1[/* value */ T, Schema[T]]): Lazy = js.native
   def reach[T](schema: Schema[T], path: java.lang.String): Schema[T] = js.native

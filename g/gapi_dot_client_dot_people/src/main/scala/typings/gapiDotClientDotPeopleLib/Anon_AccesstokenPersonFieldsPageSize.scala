@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPersonFieldsPageSize extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -25,44 +24,44 @@ trait Anon_AccesstokenPersonFieldsPageSize extends js.Object {
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The number of connections to include in the response. Valid values are
-                   * between 1 and 2000, inclusive. Defaults to 100.
-                   */
+    * The number of connections to include in the response. Valid values are
+    * between 1 and 2000, inclusive. Defaults to 100.
+    */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /** The token of the page to be returned. */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * &#42;&#42;Required.&#42;&#42; A field mask to restrict which fields on each person are
-                   * returned. Valid values are:
-                   *
-                   * &#42; addresses
-                   * &#42; ageRanges
-                   * &#42; biographies
-                   * &#42; birthdays
-                   * &#42; braggingRights
-                   * &#42; coverPhotos
-                   * &#42; emailAddresses
-                   * &#42; events
-                   * &#42; genders
-                   * &#42; imClients
-                   * &#42; interests
-                   * &#42; locales
-                   * &#42; memberships
-                   * &#42; metadata
-                   * &#42; names
-                   * &#42; nicknames
-                   * &#42; occupations
-                   * &#42; organizations
-                   * &#42; phoneNumbers
-                   * &#42; photos
-                   * &#42; relations
-                   * &#42; relationshipInterests
-                   * &#42; relationshipStatuses
-                   * &#42; residences
-                   * &#42; skills
-                   * &#42; taglines
-                   * &#42; urls
-                   */
+    * &#42;&#42;Required.&#42;&#42; A field mask to restrict which fields on each person are
+    * returned. Valid values are:
+    *
+    * &#42; addresses
+    * &#42; ageRanges
+    * &#42; biographies
+    * &#42; birthdays
+    * &#42; braggingRights
+    * &#42; coverPhotos
+    * &#42; emailAddresses
+    * &#42; events
+    * &#42; genders
+    * &#42; imClients
+    * &#42; interests
+    * &#42; locales
+    * &#42; memberships
+    * &#42; metadata
+    * &#42; names
+    * &#42; nicknames
+    * &#42; occupations
+    * &#42; organizations
+    * &#42; phoneNumbers
+    * &#42; photos
+    * &#42; relations
+    * &#42; relationshipInterests
+    * &#42; relationshipStatuses
+    * &#42; residences
+    * &#42; skills
+    * &#42; taglines
+    * &#42; urls
+    */
   var personFields: js.UndefOr[java.lang.String] = js.undefined
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined
@@ -71,27 +70,27 @@ trait Anon_AccesstokenPersonFieldsPageSize extends js.Object {
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * &#42;&#42;Required.&#42;&#42; Comma-separated list of person fields to be included in the
-                   * response. Each path should start with `person.`: for example,
-                   * `person.names` or `person.photos`.
-                   */
+    * &#42;&#42;Required.&#42;&#42; Comma-separated list of person fields to be included in the
+    * response. Each path should start with `person.`: for example,
+    * `person.names` or `person.photos`.
+    */
   var `requestMask.includeField`: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Whether the response should include a sync token, which can be used to get
-                   * all changes since the last request.
-                   */
+    * Whether the response should include a sync token, which can be used to get
+    * all changes since the last request.
+    */
   var requestSyncToken: js.UndefOr[scala.Boolean] = js.undefined
   /** The resource name to return connections for. Only `people/me` is valid. */
   var resourceName: java.lang.String
   /**
-                   * The order in which the connections should be sorted. Defaults to
-                   * `LAST_MODIFIED_ASCENDING`.
-                   */
+    * The order in which the connections should be sorted. Defaults to
+    * `LAST_MODIFIED_ASCENDING`.
+    */
   var sortOrder: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * A sync token, returned by a previous call to `people.connections.list`.
-                   * Only resources changed since the sync token was created will be returned.
-                   */
+    * A sync token, returned by a previous call to `people.connections.list`.
+    * Only resources changed since the sync token was created will be returned.
+    */
   var syncToken: js.UndefOr[java.lang.String] = js.undefined
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
   var uploadType: js.UndefOr[java.lang.String] = js.undefined

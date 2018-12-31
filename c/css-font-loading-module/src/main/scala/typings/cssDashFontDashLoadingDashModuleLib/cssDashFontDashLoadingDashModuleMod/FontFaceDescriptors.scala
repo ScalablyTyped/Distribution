@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FontFaceDescriptors extends js.Object {
   var featureSettings: js.UndefOr[java.lang.String] = js.undefined
   var stretch: js.UndefOr[java.lang.String] = js.undefined

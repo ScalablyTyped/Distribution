@@ -15,21 +15,21 @@ abstract class SharedStorageAccessManager () extends js.Object
 @js.native
 object SharedStorageAccessManager extends js.Object {
   /**
-                   * Gets the sharing token that enables an app to share the specified file with another app.
-                   * @param file The file to share with the target app.
-                   * @return The sharing token to provide to the target app as part of a Uri activation.
-                   */
+    * Gets the sharing token that enables an app to share the specified file with another app.
+    * @param file The file to share with the target app.
+    * @return The sharing token to provide to the target app as part of a Uri activation.
+    */
   def addFile(file: winrtDashUwpLib.WindowsNs.StorageNs.IStorageFile): java.lang.String = js.native
   /**
-                   * Gets a file shared by another app by providing the sharing token received from the source app.
-                   * @param token The sharing token for the shared file.
-                   * @return A wrapper object that contains the shared file.
-                   */
+    * Gets a file shared by another app by providing the sharing token received from the source app.
+    * @param token The sharing token for the shared file.
+    * @return A wrapper object that contains the shared file.
+    */
   def redeemTokenForFileAsync(token: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.StorageNs.StorageFile] = js.native
   /**
-                   * Revokes an existing sharing token.
-                   * @param token The sharing token to revoke.
-                   */
+    * Revokes an existing sharing token.
+    * @param token The sharing token to revoke.
+    */
   def removeFile(token: java.lang.String): scala.Unit = js.native
 }
 

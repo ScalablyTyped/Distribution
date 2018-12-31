@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UploadFileOptions extends js.Object {
   var begin: js.UndefOr[UploadCallbackBegin] = js.undefined
   // An object of fields to be passed to the server

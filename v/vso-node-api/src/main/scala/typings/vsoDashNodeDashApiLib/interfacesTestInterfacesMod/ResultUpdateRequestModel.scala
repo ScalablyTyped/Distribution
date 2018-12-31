@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ResultUpdateRequestModel extends js.Object {
   var actionResultDeletes: js.Array[TestActionResultModel]
   var actionResults: js.Array[TestActionResultModel]

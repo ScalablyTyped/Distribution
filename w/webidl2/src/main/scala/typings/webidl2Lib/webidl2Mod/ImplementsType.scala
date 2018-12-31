@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImplementsType extends js.Object {
   /** A list of extended attributes. */
   var extAttrs: js.Array[ExtendedAttributes]

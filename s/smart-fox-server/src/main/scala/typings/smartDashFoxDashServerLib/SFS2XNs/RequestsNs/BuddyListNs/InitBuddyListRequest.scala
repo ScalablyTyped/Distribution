@@ -7,5 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("SFS2X.Requests.BuddyList.InitBuddyListRequest")
 @js.native
+/**
+  * Creates a new InitBuddyListRequest instance.
+  */
 class InitBuddyListRequest () extends js.Object
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TSDeclareMethod extends Node {
   var `abstract`: scala.Boolean | scala.Null
   var access: babelDashTypesLib.babelDashTypesLibStrings.public | babelDashTypesLib.babelDashTypesLibStrings.`private` | babelDashTypesLib.babelDashTypesLibStrings.`protected` | scala.Null

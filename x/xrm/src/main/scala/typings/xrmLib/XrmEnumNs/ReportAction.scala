@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait ReportAction extends js.Object
 
 /**
-     * Constant Enum: Report Open Action options for Xrm.Url.ReportOpenParameters.actions.
-     * @see {@link Xrm.Url.ReportAction}
-     */
+  * Constant Enum: Report Open Action options for Xrm.Url.ReportOpenParameters.actions.
+  * @see {@link Xrm.Url.ReportAction}
+  */
 @JSGlobal("XrmEnum.ReportAction")
 @js.native
 object ReportAction extends js.Object {

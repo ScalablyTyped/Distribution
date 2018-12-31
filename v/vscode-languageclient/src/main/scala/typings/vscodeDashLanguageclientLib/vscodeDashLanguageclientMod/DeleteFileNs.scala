@@ -13,6 +13,6 @@ object DeleteFileNs extends js.Object {
     uri: java.lang.String,
     options: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DeleteFileOptions
   ): vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DeleteFile = js.native
-  def is(value: js.Any): /* is DeleteFile */scala.Boolean = js.native
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.DeleteFile */ scala.Boolean = js.native
 }
 

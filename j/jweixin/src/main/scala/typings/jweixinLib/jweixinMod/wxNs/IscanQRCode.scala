@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IscanQRCode extends BaseParams {
   var needResult: jweixinLib.jweixinLibNumbers.`0` | jweixinLib.jweixinLibNumbers.`1`
    // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，

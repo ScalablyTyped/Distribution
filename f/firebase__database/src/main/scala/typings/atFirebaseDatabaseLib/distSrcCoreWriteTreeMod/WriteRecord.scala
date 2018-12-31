@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WriteRecord extends js.Object {
   var children: js.UndefOr[
     org.scalablytyped.runtime.StringDictionary[atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node] | scala.Null

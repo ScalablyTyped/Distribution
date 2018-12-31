@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Activity extends js.Object {
   /** User doing the action. */
   var actor: js.UndefOr[gapiDotClientDotAdminLib.Anon_CallerType] = js.undefined

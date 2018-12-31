@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ValidationOption extends js.Object {
   var clean: js.UndefOr[scala.Boolean] = js.undefined
   var filter: js.UndefOr[scala.Boolean] = js.undefined

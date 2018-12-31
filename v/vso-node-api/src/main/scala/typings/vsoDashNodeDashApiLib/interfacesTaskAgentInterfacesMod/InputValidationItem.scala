@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InputValidationItem extends js.Object {
   var isValid: scala.Boolean
   var reason: java.lang.String

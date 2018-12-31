@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UpdateArraySpec extends UpdateSpecCommand {
   @JSName("$push")
   var $push: js.UndefOr[js.Array[_]] = js.undefined

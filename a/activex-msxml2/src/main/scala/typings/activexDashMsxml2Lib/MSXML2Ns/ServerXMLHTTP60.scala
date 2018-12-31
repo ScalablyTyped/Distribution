@@ -36,11 +36,8 @@ class ServerXMLHTTP60 protected () extends js.Object {
   def getResponseHeader(bstrHeader: java.lang.String): java.lang.String = js.native
   /** Open HTTP connection */
   def open(bstrMethod: java.lang.String, bstrUrl: java.lang.String): scala.Unit = js.native
-  /** Open HTTP connection */
   def open(bstrMethod: java.lang.String, bstrUrl: java.lang.String, varAsync: js.Any): scala.Unit = js.native
-  /** Open HTTP connection */
   def open(bstrMethod: java.lang.String, bstrUrl: java.lang.String, varAsync: js.Any, bstrUser: js.Any): scala.Unit = js.native
-  /** Open HTTP connection */
   def open(
     bstrMethod: java.lang.String,
     bstrUrl: java.lang.String,
@@ -50,15 +47,12 @@ class ServerXMLHTTP60 protected () extends js.Object {
   ): scala.Unit = js.native
   /** Send HTTP request */
   def send(): scala.Unit = js.native
-  /** Send HTTP request */
   def send(varBody: js.Any): scala.Unit = js.native
   /** Set an option value */
   def setOption(option: SERVERXMLHTTP_OPTION, value: js.Any): scala.Unit = js.native
   /** Specify proxy configuration */
   def setProxy(proxySetting: SXH_PROXY_SETTING): scala.Unit = js.native
-  /** Specify proxy configuration */
   def setProxy(proxySetting: SXH_PROXY_SETTING, varProxyServer: js.Any): scala.Unit = js.native
-  /** Specify proxy configuration */
   def setProxy(proxySetting: SXH_PROXY_SETTING, varProxyServer: js.Any, varBypassList: js.Any): scala.Unit = js.native
   /** Specify proxy authentication credentials */
   def setProxyCredentials(bstrUserName: java.lang.String, bstrPassword: java.lang.String): scala.Unit = js.native
@@ -73,7 +67,6 @@ class ServerXMLHTTP60 protected () extends js.Object {
   ): scala.Unit = js.native
   /** Wait for asynchronous send to complete, with optional timeout (in seconds) */
   def waitForResponse(): scala.Boolean = js.native
-  /** Wait for asynchronous send to complete, with optional timeout (in seconds) */
   def waitForResponse(timeoutInSeconds: js.Any): scala.Boolean = js.native
 }
 

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait NotificationType extends js.Object
 
 /**
-     * Notification Type
-     */
+  * Notification Type
+  */
 @JSGlobal("umbraco.services.NotificationType")
 @js.native
 object NotificationType extends js.Object {

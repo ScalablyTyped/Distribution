@@ -10,7 +10,6 @@ import scala.scalajs.js.annotation._
 	* @brief HeapSnapshots记录JS堆在某个时刻的状态
 	* @detail 
 	*/
-
 @JSGlobal("Class_HeapSnapshot")
 @js.native
 class Class_HeapSnapshot () extends Class__object {

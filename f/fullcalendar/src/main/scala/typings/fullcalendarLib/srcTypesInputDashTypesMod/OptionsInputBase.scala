@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OptionsInputBase extends js.Object {
   var allDayDefault: js.UndefOr[scala.Boolean] = js.undefined
   var allDaySlot: js.UndefOr[scala.Boolean] = js.undefined

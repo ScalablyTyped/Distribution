@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class DateHelper () extends js.Object {
   /**
-       * @returns The current time in "ddd MMM D HH:mm:ss UTC YYYY" format.
-       */
+    * @returns The current time in "ddd MMM D HH:mm:ss UTC YYYY" format.
+    */
   def getNowString(): java.lang.String = js.native
 }
 

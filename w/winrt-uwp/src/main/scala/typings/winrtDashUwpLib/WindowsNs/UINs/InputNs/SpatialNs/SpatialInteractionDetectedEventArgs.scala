@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class SpatialInteractionDetectedEventArgs () extends js.Object {
   var interaction: js.Any = js.native
-   /* unmapped type */var interactionSourceKind: js.Any = js.native
-   /* unmapped type */var tryGetPointerPose: js.Any = js.native
+   /* unmapped type */ var interactionSourceKind: js.Any = js.native
+   /* unmapped type */ var tryGetPointerPose: js.Any = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGeoDataResultSet extends js.Object {
   /** Copyright information for the GeoData API. */
   var Copyright: java.lang.String

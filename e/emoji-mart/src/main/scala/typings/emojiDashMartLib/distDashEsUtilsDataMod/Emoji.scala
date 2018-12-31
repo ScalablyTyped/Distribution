@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Emoji extends js.Object {
   var a: js.UndefOr[java.lang.String] = js.undefined
   var added_in: js.UndefOr[scala.Double] = js.undefined

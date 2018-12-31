@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Location extends js.Object {
   /** Estimated accuracy of this location, in meters. */
   var accuracy: scala.Double

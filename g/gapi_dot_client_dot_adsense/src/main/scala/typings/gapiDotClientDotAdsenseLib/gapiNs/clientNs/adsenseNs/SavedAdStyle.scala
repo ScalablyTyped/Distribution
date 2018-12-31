@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SavedAdStyle extends js.Object {
   /** The AdStyle itself. */
   var adStyle: js.UndefOr[AdStyle] = js.undefined

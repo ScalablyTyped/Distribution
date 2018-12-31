@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GoogleEarthEnterpriseMapsProvider extends ImageryProvider {
   val channel: scala.Double
   val path: java.lang.String

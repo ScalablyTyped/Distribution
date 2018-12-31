@@ -14,8 +14,8 @@ trait Connection
   /** Contains information about each namespace type (if supported by the server) with the following properties: */
   var namespaces: imapLib.Anon_Shared = js.native
   /**
-          seq exposes the search() ... serverSupports() set of commands, but returns sequence number(s) instead of UIDs.
-          */
+    seq exposes the search() ... serverSupports() set of commands, but returns sequence number(s) instead of UIDs.
+    */
   var seq: imapLib.imapMod.ConnectionNs.MessageFunctions = js.native
   /** The current state of the connection (e.g. 'disconnected', 'connected', 'authenticated'). */
   var state: java.lang.String = js.native

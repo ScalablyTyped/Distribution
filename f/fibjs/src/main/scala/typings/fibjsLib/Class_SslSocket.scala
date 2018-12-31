@@ -7,29 +7,29 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Class_SslSocket")
 @js.native
+/**
+	 * 
+	 * @brief SslSocket 构造函数，创建一个新的 SslSocket 对象
+	 * 
+	 * certs 格式为：
+	 * ```JavaScript
+	 * [
+	 * {
+	 * crt: [X509Cert object],
+	 * key: [PKey object]
+	 * },
+	 * {
+	 * crt: [X509Cert object],
+	 * key: [PKey object]
+	 * }
+	 * ]
+	 * ```
+	 * @param certs 服务器证书列表
+	 * 
+	 * 
+	 * 
+	 */
 class Class_SslSocket () extends Class_Stream {
-  /**
-  	 * 
-  	 * @brief SslSocket 构造函数，创建一个新的 SslSocket 对象
-  	 * 
-  	 * certs 格式为：
-  	 * ```JavaScript
-  	 * [
-  	 * {
-  	 * crt: [X509Cert object],
-  	 * key: [PKey object]
-  	 * },
-  	 * {
-  	 * crt: [X509Cert object],
-  	 * key: [PKey object]
-  	 * }
-  	 * ]
-  	 * ```
-  	 * @param certs 服务器证书列表
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def this(certs: js.Array[_]) = this()
   /**
   	 * 
@@ -102,16 +102,6 @@ class Class_SslSocket () extends Class_Stream {
   	 * @async
   	 */
   def connect(s: Class_Stream): scala.Double = js.native
-  /**
-  	 * 
-  	 * @brief 在给定的连接上连接 ssl 连接，客户端模式
-  	 * @param s 给定的底层连接
-  	 * @param server_name 指定服务器名称，可缺省
-  	 * @return 连接成功返回 0，证书可选验证时，验证不成功则返回非 0，详细错误见 ssl 模块
-  	 * 
-  	 * 
-  	 * @async
-  	 */
   def connect(s: Class_Stream, server_name: java.lang.String): scala.Double = js.native
 }
 

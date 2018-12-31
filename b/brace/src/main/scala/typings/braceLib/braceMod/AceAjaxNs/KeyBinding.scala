@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeyBinding extends js.Object {
   def addKeyboardHandler(kb: js.Any, pos: js.Any): scala.Unit
   def getKeyboardHandler(): js.Any

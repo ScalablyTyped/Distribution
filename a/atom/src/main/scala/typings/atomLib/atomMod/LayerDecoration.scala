@@ -17,7 +17,6 @@ trait LayerDecoration extends js.Object {
   def setProperties(newProperties: DecorationLayerOptions): scala.Unit = js.native
   /** Override the decoration properties for a specific marker. */
   def setPropertiesForMarker(marker: DisplayMarker, properties: DecorationLayerOptions): scala.Unit = js.native
-  /** Override the decoration properties for a specific marker. */
   def setPropertiesForMarker(marker: Marker, properties: DecorationLayerOptions): scala.Unit = js.native
 }
 

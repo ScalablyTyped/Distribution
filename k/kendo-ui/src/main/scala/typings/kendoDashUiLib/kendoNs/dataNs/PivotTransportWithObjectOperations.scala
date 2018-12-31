@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PivotTransportWithObjectOperations extends PivotTransport {
   var connection: PivotTransportConnection
   @JSName("discover")

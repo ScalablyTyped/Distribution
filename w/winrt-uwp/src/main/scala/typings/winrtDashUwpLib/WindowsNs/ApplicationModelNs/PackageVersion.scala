@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Represents the package version info. */
-
 trait PackageVersion extends js.Object {
   /** The build version number of the package. */
   var build: scala.Double

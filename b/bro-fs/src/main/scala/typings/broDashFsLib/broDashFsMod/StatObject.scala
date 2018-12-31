@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StatObject extends js.Object {
   var fullPath: java.lang.String
   var isDirectory: scala.Boolean

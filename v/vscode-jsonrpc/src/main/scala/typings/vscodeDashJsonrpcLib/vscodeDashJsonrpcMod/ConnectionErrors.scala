@@ -12,22 +12,22 @@ sealed trait ConnectionErrors extends js.Object
 @js.native
 object ConnectionErrors extends js.Object {
   /**
-       * The connection is already in listening mode.
-       */
+    * The connection is already in listening mode.
+    */
   @js.native
   sealed trait AlreadyListening
     extends vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.ConnectionErrors
   
   /**
-       * The connection is closed.
-       */
+    * The connection is closed.
+    */
   @js.native
   sealed trait Closed
     extends vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.ConnectionErrors
   
   /**
-       * The connection got disposed.
-       */
+    * The connection got disposed.
+    */
   @js.native
   sealed trait Disposed
     extends vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.ConnectionErrors

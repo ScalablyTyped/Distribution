@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IButton extends IComponent {
   /** [Config Option] (String) */
   var autoEvent: js.UndefOr[java.lang.String] = js.undefined

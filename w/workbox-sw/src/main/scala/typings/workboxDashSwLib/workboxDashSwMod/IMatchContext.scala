@@ -6,14 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * ===== MatchCallback =====
- */
-
-
+  * ===== MatchCallback =====
+  */
 trait IMatchContext extends IURLContext {
   /**
   	 * The service workers' fetch event.
   	 */
-  var event: js.Any
+  var event: /* import warning: QualifyReferences.resolveTypeRef Couldn't qualify FetchEvent */ js.Any
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartCrosshair extends js.Object {
   var color: js.UndefOr[java.lang.String] = js.undefined
   var focused: js.UndefOr[googleDotVisualizationLib.Anon_Opacity] = js.undefined

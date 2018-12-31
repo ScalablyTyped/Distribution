@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CaptureOptions extends js.Object {
   var extra: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
   var fingerprint: js.UndefOr[js.Array[java.lang.String]] = js.undefined

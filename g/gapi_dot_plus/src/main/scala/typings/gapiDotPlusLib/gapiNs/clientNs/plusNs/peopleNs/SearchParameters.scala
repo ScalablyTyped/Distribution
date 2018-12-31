@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SearchParameters extends js.Object {
   var language: js.UndefOr[java.lang.String] = js.undefined
   var maxResults: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SceneModePickerViewModel extends js.Object {
   var dropDownVisible: scala.Boolean
   var duration: scala.Double

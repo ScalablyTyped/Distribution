@@ -15,7 +15,7 @@ object libEsmComponentsModMembers extends js.Object {
   val Code: reactLib.reactMod.ReactNs.StatelessComponent[
     reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[reactLib.HTMLElement]
   ] = js.native
-  val ContextMenu: js.Any = js.native
+  val ContextMenu: atBlueprintjsCoreLib.Anon_Hide = js.native
   val Expander: reactLib.reactMod.ReactNs.SFC[js.Object] = js.native
   val H1: reactLib.reactMod.ReactNs.StatelessComponent[
     reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLHeadingElement] with atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[reactLib.HTMLHeadingElement]

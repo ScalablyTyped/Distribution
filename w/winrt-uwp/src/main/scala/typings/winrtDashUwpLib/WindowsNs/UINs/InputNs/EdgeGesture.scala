@@ -63,9 +63,9 @@ abstract class EdgeGesture () extends js.Object {
 @js.native
 object EdgeGesture extends js.Object {
   /**
-                   * Gets an instance of the EdgeGesture class that is used to add and remove event delegate handlers for the current view.
-                   * @return The currently relevant instance of the EdgeGesture object.
-                   */
+    * Gets an instance of the EdgeGesture class that is used to add and remove event delegate handlers for the current view.
+    * @return The currently relevant instance of the EdgeGesture object.
+    */
   def getForCurrentView(): winrtDashUwpLib.WindowsNs.UINs.InputNs.EdgeGesture = js.native
 }
 

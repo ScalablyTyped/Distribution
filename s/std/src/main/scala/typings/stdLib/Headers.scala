@@ -12,8 +12,8 @@ trait Headers extends js.Object {
   def append(name: java.lang.String, value: java.lang.String): scala.Unit = js.native
   def delete(name: java.lang.String): scala.Unit = js.native
   /**
-       * Returns an iterator allowing to go through all key/value pairs contained in this object.
-       */
+    * Returns an iterator allowing to go through all key/value pairs contained in this object.
+    */
   def entries(): IterableIterator[js.Tuple2[java.lang.String, java.lang.String]] = js.native
   def forEach(
     callbackfn: js.Function3[
@@ -35,13 +35,13 @@ trait Headers extends js.Object {
   def get(name: java.lang.String): java.lang.String | scala.Null = js.native
   def has(name: java.lang.String): scala.Boolean = js.native
   /**
-       * Returns an iterator allowing to go through all keys of the key/value pairs contained in this object.
-       */
+    * Returns an iterator allowing to go through all keys of the key/value pairs contained in this object.
+    */
   def keys(): IterableIterator[java.lang.String] = js.native
   def set(name: java.lang.String, value: java.lang.String): scala.Unit = js.native
   /**
-       * Returns an iterator allowing to go through all values of the key/value pairs contained in this object.
-       */
+    * Returns an iterator allowing to go through all values of the key/value pairs contained in this object.
+    */
   def values(): IterableIterator[java.lang.String] = js.native
 }
 

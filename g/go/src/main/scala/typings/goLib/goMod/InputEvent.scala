@@ -6,18 +6,21 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * An InputEvent represents a mouse or keyboard event.
-    * The principal properties hold information about a particular input event.
-    * These properties include the .documentPoint at which a mouse event
-    * occurred in document coordinates,
-    * the corresponding point in view/element coordinates, .viewPoint,
-    * the .key for keyboard events,
-    * and the .modifiers and .button at the time.
-    * Additional descriptive properties include .clickCount, .delta,
-    * .timestamp, and the source event .event (if available).
-    */
+  * An InputEvent represents a mouse or keyboard event.
+  * The principal properties hold information about a particular input event.
+  * These properties include the .documentPoint at which a mouse event
+  * occurred in document coordinates,
+  * the corresponding point in view/element coordinates, .viewPoint,
+  * the .key for keyboard events,
+  * and the .modifiers and .button at the time.
+  * Additional descriptive properties include .clickCount, .delta,
+  * .timestamp, and the source event .event (if available).
+  */
 @JSImport("go", "InputEvent")
 @js.native
+/**
+  * The InputEvent class constructor produces an empty InputEvent.
+  */
 class InputEvent ()
   extends goLib.goMod.goNs.InputEvent {
   /**Gets or sets whether the alt key is being held down.*/
@@ -101,8 +104,8 @@ class InputEvent ()
   /* CompleteClass */
   override var viewPoint: goLib.goMod.goNs.Point = js.native
   /**
-          * Make a copy of this InputEvent.
-          */
+    * Make a copy of this InputEvent.
+    */
   /* CompleteClass */
   override def copy(): goLib.goMod.goNs.InputEvent = js.native
 }

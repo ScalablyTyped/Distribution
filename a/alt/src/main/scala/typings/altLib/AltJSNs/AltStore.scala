@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AltStore[S] extends js.Object {
   def emitChange(): scala.Unit
   def getState(): S

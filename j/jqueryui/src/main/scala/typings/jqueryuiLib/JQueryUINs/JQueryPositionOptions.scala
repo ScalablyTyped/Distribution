@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JQueryPositionOptions extends js.Object {
   var at: js.UndefOr[java.lang.String] = js.undefined
   var collision: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IWorkflowAssignment extends js.Object {
   var AssignedTo_DEPRECATED: IPropertyValue
   var CompletedBy_DEPRECATED: IPropertyValue

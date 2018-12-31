@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBreadcrumbProps
   extends atBlueprintjsCoreLib.libEsmCommonPropsMod.IActionProps
      with atBlueprintjsCoreLib.libEsmCommonPropsMod.ILinkProps {

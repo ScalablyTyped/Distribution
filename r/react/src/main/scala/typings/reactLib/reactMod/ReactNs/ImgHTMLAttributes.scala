@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImgHTMLAttributes[T] extends HTMLAttributes[T] {
   var alt: js.UndefOr[java.lang.String] = js.undefined
   var crossOrigin: js.UndefOr[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlowControlChannelRequest extends js.Object {
   var clientControl: scala.Boolean
   var recipient: scala.Double

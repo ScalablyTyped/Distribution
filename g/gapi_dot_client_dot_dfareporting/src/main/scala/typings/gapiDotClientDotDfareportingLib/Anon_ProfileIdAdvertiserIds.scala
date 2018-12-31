@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ProfileIdAdvertiserIds extends js.Object {
   /** Select only creative groups that belong to these advertisers. */
   var advertiserIds: js.UndefOr[java.lang.String] = js.undefined
@@ -30,16 +29,16 @@ trait Anon_ProfileIdAdvertiserIds extends js.Object {
   /** User profile ID associated with this request. */
   var profileId: java.lang.String
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Allows searching for creative groups by name or ID. Wildcards (&#42;) are allowed. For example, "creativegroup&#42;2015" will return creative groups with names
-                   * like "creativegroup June 2015", "creativegroup April 2015", or simply "creativegroup 2015". Most of the searches also add wild-cards implicitly at the
-                   * start and the end of the search string. For example, a search string of "creativegroup" will match creative groups with the name "my creativegroup",
-                   * "creativegroup 2015", or simply "creativegroup".
-                   */
+    * Allows searching for creative groups by name or ID. Wildcards (&#42;) are allowed. For example, "creativegroup&#42;2015" will return creative groups with names
+    * like "creativegroup June 2015", "creativegroup April 2015", or simply "creativegroup 2015". Most of the searches also add wild-cards implicitly at the
+    * start and the end of the search string. For example, a search string of "creativegroup" will match creative groups with the name "my creativegroup",
+    * "creativegroup 2015", or simply "creativegroup".
+    */
   var searchString: js.UndefOr[java.lang.String] = js.undefined
   /** Field by which to sort the list. */
   var sortField: js.UndefOr[java.lang.String] = js.undefined

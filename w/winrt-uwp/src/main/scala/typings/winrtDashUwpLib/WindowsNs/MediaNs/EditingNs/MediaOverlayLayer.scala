@@ -8,11 +8,12 @@ import scala.scalajs.js.annotation._
 /** Represents a layer of a media overlay. */
 @JSGlobal("Windows.Media.Editing.MediaOverlayLayer")
 @js.native
+/** Initializes a new instance of the MediaOverlayLayer class. */
 class MediaOverlayLayer () extends js.Object {
   /**
-                   * Initializes a new instance of the MediaOverlayLayer class.
-                   * @param compositorDefinition The definition of the custom compositor associated with the media overlay layer.
-                   */
+    * Initializes a new instance of the MediaOverlayLayer class.
+    * @param compositorDefinition The definition of the custom compositor associated with the media overlay layer.
+    */
   def this(compositorDefinition: winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IVideoCompositorDefinition) = this()
   /** Gets the definition of the custom compositor associated with the media overlay layer, if there is one. */
   var customCompositorDefinition: winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IVideoCompositorDefinition = js.native

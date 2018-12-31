@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReqProps extends LDAPjsReqProps {
   var attributes: AttributeSpec
   var baseDN: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ConnectionOptions extends js.Object {
   var callback: js.UndefOr[js.Function] = js.undefined
   var jsonp: js.UndefOr[scala.Boolean] = js.undefined

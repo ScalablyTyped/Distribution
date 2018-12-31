@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BootstrapListBoxEventMap extends BootstrapClientEditEventMap {
   var beginCallback: BeginCallbackEventArgs
   var callbackError: CallbackErrorEventArgs

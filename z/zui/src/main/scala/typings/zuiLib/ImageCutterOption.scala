@@ -6,10 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * image cutter
- */
-
-
+  * image cutter
+  */
 trait ImageCutterOption extends js.Object {
   var coverColor: js.UndefOr[java.lang.String] = js.undefined
   var coverOpacity: js.UndefOr[scala.Double] = js.undefined

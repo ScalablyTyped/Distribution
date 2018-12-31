@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VictoryThemeDefinition extends js.Object {
   var area: js.UndefOr[VictoryStyleInterface] = js.undefined
   var axis: js.UndefOr[victoryLib.Anon_AxisLabel] = js.undefined

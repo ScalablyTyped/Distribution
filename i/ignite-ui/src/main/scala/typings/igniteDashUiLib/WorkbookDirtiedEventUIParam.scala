@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkbookDirtiedEventUIParam extends js.Object {
   /**
   	 * Gets a reference to the spreadsheet widget.

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiscoverTypings extends TypingInstallerRequestWithProjectName {
   val cachePath: js.UndefOr[java.lang.String] = js.undefined
   val compilerOptions: typescriptLib.typescriptMod.tsNs.CompilerOptions

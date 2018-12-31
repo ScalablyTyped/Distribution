@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IncludedGitCommit extends js.Object {
   var commitId: java.lang.String
   var commitTime: stdLib.Date

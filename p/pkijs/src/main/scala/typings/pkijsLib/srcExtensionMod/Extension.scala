@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Extension extends js.Object {
   var critical: scala.Boolean
   var extnID: java.lang.String

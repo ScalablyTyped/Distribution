@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WebhookExpressOptions extends js.Object {
   // manually specify the host name used by Twilio in a number's webhook config
   var host: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AuthorizationException extends js.Object {
   def printJson(): java.lang.String
   def setAuthorizationUrl(authUrl: java.lang.String): AuthorizationException

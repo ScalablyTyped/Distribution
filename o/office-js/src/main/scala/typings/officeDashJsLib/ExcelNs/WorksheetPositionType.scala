@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait WorksheetPositionType extends js.Object
 
 /**
-     * [Api set: ExcelApi 1.7]
-     */
+  * [Api set: ExcelApi 1.7]
+  */
 @JSGlobal("Excel.WorksheetPositionType")
 @js.native
 object WorksheetPositionType extends js.Object {

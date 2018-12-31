@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IAtomPubClient
   extends winrtLib.WindowsNs.WebNs.SyndicationNs.ISyndicationClient {
   def cancelAsyncOperations(): scala.Unit

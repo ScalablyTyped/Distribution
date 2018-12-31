@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * @mixin
-         */
+  * @mixin
+  */
 @js.native
 trait ITextSelection extends js.Object {
   def getSelectedText(el: js.Any): java.lang.String = js.native

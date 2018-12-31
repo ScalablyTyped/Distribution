@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGyrometerReading extends js.Object {
   var angularVelocityX: scala.Double
   var angularVelocityY: scala.Double

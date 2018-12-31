@@ -14,8 +14,8 @@ trait IModelServerClient extends js.Object {
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-       * Commits the contents of the working copy with the given id to the team server
-       */
+    * Commits the contents of the working copy with the given id to the team server
+    */
   def commitToTeamServer(
     workingCopyId: java.lang.String,
     branchName: java.lang.String,
@@ -34,8 +34,8 @@ trait IModelServerClient extends js.Object {
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-       * Deletes the file with the specified filepath.
-       */
+    * Deletes the file with the specified filepath.
+    */
   def deleteFile(
     workingCopyId: java.lang.String,
     filePath: java.lang.String,
@@ -48,8 +48,8 @@ trait IModelServerClient extends js.Object {
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-       * Deletes the project-to-working copy mapping for given project ID.
-       */
+    * Deletes the project-to-working copy mapping for given project ID.
+    */
   def deleteWorkingCopyByProject(
     projectId: java.lang.String,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.IVoidCallback,
@@ -69,8 +69,8 @@ trait IModelServerClient extends js.Object {
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-       * Returns a list of unitIds that contains a specific custom widget
-       */
+    * Returns a list of unitIds that contains a specific custom widget
+    */
   def filterUnitsByCustomWidgetId(
     workingCopyId: java.lang.String,
     widgetId: java.lang.String,
@@ -88,8 +88,8 @@ trait IModelServerClient extends js.Object {
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-       * Retrieves App Job by jobId
-       */
+    * Retrieves App Job by jobId
+    */
   def getAppUpdateStatus(
     workingCopyId: java.lang.String,
     jobId: java.lang.String,
@@ -97,8 +97,8 @@ trait IModelServerClient extends js.Object {
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-       * Downloads the file specified by the supplied filepath.
-       */
+    * Downloads the file specified by the supplied filepath.
+    */
   def getFile(
     workingCopyId: java.lang.String,
     filePath: java.lang.String,
@@ -107,8 +107,8 @@ trait IModelServerClient extends js.Object {
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-       * Returns an array of all filepaths in the working copy.
-       */
+    * Returns an array of all filepaths in the working copy.
+    */
   def getFiles(
     workingCopyId: java.lang.String,
     options: mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IGetFilesOptions,
@@ -116,8 +116,8 @@ trait IModelServerClient extends js.Object {
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-       * Returns an EventSource instance that will emit events that occur on the working copy.
-       */
+    * Returns an EventSource instance that will emit events that occur on the working copy.
+    */
   def getModelEventSource(workingCopyId: java.lang.String, lastFetchedEventId: scala.Double): eventsourceLib.eventsourceMod.namespaced = js.native
   def getMyWorkingCopies(
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[
@@ -126,8 +126,8 @@ trait IModelServerClient extends js.Object {
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-       * Retrieves the working copy id that the given project ID maps to.
-       */
+    * Retrieves the working copy id that the given project ID maps to.
+    */
   def getWorkingCopyByProject(
     projectId: java.lang.String,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[java.lang.String],
@@ -158,8 +158,8 @@ trait IModelServerClient extends js.Object {
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-       * Retrieves a unit, as normalized model JSON, by working copy and unit ID.
-       */
+    * Retrieves a unit, as normalized model JSON, by working copy and unit ID.
+    */
   def loadUnitById(
     workingCopyId: java.lang.String,
     unitId: java.lang.String,
@@ -167,8 +167,8 @@ trait IModelServerClient extends js.Object {
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-       * Loads all unit interfaces of the working copy indicated with `workingCopyId` as an array of normalized model JSON.
-       */
+    * Loads all unit interfaces of the working copy indicated with `workingCopyId` as an array of normalized model JSON.
+    */
   def loadUnitInterfaces(
     workingCopyId: java.lang.String,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[
@@ -176,9 +176,6 @@ trait IModelServerClient extends js.Object {
     ],
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
-  /**
-       * Loads all unit interfaces of the working copy indicated with `workingCopyId` as an array of normalized model JSON.
-       */
   def loadUnitInterfaces(
     workingCopyId: java.lang.String,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[
@@ -188,16 +185,16 @@ trait IModelServerClient extends js.Object {
     rootUnitId: java.lang.String
   ): scala.Unit = js.native
   /**
-       * Retrieves the top-level working copy information/meta data for the working copy with given `workingCopyId`.
-       */
+    * Retrieves the top-level working copy information/meta data for the working copy with given `workingCopyId`.
+    */
   def loadWorkingCopyMetaData(
     workingCopyId: java.lang.String,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IWorkingCopy],
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-       * Lock the working copy (will be locked for the currently authenticated openid)
-       */
+    * Lock the working copy (will be locked for the currently authenticated openid)
+    */
   def lockWorkingCopy(
     workingCopyId: java.lang.String,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[
@@ -206,8 +203,8 @@ trait IModelServerClient extends js.Object {
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-       * Lock the working copy with lockOptions (will be locked for the currently authenticated openid)
-       */
+    * Lock the working copy with lockOptions (will be locked for the currently authenticated openid)
+    */
   def lockWorkingCopy(
     workingCopyId: java.lang.String,
     lockOptions: mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.ILockWorkingCopyOptions,
@@ -216,9 +213,6 @@ trait IModelServerClient extends js.Object {
     ],
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
-  /**
-       * Lock the working copy with lockOptions (will be locked for the currently authenticated openid)
-       */
   def lockWorkingCopy(
     workingCopyId: java.lang.String,
     lockOptions: mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.LockType,
@@ -228,8 +222,8 @@ trait IModelServerClient extends js.Object {
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-       * Uploads the supplied file to the specified filepath.
-       */
+    * Uploads the supplied file to the specified filepath.
+    */
   def putFile(
     workingCopyId: java.lang.String,
     inFilePath: java.lang.String,
@@ -237,9 +231,6 @@ trait IModelServerClient extends js.Object {
     callback: mendixmodelsdkLib.distCommonMod.commonNs.IVoidCallback,
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
-  /**
-       * Uploads the supplied file to the specified filepath.
-       */
   def putFile(
     workingCopyId: java.lang.String,
     inFilePath: stdLib.Blob,
@@ -260,9 +251,9 @@ trait IModelServerClient extends js.Object {
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-       * Sends a sequence of deltas on the working copy with the given `workingCopyId` to the Model API Server;
-       * batched if more than one is passed, as a single delta otherwise.
-       */
+    * Sends a sequence of deltas on the working copy with the given `workingCopyId` to the Model API Server;
+    * batched if more than one is passed, as a single delta otherwise.
+    */
   def sendDeltas(
     workingCopyId: java.lang.String,
     deltas: js.Array[mendixmodelsdkLib.distSdkInternalDeltasDeltasMod.Delta],
@@ -270,18 +261,18 @@ trait IModelServerClient extends js.Object {
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-       * Start async deploy flow, creates new app job and returns it
-       */
+    * Start async deploy flow, creates new app job and returns it
+    */
   def startAppUpdate(
     workingCopyId: java.lang.String,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IDeployJobStatus],
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-       * Unlock the working copy (will be unlocked for the currently authenticated openid, will fail if it's locked by another openid)
-       *
-       * @param lockType if specified, only unlock if the working copy has this specified lock
-       */
+    * Unlock the working copy (will be unlocked for the currently authenticated openid, will fail if it's locked by another openid)
+    *
+    * @param lockType if specified, only unlock if the working copy has this specified lock
+    */
   def unlockWorkingCopy(
     workingCopyId: java.lang.String,
     lockType: mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.LockType | js.UndefOr[scala.Nothing],
@@ -289,8 +280,8 @@ trait IModelServerClient extends js.Object {
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
   /**
-       * Update the project-to-working copy mapping with the given data.
-       */
+    * Update the project-to-working copy mapping with the given data.
+    */
   def updateWorkingCopyByProject(
     projectId: java.lang.String,
     workingCopyId: java.lang.String,

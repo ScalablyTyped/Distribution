@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RouterStatus extends js.Object {
   /** Best routes for this router's network. */
   var bestRoutes: js.UndefOr[js.Array[Route]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_NotStartedPostponed extends js.Object {
   var all: scala.Double
   var cancelling: scala.Double

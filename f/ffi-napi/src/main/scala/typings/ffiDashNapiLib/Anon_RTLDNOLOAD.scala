@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_RTLDNOLOAD extends js.Object {
   var RTLD_DEFAUL: Buffer
   var RTLD_GLOBAL: scala.Double

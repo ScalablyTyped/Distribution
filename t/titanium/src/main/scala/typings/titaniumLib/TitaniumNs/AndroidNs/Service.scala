@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * Android application component that executes in the background.
 		 */
-
 trait Service
   extends titaniumLib.TitaniumNs.Proxy {
   /**

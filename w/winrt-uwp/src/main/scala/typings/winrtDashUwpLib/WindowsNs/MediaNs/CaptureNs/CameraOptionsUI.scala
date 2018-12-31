@@ -15,9 +15,9 @@ abstract class CameraOptionsUI () extends js.Object
 @js.native
 object CameraOptionsUI extends js.Object {
   /**
-                   * Displays a UI that contains options for the capture of photos, audio recordings and videos.
-                   * @param mediaCapture The MediaCapture object that provides methods for the capture of photos, audio recordings and videos.
-                   */
+    * Displays a UI that contains options for the capture of photos, audio recordings and videos.
+    * @param mediaCapture The MediaCapture object that provides methods for the capture of photos, audio recordings and videos.
+    */
   def show(mediaCapture: winrtDashUwpLib.WindowsNs.MediaNs.CaptureNs.MediaCapture): scala.Unit = js.native
 }
 

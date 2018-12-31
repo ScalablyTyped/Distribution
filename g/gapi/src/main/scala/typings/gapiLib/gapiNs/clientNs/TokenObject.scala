@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TokenObject extends js.Object {
   /**
-           * The access token to use in requests.
-           */
+    * The access token to use in requests.
+    */
   var access_token: java.lang.String
 }
 

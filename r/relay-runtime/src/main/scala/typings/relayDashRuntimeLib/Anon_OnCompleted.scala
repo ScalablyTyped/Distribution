@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_OnCompleted[TNode, TOperation, TPayload] extends js.Object {
   var cacheConfig: js.UndefOr[relayDashRuntimeLib.relayDashRuntimeMod.CacheConfig] = js.undefined
   var onCompleted: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

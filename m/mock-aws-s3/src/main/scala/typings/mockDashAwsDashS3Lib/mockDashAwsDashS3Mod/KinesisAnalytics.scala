@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("mock-aws-s3", "KinesisAnalytics")
 @js.native
+/**
+  * Constructs a service object. This object has one method for each API operation.
+  */
 class KinesisAnalytics ()
   extends awsDashSdkLib.awsDashSdkMod.KinesisAnalytics {
-  /**
-     * Constructs a service object. This object has one method for each API operation.
-     */
   def this(options: awsDashSdkLib.clientsKinesisanalyticsMod.KinesisAnalyticsNs.ClientConfiguration) = this()
 }
 

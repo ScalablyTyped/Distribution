@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait numbers
   extends atMaterialBaseLib.foundationMod.MDCNumbers {
   // Ratio of anchor width to menu width for switching from corner positioning to center positioning.

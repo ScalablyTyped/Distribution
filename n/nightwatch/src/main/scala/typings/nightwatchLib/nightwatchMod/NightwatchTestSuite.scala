@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NightwatchTestSuite extends js.Object {
   var group: java.lang.String
   var module: java.lang.String

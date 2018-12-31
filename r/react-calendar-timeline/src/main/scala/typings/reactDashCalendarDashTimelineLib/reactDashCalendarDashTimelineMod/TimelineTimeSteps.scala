@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TimelineTimeSteps extends js.Object {
   var day: scala.Double
   var hour: scala.Double

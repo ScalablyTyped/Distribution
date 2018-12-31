@@ -6,22 +6,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Class used to define virtual joystick (used in touch mode)
-     */
+  * Class used to define virtual joystick (used in touch mode)
+  */
 @JSImport("babylonjs", "VirtualJoystick")
 @js.native
+/**
+  * Creates a new virtual joystick
+  * @param leftJoystick defines that the joystick is for left hand (false by default)
+  */
 class VirtualJoystick ()
   extends babylonjsLib.BABYLONNs.VirtualJoystick {
-  /**
-           * Creates a new virtual joystick
-           * @param leftJoystick defines that the joystick is for left hand (false by default)
-           */
   def this(leftJoystick: scala.Boolean) = this()
 }
 
 /**
-     * Class used to define virtual joystick (used in touch mode)
-     */
+  * Class used to define virtual joystick (used in touch mode)
+  */
 @JSImport("babylonjs", "VirtualJoystick")
 @js.native
 object VirtualJoystick extends js.Object {

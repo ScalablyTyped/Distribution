@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Dppx extends js.Object {
   var colors: scala.Double
   var dppx: scala.Double

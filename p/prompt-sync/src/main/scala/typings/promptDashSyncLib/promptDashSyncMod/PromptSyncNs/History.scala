@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait History extends js.Object {
   def atEnd(): scala.Boolean
   def atPenultimate(): scala.Boolean

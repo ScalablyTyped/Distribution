@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOwlCarouselOptions extends js.Object {
   var addClassActive: js.UndefOr[scala.Boolean] = js.undefined
   var afterAction: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit]] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IValueListItem extends js.Object {
   var AutomaticPermissionsForObjects: IAutomaticPermissions
   val Deleted: scala.Boolean

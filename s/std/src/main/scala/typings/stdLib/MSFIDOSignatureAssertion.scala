@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MSFIDOSignatureAssertion extends MSAssertion {
   val signature: MSFIDOSignature
 }

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IGroupKeyDataPair[T] extends IKeyDataPair[T] {
   var firstItemIndexHint: scala.Double
   var firstItemKey: java.lang.String

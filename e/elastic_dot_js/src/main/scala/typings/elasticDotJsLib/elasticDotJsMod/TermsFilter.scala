@@ -10,12 +10,9 @@ import scala.scalajs.js.annotation._
 class TermsFilter protected ()
   extends elasticDotJsLib.elasticDotJsMod.elasticjsNs.TermsFilter {
   /*
-       A Filter that matches documents containing provided terms.
-       */
+    A Filter that matches documents containing provided terms.
+    */
   def this(field: java.lang.String, terms: java.lang.String) = this()
-  /*
-       A Filter that matches documents containing provided terms.
-       */
   def this(field: java.lang.String, terms: js.Array[java.lang.String]) = this()
 }
 

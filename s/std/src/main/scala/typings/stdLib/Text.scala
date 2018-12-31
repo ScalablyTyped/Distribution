@@ -10,12 +10,12 @@ trait Text
   extends CharacterData
      with Slotable {
   /**
-       * Returns the combined data of all direct Text node siblings.
-       */
+    * Returns the combined data of all direct Text node siblings.
+    */
   val wholeText: java.lang.String = js.native
   /**
-       * Splits data at the given offset and returns the remainder as Text node.
-       */
+    * Splits data at the given offset and returns the remainder as Text node.
+    */
   def splitText(offset: scala.Double): Text = js.native
 }
 

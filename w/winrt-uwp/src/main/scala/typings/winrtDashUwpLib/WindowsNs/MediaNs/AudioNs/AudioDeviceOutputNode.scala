@@ -22,14 +22,14 @@ abstract class AudioDeviceOutputNode () extends js.Object {
   /** Closes the audio device output node. */
   def close(): scala.Unit = js.native
   /**
-                   * Disables all effects in the EffectDefinitions list with the specified effect definition.
-                   * @param definition The effect definition of the effects to disable.
-                   */
+    * Disables all effects in the EffectDefinitions list with the specified effect definition.
+    * @param definition The effect definition of the effects to disable.
+    */
   def disableEffectsByDefinition(definition: winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition): scala.Unit = js.native
   /**
-                   * Enables all effects in the EffectDefinitions list with the specified effect definition.
-                   * @param definition The effect definition of the effects to enable.
-                   */
+    * Enables all effects in the EffectDefinitions list with the specified effect definition.
+    * @param definition The effect definition of the effects to enable.
+    */
   def enableEffectsByDefinition(definition: winrtDashUwpLib.WindowsNs.MediaNs.EffectsNs.IAudioEffectDefinition): scala.Unit = js.native
   /** Resets the audio device output node. */
   def reset(): scala.Unit = js.native

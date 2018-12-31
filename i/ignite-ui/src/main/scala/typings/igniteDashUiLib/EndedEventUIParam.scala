@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EndedEventUIParam extends js.Object {
   /**
   	 * Get the video duration in seconds.

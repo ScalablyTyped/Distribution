@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AsyncWriterOptions extends js.Object {
   var buffer: js.UndefOr[scala.Boolean] = js.undefined
   var global: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined

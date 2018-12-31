@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Y extends js.Object {
   var align: js.UndefOr[java.lang.String] = js.undefined
   var verticalAlign: js.UndefOr[java.lang.String] = js.undefined

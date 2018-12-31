@@ -37,15 +37,15 @@ abstract class MidiInPort () extends js.Object {
 @js.native
 object MidiInPort extends js.Object {
   /**
-                   * Creates a MidiInPort object for the specified device.
-                   * @param deviceId The device ID, which can be obtained by enumerating the devices on the system Windows.Devices.Enumeration.DeviceInformation.FindAllAsync .
-                   * @return The asynchronous operation. Upon completion, IAsyncOperation.GetResults returns a MidiInPort object.
-                   */
+    * Creates a MidiInPort object for the specified device.
+    * @param deviceId The device ID, which can be obtained by enumerating the devices on the system Windows.Devices.Enumeration.DeviceInformation.FindAllAsync .
+    * @return The asynchronous operation. Upon completion, IAsyncOperation.GetResults returns a MidiInPort object.
+    */
   def fromIdAsync(deviceId: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.DevicesNs.MidiNs.MidiInPort] = js.native
   /**
-                   * Gets a query string that can be used to enumerate all MidiInPort objects on the system.
-                   * @return The query string used to enumerate the MidiInPort objects on the system.
-                   */
+    * Gets a query string that can be used to enumerate all MidiInPort objects on the system.
+    * @return The query string used to enumerate the MidiInPort objects on the system.
+    */
   def getDeviceSelector(): java.lang.String = js.native
 }
 

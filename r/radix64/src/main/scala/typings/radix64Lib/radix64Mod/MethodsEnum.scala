@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MethodsEnum extends js.Object {
   var BASE64: radix64Lib.MethodsString
   var BASE64ASCII: radix64Lib.MethodsString

@@ -20,10 +20,6 @@ package object AjaxNs {
     scala.Unit
   ]
   type ErrorTextStatus = jqueryLib.jqueryLibStrings.timeout | jqueryLib.jqueryLibStrings.error | jqueryLib.jqueryLibStrings.abort | jqueryLib.jqueryLibStrings.parsererror
-  // region StatusCodeCallbacks
-  // #region StatusCodeCallbacks
-  type StatusCodeCallbacks[TContext] = jqueryLib.Anon_205[TContext] with (// Status codes not listed require type annotations when defining the callback
-  org.scalablytyped.runtime.NumberDictionary[SuccessCallback[TContext] | ErrorCallback[TContext]])
   type SuccessCallback[TContext] = js.ThisFunction3[
     /* this */ TContext, 
     /* data */ js.Any, 

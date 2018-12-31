@@ -6,15 +6,14 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** An interface for updating data on the ChartErrorBarsFormat object, for use in "chartErrorBarsFormat.set({ ... })". */
-
 trait ChartErrorBarsFormatUpdateData extends js.Object {
   /**
-              *
-              * Represents chart line formatting.
-              *
-              * [Api set: ExcelApi BETA (PREVIEW ONLY)]
-              * @beta
-              */
+    *
+    * Represents chart line formatting.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var line: js.UndefOr[ChartLineFormatUpdateData] = js.undefined
 }
 

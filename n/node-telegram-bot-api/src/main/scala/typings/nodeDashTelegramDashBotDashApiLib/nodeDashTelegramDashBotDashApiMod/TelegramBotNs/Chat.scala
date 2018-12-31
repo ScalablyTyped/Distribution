@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Chat extends js.Object {
   var all_members_are_administrators: js.UndefOr[scala.Boolean] = js.undefined
   var description: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait KeyBinding extends js.Object {
   var command: java.lang.String
   // Properties
@@ -17,11 +16,11 @@ trait KeyBinding extends js.Object {
   var source: java.lang.String
   var specificity: scala.Double
   /**
-               *  Compare another KeyBinding to this instance.
-               *  Returns <= -1 if the argument is considered lesser or of lower priority.
-               *  Returns 0 if this binding is equivalent to the argument.
-               *  Returns >= 1 if the argument is considered greater or of higher priority.
-               */
+    *  Compare another KeyBinding to this instance.
+    *  Returns <= -1 if the argument is considered lesser or of lower priority.
+    *  Returns 0 if this binding is equivalent to the argument.
+    *  Returns >= 1 if the argument is considered greater or of higher priority.
+    */
   def compare(other: KeyBinding): scala.Double
   // Comparison
   /** Determines whether the given keystroke matches any contained within this binding. */

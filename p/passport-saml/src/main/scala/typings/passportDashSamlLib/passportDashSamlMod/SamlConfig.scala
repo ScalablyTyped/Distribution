@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SamlConfig extends js.Object {
   var acceptedClockSkewMs: js.UndefOr[scala.Double] = js.undefined
   var additionalAuthorizeParams: js.UndefOr[js.Any] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Settings extends js.Object {
   /** Amazon Device Messaging */
   var adm: js.UndefOr[nodeDashPushnotificationsLib.Anon_Clientid] = js.undefined

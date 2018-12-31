@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Spec extends js.Object {
   var namespace: java.lang.String
   var opts: ecmarkupLib.libEcmarkupMod.Options

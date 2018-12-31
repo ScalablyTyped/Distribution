@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Null extends js.Object {
   var ArcFourVariant: scala.Double
   var ChaCha20: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AltimeterOption extends js.Object {
   var address: js.UndefOr[scala.Double] = js.undefined
   var controller: java.lang.String

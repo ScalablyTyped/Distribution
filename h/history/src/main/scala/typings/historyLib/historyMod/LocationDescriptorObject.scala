@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LocationDescriptorObject[S] extends js.Object {
   var hash: js.UndefOr[Hash] = js.undefined
   var key: js.UndefOr[LocationKey] = js.undefined

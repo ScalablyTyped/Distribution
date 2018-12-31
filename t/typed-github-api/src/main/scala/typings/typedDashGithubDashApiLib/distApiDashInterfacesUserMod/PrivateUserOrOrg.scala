@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PrivateUserOrOrg extends UserOrOrg {
   var collaborators: scala.Double
   var disk_usage: scala.Double

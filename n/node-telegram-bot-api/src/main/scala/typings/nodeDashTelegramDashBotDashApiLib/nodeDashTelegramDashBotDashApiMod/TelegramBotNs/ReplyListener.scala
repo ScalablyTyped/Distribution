@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReplyListener extends js.Object {
   var chatId: scala.Double | java.lang.String
   var id: scala.Double

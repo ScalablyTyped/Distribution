@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Regular extends js.Object {
   var brand: reactDashNativeDashVectorDashIconsLib.reactDashNativeDashVectorDashIconsLibNumbers.`3`
   var light: reactDashNativeDashVectorDashIconsLib.reactDashNativeDashVectorDashIconsLibNumbers.`1`

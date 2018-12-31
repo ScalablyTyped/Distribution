@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NumbroLanguage extends js.Object {
   var abbreviations: numbroLib.Anon_Trillion
   var byteFormat: js.UndefOr[Format] = js.undefined

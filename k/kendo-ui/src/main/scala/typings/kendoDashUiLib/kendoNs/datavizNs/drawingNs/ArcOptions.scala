@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ArcOptions extends js.Object {
   var clip: js.UndefOr[kendoDashUiLib.kendoNs.drawingNs.Path] = js.undefined
   var cursor: js.UndefOr[java.lang.String] = js.undefined

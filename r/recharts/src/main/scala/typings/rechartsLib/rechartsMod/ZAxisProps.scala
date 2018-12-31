@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ZAxisProps extends js.Object {
   // The key of data displayed in the axis
   var dataKey: js.UndefOr[DataKey] = js.undefined

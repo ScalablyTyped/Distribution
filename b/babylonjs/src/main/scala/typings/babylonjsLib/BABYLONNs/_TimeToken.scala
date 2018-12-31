@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * @hidden
-     **/
+  * @hidden
+  **/
 @JSGlobal("BABYLON._TimeToken")
 @js.native
 class _TimeToken () extends js.Object {

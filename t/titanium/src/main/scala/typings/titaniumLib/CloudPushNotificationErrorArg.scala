@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * A simple object passed to the [retrieveDeviceToken](Modules.CloudPush.retrieveDeviceToken) error callback.
- */
-
+  * A simple object passed to the [retrieveDeviceToken](Modules.CloudPush.retrieveDeviceToken) error callback.
+  */
 trait CloudPushNotificationErrorArg extends js.Object {
   /**
   	 * Description of the error.

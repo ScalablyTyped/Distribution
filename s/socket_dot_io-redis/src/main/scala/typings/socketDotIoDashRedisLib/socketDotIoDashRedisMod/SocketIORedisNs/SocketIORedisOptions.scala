@@ -8,11 +8,10 @@ import scala.scalajs.js.annotation._
 /**
 	 * Options to pass to the redis server when creating it
 	 */
-
 trait SocketIORedisOptions extends js.Object {
   /**
-           * The optional password to connect to redis on
-           */
+    * The optional password to connect to redis on
+    */
   var auth_pass: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   /**
   		 * The optional host to connect to redis on

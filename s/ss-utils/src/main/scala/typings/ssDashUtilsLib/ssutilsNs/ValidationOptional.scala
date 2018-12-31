@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ValidationOptional extends js.Object {
   var errorFilter: js.UndefOr[
     js.Function3[

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BatchUpdatePresentationRequest extends js.Object {
   /** A list of updates to apply to the presentation. */
   var requests: js.UndefOr[js.Array[Request]] = js.undefined

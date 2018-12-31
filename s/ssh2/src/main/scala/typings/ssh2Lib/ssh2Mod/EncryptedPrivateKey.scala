@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EncryptedPrivateKey extends js.Object {
   /** A Buffer or string that contains a private key. */
   var key: nodeLib.Buffer | java.lang.String

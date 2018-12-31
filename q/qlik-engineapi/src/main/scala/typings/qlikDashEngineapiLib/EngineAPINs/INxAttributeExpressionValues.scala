@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * NxAttributeExpressionValues...
-     */
-
+  * NxAttributeExpressionValues...
+  */
 trait INxAttributeExpressionValues extends js.Object {
   /**
-           * List of attribute expressions values.
-           */
+    * List of attribute expressions values.
+    */
   var qValues: js.Array[INxSimpleValue]
 }
 

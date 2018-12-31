@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IImageOptions extends IObjectOptions {
   /**
   	 * AlignX value, part of preserveAspectRatio (one of "none", "mid", "min", "max")

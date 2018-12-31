@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Partial) */ 
-trait Props extends js.Object {
+- Lifted 1 members from Set(std.Partial<react.react.React.DetailedHTMLProps<react.react.React.ImgHTMLAttributes<react.HTMLImageElement>, react.HTMLImageElement>>) */ trait Props extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
   /**
   		 * Gravatar has a number of built in options which you can use as defaults when an email address has no

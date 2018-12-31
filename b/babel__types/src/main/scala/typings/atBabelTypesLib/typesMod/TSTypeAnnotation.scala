@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TSTypeAnnotation extends BaseNode {
   var typeAnnotation: TSType
   @JSName("type")

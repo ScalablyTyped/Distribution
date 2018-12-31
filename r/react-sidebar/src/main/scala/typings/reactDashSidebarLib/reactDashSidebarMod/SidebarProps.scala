@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SidebarProps extends js.Object {
   var contentClassName: js.UndefOr[java.lang.String] = js.undefined
   var contentId: js.UndefOr[java.lang.String] = js.undefined

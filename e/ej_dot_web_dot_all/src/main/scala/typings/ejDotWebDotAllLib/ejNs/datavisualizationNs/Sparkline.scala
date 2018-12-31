@@ -17,8 +17,8 @@ class Sparkline protected ()
   @JSName("model")
   var model_Sparkline: ejDotWebDotAllLib.ejNs.SparklineNs.Model = js.native
   /** Redraws the entire sparkline. You can call this method whenever you update, add or remove points from the data source or whenever you want to refresh the UI.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def redraw(): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IConfigurationOptions extends js.Object {
   var ease: java.lang.String
   var minimum: scala.Double

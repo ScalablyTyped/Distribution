@@ -5,23 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SeriesErrorBarCap extends js.Object {
   /** Color of the error bar cap.
-               * @Default {#000000}
-               */
+    * @Default {#000000}
+    */
   var fill: js.UndefOr[java.lang.String] = js.undefined
   /** Length of the error bar cap.
-               * @Default {1}
-               */
+    * @Default {1}
+    */
   var length: js.UndefOr[scala.Double] = js.undefined
   /** Show/Hides the error bar cap.
-               * @Default {true}
-               */
+    * @Default {true}
+    */
   var visible: js.UndefOr[scala.Boolean] = js.undefined
   /** Width of the error bar cap.
-               * @Default {1}
-               */
+    * @Default {1}
+    */
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 

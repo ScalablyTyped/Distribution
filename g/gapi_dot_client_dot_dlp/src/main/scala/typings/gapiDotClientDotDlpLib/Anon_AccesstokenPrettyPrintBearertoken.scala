@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AccesstokenPrettyPrintBearertoken extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -25,10 +24,10 @@ trait Anon_AccesstokenPrettyPrintBearertoken extends js.Object {
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Optional BCP-47 language code for localized info type friendly
-                   * names. If omitted, or if localized strings are not available,
-                   * en-US strings will be returned.
-                   */
+    * Optional BCP-47 language code for localized info type friendly
+    * names. If omitted, or if localized strings are not available,
+    * en-US strings will be returned.
+    */
   var languageCode: js.UndefOr[java.lang.String] = js.undefined
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined

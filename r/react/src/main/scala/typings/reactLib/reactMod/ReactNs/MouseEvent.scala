@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MouseEvent[T, E]
   extends BaseSyntheticEvent[E, reactLib.EventTarget with T, reactLib.EventTarget] {
   var altKey: scala.Boolean
@@ -24,8 +23,8 @@ trait MouseEvent[T, E]
   var screenY: scala.Double
   var shiftKey: scala.Boolean
   /**
-           * See [DOM Level 3 Events spec](https://www.w3.org/TR/uievents-key/#keys-modifier). for a list of valid (case-sensitive) arguments to this method.
-           */
+    * See [DOM Level 3 Events spec](https://www.w3.org/TR/uievents-key/#keys-modifier). for a list of valid (case-sensitive) arguments to this method.
+    */
   def getModifierState(key: java.lang.String): scala.Boolean
 }
 

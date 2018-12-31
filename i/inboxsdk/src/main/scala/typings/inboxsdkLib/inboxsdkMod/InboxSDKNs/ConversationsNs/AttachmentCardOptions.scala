@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // ConversationsDescriptors
-
 trait AttachmentCardOptions extends js.Object {
   var buttons: js.Array[DownloadButtonDescriptor | CustomButtonDescriptor]
   var description: java.lang.String

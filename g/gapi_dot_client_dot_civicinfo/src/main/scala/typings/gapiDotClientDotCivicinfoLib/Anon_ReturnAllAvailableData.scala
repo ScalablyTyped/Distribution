@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ReturnAllAvailableData extends js.Object {
   /** The registered address of the voter to look up. */
   var address: java.lang.String
@@ -24,14 +23,14 @@ trait Anon_ReturnAllAvailableData extends js.Object {
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * If set to true, the query will return the success codeand include any partial information when it is unable to determine a matching address or unable
-                   * to determine the election for electionId=0 queries.
-                   */
+    * If set to true, the query will return the success codeand include any partial information when it is unable to determine a matching address or unable
+    * to determine the election for electionId=0 queries.
+    */
   var returnAllAvailableData: js.UndefOr[scala.Boolean] = js.undefined
   /** IP address of the site where the request originates. Use this if you want to enforce per-user limits. */
   var userIp: js.UndefOr[java.lang.String] = js.undefined

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Contains a content protection manager object, for an application that handles protected media content. */
 @JSGlobal("Windows.Media.Protection.MediaProtectionManager")
 @js.native
+/** Initializes a new instance of the MediaProtectionManager class. */
 class MediaProtectionManager () extends js.Object {
   /** Fires when the load of binary data fails. */
   @JSName("oncomponentloadfailed")

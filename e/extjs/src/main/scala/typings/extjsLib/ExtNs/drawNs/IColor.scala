@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IColor
   extends extjsLib.ExtNs.IBase {
   /** [Method] Get the blue component of the color in the range 0 255

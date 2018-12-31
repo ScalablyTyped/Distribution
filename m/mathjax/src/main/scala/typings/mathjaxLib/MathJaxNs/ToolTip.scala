@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ToolTip extends js.Object {
   /*The delay (in milliseconds) before the tooltop is cleared after the mouse moves out of the maction element.*/
   var delayClear: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AssetmentRisks extends js.Object {
   var device_key: java.lang.String
   var `malware.any`: js.UndefOr[AssesmentRisk] = js.undefined

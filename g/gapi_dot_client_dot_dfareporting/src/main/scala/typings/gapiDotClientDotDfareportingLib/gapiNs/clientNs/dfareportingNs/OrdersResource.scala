@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrdersResource extends js.Object {
   /** Gets one order by ID. */
   def get(request: gapiDotClientDotDfareportingLib.Anon_ProfileIdPrettyPrintProjectId): gapiDotClientLib.gapiNs.clientNs.Request[Order]

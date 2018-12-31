@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SubscriptionQuery extends js.Object {
   /**
-       * One or more conditions to query on. If more than 2 conditions are specified, the combined results of each condition is returned (i.e. conditions are logically OR'ed).
-       */
+    * One or more conditions to query on. If more than 2 conditions are specified, the combined results of each condition is returned (i.e. conditions are logically OR'ed).
+    */
   var conditions: js.Array[SubscriptionQueryCondition]
   /**
-       * Flags the refine the types of subscriptions that will be returned from the query.
-       */
+    * Flags the refine the types of subscriptions that will be returned from the query.
+    */
   var queryFlags: SubscriptionQueryFlags
 }
 

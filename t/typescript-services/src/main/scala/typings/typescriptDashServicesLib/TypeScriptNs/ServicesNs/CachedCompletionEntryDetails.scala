@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CachedCompletionEntryDetails extends CompletionEntryDetails {
   def isResolved(): scala.Boolean
 }

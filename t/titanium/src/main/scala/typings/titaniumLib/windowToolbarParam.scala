@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Dictionary of options for the <Titanium.UI.Window.setToolbar> method.
- */
-
+  * Dictionary of options for the <Titanium.UI.Window.setToolbar> method.
+  */
 trait windowToolbarParam extends js.Object {
   /**
   	 * Defines if the toolbar appearance is animated.

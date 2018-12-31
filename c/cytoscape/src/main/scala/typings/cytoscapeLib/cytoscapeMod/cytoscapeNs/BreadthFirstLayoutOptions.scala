@@ -6,9 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * http://js.cytoscape.org/#layouts/breadthfirst
-     */
-
+  * http://js.cytoscape.org/#layouts/breadthfirst
+  */
 trait BreadthFirstLayoutOptions extends ShapedLayoutOptions {
   // put depths in concentric circles if true, put depths top down if false
   var circle: scala.Boolean

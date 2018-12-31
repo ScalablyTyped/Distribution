@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PublicKey extends js.Object {
   /** [Output Only] Creation timestamp in RFC3339 text format. */
   var creationTimestamp: js.UndefOr[java.lang.String] = js.undefined

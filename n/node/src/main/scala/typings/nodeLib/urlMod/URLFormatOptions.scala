@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait URLFormatOptions extends js.Object {
   var auth: js.UndefOr[scala.Boolean] = js.undefined
   var fragment: js.UndefOr[scala.Boolean] = js.undefined

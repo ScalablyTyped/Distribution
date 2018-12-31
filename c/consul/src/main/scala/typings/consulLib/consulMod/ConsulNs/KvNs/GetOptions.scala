@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GetOptions
   extends consulLib.consulMod.ConsulNs.CommonOptions {
   var buffer: js.UndefOr[scala.Boolean] = js.undefined

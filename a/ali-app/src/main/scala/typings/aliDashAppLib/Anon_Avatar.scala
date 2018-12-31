@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Avatar extends js.Object {
   		// 账号的邮箱
   var avatar: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ForStatement extends BaseNode {
   var body: Statement
   var init: js.UndefOr[VariableDeclaration | estreeLib.Expression | scala.Null] = js.undefined

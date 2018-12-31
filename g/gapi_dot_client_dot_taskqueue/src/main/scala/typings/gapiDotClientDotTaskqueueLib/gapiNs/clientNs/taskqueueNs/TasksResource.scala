@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TasksResource extends js.Object {
   /** Delete a task from a TaskQueue. */
   def delete(request: gapiDotClientDotTaskqueueLib.Anon_Task): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

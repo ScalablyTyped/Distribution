@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SysInfo extends js.Object {
   var configureArgs: js.Array[_]
   var description: java.lang.String

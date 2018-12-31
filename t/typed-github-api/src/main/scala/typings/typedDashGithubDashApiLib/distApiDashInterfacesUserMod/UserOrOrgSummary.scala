@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UserOrOrgSummary extends js.Object {
   var avatar_url: java.lang.String
   var events_url: java.lang.String

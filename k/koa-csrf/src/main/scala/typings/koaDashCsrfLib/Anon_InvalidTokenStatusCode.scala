@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_InvalidTokenStatusCode extends js.Object {
   var disableQuery: js.UndefOr[scala.Boolean] = js.undefined
   var excludedMethods: js.UndefOr[js.Array[java.lang.String]] = js.undefined

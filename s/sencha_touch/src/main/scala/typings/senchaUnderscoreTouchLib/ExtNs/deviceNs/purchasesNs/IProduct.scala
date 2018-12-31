@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IProduct
   extends senchaUnderscoreTouchLib.ExtNs.dataNs.IModel {
   /** [Method] Returns the value of fields

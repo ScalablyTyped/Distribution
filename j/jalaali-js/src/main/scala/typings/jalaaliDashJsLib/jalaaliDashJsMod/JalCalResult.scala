@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JalCalResult extends js.Object {
   /** Gregorian year of the beginning of Jalaali year */
   var gy: scala.Double

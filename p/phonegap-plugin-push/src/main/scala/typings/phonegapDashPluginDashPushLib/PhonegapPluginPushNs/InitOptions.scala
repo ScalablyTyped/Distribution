@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 	 * platform specific initialization options.
 	 */
-
 trait InitOptions extends js.Object {
   /**
   		 * Android specific initialization options.

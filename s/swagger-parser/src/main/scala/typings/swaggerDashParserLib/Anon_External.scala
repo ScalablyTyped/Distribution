@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_External extends js.Object {
   var circular: js.UndefOr[scala.Boolean | swaggerDashParserLib.swaggerDashParserLibStrings.ignore] = js.undefined
   var external: js.UndefOr[scala.Boolean] = js.undefined

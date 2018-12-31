@@ -16,12 +16,9 @@ class Router ()
 @js.native
 object Router extends js.Object {
   /**
-          * Do not use, prefer TypeScript's extend functionality.
-          **/
+    * Do not use, prefer TypeScript's extend functionality.
+    **/
   def extend(properties: js.Any): js.Any = js.native
-  /**
-          * Do not use, prefer TypeScript's extend functionality.
-          **/
   def extend(properties: js.Any, classProperties: js.Any): js.Any = js.native
 }
 

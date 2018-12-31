@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReprojectImageOptions extends js.Object {
   var cutline: js.UndefOr[Geometry] = js.undefined
   var dst: Dataset

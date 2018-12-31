@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Touch extends js.Object {
   var browser: Anon_Opera
   var devicePixelRatio: scala.Double

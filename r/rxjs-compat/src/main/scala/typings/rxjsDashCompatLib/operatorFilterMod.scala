@@ -20,12 +20,12 @@ object operatorFilterMod extends js.Object {
   @JSName("filter")
   def filter_TST[T, S /* <: T */](
     `this`: rxjsLib.rxjsMod.Observable[T],
-    predicate: js.Function2[/* value */ T, /* index */ scala.Double, /* is S */scala.Boolean]
+    predicate: js.Function2[/* value */ T, /* index */ scala.Double, /* is S */ scala.Boolean]
   ): rxjsLib.rxjsMod.Observable[S] = js.native
   @JSName("filter")
   def filter_TST[T, S /* <: T */](
     `this`: rxjsLib.rxjsMod.Observable[T],
-    predicate: js.Function2[/* value */ T, /* index */ scala.Double, /* is S */scala.Boolean],
+    predicate: js.Function2[/* value */ T, /* index */ scala.Double, /* is S */ scala.Boolean],
     thisArg: js.Any
   ): rxjsLib.rxjsMod.Observable[S] = js.native
 }

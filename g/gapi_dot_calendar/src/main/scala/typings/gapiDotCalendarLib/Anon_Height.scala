@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Height extends js.Object {
   var display: js.UndefOr[gapiDotCalendarLib.gapiNs.clientNs.calendarNs.GadgetDisplayMode] = js.undefined
   var height: js.UndefOr[gapiDotCalendarLib.gapiNs.clientNs.calendarNs.integer] = js.undefined

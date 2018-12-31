@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CryptoKeyPair extends js.Object {
   var privateKey: CryptoKey
   var publicKey: CryptoKey

@@ -5,18 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PersistConfig extends js.Object {
   var blacklist: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var debug: js.UndefOr[scala.Boolean] = js.undefined
   /**
-           * Used for migrations.
-           */
+    * Used for migrations.
+    */
   var getStoredState: js.UndefOr[js.Function1[/* config */ PersistConfig, js.Promise[PersistedState]]] = js.undefined
   var key: java.lang.String
   /**
-           * **Depricated:** keyPrefix is going to be removed in v6.
-           */
+    * **Depricated:** keyPrefix is going to be removed in v6.
+    */
   var keyPrefix: js.UndefOr[java.lang.String] = js.undefined
   var migrate: js.UndefOr[
     js.Function2[

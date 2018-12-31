@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Type extends js.Object {
   var factor: js.UndefOr[scala.Double] = js.undefined
   var from: js.UndefOr[scala.Double | paperLib.paperNs.Segment | paperLib.paperNs.Curve] = js.undefined

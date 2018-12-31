@@ -73,19 +73,12 @@ object ContactsNsMembers extends js.Object {
   		 * Creates and returns an instance of <Titanium.Contacts.Group>.
   		 */
   def createGroup(): Group = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.Contacts.Group>.
-  		 */
   def createGroup(parameters: js.Any): Group = js.native
   /**
   		 * Creates and returns an instance of <Titanium.Contacts.Person>, and commits all pending
   		 * changes to the underlying contacts database.
   		 */
   def createPerson(): Person = js.native
-  /**
-  		 * Creates and returns an instance of <Titanium.Contacts.Person>, and commits all pending
-  		 * changes to the underlying contacts database.
-  		 */
   def createPerson(parameters: js.Any): Person = js.native
   /**
   		 * Fires a synthesized event to any registered listeners.

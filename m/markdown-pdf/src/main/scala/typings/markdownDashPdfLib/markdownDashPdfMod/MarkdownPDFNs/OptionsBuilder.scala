@@ -15,7 +15,6 @@ trait OptionsBuilder extends js.Object {
   /** Create a readable stream and pipe it to markdown pdf. */
   /** Create a readable stream from path and pipe to markdown-pdf. path can be a single path or array of paths. */
   def from(path: java.lang.String): ToOptionsBuilder = js.native
-  /** Create a readable stream and pipe it to markdown pdf. */
   /** Create a readable stream from path and pipe to markdown-pdf. path can be a single path or array of paths. */
   def from(path: js.Array[java.lang.String]): ToOptionsBuilder = js.native
 }

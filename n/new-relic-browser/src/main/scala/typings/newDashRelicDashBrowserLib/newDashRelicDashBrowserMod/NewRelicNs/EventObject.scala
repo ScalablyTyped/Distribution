@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventObject extends js.Object {
   /** End time in ms since epoch.  Defaults to same as start resulting in trace object with a duration of zero. */
   var end: js.UndefOr[scala.Double] = js.undefined

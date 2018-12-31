@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ElectronDownloadOptions extends js.Object {
   var cache: js.UndefOr[java.lang.String] = js.undefined
   var mirror: js.UndefOr[java.lang.String] = js.undefined

@@ -9,100 +9,100 @@ import scala.scalajs.js.annotation._
 sealed trait DataValidationType extends js.Object
 
 /**
-     *
-     * Represents Data validation type enum.
-     *
-     * [Api set: ExcelApi 1.8]
-     */
+  *
+  * Represents Data validation type enum.
+  *
+  * [Api set: ExcelApi 1.8]
+  */
 @JSGlobal("Excel.DataValidationType")
 @js.native
 object DataValidationType extends js.Object {
   /**
-           *
-           * Custom data validation type
-           *
-           */
+    *
+    * Custom data validation type
+    *
+    */
   @js.native
   sealed trait custom
     extends officeDashJsLib.ExcelNs.DataValidationType
   
   /**
-           *
-           * Date data validation type
-           *
-           */
+    *
+    * Date data validation type
+    *
+    */
   @js.native
   sealed trait date
     extends officeDashJsLib.ExcelNs.DataValidationType
   
   /**
-           *
-           * Decimal data validation type
-           *
-           */
+    *
+    * Decimal data validation type
+    *
+    */
   @js.native
   sealed trait decimal
     extends officeDashJsLib.ExcelNs.DataValidationType
   
   /**
-           *
-           * Inconsistent means that the range has inconsistent data validation (there are different rules on different cells)
-           *
-           */
+    *
+    * Inconsistent means that the range has inconsistent data validation (there are different rules on different cells)
+    *
+    */
   @js.native
   sealed trait inconsistent
     extends officeDashJsLib.ExcelNs.DataValidationType
   
   /**
-           *
-           * List data validation type
-           *
-           */
+    *
+    * List data validation type
+    *
+    */
   @js.native
   sealed trait list
     extends officeDashJsLib.ExcelNs.DataValidationType
   
   /**
-           *
-           * MixedCriteria means that the range has data validation present on some but not all cells
-           *
-           */
+    *
+    * MixedCriteria means that the range has data validation present on some but not all cells
+    *
+    */
   @js.native
   sealed trait mixedCriteria
     extends officeDashJsLib.ExcelNs.DataValidationType
   
   /**
-           *
-           * None means allow any value and so there is no data validation in the range.
-           *
-           */
+    *
+    * None means allow any value and so there is no data validation in the range.
+    *
+    */
   @js.native
   sealed trait none
     extends officeDashJsLib.ExcelNs.DataValidationType
   
   /**
-           *
-           * Text length data validation type
-           *
-           */
+    *
+    * Text length data validation type
+    *
+    */
   @js.native
   sealed trait textLength
     extends officeDashJsLib.ExcelNs.DataValidationType
   
   /**
-           *
-           * Time data validation type
-           *
-           */
+    *
+    * Time data validation type
+    *
+    */
   @js.native
   sealed trait time
     extends officeDashJsLib.ExcelNs.DataValidationType
   
   /**
-           *
-           * Whole number data validation type
-           *
-           */
+    *
+    * Whole number data validation type
+    *
+    */
   @js.native
   sealed trait wholeNumber
     extends officeDashJsLib.ExcelNs.DataValidationType

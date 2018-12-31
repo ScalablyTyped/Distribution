@@ -13,8 +13,8 @@ trait SoundManager extends SoundManagerProps {
   def clearOnPosition(id: java.lang.String, msecOffset: scala.Double): SMSound = js.native
   def clearOnPosition(id: java.lang.String, msecOffset: scala.Double, callback: js.Function0[scala.Unit]): SMSound = js.native
   /**
-           * Creates a sound object, supporting an arbitrary number of optional arguments. Returns a SMSound object instance. At minimum, a url parameter is required.
-           */
+    * Creates a sound object, supporting an arbitrary number of optional arguments. Returns a SMSound object instance. At minimum, a url parameter is required.
+    */
   def createSound(properties: SoundProperties): SMSound = js.native
   def destroySound(id: java.lang.String): scala.Unit = js.native
   def getMemoryUse(): scala.Double = js.native
@@ -44,9 +44,9 @@ trait SoundManager extends SoundManagerProps {
   def setPosition(id: java.lang.String, msecOffset: scala.Double): SMSound = js.native
   def setVolume(id: java.lang.String, volume: scala.Double): SMSound = js.native
   /**
-           * Sets the volume of all sound objects. Accepted values: 0-100. Affects volume property.
-           * @param volume Volume of all sound objects. Accepted values: 0 - 100
-           */
+    * Sets the volume of all sound objects. Accepted values: 0-100. Affects volume property.
+    * @param volume Volume of all sound objects. Accepted values: 0 - 100
+    */
   def setVolume(volume: scala.Double): scala.Unit = js.native
   def setup(options: SoundManagerProps): SoundManager = js.native
   def stop(id: java.lang.String): SMSound = js.native

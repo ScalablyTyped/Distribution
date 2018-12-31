@@ -14,10 +14,6 @@ trait ITooltipsterJQuery extends js.Object {
   		 * DOM). The `callback` function argument is optional.
   		 */
   def apply(method: tooltipsterLib.tooltipsterLibStrings.close): tooltipsterLib.JQuery = js.native
-  /**
-  		 * Closes the tooltip. When the animation is over, its HTML element is destroyed (definitely removed from the 
-  		 * DOM). The `callback` function argument is optional.
-  		 */
   def apply(method: tooltipsterLib.tooltipsterLibStrings.close, callback: TooltipsterStandardCallbackFunction): tooltipsterLib.JQuery = js.native
   /**
   		 * Returns a tooltip's current content. If the selector matches multiple origins, only the value of the first 
@@ -80,10 +76,6 @@ trait ITooltipsterJQuery extends js.Object {
   		 * is called when the opening animation has ended
   		 */
   def apply(method: tooltipsterLib.tooltipsterLibStrings.open): tooltipsterLib.JQuery = js.native
-  /**
-  		 * Opens the tooltip. The `callback` function argument is optional (see its input signature) and, if provided, 
-  		 * is called when the opening animation has ended
-  		 */
   def apply(method: tooltipsterLib.tooltipsterLibStrings.open, callback: TooltipsterStandardCallbackFunction): tooltipsterLib.JQuery = js.native
   /**
   		 * Returns the value of an option.
@@ -110,7 +102,6 @@ trait ITooltipsterJQuery extends js.Object {
   		 * Trigger a Tooltipster's event coming from any instance.
   		 */
   def apply(method: tooltipsterLib.tooltipsterLibStrings.triggerHandler, eventName: java.lang.String): tooltipsterLib.JQuery = js.native
-  /** Activates Tooltipster */
   def apply(options: ITooltipsterOptions): tooltipsterLib.JQuery = js.native
 }
 

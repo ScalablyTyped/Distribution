@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Order extends js.Object {
   var attribute: java.lang.String
   var collate: java.lang.String

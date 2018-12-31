@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SearchPanelProps extends js.Object {
   /**
   	 * Default clear search field button component.

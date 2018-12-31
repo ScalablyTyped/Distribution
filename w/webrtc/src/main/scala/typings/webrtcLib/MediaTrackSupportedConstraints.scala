@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MediaTrackSupportedConstraints extends js.Object {
   var aspectRatio: js.UndefOr[scala.Boolean] = js.undefined
   var deviceId: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CTRL extends js.Object {
   var CTRL: athenajsLib.athenajsLibNumbers.`17`
   var DOWN: athenajsLib.athenajsLibNumbers.`40`

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait eventInfo extends js.Object {
   var data: js.Any
   var editor: editor

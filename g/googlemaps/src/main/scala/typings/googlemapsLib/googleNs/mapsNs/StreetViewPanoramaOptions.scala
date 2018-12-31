@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StreetViewPanoramaOptions extends js.Object {
   var addressControl: js.UndefOr[scala.Boolean] = js.undefined
   var addressControlOptions: js.UndefOr[StreetViewAddressControlOptions] = js.undefined

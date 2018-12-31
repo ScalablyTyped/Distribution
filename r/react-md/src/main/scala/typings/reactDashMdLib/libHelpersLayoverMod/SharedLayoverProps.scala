@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SharedLayoverProps
   extends reactDashMdLib.libMod.Props {
   var anchor: js.UndefOr[LayoverAnchor] = js.undefined

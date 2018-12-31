@@ -230,7 +230,7 @@ object graphqlModMembers extends js.Object {
   def getVisitFn(
     visitor: graphqlLib.languageVisitorMod.Visitor[
       _, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(any))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(any))),List())))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: any[keyof any] */ js.Any
     ],
     kind: java.lang.String,
     isLeaving: scala.Boolean
@@ -386,32 +386,32 @@ object graphqlModMembers extends js.Object {
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     options: graphqlLib.utilitiesIntrospectionQueryMod.IntrospectionOptions
   ): graphqlLib.utilitiesIntrospectionQueryMod.IntrospectionQuery = js.native
-  def isAbstractType(`type`: js.Any): /* is GraphQLAbstractType */scala.Boolean = js.native
-  def isCompositeType(`type`: js.Any): /* is GraphQLCompositeType */scala.Boolean = js.native
+  def isAbstractType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLAbstractType */ scala.Boolean = js.native
+  def isCompositeType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLCompositeType */ scala.Boolean = js.native
   def isDefinitionNode(node: graphqlLib.languageAstMod.ASTNode): scala.Boolean = js.native
-  def isDirective(directive: js.Any): /* is GraphQLDirective */scala.Boolean = js.native
-  def isEnumType(`type`: js.Any): /* is GraphQLEnumType */scala.Boolean = js.native
+  def isDirective(directive: js.Any): /* is graphql.graphql/type/directives.GraphQLDirective */ scala.Boolean = js.native
+  def isEnumType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLEnumType */ scala.Boolean = js.native
   def isEqualType(typeA: graphqlLib.typeDefinitionMod.GraphQLType, typeB: graphqlLib.typeDefinitionMod.GraphQLType): scala.Boolean = js.native
   def isExecutableDefinitionNode(node: graphqlLib.languageAstMod.ASTNode): scala.Boolean = js.native
-  def isInputObjectType(`type`: js.Any): /* is GraphQLInputObjectType */scala.Boolean = js.native
-  def isInputType(`type`: js.Any): /* is GraphQLInputType */scala.Boolean = js.native
-  def isInterfaceType(`type`: js.Any): /* is GraphQLInterfaceType */scala.Boolean = js.native
+  def isInputObjectType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLInputObjectType */ scala.Boolean = js.native
+  def isInputType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLInputType */ scala.Boolean = js.native
+  def isInterfaceType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLInterfaceType */ scala.Boolean = js.native
   def isIntrospectionType(`type`: js.Any): scala.Boolean = js.native
-  def isLeafType(`type`: js.Any): /* is GraphQLLeafType */scala.Boolean = js.native
-  def isListType(`type`: js.Any): /* is GraphQLList */scala.Boolean = js.native
-  def isNamedType(`type`: js.Any): /* is GraphQLNamedType */scala.Boolean = js.native
-  def isNonNullType(`type`: js.Any): /* is GraphQLNonNull */scala.Boolean = js.native
-  def isNullableType(`type`: js.Any): /* is GraphQLNullableType */scala.Boolean = js.native
-  def isObjectType(`type`: js.Any): /* is GraphQLObjectType */scala.Boolean = js.native
-  def isOutputType(`type`: js.Any): /* is GraphQLOutputType */scala.Boolean = js.native
+  def isLeafType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLLeafType */ scala.Boolean = js.native
+  def isListType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLList<any> */ scala.Boolean = js.native
+  def isNamedType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLNamedType */ scala.Boolean = js.native
+  def isNonNullType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLNonNull<any> */ scala.Boolean = js.native
+  def isNullableType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLNullableType */ scala.Boolean = js.native
+  def isObjectType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLObjectType */ scala.Boolean = js.native
+  def isOutputType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLOutputType */ scala.Boolean = js.native
   def isRequiredArgument(arg: graphqlLib.typeDefinitionMod.GraphQLArgument): scala.Boolean = js.native
   def isRequiredInputField(field: graphqlLib.typeDefinitionMod.GraphQLInputField): scala.Boolean = js.native
-  def isScalarType(`type`: js.Any): /* is GraphQLScalarType */scala.Boolean = js.native
-  def isSchema(schema: js.Any): /* is GraphQLSchema */scala.Boolean = js.native
+  def isScalarType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLScalarType */ scala.Boolean = js.native
+  def isSchema(schema: js.Any): /* is graphql.graphql/type/schema.GraphQLSchema */ scala.Boolean = js.native
   def isSelectionNode(node: graphqlLib.languageAstMod.ASTNode): scala.Boolean = js.native
   def isSpecifiedDirective(directive: graphqlLib.typeDirectivesMod.GraphQLDirective): scala.Boolean = js.native
   def isSpecifiedScalarType(`type`: graphqlLib.typeDefinitionMod.GraphQLScalarType): scala.Boolean = js.native
-  def isType(`type`: js.Any): /* is GraphQLType */scala.Boolean = js.native
+  def isType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLType */ scala.Boolean = js.native
   def isTypeDefinitionNode(node: graphqlLib.languageAstMod.ASTNode): scala.Boolean = js.native
   def isTypeExtensionNode(node: graphqlLib.languageAstMod.ASTNode): scala.Boolean = js.native
   def isTypeNode(node: graphqlLib.languageAstMod.ASTNode): scala.Boolean = js.native
@@ -422,7 +422,7 @@ object graphqlModMembers extends js.Object {
   ): scala.Boolean = js.native
   def isTypeSystemDefinitionNode(node: graphqlLib.languageAstMod.ASTNode): scala.Boolean = js.native
   def isTypeSystemExtensionNode(node: graphqlLib.languageAstMod.ASTNode): scala.Boolean = js.native
-  def isUnionType(`type`: js.Any): /* is GraphQLUnionType */scala.Boolean = js.native
+  def isUnionType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLUnionType */ scala.Boolean = js.native
   def isValidJSValue(value: js.Any, `type`: graphqlLib.typeDefinitionMod.GraphQLInputType): js.Array[java.lang.String] = js.native
   def isValidLiteralValue(
     `type`: graphqlLib.typeDefinitionMod.GraphQLInputType,
@@ -431,7 +431,7 @@ object graphqlModMembers extends js.Object {
   def isValidNameError(name: java.lang.String): js.UndefOr[graphqlLib.errorGraphQLErrorMod.GraphQLError] = js.native
   def isValidNameError(name: java.lang.String, node: graphqlLib.languageAstMod.ASTNode): js.UndefOr[graphqlLib.errorGraphQLErrorMod.GraphQLError] = js.native
   def isValueNode(node: graphqlLib.languageAstMod.ASTNode): scala.Boolean = js.native
-  def isWrappingType(`type`: js.Any): /* is GraphQLWrappingType */scala.Boolean = js.native
+  def isWrappingType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLWrappingType */ scala.Boolean = js.native
   def lexicographicSortSchema(schema: graphqlLib.typeSchemaMod.GraphQLSchema): graphqlLib.typeSchemaMod.GraphQLSchema = js.native
   def parse(source: graphqlLib.languageSourceMod.Source): graphqlLib.languageAstMod.DocumentNode = js.native
   def parse(source: graphqlLib.languageSourceMod.Source, options: graphqlLib.languageParserMod.ParseOptions): graphqlLib.languageAstMod.DocumentNode = js.native
@@ -527,14 +527,14 @@ object graphqlModMembers extends js.Object {
     root: graphqlLib.languageAstMod.ASTNode,
     visitor: graphqlLib.languageVisitorMod.Visitor[
       graphqlLib.languageAstMod.ASTKindToNode, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List())))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: graphql.graphql/language/ast.ASTKindToNode[keyof graphql.graphql/language/ast.ASTKindToNode] */ js.Any
     ]
   ): js.Any = js.native
   def visit(
     root: graphqlLib.languageAstMod.ASTNode,
     visitor: graphqlLib.languageVisitorMod.Visitor[
       graphqlLib.languageAstMod.ASTKindToNode, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List())))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: graphql.graphql/language/ast.ASTKindToNode[keyof graphql.graphql/language/ast.ASTKindToNode] */ js.Any
     ],
     visitorKeys: graphqlLib.languageVisitorMod.VisitorKeyMap[graphqlLib.languageAstMod.ASTKindToNode]
   ): js.Any = js.native
@@ -542,22 +542,22 @@ object graphqlModMembers extends js.Object {
     visitors: js.Array[
       graphqlLib.languageVisitorMod.Visitor[
         graphqlLib.languageAstMod.ASTKindToNode, 
-        /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List())))) */js.Any
+        /* import warning: ImportType.apply Failed type conversion: graphql.graphql/language/ast.ASTKindToNode[keyof graphql.graphql/language/ast.ASTKindToNode] */ js.Any
       ]
     ]
   ): graphqlLib.languageVisitorMod.Visitor[
     graphqlLib.languageAstMod.ASTKindToNode, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List())))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: graphql.graphql/language/ast.ASTKindToNode[keyof graphql.graphql/language/ast.ASTKindToNode] */ js.Any
   ] = js.native
   def visitWithTypeInfo(
     typeInfo: graphqlLib.utilitiesTypeInfoMod.TypeInfo,
     visitor: graphqlLib.languageVisitorMod.Visitor[
       graphqlLib.languageAstMod.ASTKindToNode, 
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List())))) */js.Any
+      /* import warning: ImportType.apply Failed type conversion: graphql.graphql/language/ast.ASTKindToNode[keyof graphql.graphql/language/ast.ASTKindToNode] */ js.Any
     ]
   ): graphqlLib.languageVisitorMod.Visitor[
     graphqlLib.languageAstMod.ASTKindToNode, 
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentLibrarySimple(graphql), TsIdentModule(None,List(graphql, language, ast)), TsIdentSimple(ASTKindToNode))),List())))) */js.Any
+    /* import warning: ImportType.apply Failed type conversion: graphql.graphql/language/ast.ASTKindToNode[keyof graphql.graphql/language/ast.ASTKindToNode] */ js.Any
   ] = js.native
 }
 

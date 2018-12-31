@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GamepadInstance extends js.Object {
   var axisStates: js.Array[scala.Double]
   var buttonStates: js.Array[scala.Boolean]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StackedAreaChartProps[T] extends ChartProps[T] {
   var colors: js.Array[java.lang.String]
   var extras: js.UndefOr[js.Array[_]] = js.undefined

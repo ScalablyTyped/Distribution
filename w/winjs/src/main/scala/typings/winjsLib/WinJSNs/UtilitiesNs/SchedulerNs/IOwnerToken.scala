@@ -6,14 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * Represents an object that owns jobs. You can use this object to cancel a set of jobs.
-    **/
-
+  * Represents an object that owns jobs. You can use this object to cancel a set of jobs.
+  **/
 trait IOwnerToken extends js.Object {
   //#region Methods
   /**
-           * Synchronously cancels the job that this token owns, including paused and blocked jobs.
-          **/
+    * Synchronously cancels the job that this token owns, including paused and blocked jobs.
+    **/
   def cancelAll(): scala.Unit
 }
 

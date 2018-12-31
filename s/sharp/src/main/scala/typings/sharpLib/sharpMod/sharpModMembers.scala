@@ -21,88 +21,49 @@ object sharpModMembers extends js.Object {
   val versions: sharpLib.Anon_Webp = js.native
   //#region Constructor functions
   /**
-   * Creates a sharp instance from an image
-   * @param input Buffer containing JPEG, PNG, WebP, GIF, SVG, TIFF or raw pixel image data, or String containing the path to an JPEG, PNG, WebP, GIF, SVG or TIFF image file.
-   * @param options Object with optional attributes.
-   * @throws {Error} Invalid parameters
-   * @returns A sharp instance that can be used to chain operations
-   */
+    * Creates a sharp instance from an image
+    * @param input Buffer containing JPEG, PNG, WebP, GIF, SVG, TIFF or raw pixel image data, or String containing the path to an JPEG, PNG, WebP, GIF, SVG or TIFF image file.
+    * @param options Object with optional attributes.
+    * @throws {Error} Invalid parameters
+    * @returns A sharp instance that can be used to chain operations
+    */
   def apply(): sharpLib.sharpMod.sharpNs.Sharp = js.native
   def apply(input: java.lang.String | nodeLib.Buffer): sharpLib.sharpMod.sharpNs.Sharp = js.native
   def apply(input: java.lang.String | nodeLib.Buffer, options: sharpLib.sharpMod.sharpNs.SharpOptions): sharpLib.sharpMod.sharpNs.Sharp = js.native
-  //#region Constructor functions
-  /**
-   * Creates a sharp instance from an image
-   * @param input Buffer containing JPEG, PNG, WebP, GIF, SVG, TIFF or raw pixel image data, or String containing the path to an JPEG, PNG, WebP, GIF, SVG or TIFF image file.
-   * @param options Object with optional attributes.
-   * @throws {Error} Invalid parameters
-   * @returns A sharp instance that can be used to chain operations
-   */
   def apply(options: sharpLib.sharpMod.sharpNs.SharpOptions): sharpLib.sharpMod.sharpNs.Sharp = js.native
   //#endregion
   //#region Utility functions
   /**
-       * Gets or, when options are provided, sets the limits of libvips' operation cache.
-       * Existing entries in the cache will be trimmed after any change in limits.
-       * This method always returns cache statistics, useful for determining how much working memory is required for a particular task.
-       * @param options Object with the following attributes, or Boolean where true uses default cache settings and false removes all caching (optional, default true)
-       * @returns The cache results.
-       */
+    * Gets or, when options are provided, sets the limits of libvips' operation cache.
+    * Existing entries in the cache will be trimmed after any change in limits.
+    * This method always returns cache statistics, useful for determining how much working memory is required for a particular task.
+    * @param options Object with the following attributes, or Boolean where true uses default cache settings and false removes all caching (optional, default true)
+    * @returns The cache results.
+    */
   def cache(): sharpLib.sharpMod.sharpNs.CacheResult = js.native
-  //#endregion
-  //#region Utility functions
-  /**
-       * Gets or, when options are provided, sets the limits of libvips' operation cache.
-       * Existing entries in the cache will be trimmed after any change in limits.
-       * This method always returns cache statistics, useful for determining how much working memory is required for a particular task.
-       * @param options Object with the following attributes, or Boolean where true uses default cache settings and false removes all caching (optional, default true)
-       * @returns The cache results.
-       */
   def cache(options: scala.Boolean): sharpLib.sharpMod.sharpNs.CacheResult = js.native
-  //#endregion
-  //#region Utility functions
-  /**
-       * Gets or, when options are provided, sets the limits of libvips' operation cache.
-       * Existing entries in the cache will be trimmed after any change in limits.
-       * This method always returns cache statistics, useful for determining how much working memory is required for a particular task.
-       * @param options Object with the following attributes, or Boolean where true uses default cache settings and false removes all caching (optional, default true)
-       * @returns The cache results.
-       */
   def cache(options: sharpLib.sharpMod.sharpNs.CacheOptions): sharpLib.sharpMod.sharpNs.CacheResult = js.native
   /**
-       * Gets or sets the number of threads libvips' should create to process each image.
-       * The default value is the number of CPU cores. A value of 0 will reset to this default.
-       * The maximum number of images that can be processed in parallel is limited by libuv's UV_THREADPOOL_SIZE environment variable.
-       * @param concurrency The new concurrency value.
-       * @returns The current concurrency value.
-       */
+    * Gets or sets the number of threads libvips' should create to process each image.
+    * The default value is the number of CPU cores. A value of 0 will reset to this default.
+    * The maximum number of images that can be processed in parallel is limited by libuv's UV_THREADPOOL_SIZE environment variable.
+    * @param concurrency The new concurrency value.
+    * @returns The current concurrency value.
+    */
   def concurrency(): scala.Double = js.native
-  /**
-       * Gets or sets the number of threads libvips' should create to process each image.
-       * The default value is the number of CPU cores. A value of 0 will reset to this default.
-       * The maximum number of images that can be processed in parallel is limited by libuv's UV_THREADPOOL_SIZE environment variable.
-       * @param concurrency The new concurrency value.
-       * @returns The current concurrency value.
-       */
   def concurrency(concurrency: scala.Double): scala.Double = js.native
   /**
-       * Provides access to internal task counters.
-       * @returns Object containing task counters
-       */
+    * Provides access to internal task counters.
+    * @returns Object containing task counters
+    */
   def counters(): sharpLib.sharpMod.sharpNs.SharpCounters = js.native
   /**
-       * Get and set use of SIMD vector unit instructions. Requires libvips to have been compiled with liborc support.
-       * Improves the performance of resize, blur and sharpen operations by taking advantage of the SIMD vector unit of the CPU, e.g. Intel SSE and ARM NEON.
-       * @param enable enable or disable use of SIMD vector unit instructions
-       * @returns true if usage of SIMD vector unit instructions is enabled
-       */
+    * Get and set use of SIMD vector unit instructions. Requires libvips to have been compiled with liborc support.
+    * Improves the performance of resize, blur and sharpen operations by taking advantage of the SIMD vector unit of the CPU, e.g. Intel SSE and ARM NEON.
+    * @param enable enable or disable use of SIMD vector unit instructions
+    * @returns true if usage of SIMD vector unit instructions is enabled
+    */
   def simd(): scala.Boolean = js.native
-  /**
-       * Get and set use of SIMD vector unit instructions. Requires libvips to have been compiled with liborc support.
-       * Improves the performance of resize, blur and sharpen operations by taking advantage of the SIMD vector unit of the CPU, e.g. Intel SSE and ARM NEON.
-       * @param enable enable or disable use of SIMD vector unit instructions
-       * @returns true if usage of SIMD vector unit instructions is enabled
-       */
   def simd(enable: scala.Boolean): scala.Boolean = js.native
 }
 

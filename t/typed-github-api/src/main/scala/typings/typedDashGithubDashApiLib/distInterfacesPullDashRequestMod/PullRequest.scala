@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PullRequest extends PullRequestRef {
   var assignee: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary | scala.Null
   var assignees: js.Array[typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary]

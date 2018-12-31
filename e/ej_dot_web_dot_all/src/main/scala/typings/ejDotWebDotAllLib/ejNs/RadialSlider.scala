@@ -16,12 +16,12 @@ class RadialSlider protected () extends Widget {
   @JSName("model")
   var model_RadialSlider: ejDotWebDotAllLib.ejNs.RadialSliderNs.Model = js.native
   /** To hide the radialslider
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def hide(): scala.Unit = js.native
   /** To show the radialslider
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def show(): scala.Unit = js.native
 }
 

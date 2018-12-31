@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-             * Represents a raw writable unpack stream
-             */
+  * Represents a raw writable unpack stream
+  */
 @JSGlobal("adone.archive.tar.RawUnpackStream")
 @js.native
 class RawUnpackStream ()

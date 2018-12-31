@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DataViewKpiColumnMetadata extends js.Object {
   var graphic: java.lang.String
   // When false, five state KPIs are in: { -2, -1, 0, 1, 2 }.

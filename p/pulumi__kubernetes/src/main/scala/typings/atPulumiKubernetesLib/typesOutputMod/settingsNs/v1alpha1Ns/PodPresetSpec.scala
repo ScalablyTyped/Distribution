@@ -6,29 +6,28 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * PodPresetSpec is a description of a pod preset.
-         */
-
+  * PodPresetSpec is a description of a pod preset.
+  */
 trait PodPresetSpec extends js.Object {
   /**
-               * Env defines the collection of EnvVar to inject into containers.
-               */
+    * Env defines the collection of EnvVar to inject into containers.
+    */
   val env: js.Array[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.EnvVar]
   /**
-               * EnvFrom defines the collection of EnvFromSource to inject into containers.
-               */
+    * EnvFrom defines the collection of EnvFromSource to inject into containers.
+    */
   val envFrom: js.Array[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.EnvFromSource]
   /**
-               * Selector is a label query over a set of resources, in this case pods. Required.
-               */
+    * Selector is a label query over a set of resources, in this case pods. Required.
+    */
   val selector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector
   /**
-               * VolumeMounts defines the collection of VolumeMount to inject into containers.
-               */
+    * VolumeMounts defines the collection of VolumeMount to inject into containers.
+    */
   val volumeMounts: js.Array[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.VolumeMount]
   /**
-               * Volumes defines the collection of Volume to inject into the pod.
-               */
+    * Volumes defines the collection of Volume to inject into the pod.
+    */
   val volumes: js.Array[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.Volume]
 }
 

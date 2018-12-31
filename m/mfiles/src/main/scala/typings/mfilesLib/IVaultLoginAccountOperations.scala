@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVaultLoginAccountOperations extends js.Object {
   def AddLoginAccount(LoginAccount: ILoginAccount, Password: java.lang.String): scala.Unit
   def ForceLogout(AccountNames: IStrings): scala.Unit

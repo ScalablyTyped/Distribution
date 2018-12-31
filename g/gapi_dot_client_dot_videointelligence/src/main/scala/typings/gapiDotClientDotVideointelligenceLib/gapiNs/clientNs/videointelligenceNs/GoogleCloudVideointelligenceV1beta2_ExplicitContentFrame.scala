@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GoogleCloudVideointelligenceV1beta2_ExplicitContentFrame extends js.Object {
   /** Likelihood of the pornography content.. */
   var pornographyLikelihood: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Time-offset, relative to the beginning of the video, corresponding to the
-               * video frame for this location.
-               */
+    * Time-offset, relative to the beginning of the video, corresponding to the
+    * video frame for this location.
+    */
   var timeOffset: js.UndefOr[java.lang.String] = js.undefined
 }
 

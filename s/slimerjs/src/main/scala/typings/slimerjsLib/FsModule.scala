@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FsModule extends js.Object {
   var separator: java.lang.String
   var workingDirectory: java.lang.String
@@ -46,13 +45,13 @@ trait FsModule extends js.Object {
   def split(path: java.lang.String): js.Array[java.lang.String]
   def touch(path: java.lang.String, date: stdLib.Date): scala.Unit
   /*
-        Mode is a string that can contain character which describes a characteristic of the returned stream.
-        If the string contains "r", the file is opened in read-only mode.
-        "w" opens the file in write-only mode.
-        "b" opens the file in binary mode. If "b" is not present, the file is
-            opened in text mode, and its contents are assumed to be UTF-8.
-        "a" means to open as "append" mode: the file is open in write-only mode and all written character are append to the file
-      */
+    Mode is a string that can contain character which describes a characteristic of the returned stream.
+    If the string contains "r", the file is opened in read-only mode.
+    "w" opens the file in write-only mode.
+    "b" opens the file in binary mode. If "b" is not present, the file is
+    opened in text mode, and its contents are assumed to be UTF-8.
+    "a" means to open as "append" mode: the file is open in write-only mode and all written character are append to the file
+    */
   def write(path: java.lang.String, content: js.Any, mode: java.lang.String): scala.Unit
 }
 

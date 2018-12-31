@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NotificationOptions extends js.Object {
   // show the arrow pointing at the element
   var arrowShow: scala.Boolean

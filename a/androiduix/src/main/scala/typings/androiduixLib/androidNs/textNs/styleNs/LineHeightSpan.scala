@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LineHeightSpan extends ParagraphStyle {
   def chooseHeight(
     text: java.lang.String,

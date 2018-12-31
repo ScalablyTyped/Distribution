@@ -14,28 +14,28 @@ trait UTCTime extends LocalSimpleStringBlock {
   var second: scala.Double = js.native
   var year: scala.Double = js.native
   /**
-           * Function converting "Date" object into ASN.1 internal string
-           * 
-           * @param {Date} inputDate JavaScript "Date" object
-           * 
-           * @memberOf UTCTime
-           */
+    * Function converting "Date" object into ASN.1 internal string
+    * 
+    * @param {Date} inputDate JavaScript "Date" object
+    * 
+    * @memberOf UTCTime
+    */
   def fromDate(inputDate: stdLib.Date): scala.Unit = js.native
   /**
-           * Function converting ASN.1 internal string into ArrayBuffer
-           * 
-           * @returns {ArrayBuffer}
-           * 
-           * @memberOf UTCTime
-           */
+    * Function converting ASN.1 internal string into ArrayBuffer
+    * 
+    * @returns {ArrayBuffer}
+    * 
+    * @memberOf UTCTime
+    */
   def toBuffer(): stdLib.ArrayBuffer = js.native
   /**
-           * Function converting ASN.1 internal string into "Date" object
-           * 
-           * @returns {Date}
-           * 
-           * @memberOf UTCTime
-           */
+    * Function converting ASN.1 internal string into "Date" object
+    * 
+    * @returns {Date}
+    * 
+    * @memberOf UTCTime
+    */
   def toDate(): stdLib.Date = js.native
 }
 

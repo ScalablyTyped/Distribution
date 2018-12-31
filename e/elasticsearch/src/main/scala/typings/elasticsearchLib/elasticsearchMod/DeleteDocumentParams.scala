@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeleteDocumentParams extends GenericParams {
   var id: java.lang.String
   var index: java.lang.String

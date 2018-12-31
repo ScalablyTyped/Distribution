@@ -6,32 +6,31 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * 'Properties' object passed into the WL.ui method.
-     */
-
+  * 'Properties' object passed into the WL.ui method.
+  */
 trait IUIProperties extends js.Object {
   /**
-           * The value of the id attribute of the <div> tag to display the button
-           * in.
-           */
+    * The value of the id attribute of the <div> tag to display the button
+    * in.
+    */
   var element: java.lang.String
   /**
-           * Specifies the type of button to display. Specify "signin" to display
-           * the Live Connect sign-in button. Specify "skydrivepicker" to display
-           * the SkyDrive button.
-           */
+    * Specifies the type of button to display. Specify "signin" to display
+    * the Live Connect sign-in button. Specify "skydrivepicker" to display
+    * the SkyDrive button.
+    */
   var name: java.lang.String
   /**
-           * Windows Store apps using JavaScript: not applicable.
-           * Web apps: Optional. If the name property is set to "signin", the
-           * WL.init function's response_type property is set to "code", and the
-           * app uses server-flow authentication, the state object here can be
-           * used to track the web app's calling state on the web app server side.
-           * For more info, see the description of the state query parameter in
-           * the Server-side scenarios topic's "Getting an authorization code"
-           * section.
-           * http://msdn.microsoft.com/en-us/library/live/hh243649.aspx
-           */
+    * Windows Store apps using JavaScript: not applicable.
+    * Web apps: Optional. If the name property is set to "signin", the
+    * WL.init function's response_type property is set to "code", and the
+    * app uses server-flow authentication, the state object here can be
+    * used to track the web app's calling state on the web app server side.
+    * For more info, see the description of the state query parameter in
+    * the Server-side scenarios topic's "Getting an authorization code"
+    * section.
+    * http://msdn.microsoft.com/en-us/library/live/hh243649.aspx
+    */
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 

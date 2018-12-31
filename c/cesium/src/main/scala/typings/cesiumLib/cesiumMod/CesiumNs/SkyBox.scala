@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SkyBox extends js.Object {
   var show: scala.Boolean
   var sources: js.Any

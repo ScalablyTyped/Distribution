@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MarketplaceDeal extends js.Object {
   /** Buyer private data (hidden from seller). */
   var buyerPrivateData: js.UndefOr[PrivateData] = js.undefined
@@ -20,9 +19,9 @@ trait MarketplaceDeal extends js.Object {
   /** Metadata about the serving status of this deal (readonly, writes via custom actions) */
   var dealServingMetadata: js.UndefOr[DealServingMetadata] = js.undefined
   /**
-               * The set of fields around delivery control that are interesting for a buyer to see but are non-negotiable. These are set by the publisher. This message
-               * is assigned an id of 100 since some day we would want to model this as a protobuf extension.
-               */
+    * The set of fields around delivery control that are interesting for a buyer to see but are non-negotiable. These are set by the publisher. This message
+    * is assigned an id of 100 since some day we would want to model this as a protobuf extension.
+    */
   var deliveryControl: js.UndefOr[DeliveryControl] = js.undefined
   /** The external deal id assigned to this deal once the deal is finalized. This is the deal-id that shows up in serving/reporting etc. (readonly) */
   var externalDealId: js.UndefOr[java.lang.String] = js.undefined
@@ -47,9 +46,9 @@ trait MarketplaceDeal extends js.Object {
   /** The revision number of the product that the deal was created from (readonly, except on create) */
   var productRevisionNumber: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Specifies the creative source for programmatic deals, PUBLISHER means creative is provided by seller and ADVERTISR means creative is provided by buyer.
-               * (buyer-readonly)
-               */
+    * Specifies the creative source for programmatic deals, PUBLISHER means creative is provided by seller and ADVERTISR means creative is provided by buyer.
+    * (buyer-readonly)
+    */
   var programmaticCreativeSource: js.UndefOr[java.lang.String] = js.undefined
   var proposalId: js.UndefOr[java.lang.String] = js.undefined
   /** Optional Seller contact information for the deal (buyer-readonly) */

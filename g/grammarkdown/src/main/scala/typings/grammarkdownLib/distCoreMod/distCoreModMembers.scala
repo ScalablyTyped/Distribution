@@ -35,9 +35,9 @@ object distCoreModMembers extends js.Object {
   def forEach[T, U](array: js.Array[T], cb: js.Function1[/* value */ T, js.UndefOr[U]]): js.UndefOr[U] = js.native
   def forEach[T, U](array: js.UndefOr[scala.Nothing], cb: js.Function1[/* value */ T, js.UndefOr[U]]): js.UndefOr[U] = js.native
   def forEachPossiblyAsync[T, U](iterable: stdLib.Iterable[T], callback: js.Function1[/* value */ T, js.UndefOr[js.Promise[U] | U]]): scala.Unit | js.Promise[scala.Unit] = js.native
-  def isPromise[T](): /* is Promise */scala.Boolean = js.native
-  def isPromise[T](value: T): /* is Promise */scala.Boolean = js.native
-  def isPromise[T](value: js.Promise[T]): /* is Promise */scala.Boolean = js.native
+  def isPromise[T](): /* is std.Promise<T> */ scala.Boolean = js.native
+  def isPromise[T](value: T): /* is std.Promise<T> */ scala.Boolean = js.native
+  def isPromise[T](value: js.Promise[T]): /* is std.Promise<T> */ scala.Boolean = js.native
   def last[T](): js.UndefOr[T] = js.native
   def last[T](iterable: js.Array[T]): js.UndefOr[T] = js.native
   def last[T](iterable: stdLib.Iterable[T]): js.UndefOr[T] = js.native

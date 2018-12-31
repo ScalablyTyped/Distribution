@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation._
 
 package object jugLib {
   /**
-   * User data of a vertex.
-   */
+    * User data of a vertex.
+    */
   type VertexData = js.Object
 }

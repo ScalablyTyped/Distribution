@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Result extends js.Object {
   var api_url: java.lang.String
   var branch: java.lang.String

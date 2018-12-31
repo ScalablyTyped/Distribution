@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ServerOptions extends ClientOptions {
   /**
   	 * Interval at which to send out advertisement (ms)

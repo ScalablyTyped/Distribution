@@ -5,16 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InstancesResource extends js.Object {
   /** Adds an access config to an instance's network interface. */
   def addAccessConfig(request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintInstanceQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /** Retrieves aggregated list of instances. */
   def aggregatedList(request: gapiDotClientDotComputeLib.Anon_Project): gapiDotClientLib.gapiNs.clientNs.Request[InstanceAggregatedList]
   /**
-               * Attaches an existing Disk resource to an instance. You must first create the disk before you can attach it. It is not possible to create and attach a
-               * disk at the same time. For more information, read Adding a persistent disk to your instance.
-               */
+    * Attaches an existing Disk resource to an instance. You must first create the disk before you can attach it. It is not possible to create and attach a
+    * disk at the same time. For more information, read Adding a persistent disk to your instance.
+    */
   def attachDisk(request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintInstance): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /** Deletes the specified Instance resource. For more information, see Stopping or Deleting an Instance. */
   def delete(request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintInstance): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
@@ -43,9 +42,9 @@ trait InstancesResource extends js.Object {
   /** Sets metadata for the specified instance to the data included in the request. */
   def setMetadata(request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintInstance): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
-               * Changes the minimum CPU platform that this instance should use. This method can only be called on a stopped instance. For more information, read
-               * Specifying a Minimum CPU Platform.
-               */
+    * Changes the minimum CPU platform that this instance should use. This method can only be called on a stopped instance. For more information, read
+    * Specifying a Minimum CPU Platform.
+    */
   def setMinCpuPlatform(request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintInstance): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /** Sets an instance's scheduling options. */
   def setScheduling(request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintInstance): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
@@ -58,10 +57,10 @@ trait InstancesResource extends js.Object {
   /** Starts an instance that was stopped using the using the instances().stop method. For more information, see Restart an instance. */
   def startWithEncryptionKey(request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintInstance): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
   /**
-               * Stops a running instance, shutting it down cleanly, and allows you to restart the instance at a later time. Stopped instances do not incur per-minute,
-               * virtual machine usage charges while they are stopped, but any resources that the virtual machine is using, such as persistent disks and static IP
-               * addresses, will continue to be charged until they are deleted. For more information, see Stopping an instance.
-               */
+    * Stops a running instance, shutting it down cleanly, and allows you to restart the instance at a later time. Stopped instances do not incur per-minute,
+    * virtual machine usage charges while they are stopped, but any resources that the virtual machine is using, such as persistent disks and static IP
+    * addresses, will continue to be charged until they are deleted. For more information, see Stopping an instance.
+    */
   def stop(request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintInstance): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 

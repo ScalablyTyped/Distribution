@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NotificationEventResponse extends js.Object {
   /**
   		 * An optional collection of data sent by the 3rd party push service that does not fit in the above properties.

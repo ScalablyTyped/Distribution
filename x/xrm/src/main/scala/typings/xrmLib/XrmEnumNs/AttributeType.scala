@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait AttributeType extends js.Object
 
 /**
-     * Constant Enum: Attribute types for {@link Attributes.Attribute.setDisplayState()}.
-     * @see {@link Xrm.Attributes.AttributeType}
-     */
+  * Constant Enum: Attribute types for {@link Attributes.Attribute.setDisplayState()}.
+  * @see {@link Xrm.Attributes.AttributeType}
+  */
 @JSGlobal("XrmEnum.AttributeType")
 @js.native
 object AttributeType extends js.Object {

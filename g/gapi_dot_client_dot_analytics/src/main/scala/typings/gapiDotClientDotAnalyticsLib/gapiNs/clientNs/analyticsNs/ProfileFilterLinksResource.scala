@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProfileFilterLinksResource extends js.Object {
   /** Delete a profile filter link. */
   def delete(request: gapiDotClientDotAnalyticsLib.Anon_ProfileIdLinkId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

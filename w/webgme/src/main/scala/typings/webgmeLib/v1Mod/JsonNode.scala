@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JsonNode extends js.Object {
   var attributes: js.Any
   var base: java.lang.String

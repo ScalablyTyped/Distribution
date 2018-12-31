@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ForwardedTcpipChannelInfo extends js.Object {
   var data: TcpipChannelData
   var packetSize: scala.Double

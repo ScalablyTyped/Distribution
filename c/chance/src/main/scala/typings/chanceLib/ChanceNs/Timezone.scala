@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Timezone extends js.Object {
   var abbr: java.lang.String
   var isdst: scala.Boolean

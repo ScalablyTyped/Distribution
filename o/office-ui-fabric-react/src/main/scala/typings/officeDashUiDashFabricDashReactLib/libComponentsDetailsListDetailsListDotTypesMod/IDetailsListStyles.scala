@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDetailsListStyles extends js.Object {
   var contentWrapper: atUifabricMergeDashStylesLib.libIStyleMod.IStyle
   var focusZone: atUifabricMergeDashStylesLib.libIStyleMod.IStyle

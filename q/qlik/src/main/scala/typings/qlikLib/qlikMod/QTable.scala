@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QTable extends js.Object {
   var colCount: scala.Double
   var headers: js.Array[QHeader]

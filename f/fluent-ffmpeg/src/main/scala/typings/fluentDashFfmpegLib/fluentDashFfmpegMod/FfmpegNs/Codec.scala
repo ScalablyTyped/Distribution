@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Codec extends js.Object {
   var canDecode: scala.Boolean
   var canEncode: scala.Boolean

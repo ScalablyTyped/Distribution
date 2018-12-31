@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Inmemorypagesplits extends js.Object {
   var `bytes currently in the cache`: scala.Double
   var `bytes read into cache`: scala.Double

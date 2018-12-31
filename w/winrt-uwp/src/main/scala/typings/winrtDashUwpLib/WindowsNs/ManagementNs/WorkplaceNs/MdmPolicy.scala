@@ -15,24 +15,24 @@ abstract class MdmPolicy () extends js.Object
 @js.native
 object MdmPolicy extends js.Object {
   /**
-                   * Returns true if a browser is allowed.
-                   * @return true if a browser is allowed.
-                   */
+    * Returns true if a browser is allowed.
+    * @return true if a browser is allowed.
+    */
   def isBrowserAllowed(): scala.Boolean = js.native
   /**
-                   * Returns true if a camera is allowed.
-                   * @return true if a camera is allowed.
-                   */
+    * Returns true if a camera is allowed.
+    * @return true if a camera is allowed.
+    */
   def isCameraAllowed(): scala.Boolean = js.native
   /**
-                   * Returns true if a Microsoft Account is allowed.
-                   * @return true if a Microsoft Account is allowed.
-                   */
+    * Returns true if a Microsoft Account is allowed.
+    * @return true if a Microsoft Account is allowed.
+    */
   def isMicrosoftAccountAllowed(): scala.Boolean = js.native
   /**
-                   * Returns true if a Store is allowed.
-                   * @return true if a Store is allowed.
-                   */
+    * Returns true if a Store is allowed.
+    * @return true if a Store is allowed.
+    */
   def isStoreAllowed(): scala.Boolean = js.native
 }
 

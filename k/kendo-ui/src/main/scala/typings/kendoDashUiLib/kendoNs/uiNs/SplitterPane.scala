@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SplitterPane extends js.Object {
   var collapsed: js.UndefOr[scala.Boolean] = js.undefined
   var collapsedSize: js.UndefOr[java.lang.String] = js.undefined

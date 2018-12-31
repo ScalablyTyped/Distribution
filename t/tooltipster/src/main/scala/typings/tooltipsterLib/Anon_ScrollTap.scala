@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_ScrollTap extends js.Object {
   /**
   			 * When a mouse click happens anywhere in the page. However, if the interactive option is set to true, 

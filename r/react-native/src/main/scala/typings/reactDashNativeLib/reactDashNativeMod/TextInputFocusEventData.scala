@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TextInputFocusEventData extends js.Object {
   var eventCount: scala.Double
   var target: scala.Double

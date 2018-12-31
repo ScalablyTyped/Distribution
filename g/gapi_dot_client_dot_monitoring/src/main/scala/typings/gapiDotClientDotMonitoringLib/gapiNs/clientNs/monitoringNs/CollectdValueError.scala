@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CollectdValueError extends js.Object {
   /** Records the error status for the value. */
   var error: js.UndefOr[Status] = js.undefined

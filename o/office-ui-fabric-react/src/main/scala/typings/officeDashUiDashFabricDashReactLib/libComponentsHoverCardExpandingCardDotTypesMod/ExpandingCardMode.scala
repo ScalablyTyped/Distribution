@@ -12,15 +12,15 @@ sealed trait ExpandingCardMode extends js.Object
 @js.native
 object ExpandingCardMode extends js.Object {
   /**
-       * To have top compact card only
-       */
+    * To have top compact card only
+    */
   @js.native
   sealed trait compact
     extends officeDashUiDashFabricDashReactLib.libComponentsHoverCardExpandingCardDotTypesMod.ExpandingCardMode
   
   /**
-       * To have both top compact and bottom expanded card
-       */
+    * To have both top compact and bottom expanded card
+    */
   @js.native
   sealed trait expanded
     extends officeDashUiDashFabricDashReactLib.libComponentsHoverCardExpandingCardDotTypesMod.ExpandingCardMode

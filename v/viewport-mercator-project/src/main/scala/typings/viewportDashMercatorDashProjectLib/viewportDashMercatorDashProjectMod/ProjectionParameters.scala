@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ProjectionParameters extends js.Object {
   var aspect: scala.Double
   var far: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JSSOptions extends js.Object {
   var insertionPoint: java.lang.String | stdLib.HTMLElement
   var plugins: js.Array[JSSPlugin]

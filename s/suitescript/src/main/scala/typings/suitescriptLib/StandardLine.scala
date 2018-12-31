@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StandardLine extends js.Object {
   def getEntityId(): scala.Double
   def getId(): scala.Double

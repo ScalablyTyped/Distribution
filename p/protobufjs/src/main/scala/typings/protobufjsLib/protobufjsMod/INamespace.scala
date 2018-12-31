@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait INamespace extends js.Object {
   /** Nested object descriptors */
   var nested: js.UndefOr[org.scalablytyped.runtime.StringDictionary[protobufjsLib.AnyNestedObject]] = js.undefined

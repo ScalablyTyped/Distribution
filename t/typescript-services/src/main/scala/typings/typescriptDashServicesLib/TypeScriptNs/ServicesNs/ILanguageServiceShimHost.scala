@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ILanguageServiceShimHost
   extends typescriptDashServicesLib.TypeScriptNs.ILogger {
   def directoryExists(path: java.lang.String): scala.Boolean

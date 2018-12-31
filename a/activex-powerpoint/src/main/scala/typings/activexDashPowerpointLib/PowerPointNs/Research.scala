@@ -13,24 +13,16 @@ class Research protected () extends js.Object {
   var `PowerPoint.Research_typekey`: Research = js.native
   def IsResearchService(ServiceID: java.lang.String): scala.Boolean = js.native
   /**
-           * @param boolean [UseSelection=false]
-           * @param boolean [LaunchQuery=true]
-           */
+    * @param boolean [UseSelection=false]
+    * @param boolean [LaunchQuery=true]
+    */
   def Query(ServiceID: java.lang.String, QueryString: js.Any, QueryLanguage: js.Any): scala.Unit = js.native
-  /**
-           * @param boolean [UseSelection=false]
-           * @param boolean [LaunchQuery=true]
-           */
   def Query(
     ServiceID: java.lang.String,
     QueryString: js.Any,
     QueryLanguage: js.Any,
     UseSelection: scala.Boolean
   ): scala.Unit = js.native
-  /**
-           * @param boolean [UseSelection=false]
-           * @param boolean [LaunchQuery=true]
-           */
   def Query(
     ServiceID: java.lang.String,
     QueryString: js.Any,

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Represents parameters for a query for certificates from the certificate store for an app. */
 @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateQuery")
 @js.native
+/** Creates a new instance of a certificate query. */
 class CertificateQuery () extends js.Object {
   /** Gets a collection of object identifiers (OIDs) for the enhanced key usage extension to search for. */
   var enhancedKeyUsages: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[java.lang.String] = js.native

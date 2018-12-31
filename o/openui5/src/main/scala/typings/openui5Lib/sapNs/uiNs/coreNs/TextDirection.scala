@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait TextDirection extends js.Object
 
 /**
-       * Configuration options for the direction of texts.
-      */
+  * Configuration options for the direction of texts.
+  */
 @JSGlobal("sap.ui.core.TextDirection")
 @js.native
 object TextDirection extends js.Object {

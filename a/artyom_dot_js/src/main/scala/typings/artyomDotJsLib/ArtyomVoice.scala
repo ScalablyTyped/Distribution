@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ArtyomVoice extends js.Object {
   var default: scala.Boolean
   var lang: java.lang.String

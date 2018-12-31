@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FontConstructorOptionsBase extends js.Object {
   var ascender: scala.Double
   var descender: scala.Double

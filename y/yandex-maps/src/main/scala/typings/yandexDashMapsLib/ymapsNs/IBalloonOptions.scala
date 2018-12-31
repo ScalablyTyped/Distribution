@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IBalloonOptions extends js.Object {
   var autoPan: js.UndefOr[scala.Boolean] = js.undefined
   var autoPanCheckZoomRange: js.UndefOr[scala.Boolean] = js.undefined

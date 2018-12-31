@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait UrlcrawlerrorssamplesResource extends js.Object {
   /** Retrieves details about crawl errors for a site's sample URL. */
   def get(request: gapiDotClientDotWebmastersLib.Anon_Url): gapiDotClientLib.gapiNs.clientNs.Request[UrlCrawlErrorsSample]

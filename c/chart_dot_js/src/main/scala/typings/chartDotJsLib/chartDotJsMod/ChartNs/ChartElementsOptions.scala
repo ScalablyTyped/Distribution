@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartElementsOptions extends js.Object {
   var arc: js.UndefOr[ChartArcOptions] = js.undefined
   var line: js.UndefOr[ChartLineOptions] = js.undefined

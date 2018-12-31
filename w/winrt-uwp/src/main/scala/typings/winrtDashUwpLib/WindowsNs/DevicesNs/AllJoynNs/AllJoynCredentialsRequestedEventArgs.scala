@@ -18,9 +18,9 @@ abstract class AllJoynCredentialsRequestedEventArgs () extends js.Object {
   /** A user name value used by mechanisms that accept a user name/password pair. */
   var requestedUserName: java.lang.String = js.native
   /**
-                   * Allows JavaScript Windows Store apps to handle the verification of provided of credentials asynchronously.
-                   * @return The credential request deferral.
-                   */
+    * Allows JavaScript Windows Store apps to handle the verification of provided of credentials asynchronously.
+    * @return The credential request deferral.
+    */
   def getDeferral(): winrtDashUwpLib.WindowsNs.FoundationNs.Deferral = js.native
 }
 

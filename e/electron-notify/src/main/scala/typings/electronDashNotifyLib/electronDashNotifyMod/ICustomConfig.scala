@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ICustomConfig extends js.Object {
   var animateInParallel: js.UndefOr[scala.Boolean] = js.undefined
   var animationStepMs: js.UndefOr[scala.Double] = js.undefined

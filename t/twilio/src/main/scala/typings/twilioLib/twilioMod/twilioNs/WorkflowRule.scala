@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait WorkflowRule extends js.Object {
   var expression: java.lang.String
   var friendlyName: java.lang.String

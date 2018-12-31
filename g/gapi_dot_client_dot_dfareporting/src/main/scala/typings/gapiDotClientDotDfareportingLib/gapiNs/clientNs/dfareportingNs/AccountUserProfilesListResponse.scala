@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AccountUserProfilesListResponse extends js.Object {
   /** Account user profile collection. */
   var accountUserProfiles: js.UndefOr[js.Array[AccountUserProfile]] = js.undefined

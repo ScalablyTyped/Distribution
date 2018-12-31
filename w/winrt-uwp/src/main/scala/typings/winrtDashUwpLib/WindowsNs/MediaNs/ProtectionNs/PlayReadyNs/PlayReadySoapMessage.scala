@@ -14,9 +14,9 @@ abstract class PlayReadySoapMessage () extends js.Object {
   /** Gets the base URL of the XML Web service. */
   var uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri = js.native
   /**
-                       * Retrieves the contents of the SOAP message.
-                       * @return The contents of the SOAP message.
-                       */
+    * Retrieves the contents of the SOAP message.
+    * @return The contents of the SOAP message.
+    */
   def getMessageBody(): js.Array[scala.Double] = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Metrics extends js.Object {
   var leftSideBearing: scala.Double
   var rightSideBearing: js.UndefOr[scala.Double] = js.undefined

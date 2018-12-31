@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRouter
   extends senchaUnderscoreTouchLib.ExtNs.IBase {
   /** [Method] Connects a url based route to a controller action pair plus additional params

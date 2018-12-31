@@ -29,20 +29,12 @@ trait Gaussian extends js.Object {
   		 * probability of a random variable falling in the interval (−∞, x]
   		 */
   def cdf(x: scala.Double): scala.Double = js.native
-  /**
-  		 * returns the quotient distribution of this and the given
-  		 * distribution; equivalent to scale(1/d) when d is a constant
-  		 */
   def div(x: Gaussian): scala.Double = js.native
   /**
   		 * returns the quotient distribution of this and the given
   		 * distribution; equivalent to scale(1/d) when d is a constant
   		 */
   def div(x: scala.Double): scala.Double = js.native
-  /**
-  		 * returns the product distribution of this and the given
-  		 * distribution; equivalent to scale(d) when d is a constant
-  		 */
   def mul(x: Gaussian): scala.Double = js.native
   /**
   		 * returns the product distribution of this and the given

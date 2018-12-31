@@ -16,60 +16,60 @@ class ReportViewer protected () extends Widget {
   @JSName("model")
   var model_ReportViewer: ejDotWebDotAllLib.ejNs.ReportViewerNs.Model = js.native
   /** Export the report to the specified format.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def exportReport(): scala.Unit = js.native
   /** Fit the report page to the container.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def fitToPage(): scala.Unit = js.native
   /** Fit the report page height to the container.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def fitToPageHeight(): scala.Unit = js.native
   /** Fit the report page width to the container.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def fitToPageWidth(): scala.Unit = js.native
   /** Get the available datasets name of the rdlc report.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def getDataSetNames(): scala.Unit = js.native
   /** Get the available parameters of the report.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def getParameters(): scala.Unit = js.native
   /** Navigate to first page of report.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def gotoFirstPage(): scala.Unit = js.native
   /** Navigate to last page of the report.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def gotoLastPage(): scala.Unit = js.native
   /** Navigate to next page from the current page.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def gotoNextPage(): scala.Unit = js.native
   /** Go to specific page index of the report.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def gotoPageIndex(): scala.Unit = js.native
   /** Navigate to previous page from the current page.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def gotoPreviousPage(): scala.Unit = js.native
   /** Print the report.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def print(): scala.Unit = js.native
   /** Apply print layout to the report.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def printLayout(): scala.Unit = js.native
   /** Refresh the report.
-           * @returns {void}
-           */
+    * @returns {void}
+    */
   def refresh(): scala.Unit = js.native
 }
 

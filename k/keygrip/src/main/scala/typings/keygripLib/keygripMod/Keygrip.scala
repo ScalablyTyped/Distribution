@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Keygrip extends js.Object {
   def index(data: js.Any, digest: java.lang.String): scala.Double
   def sign(data: js.Any): java.lang.String

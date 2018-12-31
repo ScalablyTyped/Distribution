@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DBResultObject extends js.Object {
   var cols: js.Array[java.lang.String]
   var duration: scala.Double

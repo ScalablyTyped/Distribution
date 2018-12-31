@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SVGLengthList
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[SVGLength] {
   @JSName(org.scalablytyped.runtime.Symbol.iterator)

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ViewParent extends js.Object {
   def bringChildToFront(child: View): js.Any
   def childDrawableStateChanged(child: View): js.Any

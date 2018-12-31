@@ -5,11 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DetachedFromWorkerEventDataType extends js.Object {
   /**
-               * Detached session identifier.
-               */
+    * Detached session identifier.
+    */
   var sessionId: SessionID
 }
 

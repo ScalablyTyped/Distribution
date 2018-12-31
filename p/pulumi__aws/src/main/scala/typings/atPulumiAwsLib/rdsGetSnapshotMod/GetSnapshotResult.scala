@@ -1,0 +1,79 @@
+package typings
+package atPulumiAwsLib.rdsGetSnapshotMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait GetSnapshotResult extends js.Object {
+  /**
+    * Specifies the allocated storage size in gigabytes (GB).
+    */
+  val allocatedStorage: scala.Double
+  /**
+    * Specifies the name of the Availability Zone the DB instance was located in at the time of the DB snapshot.
+    */
+  val availabilityZone: java.lang.String
+  /**
+    * The Amazon Resource Name (ARN) for the DB snapshot.
+    */
+  val dbSnapshotArn: java.lang.String
+  /**
+    * Specifies whether the DB snapshot is encrypted.
+    */
+  val encrypted: scala.Boolean
+  /**
+    * Specifies the name of the database engine.
+    */
+  val engine: java.lang.String
+  /**
+    * Specifies the version of the database engine.
+    */
+  val engineVersion: java.lang.String
+  /**
+    * id is the provider-assigned unique ID for this managed resource.
+    */
+  val id: java.lang.String
+  /**
+    * Specifies the Provisioned IOPS (I/O operations per second) value of the DB instance at the time of the snapshot.
+    */
+  val iops: scala.Double
+  /**
+    * The ARN for the KMS encryption key.
+    */
+  val kmsKeyId: java.lang.String
+  /**
+    * License model information for the restored DB instance.
+    */
+  val licenseModel: java.lang.String
+  /**
+    * Provides the option group name for the DB snapshot.
+    */
+  val optionGroupName: java.lang.String
+  val port: scala.Double
+  /**
+    * Provides the time when the snapshot was taken, in Universal Coordinated Time (UTC).
+    */
+  val snapshotCreateTime: java.lang.String
+  /**
+    * The DB snapshot Arn that the DB snapshot was copied from. It only has value in case of cross customer or cross region copy.
+    */
+  val sourceDbSnapshotIdentifier: java.lang.String
+  /**
+    * The region that the DB snapshot was created in or copied from.
+    */
+  val sourceRegion: java.lang.String
+  /**
+    * Specifies the status of this DB snapshot.
+    */
+  val status: java.lang.String
+  /**
+    * Specifies the storage type associated with DB snapshot.
+    */
+  val storageType: java.lang.String
+  /**
+    * Specifies the ID of the VPC associated with the DB snapshot.
+    */
+  val vpcId: java.lang.String
+}
+

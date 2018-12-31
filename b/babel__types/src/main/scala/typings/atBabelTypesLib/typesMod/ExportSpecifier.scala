@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ExportSpecifier extends BaseNode {
   var exported: Identifier
   var local: Identifier

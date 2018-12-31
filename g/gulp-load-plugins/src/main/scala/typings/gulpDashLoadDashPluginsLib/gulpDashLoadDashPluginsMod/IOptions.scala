@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IOptions extends js.Object {
   /** if true, transforms hyphenated plugin names to camel case, default true */
   var camelize: js.UndefOr[scala.Boolean] = js.undefined

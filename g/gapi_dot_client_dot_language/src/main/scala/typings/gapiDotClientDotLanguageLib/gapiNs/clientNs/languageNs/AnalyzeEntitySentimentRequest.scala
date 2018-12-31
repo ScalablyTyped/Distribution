@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AnalyzeEntitySentimentRequest extends js.Object {
   /** Input document. */
   var document: js.UndefOr[Document] = js.undefined

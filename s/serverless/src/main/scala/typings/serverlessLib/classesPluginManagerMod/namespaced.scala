@@ -14,7 +14,13 @@ class namespaced protected () extends PluginManager {
   /* CompleteClass */
   override var serverless: serverlessLib.serverlessMod.namespaced = js.native
   /* CompleteClass */
-  override def addPlugin(plugin: js.Any): scala.Unit = js.native
+  override def addPlugin(
+    plugin: org.scalablytyped.runtime.Instantiable2[
+      /* serverless */ serverlessLib.serverlessMod.namespaced, 
+      /* options */ serverlessLib.serverlessMod.ServerlessNs.Options, 
+      serverlessLib.classesPluginMod.namespaced
+    ]
+  ): scala.Unit = js.native
   /* CompleteClass */
   override def loadAllPlugins(servicePlugins: js.Object): scala.Unit = js.native
   /* CompleteClass */

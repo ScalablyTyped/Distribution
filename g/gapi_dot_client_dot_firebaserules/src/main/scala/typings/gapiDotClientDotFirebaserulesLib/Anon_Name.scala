@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Name extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -19,19 +18,19 @@ trait Anon_Name extends js.Object {
   /** JSONP */
   var callback: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The requested runtime executable version.
-                   * Defaults to FIREBASE_RULES_EXECUTABLE_V1
-                   */
+    * The requested runtime executable version.
+    * Defaults to FIREBASE_RULES_EXECUTABLE_V1
+    */
   var executableVersion: js.UndefOr[java.lang.String] = js.undefined
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Resource name of the `Release`.
-                   *
-                   * Format: `projects/{project_id}/releases/{release_id}`
-                   */
+    * Resource name of the `Release`.
+    *
+    * Format: `projects/{project_id}/releases/{release_id}`
+    */
   var name: java.lang.String
   /** OAuth 2.0 token for the current user. */
   var oauth_token: js.UndefOr[java.lang.String] = js.undefined

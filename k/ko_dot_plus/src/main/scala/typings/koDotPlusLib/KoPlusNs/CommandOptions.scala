@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CommandOptions extends js.Object {
   // [required] sets the command action method
   var action: js.Function

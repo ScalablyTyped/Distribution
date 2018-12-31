@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 // #region App里的onLaunch、onShow回调参数
 // #region Account
-
 trait AccountInfo extends js.Object {
   /* 小程序账号信息 */
   var miniProgram: weixinDashAppLib.Anon_AppIdString

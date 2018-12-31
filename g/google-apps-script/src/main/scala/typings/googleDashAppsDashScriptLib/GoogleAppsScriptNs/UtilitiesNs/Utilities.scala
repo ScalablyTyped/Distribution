@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Utilities extends js.Object {
-  var Charset: Charset = js.native
-  var DigestAlgorithm: DigestAlgorithm = js.native
-  var MacAlgorithm: MacAlgorithm = js.native
+  var Charset: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Utilities.Charset */ js.Any = js.native
+  var DigestAlgorithm: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Utilities.DigestAlgorithm */ js.Any = js.native
+  var MacAlgorithm: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google-apps-script.GoogleAppsScript.Utilities.MacAlgorithm */ js.Any = js.native
   def base64Decode(encoded: java.lang.String): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Byte] = js.native
   def base64Decode(encoded: java.lang.String, charset: Charset): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Byte] = js.native
   def base64DecodeWebSafe(encoded: java.lang.String): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Byte] = js.native

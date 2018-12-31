@@ -15,12 +15,12 @@ class Picker ()
 object Picker extends js.Object {
   var Item: org.scalablytyped.runtime.Instantiable0[reactDashNativeLib.reactDashNativeMod.PickerItem] = js.native
   /**
-       * On Android, display the options in a dialog.
-       */
+    * On Android, display the options in a dialog.
+    */
   var MODE_DIALOG: java.lang.String = js.native
   /**
-       * On Android, display the options in a dropdown (this is the default).
-       */
+    * On Android, display the options in a dropdown (this is the default).
+    */
   var MODE_DROPDOWN: java.lang.String = js.native
 }
 

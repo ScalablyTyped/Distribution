@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_FailureEntry[T] extends js.Object {
   def failure(
     entry: kiiDashCloudDashSdkLib.KiiCloudNs.KiiServerCodeEntry,

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilterOptions extends js.Object {
   var end_time: java.lang.String
   var page_size: scala.Double

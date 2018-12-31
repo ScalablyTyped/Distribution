@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVaultExternalObjectOperations extends js.Object {
   def PromoteObject(
     ObjVer: IObjVer,

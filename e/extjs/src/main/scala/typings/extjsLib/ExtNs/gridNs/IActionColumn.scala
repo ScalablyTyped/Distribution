@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IActionColumn
   extends extjsLib.ExtNs.gridNs.columnNs.IColumn {
   /** [Config Option] (String) */

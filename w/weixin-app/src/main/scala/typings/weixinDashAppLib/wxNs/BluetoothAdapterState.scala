@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BluetoothAdapterState extends js.Object {
   /**
   		 * 蓝牙适配器是否可用

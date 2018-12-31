@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Configuration extends js.Object {
   var cookie: js.UndefOr[java.lang.String] = js.undefined
   var log: js.UndefOr[js.Function2[/* id */ java.lang.String, /* args */ js.Any, scala.Unit]] = js.undefined

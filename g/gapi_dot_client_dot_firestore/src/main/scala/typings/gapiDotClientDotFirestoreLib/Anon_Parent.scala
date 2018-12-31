@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Parent extends js.Object {
   /** V1 error format. */
   @JSName("$.xgafv")
@@ -27,16 +26,16 @@ trait Anon_Parent extends js.Object {
   /** The maximum number of results to return. */
   var pageSize: js.UndefOr[scala.Double] = js.undefined
   /**
-                   * A page token. Must be a value from
-                   * ListCollectionIdsResponse.
-                   */
+    * A page token. Must be a value from
+    * ListCollectionIdsResponse.
+    */
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * The parent document. In the format:
-                   * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
-                   * For example:
-                   * `projects/my-project/databases/my-database/documents/chatrooms/my-chatroom`
-                   */
+    * The parent document. In the format:
+    * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
+    * For example:
+    * `projects/my-project/databases/my-database/documents/chatrooms/my-chatroom`
+    */
   var parent: java.lang.String
   /** Pretty-print response. */
   var pp: js.UndefOr[scala.Boolean] = js.undefined

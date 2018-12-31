@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DecryptOptions extends js.Object {
   var ct: java.lang.String
   var key: java.lang.String

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPane extends IEventEmitter {
   def destroy(): scala.Unit
   def getElement(): stdLib.HTMLElement

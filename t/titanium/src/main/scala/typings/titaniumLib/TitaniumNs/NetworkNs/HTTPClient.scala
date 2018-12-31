@@ -284,29 +284,14 @@ trait HTTPClient
   			 * Opens the request and prepares the connection.
   			 */
   def open(method: java.lang.String, url: java.lang.String): scala.Unit = js.native
-  /**
-  			 * Opens the request and prepares the connection.
-  			 */
   def open(method: java.lang.String, url: java.lang.String, async: scala.Boolean): scala.Unit = js.native
   /**
   			 * Sends the request.
   			 */
   def send(): scala.Unit = js.native
-  /**
-  			 * Sends the request.
-  			 */
   def send(data: java.lang.String): scala.Unit = js.native
-  /**
-  			 * Sends the request.
-  			 */
   def send(data: js.Any): scala.Unit = js.native
-  /**
-  			 * Sends the request.
-  			 */
   def send(data: titaniumLib.TitaniumNs.Blob): scala.Unit = js.native
-  /**
-  			 * Sends the request.
-  			 */
   def send(data: titaniumLib.TitaniumNs.FilesystemNs.File): scala.Unit = js.native
   /**
   			 * Sets the value of the <Titanium.Network.HTTPClient.autoEncodeUrl> property.

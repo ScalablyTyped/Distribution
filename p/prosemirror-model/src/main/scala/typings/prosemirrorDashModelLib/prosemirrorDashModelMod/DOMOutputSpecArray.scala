@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DOMOutputSpecArray extends js.Object {
   var `0`: java.lang.String
   var `1`: js.UndefOr[

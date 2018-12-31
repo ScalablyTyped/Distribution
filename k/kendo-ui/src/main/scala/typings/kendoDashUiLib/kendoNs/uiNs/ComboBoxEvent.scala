@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ComboBoxEvent extends js.Object {
   var preventDefault: js.Function
   var sender: ComboBox

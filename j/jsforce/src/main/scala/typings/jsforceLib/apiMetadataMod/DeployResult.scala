@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeployResult extends js.Object {
   var checkOnly: scala.Boolean
   var completedDate: java.lang.String

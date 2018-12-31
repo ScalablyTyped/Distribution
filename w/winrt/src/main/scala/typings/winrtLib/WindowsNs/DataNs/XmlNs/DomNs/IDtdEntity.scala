@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IDtdEntity extends IXmlNode {
   var notationName: js.Any
   var publicId: js.Any

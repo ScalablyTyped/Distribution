@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GridsterConfig extends js.Object {
   // width of grid columns. "auto" will divide the width of the grid evenly among the columns
   var colWidth: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IndexSpecification extends js.Object {
   var `2dsphereIndexVersion`: js.UndefOr[scala.Double] = js.undefined
   var background: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ListHistoryResponse extends js.Object {
   /** List of history records. Any messages contained in the response will typically only have id and threadId fields populated. */
   var history: js.UndefOr[js.Array[History]] = js.undefined

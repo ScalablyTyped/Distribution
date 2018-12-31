@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ContractFieldMetadata extends js.Object {
   var dictionaryKeyEnumType: js.UndefOr[ContractEnumMetadata] = js.undefined
   var dictionaryKeyIsDate: js.UndefOr[scala.Boolean] = js.undefined

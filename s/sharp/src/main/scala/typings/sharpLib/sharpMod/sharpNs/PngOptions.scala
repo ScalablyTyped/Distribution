@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PngOptions extends js.Object {
   /** use adaptive row filtering (optional, default false) */
   var adaptiveFiltering: js.UndefOr[scala.Boolean] = js.undefined

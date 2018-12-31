@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IQueryListState[T] extends js.Object {
   /** The currently focused item (for keyboard interactions). */
   var activeItem: T | scala.Null

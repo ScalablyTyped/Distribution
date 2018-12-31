@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AggregatedResult extends js.Object {
   var coverageMap: js.UndefOr[Maybe[CoverageMap]] = js.undefined
   var numFailedTestSuites: scala.Double

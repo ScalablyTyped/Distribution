@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait QuantizeResult extends js.Object {
   var abuf: stdLib.ArrayBuffer
   var inds: stdLib.Uint8Array

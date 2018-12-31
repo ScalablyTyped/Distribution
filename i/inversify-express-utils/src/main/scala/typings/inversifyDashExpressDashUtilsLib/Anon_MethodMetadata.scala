@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MethodMetadata extends js.Object {
   var controllerMetadata: inversifyDashExpressDashUtilsLib.dtsInterfacesMod.interfacesNs.ControllerMetadata
   var methodMetadata: js.Array[

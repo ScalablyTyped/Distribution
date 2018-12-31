@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ObjectTypeDefinition extends js.Object {
   var fields: js.Array[FieldDefinition]
   var interfaces: js.UndefOr[js.Array[NamedType]] = js.undefined

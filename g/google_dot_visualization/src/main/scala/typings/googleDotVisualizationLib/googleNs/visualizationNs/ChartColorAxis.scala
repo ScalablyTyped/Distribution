@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ChartColorAxis extends js.Object {
   var colors: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var legend: js.UndefOr[ChartLegend] = js.undefined

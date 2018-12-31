@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RTCDataChannelInit extends js.Object {
   var id: js.UndefOr[scala.Double] = js.undefined
   var maxPacketLifeTime: js.UndefOr[scala.Double] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RecognizerOptions extends js.Object {
   var direction: js.UndefOr[scala.Double] = js.undefined
   var enable: js.UndefOr[

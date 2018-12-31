@@ -16,9 +16,9 @@ abstract class UserAuthenticationStatusChangingEventArgs () extends js.Object {
   /** Gets the user. */
   var user: User = js.native
   /**
-               * Requests a delay before the user's authentication status changes.
-               * @return The user authentication status change deferral.
-               */
+    * Requests a delay before the user's authentication status changes.
+    * @return The user authentication status change deferral.
+    */
   def getDeferral(): UserAuthenticationStatusChangeDeferral = js.native
 }
 

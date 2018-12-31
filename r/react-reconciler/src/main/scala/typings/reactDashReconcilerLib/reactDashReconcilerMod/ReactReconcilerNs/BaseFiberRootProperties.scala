@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BaseFiberRootProperties extends js.Object {
   // Any additional information from the host associated with this root.
   var containerInfo: js.Any

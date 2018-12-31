@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EnterpriseIdPrettyPrintQuotaUserKeyUserIpOauthtoken extends js.Object {
   /** Data format for the response. */
   var alt: js.UndefOr[java.lang.String] = js.undefined
@@ -16,9 +15,9 @@ trait Anon_EnterpriseIdPrettyPrintQuotaUserKeyUserIpOauthtoken extends js.Object
   /** Selector specifying which fields to include in a partial response. */
   var fields: js.UndefOr[java.lang.String] = js.undefined
   /**
-                   * Set to true to also install the product on all the user's devices where possible. Failure to install on one or more devices will not prevent this
-                   * operation from returning successfully, as long as the entitlement was successfully assigned to the user.
-                   */
+    * Set to true to also install the product on all the user's devices where possible. Failure to install on one or more devices will not prevent this
+    * operation from returning successfully, as long as the entitlement was successfully assigned to the user.
+    */
   var install: js.UndefOr[scala.Boolean] = js.undefined
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
   var key: js.UndefOr[java.lang.String] = js.undefined
@@ -27,9 +26,9 @@ trait Anon_EnterpriseIdPrettyPrintQuotaUserKeyUserIpOauthtoken extends js.Object
   /** Returns response with indentations and line breaks. */
   var prettyPrint: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                   * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
-                   * Overrides userIp if both are provided.
-                   */
+    * Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters.
+    * Overrides userIp if both are provided.
+    */
   var quotaUser: js.UndefOr[java.lang.String] = js.undefined
   /** The ID of the user. */
   var userId: java.lang.String

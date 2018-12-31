@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestResult extends js.Object {
   var console: Maybe[ConsoleBuffer]
   var coverage: js.UndefOr[RawCoverage] = js.undefined

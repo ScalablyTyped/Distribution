@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IRestProxy
   extends senchaUnderscoreTouchLib.ExtNs.dataNs.proxyNs.IAjax {
   /** [Config Option] (Boolean) */

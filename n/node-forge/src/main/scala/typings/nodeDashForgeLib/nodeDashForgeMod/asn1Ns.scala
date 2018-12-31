@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("node-forge", "asn1")
 @js.native
 object asn1Ns extends js.Object {
-  
   trait Asn1 extends js.Object {
     var composed: scala.Boolean
     var constructed: scala.Boolean

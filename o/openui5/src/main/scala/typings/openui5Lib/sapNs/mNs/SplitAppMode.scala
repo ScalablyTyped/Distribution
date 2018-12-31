@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait SplitAppMode extends js.Object
 
 /**
-     * The mode of SplitContainer or SplitApp control to show/hide the master area.
-    */
+  * The mode of SplitContainer or SplitApp control to show/hide the master area.
+  */
 @JSGlobal("sap.m.SplitAppMode")
 @js.native
 object SplitAppMode extends js.Object {

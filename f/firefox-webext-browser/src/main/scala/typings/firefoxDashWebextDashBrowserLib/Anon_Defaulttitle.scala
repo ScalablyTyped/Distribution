@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Defaulttitle extends js.Object {
   var browser_style: js.UndefOr[scala.Boolean] = js.undefined
   var default_icon: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.IconPath] = js.undefined

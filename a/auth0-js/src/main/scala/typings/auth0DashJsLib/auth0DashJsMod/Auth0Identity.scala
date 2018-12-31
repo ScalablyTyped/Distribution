@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Auth0Identity extends js.Object {
   var connection: java.lang.String
   var isSocial: scala.Boolean

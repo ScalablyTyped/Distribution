@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CENTERALIGNBOTTOMS extends js.Object {
   var ABOVE: java.lang.String
   var ALIGN_BOTTOMS: java.lang.String

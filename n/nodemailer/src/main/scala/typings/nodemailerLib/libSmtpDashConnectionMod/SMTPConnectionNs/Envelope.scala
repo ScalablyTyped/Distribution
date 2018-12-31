@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Envelope extends js.Object {
   /** the dsn options */
   var dsn: js.UndefOr[DSNOptions] = js.undefined

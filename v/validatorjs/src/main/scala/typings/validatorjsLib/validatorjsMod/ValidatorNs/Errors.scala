@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Errors extends js.Object {
   var errors: ValidationErrors
   def add(attribute: java.lang.String, message: java.lang.String): scala.Unit

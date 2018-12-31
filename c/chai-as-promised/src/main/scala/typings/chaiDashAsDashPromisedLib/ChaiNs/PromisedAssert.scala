@@ -211,7 +211,6 @@ trait PromisedAssert extends js.Object {
   def `throw`(fn: js.Function, errType: js.Function): js.Thenable[scala.Unit] = js.native
   def `throw`(fn: js.Function, errType: js.Function, msg: java.lang.String): js.Thenable[scala.Unit] = js.native
   def `throw`(fn: js.Function, errType: js.Function, regExp: stdLib.RegExp): js.Thenable[scala.Unit] = js.native
-  //alias frenzy
   def `throw`(fn: js.Function, msg: java.lang.String): js.Thenable[scala.Unit] = js.native
   def `throw`(fn: js.Function, regExp: stdLib.RegExp): js.Thenable[scala.Unit] = js.native
   def throws(fn: js.Function): js.Thenable[scala.Unit] = js.native

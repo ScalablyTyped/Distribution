@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NestedHeaders extends Base {
   var colspanArray: js.Array[_]
   var columnHeaderLevelCount: scala.Double

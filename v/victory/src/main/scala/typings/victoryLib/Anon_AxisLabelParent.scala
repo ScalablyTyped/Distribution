@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_AxisLabelParent extends js.Object {
   var axis: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var axisLabel: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined

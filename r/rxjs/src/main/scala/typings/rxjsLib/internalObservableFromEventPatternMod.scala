@@ -16,7 +16,7 @@ object internalObservableFromEventPatternMod extends js.Object {
   def fromEventPattern[T](
     addHandler: js.Function1[/* handler */ js.Function, _],
     removeHandler: js.Function2[/* handler */ js.Function, /* signal */ js.UndefOr[js.Any], scala.Unit],
-    resultSelector: js.Function1[/* repeated */js.Any, T]
+    resultSelector: js.Function1[/* repeated */ js.Any, T]
   ): rxjsLib.internalObservableMod.Observable[T] = js.native
 }
 

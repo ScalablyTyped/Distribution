@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait WiaItemFlag extends js.Object
 
 /**
-     * An Item's type is composed of bits from the WiaItemFlags enumeration. You can test an Item's type by using the AND operation with
-     * Item.Properties("Item Flags") and a member from the WiaItemFlags enumeration.
-     */
+  * An Item's type is composed of bits from the WiaItemFlags enumeration. You can test an Item's type by using the AND operation with
+  * Item.Properties("Item Flags") and a member from the WiaItemFlags enumeration.
+  */
 @JSGlobal("WIA.WiaItemFlag")
 @js.native
 object WiaItemFlag extends js.Object {

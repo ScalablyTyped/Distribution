@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ISyntaxElement extends js.Object {
   def childAt(index: scala.Double): ISyntaxElement
   def childCount(): scala.Double

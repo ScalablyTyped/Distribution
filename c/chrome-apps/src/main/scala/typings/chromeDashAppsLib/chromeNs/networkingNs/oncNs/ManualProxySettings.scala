@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ManualProxySettings[M, P] extends js.Object {
   /** Settings for FTP proxy. */
   var FTPProxy: js.UndefOr[P] = js.undefined

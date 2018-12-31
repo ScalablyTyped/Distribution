@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestPlanHubData extends js.Object {
   var selectedSuiteId: scala.Double
   var testPlan: TestPlan

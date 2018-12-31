@@ -8,14 +8,10 @@ import scala.scalajs.js.annotation._
 @js.native
 trait JQuery extends js.Object {
   /**
-       * Creates a bxSlider from the current element.
-       * @param options
-       */
+    * Creates a bxSlider from the current element.
+    * @param options
+    */
   def bxSlider(): bxSlider = js.native
-  /**
-       * Creates a bxSlider from the current element.
-       * @param options
-       */
   def bxSlider(options: bxSliderOptions): bxSlider = js.native
 }
 

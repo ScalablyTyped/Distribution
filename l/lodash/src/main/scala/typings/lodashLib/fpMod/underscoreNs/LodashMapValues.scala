@@ -30,7 +30,7 @@ trait LodashMapValues extends js.Object {
   def apply[T](iteratee: js.Object, obj: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): lodashLib.lodashMod.underscoreNs.Dictionary[scala.Boolean] = js.native
   def apply[T /* <: js.Object */, TResult](
     callback: js.Function1[
-      /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Right(TsTypeKeyOf(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List())))) *//* value */ js.Any, 
+      /* import warning: ImportType.apply Failed type conversion: T[keyof T] */ /* value */ js.Any, 
       TResult
     ],
     obj: T
@@ -43,14 +43,8 @@ trait LodashMapValues extends js.Object {
     callback: js.Function1[/* value */ T, TResult],
     obj: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]
   ): lodashLib.lodashMod.underscoreNs.Dictionary[TResult] = js.native
-  def apply[T, TKey /* <: java.lang.String */](iteratee: TKey): lodashLib.lodashMod.underscoreNs.Dictionary[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(TKey))) */js.Any
-  ] = js.native
-  def apply[T, TKey /* <: java.lang.String */](iteratee: TKey, obj: lodashLib.lodashMod.underscoreNs.Dictionary[T]): lodashLib.lodashMod.underscoreNs.Dictionary[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(TKey))) */js.Any
-  ] = js.native
-  def apply[T, TKey /* <: java.lang.String */](iteratee: TKey, obj: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): lodashLib.lodashMod.underscoreNs.Dictionary[
-    /* import warning: Failed type conversion: TsTypeLookup(TsTypeRef(TsQIdent(List(TsIdentSimple(T))),List()),Left(TsIdentSimple(TKey))) */js.Any
-  ] = js.native
+  def apply[T, TKey /* <: java.lang.String */](iteratee: TKey): lodashLib.lodashMod.underscoreNs.Dictionary[/* import warning: ImportType.apply Failed type conversion: T[TKey] */ js.Any] = js.native
+  def apply[T, TKey /* <: java.lang.String */](iteratee: TKey, obj: lodashLib.lodashMod.underscoreNs.Dictionary[T]): lodashLib.lodashMod.underscoreNs.Dictionary[/* import warning: ImportType.apply Failed type conversion: T[TKey] */ js.Any] = js.native
+  def apply[T, TKey /* <: java.lang.String */](iteratee: TKey, obj: lodashLib.lodashMod.underscoreNs.NumericDictionary[T]): lodashLib.lodashMod.underscoreNs.Dictionary[/* import warning: ImportType.apply Failed type conversion: T[TKey] */ js.Any] = js.native
 }
 

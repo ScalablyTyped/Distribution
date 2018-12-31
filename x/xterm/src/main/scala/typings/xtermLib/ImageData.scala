@@ -5,17 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ImageData extends js.Object {
   /**
-       * Returns the one-dimensional array containing the data in RGBA order, as integers in the
-       * range 0 to 255.
-       */
+    * Returns the one-dimensional array containing the data in RGBA order, as integers in the
+    * range 0 to 255.
+    */
   val data: stdLib.Uint8ClampedArray
   /**
-       * Returns the actual dimensions of the data in the ImageData object, in
-       * pixels.
-       */
+    * Returns the actual dimensions of the data in the ImageData object, in
+    * pixels.
+    */
   val height: scala.Double
   val width: scala.Double
 }

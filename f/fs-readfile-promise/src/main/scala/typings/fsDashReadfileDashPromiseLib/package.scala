@@ -6,5 +6,5 @@ import scala.scalajs.js.annotation._
 
 package object fsDashReadfileDashPromiseLib {
   type OptionsType = Anon_Encoding | java.lang.String
-  type PathType = js.Any | scala.Double
+  type PathType = (/* import warning: QualifyReferences.resolveTypeRef Couldn't qualify PathLike */ js.Any) | scala.Double
 }

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CellObject extends js.Object {
   /** Range of enclosing array if formula is array formula (if applicable) */
   var F: js.UndefOr[java.lang.String] = js.undefined
@@ -22,9 +21,9 @@ trait CellObject extends js.Object {
   /** The style/theme of the cell (if applicable) */
   var s: js.UndefOr[js.Any] = js.undefined
   /**
-       * The Excel Data Type of the cell.
-       * b Boolean, n Number, e Error, s String, d Date, z Empty
-       */
+    * The Excel Data Type of the cell.
+    * b Boolean, n Number, e Error, s String, d Date, z Empty
+    */
   var t: ExcelDataType
   /** The raw value of the cell.  Can be omitted if a formula is specified */
   var v: js.UndefOr[java.lang.String | scala.Double | scala.Boolean | stdLib.Date] = js.undefined

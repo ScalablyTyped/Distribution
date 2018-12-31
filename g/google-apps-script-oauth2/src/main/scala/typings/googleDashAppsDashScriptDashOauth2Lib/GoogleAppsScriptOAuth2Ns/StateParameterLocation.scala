@@ -12,15 +12,15 @@ sealed trait StateParameterLocation extends js.Object
 @js.native
 object StateParameterLocation extends js.Object {
   /**
-           * Pass the state parameter in the authorization URL.
-           */
+    * Pass the state parameter in the authorization URL.
+    */
   @js.native
   sealed trait AUTHORIZATION_URL
     extends googleDashAppsDashScriptDashOauth2Lib.GoogleAppsScriptOAuth2Ns.StateParameterLocation
   
   /**
-           * Pass the state token in the redirect URL, as a workaround for APIs that don't support the state parameter.
-           */
+    * Pass the state token in the redirect URL, as a workaround for APIs that don't support the state parameter.
+    */
   @js.native
   sealed trait REDIRECT_URL
     extends googleDashAppsDashScriptDashOauth2Lib.GoogleAppsScriptOAuth2Ns.StateParameterLocation

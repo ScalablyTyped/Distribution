@@ -5,27 +5,26 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FilterMixin extends js.Object {
   /*
-       The type of ejs object.  For internal use only.
-       */
+    The type of ejs object.  For internal use only.
+    */
   def _type(): java.lang.String
   /*
-       Enable or disable caching of the filter
-       */
+    Enable or disable caching of the filter
+    */
   def cache(trueFalse: scala.Boolean): FilterMixin
   /*
-       Sets the cache key.
-       */
+    Sets the cache key.
+    */
   def cacheKey(key: java.lang.String): FilterMixin
   /*
-       Sets the filter name.
-       */
+    Sets the filter name.
+    */
   def name(name: java.lang.String): FilterMixin
   /*
-       Returns the filter object.
-       */
+    Returns the filter object.
+    */
   def toJSON(): FilterMixin
 }
 

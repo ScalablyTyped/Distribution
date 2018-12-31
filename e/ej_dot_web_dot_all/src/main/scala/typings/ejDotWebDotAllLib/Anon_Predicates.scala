@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Predicates extends js.Object {
   var condition: java.lang.String
   var field: java.lang.String

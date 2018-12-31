@@ -6,11 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     *
-     * Represents the application object.
-     *
-     * [Api set: WordApi 1.3]
-     */
+  *
+  * Represents the application object.
+  *
+  * [Api set: WordApi 1.3]
+  */
 @JSGlobal("Word.Application")
 @js.native
 class Application ()
@@ -19,38 +19,30 @@ class Application ()
   @JSName("context")
   var context_Application: RequestContext = js.native
   /**
-           *
-           * Creates a new document by using an optional base64 encoded .docx file.
-           *
-           * [Api set: WordApi 1.3]
-           *
-           * @param base64File Optional. The base64 encoded .docx file. The default value is null.
-           */
+    *
+    * Creates a new document by using an optional base64 encoded .docx file.
+    *
+    * [Api set: WordApi 1.3]
+    *
+    * @param base64File Optional. The base64 encoded .docx file. The default value is null.
+    */
   def createDocument(): DocumentCreated = js.native
-  /**
-           *
-           * Creates a new document by using an optional base64 encoded .docx file.
-           *
-           * [Api set: WordApi 1.3]
-           *
-           * @param base64File Optional. The base64 encoded .docx file. The default value is null.
-           */
   def createDocument(base64File: java.lang.String): DocumentCreated = js.native
   def toJSON(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
 }
 
 /**
-     *
-     * Represents the application object.
-     *
-     * [Api set: WordApi 1.3]
-     */
+  *
+  * Represents the application object.
+  *
+  * [Api set: WordApi 1.3]
+  */
 @JSGlobal("Word.Application")
 @js.native
 object Application extends js.Object {
   /**
-           * Create a new instance of Word.Application object
-           */
+    * Create a new instance of Word.Application object
+    */
   def newObject(context: officeDashJsDashPreviewLib.OfficeExtensionNs.ClientRequestContext): officeDashJsDashPreviewLib.WordNs.Application = js.native
 }
 

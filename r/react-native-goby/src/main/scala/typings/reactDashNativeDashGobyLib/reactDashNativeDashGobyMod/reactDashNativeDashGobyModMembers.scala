@@ -9,16 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object reactDashNativeDashGobyModMembers extends js.Object {
   /**
-   * Decorates a React Component configuring it to sync for updates with the Goby server.
-   *
-   * @param options Options used to configure the end-user sync and update experience (e.g. when to check for updates?, show an prompt?, install the update immediately?).
-   */
+    * Decorates a React Component configuring it to sync for updates with the Goby server.
+    *
+    * @param options Options used to configure the end-user sync and update experience (e.g. when to check for updates?, show an prompt?, install the update immediately?).
+    */
   def default(): js.Function = js.native
-  /**
-   * Decorates a React Component configuring it to sync for updates with the Goby server.
-   *
-   * @param options Options used to configure the end-user sync and update experience (e.g. when to check for updates?, show an prompt?, install the update immediately?).
-   */
   def default(options: GobyOptions): js.Function = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CircleOptions extends js.Object {
   var atlasManager: js.UndefOr[openlayersLib.openlayersMod.styleNs.AtlasManager] = js.undefined
   var fill: js.UndefOr[openlayersLib.openlayersMod.styleNs.Fill] = js.undefined

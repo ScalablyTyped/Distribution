@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DiagramLayout extends js.Object {
   var endRadialAngle: js.UndefOr[scala.Double] = js.undefined
   var grid: js.UndefOr[DiagramLayoutGrid] = js.undefined

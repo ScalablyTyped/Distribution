@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Specifies an object that describes a piece of contact data. */
-
 trait IContactField extends js.Object {
   /** Gets the category for the contact data. */
   var category: ContactFieldCategory

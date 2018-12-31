@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JQueryMobileOptions extends js.Object {
   var activeBtnClass: js.UndefOr[java.lang.String] = js.undefined
   var activePageClass: js.UndefOr[java.lang.String] = js.undefined

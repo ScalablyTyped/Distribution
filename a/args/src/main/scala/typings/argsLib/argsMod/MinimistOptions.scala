@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MinimistOptions extends js.Object {
   var `--`: js.UndefOr[scala.Boolean] = js.undefined
   var alias: js.UndefOr[

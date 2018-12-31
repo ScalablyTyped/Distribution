@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AchievementConfigurationsResource extends js.Object {
   /** Delete the achievement configuration with the given ID. */
   def delete(request: gapiDotClientDotGamesconfigurationLib.Anon_PrettyPrintQuotaUserKey): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]

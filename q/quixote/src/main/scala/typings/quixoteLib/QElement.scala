@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 trait QElement extends js.Object {
   // Compare the element's descriptors to a set of expected values and throw an exception if they don't match
   def assert(expected: ElementDescriptor): scala.Unit = js.native
-  // Compare the element's descriptors to a set of expected values and throw an exception if they don't match
   def assert(expected: ElementDescriptor, message: java.lang.String): scala.Unit = js.native
   // Compare the element's descriptors to a set of expected values.
   def diff(expected: ElementDescriptor): java.lang.String = js.native

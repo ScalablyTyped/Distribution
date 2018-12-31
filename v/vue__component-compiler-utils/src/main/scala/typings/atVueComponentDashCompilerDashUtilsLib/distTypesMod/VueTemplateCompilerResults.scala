@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait VueTemplateCompilerResults extends js.Object {
   var ast: js.Object | scala.Unit
   var errors: js.Array[java.lang.String]

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_EventViewport extends js.Object {
   var event: js.UndefOr[js.Any] = js.undefined
   var items: js.UndefOr[js.Array[_]] = js.undefined

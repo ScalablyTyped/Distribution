@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AffineTransform extends js.Object {
   def getScaleX(): stdLib.Number
   def getScaleY(): stdLib.Number

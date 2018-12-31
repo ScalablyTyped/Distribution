@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TestResultTrendFilter extends js.Object {
   var branchNames: js.Array[java.lang.String]
   var buildCount: scala.Double

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_PREVIOUS extends js.Object {
   var DATE: reactDashBigDashCalendarLib.reactDashBigDashCalendarLibStrings.DATE
   var NEXT: reactDashBigDashCalendarLib.reactDashBigDashCalendarLibStrings.NEXT

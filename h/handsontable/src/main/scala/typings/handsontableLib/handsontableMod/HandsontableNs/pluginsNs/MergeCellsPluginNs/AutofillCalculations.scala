@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AutofillCalculations extends js.Object {
   var currentFillData: js.Object
   var mergedCellsCollection: MergedCellsCollection

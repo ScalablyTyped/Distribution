@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait JSXClosingElement extends Node {
   var name: JSXIdentifier | JSXMemberExpression
   @JSName("type")

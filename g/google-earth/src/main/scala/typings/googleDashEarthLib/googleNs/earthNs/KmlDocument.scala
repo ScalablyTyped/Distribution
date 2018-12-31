@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class KmlDocument () extends KmlContainer {
   /**
-       * Returns a list of elements using a particular style URL.
-       */
+    * Returns a list of elements using a particular style URL.
+    */
   def getElementsByStyleUrl(styleUrl: java.lang.String): KmlObjectList[KmlObject] = js.native
   /**
-       * Returns an array containing the style selectors present in the KML document.
-       */
+    * Returns an array containing the style selectors present in the KML document.
+    */
   def getStyleSelectors(): GEStyleSelectorContainer = js.native
 }
 

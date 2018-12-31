@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InteractiveTarget extends js.Object {
   var buttonMode: scala.Boolean
   var cursor: java.lang.String

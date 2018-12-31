@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPeoplePickerItemSelectedSubComponentStyles extends js.Object {
   /** Refers to the Persona rendered within the PeoplePickerItemSelected */
   var persona: atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[

@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("chartmogul-node", "DataSource")
 @js.native
 object DataSourceNs extends js.Object {
-  
   trait DataSource extends js.Object {
     var created_at: js.UndefOr[java.lang.String] = js.undefined
     var name: java.lang.String
@@ -17,11 +16,9 @@ object DataSourceNs extends js.Object {
     var uuid: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  
   trait DataSources extends js.Object {
     var data_sources: js.Array[DataSource]
   }
-  
   
   trait ListDataSourcesParams extends js.Object {
     var name: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DatasetBands extends js.Object {
   val ds: Dataset
   def count(): scala.Double

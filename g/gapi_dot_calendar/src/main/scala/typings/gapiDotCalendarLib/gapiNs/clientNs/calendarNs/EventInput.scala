@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait EventInput extends js.Object {
   // Optional Properties
   var anyoneCanAddSelf: js.UndefOr[scala.Boolean] = js.undefined

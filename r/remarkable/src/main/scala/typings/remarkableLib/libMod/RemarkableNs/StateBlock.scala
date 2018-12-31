@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StateBlock extends js.Object {
   var bMarks: js.Array[scala.Double]
   /** required block content indent */

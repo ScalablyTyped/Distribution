@@ -8,19 +8,19 @@ import scala.scalajs.js.annotation._
 @JSImport("rxjs/internal/observable/bindNodeCallback", JSImport.Namespace)
 @js.native
 object internalObservableBindNodeCallbackMod extends js.Object {
-  def bindNodeCallback(callbackFunc: js.Function): js.Function1[/* repeated */js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
+  def bindNodeCallback(callbackFunc: js.Function): js.Function1[/* repeated */ js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
   def bindNodeCallback(callbackFunc: js.Function1[/* callback */ js.Function1[/* err */ js.Any, _], _]): js.Function0[rxjsLib.internalObservableMod.Observable[scala.Unit]] = js.native
   def bindNodeCallback(
     callbackFunc: js.Function1[/* callback */ js.Function1[/* err */ js.Any, _], _],
     scheduler: rxjsLib.internalTypesMod.SchedulerLike
   ): js.Function0[rxjsLib.internalObservableMod.Observable[scala.Unit]] = js.native
-  def bindNodeCallback(callbackFunc: js.Function, resultSelector: js.Function): js.Function1[/* repeated */js.Any, rxjsLib.internalObservableMod.Observable[_]] = js.native
+  def bindNodeCallback(callbackFunc: js.Function, resultSelector: js.Function): js.Function1[/* repeated */ js.Any, rxjsLib.internalObservableMod.Observable[_]] = js.native
   def bindNodeCallback(
     callbackFunc: js.Function,
     resultSelector: js.Function,
     scheduler: rxjsLib.internalTypesMod.SchedulerLike
-  ): js.Function1[/* repeated */js.Any, rxjsLib.internalObservableMod.Observable[_]] = js.native
-  def bindNodeCallback(callbackFunc: js.Function, scheduler: rxjsLib.internalTypesMod.SchedulerLike): js.Function1[/* repeated */js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
+  ): js.Function1[/* repeated */ js.Any, rxjsLib.internalObservableMod.Observable[_]] = js.native
+  def bindNodeCallback(callbackFunc: js.Function, scheduler: rxjsLib.internalTypesMod.SchedulerLike): js.Function1[/* repeated */ js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
   def bindNodeCallback[A1](callbackFunc: js.Function2[/* arg1 */ A1, /* callback */ js.Function1[/* err */ js.Any, _], _]): js.Function1[/* arg1 */ A1, rxjsLib.internalObservableMod.Observable[scala.Unit]] = js.native
   def bindNodeCallback[A1](
     callbackFunc: js.Function2[/* arg1 */ A1, /* callback */ js.Function1[/* err */ js.Any, _], _],
@@ -263,12 +263,12 @@ object internalObservableBindNodeCallbackMod extends js.Object {
         /* res2 */ R2, 
         /* res3 */ R3, 
         /* res4 */ R4, 
-        /* repeated */js.Any, 
+        /* repeated */ js.Any, 
         _
       ], 
       _
     ]
-  ): js.Function1[/* repeated */js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
+  ): js.Function1[/* repeated */ js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
   @JSName("bindNodeCallback")
   def bindNodeCallback_A1A2A3A4A5R1R2R3R4Function1[A1, A2, A3, A4, A5, R1, R2, R3, R4](
     callbackFunc: js.Function6[
@@ -283,13 +283,13 @@ object internalObservableBindNodeCallbackMod extends js.Object {
         /* res2 */ R2, 
         /* res3 */ R3, 
         /* res4 */ R4, 
-        /* repeated */js.Any, 
+        /* repeated */ js.Any, 
         _
       ], 
       _
     ],
     scheduler: rxjsLib.internalTypesMod.SchedulerLike
-  ): js.Function1[/* repeated */js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
+  ): js.Function1[/* repeated */ js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
   @JSName("bindNodeCallback")
   def bindNodeCallback_A1A2A3A4R1[A1, A2, A3, A4, R1](
     callbackFunc: js.Function5[
@@ -408,12 +408,12 @@ object internalObservableBindNodeCallbackMod extends js.Object {
         /* res2 */ R2, 
         /* res3 */ R3, 
         /* res4 */ R4, 
-        /* repeated */js.Any, 
+        /* repeated */ js.Any, 
         _
       ], 
       _
     ]
-  ): js.Function1[/* repeated */js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
+  ): js.Function1[/* repeated */ js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
   @JSName("bindNodeCallback")
   def bindNodeCallback_A1A2A3A4R1R2R3R4Function1[A1, A2, A3, A4, R1, R2, R3, R4](
     callbackFunc: js.Function5[
@@ -427,13 +427,13 @@ object internalObservableBindNodeCallbackMod extends js.Object {
         /* res2 */ R2, 
         /* res3 */ R3, 
         /* res4 */ R4, 
-        /* repeated */js.Any, 
+        /* repeated */ js.Any, 
         _
       ], 
       _
     ],
     scheduler: rxjsLib.internalTypesMod.SchedulerLike
-  ): js.Function1[/* repeated */js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
+  ): js.Function1[/* repeated */ js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
   @JSName("bindNodeCallback")
   def bindNodeCallback_A1A2A3R1[A1, A2, A3, R1](
     callbackFunc: js.Function4[
@@ -539,12 +539,12 @@ object internalObservableBindNodeCallbackMod extends js.Object {
         /* res2 */ R2, 
         /* res3 */ R3, 
         /* res4 */ R4, 
-        /* repeated */js.Any, 
+        /* repeated */ js.Any, 
         _
       ], 
       _
     ]
-  ): js.Function1[/* repeated */js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
+  ): js.Function1[/* repeated */ js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
   @JSName("bindNodeCallback")
   def bindNodeCallback_A1A2A3R1R2R3R4Function1[A1, A2, A3, R1, R2, R3, R4](
     callbackFunc: js.Function4[
@@ -557,13 +557,13 @@ object internalObservableBindNodeCallbackMod extends js.Object {
         /* res2 */ R2, 
         /* res3 */ R3, 
         /* res4 */ R4, 
-        /* repeated */js.Any, 
+        /* repeated */ js.Any, 
         _
       ], 
       _
     ],
     scheduler: rxjsLib.internalTypesMod.SchedulerLike
-  ): js.Function1[/* repeated */js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
+  ): js.Function1[/* repeated */ js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
   @JSName("bindNodeCallback")
   def bindNodeCallback_A1A2R1[A1, A2, R1](
     callbackFunc: js.Function3[
@@ -648,12 +648,12 @@ object internalObservableBindNodeCallbackMod extends js.Object {
         /* res2 */ R2, 
         /* res3 */ R3, 
         /* res4 */ R4, 
-        /* repeated */js.Any, 
+        /* repeated */ js.Any, 
         _
       ], 
       _
     ]
-  ): js.Function1[/* repeated */js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
+  ): js.Function1[/* repeated */ js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
   @JSName("bindNodeCallback")
   def bindNodeCallback_A1A2R1R2R3R4Function1[A1, A2, R1, R2, R3, R4](
     callbackFunc: js.Function3[
@@ -665,13 +665,13 @@ object internalObservableBindNodeCallbackMod extends js.Object {
         /* res2 */ R2, 
         /* res3 */ R3, 
         /* res4 */ R4, 
-        /* repeated */js.Any, 
+        /* repeated */ js.Any, 
         _
       ], 
       _
     ],
     scheduler: rxjsLib.internalTypesMod.SchedulerLike
-  ): js.Function1[/* repeated */js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
+  ): js.Function1[/* repeated */ js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
   @JSName("bindNodeCallback")
   def bindNodeCallback_A1R1[A1, R1](
     callbackFunc: js.Function2[/* arg1 */ A1, /* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, _], _]
@@ -725,12 +725,12 @@ object internalObservableBindNodeCallbackMod extends js.Object {
         /* res2 */ R2, 
         /* res3 */ R3, 
         /* res4 */ R4, 
-        /* repeated */js.Any, 
+        /* repeated */ js.Any, 
         _
       ], 
       _
     ]
-  ): js.Function1[/* repeated */js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
+  ): js.Function1[/* repeated */ js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
   @JSName("bindNodeCallback")
   def bindNodeCallback_A1R1R2R3R4[A1, R1, R2, R3, R4](
     callbackFunc: js.Function2[
@@ -741,13 +741,13 @@ object internalObservableBindNodeCallbackMod extends js.Object {
         /* res2 */ R2, 
         /* res3 */ R3, 
         /* res4 */ R4, 
-        /* repeated */js.Any, 
+        /* repeated */ js.Any, 
         _
       ], 
       _
     ],
     scheduler: rxjsLib.internalTypesMod.SchedulerLike
-  ): js.Function1[/* repeated */js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
+  ): js.Function1[/* repeated */ js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
   @JSName("bindNodeCallback")
   def bindNodeCallback_R1[R1](callbackFunc: js.Function1[/* callback */ js.Function2[/* err */ js.Any, /* res1 */ R1, _], _]): js.Function0[rxjsLib.internalObservableMod.Observable[R1]] = js.native
   @JSName("bindNodeCallback")
@@ -788,12 +788,12 @@ object internalObservableBindNodeCallbackMod extends js.Object {
         /* res2 */ R2, 
         /* res3 */ R3, 
         /* res4 */ R4, 
-        /* repeated */js.Any, 
+        /* repeated */ js.Any, 
         _
       ], 
       _
     ]
-  ): js.Function1[/* repeated */js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
+  ): js.Function1[/* repeated */ js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
   @JSName("bindNodeCallback")
   def bindNodeCallback_R1R2R3R4Function1[R1, R2, R3, R4](
     callbackFunc: js.Function1[
@@ -803,12 +803,12 @@ object internalObservableBindNodeCallbackMod extends js.Object {
         /* res2 */ R2, 
         /* res3 */ R3, 
         /* res4 */ R4, 
-        /* repeated */js.Any, 
+        /* repeated */ js.Any, 
         _
       ], 
       _
     ],
     scheduler: rxjsLib.internalTypesMod.SchedulerLike
-  ): js.Function1[/* repeated */js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
+  ): js.Function1[/* repeated */ js.Any, rxjsLib.internalObservableMod.Observable[js.Array[_]]] = js.native
 }
 

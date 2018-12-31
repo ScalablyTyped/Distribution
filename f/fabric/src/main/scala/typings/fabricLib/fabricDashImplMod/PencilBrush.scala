@@ -13,15 +13,7 @@ class PencilBrush () extends BaseBrush {
   	 * @param points Array of points
   	 */
   def convertPointsToSVGPath(points: js.Array[fabricLib.Anon_Y]): js.Array[java.lang.String] = js.native
-  /**
-  	 * Converts points to SVG path
-  	 * @param points Array of points
-  	 */
   def convertPointsToSVGPath(points: js.Array[fabricLib.Anon_Y], minX: scala.Double): js.Array[java.lang.String] = js.native
-  /**
-  	 * Converts points to SVG path
-  	 * @param points Array of points
-  	 */
   def convertPointsToSVGPath(points: js.Array[fabricLib.Anon_Y], minX: scala.Double, minY: scala.Double): js.Array[java.lang.String] = js.native
   /**
   	 * Creates fabric.Path object to add on canvas

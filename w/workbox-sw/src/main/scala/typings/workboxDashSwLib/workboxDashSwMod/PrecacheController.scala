@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Performs efficient precaching of assets.
- */
+  * Performs efficient precaching of assets.
+  */
 @js.native
 trait PrecacheController extends js.Object {
   /**
@@ -32,11 +32,6 @@ trait PrecacheController extends js.Object {
   	 * @returns {Promise<IInstallResult>}
   	 */
   def install(): js.Promise[IInstallResult] = js.native
-  /**
-  	 * Call this method from a service work install event to start precaching assets.
-  	 * @param {Partial<IInstallOptions>} options
-  	 * @returns {Promise<IInstallResult>}
-  	 */
   def install(options: stdLib.Partial[IInstallOptions]): js.Promise[IInstallResult] = js.native
 }
 

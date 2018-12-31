@@ -15,8 +15,8 @@ trait Mermaid extends js.Object {
   @JSName("initialize")
   var initialize_Original: js.Function1[/* config */ mermaidLib.mermaidAPIMod.mermaidAPINs.Config, scala.Unit] = js.native
   var mermaidAPI: mermaidLib.Anon_GetConfig = js.native
-  var parse: js.Any = js.native
-  var render: js.Any = js.native
+  var parse: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mermaid.mermaid/mermaidAPI.default.parse */ js.Any = js.native
+  var render: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof mermaid.mermaid/mermaidAPI.default.render */ js.Any = js.native
   var startOnLoad: scala.Boolean = js.native
   def contentLoaded(): scala.Unit = js.native
   def init(nodes: java.lang.String): scala.Unit = js.native

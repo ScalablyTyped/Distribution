@@ -13,11 +13,6 @@ trait Anon_Options extends js.Object {
   		 * @param options Option values for the container
   		 */
   def apply(): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
-  /**
-  		 * Get the container by options.containerId.
-  		 *
-  		 * @param options Option values for the container
-  		 */
   def apply(options: ToastrOptions): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
   /**
   		 * Get the container by options.containerId.

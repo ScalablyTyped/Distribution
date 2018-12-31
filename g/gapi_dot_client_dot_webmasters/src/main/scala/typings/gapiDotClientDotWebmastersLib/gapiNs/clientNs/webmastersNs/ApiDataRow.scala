@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ApiDataRow extends js.Object {
   var clicks: js.UndefOr[scala.Double] = js.undefined
   var ctr: js.UndefOr[scala.Double] = js.undefined

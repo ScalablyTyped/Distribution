@@ -26,7 +26,6 @@ trait ITokenizerHandle extends js.Object {
   var skip_Original: protobufjsLib.TokenizerHandleSkip = js.native
   /** Gets the comment on the previous line or the line comment on the specified line, if any */
   def cmnt(): java.lang.String | scala.Null = js.native
-  /** Gets the comment on the previous line or the line comment on the specified line, if any */
   def cmnt(line: scala.Double): java.lang.String | scala.Null = js.native
   /** Gets the next token and advances (`null` on eof) */
   def next(): java.lang.String | scala.Null = js.native
@@ -36,7 +35,6 @@ trait ITokenizerHandle extends js.Object {
   def push(token: java.lang.String): scala.Unit = js.native
   /** Skips a token, returns its presence and advances or, if non-optional and not present, throws */
   def skip(expected: java.lang.String): scala.Boolean = js.native
-  /** Skips a token, returns its presence and advances or, if non-optional and not present, throws */
   def skip(expected: java.lang.String, optional: scala.Boolean): scala.Boolean = js.native
 }
 

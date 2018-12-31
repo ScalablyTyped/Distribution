@@ -42,13 +42,10 @@ trait Enumerable[T] extends js.Object {
   def all(predicate: EnumerablePredicate[T], thisArg: js.Any): scala.Boolean = js.native
    // alias
   def any(): scala.Boolean = js.native
-   // alias
   def any(predicate: EnumerablePredicate[T]): scala.Boolean = js.native
-   // alias
   def any(predicate: EnumerablePredicate[T], thisArg: js.Any): scala.Boolean = js.native
    // alias
   def average(): scala.Double = js.native
-   // alias
   def average(selector: EnumerableFunc[T, scala.Double]): scala.Double = js.native
   def bufferWithCount(count: scala.Double): Enumerable[T] = js.native
   def bufferWithCount(count: scala.Double, skip: scala.Double): Enumerable[T] = js.native
@@ -130,7 +127,6 @@ trait Enumerable[T] extends js.Object {
     `_`: scala.Boolean,
     resultSelector: js.Function2[/* key */ TKey, /* values */ Enumerable[T], TResult]
   ): Enumerable[TResult] = js.native
-  // if need to set resultSelector without elementSelector
   def groupBy[TKey, TResult](
     keySelector: js.Function1[/* item */ T, TKey],
     `_`: scala.Boolean,

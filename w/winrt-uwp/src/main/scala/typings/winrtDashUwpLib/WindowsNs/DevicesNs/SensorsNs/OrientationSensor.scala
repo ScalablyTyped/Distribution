@@ -29,9 +29,9 @@ abstract class OrientationSensor () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[OrientationSensor, OrientationSensorReadingChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Gets the current sensor reading.
-                   * @return The current sensor reading.
-                   */
+    * Gets the current sensor reading.
+    * @return The current sensor reading.
+    */
   def getCurrentReading(): OrientationSensorReading = js.native
   /** Occurs each time the orientation sensor reports a new sensor reading. */
   def onreadingchanged(
@@ -50,14 +50,14 @@ abstract class OrientationSensor () extends js.Object {
 @js.native
 object OrientationSensor extends js.Object {
   /**
-                   * Gets the default orientation sensor.
-                   * @return The default orientation sensor or null if no orientation sensors are found.
-                   */
+    * Gets the default orientation sensor.
+    * @return The default orientation sensor or null if no orientation sensors are found.
+    */
   def getDefault(): winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.OrientationSensor = js.native
   /**
-                   * Gets the default orientation sensor.
-                   * @return The default orientation sensor or null if no orientation sensors are found.
-                   */
+    * Gets the default orientation sensor.
+    * @return The default orientation sensor or null if no orientation sensors are found.
+    */
   def getDefaultForRelativeReadings(): winrtDashUwpLib.WindowsNs.DevicesNs.SensorsNs.OrientationSensor = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GoogleCloudVideointelligenceV1beta2_LabelSegment extends js.Object {
   /** Confidence that the label is accurate. Range: [0, 1]. */
   var confidence: js.UndefOr[scala.Double] = js.undefined

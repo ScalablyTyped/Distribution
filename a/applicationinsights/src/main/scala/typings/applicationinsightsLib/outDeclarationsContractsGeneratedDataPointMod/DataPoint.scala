@@ -6,37 +6,36 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Metric data single measurement.
- */
-
+  * Metric data single measurement.
+  */
 trait DataPoint extends js.Object {
   /**
-       * Metric weight of the aggregated metric. Should not be set for a measurement.
-       */
+    * Metric weight of the aggregated metric. Should not be set for a measurement.
+    */
   var count: scala.Double
   /**
-       * Metric type. Single measurement or the aggregated value.
-       */
+    * Metric type. Single measurement or the aggregated value.
+    */
   var kind: applicationinsightsLib.outDeclarationsContractsGeneratedDataPointTypeMod.DataPointType
   /**
-       * Maximum value of the aggregated metric. Should not be set for a measurement.
-       */
+    * Maximum value of the aggregated metric. Should not be set for a measurement.
+    */
   var max: scala.Double
   /**
-       * Minimum value of the aggregated metric. Should not be set for a measurement.
-       */
+    * Minimum value of the aggregated metric. Should not be set for a measurement.
+    */
   var min: scala.Double
   /**
-       * Name of the metric.
-       */
+    * Name of the metric.
+    */
   var name: java.lang.String
   /**
-       * Standard deviation of the aggregated metric. Should not be set for a measurement.
-       */
+    * Standard deviation of the aggregated metric. Should not be set for a measurement.
+    */
   var stdDev: scala.Double
   /**
-       * Single value for measurement. Sum of individual measurements for the aggregation.
-       */
+    * Single value for measurement. Sum of individual measurements for the aggregation.
+    */
   var value: scala.Double
 }
 

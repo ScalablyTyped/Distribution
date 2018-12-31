@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AmpUrlError extends js.Object {
   /** The error code of an API call. */
   var errorCode: js.UndefOr[java.lang.String] = js.undefined

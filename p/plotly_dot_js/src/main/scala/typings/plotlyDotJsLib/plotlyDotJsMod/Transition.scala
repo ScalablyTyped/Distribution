@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Transition extends js.Object {
   /**
   	 * Sets the duration of the slider transition

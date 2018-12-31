@@ -5,15 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Wait extends js.Object {
   /**
-                       * Passthrough the read values, by default it eats everything
-                       */
+    * Passthrough the read values, by default it eats everything
+    */
   var passthrough: js.UndefOr[scala.Boolean] = js.undefined
   /**
-                       * Whethe to wait for asynchronous functions (await)
-                       */
+    * Whethe to wait for asynchronous functions (await)
+    */
   @JSName("wait")
   var wait_FAnon_Wait: js.UndefOr[scala.Boolean] = js.undefined
 }

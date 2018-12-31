@@ -13,10 +13,6 @@ class PathGroup protected () extends Object {
   	 * @param [options] Options object
   	 */
   def this(paths: js.Array[Path]) = this()
-  /**
-  	 * Constructor
-  	 * @param [options] Options object
-  	 */
   def this(paths: js.Array[Path], options: IObjectOptions) = this()
   /**
   	 * Returns all paths in this path group
@@ -36,11 +32,6 @@ class PathGroup protected () extends Object {
   	 * @return svg representation of an instance
   	 */
   def toSVG(): java.lang.String = js.native
-  /**
-  	 * Returns svg representation of an instance
-  	 * @param [reviver] Method for further parsing of svg representation.
-  	 * @return svg representation of an instance
-  	 */
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 

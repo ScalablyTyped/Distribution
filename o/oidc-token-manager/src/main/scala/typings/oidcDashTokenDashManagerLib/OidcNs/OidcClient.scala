@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OidcClient extends js.Object {
   var isOAuth: scala.Boolean
   var isOidc: scala.Boolean

@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** Supports managing a request for extended foreground execution. */
 @JSGlobal("Windows.ApplicationModel.ExtendedExecution.Foreground.ExtendedExecutionForegroundSession")
 @js.native
+/** Creates an ExtendedExecutionForegroundSession object */
 class ExtendedExecutionForegroundSession () extends js.Object {
   /** Gets or sets a string to display in the shell. */
   var description: java.lang.String = js.native
@@ -33,9 +34,9 @@ class ExtendedExecutionForegroundSession () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[_, ExtendedExecutionForegroundRevokedEventArgs]
   ): scala.Unit = js.native
   /**
-                       * Requests extended execution
-                       * @return The result of the request.
-                       */
+    * Requests extended execution
+    * @return The result of the request.
+    */
   def requestExtensionAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[ExtendedExecutionForegroundResult] = js.native
 }
 

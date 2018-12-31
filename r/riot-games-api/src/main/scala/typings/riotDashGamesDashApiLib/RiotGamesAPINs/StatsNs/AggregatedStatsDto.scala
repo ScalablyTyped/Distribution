@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AggregatedStatsDto extends js.Object {
   var averageAssists: scala.Double
   var averageChampionsKilled: scala.Double

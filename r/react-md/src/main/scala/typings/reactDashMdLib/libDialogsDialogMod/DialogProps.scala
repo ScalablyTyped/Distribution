@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DialogProps
   extends reactDashMdLib.libMod.Props {
   var actions: js.UndefOr[

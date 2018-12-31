@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AgentJobRequestMessage extends JobRequestMessage {
   var lockToken: java.lang.String
   var lockedUntil: stdLib.Date

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ClientCredentialsGrantOptions extends js.Object {
   var audience: java.lang.String
 }

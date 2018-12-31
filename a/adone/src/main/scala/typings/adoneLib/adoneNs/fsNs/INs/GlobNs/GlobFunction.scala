@@ -8,12 +8,12 @@ import scala.scalajs.js.annotation._
 @js.native
 trait GlobFunction extends js.Object {
   /**
-                   * Glob stream class
-                   */
+    * Glob stream class
+    */
   var Core: StreamConstructor = js.native
   /**
-                   * low level glob emitter
-                   */
+    * low level glob emitter
+    */
   var Glob: EmitterConstructor = js.native
   def apply(patterns: java.lang.String): Stream[java.lang.String] = js.native
   def apply(

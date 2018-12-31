@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BulkLoadColumnOpts extends ParameterOptions {
   //  Indicates whether the column accepts NULL values.
   var nullable: scala.Boolean

@@ -14,27 +14,21 @@ class Pushpin ()
 @js.native
 object Pushpin extends js.Object {
   /**
-           * Get Instance
-           */
+    * Get Instance
+    */
   def getInstance(elem: stdLib.Element): materializeDashCssLib.MNs.Pushpin = js.native
   /**
-           * Init Pushpins
-           */
+    * Init Pushpins
+    */
   def init(els: materializeDashCssLib.MElements): js.Array[materializeDashCssLib.MNs.Pushpin] = js.native
-  /**
-           * Init Pushpins
-           */
   def init(
     els: materializeDashCssLib.MElements,
     options: stdLib.Partial[materializeDashCssLib.MNs.PushpinOptions]
   ): js.Array[materializeDashCssLib.MNs.Pushpin] = js.native
   /**
-           * Init Pushpin
-           */
+    * Init Pushpin
+    */
   def init(els: stdLib.Element): materializeDashCssLib.MNs.Pushpin = js.native
-  /**
-           * Init Pushpin
-           */
   def init(els: stdLib.Element, options: stdLib.Partial[materializeDashCssLib.MNs.PushpinOptions]): materializeDashCssLib.MNs.Pushpin = js.native
 }
 

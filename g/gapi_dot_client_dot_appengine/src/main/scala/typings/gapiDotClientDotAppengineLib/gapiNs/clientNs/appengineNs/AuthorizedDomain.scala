@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AuthorizedDomain extends js.Object {
   /** Fully qualified domain name of the domain authorized for use. Example: example.com. */
   var id: js.UndefOr[java.lang.String] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Auth0LockConstructorOptions extends js.Object {
   var _enableIdPInitiatedLogin: js.UndefOr[scala.Boolean] = js.undefined
   var _enableImpersonation: js.UndefOr[scala.Boolean] = js.undefined

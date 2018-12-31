@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		 * Options which are provided to open a dialog.
 		 */
-
 trait IDialogOpenOptions extends IDialogOptions {
   var bindToController: js.UndefOr[scala.Boolean] = js.undefined
   var controller: js.UndefOr[java.lang.String | js.Array[_] | js.Any] = js.undefined

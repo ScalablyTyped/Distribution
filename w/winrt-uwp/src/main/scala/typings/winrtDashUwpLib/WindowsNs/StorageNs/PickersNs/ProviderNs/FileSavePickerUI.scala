@@ -50,10 +50,10 @@ abstract class FileSavePickerUI () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[FileSavePickerUI, TargetFileRequestedEventArgs]
   ): scala.Unit = js.native
   /**
-                       * Tries to set the file name and extension in the file picker UI.
-                       * @param value The file name and extension that are used to update the file name text box and file type drop-down menu in the file picker UI.
-                       * @return The enumeration value that indicates whether the file name and extension were updated in the file picker UI.
-                       */
+    * Tries to set the file name and extension in the file picker UI.
+    * @param value The file name and extension that are used to update the file name text box and file type drop-down menu in the file picker UI.
+    * @return The enumeration value that indicates whether the file name and extension were updated in the file picker UI.
+    */
   def trySetFileName(value: java.lang.String): SetFileNameResult = js.native
 }
 

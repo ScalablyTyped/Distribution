@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FileConfig extends js.Object {
   var attributes: js.UndefOr[js.Object] = js.undefined
   var dashVersion: js.UndefOr[java.lang.String] = js.undefined

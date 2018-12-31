@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Mul[T] extends js.Object {
   @JSName("$addToSet")
   var $addToSet: js.UndefOr[meteorLib.MongoNs.ArraysOrEach[T] with meteorLib.MongoNs.Dictionary[_]] = js.undefined

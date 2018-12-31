@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-         * `L.esri.IdentifyFeatures` is an abstraction for the Identify API found in Map Services. It provides a
-         * chainable API for building request parameters and executing the request.
-         */
+  * `L.esri.IdentifyFeatures` is an abstraction for the Identify API found in Map Services. It provides a
+  * chainable API for building request parameters and executing the request.
+  */
 @JSImport("esri-leaflet", "IdentifyFeatures")
 @js.native
 class IdentifyFeatures protected ()

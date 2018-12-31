@@ -12,21 +12,21 @@ class Variable protected ()
   def this(name: java.lang.String) = this()
   val id: java.lang.String = js.native
   /**
-       * Contains the constant "Variable".
-       */
+    * Contains the constant "Variable".
+    */
   /* CompleteClass */
   override var termType: rdfDashJsLib.rdfDashJsLibStrings.Variable = js.native
   @JSName("termType")
   val termType_Variable: n3Lib.n3LibStrings.Variable = js.native
   /**
-       * The name of the variable *without* leading ? (example: a).
-       */
+    * The name of the variable *without* leading ? (example: a).
+    */
   /* CompleteClass */
   override var value: java.lang.String = js.native
   /**
-       * @param other The term to compare with.
-       * @return True if and only if other has termType "Variable" and the same `value`.
-       */
+    * @param other The term to compare with.
+    * @return True if and only if other has termType "Variable" and the same `value`.
+    */
   /* CompleteClass */
   override def equals(other: rdfDashJsLib.rdfDashJsMod.Term): scala.Boolean = js.native
   def toJSON(): js.Object = js.native

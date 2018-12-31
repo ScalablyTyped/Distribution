@@ -11,8 +11,8 @@ class RequirePolyfill protected () extends js.Object {
   def this(loader: aureliaDashLoaderLib.aureliaDashLoaderMod.Loader) = this()
   var loader: aureliaDashLoaderLib.aureliaDashLoaderMod.Loader = js.native
   /**
-       * Registers the `require` function if not set.
-       */
+    * Registers the `require` function if not set.
+    */
   def register(): scala.Unit = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompileProviderMetadata extends js.Object {
   var deps: js.UndefOr[js.Array[CompileDiDependencyMetadata]] = js.undefined
   var multi: js.UndefOr[scala.Boolean] = js.undefined

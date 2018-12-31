@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IndicesUpdateAliasesParams extends GenericParams {
   @JSName("body")
   var body_IndicesUpdateAliasesParams: elasticsearchLib.Anon_Actions

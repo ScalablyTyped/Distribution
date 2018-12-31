@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Options extends js.Object {
   /** https://github.com/webdeveric/webpack-assets-manifest#apply */
   @JSName("apply")

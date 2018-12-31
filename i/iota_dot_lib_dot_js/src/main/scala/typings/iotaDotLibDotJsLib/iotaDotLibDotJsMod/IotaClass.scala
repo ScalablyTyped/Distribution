@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IotaClass extends js.Object {
   var api: IotaApi
   var multisig: IotaMultisig

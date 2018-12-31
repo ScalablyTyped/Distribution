@@ -6,37 +6,37 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-    * A Diagram is associated with an HTML DIV element. Constructing a Diagram creates
-    * an HTML Canvas element which it places inside of the given DIV element, in addition to several helper divs.
-    * GoJS will manage the contents of this DIV, and the contents should not be modified otherwise,
-    * though the given DIV may be styled (background, border, etc) and positioned as needed.
-    */
+  * A Diagram is associated with an HTML DIV element. Constructing a Diagram creates
+  * an HTML Canvas element which it places inside of the given DIV element, in addition to several helper divs.
+  * GoJS will manage the contents of this DIV, and the contents should not be modified otherwise,
+  * though the given DIV may be styled (background, border, etc) and positioned as needed.
+  */
 @JSImport("go", "Diagram")
 @js.native
+/**
+  * Construct an empty Diagram for a particular DIV HTML element.
+  * @param {string=} div The ID of a DIV element in the DOM.
+  * If no DIV identifier is supplied one will be created in memory. The Diagram's Diagram.div property
+  * can then be set later on.
+  */
 class Diagram ()
   extends goLib.goMod.goNs.Diagram {
-  /**
-          * Construct an empty Diagram for a particular DIV HTML element.
-          * @param {string=} div The ID of a DIV element in the DOM.
-          * If no DIV identifier is supplied one will be created in memory. The Diagram's Diagram.div property
-          * can then be set later on.
-          */
   def this(div: java.lang.String) = this()
   /**
-          * Construct an empty Diagram for a particular DIV HTML element.
-          * @param {HTMLDivElement} div A reference to a DIV HTML element in the DOM.
-          * If no DIV is supplied one will be created in memory. The Diagram's Diagram.div property
-          * can then be set later on.
-          */
+    * Construct an empty Diagram for a particular DIV HTML element.
+    * @param {HTMLDivElement} div A reference to a DIV HTML element in the DOM.
+    * If no DIV is supplied one will be created in memory. The Diagram's Diagram.div property
+    * can then be set later on.
+    */
   def this(div: stdLib.HTMLDivElement) = this()
 }
 
 /**
-    * A Diagram is associated with an HTML DIV element. Constructing a Diagram creates
-    * an HTML Canvas element which it places inside of the given DIV element, in addition to several helper divs.
-    * GoJS will manage the contents of this DIV, and the contents should not be modified otherwise,
-    * though the given DIV may be styled (background, border, etc) and positioned as needed.
-    */
+  * A Diagram is associated with an HTML DIV element. Constructing a Diagram creates
+  * an HTML Canvas element which it places inside of the given DIV element, in addition to several helper divs.
+  * GoJS will manage the contents of this DIV, and the contents should not be modified otherwise,
+  * though the given DIV may be styled (background, border, etc) and positioned as needed.
+  */
 @JSImport("go", "Diagram")
 @js.native
 object Diagram extends js.Object {
@@ -66,15 +66,15 @@ object Diagram extends js.Object {
   /**Diagrams with this autoScale type, used as the value of Diagram.autoScale, are scaled uniformly until the documentBounds fits in the view.*/
   var UniformToFill: goLib.goMod.goNs.EnumValue = js.native
   /**
-          * This static function gets the Diagram that is attached to an HTML DIV element.
-          * @param {HTMLDivElement} div
-          */
+    * This static function gets the Diagram that is attached to an HTML DIV element.
+    * @param {HTMLDivElement} div
+    */
   def fromDiv(div: stdLib.HTMLDivElement): goLib.goMod.goNs.Diagram = js.native
   /**
-          * This static function declares that a class (constructor function) derives from another class -- but please note that most classes do not support inheritance.
-          * @param {Function} derivedclass
-          * @param {Function} baseclass
-          */
+    * This static function declares that a class (constructor function) derives from another class -- but please note that most classes do not support inheritance.
+    * @param {Function} derivedclass
+    * @param {Function} baseclass
+    */
   def inherit(derivedclass: goLib.goMod.goNs.Constructor, baseclass: goLib.goMod.goNs.Constructor): scala.Unit = js.native
 }
 

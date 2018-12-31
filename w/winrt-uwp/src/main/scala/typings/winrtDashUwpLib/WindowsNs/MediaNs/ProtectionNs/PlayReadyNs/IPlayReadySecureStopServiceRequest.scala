@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /** Manages secure stop messages. */
-
 trait IPlayReadySecureStopServiceRequest extends IPlayReadyServiceRequest {
   /** Gets the current publisher certificate property. */
   var publisherCertificate: scala.Double

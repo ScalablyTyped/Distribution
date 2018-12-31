@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RollupOptions extends InputOptions {
   @JSName("cache")
   var cache_RollupOptions: js.UndefOr[RollupCache] = js.undefined

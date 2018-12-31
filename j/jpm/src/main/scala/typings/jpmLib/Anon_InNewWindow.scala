@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_InNewWindow extends js.Object {
   var inBackground: js.UndefOr[scala.Boolean] = js.undefined
   var inNewWindow: js.UndefOr[scala.Boolean] = js.undefined

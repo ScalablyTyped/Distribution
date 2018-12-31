@@ -12,85 +12,85 @@ sealed trait PublisherPermissions extends js.Object
 @js.native
 object PublisherPermissions extends js.Object {
   /**
-       * Admin gives the bearer the rights to manage restricted attributes of Publishers and Extensions.
-       */
+    * Admin gives the bearer the rights to manage restricted attributes of Publishers and Extensions.
+    */
   @js.native
   sealed trait Admin
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.PublisherPermissions
   
   /**
-       * This gives the bearer the rights to create new Publishers at the root of the namespace.
-       */
+    * This gives the bearer the rights to create new Publishers at the root of the namespace.
+    */
   @js.native
   sealed trait CreatePublisher
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.PublisherPermissions
   
   /**
-       * This gives the bearer the rights to delete any extension.
-       */
+    * This gives the bearer the rights to delete any extension.
+    */
   @js.native
   sealed trait DeleteExtension
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.PublisherPermissions
   
   /**
-       * This gives the bearer the rights to delete the publisher.
-       */
+    * This gives the bearer the rights to delete the publisher.
+    */
   @js.native
   sealed trait DeletePublisher
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.PublisherPermissions
   
   /**
-       * This gives the bearer the rights edit the publisher settings.
-       */
+    * This gives the bearer the rights edit the publisher settings.
+    */
   @js.native
   sealed trait EditSettings
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.PublisherPermissions
   
   /**
-       * This gives the bearer the rights to assign permissions on the publisher.
-       */
+    * This gives the bearer the rights to assign permissions on the publisher.
+    */
   @js.native
   sealed trait ManagePermissions
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.PublisherPermissions
   
   /**
-       * PrivateRead is another form of read designed to allow higher privilege accessors the ability to read private extensions.
-       */
+    * PrivateRead is another form of read designed to allow higher privilege accessors the ability to read private extensions.
+    */
   @js.native
   sealed trait PrivateRead
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.PublisherPermissions
   
   /**
-       * This gives the bearer the rights to create new Extensions within a publisher.
-       */
+    * This gives the bearer the rights to create new Extensions within a publisher.
+    */
   @js.native
   sealed trait PublishExtension
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.PublisherPermissions
   
   /**
-       * This gives the bearer the rights to read Publishers and Extensions.
-       */
+    * This gives the bearer the rights to read Publishers and Extensions.
+    */
   @js.native
   sealed trait Read
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.PublisherPermissions
   
   /**
-       * TrustedPartner gives the bearer the rights to publish a extensions with restricted capabilities.
-       */
+    * TrustedPartner gives the bearer the rights to publish a extensions with restricted capabilities.
+    */
   @js.native
   sealed trait TrustedPartner
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.PublisherPermissions
   
   /**
-       * This gives the bearer the rights to update, delete, and share Extensions (but not the ability to create them).
-       */
+    * This gives the bearer the rights to update, delete, and share Extensions (but not the ability to create them).
+    */
   @js.native
   sealed trait UpdateExtension
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.PublisherPermissions
   
   /**
-       * This gives the bearer the rights to see all permissions on the publisher.
-       */
+    * This gives the bearer the rights to see all permissions on the publisher.
+    */
   @js.native
   sealed trait ViewPermissions
     extends vsoDashNodeDashApiLib.interfacesGalleryInterfacesMod.PublisherPermissions

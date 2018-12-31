@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait TargetHttpsProxiesResource extends js.Object {
   /** Deletes the specified TargetHttpsProxy resource. */
   def delete(request: gapiDotClientDotComputeLib.Anon_ProjectPrettyPrintQuotaUserTargetHttpsProxy): gapiDotClientLib.gapiNs.clientNs.Request[Operation]

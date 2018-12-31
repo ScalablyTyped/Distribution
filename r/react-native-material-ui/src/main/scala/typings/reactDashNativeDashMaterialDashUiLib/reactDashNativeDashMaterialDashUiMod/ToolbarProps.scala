@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ToolbarProps extends js.Object {
   var centerElement: js.UndefOr[reactLib.reactMod.Global.JSXNs.Element | java.lang.String] = js.undefined
   var hidden: js.UndefOr[scala.Boolean] = js.undefined

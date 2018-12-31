@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // See https://github.com/beautify-web/js-beautify/blob/v1.8.2/js/src/html/beautifier.js#L268-L330
-
 trait HTMLBeautifyOptions extends js.Object {
   var content_unformatted: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined

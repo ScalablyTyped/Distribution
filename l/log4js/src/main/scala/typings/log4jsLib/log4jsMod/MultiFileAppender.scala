@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MultiFileAppender extends js.Object {
   // the base part of the generated log filename
   var base: java.lang.String

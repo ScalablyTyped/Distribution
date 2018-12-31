@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PathStep extends js.Object {
   var direction: DirectionConstant
   var dx: scala.Double

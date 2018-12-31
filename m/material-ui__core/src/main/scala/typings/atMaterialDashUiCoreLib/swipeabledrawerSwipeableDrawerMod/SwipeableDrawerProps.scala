@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Pick) */ @js.native
+- Lifted 1 members from Set(std.Pick<@material-ui/core.@material-ui/core/Drawer.DrawerProps, std.Exclude<keyof @material-ui/core.@material-ui/core/Drawer.DrawerProps, 'onClose' | 'open'>>) */ @js.native
 trait SwipeableDrawerProps extends js.Object {
   var SwipeAreaProps: js.UndefOr[js.Object] = js.native
   var disableBackdropTransition: js.UndefOr[scala.Boolean] = js.native

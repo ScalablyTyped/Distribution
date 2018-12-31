@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DateInputMessages extends js.Object {
   var day: js.UndefOr[java.lang.String] = js.undefined
   var dayperiod: js.UndefOr[java.lang.String] = js.undefined

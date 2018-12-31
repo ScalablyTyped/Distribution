@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait MeshbluStatic extends js.Object {
   /**
   	 * Establish a secure socket.io connection to Meshblu.

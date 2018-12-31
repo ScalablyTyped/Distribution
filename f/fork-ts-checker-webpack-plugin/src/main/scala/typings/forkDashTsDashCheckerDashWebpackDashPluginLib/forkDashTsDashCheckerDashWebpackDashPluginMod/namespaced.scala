@@ -6,12 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * ForkTsCheckerWebpackPlugin
- * Runs typescript type checker and linter (tslint) on separate process.
- * This speed-ups build a lot.
- *
- * Options description in README.md
- */
+  * ForkTsCheckerWebpackPlugin
+  * Runs typescript type checker and linter (tslint) on separate process.
+  * This speed-ups build a lot.
+  *
+  * Options description in README.md
+  */
 @JSImport("fork-ts-checker-webpack-plugin", JSImport.Namespace)
 @js.native
 class namespaced () extends ForkTsCheckerWebpackPlugin {
@@ -108,12 +108,12 @@ class namespaced () extends ForkTsCheckerWebpackPlugin {
 }
 
 /**
- * ForkTsCheckerWebpackPlugin
- * Runs typescript type checker and linter (tslint) on separate process.
- * This speed-ups build a lot.
- *
- * Options description in README.md
- */
+  * ForkTsCheckerWebpackPlugin
+  * Runs typescript type checker and linter (tslint) on separate process.
+  * This speed-ups build a lot.
+  *
+  * Options description in README.md
+  */
 @JSImport("fork-ts-checker-webpack-plugin", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

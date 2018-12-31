@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ScrollAnimationProps extends js.Object {
   var animateIn: js.UndefOr[java.lang.String] = js.undefined
   var animateOnce: js.UndefOr[scala.Boolean] = js.undefined

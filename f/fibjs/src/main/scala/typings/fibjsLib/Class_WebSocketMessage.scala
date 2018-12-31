@@ -7,54 +7,21 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Class_WebSocketMessage")
 @js.native
+/**
+	 * 
+	 * @brief 包处理消息对象构造函数
+	 * @param type websocket 消息类型，缺省为 websocket.BINARY
+	 * @param masked websocket 消息掩码，缺省为 true
+	 * @param compress 标记消息是否压缩，缺省为 false
+	 * @param maxSize 最大包尺寸，以 MB 为单位，缺省为 67108864(64M)
+	 * 
+	 * 
+	 * 
+	 */
 class Class_WebSocketMessage () extends Class_Message {
-  /**
-  	 * 
-  	 * @brief 包处理消息对象构造函数
-  	 * @param type websocket 消息类型，缺省为 websocket.BINARY
-  	 * @param masked websocket 消息掩码，缺省为 true
-  	 * @param compress 标记消息是否压缩，缺省为 false
-  	 * @param maxSize 最大包尺寸，以 MB 为单位，缺省为 67108864(64M)
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def this(`type`: scala.Double) = this()
-  /**
-  	 * 
-  	 * @brief 包处理消息对象构造函数
-  	 * @param type websocket 消息类型，缺省为 websocket.BINARY
-  	 * @param masked websocket 消息掩码，缺省为 true
-  	 * @param compress 标记消息是否压缩，缺省为 false
-  	 * @param maxSize 最大包尺寸，以 MB 为单位，缺省为 67108864(64M)
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def this(`type`: scala.Double, masked: scala.Boolean) = this()
-  /**
-  	 * 
-  	 * @brief 包处理消息对象构造函数
-  	 * @param type websocket 消息类型，缺省为 websocket.BINARY
-  	 * @param masked websocket 消息掩码，缺省为 true
-  	 * @param compress 标记消息是否压缩，缺省为 false
-  	 * @param maxSize 最大包尺寸，以 MB 为单位，缺省为 67108864(64M)
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def this(`type`: scala.Double, masked: scala.Boolean, compress: scala.Boolean) = this()
-  /**
-  	 * 
-  	 * @brief 包处理消息对象构造函数
-  	 * @param type websocket 消息类型，缺省为 websocket.BINARY
-  	 * @param masked websocket 消息掩码，缺省为 true
-  	 * @param compress 标记消息是否压缩，缺省为 false
-  	 * @param maxSize 最大包尺寸，以 MB 为单位，缺省为 67108864(64M)
-  	 * 
-  	 * 
-  	 * 
-  	 */
   def this(`type`: scala.Double, masked: scala.Boolean, compress: scala.Boolean, maxSize: scala.Double) = this()
   /**
   	 * class prop 

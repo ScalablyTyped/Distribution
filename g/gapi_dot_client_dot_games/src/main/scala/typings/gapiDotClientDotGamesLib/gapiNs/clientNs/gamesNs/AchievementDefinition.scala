@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait AchievementDefinition extends js.Object {
   /**
-               * The type of the achievement.
-               * Possible values are:
-               * - "STANDARD" - Achievement is either locked or unlocked.
-               * - "INCREMENTAL" - Achievement is incremental.
-               */
+    * The type of the achievement.
+    * Possible values are:
+    * - "STANDARD" - Achievement is either locked or unlocked.
+    * - "INCREMENTAL" - Achievement is incremental.
+    */
   var achievementType: js.UndefOr[java.lang.String] = js.undefined
   /** The description of the achievement. */
   var description: js.UndefOr[java.lang.String] = js.undefined
@@ -23,12 +22,12 @@ trait AchievementDefinition extends js.Object {
   /** The ID of the achievement. */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * The initial state of the achievement.
-               * Possible values are:
-               * - "HIDDEN" - Achievement is hidden.
-               * - "REVEALED" - Achievement is revealed.
-               * - "UNLOCKED" - Achievement is unlocked.
-               */
+    * The initial state of the achievement.
+    * Possible values are:
+    * - "HIDDEN" - Achievement is hidden.
+    * - "REVEALED" - Achievement is revealed.
+    * - "UNLOCKED" - Achievement is unlocked.
+    */
   var initialState: js.UndefOr[java.lang.String] = js.undefined
   /** Indicates whether the revealed icon image being returned is a default image, or is provided by the game. */
   var isRevealedIconUrlDefault: js.UndefOr[scala.Boolean] = js.undefined

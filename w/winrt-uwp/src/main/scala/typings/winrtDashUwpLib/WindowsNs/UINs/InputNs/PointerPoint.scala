@@ -32,30 +32,30 @@ abstract class PointerPoint () extends js.Object {
 @js.native
 object PointerPoint extends js.Object {
   /**
-                   * Retrieves position and state information for the specified pointer.
-                   * @param pointerId The ID of the pointer.
-                   * @return The pointer property values.
-                   */
+    * Retrieves position and state information for the specified pointer.
+    * @param pointerId The ID of the pointer.
+    * @return The pointer property values.
+    */
   def getCurrentPoint(pointerId: scala.Double): winrtDashUwpLib.WindowsNs.UINs.InputNs.PointerPoint = js.native
   /**
-                   * Retrieves the transformed information for the specified pointer.
-                   * @param pointerId The ID of the pointer.
-                   * @param transform The transform to apply to the pointer.
-                   * @return The pointer property values.
-                   */
+    * Retrieves the transformed information for the specified pointer.
+    * @param pointerId The ID of the pointer.
+    * @param transform The transform to apply to the pointer.
+    * @return The pointer property values.
+    */
   def getCurrentPoint(pointerId: scala.Double, transform: winrtDashUwpLib.WindowsNs.UINs.InputNs.IPointerPointTransform): winrtDashUwpLib.WindowsNs.UINs.InputNs.PointerPoint = js.native
   /**
-                   * Retrieves position and state information for the specified pointer, from the last pointer event up to and including the current pointer event.
-                   * @param pointerId The ID of the pointer.
-                   * @return The transformed pointer properties (current and historic).
-                   */
+    * Retrieves position and state information for the specified pointer, from the last pointer event up to and including the current pointer event.
+    * @param pointerId The ID of the pointer.
+    * @return The transformed pointer properties (current and historic).
+    */
   def getIntermediatePoints(pointerId: scala.Double): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[winrtDashUwpLib.WindowsNs.UINs.InputNs.PointerPoint] = js.native
   /**
-                   * Retrieves the transformed position and state information for the specified pointer, from the last pointer event up to and including the current pointer event.
-                   * @param pointerId The ID of the pointer.
-                   * @param transform The transform to apply to the pointer.
-                   * @return The transformed pointer properties (current and historic).
-                   */
+    * Retrieves the transformed position and state information for the specified pointer, from the last pointer event up to and including the current pointer event.
+    * @param pointerId The ID of the pointer.
+    * @param transform The transform to apply to the pointer.
+    * @return The transformed pointer properties (current and historic).
+    */
   def getIntermediatePoints(pointerId: scala.Double, transform: winrtDashUwpLib.WindowsNs.UINs.InputNs.IPointerPointTransform): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[winrtDashUwpLib.WindowsNs.UINs.InputNs.PointerPoint] = js.native
 }
 

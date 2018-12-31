@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_MaxDateHasTime extends js.Object {
   var __hideNextMonthArrow: scala.Boolean
   var __hidePrevMonthArrow: scala.Boolean
@@ -16,7 +15,7 @@ trait Anon_MaxDateHasTime extends js.Object {
     scala.Unit
   ]
   var _createElement: js.Function3[
-    /* LimitUnionLength: was union type with length 115 */java.lang.String, 
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 115 */ java.lang.String, 
     /* className */ java.lang.String, 
     /* content */ js.UndefOr[java.lang.String], 
     stdLib.HTMLElement

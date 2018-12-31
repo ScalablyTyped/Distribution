@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ColumnHidingRefusedEventUIParam extends js.Object {
   /**
   	 * Array of column keys. Has a value only if the column's key is a string.

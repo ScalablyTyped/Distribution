@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 sealed trait LoadState extends js.Object
 
 /**
-     * Enumeration of possible load statuses.
-    */
+  * Enumeration of possible load statuses.
+  */
 @JSGlobal("sap.m.LoadState")
 @js.native
 object LoadState extends js.Object {

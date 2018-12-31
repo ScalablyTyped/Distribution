@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IListState extends js.Object {
   var isScrolling: js.UndefOr[scala.Boolean] = js.undefined
   /** The last versionstamp for  */

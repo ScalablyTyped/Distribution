@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LogEntry extends js.Object {
   /** ID of log entry as stored in db. */
   var id: scala.Double

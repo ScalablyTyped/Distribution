@@ -16,6 +16,6 @@ class Autofill protected ()
 @JSImport("office-ui-fabric-react", "Autofill")
 @js.native
 object Autofill extends js.Object {
-  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_EnableAutofillOnKeyPress = js.native
+  var defaultProps: officeDashUiDashFabricDashReactLib.Anon_EnableAutofillOnKeyPressArray = js.native
 }
 

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrdersResource extends js.Object {
   /** Marks an order as acknowledged. This method can only be called for non-multi-client accounts. */
   def acknowledge(request: gapiDotClientDotContentLib.Anon_OrderId): gapiDotClientLib.gapiNs.clientNs.Request[OrdersAcknowledgeResponse]
@@ -24,9 +23,9 @@ trait OrdersResource extends js.Object {
   /** Retrieves an order using merchant order id. This method can only be called for non-multi-client accounts. */
   def getbymerchantorderid(request: gapiDotClientDotContentLib.Anon_PrettyPrintMerchantOrderId): gapiDotClientLib.gapiNs.clientNs.Request[OrdersGetByMerchantOrderIdResponse]
   /**
-               * Sandbox only. Retrieves an order template that can be used to quickly create a new order in sandbox. This method can only be called for
-               * non-multi-client accounts.
-               */
+    * Sandbox only. Retrieves an order template that can be used to quickly create a new order in sandbox. This method can only be called for
+    * non-multi-client accounts.
+    */
   def gettestordertemplate(request: gapiDotClientDotContentLib.Anon_PrettyPrintTemplateName): gapiDotClientLib.gapiNs.clientNs.Request[OrdersGetTestOrderTemplateResponse]
   /** Lists the orders in your Merchant Center account. This method can only be called for non-multi-client accounts. */
   def list(request: gapiDotClientDotContentLib.Anon_MaxResultsPrettyPrintPageToken): gapiDotClientLib.gapiNs.clientNs.Request[OrdersListResponse]

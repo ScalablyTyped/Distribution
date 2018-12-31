@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BoxModel extends js.Object {
   /** Border box, represented as an array of {x, y} points. */
   var border: js.Array[Box]

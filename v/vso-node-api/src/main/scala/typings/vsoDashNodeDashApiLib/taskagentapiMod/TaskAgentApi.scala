@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveMultipleInheritance: Dropped parents List(vsoDashNodeDashApiLib.taskagentapiMod.ITaskAgentApi because Would inherit conflicting mutable fields List(rest, vsoClient, userAgent, baseUrl, http))*/
+/* RemoveMultipleInheritance: Dropped parents List(vsoDashNodeDashApiLib.taskagentapiMod.ITaskAgentApi because Would inherit conflicting mutable fields List(baseUrl, http, rest, userAgent, vsoClient))*/
 @JSImport("vso-node-api/TaskAgentApi", "TaskAgentApi")
 @js.native
 class TaskAgentApi protected ()
@@ -18,11 +18,11 @@ class TaskAgentApi protected ()
   /* private */ def _getAccountUrl(collectionUrl: js.Any): js.Any = js.native
   /* private */ def _getFallbackClient(baseUrl: js.Any): js.Any = js.native
   /**
-       * @param {NodeJS.ReadableStream} contentStream
-       * @param {string} taskId
-       * @param {boolean} overwrite
-       * @param onResult callback function
-       */
+    * @param {NodeJS.ReadableStream} contentStream
+    * @param {string} taskId
+    * @param {boolean} overwrite
+    * @param onResult callback function
+    */
   def uploadTaskDefinition(
     customHeaders: vsoDashNodeDashApiLib.interfacesCommonVsoBaseInterfacesMod.IHeaders,
     contentStream: nodeLib.NodeJSNs.ReadableStream,

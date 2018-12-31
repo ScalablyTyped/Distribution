@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PaletteColor extends js.Object {
   var contrastText: java.lang.String
   var dark: java.lang.String

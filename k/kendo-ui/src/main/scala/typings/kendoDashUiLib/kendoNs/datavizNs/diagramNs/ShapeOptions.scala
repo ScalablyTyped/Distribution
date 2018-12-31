@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ShapeOptions extends js.Object {
   var connectorDefaults: js.UndefOr[ShapeConnectorDefaults] = js.undefined
   var connectors: js.UndefOr[js.Array[ShapeConnector]] = js.undefined

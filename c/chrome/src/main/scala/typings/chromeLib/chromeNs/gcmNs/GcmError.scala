@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait GcmError extends js.Object {
   /** Additional details related to the error, when available. */
   var detail: js.Object

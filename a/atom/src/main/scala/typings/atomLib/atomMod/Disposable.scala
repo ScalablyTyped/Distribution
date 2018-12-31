@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("atom", "Disposable")
 @js.native
+/** Construct a Disposable. */
 class Disposable () extends DisposableLike {
-  /** Construct a Disposable. */
   def this(disposableAction: js.Function0[scala.Unit]) = this()
   /** A callback which will be called within dispose(). */
   var disposalAction: js.UndefOr[js.Function0[scala.Unit]] = js.native

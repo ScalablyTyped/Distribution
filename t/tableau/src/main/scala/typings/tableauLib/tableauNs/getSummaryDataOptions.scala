@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait getSummaryDataOptions extends js.Object {
   /** Do not use aliases specified in the data source in Tableau. Default is false. */
   var ignoreAliases: js.UndefOr[scala.Boolean] = js.undefined

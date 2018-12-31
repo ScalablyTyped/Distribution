@@ -12,22 +12,22 @@ sealed trait GitVersionType extends js.Object
 @js.native
 object GitVersionType extends js.Object {
   /**
-       * Interpret the version as a branch name
-       */
+    * Interpret the version as a branch name
+    */
   @js.native
   sealed trait Branch
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitVersionType
   
   /**
-       * Interpret the version as a commit ID (SHA1)
-       */
+    * Interpret the version as a commit ID (SHA1)
+    */
   @js.native
   sealed trait Commit
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitVersionType
   
   /**
-       * Interpret the version as a tag name
-       */
+    * Interpret the version as a tag name
+    */
   @js.native
   sealed trait Tag
     extends vsoDashNodeDashApiLib.interfacesGitInterfacesMod.GitVersionType

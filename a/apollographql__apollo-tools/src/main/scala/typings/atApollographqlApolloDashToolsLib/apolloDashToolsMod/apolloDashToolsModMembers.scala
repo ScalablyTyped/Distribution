@@ -14,9 +14,9 @@ object apolloDashToolsModMembers extends js.Object {
     ]
   ): atApollographqlApolloDashToolsLib.libBuildServiceDefinitionMod.GraphQLServiceDefinition = js.native
   def invariant(condition: js.Any, message: java.lang.String): scala.Unit = js.native
-  def isDocumentNode(node: graphqlLib.languageAstMod.ASTNode): /* is DocumentNode */scala.Boolean = js.native
-  def isNode(maybeNode: js.Any): /* is ASTNode */scala.Boolean = js.native
-  def isNotNullOrUndefined[T](): /* is T */scala.Boolean = js.native
-  def isNotNullOrUndefined[T](value: T): /* is T */scala.Boolean = js.native
+  def isDocumentNode(node: graphqlLib.languageAstMod.ASTNode): /* is graphql.graphql/language/ast.DocumentNode */ scala.Boolean = js.native
+  def isNode(maybeNode: js.Any): /* is graphql.graphql/language/ast.ASTNode */ scala.Boolean = js.native
+  def isNotNullOrUndefined[T](): /* is T */ scala.Boolean = js.native
+  def isNotNullOrUndefined[T](value: T): /* is T */ scala.Boolean = js.native
 }
 

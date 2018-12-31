@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait RemoveResponseHeaderParams extends js.Object {
   /** HTTP request header name (case-insensitive). */
   var name: java.lang.String

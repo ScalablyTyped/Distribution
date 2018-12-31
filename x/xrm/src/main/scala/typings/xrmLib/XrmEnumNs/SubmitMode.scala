@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 sealed trait SubmitMode extends js.Object
 
 /**
-     * Constant Enum: Submit Modes for {@link Attributes.Attribute.setSubmitMode} Attributes.Attribute.setSubmitMode().
-     * @see {@link Xrm.SubmitMode}
-     */
+  * Constant Enum: Submit Modes for {@link Attributes.Attribute.setSubmitMode} Attributes.Attribute.setSubmitMode().
+  * @see {@link Xrm.SubmitMode}
+  */
 @JSGlobal("XrmEnum.SubmitMode")
 @js.native
 object SubmitMode extends js.Object {

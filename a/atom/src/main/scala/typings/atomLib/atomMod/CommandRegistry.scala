@@ -25,10 +25,10 @@ trait CommandRegistry extends js.Object {
     commands: org.scalablytyped.runtime.StringDictionary[CommandRegistryListener[TextEditorElement]]
   ): CompositeDisposable = js.native
   /**
-       *  Simulate the dispatch of a command on a DOM node.
-       *  @return Either a Promise that resolves after all handlers complete or null if
-       *  no handlers were matched.
-       */
+    *  Simulate the dispatch of a command on a DOM node.
+    *  @return Either a Promise that resolves after all handlers complete or null if
+    *  no handlers were matched.
+    */
   def dispatch(target: stdLib.Node, commandName: java.lang.String): js.Promise[scala.Unit] | scala.Null = js.native
   /** Find all registered commands matching a query. */
   def findCommands(params: atomLib.Anon_Target): js.Array[atomLib.Anon_DisplayName] = js.native

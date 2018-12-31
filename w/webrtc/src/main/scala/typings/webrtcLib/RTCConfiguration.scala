@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // https://www.w3.org/TR/webrtc/#idl-def-rtcconfiguration
-
 trait RTCConfiguration extends js.Object {
    // default = 'all'
   var bundlePolicy: js.UndefOr[stdLib.RTCBundlePolicy] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait StyleManager extends js.Object {
   // Reading Style Elements
   /** Get all loaded style elements. */

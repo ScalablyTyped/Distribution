@@ -9,12 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object BatchModeNs extends js.Object {
   /**
-             * Batch grouping enabled
-            */
+    * Batch grouping enabled
+    */
   var Group: js.Any = js.native
   /**
-             * No batch requests
-            */
+    * No batch requests
+    */
   var None: js.Any = js.native
 }
 

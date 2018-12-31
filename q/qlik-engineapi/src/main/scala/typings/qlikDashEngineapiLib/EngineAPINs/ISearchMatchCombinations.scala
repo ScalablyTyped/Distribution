@@ -6,13 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-     * SearchMatchCombinations...
-     */
-
+  * SearchMatchCombinations...
+  */
 trait ISearchMatchCombinations extends js.Object {
   /**
-           * Array of search combinations.
-           */
+    * Array of search combinations.
+    */
   var qSearchMatchCombinations: js.Array[ISerachMatchCombination]
 }
 

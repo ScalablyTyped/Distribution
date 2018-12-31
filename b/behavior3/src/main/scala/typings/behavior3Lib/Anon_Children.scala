@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_Children extends js.Object {
   var children: js.UndefOr[js.Array[behavior3Lib.b3Ns.BaseNode]] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined

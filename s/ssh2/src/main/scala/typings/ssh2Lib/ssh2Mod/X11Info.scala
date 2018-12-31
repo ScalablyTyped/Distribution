@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait X11Info extends js.Object {
   /** The X11 authentication cookie encoded in hexadecimal. */
   var cookie: java.lang.String

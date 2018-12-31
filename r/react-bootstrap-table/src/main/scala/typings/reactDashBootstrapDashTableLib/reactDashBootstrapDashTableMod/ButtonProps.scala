@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ButtonProps extends js.Object {
   /**
   	 * Bootstrap css style class for the button, e.g. 'btn-warning'

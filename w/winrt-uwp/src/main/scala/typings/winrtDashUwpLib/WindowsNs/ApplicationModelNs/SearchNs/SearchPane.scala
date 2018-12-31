@@ -103,22 +103,22 @@ abstract class SearchPane () extends js.Object {
     listener: winrtDashUwpLib.WindowsNs.FoundationNs.TypedEventHandler[SearchPane, SearchPaneVisibilityChangedEventArgs]
   ): scala.Unit = js.native
   /**
-                   * Specifies whether suggestions based on local files are automatically displayed in the search pane, and defines the criteria that Windows uses to locate and filter these suggestions.
-                   * @param settings The new settings for local content suggestions.
-                   */
+    * Specifies whether suggestions based on local files are automatically displayed in the search pane, and defines the criteria that Windows uses to locate and filter these suggestions.
+    * @param settings The new settings for local content suggestions.
+    */
   def setLocalContentSuggestionSettings(settings: LocalContentSuggestionSettings): scala.Unit = js.native
   /** Shows the search pane. */
   def show(): scala.Unit = js.native
   /**
-                   * Shows the search pane with the specified initial query string.
-                   * @param query The initial query string.
-                   */
+    * Shows the search pane with the specified initial query string.
+    * @param query The initial query string.
+    */
   def show(query: java.lang.String): scala.Unit = js.native
   /**
-                   * Attempts to set the text in the search box of the search pane.
-                   * @param query The query text to show in the search pane's search box.
-                   * @return True if the search box text was set successfully. Otherwise, false.
-                   */
+    * Attempts to set the text in the search box of the search pane.
+    * @param query The query text to show in the search pane's search box.
+    * @return True if the search box text was set successfully. Otherwise, false.
+    */
   def trySetQueryText(query: java.lang.String): scala.Boolean = js.native
 }
 
@@ -127,9 +127,9 @@ abstract class SearchPane () extends js.Object {
 @js.native
 object SearchPane extends js.Object {
   /**
-                   * Retrieves an instance of the search pane from which users can search within the app.
-                   * @return An instance of the search pane, which provides a consistent, touch-friendly search box and optional search suggestions for searching within the current application.
-                   */
+    * Retrieves an instance of the search pane from which users can search within the app.
+    * @return An instance of the search pane, which provides a consistent, touch-friendly search box and optional search suggestions for searching within the current application.
+    */
   def getForCurrentView(): winrtDashUwpLib.WindowsNs.ApplicationModelNs.SearchNs.SearchPane = js.native
   /** Hides the current app's UI. */
   def hideThisApplication(): scala.Unit = js.native

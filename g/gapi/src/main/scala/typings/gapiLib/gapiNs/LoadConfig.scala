@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait LoadConfig extends js.Object {
   var callback: LoadCallback
   var onerror: js.UndefOr[js.Function] = js.undefined

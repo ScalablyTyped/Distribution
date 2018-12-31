@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IPolylineOptions extends IObjectOptions {
   /**
   	 * Minimum X from points values, necessary to offset points

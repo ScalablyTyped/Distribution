@@ -9,73 +9,53 @@ import scala.scalajs.js.annotation._
 @js.native
 object adoneLibMembers extends js.Object {
   /**
-   * Defines a hook that will be called only once after the block's tests
-   */
+    * Defines a hook that will be called only once after the block's tests
+    */
   val after: adoneLib.adoneNs.shaniNs.INs.HookFunction = js.native
   /**
-   * Defines a hook that will be called after each test
-   */
+    * Defines a hook that will be called after each test
+    */
   val afterEach: adoneLib.adoneNs.shaniNs.INs.HookFunction = js.native
   /**
-   * assertion functions
-   */
+    * assertion functions
+    */
   val assert: adoneLib.adoneNs.assertionNs.INs.AssertFunction = js.native
   /**
-   * Defines a hook that will be called only once before the block's tests
-   */
+    * Defines a hook that will be called only once before the block's tests
+    */
   val before: adoneLib.adoneNs.shaniNs.INs.HookFunction = js.native
   /**
-   * Defines a hook that will be called before each test
-   */
+    * Defines a hook that will be called before each test
+    */
   val beforeEach: adoneLib.adoneNs.shaniNs.INs.HookFunction = js.native
   /**
-   * Defines a tests block
-   */
+    * Defines a tests block
+    */
   val context: adoneLib.adoneNs.shaniNs.INs.DescribeFunction = js.native
   val describe: adoneLib.adoneNs.shaniNs.INs.DescribeFunction = js.native
   /**
-   * bdd-style assertion functons
-   */
+    * bdd-style assertion functons
+    */
   val expect: adoneLib.adoneNs.assertionNs.INs.ExpectFunction = js.native
   /**
-   * tools for installing controllable timer functions
-   */
+    * tools for installing controllable timer functions
+    */
   val fakeClock: adoneLib.adoneNs.utilNs.INs.fakeClockNs.FakeClock = js.native
   /**
-   * Defines a test
-   */
+    * Defines a test
+    */
   val it: adoneLib.adoneNs.shaniNs.INs.TestFunction = js.native
   /**
-   * defines a matcher for spies/stubs/mocks
-   */
+    * defines a matcher for spies/stubs/mocks
+    */
   val `match`: adoneLib.adoneNs.shaniNs.utilNs.INs.Match = js.native
   /**
-   * defines a mock function
-   */
-  val mock: js.Function1[/* obj */ js.Any, adoneLib.adoneNs.shaniNs.utilNs.INs.Mock] = js.native
-  /**
-   * assertion tool for http server responses
-   */
+    * assertion tool for http server responses
+    */
   val request: js.Function1[/* server */ js.Any, adoneLib.adoneNs.shaniNs.utilNs.INs.Request] = js.native
   /**
-   * Defines a test
-   */
+    * Defines a test
+    */
   val specify: adoneLib.adoneNs.shaniNs.INs.TestFunction = js.native
-  /**
-   * defines a spy function
-   */
-  val spy: js.Function2[
-    /* object */ js.Any, 
-    /* method */ java.lang.String, 
-    adoneLib.adoneNs.shaniNs.utilNs.INs.Spy
-  ] = js.native
-  /**
-   * defines a stub function
-   */
-  val stub: js.Function2[
-    /* obj */ js.Any, 
-    /* method */ java.lang.String, 
-    adoneLib.adoneNs.shaniNs.utilNs.INs.Stub
-  ] = js.native
 }
 

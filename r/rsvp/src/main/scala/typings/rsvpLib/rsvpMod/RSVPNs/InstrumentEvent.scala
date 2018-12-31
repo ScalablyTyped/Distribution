@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait InstrumentEvent extends js.Object {
    // guid of promise. Must be globally unique, not just within the implementation
   var childGuid: java.lang.String

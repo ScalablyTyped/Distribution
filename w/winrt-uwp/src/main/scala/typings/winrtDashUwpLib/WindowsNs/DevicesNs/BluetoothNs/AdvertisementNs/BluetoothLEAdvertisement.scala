@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 /** A representation of a Bluetooth LE advertisement payload. */
 @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisement")
 @js.native
+/** Creates a new BluetoothLEAdvertisement object. */
 class BluetoothLEAdvertisement () extends js.Object {
   /** Gets the list of raw data sections. */
   var dataSections: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[BluetoothLEAdvertisementDataSection] = js.native
@@ -20,16 +21,16 @@ class BluetoothLEAdvertisement () extends js.Object {
   /** The list of service UUIDs in 128-bit GUID format in a BluetoothLEAdvertisement . */
   var serviceUuids: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[java.lang.String] = js.native
   /**
-                       * Return a list of all manufacturer data sections in the BluetoothLEAdvertisement payload matching the specified company ID.
-                       * @param companyId The company identifier code defined by the Bluetooth Special Interest Group (SIG).
-                       * @return A vector of BluetoothLEManufacturerData contained within the payload.
-                       */
+    * Return a list of all manufacturer data sections in the BluetoothLEAdvertisement payload matching the specified company ID.
+    * @param companyId The company identifier code defined by the Bluetooth Special Interest Group (SIG).
+    * @return A vector of BluetoothLEManufacturerData contained within the payload.
+    */
   def getManufacturerDataByCompanyId(companyId: scala.Double): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[BluetoothLEManufacturerData] = js.native
   /**
-                       * Return a list of advertisement data sections that matches a given advertisement section type in a BluetoothLEAdvertisement .
-                       * @param type The advertisement section type
-                       * @return A vector of all the BluetoothLEAdvertisementDataSection matching the given advertisement type.
-                       */
+    * Return a list of advertisement data sections that matches a given advertisement section type in a BluetoothLEAdvertisement .
+    * @param type The advertisement section type
+    * @return A vector of all the BluetoothLEAdvertisementDataSection matching the given advertisement type.
+    */
   def getSectionsByType(`type`: scala.Double): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[BluetoothLEAdvertisementDataSection] = js.native
 }
 

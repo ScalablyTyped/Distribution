@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IVaultClientOperations extends js.Object {
   def DisableCheckInReminderForCallingProcess(): scala.Unit
   def EnableCheckInReminderForCallingProcess(): scala.Unit

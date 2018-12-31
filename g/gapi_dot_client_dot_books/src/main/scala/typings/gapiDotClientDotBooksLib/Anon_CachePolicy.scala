@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Anon_CachePolicy extends js.Object {
   /** The boundary of the location as a set of loops containing pairs of latitude, longitude coordinates. */
   var boundary: js.UndefOr[js.Array[js.Array[Anon_Latitude]]] = js.undefined
@@ -22,9 +21,9 @@ trait Anon_CachePolicy extends js.Object {
   /** The viewport for showing this location. This is a latitude, longitude rectangle. */
   var viewport: js.UndefOr[Anon_Lo] = js.undefined
   /**
-                   * The Zoom level to use for the map. Zoom levels between 0 (the lowest zoom level, in which the entire world can be seen on one map) to 21+ (down to
-                   * individual buildings). See: https://developers.google.com/maps/documentation/staticmaps/#Zoomlevels
-                   */
+    * The Zoom level to use for the map. Zoom levels between 0 (the lowest zoom level, in which the entire world can be seen on one map) to 21+ (down to
+    * individual buildings). See: https://developers.google.com/maps/documentation/staticmaps/#Zoomlevels
+    */
   var zoom: js.UndefOr[scala.Double] = js.undefined
 }
 

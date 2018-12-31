@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait FlashPresetPanel extends js.Object {
   def addNewItem(): js.Any
   def applyPreset(): js.Any

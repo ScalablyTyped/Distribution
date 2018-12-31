@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait NxCurrentSelectionItem extends js.Object {
   var qField: java.lang.String
   var qIsNum: js.UndefOr[scala.Boolean] = js.undefined

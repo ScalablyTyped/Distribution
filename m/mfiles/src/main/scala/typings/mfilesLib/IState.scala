@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IState extends js.Object {
   val ID: scala.Double
   var Name: java.lang.String

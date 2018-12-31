@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait SurfaceMouseenterEvent extends SurfaceEvent {
   var element: js.UndefOr[Element] = js.undefined
   var originalEvent: js.UndefOr[js.Any] = js.undefined

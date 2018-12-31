@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReadyState extends js.Object {
   var aborted: scala.Boolean
   var done: scala.Boolean

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait OrganizationChartNodeData extends js.Object {
   var children: js.UndefOr[js.Array[OrganizationChartNodeData]] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined

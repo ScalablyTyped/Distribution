@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 // chayns.findSite()
-
 trait Site extends js.Object {
   var appstoreName: java.lang.String
   var facebookId: java.lang.String

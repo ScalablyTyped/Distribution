@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DeleteWriteOpResultObject extends js.Object {
   //The connection object used for the operation.
   var connection: js.UndefOr[js.Any] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CompressorOptions extends js.Object {
   // Optimize boolean expressions
   var booleans: js.UndefOr[scala.Boolean] = js.undefined

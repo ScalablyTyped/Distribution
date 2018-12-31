@@ -17,12 +17,9 @@ class Collection[TModel /* <: backboneLib.backboneMod.BackboneNs.Model */] ()
 @js.native
 object Collection extends js.Object {
   /**
-          * Do not use, prefer TypeScript's extend functionality.
-          **/
+    * Do not use, prefer TypeScript's extend functionality.
+    **/
   def extend(properties: js.Any): js.Any = js.native
-  /**
-          * Do not use, prefer TypeScript's extend functionality.
-          **/
   def extend(properties: js.Any, classProperties: js.Any): js.Any = js.native
 }
 

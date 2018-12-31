@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait ReactComponentProps extends js.Object {
   var _containerType: js.UndefOr[java.lang.String] = js.undefined
   var _locale: js.UndefOr[java.lang.String] = js.undefined

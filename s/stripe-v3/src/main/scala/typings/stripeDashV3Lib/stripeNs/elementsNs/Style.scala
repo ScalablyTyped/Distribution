@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Style extends StyleOptions {
   var `:-webkit-autofill`: js.UndefOr[StyleOptions] = js.undefined
   var `::-ms-clear`: js.UndefOr[StyleOptions] = js.undefined

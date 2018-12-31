@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
- * Argument passed to the read callback when an asynchronous [read](Titanium.Stream.read) operation
- * finishes.
- */
-
+  * Argument passed to the read callback when an asynchronous [read](Titanium.Stream.read) operation
+  * finishes.
+  */
 trait ReadCallbackArgs extends js.Object {
   /**
   	 * Number of bytes processed, or -1 in the event of an error or end of stream.

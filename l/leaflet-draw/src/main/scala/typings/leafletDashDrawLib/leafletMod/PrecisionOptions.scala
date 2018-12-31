@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait PrecisionOptions extends js.Object {
   var ac: js.UndefOr[scala.Double] = js.undefined
   var ft: js.UndefOr[scala.Double] = js.undefined

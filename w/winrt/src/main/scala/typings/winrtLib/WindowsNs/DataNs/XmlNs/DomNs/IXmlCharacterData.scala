@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait IXmlCharacterData extends IXmlNode {
   var data: java.lang.String
   var length: scala.Double

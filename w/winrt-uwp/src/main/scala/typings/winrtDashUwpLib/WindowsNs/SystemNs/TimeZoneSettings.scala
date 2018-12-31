@@ -13,8 +13,8 @@ abstract class TimeZoneSettings () extends js.Object
 @js.native
 object TimeZoneSettings extends js.Object {
   var canChangeTimeZone: js.Any = js.native
-   /* unmapped type */var changeTimeZoneByDisplayName: js.Any = js.native
-   /* unmapped type */var currentTimeZoneDisplayName: js.Any = js.native
-   /* unmapped type */var supportedTimeZoneDisplayNames: js.Any = js.native
+   /* unmapped type */ var changeTimeZoneByDisplayName: js.Any = js.native
+   /* unmapped type */ var currentTimeZoneDisplayName: js.Any = js.native
+   /* unmapped type */ var supportedTimeZoneDisplayNames: js.Any = js.native
 }
 

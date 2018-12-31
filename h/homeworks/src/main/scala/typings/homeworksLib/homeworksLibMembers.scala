@@ -9,12 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object homeworksLibMembers extends js.Object {
   /**
-   * @since 1.0.44
-   */
+    * @since 1.0.44
+    */
   def notification(title: java.lang.String, content: java.lang.String, url: java.lang.String): scala.Unit = js.native
-  /**
-   * @since 1.0.44
-   */
   def notification(
     title: java.lang.String,
     content: java.lang.String,
@@ -22,8 +19,8 @@ object homeworksLibMembers extends js.Object {
     status: java.lang.String
   ): scala.Unit = js.native
   /**
-   * @since 1.0.44
-   */
+    * @since 1.0.44
+    */
   def toast(message: js.Any): scala.Unit = js.native
 }
 

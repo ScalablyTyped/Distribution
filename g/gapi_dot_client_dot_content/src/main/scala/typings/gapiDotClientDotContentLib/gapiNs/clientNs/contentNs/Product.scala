@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait Product extends js.Object {
   /** Additional URLs of images of the item. */
   var additionalImageLinks: js.UndefOr[js.Array[java.lang.String]] = js.undefined
@@ -38,9 +37,9 @@ trait Product extends js.Object {
   /** The two-letter ISO 639-1 language code for the item. */
   var contentLanguage: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * A list of custom (merchant-provided) attributes. It can also be used for submitting any attribute of the feed specification in its generic form (e.g.,
-               * { "name": "size type", "type": "text", "value": "regular" }). This is useful for submitting attributes not explicitly exposed by the API.
-               */
+    * A list of custom (merchant-provided) attributes. It can also be used for submitting any attribute of the feed specification in its generic form (e.g.,
+    * { "name": "size type", "type": "text", "value": "regular" }). This is useful for submitting attributes not explicitly exposed by the API.
+    */
   var customAttributes: js.UndefOr[js.Array[ProductCustomAttribute]] = js.undefined
   /** A list of custom (merchant-provided) custom attribute groups. */
   var customGroups: js.UndefOr[js.Array[ProductCustomGroup]] = js.undefined
@@ -71,9 +70,9 @@ trait Product extends js.Object {
   /** The energy efficiency class as defined in EU directive 2010/30/EU. */
   var energyEfficiencyClass: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * Date on which the item should expire, as specified upon insertion, in ISO 8601 format. The actual expiration date in Google Shopping is exposed in
-               * productstatuses as googleExpirationDate and might be earlier if expirationDate is too far in the future.
-               */
+    * Date on which the item should expire, as specified upon insertion, in ISO 8601 format. The actual expiration date in Google Shopping is exposed in
+    * productstatuses as googleExpirationDate and might be earlier if expirationDate is too far in the future.
+    */
   var expirationDate: js.UndefOr[java.lang.String] = js.undefined
   /** Target gender of the item. */
   var gender: js.UndefOr[java.lang.String] = js.undefined
@@ -84,9 +83,9 @@ trait Product extends js.Object {
   /** The REST id of the product. */
   var id: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * False when the item does not have unique product identifiers appropriate to its category, such as GTIN, MPN, and brand. Required according to the
-               * Unique Product Identifier Rules for all target countries except for Canada.
-               */
+    * False when the item does not have unique product identifiers appropriate to its category, such as GTIN, MPN, and brand. Required according to the
+    * Unique Product Identifier Rules for all target countries except for Canada.
+    */
   var identifierExists: js.UndefOr[scala.Boolean] = js.undefined
   /** URL of an image of the item. */
   var imageLink: js.UndefOr[java.lang.String] = js.undefined
@@ -115,9 +114,9 @@ trait Product extends js.Object {
   /** The number of identical products in a merchant-defined multipack. */
   var multipack: js.UndefOr[java.lang.String] = js.undefined
   /**
-               * An identifier of the item. Leading and trailing whitespaces are stripped and multiple whitespaces are replaced by a single whitespace upon submission.
-               * Only valid unicode characters are accepted. See the products feed specification for details.
-               */
+    * An identifier of the item. Leading and trailing whitespaces are stripped and multiple whitespaces are replaced by a single whitespace upon submission.
+    * Only valid unicode characters are accepted. See the products feed specification for details.
+    */
   var offerId: js.UndefOr[java.lang.String] = js.undefined
   /** Whether an item is available for purchase only online. */
   var onlineOnly: js.UndefOr[scala.Boolean] = js.undefined

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait CoverflowEffectOptions extends js.Object {
   var depth: js.UndefOr[scala.Double] = js.undefined
   var modifier: js.UndefOr[scala.Double] = js.undefined

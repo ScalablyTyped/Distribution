@@ -9,34 +9,34 @@ import scala.scalajs.js.annotation._
 sealed trait Alignment extends js.Object
 
 /**
-     * [Api set: WordApi]
-     */
+  * [Api set: WordApi]
+  */
 @JSGlobal("Word.Alignment")
 @js.native
 object Alignment extends js.Object {
   /**
-           *
-           * Alignment to the center.
-           *
-           */
+    *
+    * Alignment to the center.
+    *
+    */
   @js.native
   sealed trait centered
     extends officeDashJsDashPreviewLib.WordNs.Alignment
   
   /**
-           *
-           * Fully justified alignment.
-           *
-           */
+    *
+    * Fully justified alignment.
+    *
+    */
   @js.native
   sealed trait justified
     extends officeDashJsDashPreviewLib.WordNs.Alignment
   
   /**
-           *
-           * Alignment to the left.
-           *
-           */
+    *
+    * Alignment to the left.
+    *
+    */
   @js.native
   sealed trait left
     extends officeDashJsDashPreviewLib.WordNs.Alignment
@@ -46,19 +46,19 @@ object Alignment extends js.Object {
     extends officeDashJsDashPreviewLib.WordNs.Alignment
   
   /**
-           *
-           * Alignment to the right.
-           *
-           */
+    *
+    * Alignment to the right.
+    *
+    */
   @js.native
   sealed trait right
     extends officeDashJsDashPreviewLib.WordNs.Alignment
   
   /**
-           *
-           * Unknown alignment.
-           *
-           */
+    *
+    * Unknown alignment.
+    *
+    */
   @js.native
   sealed trait unknown
     extends officeDashJsDashPreviewLib.WordNs.Alignment

@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait BlogsResource extends js.Object {
   /** Gets one blog by ID. */
   def get(request: gapiDotClientDotBloggerLib.Anon_PrettyPrintMaxPostsQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[Blog]
